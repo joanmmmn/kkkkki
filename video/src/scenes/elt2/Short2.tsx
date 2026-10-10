@@ -215,13 +215,13 @@ export const ELTShort2: React.FC = () => {
       <Captions />
 
       {/* Audio */}
-      <Sequence durationInFrames={T(COLD_LEN)} layout="none"><Audio src={staticFile('elt/audio/cold_open.mp3')} /></Sequence>
+      <Sequence durationInFrames={T(COLD_LEN)} layout="none"><Audio src={staticFile('elt/audio/cold_open_n.mp3')} /></Sequence>
       {SHORT_PIECES.map((p, i) => (
         <Sequence key={i} from={T(p.at)} durationInFrames={T(p.to - p.from) + 2} layout="none">
           <Audio src={voSrc(p.id)} trimBefore={T(p.from)} trimAfter={T(p.to)} />
         </Sequence>
       ))}
-      <Sequence from={T(SAMPLE_AT)} durationInFrames={T(SAMPLE_LEN)} layout="none"><Audio src={staticFile('elt/audio/sample2.mp3')} /></Sequence>
+      <Sequence from={T(SAMPLE_AT)} durationInFrames={T(SAMPLE_LEN)} layout="none"><Audio src={staticFile('elt/audio/sample2_n.mp3')} /></Sequence>
       <Audio src={staticFile('music/elt_short3_mix.mp3')} volume={(f) => {
         // Misma mezcla que el vídeo largo: ducking con ataque rápido y el golpe de «¿Dónde está la trampa?» respirando.
         const env = (list: [number, number][]) => Math.max(0, ...list.map(([a, b]) => interpolate(f, [a - 8, a, b, b + 18], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })));

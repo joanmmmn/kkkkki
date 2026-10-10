@@ -14,7 +14,7 @@ const simple = (id: string, tail = TAIL): SceneDef => ({ id, vo: [{ id, at: LEAD
 export const H01 = { coldDur: sec(3.3), voAt: sec(3.45) };
 const h01: SceneDef = {
   id: 'V01', lead: H01.voAt, vo: [{ id: 'V01', at: H01.voAt }],
-  audio: [{ src: 'elt/audio/cold_open.mp3', at: 0, dur: sec(3.35) }],
+  audio: [{ src: 'elt/audio/cold_open_n.mp3', at: 0, dur: sec(3.35) }],
   dur: H01.voAt + voSpeechFrames('V01') + sec(0.45),
 };
 
@@ -28,7 +28,7 @@ export const H05 = (() => {
 })();
 const h05: SceneDef = {
   id: 'V05', lead: LEAD, vo: [{ id: 'V05', at: H05.v05 }, { id: 'V06', at: H05.v06 }],
-  audio: [{ src: 'elt/audio/sample2.mp3', at: H05.sampleAt, dur: H05.sampleDur }],
+  audio: [{ src: 'elt/audio/sample2_n.mp3', at: H05.sampleAt, dur: H05.sampleDur }],
   dur: H05.dur,
 };
 
