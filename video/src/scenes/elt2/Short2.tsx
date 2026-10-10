@@ -29,13 +29,14 @@ export const SHORT_DUR = 45.0;
 
 // Subtítulos palabra a palabra, agrupados en frases cortas.
 type CW = { w: string; s: number; e: number };
-const captionWords = (): CW[] => SHORT_PIECES.flatMap((p) => (VOS[p.id]?.words ?? [])
-  .filter((w) => w.s >= p.from - 0.01 && w.e <= p.to + 0.3)
-  .map((w) => ({ w: w.w.replace(/[«»…]/g, ''), s: w.s - p.from + p.at, e: Math.min(w.e, p.to) - p.from + p.at })));
-const chunks = (ws: CW[]) => {
+const captionWords = (): (CW & { piece: number })[] => SHORT_PIECES.flatMap((p, k) => (VOS[p.id]?.words ?? [])
+  .filter((w) => w.s >= p.from - 0.01 && w.s < p.to - 0.05)
+  .map((w) => ({ w: w.w.replace(/[«»…]/g, ''), s: w.s - p.from + p.at, e: Math.min(w.e, p.to) - p.from + p.at, piece: k })));
+const chunks = (ws: (CW & { piece: number })[]) => {
   const out: CW[][] = [];
-  let cur: CW[] = [];
+  let cur: (CW & { piece: number })[] = [];
   for (const w of ws) {
+    if (cur.length && cur[cur.length - 1].piece !== w.piece) { out.push(cur); cur = []; }
     cur.push(w);
     if (cur.length >= 3 || /[.,:;?!]$/.test(w.w)) { out.push(cur); cur = []; }
   }
