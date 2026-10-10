@@ -22,17 +22,17 @@ export const voSpeechFrames = (id: string) => Math.ceil((VOS[id]?.speechEnd ?? V
 
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9,]/g, '');
 
-// Fotograma (relativo al inicio de la locución) en que empieza la palabra `word` (n-ésima aparición).
+// Fotograma (relativo al inicio de la locución) en que empieza la palabra `word`.
+// Si se da `fallbackSec`, se elige la aparición más cercana a ese instante (evita confundir
+// palabras repetidas como «y» o «en»); si no, la n-ésima aparición.
 export const wordFrame = (id: string, word: string, nth = 0, fallbackSec = 0) => {
   const v = VOS[id];
   if (!v) return Math.round(fallbackSec * FPS);
   const target = norm(word);
-  let count = 0;
-  for (const w of v.words) {
-    if (norm(w.w).startsWith(target)) {
-      if (count === nth) return Math.round(w.s * FPS);
-      count++;
-    }
-  }
-  return Math.round(fallbackSec * FPS);
+  const hits = v.words.filter((w) => norm(w.w).startsWith(target));
+  if (!hits.length) return Math.round(fallbackSec * FPS);
+  const pick = fallbackSec > 0
+    ? hits.reduce((a, b) => (Math.abs(b.s - fallbackSec) < Math.abs(a.s - fallbackSec) ? b : a))
+    : hits[Math.min(nth, hits.length - 1)];
+  return Math.round(pick.s * FPS);
 };
