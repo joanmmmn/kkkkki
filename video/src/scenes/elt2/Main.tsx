@@ -42,13 +42,13 @@ export const ELTReview2: React.FC = () => {
   const trampa = sec(22.2);
   const musicVolume = (f: number) => {
     const section = f >= voices[0] && f < voices[1] ? 0.8 : 1;
-    let duck = 0.66 * env(f, vo);
-    duck = Math.max(duck, 0.85 * env(f, orig));
+    let duck = 0.42 * env(f, vo);
+    duck = Math.max(duck, 0.75 * env(f, orig));
     // El golpe de «¿Dónde está la trampa?» se deja respirar medio segundo.
     duck *= 1 - 0.45 * interpolate(f, [trampa - 3, trampa, trampa + sec(0.45), trampa + sec(0.8)], [0, 1, 1, 0], clamp);
     const fadeIn = interpolate(f, [0, fps * 0.6], [0, 1], { extrapolateRight: 'clamp' });
     const fadeOut = interpolate(f, [TOTAL2 - fps * 1.2, TOTAL2], [1, 0], clamp);
-    return 0.17 * section * (1 - duck) * fadeIn * fadeOut;
+    return 0.2 * section * (1 - duck) * fadeIn * fadeOut;
   };
   return (
     <AbsoluteFill style={{ background: '#fff' }}>

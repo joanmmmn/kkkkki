@@ -227,10 +227,10 @@ export const ELTShort2: React.FC = () => {
         const env = (list: [number, number][]) => Math.max(0, ...list.map(([a, b]) => interpolate(f, [a - 8, a, b, b + 18], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })));
         const vo = env(SHORT_PIECES.map((p) => [T(p.at), T(p.at + p.to - p.from)]));
         const orig = env([[0, T(COLD_LEN)], [T(SAMPLE_AT), T(SAMPLE_AT + SAMPLE_LEN)]]);
-        let duck = Math.max(0.66 * vo, 0.85 * orig);
+        let duck = Math.max(0.42 * vo, 0.75 * orig);
         duck *= 1 - 0.45 * interpolate(f, [fTrampa - 3, fTrampa, fTrampa + 22, fTrampa + 40], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
         const fade = interpolate(f, [0, 30, T(SHORT_DUR) - 40, T(SHORT_DUR)], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-        return 0.17 * (1 - duck) * fade;
+        return 0.2 * (1 - duck) * fade;
       }} />
       <Sfx name="zoom_out" at={T(COLD_LEN) + 4} />
       <Sfx name="swipe" at={fAud - 2} />
