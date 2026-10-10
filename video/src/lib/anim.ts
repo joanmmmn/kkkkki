@@ -19,3 +19,10 @@ export const keyframes = (frame: number, keys: Key[], prop: string, easing = eas
   }
   return keys[keys.length - 1][prop];
 };
+
+// Formato español con punto de millares siempre (Intl no agrupa los números de 4 cifras en es-ES).
+export const fmtEs = (n: number, decimals = 0) => {
+  const [int, dec] = n.toFixed(decimals).split('.');
+  const grouped = int.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  return dec ? `${grouped},${dec}` : grouped;
+};

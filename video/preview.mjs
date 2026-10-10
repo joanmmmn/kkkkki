@@ -21,6 +21,6 @@ for (const f of frames) {
 }
 const rows = Math.ceil(files.length / cols);
 execFileSync('ffmpeg', ['-v', 'error', '-y', ...files.flatMap((f) => ['-i', f]),
-  '-filter_complex', `${files.map((_, i) => `[${i}:v]drawtext=text='${frames[i]}':x=12:y=12:fontsize=22:fontcolor=red[v${i}]`).join(';')};${files.map((_, i) => `[v${i}]`).join('')}xstack=inputs=${files.length}:layout=${files.map((_, i) => `${(i % cols) * 960}_${Math.floor(i / cols) * 540}`).join('|')}:fill=white${files.length === 1 ? '' : ''}`,
+  '-filter_complex', `${files.map((_, i) => `[${i}:v]drawtext=text='${frames[i]}':x=12:y=12:fontsize=22:fontcolor=red[v${i}]`).join(';')};${files.map((_, i) => `[v${i}]`).join('')}xstack=inputs=${files.length}:layout=${files.map((_, i) => `${(i % cols) * comp.width / 2}_${Math.floor(i / cols) * comp.height / 2}`).join('|')}:fill=white`,
   out]);
 console.log(`OK ${out} (${files.length} fotogramas, duración total ${comp.durationInFrames} fotogramas = ${(comp.durationInFrames / comp.fps).toFixed(1)} s)`);

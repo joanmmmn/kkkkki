@@ -1,0 +1,19 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.09
+ },
+ "model_id": "eleven_v4",
+ "scenes": [
+  {
+   "id": "H_eleven_v4",
+   "text": "Esto es «Crimen y castigo», narrado por una voz profesional. En Audible cuesta 18,99 euros. Aquí… cero. Y no es el único: hay casi seis mil setecientos audiolibros más, sin anuncios, sin suscripción y sin pedirte ni el correo. ¿Dónde está la trampa?"
+  }
+ ]
+}

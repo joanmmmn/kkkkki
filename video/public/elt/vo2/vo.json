@@ -1,0 +1,67 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "V01",
+   "text": "Esto es «Crimen y castigo», narrado por una voz profesional. En Audible cuesta 18,99 euros. Aquí… cero. Y no es el único: hay casi seis mil setecientos audiolibros más, sin anuncios, sin suscripción y sin pedirte ni el correo. ¿Dónde está la trampa?"
+  },
+  {
+   "id": "V02",
+   "text": "Lo hemos probado a fondo: catálogo, voces, app, lo mejor y lo peor. Y si quieres todos los datos y las fuentes, la reseña completa está en nuestro blog: enlace en la descripción."
+  },
+  {
+   "id": "V03",
+   "text": "Se llama El Libro Total y no es nuevo: nació en Colombia en 2005, de la mano de una fundación sin ánimo de lucro financiada por una empresa de software. Su nombre es un homenaje a la biblioteca infinita de Borges. Y hoy suma más de cinco millones de descargas y un 4,8 en Google Play."
+  },
+  {
+   "id": "V04",
+   "text": "Vamos a los audiolibros. Hay exactamente 6.698, casi todos en español. Eso sí: la mayoría son cuentos, y la mitad dura menos de dieciocho minutos. Pero también hay novelas completas: «Crimen y castigo» dura más de veintiséis horas, y «Ana Karenina», casi cuarenta y una. Y puedes filtrarlos por más de setecientos temas, del misterio a los amores imposibles."
+  },
+  {
+   "id": "V05",
+   "text": "¿Cómo se usa? Buscas «Crimen y castigo» y aparece el libro… pero también música inspirada en la novela, ilustraciones y artículos: aquí todo está conectado. En la ficha tienes varias traducciones, hasta el original en ruso. Pulsas «Ir al libro», tocas el altavoz…"
+  },
+  {
+   "id": "V06",
+   "text": "…y el texto se resalta mientras las páginas pasan solas. Lees y escuchas a la vez."
+  },
+  {
+   "id": "V07",
+   "text": "¿Y las voces? Son humanas, de un pequeño equipo de narradores: en nuestra muestra, Álvaro Gómez Zafra lee uno de cada tres audiolibros, y este de aquí es de Hernando Iván Cano. Eso sí, no puedes elegir narrador. El sonido es MP3 a 64 kilobits: suficiente para voz, pero lejos del estudio de Audible, y el volumen cambia de un libro a otro."
+  },
+  {
+   "id": "V08",
+   "text": "Y aquí viene lo que no tiene nadie más: decenas de diccionarios a un clic, algunos de hace tres siglos; lectura comparada en tres idiomas a la vez; y el vocabulario de cada obra: en esta, Raskólnikov aparece novecientas setenta y dos veces."
+  },
+  {
+   "id": "V09",
+   "text": "Para escuchar no necesitas cuenta; si te registras, gratis, sumas historial, favoritos y notas. En el móvil ganas control de velocidad, hasta el doble, que en el ordenador no existe. Pero ojo: sin conexión solo puedes leer. El audio necesita internet."
+  },
+  {
+   "id": "V10",
+   "text": "Lo mejor: es gratis de verdad, sin publicidad, con voces humanas y texto sincronizado, algo que casi nadie ofrece. Lo peor: no hay novedades ni superventas, solo clásicos y obras cedidas; el reproductor es básico, sin temporizador ni descargas; y la web es lenta y algo anticuada."
+  },
+  {
+   "id": "V11",
+   "text": "¿Para quién es? Para estudiantes, amantes de los clásicos y quien aprende idiomas. Si buscas el último thriller, no es tu sitio. Y el ahorro es real: este mismo audiolibro cuesta entre 15 y 19 euros en las tiendas. Aquí, cero."
+  },
+  {
+   "id": "V12",
+   "text": "¿La trampa? No la hay. Nuestra nota: 8,2 sobre 10. Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks. Tu próxima historia te está esperando."
+  },
+  {
+   "id": "V13",
+   "text": "La reseña completa, en sonorbooks punto com."
+  }
+ ]
+}

@@ -132,10 +132,10 @@ export const ELTShort: React.FC = () => {
               <VerticalRec startAt={0.6} w={960} h={1080} keys={[{ f: 0, x0: 560, y0: 120, s: 1.75 }, { f: T(2.9), x0: 560, y0: 120, s: 1.75 }]} />
             </Sequence>
             <Sequence from={T(2.9)} durationInFrames={T(3.65 - 2.9)} layout="none">
-              <VerticalRec startAt={8.75} w={960} h={1080} keys={[{ f: 0, x0: 1100, y0: 100, s: 1.75 }]} />
+              <VerticalRec startAt={8.75} w={960} h={1080} keys={[{ f: 0, x0: 1040, y0: 100, s: 1.6 }]} />
             </Sequence>
             <Sequence from={T(3.65)} layout="none">
-              <VerticalRec startAt={12.95} w={960} h={1080} keys={[{ f: 0, x0: 1080, y0: 150, s: 1.75 }, { f: T(10), x0: 1080, y0: 230, s: 1.75 }]} />
+              <VerticalRec startAt={12.95} w={960} h={1080} keys={[{ f: 0, x0: 1040, y0: 150, s: 1.6 }, { f: T(10), x0: 1040, y0: 210, s: 1.6 }]} />
             </Sequence>
           </AbsoluteFill>
           <AbsoluteFill style={{ alignItems: 'center', paddingTop: 60 }}>
@@ -149,7 +149,7 @@ export const ELTShort: React.FC = () => {
         <Stage>
           <AbsoluteFill style={{ alignItems: 'center', paddingTop: 260, gap: 40 }}>
             <div style={{ fontFamily: font.sans, fontSize: 40, letterSpacing: 6, color: color.muted, fontWeight: 500 }}>CRIMEN Y CASTIGO · AUDIOLIBRO</div>
-            {[{ p: 'Audible', price: '18,99 €', at: T(28.7 + 10.77 - 8.25 - 28.55), bad: true }, { p: 'El Libro Total', price: 'GRATIS', at: T(28.7 + 13.14 - 8.25 - 28.55), bad: false }].map((r) => {
+            {[{ p: 'Audible', price: '18,99 €', at: 6, bad: true }, { p: 'El Libro Total', price: 'GRATIS', at: T(28.7 + 13.14 - 8.25 - 28.55), bad: false }].map((r) => {
               const s = spring({ frame: frame - T(28.55) - r.at + 10, fps, config: { damping: 16, stiffness: 160 } });
               const strike = r.bad ? interpolate(frame - T(28.55), [T(28.7 + 13.14 - 8.25 - 28.55), T(28.7 + 13.14 - 8.25 - 28.55) + 10], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
               return (

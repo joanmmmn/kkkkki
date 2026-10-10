@@ -10,17 +10,20 @@
 ```
 📖 La reseña completa, con todas las fuentes: https://sonorbooks.com/blog/el-libro-total
 
-Cinco millones de descargas, 4,8 estrellas y miles de audiolibros a 0 €. Sin anuncios, sin suscripción y sin registro. Hemos probado El Libro Total a fondo: cómo funciona, quién narra, qué tal suena, lo mejor, lo peor y si de verdad merece la pena.
+«Crimen y castigo» cuesta 18,99 € en Audible. En El Libro Total, 0 €, y como él hay 6.698 audiolibros más. Sin anuncios, sin suscripción y sin registro. Hemos probado El Libro Total a fondo: cómo funciona, quién narra, qué tal suena, lo mejor, lo peor y si de verdad merece la pena.
 
 ⏱️ Capítulos
-0:00 Cinco millones de descargas y 0 €
-0:31 ¿Qué es El Libro Total?
-0:55 La sección de audiolibros y el buscador
-1:28 La audiolectura (con voz humana)
-1:55 Diccionarios, lectura comparada, cuenta y app
-2:20 Lo mejor y lo peor
-2:41 ¿Para quién es? Precio
-2:57 Veredicto: nuestra nota
+0:00 6.698 audiolibros gratis… ¿dónde está la trampa?
+0:23 Lo que hemos probado
+0:36 ¿Qué es El Libro Total?
+0:55 El catálogo de audio, en datos
+1:22 Cómo se usa: buscar, leer y escuchar
+1:49 Las voces y la calidad del audio
+2:13 Diccionarios, lectura comparada y vocabulario
+2:30 Cuenta, app y modo sin conexión
+2:48 Lo mejor y lo peor
+3:09 ¿Para quién es? Precio
+3:25 Veredicto: nuestra nota
 
 🔎 ¿Dónde escuchar cualquier audiolibro y a qué precio? Búscalo en SonorBooks: comparamos narraciones, precios y condiciones de las principales plataformas, gratis y sin registro → https://sonorbooks.com
 

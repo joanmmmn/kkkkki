@@ -1,0 +1,215 @@
+{
+ "id": "V09",
+ "hash": "f67899f67337",
+ "text": "Para escuchar no necesitas cuenta; si te registras, gratis, sumas historial, favoritos y notas. En el móvil ganas control de velocidad, hasta el doble, que en el ordenador no existe. Pero ojo: sin conexión solo puedes leer. El audio necesita internet.",
+ "duration": 17.68,
+ "words": [
+  {
+   "w": "Para",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "escuchar",
+   "s": 0.24,
+   "e": 0.72
+  },
+  {
+   "w": "no",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "necesitas",
+   "s": 1.0,
+   "e": 1.52
+  },
+  {
+   "w": "cuenta;",
+   "s": 1.6,
+   "e": 2.4
+  },
+  {
+   "w": "si",
+   "s": 2.44,
+   "e": 2.48
+  },
+  {
+   "w": "te",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "registras,",
+   "s": 2.88,
+   "e": 3.44
+  },
+  {
+   "w": "gratis,",
+   "s": 3.68,
+   "e": 4.16
+  },
+  {
+   "w": "sumas",
+   "s": 4.24,
+   "e": 4.56
+  },
+  {
+   "w": "historial,",
+   "s": 4.72,
+   "e": 5.36
+  },
+  {
+   "w": "favoritos",
+   "s": 5.48,
+   "e": 6.08
+  },
+  {
+   "w": "y",
+   "s": 6.12,
+   "e": 6.16
+  },
+  {
+   "w": "notas.",
+   "s": 6.28,
+   "e": 7.04
+  },
+  {
+   "w": "En",
+   "s": 7.12,
+   "e": 7.2
+  },
+  {
+   "w": "el",
+   "s": 7.24,
+   "e": 7.28
+  },
+  {
+   "w": "móvil",
+   "s": 7.36,
+   "e": 7.68
+  },
+  {
+   "w": "ganas",
+   "s": 7.72,
+   "e": 8.0
+  },
+  {
+   "w": "control",
+   "s": 8.2,
+   "e": 8.4
+  },
+  {
+   "w": "de",
+   "s": 8.48,
+   "e": 8.52
+  },
+  {
+   "w": "velocidad,",
+   "s": 8.56,
+   "e": 9.28
+  },
+  {
+   "w": "hasta",
+   "s": 9.32,
+   "e": 9.6
+  },
+  {
+   "w": "el",
+   "s": 9.68,
+   "e": 9.76
+  },
+  {
+   "w": "doble,",
+   "s": 9.8,
+   "e": 10.32
+  },
+  {
+   "w": "que",
+   "s": 10.4,
+   "e": 10.48
+  },
+  {
+   "w": "en",
+   "s": 10.52,
+   "e": 10.56
+  },
+  {
+   "w": "el",
+   "s": 10.6,
+   "e": 10.64
+  },
+  {
+   "w": "ordenador",
+   "s": 10.72,
+   "e": 11.2
+  },
+  {
+   "w": "no",
+   "s": 11.28,
+   "e": 11.44
+  },
+  {
+   "w": "existe.",
+   "s": 11.56,
+   "e": 12.4
+  },
+  {
+   "w": "Pero",
+   "s": 12.48,
+   "e": 12.64
+  },
+  {
+   "w": "ojo:",
+   "s": 12.72,
+   "e": 13.28
+  },
+  {
+   "w": "sin",
+   "s": 13.36,
+   "e": 13.44
+  },
+  {
+   "w": "conexión",
+   "s": 13.52,
+   "e": 14.08
+  },
+  {
+   "w": "solo",
+   "s": 14.12,
+   "e": 14.4
+  },
+  {
+   "w": "puedes",
+   "s": 14.48,
+   "e": 14.8
+  },
+  {
+   "w": "leer.",
+   "s": 14.88,
+   "e": 15.44
+  },
+  {
+   "w": "El",
+   "s": 15.52,
+   "e": 15.6
+  },
+  {
+   "w": "audio",
+   "s": 15.8,
+   "e": 16.0
+  },
+  {
+   "w": "necesita",
+   "s": 16.04,
+   "e": 16.56
+  },
+  {
+   "w": "internet.",
+   "s": 16.84,
+   "e": 17.68
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 17.143
+}

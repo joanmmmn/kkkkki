@@ -1,10 +1,9 @@
 import React from 'react';
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font } from '../brand/tokens';
-import { easeOut } from '../lib/anim';
+import { easeOut, fmtEs } from '../lib/anim';
 
-const fmt = (n: number, decimals: number) =>
-  n.toLocaleString('es-ES', { minimumFractionDigits: decimals, maximumFractionDigits: decimals, useGrouping: true }).replace(/ /g, '.');
+const fmt = (n: number, decimals: number) => fmtEs(n, decimals);
 
 // Cifra que cuenta hacia arriba con etiqueta (p. ej. "50.000+ títulos").
 export const Stat: React.FC<{ value: number; label: string; prefix?: string; suffix?: string; decimals?: number; start?: number; dur?: number; size?: number; accent?: boolean; dark?: boolean }> = ({
