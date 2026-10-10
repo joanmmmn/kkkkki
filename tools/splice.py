@@ -3,9 +3,11 @@
 
 Uso: python3 tools/splice.py <completo.mp4> <salida.mp4> <fps> seg.mp4:inicio-fin [seg2.mp4:inicio-fin ...]
 inicio y fin son fotogramas (inclusive), los mismos que se pasaron a `remotion render --frames=inicio-fin`.
-Recodifica vídeo (x264 CRF 16) y audio (PCM intermedio → AAC 320k) en una sola pasada para que los cortes no se noten.
+
+Para no agotar la memoria, cada parte se recodifica por separado con los mismos parámetros
+(x264 CRF 16 + PCM) y después se concatena sin recodificar el vídeo; el audio se pasa a AAC una sola vez.
 """
-import subprocess, sys
+import os, subprocess, sys, tempfile
 
 full, out, fps = sys.argv[1], sys.argv[2], float(sys.argv[3])
 segs = []
@@ -15,25 +17,41 @@ for arg in sys.argv[4:]:
     segs.append((a, b, path))
 segs.sort()
 
-inputs = ['-i', full] + sum((['-i', p] for _, _, p in segs), [])
-parts, filters = [], []
+tmp = tempfile.mkdtemp(prefix='splice-')
+ENC = ['-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', '-r', str(int(fps)), '-c:a', 'pcm_s16le', '-ar', '48000']
+
+def run(args):
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', *args], check=True)
+
+parts = []
+def cut_full(start, end=None):
+    p = os.path.join(tmp, f'p{len(parts):02d}.mov')
+    vt = f'trim=start_frame={start}' + (f':end_frame={end}' if end is not None else '') + ',setpts=PTS-STARTPTS'
+    at = f'atrim=start={start / fps}' + (f':end={end / fps}' if end is not None else '') + ',asetpts=PTS-STARTPTS'
+    ss = max(0.0, start / fps - 2)  # búsqueda rápida aproximada y recorte exacto con trim
+    vt = vt.replace(f'start_frame={start}', f'start_frame={start - round(ss * fps)}')
+    if end is not None:
+        vt = vt.replace(f'end_frame={end}', f'end_frame={end - round(ss * fps)}')
+    at = at.replace(f'start={start / fps}', f'start={start / fps - ss}')
+    if end is not None:
+        at = at.replace(f':end={end / fps}', f':end={end / fps - ss}')
+    run(['-ss', f'{ss:.3f}', '-i', full, '-vf', vt, '-af', at, *ENC, p])
+    parts.append(p)
+
+def add_seg(path, n):
+    p = os.path.join(tmp, f'p{len(parts):02d}.mov')
+    run(['-i', path, '-vf', 'setpts=PTS-STARTPTS', '-af', f'atrim=end={n / fps},asetpts=PTS-STARTPTS', *ENC, p])
+    parts.append(p)
+
 cursor = 0
-for k, (a, b, _) in enumerate(segs, start=1):
+for a, b, path in segs:
     if a > cursor:
-        i = len(parts)
-        filters.append(f"[0:v]trim=start_frame={cursor}:end_frame={a},setpts=PTS-STARTPTS[v{i}];[0:a]atrim=start={cursor / fps}:end={a / fps},asetpts=PTS-STARTPTS[a{i}]")
-        parts.append(i)
-    i = len(parts)
-    filters.append(f"[{k}:v]setpts=PTS-STARTPTS[v{i}];[{k}:a]atrim=end={(b - a + 1) / fps},asetpts=PTS-STARTPTS[a{i}]")
-    parts.append(i)
+        cut_full(cursor, a)
+    add_seg(path, b - a + 1)
     cursor = b + 1
-i = len(parts)
-filters.append(f"[0:v]trim=start_frame={cursor},setpts=PTS-STARTPTS[v{i}];[0:a]atrim=start={cursor / fps},asetpts=PTS-STARTPTS[a{i}]")
-parts.append(i)
-concat = ''.join(f'[v{i}][a{i}]' for i in parts) + f'concat=n={len(parts)}:v=1:a=1[v][a]'
-fc = ';'.join(filters + [concat])
-cmd = ['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', fc, '-map', '[v]', '-map', '[a]',
-       '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', '-r', str(int(fps)),
-       '-c:a', 'aac', '-b:a', '320k', '-movflags', '+faststart', out]
-subprocess.run(cmd, check=True)
-print('OK', out)
+cut_full(cursor)
+
+lst = os.path.join(tmp, 'list.txt')
+open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts))
+run(['-f', 'concat', '-safe', '0', '-i', lst, '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-movflags', '+faststart', out])
+print('OK', out, '(', len(parts), 'partes )')
