@@ -37,7 +37,7 @@
 
 El Libro Total: https://www.ellibrototal.com
 SonorBooks no tiene relación comercial con El Libro Total. Las capturas y el fragmento de audio de El Libro Total se usan con fines de reseña y crítica.
-Música original generada para SonorBooks.
+Música original compuesta para SonorBooks.
 
 #audiolibros #ellibrototal #audiolibrosgratis #libros #sonorbooks
 ```

@@ -1,6 +1,6 @@
 # Redes — El Libro Total (corto vertical 9:16, ~45 s)
 
-Archivo: `deliverables/el-libro-total/SonorBooks_ElLibroTotal_Short_9x16.mp4` (1080×1920, subtítulos incrustados).
+Archivo: `deliverables/el-libro-total/SonorBooks_ElLibroTotal_Short_v3_9x16.mp4` (1080×1920, subtítulos incrustados).
 
 ## Instagram Reels
 ```
