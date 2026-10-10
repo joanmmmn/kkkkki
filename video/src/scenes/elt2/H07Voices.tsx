@@ -9,6 +9,8 @@ import { MicIcon, CheckIcon, CrossIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
 import { clamp, easeOut } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
+import { Grow } from '../../components/Grow';
+import { textWidth } from '../../lib/measure';
 import env from '../../../public/elt/audio/ctc_4_env.json';
 
 // Muestra aleatoria de 199 audiolibros (research/el-libro-total/plataforma.md §4.2).
@@ -57,13 +59,19 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
     <Stage>
       <Phase from={0} to={fEquipo + 4}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 30 }}>
-          <div style={{ width: 170, height: 170, borderRadius: 85, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${spring({ frame, fps, config: { damping: 10 } })})` }}><MicIcon size={100} /></div>
+          <div style={{ position: 'relative', width: 170, height: 170 }}>
+            {[0, 1, 2].map((k) => {
+              const ph = ((frame - 6 + k * 16) % 48) / 48;
+              return frame > 6 ? <div key={k} style={{ position: 'absolute', inset: 0, borderRadius: '50%', border: `4px solid ${color.yellow}`, transform: `scale(${1 + ph * 0.9})`, opacity: (1 - ph) * 0.55 }} /> : null;
+            })}
+            <div style={{ position: 'absolute', inset: 0, borderRadius: 85, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 50px rgba(255,202,5,0.45)', transform: `scale(${spring({ frame, fps, config: { damping: 10 } })})` }}><MicIcon size={100} /></div>
+          </div>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 130, letterSpacing: -3 }}>Voces <Highlight start={fHum}>humanas</Highlight></div>
         </AbsoluteFill>
       </Phase>
 
       <Phase from={fEquipo} to={fSon}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 90 }}>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
           <div style={{ width: 1080, background: '#fff', borderRadius: 36, padding: '44px 54px', boxShadow: shadow.card, border: `1px solid ${color.line}` }}>
             <div style={{ fontFamily: font.sans, fontSize: 28, letterSpacing: 5, color: color.muted, fontWeight: 500, marginBottom: 22 }}>QUIÉN NARRA · MUESTRA DE 199 AUDIOLIBROS</div>
             {NARR.map((r, i) => {
@@ -80,6 +88,7 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
               );
             })}
           </div>
+          <Grow at={fTres - fEquipo - 8} w={520} gap={90} rise={0}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 30, width: 520 }}>
             {frame >= fTres - 4 && (
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 88, lineHeight: 1, transform: `scale(${spring({ frame: frame - fTres + 4, fps, config: { damping: 12 } })})` }}>
@@ -93,6 +102,7 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
               </div>
             )}
           </div>
+          </Grow>
         </AbsoluteFill>
       </Phase>
 
@@ -112,9 +122,13 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
               return <div key={t} style={{ padding: '18px 36px', borderRadius: 999, background: i === 1 ? color.yellow : '#fff', boxShadow: shadow.soft, border: `1px solid ${color.line}`, fontFamily: font.sans, fontSize: 46, fontWeight: 700, opacity: s, transform: `scale(${0.8 + 0.2 * s})` }}>{t}</div>;
             })}
           </div>
-          <div style={{ display: 'flex', gap: 40, fontFamily: font.sans, fontSize: 40, fontWeight: 500 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: spring({ frame: frame - fSuf, fps }) }}><CheckIcon size={48} /> Suficiente para voz</div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: spring({ frame: frame - fLejos, fps }) }}><CrossIcon size={48} /> No es calidad de estudio</div>
+          <div style={{ display: 'flex', fontFamily: font.sans, fontSize: 40, fontWeight: 500 }}>
+            <Grow at={fSuf - fSon - 6} w={48 + 14 + textWidth('Suficiente para voz', 40, 500) + 4} first rise={24}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14, whiteSpace: 'nowrap' }}><CheckIcon size={48} /> Suficiente para voz</div>
+            </Grow>
+            <Grow at={fLejos - fSon - 6} w={48 + 14 + textWidth('No es calidad de estudio', 40, 500) + 4} gap={48} rise={24}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14, whiteSpace: 'nowrap' }}><CrossIcon size={48} /> No es calidad de estudio</div>
+            </Grow>
           </div>
         </AbsoluteFill>
       </Phase>
@@ -130,17 +144,22 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
         </AbsoluteFill>
       </Phase>
 
-      <Sfx name="pop" at={4} volume={0.3} />
-      <Sfx name="marker" at={fHum} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fEquipo - 4} volume={0.3} />
-      <Sfx name="tick" at={fAlv} volume={0.2} />
-      <Sfx name="marker" at={fTres + 4} volume={0.3} />
-      <Sfx name="tick" at={fHer} volume={0.2} />
-      <Sfx name="cross" at={fElegir} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fSon - 4} volume={0.3} />
-      <Sfx name="tick" at={fSuf} volume={0.2} />
-      <Sfx name="cross" at={fLejos} volume={0.25} />
-      <Sfx name="whoosh_fast" at={fVol - 4} volume={0.3} />
+      <Sfx name="ui_pop" at={4} />
+      <Sfx name="hit_soft" at={5} volume={0.5} />
+      <Sfx name="marker" at={fHum} />
+      <Sfx name="swipe" at={fEquipo} />
+      {NARR.map((r, i) => <Sfx key={r.n} name="tick_soft" at={fEquipo + 12 + i * 4} volume={0.45} />)}
+      <Sfx name="focus" at={fAlv} />
+      <Sfx name="snap_in" at={fTres - 4} />
+      <Sfx name="marker" at={fTres + 4} volume={0.85} />
+      <Sfx name="focus" at={fHer} />
+      <Sfx name="fail" at={fElegir} />
+      <Sfx name="whoosh_soft" at={fSon} />
+      {[0, 1, 2, 3].map((i) => <Sfx key={i} name="ui_tap" at={fSon + 10 + i * 4} volume={0.6} />)}
+      <Sfx name="success" at={fSuf} />
+      <Sfx name="fail" at={fLejos} />
+      <Sfx name="swipe" at={fVol} />
+      {[10, 16, 22].map((d) => <Sfx key={d} name="tick_soft" at={fVol + d} volume={0.6} />)}
     </Stage>
   );
 };

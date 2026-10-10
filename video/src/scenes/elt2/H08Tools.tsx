@@ -39,7 +39,7 @@ export const H08Tools: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
             <Sequence from={fDic - 8} durationInFrames={fComp - fDic + 8} layout="none">
               <ScreenClip image src="elt/shots/16-diccionario-desde-seleccion.jpg" width={W} showCursor={false}
                 camera={[{ f: 0, zoom: 1.05, x: 960, y: 540 }, { f: 30, zoom: 1.65, x: 980, y: 330 }, { f: fComp - fDic, zoom: 1.75, x: 980, y: 340 }]}
-                marks={[{ from: fSiglos - fDic, to: fComp - fDic + 8, x: 660, y: 254, w: 410, h: 30, r: 8 }]} />
+                marks={[{ from: fSiglos - fDic, to: fComp - fDic + 8, x: 739, y: 249, w: 270, h: 30, r: 8 }]} />
             </Sequence>
             <Sequence from={fComp} durationInFrames={fVoc - fComp} layout="none">
               <ScreenClip image src="elt/shots/15-lectura-comparada-es-en-fr.jpg" width={W} showCursor={false}
@@ -68,13 +68,17 @@ export const H08Tools: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
           </div>
         </AbsoluteFill>
       )}
-      <Sfx name="whoosh_deep" at={fDic - 10} volume={0.3} />
-      <Sfx name="pop" at={fSiglos} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fComp - 4} volume={0.28} />
-      <Sfx name="whoosh_fast" at={fVoc - 4} volume={0.28} />
-      <Sfx name="tick" at={fRask + 4} volume={0.2} />
-      <Sfx name="counter" at={fNum - 4} volume={0.2} />
-      <Sfx name="impact" at={fNum + 30} volume={0.2} />
+      <Sfx name="hit_soft" at={4} volume={0.5} />
+      <Sfx name="swipe" at={fDic - 6} />
+      <Sfx name="zoom_in" at={fDic + 18} volume={0.8} />
+      <Sfx name="draw" at={fSiglos} />
+      <Sfx name="transition" at={fComp} volume={0.8} />
+      <Sfx name="transition" at={fVoc} volume={0.8} />
+      <Sfx name="zoom_in" at={fRask + 2} />
+      <Sfx name="draw" at={fRask + 4} />
+      <Sfx name="counter" at={fNum - 4} />
+      <Sfx name="snap_in" at={fNum - 4} />
+      <Sfx name="stamp" at={fNum + 30} />
     </Stage>
   );
 };

@@ -159,7 +159,7 @@ export const ELTShort2: React.FC = () => {
             </AbsoluteFill>
           </Sequence>
           {frame >= fTrampa - 2 && (
-            <AbsoluteFill style={{ alignItems: 'center', paddingTop: 420 }}>
+            <AbsoluteFill style={{ alignItems: 'center', paddingTop: 420, transform: `scale(${1 + 0.07 * Math.exp(-Math.max(0, frame - fTrampa) / 6) * (frame >= fTrampa ? 1 : 0)})` }}>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 150, textAlign: 'center', lineHeight: 1.05, letterSpacing: -3 }}>
                 <Words text="¿Dónde está la" start={fTrampa} size={150} weight={700} />
                 <div style={{ transform: `scale(${spring({ frame: frame - fTrampa - 14, fps, config: { damping: 10, stiffness: 180 } })})` }}><Highlight start={fTrampa + 18} dur={10}>trampa?</Highlight></div>
@@ -222,25 +222,43 @@ export const ELTShort2: React.FC = () => {
         </Sequence>
       ))}
       <Sequence from={T(SAMPLE_AT)} durationInFrames={T(SAMPLE_LEN)} layout="none"><Audio src={staticFile('elt/audio/sample2.mp3')} /></Sequence>
-      <Audio src={staticFile('music/elt_bed2.mp3')} volume={(f) => {
-        const speaking = f < T(COLD_LEN) || SHORT_PIECES.some((p) => f >= T(p.at) - 10 && f <= T(p.at + p.to - p.from) + 10) || (f >= T(SAMPLE_AT) && f <= T(SAMPLE_AT + SAMPLE_LEN));
-        const fade = interpolate(f, [0, 20, T(SHORT_DUR) - 60, T(SHORT_DUR)], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-        return (speaking ? 0.09 : 0.2) * fade;
+      <Audio src={staticFile('music/elt_short3_mix.mp3')} volume={(f) => {
+        // Misma mezcla que el vídeo largo: ducking con ataque rápido y el golpe de «¿Dónde está la trampa?» respirando.
+        const env = (list: [number, number][]) => Math.max(0, ...list.map(([a, b]) => interpolate(f, [a - 8, a, b, b + 18], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })));
+        const vo = env(SHORT_PIECES.map((p) => [T(p.at), T(p.at + p.to - p.from)]));
+        const orig = env([[0, T(COLD_LEN)], [T(SAMPLE_AT), T(SAMPLE_AT + SAMPLE_LEN)]]);
+        let duck = Math.max(0.66 * vo, 0.85 * orig);
+        duck *= 1 - 0.45 * interpolate(f, [fTrampa - 3, fTrampa, fTrampa + 22, fTrampa + 40], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        const fade = interpolate(f, [0, 30, T(SHORT_DUR) - 40, T(SHORT_DUR)], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        return 0.17 * (1 - duck) * fade;
       }} />
-      <Sfx name="whoosh_fast" at={fAud - 6} volume={0.3} />
-      <Sfx name="pencil_strike" at={fAqui + 2} volume={0.3} />
-      <Sfx name="impact" at={fCero} volume={0.4} />
-      <Sfx name="marker" at={fCero} volume={0.3} />
-      <Sfx name="whoosh_deep" at={fUnico - 6} volume={0.3} />
-      <Sfx name="counter" at={fSeis - 10} volume={0.2} />
-      {fSin.map((f, i) => <Sfx key={i} name="pencil_strike" at={f + 3} volume={0.3} />)}
-      <Sfx name="whoosh_deep" at={fTrampa - 6} volume={0.35} />
-      <Sfx name="whoosh_deep" at={segB - 4} volume={0.3} />
-      <Sfx name="click" at={segB + T(1.22)} volume={0.5} />
-      <Sfx name="click" at={segB + T(1.85 + 1.03)} volume={0.5} />
-      <Sfx name="whoosh_soft" at={segC - 4} volume={0.3} />
-      <Sfx name="impact" at={segC + T(2.3)} volume={0.25} />
-      <Sfx name="shimmer" at={segD} volume={0.3} />
+      <Sfx name="zoom_out" at={T(COLD_LEN) + 4} />
+      <Sfx name="swipe" at={fAud - 2} />
+      <Sfx name="snap_in" at={fAud + 2} />
+      <Sfx name="pencil_strike" at={fAqui + 4} />
+      <Sfx name="snap_in" at={fAqui + 2} volume={0.8} />
+      <Sfx name="hit_soft" at={fCero} />
+      <Sfx name="marker" at={fCero} />
+      <Sfx name="coins" at={fCero + 4} volume={0.7} />
+      <Sfx name="whoosh_deep" at={fUnico} />
+      <Sfx name="page_riffle" at={fUnico - 4} />
+      <Sfx name="counter" at={fSeis - 10} />
+      {fSin.map((f, i) => <Sfx key={i} name="pencil_strike" at={f + 5} volume={0.85} />)}
+      <Sfx name="reverse_swell" at={fTrampa - 1} />
+      <Sfx name="bass_drop" at={fTrampa} />
+      <Sfx name="marker" at={fTrampa + 18} />
+      <Sfx name="transition" at={segB} />
+      <Sfx name="click" at={segB + T(1.22)} />
+      <Sfx name="click" at={segB + T(1.85 + 1.03)} />
+      <Sfx name="page_turn" at={segB + T(9.6)} volume={0.7} />
+      <Sfx name="sparkle" at={segB + T(9.6)} volume={0.7} />
+      <Sfx name="transition" at={segC} />
+      <Sfx name="hit_soft" at={segC + T(1.2)} />
+      <Sfx name="marker" at={segC + T(1.3)} />
+      <Sfx name="stamp" at={segC + T(2.3)} />
+      <Sfx name="transition" at={segD} volume={0.8} />
+      <Sfx name="logo_sting" at={segD + 4} />
+      <Sfx name="ui_pop" at={segD + T(1.4)} />
     </AbsoluteFill>
   );
 };

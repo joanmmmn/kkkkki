@@ -8,6 +8,7 @@ import { MicIcon, CrossIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
 import { clamp } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
+import { Grow } from '../../components/Grow';
 
 // Datos de SonorBooks (anuncio V7): «Crimen y castigo» en cada plataforma.
 const ROWS = [
@@ -41,16 +42,15 @@ export const H11Price: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
       <Phase from={0} to={fAhorro + 6}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50 }}>
           <div style={{ fontFamily: font.sans, fontSize: 40, letterSpacing: 6, color: color.muted, fontWeight: 500 }}>IDEAL PARA</div>
-          <div style={{ display: 'flex', gap: 46 }}>
-            {pers.map((p) => {
-              const s = spring({ frame: frame - p.f, fps, config: { damping: 14, stiffness: 170 } });
-              return (
-                <div key={p.t} style={{ width: 500, padding: '44px 30px', background: '#fff', borderRadius: 36, boxShadow: shadow.card, border: `1px solid ${color.line}`, textAlign: 'center', opacity: s, transform: `translateY(${(1 - s) * 60}px) scale(${0.9 + 0.1 * s})` }}>
-                  <div style={{ height: 120, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{p.i}</div>
+          <div style={{ display: 'flex' }}>
+            {pers.map((p, i) => (
+              <Grow key={p.t} at={p.f - 6} w={500} gap={46} first={i === 0}>
+                <div style={{ padding: '44px 30px', background: '#fff', borderRadius: 36, boxShadow: shadow.card, border: `1px solid ${color.line}`, textAlign: 'center' }}>
+                  <div style={{ height: 120, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `rotate(${(1 - spring({ frame: frame - p.f, fps, config: { damping: 8, stiffness: 160 } })) * -25}deg)` }}>{p.i}</div>
                   <div style={{ fontFamily: font.sans, fontSize: 50, fontWeight: 700, marginTop: 16 }}>{p.t}</div>
                 </div>
-              );
-            })}
+              </Grow>
+            ))}
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '20px 40px', borderRadius: 999, background: '#fff', boxShadow: shadow.soft, border: `1px solid ${color.line}`, fontFamily: font.sans, fontSize: 44, fontWeight: 500, opacity: thr, transform: `translateY(${(1 - thr) * 30}px)` }}>
             <CrossIcon size={52} /> ¿El último thriller? No es tu sitio
@@ -90,12 +90,15 @@ export const H11Price: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
           </div>
         </AbsoluteFill>
       </Phase>
-      {pers.map((p) => <Sfx key={p.t} name="pop" at={p.f} volume={0.3} />)}
-      <Sfx name="cross" at={fThr} volume={0.28} />
-      <Sfx name="whoosh_soft" at={fAhorro - 6} volume={0.3} />
-      <Sfx name="impact" at={fEntre} volume={0.2} />
-      <Sfx name="marker" at={fCero - 4} volume={0.35} />
-      <Sfx name="tick" at={fCero + 4} volume={0.22} />
+      {pers.map((p, i) => <Sfx key={p.t} name="ui_pop" at={p.f - 3} volume={0.85 + 0.05 * i} />)}
+      <Sfx name="fail" at={fThr} />
+      <Sfx name="swipe" at={fAhorro} />
+      <Sfx name="card_flip" at={fAhorro + 4} />
+      {ROWS.map((r, i) => <Sfx key={r.p} name="tick_soft" at={fAhorro + 8 + i * 4} volume={0.5} />)}
+      <Sfx name="hit_soft" at={fEntre} volume={0.6} />
+      <Sfx name="focus" at={fAqui} />
+      <Sfx name="marker" at={fCero - 4} />
+      <Sfx name="coins" at={fCero} />
     </Stage>
   );
 };

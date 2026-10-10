@@ -5,6 +5,7 @@ import { Stage } from '../../components/Stage';
 import { CheckIcon, CrossIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
 import { wordFrame } from '../../lib/vo';
+import { Grow } from '../../components/Grow';
 
 const Item: React.FC<{ ok: boolean; text: string; at: number }> = ({ ok, text, at }) => {
   const frame = useCurrentFrame();
@@ -51,13 +52,19 @@ export const H10ProsCons: React.FC<{ lead: number; dur: number }> = ({ lead }) =
   );
   return (
     <Stage>
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 56 }}>
-        {col('Lo mejor', true, sL, pros.map((p) => <Item key={p.t} ok text={p.t} at={p.f} />), dimL)}
-        {col('Lo peor', false, sR, cons.map((p) => <Item key={p.t} ok={false} text={p.t} at={p.f} />))}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+        <div style={{ transform: `scale(${1 + 0.06 * (1 - sR)})` }}>
+          {col('Lo mejor', true, sL, pros.map((p) => <Item key={p.t} ok text={p.t} at={p.f} />), dimL)}
+        </div>
+        <Grow at={fPeor - 10} w={820} gap={56} rise={60}>
+          {col('Lo peor', false, 1, cons.map((p) => <Item key={p.t} ok={false} text={p.t} at={p.f} />))}
+        </Grow>
       </AbsoluteFill>
-      {pros.map((p) => <Sfx key={p.t} name="tick" at={p.f} volume={0.22} />)}
-      <Sfx name="whoosh_soft" at={fPeor - 8} volume={0.3} />
-      {cons.map((p) => <Sfx key={p.t} name="cross" at={p.f} volume={0.26} />)}
+      <Sfx name="card_flip" at={2} />
+      {pros.map((p) => <Sfx key={p.t} name="tick" at={p.f} />)}
+      <Sfx name="swipe" at={fPeor - 6} />
+      <Sfx name="card_flip" at={fPeor - 2} />
+      {cons.map((p) => <Sfx key={p.t} name="cross" at={p.f} />)}
     </Stage>
   );
 };

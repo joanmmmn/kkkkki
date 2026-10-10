@@ -26,7 +26,7 @@ tools/                   Grabador de pantalla, generador de locución y control 
    - El navegador se graba en cámara lenta (`slowmo: 3` → ~90 fps efectivos) y luego se acelera, así los scrolls salen perfectamente suaves.
    - Para escenas con audio de la página usa `slowmo: 1`.
    - Genera `video.mp4` (3840×2160 a 50 fps), `cursor.json` (Remotion dibuja el cursor de marca), `meta.json` (marcas de tiempo y eventos de audio) y `last.jpg`.
-4. **Locución (ElevenLabs):** voz «Martin Osborne – Mature and Polished» (`6xftrpatV0jGmFHxDjUv`), modelo `eleven_multilingual_v2`.
+4. **Locución (ElevenLabs):** voz «Martin Osborne – Polished and Energetic» (`D7dkYvH17OKLgp4SLulf`), modelo `eleven_v4` y `speed` 1,13. La configuración está en `video/public/elt/vo2/vo.json`.
    ```bash
    python3 tools/tts.py video/public/elt/vo/vo.json video/public/elt/vo [--only E01,E02]
    python3 tools/qa_vo.py video/public/elt/vo E01 E02   # Whisper: comprueba la pronunciación
@@ -34,14 +34,20 @@ tools/                   Grabador de pantalla, generador de locución y control 
    - Hay caché por texto: solo se regeneran (y solo gastan créditos) las escenas cuyo texto cambia.
    - Las marcas de tiempo por palabra sincronizan las animaciones (`wordFrame()` en `video/src/lib/vo.ts`).
    - La clave se lee de `ELEVENLABS_API_KEY` o de `.secrets/elevenlabs.env` (ignorado por git).
-5. **Efectos y música:** efectos de ElevenLabs Sound Effects en `video/public/sfx/` y música original de ElevenLabs Music en `video/public/music/`. La música baja automáticamente bajo la voz.
+5. **Efectos y música:**
+   - Efectos de ElevenLabs Sound Effects en `video/public/sfx/`, generados con `python3 tools/sfx.py`. El script recorta el silencio inicial y normaliza el pico de cada archivo a −1 dBFS.
+   - En `<Sfx>` (`video/src/components/Sfx.tsx`), `GAIN` iguala la sonoridad de cada efecto y `SYNC` hace que su golpe caiga justo en el fotograma indicado.
+   - La música original es de ElevenLabs Music, compuesta con un *composition plan* cuyas secciones duran lo mismo que las escenas (`video/public/music/elt_bed3.plan.json`).
+   - La mezcla aplica a la música una ecualización que deja hueco a la voz (−2,5 dB en 2,2 kHz) y la baja bajo la locución (ataque 0,15 s, liberación 0,35 s), más todavía bajo el audio original.
+   - Para revisar la mezcla por capas: `--props='{"audioOnly":true,"stem":"vo"}'`; el stem puede ser `vo`, `music` o `sfx`.
+   - Los marcos de foco sobre las grabaciones usan rectángulos medidos en el DOM con `node tools/measure.mjs '<pasos>'`, en píxeles CSS de un viewport de 1920×1080.
 6. **Montaje en Remotion** (`video/`):
    ```bash
    cd video
    npx remotion studio src/index.ts                                   # editor visual
-   node preview.mjs ELTReview out/sheet.png 100,500,900                # hoja de contactos rápida
-   npx remotion render src/index.ts ELTReview out/elt/ELT_review.mp4 --crf 16 --audio-bitrate 320k
-   npx remotion render src/index.ts ELTShort out/elt/ELT_short.mp4 --crf 18
+   node preview.mjs ELTReview2 out/sheet.png 100,500,900               # hoja de contactos rápida
+   npx remotion render src/index.ts ELTReview2 out/elt/ELT_review.mp4 --crf 16 --audio-bitrate 320k
+   npx remotion render src/index.ts ELTShort2 out/elt/ELT_short.mp4 --crf 18 --concurrency 2
    npx remotion still src/index.ts ELTThumbnail out/elt/thumbnail.png
    ```
 
@@ -51,6 +57,7 @@ tools/                   Grabador de pantalla, generador de locución y control 
 - **Colores:** amarillo `#FFCA05`, tinta `#101010`, fondo blanco y escenario «noche» `#3A3D42` para los ganchos.
 - **Componentes:**
   - subrayado de rotulador (`Highlight`), tarjetas con sombra suave (`Card`), texto palabra a palabra (`Words`);
-  - ventana de navegador con zooms de cámara y marcos de foco (`BrowserWindow` + `ScreenClip`);
+  - ventana de navegador con zooms de cámara (`BrowserWindow` + `ScreenClip`) y marcos de foco que se dibujan en pantalla con foco suave, etiqueta y deslizamiento entre elementos;
+  - fondo vivo (`Stage`), transiciones entre escenas con deriva lenta de cámara (`SceneShell`) y filas que se recentran al aparecer cada elemento (`Grow`);
   - cursor con onda amarilla (`Cursor`), teléfono (`Phone`), contadores (`Stat`), etiquetas (`Callout`);
   - cierre de marca: «Tu próxima historia te está esperando.» + `sonorbooks.com`.

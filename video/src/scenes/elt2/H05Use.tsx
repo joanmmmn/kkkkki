@@ -40,20 +40,25 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
   const fPag = at6('paginas', 2.0);
   const fLees = at6('Lees', 3.8);
   const recA = (t: number) => Math.round((t - A_START) * fps);
+  // Cámara: buscador → fila de libros → fila de música → fila de arte → vista completa (cada fila entra entera en el encuadre).
   const camA: CamKey[] = [
     { f: 0, zoom: 2.1, x: 1700, y: 60 },
     { f: recA(4.6), zoom: 2.1, x: 1700, y: 60 },
-    { f: recA(5.4), zoom: 1.0, x: 960, y: 540 },
-    { f: fMusica - 4, zoom: 1.0, x: 960, y: 540 },
-    { f: fMusica + 14, zoom: 1.25, x: 960, y: 640 },
-    { f: fIlus + 14, zoom: 1.35, x: 960, y: 900 },
-    { f: fCon, zoom: 1.0, x: 960, y: 540 },
+    { f: fLibro + 4, zoom: 1.45, x: 660, y: 380 },
+    { f: fMusica - 6, zoom: 1.45, x: 680, y: 400 },
+    { f: fMusica + 14, zoom: 1.25, x: 768, y: 600 },
+    { f: fIlus - 6, zoom: 1.25, x: 780, y: 620 },
+    { f: fIlus + 14, zoom: 1.06, x: 940, y: 860 },
+    { f: fCon - 4, zoom: 1.06, x: 945, y: 860 },
+    { f: fCon + 18, zoom: 1.0, x: 960, y: 540 },
   ];
+  // Ficha: zoom a la fila de versiones (x 66–1003, y 586–756 medidos en el DOM) y deslizamiento hasta el original ruso.
   const camB: CamKey[] = [
     { f: 0, zoom: 1.35, x: 960, y: 330 },
     { f: fTrad - cut1 - 12, zoom: 1.35, x: 960, y: 340 },
-    { f: fTrad - cut1 + 8, zoom: 1.85, x: 560, y: 720 },
-    { f: fRuso - cut1 + 16, zoom: 1.85, x: 660, y: 730 },
+    { f: fTrad - cut1 + 10, zoom: 1.75, x: 535, y: 671 },
+    { f: fRuso - cut1 - 2, zoom: 1.8, x: 560, y: 671 },
+    { f: fRuso - cut1 + 18, zoom: 1.9, x: 640, y: 671 },
   ];
   const cam1: CamKey[] = [{ f: 0, zoom: 1.7, x: 880, y: 370 }, { f: cut3 - cut2, zoom: 1.2, x: 960, y: 480 }];
   const cam2: CamKey[] = [{ f: 0, zoom: 1.0, x: 960, y: 560 }, { f: 18, zoom: 1.9, x: 1450, y: 300 }];
@@ -73,20 +78,25 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
             <Sequence durationInFrames={cut1} layout="none">
               <ScreenClip src="elt/rec/02_search/video.mp4" width={W} startAt={A_START} cursor={searchCursor} camera={camA}
                 marks={[
-                  { from: fLibro - 4, to: fMusica - 2, x: 50, y: 172, w: 400, h: 260, r: 16 },
-                  { from: fMusica, to: fIlus - 2, x: 20, y: 470, w: 1900, h: 320, r: 16 },
-                  { from: fIlus, to: fCon - 2, x: 20, y: 830, w: 1900, h: 250, r: 16 },
+                  { from: fLibro - 2, to: fMusica - 2, x: 56, y: 159, w: 355, h: 190, r: 14, label: 'Libro', icon: <BookIcon size={30} /> },
+                  { from: fMusica, to: fIlus - 2, x: 56, y: 501, w: 1900, h: 190, r: 14, label: 'Música', icon: <MusicIcon size={30} /> },
+                  { from: fIlus, to: fCon + 10, x: 56, y: 843, w: 1759, h: 190, r: 14, label: 'Arte', icon: <ArtIcon size={30} /> },
                 ]} />
             </Sequence>
             <Sequence from={cut1} durationInFrames={cut2 - cut1} layout="none">
               <ScreenClip src="elt/rec/02_search/video.mp4" width={W} startAt={B_START} cursor={searchCursor} camera={camB}
-                marks={[{ from: fTrad - cut1, to: cut2 - cut1, x: 50, y: 620, w: 1040, h: 260, r: 16 }]} />
+                marks={[
+                  { from: fTrad - cut1, to: fRuso - cut1 - 2, x: 56, y: 576, w: 957, h: 190, r: 14, label: '5 versiones · ES · EN · FR · RU' },
+                  { from: fRuso - cut1, to: cut2 - cut1 + 6, x: 858, y: 576, w: 155, h: 190, r: 14, label: 'Original en ruso' },
+                ]} />
             </Sequence>
             <Sequence from={cut2} durationInFrames={cut3 - cut2} layout="none">
-              <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C1} cursor={readerCursor} camera={cam1} />
+              <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C1} cursor={readerCursor} camera={cam1}
+                marks={[{ from: 4, to: Math.round((1.969 - C1) * fps) + 12, x: 741, y: 341, w: 252, h: 48, r: 24 }]} />
             </Sequence>
             <Sequence from={cut3} durationInFrames={cut4 - cut3} layout="none">
-              <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C2} cursor={readerCursor} camera={cam2} />
+              <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C2} cursor={readerCursor} camera={cam2}
+                marks={[{ from: 16, to: cut4 - cut3, x: 1590, y: 208, w: 54, h: 48, r: 14, label: 'Audio', labelBelow: true }]} />
             </Sequence>
             <Sequence from={cut4} layout="none">
               <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C3} cursor={readerCursor} camera={cam3} cursorOpacity={0} />
@@ -96,11 +106,7 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
         </div>
       </AbsoluteFill>
 
-      <Callout at={fLibro} until={cut1 - 4} x={140} y={930} size={42}><BookIcon size={42} /> Libro</Callout>
-      <Callout at={fMusica} until={cut1 - 4} x={390} y={930} size={42}><MusicIcon size={42} /> Música</Callout>
-      <Callout at={fIlus} until={cut1 - 4} x={680} y={930} size={42}><ArtIcon size={42} /> Arte</Callout>
       <Callout at={fCon} until={cut1 - 4} x={960} y={78} anchor="center" size={44} dark>Todo está conectado</Callout>
-      <Callout at={fTrad + 6} until={cut2 - 4} x={960} y={930} anchor="center" size={46}>ES · EN · FR · RU</Callout>
       <Callout at={fLees} x={960} y={930} anchor="center" size={50}>Lees y escuchas a la vez</Callout>
       <Callout at={fPag} until={fLees - 4} x={960} y={930} anchor="center" size={46} dark>Paso de página automático</Callout>
       {pill > 0 && (
@@ -109,19 +115,34 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
         </AbsoluteFill>
       )}
 
-      <Sfx name="typing" at={recA(2.77)} volume={0.3} trimAfter={75} />
-      <Sfx name="click" at={recA(5.0)} volume={0.4} />
-      <Sfx name="pop" at={fLibro} volume={0.28} />
-      <Sfx name="pop" at={fMusica} volume={0.28} />
-      <Sfx name="pop" at={fIlus} volume={0.28} />
-      <Sfx name="whoosh_fast" at={cut1 - 5} volume={0.3} />
-      <Sfx name="pop" at={fTrad + 6} volume={0.3} />
-      <Sfx name="whoosh_fast" at={cut2 - 5} volume={0.3} />
-      <Sfx name="click" at={cut2 + Math.round((1.97 - C1) * fps)} volume={0.5} />
-      <Sfx name="page_turn" at={cut2 + Math.round((2.3 - C1) * fps)} volume={0.3} />
-      <Sfx name="click" at={cut3 + Math.round((9.53 - C2) * fps)} volume={0.5} />
-      <Sfx name="page_turn" at={fPag} volume={0.25} />
-      <Sfx name="pop" at={fLees} volume={0.3} />
+      <Sfx name="typing" at={recA(2.77)} trimAfter={75} />
+      <Sfx name="click" at={recA(5.0)} volume={0.8} />
+      <Sfx name="zoom_out" at={recA(4.6) + 14} />
+      <Sfx name="draw" at={fLibro - 2} />
+      <Sfx name="ui_pop" at={fLibro + 8} volume={0.8} />
+      <Sfx name="swipe" at={fMusica + 4} />
+      <Sfx name="ui_pop" at={fMusica + 6} volume={0.7} />
+      <Sfx name="swipe" at={fIlus + 4} />
+      <Sfx name="ui_pop" at={fIlus + 6} volume={0.7} />
+      <Sfx name="zoom_out" at={fCon + 8} volume={0.8} />
+      <Sfx name="transition" at={cut1} />
+      <Sfx name="zoom_in" at={fTrad + 4} />
+      <Sfx name="draw" at={fTrad} />
+      <Sfx name="ui_pop" at={fTrad + 8} volume={0.8} />
+      <Sfx name="swipe" at={fRuso + 4} />
+      <Sfx name="ui_pop" at={fRuso + 6} volume={0.8} />
+      <Sfx name="transition" at={cut2} />
+      <Sfx name="focus" at={cut2 + 6} />
+      <Sfx name="click" at={cut2 + Math.round((1.969 - C1) * fps)} />
+      <Sfx name="page_turn" at={cut2 + Math.round((2.3 - C1) * fps)} volume={0.8} />
+      <Sfx name="whoosh_fast" at={cut3} />
+      <Sfx name="zoom_in" at={cut3 + 16} volume={0.8} />
+      <Sfx name="focus" at={cut3 + 18} />
+      <Sfx name="click" at={cut3 + Math.round((9.526 - C2) * fps)} />
+      <Sfx name="whoosh_soft" at={cut4} />
+      <Sfx name="page_turn" at={fPag} />
+      <Sfx name="zoom_out" at={fPag + 2} volume={0.7} />
+      <Sfx name="sparkle" at={fLees} />
     </Stage>
   );
 };

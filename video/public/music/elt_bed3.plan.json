@@ -1,0 +1,230 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental background score for a premium tech and books review video",
+   "steady 100 BPM tempo throughout",
+   "warm felt piano, analog synth pads, plucked synths, clean electric guitar textures, tight modern percussion, round sub bass",
+   "polished, modern, optimistic, cinematic but minimal",
+   "mix leaves space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls"
+  ],
+  "sections": [
+   {
+    "section_name": "Cold open",
+    "positive_local_styles": [
+     "very quiet warm ambient pad",
+     "sustained low drone",
+     "mysterious",
+     "no drums"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "melody"
+    ],
+    "duration_ms": 3300,
+    "lines": []
+   },
+   {
+    "section_name": "Hook",
+    "positive_local_styles": [
+     "driving pulsing synth bass",
+     "punchy modern drums enter with a hit",
+     "rising tension and momentum",
+     "energetic",
+     "ends on a sudden stop"
+    ],
+    "negative_local_styles": [
+     "calm",
+     "fade"
+    ],
+    "duration_ms": 18900,
+    "lines": []
+   },
+   {
+    "section_name": "Promise",
+    "positive_local_styles": [
+     "fresh start after a short pause",
+     "confident upbeat groove",
+     "bright plucked motif",
+     "clean drums"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 14100,
+    "lines": []
+   },
+   {
+    "section_name": "What it is",
+    "positive_local_styles": [
+     "warm and curious",
+     "soft felt piano motif",
+     "light kick and shaker",
+     "gentle bass"
+    ],
+    "negative_local_styles": [
+     "aggressive"
+    ],
+    "duration_ms": 19400,
+    "lines": []
+   },
+   {
+    "section_name": "Catalog data",
+    "positive_local_styles": [
+     "rhythmic and precise",
+     "plucky synth arpeggios",
+     "crisp hi-hats",
+     "data infographic feel",
+     "subtle progression"
+    ],
+    "negative_local_styles": [
+     "dramatic"
+    ],
+    "duration_ms": 26500,
+    "lines": []
+   },
+   {
+    "section_name": "How it works",
+    "positive_local_styles": [
+     "smooth steady groove",
+     "minimal",
+     "light percussion",
+     "airy pads",
+     "focused"
+    ],
+    "negative_local_styles": [
+     "busy",
+     "loud"
+    ],
+    "duration_ms": 26800,
+    "lines": []
+   },
+   {
+    "section_name": "Voices",
+    "positive_local_styles": [
+     "warm intimate and soft",
+     "sparse gentle piano and pads",
+     "very light percussion",
+     "human and emotional"
+    ],
+    "negative_local_styles": [
+     "drums heavy",
+     "bright synths"
+    ],
+    "duration_ms": 24100,
+    "lines": []
+   },
+   {
+    "section_name": "Tools",
+    "positive_local_styles": [
+     "playful and curious",
+     "marimba and pizzicato plucks",
+     "light bouncy rhythm"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 17300,
+    "lines": []
+   },
+   {
+    "section_name": "App",
+    "positive_local_styles": [
+     "sleek modern tech",
+     "tight beat",
+     "glassy synth plucks",
+     "forward motion"
+    ],
+    "negative_local_styles": [
+     "slow"
+    ],
+    "duration_ms": 17600,
+    "lines": []
+   },
+   {
+    "section_name": "The good",
+    "positive_local_styles": [
+     "bright positive uplifting",
+     "major key",
+     "bouncy groove"
+    ],
+    "negative_local_styles": [
+     "minor",
+     "dark"
+    ],
+    "duration_ms": 8700,
+    "lines": []
+   },
+   {
+    "section_name": "The bad",
+    "positive_local_styles": [
+     "restrained darker minor mood",
+     "muted drums",
+     "low pulsing bass",
+     "thoughtful"
+    ],
+    "negative_local_styles": [
+     "happy",
+     "bright"
+    ],
+    "duration_ms": 12400,
+    "lines": []
+   },
+   {
+    "section_name": "Who it is for and price",
+    "positive_local_styles": [
+     "building anticipation",
+     "rising energy layer by layer",
+     "major key returns",
+     "momentum toward a climax"
+    ],
+    "negative_local_styles": [
+     "sudden drop"
+    ],
+    "duration_ms": 16200,
+    "lines": []
+   },
+   {
+    "section_name": "Verdict",
+    "positive_local_styles": [
+     "triumphant and uplifting",
+     "full arrangement",
+     "big confident chords",
+     "satisfying payoff"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 9300,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "warm resolution",
+     "brand outro feel",
+     "drums drop out",
+     "final chord rings out",
+     "clean ending"
+    ],
+    "negative_local_styles": [
+     "abrupt cut",
+     "new energy"
+    ],
+    "duration_ms": 9700,
+    "lines": []
+   }
+  ]
+ },
+ "model_id": "music_v1",
+ "respect_sections_durations": true
+}

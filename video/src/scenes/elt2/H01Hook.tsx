@@ -138,7 +138,7 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
 
       {/* ¿Dónde está la trampa? */}
       {frame >= fTrampa - 4 && (
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `scale(${1 + 0.07 * Math.exp(-Math.max(0, frame - fTrampa) / 6) * (frame >= fTrampa ? 1 : 0)})` }}>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 150, letterSpacing: -4, display: 'flex', gap: 34, alignItems: 'baseline' }}>
             <Words text="¿Dónde está la" start={fTrampa} size={150} weight={700} style={{ display: 'inline' }} />
             <span style={{ display: 'inline-block', transform: `scale(${spring({ frame: frame - fTrampa - 14, fps, config: { damping: 10, stiffness: 180 } })})` }}>
@@ -148,19 +148,23 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
         </AbsoluteFill>
       )}
 
-      <Sfx name="whoosh_soft" at={H01.coldDur - 4} volume={0.25} />
-      <Sfx name="pop" at={fNarr} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fAud - 8} volume={0.3} />
-      <Sfx name="impact" at={fAud + 4} volume={0.25} />
-      <Sfx name="pencil_strike" at={fAqui + 2} volume={0.32} />
-      <Sfx name="impact" at={fCero} volume={0.45} />
-      <Sfx name="marker" at={fCero} volume={0.35} />
-      <Sfx name="whoosh_deep" at={fUnico - 8} volume={0.35} />
-      <Sfx name="counter" at={fSeis - 10} volume={0.2} />
-      {fSin.map((f, i) => <Sfx key={i} name="pencil_strike" at={f + 3} volume={0.3} />)}
-      <Sfx name="riser" at={fTrampa - 60} volume={0.15} />
-      <Sfx name="whoosh_deep" at={fTrampa - 6} volume={0.35} />
-      <Sfx name="marker" at={fTrampa + 18} volume={0.35} />
+      <Sfx name="zoom_out" at={H01.coldDur + 6} />
+      <Sfx name="swipe" at={fAud - 2} />
+      <Sfx name="snap_in" at={fAud + 2} />
+      <Sfx name="hit_soft" at={fAud + 4} volume={0.6} />
+      <Sfx name="pencil_strike" at={fAqui + 4} />
+      <Sfx name="snap_in" at={fAqui + 2} volume={0.8} />
+      <Sfx name="hit_soft" at={fCero} />
+      <Sfx name="marker" at={fCero} />
+      <Sfx name="coins" at={fCero + 4} volume={0.7} />
+      <Sfx name="whoosh_deep" at={fUnico} />
+      <Sfx name="page_riffle" at={fUnico - 4} />
+      <Sfx name="counter" at={fSeis - 10} />
+      <Sfx name="snap_in" at={fSeis - 10} volume={0.7} />
+      {fSin.map((f, i) => <Sfx key={i} name="pencil_strike" at={f + 5} volume={0.85} />)}
+      <Sfx name="reverse_swell" at={fTrampa - 1} />
+      <Sfx name="bass_drop" at={fTrampa} />
+      <Sfx name="marker" at={fTrampa + 18} />
     </Stage>
   );
 };

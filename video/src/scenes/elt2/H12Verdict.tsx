@@ -41,7 +41,10 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
 
       <Phase from={fNota} to={fSb + 6}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 120 }}>
-          <div style={{ position: 'relative', width: 440, height: 440 }}>
+          <div style={{ position: 'relative', width: 440, height: 440, transform: `scale(${1 + 0.06 * Math.exp(-Math.max(0, frame - fNum - 22) / 7) * (frame >= fNum + 22 ? 1 : 0)})` }}>
+            {frame >= fNum + 22 && (
+              <div style={{ position: 'absolute', inset: 4, borderRadius: '50%', border: `10px solid ${color.yellow}`, transform: `scale(${1 + interpolate(frame, [fNum + 22, fNum + 50], [0, 0.45], { extrapolateRight: 'clamp' })})`, opacity: interpolate(frame, [fNum + 22, fNum + 50], [0.7, 0], { extrapolateRight: 'clamp' }) }} />
+            )}
             <svg width={440} height={440} style={{ transform: 'rotate(-90deg)' }}>
               <circle cx={220} cy={220} r={R} stroke="#F0F0F0" strokeWidth={32} fill="none" />
               <circle cx={220} cy={220} r={R} stroke={color.yellow} strokeWidth={32} fill="none" strokeLinecap="round" strokeDasharray={C} strokeDashoffset={C * (1 - ring)} />
@@ -74,7 +77,7 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
             <div style={{ flex: 1, fontFamily: font.sans, fontSize: 42, color: color.ink }}>
               {frame < fBusca - 34 ? <span style={{ color: color.muted }}>Busca un audiolibro, autor o narrador</span> : <Typewriter text="Crimen y castigo" start={fBusca - 34} cps={15} />}
             </div>
-            <div style={{ width: 72, height: 72, borderRadius: 36, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: 72, height: 72, borderRadius: 36, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${1 - 0.14 * interpolate(frame, [fBusca + 20, fBusca + 24, fBusca + 32], [0, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })})`, boxShadow: `0 0 0 ${interpolate(frame, [fBusca + 24, fBusca + 44], [0, 26], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}px rgba(255,202,5,${interpolate(frame, [fBusca + 24, fBusca + 44], [0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })})` }}>
               <svg width="32" height="32" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke={color.ink} strokeWidth="2.6" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </div>
           </div>
@@ -91,16 +94,19 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
         </AbsoluteFill>
       </Phase>
 
-      <Sfx name="impact" at={fNo} volume={0.3} />
-      <Sfx name="marker" at={fNo + 4} volume={0.3} />
-      <Sfx name="whoosh_soft" at={fNota - 6} volume={0.3} />
-      <Sfx name="counter" at={fNota + 6} volume={0.18} />
-      <Sfx name="impact" at={fNum + 22} volume={0.25} />
-      <Sfx name="whoosh_deep" at={fSb - 6} volume={0.3} />
-      <Sfx name="shimmer" at={fSb + 2} volume={0.25} />
-      <Sfx name="typing" at={fBusca - 34} volume={0.3} trimAfter={60} />
-      <Sfx name="whoosh_soft" at={fTu - 4} volume={0.3} />
-      <Sfx name="shimmer" at={fTu + 40} volume={0.3} />
+      <Sfx name="hit_soft" at={fNo} />
+      <Sfx name="marker" at={fNo + 4} />
+      <Sfx name="swipe" at={fNota} />
+      <Sfx name="counter" at={fNota + 6} />
+      {SCORES.map(([k], i) => <Sfx key={k} name="tick_soft" at={fNota + 8 + i * 5} volume={0.45} />)}
+      <Sfx name="stamp" at={fNum + 22} />
+      <Sfx name="sparkle" at={fNum + 24} volume={0.6} />
+      <Sfx name="whoosh_deep" at={fSb} volume={0.8} />
+      <Sfx name="logo_sting" at={fSb + 4} />
+      <Sfx name="typing" at={fBusca - 34} trimAfter={60} />
+      <Sfx name="click" at={fBusca + 24} />
+      <Sfx name="whoosh_soft" at={fTu} />
+      <Sfx name="sparkle" at={fTu + 40} />
     </Stage>
   );
 };

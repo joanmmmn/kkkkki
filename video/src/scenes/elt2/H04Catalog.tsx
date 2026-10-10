@@ -10,6 +10,7 @@ import { Donut, BarRow, StackBar } from '../../components/Charts';
 import { Sfx } from '../../components/Sfx';
 import { clamp, easeOut, fmtEs } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
+import { Grow } from '../../components/Grow';
 import cursor from '../../../public/elt/rec/01_home/cursor.json';
 
 const W = 1640;
@@ -52,7 +53,7 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <BrowserWindow width={W}>
             <ScreenClip src="elt/rec/01_home/video.mp4" width={W} startAt={A_START} cursor={cursor} camera={camA}
-              marks={[{ from: Math.round((8.0 - A_START) * fps), to: fEsp + 6, x: 1800, y: 236, w: 110, h: 30, r: 10 }]} />
+              marks={[{ from: Math.round((8.0 - A_START) * fps), to: fEsp + 6, x: 1788, y: 229, w: 128, h: 42, r: 21 }]} />
           </BrowserWindow>
         </AbsoluteFill>
         {frame >= fNum - 22 && (
@@ -65,12 +66,14 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       </Phase>
 
       <Phase from={fEsp} to={fMitad + 4}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 160 }}>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
           <Donut pct={98} at={8} size={460} label="en español" sub="196 de 200 en nuestra muestra" />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 26 }}>
-            <div style={{ fontFamily: font.sans, fontSize: 34, letterSpacing: 5, color: color.muted, fontWeight: 500 }}>POR GÉNERO</div>
-            <StackBar at={fCuentos - fEsp} width={1000} parts={[{ label: 'Cuentos', pct: 79, c: color.yellow }, { label: 'Novelas', pct: 12, c: color.ink }, { label: 'Otros', pct: 9, c: '#D9D9D9' }]} />
-          </div>
+          <Grow at={fCuentos - fEsp - 10} w={1000} gap={140} rise={30}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 26 }}>
+              <div style={{ fontFamily: font.sans, fontSize: 34, letterSpacing: 5, color: color.muted, fontWeight: 500 }}>POR GÉNERO</div>
+              <StackBar at={fCuentos - fEsp} width={1000} parts={[{ label: 'Cuentos', pct: 79, c: color.yellow }, { label: 'Novelas', pct: 12, c: color.ink }, { label: 'Otros', pct: 9, c: '#D9D9D9' }]} />
+            </div>
+          </Grow>
         </AbsoluteFill>
       </Phase>
 
@@ -89,8 +92,8 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
             <BrowserWindow width={W}>
               <ScreenClip src="elt/rec/01_home/video.mp4" width={W} startAt={bStart} cursor={cursor} camera={camB}
                 marks={[
-                  { from: fMist - fTemas - 4, to: fAmorRec - fTemas - 6, x: 830, y: 252, w: 92, h: 32, r: 16 },
-                  { from: fAmorRec - fTemas - 4, to: dur - fTemas, x: 40, y: 476, w: 150, h: 32, r: 16 },
+                  { from: fMist - fTemas - 4, to: fAmorRec - fTemas - 6, x: 818, y: 243, w: 108, h: 48, r: 24 },
+                  { from: fAmorRec - fTemas - 4, to: dur - fTemas + 20, x: 4, y: 467, w: 216, h: 48, r: 24 },
                 ]} />
             </BrowserWindow>
           </AbsoluteFill>
@@ -98,16 +101,24 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
         </Phase>
       </Sequence>
 
-      <Sfx name="click" at={Math.round((4.88 - A_START) * fps)} volume={0.5} />
-      <Sfx name="counter" at={fNum - 20} volume={0.2} />
-      <Sfx name="pop" at={fNum} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fEsp - 4} volume={0.3} />
-      <Sfx name="pop" at={fCuentos} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fMitad - 4} volume={0.3} />
-      <Sfx name="tick" at={fCyc} volume={0.2} />
-      <Sfx name="tick" at={fAna} volume={0.2} />
-      <Sfx name="whoosh_soft" at={fTemas - 4} volume={0.3} />
-      <Sfx name="tick" at={fMist} volume={0.2} />
+      <Sfx name="click" at={Math.round((4.88 - A_START) * fps)} />
+      <Sfx name="zoom_out" at={Math.round((5.9 - A_START) * fps) - 6} volume={0.8} />
+      <Sfx name="draw" at={Math.round((8.0 - A_START) * fps)} />
+      <Sfx name="zoom_in" at={Math.round((8.3 - A_START) * fps) + 10} />
+      <Sfx name="counter" at={fNum - 20} />
+      <Sfx name="snap_in" at={fNum - 20} />
+      <Sfx name="swipe" at={fEsp} />
+      <Sfx name="ui_pop" at={fEsp + 8} />
+      <Sfx name="swipe" at={fCuentos - 8} volume={0.7} />
+      <Sfx name="ui_pop" at={fCuentos} volume={0.8} />
+      <Sfx name="swipe" at={fMitad} />
+      <Sfx name="tick_soft" at={fMitad + 8} />
+      <Sfx name="tick_soft" at={fCyc} />
+      <Sfx name="tick_soft" at={fAna} />
+      <Sfx name="transition" at={fTemas} volume={0.8} />
+      <Sfx name="zoom_in" at={fMist - 4} volume={0.8} />
+      <Sfx name="draw" at={fMist - 4} />
+      <Sfx name="swipe" at={fAmorRec - 2} />
     </Stage>
   );
 };

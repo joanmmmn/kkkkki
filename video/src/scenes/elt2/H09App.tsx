@@ -8,6 +8,7 @@ import { CheckIcon, CrossIcon, BookIcon, HeadphonesIcon } from '../../components
 import { Sfx } from '../../components/Sfx';
 import { clamp } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
+import { Grow } from '../../components/Grow';
 
 const Row: React.FC<{ ok: boolean; text: string; at: number; size?: number }> = ({ ok, text, at, size = 46 }) => {
   const frame = useCurrentFrame();
@@ -19,6 +20,14 @@ const Row: React.FC<{ ok: boolean; text: string; at: number; size?: number }> = 
     </div>
   );
 };
+
+const WifiOff: React.FC<{ size?: number; strike: number }> = ({ size = 64, strike }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24">
+    <path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 15.8a5 5 0 0 1 6.8 0" fill="none" stroke={color.ink} strokeWidth="1.9" strokeLinecap="round" />
+    <circle cx="12" cy="19" r="1.4" fill={color.ink} />
+    <path d="M3.5 3.5l17 17" stroke={color.red} strokeWidth="2.4" strokeLinecap="round" strokeDasharray={24.1} strokeDashoffset={24.1 * (1 - strike)} />
+  </svg>
+);
 
 const Laptop: React.FC<{ size?: number }> = ({ size = 120 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.6" fill="none" stroke={color.ink} strokeWidth="1.5" /><path d="M2 18.5h20" stroke={color.ink} strokeWidth="1.5" strokeLinecap="round" /></svg>
@@ -44,19 +53,21 @@ export const H09App: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
   return (
     <Stage>
       <Phase from={0} to={fMovil + 4}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 60 }}>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
           <div style={{ width: 720, background: '#fff', borderRadius: 36, padding: 54, boxShadow: shadow.card, border: `1px solid ${color.line}` }}>
             <div style={{ fontFamily: font.sans, fontSize: 30, letterSpacing: 5, color: color.muted, fontWeight: 500 }}>SIN CUENTA</div>
             <div style={{ fontFamily: font.sans, fontSize: 64, fontWeight: 700, margin: '10px 0 30px' }}>Entras y escuchas</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}><Row ok text="Leer" at={6} /><Row ok text="Escuchar audiolibros" at={12} /></div>
           </div>
-          <div style={{ width: 720, background: '#fff', borderRadius: 36, padding: 54, boxShadow: shadow.card, border: `3px solid ${color.yellow}`, opacity: spring({ frame: frame - fReg, fps }), transform: `translateY(${(1 - spring({ frame: frame - fReg, fps, config: { damping: 18 } })) * 60}px)` }}>
+          <Grow at={fReg - 6} w={720} gap={60}>
+          <div style={{ width: 720, background: '#fff', borderRadius: 36, padding: 54, boxShadow: '0 40px 90px rgba(255,202,5,0.22), 0 8px 24px rgba(16,16,16,0.06)', border: `3px solid ${color.yellow}` }}>
             <div style={{ fontFamily: font.sans, fontSize: 30, letterSpacing: 5, color: color.muted, fontWeight: 500 }}>CON CUENTA GRATIS</div>
             <div style={{ fontFamily: font.sans, fontSize: 64, fontWeight: 700, margin: '10px 0 30px' }}>Y además…</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               <Row ok text="Historial" at={fHist} /><Row ok text="Favoritos y marcadores" at={fFav} /><Row ok text="Cuaderno de notas" at={fNotas} />
             </div>
           </div>
+          </Grow>
         </AbsoluteFill>
       </Phase>
 
@@ -80,32 +91,39 @@ export const H09App: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
 
       <Phase from={fOjo} to={dur} out={4}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 40 }}>
-          <div style={{ fontFamily: font.sans, fontSize: 36, letterSpacing: 6, color: color.muted, fontWeight: 500 }}>SIN CONEXIÓN</div>
-          <div style={{ display: 'flex', gap: 50 }}>
-            {[{ ok: true, t: 'Leer', s: 'EPUB · PDF', I: BookIcon, f: fLeer }, { ok: false, t: 'Escuchar', s: 'necesita internet', I: HeadphonesIcon, f: fAudio }].map((x) => {
-              const s = spring({ frame: frame - x.f + 6, fps, config: { damping: 13, stiffness: 170 } });
-              return (
-                <div key={x.t} style={{ width: 600, padding: '50px 54px', borderRadius: 40, background: '#fff', boxShadow: shadow.card, border: `3px solid ${x.ok ? color.green : color.red}`, opacity: s, transform: `scale(${0.85 + 0.15 * s})`, display: 'flex', alignItems: 'center', gap: 30 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
+            <WifiOff size={64} strike={interpolate(frame, [fOjo + 8, fOjo + 20], [0, 1], clamp)} />
+            <div style={{ fontFamily: font.sans, fontSize: 40, letterSpacing: 6, color: color.ink2, fontWeight: 700 }}>SIN CONEXIÓN</div>
+          </div>
+          <div style={{ display: 'flex' }}>
+            {[{ ok: true, t: 'Leer', s: 'EPUB · PDF', I: BookIcon, f: fLeer }, { ok: false, t: 'Escuchar', s: 'necesita internet', I: HeadphonesIcon, f: fAudio }].map((x, i) => (
+              <Grow key={x.t} at={x.f - 8 - fOjo} w={600} gap={50} first={i === 0}>
+                <div style={{ padding: '50px 54px', borderRadius: 40, background: '#fff', boxShadow: shadow.card, border: `3px solid ${x.ok ? color.green : color.red}`, display: 'flex', alignItems: 'center', gap: 30 }}>
                   <x.I size={110} />
                   <div style={{ flex: 1, fontFamily: font.sans }}>
                     <div style={{ fontSize: 72, fontWeight: 700 }}>{x.t}</div>
                     <div style={{ fontSize: 34, color: color.muted }}>{x.s}</div>
                   </div>
-                  {x.ok ? <CheckIcon size={80} /> : <CrossIcon size={80} />}
+                  <div style={{ transform: `scale(${spring({ frame: frame - x.f, fps, config: { damping: 9, stiffness: 200 } })})` }}>{x.ok ? <CheckIcon size={80} /> : <CrossIcon size={80} />}</div>
                 </div>
-              );
-            })}
+              </Grow>
+            ))}
           </div>
         </AbsoluteFill>
       </Phase>
 
-      {[8, 14, fHist, fFav, fNotas].map((f, i) => <Sfx key={i} name="tick" at={f} volume={0.18} />)}
-      <Sfx name="whoosh_deep" at={fMovil - 6} volume={0.3} />
-      {[1, 2, 3].map((k) => <Sfx key={k} name="click" at={Math.round(fMovil + 30 + (fDoble + 4 - fMovil - 30) * (k / 4))} volume={0.35} />)}
-      <Sfx name="cross" at={fOrd} volume={0.3} />
-      <Sfx name="whoosh_fast" at={fOjo - 4} volume={0.3} />
-      <Sfx name="tick" at={fLeer - 6} volume={0.22} />
-      <Sfx name="cross" at={fAudio - 6} volume={0.35} />
+      {[6, 12].map((f) => <Sfx key={f} name="ui_tap" at={f} volume={0.8} />)}
+      <Sfx name="swipe" at={fReg - 4} />
+      <Sfx name="card_flip" at={fReg} />
+      {[fHist, fFav, fNotas].map((f) => <Sfx key={f} name="ui_tap" at={f} volume={0.8} />)}
+      <Sfx name="whoosh_deep" at={fMovil} volume={0.8} />
+      {[1, 2, 3].map((k) => <Sfx key={k} name="phone_tap" at={Math.round(fMovil + 30 + (fDoble + 4 - fMovil - 30) * (k / 4))} />)}
+      <Sfx name="snap_in" at={fDoble + 4} />
+      <Sfx name="fail" at={fOrd} />
+      <Sfx name="transition" at={fOjo} volume={0.7} />
+      <Sfx name="pencil_strike" at={fOjo + 8} volume={0.7} />
+      <Sfx name="success" at={fLeer - 6} />
+      <Sfx name="fail" at={fAudio - 6} />
     </Stage>
   );
 };

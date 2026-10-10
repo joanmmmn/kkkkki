@@ -49,8 +49,6 @@ export const SCENES2: SceneDef[] = [
 export const start2 = (i: number) => SCENES2.slice(0, i).reduce((a, s) => a + s.dur, 0);
 export const TOTAL2 = SCENES2.reduce((a, s) => a + s.dur, 0);
 
-// Intervalos con voz (VO + audio original) para bajar la música.
-export const voIntervals2 = () => SCENES2.flatMap((s, i) => [
-  ...s.vo.map((v) => [start2(i) + v.at, start2(i) + v.at + voFrames(v.id)] as const),
-  ...(s.audio ?? []).map((a) => [start2(i) + a.at, start2(i) + a.at + a.dur] as const),
-]);
+// Intervalos con locución y con audio original de El Libro Total, para bajar la música.
+export const voIntervals2 = () => SCENES2.flatMap((s, i) => s.vo.map((v) => [start2(i) + v.at, start2(i) + v.at + voFrames(v.id)] as const));
+export const origIntervals2 = () => SCENES2.flatMap((s, i) => (s.audio ?? []).map((a) => [start2(i) + a.at, start2(i) + a.at + a.dur] as const));
