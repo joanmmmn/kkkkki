@@ -1,0 +1,33 @@
+{
+  "viewport": [1920, 1080], "slowmo": 1,
+  "steps": [
+    {"go": "https://www.ellibrototal.com/ltotal/"},
+    {"wait": 2000},
+    {"clickSel": "input.searchLT", "dur": 50},
+    {"type": "Crimen y castigo", "delay": 20},
+    {"press": "Enter"},
+    {"wait": 4500},
+    {"move": [140, 270], "dur": 50},
+    {"click": true},
+    {"wait": 4500},
+    {"move": [1300, 600], "dur": 10},
+    {"record": true},
+    {"wait": 700},
+    {"move": [866, 365], "dur": 1000},
+    {"wait": 250},
+    {"mark": "click_ir_al_libro"},
+    {"click": true},
+    {"wait": 3800},
+    {"mark": "book_open"},
+    {"press": "ArrowRight"},
+    {"wait": 2200},
+    {"mark": "chapter_page"},
+    {"move": [1615, 232], "dur": 1100},
+    {"wait": 300},
+    {"mark": "click_balloon"},
+    {"click": true},
+    {"move": [1760, 700], "dur": 1000},
+    {"wait": 22000},
+    {"mark": "end"}
+  ]
+}

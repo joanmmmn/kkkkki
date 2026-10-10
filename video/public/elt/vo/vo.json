@@ -1,0 +1,63 @@
+{
+ "voice_id": "6xftrpatV0jGmFHxDjUv",
+ "model_id": "eleven_multilingual_v2",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.77,
+  "style": 0.18,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "scenes": [
+  {
+   "id": "E01",
+   "text": "Cinco millones de descargas, un 4,8 sobre 5… y miles de audiolibros a cero euros. Sin anuncios, sin suscripción y sin pedirte ni el correo. ¿Dónde está la trampa? Hoy analizamos El Libro Total."
+  },
+  {
+   "id": "E02",
+   "text": "En SonorBooks comparamos dónde escuchar cada audiolibro. La reseña completa, con todas las fuentes, la tienes en el enlace de la descripción."
+  },
+  {
+   "id": "E03",
+   "text": "El Libro Total es una biblioteca digital gratuita nacida en Colombia en 2005. La mantiene una fundación sin ánimo de lucro, financiada por una empresa de software, y su nombre es un guiño a la biblioteca infinita de Borges. Más de cincuenta mil títulos, en la web y en apps para Android e iPhone."
+  },
+  {
+   "id": "E04",
+   "text": "La sección que nos interesa es Audiolibros: casi seis mil setecientos títulos, sobre todo cuentos, marcados con un altavoz y filtrables por género o por temas, del misterio a los amores imposibles."
+  },
+  {
+   "id": "E05",
+   "text": "Si buscas «Crimen y castigo», aparece el libro… pero también música, ilustraciones y artículos relacionados. Y en la ficha, varias traducciones de la obra, hasta el original en ruso."
+  },
+  {
+   "id": "E06A",
+   "text": "Pulsas «Ir al libro», tocas el altavoz…"
+  },
+  {
+   "id": "E06B",
+   "text": "…y el texto se ilumina mientras las páginas pasan solas. Lees y escuchas a la vez. Y la voz es humana: en este caso, la del locutor Hernando Iván Cano."
+  },
+  {
+   "id": "E07",
+   "text": "Además, tienes modo nocturno, decenas de diccionarios a un clic, algunos de hace tres siglos, y lectura comparada en varios idiomas. Para escuchar no necesitas cuenta; si te registras, gratis, sumas historial, favoritos y notas. Y la app del móvil permite descargar libros… pero solo el texto, no el audio."
+  },
+  {
+   "id": "E08",
+   "text": "Lo mejor: es gratis de verdad, sin publicidad, y combina lectura y audio como casi nadie. Lo peor: no hay novedades ni superventas, solo obras de dominio público o cedidas; el reproductor es básico, sin descargas de audio, y la calidad de las grabaciones no es uniforme."
+  },
+  {
+   "id": "E09",
+   "text": "Es ideal para estudiantes, amantes de los clásicos y quien aprende idiomas. Y el precio lo dice todo: «Crimen y castigo» cuesta casi diecinueve euros en Audible. Aquí, cero."
+  },
+  {
+   "id": "E10",
+   "text": "¿La trampa? No la hay. Si buscas novedades, no es tu sitio. Pero para escuchar clásicos gratis, es de lo mejor que existe en español. Nuestra nota: 8,2 sobre 10. Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks. La reseña completa, en la descripción. Tu próxima historia te está esperando."
+  },
+  {
+   "id": "S01",
+   "text": "La reseña completa, en sonorbooks punto com."
+  }
+ ]
+}

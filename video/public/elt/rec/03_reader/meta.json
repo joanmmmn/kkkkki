@@ -1,0 +1,37 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 939,
+ "duration": 32.67,
+ "offset": 0.043,
+ "marks": {
+  "click_ir_al_libro": 1.969,
+  "book_open": 5.87,
+  "chapter_page": 8.097,
+  "click_balloon": 9.526,
+  "end": 32.669
+ },
+ "events": [
+  {
+   "t": 9.651,
+   "type": "audio_play",
+   "src": "https://www.ellibrototal.com/testLtotal/sonido/5836/5718/5836_5718_3_244281.mp3",
+   "at": 0
+  },
+  {
+   "t": 13.015,
+   "type": "audio_pause",
+   "src": "https://www.ellibrototal.com/testLtotal/sonido/5836/5718/5836_5718_3_244281.mp3",
+   "at": 3.09551
+  },
+  {
+   "t": 13.017,
+   "type": "audio_play",
+   "src": "https://www.ellibrototal.com/testLtotal/sonido/5836/5718/5836_5718_4_244282.mp3",
+   "at": 0
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+.secrets/
+.env
+node_modules/
+video/out/
+video/node_modules/
+*.log
+assets/el-libro-total/youtube/*.info.json
+__pycache__/

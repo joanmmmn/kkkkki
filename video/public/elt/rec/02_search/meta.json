@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 2509,
+ "duration": 29.198,
+ "offset": 0.023,
+ "marks": {
+  "to_search": 0.804,
+  "typing": 2.765,
+  "results": 5.054,
+  "click_book": 17.092,
+  "ficha": 20.986
+ }
+}

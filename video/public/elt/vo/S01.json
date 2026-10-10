@@ -1,0 +1,43 @@
+{
+ "id": "S01",
+ "hash": "64cafae566fe",
+ "text": "La reseña completa, en sonorbooks punto com.",
+ "duration": 3.669,
+ "words": [
+  {
+   "w": "La",
+   "s": 0.0,
+   "e": 0.128
+  },
+  {
+   "w": "reseña",
+   "s": 0.197,
+   "e": 0.58
+  },
+  {
+   "w": "completa,",
+   "s": 0.627,
+   "e": 1.3
+  },
+  {
+   "w": "en",
+   "s": 1.509,
+   "e": 1.66
+  },
+  {
+   "w": "sonorbooks",
+   "s": 1.718,
+   "e": 2.334
+  },
+  {
+   "w": "punto",
+   "s": 2.508,
+   "e": 2.902
+  },
+  {
+   "w": "com.",
+   "s": 2.961,
+   "e": 3.669
+  }
+ ]
+}

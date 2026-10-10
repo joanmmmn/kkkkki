@@ -1,0 +1,21 @@
+import { Easing, interpolate } from 'remotion';
+
+export const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
+export const easeInOut = Easing.bezier(0.65, 0, 0.35, 1);
+export const easeOut = Easing.bezier(0.16, 1, 0.3, 1);
+export const easeSoft = Easing.bezier(0.45, 0, 0.2, 1);
+
+export const fadeIn = (frame: number, start: number, dur = 12) => interpolate(frame, [start, start + dur], [0, 1], { ...clamp, easing: easeOut });
+export const fadeOut = (frame: number, end: number, dur = 12) => interpolate(frame, [end - dur, end], [1, 0], { ...clamp, easing: easeInOut });
+
+export type Key = { f: number; [k: string]: number };
+// Interpola varios valores a lo largo de fotogramas clave con curva suave entre cada par.
+export const keyframes = (frame: number, keys: Key[], prop: string, easing = easeInOut) => {
+  if (keys.length === 0) return 0;
+  if (frame <= keys[0].f) return keys[0][prop];
+  for (let i = 0; i < keys.length - 1; i++) {
+    const a = keys[i], b = keys[i + 1];
+    if (frame <= b.f) return interpolate(frame, [a.f, b.f], [a[prop], b[prop]], { ...clamp, easing });
+  }
+  return keys[keys.length - 1][prop];
+};

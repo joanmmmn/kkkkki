@@ -1,0 +1,20 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 1438,
+ "duration": 16.627,
+ "offset": 0.05,
+ "marks": {
+  "worlds": 0.656,
+  "to_audiolibros": 3.681,
+  "click_audiolibros": 4.884,
+  "audiolibros_page": 7.582,
+  "click_ver_mas": 10.651,
+  "topics": 12.946,
+  "end": 16.627
+ },
+ "events": []
+}
