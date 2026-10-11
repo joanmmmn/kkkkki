@@ -1,0 +1,89 @@
+{
+ "model_id": "music_v1",
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental background score for a premium, trustworthy app review on YouTube",
+   "steady 108 BPM tempo throughout",
+   "warm felt piano, soft analog pads, gentle plucked synths, clean electric guitar accents, light modern percussion, round sub bass",
+   "polished, modern, curious and optimistic, minimal and uncluttered",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums"
+  ],
+  "sections": [
+   {
+    "section_name": "Hook",
+    "positive_local_styles": [
+     "starts immediately with a punchy soft hit",
+     "curious plucked motif",
+     "fast rising energy"
+    ],
+    "negative_local_styles": [
+     "slow fade in"
+    ],
+    "duration_ms": 4200,
+    "lines": []
+   },
+   {
+    "section_name": "Features",
+    "positive_local_styles": [
+     "bouncy upbeat groove",
+     "bright plucks",
+     "keeps momentum"
+    ],
+    "negative_local_styles": [
+     "breakdown"
+    ],
+    "duration_ms": 17960,
+    "lines": []
+   },
+   {
+    "section_name": "Cons",
+    "positive_local_styles": [
+     "short gentle breakdown",
+     "fewer drums",
+     "honest and calm"
+    ],
+    "negative_local_styles": [
+     "riser"
+    ],
+    "duration_ms": 7900,
+    "lines": []
+   },
+   {
+    "section_name": "Free trial",
+    "positive_local_styles": [
+     "uplifting lift",
+     "sparkle accents",
+     "tight groove"
+    ],
+    "negative_local_styles": [
+     "aggressive drums"
+    ],
+    "duration_ms": 16840,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "main motif resolves",
+     "sustained final chord with a soft tail"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 5160,
+    "lines": []
+   }
+  ]
+ }
+}
