@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut, Key, keyframes } from '../../lib/anim';
 import { RealPhone, TapRipple } from '../../components/RealPhone';
@@ -15,28 +15,61 @@ export const hasRec = (name: string) => Boolean((nxrIndex as Record<string, unkn
 export type Tap = { f: number; x: number; y: number }; // fotograma de la escena y px de la grabación (664×1440)
 export type PhoneKey = Key & { rx: number; ry: number; rz: number; s: number; x: number; y: number };
 
-// Móvil con una grabación de la app. Si la grabación aún no existe, muestra un marcador de posición.
+// Toma de la pantalla del móvil: grabación `rec` que empieza en el segundo `start` cuando la escena llega al fotograma `at`.
+// `hold`: segundo de la grabación en el que la imagen se detiene. `fade`: fundido de entrada en fotogramas (0 = corte seco).
+export type Shot = { rec: string; at: number; start: number; rate?: number; hold?: number; fade?: number; marks?: Mark[]; zoom?: CamKey[]; overlay?: (t: number) => React.ReactNode };
+
+// Pantalla con varias tomas encadenadas (fundido corto entre una y otra).
+export const ShotsScreen: React.FC<{ shots: Shot[]; w: number; fade?: number }> = ({ shots, w, fade = 6 }) => {
+  const frame = useCurrentFrame();
+  const list = [...shots].sort((a, b) => a.at - b.at);
+  let i = 0;
+  for (let k = 0; k < list.length; k++) if (frame >= list[k].at) i = k;
+  const render = (sh: Shot, opacity: number, key: string) => (
+    <div key={key} style={{ position: 'absolute', inset: 0, opacity }}>
+      <Sequence from={sh.at} layout="none">
+        {hasRec(sh.rec) ? (
+          <ScreenClip src={`nxr/rec/${sh.rec}/video.mp4`} width={w} viewport={[APP_W, APP_H]} startAt={sh.start} showCursor={false} marks={sh.marks ?? []}
+            camera={sh.zoom ?? [{ f: 0, zoom: 1, x: APP_W / 2, y: APP_H / 2 }]} playbackRate={sh.rate ?? 1} overlay={sh.overlay} holdAt={sh.hold} />
+        ) : (
+          <Placeholder w={w} label={sh.rec} />
+        )}
+      </Sequence>
+    </div>
+  );
+  const cur = list[i];
+  const prev = i > 0 ? list[i - 1] : null;
+  const fd = cur.fade ?? fade;
+  const p = prev && fd > 0 ? interpolate(frame, [cur.at, cur.at + fd], [0, 1], clamp) : 1;
+  return (
+    <div style={{ position: 'absolute', inset: 0 }}>
+      {prev && p < 1 && render(prev, 1, `p${i - 1}`)}
+      {render(cur, p, `c${i}`)}
+    </div>
+  );
+};
+
+// Móvil con la app. `shots` encadena grabaciones; `rec`/`startAt` es el atajo para una sola toma.
 // `cam`: fotogramas clave de giro (rx, ry, rz en grados), escala s y desplazamiento x/y del móvil.
 export const AppPhone: React.FC<{
-  rec?: string; startAt?: number; w?: number; cam?: PhoneKey[]; taps?: Tap[]; marks?: Mark[]; zoom?: CamKey[];
+  rec?: string; startAt?: number; shots?: Shot[]; w?: number; cam?: PhoneKey[]; taps?: Tap[]; marks?: Mark[]; zoom?: CamKey[];
   image?: string; tone?: 'graphite' | 'silver' | 'sand'; overlay?: (t: number) => React.ReactNode; playbackRate?: number; placeholder?: string;
-}> = ({ rec, startAt = 0, w = 430, cam = [{ f: 0, rx: 0, ry: 0, rz: 0, s: 1, x: 0, y: 0 }], taps = [], marks = [], zoom, image, tone = 'graphite', overlay, playbackRate = 1, placeholder }) => {
+}> = ({ rec, startAt = 0, shots, w = 430, cam = [{ f: 0, rx: 0, ry: 0, rz: 0, s: 1, x: 0, y: 0 }], taps = [], marks = [], zoom, image, tone = 'graphite', overlay, playbackRate = 1, placeholder }) => {
   const frame = useCurrentFrame();
   const k = (p: string) => keyframes(frame, cam, p, easeInOut);
   const scale = w / APP_W;
-  const have = rec ? hasRec(rec) : false;
+  const list: Shot[] | null = shots ?? (rec ? [{ rec, at: 0, start: startAt, rate: playbackRate, marks, zoom, overlay }] : null);
   return (
     <div style={{ transform: `translate(${k('x')}px, ${k('y')}px) scale(${k('s')})`, willChange: 'transform' }}>
       <RealPhone w={w} ratio={APP_RATIO} rotX={k('rx')} rotY={k('ry')} rotZ={k('rz')} tone={tone} screenBg="#fff">
-        {have && rec ? (
-          <ScreenClip src={`nxr/rec/${rec}/video.mp4`} width={w} viewport={[APP_W, APP_H]} startAt={startAt} showCursor={false} marks={marks}
-            camera={zoom ?? [{ f: 0, zoom: 1, x: APP_W / 2, y: APP_H / 2 }]} overlay={overlay} playbackRate={playbackRate} />
+        {list ? (
+          <ShotsScreen shots={list} w={w} />
         ) : image ? (
           <Img src={staticFile(image)} style={{ width: w, height: w * APP_RATIO, display: 'block' }} />
         ) : (
-          <Placeholder w={w} label={placeholder ?? rec ?? ''} />
+          <Placeholder w={w} label={placeholder ?? ''} />
         )}
-        {taps.map((t, i) => <TapRipple key={i} x={t.x * scale} y={t.y * scale} frame={frame} at={t.f} size={w * 0.13} />)}
+        {taps.map((t, i) => <TapRipple key={i} x={t.x * scale} y={t.y * scale} frame={frame} at={t.f} size={w * 0.15} />)}
       </RealPhone>
     </div>
   );
@@ -50,14 +83,15 @@ const Placeholder: React.FC<{ w: number; label: string }> = ({ w, label }) => (
 );
 
 // Etiqueta de función con icono que entra con muelle (y sale en `out`, si se da).
-export const FeatureTag: React.FC<{ at: number; out?: number; icon?: React.ReactNode; children: React.ReactNode; size?: number; dark?: boolean; style?: React.CSSProperties; from?: 'left' | 'right' | 'up' }> = ({
-  at, out, icon, children, size = 34, dark = false, style, from = 'left',
+// `reserve`: ocupa su sitio desde el principio (invisible), para que una fila centrada no salte cuando aparece.
+export const FeatureTag: React.FC<{ at: number; out?: number; icon?: React.ReactNode; children: React.ReactNode; size?: number; dark?: boolean; style?: React.CSSProperties; from?: 'left' | 'right' | 'up'; reserve?: boolean }> = ({
+  at, out, icon, children, size = 34, dark = false, style, from = 'left', reserve = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - at, fps, config: { damping: 15, stiffness: 170 } });
   const o = out !== undefined ? interpolate(frame, [out - 8, out], [0, 1], { ...clamp, easing: easeInOut }) : 0;
-  if (frame < at - 1 || o >= 1) return null;
+  if (!reserve && (frame < at - 1 || o >= 1)) return null;
   const dx = from === 'left' ? -40 : from === 'right' ? 40 : 0;
   const dy = from === 'up' ? 30 : 0;
   return (

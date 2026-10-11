@@ -110,14 +110,14 @@ export const R13ProsCons: React.FC<P> = ({ lead }) => {
   const pros = [
     { f: at('ebooks'), t: 'Ebooks y audiolibros en una app' },
     { f: at('barato'), t: 'Plan barato para empezar (5,99 €)' },
-    { f: at('cuatro'), t: '4 perfiles en todos los planes' },
-    { f: at('infantil'), t: 'Modo infantil de verdad' },
+    { f: at('cuatro'), t: '4 perfiles, con modo infantil' },
+    { f: at('guardan'), t: 'Las horas sin gastar se guardan' },
   ];
   const cons = [
     { f: at('limite'), t: 'Límite de horas en Mini y Standard' },
     { f: at('web'), t: 'Sin web ni app de ordenador' },
     { f: at('subir'), t: 'No puedes subir tus archivos' },
-    { f: at('cancelas'), t: 'Si cancelas en la prueba, pierdes el acceso' },
+    { f: at('cancelas'), t: 'Cancelar la prueba corta el acceso' },
   ];
   const fBueno = at('bueno');
   const fMalo = at('malo');
@@ -126,7 +126,7 @@ export const R13ProsCons: React.FC<P> = ({ lead }) => {
     return (
       <div style={{ width: 760, borderRadius: 40, background: '#fff', boxShadow: shadow.card, border: `1px solid ${color.line}`, overflow: 'hidden', opacity: s, transform: `translateY(${(1 - s) * 60}px)` }}>
         <div style={{ padding: '26px 40px', background: good ? color.green : color.red, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 46, display: 'flex', alignItems: 'center', gap: 18 }}>
-          {good ? <CheckIcon size={50} c="#fff" /> : <CrossIcon size={50} c="#fff" />}{title}
+          {good ? <CheckIcon size={50} c="#fff" fg={color.green} /> : <CrossIcon size={50} c="#fff" fg={color.red} />}{title}
         </div>
         <div style={{ padding: '18px 40px 28px' }}>
           {list.map((it, i) => {
@@ -144,9 +144,12 @@ export const R13ProsCons: React.FC<P> = ({ lead }) => {
   };
   return (
     <Stage tone="warm">
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 50, paddingTop: 60 }}>
-        {col('Lo bueno', true, fBueno, pros)}
-        {col('Lo malo', false, fMalo, cons)}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 60 }}>
+        {/* Las dos columnas, con la misma altura */}
+        <div style={{ display: 'flex', alignItems: 'stretch', gap: 50 }}>
+          {col('Lo bueno', true, fBueno, pros)}
+          {col('Lo malo', false, fMalo, cons)}
+        </div>
       </AbsoluteFill>
       <Sfx name="whoosh_soft" at={fBueno} />
       {pros.map((p, i) => <Sfx key={`p${i}`} name="tick_soft" at={p.f} />)}

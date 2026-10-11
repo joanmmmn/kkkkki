@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, getInputProps, Img, interpolate, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Freeze, getInputProps, Img, interpolate, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 
 // Con --props='{"audioOnly":true}' las grabaciones no se decodifican (render rápido solo de audio para revisar la mezcla).
 const AUDIO_ONLY = Boolean((getInputProps() as { audioOnly?: boolean }).audioOnly);
@@ -47,10 +47,12 @@ export type Mark = { from: number; to: number; x: number; y: number; w: number; 
 export const ScreenClip: React.FC<{
   src: string; width: number; startAt?: number; cursor?: CursorPoint[]; camera?: CamKey[]; viewport?: [number, number];
   playbackRate?: number; showCursor?: boolean; cursorOpacity?: number; marks?: Mark[]; image?: boolean;
+  // Segundo de la grabación en el que la imagen se queda quieta (las marcas y la capa siguen animándose).
+  holdAt?: number;
   // Capa encima de la grabación y debajo del cursor, en píxeles CSS del viewport grabado (se mueve con la cámara):
   // tapar datos personales, teclear texto de ejemplo, etc. Recibe el tiempo t (s) de la grabación.
   overlay?: (t: number) => React.ReactNode;
-}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay }) => {
+}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay, holdAt }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const [vw, vh] = viewport;
@@ -63,7 +65,8 @@ export const ScreenClip: React.FC<{
   let ty = height / 2 - fy * k * zoom;
   tx = Math.min(0, Math.max(width - width * zoom, tx));
   ty = Math.min(0, Math.max(height - height * zoom, ty));
-  const t = startAt + (frame / fps) * playbackRate;
+  const holdF = holdAt !== undefined && holdAt > startAt ? Math.round(((holdAt - startAt) / playbackRate) * fps) : undefined;
+  const t = Math.min(startAt + (frame / fps) * playbackRate, holdAt ?? Infinity);
   const c = cursorAt(cursor, t);
   // Si la escena dura más que la grabación, se congela el último fotograma (last.jpg junto al vídeo).
   const recDuration = REC_DURATIONS[src];
@@ -74,7 +77,13 @@ export const ScreenClip: React.FC<{
       <div style={{ position: 'absolute', left: 0, top: 0, width, height, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${zoom})` }}>
         {image || frozen
           ? <Img src={staticFile(frozen ? src.replace(/video\.mp4$/, 'last.jpg') : src)} style={{ width, height, display: 'block' }} />
-          : <OffthreadVideo src={staticFile(src)} trimBefore={Math.round(startAt * fps)} playbackRate={playbackRate} muted style={{ width, height, display: 'block' }} />}
+          : holdF !== undefined
+            ? (
+              <Freeze frame={holdF} active={(f) => f >= holdF}>
+                <OffthreadVideo src={staticFile(src)} trimBefore={Math.round(startAt * fps)} playbackRate={playbackRate} muted style={{ width, height, display: 'block' }} />
+              </Freeze>
+            )
+            : <OffthreadVideo src={staticFile(src)} trimBefore={Math.round(startAt * fps)} playbackRate={playbackRate} muted style={{ width, height, display: 'block' }} />}
         {overlay && (
           <div style={{ position: 'absolute', left: 0, top: 0, width: vw, height: vh, transformOrigin: '0 0', transform: `scale(${k})` }}>
             {overlay(t)}

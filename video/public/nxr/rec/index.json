@@ -1,1 +1,191 @@
-{}
+{
+ "00_bienvenida": {
+  "duration": 5.2,
+  "src": "2026-10-11 19-19-43.mp4",
+  "from": 12.0,
+  "to": 17.2,
+  "audio": false
+ },
+ "00_login": {
+  "duration": 12.0,
+  "src": "2026-10-11 19-19-43.mp4",
+  "from": 18.0,
+  "to": 30.0,
+  "audio": false
+ },
+ "01_inicio": {
+  "duration": 34.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 148.0,
+  "to": 182.0,
+  "audio": false
+ },
+ "01b_inicio_bajo": {
+  "duration": 26.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 210.0,
+  "to": 236.0,
+  "audio": false
+ },
+ "02_librarian_a": {
+  "duration": 12.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 238.0,
+  "to": 250.0,
+  "audio": false
+ },
+ "02_librarian_b": {
+  "duration": 44.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 276.0,
+  "to": 320.0,
+  "audio": false
+ },
+ "03_buscar": {
+  "duration": 27.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 326.0,
+  "to": 353.0,
+  "audio": false
+ },
+ "04_ficha_galdos": {
+  "duration": 33.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 353.0,
+  "to": 386.0,
+  "audio": false
+ },
+ "05_abrir_libro": {
+  "duration": 26.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 386.0,
+  "to": 412.0,
+  "audio": false
+ },
+ "05_toc": {
+  "duration": 12.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 448.0,
+  "to": 460.0,
+  "audio": false
+ },
+ "05_leer": {
+  "duration": 112.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 460.0,
+  "to": 572.0,
+  "audio": false
+ },
+ "06_escuchar": {
+  "duration": 128.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 584.0,
+  "to": 712.0,
+  "audio": true
+ },
+ "07_biblioteca": {
+  "duration": 29.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 728.0,
+  "to": 757.0,
+  "audio": false
+ },
+ "08_perfil": {
+  "duration": 33.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 758.0,
+  "to": 791.0,
+  "audio": false
+ },
+ "09_descargas": {
+  "duration": 16.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 792.0,
+  "to": 808.0,
+  "audio": false
+ },
+ "10_noche": {
+  "duration": 22.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 808.0,
+  "to": 830.0,
+  "audio": false
+ },
+ "11_actividad": {
+  "duration": 58.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 840.0,
+  "to": 898.0,
+  "audio": false
+ },
+ "12_infantil_setup": {
+  "duration": 96.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 910.0,
+  "to": 1006.0,
+  "audio": false
+ },
+ "12_infantil_home": {
+  "duration": 40.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1026.0,
+  "to": 1066.0,
+  "audio": false
+ },
+ "13_diluvio": {
+  "duration": 27.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1106.0,
+  "to": 1133.0,
+  "audio": false
+ },
+ "14_narrador": {
+  "duration": 16.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1186.0,
+  "to": 1202.0,
+  "audio": false
+ },
+ "15_racha": {
+  "duration": 17.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1238.0,
+  "to": 1255.0,
+  "audio": false
+ },
+ "16_sagas": {
+  "duration": 20.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1258.0,
+  "to": 1278.0,
+  "audio": false
+ },
+ "17_categorias": {
+  "duration": 72.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1280.0,
+  "to": 1352.0,
+  "audio": false
+ },
+ "18_pin": {
+  "duration": 22.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1372.0,
+  "to": 1394.0,
+  "audio": false
+ },
+ "19_tipos_perfil": {
+  "duration": 18.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 1408.0,
+  "to": 1426.0,
+  "audio": false
+ },
+ "02_librarian_tap": {
+  "duration": 18.0,
+  "src": "2026-10-11 19-21-50.mp4",
+  "from": 232.0,
+  "to": 250.0,
+  "audio": false
+ }
+}

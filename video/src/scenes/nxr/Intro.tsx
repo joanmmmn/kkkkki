@@ -5,7 +5,7 @@ import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
 import { Sfx } from '../../components/Sfx';
 import { CheckIcon, CrossIcon, HeadphonesIcon, BookIcon } from '../../components/Icons';
-import { ClockIcon, GlobeIcon, InfinityIcon, MagazineIcon, PhoneIcon, TabletIcon, UserIcon } from '../../components/Icons2';
+import { ClockIcon, GlobeIcon, InfinityIcon, PhoneIcon, TabletIcon, UserIcon } from '../../components/Icons2';
 import { NextoryLogo } from '../nx/common';
 import { wf } from './timeline';
 import { AppPhone, BigTitle, CountUp, FeatureTag } from './kit';
@@ -55,7 +55,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
   const fMillon = at('millon');
   const fAudio = at('audiolibros');
   const fEbooks = at('ebooks');
-  const fRevistas = at('revistas');
+  const fIdiomas = at('idiomas');
   const fNubico = at('nubico');
   const fMovil = at('movil');
   const fWeb = at('web');
@@ -70,7 +70,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
   const formats = [
     { f: fAudio, icon: <HeadphonesIcon size={46} />, label: 'Audiolibros' },
     { f: fEbooks, icon: <BookIcon size={46} />, label: 'Ebooks' },
-    { f: fRevistas, icon: <MagazineIcon size={46} />, label: 'Revistas' },
+    { f: fIdiomas, icon: <GlobeIcon size={46} />, label: 'Varios idiomas' },
   ];
   return (
     <Stage tone="warm">
@@ -87,7 +87,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
           </div>
           <div style={{ display: 'flex', gap: 26, marginTop: 34 }}>
             {formats.map((x) => (
-              <FeatureTag key={x.label} at={x.f} icon={x.icon} size={40} from="up">{x.label}</FeatureTag>
+              <FeatureTag key={x.label} at={x.f} icon={x.icon} size={40} from="up" reserve>{x.label}</FeatureTag>
             ))}
           </div>
         </AbsoluteFill>

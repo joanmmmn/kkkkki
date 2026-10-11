@@ -164,7 +164,7 @@ export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
         })}
         {frame >= fHoy - 2 && (
           <div style={{ position: 'absolute', right: 300, top: 640, zIndex: 10, transform: `rotate(-8deg) scale(${sHoy})`, padding: '22px 40px', borderRadius: 30, background: color.green, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 64, boxShadow: '0 30px 70px rgba(31,157,85,0.4)', display: 'flex', alignItems: 'center', gap: 18 }}>
-            <CheckIcon size={64} c="#fff" /> Hoy: 0 €
+            <CheckIcon size={64} c="#fff" fg={color.green} /> Hoy: 0 €
           </div>
         )}
       </AbsoluteFill>
@@ -191,7 +191,7 @@ export const P04App: React.FC<P> = ({ lead, dur }) => {
     <Stage tone="warm">
       <AbsoluteFill>
         <div style={{ position: 'absolute', left: 1120, top: 100 }}>
-          <AppPhone rec={frame < fDisf ? '00_login' : '01_inicio'} startAt={frame < fDisf ? 0 : 0.2} w={410}
+          <AppPhone shots={[{ rec: '00_bienvenida', at: 0, start: 0.2 }, { rec: '00_login', at: Math.max(8, fEntra - 14), start: 0.6 }, { rec: '01_inicio', at: fDisf - 6, start: 0.3 }]} w={410}
             cam={[{ f: 0, rx: 10, ry: -30, rz: 4, s: 0.9, x: 80, y: 40 }, { f: 26, rx: 3, ry: -12, rz: 1, s: 1, x: 0, y: 0 }, { f: dur, rx: 2, ry: -8, rz: 0.5, s: 1.02, x: 0, y: -4 }]} />
         </div>
         <div style={{ position: 'absolute', left: 170, top: 300, width: 860 }}>

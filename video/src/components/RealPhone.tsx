@@ -87,18 +87,20 @@ export const RealPhone: React.FC<RealPhoneProps> = ({
   );
 };
 
-// Toque en pantalla: punto que se hunde y una onda que se expande (coordenadas en px de la pantalla del móvil).
-export const TapRipple: React.FC<{ x: number; y: number; frame: number; at: number; size?: number; color?: string }> = ({ x, y, frame, at, size = 60, color = 'rgba(255,255,255,0.95)' }) => {
+// Toque en pantalla (como «mostrar toques» de Android): punto translúcido con borde oscuro y halo claro, y una onda que se abre.
+// Se lee igual sobre interfaces claras y oscuras.
+export const TapRipple: React.FC<{ x: number; y: number; frame: number; at: number; size?: number; color?: string }> = ({ x, y, frame, at, size = 60, color = 'rgba(20,20,20,0.5)' }) => {
   const f = frame - at;
   if (f < -6 || f > 26) return null;
-  const press = f < 0 ? (f + 6) / 6 : Math.max(0, 1 - f / 10);
+  const press = f < 0 ? (f + 6) / 6 : Math.max(0, 1 - f / 12);
   const wave = Math.max(0, Math.min(1, f / 22));
+  const halo = '0 0 0 2px rgba(255,255,255,0.7), 0 4px 14px rgba(0,0,0,0.3)';
   return (
     <div style={{ position: 'absolute', left: x, top: y, width: 0, height: 0, pointerEvents: 'none', zIndex: 50 }}>
-      <div style={{ position: 'absolute', width: size, height: size, left: -size / 2, top: -size / 2, borderRadius: '50%', background: 'rgba(255,255,255,0.55)', border: '2px solid rgba(16,16,16,0.25)',
-        transform: `scale(${0.75 + 0.15 * press})`, opacity: press * 0.9, boxShadow: '0 4px 14px rgba(0,0,0,0.25)' }} />
-      <div style={{ position: 'absolute', width: size, height: size, left: -size / 2, top: -size / 2, borderRadius: '50%', border: `3px solid ${color}`,
-        transform: `scale(${0.8 + wave * 1.4})`, opacity: f < 0 ? 0 : (1 - wave) * 0.9 }} />
+      <div style={{ position: 'absolute', width: size, height: size, left: -size / 2, top: -size / 2, borderRadius: '50%', background: 'rgba(255,255,255,0.42)', border: `3px solid ${color}`,
+        transform: `scale(${0.7 + 0.2 * press})`, opacity: press, boxShadow: halo }} />
+      <div style={{ position: 'absolute', width: size, height: size, left: -size / 2, top: -size / 2, borderRadius: '50%', border: `3px solid ${color}`, boxShadow: '0 0 0 2px rgba(255,255,255,0.55)',
+        transform: `scale(${0.85 + wave * 1.3})`, opacity: f < 0 ? 0 : (1 - wave) * 0.85 }} />
     </div>
   );
 };

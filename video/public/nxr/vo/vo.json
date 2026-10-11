@@ -17,7 +17,7 @@
   },
   {
    "id": "R02",
-   "text": "Nextory es una app sueca que junta audiolibros y ebooks en una sola suscripción: más de un millón cuatrocientos mil títulos en varios idiomas, y también revistas. En España tomó el relevo de Nubico, el servicio de lectura de Movistar. Eso sí: solo funciona en el móvil y en la tablet. No tiene versión web."
+   "text": "Nextory es una app sueca que junta audiolibros y ebooks en una sola suscripción: más de un millón cuatrocientos mil títulos en varios idiomas. En España tomó el relevo de Nubico, el servicio de lectura de Movistar. Eso sí: solo funciona en el móvil y en la tablet. No tiene versión web."
   },
   {
    "id": "R03",
@@ -25,31 +25,35 @@
   },
   {
    "id": "R04",
-   "text": "Al entrar, la portada te recomienda según tus gustos: novedades, listas y categorías. Y el buscador encuentra por título, autor o narrador."
+   "text": "Al entrar, la portada te recomienda según tus gustos. Y si no sabes qué leer, se lo pides a El Librarian, su asistente con inteligencia artificial: le describes lo que te apetece y te propone libros."
+  },
+  {
+   "id": "R04B",
+   "text": "El buscador encuentra por título, autor o incluso narrador, y puedes filtrar por idioma, formato y categoría."
   },
   {
    "id": "R05",
-   "text": "Cada libro tiene su ficha: si está en ebook, en audiolibro o en los dos, quién lo narra, cuánto dura y qué opinan otros lectores."
+   "text": "Cada libro tiene su ficha: si está en ebook, en audiolibro o en los dos, quién lo narra, cuánto dura y qué nota le dan otros lectores."
   },
   {
    "id": "R06",
-   "text": "Para leer, el lector es muy completo: cambias el tamaño y el tipo de letra, el color del fondo y los márgenes, y puedes poner marcadores. Tu progreso se guarda y se sincroniza entre dispositivos."
+   "text": "Para leer, puedes cambiar el tamaño de la letra, poner el fondo oscuro o gris, elegir otra tipografía y ajustar los márgenes. Y añadir marcadores, incluso con notas."
   },
   {
    "id": "R07",
-   "text": "Y para escuchar: velocidad de cero coma cinco a dos equis, saltos de quince segundos, capítulos, marcadores y un temporizador para dormirte sin perder el punto."
+   "text": "Para escuchar: velocidad de cero coma cuatro a dos, saltos de quince segundos, capítulos, marcadores y un temporizador para dormir, que puede parar justo al final del capítulo."
   },
   {
    "id": "R08",
-   "text": "Los libros se descargan en el móvil, así que puedes leer y escuchar sin conexión: en el avión, en el metro o en la playa."
+   "text": "Los libros que empiezas se descargan solos, así que puedes leer y escuchar sin conexión. Y eliges si descargar también con datos o solo con wifi."
   },
   {
    "id": "R09",
-   "text": "Puedes crear hasta tres perfiles más, cada uno con sus propias recomendaciones. Y el perfil infantil solo muestra libros para menores de doce años, con un PIN para salir."
+   "text": "Puedes crear hasta tres perfiles más, de adulto, juvenil o infantil. El infantil solo muestra libros para niños y puedes protegerlo con un PIN."
   },
   {
    "id": "R10",
-   "text": "En tu perfil ves cuánto lees y escuchas cada mes, y cuáles son tus categorías favoritas."
+   "text": "Y ojo a cómo cuenta las horas: se comparten entre perfiles, las que no gastas se guardan para el mes siguiente, y si escuchas a doble velocidad, cada hora te cuenta como dos."
   },
   {
    "id": "R11",
@@ -61,7 +65,7 @@
   },
   {
    "id": "R13",
-   "text": "Lo bueno: ebooks y audiolibros en una sola app, un plan barato para empezar, cuatro perfiles y un modo infantil de verdad. Lo malo: el límite de horas de Mini y Standard, que no hay web ni app de ordenador, que no puedes subir tus archivos y que, si cancelas durante la prueba, pierdes el acceso al momento."
+   "text": "Lo bueno: ebooks y audiolibros en una sola app, un plan barato para empezar, cuatro perfiles con modo infantil y que las horas que no gastas se guardan. Lo malo: el límite de horas de Mini y Standard, que no hay web ni app de ordenador, que no puedes subir tus archivos y que, si cancelas durante la prueba, pierdes el acceso al momento."
   },
   {
    "id": "R14",
