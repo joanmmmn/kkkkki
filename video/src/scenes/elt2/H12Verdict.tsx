@@ -27,14 +27,21 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
   const fTu = at('Tu', 0, 11.16) - 6;
   const ring = interpolate(frame, [fNota + 4, fNum + 22], [0, FINAL / 10], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: (t) => 1 - Math.pow(1 - t, 3) });
   const R = 170;
+  const NO_W = 606; // ancho de «No la hay.» a 140 px
+  const noRoom = spring({ frame: frame - fNo + 2, fps, config: { damping: 20, stiffness: 170 } });
+  const noPop = spring({ frame: frame - fNo, fps, config: { damping: 11, stiffness: 200 } });
   const C = 2 * Math.PI * R;
   return (
     <Stage tone="warm">
       <Phase from={0} to={fNota + 4}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 140, letterSpacing: -4, display: 'flex', gap: 36, alignItems: 'baseline' }}>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 140, letterSpacing: -4, display: 'flex', alignItems: 'baseline' }}>
             <Words text="¿La trampa?" start={0} size={140} weight={700} style={{ display: 'inline' }} />
-            {frame >= fNo && <span style={{ display: 'inline-block', transform: `scale(${spring({ frame: frame - fNo, fps, config: { damping: 10, stiffness: 200 } })})` }}><Highlight start={fNo + 4} dur={10}>No la hay.</Highlight></span>}
+            {/* «No la hay.» abre hueco con un muelle (la frase se recentra deslizándose) y entra con golpe de escala
+                desde su borde izquierdo, de modo que el rebote nunca pisa la interrogación. */}
+            <div style={{ width: (NO_W + 36) * noRoom, flexShrink: 0, display: 'flex', overflow: 'visible' }}>
+              <span style={{ display: 'inline-block', flexShrink: 0, marginLeft: 36, transformOrigin: '0% 65%', transform: `scale(${noPop})` }}><Highlight start={fNo + 4} dur={10}>No la hay.</Highlight></span>
+            </div>
           </div>
         </AbsoluteFill>
       </Phase>
