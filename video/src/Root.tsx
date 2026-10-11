@@ -11,11 +11,18 @@ import { TOTAL2 } from './scenes/elt2/timeline';
 import { ELTShort2, SHORT_DUR as SHORT2_DUR } from './scenes/elt2/Short2';
 import { ElevenReaderTutorial } from './scenes/er/Main';
 import { ER_TOTAL } from './scenes/er/timeline';
+import { ElevenReaderReview } from './scenes/er2/Main';
+import { ER2_TOTAL } from './scenes/er2/timeline';
+import { ERCover } from './scenes/er2/Cover';
 import { Cover } from './scenes/elt2/Cover';
 import { CoverProposal } from './scenes/elt2/CoverProposal';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="ERReview" component={ElevenReaderReview} durationInFrames={ER2_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="ERCover" component={ERCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="ERCover1080" component={ERCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
+    <Composition id="ERCoverOG" component={ERCover} durationInFrames={1} fps={FPS} width={1200} height={630} />
     <Composition id="ERTutorial" component={ElevenReaderTutorial} durationInFrames={ER_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="ELTShort2" component={ELTShort2} durationInFrames={Math.round(SHORT2_DUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Composition id="ELTReview2" component={ELTReview2} durationInFrames={TOTAL2} fps={FPS} width={W} height={H} />

@@ -1,0 +1,194 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental background score for a modern tech app review video",
+   "steady 100 BPM tempo throughout",
+   "warm felt piano, soft analog synth pads, plucked synths, clean electric guitar textures, tight modern percussion, round sub bass",
+   "polished, optimistic, curious, minimal",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls"
+  ],
+  "sections": [
+   {
+    "section_name": "Cold open",
+    "positive_local_styles": [
+     "very quiet warm ambient pad",
+     "soft sustained low drone",
+     "intimate and curious",
+     "no drums",
+     "almost silent"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "melody",
+     "bass"
+    ],
+    "duration_ms": 5720,
+    "lines": []
+   },
+   {
+    "section_name": "Hook",
+    "positive_local_styles": [
+     "pulsing synth bass enters",
+     "modern punchy drums build up",
+     "rising curiosity and momentum",
+     "ends on a confident hit"
+    ],
+    "negative_local_styles": [
+     "calm",
+     "fade"
+    ],
+    "duration_ms": 13460,
+    "lines": []
+   },
+   {
+    "section_name": "Promise",
+    "positive_local_styles": [
+     "confident upbeat groove",
+     "bright plucked synth motif",
+     "clean tight drums",
+     "optimistic"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 15800,
+    "lines": []
+   },
+   {
+    "section_name": "What it is and catalogue",
+    "positive_local_styles": [
+     "warm and curious",
+     "soft felt piano motif over light groove",
+     "light kick and shaker",
+     "gentle round bass"
+    ],
+    "negative_local_styles": [
+     "aggressive"
+    ],
+    "duration_ms": 38400,
+    "lines": []
+   },
+   {
+    "section_name": "Your own documents",
+    "positive_local_styles": [
+     "playful plucked synths",
+     "light percussion",
+     "building momentum",
+     "bright"
+    ],
+    "negative_local_styles": [
+     "heavy drums"
+    ],
+    "duration_ms": 21840,
+    "lines": []
+   },
+   {
+    "section_name": "Voices",
+    "positive_local_styles": [
+     "intimate and soft",
+     "warm pads and gentle piano",
+     "very minimal percussion",
+     "lots of space for spoken words"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "busy melody"
+    ],
+    "duration_ms": 32840,
+    "lines": []
+   },
+   {
+    "section_name": "Reader and features",
+    "positive_local_styles": [
+     "light bouncy groove",
+     "bright plucks",
+     "clean modern drums",
+     "friendly"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 26560,
+    "lines": []
+   },
+   {
+    "section_name": "Pros and cons",
+    "positive_local_styles": [
+     "steady thoughtful groove",
+     "subtle tension",
+     "muted plucks",
+     "moderate drums"
+    ],
+    "negative_local_styles": [
+     "triumphant"
+    ],
+    "duration_ms": 25260,
+    "lines": []
+   },
+   {
+    "section_name": "Price and verdict",
+    "positive_local_styles": [
+     "building and confident",
+     "rising synth arpeggio",
+     "drums grow",
+     "resolves on a satisfying uplifting hit near the end"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 34420,
+    "lines": []
+   },
+   {
+    "section_name": "Free trial tutorial",
+    "positive_local_styles": [
+     "energetic driving groove",
+     "step by step momentum",
+     "punchy drums",
+     "bright synth lead stabs"
+    ],
+    "negative_local_styles": [
+     "calm"
+    ],
+    "duration_ms": 28460,
+    "lines": []
+   },
+   {
+    "section_name": "Keep or cancel",
+    "positive_local_styles": [
+     "warm reassuring groove",
+     "soft piano chords",
+     "light drums"
+    ],
+    "negative_local_styles": [
+     "tense"
+    ],
+    "duration_ms": 14520,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "uplifting brand outro",
+     "warm resolving chords",
+     "gentle final hit then soft decay to silence"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 12400,
+    "lines": []
+   }
+  ]
+ }
+}

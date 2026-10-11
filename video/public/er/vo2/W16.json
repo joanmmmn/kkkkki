@@ -1,0 +1,110 @@
+{
+ "id": "W16",
+ "hash": "c04c10b310e0",
+ "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks. Tu próxima historia te está esperando.",
+ "duration": 8.56,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "para",
+   "s": 0.24,
+   "e": 0.32
+  },
+  {
+   "w": "saber",
+   "s": 0.4,
+   "e": 0.64
+  },
+  {
+   "w": "dónde",
+   "s": 0.68,
+   "e": 0.88
+  },
+  {
+   "w": "escuchar",
+   "s": 0.96,
+   "e": 1.36
+  },
+  {
+   "w": "cualquier",
+   "s": 1.44,
+   "e": 1.84
+  },
+  {
+   "w": "audiolibro,",
+   "s": 1.92,
+   "e": 2.68
+  },
+  {
+   "w": "y",
+   "s": 2.72,
+   "e": 2.76
+  },
+  {
+   "w": "a",
+   "s": 2.8,
+   "e": 2.88
+  },
+  {
+   "w": "qué",
+   "s": 2.96,
+   "e": 3.04
+  },
+  {
+   "w": "precio,",
+   "s": 3.4,
+   "e": 3.8
+  },
+  {
+   "w": "búscalo",
+   "s": 3.84,
+   "e": 4.32
+  },
+  {
+   "w": "en",
+   "s": 4.44,
+   "e": 4.56
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 4.68,
+   "e": 5.733
+  },
+  {
+   "w": "Tu",
+   "s": 5.787,
+   "e": 5.84
+  },
+  {
+   "w": "próxima",
+   "s": 5.88,
+   "e": 6.24
+  },
+  {
+   "w": "historia",
+   "s": 6.44,
+   "e": 6.96
+  },
+  {
+   "w": "te",
+   "s": 7.0,
+   "e": 7.04
+  },
+  {
+   "w": "está",
+   "s": 7.2,
+   "e": 7.4
+  },
+  {
+   "w": "esperando.",
+   "s": 7.44,
+   "e": 8.56
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 8.56
+}

@@ -7,3 +7,8 @@ video/node_modules/
 assets/el-libro-total/youtube/*.info.json
 __pycache__/
 video/public/**/video_proxy.mp4
+captures/elevenreader/app/
+video/public/er/app/
+.remotion/
+video/public/er/audio/*.mp3
+tools/snap.js

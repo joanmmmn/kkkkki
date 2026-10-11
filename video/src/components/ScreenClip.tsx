@@ -83,7 +83,7 @@ const DRAW = 16;   // duración del trazo al dibujarse
 const OUT = 9;     // salida
 
 // Marco amarillo en coordenadas de pantalla: trazo constante que se dibuja, foco suave alrededor y etiqueta opcional.
-const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimTo?: number }> = ({ marks, frame, width, height, map, scale, dimTo = 0.5 }) => {
+export const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimTo?: number }> = ({ marks, frame, width, height, map, scale, dimTo = 0.5 }) => {
   const id = React.useId().replace(/:/g, '');
   const list = marks.filter((m) => m.to - m.from > 12).sort((a, b) => a.from - b.from);
   const i = list.findIndex((m) => frame >= m.from && frame < m.to);

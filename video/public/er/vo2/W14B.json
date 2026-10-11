@@ -1,0 +1,60 @@
+{
+ "id": "W14B",
+ "hash": "5c192e7d6cbc",
+ "text": "Abre tu audiolibro en SonorBooks y pulsa «Empezar prueba gratuita».",
+ "duration": 4.72,
+ "words": [
+  {
+   "w": "Abre",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "tu",
+   "s": 0.32,
+   "e": 0.4
+  },
+  {
+   "w": "audiolibro",
+   "s": 0.52,
+   "e": 0.96
+  },
+  {
+   "w": "en",
+   "s": 1.04,
+   "e": 1.12
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.2,
+   "e": 1.92
+  },
+  {
+   "w": "y",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "pulsa",
+   "s": 2.16,
+   "e": 2.64
+  },
+  {
+   "w": "«Empezar",
+   "s": 2.68,
+   "e": 3.36
+  },
+  {
+   "w": "prueba",
+   "s": 3.4,
+   "e": 3.68
+  },
+  {
+   "w": "gratuita».",
+   "s": 3.76,
+   "e": 4.72
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 4.72
+}
