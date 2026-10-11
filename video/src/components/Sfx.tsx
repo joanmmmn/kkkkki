@@ -1,5 +1,5 @@
-import React from 'react';
-import { Audio, getInputProps, Sequence, staticFile, useVideoConfig } from 'remotion';
+import React, { createContext, useContext } from 'react';
+import { Audio, getInputProps, Internals, Sequence, staticFile, useVideoConfig } from 'remotion';
 
 // --props='{"stem":"sfx"|"vo"|"music"}' renderiza una sola capa de la mezcla (para medirla).
 export const STEM = (getInputProps() as { stem?: 'sfx' | 'vo' | 'music' }).stem;
@@ -9,7 +9,9 @@ export type SfxName =
   | 'page_turn' | 'impact' | 'riser' | 'shimmer' | 'counter' | 'pencil_strike'
   | 'ui_tap' | 'ui_pop' | 'swipe' | 'zoom_in' | 'zoom_out' | 'focus' | 'draw' | 'hit_soft' | 'transition' | 'stamp'
   | 'coins' | 'success' | 'fail' | 'card_flip' | 'tick_soft' | 'sparkle' | 'bass_drop' | 'reverse_swell' | 'phone_tap'
-  | 'logo_sting' | 'page_riffle' | 'snap_in';
+  | 'logo_sting' | 'page_riffle' | 'snap_in'
+  | 'whip' | 'swish_up' | 'mouse_click' | 'scroll' | 'glass_ping' | 'paper_slide' | 'pop_bright' | 'ff_scrub' | 'notify'
+  | 'receipt' | 'switch' | 'magnify' | 'score_ding' | 'glitch' | 'tick_fast' | 'boom_soft' | 'swoosh_down';
 
 // Mezcla: todos los archivos están normalizados a -1 dBFS de pico; GAIN iguala la sonoridad percibida
 // y SYNC es el instante (s) del golpe dentro del archivo, para que caiga justo en el fotograma `at`.
@@ -19,22 +21,34 @@ const GAIN: Record<SfxName, number> = {
   focus: 0.2, draw: 0.17, marker: 0.14, pencil_strike: 0.26, sparkle: 0.18, shimmer: 0.18,
   hit_soft: 0.26, impact: 0.24, bass_drop: 0.12, stamp: 0.42, success: 0.16, fail: 0.18, cross: 0.26, coins: 0.22,
   riser: 0.14, reverse_swell: 0.18, logo_sting: 0.2, typing: 0.55, counter: 0.17, page_turn: 0.32, page_riffle: 0.32,
+  whip: 0.16, swish_up: 0.2, mouse_click: 0.5, scroll: 0.35, glass_ping: 0.22, paper_slide: 0.3, pop_bright: 0.22, ff_scrub: 0.2,
+  notify: 0.16, receipt: 0.32, switch: 0.45, magnify: 0.6, score_ding: 0.16, glitch: 0.5, tick_fast: 0.45, boom_soft: 0.25, swoosh_down: 0.1,
 };
 const SYNC: Partial<Record<SfxName, number>> = {
   card_flip: 0.19, coins: 0.12, impact: 0.05, page_turn: 0.38, pencil_strike: 0.1, reverse_swell: 1.17, riser: 1.66,
   swipe: 0.08, transition: 0.3, ui_pop: 0.06, whoosh_deep: 0.33, whoosh_fast: 0.15, whoosh_soft: 0.11, zoom_in: 0.45, zoom_out: 0.28,
   logo_sting: 0.03, marker: 0.03, sparkle: 0.05, shimmer: 0.05,
+  whip: 0.08, swish_up: 0.1, paper_slide: 0.4, pop_bright: 0.1, boom_soft: 0.15, swoosh_down: 0.12,
 };
+
+// Bus de efectos (opcional): ganancia global y atenuación bajo la voz, en función del fotograma absoluto.
+// Si no hay proveedor, los efectos suenan como siempre (otros vídeos del repositorio no cambian).
+export type SfxBus = { gain: number; duck: (absFrame: number) => number };
+export const SfxBusContext = createContext<SfxBus | null>(null);
 
 // Efecto de sonido cuyo golpe cae en el fotograma `at`; `volume` es relativo a la ganancia de mezcla del efecto.
 export const Sfx: React.FC<{ name: SfxName; at: number; volume?: number; trimAfter?: number }> = ({ name, at, volume = 1, trimAfter }) => {
   const { fps } = useVideoConfig();
+  const bus = useContext(SfxBusContext);
+  const seq = useContext(Internals.SequenceContext);
   if (STEM && STEM !== 'sfx') return null;
   const start = Math.round(at - (SYNC[name] ?? 0) * fps);
   const trimBefore = start < 0 ? -start : undefined;
+  const base = (seq ? seq.cumulatedFrom + seq.relativeFrom : 0) + Math.max(0, start);
+  const v = GAIN[name] * volume;
   return (
     <Sequence from={Math.max(0, start)} layout="none" name={`sfx:${name}`}>
-      <Audio src={staticFile(`sfx/${name}.mp3`)} volume={GAIN[name] * volume} trimBefore={trimBefore} trimAfter={trimAfter} />
+      <Audio src={staticFile(`sfx/${name}.mp3`)} volume={bus ? (f: number) => v * bus.gain * bus.duck(base + f) : v} trimBefore={trimBefore} trimAfter={trimAfter} />
     </Sequence>
   );
 };

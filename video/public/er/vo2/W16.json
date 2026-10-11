@@ -1,110 +1,86 @@
 {
  "id": "W16",
- "hash": "c04c10b310e0",
- "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks. Tu próxima historia te está esperando.",
- "duration": 8.56,
+ "hash": "145e002c3e9d",
+ "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks.",
+ "duration": 5.042,
  "words": [
   {
    "w": "Y",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.056
   },
   {
    "w": "para",
-   "s": 0.24,
-   "e": 0.32
+   "s": 0.132,
+   "e": 0.282
   },
   {
    "w": "saber",
-   "s": 0.4,
-   "e": 0.64
+   "s": 0.32,
+   "e": 0.584
   },
   {
    "w": "dónde",
-   "s": 0.68,
-   "e": 0.88
+   "s": 0.659,
+   "e": 0.885
   },
   {
    "w": "escuchar",
    "s": 0.96,
-   "e": 1.36
+   "e": 1.337
   },
   {
    "w": "cualquier",
-   "s": 1.44,
-   "e": 1.84
+   "s": 1.412,
+   "e": 1.713
   },
   {
    "w": "audiolibro,",
-   "s": 1.92,
-   "e": 2.68
+   "s": 1.788,
+   "e": 2.504
   },
   {
    "w": "y",
-   "s": 2.72,
-   "e": 2.76
+   "s": 2.541,
+   "e": 2.579
   },
   {
    "w": "a",
-   "s": 2.8,
-   "e": 2.88
+   "s": 2.617,
+   "e": 2.692
   },
   {
    "w": "qué",
-   "s": 2.96,
-   "e": 3.04
+   "s": 2.767,
+   "e": 2.843
   },
   {
    "w": "precio,",
-   "s": 3.4,
-   "e": 3.8
+   "s": 2.918,
+   "e": 3.408
   },
   {
    "w": "búscalo",
-   "s": 3.84,
-   "e": 4.32
+   "s": 3.483,
+   "e": 3.936
   },
   {
    "w": "en",
-   "s": 4.44,
-   "e": 4.56
+   "s": 4.049,
+   "e": 4.162
   },
   {
    "w": "SonorBooks.",
-   "s": 4.68,
-   "e": 5.733
-  },
-  {
-   "w": "Tu",
-   "s": 5.787,
-   "e": 5.84
-  },
-  {
-   "w": "próxima",
-   "s": 5.88,
-   "e": 6.24
-  },
-  {
-   "w": "historia",
-   "s": 6.44,
-   "e": 6.96
-  },
-  {
-   "w": "te",
-   "s": 7.0,
-   "e": 7.04
-  },
-  {
-   "w": "está",
-   "s": 7.2,
-   "e": 7.4
-  },
-  {
-   "w": "esperando.",
-   "s": 7.44,
-   "e": 8.56
+   "s": 4.238,
+   "e": 5.011
   }
  ],
  "speechStart": 0.0,
- "speechEnd": 8.56
+ "speechEnd": 5.011,
+ "tightened": {
+  "keep": 0.11,
+  "min": 0.18,
+  "tempo": 1.06,
+  "from": 5.68
+ }
 }

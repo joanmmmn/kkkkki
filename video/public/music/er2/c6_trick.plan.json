@@ -1,0 +1,64 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental energetic electro-pop for a fast tutorial ending",
+   "tempo 124 BPM",
+   "four on the floor kick, driving synth bass, bright synth stabs, claps, risers",
+   "exciting, fast, celebratory",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "The trick",
+    "positive_local_styles": [
+     "energetic driving groove from the first beat",
+     "bright stabs",
+     "momentum"
+    ],
+    "negative_local_styles": [
+     "calm",
+     "slow intro"
+    ],
+    "duration_ms": 14820,
+    "lines": []
+   },
+   {
+    "section_name": "Fast steps",
+    "positive_local_styles": [
+     "even faster feeling",
+     "extra percussion and claps",
+     "quick risers"
+    ],
+    "negative_local_styles": [
+     "calm"
+    ],
+    "duration_ms": 13100,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "uplifting brand outro",
+     "warm resolving chords",
+     "final hit then soft decay to silence"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 8460,
+    "lines": []
+   }
+  ]
+ }
+}

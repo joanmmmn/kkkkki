@@ -8,8 +8,8 @@
 ## Descripción
 
 ```
-📖 La reseña completa, con capturas y fuentes: https://sonorbooks.com/blog/elevenreader
-🎁 30 días gratis de ElevenReader Ultra (en vez de 3): abre tu audiolibro en https://sonorbooks.com y pulsa «Empezar prueba gratuita».
+📖 La reseña completa, con capturas y fuentes: https://sonorbooks.com/es/blog/elevenreader-resena/
+🎁 30 días gratis de ElevenReader Ultra (en vez de 3): en la reseña, pulsa «Probar gratis». También desde https://sonorbooks.com: ElevenReader es la última tarjeta de las plataformas, pulsa «Empezar prueba gratuita».
 
 ElevenReader es la app de lectura de ElevenLabs: audiolibros y, sobre todo, tus propios PDF, ebooks y artículos convertidos en audio con voces de inteligencia artificial. La hemos probado por dentro con el plan Ultra: catálogo en español, voces (Brian frente a Sara Martin), subida de un PDF, el lector, precios, lo mejor, lo peor… y al final, cómo probarla 30 días gratis en lugar de 3.
 
@@ -22,12 +22,11 @@ ElevenReader es la app de lectura de ElevenLabs: audiolibros y, sobre todo, tus 
 1:35 Voces: Brian vs. Sara Martin
 2:08 El lector: velocidad, búsqueda y temas
 2:22 Más funciones
-2:35 Lo mejor y lo peor
+2:34 Lo mejor y lo peor
 3:00 Precio
-3:19 Veredicto: nuestra nota
-3:34 30 días gratis, paso a paso
-4:03 ¿Te quedas o cancelas?
-4:17 Busca tu próximo audiolibro
+3:24 Veredicto: nuestra nota
+3:39 El truco: 30 días gratis en vez de 3
+3:54 Paso a paso: ¿te quedas o cancelas?
 
 📌 Datos del vídeo (11/10/2026)
 • Ultra: 11 $/mes o 99 $/año en la web (+ IVA) · App Store: 12 €/mes
@@ -57,6 +56,6 @@ ElevenReader, ElevenReader opiniones, ElevenReader gratis, ElevenReader prueba g
 ## Comentario fijado
 ```
 ¿Ya usabas ElevenReader o es la primera vez que lo ves? 👇 Cuéntanos qué app usas para escuchar tus PDF y la analizamos.
-Reseña completa (capturas, precios y fuentes): https://sonorbooks.com/blog/elevenreader
-30 días gratis de Ultra: abre tu audiolibro en https://sonorbooks.com y pulsa «Empezar prueba gratuita».
+Reseña completa (capturas, precios y fuentes): https://sonorbooks.com/es/blog/elevenreader-resena/
+30 días gratis de Ultra: en la reseña, pulsa «Probar gratis» (o en sonorbooks.com, la última tarjeta de las plataformas).
 ```

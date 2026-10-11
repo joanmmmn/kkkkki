@@ -5,9 +5,56 @@ import { Stage } from '../../components/Stage';
 import { Words } from '../../components/Kinetic';
 import { LogoIcon } from '../../components/Logo';
 import { Grow } from '../../components/Grow';
+import { Highlight } from '../../components/Highlight';
 import { Sfx } from '../../components/Sfx';
+import { IcGift } from '../er/icons';
 import { clamp, easeInOut, easeOut, fmtEs } from '../../lib/anim';
-import { w } from './timeline';
+import { er2Start, ER2_TOTAL, itemAt, w } from './timeline';
+
+// Aviso del final: la barra de reproducción del propio vídeo, con el punto en que llega el truco de los 30 días.
+const Teaser: React.FC<{ B: number; fFinal: number; fTruco: number; fGratis: number }> = ({ B, fFinal, fTruco, fGratis }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const sp = (f: number, d = 16, st = 170) => spring({ frame: frame - f, fps, config: { damping: d, stiffness: st } });
+  const card = sp(B - 4, 18, 140);
+  const now = (er2Start(ID) + frame) / ER2_TOTAL;
+  const target = er2Start('X12') / ER2_TOTAL;
+  const BAR = 1080;
+  const draw = interpolate(frame, [fFinal - 2, fFinal + 22], [0, 1], { ...clamp, easing: easeInOut });
+  const pin = sp(fTruco - 4, 9, 210);
+  const pulse = 1 + 0.08 * Math.max(0, Math.sin((frame - fTruco) / 5)) * (frame > fTruco ? 1 : 0);
+  const mm = (p: number) => { const s = Math.floor(p * ER2_TOTAL / fps); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+  const x0 = now * BAR, x1 = target * BAR;
+  return (
+    <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ width: 1280, padding: '56px 100px 64px', borderRadius: 44, background: '#fff', boxShadow: '0 50px 120px rgba(60,40,0,0.22), 0 10px 30px rgba(0,0,0,0.08)', opacity: card, transform: `translateY(${(1 - card) * 70}px) scale(${0.94 + 0.06 * card})`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18 }}>
+        <div style={{ fontFamily: font.sans, fontSize: 30, fontWeight: 700, letterSpacing: 6, color: color.muted, opacity: sp(B) }}>Y NO TE VAYAS</div>
+        <div style={{ fontFamily: font.sans, fontSize: 82, fontWeight: 700, letterSpacing: -2.5, lineHeight: 1.04, textAlign: 'center', opacity: sp(fFinal - 6), transform: `translateY(${(1 - sp(fFinal - 6)) * 20}px)` }}>
+          Al final del vídeo, el truco<br />para probarlo <Highlight start={fGratis} dur={12}>gratis</Highlight>
+        </div>
+        {/* barra de reproducción del propio vídeo */}
+        <div style={{ position: 'relative', width: BAR, height: 170, marginTop: 30 }}>
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 70, height: 14, borderRadius: 7, background: '#ECECEC' }} />
+          <div style={{ position: 'absolute', left: 0, width: x0, top: 70, height: 14, borderRadius: 7, background: color.ink }} />
+          {/* flecha discontinua por debajo: de «ahora» al truco */}
+          <svg width={BAR} height={170} style={{ position: 'absolute', left: 0, top: 0, overflow: 'visible' }}>
+            <defs><clipPath id="tz-reveal"><rect x={x0 - 10} y={0} width={Math.max(0, (x1 - x0 + 30) * draw)} height={170} /></clipPath></defs>
+            <path d={`M ${x0} 100 C ${x0 + 24} 150, ${x1 - 34} 152, ${x1 - 4} 108`} fill="none" stroke={color.ink} strokeWidth={5} strokeLinecap="round" strokeDasharray="1 13" clipPath="url(#tz-reveal)" />
+          </svg>
+          <div style={{ position: 'absolute', left: x0 - 17, top: 60, width: 34, height: 34, borderRadius: 17, background: color.ink, boxShadow: '0 0 0 8px rgba(16,16,16,0.08)' }} />
+          <div style={{ position: 'absolute', right: BAR - x0 + 26, top: 112, whiteSpace: 'nowrap', fontFamily: font.sans, fontSize: 28, fontWeight: 500, color: color.ink2 }}>ahora · {mm(now)}</div>
+          <div style={{ position: 'absolute', left: x1 - 32, top: 45, width: 64, height: 64, borderRadius: 32, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 12px 30px rgba(255,202,5,0.55)', transform: `scale(${pin * pulse})` }}>
+            <IcGift size={36} w={2.2} />
+          </div>
+          <div style={{ position: 'absolute', left: x1, top: -14, transform: `translate(-50%, -100%) scale(${pin})`, transformOrigin: '50% 100%', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: 10, padding: '10px 20px', borderRadius: 999, background: color.ink, color: '#fff', fontFamily: font.sans, fontSize: 30, fontWeight: 700 }}>
+            {mm(target)} · el truco: <span style={{ color: color.yellow }}>30 días gratis</span>
+          </div>
+          <div style={{ position: 'absolute', right: -4, top: 100, fontFamily: font.sans, fontSize: 26, color: color.muted }}>{mm(1)}</div>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
 
 const ID = 'X10';
 
@@ -61,8 +108,13 @@ export const X10Price: React.FC<{ lead: number; dur: number }> = () => {
   const f1131 = at('11,31');
   const rise = interpolate(frame, [fNuestra - 4, fNuestra + 16], [0, 1], { ...clamp, easing: easeInOut });
   const rc = spring({ frame: frame - fNuestra, fps, config: { damping: 18, stiffness: 130 } });
+  // W12B: «Y no te vayas: al final del vídeo te enseñamos un truco para probarlo gratis.»
+  const B = itemAt(ID, 'W12B');
+  const tz = (word: string) => w(ID, 'W12B', word);
+  const push = interpolate(frame, [B - 8, B + 10], [0, 1], { ...clamp, easing: easeInOut });
   return (
     <Stage tone="warm">
+      <AbsoluteFill style={{ transform: `scale(${1 - 0.06 * push})`, filter: push > 0.01 ? `blur(${push * 7}px)` : undefined, opacity: 1 - 0.45 * push }}>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50, transform: `translateY(${-rise * 230}px) scale(${1 - rise * 0.28})` }}>
         <Words text="¿Cuánto cuesta?" start={0} size={96} weight={700} />
         <div style={{ display: 'flex', alignItems: 'flex-start' }}>
@@ -85,6 +137,12 @@ export const X10Price: React.FC<{ lead: number; dur: number }> = () => {
           </div>
         </AbsoluteFill>
       )}
+      </AbsoluteFill>
+      {frame >= B - 8 && <Teaser B={B} fFinal={tz('final')} fTruco={tz('truco')} fGratis={tz('gratis')} />}
+      <Sfx name="whoosh_soft" at={B - 6} />
+      <Sfx name="ff_scrub" at={tz('final')} volume={0.8} />
+      <Sfx name="notify" at={tz('truco') - 2} />
+      <Sfx name="marker" at={tz('gratis')} />
       <Sfx name="ui_pop" at={f11 - 6} />
       <Sfx name="ui_pop" at={f99 - 6} />
       <Sfx name="ui_pop" at={fApp - 6} />

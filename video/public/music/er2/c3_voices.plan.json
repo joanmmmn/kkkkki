@@ -1,0 +1,53 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental intimate ambient underscore",
+   "slow tempo 72 BPM",
+   "warm felt piano, soft string pad, gentle glassy textures",
+   "tender, minimal, lots of space",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Two voices",
+    "positive_local_styles": [
+     "almost silent sustained pad",
+     "very sparse soft piano notes",
+     "no percussion"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "bass",
+     "busy melody"
+    ],
+    "duration_ms": 22240,
+    "lines": []
+   },
+   {
+    "section_name": "A thousand voices",
+    "positive_local_styles": [
+     "gently lifts",
+     "soft pulse enters",
+     "airy shimmer",
+     "hopeful"
+    ],
+    "negative_local_styles": [
+     "heavy drums"
+    ],
+    "duration_ms": 11800,
+    "lines": []
+   }
+  ]
+ }
+}

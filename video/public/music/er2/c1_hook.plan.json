@@ -1,0 +1,68 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic tech-trailer intro for a YouTube app review",
+   "tempo 110 BPM",
+   "pulsing analog synth bass, punchy modern drums, shimmering arpeggios, deep sub hits",
+   "curious, bold, modern",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Cold open",
+    "positive_local_styles": [
+     "very quiet airy ambient pad",
+     "soft low drone",
+     "mysterious and intimate",
+     "no drums"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "bass",
+     "melody"
+    ],
+    "duration_ms": 5920,
+    "lines": []
+   },
+   {
+    "section_name": "Hook build",
+    "positive_local_styles": [
+     "pulsing synth bass enters",
+     "kick on every beat builds tension",
+     "rising filter sweep",
+     "ends with a big confident hit"
+    ],
+    "negative_local_styles": [
+     "calm"
+    ],
+    "duration_ms": 13260,
+    "lines": []
+   },
+   {
+    "section_name": "Promise groove",
+    "positive_local_styles": [
+     "confident driving groove at full energy",
+     "bright plucked synth hook",
+     "tight claps",
+     "optimistic momentum"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 17000,
+    "lines": []
+   }
+  ]
+ }
+}

@@ -64,36 +64,41 @@
    "text": "¿Cuánto cuesta? Ultra vale 11 dólares al mes, o 99 al año, más IVA. En la App Store, 12 euros al mes. Con el enlace de SonorBooks, los primeros meses pagas un 15 % menos: en nuestra cuenta, 11,31 dólares al mes, IVA incluido."
   },
   {
+   "id": "W12B",
+   "text": "Y no te vayas: al final del vídeo te enseñamos un truco para probarlo gratis."
+  },
+  {
    "id": "W13",
    "text": "¿Merece la pena? Si lees mucho en PDF, ebooks o artículos, sí, y mucho. Si buscas sobre todo superventas en español, compara antes en SonorBooks. Nuestra nota: 8 sobre 10."
   },
   {
    "id": "W14A",
-   "text": "Y ahora, cómo tenerla 30 días gratis, en vez de 3."
+   "text": "Y ahora, el truco: 30 días gratis, en vez de 3."
   },
   {
    "id": "W14B",
-   "text": "Abre tu audiolibro en SonorBooks y pulsa «Empezar prueba gratuita»."
+   "text": "En la página de inicio de SonorBooks, ElevenReader está al final de las plataformas. Entra por ahí, o por nuestra reseña de ElevenReader: el enlace está en la descripción."
   },
   {
    "id": "W14C",
-   "text": "En la oferta, pulsa el botón naranja y crea tu cuenta con Google, Apple o tu correo."
-  },
-  {
-   "id": "W14D",
-   "text": "Elige Ultra y añade tu tarjeta: hoy pagas 0 euros. El primer cobro llega a los 30 días."
-  },
-  {
-   "id": "W14E",
-   "text": "Luego, descarga la app y entra con la misma cuenta."
+   "text": "Pulsa «Empezar prueba gratuita», crea tu cuenta, elige Ultra y añade tu tarjeta: hoy pagas 0 euros.",
+   "voice_settings": {
+    "speed": 1.2
+   }
   },
   {
    "id": "W15",
-   "text": "¿Te ha gustado? Quédate con la suscripción: no tienes que hacer nada, y los primeros meses pagarás un 15 % menos. ¿No te convence? Cancela antes del día 30, en la facturación de tu cuenta, y no pagarás nada."
+   "text": "¿Te gusta? Quédate, con un 15 % menos. ¿No? Cancela antes del día 30 y no pagas nada.",
+   "voice_settings": {
+    "speed": 1.2
+   }
   },
   {
    "id": "W16",
-   "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks. Tu próxima historia te está esperando."
+   "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks.",
+   "voice_settings": {
+    "speed": 1.2
+   }
   }
  ]
 }

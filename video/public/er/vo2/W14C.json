@@ -1,95 +1,101 @@
 {
  "id": "W14C",
- "hash": "ba7fd20fcb9e",
- "text": "En la oferta, pulsa el botón naranja y crea tu cuenta con Google, Apple o tu correo.",
- "duration": 5.76,
+ "hash": "828921410bd4",
+ "text": "Pulsa «Empezar prueba gratuita», crea tu cuenta, elige Ultra y añade tu tarjeta: hoy pagas 0 euros.",
+ "duration": 6.74,
  "words": [
   {
-   "w": "En",
+   "w": "Pulsa",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.48
   },
   {
-   "w": "la",
-   "s": 0.16,
-   "e": 0.24
+   "w": "«Empezar",
+   "s": 0.554,
+   "e": 1.07
   },
   {
-   "w": "oferta,",
-   "s": 0.32,
-   "e": 0.92
+   "w": "prueba",
+   "s": 1.144,
+   "e": 1.365
   },
   {
-   "w": "pulsa",
-   "s": 0.96,
-   "e": 1.2
-  },
-  {
-   "w": "el",
-   "s": 1.24,
-   "e": 1.28
-  },
-  {
-   "w": "botón",
-   "s": 1.36,
-   "e": 1.6
-  },
-  {
-   "w": "naranja",
-   "s": 1.68,
-   "e": 2.24
-  },
-  {
-   "w": "y",
-   "s": 2.32,
-   "e": 2.4
+   "w": "gratuita»,",
+   "s": 1.439,
+   "e": 2.069
   },
   {
    "w": "crea",
-   "s": 2.48,
-   "e": 2.72
+   "s": 2.131,
+   "e": 2.351
   },
   {
    "w": "tu",
-   "s": 2.76,
-   "e": 2.8
+   "s": 2.425,
+   "e": 2.498
   },
   {
-   "w": "cuenta",
-   "s": 2.84,
-   "e": 3.2
+   "w": "cuenta,",
+   "s": 2.535,
+   "e": 2.985
   },
   {
-   "w": "con",
-   "s": 3.32,
-   "e": 3.44
+   "w": "elige",
+   "s": 3.059,
+   "e": 3.426
   },
   {
-   "w": "Google,",
-   "s": 3.72,
-   "e": 4.04
+   "w": "Ultra",
+   "s": 3.5,
+   "e": 3.922
   },
   {
-   "w": "Apple",
-   "s": 4.08,
-   "e": 4.56
+   "w": "y",
+   "s": 3.996,
+   "e": 4.033
   },
   {
-   "w": "o",
-   "s": 4.64,
-   "e": 4.72
+   "w": "añade",
+   "s": 4.069,
+   "e": 4.438
   },
   {
    "w": "tu",
-   "s": 4.76,
-   "e": 4.8
+   "s": 4.474,
+   "e": 4.511
   },
   {
-   "w": "correo.",
-   "s": 5.24,
-   "e": 5.76
+   "w": "tarjeta:",
+   "s": 4.585,
+   "e": 5.183
+  },
+  {
+   "w": "hoy",
+   "s": 5.22,
+   "e": 5.443
+  },
+  {
+   "w": "pagas",
+   "s": 5.554,
+   "e": 5.887
+  },
+  {
+   "w": "0",
+   "s": 5.924,
+   "e": 6.109
+  },
+  {
+   "w": "euros.",
+   "s": 6.257,
+   "e": 6.683
   }
  ],
  "speechStart": 0.0,
- "speechEnd": 5.76
+ "speechEnd": 6.683,
+ "tightened": {
+  "keep": 0.11,
+  "min": 0.18,
+  "tempo": 1.08,
+  "from": 8.48
+ }
 }

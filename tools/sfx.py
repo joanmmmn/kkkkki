@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Genera la paleta de efectos de sonido con ElevenLabs (sound-generation).
 
-Uso: ELEVENLABS_API_KEY=... python3 tools/sfx.py [nombre ...]
+Uso: python3 tools/sfx.py [nombre ...]   (la clave se lee de .secrets/elevenlabs.env, como en tools/tts.py)
 Sin nombres, genera los que falten en video/public/sfx/. Con nombres, los regenera.
 Después normaliza cada efecto a un pico de -1 dBFS y recorta el silencio inicial,
 para que el `at` de <Sfx> caiga justo en el ataque del sonido.
 """
 import json, os, subprocess, sys, urllib.request
+
+sys.path.insert(0, os.path.dirname(__file__))
+from tts import load_key  # noqa: E402
 
 OUT = os.path.join(os.path.dirname(__file__), '..', 'video', 'public', 'sfx')
 KIT = {
@@ -33,6 +36,24 @@ KIT = {
     'logo_sting': ('Short premium brand logo sting, warm bright synth chord swell with a sparkle on top, elegant, clean', 2.6, 0.5),
     'page_riffle': ('Fast riffle through the pages of a thick book, short, crisp, close up', 1.0, 0.7),
     'snap_in': ('Tight snappy interface element snapping into place, short click with a tiny thump, clean', 0.5, 0.7),
+    # v2 de la reseña de ElevenReader: más variedad para transiciones, cursor, página web y contadores.
+    'whip': ('Very fast whip pan swoosh, camera whip transition, airy and crisp, short', 0.5, 0.7),
+    'swish_up': ('Short soft upward swish as a card rises into view, airy, clean, modern interface', 0.5, 0.7),
+    'mouse_click': ('Realistic computer mouse click, single crisp click, close up, dry', 0.5, 0.8),
+    'scroll': ('Smooth mouse wheel scrolling, soft quick ratchet clicks, close up, dry', 0.9, 0.7),
+    'glass_ping': ('Tiny bright glass ping to highlight an element on screen, clean, short', 0.6, 0.7),
+    'paper_slide': ('Sheet of paper sliding quickly across a desk, short, close up', 0.6, 0.7),
+    'pop_bright': ('Bright crisp bubble pop, playful, short, clean interface sound', 0.5, 0.8),
+    'ff_scrub': ('Fast forward tape scrub chirp, playful rewind and fast forward sound effect, short', 1.0, 0.6),
+    'notify': ('Gentle modern notification chime, two soft bell notes, friendly, clean', 0.9, 0.7),
+    'receipt': ('Small thermal receipt printer printing a short receipt, close up, clean', 1.4, 0.7),
+    'switch': ('Small light switch flip, crisp plastic click, close up, dry', 0.5, 0.8),
+    'magnify': ('Soft optical lens zoom, short airy rising shimmer with a subtle click, interface sound', 0.7, 0.6),
+    'score_ding': ('Satisfying score reveal ding, warm bell with soft sparkle tail, game show but elegant', 1.2, 0.6),
+    'glitch': ('Tiny clean digital glitch blip for a screen change, short, modern, not harsh', 0.5, 0.7),
+    'tick_fast': ('Fast sequence of soft mechanical counter ticks accelerating, short, clean', 0.9, 0.7),
+    'boom_soft': ('Soft cinematic boom with a warm low tail for a title reveal, clean, not loud', 1.6, 0.6),
+    'swoosh_down': ('Short descending whoosh as an element drops into place ending in a soft thud, clean', 0.6, 0.7),
 }
 
 
@@ -41,7 +62,7 @@ def gen(name: str) -> None:
     body = json.dumps({'text': prompt, 'duration_seconds': dur, 'prompt_influence': infl}).encode()
     req = urllib.request.Request(
         'https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_192', data=body,
-        headers={'xi-api-key': os.environ['ELEVENLABS_API_KEY'], 'Content-Type': 'application/json'})
+        headers={'xi-api-key': load_key(), 'Content-Type': 'application/json'})
     raw = os.path.join(OUT, f'_{name}.raw.mp3')
     with urllib.request.urlopen(req, timeout=120) as r, open(raw, 'wb') as f:
         f.write(r.read())

@@ -1,0 +1,65 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental warm indie-pop background for a tech review",
+   "tempo 96 BPM",
+   "felt piano, plucked nylon guitar, soft analog synths, warm bass, brushed drums and shaker",
+   "friendly, curious, clear",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "What it is",
+    "positive_local_styles": [
+     "light and curious",
+     "felt piano motif with soft shaker",
+     "gentle bass"
+    ],
+    "negative_local_styles": [
+     "heavy drums"
+    ],
+    "duration_ms": 15400,
+    "lines": []
+   },
+   {
+    "section_name": "Audiobook catalogue",
+    "positive_local_styles": [
+     "groove settles in",
+     "warm bass line",
+     "soft kick and snare",
+     "a hint of doubt in the harmony toward the end"
+    ],
+    "negative_local_styles": [
+     "aggressive"
+    ],
+    "duration_ms": 23000,
+    "lines": []
+   },
+   {
+    "section_name": "Your own documents",
+    "positive_local_styles": [
+     "brighter and more playful",
+     "plucky synth arpeggio",
+     "momentum builds",
+     "feels like a pleasant surprise"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 23040,
+    "lines": []
+   }
+  ]
+ }
+}

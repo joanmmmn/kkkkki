@@ -79,6 +79,7 @@ export const X11Verdict: React.FC<{ lead: number; dur: number }> = () => {
       <Sfx name="whoosh_deep" at={fNota} volume={0.6} />
       <Sfx name="riser" at={f8 - 50} volume={0.5} />
       <Sfx name="impact" at={f8} />
+      <Sfx name="score_ding" at={f8 + 6} volume={0.7} />
       <Sfx name="marker" at={f8 + 14} />
     </Stage>
   );

@@ -10,8 +10,8 @@ import { X08More } from './X08More';
 import { X09ProsCons } from './X09ProsCons';
 import { X10Price } from './X10Price';
 import { X11Verdict } from './X11Verdict';
-import { X12Tutorial } from './X12Tutorial';
-import { X13KeepCancel } from './X13KeepCancel';
+import { X12Trick } from './X12Trick';
+import { X13Fast } from './X13Fast';
 import { X14Outro } from './X14Outro';
 
 export const ER2_COMPONENTS: Record<string, React.FC<{ lead: number; dur: number }>> = {
@@ -26,7 +26,7 @@ export const ER2_COMPONENTS: Record<string, React.FC<{ lead: number; dur: number
   X09: X09ProsCons,
   X10: X10Price,
   X11: X11Verdict,
-  X12: X12Tutorial,
-  X13: X13KeepCancel,
+  X12: X12Trick,
+  X13: X13Fast,
   X14: X14Outro,
 };

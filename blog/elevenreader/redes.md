@@ -4,7 +4,7 @@
 Subimos un PDF de Bécquer a ElevenReader y en un momento teníamos 22 minutos de audio… sin cabeceras ni números de página. 🎧
 ¿Merece la pena pagar Ultra? Lo bueno, lo malo y cómo tenerlo 30 días gratis (en vez de 3):
 ▶️ [enlace al vídeo]
-📖 https://sonorbooks.com/blog/elevenreader
+📖 https://sonorbooks.com/es/blog/elevenreader-resena/
 
 ## Instagram / Facebook
 ¿Escuchar tus PDF, ebooks y artículos con voces de IA que casi parecen humanas? Eso promete ElevenReader, la app de ElevenLabs. 🤖📚

@@ -18,3 +18,6 @@ export const IcCheck: React.FC<P> = (p) => <S {...p}><path d="M20 6 9 17l-5-5" /
 export const IcCalendar: React.FC<P> = (p) => <S {...p}><rect x="3" y="4" width="18" height="18" rx="2.5" /><path d="M16 2v4M8 2v4M3 10h18" /></S>;
 export const IcLink: React.FC<P> = (p) => <S {...p}><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" /><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" /></S>;
 export const IcGlobe: React.FC<P> = (p) => <S {...p}><circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20" /></S>;
+export const IcGift: React.FC<P> = (p) => <S {...p}><rect x="3" y="8" width="18" height="4" rx="1" /><path d="M5 12v8h14v-8M12 8v12" /><path d="M12 8c-1.6-3.6-5.6-4-5.6-1.5S10 8 12 8zm0 0c1.6-3.6 5.6-4 5.6-1.5S14 8 12 8z" /></S>;
+export const IcArrowDown: React.FC<P> = (p) => <S {...p}><path d="M12 4v15" /><path d="m6 13 6 6 6-6" /></S>;
+export const IcPlay: React.FC<P> = (p) => <S {...p}><path d="M7 4.5v15l12.5-7.5z" fill="currentColor" /></S>;

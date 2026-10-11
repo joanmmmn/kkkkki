@@ -1,0 +1,50 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental upbeat funky pop background for a product walkthrough",
+   "tempo 112 BPM",
+   "clean funky electric guitar, round slap-like synth bass, claps, tight drums, bright plucks",
+   "playful, energetic, fun",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Reader options",
+    "positive_local_styles": [
+     "bouncy groove starts on the first beat",
+     "staccato guitar chops",
+     "tight drums"
+    ],
+    "negative_local_styles": [
+     "slow intro"
+    ],
+    "duration_ms": 14200,
+    "lines": []
+   },
+   {
+    "section_name": "More features",
+    "positive_local_styles": [
+     "same groove with extra percussion",
+     "quick fills",
+     "lively"
+    ],
+    "negative_local_styles": [
+     "calm"
+    ],
+    "duration_ms": 13560,
+    "lines": []
+   }
+  ]
+ }
+}

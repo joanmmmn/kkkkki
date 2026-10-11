@@ -17,7 +17,8 @@ export const X14Outro: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
   const at = (word: string, n = 0) => w('X14', 'W16', word, n);
   const fCual = at('cualquier');
   const fPrecio = at('precio');
-  const fTu = at('Tu') - 6;
+  // Tras «…búscalo en SonorBooks» entra el bloque de marca (mitad superior; la inferior es para la pantalla final de YouTube).
+  const fTu = at('SonorBooks') + 16;
   const typeAt = Math.max(10, fCual - 6);
   const go = fPrecio + 4;
   const press = interpolate(frame, [go, go + 4, go + 12], [0, 1, 0], clamp);

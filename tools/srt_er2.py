@@ -55,7 +55,14 @@ for d in TL:
             cur.append(w)
             text = ' '.join(x['w'] for x in cur)
             last = i + 1 == len(words)
-            if re.search(r'[.?!:…]»?$', w['w']) or len(text) >= 40 or (re.search(r'[,;]$', w['w']) and len(text) >= 22) or last:
+            # Frases muy cortas («¿No?») se unen a la siguiente, y no se deja sola la cola breve de una frase («nada.»).
+            end = re.search(r'[.?!:…]»?$', w['w'])
+            rest = []
+            for x in words[i + 1:]:
+                rest.append(x['w'])
+                if re.search(r'[.?!:…]»?$', x['w']):
+                    break
+            if last or (end and len(text) >= 12) or (len(text) >= 40 and not end and len(' '.join(rest)) > 12) or (re.search(r'[,;]$', w['w']) and len(text) >= 22):
                 cues.append((t0 + cs, t0 + w['e'] + 0.15, text))
                 cur, cs = [], None
         t += speech(p)

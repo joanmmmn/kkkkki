@@ -67,11 +67,16 @@ export const X08More: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
         {frame >= fTemp - 8 && <Feature at={fTemp - 4} icon={<Moon size={36} />} text="Temporizador para dormir" />}
       </div>
       <Sfx name="zoom_in" at={fExt} />
+      <Sfx name="draw" at={fExt + 2} volume={0.6} />
       <Sfx name="focus" at={fImp} />
+      <Sfx name="draw" at={fImp + 2} volume={0.5} />
       <Sfx name="swipe" at={fCol - 8} />
+      <Sfx name="glass_ping" at={fCol + 2} volume={0.7} />
       <Sfx name="whoosh_soft" at={fMov - 8} />
+      <Sfx name="notify" at={fMov + 6} volume={0.6} />
       <Sfx name="ui_pop" at={fDesc - 4} />
       <Sfx name="ui_pop" at={fTemp - 4} />
+      <Sfx name="switch" at={fTemp + 4} volume={0.5} />
     </Stage>
   );
 };

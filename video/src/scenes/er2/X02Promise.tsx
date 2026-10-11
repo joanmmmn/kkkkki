@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -12,7 +12,9 @@ import { Sfx } from '../../components/Sfx';
 import { Grow } from '../../components/Grow';
 import { textWidth } from '../../lib/measure';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
-import { ER_BLOG_URL, ER_BLOG_COVER } from './config';
+import { BrowserWindow } from '../../components/BrowserWindow';
+import { ScreenClip } from '../../components/ScreenClip';
+import { ER_BLOG_URL, ER_REVIEW_SHOT } from './config';
 import { w } from './timeline';
 
 const ID = 'X02';
@@ -77,16 +79,15 @@ export const X02Promise: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
       </Phase>
 
       <Phase from={fBlog} to={dur} out={4}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50, transform: 'scale(1.12)' }}>
-          <div style={{ position: 'relative', overflow: 'hidden', width: 1300, alignItems: 'center', display: 'flex', gap: 44, background: '#fff', borderRadius: 36, padding: 40, boxShadow: shadow.card, border: `1px solid ${color.line}`, transform: `translateY(${(1 - card) * 60}px) rotate(${(1 - card) * -2}deg)` }}>
-            <div style={{ position: 'absolute', top: -40, bottom: -40, width: 220, left: interpolate(frame, [fBlog + 22, fBlog + 52], [-300, 1400], { ...clamp, easing: easeInOut }), background: 'linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,236,150,0.55) 50%, rgba(255,255,255,0) 100%)', transform: 'skewX(-18deg)', zIndex: 2 }} />
-            <div style={{ width: 416, height: 234, flexShrink: 0, borderRadius: 20, overflow: 'hidden', boxShadow: '0 14px 34px rgba(0,0,0,0.18)' }}>
-              <Img src={staticFile(ER_BLOG_COVER)} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transform: `scale(${1.1 - 0.1 * card})` }} />
-            </div>
-            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 14 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: font.sans, fontSize: 24, letterSpacing: 4, color: color.muted, fontWeight: 500 }}><LogoIcon size={30} /> BLOG DE SONORBOOKS</div>
-              <div style={{ fontFamily: font.sans, fontSize: 52, fontWeight: 700, lineHeight: 1.08 }}>La reseña <Highlight start={fBlog + 18}>completa</Highlight></div>
-              <div style={{ fontFamily: font.sans, fontSize: 28, color: color.ink2 }}>{ER_BLOG_URL}</div>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 34 }}>
+          <div style={{ position: 'relative', transform: `translateY(${(1 - card) * 70}px) rotate(${(1 - card) * -1.5}deg) scale(${0.96 + 0.04 * card})` }}>
+            <BrowserWindow width={1260} url={ER_BLOG_URL}>
+              <ScreenClip src={ER_REVIEW_SHOT} image width={1260} showCursor={false}
+                camera={[{ f: 0, zoom: 1, x: 960, y: 540 }, { f: 30, zoom: 1, x: 960, y: 540 }, { f: dur - fBlog, zoom: 1.13, x: 780, y: 420 }]} />
+              <div style={{ position: 'absolute', top: -40, bottom: -40, width: 260, left: interpolate(frame, [fBlog + 18, fBlog + 50], [-320, 1400], { ...clamp, easing: easeInOut }), background: 'linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.55) 50%, rgba(255,255,255,0) 100%)', transform: 'skewX(-18deg)', zIndex: 2 }} />
+            </BrowserWindow>
+            <div style={{ position: 'absolute', left: -34, top: -30, display: 'flex', alignItems: 'center', gap: 12, padding: '12px 24px 12px 14px', borderRadius: 999, background: color.ink, color: '#fff', fontFamily: font.sans, fontSize: 30, fontWeight: 700, boxShadow: shadow.float, transform: `rotate(-3deg) scale(${spring({ frame: frame - fBlog - 12, fps, config: { damping: 12, stiffness: 180 } })})` }}>
+              <LogoIcon size={36} /> La reseña <Highlight start={fBlog + 22}>completa</Highlight>
             </div>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontFamily: font.sans, fontWeight: 700, fontSize: 44, opacity: arrow, transform: `translateY(${(1 - arrow) * 20 + Math.sin((frame - fDesc) / 6) * 8 * (frame > fDesc ? 1 : 0)}px)` }}>
