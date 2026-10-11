@@ -34,17 +34,17 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
   const camA: CamKey[] = [
     { f: 0, zoom: 1.6, x: 300, y: 180 },
     { f: Math.round((4.9 - A_START) * fps), zoom: 1.6, x: 300, y: 180 },
-    { f: Math.round((5.9 - A_START) * fps), zoom: 1.1, x: 960, y: 420 },
-    { f: Math.round((7.6 - A_START) * fps), zoom: 1.1, x: 960, y: 420 },
-    { f: Math.round((8.3 - A_START) * fps), zoom: 2.2, x: 1700, y: 260 },
+    { f: Math.round((6.3 - A_START) * fps), zoom: 1.1, x: 960, y: 420 },
+    { f: Math.round((7.2 - A_START) * fps), zoom: 1.12, x: 1000, y: 410 },
+    { f: Math.round((8.3 - A_START) * fps), zoom: 1.75, x: 1480, y: 300 },
   ];
   const fAmorRec = fTemas + Math.round((15.4 - bStart) * fps);
   const camB: CamKey[] = [
     { f: 0, zoom: 1.0, x: 960, y: 540 },
-    { f: fMist - fTemas - 14, zoom: 1.0, x: 960, y: 540 },
-    { f: fMist - fTemas + 10, zoom: 1.6, x: 872, y: 330 },
-    { f: fAmorRec - fTemas - 8, zoom: 1.6, x: 600, y: 420 },
-    { f: fAmorRec - fTemas + 18, zoom: 1.75, x: 300, y: 480 },
+    { f: fMist - fTemas - 24, zoom: 1.02, x: 940, y: 520 },
+    { f: fMist - fTemas + 14, zoom: 1.6, x: 872, y: 330 },
+    { f: fAmorRec - fTemas - 24, zoom: 1.62, x: 840, y: 345 },
+    { f: fAmorRec - fTemas + 14, zoom: 1.75, x: 300, y: 480 },
   ];
   const counter = interpolate(frame, [fNum - 20, fNum + 20], [0, 6698], { ...clamp, easing: easeOut });
   return (
@@ -53,7 +53,7 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <BrowserWindow width={W}>
             <ScreenClip src="elt/rec/01_home/video.mp4" width={W} startAt={A_START} cursor={cursor} camera={camA}
-              marks={[{ from: Math.round((8.0 - A_START) * fps), to: fEsp + 6, x: 1788, y: 229, w: 128, h: 42, r: 21 }]} />
+              marks={[{ from: Math.round((7.85 - A_START) * fps), to: fEsp + 6, x: 1788, y: 229, w: 128, h: 42, r: 21 }]} />
           </BrowserWindow>
         </AbsoluteFill>
         {frame >= fNum - 22 && (
@@ -103,8 +103,8 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
 
       <Sfx name="click" at={Math.round((4.88 - A_START) * fps)} />
       <Sfx name="zoom_out" at={Math.round((5.9 - A_START) * fps) - 6} volume={0.8} />
-      <Sfx name="draw" at={Math.round((8.0 - A_START) * fps)} />
-      <Sfx name="zoom_in" at={Math.round((8.3 - A_START) * fps) + 10} />
+      <Sfx name="draw" at={Math.round((7.85 - A_START) * fps)} />
+      <Sfx name="zoom_in" at={Math.round((7.9 - A_START) * fps)} />
       <Sfx name="counter" at={fNum - 20} />
       <Sfx name="snap_in" at={fNum - 20} />
       <Sfx name="swipe" at={fEsp} />

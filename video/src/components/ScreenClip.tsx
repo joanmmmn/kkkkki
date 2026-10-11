@@ -4,7 +4,7 @@ import { AbsoluteFill, getInputProps, Img, interpolate, OffthreadVideo, spring, 
 // Con --props='{"audioOnly":true}' las grabaciones no se decodifican (render rápido solo de audio para revisar la mezcla).
 const AUDIO_ONLY = Boolean((getInputProps() as { audioOnly?: boolean }).audioOnly);
 import { color, font } from '../brand/tokens';
-import { keyframes, Key, easeInOut, easeOut } from '../lib/anim';
+import { smoothKeyframes, Key, easeInOut, easeOut } from '../lib/anim';
 import { Cursor, CursorPoint, cursorAt } from './Cursor';
 import home from '../../public/elt/rec/01_home/meta.json';
 import search from '../../public/elt/rec/02_search/meta.json';
@@ -32,9 +32,16 @@ export const ScreenClip: React.FC<{
   const [vw, vh] = viewport;
   const height = (width * vh) / vw;
   const k = width / vw;
-  const zoom = keyframes(frame, camera, 'zoom', easeInOut);
-  const fx = keyframes(frame, camera, 'x', easeInOut);
-  const fy = keyframes(frame, camera, 'y', easeInOut);
+  // Cada clave se ajusta antes a los límites de la página para su zoom: así la cámara nunca «choca» con el borde
+  // (el recorte duro de abajo solo actúa como red de seguridad) y la curva es continua.
+  const keys = React.useMemo(() => camera.map((c) => ({
+    ...c,
+    x: Math.min(vw - vw / 2 / c.zoom, Math.max(vw / 2 / c.zoom, c.x)),
+    y: Math.min(vh - vh / 2 / c.zoom, Math.max(vh / 2 / c.zoom, c.y)),
+  })), [camera, vw, vh]);
+  const zoom = smoothKeyframes(frame, keys, 'zoom', true);
+  const fx = smoothKeyframes(frame, keys, 'x');
+  const fy = smoothKeyframes(frame, keys, 'y');
   let tx = width / 2 - fx * k * zoom;
   let ty = height / 2 - fy * k * zoom;
   tx = Math.min(0, Math.max(width - width * zoom, tx));

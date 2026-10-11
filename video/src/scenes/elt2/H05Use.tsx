@@ -6,6 +6,9 @@ import { ScreenClip, CamKey } from '../../components/ScreenClip';
 import { Callout } from '../../components/Callout';
 import { BookIcon, MusicIcon, ArtIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
+import { FadeIn } from '../../components/FadeIn';
+
+const XF = 12; // fotogramas de fundido entre planos
 import { wordFrame } from '../../lib/vo';
 import { H05 } from './timeline';
 import { OrigAudioPill } from './H01Hook';
@@ -44,30 +47,29 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
   const camA: CamKey[] = [
     { f: 0, zoom: 2.1, x: 1700, y: 60 },
     { f: recA(4.6), zoom: 2.1, x: 1700, y: 60 },
-    { f: fLibro + 4, zoom: 1.45, x: 660, y: 380 },
-    { f: fMusica - 6, zoom: 1.45, x: 680, y: 400 },
-    { f: fMusica + 14, zoom: 1.25, x: 768, y: 600 },
-    { f: fIlus - 6, zoom: 1.25, x: 780, y: 620 },
-    { f: fIlus + 14, zoom: 1.06, x: 940, y: 860 },
-    { f: fCon - 4, zoom: 1.06, x: 945, y: 860 },
-    { f: fCon + 18, zoom: 1.0, x: 960, y: 540 },
+    { f: fLibro + 6, zoom: 1.45, x: 660, y: 380 },
+    { f: fMusica - 12, zoom: 1.42, x: 680, y: 400 },
+    { f: fMusica + 18, zoom: 1.25, x: 768, y: 600 },
+    { f: fIlus - 12, zoom: 1.23, x: 790, y: 630 },
+    { f: fIlus + 18, zoom: 1.06, x: 940, y: 860 },
+    { f: fCon - 8, zoom: 1.05, x: 945, y: 850 },
+    { f: fCon + 26, zoom: 1.0, x: 960, y: 540 },
   ];
   // Ficha: zoom a la fila de versiones (x 66–1003, y 586–756 medidos en el DOM) y deslizamiento hasta el original ruso.
   const camB: CamKey[] = [
     { f: 0, zoom: 1.35, x: 960, y: 330 },
-    { f: fTrad - cut1 - 12, zoom: 1.35, x: 960, y: 340 },
-    { f: fTrad - cut1 + 10, zoom: 1.75, x: 535, y: 671 },
+    { f: fTrad - cut1 - 20, zoom: 1.36, x: 940, y: 350 },
+    { f: fTrad - cut1 + 14, zoom: 1.75, x: 535, y: 671 },
     { f: fRuso - cut1 - 2, zoom: 1.8, x: 560, y: 671 },
     { f: fRuso - cut1 + 18, zoom: 1.9, x: 640, y: 671 },
   ];
   const cam1: CamKey[] = [{ f: 0, zoom: 1.7, x: 880, y: 370 }, { f: cut3 - cut2, zoom: 1.2, x: 960, y: 480 }];
-  const cam2: CamKey[] = [{ f: 0, zoom: 1.0, x: 960, y: 560 }, { f: 18, zoom: 1.9, x: 1450, y: 300 }];
+  const cam2: CamKey[] = [{ f: 0, zoom: 1.0, x: 960, y: 560 }, { f: 32, zoom: 1.85, x: 1450, y: 300 }, { f: cut4 - cut3 + XF, zoom: 1.95, x: 1450, y: 310 }];
   const cam3: CamKey[] = [
     { f: 0, zoom: 1.95, x: 1330, y: 440 },
-    { f: fPag - cut4 - 6, zoom: 1.95, x: 1330, y: 455 },
-    { f: fPag - cut4 + 22, zoom: 1.0, x: 960, y: 560 },
+    { f: fPag - cut4 - 14, zoom: 1.95, x: 1330, y: 458 },
+    { f: fPag - cut4 + 28, zoom: 1.0, x: 960, y: 560 },
   ];
-  const flash = (f: number) => interpolate(frame, [f - 3, f, f + 7], [0, 0.85, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const enter = spring({ frame, fps, config: { damping: 22, stiffness: 130 } });
   const pill = interpolate(frame, [H05.sampleAt - 6, H05.sampleAt + 6, H05.sampleAt + H05.sampleDur - 6, H05.sampleAt + H05.sampleDur + 6], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   return (
@@ -75,7 +77,7 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ transform: `scale(${0.95 + 0.05 * enter})`, opacity: enter }}>
           <BrowserWindow width={W}>
-            <Sequence durationInFrames={cut1} layout="none">
+            <Sequence durationInFrames={cut1 + XF} layout="none">
               <ScreenClip src="elt/rec/02_search/video.mp4" width={W} startAt={A_START} cursor={searchCursor} camera={camA}
                 marks={[
                   { from: fLibro - 2, to: fMusica - 2, x: 56, y: 159, w: 355, h: 190, r: 14, label: 'Libro', icon: <BookIcon size={30} /> },
@@ -83,25 +85,24 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
                   { from: fIlus, to: fCon + 10, x: 56, y: 843, w: 1759, h: 190, r: 14, label: 'Arte', icon: <ArtIcon size={30} /> },
                 ]} />
             </Sequence>
-            <Sequence from={cut1} durationInFrames={cut2 - cut1} layout="none">
+            <Sequence from={cut1} durationInFrames={cut2 - cut1 + XF} layout="none"><FadeIn dur={XF}>
               <ScreenClip src="elt/rec/02_search/video.mp4" width={W} startAt={B_START} cursor={searchCursor} camera={camB}
                 marks={[
                   { from: fTrad - cut1, to: fRuso - cut1 - 2, x: 56, y: 576, w: 957, h: 190, r: 14, label: '5 versiones · ES · EN · FR · RU' },
                   { from: fRuso - cut1, to: cut2 - cut1 + 6, x: 858, y: 576, w: 155, h: 190, r: 14, label: 'Original en ruso' },
                 ]} />
-            </Sequence>
-            <Sequence from={cut2} durationInFrames={cut3 - cut2} layout="none">
+            </FadeIn></Sequence>
+            <Sequence from={cut2} durationInFrames={cut3 - cut2 + XF} layout="none"><FadeIn dur={XF}>
               <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C1} cursor={readerCursor} camera={cam1}
-                marks={[{ from: 4, to: Math.round((1.969 - C1) * fps) + 12, x: 741, y: 341, w: 252, h: 48, r: 24 }]} />
-            </Sequence>
-            <Sequence from={cut3} durationInFrames={cut4 - cut3} layout="none">
+                marks={[{ from: 8, to: Math.round((1.969 - C1) * fps) + 12, x: 741, y: 341, w: 252, h: 48, r: 24 }]} />
+            </FadeIn></Sequence>
+            <Sequence from={cut3} durationInFrames={cut4 - cut3 + XF} layout="none"><FadeIn dur={XF}>
               <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C2} cursor={readerCursor} camera={cam2}
-                marks={[{ from: 16, to: cut4 - cut3, x: 1590, y: 208, w: 54, h: 48, r: 14, label: 'Audio', labelBelow: true }]} />
-            </Sequence>
-            <Sequence from={cut4} layout="none">
+                marks={[{ from: 24, to: cut4 - cut3 + XF, x: 1590, y: 208, w: 54, h: 48, r: 14, label: 'Audio', labelBelow: true }]} />
+            </FadeIn></Sequence>
+            <Sequence from={cut4} layout="none"><FadeIn dur={XF}>
               <ScreenClip src="elt/rec/03_reader/video.mp4" width={W} startAt={C3} cursor={readerCursor} camera={cam3} cursorOpacity={0} />
-            </Sequence>
-            <AbsoluteFill style={{ background: '#fff', opacity: Math.max(flash(cut1), flash(cut2), flash(cut3)) }} />
+            </FadeIn></Sequence>
           </BrowserWindow>
         </div>
       </AbsoluteFill>
@@ -136,8 +137,8 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
       <Sfx name="click" at={cut2 + Math.round((1.969 - C1) * fps)} />
       <Sfx name="page_turn" at={cut2 + Math.round((2.3 - C1) * fps)} volume={0.8} />
       <Sfx name="whoosh_fast" at={cut3} />
-      <Sfx name="zoom_in" at={cut3 + 16} volume={0.8} />
-      <Sfx name="focus" at={cut3 + 18} />
+      <Sfx name="zoom_in" at={cut3 + 22} volume={0.8} />
+      <Sfx name="focus" at={cut3 + 26} />
       <Sfx name="click" at={cut3 + Math.round((9.526 - C2) * fps)} />
       <Sfx name="whoosh_soft" at={cut4} />
       <Sfx name="page_turn" at={fPag} />

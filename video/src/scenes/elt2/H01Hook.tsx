@@ -55,7 +55,7 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
   const cam: CamKey[] = [
     { f: 0, zoom: 2.15, x: 1330, y: 330 },
     { f: H01.coldDur - 6, zoom: 1.95, x: 1330, y: 345 },
-    { f: fEsto + 22, zoom: 1.0, x: 960, y: 560 },
+    { f: fEsto + 34, zoom: 1.0, x: 960, y: 560 },
   ];
   // La ventana se encoge a la izquierda para el duelo de precios y desaparece con el muro de portadas.
   const duel = interpolate(frame, [fAud - 8, fAud + 14], [0, 1], { ...clamp, easing: easeInOut });

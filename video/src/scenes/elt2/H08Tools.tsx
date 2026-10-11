@@ -9,6 +9,9 @@ import { Words } from '../../components/Kinetic';
 import { Sfx } from '../../components/Sfx';
 import { clamp, easeInOut } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
+import { FadeIn } from '../../components/FadeIn';
+
+const XF = 12;
 
 const W = 1640;
 
@@ -25,7 +28,6 @@ export const H08Tools: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
   const fNum = at('novecientas', 0, 14.36);
   const intro = interpolate(frame, [fDic - 10, fDic + 4], [0, 1], { ...clamp, easing: easeInOut });
   const win = spring({ frame: frame - fDic + 8, fps, config: { damping: 20, stiffness: 130 } });
-  const flash = (f: number) => interpolate(frame, [f - 3, f, f + 7], [0, 0.85, 0], clamp);
   return (
     <Stage tone="warm">
       {frame < fDic + 6 && (
@@ -36,21 +38,20 @@ export const H08Tools: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
       {frame >= fDic - 8 && (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: win, transform: `translateY(${(1 - win) * 60}px)` }}>
           <BrowserWindow width={W}>
-            <Sequence from={fDic - 8} durationInFrames={fComp - fDic + 8} layout="none">
+            <Sequence from={fDic - 8} durationInFrames={fComp - fDic + 8 + XF} layout="none">
               <ScreenClip image src="elt/shots/16-diccionario-desde-seleccion.jpg" width={W} showCursor={false}
-                camera={[{ f: 0, zoom: 1.05, x: 960, y: 540 }, { f: 30, zoom: 1.65, x: 980, y: 330 }, { f: fComp - fDic, zoom: 1.75, x: 980, y: 340 }]}
+                camera={[{ f: 0, zoom: 1.05, x: 960, y: 540 }, { f: 40, zoom: 1.65, x: 980, y: 330 }, { f: fComp - fDic + XF, zoom: 1.76, x: 980, y: 340 }]}
                 marks={[{ from: fSiglos - fDic, to: fComp - fDic + 8, x: 739, y: 249, w: 270, h: 30, r: 8 }]} />
             </Sequence>
-            <Sequence from={fComp} durationInFrames={fVoc - fComp} layout="none">
+            <Sequence from={fComp} durationInFrames={fVoc - fComp + XF} layout="none"><FadeIn dur={XF}>
               <ScreenClip image src="elt/shots/15-lectura-comparada-es-en-fr.jpg" width={W} showCursor={false}
-                camera={[{ f: 0, zoom: 1.0, x: 960, y: 540 }, { f: fVoc - fComp, zoom: 1.08, x: 960, y: 560 }]} />
-            </Sequence>
-            <Sequence from={fVoc} layout="none">
+                camera={[{ f: 0, zoom: 1.0, x: 960, y: 540 }, { f: fVoc - fComp + XF, zoom: 1.08, x: 960, y: 560 }]} />
+            </FadeIn></Sequence>
+            <Sequence from={fVoc} layout="none"><FadeIn dur={XF}>
               <ScreenClip image src="elt/shots/18-vocabulario-de-la-obra.jpg" width={W} showCursor={false}
-                camera={[{ f: 0, zoom: 1.0, x: 960, y: 540 }, { f: fRask - fVoc - 6, zoom: 1.2, x: 700, y: 420 }, { f: fRask - fVoc + 16, zoom: 2.3, x: 620, y: 307 }]}
-                marks={[{ from: fRask - fVoc + 4, to: dur - fVoc, x: 405, y: 293, w: 430, h: 30, r: 8 }]} />
-            </Sequence>
-            <AbsoluteFill style={{ background: '#fff', opacity: Math.max(flash(fComp), flash(fVoc)) }} />
+                camera={[{ f: 0, zoom: 1.0, x: 960, y: 540 }, { f: fRask - fVoc - 18, zoom: 1.2, x: 700, y: 420 }, { f: fRask - fVoc + 18, zoom: 2.3, x: 620, y: 307 }]}
+                marks={[{ from: fRask - fVoc + 10, to: dur - fVoc, x: 405, y: 293, w: 430, h: 30, r: 8 }]} />
+            </FadeIn></Sequence>
           </BrowserWindow>
         </AbsoluteFill>
       )}
@@ -74,8 +75,8 @@ export const H08Tools: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
       <Sfx name="draw" at={fSiglos} />
       <Sfx name="transition" at={fComp} volume={0.8} />
       <Sfx name="transition" at={fVoc} volume={0.8} />
-      <Sfx name="zoom_in" at={fRask + 2} />
-      <Sfx name="draw" at={fRask + 4} />
+      <Sfx name="zoom_in" at={fRask + 4} />
+      <Sfx name="draw" at={fRask + 10} />
       <Sfx name="counter" at={fNum - 4} />
       <Sfx name="snap_in" at={fNum - 4} />
       <Sfx name="stamp" at={fNum + 30} />

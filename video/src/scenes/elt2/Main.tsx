@@ -10,17 +10,17 @@ import { clamp, easeInOut, easeOut } from '../../lib/anim';
 
 // Transición entre escenas: la saliente avanza hacia la cámara y se desenfoca; la entrante llega desde atrás.
 // Además, una deriva lenta de cámara para que ningún plano quede estático.
-const IN = 11;
-const OUT = 7;
+const IN = 12;
+const OUT = 10;
 const SceneShell: React.FC<{ dur: number; first: boolean; last: boolean; children: React.ReactNode }> = ({ dur, first, last, children }) => {
   const frame = useCurrentFrame();
   const pin = first ? 1 : interpolate(frame, [0, IN], [0, 1], { ...clamp, easing: easeOut });
   const pout = last ? 0 : interpolate(frame, [dur - OUT, dur], [0, 1], { ...clamp, easing: easeInOut });
   const drift = 1 + 0.014 * (frame / dur);
   const scale = drift * (0.965 + 0.035 * pin) * (1 + 0.05 * pout);
-  const blur = (1 - pin) * 9 + pout * 8;
+  const blur = (1 - pin) * 9 + pout * 10;
   return (
-    <AbsoluteFill style={{ transform: `scale(${scale})`, filter: blur > 0.05 ? `blur(${blur}px)` : undefined, opacity: (0.35 + 0.65 * pin) * (1 - 0.55 * pout) }}>
+    <AbsoluteFill style={{ transform: `scale(${scale})`, filter: blur > 0.05 ? `blur(${blur}px)` : undefined, opacity: (0.35 + 0.65 * pin) * (1 - 0.6 * pout) }}>
       {children}
     </AbsoluteFill>
   );
