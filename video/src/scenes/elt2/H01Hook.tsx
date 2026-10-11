@@ -143,9 +143,11 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
       {/* ¿Dónde está la trampa? */}
       {frame >= fTrampa - 4 && (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `scale(${1 + 0.07 * Math.exp(-Math.max(0, frame - fTrampa) / 6) * (frame >= fTrampa ? 1 : 0)})` }}>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 150, letterSpacing: -4, display: 'flex', gap: 34, alignItems: 'baseline' }}>
+          {/* Sin `gap`: el espacio tras «la» ya lo pone Words (0,26 em), igual que entre las demás palabras. El golpe de
+              «trampa?» crece desde su borde izquierdo para no pisar «la». */}
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 150, letterSpacing: -4, display: 'flex', alignItems: 'baseline' }}>
             <Words text="¿Dónde está la" start={fTrampa} size={150} weight={700} style={{ display: 'inline' }} />
-            <span style={{ display: 'inline-block', transform: `scale(${spring({ frame: frame - fTrampa - 14, fps, config: { damping: 10, stiffness: 180 } })})` }}>
+            <span style={{ display: 'inline-block', transformOrigin: '0% 65%', transform: `scale(${spring({ frame: frame - fTrampa - 14, fps, config: { damping: 10, stiffness: 180 } })})` }}>
               <Highlight start={fTrampa + 18} dur={10}>trampa?</Highlight>
             </span>
           </div>

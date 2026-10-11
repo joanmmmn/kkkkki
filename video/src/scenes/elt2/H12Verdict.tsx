@@ -37,10 +37,10 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 140, letterSpacing: -4, display: 'flex', alignItems: 'baseline' }}>
             <Words text="¿La trampa?" start={0} size={140} weight={700} style={{ display: 'inline' }} />
-            {/* «No la hay.» abre hueco con un muelle (la frase se recentra deslizándose) y entra con golpe de escala
+            {/* El espacio tras «¿La trampa?» lo pone Words (0,26 em). «No la hay.» abre hueco con un muelle (la frase se recentra deslizándose) y entra con golpe de escala
                 desde su borde izquierdo, de modo que el rebote nunca pisa la interrogación. */}
-            <div style={{ width: (NO_W + 36) * noRoom, flexShrink: 0, display: 'flex', overflow: 'visible' }}>
-              <span style={{ display: 'inline-block', flexShrink: 0, marginLeft: 36, transformOrigin: '0% 65%', transform: `scale(${noPop})` }}><Highlight start={fNo + 4} dur={10}>No la hay.</Highlight></span>
+            <div style={{ width: NO_W * noRoom, flexShrink: 0, display: 'flex', overflow: 'visible' }}>
+              <span style={{ display: 'inline-block', flexShrink: 0, transformOrigin: '0% 65%', transform: `scale(${noPop})` }}><Highlight start={fNo + 4} dur={10}>No la hay.</Highlight></span>
             </div>
           </div>
         </AbsoluteFill>

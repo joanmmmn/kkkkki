@@ -27,7 +27,7 @@ for ((a = 0; a < TOTAL; a += CH)); do
   echo "file '$part'" >> "$WD/parts.txt"
 done
 ffmpeg -v error -y -f concat -safe 0 -i "$WD/parts.txt" -c copy "$WD/inter_1440.mp4"
-npx remotion render src/index.ts ELTReview2 "$WD/mix.wav" --codec=wav --props='{"audioOnly":true}' \
+[ -s "$WD/mix.wav" ] || npx remotion render src/index.ts ELTReview2 "$WD/mix.wav" --codec=wav --props='{"audioOnly":true}' \
   --concurrency=4 --browser-executable="$BROWSER" --log=error
 cd ..
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$WD/inter_1440.mp4")
