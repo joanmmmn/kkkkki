@@ -14,3 +14,7 @@ video/public/er/audio/*.mp3
 tools/snap.js
 # Vídeos renderizados de la reseña de ElevenReader: el máster supera el límite de 100 MB de GitHub; se entregan aparte
 deliverables/elevenreader/*.mp4
+# Página de reseña de ElevenReader: salidas de build.py y audio grabado en la app (no se publica en el repositorio)
+web/elevenreader-resena/dist/
+web/elevenreader-resena/preview/
+web/elevenreader-resena/media/audio/*.mp3
