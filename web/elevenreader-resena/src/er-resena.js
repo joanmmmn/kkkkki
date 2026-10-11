@@ -47,7 +47,13 @@ class Player {
     this.para = $('[data-words]', root);
     this.words = this.para ? wrapWords(this.para) : [];
     this.n = Math.min(this.words.length, this.clip.words.length);
-    this.btn = $('[data-play]', root); this.fill = $('.er-reader__bar span', root); this.timeEl = $('[data-time]', root);
+    this.btn = $('[data-play]', root); this.label = $('[data-listen-label]', root);
+    this.fill = $('.er-reader__bar span, .er-demo__bar span', root); this.timeEl = $('[data-time]', root);
+    this.orb = $('.er-orb', root); this.demo = root.matches('[data-demo]');
+    // Cápsula que se desliza de palabra en palabra (como el resaltado de ElevenReader)
+    this.glide = $('.er-glide', root);
+    if (!this.glide && this.para) { this.glide = Object.assign(document.createElement('span'), { className: 'er-glide' }); this.glide.setAttribute('aria-hidden', 'true'); this.para.before(this.glide); }
+    if (this.demo) root.classList.add('is-live');
     this.rate = 1; this.idx = -2; this.playing = false;
     this.wave = $('[data-wave]', root);
     if (this.wave) this.drawWave();
@@ -58,28 +64,51 @@ class Player {
       this.seek(((e.clientX - r.left) / r.width) * this.clip.dur, true);
     }));
     this.render(0, true);
-    if (this.para && this.root.matches('.er-hero .er-reader')) { this.para.classList.add('is-reading'); this.words[0]?.classList.add('is-on'); }
+    addEventListener('resize', () => { const i = this.idx; this.idx = -2; this.render(i >= 0 ? this.clip.words[i][0] : 0, i < 0); });
+    if (this.demo) this.preview();
     players.push(this);
   }
   get audio() {
     if (!this.a) {
       this.a = new Audio(DATA.audio[this.id]);
       this.a.preload = 'auto';
-      this.a.addEventListener('ended', () => { this.pause(); this.a.currentTime = 0; this.render(0, true); });
+      this.a.addEventListener('ended', () => { this.pause(); this.a.currentTime = 0; this.render(0, true); if (this.label) this.label.textContent = 'Escuchar otra vez'; });
     }
     return this.a;
   }
   now() { return this.a ? this.a.currentTime : 0; }
   toggle() { this.playing ? this.pause() : this.play(); }
+  analyser() {
+    if (!this.orb || this.an !== undefined) return;
+    this.an = null;
+    try {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      Player.ctx = Player.ctx || new Ctx();
+      const src = Player.ctx.createMediaElementSource(this.audio);
+      const an = Player.ctx.createAnalyser(); an.fftSize = 512;
+      src.connect(an); an.connect(Player.ctx.destination);
+      this.an = an; this.buf = new Uint8Array(an.fftSize);
+    } catch { this.an = null; }
+  }
   play() {
     players.forEach((p) => p !== this && p.pause());
-    this.root.classList.remove('is-inviting');
+    this.previewing = false; cancelAnimationFrame(this.praf);
     const a = this.audio;
+    this.analyser();
+    if (Player.ctx?.state === 'suspended') Player.ctx.resume();
     a.playbackRate = this.rate;
     a.play().then(() => {
       this.playing = true; this.root.classList.add('is-playing');
-      this.btn?.setAttribute('aria-pressed', 'true');
-      const tick = () => { this.render(a.currentTime); if (this.playing) this.raf = requestAnimationFrame(tick); };
+      this.btn?.setAttribute('aria-pressed', 'true'); if (this.label) this.label.textContent = 'Pausa';
+      const tick = () => {
+        this.render(a.currentTime);
+        if (this.an) {
+          this.an.getByteTimeDomainData(this.buf);
+          let sum = 0; for (const v of this.buf) { const d = (v - 128) / 128; sum += d * d; }
+          this.orb.style.setProperty('--amp', (1 + Math.min(0.32, Math.sqrt(sum / this.buf.length) * 2.4)).toFixed(3));
+        }
+        if (this.playing) this.raf = requestAnimationFrame(tick);
+      };
       tick();
     }).catch(() => { /* el navegador ha bloqueado el audio */ });
   }
@@ -87,6 +116,8 @@ class Player {
     if (!this.a) return;
     this.a.pause(); this.playing = false; cancelAnimationFrame(this.raf);
     this.root.classList.remove('is-playing'); this.btn?.setAttribute('aria-pressed', 'false');
+    if (this.label) this.label.textContent = 'Escuchar';
+    this.orb?.style.setProperty('--amp', '1');
   }
   seek(t, play = false) {
     const a = this.audio;
@@ -95,18 +126,54 @@ class Player {
     if (play && !this.playing) this.play();
   }
   setRate(r) { this.rate = r; if (this.a) this.a.playbackRate = r; }
-  render(t, reset = false) {
+  // Vista previa sin sonido en la portada: la primera frase se «lee» en bucle hasta que pulsas Escuchar.
+  preview() {
+    if (reduced) return;
+    const W = this.clip.words, last = Math.min(16, this.n - 1);
+    const endT = W[last][1] + 0.5, total = endT + 1.9;
+    let t0 = null, visible = true;
+    if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(this.root);
+    this.previewing = true;
+    const loop = (now) => {
+      if (!this.previewing) return;
+      if (t0 === null) t0 = now + 900;
+      let t = (now - t0) / 1000;
+      if (t > total) { t0 = now; t = 0; }
+      if (visible && t >= 0) {
+        if (t <= endT) this.render(t, false, true);
+        else if (t > endT + 1.2) this.render(0, true, true);
+      }
+      this.praf = requestAnimationFrame(loop);
+    };
+    this.praf = requestAnimationFrame(loop);
+  }
+  moveGlide(idx) {
+    const g = this.glide;
+    if (!g) return;
+    if (idx < 0 || !this.words[idx]) { g.classList.remove('is-on'); this.gy = undefined; return; }
+    const base = g.offsetParent?.getBoundingClientRect(), r = this.words[idx].getBoundingClientRect();
+    if (!base) return;
+    const x = r.left - base.left - 4, y = r.top - base.top - 1, wd = r.width + 8, h = r.height + 2;
+    const jump = this.gy === undefined || Math.abs(y - this.gy) > 2;
+    g.classList.toggle('no-anim', jump);
+    g.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+    g.style.width = `${wd.toFixed(1)}px`; g.style.height = `${h.toFixed(1)}px`;
+    g.classList.add('is-on'); this.gy = y;
+  }
+  render(t, reset = false, preview = false) {
     const W = this.clip.words;
     let idx = -1;
     if (!reset) for (let i = 0; i < this.n; i++) { if (t >= W[i][0] - 0.02) idx = i; else break; }
     if (idx !== this.idx) {
       this.words.forEach((w, i) => { w.classList.toggle('is-on', i === idx); w.classList.toggle('is-past', i < idx); });
       this.idx = idx;
+      this.moveGlide(idx);
     }
-    if (this.para) this.para.classList.toggle('is-reading', !reset && t > 0.01);
+    if (this.para) this.para.classList.toggle('is-reading', !reset && t > 0.01 && !preview);
+    if (preview) return;
     const p = Math.min(1, t / this.clip.dur);
     if (this.fill) this.fill.style.width = `${p * 100}%`;
-    if (this.timeEl) this.timeEl.textContent = `${fmt(t)} / ${fmt(this.clip.dur)}`;
+    if (this.timeEl) this.timeEl.textContent = this.playing || t > 0.01 ? `${fmt(t)} / ${fmt(this.clip.dur)}` : (this.demo ? '' : `0:00 / ${fmt(this.clip.dur)}`);
     if (this.bars) { const k = Math.round(p * this.bars.length); this.bars.forEach((b, i) => b.classList.toggle('is-past', i < k)); }
   }
   drawWave() {
@@ -325,7 +392,7 @@ $$('.er-faq details').forEach((d) => {
     addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
     upd();
   }
-  const links = $$('.er-toc a[href^="#"]');
+  const links = $$('.er-toc ol a[href^="#"]');
   const map = new Map(links.map((a) => [a.getAttribute('href').slice(1), a]));
   if (!('IntersectionObserver' in window)) return;
   const io = new IntersectionObserver((es) => es.forEach((e) => {
