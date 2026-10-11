@@ -8,13 +8,16 @@ Es la reseña que acompaña al vídeo de YouTube: el vídeo y la descripción en
 ## Qué lleva
 
 - Portada con un lector que se escucha: el párrafo de «El rayo de luna» se resalta palabra a palabra con la voz de Sara Martin grabada en la app.
-- Veredicto rápido (8/10), índice fijo con la sección activa y barra de progreso de lectura.
+- Veredicto rápido (8/10) con el botón «Probar gratis» (el 3 tachado y 30 días) y barra de progreso de lectura.
+- Secciones a todo el ancho: título grande a la izquierda y texto a la derecha (en el móvil, uno debajo del otro).
 - Vídeo (se carga solo al pulsar, con youtube-nocookie), catálogo con las etiquetas de precio, búsqueda de 6 superventas.
 - Subida del PDF animada y comparación del PDF original con lo que lee la voz.
 - Brian frente a Sara Martin con audio, forma de onda y resaltado sincronizado.
-- Probador de las opciones del lector: tema, color del resaltado (colores reales de la app), tamaño y velocidad.
+- Probador de las opciones del lector: tema, color del resaltado (colores reales de la app), tamaño y velocidad,
+  y el menú de los tres puntos de un documento recreado con sus opciones.
 - Precios mensual/anual, la factura que nos mostró la app (11,31 $/mes) y la oferta con **las condiciones de la web copiadas tal cual**.
-- Calendario de 3 a 30 días, dónde está el botón (al final de la fila de plataformas de la página de inicio) y los 5 pasos.
+- Calendario de 3 a 30 días, dónde está el botón (al final de la fila de plataformas de la página de inicio, o «Probar gratis»
+  en la propia reseña) y los 5 pasos con una tarjeta fija de la oferta al lado.
 - Quedarse o cancelar (web, iPhone, Android), nota por apartados, preguntas frecuentes, fuentes y aviso de afiliado.
 - Datos estructurados: `Review` (8/10, con puntos positivos y negativos), `BreadcrumbList` y `FAQPage`.
 
@@ -32,6 +35,9 @@ media/               capturas (.webp), miniatura del vídeo y imagen para redes 
 media/audio/         3 fragmentos de la app en mp3 + tiempos de cada palabra (fuera de git)
 site/                cabecera, pie y estilos del sitio copiados de la página actual (solo para construir)
 build.py             genera dist/ (producción) y preview/ (vista previa privada)
+
+../../tools/er_review_button.mjs   rehace media/sonorbooks-resena-boton.webp (el veredicto con su botón) y da la
+                                   posición del aro; úsalo si cambia el veredicto (luego, `build.py`).
 ```
 
 `python3 web/elevenreader-resena/build.py` genera:
@@ -60,3 +66,5 @@ dist/assets/resenas/elevenreader/media/…              imágenes y audio
   Si prefieres no publicarlos en la web, se quitan los reproductores o se sustituyen por muestras propias.
 - **Nota 8/10 y textos de opinión**: se basan en la prueba del 11/10/2026 con la cuenta Ultra en periodo de prueba.
 - Las condiciones de la oferta y los precios están copiados de la web y de lo que mostró la app ese día; si cambian, se editan en `src/page.html`.
+- **Aviso de afiliado junto al botón del veredicto**: se ha dejado una línea mínima («Enlace de afiliado, sin coste para ti»)
+  porque el análisis legal del proyecto recomienda el aviso en el punto de clic. Si se prefiere sin ella, se quita en `src/page.html`.

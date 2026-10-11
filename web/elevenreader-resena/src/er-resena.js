@@ -64,7 +64,7 @@ class Player {
       this.seek(((e.clientX - r.left) / r.width) * this.clip.dur, true);
     }));
     this.render(0, true);
-    addEventListener('resize', () => { const i = this.idx; this.idx = -2; this.render(i >= 0 ? this.clip.words[i][0] : 0, i < 0); });
+    addEventListener('resize', () => { const i = this.idx; this.idx = -2; this.render(i >= 0 ? this.clip.words[i][0] : 0, i < 0, this.previewing); });
     if (this.demo) this.preview();
     players.push(this);
   }
@@ -262,6 +262,29 @@ $$('[data-ring]').forEach((ring) => {
   if (!belowFold(ring)) { ring.classList.add('is-pending'); setTimeout(() => fillRing(ring), 500); return; }
   armOnApproach(ring, () => ring.classList.add('is-pending'), () => fillRing(ring), { threshold: 0.5 });
 });
+/* ---------- Menú de los tres puntos: el resaltado recorre las opciones ---------- */
+$$('[data-menu]').forEach((m) => {
+  const items = $$('li', m), hl = $('.er-menu__hl', m);
+  if (!items.length || !hl) return;
+  let i = 0, timer = 0;
+  const go = () => {
+    const li = items[i % items.length];
+    hl.style.transform = `translateY(${li.offsetTop}px)`; hl.style.height = `${li.offsetHeight}px`;
+    i++;
+  };
+  go();
+  addEventListener('resize', () => { i = Math.max(0, i - 1); go(); });
+  if (reduced || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([e]) => { clearInterval(timer); if (e.isIntersecting) timer = setInterval(go, 1400); }, { threshold: 0.4 }).observe(m);
+});
+
+/* ---------- Botón de la oferta: el 3 se tacha y saltan los 30 días ---------- */
+$$('[data-deal]').forEach((d) => {
+  if (reduced) return;
+  const strike = () => { d.classList.remove('is-pending'); d.classList.add('is-struck'); };
+  if (!belowFold(d)) { d.classList.add('is-pending'); setTimeout(strike, 1300); return; }
+  armOnApproach(d, () => d.classList.add('is-pending'), () => setTimeout(strike, 250), { threshold: 0.6 });
+});
 $$('[data-bars]').forEach((b) => armOnApproach(b, () => b.classList.add('is-pending'), () => b.classList.remove('is-pending'), { threshold: 0.4 }));
 
 /* ---------- Búsqueda de superventas ---------- */
@@ -378,29 +401,19 @@ $$('.er-faq details').forEach((d) => {
   });
 });
 
-/* ---------- Progreso de lectura e índice activo ---------- */
+/* ---------- Progreso de lectura ---------- */
 (() => {
   const bar = $('.er-progress span'), main = $('.er-main');
-  if (bar && main) {
-    let ticking = false;
-    const upd = () => {
-      ticking = false;
-      const r = main.getBoundingClientRect();
-      const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - innerHeight * 0.6)));
-      bar.style.transform = `scaleX(${p.toFixed(4)})`;
-    };
-    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
-    upd();
-  }
-  const links = $$('.er-toc ol a[href^="#"]');
-  const map = new Map(links.map((a) => [a.getAttribute('href').slice(1), a]));
-  if (!('IntersectionObserver' in window)) return;
-  const io = new IntersectionObserver((es) => es.forEach((e) => {
-    if (!e.isIntersecting) return;
-    links.forEach((a) => a.classList.remove('is-active'));
-    map.get(e.target.id)?.classList.add('is-active');
-  }), { rootMargin: '-25% 0px -65% 0px' });
-  map.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+  if (!bar || !main) return;
+  let ticking = false;
+  const upd = () => {
+    ticking = false;
+    const r = main.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - innerHeight * 0.6)));
+    bar.style.transform = `scaleX(${p.toFixed(4)})`;
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+  upd();
 })();
 
 /* ---------- Barra fija con la oferta ---------- */
