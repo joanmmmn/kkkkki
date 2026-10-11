@@ -13,9 +13,14 @@ import { NextoryTutorial } from './scenes/nx/Main';
 import { NX_TOTAL } from './scenes/nx/timeline';
 import { NextoryShort, SHORT_TOTAL as NX_SHORT_TOTAL } from './scenes/nx/Short';
 import { NXThumb } from './scenes/nx/Thumb';
+import { PhoneTest } from './scenes/nxr/PhoneTest';
+import { NextoryReview } from './scenes/nxr/Main';
+import { NXR_TOTAL } from './scenes/nxr/timeline';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="NXReview" component={NextoryReview} durationInFrames={NXR_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="NXRPhoneTest" component={PhoneTest} durationInFrames={60} fps={FPS} width={W} height={H} />
     <Composition id="NXTutorial" component={NextoryTutorial} durationInFrames={NX_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="NXShort" component={NextoryShort} durationInFrames={NX_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
     <Composition id="NXThumb" component={NXThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />

@@ -12,12 +12,15 @@ const ctx1 = req.context('../../public/elt/vo', false, /(E\d+[A-Z]?|S\d+)\.json$
 const ctx2 = req.context('../../public/elt/vo2', false, /V\d+\.json$/);
 // Tutorial de Nextory (ids N.. y T.. para el vertical).
 const ctx3 = req.context('../../public/nx/vo', false, /[NT]\d+[A-Z]?\.json$/);
+// Reseña de Nextory + prueba de 30 días (ids R.. y P..; Q.. para el vertical).
+const ctx4 = req.context('../../public/nxr/vo', false, /[RPQ]\d+[A-Z]?\.json$/);
 export const VOS: Record<string, VO & { speechEnd?: number }> = {};
 for (const k of ctx1.keys()) { const v = ctx1(k); VOS[v.id] = v; }
 for (const k of ctx2.keys()) { const v = ctx2(k); VOS[v.id] = v; }
 for (const k of ctx3.keys()) { const v = ctx3(k); VOS[v.id] = v; }
+for (const k of ctx4.keys()) { const v = ctx4(k); VOS[v.id] = v; }
 
-const dirOf = (id: string) => (/^[NT]\d/.test(id) ? 'nx/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
+const dirOf = (id: string) => (/^[RPQ]\d/.test(id) ? 'nxr/vo' : /^[NT]\d/.test(id) ? 'nx/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
 export const voSrc = (id: string) => staticFile(`${dirOf(id)}/${id}.mp3`);
 export const voFrames = (id: string) => Math.ceil((VOS[id]?.duration ?? 3) * FPS);
 // Duración hasta el final real de la voz (sin el silencio final del archivo).

@@ -18,6 +18,8 @@ import nx12 from '../../public/nx/rec/12_oferta/meta.json';
 import nx13 from '../../public/nx/rec/13_registro/meta.json';
 import nx14 from '../../public/nx/rec/14_plan/meta.json';
 import nx15 from '../../public/nx/rec/15_pago/meta.json';
+// Grabaciones de la app de Nextory (reseña): duraciones en public/nxr/rec/index.json (las escribe tools/nxr_ingest.py).
+import nxrIndex from '../../public/nxr/rec/index.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
@@ -33,6 +35,7 @@ const REC_DURATIONS: Record<string, number> = {
   'nx/rec/13_registro/video.mp4': nx13.duration,
   'nx/rec/14_plan/video.mp4': nx14.duration,
   'nx/rec/15_pago/video.mp4': nx15.duration,
+  ...Object.fromEntries(Object.entries(nxrIndex as Record<string, { duration: number }>).map(([k, v]) => [`nxr/rec/${k}/video.mp4`, v.duration])),
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };

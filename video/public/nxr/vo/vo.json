@@ -1,0 +1,123 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "R01",
+   "text": "¿Merece la pena pagar Nextory? Lo hemos instalado y lo hemos usado a fondo: leyendo, escuchando y tocando cada botón. Te contamos lo bueno, lo malo… y al final, cómo probarlo treinta días gratis."
+  },
+  {
+   "id": "R02",
+   "text": "Nextory es una app sueca que junta audiolibros y ebooks en una sola suscripción: más de un millón cuatrocientos mil títulos en varios idiomas, y también revistas. En España tomó el relevo de Nubico, el servicio de lectura de Movistar. Eso sí: solo funciona en el móvil y en la tablet. No tiene versión web."
+  },
+  {
+   "id": "R03",
+   "text": "Hay tres planes. Mini: cinco noventa y nueve al mes, con diez horas. Standard: siete noventa y nueve, con treinta horas. Y Unlimited: desde nueve noventa y nueve, sin límite. Ojo: las horas cuentan igual si lees que si escuchas. Todos incluyen cuatro perfiles, pero solo Unlimited deja usarlos a la vez."
+  },
+  {
+   "id": "R04",
+   "text": "Al entrar, la portada te recomienda según tus gustos: novedades, listas y categorías. Y el buscador encuentra por título, autor o narrador."
+  },
+  {
+   "id": "R05",
+   "text": "Cada libro tiene su ficha: si está en ebook, en audiolibro o en los dos, quién lo narra, cuánto dura y qué opinan otros lectores."
+  },
+  {
+   "id": "R06",
+   "text": "Para leer, el lector es muy completo: cambias el tamaño y el tipo de letra, el color del fondo y los márgenes, y puedes poner marcadores. Tu progreso se guarda y se sincroniza entre dispositivos."
+  },
+  {
+   "id": "R07",
+   "text": "Y para escuchar: velocidad de cero coma cinco a dos equis, saltos de quince segundos, capítulos, marcadores y un temporizador para dormirte sin perder el punto."
+  },
+  {
+   "id": "R08",
+   "text": "Los libros se descargan en el móvil, así que puedes leer y escuchar sin conexión: en el avión, en el metro o en la playa."
+  },
+  {
+   "id": "R09",
+   "text": "Puedes crear hasta tres perfiles más, cada uno con sus propias recomendaciones. Y el perfil infantil solo muestra libros para menores de doce años, con un PIN para salir."
+  },
+  {
+   "id": "R10",
+   "text": "En tu perfil ves cuánto lees y escuchas cada mes, y cuáles son tus categorías favoritas."
+  },
+  {
+   "id": "R11",
+   "text": "Además, funciona con CarPlay y Android Auto, en relojes con Wear OS, con AirPlay y en los lectores de tinta electrónica InkBOOK. En Kindle o en Kobo, no."
+  },
+  {
+   "id": "R12",
+   "text": "¿Y tus propios libros o PDF? Aquí no: Nextory solo abre los títulos de su catálogo."
+  },
+  {
+   "id": "R13",
+   "text": "Lo bueno: ebooks y audiolibros en una sola app, un plan barato para empezar, cuatro perfiles y un modo infantil de verdad. Lo malo: el límite de horas de Mini y Standard, que no hay web ni app de ordenador, que no puedes subir tus archivos y que, si cancelas durante la prueba, pierdes el acceso al momento."
+  },
+  {
+   "id": "R14",
+   "text": "¿Merece la pena? Si alternas leer y escuchar en español, es de lo más completo por menos de diez euros. Si escuchas poco, el Mini te basta. Y antes de pagar, busca tus libros en SonorBooks para ver si están."
+  },
+  {
+   "id": "P01",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis, en vez de catorce."
+  },
+  {
+   "id": "P02",
+   "text": "En la ficha de tu audiolibro, pulsa «Empezar prueba gratuita»."
+  },
+  {
+   "id": "P03",
+   "text": "Crea tu cuenta, elige plan y añade tu tarjeta: hoy no pagas nada."
+  },
+  {
+   "id": "P04",
+   "text": "Descarga la app, entra con tu correo… y a disfrutar."
+  },
+  {
+   "id": "P05",
+   "text": "¿Te ha gustado? Quédate: no tienes que hacer nada. ¿No te convence? Cancélalo en «Mis páginas» antes del día treinta; mejor en los últimos días, porque al cancelar pierdes el acceso al momento."
+  },
+  {
+   "id": "P06",
+   "text": "Encuentra dónde escuchar tu próximo libro, y a qué precio, en SonorBooks."
+  },
+  {
+   "id": "Q01",
+   "text": "¿Merece la pena Nextory? Lo hemos probado a fondo."
+  },
+  {
+   "id": "Q02",
+   "text": "Por menos de diez euros tienes audiolibros y ebooks en una sola app, con cuatro perfiles y modo infantil."
+  },
+  {
+   "id": "Q03",
+   "text": "El lector y el reproductor son muy completos: velocidad, temporizador, marcadores y descargas para usarlo sin conexión."
+  },
+  {
+   "id": "Q04",
+   "text": "Lo malo: los planes baratos tienen límite de horas, no hay versión web y no puedes subir tus PDF."
+  },
+  {
+   "id": "Q05",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis, en vez de catorce."
+  },
+  {
+   "id": "Q06",
+   "text": "Si te gusta, te quedas. Si no, cancela antes del día treinta; mejor al final, porque al cancelar pierdes el acceso al momento."
+  },
+  {
+   "id": "Q07",
+   "text": "Busca tu próximo libro en SonorBooks."
+  }
+ ]
+}
