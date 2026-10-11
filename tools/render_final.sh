@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Render final de la reseña en máxima calidad.
 #   1. Imagen: Remotion a 2560×1440 (escala 4/3), fotogramas PNG sin pérdida → intermedio H.264 CRF 4.
-#      (Con 4 hilos el extractor de las grabaciones 4K se bloquea a 1440p; con 3 va estable.)
+#      Por tramos y con 3 hilos: a 1440p el extractor de las grabaciones 4K se queda sin memoria en un render de una pieza.
 #   2. Audio: render solo de audio (WAV) → mezcla masterizada a -14 LUFS con tools/master.sh.
 #   3. Máster 1440p para YouTube (CRF 14, veryslow) y versión 1080p de ~95 MB (dos pasadas, veryslow).
 # Uso: tools/render_final.sh [carpeta_trabajo]   (desde la raíz del repo)
@@ -10,8 +10,23 @@ WD="${1:-/tmp/elt_final}"; mkdir -p "$WD"
 OUT=deliverables/el-libro-total
 BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell
 cd video
-npx remotion render src/index.ts ELTReview2 "$WD/inter_1440.mp4" --muted --scale=1.3333333333333333 \
-  --image-format=png --crf=4 --x264-preset=medium --concurrency=3 --timeout=120000 --browser-executable="$BROWSER" --log=error
+# Por tramos de 1.400 fotogramas: cada tramo es un proceso nuevo (la caché de fotogramas 4K se libera) y se
+# reintenta si falla; después se unen sin recodificar (cada tramo empieza en fotograma clave).
+TOTAL=$(npx remotion compositions src/index.ts --browser-executable="$BROWSER" 2>&1 | awk '$1=="ELTReview2"{print $4}')
+CH=1400; : > "$WD/parts.txt"
+for ((a = 0; a < TOTAL; a += CH)); do
+  b=$((a + CH - 1 < TOTAL - 1 ? a + CH - 1 : TOTAL - 1)); part="$WD/part_$(printf %05d $a).mp4"
+  for try in 1 2 3; do
+    [ -s "$part" ] && break
+    npx remotion render src/index.ts ELTReview2 "$part.tmp.mp4" --frames=$a-$b --muted --scale=1.3333333333333333 \
+      --image-format=png --crf=4 --x264-preset=medium --concurrency=3 --timeout=120000 \
+      --offthreadvideo-cache-size-in-bytes=1000000000 --browser-executable="$BROWSER" --log=error \
+      && mv "$part.tmp.mp4" "$part" || echo "tramo $a-$b: intento $try fallido"
+  done
+  [ -s "$part" ] || { echo "tramo $a-$b sin renderizar"; exit 1; }
+  echo "file '$part'" >> "$WD/parts.txt"
+done
+ffmpeg -v error -y -f concat -safe 0 -i "$WD/parts.txt" -c copy "$WD/inter_1440.mp4"
 npx remotion render src/index.ts ELTReview2 "$WD/mix.wav" --codec=wav --props='{"audioOnly":true}' \
   --concurrency=4 --browser-executable="$BROWSER" --log=error
 cd ..
