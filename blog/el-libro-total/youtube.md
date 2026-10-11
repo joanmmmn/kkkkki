@@ -42,64 +42,74 @@ Alternativas:
 2. 6.698 AUDIOLIBROS GRATIS en español: ¿dónde está la trampa? | El Libro Total
 
 ## Descripción
-Las dos primeras líneas son las que YouTube enseña en los resultados de búsqueda. Llevan las palabras clave principales.
+Texto plano, sin emojis ni símbolos especiales, listo para pegar. También está en `deliverables/el-libro-total/youtube/descripcion.txt`.
+- Las dos primeras líneas son las que YouTube enseña en los resultados de búsqueda y llevan las palabras clave principales.
+- La descripción incluye las 19 etiquetas dentro de frases naturales (comprobado con un script).
 
 ```
-El Libro Total: 6.698 audiolibros gratis en español, con voz humana, sin anuncios y sin registro. Lo hemos probado a fondo: cómo funciona la web y la app, quién narra, qué tal suena, lo mejor, lo peor y si de verdad merece la pena.
+El Libro Total: 6.698 audiolibros gratis en español, con voz humana, sin anuncios y sin registro. Lo hemos probado a fondo para responder a todo: qué es El Libro Total Prisma, cómo funcionan la web y la app, quién narra, qué tal suena, lo mejor, lo peor y si de verdad merece la pena.
 
-📖 Reseña completa, con capturas y fuentes: https://sonorbooks.com/blog/el-libro-total
-🔎 ¿Dónde escuchar cualquier audiolibro y a qué precio? → https://sonorbooks.com
+Reseña completa, con capturas y fuentes: https://sonorbooks.com/blog/el-libro-total
+Dónde escuchar cualquier audiolibro y a qué precio: https://sonorbooks.com
 
-⏱️ Capítulos
-0:00 Audiolibros gratis… ¿dónde está la trampa?
+Capítulos
+0:00 Audiolibros gratis: ¿dónde está la trampa?
 0:23 Qué hemos probado
-0:36 ¿Qué es El Libro Total y quién lo paga?
+0:36 Qué es El Libro Total y quién lo paga
 0:55 Catálogo: cuántos audiolibros gratis hay
 1:22 Cómo escuchar audiolibros gratis, paso a paso
 1:49 Voces humanas y calidad del audio
 2:13 Diccionarios, lectura comparada y vocabulario
-2:30 App para Android e iPhone, cuenta y modo sin conexión
+2:30 El Libro Total: app, cuenta y modo sin conexión
 2:48 Lo mejor y lo peor
-3:09 ¿Para quién es? Precio frente a Audible
-3:25 Opinión final: nuestra nota
+3:09 Para quién es y precio frente a Audible
+3:25 El Libro Total: opiniones y nota final
 
-🎧 ¿QUÉ ES EL LIBRO TOTAL?
-El Libro Total (hoy «El Libro Total · Prisma») es una biblioteca digital gratuita nacida en 2005 en Bucaramanga (Colombia), de la mano de una fundación sin ánimo de lucro. Tiene más de 50.000 libros para leer online y 6.698 audiolibros gratis, casi todos en español: cuentos, novelas completas y clásicos de la literatura universal, española y latinoamericana. Lo que la hace distinta: lees y escuchas a la vez, con el texto resaltado mientras suena la voz.
+El Libro Total: audiolibros, libros y mucho más
+El Libro Total (hoy El Libro Total Prisma) es una biblioteca digital gratis creada en 2005 en Bucaramanga (Colombia) por una fundación sin ánimo de lucro. Su web, ellibrototal.com, reúne más de 50.000 libros para leer online y 6.698 libros para escuchar gratis, casi todos en español: cuentos, novelas completas y audiolibros clásicos de la literatura universal, española y latinoamericana. Lo que la hace distinta: lees y escuchas a la vez, con el texto resaltado mientras suena la voz.
 
-✅ CÓMO ESCUCHAR AUDIOLIBROS GRATIS EN EL LIBRO TOTAL
+Audiolibros con voz humana
+Cada título indica quién lo lee. En "Crimen y castigo", audiolibro completo de más de 26 horas, la voz es de Hernando Iván Cano. Eso sí, no puedes elegir narrador y el audio es MP3 a 64 kbps.
+
+Cómo escuchar audiolibros gratis en El Libro Total
 1. Entra en ellibrototal.com (en el PC, desde el navegador) o instala la app.
-2. Busca el libro, por ejemplo «Crimen y castigo».
-3. Pulsa «Ir al libro» y toca el altavoz: empieza la audiolectura.
+2. Busca el libro, por ejemplo "Crimen y castigo".
+3. Pulsa "Ir al libro" y toca el altavoz: empieza la audiolectura.
 No hace falta registrarse.
 
-📱 APP DE AUDIOLIBROS GRATIS
-• Android: «Libro Total Libros AudioLibros» (Google Play).
-• iPhone y iPad: «El Libro Total» (App Store).
-• En el móvil puedes escuchar de 0,8× a 2×.
+El Libro Total: app de audiolibros gratis para Android e iPhone
+- Android: "Libro Total Libros AudioLibros" en Google Play.
+- iPhone y iPad: "El Libro Total" en App Store.
+- En el móvil puedes escuchar de 0,8x a 2x.
 
-❓ PREGUNTAS FRECUENTES
-• ¿El Libro Total es gratis? Sí, al 100 %: sin anuncios, sin suscripción y sin tarjeta. No existe versión premium: descarga la app solo desde Google Play o App Store.
-• ¿Es legal? ¿Es seguro? Sí. Publica obras de dominio público y obras cedidas por sus autores, y está detrás una fundación con más de 20 años de historia.
-• ¿Las voces son humanas o de IA? Humanas: cada audiolibro indica quién lo lee.
-• ¿Se pueden descargar los audiolibros? El audio, no: necesita internet. En la app sí puedes descargar el texto (EPUB y PDF) para leer sin conexión.
-• ¿Funciona en PC? Sí, desde la web y sin instalar nada.
-• ¿Es una alternativa gratis a Audible? Para clásicos, sí. Para novedades y superventas, no.
-• ¿Qué es la Casa del Libro Total? Sus centros culturales en Colombia (Bucaramanga, San Gil, Barrancabermeja, Sincelejo, Arauca, Armenia, Zapatoca…).
+Preguntas frecuentes
+- ¿El Libro Total es gratis? Sí, al 100 %: sin anuncios, sin suscripción y sin tarjeta. No existe versión premium; descarga la app solo desde Google Play o App Store.
+- ¿Es legal? ¿Es seguro? Sí. Publica obras de dominio público y obras cedidas por sus autores, y detrás hay una fundación con más de 20 años de historia.
+- ¿Las voces son humanas o de IA? Humanas: cada audiolibro indica quién lo lee.
+- ¿Se pueden descargar los audiolibros? El audio, no: necesita internet. En la app sí puedes descargar el texto (EPUB y PDF) para leer sin conexión.
+- ¿Funciona en PC? Sí, desde la web y sin instalar nada.
+- ¿Es una de las alternativas a Audible gratis? Para clásicos, sí. Para novedades y superventas, no.
+- ¿Qué es la Casa del Libro Total? Sus centros culturales en Colombia: Bucaramanga, San Gil, Barrancabermeja, Sincelejo, Arauca, Armenia, Zapatoca...
 
-📌 DATOS DEL VÍDEO (10/10/2026)
-6.698 audiolibros · 98 % en español · 79 % cuentos · MP3 a 64 kbps · velocidad de 0,8× a 2× (móvil) · audio sin conexión: no · 5 M+ descargas y 4,8★ en Google Play · Nota SonorBooks: 8,2/10
+Learning Spanish? El Libro Total is one of the best places to find free Spanish audiobooks with text: you read and listen at the same time, with human narrators.
+
+Datos del vídeo (10/10/2026)
+6.698 audiolibros, 98 % en español, 79 % cuentos, MP3 a 64 kbps, velocidad de 0,8x a 2x (móvil), sin audio sin conexión, más de 5 millones de descargas y 4,8 estrellas en Google Play. Nota SonorBooks: 8,2 sobre 10.
 
 El Libro Total: https://www.ellibrototal.com
-SonorBooks no tiene relación comercial con El Libro Total. Las capturas y los fragmentos de audio se usan con fines de reseña y crítica. Música original compuesta para SonorBooks.
+Reseña independiente de SonorBooks: no tenemos relación comercial con El Libro Total. Las capturas y los fragmentos de audio se usan con fines de reseña y crítica. Música original compuesta para SonorBooks.
 
 #ElLibroTotal #AudiolibrosGratis #Audiolibros
 ```
 Los tres hashtags del final son los que YouTube muestra encima del título.
 
 ## Etiquetas
-458 de 500 caracteres. Pesan poco en el posicionamiento, pero ayudan con la marca y sus variantes de escritura.
+465 de 500 caracteres, separadas por comas. También están en `deliverables/el-libro-total/youtube/etiquetas.txt`.
+- Pesan poco en el posicionamiento, pero ayudan con la marca y sus variantes de escritura.
+- Todas aparecen también en la descripción.
+
 ```
-el libro total, el libro total audiolibros, libro total, ellibrototal, audiolibros gratis, audiolibros gratis en español, el libro total app, el libro total opiniones, el libro total prisma, app audiolibros gratis, audiolibros voz humana, libros para escuchar gratis, biblioteca digital gratis, alternativas a audible gratis, audiolibros clásicos, crimen y castigo audiolibro, free spanish audiobooks, spanish audiobooks with text, sonorbooks
+el libro total, el libro total audiolibros, libro total, ellibrototal, audiolibros gratis, audiolibros gratis en español, el libro total app, el libro total opiniones, el libro total prisma, app de audiolibros gratis, audiolibros con voz humana, libros para escuchar gratis, biblioteca digital gratis, alternativas a audible gratis, audiolibros clásicos, crimen y castigo audiolibro, free spanish audiobooks, spanish audiobooks with text, sonorbooks
 ```
 
 ## Subtítulos
