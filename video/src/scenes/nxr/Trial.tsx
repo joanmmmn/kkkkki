@@ -56,9 +56,13 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.ink, letterSpacing: -1 }}>días gratis</div>
           </div>
         </div>
-        <div style={{ position: 'absolute', bottom: 130, display: 'flex', alignItems: 'center', gap: 16, fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: color.ink2, opacity: sVez, transform: `translateY(${(1 - sVez) * 30}px)` }}>
+        <div style={{ position: 'absolute', bottom: 150, display: 'flex', alignItems: 'center', gap: 16, fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: color.ink2, opacity: sVez, transform: `translateY(${(1 - sVez) * 30}px)` }}>
           en vez de
           <span style={{ position: 'relative', color: color.muted }}>14<span style={{ position: 'absolute', left: -8, right: -8, top: '50%', height: 6, background: color.red, borderRadius: 3, transform: `rotate(-8deg) scaleX(${strike})`, transformOrigin: 'left' }} /></span>
+        </div>
+        {/* Letra pequeña de la oferta */}
+        <div style={{ position: 'absolute', bottom: 92, fontFamily: font.sans, fontWeight: 500, fontSize: 24, color: color.muted, opacity: sVez }}>
+          Hasta 15 h de lectura y escucha · solo cuentas nuevas
         </div>
       </AbsoluteFill>
       <Sfx name="riser" at={fTreinta - 4} volume={0.8} />

@@ -34,7 +34,7 @@ export const AppFeatureScene: React.FC<P & {
         <div style={{ position: 'absolute', top: 96, [phoneLeft ? 'left' : 'right']: 270 } as React.CSSProperties}>
           <AppPhone shots={shots} w={385} cam={cam ?? defaultCam} taps={taps} />
         </div>
-        <div style={{ position: 'absolute', top: 210, [phoneLeft ? 'left' : 'right']: phoneLeft ? 900 : 860, width: 820 } as React.CSSProperties}>
+        <div style={{ position: 'absolute', top: 210, [phoneLeft ? 'left' : 'right']: phoneLeft ? 960 : 780, width: 820 } as React.CSSProperties}>
           {kicker && (
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 5, textTransform: 'uppercase', color: color.muted, opacity: sT, marginBottom: 14 }}>{kicker}</div>
           )}
