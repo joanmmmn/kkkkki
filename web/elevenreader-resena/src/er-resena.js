@@ -374,21 +374,58 @@ $$('[data-steps]').forEach((ol) => {
   update();
 });
 
-/* ---------- Preguntas frecuentes con apertura suave ---------- */
-$$('.er-faq details').forEach((d) => {
-  const sum = $('summary', d), body = $('div', d);
-  sum.addEventListener('click', (e) => {
-    if (reduced || !body.animate) return;
-    e.preventDefault();
-    if (d.open) {
-      const h = body.offsetHeight;
-      body.animate([{ height: `${h}px`, opacity: 1 }, { height: '0px', opacity: 0 }], { duration: 220, easing: 'ease-in' }).onfinish = () => { d.open = false; };
-    } else {
-      d.open = true;
-      const h = body.offsetHeight;
-      body.animate([{ height: '0px', opacity: 0 }, { height: `${h}px`, opacity: 1 }], { duration: 280, easing: 'cubic-bezier(.2,.8,.2,1)' });
+/* ---------- Alternativas y guías: carrusel deslizable ---------- */
+$$('[data-more]').forEach((box) => {
+  const track = $('[data-more-track]', box), prev = $('[data-more-prev]', box), next = $('[data-more-next]', box), thumb = $('[data-more-thumb]', box);
+  if (!track) return;
+  const items = [...track.children];
+  const per = () => { const g = parseFloat(getComputedStyle(track).columnGap) || 0; return (items[0]?.getBoundingClientRect().width || track.clientWidth) + g; };
+  // Un «paso» son las tarjetas que caben enteras en pantalla (al menos una)
+  const page = () => { const p = per(), pad = parseFloat(getComputedStyle(track).paddingLeft) || 0; return Math.max(1, Math.floor((track.clientWidth - pad) / p)) * p; };
+  const update = () => {
+    const max = track.scrollWidth - track.clientWidth;
+    if (prev) prev.disabled = track.scrollLeft < 4;
+    if (next) next.disabled = track.scrollLeft > max - 4;
+    if (thumb) {
+      const w = Math.min(1, track.clientWidth / track.scrollWidth), p = max > 0 ? track.scrollLeft / max : 0;
+      thumb.style.width = `${(w * 100).toFixed(2)}%`;
+      thumb.style.transform = `translateX(${((p * (1 - w)) / w * 100).toFixed(2)}%)`;
     }
+  };
+  let ticking = false;
+  track.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
+  addEventListener('resize', update);
+  const go = (dir) => track.scrollBy({ left: dir * page(), behavior: reduced ? 'auto' : 'smooth' });
+  prev?.addEventListener('click', () => go(-1));
+  next?.addEventListener('click', () => go(1));
+  update();
+  // Arrastrar con el ratón (con el dedo ya se desliza de forma nativa)
+  let drag = null, moved = false, settle = 0;
+  track.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    drag = { x: e.clientX, left: track.scrollLeft, t: performance.now(), v: 0 }; moved = false;
   });
+  addEventListener('pointermove', (e) => {
+    if (!drag) return;
+    const dx = e.clientX - drag.x;
+    if (!moved && Math.abs(dx) > 6) { moved = true; clearTimeout(settle); track.classList.add('is-dragging', 'no-snap'); }
+    if (!moved) return;
+    const now = performance.now(), l = drag.left - dx;
+    drag.v = (track.scrollLeft - l) / Math.max(1, now - drag.t); drag.t = now;
+    track.scrollLeft = l;
+  });
+  addEventListener('pointerup', () => {
+    if (!drag) return;
+    const v = drag.v; drag = null;
+    if (!moved) return;
+    track.classList.remove('is-dragging');
+    // Se recoloca en la tarjeta más cercana, con un poco de inercia según la velocidad del gesto
+    const p = per(), target = Math.round((track.scrollLeft - v * 120) / p) * p;
+    track.scrollTo({ left: Math.max(0, Math.min(target, track.scrollWidth - track.clientWidth)), behavior: reduced ? 'auto' : 'smooth' });
+    settle = setTimeout(() => track.classList.remove('no-snap'), 500);
+    setTimeout(() => { moved = false; }, 0);
+  });
+  track.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
 });
 
 /* ---------- Progreso de lectura ---------- */
@@ -409,7 +446,7 @@ $$('.er-faq details').forEach((d) => {
 /* ---------- Barra fija con la oferta ---------- */
 (() => {
   const dock = $('[data-dock]'); if (!dock || !('IntersectionObserver' in window)) return;
-  const hero = $('.er-hero'), blockers = [$('#prueba-30-dias'), $('.er-offer'), $('.sb-footer'), $('.er-verdict')].filter(Boolean);
+  const hero = $('.er-hero'), blockers = [$('#prueba-30-dias'), $('.er-offer'), $('.sb-footer'), $('.er-verdict'), $('.er-more')].filter(Boolean);
   let heroOut = false; const visible = new Set();
   const cookie = $('.sb-cookie-notice');
   const upd = () => dock.classList.toggle('is-on', heroOut && visible.size === 0 && !(cookie && !cookie.hidden));

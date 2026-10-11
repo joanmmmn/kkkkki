@@ -81,8 +81,9 @@ def jsonld():
             {'@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://sonorbooks.com/es/blog/'},
             {'@type': 'ListItem', 'position': 3, 'name': 'Reseñas', 'item': 'https://sonorbooks.com/es/blog/resenas/'},
             {'@type': 'ListItem', 'position': 4, 'name': 'ElevenReader', 'item': url}]},
-        {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': strip(q), 'acceptedAnswer': {'@type': 'Answer', 'text': strip(a)}} for q, a in faq]},
     ]
+    if faq:  # solo si la página tiene preguntas frecuentes
+        graph.append({'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': strip(q), 'acceptedAnswer': {'@type': 'Answer', 'text': strip(a)}} for q, a in faq]})
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False) + '</script>'
 
 
@@ -126,7 +127,7 @@ def build_preview():
             .replace('{{DATA}}', data_json('.')).replace('{{A}}', '.').replace('{{YT_ID}}', '')
             .replace('{{SALIR}}', 'https://sonorbooks.com' + SALIR))
     # enlaces del sitio → absolutos; imágenes del sitio → copias locales
-    body = body.replace('src="/assets/brand/', 'src="./site/').replace('src="/assets/blog/editorial/', 'src="./site/')
+    body = body.replace('src="/assets/brand/', 'src="./site/').replace('/assets/blog/editorial/', './site/')  # también en srcset
     body = re.sub(r'href="/(?!/)', 'href="https://sonorbooks.com/', body)
     body = re.sub(r'<script type="module" src="[^"]*er-resena\.js[^"]*"></script>', '', body)
     css = read(os.path.join(SITE, 'chrome.css')) + read(os.path.join(SITE, 'header-layout.css')) + read(os.path.join(SITE, 'chrome_inline.css'))
@@ -143,7 +144,8 @@ def build_preview():
     out = os.path.join(HERE, 'preview')
     shutil.rmtree(out, ignore_errors=True)
     os.makedirs(os.path.join(out, 'media', 'audio')); os.makedirs(os.path.join(out, 'site'))
-    open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(head + body + f'<script type="module">{js}</script>\n')
+    body += f'<script type="module">{js}</script>\n'
+    open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(head + body)
     for f in media_files():
         shutil.copy(os.path.join(MEDIA, f), os.path.join(out, 'media', f))
     for f in CLIP_WORDS:
@@ -152,6 +154,23 @@ def build_preview():
         if f.endswith(('.png', '.webp')):
             shutil.copy(os.path.join(SITE, f), os.path.join(out, 'site', f))
     print('vista previa →', os.path.relpath(out, ROOT))
+    build_mobile(head, body, out)
+
+
+def build_mobile(head, body, preview_dir):
+    """Vista móvil para revisar (otro Artifact): src/movil.html con un teléfono que carga la página a su ancho real."""
+    out = os.path.join(HERE, 'preview-movil')
+    shutil.rmtree(out, ignore_errors=True)
+    shutil.copytree(preview_dir, out)
+    os.remove(os.path.join(out, 'index.html'))
+    # La página dentro del iframe se sirve tal cual: necesita su propio documento completo.
+    doc = ('<!doctype html><html lang="es"><head><meta charset="utf-8">'
+           '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+           '<style>:root{color-scheme:light}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>'
+           + head + '</head><body>' + body + '</body></html>')
+    open(os.path.join(out, 'pagina.html'), 'w', encoding='utf-8').write(doc)
+    shutil.copy(os.path.join(SRC, 'movil.html'), os.path.join(out, 'index.html'))
+    print('vista móvil →', os.path.relpath(out, ROOT))
 
 
 if __name__ == '__main__':

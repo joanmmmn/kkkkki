@@ -18,10 +18,12 @@ Es la reseña que acompaña al vídeo de YouTube: el vídeo y la descripción en
 - Precios mensual/anual, la factura que nos mostró la app (11,31 $/mes) y la oferta con **las condiciones de la web copiadas tal cual**.
 - Calendario de 3 a 30 días y los 5 pasos (el primero dice dónde está el botón: la última tarjeta de las plataformas en la
   página de inicio, o cualquier botón de la oferta de la reseña), con una tarjeta fija de la oferta al lado.
-- Quedarse o cancelar (web, iPhone, Android), nota por apartados, 12 preguntas frecuentes y, al final, «Cómo lo probamos»
-  en letra pequeña con las fuentes y el aviso de afiliado.
-- SEO (12/10/2026): título «ElevenReader: opiniones, precio y 30 días gratis (2026)», títulos de sección con las búsquedas
-  habituales (qué es, precio, opiniones, español, sin conexión, cancelar, gratis) y preguntas frecuentes en `FAQPage`.
+- Quedarse o cancelar (web, iPhone, Android), nota por apartados y, al final, «Cómo lo probamos» en letra pequeña con las
+  fuentes y el aviso de afiliado (sin preguntas frecuentes, por decisión de Joan).
+- «Alternativas y guías relacionadas»: carrusel deslizable con 9 artículos del blog (comparativas, guías y reseñas), con
+  flechas y arrastre en el ordenador, y deslizable con el dedo en el móvil. Usa las imágenes del blog (`/assets/blog/editorial/`).
+- SEO (12/10/2026): título «ElevenReader: opiniones, precio y 30 días gratis (2026)» y títulos de sección con las búsquedas
+  habituales (qué es, precio, opiniones, cancelar, gratis).
 - Datos estructurados: `Review` (8/10, con puntos positivos y negativos), `BreadcrumbList` y `FAQPage`.
 
 Sin dependencias externas, sin cookies ni almacenamiento en el navegador. Todo se ve sin JavaScript; con
@@ -34,10 +36,11 @@ Sin dependencias externas, sin cookies ni almacenamiento en el navegador. Todo s
 src/page.html        plantilla completa de la página (cabecera y pie del sitio se insertan al construir)
 src/er-resena.css    estilos propios (todo con prefijo .er / er-, no toca el resto del sitio)
 src/er-resena.js     interacciones (módulo ES, sin librerías)
+src/movil.html       visor para revisar la versión móvil (un teléfono con la página dentro); no va a producción
 media/               capturas (.webp), miniatura del vídeo y imagen para redes (og)
 media/audio/         3 fragmentos de la app en mp3 + tiempos de cada palabra (fuera de git)
 site/                cabecera, pie y estilos del sitio copiados de la página actual (solo para construir)
-build.py             genera dist/ (producción) y preview/ (vista previa privada)
+build.py             genera dist/ (producción), preview/ (vista previa privada) y preview-movil/ (visor del móvil)
 
 ```
 
@@ -57,7 +60,9 @@ dist/assets/resenas/elevenreader/media/…              imágenes y audio
    Si el blog se genera desde datos, crea una plantilla propia para este slug con el `<main>` de la página y conserva
    la cabecera, el pie y los scripts del sitio (`chrome.mjs`, `provider-routing.mjs`, `cookie-notice.mjs`).
 3. Las hojas y módulos del sitio están enlazados con los `?v=` de hoy; si han cambiado, usa los del helper del sitio.
-4. Mantén en el sitemap y en el índice del blog la misma URL; actualiza la fecha de modificación (11/10/2026) y la imagen de portada si quieres usar la nueva (`media/elevenreader-resena-og.jpg`, 1200×630).
+4. Mantén en el sitemap y en el índice del blog la misma URL; actualiza la fecha de modificación (12/10/2026) y la imagen de portada si quieres usar la nueva (`media/elevenreader-resena-og.jpg`, 1200×630).
+   En el índice del blog, la tarjeta de esta reseña aún dice «ElevenReader: qué es gratis, planes y audiolibros»: cambia el título
+   y la entradilla para que coincidan con la nueva página.
 5. Cuando el vídeo esté publicado: `python3 build.py --yt ID_DEL_VIDEO` (o pon el ID en `data-yt` del enlace `.er-video`).
    Si quieres, añade entonces un `VideoObject` al JSON-LD.
 
