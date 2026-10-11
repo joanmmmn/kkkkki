@@ -54,7 +54,6 @@ const Left: React.FC = () => (
         <LogoIcon size={44} />
         <span style={{ color: '#fff', fontWeight: 700, fontSize: 30 }}>SonorBooks</span>
       </div>
-      <span style={{ fontWeight: 700, fontSize: 26, letterSpacing: 5, color: color.ink }}>RESEÑA</span>
     </div>
     <div style={{ position: 'absolute', left: 54, top: 128 }}>
       <div style={{ fontWeight: 700, fontSize: 226, letterSpacing: -10, lineHeight: 0.92 }}>6.698</div>
@@ -73,14 +72,14 @@ const Design: React.FC<{ variant: 'a' | 'b' }> = ({ variant }) => (
     </div>
     {variant === 'a' ? (
       <>
-        <div style={{ position: 'absolute', left: 708, top: 150 }}><EltPlate w={480} rotate={-3} /></div>
+        <div style={{ position: 'absolute', left: 664, top: 132 }}><EltPlate w={580} rotate={-3} /></div>
         <div style={{ position: 'absolute', left: 676, top: 470 }}><AudioPill /></div>
         <div style={{ position: 'absolute', left: 1036, top: 398 }}><Sticker size={216} rotate={10} /></div>
       </>
     ) : (
       <>
         <div style={{ position: 'absolute', left: 1030, top: 30 }}><Sticker size={226} rotate={10} /></div>
-        <div style={{ position: 'absolute', left: 700, top: 318 }}><EltPlate w={500} rotate={-3} /></div>
+        <div style={{ position: 'absolute', left: 652, top: 286 }}><EltPlate w={612} rotate={-3} /></div>
       </>
     )}
     <Left />
