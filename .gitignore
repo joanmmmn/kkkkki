@@ -12,3 +12,5 @@ video/public/er/app/
 .remotion/
 video/public/er/audio/*.mp3
 tools/snap.js
+# Vídeos renderizados de la reseña de ElevenReader: el máster supera el límite de 100 MB de GitHub; se entregan aparte
+deliverables/elevenreader/*.mp4
