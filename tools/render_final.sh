@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Render final de la reseña en máxima calidad.
 #   1. Imagen: Remotion a 2560×1440 (escala 4/3), fotogramas PNG sin pérdida → intermedio H.264 CRF 4.
+#      (Con 4 hilos el extractor de las grabaciones 4K se bloquea a 1440p; con 3 va estable.)
 #   2. Audio: render solo de audio (WAV) → mezcla masterizada a -14 LUFS con tools/master.sh.
 #   3. Máster 1440p para YouTube (CRF 14, veryslow) y versión 1080p de ~95 MB (dos pasadas, veryslow).
 # Uso: tools/render_final.sh [carpeta_trabajo]   (desde la raíz del repo)
@@ -9,9 +10,8 @@ WD="${1:-/tmp/elt_final}"; mkdir -p "$WD"
 OUT=deliverables/el-libro-total
 BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell
 cd video
-npx remotion render src/index.ts ELTReview2 "$WD/inter_1440.mp4" --muted --scale=1.3333333333 \
-  --image-format=png --crf=4 --x264-preset=medium --concurrency=4 --browser-executable="$BROWSER" \
-  --offthreadvideo-cache-size-in-bytes=2000000000 --log=error
+npx remotion render src/index.ts ELTReview2 "$WD/inter_1440.mp4" --muted --scale=1.3333333333333333 \
+  --image-format=png --crf=4 --x264-preset=medium --concurrency=3 --timeout=120000 --browser-executable="$BROWSER" --log=error
 npx remotion render src/index.ts ELTReview2 "$WD/mix.wav" --codec=wav --props='{"audioOnly":true}' \
   --concurrency=4 --browser-executable="$BROWSER" --log=error
 cd ..

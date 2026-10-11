@@ -1,5 +1,11 @@
 # YouTube — El Libro Total (reseña)
 
+## Archivo que hay que subir
+**`deliverables/el-libro-total/SonorBooks_ElLibroTotal_Resena_MASTER_1440p.mp4`** (2560×1440, 50 fps).
+- Al subirlo en 1440p, YouTube lo procesa con un códec de más calidad (VP9/AV1) y le da más bitrate, también a quien lo ve en 1080p.
+- Está guardado con Git LFS. Descárgalo desde GitHub con el botón de descarga del archivo.
+- `SonorBooks_ElLibroTotal_Resena_FINAL_1080p.mp4` es la versión ligera, de unos 95 MB, para compartir o revisar.
+
 ## Título (elige uno)
 1. **El Libro Total: 6.698 audiolibros GRATIS… ¿dónde está la trampa?** ← recomendado
 2. La biblioteca GRATIS con miles de audiolibros que casi nadie conoce | El Libro Total
