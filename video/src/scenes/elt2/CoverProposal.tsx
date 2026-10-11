@@ -22,7 +22,7 @@ const ReaderCard: React.FC<{ w: number }> = ({ w }) => {
 };
 
 const EltPlate: React.FC<{ w: number; rotate: number }> = ({ w, rotate }) => (
-  <div style={{ width: w, padding: `${w * 0.075}px ${w * 0.085}px`, background: `linear-gradient(160deg, #16263d 0%, ${color.eltNavy} 70%)`, borderRadius: 28, border: '6px solid #fff', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,0,0,0.08)', transform: `rotate(${rotate}deg)` }}>
+  <div style={{ width: w, padding: `${w * 0.055}px ${w * 0.05}px`, background: `linear-gradient(160deg, #16263d 0%, ${color.eltNavy} 70%)`, borderRadius: 28, border: '6px solid #fff', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,0,0,0.08)', transform: `rotate(${rotate}deg)` }}>
     <Img src={staticFile('elt/img/elt_logo.svg')} style={{ width: '100%', display: 'block' }} />
   </div>
 );
@@ -55,10 +55,10 @@ const Left: React.FC = () => (
         <span style={{ color: '#fff', fontWeight: 700, fontSize: 30 }}>SonorBooks</span>
       </div>
     </div>
-    <div style={{ position: 'absolute', left: 54, top: 128 }}>
-      <div style={{ fontWeight: 700, fontSize: 226, letterSpacing: -10, lineHeight: 0.92 }}>6.698</div>
-      <div style={{ fontWeight: 700, fontSize: 80, letterSpacing: -2, lineHeight: 1, marginTop: 4, marginLeft: 6 }}>audiolibros</div>
-      <div style={{ display: 'inline-block', marginTop: 26, marginLeft: 2, background: color.ink, color: '#fff', borderRadius: 22, padding: '6px 30px 16px', fontWeight: 700, fontSize: 148, letterSpacing: -5, lineHeight: 1, transform: 'rotate(-2.5deg)', boxShadow: '0 22px 44px rgba(0,0,0,0.28)' }}>
+    <div style={{ position: 'absolute', left: 54, top: 140 }}>
+      <div style={{ fontWeight: 700, fontSize: 206, letterSpacing: -9, lineHeight: 0.92 }}>6.698</div>
+      <div style={{ fontWeight: 700, fontSize: 74, letterSpacing: -2, lineHeight: 1, marginTop: 4, marginLeft: 6 }}>audiolibros</div>
+      <div style={{ display: 'inline-block', marginTop: 26, marginLeft: 2, background: color.ink, color: '#fff', borderRadius: 22, padding: '6px 28px 14px', fontWeight: 700, fontSize: 136, letterSpacing: -5, lineHeight: 1, transform: 'rotate(-2.5deg)', boxShadow: '0 22px 44px rgba(0,0,0,0.28)' }}>
         GRATIS
       </div>
     </div>
@@ -72,14 +72,14 @@ const Design: React.FC<{ variant: 'a' | 'b' }> = ({ variant }) => (
     </div>
     {variant === 'a' ? (
       <>
-        <div style={{ position: 'absolute', left: 664, top: 132 }}><EltPlate w={580} rotate={-3} /></div>
+        <div style={{ position: 'absolute', left: 592, top: 120 }}><EltPlate w={666} rotate={-3} /></div>
         <div style={{ position: 'absolute', left: 676, top: 470 }}><AudioPill /></div>
         <div style={{ position: 'absolute', left: 1036, top: 398 }}><Sticker size={216} rotate={10} /></div>
       </>
     ) : (
       <>
         <div style={{ position: 'absolute', left: 1030, top: 30 }}><Sticker size={226} rotate={10} /></div>
-        <div style={{ position: 'absolute', left: 652, top: 286 }}><EltPlate w={612} rotate={-3} /></div>
+        <div style={{ position: 'absolute', left: 592, top: 274 }}><EltPlate w={666} rotate={-3} /></div>
       </>
     )}
     <Left />
