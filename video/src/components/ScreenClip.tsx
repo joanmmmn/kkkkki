@@ -3,18 +3,24 @@ import { AbsoluteFill, getInputProps, Img, interpolate, OffthreadVideo, spring, 
 
 // Con --props='{"audioOnly":true}' las grabaciones no se decodifican (render rápido solo de audio para revisar la mezcla).
 const AUDIO_ONLY = Boolean((getInputProps() as { audioOnly?: boolean }).audioOnly);
+// Con --props='{"proxy":true}' se usan copias 1080p de las grabaciones (video_proxy.mp4): previsualizaciones mucho más rápidas.
+const PROXY = Boolean((getInputProps() as { proxy?: boolean }).proxy);
 import { color, font } from '../brand/tokens';
 import { keyframes, Key, easeInOut, easeOut } from '../lib/anim';
 import { Cursor, CursorPoint, cursorAt } from './Cursor';
 import home from '../../public/elt/rec/01_home/meta.json';
 import search from '../../public/elt/rec/02_search/meta.json';
 import reader from '../../public/elt/rec/03_reader/meta.json';
+import erFicha from '../../public/er/rec/01_ficha/meta.json';
+import erOferta from '../../public/er/rec/02_oferta/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
   'elt/rec/01_home/video.mp4': home.duration,
   'elt/rec/02_search/video.mp4': search.duration,
   'elt/rec/03_reader/video.mp4': reader.duration,
+  'er/rec/01_ficha/video.mp4': erFicha.duration,
+  'er/rec/02_oferta/video.mp4': erOferta.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };
@@ -26,7 +32,12 @@ export type Mark = { from: number; to: number; x: number; y: number; w: number; 
 export const ScreenClip: React.FC<{
   src: string; width: number; startAt?: number; cursor?: CursorPoint[]; camera?: CamKey[]; viewport?: [number, number];
   playbackRate?: number; showCursor?: boolean; cursorOpacity?: number; marks?: Mark[]; image?: boolean;
-}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [] }) => {
+  // Capa encima de la grabación y debajo del cursor, en píxeles CSS del viewport grabado (se mueve con la cámara):
+  // tapar datos personales, teclear texto de ejemplo, etc. Recibe el tiempo t (s) de la grabación.
+  overlay?: (t: number) => React.ReactNode;
+  // Oscurecimiento alrededor del marco amarillo (0,5 por defecto).
+  dim?: number;
+}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay, dim = 0.5 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const [vw, vh] = viewport;
@@ -50,12 +61,17 @@ export const ScreenClip: React.FC<{
       <div style={{ position: 'absolute', left: 0, top: 0, width, height, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${zoom})` }}>
         {image || frozen
           ? <Img src={staticFile(frozen ? src.replace(/video\.mp4$/, 'last.jpg') : src)} style={{ width, height, display: 'block' }} />
-          : <OffthreadVideo src={staticFile(src)} trimBefore={Math.round(startAt * fps)} playbackRate={playbackRate} muted style={{ width, height, display: 'block' }} />}
+          : <OffthreadVideo src={staticFile(PROXY ? src.replace(/video\.mp4$/, 'video_proxy.mp4') : src)} trimBefore={Math.round(startAt * fps)} playbackRate={playbackRate} muted style={{ width, height, display: 'block' }} />}
+        {overlay && (
+          <div style={{ position: 'absolute', left: 0, top: 0, width: vw, height: vh, transformOrigin: '0 0', transform: `scale(${k})` }}>
+            {overlay(t)}
+          </div>
+        )}
         {showCursor && cursor.length > 0 && (
           <Cursor x={c.x * k} y={c.y * k} scale={k * 1.25} down={c.down} sinceClick={t - c.lastDown} opacity={cursorOpacity} />
         )}
       </div>
-      {marks.length > 0 && <MarkLayer marks={marks} frame={frame} width={width} height={height} map={(x, y) => [tx + x * k * zoom, ty + y * k * zoom]} scale={k * zoom} />}
+      {marks.length > 0 && <MarkLayer marks={marks} frame={frame} width={width} height={height} map={(x, y) => [tx + x * k * zoom, ty + y * k * zoom]} scale={k * zoom} dimTo={dim} />}
     </div>
   );
 };
@@ -67,7 +83,7 @@ const DRAW = 16;   // duración del trazo al dibujarse
 const OUT = 9;     // salida
 
 // Marco amarillo en coordenadas de pantalla: trazo constante que se dibuja, foco suave alrededor y etiqueta opcional.
-const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number }> = ({ marks, frame, width, height, map, scale }) => {
+const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimTo?: number }> = ({ marks, frame, width, height, map, scale, dimTo = 0.5 }) => {
   const id = React.useId().replace(/:/g, '');
   const list = marks.filter((m) => m.to - m.from > 12).sort((a, b) => a.from - b.from);
   const i = list.findIndex((m) => frame >= m.from && frame < m.to);
@@ -103,7 +119,7 @@ const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height:
             <rect x={x0} y={y0} width={w} height={h} rx={r} fill="#000" filter={`url(#b${id})`} />
           </mask>
         </defs>
-        <rect x={0} y={0} width={width} height={height} fill="rgb(6,10,18)" opacity={0.5 * dim * alpha} mask={`url(#m${id})`} />
+        <rect x={0} y={0} width={width} height={height} fill="rgb(6,10,18)" opacity={dimTo * dim * alpha} mask={`url(#m${id})`} />
         <rect x={x0} y={y0} width={w} height={h} rx={r} fill="none" stroke={color.yellow} strokeWidth={stroke} strokeLinecap="round"
           strokeDasharray={perim} strokeDashoffset={perim * (1 - draw)} opacity={alpha} filter={`url(#g${id})`} />
       </svg>

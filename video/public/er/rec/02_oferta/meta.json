@@ -1,0 +1,20 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 1282,
+ "duration": 9.24,
+ "offset": 0.024,
+ "marks": {
+  "headline": 0.678,
+  "to_cta": 2.29,
+  "click_cta": 3.406,
+  "registro": 6.52,
+  "to_email": 8.125,
+  "click_email": 9.147
+ },
+ "events": [],
+ "note": "Recortada en 9,24 s: al abrir el formulario de correo, ElevenReader muestra una verificación anti-robots al navegador automatizado; desde aquí sigue la grabación de Joan."
+}

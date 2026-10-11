@@ -1,0 +1,80 @@
+{
+ "id": "R03",
+ "hash": "5dad771dc474",
+ "text": "Abre tu audiolibro en SonorBooks. Si la recomendación es ElevenReader, pulsa «Empezar prueba gratuita».",
+ "duration": 7.6,
+ "words": [
+  {
+   "w": "Abre",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "tu",
+   "s": 0.32,
+   "e": 0.4
+  },
+  {
+   "w": "audiolibro",
+   "s": 0.52,
+   "e": 0.96
+  },
+  {
+   "w": "en",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 1.28,
+   "e": 2.4
+  },
+  {
+   "w": "Si",
+   "s": 2.44,
+   "e": 2.48
+  },
+  {
+   "w": "la",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "recomendación",
+   "s": 2.72,
+   "e": 3.36
+  },
+  {
+   "w": "es",
+   "s": 3.44,
+   "e": 3.68
+  },
+  {
+   "w": "ElevenReader,",
+   "s": 3.76,
+   "e": 4.84
+  },
+  {
+   "w": "pulsa",
+   "s": 4.88,
+   "e": 5.52
+  },
+  {
+   "w": "«Empezar",
+   "s": 5.56,
+   "e": 6.16
+  },
+  {
+   "w": "prueba",
+   "s": 6.24,
+   "e": 6.48
+  },
+  {
+   "w": "gratuita».",
+   "s": 6.56,
+   "e": 7.6
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 7.6
+}

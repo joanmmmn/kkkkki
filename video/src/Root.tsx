@@ -9,11 +9,14 @@ import { ELTShort, SHORT_DUR } from './scenes/elt/Short';
 import { ELTReview2 } from './scenes/elt2/Main';
 import { TOTAL2 } from './scenes/elt2/timeline';
 import { ELTShort2, SHORT_DUR as SHORT2_DUR } from './scenes/elt2/Short2';
+import { ElevenReaderTutorial } from './scenes/er/Main';
+import { ER_TOTAL } from './scenes/er/timeline';
 import { Cover } from './scenes/elt2/Cover';
 import { CoverProposal } from './scenes/elt2/CoverProposal';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="ERTutorial" component={ElevenReaderTutorial} durationInFrames={ER_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="ELTShort2" component={ELTShort2} durationInFrames={Math.round(SHORT2_DUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Composition id="ELTReview2" component={ELTReview2} durationInFrames={TOTAL2} fps={FPS} width={W} height={H} />
     <Composition id="ELTReview" component={ELTReview} durationInFrames={TOTAL} fps={FPS} width={W} height={H} />

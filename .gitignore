@@ -6,3 +6,4 @@ video/node_modules/
 *.log
 assets/el-libro-total/youtube/*.info.json
 __pycache__/
+video/public/**/video_proxy.mp4

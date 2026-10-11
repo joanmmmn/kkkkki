@@ -1,0 +1,40 @@
+{
+ "id": "R08A",
+ "hash": "8ddfc790f4e4",
+ "text": "¡Listo! Tu prueba ya está activa.",
+ "duration": 2.8,
+ "words": [
+  {
+   "w": "¡Listo!",
+   "s": 0.0,
+   "e": 0.8
+  },
+  {
+   "w": "Tu",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "prueba",
+   "s": 1.04,
+   "e": 1.36
+  },
+  {
+   "w": "ya",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "está",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "activa.",
+   "s": 2.12,
+   "e": 2.8
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 2.8
+}
