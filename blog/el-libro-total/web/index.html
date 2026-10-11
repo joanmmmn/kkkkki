@@ -18,48 +18,248 @@
 </head>
 <body>
 <!--
-  SonorBooks · Reseña visual de El Libro Total
+  SonorBooks · Reseña visual de El Libro Total (v2: copy, retención e interactivos)
   ------------------------------------------------------------
   Fragmento autocontenido para pegar en el CMS (dentro del <body> de la entrada).
   · Estilos aislados bajo .sbx: no tocan el resto de la web.
   · Las imágenes, clips y audio se cargan desde "media/". Si los subes a otra carpeta,
     sustituye "media/" por la ruta real (buscar y reemplazar).
   · Vídeo de YouTube: pon el ID en data-youtube-id (busca "PENDIENTE").
-  · Sin JavaScript se ve todo igual, solo sin animaciones.
+  · Barra de progreso fija: si la web tiene una cabecera fija, ajusta --sbx-top (abajo, en .sbx) a su altura.
+  · Sin JavaScript se ve todo el contenido, solo sin animaciones ni interactivos.
 -->
 <article class="sbx" lang="es" id="sbx-el-libro-total">
 <style>
-.sbx{--ink:#101010;--ink2:#3f3f3f;--muted:#767676;--line:#ececec;--bg:#fff;--bg2:#f7f6f2;--y:#ffcb06;--ys:#fff4c2;--g:#1f9d55;--gs:#e8f6ee;--r:#e5484d;--rs:#fdeced;--navy:#0e1a2b;--sans:"Ubuntu",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--serif:"Merriweather",Georgia,serif;
-  font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.sbx{--sbx-top:0px;--ink:#101010;--ink2:#3f3f3f;--muted:#6f6f6f;--line:#ececec;--bg:#fff;--bg2:#f7f6f2;--y:#ffcb06;--ys:#fff4c2;--g:#1f9d55;--gs:#e8f6ee;--r:#e5484d;--rs:#fdeced;--navy:#0e1a2b;--sans:"Ubuntu",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--serif:"Merriweather",Georgia,serif;
+  font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;overflow-x:clip}
 .sbx *,.sbx *::before,.sbx *::after{box-sizing:border-box}
 .sbx img,.sbx video{max-width:100%;height:auto;display:block}
-.sbx a{color:inherit}
-.sbx h2,.sbx h3,.sbx h4{line-height:1.15;margin:0;letter-spacing:-.01em}
-.sbx p{margin:0 0 1em}
+:where(.sbx) a{color:inherit}
+:where(.sbx) :is(h2,h3,h4){line-height:1.15;margin:0;letter-spacing:-.01em}
+:where(.sbx) p{margin:0 0 1em}
+:where(.sbx) button{font:inherit;color:inherit}
 .sbx-wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.sbx-narrow{max-width:760px;margin:0 auto}
-.sbx-sec{padding:72px 0;position:relative}
+.sbx-narrow{max-width:780px;margin:0 auto}
+.sbx-sec{padding:76px 0;position:relative;scroll-margin-top:calc(var(--sbx-top) + 56px)}
 .sbx-sec.alt{background:var(--bg2)}
 .sbx-kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-.sbx-kicker b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--y);font-size:14px;letter-spacing:0}
-.sbx-h2{font-size:clamp(30px,4.2vw,46px);font-weight:700;margin-bottom:14px}
+.sbx-kicker b{display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 8px;border-radius:999px;background:var(--ink);color:var(--y);font-size:13px;letter-spacing:.04em}
+.sbx-h2{font-size:clamp(30px,4.2vw,48px);font-weight:700;margin-bottom:14px;letter-spacing:-.02em}
 .sbx-lead{font-size:clamp(18px,2vw,21px);color:var(--ink2);max-width:720px}
+.sbx-lead b{color:var(--ink)}
 .sbx-mark{background:linear-gradient(transparent 58%,var(--y) 58%,var(--y) 92%,transparent 92%);background-size:0 100%;background-repeat:no-repeat;transition:background-size .9s cubic-bezier(.65,0,.35,1) .2s;padding:0 .08em}
 .sbx-in .sbx-mark,.sbx-mark.sbx-in,.sbx:not(.js) .sbx-mark{background-size:100% 100%}
+.sbx-next{display:flex;gap:12px;align-items:center;margin-top:40px;font-weight:700;font-size:17px;color:var(--ink2)}
+.sbx-next::before{content:"";width:34px;height:3px;border-radius:3px;background:var(--y);flex:none}
 .sbx-grid{display:grid;gap:18px}
 .sbx-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 18px 40px rgba(16,16,16,.06),0 2px 6px rgba(16,16,16,.04)}
 .sbx-pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--ys);font-weight:700;font-size:15px}
-.sbx-ico{width:1.25em;height:1.25em;flex:none;vertical-align:-.25em}
 .sbx-ok{color:var(--g)}.sbx-ko{color:var(--r)}
 .sbx-fig{margin:0}
 .sbx-fig figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.sbx-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 24px;font-weight:700;font-size:17px;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.sbx-btn.y{background:var(--y);color:var(--ink);box-shadow:0 10px 24px rgba(255,203,6,.45)}
+.sbx-btn.y:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(255,203,6,.55)}
+.sbx-btn.ghost{background:transparent;border:2px solid currentColor}
+/* Barra fija: capítulo, minutos restantes y progreso */
+.sbx-bar-top{position:sticky;top:var(--sbx-top);z-index:40;height:54px;margin-bottom:-54px;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.6) blur(12px);backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--line);transform:translateY(-110%);opacity:0;transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .25s;pointer-events:none}
+.sbx-bar-top.show{transform:none;opacity:1;pointer-events:auto}
+.sbx:not(.js) .sbx-bar-top{display:none}
+.sbx-bar-top .in{max-width:1120px;margin:0 auto;padding:0 20px;height:100%;display:flex;align-items:center;gap:14px;font-size:15px}
+.sbx-bar-top .brand{font-weight:700;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.sbx-bar-top .brand i{width:22px;height:22px;border-radius:6px;background:var(--y);display:grid;place-items:center;font-style:normal;font-size:11px}
+.sbx-bar-top .ch{flex:1;min-width:0;display:flex;align-items:center;gap:8px;border:0;background:none;cursor:pointer;padding:6px 10px;border-radius:10px;text-align:left}
+.sbx-bar-top .ch:hover{background:#f4f4f4}
+.sbx-bar-top .ch b{background:var(--ink);color:var(--y);border-radius:6px;padding:1px 7px;font-size:12px;flex:none}
+.sbx-bar-top .ch span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500}
+.sbx-bar-top .ch svg{width:14px;height:14px;flex:none;transition:transform .2s}
+.sbx-bar-top.open .ch svg{transform:rotate(180deg)}
+.sbx-bar-top .left{white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums}
+.sbx-bar-top .pg{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--y);transform-origin:left;transform:scaleX(var(--p,0))}
+.sbx-bar-top .toc{position:absolute;left:50%;top:100%;transform:translateX(-50%);width:min(560px,calc(100% - 24px));background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px rgba(16,16,16,.18);padding:10px;margin-top:8px;display:none}
+.sbx-bar-top.open .toc{display:block}
+.sbx-bar-top .toc a{display:flex;gap:12px;align-items:center;padding:9px 12px;border-radius:12px;text-decoration:none;font-weight:500}
+.sbx-bar-top .toc a:hover,.sbx-bar-top .toc a.cur{background:var(--ys)}
+.sbx-bar-top .toc a b{width:26px;color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+/* Aparición al hacer scroll (solo con JS activo) */
+.sbx.js .sbx-rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+.sbx.js .sbx-rv.sbx-in{opacity:1;transform:none}
+.sbx.js .sbx-rv[data-d="1"]{transition-delay:.08s}.sbx.js .sbx-rv[data-d="2"]{transition-delay:.16s}.sbx.js .sbx-rv[data-d="3"]{transition-delay:.24s}.sbx.js .sbx-rv[data-d="4"]{transition-delay:.32s}.sbx.js .sbx-rv[data-d="5"]{transition-delay:.4s}
+/* PORTADA */
+.sbx-hero{padding:54px 0 36px;background:radial-gradient(ellipse at 12% 0%,#fff6cc 0%,#fff 55%)}
+.sbx-crumb{font-size:14px;color:var(--muted);margin-bottom:18px}
+.sbx-crumb a{text-decoration:none}
+.sbx-h1{font-size:clamp(38px,6.2vw,72px);font-weight:700;letter-spacing:-.03em;line-height:1.02;margin:0 0 20px}
+.sbx-h1 .q{display:block;color:var(--ink2)}
+.sbx-sub{font-size:clamp(19px,2.2vw,23px);color:var(--ink2);max-width:760px;margin:0 0 6px}
+.sbx-sub b{color:var(--ink)}
+.sbx-nots{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 4px}
+.sbx-nots span{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700;font-size:15px}
+.sbx-nots span::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--y)}
+.sbx-strike{position:relative;white-space:nowrap;color:var(--muted)}
+.sbx-strike::after{content:"";position:absolute;left:-4%;right:-4%;top:54%;height:3px;border-radius:3px;background:var(--r);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.65,0,.35,1) .9s}
+.sbx-in .sbx-strike::after,.sbx:not(.js) .sbx-strike::after{transform:scaleX(1)}
+.sbx-zero{display:inline-block;background:var(--y);border-radius:10px;padding:0 10px;color:var(--ink);font-weight:700;white-space:nowrap}
+.sbx-meta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;color:var(--muted);font-size:15px;margin:22px 0 28px}
+.sbx-meta .score{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border-radius:999px;padding:6px 14px 6px 6px;font-weight:700}
+.sbx-meta .score b{background:var(--y);color:var(--ink);border-radius:999px;padding:2px 10px}
+.sbx-cover{border-radius:22px;overflow:hidden;box-shadow:0 40px 80px rgba(60,40,0,.22);transform:rotate(-.6deg);transition:transform .6s}
+.sbx-cover:hover{transform:rotate(0) scale(1.01)}
+.sbx-toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.sbx-toc a{text-decoration:none;padding:8px 14px;border-radius:999px;border:1.5px solid #e2e2e2;font-size:14px;font-weight:500;background:#fff;transition:background .2s,border-color .2s}
+.sbx-toc a:hover{background:var(--y);border-color:var(--y)}
+/* RESPUESTA RÁPIDA */
+.sbx-qa{display:grid;grid-template-columns:240px 1fr 1fr;gap:30px;align-items:start;padding:30px}
+.sbx-qa h3{font-size:19px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sbx-qa ul{margin:0;padding:0}
+.sbx-qa li{list-style:none;display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
+.sbx-qa li:last-child{border-bottom:0}
+.sbx-qa li svg{width:20px;height:20px;flex:none;margin-top:3px}
+.sbx-qa .who{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-top:1px dashed #dedede;padding-top:20px}
+.sbx-qa .who b{margin-right:4px}
+.sbx-qa .who span{padding:7px 14px;border-radius:999px;background:var(--gs);color:#146c3b;font-weight:700;font-size:15px}
+.sbx-qa .who span.no{background:var(--rs);color:#a1262a}
+.sbx-say{font-family:var(--serif);font-size:clamp(21px,2.6vw,28px);line-height:1.45;margin:0 0 26px;max-width:860px}
+.sbx-say b{font-family:var(--sans)}
+/* Anillo de nota */
+.sbx-ring{position:relative;width:100%;max-width:240px;aspect-ratio:1;margin:0 auto}
+.sbx-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.sbx-ring circle{fill:none;stroke-width:22}
+.sbx-ring .trk{stroke:#efefef}
+.sbx-ring .val{stroke:var(--y);stroke-linecap:round;stroke-dasharray:691;stroke-dashoffset:691;transition:stroke-dashoffset 1.8s cubic-bezier(.16,1,.3,1) .2s}
+.sbx-ring.sbx-in .val,.sbx-in .sbx-ring .val,.sbx:not(.js) .sbx-ring .val{stroke-dashoffset:calc(691 - 691 * var(--v))}
+.sbx-ring .num{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.sbx-ring .num strong{font-size:clamp(52px,6vw,70px);line-height:1;font-weight:700;letter-spacing:-.03em}
+.sbx-ring .num span{color:var(--muted);font-weight:500;font-size:15px}
+.sbx-ring.big{max-width:290px}
+.sbx-ring.big .num strong{font-size:clamp(60px,8vw,82px)}
+.sbx-spec{margin-top:18px}
+.sbx-spec summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:10px;font-weight:700;padding:10px 18px;border-radius:999px;border:1.5px solid #dcdcdc;background:#fff}
+.sbx-spec summary::-webkit-details-marker{display:none}
+.sbx-spec summary::after{content:"+";font-size:20px;line-height:1;transition:transform .3s}
+.sbx-spec[open] summary::after{transform:rotate(45deg)}
+.sbx-spec dl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 0}
+.sbx-spec dl>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.sbx-spec dt{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.sbx-spec dd{margin:0;font-weight:700;font-size:18px;line-height:1.3}
+.sbx-spec dd small{display:block;font-weight:400;font-size:14px;color:var(--ink2);margin-top:3px}
+/* Vídeo */
+.sbx-vid{display:grid;grid-template-columns:1.35fr 1fr;gap:34px;align-items:center}
+.sbx-yt{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/9;background:#000;cursor:pointer;box-shadow:0 30px 70px rgba(16,16,16,.18)}
+.sbx-yt img{width:100%;height:100%;object-fit:cover;transition:transform .5s,filter .5s}
+.sbx-yt:hover img{transform:scale(1.03);filter:brightness(.92)}
+.sbx-yt button{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88px;height:88px;border-radius:50%;border:0;background:var(--ink);color:var(--y);display:grid;place-items:center;cursor:pointer;animation:sbx-pulse 2.2s infinite}
+.sbx-yt button svg{width:36px;height:36px;margin-left:6px}
+@keyframes sbx-pulse{0%{box-shadow:0 0 0 0 rgba(255,203,6,.7)}70%{box-shadow:0 0 0 26px rgba(255,203,6,0)}100%{box-shadow:0 0 0 0 rgba(255,203,6,0)}}
+.sbx-yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sbx-yt .dur{position:absolute;right:14px;bottom:14px;background:rgba(0,0,0,.8);color:#fff;font-weight:700;font-size:14px;padding:3px 9px;border-radius:6px}
+.sbx-yt .soon{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:#fff;font-weight:700;font-size:15px;padding:9px 18px;border-radius:999px;opacity:0;transition:opacity .3s;white-space:nowrap}
+.sbx-yt.is-soon .soon{opacity:1}
+.sbx-vid ol{margin:16px 0 0;padding:0;counter-reset:c}
+.sbx-vid li{list-style:none;display:flex;gap:12px;padding:7px 0;color:var(--ink2)}
+.sbx-vid li b{font-variant-numeric:tabular-nums;color:var(--ink);min-width:44px}
+/* LA TRAMPA: mito o realidad */
+.sbx-myths{grid-template-columns:repeat(auto-fit,minmax(196px,1fr));margin-top:30px}
+.sbx-myth{position:relative;min-height:240px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 40px rgba(16,16,16,.06);overflow:hidden;display:grid}
+.sbx-myth>.f,.sbx-myth>.a{grid-area:1/1;position:relative}
+.sbx-myth>.f{z-index:1}.sbx-myth>.a{z-index:2}
+.sbx.js .sbx-myth.on .go{visibility:hidden}
+.sbx:not(.js) .sbx-myth>.a{grid-area:2/1}
+.sbx-myth .f{padding:22px 20px 18px;display:flex;flex-direction:column;flex:1}
+.sbx-myth .lab{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.sbx-myth .q{font-family:var(--serif);font-size:19px;line-height:1.4;font-style:italic;margin:0 0 16px}
+.sbx-myth .go{margin-top:auto;align-self:flex-start;border:0;border-radius:999px;padding:9px 16px;background:var(--ink);color:#fff;font-weight:700;font-size:14px;cursor:pointer;display:inline-flex;gap:8px;align-items:center;transition:transform .2s}
+.sbx-myth .go:hover{transform:translateY(-2px)}
+.sbx-myth .a{padding:22px 20px;display:flex;flex-direction:column;gap:10px;background:var(--gs)}
+.sbx-myth.t .a{background:#fff3cd}
+.sbx-myth .st{align-self:flex-start;font-weight:700;font-size:20px;letter-spacing:.08em;padding:4px 14px;border:3px solid currentColor;border-radius:10px;color:var(--g);transform:rotate(-6deg)}
+.sbx-myth.t .st{color:#b7791f}
+.sbx-myth .a p{margin:0;font-size:16px;color:var(--ink)}
+.sbx.js .sbx-myth .a{transform:translateY(102%);transition:transform .55s cubic-bezier(.16,1,.3,1);cursor:pointer}
+.sbx.js .sbx-myth.on .a{transform:none}
+.sbx.js .sbx-myth .st{opacity:0;transform:rotate(-6deg) scale(1.8);transition:opacity .2s .25s,transform .45s cubic-bezier(.34,1.56,.64,1) .25s}
+.sbx.js .sbx-myth.on .st{opacity:1;transform:rotate(-6deg) scale(1)}
+.sbx:not(.js) .sbx-myth .go,.sbx:not(.js) .sbx-revall{display:none}
+.sbx.js .sbx-score{opacity:0;transform:translateX(-8px);transition:opacity .4s,transform .4s}
+.sbx.js .sbx-score.on{opacity:1;transform:none}
+.sbx-mythbar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:20px;color:var(--muted);font-size:15px}
+.sbx-revall{border:1.5px solid #dcdcdc;background:#fff;border-radius:999px;padding:8px 16px;font-weight:700;cursor:pointer}
+.sbx-free{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;margin-top:40px;align-items:stretch}
+.sbx-free h3{font-size:23px;margin-bottom:10px}
+.sbx-time{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 0;padding:0}
+.sbx-time::before{content:"";position:absolute;left:0;right:0;top:13px;height:4px;background:linear-gradient(90deg,var(--y),#ffe680);border-radius:4px;transform-origin:left;transition:transform 1.4s cubic-bezier(.65,0,.35,1)}
+.sbx.js .sbx-time::before{transform:scaleX(0)}.sbx.js .sbx-in.sbx-time::before,.sbx.js .sbx-in .sbx-time::before{transform:scaleX(1)}
+.sbx-time li{list-style:none;position:relative;padding-top:42px}
+.sbx-time li::before{content:"";position:absolute;top:1px;left:0;width:28px;height:28px;border-radius:50%;background:var(--ink);border:6px solid var(--y)}
+.sbx-time b{display:block;font-size:24px;font-weight:700}
+.sbx-time span{color:var(--ink2);font-size:15px;line-height:1.4;display:block}
+.sbx-legal{background:var(--ink);color:#fff;border-radius:20px;padding:26px}
+.sbx-legal h3{color:#fff}
+.sbx-legal p{color:rgba(255,255,255,.8);margin:0 0 .7em}
+.sbx-legal b{color:var(--y)}
+.sbx-legal{display:flex;flex-direction:column}
+.sbx-pub{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:22px}
+.sbx-pub span{padding:7px 14px;border-radius:999px;background:var(--y);color:var(--ink);font-weight:700;font-size:15px}
+.sbx-pub span.no{background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);text-decoration:line-through;text-decoration-color:var(--r);text-decoration-thickness:2px}
+/* CATÁLOGO */
+.sbx-cat{grid-template-columns:1.1fr 1fr;align-items:center;gap:40px}
+.sbx-big{font-size:clamp(76px,12vw,136px);font-weight:700;letter-spacing:-.045em;line-height:.92;font-variant-numeric:tabular-nums}
+.sbx-donut{display:flex;gap:26px;align-items:center}
+.sbx-donut .ring{position:relative;width:150px;height:150px;flex:none}
+.sbx-donut svg{width:100%;height:100%;transform:rotate(-90deg)}
+.sbx-donut circle{fill:none;stroke-width:16}
+.sbx-donut .val{stroke:var(--y);stroke-linecap:round;stroke-dasharray:377;stroke-dashoffset:377;transition:stroke-dashoffset 1.6s cubic-bezier(.16,1,.3,1) .2s}
+.sbx-in .sbx-donut .val,.sbx:not(.js) .sbx-donut .val{stroke-dashoffset:calc(377 - 377 * var(--v))}
+.sbx-donut .ring strong{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:4px;font-size:34px;font-weight:700;white-space:nowrap}
+.sbx-two{grid-template-columns:1fr 1fr;gap:22px}
+.sbx-stack{display:flex;height:56px;border-radius:14px;overflow:hidden;background:#efefef;margin:10px 0 12px}
+.sbx-stack div{width:0;transition:width 1.3s cubic-bezier(.16,1,.3,1);display:flex;align-items:center;padding-left:14px;font-weight:700;white-space:nowrap;overflow:hidden}
+.sbx-in .sbx-stack div,.sbx:not(.js) .sbx-stack div{width:var(--w)}
+.sbx-legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--ink2)}
+.sbx-legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+.sbx-bars{display:grid;gap:16px}
+.sbx-bar .lbl{display:flex;justify-content:space-between;gap:12px;font-weight:500;margin-bottom:6px}
+.sbx-bar .lbl b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.sbx-bar .trk{height:14px;border-radius:99px;background:#efefef;overflow:hidden}
+.sbx-bar .fill{height:100%;width:0;border-radius:99px;background:var(--ink);transition:width 1.4s cubic-bezier(.16,1,.3,1)}
+.sbx-bar .fill.y{background:var(--y)}
+.sbx-bars.sbx-in .fill,.sbx-in .sbx-bar .fill,.sbx:not(.js) .sbx-bar .fill{width:var(--w)}
+.sbx-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.sbx-chips span{padding:8px 16px;border-radius:999px;border:1.5px solid #dcdcdc;font-weight:500;font-size:15px;background:#fff;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .5s;transition-delay:calc(var(--i) * 60ms)}
+.sbx-chips span.hot{background:var(--y);border-color:var(--y);font-weight:700}
+.sbx.js .sbx-chips:not(.sbx-in) span{opacity:0;transform:scale(.6)}
+/* Calculadora de escucha */
+.sbx-calc{background:var(--ink);color:#fff;border-radius:24px;padding:30px;margin-top:22px;display:grid;grid-template-columns:1fr 1.25fr;gap:30px;align-items:center;position:relative;overflow:hidden}
+.sbx-calc::after{content:"";position:absolute;left:-140px;bottom:-160px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(255,203,6,.28),rgba(255,203,6,0) 70%);pointer-events:none}
+.sbx-calc>*{position:relative;z-index:1;min-width:0}
+.sbx-calc h3{font-size:24px;color:#fff;margin-bottom:6px}
+.sbx-calc p{color:rgba(255,255,255,.72);margin:0 0 18px;font-size:16px}
+.sbx-calc label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;margin-bottom:10px}
+.sbx-calc output{font-size:30px;color:var(--y);font-variant-numeric:tabular-nums}
+.sbx-calc input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:10px;border-radius:99px;background:linear-gradient(90deg,var(--y) var(--fill,18%),rgba(255,255,255,.18) var(--fill,18%));outline:none;margin:4px 0 18px}
+.sbx-calc input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:6px solid var(--y);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.sbx-calc input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:6px solid var(--y);cursor:pointer}
+.sbx-seg{display:inline-flex;background:rgba(255,255,255,.1);border-radius:999px;padding:4px;gap:4px}
+.sbx-seg button{border:0;background:transparent;color:#fff;border-radius:999px;padding:8px 14px;font-weight:700;font-size:15px;cursor:pointer}
+.sbx-seg button[aria-pressed=true]{background:var(--y);color:var(--ink)}
+.sbx-seg small{font-weight:400;opacity:.75}
+.sbx-res{display:grid;gap:12px}
+.sbx-res>div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px 18px;display:grid;grid-template-columns:1fr auto;gap:4px 14px;align-items:center}
+.sbx-res span{color:rgba(255,255,255,.75);font-size:15px}
+.sbx-res strong{font-size:30px;line-height:1;color:#fff;font-variant-numeric:tabular-nums;grid-row:span 2;text-align:right}
+.sbx-res strong small{font-size:15px;color:rgba(255,255,255,.7);font-weight:500;margin-left:4px}
+.sbx-res em{font-style:normal;font-weight:700;color:#fff}
+.sbx-res .tk{grid-column:1/-1;height:6px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;margin-top:6px}
+.sbx-res .tk i{display:block;height:100%;width:var(--w,50%);background:var(--y);border-radius:99px;transition:width .5s cubic-bezier(.16,1,.3,1)}
+.sbx-calc .note{font-size:13px;color:rgba(255,255,255,.55);margin:12px 0 0}
+.sbx:not(.js) .sbx-calc input,.sbx:not(.js) .sbx-calc .sbx-seg{display:none}
+/* Capturas y clips */
 .sbx-shot{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px rgba(16,16,16,.12);background:#0e1a2b;position:relative}
 .sbx-shot .bar{height:28px;background:#f2f2f2;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid #e6e6e6}
 .sbx-shot .bar i{width:10px;height:10px;border-radius:50%;background:#ff5f57}.sbx-shot .bar i:nth-child(2){background:#febc2e}.sbx-shot .bar i:nth-child(3){background:#28c840}
 .sbx-shot .bar span{margin-left:auto;margin-right:auto;font-size:12px;color:#8a8a8a;background:#fff;border-radius:6px;padding:2px 40px}
 .sbx-media{position:relative;aspect-ratio:16/9;width:100%}
 .sbx-media>img,.sbx-media>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-/* Marcos amarillos sobre capturas y clips (coordenadas en % de la página grabada) */
 .sbx-mk{position:absolute;border:3px solid var(--y);border-radius:10px;box-shadow:0 0 0 9999px rgba(6,10,18,.38),0 0 18px rgba(255,203,6,.7);opacity:0;transition:opacity .25s,left .45s cubic-bezier(.65,0,.35,1),top .45s cubic-bezier(.65,0,.35,1),width .45s cubic-bezier(.65,0,.35,1),height .45s cubic-bezier(.65,0,.35,1);pointer-events:none}
 .sbx-mk.on{opacity:1}
 .sbx-mk em{position:absolute;left:-3px;bottom:calc(100% + 8px);white-space:nowrap;background:var(--y);color:var(--ink);font-style:normal;font-weight:700;font-size:clamp(11px,1.4vw,15px);padding:4px 12px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.3)}
@@ -70,101 +270,17 @@
 .sbx-tag{position:absolute;left:14px;bottom:14px;background:var(--ink);color:#fff;font-weight:700;font-size:clamp(12px,1.5vw,15px);padding:7px 14px;border-radius:999px;display:flex;align-items:center;gap:8px}
 .sbx-tag i{width:8px;height:8px;border-radius:50%;background:var(--r);animation:sbx-blink 1.2s infinite}
 @keyframes sbx-blink{50%{opacity:.25}}
-/* Aparición al hacer scroll (solo con JS activo) */
-.sbx.js .sbx-rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-.sbx.js .sbx-rv.sbx-in{opacity:1;transform:none}
-.sbx.js .sbx-rv[data-d="1"]{transition-delay:.08s}.sbx.js .sbx-rv[data-d="2"]{transition-delay:.16s}.sbx.js .sbx-rv[data-d="3"]{transition-delay:.24s}.sbx.js .sbx-rv[data-d="4"]{transition-delay:.32s}.sbx.js .sbx-rv[data-d="5"]{transition-delay:.4s}
-/* HERO */
-.sbx-hero{padding:56px 0 40px;background:radial-gradient(ellipse at 15% 0%,#fff8d6 0%,#fff 55%)}
-.sbx-crumb{font-size:14px;color:var(--muted);margin-bottom:18px}
-.sbx-crumb a{text-decoration:none}
-.sbx-h1{font-size:clamp(36px,6vw,68px);font-weight:700;letter-spacing:-.025em;line-height:1.02;margin:0 0 18px}
-.sbx-meta{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;color:var(--muted);font-size:15px;margin:18px 0 28px}
-.sbx-meta .score{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border-radius:999px;padding:6px 14px 6px 6px;font-weight:700}
-.sbx-meta .score b{background:var(--y);color:var(--ink);border-radius:999px;padding:2px 10px}
-.sbx-cover{border-radius:22px;overflow:hidden;box-shadow:0 40px 80px rgba(60,40,0,.22);transform:rotate(-.6deg);transition:transform .6s}
-.sbx-cover:hover{transform:rotate(0) scale(1.01)}
-/* Resumen en 30 segundos */
-.sbx-tldr{grid-template-columns:repeat(3,1fr)}
-.sbx-stat{display:flex;gap:16px;align-items:flex-start}
-.sbx-stat .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--ys);flex:none}
-.sbx-stat .ic.ko{background:var(--rs);color:var(--r)}.sbx-stat .ic.ok{background:var(--gs);color:var(--g)}
-.sbx-stat .ic svg{width:28px;height:28px}
-.sbx-stat strong{display:block;font-size:30px;line-height:1.1;font-weight:700;font-variant-numeric:tabular-nums}
-.sbx-stat div>span{color:var(--ink2);font-size:16px}
-/* Vídeo */
-.sbx-yt{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/9;background:#000;cursor:pointer;box-shadow:0 30px 70px rgba(16,16,16,.18)}
-.sbx-yt img{width:100%;height:100%;object-fit:cover;transition:transform .5s,filter .5s}
-.sbx-yt:hover img{transform:scale(1.03);filter:brightness(.92)}
-.sbx-yt button{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:96px;height:96px;border-radius:50%;border:0;background:var(--ink);color:var(--y);display:grid;place-items:center;box-shadow:0 0 0 12px rgba(255,203,6,.5);cursor:pointer;animation:sbx-pulse 2.2s infinite}
-.sbx-yt button svg{width:40px;height:40px;margin-left:6px}
-@keyframes sbx-pulse{0%{box-shadow:0 0 0 0 rgba(255,203,6,.7)}70%{box-shadow:0 0 0 26px rgba(255,203,6,0)}100%{box-shadow:0 0 0 0 rgba(255,203,6,0)}}
-.sbx-yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.sbx-yt .soon{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:#fff;font-weight:700;font-size:15px;padding:9px 18px;border-radius:999px;opacity:0;transition:opacity .3s;white-space:nowrap}
-.sbx-yt.is-soon .soon{opacity:1}
-/* Nota */
-.sbx-verdict{display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:center}
-.sbx-ring{position:relative;width:280px;height:280px;margin:0 auto}
-.sbx-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
-.sbx-ring circle{fill:none;stroke-width:22}
-.sbx-ring .trk{stroke:#efefef}
-.sbx-ring .val{stroke:var(--y);stroke-linecap:round;stroke-dasharray:691;stroke-dashoffset:691;transition:stroke-dashoffset 1.8s cubic-bezier(.16,1,.3,1) .2s}
-.sbx-ring.sbx-in .val,.sbx-in .sbx-ring .val,.sbx:not(.js) .sbx-ring .val{stroke-dashoffset:calc(691 - 691 * var(--v))}
-.sbx-ring .num{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
-.sbx-ring .num strong{font-size:76px;line-height:1;font-weight:700;letter-spacing:-.03em}
-.sbx-ring .num span{color:var(--muted);font-weight:500}
-.sbx-bars{display:grid;gap:16px}
-.sbx-bar .lbl{display:flex;justify-content:space-between;font-weight:500;margin-bottom:6px}
-.sbx-bar .lbl b{font-variant-numeric:tabular-nums}
-.sbx-bar .trk{height:14px;border-radius:99px;background:#efefef;overflow:hidden}
-.sbx-bar .fill{height:100%;width:0;border-radius:99px;background:var(--ink);transition:width 1.4s cubic-bezier(.16,1,.3,1)}
-.sbx-bar .fill.y{background:var(--y)}
-.sbx-bars.sbx-in .fill,.sbx-in .sbx-bar .fill,.sbx:not(.js) .sbx-bar .fill{width:var(--w)}
-.sbx-quote{font-family:var(--serif);font-size:clamp(20px,2.4vw,26px);line-height:1.5;border-left:6px solid var(--y);padding:6px 0 6px 24px;margin:28px 0 0}
-/* Ficha */
-.sbx-spec{grid-template-columns:repeat(4,1fr)}
-.sbx-spec .sbx-card{padding:20px}
-.sbx-spec dt{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.sbx-spec dd{margin:0;font-weight:700;font-size:19px;line-height:1.3}
-.sbx-spec dd small{display:block;font-weight:400;font-size:14px;color:var(--ink2);margin-top:4px}
-/* Línea de tiempo */
-.sbx-time{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
-.sbx-time::before{content:"";position:absolute;left:0;right:0;top:27px;height:4px;background:linear-gradient(90deg,var(--y),#ffe680);border-radius:4px;transform-origin:left;transition:transform 1.4s cubic-bezier(.65,0,.35,1)}
-.sbx.js .sbx-time::before{transform:scaleX(0)}.sbx.js .sbx-in.sbx-time::before{transform:scaleX(1)}
-.sbx-time li{list-style:none;position:relative;padding-top:66px}
-.sbx-time li::before{content:"";position:absolute;top:15px;left:0;width:28px;height:28px;border-radius:50%;background:var(--ink);border:6px solid var(--y)}
-.sbx-time b{display:block;font-size:28px;font-weight:700}
-.sbx-time span{color:var(--ink2);font-size:16px}
-.sbx-why{grid-template-columns:1fr 1fr;margin-top:30px}
-.sbx-why h3{font-size:22px;margin-bottom:8px;display:flex;gap:10px;align-items:center}
-/* Catálogo */
-.sbx-cat{grid-template-columns:1.1fr 1fr;align-items:center;gap:40px}
-.sbx-big{font-size:clamp(72px,11vw,128px);font-weight:700;letter-spacing:-.04em;line-height:.95;font-variant-numeric:tabular-nums}
-.sbx-donut{display:flex;gap:26px;align-items:center}
-.sbx-donut .ring{position:relative;width:150px;height:150px;flex:none}
-.sbx-donut svg{width:100%;height:100%;transform:rotate(-90deg)}
-.sbx-donut circle{fill:none;stroke-width:16}
-.sbx-donut .val{stroke:var(--y);stroke-linecap:round;stroke-dasharray:377;stroke-dashoffset:377;transition:stroke-dashoffset 1.6s cubic-bezier(.16,1,.3,1) .2s}
-.sbx-in .sbx-donut .val,.sbx:not(.js) .sbx-donut .val{stroke-dashoffset:calc(377 - 377 * var(--v))}
-.sbx-donut .ring strong{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:4px;font-size:34px;font-weight:700;white-space:nowrap}
-.sbx-stack{display:flex;height:56px;border-radius:14px;overflow:hidden;background:#efefef;margin:10px 0 12px}
-.sbx-stack div{width:0;transition:width 1.3s cubic-bezier(.16,1,.3,1);display:flex;align-items:center;padding-left:14px;font-weight:700;white-space:nowrap;overflow:hidden}
-.sbx-in .sbx-stack div,.sbx:not(.js) .sbx-stack div{width:var(--w)}
-.sbx-legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--ink2)}
-.sbx-legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
-.sbx-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.sbx-chips span{padding:8px 16px;border-radius:999px;border:1.5px solid #dcdcdc;font-weight:500;font-size:15px;background:#fff;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .5s;transition-delay:calc(var(--i) * 60ms)}
-.sbx-chips span.hot{background:var(--y);border-color:var(--y);font-weight:700}
-.sbx.js .sbx-chips:not(.sbx-in) span{opacity:0;transform:scale(.6)}
 /* Pasos */
-.sbx-steps{counter-reset:st;display:grid;gap:56px;margin-top:40px}
-.sbx-step{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;align-items:center}
-.sbx-step:nth-child(even){grid-template-columns:1.25fr 1fr}
+.sbx-steps{display:grid;gap:60px;margin-top:40px}
+.sbx-step{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:center}
+.sbx-step:nth-child(even){grid-template-columns:1.3fr 1fr}
 .sbx-step:nth-child(even) .txt{order:2}
 .sbx-step .num{display:inline-grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--y);font-weight:700;font-size:26px;margin-bottom:14px;box-shadow:0 10px 24px rgba(255,203,6,.45)}
 .sbx-step h3{font-size:clamp(24px,2.8vw,32px);margin-bottom:10px}
+.sbx-step p{color:var(--ink2)}
 .sbx-step ul{padding-left:0;margin:12px 0 0}
 .sbx-step li{list-style:none;display:flex;gap:10px;margin:8px 0}
+.sbx-time-chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-left:8px;vertical-align:middle}
 /* Reproductor de la muestra */
 .sbx-player{display:flex;align-items:center;gap:18px;background:var(--ink);color:#fff;border-radius:999px;padding:12px 26px 12px 12px;margin-top:22px;max-width:520px}
 .sbx-player button{width:58px;height:58px;border-radius:50%;border:0;background:var(--y);color:var(--ink);display:grid;place-items:center;cursor:pointer;flex:none;transition:transform .2s}
@@ -177,24 +293,26 @@
 @keyframes sbx-eq{to{transform:scaleY(.45)}}
 .sbx-player small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
 .sbx-player .t{font-variant-numeric:tabular-nums;font-size:14px;color:rgba(255,255,255,.75);min-width:40px;text-align:right}
+.sbx-reg{margin-top:50px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 /* Voces */
-.sbx-voices{grid-template-columns:1.2fr 1fr;gap:34px;align-items:start}
+.sbx-voices{grid-template-columns:1.2fr 1fr;gap:26px;align-items:start}
 .sbx-nar .row{display:grid;grid-template-columns:170px 1fr 36px;gap:12px;align-items:center;margin:10px 0;font-size:16px}
 .sbx-nar .row.hl{font-weight:700}
 .sbx-nar .row .trk{height:12px;border-radius:99px;background:#efefef;overflow:hidden}
 .sbx-nar .row .fill{height:100%;width:0;background:var(--ink);border-radius:99px;transition:width 1.2s cubic-bezier(.16,1,.3,1);transition-delay:calc(var(--i) * 90ms)}
 .sbx-nar .row.hl .fill{background:var(--y)}
 .sbx-nar.sbx-in .fill,.sbx-in .sbx-nar .fill,.sbx:not(.js) .sbx-nar .fill{width:var(--w)}
-.sbx-qual{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.sbx-qual{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
 .sbx-qual span{padding:8px 16px;border-radius:999px;background:#fff;border:1.5px solid #dcdcdc;font-weight:700}
 .sbx-qual span.y{background:var(--y);border-color:var(--y)}
-.sbx-lufs{display:flex;gap:26px;align-items:flex-start;margin-top:10px}
-.sbx-lufs div{flex:1;text-align:center;font-size:14px;color:var(--ink2)}
-.sbx-lufs .col{height:130px;border-radius:12px;background:#efefef;display:flex;align-items:flex-end;overflow:hidden;margin-bottom:8px}
+.sbx-lufs{display:flex;gap:22px;align-items:flex-start;margin-top:10px}
+.sbx-lufs div{flex:1;text-align:center;font-size:14px;color:var(--ink2);line-height:1.35}
+.sbx-lufs .col{height:120px;border-radius:12px;background:#efefef;display:flex;align-items:flex-end;overflow:hidden;margin-bottom:8px}
 .sbx-lufs .col i{display:block;width:100%;height:0;background:linear-gradient(0deg,var(--y),#ffe27a);transition:height 1.3s cubic-bezier(.16,1,.3,1)}
+.sbx-lufs .col.lo i{background:linear-gradient(0deg,#f08c8f,#f7c1c3)}
 .sbx-in .sbx-lufs .col i,.sbx:not(.js) .sbx-lufs .col i{height:var(--h)}
-.sbx-lufs b{display:block;color:var(--ink);font-size:16px}
-/* Tablas visuales */
+.sbx-lufs b{display:block;color:var(--ink);font-size:15px}
+/* Tablas */
 .sbx-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid var(--line);background:#fff;box-shadow:0 18px 40px rgba(16,16,16,.05)}
 .sbx-table{width:100%;border-collapse:collapse;min-width:560px;font-size:16px}
 .sbx-table th,.sbx-table td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
@@ -202,18 +320,21 @@
 .sbx-table thead th.me{background:var(--y);color:var(--ink)}
 .sbx-table td.me{background:#fffbea;font-weight:700}
 .sbx-table tr:last-child td{border-bottom:0}
-.sbx-table .yes,.sbx-table .no{display:inline-flex;align-items:center;gap:6px;font-weight:700}
+.sbx-table .yes,.sbx-table .no{display:inline-flex;align-items:center;gap:6px;font-weight:700;white-space:nowrap}
 .sbx-table .yes{color:var(--g)}.sbx-table .no{color:var(--r)}
 /* Herramientas */
 .sbx-tools{grid-template-columns:repeat(3,1fr)}
 .sbx-tools .sbx-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.sbx-tools .sbx-card .pic{aspect-ratio:16/10;overflow:hidden;background:#f2f2f2}
-.sbx-tools .sbx-card .pic img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.sbx-tools .pic{aspect-ratio:16/10;overflow:hidden;background:#f2f2f2}
+.sbx-tools .pic img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .sbx-tools .sbx-card:hover .pic img{transform:scale(1.06)}
-.sbx-tools .sbx-card .body{padding:20px 22px 24px}
+.sbx-tools .body{padding:20px 22px 24px}
 .sbx-tools h3{font-size:21px;margin-bottom:6px}
-.sbx-fact{display:flex;align-items:center;gap:22px;margin-top:22px;background:var(--ink);color:#fff;border-radius:22px;padding:24px 30px}
-.sbx-fact strong{font-size:64px;line-height:1;color:var(--y);font-weight:700;font-variant-numeric:tabular-nums}
+.sbx-tools .body p{margin:0;color:var(--ink2)}
+.sbx-tools .ideal{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.sbx-fact{display:flex;align-items:center;gap:24px;margin-top:22px;background:var(--ink);color:#fff;border-radius:22px;padding:24px 30px}
+.sbx-fact strong{font-size:68px;line-height:1;color:var(--y);font-weight:700;font-variant-numeric:tabular-nums}
+.sbx-fact span{font-size:20px}
 /* App */
 .sbx-app{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}
 .sbx-phones{display:flex;gap:18px}
@@ -222,23 +343,7 @@
 .sbx-phone:nth-child(2){transform:translateY(34px)}
 .sbx-checks{display:grid;gap:12px;margin-top:6px}
 .sbx-checks div{display:flex;gap:12px;align-items:flex-start;font-size:17px}
-/* Pros y contras */
-.sbx-pc{grid-template-columns:1fr 1fr}
-.sbx-pc .sbx-card{border-top:6px solid var(--g)}
-.sbx-pc .sbx-card.ko{border-top-color:var(--r)}
-.sbx-pc h3{font-size:26px;margin-bottom:12px;display:flex;gap:10px;align-items:center}
-.sbx-pc ul{margin:0;padding:0}
-.sbx-pc li{list-style:none;display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
-.sbx-pc li:last-child{border-bottom:0}
-/* Para quién */
-.sbx-who{grid-template-columns:repeat(4,1fr)}
-.sbx-who .sbx-card{text-align:center;padding:28px 18px;transition:transform .3s,box-shadow .3s}
-.sbx-who .sbx-card:hover{transform:translateY(-6px);box-shadow:0 26px 50px rgba(16,16,16,.1)}
-.sbx-who .em{font-size:44px;display:block;margin-bottom:8px}
-.sbx-who h3{font-size:19px}
-.sbx-not{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.sbx-not span{display:inline-flex;gap:8px;align-items:center;padding:9px 16px;border-radius:999px;background:var(--rs);color:#a1262a;font-weight:700;font-size:15px}
-/* Precios */
+/* Precio */
 .sbx-price .row{display:grid;grid-template-columns:200px 1fr 92px;gap:16px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
 .sbx-price .row:last-child{border-bottom:0}
 .sbx-price .row .who{font-weight:700}
@@ -250,12 +355,50 @@
 .sbx-price .row.me{background:var(--ys);border-radius:14px;padding:12px 14px;margin:0 -14px;border-bottom:0}
 .sbx-price .row.me .eur{font-size:26px}
 .sbx-price .zero{display:inline-block;background:var(--y);border-radius:8px;padding:0 10px}
+.sbx-save{display:flex;align-items:center;gap:16px;margin-top:18px;padding:16px 20px;border-radius:16px;background:var(--gs);color:#146c3b;font-weight:700}
+.sbx-save strong{font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+/* Test: ¿es para ti? */
+.sbx-quiz{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:stretch;margin-top:28px}
+.sbx-qs{display:grid;gap:14px;align-content:start}
+.sbx-qq{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:center;transition:border-color .3s,box-shadow .3s}
+.sbx-qq.done{border-color:var(--y);box-shadow:0 0 0 3px var(--ys)}
+.sbx-qq .n{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--y);display:grid;place-items:center;font-weight:700;grid-row:span 2}
+.sbx-qq p{margin:0;font-weight:700;font-size:17px;line-height:1.35}
+.sbx-qq .opts{display:flex;gap:8px}
+.sbx-qq .opts button{border:1.5px solid #dcdcdc;background:#fff;border-radius:999px;padding:7px 18px;font-weight:700;font-size:15px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.sbx-qq .opts button:hover{transform:translateY(-1px)}
+.sbx-qq .opts button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.sbx-out{background:var(--ink);color:#fff;border-radius:24px;padding:30px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;min-height:340px}
+.sbx-out::after{content:"";position:absolute;right:-120px;top:-120px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,203,6,.32),rgba(255,203,6,0) 70%);pointer-events:none}
+.sbx-out>*{position:relative;z-index:1}
+.sbx-out .em{font-size:52px;line-height:1;margin-bottom:12px}
+.sbx-out h3{font-size:clamp(24px,2.8vw,30px);color:#fff;margin-bottom:10px}
+.sbx-out p{color:rgba(255,255,255,.78);margin:0 0 18px}
+.sbx-out .cta{display:flex;flex-wrap:wrap;gap:10px}
+.sbx-out .cta a.ghost{color:#fff}
+.sbx-out .meter{display:flex;gap:6px;margin-bottom:18px}
+.sbx-out .meter i{flex:1;height:6px;border-radius:99px;background:rgba(255,255,255,.18);transition:background .3s}
+.sbx-out .meter i.on{background:var(--y)}
+.sbx-out.pop{animation:sbx-pop .5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes sbx-pop{0%{transform:scale(.97)}100%{transform:none}}
+.sbx-out ul{margin:0 0 18px;padding:0}
+.sbx-out li{list-style:none;padding:6px 0;color:rgba(255,255,255,.85)}
+.sbx:not(.js) .sbx-qq .opts{display:none}
+/* Nota final */
+.sbx-verdict{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center}
+.sbx-quote{font-family:var(--serif);font-size:clamp(20px,2.4vw,26px);line-height:1.5;border-left:6px solid var(--y);padding:6px 0 6px 24px;margin:34px 0 0}
+.sbx-pc{grid-template-columns:1fr 1fr;margin-top:34px}
+.sbx-pc .sbx-card{border-top:6px solid var(--g)}
+.sbx-pc .sbx-card.ko{border-top-color:var(--r)}
+.sbx-pc h3{font-size:24px;margin-bottom:10px;display:flex;gap:10px;align-items:center}
+.sbx-pc ul{margin:0;padding:0}
+.sbx-pc li{list-style:none;display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.sbx-pc li:last-child{border-bottom:0}
 /* CTA SonorBooks */
 .sbx-cta{background:var(--ink);color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;position:relative;overflow:hidden}
 .sbx-cta::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(255,203,6,.35),rgba(255,203,6,0) 70%)}
 .sbx-cta>*{min-width:0;position:relative;z-index:1}
 .sbx-cta h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:10px}
-.sbx-two{grid-template-columns:1fr 1fr;gap:22px}
 .sbx-cta p{color:rgba(255,255,255,.75);margin:0}
 .sbx-search{display:flex;background:#fff;border-radius:999px;padding:6px;gap:6px;position:relative;z-index:1}
 .sbx-search input{flex:1;border:0;outline:0;font:inherit;font-size:17px;padding:10px 18px;border-radius:999px;min-width:0;color:var(--ink)}
@@ -270,40 +413,42 @@
 .sbx-src{font-size:15px;color:var(--ink2)}
 .sbx-src li{margin:6px 0}
 .sbx-src a{color:var(--ink);text-underline-offset:3px}
-/* Índice flotante */
-.sbx-toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
-.sbx-toc a{text-decoration:none;padding:8px 14px;border-radius:999px;border:1.5px solid #e2e2e2;font-size:14px;font-weight:500;background:#fff;transition:background .2s,border-color .2s}
-.sbx-toc a:hover{background:var(--y);border-color:var(--y)}
 @media (max-width:900px){
-  .sbx-tldr,.sbx-spec{grid-template-columns:repeat(2,1fr)}
-  .sbx-tools,.sbx-who{grid-template-columns:repeat(2,1fr)}
-  .sbx-verdict,.sbx-cat,.sbx-voices,.sbx-app,.sbx-cta{grid-template-columns:1fr}
+  .sbx-qa{grid-template-columns:1fr 1fr}
+  .sbx-qa .sbx-ring{grid-column:1/-1;max-width:200px}
+  .sbx-spec dl{grid-template-columns:repeat(2,1fr)}
+  .sbx-tools{grid-template-columns:repeat(2,1fr)}
+  .sbx-vid,.sbx-free,.sbx-verdict,.sbx-cat,.sbx-voices,.sbx-app,.sbx-cta,.sbx-calc,.sbx-quiz{grid-template-columns:1fr}
   .sbx-step,.sbx-step:nth-child(even){grid-template-columns:1fr;gap:20px}
   .sbx-step:nth-child(even) .txt{order:0}
-  .sbx-time{grid-template-columns:repeat(2,1fr);row-gap:8px}
-  .sbx-time::before{display:none}
   .sbx-phones{justify-content:center}
 }
 @media (max-width:600px){
   .sbx{font-size:17px}
-  .sbx-sec{padding:52px 0}
-  .sbx-tldr,.sbx-spec,.sbx-why,.sbx-pc,.sbx-tools,.sbx-two{grid-template-columns:1fr}
+  .sbx-sec{padding:54px 0}
+  .sbx-qa{grid-template-columns:1fr;padding:22px}
+  .sbx-spec dl,.sbx-two,.sbx-pc,.sbx-tools{grid-template-columns:1fr}
+  .sbx-time{grid-template-columns:1fr 1fr;row-gap:18px}
+  .sbx-time::before{display:none}
   .sbx-search{flex-direction:column;border-radius:20px;padding:8px}
   .sbx-search input{padding:12px 14px}
   .sbx-search button{width:100%;padding:14px}
   .sbx-donut{gap:18px}
   .sbx-donut .ring{width:120px;height:120px}
   .sbx-donut .ring strong{font-size:28px}
-  .sbx-who{grid-template-columns:1fr 1fr}
-  .sbx-stat strong{font-size:26px}
-  .sbx-nar .row{grid-template-columns:120px 1fr 30px;font-size:14px}
-  .sbx-price .row{grid-template-columns:110px 1fr 70px;gap:10px}
+  .sbx-nar .row{grid-template-columns:118px 1fr 30px;font-size:14px}
+  .sbx-price .row{grid-template-columns:104px 1fr 70px;gap:10px}
   .sbx-price .row .eur{font-size:18px}
   .sbx-phone{width:150px}
-  .sbx-cta{padding:28px}
-  .sbx-search button{padding:12px 16px}
+  .sbx-cta,.sbx-calc,.sbx-out{padding:24px}
   .sbx-shot .bar span{padding:2px 14px}
   .sbx-fact{flex-direction:column;align-items:flex-start;gap:8px}
+  .sbx-bar-top .brand{display:none}
+  .sbx-bar-top .in{padding:0 10px;gap:6px}
+  .sbx-myth{min-height:0}
+  .sbx-qq{grid-template-columns:1fr}
+  .sbx-qq .n{grid-row:auto}
+  .sbx-lufs{gap:12px}
 }
 @media (prefers-reduced-motion:reduce){
   .sbx *,.sbx *::before,.sbx *::after{transition:none!important;animation:none!important}
@@ -312,126 +457,158 @@
 }
 </style>
 
+<!-- ============ BARRA FIJA (capítulo, minutos restantes y progreso) ============ -->
+<div class="sbx-bar-top" aria-hidden="true">
+  <div class="in">
+    <span class="brand"><i>▶</i>El Libro Total, a fondo</span>
+    <button class="ch" type="button" tabindex="-1"><b>01</b><span>Respuesta rápida</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></button>
+    <span class="left">⏱ <span>9</span> min</span>
+  </div>
+  <div class="pg"></div>
+  <nav class="toc"></nav>
+</div>
+
 <!-- ============ PORTADA ============ -->
 <header class="sbx-hero">
   <div class="sbx-wrap">
     <div class="sbx-crumb"><a href="https://sonorbooks.com/es/">SonorBooks</a> › Blog › Reseñas de plataformas</div>
-    <h1 class="sbx-h1">El Libro Total: <span class="sbx-mark sbx-rv">6.698 audiolibros gratis</span>… ¿dónde está la trampa?</h1>
-    <p class="sbx-lead">Lo hemos probado a fondo en la web y en el móvil: cómo funciona, quién narra, qué tal suena, lo mejor, lo peor y si de verdad merece la pena.</p>
+    <h1 class="sbx-h1">El Libro Total: <span class="sbx-mark sbx-rv">6.698 audiolibros gratis</span>. <span class="q">¿Dónde está la trampa?</span></h1>
+    <p class="sbx-sub sbx-rv">«Crimen y castigo» cuesta <span class="sbx-strike">18,99 €</span> en Audible. Aquí, <span class="sbx-zero">0 €</span>, narrado por una voz humana y con el texto resaltándose mientras escuchas. <b>Lo hemos probado a fondo para encontrar la pega.</b></p>
+    <div class="sbx-nots sbx-rv" data-d="1"><span>Sin anuncios</span><span>Sin tarjeta</span><span>Sin registro</span></div>
     <div class="sbx-meta">
-      <span>Equipo SonorBooks</span><span>·</span><span>Actualizado el 10 de octubre de 2026</span><span>·</span><span>8 min de lectura</span>
+      <span>Equipo SonorBooks</span><span>·</span><span>Probado el 10 de octubre de 2026</span><span>·</span><span>9 min de lectura</span>
       <span class="score">Nota SonorBooks <b>8,2/10</b></span>
     </div>
     <figure class="sbx-fig sbx-cover sbx-rv"><img src="media/portada.webp" width="1920" height="1080" alt="El Libro Total: 6.698 audiolibros gratis. Reseña de SonorBooks" fetchpriority="high"></figure>
     <nav class="sbx-toc" aria-label="Índice">
-      <a href="#sbx-resumen">Resumen</a><a href="#sbx-nota">Nota</a><a href="#sbx-que-es">Qué es</a><a href="#sbx-catalogo">Catálogo</a><a href="#sbx-como">Cómo se usa</a><a href="#sbx-voces">Voces y audio</a><a href="#sbx-herramientas">Herramientas</a><a href="#sbx-app">App</a><a href="#sbx-pros">Pros y contras</a><a href="#sbx-precio">Precio</a><a href="#sbx-faq">Preguntas</a>
+      <a href="#sbx-resumen">Respuesta rápida</a><a href="#sbx-trampa">¿Hay trampa?</a><a href="#sbx-catalogo">El catálogo</a><a href="#sbx-como">Cómo se usa</a><a href="#sbx-voces">Cómo suena</a><a href="#sbx-herramientas">Herramientas</a><a href="#sbx-precio">Precio</a><a href="#sbx-test">¿Es para ti?</a><a href="#sbx-nota">Nota final</a>
     </nav>
   </div>
 </header>
 
-<!-- ============ RESUMEN ============ -->
-<section class="sbx-sec" id="sbx-resumen">
+<!-- ============ 1 · RESPUESTA RÁPIDA ============ -->
+<section class="sbx-sec" id="sbx-resumen" data-n="01" data-ch="Respuesta rápida">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>⚡</b> En 30 segundos</div>
-    <h2 class="sbx-h2 sbx-rv">Lo esencial, de un vistazo</h2>
-    <div class="sbx-grid sbx-tldr" style="margin-top:26px">
-      <div class="sbx-card sbx-stat sbx-rv" data-d="1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 6.5A6.5 6.5 0 1 0 17 17.5M4 10.5h9M4 13.5h9"/></svg></div><div><strong><span data-count="0">0</span> €</strong><span>Gratis de verdad: sin anuncios, sin suscripción y sin registro.</span></div></div>
-      <div class="sbx-card sbx-stat sbx-rv" data-d="2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><rect x="3" y="15" width="5" height="6" rx="2"/><rect x="16" y="15" width="5" height="6" rx="2"/></svg></div><div><strong data-count="6698">6.698</strong><span>audiolibros, casi todos en español. La mayoría, cuentos.</span></div></div>
-      <div class="sbx-card sbx-stat sbx-rv" data-d="3"><div class="ic ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div><div><strong>Voces humanas</strong><span>Narradores reales, con su nombre en cada audiolibro.</span></div></div>
-      <div class="sbx-card sbx-stat sbx-rv" data-d="1"><div class="ic ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></div><div><strong>Lees y escuchas</strong><span>El texto se resalta mientras suena y las páginas pasan solas.</span></div></div>
-      <div class="sbx-card sbx-stat sbx-rv" data-d="2"><div class="ic ko"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16"/><path d="M3 3l18 18"/></svg></div><div><strong>Sin descargas</strong><span>El audio necesita internet. Sin conexión, solo se lee.</span></div></div>
-      <div class="sbx-card sbx-stat sbx-rv" data-d="3"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.3L12 17.1l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg></div><div><strong>8,2 / 10</strong><span>La mejor biblioteca gratuita de clásicos en audio que hemos probado.</span></div></div>
+    <div class="sbx-kicker sbx-rv"><b>01</b> Respuesta rápida</div>
+    <p class="sbx-say sbx-rv">Vamos al grano: <b>sí, es gratis de verdad</b>. No hay letra pequeña. Hay <span class="sbx-mark">tres límites</span>, y conviene conocerlos antes de empezar.</p>
+    <div class="sbx-card sbx-qa sbx-rv" data-d="1">
+      <div class="sbx-ring" style="--v:.82">
+        <svg viewBox="0 0 260 260"><circle class="trk" cx="130" cy="130" r="110"/><circle class="val" cx="130" cy="130" r="110"/></svg>
+        <div class="num"><strong data-count="8.2" data-dec="1">8,2</strong><span>Nota SonorBooks</span></div>
+      </div>
+      <div>
+        <h3><span class="sbx-ok">●</span> Te va a encantar</h3>
+        <ul>
+          <li><svg class="sbx-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>0 € para siempre</b>: sin anuncios, sin suscripción, sin cuenta.</span></li>
+          <li><svg class="sbx-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Voces humanas</b> y el texto que se resalta mientras suena.</span></li>
+          <li><svg class="sbx-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Herramientas únicas</b>: diccionarios históricos y lectura en 3 idiomas.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3><span class="sbx-ko">●</span> Lo que echarás de menos</h3>
+        <ul>
+          <li><svg class="sbx-ko" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span><b>Novedades</b>: solo hay clásicos y obras cedidas.</span></li>
+          <li><svg class="sbx-ko" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span><b>Descargas</b>: el audio solo funciona con internet.</span></li>
+          <li><svg class="sbx-ko" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span><b>Un reproductor completo</b>: sin temporizador ni saltos.</span></li>
+        </ul>
+      </div>
+      <div class="who"><b>Ideal para:</b><span>Estudiantes</span><span>Amantes de los clásicos</span><span>Quien aprende idiomas</span><span>Docentes y familias</span><span class="no">No, si buscas el último thriller</span></div>
     </div>
+    <details class="sbx-spec sbx-rv">
+      <summary>Ver la ficha técnica en 8 datos</summary>
+      <dl>
+        <div><dt>Precio</dt><dd>0 €<small>Sin anuncios ni suscripción</small></dd></div>
+        <div><dt>Registro</dt><dd>Opcional<small>Para escuchar no hace falta</small></dd></div>
+        <div><dt>Audiolibros</dt><dd>6.698<small>Contador de la web, 10-oct-2026</small></dd></div>
+        <div><dt>Voces</dt><dd>Humanas<small>«Leído por…» en cada título</small></dd></div>
+        <div><dt>Audio</dt><dd>MP3 · 64 kbps<small>Mono, en streaming</small></dd></div>
+        <div><dt>Velocidad</dt><dd>0,8× a 2×<small>Solo en el móvil</small></dd></div>
+        <div><dt>Sin conexión</dt><dd>Solo texto<small>EPUB y PDF; el audio, no</small></dd></div>
+        <div><dt>Plataformas</dt><dd>Web, Android, iOS<small>4,8★ en Google Play</small></dd></div>
+      </dl>
+    </details>
   </div>
 </section>
 
 <!-- ============ VÍDEO ============ -->
-<section class="sbx-sec alt" id="sbx-video">
-  <div class="sbx-wrap sbx-narrow">
-    <div class="sbx-kicker sbx-rv"><b>▶</b> La reseña en vídeo · 3:42</div>
-    <h2 class="sbx-h2 sbx-rv">¿Prefieres verlo? Te lo contamos en 3:42</h2>
-    <!-- Pon aquí el ID del vídeo de YouTube (por ejemplo, data-youtube-id="dQw4w9WgXcQ") -->
-    <div class="sbx-yt sbx-rv" data-youtube-id="PENDIENTE" role="button" tabindex="0" aria-label="Reproducir la reseña en vídeo">
-      <img src="media/portada.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async">
-      <button type="button" aria-hidden="true" tabindex="-1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></button>
-      <span class="soon">El vídeo estará disponible muy pronto</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ NOTA ============ -->
-<section class="sbx-sec" id="sbx-nota">
+<section class="sbx-sec alt" id="sbx-video" style="padding:60px 0">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>★</b> Nuestro veredicto</div>
-    <div class="sbx-verdict">
-      <div class="sbx-ring sbx-rv" style="--v:.82">
-        <svg viewBox="0 0 260 260"><circle class="trk" cx="130" cy="130" r="110"/><circle class="val" cx="130" cy="130" r="110"/></svg>
-        <div class="num"><strong data-count="8.2" data-dec="1">8,2</strong><span>sobre 10</span></div>
+    <div class="sbx-vid">
+      <!-- Pon aquí el ID del vídeo de YouTube (por ejemplo, data-youtube-id="dQw4w9WgXcQ") -->
+      <div class="sbx-yt sbx-rv" data-youtube-id="PENDIENTE" role="button" tabindex="0" aria-label="Reproducir la reseña en vídeo">
+        <img src="media/portada.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async">
+        <button type="button" aria-hidden="true" tabindex="-1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <span class="dur">3:42</span>
+        <span class="soon">El vídeo estará disponible muy pronto</span>
       </div>
-      <div>
-        <h2 class="sbx-h2 sbx-rv">¿Dónde está la trampa? <span class="sbx-mark">No la hay.</span></h2>
-        <div class="sbx-bars sbx-rv" data-d="1" style="margin-top:20px">
-          <div class="sbx-bar"><div class="lbl"><span>Precio</span><b>10</b></div><div class="trk"><div class="fill y" style="--w:100%"></div></div></div>
-          <div class="sbx-bar"><div class="lbl"><span>Funciones (diccionarios, lectura comparada…)</span><b>9</b></div><div class="trk"><div class="fill y" style="--w:90%"></div></div></div>
-          <div class="sbx-bar"><div class="lbl"><span>Catálogo de clásicos</span><b>8</b></div><div class="trk"><div class="fill" style="--w:80%"></div></div></div>
-          <div class="sbx-bar"><div class="lbl"><span>Calidad de audio</span><b>7</b></div><div class="trk"><div class="fill" style="--w:70%"></div></div></div>
-          <div class="sbx-bar"><div class="lbl"><span>Experiencia de uso (web y app)</span><b>7</b></div><div class="trk"><div class="fill" style="--w:70%"></div></div></div>
-        </div>
+      <div class="sbx-rv" data-d="1">
+        <div class="sbx-kicker"><b>▶</b> ¿Prefieres verlo?</div>
+        <h2 class="sbx-h2" style="font-size:clamp(26px,3vw,36px)">Toda la reseña en 3 minutos y 42 segundos</h2>
+        <ol>
+          <li><b>0:00</b>18,99 € frente a 0 €: ¿dónde está la trampa?</li>
+          <li><b>0:36</b>Qué es y quién lo paga</li>
+          <li><b>0:55</b>El catálogo, en datos</li>
+          <li><b>1:22</b>Cómo se escucha, paso a paso</li>
+          <li><b>1:49</b>Las voces y la calidad del audio</li>
+          <li><b>2:13</b>Lo que no tiene nadie más</li>
+          <li><b>2:48</b>Lo mejor y lo peor</li>
+          <li><b>3:25</b>Veredicto: nuestra nota</li>
+        </ol>
       </div>
     </div>
-    <p class="sbx-quote sbx-rv">El Libro Total no quiere competir con Audible: quiere que los clásicos estén al alcance de cualquiera. Si buscas novedades, no es tu sitio. Si quieres escuchar a Dostoievski, a Galdós o a Quiroga gratis, y leerlos a la vez, es difícil encontrar algo mejor.</p>
   </div>
 </section>
 
-<!-- ============ FICHA ============ -->
-<section class="sbx-sec alt" id="sbx-ficha">
+<!-- ============ 2 · ¿DÓNDE ESTÁ LA TRAMPA? ============ -->
+<section class="sbx-sec" id="sbx-trampa" data-n="02" data-ch="¿Dónde está la trampa?">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>i</b> Ficha técnica</div>
-    <h2 class="sbx-h2 sbx-rv">Todo lo que necesitas saber, en 8 datos</h2>
-    <dl class="sbx-grid sbx-spec" style="margin-top:26px">
-      <div class="sbx-card sbx-rv" data-d="1"><dt>Precio</dt><dd>0 €<small>Sin anuncios ni suscripción</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="2"><dt>Registro</dt><dd>Opcional<small>Para escuchar no hace falta</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="3"><dt>Audiolibros</dt><dd>6.698<small>Contador de la web, 10-oct-2026</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="4"><dt>Voces</dt><dd>Humanas<small>«Leído por…» en cada título</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="1"><dt>Audio</dt><dd>MP3 · 64 kbps<small>Mono, en streaming</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="2"><dt>Velocidad</dt><dd>0,8× a 2×<small>Solo en el móvil</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="3"><dt>Sin conexión</dt><dd>Solo texto<small>EPUB y PDF; el audio, no</small></dd></div>
-      <div class="sbx-card sbx-rv" data-d="4"><dt>Plataformas</dt><dd>Web, Android, iOS<small>4,8★ en Google Play</small></dd></div>
-    </dl>
-  </div>
-</section>
-
-<!-- ============ QUÉ ES ============ -->
-<section class="sbx-sec" id="sbx-que-es">
-  <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>1</b> Qué es</div>
-    <h2 class="sbx-h2 sbx-rv">Una biblioteca digital gratuita… <span class="sbx-mark">desde 2005</span></h2>
-    <p class="sbx-lead sbx-rv">El Libro Total nació en Bucaramanga (Colombia). Su nombre es un homenaje a «La biblioteca total», el ensayo de Borges que imaginaba una biblioteca con todos los libros posibles.</p>
-    <ol class="sbx-time sbx-rv" style="padding:0">
-      <li><b>2005</b><span>Nace la Fundación El Libro Total, sin ánimo de lucro.</span></li>
-      <li><b>2006</b><span>Arranca la biblioteca digital en internet.</span></li>
-      <li><b>5 M+</b><span>Descargas de su app en Android.</span></li>
-      <li><b>4,8 ★</b><span>Valoración en Google Play, con unas 52.000 reseñas.</span></li>
-    </ol>
-    <div class="sbx-grid sbx-why">
-      <div class="sbx-card sbx-rv" data-d="1"><h3><span class="sbx-pill">💛</span> ¿Cómo puede ser gratis?</h3><p>La fundación la financia una empresa colombiana de software, <b>Sistemas y Computadores</b>, como proyecto social.</p></div>
-      <div class="sbx-card sbx-rv" data-d="2"><h3><span class="sbx-pill">📚</span> ¿Y es legal?</h3><p>Sí. Publica <b>obras de dominio público</b> y obras <b>cedidas por sus autores</b>. Por eso no verás superventas: es su modelo, no un fallo.</p></div>
+    <div class="sbx-kicker sbx-rv"><b>02</b> ¿Dónde está la trampa?</div>
+    <h2 class="sbx-h2 sbx-rv">Cuando algo es gratis, <span class="sbx-mark">desconfiamos</span>. Nosotros también.</h2>
+    <p class="sbx-lead sbx-rv">Apuntamos todas las sospechas que nos vinieron a la cabeza y las comprobamos una a una. <b>Toca cada tarjeta</b> para ver el resultado.</p>
+    <div class="sbx-grid sbx-myths">
+      <div class="sbx-myth sbx-rv" data-d="1"><div class="f"><span class="lab">Sospecha 1</span><p class="q">«A los 7 días te pedirán la tarjeta».</p><button class="go" type="button">Descúbrelo →</button></div>
+        <div class="a"><span class="st">FALSO</span><p><b>No hay suscripción ni pagos.</b> Ni siquiera hace falta crear una cuenta para escuchar.</p></div></div>
+      <div class="sbx-myth sbx-rv" data-d="2"><div class="f"><span class="lab">Sospecha 2</span><p class="q">«Estará lleno de anuncios».</p><button class="go" type="button">Descúbrelo →</button></div>
+        <div class="a"><span class="st">FALSO</span><p><b>Cero anuncios.</b> Ni banners ni interrupciones: entras, eliges y escuchas.</p></div></div>
+      <div class="sbx-myth sbx-rv" data-d="3"><div class="f"><span class="lab">Sospecha 3</span><p class="q">«Seguro que es pirata».</p><button class="go" type="button">Descúbrelo →</button></div>
+        <div class="a"><span class="st">FALSO</span><p><b>Es legal.</b> Solo publica obras de dominio público u obras cedidas por sus autores.</p></div></div>
+      <div class="sbx-myth sbx-rv" data-d="4"><div class="f"><span class="lab">Sospecha 4</span><p class="q">«Serán voces de robot».</p><button class="go" type="button">Descúbrelo →</button></div>
+        <div class="a"><span class="st">FALSO</span><p><b>Voces humanas, con nombre.</b> Cada audiolibro indica quién lo lee.</p></div></div>
+      <div class="sbx-myth t sbx-rv" data-d="5"><div class="f"><span class="lab">Sospecha 5</span><p class="q">«Algo tiene que fallar».</p><button class="go" type="button">Descúbrelo →</button></div>
+        <div class="a"><span class="st">VERDAD</span><p><b>Tiene tres límites:</b> no hay novedades, el audio no se descarga y el reproductor es básico.</p></div></div>
     </div>
-    <figure class="sbx-fig sbx-rv" style="margin-top:30px">
-      <div class="sbx-shot"><div class="bar"><i></i><i></i><i></i><span>ellibrototal.com</span></div><div class="sbx-media"><img src="media/portada-web.webp" width="1600" height="900" alt="Portada de El Libro Total con los mundos Libros, Música y Arte" loading="lazy" decoding="async"></div></div>
-      <figcaption>La portada de El Libro Total: tres «mundos» (libros, música y arte) y decenas de secciones.</figcaption>
-    </figure>
+    <div class="sbx-mythbar sbx-rv"><button class="sbx-revall" type="button">Ver todas las respuestas</button><span class="sbx-score">Resultado: <b>4 de 5 sospechas, falsas.</b></span></div>
+
+    <div class="sbx-free">
+      <div class="sbx-card sbx-rv">
+        <h3>Entonces, ¿quién lo paga?</h3>
+        <p style="color:var(--ink2);margin:0">Una <b>fundación colombiana sin ánimo de lucro</b>, financiada como proyecto social por la empresa de software <b>Sistemas y Computadores</b>. Su nombre es un guiño a Borges y a su «biblioteca total», la que contendría todos los libros.</p>
+        <ol class="sbx-time">
+          <li><b>2005</b><span>Nace la fundación en Bucaramanga</span></li>
+          <li><b>2006</b><span>Abre la biblioteca en internet</span></li>
+          <li><b>5 M+</b><span>Descargas en Android</span></li>
+          <li><b>4,8 ★</b><span>Unas 52.000 reseñas en Google Play</span></li>
+        </ol>
+      </div>
+      <div class="sbx-legal sbx-rv" data-d="1">
+        <h3>Por qué no verás superventas</h3>
+        <p>Solo publica lo que puede publicar gratis y de forma legal: <b>clásicos de dominio público</b> y <b>obras cedidas</b>.</p>
+        <p style="margin:0">No es un fallo, es su modelo. Y explica todo lo demás: el catálogo, las voces y el precio.</p>
+        <div class="sbx-pub"><span>✔ Dominio público</span><span>✔ Obras cedidas</span><span class="no">✘ Novedades</span><span class="no">✘ Superventas</span></div>
+      </div>
+    </div>
+    <p class="sbx-next sbx-rv">Vale, es gratis y legal. Pero ¿qué hay dentro? Los números te van a sorprender.</p>
   </div>
 </section>
 
-<!-- ============ CATÁLOGO ============ -->
-<section class="sbx-sec alt" id="sbx-catalogo">
+<!-- ============ 3 · EL CATÁLOGO ============ -->
+<section class="sbx-sec alt" id="sbx-catalogo" data-n="03" data-ch="El catálogo, en cifras">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>2</b> El catálogo de audio, en datos</div>
+    <div class="sbx-kicker sbx-rv"><b>03</b> El catálogo, en cifras</div>
     <div class="sbx-grid sbx-cat">
       <div class="sbx-rv">
         <div class="sbx-big" data-count="6698">6.698</div>
-        <p class="sbx-lead" style="margin-top:8px">audiolibros gratis. Contados uno a uno en su sección de Audiolibros (10 de octubre de 2026).</p>
+        <p class="sbx-lead" style="margin-top:10px">audiolibros gratis, según el contador de su sección de Audiolibros (10 de octubre de 2026). <b>Y es solo la parte con audio</b>: la plataforma suma más de 50.000 títulos para leer.</p>
       </div>
       <div class="sbx-card sbx-rv" data-d="1">
         <div class="sbx-donut" style="--v:.98">
@@ -447,7 +624,7 @@
         <div class="sbx-legend"><span><i style="background:var(--y)"></i>Cuentos <b>79 %</b></span><span><i style="background:var(--ink)"></i>Novelas <b>12 %</b></span><span><i style="background:#cfcfcf"></i>Otros <b>9 %</b></span></div>
       </div>
       <div class="sbx-card sbx-rv" data-d="2">
-        <h3 style="font-size:21px">Cuánto duran (escala logarítmica)</h3>
+        <h3 style="font-size:21px">Cuánto duran <span style="font-weight:400;color:var(--muted);font-size:15px">(escala logarítmica)</span></h3>
         <div class="sbx-bars" style="margin-top:14px;gap:14px">
           <div class="sbx-bar"><div class="lbl"><span>La mitad dura menos de…</span><b>18 min</b></div><div class="trk"><div class="fill" style="--w:37%"></div></div></div>
           <div class="sbx-bar"><div class="lbl"><span>«Crimen y castigo»</span><b>26,6 h</b></div><div class="trk"><div class="fill" style="--w:94%"></div></div></div>
@@ -455,6 +632,23 @@
         </div>
       </div>
     </div>
+
+    <div class="sbx-calc sbx-rv">
+      <div>
+        <h3>¿Cuánto da de sí tu tiempo?</h3>
+        <p>Mueve la barra: minutos al día que puedes escuchar (en el metro, cocinando, paseando…).</p>
+        <label for="sbx-min">Al día <output id="sbx-min-out">30 min</output></label>
+        <input id="sbx-min" type="range" min="10" max="120" step="5" value="30">
+        <div class="sbx-seg" role="group" aria-label="Velocidad de reproducción"><button type="button" data-s="1" aria-pressed="true">1×</button><button type="button" data-s="1.5" aria-pressed="false">1,5×</button><button type="button" data-s="2" aria-pressed="false">2× <small>móvil</small></button></div>
+      </div>
+      <div class="sbx-res" aria-live="polite">
+        <div><span>Cuentos de duración típica (18 min)</span><strong data-o="cuentos">1<small>al día</small></strong><div class="tk"><i data-b="cuentos" style="--w:7.5%"></i></div></div>
+        <div><span><em>«Crimen y castigo»</em> completo (26,6 h)</span><strong data-o="cyc">54<small>días</small></strong><div class="tk"><i data-b="cyc" style="--w:34%"></i></div></div>
+        <div><span><em>«Ana Karenina»</em> completa (40,8 h)</span><strong data-o="ak">82<small>días</small></strong><div class="tk"><i data-b="ak" style="--w:51%"></i></div></div>
+        <p class="note">Cálculo con las duraciones reales de El Libro Total. La velocidad de 1,5× y 2× solo está en el móvil.</p>
+      </div>
+    </div>
+
     <div class="sbx-card sbx-rv" style="margin-top:22px">
       <h3 style="font-size:21px">+750 filtros por género y tema</h3>
       <p style="color:var(--ink2);margin:6px 0 0">Del misterio a los amores imposibles. Los libros con audio llevan un icono de altavoz en la portada.</p>
@@ -470,17 +664,19 @@
         <figcaption>Al pulsar «Ver más» se despliegan todos los temas.</figcaption>
       </figure>
     </div>
+    <p class="sbx-next sbx-rv">Ahora lo mejor: cómo se escucha. Te lo enseñamos con clips reales.</p>
   </div>
 </section>
 
-<!-- ============ CÓMO SE USA ============ -->
-<section class="sbx-sec" id="sbx-como">
+<!-- ============ 4 · CÓMO SE USA ============ -->
+<section class="sbx-sec" id="sbx-como" data-n="04" data-ch="Cómo se usa, en 4 pasos">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>3</b> Cómo se usa</div>
-    <h2 class="sbx-h2 sbx-rv">De la búsqueda a <span class="sbx-mark">escuchar</span>, en 4 pasos</h2>
+    <div class="sbx-kicker sbx-rv"><b>04</b> Cómo se usa</div>
+    <h2 class="sbx-h2 sbx-rv">De cero a escuchar en <span class="sbx-mark">menos de un minuto</span></h2>
+    <p class="sbx-lead sbx-rv">Cuatro pasos, sin cuenta y sin instalar nada. Los clips son grabaciones reales de la web.</p>
     <div class="sbx-steps">
       <div class="sbx-step sbx-rv">
-        <div class="txt"><span class="num">1</span><h3>Busca el libro</h3><p>El buscador está arriba a la derecha. Escribe el título o el autor y pulsa Intro.</p></div>
+        <div class="txt"><span class="num">1</span><h3>Busca el libro <span class="sbx-time-chip">⏱ 5 s</span></h3><p>El buscador está arriba a la derecha. Escribe el título o el autor y pulsa Intro.</p></div>
         <div class="sbx-shot"><div class="bar"><i></i><i></i><i></i><span>ellibrototal.com</span></div>
           <div class="sbx-media" data-marks='[{"t0":3.1,"t1":4.4,"x":2.9,"y":14.7,"w":18.5,"h":17.6,"label":"Libro"},{"t0":4.4,"t1":5.6,"x":2.9,"y":46.4,"w":97.1,"h":17.6,"label":"Música"},{"t0":5.6,"t1":6.8,"x":2.9,"y":78.1,"w":91.6,"h":17.6,"label":"Arte"}]'>
             <video poster="media/clip-buscar.webp" width="1280" height="720" muted loop playsinline preload="none" aria-label="Búsqueda de Crimen y castigo"><source src="media/clip-buscar.mp4" type='video/mp4; codecs="avc1.64001F"'><source src="media/clip-buscar.webm" type="video/webm"></video>
@@ -488,14 +684,14 @@
         </div>
       </div>
       <div class="sbx-step sbx-rv">
-        <div class="txt"><span class="num">2</span><h3>Todo está conectado</h3><p>No solo aparece el libro: también <b>música inspirada en la novela, ilustraciones y artículos</b>.</p>
+        <div class="txt"><span class="num">2</span><h3>Descubre que todo está conectado</h3><p>No solo aparece el libro: también <b>música inspirada en la novela, ilustraciones y artículos</b>. Una madriguera perfecta para curiosos.</p>
           <ul><li><span class="sbx-pill">📖</span> El libro y sus ediciones</li><li><span class="sbx-pill">🎵</span> Música relacionada</li><li><span class="sbx-pill">🎨</span> Arte e ilustraciones</li></ul></div>
         <div class="sbx-shot"><div class="bar"><i></i><i></i><i></i><span>ellibrototal.com</span></div>
           <div class="sbx-media" data-static-marks='[{"x":2.9,"y":14.7,"w":18.5,"h":17.6,"label":"Libro"},{"x":2.9,"y":46.4,"w":97.1,"h":17.6,"label":"Música"},{"x":2.9,"y":78.1,"w":91.6,"h":17.6,"label":"Arte"}]'><img src="media/busqueda.webp" width="1600" height="900" alt="Resultados de Crimen y castigo con libro, música y arte" loading="lazy" decoding="async"></div>
         </div>
       </div>
       <div class="sbx-step sbx-rv">
-        <div class="txt"><span class="num">3</span><h3>Abre la ficha</h3><p>Sinopsis, temas y, en muchos clásicos, <b>varias traducciones</b>: en «Crimen y castigo», hasta el original en ruso.</p></div>
+        <div class="txt"><span class="num">3</span><h3>Abre la ficha y elige versión</h3><p>Sinopsis, temas y, en muchos clásicos, <b>varias traducciones</b>. En «Crimen y castigo» hay cinco, incluido el original en ruso.</p></div>
         <div class="sbx-shot"><div class="bar"><i></i><i></i><i></i><span>ellibrototal.com</span></div>
           <div class="sbx-media" data-marks='[{"t0":0.6,"t1":6.4,"x":2.9,"y":53.3,"w":49.8,"h":17.6,"label":"5 versiones · ES · EN · FR · RU"}]'>
             <video poster="media/clip-ficha.webp" width="1280" height="720" muted loop playsinline preload="none" aria-label="Ficha de Crimen y castigo con sus versiones"><source src="media/clip-ficha.mp4" type='video/mp4; codecs="avc1.64001F"'><source src="media/clip-ficha.webm" type="video/webm"></video>
@@ -503,11 +699,11 @@
         </div>
       </div>
       <div class="sbx-step sbx-rv">
-        <div class="txt"><span class="num">4</span><h3>«Ir al libro» y pulsa el altavoz</h3><p>Se abre un lector con aspecto de libro. Toca el altavoz (o el globo de colores) y:</p>
-          <ul><li><span class="sbx-ok">✔</span> <span><b>El texto se resalta</b> mientras suena.</span></li><li><span class="sbx-ok">✔</span> <span><b>Las páginas pasan solas.</b></span></li><li><span class="sbx-ok">✔</span> <span>El globo baja por el margen y marca por dónde vas.</span></li></ul>
+        <div class="txt"><span class="num">4</span><h3>«Ir al libro» y pulsa el altavoz</h3><p>Se abre un lector con aspecto de libro. Toca el altavoz y pasa la magia:</p>
+          <ul><li><span class="sbx-ok">✔</span> <span><b>El texto se resalta</b> mientras suena.</span></li><li><span class="sbx-ok">✔</span> <span><b>Las páginas pasan solas.</b></span></li><li><span class="sbx-ok">✔</span> <span>Un globo de colores marca por dónde vas.</span></li></ul>
           <div class="sbx-player" data-audio="media/muestra-crimen-y-castigo.mp3">
             <button type="button" aria-label="Escuchar la muestra"><svg class="pl" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg><svg class="pa" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
-            <div style="flex:1;min-width:0"><small>Escucha cómo suena · 12 s</small><div class="wave" aria-hidden="true"></div></div>
+            <div style="flex:1;min-width:0"><small>Dale al play · así suena</small><div class="wave" aria-hidden="true"></div></div>
             <span class="t">0:12</span>
           </div>
           <p style="font-size:14px;color:var(--muted);margin-top:8px">«Crimen y castigo», capítulo I. Leído por Hernando Iván Cano (audio original de El Libro Total).</p>
@@ -520,18 +716,20 @@
         </div>
       </div>
     </div>
-    <div class="sbx-card sbx-rv" style="margin-top:46px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+    <div class="sbx-card sbx-reg sbx-rv">
       <span class="sbx-pill" style="font-size:17px">🔓 ¿Hay que registrarse?</span>
       <span><b>No.</b> Si te registras (gratis), sumas historial, favoritos, marcadores y un cuaderno de notas.</span>
     </div>
+    <p class="sbx-next sbx-rv">Funciona de maravilla. Pero ¿quién te lee y qué tal suena? Aquí está el primer «pero».</p>
   </div>
 </section>
 
-<!-- ============ VOCES Y AUDIO ============ -->
-<section class="sbx-sec alt" id="sbx-voces">
+<!-- ============ 5 · VOCES Y AUDIO ============ -->
+<section class="sbx-sec alt" id="sbx-voces" data-n="05" data-ch="Quién narra y cómo suena">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>4</b> Voces y calidad de audio</div>
-    <h2 class="sbx-h2 sbx-rv">Voces <span class="sbx-mark">humanas</span>, con nombre propio</h2>
+    <div class="sbx-kicker sbx-rv"><b>05</b> Quién narra y cómo suena</div>
+    <h2 class="sbx-h2 sbx-rv">Voces <span class="sbx-mark">humanas</span>… y un narrador estrella</h2>
+    <p class="sbx-lead sbx-rv">Analizamos 199 audiolibros al azar. Un dato salta a la vista: <b>1 de cada 3 los lee la misma persona.</b></p>
     <div class="sbx-grid sbx-voices" style="margin-top:24px">
       <div class="sbx-card sbx-nar sbx-rv">
         <h3 style="font-size:19px;margin-bottom:6px">Quién narra · muestra de 199 audiolibros</h3>
@@ -541,18 +739,19 @@
         <div class="row" style="--i:3"><span>Rocío Tavera</span><div class="trk"><div class="fill" style="--w:27%"></div></div><b>19</b></div>
         <div class="row" style="--i:4"><span>Omar Barrera</span><div class="trk"><div class="fill" style="--w:21%"></div></div><b>15</b></div>
         <div class="row" style="--i:5"><span>Fernán Astahiza</span><div class="trk"><div class="fill" style="--w:21%"></div></div><b>15</b></div>
-        <p style="margin:16px 0 0"><span class="sbx-pill">1 de cada 3</span> audiolibros los lee Álvaro Gómez Zafra. <b>No puedes elegir narrador.</b></p>
+        <p style="margin:16px 0 0"><span class="sbx-pill">Ojo</span> <b>No puedes elegir narrador</b>: cada título tiene una sola versión en audio.</p>
       </div>
       <div class="sbx-card sbx-rv" data-d="1">
         <h3 style="font-size:19px">¿Qué tal suena?</h3>
         <div class="sbx-qual"><span>MP3</span><span class="y">64 kbps</span><span>Mono</span><span>44,1 kHz</span></div>
-        <p style="margin:0"><span class="sbx-ok">✔</span> Suficiente para voz &nbsp; <span class="sbx-ko">✘</span> Lejos del audio de estudio de Audible</p>
+        <p style="margin:0"><span class="sbx-ok">✔</span> De sobra para una voz. <span class="sbx-ko">✘</span> Lejos del audio de estudio de Audible.</p>
         <h3 style="font-size:17px;margin-top:22px">El volumen cambia de un libro a otro</h3>
         <div class="sbx-lufs">
           <div><div class="col"><i style="--h:92%"></i></div><b>−13,6 LUFS</b>Crimen y castigo</div>
           <div><div class="col"><i style="--h:95%"></i></div><b>−13,3 LUFS</b>Gerona</div>
-          <div><div class="col"><i style="--h:58%"></i></div><b>−17,7 LUFS</b>El plomo en la entraña</div>
+          <div><div class="col lo"><i style="--h:58%"></i></div><b>−17,7 LUFS</b>El plomo en la entraña</div>
         </div>
+        <p style="font-size:14px;color:var(--muted);margin:12px 0 0">Traducción: entre libros tendrás que tocar el volumen.</p>
       </div>
     </div>
     <h3 class="sbx-rv" style="font-size:24px;margin:44px 0 14px">Los controles: ordenador frente a móvil</h3>
@@ -569,27 +768,28 @@
         </tbody>
       </table>
     </div>
+    <p class="sbx-next sbx-rv">Hasta aquí, un buen servicio gratuito. Lo que viene ahora no lo tiene ni Audible.</p>
   </div>
 </section>
 
-<!-- ============ HERRAMIENTAS ============ -->
-<section class="sbx-sec" id="sbx-herramientas">
+<!-- ============ 6 · HERRAMIENTAS ============ -->
+<section class="sbx-sec" id="sbx-herramientas" data-n="06" data-ch="Lo que no tiene nadie más">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>5</b> Lo que no tiene nadie más</div>
-    <h2 class="sbx-h2 sbx-rv">Herramientas de <span class="sbx-mark">estudio</span> que te sorprenderán</h2>
+    <div class="sbx-kicker sbx-rv"><b>06</b> Lo que no tiene nadie más</div>
+    <h2 class="sbx-h2 sbx-rv">Tres <span class="sbx-mark">superpoderes</span> para estudiar y aprender idiomas</h2>
     <div class="sbx-grid sbx-tools" style="margin-top:26px">
-      <div class="sbx-card sbx-rv" data-d="1"><div class="pic"><img src="media/diccionario.webp" width="1600" height="900" alt="Diccionario de Autoridades de 1726 dentro del lector" loading="lazy" decoding="async"></div><div class="body"><h3>📖 Decenas de diccionarios</h3><p style="margin:0;color:var(--ink2)">Selecciona una palabra y búscala, incluso en el <b>Diccionario de Autoridades de 1726</b>.</p></div></div>
-      <div class="sbx-card sbx-rv" data-d="2"><div class="pic"><img src="media/lectura-comparada.webp" width="1600" height="900" alt="Lectura comparada en español, inglés y francés" loading="lazy" decoding="async"></div><div class="body"><h3>🌍 Lectura comparada</h3><p style="margin:0;color:var(--ink2)">El mismo libro en <b>tres idiomas a la vez</b>, lado a lado. Ideal para aprender idiomas.</p></div></div>
-      <div class="sbx-card sbx-rv" data-d="3"><div class="pic"><img src="media/vocabulario.webp" width="1600" height="900" alt="Vocabulario de la obra ordenado por frecuencia" loading="lazy" decoding="async"></div><div class="body"><h3>🔤 Vocabulario de la obra</h3><p style="margin:0;color:var(--ink2)">Todas las palabras del libro, por frecuencia: verbos, sustantivos y nombres.</p></div></div>
+      <div class="sbx-card sbx-rv" data-d="1"><div class="pic"><img src="media/diccionario.webp" width="1600" height="900" alt="Diccionario de Autoridades de 1726 dentro del lector" loading="lazy" decoding="async"></div><div class="body"><h3>📖 Decenas de diccionarios</h3><p>Selecciona una palabra y búscala sin salir del libro. Incluso en el <b>Diccionario de Autoridades de 1726</b>.</p><span class="ideal">Ideal para estudiantes</span></div></div>
+      <div class="sbx-card sbx-rv" data-d="2"><div class="pic"><img src="media/lectura-comparada.webp" width="1600" height="900" alt="Lectura comparada en español, inglés y francés" loading="lazy" decoding="async"></div><div class="body"><h3>🌍 Lectura comparada</h3><p>El mismo libro en <b>tres idiomas a la vez</b>, párrafo a párrafo. Un atajo brutal para aprender idiomas.</p><span class="ideal">Ideal para idiomas</span></div></div>
+      <div class="sbx-card sbx-rv" data-d="3"><div class="pic"><img src="media/vocabulario.webp" width="1600" height="900" alt="Vocabulario de la obra ordenado por frecuencia" loading="lazy" decoding="async"></div><div class="body"><h3>🔤 Vocabulario de la obra</h3><p>Todas las palabras del libro, ordenadas por frecuencia: verbos, sustantivos y nombres propios.</p><span class="ideal">Ideal para curiosos</span></div></div>
     </div>
-    <div class="sbx-fact sbx-rv"><strong data-count="972">972</strong><span style="font-size:20px">veces aparece <b>«Raskólnikov»</b> en «Crimen y castigo», según su vocabulario.</span></div>
+    <div class="sbx-fact sbx-rv"><strong data-count="972">972</strong><span>veces aparece <b>«Raskólnikov»</b> en «Crimen y castigo». Lo dice su vocabulario.</span></div>
   </div>
 </section>
 
-<!-- ============ APP ============ -->
-<section class="sbx-sec alt" id="sbx-app">
+<!-- ============ 7 · APP ============ -->
+<section class="sbx-sec alt" id="sbx-app" data-n="07" data-ch="La app">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>6</b> La app</div>
+    <div class="sbx-kicker sbx-rv"><b>07</b> La app</div>
     <div class="sbx-app">
       <div class="sbx-phones sbx-rv">
         <div class="sbx-phone"><img src="media/movil-velocidad.webp" width="640" height="1101" alt="Control de velocidad de 0,8× a 2× en el móvil" loading="lazy" decoding="async"></div>
@@ -597,10 +797,10 @@
       </div>
       <div>
         <h2 class="sbx-h2 sbx-rv">En el móvil ganas <span class="sbx-mark">velocidad</span> (hasta 2×)</h2>
-        <p class="sbx-lead sbx-rv">«Libro Total Libros AudioLibros» en Android y «El Libro Total» en iPhone. Gratis y con notas altísimas.</p>
+        <p class="sbx-lead sbx-rv">Búscala como «Libro Total Libros AudioLibros» en Android o «El Libro Total» en iPhone. Gratis, y con notas altísimas.</p>
         <div class="sbx-checks sbx-rv" data-d="1">
           <div><span class="sbx-ok">✔</span><span><b>Velocidad de 0,8× a 2×</b> (en el ordenador no existe).</span></div>
-          <div><span class="sbx-ok">✔</span><span><b>Leer sin conexión</b> en EPUB y PDF, incluidos tus libros.</span></div>
+          <div><span class="sbx-ok">✔</span><span><b>Leer sin conexión</b> en EPUB y PDF, incluidos tus propios libros.</span></div>
           <div><span class="sbx-ok">✔</span><span><b>Sin cuenta</b> para leer y escuchar; con cuenta, historial y favoritos.</span></div>
           <div><span class="sbx-ko">✘</span><span><b>El audio no se descarga:</b> para escuchar necesitas internet.</span></div>
           <div><span class="sbx-ko">✘</span><span><b>Sin temporizador</b> para dormirte escuchando.</span></div>
@@ -610,52 +810,17 @@
   </div>
 </section>
 
-<!-- ============ PROS Y CONTRAS ============ -->
-<section class="sbx-sec" id="sbx-pros">
+<!-- ============ 8 · PRECIO ============ -->
+<section class="sbx-sec" id="sbx-precio" data-n="08" data-ch="El precio, con un ejemplo real">
   <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>7</b> Lo mejor y lo peor</div>
-    <div class="sbx-grid sbx-pc" style="margin-top:6px">
-      <div class="sbx-card sbx-rv" data-d="1"><h3><span class="sbx-ok">●</span> Lo mejor</h3><ul>
-        <li><span class="sbx-ok">✔</span><span><b>Gratis de verdad</b>: sin anuncios, sin suscripción y sin registro.</span></li>
-        <li><span class="sbx-ok">✔</span><span><b>Voces humanas</b>, con buena dicción y crédito para cada narrador.</span></li>
-        <li><span class="sbx-ok">✔</span><span><b>Texto sincronizado</b> con el audio y paso de página automático.</span></li>
-        <li><span class="sbx-ok">✔</span><span><b>Herramientas únicas</b>: diccionarios históricos, lectura comparada y vocabulario.</span></li>
-        <li><span class="sbx-ok">✔</span><span><b>Legal y transparente</b>: dominio público y obras con permiso.</span></li></ul></div>
-      <div class="sbx-card ko sbx-rv" data-d="2"><h3><span class="sbx-ko">●</span> Lo peor</h3><ul>
-        <li><span class="sbx-ko">✘</span><span><b>Sin novedades ni superventas</b>: solo clásicos y obras cedidas.</span></li>
-        <li><span class="sbx-ko">✘</span><span><b>Mayoría de cuentos cortos</b> (mediana de unos 18 minutos).</span></li>
-        <li><span class="sbx-ko">✘</span><span><b>Reproductor básico</b>: sin temporizador ni saltos.</span></li>
-        <li><span class="sbx-ko">✘</span><span><b>Sin descargas de audio</b> para escuchar sin internet.</span></li>
-        <li><span class="sbx-ko">✘</span><span><b>Web lenta y algo anticuada</b>, con tantas secciones que abruma.</span></li></ul></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PARA QUIÉN ============ -->
-<section class="sbx-sec alt" id="sbx-para-quien">
-  <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>8</b> ¿Para quién es?</div>
-    <h2 class="sbx-h2 sbx-rv">Perfecto si eres…</h2>
-    <div class="sbx-grid sbx-who" style="margin-top:24px">
-      <div class="sbx-card sbx-rv" data-d="1"><span class="em">🎓</span><h3>Estudiante</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:15px">Lecturas obligatorias: lees, escuchas y consultas el diccionario.</p></div>
-      <div class="sbx-card sbx-rv" data-d="2"><span class="em">📚</span><h3>Amante de los clásicos</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:15px">Dostoievski, Galdós, Quiroga… y miles de cuentos.</p></div>
-      <div class="sbx-card sbx-rv" data-d="3"><span class="em">🌍</span><h3>Quien aprende idiomas</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:15px">Lectura comparada y obras en su versión original.</p></div>
-      <div class="sbx-card sbx-rv" data-d="4"><span class="em">👨‍👩‍👧</span><h3>Docentes y familias</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:15px">Un entorno sin publicidad para leer y escuchar.</p></div>
-    </div>
-    <div class="sbx-not sbx-rv"><b>No es para ti si buscas:</b><span>✘ El último thriller</span><span>✘ Escuchar sin conexión</span><span>✘ Un reproductor completo</span></div>
-  </div>
-</section>
-
-<!-- ============ PRECIO ============ -->
-<section class="sbx-sec" id="sbx-precio">
-  <div class="sbx-wrap">
-    <div class="sbx-kicker sbx-rv"><b>9</b> El ahorro, con un ejemplo real</div>
-    <h2 class="sbx-h2 sbx-rv">«Crimen y castigo» en audiolibro: <span class="sbx-mark">de 18,99 € a 0 €</span></h2>
+    <div class="sbx-kicker sbx-rv"><b>08</b> El precio, con un ejemplo real</div>
+    <h2 class="sbx-h2 sbx-rv">«Crimen y castigo» en audio: <span class="sbx-mark">de 18,99 € a 0 €</span></h2>
     <div class="sbx-card sbx-price sbx-rv" style="margin-top:24px">
       <div class="row me" style="--i:0"><div class="who">El Libro Total<small>Hernando Iván Cano</small></div><div class="trk"><div class="fill" style="--w:1.5%;background:var(--y)"></div></div><div class="eur"><span class="zero">0 €</span></div></div>
       <div class="row" style="--i:1"><div class="who">Google Play Libros<small>Luis David García Márquez</small></div><div class="trk"><div class="fill" style="--w:79%"></div></div><div class="eur">14,99 €</div></div>
       <div class="row" style="--i:2"><div class="who">Apple Books<small>Luis David García Márquez</small></div><div class="trk"><div class="fill" style="--w:95%"></div></div><div class="eur">17,99 €</div></div>
       <div class="row" style="--i:3"><div class="who">Audible<small>Luis David García Márquez</small></div><div class="trk"><div class="fill" style="--w:100%;background:var(--ink)"></div></div><div class="eur">18,99 €</div></div>
+      <div class="sbx-save"><strong>−<span data-count="18.99" data-dec="2">18,99</span> €</strong><span>de ahorro en un solo libro (frente a comprarlo en Audible).</span></div>
     </div>
     <p style="font-size:14px;color:var(--muted);margin-top:10px">Precio de compra del título, según SonorBooks (octubre de 2026). Puede variar: <a href="https://sonorbooks.com/es/audiolibro/crimen-y-castigo/">mira el precio actual en SonorBooks</a>.</p>
     <h3 class="sbx-rv" style="font-size:24px;margin:40px 0 14px">Frente a los grandes servicios</h3>
@@ -673,6 +838,73 @@
       </table>
     </div>
     <p style="font-size:14px;color:var(--muted);margin-top:10px">Precios de Audible y Spotify consultados en octubre de 2026. Confírmalos en sus webs: cambian con frecuencia.</p>
+    <p class="sbx-next sbx-rv">¿Y tú? Tres preguntas y sabrás si te conviene.</p>
+  </div>
+</section>
+
+<!-- ============ 9 · ¿ES PARA TI? ============ -->
+<section class="sbx-sec alt" id="sbx-test" data-n="09" data-ch="¿Es para ti? Test de 3 preguntas">
+  <div class="sbx-wrap">
+    <div class="sbx-kicker sbx-rv"><b>09</b> ¿Es para ti?</div>
+    <h2 class="sbx-h2 sbx-rv">Descúbrelo en <span class="sbx-mark">10 segundos</span></h2>
+    <div class="sbx-quiz">
+      <div class="sbx-qs sbx-rv">
+        <div class="sbx-qq" data-q="clasicos"><span class="n">1</span><p>¿Te interesan los clásicos, estudiar o aprender idiomas?</p><div class="opts"><button type="button" data-v="1" aria-pressed="false">Sí</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="sbx-qq" data-q="novedades"><span class="n">2</span><p>¿Buscas sobre todo novedades y superventas?</p><div class="opts"><button type="button" data-v="1" aria-pressed="false">Sí</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="sbx-qq" data-q="offline"><span class="n">3</span><p>¿Necesitas escuchar sin conexión (avión, metro sin cobertura…)?</p><div class="opts"><button type="button" data-v="1" aria-pressed="false">Sí</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+      </div>
+      <div class="sbx-out sbx-rv" data-d="1" aria-live="polite">
+        <div class="meter" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="body">
+          <div class="em">🎧</div>
+          <h3>Tu resultado aparecerá aquí</h3>
+          <ul>
+            <li>✔ <b>Clásicos, estudio o idiomas</b> → es para ti.</li>
+            <li>➜ <b>Además, novedades o escuchar sin conexión</b> → úsalo como complemento.</li>
+            <li>✘ <b>Ni clásicos ni estudio</b> → probablemente no es tu sitio.</li>
+          </ul>
+          <div class="cta"><a class="sbx-btn y" href="https://sonorbooks.com/es/audiolibros/?q=Crimen%20y%20castigo">Comparar en SonorBooks</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · NOTA FINAL ============ -->
+<section class="sbx-sec" id="sbx-nota" data-n="10" data-ch="Nuestra nota final">
+  <div class="sbx-wrap">
+    <div class="sbx-kicker sbx-rv"><b>10</b> Nuestra nota final</div>
+    <div class="sbx-verdict">
+      <div class="sbx-ring big sbx-rv" style="--v:.82">
+        <svg viewBox="0 0 260 260"><circle class="trk" cx="130" cy="130" r="110"/><circle class="val" cx="130" cy="130" r="110"/></svg>
+        <div class="num"><strong data-count="8.2" data-dec="1">8,2</strong><span>sobre 10</span></div>
+      </div>
+      <div>
+        <h2 class="sbx-h2 sbx-rv">¿Dónde está la trampa? <span class="sbx-mark">No la hay.</span></h2>
+        <div class="sbx-bars sbx-rv" data-d="1" style="margin-top:20px">
+          <div class="sbx-bar"><div class="lbl"><span>Precio</span><b>10</b></div><div class="trk"><div class="fill y" style="--w:100%"></div></div></div>
+          <div class="sbx-bar"><div class="lbl"><span>Funciones (diccionarios, lectura comparada…)</span><b>9</b></div><div class="trk"><div class="fill y" style="--w:90%"></div></div></div>
+          <div class="sbx-bar"><div class="lbl"><span>Catálogo de clásicos</span><b>8</b></div><div class="trk"><div class="fill" style="--w:80%"></div></div></div>
+          <div class="sbx-bar"><div class="lbl"><span>Calidad de audio</span><b>7</b></div><div class="trk"><div class="fill" style="--w:70%"></div></div></div>
+          <div class="sbx-bar"><div class="lbl"><span>Experiencia de uso (web y app)</span><b>7</b></div><div class="trk"><div class="fill" style="--w:70%"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <p class="sbx-quote sbx-rv">El Libro Total no compite con Audible: quiere que los clásicos estén al alcance de cualquiera. Si buscas novedades, no es tu sitio. Si quieres escuchar a Dostoievski, a Galdós o a Quiroga gratis, y leerlos a la vez, es difícil encontrar algo mejor.</p>
+    <div class="sbx-grid sbx-pc">
+      <div class="sbx-card sbx-rv" data-d="1"><h3><span class="sbx-ok">●</span> Lo mejor</h3><ul>
+        <li><span class="sbx-ok">✔</span><span><b>Gratis de verdad</b>: sin anuncios, sin suscripción y sin registro.</span></li>
+        <li><span class="sbx-ok">✔</span><span><b>Voces humanas</b>, con buena dicción y crédito para cada narrador.</span></li>
+        <li><span class="sbx-ok">✔</span><span><b>Texto sincronizado</b> con el audio y paso de página automático.</span></li>
+        <li><span class="sbx-ok">✔</span><span><b>Herramientas únicas</b>: diccionarios históricos, lectura comparada y vocabulario.</span></li>
+        <li><span class="sbx-ok">✔</span><span><b>Legal y transparente</b>: dominio público y obras con permiso.</span></li></ul></div>
+      <div class="sbx-card ko sbx-rv" data-d="2"><h3><span class="sbx-ko">●</span> Lo peor</h3><ul>
+        <li><span class="sbx-ko">✘</span><span><b>Sin novedades ni superventas</b>: solo clásicos y obras cedidas.</span></li>
+        <li><span class="sbx-ko">✘</span><span><b>Mayoría de cuentos cortos</b> (la mitad dura menos de 18 minutos).</span></li>
+        <li><span class="sbx-ko">✘</span><span><b>Reproductor básico</b>: sin temporizador ni saltos.</span></li>
+        <li><span class="sbx-ko">✘</span><span><b>Sin descargas de audio</b> para escuchar sin internet.</span></li>
+        <li><span class="sbx-ko">✘</span><span><b>Web lenta y algo anticuada</b>, con tantas secciones que abruma.</span></li></ul></div>
+    </div>
   </div>
 </section>
 
@@ -680,7 +912,7 @@
 <section class="sbx-sec" style="padding-top:0">
   <div class="sbx-wrap">
     <div class="sbx-cta sbx-rv">
-      <div><h2>¿Dónde escuchar cualquier audiolibro, y a qué precio?</h2><p>Compara narraciones, precios y condiciones de todas las plataformas. Gratis y sin registro.</p></div>
+      <div><h2>¿Y si el libro que buscas no está aquí?</h2><p>En SonorBooks comparas narraciones, precios y condiciones de todas las plataformas. Gratis y sin registro.</p></div>
       <form class="sbx-search" action="https://sonorbooks.com/es/audiolibros/" method="get" role="search">
         <input type="search" name="q" placeholder="Título o autor" aria-label="Buscar audiolibro en SonorBooks" value="Crimen y castigo">
         <button type="submit">Buscar en SonorBooks</button>
@@ -690,7 +922,7 @@
 </section>
 
 <!-- ============ PREGUNTAS ============ -->
-<section class="sbx-sec alt" id="sbx-faq">
+<section class="sbx-sec alt" id="sbx-faq" data-n="?" data-ch="Preguntas frecuentes">
   <div class="sbx-wrap sbx-narrow">
     <div class="sbx-kicker sbx-rv"><b>?</b> Preguntas frecuentes</div>
     <h2 class="sbx-h2 sbx-rv">Lo que más nos preguntáis</h2>
@@ -742,7 +974,7 @@
     requestAnimationFrame(step);
   };
   // Aparición al hacer scroll + vídeos que se reproducen solo cuando están a la vista.
-  var targets = root.querySelectorAll('.sbx-rv, .sbx-chips, .sbx-time, .sbx-mark');
+  var targets = root.querySelectorAll('.sbx-rv, .sbx-chips, .sbx-time, .sbx-mark, .sbx-strike');
   var vids = root.querySelectorAll('video');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -766,6 +998,126 @@
   } else {
     targets.forEach(function (el) { el.classList.add('sbx-in'); });
   }
+
+  // Barra fija: capítulo actual, minutos restantes, progreso de lectura e índice desplegable.
+  var bar = root.querySelector('.sbx-bar-top'), hero = root.querySelector('.sbx-hero');
+  var secs = Array.prototype.slice.call(root.querySelectorAll('section[data-ch]'));
+  var chBtn = bar.querySelector('.ch'), chNum = chBtn.querySelector('b'), chTxt = chBtn.querySelector('span');
+  var leftEl = bar.querySelector('.left span'), toc = bar.querySelector('.toc');
+  var words = (root.innerText || root.textContent || '').split(/\s+/).length;
+  secs.forEach(function (s, i) {
+    var a = document.createElement('a');
+    a.href = '#' + s.id;
+    a.innerHTML = '<b>' + s.getAttribute('data-n') + '</b>' + s.getAttribute('data-ch');
+    a.addEventListener('click', function () { bar.classList.remove('open'); });
+    toc.appendChild(a);
+  });
+  var links = toc.querySelectorAll('a');
+  chBtn.addEventListener('click', function (e) { e.stopPropagation(); bar.classList.toggle('open'); });
+  document.addEventListener('click', function (e) { if (!bar.contains(e.target)) bar.classList.remove('open'); });
+  var ticking = false;
+  var update = function () {
+    ticking = false;
+    var r = root.getBoundingClientRect(), vh = window.innerHeight;
+    var show = hero.getBoundingClientRect().bottom < 0 && r.bottom > vh * 0.4;
+    if (bar.classList.contains('show') !== show) {
+      bar.classList.toggle('show', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      chBtn.tabIndex = show ? 0 : -1;
+      if (!show) bar.classList.remove('open');
+    }
+    var p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - vh)));
+    bar.style.setProperty('--p', p.toFixed(4));
+    var cur = 0;
+    secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < vh * 0.35) cur = i; });
+    chNum.textContent = secs[cur].getAttribute('data-n');
+    chTxt.textContent = secs[cur].getAttribute('data-ch');
+    links.forEach(function (l, i) { l.classList.toggle('cur', i === cur); });
+    leftEl.textContent = Math.max(1, Math.ceil(words * (1 - p) / 230));
+  };
+  var onScroll = function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+
+  // ¿Dónde está la trampa?: cada tarjeta se gira al tocarla.
+  var myths = root.querySelectorAll('.sbx-myth');
+  myths.forEach(function (m) {
+    var b = m.querySelector('.go');
+    b.setAttribute('aria-expanded', 'false');
+    b.addEventListener('click', function () { m.classList.add('on'); b.setAttribute('aria-expanded', 'true'); });
+    m.querySelector('.a').addEventListener('click', function () { m.classList.remove('on'); b.setAttribute('aria-expanded', 'false'); });
+  });
+  var score = root.querySelector('.sbx-score');
+  var check = function () { if (score && root.querySelectorAll('.sbx-myth.on').length === myths.length) score.classList.add('on'); };
+  myths.forEach(function (m) { m.querySelector('.go').addEventListener('click', function () { setTimeout(check, 50); }); });
+  var all = root.querySelector('.sbx-revall');
+  if (all) all.addEventListener('click', function () {
+    myths.forEach(function (m, i) { setTimeout(function () { m.classList.add('on'); m.querySelector('.go').setAttribute('aria-expanded', 'true'); check(); }, reduce ? 0 : i * 140); });
+  });
+
+  // Calculadora: cuánto se tarda en escuchar cada obra según los minutos al día y la velocidad.
+  var calc = root.querySelector('.sbx-calc');
+  if (calc) {
+    var range = calc.querySelector('input[type=range]'), out = calc.querySelector('output'), speed = 1;
+    var o = function (k) { return calc.querySelector('[data-o="' + k + '"]'); };
+    var b = function (k) { return calc.querySelector('[data-b="' + k + '"]'); };
+    var set = function (k, n, unit, w) { o(k).innerHTML = n + '<small>' + unit + '</small>'; b(k).style.setProperty('--w', w + '%'); };
+    var run = function () {
+      var min = parseInt(range.value, 10), eff = min * speed;
+      out.textContent = min + ' min';
+      range.style.setProperty('--fill', ((min - 10) / 110 * 100) + '%');
+      var c = Math.floor(eff / 18), cyc = Math.ceil(1596 / eff), ak = Math.ceil(2448 / eff);
+      if (c >= 1) set('cuentos', c, 'al día', Math.min(100, c * 7.5));
+      else set('cuentos', 1, 'cada ' + Math.ceil(18 / eff) + ' días', 4);
+      set('cyc', cyc, cyc === 1 ? 'día' : 'días', Math.max(4, Math.min(100, cyc / 1.6)));
+      set('ak', ak, ak === 1 ? 'día' : 'días', Math.max(4, Math.min(100, ak / 1.6)));
+    };
+    range.addEventListener('input', run);
+    calc.querySelectorAll('.sbx-seg button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        speed = parseFloat(btn.getAttribute('data-s'));
+        calc.querySelectorAll('.sbx-seg button').forEach(function (x) { x.setAttribute('aria-pressed', x === btn ? 'true' : 'false'); });
+        run();
+      });
+    });
+    run();
+  }
+
+  // Test: tres preguntas y un resultado con la recomendación.
+  var quiz = root.querySelector('.sbx-quiz');
+  if (quiz) {
+    var ans = {}, outBox = quiz.querySelector('.sbx-out'), body = outBox.querySelector('.body'), meter = outBox.querySelectorAll('.meter i');
+    var sb = 'https://sonorbooks.com/es/audiolibros/?q=';
+    var res = {
+      si: { em: '🎉', h: 'Es para ti. Empieza hoy.', p: 'Clásicos gratis, con voz humana y el texto delante. Para lo que buscas, es difícil encontrar algo mejor.', cta: '<a class="sbx-btn y" href="https://www.ellibrototal.com/ltotal/" target="_blank" rel="noopener">Abrir El Libro Total</a><a class="sbx-btn ghost" href="' + sb + 'Crimen%20y%20castigo">Ver «Crimen y castigo» en SonorBooks</a>' },
+      mix: { em: '🤝', h: 'Úsalo como complemento.', p: 'Para clásicos, estudio e idiomas, El Libro Total. Para novedades o escuchar sin conexión, compara en SonorBooks dónde te sale mejor cada libro.', cta: '<a class="sbx-btn y" href="' + sb + '">Comparar en SonorBooks</a><a class="sbx-btn ghost" href="https://www.ellibrototal.com/ltotal/" target="_blank" rel="noopener">Abrir El Libro Total</a>' },
+      no: { em: '🧭', h: 'Probablemente no es tu sitio.', p: 'Su fuerte son los clásicos. Si buscas otra cosa, en SonorBooks encuentras dónde escuchar cada audiolibro y a qué precio.', cta: '<a class="sbx-btn y" href="' + sb + '">Buscar en SonorBooks</a>' }
+    };
+    var draw = function () {
+      var n = Object.keys(ans).length;
+      meter.forEach(function (m, i) { m.classList.toggle('on', i < n); });
+      if (n < 3) {
+        body.innerHTML = '<div class="em">🎧</div><h3>' + (n === 2 ? 'Te queda 1 pregunta' : n === 1 ? 'Te quedan 2 preguntas' : 'Responde a las 3 preguntas') + '</h3><p>Y te diremos si El Libro Total encaja contigo o dónde te conviene más escuchar.</p>';
+        return;
+      }
+      var r = !ans.clasicos ? res.no : (ans.novedades || ans.offline ? res.mix : res.si);
+      body.innerHTML = '<div class="em">' + r.em + '</div><h3>' + r.h + '</h3><p>' + r.p + '</p><div class="cta">' + r.cta + '</div>';
+      outBox.classList.remove('pop'); void outBox.offsetWidth; if (!reduce) outBox.classList.add('pop');
+    };
+    quiz.querySelectorAll('.sbx-qq').forEach(function (q) {
+      q.querySelectorAll('.opts button').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          ans[q.getAttribute('data-q')] = btn.getAttribute('data-v') === '1';
+          q.querySelectorAll('.opts button').forEach(function (x) { x.setAttribute('aria-pressed', x === btn ? 'true' : 'false'); });
+          q.classList.add('done');
+          draw();
+        });
+      });
+    });
+    draw();
+  }
+
   // Marcos amarillos sincronizados con el clip (como en el vídeo de la reseña).
   root.querySelectorAll('.sbx-media[data-marks]').forEach(function (box) {
     var marks = JSON.parse(box.getAttribute('data-marks'));
@@ -843,6 +1195,7 @@
       "name": "El Libro Total: reseña completa",
       "author": {"@type": "Organization", "name": "SonorBooks", "url": "https://sonorbooks.com"},
       "datePublished": "2026-10-10",
+      "dateModified": "2026-10-11",
       "reviewRating": {"@type": "Rating", "ratingValue": "8.2", "bestRating": "10", "worstRating": "0"},
       "itemReviewed": {"@type": "SoftwareApplication", "name": "El Libro Total", "applicationCategory": "BookApplication", "operatingSystem": "Web, Android, iOS", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}
     },
@@ -853,7 +1206,9 @@
         {"@type": "Question", "name": "¿Hace falta registrarse para escuchar audiolibros en El Libro Total?", "acceptedAnswer": {"@type": "Answer", "text": "No. Puedes leer y escuchar sin cuenta. El registro gratuito añade historial, favoritos, marcadores y notas."}},
         {"@type": "Question", "name": "¿Cuántos audiolibros tiene El Libro Total?", "acceptedAnswer": {"@type": "Answer", "text": "6.698 según el contador de su sección de Audiolibros a 10 de octubre de 2026, casi todos en español."}},
         {"@type": "Question", "name": "¿Se pueden descargar los audiolibros de El Libro Total?", "acceptedAnswer": {"@type": "Answer", "text": "No de forma oficial. La app permite leer sin conexión (EPUB y PDF), pero para escuchar el audio necesitas internet."}},
-        {"@type": "Question", "name": "¿Las voces de El Libro Total son humanas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Cada audiolibro acredita a su narrador y el desarrollador asegura que son voces naturales, no un lector automático."}}
+        {"@type": "Question", "name": "¿Las voces de El Libro Total son humanas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Cada audiolibro acredita a su narrador y el desarrollador asegura que son voces naturales, no un lector automático."}},
+        {"@type": "Question", "name": "¿Es legal El Libro Total?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Publica obras de dominio público y obras con autorización de sus autores o traductores."}},
+        {"@type": "Question", "name": "¿Se puede cambiar la velocidad en El Libro Total?", "acceptedAnswer": {"@type": "Answer", "text": "Sí en el móvil (web y app), de 0,8× a 2×. En la web de ordenador, no."}}
       ]
     }
   ]
