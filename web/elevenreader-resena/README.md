@@ -16,9 +16,12 @@ Es la reseña que acompaña al vídeo de YouTube: el vídeo y la descripción en
 - Probador de las opciones del lector: tema, color del resaltado (colores reales de la app), tamaño y velocidad,
   y el menú de los tres puntos de un documento recreado con sus opciones.
 - Precios mensual/anual, la factura que nos mostró la app (11,31 $/mes) y la oferta con **las condiciones de la web copiadas tal cual**.
-- Calendario de 3 a 30 días, dónde está el botón (al final de la fila de plataformas de la página de inicio, o «Probar gratis»
-  en la propia reseña) y los 5 pasos con una tarjeta fija de la oferta al lado.
-- Quedarse o cancelar (web, iPhone, Android), nota por apartados, preguntas frecuentes, fuentes y aviso de afiliado.
+- Calendario de 3 a 30 días y los 5 pasos (el primero dice dónde está el botón: la última tarjeta de las plataformas en la
+  página de inicio, o cualquier botón de la oferta de la reseña), con una tarjeta fija de la oferta al lado.
+- Quedarse o cancelar (web, iPhone, Android), nota por apartados, 12 preguntas frecuentes y, al final, «Cómo lo probamos»
+  en letra pequeña con las fuentes y el aviso de afiliado.
+- SEO (12/10/2026): título «ElevenReader: opiniones, precio y 30 días gratis (2026)», títulos de sección con las búsquedas
+  habituales (qué es, precio, opiniones, español, sin conexión, cancelar, gratis) y preguntas frecuentes en `FAQPage`.
 - Datos estructurados: `Review` (8/10, con puntos positivos y negativos), `BreadcrumbList` y `FAQPage`.
 
 Sin dependencias externas, sin cookies ni almacenamiento en el navegador. Todo se ve sin JavaScript; con
@@ -36,8 +39,6 @@ media/audio/         3 fragmentos de la app en mp3 + tiempos de cada palabra (fu
 site/                cabecera, pie y estilos del sitio copiados de la página actual (solo para construir)
 build.py             genera dist/ (producción) y preview/ (vista previa privada)
 
-../../tools/er_review_button.mjs   rehace media/sonorbooks-resena-boton.webp (el veredicto con su botón) y da la
-                                   posición del aro; úsalo si cambia el veredicto (luego, `build.py`).
 ```
 
 `python3 web/elevenreader-resena/build.py` genera:

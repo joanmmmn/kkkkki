@@ -61,8 +61,9 @@ def jsonld():
     faq = re.findall(r'<details><summary>(.*?)<i>.*?</summary><div><p>(.*?)</p></div></details>', read(os.path.join(SRC, 'page.html')))
     strip = lambda s: html.unescape(re.sub(r'<[^>]+>', '', s)).strip()
     graph = [
-        {'@type': 'Review', '@id': url + '#review', 'url': url, 'name': 'ElevenReader: ¿merece la pena? La probamos por dentro',
-         'inLanguage': 'es-ES', 'datePublished': '2026-10-11', 'dateModified': '2026-10-11',
+        {'@type': 'Review', '@id': url + '#review', 'url': url, 'name': 'ElevenReader: opiniones, precio y si merece la pena',
+         'image': 'https://sonorbooks.com' + PROD_A + '/media/elevenreader-resena-og.jpg',
+         'inLanguage': 'es-ES', 'datePublished': '2026-10-11', 'dateModified': '2026-10-12',
          'author': {'@type': 'Organization', 'name': 'Equipo editorial SonorBooks', 'url': 'https://sonorbooks.com/es/blog/criterios-editoriales/'},
          'publisher': {'@type': 'Organization', 'name': 'SonorBooks', 'url': 'https://sonorbooks.com/es/'},
          'reviewRating': {'@type': 'Rating', 'ratingValue': '8', 'bestRating': '10', 'worstRating': '0'},

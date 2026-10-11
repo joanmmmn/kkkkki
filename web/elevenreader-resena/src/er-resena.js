@@ -184,16 +184,6 @@ class Player {
 $$('[data-player]').forEach((el) => new Player(el));
 document.addEventListener('visibilitychange', () => { if (document.hidden) players.forEach((p) => p.pause()); });
 
-/* ---------- Titular: la página se «lee» sola al cargar ---------- */
-(() => {
-  const hw = $$('.er-h1 .hw');
-  if (reduced || !hw.length) return;
-  hw.forEach((w, i) => {
-    setTimeout(() => { hw[i - 1]?.classList.remove('is-on'); w.classList.add('is-on'); }, 450 + i * 300);
-  });
-  setTimeout(() => hw.at(-1).classList.remove('is-on'), 450 + hw.length * 300 + 350);
-})();
-
 /* ---------- Laboratorio de opciones del lector ---------- */
 (() => {
   const lab = $('[data-lab]');
