@@ -5,6 +5,7 @@ import { Stage } from '../../components/Stage';
 import { LogoIcon } from '../../components/Logo';
 import { CheckIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
+import { Grow } from '../../components/Grow';
 import { IcCalendar } from '../er/icons';
 import { clamp, easeOut } from '../../lib/anim';
 import { Crop, st } from './AppView';
@@ -32,18 +33,18 @@ export const X13KeepCancel: React.FC<{ lead: number; dur: number }> = () => {
   const ring = interpolate(frame, [fFact + 6, fFact + 30], [0, 1], { ...clamp, easing: easeOut });
   const stamp = sp(fPag + 2, 9, 220);
   const panel = (accent: string, s: number, o: number, children: React.ReactNode, width = 800) => (
-    <div style={{ width, height: 700, boxSizing: 'border-box', padding: '44px 52px', borderRadius: 40, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card, opacity: s * o, transform: `translateY(${(1 - s) * 60}px) scale(${0.96 + 0.04 * s})`, display: 'flex', flexDirection: 'column', gap: 26, position: 'relative', overflow: 'hidden' }}>
+    <div style={{ width, height: 580, boxSizing: 'border-box', padding: '44px 52px', borderRadius: 40, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card, opacity: s * o, transform: `translateY(${(1 - s) * 60}px) scale(${0.96 + 0.04 * s})`, display: 'flex', flexDirection: 'column', gap: 26, position: 'relative', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', left: 0, top: 0, right: 0, height: 12, background: accent }} />
       {children}
     </div>
   );
   const bullet = (f: number, text: React.ReactNode, icon: React.ReactNode) => {
     const s = sp(f, 14, 180);
-    return <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: font.sans, fontSize: 40, fontWeight: 500, opacity: s, transform: `translateX(${(1 - s) * -30}px)` }}>{icon}{text}</div>;
+    return <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: font.sans, fontSize: 36, fontWeight: 500, whiteSpace: 'nowrap', opacity: s, transform: `translateX(${(1 - s) * -30}px)` }}>{icon}{text}</div>;
   };
   return (
     <Stage tone="warm">
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 46 }}>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
         {panel(color.green, L, dimL, (
           <>
             <div style={{ fontFamily: font.sans, fontSize: 40, fontWeight: 500, color: color.ink2 }}>¿Te ha gustado?</div>
@@ -51,9 +52,10 @@ export const X13KeepCancel: React.FC<{ lead: number; dur: number }> = () => {
             <div style={{ fontFamily: font.sans, fontSize: 32, color: color.ink2, marginTop: -10, opacity: sp(fQued + 10) }}>con la suscripción: no hace falta cancelar</div>
             <div style={{ height: 1, background: color.line, margin: '8px 0' }} />
             {bullet(fNada - 10, 'No tienes que hacer nada', <CheckIcon size={48} />)}
-            {bullet(fPrim - 6, <span>Los primeros meses, <b>−15 %</b></span>, <div style={{ width: 48, height: 48, borderRadius: 24, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><LogoIcon size={30} /></div>)}
+            {bullet(fPrim - 6, <span>Los primeros meses, <b>−15 %</b></span>, <div style={{ width: 48, height: 48, borderRadius: 24, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><LogoIcon size={30} /></div>)}
           </>
         ), 660)}
+        <Grow at={fNo - 8} w={990} gap={46} rise={0}>
         {panel(color.red, R, 1, (
           <>
             <div style={{ fontFamily: font.sans, fontSize: 40, fontWeight: 500, color: color.ink2 }}>¿No te convence?</div>
@@ -74,6 +76,7 @@ export const X13KeepCancel: React.FC<{ lead: number; dur: number }> = () => {
             )}
           </>
         ), 990)}
+        </Grow>
       </AbsoluteFill>
       <Sfx name="card_flip" at={2} />
       <Sfx name="success" at={fQued} volume={0.6} />
