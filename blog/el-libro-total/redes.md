@@ -20,8 +20,9 @@ La biblioteca GRATIS con 6.698 audiolibros que casi nadie conoce 📚🎧 ¿Tram
 ```
 
 ## YouTube Shorts
-- **Título:** 6.698 audiolibros GRATIS… ¿dónde está la trampa? #audiolibros
-- **Descripción:** Reseña completa: https://sonorbooks.com/blog/el-libro-total · Vídeo largo: [enlace al vídeo]
+- **Título:** 6.698 audiolibros GRATIS en español, con voz humana 🤯 ¿Dónde está la trampa? #ElLibroTotal #AudiolibrosGratis
+- **Descripción:** El Libro Total: audiolibros gratis, sin anuncios ni registro, y lees y escuchas a la vez. Reseña completa: https://sonorbooks.com/blog/el-libro-total #Audiolibros
+- **Vídeo relacionado:** enlázalo al vídeo largo (opción «Vídeo relacionado» al subir el Short).
 
 ## X (Twitter)
 ```
