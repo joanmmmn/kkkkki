@@ -57,4 +57,9 @@ Reseña completa (con capturas y fuentes): https://sonorbooks.com/blog/el-libro-
 - El bloque de marca ocupa el tercio superior del cierre. La mitad inferior queda libre para estos dos elementos.
 
 ## Miniatura
-`video/out/elt/thumbnail.png` (1280×720): «GRATIS» en grande con el subrayado amarillo, el lector de El Libro Total con el texto resaltado y el logo de SonorBooks.
+`deliverables/el-libro-total/miniatura_youtube.jpg` (1280×720). Es la misma imagen que la portada del artículo del blog:
+- Fondo amarillo de marca, «6.698 audiolibros GRATIS» y la pegatina «¿Dónde está la trampa?».
+- El lector de El Libro Total con el texto resaltado y una píldora de audio.
+- El logo de El Libro Total queda fuera de la esquina inferior derecha, donde YouTube pone la duración.
+
+Otros tamaños: `portada_blog_1920x1080.jpg` y `portada_og_1200x630.jpg`. Se generan con `npx remotion still src/index.ts ELTCover|ELTCover1080|ELTCoverOG`.

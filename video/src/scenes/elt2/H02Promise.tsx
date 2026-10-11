@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -51,11 +51,11 @@ export const H02Promise: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       </Phase>
       <Phase from={fBlog} to={dur} out={4}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50, transform: 'scale(1.14)' }}>
-          <div style={{ position: 'relative', overflow: 'hidden', width: 1240, display: 'flex', gap: 44, background: '#fff', borderRadius: 36, padding: 40, boxShadow: shadow.card, border: `1px solid ${color.line}`, transform: `translateY(${(1 - card) * 60}px) rotate(${(1 - card) * -2}deg)` }}>
+          <div style={{ position: 'relative', overflow: 'hidden', width: 1300, alignItems: 'center', display: 'flex', gap: 44, background: '#fff', borderRadius: 36, padding: 40, boxShadow: shadow.card, border: `1px solid ${color.line}`, transform: `translateY(${(1 - card) * 60}px) rotate(${(1 - card) * -2}deg)` }}>
             <div style={{ position: 'absolute', top: -40, bottom: -40, width: 220, left: interpolate(frame, [fBlog + 22, fBlog + 52], [-300, 1400], { ...clamp, easing: easeInOut }), background: 'linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,236,150,0.55) 50%, rgba(255,255,255,0) 100%)', transform: 'skewX(-18deg)', zIndex: 2 }} />
-            <div style={{ width: 340, height: 220, borderRadius: 22, background: `linear-gradient(135deg, ${color.eltNavy}, #1c3554)`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 10 }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, color: '#fff', fontSize: 34, letterSpacing: 1 }}>EL LIBRO TOTAL</div>
-              <div style={{ fontFamily: font.sans, color: color.yellow, fontSize: 26, fontWeight: 500 }}>Reseña completa</div>
+            {/* Portada real del artículo (la misma imagen que la miniatura de YouTube) */}
+            <div style={{ width: 416, height: 234, flexShrink: 0, borderRadius: 20, overflow: 'hidden', boxShadow: '0 14px 34px rgba(0,0,0,0.18)' }}>
+              <Img src={staticFile('elt/img/portada_blog.jpg')} style={{ width: '100%', height: '100%', display: 'block', transform: `scale(${1.1 - 0.1 * card})` }} />
             </div>
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 14 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: font.sans, fontSize: 24, letterSpacing: 4, color: color.muted, fontWeight: 500 }}><LogoIcon size={30} /> BLOG DE SONORBOOKS</div>

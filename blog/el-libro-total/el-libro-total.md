@@ -8,8 +8,8 @@ updated: "2026-10-10"
 author: "Equipo SonorBooks"
 category: "Reseñas de plataformas"
 tags: ["El Libro Total", "audiolibros gratis", "biblioteca digital", "audiolibros en español", "reseña"]
-cover_image: "img/el-libro-total-audiolectura-resaltado.webp"
-cover_alt: "Lector de El Libro Total con Crimen y castigo y la audiolectura activada"
+cover_image: "web/media/portada.webp"
+cover_alt: "El Libro Total: 6.698 audiolibros gratis. Reseña de SonorBooks"
 youtube_id: "PENDIENTE"
 rating: 8.2
 ---
