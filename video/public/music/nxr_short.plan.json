@@ -30,7 +30,7 @@
     "negative_local_styles": [
      "slow fade in"
     ],
-    "duration_ms": 4200,
+    "duration_ms": 3980,
     "lines": []
    },
    {
@@ -43,7 +43,7 @@
     "negative_local_styles": [
      "breakdown"
     ],
-    "duration_ms": 17960,
+    "duration_ms": 16160,
     "lines": []
    },
    {
@@ -56,7 +56,7 @@
     "negative_local_styles": [
      "riser"
     ],
-    "duration_ms": 7900,
+    "duration_ms": 7460,
     "lines": []
    },
    {
@@ -69,7 +69,7 @@
     "negative_local_styles": [
      "aggressive drums"
     ],
-    "duration_ms": 16840,
+    "duration_ms": 14280,
     "lines": []
    },
    {
@@ -81,7 +81,7 @@
     "negative_local_styles": [
      "abrupt cut"
     ],
-    "duration_ms": 5160,
+    "duration_ms": 5200,
     "lines": []
    }
   ]

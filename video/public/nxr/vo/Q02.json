@@ -1,0 +1,104 @@
+{
+ "id": "Q02",
+ "hash": "6046afa2db4e",
+ "text": "Por menos de diez euros tienes audiolibros y ebooks en una sola app, con cuatro perfiles y modo infantil.",
+ "duration": 6.88,
+ "words": [
+  {
+   "w": "Por",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "menos",
+   "s": 0.24,
+   "e": 0.4
+  },
+  {
+   "w": "de",
+   "s": 0.48,
+   "e": 0.56
+  },
+  {
+   "w": "diez",
+   "s": 0.64,
+   "e": 0.8
+  },
+  {
+   "w": "euros",
+   "s": 0.84,
+   "e": 1.2
+  },
+  {
+   "w": "tienes",
+   "s": 1.28,
+   "e": 1.6
+  },
+  {
+   "w": "audiolibros",
+   "s": 1.72,
+   "e": 2.24
+  },
+  {
+   "w": "y",
+   "s": 2.32,
+   "e": 2.36
+  },
+  {
+   "w": "ebooks",
+   "s": 2.4,
+   "e": 2.8
+  },
+  {
+   "w": "en",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "una",
+   "s": 3.04,
+   "e": 3.28
+  },
+  {
+   "w": "sola",
+   "s": 3.32,
+   "e": 3.6
+  },
+  {
+   "w": "app,",
+   "s": 3.68,
+   "e": 4.2
+  },
+  {
+   "w": "con",
+   "s": 4.24,
+   "e": 4.4
+  },
+  {
+   "w": "cuatro",
+   "s": 4.44,
+   "e": 4.64
+  },
+  {
+   "w": "perfiles",
+   "s": 4.72,
+   "e": 5.36
+  },
+  {
+   "w": "y",
+   "s": 5.44,
+   "e": 5.52
+  },
+  {
+   "w": "modo",
+   "s": 5.64,
+   "e": 5.76
+  },
+  {
+   "w": "infantil.",
+   "s": 5.84,
+   "e": 6.88
+  }
+ ],
+ "speechEnd": 6.88
+}

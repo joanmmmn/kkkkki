@@ -32,7 +32,7 @@
      "slow fade in",
      "silence"
     ],
-    "duration_ms": 16220,
+    "duration_ms": 15540,
     "lines": []
    },
    {
@@ -45,7 +45,7 @@
     "negative_local_styles": [
      "big build-ups"
     ],
-    "duration_ms": 46980,
+    "duration_ms": 41560,
     "lines": []
    },
    {
@@ -61,7 +61,7 @@
      "breakdown",
      "sudden stops"
     ],
-    "duration_ms": 36300,
+    "duration_ms": 31760,
     "lines": []
    },
    {
@@ -74,7 +74,7 @@
     "negative_local_styles": [
      "loud drums"
     ],
-    "duration_ms": 41400,
+    "duration_ms": 37960,
     "lines": []
    },
    {
@@ -87,7 +87,7 @@
     "negative_local_styles": [
      "riser"
     ],
-    "duration_ms": 26060,
+    "duration_ms": 22100,
     "lines": []
    },
    {
@@ -102,7 +102,7 @@
      "loud drums",
      "riser"
     ],
-    "duration_ms": 46480,
+    "duration_ms": 42740,
     "lines": []
    },
    {
@@ -115,7 +115,7 @@
     "negative_local_styles": [
      "abrupt changes"
     ],
-    "duration_ms": 16760,
+    "duration_ms": 14520,
     "lines": []
    },
    {
@@ -129,7 +129,7 @@
     "negative_local_styles": [
      "aggressive drums"
     ],
-    "duration_ms": 38500,
+    "duration_ms": 33060,
     "lines": []
    },
    {
@@ -143,7 +143,7 @@
      "abrupt cut",
      "new melody"
     ],
-    "duration_ms": 9460,
+    "duration_ms": 8720,
     "lines": []
    }
   ]

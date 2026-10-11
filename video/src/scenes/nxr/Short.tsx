@@ -31,7 +31,7 @@ const PIECES: Piece[] = (() => {
   });
 })();
 export const NXR_SHORT_TOTAL = PIECES.reduce((a, p) => a + p.dur, 0);
-export const NXR_SHORT_MUSIC: string | null = null; // misma música que la reseña, cuando exista
+export const NXR_SHORT_MUSIC: string | null = 'music/nxr_short.mp3'; // ElevenLabs Music (tools/nxr_music_plan.py)
 
 // ——— Subtítulos: palabras de la locución (o estimadas a 13 caracteres/s si aún no hay voz), en grupos cortos ———
 type CW = { w: string; s: number; e: number };
@@ -166,8 +166,8 @@ const Q03: React.FC<SP> = ({ lead, dur }) => {
   const fMar = at('marcadores');
   const fDes = at('descargas');
   const shots: Shot[] = [
-    align('05_leer', 37.2, fLec + 14, 20, { hold: 48.9 }),
-    { rec: '06_escuchar', at: fRep - 6, start: 61.0, hold: 63.5 },
+    align('05_leer', 37.2, fLec + 30, 36, { hold: 48.9 }),
+    { rec: '06_escuchar', at: fRep + 24, start: 61.0, hold: 63.5 },
     align('06_escuchar', 20.14, fVel + 2, 10, { hold: 28.5 }),
     align('06_escuchar', 63.9, fTem + 2, 10, { hold: 75.5 }),
     align('05_leer', 94.0, fMar + 4, 14, { hold: 97.8 }),
@@ -177,17 +177,15 @@ const Q03: React.FC<SP> = ({ lead, dur }) => {
     <Stage tone="warm">
       <Headline text="Lector y reproductor" hi="reproductor" />
       <SwapTag items={[
-        { at: fLec, label: 'Letra, fondo y márgenes' },
-        { at: fRep, label: 'Reproductor completo' },
         { at: fVel, label: 'Velocidad de 0,4x a 2x' },
         { at: fTem, label: 'Temporizador para dormir' },
         { at: fMar, label: 'Marcadores' },
         { at: fDes, label: 'Descargas sin conexión' },
       ]} />
       <Phone dur={dur} shots={shots} taps={[
-        { f: fLec + 12, x: 332, y: 869 }, { f: fVel, x: 252, y: 1198 }, { f: fTem, x: 91, y: 1198 }, { f: fMar + 2, x: 403, y: 1276 }, { f: fDes + 1, x: 293, y: 284 },
+        { f: fLec + 28, x: 332, y: 869 }, { f: fVel, x: 252, y: 1198 }, { f: fTem, x: 91, y: 1198 }, { f: fMar + 2, x: 403, y: 1276 }, { f: fDes + 1, x: 293, y: 284 },
       ]} />
-      {[fLec, fRep, fVel, fTem, fMar, fDes].map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.7} />)}
+      {[fVel, fTem, fMar, fDes].map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.7} />)}
     </Stage>
   );
 };
@@ -199,7 +197,7 @@ const Q04: React.FC<SP> = ({ lead }) => {
   const at = (w: string, n = 0) => lead + wf('Q04', w, n);
   const fMalo = at('malo');
   const items = [
-    { f: at('horas'), icon: <ClockIcon size={58} />, t: 'Límite de horas en los planes baratos' },
+    { f: at('baratos'), icon: <ClockIcon size={58} />, t: 'Límite de horas en los planes baratos' },
     { f: at('web'), icon: <GlobeIcon size={58} />, t: 'No hay versión web' },
     { f: at('pdf'), icon: <PdfIcon size={58} />, t: 'No puedes subir tus PDF' },
   ];
@@ -240,15 +238,17 @@ const Q05: React.FC<SP> = ({ lead }) => {
   const at = (w: string, n = 0) => lead + wf('Q05', w, n);
   const fTreinta = at('treinta');
   const fCatorce = at('catorce');
+  const fSonor = at('sonorbooks');
   const roll = interpolate(frame, [fTreinta - 14, fTreinta + 8], [14, 30], { ...clamp, easing: easeOut });
-  const sBadge = spring({ frame: frame - fTreinta + 16, fps, config: { damping: 12, stiffness: 150 } });
+  const sBadge = spring({ frame: frame - Math.min(fSonor + 4, fTreinta - 16), fps, config: { damping: 12, stiffness: 150 } });
   const sLogos = spring({ frame: frame - 2, fps, config: { damping: 18, stiffness: 150 } });
+  const lift = interpolate(frame, [fSonor - 8, fSonor + 10], [0, 1], { ...clamp, easing: easeInOut });
   const sVez = spring({ frame: frame - fCatorce, fps, config: { damping: 16, stiffness: 180 } });
   const strike = interpolate(frame, [fCatorce + 6, fCatorce + 18], [0, 1], { ...clamp, easing: easeOut });
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ alignItems: 'center' }}>
-        <div style={{ position: 'absolute', top: 200, display: 'flex', alignItems: 'center', gap: 26, opacity: sLogos, transform: `translateY(${(1 - sLogos) * -30}px)` }}>
+        <div style={{ position: 'absolute', top: 200, display: 'flex', alignItems: 'center', gap: 26, opacity: sLogos, transform: `translateY(${(1 - sLogos) * -30 + (1 - lift) * 520}px) scale(${1 + 0.6 * (1 - lift)})` }}>
           <LogoIcon size={84} />
           <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.muted }}>×</span>
           <NextoryLogo width={260} />

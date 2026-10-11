@@ -52,16 +52,19 @@ def main():
     for i, sc in enumerate(scenes):
         if only and sc['id'] not in only:
             continue
+        # `say` (opcional): texto que se envía a la voz cuando hace falta forzar la pronunciación (p. ej. «Néxtori»);
+        # `text` sigue siendo lo que se ve en subtítulos y lo que se guarda en las palabras alineadas.
+        spoken = sc.get('say', sc['text'])
         body = {
-            'text': sc['text'],
+            'text': spoken,
             'model_id': cfg['model_id'],
             'voice_settings': {**cfg['voice_settings'], **sc.get('voice_settings', {})},
             'language_code': cfg.get('language_code', 'es'),
-            'previous_text': scenes[i - 1]['text'] if i > 0 else None,
-            'next_text': scenes[i + 1]['text'] if i + 1 < len(scenes) else None,
+            'previous_text': scenes[i - 1].get('say', scenes[i - 1]['text']) if i > 0 else None,
+            'next_text': scenes[i + 1].get('say', scenes[i + 1]['text']) if i + 1 < len(scenes) else None,
         }
         # La caché solo depende del texto propio y los ajustes (no de las escenas vecinas) para no regenerar de más.
-        h = hashlib.sha1(json.dumps([sc['text'], body['model_id'], body['voice_settings'], cfg['voice_id']], sort_keys=True).encode()).hexdigest()[:12]
+        h = hashlib.sha1(json.dumps([sc['text'], body['model_id'], body['voice_settings'], cfg['voice_id']] + ([spoken] if spoken != sc['text'] else []), sort_keys=True).encode()).hexdigest()[:12]
         meta_path = os.path.join(out, f"{sc['id']}.json")
         if not force and os.path.exists(meta_path) and json.load(open(meta_path)).get('hash') == h:
             print(f"{sc['id']}: en caché")
@@ -74,6 +77,10 @@ def main():
         open(os.path.join(out, f"{sc['id']}.mp3"), 'wb').write(audio)
         al = res.get('normalized_alignment') or res['alignment']
         words = words_from_alignment(res['alignment'])
+        shown = sc['text'].split()
+        if spoken != sc['text'] and len(shown) == len(words):  # las palabras alineadas, con la grafía del guion
+            for w, t in zip(words, shown):
+                w['w'] = t
         dur = res['alignment']['character_end_times_seconds'][-1]
         json.dump({'id': sc['id'], 'hash': h, 'text': sc['text'], 'duration': dur, 'words': words}, open(meta_path, 'w'), ensure_ascii=False, indent=1)
         total += len(sc['text'])

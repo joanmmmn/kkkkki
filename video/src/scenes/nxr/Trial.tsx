@@ -31,16 +31,20 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
   const at = (w: string, n = 0) => lead + wf('P01', w, n);
   const fTreinta = at('treinta');
   const fCatorce = at('catorce');
+  const fSonor = at('sonorbooks');
   const roll = interpolate(frame, [fTreinta - 14, fTreinta + 8], [14, 30], { ...clamp, easing: easeOut });
-  const sBadge = spring({ frame: frame - fTreinta + 16, fps, config: { damping: 12, stiffness: 150 } });
+  // La insignia entra con «SonorBooks» marcando 14 y sube a 30 cuando la voz dice «treinta».
+  const sBadge = spring({ frame: frame - Math.min(fSonor + 4, fTreinta - 16), fps, config: { damping: 12, stiffness: 150 } });
   const sLogos = spring({ frame: frame - 2, fps, config: { damping: 18, stiffness: 150 } });
+  // Los logos empiezan grandes en el centro y suben a su sitio cuando entra la insignia.
+  const lift = interpolate(frame, [fSonor - 8, fSonor + 10], [0, 1], { ...clamp, easing: easeInOut });
   const sVez = spring({ frame: frame - fCatorce, fps, config: { damping: 16, stiffness: 180 } });
   const strike = interpolate(frame, [fCatorce + 6, fCatorce + 18], [0, 1], { ...clamp, easing: easeOut });
   const rays = frame * 0.25;
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ position: 'absolute', top: 120, display: 'flex', alignItems: 'center', gap: 26, opacity: sLogos, transform: `translateY(${(1 - sLogos) * -30}px)` }}>
+        <div style={{ position: 'absolute', top: 120, display: 'flex', alignItems: 'center', gap: 26, opacity: sLogos, transform: `translateY(${(1 - sLogos) * -30 + (1 - lift) * 330}px) scale(${1 + 0.8 * (1 - lift)})` }}>
           <LogoIcon size={70} />
           <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.muted }}>×</span>
           <NextoryLogo width={210} />

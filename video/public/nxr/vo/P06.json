@@ -1,0 +1,69 @@
+{
+ "id": "P06",
+ "hash": "f389e94c2e39",
+ "text": "Encuentra dónde escuchar tu próximo libro, y a qué precio, en SonorBooks.",
+ "duration": 4.88,
+ "words": [
+  {
+   "w": "Encuentra",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "dónde",
+   "s": 0.64,
+   "e": 0.96
+  },
+  {
+   "w": "escuchar",
+   "s": 1.04,
+   "e": 1.36
+  },
+  {
+   "w": "tu",
+   "s": 1.44,
+   "e": 1.6
+  },
+  {
+   "w": "próximo",
+   "s": 1.64,
+   "e": 2.0
+  },
+  {
+   "w": "libro,",
+   "s": 2.12,
+   "e": 2.56
+  },
+  {
+   "w": "y",
+   "s": 2.6,
+   "e": 2.64
+  },
+  {
+   "w": "a",
+   "s": 2.72,
+   "e": 2.8
+  },
+  {
+   "w": "qué",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "precio,",
+   "s": 3.04,
+   "e": 3.68
+  },
+  {
+   "w": "en",
+   "s": 3.8,
+   "e": 3.92
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 4.0,
+   "e": 4.88
+  }
+ ],
+ "speechEnd": 4.88
+}

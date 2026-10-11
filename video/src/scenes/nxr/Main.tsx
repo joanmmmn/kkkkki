@@ -7,7 +7,7 @@ import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { ChapterRail } from './kit';
 
-export const NXR_MUSIC: string | null = null; // ElevenLabs Music (pendiente de la clave)
+export const NXR_MUSIC: string | null = 'music/nxr_bed.mp3'; // ElevenLabs Music, secciones cuadradas con las escenas (tools/nxr_music_plan.py)
 
 // Transición entre escenas: la saliente avanza y se desenfoca; la entrante llega desde atrás.
 const IN = 11;

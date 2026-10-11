@@ -8,7 +8,7 @@ import { CheckIcon, CrossIcon, HeadphonesIcon, BookIcon } from '../../components
 import { ClockIcon, GlobeIcon, InfinityIcon, PhoneIcon, TabletIcon, UserIcon } from '../../components/Icons2';
 import { NextoryLogo } from '../nx/common';
 import { wf } from './timeline';
-import { AppPhone, BigTitle, CountUp, FeatureTag } from './kit';
+import { AppPhone, BigTitle, CountUp, FeatureTag, Shot } from './kit';
 
 type P = { lead: number; dur: number };
 const useSpring = (at: number, damping = 16, stiffness = 160) => {
@@ -23,11 +23,26 @@ export const R01Hook: React.FC<P> = ({ lead, dur }) => {
   const fBueno = at('bueno');
   const fMalo = at('malo');
   const fGratis = at('treinta');
+  const fLey = at('leyendo');
+  const fEsc = at('escuchando');
+  const fToc = at('tocando');
+  const fBot = at('boton');
+  const fFinal = at('final');
+  // El móvil va enseñando lo que dice la voz: portada, lector, reproductor, dos toques y El Librarian.
+  const shots: Shot[] = [
+    { rec: '01_inicio', at: 0, start: 3.6, hold: 15.0 },
+    { rec: '05_leer', at: fLey - 4, start: 13.2, hold: 15.4 },
+    { rec: '06_escuchar', at: fEsc - 4, start: 5.0, hold: 19.5 },
+    { rec: '05_leer', at: fToc - 4, start: Math.max(0, 37.2 - 16 / 50), hold: 48.9 },
+    { rec: '06_escuchar', at: fBot + 2, start: Math.max(0, 20.14 - 10 / 50), hold: 28.5 },
+    { rec: '02_librarian_b', at: fBueno - 6, start: 25.0, hold: 32.0 },
+    { rec: '13_diluvio', at: fFinal - 6, start: 0.3, hold: 11.0 },
+  ];
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ position: 'absolute', right: 250, top: 70 }}>
-          <AppPhone rec="01_inicio" startAt={0.5} w={410}
+          <AppPhone shots={shots} w={410} taps={[{ f: fToc + 10, x: 332, y: 869 }, { f: fBot + 10, x: 252, y: 1198 }]}
             cam={[{ f: 0, rx: 14, ry: -38, rz: 6, s: 0.86, x: 120, y: 60 }, { f: 34, rx: 4, ry: -16, rz: 2, s: 1, x: 0, y: 0 }, { f: dur, rx: 3, ry: -11, rz: 1.5, s: 1.02, x: -6, y: -4 }]} />
         </div>
         <div style={{ position: 'absolute', left: 150, top: 250, width: 900 }}>
@@ -57,15 +72,17 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
   const fEbooks = at('ebooks');
   const fIdiomas = at('idiomas');
   const fNubico = at('nubico');
+  const fEso = at('eso');
   const fMovil = at('movil');
+  const fTablet = at('tablet');
   const fWeb = at('web');
   // Tres fases que se relevan con un fundido: A (marca y catálogo), B (Nubico → Nextory) y C (dispositivos).
   const xA = interpolate(frame, [fNubico - 12, fNubico + 2], [0, 1], { ...clamp, easing: easeInOut });
-  const xB = interpolate(frame, [fMovil - 12, fMovil + 2], [0, 1], { ...clamp, easing: easeInOut });
+  const xB = interpolate(frame, [fEso - 12, fEso + 2], [0, 1], { ...clamp, easing: easeInOut });
   const sLogo = useSpring(lead);
   const sNub = useSpring(fNubico);
   const strike = interpolate(frame, [fNubico + 14, fNubico + 30], [0, 1], { ...clamp, easing: easeOut });
-  const sMovil = useSpring(fMovil);
+  const sMovil = useSpring(fEso);
   const sWeb = useSpring(fWeb, 12, 200);
   const formats = [
     { f: fAudio, icon: <HeadphonesIcon size={46} />, label: 'Audiolibros' },
@@ -108,7 +125,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
         </AbsoluteFill>
       )}
       {/* Bloque 3: dispositivos */}
-      {frame >= fMovil - 12 && (
+      {frame >= fEso - 12 && (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ display: 'flex', gap: 44, opacity: sMovil, transform: `translateY(${(1 - sMovil) * 60}px) scale(1.25)` }}>
             {[{ i: <PhoneIcon size={84} />, l: 'Móvil', ok: true }, { i: <TabletIcon size={84} />, l: 'Tablet', ok: true }, { i: <GlobeIcon size={84} />, l: 'Web', ok: false }].map((d, k) => {
@@ -118,7 +135,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
                   opacity: d.ok ? 1 : 0.35 + 0.65 * s, filter: d.ok ? undefined : `grayscale(${s})`, transform: `translateY(${k * 0})` }}>
                   {d.i}
                   <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink }}>{d.l}</div>
-                  <div style={{ position: 'absolute', top: -18, right: -18, transform: `scale(${d.ok ? spring({ frame: frame - fMovil - 8 - k * 5, fps: 50, config: { damping: 12, stiffness: 200 } }) : s})` }}>
+                  <div style={{ position: 'absolute', top: -18, right: -18, transform: `scale(${d.ok ? spring({ frame: frame - (k === 0 ? fMovil : fTablet) + 2, fps: 50, config: { damping: 12, stiffness: 200 } }) : s})` }}>
                     {d.ok ? <CheckIcon size={64} /> : <CrossIcon size={64} />}
                   </div>
                 </div>
@@ -131,7 +148,9 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
       {formats.map((x) => <Sfx key={x.label} name="ui_pop" at={x.f} />)}
       <Sfx name="whoosh_soft" at={fNubico - 4} />
       <Sfx name="pencil_strike" at={fNubico + 14} />
-      <Sfx name="snap_in" at={fMovil} />
+      <Sfx name="snap_in" at={fEso} />
+      <Sfx name="tick_soft" at={fMovil} />
+      <Sfx name="tick_soft" at={fTablet} />
       <Sfx name="cross" at={fWeb} />
     </Stage>
   );
@@ -157,6 +176,7 @@ export const R03Planes: React.FC<P> = ({ lead, dur }) => {
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `translateY(${-up * 60}px) scale(1.12)` }}>
+        <BigTitle text="Tres planes" hi="planes" at={2} size={62} align="center" style={{ marginBottom: 40 }} />
         <div style={{ display: 'flex', gap: 40 }}>
           {plans.map((p, i) => {
             const s = spring({ frame: frame - p.f + 4, fps: 50, config: { damping: 15, stiffness: 150 } });

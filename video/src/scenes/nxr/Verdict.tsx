@@ -29,7 +29,7 @@ export const R11Extras: React.FC<P> = ({ lead }) => {
   const sNo = spring({ frame: frame - fNo, fps, config: { damping: 13, stiffness: 190 } });
   return (
     <Stage tone="warm">
-      <AbsoluteFill style={{ alignItems: 'center', paddingTop: 150 }}>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 40 }}>
         <BigTitle text="Más allá del móvil" hi="móvil" at={lead} size={84} align="center" />
         <div style={{ display: 'flex', gap: 30, marginTop: 70 }}>
           {items.map((it, i) => {

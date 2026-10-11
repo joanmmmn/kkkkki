@@ -1,0 +1,129 @@
+{
+ "id": "R09",
+ "hash": "89c1ca934bb6",
+ "text": "Puedes crear hasta tres perfiles más, de adulto, juvenil o infantil. El infantil solo muestra libros para niños y puedes protegerlo con un PIN.",
+ "duration": 9.68,
+ "words": [
+  {
+   "w": "Puedes",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "crear",
+   "s": 0.48,
+   "e": 0.64
+  },
+  {
+   "w": "hasta",
+   "s": 0.72,
+   "e": 0.88
+  },
+  {
+   "w": "tres",
+   "s": 0.96,
+   "e": 1.2
+  },
+  {
+   "w": "perfiles",
+   "s": 1.32,
+   "e": 1.76
+  },
+  {
+   "w": "más,",
+   "s": 1.8,
+   "e": 2.347
+  },
+  {
+   "w": "de",
+   "s": 2.373,
+   "e": 2.4
+  },
+  {
+   "w": "adulto,",
+   "s": 2.48,
+   "e": 3.227
+  },
+  {
+   "w": "juvenil",
+   "s": 3.333,
+   "e": 3.76
+  },
+  {
+   "w": "o",
+   "s": 3.84,
+   "e": 3.88
+  },
+  {
+   "w": "infantil.",
+   "s": 3.92,
+   "e": 5.0
+  },
+  {
+   "w": "El",
+   "s": 5.04,
+   "e": 5.08
+  },
+  {
+   "w": "infantil",
+   "s": 5.12,
+   "e": 5.68
+  },
+  {
+   "w": "solo",
+   "s": 5.76,
+   "e": 5.92
+  },
+  {
+   "w": "muestra",
+   "s": 5.96,
+   "e": 6.32
+  },
+  {
+   "w": "libros",
+   "s": 6.4,
+   "e": 6.64
+  },
+  {
+   "w": "para",
+   "s": 6.72,
+   "e": 6.88
+  },
+  {
+   "w": "niños",
+   "s": 6.96,
+   "e": 7.44
+  },
+  {
+   "w": "y",
+   "s": 7.52,
+   "e": 7.6
+  },
+  {
+   "w": "puedes",
+   "s": 7.68,
+   "e": 7.92
+  },
+  {
+   "w": "protegerlo",
+   "s": 8.0,
+   "e": 8.56
+  },
+  {
+   "w": "con",
+   "s": 8.64,
+   "e": 8.72
+  },
+  {
+   "w": "un",
+   "s": 8.8,
+   "e": 8.88
+  },
+  {
+   "w": "PIN.",
+   "s": 8.96,
+   "e": 9.68
+  }
+ ],
+ "speechEnd": 9.68
+}

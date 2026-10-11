@@ -20,7 +20,9 @@ const estSec = (id: string, word: string, nth = 0) => {
   return Math.max(0, i) / CPS;
 };
 // Fotograma (relativo al inicio de la locución) de una palabra: exacto con locución, estimado sin ella.
-export const wf = (id: string, word: string, nth = 0) => wordFrame(id, word, nth, estSec(id, word, nth) || 0.001);
+// Con locución, la estimación se escala a la duración real de la voz para elegir bien entre palabras repetidas.
+const voScale = (id: string) => (hasVO(id) ? (VOS[id].speechEnd ?? VOS[id].duration) / Math.max(0.1, textOf(id).length / CPS) : 1);
+export const wf = (id: string, word: string, nth = 0) => wordFrame(id, word, nth, (estSec(id, word, nth) || 0.001) * voScale(id));
 
 export type VoPart = { id: string; at: number };
 export type SceneDef = { id: string; vo: VoPart[]; lead: number; dur: number };

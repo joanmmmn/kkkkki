@@ -1,0 +1,94 @@
+{
+ "id": "R04B",
+ "hash": "3f76cde99312",
+ "text": "El buscador encuentra por título, autor o incluso narrador, y puedes filtrar por idioma, formato y categoría.",
+ "duration": 7.52,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "buscador",
+   "s": 0.24,
+   "e": 0.56
+  },
+  {
+   "w": "encuentra",
+   "s": 0.68,
+   "e": 1.12
+  },
+  {
+   "w": "por",
+   "s": 1.24,
+   "e": 1.36
+  },
+  {
+   "w": "título,",
+   "s": 1.4,
+   "e": 1.96
+  },
+  {
+   "w": "autor",
+   "s": 2.0,
+   "e": 2.56
+  },
+  {
+   "w": "o",
+   "s": 2.64,
+   "e": 2.72
+  },
+  {
+   "w": "incluso",
+   "s": 2.8,
+   "e": 3.2
+  },
+  {
+   "w": "narrador,",
+   "s": 3.24,
+   "e": 4.04
+  },
+  {
+   "w": "y",
+   "s": 4.08,
+   "e": 4.16
+  },
+  {
+   "w": "puedes",
+   "s": 4.2,
+   "e": 4.48
+  },
+  {
+   "w": "filtrar",
+   "s": 4.64,
+   "e": 4.96
+  },
+  {
+   "w": "por",
+   "s": 5.0,
+   "e": 5.04
+  },
+  {
+   "w": "idioma,",
+   "s": 5.12,
+   "e": 5.84
+  },
+  {
+   "w": "formato",
+   "s": 6.0,
+   "e": 6.2
+  },
+  {
+   "w": "y",
+   "s": 6.24,
+   "e": 6.32
+  },
+  {
+   "w": "categoría.",
+   "s": 6.4,
+   "e": 7.52
+  }
+ ],
+ "speechEnd": 7.52
+}

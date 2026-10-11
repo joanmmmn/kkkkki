@@ -1,0 +1,69 @@
+{
+ "id": "P01",
+ "hash": "303398259ba1",
+ "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis, en vez de catorce.",
+ "duration": 5.28,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "probarlo?",
+   "s": 0.4,
+   "e": 1.2
+  },
+  {
+   "w": "Desde",
+   "s": 1.28,
+   "e": 1.52
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.64,
+   "e": 2.24
+  },
+  {
+   "w": "tienes",
+   "s": 2.347,
+   "e": 2.56
+  },
+  {
+   "w": "treinta",
+   "s": 2.64,
+   "e": 2.96
+  },
+  {
+   "w": "días",
+   "s": 3.04,
+   "e": 3.28
+  },
+  {
+   "w": "gratis,",
+   "s": 3.52,
+   "e": 3.92
+  },
+  {
+   "w": "en",
+   "s": 4.0,
+   "e": 4.08
+  },
+  {
+   "w": "vez",
+   "s": 4.16,
+   "e": 4.24
+  },
+  {
+   "w": "de",
+   "s": 4.32,
+   "e": 4.4
+  },
+  {
+   "w": "catorce.",
+   "s": 4.44,
+   "e": 5.28
+  }
+ ],
+ "speechEnd": 4.99
+}

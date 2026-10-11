@@ -1,0 +1,94 @@
+{
+ "id": "Q03",
+ "hash": "64be207d4173",
+ "text": "El lector y el reproductor son muy completos: velocidad, temporizador, marcadores y descargas para usarlo sin conexión.",
+ "duration": 8.56,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "lector",
+   "s": 0.16,
+   "e": 0.48
+  },
+  {
+   "w": "y",
+   "s": 0.56,
+   "e": 0.587
+  },
+  {
+   "w": "el",
+   "s": 0.613,
+   "e": 0.64
+  },
+  {
+   "w": "reproductor",
+   "s": 0.72,
+   "e": 1.44
+  },
+  {
+   "w": "son",
+   "s": 1.52,
+   "e": 1.76
+  },
+  {
+   "w": "muy",
+   "s": 1.8,
+   "e": 2.0
+  },
+  {
+   "w": "completos:",
+   "s": 2.08,
+   "e": 3.0
+  },
+  {
+   "w": "velocidad,",
+   "s": 3.04,
+   "e": 3.92
+  },
+  {
+   "w": "temporizador,",
+   "s": 4.0,
+   "e": 4.96
+  },
+  {
+   "w": "marcadores",
+   "s": 5.04,
+   "e": 5.6
+  },
+  {
+   "w": "y",
+   "s": 5.68,
+   "e": 5.76
+  },
+  {
+   "w": "descargas",
+   "s": 5.92,
+   "e": 6.4
+  },
+  {
+   "w": "para",
+   "s": 6.48,
+   "e": 6.56
+  },
+  {
+   "w": "usarlo",
+   "s": 6.68,
+   "e": 7.04
+  },
+  {
+   "w": "sin",
+   "s": 7.12,
+   "e": 7.2
+  },
+  {
+   "w": "conexión.",
+   "s": 7.28,
+   "e": 8.56
+  }
+ ],
+ "speechEnd": 8.56
+}
