@@ -3,7 +3,10 @@
 y de la estructura de escenas de video/public/er/timeline.json (la misma que usa video/src/scenes/er/timeline.ts:
 lead 0,12 s, cola 0,32 s, extra por escena y, si hay varias locuciones, «gap» entre ellas).
 Uso: python3 tools/srt_er.py <salida.srt>"""
-import functools, json, math, re, sys
+import functools, json, math, os, re, sys
+
+OUT = os.path.abspath(sys.argv[1])
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))  # rutas relativas a la raíz del repo
 
 FPS = 50
 VO = 'video/public/er/vo'
@@ -42,5 +45,5 @@ out = []
 for i, (a, b, txt) in enumerate(cues):
     if i + 1 < len(cues): b = min(max(b, a + 0.9), cues[i + 1][0] - 0.02)
     out.append(f'{i + 1}\n{ts(a)} --> {ts(b)}\n{txt}\n')
-open(sys.argv[1], 'w', encoding='utf-8').write('\n'.join(out))
+open(OUT, 'w', encoding='utf-8').write('\n'.join(out))
 print(f'{len(out)} subtítulos · vídeo de {start / FPS:.2f} s ({start} fotogramas)')
