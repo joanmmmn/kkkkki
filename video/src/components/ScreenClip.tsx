@@ -9,12 +9,18 @@ import { Cursor, CursorPoint, cursorAt } from './Cursor';
 import home from '../../public/elt/rec/01_home/meta.json';
 import search from '../../public/elt/rec/02_search/meta.json';
 import reader from '../../public/elt/rec/03_reader/meta.json';
+import nxHome from '../../public/nx/rec/00_home/meta.json';
+import nxFicha from '../../public/nx/rec/01_ficha/meta.json';
+import nxOferta from '../../public/nx/rec/02_oferta/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
   'elt/rec/01_home/video.mp4': home.duration,
   'elt/rec/02_search/video.mp4': search.duration,
   'elt/rec/03_reader/video.mp4': reader.duration,
+  'nx/rec/00_home/video.mp4': nxHome.duration,
+  'nx/rec/01_ficha/video.mp4': nxFicha.duration,
+  'nx/rec/02_oferta/video.mp4': nxOferta.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };
@@ -26,7 +32,10 @@ export type Mark = { from: number; to: number; x: number; y: number; w: number; 
 export const ScreenClip: React.FC<{
   src: string; width: number; startAt?: number; cursor?: CursorPoint[]; camera?: CamKey[]; viewport?: [number, number];
   playbackRate?: number; showCursor?: boolean; cursorOpacity?: number; marks?: Mark[]; image?: boolean;
-}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [] }) => {
+  // Capa encima de la grabación y debajo del cursor, en píxeles CSS del viewport grabado (se mueve con la cámara):
+  // tapar datos personales, teclear texto de ejemplo, etc. Recibe el tiempo t (s) de la grabación.
+  overlay?: (t: number) => React.ReactNode;
+}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const [vw, vh] = viewport;
@@ -51,6 +60,11 @@ export const ScreenClip: React.FC<{
         {image || frozen
           ? <Img src={staticFile(frozen ? src.replace(/video\.mp4$/, 'last.jpg') : src)} style={{ width, height, display: 'block' }} />
           : <OffthreadVideo src={staticFile(src)} trimBefore={Math.round(startAt * fps)} playbackRate={playbackRate} muted style={{ width, height, display: 'block' }} />}
+        {overlay && (
+          <div style={{ position: 'absolute', left: 0, top: 0, width: vw, height: vh, transformOrigin: '0 0', transform: `scale(${k})` }}>
+            {overlay(t)}
+          </div>
+        )}
         {showCursor && cursor.length > 0 && (
           <Cursor x={c.x * k} y={c.y * k} scale={k * 1.25} down={c.down} sinceClick={t - c.lastDown} opacity={cursorOpacity} />
         )}

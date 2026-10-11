@@ -1,0 +1,51 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "N01",
+   "text": "¿30 días gratis de Nextory, en lugar de 14? Así se consiguen, paso a paso."
+  },
+  {
+   "id": "N02",
+   "text": "En SonorBooks, abre tu audiolibro, elige Nextory y pulsa «Empezar prueba gratuita»."
+  },
+  {
+   "id": "N03",
+   "text": "Acepta solo las cookies necesarias, comprueba que pone «30 días gratis» y pulsa el botón."
+  },
+  {
+   "id": "N04",
+   "text": "Escribe tu correo, pulsa «Continuar» y crea tu contraseña."
+  },
+  {
+   "id": "N05",
+   "text": "Elige tu plan: en la prueba tienes hasta 15 horas de escucha; después, desde 7,99 euros al mes."
+  },
+  {
+   "id": "N06",
+   "text": "Añade tu tarjeta. Hoy no pagas nada: el primer cobro llega al acabar los 30 días."
+  },
+  {
+   "id": "N07",
+   "text": "¡Listo! Descarga la app de Nextory, entra con tu correo y a escuchar."
+  },
+  {
+   "id": "N08",
+   "text": "Si no quieres seguir, cancela desde tu cuenta antes de que acabe la prueba. Ojo: al cancelar, pierdes el acceso al momento."
+  },
+  {
+   "id": "N09",
+   "text": "Encuentra dónde escuchar cualquier audiolibro, al mejor precio, en SonorBooks. Tu próxima historia te está esperando."
+  }
+ ]
+}

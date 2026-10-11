@@ -1,0 +1,22 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://sonorbooks.com/es/audiolibro/como-dejar-de-pensar-demasiado/"},
+    {"wait": 1500},
+    {"clickText": "Entendido", "dur": 10},
+    {"wait": 800},
+    {"move": [640, 860], "dur": 10},
+    {"record": true},
+    {"wait": 600},
+    {"mark": "to_box"},
+    {"move": [1040, 552], "dur": 950},
+    {"wait": 800},
+    {"mark": "to_btn"},
+    {"move": [1272, 648], "dur": 700},
+    {"wait": 400},
+    {"mark": "click"},
+    {"click": true},
+    {"wait": 900},
+    {"mark": "end"}
+  ]
+}

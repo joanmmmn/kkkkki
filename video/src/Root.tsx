@@ -9,9 +9,12 @@ import { ELTShort, SHORT_DUR } from './scenes/elt/Short';
 import { ELTReview2 } from './scenes/elt2/Main';
 import { TOTAL2 } from './scenes/elt2/timeline';
 import { ELTShort2, SHORT_DUR as SHORT2_DUR } from './scenes/elt2/Short2';
+import { NextoryTutorial } from './scenes/nx/Main';
+import { NX_TOTAL } from './scenes/nx/timeline';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="NXTutorial" component={NextoryTutorial} durationInFrames={NX_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="ELTShort2" component={ELTShort2} durationInFrames={Math.round(SHORT2_DUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Composition id="ELTReview2" component={ELTReview2} durationInFrames={TOTAL2} fps={FPS} width={W} height={H} />
     <Composition id="ELTReview" component={ELTReview} durationInFrames={TOTAL} fps={FPS} width={W} height={H} />
