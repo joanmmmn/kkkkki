@@ -21,7 +21,7 @@ const ReaderCard: React.FC<{ w: number }> = ({ w }) => {
   );
 };
 
-const EltPlate: React.FC<{ w: number; rotate: number }> = ({ w, rotate }) => (
+export const EltPlate: React.FC<{ w: number; rotate: number }> = ({ w, rotate }) => (
   <div style={{ width: w, padding: `${w * 0.055}px ${w * 0.05}px`, background: `linear-gradient(160deg, #16263d 0%, ${color.eltNavy} 70%)`, borderRadius: 28, border: '6px solid #fff', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,0,0,0.08)', transform: `rotate(${rotate}deg)` }}>
     <Img src={staticFile('elt/img/elt_logo.svg')} style={{ width: '100%', display: 'block' }} />
   </div>
@@ -34,7 +34,7 @@ const Sticker: React.FC<{ size: number; rotate: number }> = ({ size, rotate }) =
   </div>
 );
 
-const AudioPill: React.FC = () => (
+export const AudioPill: React.FC = () => (
   <div style={{ display: 'flex', alignItems: 'center', gap: 14, background: color.ink, borderRadius: 999, padding: '12px 26px 12px 14px', boxShadow: '0 18px 40px rgba(0,0,0,0.35)', transform: 'rotate(-3deg)' }}>
     <div style={{ width: 52, height: 52, borderRadius: 26, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <svg width="30" height="30" viewBox="0 0 24 24"><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z" fill={color.ink} /><path d="M15.2 8.8a4.6 4.6 0 0 1 0 6.4M17.8 6.4a8 8 0 0 1 0 11.2" stroke={color.ink} strokeWidth="2" fill="none" strokeLinecap="round" /></svg>
