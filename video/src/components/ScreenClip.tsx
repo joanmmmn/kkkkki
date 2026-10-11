@@ -2,6 +2,7 @@ import React from 'react';
 import { AbsoluteFill, getInputProps, Img, interpolate, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 
 // Con --props='{"audioOnly":true}' las grabaciones no se decodifican (render rápido solo de audio para revisar la mezcla).
+const PAGE_BG = '#0B1D2C'; // fondo de ellibrototal.com medido en la grabación
 const AUDIO_ONLY = Boolean((getInputProps() as { audioOnly?: boolean }).audioOnly);
 import { color, font } from '../brand/tokens';
 import { smoothKeyframes, Key, easeInOut, easeOut } from '../lib/anim';
@@ -25,8 +26,8 @@ export type Mark = { from: number; to: number; x: number; y: number; w: number; 
 // x/y de la cámara y del cursor en píxeles CSS del viewport grabado (por defecto 1920x1080).
 export const ScreenClip: React.FC<{
   src: string; width: number; startAt?: number; cursor?: CursorPoint[]; camera?: CamKey[]; viewport?: [number, number];
-  playbackRate?: number; showCursor?: boolean; cursorOpacity?: number; marks?: Mark[]; image?: boolean;
-}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [] }) => {
+  playbackRate?: number; showCursor?: boolean; cursorOpacity?: number; marks?: Mark[]; image?: boolean; bleed?: number;
+}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], bleed = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const [vw, vh] = viewport;
@@ -34,17 +35,19 @@ export const ScreenClip: React.FC<{
   const k = width / vw;
   // Cada clave se ajusta antes a los límites de la página para su zoom: así la cámara nunca «choca» con el borde
   // (el recorte duro de abajo solo actúa como red de seguridad) y la curva es continua.
+  // `bleed`: píxeles de la página que la cámara puede asomarse más allá del borde lateral (rellenos con el fondo
+  // de la web), para que un marco pegado al borde no quede cortado.
   const keys = React.useMemo(() => camera.map((c) => ({
     ...c,
-    x: Math.min(vw - vw / 2 / c.zoom, Math.max(vw / 2 / c.zoom, c.x)),
+    x: Math.min(vw - vw / 2 / c.zoom + bleed, Math.max(vw / 2 / c.zoom - bleed, c.x)),
     y: Math.min(vh - vh / 2 / c.zoom, Math.max(vh / 2 / c.zoom, c.y)),
-  })), [camera, vw, vh]);
+  })), [camera, vw, vh, bleed]);
   const zoom = smoothKeyframes(frame, keys, 'zoom', true);
   const fx = smoothKeyframes(frame, keys, 'x');
   const fy = smoothKeyframes(frame, keys, 'y');
   let tx = width / 2 - fx * k * zoom;
   let ty = height / 2 - fy * k * zoom;
-  tx = Math.min(0, Math.max(width - width * zoom, tx));
+  tx = Math.min(bleed * k * zoom, Math.max(width - width * zoom - bleed * k * zoom, tx));
   ty = Math.min(0, Math.max(height - height * zoom, ty));
   const t = startAt + (frame / fps) * playbackRate;
   const c = cursorAt(cursor, t);
@@ -53,7 +56,7 @@ export const ScreenClip: React.FC<{
   const frozen = !image && recDuration !== undefined && t >= recDuration - 0.06;
   if (AUDIO_ONLY) return <div style={{ width, height }} />;
   return (
-    <div style={{ width, height, overflow: 'hidden', position: 'relative' }}>
+    <div style={{ width, height, overflow: 'hidden', position: 'relative', background: bleed ? PAGE_BG : undefined }}>
       <div style={{ position: 'absolute', left: 0, top: 0, width, height, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${zoom})` }}>
         {image || frozen
           ? <Img src={staticFile(frozen ? src.replace(/video\.mp4$/, 'last.jpg') : src)} style={{ width, height, display: 'block' }} />

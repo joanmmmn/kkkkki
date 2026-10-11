@@ -36,7 +36,7 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
     { f: Math.round((4.9 - A_START) * fps), zoom: 1.6, x: 300, y: 180 },
     { f: Math.round((6.3 - A_START) * fps), zoom: 1.1, x: 960, y: 420 },
     { f: Math.round((7.2 - A_START) * fps), zoom: 1.12, x: 1000, y: 410 },
-    { f: Math.round((8.3 - A_START) * fps), zoom: 1.75, x: 1480, y: 300 },
+    { f: Math.round((8.3 - A_START) * fps), zoom: 1.75, x: 1400, y: 309 },
   ];
   const fAmorRec = fTemas + Math.round((15.4 - bStart) * fps);
   const camB: CamKey[] = [
@@ -52,8 +52,8 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       <Phase from={0} to={fEsp + 6} noIn>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <BrowserWindow width={W}>
-            <ScreenClip src="elt/rec/01_home/video.mp4" width={W} startAt={A_START} cursor={cursor} camera={camA}
-              marks={[{ from: Math.round((7.85 - A_START) * fps), to: fEsp + 6, x: 1788, y: 229, w: 128, h: 42, r: 21 }]} />
+            <ScreenClip src="elt/rec/01_home/video.mp4" width={W} startAt={A_START} cursor={cursor} camera={camA} bleed={28}
+              marks={[{ from: Math.round((7.85 - A_START) * fps), to: fEsp + 6, x: 1793, y: 228, w: 130, h: 44, r: 22 }]} />
           </BrowserWindow>
         </AbsoluteFill>
         {frame >= fNum - 22 && (
