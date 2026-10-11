@@ -10,18 +10,12 @@ mkdir -p "$OUT"
 # Capturas de escritorio (4K → 1600 px) y de móvil (→ 640 px), WebP de calidad 82.
 img() { convert "$SCR/$1" -resize "$3" -strip -quality 82 "$OUT/$2.webp"; }
 img 01-home-escritorio.png            portada-web          1600x
-img 22-seccion-audiolibros-y-filtros.png audiolibros-filtros 1600x
 img 04-busqueda-crimen-y-castigo.png   busqueda             1600x
-img 05-ficha-crimen-y-castigo.png      ficha                1600x
-img 08-audiolectura-resaltado-progresivo-y-globo.png audiolectura 1600x
-img 07-audiolectura-leido-por-hernando-ivan-cano.png leido-por 1600x
 img 16-diccionario-desde-seleccion.png diccionario          1600x
 img 15-lectura-comparada-es-en-fr.png  lectura-comparada    1600x
 img 18-vocabulario-de-la-obra.png      vocabulario          1600x
-img 11-lector-modo-oscuro.png          modo-nocturno        1600x
 img 31-movil-home.png                  movil-inicio         640x
 img 34-movil-velocidad-0.8-a-2x.png    movil-velocidad      640x
-img 36-movil-ficha-sin-boton-leer-offline.png movil-sin-conexion 640x
 
 # Clips en bucle (sin audio) a partir de las grabaciones 4K: 1280 px, 30 fps, H.264 para máxima compatibilidad.
 clip() { # nombre grabación inicio duración
@@ -33,6 +27,10 @@ clip clip-temas         01_home   10.3 6.2
 clip clip-buscar        02_search 2.4  6.8
 clip clip-ficha         02_search 21.2 6.4
 clip clip-audiolectura  03_reader 13.0 8.0
+# Versión WebM (VP9) de cada clip, alternativa para navegadores sin H.264.
+for c in clip-temas clip-buscar clip-ficha clip-audiolectura; do
+  ffmpeg -v error -y -i "$OUT/$c.mp4" -c:v libvpx-vp9 -crf 36 -b:v 0 -row-mt 1 -deadline good -cpu-used 2 -an "$OUT/$c.webm"
+done
 
 # Muestra de la narración original (Crimen y castigo, leído por Hernando Iván Cano): 12 s, -16 LUFS, mono.
 ffmpeg -v error -y -ss 4.1 -t 12 -i video/public/elt/audio/ctc_4_244282.mp3 \
