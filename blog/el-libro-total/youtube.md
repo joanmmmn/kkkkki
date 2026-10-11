@@ -58,8 +58,8 @@ Reseña completa (con capturas y fuentes): https://sonorbooks.com/blog/el-libro-
 
 ## Miniatura
 `deliverables/el-libro-total/miniatura_youtube.jpg` (1280×720). Es la misma imagen que la portada del artículo del blog:
-- Fondo amarillo de marca, «6.698 audiolibros GRATIS» y la pegatina «¿Dónde está la trampa?».
-- El lector de El Libro Total con el texto resaltado y una píldora de audio.
-- El logo de El Libro Total queda fuera de la esquina inferior derecha, donde YouTube pone la duración.
+- Fondo amarillo de marca, logo de SonorBooks y «6.698 audiolibros GRATIS».
+- El logo de El Libro Total, en grande y en vectorial, sobre el lector con el texto resaltado.
+- Una píldora de audio y la pegatina «¿Dónde está la trampa?», fuera de la esquina donde YouTube pone la duración.
 
 Otros tamaños: `portada_blog_1920x1080.jpg` y `portada_og_1200x630.jpg`. Se generan con `npx remotion still src/index.ts ELTCover|ELTCover1080|ELTCoverOG`.
