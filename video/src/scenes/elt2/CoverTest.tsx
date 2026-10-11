@@ -38,20 +38,20 @@ const Estafa: React.FC = () => (
     </div>
     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(100deg, rgba(8,10,15,0.97) 0%, rgba(8,10,15,0.9) 42%, rgba(8,10,15,0.45) 75%, rgba(8,10,15,0.3) 100%)' }} />
     <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 78% 58%, rgba(229,72,77,0.42), rgba(229,72,77,0) 48%)' }} />
-    {/* Pregunta */}
-    <div style={{ position: 'absolute', left: 44, top: 22, transform: 'rotate(-3deg)', transformOrigin: 'left center' }}>
-      <div style={{ fontWeight: 700, fontSize: 214, letterSpacing: -8, lineHeight: 1, color: color.yellow, textShadow: '0 9px 0 #000, 0 22px 50px rgba(0,0,0,0.7)', whiteSpace: 'nowrap' }}>¿ESTAFA?</div>
+    {/* Pregunta: ocupa todo el ancho */}
+    <div style={{ position: 'absolute', left: 36, top: 14, transform: 'rotate(-2.5deg)', transformOrigin: 'left center' }}>
+      <div style={{ fontWeight: 700, fontSize: 268, letterSpacing: -11, lineHeight: 1, color: color.yellow, textShadow: '0 10px 0 #000, 0 24px 56px rgba(0,0,0,0.75)', whiteSpace: 'nowrap' }}>¿ESTAFA?</div>
     </div>
     {/* Promesa */}
-    <div style={{ position: 'absolute', left: 58, top: 288 }}>
-      <div style={{ fontWeight: 700, fontSize: 118, letterSpacing: -5, lineHeight: 0.95, color: '#fff' }}>6.698</div>
-      <div style={{ fontWeight: 700, fontSize: 60, letterSpacing: -1.5, lineHeight: 1, color: '#fff', marginTop: 4, marginLeft: 4 }}>audiolibros</div>
-      <div style={{ display: 'inline-block', marginTop: 20, background: color.yellow, color: color.ink, borderRadius: 20, padding: '2px 26px 12px', fontWeight: 700, fontSize: 112, letterSpacing: -4, lineHeight: 1, transform: 'rotate(-2.5deg)', boxShadow: '0 20px 44px rgba(0,0,0,0.5)' }}>GRATIS</div>
+    <div style={{ position: 'absolute', left: 50, top: 300 }}>
+      <div style={{ fontWeight: 700, fontSize: 150, letterSpacing: -7, lineHeight: 0.9, color: '#fff', textShadow: '0 12px 30px rgba(0,0,0,0.6)' }}>6.698</div>
+      <div style={{ fontWeight: 700, fontSize: 70, letterSpacing: -2, lineHeight: 1, color: '#fff', marginTop: 6, marginLeft: 6 }}>audiolibros</div>
+      <div style={{ display: 'inline-block', marginTop: 22, background: color.yellow, color: color.ink, borderRadius: 22, padding: '4px 30px 14px', fontWeight: 700, fontSize: 128, letterSpacing: -5, lineHeight: 1, transform: 'rotate(-2.5deg)', boxShadow: '0 22px 48px rgba(0,0,0,0.55)' }}>GRATIS</div>
     </div>
     {/* Logo de El Libro Total bajo la lupa */}
-    <div style={{ position: 'absolute', left: 690, top: 268 }}><EltPlate w={480} rotate={4} /></div>
-    <div style={{ position: 'absolute', left: 1000, top: 196 }}><Lens size={170} /></div>
-    <div style={{ position: 'absolute', left: 60, bottom: 38 }}><Brand /></div>
+    <div style={{ position: 'absolute', left: 588, top: 334 }}><EltPlate w={612} rotate={4} /></div>
+    <div style={{ position: 'absolute', left: 1006, top: 246 }}><Lens size={196} /></div>
+    <div style={{ position: 'absolute', left: 640, bottom: 30 }}><Brand size={24} /></div>
   </div>
 );
 
@@ -64,27 +64,27 @@ const Cyc: React.FC<{ w: number; rotate: number; dim?: boolean }> = ({ w, rotate
 const Precio: React.FC = () => (
   <div style={{ position: 'absolute', inset: 0, fontFamily: font.sans, overflow: 'hidden', background: `radial-gradient(ellipse at 72% 45%, #FFE066 0%, ${color.yellow} 50%, #F2B800 100%)` }}>
     <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(rgba(16,16,16,0.10) 2px, transparent 2.4px)', backgroundSize: '28px 28px', opacity: 0.6 }} />
-    {/* Mitad izquierda: lo que cuesta en otra tienda */}
-    <div style={{ position: 'absolute', inset: 0, background: '#131313', clipPath: 'polygon(0 0, 600px 0, 520px 720px, 0 720px)' }} />
-    <div style={{ position: 'absolute', left: 52, top: 34, fontWeight: 700, fontSize: 66, letterSpacing: -2, color: '#fff', lineHeight: 1 }}>MISMO LIBRO</div>
-    <div style={{ position: 'absolute', left: 92, top: 150 }}><Cyc w={216} rotate={-5} dim /></div>
-    <div style={{ position: 'absolute', left: 50, top: 470 }}>
-      <div style={{ position: 'relative', display: 'inline-block', fontWeight: 700, fontSize: 118, letterSpacing: -5, lineHeight: 1, color: '#d9d9d9' }}>
-        18,99 €
-        <div style={{ position: 'absolute', left: -12, right: -14, top: '48%', height: 14, borderRadius: 7, background: color.red, transform: 'rotate(-9deg)', boxShadow: '0 4px 10px rgba(0,0,0,0.45)' }} />
+    {/* Mitad izquierda: lo que cuesta en otra tienda (columna centrada) */}
+    <div style={{ position: 'absolute', inset: 0, background: '#131313', clipPath: 'polygon(0 0, 610px 0, 540px 720px, 0 720px)' }} />
+    <div style={{ position: 'absolute', left: 0, top: 0, width: 560, height: 720, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ marginTop: 30, fontWeight: 700, fontSize: 70, letterSpacing: -2, color: '#fff', lineHeight: 1 }}>MISMO LIBRO</div>
+      <div style={{ marginTop: 34 }}><Cyc w={232} rotate={-5} dim /></div>
+      <div style={{ position: 'relative', marginTop: 26, fontWeight: 700, fontSize: 124, letterSpacing: -5, lineHeight: 1, color: '#d9d9d9', whiteSpace: 'nowrap' }}>
+        18,99{'\u202F'}€
+        <div style={{ position: 'absolute', left: -14, right: -14, top: '48%', height: 15, borderRadius: 8, background: color.red, transform: 'rotate(-8deg)', boxShadow: '0 4px 10px rgba(0,0,0,0.45)' }} />
       </div>
-      <div style={{ fontSize: 30, fontWeight: 500, color: 'rgba(255,255,255,0.6)', marginTop: 8, marginLeft: 6 }}>en Audible</div>
+      <div style={{ fontSize: 30, fontWeight: 500, color: 'rgba(255,255,255,0.62)', marginTop: 6 }}>en Audible</div>
     </div>
     {/* Flecha en la costura */}
-    <div style={{ position: 'absolute', left: 494, top: 300, width: 116, height: 116, borderRadius: '50%', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 18px 40px rgba(0,0,0,0.4)', border: `6px solid ${color.ink}` }}>
+    <div style={{ position: 'absolute', left: 512, top: 302, width: 116, height: 116, borderRadius: '50%', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 18px 40px rgba(0,0,0,0.4)', border: `6px solid ${color.ink}` }}>
       <svg width="60" height="60" viewBox="0 0 24 24"><path d="M4 12h14m-6-7 7 7-7 7" stroke={color.ink} strokeWidth="3.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
     </div>
     {/* Mitad derecha: El Libro Total */}
-    <div style={{ position: 'absolute', left: 676, top: 36 }}><EltPlate w={360} rotate={-3} /></div>
-    <div style={{ position: 'absolute', left: 664, top: 244 }}><Cyc w={214} rotate={5} /></div>
-    <div style={{ position: 'absolute', right: 36, top: 222, fontWeight: 700, fontSize: 246, letterSpacing: -10, lineHeight: 1, color: color.ink, textShadow: '0 10px 0 rgba(255,255,255,0.35)', whiteSpace: 'nowrap' }}>0{'\u202F'}€</div>
-    <div style={{ position: 'absolute', left: 960, top: 500, display: 'inline-block', background: color.ink, color: '#fff', borderRadius: 16, padding: '8px 20px 12px', fontWeight: 700, fontSize: 44, letterSpacing: -1, transform: 'rotate(-3deg)', boxShadow: '0 16px 30px rgba(0,0,0,0.3)', whiteSpace: 'nowrap' }}>y es legal</div>
-    <div style={{ position: 'absolute', left: 52, bottom: 30 }}><Brand size={22} /></div>
+    <div style={{ position: 'absolute', left: 730, top: 30 }}><EltPlate w={452} rotate={-3} /></div>
+    <div style={{ position: 'absolute', left: 650, top: 256 }}><Cyc w={238} rotate={5} /></div>
+    <div style={{ position: 'absolute', right: 26, top: 240, fontWeight: 700, fontSize: 276, letterSpacing: -12, lineHeight: 1, color: color.ink, textShadow: '0 10px 0 rgba(255,255,255,0.35)', whiteSpace: 'nowrap' }}>0{'\u202F'}€</div>
+    <div style={{ position: 'absolute', left: 952, top: 540, display: 'inline-block', background: color.ink, color: '#fff', borderRadius: 18, padding: '8px 24px 13px', fontWeight: 700, fontSize: 52, letterSpacing: -1, transform: 'rotate(-3deg)', boxShadow: '0 16px 30px rgba(0,0,0,0.3)', whiteSpace: 'nowrap' }}>y es legal</div>
+    <div style={{ position: 'absolute', left: 676, bottom: 26 }}><Brand size={22} /></div>
   </div>
 );
 
