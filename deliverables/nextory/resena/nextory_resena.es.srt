@@ -1,0 +1,339 @@
+1
+00:00:00,500 --> 00:00:02,900
+¿Merece la pena pagar Nextory?
+
+2
+00:00:02,940 --> 00:00:05,820
+Lo hemos instalado y
+lo hemos usado a fondo:
+
+3
+00:00:05,860 --> 00:00:09,340
+leyendo, escuchando y tocando cada botón.
+
+4
+00:00:09,380 --> 00:00:11,700
+Te contamos lo bueno, lo malo…
+
+5
+00:00:11,740 --> 00:00:15,150
+y al final, cómo probarlo
+treinta días gratis.
+
+6
+00:00:15,660 --> 00:00:17,340
+¿Qué es Nextory?
+
+7
+00:00:17,380 --> 00:00:21,740
+Una app sueca que junta audiolibros
+y ebooks en una sola suscripción:
+
+8
+00:00:21,780 --> 00:00:25,540
+más de un millón cuatrocientos
+mil títulos en varios idiomas.
+
+9
+00:00:25,580 --> 00:00:29,900
+En España tomó el relevo de Nubico,
+el servicio de lectura de Movistar.
+
+10
+00:00:29,940 --> 00:00:33,180
+Eso sí: solo funciona en
+el móvil y en la tablet.
+
+11
+00:00:33,220 --> 00:00:34,710
+No tiene versión web.
+
+12
+00:00:35,100 --> 00:00:36,580
+Hay tres planes.
+
+13
+00:00:36,620 --> 00:00:40,260
+Mini: cinco noventa y nueve
+al mes, con diez horas.
+
+14
+00:00:40,300 --> 00:00:43,860
+Standard: siete noventa y
+nueve, con treinta horas.
+
+15
+00:00:43,900 --> 00:00:47,860
+Y Unlimited: desde nueve
+noventa y nueve, sin límite.
+
+16
+00:00:47,900 --> 00:00:51,660
+Ojo: las horas cuentan igual
+si lees que si escuchas.
+
+17
+00:00:51,700 --> 00:00:56,790
+Todos incluyen cuatro perfiles, pero
+solo Unlimited deja usarlos a la vez.
+
+18
+00:00:57,220 --> 00:01:00,860
+Al entrar, la portada te
+recomienda según tus gustos.
+
+19
+00:01:00,900 --> 00:01:04,220
+Y si no sabes qué leer, se
+lo pides a El Librarian,
+
+20
+00:01:04,260 --> 00:01:08,900
+su asistente con inteligencia artificial:
+le describes lo que te apetece y te
+
+21
+00:01:08,940 --> 00:01:10,590
+propone libros.
+
+22
+00:01:11,180 --> 00:01:15,220
+El buscador encuentra por
+título, autor o incluso narrador,
+
+23
+00:01:15,260 --> 00:01:18,950
+y puedes filtrar por
+idioma, formato y categoría.
+
+24
+00:01:19,440 --> 00:01:22,400
+Cada libro tiene su
+ficha: si está en ebook,
+
+25
+00:01:22,440 --> 00:01:25,360
+en audiolibro o en los
+dos, quién lo narra,
+
+26
+00:01:25,400 --> 00:01:28,570
+cuánto dura y qué nota
+le dan otros lectores.
+
+27
+00:01:28,980 --> 00:01:31,900
+Para leer, puedes cambiar
+el tamaño de la letra,
+
+28
+00:01:31,940 --> 00:01:37,420
+poner el fondo oscuro o gris, elegir
+otra tipografía y ajustar los márgenes.
+
+29
+00:01:37,460 --> 00:01:41,070
+Y añadir marcadores, incluso con notas.
+
+30
+00:01:43,340 --> 00:01:47,380
+Para escuchar: velocidad
+de cero coma cuatro a dos,
+
+31
+00:01:47,420 --> 00:01:52,500
+saltos de quince segundos, capítulos,
+marcadores y un temporizador para
+
+32
+00:01:52,540 --> 00:01:56,310
+dormir, que puede parar
+justo al final del capítulo.
+
+33
+00:01:56,460 --> 00:01:59,300
+Los libros que empiezas
+se descargan solos,
+
+34
+00:01:59,340 --> 00:02:02,340
+así que puedes leer y
+escuchar sin conexión.
+
+35
+00:02:02,380 --> 00:02:06,550
+Y eliges si descargar también
+con datos o solo con wifi.
+
+36
+00:02:06,940 --> 00:02:10,233
+Puedes crear hasta tres
+perfiles más, de adulto,
+
+37
+00:02:10,273 --> 00:02:11,940
+juvenil o infantil.
+
+38
+00:02:11,980 --> 00:02:16,870
+El infantil solo muestra libros para
+niños y puedes protegerlo con un PIN.
+
+39
+00:02:17,360 --> 00:02:21,400
+Y ojo a cómo cuenta las horas:
+se comparten entre perfiles,
+
+40
+00:02:21,440 --> 00:02:24,120
+las que no gastas se guardan
+para el mes siguiente,
+
+41
+00:02:24,160 --> 00:02:28,490
+y si escuchas a doble velocidad,
+cada hora te cuenta como dos.
+
+42
+00:02:29,040 --> 00:02:32,360
+Además, funciona con
+CarPlay y Android Auto,
+
+43
+00:02:32,400 --> 00:02:37,160
+en relojes con Wear OS, con AirPlay y
+en los lectores de tinta electrónica
+
+44
+00:02:37,200 --> 00:02:38,120
+InkBOOK.
+
+45
+00:02:38,160 --> 00:02:40,570
+En Kindle o en Kobo, no.
+
+46
+00:02:41,060 --> 00:02:43,620
+¿Y tus propios libros o PDF?
+
+47
+00:02:43,660 --> 00:02:48,000
+Aquí no: Nextory solo abre
+los títulos de su catálogo.
+
+48
+00:02:48,040 --> 00:02:51,600
+Lo bueno: ebooks y
+audiolibros en una sola app,
+
+49
+00:02:51,640 --> 00:02:56,360
+un plan barato para empezar, cuatro
+perfiles con modo infantil y que las horas
+
+50
+00:02:56,400 --> 00:02:58,560
+que no gastas se guardan.
+
+51
+00:02:58,600 --> 00:03:02,240
+Lo malo: el límite de
+horas de Mini y Standard,
+
+52
+00:03:02,280 --> 00:03:06,907
+que no hay web ni app de ordenador,
+que no puedes subir tus archivos y que,
+
+53
+00:03:06,947 --> 00:03:11,090
+si cancelas durante la prueba,
+pierdes el acceso al momento.
+
+54
+00:03:11,780 --> 00:03:13,180
+¿Merece la pena?
+
+55
+00:03:13,220 --> 00:03:17,820
+Si alternas leer y escuchar en español,
+es de lo más completo por menos de diez
+
+56
+00:03:17,860 --> 00:03:18,700
+euros.
+
+57
+00:03:18,740 --> 00:03:21,310
+Si escuchas poco, el Mini te basta.
+
+58
+00:03:21,460 --> 00:03:25,710
+Y antes de pagar, busca tus libros
+en SonorBooks para ver si están.
+
+59
+00:03:26,300 --> 00:03:27,540
+¿Quieres probarlo?
+
+60
+00:03:27,580 --> 00:03:30,260
+Desde SonorBooks tienes
+treinta días gratis,
+
+61
+00:03:30,300 --> 00:03:31,830
+en vez de catorce.
+
+62
+00:03:32,040 --> 00:03:36,620
+En la ficha de tu audiolibro,
+pulsa «Empezar prueba gratuita».
+
+63
+00:03:36,660 --> 00:03:40,260
+Crea tu cuenta, elige
+plan y añade tu tarjeta:
+
+64
+00:03:40,300 --> 00:03:42,190
+hoy no pagas nada.
+
+65
+00:03:42,360 --> 00:03:45,000
+Descarga la app, entra con tu correo…
+
+66
+00:03:45,040 --> 00:03:46,610
+y a disfrutar.
+
+67
+00:03:46,680 --> 00:03:47,760
+¿Te ha gustado?
+
+68
+00:03:47,800 --> 00:03:50,130
+Quédate: no tienes que hacer nada.
+
+69
+00:03:50,280 --> 00:03:51,440
+¿No te convence?
+
+70
+00:03:51,480 --> 00:03:54,320
+Cancela en «Mis páginas»
+antes del día treinta;
+
+71
+00:03:54,360 --> 00:03:58,850
+mejor en los últimos días, porque al
+cancelar pierdes el acceso al momento.
+
+72
+00:03:59,360 --> 00:04:03,120
+Encuentra dónde escuchar tu
+próximo libro, y a qué precio,
+
+73
+00:04:03,160 --> 00:04:04,490
+en SonorBooks.

@@ -151,9 +151,9 @@ export const R13ProsCons: React.FC<P> = ({ lead }) => {
           {col('Lo malo', false, fMalo, cons)}
         </div>
       </AbsoluteFill>
-      <Sfx name="whoosh_soft" at={fBueno} />
+      <Sfx name="whoosh_soft" at={fBueno - 12} />
       {pros.map((p, i) => <Sfx key={`p${i}`} name="tick_soft" at={p.f} />)}
-      <Sfx name="whoosh_soft" at={fMalo} />
+      <Sfx name="whoosh_soft" at={fMalo - 12} />
       {cons.map((p, i) => <Sfx key={`c${i}`} name="tick_soft" at={p.f} volume={0.9} />)}
     </Stage>
   );

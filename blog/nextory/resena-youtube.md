@@ -1,7 +1,5 @@
 # YouTube y redes — Reseña de Nextory + 30 días gratis
 
-> Los minutos de los capítulos son provisionales: se recalculan con la locución definitiva antes de publicar.
-
 ## Título (elige uno)
 1. **¿Merece la pena Nextory? Reseña a fondo: lo bueno, lo malo y 30 días gratis** ← recomendado
 2. Nextory por dentro: todas sus funciones, precios y lo que no te cuentan
@@ -12,18 +10,18 @@
 ```
 🎧 Prueba Nextory 30 días gratis (en vez de 14) desde SonorBooks: https://sonorbooks.com/es/
 
-¿Merece la pena pagar Nextory? La hemos instalado y usado a fondo: leyendo, escuchando y tocando cada botón de la app. Te enseñamos todas sus funciones, lo bueno, lo malo y, al final, cómo probarla 30 días gratis.
+¿Merece la pena pagar Nextory? La hemos instalado y usado a fondo: leyendo, escuchando y tocando cada botón de la app. Te enseñamos todas sus funciones, lo bueno, lo malo y, al final, cómo probarla 30 días gratis. Y si te gusta, te la quedas: no tienes que cancelar.
 
 ⏱️ Capítulos
 0:00 ¿Merece la pena Nextory?
-0:16 Qué es Nextory
-0:39 Precios y planes
-1:03 La app: portada, El Librarian y buscador
-1:39 Leer ebooks
-1:53 Escuchar audiolibros
-2:09 Descargas, perfiles y horas
-3:06 Lo bueno, lo malo y veredicto
-3:50 Cómo probarlo 30 días gratis
+0:15 Qué es Nextory
+0:34 Precios y planes
+0:57 La app: portada, El Librarian y buscador
+1:28 Leer ebooks
+1:41 Escuchar audiolibros
+1:56 Descargas, perfiles, horas y extras
+2:47 Lo bueno, lo malo y veredicto
+3:26 Cómo probarlo 30 días gratis
 
 ✅ Lo bueno
 • Audiolibros y ebooks en una sola app y una sola suscripción.
@@ -63,7 +61,6 @@ Y si lo pruebas, hazlo desde aquí para tener 30 días en vez de 14: https://son
 - Marca en YouTube «Incluye promoción pagada»: el vídeo enlaza a una oferta de afiliado.
 - Sube los subtítulos `nextory_resena.es.srt` (Subtítulos → Subir archivo → Con sincronización).
 - Pantalla final: los últimos segundos dejan libre la mitad inferior para los elementos de pantalla final.
-- Revisa que los capítulos coinciden con el render definitivo.
 
 ## TikTok / Instagram Reels / YouTube Shorts (vídeo vertical)
 ```

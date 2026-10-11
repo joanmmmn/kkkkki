@@ -21,10 +21,11 @@ case "${1:-}" in
     ;;
   render)
     mkdir -p "$OUT" video/out/nxr
-    (cd video && npx remotion render src/index.ts NXReview out/nxr/NXR_review_raw.mp4 --concurrency=2 --crf=16)
-    tools/master.sh video/out/nxr/NXR_review_raw.mp4 "$OUT/SonorBooks_Nextory_Resena_1080p.mp4"
-    (cd video && npx remotion render src/index.ts NXRShort out/nxr/NXR_short_raw.mp4 --concurrency=2 --crf=16)
-    tools/master.sh video/out/nxr/NXR_short_raw.mp4 "$OUT/SonorBooks_Nextory_Resena_Short_9x16.mp4"
+    # Por tramos: un render seguido de 4 min se queda sin memoria en Chrome (escenas con grabaciones 4K).
+    tools/render_chunks.sh NXReview out/nxr/NXR_review_raw.mkv 3000
+    tools/master.sh video/out/nxr/NXR_review_raw.mkv "$OUT/SonorBooks_Nextory_Resena_1080p.mp4"
+    tools/render_chunks.sh NXRShort out/nxr/NXR_short_raw.mkv 1200
+    tools/master.sh video/out/nxr/NXR_short_raw.mkv "$OUT/SonorBooks_Nextory_Resena_Short_9x16.mp4"
     (cd video && npx remotion still src/index.ts NXRThumb "../$OUT/miniatura_resena.png")
     python3 tools/nxr_meta.py --out "$OUT"
     ;;

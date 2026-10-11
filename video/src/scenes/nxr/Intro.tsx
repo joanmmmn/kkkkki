@@ -28,6 +28,7 @@ export const R01Hook: React.FC<P> = ({ lead, dur }) => {
   const fToc = at('tocando');
   const fBot = at('boton');
   const fFinal = at('final');
+  const sLogoHook = useSpring(lead);
   // El móvil va enseñando lo que dice la voz: portada, lector, reproductor, dos toques y El Librarian.
   const shots: Shot[] = [
     { rec: '01_inicio', at: 0, start: 3.6, hold: 15.0 },
@@ -46,7 +47,7 @@ export const R01Hook: React.FC<P> = ({ lead, dur }) => {
             cam={[{ f: 0, rx: 14, ry: -38, rz: 6, s: 0.86, x: 120, y: 60 }, { f: 34, rx: 4, ry: -16, rz: 2, s: 1, x: 0, y: 0 }, { f: dur, rx: 3, ry: -11, rz: 1.5, s: 1.02, x: -6, y: -4 }]} />
         </div>
         <div style={{ position: 'absolute', left: 150, top: 250, width: 900 }}>
-          <NextoryLogo width={250} style={{ marginBottom: 34, opacity: useSpring(lead) }} />
+          <NextoryLogo width={250} style={{ marginBottom: 34, opacity: sLogoHook }} />
           <BigTitle text="¿Merece la pena Nextory?" hi="Nextory?" at={lead + 2} size={118} />
           <div style={{ display: 'flex', gap: 18, marginTop: 56, flexWrap: 'wrap' }}>
             <FeatureTag at={fBueno} icon={<CheckIcon size={30} c={color.green} />} size={34}>Lo bueno</FeatureTag>
@@ -80,6 +81,8 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
   const xA = interpolate(frame, [fNubico - 12, fNubico + 2], [0, 1], { ...clamp, easing: easeInOut });
   const xB = interpolate(frame, [fEso - 12, fEso + 2], [0, 1], { ...clamp, easing: easeInOut });
   const sLogo = useSpring(lead);
+  // (Todos los hooks arriba: dentro de un bloque condicional, React falla al renderizar el vídeo seguido.)
+  const sMillon = useSpring(fMillon - 6);
   const sNub = useSpring(fNubico);
   const strike = interpolate(frame, [fNubico + 14, fNubico + 30], [0, 1], { ...clamp, easing: easeOut });
   const sMovil = useSpring(fEso);
@@ -98,7 +101,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
             <NextoryLogo width={320} />
             <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 32, color: color.muted, borderLeft: `2px solid ${color.line}`, paddingLeft: 26 }}>Estocolmo · desde 2015</div>
           </div>
-          <div style={{ marginTop: 34, fontFamily: font.sans, fontWeight: 700, fontSize: 170, letterSpacing: -7, color: color.ink, opacity: useSpring(fMillon - 6) }}>
+          <div style={{ marginTop: 34, fontFamily: font.sans, fontWeight: 700, fontSize: 170, letterSpacing: -7, color: color.ink, opacity: sMillon }}>
             +<CountUp to={1.4} decimals={1} from={fMillon - 6} dur={34} suffix=" M" />
             <span style={{ fontSize: 58, letterSpacing: -1, color: color.ink2, marginLeft: 18 }}>títulos</span>
           </div>
