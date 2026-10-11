@@ -4,14 +4,14 @@
   1080
  ],
  "dpr": 2,
- "frames": 466,
- "duration": 5.921,
+ "frames": 465,
+ "duration": 5.917,
  "offset": 0.021,
  "marks": {
-  "type": 0.131,
-  "to_cont": 1.437,
-  "click_cont": 2.131,
-  "end": 5.922
+  "type": 0.132,
+  "to_cont": 1.436,
+  "click_cont": 2.126,
+  "end": 5.917
  },
  "events": []
 }

@@ -28,6 +28,7 @@ const scripts = {
   ] },
   '13_registro': { ...base, steps: [
     { go: SHELL }, { wait: 1200 }, { clickText: 'Permitir las cookies necesarias', dur: 10 }, { wait: 600 }, { eval: blockJs },
+    { eval: "document.querySelectorAll('input').forEach((i) => { i.spellcheck = false; i.setAttribute('spellcheck', 'false'); })" },
     { clickSel: 'main input[type=email], main input[name*=mail i], main input[autocomplete=email]', dur: 10 }, { move: [1010, 262], dur: 10 }, { wait: 400 },
     { record: true }, { wait: 150 }, { mark: 'type' }, { type: 'tucorreo@ejemplo.com', delay: 52 }, { wait: 150 },
     { mark: 'to_cont' }, { move: [960, 385], dur: 500 }, { wait: 170 }, { mark: 'click_cont' }, { fakeClick: true }, { wait: 3700 }, { mark: 'end' },

@@ -22,6 +22,9 @@
    "eval": "(() => { if (window.__nxBlock) return true; window.__nxBlock = true;\n  document.addEventListener('click', (e) => { if (e.target.closest('main a, main button, main label, main input')) { e.preventDefault(); e.stopImmediatePropagation(); } }, true);\n  document.addEventListener('submit', (e) => { e.preventDefault(); e.stopImmediatePropagation(); }, true);\n  return true; })()"
   },
   {
+   "eval": "document.querySelectorAll('input').forEach((i) => { i.spellcheck = false; i.setAttribute('spellcheck', 'false'); })"
+  },
+  {
    "clickSel": "main input[type=email], main input[name*=mail i], main input[autocomplete=email]",
    "dur": 10
   },

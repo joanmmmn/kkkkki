@@ -22,7 +22,7 @@
 📌 Condiciones de la oferta (comprobadas el 11/10/2026)
 • 30 días gratis con hasta 15 horas de escucha y lectura. La prueba estándar de Nextory es de 14 días con 20 horas.
 • Después pagas el plan que elijas: Mini 5,99 €/mes (10 h), Standard 7,99 €/mes (30 h) o Unlimited desde 9,99 €/mes. Se renueva solo si no cancelas.
-• Solo para cuentas nuevas o sin suscripción activa en los últimos 6 meses.
+• Solo para cuentas nuevas o sin cuenta activa en los últimos 6 meses.
 • Al dar de alta la tarjeta no pagas nada: Nextory te muestra la fecha del primer cobro.
 • Si cancelas durante la prueba, pierdes el acceso en ese momento: hazlo en los últimos días.
 
