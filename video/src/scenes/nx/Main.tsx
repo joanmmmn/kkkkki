@@ -8,7 +8,7 @@ import { Sfx, STEM } from '../../components/Sfx';
 import { Stepper } from '../../components/Stepper';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 
-export const NX_MUSIC: string | null = null; // se compone con ElevenLabs Music cuando el montaje esté cerrado
+export const NX_MUSIC: string | null = 'music/nx_bed.mp3'; // ElevenLabs Music, secciones alineadas con las escenas (nx_bed.plan.json)
 
 // Transición entre escenas (igual que en la reseña): la saliente avanza y se desenfoca; la entrante llega desde atrás.
 const IN = 11;

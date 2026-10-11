@@ -13,6 +13,7 @@
 //   {"moveText": "texto", "dur": ms}    mueve el ratón al centro de un elemento con ese texto
 //   {"moveSel": "css", "dur": ms}
 //   {"click": true}                     clic en la posición actual
+//   {"fakeClick": true}                 anima el clic en el cursor sin pulsar (no envía formularios ni navega)
 //   {"clickText": "texto", "dur": ms}   mover + clic
 //   {"clickSel": "css", "dur": ms}
 //   {"type": "texto", "delay": ms}      teclea en el elemento enfocado
@@ -179,6 +180,7 @@ for (const s of script.steps) {
     if (s.clickText) { const [x, y] = await centerOf(page.getByText(s.clickText, { exact: s.exact !== false }).first()); await moveTo(x, y, s.dur); await click(); }
     if (s.clickSel) { const [x, y] = await centerOf(page.locator(s.clickSel).first()); await moveTo(x, y, s.dur); await click(); }
     if (s.click) await click();
+    if (s.fakeClick) { mouse.down = true; logCursor(); await page.waitForTimeout(90 * SLOW); mouse.down = false; logCursor(); }
     if (s.type) { for (const ch of s.type) { await page.keyboard.type(ch); logCursor(); await page.waitForTimeout((s.delay ?? 85) * SLOW); } }
     if (s.press) await page.keyboard.press(s.press);
     if (s.scroll) await smoothScroll(s.scroll, s.dur, s.sel ?? script.scrollSel);

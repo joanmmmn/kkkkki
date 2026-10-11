@@ -1,0 +1,21 @@
+{
+ "model_id": "music_v1",
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental background score for a premium, upbeat step-by-step app tutorial",
+   "steady 108 BPM tempo throughout",
+   "warm felt piano, bright plucked synths, soft analog pads, clean electric guitar accents, tight modern percussion, round sub bass",
+   "polished, modern, optimistic, friendly and minimal",
+   "mix leaves space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": ["vocals", "choir", "spoken word", "heavy EDM drop", "distortion", "lo-fi crackle", "dubstep", "trap hi-hat rolls"],
+  "sections": [
+   {"section_name": "Hook", "positive_local_styles": ["starts immediately with a soft punchy hit on the first beat", "bright plucked synth motif", "rising energy", "short riser at the very end"], "negative_local_styles": ["slow fade in", "silence"], "duration_ms": 6740, "lines": []},
+   {"section_name": "Steps A", "positive_local_styles": ["light steady groove", "clean drums and bouncy plucks", "warm bass", "unobtrusive and consistent"], "negative_local_styles": ["big build-ups", "sudden stops"], "duration_ms": 16160, "lines": []},
+   {"section_name": "Steps B", "positive_local_styles": ["same groove with one extra layer", "slightly more energy", "subtle percussion fills", "keeps momentum"], "negative_local_styles": ["drop", "breakdown"], "duration_ms": 19580, "lines": []},
+   {"section_name": "Success", "positive_local_styles": ["uplifting lift", "brighter chords", "celebratory but tasteful", "small sparkle accents"], "negative_local_styles": ["aggressive drums"], "duration_ms": 5940, "lines": []},
+   {"section_name": "Tip", "positive_local_styles": ["gentle breakdown", "fewer drums", "soft pads and felt piano", "calm and attentive"], "negative_local_styles": ["loud drums", "riser"], "duration_ms": 8900, "lines": []},
+   {"section_name": "Outro", "positive_local_styles": ["warm return of the main motif", "confident and resolving", "ends on a sustained final chord with a natural soft tail"], "negative_local_styles": ["abrupt cut", "new melody"], "duration_ms": 12320, "lines": []}
+  ]
+ }
+}

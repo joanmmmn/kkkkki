@@ -1,0 +1,54 @@
+{
+ "id": "N04",
+ "hash": "515dc2b2420b",
+ "text": "Escribe tu correo, pulsa «Continuar» y crea una contraseña.",
+ "duration": 4.72,
+ "words": [
+  {
+   "w": "Escribe",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "tu",
+   "s": 0.48,
+   "e": 0.56
+  },
+  {
+   "w": "correo,",
+   "s": 0.64,
+   "e": 1.36
+  },
+  {
+   "w": "pulsa",
+   "s": 1.44,
+   "e": 1.84
+  },
+  {
+   "w": "«Continuar»",
+   "s": 1.92,
+   "e": 2.8
+  },
+  {
+   "w": "y",
+   "s": 2.84,
+   "e": 2.88
+  },
+  {
+   "w": "crea",
+   "s": 2.96,
+   "e": 3.28
+  },
+  {
+   "w": "una",
+   "s": 3.36,
+   "e": 3.52
+  },
+  {
+   "w": "contraseña.",
+   "s": 3.64,
+   "e": 4.72
+  }
+ ],
+ "speechEnd": 4.72
+}

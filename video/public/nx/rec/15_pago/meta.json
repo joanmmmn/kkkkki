@@ -1,0 +1,25 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 721,
+ "duration": 9.649,
+ "offset": 0.023,
+ "marks": {
+  "to_bullet": 0.482,
+  "to_cont": 2.588,
+  "click_cont": 3.248,
+  "confirma": 3.73,
+  "to_card": 3.73,
+  "click_card": 4.343,
+  "expand": 4.437,
+  "to_number": 4.688,
+  "fill": 5.095,
+  "to_pay": 6.545,
+  "click_pay": 7.159,
+  "end": 9.649
+ },
+ "events": []
+}

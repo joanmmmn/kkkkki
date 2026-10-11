@@ -1,0 +1,125 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "steps": [
+  {
+   "go": "https://nextory.com/es/profile/registration?code=lecturasgratis30&cb=%2Fes%2Fregister%2Fplaninfo%3Fcode%3Dlecturasgratis30"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "clickText": "Permitir las cookies necesarias",
+   "dur": 10
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(async () => {\n    const css = [\"https://nextory.com/_nuxt/NxPaymentLogos.DAgYoYQh.css\",\"https://nextory.com/_nuxt/StickyButton.CeLOhqH_.css\",\"https://nextory.com/_nuxt/entry.BWPASeIg.css\",\"https://nextory.com/_nuxt/PopIn.CJGqazOh.css\",\"https://nextory.com/_nuxt/NxFooter.D22n7Pe9.css\",\"https://nextory.com/_nuxt/RegistrationLayout.DvmVDmsH.css\",\"https://nextory.com/_nuxt/planform.BrI18nLr.css\",\"https://nextory.com/_nuxt/AccordionCompact.B9e23yTl.css\",\"https://nextory.com/_nuxt/payment-mode.BfNzozP6.css\"];\n    await Promise.all(css.map((href) => new Promise((res) => { if (document.querySelector('link[href=\"' + href + '\"]')) return res(); const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; l.onload = l.onerror = res; document.head.appendChild(l); })));\n    document.getElementById('CybotCookiebotDialog')?.remove();\n    document.querySelector('main').outerHTML = \"<main class=\\\"tw:flex tw:grow tw:flex-col tw:pt-8 tw:pb-40 tw:md:pb-60\\\"><div class=\\\"container\\\"><div class=\\\"tw:flex tw:justify-center\\\"><div class=\\\"col-12 col-sm-9 col-md-6 col-lg-5 col-xl-4 tw:px-3 tw:text-center\\\" data-test=\\\"\\\"><span></span><h1 class=\\\"tw:mb-4 tw:text-left tw:typo-headline-medium-3-responsive\\\" data-test=\\\"offer-title\\\">Tu oferta</h1><ul class=\\\"tw:mb-0 tw:flex tw:flex-col tw:gap-2 tw:p-0 tw:text-left\\\"><li class=\\\"tw:flex tw:typo-body-1\\\" data-test=\\\"offer-item-0\\\"><span class=\\\"icon-16 icon--complete tw:me-1 tw:mt-1\\\"></span><span data-test=\\\"offer-item-0\\\">Prueba gratuita de 30 días con 15 horas de tiempo de lectura y escucha</span></li><li class=\\\"tw:flex tw:typo-body-1\\\" data-test=\\\"offer-item-1\\\"><span class=\\\"icon-16 icon--complete tw:me-1 tw:mt-1\\\"></span><span data-test=\\\"offer-item-1\\\">Cancela en cualquier momento</span></li></ul><div class=\\\"tw:grid tw:py-6 tw:sm:inline-block\\\"><a href=\\\"/es/register/planform?code=lecturasgratis30\\\" class=\\\"tw:flex tw:h-fit tw:items-center tw:justify-center tw:overflow-hidden tw:align-middle tw:transition-colors tw:theme-button-cta-background tw:theme-button-cta-text tw:hover-bg-button tw:typo-button-1 tw:px-5 tw:py-3.5 tw:rounded-2xl tw:w-full tw:cursor-pointer\\\" data-test=\\\"link-continue-to-planform\\\"><!----><span class=\\\"\\\">Continuar</span></a></div><!----></div></div></div></main>\\n\";\n    for (const [sel, prop, val] of []) document.querySelectorAll(sel).forEach((e) => { if (prop === 'text') e.textContent = val; else if (prop === 'remove') e.remove(); else e.style.setProperty(prop, val); });\n    window.scrollTo(0, 0);\n    await document.fonts.ready;\n    await Promise.all([...document.images].map((i) => i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; })));\n    return true;\n  })()"
+  },
+  {
+   "eval": "(() => { if (window.__nxBlock) return true; window.__nxBlock = true;\n  document.addEventListener('click', (e) => { if (e.target.closest('main a, main button, main label, main input')) { e.preventDefault(); e.stopImmediatePropagation(); } }, true);\n  document.addEventListener('submit', (e) => { e.preventDefault(); e.stopImmediatePropagation(); }, true);\n  return true; })()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "move": [
+    1190,
+    470
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 3550
+  },
+  {
+   "mark": "to_cont1"
+  },
+  {
+   "move": [
+    960,
+    298
+   ],
+   "dur": 550
+  },
+  {
+   "wait": 450
+  },
+  {
+   "mark": "click_cont1"
+  },
+  {
+   "fakeClick": true
+  },
+  {
+   "wait": 150
+  },
+  {
+   "eval": "(async () => {\n    const css = [\"https://nextory.com/_nuxt/NxPaymentLogos.DAgYoYQh.css\",\"https://nextory.com/_nuxt/StickyButton.CeLOhqH_.css\",\"https://nextory.com/_nuxt/entry.BWPASeIg.css\",\"https://nextory.com/_nuxt/PopIn.CJGqazOh.css\",\"https://nextory.com/_nuxt/NxFooter.D22n7Pe9.css\",\"https://nextory.com/_nuxt/RegistrationLayout.DvmVDmsH.css\",\"https://nextory.com/_nuxt/planform.BrI18nLr.css\",\"https://nextory.com/_nuxt/AccordionCompact.B9e23yTl.css\",\"https://nextory.com/_nuxt/payment-mode.BfNzozP6.css\"];\n    await Promise.all(css.map((href) => new Promise((res) => { if (document.querySelector('link[href=\"' + href + '\"]')) return res(); const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; l.onload = l.onerror = res; document.head.appendChild(l); })));\n    document.getElementById('CybotCookiebotDialog')?.remove();\n    document.querySelector('main').outerHTML = \"<main class=\\\"tw:flex tw:grow tw:flex-col tw:pt-8\\\"><span class=\\\"tw:contents\\\"><!----><section class=\\\"bs-reset tw:flex tw:flex-col tw:items-center\\\"><div class=\\\"tw:flex tw:w-full tw:max-w-lg tw:flex-col tw:px-5 tw:pb-4 tw:lg:max-w-md\\\"><header class=\\\"tw:mb-6 tw:flex tw:flex-col\\\" data-test=\\\"time-limit-info\\\"><h1 class=\\\"tw:mb-3 tw:typo-headline-medium-3-responsive\\\" data-test=\\\"planform-title\\\">Elige tu plan</h1><ul class=\\\"tw:flex tw:w-full tw:list-none tw:flex-col tw:gap-2\\\" data-test=\\\"planform-body\\\"><li class=\\\"tw:flex\\\"><span class=\\\"tw:inline-block tw:shrink-0 tw:h-6 tw:w-6 tw:bg-current tw:mask-contain tw:mask-center tw:mask-no-repeat tw:forced-colors:forced-color-adjust-none tw:mr-1\\\" role=\\\"img\\\" aria-hidden=\\\"true\\\" size=\\\"medium\\\" style=\\\"mask-image: url(&quot;https://nextory.com/_nuxt/check.CMqf76Xo.svg&quot;);\\\"></span><span data-test=\\\"offer-item-0\\\" class=\\\"tw:typo-body-1\\\">Disfruta de tu prueba gratis de 30 días</span></li><li class=\\\"tw:flex\\\"><span class=\\\"tw:inline-block tw:shrink-0 tw:h-6 tw:w-6 tw:bg-current tw:mask-contain tw:mask-center tw:mask-no-repeat tw:forced-colors:forced-color-adjust-none tw:mr-1\\\" role=\\\"img\\\" aria-hidden=\\\"true\\\" size=\\\"medium\\\" style=\\\"mask-image: url(&quot;https://nextory.com/_nuxt/check.CMqf76Xo.svg&quot;);\\\"></span><span data-test=\\\"offer-item-1\\\" class=\\\"tw:typo-body-1\\\">Todos los planes incluyen 4 perfiles</span></li></ul></header><div class=\\\"tw:flex tw:flex-col tw:gap-3\\\"><div class=\\\"tw:relative tw:flex tw:flex-col tw:rounded-lg tw:p-3 tw:theme-content-primary tw:has-focus-visible:[outline:auto] tw:outline-3 tw:outline-content-accent tw:theme-background-tertiary\\\"><label for=\\\"plan-UNLIMITED\\\" aria-hidden=\\\"true\\\" class=\\\"tw:absolute tw:inset-0\\\"></label><input id=\\\"plan-UNLIMITED\\\" type=\\\"radio\\\" name=\\\"plan\\\" class=\\\"tw:sr-only\\\" aria-labelledby=\\\"plan-name-UNLIMITED\\\" checked=\\\"\\\" data-test=\\\"offer-unlimited\\\" value=\\\"UNLIMITED\\\"><header class=\\\"tw:mb-2 tw:flex tw:items-center tw:justify-between tw:typo-subtitle-small-6\\\"><div class=\\\"tw:flex tw:items-center tw:gap-1\\\"><h2 id=\\\"plan-name-UNLIMITED\\\" data-test=\\\"offer-names\\\">Unlimited</h2><!----></div><span data-test=\\\"freedays-unlimited\\\">Sin límite de horas</span></header><div class=\\\"tw:flex tw:flex-col tw:gap-2\\\"><p class=\\\"tw:typo-body-2 tw:theme-content-primary\\\" data-test=\\\"usp-unlimited\\\">Hecho para compartir · Usa de 1 a 4 perfiles a la vez</p><p data-test=\\\"freedays-unlimited\\\" class=\\\"tw:typo-headline-body-7\\\"><span class=\\\"tw:theme-content-primary\\\">desde 9,99 €</span><span class=\\\"tw:typo-meta-1 tw:theme-content-primary\\\">/mes</span></p></div></div><div class=\\\"tw:relative tw:flex tw:flex-col tw:rounded-lg tw:p-3 tw:theme-content-primary tw:has-focus-visible:[outline:auto] tw:theme-background-tertiary\\\"><label for=\\\"plan-STANDARD\\\" aria-hidden=\\\"true\\\" class=\\\"tw:absolute tw:inset-0 tw:cursor-pointer\\\"></label><input id=\\\"plan-STANDARD\\\" type=\\\"radio\\\" name=\\\"plan\\\" class=\\\"tw:sr-only\\\" aria-labelledby=\\\"plan-name-STANDARD\\\" data-test=\\\"offer-standard\\\" value=\\\"STANDARD\\\"><header class=\\\"tw:mb-2 tw:flex tw:items-center tw:justify-between tw:typo-subtitle-small-6\\\"><div class=\\\"tw:flex tw:items-center tw:gap-1\\\"><h2 id=\\\"plan-name-STANDARD\\\" data-test=\\\"offer-names\\\">Standard</h2><!----></div><span data-test=\\\"freedays-standard\\\">30 horas</span></header><div class=\\\"tw:flex tw:flex-col tw:gap-2\\\"><p class=\\\"tw:typo-body-2 tw:theme-content-primary\\\" data-test=\\\"usp-standard\\\">Para una rutina constante · perfil de 1 a la vez</p><p data-test=\\\"freedays-standard\\\" class=\\\"tw:typo-headline-body-7\\\"><span class=\\\"tw:theme-content-primary\\\">7,99 €</span><span class=\\\"tw:typo-meta-1 tw:theme-content-primary\\\">/mes</span></p></div></div><div class=\\\"tw:relative tw:flex tw:flex-col tw:rounded-lg tw:p-3 tw:theme-content-primary tw:has-focus-visible:[outline:auto] tw:theme-background-tertiary\\\"><label for=\\\"plan-MINI\\\" aria-hidden=\\\"true\\\" class=\\\"tw:absolute tw:inset-0 tw:cursor-pointer\\\"></label><input id=\\\"plan-MINI\\\" type=\\\"radio\\\" name=\\\"plan\\\" class=\\\"tw:sr-only\\\" aria-labelledby=\\\"plan-name-MINI\\\" data-test=\\\"offer-mini\\\" value=\\\"MINI\\\"><header class=\\\"tw:mb-2 tw:flex tw:items-center tw:justify-between tw:typo-subtitle-small-6\\\"><div class=\\\"tw:flex tw:items-center tw:gap-1\\\"><h2 id=\\\"plan-name-MINI\\\" data-test=\\\"offer-names\\\">Mini</h2><!----></div><span data-test=\\\"freedays-mini\\\">10 horas</span></header><div class=\\\"tw:flex tw:flex-col tw:gap-2\\\"><p class=\\\"tw:typo-body-2 tw:theme-content-primary\\\" data-test=\\\"usp-mini\\\">Hecho para un ritmo más tranquilo · 1 perfil a la vez</p><p data-test=\\\"freedays-mini\\\" class=\\\"tw:typo-headline-body-7\\\"><span class=\\\"tw:theme-content-primary\\\">5,99 €</span><span class=\\\"tw:typo-meta-1 tw:theme-content-primary\\\">/mes</span></p></div></div></div></div></section><section class=\\\"tw:sticky tw:safe-area-bottom tw:z-10 tw:mt-auto tw:flex tw:w-full tw:flex-col tw:items-center tw:gap-4 tw:theme-background-primary tw:px-5 tw:pt-3 tw:pb-4\\\"><div class=\\\"tw:flex tw:w-full tw:flex-col tw:items-center tw:gap-2 tw:sm:flex-row tw:sm:justify-center tw:sm:gap-3\\\"><!----><a href=\\\"/es/register/subscription-picker?code=lecturasgratis30&amp;uuid=838\\\" class=\\\"tw:flex tw:h-fit tw:items-center tw:justify-center tw:overflow-hidden tw:align-middle tw:transition-colors tw:theme-button-cta-background tw:theme-button-cta-text tw:hover-bg-button tw:typo-button-1 tw:px-5 tw:py-3.5 tw:rounded-2xl tw:w-fit tw:cursor-pointer tw:w-full tw:sm:w-fit\\\" data-test=\\\"link-family-pick-subscription\\\"><!----><span class=\\\"\\\">Continuar</span></a></div><span data-test=\\\"subscription-change-meta\\\" class=\\\"tw:flex tw:items-center tw:text-center tw:typo-meta-1 tw:theme-content-secondary\\\">Gratis durante 30 días · Cancela cuando quieras</span></section></span></main>\";\n    for (const [sel, prop, val] of []) document.querySelectorAll(sel).forEach((e) => { if (prop === 'text') e.textContent = val; else if (prop === 'remove') e.remove(); else e.style.setProperty(prop, val); });\n    window.scrollTo(0, 0);\n    await document.fonts.ready;\n    await Promise.all([...document.images].map((i) => i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; })));\n    return true;\n  })()"
+  },
+  {
+   "mark": "planform"
+  },
+  {
+   "wait": 450
+  },
+  {
+   "mark": "to_std"
+  },
+  {
+   "move": [
+    960,
+    406
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 350
+  },
+  {
+   "mark": "click_std"
+  },
+  {
+   "fakeClick": true
+  },
+  {
+   "eval": "(() => {\n  const cards = [...document.querySelectorAll('main input[name=plan]')].map((i) => i.closest('div.tw\\\\:relative'));\n  for (const c of cards) { c.classList.remove('tw:outline-3', 'tw:outline-content-accent'); }\n  const inp = document.getElementById('plan-STANDARD'); inp.checked = true;\n  inp.closest('div.tw\\\\:relative').classList.add('tw:outline-3', 'tw:outline-content-accent');\n  return true;\n})()"
+  },
+  {
+   "wait": 1750
+  },
+  {
+   "mark": "to_cont2"
+  },
+  {
+   "move": [
+    960,
+    675
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "click_cont2"
+  },
+  {
+   "fakeClick": true
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

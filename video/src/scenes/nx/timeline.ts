@@ -27,18 +27,19 @@ export type VoPart = { id: string; at: number };
 export type SceneDef = { id: string; vo: VoPart[]; lead: number; dur: number };
 const LEAD = sec(0.12);
 const TAIL = sec(0.32);
-const simple = (id: string, extra = 0, lead = LEAD): SceneDef => ({ id, vo: [{ id, at: lead }], lead, dur: lead + speechFrames(id) + TAIL + sec(extra) });
+// `extra`: fotogramas de más al final de la escena (para que respire la animación).
+const simple = (id: string, extra = 0, lead = LEAD): SceneDef => ({ id, vo: [{ id, at: lead }], lead, dur: lead + speechFrames(id) + TAIL + extra });
 
 export const NX_SCENES: SceneDef[] = [
-  simple('N01', 0.25),
-  simple('N02', 0.2),
-  simple('N03', 0.35),
-  simple('N04', 0.2),
+  simple('N01', 23),
+  simple('N02', 10),
+  simple('N03', 18),
+  simple('N04', 30),
   simple('N05'),
-  simple('N06'),
-  simple('N07', 0.2),
-  simple('N08', 0.2),
-  simple('N09', 3.4),
+  simple('N06', 10),
+  simple('N07', 15),
+  simple('N08', 15),
+  simple('N09', 170),
 ];
 
 export const nxStart = (id: string) => {

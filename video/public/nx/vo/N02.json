@@ -1,0 +1,54 @@
+{
+ "id": "N02",
+ "hash": "0340b8142164",
+ "text": "En la ficha del audiolibro, pulsa «Empezar prueba gratuita».",
+ "duration": 4.16,
+ "words": [
+  {
+   "w": "En",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "la",
+   "s": 0.16,
+   "e": 0.24
+  },
+  {
+   "w": "ficha",
+   "s": 0.28,
+   "e": 0.48
+  },
+  {
+   "w": "del",
+   "s": 0.56,
+   "e": 0.64
+  },
+  {
+   "w": "audiolibro,",
+   "s": 0.76,
+   "e": 1.467
+  },
+  {
+   "w": "pulsa",
+   "s": 1.493,
+   "e": 2.08
+  },
+  {
+   "w": "«Empezar",
+   "s": 2.12,
+   "e": 2.72
+  },
+  {
+   "w": "prueba",
+   "s": 2.8,
+   "e": 3.12
+  },
+  {
+   "w": "gratuita».",
+   "s": 3.16,
+   "e": 4.16
+  }
+ ],
+ "speechEnd": 4.16
+}

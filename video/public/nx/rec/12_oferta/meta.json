@@ -1,0 +1,18 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 464,
+ "duration": 5.779,
+ "offset": 0.026,
+ "marks": {
+  "to_cookie": 0.281,
+  "click_cookie": 1.437,
+  "to_cta": 2.029,
+  "click_cta": 3.085,
+  "end": 5.78
+ },
+ "events": []
+}

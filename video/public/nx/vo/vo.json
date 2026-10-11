@@ -13,39 +13,39 @@
  "scenes": [
   {
    "id": "N01",
-   "text": "¿30 días gratis de Nextory, en lugar de 14? Así se consiguen, paso a paso."
+   "text": "¿SonorBooks te recomienda Nextory? Así consigues 30 días gratis, en lugar de 14."
   },
   {
    "id": "N02",
-   "text": "En SonorBooks, abre tu audiolibro, elige Nextory y pulsa «Empezar prueba gratuita»."
+   "text": "En la ficha del audiolibro, pulsa «Empezar prueba gratuita»."
   },
   {
    "id": "N03",
-   "text": "Acepta solo las cookies necesarias, comprueba que pone «30 días gratis» y pulsa el botón."
+   "text": "Acepta solo las cookies necesarias y pulsa «30 días gratis»."
   },
   {
    "id": "N04",
-   "text": "Escribe tu correo, pulsa «Continuar» y crea tu contraseña."
+   "text": "Escribe tu correo, pulsa «Continuar» y crea una contraseña."
   },
   {
    "id": "N05",
-   "text": "Elige tu plan: en la prueba tienes hasta 15 horas de escucha; después, desde 7,99 euros al mes."
+   "text": "Tu oferta: 30 días con 15 horas de escucha. Pulsa «Continuar» y elige tu plan: solo lo pagarás si sigues después de la prueba."
   },
   {
    "id": "N06",
-   "text": "Añade tu tarjeta. Hoy no pagas nada: el primer cobro llega al acabar los 30 días."
+   "text": "En el pago, fíjate: hoy no pagas nada. Elige tarjeta, rellena tus datos y pulsa «Inicia tu prueba gratuita»."
   },
   {
    "id": "N07",
-   "text": "¡Listo! Descarga la app de Nextory, entra con tu correo y a escuchar."
+   "text": "¡Y listo! Descarga la app de Nextory, entra con tu correo y a escuchar."
   },
   {
    "id": "N08",
-   "text": "Si no quieres seguir, cancela desde tu cuenta antes de que acabe la prueba. Ojo: al cancelar, pierdes el acceso al momento."
+   "text": "Si no quieres seguir, cancela en «Mis páginas» antes de que acabe la prueba. Ojo: al cancelar, pierdes el acceso al momento."
   },
   {
    "id": "N09",
-   "text": "Encuentra dónde escuchar cualquier audiolibro, al mejor precio, en SonorBooks. Tu próxima historia te está esperando."
+   "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks. Tu próxima historia te está esperando."
   }
  ]
 }

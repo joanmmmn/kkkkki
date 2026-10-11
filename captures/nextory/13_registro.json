@@ -1,0 +1,80 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "steps": [
+  {
+   "go": "https://nextory.com/es/profile/registration?code=lecturasgratis30&cb=%2Fes%2Fregister%2Fplaninfo%3Fcode%3Dlecturasgratis30"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "clickText": "Permitir las cookies necesarias",
+   "dur": 10
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(() => { if (window.__nxBlock) return true; window.__nxBlock = true;\n  document.addEventListener('click', (e) => { if (e.target.closest('main a, main button, main label, main input')) { e.preventDefault(); e.stopImmediatePropagation(); } }, true);\n  document.addEventListener('submit', (e) => { e.preventDefault(); e.stopImmediatePropagation(); }, true);\n  return true; })()"
+  },
+  {
+   "clickSel": "main input[type=email], main input[name*=mail i], main input[autocomplete=email]",
+   "dur": 10
+  },
+  {
+   "move": [
+    1010,
+    262
+   ],
+   "dur": 10
+  },
+  {
+   "wait": 400
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 150
+  },
+  {
+   "mark": "type"
+  },
+  {
+   "type": "tucorreo@ejemplo.com",
+   "delay": 52
+  },
+  {
+   "wait": 150
+  },
+  {
+   "mark": "to_cont"
+  },
+  {
+   "move": [
+    960,
+    385
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 170
+  },
+  {
+   "mark": "click_cont"
+  },
+  {
+   "fakeClick": true
+  },
+  {
+   "wait": 3700
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

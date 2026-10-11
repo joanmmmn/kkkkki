@@ -12,6 +12,12 @@ import reader from '../../public/elt/rec/03_reader/meta.json';
 import nxHome from '../../public/nx/rec/00_home/meta.json';
 import nxFicha from '../../public/nx/rec/01_ficha/meta.json';
 import nxOferta from '../../public/nx/rec/02_oferta/meta.json';
+import nx10 from '../../public/nx/rec/10_hook_ficha/meta.json';
+import nx11 from '../../public/nx/rec/11_ficha_click/meta.json';
+import nx12 from '../../public/nx/rec/12_oferta/meta.json';
+import nx13 from '../../public/nx/rec/13_registro/meta.json';
+import nx14 from '../../public/nx/rec/14_plan/meta.json';
+import nx15 from '../../public/nx/rec/15_pago/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
@@ -21,6 +27,12 @@ const REC_DURATIONS: Record<string, number> = {
   'nx/rec/00_home/video.mp4': nxHome.duration,
   'nx/rec/01_ficha/video.mp4': nxFicha.duration,
   'nx/rec/02_oferta/video.mp4': nxOferta.duration,
+  'nx/rec/10_hook_ficha/video.mp4': nx10.duration,
+  'nx/rec/11_ficha_click/video.mp4': nx11.duration,
+  'nx/rec/12_oferta/video.mp4': nx12.duration,
+  'nx/rec/13_registro/video.mp4': nx13.duration,
+  'nx/rec/14_plan/video.mp4': nx14.duration,
+  'nx/rec/15_pago/video.mp4': nx15.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };

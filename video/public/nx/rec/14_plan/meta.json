@@ -1,0 +1,21 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 809,
+ "duration": 10.167,
+ "offset": 0.023,
+ "marks": {
+  "to_cont1": 3.53,
+  "click_cont1": 4.544,
+  "planform": 4.789,
+  "to_std": 5.239,
+  "click_std": 6.209,
+  "to_cont2": 8.055,
+  "click_cont2": 9.077,
+  "end": 10.168
+ },
+ "events": []
+}

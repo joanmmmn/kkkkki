@@ -17,9 +17,10 @@ export const N09Outro: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
   const at = (w: string, n = 0) => lead + wf('N09', w, n);
   const fCual = at('cualquier');
   const fPrecio = at('precio');
+  const fBusca = at('buscalo');
   const fTu = at('Tu') - 6;
   const typeAt = Math.max(10, fCual - 6);
-  const go = fPrecio + 4;
+  const go = fBusca + 4;
   const press = interpolate(frame, [go, go + 4, go + 12], [0, 1, 0], clamp);
   const ring = interpolate(frame, [go + 4, go + 24], [0, 1], clamp);
   return (

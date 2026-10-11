@@ -5,33 +5,51 @@ import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
 import { Highlight } from '../../components/Highlight';
 import { LogoIcon } from '../../components/Logo';
+import { ScreenClip, CamKey } from '../../components/ScreenClip';
 import { Sfx } from '../../components/Sfx';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { wf } from './timeline';
-import { NextoryLogo } from './common';
-import { NX_STEPS } from './steps';
+import { BrowserStage, BW, NextoryLogo } from './common';
+import cursor from '../../../public/nx/rec/10_hook_ficha/cursor.json';
 
-// N01 · Gancho: «¿30 días gratis de Nextory, en lugar de 14? Así se consiguen, paso a paso.»
+// N01 · Gancho: ficha de SonorBooks con Nextory recomendado → «30 días gratis, en lugar de 14».
 export const N01Hook: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('N01', w, n);
-  const f30 = Math.max(2, at('30') - 2);
-  const f14 = at('14');
+  const fNext = at('Nextory');
   const fAsi = at('Asi');
-  const fPaso = at('paso');
+  const f30 = at('30');
+  const fGratis = at('gratis');
+  const f14 = at('14');
 
-  const logo = spring({ frame: frame - 1, fps, config: { damping: 15, stiffness: 150 } });
-  const c30 = spring({ frame: frame - f30, fps, config: { damping: 13, stiffness: 170 } });
-  const room14 = spring({ frame: frame - (f14 - 4), fps, config: { damping: 22, stiffness: 130 } });
-  const c14 = spring({ frame: frame - (f14 - 1), fps, config: { damping: 16, stiffness: 170 } });
-  const strike = interpolate(frame, [f14 + 6, f14 + 16], [0, 1], { ...clamp, easing: easeOut });
-  const dim14 = interpolate(frame, [f14 + 16, f14 + 28], [0, 1], { ...clamp, easing: easeInOut });
+  const cam: CamKey[] = [
+    { f: 0, zoom: 1.0, x: 960, y: 540 },
+    { f: 18, zoom: 1.03, x: 980, y: 540 },
+    { f: fNext - 26, zoom: 1.22, x: 1120, y: 570 },
+    { f: fNext + 12, zoom: 1.78, x: 1275, y: 612 },
+    { f: fAsi + 10, zoom: 1.84, x: 1275, y: 616 },
+  ];
+
+  const logo = spring({ frame: frame - fAsi, fps, config: { damping: 15, stiffness: 150 } });
+  const c30In = Math.max(fAsi + 8, f30 - 14);
+  const c30 = spring({ frame: frame - c30In, fps, config: { damping: 13, stiffness: 170 } });
+  const room14 = spring({ frame: frame - (f14 - 8), fps, config: { damping: 22, stiffness: 130 } });
+  const c14 = spring({ frame: frame - (f14 - 5), fps, config: { damping: 16, stiffness: 170 } });
+  const strike = interpolate(frame, [f14 + 6, f14 + 15], [0, 1], { ...clamp, easing: easeOut });
+  const dim14 = interpolate(frame, [f14 + 16, f14 + 30], [0, 1], { ...clamp, easing: easeInOut });
   const W14 = 400, W30 = 560, GAP = 54;
 
   return (
     <Stage tone="warm">
-      <Phase from={0} to={fAsi + 4} noIn>
+      <Phase from={0} to={fAsi + 2} noIn out={10}>
+        <BrowserStage url="sonorbooks.com">
+          <ScreenClip src="nx/rec/10_hook_ficha/video.mp4" width={BW} cursor={cursor} camera={cam}
+            marks={[{ from: fNext - 6, to: fAsi + 14, x: 951, y: 463, w: 648, h: 307, r: 22, label: 'Recomendado: Nextory' }]} />
+        </BrowserStage>
+      </Phase>
+
+      <Phase from={fAsi} to={dur} out={8}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 70 }}>
           <div style={{ opacity: logo, transform: `translateY(${(1 - logo) * -30}px) scale(${0.85 + 0.15 * logo})` }}>
             <NextoryLogo width={330} />
@@ -56,7 +74,7 @@ export const N01Hook: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) 
                 </div>
                 <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 132, letterSpacing: -4, color: color.ink, lineHeight: 1 }}>30 días</div>
                 <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: color.ink, marginTop: 10 }}>
-                  <Highlight start={f30 + 12} dur={12} height={0.36}>gratis</Highlight>
+                  <Highlight start={fGratis} dur={12} height={0.36}>gratis</Highlight>
                 </div>
               </div>
             </div>
@@ -64,38 +82,14 @@ export const N01Hook: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) 
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fAsi} to={dur} out={8}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 56 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            <NextoryLogo width={210} />
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: color.ink, letterSpacing: -1 }}>· prueba de 30 días</div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            {NX_STEPS.map((s, i) => {
-              const f = fPaso - 10 + i * 5;
-              const sp = spring({ frame: frame - f, fps, config: { damping: 15, stiffness: 170 } });
-              const line = interpolate(frame, [f - 4, f + 4], [0, 1], { ...clamp, easing: easeInOut });
-              return (
-                <React.Fragment key={s}>
-                  {i > 0 && <div style={{ width: 54, height: 5, borderRadius: 3, margin: '0 14px', background: '#E6E6E6', overflow: 'hidden' }}><div style={{ width: `${line * 100}%`, height: '100%', background: color.yellow }} /></div>}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '18px 28px 18px 18px', borderRadius: 999, background: '#fff', boxShadow: shadow.card, border: `1px solid ${color.line}`, opacity: sp, transform: `translateY(${(1 - sp) * 40}px) scale(${0.85 + 0.15 * sp})`, filter: `blur(${(1 - sp) * 6}px)` }}>
-                    <div style={{ width: 52, height: 52, borderRadius: '50%', background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 28 }}>{i + 1}</div>
-                    <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, whiteSpace: 'nowrap' }}>{s}</div>
-                  </div>
-                </React.Fragment>
-              );
-            })}
-          </div>
-        </AbsoluteFill>
-      </Phase>
-
-      <Sfx name="logo_sting" at={1} volume={0.55} />
-      <Sfx name="snap_in" at={f30 + 2} />
-      <Sfx name="marker" at={f30 + 12} />
-      <Sfx name="swipe" at={f14} />
-      <Sfx name="pencil_strike" at={f14 + 6} />
+      <Sfx name="zoom_in" at={fNext - 20} volume={0.8} />
+      <Sfx name="draw" at={fNext - 6} />
+      <Sfx name="ui_pop" at={fNext + 4} volume={0.8} />
       <Sfx name="whoosh_soft" at={fAsi} />
-      {NX_STEPS.map((s, i) => <Sfx key={s} name="tick_soft" at={fPaso - 10 + i * 5} volume={0.5} />)}
+      <Sfx name="snap_in" at={c30In + 2} />
+      <Sfx name="marker" at={fGratis} />
+      <Sfx name="swipe" at={f14 - 6} />
+      <Sfx name="pencil_strike" at={f14 + 6} />
     </Stage>
   );
 };

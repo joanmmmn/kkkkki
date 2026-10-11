@@ -1,0 +1,59 @@
+{
+ "id": "N03",
+ "hash": "610eabc4bd10",
+ "text": "Acepta solo las cookies necesarias y pulsa «30 días gratis».",
+ "duration": 4.8,
+ "words": [
+  {
+   "w": "Acepta",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "solo",
+   "s": 0.56,
+   "e": 0.8
+  },
+  {
+   "w": "las",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "cookies",
+   "s": 1.04,
+   "e": 1.28
+  },
+  {
+   "w": "necesarias",
+   "s": 1.36,
+   "e": 2.16
+  },
+  {
+   "w": "y",
+   "s": 2.24,
+   "e": 2.32
+  },
+  {
+   "w": "pulsa",
+   "s": 2.36,
+   "e": 2.96
+  },
+  {
+   "w": "«30",
+   "s": 3.0,
+   "e": 3.44
+  },
+  {
+   "w": "días",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "gratis».",
+   "s": 4.28,
+   "e": 4.8
+  }
+ ],
+ "speechEnd": 4.8
+}

@@ -1,0 +1,75 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "steps": [
+  {
+   "go": "https://nextory.com/es/collab/partner/lecturasgratis30"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "move": [
+    1320,
+    880
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "to_cookie"
+  },
+  {
+   "move": [
+    673,
+    692
+   ],
+   "dur": 850
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "click_cookie"
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 500
+  },
+  {
+   "mark": "to_cta"
+  },
+  {
+   "move": [
+    143,
+    555
+   ],
+   "dur": 850
+  },
+  {
+   "wait": 200
+  },
+  {
+   "mark": "click_cta"
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}
