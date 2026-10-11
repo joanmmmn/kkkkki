@@ -50,7 +50,7 @@ export const H03What: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) 
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
           <Card style={{ width: 760 }}>
             <div style={{ fontFamily: font.sans, fontSize: 28, letterSpacing: 5, color: color.muted, fontWeight: 500 }}>LA MANTIENE</div>
-            <div style={{ fontFamily: font.sans, fontSize: 66, fontWeight: 700, marginTop: 14, lineHeight: 1.05 }}>Fundación El Libro Total</div>
+            <div style={{ fontFamily: font.sans, fontSize: 66, fontWeight: 700, marginTop: 14, lineHeight: 1.05 }}>Fundación<br />El Libro Total</div>
             <div style={{ fontFamily: font.sans, fontSize: 42, marginTop: 18, color: color.ink2 }}><Highlight start={16}>sin ánimo de lucro</Highlight></div>
           </Card>
           <Grow at={fSoft - fFund - 4} w={74} gap={50} rise={0}>
@@ -59,7 +59,7 @@ export const H03What: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) 
           <Grow at={fSoft - fFund} w={760} gap={50}>
             <div style={{ background: color.bg, borderRadius: 32, boxShadow: shadow.card, border: `1px solid ${color.line}`, padding: 48 }}>
               <div style={{ fontFamily: font.sans, fontSize: 28, letterSpacing: 5, color: color.muted, fontWeight: 500 }}>LA FINANCIA</div>
-              <div style={{ fontFamily: font.sans, fontSize: 66, fontWeight: 700, marginTop: 14, lineHeight: 1.05 }}>Sistemas y Computadores</div>
+              <div style={{ fontFamily: font.sans, fontSize: 66, fontWeight: 700, marginTop: 14, lineHeight: 1.05 }}>Sistemas y<br />Computadores</div>
               <div style={{ fontFamily: font.sans, fontSize: 42, marginTop: 18, color: color.ink2 }}>empresa de software</div>
             </div>
           </Grow>

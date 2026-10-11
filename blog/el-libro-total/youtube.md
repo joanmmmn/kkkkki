@@ -51,10 +51,10 @@ El Libro Total, el libro total audiolibros, audiolibros gratis, audiolibros en e
 Reseña completa (con capturas y fuentes): https://sonorbooks.com/blog/el-libro-total
 ```
 
-## Pantalla final (últimos 8-10 s del vídeo)
+## Pantalla final (últimos 6 s del vídeo)
 - Elemento «Vídeo»: la última subida o la mejor para el espectador.
 - Elemento «Suscribirse».
-- La zona libre queda a la derecha del logo en el cierre.
+- El bloque de marca ocupa el tercio superior del cierre. La mitad inferior queda libre para estos dos elementos.
 
 ## Miniatura
 `video/out/elt/thumbnail.png` (1280×720): «GRATIS» en grande con el subrayado amarillo, el lector de El Libro Total con el texto resaltado y el logo de SonorBooks.

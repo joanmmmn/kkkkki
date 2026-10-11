@@ -106,7 +106,7 @@ export const H05Use: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
         </div>
       </AbsoluteFill>
 
-      <Callout at={fCon} until={cut1 - 4} x={960} y={78} anchor="center" size={44} dark>Todo está conectado</Callout>
+      <Callout at={fCon} until={cut1 - 4} x={960} y={116} anchor="center" size={44} dark>Todo está conectado</Callout>
       <Callout at={fLees} x={960} y={930} anchor="center" size={50}>Lees y escuchas a la vez</Callout>
       <Callout at={fPag} until={fLees - 4} x={960} y={930} anchor="center" size={46} dark>Paso de página automático</Callout>
       {pill > 0 && (

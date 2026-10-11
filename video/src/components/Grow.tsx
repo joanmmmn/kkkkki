@@ -19,3 +19,12 @@ export const Grow: React.FC<{ at: number; w: number; gap?: number; first?: boole
     </div>
   );
 };
+
+// Variante vertical: el elemento abre hueco en altura al aparecer (la columna se recentra sola).
+// No anima la opacidad: el hijo ya trae su propia entrada.
+export const GrowV: React.FC<{ at: number; h: number; gap?: number; children: React.ReactNode }> = ({ at, h, gap = 0, children }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const room = spring({ frame: frame - at, fps, config: { damping: 22, stiffness: 120 } });
+  return <div style={{ height: h * room, marginTop: gap * room, flexShrink: 0, overflow: 'visible' }}>{children}</div>;
+};

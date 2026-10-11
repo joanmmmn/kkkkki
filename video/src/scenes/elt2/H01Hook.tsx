@@ -65,6 +65,7 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
   const trampa = interpolate(frame, [fTrampa - 8, fTrampa + 6], [0, 1], clamp);
   const pAud = spring({ frame: frame - fAud, fps, config: { damping: 16, stiffness: 160 } });
   const pElt = spring({ frame: frame - fAqui, fps, config: { damping: 12, stiffness: 180 } });
+  const eltRoom = spring({ frame: frame - fAqui + 6, fps, config: { damping: 22, stiffness: 120 } });
   const strike = interpolate(frame, [fAqui + 2, fAqui + 12], [0, 1], clamp);
   const counter = interpolate(frame, [fSeis - 10, fSeis + 40], [0, 6698], { ...clamp, easing: easeOut });
   return (
@@ -83,14 +84,14 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
           <div style={{ background: 'rgba(255,255,255,0.94)', borderRadius: 40, padding: '30px 70px', boxShadow: shadow.card, textAlign: 'center', transform: `scale(${0.9 + 0.1 * spring({ frame: frame - fSeis + 12, fps, config: { damping: 14 } })})` }}>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 190, letterSpacing: -6, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>{fmtEs(Math.round(counter))}</div>
             <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 46, color: color.ink2, marginTop: 6 }}>audiolibros gratis</div>
-            <div style={{ display: 'flex', gap: 22, justifyContent: 'center', marginTop: 26, minHeight: 74 }}>
+            <div style={{ display: 'flex', gap: 22, justifyContent: 'center', marginTop: 30, minHeight: 84 }}>
               {['Anuncios', 'Suscripción', 'Registro'].map((t, i) => {
                 const s = spring({ frame: frame - fSin[i] + 6, fps, config: { damping: 16, stiffness: 180 } });
                 const k = interpolate(frame, [fSin[i] + 3, fSin[i] + 13], [0, 1], clamp);
                 return (
-                  <div key={t} style={{ position: 'relative', padding: '12px 30px', borderRadius: 999, border: `2px solid ${color.line}`, background: '#fff', fontFamily: font.sans, fontSize: 36, fontWeight: 500, color: k > 0.5 ? color.muted : color.ink, opacity: s, transform: `translateY(${(1 - s) * 20}px)` }}>
+                  <div key={t} style={{ position: 'relative', padding: '14px 34px', borderRadius: 999, border: `2px solid ${k > 0.5 ? 'rgba(229,72,77,0.35)' : '#DADADA'}`, background: k > 0.5 ? '#FFF5F5' : '#fff', fontFamily: font.sans, fontSize: 44, fontWeight: 700, color: k > 0.5 ? '#9A9A9A' : color.ink, opacity: s, transform: `translateY(${(1 - s) * 20}px) scale(${1 + 0.06 * Math.sin(Math.min(1, k) * Math.PI)})` }}>
                     {t}
-                    <div style={{ position: 'absolute', left: 18, right: 18, top: '50%', height: 6, borderRadius: 3, background: color.red, transform: `scaleX(${k}) rotate(-5deg)`, transformOrigin: 'left' }} />
+                    <div style={{ position: 'absolute', left: 20, right: 20, top: '52%', height: 7, borderRadius: 4, background: color.red, transform: `scaleX(${k}) rotate(-5deg)`, transformOrigin: 'left' }} />
                   </div>
                 );
               })}
@@ -119,7 +120,7 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
 
       {/* Duelo de precios */}
       {duel > 0 && winOut < 1 && (
-        <AbsoluteFill style={{ justifyContent: 'center', paddingLeft: 1060, gap: 36, opacity: 1 - winOut }}>
+        <AbsoluteFill style={{ justifyContent: 'center', paddingLeft: 1060, opacity: 1 - winOut }}>
           <div style={{ width: 720, padding: '36px 44px', borderRadius: 34, background: '#fff', boxShadow: shadow.card, border: `1px solid ${color.line}`, opacity: pAud, transform: `translateX(${(1 - pAud) * 80}px)` }}>
             <div style={{ fontFamily: font.sans, fontSize: 36, color: color.ink2, fontWeight: 500 }}>Audible</div>
             <div style={{ position: 'relative', display: 'inline-block', fontFamily: font.sans, fontWeight: 700, fontSize: 120, letterSpacing: -3, lineHeight: 1.05 }}>
@@ -127,11 +128,14 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
               <div style={{ position: 'absolute', left: -8, right: -8, top: '52%', height: 10, borderRadius: 5, background: color.red, transform: `scaleX(${strike}) rotate(-5deg)`, transformOrigin: 'left' }} />
             </div>
           </div>
+          {/* La tarjeta de El Libro Total abre hueco al entrar: la de Audible empieza centrada y sube. */}
+          <div style={{ height: 250 * eltRoom, marginTop: 36 * eltRoom, overflow: 'visible' }}>
           <div style={{ width: 720, padding: '36px 44px', borderRadius: 34, background: color.yellowSoft, border: `3px solid ${color.yellow}`, boxShadow: shadow.card, opacity: pElt, transform: `translateX(${(1 - pElt) * 80}px) scale(${0.9 + 0.1 * pElt})` }}>
             <div style={{ fontFamily: font.sans, fontSize: 36, color: color.ink2, fontWeight: 500 }}>El Libro Total</div>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 120, letterSpacing: -3, lineHeight: 1.05 }}>
               {frame >= fCero - 2 ? <Highlight start={fCero} dur={10}>0 €</Highlight> : <span style={{ opacity: 0.25 }}>…</span>}
             </div>
+          </div>
           </div>
         </AbsoluteFill>
       )}
@@ -154,9 +158,10 @@ export const H01Hook: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
       <Sfx name="hit_soft" at={fAud + 4} volume={0.6} />
       <Sfx name="pencil_strike" at={fAqui + 4} />
       <Sfx name="snap_in" at={fAqui + 2} volume={0.8} />
-      <Sfx name="hit_soft" at={fCero} />
-      <Sfx name="marker" at={fCero} />
-      <Sfx name="coins" at={fCero + 4} volume={0.7} />
+      {/* «cero» tiene que oírse limpio: golpe y rotulador suaves sobre la palabra, monedas justo después. */}
+      <Sfx name="hit_soft" at={fCero} volume={0.5} />
+      <Sfx name="marker" at={fCero} volume={0.55} />
+      <Sfx name="coins" at={fCero + 22} volume={0.6} />
       <Sfx name="whoosh_deep" at={fUnico} />
       <Sfx name="page_riffle" at={fUnico - 4} />
       <Sfx name="counter" at={fSeis - 10} />

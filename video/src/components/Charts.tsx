@@ -50,15 +50,16 @@ export const StackBar: React.FC<{ parts: { label: string; pct: number; c: string
   const p = interpolate(frame, [at, at + 36], [0, 1], { ...clamp, easing: easeOut });
   return (
     <div style={{ width }}>
-      <div style={{ display: 'flex', height: 90, borderRadius: 24, overflow: 'hidden', boxShadow: shadow.soft }}>
+      <div style={{ display: 'flex', height: 90, borderRadius: 24, overflow: 'hidden', boxShadow: shadow.soft, background: '#F2F2F2' }}>
         {parts.map((x) => (
-          <div key={x.label} style={{ width: `${x.pct * p}%`, background: x.c, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: x.c === color.ink ? '#fff' : color.ink, overflow: 'hidden', whiteSpace: 'nowrap' }}>
-            {x.pct >= 9 ? `${x.pct} %` : ''}
+          <div key={x.label} style={{ width: `${x.pct * p}%`, background: x.c, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: x.c === color.ink ? '#fff' : color.ink, overflow: 'hidden', whiteSpace: 'nowrap' }}>
+            {x.pct >= 20 ? `${Math.round(x.pct * p)} %` : ''}
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex', gap: 30, marginTop: 18, fontFamily: font.sans, fontSize: 32, color: color.ink2 }}>
-        {parts.map((x) => <div key={x.label} style={{ display: 'flex', alignItems: 'center', gap: 10 }}><div style={{ width: 22, height: 22, borderRadius: 6, background: x.c }} />{x.label}</div>)}
+      {/* Las cifras de los tramos estrechos van en la leyenda para no solaparse dentro de la barra. */}
+      <div style={{ display: 'flex', gap: 34, marginTop: 20, fontFamily: font.sans, fontSize: 34, color: color.ink2 }}>
+        {parts.map((x) => <div key={x.label} style={{ display: 'flex', alignItems: 'center', gap: 12, opacity: interpolate(p, [0.5, 1], [0.3, 1], clamp) }}><div style={{ width: 24, height: 24, borderRadius: 6, background: x.c, border: x.c === '#D9D9D9' ? '1px solid #C4C4C4' : 'none' }} />{x.label} <b style={{ color: color.ink }}>{x.pct} %</b></div>)}
       </div>
     </div>
   );

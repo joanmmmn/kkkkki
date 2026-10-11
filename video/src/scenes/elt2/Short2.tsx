@@ -237,9 +237,10 @@ export const ELTShort2: React.FC = () => {
       <Sfx name="snap_in" at={fAud + 2} />
       <Sfx name="pencil_strike" at={fAqui + 4} />
       <Sfx name="snap_in" at={fAqui + 2} volume={0.8} />
-      <Sfx name="hit_soft" at={fCero} />
-      <Sfx name="marker" at={fCero} />
-      <Sfx name="coins" at={fCero + 4} volume={0.7} />
+      {/* «cero» tiene que oírse limpio: golpe y rotulador suaves sobre la palabra, monedas justo después. */}
+      <Sfx name="hit_soft" at={fCero} volume={0.5} />
+      <Sfx name="marker" at={fCero} volume={0.55} />
+      <Sfx name="coins" at={fCero + 22} volume={0.6} />
       <Sfx name="whoosh_deep" at={fUnico} />
       <Sfx name="page_riffle" at={fUnico - 4} />
       <Sfx name="counter" at={fSeis - 10} />

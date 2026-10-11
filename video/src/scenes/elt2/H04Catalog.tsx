@@ -10,7 +10,7 @@ import { Donut, BarRow, StackBar } from '../../components/Charts';
 import { Sfx } from '../../components/Sfx';
 import { clamp, easeOut, fmtEs } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
-import { Grow } from '../../components/Grow';
+import { Grow, GrowV } from '../../components/Grow';
 import cursor from '../../../public/elt/rec/01_home/cursor.json';
 
 const W = 1640;
@@ -78,11 +78,11 @@ export const H04Catalog: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       </Phase>
 
       <Phase from={fMitad} to={fTemas + 6}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 44 }}>
-          <div style={{ fontFamily: font.sans, fontSize: 30, letterSpacing: 5, color: color.muted, fontWeight: 500, width: 1400 }}>DURACIÓN · ESCALA LOGARÍTMICA</div>
-          <BarRow label="La mitad de los audiolibros dura menos de…" value="18 min" frac={logFrac(18)} at={8} width={1400} size={44} />
-          <BarRow label="«Crimen y castigo»" value="26,6 h" frac={logFrac(1596)} at={fCyc - fMitad} width={1400} size={44} />
-          <BarRow label="«Ana Karenina»" value="40,8 h" frac={logFrac(2448)} at={fAna - fMitad} width={1400} size={44} accent />
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+          <div style={{ fontFamily: font.sans, fontSize: 32, letterSpacing: 5, color: color.muted, fontWeight: 500, width: 1500, marginBottom: 44 }}>DURACIÓN · ESCALA LOGARÍTMICA</div>
+          <BarRow label="La mitad de los audiolibros dura menos de…" value="18 min" frac={logFrac(18)} at={8} width={1500} size={52} />
+          <GrowV at={fCyc - fMitad - 6} h={102} gap={46}><BarRow label="«Crimen y castigo»" value="26,6 h" frac={logFrac(1596)} at={fCyc - fMitad} width={1500} size={52} /></GrowV>
+          <GrowV at={fAna - fMitad - 6} h={102} gap={46}><BarRow label="«Ana Karenina»" value="40,8 h" frac={logFrac(2448)} at={fAna - fMitad} width={1500} size={52} accent /></GrowV>
         </AbsoluteFill>
       </Phase>
 

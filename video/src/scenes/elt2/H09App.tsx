@@ -92,8 +92,8 @@ export const H09App: React.FC<{ lead: number; dur: number }> = ({ lead, dur }) =
       <Phase from={fOjo} to={dur} out={4}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 40 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            <WifiOff size={64} strike={interpolate(frame, [fOjo + 8, fOjo + 20], [0, 1], clamp)} />
-            <div style={{ fontFamily: font.sans, fontSize: 40, letterSpacing: 6, color: color.ink2, fontWeight: 700 }}>SIN CONEXIÓN</div>
+            <WifiOff size={96} strike={interpolate(frame, [fOjo + 8, fOjo + 20], [0, 1], clamp)} />
+            <div style={{ fontFamily: font.sans, fontSize: 64, letterSpacing: 4, color: color.ink, fontWeight: 700 }}>Sin conexión</div>
           </div>
           <div style={{ display: 'flex' }}>
             {[{ ok: true, t: 'Leer', s: 'EPUB · PDF', I: BookIcon, f: fLeer }, { ok: false, t: 'Escuchar', s: 'necesita internet', I: HeadphonesIcon, f: fAudio }].map((x, i) => (

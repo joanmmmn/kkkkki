@@ -42,7 +42,7 @@ export const H10ProsCons: React.FC<{ lead: number; dur: number }> = ({ lead }) =
   const sR = spring({ frame: frame - fPeor + 6, fps, config: { damping: 20, stiffness: 140 } });
   const dimL = interpolate(frame, [fPeor, fPeor + 15], [1, 0.5], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const col = (title: string, good: boolean, s: number, children: React.ReactNode, o = 1) => (
-    <div style={{ width: 820, background: '#fff', borderRadius: 36, padding: '42px 54px', boxShadow: shadow.card, border: `1px solid ${color.line}`, opacity: s * o, transform: `translateY(${(1 - s) * 60}px)` }}>
+    <div style={{ width: 820, minHeight: 620, boxSizing: 'border-box', background: '#fff', borderRadius: 36, padding: '42px 54px', boxShadow: shadow.card, border: `1px solid ${color.line}`, opacity: s * o, transform: `translateY(${(1 - s) * 60}px)` }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginBottom: 10 }}>
         <div style={{ width: 20, height: 20, borderRadius: 10, background: good ? color.green : color.red }} />
         <div style={{ fontFamily: font.sans, fontSize: 70, fontWeight: 700 }}>{title}</div>
@@ -53,7 +53,7 @@ export const H10ProsCons: React.FC<{ lead: number; dur: number }> = ({ lead }) =
   return (
     <Stage>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
-        <div style={{ transform: `scale(${1 + 0.06 * (1 - sR)})` }}>
+        <div style={{ transform: `scale(${1 + 0.06 * (1 - sR)})`, alignSelf: 'center' }}>
           {col('Lo mejor', true, sL, pros.map((p) => <Item key={p.t} ok text={p.t} at={p.f} />), dimL)}
         </div>
         <Grow at={fPeor - 10} w={820} gap={56} rise={60}>

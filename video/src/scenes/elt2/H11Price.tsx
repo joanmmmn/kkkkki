@@ -9,6 +9,7 @@ import { Sfx } from '../../components/Sfx';
 import { clamp } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
 import { Grow } from '../../components/Grow';
+import { Words } from '../../components/Kinetic';
 
 // Datos de SonorBooks (anuncio V7): «Crimen y castigo» en cada plataforma.
 const ROWS = [
@@ -41,7 +42,7 @@ export const H11Price: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
     <Stage>
       <Phase from={0} to={fAhorro + 6}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50 }}>
-          <div style={{ fontFamily: font.sans, fontSize: 40, letterSpacing: 6, color: color.muted, fontWeight: 500 }}>IDEAL PARA</div>
+          <Words text="¿Para quién es?" start={2} size={104} weight={700} />
           <div style={{ display: 'flex' }}>
             {pers.map((p, i) => (
               <Grow key={p.t} at={p.f - 6} w={500} gap={46} first={i === 0}>
@@ -81,7 +82,7 @@ export const H11Price: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
                   </div>
                   <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 10, fontFamily: font.sans, fontSize: 32, color: color.ink2 }}><MicIcon size={32} c={color.muted} /> {r.n}</div>
                   <div style={{ width: 260, textAlign: 'right', fontFamily: font.sans, fontSize: 54, fontWeight: 700 }}>
-                    {r.elt ? <Highlight start={fCero - 4} dur={10}>{r.price}</Highlight> : r.price}
+                    {r.elt ? <Highlight start={fCero - 4 - fAhorro} dur={10}>{r.price}</Highlight> : r.price}
                   </div>
                 </div>
               );
@@ -97,8 +98,8 @@ export const H11Price: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
       {ROWS.map((r, i) => <Sfx key={r.p} name="tick_soft" at={fAhorro + 8 + i * 4} volume={0.5} />)}
       <Sfx name="hit_soft" at={fEntre} volume={0.6} />
       <Sfx name="focus" at={fAqui} />
-      <Sfx name="marker" at={fCero - 4} />
-      <Sfx name="coins" at={fCero} />
+      <Sfx name="marker" at={fCero - 4} volume={0.6} />
+      <Sfx name="coins" at={fCero + 22} volume={0.8} />
     </Stage>
   );
 };

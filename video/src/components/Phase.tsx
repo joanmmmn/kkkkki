@@ -3,11 +3,15 @@ import { AbsoluteFill, interpolate, Sequence, spring, useCurrentFrame, useVideoC
 import { clamp, easeInOut } from '../lib/anim';
 
 // Bloque visible entre `from` y `to` (fotogramas de la escena) con entrada en muelle y salida desenfocada.
+// La salida se alarga OVERLAP fotogramas más allá de `to`, de modo que se funde con la fase siguiente
+// (que entra en `to`) en lugar de dejar unos fotogramas vacíos entre ambas.
+const OVERLAP = 6;
 export const Phase: React.FC<{ from: number; to: number; children: React.ReactNode; out?: number; style?: React.CSSProperties; noIn?: boolean }> = ({ from, to, children, out = 12, style, noIn }) => {
   const { fps } = useVideoConfig();
+  const dur = Math.max(1, Math.round(to - from) + OVERLAP);
   return (
-    <Sequence from={Math.round(from)} durationInFrames={Math.max(1, Math.round(to - from))} layout="none">
-      <PhaseInner dur={Math.round(to - from)} out={out} fps={fps} style={style} noIn={noIn}>{children}</PhaseInner>
+    <Sequence from={Math.round(from)} durationInFrames={dur} layout="none">
+      <PhaseInner dur={dur} out={out} fps={fps} style={style} noIn={noIn}>{children}</PhaseInner>
     </Sequence>
   );
 };

@@ -61,7 +61,7 @@ export const H08Tools: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
       ))}
       <Callout at={fVoc + 8} until={fNum - 6} x={960} y={930} anchor="center" size={46}>Vocabulario de la obra</Callout>
       {frame >= fNum - 4 && (
-        <AbsoluteFill style={{ alignItems: 'flex-end', justifyContent: 'center', paddingRight: 150 }}>
+        <AbsoluteFill style={{ alignItems: 'flex-end', justifyContent: 'flex-end', paddingRight: 170, paddingBottom: 150 }}>
           <div style={{ background: color.yellow, borderRadius: 40, padding: '30px 50px', textAlign: 'center', boxShadow: '0 30px 60px rgba(0,0,0,0.25)', transform: `scale(${spring({ frame: frame - fNum + 4, fps, config: { damping: 11, stiffness: 180 } })})` }}>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 150, lineHeight: 1, letterSpacing: -4 }}>{Math.round(interpolate(frame, [fNum - 4, fNum + 30], [0, 972], clamp))}</div>
             <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 38 }}>veces «Raskólnikov»</div>

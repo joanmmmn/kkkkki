@@ -75,7 +75,7 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
           <div style={{ width: 1160, height: 104, borderRadius: 999, background: '#fff', boxShadow: shadow.float, border: `1px solid ${color.line}`, display: 'flex', alignItems: 'center', padding: '0 18px 0 46px', gap: 24 }}>
             <svg width="38" height="38" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" stroke={color.ink} strokeWidth="2.4" fill="none" /><path d="M15.5 15.5 L21 21" stroke={color.ink} strokeWidth="2.4" strokeLinecap="round" /></svg>
             <div style={{ flex: 1, fontFamily: font.sans, fontSize: 42, color: color.ink }}>
-              {frame < fBusca - 34 ? <span style={{ color: color.muted }}>Busca un audiolibro, autor o narrador</span> : <Typewriter text="Crimen y castigo" start={fBusca - 34} cps={15} />}
+              {frame < fBusca - 34 ? <span style={{ color: color.muted }}>Busca un audiolibro, autor o narrador</span> : <Typewriter text="Crimen y castigo" start={fBusca - 34 - fSb} cps={15} />}
             </div>
             <div style={{ width: 72, height: 72, borderRadius: 36, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${1 - 0.14 * interpolate(frame, [fBusca + 20, fBusca + 24, fBusca + 32], [0, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })})`, boxShadow: `0 0 0 ${interpolate(frame, [fBusca + 24, fBusca + 44], [0, 26], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}px rgba(255,202,5,${interpolate(frame, [fBusca + 24, fBusca + 44], [0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })})` }}>
               <svg width="32" height="32" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke={color.ink} strokeWidth="2.6" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -86,11 +86,12 @@ export const H12Verdict: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       </Phase>
 
       <Phase from={fTu} to={dur} out={1}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 34, background: '#fff' }}>
-          <Logo size={130} animate={false} />
-          <Words text="Tu próxima historia te está esperando." start={2} stagger={4} size={56} weight={500} />
-          <div style={{ opacity: spring({ frame: frame - fTu - 40, fps }), transform: `scale(${0.85 + 0.15 * spring({ frame: frame - fTu - 40, fps, config: { damping: 12 } })})` }}><Pill size={34}>sonorbooks.com</Pill></div>
-          <div style={{ fontFamily: font.sans, fontSize: 28, color: color.ink2, opacity: spring({ frame: frame - fTu - 52, fps }) }}>Busca y compara gratis, sin registro.</div>
+        {/* Bloque de marca en el tercio superior: la mitad inferior queda libre para los elementos de pantalla final de YouTube. */}
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'flex-start', paddingTop: 200, flexDirection: 'column', gap: 36, background: '#fff' }}>
+          <Logo size={150} animate={false} />
+          <Words text="Tu próxima historia te está esperando." start={2} stagger={4} size={62} weight={500} />
+          <div style={{ opacity: spring({ frame: frame - fTu - 40, fps }), transform: `scale(${0.85 + 0.15 * spring({ frame: frame - fTu - 40, fps, config: { damping: 12 } })})` }}><Pill size={40}>sonorbooks.com</Pill></div>
+          <div style={{ fontFamily: font.sans, fontSize: 32, color: color.ink2, opacity: spring({ frame: frame - fTu - 52, fps }) }}>Busca y compara gratis, sin registro.</div>
         </AbsoluteFill>
       </Phase>
 

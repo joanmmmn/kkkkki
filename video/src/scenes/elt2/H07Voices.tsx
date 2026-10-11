@@ -7,7 +7,7 @@ import { Words } from '../../components/Kinetic';
 import { Highlight } from '../../components/Highlight';
 import { MicIcon, CheckIcon, CrossIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
-import { clamp, easeOut } from '../../lib/anim';
+import { clamp, easeOut, fmtEs } from '../../lib/anim';
 import { wordFrame } from '../../lib/vo';
 import { Grow } from '../../components/Grow';
 import { textWidth } from '../../lib/measure';
@@ -30,11 +30,11 @@ const Level: React.FC<{ label: string; lufs: number; at: number; h: number }> = 
   const wob = 1 + Math.sin(frame / 3 + h) * 0.03;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: spring({ frame: frame - at, fps }) }}>
-      <div style={{ width: 90, height: 260, borderRadius: 18, background: '#F0F0F0', display: 'flex', alignItems: 'flex-end', overflow: 'hidden' }}>
+      <div style={{ width: 120, height: 320, borderRadius: 22, background: '#F0F0F0', display: 'flex', alignItems: 'flex-end', overflow: 'hidden' }}>
         <div style={{ width: '100%', height: `${h * p * wob}%`, background: `linear-gradient(0deg, ${color.yellow}, #FFE27A)` }} />
       </div>
-      <div style={{ fontFamily: font.sans, fontSize: 30, fontWeight: 700 }}>{lufs} LUFS</div>
-      <div style={{ fontFamily: font.sans, fontSize: 24, color: color.muted, textAlign: 'center', width: 220 }}>{label}</div>
+      <div style={{ fontFamily: font.sans, fontSize: 38, fontWeight: 700 }}>−{fmtEs(Math.abs(lufs), 1)} LUFS</div>
+      <div style={{ fontFamily: font.sans, fontSize: 30, color: color.ink2, textAlign: 'center', width: 300 }}>{label}</div>
     </div>
   );
 };
@@ -92,7 +92,7 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
           <div style={{ display: 'flex', flexDirection: 'column', gap: 30, width: 520 }}>
             {frame >= fTres - 4 && (
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 88, lineHeight: 1, transform: `scale(${spring({ frame: frame - fTres + 4, fps, config: { damping: 12 } })})` }}>
-                <Highlight start={fTres + 4}>1 de cada 3</Highlight>
+                <Highlight start={fTres + 4 - fEquipo}>1 de cada 3</Highlight>
                 <div style={{ fontSize: 34, fontWeight: 500, color: color.ink2, marginTop: 14 }}>los lee Álvaro Gómez Zafra</div>
               </div>
             )}
@@ -135,8 +135,8 @@ export const H07Voices: React.FC<{ lead: number; dur: number }> = ({ lead, dur }
 
       <Phase from={fVol} to={dur} out={4}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 40 }}>
-          <Words text="El volumen cambia de un libro a otro" size={64} weight={700} start={2} />
-          <div style={{ display: 'flex', gap: 80, alignItems: 'flex-end' }}>
+          <Words text="El volumen cambia de un libro a otro" size={72} weight={700} start={2} />
+          <div style={{ display: 'flex', gap: 90, alignItems: 'flex-end' }}>
             <Level label="Crimen y castigo" lufs={-13.6} at={10} h={92} />
             <Level label="Gerona" lufs={-13.3} at={16} h={95} />
             <Level label="El plomo en la entraña" lufs={-17.7} at={22} h={58} />
