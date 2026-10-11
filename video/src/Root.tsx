@@ -10,6 +10,7 @@ import { ELTReview2 } from './scenes/elt2/Main';
 import { TOTAL2 } from './scenes/elt2/timeline';
 import { ELTShort2, SHORT_DUR as SHORT2_DUR } from './scenes/elt2/Short2';
 import { Cover } from './scenes/elt2/Cover';
+import { CoverProposal } from './scenes/elt2/CoverProposal';
 
 export const Root: React.FC = () => (
   <>
@@ -21,6 +22,8 @@ export const Root: React.FC = () => (
     <Composition id="ELTCover" component={Cover} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="ELTCover1080" component={Cover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="ELTCoverOG" component={Cover} durationInFrames={1} fps={FPS} width={1200} height={630} />
+    <Composition id="ELTCoverPropA" component={CoverProposal} defaultProps={{ variant: 'a' as const }} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="ELTCoverPropB" component={CoverProposal} defaultProps={{ variant: 'b' as const }} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="Lab" component={Lab} durationInFrames={FPS * 18} fps={FPS} width={W} height={H} />
   </>
 );
