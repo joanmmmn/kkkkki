@@ -2,9 +2,9 @@
 title: "ElevenReader: reseña completa y cómo probarlo 30 días gratis (2026)"
 meta_title: "ElevenReader: opiniones, precio y si merece la pena (2026)"
 meta_description: "Probamos ElevenReader por dentro con el plan Ultra: catálogo en español, voces con IA, subimos un PDF, precios, pros, contras y cómo tener 30 días gratis en vez de 3."
-slug: "elevenreader"
+slug: "elevenreader-resena"
 date: "2026-10-11"
-updated: "2026-10-11"
+updated: "2026-10-12"
 author: "Equipo SonorBooks"
 category: "Reseñas de plataformas"
 tags: ["ElevenReader", "ElevenLabs", "audiolibros", "texto a voz", "leer PDF en voz alta", "reseña"]
@@ -14,6 +14,9 @@ og_image: "img/elevenreader-og.jpg"
 youtube_id: "PENDIENTE"
 rating: 8
 ---
+
+<!-- Nota (12/10/2026): la reseña se publica como página propia diseñada (web/elevenreader-resena, vista previa v4)
+en https://sonorbooks.com/es/blog/elevenreader-resena/. Este texto queda como versión de referencia (CMS, redes, resúmenes). -->
 
 # ElevenReader: reseña completa (y cómo probarlo 30 días gratis)
 
@@ -244,7 +247,7 @@ En nuestra cuenta, el descuento se aplica **los primeros meses** (hasta abril de
 
 En su web, la prueba estándar de Ultra dura **3 días**. Con el enlace de SonorBooks son **30 días gratis** y, cuando empiezan los cobros, **un 15 % de descuento** los primeros meses.
 
-1. **Abre tu audiolibro en SonorBooks.** Si la recomendación es ElevenReader, pulsa **«Empezar prueba gratuita»**.
+1. **Entra desde SonorBooks.** En la página de inicio, ElevenReader es la última tarjeta de las plataformas: pulsa **«Empezar prueba gratuita»**. O, en esta reseña, pulsa **«Probar gratis»**.
 2. **En la oferta**, pulsa el botón naranja **«30 días gratis y ahorra un 15 %»**.
 3. **Crea tu cuenta** con Google, Apple o tu correo. Recuerda cuál usas: es la cuenta con la que entrarás en la app.
 4. **Elige Ultra** (mensual o anual) y **añade tu tarjeta**. **Hoy pagas 0 €:** el primer cobro llega a los 30 días.
@@ -334,7 +337,7 @@ Probamos ElevenReader el **11 de octubre de 2026** en la web, con una cuenta Ult
       "@type": "HowTo",
       "name": "Cómo conseguir 30 días gratis de ElevenReader Ultra",
       "step": [
-        {"@type": "HowToStep", "text": "Abre tu audiolibro en SonorBooks y, si la recomendación es ElevenReader, pulsa «Empezar prueba gratuita»."},
+        {"@type": "HowToStep", "text": "En la página de inicio de SonorBooks, pulsa «Empezar prueba gratuita» en la tarjeta de ElevenReader (la última de las plataformas), o «Probar gratis» en la reseña."},
         {"@type": "HowToStep", "text": "En la oferta, pulsa «30 días gratis y ahorra un 15 %»."},
         {"@type": "HowToStep", "text": "Crea tu cuenta con Google, Apple o tu correo."},
         {"@type": "HowToStep", "text": "Elige Ultra y añade tu tarjeta: hoy pagas 0 € y el primer cobro llega a los 30 días."},
