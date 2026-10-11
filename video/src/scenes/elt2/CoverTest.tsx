@@ -8,56 +8,77 @@ import { EltPlate } from './Cover';
 loadBrandFonts();
 
 // Variantes para el test A/B de miniaturas de YouTube (la A es la aprobada, en Cover.tsx).
-//   B · «¿ESTAFA?»: fondo oscuro con el muro de portadas, la pregunta enorme y una lupa sobre el logo.
+//   B · «¿ESTAFA?»: solo la pregunta y, debajo, el logo de El Libro Total bajo una lupa que lo amplía de verdad.
 //   C · «Mismo libro: 18,99 € → 0 €»: el contraste de precio con la misma portada a cada lado.
 // Se diseñan a 1280×720 y se escalan a cualquier tamaño (ELTCoverB / ELTCoverC y sus versiones 1080).
 
-const Brand: React.FC<{ dark?: boolean; size?: number }> = ({ dark = true, size = 26 }) => (
-  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: dark ? color.ink : '#fff', borderRadius: 999, padding: '8px 20px 8px 12px', boxShadow: '0 12px 28px rgba(0,0,0,0.3)' }}>
+const Brand: React.FC<{ size?: number }> = ({ size = 26 }) => (
+  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: color.ink, borderRadius: 999, padding: '8px 20px 8px 12px', boxShadow: '0 12px 28px rgba(0,0,0,0.3)' }}>
     <LogoIcon size={size * 1.45} />
-    <span style={{ color: dark ? '#fff' : color.ink, fontWeight: 700, fontSize: size }}>SonorBooks</span>
+    <span style={{ color: '#fff', fontWeight: 700, fontSize: size }}>SonorBooks</span>
   </div>
 );
 
-const Lens: React.FC<{ size: number }> = ({ size }) => (
-  <div style={{ position: 'relative', width: size * 1.55, height: size * 1.55 }}>
-    {/* Mango */}
-    <div style={{ position: 'absolute', left: size * 0.78, top: size * 0.86, width: size * 0.26, height: size * 0.78, borderRadius: size * 0.1, background: `linear-gradient(90deg, #2a2a2a, ${color.ink} 60%)`, transform: 'rotate(-45deg)', transformOrigin: 'top center', boxShadow: '0 16px 30px rgba(0,0,0,0.5)', border: `5px solid ${color.yellow}` }} />
-    {/* Cristal */}
-    <div style={{ position: 'absolute', left: 0, top: 0, width: size, height: size, borderRadius: '50%', border: `${size * 0.11}px solid ${color.yellow}`, background: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.45), rgba(255,255,255,0.08) 55%, rgba(255,255,255,0.02))', backdropFilter: 'blur(1.5px) brightness(1.25)', boxShadow: '0 20px 40px rgba(0,0,0,0.55), inset 0 0 0 3px rgba(0,0,0,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <span style={{ fontWeight: 700, fontSize: size * 0.56, color: color.red, textShadow: '0 4px 0 rgba(0,0,0,0.35)', lineHeight: 1 }}>?</span>
-    </div>
-  </div>
-);
+// ---------- B · ¿ESTAFA? ----------
+const PLATE = { left: 96, top: 292, w: 930, rotate: -2.5 };
+// cx/cy: dónde está la lupa; fx/fy: el punto de la escena que se ve ampliado en su centro («TOTAL»).
+// Caja de la palabra «TOTAL» dentro de la placa (coordenadas de la placa sin girar).
+const TOTAL = { x: 488, y: 166, w: 296, h: 90 };
+const PRISMA = { x: 350, y: 252, w: 246, h: 66 };
+const LENS = { cx: 850, cy: 494, r: 168, zoom: 1.28, fx: 744, fy: 497 };
 
-const Estafa: React.FC = () => (
-  <div style={{ position: 'absolute', inset: 0, fontFamily: font.sans, background: '#0a0c11', overflow: 'hidden' }}>
-    {/* Muro de portadas inclinado, oscurecido hacia la izquierda para el texto */}
-    <div style={{ position: 'absolute', left: -120, top: -230, width: 1760, transform: 'rotate(-9deg)', opacity: 0.62, filter: 'saturate(1.15)' }}>
+// Fuera de la lupa se tapa la palabra «TOTAL» original (dentro se ve ampliada); dentro, «PRISMA», para que no se duplique.
+const EstafaScene: React.FC<{ hideTotal?: boolean; hidePrisma?: boolean }> = ({ hideTotal, hidePrisma }) => (
+  <div style={{ position: 'absolute', left: 0, top: 0, width: 1280, height: 720, background: '#0a0c11', overflow: 'hidden' }}>
+    <div style={{ position: 'absolute', left: -140, top: -250, width: 1800, transform: 'rotate(-9deg)', opacity: 0.6, filter: 'saturate(1.15)' }}>
       <Img src={staticFile('elt/img/covers_wall.jpg')} style={{ width: '100%', display: 'block' }} />
     </div>
-    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(100deg, rgba(8,10,15,0.97) 0%, rgba(8,10,15,0.9) 42%, rgba(8,10,15,0.45) 75%, rgba(8,10,15,0.3) 100%)' }} />
-    <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 78% 58%, rgba(229,72,77,0.42), rgba(229,72,77,0) 48%)' }} />
-    {/* Pregunta: ocupa todo el ancho */}
-    <div style={{ position: 'absolute', left: 36, top: 14, transform: 'rotate(-2.5deg)', transformOrigin: 'left center' }}>
-      <div style={{ fontWeight: 700, fontSize: 268, letterSpacing: -11, lineHeight: 1, color: color.yellow, textShadow: '0 10px 0 #000, 0 24px 56px rgba(0,0,0,0.75)', whiteSpace: 'nowrap' }}>¿ESTAFA?</div>
+    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(8,10,15,0.94) 0%, rgba(8,10,15,0.7) 40%, rgba(8,10,15,0.55) 100%)' }} />
+    <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 52% 72%, rgba(229,72,77,0.5), rgba(229,72,77,0) 55%)' }} />
+    <div style={{ position: 'absolute', left: PLATE.left, top: PLATE.top }}>
+      <EltPlate w={PLATE.w} rotate={PLATE.rotate}>
+        {hideTotal && <div style={{ position: 'absolute', left: TOTAL.x, top: TOTAL.y, width: TOTAL.w, height: TOTAL.h, background: 'linear-gradient(160deg, #101d2f, #0e1a2b)' }} />}
+        {hidePrisma && <div style={{ position: 'absolute', left: PRISMA.x, top: PRISMA.y, width: PRISMA.w, height: PRISMA.h, background: '#0e1a2b' }} />}
+      </EltPlate>
     </div>
-    {/* Promesa */}
-    <div style={{ position: 'absolute', left: 50, top: 300 }}>
-      <div style={{ fontWeight: 700, fontSize: 150, letterSpacing: -7, lineHeight: 0.9, color: '#fff', textShadow: '0 12px 30px rgba(0,0,0,0.6)' }}>6.698</div>
-      <div style={{ fontWeight: 700, fontSize: 70, letterSpacing: -2, lineHeight: 1, color: '#fff', marginTop: 6, marginLeft: 6 }}>audiolibros</div>
-      <div style={{ display: 'inline-block', marginTop: 22, background: color.yellow, color: color.ink, borderRadius: 22, padding: '4px 30px 14px', fontWeight: 700, fontSize: 128, letterSpacing: -5, lineHeight: 1, transform: 'rotate(-2.5deg)', boxShadow: '0 22px 48px rgba(0,0,0,0.55)' }}>GRATIS</div>
-    </div>
-    {/* Logo de El Libro Total bajo la lupa */}
-    <div style={{ position: 'absolute', left: 588, top: 334 }}><EltPlate w={612} rotate={4} /></div>
-    <div style={{ position: 'absolute', left: 1006, top: 246 }}><Lens size={196} /></div>
-    <div style={{ position: 'absolute', left: 640, bottom: 30 }}><Brand size={24} /></div>
   </div>
 );
 
+// Lupa: dentro del cristal se vuelve a pintar la escena ampliada alrededor de fx/fy y centrada en la lupa.
+const Magnifier: React.FC = () => {
+  const { cx, cy, r, zoom, fx, fy } = LENS;
+  const ring = r * 0.13;
+  return (
+    <>
+      {/* Mango */}
+      <div style={{ position: 'absolute', left: cx + r * 0.62, top: cy + r * 0.62, width: r * 0.34, height: r * 1.25, borderRadius: r * 0.12, background: `linear-gradient(90deg, #2c2c2c, ${color.ink} 55%, #000)`, border: `6px solid ${color.yellow}`, transform: 'rotate(-45deg)', transformOrigin: 'top center', boxShadow: '0 20px 40px rgba(0,0,0,0.55)' }} />
+      {/* Cristal con la escena ampliada */}
+      <div style={{ position: 'absolute', left: cx - r, top: cy - r, width: r * 2, height: r * 2, borderRadius: '50%', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.6)' }}>
+        <div style={{ position: 'absolute', left: -(cx - r), top: -(cy - r), width: 1280, height: 720, transform: `translate(${cx - fx}px, ${cy - fy}px) scale(${zoom})`, transformOrigin: `${fx}px ${fy}px` }}>
+          <EstafaScene hidePrisma />
+        </div>
+        <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', background: 'radial-gradient(circle at 32% 26%, rgba(255,255,255,0.42), rgba(255,255,255,0.06) 38%, rgba(255,255,255,0) 60%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.35) 100%)' }} />
+      </div>
+      {/* Aro */}
+      <div style={{ position: 'absolute', left: cx - r - ring, top: cy - r - ring, width: (r + ring) * 2, height: (r + ring) * 2, borderRadius: '50%', border: `${ring}px solid ${color.yellow}`, boxShadow: 'inset 0 0 0 3px rgba(0,0,0,0.25), 0 0 0 3px rgba(0,0,0,0.35)' }} />
+    </>
+  );
+};
+
+const Estafa: React.FC = () => (
+  <div style={{ position: 'absolute', inset: 0, fontFamily: font.sans, overflow: 'hidden' }}>
+    <EstafaScene hideTotal />
+    <Magnifier />
+    <div style={{ position: 'absolute', left: 0, right: 0, top: 6, display: 'flex', justifyContent: 'center' }}>
+      <div style={{ fontWeight: 700, fontSize: 276, letterSpacing: -11, lineHeight: 1, color: color.yellow, textShadow: '0 10px 0 #000, 0 26px 60px rgba(0,0,0,0.75)', whiteSpace: 'nowrap', transform: 'rotate(-2deg)' }}>¿ESTAFA?</div>
+    </div>
+  </div>
+);
+
+// ---------- C · Mismo libro ----------
 const Cyc: React.FC<{ w: number; rotate: number; dim?: boolean }> = ({ w, rotate, dim }) => (
-  <div style={{ width: w, height: (w * 352) / 280, borderRadius: 14, overflow: 'hidden', border: '6px solid #fff', transform: `rotate(${rotate}deg)`, boxShadow: dim ? '0 24px 50px rgba(0,0,0,0.6)' : '0 30px 60px rgba(90,60,0,0.45), 0 0 0 10px rgba(255,255,255,0.35)', filter: dim ? 'grayscale(0.7) brightness(0.72)' : 'saturate(1.1)' }}>
-    <Img src={staticFile('elt/img/cyc_cover.jpg')} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+  <div style={{ width: w, height: (w * 460) / 366, borderRadius: 14, overflow: 'hidden', border: '6px solid #fff', transform: `rotate(${rotate}deg)`, boxShadow: dim ? '0 24px 50px rgba(0,0,0,0.6)' : '0 30px 60px rgba(90,60,0,0.45), 0 0 0 10px rgba(255,255,255,0.35)', filter: dim ? 'grayscale(0.7) brightness(0.72)' : 'saturate(1.1) contrast(1.04)' }}>
+    <Img src={staticFile(dim ? 'elt/img/cyc_cover_hd_plain.png' : 'elt/img/cyc_cover_hd.png')} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
   </div>
 );
 
@@ -70,7 +91,7 @@ const Precio: React.FC = () => (
       <div style={{ marginTop: 30, fontWeight: 700, fontSize: 70, letterSpacing: -2, color: '#fff', lineHeight: 1 }}>MISMO LIBRO</div>
       <div style={{ marginTop: 34 }}><Cyc w={232} rotate={-5} dim /></div>
       <div style={{ position: 'relative', marginTop: 26, fontWeight: 700, fontSize: 124, letterSpacing: -5, lineHeight: 1, color: '#d9d9d9', whiteSpace: 'nowrap' }}>
-        18,99{'\u202F'}€
+        18,99{' '}€
         <div style={{ position: 'absolute', left: -14, right: -14, top: '48%', height: 15, borderRadius: 8, background: color.red, transform: 'rotate(-8deg)', boxShadow: '0 4px 10px rgba(0,0,0,0.45)' }} />
       </div>
       <div style={{ fontSize: 30, fontWeight: 500, color: 'rgba(255,255,255,0.62)', marginTop: 6 }}>en Audible</div>
@@ -82,7 +103,7 @@ const Precio: React.FC = () => (
     {/* Mitad derecha: El Libro Total */}
     <div style={{ position: 'absolute', left: 730, top: 30 }}><EltPlate w={452} rotate={-3} /></div>
     <div style={{ position: 'absolute', left: 650, top: 256 }}><Cyc w={238} rotate={5} /></div>
-    <div style={{ position: 'absolute', right: 26, top: 240, fontWeight: 700, fontSize: 276, letterSpacing: -12, lineHeight: 1, color: color.ink, textShadow: '0 10px 0 rgba(255,255,255,0.35)', whiteSpace: 'nowrap' }}>0{'\u202F'}€</div>
+    <div style={{ position: 'absolute', right: 26, top: 240, fontWeight: 700, fontSize: 276, letterSpacing: -12, lineHeight: 1, color: color.ink, textShadow: '0 10px 0 rgba(255,255,255,0.35)', whiteSpace: 'nowrap' }}>0{' '}€</div>
     <div style={{ position: 'absolute', left: 952, top: 540, display: 'inline-block', background: color.ink, color: '#fff', borderRadius: 18, padding: '8px 24px 13px', fontWeight: 700, fontSize: 52, letterSpacing: -1, transform: 'rotate(-3deg)', boxShadow: '0 16px 30px rgba(0,0,0,0.3)', whiteSpace: 'nowrap' }}>y es legal</div>
     <div style={{ position: 'absolute', left: 676, bottom: 26 }}><Brand size={22} /></div>
   </div>

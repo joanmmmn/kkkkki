@@ -63,7 +63,7 @@ Reseña completa (con capturas y fuentes): https://sonorbooks.com/blog/el-libro-
 - El bloque de marca ocupa el tercio superior del cierre. La mitad inferior queda libre para estos dos elementos.
 
 ## Miniatura
-`deliverables/el-libro-total/miniatura_youtube.jpg` (1280×720). Es la misma imagen que la portada del artículo del blog:
+`deliverables/el-libro-total/miniatura_youtube.jpg` (1920×1080). Es la misma imagen que la portada del artículo del blog:
 - Fondo amarillo de marca, logo de SonorBooks y «6.698 audiolibros GRATIS».
 - El logo de El Libro Total, en grande y en vectorial, sobre el lector con el texto resaltado.
 - Una píldora de audio y la pegatina «¿Dónde está la trampa?», fuera de la esquina donde YouTube pone la duración.
@@ -71,12 +71,12 @@ Reseña completa (con capturas y fuentes): https://sonorbooks.com/blog/el-libro-
 Otros tamaños: `portada_blog_1920x1080.jpg` y `portada_og_1200x630.jpg`. Se generan con `npx remotion still src/index.ts ELTCover|ELTCover1080|ELTCoverOG`.
 
 ## Test A/B de miniaturas
-Tres variantes, todas a 1280×720 y con la esquina de la duración libre. Comparativa a tamaño real del feed: `deliverables/el-libro-total/miniaturas_test_AB_comparativa.png`.
+Tres variantes, todas a 1920×1080 (renderizadas a 3840×2160 y reducidas, JPG sin submuestreo de color: texto nítido y menos de 500 KB) y con la esquina de la duración libre. Comparativa a tamaño real del feed: `deliverables/el-libro-total/miniaturas_test_AB_comparativa.png`.
 
 | | Archivo | Idea | Por qué puede ganar |
 |---|---|---|---|
 | **A** | `miniatura_youtube.jpg` | La actual: amarillo de marca, «6.698 audiolibros GRATIS» y el logo de El Libro Total. | Promesa clara y reconocible. Es la referencia (control). |
-| **B** | `miniatura_youtube_B_estafa.jpg` | «¿ESTAFA?» enorme sobre fondo oscuro con el muro de portadas y una lupa sobre el logo. | Curiosidad y contraste: destaca en un feed lleno de miniaturas claras. |
+| **B** | `miniatura_youtube_B_estafa.jpg` | Solo «¿ESTAFA?», enorme, y debajo el logo de El Libro Total con una lupa que amplía «TOTAL». Fondo oscuro con el muro de portadas. | Curiosidad y contraste: destaca en un feed lleno de miniaturas claras. |
 | **C** | `miniatura_youtube_C_mismo_libro.jpg` | «MISMO LIBRO»: «Crimen y castigo» a 18,99 € (en Audible) frente a 0 € en El Libro Total, «y es legal». | Un ahorro concreto y visual, que se entiende en un segundo. Es nuestra apuesta. |
 
 **Cómo lanzarlo:**
@@ -87,4 +87,4 @@ Tres variantes, todas a 1280×720 y con la esquina de la duración libre. Compar
 
 El título actual («El Libro Total: 6.698 audiolibros GRATIS… ¿dónde está la trampa?») encaja con las tres. El vídeo responde la pregunta de la B en 3:25: «¿Dónde está la trampa? No la hay».
 
-Se generan con `npx remotion still src/index.ts ELTCoverB` y `ELTCoverC` (versiones a 1920×1080: `ELTCoverB1080` y `ELTCoverC1080`).
+Se generan con `npx remotion still src/index.ts ELTCover1080|ELTCoverB1080|ELTCoverC1080 --scale=2` y se reducen a 1920×1080.

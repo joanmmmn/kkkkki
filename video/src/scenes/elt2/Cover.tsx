@@ -21,9 +21,10 @@ const ReaderCard: React.FC<{ w: number }> = ({ w }) => {
   );
 };
 
-export const EltPlate: React.FC<{ w: number; rotate: number }> = ({ w, rotate }) => (
-  <div style={{ width: w, padding: `${w * 0.055}px ${w * 0.05}px`, background: `linear-gradient(160deg, #16263d 0%, ${color.eltNavy} 70%)`, borderRadius: 28, border: '6px solid #fff', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,0,0,0.08)', transform: `rotate(${rotate}deg)` }}>
+export const EltPlate: React.FC<{ w: number; rotate: number; children?: React.ReactNode }> = ({ w, rotate, children }) => (
+  <div style={{ position: 'relative', width: w, padding: `${w * 0.055}px ${w * 0.05}px`, background: `linear-gradient(160deg, #16263d 0%, ${color.eltNavy} 70%)`, borderRadius: 28, border: '6px solid #fff', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,0,0,0.08)', transform: `rotate(${rotate}deg)` }}>
     <Img src={staticFile('elt/img/elt_logo.svg')} style={{ width: '100%', display: 'block' }} />
+    {children}
   </div>
 );
 
