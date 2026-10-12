@@ -15,7 +15,7 @@ youtube_id: "PENDIENTE"
 rating: 8
 ---
 
-<!-- Nota (12/10/2026): la reseña se publica como página propia diseñada (web/elevenreader-resena, vista previa v4)
+<!-- Nota (12/10/2026): la reseña se publica como página propia diseñada (web/elevenreader-resena, versión final)
 en https://sonorbooks.com/es/blog/elevenreader-resena/. Este texto queda como versión de referencia (CMS, redes, resúmenes). -->
 
 # ElevenReader: reseña completa (y cómo probarlo 30 días gratis)
