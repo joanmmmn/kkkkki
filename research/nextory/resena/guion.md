@@ -1,4 +1,4 @@
-# Nextory: reseña completa + 30 días gratis (guion v3, 12/10/2026)
+# Nextory: reseña completa + 30 días gratis (guion v4, 12/10/2026)
 
 Encargo de Joan (11/10/2026, 16:16): enfocarlo como reseña de Nextory (si merece la pena, todo lo bueno, todo lo malo, todas las funciones, entrando en una cuenta, leyendo un libro y enseñándolo todo) y, después, mucho más resumido y con más calidad de animación y guion, cómo tenerlo 30 días gratis. Añadir que, si les ha gustado, pueden quedarse con la suscripción.
 
@@ -100,3 +100,32 @@ piezas de música, y hacer la reseña escrita (blog) con el mismo estilo que la 
   («Enlace directo» y «Reseña completa por escrito») bajo «En la descripción».
 - **Reseña escrita:** página nueva `web/nextory-resena` con el sistema visual de la de ElevenReader (probador del lector,
   probador de velocidad y horas, calculador de plan, capturas reales de la app). Pendiente de la aprobación de Joan.
+
+## Revisión v4 (encargo de Joan, 12/10/2026, 15:07)
+
+Pedido: que las animaciones y los efectos de sonido cuadren perfectamente y seguir subiendo la calidad de las animaciones.
+
+- **Cada efecto, en su fotograma.** Se midió dónde está el golpe de cada sonido dentro de su archivo (envolvente en ventanas
+  de 5 ms) y `Sfx` coloca ese golpe, no el inicio del archivo, en el fotograma del evento. Las posiciones se calculan desde la
+  propia animación: los «pop» 1–2 fotogramas después de que arranque el muelle (cuando el elemento ya se ve), los barridos
+  donde el movimiento va más rápido (mitad de las curvas suaves, inicio de las que frenan), los acercamientos en el fotograma
+  de máxima velocidad de la cámara, los golpes donde algo aterriza. En el clic de ratón (dos golpes) manda el primero, para que
+  el sonido nunca se adelante a la imagen.
+- **Teclas una a una.** Se recortaron siete pulsaciones y un espacio de la grabación de tecleo y suena una por cada letra que
+  aparece: en la búsqueda del veredicto (ritmo humano irregular), en «Tu próximo libro» del cierre (cada palabra se teclea
+  mientras la voz la dice), en el correo de ejemplo del registro y en las tres búsquedas grabadas en la app (Librarian,
+  «galdos» y «german gijon»), con los fotogramas medidos sobre las grabaciones.
+- **Contadores con un tic por número:** «+1,4 M títulos» y el 14 → 30 suenan en cada cambio de cifra (se aceleran y frenan con
+  ella); el 30 cae con el golpe, el latido y el confeti. El contador de los 30 días gira como uno mecánico (cada número entra
+  un poco desde abajo, con desenfoque vertical mientras va rápido).
+- **Transiciones:** el móvil que enlaza dos escenas de la app sale acelerando y entra frenando con la misma velocidad en el
+  corte (sin parón), y su barrido suena justo ahí; en los acercamientos y barridos laterales el sonido culmina donde la imagen
+  cambia más deprisa (medido sobre el vídeo); el cierre entra con un barrido grave que empieza antes del corte.
+- **Separadores:** barrido de entrada a mitad de los dos paneles, «swell» y golpe en el cierre (el panel amarillo se posa, la
+  cifra late y la barra de progreso se llena) y barrido de salida a mitad de la salida.
+- **Animaciones nuevas:** sello «Hoy: 0 €» que cae acelerando, golpea, se aplasta y sacude la pantalla; toque en «Iniciar
+  sesión» antes de pasar al formulario; los 30 días del calendario saltan por filas (un tic por fila); la búsqueda del veredicto
+  termina con Intro y la ficha sube fundiéndose; buscador del cierre con texto de ayuda y cursor; el icono de cada etiqueta
+  rebota en el segundo golpe de su «pop»; «o en otra plataforma?» se despliega con el sonido de acierto.
+- **Comprobación:** tramos renderizados con la capa de efectos sola (picos de sonido en fotogramas) frente a los cambios de
+  imagen fotograma a fotograma; el mapeo de las grabaciones a 1,4x se comprobó contra los fotogramas originales.

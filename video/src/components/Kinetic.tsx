@@ -1,6 +1,7 @@
 import React from 'react';
 import { spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font } from '../brand/tokens';
+import { typedCount } from '../lib/typing';
 
 // Texto que entra palabra a palabra con desenfoque (como el cierre del V7).
 export const Words: React.FC<{
@@ -24,16 +25,21 @@ export const Words: React.FC<{
   );
 };
 
-// Escribe texto carácter a carácter (para el buscador).
-export const Typewriter: React.FC<{ text: string; start?: number; cps?: number; style?: React.CSSProperties; caret?: boolean }> = ({ text, start = 0, cps = 14, style, caret = true }) => {
+// Escribe texto carácter a carácter (para el buscador). `times`: fotograma de cada carácter (lib/typing.ts), para que el
+// texto y el sonido de las teclas vayan a la par; sin `times`, ritmo fijo de `cps`. `placeholder`: texto gris mientras está vacío.
+export const Typewriter: React.FC<{ text: string; start?: number; cps?: number; times?: number[]; placeholder?: string; style?: React.CSSProperties; caret?: boolean }> = ({
+  text, start = 0, cps = 14, times, placeholder, style, caret = true,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const n = Math.max(0, Math.min(text.length, Math.floor(((frame - start) / fps) * cps)));
-  const blink = Math.floor(frame / (fps * 0.5)) % 2 === 0;
+  const n = times ? typedCount(times, frame) : Math.max(0, Math.min(text.length, Math.floor(((frame - start) / fps) * cps)));
+  const typing = n > 0 && n < text.length;
+  const blink = typing || Math.floor(frame / (fps * 0.5)) % 2 === 0;
   return (
-    <span style={style}>
+    <span style={{ position: 'relative', ...style }}>
+      {n === 0 && placeholder && <span style={{ position: 'absolute', left: '0.32em', whiteSpace: 'nowrap', color: 'rgba(16,16,16,0.38)' }}>{placeholder}</span>}
       {text.slice(0, n)}
-      {caret && <span style={{ opacity: n < text.length || blink ? 1 : 0, marginLeft: 2, fontWeight: 300 }}>|</span>}
+      {caret && <span style={{ opacity: blink ? 1 : 0, marginLeft: 2, fontWeight: 300 }}>|</span>}
     </span>
   );
 };

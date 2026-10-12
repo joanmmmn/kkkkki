@@ -181,6 +181,8 @@ export const Chip: React.FC<{
   const { fps } = useVideoConfig();
   const pop = spring({ frame: frame - at, fps, config: { damping: 15, stiffness: 200 } });
   const open = interpolate(frame, [at + 2, at + 18], [0, 1], { ...clamp, easing: easeOut });
+  // Segundo latido del icono: el «pop» suena dos veces (at + 1 y at + 6) y el icono rebota en el segundo.
+  const beat = interpolate(frame, [at + 4, at + 6, at + 13], [0, 1, 0], { ...clamp, easing: easeOut });
   const dim = dimAt !== undefined ? interpolate(frame, [dimAt - 2, dimAt + 10], [0, 1], { ...clamp, easing: easeInOut }) : 0;
   const o = out !== undefined ? interpolate(frame, [out - 8, out], [0, 1], { ...clamp, easing: easeInOut }) : 0;
   if (!reserve && (frame < at - 1 || o >= 1)) return null;
@@ -199,7 +201,7 @@ export const Chip: React.FC<{
         boxShadow: dim > 0.5 ? shadow.soft : shadow.float, border: dark ? 'none' : `1px solid ${color.line}`, fontFamily: font.sans, fontWeight: 700, fontSize: size, letterSpacing: -0.3, whiteSpace: 'nowrap',
         clipPath: open >= 1 ? undefined : `inset(-30px calc(100% - ${vis.toFixed(1)}px) -30px -30px round 999px)`, transform: `scale(${0.82 + 0.18 * pop})`, transformOrigin: `${padL + ic / 2}px 50%` }}>
         {icon && (
-          <span style={{ width: ic, height: ic, borderRadius: '50%', background: dim > 0.5 ? '#EFEFEF' : accent, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transform: `scale(${pop}) rotate(${(1 - pop) * -25}deg)` }}>{icon}</span>
+          <span style={{ width: ic, height: ic, borderRadius: '50%', background: dim > 0.5 ? '#EFEFEF' : accent, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transform: `scale(${pop * (1 + 0.1 * beat)}) rotate(${(1 - pop) * -25}deg)` }}>{icon}</span>
         )}
         <span style={{ display: 'inline-flex', flexDirection: 'column', opacity: open, transform: `translateX(${(1 - open) * -18}px)` }}>
           <span>{label}</span>
@@ -236,6 +238,7 @@ export const LinkBadge: React.FC<{ at: number; label?: string; size?: number; ou
 // por la izquierda descubriendo la escena nueva. Dura BUMP_LEN fotogramas; la escena nueva empieza en BUMP_IN.
 export const BUMP_IN = 14;
 export const BUMP_LEN = 46;
+export const BUMP_LOCK = 16;
 export const Bumper: React.FC<{ title: string; index: number; total: number; kicker?: string }> = ({ title, index, total, kicker = 'Reseña de Nextory' }) => {
   const frame = useCurrentFrame();
   const id = React.useId().replace(/:/g, '');
@@ -255,8 +258,10 @@ export const Bumper: React.FC<{ title: string; index: number; total: number; kic
   // Título: cada letra llega con un pelín de retraso respecto a la anterior, deriva despacio y sale acelerando.
   const chars = Array.from(title);
   const drift = -frame * 1.3;
-  const bar = interpolate(frame, [12, 26], [0, 1], { ...clamp, easing: easeOut });
-  const kIn = interpolate(frame, [8, 22], [0, 1], { ...clamp, easing: easeOut });
+  // Momento de cierre (BUMP_LOCK): el título termina de montarse, el panel amarillo se posa, la cifra late y la barra se llena.
+  const bar = interpolate(frame, [BUMP_LOCK - 2, BUMP_LOCK + 8], [0, 1], { ...clamp, easing: easeOut });
+  const kIn = interpolate(frame, [8, 20], [0, 1], { ...clamp, easing: easeOut });
+  const lock = interpolate(frame, [BUMP_LOCK - 1, BUMP_LOCK + 1, BUMP_LOCK + 10], [0, 1, 0], clamp);
   const panel = (x: number, bg: string, blurX: number, fid: string, shadow: boolean, children?: React.ReactNode) => (
     <div style={{ position: 'absolute', top: -60, bottom: -60, left: -450, width: W, transform: `translateX(${x}px) skewX(-12deg)`, background: bg, overflow: 'hidden',
       boxShadow: shadow ? '-50px 0 90px rgba(0,0,0,0.28)' : undefined, filter: blurX > 0.5 ? `url(#${fid})` : undefined }}>
@@ -281,7 +286,8 @@ export const Bumper: React.FC<{ title: string; index: number; total: number; kic
           <div style={{ position: 'absolute', left: 170, top: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center', transform: `translateX(${drift}px)` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 6, textTransform: 'uppercase', color: color.ink,
               opacity: kIn, transform: `translateX(${(1 - kIn) * 120}px)` }}>
-              <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 74, height: 46, borderRadius: 999, background: color.ink, color: color.yellow, letterSpacing: 1, fontSize: 26 }}>{index}/{total}</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 74, height: 46, borderRadius: 999, background: color.ink, color: color.yellow, letterSpacing: 1, fontSize: 26,
+                transform: `scale(${1 + 0.16 * lock})`, boxShadow: lock > 0.01 ? `0 0 0 ${(6 * lock).toFixed(2)}px rgba(16,16,16,0.14)` : undefined }}>{index}/{total}</span>
               {kicker}
             </div>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 168, letterSpacing: -7, lineHeight: 1, color: color.ink, marginTop: 22, whiteSpace: 'pre' }}>
@@ -362,6 +368,8 @@ export const Sheen: React.FC<{ at: number; dur?: number; radius?: number; tint?:
 // ——— Cámara del móvil en las escenas de la app ———
 // Geometría del móvil de AppFeatureScene: pantalla de PHONE_W px; el móvil entero mide PH.W × PH.H.
 export const PHONE_W = 430;
+// Fotogramas del enlace del móvil entre dos escenas de la app (la misma duración a cada lado del corte).
+export const GLIDE = 14;
 export const PH = { W: PHONE_W * 1.072, H: PHONE_W * (APP_RATIO + 0.072), off: PHONE_W * 0.036, k: PHONE_W / APP_W };
 // Ventana de foco: entre `from` y `to` (fotogramas de la escena) la cámara se acerca al punto x/y (px de la grabación).
 export type Focus = { from: number; to: number; x?: number; y: number; s?: number };
@@ -386,11 +394,11 @@ export const buildPhoneCam = (o: {
     const ty = lim(540 - top - Hc - s * (py - Hc), 970 - top - Hc - s * Hc, 110 - top - Hc + s * Hc);
     return { rx: 0.4, ry: side * 2, rz: 0, s, x: tx, y: ty };
   };
-  const keys: (CamState & { f: number })[] = [];
-  const introEnd = o.enter === 'none' ? 0 : o.enter === 'glide' ? 18 : o.enter === 'spin' ? 34 : 26;
+  const keys: (CamState & { f: number; ez?: number })[] = [];
+  const introEnd = o.enter === 'none' ? 0 : o.enter === 'glide' ? GLIDE : o.enter === 'spin' ? 34 : 26;
   if (o.enter === 'rise') keys.push({ f: 0, rx: 6, ry: side * 22, rz: side * -2, s: 0.94, x: side * -40, y: 30 });
   else if (o.enter === 'spin') keys.push({ f: 0, rx: 14, ry: side * 38, rz: side * -6, s: 0.86, x: side * -120, y: 60 });
-  else if (o.enter === 'glide') keys.push({ f: 0, ...center });
+  else if (o.enter === 'glide') keys.push({ f: 0, ...center, ez: 2 }); // sale del centro a toda velocidad y frena
   keys.push({ f: introEnd, ...rest(introEnd) });
   // Si el móvil sale deslizándose, el último foco se suelta antes para que la salida arranque desde el plano normal.
   const lastTo = o.exit === 'glide' ? dur - 26 : Infinity;
@@ -413,16 +421,28 @@ export const buildPhoneCam = (o: {
   keys.push({ f: Math.max(dur, keys[keys.length - 1].f + 1), ...rest(dur) });
   keys.sort((a, b) => a.f - b.f);
   // Quita claves desordenadas o repetidas (la primera manda).
-  const clean: (CamState & { f: number })[] = [];
+  const clean: (CamState & { f: number; ez?: number })[] = [];
   for (const k of keys) if (!clean.length || k.f > clean[clean.length - 1].f) clean.push(k);
   if (o.exit === 'glide') {
-    const f0 = dur - 11;
+    // Acelera hacia el centro y llega al corte a la misma velocidad con la que la escena siguiente lo recoge.
+    const f0 = dur - GLIDE;
     const at = (p: keyof CamState) => keyframes(f0, clean, p, easeInOut);
     const st: CamState = { rx: at('rx'), ry: at('ry'), rz: at('rz'), s: at('s'), x: at('x'), y: at('y') };
     const cut = clean.filter((k) => k.f < f0);
-    return [...cut, { f: f0, ...st }, { f: dur, ...center }];
+    return [...cut, { f: f0, ...st, ez: 1 }, { f: dur, ...center }];
   }
   return clean;
+};
+
+// Fotogramas en que la cámara del móvil se acerca más deprisa (para que el sonido de acercamiento culmine ahí).
+export const zoomPeaks = (cam: PhoneKey[], from: number, to: number, min = 0.012): number[] => {
+  const s = (f: number) => keyframes(f, cam, 's', easeInOut);
+  const out: number[] = [];
+  for (let f = from + 1; f < to; f++) {
+    const v = s(f) - s(f - 1), vp = s(f - 1) - s(f - 2), vn = s(f + 1) - s(f);
+    if (v > min && v >= vp && v > vn) out.push(f);
+  }
+  return out;
 };
 
 // Focos a partir de las marcas de las tomas (cada marca dura hasta que empieza la toma siguiente).
@@ -462,13 +482,17 @@ export const BigTitle: React.FC<{ text: string; hi?: string; at?: number; size?:
 };
 
 // Contador con formato español que sube hasta `to` entre los fotogramas `from` y `from + dur`.
+// Cifra que cuenta de 0 a `to` en `dur` fotogramas (frenando). countUpText da lo que se ve en cada fotograma: con ella
+// ChangeTicks pone un tic en cada cambio de la cifra.
+export const countUpText = (frame: number, to: number, from: number, dur = 30, decimals = 0) => {
+  const p = interpolate(frame, [from, from + dur], [0, 1], { ...clamp, easing: easeOut });
+  const [int, dec] = (to * p).toFixed(decimals).split('.');
+  const grouped = int.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  return dec ? `${grouped},${dec}` : grouped;
+};
 export const CountUp: React.FC<{ to: number; from: number; dur?: number; decimals?: number; prefix?: string; suffix?: string; style?: React.CSSProperties }> = ({ to, from, dur = 30, decimals = 0, prefix = '', suffix = '', style }) => {
   const frame = useCurrentFrame();
-  const p = interpolate(frame, [from, from + dur], [0, 1], { ...clamp, easing: easeOut });
-  const v = to * p;
-  const [int, dec] = v.toFixed(decimals).split('.');
-  const grouped = int.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-  return <span style={{ fontVariantNumeric: 'tabular-nums', ...style }}>{prefix}{dec ? `${grouped},${dec}` : grouped}{suffix}</span>;
+  return <span style={{ fontVariantNumeric: 'tabular-nums', ...style }}>{prefix}{countUpText(frame, to, from, dur, decimals)}{suffix}</span>;
 };
 
 // Fondo de las escenas de la reseña.

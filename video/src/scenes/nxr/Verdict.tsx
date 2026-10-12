@@ -1,9 +1,10 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Easing, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
-import { Sfx } from '../../components/Sfx';
+import { Keystrokes, Sfx } from '../../components/Sfx';
+import { typedCount, typeTimes } from '../../lib/typing';
 import { CheckIcon, CrossIcon, HeadphonesIcon } from '../../components/Icons';
 import { CarIcon, CastIcon, EreaderIcon, PdfIcon, WatchIcon } from '../../components/Icons2';
 import { LogoIcon } from '../../components/Logo';
@@ -69,8 +70,9 @@ export const R11Extras: React.FC<P> = ({ lead }) => {
           <CrossIcon size={50} /> En Kindle y en Kobo, no
         </div>
       </AbsoluteFill>
-      {items.map((it) => <Sfx key={it.title} name="snap_in" at={it.f} volume={0.8} />)}
-      <Sfx name="cross" at={fNo} />
+      {/* Cada tarjeta empieza a entrar 4 fotogramas antes de su palabra y se posa unos 9 después: el chasquido, al posarse. */}
+      {items.map((it) => <Sfx key={it.title} name="snap_in" at={it.f + 5} volume={0.8} />)}
+      <Sfx name="cross" at={fNo + 1} />
     </Stage>
   );
 };
@@ -84,7 +86,7 @@ export const R12Pdf: React.FC<P> = ({ lead, dur }) => {
   const fPdf = at('pdf');
   const fNo = at('aqui');
   const fCat = at('catalogo');
-  const fSi = at('si', 1);
+  const fSi = at('si'); // «Si quieres escucharlos…»: ahí cambia la fase (antes caía en «sí puede», 2 s tarde)
   const fEleven = at('elevenreader');
   const fPuede = at('puede');
   const fTenemos = at('tenemos');
@@ -158,12 +160,14 @@ export const R12Pdf: React.FC<P> = ({ lead, dur }) => {
           </div>
         </AbsoluteFill>
       )}
-      <Sfx name="whoosh_fast" at={fPdf - 10} />
+      {/* El PDF vuela con curva suave entre fPdf−16 y el choque: el silbido culmina a mitad de vuelo. */}
+      <Sfx name="whoosh_fast" at={Math.round((fPdf - 16 + hit) / 2)} />
       <Sfx name="impact" at={hit} />
       <Sfx name="fail" at={hit + 2} />
-      <Sfx name="whoosh_soft" at={fSi - 6} />
-      <Sfx name="ui_pop" at={fPuede} />
-      <Sfx name="sparkle" at={fTenemos} />
+      <Sfx name="whoosh_soft" at={fSi - 8} />
+      <Sfx name="swipe" at={fEleven - 5} volume={0.6} />
+      <Sfx name="ui_pop" at={fPuede + 1} />
+      <Sfx name="sparkle" at={fTenemos + 1} />
       <Sfx name="ui_pop" at={fDejamos} />
     </Stage>
   );
@@ -232,11 +236,12 @@ export const R13ProsCons: React.FC<P> = ({ lead, dur }) => {
           {col('Lo malo', false, cons, 1)}
         </div>
       </AbsoluteFill>
-      <Sfx name="hit_soft" at={fBueno} volume={0.7} />
-      {pros.map((p, i) => <Sfx key={`p${i}`} name="tick_soft" at={p.f} />)}
-      <Sfx name="whoosh_soft" at={fMalo - 10} />
-      <Sfx name="hit_soft" at={fMalo} volume={0.7} />
-      {cons.map((p, i) => <Sfx key={`c${i}`} name="tick_soft" at={p.f} volume={0.9} />)}
+      {/* El icono de la cabecera aparece en fBueno−1 y cada línea 2 fotogramas antes de su palabra: ahí sus golpes. */}
+      <Sfx name="hit_soft" at={fBueno - 1} volume={0.7} />
+      {pros.map((p, i) => <Sfx key={`p${i}`} name="tick_soft" at={p.f - 2} />)}
+      <Sfx name="whoosh_soft" at={fMalo} volume={0.5} />
+      <Sfx name="hit_soft" at={fMalo - 1} volume={0.7} />
+      {cons.map((p, i) => <Sfx key={`c${i}`} name="tick_soft" at={p.f - 2} volume={0.9} />)}
     </Stage>
   );
 };
@@ -275,8 +280,16 @@ export const R14Veredicto: React.FC<P> = ({ lead, dur }) => {
   const sWin = spring({ frame: frame - fAntes + 2, fps, config: { damping: 18, stiffness: 120 } });
   const typeAt = fBusca + 4;
   const query = 'Cómo dejar de pensar demasiado';
-  const typed = Math.max(0, Math.min(query.length, Math.floor(((frame - typeAt) / fps) * 24)));
+  // Tecleo humano (30 letras en 62 fotogramas, ritmo irregular): el texto y cada tecla salen de los mismos fotogramas.
+  const qKeys = typeTimes(query, typeAt, 62, 'r14');
+  const typed = typedCount(qKeys, frame);
   const fichaAt = Math.max(typeAt + 40, fSonor + 6);
+  // Intro (la tecla grande) y la ficha entra subiendo desde abajo, rápida al principio y frenando.
+  const enterAt = Math.max(qKeys[qKeys.length - 1] + 8, fichaAt - 7);
+  const press = interpolate(frame, [enterAt - 1, enterAt + 1, enterAt + 12], [0, 1, 0], clamp);
+  // La ficha se funde en 6 fotogramas mientras sube (16 fotogramas, frenando) y la portada se aleja un poco por detrás.
+  const nav = interpolate(frame, [fichaAt, fichaAt + 16], [0, 1], { ...clamp, easing: Easing.bezier(0.22, 1, 0.36, 1) });
+  const navO = interpolate(frame, [fichaAt, fichaAt + 6], [0, 1], { ...clamp, easing: easeInOut });
   // Cámara: en la portada, sobre el buscador; en la ficha, de la página entera a las «Opciones analizadas».
   const camHome: CamKey[] = [{ f: 0, zoom: 1.25, x: 960, y: 420 }, { f: 24, zoom: 1.7, x: 960, y: 380 }, { f: 200, zoom: 1.75, x: 960, y: 375 }];
   const fv = fichaAt;
@@ -291,6 +304,7 @@ export const R14Veredicto: React.FC<P> = ({ lead, dur }) => {
     </div>
   );
   const sQ = spring({ frame: frame - fNext + 2, fps, config: { damping: 14, stiffness: 170 } });
+  const otra = interpolate(frame, [fOtra - 1, fOtra + 11], [0, 1], { ...clamp, easing: easeOut });
   return (
     <Stage tone="warm">
       {A.visible && (
@@ -309,20 +323,27 @@ export const R14Veredicto: React.FC<P> = ({ lead, dur }) => {
           </div>
           <div style={{ position: 'absolute', left: 230, top: 112, opacity: sWin, transform: `translateY(${(1 - sWin) * 60}px) scale(${0.94 + 0.06 * sWin})` }}>
             <TiltWindow width={1460} url="sonorbooks.com" ry={-3} rx={2}>
-              {frame < fichaAt ? (
-                <Sequence from={fAntes - 6} layout="none">
-                  <ScreenClip image src="nx/rec/00_home/first.jpg" width={1460} camera={camHome} showCursor={false}
-                    overlay={() => (
-                      <div style={{ position: 'absolute', left: 718, top: 340, width: 380, height: 48, background: '#fff', display: 'flex', alignItems: 'center', fontFamily: font.sans, fontSize: 19, color: '#1a1a1a' }}>
-                        {query.slice(0, typed)}<span style={{ opacity: Math.floor(frame / 12) % 2 === 0 || typed < query.length ? 1 : 0, marginLeft: 1 }}>|</span>
-                      </div>
-                    )} />
-                </Sequence>
-              ) : (
-                <Sequence from={fichaAt} layout="none">
-                  <ScreenClip image src="nx/rec/10_hook_ficha/last.jpg" width={1460} camera={camFicha} showCursor={false} markDim={0.6}
-                    marks={[{ from: fVer - fichaAt, to: dur + 20 - fichaAt, x: 952, y: 772, w: 668, h: 96, r: 18 }]} />
-                </Sequence>
+              {frame < fichaAt + 16 && (
+                <div style={{ position: 'absolute', inset: 0, opacity: 1 - 0.6 * navO, transform: `scale(${1 - 0.04 * nav})` }}>
+                  <Sequence from={fAntes - 6} layout="none">
+                    <ScreenClip image src="nx/rec/00_home/first.jpg" width={1460} camera={camHome} showCursor={false}
+                      overlay={() => (
+                        <div style={{ position: 'absolute', left: 718, top: 340, width: 380, height: 48, background: '#fff', display: 'flex', alignItems: 'center', fontFamily: font.sans, fontSize: 19, color: '#1a1a1a',
+                          boxShadow: press > 0.01 ? `0 0 0 ${(3 * press).toFixed(2)}px rgba(255,202,5,${(0.9 * press).toFixed(3)})` : undefined, borderRadius: 6 }}>
+                          {query.slice(0, typed)}<span style={{ opacity: Math.floor(frame / 12) % 2 === 0 || (typed > 0 && typed < query.length) ? 1 : 0, marginLeft: 1 }}>|</span>
+                        </div>
+                      )} />
+                  </Sequence>
+                </div>
+              )}
+              {frame >= fichaAt && (
+                <div style={{ position: 'absolute', inset: 0, opacity: navO, transform: `translateY(${((1 - nav) * 12).toFixed(2)}%) scale(${(0.985 + 0.015 * nav).toFixed(4)})`,
+                  boxShadow: nav < 1 ? '0 -30px 60px rgba(16,16,16,0.18)' : undefined }}>
+                  <Sequence from={fichaAt} layout="none">
+                    <ScreenClip image src="nx/rec/10_hook_ficha/last.jpg" width={1460} camera={camFicha} showCursor={false} markDim={0.6}
+                      marks={[{ from: fVer - fichaAt, to: dur + 20 - fichaAt, x: 952, y: 772, w: 668, h: 96, r: 18 }]} />
+                  </Sequence>
+                </div>
               )}
             </TiltWindow>
           </div>
@@ -330,19 +351,25 @@ export const R14Veredicto: React.FC<P> = ({ lead, dur }) => {
             <div style={{ position: 'absolute', left: 0, right: 0, bottom: 40, display: 'flex', justifyContent: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '18px 36px', borderRadius: 999, background: color.ink, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 38,
                 opacity: sQ, transform: `translateY(${(1 - sQ) * 30}px)`, boxShadow: '0 24px 60px rgba(16,16,16,0.3)' }}>
-                ¿Está en Nextory <span style={{ color: color.yellow }}>o en otra plataforma?</span>
+                ¿Está en Nextory
+                <span style={{ display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap', verticalAlign: 'bottom', color: color.yellow,
+                  maxWidth: `${(otra * 420).toFixed(1)}px`, marginLeft: `${((otra - 1) * 18).toFixed(1)}px`, opacity: otra, transform: `translateX(${((1 - otra) * -16).toFixed(1)}px)` }}>o en otra plataforma?</span>
               </div>
             </div>
           )}
         </AbsoluteFill>
       )}
-      <Sfx name="ui_pop" at={fSi} />
-      <Sfx name="ui_pop" at={fPoco} />
-      <Sfx name="whoosh_soft" at={fAntes - 4} />
-      <Sfx name="typing" at={typeAt} trimAfter={70} />
-      <Sfx name="swipe" at={fichaAt} />
-      <Sfx name="zoom_in" at={fVer - 6} volume={0.5} />
-      <Sfx name="success" at={fOtra} volume={0.8} />
+      <Sfx name="ui_pop" at={fSi - 2} />
+      <Sfx name="ui_pop" at={fPoco - 2} />
+      <Sfx name="whoosh_soft" at={fAntes - 6} />
+      <Keystrokes text={query} times={qKeys} volume={0.85} seed="r14" />
+      <Sfx name="key_space" at={enterAt} volume={0.9} />
+      {/* La ficha sube frenando mientras se funde (6 fotogramas): el barrido culmina a mitad del fundido. */}
+      <Sfx name="swipe" at={fichaAt + 2} volume={0.8} />
+      {/* El acercamiento a «Opciones analizadas» va de fVer−8 a fVer+16: culmina a mitad, en fVer+4. */}
+      <Sfx name="zoom_in" at={fVer + 4} volume={0.5} />
+      <Sfx name="ui_pop" at={fNext - 1} volume={0.8} />
+      <Sfx name="success" at={fOtra + 1} volume={0.8} />
     </Stage>
   );
 };

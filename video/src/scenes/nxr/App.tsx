@@ -3,14 +3,14 @@ import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame
 import { color, font } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
-import { Sfx, STEM } from '../../components/Sfx';
+import { Keystrokes, Sfx, STEM } from '../../components/Sfx';
 import { BookIcon, MicIcon } from '../../components/Icons';
 import {
   BookmarkIcon, ChartIcon, DownloadIcon, FontIcon, KidIcon, ListIcon, LockIcon, MoonIcon, SearchIcon, SpeedIcon, StarIcon, UserIcon, WifiOffIcon, ClockIcon, SyncIcon,
 } from '../../components/Icons2';
 import { wf } from './timeline';
 import type { SceneProps } from './registry';
-import { AppPhone, buildPhoneCam, Chip, Focus, focusFromShots, MaskTitle, PH, PhoneHalo, PHONE_W, Shot, Tap, APP_W } from './kit';
+import { AppPhone, buildPhoneCam, Chip, Focus, focusFromShots, MaskTitle, PH, PhoneHalo, PHONE_W, Shot, Tap, APP_W, zoomPeaks } from './kit';
 
 type P = SceneProps;
 export type TagDef = { word: string; nth?: number; label: string; icon: React.ReactNode; out?: string };
@@ -32,8 +32,8 @@ export const Kicker: React.FC<{ at: number; text: string; style?: React.CSSPrope
 // cruza por el centro y enlaza con la siguiente.
 export const AppFeatureScene: React.FC<P & {
   id: string; title: string; kicker?: string; tags: TagDef[]; side?: 'left' | 'right'; shots: Shot[]; taps?: Tap[]; extra?: React.ReactNode;
-  focus?: Focus[]; focusExtra?: Focus[];
-}> = ({ lead, dur, enter = 'rise', exit = 'none', id, title, kicker, tags, side = 'right', shots, taps = [], extra, focus, focusExtra = [] }) => {
+  focus?: Focus[]; focusExtra?: Focus[]; keys?: number[];
+}> = ({ lead, dur, enter = 'rise', exit = 'none', id, title, kicker, tags, side = 'right', shots, taps = [], extra, focus, focusExtra = [], keys = [] }) => {
   const frame = useCurrentFrame();
   const at = (w: string, n = 0) => lead + wf(id, w, n);
   const phoneLeft = side === 'right';
@@ -46,8 +46,8 @@ export const AppFeatureScene: React.FC<P & {
   const tagFrames = tags.map((t) => at(t.word, t.nth ?? 0) - 3);
   const tIn = enter === 'glide' ? 7 : 3;
   const xOut = exit === 'glide' ? interpolate(frame, [dur - 12, dur - 1], [0, 1], { ...clamp, easing: easeInOut }) : 0;
-  // Sonido de acercamiento al empezar cada foco (no en los encadenados).
-  const zooms = [...focusList].sort((a, b) => a.from - b.from).filter((f, i, l) => f.to - f.from > 10 && (i === 0 || f.from - l[i - 1].to >= 26)).map((f) => f.from - 8);
+  // Sonido de acercamiento: culmina en el fotograma en que la cámara se acerca más deprisa (sale de la curva real).
+  const zooms = zoomPeaks(cam, 2, dur - 2);
   return (
     <Stage tone="warm">
       <AbsoluteFill>
@@ -67,12 +67,25 @@ export const AppFeatureScene: React.FC<P & {
           {extra}
         </div>
       </AbsoluteFill>
-      {tagFrames.map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.65} />)}
+      {/* La etiqueta se ve desde su primer fotograma: el «pop» cae un fotograma después, cuando ya se ha desplegado un poco. */}
+      {tagFrames.map((f, i) => <Sfx key={i} name="ui_pop" at={f + 1} volume={0.65} />)}
       {taps.map((t, i) => <Sfx key={`t${i}`} name="ui_tap" at={t.f} volume={0.55} />)}
       {zooms.map((f, i) => <Sfx key={`z${i}`} name="zoom_in" at={f} volume={0.45} />)}
+      {/* Una tecla en cada fotograma en que aparecen letras nuevas en la pantalla grabada. */}
+      <Keystrokes text={'x'.repeat(keys.length)} times={keys} volume={0.6} seed={`${id}-keys`} />
     </Stage>
   );
 };
+
+// Tecleo que se ve en una toma: instantes (s) de la grabación en que aparecen letras nuevas en el campo (medidos sobre la
+// grabación, fotograma a fotograma) → fotogramas de la escena en que se ven, sin repetir (a 1,4x pueden caer dos en uno).
+const keysOf = (sh: Shot, times: number[]) =>
+  [...new Set(times.filter((t) => t > sh.start && (sh.hold === undefined || t <= sh.hold)).map((t) => sh.at + Math.ceil(((t - sh.start) * 50) / (sh.rate ?? 1) - 1e-6)))];
+// «Un thriller corto para el coche» (02_librarian_b), «galdos» (03_buscar) y «german gijon» (14_narrador). Comprobado
+// fotograma a fotograma: los cambios que solo muestran el cursor (5,24 s y 14,14 s) no son teclas; «al» de «galdos» sale junto.
+const LIB_KEYS = [5.28, 5.34, 5.38, 5.42, 5.46, 5.5, 5.52, 5.56, 5.6, 5.62, 5.66, 5.7, 5.74, 5.76, 5.8, 6.26, 6.3, 6.36, 6.4, 6.44, 6.48, 6.52, 6.54, 6.58, 6.62, 6.64, 6.68, 6.72, 6.76, 6.78, 6.82];
+const BUSCAR_KEYS = [14.12, 14.18, 14.24, 14.28, 14.32];
+const NARR_KEYS = [1.86, 1.9, 1.94, 1.96, 2.0, 2.04, 2.06, 2.1, 2.14, 2.16, 2.2];
 
 // Toma cuyo instante `clipT` (s) de la grabación cae justo en el fotograma `f` de la escena; empieza `pre` fotogramas antes.
 const align = (rec: string, clipT: number, f: number, pre = 10, extra: Partial<Shot> = {}): Shot => {
@@ -105,7 +118,7 @@ export const R04Inicio: React.FC<P> = (p) => {
     align('02_librarian_b', 24.4, fProp, 4),
   ];
   return (
-    <AppFeatureScene {...p} id="R04" title={'Portada y El\u00A0Librarian'} kicker="La app" shots={shots}
+    <AppFeatureScene {...p} id="R04" title={'Portada y El\u00A0Librarian'} kicker="La app" shots={shots} keys={keysOf(shots[2], LIB_KEYS)}
       taps={[{ f: fTapLib - 2, x: 200, y: 505 }, { f: fSend - 2, x: 588, y: 1364 }]}
       focusExtra={[
         // La petición que se teclea (abajo) y la respuesta con los libros que propone.
@@ -147,7 +160,7 @@ export const R04Buscar: React.FC<P> = (p) => {
     ],
   };
   return (
-    <AppFeatureScene {...p} id="R04B" title="Buscador y filtros" side="left" shots={[s1, s2, s3, s4, s5]}
+    <AppFeatureScene {...p} id="R04B" title="Buscador y filtros" side="left" shots={[s1, s2, s3, s4, s5]} keys={[...keysOf(s1, BUSCAR_KEYS), ...keysOf(s2, NARR_KEYS)]}
       taps={[{ f: 9, x: 200, y: 192 }, { f: fIdi - 2, x: 204, y: 373 }, { f: fTapAudio - 2, x: 616, y: 571 }]}
       focusExtra={[
         // «galdos» y las sugerencias (enlaza con la fila del narrador), y los chips de idioma al pulsar «Español».

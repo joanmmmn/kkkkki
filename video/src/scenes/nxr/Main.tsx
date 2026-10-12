@@ -5,7 +5,7 @@ import { NXR_COMPONENTS } from './registry';
 import { voSrc } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
-import { Bumper, BUMP_IN, BUMP_LEN } from './kit';
+import { Bumper, BUMP_IN, BUMP_LEN, BUMP_LOCK } from './kit';
 
 export const NXR_MUSIC: string | null = 'music/nxr_bed.mp3'; // ElevenLabs Music, secciones cuadradas con las escenas (tools/nxr_music_plan.py)
 
@@ -116,17 +116,23 @@ export const NextoryReview: React.FC = () => {
         const at = nxrStart(id) - BUMP_IN;
         return (
           <React.Fragment key={`bs${id}`}>
-            {/* Un «swell» invertido anticipa el cambio de sección y culmina cuando los paneles tapan la pantalla. */}
-            <Sfx name="reverse_swell" at={at + 12} volume={0.45} />
-            <Sfx name="whoosh_fast" at={at + 6} volume={0.9} />
-            <Sfx name="hit_soft" at={at + 18} volume={0.8} />
-            <Sfx name="whoosh_soft" at={at + 33} volume={0.7} />
+            {/* Los paneles entran de 0 a 13 (negro) y de 3 a 16 (amarillo): el barrido culmina entre los dos, en el 8.
+                El «swell» invertido crece hasta el cierre (BUMP_LOCK: el amarillo se posa, la cifra late), donde cae el golpe.
+                Salen de 27 a 42 y de 30 a 45: el segundo barrido culmina en el 36. */}
+            <Sfx name="whoosh_fast" at={at + 8} volume={0.9} />
+            <Sfx name="reverse_swell" at={at + BUMP_LOCK} volume={0.45} />
+            <Sfx name="hit_soft" at={at + BUMP_LOCK} volume={0.8} />
+            <Sfx name="whoosh_soft" at={at + 36} volume={0.7} />
           </React.Fragment>
         );
       })}
-      {NXR_SCENES.slice(1).map((s) => (s.tin === 'cut' && !s.bump
-        ? <Sfx key={s.id} name="swipe" at={nxrStart(s.id) - 2} volume={0.9} />
-        : !s.bump ? <Sfx key={s.id} name="transition" at={nxrStart(s.id)} volume={0.6} /> : null))}
+      {/* Enlace del móvil entre escenas de la app: sale acelerando y entra frenando, así que va más rápido justo en el corte.
+          Acercamiento: la imagen cambia más deprisa en el fotograma 1 de la escena nueva; barrido lateral, en el 0 (medido
+          sobre el vídeo). El cierre (P06) lleva un barrido grave que empieza antes del corte. */}
+      {NXR_SCENES.slice(1).map((s) => (s.bump ? null
+        : s.tin === 'cut' ? <Sfx key={s.id} name="swipe" at={nxrStart(s.id)} volume={0.9} />
+        : s.id === 'P06' ? <Sfx key={s.id} name="whoosh_deep" at={nxrStart(s.id) + 1} volume={0.7} />
+        : <Sfx key={s.id} name="transition" at={nxrStart(s.id) + (s.tin === 'slide' ? 0 : 1)} volume={0.6} />))}
       {NXR_MUSIC && (!STEM || STEM === 'music') && <Audio src={staticFile(NXR_MUSIC)} volume={musicVolume} />}
     </AbsoluteFill>
   );

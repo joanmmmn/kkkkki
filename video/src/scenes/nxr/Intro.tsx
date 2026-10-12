@@ -3,13 +3,13 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
-import { Sfx } from '../../components/Sfx';
+import { Sfx, ChangeTicks } from '../../components/Sfx';
 import { CheckIcon, CrossIcon, HeadphonesIcon, BookIcon } from '../../components/Icons';
 import { ClockIcon, GlobeIcon, InfinityIcon, PhoneIcon, TabletIcon, UserIcon } from '../../components/Icons2';
 import { NextoryLogo } from '../nx/common';
 import { wf } from './timeline';
 import type { SceneProps } from './registry';
-import { AppPhone, buildPhoneCam, Chip, CountUp, MaskTitle, PH, PhoneHalo, PHONE_W, Sheen, Shot } from './kit';
+import { AppPhone, buildPhoneCam, Chip, CountUp, countUpText, MaskTitle, PH, PhoneHalo, PHONE_W, Sheen, Shot, zoomPeaks } from './kit';
 
 type P = SceneProps;
 const useSpring = (at: number, damping = 16, stiffness = 160) => {
@@ -105,16 +105,17 @@ export const R01Hook: React.FC<P> = ({ lead, dur }) => {
           </div>
         </div>
       </AbsoluteFill>
-      <Sfx name="whoosh_deep" at={4} />
+      {/* El móvil entra girando (0 → 34, curva suave): el barrido grave culmina a mitad de giro, cuando va más deprisa. */}
+      <Sfx name="whoosh_deep" at={17} />
       <Sfx name="snap_in" at={fInst} volume={0.7} />
-      <Sfx name="ui_pop" at={fLey} volume={0.7} />
-      <Sfx name="ui_pop" at={fEsc} volume={0.7} />
-      <Sfx name="ui_pop" at={fToc} volume={0.7} />
+      <Sfx name="ui_pop" at={fLey + 1} volume={0.7} />
+      <Sfx name="ui_pop" at={fEsc + 1} volume={0.7} />
+      <Sfx name="ui_pop" at={fToc + 1} volume={0.7} />
       <Sfx name="ui_tap" at={fToc + 10} volume={0.5} />
       <Sfx name="ui_tap" at={fBot + 10} volume={0.5} />
-      <Sfx name="ui_pop" at={fBueno} />
-      <Sfx name="ui_pop" at={fMalo} />
-      <Sfx name="sparkle" at={fGratis} />
+      <Sfx name="ui_pop" at={fBueno + 1} />
+      <Sfx name="ui_pop" at={fMalo + 1} />
+      <Sfx name="sparkle" at={fGratis + 1} />
     </Stage>
   );
 };
@@ -174,7 +175,7 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink2, marginLeft: 8, opacity: sSusc, transform: `translateX(${(1 - sSusc) * -16}px)` }}>· una sola suscripción</div>
             </div>
             <div style={{ marginTop: 26, fontFamily: font.sans, fontWeight: 700, fontSize: 188, letterSpacing: -8, lineHeight: 1, color: color.ink, opacity: sMillon, transform: `translateY(${(1 - sMillon) * 40}px) scale(${0.9 + 0.1 * sMillon})`, transformOrigin: 'left center' }}>
-              +<CountUp to={1.4} decimals={1} from={fMillon - 8} dur={36} suffix=" M" />
+              +<CountUp to={1.4} decimals={1} from={fMillon - 5} dur={36} suffix=" M" />
               <span style={{ fontSize: 60, letterSpacing: -1, color: color.ink2, marginLeft: 18 }}>títulos</span>
             </div>
             <div style={{ display: 'flex', gap: 16, marginTop: 30, minHeight: 76 }}>
@@ -224,15 +225,18 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
           </div>
         </AbsoluteFill>
       )}
-      <Sfx name="ui_pop" at={fAudio} />
-      <Sfx name="ui_pop" at={fEbooks} />
-      <Sfx name="counter" at={fMillon - 8} />
-      <Sfx name="ui_pop" at={fIdiomas} />
-      <Sfx name="snap_in" at={fCatalogo} />
-      <Sfx name="zoom_in" at={fCatalogo - 4} volume={0.45} />
-      <Sfx name="whoosh_soft" at={fEspana - 6} />
+      <Sfx name="ui_pop" at={fAudio + 1} />
+      <Sfx name="ui_pop" at={fEbooks + 1} />
+      {/* Un tic en cada décima que cambia (rápidos al principio y cada vez más espaciados, como la cifra). La cuenta
+          arranca 3 fotogramas después que la cifra, cuando ya se ve. */}
+      <ChangeTicks value={(f) => countUpText(f, 1.4, fMillon - 5, 36, 1)} from={fMillon - 5} to={fMillon + 33} />
+      <Sfx name="ui_pop" at={fIdiomas + 1} />
+      <Sfx name="snap_in" at={fCatalogo + 1} />
+      {zoomPeaks(cam, 2, fEspana + 10).map((f) => <Sfx key={`z${f}`} name="zoom_in" at={f} volume={0.45} />)}
+      {/* Cambio de fase: la fase nueva entra frenando (más rápida al empezar, 4 fotogramas antes de su inicio nominal). */}
+      <Sfx name="whoosh_soft" at={fEspana - 10} />
       <Sfx name="pencil_strike" at={fNubico + 12} />
-      <Sfx name="whoosh_soft" at={fEso - 8} />
+      <Sfx name="whoosh_soft" at={fEso - 12} />
       <Sfx name="tick_soft" at={fMovil} />
       <Sfx name="tick_soft" at={fTablet} />
       <Sfx name="cross" at={fWeb} />
@@ -338,10 +342,11 @@ export const R03Planes: React.FC<P> = ({ lead, dur }) => {
           )}
         </div>
       </AbsoluteFill>
-      {plans.map((p) => <Sfx key={p.name} name="card_flip" at={p.f} />)}
-      <Sfx name="hit_soft" at={fOjo} />
-      <Sfx name="ui_pop" at={fPerfiles} />
-      <Sfx name="tick_soft" at={fVez} />
+      {/* Cada tarjeta empieza a voltearse 6 fotogramas antes de su palabra y se posa unos 4 después: ahí el golpe. */}
+      {plans.map((p) => <Sfx key={p.name} name="card_flip" at={p.f + 4} />)}
+      <Sfx name="hit_soft" at={fOjo + 1} />
+      <Sfx name="ui_pop" at={fPerfiles + 3} />
+      <Sfx name="tick_soft" at={fVez + 3} />
     </Stage>
   );
 };

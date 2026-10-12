@@ -1,9 +1,10 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Easing, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
+import { typeTimesSpoken } from '../../lib/typing';
 import { Stage } from '../../components/Stage';
-import { Sfx } from '../../components/Sfx';
+import { ChangeTicks, Keystrokes, Sfx } from '../../components/Sfx';
 import { Logo, LogoIcon } from '../../components/Logo';
 import { Words, Typewriter } from '../../components/Kinetic';
 import { Pill } from '../../components/Pill';
@@ -38,17 +39,31 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
   const fTreinta = at('treinta');
   const fCatorce = at('catorce');
   const fSonor = at('sonorbooks');
-  const roll = interpolate(frame, [fTreinta - 14, fTreinta + 8], [14, 30], { ...clamp, easing: easeOut });
-  // La insignia entra con «SonorBooks» marcando 14 y sube a 30 cuando la voz dice «treinta».
-  const sBadge = spring({ frame: frame - Math.min(fSonor + 4, fTreinta - 16), fps, config: { damping: 12, stiffness: 150 } });
+  // La insignia entra con «SonorBooks» marcando 14 y sube a 30 cuando la voz dice «treinta». El número se trunca (no se
+  // redondea), así que el 30 aparece justo en LAND, el fotograma en que caen a la vez el golpe, el latido y el confeti.
+  const LAND = fTreinta + 6;
+  const rollFrom = fTreinta - 20;
+  const rollAt = (f: number) => Math.floor(interpolate(f, [rollFrom, LAND], [14, 30], { ...clamp, easing: Easing.bezier(0.45, 0, 0.25, 1) }) + 1e-6);
+  const roll = rollAt(frame);
+  // Como un contador mecánico: cada número nuevo entra un poco desde abajo y se asienta (con su tic), y mientras gira
+  // deprisa se desenfoca en vertical.
+  const steps: number[] = [];
+  for (let f = rollFrom; f <= LAND; f++) if (rollAt(f) !== rollAt(f - 1)) steps.push(f);
+  const lastStep = steps.filter((f) => f <= frame).pop();
+  const since = lastStep === undefined ? 99 : frame - lastStep;
+  const kick = since < 4 ? [1, 0.5, 0.18, 0][since] : 0;
+  const recent = steps.filter((f) => f <= frame && f > frame - 3).length;
+  const blurY = Math.min(6, recent * 2);
+  const badgeAt = Math.min(fSonor + 4, fTreinta - 16);
+  const sBadge = spring({ frame: frame - badgeAt, fps, config: { damping: 12, stiffness: 150 } });
   const sLogos = spring({ frame: frame - 2, fps, config: { damping: 18, stiffness: 150 } });
   // Los logos empiezan grandes en el centro y suben a su sitio cuando entra la insignia.
   const lift = interpolate(frame, [fSonor - 8, fSonor + 10], [0, 1], { ...clamp, easing: easeInOut });
   const sVez = spring({ frame: frame - fCatorce, fps, config: { damping: 16, stiffness: 180 } });
   const strike = interpolate(frame, [fCatorce + 6, fCatorce + 18], [0, 1], { ...clamp, easing: easeOut });
   const rays = frame * 0.25;
-  // Golpe al llegar a 30: la insignia late y sale una ráfaga de confeti.
-  const bump = interpolate(frame, [fTreinta + 4, fTreinta + 9, fTreinta + 26], [0, 1, 0], { ...clamp, easing: easeOut });
+  // Golpe al llegar a 30: la insignia late (máximo 2 fotogramas después) y sale una ráfaga de confeti.
+  const bump = frame < LAND ? 0 : frame < LAND + 2 ? (frame - LAND) / 2 : interpolate(frame, [LAND + 2, LAND + 20], [1, 0], { ...clamp, easing: easeOut });
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -64,7 +79,12 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
             ))}
           </svg>
           <div style={{ position: 'absolute', inset: 70, borderRadius: '50%', background: color.yellow, boxShadow: '0 40px 100px rgba(255,202,5,0.45)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 230, letterSpacing: -10, lineHeight: 0.9, color: color.ink, fontVariantNumeric: 'tabular-nums' }}>{Math.round(roll)}</div>
+            <svg width="0" height="0" style={{ position: 'absolute' }}><defs><filter id="p01roll" x="0" y="-20%" width="100%" height="140%"><feGaussianBlur stdDeviation={`0 ${blurY.toFixed(1)}`} /></filter></defs></svg>
+            {/* Ventana del contador: lo que se desenfoca o se desplaza no invade «días gratis». */}
+            <div style={{ height: 214, overflow: 'hidden', display: 'flex', alignItems: 'center', padding: '0 12px' }}>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 230, letterSpacing: -10, lineHeight: 0.9, color: color.ink, fontVariantNumeric: 'tabular-nums',
+                transform: `translateY(${(kick * -12).toFixed(1)}px)`, filter: blurY > 0.5 ? 'url(#p01roll)' : undefined }}>{roll}</div>
+            </div>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.ink, letterSpacing: -1 }}>días gratis</div>
           </div>
         </div>
@@ -72,17 +92,21 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
           en vez de
           <span style={{ position: 'relative', color: color.muted }}>14<span style={{ position: 'absolute', left: -8, right: -8, top: '50%', height: 6, background: color.red, borderRadius: 3, transform: `rotate(-8deg) scaleX(${strike})`, transformOrigin: 'left' }} /></span>
         </div>
-        <Burst at={fTreinta + 6} x={960} y={540} r={205} seed="p01" />
+        <Burst at={LAND} x={960} y={540} r={205} seed="p01" />
         {/* Letra pequeña de la oferta */}
         <div style={{ position: 'absolute', bottom: 84, fontFamily: font.sans, fontWeight: 500, fontSize: 31, color: color.ink2, opacity: sVez }}>
           Hasta 15 h de lectura y escucha · solo cuentas nuevas
         </div>
       </AbsoluteFill>
-      <Sfx name="riser" at={fTreinta - 4} volume={0.8} />
-      <Sfx name="counter" at={fTreinta - 14} />
-      <Sfx name="impact" at={fTreinta + 6} />
+      <Sfx name="ui_pop" at={badgeAt + 2} volume={0.8} />
+      {/* La subida culmina, el contador se apaga y el golpe cae en LAND, el fotograma en que aparece el 30. */}
+      <Sfx name="riser" at={LAND} volume={0.8} />
+      {/* Un tic en cada número que pasa (se aceleran y frenan con la cifra); el último, el 30, cae con el golpe. */}
+      <ChangeTicks value={(f) => String(rollAt(f))} from={rollFrom} to={LAND} />
+      <Sfx name="impact" at={LAND} />
+      <Sfx name="sparkle" at={LAND + 2} volume={0.8} />
+      <Sfx name="ui_pop" at={fCatorce + 1} volume={0.6} />
       <Sfx name="pencil_strike" at={fCatorce + 6} />
-      <Sfx name="sparkle" at={fTreinta + 8} volume={0.8} />
     </Stage>
   );
 };
@@ -201,15 +225,15 @@ export const P02Accesos: React.FC<P> = ({ lead, dur }) => {
           <Chip at={fResena - 3} label="Reseña completa por escrito" icon={<DocIcon size={30} />} size={34} reserve />
         </div>
       </AbsoluteFill>
-      <Sfx name="ui_pop" at={fTres - 6} />
-      <Sfx name="ui_pop" at={fTres - 1} />
-      <Sfx name="ui_pop" at={fTres + 4} />
-      {steps.map((f, i) => <Sfx key={i} name="swipe" at={f + 4} volume={0.9} />)}
+      {/* Cada ventana se ve 2 fotogramas después de arrancar su muelle (fTres − 6 + 5·i). */}
+      {[0, 1, 2].map((i) => <Sfx key={`a${i}`} name="ui_pop" at={fTres - 4 + i * 5} />)}
+      {/* El carrusel gira de steps[i] a steps[i] + 18 (easeInOut): el barrido culmina a mitad, donde va más rápido. */}
+      {steps.map((f, i) => <Sfx key={i} name="swipe" at={f + 9} volume={0.9} />)}
       <Sfx name="click" at={clips[1].from + Math.round((m11.marks.click - 1.15) * fps)} />
       <Sfx name="click" at={clips[2].from + Math.round((m22.marks.click_card - 0.95) * fps)} />
       <Sfx name="click" at={clips[2].from + Math.round((m22.marks.click_offer - 0.95) * fps)} />
-      <Sfx name="ui_pop" at={fDejamos - 3} volume={0.8} />
-      <Sfx name="ui_pop" at={fEnlace - 3} volume={0.7} />
+      <Sfx name="ui_pop" at={fDejamos - 1} volume={0.8} />
+      <Sfx name="ui_pop" at={fEnlace - 2} volume={0.7} />
       <Sfx name="sparkle" at={fResena - 2} volume={0.8} />
     </Stage>
   );
@@ -217,6 +241,8 @@ export const P02Accesos: React.FC<P> = ({ lead, dur }) => {
 
 // P03 · Cuenta, plan y tarjeta: carrusel de tres ventanas; la que nombra la voz pasa al centro (las otras, detrás a los lados).
 // «Hoy: 0 €» se estampa al final.
+// Fotogramas de 13_registro en que aparece cada letra de «tucorreo@ejemplo.com» (medidos sobre la grabación).
+const REG_KEYS = [8, 10, 14, 16, 20, 22, 24, 28, 32, 34, 36, 40, 42, 46, 48, 52, 54, 58, 60, 64];
 const STEP_CHECK = <svg width="28" height="28" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke={color.yellow} strokeWidth="3.2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
@@ -239,13 +265,22 @@ export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
   const aAt = (f: number) => interpolate(f, [fPlan - 8, fPlan + 10, fTarjeta - 8, fTarjeta + 10], [0, 1, 1, 2], { ...clamp, easing: easeInOut });
   const a = aAt(frame);
   const mb = Math.min(20, Math.abs(a - aAt(frame - 1)) * 470 * 0.32);
-  const sHoy = spring({ frame: frame - fHoy, fps, config: { damping: 10, stiffness: 210 } });
+  // Sello «Hoy: 0 €»: cae desde grande acelerando (como un sello de verdad), golpea en LAND, se aplasta un poco y la
+  // pantalla acusa el golpe con una sacudida corta que se apaga enseguida.
+  const LAND = fHoy + 6;
+  const pS = interpolate(frame, [fHoy, LAND], [0, 1], { ...clamp, easing: (t) => t * t * t });
+  const squash = interpolate(frame, [LAND, LAND + 3, LAND + 11], [1, 0.94, 1], { ...clamp, easing: easeOut });
+  const ring = interpolate(frame, [LAND, LAND + 16], [0, 1], { ...clamp, easing: easeOut });
+  const k = frame - LAND;
+  const shake = k >= 0 && k < 14 ? 5 * Math.exp(-k / 3.2) * Math.sin(k * 2.3) : 0;
+  // Clic en «Continuar» del plan (6,21 s de la grabación) mientras la ventana 2 es la activa.
+  const clickPlan = clipFrom(1) + Math.round((m14.marks.click_std - (m14.marks.planform + 0.2)) * fps);
   return (
     <Stage tone="warm">
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs><filter id={`p3${id}`} x="-5%" y="0" width="110%" height="100%"><feGaussianBlur stdDeviation={`${mb.toFixed(1)} 0`} /></filter></defs>
       </svg>
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: shake ? `translateY(${shake.toFixed(2)}px)` : undefined }}>
         {cards.map((c, i) => {
           const rel = i - a;
           const ar = Math.abs(rel);
@@ -279,17 +314,23 @@ export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
             </div>
           );
         })}
-        {frame >= fHoy - 2 && (
-          <div style={{ position: 'absolute', right: 300, top: 640, zIndex: 20, transform: `rotate(${-8 - 6 * (1 - sHoy)}deg) scale(${(1.6 - 0.6 * sHoy) * Math.min(1, sHoy * 1.4)})`, opacity: Math.min(1, sHoy * 2),
-            padding: '22px 40px', borderRadius: 30, background: color.green, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 64, boxShadow: '0 30px 70px rgba(31,157,85,0.4)', display: 'flex', alignItems: 'center', gap: 18 }}>
-            <CheckIcon size={64} c="#fff" fg={color.green} /> Hoy: 0 €
+        {frame >= fHoy && (
+          <div style={{ position: 'absolute', right: 300, top: 640, zIndex: 20, transform: `rotate(${-14 + 6 * pS}deg) scale(${frame < LAND ? 2.2 - 1.2 * pS : squash})`, opacity: interpolate(pS, [0, 0.4], [0, 1], clamp) }}>
+            {/* Onda del golpe: el contorno del sello se abre y se desvanece. */}
+            {ring > 0 && ring < 1 && <div style={{ position: 'absolute', inset: 0, borderRadius: 30, border: `4px solid ${color.green}`, transform: `scale(${1 + 0.35 * ring})`, opacity: 0.55 * (1 - ring) }} />}
+            <div style={{ padding: '22px 40px', borderRadius: 30, background: color.green, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 64, display: 'flex', alignItems: 'center', gap: 18,
+              boxShadow: `0 ${(10 + 40 * (1 - pS)).toFixed(1)}px ${(30 + 60 * (1 - pS)).toFixed(1)}px rgba(31,157,85,${(0.45 - 0.2 * (1 - pS)).toFixed(3)})` }}>
+              <CheckIcon size={64} c="#fff" fg={color.green} /> Hoy: 0 €
+            </div>
           </div>
         )}
       </AbsoluteFill>
-      <Sfx name="whoosh_soft" at={fCuenta - 6} />
-      <Sfx name="swipe" at={fPlan - 4} />
-      <Sfx name="swipe" at={fTarjeta - 4} />
-      <Sfx name="stamp" at={fHoy + 2} />
+      <Keystrokes text="tucorreo@ejemplo.com" times={REG_KEYS} volume={0.7} seed="p03" />
+      {/* El carrusel gira de f − 8 a f + 10 (easeInOut): el barrido culmina en f + 1. */}
+      <Sfx name="swipe" at={fPlan + 1} />
+      <Sfx name="swipe" at={fTarjeta + 1} />
+      <Sfx name="click" at={clickPlan} volume={0.8} />
+      <Sfx name="stamp" at={LAND} />
     </Stage>
   );
 };
@@ -305,13 +346,16 @@ export const P04App: React.FC<P> = ({ lead, dur }) => {
   const sB = (k: number) => spring({ frame: frame - fDesc - k * 5, fps, config: { damping: 14, stiffness: 170 } });
   const sE = spring({ frame: frame - fEntra + 2, fps, config: { damping: 15, stiffness: 160 } });
   const cam: PhoneKey[] = [{ f: 0, rx: 10, ry: -30, rz: 4, s: 0.9, x: 80, y: 40 }, { f: 26, rx: 3, ry: -12, rz: 1, s: 1, x: 0, y: 0 }, { f: dur, rx: 2, ry: -8, rz: 0.5, s: 1.02, x: 0, y: -4 }];
+  // Toque en «Iniciar sesión» de la bienvenida (332, 1266 en la grabación) 4 fotogramas antes de que aparezca el formulario.
+  const loginAt = Math.max(8, fEntra - 14);
+  const tapAt = loginAt - 4;
   return (
     <Stage tone="warm">
       <AbsoluteFill>
         <PhoneHalo cam={cam} cx={1340} cy={559} strength={0.9} />
         <div style={{ position: 'absolute', left: 1120, top: 100 }}>
-          <AppPhone shots={[{ rec: '00_bienvenida', at: 0, start: 0.2 }, { rec: '00_login', at: Math.max(8, fEntra - 14), start: 0.6 }, { rec: '01_inicio', at: fDisf - 6, start: 0.3 }]} w={410}
-            cam={cam} float={[20, dur + 24]} />
+          <AppPhone shots={[{ rec: '00_bienvenida', at: 0, start: 0.2 }, { rec: '00_login', at: loginAt, start: 0.6 }, { rec: '01_inicio', at: fDisf - 6, start: 0.3 }]} w={410}
+            cam={cam} float={[20, dur + 24]} taps={[{ f: tapAt, x: 332, y: 1266 }]} />
         </div>
         <div style={{ position: 'absolute', left: 170, top: 300, width: 860 }}>
           <MaskTitle text="Descarga la app" hi="app" at={fDesc - 4} size={104} />
@@ -334,9 +378,10 @@ export const P04App: React.FC<P> = ({ lead, dur }) => {
           </div>
         </div>
       </AbsoluteFill>
-      <Sfx name="ui_pop" at={fDesc} />
-      <Sfx name="ui_pop" at={fDesc + 5} volume={0.7} />
-      <Sfx name="phone_tap" at={fEntra} />
+      {/* Los botones de las tiendas se ven 2 fotogramas después de arrancar su muelle (fDesc y fDesc + 5). */}
+      <Sfx name="ui_pop" at={fDesc + 2} />
+      <Sfx name="ui_pop" at={fDesc + 7} volume={0.7} />
+      <Sfx name="ui_tap" at={tapAt} volume={0.6} />
       <Sfx name="sparkle" at={fDisf - 2} />
     </Stage>
   );
@@ -391,10 +436,12 @@ export const P05Decide: React.FC<P> = ({ lead, dur }) => {
               {days.map((d) => {
                 const hot = d >= 27 && d <= 29;
                 const last = d === 30;
-                const ds = interpolate(frame, [fMis + d * 0.8, fMis + d * 0.8 + 8], [0, 1], clamp);
+                // Cada día salta con un muelle corto, uno detrás de otro (una fila de 10 cada 8 fotogramas).
+                const ds = spring({ frame: frame - (fMis + (d - 1) * 0.8), fps, config: { damping: 13, stiffness: 230 } });
                 return (
                   <div key={d} style={{ height: 50, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 22,
-                    background: hot ? `rgba(255,202,5,${0.25 + 0.75 * best})` : last ? '#FDECEC' : '#F4F4F4', color: last ? color.red : color.ink, opacity: ds, transform: `scale(${hot ? 1 + 0.1 * best : 1})` }}>
+                    background: hot ? `rgba(255,202,5,${0.25 + 0.75 * best})` : last ? '#FDECEC' : '#F4F4F4', color: last ? color.red : color.ink, opacity: Math.min(1, ds * 1.6),
+                    transform: `scale(${(0.55 + 0.45 * ds) * (hot ? 1 + 0.1 * best : 1)})` }}>
                     {d}
                   </div>
                 );
@@ -409,12 +456,14 @@ export const P05Decide: React.FC<P> = ({ lead, dur }) => {
           </>
         ), sR)}
       </AbsoluteFill>
-      <Sfx name="ui_pop" at={fGusta} />
-      <Sfx name="success" at={fQuedate} volume={0.8} />
-      <Sfx name="ui_pop" at={fConv} />
-      <Sfx name="tick_soft" at={fMis} />
+      {/* Las tarjetas se ven 2 fotogramas después de arrancar su muelle (fGusta − 4 y fConv − 4). */}
+      <Sfx name="ui_pop" at={fGusta - 2} />
+      <Sfx name="success" at={fQuedate + 1} volume={0.8} />
+      <Sfx name="ui_pop" at={fConv - 2} />
+      {/* Un tic suave por cada fila de días que salta (filas de 10, cada 8 fotogramas). */}
+      {[0, 1, 2].map((r) => <Sfx key={`d${r}`} name="tick_soft" at={fMis + 2 + r * 8} volume={[0.85, 0.6, 0.5][r]} />)}
       <Sfx name="marker" at={fUlt} />
-      <Sfx name="hit_soft" at={fPierdes} />
+      <Sfx name="hit_soft" at={fPierdes + 1} />
     </Stage>
   );
 };
@@ -426,7 +475,13 @@ export const P06Outro: React.FC<P> = ({ lead, dur }) => {
   const at = (w: string, n = 0) => lead + wf('P06', w, n);
   const fPrecio = at('precio');
   const fSonor = at('sonorbooks');
-  const typeAt = lead + 6;
+  // Cada palabra se teclea mientras la voz la dice; antes, el buscador espera con el cursor y el texto de ayuda.
+  const fTu = at('tu');
+  const fProx = at('proximo');
+  const fLibro = at('libro');
+  const fY = at('y');
+  const query = 'Tu próximo libro';
+  const keys = typeTimesSpoken(query, [[fTu - 3, fProx - 3], [fProx - 2, fLibro - 3], [fLibro - 2, fY - 6]], 'p06');
   const end = fSonor + 30;
   return (
     <Stage tone="warm">
@@ -436,7 +491,7 @@ export const P06Outro: React.FC<P> = ({ lead, dur }) => {
           <div style={{ width: 1160, height: 104, borderRadius: 999, background: '#fff', boxShadow: shadow.float, border: `1px solid ${color.line}`, display: 'flex', alignItems: 'center', padding: '0 18px 0 46px', gap: 24 }}>
             <svg width="38" height="38" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" stroke={color.ink} strokeWidth="2.4" fill="none" /><path d="M15.5 15.5 L21 21" stroke={color.ink} strokeWidth="2.4" strokeLinecap="round" /></svg>
             <div style={{ flex: 1, fontFamily: font.sans, fontSize: 42, color: color.ink }}>
-              <Typewriter text="Tu próximo libro" start={typeAt} cps={20} />
+              <Typewriter text={query} times={keys} placeholder="Busca un libro" />
             </div>
           </div>
           <div style={{ fontFamily: font.sans, fontSize: 34, color: color.ink2, opacity: spring({ frame: frame - fPrecio, fps }) }}>Dónde escucharlo, y a qué precio</div>
@@ -452,10 +507,11 @@ export const P06Outro: React.FC<P> = ({ lead, dur }) => {
           </div>
         </AbsoluteFill>
       </Phase>
-      <Sfx name="whoosh_deep" at={0} volume={0.7} />
+      {/* El barrido grave de entrada está en Main (empieza antes del corte). */}
       <Sfx name="logo_sting" at={4} />
-      <Sfx name="typing" at={typeAt} trimAfter={50} />
-      <Sfx name="logo_sting" at={end + 2} volume={0.6} />
+      <Keystrokes text={query} times={keys} volume={0.9} seed="p06" />
+      {/* Cambio a la última pantalla: el fundido cruzado de las dos fases va de end − 4 a end + 8. */}
+      <Sfx name="logo_sting" at={end + 5} volume={0.6} />
     </Stage>
   );
 };
