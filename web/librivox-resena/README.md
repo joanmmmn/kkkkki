@@ -24,14 +24,12 @@ fija. Todo lo demás tiene identidad propia de LibriVox.
   página de libro y la tinta avanza con la voz. Sin pulsar nada, la primera frase de Omar se «lee» sola, sin sonido. Debajo, una
   caja como la «Thank a reader» de LibriVox. El párrafo de Omar es el mismo que en la reseña de ElevenReader.
 - Veredicto rápido (7,5/10) con «Escuchar gratis en LibriVox» (ruta de salida del sitio hacia librivox.org).
+- **Cómo funciona, en cuatro pasos:** la respuesta corta para quien busca cómo usar LibriVox (entrar en la web, buscar en
+  español, escuchar o descargar y llevarlo al móvil), como un recorrido con cuatro paradas; cada paso enlaza a su apartado.
 - **Vídeo:** en producción, el de YouTube (se carga al pulsar, con youtube-nocookie). En la vista previa se reproduce el propio
   vídeo, porque aún no está en YouTube.
 - **Qué es:** la portada de librivox.org traducida, con sus cifras (14.276 voluntarios; 21.838 audiolibros y 132.392 horas) y
   botones que llevan a las secciones de la página. Después, el aviso con el que empieza cada grabación, que se escucha.
-- **¿Es legal?:** la línea de los 95 años (EE. UU.) y **España** (80/70 años tras la muerte del autor): cuatro libros en español
-  que aún tienen derechos aquí, como fichas de préstamo de biblioteca con el sello del año en que quedan libres.
-- **Catálogo:** «Browse the catalog › Language» recreado con las cifras de LibriVox (el español, cuarto idioma) y la nota
-  «¿Buscas un libro concreto?» hacia el buscador de SonorBooks.
 - **Cómo buscar:** tres pasos que se pueden pulsar y un catálogo recreado con once clásicos en español: buscador (sin tildes),
   filtro «Project type» (all, solo, group) y enlaces a cada ficha de LibriVox. Enlaces a las capturas reales.
 - **Escuchar y descargar:** la columna de la ficha recreada (Play, título, Whole book, iTunes, RSS, Torrent, Internet Archive y
@@ -39,14 +37,23 @@ fija. Todo lo demás tiene identidad propia de LibriVox.
   real con las ocho zonas numeradas.
 - **En el móvil:** pestañas (app de pódcasts, descarga directa, otras apps, navegador), botón para copiar el RSS de las
   *Leyendas* y un teléfono en el que una app de pódcasts se suscribe sola al RSS (una vez, al llegar; con botón para repetir).
+- **¿Es legal?:** la línea de los 95 años (EE. UU.) y **España** (80/70 años tras la muerte del autor): cuatro libros en español
+  que aún tienen derechos aquí, como fichas de préstamo de biblioteca con el sello del año en que quedan libres.
+- **Catálogo:** «Browse the catalog › Language» recreado con las cifras de LibriVox (el español, cuarto idioma) y la nota
+  «¿Buscas un libro concreto?» hacia el buscador de SonorBooks.
 - **Las voces:** el reparto completo de las *Leyendas* (11 voluntarios, capítulos y horas de cada uno), con cuatro voces que se
   escuchan, y consejos para elegir.
 - **Voluntariado:** 5 pasos con la línea que avanza al hacer scroll, lo que hace falta y la captura del foro.
 - Lo mejor y lo peor, para quién es, nota por apartados y la ficha de LibriVox de SonorBooks con **las condiciones de la web
   copiadas tal cual** (texto de Joan).
 - «Cómo lo probamos» en letra pequeña, con fuentes; carrusel de 9 artículos relacionados; barra fija «Escuchar gratis».
-- SEO: título «LibriVox: audiolibros gratis en español y cómo usarlo (2026)»; datos estructurados `Review` (7,5/10) y
-  `BreadcrumbList`, y `VideoObject` cuando se construye con el ID del vídeo. Sin preguntas frecuentes ni índice.
+- SEO, para quien busca cómo funciona y cómo usarlo: título «Cómo usar LibriVox: audiolibros gratis en español (guía 2026)»,
+  H1 «LibriVox: qué es y cómo usarlo», los cuatro pasos arriba y el orden del vídeo: primero cómo se usa; después, por qué
+  es legal (con el matiz de España) y el catálogo. Datos estructurados `Review` (7,5/10) y `BreadcrumbList`, y `VideoObject` cuando se construye
+  con el ID del vídeo. Sin preguntas frecuentes ni índice.
+- Movimiento: sin rebotes. Los sellos de las fichas entran con una frenada suave (en todos los tamaños de pantalla) y las
+  capturas ampliadas se abren y se cierran con un fundido y un zoom suaves: el fondo se oscurece enseguida y la captura entra
+  cuando ya está lista.
 
 Sin dependencias externas, sin cookies ni almacenamiento en el navegador. El contenido está entero en el HTML (sin JavaScript se
 ve el texto completo, el primer panel de cada bloque y el catálogo con los once libros); con `prefers-reduced-motion` no hay

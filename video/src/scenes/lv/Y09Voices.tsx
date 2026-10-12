@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -7,7 +8,7 @@ import { Words } from '../../components/Kinetic';
 import { Highlight } from '../../components/Highlight';
 import { Sfx } from '../../components/Sfx';
 import { IcHeadphones } from '../er/icons';
-import { clamp } from '../../lib/anim';
+import { clamp, easeInOut } from '../../lib/anim';
 import { Wave } from '../er2/AppView';
 import { B, Chip, CropLv, LvWeb, lvw, markOn } from './common';
 import { itemAt, itemEnd, w } from './timeline';
@@ -91,11 +92,11 @@ export const Y09Voices: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
               );
             })}
           </div>
-          <div style={{ fontFamily: font.sans, fontSize: 30, color: color.muted, opacity: interpolate(frame, [c0, c0 + 10], [0, 1], clamp) }}>Audio real de LibriVox · cuatro de los once voluntarios</div>
+          <div style={{ fontFamily: font.sans, fontSize: 30, color: color.muted, opacity: interpolate(frame, [c0, c0 + 18], [0, 1], { ...clamp, easing: easeInOut }) }}>Audio real de LibriVox · cuatro de los once voluntarios</div>
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fTips} to={dur} out={6}>
+      <Phase from={fTips} to={dur} hold>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 50 }}>
           {(() => {
             const a = spring({ frame: frame - fMin + 6, fps, config: { damping: 15, stiffness: 170 } });

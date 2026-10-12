@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -78,12 +79,12 @@ export const Y10Volunteer: React.FC<{ lead: number; dur: number }> = ({ dur }) =
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fForo} to={dur} out={6}>
+      <Phase from={fForo} to={dur} hold>
         <AbsoluteFill>
           <div style={{ position: 'absolute', left: -300, top: 0, width: 1920, height: 1080 }}>
             <LvWeb states={[{ at: 0, src: lvw('forum') }]} url="forum.librivox.org" width={1160} y={-10}
-              camera={[{ f: 0, zoom: 1.0, x: 640, y: 360 }, { f: fMin - fForo - 20, zoom: 1.0, x: 640, y: 360 }, { f: fMin - fForo + 4, zoom: 1.6, x: 380, y: 320 }]}
-              marks={[markOn(fr, 6, fMin - fForo - 22, 8, { label: 'Register' }), markOn(fm, fMin - fForo - 16, fCap - fForo, 6, { label: 'Prueba de 1 minuto' })]} />
+              camera={[{ f: 0, zoom: 1.0, x: 640, y: 360 }, { f: fMin - fForo - 50, zoom: 1.0, x: 640, y: 360 }, { f: fMin - fForo + 30, zoom: 1.42, x: 380, y: 330 }, { f: dur - fForo, zoom: 1.48, x: 380, y: 340 }]}
+              marks={[markOn(fr, 6, fMin - fForo - 36, 8, { label: 'Register' }), markOn(fm, fMin - fForo - 30, fCap - fForo + 40, 6, { label: 'Prueba de 1 minuto' })]} />
           </div>
           <div style={{ position: 'absolute', left: 1290, top: 150, width: 570, display: 'flex', flexDirection: 'column', gap: 18 }}>
             {steps.map((s, i) => {
@@ -112,7 +113,6 @@ export const Y10Volunteer: React.FC<{ lead: number; dur: number }> = ({ dur }) =
       <Sfx name="whoosh_soft" at={fForo} />
       <Sfx name="mouse_click" at={fForo + 10} volume={0.7} />
       {steps.slice(1).map((s) => <Sfx key={s.t} name="tick" at={s.f + 2} />)}
-      <Sfx name="zoom_in" at={fMin - 14} volume={0.6} />
       <Sfx name="stamp" at={fQueda + 2} />
       <Sfx name="marker" at={fMundo} />
     </Stage>

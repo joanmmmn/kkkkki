@@ -1,12 +1,13 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
 import { Words } from '../../components/Kinetic';
 import { Highlight } from '../../components/Highlight';
 import { Sfx } from '../../components/Sfx';
-import { clamp, easeOut } from '../../lib/anim';
+import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Wave } from '../er2/AppView';
 import { B, LvTag, LvWeb, lvw, markOn } from './common';
 import { CLIP, clipWordAt, itemAt, itemEnd, w } from './timeline';
@@ -92,11 +93,11 @@ export const Y03What: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
               <div style={{ fontSize: 32, color: color.ink2 }}>gratis y de forma permanente</div>
             </div>
           </div>
-          <div style={{ fontFamily: font.sans, fontSize: 40, fontWeight: 500, color: color.ink2, opacity: interpolate(frame, [fAsi, fAsi + 10], [0, 1], clamp) }}>Y cada capítulo empieza así…</div>
+          <div style={{ fontFamily: font.sans, fontSize: 40, fontWeight: 500, color: color.ink2, opacity: interpolate(frame, [fAsi, fAsi + 18], [0, 1], { ...clamp, easing: easeInOut }) }}>Y cada capítulo empieza así…</div>
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={clipAt - 6} to={dur} out={4}>
+      <Phase from={clipAt - 6} to={dur} hold>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50 }}>
           <div style={{ width: 160, height: 160, borderRadius: 80, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: `0 0 0 ${18 + Math.sin(frame / 5) * 6}px rgba(255,202,5,0.25)` }}>
             <Wave on={frame < clipEnd} bars={5} h={70} />
@@ -113,7 +114,6 @@ export const Y03What: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
       <LvTag at={clipAt + 6} until={clipEnd + 8} voice="Omar Mojica" y={900} />
 
       <Sfx name="ui_pop" at={f2005} />
-      <Sfx name="zoom_in" at={fDom - 6} volume={0.7} />
       <Sfx name="marker" at={fDom} />
       <Sfx name="marker" at={fPers} />
       <Sfx name="marker" at={fGratis} />

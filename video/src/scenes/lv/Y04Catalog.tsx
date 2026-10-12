@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -63,7 +64,7 @@ export const Y04Catalog: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
   const cnt = interpolate(frame, [f21 - 8, f21 + 26], [0, 21000], { ...clamp, easing: (t) => 1 - Math.pow(1 - t, 3) });
   const sNo = spring({ frame: frame - fNov, fps, config: { damping: 14, stiffness: 170 } });
   const sSi = spring({ frame: frame - fClas + 2, fps, config: { damping: 12, stiffness: 180 } });
-  const strike = interpolate(frame, [fNov + 14, fNov + 24], [0, 1], clamp);
+  const strike = interpolate(frame, [fNov + 14, fNov + 26], [0, 1], { ...clamp, easing: easeInOut });
   const sp = B['lang:Spanish'];
   return (
     <Stage tone="warm">
@@ -92,7 +93,7 @@ export const Y04Catalog: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
         <AbsoluteFill>
           <AbsoluteFill style={{ transform: 'translateX(170px)' }}>
           <LvWeb states={[{ at: 0, src: lvw('lang') }]} width={1380} y={70}
-            camera={[{ f: 0, zoom: 1.0, x: 640, y: 380 }, { f: fCuarto - fMuchos - 10, zoom: 1.0, x: 640, y: 380 }, { f: fCuarto - fMuchos + 14, zoom: 1.25, x: 780, y: 520 }]}
+            camera={[{ f: 0, zoom: 1.0, x: 640, y: 380 }, { f: fCuarto - fMuchos - 90, zoom: 1.0, x: 640, y: 380 }, { f: fCuarto - fMuchos + 10, zoom: 1.2, x: 760, y: 470 }, { f: fQ - fMuchos + 10, zoom: 1.24, x: 760, y: 480 }]}
             marks={[markOn(sp, fCuarto - fMuchos - 2, dur, 4, { label: '4.º idioma' })]} />
           </AbsoluteFill>
           <div style={{ position: 'absolute', left: 70, top: 120, display: 'flex', flexDirection: 'column', gap: 18 }}>
@@ -110,13 +111,13 @@ export const Y04Catalog: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fQ} to={dur} out={6}>
+      <Phase from={fQ} to={dur} hold>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 50 }}>
           <div style={{ fontFamily: font.sans, fontSize: 44, fontWeight: 700, color: color.ink2 }}>Clásicos en español, gratis</div>
           <div style={{ display: 'flex', gap: 34, alignItems: 'flex-end' }}>
             {titles.map((t, i) => {
               const s = spring({ frame: frame - t.f + 6, fps, config: { damping: 13, stiffness: 150 } });
-              const lift = interpolate(frame, [t.f, t.f + 8, t.f + 30], [0, -28, 0], clamp);
+              const lift = interpolate(frame, [t.f - 2, t.f + 12, t.f + 38], [0, -22, 0], { ...clamp, easing: easeInOut });
               return (
                 <div key={t.id} style={{ opacity: s, transform: `translateY(${(1 - s) * 120 + lift}px) rotate(${(i - 2) * 2.5 * (1 - s * 0.6)}deg) scale(${0.8 + 0.2 * s})` }}>
                   <Cover id={t.id} size={300} />
@@ -135,7 +136,6 @@ export const Y04Catalog: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
       <Sfx name="whoosh_soft" at={fMuchos} />
       <Sfx name="counter" at={f21 - 8} trimAfter={36} />
       <Sfx name="ui_pop" at={fIdio - 2} />
-      <Sfx name="zoom_in" at={fCuarto - 12} volume={0.7} />
       <Sfx name="marker" at={fCuarto} />
       <Sfx name="ui_pop" at={fMil - 4} />
       <Sfx name="ui_pop" at={fHoras - 4} />

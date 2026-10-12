@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Words } from '../../components/Kinetic';
@@ -32,7 +33,7 @@ export const Y12Verdict: React.FC<{ lead: number; dur: number }> = () => {
   const r2 = spring({ frame: frame - fBus, fps, config: { damping: 16, stiffness: 150 } });
   const yes = spring({ frame: frame - fSi + 2, fps, config: { damping: 10, stiffness: 200 } });
   const no = spring({ frame: frame - fEnc + 2, fps, config: { damping: 12, stiffness: 200 } });
-  const out = interpolate(frame, [fNota - 4, fNota + 12], [0, 1], { ...clamp, easing: easeInOut });
+  const out = interpolate(frame, [fNota - 8, fNota + 16], [0, 1], { ...clamp, easing: easeInOut });
   const sc = spring({ frame: frame - fNota - 2, fps, config: { damping: 18, stiffness: 130 } });
   const ring = interpolate(frame, [f7 - 10, f7 + 26], [0, SCORE / 10], { ...clamp, easing: easeOut });
   const num = spring({ frame: frame - f7 + 2, fps, config: { damping: 9, stiffness: 200 } });
@@ -42,7 +43,7 @@ export const Y12Verdict: React.FC<{ lead: number; dur: number }> = () => {
   );
   return (
     <Stage tone="warm">
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 40, opacity: 1 - out, transform: `scale(${1 - 0.08 * out})`, filter: `blur(${out * 8}px)` }}>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 40, opacity: 1 - out, transform: `scale(${1 - 0.06 * out})`, filter: out > 0.01 ? `blur(${out * 3}px)` : undefined }}>
         <Words text="¿Merece la pena?" start={0} size={100} weight={700} />
         {rowBox(r1, (
           <>
@@ -60,7 +61,7 @@ export const Y12Verdict: React.FC<{ lead: number; dur: number }> = () => {
           </>
         ))}
       </AbsoluteFill>
-      {frame >= fNota - 4 && (
+      {frame >= fNota - 8 && (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 110, opacity: sc, transform: `scale(${0.9 + 0.1 * sc})` }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26 }}>
             <div style={{ fontFamily: font.sans, fontSize: 44, fontWeight: 500, color: color.ink2 }}>Nuestra nota</div>

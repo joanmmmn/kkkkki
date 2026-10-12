@@ -1,7 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
-import { clamp, easeOut } from '../../lib/anim';
+import { clamp, easeInOut } from '../../lib/anim';
 import { CamKey, Mark } from '../../components/ScreenClip';
 import { CursorPoint } from '../../components/Cursor';
 import { AppView, AppWindow, St, Wave } from '../er2/AppView';
@@ -38,7 +39,7 @@ export const LvTag: React.FC<{ at: number; until: number; voice: string; sub?: s
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const sIn = spring({ frame: frame - at, fps, config: { damping: 16, stiffness: 180 } });
-  const sOut = interpolate(frame, [until - 8, until], [0, 1], { ...clamp, easing: easeOut });
+  const sOut = interpolate(frame, [until - 14, until], [0, 1], { ...clamp, easing: easeInOut });
   const s = sIn * (1 - sOut);
   if (s < 0.01) return null;
   return (
@@ -108,7 +109,7 @@ export const Tile: React.FC<{ icon?: React.ReactNode; title: React.ReactNode; su
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - at, fps, config: { damping: 16, stiffness: 170 } });
   return (
-    <div style={{ width, display: 'flex', alignItems: 'center', gap: 24, padding: '22px 28px', borderRadius: 28, background: dark ? color.ink : '#fff', color: dark ? '#fff' : color.ink, border: dark ? 'none' : `1px solid ${color.line}`, boxShadow: shadow.card, opacity: s, transform: `translateY(${(1 - s) * 40}px) scale(${0.94 + 0.06 * s})`, filter: `blur(${(1 - s) * 6}px)`, ...style }}>
+    <div style={{ width, display: 'flex', alignItems: 'center', gap: 24, padding: '22px 28px', borderRadius: 28, background: dark ? color.ink : '#fff', color: dark ? '#fff' : color.ink, border: dark ? 'none' : `1px solid ${color.line}`, boxShadow: shadow.card, opacity: s, transform: `translateY(${(1 - s) * 28}px) scale(${0.96 + 0.04 * s})`, filter: s < 0.99 ? `blur(${(1 - s) * 3}px)` : undefined, ...style }}>
       {icon && <div style={{ width: 76, height: 76, borderRadius: 38, flexShrink: 0, background: accent ? color.yellow : dark ? 'rgba(255,255,255,0.1)' : color.yellowSoft, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{icon}</div>}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 4, fontFamily: font.sans, minWidth: 0 }}>
         <div style={{ fontSize: 38, fontWeight: 700, lineHeight: 1.1 }}>{title}</div>
@@ -123,7 +124,7 @@ export const Chip: React.FC<{ at: number; children: React.ReactNode; size?: numb
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - at, fps, config: { damping: 14, stiffness: 190 } });
-  const o = interpolate(frame, [out, out + 10], [1, 0], clamp);
+  const o = interpolate(frame, [out, out + 14], [1, 0], { ...clamp, easing: easeInOut });
   return (
     <div style={{ display: 'inline-flex', alignItems: 'center', gap: size * 0.4, padding: `${size * 0.38}px ${size * 0.75}px`, borderRadius: 999, background: bg, color: fg, fontFamily: font.sans, fontWeight: 700, fontSize: size, boxShadow: shadow.float, border: bg === '#fff' ? `1px solid ${color.line}` : 'none', opacity: s * o, transform: `translateY(${(1 - s) * 26}px) scale(${0.85 + 0.15 * s})`, whiteSpace: 'nowrap', ...style }}>
       {children}

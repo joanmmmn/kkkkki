@@ -99,204 +99,204 @@ Archive, y cada capítulo empieza así:
 <i>Todas las grabaciones de LibriVox son del dominio público»</i>
 
 26
-00:01:03,180 --> 00:01:04,492
-¿Y por qué es legal?
-
-27
-00:01:04,512 --> 00:01:06,420
-Porque solo graban libros sin derechos de
-
-28
-00:01:06,469 --> 00:01:08,087
-autor en Estados Unidos:
-
-29
-00:01:08,107 --> 00:01:11,144
-los publicados hace 95 años o más.
-
-30
-00:01:11,164 --> 00:01:13,182
-Así que aquí no hay novedades,
-
-31
-00:01:13,202 --> 00:01:14,470
-hay clásicos.
-
-32
-00:01:14,520 --> 00:01:16,818
-Muchos: más de 21.000,
-
-33
-00:01:16,838 --> 00:01:18,386
-en decenas de idiomas.
-
-34
-00:01:18,406 --> 00:01:19,906
-El español es el cuarto,
-
-35
-00:01:19,926 --> 00:01:23,466
-con más de 1.000 obras y más de 3.500 horas:
-
-36
-00:01:23,486 --> 00:01:25,426
-el Quijote, el Lazarillo,
-
-37
-00:01:25,446 --> 00:01:27,786
-La Regenta, Fortunata y Jacinta,
-
-38
-00:01:27,806 --> 00:01:29,186
-las Leyendas de Bécquer…
-
-39
-00:01:29,520 --> 00:01:32,119
-Eso sí: LibriVox sigue la ley de Estados
-
-40
-00:01:32,139 --> 00:01:34,954
-Unidos, y te pide comprobar la de tu país.
-
-41
-00:01:34,974 --> 00:01:37,752
-En España, la mayoría de sus clásicos también
-
-42
-00:01:37,772 --> 00:01:39,883
-son libres, pero no todos:
-
-43
-00:01:39,903 --> 00:01:41,668
-«Platero y yo», por ejemplo,
-
-44
-00:01:41,688 --> 00:01:44,526
-aquí no lo será hasta 2039.
-
-45
-00:01:45,060 --> 00:01:46,302
+00:01:03,180 --> 00:01:04,422
 Vamos a usarlo.
 
-46
-00:01:46,322 --> 00:01:47,660
+27
+00:01:04,442 --> 00:01:05,780
 La web está en inglés,
 
-47
-00:01:47,680 --> 00:01:48,939
+28
+00:01:05,800 --> 00:01:07,059
 pero es sencilla:
 
-48
-00:01:48,959 --> 00:01:50,697
+29
+00:01:07,079 --> 00:01:08,817
 en «Browse the catalog»,
 
-49
-00:01:50,717 --> 00:01:53,774
+30
+00:01:08,837 --> 00:01:11,894
 pulsa «Language» y elige «Spanish».
 
-50
-00:01:53,794 --> 00:01:56,536
+31
+00:01:11,914 --> 00:01:14,656
 También puedes buscar por título o por autor.
 
-51
-00:01:56,556 --> 00:01:59,149
+32
+00:01:14,676 --> 00:01:17,269
 En la lista ves si lo lee una sola persona,
 
-52
-00:01:59,169 --> 00:02:01,566
+33
+00:01:17,289 --> 00:01:19,686
 «Solo», o varias, «Collaborative».
 
-53
-00:02:01,920 --> 00:02:04,437
+34
+00:01:20,040 --> 00:01:22,557
 Dentro de cada libro tienes la duración,
 
-54
-00:02:04,457 --> 00:02:06,195
+35
+00:01:22,577 --> 00:01:24,315
 quién lee cada capítulo…
 
-55
-00:02:06,215 --> 00:02:08,441
+36
+00:01:24,335 --> 00:01:26,561
 y todas las formas de escucharlo.
 
-56
-00:02:08,461 --> 00:02:10,611
+37
+00:01:26,581 --> 00:01:28,731
 Con «Play», suena en el navegador.
 
-57
-00:02:10,631 --> 00:02:11,782
+38
+00:01:28,751 --> 00:01:29,902
 Para descargarlo:
 
-58
-00:02:11,802 --> 00:02:15,057
+39
+00:01:29,922 --> 00:01:33,177
 el título de cada capítulo es el MP3 en alta
 
-59
-00:02:15,077 --> 00:02:16,763
+40
+00:01:33,197 --> 00:01:34,883
 calidad; «Whole book»,
 
-60
-00:02:16,783 --> 00:02:18,491
+41
+00:01:34,903 --> 00:01:36,611
 el libro entero en un ZIP;
 
-61
-00:02:18,511 --> 00:02:20,918
+42
+00:01:36,631 --> 00:01:39,038
 y muchos tienen un M4B:
 
-62
-00:02:20,938 --> 00:02:22,545
+43
+00:01:39,058 --> 00:01:40,665
 un archivo de audiolibro,
 
-63
-00:02:22,565 --> 00:02:25,318
+44
+00:01:40,685 --> 00:01:43,438
 con capítulos, que recuerda por dónde vas.
 
-64
-00:02:25,338 --> 00:02:26,838
+45
+00:01:43,458 --> 00:01:44,958
 Y sin restricciones:
 
-65
-00:02:26,858 --> 00:02:27,898
+46
+00:01:44,978 --> 00:01:46,018
 son tuyos.
 
-66
-00:02:28,240 --> 00:02:29,202
+47
+00:01:46,360 --> 00:01:47,322
 ¿Y en el móvil?
 
-67
-00:02:29,222 --> 00:02:31,598
+48
+00:01:47,342 --> 00:01:49,718
 LibriVox no tiene app oficial:
 
-68
-00:02:31,618 --> 00:02:33,834
+49
+00:01:49,738 --> 00:01:51,954
 su único canal oficial es la web.
 
-69
-00:02:33,854 --> 00:02:36,606
+50
+00:01:51,974 --> 00:01:54,726
 El truco está en el botón «RSS»:
 
-70
-00:02:36,626 --> 00:02:39,608
+51
+00:01:54,746 --> 00:01:57,728
 copia el enlace y pégalo en tu app de pódcasts.
 
-71
-00:02:39,708 --> 00:02:42,204
+52
+00:01:57,828 --> 00:02:00,324
 Cada capítulo aparece como un episodio,
 
-72
-00:02:42,224 --> 00:02:45,200
+53
+00:02:00,344 --> 00:02:03,320
 y puedes descargarlo para escucharlo sin conexión.
 
-73
-00:02:45,220 --> 00:02:46,637
+54
+00:02:03,340 --> 00:02:04,757
 Y si prefieres una app,
 
-74
-00:02:46,657 --> 00:02:49,552
+55
+00:02:04,777 --> 00:02:07,672
 hay varias gratuitas, de otros desarrolladores,
 
-75
-00:02:49,572 --> 00:02:51,040
+56
+00:02:07,692 --> 00:02:09,160
 con todo su catálogo.
+
+57
+00:02:09,500 --> 00:02:10,812
+¿Y por qué es legal?
+
+58
+00:02:10,832 --> 00:02:12,740
+Porque solo graban libros sin derechos de
+
+59
+00:02:12,789 --> 00:02:14,407
+autor en Estados Unidos:
+
+60
+00:02:14,427 --> 00:02:17,464
+los publicados hace 95 años o más.
+
+61
+00:02:17,484 --> 00:02:19,502
+Así que aquí no hay novedades,
+
+62
+00:02:19,522 --> 00:02:20,790
+hay clásicos.
+
+63
+00:02:20,840 --> 00:02:23,138
+Muchos: más de 21.000,
+
+64
+00:02:23,158 --> 00:02:24,706
+en decenas de idiomas.
+
+65
+00:02:24,726 --> 00:02:26,226
+El español es el cuarto,
+
+66
+00:02:26,246 --> 00:02:29,786
+con más de 1.000 obras y más de 3.500 horas:
+
+67
+00:02:29,806 --> 00:02:31,746
+el Quijote, el Lazarillo,
+
+68
+00:02:31,766 --> 00:02:34,106
+La Regenta, Fortunata y Jacinta,
+
+69
+00:02:34,126 --> 00:02:35,506
+las Leyendas de Bécquer…
+
+70
+00:02:35,840 --> 00:02:38,439
+Eso sí: LibriVox sigue la ley de Estados
+
+71
+00:02:38,459 --> 00:02:41,274
+Unidos, y te pide comprobar la de tu país.
+
+72
+00:02:41,294 --> 00:02:44,072
+En España, la mayoría de sus clásicos también
+
+73
+00:02:44,092 --> 00:02:46,203
+son libres, pero no todos:
+
+74
+00:02:46,223 --> 00:02:47,988
+«Platero y yo», por ejemplo,
+
+75
+00:02:48,008 --> 00:02:50,846
+aquí no lo será hasta 2039.
 
 76
 00:02:51,380 --> 00:02:52,392

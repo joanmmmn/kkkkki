@@ -8,6 +8,7 @@ const PROXY = Boolean((getInputProps() as { proxy?: boolean }).proxy);
 import { color, font } from '../brand/tokens';
 import { keyframes, Key, easeInOut, easeOut } from '../lib/anim';
 import { Cursor, CursorPoint, cursorAt } from './Cursor';
+import { CamPoint, softCamera, softSpring, useMotion } from '../lib/motion';
 import home from '../../public/elt/rec/01_home/meta.json';
 import search from '../../public/elt/rec/02_search/meta.json';
 import reader from '../../public/elt/rec/03_reader/meta.json';
@@ -43,9 +44,11 @@ export const ScreenClip: React.FC<{
   const [vw, vh] = viewport;
   const height = (width * vh) / vw;
   const k = width / vw;
-  const zoom = keyframes(frame, camera, 'zoom', easeInOut);
-  const fx = keyframes(frame, camera, 'x', easeInOut);
-  const fy = keyframes(frame, camera, 'y', easeInOut);
+  const { soft } = useMotion();
+  const cam = soft ? softCamera(frame, camera as CamPoint[], { vw, vh, ph: vh }, fps) : null;
+  const zoom = cam ? cam.zoom : keyframes(frame, camera, 'zoom', easeInOut);
+  const fx = cam ? cam.x : keyframes(frame, camera, 'x', easeInOut);
+  const fy = cam ? cam.y : keyframes(frame, camera, 'y', easeInOut);
   let tx = width / 2 - fx * k * zoom;
   let ty = height / 2 - fy * k * zoom;
   tx = Math.min(0, Math.max(width - width * zoom, tx));
@@ -85,19 +88,25 @@ const OUT = 9;     // salida
 // Marco amarillo en coordenadas de pantalla: trazo constante que se dibuja, foco suave alrededor y etiqueta opcional.
 export const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimTo?: number }> = ({ marks, frame, width, height, map, scale, dimTo = 0.5 }) => {
   const id = React.useId().replace(/:/g, '');
-  const list = marks.filter((m) => m.to - m.from > 12).sort((a, b) => a.from - b.from);
+  // Modo suave: el marco se desliza, se dibuja y se va más despacio, y la etiqueta entra sin rebote.
+  const { soft } = useMotion();
+  const MOVE_ = soft ? 22 : MOVE, DRAW_ = soft ? 20 : DRAW, OUT_ = soft ? 14 : OUT, DIM_ = soft ? 18 : 12;
+  const raw = marks.filter((m) => m.to - m.from > 12).sort((a, b) => a.from - b.from);
+  // Modo suave: una marca encadenada dura hasta que empieza la siguiente. Sin esto, en los fotogramas que hay entre las dos
+  // no se dibuja nada y el foco oscuro parpadea.
+  const list = soft ? raw.map((m, k) => { const nx = raw[k + 1]; return nx && nx.from > m.to && nx.from - m.to <= CHAIN ? { ...m, to: nx.from } : m; }) : raw;
   const i = list.findIndex((m) => frame >= m.from && frame < m.to);
   if (i < 0) return null;
   const m = list[i];
   const prev = i > 0 && m.from - list[i - 1].to <= CHAIN ? list[i - 1] : null;
   const next = i < list.length - 1 && list[i + 1].from - m.to <= CHAIN ? list[i + 1] : null;
   // Geometría (CSS del viewport grabado), deslizándose desde la marca anterior si van encadenadas.
-  const mv = prev ? interpolate(frame, [m.from, m.from + MOVE], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeInOut }) : 1;
+  const mv = prev ? interpolate(frame, [m.from, m.from + MOVE_], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeInOut }) : 1;
   const g = { x: lerp(prev?.x ?? m.x, m.x, mv), y: lerp(prev?.y ?? m.y, m.y, mv), w: lerp(prev?.w ?? m.w, m.w, mv), h: lerp(prev?.h ?? m.h, m.h, mv), r: lerp(prev?.r ?? m.r ?? 14, m.r ?? 14, mv) };
   const chainStart = (() => { let j = i; while (j > 0 && list[j].from - list[j - 1].to <= CHAIN) j--; return list[j].from; })();
-  const draw = interpolate(frame, [chainStart, chainStart + DRAW], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeOut });
-  const dim = interpolate(frame, [chainStart, chainStart + 12], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeOut });
-  const out = next ? 0 : interpolate(frame, [m.to - OUT, m.to], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeInOut });
+  const draw = interpolate(frame, [chainStart, chainStart + DRAW_], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeOut });
+  const dim = interpolate(frame, [chainStart, chainStart + DIM_], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeOut });
+  const out = next ? 0 : interpolate(frame, [m.to - OUT_, m.to], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeInOut });
   const pad = 6 * (1 - draw) + 6 * out;
   const [x0, y0] = map(g.x - pad, g.y - pad);
   const [x1, y1] = map(g.x + g.w + pad, g.y + g.h + pad);
@@ -106,8 +115,9 @@ export const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; 
   const stroke = 4.5;
   const alpha = 1 - out;
   const label = m.label;
-  const below = m.labelBelow || y0 < 70;
-  const lIn = label ? spring({ frame: frame - (prev && prev.label !== label ? m.from + 4 : Math.max(chainStart + 8, m.from)), fps: 50, config: { damping: 16, stiffness: 200 } }) : 0;
+  // Modo suave: si la marca fija el lado de la etiqueta, se respeta aunque la cámara se mueva (no salta de arriba abajo).
+  const below = soft && m.labelBelow !== undefined ? m.labelBelow : m.labelBelow || y0 < 70;
+  const lIn = label ? (soft ? softSpring : spring)({ frame: frame - (prev && prev.label !== label ? m.from + 4 : Math.max(chainStart + 8, m.from)), fps: 50, config: soft ? { damping: 22, stiffness: 160 } : { damping: 16, stiffness: 200 } }) : 0;
   return (
     <AbsoluteFill style={{ pointerEvents: 'none' }}>
       <svg width={width} height={height} style={{ position: 'absolute', inset: 0 }}>
@@ -124,7 +134,7 @@ export const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; 
           strokeDasharray={perim} strokeDashoffset={perim * (1 - draw)} opacity={alpha} filter={`url(#g${id})`} />
       </svg>
       {label && lIn > 0.01 && (
-        <div style={{ position: 'absolute', left: Math.max(14, Math.min(x0, width - 420)), top: (below ? y1 + 12 : y0 - 12), transform: `translateY(${below ? 0 : -100}%) scale(${0.6 + 0.4 * lIn})`, transformOrigin: below ? 'left top' : 'left bottom', opacity: lIn * alpha,
+        <div style={{ position: 'absolute', left: Math.max(14, Math.min(x0, width - 420)), top: (below ? y1 + 12 : y0 - 12), transform: `translateY(${below ? 0 : -100}%) scale(${soft ? 0.85 + 0.15 * lIn : 0.6 + 0.4 * lIn})`, transformOrigin: below ? 'left top' : 'left bottom', opacity: lIn * alpha,
           padding: '8px 20px', borderRadius: 999, background: color.yellow, color: color.ink, fontFamily: font.sans, fontWeight: 700, fontSize: 30, whiteSpace: 'nowrap', boxShadow: '0 10px 30px rgba(0,0,0,0.35)', display: 'flex', alignItems: 'center', gap: 10 }}>
           {m.icon}{label}
         </div>

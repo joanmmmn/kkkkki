@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { createContext, useContext } from 'react';
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { color } from '../brand/tokens';
 import { loadBrandFonts } from '../brand/fonts';
 
 loadBrandFonts();
 
+// Fondo compartido: si un vídeo dibuja un solo fondo continuo para todas sus escenas (el de LibriVox), cada escena pone
+// solo su contenido. Así los fundidos entre escenas no duplican los halos ni la retícula, que tampoco vuelven a empezar.
+export const StageBgContext = createContext(false);
+
 // Fondo de marca vivo: degradado cálido, dos halos amarillos que derivan despacio, retícula de puntos con paralaje y viñeta.
 export const Stage: React.FC<{ children?: React.ReactNode; tone?: 'light' | 'night' | 'warm'; still?: boolean }> = ({ children, tone = 'light', still = false }) => {
   const frame = useCurrentFrame();
+  const shared = useContext(StageBgContext);
+  if (shared) return <AbsoluteFill>{children}</AbsoluteFill>;
   const t = still ? 0 : frame / 50;
   const night = tone === 'night';
   const bg = night

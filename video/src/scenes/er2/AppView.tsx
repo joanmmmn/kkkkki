@@ -5,10 +5,13 @@ import { keyframes, easeInOut, clamp, easeOut } from '../../lib/anim';
 import { Cursor, CursorPoint, cursorAt } from '../../components/Cursor';
 import { CamKey, Mark, MarkLayer } from '../../components/ScreenClip';
 import { BrowserWindow } from '../../components/BrowserWindow';
+import { CamPoint, softCamera, useMotion } from '../../lib/motion';
 
 // Estado de la app: imagen 4K (réplica de ElevenReader) que se muestra desde el fotograma `at` de la escena.
 // `fade`: fotogramas de fundido desde el estado anterior (0 = corte seco, como un cambio real de la interfaz).
-export type St = { at: number; src: string; fade?: number };
+// `scroll`: el estado es el anterior desplazado `scroll` píxeles CSS hacia abajo; en lugar de fundirse, la página
+// se desplaza de verdad durante `fade` fotogramas (las dos capturas casan píxel a píxel mientras se mueven).
+export type St = { at: number; src: string; fade?: number; scroll?: number };
 export const st = (name: string) => `er/app/st/${name}.png`;
 export const app = (name: string) => `er/app/${name}.png`;
 
@@ -29,9 +32,12 @@ export const AppView: React.FC<{
   const [vw, vh] = viewport;
   const height = (width * vh) / vw;
   const k = width / vw;
-  const zoom = keyframes(frame, camera, 'zoom', easeInOut);
-  const fx = keyframes(frame, camera, 'x', easeInOut);
-  const fy = keyframes(frame, camera, 'y', easeInOut);
+  // Modo suave (vídeo de LibriVox): zoom logarítmico, curva seno, fotogramas clave dentro de los bordes y muelle que sigue al recorrido.
+  const { soft } = useMotion();
+  const cam = soft ? softCamera(frame, camera as CamPoint[], { vw, vh, ph: imgHeight ?? vh }, fps) : null;
+  const zoom = cam ? cam.zoom : keyframes(frame, camera, 'zoom', easeInOut);
+  const fx = cam ? cam.x : keyframes(frame, camera, 'x', easeInOut);
+  const fy = cam ? cam.y : keyframes(frame, camera, 'y', easeInOut);
   // Imagen más alta que la ventana (página larga): la cámara puede recorrerla en vertical.
   const ih = imgHeight ? imgHeight * k : height;
   let tx = width / 2 - fx * k * zoom;
@@ -42,13 +48,17 @@ export const AppView: React.FC<{
   const s = states[i];
   const prev = i > 0 ? states[i - 1] : null;
   const fade = s.fade ?? 0;
-  const pf = prev && fade > 0 ? interpolate(frame, [s.at, s.at + fade], [1, 0], { ...clamp, easing: easeInOut }) : 0;
+  const pf = prev && fade > 0 && !s.scroll ? interpolate(frame, [s.at, s.at + fade], [1, 0], { ...clamp, easing: easeInOut }) : 0;
+  // Desplazamiento real entre dos capturas de la misma página (0 → 1).
+  const sp = prev && s.scroll && fade > 0 ? interpolate(frame, [s.at, s.at + fade], [0, 1], { ...clamp, easing: easeInOut }) : 1;
+  const scrolling = !!prev && !!s.scroll && sp < 1;
   const t = frame / fps;
   const c = cursorAt(cursor, t);
   return (
     <div style={{ width, height, overflow: 'hidden', position: 'relative', background: '#fff' }}>
       <div style={{ position: 'absolute', left: 0, top: 0, width, height: ih, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${zoom})` }}>
-        <Img src={staticFile(s.src)} style={{ position: 'absolute', left: 0, top: 0, width, height: ih, display: 'block' }} />
+        {scrolling && prev && <Img src={staticFile(prev.src)} style={{ position: 'absolute', left: 0, top: -(s.scroll ?? 0) * sp * k, width, height: ih, display: 'block' }} />}
+        <Img src={staticFile(s.src)} style={{ position: 'absolute', left: 0, top: scrolling ? (s.scroll ?? 0) * (1 - sp) * k : 0, width, height: ih, display: 'block' }} />
         {prev && pf > 0.001 && <Img src={staticFile(prev.src)} style={{ position: 'absolute', left: 0, top: 0, width, height: ih, display: 'block', opacity: pf }} />}
         {overlay && (
           <div style={{ position: 'absolute', left: 0, top: 0, width: vw, height: ih / k, transformOrigin: '0 0', transform: `scale(${k})` }}>

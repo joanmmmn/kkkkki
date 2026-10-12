@@ -544,11 +544,37 @@ $$('[data-more]').forEach((box) => {
   const dlg = $('[data-lightbox]');
   if (!dlg || !dlg.showModal) return;
   const img = $('img', dlg), cap = $('p', dlg), full = $('[data-lightbox-open]', dlg);
-  const open = (src, alt) => { img.src = src; img.alt = alt; cap.textContent = alt; if (full) full.href = src; dlg.showModal(); $('.lv-lightbox__img', dlg)?.scrollTo(0, 0); };
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  let timer = 0, seq = 0;
+  // El fondo se oscurece enseguida; la captura entra con un fundido y un zoom suaves cuando ya está decodificada (como
+  // mucho, a los 600 ms), y al cerrar se va igual. `seq` anula una apertura pendiente si se cierra antes de que acabe.
+  const open = (src, alt) => {
+    clearTimeout(timer);
+    const id = ++seq;
+    dlg.classList.remove('is-open');
+    img.src = src; img.alt = alt; cap.textContent = alt; if (full) full.href = src;
+    if (!dlg.open) dlg.showModal();
+    $('.lv-lightbox__img', dlg)?.scrollTo(0, 0);
+    requestAnimationFrame(() => { if (id === seq && dlg.open) dlg.classList.add('is-shown'); });
+    const ready = img.decode ? img.decode().catch(() => {}) : Promise.resolve();
+    Promise.race([ready, new Promise((r) => setTimeout(r, 600))]).then(() => requestAnimationFrame(() => {
+      if (id === seq && dlg.open) dlg.classList.add('is-open');
+    }));
+  };
+  const close = () => {
+    if (!dlg.open) return;
+    seq++;
+    dlg.classList.remove('is-open', 'is-shown');
+    clearTimeout(timer);
+    timer = setTimeout(() => dlg.close(), reduce.matches ? 0 : 320);
+  };
   $$('[data-zoom]').forEach((b) => b.addEventListener('click', () => { const s = $('img', b); open(s.currentSrc || s.src, s.alt); }));
   $$('[data-zoom-src]').forEach((b) => b.addEventListener('click', () => open(b.dataset.zoomSrc, b.dataset.zoomAlt || '')));
-  $('[data-lightbox-close]', dlg).addEventListener('click', () => dlg.close());
-  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  $('[data-lightbox-close]', dlg).addEventListener('click', close);
+  // Un clic en el fondo cierra, pero no mientras la captura aún está entrando (evita cerrarla con un doble clic).
+  dlg.addEventListener('click', (e) => { if (e.target === dlg && dlg.classList.contains('is-open')) close(); });
+  dlg.addEventListener('cancel', (e) => { e.preventDefault(); close(); });
+  dlg.addEventListener('close', () => { clearTimeout(timer); seq++; dlg.classList.remove('is-open', 'is-shown'); });
 })();
 
 /* ---------- Vídeo de YouTube (se carga solo al pulsar) ---------- */
@@ -560,7 +586,7 @@ $$('[data-yt]').forEach((a) => {
     e.preventDefault();
     const f = document.createElement('iframe');
     f.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
-    f.title = 'LibriVox: audiolibros gratis y legales. Guía de SonorBooks';
+    f.title = 'Cómo usar LibriVox: audiolibros gratis y legales en español. Guía de SonorBooks';
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     f.allowFullscreen = true;
     const box = Object.assign(document.createElement('div'), { className: 'lv-video' });

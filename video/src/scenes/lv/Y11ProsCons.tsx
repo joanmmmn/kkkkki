@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { CheckIcon, CrossIcon } from '../../components/Icons';
@@ -14,7 +15,7 @@ const Item: React.FC<{ ok: boolean; text: string; sub?: string; at: number }> = 
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - at, fps, config: { damping: 15, stiffness: 180 } });
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '17px 0', borderBottom: `1px solid ${color.line}`, opacity: s, transform: `translateX(${(1 - s) * (ok ? -40 : 40)}px)`, filter: `blur(${(1 - s) * 6}px)` }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '17px 0', borderBottom: `1px solid ${color.line}`, opacity: s, transform: `translateX(${(1 - s) * (ok ? -28 : 28)}px)`, filter: s < 0.99 ? `blur(${(1 - s) * 3}px)` : undefined }}>
       <div style={{ transform: `scale(${s}) rotate(${(1 - s) * -40}deg)`, flexShrink: 0 }}>{ok ? <CheckIcon size={50} /> : <CrossIcon size={50} />}</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         <div style={{ fontFamily: font.sans, fontSize: 42, fontWeight: 500, lineHeight: 1.12 }}>{text}</div>

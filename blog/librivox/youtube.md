@@ -1,27 +1,27 @@
 # YouTube — LibriVox (qué es y cómo usarlo)
 
 ## Título (elige uno)
-1. **LibriVox: 21.000 audiolibros GRATIS y legales (leídos por personas)** ← recomendado
-2. LibriVox en español: qué es, cómo usarlo y cómo descargar audiolibros GRATIS
-3. Audiolibros GRATIS y legales: así funciona LibriVox (guía 2026)
+1. **Cómo usar LibriVox: audiolibros GRATIS y legales en español** ← recomendado (responde a quien busca cómo funciona)
+2. LibriVox: qué es y cómo usarlo (audiolibros gratis, guía 2026)
+3. Audiolibros GRATIS y legales: así funciona LibriVox, paso a paso
 
 ## Descripción
 
 ```
-📖 La guía completa, con capturas y fuentes: https://sonorbooks.com/es/blog/librivox-resena/
+📖 La guía completa, paso a paso: https://sonorbooks.com/es/blog/librivox-resena/
 🎧 LibriVox: https://librivox.org (gratis y sin registro)
 
-¿Audiolibros gratis, legales y leídos por personas? Existen: LibriVox es un proyecto sin ánimo de lucro con más de 21.000 clásicos de dominio público, grabados por voluntarios de todo el mundo. Te contamos qué es, por qué es legal (y qué mirar en España), cómo encontrar los libros en español, cómo escucharlos y descargarlos en MP3 o M4B, el truco para oírlos en el móvil sin app oficial, cómo suenan sus voluntarios… y cómo grabar uno tú.
+Cómo usar LibriVox paso a paso: cómo buscar audiolibros en español, cómo escucharlos en la web, cómo descargarlos en MP3, ZIP o M4B y el truco para oírlos en el móvil sin app oficial. LibriVox es un proyecto sin ánimo de lucro con más de 21.000 clásicos de dominio público, gratis y leídos por voluntarios de todo el mundo. También te contamos por qué es legal (y qué mirar en España), cómo suenan sus voluntarios… y cómo grabar uno tú.
 
 ⏱️ Capítulos
 0:00 Audiolibros gratis, leídos por personas
 0:20 Lo que vas a ver
 0:36 Qué es LibriVox
-1:03 ¿Por qué es legal? El catálogo
-1:29 Ojo en España
-1:45 Cómo buscar libros en español
-2:02 Escuchar y descargar: MP3, ZIP y M4B
-2:28 En el móvil: el truco del RSS
+1:03 Cómo buscar libros en español
+1:20 Escuchar y descargar: MP3, ZIP y M4B
+1:46 En el móvil: el truco del RSS
+2:09 ¿Por qué es legal? El catálogo
+2:36 Ojo en España
 2:51 Las voces de los voluntarios
 3:14 Graba tú: cómo ser voluntario
 3:34 Lo mejor y lo peor
@@ -45,7 +45,7 @@ Música original compuesta para SonorBooks.
 ```
 
 ## Etiquetas
-LibriVox, LibriVox español, LibriVox cómo usar, LibriVox app, audiolibros gratis, audiolibros gratis en español, audiolibros legales, descargar audiolibros gratis, audiolibros MP3, audiolibros dominio público, clásicos en audio, Leyendas de Bécquer audiolibro, voluntarios LibriVox, sonorbooks
+cómo usar LibriVox, cómo funciona LibriVox, LibriVox, LibriVox español, LibriVox app, audiolibros gratis, audiolibros gratis en español, audiolibros legales, descargar audiolibros gratis, audiolibros MP3, audiolibros dominio público, clásicos en audio, Leyendas de Bécquer audiolibro, voluntarios LibriVox, sonorbooks
 
 ## Al subir
 - **No** marcar «Incluye promoción pagada»: no hay enlace de afiliado (LibriVox es gratis y no hay relación comercial).

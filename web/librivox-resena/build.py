@@ -79,7 +79,7 @@ def data_json(a, page):
 
 def jsonld():
     graph = [
-        {'@type': 'Review', '@id': URL + '#review', 'url': URL, 'name': 'LibriVox: audiolibros gratis, legales y leídos por personas',
+        {'@type': 'Review', '@id': URL + '#review', 'url': URL, 'name': 'LibriVox: qué es y cómo usarlo',
          'image': 'https://sonorbooks.com' + PROD_A + '/media/librivox-resena-og.jpg',
          'inLanguage': 'es-ES', 'datePublished': '2026-10-12', 'dateModified': '2026-10-12',
          'author': {'@type': 'Organization', 'name': 'Equipo editorial SonorBooks', 'url': 'https://sonorbooks.com/es/blog/criterios-editoriales/'},
@@ -102,9 +102,9 @@ def jsonld():
     if YT:  # el vídeo, para que Google lo asocie a la página (se carga al pulsar, sin iframe en el HTML)
         import datetime
         fecha = YT_FECHA or datetime.date.today().isoformat()
-        graph.append({'@type': 'VideoObject', '@id': URL + '#video', 'name': 'LibriVox: audiolibros gratis y legales, leídos por personas',
-                      'description': 'Qué es LibriVox, por qué es legal, cómo encontrar audiolibros en español, cómo escucharlos y descargarlos '
-                                     '(también en el móvil), cómo suenan sus voluntarios, lo mejor y lo peor.',
+        graph.append({'@type': 'VideoObject', '@id': URL + '#video', 'name': 'Cómo usar LibriVox: audiolibros gratis y legales en español',
+                      'description': 'Cómo usar LibriVox paso a paso: qué es, cómo buscar audiolibros en español, cómo escucharlos y descargarlos '
+                                     '(también en el móvil), por qué es legal, cómo suenan sus voluntarios, lo mejor y lo peor.',
                       'thumbnailUrl': [f'https://i.ytimg.com/vi/{YT}/maxresdefault.jpg', 'https://sonorbooks.com' + PROD_A + '/media/librivox-resena-og.jpg'],
                       'uploadDate': fecha + 'T12:00:00+02:00', 'duration': VIDEO_DURATION, 'inLanguage': 'es-ES',
                       'embedUrl': f'https://www.youtube.com/embed/{YT}',

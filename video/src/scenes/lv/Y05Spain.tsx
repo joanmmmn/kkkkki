@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -8,7 +9,7 @@ import { Highlight } from '../../components/Highlight';
 import { CheckIcon, CrossIcon } from '../../components/Icons';
 import { LogoIcon } from '../../components/Logo';
 import { Sfx } from '../../components/Sfx';
-import { clamp, easeOut } from '../../lib/anim';
+import { clamp, easeInOut } from '../../lib/anim';
 import { B, Cover, CropLv } from './common';
 import { w } from './timeline';
 
@@ -34,7 +35,7 @@ export const Y05Spain: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
   const nS = spring({ frame: frame - fNo + 2, fps, config: { damping: 13, stiffness: 190 } });
   const cS = spring({ frame: frame - fPlat - 4, fps, config: { damping: 14, stiffness: 140 } });
   const yr = spring({ frame: frame - f2039, fps, config: { damping: 11, stiffness: 190 } });
-  const flip = interpolate(frame, [f2039 - 6, f2039 + 6], [0, 1], { ...clamp, easing: easeOut });
+  const flip = interpolate(frame, [f2039 + 6, f2039 + 30], [0, 1], { ...clamp, easing: easeInOut });
   return (
     <Stage tone="warm">
       <Phase from={0} to={fEsp}>
@@ -73,7 +74,7 @@ export const Y05Spain: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fPlat} to={dur} out={6}>
+      <Phase from={fPlat} to={dur} hold>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 80 }}>
           <div style={{ opacity: cS, transform: `translateY(${(1 - cS) * 80}px) rotate(${-4 + (1 - cS) * -8}deg)` }}><Cover id="9920" size={420} /></div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 22, fontFamily: font.sans }}>

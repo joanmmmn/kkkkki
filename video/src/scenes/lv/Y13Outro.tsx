@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -49,7 +50,7 @@ export const Y13Outro: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fTu} to={dur} out={1}>
+      <Phase from={fTu} to={dur} hold>
         {/* Bloque de marca en la mitad superior: la inferior queda libre para la pantalla final de YouTube. */}
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'flex-start', paddingTop: 170, flexDirection: 'column', gap: 34, background: '#fff' }}>
           <Logo size={150} animate={false} />

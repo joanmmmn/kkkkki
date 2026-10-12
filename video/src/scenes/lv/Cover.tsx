@@ -38,17 +38,12 @@ const Design: React.FC = () => (
       <span style={{ fontSize: 60, letterSpacing: -2, marginTop: 2 }}>21.000</span>
       <span style={{ fontSize: 30, marginTop: 4 }}>libros</span>
     </div>
-    {/* Voz humana (en la miniatura de ElevenReader ponía «Voz con IA») */}
-    <div style={{ position: 'absolute', left: 742, top: 566, display: 'flex', alignItems: 'center', gap: 14, background: color.ink, borderRadius: 999, padding: '12px 28px 12px 14px', boxShadow: '0 18px 40px rgba(0,0,0,0.35)', transform: 'rotate(-3deg)' }}>
+    {/* Paso a paso: el vídeo enseña a usarlo (antes ponía «Voz humana») */}
+    <div style={{ position: 'absolute', left: 760, top: 562, display: 'flex', alignItems: 'center', gap: 16, background: color.ink, borderRadius: 999, padding: '12px 34px 12px 14px', boxShadow: '0 18px 40px rgba(0,0,0,0.35)', transform: 'rotate(-3deg)' }}>
       <div style={{ width: 52, height: 52, borderRadius: 26, background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <svg width="30" height="30" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill={color.ink} /><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" stroke={color.ink} strokeWidth="2" fill="none" strokeLinecap="round" /></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24"><path d="M6 3.5v15.2l4.1-3.9 2.7 6.2 2.6-1.1-2.7-6.1 5.6-.2z" fill={color.ink} stroke={color.ink} strokeWidth="1.2" strokeLinejoin="round" /></svg>
       </div>
-      <span style={{ color: '#fff', fontWeight: 700, fontSize: 34 }}>Voz humana</span>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 5, height: 40 }}>
-        {[0.35, 0.7, 0.5, 0.95, 0.6, 0.8, 0.4, 1, 0.55].map((v, i) => (
-          <div key={i} style={{ width: 6, height: 8 + v * 30, borderRadius: 3, background: color.yellow }} />
-        ))}
-      </div>
+      <span style={{ color: '#fff', fontWeight: 700, fontSize: 36 }}>Paso a paso</span>
     </div>
     {/* Marca */}
     <div style={{ position: 'absolute', left: 60, top: 46, display: 'flex', alignItems: 'center', gap: 16 }}>

@@ -35,13 +35,16 @@ const SYNC: Partial<Record<SfxName, number>> = {
 // Si no hay proveedor, los efectos suenan como siempre (otros vídeos del repositorio no cambian).
 export type SfxBus = { gain: number; duck: (absFrame: number) => number };
 export const SfxBusContext = createContext<SfxBus | null>(null);
+// Dentro de una copia congelada de una escena (fundidos entre escenas), los efectos no deben volver a sonar.
+export const SfxMuteContext = createContext(false);
 
 // Efecto de sonido cuyo golpe cae en el fotograma `at`; `volume` es relativo a la ganancia de mezcla del efecto.
 export const Sfx: React.FC<{ name: SfxName; at: number; volume?: number; trimAfter?: number }> = ({ name, at, volume = 1, trimAfter }) => {
   const { fps } = useVideoConfig();
   const bus = useContext(SfxBusContext);
   const seq = useContext(Internals.SequenceContext);
-  if (STEM && STEM !== 'sfx') return null;
+  const muted = useContext(SfxMuteContext);
+  if (muted || (STEM && STEM !== 'sfx')) return null;
   const start = Math.round(at - (SYNC[name] ?? 0) * fps);
   const trimBefore = start < 0 ? -start : undefined;
   const base = (seq ? seq.cumulatedFrom + seq.relativeFrom : 0) + Math.max(0, start);

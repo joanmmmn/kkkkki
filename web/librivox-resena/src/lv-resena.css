@@ -302,10 +302,10 @@
 .lv-card__a { margin-top: 6px; font: 400 14px/1.35 var(--sans); color: #463f34; }
 .lv-card__a span { display: block; margin-top: 1px; font-size: 12.5px; color: #6b6352; }
 .lv-stamp { position: absolute; right: 16px; top: 50%; display: grid; justify-items: center; gap: 3px; padding: 7px 11px 6px; border: 2.5px solid #b3362b; border-radius: 7px; color: #b3362b;
-  transform: translateY(-50%) rotate(-8deg); opacity: .9; mix-blend-mode: multiply; font-family: var(--sans); transition: transform .45s cubic-bezier(.3, 1.6, .5, 1), opacity .25s; }
+  transform: translateY(-50%) rotate(-8deg); opacity: .9; mix-blend-mode: multiply; font-family: var(--sans); transition: transform .7s cubic-bezier(.22, 1, .36, 1), opacity .45s ease-out; }
 .lv-stamp small { font: 700 9.5px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
 .lv-stamp b { font: 700 26px/1 var(--sans); letter-spacing: .01em; font-variant-numeric: tabular-nums; }
-.lv-cards.is-pending .lv-stamp { opacity: 0; transform: translateY(-50%) rotate(-14deg) scale(1.6); }
+.lv-cards.is-pending .lv-stamp { opacity: 0; transform: translateY(-50%) rotate(-13deg) scale(1.22); }
 
 /* ---------- Catálogo: los idiomas de LibriVox ---------- */
 .lvx-langs { margin: 0; }
@@ -324,6 +324,36 @@
 .lvx-langs__list li.is-es i::after { background: var(--yellow-deep); }
 .lvx-langs__list.is-pending i::after { transform: scaleX(0); }
 .lvx-langs figcaption { margin-top: 12px; }
+
+/* ---------- Cómo funciona, en cuatro pasos: un recorrido con cuatro paradas, unidas por una línea de puntos ---------- */
+.lv .lv-sec.lv-how > * + * { margin-top: 40px; }
+.lv-how__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin: 0; padding: 0; list-style: none; counter-reset: how; }
+.lv-how__list li { position: relative; display: flex; flex-direction: column; align-items: flex-start; padding-top: 60px; counter-increment: how; font-family: var(--sans); }
+.lv-how__list li::before { content: counter(how); position: absolute; left: 0; top: 0; z-index: 1; width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--yellow); border: 2px solid var(--ink); font: 700 18px/1 var(--sans); color: var(--ink); }
+.lv-how__list li::after { content: ""; position: absolute; left: 54px; right: -20px; top: 20px; height: 2px; background: repeating-linear-gradient(90deg, #b9b2a2 0 6px, transparent 6px 12px); }
+.lv-how__list li:last-child::after { display: none; }
+.lv .lv-how__list h3 { font-size: 1.14rem; line-height: 1.3; letter-spacing: -.012em; }
+.lv-how__list p { margin-top: 8px; font: 400 15px/1.62 var(--sans); color: var(--ink-2); }
+.lv-how__list a { display: inline-block; margin-top: auto; padding-top: 10px; font: 700 14.5px/1.4 var(--sans); color: var(--link); text-decoration: underline; text-decoration-color: rgba(183, 51, 18, .4); text-underline-offset: 3px; }
+.lv-how__list a:hover { text-decoration-color: currentColor; }
+@media (max-width: 900px) {
+  .lv-how__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 32px; }
+  .lv-how__list li:nth-child(2)::after { display: none; }
+}
+@media (max-width: 720px) {
+  .lv .lv-sec.lv-how > * + * { margin-top: 32px; }
+}
+@media (max-width: 560px) {
+  .lv .lv-sec.lv-how > * + * { margin-top: 30px; }
+  .lv-how__list { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .lv-how__list li { padding: 0 0 28px 60px; }
+  .lv .lv-how__list h3 { padding-top: 9px; }
+  .lv-how__list a { margin-top: 0; }
+  .lv-how__list li:last-child { padding-bottom: 0; }
+  .lv-how__list li::after, .lv-how__list li:nth-child(2)::after { display: block; left: 20px; right: auto; top: 50px; bottom: 6px; width: 2px; height: auto; background: repeating-linear-gradient(180deg, #b9b2a2 0 6px, transparent 6px 12px); }
+  .lv-how__list li:last-child::after { display: none; }
+}
 
 /* ---------- Cómo buscar: los pasos, a la izquierda; el catálogo recreado, a la derecha ---------- */
 .lv-guide { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px 48px; align-items: start; }
@@ -655,7 +685,10 @@
 
 /* Visor de capturas */
 .lv-lightbox { max-width: min(1400px, 94vw); max-height: 92vh; padding: 0; border: 0; background: transparent; overflow: visible; }
-.lv-lightbox::backdrop { background: rgba(16, 16, 16, .82); backdrop-filter: blur(3px); }
+.lv-lightbox::backdrop { background: rgba(16, 16, 16, .82); backdrop-filter: blur(3px); opacity: 0; transition: opacity .32s ease-out; }
+.lv-lightbox > * { opacity: 0; transform: translateY(10px) scale(.97); transition: opacity .32s ease-out, transform .45s cubic-bezier(.22, 1, .36, 1); }
+.lv-lightbox.is-shown::backdrop { opacity: 1; }
+.lv-lightbox.is-open > * { opacity: 1; transform: none; }
 .lv-lightbox img { max-width: 100%; max-height: 86vh; border-radius: 12px; background: #fff; box-shadow: 0 30px 80px rgba(0, 0, 0, .5); }
 .lv-lightbox__open { display: none; }
 .lv-lightbox p { margin-top: 10px; color: #fff; font: 400 14px/1.5 var(--sans); text-align: center; }
@@ -683,7 +716,7 @@
   .lv-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lv-card { padding-right: 18px; padding-bottom: 72px; }
   .lv-stamp { top: auto; bottom: 14px; transform: rotate(-8deg); }
-  .lv-cards.is-pending .lv-stamp { transform: rotate(-14deg) scale(1.6); }
+  .lv-cards.is-pending .lv-stamp { transform: rotate(-13deg) scale(1.22); }
   .lv-dl__panel { transform: none; }
   .lv-dl__panel::before { display: none; }
   .lvx-side { max-width: 460px; }
@@ -760,7 +793,7 @@
   .lv-cards { grid-template-columns: minmax(0, 1fr); }
   .lv-card { min-height: 104px; padding: 13px 118px 15px 28px; }
   .lv-stamp { top: 50%; bottom: auto; right: 12px; transform: translateY(-50%) rotate(-8deg); }
-  .lv-cards.is-pending .lv-stamp { transform: translateY(-50%) rotate(-14deg) scale(1.6); }
+  .lv-cards.is-pending .lv-stamp { transform: translateY(-50%) rotate(-13deg) scale(1.22); }
   .lv-card__t { font-size: 18.5px; }
   .lvx-browse span { height: 34px; padding: 0 2px; font-size: 11.5px; }
   .lvx-browse svg { display: none; }
@@ -837,7 +870,7 @@
 @media (max-width: 400px) {
   .lv-card { padding-right: 18px; padding-bottom: 70px; }
   .lv-stamp { top: auto; bottom: 12px; transform: rotate(-6deg); }
-  .lv-cards.is-pending .lv-stamp { transform: rotate(-14deg) scale(1.6); }
+  .lv-cards.is-pending .lv-stamp { transform: rotate(-13deg) scale(1.22); }
 }
 @media (max-width: 380px) {
   .lv-verdict__row { grid-template-columns: 80px minmax(0, 1fr); gap: 16px; }
@@ -854,4 +887,5 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .lv *, .lv *::before, .lv *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  .lv-lightbox::backdrop { transition: none; }
 }

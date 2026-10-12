@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { clamp, easeInOut } from '../../lib/anim';
@@ -31,18 +32,22 @@ export const Y07Book: React.FC<{ lead: number; dur: number }> = () => {
   const fSin = at('restricciones') - 6;
   const r1 = row('Creed en Dios');
   const readers = B['book:readers'].slice(0, 9);
-  const top = readers[0].readerBox, bot = readers[8].readerBox;
+  // Lectores de los cuatro primeros capítulos (los que caben en el encuadre).
+  const top = readers[0].readerBox, bot = readers[3].readerBox;
+  // Cámara suave, con pocos movimientos y largos: se acerca a un encuadre que contiene la duración, los lectores y las
+  // formas de escuchar; se acerca un poco más para Play, el título (MP3) y «Whole book»; después se abre despacio hasta un
+  // encuadre en el que caben a la vez «Whole book» y el M4B (el marco se desliza de uno a otro sin salir de cuadro) y, al
+  // final, se aleja.
   const camera = [
-    { f: 0, zoom: 1.0, x: 640, y: 360 },
-    { f: fDur - 24, zoom: 1.0, x: 640, y: 380 },
-    { f: fDur - 2, zoom: 1.45, x: 330, y: 700 },
-    { f: fQuien - 4, zoom: 1.0, x: 760, y: 1000 },
-    { f: fFormas - 6, zoom: 1.35, x: 330, y: 590 },
-    { f: fPlay - 8, zoom: 1.6, x: 560, y: 668 },
-    { f: fTit + 20, zoom: 1.6, x: 560, y: 668 },
-    { f: fWhole - 6, zoom: 1.6, x: 300, y: 560 },
-    { f: fM4B - 8, zoom: 1.55, x: 300, y: 1000 },
-    { f: fSin, zoom: 1.0, x: 640, y: 620 },
+    { f: 0, zoom: 1.0, x: 640, y: 380 },
+    { f: fDur - 64, zoom: 1.0, x: 640, y: 380 },
+    { f: fDur + 6, zoom: 1.2, x: 600, y: 700 },
+    { f: fFormas - 10, zoom: 1.22, x: 590, y: 690 },
+    { f: fPlay - 6, zoom: 1.36, x: 500, y: 650 },
+    { f: fWhole + 30, zoom: 1.36, x: 500, y: 650 },
+    { f: fM4B - 6, zoom: 1.25, x: 470, y: 790 },
+    { f: fSin - 30, zoom: 1.26, x: 470, y: 795 },
+    { f: fSin + 70, zoom: 1.0, x: 640, y: 620 },
   ];
   const marks = [
     markOn([160, 734, 240, 22], fDur - 4, fQuien - 8, 6, { label: '10 h 05 min' }),
@@ -50,7 +55,7 @@ export const Y07Book: React.FC<{ lead: number; dur: number }> = () => {
     markOn([160, 490, 240, 180], fFormas - 4, fPlay - 10, 8),
     markOn(r1.play, fPlay - 6, fTit - 8, 8, { label: 'En el navegador' }),
     markOn(B['book:title:Creed en Dios'], fTit - 4, fWhole - 10, 6, { label: 'MP3 · alta calidad' }),
-    markOn([160, 525, 205, 28], fWhole - 4, fM4B - 10, 6, { label: 'Todo el libro (ZIP)' }),
+    markOn([160, 525, 205, 28], fWhole - 4, fM4B - 10, 6, { label: 'Todo el libro (ZIP)', labelBelow: true }),
     markOn([160, 1016, 140, 37], fM4B - 4, fSin - 4, 6, { label: 'Audiolibro M4B' }),
   ];
   const s = (f: number) => f / FPS;
@@ -65,7 +70,7 @@ export const Y07Book: React.FC<{ lead: number; dur: number }> = () => {
   ];
   const fin = spring({ frame: frame - fSin, fps, config: { damping: 14, stiffness: 170 } });
   // La ventana empieza centrada y se aparta a la izquierda cuando entran las fichas de formatos.
-  const side = interpolate(frame, [fPlay - 26, fPlay - 4], [0, 1], { ...clamp, easing: easeInOut });
+  const side = interpolate(frame, [fPlay - 56, fPlay - 2], [0, 1], { ...clamp, easing: easeInOut });
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ transform: `translateX(${-300 * side}px)` }}>
@@ -81,11 +86,8 @@ export const Y07Book: React.FC<{ lead: number; dur: number }> = () => {
           Sin restricciones: son tuyos
         </div>
       </div>
-      <Sfx name="zoom_in" at={fDur - 10} volume={0.7} />
       <Sfx name="marker" at={fDur} />
-      <Sfx name="scroll" at={fQuien - 10} volume={0.6} />
       <Sfx name="marker" at={fQuien} />
-      <Sfx name="zoom_in" at={fFormas - 8} volume={0.6} />
       <Sfx name="mouse_click" at={fPlay} />
       <Sfx name="ui_pop" at={fPlay + 2} />
       <Sfx name="ui_pop" at={fTit - 2} />

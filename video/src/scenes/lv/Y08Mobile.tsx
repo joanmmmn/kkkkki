@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -106,7 +107,7 @@ export const Y08Mobile: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
       <Phase from={fRSS} to={fPega}>
         <AbsoluteFill>
           <LvWeb states={[{ at: 0, src: lvw('book') }]} page="book" width={1500} y={20}
-            camera={[{ f: 0, zoom: 1.2, x: 330, y: 560 }, { f: 30, zoom: 1.75, x: 330, y: 600 }]}
+            camera={[{ f: 0, zoom: 1.28, x: 330, y: 580 }, { f: 120, zoom: 1.6, x: 330, y: 610 }, { f: fPega - fRSS + 10, zoom: 1.64, x: 330, y: 614 }]}
             marks={[markOn(rss, 4, 400, 8)]}
             cursor={[{ t: 0, x: 600, y: 700, down: false }, { t: s(fCopia - 8), x: rss[0] + 40, y: rss[1] + 14, down: false }, { t: s(fCopia - 2), x: rss[0] + 40, y: rss[1] + 14, down: true }, { t: s(fCopia + 4), x: rss[0] + 40, y: rss[1] + 14, down: false }]}
             overlay={(f) => {
@@ -141,7 +142,7 @@ export const Y08Mobile: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fPref} to={dur} out={6}>
+      <Phase from={fPref} to={dur} hold>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 46 }}>
           <Words text="¿Prefieres una app?" start={0} size={92} weight={700} />
           <div style={{ display: 'flex', gap: 30 }}>
@@ -168,7 +169,6 @@ export const Y08Mobile: React.FC<{ lead: number; dur: number }> = ({ dur }) => {
 
       <Sfx name="cross" at={fApp} />
       <Sfx name="paper_slide" at={fWeb} volume={0.7} />
-      <Sfx name="zoom_in" at={fRSS + 2} volume={0.7} />
       <Sfx name="marker" at={fRSS + 6} />
       <Sfx name="mouse_click" at={fCopia - 2} />
       <Sfx name="ui_pop" at={fCopia + 8} />

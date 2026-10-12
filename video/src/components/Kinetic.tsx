@@ -1,6 +1,7 @@
 import React from 'react';
 import { spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font } from '../brand/tokens';
+import { useMotion } from '../lib/motion';
 
 // Texto que entra palabra a palabra con desenfoque (como el cierre del V7).
 export const Words: React.FC<{
@@ -9,13 +10,16 @@ export const Words: React.FC<{
 }> = ({ text, start = 0, stagger = 3, size = 64, weight = 500, color: c = color.ink, style, serif, italic, align = 'center', dimTo }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const { soft } = useMotion();
   const words = text.split(' ');
   return (
     <div style={{ fontFamily: serif ? font.serif : font.sans, fontStyle: italic ? 'italic' : 'normal', fontWeight: weight, fontSize: size, color: c, lineHeight: 1.18, textAlign: align, letterSpacing: serif ? 0 : -0.3, ...style }}>
       {words.map((w, i) => {
-        const s = spring({ frame: frame - start - i * stagger, fps, config: { damping: 20, stiffness: 170 } });
+        // Modo suave: cada palabra sube menos y casi sin desenfoque, sin rebote.
+        const s = spring({ frame: frame - start - i * stagger, fps, config: soft ? { damping: 24, stiffness: 150 } : { damping: 20, stiffness: 170 } });
+        const blur = (1 - s) * (soft ? 4 : 10);
         return (
-          <span key={i} style={{ display: 'inline-block', marginRight: '0.26em', opacity: dimTo !== undefined ? dimTo + (1 - dimTo) * s : s, transform: `translateY(${(1 - s) * 0.45}em)`, filter: `blur(${(1 - s) * 10}px)` }}>
+          <span key={i} style={{ display: 'inline-block', marginRight: '0.26em', opacity: dimTo !== undefined ? dimTo + (1 - dimTo) * s : s, transform: `translateY(${(1 - s) * (soft ? 0.28 : 0.45)}em)`, filter: blur > 0.05 ? `blur(${blur}px)` : undefined }}>
             {w}
           </span>
         );

@@ -1,9 +1,10 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Sfx } from '../../components/Sfx';
-import { clamp } from '../../lib/anim';
+import { clamp, easeInOut } from '../../lib/anim';
 import { B, Chip, LvWeb, lvw, markOn } from './common';
 import { w } from './timeline';
 
@@ -28,12 +29,13 @@ export const Y06Find: React.FC<{ lead: number; dur: number }> = () => {
   const sp = B['lang:Spanish'];
   const q = (B as unknown as Record<string, { meta: [number, number, number, number] }[]>)['quijote:items'];
   const qs = B['quijote:search'];
+  // La portada baja de verdad hasta «Browse the catalog» (430 px); los cambios de página, con un fundido muy corto.
   const states = [
     { at: 0, src: lvw('home') },
-    { at: fBrowse - 8, src: lvw('home_browse'), fade: 10 },
-    { at: fLang + 6, src: lvw('lang') },
-    { at: fSpan + 6, src: lvw('es_list') },
-    { at: fTit, src: lvw('search_quijote_v') },
+    { at: fBrowse - 14, src: lvw('home_browse'), fade: 40, scroll: 430 },
+    { at: fLang + 6, src: lvw('lang'), fade: 8 },
+    { at: fSpan + 6, src: lvw('es_list'), fade: 8 },
+    { at: fTit, src: lvw('search_quijote_v'), fade: 8 },
   ];
   const cursor = [
     { t: 0, x: 700, y: 560, down: false },
@@ -51,27 +53,31 @@ export const Y06Find: React.FC<{ lead: number; dur: number }> = () => {
     { t: s(fSolo - 10), x: q[2].meta[0] + 90, y: q[2].meta[1] + 22, down: false },
     { t: s(fCol - 10), x: q[0].meta[0] + 130, y: q[0].meta[1] + 22, down: false },
   ];
+  // Cámara suave y sin vaivenes: se acerca despacio a la zona de «Language» y se queda quieta durante los dos clics
+  // (Language y Spanish caen dentro del mismo encuadre); sube un poco para enseñar el buscador y, al final, se acerca
+  // a los resultados, donde se ven a la vez «Solo» y «Collaborative».
   const camera = [
     { f: 0, zoom: 1.0, x: 640, y: 360 },
-    { f: fLang - 30, zoom: 1.0, x: 640, y: 360 },
-    { f: fLang - 4, zoom: 1.18, x: 860, y: 380 },
-    { f: fLang + 8, zoom: 1.0, x: 640, y: 360 },
-    { f: fSpan - 24, zoom: 1.12, x: 760, y: 520 },
-    { f: fSpan + 10, zoom: 1.0, x: 640, y: 360 },
-    { f: fTit + 6, zoom: 1.0, x: 640, y: 360 },
-    { f: fSolo - 16, zoom: 1.35, x: 800, y: 470 },
-    { f: fCol - 8, zoom: 1.35, x: 800, y: 380 },
+    { f: fBrowse + 20, zoom: 1.0, x: 640, y: 360 },
+    { f: fLang - 12, zoom: 1.15, x: 720, y: 407 },
+    { f: fSpan + 24, zoom: 1.15, x: 720, y: 407 },
+    { f: fBus - 4, zoom: 1.12, x: 700, y: 330 },
+    { f: fTit + 50, zoom: 1.12, x: 700, y: 330 },
+    { f: fSolo - 8, zoom: 1.3, x: 720, y: 420 },
+    { f: fCol + 52, zoom: 1.34, x: 720, y: 410 },
   ];
   const meta = (i: number) => q[i].meta;
+  // El marco llega a «Language» mientras se acerca el cursor y, tras el clic, se desliza hasta «Spanish» (marcas encadenadas).
+  // «Varias voces» se va antes del final, para que la escena termine limpia antes del fundido.
   const marks = [
-    markOn([lang[0], lang[1] - 430, lang[2], lang[3]], fLang - 8, fLang + 4, 4),
-    markOn(sp, fSpan - 10, fSpan + 4, 4),
+    markOn([lang[0], lang[1] - 430, lang[2], lang[3]], fLang - 30, fLang + 6, 4),
+    markOn(sp, fLang + 10, fSpan + 6, 4),
     markOn([qs[0], qs[1], qs[2], qs[3]], fBus - 4, fTit + 20, 4, { label: 'Título o autor' }),
     markOn([meta(2)[0], meta(2)[1] - 3, 170, meta(2)[3] + 6], fSolo - 6, fCol - 8, 6, { label: 'Una sola voz', labelBelow: true }),
-    markOn([meta(0)[0], meta(0)[1] - 3, 205, meta(0)[3] + 6], fCol - 6, fCol + 120, 6, { label: 'Varias voces', labelBelow: true }),
+    markOn([meta(0)[0], meta(0)[1] - 3, 205, meta(0)[3] + 6], fCol - 6, fCol + 50, 6, { label: 'Varias voces', labelBelow: true }),
   ];
   const tagS = spring({ frame: frame - fIng + 2, fps, config: { damping: 15, stiffness: 180 } });
-  const tagOut = interpolate(frame, [fBrowse - 10, fBrowse], [0, 1], clamp);
+  const tagOut = interpolate(frame, [fBrowse - 18, fBrowse + 2], [0, 1], { ...clamp, easing: easeInOut });
   return (
     <Stage tone="warm">
       <AbsoluteFill>

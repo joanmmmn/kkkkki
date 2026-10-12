@@ -6,6 +6,9 @@
   Elena del Valle («El monte de las ánimas»), Vicente Cepeda («El miserere») y Rosacarmela («Los ojos verdes»).
 - **Hilo con el vídeo de ElevenReader:** el mismo párrafo de «El rayo de luna», ahora leído por una persona.
 - **Datos:** `dossier.md` (todas las cifras y sus fuentes).
+- **Orden del montaje (12/10/2026, noche):** Y01, Y02, Y03, Y06, Y07, Y08, Y04, Y05, Y09… Para quien busca cómo funciona
+  LibriVox, primero va cómo se usa (buscar, la ficha, el móvil) y después por qué es legal, el catálogo y España. Las escenas
+  conservan su número; aquí van en el orden del vídeo.
 
 ## Y01 · Gancho (arranque en frío con la voz de Omar)
 
@@ -27,18 +30,6 @@
 
 [Audio real: «Esta es una grabación de LibriVox. Todas las grabaciones de LibriVox son del dominio público.»]
 
-## Y04 · Por qué es legal + catálogo
-
-> ¿Y por qué es legal? Porque solo graban libros sin derechos de autor en Estados Unidos: los publicados hace noventa y cinco años o
-> más. Así que aquí no hay novedades, hay clásicos. Muchos: más de veintiún mil, en decenas de idiomas. El español es el cuarto,
-> con más de mil obras y más de tres mil quinientas horas: el Quijote, el Lazarillo, La Regenta, Fortunata y Jacinta, las Leyendas
-> de Bécquer…
-
-## Y05 · Ojo en España
-
-> Eso sí: LibriVox sigue la ley de Estados Unidos, y te pide comprobar la de tu país. En España, la mayoría de sus clásicos también
-> son libres, pero no todos: «Platero y yo», por ejemplo, aquí no lo será hasta dos mil treinta y nueve.
-
 ## Y06 · Cómo encontrar libros en español
 
 > Vamos a usarlo. La web está en inglés, pero es sencilla: en «Browse the catalog», pulsa «Language» y elige «Spanish». También
@@ -55,6 +46,18 @@
 > ¿Y en el móvil? LibriVox no tiene app oficial: su único canal oficial es la web. El truco está en el botón «RSS»: copia el enlace
 > y pégalo en tu app de pódcasts. Cada capítulo aparece como un episodio, y puedes descargarlo para escucharlo sin conexión. Y si
 > prefieres una app, hay varias gratuitas, de otros desarrolladores, con todo su catálogo.
+
+## Y04 · Por qué es legal + catálogo
+
+> ¿Y por qué es legal? Porque solo graban libros sin derechos de autor en Estados Unidos: los publicados hace noventa y cinco años o
+> más. Así que aquí no hay novedades, hay clásicos. Muchos: más de veintiún mil, en decenas de idiomas. El español es el cuarto,
+> con más de mil obras y más de tres mil quinientas horas: el Quijote, el Lazarillo, La Regenta, Fortunata y Jacinta, las Leyendas
+> de Bécquer…
+
+## Y05 · Ojo en España
+
+> Eso sí: LibriVox sigue la ley de Estados Unidos, y te pide comprobar la de tu país. En España, la mayoría de sus clásicos también
+> son libres, pero no todos: «Platero y yo», por ejemplo, aquí no lo será hasta dos mil treinta y nueve.
 
 ## Y09 · Las voces
 

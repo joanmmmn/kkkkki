@@ -1,13 +1,13 @@
 ---
-title: "LibriVox: audiolibros gratis, leídos por personas"
-meta_title: "LibriVox: audiolibros gratis en español y cómo usarlo (2026)"
-meta_description: "Probamos LibriVox: más de 21.000 audiolibros gratis y legales, leídos por voluntarios. Cómo buscar en español, escuchar, descargar en MP3 y usarlo en el móvil."
+title: "LibriVox: qué es y cómo usarlo"
+meta_title: "Cómo usar LibriVox: audiolibros gratis en español (guía 2026)"
+meta_description: "LibriVox paso a paso: cómo buscar audiolibros en español, escucharlos, descargarlos en MP3 o M4B y llevarlos al móvil. Gratis, legal y sin registro."
 slug: "librivox-resena"
 date: "2026-10-12"
 updated: "2026-10-12"
 author: "Equipo SonorBooks"
 category: "Reseñas de plataformas"
-tags: ["LibriVox", "audiolibros gratis", "dominio público", "audiolibros en español", "MP3", "reseña"]
+tags: ["LibriVox", "cómo usar LibriVox", "audiolibros gratis", "dominio público", "audiolibros en español", "MP3", "reseña"]
 og_image: "media/librivox-resena-og.jpg"
 youtube_id: "PENDIENTE"
 rating: 7.5
@@ -16,12 +16,19 @@ rating: 7.5
 <!-- Nota (12/10/2026): la reseña se publica como página propia diseñada (web/librivox-resena) en
 https://sonorbooks.com/es/blog/librivox-resena/. Este texto es la versión de referencia (CMS, redes, resúmenes). -->
 
-# LibriVox: audiolibros gratis, leídos por personas
+# LibriVox: qué es y cómo usarlo
 
-**Más de 21.000 clásicos grabados por voluntarios, gratis y legales.** Te contamos qué es LibriVox, por qué es legal, cómo encontrar los que hay en español, cómo escucharlos o descargarlos, cómo usarlo en el móvil y qué tal suenan sus voces.
+**Más de 21.000 audiolibros gratis y legales, leídos por voluntarios.** Te enseñamos a encontrar los que hay en español, a escucharlos o descargarlos y a llevarlos al móvil. Y te contamos por qué es legal y qué tal suenan sus voces.
 
 > **Veredicto rápido · 7,5/10**
 > Si te gustan los clásicos, **no hay nada igual gratis**: sin registro, sin anuncios y con los archivos para ti. Si buscas novedades o superventas, aquí no los vas a encontrar.
+
+## Cómo funciona LibriVox, en cuatro pasos
+
+1. **Entra en librivox.org.** Todo está en su web: no hace falta cuenta ni app, y no hay anuncios ni cuotas.
+2. **Busca un libro en español.** En «Browse the catalog», pulsa «Language» y elige «Spanish». O escribe un título o un autor en el buscador.
+3. **Escúchalo o descárgalo.** En la ficha del libro, pulsa el play de un capítulo o descárgalo: cada capítulo en MP3, el libro entero en un ZIP o en M4B.
+4. **Llévatelo al móvil.** Copia el enlace del botón RSS y añádelo a tu app de pódcasts: cada capítulo aparece como un episodio.
 
 [VÍDEO: insertar aquí la guía de YouTube de SonorBooks]
 
@@ -36,20 +43,6 @@ No tiene anuncios ni cuotas, y para escuchar no hace falta cuenta. Los voluntari
 - **Más de 14.000** voluntarios en sus foros (agosto de 2025).
 
 Cada capítulo empieza con el mismo aviso: «Esta es una grabación de LibriVox. Todas las grabaciones de LibriVox son del dominio público. Para más información o para ser voluntario, por favor visite librivox.org».
-
-## ¿Es legal? Sí, con un matiz en España
-
-LibriVox solo graba libros sin derechos de autor en Estados Unidos: en la práctica, **los publicados hace 95 años completos o más** (hoy, todo lo publicado hasta 1930). Por eso no hay novedades, sino clásicos. Una traducción cuenta como obra nueva, con sus propios derechos.
-
-**¿Y en España?** En cada ficha, LibriVox avisa: «LibriVox recordings are Public Domain in the USA. If you are not in the USA, please verify the copyright status of these works in your own country before downloading, otherwise you may be violating copyright laws». En España, una obra queda libre 80 años después de la muerte de su autor, contados desde el 1 de enero siguiente, si murió antes del 7 de diciembre de 1987 (70 años, si murió después); en una traducción cuentan también los derechos del traductor.
-
-La mayoría de los clásicos en español también son libres aquí, pero no todos: de sus 564 audiolibros en español, 20 son de autores que murieron en 1946 o después. Por ejemplo, *Platero y yo* (Juan Ramón Jiménez, † 1958: libre en España en 2039), *Las inquietudes de Shanti Andía* (Pío Baroja, † 1956: 2037), *La rana viajera* (Julio Camba, † 1962: 2043) o *Memorias de un vagón de ferrocarril* (Eduardo Zamacois, † 1971: 2052). Es la regla general para autores españoles, no asesoramiento jurídico: con autores de otros países y traducciones el cálculo puede cambiar.
-
-## El catálogo en español: más de mil obras
-
-En la web de LibriVox, el español es el **cuarto idioma** (inglés 42.806 obras, alemán 3.181, francés 1.051, español 1.042, en *Browse the catalog › Language* el 12/10/2026; cada poema o relato de una antología se cuenta por separado). En audiolibros, son **más de 550 (más que en francés) y más de 3.500 horas**. Los autores con más títulos son Pérez Galdós (50), Valle-Inclán (12), Blasco Ibáñez y Pardo Bazán (11), Unamuno (9) y Cervantes (8).
-
-**Por dónde empezar:** *Don Quijote de la Mancha* (44 h 29 min, una voz), *Lazarillo de Tormes* (1 h 57 min), *Leyendas* de Bécquer (10 h 5 min, 11 voces), *Rimas* (54 min), *Marianela* (6 h 1 min), *Fortunata y Jacinta* (1.ª parte, 10 h 53 min), *La Regenta* (tomo I, 15 h 56 min), *Los pazos de Ulloa* (9 h 51 min) y *María*, de Jorge Isaacs (12 h 16 min).
 
 ## Cómo buscar audiolibros en español
 
@@ -77,6 +70,20 @@ LibriVox no tiene app: su único canal oficial es la web. Pero tienes alternativ
 - **Descargando:** baja el M4B o el ZIP en el ordenador y pásalo al móvil.
 - **Otras apps:** hay apps gratuitas de otros desarrolladores para escuchar su catálogo (por ejemplo, «AudioLibros LibriVox», 4,6 estrellas con 765 valoraciones en la App Store de España). No son de LibriVox.
 - **Navegador:** la web funciona en el móvil, pero no recuerda por dónde ibas.
+
+## ¿Es legal? Sí, con un matiz en España
+
+LibriVox solo graba libros sin derechos de autor en Estados Unidos: en la práctica, **los publicados hace 95 años completos o más** (hoy, todo lo publicado hasta 1930). Por eso no hay novedades, sino clásicos. Una traducción cuenta como obra nueva, con sus propios derechos.
+
+**¿Y en España?** En cada ficha, LibriVox avisa: «LibriVox recordings are Public Domain in the USA. If you are not in the USA, please verify the copyright status of these works in your own country before downloading, otherwise you may be violating copyright laws». En España, una obra queda libre 80 años después de la muerte de su autor, contados desde el 1 de enero siguiente, si murió antes del 7 de diciembre de 1987 (70 años, si murió después); en una traducción cuentan también los derechos del traductor.
+
+La mayoría de los clásicos en español también son libres aquí, pero no todos: de sus 564 audiolibros en español, 20 son de autores que murieron en 1946 o después. Por ejemplo, *Platero y yo* (Juan Ramón Jiménez, † 1958: libre en España en 2039), *Las inquietudes de Shanti Andía* (Pío Baroja, † 1956: 2037), *La rana viajera* (Julio Camba, † 1962: 2043) o *Memorias de un vagón de ferrocarril* (Eduardo Zamacois, † 1971: 2052). Es la regla general para autores españoles, no asesoramiento jurídico: con autores de otros países y traducciones el cálculo puede cambiar.
+
+## El catálogo en español: más de mil obras
+
+En la web de LibriVox, el español es el **cuarto idioma** (inglés 42.806 obras, alemán 3.181, francés 1.051, español 1.042, en *Browse the catalog › Language* el 12/10/2026; cada poema o relato de una antología se cuenta por separado). En audiolibros, son **564 (más que en francés) y suman más de 3.500 horas**. Los autores con más títulos son Pérez Galdós (50), Valle-Inclán (12), Blasco Ibáñez y Pardo Bazán (11), Unamuno (9) y Cervantes (8).
+
+**Por dónde empezar:** *Don Quijote de la Mancha* (44 h 29 min, una voz), *Lazarillo de Tormes* (1 h 57 min), *Leyendas* de Bécquer (10 h 5 min, 11 voces), *Rimas* (54 min), *Marianela* (6 h 1 min), *Fortunata y Jacinta* (1.ª parte, 10 h 53 min), *La Regenta* (tomo I, 15 h 56 min), *Los pazos de Ulloa* (9 h 51 min) y *María*, de Jorge Isaacs (12 h 16 min).
 
 ## Las voces: personas reales, y cada una suena distinta
 

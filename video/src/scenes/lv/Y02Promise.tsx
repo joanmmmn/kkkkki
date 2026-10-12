@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { softSpring as spring } from '../../lib/motion';
 import { color, font, shadow } from '../../brand/tokens';
 import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
@@ -43,7 +44,7 @@ export const Y02Promise: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
             {items.map((it) => {
               const s = spring({ frame: frame - it.f + 4, fps, config: { damping: 15, stiffness: 180 } });
               return (
-                <div key={it.n} style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '24px 30px', borderRadius: 30, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card, opacity: s, transform: `translateY(${(1 - s) * 40}px) scale(${0.9 + 0.1 * s})`, filter: `blur(${(1 - s) * 6}px)` }}>
+                <div key={it.n} style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '24px 30px', borderRadius: 30, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card, opacity: s, transform: `translateY(${(1 - s) * 28}px) scale(${0.94 + 0.06 * s})`, filter: s < 0.99 ? `blur(${(1 - s) * 3}px)` : undefined }}>
                   <div style={{ width: 84, height: 84, borderRadius: 42, background: color.yellowSoft, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{it.i}</div>
                   <div style={{ display: 'flex', flexDirection: 'column', fontFamily: font.sans }}>
                     <span style={{ fontSize: 24, fontWeight: 700, color: color.muted, letterSpacing: 2 }}>{it.n}</span>
@@ -56,7 +57,7 @@ export const Y02Promise: React.FC<{ lead: number; dur: number }> = ({ dur }) => 
         </AbsoluteFill>
       </Phase>
 
-      <Phase from={fBlog} to={dur} out={4}>
+      <Phase from={fBlog} to={dur} hold>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 34 }}>
           <div style={{ position: 'relative', transform: `translateY(${(1 - card) * 70}px) rotate(${(1 - card) * -1.5}deg) scale(${0.96 + 0.04 * card})` }}>
             <BrowserWindow width={1260} url={LV_BLOG_URL}>
