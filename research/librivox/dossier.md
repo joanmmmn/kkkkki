@@ -30,7 +30,10 @@ Todo lo que dicen el vídeo y la página sale de estas fuentes. Cifras tal como 
   su muerte): de los 564 títulos en español con audio, **20** son de autores muertos en 1946 o después (21 de los 586
   proyectos, contando uno sin audio todavía). Ejemplos de autores
   españoles: *Platero y yo* (Juan Ramón Jiménez, † 1958 → libre en España en 2039) y tres novelas de Pío Baroja († 1956 → 2037).
-  También Neruda († 1973), Julio Camba († 1962). El resto, de autores muertos antes de 1946.
+  También Julio Camba († 1962 → 2043, *La rana viajera*) y Eduardo Zamacois († 1971 → 2052, *Memorias de un vagón de ferrocarril*).
+  El resto, de autores muertos antes de 1946. Ojo: para autores de fuera de la UE (Neruda, † 1973, chileno) se aplica la
+  comparación de plazos (el del país de origen si es más corto), y en las traducciones cuenta también el traductor: en la página
+  solo damos años de autores españoles. El plazo se cuenta desde el 1 de enero siguiente a la muerte (art. 30 LPI).
 - Texto de SonorBooks (condiciones de Joan, ficha de plataformas): «LibriVox verifica el dominio público en Estados Unidos;
   comprueba la situación de cada obra en España.»
 
@@ -59,7 +62,8 @@ Todo lo que dicen el vídeo y la página sale de estas fuentes. Cifras tal como 
   Italian) o Reader; búsqueda combinada; búsqueda avanzada (p. ej., solo lecturas «Solo» de un idioma).
 - **En la ficha:** «Play» reproduce el MP3 de 64 kbps en el navegador (clic derecho para descargarlo); el título del capítulo es
   el MP3 de 128 kbps, la grabación original («la diferencia apenas se nota»). «Whole book (zip file)»: todos los MP3 de 64 kbps
-  (de menos de 100 MB a más de 1 GB). Botones iTunes y RSS, torrent. **M4B** «en la mayoría de libros»: guarda por dónde vas, con
+  (de menos de 100 MB a más de 1 GB). Botones iTunes y RSS, torrent. Aviso completo de cada ficha: «…before downloading,
+  otherwise you may be violating copyright laws». **M4B** «en la mayoría de libros»: guarda por dónde vas, con
   portada e índice. En la página de Internet Archive: OGG, reproductor en streaming y MP3 VBR en los más nuevos.
 - **Datos de producción en la ficha:** duración, tamaño del ZIP, fecha de catálogo, lector, coordinador, revisor (proof listener).
 - **Pódcast:** cada libro tiene su RSS (`librivox.org/rss/<id>`): se pega en una app de pódcasts y cada sección es un episodio
@@ -98,6 +102,7 @@ Todo lo que dicen el vídeo y la página sale de estas fuentes. Cifras tal como 
   Selección SonorBooks: *Doña Perfecta*, *Entremeses*, *Cautiva*, *Abel Sánchez*, *Entre naranjos*.
 - Reseña actual: `/es/blog/librivox-resena/`, «LibriVox en español: audiolibros gratis y descarga» (3 min). La página nueva la sustituye.
 - 12/10/2026, 13:47–13:50: sonorbooks.com devolvía 503 en todas las páginas HTML (los archivos estáticos sí cargaban). Avisado a Joan.
+  Hacia las 15:05 fallaban también los archivos estáticos (503); a las 16:12 la web volvía a responder (200).
 
 ## Fuentes
 
@@ -115,3 +120,24 @@ Todo lo que dicen el vídeo y la página sale de estas fuentes. Cifras tal como 
 - https://librivox.org/leyendas-by-gustavo-adolfo-becquer/
 - https://apps.apple.com/es/app/audiolibros-librivox/id596159212
 - Ley de Propiedad Intelectual (RDL 1/1996), art. 26 y disposición transitoria cuarta: https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930
+
+## Estantería de la página (API con `extended=1`, 12/10/2026)
+
+| Libro | Autor | Duración | Lectores |
+|---|---|---|---|
+| El ingenioso hidalgo Don Quijote de la Mancha (id 20198, 2025) | Cervantes | 44:28:36 | 1 (Lu), 128 secciones |
+| Lazarillo de Tormes (3579) | Anónimo | 1:56:36 | 1 (Tux) |
+| Leyendas (5079) | Bécquer | 10:04:53 | 11 |
+| Rimas (13242) | Bécquer | 0:54:03 | 1 (KendalRigans) |
+| Marianela (16285) | Pérez Galdós | 6:00:40 | 1 (Maritza Mateo) |
+| Fortunata y Jacinta, 1.ª parte (14336) | Pérez Galdós | 10:52:38 | 1 (Epachuko) |
+| La Regenta, tomo I (13208) | Clarín | 15:55:44 | 1 (Epachuko) |
+| Los pazos de Ulloa (10541) | Pardo Bazán | 9:50:56 | 1 (Mongope) |
+| María (17676) | Jorge Isaacs | 12:16:25 | 1 (MiltonFMH) |
+
+- Por idiomas en audiolibros (proyectos de la API), el español es el **tercero** (inglés 19.573, alemán 874, español 586, francés 323);
+  en obras de la web, el cuarto. La página dice «cuarto» referido a la web y añade «más que en francés» para los audiolibros.
+- Apps de pódcasts que aceptan un RSS por URL: Apple Podcasts («Seguir un programa por URL»), Pocket Casts y AntennaPod; Spotify, no.
+- En la ficha, el nombre de cada lector enlaza a su página (librivox.org/reader/ID) con todo lo que ha grabado.
+- Foro: «Post Your 1-Minute Test Recording Here» es una sección del foro (cada prueba, un hilo nuevo).
+

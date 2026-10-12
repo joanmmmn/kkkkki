@@ -18,7 +18,7 @@ https://sonorbooks.com/es/blog/librivox-resena/. Este texto es la versión de re
 
 # LibriVox: audiolibros gratis, leídos por personas
 
-**Más de 21.000 clásicos grabados por voluntarios, gratis y legales.** Te contamos qué es LibriVox, por qué es legal, cómo encontrar los libros en español, cómo escucharlos o descargarlos, cómo usarlo en el móvil y qué tal suenan sus voces.
+**Más de 21.000 clásicos grabados por voluntarios, gratis y legales.** Te contamos qué es LibriVox, por qué es legal, cómo encontrar los que hay en español, cómo escucharlos o descargarlos, cómo usarlo en el móvil y qué tal suenan sus voces.
 
 > **Veredicto rápido · 7,5/10**
 > Si te gustan los clásicos, **no hay nada igual gratis**: sin registro, sin anuncios y con los archivos para ti. Si buscas novedades o superventas, aquí no los vas a encontrar.
@@ -29,7 +29,7 @@ https://sonorbooks.com/es/blog/librivox-resena/. Este texto es la versión de re
 
 LibriVox es un proyecto sin ánimo de lucro con un objetivo enorme: que **todos los libros de dominio público tengan su audiolibro**, leído por personas reales y gratis para todo el mundo. Lo fundó Hugh McGuire en agosto de 2005.
 
-No tiene anuncios, ni cuentas, ni cuotas. Los voluntarios graban los libros, Internet Archive guarda los audios y cualquiera puede escucharlos o descargarlos. Las grabaciones también son de dominio público.
+No tiene anuncios ni cuotas, y para escuchar no hace falta cuenta. Los voluntarios graban los libros, Internet Archive guarda los audios y cualquiera puede escucharlos o descargarlos. Las grabaciones también son de dominio público.
 
 - **2005**, el año en que nació.
 - **Más de 21.000** audiolibros terminados y **más de 132.000 horas** de audio (catálogo consultado con su API el 12/10/2026).
@@ -37,34 +37,34 @@ No tiene anuncios, ni cuentas, ni cuotas. Los voluntarios graban los libros, Int
 
 Cada capítulo empieza con el mismo aviso: «Esta es una grabación de LibriVox. Todas las grabaciones de LibriVox son del dominio público. Para más información o para ser voluntario, por favor visite librivox.org».
 
-## ¿Es legal? Sí: así funciona el dominio público
+## ¿Es legal? Sí, con un matiz en España
 
-LibriVox solo graba libros sin derechos de autor en Estados Unidos: en la práctica, **los publicados hace 95 años o más** (hoy, todo lo publicado hasta 1930). Por eso no hay novedades, sino clásicos. Una traducción cuenta como obra nueva, con sus propios derechos.
+LibriVox solo graba libros sin derechos de autor en Estados Unidos: en la práctica, **los publicados hace 95 años completos o más** (hoy, todo lo publicado hasta 1930). Por eso no hay novedades, sino clásicos. Una traducción cuenta como obra nueva, con sus propios derechos.
 
-**¿Y en España?** En cada ficha, LibriVox avisa: «LibriVox recordings are Public Domain in the USA. If you are not in the USA, please verify the copyright status of these works in your own country before downloading». En España, una obra queda libre 80 años después de la muerte de su autor si murió antes del 7 de diciembre de 1987 (70 años, si murió después); en una traducción también cuenta el traductor.
+**¿Y en España?** En cada ficha, LibriVox avisa: «LibriVox recordings are Public Domain in the USA. If you are not in the USA, please verify the copyright status of these works in your own country before downloading, otherwise you may be violating copyright laws». En España, una obra queda libre 80 años después de la muerte de su autor, contados desde el 1 de enero siguiente, si murió antes del 7 de diciembre de 1987 (70 años, si murió después); en una traducción cuentan también los derechos del traductor.
 
-La mayoría de sus clásicos en español también son libres aquí, pero no todos: de sus 564 audiolibros en español, 20 son de autores que murieron en 1946 o después. Por ejemplo, *Platero y yo* (Juan Ramón Jiménez, † 1958: libre en España en 2039), *Las inquietudes de Shanti Andía* (Pío Baroja, † 1956: 2037), *La rana viajera* (Julio Camba, † 1962: 2043) o *El habitante y su esperanza* (Pablo Neruda, † 1973: 2054). Es la regla general, no un asesoramiento legal.
+La mayoría de los clásicos en español también son libres aquí, pero no todos: de sus 564 audiolibros en español, 20 son de autores que murieron en 1946 o después. Por ejemplo, *Platero y yo* (Juan Ramón Jiménez, † 1958: libre en España en 2039), *Las inquietudes de Shanti Andía* (Pío Baroja, † 1956: 2037), *La rana viajera* (Julio Camba, † 1962: 2043) o *Memorias de un vagón de ferrocarril* (Eduardo Zamacois, † 1971: 2052). Es la regla general para autores españoles, no asesoramiento jurídico: con autores de otros países y traducciones el cálculo puede cambiar.
 
 ## El catálogo en español: más de mil obras
 
-El español es el **cuarto idioma de LibriVox** (inglés 42.806 obras, alemán 3.181, francés 1.051, español 1.042, en *Browse the catalog › Language* el 12/10/2026; cada poema o relato de una antología cuenta aparte). En libros, son **más de 550 audiolibros y más de 3.500 horas**. Los autores con más títulos son Pérez Galdós (50), Valle-Inclán (12), Blasco Ibáñez y Pardo Bazán (11), Unamuno (9) y Cervantes (8).
+En la web de LibriVox, el español es el **cuarto idioma** (inglés 42.806 obras, alemán 3.181, francés 1.051, español 1.042, en *Browse the catalog › Language* el 12/10/2026; cada poema o relato de una antología se cuenta por separado). En audiolibros, son **más de 550 (más que en francés) y más de 3.500 horas**. Los autores con más títulos son Pérez Galdós (50), Valle-Inclán (12), Blasco Ibáñez y Pardo Bazán (11), Unamuno (9) y Cervantes (8).
 
 **Por dónde empezar:** *Don Quijote de la Mancha* (44 h 29 min, una voz), *Lazarillo de Tormes* (1 h 57 min), *Leyendas* de Bécquer (10 h 5 min, 11 voces), *Rimas* (54 min), *Marianela* (6 h 1 min), *Fortunata y Jacinta* (1.ª parte, 10 h 53 min), *La Regenta* (tomo I, 15 h 56 min), *Los pazos de Ulloa* (9 h 51 min) y *María*, de Jorge Isaacs (12 h 16 min).
 
 ## Cómo buscar audiolibros en español
 
-**Por idioma:** en «Browse the catalog», pulsa «Language» y elige «Spanish». En «Project type», «solo» deja los libros leídos por una persona; «group», los que leen varias. Debajo de cada título verás si está terminado («Complete») y si lo lee una sola voz («Solo») o varias («Collaborative»).
+**Por idioma:** en «Browse the catalog», pulsa «Language» y elige «Spanish». En «Project type», «solo» muestra únicamente los libros leídos por una persona; «group», los que leen varias. Debajo de cada título verás si está terminado («Complete») y si lo lee una sola voz («Solo») o varias («Collaborative»).
 
 **Con el buscador:** escribe un título, un autor o un lector en «Search by Author, Title or Reader». De muchos clásicos hay varias versiones (del *Quijote*, una colaborativa en dos partes y otra entera con una sola voz). En «Advanced search» combinas idioma, tipo de lectura, género y estado.
 
 ## Escuchar y descargar: la ficha de cada libro
 
 1. **Play:** el capítulo suena en el navegador (MP3 de 64 kbps).
-2. **El título del capítulo:** el MP3 en alta calidad (128 kbps). Clic derecho › «Guardar enlace como…».
+2. **El título del capítulo:** enlaza al MP3 en alta calidad (128 kbps). Clic derecho › «Guardar enlace como…».
 3. **Lector y duración** de cada capítulo.
 4. **Whole book:** el libro entero en un ZIP con todos los MP3.
 5. **RSS:** el libro como pódcast.
-6. **M4B:** un archivo de audiolibro con capítulos que recuerda por dónde vas (la mayoría de libros lo tienen).
+6. **M4B:** un archivo de audiolibro con capítulos que recuerda por dónde vas (lo tienen la mayoría de los libros; los largos, en varias partes).
 7. **El aviso** de dominio público.
 8. **Datos de la grabación:** duración, tamaño del ZIP, coordinador y revisor.
 
@@ -75,7 +75,7 @@ Sin DRM y sin caducidad: los archivos son tuyos.
 LibriVox no tiene app: su único canal oficial es la web. Pero tienes alternativas:
 - **App de pódcasts (nuestro favorito):** copia el enlace del botón RSS de la ficha y añádelo en tu app de pódcasts como programa por URL (Apple Podcasts, Pocket Casts o AntennaPod lo permiten; Spotify, no). Cada capítulo es un episodio que puedes descargar. Ejemplo: `https://librivox.org/rss/5079` (*Leyendas*).
 - **Descargando:** baja el M4B o el ZIP en el ordenador y pásalo al móvil.
-- **Otras apps:** hay apps gratuitas de terceros con todo su catálogo (por ejemplo, «AudioLibros LibriVox», 4,6 estrellas con 765 valoraciones en la App Store de España). No son de LibriVox.
+- **Otras apps:** hay apps gratuitas de otros desarrolladores para escuchar su catálogo (por ejemplo, «AudioLibros LibriVox», 4,6 estrellas con 765 valoraciones en la App Store de España). No son de LibriVox.
 - **Navegador:** la web funciona en el móvil, pero no recuerda por dónde ibas.
 
 ## Las voces: personas reales, y cada una suena distinta
@@ -86,7 +86,7 @@ Los libros los graban voluntarios, así que la calidad cambia de un libro a otro
 
 No hace falta experiencia ni prueba de voz: tu voz, un ordenador, un programa gratuito (la mayoría usa Audacity) y, quizá, un micrófono sencillo.
 1. Regístrate en el foro de LibriVox.
-2. Graba la prueba de un minuto («Post Your 1-Minute Test Recording Here»).
+2. Graba la prueba de un minuto y publícala en la sección «Post Your 1-Minute Test Recording Here» del foro (no es una audición: solo comprueban que tu equipo suena bien).
 3. Reserva un capítulo de un proyecto colaborativo.
 4. Grábalo y súbelo: un revisor (proof listener) lo escucha.
 5. Cuando el libro está completo, se publica gratis y en el dominio público.
