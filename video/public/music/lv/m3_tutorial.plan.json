@@ -1,0 +1,63 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental upbeat indie-pop background for a how-to walkthrough",
+   "tempo 112 BPM",
+   "clean bright electric guitar, ukulele strums, round bass, claps, tight light drums, glockenspiel accents",
+   "playful, practical, energetic",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies",
+   "aggressive rock"
+  ],
+  "sections": [
+   {
+    "section_name": "Find books",
+    "positive_local_styles": [
+     "bouncy groove from the first beat",
+     "staccato guitar",
+     "tight drums"
+    ],
+    "negative_local_styles": [
+     "slow intro"
+    ],
+    "duration_ms": 16860,
+    "lines": []
+   },
+   {
+    "section_name": "Listen and download",
+    "positive_local_styles": [
+     "same groove with extra percussion",
+     "glockenspiel accents",
+     "lively"
+    ],
+    "negative_local_styles": [
+     "calm"
+    ],
+    "duration_ms": 26320,
+    "lines": []
+   },
+   {
+    "section_name": "On your phone",
+    "positive_local_styles": [
+     "groove continues with a light synth pluck layer",
+     "modern and fresh",
+     "ends gently"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 24340,
+    "lines": []
+   }
+  ]
+ }
+}

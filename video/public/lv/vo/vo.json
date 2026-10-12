@@ -1,0 +1,75 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "L01",
+   "text": "Esto no lo lee una inteligencia artificial: es Omar, un voluntario que grabó esta leyenda de Bécquer para LibriVox. Y como esta, hay más de veintiún mil audiolibros gratis, legales y sin registrarte. ¿Cómo puede ser?"
+  },
+  {
+   "id": "L02",
+   "text": "Te lo contamos todo: qué es LibriVox, cómo encontrar audiolibros en español, cómo escucharlos y descargarlos, también en el móvil, lo mejor, lo peor… y cómo grabar uno tú. La guía completa está en nuestro blog: enlace en la descripción."
+  },
+  {
+   "id": "L03",
+   "text": "LibriVox nació en 2005 con una idea: que cada libro de dominio público tenga su audiolibro, leído por personas reales y gratis para todo el mundo. No tiene ánimo de lucro: ni anuncios, ni cuentas, ni cuotas. Los audios los aloja Internet Archive, y cada capítulo empieza así:"
+  },
+  {
+   "id": "L04",
+   "text": "¿Y por qué es legal? Porque solo graban libros sin derechos de autor en Estados Unidos: los publicados hace noventa y cinco años o más. Así que aquí no hay novedades, hay clásicos. Muchos: más de veintiún mil, en decenas de idiomas. El español es el cuarto, con más de mil obras y más de tres mil quinientas horas: el Quijote, el Lazarillo, La Regenta, Fortunata y Jacinta, las Leyendas de Bécquer…"
+  },
+  {
+   "id": "L05",
+   "text": "Eso sí: LibriVox sigue la ley de Estados Unidos, y te pide comprobar la de tu país. En España, la mayoría de sus clásicos también son libres, pero no todos: «Platero y yo», por ejemplo, aquí no lo será hasta dos mil treinta y nueve."
+  },
+  {
+   "id": "L06",
+   "text": "Vamos a usarlo. La web está en inglés, pero es sencilla: en «Browse the catalog», pulsa «Language» y elige «Spanish». También puedes buscar por título o por autor. En la lista ves si lo lee una sola persona, «Solo», o varias, «Collaborative»."
+  },
+  {
+   "id": "L07",
+   "text": "Dentro de cada libro tienes la duración, quién lee cada capítulo… y todas las formas de escucharlo. Con «Play», suena en el navegador. Para descargarlo: el título de cada capítulo es el MP3 en alta calidad; «Whole book», el libro entero en un ZIP; y muchos tienen un M4B: un archivo de audiolibro, con capítulos, que recuerda por dónde vas. Y sin restricciones: son tuyos."
+  },
+  {
+   "id": "L08",
+   "text": "¿Y en el móvil? LibriVox no tiene app oficial: su único canal oficial es la web. El truco está en el botón «RSS»: copia el enlace y pégalo en tu app de pódcasts. Cada capítulo aparece como un episodio, y puedes descargarlo para escucharlo sin conexión. Y si prefieres una app, hay varias gratuitas, de otros desarrolladores, con todo su catálogo."
+  },
+  {
+   "id": "L09A",
+   "text": "¿Y las voces? Son voluntarios, así que la calidad cambia de un libro a otro, y a veces de un capítulo a otro: en estas Leyendas leen once personas distintas."
+  },
+  {
+   "id": "L09B",
+   "text": "Escucha un minuto antes de empezar, y si hay varias versiones, quédate con la que más te guste."
+  },
+  {
+   "id": "L10",
+   "text": "¿Te animas a leer tú? No hace falta experiencia ni prueba de voz: basta un ordenador, un micrófono sencillo y un programa gratuito, como Audacity. Te registras en su foro, grabas una prueba de un minuto y eliges un capítulo. Un revisor lo escucha, y tu grabación queda ahí, gratis, para todo el mundo."
+  },
+  {
+   "id": "L11A",
+   "text": "Lo mejor: es gratis de verdad y legal, sin anuncios ni registro, con voces humanas, y los MP3 te los quedas para siempre."
+  },
+  {
+   "id": "L11B",
+   "text": "Lo peor: solo hay clásicos, la calidad de las voces varía, la web está en inglés y no tiene app oficial."
+  },
+  {
+   "id": "L12",
+   "text": "¿Merece la pena? Si te gustan los clásicos, sí, y mucho: no hay nada igual gratis. Si buscas novedades, aquí no las vas a encontrar. Nuestra nota: siete y medio sobre diez."
+  },
+  {
+   "id": "L13",
+   "text": "Y para saber si un libro está gratis en LibriVox, en El Libro Total o en qué plataforma, y a qué precio, búscalo en SonorBooks."
+  }
+ ]
+}

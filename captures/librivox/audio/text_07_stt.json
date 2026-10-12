@@ -1,0 +1,1291 @@
+{
+ "language_code": "spa",
+ "language_probability": 1.0,
+ "text": "La noche de difuntos me despertó a no sé qué hora el doble de las campanas. Su tañido monótono y eterno me trajo a las mientes esta tradición que oí hace poco en Soria. Intenté dormir de nuevo. Imposible. Una vez aguijoneada, la imaginación es un caballo que se desboca y al que no sirve tirarle de la rienda. Por pasar el rato, me decidí a escribirla, como en efecto lo hice. Yo no la oí en el mismo lugar en que acaeció y la he escrito volviendo algunas veces la cabeza",
+ "words": [
+  {
+   "text": "La",
+   "start": 21.8,
+   "end": 21.88,
+   "type": "word",
+   "logprob": -0.0003014348621945828
+  },
+  {
+   "text": " ",
+   "start": 21.88,
+   "end": 21.92,
+   "type": "spacing",
+   "logprob": -3.933898824470816e-06
+  },
+  {
+   "text": "noche",
+   "start": 21.92,
+   "end": 22.2,
+   "type": "word",
+   "logprob": -3.933898824470816e-06
+  },
+  {
+   "text": " ",
+   "start": 22.2,
+   "end": 22.22,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "de",
+   "start": 22.22,
+   "end": 22.32,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 22.32,
+   "end": 22.34,
+   "type": "spacing",
+   "logprob": -0.31331682205200195
+  },
+  {
+   "text": "difuntos",
+   "start": 22.34,
+   "end": 22.84,
+   "type": "word",
+   "logprob": -0.11768265194768901
+  },
+  {
+   "text": " ",
+   "start": 22.84,
+   "end": 22.9,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": "me",
+   "start": 22.9,
+   "end": 22.98,
+   "type": "word",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": " ",
+   "start": 22.98,
+   "end": 23.0,
+   "type": "spacing",
+   "logprob": -1.0371154530730564e-05
+  },
+  {
+   "text": "despertó",
+   "start": 23.0,
+   "end": 23.44,
+   "type": "word",
+   "logprob": -9.208870594079599e-06
+  },
+  {
+   "text": " ",
+   "start": 23.44,
+   "end": 23.46,
+   "type": "spacing",
+   "logprob": -1.311301275563892e-06
+  },
+  {
+   "text": "a",
+   "start": 23.46,
+   "end": 23.5,
+   "type": "word",
+   "logprob": -1.311301275563892e-06
+  },
+  {
+   "text": " ",
+   "start": 23.5,
+   "end": 23.54,
+   "type": "spacing",
+   "logprob": -2.622600959512056e-06
+  },
+  {
+   "text": "no",
+   "start": 23.54,
+   "end": 23.6,
+   "type": "word",
+   "logprob": -2.622600959512056e-06
+  },
+  {
+   "text": " ",
+   "start": 23.6,
+   "end": 23.7,
+   "type": "spacing",
+   "logprob": -4.410734163684538e-06
+  },
+  {
+   "text": "sé",
+   "start": 23.7,
+   "end": 23.82,
+   "type": "word",
+   "logprob": -4.410734163684538e-06
+  },
+  {
+   "text": " ",
+   "start": 23.82,
+   "end": 23.84,
+   "type": "spacing",
+   "logprob": -7.390948667307384e-06
+  },
+  {
+   "text": "qué",
+   "start": 23.84,
+   "end": 23.94,
+   "type": "word",
+   "logprob": -7.390948667307384e-06
+  },
+  {
+   "text": " ",
+   "start": 23.94,
+   "end": 23.96,
+   "type": "spacing",
+   "logprob": -2.4199192921514623e-05
+  },
+  {
+   "text": "hora",
+   "start": 23.96,
+   "end": 24.1,
+   "type": "word",
+   "logprob": -2.4199192921514623e-05
+  },
+  {
+   "text": " ",
+   "start": 24.1,
+   "end": 24.14,
+   "type": "spacing",
+   "logprob": -2.253030106658116e-05
+  },
+  {
+   "text": "el",
+   "start": 24.14,
+   "end": 24.2,
+   "type": "word",
+   "logprob": -2.253030106658116e-05
+  },
+  {
+   "text": " ",
+   "start": 24.2,
+   "end": 24.24,
+   "type": "spacing",
+   "logprob": -0.00011014331539627165
+  },
+  {
+   "text": "doble",
+   "start": 24.24,
+   "end": 24.48,
+   "type": "word",
+   "logprob": -0.00011014331539627165
+  },
+  {
+   "text": " ",
+   "start": 24.48,
+   "end": 24.5,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "de",
+   "start": 24.5,
+   "end": 24.58,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 24.58,
+   "end": 24.62,
+   "type": "spacing",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": "las",
+   "start": 24.62,
+   "end": 24.72,
+   "type": "word",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": " ",
+   "start": 24.72,
+   "end": 24.78,
+   "type": "spacing",
+   "logprob": -0.0001541257370263338
+  },
+  {
+   "text": "campanas.",
+   "start": 24.78,
+   "end": 25.36,
+   "type": "word",
+   "logprob": -7.412961955724186e-05
+  },
+  {
+   "text": " ",
+   "start": 25.36,
+   "end": 25.36,
+   "type": "spacing",
+   "logprob": -1.1920922133867862e-06
+  },
+  {
+   "text": "Su",
+   "start": 26.98,
+   "end": 27.04,
+   "type": "word",
+   "logprob": -1.1920922133867862e-06
+  },
+  {
+   "text": " ",
+   "start": 27.04,
+   "end": 27.12,
+   "type": "spacing",
+   "logprob": -7.521823135903105e-05
+  },
+  {
+   "text": "tañido",
+   "start": 27.12,
+   "end": 27.46,
+   "type": "word",
+   "logprob": -3.9218728867732956e-05
+  },
+  {
+   "text": " ",
+   "start": 27.46,
+   "end": 27.52,
+   "type": "spacing",
+   "logprob": -7.593343616463244e-05
+  },
+  {
+   "text": "monótono",
+   "start": 27.52,
+   "end": 28.039,
+   "type": "word",
+   "logprob": -0.0001661883018186927
+  },
+  {
+   "text": " ",
+   "start": 28.039,
+   "end": 28.1,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "y",
+   "start": 28.1,
+   "end": 28.119,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 28.119,
+   "end": 28.18,
+   "type": "spacing",
+   "logprob": -2.861018856492592e-06
+  },
+  {
+   "text": "eterno",
+   "start": 28.18,
+   "end": 28.64,
+   "type": "word",
+   "logprob": -2.861018856492592e-06
+  },
+  {
+   "text": " ",
+   "start": 28.64,
+   "end": 29.0,
+   "type": "spacing",
+   "logprob": -2.3841830625315197e-06
+  },
+  {
+   "text": "me",
+   "start": 29.0,
+   "end": 29.1,
+   "type": "word",
+   "logprob": -2.3841830625315197e-06
+  },
+  {
+   "text": " ",
+   "start": 29.1,
+   "end": 29.12,
+   "type": "spacing",
+   "logprob": -7.629365427419543e-06
+  },
+  {
+   "text": "trajo",
+   "start": 29.12,
+   "end": 29.32,
+   "type": "word",
+   "logprob": -4.577619256451726e-06
+  },
+  {
+   "text": " ",
+   "start": 29.32,
+   "end": 29.36,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "a",
+   "start": 29.36,
+   "end": 29.38,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 29.38,
+   "end": 29.42,
+   "type": "spacing",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": "las",
+   "start": 29.42,
+   "end": 29.54,
+   "type": "word",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": " ",
+   "start": 29.54,
+   "end": 29.62,
+   "type": "spacing",
+   "logprob": -8.260862523457035e-05
+  },
+  {
+   "text": "mientes",
+   "start": 29.62,
+   "end": 29.98,
+   "type": "word",
+   "logprob": -0.0007939340794109739
+  },
+  {
+   "text": " ",
+   "start": 29.98,
+   "end": 30.02,
+   "type": "spacing",
+   "logprob": -2.145764938177308e-06
+  },
+  {
+   "text": "esta",
+   "start": 30.02,
+   "end": 30.24,
+   "type": "word",
+   "logprob": -2.145764938177308e-06
+  },
+  {
+   "text": " ",
+   "start": 30.24,
+   "end": 30.26,
+   "type": "spacing",
+   "logprob": -2.634490556374658e-05
+  },
+  {
+   "text": "tradición",
+   "start": 30.26,
+   "end": 30.86,
+   "type": "word",
+   "logprob": -2.634490556374658e-05
+  },
+  {
+   "text": " ",
+   "start": 30.86,
+   "end": 30.98,
+   "type": "spacing",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": "que",
+   "start": 30.98,
+   "end": 31.04,
+   "type": "word",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": " ",
+   "start": 31.04,
+   "end": 31.08,
+   "type": "spacing",
+   "logprob": -1.597391747054644e-05
+  },
+  {
+   "text": "oí",
+   "start": 31.08,
+   "end": 31.2,
+   "type": "word",
+   "logprob": -1.5258672647178173e-05
+  },
+  {
+   "text": " ",
+   "start": 31.2,
+   "end": 31.22,
+   "type": "spacing",
+   "logprob": -6.079655122448457e-06
+  },
+  {
+   "text": "hace",
+   "start": 31.22,
+   "end": 31.44,
+   "type": "word",
+   "logprob": -6.079655122448457e-06
+  },
+  {
+   "text": " ",
+   "start": 31.44,
+   "end": 31.46,
+   "type": "spacing",
+   "logprob": -7.390948667307384e-06
+  },
+  {
+   "text": "poco",
+   "start": 31.46,
+   "end": 31.66,
+   "type": "word",
+   "logprob": -7.390948667307384e-06
+  },
+  {
+   "text": " ",
+   "start": 31.66,
+   "end": 31.7,
+   "type": "spacing",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": "en",
+   "start": 31.7,
+   "end": 31.8,
+   "type": "word",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": " ",
+   "start": 31.8,
+   "end": 31.84,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "Soria.",
+   "start": 31.84,
+   "end": 32.18,
+   "type": "word",
+   "logprob": -9.298260901384007e-06
+  },
+  {
+   "text": " ",
+   "start": 32.18,
+   "end": 32.18,
+   "type": "spacing",
+   "logprob": -0.00010764019680209458
+  },
+  {
+   "text": "Intenté",
+   "start": 34.12,
+   "end": 34.5,
+   "type": "word",
+   "logprob": -9.226302583036678e-05
+  },
+  {
+   "text": " ",
+   "start": 34.5,
+   "end": 34.54,
+   "type": "spacing",
+   "logprob": -1.7881377516459906e-06
+  },
+  {
+   "text": "dormir",
+   "start": 34.54,
+   "end": 34.84,
+   "type": "word",
+   "logprob": -1.7881377516459906e-06
+  },
+  {
+   "text": " ",
+   "start": 34.84,
+   "end": 34.88,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "de",
+   "start": 34.88,
+   "end": 34.94,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 34.94,
+   "end": 35.0,
+   "type": "spacing",
+   "logprob": -0.00026782741770148277
+  },
+  {
+   "text": "nuevo.",
+   "start": 35.0,
+   "end": 35.26,
+   "type": "word",
+   "logprob": -0.00022583196641789982
+  },
+  {
+   "text": " ",
+   "start": 35.26,
+   "end": 35.26,
+   "type": "spacing",
+   "logprob": -6.174850568640977e-05
+  },
+  {
+   "text": "Imposible.",
+   "start": 36.12,
+   "end": 36.68,
+   "type": "word",
+   "logprob": -0.0001538179492854397
+  },
+  {
+   "text": " ",
+   "start": 36.68,
+   "end": 36.7,
+   "type": "spacing",
+   "logprob": -9.179073458653875e-06
+  },
+  {
+   "text": "Una",
+   "start": 38.06,
+   "end": 38.2,
+   "type": "word",
+   "logprob": -9.179073458653875e-06
+  },
+  {
+   "text": " ",
+   "start": 38.2,
+   "end": 38.24,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "vez",
+   "start": 38.24,
+   "end": 38.36,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 38.36,
+   "end": 38.42,
+   "type": "spacing",
+   "logprob": -0.007852991111576557
+  },
+  {
+   "text": "aguijoneada,",
+   "start": 38.42,
+   "end": 39.14,
+   "type": "word",
+   "logprob": -0.002125654855854956
+  },
+  {
+   "text": " ",
+   "start": 39.14,
+   "end": 39.34,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "la",
+   "start": 39.34,
+   "end": 39.38,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 39.38,
+   "end": 39.42,
+   "type": "spacing",
+   "logprob": -6.925819616299123e-05
+  },
+  {
+   "text": "imaginación",
+   "start": 39.42,
+   "end": 40.06,
+   "type": "word",
+   "logprob": -3.7885569975576964e-05
+  },
+  {
+   "text": " ",
+   "start": 40.06,
+   "end": 40.08,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "es",
+   "start": 40.08,
+   "end": 40.16,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 40.16,
+   "end": 40.22,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "un",
+   "start": 40.22,
+   "end": 40.32,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 40.32,
+   "end": 40.34,
+   "type": "spacing",
+   "logprob": -1.7165990357170813e-05
+  },
+  {
+   "text": "caballo",
+   "start": 40.34,
+   "end": 40.7,
+   "type": "word",
+   "logprob": -1.7165990357170813e-05
+  },
+  {
+   "text": " ",
+   "start": 40.7,
+   "end": 40.78,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "que",
+   "start": 40.78,
+   "end": 40.86,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 40.86,
+   "end": 40.9,
+   "type": "spacing",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": "se",
+   "start": 40.9,
+   "end": 40.98,
+   "type": "word",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": " ",
+   "start": 40.98,
+   "end": 41.02,
+   "type": "spacing",
+   "logprob": -4.8397800128441304e-05
+  },
+  {
+   "text": "desboca",
+   "start": 41.02,
+   "end": 41.5,
+   "type": "word",
+   "logprob": -7.947500541506867e-05
+  },
+  {
+   "text": " ",
+   "start": 41.5,
+   "end": 42.2,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "y",
+   "start": 42.2,
+   "end": 42.24,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 42.24,
+   "end": 42.28,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "al",
+   "start": 42.28,
+   "end": 42.38,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 42.38,
+   "end": 42.4,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "que",
+   "start": 42.4,
+   "end": 42.5,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 42.5,
+   "end": 42.54,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "no",
+   "start": 42.54,
+   "end": 42.66,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 42.66,
+   "end": 42.72,
+   "type": "spacing",
+   "logprob": -1.883488948806189e-05
+  },
+  {
+   "text": "sirve",
+   "start": 42.72,
+   "end": 43.0,
+   "type": "word",
+   "logprob": -1.883488948806189e-05
+  },
+  {
+   "text": " ",
+   "start": 43.0,
+   "end": 43.02,
+   "type": "spacing",
+   "logprob": -0.0017041935352608562
+  },
+  {
+   "text": "tirarle",
+   "start": 43.02,
+   "end": 43.42,
+   "type": "word",
+   "logprob": -0.0007310498535194451
+  },
+  {
+   "text": " ",
+   "start": 43.42,
+   "end": 43.46,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "de",
+   "start": 43.46,
+   "end": 43.54,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 43.54,
+   "end": 43.58,
+   "type": "spacing",
+   "logprob": -0.00023052419419400394
+  },
+  {
+   "text": "la",
+   "start": 43.58,
+   "end": 43.64,
+   "type": "word",
+   "logprob": -0.00023052419419400394
+  },
+  {
+   "text": " ",
+   "start": 43.64,
+   "end": 43.74,
+   "type": "spacing",
+   "logprob": -8.940656698541716e-06
+  },
+  {
+   "text": "rienda.",
+   "start": 43.74,
+   "end": 44.1,
+   "type": "word",
+   "logprob": -0.000314252838766801
+  },
+  {
+   "text": " ",
+   "start": 44.1,
+   "end": 44.12,
+   "type": "spacing",
+   "logprob": -7.152555099310121e-07
+  },
+  {
+   "text": "Por",
+   "start": 45.68,
+   "end": 45.8,
+   "type": "word",
+   "logprob": -7.152555099310121e-07
+  },
+  {
+   "text": " ",
+   "start": 45.8,
+   "end": 45.82,
+   "type": "spacing",
+   "logprob": -1.7404405298293568e-05
+  },
+  {
+   "text": "pasar",
+   "start": 45.82,
+   "end": 46.06,
+   "type": "word",
+   "logprob": -1.7404405298293568e-05
+  },
+  {
+   "text": " ",
+   "start": 46.06,
+   "end": 46.1,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "el",
+   "start": 46.1,
+   "end": 46.2,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 46.2,
+   "end": 46.28,
+   "type": "spacing",
+   "logprob": -0.00011312322021694854
+  },
+  {
+   "text": "rato,",
+   "start": 46.28,
+   "end": 46.58,
+   "type": "word",
+   "logprob": -0.02547610784531571
+  },
+  {
+   "text": " ",
+   "start": 46.58,
+   "end": 46.78,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": "me",
+   "start": 46.78,
+   "end": 46.86,
+   "type": "word",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": " ",
+   "start": 46.86,
+   "end": 46.9,
+   "type": "spacing",
+   "logprob": -3.0517112463712692e-05
+  },
+  {
+   "text": "decidí",
+   "start": 46.9,
+   "end": 47.2,
+   "type": "word",
+   "logprob": -2.6066708718038473e-05
+  },
+  {
+   "text": " ",
+   "start": 47.2,
+   "end": 47.22,
+   "type": "spacing",
+   "logprob": -3.814689989667386e-06
+  },
+  {
+   "text": "a",
+   "start": 47.22,
+   "end": 47.24,
+   "type": "word",
+   "logprob": -3.814689989667386e-06
+  },
+  {
+   "text": " ",
+   "start": 47.24,
+   "end": 47.26,
+   "type": "spacing",
+   "logprob": -0.000876757490914315
+  },
+  {
+   "text": "escribirla,",
+   "start": 47.26,
+   "end": 47.82,
+   "type": "word",
+   "logprob": -0.000638313716282565
+  },
+  {
+   "text": " ",
+   "start": 47.82,
+   "end": 47.84,
+   "type": "spacing",
+   "logprob": -5.960462772236497e-07
+  },
+  {
+   "text": "como",
+   "start": 48.32,
+   "end": 48.44,
+   "type": "word",
+   "logprob": -5.960462772236497e-07
+  },
+  {
+   "text": " ",
+   "start": 48.44,
+   "end": 48.46,
+   "type": "spacing",
+   "logprob": -4.172316494077677e-06
+  },
+  {
+   "text": "en",
+   "start": 48.46,
+   "end": 48.52,
+   "type": "word",
+   "logprob": -4.172316494077677e-06
+  },
+  {
+   "text": " ",
+   "start": 48.52,
+   "end": 48.56,
+   "type": "spacing",
+   "logprob": -6.9141146923357155e-06
+  },
+  {
+   "text": "efecto",
+   "start": 48.56,
+   "end": 48.88,
+   "type": "word",
+   "logprob": -6.9141146923357155e-06
+  },
+  {
+   "text": " ",
+   "start": 48.88,
+   "end": 48.94,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "lo",
+   "start": 48.94,
+   "end": 49.02,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 49.02,
+   "end": 49.06,
+   "type": "spacing",
+   "logprob": -2.3841830625315197e-06
+  },
+  {
+   "text": "hice.",
+   "start": 49.08,
+   "end": 49.34,
+   "type": "word",
+   "logprob": -1.955030160161186e-06
+  },
+  {
+   "text": " ",
+   "start": 49.34,
+   "end": 49.34,
+   "type": "spacing",
+   "logprob": -4.410734163684538e-06
+  },
+  {
+   "text": "Yo",
+   "start": 51.52,
+   "end": 51.62,
+   "type": "word",
+   "logprob": -4.410734163684538e-06
+  },
+  {
+   "text": " ",
+   "start": 51.62,
+   "end": 51.68,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "no",
+   "start": 51.68,
+   "end": 51.78,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 51.78,
+   "end": 51.82,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": "la",
+   "start": 51.82,
+   "end": 51.92,
+   "type": "word",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": " ",
+   "start": 51.92,
+   "end": 51.96,
+   "type": "spacing",
+   "logprob": -3.45700973412022e-05
+  },
+  {
+   "text": "oí",
+   "start": 51.96,
+   "end": 52.06,
+   "type": "word",
+   "logprob": -2.515279993531294e-05
+  },
+  {
+   "text": " ",
+   "start": 52.06,
+   "end": 52.1,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "en",
+   "start": 52.1,
+   "end": 52.159,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 52.159,
+   "end": 52.22,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "el",
+   "start": 52.22,
+   "end": 52.299,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 52.299,
+   "end": 52.34,
+   "type": "spacing",
+   "logprob": -4.768258077092469e-05
+  },
+  {
+   "text": "mismo",
+   "start": 52.34,
+   "end": 52.58,
+   "type": "word",
+   "logprob": -4.768258077092469e-05
+  },
+  {
+   "text": " ",
+   "start": 52.58,
+   "end": 52.6,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": "lugar",
+   "start": 52.6,
+   "end": 52.82,
+   "type": "word",
+   "logprob": -3.576278118089249e-07
+  },
+  {
+   "text": " ",
+   "start": 52.82,
+   "end": 52.86,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "en",
+   "start": 52.86,
+   "end": 52.94,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 52.94,
+   "end": 52.96,
+   "type": "spacing",
+   "logprob": 0.0
+  },
+  {
+   "text": "que",
+   "start": 52.96,
+   "end": 53.02,
+   "type": "word",
+   "logprob": 0.0
+  },
+  {
+   "text": " ",
+   "start": 53.02,
+   "end": 53.06,
+   "type": "spacing",
+   "logprob": -0.0004456242313608527
+  },
+  {
+   "text": "acaeció",
+   "start": 53.06,
+   "end": 53.56,
+   "type": "word",
+   "logprob": -0.002064585153545652
+  },
+  {
+   "text": " ",
+   "start": 53.56,
+   "end": 53.56,
+   "type": "spacing",
+   "logprob": -1.6689160474925302e-05
+  },
+  {
+   "text": "y",
+   "start": 54.72,
+   "end": 54.76,
+   "type": "word",
+   "logprob": -1.6689160474925302e-05
+  },
+  {
+   "text": " ",
+   "start": 54.76,
+   "end": 54.82,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "la",
+   "start": 54.82,
+   "end": 54.86,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 54.86,
+   "end": 54.88,
+   "type": "spacing",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": "he",
+   "start": 54.88,
+   "end": 54.96,
+   "type": "word",
+   "logprob": -2.3841855067985307e-07
+  },
+  {
+   "text": " ",
+   "start": 54.96,
+   "end": 55.0,
+   "type": "spacing",
+   "logprob": -1.2636104656849056e-05
+  },
+  {
+   "text": "escrito",
+   "start": 55.0,
+   "end": 55.44,
+   "type": "word",
+   "logprob": -1.2636104656849056e-05
+  },
+  {
+   "text": " ",
+   "start": 55.44,
+   "end": 55.48,
+   "type": "spacing",
+   "logprob": -0.00044943721150048077
+  },
+  {
+   "text": "volviendo",
+   "start": 55.48,
+   "end": 55.78,
+   "type": "word",
+   "logprob": -0.00018724307058922326
+  },
+  {
+   "text": " ",
+   "start": 55.78,
+   "end": 55.82,
+   "type": "spacing",
+   "logprob": -2.2649508537142538e-05
+  },
+  {
+   "text": "algunas",
+   "start": 55.82,
+   "end": 56.18,
+   "type": "word",
+   "logprob": -2.2649508537142538e-05
+  },
+  {
+   "text": " ",
+   "start": 56.18,
+   "end": 56.22,
+   "type": "spacing",
+   "logprob": -1.7881377516459906e-06
+  },
+  {
+   "text": "veces",
+   "start": 56.22,
+   "end": 56.5,
+   "type": "word",
+   "logprob": -1.7881377516459906e-06
+  },
+  {
+   "text": " ",
+   "start": 56.5,
+   "end": 56.54,
+   "type": "spacing",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": "la",
+   "start": 56.54,
+   "end": 56.64,
+   "type": "word",
+   "logprob": -1.1920928244535389e-07
+  },
+  {
+   "text": " ",
+   "start": 56.64,
+   "end": 56.68,
+   "type": "spacing",
+   "logprob": -2.7418097943154862e-06
+  },
+  {
+   "text": "cabeza",
+   "start": 56.68,
+   "end": 57.08,
+   "type": "word",
+   "logprob": -2.7418097943154862e-06
+  }
+ ],
+ "transcription_id": "xg4CAoH7WVN6f86PBIIz",
+ "audio_duration_secs": 38.0,
+ "offset": 20.0
+}

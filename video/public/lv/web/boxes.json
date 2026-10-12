@@ -1,0 +1,1078 @@
+{
+ "home:Free public domain audiobooks": [
+  258,
+  305,
+  764,
+  38
+ ],
+ "home:Read by volunteers from around the world.": [
+  421,
+  361,
+  438,
+  22
+ ],
+ "home:VOLUNTEER": null,
+ "home:CATALOG": null,
+ "home:BROWSE THE CATALOG": null,
+ "home:Language": [
+  880,
+  809,
+  239,
+  42
+ ],
+ "home:Author": [
+  160,
+  809,
+  239,
+  42
+ ],
+ "home:Title": [
+  400,
+  809,
+  239,
+  42
+ ],
+ "home:Genre/Subject": [
+  640,
+  809,
+  239,
+  42
+ ],
+ "home:search": null,
+ "home:Volunteer": [
+  374,
+  586,
+  150,
+  36
+ ],
+ "home:Catalog": [
+  756,
+  586,
+  150,
+  36
+ ],
+ "home:Browse the catalog": [
+  160,
+  789,
+  960,
+  15
+ ],
+ "home:p:LibriVox audiobooks are read by volunteers": [
+  298,
+  499,
+  301,
+  67
+ ],
+ "home:p:LibriVox audiobooks are free for anyone": [
+  680,
+  499,
+  302,
+  67
+ ],
+ "home:logo": [
+  160,
+  55,
+  576,
+  64
+ ],
+ "lang:English": [
+  430,
+  284,
+  690,
+  75
+ ],
+ "lang:French": [
+  430,
+  364,
+  690,
+  75
+ ],
+ "lang:German": [
+  430,
+  444,
+  690,
+  75
+ ],
+ "lang:Italian": [
+  430,
+  524,
+  690,
+  75
+ ],
+ "lang:Spanish": [
+  430,
+  604,
+  690,
+  75
+ ],
+ "lang:LanguageTab": [
+  880,
+  185,
+  239,
+  44
+ ],
+ "es_list:items": [
+  {
+   "text": "El 19 de Marzo y el 2 de Mayo Benito Pérez Galdós (1843 - 1920) Complete | Solo ",
+   "box": [
+    430,
+    307,
+    690,
+    88
+   ],
+   "meta": [
+    520,
+    360,
+    430,
+    11
+   ]
+  },
+  {
+   "text": "El 19 de Marzo y el 2 de Mayo (Version 2) Benito Pérez Galdós (1843 - 1920) Comp",
+   "box": [
+    430,
+    400,
+    690,
+    88
+   ],
+   "meta": [
+    520,
+    453,
+    430,
+    11
+   ]
+  },
+  {
+   "text": "20 Poemas Para Ser Leídos En El Tranvía Oliverio Girondo (1891 - 1967) Complete ",
+   "box": [
+    430,
+    493,
+    690,
+    88
+   ],
+   "meta": [
+    520,
+    546,
+    430,
+    11
+   ]
+  },
+  {
+   "text": "20000 Leguas de Viaje Submarino Jules Verne (1828 - 1905) Complete | Solo | Span",
+   "box": [
+    430,
+    586,
+    690,
+    88
+   ],
+   "meta": [
+    520,
+    639,
+    430,
+    11
+   ]
+  },
+  {
+   "text": "A Amado Nervo (in Multilingual Poetry Collection 018) Rubén Darío (1867 - 1916) ",
+   "box": [
+    430,
+    679,
+    690,
+    88
+   ],
+   "meta": [
+    520,
+    732,
+    430,
+    11
+   ]
+  },
+  {
+   "text": "A buen juez mejor testigo (in Las Cien Mejores Poesías de la Lengua Castellana) ",
+   "box": [
+    430,
+    772,
+    690,
+    92
+   ],
+   "meta": [
+    520,
+    843,
+    430,
+    11
+   ]
+  }
+ ],
+ "es_list:Project type": [
+  160,
+  274,
+  240,
+  25
+ ],
+ "es_list:solo": [
+  160,
+  324,
+  240,
+  22
+ ],
+ "es_list:group": [
+  160,
+  346,
+  240,
+  22
+ ],
+ "es_list:Browsing": null,
+ "quijote:items": [
+  {
+   "text": "Title Don Quijote 1 Miguel de Cervantes Saavedra (1547 - 1616) Complete | Collaborative | ",
+   "box": [
+    430,
+    274,
+    690,
+    88
+   ],
+   "meta": [
+    586,
+    327,
+    393,
+    11
+   ]
+  },
+  {
+   "text": "Title Don Quijote 2 Miguel de Cervantes Saavedra (1547 - 1616) Complete | Collaborative | ",
+   "box": [
+    430,
+    367,
+    690,
+    88
+   ],
+   "meta": [
+    586,
+    420,
+    393,
+    11
+   ]
+  },
+  {
+   "text": "Title El ingenioso hidalgo Don Quijote de la Mancha Miguel de Cervantes Saavedra (1547 - 1",
+   "box": [
+    430,
+    460,
+    690,
+    88
+   ],
+   "meta": [
+    586,
+    513,
+    393,
+    11
+   ]
+  },
+  {
+   "text": "Title Spanish - Hamlet y Don Quijote (in Multilingual Short Works Collection 038 - Poetry ",
+   "box": [
+    430,
+    553,
+    690,
+    92
+   ],
+   "meta": [
+    586,
+    624,
+    393,
+    11
+   ]
+  },
+  {
+   "text": "Title Spanish - Las mujeres del Quijote (in Multilingual Short Works Collection 041 - Poet",
+   "box": [
+    430,
+    650,
+    690,
+    92
+   ],
+   "meta": [
+    586,
+    721,
+    393,
+    11
+   ]
+  }
+ ],
+ "quijote:search": [
+  835,
+  90,
+  250,
+  35
+ ],
+ "book:Listen/Download": [
+  160,
+  490,
+  240,
+  25
+ ],
+ "book:Whole book (zip file)": [
+  160,
+  525,
+  120,
+  22
+ ],
+ "book:Subscribe by iTunes": [
+  160,
+  563,
+  120,
+  22
+ ],
+ "book:RSS Feed": [
+  160,
+  602,
+  120,
+  22
+ ],
+ "book:Download torrent": [
+  160,
+  640,
+  120,
+  22
+ ],
+ "book:Production details": [
+  160,
+  699,
+  240,
+  25
+ ],
+ "book:Running Time:": [
+  160,
+  734,
+  120,
+  22
+ ],
+ "book:10:04:53": [
+  280,
+  734,
+  120,
+  22
+ ],
+ "book:Zip file size:": [
+  160,
+  756,
+  120,
+  22
+ ],
+ "book:Read by:": [
+  160,
+  801,
+  120,
+  22
+ ],
+ "book:Proof Listener:": [
+  160,
+  868,
+  120,
+  22
+ ],
+ "book:Links": [
+  160,
+  910,
+  240,
+  25
+ ],
+ "book:Internet Archive Page": [
+  160,
+  948,
+  124,
+  15
+ ],
+ "book:M4B audio book, part 1": [
+  160,
+  1016,
+  134,
+  15
+ ],
+ "book:M4B audio book, part 2": [
+  160,
+  1038,
+  134,
+  15
+ ],
+ "book:Leyendas": [
+  448,
+  292,
+  654,
+  18
+ ],
+ "book:Language:": [
+  448,
+  552,
+  71,
+  16
+ ],
+ "book:SECTION": null,
+ "book:CHAPTER": null,
+ "book:READER": null,
+ "book:TIME": null,
+ "book:btn:Download": [
+  285,
+  525,
+  80,
+  28
+ ],
+ "book:btn:iTunes": [
+  285,
+  563,
+  80,
+  28
+ ],
+ "book:btn:RSS": [
+  285,
+  602,
+  80,
+  28
+ ],
+ "book:btn:Torrent": [
+  285,
+  640,
+  80,
+  28
+ ],
+ "book:cover": [
+  927,
+  292,
+  175,
+  175
+ ],
+ "book:notice": [
+  160,
+  347,
+  240,
+  123
+ ],
+ "book:row:El rayo de luna": [
+  430,
+  1292,
+  690,
+  71
+ ],
+ "book:title:El rayo de luna": [
+  499,
+  1310,
+  100,
+  16
+ ],
+ "book:row:El monte de las ánimas": [
+  430,
+  1216,
+  690,
+  71
+ ],
+ "book:title:El monte de las ánimas": [
+  499,
+  1234,
+  155,
+  16
+ ],
+ "book:row:El miserere": [
+  430,
+  1140,
+  690,
+  71
+ ],
+ "book:title:El miserere": [
+  499,
+  1158,
+  76,
+  16
+ ],
+ "book:row:Los ojos verdes": [
+  430,
+  2133,
+  690,
+  71
+ ],
+ "book:title:Los ojos verdes": [
+  499,
+  2151,
+  107,
+  16
+ ],
+ "book:row:Creed en Dios": [
+  430,
+  681,
+  690,
+  71
+ ],
+ "book:title:Creed en Dios": [
+  499,
+  699,
+  94,
+  16
+ ],
+ "book:row:Tres fechas": [
+  430,
+  2286,
+  690,
+  71
+ ],
+ "book:title:Tres fechas": [
+  499,
+  2304,
+  77,
+  16
+ ],
+ "book:readers": [
+  {
+   "sec": "Play 01",
+   "title": "Creed en Dios",
+   "reader": "Aldariel",
+   "time": "00:23:22",
+   "row": [
+    430,
+    681,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    696,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    681,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 02",
+   "title": "El Cristo de la calavera",
+   "reader": "Gabriela Cowan",
+   "time": "00:27:00",
+   "row": [
+    430,
+    758,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    773,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    758,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 03",
+   "title": "El beso",
+   "reader": "Marial",
+   "time": "00:29:48",
+   "row": [
+    430,
+    834,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    849,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    834,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 04",
+   "title": "El caudillo de las manos rojas, 1ra parte",
+   "reader": "Gabriela Cowan",
+   "time": "00:33:40",
+   "row": [
+    430,
+    910,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    925,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    910,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 05",
+   "title": "El caudillo de las manos rojas, 2da parte",
+   "reader": "Gabriela Cowan",
+   "time": "00:46:39",
+   "row": [
+    430,
+    987,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1002,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    987,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 06",
+   "title": "El gnomo",
+   "reader": "Gabriela Cowan",
+   "time": "00:37:57",
+   "row": [
+    430,
+    1063,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1078,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1063,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 07",
+   "title": "El miserere",
+   "reader": "Vicente Cepeda",
+   "time": "00:23:04",
+   "row": [
+    430,
+    1140,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1155,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1140,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 08",
+   "title": "El monte de las ánimas",
+   "reader": "Elena del Valle",
+   "time": "00:19:21",
+   "row": [
+    430,
+    1216,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1231,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1216,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 09",
+   "title": "El rayo de luna",
+   "reader": "Omar",
+   "time": "00:24:53",
+   "row": [
+    430,
+    1292,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1307,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1292,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 10",
+   "title": "¡Es raro!",
+   "reader": "frauka",
+   "time": "00:23:15",
+   "row": [
+    430,
+    1369,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1384,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1369,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 11",
+   "title": "La ajorca de oro",
+   "reader": "frauka",
+   "time": "00:16:45",
+   "row": [
+    430,
+    1445,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1460,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1445,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 12",
+   "title": "La arquitectura árabe en Toledo",
+   "reader": "frauka",
+   "time": "00:18:38",
+   "row": [
+    430,
+    1522,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1537,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1522,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 13",
+   "title": "La corza blanca",
+   "reader": "frauka",
+   "time": "00:46:39",
+   "row": [
+    430,
+    1598,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1613,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1598,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 14",
+   "title": "La creación",
+   "reader": "Legentis",
+   "time": "00:17:05",
+   "row": [
+    430,
+    1674,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1689,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1674,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 15",
+   "title": "La cruz del Diablo",
+   "reader": "Gabriela Cowan",
+   "time": "00:42:13",
+   "row": [
+    430,
+    1751,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1766,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1751,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 16",
+   "title": "La cueva de la mora",
+   "reader": "DreamVoz",
+   "time": "00:12:29",
+   "row": [
+    430,
+    1827,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1842,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1827,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 17",
+   "title": "La promesa",
+   "reader": "Rosacarmela",
+   "time": "00:27:06",
+   "row": [
+    430,
+    1904,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1919,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1904,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 18",
+   "title": "La rosa de pasión",
+   "reader": "Legentis",
+   "time": "00:21:29",
+   "row": [
+    430,
+    1980,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    1995,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    1980,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 19",
+   "title": "Las hojas secas",
+   "reader": "sabandija",
+   "time": "00:08:43",
+   "row": [
+    430,
+    2057,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    2072,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    2057,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 20",
+   "title": "Los ojos verdes",
+   "reader": "Rosacarmela",
+   "time": "00:20:40",
+   "row": [
+    430,
+    2133,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    2148,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    2133,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 21",
+   "title": "Maese Pérez el organista",
+   "reader": "Gabriela Cowan",
+   "time": "00:36:55",
+   "row": [
+    430,
+    2209,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    2224,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    2209,
+    162,
+    71
+   ]
+  },
+  {
+   "sec": "Play 22",
+   "title": "Tres fechas",
+   "reader": "Gabriela Cowan",
+   "time": "00:47:12",
+   "row": [
+    430,
+    2286,
+    690,
+    71
+   ],
+   "play": [
+    450,
+    2301,
+    13,
+    19
+   ],
+   "readerBox": [
+    862,
+    2286,
+    162,
+    71
+   ]
+  }
+ ],
+ "book:height": 2535,
+ "forum:Post Your 1-Minute Test Recording Here": [
+  82,
+  325,
+  251,
+  15
+ ],
+ "forum:New Here? Introduce Yourself!": [
+  82,
+  284,
+  192,
+  15
+ ],
+ "forum:What is LibriVox & FAQ": [
+  82,
+  243,
+  146,
+  15
+ ],
+ "forum:Register": [
+  1152,
+  117,
+  41,
+  12
+ ],
+ "forum:STATISTICS": null
+}

@@ -19,3 +19,12 @@ web/elevenreader-resena/dist/
 web/elevenreader-resena/preview/
 web/elevenreader-resena/media/audio/*.mp3
 web/elevenreader-resena/preview-movil/
+# LibriVox: grabaciones completas descargadas de archive.org (dominio público, pero pesan demasiado para git)
+captures/librivox/audio/*.mp3
+deliverables/librivox/*.mp4
+web/librivox-resena/dist/
+web/librivox-resena/preview/
+web/librivox-resena/preview-movil/
+# Capturas y portadas originales de LibriVox: las mismas imágenes están en video/public/lv (web/ e img/)
+captures/librivox/web/
+captures/librivox/covers/

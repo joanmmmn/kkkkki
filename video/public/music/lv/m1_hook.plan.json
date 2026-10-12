@@ -1,0 +1,68 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental warm cinematic storybook intro for a YouTube explainer about free audiobooks",
+   "tempo 100 BPM",
+   "felt piano, warm acoustic guitar, soft celesta, gentle strings, deep soft bass, light modern percussion",
+   "wonder, warmth, curiosity",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies",
+   "aggressive rock"
+  ],
+  "sections": [
+   {
+    "section_name": "Human voice cold open",
+    "positive_local_styles": [
+     "almost silent warm sustained pad",
+     "a few distant soft piano notes",
+     "intimate, like a quiet library at night",
+     "no drums"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "bass",
+     "melody"
+    ],
+    "duration_ms": 6180,
+    "lines": []
+   },
+   {
+    "section_name": "Build",
+    "positive_local_styles": [
+     "acoustic guitar pattern enters",
+     "soft kick builds",
+     "rising strings",
+     "ends with a warm confident hit and a short pause"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 14160,
+    "lines": []
+   },
+   {
+    "section_name": "Promise",
+    "positive_local_styles": [
+     "bright optimistic groove at full energy",
+     "plucked guitar and piano motif",
+     "claps and shaker",
+     "friendly momentum"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 17040,
+    "lines": []
+   }
+  ]
+ }
+}

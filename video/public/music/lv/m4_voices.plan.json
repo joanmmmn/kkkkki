@@ -1,0 +1,64 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental intimate acoustic underscore",
+   "tempo 76 BPM",
+   "warm felt piano, soft string pad, gentle nylon guitar, airy textures",
+   "tender, human, hopeful",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies",
+   "aggressive rock"
+  ],
+  "sections": [
+   {
+    "section_name": "Voices",
+    "positive_local_styles": [
+     "very sparse soft pad and few piano notes",
+     "lots of space for real voices",
+     "no percussion"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "bass",
+     "busy melody"
+    ],
+    "duration_ms": 16660,
+    "lines": []
+   },
+   {
+    "section_name": "Advice",
+    "positive_local_styles": [
+     "gently lifts",
+     "soft pulse enters"
+    ],
+    "negative_local_styles": [
+     "heavy drums"
+    ],
+    "duration_ms": 6040,
+    "lines": []
+   },
+   {
+    "section_name": "Become a volunteer",
+    "positive_local_styles": [
+     "hopeful community feeling",
+     "warm acoustic guitar strums and light percussion",
+     "grows steadily, uplifting"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 20960,
+    "lines": []
+   }
+  ]
+ }
+}

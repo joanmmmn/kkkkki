@@ -1,0 +1,74 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental modern warm chill beat that resolves into an uplifting outro",
+   "tempo 90 BPM",
+   "dusty soft drums, warm Rhodes electric piano, deep round bass, acoustic guitar, soft synth pads",
+   "thoughtful then confident",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies",
+   "aggressive rock"
+  ],
+  "sections": [
+   {
+    "section_name": "The best",
+    "positive_local_styles": [
+     "head-nodding positive beat",
+     "warm Rhodes chords"
+    ],
+    "negative_local_styles": [
+     "tense"
+    ],
+    "duration_ms": 9280,
+    "lines": []
+   },
+   {
+    "section_name": "The worst",
+    "positive_local_styles": [
+     "same beat with darker minor chords",
+     "filtered"
+    ],
+    "negative_local_styles": [
+     "triumphant"
+    ],
+    "duration_ms": 7860,
+    "lines": []
+   },
+   {
+    "section_name": "The verdict",
+    "positive_local_styles": [
+     "satisfying resolution",
+     "uplifting full chords",
+     "confident hit at the start then warm groove"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 13400,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "uplifting brand outro",
+     "warm resolving chords",
+     "final hit then soft decay to silence"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 11800,
+    "lines": []
+   }
+  ]
+ }
+}

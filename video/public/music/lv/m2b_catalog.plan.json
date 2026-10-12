@@ -1,0 +1,52 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental warm documentary background about a vast library of classic books",
+   "tempo 96 BPM",
+   "felt piano, pizzicato strings, nylon guitar, soft marimba, warm upright bass, brushed drums",
+   "curious, literary, steady",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies",
+   "aggressive rock"
+  ],
+  "sections": [
+   {
+    "section_name": "Classics catalogue",
+    "positive_local_styles": [
+     "warm steady groove from the first beat",
+     "marimba and plucked strings",
+     "sense of a vast library opening up"
+    ],
+    "negative_local_styles": [
+     "tense",
+     "slow intro",
+     "silence"
+    ],
+    "duration_ms": 26340,
+    "lines": []
+   },
+   {
+    "section_name": "A careful note",
+    "positive_local_styles": [
+     "same groove thinned out",
+     "a hint of caution in minor chords",
+     "soft and thoughtful"
+    ],
+    "negative_local_styles": [
+     "triumphant"
+    ],
+    "duration_ms": 16740,
+    "lines": []
+   }
+  ]
+ }
+}

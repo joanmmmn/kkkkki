@@ -1,0 +1,52 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental warm documentary background about a library of books",
+   "tempo 92 BPM",
+   "felt piano, pizzicato strings, nylon guitar, soft marimba, warm upright bass, brushed drums",
+   "curious, literary, clear",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "heavy EDM drop",
+   "harsh high frequencies",
+   "aggressive rock"
+  ],
+  "sections": [
+   {
+    "section_name": "What it is",
+    "positive_local_styles": [
+     "light curious piano motif",
+     "pizzicato strings",
+     "soft brushes"
+    ],
+    "negative_local_styles": [
+     "heavy drums"
+    ],
+    "duration_ms": 19100,
+    "lines": []
+   },
+   {
+    "section_name": "Recording disclaimer",
+    "positive_local_styles": [
+     "quiet but continuous warm sustained string pad with soft low piano",
+     "never silent",
+     "no percussion"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "silence",
+     "busy melody"
+    ],
+    "duration_ms": 8920,
+    "lines": []
+   }
+  ]
+ }
+}

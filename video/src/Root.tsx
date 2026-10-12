@@ -14,11 +14,18 @@ import { ER_TOTAL } from './scenes/er/timeline';
 import { ElevenReaderReview } from './scenes/er2/Main';
 import { ER2_TOTAL } from './scenes/er2/timeline';
 import { ERCover } from './scenes/er2/Cover';
+import { LibriVoxReview } from './scenes/lv/Main';
+import { LV_TOTAL } from './scenes/lv/timeline';
+import { LVCover } from './scenes/lv/Cover';
 import { Cover } from './scenes/elt2/Cover';
 import { CoverProposal } from './scenes/elt2/CoverProposal';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="LVReview" component={LibriVoxReview} durationInFrames={LV_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="LVCover" component={LVCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="LVCover1080" component={LVCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
+    <Composition id="LVCoverOG" component={LVCover} durationInFrames={1} fps={FPS} width={1200} height={630} />
     <Composition id="ERReview" component={ElevenReaderReview} durationInFrames={ER2_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="ERCover" component={ERCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="ERCover1080" component={ERCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
