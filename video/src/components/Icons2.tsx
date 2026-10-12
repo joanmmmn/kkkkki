@@ -97,3 +97,9 @@ export const CalendarIcon: React.FC<P> = ({ size = 40, c = color.ink, sw = 1.8 }
 export const InfinityIcon: React.FC<P> = ({ size = 40, c = color.ink, sw = 2.2 }) => (
   <S size={size}><path d="M12 12c-2-2.6-3.6-3.9-5.4-3.9a3.9 3.9 0 0 0 0 7.8c1.8 0 3.4-1.3 5.4-3.9zm0 0c2 2.6 3.6 3.9 5.4 3.9a3.9 3.9 0 0 0 0-7.8c-1.8 0-3.4 1.3-5.4 3.9z" stroke={c} strokeWidth={sw} /></S>
 );
+export const LinkIcon: React.FC<P> = ({ size = 40, c = color.ink, sw = 1.9 }) => (
+  <S size={size}><path d="M10 14a4.2 4.2 0 0 0 6 0l3.2-3.2a4.2 4.2 0 0 0-6-6L11.8 6.2" stroke={c} strokeWidth={sw} /><path d="M14 10a4.2 4.2 0 0 0-6 0l-3.2 3.2a4.2 4.2 0 0 0 6 6l1.4-1.4" stroke={c} strokeWidth={sw} /></S>
+);
+export const DocIcon: React.FC<P> = ({ size = 40, c = color.ink, sw = 1.8 }) => (
+  <S size={size}><path d="M6.5 2.5h7.5l4.5 4.5v12.4a2.1 2.1 0 0 1-2.1 2.1H6.5a2.1 2.1 0 0 1-2.1-2.1V4.6a2.1 2.1 0 0 1 2.1-2.1z" stroke={c} strokeWidth={sw} /><path d="M13.8 2.7V7.2h4.5M8 12h8M8 15.5h8M8 9h3.5" stroke={c} strokeWidth={sw} /></S>
+);

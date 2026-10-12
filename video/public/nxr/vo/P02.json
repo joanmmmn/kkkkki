@@ -1,8 +1,8 @@
 {
  "id": "P02",
- "hash": "bb243b09525e",
- "text": "Puedes activarlos desde tres sitios: la portada de SonorBooks, la ficha de cualquier libro que esté en Nextory o nuestra comparativa de plataformas. Te dejamos el enlace directo en la descripción.",
- "duration": 12.24,
+ "hash": "f2fb0158c380",
+ "text": "Puedes activarlos desde tres sitios: la portada de SonorBooks, la ficha de cualquier libro que esté en Nextory o nuestra comparativa de plataformas. Te dejamos en la descripción el enlace directo y la reseña completa por escrito.",
+ "duration": 13.92,
  "words": [
   {
    "w": "Puedes",
@@ -12,153 +12,183 @@
   {
    "w": "activarlos",
    "s": 0.32,
-   "e": 0.96
+   "e": 0.88
   },
   {
    "w": "desde",
-   "s": 1.04,
+   "s": 0.96,
    "e": 1.28
   },
   {
    "w": "tres",
-   "s": 1.36,
+   "s": 1.4,
    "e": 1.52
   },
   {
    "w": "sitios:",
-   "s": 1.6,
-   "e": 2.48
+   "s": 1.64,
+   "e": 2.453
   },
   {
    "w": "la",
-   "s": 2.56,
-   "e": 2.64
+   "s": 2.507,
+   "e": 2.56
   },
   {
    "w": "portada",
-   "s": 2.76,
-   "e": 3.04
+   "s": 2.68,
+   "e": 2.96
   },
   {
    "w": "de",
-   "s": 3.12,
-   "e": 3.2
+   "s": 3.04,
+   "e": 3.12
   },
   {
    "w": "SonorBooks,",
-   "s": 3.28,
-   "e": 4.28
+   "s": 3.24,
+   "e": 4.12
   },
   {
    "w": "la",
-   "s": 4.32,
-   "e": 4.4
+   "s": 4.16,
+   "e": 4.24
   },
   {
    "w": "ficha",
-   "s": 4.44,
+   "s": 4.32,
+   "e": 4.56
+  },
+  {
+   "w": "de",
+   "s": 4.6,
    "e": 4.64
   },
   {
-   "w": "de",
-   "s": 4.72,
-   "e": 4.8
-  },
-  {
    "w": "cualquier",
-   "s": 4.88,
-   "e": 5.2
+   "s": 4.72,
+   "e": 5.12
   },
   {
    "w": "libro",
-   "s": 5.28,
-   "e": 5.52
+   "s": 5.2,
+   "e": 5.44
   },
   {
    "w": "que",
-   "s": 5.6,
-   "e": 5.68
+   "s": 5.48,
+   "e": 5.52
   },
   {
    "w": "esté",
-   "s": 5.8,
-   "e": 5.96
+   "s": 5.6,
+   "e": 5.84
   },
   {
    "w": "en",
-   "s": 6.0,
-   "e": 6.16
+   "s": 5.92,
+   "e": 6.0
   },
   {
    "w": "Nextory",
-   "s": 6.32,
-   "e": 7.04
+   "s": 6.16,
+   "e": 6.8
   },
   {
    "w": "o",
-   "s": 7.08,
-   "e": 7.12
+   "s": 6.84,
+   "e": 6.88
   },
   {
    "w": "nuestra",
-   "s": 7.2,
-   "e": 7.52
+   "s": 6.92,
+   "e": 7.28
   },
   {
    "w": "comparativa",
-   "s": 7.6,
-   "e": 8.16
+   "s": 7.36,
+   "e": 7.92
   },
   {
    "w": "de",
-   "s": 8.2,
-   "e": 8.24
+   "s": 7.96,
+   "e": 8.0
   },
   {
    "w": "plataformas.",
-   "s": 8.32,
-   "e": 9.48
+   "s": 8.08,
+   "e": 9.24
   },
   {
    "w": "Te",
-   "s": 9.52,
-   "e": 9.6
+   "s": 9.28,
+   "e": 9.32
   },
   {
    "w": "dejamos",
-   "s": 9.64,
-   "e": 9.92
-  },
-  {
-   "w": "el",
-   "s": 10.0,
-   "e": 10.04
-  },
-  {
-   "w": "enlace",
-   "s": 10.08,
-   "e": 10.48
-  },
-  {
-   "w": "directo",
-   "s": 10.64,
-   "e": 10.84
+   "s": 9.36,
+   "e": 9.68
   },
   {
    "w": "en",
-   "s": 10.88,
-   "e": 10.96
+   "s": 9.76,
+   "e": 9.84
   },
   {
    "w": "la",
-   "s": 11.0,
+   "s": 9.88,
+   "e": 9.92
+  },
+  {
+   "w": "descripción",
+   "s": 10.0,
+   "e": 10.56
+  },
+  {
+   "w": "el",
+   "s": 10.6,
+   "e": 10.64
+  },
+  {
+   "w": "enlace",
+   "s": 10.72,
    "e": 11.04
   },
   {
-   "w": "descripción.",
-   "s": 11.16,
-   "e": 12.24
+   "w": "directo",
+   "s": 11.24,
+   "e": 11.6
+  },
+  {
+   "w": "y",
+   "s": 11.68,
+   "e": 11.76
+  },
+  {
+   "w": "la",
+   "s": 11.8,
+   "e": 11.84
+  },
+  {
+   "w": "reseña",
+   "s": 11.92,
+   "e": 12.32
+  },
+  {
+   "w": "completa",
+   "s": 12.44,
+   "e": 12.8
+  },
+  {
+   "w": "por",
+   "s": 12.88,
+   "e": 12.96
+  },
+  {
+   "w": "escrito.",
+   "s": 13.08,
+   "e": 13.92
   }
  ],
- "speechEnd": 11.871
+ "speechEnd": 13.546
 }

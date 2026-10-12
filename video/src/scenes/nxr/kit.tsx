@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Img, interpolate, random, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut, Key, keyframes } from '../../lib/anim';
 import { RealPhone, TapRipple } from '../../components/RealPhone';
@@ -21,7 +21,7 @@ export type Shot = { rec: string; at: number; start: number; rate?: number; hold
 
 // Pantalla con varias tomas encadenadas (fundido corto entre una y otra).
 // `dim`: oscurecimiento alrededor de las marcas (1 = el de siempre; la reseña v2 usa menos para no ensuciar la pantalla).
-export const ShotsScreen: React.FC<{ shots: Shot[]; w: number; fade?: number; dim?: number }> = ({ shots, w, fade = 6, dim = 1 }) => {
+export const ShotsScreen: React.FC<{ shots: Shot[]; w: number; fade?: number; dim?: number; pulse?: boolean }> = ({ shots, w, fade = 6, dim = 1, pulse = false }) => {
   const frame = useCurrentFrame();
   const list = [...shots].sort((a, b) => a.at - b.at);
   let i = 0;
@@ -31,7 +31,7 @@ export const ShotsScreen: React.FC<{ shots: Shot[]; w: number; fade?: number; di
       <Sequence from={sh.at} layout="none">
         {hasRec(sh.rec) ? (
           <ScreenClip src={`nxr/rec/${sh.rec}/video.mp4`} width={w} viewport={[APP_W, APP_H]} startAt={sh.start} showCursor={false} marks={sh.marks ?? []}
-            camera={sh.zoom ?? [{ f: 0, zoom: 1, x: APP_W / 2, y: APP_H / 2 }]} playbackRate={sh.rate ?? 1} overlay={sh.overlay} holdAt={sh.hold} markDim={dim} />
+            camera={sh.zoom ?? [{ f: 0, zoom: 1, x: APP_W / 2, y: APP_H / 2 }]} playbackRate={sh.rate ?? 1} overlay={sh.overlay} holdAt={sh.hold} markDim={dim} markPulse={pulse} />
         ) : (
           <Placeholder w={w} label={sh.rec} />
         )}
@@ -55,8 +55,8 @@ export const ShotsScreen: React.FC<{ shots: Shot[]; w: number; fade?: number; di
 export const AppPhone: React.FC<{
   rec?: string; startAt?: number; shots?: Shot[]; w?: number; cam?: PhoneKey[]; taps?: Tap[]; marks?: Mark[]; zoom?: CamKey[];
   image?: string; tone?: 'graphite' | 'silver' | 'sand'; overlay?: (t: number) => React.ReactNode; playbackRate?: number; placeholder?: string;
-  dim?: number; motionBlur?: boolean;
-}> = ({ rec, startAt = 0, shots, w = 430, cam = [{ f: 0, rx: 0, ry: 0, rz: 0, s: 1, x: 0, y: 0 }], taps = [], marks = [], zoom, image, tone = 'graphite', overlay, playbackRate = 1, placeholder, dim, motionBlur = false }) => {
+  dim?: number; motionBlur?: boolean; float?: [number, number]; pulse?: boolean;
+}> = ({ rec, startAt = 0, shots, w = 430, cam = [{ f: 0, rx: 0, ry: 0, rz: 0, s: 1, x: 0, y: 0 }], taps = [], marks = [], zoom, image, tone = 'graphite', overlay, playbackRate = 1, placeholder, dim, motionBlur = false, float, pulse = false }) => {
   const frame = useCurrentFrame();
   const k = (p: string, f = frame) => keyframes(f, cam, p, easeInOut);
   const scale = w / APP_W;
@@ -64,11 +64,16 @@ export const AppPhone: React.FC<{
   // Desenfoque de movimiento: proporcional a la velocidad del móvil en pantalla (solo en los desplazamientos rápidos).
   const speed = motionBlur ? Math.hypot(k('x') - k('x', frame - 1), k('y') - k('y', frame - 1)) + Math.abs(k('s') - k('s', frame - 1)) * 300 : 0;
   const blur = Math.max(0, Math.min(2.6, (speed - 18) * 0.05));
+  // Flotación muy leve (el móvil «respira») dentro del tramo `float`, con entrada y salida suaves: en los extremos vale 0,
+  // así el móvil que enlaza dos escenas no salta.
+  const fEnv = float ? interpolate(frame, [float[0], float[0] + 24, float[1] - 24, float[1]], [0, 1, 1, 0], { ...clamp, easing: easeInOut }) : 0;
+  const fy = fEnv * (Math.sin(frame / 38) * 4.5 + Math.sin(frame / 61) * 2);
+  const frz = fEnv * Math.sin(frame / 47) * 0.35;
   return (
-    <div style={{ transform: `translate(${k('x')}px, ${k('y')}px) scale(${k('s')})`, willChange: 'transform', filter: blur > 0.2 ? `blur(${blur.toFixed(2)}px)` : undefined }}>
-      <RealPhone w={w} ratio={APP_RATIO} rotX={k('rx')} rotY={k('ry')} rotZ={k('rz')} tone={tone} screenBg="#fff">
+    <div style={{ transform: `translate(${k('x')}px, ${k('y') + fy}px) scale(${k('s')})`, willChange: 'transform', filter: blur > 0.2 ? `blur(${blur.toFixed(2)}px)` : undefined }}>
+      <RealPhone w={w} ratio={APP_RATIO} rotX={k('rx')} rotY={k('ry')} rotZ={k('rz') + frz} tone={tone} screenBg="#fff">
         {list ? (
-          <ShotsScreen shots={list} w={w} dim={dim} />
+          <ShotsScreen shots={list} w={w} dim={dim} pulse={pulse} />
         ) : image ? (
           <Img src={staticFile(image)} style={{ width: w, height: w * APP_RATIO, display: 'block' }} />
         ) : (
@@ -77,6 +82,19 @@ export const AppPhone: React.FC<{
         {taps.map((t, i) => <TapRipple key={i} x={t.x * scale} y={t.y * scale} frame={frame} at={t.f} size={w * 0.15} />)}
       </RealPhone>
     </div>
+  );
+};
+
+// Halo cálido detrás del móvil: sigue a la cámara del móvil (`cam`) y se intensifica cuando se acerca a una zona.
+// `cx`/`cy`: centro del móvil en reposo.
+export const PhoneHalo: React.FC<{ cam: PhoneKey[]; cx: number; cy?: number; strength?: number }> = ({ cam, cx, cy = 540, strength = 1 }) => {
+  const frame = useCurrentFrame();
+  const k = (p: string) => keyframes(frame, cam, p, easeInOut);
+  const focusAmt = Math.max(0, Math.min(1, (k('s') - 1.03) / 0.36));
+  return (
+    <div style={{ position: 'absolute', left: cx + k('x') - 560, top: cy + k('y') - 560, width: 1120, height: 1120, borderRadius: '50%', pointerEvents: 'none',
+      background: `radial-gradient(circle, rgba(255,202,5,${((0.15 + 0.1 * focusAmt) * strength).toFixed(3)}) 0%, rgba(255,202,5,${(0.05 * strength).toFixed(3)}) 38%, rgba(255,202,5,0) 64%)`,
+      transform: `scale(${(0.92 + 0.16 * focusAmt + 0.025 * Math.sin(frame / 45)).toFixed(4)})` }} />
   );
 };
 
@@ -161,8 +179,8 @@ export const Chip: React.FC<{
 }> = ({ at, label, icon, dimAt, out, size = 36, dark = false, accent = color.yellow, reserve = false, style, sub }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const pop = spring({ frame: frame - at, fps, config: { damping: 11, stiffness: 230 } });
-  const open = interpolate(frame, [at + 2, at + 17], [0, 1], { ...clamp, easing: easeOut });
+  const pop = spring({ frame: frame - at, fps, config: { damping: 15, stiffness: 200 } });
+  const open = interpolate(frame, [at + 2, at + 18], [0, 1], { ...clamp, easing: easeOut });
   const dim = dimAt !== undefined ? interpolate(frame, [dimAt - 2, dimAt + 10], [0, 1], { ...clamp, easing: easeInOut }) : 0;
   const o = out !== undefined ? interpolate(frame, [out - 8, out], [0, 1], { ...clamp, easing: easeInOut }) : 0;
   if (!reserve && (frame < at - 1 || o >= 1)) return null;
@@ -179,9 +197,9 @@ export const Chip: React.FC<{
     <div style={{ display: 'inline-flex', position: 'relative', opacity: (frame < at ? 0 : 1) * (1 - o) * (1 - 0.55 * dim), transform: `translateY(${o * -14}px) scale(${1 - 0.05 * dim})`, transformOrigin: 'left center', ...style }}>
       <div style={{ display: 'inline-flex', alignItems: 'center', gap: size * 0.4, padding: `${size * 0.34}px ${padR}px ${size * 0.34}px ${padL}px`, borderRadius: 999, background: bg, color: dark ? '#fff' : color.ink,
         boxShadow: dim > 0.5 ? shadow.soft : shadow.float, border: dark ? 'none' : `1px solid ${color.line}`, fontFamily: font.sans, fontWeight: 700, fontSize: size, letterSpacing: -0.3, whiteSpace: 'nowrap',
-        clipPath: open >= 1 ? undefined : `inset(-30px calc(100% - ${vis.toFixed(1)}px) -30px -30px round 999px)`, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: `${padL + ic / 2}px 50%` }}>
+        clipPath: open >= 1 ? undefined : `inset(-30px calc(100% - ${vis.toFixed(1)}px) -30px -30px round 999px)`, transform: `scale(${0.82 + 0.18 * pop})`, transformOrigin: `${padL + ic / 2}px 50%` }}>
         {icon && (
-          <span style={{ width: ic, height: ic, borderRadius: '50%', background: dim > 0.5 ? '#EFEFEF' : accent, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transform: `scale(${pop}) rotate(${(1 - pop) * -40}deg)` }}>{icon}</span>
+          <span style={{ width: ic, height: ic, borderRadius: '50%', background: dim > 0.5 ? '#EFEFEF' : accent, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transform: `scale(${pop}) rotate(${(1 - pop) * -25}deg)` }}>{icon}</span>
         )}
         <span style={{ display: 'inline-flex', flexDirection: 'column', opacity: open, transform: `translateX(${(1 - open) * -18}px)` }}>
           <span>{label}</span>
@@ -220,40 +238,60 @@ export const BUMP_IN = 14;
 export const BUMP_LEN = 46;
 export const Bumper: React.FC<{ title: string; index: number; total: number; kicker?: string }> = ({ title, index, total, kicker = 'Reseña de Nextory' }) => {
   const frame = useCurrentFrame();
+  const id = React.useId().replace(/:/g, '');
   const W = 1920 + 900;
   // Posición de cada panel: entra de derecha a izquierda (0 → 14), se queda y sale hacia la izquierda (28 → 44).
-  const pos = (lag: number, outLag: number) => {
-    const pin = interpolate(frame, [lag, lag + 13], [1, 0], { ...clamp, easing: easeInOut });
-    const pout = interpolate(frame, [27 + outLag, 42 + outLag], [0, 1], { ...clamp, easing: easeInOut });
+  const pos = (f: number, lag: number, outLag: number) => {
+    const pin = interpolate(f, [lag, lag + 13], [1, 0], { ...clamp, easing: easeInOut });
+    const pout = interpolate(f, [27 + outLag, 42 + outLag], [0, 1], { ...clamp, easing: easeInOut });
     return pin * (W + 200) - pout * (W + 200);
   };
-  const xInk = pos(0, 3);
-  const xYel = pos(3, 0);
-  // Título: llega con algo de retraso, deriva despacio y sale más deprisa que el panel.
-  const tIn = interpolate(frame, [6, 22], [1, 0], { ...clamp, easing: easeOut });
-  const tOut = interpolate(frame, [26, 38], [0, 1], { ...clamp, easing: (t) => t * t * t });
-  const tx = tIn * 520 - tOut * 1400 - frame * 1.4;
+  const xInk = pos(frame, 0, 3);
+  const xYel = pos(frame, 3, 0);
+  // Desenfoque de movimiento horizontal (filtro SVG con desenfoque solo en x), proporcional a la velocidad de cada panel.
+  const mb = (lag: number, outLag: number) => Math.min(24, Math.abs(pos(frame, lag, outLag) - pos(frame - 1, lag, outLag)) * 0.2);
+  const bInk = mb(0, 3);
+  const bYel = mb(3, 0);
+  // Título: cada letra llega con un pelín de retraso respecto a la anterior, deriva despacio y sale acelerando.
+  const chars = Array.from(title);
+  const drift = -frame * 1.3;
   const bar = interpolate(frame, [12, 26], [0, 1], { ...clamp, easing: easeOut });
-  const panel = (x: number, bg: string, children?: React.ReactNode) => (
-    <div style={{ position: 'absolute', top: -60, bottom: -60, left: -450, width: W, transform: `translateX(${x}px) skewX(-12deg)`, background: bg, overflow: 'hidden' }}>
+  const kIn = interpolate(frame, [8, 22], [0, 1], { ...clamp, easing: easeOut });
+  const panel = (x: number, bg: string, blurX: number, fid: string, shadow: boolean, children?: React.ReactNode) => (
+    <div style={{ position: 'absolute', top: -60, bottom: -60, left: -450, width: W, transform: `translateX(${x}px) skewX(-12deg)`, background: bg, overflow: 'hidden',
+      boxShadow: shadow ? '-50px 0 90px rgba(0,0,0,0.28)' : undefined, filter: blurX > 0.5 ? `url(#${fid})` : undefined }}>
       <div style={{ position: 'absolute', inset: 0, transform: 'skewX(12deg)' }}>{children}</div>
     </div>
   );
   return (
     <AbsoluteFill style={{ pointerEvents: 'none', overflow: 'hidden' }}>
-      {panel(xInk, color.ink)}
-      {panel(xYel, color.yellow, (
+      <svg width="0" height="0" style={{ position: 'absolute' }}>
+        <defs>
+          <filter id={`i${id}`} x="-10%" y="0" width="120%" height="100%"><feGaussianBlur stdDeviation={`${bInk.toFixed(1)} 0`} /></filter>
+          <filter id={`y${id}`} x="-10%" y="0" width="120%" height="100%"><feGaussianBlur stdDeviation={`${bYel.toFixed(1)} 0`} /></filter>
+        </defs>
+      </svg>
+      {panel(xInk, color.ink, bInk, `i${id}`, false)}
+      {panel(xYel, color.yellow, bYel, `y${id}`, true, (
         <div style={{ position: 'absolute', left: 450, top: 60, width: 1920, height: 1080 }}>
           {/* número grande de fondo */}
-          <div style={{ position: 'absolute', right: 70, bottom: -120, fontFamily: font.sans, fontWeight: 700, fontSize: 620, letterSpacing: -30, color: 'rgba(16,16,16,0.07)', transform: `translateX(${-xYel * 0.25 + tx * 0.2}px)` }}>
+          <div style={{ position: 'absolute', right: 70, bottom: -120, fontFamily: font.sans, fontWeight: 700, fontSize: 620, letterSpacing: -30, color: 'rgba(16,16,16,0.07)', transform: `translateX(${-xYel * 0.25 + drift * 0.5}px)` }}>
             {String(index).padStart(2, '0')}
           </div>
-          <div style={{ position: 'absolute', left: 170, top: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center', transform: `translateX(${tx}px)` }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 6, textTransform: 'uppercase', color: color.ink }}>
+          <div style={{ position: 'absolute', left: 170, top: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center', transform: `translateX(${drift}px)` }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 6, textTransform: 'uppercase', color: color.ink,
+              opacity: kIn, transform: `translateX(${(1 - kIn) * 120}px)` }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 74, height: 46, borderRadius: 999, background: color.ink, color: color.yellow, letterSpacing: 1, fontSize: 26 }}>{index}/{total}</span>
               {kicker}
             </div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 168, letterSpacing: -7, lineHeight: 1, color: color.ink, marginTop: 22, whiteSpace: 'nowrap' }}>{title}</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 168, letterSpacing: -7, lineHeight: 1, color: color.ink, marginTop: 22, whiteSpace: 'pre' }}>
+              {chars.map((c, i) => {
+                const a = 4 + i * 0.45;
+                const pIn = interpolate(frame, [a, a + 13], [1, 0], { ...clamp, easing: easeOut });
+                const pOut = interpolate(frame, [27 + i * 0.3, 38 + i * 0.3], [0, 1], { ...clamp, easing: (t) => t * t * t });
+                return <span key={i} style={{ display: 'inline-block', transform: `translateX(${pIn * 380 - pOut * 1300}px)`, opacity: 1 - pIn * 0.9 }}>{c}</span>;
+              })}
+            </div>
             <div style={{ display: 'flex', gap: 10, marginTop: 34 }}>
               {Array.from({ length: total }).map((_, i) => (
                 <div key={i} style={{ width: i === index - 1 ? 96 : 40, height: 10, borderRadius: 5, background: i < index - 1 ? 'rgba(16,16,16,0.55)' : i === index - 1 ? color.ink : 'rgba(16,16,16,0.16)',
@@ -264,6 +302,60 @@ export const Bumper: React.FC<{ title: string; index: number; total: number; kic
         </div>
       ))}
     </AbsoluteFill>
+  );
+};
+
+// Ráfaga de confeti (determinista) que sale del borde de un círculo de radio `r` centrado en x/y, en el fotograma `at`,
+// con una onda expansiva. Las piezas frenan por rozamiento y caen con una gravedad suave.
+export const Burst: React.FC<{ at: number; x: number; y: number; r?: number; n?: number; seed?: string; colors?: string[] }> = ({
+  at, x, y, r = 200, n = 46, seed = 'burst', colors = [color.yellow, color.ink, '#FFE173', color.yellow, '#FFFFFF'],
+}) => {
+  const frame = useCurrentFrame();
+  const t = frame - at;
+  if (t < 0 || t > 80) return null;
+  const ring = interpolate(t, [0, 26], [0, 1], { ...clamp, easing: easeOut });
+  return (
+    <div style={{ position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, pointerEvents: 'none' }}>
+      {ring < 1 && (
+        <div style={{ position: 'absolute', left: x, top: y, width: 2 * (r + 10 + 230 * ring), height: 2 * (r + 10 + 230 * ring), borderRadius: '50%', transform: 'translate(-50%, -50%)',
+          border: `${(10 * (1 - ring) + 1).toFixed(2)}px solid ${color.yellow}`, opacity: 0.75 * (1 - ring) }} />
+      )}
+      {Array.from({ length: n }).map((_, i) => {
+        const rnd = (k: string) => random(`${seed}-${i}-${k}`);
+        const ang = rnd('a') * Math.PI * 2;
+        const v0 = 15 + rnd('v') * 21;
+        const drag = 0.915;
+        const dist = (v0 * (1 - Math.pow(drag, t))) / (1 - drag);
+        const fall = 0.07 * t * t;
+        const px = x + Math.cos(ang) * (r * 0.92 + dist);
+        const py = y + Math.sin(ang) * (r * 0.92 + dist) + fall;
+        const life = 44 + rnd('l') * 30;
+        const o = interpolate(t, [0, 3, life - 16, life], [0, 1, 1, 0], clamp);
+        if (o <= 0) return null;
+        const shape = i % 3;
+        const sz = 11 + rnd('z') * 13;
+        const c = colors[i % colors.length];
+        return (
+          <div key={i} style={{ position: 'absolute', left: px, top: py, width: shape === 1 ? sz * 0.8 : sz, height: shape === 0 ? sz * 0.48 : shape === 1 ? sz * 0.8 : sz, borderRadius: shape === 1 ? '50%' : 3,
+            background: c, border: c === '#FFFFFF' ? `1px solid ${color.line}` : undefined, opacity: o,
+            transform: `translate(-50%, -50%) rotate(${(rnd('r') * 360 + t * (rnd('s') - 0.5) * 26).toFixed(1)}deg) scaleY(${Math.cos(t * (0.12 + rnd('f') * 0.2)).toFixed(3)})` }} />
+        );
+      })}
+    </div>
+  );
+};
+
+// Destello: una banda de luz en diagonal cruza la tarjeta una vez, empezando en el fotograma `at`.
+// Va dentro de un elemento con position: relative; recorta con el mismo radio.
+export const Sheen: React.FC<{ at: number; dur?: number; radius?: number; tint?: string }> = ({ at, dur = 24, radius = 44, tint = 'rgba(255,255,255,0.55)' }) => {
+  const frame = useCurrentFrame();
+  const t = interpolate(frame, [at, at + dur], [0, 1], { ...clamp, easing: easeInOut });
+  if (t <= 0 || t >= 1) return null;
+  return (
+    <div style={{ position: 'absolute', inset: 0, borderRadius: radius, overflow: 'hidden', pointerEvents: 'none' }}>
+      <div style={{ position: 'absolute', top: '-30%', bottom: '-30%', width: '38%', left: `${-45 + 160 * t}%`, transform: 'skewX(-18deg)',
+        background: `linear-gradient(90deg, rgba(255,255,255,0) 0%, ${tint} 50%, rgba(255,255,255,0) 100%)`, opacity: Math.sin(Math.PI * t) }} />
+    </div>
   );
 };
 

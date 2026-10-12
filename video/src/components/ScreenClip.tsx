@@ -56,7 +56,9 @@ export const ScreenClip: React.FC<{
   overlay?: (t: number) => React.ReactNode;
   // Intensidad del oscurecimiento alrededor de las marcas (1 = el habitual).
   markDim?: number;
-}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay, holdAt, markDim = 1 }) => {
+  // Onda que se abre una vez cuando aparece cada marca, para llevar la vista hacia ella.
+  markPulse?: boolean;
+}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay, holdAt, markDim = 1, markPulse = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const [vw, vh] = viewport;
@@ -97,7 +99,7 @@ export const ScreenClip: React.FC<{
           <Cursor x={c.x * k} y={c.y * k} scale={k * 1.25} down={c.down} sinceClick={t - c.lastDown} opacity={cursorOpacity} />
         )}
       </div>
-      {marks.length > 0 && <MarkLayer marks={marks} frame={frame} width={width} height={height} map={(x, y) => [tx + x * k * zoom, ty + y * k * zoom]} scale={k * zoom} dimLevel={markDim} />}
+      {marks.length > 0 && <MarkLayer marks={marks} frame={frame} width={width} height={height} map={(x, y) => [tx + x * k * zoom, ty + y * k * zoom]} scale={k * zoom} dimLevel={markDim} pulse={markPulse} />}
     </div>
   );
 };
@@ -109,7 +111,7 @@ const DRAW = 16;   // duración del trazo al dibujarse
 const OUT = 9;     // salida
 
 // Marco amarillo en coordenadas de pantalla: trazo constante que se dibuja, foco suave alrededor y etiqueta opcional.
-const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimLevel?: number }> = ({ marks, frame, width, height, map, scale, dimLevel = 1 }) => {
+const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimLevel?: number; pulse?: boolean }> = ({ marks, frame, width, height, map, scale, dimLevel = 1, pulse = false }) => {
   const id = React.useId().replace(/:/g, '');
   const list = marks.filter((m) => m.to - m.from > 12).sort((a, b) => a.from - b.from);
   const i = list.findIndex((m) => frame >= m.from && frame < m.to);
@@ -148,6 +150,14 @@ const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height:
         <rect x={0} y={0} width={width} height={height} fill="rgb(6,10,18)" opacity={0.5 * dim * alpha * dimLevel} mask={`url(#m${id})`} />
         <rect x={x0} y={y0} width={w} height={h} rx={r} fill="none" stroke={color.yellow} strokeWidth={stroke} strokeLinecap="round"
           strokeDasharray={perim} strokeDashoffset={perim * (1 - draw)} opacity={alpha} filter={`url(#g${id})`} />
+        {pulse && (() => {
+          // Onda: sale del marco cuando termina de dibujarse (en cada marca nueva, también si viene deslizándose de otra).
+          // El tamaño crece con frenada y la opacidad baja de forma lineal (la onda se ve durante todo el recorrido).
+          const tl = interpolate(frame, [m.from + 10, m.from + 32], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+          if (tl <= 0 || tl >= 1) return null;
+          const e = 3 + 28 * easeOut(tl);
+          return <rect x={x0 - e} y={y0 - e} width={w + 2 * e} height={h + 2 * e} rx={r + e} fill="none" stroke={color.yellow} strokeWidth={4 * (1 - tl) + 0.6} opacity={0.85 * (1 - tl) * alpha} />;
+        })()}
       </svg>
       {label && lIn > 0.01 && (
         <div style={{ position: 'absolute', left: Math.max(14, Math.min(x0, width - 420)), top: (below ? y1 + 12 : y0 - 12), transform: `translateY(${below ? 0 : -100}%) scale(${0.6 + 0.4 * lIn})`, transformOrigin: below ? 'left top' : 'left bottom', opacity: lIn * alpha,

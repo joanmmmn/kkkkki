@@ -1,4 +1,4 @@
-# YouTube y redes — Reseña de Nextory + 30 días gratis (v2)
+# YouTube y redes — Reseña de Nextory + 30 días gratis (v3)
 
 ## Título (elige uno)
 1. **¿Merece la pena Nextory? Reseña a fondo: lo bueno, lo malo y 30 días gratis** ← recomendado
@@ -64,6 +64,7 @@ Si lo pruebas, hazlo desde aquí para tener 30 días en vez de 14: https://sonor
 ```
 
 ## Antes de publicar
+- **Reseña escrita:** la locución dice que la reseña completa por escrito está en la descripción. Publica antes la nueva página (`web/nextory-resena`, pendiente de aprobación) en https://sonorbooks.com/es/blog/nextory-resena/.
 - **Vídeo de ElevenReader:** sustituye `[ENLACE AL VÍDEO DE ELEVENREADER]` por su enlace (la locución dice «te lo dejamos en la descripción», así que conviene publicarlo antes o el mismo día). Mientras no esté, puedes poner la reseña escrita: https://sonorbooks.com/es/blog/elevenreader-resena/
 - **Tarjeta de YouTube** (Editar → Tarjetas → Vídeo) a las **2:50**, cuando se nombra ElevenReader, apuntando a ese vídeo.
 - Marca en YouTube «Incluye promoción pagada»: el vídeo enlaza a una oferta de afiliado.

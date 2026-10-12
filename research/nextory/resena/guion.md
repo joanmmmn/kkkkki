@@ -1,4 +1,4 @@
-# Nextory: reseña completa + 30 días gratis (guion v2, 12/10/2026)
+# Nextory: reseña completa + 30 días gratis (guion v3, 12/10/2026)
 
 Encargo de Joan (11/10/2026, 16:16): enfocarlo como reseña de Nextory (si merece la pena, todo lo bueno, todo lo malo, todas las funciones, entrando en una cuenta, leyendo un libro y enseñándolo todo) y, después, mucho más resumido y con más calidad de animación y guion, cómo tenerlo 30 días gratis. Añadir que, si les ha gustado, pueden quedarse con la suscripción.
 
@@ -30,7 +30,7 @@ Encargo de Joan (11/10/2026, 16:16): enfocarlo como reseña de Nextory (si merec
 | R13 | Lo bueno: ebooks y audiolibros en una sola app, un plan barato para empezar, cuatro perfiles con modo infantil y que las horas que no gastas se guardan. Lo malo: el límite de horas de Mini y Standard, que no hay web ni app de ordenador, que no puedes subir tus archivos y que, si cancelas durante la prueba, pierdes el acceso al momento. | Dos columnas: Lo bueno / Lo malo |
 | R14 | ¿Merece la pena? Si alternas leer y escuchar en español, es de lo más completo por menos de diez euros. Si escuchas poco, el Mini te basta. Y antes de pagar, busca los libros que te interesan en SonorBooks para ver si están en Nextory o en otra plataforma. | Veredicto en tarjetas; «Antes de pagar»: búsqueda en la portada de SonorBooks y ficha real con «Opciones analizadas: Nextory · audiobooks.com»; «¿Está en Nextory o en otra plataforma?» |
 | P01 | ¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis, en vez de catorce. | Insignia 14 → 30 días; letra pequeña: hasta 15 h, solo cuentas nuevas |
-| P02 | Puedes activarlos desde tres sitios: la portada de SonorBooks, la ficha de cualquier libro que esté en Nextory o nuestra comparativa de plataformas. Te dejamos el enlace directo en la descripción. | «Actívalos desde 3 sitios»: carrusel con las tres grabaciones reales (portada → tarjeta de Nextory; ficha → «Empezar prueba gratuita»; comparativa → «Ver la prueba gratuita»); «Enlace directo en la descripción» |
+| P02 | Puedes activarlos desde tres sitios: la portada de SonorBooks, la ficha de cualquier libro que esté en Nextory o nuestra comparativa de plataformas. Te dejamos en la descripción el enlace directo y la reseña completa por escrito. | «Actívalos desde 3 sitios»: carrusel con las tres grabaciones reales (portada → tarjeta de Nextory; ficha → «Empezar prueba gratuita»; comparativa → «Ver la prueba gratuita»); «En la descripción» con «Enlace directo» y «Reseña completa por escrito» |
 | P03 | Crea tu cuenta, elige plan y añade tu tarjeta: hoy no pagas nada. | Cuenta, plan y pago en abanico; sello «Hoy: 0 €» |
 | P04 | Descarga la app, entra con tu correo… y a disfrutar. | Móvil: bienvenida → inicio de sesión → portada |
 | P05 | ¿Te ha gustado? Quédate: no tienes que hacer nada. ¿No te convence? Cancela en «Mis páginas» antes del día treinta; mejor en los últimos días, porque al cancelar pierdes el acceso al momento. | Quédate / Cancela antes del día 30 (calendario, mejor días 27–29) |
@@ -80,3 +80,23 @@ Pedido: más calidad y dinamismo, animaciones mucho mejores, máxima claridad, c
 - Solo apps de iOS y Android (la web app se retiró). App Store España: 4,7/5 con 5,6 mil valoraciones. No funciona en Kindle; el único lector de tinta electrónica compatible es InkBOOK.
 - Ayuda de Nextory: CarPlay, Android Auto y Android Automotive; relojes Wear OS (no Apple Watch ni Garmin); AirPlay; lectores InkBOOK; si se cancela durante la prueba, se pierde el acceso al momento.
 - Nubico → Nextory (Movistar), 2021: elgrupoinformatico.com, 05/08/2021.
+
+## Revisión v3 (encargo de Joan, 12/10/2026, 11:26)
+
+Pedido: mejorar cada detalle y cada animación hasta una producción de máxima calidad, transiciones suaves también entre las
+piezas de música, y hacer la reseña escrita (blog) con el mismo estilo que la de ElevenReader.
+
+- **Música:** las 12 piezas ya no cortan en seco: cada una se funde con la siguiente (la saliente baja con un filtro de graves
+  y la entrante sube en 0,6 s), siempre en el golpe del separador (`tools/nxr_music_v2.py join`).
+- **Separadores:** desenfoque de movimiento horizontal en los paneles, título letra a letra (entra y sale en cascada) y un
+  «swell» invertido que anticipa cada cambio de sección.
+- **Transiciones entre escenas:** las escenas que entran con acercamiento o barrido se cruzan con la anterior (la saliente sigue
+  10 fotogramas por debajo), sin fotogramas vacíos; barrido con desenfoque de movimiento horizontal.
+- **Móvil:** «respira» en reposo (flotación muy leve que se apaga en los enlaces entre escenas), halo cálido que lo sigue y se
+  intensifica al acercarse, onda que sale de cada marca nueva, etiquetas 3 fotogramas antes de la palabra.
+- **Detalles:** destello en las tarjetas de planes y dispositivos al nombrarlas; ráfaga de confeti y onda al llegar a 30 días;
+  carruseles de P02 y P03 con desenfoque de movimiento y etiquetas iguales; P04 con etiqueta y botones escalonados.
+- **Locución P02:** «Te dejamos en la descripción el enlace directo y la reseña completa por escrito», con dos etiquetas
+  («Enlace directo» y «Reseña completa por escrito») bajo «En la descripción».
+- **Reseña escrita:** página nueva `web/nextory-resena` con el sistema visual de la de ElevenReader (probador del lector,
+  probador de velocidad y horas, calculador de plan, capturas reales de la app). Pendiente de la aprobación de Joan.

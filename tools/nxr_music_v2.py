@@ -212,8 +212,14 @@ def main():
                 if not bad:
                     break
     elif step == 'join':
+        # Transiciones suaves (v3): la pieza saliente se apaga entre 0,7 s antes y 0,9 s después del corte mientras se
+        # «tapa» (filtro de paso bajo que va entrando), y la entrante arranca 0,3 s antes del corte y sube en 0,6 s.
+        from scipy.signal import butter, sosfiltfilt
+        OUT_PRE, OUT_POST, IN_PRE, IN_LEN = 0.7, 0.9, 0.3, 0.6
+        sos = butter(4, 900, 'low', fs=SR, output='sos')
         n = round(total / FPS * SR)
-        mix = np.zeros((n + SR, 2), np.float32)
+        mix = np.zeros((n + 3 * SR, 2), np.float32)
+        smooth = lambda u: u * u * (3 - 2 * u)
         for i, (name, plan) in enumerate(items):
             pp = os.path.join(PARTS, f'{name}.plan.json')
             json.dump(plan, open(pp, 'w'), ensure_ascii=False, indent=1)
@@ -222,18 +228,25 @@ def main():
             x = load(lev)
             off = lead_trim(load(os.path.join(PARTS, f'{name}.raw.mp3')).mean(1), plan)
             x = x[off:]
-            a = round(plan['start_frame'] / FPS * SR)
-            seg = round((plan['end_frame'] - plan['start_frame']) / FPS * SR)
-            last = i == len(items) - 1
-            keep = min(len(x), seg + (0 if last else round(TAIL * SR)))
+            first, last = i == 0, i == len(items) - 1
+            pre = 0 if first else round(IN_PRE * SR)
+            a = round(plan['start_frame'] / FPS * SR) - pre
+            seg = round((plan['end_frame'] - plan['start_frame']) / FPS * SR) + pre  # muestras de la pieza hasta el corte
+            keep = min(len(x), seg + (0 if last else round(OUT_POST * SR)))
             y = x[:keep].copy()
-            fin = round(0.008 * SR)
-            if i > 0:
-                y[:fin] *= np.linspace(0, 1, fin)[:, None]  # sin clic al entrar
-            if not last and keep > seg:
-                tail = keep - seg
-                y[seg:] *= np.cos(np.linspace(0, np.pi / 2, tail))[:, None] ** 2
-            mix[a:a + len(y)] += y
+            if not first:  # entrada suave
+                k = np.arange(min(len(y), round(IN_LEN * SR)))
+                y[k] *= (np.sin(np.pi / 2 * k / len(k)) ** 2)[:, None]
+            if not last:  # salida: fundido y filtro que se va cerrando
+                s0 = max(0, seg - round(OUT_PRE * SR))
+                tail = y[s0:].copy()
+                pad = min(s0, round(0.2 * SR))
+                low = sosfiltfilt(sos, y[s0 - pad:], axis=0)[pad:]
+                u = np.linspace(0, 1, len(tail))
+                m = smooth(np.clip(u * (OUT_PRE + OUT_POST) / (OUT_PRE + 0.4), 0, 1))[:, None]  # filtro del todo 0,4 s después del corte
+                g = (np.cos(np.pi / 2 * u) ** 2)[:, None]
+                y[s0:] = g * ((1 - m) * tail + m * low)
+            mix[max(0, a):a + len(y)] += y[max(0, -a):]
             print(f'{name:16} {len(x) / SR:6.2f} s de pieza (arranque recortado {off / SR:.2f} s) para {seg / SR:6.2f} s de vídeo')
         mix = mix[:n]
         peak = float(np.abs(mix).max())

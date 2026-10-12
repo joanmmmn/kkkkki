@@ -10,11 +10,11 @@ import { Pill } from '../../components/Pill';
 import { Phase } from '../../components/Phase';
 import { BrowserWindow } from '../../components/BrowserWindow';
 import { ScreenClip, CamKey } from '../../components/ScreenClip';
-import { CheckIcon } from '../../components/Icons';
-import { CalendarIcon, DownloadIcon } from '../../components/Icons2';
+import { CheckIcon, HeadphonesIcon } from '../../components/Icons';
+import { CalendarIcon, DocIcon, DownloadIcon, LinkIcon } from '../../components/Icons2';
 import { NextoryLogo } from '../nx/common';
 import { wf } from './timeline';
-import { AppPhone, BigTitle, LinkBadge, MaskTitle } from './kit';
+import { AppPhone, BigTitle, Burst, Chip, LinkBadge, MaskTitle, PhoneHalo, PhoneKey } from './kit';
 import { TiltWindow } from './Verdict';
 import type { SceneProps } from './registry';
 import m11 from '../../../public/nx/rec/11_ficha_click/meta.json';
@@ -47,6 +47,8 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
   const sVez = spring({ frame: frame - fCatorce, fps, config: { damping: 16, stiffness: 180 } });
   const strike = interpolate(frame, [fCatorce + 6, fCatorce + 18], [0, 1], { ...clamp, easing: easeOut });
   const rays = frame * 0.25;
+  // Golpe al llegar a 30: la insignia late y sale una ráfaga de confeti.
+  const bump = interpolate(frame, [fTreinta + 4, fTreinta + 9, fTreinta + 26], [0, 1, 0], { ...clamp, easing: easeOut });
   return (
     <Stage tone="warm">
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -55,7 +57,7 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
           <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.muted }}>×</span>
           <NextoryLogo width={210} />
         </div>
-        <div style={{ position: 'relative', width: 560, height: 560, transform: `scale(${sBadge})` }}>
+        <div style={{ position: 'relative', width: 560, height: 560, transform: `scale(${sBadge * (1 + 0.07 * bump)})` }}>
           <svg width="560" height="560" viewBox="0 0 560 560" style={{ position: 'absolute', inset: 0, transform: `rotate(${rays}deg)` }}>
             {Array.from({ length: 24 }).map((_, i) => (
               <path key={i} d="M280 280 L 268 0 L 292 0 Z" fill={color.yellow} opacity={0.22} transform={`rotate(${i * 15} 280 280)`} />
@@ -70,6 +72,7 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
           en vez de
           <span style={{ position: 'relative', color: color.muted }}>14<span style={{ position: 'absolute', left: -8, right: -8, top: '50%', height: 6, background: color.red, borderRadius: 3, transform: `rotate(-8deg) scaleX(${strike})`, transformOrigin: 'left' }} /></span>
         </div>
+        <Burst at={fTreinta + 6} x={960} y={540} r={205} seed="p01" />
         {/* Letra pequeña de la oferta */}
         <div style={{ position: 'absolute', bottom: 84, fontFamily: font.sans, fontWeight: 500, fontSize: 31, color: color.ink2, opacity: sVez }}>
           Hasta 15 h de lectura y escucha · solo cuentas nuevas
@@ -79,6 +82,7 @@ export const P01Gratis: React.FC<P> = ({ lead }) => {
       <Sfx name="counter" at={fTreinta - 14} />
       <Sfx name="impact" at={fTreinta + 6} />
       <Sfx name="pencil_strike" at={fCatorce + 6} />
+      <Sfx name="sparkle" at={fTreinta + 8} volume={0.8} />
     </Stage>
   );
 };
@@ -99,11 +103,17 @@ export const P02Accesos: React.FC<P> = ({ lead, dur }) => {
   const fFicha = at('ficha');
   const fComp = at('comparativa');
   const fDejamos = at('dejamos');
+  const fEnlace = at('enlace');
+  const fResena = at('resena');
+  const id = React.useId().replace(/:/g, '');
   const steps = [fPortada - 8, fFicha - 8, fComp - 8];
   // p: −1 = las tres en fila; 0, 1, 2 = ventana activa en el carrusel.
-  const p = interpolate(frame, [steps[0], steps[0] + 18, steps[1], steps[1] + 18, steps[2], steps[2] + 18], [-1, 0, 0, 1, 1, 2], { ...clamp, easing: easeInOut });
+  const pAt = (f: number) => interpolate(f, [steps[0], steps[0] + 18, steps[1], steps[1] + 18, steps[2], steps[2] + 18], [-1, 0, 0, 1, 1, 2], { ...clamp, easing: easeInOut });
+  const p = pAt(frame);
+  // Desenfoque de movimiento horizontal mientras el carrusel gira (proporcional a la velocidad).
+  const mb = Math.min(22, Math.abs(p - pAt(frame - 1)) * 900 * 0.3);
   const q = Math.max(0, Math.min(1, p + 1));
-  const W = 1240;
+  const W = 1200;
   const H = W * 9 / 16 + Math.round(W * 0.03);
   // Cámaras y marcas de cada grabación, relativas al momento en que pasa a ser la activa.
   const clips = [
@@ -157,7 +167,8 @@ export const P02Accesos: React.FC<P> = ({ lead, dur }) => {
           const playing = frame >= clip.from && Math.abs(d) < 1;
           return (
             <div key={a.label} style={{ position: 'absolute', left: x - W / 2, top: 600 - H / 2, width: W, height: H, zIndex: 10 - Math.round(Math.abs(d) * 3),
-              transform: `translateY(${(1 - appear) * 80}px) scale(${sc * (0.85 + 0.15 * appear)})`, opacity: appear * (1 - 0.45 * dimV), filter: dimV > 0.05 ? `blur(${(dimV * 2.5).toFixed(2)}px)` : undefined }}>
+              transform: `translateY(${(1 - appear) * 80}px) scale(${sc * (0.85 + 0.15 * appear)})`, opacity: appear * (1 - 0.45 * dimV),
+              filter: [mb > 0.4 && q > 0.02 ? `url(#mb${id})` : '', dimV > 0.05 ? `blur(${(dimV * 2.5).toFixed(2)}px)` : ''].filter(Boolean).join(' ') || undefined }}>
               <div style={{ position: 'absolute', left: 0, right: 0, top: -110 / Math.max(0.42, sc), display: 'flex', justifyContent: 'center', transform: `scale(${1 / Math.max(0.42, sc) * 0.95})`, transformOrigin: '50% 100%' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '10px 26px 10px 12px', borderRadius: 999, background: active ? color.yellow : '#fff', border: active ? 'none' : `1px solid ${color.line}`, boxShadow: shadow.float,
                   fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.ink, whiteSpace: 'nowrap' }}>
@@ -180,8 +191,14 @@ export const P02Accesos: React.FC<P> = ({ lead, dur }) => {
             </div>
           );
         })}
-        <div style={{ position: 'absolute', left: 0, right: 0, bottom: 34, display: 'flex', justifyContent: 'center', zIndex: 20 }}>
-          <LinkBadge at={fDejamos - 2} label="Enlace directo en la descripción" size={38} />
+        <svg width="0" height="0" style={{ position: 'absolute' }}>
+          <defs><filter id={`mb${id}`} x="-5%" y="0" width="110%" height="100%"><feGaussianBlur stdDeviation={`${mb.toFixed(1)} 0`} /></filter></defs>
+        </svg>
+        {/* En la descripción: el enlace directo y la reseña escrita (aparecen cuando la voz los nombra). */}
+        <div style={{ position: 'absolute', left: 0, right: 0, bottom: 28, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 18, zIndex: 20 }}>
+          <LinkBadge at={fDejamos - 3} label="En la descripción" size={34} reserve />
+          <Chip at={fEnlace - 3} label="Enlace directo" icon={<LinkIcon size={30} />} size={34} reserve />
+          <Chip at={fResena - 3} label="Reseña completa por escrito" icon={<DocIcon size={30} />} size={34} reserve />
         </div>
       </AbsoluteFill>
       <Sfx name="ui_pop" at={fTres - 6} />
@@ -191,12 +208,16 @@ export const P02Accesos: React.FC<P> = ({ lead, dur }) => {
       <Sfx name="click" at={clips[1].from + Math.round((m11.marks.click - 1.15) * fps)} />
       <Sfx name="click" at={clips[2].from + Math.round((m22.marks.click_card - 0.95) * fps)} />
       <Sfx name="click" at={clips[2].from + Math.round((m22.marks.click_offer - 0.95) * fps)} />
-      <Sfx name="sparkle" at={fDejamos} />
+      <Sfx name="ui_pop" at={fDejamos - 3} volume={0.8} />
+      <Sfx name="ui_pop" at={fEnlace - 3} volume={0.7} />
+      <Sfx name="sparkle" at={fResena - 2} volume={0.8} />
     </Stage>
   );
 };
 
-// P03 · Cuenta, plan y tarjeta: tres ventanas en abanico; la que nombra la voz pasa delante. «Hoy: 0 €».
+// P03 · Cuenta, plan y tarjeta: carrusel de tres ventanas; la que nombra la voz pasa al centro (las otras, detrás a los lados).
+// «Hoy: 0 €» se estampa al final.
+const STEP_CHECK = <svg width="28" height="28" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke={color.yellow} strokeWidth="3.2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -205,7 +226,7 @@ export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
   const fPlan = at('plan');
   const fTarjeta = at('tarjeta');
   const fHoy = at('hoy');
-  const active = frame < fPlan - 4 ? 0 : frame < fTarjeta - 4 ? 1 : 2;
+  const id = React.useId().replace(/:/g, '');
   const W = 1180;
   const cards = [
     { label: 'Crea tu cuenta', src: 'nx/rec/13_registro/video.mp4', still: 'nx/rec/13_registro/first.jpg', cursor: c13, startAt: 0, cam: [{ f: 0, zoom: 2.0, x: 960, y: 330 }] as CamKey[] },
@@ -214,28 +235,42 @@ export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
   ];
   const starts = [fCuenta, fPlan, fTarjeta];
   const clipFrom = (i: number) => (i === 0 ? 0 : starts[i] - 16);
+  // a: ventana activa (continua) → cada ventana se coloca según su distancia a la activa.
+  const aAt = (f: number) => interpolate(f, [fPlan - 8, fPlan + 10, fTarjeta - 8, fTarjeta + 10], [0, 1, 1, 2], { ...clamp, easing: easeInOut });
+  const a = aAt(frame);
+  const mb = Math.min(20, Math.abs(a - aAt(frame - 1)) * 470 * 0.32);
   const sHoy = spring({ frame: frame - fHoy, fps, config: { damping: 10, stiffness: 210 } });
   return (
     <Stage tone="warm">
+      <svg width="0" height="0" style={{ position: 'absolute' }}>
+        <defs><filter id={`p3${id}`} x="-5%" y="0" width="110%" height="100%"><feGaussianBlur stdDeviation={`${mb.toFixed(1)} 0`} /></filter></defs>
+      </svg>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
         {cards.map((c, i) => {
-          // Posición en el abanico respecto a la tarjeta activa (−1 detrás a la izquierda, +1 detrás a la derecha).
-          const rel = i - active;
-          const p = interpolate(frame, [starts[Math.max(0, Math.min(2, active))] - 4, starts[Math.max(0, Math.min(2, active))] + 12], [0, 1], { ...clamp, easing: easeInOut });
-          const appear = spring({ frame: frame - (i === 0 ? fCuenta - 8 : starts[i] - 16), fps, config: { damping: 18, stiffness: 140 } });
-          const x = rel * 420;
-          const scale = rel === 0 ? 1 : 0.78;
-          const z = rel === 0 ? 3 : 2 - Math.abs(rel);
+          const rel = i - a;
+          const ar = Math.abs(rel);
+          // La primera ventana ya está al empezar (entra con el barrido de la escena); las otras asoman detrás poco después.
+          const appear = i === 0 ? 1 : spring({ frame: frame - Math.min(starts[i] - 16, fCuenta + 2 + i * 6), fps, config: { damping: 18, stiffness: 140 } });
+          const scale = interpolate(ar, [0, 1], [1, 0.78], clamp);
+          const vis = interpolate(ar, [0, 1, 1.5], [1, 0.55, 0], clamp);
+          const soft = Math.min(1, ar);
+          const active = ar < 0.5;
+          const done = i < Math.round(a);
+          const filters = [mb > 0.4 ? `url(#p3${id})` : '', soft > 0.03 ? `blur(${(soft * 2).toFixed(2)}px) saturate(${(1 - 0.3 * soft).toFixed(3)})` : ''].filter(Boolean).join(' ');
           return (
-            <div key={c.label} style={{ position: 'absolute', zIndex: z, transform: `translateX(${x * (rel === 0 ? 1 : p)}px) scale(${scale})`, opacity: appear * (rel === 0 ? 1 : 0.55), filter: rel === 0 ? undefined : 'blur(2px) saturate(0.7)', transition: 'none' }}>
-              <div style={{ position: 'absolute', top: -76, left: 0, display: 'flex', alignItems: 'center', gap: 14, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.ink }}>
-                <span style={{ width: 54, height: 54, borderRadius: '50%', background: rel === 0 ? color.yellow : '#fff', border: rel === 0 ? 'none' : `2px solid ${color.line}`, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>{i + 1}</span>
+            <div key={c.label} style={{ position: 'absolute', zIndex: 10 - Math.round(ar * 3), transform: `translateX(${rel * 470}px) translateY(${(1 - appear) * 70}px) scale(${scale * (0.9 + 0.1 * appear)})`,
+              opacity: appear * vis, filter: filters || undefined }}>
+              <div style={{ position: 'absolute', top: -92, left: 0, display: 'flex', alignItems: 'center', gap: 14, padding: '8px 26px 8px 10px', borderRadius: 999,
+                background: active ? color.yellow : '#fff', border: active ? 'none' : `1px solid ${color.line}`, boxShadow: shadow.float,
+                fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink, whiteSpace: 'nowrap' }}>
+                <span style={{ width: 54, height: 54, borderRadius: '50%', background: active ? color.ink : done ? color.ink : color.yellow, color: active ? color.yellow : color.ink,
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 30 }}>{done ? STEP_CHECK : i + 1}</span>
                 {c.label}
               </div>
-              <TiltWindow width={W} url="nextory.com" ry={rel * -7} rx={2}>
+              <TiltWindow width={W} url="nextory.com" ry={-rel * 7} rx={2}>
                 {frame >= clipFrom(i) ? (
                   <Sequence from={clipFrom(i)} layout="none">
-                    <ScreenClip src={c.src} width={W} startAt={c.startAt} cursor={c.cursor} camera={c.cam} showCursor={rel === 0} />
+                    <ScreenClip src={c.src} width={W} startAt={c.startAt} cursor={c.cursor} camera={c.cam} showCursor={active} />
                   </Sequence>
                 ) : (
                   <ScreenClip image src={c.still} width={W} camera={c.cam} showCursor={false} />
@@ -245,7 +280,8 @@ export const P03Pasos: React.FC<P> = ({ lead, dur }) => {
           );
         })}
         {frame >= fHoy - 2 && (
-          <div style={{ position: 'absolute', right: 300, top: 640, zIndex: 10, transform: `rotate(-8deg) scale(${sHoy})`, padding: '22px 40px', borderRadius: 30, background: color.green, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 64, boxShadow: '0 30px 70px rgba(31,157,85,0.4)', display: 'flex', alignItems: 'center', gap: 18 }}>
+          <div style={{ position: 'absolute', right: 300, top: 640, zIndex: 20, transform: `rotate(${-8 - 6 * (1 - sHoy)}deg) scale(${(1.6 - 0.6 * sHoy) * Math.min(1, sHoy * 1.4)})`, opacity: Math.min(1, sHoy * 2),
+            padding: '22px 40px', borderRadius: 30, background: color.green, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 64, boxShadow: '0 30px 70px rgba(31,157,85,0.4)', display: 'flex', alignItems: 'center', gap: 18 }}>
             <CheckIcon size={64} c="#fff" fg={color.green} /> Hoy: 0 €
           </div>
         )}
@@ -266,36 +302,42 @@ export const P04App: React.FC<P> = ({ lead, dur }) => {
   const fDesc = at('descarga');
   const fEntra = at('entra');
   const fDisf = at('disfrutar');
-  const sB = spring({ frame: frame - fDesc, fps, config: { damping: 15, stiffness: 160 } });
-  const sE = spring({ frame: frame - fEntra, fps, config: { damping: 15, stiffness: 160 } });
-  const sD = spring({ frame: frame - fDisf, fps, config: { damping: 12, stiffness: 180 } });
+  const sB = (k: number) => spring({ frame: frame - fDesc - k * 5, fps, config: { damping: 14, stiffness: 170 } });
+  const sE = spring({ frame: frame - fEntra + 2, fps, config: { damping: 15, stiffness: 160 } });
+  const cam: PhoneKey[] = [{ f: 0, rx: 10, ry: -30, rz: 4, s: 0.9, x: 80, y: 40 }, { f: 26, rx: 3, ry: -12, rz: 1, s: 1, x: 0, y: 0 }, { f: dur, rx: 2, ry: -8, rz: 0.5, s: 1.02, x: 0, y: -4 }];
   return (
     <Stage tone="warm">
       <AbsoluteFill>
+        <PhoneHalo cam={cam} cx={1340} cy={559} strength={0.9} />
         <div style={{ position: 'absolute', left: 1120, top: 100 }}>
           <AppPhone shots={[{ rec: '00_bienvenida', at: 0, start: 0.2 }, { rec: '00_login', at: Math.max(8, fEntra - 14), start: 0.6 }, { rec: '01_inicio', at: fDisf - 6, start: 0.3 }]} w={410}
-            cam={[{ f: 0, rx: 10, ry: -30, rz: 4, s: 0.9, x: 80, y: 40 }, { f: 26, rx: 3, ry: -12, rz: 1, s: 1, x: 0, y: 0 }, { f: dur, rx: 2, ry: -8, rz: 0.5, s: 1.02, x: 0, y: -4 }]} />
+            cam={cam} float={[20, dur + 24]} />
         </div>
         <div style={{ position: 'absolute', left: 170, top: 300, width: 860 }}>
           <MaskTitle text="Descarga la app" hi="app" at={fDesc - 4} size={104} />
-          <div style={{ display: 'flex', gap: 20, marginTop: 40, opacity: sB, transform: `translateY(${(1 - sB) * 30}px)` }}>
-            {['App Store', 'Google Play'].map((s) => (
-              <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '16px 28px', borderRadius: 20, background: color.ink, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 34 }}>
-                <DownloadIcon size={36} c="#fff" />{s}
-              </div>
-            ))}
+          <div style={{ display: 'flex', gap: 20, marginTop: 40 }}>
+            {['App Store', 'Google Play'].map((st, k) => {
+              const sk = sB(k);
+              return (
+                <div key={st} style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '16px 28px', borderRadius: 20, background: color.ink, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 34,
+                  opacity: sk, transform: `translateY(${(1 - sk) * 34}px) scale(${0.9 + 0.1 * sk})`, boxShadow: '0 18px 40px rgba(16,16,16,0.18)' }}>
+                  <DownloadIcon size={36} c="#fff" />{st}
+                </div>
+              );
+            })}
           </div>
           <div style={{ marginTop: 34, fontFamily: font.sans, fontWeight: 500, fontSize: 40, color: color.ink2, opacity: sE, transform: `translateY(${(1 - sE) * 20}px)` }}>
             Entra con tu correo y tu contraseña
           </div>
-          <div style={{ marginTop: 26, opacity: sD, transform: `scale(${0.8 + 0.2 * sD})`, transformOrigin: 'left center' }}>
-            <Pill size={42}>¡A disfrutar!</Pill>
+          <div style={{ marginTop: 26, minHeight: 80 }}>
+            <Chip at={fDisf - 3} label="¡A disfrutar!" icon={<HeadphonesIcon size={32} />} size={42} reserve />
           </div>
         </div>
       </AbsoluteFill>
       <Sfx name="ui_pop" at={fDesc} />
+      <Sfx name="ui_pop" at={fDesc + 5} volume={0.7} />
       <Sfx name="phone_tap" at={fEntra} />
-      <Sfx name="sparkle" at={fDisf} />
+      <Sfx name="sparkle" at={fDisf - 2} />
     </Stage>
   );
 };

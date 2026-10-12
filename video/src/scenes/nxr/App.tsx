@@ -10,7 +10,7 @@ import {
 } from '../../components/Icons2';
 import { wf } from './timeline';
 import type { SceneProps } from './registry';
-import { AppPhone, buildPhoneCam, Chip, Focus, focusFromShots, MaskTitle, PH, PHONE_W, Shot, Tap, APP_W } from './kit';
+import { AppPhone, buildPhoneCam, Chip, Focus, focusFromShots, MaskTitle, PH, PhoneHalo, PHONE_W, Shot, Tap, APP_W } from './kit';
 
 type P = SceneProps;
 export type TagDef = { word: string; nth?: number; label: string; icon: React.ReactNode; out?: string };
@@ -42,7 +42,8 @@ export const AppFeatureScene: React.FC<P & {
   const top = Math.round((1080 - PH.H) / 2);
   const focusList = focus ?? [...focusFromShots(shots, dur), ...focusExtra];
   const cam = buildPhoneCam({ dur, side: sgn, cx, top, focus: focusList, enter, exit });
-  const tagFrames = tags.map((t) => at(t.word, t.nth ?? 0));
+  // Las etiquetas se adelantan 3 fotogramas a la palabra: el ojo tarda un instante en leerlas y así se perciben a la vez.
+  const tagFrames = tags.map((t) => at(t.word, t.nth ?? 0) - 3);
   const tIn = enter === 'glide' ? 7 : 3;
   const xOut = exit === 'glide' ? interpolate(frame, [dur - 12, dur - 1], [0, 1], { ...clamp, easing: easeInOut }) : 0;
   // Sonido de acercamiento al empezar cada foco (no en los encadenados).
@@ -50,8 +51,9 @@ export const AppFeatureScene: React.FC<P & {
   return (
     <Stage tone="warm">
       <AbsoluteFill>
+        <PhoneHalo cam={cam} cx={cx} />
         <div style={{ position: 'absolute', top, left: cx - PH.W / 2 }}>
-          <AppPhone shots={shots} w={PHONE_W} cam={cam} taps={taps} dim={0.72} motionBlur />
+          <AppPhone shots={shots} w={PHONE_W} cam={cam} taps={taps} dim={0.72} motionBlur float={[0, dur]} pulse />
         </div>
         <div style={{ position: 'absolute', top: 0, height: 1080, left: phoneLeft ? 905 : 150, width: 850, display: 'flex', flexDirection: 'column', justifyContent: 'center',
           opacity: 1 - xOut, transform: `translateX(${xOut * 50 * (phoneLeft ? 1 : -1)}px)`, filter: xOut > 0.02 ? `blur(${(xOut * 6).toFixed(2)}px)` : undefined }}>
@@ -65,7 +67,7 @@ export const AppFeatureScene: React.FC<P & {
           {extra}
         </div>
       </AbsoluteFill>
-      {tagFrames.map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.8} />)}
+      {tagFrames.map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.65} />)}
       {taps.map((t, i) => <Sfx key={`t${i}`} name="ui_tap" at={t.f} volume={0.55} />)}
       {zooms.map((f, i) => <Sfx key={`z${i}`} name="zoom_in" at={f} volume={0.45} />)}
     </Stage>

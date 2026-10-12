@@ -10,3 +10,8 @@ __pycache__/
 # Música por piezas: se guardan las composiciones (*.raw.mp3); las niveladas las rehace tools/nxr_music_v2.py join
 video/public/music/parts/*.mp3
 !video/public/music/parts/*.raw.mp3
+
+# Página de reseña de Nextory: salidas de build.py (se generan con web/nextory-resena/build.py)
+web/nextory-resena/dist/
+web/nextory-resena/preview/
+web/nextory-resena/preview-movil/

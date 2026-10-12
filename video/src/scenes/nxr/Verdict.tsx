@@ -11,7 +11,7 @@ import { ScreenClip, CamKey } from '../../components/ScreenClip';
 import { BrowserWindow } from '../../components/BrowserWindow';
 import { wf } from './timeline';
 import type { SceneProps } from './registry';
-import { AppPhone, Chip, LinkBadge, MaskTitle } from './kit';
+import { AppPhone, Chip, LinkBadge, MaskTitle, Sheen } from './kit';
 import { Kicker } from './App';
 
 type P = SceneProps;
@@ -52,9 +52,10 @@ export const R11Extras: React.FC<P> = ({ lead }) => {
             return (
               <div key={it.title} style={{ position: 'relative', width: 360, height: 390 }}>
               <div style={{ position: 'absolute', inset: 0, borderRadius: 44, border: '3px dashed #DADADA', opacity: interpolate(frame, [6 + i * 4, 16 + i * 4], [0, 1], clamp) * (1 - s) }} />
-              <div style={{ width: 360, height: 390, borderRadius: 44, background: '#fff', boxShadow: `0 0 0 ${5 * act}px ${color.yellow}, ${shadow.card}`, border: `1px solid ${color.line}`,
+              <div style={{ position: 'relative', width: 360, height: 390, borderRadius: 44, background: '#fff', boxShadow: `0 0 0 ${5 * act}px ${color.yellow}, ${shadow.card}`, border: `1px solid ${color.line}`,
                 display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 20,
                 opacity: s, transform: `translateY(${(1 - s) * 80 - 16 * act}px) rotateY(${(1 - s) * (i % 2 ? 30 : -30)}deg) scale(${1 + 0.03 * act})` }}>
+                <Sheen at={it.f + 2} tint="rgba(255,214,60,0.30)" />
                 <div style={{ width: 164, height: 164, borderRadius: '50%', background: act > 0.5 ? color.yellow : color.yellowSoft, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{it.icon}</div>
                 <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.ink, letterSpacing: -0.6 }}>{it.title}</div>
                 <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 29, color: color.ink2 }}>{it.sub}</div>
@@ -108,7 +109,7 @@ export const R12Pdf: React.FC<P> = ({ lead, dur }) => {
       {A.visible && (
         <AbsoluteFill style={A.style}>
           <div style={{ position: 'absolute', left: 1120, top: 66, transform: `translateX(${shake}px)` }}>
-            <AppPhone rec="01_inicio" startAt={4} w={430} cam={[{ f: 0, rx: 4, ry: -14, rz: 1, s: 1, x: 0, y: 0 }, { f: dur, rx: 3, ry: -10, rz: 0.5, s: 1.02, x: 0, y: 0 }]} />
+            <AppPhone rec="01_inicio" startAt={4} w={430} cam={[{ f: 0, rx: 4, ry: -14, rz: 1, s: 1, x: 0, y: 0 }, { f: dur, rx: 3, ry: -10, rz: 0.5, s: 1.02, x: 0, y: 0 }]} float={[0, dur + 24]} />
             <div style={{ position: 'absolute', left: '50%', top: '44%', transform: `translate(-50%, -50%) scale(${sX})`, opacity: sX }}>
               <CrossIcon size={200} />
             </div>

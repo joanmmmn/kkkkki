@@ -9,7 +9,7 @@ import { ClockIcon, GlobeIcon, InfinityIcon, PhoneIcon, TabletIcon, UserIcon } f
 import { NextoryLogo } from '../nx/common';
 import { wf } from './timeline';
 import type { SceneProps } from './registry';
-import { AppPhone, buildPhoneCam, Chip, CountUp, MaskTitle, PH, PHONE_W, Shot } from './kit';
+import { AppPhone, buildPhoneCam, Chip, CountUp, MaskTitle, PH, PhoneHalo, PHONE_W, Sheen, Shot } from './kit';
 
 type P = SceneProps;
 const useSpring = (at: number, damping = 16, stiffness = 160) => {
@@ -78,8 +78,9 @@ export const R01Hook: React.FC<P> = ({ lead, dur }) => {
   return (
     <Stage tone="warm">
       <AbsoluteFill>
+        <PhoneHalo cam={cam} cx={cx} />
         <div style={{ position: 'absolute', top, left: cx - PH.W / 2 }}>
-          <AppPhone shots={shots} w={PHONE_W} cam={cam} dim={0.72} motionBlur taps={[{ f: fToc + 10, x: 332, y: 869 }, { f: fBot + 10, x: 252, y: 1198 }]} />
+          <AppPhone shots={shots} w={PHONE_W} cam={cam} dim={0.72} motionBlur float={[30, dur]} taps={[{ f: fToc + 10, x: 332, y: 869 }, { f: fBot + 10, x: 252, y: 1198 }]} />
         </div>
         <div style={{ position: 'absolute', left: 150, top: 0, height: 1080, width: 960, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 30 }}>
@@ -157,8 +158,9 @@ export const R02Que: React.FC<P> = ({ lead, dur }) => {
       {/* Fase A: marca, formatos, catálogo y Planeta, con la app a la derecha */}
       {A.visible && (
         <AbsoluteFill style={A.style}>
+          <PhoneHalo cam={cam} cx={cx} />
           <div style={{ position: 'absolute', top, left: cx - PH.W / 2 }}>
-            <AppPhone shots={[{ rec: '01b_inicio_bajo', at: 0, start: 0.5, hold: 11.5 }]} w={PHONE_W} cam={cam} />
+            <AppPhone shots={[{ rec: '01b_inicio_bajo', at: 0, start: 0.5, hold: 11.5 }]} w={PHONE_W} cam={cam} float={[0, fEspana + 10]} />
           </div>
           <div style={{ position: 'absolute', left: 130, top: 0, height: 1080, width: 1000, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 26, opacity: sLogo, transform: `translateY(${(1 - sLogo) * 24}px)` }}>
@@ -277,9 +279,10 @@ export const R03Planes: React.FC<P> = ({ lead, dur }) => {
             return (
               <div key={p.name} style={{ position: 'relative', width: 470 }}>
               <div style={{ position: 'absolute', inset: 0, borderRadius: 44, border: '3px dashed #DADADA', opacity: interpolate(frame, [4 + i * 4, 14 + i * 4], [0, 1], clamp) * (1 - s) }} />
-              <div style={{ width: 470, padding: '44px 44px 36px', borderRadius: 44, background: hot ? color.ink : '#fff', color: hot ? '#fff' : color.ink,
+              <div style={{ position: 'relative', width: 470, padding: '44px 44px 36px', borderRadius: 44, background: hot ? color.ink : '#fff', color: hot ? '#fff' : color.ink,
                 boxShadow: `0 0 0 ${5 * act}px ${color.yellow}, ${shadow.card}`, border: hot ? 'none' : `1px solid ${color.line}`, boxSizing: 'border-box',
                 opacity: s, transform: `translateY(${(1 - s) * 90 - 18 * act}px) rotateX(${(1 - s) * 55}deg) scale(${(0.94 + 0.06 * s) * (1 + 0.035 * act)})`, transformOrigin: '50% 100%' }}>
+                <Sheen at={p.f + 2} tint={hot ? 'rgba(255,255,255,0.16)' : 'rgba(255,214,60,0.30)'} />
                 <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 50, letterSpacing: -1 }}>{p.name}</div>
                 <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 112, letterSpacing: -5, marginTop: 14, color: hot ? color.yellow : color.ink, lineHeight: 1 }}>
                   {p.from && <span style={{ fontSize: 32, letterSpacing: 0, fontWeight: 500, marginRight: 10, color: 'rgba(255,255,255,0.7)' }}>desde</span>}

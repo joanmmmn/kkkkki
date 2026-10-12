@@ -9,31 +9,46 @@ import { Bumper, BUMP_IN, BUMP_LEN } from './kit';
 
 export const NXR_MUSIC: string | null = 'music/nxr_bed.mp3'; // ElevenLabs Music, secciones cuadradas con las escenas (tools/nxr_music_plan.py)
 
-// Transiciones entre escenas (cuando no hay separador ni enlace del móvil):
-//  push  → la saliente avanza y se desenfoca; la entrante llega desde atrás.
-//  slide → barrido lateral rápido con desenfoque.
-const IN = 11;
-const OUT = 7;
-const SceneShell: React.FC<{ dur: number; tin: SceneDef['tin'] | 'first'; tout: SceneDef['tin'] | 'last'; children: React.ReactNode }> = ({ dur, tin, tout, children }) => {
+// Transiciones entre escenas (cuando no hay separador ni enlace del móvil). La escena saliente dura OV fotogramas más
+// y queda debajo de la entrante, que aparece encima: así las dos se cruzan y nunca hay un fotograma vacío.
+//  push  → la saliente acelera hacia el espectador y se desenfoca; la entrante llega desde atrás frenando.
+//  slide → barrido lateral rápido con desenfoque de movimiento horizontal (las dos se desplazan a la vez).
+const IN = 13;
+const OV = 10;
+const accel = (t: number) => t * t;
+type Tr = SceneDef['tin'] | 'first' | 'last';
+const SceneShell: React.FC<{ dur: number; over: number; tin: Tr; tout: Tr; children: React.ReactNode }> = ({ dur, over, tin, tout, children }) => {
   const frame = useCurrentFrame();
-  const pin = tin === 'push' || tin === 'slide' ? interpolate(frame, [0, tin === 'slide' ? 12 : IN], [0, 1], { ...clamp, easing: easeOut }) : 1;
-  const pout = tout === 'push' || tout === 'slide' ? interpolate(frame, [dur - (tout === 'slide' ? 8 : OUT), dur], [0, 1], { ...clamp, easing: easeInOut }) : 0;
+  const id = React.useId().replace(/:/g, '');
+  const slideIn = tin === 'slide';
+  const slideOut = tout === 'slide';
+  const pushIn = tin === 'push';
+  const pushOut = tout === 'push';
+  const pin = pushIn || slideIn ? interpolate(frame, [0, IN], [0, 1], { ...clamp, easing: easeOut }) : 1;
+  const pout = pushOut || slideOut ? interpolate(frame, [dur - 6, dur + over], [0, 1], { ...clamp, easing: accel }) : 0;
+  // Opacidad: la entrante aparece encima de la saliente (que sigue debajo durante OV fotogramas).
+  const fadeIn = pushIn || slideIn ? interpolate(frame, [0, slideIn ? 8 : 10], [0, 1], { ...clamp, easing: easeOut }) : 1;
+  const fadeOut = pushOut || slideOut ? interpolate(frame, [dur - 2, dur + over], [1, 0], clamp) : 1;
   const drift = 1 + 0.01 * (frame / dur);
-  if (tin === 'slide' || tout === 'slide') {
-    const x = (tin === 'slide' ? (1 - pin) * 220 : 0) - (tout === 'slide' ? pout * 220 : 0);
-    const blur = (tin === 'slide' ? (1 - pin) * 12 : 0) + (tout === 'slide' ? pout * 12 : 0) + (tout === 'push' ? pout * 7 : 0);
-    return (
-      <AbsoluteFill style={{ transform: `translateX(${x}px) scale(${drift * (tout === 'push' ? 1 + 0.04 * pout : 1)})`, filter: blur > 0.05 ? `blur(${blur}px)` : undefined, opacity: (tin === 'slide' ? 0.3 + 0.7 * pin : 1) * (1 - 0.5 * pout) }}>
+  const xAt = (f: number) => {
+    const a = slideIn ? 1 - interpolate(f, [0, IN], [0, 1], { ...clamp, easing: easeOut }) : 0;
+    const b = slideOut ? interpolate(f, [dur - 6, dur + over], [0, 1], { ...clamp, easing: accel }) : 0;
+    return a * 260 - b * 320;
+  };
+  const x = xAt(frame);
+  const mb = Math.min(28, Math.abs(x - xAt(frame - 1)) * 0.5);
+  const scale = drift * (pushIn ? 0.965 + 0.035 * pin : 1) * (pushOut ? 1 + 0.045 * pout : 1);
+  const blur = (pushIn ? (1 - pin) * 6 : 0) + (pushOut ? pout * 8 : 0);
+  const filters = [mb > 0.4 ? `url(#s${id})` : '', blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : ''].filter(Boolean).join(' ');
+  return (
+    <>
+      <svg width="0" height="0" style={{ position: 'absolute' }}>
+        <defs><filter id={`s${id}`} x="-5%" y="0" width="110%" height="100%"><feGaussianBlur stdDeviation={`${mb.toFixed(1)} 0`} /></filter></defs>
+      </svg>
+      <AbsoluteFill style={{ transform: `translate(${x.toFixed(2)}px, ${(pushIn ? (1 - pin) * 14 : 0).toFixed(2)}px) scale(${scale})`, filter: filters || undefined, opacity: fadeIn * fadeOut }}>
         {children}
       </AbsoluteFill>
-    );
-  }
-  const scale = drift * (0.97 + 0.03 * pin) * (1 + 0.04 * pout);
-  const blur = (1 - pin) * 8 + pout * 7;
-  return (
-    <AbsoluteFill style={{ transform: `scale(${scale})`, filter: blur > 0.05 ? `blur(${blur}px)` : undefined, opacity: (0.35 + 0.65 * pin) * (1 - 0.5 * pout) }}>
-      {children}
-    </AbsoluteFill>
+    </>
   );
 };
 
@@ -66,9 +81,11 @@ export const NextoryReview: React.FC = () => {
         // En las escenas de la app seguidas, el móvil sale hacia el centro y la siguiente lo recoge ahí.
         const enter = isApp(i) && isApp(i - 1) && !s.bump ? 'glide' : 'rise';
         const exit = isApp(i) && isApp(i + 1) && !next?.bump ? 'glide' : 'none';
+        // Con push o slide, la saliente se alarga OV fotogramas por debajo de la entrante.
+        const over = next && (tout === 'push' || tout === 'slide') ? OV : 0;
         return (
-          <Sequence key={s.id} from={nxrStart(s.id)} durationInFrames={s.dur} name={s.id}>
-            <SceneShell dur={s.dur} tin={tin} tout={tout}>
+          <Sequence key={s.id} from={nxrStart(s.id)} durationInFrames={s.dur + over} name={s.id}>
+            <SceneShell dur={s.dur} over={over} tin={tin} tout={tout}>
               {s.pre > 0 ? (
                 <Sequence from={s.pre} layout="none">
                   <C lead={s.lead - s.pre} dur={s.dur - s.pre} enter={enter} exit={exit} />
@@ -99,6 +116,8 @@ export const NextoryReview: React.FC = () => {
         const at = nxrStart(id) - BUMP_IN;
         return (
           <React.Fragment key={`bs${id}`}>
+            {/* Un «swell» invertido anticipa el cambio de sección y culmina cuando los paneles tapan la pantalla. */}
+            <Sfx name="reverse_swell" at={at + 12} volume={0.45} />
             <Sfx name="whoosh_fast" at={at + 6} volume={0.9} />
             <Sfx name="hit_soft" at={at + 18} volume={0.8} />
             <Sfx name="whoosh_soft" at={at + 33} volume={0.7} />
