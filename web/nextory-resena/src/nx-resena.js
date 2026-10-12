@@ -4,6 +4,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const comma = (n, d = 1) => (Math.round(n * 10 ** d) / 10 ** d).toFixed(d).replace('.', ',');
+const num = (n) => (Math.abs(n - Math.round(n)) < 0.05 ? String(Math.round(n)) : comma(n));
 const eur = (n) => `${n.toFixed(2).replace('.', ',')} €`;
 const hm = (h) => {
   const m = Math.round(h * 60), hh = Math.floor(m / 60), mm = m % 60;
@@ -29,14 +30,26 @@ const armOnApproach = (el, arm, play, { threshold = 0.35 } = {}) => {
   near.observe(el);
 };
 // Grupo de botones de opción (role="radio"): marca el pulsado y avisa con su valor.
+// Como un grupo de radios: una sola parada con el tabulador y las flechas para moverse entre opciones.
 const radios = (box, fn) => {
   if (!box) return;
   const btns = $$('[role="radio"]', box);
-  btns.forEach((b) => b.addEventListener('click', () => {
-    btns.forEach((x) => x.setAttribute('aria-checked', String(x === b)));
+  const pick = (b, focus) => {
+    btns.forEach((x) => { const on = x === b; x.setAttribute('aria-checked', String(on)); x.tabIndex = on ? 0 : -1; });
+    if (focus) b.focus();
     fn(b.dataset.v, b);
-  }));
+  };
+  btns.forEach((b, i) => {
+    b.tabIndex = b.getAttribute('aria-checked') === 'true' ? 0 : -1;
+    b.addEventListener('click', () => pick(b));
+    b.addEventListener('keydown', (e) => {
+      const k = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+      if (k) { e.preventDefault(); pick(btns[(i + k + btns.length) % btns.length], true); }
+    });
+  });
 };
+// Texto que leen los lectores de pantalla en un deslizador
+const valueText = (input, text) => input?.setAttribute('aria-valuetext', text);
 
 /* ---------- Portada: leer o escuchar ---------- */
 $$('[data-duo]').forEach((duo) => {
@@ -53,7 +66,17 @@ $$('[data-duo]').forEach((duo) => {
   $$('.nx-duo__ph', duo).forEach((ph) => ph.addEventListener('click', () => { if (duo.dataset.on !== ph.dataset.k) { stop(); set(ph.dataset.k); } }));
   if (reduced) return;
   if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(duo);
-  auto = setInterval(() => { if (visible && !document.hidden) set(duo.dataset.on === 'leer' ? 'escuchar' : 'leer'); }, 4200);
+  // Se para mientras tienes el ratón encima o el foco dentro, y del todo tras tres vueltas.
+  const stage = duo.parentElement; let hold = false, turns = 0;
+  stage.addEventListener('pointerenter', () => { hold = true; });
+  stage.addEventListener('pointerleave', () => { hold = false; });
+  stage.addEventListener('focusin', () => { hold = true; });
+  stage.addEventListener('focusout', () => { hold = false; });
+  auto = setInterval(() => {
+    if (!visible || hold || document.hidden) return;
+    set(duo.dataset.on === 'leer' ? 'escuchar' : 'leer');
+    if (++turns >= 6) stop();
+  }, 4200);
 });
 
 /* ---------- Lector: fondo, tipografía, tamaño, márgenes y marcapáginas ---------- */
@@ -63,12 +86,12 @@ $$('[data-rlab]').forEach((lab) => {
   radios($('[data-r-font]', lab), (v) => { book.dataset.font = v; });
   radios($('[data-r-mar]', lab), (v) => { book.dataset.mar = v; });
   const size = $('[data-r-size]', lab), out = $('[data-r-size-out]', lab);
-  size?.addEventListener('input', () => { book.style.setProperty('--book-size', `${size.value}px`); out.textContent = `${size.value} px`; });
+  size?.addEventListener('input', () => { book.style.setProperty('--book-size', `${size.value}px`); out.textContent = `${size.value} px`; valueText(size, `${size.value} píxeles`); });
   const mark = $('[data-r-mark]', lab), label = $('[data-r-mark-label]', lab);
   let t = 0;
   mark?.addEventListener('click', () => {
-    const on = mark.getAttribute('aria-pressed') !== 'true';
-    mark.setAttribute('aria-pressed', String(on));
+    const on = mark.dataset.on !== 'true';
+    mark.dataset.on = String(on);
     book.classList.toggle('is-marked', on);
     if (label) label.textContent = on ? 'Quitar marcapáginas' : 'Añadir marcapáginas';
     clearTimeout(t);
@@ -84,12 +107,12 @@ $$('[data-pl]').forEach((lab) => {
   const BOOK = 8; // horas del audiolibro del ejemplo
   const upd = () => {
     const r = Number(rate.value), s = `${comma(r)}x`;
-    out.textContent = s; chip.textContent = s;
+    out.textContent = s; chip.textContent = s; valueText(rate, `${comma(r)} x`);
     real.textContent = hm(BOOK / r);
     plan.textContent = hm(BOOK);
-    per.textContent = `${comma(r)} h`;
-    // Tiempo que queda en el reproductor (de un capítulo de 8 h 14 min, ya escuchados 1:28), al ritmo elegido
-    const rem = (8 * 3600 + 14 * 60 + 12) / r, hh = Math.floor(rem / 3600), mm = Math.floor((rem % 3600) / 60), ss = Math.floor(rem % 60);
+    per.textContent = `${num(r)} h`;
+    // Tiempo que queda en el reproductor al ritmo elegido: el audiolibro dura 8:14:12 y ya van 1:28
+    const rem = (8 * 3600 + 14 * 60 + 12 - 88) / r, hh = Math.floor(rem / 3600), mm = Math.floor((rem % 3600) / 60), ss = Math.floor(rem % 60);
     if (left) left.textContent = `−${hh}:${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}`;
   };
   rate?.addEventListener('input', upd);
@@ -99,7 +122,7 @@ $$('[data-pl]').forEach((lab) => {
     0: 'Sin temporizador.',
     15: 'Se para dentro de 15 minutos. Si agitas el móvil cuando se apaga el sonido, suma 20 minutos más.',
     40: 'Se para dentro de 40 minutos: el máximo de la lista (también puedes elegir una hora exacta).',
-    cap: 'Se para al terminar el capítulo. La app te dice cuánto falta, por ejemplo «Fin del capítulo (0 h 11 min)».',
+    cap: 'Se para al terminar el capítulo. La app te dice cuánto falta, por ejemplo «Fin del capítulo (0 h 11 min)».',
   };
   radios($('[data-pl-timer]', lab), (v) => { moon?.classList.toggle('is-on', v !== '0'); if (note) note.textContent = txt[v] || ''; });
 });
@@ -113,12 +136,13 @@ $$('[data-calc]').forEach((box) => {
   const PLANS = { mini: ['Mini', 5.99, 10], standard: ['Standard', 7.99, 30], unlimited: ['Unlimited', 9.99, Infinity] };
   const upd = () => {
     const hrs = Number(h.value);
-    hout.textContent = `${hrs} h`;
+    hout.textContent = `${hrs} h`; valueText(h, `${hrs} horas al mes`);
     let k = hrs <= 10 ? 'mini' : hrs <= 30 ? 'standard' : 'unlimited';
     if (many) k = 'unlimited';
     const [n, p, cap] = PLANS[k];
     name.textContent = n;
-    price.textContent = k === 'unlimited' ? `desde ${eur(p)} al mes` : `${eur(p)} al mes`;
+    // Con varios perfiles a la vez, Unlimited cuesta más que su precio de partida (que es para un perfil)
+    price.textContent = many ? `más de ${eur(p)} al mes` : k === 'unlimited' ? `desde ${eur(p)} al mes` : `${eur(p)} al mes`;
     let w;
     if (many) w = 'Solo Unlimited deja usar varios perfiles a la vez. El precio sube según cuántos perfiles uséis al mismo tiempo (de 1 a 4).';
     else if (k === 'mini') w = `Con ${hrs} h al mes te basta el Mini, de 10 h.${hrs < 10 ? ` Las ${10 - hrs} h que no gastes se guardan para los meses siguientes.` : ''}`;
@@ -126,6 +150,7 @@ $$('[data-calc]').forEach((box) => {
     else w = `Con ${hrs} h al mes, el Standard (30 h) se te queda corto: en Unlimited no hay límite de horas.`;
     why.textContent = w;
     per.textContent = `Te sale a ${eur(p / hrs)} la hora${k === 'unlimited' ? ' (con el precio más bajo)' : ''}.`;
+    per.hidden = many;
     segs.forEach((s) => s.classList.toggle('is-on', s.dataset.plan === k));
     if (k !== last && last && !reduced) { box.classList.remove('is-bump'); void box.offsetWidth; box.classList.add('is-bump'); }
     last = k;
@@ -310,10 +335,12 @@ $$('[data-more]').forEach((box) => {
 /* ---------- Visor de capturas ---------- */
 (() => {
   const dlg = $('[data-lightbox]'); if (!dlg || !dlg.showModal) return;
-  const img = $('img', dlg), cap = $('p', dlg);
+  const cap = $('p', dlg), img = document.createElement('img');
+  img.alt = ''; // el pie de debajo ya lo describe
+  cap.before(img);
   $$('[data-zoom]').forEach((b) => b.addEventListener('click', () => {
     const src = $('img', b);
-    img.src = src.currentSrc || src.src; img.alt = src.alt;
+    img.src = src.currentSrc || src.src;
     cap.textContent = src.alt;
     dlg.showModal();
   }));
@@ -336,5 +363,6 @@ $$('[data-yt]').forEach((a) => {
     const box = Object.assign(document.createElement('div'), { className: 'nx-video' });
     a.replaceWith(box);
     box.append(f);
+    f.focus();
   });
 });

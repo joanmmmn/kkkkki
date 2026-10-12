@@ -8,7 +8,7 @@
                      enlaces absolutos a sonorbooks.com y los archivos de media/ al lado.
   preview-movil/   → visor para revisar la versión móvil (un teléfono con la página dentro).
 
-Uso: python3 web/nextory-resena/build.py [--yt ID_DE_YOUTUBE]
+Uso: python3 web/nextory-resena/build.py [--yt ID_DE_YOUTUBE [--yt-fecha AAAA-MM-DD]]
 Las capturas de media/ salen de las grabaciones de la app (tools/web_nx_media.py); la carpeta site/ tiene la
 cabecera, el pie y los estilos del sitio copiados de la página actual (los mismos que la reseña de ElevenReader)."""
 import hashlib, html, json, os, re, shutil, sys
@@ -17,6 +17,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 SRC, MEDIA, SITE = (os.path.join(HERE, d) for d in ('src', 'media', 'site'))
 YT = sys.argv[sys.argv.index('--yt') + 1] if '--yt' in sys.argv else ''
+YT_FECHA = sys.argv[sys.argv.index('--yt-fecha') + 1] if '--yt-fecha' in sys.argv else ''  # día de publicación en YouTube
+YT_CANAL = 'https://www.youtube.com/@SonorBooksEspa%C3%B1a/videos'
+if YT and not re.fullmatch(r'[\w-]{11}', YT):
+    sys.exit(f'--yt: «{YT}» no parece un ID de YouTube (11 caracteres, p. ej. dQw4w9WgXcQ)')
+if YT_FECHA and not re.fullmatch(r'\d{4}-\d{2}-\d{2}', YT_FECHA):
+    sys.exit(f'--yt-fecha: «{YT_FECHA}» debe ser AAAA-MM-DD')
 SLUG = 'nextory-resena'
 PROD_A = '/assets/resenas/nextory'
 SALIR = '/salir/nextory/?market=ES&amp;language=es&amp;to=https%3A%2F%2Fnextory.com%2Fes'
@@ -35,8 +41,18 @@ def read(p):
     return open(p, encoding='utf-8').read()
 
 
+def notes(page, cls):
+    """Los puntos de «Lo mejor» (pro) o «Lo peor» (con) tal como salen en la página, para que el JSON-LD no se desfase."""
+    pc = re.search(r'<div class="nx-pc">(.*?)</section>', page, re.S).group(1)
+    box = re.search(rf'<div class="{cls}">(.*?)</ul>', pc, re.S).group(1)
+    items = [html.unescape(re.sub(r'<[^>]+>', '', li)).replace('\u00a0', ' ').strip() for li in re.findall(r'<li>(.*?)</li>', box, re.S)]
+    assert items, f'sin puntos en .{cls}'
+    return {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n} for i, n in enumerate(items)]}
+
+
 def jsonld():
     url = f'https://sonorbooks.com/es/blog/{SLUG}/'
+    page = read(os.path.join(SRC, 'page.html'))
     graph = [
         {'@type': 'Review', '@id': url + '#review', 'url': url, 'name': 'Nextory: opiniones, precio y si merece la pena',
          'image': 'https://sonorbooks.com' + PROD_A + '/media/nextory-resena-og.jpg',
@@ -44,14 +60,7 @@ def jsonld():
          'author': {'@type': 'Organization', 'name': 'Equipo editorial SonorBooks', 'url': 'https://sonorbooks.com/es/blog/criterios-editoriales/'},
          'publisher': {'@type': 'Organization', 'name': 'SonorBooks', 'url': 'https://sonorbooks.com/es/'},
          'reviewRating': {'@type': 'Rating', 'ratingValue': '8', 'bestRating': '10', 'worstRating': '0'},
-         'positiveNotes': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n} for i, n in enumerate([
-             'Audiolibros y ebooks en una sola app y una sola cuota', 'Catálogo en español con el de Planeta',
-             'Plan Mini desde 5,99 € al mes', '4 perfiles en todos los planes, con perfil infantil y PIN',
-             'Las horas que no gastas se guardan', 'Lector y reproductor completos'])]},
-         'negativeNotes': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n} for i, n in enumerate([
-             'Límite de horas en Mini y Standard; a 2x cada hora cuenta doble', 'Sin web ni app de ordenador',
-             'No permite subir libros ni PDF propios', 'No funciona en Kindle ni en Kobo',
-             'Si cancelas durante la prueba, pierdes el acceso al momento'])]},
+         'positiveNotes': notes(page, 'pro'), 'negativeNotes': notes(page, 'con'),
          'itemReviewed': {'@type': 'SoftwareApplication', 'name': 'Nextory', 'applicationCategory': 'BookApplication',
                           'operatingSystem': 'iOS, Android', 'url': 'https://nextory.com/es',
                           'offers': {'@type': 'Offer', 'price': '5.99', 'priceCurrency': 'EUR'}}},
@@ -61,17 +70,35 @@ def jsonld():
             {'@type': 'ListItem', 'position': 3, 'name': 'Reseñas', 'item': 'https://sonorbooks.com/es/blog/resenas/'},
             {'@type': 'ListItem', 'position': 4, 'name': 'Nextory', 'item': url}]},
     ]
+    if YT:  # el vídeo, para que Google lo asocie a la página (se carga al pulsar, sin iframe en el HTML)
+        import datetime
+        from zoneinfo import ZoneInfo
+        dia = datetime.date.fromisoformat(YT_FECHA) if YT_FECHA else datetime.date.today()
+        subida = datetime.datetime(dia.year, dia.month, dia.day, 12, tzinfo=ZoneInfo('Europe/Madrid')).isoformat()  # +01:00 o +02:00 según el día
+        graph.append({'@type': 'VideoObject', '@id': url + '#video', 'name': '¿Merece la pena Nextory? Reseña a fondo: lo bueno, lo malo y 30 días gratis',
+                      'description': 'Reseña de Nextory: catálogo en español, planes y horas, El Librarian, el lector, el reproductor, '
+                                     'perfiles, dispositivos, lo bueno y lo malo, y cómo probarlo 30 días gratis en vez de 14.',
+                      'thumbnailUrl': [f'https://i.ytimg.com/vi/{YT}/maxresdefault.jpg', 'https://sonorbooks.com' + PROD_A + '/media/nextory-resena-og.jpg'],
+                      'uploadDate': subida, 'duration': 'PT4M29S', 'inLanguage': 'es-ES',  # 4:29, lo que dura el vídeo final
+                      'embedUrl': f'https://www.youtube.com/embed/{YT}',
+                      'publisher': {'@type': 'Organization', 'name': 'SonorBooks', 'url': 'https://sonorbooks.com/es/'}})
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False) + '</script>'
 
 
 def media_files():
-    return sorted(f for f in os.listdir(MEDIA) if os.path.isfile(os.path.join(MEDIA, f)) and not f.startswith('.'))
+    """Solo las imágenes que usa la página (media/ tiene más capturas de las grabaciones)."""
+    page = read(os.path.join(SRC, 'page.html'))
+    files = sorted(f for f in os.listdir(MEDIA) if os.path.isfile(os.path.join(MEDIA, f)) and not f.startswith('.'))
+    return [f for f in files if '/media/' + f in page]
 
 
 def build_prod():
     css, js = read(os.path.join(SRC, 'nx-resena.css')), read(os.path.join(SRC, 'nx-resena.js'))
     v = hashlib.sha1((css + js).encode()).hexdigest()[:12]
     page = read(os.path.join(SRC, 'page.html'))
+    if YT:  # el enlace del vídeo ya apunta al vídeo, también sin JavaScript
+        assert f'href="{YT_CANAL}"' in page
+        page = page.replace(f'href="{YT_CANAL}"', f'href="https://www.youtube.com/watch?v={YT}"', 1)
     routing = read(os.path.join(SITE, 'provider-routing-data.json')).strip()
     page = (page.replace('<!--SITE_CSS-->', SITE_CSS + '<style>' + read(os.path.join(SITE, 'chrome_inline.css')).strip() + '</style>')
             .replace('<!--SITE_JS-->', SITE_JS)
@@ -148,3 +175,6 @@ def build_mobile(head, body, preview_dir):
 if __name__ == '__main__':
     build_prod()
     build_preview()
+    if not YT:
+        print('aviso: sin --yt, el vídeo de la página enlaza al canal de YouTube; para publicar, '
+              'usa --yt ID_DEL_VÍDEO --yt-fecha AAAA-MM-DD')
