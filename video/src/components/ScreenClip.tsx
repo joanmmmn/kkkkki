@@ -21,6 +21,11 @@ import nx15 from '../../public/nx/rec/15_pago/meta.json';
 import nx22 from '../../public/nx/rec/22_plataformas/meta.json';
 // Grabaciones de la app de Nextory (reseña): duraciones en public/nxr/rec/index.json (las escribe tools/nxr_ingest.py).
 import nxrIndex from '../../public/nxr/rec/index.json';
+// Reseña de Podimo: tomas de la app (tools/pdr_clips.py) y grabaciones de SonorBooks (tools/record.mjs).
+import pdrIndex from '../../public/pdr/rec/index.json';
+import pdw00 from '../../public/pdr/web/00_home/meta.json';
+import pdw11 from '../../public/pdr/web/11_ficha_click/meta.json';
+import pdw22 from '../../public/pdr/web/22_plataformas/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
@@ -38,6 +43,10 @@ const REC_DURATIONS: Record<string, number> = {
   'nx/rec/15_pago/video.mp4': nx15.duration,
   'nx/rec/22_plataformas/video.mp4': nx22.duration,
   ...Object.fromEntries(Object.entries(nxrIndex as Record<string, { duration: number }>).map(([k, v]) => [`nxr/rec/${k}/video.mp4`, v.duration])),
+  ...Object.fromEntries(Object.entries(pdrIndex as Record<string, { duration: number }>).map(([k, v]) => [`pdr/rec/${k}/video.mp4`, v.duration])),
+  'pdr/web/00_home/video.mp4': pdw00.duration,
+  'pdr/web/11_ficha_click/video.mp4': pdw11.duration,
+  'pdr/web/22_plataformas/video.mp4': pdw22.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };

@@ -1,0 +1,189 @@
+{
+ "id": "L02",
+ "hash": "b9f937823512",
+ "text": "Actívalos desde la portada de SonorBooks, desde la ficha de cualquier libro que esté en Podimo o desde nuestra comparativa de plataformas. Te dejamos en la descripción el enlace directo y la reseña completa por escrito.",
+ "duration": 13.12,
+ "words": [
+  {
+   "w": "Actívalos",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "desde",
+   "s": 0.64,
+   "e": 0.84
+  },
+  {
+   "w": "la",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "portada",
+   "s": 1.04,
+   "e": 1.44
+  },
+  {
+   "w": "de",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "SonorBooks,",
+   "s": 1.72,
+   "e": 2.6
+  },
+  {
+   "w": "desde",
+   "s": 2.64,
+   "e": 2.8
+  },
+  {
+   "w": "la",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "ficha",
+   "s": 3.0,
+   "e": 3.2
+  },
+  {
+   "w": "de",
+   "s": 3.28,
+   "e": 3.36
+  },
+  {
+   "w": "cualquier",
+   "s": 3.4,
+   "e": 3.76
+  },
+  {
+   "w": "libro",
+   "s": 3.88,
+   "e": 4.08
+  },
+  {
+   "w": "que",
+   "s": 4.16,
+   "e": 4.24
+  },
+  {
+   "w": "esté",
+   "s": 4.32,
+   "e": 4.52
+  },
+  {
+   "w": "en",
+   "s": 4.56,
+   "e": 4.72
+  },
+  {
+   "w": "Podimo",
+   "s": 4.8,
+   "e": 5.36
+  },
+  {
+   "w": "o",
+   "s": 5.4,
+   "e": 5.44
+  },
+  {
+   "w": "desde",
+   "s": 5.52,
+   "e": 5.76
+  },
+  {
+   "w": "nuestra",
+   "s": 5.8,
+   "e": 6.08
+  },
+  {
+   "w": "comparativa",
+   "s": 6.16,
+   "e": 6.72
+  },
+  {
+   "w": "de",
+   "s": 6.8,
+   "e": 6.88
+  },
+  {
+   "w": "plataformas.",
+   "s": 6.92,
+   "e": 8.12
+  },
+  {
+   "w": "Te",
+   "s": 8.16,
+   "e": 8.24
+  },
+  {
+   "w": "dejamos",
+   "s": 8.28,
+   "e": 8.64
+  },
+  {
+   "w": "en",
+   "s": 8.68,
+   "e": 8.72
+  },
+  {
+   "w": "la",
+   "s": 8.76,
+   "e": 8.8
+  },
+  {
+   "w": "descripción",
+   "s": 8.88,
+   "e": 9.44
+  },
+  {
+   "w": "el",
+   "s": 9.52,
+   "e": 9.6
+  },
+  {
+   "w": "enlace",
+   "s": 9.68,
+   "e": 10.0
+  },
+  {
+   "w": "directo",
+   "s": 10.2,
+   "e": 10.64
+  },
+  {
+   "w": "y",
+   "s": 10.72,
+   "e": 10.76
+  },
+  {
+   "w": "la",
+   "s": 10.8,
+   "e": 10.88
+  },
+  {
+   "w": "reseña",
+   "s": 10.96,
+   "e": 11.36
+  },
+  {
+   "w": "completa",
+   "s": 11.48,
+   "e": 11.92
+  },
+  {
+   "w": "por",
+   "s": 11.96,
+   "e": 12.0
+  },
+  {
+   "w": "escrito.",
+   "s": 12.08,
+   "e": 13.12
+  }
+ ],
+ "speechEnd": 12.644
+}

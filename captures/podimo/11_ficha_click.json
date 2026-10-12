@@ -1,0 +1,26 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://sonorbooks.com/es/audiolibro/la-mala-hija/"},
+    {"wait": 1200},
+    {"clickText": "Entendido", "dur": 10},
+    {"wait": 800},
+    {"move": [1040, 552], "dur": 10},
+    {"shot": "ficha_still"},
+    {"record": true},
+    {"wait": 1200},
+    {"mark": "to_opt"},
+    {"move": [1252, 721], "dur": 650},
+    {"wait": 150},
+    {"mark": "click_opt"},
+    {"click": true},
+    {"wait": 1500},
+    {"mark": "to_btn"},
+    {"move": [1275, 558], "dur": 600},
+    {"wait": 170},
+    {"mark": "click"},
+    {"fakeClick": true},
+    {"wait": 2200},
+    {"mark": "end"}
+  ]
+}

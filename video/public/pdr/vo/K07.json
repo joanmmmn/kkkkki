@@ -1,0 +1,94 @@
+{
+ "id": "K07",
+ "hash": "61cb2e3090de",
+ "text": "El reproductor tiene velocidad hasta el doble, capítulos, descargas para escuchar sin conexión y temporizador para dormir.",
+ "duration": 8.08,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "reproductor",
+   "s": 0.24,
+   "e": 0.8
+  },
+  {
+   "w": "tiene",
+   "s": 0.88,
+   "e": 1.12
+  },
+  {
+   "w": "velocidad",
+   "s": 1.16,
+   "e": 1.6
+  },
+  {
+   "w": "hasta",
+   "s": 1.64,
+   "e": 1.92
+  },
+  {
+   "w": "el",
+   "s": 1.96,
+   "e": 2.0
+  },
+  {
+   "w": "doble,",
+   "s": 2.08,
+   "e": 2.8
+  },
+  {
+   "w": "capítulos,",
+   "s": 2.92,
+   "e": 3.68
+  },
+  {
+   "w": "descargas",
+   "s": 3.84,
+   "e": 4.24
+  },
+  {
+   "w": "para",
+   "s": 4.32,
+   "e": 4.4
+  },
+  {
+   "w": "escuchar",
+   "s": 4.52,
+   "e": 4.88
+  },
+  {
+   "w": "sin",
+   "s": 4.96,
+   "e": 5.12
+  },
+  {
+   "w": "conexión",
+   "s": 5.2,
+   "e": 5.92
+  },
+  {
+   "w": "y",
+   "s": 6.0,
+   "e": 6.08
+  },
+  {
+   "w": "temporizador",
+   "s": 6.2,
+   "e": 6.96
+  },
+  {
+   "w": "para",
+   "s": 7.04,
+   "e": 7.12
+  },
+  {
+   "w": "dormir.",
+   "s": 7.16,
+   "e": 8.08
+  }
+ ],
+ "speechEnd": 7.669
+}

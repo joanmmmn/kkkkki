@@ -1,0 +1,121 @@
+{
+ "00_gustos": {
+  "duration": 40.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 0.0,
+  "to": 40.0,
+  "audio": false
+ },
+ "01_int_pod": {
+  "duration": 32.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 40.0,
+  "to": 72.0,
+  "audio": false
+ },
+ "02_int_aud": {
+  "duration": 26.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 72.0,
+  "to": 98.0,
+  "audio": false
+ },
+ "03_recopilando": {
+  "duration": 16.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 106.0,
+  "to": 122.0,
+  "audio": false
+ },
+ "04_inicio": {
+  "duration": 44.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 116.0,
+  "to": 160.0,
+  "audio": false
+ },
+ "05_buscar": {
+  "duration": 36.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 160.0,
+  "to": 196.0,
+  "audio": false
+ },
+ "06_ficha": {
+  "duration": 9.6,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 196.0,
+  "to": 205.6,
+  "audio": false
+ },
+ "07_ficha_top": {
+  "duration": 10.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 304.0,
+  "to": 314.0,
+  "audio": false
+ },
+ "08_reproductor": {
+  "duration": 48.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 312.0,
+  "to": 360.0,
+  "audio": true
+ },
+ "09_velocidad": {
+  "duration": 74.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 358.0,
+  "to": 432.0,
+  "audio": false
+ },
+ "10_capitulos": {
+  "duration": 24.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 428.0,
+  "to": 452.0,
+  "audio": false
+ },
+ "11_podcast": {
+  "duration": 32.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 490.0,
+  "to": 522.0,
+  "audio": false
+ },
+ "12_biblioteca": {
+  "duration": 25.6,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 590.0,
+  "to": 615.6,
+  "audio": false
+ },
+ "13_membresia": {
+  "duration": 27.2,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 646.4,
+  "to": 673.6,
+  "audio": false
+ },
+ "14_regala": {
+  "duration": 17.4,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 678.6,
+  "to": 696.0,
+  "audio": false
+ },
+ "15_inicio_top": {
+  "duration": 16.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 704.0,
+  "to": 720.0,
+  "audio": false
+ },
+ "16_audiolibros": {
+  "duration": 41.0,
+  "src": "2026-10-12 22-43-48.mp4",
+  "from": 756.0,
+  "to": 797.0,
+  "audio": false
+ }
+}

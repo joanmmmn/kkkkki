@@ -1,0 +1,121 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "K01",
+   "text": "¿Merece la pena pagar Podimo? Lo hemos instalado y lo hemos usado a fondo: sus pódcasts exclusivos, sus audiolibros y su letra pequeña. Te contamos lo bueno, lo malo… y al final, cómo probarlo treinta días gratis.",
+   "say": "¿Merece la pena pagar Podímo? Lo hemos instalado y lo hemos usado a fondo: sus pódcasts exclusivos, sus audiolibros y su letra pequeña. Te contamos lo bueno, lo malo… y al final, cómo probarlo treinta días gratis."
+  },
+  {
+   "id": "K02",
+   "text": "¿Qué es Podimo? Una app danesa de pódcasts y audiolibros que llegó a España en dos mil veinte. Su gancho son los pódcasts que solo puedes escuchar aquí, con el sello «Solo en Podimo». Y, además, tiene miles de audiolibros en español.",
+   "say": "¿Qué es Podímo? Una app danesa de pódcasts y audiolibros que llegó a España en dos mil veinte. Su gancho son los pódcasts que solo puedes escuchar aquí, con el sello «Solo en Podímo». Y, además, tiene miles de audiolibros en español."
+  },
+  {
+   "id": "K03",
+   "text": "Tiene dos planes. Premium: cuatro noventa y nueve al mes, con veinte horas de audiolibros y todos sus pódcasts, sin anuncios. Y Premium Plus: nueve noventa y nueve, con cien horas. Si pagas el año, sale a cuarenta y nueve noventa y nueve o noventa y nueve noventa y nueve. Y sin pagar, Podimo Free solo te deja los pódcasts abiertos.",
+   "say": "Tiene dos planes. Premium: cuatro noventa y nueve al mes, con veinte horas de audiolibros y todos sus pódcasts, sin anuncios. Y Premium Plus: nueve noventa y nueve, con cien horas. Si pagas el año, sale a cuarenta y nueve noventa y nueve o noventa y nueve noventa y nueve. Y sin pagar, Podímo Free solo te deja los pódcasts abiertos."
+  },
+  {
+   "id": "K04",
+   "text": "Al entrar, eliges si te van más los pódcasts, los audiolibros o los dos, y la portada se adapta a ti: populares, novedades y recomendaciones de los editores."
+  },
+  {
+   "id": "K05",
+   "text": "Lo que lo hace distinto son sus pódcasts exclusivos, muchos también en vídeo: Mimicidios, Malas personas, La vida y tal, de Ana Milán, o Entre el cielo y las nubes, de Laura Escanes, premiado en los Ondas como pódcast revelación."
+  },
+  {
+   "id": "K06",
+   "text": "En audiolibros hay thrillers, novedades, biografías y desarrollo personal. Buscas por título o autor, y cada ficha te dice quién lo narra, cuánto dura y qué opinan otros oyentes."
+  },
+  {
+   "id": "K07",
+   "text": "El reproductor tiene velocidad hasta el doble, capítulos, descargas para escuchar sin conexión y temporizador para dormir."
+  },
+  {
+   "id": "K08",
+   "text": "Ojo con las horas. El reloj de arriba es lo que te queda del mes: veinte horas que se reinician el día uno y no se acumulan. Y son horas de audiolibro: a doble velocidad, el reloj baja el doble de rápido."
+  },
+  {
+   "id": "K09",
+   "text": "Funciona en el móvil y la tablet; en el coche, con CarPlay y Android Auto; y en tus altavoces, con AirPlay o Chromecast. En el Apple Watch, de momento, no."
+  },
+  {
+   "id": "K10",
+   "text": "¿Y qué opinan los usuarios? En la App Store tiene un cuatro coma ocho, con unas treinta y dos mil valoraciones. En Trustpilot, un uno coma nueve: muchas quejas son por cobros al acabar la prueba. Así que apúntate cuándo termina."
+  },
+  {
+   "id": "K11",
+   "text": "Lo bueno: los pódcasts exclusivos, un plan de cuatro noventa y nueve con veinte horas, una app muy sencilla y descargas sin conexión. Lo malo: las horas no se acumulan y a doble velocidad se gastan antes, no hay perfiles ni plan familiar, no tiene ebooks y, si cancelas en la prueba, pierdes el acceso al momento."
+  },
+  {
+   "id": "K12",
+   "text": "¿Merece la pena? Si te gustan los pódcasts y escuchas uno o dos audiolibros al mes, por cuatro noventa y nueve es de lo más barato. Si escuchas mucho, compara: Storytel no tiene límite por ocho noventa y nueve. Y antes de pagar, busca tus libros en SonorBooks para ver si están en Podimo o en otra plataforma.",
+   "say": "¿Merece la pena? Si te gustan los pódcasts y escuchas uno o dos audiolibros al mes, por cuatro noventa y nueve es de lo más barato. Si escuchas mucho, compara: Storytel no tiene límite por ocho noventa y nueve. Y antes de pagar, busca tus libros en SonorBooks para ver si están en Podímo o en otra plataforma."
+  },
+  {
+   "id": "L01",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis, con veinte horas de audiolibros."
+  },
+  {
+   "id": "L02",
+   "text": "Actívalos desde la portada de SonorBooks, desde la ficha de cualquier libro que esté en Podimo o desde nuestra comparativa de plataformas. Te dejamos en la descripción el enlace directo y la reseña completa por escrito.",
+   "say": "Actívalos desde la portada de SonorBooks, desde la ficha de cualquier libro que esté en Podímo o desde nuestra comparativa de plataformas. Te dejamos en la descripción el enlace directo y la reseña completa por escrito."
+  },
+  {
+   "id": "L03",
+   "text": "Crea tu cuenta con tu correo y añade tu tarjeta: hoy no pagas nada."
+  },
+  {
+   "id": "L04",
+   "text": "Descarga la app, entra con tu correo… y elige lo que te gusta."
+  },
+  {
+   "id": "L05",
+   "text": "¿Te ha gustado? Quédate: no tienes que hacer nada. ¿No te convence? Cancela antes del día treinta en Configuración, Gestionar suscripción; mejor en los últimos días, porque al cancelar pierdes el acceso al momento."
+  },
+  {
+   "id": "L06",
+   "text": "Encuentra dónde escuchar tu próximo libro, y a qué precio, en SonorBooks."
+  },
+  {
+   "id": "M01",
+   "text": "¿Merece la pena Podimo? Lo hemos probado a fondo.",
+   "say": "¿Merece la pena Podímo? Lo hemos probado a fondo."
+  },
+  {
+   "id": "M02",
+   "text": "Por cuatro noventa y nueve al mes tienes sus pódcasts exclusivos y veinte horas de audiolibros."
+  },
+  {
+   "id": "M03",
+   "text": "Ojo: las horas se reinician cada mes, no se acumulan, y a doble velocidad se gastan el doble de rápido."
+  },
+  {
+   "id": "M04",
+   "text": "Lo malo: no hay perfiles ni ebooks, y si cancelas durante la prueba, pierdes el acceso al momento."
+  },
+  {
+   "id": "M05",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis."
+  },
+  {
+   "id": "M06",
+   "text": "Si te gusta, te quedas. Si no, cancela antes del día treinta; mejor al final."
+  },
+  {
+   "id": "M07",
+   "text": "Busca tu próximo libro en SonorBooks."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://sonorbooks.com/es/"},
+    {"wait": 1500},
+    {"clickText": "Entendido", "dur": 10},
+    {"wait": 800},
+    {"move": [1180, 300], "dur": 10},
+    {"shot": "home_still"},
+    {"record": true},
+    {"wait": 500},
+    {"mark": "to_card"},
+    {"move": [764, 640], "dur": 1000},
+    {"wait": 900},
+    {"mark": "to_btn"},
+    {"move": [764, 781], "dur": 600},
+    {"wait": 450},
+    {"mark": "click"},
+    {"fakeClick": true},
+    {"wait": 1200},
+    {"mark": "end"}
+  ]
+}
