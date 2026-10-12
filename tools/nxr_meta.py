@@ -46,9 +46,11 @@ def review_scenes():
     src = open(os.path.join(V, 'src/scenes/nxr/timeline.ts')).read()
     block = src[src.index('export const NXR_SCENES'):src.index('];', src.index('export const NXR_SCENES'))]
     out = []
-    for m in re.finditer(r"simple\('(\w+)'(?:,\s*(\d+))?(?:,\s*sec\(([\d.]+)\))?\)", block):
+    # simple('R03', 18, sec(0.52), 'Precios y planes') · simple('R04B', 12, sec(0.2), undefined, 'cut') · simple('P03', 12, LEAD, undefined, 'slide')
+    pat = r"simple\('(\w+)'(?:,\s*(\d+))?(?:,\s*(?:sec\(([\d.]+)\)|LEAD))?(?:,\s*(?:'([^']*)'|undefined))?(?:,\s*'(\w+)')?\)"
+    for m in re.finditer(pat, block):
         id_, extra, lead = m.group(1), int(m.group(2) or 0), sec(float(m.group(3))) if m.group(3) else sec(0.12)
-        out.append({'id': id_, 'lead': lead, 'dur': lead + speech_frames(id_) + sec(0.32) + extra})
+        out.append({'id': id_, 'lead': lead, 'dur': lead + speech_frames(id_) + sec(0.32) + extra, 'bump': m.group(4)})
     a = 0
     for s in out:
         s['at'] = a
@@ -102,6 +104,13 @@ def cues(scenes, max_line=42, max_dur=5.5):
                 cur = []
         if cur:
             out.append(cur)
+    # Sin huérfanas tampoco al partir por largo: si un subtítulo se queda en una sola palabra que cierra frase,
+    # se le pasan las últimas palabras del anterior (cortando antes de «o», «y», «que», «para», «en», «de» o «con» si se puede).
+    for i in range(1, len(out)):
+        prev, cur = out[i - 1], out[i]
+        if len(cur) == 1 and re.search(r'[.?!…]$', cur[0]['w']) and len(prev) >= 6 and cur[0]['s'] - prev[-1]['e'] < 0.3:
+            m = next((k for k in range(2, min(6, len(prev) - 2)) if prev[-k]['w'].lower() in ('o', 'y', 'que', 'para', 'en', 'de', 'con')), 3)
+            out[i - 1], out[i] = prev[:-m], prev[-m:] + cur
     lines = []
     for i, c in enumerate(out):
         text = ' '.join(x['w'] for x in c)
@@ -132,8 +141,14 @@ def main():
     print(f'Reseña: {total} fotogramas ({ts(total / FPS, False)})')
     print('\nCapítulos:')
     print(f'0:00 ¿Merece la pena Nextory?')
+    bumps = {s['id'] for s in scenes if s.get('bump')}
     for label, frm in chapters:
-        print(f'{ts(start[frm] / FPS, False)} {label}')
+        # Con separador, el capítulo empieza cuando entran los paneles (14 fotogramas antes de la escena).
+        f = start[frm] - (14 if frm in bumps else 0)
+        print(f'{ts(f / FPS, False)} {label}')
+    if '--starts' in sys.argv:
+        print('\nInicio de cada escena (fotograma):')
+        print(json.dumps({s['id']: [s['at'], s['dur'], s['lead']] for s in scenes}))
     open(os.path.join(out_dir, 'nextory_resena.es.srt'), 'w').write(cues(scenes))
     pieces, stotal = short_pieces()
     print(f'\nVertical: {stotal} fotogramas ({ts(stotal / FPS, False)})')

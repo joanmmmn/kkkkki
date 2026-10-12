@@ -2,6 +2,7 @@
 """Iguala el volumen de las secciones de una música de ElevenLabs (que suele ir subiendo) para que quede pareja bajo la voz.
 
 Uso: python3 tools/music_level.py <entrada.mp3> <plan.json> <salida.mp3> [--target -14.5] [--first -18] [--keep-last]
+(Si el plan trae `levels`, manda sobre --target/--first/--keep-last.)
 Mide cada sección del plan (EBU R128), calcula la ganancia hasta `target` (máx. ±6 dB) y la aplica con rampas
 suaves de 1,5 s en los cambios de sección. `--first` fija otro objetivo para la primera sección (entrada más suave);
 `--keep-last` deja la última sección (el final con su cola) como está.
@@ -24,7 +25,10 @@ def main():
     arg = lambda k, d: float(sys.argv[sys.argv.index(k) + 1]) if k in sys.argv else d
     target, first = arg('--target', -14.5), arg('--first', None)
     keep_last = '--keep-last' in sys.argv
-    secs = json.load(open(plan_path))['composition_plan']['sections']
+    plan = json.load(open(plan_path))
+    secs = plan['composition_plan']['sections']
+    # `levels` (opcional, en el plan): sonoridad objetivo de cada sección; None = se deja como está.
+    levels = plan.get('levels')
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', src, '-f', 's16le', '-ac', '2', '-ar', str(SR), '-'], capture_output=True).stdout
     a = np.frombuffer(raw, np.int16).astype(np.float32).reshape(-1, 2) / 32768
     n = len(a)
@@ -33,7 +37,11 @@ def main():
         d = s['duration_ms'] / 1000
         level = lufs(src, t, d)
         goal = first if (i == 0 and first is not None) else target
-        g = 0.0 if (level is None or (keep_last and i == len(secs) - 1)) else max(-6.0, min(6.0, goal - level))
+        keep = keep_last and i == len(secs) - 1
+        if levels is not None:
+            goal = levels[i] if i < len(levels) else target
+            keep = goal is None
+        g = 0.0 if (level is None or keep) else max(-6.0, min(6.0, goal - level))
         print(f"{s['section_name']:24} {level if level is not None else float('nan'):6.1f} LUFS → {g:+.1f} dB")
         bounds.append(t)
         gains.append(g)

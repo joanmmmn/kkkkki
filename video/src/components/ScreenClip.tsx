@@ -18,6 +18,7 @@ import nx12 from '../../public/nx/rec/12_oferta/meta.json';
 import nx13 from '../../public/nx/rec/13_registro/meta.json';
 import nx14 from '../../public/nx/rec/14_plan/meta.json';
 import nx15 from '../../public/nx/rec/15_pago/meta.json';
+import nx22 from '../../public/nx/rec/22_plataformas/meta.json';
 // Grabaciones de la app de Nextory (reseña): duraciones en public/nxr/rec/index.json (las escribe tools/nxr_ingest.py).
 import nxrIndex from '../../public/nxr/rec/index.json';
 
@@ -35,6 +36,7 @@ const REC_DURATIONS: Record<string, number> = {
   'nx/rec/13_registro/video.mp4': nx13.duration,
   'nx/rec/14_plan/video.mp4': nx14.duration,
   'nx/rec/15_pago/video.mp4': nx15.duration,
+  'nx/rec/22_plataformas/video.mp4': nx22.duration,
   ...Object.fromEntries(Object.entries(nxrIndex as Record<string, { duration: number }>).map(([k, v]) => [`nxr/rec/${k}/video.mp4`, v.duration])),
 };
 
@@ -52,7 +54,9 @@ export const ScreenClip: React.FC<{
   // Capa encima de la grabación y debajo del cursor, en píxeles CSS del viewport grabado (se mueve con la cámara):
   // tapar datos personales, teclear texto de ejemplo, etc. Recibe el tiempo t (s) de la grabación.
   overlay?: (t: number) => React.ReactNode;
-}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay, holdAt }) => {
+  // Intensidad del oscurecimiento alrededor de las marcas (1 = el habitual).
+  markDim?: number;
+}> = ({ image = false, src, width, startAt = 0, cursor = [], camera = [{ f: 0, zoom: 1, x: 960, y: 540 }], viewport = [1920, 1080], playbackRate = 1, showCursor = true, cursorOpacity = 1, marks = [], overlay, holdAt, markDim = 1 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const [vw, vh] = viewport;
@@ -93,7 +97,7 @@ export const ScreenClip: React.FC<{
           <Cursor x={c.x * k} y={c.y * k} scale={k * 1.25} down={c.down} sinceClick={t - c.lastDown} opacity={cursorOpacity} />
         )}
       </div>
-      {marks.length > 0 && <MarkLayer marks={marks} frame={frame} width={width} height={height} map={(x, y) => [tx + x * k * zoom, ty + y * k * zoom]} scale={k * zoom} />}
+      {marks.length > 0 && <MarkLayer marks={marks} frame={frame} width={width} height={height} map={(x, y) => [tx + x * k * zoom, ty + y * k * zoom]} scale={k * zoom} dimLevel={markDim} />}
     </div>
   );
 };
@@ -105,7 +109,7 @@ const DRAW = 16;   // duración del trazo al dibujarse
 const OUT = 9;     // salida
 
 // Marco amarillo en coordenadas de pantalla: trazo constante que se dibuja, foco suave alrededor y etiqueta opcional.
-const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number }> = ({ marks, frame, width, height, map, scale }) => {
+const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height: number; map: (x: number, y: number) => [number, number]; scale: number; dimLevel?: number }> = ({ marks, frame, width, height, map, scale, dimLevel = 1 }) => {
   const id = React.useId().replace(/:/g, '');
   const list = marks.filter((m) => m.to - m.from > 12).sort((a, b) => a.from - b.from);
   const i = list.findIndex((m) => frame >= m.from && frame < m.to);
@@ -141,7 +145,7 @@ const MarkLayer: React.FC<{ marks: Mark[]; frame: number; width: number; height:
             <rect x={x0} y={y0} width={w} height={h} rx={r} fill="#000" filter={`url(#b${id})`} />
           </mask>
         </defs>
-        <rect x={0} y={0} width={width} height={height} fill="rgb(6,10,18)" opacity={0.5 * dim * alpha} mask={`url(#m${id})`} />
+        <rect x={0} y={0} width={width} height={height} fill="rgb(6,10,18)" opacity={0.5 * dim * alpha * dimLevel} mask={`url(#m${id})`} />
         <rect x={x0} y={y0} width={w} height={h} rx={r} fill="none" stroke={color.yellow} strokeWidth={stroke} strokeLinecap="round"
           strokeDasharray={perim} strokeDashoffset={perim * (1 - draw)} opacity={alpha} filter={`url(#g${id})`} />
       </svg>

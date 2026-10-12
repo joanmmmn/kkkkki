@@ -63,13 +63,13 @@ Si no, cancela antes
 del día treinta;
 
 15
-00:00:38,000 --> 00:00:41,120
-mejor al final, porque al
-cancelar pierdes el acceso al
+00:00:38,000 --> 00:00:40,360
+mejor al final, porque
+al cancelar pierdes
 
 16
-00:00:41,160 --> 00:00:41,960
-momento.
+00:00:40,400 --> 00:00:41,960
+el acceso al momento.
 
 17
 00:00:42,000 --> 00:00:45,130

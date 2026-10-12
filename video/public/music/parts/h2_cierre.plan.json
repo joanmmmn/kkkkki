@@ -1,0 +1,48 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 12926,
+ "end_frame": 13362,
+ "levels": [
+  -15.0
+ ],
+ "tail": false,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental score for a premium, modern app review on YouTube",
+   "key of D major, around 104 BPM unless stated otherwise",
+   "warm analog synths, tight modern drums, round sub bass, plucked synths, felt piano, clean electric guitar accents",
+   "polished, confident and optimistic",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "warm resolving outro: the hook plays once more, then the drums drop out",
+     "ends on a sustained final chord with a natural soft tail"
+    ],
+    "negative_local_styles": [
+     "abrupt cut",
+     "new melody",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 8720,
+    "lines": []
+   }
+  ]
+ }
+}

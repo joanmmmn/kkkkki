@@ -6,3 +6,7 @@ video/node_modules/
 *.log
 assets/el-libro-total/youtube/*.info.json
 __pycache__/
+
+# Música por piezas: se guardan las composiciones (*.raw.mp3); las niveladas las rehace tools/nxr_music_v2.py join
+video/public/music/parts/*.mp3
+!video/public/music/parts/*.raw.mp3

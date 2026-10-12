@@ -1,53 +1,73 @@
 import React from 'react';
-import { AbsoluteFill, Audio, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame } from 'remotion';
 import { color, font } from '../../brand/tokens';
+import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
 import { Sfx, STEM } from '../../components/Sfx';
-import { HeadphonesIcon, BookIcon, MicIcon } from '../../components/Icons';
+import { BookIcon, MicIcon } from '../../components/Icons';
 import {
   BookmarkIcon, ChartIcon, DownloadIcon, FontIcon, KidIcon, ListIcon, LockIcon, MoonIcon, SearchIcon, SpeedIcon, StarIcon, UserIcon, WifiOffIcon, ClockIcon, SyncIcon,
 } from '../../components/Icons2';
 import { wf } from './timeline';
-import { AppPhone, FeatureTag, PhoneKey, Shot, Tap, APP_W } from './kit';
+import type { SceneProps } from './registry';
+import { AppPhone, buildPhoneCam, Chip, Focus, focusFromShots, MaskTitle, PH, PHONE_W, Shot, Tap, APP_W } from './kit';
 
-type P = { lead: number; dur: number };
+type P = SceneProps;
 export type TagDef = { word: string; nth?: number; label: string; icon: React.ReactNode; out?: string };
 
-// Escena tipo de la app: el móvil con las tomas reales a un lado y, al otro, las funciones que la voz va nombrando.
-export const AppFeatureScene: React.FC<P & {
-  id: string; title: string; kicker?: string; tags: TagDef[]; side?: 'left' | 'right'; shots: Shot[]; cam?: PhoneKey[]; taps?: Tap[]; extra?: React.ReactNode;
-}> = ({ lead, dur, id, title, kicker, tags, side = 'right', shots, cam, taps, extra }) => {
+// Rótulo pequeño encima del título, con una raya amarilla que crece.
+export const Kicker: React.FC<{ at: number; text: string; style?: React.CSSProperties }> = ({ at, text, style }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const p = interpolate(frame, [at, at + 16], [0, 1], { ...clamp, easing: easeOut });
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 5, textTransform: 'uppercase', color: color.muted, marginBottom: 20, ...style }}>
+      <span style={{ width: 46 * p, height: 6, borderRadius: 3, background: color.yellow }} />
+      <span style={{ opacity: p, transform: `translateX(${(1 - p) * -14}px)` }}>{text}</span>
+    </div>
+  );
+};
+
+// Escena tipo de la app: el móvil con las tomas reales a un lado y, al otro, las funciones que la voz va nombrando.
+// La cámara se acerca a cada zona resaltada (marcas de las tomas o `focusExtra`); entre dos escenas seguidas el móvil
+// cruza por el centro y enlaza con la siguiente.
+export const AppFeatureScene: React.FC<P & {
+  id: string; title: string; kicker?: string; tags: TagDef[]; side?: 'left' | 'right'; shots: Shot[]; taps?: Tap[]; extra?: React.ReactNode;
+  focus?: Focus[]; focusExtra?: Focus[];
+}> = ({ lead, dur, enter = 'rise', exit = 'none', id, title, kicker, tags, side = 'right', shots, taps = [], extra, focus, focusExtra = [] }) => {
+  const frame = useCurrentFrame();
   const at = (w: string, n = 0) => lead + wf(id, w, n);
-  const sT = spring({ frame: frame - 2, fps, config: { damping: 18, stiffness: 150 } });
   const phoneLeft = side === 'right';
-  const defaultCam: PhoneKey[] = [
-    { f: 0, rx: 6, ry: phoneLeft ? 22 : -22, rz: phoneLeft ? -2 : 2, s: 0.94, x: phoneLeft ? -40 : 40, y: 30 },
-    { f: 26, rx: 2, ry: phoneLeft ? 10 : -10, rz: 0, s: 1, x: 0, y: 0 },
-    { f: dur, rx: 1, ry: phoneLeft ? 6 : -6, rz: 0, s: 1.015, x: 0, y: -6 },
-  ];
+  const sgn = phoneLeft ? 1 : -1;
+  const cx = phoneLeft ? 540 : 1380;
+  const top = Math.round((1080 - PH.H) / 2);
+  const focusList = focus ?? [...focusFromShots(shots, dur), ...focusExtra];
+  const cam = buildPhoneCam({ dur, side: sgn, cx, top, focus: focusList, enter, exit });
   const tagFrames = tags.map((t) => at(t.word, t.nth ?? 0));
+  const tIn = enter === 'glide' ? 7 : 3;
+  const xOut = exit === 'glide' ? interpolate(frame, [dur - 12, dur - 1], [0, 1], { ...clamp, easing: easeInOut }) : 0;
+  // Sonido de acercamiento al empezar cada foco (no en los encadenados).
+  const zooms = [...focusList].sort((a, b) => a.from - b.from).filter((f, i, l) => f.to - f.from > 10 && (i === 0 || f.from - l[i - 1].to >= 26)).map((f) => f.from - 8);
   return (
     <Stage tone="warm">
       <AbsoluteFill>
-        <div style={{ position: 'absolute', top: 96, [phoneLeft ? 'left' : 'right']: 270 } as React.CSSProperties}>
-          <AppPhone shots={shots} w={385} cam={cam ?? defaultCam} taps={taps} />
+        <div style={{ position: 'absolute', top, left: cx - PH.W / 2 }}>
+          <AppPhone shots={shots} w={PHONE_W} cam={cam} taps={taps} dim={0.72} motionBlur />
         </div>
-        <div style={{ position: 'absolute', top: 210, [phoneLeft ? 'left' : 'right']: phoneLeft ? 960 : 780, width: 820 } as React.CSSProperties}>
-          {kicker && (
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 5, textTransform: 'uppercase', color: color.muted, opacity: sT, marginBottom: 14 }}>{kicker}</div>
-          )}
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 88, letterSpacing: -3, lineHeight: 1.02, color: color.ink, opacity: sT, transform: `translateY(${(1 - sT) * 30}px)`, filter: `blur(${(1 - sT) * 8}px)` }}>{title}</div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 18, marginTop: 44 }}>
+        <div style={{ position: 'absolute', top: 0, height: 1080, left: phoneLeft ? 905 : 150, width: 850, display: 'flex', flexDirection: 'column', justifyContent: 'center',
+          opacity: 1 - xOut, transform: `translateX(${xOut * 50 * (phoneLeft ? 1 : -1)}px)`, filter: xOut > 0.02 ? `blur(${(xOut * 6).toFixed(2)}px)` : undefined }}>
+          {kicker && <Kicker at={tIn} text={kicker} />}
+          <MaskTitle text={title} at={tIn + 3} size={100} />
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 20, marginTop: 52 }}>
             {tags.map((t, i) => (
-              <FeatureTag key={t.label} at={tagFrames[i]} out={t.out ? at(t.out) : undefined} icon={t.icon} size={36} from={phoneLeft ? 'right' : 'left'}>{t.label}</FeatureTag>
+              <Chip key={t.label} at={tagFrames[i]} dimAt={tagFrames[i + 1]} out={t.out ? at(t.out) : undefined} icon={t.icon} label={t.label} size={39} reserve />
             ))}
           </div>
           {extra}
         </div>
       </AbsoluteFill>
       {tagFrames.map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.8} />)}
+      {taps.map((t, i) => <Sfx key={`t${i}`} name="ui_tap" at={t.f} volume={0.55} />)}
+      {zooms.map((f, i) => <Sfx key={`z${i}`} name="zoom_in" at={f} volume={0.45} />)}
     </Stage>
   );
 };
@@ -83,8 +103,13 @@ export const R04Inicio: React.FC<P> = (p) => {
     align('02_librarian_b', 24.4, fProp, 4),
   ];
   return (
-    <AppFeatureScene {...p} id="R04" title="Portada y El Librarian" kicker="La app" shots={shots}
+    <AppFeatureScene {...p} id="R04" title={'Portada y El\u00A0Librarian'} kicker="La app" shots={shots}
       taps={[{ f: fTapLib - 2, x: 200, y: 505 }, { f: fSend - 2, x: 588, y: 1364 }]}
+      focusExtra={[
+        // La petición que se teclea (abajo) y la respuesta con los libros que propone.
+        { from: fDesc + 2, to: fSend + 6, y: 1340, s: 1.35 },
+        { from: fProp + 4, to: p.dur, y: 640 },
+      ]}
       tags={[
         { word: 'recomienda', label: 'Recomendaciones para ti', icon: ic(<StarIcon size={32} />) },
         { word: 'librarian', label: 'El Librarian: asistente con IA', icon: ic(<SyncIcon size={32} />) },
@@ -122,6 +147,11 @@ export const R04Buscar: React.FC<P> = (p) => {
   return (
     <AppFeatureScene {...p} id="R04B" title="Buscador y filtros" side="left" shots={[s1, s2, s3, s4, s5]}
       taps={[{ f: 9, x: 200, y: 192 }, { f: fIdi - 2, x: 204, y: 373 }, { f: fTapAudio - 2, x: 616, y: 571 }]}
+      focusExtra={[
+        // «galdos» y las sugerencias (enlaza con la fila del narrador), y los chips de idioma al pulsar «Español».
+        { from: 24, to: fNarr - 12, y: 360, s: 1.32 },
+        { from: fIdi - 14, to: s4.at + 2, y: 400, x: 210, s: 1.4 },
+      ]}
       tags={[
         { word: 'titulo', label: 'Título o autor', icon: ic(<SearchIcon size={32} />) },
         { word: 'narrador', label: 'También por narrador', icon: ic(<MicIcon size={32} />) },
@@ -152,7 +182,7 @@ export const R05Ficha: React.FC<P> = (p) => {
     },
   ];
   return (
-    <AppFeatureScene {...p} id="R05" title="La ficha de cada libro" shots={shots}
+    <AppFeatureScene {...p} id="R05" title={'La ficha de\u00A0cada\u00A0libro'} shots={shots}
       tags={[
         { word: 'ebook', label: 'Ebook, audiolibro o los dos', icon: ic(<BookIcon size={32} />) },
         { word: 'narra', label: 'Narrador y duración', icon: ic(<MicIcon size={32} />) },

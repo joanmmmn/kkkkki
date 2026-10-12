@@ -2,9 +2,10 @@ import React from 'react';
 import { R01Hook, R02Que, R03Planes } from './Intro';
 import { R04Inicio, R04Buscar, R05Ficha, R06Leer, R07Escuchar, R08Offline, R09Perfiles, R10Horas } from './App';
 import { R11Extras, R12Pdf, R13ProsCons, R14Veredicto } from './Verdict';
-import { P01Gratis, P02Ficha, P03Pasos, P04App, P05Decide, P06Outro } from './Trial';
+import { P01Gratis, P02Accesos, P03Pasos, P04App, P05Decide, P06Outro } from './Trial';
 
-export const NXR_COMPONENTS: Record<string, React.FC<{ lead: number; dur: number }>> = {
+export type SceneProps = { lead: number; dur: number; enter?: 'rise' | 'glide'; exit?: 'glide' | 'none' };
+export const NXR_COMPONENTS: Record<string, React.FC<SceneProps>> = {
   R01: R01Hook,
   R02: R02Que,
   R03: R03Planes,
@@ -21,7 +22,7 @@ export const NXR_COMPONENTS: Record<string, React.FC<{ lead: number; dur: number
   R13: R13ProsCons,
   R14: R14Veredicto,
   P01: P01Gratis,
-  P02: P02Ficha,
+  P02: P02Accesos,
   P03: P03Pasos,
   P04: P04App,
   P05: P05Decide,

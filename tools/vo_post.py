@@ -13,8 +13,12 @@ def speech_end(mp3: str, duration: float, last_word_start: float) -> float:
     starts = [float(x) for x in re.findall(r'silence_start: ([0-9.]+)', out)]
     ends = [float(x) for x in re.findall(r'silence_end: ([0-9.]+)', out)]
     end = duration
+    # El mp3 decodificado puede durar unas centésimas menos que `duration` (relleno del códec): se mira el final real.
+    m = re.search(r'time=(\d+):(\d+):([\d.]+)', out.split('silence_end')[-1]) or re.search(r'Duration: (\d+):(\d+):([\d.]+)', out)
+    decoded = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + float(m.group(3)) if m else duration
+    file_end = min(duration, decoded)
     # Si el archivo termina en silencio (el último silencio no se cierra, o se cierra justo al final del archivo), la voz acaba ahí.
-    if starts and (not ends or starts[-1] > ends[-1] or ends[-1] >= duration - 0.03):
+    if starts and (not ends or starts[-1] > ends[-1] or ends[-1] >= file_end - 0.1):
         end = starts[-1]
     # El alineamiento estira la última palabra hasta el final del archivo: como suelo, su inicio más un cuarto de segundo.
     return round(min(duration, max(end, last_word_start + 0.25) + 0.04), 3)
