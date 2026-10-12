@@ -9,7 +9,7 @@
 
 ```
 📖 La reseña completa, con capturas y fuentes: https://sonorbooks.com/es/blog/elevenreader-resena/
-🎁 30 días gratis de ElevenReader Ultra (en vez de 3): en la reseña, pulsa «Probar gratis». También desde https://sonorbooks.com: ElevenReader es la última tarjeta de las plataformas, pulsa «Empezar prueba gratuita».
+🎁 30 días gratis de ElevenReader Ultra (en vez de 3): en la reseña, pulsa «Probar gratis». También desde https://sonorbooks.com: en «Elige cómo quieres escuchar», pulsa «Empezar prueba gratuita» en la tarjeta de ElevenReader.
 
 ElevenReader es la app de lectura de ElevenLabs: audiolibros y, sobre todo, tus propios PDF, ebooks y artículos convertidos en audio con voces de inteligencia artificial. La hemos probado por dentro con el plan Ultra: catálogo en español, voces (Brian frente a Sara Martin), subida de un PDF, el lector, precios, lo mejor, lo peor… y al final, cómo probarla 30 días gratis en lugar de 3.
 
@@ -57,5 +57,5 @@ ElevenReader, ElevenReader opiniones, ElevenReader gratis, ElevenReader prueba g
 ```
 ¿Ya usabas ElevenReader o es la primera vez que lo ves? 👇 Cuéntanos qué app usas para escuchar tus PDF y la analizamos.
 Reseña completa (capturas, precios y fuentes): https://sonorbooks.com/es/blog/elevenreader-resena/
-30 días gratis de Ultra: en la reseña, pulsa «Probar gratis» (o en sonorbooks.com, la última tarjeta de las plataformas).
+30 días gratis de Ultra: en la reseña, pulsa «Probar gratis» (o en sonorbooks.com, en la tarjeta de ElevenReader de «Elige cómo quieres escuchar»).
 ```

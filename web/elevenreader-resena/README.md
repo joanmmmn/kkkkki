@@ -16,15 +16,16 @@ Es la reseña que acompaña al vídeo de YouTube: el vídeo y la descripción en
 - Probador de las opciones del lector: tema, color del resaltado (colores reales de la app), tamaño y velocidad,
   y el menú de los tres puntos de un documento recreado con sus opciones.
 - Precios mensual/anual, la factura que nos mostró la app (11,31 $/mes) y la oferta con **las condiciones de la web copiadas tal cual**.
-- Calendario de 3 a 30 días y los 5 pasos (el primero dice dónde está el botón: la última tarjeta de las plataformas en la
-  página de inicio, o cualquier botón de la oferta de la reseña), con una tarjeta fija de la oferta al lado.
+- Calendario de 3 a 30 días y los 5 pasos (el primero dice dónde está el botón: la tarjeta de ElevenReader en «Elige cómo
+  quieres escuchar» de la página de inicio, o cualquier botón de la oferta de la reseña, y lleva su propio botón a la oferta),
+  con una tarjeta fija de la oferta al lado.
 - Quedarse o cancelar (web, iPhone, Android), nota por apartados y, al final, «Cómo lo probamos» en letra pequeña con las
   fuentes y el aviso de afiliado (sin preguntas frecuentes, por decisión de Joan).
 - «Alternativas y guías relacionadas»: carrusel deslizable con 9 artículos del blog (comparativas, guías y reseñas), con
   flechas y arrastre en el ordenador, y deslizable con el dedo en el móvil. Usa las imágenes del blog (`/assets/blog/editorial/`).
 - SEO (12/10/2026): título «ElevenReader: opiniones, precio y 30 días gratis (2026)» y títulos de sección con las búsquedas
   habituales (qué es, precio, opiniones, cancelar, gratis).
-- Datos estructurados: `Review` (8/10, con puntos positivos y negativos), `BreadcrumbList` y `FAQPage`.
+- Datos estructurados: `Review` (8/10, con puntos positivos y negativos) y `BreadcrumbList`.
 
 Sin dependencias externas, sin cookies ni almacenamiento en el navegador. Todo se ve sin JavaScript; con
 `prefers-reduced-motion` no hay animaciones. Los enlaces de la oferta usan la ruta de afiliado del sitio
@@ -63,8 +64,7 @@ dist/assets/resenas/elevenreader/media/…              imágenes y audio
 4. Mantén en el sitemap y en el índice del blog la misma URL; actualiza la fecha de modificación (12/10/2026) y la imagen de portada si quieres usar la nueva (`media/elevenreader-resena-og.jpg`, 1200×630).
    En el índice del blog, la tarjeta de esta reseña aún dice «ElevenReader: qué es gratis, planes y audiolibros»: cambia el título
    y la entradilla para que coincidan con la nueva página.
-5. Cuando el vídeo esté publicado: `python3 build.py --yt ID_DEL_VIDEO` (o pon el ID en `data-yt` del enlace `.er-video`).
-   Si quieres, añade entonces un `VideoObject` al JSON-LD.
+5. Cuando el vídeo esté publicado: `python3 build.py --yt ID_DEL_VIDEO --yt-fecha AAAA-MM-DD` (el día en que se publicó). Así el enlace del vídeo apunta al vídeo, se reproduce dentro de la página al pulsarlo y Google recibe sus datos estructurados (`VideoObject`).
 
 ## Decisiones pendientes de Joan
 

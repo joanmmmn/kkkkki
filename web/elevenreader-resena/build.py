@@ -7,7 +7,7 @@
   preview/   → vista previa privada (Artifact de Claude): una sola página con CSS y JS en línea,
                enlaces absolutos a sonorbooks.com y los archivos de media/ al lado.
 
-Uso: python3 web/elevenreader-resena/build.py [--yt ID_DE_YOUTUBE]
+Uso: python3 web/elevenreader-resena/build.py [--yt ID_DE_YOUTUBE [--yt-fecha AAAA-MM-DD]]
 Necesita media/audio/*.mp3 (fragmentos de la app, fuera de git: tools/web_er_audio.py) y la carpeta
 site/ con la cabecera y el pie del sitio (descargados de la página actual, ver README)."""
 import hashlib, html, json, os, re, shutil, subprocess, sys
@@ -17,6 +17,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 SRC, MEDIA, SITE = (os.path.join(HERE, d) for d in ('src', 'media', 'site'))
 YT = sys.argv[sys.argv.index('--yt') + 1] if '--yt' in sys.argv else ''
+YT_FECHA = sys.argv[sys.argv.index('--yt-fecha') + 1] if '--yt-fecha' in sys.argv else ''  # día de publicación en YouTube
+YT_CANAL = 'https://www.youtube.com/@SonorBooksEspa%C3%B1a/videos'
+if YT and not re.fullmatch(r'[\w-]{11}', YT):
+    sys.exit(f'--yt: «{YT}» no parece un ID de YouTube (11 caracteres, p. ej. dQw4w9WgXcQ)')
 PROD_A = '/assets/resenas/elevenreader'
 SALIR = '/salir/elevenreader/?market=ES&amp;language=es&amp;to=https%3A%2F%2Felevenreader.io%2F'
 CLIP_WORDS = {'hero-sara': 50, 'ab-sara': 33, 'ab-brian': 33}
@@ -82,6 +86,16 @@ def jsonld():
             {'@type': 'ListItem', 'position': 3, 'name': 'Reseñas', 'item': 'https://sonorbooks.com/es/blog/resenas/'},
             {'@type': 'ListItem', 'position': 4, 'name': 'ElevenReader', 'item': url}]},
     ]
+    if YT:  # el vídeo, para que Google lo asocie a la página (se carga al pulsar, sin iframe en el HTML)
+        import datetime
+        fecha = YT_FECHA or datetime.date.today().isoformat()
+        graph.append({'@type': 'VideoObject', '@id': url + '#video', 'name': 'ElevenReader: ¿merece la pena? Lo probamos por dentro',
+                      'description': 'Reseña de ElevenReader con el plan Ultra: catálogo en español, voces, un PDF convertido en audio, '
+                                     'el lector, precios, lo mejor y lo peor, y cómo probarla 30 días gratis en vez de 3.',
+                      'thumbnailUrl': [f'https://i.ytimg.com/vi/{YT}/maxresdefault.jpg', 'https://sonorbooks.com' + PROD_A + '/media/elevenreader-resena-og.jpg'],
+                      'uploadDate': fecha + 'T12:00:00+02:00', 'duration': 'PT4M16S', 'inLanguage': 'es-ES',
+                      'embedUrl': f'https://www.youtube.com/embed/{YT}',
+                      'publisher': {'@type': 'Organization', 'name': 'SonorBooks', 'url': 'https://sonorbooks.com/es/'}})
     if faq:  # solo si la página tiene preguntas frecuentes
         graph.append({'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': strip(q), 'acceptedAnswer': {'@type': 'Answer', 'text': strip(a)}} for q, a in faq]})
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False) + '</script>'
@@ -95,6 +109,8 @@ def build_prod():
     css, js = read(os.path.join(SRC, 'er-resena.css')), read(os.path.join(SRC, 'er-resena.js'))
     v = hashlib.sha1((css + js).encode()).hexdigest()[:12]
     page = read(os.path.join(SRC, 'page.html'))
+    if YT:  # el enlace del vídeo ya apunta al vídeo, también sin JavaScript
+        page = page.replace(f'href="{YT_CANAL}"', f'href="https://www.youtube.com/watch?v={YT}"', 1)
     routing = read(os.path.join(SITE, 'provider-routing-data.json')).strip()
     page = (page.replace('<!--SITE_CSS-->', SITE_CSS + '<style>' + read(os.path.join(SITE, 'chrome_inline.css')).strip() + '</style>')
             .replace('<!--SITE_JS-->', SITE_JS)

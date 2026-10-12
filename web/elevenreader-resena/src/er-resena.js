@@ -13,7 +13,7 @@ const onView = (el, fn, { threshold = 0.35, once = true } = {}) => {
   io.observe(el);
 };
 // Prepara una animación justo antes de que el elemento entre en pantalla desde abajo y la lanza al verse.
-// Si nunca se acerca (una captura de la página entera, un salto con el índice), se queda en su estado final, visible.
+// Si nunca se acerca (una captura de la página entera, un salto con un enlace), se queda en su estado final, visible.
 const armOnApproach = (el, arm, play, { threshold = 0.35 } = {}) => {
   if (reduced || !('IntersectionObserver' in window)) return;
   let armed = false;
@@ -200,7 +200,7 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) playe
   radios('[data-lab-theme]', 'data-theme-r');
   radios('[data-lab-hl]', 'data-hl');
   const size = $('[data-lab-size]'), sizeOut = $('[data-size-out]');
-  size?.addEventListener('input', () => { lab.style.setProperty('--lab-size', `${size.value}px`); sizeOut.textContent = `${size.value} px`; });
+  size?.addEventListener('input', () => { lab.style.setProperty('--lab-size', `${size.value}px`); sizeOut.textContent = `${size.value}\u00a0px`; });
   const rate = $('[data-lab-rate]'), rateOut = $('[data-rate-out]'), rateLbl = $('[data-rate-label]', lab);
   rate?.addEventListener('input', () => {
     const r = Number(rate.value);
@@ -210,7 +210,7 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) playe
   });
 })();
 
-/* ---------- Pestañas (etiquetas de precio, dónde cancelar) ---------- */
+/* ---------- Pestañas (dónde cancelar) ---------- */
 $$('[data-tabs]').forEach((box) => {
   const tabs = $$('[role="tab"]', box);
   const select = (t, focus) => {
