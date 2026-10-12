@@ -107,9 +107,10 @@ reg, test = box('forum:Register'), box('forum:Post Your 1-Minute Test Recording 
 sizes['librivox-foro-voluntarios'] = shot('librivox-foro-voluntarios', 'forum', (40, 20, 1240, 480),
     marks=[(reg, 4), (test, 5)], badges=[(1, reg[0] - 6, reg[1] - 6), (2, test[0] + test[2] + 18, test[1] + 8)])
 
-# Portadas de los libros (dominio público, de LibriVox)
+# Portadas de los libros que usa la página (dominio público, de LibriVox): la ficha de la portada y el catálogo recreado
+USED = {'5079', '567', '1378', '20198', '3579', '14336', '17676', '16285', '10541', '13208', '13242'}
 for f in sorted(os.listdir(os.path.join(ROOT, 'video', 'public', 'lv', 'img'))):
-    if f.startswith('cover_'):
+    if f.startswith('cover_') and f[6:].split('.')[0] in USED:
         im = Image.open(os.path.join(ROOT, 'video', 'public', 'lv', 'img', f)).convert('RGB')
         im.save(os.path.join(OUT, 'portadas', f.replace('cover_', '').replace('.jpg', '.webp')), 'WEBP', quality=82, method=6)
 json.dump(sizes, open(os.path.join(OUT, 'sizes.json'), 'w'))

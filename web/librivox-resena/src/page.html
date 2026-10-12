@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://sonorbooks.com{{A}}/media/librivox-resena-og.jpg">
 <meta property="article:published_time" content="2026-10-12"><meta property="article:modified_time" content="2026-10-12">
 <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="192x192"><meta name="theme-color" content="#101010">
+<link rel="preload" href="{{A}}/media/fonts/eb-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
 <!--SITE_CSS-->
 <link rel="stylesheet" href="{{A}}/lv-resena.css?v={{V}}">
 <!--SITE_JS-->
@@ -25,6 +26,7 @@
  <defs>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></symbol>
   <symbol id="i-pause" viewBox="0 0 24 24"><path d="M6.5 4.5h4v15h-4zM13.5 4.5h4v15h-4z" fill="currentColor"/></symbol>
+  <symbol id="i-tri" viewBox="0 0 12 12"><path d="M3.5 2.2v7.6L9.6 6z" fill="currentColor"/></symbol>
   <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-down" viewBox="0 0 24 24"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -34,62 +36,73 @@
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3M4 15a2 2 0 0 1 2-2h1v7H6a2 2 0 0 1-2-2zm16 0a2 2 0 0 0-2-2h-1v7h1a2 2 0 0 0 2-2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
-  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></g></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.4"/><path d="M10.5 18h3" stroke-linecap="round"/></g></symbol>
   <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.6-4.6"/></g></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.6-4.6M10.5 7.8v5.4M7.8 10.5h5.4"/></g></symbol>
   <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-bulb" viewBox="0 0 38 38"><circle cx="19" cy="19" r="19" fill="#ffcb06"/><path d="M19 9.5a6.5 6.5 0 0 0-3.8 11.8c.8.6 1.3 1.5 1.3 2.5v.7h5v-.7c0-1 .5-1.9 1.3-2.5A6.5 6.5 0 0 0 19 9.5zM16.5 27h5M17.3 29.5h3.4" fill="none" stroke="#101010" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.2-3.6 4-5.3 7.5-5.3s6.3 1.7 7.5 5.3"/></g></symbol>
-  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="9" cy="8.5" r="3.3"/><path d="M2.8 19.5c.9-3.3 3.2-5 6.2-5s5.3 1.7 6.2 5"/><path d="M15.2 5.6a3.2 3.2 0 0 1 0 6.1M17.6 14.8c1.8.6 3 2.1 3.6 4.7"/></g></symbol>
   <symbol id="i-books" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 4.5h4.5v15H4zM8.5 6.5H13v13H8.5z"/><path d="M14.2 7.4l4.3-1.2 3.4 12.6-4.3 1.2z"/></g></symbol>
   <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 6.6C9.9 5 6.9 4.5 3.5 5v13.2c3.4-.5 6.4 0 8.5 1.6 2.1-1.6 5.1-2.1 8.5-1.6V5c-3.4-.5-6.4 0-8.5 1.6z"/><path d="M12 6.6v13.2"/></g></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.8l4.6 7.4-1.9 7.3H9.3l-1.9-7.3z"/><path d="M12 2.8v8.4M9.3 17.5h5.4v3.7H9.3z"/><circle cx="12" cy="11.7" r="1.1"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="6.5" y="2.8" width="11" height="18.4" rx="1.6"/><path d="M9.5 7h5M9.5 10.5h5M9.5 14h5" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M5.5 21V3.5"/><path d="M5.5 4h12.5l-3 4.2 3 4.3H5.5"/></g></symbol>
   <symbol id="i-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></g></symbol>
   <symbol id="i-rss" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M5 4.5a14.5 14.5 0 0 1 14.5 14.5M5 10.5a8.5 8.5 0 0 1 8.5 8.5"/></g><circle cx="6.2" cy="17.8" r="1.7" fill="currentColor"/></symbol>
-  <symbol id="i-zip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4.5" y="3" width="15" height="18" rx="2"/><path d="M12 3v2M12 7v2M12 11v1.5M10.4 14h3.2v3.6h-3.2z"/></g></symbol>
-  <symbol id="i-podcast" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="10.5" r="2.3"/><path d="M8.3 14.4a5.4 5.4 0 1 1 7.4 0M5.7 17.1a9 9 0 1 1 12.6 0M12 13.6v7"/></g></symbol>
   <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6A1.5 1.5 0 0 0 14 4.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></g></symbol>
-  <symbol id="i-pd" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.7a3.4 3.4 0 1 0 0 4.6M5.9 18.1L18.1 5.9"/></g></symbol>
-  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 19.5s-7.5-4.4-7.5-10A4.2 4.2 0 0 1 12 6.8a4.2 4.2 0 0 1 7.5 2.7c0 5.6-7.5 10-7.5 10z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
-  <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3.5-5.5-4-5.5-1.5S10 8 12 8zm0 0c1.5-3.5 5.5-4 5.5-1.5S14 8 12 8z"/></g></symbol>
   <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><rect x="4.5" y="5" width="15" height="10.5" rx="1.5"/><path d="M2.5 19h19" stroke-linecap="round"/></g></symbol>
   <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 12h1.5M6.5 8v8M10 5v14M13.5 9v6M17 6.5v11M20.5 11v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
   <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M2.5 9.5L12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5v4.5c3.3 2.2 7.7 2.2 11 0v-4.5M21.5 9.5v5"/></g></symbol>
   <symbol id="i-lang" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.5h9M8 3.5v2M10.5 5.5c-.7 3.6-3 6.4-6.5 8M5.6 8.8c1.2 2 3 3.5 5.4 4.4"/><path d="M12.5 20.5l3.8-9 3.8 9M13.8 17.6h5"/></g></symbol>
   <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.2 5.6.7-4.1 3.9 1 5.6-5-2.7-5 2.7 1-5.6-4.1-3.9 5.6-.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
-  <symbol id="i-check-c" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8.3 12.3l2.5 2.5 5-5.2"/></g></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 3.8v4.4h4.4"/></g></symbol>
+  <symbol id="i-for" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8.3 12.3l2.5 2.5 5-5.2"/></g></symbol>
  </defs>
 </svg>
 <main id="main" class="lv">
 
-<!-- ======================= PORTADA ======================= -->
+<!-- ======================= PORTADA: la ficha de un libro de LibriVox, con cuatro voluntarios ======================= -->
 <section class="lv-hero" aria-labelledby="lv-title">
  <div class="lv-wrap">
   <nav class="lv-crumbs" aria-label="Ruta de navegación"><a href="/es/">Inicio</a><svg aria-hidden="true"><use href="#i-chev"/></svg><a href="/es/blog/">Blog</a><svg aria-hidden="true"><use href="#i-chev"/></svg><a href="/es/blog/resenas/">Reseñas</a><svg aria-hidden="true"><use href="#i-chev"/></svg><span aria-current="page">LibriVox</span></nav>
   <div class="lv-hero__grid">
    <div class="lv-hero__copy">
-    <h1 class="lv-h1" id="lv-title">LibriVox: <span class="lv-h1__q">audiolibros gratis, leídos por personas</span></h1>
+    <h1 class="lv-h1" id="lv-title">LibriVox: audiolibros gratis, leídos por personas</h1>
     <p class="lv-deck">Más de 21.000 clásicos grabados por voluntarios, gratis y legales. Te contamos qué es, cómo encontrar los que hay en español, cómo escucharlos o descargarlos y qué tal suenan.</p>
    </div>
    <div class="lv-stage">
-    <figure class="lv-book" data-player="hero-omar" data-demo>
-     <span class="lv-book__sticker" aria-hidden="true">Voz humana</span>
-     <div class="lv-book__head"><span class="lv-book__src"><svg aria-hidden="true"><use href="#i-book"/></svg><span>Leyendas · capítulo 9 de 22</span></span></div>
-     <p class="lv-book__title">El rayo de luna</p>
-     <p class="lv-book__author">Gustavo Adolfo Bécquer</p>
-     <div class="lv-book__text">
-      <span class="lv-glide" aria-hidden="true"></span>
-      <p class="lv-book__para" data-words>Yo no sé si esto es una historia que parece cuento o un cuento que parece historia; lo que puedo decir es que en su fondo hay una verdad, una verdad muy triste, de la que acaso yo seré uno de los últimos en aprovecharme, dadas mis condiciones de imaginación.</p>
+    <div class="lvx-win lvx-book" data-book role="group" aria-label="Recreación de la ficha de las Leyendas de Bécquer en LibriVox: elige un capítulo para escuchar a su lector">
+     <div class="lvx-bar" aria-hidden="true"><span class="lvx-bar__dots"><i></i><i></i><i></i></span><span class="lvx-bar__url">librivox.org/leyendas-by-gustavo-adolfo-becquer/</span></div>
+     <div class="lvx-book__head">
+      <img class="lvx-book__cover" src="{{A}}/media/portadas/5079.webp" width="300" height="300" alt="" decoding="async">
+      <div class="lvx-book__info">
+       <p class="lvx-book__t">Leyendas</p>
+       <p class="lvx-book__a">Gustavo Adolfo Bécquer <i>(1836 - 1870)</i></p>
+       <p class="lvx-book__m">22 capítulos, 11 voces y 10 horas de audio</p>
+      </div>
      </div>
-     <div class="lv-book__bar" data-seek aria-hidden="true"><span></span></div>
-     <div class="lv-book__foot">
-      <span class="lv-av" aria-hidden="true"><b>O</b></span>
-      <span class="lv-book__voice"><b>Omar</b><small>Voluntario de LibriVox</small></span>
-      <span class="lv-time" data-time></span>
-      <button class="lv-listen" type="button" data-play aria-label="Escuchar el fragmento leído por Omar, voluntario de LibriVox"><span class="lv-listen__ico"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></span><span class="lv-listen__t" data-listen-label>Escuchar</span></button>
+     <div class="lvx-read" data-read>
+      <div class="lvx-read__top">
+       <button class="lvx-read__play" type="button" data-read-play aria-label="Escuchar «El rayo de luna», leído por Omar"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
+       <p class="lvx-read__h"><span class="lvx-read__t"><span data-read-n>09</span> <b data-read-title>El rayo de luna</b></span><span class="lvx-read__by">Leído por <span data-read-reader>Omar</span></span></p>
+       <span class="lvx-read__time" data-read-time></span>
+      </div>
+      <p class="lvx-read__p" data-words>Yo no sé si esto es una historia que parece cuento o un cuento que parece historia; lo que puedo decir es que en su fondo hay una verdad, una verdad muy triste, de la que acaso yo seré uno de los últimos en aprovecharme, dadas mis condiciones de imaginación.</p>
+      <div class="lvx-read__seek" data-seek aria-hidden="true"><span></span></div>
      </div>
-    </figure>
-    <p class="lv-stage__cap">Audio real de LibriVox, de dominio público: el mismo párrafo que en <a href="/es/blog/elevenreader-resena/">nuestra reseña de ElevenReader</a>, ahora leído por una persona.</p>
+     <div class="lvx-table">
+      <div class="lvx-thead" aria-hidden="true"><span>Capítulo</span><span>Lector</span><span>Duración</span></div>
+      <ol class="lvx-rows">
+       <li><button class="lvx-row" type="button" data-clip="voz-vicente" data-n="07" data-title="El miserere" data-reader="Vicente Cepeda" data-text="Hace algunos meses que, visitando la célebre abadía de Fitero y ocupándome en revolver algunos volúmenes de su abandonada biblioteca, descubrí en uno de sus rincones dos o tres cuadernos bastante antiguos, cubiertos de polvo y hasta comenzados a roer por los ratones." aria-label="Escuchar «El miserere», leído por Vicente Cepeda"><span class="lvx-row__sec"><span class="lvx-row__ico" aria-hidden="true"><svg class="i-tri"><use href="#i-tri"/></svg><span class="lvx-eq"><i></i><i></i><i></i></span></span><span class="lvx-row__n">07</span></span><span class="lvx-row__ch">El miserere</span><span class="lvx-row__rd">Vicente Cepeda</span><span class="lvx-row__tm">00:23:04</span></button></li>
+       <li><button class="lvx-row" type="button" data-clip="voz-elena" data-n="08" data-title="El monte de las ánimas" data-reader="Elena del Valle" data-text="La noche de difuntos me despertó a no sé qué hora el doble de las campanas; su tañido monótono y eterno me trajo a las mientes esta tradición que oí hace poco en Soria." aria-label="Escuchar «El monte de las ánimas», leído por Elena del Valle"><span class="lvx-row__sec"><span class="lvx-row__ico" aria-hidden="true"><svg class="i-tri"><use href="#i-tri"/></svg><span class="lvx-eq"><i></i><i></i><i></i></span></span><span class="lvx-row__n">08</span></span><span class="lvx-row__ch">El monte de las ánimas</span><span class="lvx-row__rd">Elena del Valle</span><span class="lvx-row__tm">00:19:21</span></button></li>
+       <li><button class="lvx-row is-active" type="button" data-clip="hero-omar" data-n="09" data-title="El rayo de luna" data-reader="Omar" data-text="Yo no sé si esto es una historia que parece cuento o un cuento que parece historia; lo que puedo decir es que en su fondo hay una verdad, una verdad muy triste, de la que acaso yo seré uno de los últimos en aprovecharme, dadas mis condiciones de imaginación." aria-label="Escuchar «El rayo de luna», leído por Omar"><span class="lvx-row__sec"><span class="lvx-row__ico" aria-hidden="true"><svg class="i-tri"><use href="#i-tri"/></svg><span class="lvx-eq"><i></i><i></i><i></i></span></span><span class="lvx-row__n">09</span></span><span class="lvx-row__ch">El rayo de luna</span><span class="lvx-row__rd">Omar</span><span class="lvx-row__tm">00:24:53</span></button></li>
+       <li class="lvx-gap"><span>10 capítulos más</span></li>
+       <li><button class="lvx-row" type="button" data-clip="voz-rosa" data-n="20" data-title="Los ojos verdes" data-reader="Rosacarmela" data-text="Hace mucho tiempo que tenía ganas de escribir cualquier cosa con este título. Hoy, que se me ha presentado ocasión, lo he puesto con letras grandes en la primera cuartilla de papel, y luego he dejado a capricho volar la pluma." aria-label="Escuchar «Los ojos verdes», leído por Rosacarmela"><span class="lvx-row__sec"><span class="lvx-row__ico" aria-hidden="true"><svg class="i-tri"><use href="#i-tri"/></svg><span class="lvx-eq"><i></i><i></i><i></i></span></span><span class="lvx-row__n">20</span></span><span class="lvx-row__ch">Los ojos verdes</span><span class="lvx-row__rd">Rosacarmela</span><span class="lvx-row__tm">00:20:40</span></button></li>
+      </ol>
+     </div>
+    </div>
+    <p class="lvx-thanks"><b>Audio real de LibriVox, de dominio público.</b> Cambia de capítulo y cambia la voz: estas <i>Leyendas</i> las leen once voluntarios. El párrafo de Omar es el mismo de <a href="/es/blog/elevenreader-resena/">nuestra reseña de ElevenReader</a>, ahora con voz humana.</p>
    </div>
   </div>
  </div>
@@ -101,7 +114,7 @@
   <p class="lv-verdict__k" id="h-verdict">Veredicto rápido</p>
   <div class="lv-verdict__row">
    <div class="lv-ring" data-ring="7.5" role="img" aria-label="Nota SonorBooks: 7,5 sobre 10">
-    <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="50" pathLength="100"/><circle class="val" cx="60" cy="60" r="50" pathLength="100" style="--v:7.5"/></svg>
+    <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="50" pathLength="100"/><circle class="val" cx="60" cy="60" r="50" pathLength="100"/></svg>
     <div class="lv-ring__n" aria-hidden="true"><span><b data-count="7.5">7,5</b><small>sobre 10</small></span></div>
    </div>
    <div class="lv-verdict__txt">
@@ -109,8 +122,8 @@
     <p class="lv-verdict__t lv-verdict__t--b">Si buscas novedades o superventas, aquí no los vas a encontrar.</p>
    </div>
    <div class="lv-verdict__cta">
-    <a class="lv-btn lv-btn--yellow lv-go" data-cta="lv-review-verdict" target="_blank" href="{{SALIR}}" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/" rel="noopener noreferrer" aria-label="Escuchar gratis en LibriVox (se abre en otra pestaña)"><span>Escuchar gratis</span><span class="lv-go__tag" aria-hidden="true">0&nbsp;€</span></a>
-    <span class="lv-verdict__aff">Sin registro ni anuncios · web en inglés</span>
+    <a class="lv-btn lv-btn--yellow lv-btn--lg" data-cta="lv-review-verdict" target="_blank" href="{{SALIR}}" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/" rel="noopener noreferrer" aria-label="Escuchar gratis en LibriVox (se abre en otra pestaña)">Escuchar gratis en LibriVox<svg class="lv-ico" aria-hidden="true"><use href="#i-ext"/></svg></a>
+    <span class="lv-verdict__aff">Sin registro ni anuncios. La web está en inglés.</span>
    </div>
   </div>
  </section>
@@ -122,8 +135,11 @@
 
   <!-- Vídeo -->
   <section class="lv-sec lv-sec--first" id="video" aria-labelledby="h-video">
-   <h2 class="lv-h2" id="h-video">La reseña en vídeo</h2>
-   <a class="lv-video" data-yt="{{YT_ID}}" href="https://www.youtube.com/@SonorBooksEspa%C3%B1a/videos" target="_blank" rel="noopener noreferrer" aria-label="Ver la reseña de LibriVox en YouTube (se abre en otra pestaña)">
+   <div class="lv-head">
+    <h2 class="lv-h2" id="h-video">La guía en vídeo</h2>
+    <div class="lv-prose"><p>En cuatro minutos: qué es LibriVox, cómo encontrar libros en español, cómo escucharlos y descargarlos (también en el móvil) y cómo suenan sus voluntarios.</p></div>
+   </div>
+   <a class="lv-video" data-yt="{{YT_ID}}" href="https://www.youtube.com/@SonorBooksEspa%C3%B1a/videos" target="_blank" rel="noopener noreferrer" aria-label="Ver la guía de LibriVox en YouTube (se abre en otra pestaña)">
     <img src="{{A}}/media/librivox-resena-video.webp" width="1280" height="720" alt="Miniatura del vídeo: LibriVox, audiolibros gratis y legales leídos por personas" loading="lazy" decoding="async">
     <span class="lv-video__play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
    </a>
@@ -138,31 +154,46 @@
      <p>No tiene anuncios ni cuotas, y para escuchar no hace falta cuenta. Los voluntarios graban los libros, <strong>Internet Archive</strong> guarda los audios y cualquiera puede escucharlos o descargarlos. Y como las grabaciones también son de dominio público, puedes usarlas libremente (en España, con un matiz que te contamos más abajo).</p>
     </div>
    </div>
-   <ul class="lv-facts" aria-label="LibriVox en cifras" data-stagger>
-    <li><b>2005</b><span>el año en que nació</span></li>
-    <li><b>+21.000</b><span>audiolibros terminados</span></li>
-    <li><b>+132.000&nbsp;h</b><span>de audio gratis</span></li>
-    <li><b>+14.000</b><span>voluntarios en sus foros</span></li>
-   </ul>
-   <p class="lv-source">Catálogo de LibriVox consultado el 12 de octubre de 2026 con su API pública; voluntarios, según LibriVox en agosto de 2025.</p>
-   <div class="lv-keys">
-    <div class="lv-key" data-reveal><i><svg aria-hidden="true"><use href="#i-pd"/></svg></i><h3>Dominio público</h3><p>Solo graba libros de dominio público en EE.&nbsp;UU. y cede sus grabaciones al dominio público.</p></div>
-    <div class="lv-key" data-reveal><i><svg aria-hidden="true"><use href="#i-mic"/></svg></i><h3>Personas reales</h3><p>Cada capítulo lo lee un voluntario. Nada de voces sintéticas.</p></div>
-    <div class="lv-key" data-reveal><i><svg aria-hidden="true"><use href="#i-gift"/></svg></i><h3>Gratis para todos</h3><p>Sin registro, sin anuncios y sin cuotas, para escuchar y para descargar.</p></div>
-   </div>
+   <figure class="lvx-home">
+    <div class="lvx-win">
+     <div class="lvx-bar" aria-hidden="true"><span class="lvx-bar__dots"><i></i><i></i><i></i></span><span class="lvx-bar__url">librivox.org</span></div>
+     <div class="lvx-home__in">
+      <div class="lvx-home__frame">
+       <div class="lvx-home__top">
+        <p class="lvx-home__t">Audiolibros gratis de dominio público</p>
+        <p class="lvx-home__s"><span>Leídos por voluntarios de todo el mundo.</span></p>
+       </div>
+       <div class="lvx-home__cols">
+        <div class="lvx-home__c lvx-home__c--read">
+         <p class="lvx-home__h">Leer</p>
+         <p>Los audiolibros de LibriVox los leen voluntarios de todo el mundo. ¿Te gustaría unirte?</p>
+         <p class="lvx-home__n"><b>14.276</b><span>voluntarios en sus foros</span></p>
+         <a class="lvx-btn lvx-btn--olive" href="#voluntario">Ser voluntario</a>
+        </div>
+        <div class="lvx-home__c lvx-home__c--listen">
+         <p class="lvx-home__h">Escuchar</p>
+         <p>Son gratis para cualquiera: en el ordenador, en el móvil o grabados en un CD.</p>
+         <p class="lvx-home__n"><b>21.838</b><span>audiolibros terminados, con 132.392 horas de audio</span></p>
+         <a class="lvx-btn lvx-btn--steel" href="#buscar">Ver el catálogo</a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <figcaption>La portada de librivox.org, traducida y con sus cifras: los voluntarios de sus foros en agosto de 2025, y los audiolibros y las horas de su catálogo el 12 de octubre de 2026.</figcaption>
+   </figure>
    <div class="lv-split lv-split--aviso">
     <div class="lv-prose">
      <h3 class="lv-h3">Así empieza cada grabación</h3>
      <p>Cada capítulo arranca con el mismo aviso, en el idioma del libro. Este es el de «El rayo de luna», leído por Omar:</p>
     </div>
-    <div class="lv-voice lv-voice--aviso" data-player="aviso-omar">
-     <div class="lv-voice__head">
-      <span class="lv-av lv-av--sm" aria-hidden="true"><b>O</b></span>
-      <span><b>El aviso de LibriVox</b><small>Audio real · dominio público</small></span>
-      <button class="lv-play" type="button" data-play aria-label="Escuchar el aviso de LibriVox"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
+    <div class="lvx-notice" data-player="aviso-omar">
+     <button class="lvx-notice__play" type="button" data-play aria-label="Escuchar el aviso de LibriVox, leído por Omar"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
+     <div class="lvx-notice__body">
+      <p class="lvx-notice__h"><b>El aviso de LibriVox</b><span data-time></span></p>
+      <p class="lvx-notice__p" data-words>Esta es una grabación de LibriVox. Todas las grabaciones de LibriVox son del dominio público. Para más información o para ser voluntario, por favor visite librivox.org.</p>
+      <div class="lvx-notice__seek" data-seek aria-hidden="true"><span></span></div>
      </div>
-     <div class="lv-wave" data-wave data-seek aria-hidden="true"></div>
-     <p class="lv-voice__text" data-words>Esta es una grabación de LibriVox. Todas las grabaciones de LibriVox son del dominio público. Para más información o para ser voluntario, por favor visite librivox.org.</p>
     </div>
    </div>
   </section>
@@ -172,7 +203,7 @@
    <div class="lv-head">
     <h2 class="lv-h2" id="h-legal">¿Es legal? Sí, con un matiz en España</h2>
     <div class="lv-prose">
-     <p>LibriVox solo graba libros que ya no tienen derechos de autor en Estados Unidos: en la práctica, <strong>los publicados hace 95 años completos o más</strong>: hoy, todo lo publicado hasta 1930.</p>
+     <p>LibriVox solo graba libros que ya no tienen derechos de autor en Estados Unidos: en la práctica, <strong>los publicados hace 95 años completos o más</strong>. Hoy, todo lo publicado hasta 1930.</p>
      <p>Por eso aquí no hay novedades: <strong>hay clásicos</strong>. Y una traducción cuenta como una obra nueva, con sus propios derechos.</p>
     </div>
    </div>
@@ -187,16 +218,16 @@
    <div class="lv-es" id="espana">
     <div class="lv-es__txt">
      <h3 class="lv-h3">¿Y en España?</h3>
-     <p>LibriVox sigue la ley de Estados Unidos y en cada ficha avisa:</p>
-     <blockquote class="lv-quote"><p lang="en">«LibriVox recordings are Public Domain in the USA. If you are not in the USA, please verify the copyright status of these works in your own country before downloading, otherwise you may be violating copyright laws.»</p><p class="lv-quote__es">Las grabaciones son de dominio público en EE.&nbsp;UU. Si no estás allí, comprueba la situación de estas obras en tu país antes de descargarlas; de lo contrario, podrías infringir la ley.</p></blockquote>
+     <p>LibriVox sigue la ley de Estados Unidos, y en cada ficha avisa:</p>
+     <blockquote class="lvx-quote"><p lang="en">LibriVox recordings are Public Domain in the USA. If you are not in the USA, please verify the copyright status of these works in your own country before downloading, otherwise you may be violating copyright laws.</p><p class="lvx-quote__es">Las grabaciones son de dominio público en EE.&nbsp;UU. Si no estás allí, comprueba la situación de estas obras en tu país antes de descargarlas; de lo contrario, podrías infringir la ley.</p></blockquote>
      <p>En España, una obra queda libre <strong>80 años después de la muerte de su autor</strong>, contados desde el 1 de enero siguiente, si murió antes del 7 de diciembre de 1987 (70 años, si murió más tarde). En una traducción cuentan también los derechos del traductor.</p>
-     <p>La mayoría de los clásicos en español de LibriVox también son libres aquí, <strong>pero no todos</strong>: de sus 564 audiolibros en español, 20 son de autores que murieron en 1946 o después. Por ejemplo:</p>
+     <p>La mayoría de los clásicos en español de LibriVox también son libres aquí, <strong>pero no todos</strong>: de sus 564 audiolibros en español, 20 son de autores que murieron en 1946 o después. Cuatro ejemplos, con el año en que quedan libres en España:</p>
     </div>
-    <ul class="lv-es__list" aria-label="Libros en español de LibriVox que aún tienen derechos en España">
-     <li><span class="lv-es__book"><b>Platero y yo</b><small>Juan Ramón Jiménez († 1958)</small></span><span class="lv-es__year"><small>libre en España en</small>2039</span></li>
-     <li><span class="lv-es__book"><b>Las inquietudes de Shanti Andía</b><small>Pío Baroja († 1956)</small></span><span class="lv-es__year"><small>libre en España en</small>2037</span></li>
-     <li><span class="lv-es__book"><b>La rana viajera</b><small>Julio Camba († 1962)</small></span><span class="lv-es__year"><small>libre en España en</small>2043</span></li>
-     <li><span class="lv-es__book"><b>Memorias de un vagón de ferrocarril</b><small>Eduardo Zamacois († 1971)</small></span><span class="lv-es__year"><small>libre en España en</small>2052</span></li>
+    <ul class="lv-cards" aria-label="Libros en español de LibriVox que aún tienen derechos en España">
+     <li class="lv-card"><p class="lv-card__t">Platero y yo</p><p class="lv-card__a">Juan Ramón Jiménez<span>murió en 1958</span></p><p class="lv-stamp"><small>Libre en España</small><b>2039</b></p></li>
+     <li class="lv-card"><p class="lv-card__t">Las inquietudes de Shanti Andía</p><p class="lv-card__a">Pío Baroja<span>murió en 1956</span></p><p class="lv-stamp"><small>Libre en España</small><b>2037</b></p></li>
+     <li class="lv-card"><p class="lv-card__t">La rana viajera</p><p class="lv-card__a">Julio Camba<span>murió en 1962</span></p><p class="lv-stamp"><small>Libre en España</small><b>2043</b></p></li>
+     <li class="lv-card"><p class="lv-card__t">Memorias de un vagón de ferrocarril</p><p class="lv-card__a">Eduardo Zamacois<span>murió en 1971</span></p><p class="lv-stamp"><small>Libre en España</small><b>2052</b></p></li>
     </ul>
     <p class="lv-es__note">Es la regla general para autores españoles, no asesoramiento jurídico: en las obras de autores de otros países y en las traducciones el cálculo puede cambiar. Si tienes dudas sobre una obra, compruébala antes de descargarla.</p>
    </div>
@@ -211,28 +242,20 @@
      <p>Hay novela, poesía, teatro, cuentos, ensayo y hasta la Biblia. Los autores con más títulos son Pérez Galdós (50), Valle-Inclán (12), Blasco Ibáñez y Pardo Bazán (11 cada uno), Unamuno (9) y Cervantes (8). También hay traducciones de Poe, Victor Hugo, Tolstói, Dumas, Verne o Dickens.</p>
     </div>
    </div>
-   <figure class="lv-langs" data-langs>
-    <ol>
-     <li style="--v:1"><span class="lv-langs__n">1</span><span class="lv-langs__l">Inglés</span><i></i><b>42.806</b></li>
-     <li style="--v:.0743"><span class="lv-langs__n">2</span><span class="lv-langs__l">Alemán</span><i></i><b>3.181</b></li>
-     <li style="--v:.0246"><span class="lv-langs__n">3</span><span class="lv-langs__l">Francés</span><i></i><b>1.051</b></li>
-     <li style="--v:.0243" class="is-es"><span class="lv-langs__n">4</span><span class="lv-langs__l">Español</span><i></i><b>1.042</b></li>
-    </ol>
-    <figcaption>Obras completadas por idioma en librivox.org (<span lang="en">Browse the catalog › Language</span>), 12 de octubre de 2026.</figcaption>
+   <figure class="lvx-langs">
+    <div class="lvx-win">
+     <div class="lvx-bar" aria-hidden="true"><span class="lvx-bar__dots"><i></i><i></i><i></i></span><span class="lvx-bar__url">librivox.org</span></div>
+     <div class="lvx-browse" aria-hidden="true"><span><svg><use href="#i-pen"/></svg>Author</span><span><svg><use href="#i-book"/></svg>Title</span><span><svg><use href="#i-tag"/></svg>Genre/Subject</span><span class="is-on"><svg><use href="#i-flag"/></svg>Language</span></div>
+     <ol class="lvx-langs__list" data-langs>
+      <li style="--v:1"><p class="lvx-langs__l"><b>English</b></p><p class="lvx-langs__c">Completadas: <b>42.806</b> obras | En curso: <b>404</b></p><i aria-hidden="true"></i></li>
+      <li style="--v:.0246"><p class="lvx-langs__l"><b>French</b> <span>français</span></p><p class="lvx-langs__c">Completadas: <b>1.051</b> obras | En curso: <b>4</b></p><i aria-hidden="true"></i></li>
+      <li style="--v:.0743"><p class="lvx-langs__l"><b>German</b> <span>Deutsch</span></p><p class="lvx-langs__c">Completadas: <b>3.181</b> obras | En curso: <b>19</b></p><i aria-hidden="true"></i></li>
+      <li style="--v:.0068"><p class="lvx-langs__l"><b>Italian</b> <span>italiano</span></p><p class="lvx-langs__c">Completadas: <b>291</b> obras | En curso: <b>4</b></p><i aria-hidden="true"></i></li>
+      <li style="--v:.0243" class="is-es"><p class="lvx-langs__l"><b>Spanish</b> <span>español</span><em>4.º idioma</em></p><p class="lvx-langs__c">Completadas: <b>1.042</b> obras | En curso: <b>15</b></p><i aria-hidden="true"></i></li>
+     </ol>
+    </div>
+    <figcaption>«<span lang="en">Browse the catalog › Language</span>» en librivox.org, con sus cifras del 12 de octubre de 2026 (recreación). Cada barra se compara con el inglés.</figcaption>
    </figure>
-   <h3 class="lv-h3">Por dónde empezar: nueve clásicos en español</h3>
-   <ul class="lv-shelf" aria-label="Nueve audiolibros en español de LibriVox" data-stagger>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/el-ingenioso-hidalgo-by-miguel-de-cervantes-saavedra/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/el-ingenioso-hidalgo-by-miguel-de-cervantes-saavedra/"><img src="{{A}}/media/portadas/20198.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Don Quijote de la Mancha</b><small>Miguel de Cervantes</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>44&nbsp;h 29&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/lazarillo-de-tormes/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/lazarillo-de-tormes/"><img src="{{A}}/media/portadas/3579.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Lazarillo de Tormes</b><small>Anónimo</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>1&nbsp;h 57&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/leyendas-by-gustavo-adolfo-becquer/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/leyendas-by-gustavo-adolfo-becquer/"><img src="{{A}}/media/portadas/5079.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Leyendas</b><small>Gustavo Adolfo Bécquer</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>10&nbsp;h 5&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-users"/></svg>11 voces</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/rimas-by-gustavo-adolfo-becquer/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/rimas-by-gustavo-adolfo-becquer/"><img src="{{A}}/media/portadas/13242.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Rimas</b><small>Gustavo Adolfo Bécquer</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>54&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/marianela-by-benito-perez-galdos/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/marianela-by-benito-perez-galdos/"><img src="{{A}}/media/portadas/16285.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Marianela</b><small>Benito Pérez Galdós</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>6&nbsp;h 1&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/fortunata-y-jacinta-dos-historias-de-casadas-primera-parte-by-benito-perez-galdos/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/fortunata-y-jacinta-dos-historias-de-casadas-primera-parte-by-benito-perez-galdos/"><img src="{{A}}/media/portadas/14336.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Fortunata y Jacinta <span class="lv-shelf__p">(1.ª parte)</span></b><small>Benito Pérez Galdós</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>10&nbsp;h 53&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/la-regenta-tomo-i-by-leopoldo-garcia-alas/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/la-regenta-tomo-i-by-leopoldo-garcia-alas/"><img src="{{A}}/media/portadas/13208.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>La Regenta <span class="lv-shelf__p">(tomo I)</span></b><small>Leopoldo Alas «Clarín»</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>15&nbsp;h 56&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/los-pazos-de-ulloa-by-emilia-pardo-bazan/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/los-pazos-de-ulloa-by-emilia-pardo-bazan/"><img src="{{A}}/media/portadas/10541.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>Los pazos de Ulloa</b><small>Emilia Pardo Bazán</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>9&nbsp;h 51&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-    <li><a class="lv-shelf__card" href="{{LV:https://librivox.org/maria-by-jorge-isaacs/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/maria-by-jorge-isaacs/"><img src="{{A}}/media/portadas/17676.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><span class="lv-shelf__t"><b>María</b><small>Jorge Isaacs</small></span><span class="lv-shelf__m"><span><svg aria-hidden="true"><use href="#i-clock"/></svg>12&nbsp;h 16&nbsp;min</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Una voz</span></span></a></li>
-   </ul>
-   <p class="lv-source">Duraciones y lectores de cada ficha en librivox.org. Las portadas son de LibriVox (dominio público). Los enlaces abren LibriVox en otra pestaña.</p>
    <div class="lv-note">
     <svg aria-hidden="true"><use href="#i-bulb"/></svg>
     <p><strong>¿Buscas un libro concreto?</strong> Búscalo en SonorBooks: te decimos si está gratis en LibriVox o en El Libro Total, o en qué plataforma está y a qué precio.</p>
@@ -245,40 +268,56 @@
    <div class="lv-head">
     <h2 class="lv-h2" id="h-bus">Cómo buscar audiolibros en español en LibriVox</h2>
     <div class="lv-prose">
-     <p>La web está en inglés, pero es sencilla. Tienes dos caminos: el <strong>catálogo por idioma</strong>, para curiosear, o el <strong>buscador</strong>, si ya sabes qué quieres escuchar.</p>
+     <p>La web está en inglés, pero es sencilla. Pruébala aquí: es una recreación de su catálogo con once clásicos en español. Pulsa cada paso, o escribe tú un título o un autor.</p>
     </div>
    </div>
-   <div class="lv-split lv-split--guide">
-    <div class="lv-col">
-     <h3 class="lv-h3">Por idioma</h3>
-     <ol class="lv-num">
-      <li><b>Abre el catálogo por idioma.</b> En <span lang="en">«Browse the catalog»</span>, pulsa <span lang="en">«Language»</span>.</li>
-      <li><b>Elige <span lang="en">«Spanish»</span>.</b> Verás todas las obras en español, por orden alfabético.</li>
-      <li><b>Filtra si quieres.</b> En <span lang="en">«Project type»</span>, <span lang="en">«solo»</span> muestra únicamente los libros leídos por una persona; <span lang="en">«group»</span>, los que leen varias.</li>
-      <li><b>Mira la línea gris de cada libro.</b> Dice si está terminado (<span lang="en">«Complete»</span>) y si lo lee una sola voz (<span lang="en">«Solo»</span>) o varias (<span lang="en">«Collaborative»</span>).</li>
-     </ol>
-    </div>
-    <figure class="lv-fig lv-fig--stack">
-     <button type="button" data-zoom aria-label="Ampliar captura: catálogo por idioma"><img src="{{A}}/media/librivox-catalogo-por-idioma.webp" width="1600" height="1056" alt="Catálogo de LibriVox por idioma con la pestaña «Language» (1) y la fila «Spanish», con 1.042 obras completadas (2)" loading="lazy" decoding="async"></button>
-     <button type="button" data-zoom aria-label="Ampliar captura: lista de audiolibros en español"><img src="{{A}}/media/librivox-lista-en-espanol.webp" width="1600" height="880" alt="Lista de audiolibros en español de LibriVox con el filtro «Project type» (3) y la línea «Complete | Solo | Spanish» (4)" loading="lazy" decoding="async"></button>
-     <figcaption>Los números de las capturas corresponden a los pasos.</figcaption>
-    </figure>
-   </div>
-   <div class="lv-split lv-split--guide">
-    <div class="lv-col">
-     <h3 class="lv-h3">Con el buscador</h3>
-     <ol class="lv-num">
-      <li><b>Escribe un título, un autor o un lector</b> en la caja <span lang="en">«Search by Author, Title or Reader»</span>, arriba a la derecha.</li>
-      <li><b>Compara versiones.</b> De muchos clásicos hay varias: del <em>Quijote</em>, por ejemplo, una lectura colaborativa en dos partes…</li>
-      <li><b>…y otra entera con una sola voz.</b> Elige la que prefieras: puedes escuchar un trozo de cada una antes de decidirte.</li>
+   <div class="lv-guide" data-guide>
+    <div class="lv-guide__l">
+     <ol class="lv-guide__steps">
+      <li><button class="lv-guide__go" type="button" data-go="lang" aria-pressed="false"><b>Abre el catálogo en español</b><span>En <span lang="en">«Browse the catalog»</span>, pulsa <span lang="en">«Language»</span> y elige <span lang="en">«Spanish»</span>. Verás todas las obras en español, por orden alfabético.</span></button></li>
+      <li><button class="lv-guide__go" type="button" data-go="solo" aria-pressed="false"><b>Elige una voz o varias</b><span>En <span lang="en">«Project type»</span>, <span lang="en">«solo»</span> deja los libros que lee una sola persona, y <span lang="en">«group»</span>, los que leen varias. Debajo de cada título lo pone: <span lang="en">«Solo»</span> o <span lang="en">«Collaborative»</span>.</span></button></li>
+      <li><button class="lv-guide__go" type="button" data-go="search" aria-pressed="false"><b>Busca un título, un autor o un lector</b><span>Escríbelo en la caja <span lang="en">«Search by Author, Title or Reader»</span>. Del <em>Quijote</em> salen tres versiones: dos colaborativas, una por cada parte, y otra entera con una sola voz.</span></button></li>
      </ol>
      <p class="lv-tip">En <span lang="en">«Advanced search»</span>, debajo del buscador, combinas idioma, tipo de lectura, género y estado.</p>
+     <p class="lv-real">Capturas reales de librivox.org: <button class="lv-linkbtn" type="button" data-zoom-src="{{A}}/media/librivox-catalogo-por-idioma.webp" data-zoom-alt="Catálogo de LibriVox por idioma con la pestaña «Language» (1) y la fila «Spanish», con 1.042 obras completadas (2)">el catálogo por idioma</button>, <button class="lv-linkbtn" type="button" data-zoom-src="{{A}}/media/librivox-lista-en-espanol.webp" data-zoom-alt="Lista de audiolibros en español de LibriVox con el filtro «Project type» (3) y la línea «Complete | Solo | Spanish» (4)">la lista en español</button> y <button class="lv-linkbtn" type="button" data-zoom-src="{{A}}/media/librivox-busqueda-quijote.webp" data-zoom-alt="Búsqueda de «quijote» en LibriVox (1): «Don Quijote 1», colaborativo (2), y «El ingenioso hidalgo Don Quijote de la Mancha», con una sola voz (3)">la búsqueda de «quijote»</button>.</p>
     </div>
-    <figure class="lv-fig">
-     <button type="button" data-zoom aria-label="Ampliar captura: búsqueda de quijote"><img src="{{A}}/media/librivox-busqueda-quijote.webp" width="1600" height="1158" alt="Búsqueda de «quijote» en LibriVox (1): «Don Quijote 1», colaborativo (2), y «El ingenioso hidalgo Don Quijote de la Mancha», con una sola voz (3)" loading="lazy" decoding="async"></button>
-     <figcaption>Buscamos «quijote»: hay una versión colaborativa en dos partes y otra con una sola voz.</figcaption>
-    </figure>
+    <div class="lvx-win lvx-cat" data-cat>
+     <div class="lvx-bar" aria-hidden="true"><span class="lvx-bar__dots"><i></i><i></i><i></i></span><span class="lvx-bar__url">librivox.org</span></div>
+     <div class="lvx-cat__top">
+      <label class="lvx-search"><span class="lv-sr">Buscar en esta recreación del catálogo</span><input type="search" data-cat-q placeholder="Search by Author, Title or Reader" autocomplete="off" spellcheck="false" enterkeyhint="search"><svg aria-hidden="true"><use href="#i-search"/></svg></label>
+     </div>
+     <div class="lvx-browse" aria-hidden="true"><span><svg><use href="#i-pen"/></svg>Author</span><span><svg><use href="#i-book"/></svg>Title</span><span><svg><use href="#i-tag"/></svg>Genre/Subject</span><span class="is-on"><svg><use href="#i-flag"/></svg>Language</span></div>
+     <div class="lvx-cat__body">
+      <div class="lvx-cat__side">
+       <p class="lvx-cat__crumb" data-cat-crumb><span lang="en">Language</span> › <b lang="en">Spanish</b></p>
+       <fieldset class="lvx-type">
+        <legend lang="en">Project type</legend>
+        <label><input type="radio" name="lvx-type" value="all" checked data-cat-type><span lang="en">all</span></label>
+        <label><input type="radio" name="lvx-type" value="solo" data-cat-type><span lang="en">solo</span></label>
+        <label><input type="radio" name="lvx-type" value="group" data-cat-type><span lang="en">group</span></label>
+       </fieldset>
+      </div>
+      <div class="lvx-cat__main">
+       <p class="lvx-cat__count" data-cat-count aria-live="polite">11 audiolibros en español</p>
+       <ul class="lvx-res" data-cat-list>
+        <li data-type="group" data-q="don quijote 1 primera parte miguel de cervantes saavedra"><img src="{{A}}/media/portadas/567.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/don-quijote-vol-1-by-miguel-de-cervantes-saavedra/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/don-quijote-vol-1-by-miguel-de-cervantes-saavedra/">Don Quijote 1</a><p class="lvx-res__a">Miguel de Cervantes Saavedra <i>(1547 - 1616)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Collaborative</span> | Spanish</p></div><p class="lvx-res__d"><b>21 h 10 min</b><span>Varias voces</span></p></li>
+        <li data-type="group" data-q="don quijote 2 segunda parte miguel de cervantes saavedra"><img src="{{A}}/media/portadas/1378.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/don-quijote-volume-2-by-miguel-de-cervantes-saavedra/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/don-quijote-volume-2-by-miguel-de-cervantes-saavedra/">Don Quijote 2</a><p class="lvx-res__a">Miguel de Cervantes Saavedra <i>(1547 - 1616)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Collaborative</span> | Spanish</p></div><p class="lvx-res__d"><b>22 h 7 min</b><span>Varias voces</span></p></li>
+        <li data-type="solo" data-q="fortunata y jacinta dos historias de casadas primera parte benito perez galdos epachuko"><img src="{{A}}/media/portadas/14336.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/fortunata-y-jacinta-dos-historias-de-casadas-primera-parte-by-benito-perez-galdos/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/fortunata-y-jacinta-dos-historias-de-casadas-primera-parte-by-benito-perez-galdos/">Fortunata y Jacinta (primera parte)</a><p class="lvx-res__a">Benito Pérez Galdós <i>(1843 - 1920)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>10 h 53 min</b><span>Una voz</span></p></li>
+        <li data-type="solo" data-q="el ingenioso hidalgo don quijote de la mancha miguel de cervantes saavedra lu"><img src="{{A}}/media/portadas/20198.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/el-ingenioso-hidalgo-by-miguel-de-cervantes-saavedra/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/el-ingenioso-hidalgo-by-miguel-de-cervantes-saavedra/">El ingenioso hidalgo Don Quijote de la Mancha</a><p class="lvx-res__a">Miguel de Cervantes Saavedra <i>(1547 - 1616)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>44 h 29 min</b><span>Una voz</span></p></li>
+        <li data-type="solo" data-q="lazarillo de tormes anonimo anonymous tux"><img src="{{A}}/media/portadas/3579.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/lazarillo-de-tormes/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/lazarillo-de-tormes/">Lazarillo de Tormes</a><p class="lvx-res__a">Anónimo</p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>1 h 57 min</b><span>Una voz</span></p></li>
+        <li data-type="group" data-q="leyendas gustavo adolfo becquer"><img src="{{A}}/media/portadas/5079.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/leyendas-by-gustavo-adolfo-becquer/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/leyendas-by-gustavo-adolfo-becquer/">Leyendas</a><p class="lvx-res__a">Gustavo Adolfo Bécquer <i>(1836 - 1870)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Collaborative</span> | Spanish</p></div><p class="lvx-res__d"><b>10 h 5 min</b><span>11 voces</span></p></li>
+        <li data-type="solo" data-q="maria jorge isaacs miltonfmh"><img src="{{A}}/media/portadas/17676.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/maria-by-jorge-isaacs/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/maria-by-jorge-isaacs/">María</a><p class="lvx-res__a">Jorge Isaacs <i>(1837 - 1895)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>12 h 16 min</b><span>Una voz</span></p></li>
+        <li data-type="solo" data-q="marianela benito perez galdos maritza mateo"><img src="{{A}}/media/portadas/16285.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/marianela-by-benito-perez-galdos/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/marianela-by-benito-perez-galdos/">Marianela</a><p class="lvx-res__a">Benito Pérez Galdós <i>(1843 - 1920)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>6 h 1 min</b><span>Una voz</span></p></li>
+        <li data-type="solo" data-q="los pazos de ulloa emilia pardo bazan mongope"><img src="{{A}}/media/portadas/10541.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/los-pazos-de-ulloa-by-emilia-pardo-bazan/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/los-pazos-de-ulloa-by-emilia-pardo-bazan/">Los pazos de Ulloa</a><p class="lvx-res__a">Emilia Pardo Bazán <i>(1851 - 1921)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>9 h 51 min</b><span>Una voz</span></p></li>
+        <li data-type="solo" data-q="la regenta tomo i leopoldo alas clarin garcia epachuko"><img src="{{A}}/media/portadas/13208.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/la-regenta-tomo-i-by-leopoldo-garcia-alas/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/la-regenta-tomo-i-by-leopoldo-garcia-alas/">La Regenta (tomo I)</a><p class="lvx-res__a">Leopoldo Alas «Clarín» <i>(1852 - 1901)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>15 h 56 min</b><span>Una voz</span></p></li>
+        <li data-type="solo" data-q="rimas gustavo adolfo becquer kendalrigans"><img src="{{A}}/media/portadas/13242.webp" width="300" height="300" alt="" loading="lazy" decoding="async"><div class="lvx-res__b"><a class="lvx-res__t" href="{{LV:https://librivox.org/rimas-by-gustavo-adolfo-becquer/}}" target="_blank" rel="noopener noreferrer" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/rimas-by-gustavo-adolfo-becquer/">Rimas</a><p class="lvx-res__a">Gustavo Adolfo Bécquer <i>(1836 - 1870)</i></p><p class="lvx-res__m" lang="en">Complete | <span class="lvx-k">Solo</span> | Spanish</p></div><p class="lvx-res__d"><b>54 min</b><span>Una voz</span></p></li>
+       </ul>
+       <p class="lvx-cat__empty" data-cat-empty hidden>Ninguno de estos once coincide. En LibriVox hay más de 550 audiolibros en español: búscalo allí.</p>
+      </div>
+     </div>
+    </div>
    </div>
+   <p class="lv-source">Recreación con datos de librivox.org (12 de octubre de 2026). Los títulos abren cada ficha de LibriVox en otra pestaña; las portadas son de LibriVox, de dominio público.</p>
   </section>
 
   <!-- Escuchar y descargar -->
@@ -286,34 +325,83 @@
    <div class="lv-head">
     <h2 class="lv-h2" id="h-esc">Escuchar y descargar: así es la ficha de cada libro</h2>
     <div class="lv-prose">
-     <p>Al abrir un libro ves su ficha: la duración, quién lee cada capítulo y todas las formas de escucharlo. Esta es la de las <em>Leyendas</em> de Bécquer: 22 capítulos, 11 voces y 10 horas de audio.</p>
+     <p>Al abrir un libro ves su ficha: quién lee cada capítulo, cuánto dura y todas las formas de escucharlo. Esta es la de las <em>Leyendas</em> de Bécquer: 22 capítulos, 11 voces y 10 horas de audio. Elige una opción y te contamos para qué sirve.</p>
     </div>
    </div>
-   <div class="lv-anat">
-    <figure class="lv-fig">
-     <button type="button" data-zoom aria-label="Ampliar captura: ficha de las Leyendas de Bécquer en LibriVox"><img src="{{A}}/media/librivox-ficha-leyendas.webp" width="1600" height="1325" alt="Ficha de las Leyendas de Bécquer en LibriVox con ocho zonas numeradas: Play, título del capítulo, lector y duración, libro entero en ZIP, RSS, M4B, aviso de dominio público y datos de la grabación" loading="lazy" decoding="async"></button>
-    </figure>
-    <ol class="lv-legend">
-     <li><b>Escuchar ya.</b> El botón de play de cada capítulo lo reproduce en el navegador (MP3 de 64&nbsp;kbps).</li>
-     <li><b>Descargar un capítulo.</b> Su título enlaza al MP3 en alta calidad (128&nbsp;kbps): clic derecho › «Guardar enlace como…».</li>
-     <li><b>Quién lee y cuánto dura</b> cada capítulo.</li>
-     <li><b>El libro entero</b> (<span lang="en">«Whole book»</span>): un ZIP con todos los MP3. Este ocupa 290&nbsp;MB.</li>
-     <li><b>RSS:</b> el libro como pódcast, para escucharlo en el móvil (te lo explicamos abajo).</li>
-     <li><b>M4B:</b> un archivo de audiolibro con capítulos que recuerda por dónde vas. Lo tienen la mayoría de los libros; los largos, en varias partes.</li>
-     <li><b>El aviso</b> de dominio público: comprueba tu país.</li>
-     <li><b>Los datos de la grabación:</b> duración total, tamaño del ZIP, coordinador y revisor.</li>
-    </ol>
+   <div class="lv-dl" data-dl>
+    <div class="lvx-win lvx-side">
+     <div class="lvx-bar" aria-hidden="true"><span class="lvx-bar__dots"><i></i><i></i><i></i></span><span class="lvx-bar__url">librivox.org/leyendas-by-gustavo-adolfo-becquer/</span></div>
+     <div class="lvx-side__in">
+      <p class="lvx-side__h">En cada capítulo</p>
+      <div class="lvx-side__ch">
+       <button class="lvx-opt lvx-opt--play" type="button" data-dl-opt="play" aria-pressed="true" aria-controls="dl-panel"><span class="lvx-tri"><svg aria-hidden="true"><use href="#i-tri"/></svg></span><span class="lv-sr">Play</span><span aria-hidden="true">09</span></button>
+       <button class="lvx-opt lvx-opt--title" type="button" data-dl-opt="mp3" aria-pressed="false" aria-controls="dl-panel">El rayo de luna</button>
+       <span class="lvx-side__rd" aria-hidden="true">Omar</span>
+      </div>
+      <p class="lvx-side__h" lang="en">Listen/Download</p>
+      <button class="lvx-opt lvx-opt--g" type="button" data-dl-opt="zip" aria-pressed="false" aria-controls="dl-panel"><span lang="en">Whole book (zip file)</span><span class="lvx-gbtn" lang="en">Download</span></button>
+      <button class="lvx-opt lvx-opt--g" type="button" data-dl-opt="itunes" aria-pressed="false" aria-controls="dl-panel"><span lang="en">Subscribe by iTunes</span><span class="lvx-gbtn" lang="en">iTunes</span></button>
+      <button class="lvx-opt lvx-opt--g" type="button" data-dl-opt="rss" aria-pressed="false" aria-controls="dl-panel"><span lang="en">RSS Feed</span><span class="lvx-gbtn">RSS</span></button>
+      <button class="lvx-opt lvx-opt--g" type="button" data-dl-opt="torrent" aria-pressed="false" aria-controls="dl-panel"><span lang="en">Download torrent</span><span class="lvx-gbtn" lang="en">Torrent</span></button>
+      <p class="lvx-side__h" lang="en">Links</p>
+      <button class="lvx-opt lvx-opt--link" type="button" data-dl-opt="ia" aria-pressed="false" aria-controls="dl-panel" lang="en">Internet Archive Page</button>
+      <button class="lvx-opt lvx-opt--link" type="button" data-dl-opt="m4b" aria-pressed="false" aria-controls="dl-panel" lang="en">M4B audio book, part 1 <span>M4B audio book, part 2</span></button>
+     </div>
+    </div>
+    <div class="lv-dl__panel" id="dl-panel" aria-live="polite">
+     <div class="lv-dl__p" data-dl-panel="play">
+      <h3 class="lv-dl__t">Play: escúchalo sin descargar nada</h3>
+      <ul class="lv-dl__chips"><li>MP3</li><li>64&nbsp;kbps</li><li>En el navegador</li></ul>
+      <p>Cada capítulo tiene su botón de play: suena en la misma página, sin instalar nada. Con clic derecho también puedes guardar ese MP3.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Para probar una voz antes de empezar un libro.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="mp3" hidden>
+      <h3 class="lv-dl__t">El título: el capítulo en alta calidad</h3>
+      <ul class="lv-dl__chips"><li>MP3</li><li>128&nbsp;kbps</li><li>Casi 1&nbsp;MB por minuto</li></ul>
+      <p>El título de cada capítulo enlaza a la grabación original. Para guardarla: clic derecho › «Guardar enlace como…». La diferencia con el MP3 de 64&nbsp;kbps apenas se nota.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Para quedarte solo con los capítulos que quieras.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="zip" hidden>
+      <h3 class="lv-dl__t">Whole book: el libro entero, en un ZIP</h3>
+      <ul class="lv-dl__chips"><li>ZIP</li><li>Un MP3 de 64&nbsp;kbps por capítulo</li><li>290&nbsp;MB en las <i>Leyendas</i></li></ul>
+      <p>Un solo archivo con todos los capítulos. Los hay de menos de 100&nbsp;MB y de más de 1&nbsp;GB: el tamaño viene en los datos de la grabación (<span lang="en">«Production details»</span>), debajo de estos botones.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Para guardarlo todo de una vez en el ordenador.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="itunes" hidden>
+      <h3 class="lv-dl__t">iTunes: el libro en Apple Podcasts</h3>
+      <ul class="lv-dl__chips"><li>Pódcast</li><li>Un episodio por capítulo</li></ul>
+      <p>Abre el canal del libro en Apple Podcasts (antes, iTunes) para seguirlo como un pódcast. Es el mismo canal que el botón RSS.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Para escucharlo en un iPhone, un iPad o un Mac.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="rss" hidden>
+      <h3 class="lv-dl__t">RSS: el libro como pódcast</h3>
+      <ul class="lv-dl__chips"><li>Pódcast</li><li>Un episodio por capítulo</li><li>Sin conexión</li></ul>
+      <p>Copia el enlace del botón y añádelo en tu app de pódcasts: cada capítulo aparece como un episodio, que puedes descargar para escucharlo sin conexión. <a href="#movil">Te lo explicamos paso a paso</a>.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Nuestra forma favorita de escuchar LibriVox en el móvil.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="torrent" hidden>
+      <h3 class="lv-dl__t">Torrent: el libro entero, por otra vía</h3>
+      <ul class="lv-dl__chips"><li>Torrent</li><li>Libro entero</li></ul>
+      <p>Descarga el libro completo con un programa de torrent, como qBittorrent o Transmission, en lugar de bajar el ZIP desde el navegador.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Si ya usas un programa de torrent.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="ia" hidden>
+      <h3 class="lv-dl__t">Internet Archive: más formatos</h3>
+      <ul class="lv-dl__chips"><li>OGG</li><li>MP3</li><li>Reproductor</li></ul>
+      <p>LibriVox guarda sus audios en Internet Archive. En la página del libro tienes otros formatos (OGG y, en los más nuevos, MP3 de calidad variable) y un reproductor que va de un capítulo al siguiente.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Para escuchar el libro seguido, sin ir capítulo a capítulo.</p>
+     </div>
+     <div class="lv-dl__p" data-dl-panel="m4b" hidden>
+      <h3 class="lv-dl__t">M4B: un audiolibro que recuerda por dónde vas</h3>
+      <ul class="lv-dl__chips"><li>M4B</li><li>Con capítulos y portada</li><li>Dos partes en las <i>Leyendas</i></li></ul>
+      <p>Un archivo de audiolibro con índice de capítulos: tu app recuerda por dónde ibas. Lo tienen la mayoría de los libros, y los largos vienen en varias partes. Las <i>Leyendas</i>, en dos: capítulos 1 a 11 y 12 a 22.</p>
+      <p class="lv-dl__for"><svg aria-hidden="true"><use href="#i-for"/></svg>Para escuchar en una app de audiolibros.</p>
+     </div>
+    </div>
    </div>
-   <h3 class="lv-h3">¿Qué formato te conviene?</h3>
-   <ul class="lv-feats lv-feats--4" data-stagger>
-    <li><svg aria-hidden="true"><use href="#i-headphones"/></svg><b>Para escuchar ahora</b><span>El botón de play de cada capítulo, en la web. Sin descargar nada.</span></li>
-    <li><svg aria-hidden="true"><use href="#i-phone"/></svg><b>Para el móvil</b><span>El RSS en tu app de pódcasts, o el M4B en una app de audiolibros.</span></li>
-    <li><svg aria-hidden="true"><use href="#i-zip"/></svg><b>Para guardarlo todo</b><span>El ZIP del libro entero, con un MP3 por capítulo.</span></li>
-    <li><svg aria-hidden="true"><use href="#i-book"/></svg><b>Para no perder el hilo</b><span>El M4B: un archivo de audiolibro (o varios, si el libro es largo), con capítulos, que recuerda por dónde vas.</span></li>
-   </ul>
    <div class="lv-note lv-note--plain">
     <svg aria-hidden="true"><use href="#i-bulb"/></svg>
-    <p><strong>Sin DRM y sin caducidad:</strong> los archivos son tuyos. Puedes copiarlos a cualquier dispositivo y escucharlos sin conexión todas las veces que quieras. En la página de Internet Archive de cada libro hay aún más formatos.</p>
+    <p><strong>Sin DRM y sin caducidad:</strong> los archivos son tuyos. Puedes copiarlos a cualquier dispositivo y escucharlos sin conexión todas las veces que quieras. <button class="lv-linkbtn" type="button" data-zoom-src="{{A}}/media/librivox-ficha-leyendas.webp" data-zoom-alt="Ficha de las Leyendas de Bécquer en LibriVox con ocho zonas numeradas: Play, título del capítulo, lector y duración, libro entero en ZIP, RSS, M4B, aviso de dominio público y datos de la grabación">Ver la ficha real de las <i>Leyendas</i></button>, con cada opción marcada.</p>
    </div>
   </section>
 
@@ -364,23 +452,33 @@
       <p>Abre la ficha y pulsa el play de cualquier capítulo. Es lo más rápido para probar un libro, pero no recuerda por dónde ibas.</p>
      </div>
     </div>
-    <figure class="lv-phone" role="img" aria-label="Recreación: las Leyendas de Bécquer en una app de pódcasts, con un capítulo por episodio">
-     <div class="lv-phone__screen">
+    <figure class="lv-phone" data-phone>
+     <div class="lv-phone__screen" role="img" aria-label="Recreación: en una app de pódcasts se añade el RSS de las Leyendas y aparecen sus capítulos como episodios">
       <div class="lv-phone__bar" aria-hidden="true"><span>9:41</span><span class="lv-phone__dots"><i></i><i></i><i></i></span></div>
-      <div class="lv-phone__show">
-       <img src="{{A}}/media/portadas/5079.webp" width="300" height="300" alt="" loading="lazy" decoding="async">
-       <span><b>Leyendas</b><small>LibriVox · 22 episodios</small></span>
+      <div class="lv-phone__app" aria-hidden="true">
+       <div class="lv-phone__add">
+        <p class="lv-phone__h">Seguir un programa por URL</p>
+        <p class="lv-phone__field"><span data-phone-url>https://librivox.org/rss/5079</span><i class="lv-phone__caret"></i></p>
+        <p class="lv-phone__go" data-phone-go>Seguir</p>
+        <p class="lv-phone__note">Pega la dirección del canal RSS del libro.</p>
+       </div>
+       <div class="lv-phone__show">
+        <div class="lv-phone__head">
+         <img src="{{A}}/media/portadas/5079.webp" width="300" height="300" alt="" loading="lazy" decoding="async">
+         <p><b>Leyendas</b><small>LibriVox, 22 episodios</small></p>
+        </div>
+        <ul class="lv-phone__eps">
+         <li><span><b>Creed en Dios</b><small>23 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
+         <li><span><b>El Cristo de la calavera</b><small>27 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
+         <li><span><b>El beso</b><small>30 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
+         <li><span><b>El caudillo de las manos rojas, 1ra parte</b><small>34 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
+         <li><span><b>El caudillo de las manos rojas, 2da parte</b><small>47 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
+         <li><span><b>El gnomo</b><small>38 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
+        </ul>
+       </div>
       </div>
-      <ul class="lv-phone__eps">
-       <li><span><b>Creed en Dios</b><small>23 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
-       <li><span><b>El Cristo de la calavera</b><small>27 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
-       <li><span><b>El beso</b><small>30 min</small></span><i class="ok"><svg><use href="#i-check"/></svg></i></li>
-       <li><span><b>El caudillo de las manos rojas, 1ra parte</b><small>34 min</small></span><i class="ok"><svg><use href="#i-check"/></svg></i></li>
-       <li class="is-on"><span><b>El rayo de luna</b><small>Escuchando · quedan 18 min</small></span><i class="pl"><svg><use href="#i-pause"/></svg></i></li>
-       <li><span><b>¡Es raro!</b><small>23 min</small></span><i class="dl"><svg><use href="#i-download"/></svg></i></li>
-      </ul>
      </div>
-     <figcaption>Así se ven las <em>Leyendas</em> en una app de pódcasts (recreación).</figcaption>
+     <figcaption>Así se añaden las <em>Leyendas</em> a una app de pódcasts (recreación). <button class="lv-replay" type="button" data-phone-replay><svg aria-hidden="true"><use href="#i-replay"/></svg>Verlo otra vez</button></figcaption>
     </figure>
    </div>
   </section>
@@ -391,39 +489,27 @@
     <h2 class="lv-h2" id="h-voz">Las voces: personas reales, y cada una suena distinta</h2>
     <div class="lv-prose">
      <p>Los libros los graban voluntarios, así que <strong>la calidad cambia de un libro a otro</strong> y, a veces, de un capítulo a otro. Hay lecturas excelentes y otras más irregulares, con más ruido de fondo o un ritmo menos natural.</p>
-     <p>En las <em>Leyendas</em> de Bécquer leen 11 personas distintas. Escucha a tres:</p>
+     <p>En las <em>Leyendas</em> de Bécquer leen once personas. Este es el reparto, con lo que lee cada una. Escucha a cuatro de ellas:</p>
     </div>
    </div>
-   <div class="lv-voices">
-    <div class="lv-voice" data-player="voz-elena">
-     <div class="lv-voice__head">
-      <span class="lv-av lv-av--e" aria-hidden="true"><b>E</b></span>
-      <span><b>Elena del Valle</b><small>«El monte de las ánimas» · 19&nbsp;min</small></span>
-      <button class="lv-play" type="button" data-play aria-label="Escuchar a Elena del Valle"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
-     </div>
-     <div class="lv-wave" data-wave data-seek aria-hidden="true"></div>
-     <p class="lv-voice__text" data-words>La noche de difuntos me despertó a no sé qué hora el doble de las campanas; su tañido monótono y eterno me trajo a las mientes esta tradición que oí hace poco en Soria.</p>
-    </div>
-    <div class="lv-voice" data-player="voz-vicente">
-     <div class="lv-voice__head">
-      <span class="lv-av lv-av--v" aria-hidden="true"><b>V</b></span>
-      <span><b>Vicente Cepeda</b><small>«El miserere» · 23&nbsp;min</small></span>
-      <button class="lv-play" type="button" data-play aria-label="Escuchar a Vicente Cepeda"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
-     </div>
-     <div class="lv-wave" data-wave data-seek aria-hidden="true"></div>
-     <p class="lv-voice__text" data-words>Hace algunos meses que, visitando la célebre abadía de Fitero y ocupándome en revolver algunos volúmenes de su abandonada biblioteca, descubrí en uno de sus rincones dos o tres cuadernos bastante antiguos, cubiertos de polvo y hasta comenzados a roer por los ratones.</p>
-    </div>
-    <div class="lv-voice" data-player="voz-rosa">
-     <div class="lv-voice__head">
-      <span class="lv-av lv-av--r" aria-hidden="true"><b>R</b></span>
-      <span><b>Rosacarmela</b><small>«Los ojos verdes» · 21&nbsp;min</small></span>
-      <button class="lv-play" type="button" data-play aria-label="Escuchar a Rosacarmela"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
-     </div>
-     <div class="lv-wave" data-wave data-seek aria-hidden="true"></div>
-     <p class="lv-voice__text" data-words>Hace mucho tiempo que tenía ganas de escribir cualquier cosa con este título. Hoy, que se me ha presentado ocasión, lo he puesto con letras grandes en la primera cuartilla de papel, y luego he dejado a capricho volar la pluma.</p>
-    </div>
-   </div>
-   <ul class="lv-tips" aria-label="Consejos para elegir voz" data-stagger>
+   <figure class="lv-cast" data-cast>
+    <figcaption class="lv-cast__h">Reparto de las <i>Leyendas</i></figcaption>
+    <ol class="lv-cast__list">
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>Gabriela Cowan</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">7 capítulos<small>4&nbsp;h 32&nbsp;min</small></span></li>
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>frauka</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">4 capítulos<small>1&nbsp;h 45&nbsp;min</small></span></li>
+     <li class="has-clip"><span class="lv-cast__p"><button class="lv-cast__play" type="button" data-cast-clip="voz-rosa" aria-label="Escuchar a Rosacarmela en «Los ojos verdes»"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button></span><span class="lv-cast__who"><b>Rosacarmela</b><small>«Los ojos verdes»</small></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">2 capítulos<small>48&nbsp;min</small></span></li>
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>Legentis</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">2 capítulos<small>39&nbsp;min</small></span></li>
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>Marial</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>30&nbsp;min</small></span></li>
+     <li class="has-clip"><span class="lv-cast__p"><button class="lv-cast__play" type="button" data-cast-clip="hero-omar" aria-label="Escuchar a Omar en «El rayo de luna»"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button></span><span class="lv-cast__who"><b>Omar</b><small>«El rayo de luna»</small></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>25&nbsp;min</small></span></li>
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>Aldariel</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>23&nbsp;min</small></span></li>
+     <li class="has-clip"><span class="lv-cast__p"><button class="lv-cast__play" type="button" data-cast-clip="voz-vicente" aria-label="Escuchar a Vicente Cepeda en «El miserere»"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button></span><span class="lv-cast__who"><b>Vicente Cepeda</b><small>«El miserere»</small></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>23&nbsp;min</small></span></li>
+     <li class="has-clip"><span class="lv-cast__p"><button class="lv-cast__play" type="button" data-cast-clip="voz-elena" aria-label="Escuchar a Elena del Valle en «El monte de las ánimas»"><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg></button></span><span class="lv-cast__who"><b>Elena del Valle</b><small>«El monte de las ánimas»</small></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>19&nbsp;min</small></span></li>
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>DreamVoz</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>12&nbsp;min</small></span></li>
+     <li><span class="lv-cast__p"></span><span class="lv-cast__who"><b>sabandija</b></span><span class="lv-cast__lead" aria-hidden="true"></span><span class="lv-cast__n">1 capítulo<small>9&nbsp;min</small></span></li>
+    </ol>
+    <p class="lv-cast__note">Datos de la ficha de las <i>Leyendas</i> en librivox.org. Allí, cada nombre lleva a todo lo que ha grabado ese voluntario.</p>
+   </figure>
+   <ul class="lv-tips" aria-label="Consejos para elegir voz">
     <li><svg aria-hidden="true"><use href="#i-headphones"/></svg><span><b>Escucha un minuto</b> antes de empezar un libro largo.</span></li>
     <li><svg aria-hidden="true"><use href="#i-books"/></svg><span><b>Si hay varias versiones,</b> quédate con la voz que más te guste.</span></li>
     <li><svg aria-hidden="true"><use href="#i-user"/></svg><span><b>¿La misma voz de principio a fin?</b> Busca lecturas <span lang="en">«Solo»</span>.</span></li>
@@ -452,7 +538,7 @@
     </div>
     <div class="lv-col">
      <div class="lv-kit">
-      <p class="lv-kit__k">Lo que necesitas</p>
+      <h3 class="lv-kit__h">Lo que necesitas</h3>
       <ul>
        <li><svg aria-hidden="true"><use href="#i-laptop"/></svg>Un ordenador</li>
        <li><svg aria-hidden="true"><use href="#i-mic"/></svg>Un micrófono sencillo</li>
@@ -474,7 +560,7 @@
    <div class="lv-pc">
     <div class="pro">
      <h3><i><svg aria-hidden="true"><use href="#i-check"/></svg></i>Lo mejor</h3>
-     <ul data-stagger>
+     <ul>
       <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Gratis de verdad y legal:</b> sin anuncios, sin registro y sin cuotas.</span></li>
       <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Voces humanas,</b> no sintéticas.</span></li>
       <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Los archivos son tuyos:</b> MP3 y M4B sin DRM, para siempre.</span></li>
@@ -485,7 +571,7 @@
     </div>
     <div class="con">
      <h3><i><svg aria-hidden="true"><use href="#i-minus"/></svg></i>Lo peor</h3>
-     <ul data-stagger>
+     <ul>
       <li><svg aria-hidden="true"><use href="#i-minus"/></svg><span><b>Solo hay clásicos:</b> nada de novedades ni superventas.</span></li>
       <li><svg aria-hidden="true"><use href="#i-minus"/></svg><span><b>La calidad de las voces varía mucho</b>, de un libro a otro y a veces de un capítulo a otro.</span></li>
       <li><svg aria-hidden="true"><use href="#i-minus"/></svg><span><b>La web está en inglés</b> y se ha quedado algo anticuada.</span></li>
@@ -530,7 +616,7 @@
    <div class="lv-score">
     <div class="lv-score__l">
      <div class="lv-ring" data-ring="7.5" role="img" aria-label="Nota global: 7,5 sobre 10">
-      <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="50" pathLength="100"/><circle class="val" cx="60" cy="60" r="50" pathLength="100" style="--v:7.5"/></svg>
+      <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="50" pathLength="100"/><circle class="val" cx="60" cy="60" r="50" pathLength="100"/></svg>
       <div class="lv-ring__n" aria-hidden="true"><span><b>7,5</b><small>nota global</small></span></div>
      </div>
      <p class="lv-score__cap">La media de los cinco apartados</p>
@@ -569,8 +655,8 @@
   <!-- Cómo lo probamos (compacto) -->
   <section class="lv-method" id="fuentes" aria-labelledby="h-fue">
    <h2 class="lv-method__h" id="h-fue">Cómo lo probamos</h2>
-   <p>Usamos LibriVox el 12 de octubre de 2026 en la web, sin registrarnos: recorrimos el catálogo en español, buscamos varios clásicos, escuchamos y descargamos capítulos de las <em>Leyendas</em> de Bécquer, revisamos sus formatos de descarga y su canal RSS, y contamos el catálogo con su API pública (22.406 proyectos; 564 audiolibros en español). Los audios de esta página son grabaciones de LibriVox, de dominio público, leídas por Omar, Elena del Valle, Vicente Cepeda y Rosacarmela.</p>
-   <p class="lv-method__src"><span>Fuentes:</span> <a href="https://librivox.org/pages/about-librivox/" target="_blank" rel="noopener noreferrer">qué es LibriVox</a> · <a href="https://librivox.org/pages/public-domain/" target="_blank" rel="noopener noreferrer">dominio público</a> · <a href="https://librivox.org/pages/about-listening-to-librivox/" target="_blank" rel="noopener noreferrer">cómo escuchar</a> · <a href="https://wiki.librivox.org/index.php/How_to_Listen" target="_blank" rel="noopener noreferrer">guía de escucha</a> · <a href="https://librivox.org/pages/volunteer-for-librivox/" target="_blank" rel="noopener noreferrer">ser voluntario</a> · <a href="https://librivox.org/2025/08/01/happy-20th-anniversary-librivox/" target="_blank" rel="noopener noreferrer">20.º aniversario</a> · <a href="https://librivox.org/2026/09/16/librivox-api-update/" target="_blank" rel="noopener noreferrer">canal oficial</a> · <a href="https://librivox.org/api/info" target="_blank" rel="noopener noreferrer">API</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930" target="_blank" rel="noopener noreferrer">Ley de Propiedad Intelectual</a> · <a href="https://apps.apple.com/es/app/audiolibros-librivox/id596159212" target="_blank" rel="noopener noreferrer">App Store (España)</a> · <a href="/es/blog/criterios-editoriales/">cómo hacemos las reseñas</a></p>
+   <p>Usamos LibriVox el 12 de octubre de 2026 en la web, sin registrarnos: recorrimos el catálogo en español, buscamos varios clásicos, escuchamos y descargamos capítulos de las <em>Leyendas</em> de Bécquer, revisamos sus formatos de descarga y su canal RSS, y contamos el catálogo con su API pública (22.406 proyectos; 564 audiolibros en español). Los audios de esta página son grabaciones de LibriVox, de dominio público, leídas por Omar, Elena del Valle, Vicente Cepeda y Rosacarmela. Las fichas, el catálogo y la app de pódcasts de esta página son recreaciones con datos reales.</p>
+   <p class="lv-method__src"><span>Fuentes:</span> <a href="https://librivox.org/pages/about-librivox/" target="_blank" rel="noopener noreferrer">qué es LibriVox</a>, <a href="https://librivox.org/pages/public-domain/" target="_blank" rel="noopener noreferrer">dominio público</a>, <a href="https://librivox.org/pages/about-listening-to-librivox/" target="_blank" rel="noopener noreferrer">cómo escuchar</a>, <a href="https://wiki.librivox.org/index.php/How_to_Listen" target="_blank" rel="noopener noreferrer">guía de escucha</a>, <a href="https://librivox.org/pages/volunteer-for-librivox/" target="_blank" rel="noopener noreferrer">ser voluntario</a>, <a href="https://librivox.org/2025/08/01/happy-20th-anniversary-librivox/" target="_blank" rel="noopener noreferrer">20.º aniversario</a>, <a href="https://librivox.org/2026/09/16/librivox-api-update/" target="_blank" rel="noopener noreferrer">canal oficial</a>, <a href="https://librivox.org/api/info" target="_blank" rel="noopener noreferrer">API</a>, <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930" target="_blank" rel="noopener noreferrer">Ley de Propiedad Intelectual</a>, <a href="https://apps.apple.com/es/app/audiolibros-librivox/id596159212" target="_blank" rel="noopener noreferrer">App Store (España)</a> y <a href="/es/blog/criterios-editoriales/">cómo hacemos las reseñas</a>.</p>
    <p class="lv-method__aff">SonorBooks no tiene ninguna relación comercial con LibriVox: es gratis y no recibimos nada si lo usas. Las capturas de librivox.org se usan con fines de reseña.</p>
   </section>
  </article>
@@ -657,7 +743,7 @@
 </section>
 
 <div class="lv-dock" data-dock role="complementary" aria-label="Escuchar LibriVox gratis">
- <p class="lv-dock__t"><span class="lv-dock__k">LibriVox</span> <b>100&nbsp;% gratis</b> <span class="lv-dock__s">sin registro</span></p>
+ <p class="lv-dock__t"><span class="lv-dock__k">LibriVox</span> <b>100&nbsp;% gratis</b> <span class="lv-dock__s">y sin registro</span></p>
  <a class="lv-btn lv-btn--yellow" data-cta="lv-review-dock" target="_blank" href="{{SALIR}}" data-platform="librivox" data-link-language="es" data-platform-destination="https://librivox.org/" rel="noopener noreferrer">Escuchar gratis</a>
  <button class="lv-dock__x" type="button" data-dock-close aria-label="Cerrar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
 </div>

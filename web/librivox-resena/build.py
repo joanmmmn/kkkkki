@@ -11,9 +11,8 @@
 Uso: python3 web/librivox-resena/build.py [--yt ID_DE_YOUTUBE [--yt-fecha AAAA-MM-DD]]
 Los audios (media/audio) son grabaciones de LibriVox, de dominio público (tools/web_lv_audio.py); las capturas y
 portadas salen de tools/web_lv_media.py. site/ tiene la cabecera y el pie del sitio (los mismos que ElevenReader)."""
-import hashlib, html, json, os, re, shutil, subprocess, sys
+import hashlib, html, json, os, re, shutil, sys
 from urllib.parse import quote
-import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -43,32 +42,39 @@ def read(p):
     return open(p, encoding='utf-8').read()
 
 
-def peaks(mp3, n=64):
-    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', mp3, '-ac', '1', '-ar', '8000', '-f', 'f32le', '-'], capture_output=True, check=True).stdout
-    a = np.abs(np.frombuffer(raw, dtype=np.float32))
-    v = np.array([float(np.sqrt(np.mean(x ** 2))) if len(x) else 0 for x in np.array_split(a, n)])
-    v = np.sqrt(v / (v.max() or 1))
-    return [round(float(x), 2) for x in v]
+
+def words(txt):
+    return len(html.unescape(re.sub(r'<[^>]+>', '', txt)).split())
 
 
-def players(page):
-    """Cada reproductor de la página con el número de palabras de su texto (deben coincidir con los tiempos)."""
+def clips(page):
+    """Los audios que usa la página y el número de palabras del texto de cada uno (deben coincidir con los tiempos).
+    - data-clip="…" data-text="…": los capítulos de la ficha de la portada
+    - data-player="…" … data-words>…</p>: el aviso de LibriVox
+    - data-cast-clip="…": el reparto (el mismo audio, sin texto)"""
     out = {}
+    for m in re.finditer(r'data-clip="([\w-]+)"[^>]*?data-text="([^"]*)"', page):
+        out[m.group(1)] = words(m.group(2))
     for m in re.finditer(r'data-player="([\w-]+)"(.*?)data-words>(.*?)</p>', page, re.S):
-        out.setdefault(m.group(1), len(html.unescape(re.sub(r'<[^>]+>', '', m.group(3))).split()))
+        out.setdefault(m.group(1), words(m.group(3)))
+    for m in re.finditer(r'data-cast-clip="([\w-]+)"', page):
+        assert m.group(1) in out, f'el reparto usa {m.group(1)}, que no está en la portada ni en el aviso'
+    # El texto que se ve en la portada antes de pulsar nada es el del capítulo marcado
+    act = re.search(r'class="lvx-row is-active"[^>]*?data-text="([^"]*)"', page)
+    shown = re.search(r'class="lvx-read__p" data-words>(.*?)</p>', page, re.S)
+    assert act and shown and html.unescape(act.group(1)).split() == html.unescape(shown.group(1)).split(), 'el texto de la portada no es el del capítulo marcado'
     return out
 
 
 def data_json(a, page):
     t = json.load(open(os.path.join(MEDIA, 'audio', 'timings.json'), encoding='utf-8'))
-    clips, pk, audio = {}, {}, {}
-    for cid, n in players(page).items():
-        words = t[cid]['words']
-        assert len(words) == n, f'{cid}: {len(words)} palabras con tiempo y {n} en el texto de la página'
-        clips[cid] = {'dur': t[cid]['dur'], 'words': [[w[0], w[1]] for w in words]}
-        pk[cid] = peaks(os.path.join(MEDIA, 'audio', cid + '.mp3'))
+    out, audio = {}, {}
+    for cid, n in clips(page).items():
+        w = t[cid]['words']
+        assert len(w) == n, f'{cid}: {len(w)} palabras con tiempo y {n} en el texto de la página'
+        out[cid] = {'dur': t[cid]['dur'], 'words': [[x[0], x[1]] for x in w]}
         audio[cid] = f'{a}/media/audio/{cid}.mp3'
-    return json.dumps({'clips': clips, 'peaks': pk, 'audio': audio}, separators=(',', ':'))
+    return json.dumps({'clips': out, 'audio': audio}, separators=(',', ':'))
 
 
 def jsonld():
@@ -107,6 +113,8 @@ def jsonld():
 
 
 VIDEO_DURATION = 'PT4M16S'  # duración del vídeo final (4:16)
+# Vídeo ligero (≤ 15 MB) para que la vista previa lo reproduzca sin YouTube; en producción se usa el de YouTube.
+VIDEO_PREVIEW = os.path.join(ROOT, 'deliverables', 'librivox', 'SonorBooks_LibriVox_Guia_web.mp4')
 
 
 def media_files():
@@ -174,6 +182,10 @@ def build_preview():
     body = re.sub(r'/assets/blog/editorial/([\w.-]+)', lambda m: './site/' + (m.group(1) if os.path.exists(os.path.join(SITE, m.group(1))) else '_imagen-del-blog.webp'), body)
     body = re.sub(r'href="/(?!/)', 'href="https://sonorbooks.com/', body)
     body = re.sub(r'<script type="module" src="[^"]*lv-resena\.js[^"]*"></script>', '', body)
+    if os.path.exists(VIDEO_PREVIEW):  # el vídeo se ve en la propia página (aún no está en YouTube)
+        body = re.sub(r'<a class="lv-video" data-yt="[^"]*".*?</a>',
+                      '<div class="lv-video"><video controls playsinline preload="metadata" poster="./media/librivox-resena-video.webp" '
+                      'src="./media/video/librivox-guia.mp4" title="LibriVox: la guía en vídeo de SonorBooks"></video></div>', body, count=1, flags=re.S)
     css = read(os.path.join(SITE, 'chrome.css')) + read(os.path.join(SITE, 'header-layout.css')) + read(os.path.join(SITE, 'chrome_inline.css'))
     css += ('\nhtml{scroll-behavior:smooth}body{margin:0;background:#fff;color:#101010;font-family:"Merriweather",Georgia,serif}'
             'body .sb-footer{margin-top:0}.sb-menu,.sb-account{font-family:"Ubuntu",Arial,sans-serif}'
@@ -192,6 +204,9 @@ def build_preview():
     assert '{{' not in body, re.findall(r'\{\{[^}]*\}\}', body)[:3]
     open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(head + body)
     copy_media(os.path.join(out, 'media'))
+    if os.path.exists(VIDEO_PREVIEW):
+        os.makedirs(os.path.join(out, 'media', 'video'))
+        shutil.copy(VIDEO_PREVIEW, os.path.join(out, 'media', 'video', 'librivox-guia.mp4'))
     for f in os.listdir(SITE):
         if f.endswith(('.png', '.webp')):
             shutil.copy(os.path.join(SITE, f), os.path.join(out, 'site', f))

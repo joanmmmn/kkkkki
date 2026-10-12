@@ -1,5 +1,6 @@
 // LibriVox · reseña SonorBooks — interacciones de la página. Sin dependencias.
-// Todo funciona sin JavaScript (la página se ve completa); esto añade el audio, el resaltado y las animaciones.
+// Todo se ve sin JavaScript (la página está completa en el HTML); esto añade el audio, el texto que se lee al ritmo de la voz,
+// el catálogo que se puede probar, el explorador de descargas y las animaciones.
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -24,159 +25,239 @@ const armOnApproach = (el, arm, play, { threshold = 0.35 } = {}) => {
   }, { rootMargin: '0px 0px 35% 0px' });
   near.observe(el);
 };
+const debounce = (fn, ms = 120) => { let t = 0; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 
-/* ---------- Reproductores: la voz del voluntario con el texto resaltado palabra a palabra ---------- */
-const players = [];
-const wrapWords = (p) => {
-  const words = p.textContent.trim().split(/\s+/);
-  p.textContent = '';
-  return words.map((w, i) => {
-    const s = document.createElement('span');
-    s.className = 'w'; s.textContent = w;
-    p.append(s);
-    if (i < words.length - 1) p.append(' ');
-    return s;
-  });
-};
-class Player {
-  constructor(root) {
-    this.root = root; this.id = root.dataset.player;
-    this.clip = DATA.clips?.[this.id];
-    if (!this.clip) return;
-    this.para = $('[data-words]', root);
-    this.words = this.para ? wrapWords(this.para) : [];
-    this.n = Math.min(this.words.length, this.clip.words.length);
-    this.btn = $('[data-play]', root); this.label = $('[data-listen-label]', root);
-    this.fill = $('.lv-book__bar span', root); this.timeEl = $('[data-time]', root);
-    this.av = $('.lv-av', root); this.demo = root.matches('[data-demo]');
-    // Cápsula amarilla que se desliza de palabra en palabra
-    this.glide = $('.lv-glide', root);
-    if (!this.glide && this.para) { this.glide = Object.assign(document.createElement('span'), { className: 'lv-glide' }); this.glide.setAttribute('aria-hidden', 'true'); this.para.before(this.glide); }
-    if (this.demo) root.classList.add('is-live');
-    this.idx = -2; this.playing = false;
-    this.wave = $('[data-wave]', root);
-    if (this.wave) this.drawWave();
-    this.btn?.addEventListener('click', () => this.toggle());
-    $$('[data-seek]', root).forEach((el) => el.addEventListener('click', (e) => {
-      const r = el.getBoundingClientRect();
-      this.seek(((e.clientX - r.left) / r.width) * this.clip.dur, true);
-    }));
-    this.render(0, true);
-    addEventListener('resize', () => { const i = this.idx; this.idx = -2; this.render(i >= 0 ? this.clip.words[i][0] : 0, i < 0, this.previewing); });
-    if (this.demo) this.preview();
-    players.push(this);
-  }
-  get audio() {
-    if (!this.a) {
-      this.a = new Audio(DATA.audio[this.id]);
-      this.a.preload = 'auto';
-      this.a.addEventListener('ended', () => { this.pause(); this.a.currentTime = 0; this.render(0, true); if (this.label) this.label.textContent = 'Escuchar otra vez'; });
+/* ---------- Audio: un solo sonido a la vez en toda la página ---------- */
+// Cada bloque que suena (la ficha de la portada, el aviso, el reparto) es un «dueño» con started/paused/ended/tick.
+const hub = (() => {
+  const cache = {};
+  let cur = null, raf = 0;
+  const get = (id) => {
+    if (!cache[id]) {
+      const a = new Audio(DATA.audio?.[id]);
+      a.preload = 'auto';
+      a.addEventListener('ended', () => {
+        if (!cur || cur.a !== a) return;
+        const o = cur.owner; cancelAnimationFrame(raf); cur = null; a.currentTime = 0; o.ended?.();
+      });
+      cache[id] = a;
     }
-    return this.a;
+    return cache[id];
+  };
+  const loop = () => { if (!cur || cur.a.paused) return; cur.owner.tick?.(cur.a.currentTime); raf = requestAnimationFrame(loop); };
+  const api = {
+    play(id, owner, at = 0) {
+      if (cur && (cur.owner !== owner || cur.id !== id)) api.stop();
+      const a = get(id);
+      try { a.currentTime = at; } catch { /* aún sin datos: empieza desde el principio */ }
+      cur = { id, a, owner };
+      a.play().then(() => {
+        if (!cur || cur.a !== a) return;
+        owner.started?.(); cancelAnimationFrame(raf); loop();
+      }).catch(() => { if (cur && cur.a === a) cur = null; owner.paused?.(); });
+    },
+    pause(owner) {
+      if (!cur || (owner && cur.owner !== owner)) return;
+      cur.a.pause(); cancelAnimationFrame(raf); cur.owner.paused?.();
+    },
+    stop() {
+      if (!cur) return;
+      const { a, owner } = cur; a.pause(); cancelAnimationFrame(raf); owner.paused?.(); cur = null;
+    },
+    playing(owner) { return !!cur && cur.owner === owner && !cur.a.paused; },
+    time(id) { return cache[id]?.currentTime || 0; },
+  };
+  return api;
+})();
+document.addEventListener('visibilitychange', () => { if (document.hidden) hub.stop(); });
+
+/* ---------- Texto que se lee al ritmo de la voz: la tinta aparece y un subrayado va de palabra en palabra ---------- */
+class Karaoke {
+  constructor(p) { this.p = p; this.u = Object.assign(document.createElement('span'), { className: 'lvx-u' }); this.u.setAttribute('aria-hidden', 'true'); }
+  set(text, times) {
+    const words = text.trim().split(/\s+/);
+    this.p.textContent = '';
+    this.words = words.map((w, i) => {
+      const s = document.createElement('span');
+      s.className = 'w'; s.textContent = w;
+      this.p.append(s);
+      if (i < words.length - 1) this.p.append(' ');
+      return s;
+    });
+    this.p.append(this.u);
+    this.times = times || []; this.idx = -2; this.uy = undefined;
   }
-  toggle() { this.playing ? this.pause() : this.play(); }
-  analyser() {
-    if (!this.av || this.an !== undefined) return;
-    this.an = null;
-    try {
-      const Ctx = window.AudioContext || window.webkitAudioContext;
-      Player.ctx = Player.ctx || new Ctx();
-      const src = Player.ctx.createMediaElementSource(this.audio);
-      const an = Player.ctx.createAnalyser(); an.fftSize = 512;
-      src.connect(an); an.connect(Player.ctx.destination);
-      this.an = an; this.buf = new Uint8Array(an.fftSize);
-    } catch { this.an = null; }
+  render(t, reset = false) {
+    let idx = -1;
+    if (!reset) for (let i = 0; i < this.words.length && i < this.times.length; i++) { if (t >= this.times[i][0] - 0.02) idx = i; else break; }
+    if (idx === this.idx) return;
+    this.words.forEach((w, i) => { w.classList.toggle('is-on', i === idx); w.classList.toggle('is-past', i < idx); });
+    this.idx = idx;
+    this.move(idx);
   }
-  play() {
-    players.forEach((p) => p !== this && p.pause());
-    this.previewing = false; cancelAnimationFrame(this.praf);
-    const a = this.audio;
-    this.analyser();
-    if (Player.ctx?.state === 'suspended') Player.ctx.resume();
-    a.play().then(() => {
-      this.playing = true; this.root.classList.add('is-playing');
-      this.btn?.setAttribute('aria-pressed', 'true'); if (this.label) this.label.textContent = 'Pausa';
-      const tick = () => {
-        this.render(a.currentTime);
-        if (this.an) {
-          this.an.getByteTimeDomainData(this.buf);
-          let sum = 0; for (const v of this.buf) { const d = (v - 128) / 128; sum += d * d; }
-          this.av.style.setProperty('--amp', (1 + Math.min(0.22, Math.sqrt(sum / this.buf.length) * 1.8)).toFixed(3));
-        }
-        if (this.playing) this.raf = requestAnimationFrame(tick);
-      };
-      tick();
-    }).catch(() => { /* el navegador ha bloqueado el audio */ });
+  refresh() { const i = this.idx; this.idx = -2; this.uy = undefined; if (i >= 0) { this.idx = i; this.move(i); } }
+  move(idx) {
+    const u = this.u;
+    if (idx < 0 || !this.words[idx]) { u.classList.remove('is-on'); this.uy = undefined; return; }
+    const base = this.p.getBoundingClientRect(), r = this.words[idx].getBoundingClientRect();
+    const x = r.left - base.left, y = r.bottom - base.top - 3;
+    const jump = this.uy === undefined || Math.abs(y - this.uy) > 2;
+    u.classList.toggle('no-anim', jump);
+    u.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+    u.style.width = `${r.width.toFixed(1)}px`;
+    u.classList.add('is-on'); this.uy = y;
   }
-  pause() {
-    if (!this.a) return;
-    this.a.pause(); this.playing = false; cancelAnimationFrame(this.raf);
-    this.root.classList.remove('is-playing'); this.btn?.setAttribute('aria-pressed', 'false');
-    if (this.label) this.label.textContent = 'Escuchar';
-    this.av?.style.setProperty('--amp', '1');
-  }
-  seek(t, play = false) {
-    const a = this.audio;
-    a.currentTime = Math.min(Math.max(0, t), this.clip.dur - 0.05);
-    this.render(a.currentTime);
-    if (play && !this.playing) this.play();
-  }
-  // Vista previa sin sonido en la portada: la primera frase se «lee» en bucle hasta que pulsas Escuchar.
-  preview() {
-    if (reduced) return;
-    const W = this.clip.words, last = Math.min(16, this.n - 1);
-    const endT = W[last][1] + 0.5, total = endT + 1.9;
+}
+
+/* ---------- Portada: la ficha de las «Leyendas»; cada capítulo, una voz ---------- */
+(() => {
+  const book = $('[data-book]');
+  const clips = DATA.clips || {};
+  if (!book || !Object.keys(clips).length) return;
+  const rows = $$('.lvx-row', book), read = $('[data-read]', book), p = $('.lvx-read__p', read);
+  const btn = $('[data-read-play]', book), timeEl = $('[data-read-time]', book), seek = $('[data-seek]', book), fill = $('span', seek);
+  const nEl = $('[data-read-n]', book), titleEl = $('[data-read-title]', book), readerEl = $('[data-read-reader]', book);
+  const kar = new Karaoke(p);
+  let cur = rows.find((r) => r.classList.contains('is-active')) || rows[0];
+  const pos = {};
+  let last = 0, previewing = false, praf = 0;
+  const clip = () => clips[cur.dataset.clip];
+  const label = (r, verb = 'Escuchar') => `${verb} «${r.dataset.title}», leído por ${r.dataset.reader}`;
+  const show = (t) => {
+    last = t;
+    const c = clip();
+    fill.style.width = `${Math.min(1, t / c.dur) * 100}%`;
+    timeEl.textContent = t > 0.05 ? `${fmt(t)} / ${fmt(c.dur)}` : fmt(c.dur);
+  };
+  const owner = {
+    started() {
+      book.classList.add('is-playing'); cur.classList.add('is-playing'); read.classList.add('is-live');
+      cur.setAttribute('aria-pressed', 'true'); btn.setAttribute('aria-label', label(cur, 'Pausar'));
+    },
+    paused() {
+      pos[cur.dataset.clip] = hub.time(cur.dataset.clip);
+      book.classList.remove('is-playing'); cur.classList.remove('is-playing');
+      cur.setAttribute('aria-pressed', 'false'); btn.setAttribute('aria-label', label(cur));
+    },
+    ended() {
+      pos[cur.dataset.clip] = 0;
+      book.classList.remove('is-playing'); cur.classList.remove('is-playing'); read.classList.remove('is-live');
+      cur.setAttribute('aria-pressed', 'false'); btn.setAttribute('aria-label', label(cur));
+      kar.render(0, true); show(0);
+    },
+    tick(t) { kar.render(t); show(t); },
+  };
+  const stopPreview = () => {
+    if (!previewing) return;
+    previewing = false; cancelAnimationFrame(praf); kar.render(0, true); read.classList.remove('is-live');
+  };
+  const select = (row) => {
+    rows.forEach((r) => { r.classList.toggle('is-active', r === row); r.classList.remove('is-playing'); r.setAttribute('aria-pressed', 'false'); });
+    cur = row;
+    nEl.textContent = row.dataset.n; titleEl.textContent = row.dataset.title; readerEl.textContent = row.dataset.reader;
+    kar.set(row.dataset.text, clip().words);
+    read.classList.remove('is-live');
+    btn.setAttribute('aria-label', label(row));
+    show(pos[row.dataset.clip] || 0);
+  };
+  const play = () => {
+    stopPreview();
+    const id = cur.dataset.clip, at = pos[id] || 0;
+    read.classList.add('is-live'); kar.render(at, at <= 0);
+    hub.play(id, owner, at);
+  };
+  rows.forEach((r) => {
+    r.setAttribute('aria-pressed', 'false');
+    r.addEventListener('click', () => {
+      if (r === cur && hub.playing(owner)) { hub.pause(owner); return; }
+      if (r !== cur) { if (hub.playing(owner)) hub.stop(); stopPreview(); select(r); }
+      play();
+    });
+  });
+  btn.addEventListener('click', () => (hub.playing(owner) ? hub.pause(owner) : play()));
+  seek.addEventListener('click', (e) => {
+    const r = seek.getBoundingClientRect(), c = clip();
+    const t = Math.max(0, Math.min(c.dur - 0.05, ((e.clientX - r.left) / r.width) * c.dur));
+    pos[cur.dataset.clip] = t; stopPreview(); read.classList.add('is-live'); kar.render(t); show(t);
+    hub.play(cur.dataset.clip, owner, t);
+  });
+  // La caja del texto mide lo que el más largo de los cuatro: al cambiar de capítulo, nada se mueve.
+  const measure = () => {
+    const probe = p.cloneNode(false);
+    probe.removeAttribute('data-words');
+    Object.assign(probe.style, { position: 'absolute', visibility: 'hidden', left: '0', top: '0', width: `${p.clientWidth}px`, minHeight: '0' });
+    read.append(probe);
+    let h = 0;
+    rows.forEach((r) => { probe.textContent = r.dataset.text; h = Math.max(h, probe.getBoundingClientRect().height); });
+    probe.remove();
+    p.style.setProperty('--read-min', `${Math.ceil(h)}px`);
+    kar.refresh();
+  };
+  kar.set(p.textContent, clip().words);
+  show(0);
+  measure();
+  document.fonts?.ready.then(measure);
+  addEventListener('resize', debounce(measure));
+  // Vista previa sin sonido: la primera frase se lee sola, en bucle, hasta que pulsas un capítulo.
+  if (!reduced) {
+    const W = clip().words, endT = W[Math.min(16, W.length - 1)][1] + 0.5, total = endT + 1.9;
     let t0 = null, visible = true;
-    if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(this.root);
-    this.previewing = true;
+    if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(book);
+    previewing = true; read.classList.add('is-live');
     const loop = (now) => {
-      if (!this.previewing) return;
+      if (!previewing) return;
       if (t0 === null) t0 = now + 900;
       let t = (now - t0) / 1000;
       if (t > total) { t0 = now; t = 0; }
-      if (visible && t >= 0) {
-        if (t <= endT) this.render(t, false, true);
-        else if (t > endT + 1.2) this.render(0, true, true);
-      }
-      this.praf = requestAnimationFrame(loop);
+      if (visible && t >= 0) { if (t <= endT) kar.render(t); else if (t > endT + 1.2) kar.render(0, true); }
+      praf = requestAnimationFrame(loop);
     };
-    this.praf = requestAnimationFrame(loop);
+    praf = requestAnimationFrame(loop);
   }
-  moveGlide(idx) {
-    const g = this.glide;
-    if (!g) return;
-    if (idx < 0 || !this.words[idx]) { g.classList.remove('is-on'); this.gy = undefined; return; }
-    const base = g.offsetParent?.getBoundingClientRect(), r = this.words[idx].getBoundingClientRect();
-    if (!base) return;
-    const x = r.left - base.left - 4, y = r.top - base.top - 1, wd = r.width + 8, h = r.height + 2;
-    const jump = this.gy === undefined || Math.abs(y - this.gy) > 2;
-    g.classList.toggle('no-anim', jump);
-    g.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
-    g.style.width = `${wd.toFixed(1)}px`; g.style.height = `${h.toFixed(1)}px`;
-    g.classList.add('is-on'); this.gy = y;
-  }
-  render(t, reset = false, preview = false) {
-    const W = this.clip.words;
-    let idx = -1;
-    if (!reset) for (let i = 0; i < this.n; i++) { if (t >= W[i][0] - 0.02) idx = i; else break; }
-    if (idx !== this.idx) {
-      this.words.forEach((w, i) => { w.classList.toggle('is-on', i === idx); w.classList.toggle('is-past', i < idx); });
-      this.idx = idx;
-      this.moveGlide(idx);
-    }
-    if (preview) return;
-    const p = Math.min(1, t / this.clip.dur);
-    if (this.fill) this.fill.style.width = `${p * 100}%`;
-    if (this.timeEl) this.timeEl.textContent = this.playing || t > 0.01 ? `${fmt(t)} / ${fmt(this.clip.dur)}` : (this.demo ? '' : `0:00 / ${fmt(this.clip.dur)}`);
-    if (this.bars) { const k = Math.round(p * this.bars.length); this.bars.forEach((b, i) => b.classList.toggle('is-past', i < k)); }
-  }
-  drawWave() {
-    const peaks = DATA.peaks?.[this.id] || [];
-    this.bars = peaks.map((v) => { const i = document.createElement('i'); i.style.height = `${Math.max(10, v * 100)}%`; this.wave.append(i); return i; });
-  }
-}
-$$('[data-player]').forEach((el) => new Player(el));
-document.addEventListener('visibilitychange', () => { if (document.hidden) players.forEach((p) => p.pause()); });
+})();
+
+/* ---------- El aviso de LibriVox, que se escucha con su texto ---------- */
+$$('[data-player]').forEach((root) => {
+  const id = root.dataset.player, c = DATA.clips?.[id];
+  if (!c) return;
+  const p = $('[data-words]', root), btn = $('[data-play]', root), timeEl = $('[data-time]', root), seek = $('[data-seek]', root), fill = $('span', seek);
+  const kar = new Karaoke(p);
+  kar.set(p.textContent, c.words);
+  let pos = 0;
+  const show = (t) => { fill.style.width = `${Math.min(1, t / c.dur) * 100}%`; timeEl.textContent = t > 0.05 ? `${fmt(t)} / ${fmt(c.dur)}` : fmt(c.dur); };
+  const owner = {
+    started() { root.classList.add('is-playing', 'is-live'); btn.setAttribute('aria-pressed', 'true'); },
+    paused() { pos = hub.time(id); root.classList.remove('is-playing'); btn.setAttribute('aria-pressed', 'false'); },
+    ended() { pos = 0; root.classList.remove('is-playing', 'is-live'); btn.setAttribute('aria-pressed', 'false'); kar.render(0, true); show(0); },
+    tick(t) { kar.render(t); show(t); },
+  };
+  btn.addEventListener('click', () => {
+    if (hub.playing(owner)) { hub.pause(owner); return; }
+    root.classList.add('is-live'); kar.render(pos, pos <= 0); hub.play(id, owner, pos);
+  });
+  seek.addEventListener('click', (e) => {
+    const r = seek.getBoundingClientRect();
+    pos = Math.max(0, Math.min(c.dur - 0.05, ((e.clientX - r.left) / r.width) * c.dur));
+    root.classList.add('is-live'); kar.render(pos); show(pos); hub.play(id, owner, pos);
+  });
+  addEventListener('resize', debounce(() => kar.refresh()));
+  show(0);
+});
+
+/* ---------- El reparto: cuatro voces que se escuchan ---------- */
+$$('[data-cast-clip]').forEach((btn) => {
+  const id = btn.dataset.castClip, li = btn.closest('li'), c = DATA.clips?.[id];
+  if (!c || !li) return;
+  let pos = 0;
+  btn.setAttribute('aria-pressed', 'false');
+  const owner = {
+    started() { li.classList.add('is-playing'); btn.setAttribute('aria-pressed', 'true'); },
+    paused() { pos = hub.time(id); li.classList.remove('is-playing'); btn.setAttribute('aria-pressed', 'false'); },
+    ended() { pos = 0; li.classList.remove('is-playing'); btn.setAttribute('aria-pressed', 'false'); li.style.setProperty('--p', '0'); },
+    tick(t) { li.style.setProperty('--p', Math.min(1, t / c.dur).toFixed(4)); },
+  };
+  btn.addEventListener('click', () => (hub.playing(owner) ? hub.pause(owner) : hub.play(id, owner, pos)));
+});
 
 /* ---------- Pestañas (el móvil) ---------- */
 $$('[data-tabs]').forEach((box) => {
@@ -218,23 +299,139 @@ $$('[data-copy]').forEach((box) => {
   });
 });
 
-/* ---------- Revelado al hacer scroll (solo desplazamiento: el contenido nunca se oculta) ---------- */
-$$('[data-reveal]').forEach((el) => armOnApproach(el, () => el.classList.add('is-pending'), () => { el.classList.add('is-in'); el.classList.remove('is-pending'); }, { threshold: 0.15 }));
-$$('[data-stagger]').forEach((list) => {
-  const items = [...list.children];
-  armOnApproach(list, () => items.forEach((li, i) => { li.classList.add('is-pending'); li.style.transitionDelay = `${i * 70}ms`; }),
-    () => items.forEach((li) => li.classList.remove('is-pending')), { threshold: 0.15 });
-});
+/* ---------- Cómo buscar: el catálogo recreado, que se puede probar ---------- */
+(() => {
+  const cat = $('[data-cat]');
+  if (!cat) return;
+  const q = $('[data-cat-q]', cat), list = $('[data-cat-list]', cat), items = $$(':scope > li', list);
+  const count = $('[data-cat-count]', cat), empty = $('[data-cat-empty]', cat), crumb = $('[data-cat-crumb]', cat), radios = $$('[data-cat-type]', cat);
+  const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const typeTxt = { all: '', solo: ', leídos por una sola voz', group: ', leídos por varias voces' };
+  const setCrumb = (query) => {
+    crumb.textContent = '';
+    if (query) {
+      crumb.append('Búsqueda: ', Object.assign(document.createElement('b'), { textContent: `«${query}»` }));
+    } else {
+      const a = Object.assign(document.createElement('span'), { textContent: 'Language' }), b = Object.assign(document.createElement('b'), { textContent: 'Spanish' });
+      a.lang = 'en'; b.lang = 'en'; crumb.append(a, ' › ', b);
+    }
+  };
+  const apply = () => {
+    const raw = q.value.trim(), words = norm(raw).split(/\s+/).filter(Boolean);
+    const type = radios.find((r) => r.checked)?.value || 'all';
+    let n = 0;
+    items.forEach((li) => {
+      const hay = `${li.dataset.q} ${norm(li.textContent)}`;
+      const ok = (type === 'all' || li.dataset.type === type) && words.every((w) => hay.includes(w));
+      if (ok && li.hidden && !reduced) { li.classList.remove('is-new'); void li.offsetWidth; li.classList.add('is-new'); }
+      li.hidden = !ok;
+      if (ok) n += 1;
+    });
+    radios.forEach((r) => r.closest('label')?.classList.toggle('is-checked', r.checked));
+    count.textContent = words.length ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para «${raw}»${typeTxt[type]}` : `${n} audiolibros en español${typeTxt[type]}`;
+    empty.hidden = n > 0;
+    setCrumb(raw);
+    list.scrollTop = 0;
+  };
+  q.addEventListener('input', () => { cat.classList.remove('hl-type', 'hl-side'); steps.forEach((b) => b.setAttribute('aria-pressed', 'false')); apply(); });
+  radios.forEach((r) => r.addEventListener('change', () => { cat.classList.toggle('hl-type', r.value !== 'all'); apply(); }));
+  // Los tres pasos de la guía hacen lo mismo que harías tú en LibriVox
+  const steps = $$('[data-go]');
+  let typing = 0;
+  const typeText = (text) => {
+    clearInterval(typing);
+    if (reduced) { q.value = text; apply(); return; }
+    let i = 0; q.value = ''; apply(); cat.classList.add('is-typing');
+    typing = setInterval(() => {
+      i += 1; q.value = text.slice(0, i); apply();
+      if (i >= text.length) { clearInterval(typing); cat.classList.remove('is-typing'); }
+    }, 110);
+  };
+  const go = (k) => {
+    steps.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.go === k)));
+    cat.classList.remove('hl-type', 'hl-side');
+    clearInterval(typing); cat.classList.remove('is-typing');
+    const pick = (v) => { radios.forEach((r) => { r.checked = r.value === v; }); };
+    if (k === 'lang') { q.value = ''; pick('all'); apply(); }
+    if (k === 'solo') { q.value = ''; pick('solo'); apply(); cat.classList.add('hl-type', 'hl-side'); }
+    if (k === 'search') { pick('all'); typeText('quijote'); }
+    // Con la recreación debajo de los pasos, se lleva a la vista
+    const r = cat.getBoundingClientRect();
+    if (r.top > innerHeight * 0.6 || r.bottom < 0) cat.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+  };
+  steps.forEach((b) => b.addEventListener('click', () => go(b.dataset.go)));
+  apply();
+})();
 
-/* ---------- Anillos de nota (7,5), barras, idiomas y la línea de los 95 años ---------- */
+/* ---------- Escuchar y descargar: qué te da cada opción de la ficha ---------- */
+(() => {
+  const dl = $('[data-dl]');
+  if (!dl) return;
+  const opts = $$('[data-dl-opt]', dl), panels = $$('[data-dl-panel]', dl), panel = $('.lv-dl__panel', dl);
+  // El panel baja hasta quedar a la altura de la opción elegida, con su pico señalándola
+  const point = (b) => {
+    if (!b) return;
+    if (matchMedia('(max-width: 900px)').matches) { panel.style.setProperty('--dy', '0px'); return; }
+    const dr = dl.getBoundingClientRect(), pr = panel.getBoundingClientRect(), br = b.getBoundingClientRect();
+    const center = br.top + br.height / 2 - dr.top;
+    const dy = Math.max(0, Math.min(dr.height - pr.height, center - 64));
+    panel.style.setProperty('--dy', `${Math.round(dy)}px`);
+    panel.style.setProperty('--py', `${Math.round(Math.max(30, Math.min(pr.height - 30, center - dy)))}px`);
+  };
+  const show = (b) => {
+    const k = b.dataset.dlOpt;
+    opts.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+    panels.forEach((p) => {
+      const on = p.dataset.dlPanel === k;
+      if (on && p.hidden) { p.hidden = false; p.classList.remove('is-in'); void p.offsetWidth; p.classList.add('is-in'); } else if (!on) p.hidden = true;
+    });
+    point(b);
+  };
+  opts.forEach((o) => o.addEventListener('click', () => {
+    show(o);
+    // En el móvil el panel queda debajo de la columna: se lleva a la vista para ver qué ha cambiado
+    if (matchMedia('(max-width: 900px)').matches && panel.getBoundingClientRect().top > innerHeight * 0.7) panel.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'nearest' });
+  }));
+  const active = () => opts.find((o) => o.getAttribute('aria-pressed') === 'true');
+  addEventListener('resize', debounce(() => point(active())));
+  point(active());
+})();
+
+/* ---------- El móvil: la app de pódcasts se suscribe sola al RSS ---------- */
+(() => {
+  const phone = $('[data-phone]');
+  if (!phone) return;
+  const url = $('[data-phone-url]', phone), full = url.textContent, replay = $('[data-phone-replay]', phone);
+  let timers = [];
+  const at = (ms, fn) => timers.push(setTimeout(fn, ms));
+  const run = () => {
+    timers.forEach(clearTimeout); timers = [];
+    phone.classList.remove('is-ready', 'is-press'); phone.classList.add('is-adding'); url.textContent = '';
+    let t = 500;
+    for (let i = 1; i <= full.length; i += 1) { const s = full.slice(0, i); at(t, () => { url.textContent = s; }); t += 42; }
+    at(t + 150, () => phone.classList.add('is-ready'));
+    at(t + 800, () => phone.classList.add('is-press'));
+    at(t + 1000, () => phone.classList.remove('is-press'));
+    at(t + 1250, () => phone.classList.remove('is-adding', 'is-ready'));
+  };
+  if (reduced) { replay?.remove(); return; }
+  armOnApproach(phone, () => { phone.classList.add('is-adding'); url.textContent = ''; }, run, { threshold: 0.5 });
+  replay?.addEventListener('click', run);
+})();
+
+/* ---------- Revelados: sellos de biblioteca, anillos de nota, barras, idiomas y la línea de los 95 años ---------- */
+$$('.lv-cards').forEach((list) => {
+  $$('.lv-stamp', list).forEach((s, i) => { s.style.transitionDelay = `${150 + i * 170}ms`; });
+  armOnApproach(list, () => list.classList.add('is-pending'), () => list.classList.remove('is-pending'), { threshold: 0.4 });
+});
 const fillRing = (ring) => {
   const n = $('[data-count]', ring);
   requestAnimationFrame(() => requestAnimationFrame(() => ring.classList.remove('is-pending')));
   if (n) {
     const end = Number(n.dataset.count), t0 = performance.now();
-    const show = (v) => { n.textContent = String(v).replace('.', ','); };
-    const step = (t) => { const k = Math.min(1, (t - t0) / 1200), v = Math.round(k * end * 2) / 2; show(k < 1 ? v : end); if (k < 1) requestAnimationFrame(step); };
-    show(0); requestAnimationFrame(step);
+    const showN = (v) => { n.textContent = String(v).replace('.', ','); };
+    const step = (t) => { const k = Math.min(1, (t - t0) / 1200), v = Math.round(k * end * 2) / 2; showN(k < 1 ? v : end); if (k < 1) requestAnimationFrame(step); };
+    showN(0); requestAnimationFrame(step);
   }
 };
 $$('[data-ring]').forEach((ring) => {
@@ -330,7 +527,8 @@ $$('[data-more]').forEach((box) => {
 
 /* ---------- Barra fija para ir a LibriVox ---------- */
 (() => {
-  const dock = $('[data-dock]'); if (!dock || !('IntersectionObserver' in window)) return;
+  const dock = $('[data-dock]');
+  if (!dock || !('IntersectionObserver' in window)) return;
   const hero = $('.lv-hero'), blockers = [$('.lv-verdict'), $('.lv-offer'), $('.sb-footer'), $('.lv-more')].filter(Boolean);
   let heroOut = false; const visible = new Set();
   const cookie = $('.sb-cookie-notice');
@@ -345,14 +543,12 @@ $$('[data-more]').forEach((box) => {
 
 /* ---------- Visor de capturas ---------- */
 (() => {
-  const dlg = $('[data-lightbox]'); if (!dlg || !dlg.showModal) return;
+  const dlg = $('[data-lightbox]');
+  if (!dlg || !dlg.showModal) return;
   const img = $('img', dlg), cap = $('p', dlg);
-  $$('[data-zoom]').forEach((b) => b.addEventListener('click', () => {
-    const src = $('img', b);
-    img.src = src.currentSrc || src.src; img.alt = src.alt;
-    cap.textContent = src.alt;
-    dlg.showModal();
-  }));
+  const open = (src, alt) => { img.src = src; img.alt = alt; cap.textContent = alt; dlg.showModal(); };
+  $$('[data-zoom]').forEach((b) => b.addEventListener('click', () => { const s = $('img', b); open(s.currentSrc || s.src, s.alt); }));
+  $$('[data-zoom-src]').forEach((b) => b.addEventListener('click', () => open(b.dataset.zoomSrc, b.dataset.zoomAlt || '')));
   $('[data-lightbox-close]', dlg).addEventListener('click', () => dlg.close());
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 })();
@@ -366,7 +562,7 @@ $$('[data-yt]').forEach((a) => {
     e.preventDefault();
     const f = document.createElement('iframe');
     f.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
-    f.title = 'LibriVox: audiolibros gratis y legales. Reseña de SonorBooks';
+    f.title = 'LibriVox: audiolibros gratis y legales. Guía de SonorBooks';
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     f.allowFullscreen = true;
     const box = Object.assign(document.createElement('div'), { className: 'lv-video' });
