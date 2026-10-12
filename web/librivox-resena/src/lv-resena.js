@@ -127,7 +127,7 @@ class Karaoke {
     last = t;
     const c = clip();
     fill.style.width = `${Math.min(1, t / c.dur) * 100}%`;
-    timeEl.textContent = t > 0.05 ? `${fmt(t)} / ${fmt(c.dur)}` : fmt(c.dur);
+    timeEl.textContent = t > 0.05 ? `${fmt(t)} / ${fmt(c.dur)}` : `Fragmento de ${fmt(c.dur)}`;
   };
   const owner = {
     started() {
@@ -201,14 +201,14 @@ class Karaoke {
   // Vista previa sin sonido: la primera frase se lee sola, en bucle, hasta que pulsas un capítulo.
   if (!reduced) {
     const W = clip().words, endT = W[Math.min(16, W.length - 1)][1] + 0.5, total = endT + 1.9;
-    let t0 = null, visible = true;
+    let t0 = null, visible = true, laps = 0;
     if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(book);
     previewing = true; read.classList.add('is-live');
     const loop = (now) => {
       if (!previewing) return;
       if (t0 === null) t0 = now + 900;
       let t = (now - t0) / 1000;
-      if (t > total) { t0 = now; t = 0; }
+      if (t > total) { laps += 1; if (laps >= 3) { stopPreview(); return; } t0 = now; t = 0; }
       if (visible && t >= 0) { if (t <= endT) kar.render(t); else if (t > endT + 1.2) kar.render(0, true); }
       praf = requestAnimationFrame(loop);
     };
@@ -306,7 +306,7 @@ $$('[data-copy]').forEach((box) => {
   const q = $('[data-cat-q]', cat), list = $('[data-cat-list]', cat), items = $$(':scope > li', list);
   const count = $('[data-cat-count]', cat), empty = $('[data-cat-empty]', cat), crumb = $('[data-cat-crumb]', cat), radios = $$('[data-cat-type]', cat);
   const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
-  const typeTxt = { all: '', solo: ', leídos por una sola voz', group: ', leídos por varias voces' };
+  const typeTxt = { all: '', solo: ', con una sola voz', group: ', con varias voces' };
   const setCrumb = (query) => {
     crumb.textContent = '';
     if (query) {
@@ -328,7 +328,7 @@ $$('[data-copy]').forEach((box) => {
       if (ok) n += 1;
     });
     radios.forEach((r) => r.closest('label')?.classList.toggle('is-checked', r.checked));
-    count.textContent = words.length ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para «${raw}»${typeTxt[type]}` : `${n} audiolibros en español${typeTxt[type]}`;
+    count.textContent = words.length ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para «${raw}»${typeTxt[type]}` : `Una selección de ${n} audiolibros en español${typeTxt[type]}`;
     empty.hidden = n > 0;
     setCrumb(raw);
     list.scrollTop = 0;
@@ -441,15 +441,13 @@ $$('[data-ring]').forEach((ring) => {
 });
 $$('[data-bars], [data-langs], [data-ruler]').forEach((b) => armOnApproach(b, () => b.classList.add('is-pending'), () => b.classList.remove('is-pending'), { threshold: 0.4 }));
 
-/* ---------- Pasos del voluntariado: la línea avanza con el scroll ---------- */
+/* ---------- Voluntariado: en el foro recreado, cada paso se marca al pasar por él ---------- */
 $$('[data-steps]').forEach((ol) => {
-  const wrap = ol.parentElement, items = $$('li', ol);
+  const items = $$(':scope > li', ol);
   let ticking = false;
   const update = () => {
     ticking = false;
-    const r = ol.getBoundingClientRect(), mark = innerHeight * 0.62;
-    const p = Math.min(1, Math.max(0, (mark - r.top - 24) / Math.max(1, r.height - 48)));
-    wrap.style.setProperty('--fill', p.toFixed(3));
+    const mark = innerHeight * 0.62;
     items.forEach((li) => li.classList.toggle('is-reached', li.getBoundingClientRect().top + 25 < mark));
   };
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
@@ -545,8 +543,8 @@ $$('[data-more]').forEach((box) => {
 (() => {
   const dlg = $('[data-lightbox]');
   if (!dlg || !dlg.showModal) return;
-  const img = $('img', dlg), cap = $('p', dlg);
-  const open = (src, alt) => { img.src = src; img.alt = alt; cap.textContent = alt; dlg.showModal(); };
+  const img = $('img', dlg), cap = $('p', dlg), full = $('[data-lightbox-open]', dlg);
+  const open = (src, alt) => { img.src = src; img.alt = alt; cap.textContent = alt; if (full) full.href = src; dlg.showModal(); $('.lv-lightbox__img', dlg)?.scrollTo(0, 0); };
   $$('[data-zoom]').forEach((b) => b.addEventListener('click', () => { const s = $('img', b); open(s.currentSrc || s.src, s.alt); }));
   $$('[data-zoom-src]').forEach((b) => b.addEventListener('click', () => open(b.dataset.zoomSrc, b.dataset.zoomAlt || '')));
   $('[data-lightbox-close]', dlg).addEventListener('click', () => dlg.close());
