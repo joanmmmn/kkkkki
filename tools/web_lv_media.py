@@ -102,11 +102,6 @@ book_badges = [(1, play[0] - 10, play[1] - 9), (2, title[0] + title[2] + 16, tit
                (7, notice[0] + notice[2] - 4, notice[1] - 4), (8, prod[0] + prod[2] - 4, prod[1] - 4)]
 sizes['librivox-ficha-leyendas'] = shot('librivox-ficha-leyendas', 'book', (140, 255, 1130, 1075), marks=book_marks, badges=book_badges)
 
-# 5. Foro: registro y prueba de un minuto
-reg, test = box('forum:Register'), box('forum:Post Your 1-Minute Test Recording Here')
-sizes['librivox-foro-voluntarios'] = shot('librivox-foro-voluntarios', 'forum', (40, 20, 1240, 480),
-    marks=[(reg, 4), (test, 5)], badges=[(1, reg[0] - 6, reg[1] - 6), (2, test[0] + test[2] + 18, test[1] + 8)])
-
 # Portadas de los libros que usa la página (dominio público, de LibriVox): la ficha de la portada y el catálogo recreado
 USED = {'5079', '567', '1378', '20198', '3579', '14336', '17676', '16285', '10541', '13208', '13242'}
 for f in sorted(os.listdir(os.path.join(ROOT, 'video', 'public', 'lv', 'img'))):

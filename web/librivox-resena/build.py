@@ -112,7 +112,7 @@ def jsonld():
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False) + '</script>'
 
 
-VIDEO_DURATION = 'PT4M16S'  # duración del vídeo final (4:16)
+VIDEO_DURATION = 'PT3M59S'  # duración del vídeo final (3:59)
 # Vídeo ligero (≤ 15 MB) para que la vista previa lo reproduzca sin YouTube; en producción se usa el de YouTube.
 VIDEO_PREVIEW = os.path.join(ROOT, 'deliverables', 'librivox', 'SonorBooks_LibriVox_Guia_web.mp4')
 

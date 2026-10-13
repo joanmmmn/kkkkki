@@ -54,6 +54,22 @@ KIT = {
     'tick_fast': ('Fast sequence of soft mechanical counter ticks accelerating, short, clean', 0.9, 0.7),
     'boom_soft': ('Soft cinematic boom with a warm low tail for a title reveal, clean, not loud', 1.6, 0.6),
     'swoosh_down': ('Short descending whoosh as an element drops into place ending in a soft thud, clean', 0.6, 0.7),
+    # Vídeo nuevo de LibriVox («la biblioteca que habla»): libro, papel, luz y movimientos de cámara cinematográficos.
+    'book_open': ('Heavy old hardcover book being opened on a wooden desk, clear leather creak and crisp paper rustle, close up, present and clear', 1.6, 0.7),
+    'page_turn_big': ('Slow cinematic page turn of a large old book, crisp paper with a soft airy whoosh, close up', 1.3, 0.6),
+    'lights_on': ('Row of warm vintage lamps switching on one after another in a large quiet library hall, soft deep clunks with a gentle electric hum, cinematic', 2.4, 0.5),
+    'reveal_whoosh': ('Deep slow cinematic whoosh rising into a soft airy impact, a camera pulling back through a vast hall, warm, no metal', 2.2, 0.5),
+    'dust_shimmer': ('Very soft magical shimmer of dust particles floating in a beam of light, delicate and airy, quiet', 2.0, 0.6),
+    'pen_scratch': ('Fountain pen writing a short word on paper, quick scratch, close up, dry', 0.8, 0.7),
+    'pen_underline': ('Quick pencil underline stroke on paper, short swish, close up, dry', 0.5, 0.7),
+    'paper_lift': ('Soft airy lift of a sheet of paper rising from a desk, gentle short whoosh, close up', 0.7, 0.6),
+    'card_drop': ('Thin cardboard library card dropping onto a wooden desk, soft tap, close up, dry', 0.5, 0.7),
+    'date_stamp': ('Library date stamp pressed firmly onto a paper card, mechanical clack and soft thud, close up, dry', 0.6, 0.7),
+    'deep_whoosh': ('Smooth deep cinematic whoosh, slow camera move through space, soft and warm, no impact', 1.4, 0.6),
+    'soft_impact': ('Soft warm cinematic low impact with a felt-like thud and a short reverb tail, elegant, no metal', 1.4, 0.6),
+    'phone_whoosh': ('Smartphone sliding into view with a soft airy whoosh and a tiny glass tick at the end', 0.8, 0.6),
+    'file_pop': ('Small paper file popping out of a page with a soft paper flick and a tiny airy pop, close up', 0.5, 0.7),
+    'ink_bloom': ('Soft wet ink drop spreading on paper, gentle organic swish, close up, quiet', 0.9, 0.6),
 }
 
 

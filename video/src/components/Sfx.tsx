@@ -11,7 +11,9 @@ export type SfxName =
   | 'coins' | 'success' | 'fail' | 'card_flip' | 'tick_soft' | 'sparkle' | 'bass_drop' | 'reverse_swell' | 'phone_tap'
   | 'logo_sting' | 'page_riffle' | 'snap_in'
   | 'whip' | 'swish_up' | 'mouse_click' | 'scroll' | 'glass_ping' | 'paper_slide' | 'pop_bright' | 'ff_scrub' | 'notify'
-  | 'receipt' | 'switch' | 'magnify' | 'score_ding' | 'glitch' | 'tick_fast' | 'boom_soft' | 'swoosh_down';
+  | 'receipt' | 'switch' | 'magnify' | 'score_ding' | 'glitch' | 'tick_fast' | 'boom_soft' | 'swoosh_down'
+  | 'book_open' | 'page_turn_big' | 'lights_on' | 'reveal_whoosh' | 'dust_shimmer' | 'pen_scratch' | 'pen_underline' | 'paper_lift'
+  | 'card_drop' | 'date_stamp' | 'deep_whoosh' | 'soft_impact' | 'phone_whoosh' | 'file_pop' | 'ink_bloom';
 
 // Mezcla: todos los archivos están normalizados a -1 dBFS de pico; GAIN iguala la sonoridad percibida
 // y SYNC es el instante (s) del golpe dentro del archivo, para que caiga justo en el fotograma `at`.
@@ -23,12 +25,16 @@ const GAIN: Record<SfxName, number> = {
   riser: 0.14, reverse_swell: 0.18, logo_sting: 0.2, typing: 0.55, counter: 0.17, page_turn: 0.32, page_riffle: 0.32,
   whip: 0.16, swish_up: 0.2, mouse_click: 0.5, scroll: 0.35, glass_ping: 0.22, paper_slide: 0.3, pop_bright: 0.22, ff_scrub: 0.2,
   notify: 0.16, receipt: 0.32, switch: 0.45, magnify: 0.6, score_ding: 0.16, glitch: 0.5, tick_fast: 0.45, boom_soft: 0.25, swoosh_down: 0.1,
+  // LibriVox, vídeo por capítulos (igualados por sonoridad medida: unos −27 a −33 LUFS bajo una voz a −18)
+  book_open: 0.5, page_turn_big: 0.8, lights_on: 0.49, reveal_whoosh: 0.15, dust_shimmer: 0.07, pen_scratch: 0.27, pen_underline: 0.14,
+  paper_lift: 0.16, card_drop: 0.28, date_stamp: 0.8, deep_whoosh: 0.18, soft_impact: 1.0, phone_whoosh: 0.13, file_pop: 0.45, ink_bloom: 0.24,
 };
 const SYNC: Partial<Record<SfxName, number>> = {
   card_flip: 0.19, coins: 0.12, impact: 0.05, page_turn: 0.38, pencil_strike: 0.1, reverse_swell: 1.17, riser: 1.66,
   swipe: 0.08, transition: 0.3, ui_pop: 0.06, whoosh_deep: 0.33, whoosh_fast: 0.15, whoosh_soft: 0.11, zoom_in: 0.45, zoom_out: 0.28,
   logo_sting: 0.03, marker: 0.03, sparkle: 0.05, shimmer: 0.05,
   whip: 0.08, swish_up: 0.1, paper_slide: 0.4, pop_bright: 0.1, boom_soft: 0.15, swoosh_down: 0.12,
+  reveal_whoosh: 0.59, deep_whoosh: 0.24, phone_whoosh: 0.37, paper_lift: 0.11, file_pop: 0.09, date_stamp: 0.09,
 };
 
 // Bus de efectos (opcional): ganancia global y atenuación bajo la voz, en función del fotograma absoluto.

@@ -89,18 +89,9 @@ En la web de LibriVox, el español es el **cuarto idioma** (inglés 42.806 obras
 
 Los libros los graban voluntarios, así que la calidad cambia de un libro a otro y, a veces, de un capítulo a otro. En las *Leyendas* de Bécquer leen 11 personas distintas (en la página puedes escuchar a Omar, Elena del Valle, Vicente Cepeda y Rosacarmela). Consejos: escucha un minuto antes de empezar, elige entre versiones si las hay, busca lecturas «Solo» si quieres una sola voz y, si te gusta un lector, pulsa su nombre para ver todo lo que ha grabado.
 
-## Graba tú: cómo ser voluntario
-
-No hace falta experiencia ni prueba de voz: tu voz, un ordenador, un programa gratuito (la mayoría usa Audacity) y, quizá, un micrófono sencillo.
-1. Regístrate en el foro de LibriVox.
-2. Graba la prueba de un minuto y publícala en la sección «Post Your 1-Minute Test Recording Here» del foro (no es una audición: solo comprueban que tu equipo suena bien).
-3. Reserva un capítulo de un proyecto colaborativo.
-4. Grábalo y súbelo: un revisor (proof listener) lo escucha.
-5. Cuando el libro está completo, se publica gratis y en el dominio público.
-
 ## Lo mejor y lo peor
 
-**Lo mejor:** gratis de verdad y legal, sin anuncios ni registro · voces humanas · MP3 y M4B sin DRM · muchas formas de escuchar (web, MP3, ZIP, M4B, pódcast) · más de 21.000 audiolibros, más de 550 en español · puedes grabar tú.
+**Lo mejor:** gratis de verdad y legal, sin anuncios ni registro · voces humanas · MP3 y M4B sin DRM · muchas formas de escuchar (web, MP3, ZIP, M4B, pódcast) · más de 21.000 audiolibros, más de 550 en español.
 
 **Lo peor:** solo clásicos, sin novedades · la calidad de las voces varía · web en inglés y algo anticuada · no hay app oficial · sigue la ley de EE. UU. (en España, algunas obras aún tienen derechos) · catálogo en español mucho menor que en inglés.
 
@@ -120,4 +111,4 @@ Si te gustan los clásicos, sí, y mucho: no hay nada igual gratis. Pierde punto
 **LibriVox en SonorBooks** — «Clásicos con voz propia.» Libros narrados por voluntarios · Escucha gratuita y descarga en MP3 · 100 % gratis · Sin cuota mensual. Condiciones: «Incluye títulos en español. LibriVox verifica el dominio público en Estados Unidos; comprueba la situación de cada obra en España. Las voces y la calidad de grabación varían.»
 
 ---
-*Cómo lo probamos: usamos LibriVox el 12/10/2026 en la web, sin registrarnos. Fuentes: librivox.org (About, Public Domain, Listening, Volunteer, 20.º aniversario, actualización de la API del 16/9/2026), su API pública, la wiki «How to Listen», la App Store de España y la Ley de Propiedad Intelectual (BOE). SonorBooks no tiene relación comercial con LibriVox.*
+*Cómo lo probamos: usamos LibriVox el 12/10/2026 en la web, sin registrarnos. Fuentes: librivox.org (About, Public Domain, Listening, 20.º aniversario, actualización de la API del 16/9/2026), su API pública, la wiki «How to Listen», la App Store de España y la Ley de Propiedad Intelectual (BOE). SonorBooks no tiene relación comercial con LibriVox.*

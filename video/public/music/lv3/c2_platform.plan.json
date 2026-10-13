@@ -1,0 +1,66 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "premium cinematic documentary score, like a high-end film about an endless library of books read aloud by people",
+   "instrumental",
+   "tempo 90 BPM",
+   "felt piano arpeggios, pizzicato strings, soft marimba, warm upright bass, light shaker and soft kick, airy pads",
+   "curious, clever, warm, discovery",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "ukulele",
+   "whistling"
+  ],
+  "sections": [
+   {
+    "section_name": "Chapter one: the idea",
+    "positive_local_styles": [
+     "soft page-turn intro then a curious piano arpeggio motif",
+     "light and elegant"
+    ],
+    "negative_local_styles": [
+     "heavy drums",
+     "tense"
+    ],
+    "duration_ms": 12840,
+    "lines": []
+   },
+   {
+    "section_name": "How it works inside",
+    "positive_local_styles": [
+     "gentle steady pulse, pizzicato strings and marimba interlocking like a well-oiled machine",
+     "clever, organized"
+    ],
+    "negative_local_styles": [
+     "aggressive"
+    ],
+    "duration_ms": 17380,
+    "lines": []
+   },
+   {
+    "section_name": "Spanish classics",
+    "positive_local_styles": [
+     "warmer, nostalgic Spanish guitar color over the same pulse",
+     "invitation to explore",
+     "ends on a small lift"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 13660,
+    "lines": []
+   }
+  ]
+ }
+}

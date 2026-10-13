@@ -26,10 +26,12 @@ fija. Todo lo demás tiene identidad propia de LibriVox.
 - Veredicto rápido (7,5/10) con «Escuchar gratis en LibriVox» (ruta de salida del sitio hacia librivox.org).
 - **Cómo funciona, en cuatro pasos:** la respuesta corta para quien busca cómo usar LibriVox (entrar en la web, buscar en
   español, escuchar o descargar y llevarlo al móvil), como un recorrido con cuatro paradas; cada paso enlaza a su apartado.
-- **Vídeo:** en producción, el de YouTube (se carga al pulsar, con youtube-nocookie). En la vista previa se reproduce el propio
-  vídeo, porque aún no está en YouTube.
-- **Qué es:** la portada de librivox.org traducida, con sus cifras (14.276 voluntarios; 21.838 audiolibros y 132.392 horas) y
-  botones que llevan a las secciones de la página. Después, el aviso con el que empieza cada grabación, que se escucha.
+- **Vídeo:** la guía por capítulos («la biblioteca que habla», 3:59): qué es y cómo funciona, cómo se usa paso a paso, lo que
+  conviene saber y si merece la pena. En producción, el de YouTube (se carga al pulsar, con youtube-nocookie). En la vista
+  previa se reproduce el propio vídeo, porque aún no está en YouTube.
+- **Qué es:** la portada de librivox.org traducida, con sus cifras (14.276 voluntarios; 21.838 audiolibros y 132.392 horas);
+  «Ver el catálogo» lleva al apartado de búsqueda y «Ser voluntario», a esa página de LibriVox. Después, el aviso con el que
+  empieza cada grabación, que se escucha.
 - **Cómo buscar:** tres pasos que se pueden pulsar y un catálogo recreado con once clásicos en español: buscador (sin tildes),
   filtro «Project type» (all, solo, group) y enlaces a cada ficha de LibriVox. Enlaces a las capturas reales.
 - **Escuchar y descargar:** la columna de la ficha recreada (Play, título, Whole book, iTunes, RSS, Torrent, Internet Archive y
@@ -43,7 +45,6 @@ fija. Todo lo demás tiene identidad propia de LibriVox.
   «¿Buscas un libro concreto?» hacia el buscador de SonorBooks.
 - **Las voces:** el reparto completo de las *Leyendas* (11 voluntarios, capítulos y horas de cada uno), con cuatro voces que se
   escuchan, y consejos para elegir.
-- **Voluntariado:** 5 pasos con la línea que avanza al hacer scroll, lo que hace falta y la captura del foro.
 - Lo mejor y lo peor, para quién es, nota por apartados y la ficha de LibriVox de SonorBooks con **las condiciones de la web
   copiadas tal cual** (texto de Joan).
 - «Cómo lo probamos» en letra pequeña, con fuentes; carrusel de 9 artículos relacionados; barra fija «Escuchar gratis».

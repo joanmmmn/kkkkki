@@ -441,19 +441,6 @@ $$('[data-ring]').forEach((ring) => {
 });
 $$('[data-bars], [data-langs], [data-ruler]').forEach((b) => armOnApproach(b, () => b.classList.add('is-pending'), () => b.classList.remove('is-pending'), { threshold: 0.4 }));
 
-/* ---------- Voluntariado: en el foro recreado, cada paso se marca al pasar por él ---------- */
-$$('[data-steps]').forEach((ol) => {
-  const items = $$(':scope > li', ol);
-  let ticking = false;
-  const update = () => {
-    ticking = false;
-    const mark = innerHeight * 0.62;
-    items.forEach((li) => li.classList.toggle('is-reached', li.getBoundingClientRect().top + 25 < mark));
-  };
-  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
-  update();
-});
-
 /* ---------- Alternativas y guías: carrusel deslizable ---------- */
 $$('[data-more]').forEach((box) => {
   const track = $('[data-more-track]', box), prev = $('[data-more-prev]', box), next = $('[data-more-next]', box), thumb = $('[data-more-thumb]', box);

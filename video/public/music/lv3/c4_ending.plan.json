@@ -1,0 +1,93 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "premium cinematic documentary score, like a high-end film about an endless library of books read aloud by people",
+   "instrumental",
+   "tempo 80 BPM",
+   "felt piano, warm strings, soft cello, celesta, gentle pulses, soft timpani",
+   "thoughtful, human, then warm and confident resolution",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "ukulele",
+   "whistling"
+  ],
+  "sections": [
+   {
+    "section_name": "Chapter three: what to know",
+    "positive_local_styles": [
+     "thoughtful piano and soft strings",
+     "a hint of caution in minor chords midway",
+     "steady soft pulse"
+    ],
+    "negative_local_styles": [
+     "triumphant",
+     "drums"
+    ],
+    "duration_ms": 21040,
+    "lines": []
+   },
+   {
+    "section_name": "Real voices",
+    "positive_local_styles": [
+     "very sparse warm sustained pad and a few piano notes",
+     "lots of space for real human voices reading",
+     "no percussion"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "bass",
+     "busy melody",
+     "percussion"
+    ],
+    "duration_ms": 28660,
+    "lines": []
+   },
+   {
+    "section_name": "Advice",
+    "positive_local_styles": [
+     "gently lifts, soft pulse returns"
+    ],
+    "negative_local_styles": [
+     "heavy drums"
+    ],
+    "duration_ms": 7880,
+    "lines": []
+   },
+   {
+    "section_name": "Chapter four: the verdict",
+    "positive_local_styles": [
+     "builds warmly with strings and piano",
+     "confident and satisfying, soft timpani at the end"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 16780,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "warm resolving main theme",
+     "final orchestral chord then soft decay to silence"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 11840,
+    "lines": []
+   }
+  ]
+ }
+}

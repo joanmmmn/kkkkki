@@ -1,0 +1,77 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "premium cinematic documentary score, like a high-end film about an endless library of books read aloud by people",
+   "instrumental",
+   "tempo 104 BPM",
+   "modern cinematic underscore: felt piano ostinato, pulsing staccato strings, soft electronic percussion, warm sub bass, subtle glassy plucks",
+   "practical, smooth, confident momentum",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "ukulele",
+   "whistling"
+  ],
+  "sections": [
+   {
+    "section_name": "Chapter two: step one",
+    "positive_local_styles": [
+     "short elegant intro then the ostinato starts",
+     "clean and clear"
+    ],
+    "negative_local_styles": [
+     "slow",
+     "dark"
+    ],
+    "duration_ms": 15660,
+    "lines": []
+   },
+   {
+    "section_name": "Step two",
+    "positive_local_styles": [
+     "same groove, a layer of light plucks added"
+    ],
+    "negative_local_styles": [
+     "busy"
+    ],
+    "duration_ms": 12600,
+    "lines": []
+   },
+   {
+    "section_name": "Step three",
+    "positive_local_styles": [
+     "groove continues, slightly fuller with soft strings",
+     "satisfying"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 24760,
+    "lines": []
+   },
+   {
+    "section_name": "Step four, on the phone",
+    "positive_local_styles": [
+     "groove continues with a light airy synth layer",
+     "modern, fresh",
+     "ends gently"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 21880,
+    "lines": []
+   }
+  ]
+ }
+}

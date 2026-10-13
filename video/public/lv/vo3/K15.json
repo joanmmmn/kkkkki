@@ -1,0 +1,111 @@
+{
+ "id": "K15",
+ "hash": "c86e1191281b",
+ "text": "Y para saber dónde escuchar cualquier libro, gratis o en qué plataforma y a qué precio, búscalo en SonorBooks.",
+ "duration": 7.184,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.11
+  },
+  {
+   "w": "para",
+   "s": 0.19,
+   "e": 0.27
+  },
+  {
+   "w": "saber",
+   "s": 0.31,
+   "e": 0.59
+  },
+  {
+   "w": "dónde",
+   "s": 0.67,
+   "e": 0.91
+  },
+  {
+   "w": "escuchar",
+   "s": 0.99,
+   "e": 1.39
+  },
+  {
+   "w": "cualquier",
+   "s": 1.47,
+   "e": 1.87
+  },
+  {
+   "w": "libro,",
+   "s": 1.95,
+   "e": 2.51
+  },
+  {
+   "w": "gratis",
+   "s": 2.59,
+   "e": 3.07
+  },
+  {
+   "w": "o",
+   "s": 3.11,
+   "e": 3.15
+  },
+  {
+   "w": "en",
+   "s": 3.23,
+   "e": 3.31
+  },
+  {
+   "w": "qué",
+   "s": 3.39,
+   "e": 3.47
+  },
+  {
+   "w": "plataforma",
+   "s": 3.51,
+   "e": 4.11
+  },
+  {
+   "w": "y",
+   "s": 4.19,
+   "e": 4.27
+  },
+  {
+   "w": "a",
+   "s": 4.31,
+   "e": 4.35
+  },
+  {
+   "w": "qué",
+   "s": 4.43,
+   "e": 4.51
+  },
+  {
+   "w": "precio,",
+   "s": 4.71,
+   "e": 5.31
+  },
+  {
+   "w": "búscalo",
+   "s": 5.39,
+   "e": 5.87
+  },
+  {
+   "w": "en",
+   "s": 5.99,
+   "e": 6.11
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 6.19,
+   "e": 7.15
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 7.184,
+ "tightened": {
+  "keep": 0.3,
+  "min": 0.42,
+  "tempo": 1.0,
+  "from": 7.36
+ }
+}

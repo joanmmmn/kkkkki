@@ -1,0 +1,87 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "premium cinematic documentary score, like a high-end film about an endless library of books read aloud by people",
+   "instrumental",
+   "tempo 72 BPM",
+   "felt piano, warm string orchestra, soft celesta, low cello, gentle timpani swell",
+   "intimate, then awe and wonder",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "ukulele",
+   "whistling"
+  ],
+  "sections": [
+   {
+    "section_name": "Library at night",
+    "positive_local_styles": [
+     "almost silent warm sustained low string pad",
+     "a few distant felt piano notes",
+     "intimate, like a dark quiet library at night, dust in a beam of light",
+     "no drums"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "bass",
+     "melody",
+     "percussion"
+    ],
+    "duration_ms": 6860,
+    "lines": []
+   },
+   {
+    "section_name": "A human voice",
+    "positive_local_styles": [
+     "tender felt piano motif enters",
+     "soft strings breathe in",
+     "hopeful"
+    ],
+    "negative_local_styles": [
+     "drums"
+    ],
+    "duration_ms": 9000,
+    "lines": []
+   },
+   {
+    "section_name": "The library lights up",
+    "positive_local_styles": [
+     "slow cinematic rise",
+     "strings and piano swell, building wonder",
+     "gentle timpani roll growing",
+     "ends exactly on a big warm orchestral hit"
+    ],
+    "negative_local_styles": [
+     "abrupt",
+     "dark"
+    ],
+    "duration_ms": 9212,
+    "lines": []
+   },
+   {
+    "section_name": "Title and what you will learn",
+    "positive_local_styles": [
+     "warm full orchestral chord with a sparkle of celesta right at the start",
+     "then a warm main theme with a light pulse",
+     "inviting, confident"
+    ],
+    "negative_local_styles": [
+     "silence",
+     "heavy drums"
+    ],
+    "duration_ms": 12888,
+    "lines": []
+   }
+  ]
+ }
+}

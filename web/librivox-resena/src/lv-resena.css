@@ -195,7 +195,6 @@
 .lv-head { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 22px 80px; align-items: start; }
 .lv-head > .lv-prose, .lv-head > div { padding-top: 6px; }
 .lv-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px 56px; align-items: start; }
-.lv-split--steps { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
 .lv-col > * + * { margin-top: 26px; }
 .lv-source { font: 400 13px/1.5 var(--sans); color: var(--muted); }
 .lv-prose > * + * { margin-top: 1.05em; }
@@ -532,39 +531,6 @@
 .lv-tips svg { width: 24px; height: 24px; margin-top: 1px; }
 .lv-tips b { color: var(--ink); }
 
-/* ---------- Voluntariado: el foro de LibriVox (phpBB), con el estado de cada paso al bajar ---------- */
-.lvx-forum__in { padding: 14px; background: #eef1f4; }
-.lvx-forum__top { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 7px; background: linear-gradient(#66727c, #4f5a63); color: #fff; }
-.lvx-forum__logo { flex: none; display: flex; align-items: flex-end; gap: 3px; width: 42px; height: 42px; padding: 6px 7px; border-radius: 3px; background: #fff; }
-.lvx-forum__logo i { flex: 1; height: 100%; border-radius: 1px; background: #4c5761; }
-.lvx-forum__logo i:nth-child(2) { height: 78%; background: #8a949c; }
-.lvx-forum__logo i:nth-child(3) { height: 92%; background: #c8ced3; }
-.lvx-forum__top p { min-width: 0; }
-.lvx-forum__top b { display: block; font: 700 19px/1.2 var(--x-ui); }
-.lvx-forum__top p > span { display: flex; flex-wrap: wrap; gap: 2px 12px; margin-top: 4px; font: 400 12.5px/1.3 var(--x-ui); color: rgba(255, 255, 255, .88); }
-.lvx-forum__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; margin-top: 14px; padding: 9px 14px; border-radius: 7px 7px 0 0; background: linear-gradient(#5d6871, #4a545c);
-  font: 700 11px/1.2 var(--x-ui); letter-spacing: .04em; text-transform: uppercase; color: #fff; }
-.lvx-forum__list { display: grid; gap: 1px; margin: 0; padding: 0 4px 4px; list-style: none; border-radius: 0 0 7px 7px; background: #4a545c; counter-reset: fs; }
-.lvx-forum__list li { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 13px 14px 13px 12px; background: #ecf3f7; counter-increment: fs; transition: background-color .3s; }
-.lvx-forum__list li:nth-child(even) { background: #e1ebf2; }
-.lvx-forum__list li:last-child { border-radius: 0 0 4px 4px; }
-.lvx-forum__n { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; border: 2px solid #105289; background: #fff; color: #105289; transition: background-color .3s, color .3s; }
-.lvx-forum__n::before { content: counter(fs); font: 700 14px/1 var(--x-ui); }
-.lvx-forum__t { min-width: 0; }
-.lv .lvx-forum__t h3 { font: 700 15.5px/1.3 var(--x-ui); color: #105289; }
-.lvx-forum__t p { margin-top: 3px; font: 400 13.5px/1.5 var(--x-ui); color: #333; }
-.lvx-forum__st { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; border: 1px solid #c4d0d9; background: #fff; font: 700 12px/1 var(--x-ui); color: #5c6670; white-space: nowrap; transition: background-color .3s, border-color .3s, color .3s; }
-.lvx-forum__st svg { display: none; width: 13px; height: 13px; }
-.lvx-forum__list li.is-reached .lvx-forum__n { background: #105289; color: #fff; }
-.lvx-forum__list li.is-reached .lvx-forum__st { border-color: var(--x-green); background: var(--x-green); color: #fff; }
-.lvx-forum__list li.is-reached .lvx-forum__st svg { display: block; }
-/* Lo que necesitas: una caja de LibriVox, en el verde de su columna «Read» */
-.lvx-kit { padding: 20px 22px 22px; border-radius: 4px; border: 1px solid #cdd6bd; background: var(--x-read); font-family: var(--x-ui); }
-.lv .lvx-kit__h { font: 700 16px/1.3 var(--x-ui); color: var(--x-olive); }
-.lvx-kit ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 18px; margin: 14px 0 0; padding: 0; list-style: none; }
-.lvx-kit li { display: flex; align-items: center; gap: 10px; font-size: 15px; line-height: 1.3; color: var(--x-text); }
-.lvx-kit svg { width: 22px; height: 22px; flex: none; color: var(--x-olive); }
-
 /* ---------- Pros y contras ---------- */
 .lv-pc { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .lv-pc > div { padding: 26px 28px; border-radius: 24px; border: 1px solid var(--line); background: #fff; font-family: var(--sans); }
@@ -708,7 +674,7 @@
 @media (max-width: 900px) {
   .lv-hero__grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .lv-stage { max-width: 680px; }
-  .lv-head, .lv-split, .lv-split--steps, .lv-split--aviso, .lv-split--mobile, .lv-es, .lv-score, .lv-dl { grid-template-columns: minmax(0, 1fr); }
+  .lv-head, .lv-split, .lv-split--aviso, .lv-split--mobile, .lv-es, .lv-score, .lv-dl { grid-template-columns: minmax(0, 1fr); }
   .lv-sec { padding-block: 68px; }
   .lv-score { justify-items: center; }
   .lv-score .lv-bars { width: 100%; }
@@ -835,13 +801,6 @@
   .lv-offer { grid-template-columns: minmax(0, 1fr); padding: 24px 20px; }
   .lv-offer__list { grid-template-columns: minmax(0, 1fr); }
   .lv-offer .lv-btn { width: 100%; }
-  .lvx-kit ul { grid-template-columns: minmax(0, 1fr); }
-  .lvx-forum__in { padding: 8px; }
-  .lvx-forum__top { padding: 12px; }
-  .lvx-forum__top p > span { display: none; }
-  .lvx-forum__list li { grid-template-columns: 30px minmax(0, 1fr); gap: 10px 12px; padding: 12px 12px 12px 10px; }
-  .lvx-forum__n { width: 30px; height: 30px; }
-  .lvx-forum__st { grid-column: 2; justify-self: start; }
   .lv-note { grid-template-columns: 34px minmax(0, 1fr); padding: 16px; }
   .lv-note > svg { width: 34px; height: 34px; align-self: start; }
   .lv-note .lv-btn { grid-column: 1 / -1; }

@@ -1,0 +1,387 @@
+1
+00:00:00,800 --> 00:00:02,630
+<i>«Yo no sé si esto es una historia</i>
+
+2
+00:00:02,650 --> 00:00:06,250
+<i>que parece cuento o un cuento que parece historia»</i>
+
+3
+00:00:06,780 --> 00:00:08,437
+Esta voz es de Omar.
+
+4
+00:00:08,482 --> 00:00:10,702
+No es una inteligencia artificial:
+
+5
+00:00:10,722 --> 00:00:12,952
+es un voluntario que grabó este capítulo
+
+6
+00:00:13,042 --> 00:00:15,632
+para que cualquiera pueda escucharlo gratis.
+
+7
+00:00:15,980 --> 00:00:19,287
+Y como él, miles de voluntarios de todo el mundo
+
+8
+00:00:19,307 --> 00:00:22,297
+han grabado más de 21.000 audiolibros.
+
+9
+00:00:22,317 --> 00:00:23,283
+Todos gratis.
+
+10
+00:00:23,303 --> 00:00:24,492
+Todos legales.
+
+11
+00:00:24,512 --> 00:00:25,892
+Esto es LibriVox.
+
+12
+00:00:27,620 --> 00:00:31,246
+Te enseñamos qué es, cómo funciona y cómo usarlo,
+
+13
+00:00:31,266 --> 00:00:32,524
+paso a paso.
+
+14
+00:00:32,544 --> 00:00:34,722
+Y la guía completa está en nuestro blog:
+
+15
+00:00:34,742 --> 00:00:36,342
+enlace en la descripción.
+
+16
+00:00:38,460 --> 00:00:42,369
+LibriVox nació en 2005 con una idea muy sencilla:
+
+17
+00:00:42,389 --> 00:00:44,942
+que todos los libros de dominio público tengan
+
+18
+00:00:44,962 --> 00:00:48,062
+su audiolibro, leído por personas y gratis
+
+19
+00:00:48,082 --> 00:00:49,172
+para todo el mundo.
+
+20
+00:00:49,720 --> 00:00:50,911
+Funciona así:
+
+21
+00:00:50,931 --> 00:00:53,214
+se elige un libro libre de derechos,
+
+22
+00:00:53,234 --> 00:00:55,529
+los voluntarios se reparten los capítulos
+
+23
+00:00:55,549 --> 00:00:58,557
+y los graban en casa, un revisor los escucha,
+
+24
+00:00:58,577 --> 00:01:00,741
+y el audiolibro se publica en su web,
+
+25
+00:01:00,761 --> 00:01:03,475
+con los audios guardados en Internet Archive.
+
+26
+00:01:03,495 --> 00:01:06,358
+Sin anuncios, sin cuentas y sin cuotas.
+
+27
+00:01:07,100 --> 00:01:11,480
+En español hay más de 1.000 obras y más de 3.500 horas:
+
+28
+00:01:11,500 --> 00:01:13,480
+el Quijote, el Lazarillo,
+
+29
+00:01:13,500 --> 00:01:15,960
+La Regenta, Fortunata y Jacinta,
+
+30
+00:01:15,980 --> 00:01:17,640
+las Leyendas de Bécquer…
+
+31
+00:01:17,660 --> 00:01:19,030
+Vamos a encontrarlas.
+
+32
+00:01:21,140 --> 00:01:24,790
+Paso 1: entra en librivox.org.
+
+33
+00:01:24,810 --> 00:01:26,189
+La web está en inglés,
+
+34
+00:01:26,209 --> 00:01:27,708
+pero es muy sencilla.
+
+35
+00:01:27,728 --> 00:01:29,346
+En «Browse the catalog»,
+
+36
+00:01:29,366 --> 00:01:32,384
+pulsa «Language» y elige «Spanish»:
+
+37
+00:01:32,404 --> 00:01:34,884
+ahí están todos los libros en español.
+
+38
+00:01:35,220 --> 00:01:37,839
+Paso 2: si buscas uno concreto,
+
+39
+00:01:37,859 --> 00:01:40,574
+escribe el título o el autor en el buscador.
+
+40
+00:01:40,594 --> 00:01:43,161
+Debajo de cada resultado verás «Solo»,
+
+41
+00:01:43,181 --> 00:01:44,814
+si lo lee una sola persona,
+
+42
+00:01:44,834 --> 00:01:47,474
+o «Collaborative», si lo leen varias.
+
+43
+00:01:47,820 --> 00:01:50,434
+Paso 3: abre la ficha del libro.
+
+44
+00:01:50,454 --> 00:01:53,376
+Cada capítulo tiene su lector y su duración.
+
+45
+00:01:53,396 --> 00:01:56,187
+Con «Play», lo escuchas en el navegador.
+
+46
+00:01:56,207 --> 00:01:57,340
+Para descargarlo:
+
+47
+00:01:57,360 --> 00:02:00,961
+el título de cada capítulo es el MP3;
+
+48
+00:02:00,981 --> 00:02:03,737
+«Whole book», el libro entero en un ZIP;
+
+49
+00:02:03,757 --> 00:02:07,678
+y el M4B es un audiolibro con capítulos que recuerda
+
+50
+00:02:07,698 --> 00:02:08,896
+por dónde vas.
+
+51
+00:02:08,916 --> 00:02:10,203
+Sin restricciones:
+
+52
+00:02:10,223 --> 00:02:12,036
+los archivos son tuyos.
+
+53
+00:02:12,580 --> 00:02:14,503
+Paso 4: el móvil.
+
+54
+00:02:14,622 --> 00:02:16,756
+LibriVox no tiene app oficial,
+
+55
+00:02:16,776 --> 00:02:17,904
+pero hay un truco:
+
+56
+00:02:17,924 --> 00:02:21,258
+copia el enlace del botón «RSS» y pégalo
+
+57
+00:02:21,278 --> 00:02:22,746
+en tu app de pódcasts.
+
+58
+00:02:22,826 --> 00:02:25,322
+Cada capítulo aparece como un episodio,
+
+59
+00:02:25,342 --> 00:02:28,258
+y puedes descargarlo para escucharlo sin conexión.
+
+60
+00:02:28,278 --> 00:02:29,698
+Y si prefieres una app,
+
+61
+00:02:29,718 --> 00:02:32,628
+hay varias gratuitas, de otros desarrolladores.
+
+62
+00:02:34,840 --> 00:02:36,242
+¿Y por qué es legal?
+
+63
+00:02:36,262 --> 00:02:38,482
+Porque solo graban libros sin derechos de autor
+
+64
+00:02:38,502 --> 00:02:39,922
+en Estados Unidos:
+
+65
+00:02:39,942 --> 00:02:43,122
+los publicados hace 95 años o más.
+
+66
+00:02:43,142 --> 00:02:45,162
+Por eso aquí no hay novedades:
+
+67
+00:02:45,182 --> 00:02:46,482
+hay clásicos.
+
+68
+00:02:46,502 --> 00:02:49,549
+Eso sí, en España no todos están libres:
+
+69
+00:02:49,569 --> 00:02:51,282
+«Platero y yo», por ejemplo,
+
+70
+00:02:51,302 --> 00:02:53,662
+no lo estará hasta 2039.
+
+71
+00:02:54,300 --> 00:02:55,492
+¿Y cómo suenan?
+
+72
+00:02:55,512 --> 00:02:57,967
+Cada libro lo leen voluntarios distintos,
+
+73
+00:02:57,987 --> 00:02:59,624
+así que la calidad cambia.
+
+74
+00:02:59,644 --> 00:03:02,466
+En estas Leyendas leen 11 personas.
+
+75
+00:03:02,486 --> 00:03:04,146
+Escucha a cuatro de ellas:
+
+76
+00:03:04,560 --> 00:03:07,960
+<i>«…lo que puedo decir es que en su fondo hay una verdad…»</i>
+
+77
+00:03:08,420 --> 00:03:10,240
+<i>«La noche de difuntos me despertó</i>
+
+78
+00:03:10,260 --> 00:03:12,370
+<i>a no sé qué hora el doble de las campanas…»</i>
+
+79
+00:03:12,840 --> 00:03:14,600
+<i>«Hace algunos meses que,</i>
+
+80
+00:03:14,620 --> 00:03:17,140
+<i>visitando la célebre abadía de Fitero…»</i>
+
+81
+00:03:17,600 --> 00:03:20,020
+<i>«Hace mucho tiempo que tenía ganas</i>
+
+82
+00:03:20,040 --> 00:03:22,450
+<i>de escribir cualquier cosa con este título»</i>
+
+83
+00:03:23,040 --> 00:03:24,302
+Nuestro consejo:
+
+84
+00:03:24,322 --> 00:03:26,542
+escucha un minuto antes de empezar,
+
+85
+00:03:26,562 --> 00:03:28,142
+y si hay varias versiones,
+
+86
+00:03:28,162 --> 00:03:30,302
+quédate con la voz que más te guste.
+
+87
+00:03:32,420 --> 00:03:33,532
+¿Merece la pena?
+
+88
+00:03:33,552 --> 00:03:35,129
+Si te gustan los clásicos,
+
+89
+00:03:35,149 --> 00:03:36,647
+sí, y mucho:
+
+90
+00:03:36,667 --> 00:03:38,404
+no hay nada igual gratis.
+
+91
+00:03:38,424 --> 00:03:40,081
+Pero solo hay clásicos,
+
+92
+00:03:40,101 --> 00:03:43,226
+las voces son desiguales y la web está en inglés.
+
+93
+00:03:43,246 --> 00:03:44,426
+Nuestra nota:
+
+94
+00:03:44,446 --> 00:03:46,096
+7,5 sobre 10.
+
+95
+00:03:47,620 --> 00:03:50,190
+Y para saber dónde escuchar cualquier libro,
+
+96
+00:03:50,210 --> 00:03:52,990
+gratis o en qué plataforma y a qué precio,
+
+97
+00:03:53,010 --> 00:03:54,920
+búscalo en SonorBooks.
