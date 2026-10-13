@@ -25,21 +25,24 @@
   "src": "2026-10-12 22-43-48.mp4",
   "from": 106.0,
   "to": 122.0,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  },
  "04_inicio": {
   "duration": 44.0,
   "src": "2026-10-12 22-43-48.mp4",
   "from": 116.0,
   "to": 160.0,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  },
  "05_buscar": {
   "duration": 36.0,
   "src": "2026-10-12 22-43-48.mp4",
   "from": 160.0,
   "to": 196.0,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  },
  "06_ficha": {
   "duration": 9.6,
@@ -88,7 +91,8 @@
   "src": "2026-10-12 22-43-48.mp4",
   "from": 590.0,
   "to": 615.6,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  },
  "13_membresia": {
   "duration": 27.2,
@@ -102,20 +106,23 @@
   "src": "2026-10-12 22-43-48.mp4",
   "from": 678.6,
   "to": 696.0,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  },
  "15_inicio_top": {
   "duration": 16.0,
   "src": "2026-10-12 22-43-48.mp4",
   "from": 704.0,
   "to": 720.0,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  },
  "16_audiolibros": {
   "duration": 41.0,
   "src": "2026-10-12 22-43-48.mp4",
   "from": 756.0,
   "to": 797.0,
-  "audio": false
+  "audio": false,
+  "avatar": "tapado"
  }
 }

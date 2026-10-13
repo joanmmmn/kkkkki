@@ -9,6 +9,13 @@ import { align, AppFeatureScene, markOn, PV, PV_DEEP, Shot } from './kit';
 
 type P = SceneProps;
 const ic = (n: React.ReactNode) => n;
+// Copa (premio Ondas).
+const TrophyIcon: React.FC<{ size?: number; c?: string }> = ({ size = 32, c = color.ink }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M7 4h10v5a5 5 0 0 1-10 0V4z" /><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4.2" /><path d="M17 6h2.5a2.5 2.5 0 0 1-2.5 4.2" />
+    <path d="M12 14v3.5" /><path d="M8.5 20.5h7" /><path d="M9.5 20.5l.6-3h3.8l.6 3" />
+  </svg>
+);
 // Coordenadas del clic en la pantalla del ordenador (1456×819, BlueStacks a pantalla completa) → píxeles de la grabación.
 const tapXY = (cx: number, cy: number) => ({ x: Math.round(cx * 1.7582 - 948), y: Math.round(cy * 1.7582) });
 
@@ -25,7 +32,8 @@ export const K04Portada: React.FC<P> = (p) => {
   // Toques reales: «Podcasts» se marca en el segundo 29,14 de la toma y «Audiolibros» en el 37,42.
   const s0: Shot = { rec: '00_gustos', at: 0, start: Math.max(0, 29.14 - (fPod + 2) / 50), hold: 29.6 };
   const s1 = align('00_gustos', 37.42, fAud + 2, 12, { hold: 39.6 });
-  const s2: Shot = { rec: '03_recopilando', at: Math.max(s1.at + 20, fPortada - 22), start: 1.9, hold: 9.6 };
+  // «…y la portada se adapta a ti»: la portada aparece con la palabra (sin la pantalla de carga, casi negra).
+  const s2: Shot = { rec: '15_inicio_top', at: Math.max(s1.at + 24, fPortada - 8), start: 3.0, hold: 15 };
   const s3 = align('04_inicio', 13.5, fPop, 12, { hold: 14.3 });
   s3.marks = [markOn(s3, fPop, fNov - 4, 16, 478, 480, 510, 26)];
   const s4 = align('04_inicio', 22.0, fNov, 8, { hold: 22.6 });
@@ -76,7 +84,7 @@ export const K05Exclusivos: React.FC<P> = (p) => {
         { word: 'exclusivos', label: 'Solo en Podimo', icon: ic(<MicIcon size={32} />) },
         { word: 'video', label: 'Muchos, también en vídeo', icon: ic(<PhoneIcon size={32} />) },
         { word: 'mimicidios', label: 'Mimicidios, Malas personas…', icon: ic(<HeadphonesIcon size={32} />) },
-        { word: 'ondas', label: 'Premiado en los Ondas', icon: ic(<StarIcon size={32} />) },
+        { word: 'premiado', label: 'Premiado en los Ondas', sub: 'Podcast Revelación 2025', icon: ic(<TrophyIcon size={34} />) },
       ]} />
   );
 };
@@ -151,28 +159,49 @@ export const K07Reproductor: React.FC<P> = (p) => {
   );
 };
 
-// Contador de la prueba a 2x: tiempo real frente a tiempo de audiolibro gastado (el reloj de la app baja el doble).
+// Prueba a 2x (v2): dos cronómetros. A la izquierda, el tiempo real; a la derecha, el reloj de Podimo, que con la
+// velocidad a 2x gira el doble de rápido (grabado en la app: 44 s menos en unos 22 s reales).
+const Dial: React.FC<{ label: string; t: number; hot: boolean; s: number; size?: number }> = ({ label, t, hot, s, size = 196 }) => {
+  const r = size / 2;
+  const ang = (t / 60) * 360; // una vuelta por minuto
+  const c = hot ? PV : color.ink;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: s, transform: `translateY(${((1 - s) * 30).toFixed(2)}px) scale(${(0.86 + 0.14 * s).toFixed(4)})` }}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+        <circle cx={r} cy={r} r={r - 6} fill="#fff" stroke={hot ? PV : '#E6E6E6'} strokeWidth={hot ? 6 : 4} />
+        {Array.from({ length: 60 }, (_, i) => {
+          const big = i % 5 === 0;
+          const a = (i / 60) * Math.PI * 2;
+          const r1 = r - 16, r2 = r - (big ? 34 : 24);
+          return <line key={i} x1={r + r1 * Math.sin(a)} y1={r - r1 * Math.cos(a)} x2={r + r2 * Math.sin(a)} y2={r - r2 * Math.cos(a)} stroke={big ? color.ink : '#C9C9C9'} strokeWidth={big ? 4 : 2} strokeLinecap="round" />;
+        })}
+        {/* sector recorrido */}
+        <path d={`M ${r} ${r} L ${r} ${r - (r - 40)} A ${r - 40} ${r - 40} 0 ${ang % 360 > 180 ? 1 : 0} 1 ${r + (r - 40) * Math.sin((ang * Math.PI) / 180)} ${r - (r - 40) * Math.cos((ang * Math.PI) / 180)} Z`}
+          fill={hot ? 'rgba(168,155,237,0.28)' : 'rgba(16,16,16,0.08)'} />
+        <line x1={r} y1={r} x2={r + (r - 46) * Math.sin((ang * Math.PI) / 180)} y2={r - (r - 46) * Math.cos((ang * Math.PI) / 180)} stroke={c} strokeWidth={7} strokeLinecap="round" />
+        <circle cx={r} cy={r} r={11} fill={c} />
+      </svg>
+      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: hot ? PV_DEEP : color.ink, fontVariantNumeric: 'tabular-nums', lineHeight: 1 }}>
+        0:{String(Math.floor(t)).padStart(2, '0')}
+      </div>
+      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: hot ? PV_DEEP : color.ink2 }}>{label}</div>
+    </div>
+  );
+};
 const DoubleClock: React.FC<{ at: number }> = ({ at }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const s = spring({ frame: frame - at, fps, config: { damping: 15, stiffness: 160 } });
-  if (frame < at - 1) return <div style={{ height: 150 }} />;
-  const real = Math.floor(Math.max(0, (frame - at - 8) / fps));
-  const fmt = (t: number) => `0:${String(Math.floor(t)).padStart(2, '0')}`;
-  const row = (label: string, val: string, hot: boolean, w: number) => (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 18 }}>
-      <div style={{ width: 230, fontFamily: font.sans, fontWeight: 500, fontSize: 28, color: color.ink2, whiteSpace: 'nowrap' }}>{label}</div>
-      <div style={{ flex: 1, height: 14, borderRadius: 7, background: '#EEE', overflow: 'hidden' }}>
-        <div style={{ height: '100%', width: `${Math.min(100, w)}%`, background: hot ? PV : color.ink, borderRadius: 7 }} />
-      </div>
-      <div style={{ width: 92, textAlign: 'right', fontFamily: font.sans, fontWeight: 700, fontSize: 34, color: hot ? PV_DEEP : color.ink, fontVariantNumeric: 'tabular-nums' }}>{val}</div>
-    </div>
-  );
+  const sA = spring({ frame: frame - at, fps, config: { damping: 15, stiffness: 160 } });
+  const sB = spring({ frame: frame - at - 5, fps, config: { damping: 15, stiffness: 160 } });
+  if (frame < at - 1) return <div style={{ height: 316 }} />;
+  const real = Math.max(0, (frame - at - 10) / fps);
+  const badge = spring({ frame: frame - at - 12, fps, config: { damping: 10, stiffness: 220 } });
   return (
-    <div style={{ marginTop: 34, width: 700, padding: '24px 30px', borderRadius: 30, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.float,
-      display: 'flex', flexDirection: 'column', gap: 16, opacity: s, transform: `translateY(${(1 - s) * 30}px)` }}>
-      {row('Tiempo real', fmt(real), false, (real / 20) * 100)}
-      {row('Gastado a 2x', fmt(real * 2), true, ((real * 2) / 20) * 100)}
+    <div style={{ marginTop: 26, height: 290, display: 'flex', alignItems: 'center', gap: 34 }}>
+      <Dial label="Tiempo real" t={real} hot={false} s={sA} />
+      <div style={{ padding: '10px 20px', borderRadius: 999, background: color.ink, color: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 40,
+        opacity: badge, transform: `scale(${(0.5 + 0.5 * badge).toFixed(4)})` }}>×2</div>
+      <Dial label="Reloj de Podimo" t={real * 2} hot s={sB} />
     </div>
   );
 };
@@ -193,7 +222,7 @@ export const K08Horas: React.FC<P> = (p) => {
   const s2 = align('09_velocidad', 50.0, fDoble, 10, {});
   s2.marks = [markOn(s2, fDoble, p.dur + 10, 92, 58, 196, 68, 34), markOn(s2, fDoble + 8, p.dur + 10, 486, 58, 92, 68, 34)];
   return (
-    <AppFeatureScene {...p} id="K08" title="Ojo con las horas" shots={[s0, s1, s2]}
+    <AppFeatureScene {...p} id="K08" title="Ojo con las horas" shots={[s0, s1, s2]} titleSize={96} tagSize={42} tagGap={16}
       focusExtra={[]}
       tags={[
         { word: 'reloj', label: 'Lo que te queda este mes', icon: ic(<ClockIcon size={32} />) },

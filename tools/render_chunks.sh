@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Render largo por tramos (un navegador nuevo en cada tramo, para que Chrome no se quede sin memoria),
 # vídeo sin audio por tramos + audio completo aparte, y unión sin recodificar el vídeo.
-# Uso: tools/render_chunks.sh <composición> <salida.mkv> [fotogramas_por_tramo=3000]
+# Uso: [SCALE=1.3333333333333333] tools/render_chunks.sh <composición> <salida.mkv> [fotogramas_por_tramo=3000]
 # La salida lleva el audio en PCM: pásala después por tools/master.sh para el AAC a -14 LUFS.
 set -euo pipefail
 cd "$(dirname "$0")/../video"
 COMP="$1"; OUT="$2"; CHUNK="${3:-3000}"
+# SCALE=1.3333333333333333 renderiza a 2560x1440 (la composición sigue en 1920x1080): más nitidez y más calidad en YouTube.
+SCALE="${SCALE:-1}"
 TMP="out/chunks/$COMP"
 mkdir -p "$TMP"
 TOTAL=$(npx remotion compositions src/index.ts 2>/dev/null | awk -v c="$COMP" '$1==c {print $4}')
@@ -17,7 +19,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
   b=$((a + CHUNK - 1)); [ "$b" -ge "$TOTAL" ] && b=$((TOTAL - 1))
   part="$TMP/part_$(printf %02d $i).mp4"
   if [ ! -s "$part" ]; then
-    npx remotion render src/index.ts "$COMP" "$part" --frames="$a-$b" --concurrency=2 --crf=16 --muted \
+    npx remotion render src/index.ts "$COMP" "$part" --frames="$a-$b" --concurrency=2 --crf=16 --muted --scale="$SCALE" \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
   fi
   echo "file '$(basename "$part")'" >> "$TMP/list.txt"

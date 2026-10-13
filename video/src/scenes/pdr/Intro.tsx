@@ -3,12 +3,12 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
-import { Sfx } from '../../components/Sfx';
+import { ChangeTicks, Sfx } from '../../components/Sfx';
 import { CheckIcon, CrossIcon, HeadphonesIcon, MicIcon } from '../../components/Icons';
-import { ClockIcon, DocIcon, LockIcon } from '../../components/Icons2';
+import { CalendarIcon, ClockIcon, DocIcon, LockIcon } from '../../components/Icons2';
 import { wf } from './timeline';
 import type { SceneProps } from './registry';
-import { AppPhone, buildPhoneCam, Chip, CountUp, MaskTitle, PH, PhoneHalo, PHONE_W, PodimoLogo, PV, PV_DEEP, PV_SOFT, Sheen, Shot, SoloBadge, zoomPeaks } from './kit';
+import { AppPhone, buildPhoneCam, Chip, MaskTitle, Odometer, odometerShown, PdrStage, PH, PhoneHalo, PHONE_W, PodimoLogo, PV, PV_DEEP, PV_SOFT, SegBar, segFrames, Sheen, Shot, SoloBadge, zoomPeaks } from './kit';
 
 type P = SceneProps;
 const useSpring = (at: number, damping = 16, stiffness = 160) => {
@@ -76,7 +76,7 @@ export const K01Hook: React.FC<P> = ({ lead, dur }) => {
     ],
   });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill>
         <PhoneHalo cam={cam} cx={cx} />
         <div style={{ position: 'absolute', top, left: cx - PH.W / 2 }}>
@@ -88,20 +88,20 @@ export const K01Hook: React.FC<P> = ({ lead, dur }) => {
               <PodimoLogo width={250} />
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 22px 10px 12px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.soft,
-              fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: color.ink, opacity: sInst, transform: `translateX(${(1 - sInst) * -24}px) scale(${0.85 + 0.15 * sInst})`, transformOrigin: 'left center' }}>
-              <CheckIcon size={34} /> Instalada y probada a fondo
+              fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: color.ink, opacity: sInst, transform: `translateX(${(1 - sInst) * -24}px) scale(${0.85 + 0.15 * sInst})`, transformOrigin: 'left center' }}>
+              <CheckIcon size={38} /> Instalada y probada a fondo
             </div>
           </div>
           <MaskTitle text="¿Merece la pena Podimo?" hi="Podimo?" at={lead - 2} size={122} stagger={4} />
-          <div style={{ display: 'flex', gap: 16, marginTop: 50, minHeight: 64 }}>
+          <div style={{ display: 'flex', gap: 16, marginTop: 52, minHeight: 74 }}>
             <Chip at={fPod - 3} dimAt={fAud - 3} label="Pódcasts exclusivos" icon={<MicIcon size={26} />} size={30} reserve />
             <Chip at={fAud - 3} dimAt={fLetra - 3} label="Audiolibros" icon={<HeadphonesIcon size={26} />} size={30} reserve />
             <Chip at={fLetra - 3} dimAt={fBueno - 3} label="Letra pequeña" icon={<DocIcon size={26} />} size={30} reserve />
           </div>
-          <div style={{ display: 'flex', gap: 18, marginTop: 22, minHeight: 72 }}>
-            <Chip at={fBueno - 3} label="Lo bueno" icon={<CheckIcon size={30} c={color.green} />} accent="#E3F5EA" size={36} reserve />
-            <Chip at={fMalo - 3} label="Lo malo" icon={<CrossIcon size={30} />} accent="#FDECEC" size={36} reserve />
-            <Chip at={fGratis - 3} label="30 días gratis" size={36} dark reserve />
+          <div style={{ display: 'flex', gap: 18, marginTop: 24, minHeight: 86 }}>
+            <Chip at={fBueno - 3} label="Lo bueno" icon={<CheckIcon size={36} c={color.green} />} accent="#E3F5EA" size={42} reserve />
+            <Chip at={fMalo - 3} label="Lo malo" icon={<CrossIcon size={36} />} accent="#FDECEC" size={42} reserve />
+            <Chip at={fGratis - 3} label="30 días gratis" size={42} dark reserve />
           </div>
         </div>
       </AbsoluteFill>
@@ -115,18 +115,22 @@ export const K01Hook: React.FC<P> = ({ lead, dur }) => {
       <Sfx name="ui_pop" at={fBueno - 2} />
       <Sfx name="ui_pop" at={fMalo - 2} />
       <Sfx name="sparkle" at={fGratis - 2} />
-    </Stage>
+    </PdrStage>
   );
 };
 
-// K02 · Qué es: app danesa en España desde 2020, el sello «Solo en Podimo» y miles de audiolibros. El móvil acompaña.
+// K02 · Qué es (v2): el logotipo, «pódcasts y audiolibros» y el viaje Copenhague → España (un punto lila recorre el arco y
+// deja la estela); luego «Pódcasts que solo están aquí» con el sello que cae como un tampón y, al final, «Miles» de
+// audiolibros en español. El móvil acompaña con la app real.
 export const K02Que: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('K02', w, n);
   const fDanesa = at('danesa');
   const fPod = at('podcasts');
   const fAud = at('audiolibros');
   const fEspana = at('espana');
+  const fDos = at('dos');
   const fGancho = at('gancho');
   const fSello = at('sello');
   const fAdemas = at('ademas');
@@ -135,13 +139,25 @@ export const K02Que: React.FC<P> = ({ lead, dur }) => {
   const B = usePhase(fGancho - 6, fAdemas - 4);
   const C = usePhase(fAdemas - 4, dur + 20);
   const sLogo = useSpring(2);
-  const sDk = useSpring(fDanesa - 4, 14, 170);
-  const sEs = useSpring(fEspana - 4, 14, 170);
-  const arrow = interpolate(frame, [fEspana - 8, fEspana + 8], [0, 1], { ...clamp, easing: easeOut });
-  const sYear = useSpring(fEspana + 6, 12, 180);
-  const sSello = useSpring(fSello - 4, 11, 170);
-  const sMiles = useSpring(fMiles - 6, 14, 150);
-  // El móvil: la portada; en el gancho, las portadas «Solo en podimo» de los pódcasts; en «miles», los audiolibros.
+  const sCard = useSpring(fDanesa - 10, 16, 150);
+  const sDk = useSpring(fDanesa - 4, 13, 180);
+  const sEs = useSpring(fEspana + 2, 12, 190);
+  // Viaje: el arco se dibuja y el punto lo recorre (acelera y frena) justo antes de «España».
+  const trip = interpolate(frame, [fEspana - 18, fEspana + 4], [0, 1], { ...clamp, easing: easeInOut });
+  const ring = interpolate(frame, [fEspana + 2, fEspana + 26], [0, 1], { ...clamp, easing: easeOut });
+  const P0 = [196, 112], P1 = [450, -46], P2 = [704, 112];
+  const bez = (t: number) => [
+    (1 - t) ** 2 * P0[0] + 2 * (1 - t) * t * P1[0] + t * t * P2[0],
+    (1 - t) ** 2 * P0[1] + 2 * (1 - t) * t * P1[1] + t * t * P2[1],
+  ];
+  const [dx, dy] = bez(trip);
+  const ARC = 620; // largo aproximado del arco (para el trazo)
+  const sSello = spring({ frame: frame - (fSello - 2), fps, config: { damping: 10, stiffness: 210 } });
+  const stampP = interpolate(frame, [fSello - 6, fSello + 2], [0, 1], { ...clamp, easing: (t) => t * t * t });
+  const stampRing = interpolate(frame, [fSello + 2, fSello + 22], [0, 1], { ...clamp, easing: easeOut });
+  const sMiles = useSpring(fMiles - 6, 13, 150);
+  const under = interpolate(frame, [fMiles + 4, fMiles + 20], [0, 1], { ...clamp, easing: easeOut });
+  const sEsp = useSpring(fMiles + 8, 16, 160);
   const shots: Shot[] = [
     { rec: '15_inicio_top', at: 0, start: 3.0, hold: 15 },
     { rec: '01_int_pod', at: fGancho - 6, start: 1.0, hold: 6, marks: [
@@ -153,164 +169,222 @@ export const K02Que: React.FC<P> = ({ lead, dur }) => {
   const top = Math.round((1080 - PH.H) / 2);
   const cam = buildPhoneCam({ dur, side: -1, cx, top, enter: 'rise', exit: 'none', focus: [{ from: fSello, to: fAdemas - 2, y: 456, s: 1.3 }] });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <PhoneHalo cam={cam} cx={cx} />
       <div style={{ position: 'absolute', top, left: cx - PH.W / 2 }}>
         <AppPhone shots={shots} w={PHONE_W} cam={cam} dim={0.72} motionBlur float={[0, dur]} />
       </div>
       {A.visible && (
-        <div style={{ position: 'absolute', left: 140, top: 0, height: 1080, width: 1000, display: 'flex', flexDirection: 'column', justifyContent: 'center', ...A.style }}>
-          <div style={{ opacity: sLogo, transform: `translateY(${(1 - sLogo) * 24}px)` }}>
-            <PodimoLogo width={330} />
+        <div style={{ position: 'absolute', left: 130, top: 0, height: 1080, width: 1020, display: 'flex', flexDirection: 'column', justifyContent: 'center', ...A.style }}>
+          <div style={{ opacity: sLogo, transform: `translateY(${((1 - sLogo) * 24).toFixed(2)}px)` }}>
+            <PodimoLogo width={400} />
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 40, minHeight: 76 }}>
-            <Chip at={fPod - 3} label="Pódcasts" icon={<MicIcon size={30} />} size={36} reserve />
-            <Chip at={fAud - 3} label="Audiolibros" icon={<HeadphonesIcon size={30} />} size={36} reserve />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginTop: 40, minHeight: 92 }}>
+            <Chip at={fPod - 3} label="Pódcasts" icon={<MicIcon size={36} />} size={44} reserve />
+            <Chip at={fAud - 3} label="Audiolibros" icon={<HeadphonesIcon size={36} />} size={44} reserve />
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 26, marginTop: 44 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '16px 26px', borderRadius: 26, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card,
-              fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink, opacity: sDk, transform: `translateY(${(1 - sDk) * 30}px) scale(${0.9 + 0.1 * sDk})` }}>
-              <FlagDK w={60} /> Copenhague
-            </div>
-            <svg width="110" height="40" viewBox="0 0 110 40" style={{ opacity: arrow }}>
-              <path d={`M6 20 H ${6 + 86 * arrow}`} stroke={color.ink} strokeWidth="5" strokeLinecap="round" />
-              <path d="M80 7 L96 20 L80 33" stroke={color.ink} strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={arrow} />
+          {/* Copenhague → España */}
+          <div style={{ position: 'relative', width: 900, height: 250, marginTop: 40, borderRadius: 40, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card,
+            opacity: sCard, transform: `translateY(${((1 - sCard) * 40).toFixed(2)}px) scale(${(0.94 + 0.06 * sCard).toFixed(4)})`, transformOrigin: 'left center' }}>
+            <svg width="900" height="250" viewBox="0 0 900 250" style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
+              <path d={`M${P0[0]} ${P0[1]} Q ${P1[0]} ${P1[1]} ${P2[0]} ${P2[1]}`} fill="none" stroke="#E4E1F7" strokeWidth={5} strokeLinecap="round" strokeDasharray="2 14" opacity={sCard} />
+              <path d={`M${P0[0]} ${P0[1]} Q ${P1[0]} ${P1[1]} ${P2[0]} ${P2[1]}`} fill="none" stroke={PV} strokeWidth={6} strokeLinecap="round" strokeDasharray={`${ARC}`} strokeDashoffset={ARC * (1 - trip)} />
+              {trip > 0 && trip < 1 && <circle cx={dx} cy={dy} r={26} fill={PV} opacity={0.22} />}
+              {trip > 0 && <circle cx={dx} cy={dy} r={11} fill={PV_DEEP} stroke="#fff" strokeWidth={4} />}
+              {ring > 0 && ring < 1 && <circle cx={P2[0]} cy={P2[1]} r={20 + 70 * ring} fill="none" stroke={PV} strokeWidth={5 * (1 - ring) + 0.5} opacity={0.8 * (1 - ring)} />}
             </svg>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '16px 26px', borderRadius: 26, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.card,
-              fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink, opacity: sEs, transform: `translateY(${(1 - sEs) * 30}px) scale(${0.9 + 0.1 * sEs})` }}>
-              <FlagES w={60} /> España
-              <span style={{ marginLeft: 6, padding: '6px 16px', borderRadius: 999, background: color.yellow, fontSize: 34, transform: `scale(${sYear})`, display: 'inline-block' }}>2020</span>
+            <div style={{ position: 'absolute', left: 60, top: 64, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, width: 270, marginLeft: -0,
+              opacity: sDk, transform: `translateY(${((1 - sDk) * 26).toFixed(2)}px) scale(${(0.8 + 0.2 * sDk).toFixed(4)})` }}>
+              <FlagDK w={100} />
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink }}>Copenhague</div>
+            </div>
+            <div style={{ position: 'absolute', left: 570, top: 64, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, width: 270,
+              opacity: sEs, transform: `translateY(${((1 - sEs) * 26).toFixed(2)}px) scale(${(0.8 + 0.2 * sEs).toFixed(4)})` }}>
+              <FlagES w={100} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink }}>
+                España
+                {frame >= fDos - 8 && (
+                  <span style={{ padding: '6px 16px', borderRadius: 999, background: color.yellow, fontSize: 34 }}>
+                    <Odometer text="2020" at={fDos - 8} size={34} dur={26} stagger={2} spins={0} />
+                  </span>
+                )}
+              </div>
             </div>
           </div>
         </div>
       )}
       {B.visible && (
-        <div style={{ position: 'absolute', left: 140, top: 0, height: 1080, width: 1040, display: 'flex', flexDirection: 'column', justifyContent: 'center', ...B.style }}>
-          <MaskTitle text="Pódcasts que solo están aquí" hi="solo" at={fGancho - 4} size={92} />
-          <div style={{ marginTop: 56, transform: `scale(${0.6 + 0.4 * sSello}) rotate(${(1 - sSello) * -8}deg)`, opacity: sSello, transformOrigin: 'left center' }}>
-            <SoloBadge size={64} />
+        <div style={{ position: 'absolute', left: 130, top: 0, height: 1080, width: 1080, display: 'flex', flexDirection: 'column', justifyContent: 'center', ...B.style }}>
+          <MaskTitle text={'Pódcasts que solo\nestán aquí'} hi="solo" at={fGancho - 4} size={104} />
+          <div style={{ position: 'relative', marginTop: 64, alignSelf: 'flex-start' }}>
+            {stampRing > 0 && stampRing < 1 && (
+              <div style={{ position: 'absolute', inset: -10, borderRadius: 999, border: `${(6 * (1 - stampRing) + 1).toFixed(2)}px solid ${color.ink}`, opacity: 0.35 * (1 - stampRing), transform: `scale(${1 + 0.35 * stampRing})` }} />
+            )}
+            <div style={{ opacity: Math.min(1, stampP * 2), transform: `scale(${(frame < fSello + 2 ? 1.9 - 0.9 * stampP : 0.94 + 0.06 * sSello).toFixed(4)}) rotate(${(-12 + 9 * Math.min(1, stampP)).toFixed(2)}deg)`, transformOrigin: 'left center',
+              filter: `drop-shadow(0 ${(8 + 30 * (1 - stampP)).toFixed(1)}px ${(16 + 30 * (1 - stampP)).toFixed(1)}px rgba(16,16,16,0.22))` }}>
+              <SoloBadge size={76} />
+            </div>
           </div>
         </div>
       )}
       {C.visible && (
-        <div style={{ position: 'absolute', left: 140, top: 0, height: 1080, width: 1040, display: 'flex', flexDirection: 'column', justifyContent: 'center', ...C.style }}>
-          <MaskTitle text="Y, además, audiolibros" hi="audiolibros" at={fAdemas - 2} size={92} />
-          <div style={{ marginTop: 44, display: 'flex', alignItems: 'baseline', gap: 22, fontFamily: font.sans, fontWeight: 700, color: color.ink, opacity: sMiles, transform: `translateY(${(1 - sMiles) * 40}px)` }}>
-            <span style={{ fontSize: 150, letterSpacing: -6, lineHeight: 1 }}>Miles</span>
-            <span style={{ fontSize: 48, color: color.ink2 }}>en español</span>
+        <div style={{ position: 'absolute', left: 130, top: 0, height: 1080, width: 1080, display: 'flex', flexDirection: 'column', justifyContent: 'center', ...C.style }}>
+          <MaskTitle text="Y, además, audiolibros" hi="audiolibros" at={fAdemas - 2} size={100} />
+          <div style={{ marginTop: 40, display: 'flex', alignItems: 'flex-end', gap: 30, fontFamily: font.sans, fontWeight: 700, color: color.ink }}>
+            <div style={{ position: 'relative', opacity: sMiles, transform: `translateY(${((1 - sMiles) * 50).toFixed(2)}px) scale(${(0.86 + 0.14 * sMiles).toFixed(4)})`, transformOrigin: 'left bottom' }}>
+              <span style={{ fontSize: 220, letterSpacing: -10, lineHeight: 0.86, display: 'block' }}>Miles</span>
+              <div style={{ position: 'absolute', left: 6, right: 6, bottom: -22, height: 16, borderRadius: 8, background: PV, transform: `scaleX(${under.toFixed(4)})`, transformOrigin: 'left center' }} />
+            </div>
+            <div style={{ fontSize: 50, lineHeight: 1.1, color: color.ink2, paddingBottom: 8, opacity: sEsp, transform: `translateX(${((1 - sEsp) * -24).toFixed(2)}px)` }}>
+              de audiolibros<br />en español
+            </div>
           </div>
         </div>
       )}
       <Sfx name="ui_pop" at={fPod - 2} />
       <Sfx name="ui_pop" at={fAud - 2} />
       <Sfx name="snap_in" at={fDanesa} volume={0.7} />
-      <Sfx name="swipe" at={fEspana - 2} volume={0.6} />
-      <Sfx name="tick_soft" at={fEspana + 8} />
+      <Sfx name="whoosh_soft" at={fEspana - 7} volume={0.7} />
+      <Sfx name="hit_soft" at={fEspana + 3} volume={0.6} />
+      <ChangeTicks value={(f) => odometerShown('2020', fDos - 8, fps, f, 26, 2, 0)} from={fDos - 8} to={fDos + 30} volume={0.4} />
       <Sfx name="whoosh_soft" at={fGancho - 10} />
-      <Sfx name="stamp" at={fSello + 2} volume={0.7} />
+      <Sfx name="stamp" at={fSello + 2} volume={0.8} />
       {zoomPeaks(cam, 2, dur - 2).map((f) => <Sfx key={`z${f}`} name="zoom_in" at={f} volume={0.4} />)}
       <Sfx name="whoosh_soft" at={fAdemas - 8} />
       <Sfx name="hit_soft" at={fMiles - 2} volume={0.7} />
-    </Stage>
+      <Sfx name="draw" at={fMiles + 4} volume={0.5} dur={18} fade={8} />
+    </PdrStage>
   );
 };
 
-// K03 · Planes: Premium y Premium Plus se voltean al nombrarlos (la que suena se adelanta con un aro); después, el pago
-// anual bajo cada tarjeta y, al final, Podimo Free (solo pódcasts abiertos).
+// K03 · Planes (v2): Premium entra sola en el centro y se aparta cuando llega Premium Plus; los precios giran como un
+// contador mecánico, las horas se llenan en tramos de 10 h (2 frente a 10), el pago anual aparece dentro de cada tarjeta y,
+// con Podimo Free, las dos de pago se desenfocan al fondo y la gratuita sube en primer plano.
 export const K03Planes: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('K03', w, n);
   const fPrem = at('premium');
+  const fCuatro = at('cuatro');
   const fVeinte = at('veinte');
   const fPods = at('podcasts');
   const fPlus = at('plus');
+  const fNueve2 = at('nueve', 1);
   const fCien = at('cien');
   const fAno = at('ano');
+  const fCuarenta = at('cuarenta');
+  const fNov3 = at('noventa', 3);
+  const fPagar = at('pagar');
   const fFree = at('free');
   const fAbiertos = at('abiertos');
+  const CW = 700;
+  const GAP = 56;
   const plans = [
-    { name: 'Premium', price: 4.99, hours: 20, f: fPrem, fh: fVeinte, year: '49,99 €', tag: 'El más popular' },
-    { name: 'Premium Plus', price: 9.99, hours: 100, f: fPlus, fh: fCien, year: '99,99 €', tag: '' },
+    { name: 'Premium', price: '4,99', pAt: fCuatro - 8, hours: 20, segAt: fVeinte - 2, f: fPrem, year: '49,99', yAt: fCuarenta - 2, tag: 'El más popular', podsAt: fPods - 2 },
+    { name: 'Premium Plus', price: '9,99', pAt: fNueve2 - 8, hours: 100, segAt: fCien - 4, f: fPlus - 4, year: '99,99', yAt: fNov3 - 2, tag: '', podsAt: fPlus + 14 },
   ];
-  const activeAt = (i: number) => {
-    const win = [[fPrem - 6, fPlus - 6], [fPlus - 6, fAno - 6]][i];
-    return interpolate(frame, [win[0], win[0] + 8, win[1] - 6, win[1]], [0, 1, 1, 0], clamp);
+  const winA = [[fPrem - 6, fPlus - 8], [fPlus - 8, fAno - 6]];
+  const activeAt = (i: number) => interpolate(frame, [winA[i][0], winA[i][0] + 8, winA[i][1] - 6, winA[i][1]], [0, 1, 1, 0], clamp);
+  // Premium sola en el centro; al llegar Plus, se aparta a la izquierda (muelle).
+  const split = spring({ frame: frame - (fPlus - 12), fps, config: { damping: 17, stiffness: 120 } });
+  // Podimo Free: las de pago se van al fondo (desenfoque) y la gratuita sube.
+  const sFree = spring({ frame: frame - fPagar + 2, fps, config: { damping: 16, stiffness: 140 } });
+  const back = interpolate(frame, [fPagar - 4, fPagar + 14], [0, 1], { ...clamp, easing: easeInOut });
+  const freeAct = interpolate(frame, [fFree - 4, fFree + 6], [0, 1], clamp);
+  const lockIn = spring({ frame: frame - fAbiertos + 2, fps, config: { damping: 12, stiffness: 200 } });
+  const sTitle = interpolate(frame, [fPagar - 6, fPagar + 10], [0, 1], { ...clamp, easing: easeInOut });
+  const yearLine = (p: (typeof plans)[number], hot: boolean) => {
+    const sy = spring({ frame: frame - p.yAt, fps, config: { damping: 13, stiffness: 190 } });
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 20, height: 56, opacity: sy, transform: `translateY(${((1 - sy) * 14).toFixed(2)}px)` }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '10px 22px 10px 16px', borderRadius: 999, background: hot ? 'rgba(168,155,237,0.18)' : PV_SOFT,
+          fontFamily: font.sans, fontWeight: 700, fontSize: 31, color: hot ? '#fff' : color.ink, transform: `scale(${(0.9 + 0.1 * sy).toFixed(4)})`, transformOrigin: 'left center' }}>
+          <CalendarIcon size={34} c={hot ? PV : PV_DEEP} /> o <span style={{ color: hot ? PV : PV_DEEP }}>{p.year} €</span> al año
+        </span>
+      </div>
+    );
   };
-  const sFree = spring({ frame: frame - fFree + 4, fps, config: { damping: 15, stiffness: 150 } });
-  const freeAct = interpolate(frame, [fFree, fFree + 8], [0, 1], clamp);
-  const sPods = spring({ frame: frame - fPods + 2, fps, config: { damping: 14, stiffness: 180 } });
-  const lockIn = spring({ frame: frame - fAbiertos, fps, config: { damping: 11, stiffness: 200 } });
-  const lift = interpolate(frame, [fFree - 10, fFree + 6], [0, 1], { ...clamp, easing: easeInOut });
   return (
-    <Stage tone="warm">
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `translateY(${-24 * lift}px)` }}>
-        <MaskTitle text="Dos planes" hi="planes" at={2} size={78} align="center" style={{ marginBottom: 50 }} />
-        <div style={{ display: 'flex', gap: 44, perspective: 2200, alignItems: 'flex-end' }}>
-          {plans.map((p, i) => {
-            const s = spring({ frame: frame - p.f + 6, fps, config: { damping: 15, stiffness: 140 } });
-            const bar = interpolate(frame, [p.fh - 2, p.fh + 26], [0, 1], { ...clamp, easing: easeOut });
-            const act = activeAt(i);
-            const hot = i === 1;
-            const sYear = spring({ frame: frame - fAno - i * 10, fps, config: { damping: 14, stiffness: 170 } });
-            const dimFree = 1 - 0.35 * freeAct;
-            return (
-              <div key={p.name} style={{ position: 'relative', width: 560, opacity: dimFree }}>
-                <div style={{ position: 'absolute', inset: 0, borderRadius: 44, border: '3px dashed #DADADA', opacity: interpolate(frame, [4 + i * 4, 14 + i * 4], [0, 1], clamp) * (1 - s) }} />
-                <div style={{ position: 'relative', width: 560, padding: '42px 46px 36px', borderRadius: 44, background: hot ? color.ink : '#fff', color: hot ? '#fff' : color.ink,
-                  boxShadow: `0 0 0 ${5 * act}px ${color.yellow}, ${shadow.card}`, border: hot ? 'none' : `1px solid ${color.line}`, boxSizing: 'border-box',
-                  opacity: s, transform: `translateY(${(1 - s) * 90 - 18 * act}px) rotateX(${(1 - s) * 55}deg) scale(${(0.94 + 0.06 * s) * (1 + 0.035 * act)})`, transformOrigin: '50% 100%' }}>
-                  <Sheen at={p.f + 2} tint={hot ? 'rgba(168,155,237,0.28)' : 'rgba(168,155,237,0.30)'} />
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, letterSpacing: -1 }}>{p.name}</div>
-                    {p.tag && <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 22, padding: '8px 16px', borderRadius: 999, background: PV_SOFT, color: PV_DEEP }}>{p.tag}</div>}
-                  </div>
-                  <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 112, letterSpacing: -5, marginTop: 12, color: hot ? PV : color.ink, lineHeight: 1 }}>
-                    <CountUp to={p.price} decimals={2} from={p.f} dur={24} />
-                    <span style={{ fontSize: 46, letterSpacing: -1 }}> €</span>
-                    <span style={{ fontSize: 30, letterSpacing: 0, fontWeight: 500, marginLeft: 12, color: hot ? 'rgba(255,255,255,0.65)' : color.muted }}>al mes</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 30 }}>
-                    <ClockIcon size={46} c={hot ? '#fff' : color.ink} />
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 36 }}>{p.hours} h de audiolibros al mes</div>
-                      <div style={{ height: 12, borderRadius: 6, background: hot ? 'rgba(255,255,255,0.18)' : '#EEE', marginTop: 10, overflow: 'hidden' }}>
-                        <div style={{ height: '100%', width: `${(p.hours / 100) * bar * 100}%`, background: PV, borderRadius: 6 }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 26, paddingTop: 22, borderTop: `1px solid ${hot ? 'rgba(255,255,255,0.15)' : color.line}`,
-                    fontFamily: font.sans, fontWeight: 700, fontSize: 30, opacity: i === 0 ? sPods : interpolate(frame, [fPlus + 10, fPlus + 22], [0, 1], clamp) }}>
-                    <MicIcon size={34} c={hot ? '#fff' : color.ink} /> Todos sus pódcasts, sin anuncios
-                  </div>
-                </div>
-                {/* Pago anual, bajo la tarjeta */}
-                <div style={{ position: 'absolute', left: 0, right: 0, bottom: -84, display: 'flex', justifyContent: 'center', opacity: sYear, transform: `translateY(${(1 - sYear) * -20}px)` }}>
-                  <div style={{ padding: '12px 26px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.soft, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
-                    o <span style={{ color: PV_DEEP }}>{p.year}</span> al año
-                  </div>
-                </div>
+    <PdrStage>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 110, display: 'flex', justifyContent: 'center', opacity: 1 - 0.75 * sTitle, transform: `translateY(${(-60 * sTitle).toFixed(2)}px) scale(${(1 - 0.12 * sTitle).toFixed(4)})`, filter: sTitle > 0.05 ? `blur(${(sTitle * 2.4).toFixed(2)}px)` : undefined }}>
+        <MaskTitle text="Dos planes" hi="planes" at={2} size={88} align="center" />
+      </div>
+      {plans.map((p, i) => {
+        const hot = i === 1;
+        const s = spring({ frame: frame - p.f + 6, fps, config: { damping: 14, stiffness: 130 } });
+        if (frame < p.f - 8) return null;
+        const act = activeAt(i);
+        // Posición: Premium en el centro hasta que llega Plus; luego, cada una en su mitad.
+        const cxSolo = 960;
+        const cxPair = 960 + (i === 0 ? -1 : 1) * (CW + GAP) / 2;
+        const cx = i === 0 ? cxSolo + (cxPair - cxSolo) * split : cxPair;
+        const enterX = i === 1 ? (1 - s) * 140 : 0;
+        const blur = back * 3.2;
+        return (
+          <div key={p.name} style={{ position: 'absolute', left: cx - CW / 2 + enterX, top: 300 - 112 * back, width: CW, perspective: 2200,
+            transform: `scale(${(1 - 0.07 * back).toFixed(4)})`, transformOrigin: '50% 0%', filter: blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : undefined }}>
+            <div style={{ position: 'relative', width: CW, padding: '44px 50px 34px', borderRadius: 48, background: hot ? color.ink : '#fff', color: hot ? '#fff' : color.ink,
+              boxShadow: `0 0 0 ${(5 * act).toFixed(2)}px ${color.yellow}, 0 ${(40 + 30 * act).toFixed(1)}px ${(90 + 30 * act).toFixed(1)}px rgba(16,16,16,${(0.12 + 0.06 * act).toFixed(3)}), 0 8px 24px rgba(16,16,16,0.06)`,
+              border: hot ? 'none' : `1px solid ${color.line}`, boxSizing: 'border-box', opacity: Math.min(1, s * 1.4),
+              transform: `translateY(${((1 - s) * 110 - 16 * act).toFixed(2)}px) rotateX(${((1 - s) * 62).toFixed(2)}deg) scale(${((0.92 + 0.08 * s) * (1 + 0.03 * act)).toFixed(4)})`, transformOrigin: '50% 100%' }}>
+              <Sheen at={p.f + 4} radius={48} tint={hot ? 'rgba(168,155,237,0.30)' : 'rgba(168,155,237,0.32)'} />
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 52, letterSpacing: -1.2 }}>{p.name}</div>
+                {p.tag && <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 25, padding: '9px 18px', borderRadius: 999, background: PV_SOFT, color: PV_DEEP }}>{p.tag}</div>}
               </div>
-            );
-          })}
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginTop: 14, fontFamily: font.sans, fontWeight: 700, color: hot ? PV : color.ink }}>
+                <Odometer text={p.price} at={p.pAt} size={138} color={hot ? PV : color.ink} style={{ letterSpacing: -6 }} />
+                <span style={{ fontSize: 58, letterSpacing: -1, opacity: interpolate(frame, [p.pAt + 10, p.pAt + 20], [0, 1], clamp) }}>€</span>
+                <span style={{ fontSize: 31, fontWeight: 500, color: hot ? 'rgba(255,255,255,0.65)' : color.muted, opacity: interpolate(frame, [p.pAt + 14, p.pAt + 24], [0, 1], clamp) }}>al mes</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 26 }}>
+                <ClockIcon size={48} c={hot ? '#fff' : color.ink} />
+                <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 38, letterSpacing: -0.4 }}>{p.hours} h de audiolibros al mes</div>
+              </div>
+              <SegBar fill={p.hours / 10} at={p.segAt} every={i === 0 ? 5 : 3} h={20} gap={8} on={PV} off={hot ? 'rgba(255,255,255,0.14)' : '#EEEEF2'} style={{ marginTop: 18 }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 24, paddingTop: 22, borderTop: `1px solid ${hot ? 'rgba(255,255,255,0.15)' : color.line}`,
+                fontFamily: font.sans, fontWeight: 700, fontSize: 32, opacity: interpolate(frame, [p.podsAt, p.podsAt + 10], [0, 1], clamp), transform: `translateX(${(interpolate(frame, [p.podsAt, p.podsAt + 14], [-16, 0], { ...clamp, easing: easeOut })).toFixed(2)}px)` }}>
+                <MicIcon size={36} c={hot ? '#fff' : color.ink} /> Todos sus pódcasts, sin anuncios
+              </div>
+              {yearLine(p, hot)}
+            </div>
+          </div>
+        );
+      })}
+      {/* Podimo Free: en primer plano, abajo */}
+      {frame >= fPagar - 6 && (
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 742, display: 'flex', justifyContent: 'center' }}>
+          <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 30, padding: '28px 44px', borderRadius: 40, background: '#fff', border: `1px solid ${color.line}`,
+            boxShadow: `0 0 0 ${(5 * freeAct).toFixed(2)}px ${color.yellow}, 0 40px 90px rgba(16,16,16,0.16)`, opacity: sFree, transform: `translateY(${((1 - sFree) * 120).toFixed(2)}px) scale(${(0.9 + 0.1 * sFree).toFixed(4)})` }}>
+            <Sheen at={fFree} radius={40} tint="rgba(255,202,5,0.35)" />
+            <span style={{ padding: '10px 24px', borderRadius: 999, background: color.ink, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 36 }}>Podimo Free</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 84, letterSpacing: -3, color: color.ink, lineHeight: 1 }}>0 €</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink }}>Solo los pódcasts abiertos</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 10, fontFamily: font.sans, fontWeight: 500, fontSize: 30, color: color.muted, opacity: lockIn, transform: `translateX(${((1 - lockIn) * -18).toFixed(2)}px)`,
+                maxHeight: `${(Math.min(1, lockIn) * 44).toFixed(1)}px`, marginTop: (Math.min(1, lockIn) - 1) * 8, overflow: 'hidden' }}>
+                <LockIcon size={32} c={color.muted} /> Sin exclusivos ni audiolibros
+              </span>
+            </div>
+          </div>
         </div>
-        {/* Podimo Free */}
-        <div style={{ marginTop: 130, display: 'flex', alignItems: 'center', gap: 22, padding: '20px 34px', borderRadius: 30, background: '#fff', border: `1px solid ${color.line}`,
-          boxShadow: `0 0 0 ${4 * freeAct}px ${color.yellow}, ${shadow.float}`, opacity: sFree, transform: `translateY(${(1 - sFree) * 50}px) scale(${0.9 + 0.1 * sFree})`,
-          fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>
-          <span style={{ padding: '6px 18px', borderRadius: 999, background: color.ink, color: '#fff', fontSize: 30 }}>Podimo Free</span>
-          0 € · solo los pódcasts abiertos
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 10, color: color.muted, fontSize: 30, opacity: lockIn, transform: `scale(${0.7 + 0.3 * lockIn})` }}>
-            <LockIcon size={34} c={color.muted} /> sin exclusivos ni audiolibros
-          </span>
-        </div>
-      </AbsoluteFill>
-      {plans.map((p) => <Sfx key={p.name} name="card_flip" at={p.f + 4} />)}
-      <Sfx name="ui_pop" at={fPods} volume={0.6} />
-      <Sfx name="tick_soft" at={fAno + 2} />
-      <Sfx name="tick_soft" at={fAno + 12} volume={0.8} />
+      )}
+      {/* Sonido: volteo al llegar cada tarjeta, tic por cada número que pasa por el contador, tic por tramo de horas,
+          monedas con el pago anual, barrido y golpe con Free, cruz con «abiertos». */}
+      <Sfx name="card_flip" at={plans[0].f + 2} />
+      <Sfx name="card_flip" at={plans[1].f + 2} />
+      <Sfx name="swipe" at={fPlus - 6} volume={0.5} />
+      {plans.map((p) => (
+        <ChangeTicks key={`o${p.name}`} value={(f) => odometerShown(p.price, p.pAt, fps, f)} from={p.pAt} to={p.pAt + 40} volume={0.5} />
+      ))}
+      {plans.map((p, i) => segFrames(p.hours / 10, p.segAt, i === 0 ? 5 : 3).map((f, k) => <Sfx key={`s${i}${k}`} name="tick_soft" at={f} volume={0.55 + 0.3 * (k / Math.max(1, p.hours / 10 - 1))} />))}
+      <Sfx name="ui_pop" at={plans[0].podsAt + 2} volume={0.6} />
+      <Sfx name="ui_pop" at={plans[1].podsAt + 2} volume={0.5} />
+      <Sfx name="coins" at={plans[0].yAt + 4} volume={0.55} />
+      <Sfx name="tick_soft" at={plans[1].yAt + 4} volume={0.8} />
+      <Sfx name="whoosh_soft" at={fPagar + 2} volume={0.7} />
       <Sfx name="ui_pop" at={fFree - 2} />
-      <Sfx name="cross" at={fAbiertos + 1} volume={0.6} />
-    </Stage>
+      <Sfx name="cross" at={fAbiertos + 3} volume={0.55} />
+    </PdrStage>
   );
 };

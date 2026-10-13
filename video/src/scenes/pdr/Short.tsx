@@ -2,7 +2,6 @@ import React from 'react';
 import { AbsoluteFill, Audio, Easing, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
-import { Stage } from '../../components/Stage';
 import { ChangeTicks, Sfx, STEM } from '../../components/Sfx';
 import { Logo, LogoIcon } from '../../components/Logo';
 import { Pill } from '../../components/Pill';
@@ -13,7 +12,7 @@ import { VOS, voSrc } from '../../lib/vo';
 import { FeatureTag } from '../nxr/kit';
 import cfg from '../../../public/pdr/vo/vo.json';
 import { hasVO, speechFrames, wf } from './timeline';
-import { align, AppPhone, BigTitle, markOn, PhoneKey, PodimoLogo, PV, Shot, Tap } from './kit';
+import { align, AppPhone, BigTitle, markOn, PdrStage, PhoneKey, PodimoLogo, PV, Shot, Tap } from './kit';
 
 // Versión vertical (Shorts, Reels, TikTok) de la reseña de Podimo: 7 piezas (M01–M07) con el móvil real y subtítulos.
 const FPS = 50;
@@ -109,13 +108,13 @@ const Phone: React.FC<{ shots: Shot[]; dur: number; taps?: Tap[]; from?: Partial
 const M01: React.FC<SP> = ({ lead, dur }) => {
   const at = (w: string, n = 0) => lead + wf('M01', w, n);
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <Headline text="¿Merece la pena Podimo?" hi="Podimo?" />
       <SwapTag items={[{ at: at('probado'), label: 'Lo hemos probado a fondo', dark: true }]} />
       <Phone dur={dur} shots={[{ rec: '15_inicio_top', at: 0, start: 3.0, hold: 15.0 }]} from={{ rx: 16, ry: -40, rz: 7, s: 0.82, y: 140 }} />
       <Sfx name="whoosh_deep" at={2} volume={0.8} />
       <Sfx name="ui_pop" at={at('probado')} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -130,7 +129,7 @@ const M02: React.FC<SP> = ({ lead, dur }) => {
   const s1: Shot = { rec: '16_audiolibros', at: fVeinte - 6, start: 12.6, hold: 16.0 };
   s1.marks = [markOn(s1, fVeinte + 2, dur + 10, 8, 372, 656, 300, 22)];
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <Headline text="Pódcasts y audiolibros" hi="audiolibros" />
       <SwapTag items={[
         { at: fEur, label: '4,99 € al mes', dark: true },
@@ -139,7 +138,7 @@ const M02: React.FC<SP> = ({ lead, dur }) => {
       ]} />
       <Phone dur={dur} shots={[s0, s1]} />
       {[fEur, fPod, fVeinte].map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.8} />)}
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -154,7 +153,7 @@ const M03: React.FC<SP> = ({ lead, dur }) => {
   const s1 = align('09_velocidad', 50.0, fDoble, 8, {});
   s1.marks = [markOn(s1, fDoble, dur + 10, 92, 58, 196, 68, 34), markOn(s1, fDoble + 8, dur + 10, 486, 58, 92, 68, 34)];
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <Headline text="Ojo con las horas" hi="horas" />
       <SwapTag items={[
         { at: fRein, label: 'Se reinician cada mes' },
@@ -163,7 +162,7 @@ const M03: React.FC<SP> = ({ lead, dur }) => {
       ]} />
       <Phone dur={dur} shots={[s0, s1]} />
       {[fRein, fAcum, fDoble].map((f, i) => <Sfx key={i} name="ui_pop" at={f} volume={0.8} />)}
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -180,7 +179,7 @@ const M04: React.FC<SP> = ({ lead }) => {
   ];
   const s = spring({ frame: frame - fMalo + 6, fps, config: { damping: 16, stiffness: 150 } });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center', paddingTop: 470 }}>
         <div style={{ width: 920, borderRadius: 44, background: '#fff', boxShadow: shadow.card, border: `1px solid ${color.line}`, overflow: 'hidden', opacity: s, transform: `translateY(${(1 - s) * 80}px)` }}>
           <div style={{ padding: '34px 48px', background: color.red, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 72, display: 'flex', alignItems: 'center', gap: 22 }}>
@@ -204,7 +203,7 @@ const M04: React.FC<SP> = ({ lead }) => {
       </AbsoluteFill>
       <Sfx name="whoosh_soft" at={fMalo} />
       {items.map((it, i) => <Sfx key={i} name="hit_soft" at={it.f} volume={0.7} />)}
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -227,7 +226,7 @@ const M05: React.FC<SP> = ({ lead }) => {
   const sFine = spring({ frame: frame - LAND - 8, fps, config: { damping: 18, stiffness: 140 } });
   const bump = frame < LAND ? 0 : frame < LAND + 2 ? (frame - LAND) / 2 : interpolate(frame, [LAND + 2, LAND + 20], [1, 0], { ...clamp, easing: easeOut });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center' }}>
         <div style={{ position: 'absolute', top: 200, display: 'flex', alignItems: 'center', gap: 26, opacity: sLogos, transform: `translateY(${(1 - sLogos) * -30 + (1 - lift) * 520}px) scale(${(1 + 0.6 * (1 - lift)) * (1 + 0.05 * pulse)})` }}>
           <LogoIcon size={84} />
@@ -256,7 +255,7 @@ const M05: React.FC<SP> = ({ lead }) => {
       <Sfx name="riser" at={LAND} volume={0.8} />
       <ChangeTicks value={(f) => String(rollAt(f))} from={rollFrom} to={LAND} volume={0.8} />
       <Sfx name="impact" at={LAND} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -278,7 +277,7 @@ const M06: React.FC<SP> = ({ lead }) => {
     <div style={{ width: 920, borderRadius: 44, background: '#fff', boxShadow: shadow.card, border: `1px solid ${color.line}`, padding: '40px 48px', boxSizing: 'border-box', opacity: s, transform: `translateY(${(1 - s) * 60}px)` }}>{children}</div>
   );
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center', paddingTop: 330, gap: 40 }}>
         {card(sA, (
           <div style={{ display: 'flex', alignItems: 'center', gap: 30 }}>
@@ -319,7 +318,7 @@ const M06: React.FC<SP> = ({ lead }) => {
       <Sfx name="ui_pop" at={fNo} />
       <Sfx name="marker" at={fFinal} />
       <Sfx name="hit_soft" at={fFinal + 14} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -329,7 +328,7 @@ const M07: React.FC<SP> = ({ lead }) => {
   const { fps } = useVideoConfig();
   const p = spring({ frame: frame - lead - 30, fps, config: { damping: 12 } });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 54, paddingBottom: 360 }}>
         <Logo size={128} delay={2} />
         <div style={{ width: 900, height: 112, borderRadius: 999, background: '#fff', boxShadow: shadow.float, border: `1px solid ${color.line}`, display: 'flex', alignItems: 'center', padding: '0 20px 0 44px', gap: 22 }}>
@@ -344,7 +343,7 @@ const M07: React.FC<SP> = ({ lead }) => {
       <Sfx name="logo_sting" at={4} />
       <Sfx name="typing" at={lead + 4} trimAfter={50} />
       <Sfx name="sparkle" at={lead + 30} volume={0.7} />
-    </Stage>
+    </PdrStage>
   );
 };
 

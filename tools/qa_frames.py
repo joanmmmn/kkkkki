@@ -7,7 +7,7 @@
    el render es determinista, así que si no coinciden (PSNR < 32 dB o un bloque muy distinto) es un fallo del render.
 
 Uso (desde la raíz del repo):
-  python3 tools/qa_frames.py video/out/chunks/NXReview/part_01.mp4 --start 2700 --comp NXReview [--umbral 20]
+  python3 tools/qa_frames.py video/out/chunks/NXReview/part_01.mp4 --start 2700 --comp NXReview [--umbral 20] [--scale 1.3333333333333333]
 Imprime los fotogramas con fallo; sus PNG buenos quedan en video/out/qa_frames/<fotograma>/ para parchear el vídeo
 (ffmpeg overlay con enable='eq(n,F)').
 Con la reseña de Nextory v4 (12/10/2026) salieron 3 de 13446: la píldora «n/7» de tres separadores (fotogramas 18–19).
@@ -41,12 +41,12 @@ def sospechosos(src, start):
     return out
 
 
-def comprobar(src, start, frame, comp, bundle):
+def comprobar(src, start, frame, comp, bundle, scale='1'):
     d = os.path.join(VIDEO, 'out', 'qa_frames', str(frame))
     os.makedirs(d, exist_ok=True)
     if not any(f.endswith('.png') for f in os.listdir(d)):
         subprocess.run(['npx', 'remotion', 'render', bundle, comp, d, '--sequence', f'--frames={frame}-{frame}', '--image-format=png',
-                        '--concurrency=1', '--log=error', '--offthreadvideo-cache-size-in-bytes=800000000'], cwd=VIDEO, check=True)
+                        '--concurrency=1', '--log=error', '--offthreadvideo-cache-size-in-bytes=800000000', f'--scale={scale}'], cwd=VIDEO, check=True)
     png = os.path.join(d, sorted(f for f in os.listdir(d) if f.endswith('.png'))[0])
     ref = np.asarray(Image.open(png).convert('RGB'), dtype=np.float32)
     h, w = ref.shape[:2]
@@ -62,6 +62,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('src'); ap.add_argument('--start', type=int, default=0); ap.add_argument('--comp', default='NXReview')
     ap.add_argument('--umbral', type=float, default=20)
+    ap.add_argument('--scale', default='1', help='la misma escala del render (p. ej. 1.3333333333333333 para 2560x1440)')
     a = ap.parse_args()
     bundle = os.path.join(VIDEO, 'out', 'qa_bundle')
     if not os.path.isdir(bundle):
@@ -70,7 +71,7 @@ if __name__ == '__main__':
     print(f'{len(sus)} sospechosos (≥ {a.umbral})', flush=True)
     fallos = []
     for f, k in sus:
-        psnr, worst, png = comprobar(a.src, a.start, f, a.comp, bundle)
+        psnr, worst, png = comprobar(a.src, a.start, f, a.comp, bundle, a.scale)
         bad = psnr < 32 or worst > 12
         print(f'  {f}: intensidad {k:.0f}, PSNR {psnr:.1f} dB, peor bloque {worst:.1f} → {"FALLO" if bad else "ok"}', flush=True)
         if bad:

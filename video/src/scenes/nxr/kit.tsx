@@ -149,17 +149,23 @@ export const MaskTitle: React.FC<{
 }> = ({ text, at = 0, size = 96, hi, align = 'left', color: c = color.ink, stagger = 3, weight = 700, out, lineHeight = 1.04, style }) => {
   const frame = useCurrentFrame();
   const his = hi === undefined ? [] : Array.isArray(hi) ? hi : [hi];
-  const words = text.split(' ');
+  // «\n» dentro del texto fuerza un salto de línea (para cortar los títulos donde se leen mejor).
+  const tokens = text.split(' ').flatMap((w) => w.split('\n').flatMap((p, k) => (k === 0 ? [p] : ['\n', p]))).filter((w) => w !== '');
+  const words = tokens.filter((w) => w !== '\n');
+  let wi = -1;
   return (
     <div style={{ fontFamily: font.sans, fontWeight: weight, fontSize: size, lineHeight, letterSpacing: -size * 0.034, color: c, textAlign: align, ...style }}>
-      {words.map((w, i) => {
+      {tokens.map((w, k) => {
+        if (w === '\n') return <br key={`br${k}`} />;
+        wi += 1;
+        const i = wi;
         const a = at + i * stagger;
         const p = interpolate(frame, [a, a + 18], [0, 1], { ...clamp, easing: easeOut });
         const o = out !== undefined ? interpolate(frame, [out - 12 + i * 1.5, out + i * 1.5], [0, 1], { ...clamp, easing: easeInOut }) : 0;
         const isHi = his.some((h) => w.replace(/[¿?¡!.,:;«»]/g, '') === h);
         const mk = interpolate(frame, [a + 10, a + 26], [0, 1], { ...clamp, easing: easeOut });
         return (
-          <span key={i} style={{ display: 'inline-block', overflow: 'hidden', verticalAlign: 'top', padding: '0 0.07em 0.16em', margin: '0 0.17em -0.16em -0.07em' }}>
+          <span key={`w${k}`} style={{ display: 'inline-block', overflow: 'hidden', verticalAlign: 'top', padding: '0 0.07em 0.16em', margin: '0 0.17em -0.16em -0.07em' }}>
             <span style={{ display: 'inline-block', position: 'relative', transform: `translateY(${(1 - p) * 112 + o * 112}%) rotate(${(1 - p) * 4}deg)`, transformOrigin: 'left bottom' }}>
               {isHi && <span style={{ position: 'absolute', left: '-0.05em', right: '-0.05em', bottom: '0.07em', height: '0.36em', background: color.yellow, borderRadius: '0.08em', zIndex: -1, transform: `scaleX(${mk})`, transformOrigin: 'left' }} />}
               {w}

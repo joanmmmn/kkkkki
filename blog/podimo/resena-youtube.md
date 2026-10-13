@@ -1,4 +1,4 @@
-# YouTube y redes — Reseña de Podimo + 30 días gratis (v1, SEO)
+# YouTube y redes — Reseña de Podimo + 30 días gratis (v2, SEO)
 
 Textos pensados para que el vídeo aparezca en las búsquedas que resuelve: opiniones, ¿merece la pena?, qué es, precio
 (Premium, Premium Plus, Free, anual), cómo cuentan las horas (y a 2x), pódcasts exclusivos, audiolibros, reproductor,
@@ -79,6 +79,7 @@ Si lo pruebas, aquí tienes los 30 días gratis: https://sonorbooks.com/salir/po
 ```
 
 ## Antes de publicar
+- **Archivo para subir:** `SonorBooks_Podimo_Resena_1440p.mp4` (2560×1440, 50 fps; en Git LFS). Subido en 1440p, YouTube lo procesa con un códec de más calidad y se ve mejor también en 1080p. Si hace falta uno más ligero, `SonorBooks_Podimo_Resena_1080p.mp4`.
 - **Reseña escrita:** la locución dice que la reseña completa por escrito está en la descripción. Publica antes la nueva página (`web/podimo-resena`, pendiente de aprobación) en https://sonorbooks.com/es/blog/podimo-resena/ y, al publicar el vídeo, reconstrúyela con su ID: `python3 web/podimo-resena/build.py --yt ID --yt-fecha AAAA-MM-DD`.
 - Marca en YouTube «Incluye promoción pagada»: el vídeo enlaza a una oferta de afiliado.
 - Sube los subtítulos `podimo_resena.es.srt` (Subtítulos → Subir archivo → Con sincronización).

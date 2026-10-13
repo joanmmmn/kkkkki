@@ -109,3 +109,26 @@ Locución en `video/public/pdr/vo/vo.json` (ids K = reseña, L = prueba, M = ver
 | M05 | ¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis. |
 | M06 | Si te gusta, te quedas. Si no, cancela antes del día treinta; mejor al final. |
 | M07 | Busca tu próximo libro en SonorBooks. |
+
+## v2 (13/10/2026): calidad de todo el vídeo y de cada animación
+
+Encargo de Joan (13/10/2026, 08:43): «mejora la calidad de todo el video y de cada animacion». La locución, la música y
+los tiempos no cambian (capítulos y subtítulos siguen valiendo).
+
+- **Imagen:** render a 2560×1440 (escala 4/3 de la composición) a 50 fps; el máster para YouTube va en 1440p (YouTube lo
+  procesa con un códec de más calidad). Fondo propio de Podimo (halo lila que deriva y grano finísimo bajo el contenido).
+- **Privacidad:** la inicial de la cuenta (círculo rosa de la cabecera) se tapa en todas las tomas (`tools/pdr_avatar.py`).
+- **Precios (K03):** Premium entra sola en el centro y se aparta cuando llega Premium Plus; precios con contador mecánico,
+  horas en tramos de 10 h (2 frente a 10), pago anual dentro de cada tarjeta y, con Podimo Free, las de pago se desenfocan
+  al fondo (enfoque selectivo).
+- **Qué es (K02):** viaje Copenhague → España con un punto que recorre el arco, «2020» en contador, sello «Solo en Podimo»
+  que cae como un tampón y «Miles» a 220 px con subrayado lila.
+- **App (K04–K08):** etiquetas y títulos más grandes; la portada aparece al decir «portada» (sin la pantalla de carga);
+  copa del Ondas («Podcast Revelación 2025»); a 2x, dos cronómetros (tiempo real y reloj de Podimo, que gira el doble).
+- **Dispositivos (K09):** tarjetas grandes con su escena animada (móvil y tablet sonando, pantalla del coche, altavoz con
+  ondas) que se recentran al llegar cada una; Apple Watch con su cruz.
+- **Opiniones (K10):** notas con contador mecánico y estrellas que se llenan con la cifra.
+- **Veredicto (K12):** dos tarjetas: «Te encaja si…» (4,99 €, de lo más barato) y «Si escuchas mucho, compara» (barra de
+  20 h de Podimo frente a la de Storytel, sin límite, 8,99 €).
+- **Prueba (L03, L05):** tarjetas más grandes y centradas.
+- **Sonido:** efectos nuevos al fotograma (tics del contador, tramos de horas, volteos, monedas del pago anual, sello).

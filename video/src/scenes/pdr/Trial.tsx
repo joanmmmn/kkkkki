@@ -14,7 +14,7 @@ import { CheckIcon, HeadphonesIcon } from '../../components/Icons';
 import { CalendarIcon, CardIcon, ClockIcon, DocIcon, DownloadIcon, LinkIcon, LockIcon, MailIcon } from '../../components/Icons2';
 import { TiltWindow } from '../nxr/Verdict';
 import { wf } from './timeline';
-import { AppPhone, Burst, Chip, LinkBadge, MaskTitle, PhoneHalo, PhoneKey, PodimoLogo, PV, PV_DEEP, PV_SOFT, Shot } from './kit';
+import { AppPhone, Burst, Chip, LinkBadge, MaskTitle, PdrStage, PhoneHalo, PhoneKey, PodimoLogo, PV, PV_DEEP, PV_SOFT, Shot } from './kit';
 import type { SceneProps } from './registry';
 import m00 from '../../../public/pdr/web/00_home/meta.json';
 import c00 from '../../../public/pdr/web/00_home/cursor.json';
@@ -56,7 +56,7 @@ export const L01Gratis: React.FC<P> = ({ lead }) => {
   const sFine = spring({ frame: frame - fVeinte - 10, fps, config: { damping: 18, stiffness: 140 } });
   const shift = interpolate(frame, [fVeinte - 8, fVeinte + 10], [0, 1], { ...clamp, easing: easeInOut });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ position: 'absolute', top: 110, display: 'flex', alignItems: 'center', gap: 26, opacity: sLogos, transform: `translateY(${(1 - sLogos) * -30 + (1 - lift) * 330}px) scale(${1 + 0.8 * (1 - lift)})` }}>
           <LogoIcon size={70} />
@@ -104,7 +104,7 @@ export const L01Gratis: React.FC<P> = ({ lead }) => {
       <Sfx name="impact" at={LAND} />
       <Sfx name="sparkle" at={LAND + 2} volume={0.8} />
       <Sfx name="ui_pop" at={fVeinte} volume={0.7} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -166,7 +166,7 @@ export const L02Accesos: React.FC<P> = ({ lead }) => {
   ];
   const sHead = spring({ frame: frame - 2, fps, config: { damping: 18, stiffness: 150 } });
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 46, display: 'flex', justifyContent: 'center', opacity: sHead }}>
           <MaskTitle text="Actívalos desde 3 sitios" hi="3" at={4} size={64} align="center" />
@@ -231,7 +231,7 @@ export const L02Accesos: React.FC<P> = ({ lead }) => {
       <Sfx name="ui_pop" at={fDejamos - 1} volume={0.8} />
       <Sfx name="ui_pop" at={fEnlace - 2} volume={0.7} />
       <Sfx name="sparkle" at={fResena - 2} volume={0.8} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -264,7 +264,7 @@ export const L03Pasos: React.FC<P> = ({ lead }) => {
     </div>
   );
   const box = (n: number, title: string, s: number, act: number, children: React.ReactNode) => (
-    <div style={{ width: 700, padding: '40px 44px', borderRadius: 44, background: '#fff', border: `1px solid ${color.line}`, boxShadow: `0 0 0 ${4 * act}px ${color.yellow}, ${shadow.card}`,
+    <div style={{ width: 760, padding: '44px 48px', borderRadius: 48, background: '#fff', border: `1px solid ${color.line}`, boxShadow: `0 0 0 ${4 * act}px ${color.yellow}, ${shadow.card}`,
       opacity: s * (0.45 + 0.55 * act), transform: `translateY(${(1 - s) * 70}px) scale(${0.96 + 0.04 * act})` }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: color.ink, marginBottom: 30 }}>
         <span style={{ width: 60, height: 60, borderRadius: '50%', background: act > 0.5 ? color.ink : color.yellow, color: act > 0.5 ? color.yellow : color.ink, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 32 }}>{n}</span>
@@ -275,12 +275,12 @@ export const L03Pasos: React.FC<P> = ({ lead }) => {
   );
   const act1 = 1 - 0.55 * act2;
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: shake ? `translateY(${shake.toFixed(2)}px)` : undefined }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginBottom: 54, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.ink2 }}>
           <PodimoLogo width={170} /> · prueba gratuita de 30 días
         </div>
-        <div style={{ display: 'flex', gap: 50 }}>
+        <div style={{ display: 'flex', gap: 50, transform: `translateX(${((1 - Math.min(1, s2)) * 405).toFixed(2)}px)` }}>
           {box(1, 'Crea tu cuenta', s1, act1, (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               {field(<MailIcon size={38} c={color.ink2} />, <span>{email.slice(0, typed)}<span style={{ opacity: typed > 0 && typed < email.length ? 1 : Math.floor(frame / 12) % 2 ? 0 : 1 }}>|</span></span>, act2 < 0.5)}
@@ -310,7 +310,7 @@ export const L03Pasos: React.FC<P> = ({ lead }) => {
       <Keystrokes text={email} times={eKeys} volume={0.7} seed="l03" />
       <Sfx name="swipe" at={fTarjeta} volume={0.7} />
       <Sfx name="stamp" at={LAND} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -328,7 +328,7 @@ export const L04App: React.FC<P> = ({ lead, dur }) => {
   // El primer arranque: «¿Qué te gusta?» y el toque en «Podcasts» (29,14 s de la toma) justo cuando la voz dice «elige».
   const shots: Shot[] = [{ rec: '00_gustos', at: 0, start: Math.max(0, 29.14 - (fElige + 4) / 50), hold: 30.5 }];
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill>
         <PhoneHalo cam={cam} cx={1340} cy={559} strength={0.9} />
         <div style={{ position: 'absolute', left: 1120, top: 100 }}>
@@ -359,7 +359,7 @@ export const L04App: React.FC<P> = ({ lead, dur }) => {
       <Sfx name="ui_pop" at={fDesc + 7} volume={0.7} />
       <Sfx name="ui_tap" at={fElige + 4} volume={0.6} />
       <Sfx name="sparkle" at={fElige - 2} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -383,24 +383,25 @@ export const L05Decide: React.FC<P> = ({ lead }) => {
   const best = interpolate(frame, [fUlt - 2, fUlt + 16], [0, 1], { ...clamp, easing: easeOut });
   const days = Array.from({ length: 30 }, (_, i) => i + 1);
   const sP = spring({ frame: frame - 8, fps, config: { damping: 18, stiffness: 140 } });
-  const box = (s: number, children: React.ReactNode, active = 1) => (
-    <div style={{ width: 760, minHeight: 660, borderRadius: 44, background: '#fff', boxShadow: active > 0.5 ? `0 0 0 ${4 * active}px ${color.yellow}, ${shadow.card}` : shadow.card, border: `1px solid ${color.line}`, padding: '48px 50px',
+  const box = (s: number, children: React.ReactNode, active = 1, center = false) => (
+    <div style={{ width: 760, minHeight: 660, borderRadius: 48, background: '#fff', boxShadow: active > 0.5 ? `0 0 0 ${4 * active}px ${color.yellow}, ${shadow.card}` : shadow.card, border: `1px solid ${color.line}`, padding: '48px 50px',
+      display: 'flex', flexDirection: 'column', justifyContent: center ? 'center' : 'flex-start',
       opacity: s * (0.42 + 0.58 * active), transform: `translateY(${(1 - s) * 60}px) scale(${0.97 + 0.03 * active})`, boxSizing: 'border-box' }}>{children}</div>
   );
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 56, paddingTop: 50 }}>
         {box(sL, (
           <>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: color.ink, letterSpacing: -1.5 }}>¿Te ha gustado?</div>
-            <div style={{ marginTop: 70, display: 'flex', alignItems: 'center', gap: 26, transform: `scale(${0.7 + 0.3 * sQ})`, transformOrigin: 'left center', opacity: sQ }}>
-              <CheckIcon size={110} />
+            <div style={{ marginTop: 120, display: 'flex', alignItems: 'center', gap: 28, transform: `scale(${0.7 + 0.3 * sQ})`, transformOrigin: 'left center', opacity: sQ }}>
+              <CheckIcon size={124} />
               <div>
-                <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 84, color: color.ink, letterSpacing: -3, lineHeight: 1 }}>Quédate</div>
+                <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, color: color.ink, letterSpacing: -3.5, lineHeight: 1 }}>Quédate</div>
                 <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 34, color: color.ink2, marginTop: 10 }}>No tienes que hacer nada</div>
               </div>
             </div>
-            <div style={{ marginTop: 60, fontFamily: font.sans, fontWeight: 500, fontSize: 30, color: color.muted, opacity: sQ }}>Después, Premium: 4,99 €/mes</div>
+            <div style={{ marginTop: 110, fontFamily: font.sans, fontWeight: 500, fontSize: 32, color: color.muted, opacity: sQ }}>Después, Premium: 4,99 €/mes</div>
           </>
         ), 1 - 0.5 * sR)}
         {box(sP, (
@@ -439,7 +440,7 @@ export const L05Decide: React.FC<P> = ({ lead }) => {
       {[0, 1, 2].map((r) => <Sfx key={`d${r}`} name="tick_soft" at={fConf + 6 + r * 8} volume={[0.85, 0.6, 0.5][r]} />)}
       <Sfx name="marker" at={fUlt} />
       <Sfx name="hit_soft" at={fPierdes + 1} />
-    </Stage>
+    </PdrStage>
   );
 };
 
@@ -458,7 +459,7 @@ export const L06Outro: React.FC<P> = ({ lead, dur }) => {
   const keys = typeTimesSpoken(query, [[fTu - 3, fProx - 3], [fProx - 2, fLibro - 3], [fLibro - 2, fY - 6]], 'l06');
   const end = fSonor + 30;
   return (
-    <Stage tone="warm">
+    <PdrStage>
       <Phase from={0} to={end + 2}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 56 }}>
           <Logo size={120} delay={2} />
@@ -484,6 +485,6 @@ export const L06Outro: React.FC<P> = ({ lead, dur }) => {
       <Sfx name="logo_sting" at={4} />
       <Keystrokes text={query} times={keys} volume={0.9} seed="l06" />
       <Sfx name="logo_sting" at={end + 5} volume={0.6} />
-    </Stage>
+    </PdrStage>
   );
 };
