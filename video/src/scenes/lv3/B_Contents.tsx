@@ -48,7 +48,8 @@ export const Contents: React.FC<{ dur: number }> = ({ dur }) => {
                 })}
               </div>
               {/* cinta marcapáginas de SonorBooks */}
-              <div style={{ position: 'absolute', right: 120, top: -20, width: 84, height: 40 + 330 * ribbon, background: T.yellow, boxShadow: '0 8px 20px rgba(0,0,0,0.25)', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 26px), 0 100%)' }}>
+              <div style={{ position: 'absolute', right: 120, top: -20, width: 84, height: 40 + 330 * ribbon, background: T.yellow, boxShadow: '0 8px 20px rgba(0,0,0,0.25)', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 26px), 0 100%)',
+                transformOrigin: '50% 0', transform: `rotate(${frame > fGuia + 22 ? 2.2 * Math.exp(-(frame - fGuia - 22) / 12) * Math.sin((frame - fGuia - 22) * 0.42) : 0}deg)` }}>
                 <div style={{ position: 'absolute', bottom: 46, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: ramp(frame, fGuia + 10, fGuia + 24, eIO) }}><LogoIcon size={46} /></div>
               </div>
             </div>

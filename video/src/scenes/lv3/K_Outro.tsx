@@ -63,6 +63,13 @@ export const Outro: React.FC<{ dur: number }> = () => {
           <div style={{ position: 'absolute', top: 436, fontFamily: T.serif, fontStyle: 'italic', fontSize: 46, color: T.cream, opacity: tag, transform: `translateY(${(1 - tag) * 12}px)` }}>Dónde escuchar cada libro y a qué precio</div>
         </AbsoluteFill>
       )}
+      {/* un destello de luz cruza la marca cuando aparece (solo en la mitad de arriba) */}
+      {(() => {
+        const k = ramp(frame, fBusca + 12, fBusca + 56, eIO);
+        if (k <= 0 || k >= 1) return null;
+        return <div style={{ position: 'absolute', left: 0, top: 0, width: 1920, height: 560, pointerEvents: 'none', mixBlendMode: 'screen',
+          background: `linear-gradient(105deg, rgba(255,226,170,0) ${k * 150 - 45}%, rgba(255,226,170,0.32) ${k * 150 - 30}%, rgba(255,226,170,0) ${k * 150 - 15}%)` }} />;
+      })()}
       <Sfx name="reveal_whoosh" at={2} volume={0.4} />
       <Sfx name="typing" at={typeAt} volume={0.45} trimAfter={Q.length * cps + 4} />
       {chips.map(([, f], i) => <Sfx key={i} name="ui_pop" at={f - 4} volume={0.5} />)}

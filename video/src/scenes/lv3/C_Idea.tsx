@@ -44,8 +44,8 @@ export const Idea: React.FC<{ dur: number }> = ({ dur }) => {
   const quote = sp(frame, fIdea - 2, fps, 100, 22);
   const words = 'Que todos los libros de dominio público tengan su audiolibro'.split(' ');
   const wordAt = (i: number) => (i <= 1 ? fTodos - 6 + i * 4 : i <= 6 ? fTodos + (fDom - fTodos) * ((i - 1) / 5) : fDom + (fAudio - fDom) * ((i - 6) / 3));
-  const n1 = sp(frame, fLeido - 4, fps, 130, 24);
-  const n2 = sp(frame, fGratis - 4, fps, 130, 24);
+  const n1 = sp(frame, fLeido - 6, fps, 120, 14);
+  const n2 = sp(frame, fGratis - 6, fps, 120, 14);
   return (
     <AbsoluteFill>
       <Space persp={1700}>
@@ -55,7 +55,7 @@ export const Idea: React.FC<{ dur: number }> = ({ dur }) => {
             <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transformStyle: 'preserve-3d', transform: `scale(${0.9 + 0.1 * year}) translateY(${(1 - year) * 60}px)` }}>
               <Year text="2005" size={380} on={year} sweep={sweep} />
             </div>
-            <div style={{ position: 'absolute', left: 0, right: 0, bottom: -36, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 50, color: T.creamSoft, opacity: year * (1 - up) }}>nace LibriVox</div>
+            <div style={{ position: 'absolute', left: 0, right: 0, bottom: -52, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 64, color: T.cream, opacity: ramp(frame, f2005 + 4, f2005 + 22, eOut) * (1 - ramp(frame, fIdea - 18, fIdea - 6, eIO)), transform: `translateY(${(1 - ramp(frame, f2005 + 4, f2005 + 22, eOut)) * 14}px)`, textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}>nace LibriVox</div>
           </At>
           {/* la idea, en papel */}
           <At x={0} y={110} z={60} w={1500} h={330} o={quote}>
@@ -70,19 +70,18 @@ export const Idea: React.FC<{ dur: number }> = ({ dur }) => {
               </div>
             </div>
           </At>
-          {/* dos notas */}
-          <At x={-360} y={430} z={90} w={620} h={120} o={n1}>
-            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', gap: 20, color: T.tealLight, fontFamily: T.serif, fontStyle: 'italic', fontSize: 54, transform: `translateY(${(1 - n1) * 24}px)` }}>
-              <Wave size={64} c={T.tealLight} w={2.2} level={[0.3, 0.7, 1, 0.55, 0.85, 0.4, 0.75].map((v, i) => 0.25 + 0.75 * v * (0.6 + 0.4 * Math.sin(frame / 4 + i)))} />
-              leído por personas
-            </div>
-          </At>
-          <At x={380} y={430} z={90} w={680} h={120} o={n2}>
-            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', gap: 20, color: T.gold, fontFamily: T.serif, fontStyle: 'italic', fontSize: 54, transform: `translateY(${(1 - n2) * 24}px)` }}>
-              <div style={{ transform: `rotate(${frame * 0.6}deg)` }}><Globe size={58} c={T.gold} /></div>
-              gratis para todo el mundo
-            </div>
-          </At>
+          {/* dos notas de papel que caen inclinadas y se asientan */}
+          {[
+            { k: n1, x: -400, rot: -3, c: T.teal, icon: <Wave size={60} c={T.teal} w={2.4} level={[0.3, 0.7, 1, 0.55, 0.85, 0.4, 0.75].map((v, i) => 0.25 + 0.75 * v * (0.6 + 0.4 * Math.sin(frame / 4 + i)))} />, text: 'leído por personas' },
+            { k: n2, x: 400, rot: 2.5, c: T.redInk, icon: <div style={{ transform: `rotate(${frame * 0.6}deg)` }}><Globe size={56} c={T.redInk} /></div>, text: 'gratis para todo el mundo' },
+          ].map((n, i) => (
+            <At key={i} x={n.x} y={440} z={90 + (1 - Math.min(1, n.k)) * 160} w={700} h={120} o={Math.min(1, n.k * 2)} rz={n.rot + (i ? 1 : -1) * 14 * (1 - n.k)}>
+              <div style={{ position: 'absolute', inset: 0, ...paperBg(T.paper), borderRadius: 8, boxShadow: '0 26px 60px rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20, color: n.c, fontFamily: T.serif, fontStyle: 'italic', fontSize: 56, transform: `translateY(${(1 - n.k) * -50}px)`, whiteSpace: 'nowrap' }}>
+                {n.icon}
+                {n.text}
+              </div>
+            </At>
+          ))}
         </Rig>
       </Space>
       <ChapterCard n="I" title="Qué es y cómo funciona" />

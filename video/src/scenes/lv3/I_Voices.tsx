@@ -5,6 +5,7 @@ import { At, cover, Draw, eIO, eOut, Fleuron, follow, InkWords, paperBg, ramp, R
 import { Clock, Mic } from './glyphs';
 import { CLIP3, itemAt, w } from './timeline';
 import { Crop } from './web';
+import { CurlLeaf } from './frames';
 import PEAKS from '../../../public/lv/audio3/peaks.json';
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -23,7 +24,7 @@ const VOICES: { clip: string; reader: string; legend: string; n: string; cut?: b
   { clip: 'v_rosa', reader: 'Rosacarmela', legend: 'Los ojos verdes', n: '20' },
 ];
 const PICK = [5, 4, 3, 9]; // posiciones en el reparto de las cuatro voces, en el orden en que se escuchan
-const TURN = 30;
+const TURN = 34;
 
 const pageBase = (side: 'L' | 'R'): React.CSSProperties => ({
   position: 'absolute', inset: 0, ...paperBg(T.paper), overflow: 'hidden',
@@ -104,6 +105,14 @@ const LeftPage: React.FC<{ i: number; f: { once: number; calidad: number } }> = 
     </div>
   );
 };
+// Óvalo a mano alrededor de un nombre del reparto (coordenadas del SVG, que empieza 26 px a la izquierda y 30 px por
+// encima del nombre): da la vuelta entera y se pasa un poco del punto de partida
+const loop = (name: string) => {
+  const W = name.length * 21.5 + 8;
+  const cx = 26 + W / 2, cy = 60, rx = W / 2 + 22, ry = 36, k = 0.5523;
+  const P = (x: number, y: number) => `${x.toFixed(1)} ${y.toFixed(1)}`;
+  return `M ${P(cx - rx, cy + 6)} C ${P(cx - rx, cy - k * ry)}, ${P(cx - k * rx, cy - ry)}, ${P(cx, cy - ry)} C ${P(cx + k * rx, cy - ry)}, ${P(cx + rx, cy - k * ry)}, ${P(cx + rx, cy)} C ${P(cx + rx, cy + k * ry)}, ${P(cx + k * rx, cy + ry)}, ${P(cx, cy + ry)} C ${P(cx - k * rx, cy + ry)}, ${P(cx - rx * 1.03, cy + k * ry * 0.5)}, ${P(cx - rx * 0.93, cy - ry * 0.35)}`;
+};
 const RightPage: React.FC<{ i: number; f: { cuatro: number } }> = ({ i, f }) => {
   const frame = useCurrentFrame();
   if (i === 0) {
@@ -120,8 +129,7 @@ const RightPage: React.FC<{ i: number; f: { cuatro: number } }> = ({ i, f }) => 
                 <span style={{ width: 70, fontSize: 30, color: T.inkFaint }}>{String(k + 1).padStart(2, '0')}</span>
                 <span style={{ position: 'relative' }}>
                   {name}
-                  {pick >= 0 && <Draw at={rf} dur={14} w={520} h={80} color={T.teal} width={3.2} style={{ left: -26, top: -14 }}
-                    d={`M 18 44 C 14 14, ${name.length * 22 + 40} 6, ${name.length * 22 + 52} 34 C ${name.length * 22 + 60} 62, 30 70, 22 48`} len={1400} />}
+                  {pick >= 0 && <Draw at={rf} dur={16} w={560} h={120} color={T.teal} width={3.2} style={{ left: -26, top: -30 }} d={loop(name)} len={1600} />}
                 </span>
               </div>
             );
@@ -142,23 +150,6 @@ const RightPage: React.FC<{ i: number; f: { cuatro: number } }> = ({ i, f }) => 
             before={<span style={{ color: T.redInk }}>«{v.cut ? <span style={{ color: T.inkSoft }}>[…] </span> : null}</span>}
             close={<span style={{ color: T.redInk }}>{v.open ? <span style={{ color: T.inkSoft }}> […]</span> : null}»</span>} />
         </div>
-      </div>
-    </div>
-  );
-};
-
-// Hoja que gira sobre el lomo: delante, la página derecha actual; detrás, la izquierda siguiente
-const Leaf: React.FC<{ p: number; front: React.ReactNode; back: React.ReactNode }> = ({ p, front, back }) => {
-  const shade = Math.sin(p * Math.PI);
-  return (
-    <div style={{ position: 'absolute', left: 0, top: 0, width: PW, height: PH, transformOrigin: 'left center', transform: `translateZ(${2 + 30 * shade}px) rotateY(${-180 * p}deg)`, transformStyle: 'preserve-3d' }}>
-      <div style={{ position: 'absolute', inset: 0, backfaceVisibility: 'hidden' }}>
-        {front}
-        <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(90deg, rgba(0,0,0,${0.1 * shade}) 0%, rgba(0,0,0,${0.45 * shade}) 100%)` }} />
-      </div>
-      <div style={{ position: 'absolute', inset: 0, backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-        {back}
-        <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(270deg, rgba(0,0,0,${0.08 * shade}) 0%, rgba(0,0,0,${0.4 * shade}) 100%)` }} />
       </div>
     </div>
   );
@@ -207,19 +198,19 @@ export const Voices: React.FC<{ dur: number }> = ({ dur }) => {
       <Space persp={1700}>
         <Rig cam={{ x: cam.x, y: cam.y, z: cam.z, rx: cam.rx, ry: cam.ry }}>
           {/* atril */}
-          <At x={0} y={40} z={-40} w={PW * 2 + 160} h={PH + 120} o={1 - 0.55 * end}>
+          <At x={0} y={40} z={-40} w={PW * 2 + 160} h={PH + 120}>
             <div style={{ position: 'absolute', inset: 0, borderRadius: 18, background: 'linear-gradient(180deg, #4a3322, #2f2016 70%, #23170f)', boxShadow: '0 60px 140px rgba(0,0,0,0.75)' }} />
           </At>
-          <At x={0} y={PH / 2 + 70} z={30} w={PW * 2 + 220} h={44} o={1 - 0.55 * end}>
+          <At x={0} y={PH / 2 + 70} z={30} w={PW * 2 + 220} h={44}>
             <div style={{ position: 'absolute', inset: 0, borderRadius: 8, background: 'linear-gradient(180deg, #7a5737, #4f3622 60%, #3a2819)', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} />
           </At>
           {/* el libro abierto */}
-          <At x={0} y={0} z={0} w={PW * 2} h={PH} o={1 - 0.6 * end}>
+          <At x={0} y={0} z={0} w={PW * 2} h={PH}>
             {/* tapas y cantos */}
-            <div style={{ position: 'absolute', left: -24, top: -20, width: PW * 2 + 48, height: PH + 40, borderRadius: 14, background: 'linear-gradient(135deg, #5a2a22, #3b1913 60%, #2c120e)', transform: 'translateZ(-12px)', opacity: open }} />
-            <div style={{ position: 'absolute', left: -8, top: -6, width: PW * 2 + 16, height: PH + 12, borderRadius: 8, background: 'repeating-linear-gradient(0deg, #e9dfc7 0 2px, #cfc2a3 2px 3px)', transform: 'translateZ(-5px)', opacity: open }} />
+            <div style={{ position: 'absolute', left: -24, top: -20, width: PW * 2 + 48, height: PH + 40, borderRadius: 14, background: 'linear-gradient(135deg, #5a2a22, #3b1913 60%, #2c120e)', transform: 'translateZ(-12px)', clipPath: open < 1 ? 'inset(0 0 0 50%)' : undefined }} />
+            <div style={{ position: 'absolute', left: -8, top: -6, width: PW * 2 + 16, height: PH + 12, borderRadius: 8, background: 'repeating-linear-gradient(0deg, #e9dfc7 0 2px, #cfc2a3 2px 3px)', transform: 'translateZ(-5px)', clipPath: open < 1 ? 'inset(0 0 0 50%)' : undefined }} />
             {/* izquierda */}
-            <div style={{ position: 'absolute', left: 0, top: 0, width: PW, height: PH, opacity: open }}>
+            <div style={{ position: 'absolute', left: 0, top: 0, width: PW, height: PH, opacity: open >= 1 ? 1 : 0 }}>
               <LeftPage i={page} f={f} />
             </div>
             {/* derecha (la siguiente, debajo de la hoja que gira) */}
@@ -229,7 +220,9 @@ export const Voices: React.FC<{ dur: number }> = ({ dur }) => {
             {/* hoja que gira */}
             {turning >= 0 && (
               <div style={{ position: 'absolute', left: PW, top: 0, width: PW, height: PH, transformStyle: 'preserve-3d' }}>
-                <Leaf p={tp} front={<RightPage i={turning} f={f} />} back={<LeftPage i={turning + 1} f={f} />} />
+                <div style={{ position: 'absolute', inset: 0, transformStyle: 'preserve-3d', transform: `translateZ(${2 + 26 * Math.sin(tp * Math.PI)}px)` }}>
+                  <CurlLeaf p={tp} w={PW} h={PH} n={14} curl={0.42} backTone={T.paper} front={<RightPage i={turning} f={f} />} back={<LeftPage i={turning + 1} f={f} />} />
+                </div>
               </div>
             )}
             {/* tapa que se abre al principio */}
@@ -238,10 +231,19 @@ export const Voices: React.FC<{ dur: number }> = ({ dur }) => {
                 <div style={{ position: 'absolute', inset: 0, borderRadius: '4px 14px 14px 4px', background: 'linear-gradient(135deg, #5a2a22, #3b1913 60%, #2c120e)', backfaceVisibility: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Img src={cover('5079')} style={{ width: 520, height: 520, borderRadius: 6, boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} />
                 </div>
-                <div style={{ position: 'absolute', inset: 0, borderRadius: '14px 4px 4px 14px', background: '#2c120e', transform: 'rotateY(180deg)', backfaceVisibility: 'hidden' }} />
+                <div style={{ position: 'absolute', inset: 0, borderRadius: '14px 4px 4px 14px', background: 'linear-gradient(135deg, #4a2219, #3b1913 60%, #2c120e)', transform: 'rotateY(180deg)', backfaceVisibility: 'hidden', overflow: 'hidden' }}>
+                  <div style={{ position: 'absolute', left: 24, top: 20, width: PW, height: PH }}><LeftPage i={0} f={f} /></div>
+                  <div style={{ position: 'absolute', inset: 0, background: `rgba(20,12,6,${(0.35 * (1 - open)).toFixed(3)})` }} />
+                </div>
               </div>
             )}
             <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(90% 80% at 60% 30%, rgba(255,236,190,0) 0%, rgba(40,20,0,0.16) 100%)', pointerEvents: 'none' }} />
+            {end > 0.01 && (
+              <>
+                <div style={{ position: 'absolute', inset: 0, ...paperBg(T.paper), opacity: 0.9 * end, borderRadius: 8, transform: 'translateZ(3px)' }} />
+                <div style={{ position: 'absolute', inset: 0, background: `rgba(60,36,16,${(0.22 * end).toFixed(3)})`, borderRadius: 8, transform: 'translateZ(3.5px)' }} />
+              </>
+            )}
           </At>
           {/* consejo */}
           <At x={-470} y={40} z={320} w={720} h={330} o={Math.min(1, tip)} rz={-2}>
@@ -272,10 +274,10 @@ export const Voices: React.FC<{ dur: number }> = ({ dur }) => {
             );
           })}
           <At x={460} y={-250} z={320} w={760} h={70} o={Math.min(1, vers[0])}>
-            <div style={{ position: 'absolute', inset: 0, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 46, color: T.cream }}>¿Varias versiones?</div>
+            <div style={{ position: 'absolute', inset: 0, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 50, color: T.inkSoft }}>¿Varias versiones?</div>
           </At>
           <At x={460} y={330} z={320} w={760} h={70} o={fav}>
-            <div style={{ position: 'absolute', inset: 0, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 50, color: T.gold }}>quédate con la voz que más te guste</div>
+            <div style={{ position: 'absolute', inset: 0, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 54, color: T.teal }}>quédate con la voz que más te guste</div>
           </At>
         </Rig>
       </Space>

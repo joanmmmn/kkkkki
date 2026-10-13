@@ -111,7 +111,7 @@ export const Lift: React.FC<{ id: PageId; box: number[]; scroll: number; lift: n
     <>
       {/* hueco en la página */}
       <div style={{ position: 'absolute', left: x - pad, top: BAR + y - scroll - pad, width: w + 2 * pad, height: h + 2 * pad, borderRadius: 4, transform: 'translateZ(0.5px)',
-        background: `rgba(52,40,28,${0.16 * L})`, boxShadow: `inset 0 2px 8px rgba(0,0,0,${0.25 * L})` }} />
+        background: `rgba(214,207,194,${Math.min(1, L * 1.6)})`, boxShadow: `inset 0 3px 10px rgba(60,44,28,${0.38 * L}), inset 0 0 0 1px rgba(60,44,28,${0.18 * L})` }} />
       <div style={{ position: 'absolute', left: x - pad, top: BAR + y - scroll - pad, width: w + 2 * pad, height: h + 2 * pad, transformStyle: 'preserve-3d',
         transform: `translateZ(${z * L}px) rotateX(${tilt * L}deg) scale(${1 + 0.035 * L})` }}>
         <div style={{ position: 'absolute', inset: 0, borderRadius: 4, boxShadow: `0 ${10 + 26 * L}px ${24 + 40 * L}px rgba(0,0,0,${0.32 * L}), 0 0 0 ${1.5 * glow}px rgba(243,208,143,${0.9 * L * glow}), 0 0 ${26 * glow}px rgba(255,214,150,${0.45 * L * glow})` }} />

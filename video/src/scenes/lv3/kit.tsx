@@ -78,36 +78,56 @@ export const follow = (frame: number, keys: Key[], omega = 6.2) => {
 };
 
 // ---------------------------------------------------------------------------------------------------------------
-// Fondo: noche cálida de biblioteca, con un charco de luz, un haz y motas de polvo que flotan. Un solo fondo continuo
-// para todo el vídeo (se dibuja una vez, debajo de todas las escenas).
+// Fondo: la biblioteca de noche, siempre visible (nunca negro). Un «plató» (el pasillo de estanterías, renderizado y
+// desenfocado: tools/lv3_set.py) con un charco de luz cálida, bokeh de lámparas, el haz con motas de polvo y una viñeta
+// suave. Cada plano lo encuadra a su manera (`view`): desplazamiento, escala y cuánto se oscurece.
 // ---------------------------------------------------------------------------------------------------------------
+export type SetView = { x: number; y: number; s: number; dim: number };
+export const SET_VIEW: SetView = { x: 0, y: 0, s: 1, dim: 0.3 };
 const DUST = Array.from({ length: 54 }, (_, i) => ({
   x: rnd(i * 7 + 1) * 1920, y: rnd(i * 7 + 2) * 1080, r: 1.1 + rnd(i * 7 + 3) * 2.6,
   vx: (rnd(i * 7 + 4) - 0.35) * 9, vy: (rnd(i * 7 + 5) - 0.6) * 7, ph: rnd(i * 7 + 6) * 6.28, tw: 0.6 + rnd(i * 7 + 7) * 1.2,
 }));
-export const Night: React.FC<{ beam?: number; warmth?: number }> = ({ beam = 1, warmth = 1 }) => {
+const BOKEH = Array.from({ length: 12 }, (_, i) => ({
+  x: rnd(i * 13 + 3) * 1920, y: rnd(i * 13 + 4) * 1080 * 0.85, d: 40 + rnd(i * 13 + 5) * 120,
+  o: 0.05 + rnd(i * 13 + 6) * 0.09, vx: (rnd(i * 13 + 7) - 0.5) * 6, vy: (rnd(i * 13 + 8) - 0.5) * 4, ph: rnd(i * 13 + 9) * 6.28,
+}));
+export const Night: React.FC<{ beam?: number; warmth?: number; view?: SetView }> = ({ beam = 1, warmth = 1, view = SET_VIEW }) => {
   const frame = useCurrentFrame();
   const t = frame / 50;
   const breathe = 0.92 + 0.08 * Math.sin(t * 0.35);
-  // Haz de luz: recta que baja en diagonal desde arriba a la izquierda
+  // el plató respira y se desplaza muy despacio (como una cámara en mano muy suave)
+  const dx = view.x + Math.sin(t * 0.11) * 26, dy = view.y + Math.cos(t * 0.09) * 12;
+  const sc = view.s * (1.0 + 0.012 * Math.sin(t * 0.07));
   const bx0 = 380, by0 = -200, ang = (62 * Math.PI) / 180;
   return (
-    <AbsoluteFill style={{ background: 'radial-gradient(120% 95% at 50% 32%, #2b2219 0%, #18130e 42%, #0a0806 78%, #050403 100%)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', left: 960 - 1100, top: -720, width: 2200, height: 1700, borderRadius: '50%', background: `radial-gradient(closest-side, rgba(255,206,130,${0.17 * warmth * breathe}), rgba(255,206,130,0) 72%)` }} />
-      <div style={{ position: 'absolute', left: bx0 - 260, top: by0, width: 520, height: 2200, transformOrigin: '260px 0', transform: `rotate(${-28}deg)`, opacity: beam * breathe,
-        background: 'linear-gradient(90deg, rgba(255,214,150,0) 0%, rgba(255,214,150,0.05) 30%, rgba(255,214,150,0.095) 50%, rgba(255,214,150,0.05) 70%, rgba(255,214,150,0) 100%)' }} />
+    <AbsoluteFill style={{ background: '#1a130d', overflow: 'hidden' }}>
+      <Img src={img3('set_bg.jpg')} style={{ position: 'absolute', left: 960 - 1200, top: 540 - 675, width: 2400, height: 1350, transform: `translate(${dx}px, ${dy}px) scale(${sc})` }} />
+      <AbsoluteFill style={{ background: `rgba(16,10,6,${view.dim})` }} />
+      {/* charco de luz cálida */}
+      <div style={{ position: 'absolute', left: 960 - 1100, top: -720, width: 2200, height: 1700, borderRadius: '50%', background: `radial-gradient(closest-side, rgba(255,206,130,${0.2 * warmth * breathe}), rgba(255,206,130,0) 72%)` }} />
+      {/* bokeh de las lámparas */}
+      {BOKEH.map((k, i) => {
+        const x = ((k.x + k.vx * t - dx * 0.35) % 2100 + 2100) % 2100 - 90;
+        const y = k.y + k.vy * t * 0.4 + Math.sin(t * 0.3 + k.ph) * 10 - dy * 0.35;
+        const o = k.o * (0.75 + 0.25 * Math.sin(t * 0.4 + k.ph));
+        return <div key={i} style={{ position: 'absolute', left: x - k.d / 2, top: y - k.d / 2, width: k.d, height: k.d, borderRadius: '50%', opacity: o, mixBlendMode: 'screen',
+          background: 'radial-gradient(circle, rgba(255,222,165,0.8) 0%, rgba(255,222,165,0.55) 45%, rgba(255,222,165,0.18) 64%, rgba(255,222,165,0) 72%)' }} />;
+      })}
+      {/* haz de luz con polvo */}
+      <div style={{ position: 'absolute', left: bx0 - 260, top: by0, width: 520, height: 2200, transformOrigin: '260px 0', transform: `rotate(${-28}deg)`, opacity: beam * breathe, mixBlendMode: 'screen',
+        background: 'linear-gradient(90deg, rgba(255,214,150,0) 0%, rgba(255,214,150,0.06) 30%, rgba(255,214,150,0.11) 50%, rgba(255,214,150,0.06) 70%, rgba(255,214,150,0) 100%)' }} />
       {DUST.map((d, i) => {
         const x = ((d.x + d.vx * t) % 1960 + 1960) % 1960 - 20;
         const y = ((d.y + d.vy * t) % 1120 + 1120) % 1120 - 20;
-        // Más visibles dentro del haz
-        const dx = x - bx0, dy = y - by0;
-        const dist = Math.abs(dx * Math.sin(ang) - dy * Math.cos(ang));
+        const ddx = x - bx0, ddy = y - by0;
+        const dist = Math.abs(ddx * Math.sin(ang) - ddy * Math.cos(ang));
         const inBeam = Math.max(0, 1 - dist / 300);
         const o = (0.08 + 0.55 * inBeam) * (0.55 + 0.45 * Math.sin(t * d.tw + d.ph)) * beam;
         if (o < 0.02) return null;
         return <div key={i} style={{ position: 'absolute', left: x, top: y, width: d.r * 2, height: d.r * 2, borderRadius: '50%', opacity: o, background: 'radial-gradient(circle, rgba(255,226,170,1) 0%, rgba(255,226,170,0) 70%)' }} />;
       })}
-      <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.55) 100%)' }} />
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(8,5,3,0.42) 100%)' }} />
     </AbsoluteFill>
   );
 };
@@ -219,7 +239,7 @@ export const InkWords: React.FC<{ clip: string; clipAt: number; size: number; co
         const uw = on ? interpolate(frame, [startF, clipAt + Math.round(e * 50)], [0, 1], clamp) : 0;
         return (
           <span key={i} style={{ position: 'relative', color: lit > 0.5 ? color : faint, opacity: 0.55 + 0.45 * lit }}>
-            {dropCap && i === 0 ? t.slice(1) : t}
+            {dropCap && i === 0 ? t.slice(1) : close && i === words.length - 1 ? t.replace(/\.$/, '') : t}
             {on && <span style={{ position: 'absolute', left: 0, bottom: '0.06em', height: Math.max(2, size * 0.055), width: `${uw * 100}%`, background: underline, borderRadius: 2 }} />}
             {i < words.length - 1 ? ' ' : ''}
           </span>

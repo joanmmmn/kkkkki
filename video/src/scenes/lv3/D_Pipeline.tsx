@@ -4,6 +4,7 @@ import { clamp } from '../../lib/anim';
 import { Sfx } from '../../components/Sfx';
 import { At, BookCover, eIO, eOut, follow, lerp, lvWeb, paperBg, ramp, Rig, Space, sp, T } from './kit';
 import { Archive, Check, Headphones, House, Mic } from './glyphs';
+import { InkStamp } from './ink';
 import { w } from './timeline';
 
 // Plano D (S05): cómo funciona LibriVox por dentro, como una cadena de montaje de papel y tinta:
@@ -111,8 +112,13 @@ export const Pipeline: React.FC<{ dur: number }> = ({ dur }) => {
           {/* el libro */}
           <At x={BOOK.x} y={BOOK.y} z={20} w={300} h={300} o={book} ry={-12}>
             <div style={{ transform: `translateY(${(1 - book) * 50}px) scale(${0.9 + 0.1 * book})`, transformStyle: 'preserve-3d' }}><BookCover id="5079" size={300} depth={26} /></div>
-            <div style={{ position: 'absolute', left: -40, right: -40, top: 318, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 34, color: T.creamSoft, opacity: ramp(frame, fLibro - 4, fLibro + 14, eOut) }}>un libro libre de derechos</div>
-            <div style={{ position: 'absolute', right: -34, top: -26, padding: '6px 14px', borderRadius: 6, border: `3px solid ${T.tealLight}`, color: T.tealLight, fontFamily: T.serif, fontSize: 26, transform: `rotate(-8deg) scale(${0.6 + 0.4 * pd})`, opacity: pd, background: 'rgba(11,9,7,0.6)' }}>dominio público</div>
+            <div style={{ position: 'absolute', left: -40, right: -40, top: 318, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 38, color: T.cream, opacity: ramp(frame, fLibro - 4, fLibro + 14, eOut), textShadow: '0 2px 14px rgba(0,0,0,0.6)' }}>un libro libre de derechos</div>
+            {/* sello de tinta sobre la portada */}
+            <div style={{ position: 'absolute', left: 14, top: 212, width: 282, height: 62, transform: 'rotate(-8deg) translateZ(2px)' }}>
+              <InkStamp at={fLibro + 6} w={282} h={62} color={T.teal} seed={2} border={4} radius={8}>
+                <div style={{ fontFamily: T.serif, fontWeight: 700, fontSize: 25, letterSpacing: 1, whiteSpace: 'nowrap' }}>DOMINIO PÚBLICO</div>
+              </InkStamp>
+            </div>
           </At>
           {/* voluntarios */}
           {VOL.map((v, i) => <Seat key={v.name} v={v} on={vol[i]} rec={Math.max(rec, 0) * (0.4 + 0.6 * casa)} frame={frame} i={i} />)}
@@ -121,7 +127,7 @@ export const Pipeline: React.FC<{ dur: number }> = ({ dur }) => {
             <div style={{ position: 'absolute', left: 10, top: 0, width: 140, height: 140, borderRadius: 70, background: 'radial-gradient(circle at 35% 30%, #3b4a2a, #1f2a16)', border: `2px solid ${T.oliveLight}`, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${0.7 + 0.3 * rev})` }}>
               <Headphones size={76} c={T.cream} />
             </div>
-            <div style={{ position: 'absolute', left: -60, right: -60, top: 154, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 36, color: T.creamSoft }}>un revisor</div>
+            <div style={{ position: 'absolute', left: -60, right: -60, top: 154, textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 40, color: T.cream, textShadow: '0 2px 14px rgba(0,0,0,0.6)' }}>un revisor</div>
           </At>
           {/* la web de LibriVox */}
           <At x={WEB.x} y={WEB.y} z={10} w={500} h={330} o={web}>
@@ -134,7 +140,7 @@ export const Pipeline: React.FC<{ dur: number }> = ({ dur }) => {
             </div>
           </At>
           <At x={WEB.x} y={WEB.y + 215} w={500} h={50} o={web}>
-            <div style={{ textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 34, color: T.creamSoft }}>se publica, gratis</div>
+            <div style={{ textAlign: 'center', fontFamily: T.serif, fontStyle: 'italic', fontSize: 38, color: T.cream, textShadow: '0 2px 14px rgba(0,0,0,0.6)' }}>se publica, gratis</div>
           </At>
           {/* Internet Archive */}
           <At x={ARC.x} y={ARC.y} w={420} h={140} o={arc}>

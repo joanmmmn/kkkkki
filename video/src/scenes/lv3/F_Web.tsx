@@ -166,7 +166,7 @@ export const Web: React.FC<{ dur: number }> = ({ dur }) => {
     { f: fPara + 10, x: 520, y: BAR + 340 },
     { f: fTitulo - 4, x: 540, y: BAR + 329 },
     { f: fZipScroll + 40, x: 325, y: BAR + 337 },
-    { f: fM4BScroll + 30, x: 226, y: BAR + 338 },
+    { f: fM4BScroll + 30, x: 298, y: BAR + 336 },
   ], 5.5);
   const curO = Math.min(
     ramp(frame, fBrowse + 18, fBrowse + 30) * (1 - ramp(frame, fClickSpan + 20, fClickSpan + 34))
@@ -209,11 +209,11 @@ export const Web: React.FC<{ dur: number }> = ({ dur }) => {
     <AbsoluteFill>
       <Space persp={1700}>
         <Rig cam={camObj}>
-          <Step n="1" title={'Entra en\nlibrivox.org'} at={fP1 - 2} out={urlStart - 10} />
-          <Step n="2" title={'Busca un título\no un autor'} at={fP2 - 2} out={fEscribe - 22} />
-          <Step n="3" title={'Escúchalo\no descárgalo'} at={fP3 - 2} out={fP3 + 44} />
+          <Step n="1" title={'Entra en\nlibrivox.org'} at={fP1 - 2} out={urlStart + 40} />
+          <Step n="2" title={'Busca un título\no un autor'} at={fP2 - 2} out={fEscribe + 10} />
+          <Step n="3" title={'Abre la ficha\ndel libro'} at={fP3 - 2} out={fP3 + 96} />
           {/* la ventana del navegador */}
-          <At x={0} y={(1 - win) * 120} z={(1 - win) * -500} w={VW} h={WH} s={K} o={Math.min(1, win * 1.4)}>
+          <At x={0} y={(1 - win) * 120} z={(1 - win) * -500} w={VW} h={WH} s={K} o={Math.min(1, win * 1.4) * (1 - dim)}>
             <Window url={nav.cur.url} typed={nav.cur.page === 'blank' ? URL.slice(0, urlN) : null} caret={nav.cur.page === 'blank' && frame >= urlStart - 10} load={nav.load} loading={nav.loading}
               glare={ramp(frame, fGo + 4, fGo + 60, eIO)}>
               <Pages navs={navs} scroll={scroll} />
@@ -222,8 +222,8 @@ export const Web: React.FC<{ dur: number }> = ({ dur }) => {
             {nav.cur.page === 'home' && (
               <>
                 <Slip text="audiolibros gratis de dominio público" at={fIng - 2} x={640} y={vy(280)} z={30} size={26} out={fBrowse - 30} />
-                <Slip text="lo leen voluntarios" at={fIng + 22} x={415} y={vy(450)} z={30} size={24} out={fBrowse - 30} />
-                <Slip text="escuchar" at={fIng + 30} x={829} y={vy(450)} z={30} size={26} out={fBrowse - 30} />
+                <Slip text="lo leen voluntarios" at={fIng + 22} x={415} y={vy(424)} z={30} size={24} out={fBrowse - 30} />
+                <Slip text="escuchar" at={fIng + 30} x={829} y={vy(424)} z={30} size={26} out={fBrowse - 30} />
                 <Lift id="home" box={[155, 784, 970, 72]} scroll={sc} lift={liftTabs} z={45} />
                 <Slip text="explorar el catálogo" at={fBrowse + 4} x={352} y={vy(797)} z={70} size={22} anchor="left" out={fClickLang + 2} />
                 <Lift id="home" box={[880, 809.7, 240, 42.4]} scroll={sc} lift={liftLang} z={95} pad={2} />
@@ -291,7 +291,7 @@ export const Web: React.FC<{ dur: number }> = ({ dur }) => {
                 <Slip text="suena en el navegador" at={fNaveg - 6} x={470} y={vy(1392)} z={62 * liftRow + 6} size={24} anchor="left" out={fTitulo - 8} />
                 <InkRing box={[499, vy(1310), 100, 16]} at={fTitulo} z={58 * liftRow} padX={12} padY={9} seed={5} out={fZipScroll - 6} />
                 <Lift id="book" box={[155, 518, 215, 40]} scroll={sc} lift={liftZip} z={65} />
-                <Lift id="book" box={[155, 1009, 160, 52]} scroll={sc} lift={liftM4B} z={65} />
+                <Lift id="book" box={[155, 1015, 160, 46]} scroll={sc} lift={liftM4B} z={65} />
                 <Slip text="recuerda por dónde vas" at={fRecuerda - 4} x={330} y={vy(1035)} z={70 * liftM4B + 6} size={24} anchor="left" out={fSin - 12} />
               </>
             )}
@@ -301,17 +301,21 @@ export const Web: React.FC<{ dur: number }> = ({ dur }) => {
         </Rig>
       </Space>
       {/* al final: la ventana se oscurece y quedan los tres archivos */}
-      <AbsoluteFill style={{ background: `rgba(8,6,4,${0.72 * dim})`, backdropFilter: dim > 0.01 ? `blur(${5 * dim}px)` : undefined, pointerEvents: 'none' }} />
+      <AbsoluteFill style={{ pointerEvents: 'none', opacity: dim, background: 'radial-gradient(44% 36% at 50% 25%, rgba(16,10,5,0.5) 0%, rgba(16,10,5,0.28) 55%, rgba(16,10,5,0) 100%)' }} />
       {tags.map((t, i) => {
         const p = ramp(frame, t.at, t.at + 34, eIO);
         if (p <= 0) return null;
         const s0 = src(t.from[0], t.from[1], t.from[2]);
         const arc = Math.sin(p * Math.PI) * -90;
         let x = lerp(s0.x, t.slot[0], p), y = lerp(s0.y, t.slot[1], p) + arc;
-        let s = lerp(0.22, 0.8, p), r = lerp(-10, -3 + i * 2, p);
+        // el papel aletea un poco en el aire y se desenfoca con la velocidad
+        let s = lerp(0.22, 0.8, p), r = lerp(-10, -3 + i * 2, p) + Math.sin(p * Math.PI * 3) * 7 * Math.sin(p * Math.PI);
+        const pPrev = ramp(frame - 1, t.at, t.at + 34, eIO);
+        const speed = Math.hypot(t.slot[0] - s0.x, t.slot[1] - s0.y) * (p - pPrev);
+        const mb = Math.min(3.2, speed * 0.05);
         x = lerp(x, FAN[i][0], fan); y = lerp(y, FAN[i][1], fan); s = lerp(s, 1, fan); r = lerp(r, FAN[i][2], fan);
         return (
-          <div key={t.fmt} style={{ position: 'absolute', left: x - TAG_W / 2, top: y - TAG_H / 2, transform: `scale(${s}) rotate(${r}deg)`, opacity: Math.min(1, p * 3) }}>
+          <div key={t.fmt} style={{ position: 'absolute', left: x - TAG_W / 2, top: y - TAG_H / 2, transform: `scale(${s}) rotate(${r}deg)`, opacity: Math.min(1, p * 3), filter: mb > 0.3 ? `blur(${mb}px)` : undefined }}>
             <FileTag fmt={t.fmt} line={t.line} sub={t.sub} />
           </div>
         );

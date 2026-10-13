@@ -18,6 +18,7 @@ import { LibriVoxReview } from './scenes/lv/Main';
 import { LV_TOTAL } from './scenes/lv/timeline';
 import { LVCover } from './scenes/lv/Cover';
 import { LVGuideCover } from './scenes/lv3/Cover';
+import { SetPlate } from './scenes/lv3/set';
 import { LibriVoxGuide, LV3_TOTAL } from './scenes/lv3/Main';
 import { Cover } from './scenes/elt2/Cover';
 import { CoverProposal } from './scenes/elt2/CoverProposal';
@@ -30,6 +31,7 @@ export const Root: React.FC = () => (
     <Composition id="LVGuideCover" component={LVGuideCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="LVGuideCover1080" component={LVGuideCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="LVGuideCoverOG" component={LVGuideCover} durationInFrames={1} fps={FPS} width={1200} height={630} />
+    <Composition id="LVSetPlate" component={SetPlate} durationInFrames={1} fps={FPS} width={2400} height={1350} />
     <Composition id="LVCover1080" component={LVCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="LVCoverOG" component={LVCover} durationInFrames={1} fps={FPS} width={1200} height={630} />
     <Composition id="ERReview" component={ElevenReaderReview} durationInFrames={ER2_TOTAL} fps={FPS} width={W} height={H} />

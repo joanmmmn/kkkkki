@@ -2,7 +2,7 @@
 // Uso: node tools/stills.mjs <composición> <salida_dir> <f1,f2,...|escena:X01@0.5,...> [escala]
 //   «X01@0.5» = el fotograma a mitad de la escena X01 (solo ERReview); también vale «X01+120» (fotograma 120 de la escena).
 import { bundle } from '/home/claude/kkkkki/video/node_modules/@remotion/bundler/dist/index.js';
-import { renderStill, selectComposition } from '/home/claude/kkkkki/video/node_modules/@remotion/renderer/dist/index.js';
+import { openBrowser, renderStill, selectComposition } from '/home/claude/kkkkki/video/node_modules/@remotion/renderer/dist/index.js';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -10,7 +10,8 @@ const [, , compId, outDir, list, scaleArg] = process.argv;
 const scale = Number(scaleArg || 0.5);
 fs.mkdirSync(outDir, { recursive: true });
 const serveUrl = await bundle({ entryPoint: '/home/claude/kkkkki/video/src/index.ts', publicDir: '/home/claude/kkkkki/video/public' });
-const comp = await selectComposition({ serveUrl, id: compId });
+const browser = await openBrowser('chrome');
+const comp = await selectComposition({ serveUrl, id: compId, puppeteerInstance: browser });
 
 // Inicio y duración de cada escena de la reseña (mismo cálculo que scenes/er2/timeline.ts).
 const sceneMap = (() => {
@@ -35,6 +36,7 @@ const frames = list.split(',').map((x) => {
 });
 for (const [label, frame] of frames) {
   const output = path.join(outDir, `${label.replace(/[^\w.@+-]/g, '_')}.png`);
-  await renderStill({ composition: comp, serveUrl, frame, output, scale, inputProps: {} });
+  await renderStill({ composition: comp, serveUrl, frame, output, scale, inputProps: {}, puppeteerInstance: browser });
   console.log(label, frame, output);
 }
+await browser.close({ silent: true });

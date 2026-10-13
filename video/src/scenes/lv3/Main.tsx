@@ -1,10 +1,10 @@
 import React from 'react';
-import { AbsoluteFill, Audio, Freeze, interpolate, Sequence, staticFile, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Audio, Freeze, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { voSrc } from '../../lib/vo';
 import { Sfx, SfxBusContext, SfxMuteContext, SfxName, STEM } from '../../components/Sfx';
 import { clamp } from '../../lib/anim';
 import { MotionContext } from '../../lib/motion';
-import { Grain, Night } from './kit';
+import { follow, Grain, Night, SetView } from './kit';
 import { PageTurn, PT, SOFT, SoftIn, SoftOut } from './frames';
 import { clipIntervals, scene, SCENES, speech, start, TOTAL } from './timeline';
 import { SHOTS } from './shots';
@@ -45,10 +45,15 @@ export const LibriVoxGuide: React.FC = () => {
   const sfxBus = { gain: 0.95, duck: (f: number) => 1 - Math.max(0.25 * env(f, sp, 0.05, 0.1), 0.6 * env(f, clips, 0.05, 0.1)) };
   const shotStart = (i: number) => start(SHOTS[i].scenes[0]);
   const shotDur = (i: number) => SHOTS[i].scenes.reduce((a, id) => a + scene(id).dur, 0);
+  // Encuadre del fondo: en cada plano se desplaza despacio de su encuadre inicial al final; entre planos, un muelle
+  // lo lleva de uno a otro sin saltos.
+  const frame = useCurrentFrame();
+  const bgKeys = SHOTS.flatMap((sh, i) => [{ f: shotStart(i), ...sh.bg[0] }, { f: shotStart(i) + shotDur(i) - 1, ...sh.bg[1] }]);
+  const bgV = follow(frame, bgKeys, 3.2) as unknown as SetView;
   return (
     <MotionContext.Provider value={{ soft: true }}>
       <AbsoluteFill style={{ background: '#000' }}>
-        <Night />
+        <Night view={bgV} />
         <SfxBusContext.Provider value={sfxBus}>
           {SHOTS.map((sh, i) => {
             const from = shotStart(i), dur = shotDur(i);
@@ -73,7 +78,7 @@ export const LibriVoxGuide: React.FC = () => {
                 {P && prev && tin === 'page' && (
                   <Sequence from={from} durationInFrames={PT} name={`página:${prev.id}→${sh.id}`}>
                     <SfxMuteContext.Provider value>
-                      <PageTurn><Night /><Freeze frame={shotDur(i - 1) - 1}><P dur={shotDur(i - 1)} /></Freeze></PageTurn>
+                      <PageTurn><Freeze frame={shotStart(i) - 1}><Night view={bgV} /></Freeze><Freeze frame={shotDur(i - 1) - 1}><P dur={shotDur(i - 1)} /></Freeze></PageTurn>
                     </SfxMuteContext.Provider>
                   </Sequence>
                 )}

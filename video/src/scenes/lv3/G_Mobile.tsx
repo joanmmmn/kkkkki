@@ -47,14 +47,14 @@ const TILES: { bg: string; g: React.ReactNode }[] = [
 ];
 const PODCAST_TILE = 6;
 const Home: React.FC<{ open: number }> = ({ open }) => (
-  <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(120% 80% at 30% 10%, #4a3a2a 0%, #1e1812 60%, #0f0c09 100%)' }}>
+  <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(90% 55% at 18% 4%, rgba(255,240,210,0.95) 0%, rgba(255,240,210,0) 70%), radial-gradient(80% 60% at 100% 100%, rgba(120,58,36,0.9) 0%, rgba(120,58,36,0) 72%), linear-gradient(172deg, #f3d39e 0%, #e0a764 42%, #b56d3e 78%, #8e4a2c 100%)' }}>
     <div style={{ position: 'absolute', left: 30, right: 30, top: 96, display: 'grid', gridTemplateColumns: 'repeat(4, 66px)', justifyContent: 'space-between', rowGap: 34 }}>
       {TILES.map((t, i) => (
         <div key={i} style={{ width: 66, height: 66, borderRadius: 17, background: t.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.35)',
           transform: i === PODCAST_TILE ? `scale(${1 + open * 0.08})` : undefined }}>{t.g}</div>
       ))}
     </div>
-    <div style={{ position: 'absolute', left: 22, right: 22, bottom: 26, height: 92, borderRadius: 30, background: 'rgba(255,255,255,0.12)' }} />
+    <div style={{ position: 'absolute', left: 22, right: 22, bottom: 26, height: 92, borderRadius: 30, background: 'rgba(255,248,236,0.26)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.35)' }} />
   </div>
 );
 
@@ -110,7 +110,7 @@ const Show: React.FC<{ frame: number; listAt: number; dlAt: number; playAt: numb
           return (
             <div key={i} style={{ height: 78, borderTop: '1px solid #e4dfd6', padding: '12px 22px 0 24px', position: 'relative', opacity: a, transform: `translateY(${(1 - a) * 18}px)` }}>
               <div style={{ fontSize: 13.5, color: '#8b8478', fontWeight: 600 }}>{String(i + 1).padStart(2, '0')} · {d}</div>
-              <div style={{ marginTop: 5, fontSize: 18, fontWeight: 600, width: 284, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{t}</div>
+              <div style={{ marginTop: 4, fontSize: t.length > 28 ? 15.5 : 18, lineHeight: 1.15, fontWeight: 600, width: 290 }}>{t}</div>
               <div style={{ position: 'absolute', right: 22, top: 22 }}><DlIcon p={frame < dlAt + i * 7 ? 0 : p} /></div>
             </div>
           );
@@ -216,10 +216,15 @@ export const Mobile: React.FC<{ dur: number }> = ({ dur }) => {
   // Tira de papel con el enlace: sale del menú y vuela a la pantalla del móvil
   const slipA = ramp(frame, fCopy + 2, fCopy + 16, eOut);
   const fly = ramp(frame, fFly, fFly + 30, eIO);
-  const slipFrom = { x: FX + (rssX - CROP[2] / 2 + 150) * FS, y: FY + (rssY - CROP[3] / 2 - 60) * FS, z: 140 };
+  // la tira sale del propio botón RSS (de donde se ha copiado el enlace)
+  const slipFrom = { x: FX + (rssX - CROP[2] / 2) * FS, y: FY + (rssY - CROP[3] / 2) * FS, z: 140 };
   const slipTo = { x: phoneX, y: -140, z: 30 };
   const sx = lerp(slipFrom.x, slipTo.x, fly), sy = lerp(slipFrom.y, slipTo.y, fly) - Math.sin(fly * Math.PI) * 160, sz = lerp(slipFrom.z, slipTo.z, fly) + Math.sin(fly * Math.PI) * 120;
   const slipO = slipA * (1 - ramp(frame, fFly + 24, fFly + 32));
+  // aleteo y desenfoque de movimiento de la tira mientras vuela
+  const flyPrev = ramp(frame - 1, fFly, fFly + 30, eIO);
+  const slipBlur = Math.min(3.5, Math.hypot(slipTo.x - slipFrom.x, slipTo.y - slipFrom.y) * (fly - flyPrev) * 0.045);
+  const flutter = Math.sin(fly * Math.PI * 3.2) * 8 * Math.sin(fly * Math.PI);
 
   // Apps de otros desarrolladores
   const APPS = [
@@ -267,8 +272,8 @@ export const Mobile: React.FC<{ dur: number }> = ({ dur }) => {
           </At>
           {/* la tira con el enlace */}
           {slipO > 0.01 && (
-            <At x={sx} y={sy} z={sz} w={520} h={64} o={slipO} rz={lerp(-4, 0, fly)} s={lerp(1, 0.55, fly)}>
-              <div style={{ position: 'absolute', inset: 0, ...paperBg(T.paper), borderRadius: 4, boxShadow: '0 18px 40px rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', gap: 12, padding: '0 18px', fontFamily: UI, fontSize: 25, color: T.ink, whiteSpace: 'nowrap' }}>
+            <At x={sx} y={sy} z={sz} w={520} h={64} o={slipO} rz={lerp(-4, 0, fly) + flutter} rx={Math.sin(fly * Math.PI * 2) * 14} s={lerp(lerp(0.45, 1, slipA), 0.55, fly)}>
+              <div style={{ position: 'absolute', inset: 0, ...paperBg(T.paper), borderRadius: 4, boxShadow: '0 18px 40px rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', gap: 12, padding: '0 18px', fontFamily: UI, fontSize: 25, color: T.ink, whiteSpace: 'nowrap', filter: slipBlur > 0.3 ? `blur(${slipBlur}px)` : undefined }}>
                 <Rss size={26} c={T.teal} />{RSS_URL}
               </div>
             </At>
@@ -287,7 +292,7 @@ export const Mobile: React.FC<{ dur: number }> = ({ dur }) => {
                   )}
                 </div>
               )}
-              <StatusBar dark={openApp < 0.5} offline={offline} />
+              <StatusBar offline={offline} />
             </PhoneBody>
           </At>
           {/* apps de otros desarrolladores */}

@@ -3,6 +3,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Sfx } from '../../components/Sfx';
 import { At, eOut, follow, img3, lerp, paperBg, ramp, Rig, Space, sp, T } from './kit';
 import { ChapterCard } from './frames';
+import { InkStamp, shake } from './ink';
 import { w } from './timeline';
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -36,14 +37,14 @@ export const Verdict: React.FC<{ dur: number }> = ({ dur }) => {
     { f: dur, x: 40, y: 20, z: -620, rx: 10, ry: -2 },
   ], 4.4);
   const card = sp(frame, 6, fps, 70, 20);
-  const stamp = sp(frame, fSiete - 6, fps, 300, 16);
-  const shake = Math.max(0, 1 - Math.abs(frame - (fSiete - 2)) / 8) * Math.sin(frame * 2.2);
+  // el golpe del sello sacude un poco la cámara
+  const jolt = shake(frame, fSiete - 2, 10, 5);
 
   return (
     <AbsoluteFill>
       <Space persp={1700}>
-        <Rig cam={{ x: cam.x, y: cam.y, z: cam.z, rx: cam.rx, ry: cam.ry }}>
-          <At x={shake * 4} y={(1 - Math.min(1, card)) * 200} z={(1 - Math.min(1, card)) * -400} w={CW} h={CH} o={Math.min(1, card * 1.5)} rz={-1.2 + shake * 0.3}>
+        <Rig cam={{ x: cam.x + jolt.x, y: cam.y + jolt.y, z: cam.z, rx: cam.rx, ry: cam.ry }}>
+          <At x={0} y={(1 - Math.min(1, card)) * 200} z={(1 - Math.min(1, card)) * -400} w={CW} h={CH} o={Math.min(1, card * 1.5)} rz={-1.2}>
             {/* la ficha */}
             <div style={{ position: 'absolute', inset: 0, ...paperBg('#f6efdc'), borderRadius: 10, boxShadow: '0 60px 140px rgba(0,0,0,0.75), 0 14px 40px rgba(0,0,0,0.45)' }}>
               {/* rayas de ficha y filete rojo */}
@@ -69,8 +70,13 @@ export const Verdict: React.FC<{ dur: number }> = ({ dur }) => {
                       <span style={{ flex: 1, height: 2, marginTop: 22, backgroundImage: `radial-gradient(circle, ${T.inkFaint} 1.5px, transparent 1.9px)`, backgroundSize: '14px 4px' }} />
                     </div>
                     {/* nota sellada */}
-                    <div style={{ position: 'absolute', left: 940, top: y, width: 150, height: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: T.serif, fontWeight: 600, fontSize: 66, color: r.v >= 9 ? T.olive : r.v >= 6.5 ? T.ink : T.redInk,
-                      opacity: Math.min(1, st), transform: `scale(${lerp(1.5, 1, Math.min(1, st))}) rotate(${(i % 2 ? 2 : -2)}deg)` }}>{r.score}</div>
+                    <div style={{ position: 'absolute', left: 930, top: y, width: 160, height: 100, display: 'flex', alignItems: 'center', justifyContent: 'flex-start', fontFamily: T.serif, fontWeight: 600, fontSize: 66, color: r.v >= 9 ? T.olive : r.v >= 6.5 ? T.ink : T.redInk,
+                      opacity: Math.min(1, st), transform: `scale(${lerp(1.5, 1, Math.min(1, st))}) rotate(${(i % 2 ? 2 : -2)}deg)`,
+                      WebkitMaskImage: `url(${img3('ink_wear.png')})`, WebkitMaskSize: '260px', WebkitMaskPosition: `${i * 61}px ${i * 37}px` }}>
+                      {/* alineadas por la coma: la parte entera a la derecha de una columna fija */}
+                      <span style={{ display: 'inline-block', width: 80, textAlign: 'right' }}>{r.score.split(',')[0]}</span>
+                      <span style={{ display: 'inline-block' }}>{r.score.includes(',') ? `,${r.score.split(',')[1]}` : ''}</span>
+                    </div>
                     {/* barra */}
                     <div style={{ position: 'absolute', left: 1090, top: y + 44, width: 90, height: 10, borderRadius: 5, background: 'rgba(42,37,32,0.1)', opacity: a }}>
                       <div style={{ width: `${(r.v / 10) * 100 * Math.min(1, st)}%`, height: '100%', borderRadius: 5, background: r.v >= 9 ? T.olive : r.v >= 6.5 ? T.inkSoft : T.redInk }} />
@@ -85,18 +91,15 @@ export const Verdict: React.FC<{ dur: number }> = ({ dur }) => {
                 );
               })}
             </div>
-            {/* sello de la nota global */}
-            {stamp > 0.01 && (
-              <div style={{ position: 'absolute', left: 1200, top: 470, width: 340, height: 290, transform: `translateZ(${30 + (1 - Math.min(1, stamp)) * 300}px) scale(${lerp(1.7, 1, Math.min(1, stamp))}) rotate(-9deg)`, opacity: Math.min(1, stamp * 2) }}>
-                <div style={{ position: 'absolute', inset: 0, borderRadius: 22, border: `9px solid ${T.red}`, boxShadow: `inset 0 0 0 7px rgba(246,239,220,0.9), inset 0 0 0 12px ${T.red}`, background: 'rgba(246,239,220,0.55)',
-                  WebkitMaskImage: `url(${img3('grain.png')})`, WebkitMaskSize: '180px 180px', maskImage: `url(${img3('grain.png')})` }} />
-                <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: T.red }}>
-                  <div style={{ fontFamily: T.serif, fontStyle: 'italic', fontSize: 34 }}>Nota de SonorBooks</div>
-                  <div style={{ fontFamily: T.serif, fontWeight: 600, fontSize: 130, lineHeight: 0.95 }}>7,5</div>
-                  <div style={{ fontFamily: T.serif, fontSize: 40, opacity: ramp(frame, fDiez - 4, fDiez + 8) }}>sobre 10</div>
-                </div>
-              </div>
-            )}
+            {/* sello de la nota global: baja, golpea y deja la tinta */}
+            <div style={{ position: 'absolute', left: 1222, top: 486, width: 320, height: 272, transform: 'translateZ(30px) rotate(-9deg)' }}>
+              <InkStamp at={fSiete - 2} w={320} h={272} color={T.red} seed={8} border={9} radius={22}>
+                <div style={{ position: 'absolute', inset: 9, borderRadius: 14, border: `4px solid ${T.red}` }} />
+                <div style={{ fontFamily: T.serif, fontStyle: 'italic', fontWeight: 600, fontSize: 34 }}>Nota de SonorBooks</div>
+                <div style={{ fontFamily: T.serif, fontWeight: 700, fontSize: 126, lineHeight: 0.95 }}>7,5</div>
+                <div style={{ fontFamily: T.serif, fontWeight: 600, fontSize: 40, opacity: ramp(frame, fDiez - 4, fDiez + 8) }}>sobre 10</div>
+              </InkStamp>
+            </div>
           </At>
         </Rig>
       </Space>
