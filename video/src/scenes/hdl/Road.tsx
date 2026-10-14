@@ -210,7 +210,7 @@ export const Vuelta: React.FC = () => {
   const routeD = route.map((p, i) => `${i ? 'L' : 'M'}${p[0]} ${p[1]}`).join(' ');
   return (
     <PaperStage>
-      <AbsoluteFill style={{ filter: quoteOn > 0 ? `blur(${(quoteOn * 3).toFixed(1)}px)` : undefined, opacity: 1 - 0.35 * quoteOn }}>
+      <AbsoluteFill style={{ filter: quoteOn > 0 ? `blur(${(quoteOn * 5).toFixed(1)}px)` : undefined, opacity: 1 - 0.62 * quoteOn }}>
         <AmericasMap transform={cam.transform} fill={{ Mexico: '#EFD9A6' }} sea="rgba(156,194,207,0.3)" />
         <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0 }}>
           <path d={routeD} stroke="#8C7A60" strokeWidth={14} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.35} />

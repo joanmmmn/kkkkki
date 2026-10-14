@@ -40,9 +40,9 @@ const WallClock: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) =
   );
 };
 const WallCalendar: React.FC<{ x: number; y: number }> = ({ x, y }) => (
-  <div style={{ position: 'absolute', left: x, top: y, width: 220, height: 250, background: '#F3EAD6', borderRadius: 6, boxShadow: '0 14px 26px rgba(0,0,0,0.45)', overflow: 'hidden', transform: 'rotate(-2deg)' }}>
-    <div style={{ height: 70, background: P.red, color: '#fff', fontFamily: F.serif, fontWeight: 700, fontSize: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: 2 }}>AGOSTO</div>
-    <div style={{ fontFamily: F.serif, fontWeight: 700, fontSize: 96, color: P.ink, textAlign: 'center', lineHeight: 1.3 }}>1966</div>
+  <div style={{ position: 'absolute', left: x, top: y, width: 192, height: 236, background: '#F3EAD6', borderRadius: 6, boxShadow: '0 14px 26px rgba(0,0,0,0.45)', overflow: 'hidden', transform: 'rotate(-2deg)' }}>
+    <div style={{ height: 64, background: P.red, color: '#fff', fontFamily: F.serif, fontWeight: 700, fontSize: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: 2 }}>AGOSTO</div>
+    <div style={{ fontFamily: F.serif, fontWeight: 700, fontSize: 82, color: P.ink, textAlign: 'center', lineHeight: 1.36 }}>1966</div>
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 4, padding: '0 16px' }}>
       {Array.from({ length: 21 }).map((_, i) => <div key={i} style={{ height: 6, background: 'rgba(29,26,22,0.25)', borderRadius: 2 }} />)}
     </div>
@@ -98,7 +98,7 @@ export const Hook: React.FC = () => {
     <NightStage lamp={[1000, 260]}>
       <Cam keys={cam}>
         <WallClock x={110} y={170} t={frame} />
-        <WallCalendar x={360} y={130} />
+        <WallCalendar x={318} y={134} />
         <Lamp x={960} />
         <Window glow={1} />
         <Counter />
@@ -111,11 +111,11 @@ export const Hook: React.FC = () => {
         <PostalScale x={820} y={430} needle={needle} size={0.92} platY={platY}>
           {frame >= fPaq - 8 && (
             <div style={{ position: 'absolute', left: 0, top: stackY }}>
-              <Stack w={300} thick={130 * (1 - split * 0.5)} x={-split * 190} y={0} />
+              <Stack w={300} thick={130 * (1 - split * 0.5)} x={-split * 172} y={0} />
               {split > 0 && (
                 <div style={{ position: 'absolute', left: out * 640, top: -out * 60, opacity: 1 - ramp(frame, fParte + 14, fParte + 24), transform: `scale(${1 - 0.35 * out})` }}>
-                  <Stack w={300} thick={65} x={split * 190} y={0} wrapped={wrap} string={wrap} />
-                  {frame >= fParte - 6 && <Stamp at={fParte - 2} text="1 de 2" size={40} rot={-10} style={{ left: split * 190 - 100, top: -150 }} />}
+                  <Stack w={300} thick={65} x={split * 172} y={0} wrapped={wrap} string={wrap} />
+                  {frame >= fParte - 6 && <Stamp at={fParte - 2} text="1 de 2" size={40} rot={-10} style={{ left: split * 172 - 100, top: -150 }} />}
                 </div>
               )}
             </div>

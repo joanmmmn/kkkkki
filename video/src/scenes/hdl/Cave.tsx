@@ -1,6 +1,6 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, random, useCurrentFrame } from 'remotion';
-import { clamp, easeInOut, easeOut } from '../../lib/anim';
+import { clamp, easeInOut, easeOut, fmtEs } from '../../lib/anim';
 import { Sfx, Keystrokes } from '../../components/Sfx';
 import { Count, F, Marker, NameCard, P, PaperStage, ramp, rampOut, shadow, Silhouette, sp, Stamp, Tag, Typed, typeTimes } from './kit';
 import { Typewriter } from './Icons';
@@ -21,6 +21,8 @@ export const Cueva: React.FC = () => {
   const calOut = ramp(frame, fEnc - 14, fEnc + 6);
   const month = Math.max(1, Math.min(18, Math.floor(interpolate(frame, [fDie - 6, fDie + 34], [6, 18], { ...clamp, easing: easeInOut }))));
   const strike = ramp(frame, fDie - 10, fDie, easeOut);
+  // lo que enseña el calendario (el Count de 1 a 6 y después los meses reales), para concordar «mes»/«meses»
+  const shownMonths = frame < fDie - 6 ? Number(fmtEs(interpolate(frame, [fSeis - 10, fSeis + 6], [1, 6], { ...clamp, easing: easeOut }))) : month;
   const pile = interpolate(frame, [fEnc, c.dur], [10, 150], clamp);
   const typing = frame > fEnc && Math.floor(frame / 3) % 2 === 0 ? 1 : 0;
   const signP = sp(frame, fCue - 6, 9, 160);
@@ -34,7 +36,7 @@ export const Cueva: React.FC = () => {
           <div style={{ position: 'absolute', left: 0, right: 0, top: 150, textAlign: 'center', fontFamily: F.serif, fontWeight: 700, fontSize: 300, color: P.ink, lineHeight: 1 }}>
             {frame < fDie - 6 ? <Count from={1} to={6} a={fSeis - 10} b={fSeis + 6} /> : month}
           </div>
-          <div style={{ position: 'absolute', left: 0, right: 0, top: 480, textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 50, color: P.sepia }}>{month === 1 ? 'mes' : 'meses'}</div>
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 480, textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 50, color: P.sepia }}>{shownMonths === 1 ? 'mes' : 'meses'}</div>
           {/* tachón del 6 */}
           <svg width={600} height={640} style={{ position: 'absolute', left: 0, top: 0, opacity: 1 - ramp(frame, fDie - 2, fDie + 4) }}>
             <path d="M150 250 L 450 400" stroke={P.red} strokeWidth={18} strokeLinecap="round" strokeDasharray={340} strokeDashoffset={340 * (1 - strike)} />

@@ -64,7 +64,7 @@ export const AudioScene: React.FC = () => {
           </div>
         </div>
         {/* la casa de los abuelos, donde las historias se contaban en voz alta */}
-        <div style={{ position: 'absolute', left: 1040, top: 330, opacity: rampOut(frame, fCasa - 8, fCasa + 10) * (1 - ramp(frame, fTres - 16, fTres - 4)), transform: `scale(${0.94 + 0.06 * sp(frame, fCasa - 8, 16, 140)})`, transformOrigin: '50% 100%' }}>
+        <div style={{ position: 'absolute', left: 1040, top: 330, opacity: rampOut(frame, fMac + 4, fMac + 22) * (1 - ramp(frame, fTres - 16, fTres - 4)), transform: `scale(${0.94 + 0.06 * sp(frame, fMac + 4, 16, 140)})`, transformOrigin: '50% 100%' }}>
           <CaribHouse w={640} glow={ramp(frame, fVoz - 4, fVoz + 20)} />
         </div>
         {frame > fCasa + 4 && frame < fTres && (

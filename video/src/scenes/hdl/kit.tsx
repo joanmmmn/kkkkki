@@ -373,7 +373,7 @@ export const QuoteCard: React.FC<{ text: string; at: number; who?: string; size?
   const p = rampOut(frame, at - 10, at + 10);
   return (
     <div style={{ position: 'absolute', width: w, opacity: p, ...style }}>
-      <div style={{ fontFamily: F.serif, fontWeight: 700, fontSize: size * 1.7, lineHeight: 1, color: P.yellow, height: size * 1.15, transform: `translateY(${(1 - p) * 20}px)`, marginLeft: -size * 0.06 }}>«</div>
+      <div style={{ fontFamily: F.serif, fontWeight: 700, fontSize: size * 1.7, lineHeight: 1, color: P.yellow, height: size * 1.32, transform: `translateY(${(1 - p) * 20}px)`, marginLeft: -size * 0.06 }}>«</div>
       <div style={{ fontFamily: F.serif, fontStyle: 'italic', fontWeight: 500, fontSize: size, lineHeight: 1.18, color: dark ? '#F6EFE2' : P.ink }}>
         <Reveal text={text} at={at} step={step} />
       </div>
