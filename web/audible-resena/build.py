@@ -87,9 +87,9 @@ def jsonld():
         from zoneinfo import ZoneInfo
         dia = datetime.date.fromisoformat(YT_FECHA) if YT_FECHA else datetime.date.today()
         subida = datetime.datetime(dia.year, dia.month, dia.day, 12, tzinfo=ZoneInfo('Europe/Madrid')).isoformat()  # +01:00 o +02:00 según el día
-        graph.append({'@type': 'VideoObject', '@id': url + '#video', 'name': '¿Merece la pena Audible? Opiniones, precio y 30 días gratis',
+        graph.append({'@type': 'VideoObject', '@id': url + '#video', 'name': '¿Merece la pena Audible? Opiniones, precio y hasta 90 días gratis',
                       'description': 'Reseña de Audible: qué es, precio de Premium y Standard, el catálogo incluido y el extendido, sus Originals, '
-                                     'la app por dentro, dispositivos, opiniones, lo bueno y lo malo, y cómo probarlo 30 días gratis y cancelar.',
+                                     'la app por dentro, dispositivos, opiniones, lo bueno y lo malo, y cómo probarlo gratis (hasta 90 días) y cancelar.',
                       'thumbnailUrl': [f'https://i.ytimg.com/vi/{YT}/maxresdefault.jpg', 'https://sonorbooks.com' + PROD_A + '/media/audible-resena-og.jpg'],
                       'uploadDate': subida, 'duration': DURACION, 'inLanguage': 'es-ES',  # lo que dura el montaje (tools/aud_meta.py)
                       'embedUrl': f'https://www.youtube.com/embed/{YT}',

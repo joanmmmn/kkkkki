@@ -13,15 +13,16 @@ oferta y barra fija) usan la ruta de afiliado del sitio, como la tarjeta de Audi
 (`/salir/audible/?market=ES&language=es&to=https%3A%2F%2Fwww.audible.es%2Fep%2Fprueba-gratis`, que hoy redirige a
 geni.us/cTTS), con `rel="noopener noreferrer sponsored"` y los atributos `data-platform` del sitio. Las condiciones de la oferta
 están **copiadas tal cual de la tarjeta de Audible de SonorBooks** («30 días gratis · Después, 9,99 €/mes» y «Prueba para cuentas
-que cumplan las condiciones. Hay títulos de compra adicional.»). El aviso de afiliado está junto a cada botón y, completo, con la
-frase de Amazon Afiliados, en «Cómo lo probamos».
+que cumplan las condiciones. Hay títulos de compra adicional.»). Junto a ellas, «hasta 90 días gratis» (Joan, 14/10/2026): 30 días
+para todos y 90 con Amazon Prime para nuevos suscriptores de Audible Premium, según audible.es el 14/10/2026. El aviso de afiliado
+está junto a cada botón y, completo, con la frase de Amazon Afiliados, en «Cómo lo probamos».
 
 ## Qué lleva
 
 Responde en el cuerpo, sin preguntas frecuentes, a lo que se busca de Audible en España: «opiniones», «¿merece la pena?», «qué es»,
 «precio», «Premium / Standard», «¿qué incluye?», «catálogo extendido», «¿tiene límite de horas?», «Originals», «gratis / 30 días /
-Prime», «cómo cancelar», «niños», «dispositivos / ordenador / Alexa» y «Audible vs Storytel / Nextory / Podimo / Kobo / Spotify».
-Título SEO: «Audible: opiniones, precio y 30 días gratis (2026)».
+90 días / 3 meses / Prime», «cómo cancelar», «niños», «dispositivos / ordenador / Alexa» y «Audible vs Storytel / Nextory / Podimo / Kobo / Spotify».
+Título SEO: «Audible: opiniones, precio y hasta 90 días gratis (2026)».
 
 La idea visual de toda la página: **las ondas del logotipo de Audible** (tres arcos que se dibujan) y **la pareja «Incluido» /
 «Aparte»**: lo que entra en Premium, en naranja y con el botón de play, frente al catálogo extendido, en azul noche y con la
@@ -31,7 +32,7 @@ etiqueta de precio. Es la letra pequeña que más pesa en Audible y vuelve en la
   *La sombra del viento* (botón «Reproducir») y la de *Los tres mundos* (−29 %, 15,10 €, «Comprar por 15,10 €»); las ondas pasan
   del naranja al azul noche. Alterna solo mientras se ve; se para con el ratón encima o el foco dentro, al pulsar el interruptor y
   del todo tras tres vueltas. Con `prefers-reduced-motion`, nada se mueve.
-- Veredicto rápido (8/10) con el botón «Probar 30 días gratis» y el aviso de afiliado.
+- Veredicto rápido (8/10) con el botón «Probar gratis», las condiciones (30 días; 90 con Prime) y el aviso de afiliado.
 - Cuerpo en una columna de lectura, con los módulos a lo ancho. Sin índice lateral, sin etiquetas sobre los títulos, sin
   capítulos del vídeo y sin firma ni botones en la portada.
 - Vídeo (se carga solo al pulsar, con youtube-nocookie) y qué es Audible, con tres capturas (portada, novedades y pódcasts,
@@ -53,7 +54,7 @@ etiqueta de precio. Es la letra pequeña que más pesa en Audible y vuelve en la
 - **Audible vs Storytel, Nextory, Podimo, Kobo Plus y Spotify**: tabla en el ordenador y fichas en el móvil, con enlaces a las
   reseñas y a la comparativa Audible vs Storytel.
 - Lo mejor y lo peor (de aquí salen las notas del JSON-LD).
-- **Cómo probarlo 30 días**: cuatro pasos, la tarjeta de la oferta (condiciones de SonorBooks tal cual) y la **línea de 31 casillas**
+- **Cómo probarlo hasta 90 días**: cuatro pasos, la tarjeta de la oferta (condiciones de SonorBooks tal cual, más los 90 días con Prime) y la **línea de 31 casillas**
   con el truco comprobado (si cancelas el día 1, sigues hasta el día 30) y un selector «¿Qué día empiezas la prueba?» que calcula
   las fechas. Otras formas: Prime (90 días), la oferta de temporada de audible.es (con fecha) y la guía de audiolibros gratis.
 - **Cómo cancelar**: pestañas Audible.es / Amazon / App Store / Google Play (tabulador itinerante y flechas) con la ruta de cada una,
@@ -112,7 +113,7 @@ la miniatura real, `deliverables/audible/resena/miniatura_resena.png`, y de la i
    usa como `datePublished` y `article:published_time`; si conoces la fecha de publicación original, cámbiala en `PUBLICADA`
    (`build.py`). La de modificación (14/10/2026, `MODIFICADA`) cámbiala al día en que se publique. En el índice del blog, la
    tarjeta dice «Audible en España: opiniones, precio y cómo funciona»: cambia el título y la entradilla para que coincidan con la
-   página nueva («Audible: opiniones, precio y 30 días gratis») y, si quieres, la imagen (`media/audible-resena-og.jpg`,
+   página nueva («Audible: opiniones, precio y hasta 90 días gratis») y, si quieres, la imagen (`media/audible-resena-og.jpg`,
    1200×630). Los carruseles de otras reseñas (Nextory, Podimo, Storytel) que anuncian esta página con el título antiguo también.
 6. Publica la página con el vídeo ya subido: `python3 web/audible-resena/build.py --yt ID_DEL_VIDEO --yt-fecha AAAA-MM-DD`.
    Así el enlace del vídeo apunta al vídeo (sin `--yt` apunta al canal de YouTube) y el JSON-LD lleva el `VideoObject`
@@ -127,9 +128,9 @@ la miniatura real, `deliverables/audible/resena/miniatura_resena.png`, y de la i
 - **Nota 8 y apartados** (app y reproductor 9 · dispositivos 9 · catálogo y Originals 8,5 · prueba y cancelación 8 · precio y
   planes 7 · qué está incluido 6,5): propuesta basada en la prueba del 14/10/2026 con una cuenta en la prueba de Premium.
 - **Condiciones de la oferta**: copiadas tal cual de la tarjeta de Audible de SonorBooks (14/10/2026). No se ha cambiado nada.
-- **Ofertas de Audible**: la página menciona, con fecha, lo que anunciaba audible.es el 14/10/2026 («0,99 € al mes durante los
-  primeros 3 meses», «Ahorros de temporada») y la prueba de 90 días para clientes de Prime, que da su ayuda. Si prefieres no
-  mencionarlas (no son de SonorBooks), se quita el bloque «Ofertas de temporada» y la línea de Prime.
+- **Ofertas de Audible**: «hasta 90 días gratis» lo decidió Joan el 14/10 (30 días, o 90 con Prime, que anuncia audible.es). La
+  página menciona además, con fecha, la oferta de temporada de audible.es («0,99 € al mes durante los primeros 3 meses»); si
+  prefieres no mencionarla, se quita el bloque «Ofertas de temporada».
 - **El truco de la prueba** (cancelar el día 1 y seguir escuchando hasta el día 30): comprobado en nuestra cuenta (alta y baja
   el 14/10; la app dice «Has cancelado tu plan. Tu suscripción finaliza el 13 de noviembre de 2026» y Premium sigue activo).
 - **Rutas para cancelar**: las de su ayuda (web de Audible y Amazon); no entramos en la web con la cuenta. Las de la App Store y
@@ -140,4 +141,4 @@ la miniatura real, `deliverables/audible/resena/miniatura_resena.png`, y de la i
   fuera la barra de notificaciones con el correo y el aviso de caducidad de una ficha). Llevan portadas de libros del catálogo,
   como cualquier reseña de la app.
 - **Imagen para redes y póster**: salen de la miniatura del vídeo (logotipo de Audible, «¿Merece la pena?», el móvil con *Drácula*,
-  «sin límite de horas» y «30 días gratis»).
+  «sin límite de horas» y «Hasta 90 días gratis»).

@@ -106,7 +106,7 @@ $$('[data-trial]').forEach((box) => {
       t.textContent = ds.length > 1 ? range(ds[0], ds[1]) : fmt.format(ds[0]);
       t.dateTime = iso(ds[0]);
     });
-    note.textContent = `Fechas para una prueba que empieza el ${fmt.format(start)}: la renovación llega a los 30 días. Compruébala en Detalles de la cuenta, en audible.es. En nuestra cuenta, con alta el 14 de octubre de 2026 y cancelada ese mismo día, Audible decía: «Tu suscripción finaliza el 13 de noviembre de 2026».`;
+    note.textContent = `Fechas para una prueba que empieza el ${fmt.format(start)}: la renovación llega a los 30 días (a los 90 con la prueba de Amazon Prime). Compruébala en Detalles de la cuenta, en audible.es. En nuestra cuenta, con alta el 14 de octubre de 2026 y cancelada ese mismo día, Audible decía: «Tu suscripción finaliza el 13 de noviembre de 2026».`;
   };
   input.value = iso(new Date());
   ctl.hidden = false;

@@ -12,6 +12,10 @@ https://sonorbooks.com/es/blog/audible-resena/.
 - **Condiciones de la tarjeta de SonorBooks** (se copian tal cual, sin cambiar nada): «30 días gratis · Después, 9,99 €/mes» ·
   «Prueba para cuentas que cumplan las condiciones. Hay títulos de compra adicional.» · lema «Historias sin mirar el reloj.» ·
   «Sin límite de horas en el catálogo incluido.»
+- **«Hasta 90 días gratis»** (Joan, 14/10, tarde: «Es hasta 90 días gratis para el inicio y los círculos»): 30 días, o 90 con Amazon
+  Prime. audible.es (14/10/2026): «Exclusivo para miembros Prime. Los nuevos suscriptores de Audible Premium obtendrán 3 meses de
+  prueba gratis»; la ayuda habla de «período de prueba extendido de 90 días una vez». El enlace de SonorBooks lleva a la página de
+  Audible en amazon.es (`/hz/audible/arya/mlp`, con la etiqueta de afiliado). Las condiciones de la tarjeta salen igual, tal cual.
 - **Cuenta de grabación:** la puso Joan (sesión iniciada en la app de Android en BlueStacks). Yo no creé cuentas, no inicié
   sesión ni toqué tarjetas. La prueba de Premium se dio de alta y se canceló el 14/10/2026: la app dice «Has cancelado tu plan.
   Tu suscripción finaliza el 13 de noviembre de 2026» y Premium «Termina el 13 nov. 2026». No habrá cobro.
@@ -112,7 +116,7 @@ las píldoras de G03, G13 y H04 ya no tienen doble espacio ni « :»; en H04, la
 
 | Escena | Voz | En pantalla |
 |---|---|---|
-| G01 | ¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis. | Montaje rápido de la app (portada, Top 20, Drácula, reproductor, Los tres mundos, suscripción) y etiquetas |
+| G01 | ¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo hasta noventa días gratis. | Montaje rápido de la app (portada, Top 20, Drácula, reproductor, Los tres mundos, suscripción) y etiquetas |
 | G02 | ¿Qué es Audible? La app de audiolibros de Amazon, que llegó a España en dos mil veinte. Con su plan Premium escuchas todo lo que quieras de su catálogo incluido, sin límite de horas: más de noventa mil títulos, entre audiolibros, pódcasts y producciones propias. | Logotipo, «de Amazon», 2020; ∞; «Más de 90.000»; sello «audible ORIGINAL»; novedades con Drácula |
 | G03 | Tiene dos planes. Premium: nueve noventa y nueve al mes, para escuchar sin límite. Y Standard: seis noventa y nueve, para elegir un audiolibro al mes, que escuchas mientras sigas suscrito. Los dos, sin permanencia; no hay plan anual ni familiar. | Tarjetas Premium 9,99 € y Standard 6,99 € (un libro por mes) |
 | G04 | Pero ojo: Premium no lo incluye todo. Muchos superventas sí, como La sombra del viento o Los huérfanos, de Carmen Mola. Otros van aparte, en su catálogo extendido: Los tres mundos, de Posteguillo, cuesta quince diez, con el descuento de socio. | Fichas con «Reproducir», búsqueda con «CATÁLOGO EXTENDIDO», Los tres mundos −29 % 15,10 € |
@@ -125,14 +129,25 @@ las píldoras de G03, G13 y H04 ya no tienen doble espacio ni « :»; en H04, la
 | G11 | ¿Y qué opinan los usuarios? En la App Store tiene un cuatro coma siete, con treinta y seis mil valoraciones, y en Google Play, un cuatro coma cinco. Lo que más gusta: las narraciones y la variedad. Lo que más se critica: pagar la cuota y que algunos libros populares se paguen aparte. | Notas 4,7 y 4,5; gusta / se critica |
 | G12 | Lo bueno: sin límite de horas por nueve noventa y nueve, Originals con actores conocidos, una app muy completa y web para el ordenador. Lo malo: no está todo incluido, no hay ebooks ni plan familiar y, si te suscribes desde la app del móvil, puede salirte más caro y sin prueba gratis. | Lo bueno / lo malo |
 | G13 | ¿Merece la pena? Si escuchas mucho y te gustan las producciones originales, sí: por nueve noventa y nueve no cuentas horas. Si solo quieres un libro al mes, te basta Standard, o un plan con horas como Podimo. Y antes de pagar, busca tus libros: lo del catálogo extendido se paga aparte. | Veredicto; Standard 6,99 € y Podimo 4,99 € (20 h) |
-| H01 | ¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis de Audible Premium. | Sello 30 días; condiciones de la tarjeta de SonorBooks tal cual |
+| H01 | ¿Quieres probarlo? Desde SonorBooks tienes hasta noventa días gratis de Audible Premium: treinta, o noventa si eres cliente de Amazon Prime. | Sello «hasta 90 días gratis»; «30 días gratis · Después, 9,99 €/mes» (tarjeta de SonorBooks, tal cual) y «90 días con Amazon Prime»; condiciones |
 | H02 | Actívalos desde nuestra página de plataformas o desde la ficha de cualquier libro que esté en Audible. Te dejamos en la descripción el enlace directo y la reseña completa por escrito. | Plataformas y ficha de La sombra del viento en SonorBooks |
 | H03 | Entra con tu cuenta de Amazon y confirma tu forma de pago: hoy no pagas nada. | Página de la prueba de audible.es |
 | H04 | Y un truco que hemos comprobado: si cancelas el primer día, sigues escuchando hasta que terminan los treinta días. Cancela en la web de Audible o en Amazon; desde la app no se puede. | «Has cancelado tu plan» / «Termina el 13 nov. 2026»; barra de 30 días |
 | H05 | ¿Dudas entre Audible y otras? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma. | Plataformas de SonorBooks |
 | H06 | Encuentra dónde escuchar tu próximo libro en SonorBooks. | Cierre con aviso de afiliado |
 
-Vertical (J01–J07, 0:35): ¿Merece la pena Audible? Lo hemos probado a fondo. · Por nueve noventa y nueve al mes escuchas sin
+Vertical (J01–J07, 0:36): ¿Merece la pena Audible? Lo hemos probado a fondo. · Por nueve noventa y nueve al mes escuchas sin
 límite de horas más de noventa mil títulos. · Pero ojo: no está todo. Algunos superventas se pagan aparte, aunque con descuento. ·
-Lo mejor: sus Originals, como Drácula, con Claudia Salas y Asier Etxeandia. · ¿Quieres probarlo? Desde SonorBooks tienes treinta
-días gratis. · Y si cancelas el primer día, sigues escuchando hasta que termina la prueba. · Busca tu próximo libro en SonorBooks.
+Lo mejor: sus Originals, como Drácula, con Claudia Salas y Asier Etxeandia. · ¿Quieres probarlo? Desde SonorBooks tienes hasta
+noventa días gratis. · Y si cancelas el primer día, sigues escuchando hasta que termina la prueba. · Busca tu próximo libro en SonorBooks.
+
+## v2 (14/10, tarde): «hasta 90 días» y los círculos
+
+- Locución nueva de G01, H01 y J05 (413 caracteres). El vídeo queda en 4:22 (13.106 fotogramas) y el vertical en 0:36.
+- Círculos de toque revisados uno a uno con la toma real: el de «Incluido» (G07) caía sobre la lista cargando (el toque real es a
+  los 6,03 s de la toma); el de «+ Favoritos» (G08) caía después del aviso «Marcador añadido» (el toque real es a los 20,56 s); el
+  del menú «⋮» quedaba fuera de plano. Los demás (Descubrir, Top 20, Explorar por duración, velocidad, 30 min, perfil infantil) estaban bien.
+- El círculo de «actualizar» de Android que salía encima de «Has cancelado tu plan» (19_suscripcion, 16,9–18,1 s): fuera; G01, H04
+  y J06 usan el tramo limpio (desde 18,3 s).
+- Marcas: MarkLayer dibuja una cada vez; en G04 había dos a la vez (la cámara saltaba entre las dos) y en G07 «Resultados (38)» no
+  llegaba a verse. Ahora van seguidas.
