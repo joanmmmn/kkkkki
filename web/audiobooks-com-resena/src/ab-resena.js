@@ -73,7 +73,7 @@ $$('[data-pick]').forEach((box) => {
   const R = {
     '1:own': ['abc', 'Audiobooks.com', '14,95&nbsp;USD al mes (unos 13,34&nbsp;€) · 1 crédito', 'Con un libro al mes que quieres conservar, el crédito encaja: vale por cualquier audiolibro, también novedades largas que en otras se pagan aparte, y el libro es tuyo aunque te des de baja. Además, un libro VIP al mes y más de 10.000 gratis.'],
     '1:no': ['alt', 'Un plan más barato', 'Audible Standard 6,99&nbsp;€ · Podimo 4,99&nbsp;€', 'Si no necesitas quedártelo, por menos tienes un audiolibro al mes en Audible Standard (6,99&nbsp;€) o 20 horas al mes en Podimo (4,99&nbsp;€). Antes, mira en SonorBooks dónde está tu libro.'],
-    '2:own': ['abc', 'Audiobooks.com, con más créditos', 'Plan de 2 créditos o créditos extra', 'Para dos o tres libros al mes en propiedad necesitas más créditos: su ayuda dice que con un plan de 2 o 3 créditos al mes ahorras en el precio de cada uno, y también puedes comprar créditos sueltos. Mira los precios en su web antes de elegir.'],
+    '2:own': ['abc', 'Audiobooks.com, con más créditos', 'Plan de 2 créditos o créditos extra', 'Para dos o tres libros al mes en propiedad necesitas más créditos: su ayuda dice que con un plan de 2 o 3 créditos al mes puedes ahorrar en el precio de cada crédito, y también puedes comprar créditos sueltos. Mira los precios en su web antes de elegir.'],
     '2:no': ['flat', 'Una tarifa plana', 'Storytel 8,99&nbsp;€ · Audible 9,99&nbsp;€', 'Con dos o tres libros al mes, una tarifa plana sale mejor: escuchas todo lo incluido sin gastar créditos. Storytel no cuenta horas y Audible Premium tampoco, en su catálogo incluido.'],
     '4:own': ['flat', 'Tarifa plana… y compra lo que quieras guardar', 'Storytel 8,99&nbsp;€ · Audible 9,99&nbsp;€', 'Si escuchas mucho, un crédito al mes se queda corto. Con una tarifa plana escuchas sin límite y, los pocos libros que quieras tener para siempre, los compras aparte.'],
     '4:no': ['flat', 'Una tarifa plana', 'Storytel 8,99&nbsp;€ · Kobo Plus 8,99&nbsp;€', 'Escuchas mucho: con créditos tendrías que comprar uno cada pocos días. Una tarifa plana, sin límite de horas, te sale mucho más barata. <a href="/es/plataformas/">Compara plataformas</a>.'],
@@ -108,7 +108,7 @@ $$('[data-trial]').forEach((box) => {
       t.textContent = ds.length > 1 ? range(ds[0], ds[1]) : fmt.format(ds[0]);
       t.dateTime = iso(ds[0]);
     });
-    note.textContent = `Fechas para una prueba que empieza el ${fmt.format(start)}: el día del alta cuenta como el primero y el primer cobro llega a los 30 días (su ayuda: alta el 1 de julio, primer cobro el 31 de julio). Si cancelas antes, pierdes los libros de la prueba. En nuestra cuenta, con alta el 14 de octubre de 2026, el primer cobro sería el 13 de noviembre.`;
+    note.textContent = `Fechas para una prueba que empieza el ${fmt.format(start)}: el día del alta cuenta como el primero y el primer cobro llega el día 31 (su ayuda: alta el 1 de julio, primer cobro el 31 de julio). Si cancelas antes, pierdes los libros de la prueba. En nuestra cuenta, con alta el 14 de octubre de 2026, el primer cobro sería el 13 de noviembre.`;
   };
   input.value = iso(new Date());
   ctl.hidden = false;

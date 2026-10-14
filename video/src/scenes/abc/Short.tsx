@@ -273,7 +273,7 @@ const U05: React.FC<SP> = ({ lead }) => {
           <CalendarIcon size={46} c={AB_DEEP} /> Después, 14,95 USD/mes
         </div>
         <div style={{ position: 'absolute', top: 1300, width: 900, textAlign: 'center', fontFamily: font.sans, fontWeight: 500, fontSize: 29, lineHeight: 1.3, color: color.muted, opacity: sFine }}>
-          1 audiolibro con el crédito y 2 de la selección VIP. Solo nuevas altas elegibles; una prueba por persona u hogar.
+          Prueba: 1 audiolibro y 2 de la selección VIP. Solo nuevas altas elegibles; una prueba por persona u hogar.
         </div>
       </AbsoluteFill>
       <Sfx name="riser" at={LAND - 4} volume={0.7} />

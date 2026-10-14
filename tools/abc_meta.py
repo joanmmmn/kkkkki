@@ -34,9 +34,9 @@ def speech_frames(id_):
 
 # En los subtítulos, las cifras que la voz dice en letra se escriben con números («ocho noventa y nueve» → «8,99 €»).
 NUMEROS = [
-    (['catorce', 'noventa', 'y', 'cinco', 'dolares'], '14,95 $'), (['diecisiete', 'noventa', 'y', 'cinco'], '17,95 €'),
+    (['catorce', 'noventa', 'y', 'cinco', 'dolares'], '14,95 $'), (['diecisiete', 'noventa', 'y', 'cinco', 'euros'], '17,95 €'), (['diecisiete', 'noventa', 'y', 'cinco'], '17,95 €'),
     (['setecientos', 'mil'], '700.000'), (['dos', 'mil', 'veintidos'], '2022'), (['treinta', 'y', 'seis', 'mil'], '36.000'),
-    (['diez', 'mil'], '10.000'), (['cuatro', 'coma', 'tres'], '4,3'), (['cuatro', 'coma', 'cinco'], '4,5'), (['trece', 'euros'], '13 euros'),
+    (['diez', 'mil'], '10.000'), (['cuatro', 'coma', 'tres'], '4,3'), (['cuatro', 'coma', 'cinco'], '4,5'), (['trece', 'euros'], '13 €'),
     (['treinta', 'dias'], '30 días'), (['veinticuatro', 'horas'], '24 horas'), (['doscientas'], '200'),
 ]
 
@@ -143,6 +143,13 @@ def cues(scenes, max_line=42, max_dur=5.5):
         if len(cur) == 1 and re.search(r'[.?!…]$', cur[0]['w']) and len(prev) >= 6 and cur[0]['s'] - prev[-1]['e'] < 0.3:
             m = next((k for k in range(2, min(6, len(prev) - 2)) if prev[-k]['w'].lower() in ('o', 'y', 'que', 'para', 'en', 'de', 'con')), 3)
             out[i - 1], out[i] = prev[:-m], prev[-m:] + cur
+    # Un subtítulo no acaba en una palabra que pide la siguiente («por 14,95 $ al | mes»): se pasa al siguiente si cabe.
+    debiles = ('a', 'al', 'de', 'del', 'el', 'la', 'los', 'las', 'un', 'una', 'y', 'o', 'que', 'en', 'con', 'por', 'para', 'su', 'sus', 'tu', 'tus', 'lo')
+    for i in range(len(out) - 1):
+        prev, cur = out[i], out[i + 1]
+        while (len(prev) > 2 and prev[-1]['w'].lower() in debiles and cur[0]['s'] - prev[-1]['e'] < 0.3
+               and len(' '.join(x['w'] for x in [prev[-1]] + cur)) <= 2 * max_line - 4):
+            cur.insert(0, prev.pop())
     lines = []
     for i, c in enumerate(out):
         text = ' '.join(x['w'] for x in c)
@@ -152,6 +159,9 @@ def cues(scenes, max_line=42, max_dur=5.5):
             for k in range(1, len(c)):
                 acc = len(' '.join(x['w'] for x in c[:k]))
                 diff = abs(acc - (len(text) - acc - 1))
+                # Mejor tras una coma o dos puntos, si las dos líneas caben («Funciona con créditos: | por 14,95 $»).
+                if re.search(r'[,;:]$', c[k - 1]['w']) and max(acc, len(text) - acc - 1) <= max_line and min(acc, len(text) - acc - 1) >= max_line // 3:
+                    diff -= max_line
                 if best is None or diff < best:
                     best, cut = diff, k
             text = ' '.join(x['w'] for x in c[:cut]) + '\n' + ' '.join(x['w'] for x in c[cut:])

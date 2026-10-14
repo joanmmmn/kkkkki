@@ -12,7 +12,7 @@ Encargo de Joan (14/10, 21:05): «Ahora para audiobooks.com, avísame si necesit
 
 ## La landing de SonorBooks (LP5new; igual desde España y desde EE. UU.)
 - «Get 3 Audiobooks with a 30-Day Free Trial» · «Try our 3 book 30 day free trial, only $14.95/month afterwards» · «Get any 1 book, plus 2 bonus VIP books in your free trial» · «700,000+ best sellers, new releases, and classic favorites» · «Enjoy unlimited listening to 10,000 free audiobooks» · «Cancel anytime, no strings attached». Pie: «© 2011 - 2025 Storytel Audiobooks USA LLC».
-- Alta (/signup, vista desde España con el navegador del PC de Joan, sin rellenar): nombre, apellidos, correo; Apple, Google o Amazon; tarjeta o «Or pay with» (PayPal). Botón «Start Free Trial». Sin aviso de ubicación en la página.
+- Alta (/signup, vista desde España con el navegador del PC de Joan, sin rellenar): nombre, apellidos, correo y contraseña, y un «U.S. Zip Code»; Apple, Google o Amazon; tarjeta o «Or pay with» (PayPal). Botón «Start Free Trial». Sin aviso de ubicación en la página.
 - Otra oferta en la web (banda superior): «Get 2 Months For $1» (/2monthsfor1): 2 meses a 0,50 $/mes, 1 libro + 1 VIP al mes, después 14,95 $/mes, solo clientes nuevos. No es la de SonorBooks.
 
 ## Datos (fuentes)
@@ -23,3 +23,16 @@ Encargo de Joan (14/10, 21:05): «Ahora para audiobooks.com, avísame si necesit
 - Cambio (Banco de España, BOE 10/10/2026): 1 € = 1,1206 USD (9/10/2026) → 14,95 USD ≈ 13,34 € (más la posible comisión del banco por pagar en dólares).
 - App Store España: «Audiobooks.com: Get audiobooks», 4,5 (201 valoraciones); EE. UU.: 4,7 (66.142); idiomas EN y ES; v13.0.2 (7/10/2026). Texto: «Free audiobooks – Access 10,000+ titles at no cost, no membership required». Google Play: «Audiobooks.com: Books & More», 4,3 (64,1 mil reseñas), 5 M+ descargas (Storytel Audiobooks USA LLC); Android Auto, altavoces, velocidad, temporizador, marcadores, notas.
 - Catálogo en español (búsquedas desde España, 14/10): sí está *Los tres mundos* (Posteguillo, 32 h 48 min, Raúl Lloréns, 1 crédito; en Audible es catálogo extendido, 15,10 €), *Roma soy yo*, *Reina roja* (Gómez-Jurado), *La chica de nieve* (Javier Castillo), *El infinito en un junco*, *Cien años de soledad*, *La Reina del Sur*, *Las madres* (Carmen Mola). No está *La sombra del viento* (solo un resumen). De Dolores Redondo, solo en inglés e italiano.
+
+## Comprobado después (FAQ de audiobooks.com, 15/10/2026, y blog de Audiobooks.com, 18/12/2019)
+- Plan familiar: «you can add two family members to your account»; «Anyone who is living in the same household as you is eligible»; marcadores por usuario y notas privadas; el titular decide el nivel de acceso («Listen only», «use credits», «buy & use credits»); se gestiona en My Account, en la web. Coste: el blog (2019) dice «At no extra cost (that’s right, completely free!)».
+- Cancelar: «Cancel Account under the Billing Information section»; «your account cannot be canceled in-app»; con Google Play, desde los ajustes de la app: «Manage» junto a Account Status → «Cancel Subscription»; con iOS, en las suscripciones del iPhone.
+- «Forget Me»: en My Account (web), «underneath the promo code area».
+- InstaCredit: compra un crédito al momento, solo con 0 créditos; se activa o desactiva en los ajustes de la app.
+- Planes de 2 o 3 créditos: «you could save on the price of credits!» (sin precios).
+- Prueba: «your free trial begins the day you sign up»; «if you signed up for the free trial on July 1st, your first billing date would be July 31st».
+- Velocidad en la ayuda: «from 0.5x to 2x» (la app 13.0.1 llega a 4x).
+- Muestras: «We recommend that you listen to the audiobook sample before making your purchase» (en el apartado de idiomas).
+- VIP: «VIP books refresh every month on the first day of the month»; los clientes en la prueba también eligen; no se acumulan.
+- Países: «some books may not be available in your country»; «When publishers get the rights to books, they may only get the rights to distribute in certain countries».
+- No dice qué pasa con los créditos sin usar al cancelar después de la prueba (la página no lo afirma).

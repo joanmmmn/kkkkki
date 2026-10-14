@@ -3,7 +3,7 @@
 Textos pensados para que el vídeo aparezca en las búsquedas que resuelve: opiniones, ¿merece la pena?, qué es, ¿funciona en
 España?, precio (en dólares, en euros y en la app), créditos y VIP, audiolibros en español, la app, 10.000 audiolibros gratis,
 plan familiar, dispositivos, prueba gratis (30 días con 3 audiolibros) y cómo cancelar.
-Capítulos calculados sobre el montaje (4:33) con `tools/abc_meta.py`.
+Capítulos calculados sobre el montaje (4:32) con `tools/abc_meta.py`.
 
 ## Título
 **Audiobooks.com: ¿Merece la pena en 2026? Reseña, Opinión, Cómo Funciona, Precios y Prueba Gratis** ← recomendado: el
@@ -18,7 +18,7 @@ Alternativas:
 - Reseña de Audiobooks.com 2026: cómo funcionan los créditos, la app y la letra pequeña
 
 ## Descripción
-4,888 bytes de los 5.000 de YouTube (el límite cuenta bytes: las tildes y los emojis ocupan más de uno).
+4.911 bytes de los 5.000 de YouTube (el límite cuenta bytes: las tildes y los emojis ocupan más de uno).
 
 ```
 ¿Merece la pena Audiobooks.com desde España? Lo probamos a fondo: cómo funcionan sus créditos y la selección VIP, cuánto cuesta en euros, qué hay en español, la trampa del buscador, la app por dentro, sus 10.000 audiolibros gratis, lo bueno, lo malo, cómo cancelar y cómo probarlo 30 días gratis con tres audiolibros.
@@ -43,7 +43,7 @@ Alternativas:
 
 En esta reseña de Audiobooks.com en español respondemos a lo que conviene saber antes de pagar:
 • Qué es: un servicio de audiolibros pensado para Estados Unidos que, desde enero de 2022, es de Storytel. Más de 700.000 títulos, también en español. Funciona desde España, pero su web y la app de Android están en inglés.
-• Cómo funciona y cuánto cuesta: no es una tarifa plana. Por 14,95 $ al mes (unos 13,34 € al cambio, más la comisión que cobre tu banco) recibes 1 crédito, que vale por el audiolibro que quieras y es tuyo para siempre aunque te des de baja, y 1 libro de su selección VIP, que solo conservas mientras sigas suscrito. Los créditos sin usar caducan a los 3 meses. Desde la app sale más caro: 17,95 € al mes, sin prueba gratis.
+• Cómo funciona y cuánto cuesta: no es una tarifa plana. Por 14,95 $ al mes (unos 13,34 € al cambio, sin contar impuestos ni la comisión de tu banco) recibes 1 crédito, que vale por el audiolibro que quieras y es tuyo para siempre aunque te des de baja, y 1 libro de su selección VIP, que solo conservas mientras sigas suscrito. Los créditos sin usar caducan a los 3 meses. Desde la app de Android sale más caro: 17,95 € al mes, sin prueba gratis.
 • En español: Posteguillo (Los tres mundos, que en Audible se paga aparte, aquí entra con un crédito), Juan Gómez-Jurado, Javier Castillo, Cien años de soledad… Pero no está todo: de La sombra del viento solo encontramos un resumen.
 • La trampa del buscador: por defecto solo enseña libros en inglés. Filtra por idioma (Filter › Language › Spanish) en cada búsqueda o desactiva «Only show English-language results» en Ajustes.
 • La app: fichas con narrador y duración, muestras de unos 5 minutos y un reproductor hasta 4x, con temporizador, pistas, marcadores con notas y descargas.
@@ -100,7 +100,7 @@ Si lo pruebas, aquí tienes los 30 días gratis con tres audiolibros: https://so
   audiolibros GRATIS»).
 - Sube los subtítulos `audiobooks_resena.es.srt` (Subtítulos → Subir archivo → Con sincronización).
 - Idioma del vídeo y de los subtítulos: español (España).
-- **Pantalla final:** los últimos 7,6 s (cierre de SonorBooks, desde 4:26) dejan libre la mitad inferior para los elementos de
+- **Pantalla final:** los últimos 7,6 s (cierre de SonorBooks, desde 4:25) dejan libre la mitad inferior para los elementos de
   pantalla final.
 - **Tarjetas (opcionales):** la reseña de Audible (nnRXlXi2rCk) a la 1:05, cuando la voz dice que *Los tres mundos* «en Audible
   se paga aparte», y la de Storytel (nPBV7b4Vowc) a las 3:17, cuando el veredicto dice «una tarifa plana, como Storytel o Audible».

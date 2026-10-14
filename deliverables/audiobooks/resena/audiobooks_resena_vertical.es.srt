@@ -8,14 +8,14 @@ Audiobooks.com desde España?
 Lo hemos probado.
 
 3
-00:00:04,800 --> 00:00:08,360
+00:00:04,800 --> 00:00:08,200
 Funciona con créditos:
-por 14,95 $ al
+por 14,95 $
 
 4
-00:00:08,400 --> 00:00:11,540
-mes, un audiolibro que
-es tuyo para siempre.
+00:00:08,240 --> 00:00:11,540
+al mes, un audiolibro
+que es tuyo para siempre.
 
 5
 00:00:11,580 --> 00:00:14,180
