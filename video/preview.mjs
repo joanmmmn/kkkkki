@@ -24,3 +24,6 @@ execFileSync('ffmpeg', ['-v', 'error', '-y', ...files.flatMap((f) => ['-i', f]),
   '-filter_complex', `${files.map((_, i) => `[${i}:v]drawtext=text='${frames[i]}':x=12:y=12:fontsize=22:fontcolor=red[v${i}]`).join(';')};${files.map((_, i) => `[v${i}]`).join('')}xstack=inputs=${files.length}:layout=${files.map((_, i) => `${(i % cols) * comp.width / 2}_${Math.floor(i / cols) * comp.height / 2}`).join('|')}:fill=white`,
   out]);
 console.log(`OK ${out} (${files.length} fotogramas, duración total ${comp.durationInFrames} fotogramas = ${(comp.durationInFrames / comp.fps).toFixed(1)} s)`);
+// Cada paquete de Remotion copia public/ (cientos de MB): se borra al acabar, con los fotogramas sueltos.
+fs.rmSync(serveUrl, { recursive: true, force: true });
+fs.rmSync(tmp, { recursive: true, force: true });

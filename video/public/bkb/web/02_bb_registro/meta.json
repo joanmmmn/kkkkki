@@ -1,0 +1,18 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 728,
+ "duration": 9.7,
+ "offset": 0.033,
+ "marks": {
+  "to_form": 1.469,
+  "to_optout": 3.418,
+  "click_optout": 5.357,
+  "to_create": 6.958,
+  "end": 9.7
+ },
+ "events": []
+}

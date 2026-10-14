@@ -1,0 +1,79 @@
+{
+ "id": "F01",
+ "hash": "7a9c21ce4567",
+ "text": "¿Quieres probarlo? BookBeat te da treinta días gratis, con veinte horas, desde su web.",
+ "duration": 5.76,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "probarlo?",
+   "s": 0.4,
+   "e": 1.2
+  },
+  {
+   "w": "BookBeat",
+   "s": 1.28,
+   "e": 1.76
+  },
+  {
+   "w": "te",
+   "s": 1.84,
+   "e": 1.92
+  },
+  {
+   "w": "da",
+   "s": 2.04,
+   "e": 2.16
+  },
+  {
+   "w": "treinta",
+   "s": 2.24,
+   "e": 2.56
+  },
+  {
+   "w": "días",
+   "s": 2.64,
+   "e": 2.88
+  },
+  {
+   "w": "gratis,",
+   "s": 3.16,
+   "e": 3.48
+  },
+  {
+   "w": "con",
+   "s": 3.52,
+   "e": 3.68
+  },
+  {
+   "w": "veinte",
+   "s": 3.76,
+   "e": 4.0
+  },
+  {
+   "w": "horas,",
+   "s": 4.08,
+   "e": 4.6
+  },
+  {
+   "w": "desde",
+   "s": 4.64,
+   "e": 4.88
+  },
+  {
+   "w": "su",
+   "s": 4.96,
+   "e": 5.04
+  },
+  {
+   "w": "web.",
+   "s": 5.36,
+   "e": 5.76
+  }
+ ],
+ "speechEnd": 5.65
+}

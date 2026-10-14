@@ -1,0 +1,375 @@
+1
+00:00:00,500 --> 00:00:02,670
+¿Merece la pena pagar BookBeat?
+
+2
+00:00:02,980 --> 00:00:05,580
+Lo hemos instalado y
+lo hemos usado a fondo:
+
+3
+00:00:05,620 --> 00:00:09,660
+su catálogo, la app, los
+precios y su letra pequeña.
+
+4
+00:00:09,700 --> 00:00:12,020
+Te contamos lo bueno, lo malo…
+
+5
+00:00:12,060 --> 00:00:14,750
+y cómo probarlo 30 días gratis.
+
+6
+00:00:15,580 --> 00:00:17,340
+¿Qué es BookBeat?
+
+7
+00:00:17,380 --> 00:00:21,100
+Una app sueca de audiolibros y
+ebooks, creada por el grupo Bonnier,
+
+8
+00:00:21,140 --> 00:00:23,660
+que llegó a España en 2022.
+
+9
+00:00:23,700 --> 00:00:27,860
+Aquí no hay tarifa sin límite:
+pagas un paquete de horas al mes y,
+
+10
+00:00:27,900 --> 00:00:32,230
+con él, escuchas y lees lo que quieras
+de más de un millón de títulos.
+
+11
+00:00:33,100 --> 00:00:34,820
+Tiene tres planes.
+
+12
+00:00:34,860 --> 00:00:38,710
+Basic: 6,99 € al mes, con 20 horas.
+
+13
+00:00:38,780 --> 00:00:41,900
+Standard: 9,99 €, con 50.
+
+14
+00:00:41,940 --> 00:00:45,433
+Y Premium: 14,99 €, con 100.
+
+15
+00:00:45,473 --> 00:00:49,660
+Puedes añadir hasta 4 perfiles
+más, a 4,99 € cada uno,
+
+16
+00:00:49,700 --> 00:00:52,790
+y cambiar de plan o
+cancelar cuando quieras.
+
+17
+00:00:53,420 --> 00:00:55,350
+Pero ojo, dos cosas.
+
+18
+00:00:55,420 --> 00:00:59,620
+La primera: en España, la
+app y la web están en inglés.
+
+19
+00:00:59,660 --> 00:01:03,270
+Aunque tengas el móvil en español,
+no hay forma de cambiarlo.
+
+20
+00:01:03,780 --> 00:01:10,140
+Y la segunda: de ese millón de títulos,
+en español hay unos 16.500 audiolibros.
+
+21
+00:01:10,180 --> 00:01:13,767
+Hay superventas, como La
+sombra del viento o La Bestia,
+
+22
+00:01:13,807 --> 00:01:16,780
+de Carmen Mola; pero
+faltan otros muy buscados,
+
+23
+00:01:16,820 --> 00:01:20,407
+como Reina Roja, de
+Gómez-Jurado, o Los tres mundos,
+
+24
+00:01:20,447 --> 00:01:22,110
+de Posteguillo.
+
+25
+00:01:22,420 --> 00:01:26,060
+Al abrir la app, la portada
+te enseña dónde lo dejaste,
+
+26
+00:01:26,100 --> 00:01:29,180
+tus libros guardados y
+tu racha de la semana.
+
+27
+00:01:29,220 --> 00:01:33,260
+En inspiración tienes las tendencias,
+con muchos libros en inglés,
+
+28
+00:01:33,300 --> 00:01:35,500
+y los top 100 de cada género.
+
+29
+00:01:35,540 --> 00:01:39,100
+Y en categorías, los
+géneros y los idiomas.
+
+30
+00:01:39,140 --> 00:01:44,700
+Buscas por título, autor o narrador,
+y filtras por formato o por categoría.
+
+31
+00:01:44,740 --> 00:01:49,047
+Cada ficha te dice quién lo narra,
+cuánto dura y qué nota tiene,
+
+32
+00:01:49,087 --> 00:01:52,510
+con la historia y la narración
+valoradas por separado.
+
+33
+00:01:52,620 --> 00:01:55,620
+El reproductor llega a
+dos veces la velocidad,
+
+34
+00:01:55,660 --> 00:02:00,420
+y tiene temporizador para dormir, que
+incluso puede activarse solo por la noche,
+
+35
+00:02:00,460 --> 00:02:05,720
+capítulos, marcadores con notas y
+descargas para escuchar sin conexión.
+
+36
+00:02:05,760 --> 00:02:09,400
+Y también es para leer: en
+la misma cuota tienes ebooks,
+
+37
+00:02:09,440 --> 00:02:14,360
+con modo oscuro o sepia, tamaño de letra
+y hasta una tipografía para personas
+
+38
+00:02:14,400 --> 00:02:15,770
+con dislexia.
+
+39
+00:02:16,540 --> 00:02:17,620
+¿Y las horas?
+
+40
+00:02:17,660 --> 00:02:21,660
+Se cuentan a velocidad normal:
+un libro de 10 horas te gasta 10,
+
+41
+00:02:21,700 --> 00:02:25,340
+lo escuches como lo escuches;
+y leer también gasta.
+
+42
+00:02:25,380 --> 00:02:27,620
+Lo que no uses en el mes se pierde.
+
+43
+00:02:27,660 --> 00:02:32,020
+Y si sois varios en casa, cada perfil
+tiene las mismas horas que tu plan,
+
+44
+00:02:32,060 --> 00:02:33,750
+y hay perfil infantil.
+
+45
+00:02:34,620 --> 00:02:37,860
+Funciona en Android y en
+iPhone, en el Apple Watch,
+
+46
+00:02:37,900 --> 00:02:41,980
+incluso sin el móvil, en el
+coche con CarPlay y Android Auto,
+
+47
+00:02:42,020 --> 00:02:43,300
+y con Chromecast.
+
+48
+00:02:43,340 --> 00:02:47,590
+Pero no puedes escuchar en su web,
+ni hay app para Windows o Mac.
+
+49
+00:02:48,500 --> 00:02:50,540
+¿Y qué opinan los usuarios?
+
+50
+00:02:50,580 --> 00:02:55,980
+En España tiene pocas reseñas:
+un 4,2 en Google Play y un 4,7 en
+
+51
+00:02:56,020 --> 00:02:59,473
+la App Store, con solo 82 valoraciones.
+
+52
+00:02:59,513 --> 00:03:03,260
+Gusta que la app funcione bien
+y su catálogo en otros idiomas.
+
+53
+00:03:03,300 --> 00:03:07,710
+Se critica que esté en inglés
+y que falten libros en español.
+
+54
+00:03:08,000 --> 00:03:13,480
+Lo bueno: 30 días de prueba con 20 horas,
+audiolibros y ebooks en la misma
+
+55
+00:03:13,520 --> 00:03:18,330
+cuota, una app muy completa y
+perfiles para toda la familia.
+
+56
+00:03:18,400 --> 00:03:22,520
+Lo malo: está en inglés,
+falta mucho en español,
+
+57
+00:03:22,560 --> 00:03:25,760
+las horas no se acumulan y,
+si cancelas en la prueba,
+
+58
+00:03:25,800 --> 00:03:27,770
+pierdes el acceso al momento.
+
+59
+00:03:28,760 --> 00:03:30,080
+¿Merece la pena?
+
+60
+00:03:30,120 --> 00:03:33,560
+En España, para la mayoría,
+hay opciones mejores.
+
+61
+00:03:33,600 --> 00:03:38,440
+Si escuchas mucho, Storytel, por
+8,99 €, no te cuenta las horas;
+
+62
+00:03:38,480 --> 00:03:43,240
+y si escuchas poco, Podimo
+te da 20 horas por 4,99 €.
+
+63
+00:03:43,280 --> 00:03:47,080
+BookBeat te encaja si también
+escuchas en inglés u otros idiomas,
+
+64
+00:03:47,120 --> 00:03:50,290
+o si quieres ebooks y perfiles
+con horas para cada uno.
+
+65
+00:03:51,280 --> 00:03:52,520
+¿Quieres probarlo?
+
+66
+00:03:52,560 --> 00:03:55,880
+BookBeat te da 30 días
+gratis, con 20 horas,
+
+67
+00:03:55,920 --> 00:03:57,290
+desde su web.
+
+68
+00:03:57,620 --> 00:04:02,780
+Crea tu cuenta, elige el plan que
+empezará después y añade tu forma de pago:
+
+69
+00:04:02,820 --> 00:04:04,540
+hoy no pagas nada.
+
+70
+00:04:04,580 --> 00:04:08,990
+Y si no quieres su publicidad,
+pulsa el enlace para no recibirla.
+
+71
+00:04:09,060 --> 00:04:12,830
+Después, descarga la app
+y entra con tu cuenta.
+
+72
+00:04:12,980 --> 00:04:14,300
+¿No te convence?
+
+73
+00:04:14,340 --> 00:04:18,380
+Cancela en su web, en tu cuenta,
+antes de que acabe la prueba:
+
+74
+00:04:18,420 --> 00:04:20,993
+BookBeat no te avisa antes de cobrar.
+
+75
+00:04:21,033 --> 00:04:24,780
+Pero si cancelas durante la prueba,
+pierdes el acceso al momento;
+
+76
+00:04:24,820 --> 00:04:27,390
+así que hazlo en los últimos días.
+
+77
+00:04:27,460 --> 00:04:29,820
+¿Dudas entre BookBeat y otras?
+
+78
+00:04:29,860 --> 00:04:33,540
+En SonorBooks comparas el precio,
+las horas y los días gratis
+
+79
+00:04:33,580 --> 00:04:35,233
+de las demás plataformas.
+
+80
+00:04:35,273 --> 00:04:39,150
+Y en la descripción tienes la
+reseña completa por escrito.
+
+81
+00:04:39,260 --> 00:04:43,590
+Encuentra dónde escuchar tu
+próximo libro en SonorBooks.

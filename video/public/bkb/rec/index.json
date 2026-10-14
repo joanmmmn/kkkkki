@@ -1,0 +1,202 @@
+{
+ "00_inicio_top": {
+  "duration": 36.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 0.0,
+  "to": 36.0,
+  "audio": false
+ },
+ "01_inicio_scroll": {
+  "duration": 28.5,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 34.0,
+  "to": 62.5,
+  "audio": false
+ },
+ "02_estadisticas": {
+  "duration": 14.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 61.5,
+  "to": 75.5,
+  "audio": false
+ },
+ "03_racha": {
+  "duration": 17.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 75.0,
+  "to": 92.0,
+  "audio": false
+ },
+ "04_inspiration": {
+  "duration": 51.5,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 92.0,
+  "to": 143.5,
+  "audio": false
+ },
+ "05_categorias": {
+  "duration": 63.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 143.0,
+  "to": 206.0,
+  "audio": false
+ },
+ "06_crimen": {
+  "duration": 30.5,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 205.5,
+  "to": 236.0,
+  "audio": false
+ },
+ "07_mola": {
+  "duration": 26.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 247.0,
+  "to": 273.0,
+  "audio": false
+ },
+ "08_buscar_sombra": {
+  "duration": 52.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 272.0,
+  "to": 324.0,
+  "audio": false
+ },
+ "09_sombra_ficha": {
+  "duration": 37.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 323.0,
+  "to": 360.0,
+  "audio": false,
+  "datos": "tapados"
+ },
+ "10_reproductor": {
+  "duration": 24.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 381.0,
+  "to": 405.0,
+  "audio": false
+ },
+ "11_velocidad": {
+  "duration": 40.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 404.0,
+  "to": 444.0,
+  "audio": false
+ },
+ "12_temporizador": {
+  "duration": 23.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 443.0,
+  "to": 466.0,
+  "audio": false
+ },
+ "13_marcadores": {
+  "duration": 44.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 465.0,
+  "to": 509.0,
+  "audio": false
+ },
+ "14_capitulos": {
+  "duration": 21.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 508.0,
+  "to": 529.0,
+  "audio": false
+ },
+ "15_descarga": {
+  "duration": 54.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 528.0,
+  "to": 582.0,
+  "audio": false
+ },
+ "16_horas": {
+  "duration": 24.9,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 596.0,
+  "to": 620.9,
+  "audio": false,
+  "datos": "tapados"
+ },
+ "17_descargados": {
+  "duration": 15.2,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 623.6,
+  "to": 638.8,
+  "audio": false
+ },
+ "18_perfiles_web": {
+  "duration": 20.5,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 647.6,
+  "to": 668.1,
+  "audio": false,
+  "datos": "tapados"
+ },
+ "19_tema_oscuro": {
+  "duration": 57.5,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 677.5,
+  "to": 735.0,
+  "audio": false
+ },
+ "20_book_filter": {
+  "duration": 18.6,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 746.2,
+  "to": 764.8,
+  "audio": false
+ },
+ "21_audio_player": {
+  "duration": 24.9,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 768.4,
+  "to": 793.3,
+  "audio": false
+ },
+ "22_dispositivos": {
+  "duration": 19.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 804.0,
+  "to": 823.0,
+  "audio": false
+ },
+ "23_sapiens": {
+  "duration": 52.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 833.0,
+  "to": 885.0,
+  "audio": false
+ },
+ "24_ebook": {
+  "duration": 139.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 884.0,
+  "to": 1023.0,
+  "audio": false
+ },
+ "25_inicio_final": {
+  "duration": 57.0,
+  "src": "2026-10-14 17-42-16.mp4",
+  "from": 1029.0,
+  "to": 1086.0,
+  "audio": false
+ },
+ "26_cuenta": {
+  "duration": 22.5,
+  "src": "2026-10-14 18-02-14.mp4",
+  "from": 46.1,
+  "to": 68.6,
+  "audio": false,
+  "datos": "tapados"
+ },
+ "27_cambiar_plan": {
+  "duration": 44.0,
+  "src": "2026-10-14 18-02-14.mp4",
+  "from": 77.0,
+  "to": 121.0,
+  "audio": false
+ }
+}

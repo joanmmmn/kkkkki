@@ -1,0 +1,27 @@
+{
+ "viewport": [1920, 1080], "dpr": 2, "slowmo": 3,
+ "steps": [
+  {"go": "https://www.bookbeat.com/es/registration", "until": "load"},
+  {"wait": 2500},
+  {"clickText": "I only accept required cookies", "dur": 300},
+  {"wait": 1500},
+  {"eval": "window.scrollTo(0,0)"},
+  {"move": [1500, 300], "dur": 10},
+  {"wait": 600},
+  {"record": true},
+  {"wait": 1500},
+  {"mark": "to_form"},
+  {"moveText": "First name", "dur": 900},
+  {"wait": 1000},
+  {"mark": "to_optout"},
+  {"moveText": "Click here to opt out of marketing communications", "dur": 1200},
+  {"wait": 600},
+  {"fakeClick": true},
+  {"mark": "click_optout"},
+  {"wait": 1600},
+  {"mark": "to_create"},
+  {"moveText": "Create account", "dur": 900},
+  {"wait": 1800},
+  {"mark": "end"}
+ ]
+}

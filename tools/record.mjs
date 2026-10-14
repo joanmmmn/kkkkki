@@ -209,15 +209,16 @@ if (frames.length) {
   }
   lines.push(`file '${path.resolve(frames[frames.length - 1].file)}'`);
   fs.writeFileSync(path.join(out, 'concat.txt'), lines.join('\n'));
-  execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(out, 'concat.txt'),
-    '-vf', `fps=50,scale=${vw * dpr}:${vh * dpr}:flags=lanczos,format=yuv420p`,
-    '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', '-movflags', '+faststart', path.join(out, 'video.mp4')]);
+  // Las marcas y el cursor se guardan antes de codificar (si la codificación se corta, no se pierden).
   const firstT = frames[0].t;
   fs.writeFileSync(path.join(out, 'meta.json'), JSON.stringify({
     viewport: [vw, vh], dpr, frames: frames.length, duration: +(total - firstT).toFixed(3), offset: +firstT.toFixed(3), marks: Object.fromEntries(Object.entries(marks).map(([k, v]) => [k, +(v - firstT).toFixed(3)])),
     events: events.map(e => ({ ...e, t: +(e.t - firstT).toFixed(3) })),
   }, null, 1));
   fs.writeFileSync(path.join(out, 'cursor.json'), JSON.stringify(cursor.map(c => ({ ...c, t: +(c.t - firstT).toFixed(3) }))));
+  execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(out, 'concat.txt'),
+    '-vf', `fps=50,scale=${vw * dpr}:${vh * dpr}:flags=lanczos,format=yuv420p`,
+    '-c:v', 'libx264', '-preset', process.env.REC_PRESET || 'slow', '-crf', '14', '-movflags', '+faststart', path.join(out, 'video.mp4')]);
   fs.rmSync(framesDir, { recursive: true, force: true });
   console.log(`OK ${frames.length} frames, ${(total - firstT).toFixed(2)} s -> ${path.join(out, 'video.mp4')}`);
 } else {

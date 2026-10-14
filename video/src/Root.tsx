@@ -30,9 +30,16 @@ import { AudibleReview } from './scenes/aud/Main';
 import { AUDThumb } from './scenes/aud/Thumb';
 import { AudibleReviewShort, AUD_SHORT_TOTAL } from './scenes/aud/Short';
 import { AUD_TOTAL } from './scenes/aud/timeline';
+import { BookBeatReview } from './scenes/bkb/Main';
+import { BKBThumb } from './scenes/bkb/Thumb';
+import { BookBeatReviewShort, BKB_SHORT_TOTAL } from './scenes/bkb/Short';
+import { BKB_TOTAL } from './scenes/bkb/timeline';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="BBReview" component={BookBeatReview} durationInFrames={BKB_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="BKBThumb" component={BKBThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="BKBShort" component={BookBeatReviewShort} durationInFrames={BKB_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STRShort" component={StorytelReviewShort} durationInFrames={STR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

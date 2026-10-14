@@ -1,0 +1,18 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 6519,
+ "duration": 8.0,
+ "offset": 0.064,
+ "marks": {
+  "to_btn": 1.443,
+  "click_btn": 3.327,
+  "scroll": 4.827,
+  "end": 8.0
+ },
+ "events": [],
+ "recortada": "0.0-8.0 s de la grabaci\u00f3n original (solo el tramo que usa el v\u00eddeo)"
+}

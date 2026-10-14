@@ -1,0 +1,72 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "slowmo": 3,
+ "steps": [
+  {
+   "go": "https://www.bookbeat.com/es/our-subscriptions",
+   "until": "load"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "clickText": "I only accept required cookies",
+   "dur": 300
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "move": [
+    1700,
+    300
+   ],
+   "dur": 10
+  },
+  {
+   "wait": 600
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 820,
+   "dur": 2400
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "table"
+  },
+  {
+   "scroll": 1050,
+   "dur": 2600
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "trial"
+  },
+  {
+   "wait": 2400
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

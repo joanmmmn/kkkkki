@@ -1,0 +1,123 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "D01",
+   "text": "¿Merece la pena pagar BookBeat? Lo hemos instalado y lo hemos usado a fondo: su catálogo, la app, los precios y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis."
+  },
+  {
+   "id": "D02",
+   "text": "¿Qué es BookBeat? Una app sueca de audiolibros y ebooks, creada por el grupo Bonnier, que llegó a España en dos mil veintidós. Aquí no hay tarifa sin límite: pagas un paquete de horas al mes y, con él, escuchas y lees lo que quieras de más de un millón de títulos."
+  },
+  {
+   "id": "D03",
+   "text": "Tiene tres planes. Basic: seis noventa y nueve al mes, con veinte horas. Standard: nueve noventa y nueve, con cincuenta. Y Premium: catorce noventa y nueve, con cien. Puedes añadir hasta cuatro perfiles más, a cuatro noventa y nueve cada uno, y cambiar de plan o cancelar cuando quieras."
+  },
+  {
+   "id": "D04",
+   "text": "Pero ojo, dos cosas. La primera: en España, la app y la web están en inglés. Aunque tengas el móvil en español, no hay forma de cambiarlo."
+  },
+  {
+   "id": "D05",
+   "text": "Y la segunda: de ese millón de títulos, en español hay unos dieciséis mil quinientos audiolibros. Hay superventas, como La sombra del viento o La Bestia, de Carmen Mola; pero faltan otros muy buscados, como Reina Roja, de Gómez-Jurado, o Los tres mundos, de Posteguillo."
+  },
+  {
+   "id": "D06",
+   "text": "Al abrir la app, la portada te enseña dónde lo dejaste, tus libros guardados y tu racha de la semana. En inspiración tienes las tendencias, con muchos libros en inglés, y los top cien de cada género. Y en categorías, los géneros y los idiomas."
+  },
+  {
+   "id": "D07",
+   "text": "Buscas por título, autor o narrador, y filtras por formato o por categoría. Cada ficha te dice quién lo narra, cuánto dura y qué nota tiene, con la historia y la narración valoradas por separado."
+  },
+  {
+   "id": "D08",
+   "text": "El reproductor llega a dos veces la velocidad, y tiene temporizador para dormir, que incluso puede activarse solo por la noche, capítulos, marcadores con notas y descargas para escuchar sin conexión."
+  },
+  {
+   "id": "D09",
+   "text": "Y también es para leer: en la misma cuota tienes ebooks, con modo oscuro o sepia, tamaño de letra y hasta una tipografía para personas con dislexia."
+  },
+  {
+   "id": "D10",
+   "text": "¿Y las horas? Se cuentan a velocidad normal: un libro de diez horas te gasta diez, lo escuches como lo escuches; y leer también gasta. Lo que no uses en el mes se pierde. Y si sois varios en casa, cada perfil tiene las mismas horas que tu plan, y hay perfil infantil."
+  },
+  {
+   "id": "D11",
+   "text": "Funciona en Android y en iPhone, en el Apple Watch, incluso sin el móvil, en el coche con CarPlay y Android Auto, y con Chromecast. Pero no puedes escuchar en su web, ni hay app para Windows o Mac."
+  },
+  {
+   "id": "D12",
+   "text": "¿Y qué opinan los usuarios? En España tiene pocas reseñas: un cuatro coma dos en Google Play y un cuatro coma siete en la App Store, con solo ochenta y dos valoraciones. Gusta que la app funcione bien y su catálogo en otros idiomas. Se critica que esté en inglés y que falten libros en español."
+  },
+  {
+   "id": "D13",
+   "text": "Lo bueno: treinta días de prueba con veinte horas, audiolibros y ebooks en la misma cuota, una app muy completa y perfiles para toda la familia. Lo malo: está en inglés, falta mucho en español, las horas no se acumulan y, si cancelas en la prueba, pierdes el acceso al momento."
+  },
+  {
+   "id": "D14",
+   "text": "¿Merece la pena? En España, para la mayoría, hay opciones mejores. Si escuchas mucho, Storytel, por ocho noventa y nueve, no te cuenta las horas; y si escuchas poco, Podimo te da veinte horas por cuatro noventa y nueve. BookBeat te encaja si también escuchas en inglés u otros idiomas, o si quieres ebooks y perfiles con horas para cada uno."
+  },
+  {
+   "id": "F01",
+   "text": "¿Quieres probarlo? BookBeat te da treinta días gratis, con veinte horas, desde su web."
+  },
+  {
+   "id": "F02",
+   "text": "Crea tu cuenta, elige el plan que empezará después y añade tu forma de pago: hoy no pagas nada. Y si no quieres su publicidad, pulsa el enlace para no recibirla."
+  },
+  {
+   "id": "F03",
+   "text": "Después, descarga la app y entra con tu cuenta."
+  },
+  {
+   "id": "F04",
+   "text": "¿No te convence? Cancela en su web, en tu cuenta, antes de que acabe la prueba: BookBeat no te avisa antes de cobrar. Pero si cancelas durante la prueba, pierdes el acceso al momento; así que hazlo en los últimos días."
+  },
+  {
+   "id": "F05",
+   "text": "¿Dudas entre BookBeat y otras? En SonorBooks comparas el precio, las horas y los días gratis de las demás plataformas. Y en la descripción tienes la reseña completa por escrito."
+  },
+  {
+   "id": "F06",
+   "text": "Encuentra dónde escuchar tu próximo libro en SonorBooks."
+  },
+  {
+   "id": "W01",
+   "text": "¿Merece la pena BookBeat en España? Lo hemos probado a fondo."
+  },
+  {
+   "id": "W02",
+   "text": "Pagas por horas: veinte por seis noventa y nueve, o cincuenta por nueve noventa y nueve, con audiolibros y ebooks."
+  },
+  {
+   "id": "W03",
+   "text": "Pero ojo: la app está en inglés, y no se puede cambiar."
+  },
+  {
+   "id": "W04",
+   "text": "Y de su millón de títulos, en español hay unos dieciséis mil quinientos audiolibros."
+  },
+  {
+   "id": "W05",
+   "text": "¿Quieres probarlo? Tienes treinta días gratis, con veinte horas."
+  },
+  {
+   "id": "W06",
+   "text": "Si no te convence, cancela en los últimos días: no te avisan antes de cobrar."
+  },
+  {
+   "id": "W07",
+   "text": "Y antes de pagar, compara plataformas en SonorBooks."
+  }
+ ]
+}
