@@ -1,0 +1,64 @@
+{
+ "id": "U05",
+ "hash": "b52f5859af75",
+ "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis con tres audiolibros.",
+ "duration": 5.36,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "probarlo?",
+   "s": 0.4,
+   "e": 1.2
+  },
+  {
+   "w": "Desde",
+   "s": 1.28,
+   "e": 1.52
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.64,
+   "e": 2.24
+  },
+  {
+   "w": "tienes",
+   "s": 2.32,
+   "e": 2.64
+  },
+  {
+   "w": "treinta",
+   "s": 2.72,
+   "e": 3.04
+  },
+  {
+   "w": "días",
+   "s": 3.08,
+   "e": 3.28
+  },
+  {
+   "w": "gratis",
+   "s": 3.36,
+   "e": 3.76
+  },
+  {
+   "w": "con",
+   "s": 3.84,
+   "e": 4.08
+  },
+  {
+   "w": "tres",
+   "s": 4.2,
+   "e": 4.32
+  },
+  {
+   "w": "audiolibros.",
+   "s": 4.4,
+   "e": 5.36
+  }
+ ],
+ "speechEnd": 5.099
+}

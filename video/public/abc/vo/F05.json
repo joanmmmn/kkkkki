@@ -1,0 +1,104 @@
+{
+ "id": "F05",
+ "hash": "09b8e0807b42",
+ "text": "¿Dudas entre Audiobooks.com y otras? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma.",
+ "duration": 8.32,
+ "words": [
+  {
+   "w": "¿Dudas",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "entre",
+   "s": 0.4,
+   "e": 0.72
+  },
+  {
+   "w": "Audiobooks.com",
+   "s": 0.76,
+   "e": 1.84
+  },
+  {
+   "w": "y",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "otras?",
+   "s": 2.16,
+   "e": 2.88
+  },
+  {
+   "w": "En",
+   "s": 2.96,
+   "e": 3.04
+  },
+  {
+   "w": "SonorBooks",
+   "s": 3.12,
+   "e": 3.76
+  },
+  {
+   "w": "comparas",
+   "s": 3.84,
+   "e": 4.24
+  },
+  {
+   "w": "el",
+   "s": 4.32,
+   "e": 4.48
+  },
+  {
+   "w": "precio,",
+   "s": 4.72,
+   "e": 5.04
+  },
+  {
+   "w": "las",
+   "s": 5.16,
+   "e": 5.28
+  },
+  {
+   "w": "horas",
+   "s": 5.36,
+   "e": 5.68
+  },
+  {
+   "w": "y",
+   "s": 5.84,
+   "e": 5.88
+  },
+  {
+   "w": "los",
+   "s": 5.92,
+   "e": 6.08
+  },
+  {
+   "w": "días",
+   "s": 6.12,
+   "e": 6.4
+  },
+  {
+   "w": "gratis",
+   "s": 6.6,
+   "e": 6.8
+  },
+  {
+   "w": "de",
+   "s": 6.88,
+   "e": 6.96
+  },
+  {
+   "w": "cada",
+   "s": 7.0,
+   "e": 7.2
+  },
+  {
+   "w": "plataforma.",
+   "s": 7.28,
+   "e": 8.32
+  }
+ ],
+ "speechEnd": 7.969
+}

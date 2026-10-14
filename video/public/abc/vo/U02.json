@@ -1,0 +1,99 @@
+{
+ "id": "U02",
+ "hash": "0cd411deee1b",
+ "text": "Funciona con créditos: por catorce noventa y cinco dólares al mes, un audiolibro que es tuyo para siempre.",
+ "duration": 6.8,
+ "words": [
+  {
+   "w": "Funciona",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "con",
+   "s": 0.56,
+   "e": 0.64
+  },
+  {
+   "w": "créditos:",
+   "s": 0.72,
+   "e": 1.68
+  },
+  {
+   "w": "por",
+   "s": 1.72,
+   "e": 1.76
+  },
+  {
+   "w": "catorce",
+   "s": 1.84,
+   "e": 2.2
+  },
+  {
+   "w": "noventa",
+   "s": 2.24,
+   "e": 2.56
+  },
+  {
+   "w": "y",
+   "s": 2.6,
+   "e": 2.64
+  },
+  {
+   "w": "cinco",
+   "s": 2.72,
+   "e": 2.96
+  },
+  {
+   "w": "dólares",
+   "s": 3.04,
+   "e": 3.36
+  },
+  {
+   "w": "al",
+   "s": 3.44,
+   "e": 3.52
+  },
+  {
+   "w": "mes,",
+   "s": 3.6,
+   "e": 4.08
+  },
+  {
+   "w": "un",
+   "s": 4.16,
+   "e": 4.24
+  },
+  {
+   "w": "audiolibro",
+   "s": 4.36,
+   "e": 4.8
+  },
+  {
+   "w": "que",
+   "s": 4.88,
+   "e": 4.96
+  },
+  {
+   "w": "es",
+   "s": 5.08,
+   "e": 5.2
+  },
+  {
+   "w": "tuyo",
+   "s": 5.28,
+   "e": 5.6
+  },
+  {
+   "w": "para",
+   "s": 5.68,
+   "e": 5.76
+  },
+  {
+   "w": "siempre.",
+   "s": 5.84,
+   "e": 6.8
+  }
+ ],
+ "speechEnd": 6.412
+}

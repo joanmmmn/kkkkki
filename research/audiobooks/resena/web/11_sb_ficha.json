@@ -1,0 +1,20 @@
+{"viewport": [1920, 1080], "dpr": 2, "slowmo": 3, "steps": [
+  {"go": "https://sonorbooks.com/es/audiolibro/alas-de-sangre/?proveedor=audiobooks&version=rec-e52d0f69a4f3", "hidden": true},
+  {"wait": 1500},
+  {"eval": "(()=>{const b=[...document.querySelectorAll('button,a')].find(e=>e.textContent.trim()==='Entendido'); if(b) b.click();})()"},
+  {"eval": "window.scrollTo(0,0)"},
+  {"wait": 600},
+  {"move": [900, 640], "dur": 10},
+  {"record": true},
+  {"wait": 900},
+  {"mark": "to_card"},
+  {"moveText": "30 días de prueba", "dur": 900},
+  {"wait": 900},
+  {"mark": "to_btn"},
+  {"moveText": "Empezar prueba gratuita", "dur": 800},
+  {"wait": 200},
+  {"mark": "click_btn"},
+  {"fakeClick": true},
+  {"wait": 1400},
+  {"mark": "end"}
+]}

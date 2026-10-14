@@ -1,0 +1,16 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 1222,
+ "duration": 39.68,
+ "offset": 0.036,
+ "marks": {
+  "scroll": 2.186,
+  "to_btn": 36.304,
+  "end": 39.68
+ },
+ "events": []
+}

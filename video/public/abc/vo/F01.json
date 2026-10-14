@@ -1,0 +1,114 @@
+{
+ "id": "F01",
+ "hash": "21111d48b963",
+ "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis con tres audiolibros: uno con el crédito y dos de la selección VIP.",
+ "duration": 8.48,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "probarlo?",
+   "s": 0.4,
+   "e": 1.2
+  },
+  {
+   "w": "Desde",
+   "s": 1.28,
+   "e": 1.52
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.6,
+   "e": 2.32
+  },
+  {
+   "w": "tienes",
+   "s": 2.36,
+   "e": 2.72
+  },
+  {
+   "w": "treinta",
+   "s": 2.8,
+   "e": 3.12
+  },
+  {
+   "w": "días",
+   "s": 3.16,
+   "e": 3.36
+  },
+  {
+   "w": "gratis",
+   "s": 3.44,
+   "e": 3.84
+  },
+  {
+   "w": "con",
+   "s": 3.96,
+   "e": 4.08
+  },
+  {
+   "w": "tres",
+   "s": 4.2,
+   "e": 4.32
+  },
+  {
+   "w": "audiolibros:",
+   "s": 4.44,
+   "e": 5.4
+  },
+  {
+   "w": "uno",
+   "s": 5.44,
+   "e": 5.6
+  },
+  {
+   "w": "con",
+   "s": 5.68,
+   "e": 5.76
+  },
+  {
+   "w": "el",
+   "s": 5.8,
+   "e": 5.84
+  },
+  {
+   "w": "crédito",
+   "s": 5.92,
+   "e": 6.48
+  },
+  {
+   "w": "y",
+   "s": 6.56,
+   "e": 6.64
+  },
+  {
+   "w": "dos",
+   "s": 6.76,
+   "e": 6.88
+  },
+  {
+   "w": "de",
+   "s": 6.92,
+   "e": 6.96
+  },
+  {
+   "w": "la",
+   "s": 7.04,
+   "e": 7.12
+  },
+  {
+   "w": "selección",
+   "s": 7.16,
+   "e": 7.6
+  },
+  {
+   "w": "VIP.",
+   "s": 7.68,
+   "e": 8.48
+  }
+ ],
+ "speechEnd": 8.003
+}

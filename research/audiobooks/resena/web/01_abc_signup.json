@@ -1,0 +1,17 @@
+{"viewport": [1920, 1080], "dpr": 2, "slowmo": 3, "steps": [
+  {"go": "https://www.audiobooks.com/signup", "hidden": true},
+  {"wait": 4000},
+  {"eval": "(()=>{const b=document.querySelector('#onetrust-reject-all-handler')||[...document.querySelectorAll('button')].find(e=>/Reject All|Rechazarlas todas/.test(e.textContent)); if(b) b.click();})()"},
+  {"wait": 1500},
+  {"eval": "window.scrollTo(0,0)"},
+  {"move": [1300, 650], "dur": 10},
+  {"record": true},
+  {"wait": 2200},
+  {"mark": "scroll"},
+  {"scroll": 520, "dur": 1800},
+  {"wait": 2400},
+  {"mark": "to_btn"},
+  {"moveText": "Start Free Trial", "dur": 900},
+  {"wait": 1600},
+  {"mark": "end"}
+]}

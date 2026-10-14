@@ -1,0 +1,16 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 176,
+ "duration": 3.894,
+ "offset": 0.076,
+ "marks": {
+  "to_signup": 1.359,
+  "click": 2.903,
+  "end": 3.894
+ },
+ "events": []
+}

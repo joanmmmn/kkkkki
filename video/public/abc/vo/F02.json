@@ -1,0 +1,164 @@
+{
+ "id": "F02",
+ "hash": "0a4bc4ca8185",
+ "text": "Actívalo desde nuestra página de plataformas o desde la ficha de cualquier libro que esté en Audiobooks.com. Te dejamos en la descripción el enlace directo y la reseña completa por escrito.",
+ "duration": 11.68,
+ "words": [
+  {
+   "w": "Actívalo",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "desde",
+   "s": 0.64,
+   "e": 0.8
+  },
+  {
+   "w": "nuestra",
+   "s": 0.84,
+   "e": 1.12
+  },
+  {
+   "w": "página",
+   "s": 1.2,
+   "e": 1.52
+  },
+  {
+   "w": "de",
+   "s": 1.56,
+   "e": 1.6
+  },
+  {
+   "w": "plataformas",
+   "s": 1.68,
+   "e": 2.48
+  },
+  {
+   "w": "o",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "desde",
+   "s": 2.72,
+   "e": 2.88
+  },
+  {
+   "w": "la",
+   "s": 2.96,
+   "e": 3.04
+  },
+  {
+   "w": "ficha",
+   "s": 3.08,
+   "e": 3.28
+  },
+  {
+   "w": "de",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "cualquier",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "libro",
+   "s": 3.92,
+   "e": 4.16
+  },
+  {
+   "w": "que",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "esté",
+   "s": 4.4,
+   "e": 4.64
+  },
+  {
+   "w": "en",
+   "s": 4.72,
+   "e": 4.8
+  },
+  {
+   "w": "Audiobooks.com.",
+   "s": 4.84,
+   "e": 6.667
+  },
+  {
+   "w": "Te",
+   "s": 6.693,
+   "e": 6.72
+  },
+  {
+   "w": "dejamos",
+   "s": 6.8,
+   "e": 7.12
+  },
+  {
+   "w": "en",
+   "s": 7.2,
+   "e": 7.28
+  },
+  {
+   "w": "la",
+   "s": 7.32,
+   "e": 7.36
+  },
+  {
+   "w": "descripción",
+   "s": 7.44,
+   "e": 8.0
+  },
+  {
+   "w": "el",
+   "s": 8.04,
+   "e": 8.08
+  },
+  {
+   "w": "enlace",
+   "s": 8.16,
+   "e": 8.56
+  },
+  {
+   "w": "directo",
+   "s": 8.76,
+   "e": 9.2
+  },
+  {
+   "w": "y",
+   "s": 9.28,
+   "e": 9.32
+  },
+  {
+   "w": "la",
+   "s": 9.36,
+   "e": 9.44
+  },
+  {
+   "w": "reseña",
+   "s": 9.52,
+   "e": 9.92
+  },
+  {
+   "w": "completa",
+   "s": 10.0,
+   "e": 10.48
+  },
+  {
+   "w": "por",
+   "s": 10.56,
+   "e": 10.64
+  },
+  {
+   "w": "escrito.",
+   "s": 10.76,
+   "e": 11.68
+  }
+ ],
+ "speechEnd": 11.255
+}

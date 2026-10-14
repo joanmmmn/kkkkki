@@ -1,0 +1,17 @@
+{"viewport": [1920, 1080], "dpr": 2, "slowmo": 3, "steps": [
+  {"go": "https://sonorbooks.com/salir/audiobooks/?market=ES&language=es&to=https%3A%2F%2Fwww.audiobooks.com%2F", "hidden": true, "until": "load"},
+  {"wait": 5000},
+  {"eval": "(()=>{const b=document.querySelector('#onetrust-reject-all-handler')||[...document.querySelectorAll('button')].find(e=>/Reject All|Rechazarlas todas/.test(e.textContent)); if(b) b.click();})()"},
+  {"wait": 1500},
+  {"eval": "window.scrollTo(0,0)"},
+  {"move": [1250, 760], "dur": 10},
+  {"record": true},
+  {"wait": 1400},
+  {"mark": "to_signup"},
+  {"moveText": "Sign Up Free", "dur": 900},
+  {"wait": 500},
+  {"mark": "click"},
+  {"fakeClick": true},
+  {"wait": 900},
+  {"mark": "end"}
+]}

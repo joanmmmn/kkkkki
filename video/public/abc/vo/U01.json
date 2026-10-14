@@ -1,0 +1,54 @@
+{
+ "id": "U01",
+ "hash": "76e58a36878b",
+ "text": "¿Merece la pena Audiobooks.com desde España? Lo hemos probado.",
+ "duration": 4.56,
+ "words": [
+  {
+   "w": "¿Merece",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "la",
+   "s": 0.4,
+   "e": 0.48
+  },
+  {
+   "w": "pena",
+   "s": 0.56,
+   "e": 0.72
+  },
+  {
+   "w": "Audiobooks.com",
+   "s": 0.76,
+   "e": 1.92
+  },
+  {
+   "w": "desde",
+   "s": 2.0,
+   "e": 2.24
+  },
+  {
+   "w": "España?",
+   "s": 2.36,
+   "e": 3.28
+  },
+  {
+   "w": "Lo",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "hemos",
+   "s": 3.48,
+   "e": 3.76
+  },
+  {
+   "w": "probado.",
+   "s": 3.84,
+   "e": 4.56
+  }
+ ],
+ "speechEnd": 4.317
+}

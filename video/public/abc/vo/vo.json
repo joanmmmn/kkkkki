@@ -1,0 +1,115 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "D01",
+   "text": "¿Merece la pena Audiobooks.com desde España? Lo hemos probado a fondo: su catálogo en español, cómo funcionan sus créditos, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis, con tres audiolibros."
+  },
+  {
+   "id": "D02",
+   "text": "¿Qué es Audiobooks.com? Un servicio de audiolibros pensado para Estados Unidos que, desde dos mil veintidós, es de Storytel. Tiene más de setecientos mil títulos, también en español, y funciona desde España; eso sí, su web y la app que probamos están en inglés."
+  },
+  {
+   "id": "D03",
+   "text": "No es una tarifa plana: funciona con créditos. Por catorce noventa y cinco dólares al mes, unos trece euros, recibes un crédito, que vale por el audiolibro que quieras y es tuyo para siempre, más un libro de su selección VIP, que solo conservas mientras sigas suscrito. Y los créditos que no uses caducan a los tres meses."
+  },
+  {
+   "id": "D04",
+   "text": "¿Y en español? Hay más de lo que parece: Posteguillo, Juan Gómez-Jurado o Javier Castillo. Los tres mundos, que en Audible se paga aparte, aquí entra con un crédito. Pero no está todo: de La sombra del viento, solo encontramos un resumen."
+  },
+  {
+   "id": "D05",
+   "text": "Y ojo con una trampa: por defecto, el buscador solo enseña libros en inglés. Para ver los de español, filtra por idioma en cada búsqueda, o desactívalo en Ajustes."
+  },
+  {
+   "id": "D06",
+   "text": "Cada ficha te dice quién lo narra y cuánto dura, y puedes escuchar una muestra de unos cinco minutos antes de gastar el crédito. Nosotros lo usamos en Elon Musk, de Walter Isaacson: más de veinticuatro horas, en español."
+  },
+  {
+   "id": "D07",
+   "text": "El reproductor llega a cuatro veces la velocidad, y tiene temporizador para dormir, pistas, marcadores con notas y descargas para escuchar sin conexión."
+  },
+  {
+   "id": "D08",
+   "text": "Y algo que no esperábamos: con una cuenta gratis, sin suscripción, tienes más de diez mil audiolibros gratis. Y también los hay en español, como el Quijote."
+  },
+  {
+   "id": "D09",
+   "text": "Además, lo compartes gratis con tu familia: hasta dos personas de tu casa, cada una con sus marcadores. Y funciona en Android, en iPhone, en el coche con CarPlay y Android Auto, y en el navegador."
+  },
+  {
+   "id": "D10",
+   "text": "¿Y qué opinan los usuarios? En Google Play tiene un cuatro coma tres, y en la App Store española, un cuatro coma cinco, aunque con solo doscientas valoraciones, frente a las treinta y seis mil de Audible. Gusta la variedad del catálogo; las quejas, sobre todo, por cobros y por fallos al escuchar sin conexión."
+  },
+  {
+   "id": "D11",
+   "text": "Lo bueno: el libro es tuyo para siempre, aunque te des de baja; un catálogo enorme, con novedades en español; diez mil audiolibros gratis, y plan familiar. Lo malo: todo en inglés, se paga en dólares, un crédito al mes da para poco si escuchas mucho y, desde la app, sale más caro: diecisiete noventa y cinco al mes, sin prueba gratis."
+  },
+  {
+   "id": "D12",
+   "text": "¿Merece la pena desde España? Si escuchas uno o dos libros al mes y quieres quedártelos, puede salirte a cuenta, sobre todo con novedades largas que en otras se pagan aparte. Si escuchas mucho, te conviene más una tarifa plana, como Storytel o Audible. Y antes, busca tu libro: no está todo."
+  },
+  {
+   "id": "F01",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis con tres audiolibros: uno con el crédito y dos de la selección VIP."
+  },
+  {
+   "id": "F02",
+   "text": "Actívalo desde nuestra página de plataformas o desde la ficha de cualquier libro que esté en Audiobooks.com. Te dejamos en la descripción el enlace directo y la reseña completa por escrito."
+  },
+  {
+   "id": "F03",
+   "text": "Hazlo desde la web, no desde la app: pon tu nombre, tu correo y una tarjeta o PayPal. Hoy no pagas nada, aunque pueden retenerte catorce noventa y cinco dólares unos días para comprobar la tarjeta."
+  },
+  {
+   "id": "F04",
+   "text": "Y aquí no hay truco: si cancelas durante la prueba, pierdes los tres libros. Así que escúchalos y, si no te convence, cancela en la web, desde tu cuenta, antes de que acaben los treinta días: desde la app no se puede. Ah, y en nuestra prueba, la app no nos dejó confirmar los dos libros VIP."
+  },
+  {
+   "id": "F05",
+   "text": "¿Dudas entre Audiobooks.com y otras? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma."
+  },
+  {
+   "id": "F06",
+   "text": "Encuentra dónde escuchar tu próximo libro en SonorBooks."
+  },
+  {
+   "id": "U01",
+   "text": "¿Merece la pena Audiobooks.com desde España? Lo hemos probado."
+  },
+  {
+   "id": "U02",
+   "text": "Funciona con créditos: por catorce noventa y cinco dólares al mes, un audiolibro que es tuyo para siempre."
+  },
+  {
+   "id": "U03",
+   "text": "Hay novedades en español, pero ojo: la app está en inglés y solo busca en inglés si no lo cambias."
+  },
+  {
+   "id": "U04",
+   "text": "Lo mejor: más de diez mil audiolibros gratis, sin suscripción."
+  },
+  {
+   "id": "U05",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis con tres audiolibros."
+  },
+  {
+   "id": "U06",
+   "text": "Pero si cancelas durante la prueba, pierdes los libros."
+  },
+  {
+   "id": "U07",
+   "text": "Busca tu próximo libro en SonorBooks."
+  }
+ ]
+}

@@ -36,6 +36,11 @@ import audIndex from '../../public/aud/rec/index.json';
 import auw00 from '../../public/aud/web/00_au_prueba/meta.json';
 import auw10 from '../../public/aud/web/10_sb_plataformas/meta.json';
 import auw11 from '../../public/aud/web/11_sb_ficha/meta.json';
+import abcIndex from '../../public/abc/rec/index.json';
+import abw00 from '../../public/abc/web/00_abc_landing/meta.json';
+import abw01 from '../../public/abc/web/01_abc_signup/meta.json';
+import abw10 from '../../public/abc/web/10_sb_plataformas/meta.json';
+import abw11 from '../../public/abc/web/11_sb_ficha/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
@@ -65,6 +70,11 @@ const REC_DURATIONS: Record<string, number> = {
   'aud/web/00_au_prueba/video.mp4': auw00.duration,
   'aud/web/10_sb_plataformas/video.mp4': auw10.duration,
   'aud/web/11_sb_ficha/video.mp4': auw11.duration,
+  ...Object.fromEntries(Object.entries(abcIndex as Record<string, { duration: number }>).map(([k, v]) => [`abc/rec/${k}/video.mp4`, v.duration])),
+  'abc/web/00_abc_landing/video.mp4': abw00.duration,
+  'abc/web/01_abc_signup/video.mp4': abw01.duration,
+  'abc/web/10_sb_plataformas/video.mp4': abw10.duration,
+  'abc/web/11_sb_ficha/video.mp4': abw11.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };

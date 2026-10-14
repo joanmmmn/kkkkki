@@ -1,0 +1,54 @@
+{
+ "id": "U06",
+ "hash": "93fcedca7c83",
+ "text": "Pero si cancelas durante la prueba, pierdes los libros.",
+ "duration": 3.44,
+ "words": [
+  {
+   "w": "Pero",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "si",
+   "s": 0.24,
+   "e": 0.4
+  },
+  {
+   "w": "cancelas",
+   "s": 0.56,
+   "e": 0.88
+  },
+  {
+   "w": "durante",
+   "s": 0.92,
+   "e": 1.2
+  },
+  {
+   "w": "la",
+   "s": 1.28,
+   "e": 1.36
+  },
+  {
+   "w": "prueba,",
+   "s": 1.4,
+   "e": 1.92
+  },
+  {
+   "w": "pierdes",
+   "s": 1.96,
+   "e": 2.32
+  },
+  {
+   "w": "los",
+   "s": 2.4,
+   "e": 2.48
+  },
+  {
+   "w": "libros.",
+   "s": 2.56,
+   "e": 3.44
+  }
+ ],
+ "speechEnd": 3.068
+}

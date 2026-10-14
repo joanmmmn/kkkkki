@@ -1,0 +1,212 @@
+{
+ "ajustes_ingles": {
+  "duration": 18.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 578.0,
+  "to": 596.0,
+  "audio": false
+ },
+ "biblioteca_descarga": {
+  "duration": 24.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 733.0,
+  "to": 757.0,
+  "audio": false
+ },
+ "biblioteca_elon": {
+  "duration": 16.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 620.0,
+  "to": 636.0,
+  "audio": false
+ },
+ "browse": {
+  "duration": 35.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 95.0,
+  "to": 130.0,
+  "audio": false
+ },
+ "cuenta_gratis": {
+  "duration": 19.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 594.0,
+  "to": 613.0,
+  "audio": false
+ },
+ "elon_buscar_en": {
+  "duration": 37.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 66.0,
+  "to": 103.0,
+  "audio": false
+ },
+ "elon_credito": {
+  "duration": 54.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 180.0,
+  "to": 234.0,
+  "audio": false
+ },
+ "elon_ficha": {
+  "duration": 41.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 141.0,
+  "to": 182.0,
+  "audio": false
+ },
+ "elon_filtro_es": {
+  "duration": 40.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 102.0,
+  "to": 142.0,
+  "audio": false
+ },
+ "elon_marcador": {
+  "duration": 16.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 282.0,
+  "to": 298.0,
+  "audio": false
+ },
+ "elon_pistas": {
+  "duration": 20.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 296.0,
+  "to": 316.0,
+  "audio": false
+ },
+ "elon_reproductor": {
+  "duration": 18.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 232.0,
+  "to": 250.0,
+  "audio": false
+ },
+ "elon_temporizador": {
+  "duration": 16.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 268.0,
+  "to": 284.0,
+  "audio": false
+ },
+ "elon_velocidad": {
+  "duration": 22.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 248.0,
+  "to": 270.0,
+  "audio": false
+ },
+ "inicio_scroll": {
+  "duration": 38.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 18.0,
+  "to": 56.0,
+  "audio": false
+ },
+ "inicio_top": {
+  "duration": 19.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 0.0,
+  "to": 19.0,
+  "audio": false
+ },
+ "perfil_cero": {
+  "duration": 16.5,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 636.0,
+  "to": 652.5,
+  "audio": false
+ },
+ "perfil_prueba": {
+  "duration": 14.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 0.0,
+  "to": 14.0,
+  "audio": false
+ },
+ "post_en": {
+  "duration": 22.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 430.0,
+  "to": 452.0,
+  "audio": false
+ },
+ "post_filtro_es": {
+  "duration": 33.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 450.0,
+  "to": 483.0,
+  "audio": false
+ },
+ "quijote_ficha": {
+  "duration": 15.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 663.0,
+  "to": 678.0,
+  "audio": false
+ },
+ "quijote_gratis": {
+  "duration": 34.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 630.0,
+  "to": 664.0,
+  "audio": false
+ },
+ "quijote_reproductor": {
+  "duration": 29.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 677.0,
+  "to": 706.0,
+  "audio": false
+ },
+ "reina_roja_es": {
+  "duration": 15.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 614.0,
+  "to": 629.0,
+  "audio": false
+ },
+ "sombra_es": {
+  "duration": 40.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 540.0,
+  "to": 580.0,
+  "audio": false
+ },
+ "tres_mundos_ficha": {
+  "duration": 27.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 483.0,
+  "to": 510.0,
+  "audio": false
+ },
+ "tres_mundos_muestra": {
+  "duration": 22.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 508.0,
+  "to": 530.0,
+  "audio": false
+ },
+ "upgrade_1795": {
+  "duration": 16.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 594.0,
+  "to": 610.0,
+  "audio": false
+ },
+ "vip_lista": {
+  "duration": 30.0,
+  "src": "2026-10-14 21-46-36.mp4",
+  "from": 64.0,
+  "to": 94.0,
+  "audio": false
+ },
+ "vip_prueba": {
+  "duration": 64.0,
+  "src": "2026-10-14 22-10-52.mp4",
+  "from": 354.0,
+  "to": 418.0,
+  "audio": false
+ }
+}

@@ -30,3 +30,8 @@ web/storytel-resena/preview-movil/
 web/audible-resena/dist/
 web/audible-resena/preview/
 web/audible-resena/preview-movil/
+
+# Página de reseña de Audiobooks.com: salidas de build.py (se generan con web/audiobooks-com-resena/build.py)
+web/audiobooks-com-resena/dist/
+web/audiobooks-com-resena/preview/
+web/audiobooks-com-resena/preview-movil/

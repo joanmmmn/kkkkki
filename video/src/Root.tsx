@@ -30,6 +30,10 @@ import { AudibleReview } from './scenes/aud/Main';
 import { AUDThumb } from './scenes/aud/Thumb';
 import { AudibleReviewShort, AUD_SHORT_TOTAL } from './scenes/aud/Short';
 import { AUD_TOTAL } from './scenes/aud/timeline';
+import { AudiobooksReview } from './scenes/abc/Main';
+import { ABCThumb, ABCThumbB } from './scenes/abc/Thumb';
+import { AudiobooksReviewShort, ABC_SHORT_TOTAL } from './scenes/abc/Short';
+import { ABC_TOTAL } from './scenes/abc/timeline';
 
 export const Root: React.FC = () => (
   <>
@@ -39,6 +43,10 @@ export const Root: React.FC = () => (
     <Composition id="AUReview" component={AudibleReview} durationInFrames={AUD_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="AUDThumb" component={AUDThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="AUDShort" component={AudibleReviewShort} durationInFrames={AUD_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
+    <Composition id="ABCReview" component={AudiobooksReview} durationInFrames={ABC_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="ABCThumb" component={ABCThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="ABCThumbB" component={ABCThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="ABCShort" component={AudiobooksReviewShort} durationInFrames={ABC_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
     <Composition id="PDReview" component={PodimoReview} durationInFrames={PDR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="PDRThumb" component={PDRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="PDRShort" component={PodimoReviewShort} durationInFrames={PDR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
