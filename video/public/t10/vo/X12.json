@@ -1,0 +1,204 @@
+{
+ "id": "X12",
+ "hash": "26d550528763",
+ "text": "Un hombre ordena los papeles de su tío abuelo, un profesor que acaba de morir, y encuentra un bajorrelieve de arcilla, informes sobre cultos en distintos rincones del mundo y un nombre que la garganta humana apenas puede pronunciar.",
+ "duration": 15.04,
+ "words": [
+  {
+   "w": "Un",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "hombre",
+   "s": 0.16,
+   "e": 0.4
+  },
+  {
+   "w": "ordena",
+   "s": 0.48,
+   "e": 0.8
+  },
+  {
+   "w": "los",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "papeles",
+   "s": 1.04,
+   "e": 1.44
+  },
+  {
+   "w": "de",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "su",
+   "s": 1.68,
+   "e": 1.76
+  },
+  {
+   "w": "tío",
+   "s": 1.8,
+   "e": 2.0
+  },
+  {
+   "w": "abuelo,",
+   "s": 2.08,
+   "e": 2.84
+  },
+  {
+   "w": "un",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "profesor",
+   "s": 3.08,
+   "e": 3.52
+  },
+  {
+   "w": "que",
+   "s": 3.56,
+   "e": 3.6
+  },
+  {
+   "w": "acaba",
+   "s": 3.68,
+   "e": 4.0
+  },
+  {
+   "w": "de",
+   "s": 4.04,
+   "e": 4.08
+  },
+  {
+   "w": "morir,",
+   "s": 4.2,
+   "e": 4.84
+  },
+  {
+   "w": "y",
+   "s": 4.88,
+   "e": 4.92
+  },
+  {
+   "w": "encuentra",
+   "s": 4.96,
+   "e": 5.44
+  },
+  {
+   "w": "un",
+   "s": 5.52,
+   "e": 5.6
+  },
+  {
+   "w": "bajorrelieve",
+   "s": 5.64,
+   "e": 6.32
+  },
+  {
+   "w": "de",
+   "s": 6.36,
+   "e": 6.4
+  },
+  {
+   "w": "arcilla,",
+   "s": 6.52,
+   "e": 7.32
+  },
+  {
+   "w": "informes",
+   "s": 7.36,
+   "e": 7.84
+  },
+  {
+   "w": "sobre",
+   "s": 7.92,
+   "e": 8.16
+  },
+  {
+   "w": "cultos",
+   "s": 8.24,
+   "e": 8.64
+  },
+  {
+   "w": "en",
+   "s": 8.72,
+   "e": 8.8
+  },
+  {
+   "w": "distintos",
+   "s": 8.92,
+   "e": 9.28
+  },
+  {
+   "w": "rincones",
+   "s": 9.44,
+   "e": 9.92
+  },
+  {
+   "w": "del",
+   "s": 10.0,
+   "e": 10.08
+  },
+  {
+   "w": "mundo",
+   "s": 10.16,
+   "e": 10.8
+  },
+  {
+   "w": "y",
+   "s": 10.88,
+   "e": 10.92
+  },
+  {
+   "w": "un",
+   "s": 10.96,
+   "e": 11.04
+  },
+  {
+   "w": "nombre",
+   "s": 11.12,
+   "e": 11.44
+  },
+  {
+   "w": "que",
+   "s": 11.52,
+   "e": 11.6
+  },
+  {
+   "w": "la",
+   "s": 11.64,
+   "e": 11.68
+  },
+  {
+   "w": "garganta",
+   "s": 11.76,
+   "e": 12.24
+  },
+  {
+   "w": "humana",
+   "s": 12.36,
+   "e": 12.64
+  },
+  {
+   "w": "apenas",
+   "s": 12.8,
+   "e": 13.36
+  },
+  {
+   "w": "puede",
+   "s": 13.4,
+   "e": 13.68
+  },
+  {
+   "w": "pronunciar.",
+   "s": 13.8,
+   "e": 15.04
+  }
+ ],
+ "speechEnd": 14.466
+}

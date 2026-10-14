@@ -1,0 +1,59 @@
+{
+ "id": "X31",
+ "hash": "0972088d2a29",
+ "text": "Número ocho: «Cómo vender una casa encantada», de Grady Hendrix.",
+ "duration": 5.52,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "ocho:",
+   "s": 0.48,
+   "e": 1.36
+  },
+  {
+   "w": "«Cómo",
+   "s": 1.4,
+   "e": 1.6
+  },
+  {
+   "w": "vender",
+   "s": 1.68,
+   "e": 2.0
+  },
+  {
+   "w": "una",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "casa",
+   "s": 2.32,
+   "e": 2.56
+  },
+  {
+   "w": "encantada»,",
+   "s": 2.68,
+   "e": 3.68
+  },
+  {
+   "w": "de",
+   "s": 3.76,
+   "e": 3.84
+  },
+  {
+   "w": "Grady",
+   "s": 3.92,
+   "e": 4.32
+  },
+  {
+   "w": "Hendrix.",
+   "s": 4.36,
+   "e": 5.52
+  }
+ ],
+ "speechEnd": 4.96
+}

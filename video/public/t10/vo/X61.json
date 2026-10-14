@@ -1,0 +1,44 @@
+{
+ "id": "X61",
+ "hash": "1d2d01e2bece",
+ "text": "Número cinco: «Apocalipsis Z», de Manel Loureiro.",
+ "duration": 4.96,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "cinco:",
+   "s": 0.48,
+   "e": 1.36
+  },
+  {
+   "w": "«Apocalipsis",
+   "s": 1.44,
+   "e": 2.24
+  },
+  {
+   "w": "Z»,",
+   "s": 2.32,
+   "e": 3.04
+  },
+  {
+   "w": "de",
+   "s": 3.12,
+   "e": 3.2
+  },
+  {
+   "w": "Manel",
+   "s": 3.32,
+   "e": 3.52
+  },
+  {
+   "w": "Loureiro.",
+   "s": 3.6,
+   "e": 4.96
+  }
+ ],
+ "speechEnd": 4.287
+}

@@ -1,0 +1,84 @@
+{
+ "id": "X85",
+ "hash": "bbf49be4a574",
+ "text": "Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Apple Books y Google Play.",
+ "duration": 6.64,
+ "words": [
+  {
+   "w": "Un",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "cuatro",
+   "s": 0.24,
+   "e": 0.48
+  },
+  {
+   "w": "coma",
+   "s": 0.56,
+   "e": 0.8
+  },
+  {
+   "w": "nueve",
+   "s": 0.84,
+   "e": 1.04
+  },
+  {
+   "w": "sobre",
+   "s": 1.2,
+   "e": 1.44
+  },
+  {
+   "w": "cinco.",
+   "s": 1.52,
+   "e": 2.4
+  },
+  {
+   "w": "Diecisiete",
+   "s": 2.52,
+   "e": 2.96
+  },
+  {
+   "w": "horas,",
+   "s": 3.04,
+   "e": 3.68
+  },
+  {
+   "w": "en",
+   "s": 3.76,
+   "e": 3.84
+  },
+  {
+   "w": "Audible,",
+   "s": 3.96,
+   "e": 4.64
+  },
+  {
+   "w": "Apple",
+   "s": 4.72,
+   "e": 4.96
+  },
+  {
+   "w": "Books",
+   "s": 5.04,
+   "e": 5.36
+  },
+  {
+   "w": "y",
+   "s": 5.52,
+   "e": 5.6
+  },
+  {
+   "w": "Google",
+   "s": 5.68,
+   "e": 5.92
+  },
+  {
+   "w": "Play.",
+   "s": 6.0,
+   "e": 6.64
+  }
+ ],
+ "speechEnd": 6.473
+}

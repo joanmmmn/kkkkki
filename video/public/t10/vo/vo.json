@@ -1,0 +1,277 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.05
+ },
+ "scenes": [
+  {
+   "id": "X01",
+   "text": "Hay libros que asustan."
+  },
+  {
+   "id": "X02",
+   "text": "Y hay libros que, escuchados de noche, con los auriculares puestos y la luz apagada, no te dejan dormir."
+  },
+  {
+   "id": "X03",
+   "text": "Estos son los diez libros de terror que dan miedo de verdad. Y la voz con la que tienes que escucharlos."
+  },
+  {
+   "id": "X04",
+   "text": "Esto es «Los diez mejores»: en cada episodio, los diez mejores libros de un género y la voz con la que escucharlos. Hoy toca terror."
+  },
+  {
+   "id": "X05",
+   "text": "La regla es sencilla: diez libros con fama de quitar el sueño y, de cada uno, la narración en español que tienes que escuchar, elegida por las notas y las opiniones de los oyentes."
+  },
+  {
+   "id": "X06",
+   "text": "Porque en el terror la voz lo cambia todo: el ritmo, los silencios, el susurro justo antes del golpe."
+  },
+  {
+   "id": "X07",
+   "text": "Vamos de menos a más miedo."
+  },
+  {
+   "id": "X11",
+   "text": "Número diez: «La llamada de Cthulhu», de H. P. Lovecraft.",
+   "say": "Número diez: «La llamada de Ctulu», de Hache Pe Lóvecraft."
+  },
+  {
+   "id": "X12",
+   "text": "Un hombre ordena los papeles de su tío abuelo, un profesor que acaba de morir, y encuentra un bajorrelieve de arcilla, informes sobre cultos en distintos rincones del mundo y un nombre que la garganta humana apenas puede pronunciar."
+  },
+  {
+   "id": "X13",
+   "text": "Lovecraft escribió que la emoción más antigua del ser humano es el miedo, y que el miedo más antiguo es el miedo a lo desconocido. Este relato es la demostración.",
+   "say": "Lóvecraft escribió que la emoción más antigua del ser humano es el miedo, y que el miedo más antiguo es el miedo a lo desconocido. Este relato es la demostración."
+  },
+  {
+   "id": "X14",
+   "text": "Escúchalo con Benjamín Figueres: castellano, sin prisas, como quien lee un informe que no debería haber encontrado. Dura solo dos horas y está en casi todas las plataformas."
+  },
+  {
+   "id": "X21",
+   "text": "Número nueve: los cuentos de Edgar Allan Poe."
+  },
+  {
+   "id": "X22",
+   "text": "Un hombre te jura que no está loco mientras te cuenta cómo mató a un anciano… y cómo sigue oyendo latir su corazón bajo las tablas del suelo. Una mujer enterrada en vida en la casa Usher. Un gato negro que no se marcha."
+  },
+  {
+   "id": "X23",
+   "text": "Casi doscientos años después, siguen funcionando igual de bien. Y son cortos: perfectos para escuchar uno cada noche."
+  },
+  {
+   "id": "X24",
+   "text": "La gran recopilación, «Cuentos extraordinarios», con treinta y siete relatos, la narra Jordi Boixaderas en Audible, y los oyentes le dan un cuatro coma seis sobre cinco.",
+   "say": "La gran recopilación, «Cuentos extraordinarios», con treinta y siete relatos, la narra Jordi Boishaderas en Audible, y los oyentes le dan un cuatro coma seis sobre cinco."
+  },
+  {
+   "id": "X25",
+   "text": "¿Prefieres probar antes? «El corazón delator», en versión dramatizada, dura quince minutos. Una buena forma de saber si eres valiente."
+  },
+  {
+   "id": "X31",
+   "text": "Número ocho: «Cómo vender una casa encantada», de Grady Hendrix.",
+   "say": "Número ocho: «Cómo vender una casa encantada», de Greidi Héndrix."
+  },
+  {
+   "id": "X32",
+   "text": "Los padres de Louise acaban de morir y ella vuelve a la casa familiar para venderla junto a su hermano. El problema no son los recuerdos. Son los títeres. Y las muñecas. Y un títere en concreto que parece tener sus propios planes.",
+   "say": "Los padres de Luís acaban de morir y ella vuelve a la casa familiar para venderla junto a su hermano. El problema no son los recuerdos. Son los títeres. Y las muñecas. Y un títere en concreto que parece tener sus propios planes."
+  },
+  {
+   "id": "X33",
+   "text": "El New York Times tituló su crítica: «Un títere que es, de verdad, material de pesadillas». No exageraba.",
+   "say": "El Niu York Taims tituló su crítica: «Un títere que es, de verdad, material de pesadillas». No exageraba."
+  },
+  {
+   "id": "X34",
+   "text": "La narra Esther Cordero, en castellano, y los oyentes destacan cómo cambia de voz para cada personaje: un cuatro coma cuatro en Audible con ciento sesenta valoraciones. Catorce horas, y está en casi todas las plataformas."
+  },
+  {
+   "id": "X41",
+   "text": "Número siete: «Distancia de rescate», de Samanta Schweblin.",
+   "say": "Número siete: «Distancia de rescate», de Samanta Shuéblin."
+  },
+  {
+   "id": "X42",
+   "text": "Una mujer agoniza en la sala de urgencias de un pueblo. A su lado, un niño que no es su hijo le habla al oído y le pide que encuentre el momento exacto en que todo empezó. Algo ha pasado en el campo. Algo les está pasando a los niños."
+  },
+  {
+   "id": "X43",
+   "text": "Ganó el premio Shirley Jackson, fue finalista del Booker Internacional y Netflix la convirtió en película.",
+   "say": "Ganó el premio Shérli Yákson, fue finalista del Búker Internacional y Netflix la convirtió en película."
+  },
+  {
+   "id": "X44",
+   "text": "Paula Pichersky la narra casi en susurros, y ahí está la clave: es como si alguien te contara la pesadilla al oído. Menos de tres horas, en casi todas las plataformas.",
+   "say": "Paula Pichérski la narra casi en susurros, y ahí está la clave: es como si alguien te contara la pesadilla al oído. Menos de tres horas, en casi todas las plataformas."
+  },
+  {
+   "id": "X51",
+   "text": "Número seis: «Drácula», de Bram Stoker.",
+   "say": "Número seis: «Drácula», de Bram Estóker."
+  },
+  {
+   "id": "X52",
+   "text": "Un joven abogado viaja a Transilvania para cerrar la compra de una finca cerca de Londres. Su cliente es un conde que nunca come con él, que no aparece en el espejo y que de día no está en ninguna parte."
+  },
+  {
+   "id": "X53",
+   "text": "Es la novela que fijó para siempre la imagen del vampiro. Tanto, que «Nosferatu», en mil novecientos veintidós, era Drácula con otro nombre y sin permiso: la viuda de Stoker lo denunció y un tribunal ordenó destruir las copias.",
+   "say": "Es la novela que fijó para siempre la imagen del vampiro. Tanto, que «Nosferatu», en mil novecientos veintidós, era Drácula con otro nombre y sin permiso: la viuda de Estóker lo denunció y un tribunal ordenó destruir las copias."
+  },
+  {
+   "id": "X54",
+   "text": "Aquí hay dos formas de escucharlo. Entera, con José Coronado y Sol de la Barreda: dieciocho horas y media y un cuatro coma ocho con más de seiscientas valoraciones."
+  },
+  {
+   "id": "X55",
+   "text": "O como una película para los oídos: el nuevo Drácula original de Audible, una adaptación libre dirigida por Carlota Pereda, con Asier Etxeandia, Claudia Salas y un reparto de más de veinticinco actores. Dura casi seis horas, y es lo más parecido a pasar la noche en el castillo. Las dos, en Audible.",
+   "say": "O como una película para los oídos: el nuevo Drácula original de Audible, una adaptación libre dirigida por Carlota Pereda, con Asier Echeandía, Claudia Salas y un reparto de más de veinticinco actores. Dura casi seis horas, y es lo más parecido a pasar la noche en el castillo. Las dos, en Audible."
+  },
+  {
+   "id": "X61",
+   "text": "Número cinco: «Apocalipsis Z», de Manel Loureiro.",
+   "say": "Número cinco: «Apocalipsis Zeta», de Manel Loureiro."
+  },
+  {
+   "id": "X62",
+   "text": "Un abogado de Pontevedra, que vive solo con su gato, sigue por la tele un brote extraño en Rusia. Al principio es una noticia más. Luego, el brote empieza a extenderse."
+  },
+  {
+   "id": "X63",
+   "text": "Empezó como un blog en internet antes de ser novela, y su adaptación es una de las películas internacionales más vistas de Prime Video.",
+   "say": "Empezó como un blog en internet antes de ser novela, y su adaptación es una de las películas internacionales más vistas de Práim Video."
+  },
+  {
+   "id": "X64",
+   "text": "En audio tiene una versión que hay que oír: la ficción sonora original de Audible, con Javier Rey, Maggie Civantos y quince actores más. Los oyentes destacan los gruñidos de fondo, y dicen que es como ver una película con los ojos cerrados.",
+   "say": "En audio tiene una versión que hay que oír: la ficción sonora original de Audible, con Javier Rey, Magui Civantos y quince actores más. Los oyentes destacan los gruñidos de fondo, y dicen que es como ver una película con los ojos cerrados."
+  },
+  {
+   "id": "X65",
+   "text": "Es una adaptación de seis horas; la novela completa también está en audio, con una voz sintética autorizada, en Storytel, Nextory y Podimo.",
+   "say": "Es una adaptación de seis horas; la novela completa también está en audio, con una voz sintética autorizada, en Storytel, Nextory y Podímo."
+  },
+  {
+   "id": "X71",
+   "text": "Número cuatro: «Carcoma», de Layla Martínez.",
+   "say": "Número cuatro: «Carcoma», de Leila Martínez."
+  },
+  {
+   "id": "X72",
+   "text": "Una abuela y su nieta viven en una vieja casa de pueblo. La nieta ha vuelto después de que desapareciera el niño que cuidaba, el hijo de la familia más rica del pueblo. Los vecinos murmuran. Y en esa casa hay algo más que ellas dos."
+  },
+  {
+   "id": "X73",
+   "text": "Layla Martínez se inspiró en la casa que levantó su bisabuelo y en un armario que se abría solo. El resultado es terror rural, corto y feroz, y uno de los fenómenos editoriales del terror en España: ha agotado edición tras edición.",
+   "say": "Leila Martínez se inspiró en la casa que levantó su bisabuelo y en un armario que se abría solo. El resultado es terror rural, corto y feroz, y uno de los fenómenos editoriales del terror en España: ha agotado edición tras edición."
+  },
+  {
+   "id": "X74",
+   "text": "Paula Iwasaki la narra con voz de aquí, seca y sin sobreactuar: más de cuatrocientas valoraciones y un cuatro coma seis en la narración. Son tres horas: se escucha en una noche."
+  },
+  {
+   "id": "X81",
+   "text": "Número tres: «El misterio de Salem's Lot», de Stephen King.",
+   "say": "Número tres: «El misterio de Séilems Lot», de Stíven King."
+  },
+  {
+   "id": "X82",
+   "text": "Un escritor vuelve al pueblo de su infancia para escribir sobre la casa que le aterrorizaba de niño. A la vez, unos recién llegados compran esa misma casa. Y la gente del pueblo empieza a desaparecer… o a volver."
+  },
+  {
+   "id": "X83",
+   "text": "King se preguntó qué pasaría si Drácula volviera en el siglo veinte, en Estados Unidos, y en los años ochenta llegó a decir que, en cierto modo, era su historia favorita."
+  },
+  {
+   "id": "X84",
+   "text": "¿Por qué este King y no «It» o «El resplandor»? Porque en español solo existen con voz latina. Y esta es la narración de King en castellano mejor valorada por los oyentes: Xavi Fernández, con una voz grave que convierte cada capítulo en un programa de radio de madrugada.",
+   "say": "¿Por qué este King y no «It» o «El resplandor»? Porque en español solo existen con voz latina. Y esta es la narración de King en castellano mejor valorada por los oyentes: Chavi Fernández, con una voz grave que convierte cada capítulo en un programa de radio de madrugada."
+  },
+  {
+   "id": "X85",
+   "text": "Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Apple Books y Google Play.",
+   "say": "Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Ápel Buks y Gúgel Pléi."
+  },
+  {
+   "id": "X91",
+   "text": "Número dos: «Nuestra parte de noche», de Mariana Enriquez."
+  },
+  {
+   "id": "X92",
+   "text": "Argentina, en plena dictadura. Un padre cruza el país en coche con su hijo pequeño. El niño ha heredado un don, y hay una sociedad secreta, la Orden, que lo quiere para sus rituales."
+  },
+  {
+   "id": "X93",
+   "text": "Es terror sobrenatural, pero también del más real. Ganó el Premio Herralde y, para buena parte de la crítica, es una de las grandes novelas de terror escritas en español en este siglo."
+  },
+  {
+   "id": "X94",
+   "text": "Mara Brenner la narra con acento argentino, y eso la hace todavía más auténtica: una voz distinta para cada personaje y un cuatro coma siete sobre cinco con más de doscientas valoraciones."
+  },
+  {
+   "id": "X95",
+   "text": "Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y está en todas las grandes plataformas."
+  },
+  {
+   "id": "X101",
+   "text": "Número uno: «El exorcista», de William Peter Blatty.",
+   "say": "Número uno: «El exorcista», de Wíliam Píter Bláti."
+  },
+  {
+   "id": "X102",
+   "text": "Una actriz vive en Washington con su hija, Regan. Primero son ruidos en el desván. Luego, cambios en la niña. Después, una voz que no es la suya. Y ni los médicos ni los psiquiatras encuentran una explicación.",
+   "say": "Una actriz vive en Guáshington con su hija, Rígan. Primero son ruidos en el desván. Luego, cambios en la niña. Después, una voz que no es la suya. Y ni los médicos ni los psiquiatras encuentran una explicación."
+  },
+  {
+   "id": "X103",
+   "text": "Blatty se inspiró en un caso real. En mil novecientos cuarenta y nueve, el Washington Post contó en portada que un sacerdote había liberado a un chico que, según decían, estaba en las garras del diablo. Blatty lo leyó cuando estudiaba en Georgetown.",
+   "say": "Bláti se inspiró en un caso real. En mil novecientos cuarenta y nueve, el Guáshington Post contó en portada que un sacerdote había liberado a un chico que, según decían, estaba en las garras del diablo. Bláti lo leyó cuando estudiaba en Yórchtaun."
+  },
+  {
+   "id": "X104",
+   "text": "La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible. Trece horas, en Audible."
+  },
+  {
+   "id": "X105",
+   "text": "Escúchalo de noche. Si te atreves."
+  },
+  {
+   "id": "X111",
+   "text": "Un consejo para que funcione: de noche, con auriculares y sin mirar el móvil."
+  },
+  {
+   "id": "X112",
+   "text": "Cada uno de estos audiolibros tiene su ficha en SonorBooks, con las plataformas donde está esa narración y si puedes empezarla gratis con una prueba. Los enlaces están en la descripción, y en nuestro blog tienes la lista completa.",
+   "say": "Cada uno de estos audiolibros tiene su ficha en Sónorbuks, con las plataformas donde está esa narración y si puedes empezarla gratis con una prueba. Los enlaces están en la descripción, y en nuestro blog tienes la lista completa."
+  },
+  {
+   "id": "X113",
+   "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género quieres para el próximo «Los diez mejores»?"
+  },
+  {
+   "id": "X114",
+   "text": "Tu próxima historia te está esperando."
+  },
+  {
+   "id": "Y01",
+   "text": "Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.",
+   "say": "Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de Wíliam Píter Bláti."
+  },
+  {
+   "id": "Y02",
+   "text": "Los otros nueve, en el vídeo completo."
+  }
+ ]
+}

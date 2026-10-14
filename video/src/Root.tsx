@@ -30,9 +30,17 @@ import { StorytelReviewShort, STR_SHORT_TOTAL } from './scenes/str/Short';
 import { StephenKingGuide } from './scenes/skg/Main';
 import { SKG_TOTAL } from './scenes/skg/timeline';
 import { SKThumbA, SKThumbB } from './scenes/skg/Thumb';
+import { Top10Terror } from './scenes/t10/Main';
+import { T10_TOTAL } from './scenes/t10/timeline';
+import { T10Short, T10_SHORT_TOTAL } from './scenes/t10/Short';
+import { T10ThumbA, T10ThumbB } from './scenes/t10/Thumb';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="T10Terror" component={Top10Terror} durationInFrames={T10_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="T10Short" component={T10Short} durationInFrames={T10_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
+    <Composition id="T10ThumbA" component={T10ThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="T10ThumbB" component={T10ThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKThumbB" component={SKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />

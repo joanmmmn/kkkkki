@@ -1,0 +1,109 @@
+{
+ "id": "X25",
+ "hash": "c4f4509c3b8a",
+ "text": "¿Prefieres probar antes? «El corazón delator», en versión dramatizada, dura quince minutos. Una buena forma de saber si eres valiente.",
+ "duration": 8.64,
+ "words": [
+  {
+   "w": "¿Prefieres",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "probar",
+   "s": 0.56,
+   "e": 0.8
+  },
+  {
+   "w": "antes?",
+   "s": 1.04,
+   "e": 1.48
+  },
+  {
+   "w": "«El",
+   "s": 1.68,
+   "e": 1.84
+  },
+  {
+   "w": "corazón",
+   "s": 1.92,
+   "e": 2.24
+  },
+  {
+   "w": "delator»,",
+   "s": 2.32,
+   "e": 3.04
+  },
+  {
+   "w": "en",
+   "s": 3.12,
+   "e": 3.2
+  },
+  {
+   "w": "versión",
+   "s": 3.32,
+   "e": 3.6
+  },
+  {
+   "w": "dramatizada,",
+   "s": 3.64,
+   "e": 4.48
+  },
+  {
+   "w": "dura",
+   "s": 4.56,
+   "e": 4.8
+  },
+  {
+   "w": "quince",
+   "s": 4.96,
+   "e": 5.28
+  },
+  {
+   "w": "minutos.",
+   "s": 5.36,
+   "e": 5.92
+  },
+  {
+   "w": "Una",
+   "s": 6.24,
+   "e": 6.4
+  },
+  {
+   "w": "buena",
+   "s": 6.44,
+   "e": 6.56
+  },
+  {
+   "w": "forma",
+   "s": 6.72,
+   "e": 6.96
+  },
+  {
+   "w": "de",
+   "s": 7.0,
+   "e": 7.04
+  },
+  {
+   "w": "saber",
+   "s": 7.12,
+   "e": 7.44
+  },
+  {
+   "w": "si",
+   "s": 7.52,
+   "e": 7.6
+  },
+  {
+   "w": "eres",
+   "s": 7.68,
+   "e": 7.92
+  },
+  {
+   "w": "valiente.",
+   "s": 8.0,
+   "e": 8.64
+  }
+ ],
+ "speechEnd": 8.64
+}

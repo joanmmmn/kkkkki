@@ -1,0 +1,89 @@
+{
+ "id": "X43",
+ "hash": "7d2be0a77853",
+ "text": "Ganó el premio Shirley Jackson, fue finalista del Booker Internacional y Netflix la convirtió en película.",
+ "duration": 6.88,
+ "words": [
+  {
+   "w": "Ganó",
+   "s": 0.0,
+   "e": 0.28
+  },
+  {
+   "w": "el",
+   "s": 0.32,
+   "e": 0.4
+  },
+  {
+   "w": "premio",
+   "s": 0.48,
+   "e": 0.88
+  },
+  {
+   "w": "Shirley",
+   "s": 0.96,
+   "e": 1.28
+  },
+  {
+   "w": "Jackson,",
+   "s": 1.32,
+   "e": 2.12
+  },
+  {
+   "w": "fue",
+   "s": 2.16,
+   "e": 2.32
+  },
+  {
+   "w": "finalista",
+   "s": 2.44,
+   "e": 2.8
+  },
+  {
+   "w": "del",
+   "s": 2.88,
+   "e": 3.04
+  },
+  {
+   "w": "Booker",
+   "s": 3.08,
+   "e": 3.28
+  },
+  {
+   "w": "Internacional",
+   "s": 3.36,
+   "e": 4.32
+  },
+  {
+   "w": "y",
+   "s": 4.36,
+   "e": 4.4
+  },
+  {
+   "w": "Netflix",
+   "s": 4.48,
+   "e": 4.96
+  },
+  {
+   "w": "la",
+   "s": 5.04,
+   "e": 5.12
+  },
+  {
+   "w": "convirtió",
+   "s": 5.2,
+   "e": 5.68
+  },
+  {
+   "w": "en",
+   "s": 5.76,
+   "e": 5.84
+  },
+  {
+   "w": "película.",
+   "s": 5.92,
+   "e": 6.88
+  }
+ ],
+ "speechEnd": 6.514
+}

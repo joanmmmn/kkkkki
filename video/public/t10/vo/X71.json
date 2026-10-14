@@ -1,0 +1,39 @@
+{
+ "id": "X71",
+ "hash": "e4d9bcba6cdd",
+ "text": "Número cuatro: «Carcoma», de Layla Martínez.",
+ "duration": 3.84,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "cuatro:",
+   "s": 0.48,
+   "e": 1.36
+  },
+  {
+   "w": "«Carcoma»,",
+   "s": 1.467,
+   "e": 2.4
+  },
+  {
+   "w": "de",
+   "s": 2.48,
+   "e": 2.56
+  },
+  {
+   "w": "Layla",
+   "s": 2.64,
+   "e": 2.96
+  },
+  {
+   "w": "Martínez.",
+   "s": 3.08,
+   "e": 3.84
+  }
+ ],
+ "speechEnd": 3.668
+}

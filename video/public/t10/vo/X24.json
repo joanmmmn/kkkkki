@@ -1,0 +1,144 @@
+{
+ "id": "X24",
+ "hash": "fcb418f6747a",
+ "text": "La gran recopilación, «Cuentos extraordinarios», con treinta y siete relatos, la narra Jordi Boixaderas en Audible, y los oyentes le dan un cuatro coma seis sobre cinco.",
+ "duration": 10.96,
+ "words": [
+  {
+   "w": "La",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "gran",
+   "s": 0.16,
+   "e": 0.4
+  },
+  {
+   "w": "recopilación,",
+   "s": 0.48,
+   "e": 1.6
+  },
+  {
+   "w": "«Cuentos",
+   "s": 1.627,
+   "e": 2.0
+  },
+  {
+   "w": "extraordinarios»,",
+   "s": 2.08,
+   "e": 3.36
+  },
+  {
+   "w": "con",
+   "s": 3.48,
+   "e": 3.6
+  },
+  {
+   "w": "treinta",
+   "s": 3.68,
+   "e": 3.92
+  },
+  {
+   "w": "y",
+   "s": 4.0,
+   "e": 4.08
+  },
+  {
+   "w": "siete",
+   "s": 4.16,
+   "e": 4.32
+  },
+  {
+   "w": "relatos,",
+   "s": 4.4,
+   "e": 5.28
+  },
+  {
+   "w": "la",
+   "s": 5.36,
+   "e": 5.44
+  },
+  {
+   "w": "narra",
+   "s": 5.52,
+   "e": 5.76
+  },
+  {
+   "w": "Jordi",
+   "s": 5.84,
+   "e": 6.12
+  },
+  {
+   "w": "Boixaderas",
+   "s": 6.16,
+   "e": 6.8
+  },
+  {
+   "w": "en",
+   "s": 6.88,
+   "e": 6.96
+  },
+  {
+   "w": "Audible,",
+   "s": 7.04,
+   "e": 7.68
+  },
+  {
+   "w": "y",
+   "s": 7.72,
+   "e": 7.76
+  },
+  {
+   "w": "los",
+   "s": 7.84,
+   "e": 7.92
+  },
+  {
+   "w": "oyentes",
+   "s": 8.0,
+   "e": 8.4
+  },
+  {
+   "w": "le",
+   "s": 8.48,
+   "e": 8.56
+  },
+  {
+   "w": "dan",
+   "s": 8.64,
+   "e": 8.72
+  },
+  {
+   "w": "un",
+   "s": 8.84,
+   "e": 8.96
+  },
+  {
+   "w": "cuatro",
+   "s": 9.0,
+   "e": 9.2
+  },
+  {
+   "w": "coma",
+   "s": 9.28,
+   "e": 9.44
+  },
+  {
+   "w": "seis",
+   "s": 9.52,
+   "e": 9.76
+  },
+  {
+   "w": "sobre",
+   "s": 9.8,
+   "e": 10.08
+  },
+  {
+   "w": "cinco.",
+   "s": 10.16,
+   "e": 10.96
+  }
+ ],
+ "speechEnd": 10.575
+}

@@ -1,0 +1,49 @@
+{
+ "id": "X101",
+ "hash": "0c70c5ef1458",
+ "text": "Número uno: «El exorcista», de William Peter Blatty.",
+ "duration": 4.64,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "uno:",
+   "s": 0.48,
+   "e": 1.2
+  },
+  {
+   "w": "«El",
+   "s": 1.24,
+   "e": 1.36
+  },
+  {
+   "w": "exorcista»,",
+   "s": 1.44,
+   "e": 2.48
+  },
+  {
+   "w": "de",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "William",
+   "s": 2.72,
+   "e": 3.04
+  },
+  {
+   "w": "Peter",
+   "s": 3.2,
+   "e": 3.52
+  },
+  {
+   "w": "Blatty.",
+   "s": 3.6,
+   "e": 4.64
+  }
+ ],
+ "speechEnd": 4.087
+}

@@ -1,0 +1,149 @@
+{
+ "id": "X14",
+ "hash": "1e7483a026a5",
+ "text": "Escúchalo con Benjamín Figueres: castellano, sin prisas, como quien lee un informe que no debería haber encontrado. Dura solo dos horas y está en casi todas las plataformas.",
+ "duration": 12.8,
+ "words": [
+  {
+   "w": "Escúchalo",
+   "s": 0.0,
+   "e": 0.64
+  },
+  {
+   "w": "con",
+   "s": 0.72,
+   "e": 0.88
+  },
+  {
+   "w": "Benjamín",
+   "s": 0.96,
+   "e": 1.52
+  },
+  {
+   "w": "Figueres:",
+   "s": 1.6,
+   "e": 2.48
+  },
+  {
+   "w": "castellano,",
+   "s": 2.6,
+   "e": 3.44
+  },
+  {
+   "w": "sin",
+   "s": 3.52,
+   "e": 3.68
+  },
+  {
+   "w": "prisas,",
+   "s": 3.76,
+   "e": 4.56
+  },
+  {
+   "w": "como",
+   "s": 4.68,
+   "e": 4.8
+  },
+  {
+   "w": "quien",
+   "s": 4.84,
+   "e": 5.04
+  },
+  {
+   "w": "lee",
+   "s": 5.12,
+   "e": 5.2
+  },
+  {
+   "w": "un",
+   "s": 5.24,
+   "e": 5.28
+  },
+  {
+   "w": "informe",
+   "s": 5.36,
+   "e": 5.84
+  },
+  {
+   "w": "que",
+   "s": 6.0,
+   "e": 6.08
+  },
+  {
+   "w": "no",
+   "s": 6.16,
+   "e": 6.24
+  },
+  {
+   "w": "debería",
+   "s": 6.32,
+   "e": 6.72
+  },
+  {
+   "w": "haber",
+   "s": 6.8,
+   "e": 6.96
+  },
+  {
+   "w": "encontrado.",
+   "s": 7.04,
+   "e": 8.16
+  },
+  {
+   "w": "Dura",
+   "s": 8.24,
+   "e": 8.4
+  },
+  {
+   "w": "solo",
+   "s": 8.48,
+   "e": 8.72
+  },
+  {
+   "w": "dos",
+   "s": 8.8,
+   "e": 8.96
+  },
+  {
+   "w": "horas",
+   "s": 9.04,
+   "e": 9.36
+  },
+  {
+   "w": "y",
+   "s": 9.68,
+   "e": 9.72
+  },
+  {
+   "w": "está",
+   "s": 9.76,
+   "e": 10.0
+  },
+  {
+   "w": "en",
+   "s": 10.08,
+   "e": 10.16
+  },
+  {
+   "w": "casi",
+   "s": 10.267,
+   "e": 10.48
+  },
+  {
+   "w": "todas",
+   "s": 10.56,
+   "e": 10.88
+  },
+  {
+   "w": "las",
+   "s": 10.96,
+   "e": 11.04
+  },
+  {
+   "w": "plataformas.",
+   "s": 11.12,
+   "e": 12.8
+  }
+ ],
+ "speechEnd": 11.914
+}

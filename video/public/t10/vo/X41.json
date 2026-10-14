@@ -1,0 +1,49 @@
+{
+ "id": "X41",
+ "hash": "acaea7ab577d",
+ "text": "Número siete: «Distancia de rescate», de Samanta Schweblin.",
+ "duration": 5.04,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "siete:",
+   "s": 0.48,
+   "e": 1.28
+  },
+  {
+   "w": "«Distancia",
+   "s": 1.36,
+   "e": 2.0
+  },
+  {
+   "w": "de",
+   "s": 2.04,
+   "e": 2.08
+  },
+  {
+   "w": "rescate»,",
+   "s": 2.16,
+   "e": 3.04
+  },
+  {
+   "w": "de",
+   "s": 3.12,
+   "e": 3.2
+  },
+  {
+   "w": "Samanta",
+   "s": 3.28,
+   "e": 3.76
+  },
+  {
+   "w": "Schweblin.",
+   "s": 3.84,
+   "e": 5.04
+  }
+ ],
+ "speechEnd": 4.516
+}

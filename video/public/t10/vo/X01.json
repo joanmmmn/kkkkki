@@ -1,0 +1,29 @@
+{
+ "id": "X01",
+ "hash": "c1b02e327a8b",
+ "text": "Hay libros que asustan.",
+ "duration": 1.68,
+ "words": [
+  {
+   "w": "Hay",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "libros",
+   "s": 0.36,
+   "e": 0.72
+  },
+  {
+   "w": "que",
+   "s": 0.76,
+   "e": 0.8
+  },
+  {
+   "w": "asustan.",
+   "s": 0.88,
+   "e": 1.68
+  }
+ ],
+ "speechEnd": 1.68
+}

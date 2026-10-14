@@ -1,0 +1,99 @@
+{
+ "id": "X23",
+ "hash": "a68d3da6178d",
+ "text": "Casi doscientos años después, siguen funcionando igual de bien. Y son cortos: perfectos para escuchar uno cada noche.",
+ "duration": 8.64,
+ "words": [
+  {
+   "w": "Casi",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "doscientos",
+   "s": 0.32,
+   "e": 0.88
+  },
+  {
+   "w": "años",
+   "s": 0.96,
+   "e": 1.2
+  },
+  {
+   "w": "después,",
+   "s": 1.32,
+   "e": 2.08
+  },
+  {
+   "w": "siguen",
+   "s": 2.16,
+   "e": 2.48
+  },
+  {
+   "w": "funcionando",
+   "s": 2.6,
+   "e": 3.12
+  },
+  {
+   "w": "igual",
+   "s": 3.2,
+   "e": 3.44
+  },
+  {
+   "w": "de",
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "bien.",
+   "s": 3.64,
+   "e": 4.4
+  },
+  {
+   "w": "Y",
+   "s": 4.48,
+   "e": 4.56
+  },
+  {
+   "w": "son",
+   "s": 4.68,
+   "e": 4.8
+  },
+  {
+   "w": "cortos:",
+   "s": 4.84,
+   "e": 5.68
+  },
+  {
+   "w": "perfectos",
+   "s": 5.92,
+   "e": 6.32
+  },
+  {
+   "w": "para",
+   "s": 6.4,
+   "e": 6.48
+  },
+  {
+   "w": "escuchar",
+   "s": 6.6,
+   "e": 7.12
+  },
+  {
+   "w": "uno",
+   "s": 7.2,
+   "e": 7.44
+  },
+  {
+   "w": "cada",
+   "s": 7.52,
+   "e": 7.68
+  },
+  {
+   "w": "noche.",
+   "s": 7.76,
+   "e": 8.64
+  }
+ ],
+ "speechEnd": 8.239
+}

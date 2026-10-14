@@ -1,0 +1,79 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 9740,
+ "end_frame": 17795,
+ "levels": [
+  -16.0
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic horror score for a premium YouTube countdown of the scariest horror books",
+   "key of C minor, around 80 BPM unless stated otherwise",
+   "low cello drones, prepared piano, detuned music box, bowed metal textures, soft deep taiko-like hits, subtle sub bass",
+   "tense, eerie and atmospheric but elegant and premium, never cheesy",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "whispers",
+   "screams",
+   "jump scare stingers",
+   "EDM",
+   "dubstep",
+   "distortion",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle",
+   "comedic",
+   "happy"
+  ],
+  "sections": [
+   {
+    "section_name": "Suspense B 1",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "same palette with more tension: clock-like ticking percussion, pulsing synth bass and string tremolo swells",
+     "darker and more urgent",
+     "a continuous pulse that never stops",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "breaks",
+     "pauses",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 91550,
+    "lines": []
+   },
+   {
+    "section_name": "Suspense B 2",
+    "positive_local_styles": [
+     "same palette with more tension: clock-like ticking percussion, pulsing synth bass and string tremolo swells",
+     "darker and more urgent",
+     "a continuous pulse that never stops",
+     "keeps playing at full energy until the very last second, no ending",
+     "continues the same theme seamlessly, same tempo and instruments, no break"
+    ],
+    "negative_local_styles": [
+     "breaks",
+     "pauses",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 91550,
+    "lines": []
+   }
+  ]
+ }
+}
