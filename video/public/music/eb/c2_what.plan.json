@@ -1,0 +1,85 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "bright daytime explainer score for a friendly public library service, warm illustrated world, playful but elegant, premium",
+   "instrumental",
+   "tempo 92 BPM",
+   "felt piano arpeggios, pizzicato strings, soft marimba, warm bass, light shaker and soft kick",
+   "clever, warm, explanatory",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech, music plays continuously without gaps until the very end"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "dark",
+   "horror",
+   "sad",
+   "whistling",
+   "kazoo",
+   "silence",
+   "long pauses",
+   "breaks",
+   "stops"
+  ],
+  "sections": [
+   {
+    "section_name": "Chapter one: a door opens",
+    "positive_local_styles": [
+     "short door-opening flourish then a curious piano and pizzicato motif",
+     "light and elegant"
+    ],
+    "negative_local_styles": [
+     "heavy drums",
+     "tense"
+    ],
+    "duration_ms": 14060,
+    "lines": []
+   },
+   {
+    "section_name": "Copies and queues, like the library",
+    "positive_local_styles": [
+     "playful plucky rhythm, marimba and pizzicato interlocking",
+     "gentle humor"
+    ],
+    "negative_local_styles": [
+     "aggressive"
+    ],
+    "duration_ms": 11620,
+    "lines": []
+   },
+   {
+    "section_name": "Every region has its own eBiblio",
+    "positive_local_styles": [
+     "warm build with soft strings over the pulse",
+     "a map lighting up, discovery"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 16640,
+    "lines": []
+   },
+   {
+    "section_name": "Chapter two: the library card",
+    "positive_local_styles": [
+     "bright and simple, light claps",
+     "friendly, easy",
+     "ends gently"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 16320,
+    "lines": []
+   }
+  ]
+ }
+}

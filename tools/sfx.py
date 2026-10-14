@@ -70,6 +70,22 @@ KIT = {
     'phone_whoosh': ('Smartphone sliding into view with a soft airy whoosh and a tiny glass tick at the end', 0.8, 0.6),
     'file_pop': ('Small paper file popping out of a page with a soft paper flick and a tiny airy pop, close up', 0.5, 0.7),
     'ink_bloom': ('Soft wet ink drop spreading on paper, gentle organic swish, close up, quiet', 0.9, 0.6),
+    # Vídeo de eBiblio («la puerta»): puertas, carné, turnos, recibos y móvil, en un mundo de día y plano.
+    'nfc_beep': ('Contactless card reader accepting a card: one short friendly high electronic beep with a tiny plastic tap, clean, dry', 0.5, 0.75),
+    'door_open': ('Wooden door latch clicking open followed by a short soft hinge creak as the door swings inward, warm room tone, close up, clean', 1.3, 0.65),
+    'door_thud': ('Wooden door closing softly with a muffled thud and a small latch click, close up, clean', 0.7, 0.7),
+    'light_swell': ('Warm bright airy swell of light flooding a room, soft shimmering pad rising and fading, magical but subtle, no melody', 1.6, 0.55),
+    'ticket_pull': ('Paper number ticket pulled from a take-a-number dispenser, quick paper tear with a small plastic click, close up, dry', 0.6, 0.75),
+    'service_bell': ('Small desk service bell ding, bright single ring with short decay, close up, clean', 1.0, 0.7),
+    'envelope': ('An email notification whoosh: a paper envelope flying in and landing on a desk with a crisp paper flap, close up, clear and present', 1.0, 0.6),
+    'unlock': ('Small metal padlock unlocking, crisp mechanical click with a tiny spring, close up, dry', 0.5, 0.75),
+    'calendar_flip': ('Fast flipping of the pages of a small tear-off desk calendar, rapid crisp paper flicks, close up', 1.2, 0.7),
+    'pocket_slide': ('Smartphone sliding into a jeans pocket, soft fabric rustle and swish, close up, dry', 0.7, 0.7),
+    'sticker_slap': ('Thick vinyl sticker slapped onto a surface by hand, short satisfying pat with a tiny paper crackle, close up, dry', 0.5, 0.75),
+    'cardboard_pop': ('Flat cardboard cut-out shape popping up into place, light cardboard flap with a tiny bounce, playful, close up, dry', 0.5, 0.75),
+    'map_rise': ('Stack of small wooden blocks rising and clicking into place one after another, soft playful wooden taps, close up', 1.2, 0.65),
+    'crowd_soft': ('Very soft murmur of a small queue of people waiting in a quiet public library, a few footsteps, distant, gentle', 2.0, 0.55),
+    'keys_type': ('Soft quick typing on a smartphone touch keyboard, light taps, close up, dry', 0.9, 0.7),
 }
 
 

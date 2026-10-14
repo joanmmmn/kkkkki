@@ -1,0 +1,168 @@
+{
+ "id": "B04",
+ "hash": "8dd38e23e19f",
+ "text": "eBiblio es el préstamo digital de las bibliotecas públicas. Lo pone en marcha el Ministerio de Cultura con las comunidades autónomas, y es gratis para ti: los audiolibros los paga la biblioteca.",
+ "duration": 12.32,
+ "words": [
+  {
+   "w": "eBiblio",
+   "s": 0.0,
+   "e": 0.64
+  },
+  {
+   "w": "es",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "el",
+   "s": 0.88,
+   "e": 1.04
+  },
+  {
+   "w": "préstamo",
+   "s": 1.08,
+   "e": 1.44
+  },
+  {
+   "w": "digital",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "de",
+   "s": 1.96,
+   "e": 2.0
+  },
+  {
+   "w": "las",
+   "s": 2.08,
+   "e": 2.16
+  },
+  {
+   "w": "bibliotecas",
+   "s": 2.24,
+   "e": 2.88
+  },
+  {
+   "w": "públicas.",
+   "s": 2.92,
+   "e": 3.893
+  },
+  {
+   "w": "Lo",
+   "s": 3.947,
+   "e": 4.0
+  },
+  {
+   "w": "pone",
+   "s": 4.08,
+   "e": 4.16
+  },
+  {
+   "w": "en",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "marcha",
+   "s": 4.36,
+   "e": 4.64
+  },
+  {
+   "w": "el",
+   "s": 4.68,
+   "e": 4.72
+  },
+  {
+   "w": "Ministerio",
+   "s": 4.8,
+   "e": 5.28
+  },
+  {
+   "w": "de",
+   "s": 5.32,
+   "e": 5.36
+  },
+  {
+   "w": "Cultura",
+   "s": 5.4,
+   "e": 5.84
+  },
+  {
+   "w": "con",
+   "s": 5.92,
+   "e": 6.0
+  },
+  {
+   "w": "las",
+   "s": 6.08,
+   "e": 6.16
+  },
+  {
+   "w": "comunidades",
+   "s": 6.24,
+   "e": 6.8
+  },
+  {
+   "w": "autónomas,",
+   "s": 6.88,
+   "e": 7.72
+  },
+  {
+   "w": "y",
+   "s": 7.76,
+   "e": 7.84
+  },
+  {
+   "w": "es",
+   "s": 7.96,
+   "e": 8.08
+  },
+  {
+   "w": "gratis",
+   "s": 8.32,
+   "e": 8.56
+  },
+  {
+   "w": "para",
+   "s": 8.68,
+   "e": 8.8
+  },
+  {
+   "w": "ti:",
+   "s": 9.08,
+   "e": 9.4
+  },
+  {
+   "w": "los",
+   "s": 9.44,
+   "e": 9.6
+  },
+  {
+   "w": "audiolibros",
+   "s": 9.68,
+   "e": 10.48
+  },
+  {
+   "w": "los",
+   "s": 10.6,
+   "e": 10.72
+  },
+  {
+   "w": "paga",
+   "s": 10.8,
+   "e": 11.04
+  },
+  {
+   "w": "la",
+   "s": 11.08,
+   "e": 11.12
+  },
+  {
+   "w": "biblioteca.",
+   "s": 11.2,
+   "e": 12.32
+  }
+ ]
+}

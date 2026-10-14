@@ -1,0 +1,2 @@
+# Máster del vídeo de eBiblio en Git LFS (supera los 100 MB de GitHub)
+deliverables/ebiblio/SonorBooks_eBiblio_Guia_1080p.mp4 filter=lfs diff=lfs merge=lfs -text

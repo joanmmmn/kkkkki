@@ -9,6 +9,15 @@ const faces: Array<[string, string, string, string]> = [
   ['Ubuntu', 'Ubuntu-700', '700', 'normal'],
   ['EB Garamond', 'EBGaramond-400', '400 500', 'normal'],
   ['EB Garamond', 'EBGaramond-400i', '400 500', 'italic'],
+  // eBiblio: Poppins (titulares de su identidad) y Roboto (recreaciones de la app de Android)
+  ['Poppins', 'Poppins-400', '400', 'normal'],
+  ['Poppins', 'Poppins-500', '500', 'normal'],
+  ['Poppins', 'Poppins-600', '600', 'normal'],
+  ['Poppins', 'Poppins-700', '700', 'normal'],
+  ['Poppins', 'Poppins-800', '800', 'normal'],
+  ['Roboto', 'Roboto-400', '400', 'normal'],
+  ['Roboto', 'Roboto-500', '500', 'normal'],
+  ['Roboto', 'Roboto-700', '700', 'normal'],
 ];
 
 let loaded = false;

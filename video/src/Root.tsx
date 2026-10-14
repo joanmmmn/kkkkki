@@ -20,11 +20,17 @@ import { LVCover } from './scenes/lv/Cover';
 import { LVGuideCover } from './scenes/lv3/Cover';
 import { SetPlate } from './scenes/lv3/set';
 import { LibriVoxGuide, LV3_TOTAL } from './scenes/lv3/Main';
+import { EbiblioGuide, EB_TOTAL } from './scenes/eb/Main';
+import { EBCover } from './scenes/eb/Cover';
 import { Cover } from './scenes/elt2/Cover';
 import { CoverProposal } from './scenes/elt2/CoverProposal';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="EBGuide" component={EbiblioGuide} durationInFrames={EB_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="EBCover" component={EBCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="EBCover1080" component={EBCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
+    <Composition id="EBCoverOG" component={EBCover} durationInFrames={1} fps={FPS} width={1200} height={630} />
     <Composition id="LVGuide" component={LibriVoxGuide} durationInFrames={LV3_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="LVReview" component={LibriVoxReview} durationInFrames={LV_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="LVCover" component={LVCover} durationInFrames={1} fps={FPS} width={1280} height={720} />

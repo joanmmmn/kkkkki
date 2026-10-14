@@ -28,3 +28,9 @@ web/librivox-resena/preview-movil/
 # Capturas y portadas originales de LibriVox: las mismas imágenes están en video/public/lv (web/ e img/)
 captures/librivox/web/
 captures/librivox/covers/
+# eBiblio: salidas de build.py y vídeos ligeros (vista previa y web); el máster 1080p va en Git LFS (.gitattributes)
+web/ebiblio-resena/dist/
+web/ebiblio-resena/preview/
+web/ebiblio-resena/preview-movil/
+deliverables/ebiblio/*_vista_previa_720p.mp4
+deliverables/ebiblio/*_web.mp4

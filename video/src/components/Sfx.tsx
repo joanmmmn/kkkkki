@@ -13,7 +13,9 @@ export type SfxName =
   | 'whip' | 'swish_up' | 'mouse_click' | 'scroll' | 'glass_ping' | 'paper_slide' | 'pop_bright' | 'ff_scrub' | 'notify'
   | 'receipt' | 'switch' | 'magnify' | 'score_ding' | 'glitch' | 'tick_fast' | 'boom_soft' | 'swoosh_down'
   | 'book_open' | 'page_turn_big' | 'lights_on' | 'reveal_whoosh' | 'dust_shimmer' | 'pen_scratch' | 'pen_underline' | 'paper_lift'
-  | 'card_drop' | 'date_stamp' | 'deep_whoosh' | 'soft_impact' | 'phone_whoosh' | 'file_pop' | 'ink_bloom';
+  | 'card_drop' | 'date_stamp' | 'deep_whoosh' | 'soft_impact' | 'phone_whoosh' | 'file_pop' | 'ink_bloom'
+  | 'nfc_beep' | 'door_open' | 'door_thud' | 'light_swell' | 'ticket_pull' | 'service_bell' | 'envelope' | 'unlock' | 'calendar_flip'
+  | 'pocket_slide' | 'sticker_slap' | 'cardboard_pop' | 'map_rise' | 'crowd_soft' | 'keys_type';
 
 // Mezcla: todos los archivos están normalizados a -1 dBFS de pico; GAIN iguala la sonoridad percibida
 // y SYNC es el instante (s) del golpe dentro del archivo, para que caiga justo en el fotograma `at`.
@@ -28,6 +30,9 @@ const GAIN: Record<SfxName, number> = {
   // LibriVox, vídeo por capítulos (igualados por sonoridad medida: unos −27 a −33 LUFS bajo una voz a −18)
   book_open: 0.5, page_turn_big: 0.8, lights_on: 0.49, reveal_whoosh: 0.15, dust_shimmer: 0.07, pen_scratch: 0.27, pen_underline: 0.14,
   paper_lift: 0.16, card_drop: 0.28, date_stamp: 0.8, deep_whoosh: 0.18, soft_impact: 1.0, phone_whoosh: 0.13, file_pop: 0.45, ink_bloom: 0.24,
+  // eBiblio («la puerta»): igualados por sonoridad momentánea máxima medida (unos −25 a −29 LUFS; ambientes −34)
+  nfc_beep: 0.47, door_open: 0.56, door_thud: 0.39, light_swell: 0.07, ticket_pull: 0.17, service_bell: 0.24, envelope: 0.5, unlock: 0.51,
+  calendar_flip: 0.36, pocket_slide: 0.28, sticker_slap: 1.0, cardboard_pop: 0.32, map_rise: 0.64, crowd_soft: 0.08, keys_type: 0.36,
 };
 const SYNC: Partial<Record<SfxName, number>> = {
   card_flip: 0.19, coins: 0.12, impact: 0.05, page_turn: 0.38, pencil_strike: 0.1, reverse_swell: 1.17, riser: 1.66,

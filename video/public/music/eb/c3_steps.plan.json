@@ -1,0 +1,95 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "bright daytime explainer score for a friendly public library service, warm illustrated world, playful but elegant, premium",
+   "instrumental",
+   "tempo 108 BPM",
+   "modern light underscore: felt piano ostinato, plucked strings, marimba, soft electronic percussion, warm bass, subtle glassy plucks",
+   "practical, smooth, confident momentum",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech, music plays continuously without gaps until the very end"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "dark",
+   "horror",
+   "sad",
+   "whistling",
+   "kazoo",
+   "silence",
+   "long pauses",
+   "breaks",
+   "stops"
+  ],
+  "sections": [
+   {
+    "section_name": "Chapter three: step one",
+    "positive_local_styles": [
+     "short door-opening flourish then the ostinato starts",
+     "clean and clear"
+    ],
+    "negative_local_styles": [
+     "slow",
+     "dark"
+    ],
+    "duration_ms": 11740,
+    "lines": []
+   },
+   {
+    "section_name": "Step two: search",
+    "positive_local_styles": [
+     "same groove, a layer of light plucks added"
+    ],
+    "negative_local_styles": [
+     "busy"
+    ],
+    "duration_ms": 9720,
+    "lines": []
+   },
+   {
+    "section_name": "Step three: borrow or reserve",
+    "positive_local_styles": [
+     "groove continues, slightly fuller with soft strings",
+     "satisfying"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 14660,
+    "lines": []
+   },
+   {
+    "section_name": "Step four: listen",
+    "positive_local_styles": [
+     "groove continues with a light airy synth layer",
+     "modern, fresh"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 14560,
+    "lines": []
+   },
+   {
+    "section_name": "It returns itself after 21 days",
+    "positive_local_styles": [
+     "lighter, playful, a little bounce",
+     "ends gently"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 10720,
+    "lines": []
+   }
+  ]
+ }
+}

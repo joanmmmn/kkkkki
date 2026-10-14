@@ -1,0 +1,87 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "bright daytime explainer score for a friendly public library service, warm illustrated world, playful but elegant, premium",
+   "instrumental",
+   "tempo 100 BPM",
+   "pizzicato strings, marimba, glockenspiel, warm upright bass, soft brushed drums, light hand claps, felt piano",
+   "curious then joyful and bright",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech, music plays continuously without gaps until the very end"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "dark",
+   "horror",
+   "sad",
+   "whistling",
+   "kazoo",
+   "silence",
+   "long pauses",
+   "breaks",
+   "stops"
+  ],
+  "sections": [
+   {
+    "section_name": "A door opens to a bright library",
+    "positive_local_styles": [
+     "starts with light curious pizzicato and a soft tick of percussion (a card beeps at a door)",
+     "at 2.9 s a warm swell as the door opens, then a bright marimba and pizzicato groove",
+     "wonder, sunshine"
+    ],
+    "negative_local_styles": [
+     "dark",
+     "big drums"
+    ],
+    "duration_ms": 9640,
+    "lines": []
+   },
+   {
+    "section_name": "Half a million loans, free",
+    "positive_local_styles": [
+     "groove continues with hand claps and glockenspiel",
+     "confident and cheerful",
+     "small build at the end"
+    ],
+    "negative_local_styles": [
+     "tense"
+    ],
+    "duration_ms": 6012,
+    "lines": []
+   },
+   {
+    "section_name": "This is eBiblio, in your pocket",
+    "positive_local_styles": [
+     "bright warm chord hit with glockenspiel sparkle right at the start, then light groove",
+     "feel-good"
+    ],
+    "negative_local_styles": [
+     "silence"
+    ],
+    "duration_ms": 4748,
+    "lines": []
+   },
+   {
+    "section_name": "A corridor of doors: what you will learn",
+    "positive_local_styles": [
+     "steady light groove, walking feel, pizzicato and marimba",
+     "inviting, clear",
+     "ends on a small lift"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 17560,
+    "lines": []
+   }
+  ]
+ }
+}

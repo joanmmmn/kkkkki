@@ -1,0 +1,95 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "bright daytime explainer score for a friendly public library service, warm illustrated world, playful but elegant, premium",
+   "instrumental",
+   "tempo 96 BPM",
+   "felt piano, pizzicato strings, marimba, warm strings, soft percussion, glockenspiel",
+   "wry and thoughtful, then uplifting and warm resolution",
+   "mix leaves plenty of space for a spoken voice-over in the mid range, no lead melody competing with speech, music plays continuously without gaps until the very end"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "humming",
+   "distortion",
+   "dubstep",
+   "EDM drop",
+   "trap hi-hats",
+   "harsh high frequencies",
+   "rock guitars",
+   "dark",
+   "horror",
+   "sad",
+   "whistling",
+   "kazoo",
+   "silence",
+   "long pauses",
+   "breaks",
+   "stops"
+  ],
+  "sections": [
+   {
+    "section_name": "Chapter four: the queues",
+    "positive_local_styles": [
+     "short door flourish then a wry, slightly mischievous pizzicato with a hint of minor",
+     "waiting in line, humorous"
+    ],
+    "negative_local_styles": [
+     "dark",
+     "scary"
+    ],
+    "duration_ms": 12580,
+    "lines": []
+   },
+   {
+    "section_name": "But there is a trick",
+    "positive_local_styles": [
+     "brightens: major key, lights turning on, marimba and claps",
+     "relief and delight"
+    ],
+    "negative_local_styles": [
+     "tense"
+    ],
+    "duration_ms": 11480,
+    "lines": []
+   },
+   {
+    "section_name": "How many at once, most borrowed",
+    "positive_local_styles": [
+     "light steady groove, glockenspiel sparkle at the end"
+    ],
+    "negative_local_styles": [
+     "heavy"
+    ],
+    "duration_ms": 9620,
+    "lines": []
+   },
+   {
+    "section_name": "Chapter five: the verdict",
+    "positive_local_styles": [
+     "short door flourish then a warm build with strings and piano",
+     "confident and satisfying, a soft chime at the end"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 17600,
+    "lines": []
+   },
+   {
+    "section_name": "Outro",
+    "positive_local_styles": [
+     "warm resolving main theme",
+     "final bright chord then soft decay to silence"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 12800,
+    "lines": []
+   }
+  ]
+ }
+}
