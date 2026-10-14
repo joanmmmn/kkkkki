@@ -1,0 +1,39 @@
+{
+ "id": "J07",
+ "hash": "e6af017656f7",
+ "text": "Busca tu próximo libro en SonorBooks.",
+ "duration": 2.88,
+ "words": [
+  {
+   "w": "Busca",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "tu",
+   "s": 0.4,
+   "e": 0.48
+  },
+  {
+   "w": "próximo",
+   "s": 0.56,
+   "e": 0.96
+  },
+  {
+   "w": "libro",
+   "s": 1.08,
+   "e": 1.44
+  },
+  {
+   "w": "en",
+   "s": 1.52,
+   "e": 1.68
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 1.76,
+   "e": 2.88
+  }
+ ],
+ "speechEnd": 2.581
+}

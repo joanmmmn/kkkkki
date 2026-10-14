@@ -26,12 +26,19 @@ import { StorytelReview } from './scenes/str/Main';
 import { STR_TOTAL } from './scenes/str/timeline';
 import { STRThumb } from './scenes/str/Thumb';
 import { StorytelReviewShort, STR_SHORT_TOTAL } from './scenes/str/Short';
+import { AudibleReview } from './scenes/aud/Main';
+import { AUDThumb } from './scenes/aud/Thumb';
+import { AudibleReviewShort, AUD_SHORT_TOTAL } from './scenes/aud/Short';
+import { AUD_TOTAL } from './scenes/aud/timeline';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STRShort" component={StorytelReviewShort} durationInFrames={STR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
+    <Composition id="AUReview" component={AudibleReview} durationInFrames={AUD_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="AUDThumb" component={AUDThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="AUDShort" component={AudibleReviewShort} durationInFrames={AUD_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
     <Composition id="PDReview" component={PodimoReview} durationInFrames={PDR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="PDRThumb" component={PDRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="PDRShort" component={PodimoReviewShort} durationInFrames={PDR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

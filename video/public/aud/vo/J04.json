@@ -1,0 +1,69 @@
+{
+ "id": "J04",
+ "hash": "1b6eb6e61c1c",
+ "text": "Lo mejor: sus Originals, como Drácula, con Claudia Salas y Asier Etxeandia.",
+ "duration": 5.76,
+ "words": [
+  {
+   "w": "Lo",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "mejor:",
+   "s": 0.24,
+   "e": 0.96
+  },
+  {
+   "w": "sus",
+   "s": 1.08,
+   "e": 1.2
+  },
+  {
+   "w": "Originals,",
+   "s": 1.48,
+   "e": 2.08
+  },
+  {
+   "w": "como",
+   "s": 2.2,
+   "e": 2.32
+  },
+  {
+   "w": "Drácula,",
+   "s": 2.4,
+   "e": 3.04
+  },
+  {
+   "w": "con",
+   "s": 3.12,
+   "e": 3.28
+  },
+  {
+   "w": "Claudia",
+   "s": 3.36,
+   "e": 3.68
+  },
+  {
+   "w": "Salas",
+   "s": 3.76,
+   "e": 4.16
+  },
+  {
+   "w": "y",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "Asier",
+   "s": 4.44,
+   "e": 4.64
+  },
+  {
+   "w": "Etxeandia.",
+   "s": 4.72,
+   "e": 5.76
+  }
+ ],
+ "speechEnd": 5.437
+}

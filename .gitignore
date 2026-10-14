@@ -25,3 +25,8 @@ web/podimo-resena/preview-movil/
 web/storytel-resena/dist/
 web/storytel-resena/preview/
 web/storytel-resena/preview-movil/
+
+# Página de reseña de Audible: salidas de build.py (se generan con web/audible-resena/build.py)
+web/audible-resena/dist/
+web/audible-resena/preview/
+web/audible-resena/preview-movil/

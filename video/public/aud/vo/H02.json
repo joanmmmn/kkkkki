@@ -1,0 +1,164 @@
+{
+ "id": "H02",
+ "hash": "4aaa31ab6ec8",
+ "text": "Actívalos desde nuestra página de plataformas o desde la ficha de cualquier libro que esté en Audible. Te dejamos en la descripción el enlace directo y la reseña completa por escrito.",
+ "duration": 10.64,
+ "words": [
+  {
+   "w": "Actívalos",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "desde",
+   "s": 0.64,
+   "e": 0.8
+  },
+  {
+   "w": "nuestra",
+   "s": 0.84,
+   "e": 1.12
+  },
+  {
+   "w": "página",
+   "s": 1.2,
+   "e": 1.52
+  },
+  {
+   "w": "de",
+   "s": 1.56,
+   "e": 1.6
+  },
+  {
+   "w": "plataformas",
+   "s": 1.68,
+   "e": 2.48
+  },
+  {
+   "w": "o",
+   "s": 2.52,
+   "e": 2.56
+  },
+  {
+   "w": "desde",
+   "s": 2.64,
+   "e": 2.88
+  },
+  {
+   "w": "la",
+   "s": 2.92,
+   "e": 2.96
+  },
+  {
+   "w": "ficha",
+   "s": 3.04,
+   "e": 3.28
+  },
+  {
+   "w": "de",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "cualquier",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "libro",
+   "s": 3.92,
+   "e": 4.24
+  },
+  {
+   "w": "que",
+   "s": 4.32,
+   "e": 4.4
+  },
+  {
+   "w": "esté",
+   "s": 4.52,
+   "e": 4.72
+  },
+  {
+   "w": "en",
+   "s": 4.76,
+   "e": 4.8
+  },
+  {
+   "w": "Audible.",
+   "s": 4.88,
+   "e": 5.8
+  },
+  {
+   "w": "Te",
+   "s": 5.84,
+   "e": 5.92
+  },
+  {
+   "w": "dejamos",
+   "s": 6.0,
+   "e": 6.32
+  },
+  {
+   "w": "en",
+   "s": 6.36,
+   "e": 6.4
+  },
+  {
+   "w": "la",
+   "s": 6.44,
+   "e": 6.48
+  },
+  {
+   "w": "descripción",
+   "s": 6.56,
+   "e": 7.12
+  },
+  {
+   "w": "el",
+   "s": 7.16,
+   "e": 7.2
+  },
+  {
+   "w": "enlace",
+   "s": 7.28,
+   "e": 7.68
+  },
+  {
+   "w": "directo",
+   "s": 7.88,
+   "e": 8.24
+  },
+  {
+   "w": "y",
+   "s": 8.28,
+   "e": 8.32
+  },
+  {
+   "w": "la",
+   "s": 8.4,
+   "e": 8.48
+  },
+  {
+   "w": "reseña",
+   "s": 8.64,
+   "e": 8.96
+  },
+  {
+   "w": "completa",
+   "s": 9.08,
+   "e": 9.52
+  },
+  {
+   "w": "por",
+   "s": 9.56,
+   "e": 9.6
+  },
+  {
+   "w": "escrito.",
+   "s": 9.68,
+   "e": 10.64
+  }
+ ],
+ "speechEnd": 10.237
+}

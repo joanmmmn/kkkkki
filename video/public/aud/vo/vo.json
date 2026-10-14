@@ -1,0 +1,119 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "G01",
+   "text": "¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis."
+  },
+  {
+   "id": "G02",
+   "text": "¿Qué es Audible? La app de audiolibros de Amazon, que llegó a España en dos mil veinte. Con su plan Premium escuchas todo lo que quieras de su catálogo incluido, sin límite de horas: más de noventa mil títulos, entre audiolibros, pódcasts y producciones propias."
+  },
+  {
+   "id": "G03",
+   "text": "Tiene dos planes. Premium: nueve noventa y nueve al mes, para escuchar sin límite. Y Standard: seis noventa y nueve, para elegir un audiolibro al mes, que escuchas mientras sigas suscrito. Los dos, sin permanencia; no hay plan anual ni familiar."
+  },
+  {
+   "id": "G04",
+   "text": "Pero ojo: Premium no lo incluye todo. Muchos superventas sí, como La sombra del viento o Los huérfanos, de Carmen Mola. Otros van aparte, en su catálogo extendido: Los tres mundos, de Posteguillo, cuesta quince diez, con el descuento de socio."
+  },
+  {
+   "id": "G05",
+   "text": "Al abrir la app, la portada te enseña novedades, tendencias y pódcasts; y en Descubrir tienes el top veinte del día, géneros, series, autores… e incluso puedes explorar por duración."
+  },
+  {
+   "id": "G06",
+   "text": "Su sello propio son los Audible Originals: Drácula, con Claudia Salas y Asier Etxeandia, o Umbra Dei, con Daniel Grao y Nadia de Santiago, producciones con actores y sonido Dolby Atmos. Y tiene pódcasts propios, como ¿Por qué matamos?, de Carles Porta."
+  },
+  {
+   "id": "G07",
+   "text": "Buscas por título o por autor, y puedes filtrar solo lo que entra en tu plan. Cada ficha te dice quién lo narra, cuánto dura y qué nota tiene, con la narración y la historia valoradas por separado."
+  },
+  {
+   "id": "G08",
+   "text": "El reproductor llega a tres veces y media la velocidad, y tiene temporizador para dormir, capítulos, marcadores con notas, modo coche y descargas para escuchar sin conexión."
+  },
+  {
+   "id": "G09",
+   "text": "Y en Premium no hay reloj: escuches a velocidad normal o al triple, no se gasta nada. Para los peques, puedes crear un perfil infantil con solo los títulos que tú compartas."
+  },
+  {
+   "id": "G10",
+   "text": "Funciona en Android y en iPhone, en el Apple Watch, en el coche con CarPlay y Android Auto, y en altavoces con Alexa. Y, a diferencia de otras, también puedes escuchar en el ordenador, desde su web."
+  },
+  {
+   "id": "G11",
+   "text": "¿Y qué opinan los usuarios? En la App Store tiene un cuatro coma siete, con treinta y seis mil valoraciones, y en Google Play, un cuatro coma cinco. Lo que más gusta: las narraciones y sus exclusivos. Lo que más se critica: pagar la cuota y que algunos libros populares se paguen aparte."
+  },
+  {
+   "id": "G12",
+   "text": "Lo bueno: sin límite de horas por nueve noventa y nueve, Originals con actores conocidos, una app muy completa y web para el ordenador. Lo malo: no está todo incluido, no hay ebooks ni plan familiar y, si te suscribes desde la app del móvil, puede salirte más caro y sin prueba gratis."
+  },
+  {
+   "id": "G13",
+   "text": "¿Merece la pena? Si escuchas mucho y te gustan las producciones originales, sí: por nueve noventa y nueve no cuentas horas. Si solo quieres un libro al mes, te basta Standard, o un plan con horas como Podimo. Y antes de pagar, busca tus libros: lo del catálogo extendido se paga aparte."
+  },
+  {
+   "id": "H01",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis de Audible Premium."
+  },
+  {
+   "id": "H02",
+   "text": "Actívalos desde nuestra página de plataformas o desde la ficha de cualquier libro que esté en Audible. Te dejamos en la descripción el enlace directo y la reseña completa por escrito."
+  },
+  {
+   "id": "H03",
+   "text": "Entra con tu cuenta de Amazon y confirma tu forma de pago: hoy no pagas nada."
+  },
+  {
+   "id": "H04",
+   "text": "Y un truco que hemos comprobado: si cancelas el primer día, sigues escuchando hasta que terminan los treinta días. Cancela en la web de Audible o en Amazon; desde la app no se puede."
+  },
+  {
+   "id": "H05",
+   "text": "¿Dudas entre Audible y otras? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma."
+  },
+  {
+   "id": "H06",
+   "text": "Encuentra dónde escuchar tu próximo libro en SonorBooks."
+  },
+  {
+   "id": "J01",
+   "text": "¿Merece la pena Audible? Lo hemos probado a fondo."
+  },
+  {
+   "id": "J02",
+   "text": "Por nueve noventa y nueve al mes escuchas sin límite de horas más de noventa mil títulos."
+  },
+  {
+   "id": "J03",
+   "text": "Pero ojo: no está todo. Algunos superventas se pagan aparte, aunque con descuento."
+  },
+  {
+   "id": "J04",
+   "text": "Lo mejor: sus Originals, como Drácula, con Claudia Salas y Asier Etxeandia."
+  },
+  {
+   "id": "J05",
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis."
+  },
+  {
+   "id": "J06",
+   "text": "Y si cancelas el primer día, sigues escuchando hasta que termina la prueba."
+  },
+  {
+   "id": "J07",
+   "text": "Busca tu próximo libro en SonorBooks."
+  }
+ ]
+}

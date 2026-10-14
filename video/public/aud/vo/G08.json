@@ -1,0 +1,144 @@
+{
+ "id": "G08",
+ "hash": "72e919de4a23",
+ "text": "El reproductor llega a tres veces y media la velocidad, y tiene temporizador para dormir, capítulos, marcadores con notas, modo coche y descargas para escuchar sin conexión.",
+ "duration": 11.36,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "reproductor",
+   "s": 0.24,
+   "e": 0.8
+  },
+  {
+   "w": "llega",
+   "s": 0.88,
+   "e": 1.12
+  },
+  {
+   "w": "a",
+   "s": 1.2,
+   "e": 1.28
+  },
+  {
+   "w": "tres",
+   "s": 1.4,
+   "e": 1.52
+  },
+  {
+   "w": "veces",
+   "s": 1.6,
+   "e": 1.84
+  },
+  {
+   "w": "y",
+   "s": 1.88,
+   "e": 1.92
+  },
+  {
+   "w": "media",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "la",
+   "s": 2.28,
+   "e": 2.32
+  },
+  {
+   "w": "velocidad,",
+   "s": 2.4,
+   "e": 3.307
+  },
+  {
+   "w": "y",
+   "s": 3.333,
+   "e": 3.36
+  },
+  {
+   "w": "tiene",
+   "s": 3.44,
+   "e": 3.68
+  },
+  {
+   "w": "temporizador",
+   "s": 3.8,
+   "e": 4.4
+  },
+  {
+   "w": "para",
+   "s": 4.48,
+   "e": 4.64
+  },
+  {
+   "w": "dormir,",
+   "s": 4.68,
+   "e": 5.4
+  },
+  {
+   "w": "capítulos,",
+   "s": 5.44,
+   "e": 6.28
+  },
+  {
+   "w": "marcadores",
+   "s": 6.32,
+   "e": 6.8
+  },
+  {
+   "w": "con",
+   "s": 6.88,
+   "e": 7.04
+  },
+  {
+   "w": "notas,",
+   "s": 7.2,
+   "e": 7.76
+  },
+  {
+   "w": "modo",
+   "s": 7.88,
+   "e": 8.0
+  },
+  {
+   "w": "coche",
+   "s": 8.08,
+   "e": 8.64
+  },
+  {
+   "w": "y",
+   "s": 8.72,
+   "e": 8.8
+  },
+  {
+   "w": "descargas",
+   "s": 8.92,
+   "e": 9.36
+  },
+  {
+   "w": "para",
+   "s": 9.44,
+   "e": 9.52
+  },
+  {
+   "w": "escuchar",
+   "s": 9.64,
+   "e": 10.0
+  },
+  {
+   "w": "sin",
+   "s": 10.08,
+   "e": 10.24
+  },
+  {
+   "w": "conexión.",
+   "s": 10.32,
+   "e": 11.36
+  }
+ ],
+ "speechEnd": 10.94
+}

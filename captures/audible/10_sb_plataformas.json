@@ -1,0 +1,28 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://sonorbooks.com/es/plataformas/"},
+    {"wait": 1800},
+    {"clickText": "Entendido", "dur": 10},
+    {"wait": 700},
+    {"eval": "window.scrollTo(0, 0)"},
+    {"wait": 1200},
+    {"move": [1180, 160], "dur": 10},
+    {"shot": "plataformas_still"},
+    {"record": true},
+    {"wait": 900},
+    {"mark": "to_card"},
+    {"move": [460, 452], "dur": 900},
+    {"wait": 700},
+    {"mark": "to_btn"},
+    {"move": [470, 530], "dur": 700},
+    {"wait": 900},
+    {"mark": "to_cond"},
+    {"move": [320, 580], "dur": 700},
+    {"wait": 200},
+    {"mark": "click_cond"},
+    {"click": true},
+    {"wait": 2200},
+    {"mark": "end"}
+  ]
+}

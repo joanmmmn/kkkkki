@@ -31,6 +31,11 @@ import strIndex from '../../public/str/rec/index.json';
 import stw00 from '../../public/str/web/00_st_planes/meta.json';
 import stw01 from '../../public/str/web/01_st_alta/meta.json';
 import stw10 from '../../public/str/web/10_sb_plataformas/meta.json';
+// Reseña de Audible: tomas de la app (tools/aud_clips.py) y grabaciones de audible.es y SonorBooks (tools/record.mjs).
+import audIndex from '../../public/aud/rec/index.json';
+import auw00 from '../../public/aud/web/00_au_prueba/meta.json';
+import auw10 from '../../public/aud/web/10_sb_plataformas/meta.json';
+import auw11 from '../../public/aud/web/11_sb_ficha/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
@@ -56,6 +61,10 @@ const REC_DURATIONS: Record<string, number> = {
   'str/web/00_st_planes/video.mp4': stw00.duration,
   'str/web/01_st_alta/video.mp4': stw01.duration,
   'str/web/10_sb_plataformas/video.mp4': stw10.duration,
+  ...Object.fromEntries(Object.entries(audIndex as Record<string, { duration: number }>).map(([k, v]) => [`aud/rec/${k}/video.mp4`, v.duration])),
+  'aud/web/00_au_prueba/video.mp4': auw00.duration,
+  'aud/web/10_sb_plataformas/video.mp4': auw10.duration,
+  'aud/web/11_sb_ficha/video.mp4': auw11.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };

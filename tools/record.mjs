@@ -173,7 +173,7 @@ async function smoothScroll(px, dur = 1500, sel) {
 for (const s of script.steps) {
   try {
     if ('record' in s) await (s.record ? startRecording() : stopRecording());
-    if (s.go) { await page.goto(s.go, { waitUntil: 'networkidle', timeout: 60000 }); await cdp.send('Animation.setPlaybackRate', { playbackRate: 1 / SLOW }); }
+    if (s.go) { await page.goto(s.go, { waitUntil: s.until || 'networkidle', timeout: 60000 }); await cdp.send('Animation.setPlaybackRate', { playbackRate: 1 / SLOW }); }
     if (s.move) await moveTo(s.move[0], s.move[1], s.dur);
     if (s.moveText) { const [x, y] = await centerOf(page.getByText(s.moveText, { exact: s.exact !== false }).first()); await moveTo(x, y, s.dur); }
     if (s.moveSel) { const [x, y] = await centerOf(page.locator(s.moveSel).first()); await moveTo(x, y, s.dur); }

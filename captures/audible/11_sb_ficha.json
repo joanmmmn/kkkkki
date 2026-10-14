@@ -1,0 +1,28 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://sonorbooks.com/es/audiolibro/la-sombra-del-viento/"},
+    {"wait": 1800},
+    {"clickText": "Entendido", "dur": 10},
+    {"wait": 700},
+    {"eval": "window.scrollTo(0, 0)"},
+    {"wait": 1200},
+    {"move": [1300, 250], "dur": 10},
+    {"shot": "ficha_still"},
+    {"record": true},
+    {"wait": 900},
+    {"mark": "to_rec"},
+    {"move": [1030, 462], "dur": 900},
+    {"wait": 700},
+    {"mark": "to_btn"},
+    {"move": [1275, 558], "dur": 800},
+    {"wait": 300},
+    {"mark": "click_btn"},
+    {"fakeClick": true},
+    {"wait": 1100},
+    {"mark": "to_opts"},
+    {"move": [1060, 721], "dur": 800},
+    {"wait": 1200},
+    {"mark": "end"}
+  ]
+}

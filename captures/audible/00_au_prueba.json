@@ -1,0 +1,73 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "steps": [
+  {
+   "go": "https://www.audible.es/ep/prueba-gratis?ipRedirectOverride=true",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 5000
+  },
+  {
+   "eval": "window.scrollTo(0, 0)"
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "move": [
+    880,
+    700
+   ],
+   "dur": 10
+  },
+  {
+   "shot": "prueba_still"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "to_btn"
+  },
+  {
+   "move": [
+    551,
+    524
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "click_btn"
+  },
+  {
+   "fakeClick": true
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 2600
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

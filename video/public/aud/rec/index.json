@@ -1,0 +1,164 @@
+{
+ "00_inicio_top": {
+  "duration": 17.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 0.0,
+  "to": 17.0,
+  "audio": false
+ },
+ "01_inicio_scroll": {
+  "duration": 35.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 15.0,
+  "to": 50.0,
+  "audio": false
+ },
+ "02_huerfanos_ficha": {
+  "duration": 32.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 49.0,
+  "to": 81.0,
+  "audio": false
+ },
+ "03_descubrir": {
+  "duration": 34.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 80.0,
+  "to": 114.0,
+  "audio": false
+ },
+ "04_top20": {
+  "duration": 33.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 113.0,
+  "to": 146.0,
+  "audio": false
+ },
+ "05_dracula": {
+  "duration": 26.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 145.0,
+  "to": 171.0,
+  "audio": false
+ },
+ "06_buscar": {
+  "duration": 27.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 170.0,
+  "to": 197.0,
+  "audio": false
+ },
+ "07_umbra_dei": {
+  "duration": 8.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 195.0,
+  "to": 203.0,
+  "audio": false
+ },
+ "08_incluido": {
+  "duration": 17.5,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 215.5,
+  "to": 233.0,
+  "audio": false
+ },
+ "09_sombra": {
+  "duration": 31.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 249.0,
+  "to": 280.0,
+  "audio": false
+ },
+ "10_posteguillo": {
+  "duration": 19.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 278.0,
+  "to": 297.0,
+  "audio": false
+ },
+ "11_tres_mundos": {
+  "duration": 23.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 295.0,
+  "to": 318.0,
+  "audio": false
+ },
+ "12_reproductor": {
+  "duration": 20.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 316.0,
+  "to": 336.0,
+  "audio": false
+ },
+ "13_velocidad": {
+  "duration": 43.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 334.0,
+  "to": 377.0,
+  "audio": false
+ },
+ "14_temporizador": {
+  "duration": 24.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 375.0,
+  "to": 399.0,
+  "audio": false
+ },
+ "15_capitulos": {
+  "duration": 19.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 397.0,
+  "to": 416.0,
+  "audio": false
+ },
+ "16_marcadores": {
+  "duration": 32.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 414.0,
+  "to": 446.0,
+  "audio": false
+ },
+ "17_descargar": {
+  "duration": 31.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 444.0,
+  "to": 475.0,
+  "audio": false
+ },
+ "18_biblioteca": {
+  "duration": 35.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 475.0,
+  "to": 510.0,
+  "audio": false
+ },
+ "19_suscripcion": {
+  "duration": 43.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 509.0,
+  "to": 552.0,
+  "audio": false
+ },
+ "20_perfil_infantil": {
+  "duration": 28.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 554.0,
+  "to": 582.0,
+  "audio": false,
+  "cuenta": "tapada"
+ },
+ "21_ajustes": {
+  "duration": 27.5,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 584.5,
+  "to": 612.0,
+  "audio": false
+ },
+ "22_duracion": {
+  "duration": 48.0,
+  "src": "2026-10-14 08-55-16.mp4",
+  "from": 611.0,
+  "to": 659.0,
+  "audio": false
+ }
+}
