@@ -4,7 +4,7 @@ import { clamp, easeInOut, easeOut, keyframes } from '../../lib/anim';
 import { Sfx, ChangeTicks } from '../../components/Sfx';
 import { MaskTitle, Burst } from '../nxr/kit';
 import { Kicker } from '../nxr/App';
-import { BOOKS, Book3D, Cam, color, CoverIcon, Fact, FearMeter, font, HoursBar, KR, MiniIcon, PAPER, ramp, rampOut, shadow, SkNight, SkStage, Snow, Dust } from './kit';
+import { BOOKS, Book3D, Cam, color, CoverIcon, Fact, FearMeter, font, Grain, HoursBar, KR, MiniIcon, PAPER, ramp, rampOut, shadow, SkNight, SkStage, Snow, Dust } from './kit';
 import { sceneClock } from './timeline';
 
 type Clock = ReturnType<typeof sceneClock>;
@@ -141,6 +141,9 @@ const DoorScene: React.FC<{ cfg: DoorCfg }> = ({ cfg }) => {
       {ab > 0 && bc < 1 && (
         <AbsoluteFill style={{ opacity: ab * (1 - bc), transform: `scale(${1.12 - 0.12 * ab - 0.05 * bc})`, filter: bc > 0.01 ? `blur(${bc * 8}px)` : undefined }}>
           <V c={c} from={fB} to={fC} />
+          {/* acabado de cine: viñeta y grano */}
+          <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.42) 100%)', pointerEvents: 'none' }} />
+          <Grain seed={Math.floor(frame / 2)} opacity={0.07} />
         </AbsoluteFill>
       )}
       {bc > 0 && (

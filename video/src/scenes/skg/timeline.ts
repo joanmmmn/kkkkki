@@ -28,7 +28,7 @@ export const wfEnd = (id: string, word: string, nth = 0) => {
 };
 
 export type VoPart = { id: string; at: number };
-export type Tin = 'push' | 'cut' | 'slide';
+export type Tin = 'push' | 'cut' | 'slide' | 'dip';
 // `bump`: título del separador de sección que tapa el arranque de la escena (la escena se dibuja desde `pre`).
 export type SceneDef = { id: string; vo: VoPart[]; dur: number; bump?: string; pre: number; tin: Tin; night?: boolean };
 export const BUMP_PRE = 12;
@@ -52,9 +52,9 @@ const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; e
 
 export const SKG_SCENES: SceneDef[] = [
   scene('HOOK', ['G01', 'G02'], { lead: sec(0.9), gaps: [0.5], extra: 8, night: true }),
-  scene('HOURS', ['G03'], { extra: 14 }),
-  scene('MAPA', ['G04'], { extra: 10 }),
-  scene('TITLE', [], { minDur: sec(3.6) }),
+  scene('HOURS', ['G03'], { extra: 14, tin: 'dip' }),
+  scene('MAPA', ['G04'], { extra: 10, tin: 'dip' }),
+  scene('TITLE', [], { minDur: sec(3.6), tin: 'dip' }),
   scene('MAINE', ['G05'], { bump: 'Quién es', extra: 10 }),
   scene('CARRIE', ['G06', 'G07'], { gaps: [0.5], extra: 12 }),
   scene('BACHMAN', ['G08'], { extra: 16 }),

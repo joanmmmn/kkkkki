@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import * as THREE from 'three';
 import { ThreeCanvas } from '@remotion/three';
+import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { AbsoluteFill, interpolate, spring, staticFile, useCurrentFrame } from 'remotion';
 import { Sfx, ChangeTicks } from '../../../components/Sfx';
 import { LogoIcon } from '../../../components/Logo';
@@ -9,7 +10,7 @@ import { color, font, Grain, KR } from '../kit';
 import { sceneClock } from '../timeline';
 import { Book, ShelfBook, woodTex } from './books3d';
 import { CLOTHS, Rig } from './Library';
-import { CamKey, canvasTex, easeO, hash, ramp01, rng, SANS, useFontsReady, V3 } from './lib3d';
+import { CamKey, canvasTex, easeO, hash, ramp01, rng, SANS, useFontsReady, V3, AUDIO_ONLY } from './lib3d';
 
 // ————————————————————————————————————————————————————————————————
 // Escritorio 3D (HOURS y MAPA): mesa de nogal bajo un flexo, con la biblioteca desenfocada detrás (imagen renderizada
@@ -159,8 +160,8 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
   const K = 1.25; // unidades por hora
   const barAt = (i: number) => f.suman - 4 + i * 2.1;
   const drain = ramp01(frame, f.mes - 10, f.mes + 20);
-  const barGeo = useMemo(() => new THREE.BoxGeometry(1, 1, 1), []);
-  const barMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#FFC21A', roughness: 0.3, emissive: '#FF8A00', emissiveIntensity: 0.5 }), []);
+  const barGeo = useMemo(() => new RoundedBoxGeometry(1, 1, 1, 2, 0.12), []);
+  const barMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#FFC21A', roughness: 0.38, metalness: 0.05, emissive: '#C86A00', emissiveIntensity: 0.22 }), []);
   const capMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#FFF4C2', emissive: '#FFF4C2', emissiveIntensity: 0.8 }), []);
   const tileGeo = useMemo(() => new THREE.BoxGeometry(13.6, 0.9, 13.6), []);
   const edgeMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#C8BEA6', roughness: 0.7 }), []);
@@ -172,8 +173,8 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
   const keys: CamKey[] = [
     { f: 0, pos: [-92, 13, 40], look: [-58, 11, -2], fov: 30 },
     { f: f.sonor, pos: [-46, 20, 92], look: [-14, 14, 0], fov: 30 },
-    { f: f.set + 30, pos: [-6, 50, 214], look: [-2, 37, 0], fov: 30 },
-    { f: f.mes - 4, pos: [2, 49, 206], look: [2, 36, 0], fov: 30 },
+    { f: f.set + 30, pos: [-4, 52, 238], look: [0, 40, 0], fov: 30 },
+    { f: f.mes - 4, pos: [2, 51, 230], look: [2, 39, 0], fov: 30 },
     { f: f.dia + 4, pos: [0, 138, 150], look: [0, 0, 47], fov: 30 },
     { f: dur, pos: [0, 134, 140], look: [0, 0, 47], fov: 30, ease: (t) => t },
   ];
@@ -186,7 +187,6 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
         shadow-mapSize-width={1536} shadow-mapSize-height={1536} shadow-bias={-0.0004} shadow-normalBias={0.04} />
       <pointLight position={[110, 40, 60]} intensity={0.9} decay={0} distance={300} color={KR} />
       <Desk />
-      <Headphones position={[-76, 3.1, 24]} rotation={[-Math.PI / 2 + 0.05, 0, 0.7]} s={1} />
       {list.map((p, i) => {
         const a = 4 + i * 1.3;
         const s = spring({ frame: frame - a, fps: 50, config: { damping: 15, stiffness: 160, mass: 0.8 } });
@@ -242,7 +242,7 @@ export const Hours3D: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#0B0C0E' }}>
       <DeskBackdrop x={interpolate(frame, [0, c.dur], [30, -30])} s={1.12} dim={0.38 + 0.25 * calIn} />
-      {ready && (
+      {ready && !AUDIO_ONLY && (
         <ThreeCanvas width={1920} height={1080} shadows gl={{ antialias: false, alpha: true, powerPreference: 'high-performance' }} camera={{ fov: 30, position: [0, 20, 100] }}>
           <HoursScene f={f} dur={c.dur} />
         </ThreeCanvas>
@@ -266,16 +266,19 @@ export const Hours3D: React.FC = () => {
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 200, letterSpacing: -9, lineHeight: 0.9, color: '#fff', fontVariantNumeric: 'tabular-nums', textShadow: '0 12px 50px rgba(0,0,0,0.6)' }}>{fmtEs(Math.round(count))}</span>
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: color.yellow, textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>horas</span>
           </div>
-          <div style={{ marginTop: 12, marginLeft: 8, fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: 'rgba(255,255,255,0.85)', opacity: ramp01(frame, f.set, f.set + 14) }}>de Stephen King en audiolibro, en español</div>
+          <div style={{ marginTop: 12, marginLeft: 8, fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: 'rgba(255,255,255,0.85)', opacity: ramp01(frame, f.set, f.set + 14) }}>de Stephen King en audiolibro en español</div>
         </div>
       )}
       {/* Un mes entero */}
       {calIn > 0.01 && (
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 64, textAlign: 'center', opacity: calIn, transform: `translateY(${(1 - calIn) * 20}px)` }}>
-          <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 92, letterSpacing: -3, color: '#fff', textShadow: '0 10px 40px rgba(0,0,0,0.7)' }}>
-            ≈ 30 días <span style={{ color: frame >= f.sin - 2 ? KR : '#fff', background: frame >= f.sin - 2 ? 'rgba(255,255,255,0.0)' : undefined }}>sin parar</span>
-          </span>
-        </div>
+        <>
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 260, background: 'linear-gradient(180deg, rgba(6,6,8,0.86) 0%, rgba(6,6,8,0.6) 55%, rgba(6,6,8,0) 100%)', opacity: calIn }} />
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 62, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 22, opacity: calIn, transform: `translateY(${(1 - calIn) * 20}px)` }}>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 88, letterSpacing: -3, color: '#fff', textShadow: '0 10px 40px rgba(0,0,0,0.7)' }}>Unos 30 días</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, letterSpacing: -2, color: '#fff', padding: '4px 26px 10px', borderRadius: 18,
+              background: `rgba(193,18,31,${ramp01(frame, f.sin - 4, f.sin + 6)})`, boxShadow: frame >= f.sin - 4 ? '0 14px 40px rgba(193,18,31,0.45)' : undefined, transform: `scale(${1 + 0.06 * Math.sin(Math.PI * ramp01(frame, f.sin - 4, f.sin + 10))})` }}>sin parar</span>
+          </div>
+        </>
       )}
       {/* Sonido */}
       {Array.from({ length: 10 }).map((_, k) => <Sfx key={k} name="sk_book_slide" at={Math.round(4 + k * 4 * 1.3) + 2} volume={0.28 + 0.08 * (k % 3)} />)}

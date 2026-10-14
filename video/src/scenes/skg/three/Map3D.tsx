@@ -11,7 +11,7 @@ import { sceneClock } from '../timeline';
 import { clothTex, pagesTex } from './books3d';
 import { DeskBackdrop, Desk } from './Desk';
 import { Rig } from './Library';
-import { canvasTex, CamKey, easeO, projectAt, ramp01, rng, SANS, SERIF, useFontsReady, V3 } from './lib3d';
+import { canvasTex, CamKey, easeO, projectAt, ramp01, rng, SANS, SERIF, useFontsReady, V3, AUDIO_ONLY } from './lib3d';
 
 // ————————————————————————————————————————————————————————————————
 // MAPA en 3D: tres libros sobre la mesa; el equivocado (It) se adelanta y cae. Llega un mapa doblado,
@@ -115,7 +115,7 @@ const mapCanvas = () => {
   ctx.strokeStyle = 'rgba(80,55,20,0.45)';
   ctx.lineWidth = 3;
   for (let i = 0; i < 26; i++) {
-    const x = 160 + r() * (W - 320), y = 200 + r() * (H - 360);
+    const x = 160 + r() * (W - 320), y = 340 + r() * (H - 500);
     const near = ROUTE.frac && PINS.some(([u, vv]) => Math.hypot(u * W - x, vv * H - y) < 200);
     if (near) continue;
     if (r() < 0.55) {
@@ -128,12 +128,20 @@ const mapCanvas = () => {
       ctx.lineTo(x - s * 0.1, y - s * 0.45);
       ctx.stroke();
     } else {
+      // bosquecillo de abetos
       for (let k = 0; k < 3; k++) {
-        const tx = x + k * 26, ty = y + (k % 2) * 10;
+        const tx = x + k * 24, ty = y + (k % 2) * 10;
         ctx.beginPath();
-        ctx.arc(tx, ty - 22, 14, 0, Math.PI * 2);
-        ctx.moveTo(tx, ty - 8);
-        ctx.lineTo(tx, ty + 8);
+        ctx.moveTo(tx, ty - 40);
+        ctx.lineTo(tx - 13, ty - 14);
+        ctx.lineTo(tx - 6, ty - 14);
+        ctx.lineTo(tx - 16, ty + 4);
+        ctx.lineTo(tx + 16, ty + 4);
+        ctx.lineTo(tx + 6, ty - 14);
+        ctx.lineTo(tx + 13, ty - 14);
+        ctx.closePath();
+        ctx.moveTo(tx, ty + 4);
+        ctx.lineTo(tx, ty + 14);
         ctx.stroke();
       }
     }
@@ -271,13 +279,24 @@ const Pin: React.FC<{ at: number; p: V3; c?: string }> = ({ at, p, c = KR }) => 
 
 const MAP_Z = 32;
 
+// It se tambalea, cae hacia atrás con gravedad (aterriza en «ti») y rebota una vez.
+const itFall = (frame: number, f: Record<string, number>) => {
+  const w0 = f.king - 6, f0 = f.no, f1 = f.ti;
+  const wob = frame >= w0 && frame < f0 ? Math.sin((frame - w0) * 0.55) * 0.05 * ramp01(frame, w0, w0 + 10) : 0;
+  const t = Math.max(0, Math.min(1, (frame - f0) / Math.max(1, f1 - f0)));
+  const fall = t * t;
+  const since = frame - f1;
+  const bounce = since >= 0 ? Math.abs(Math.sin(Math.min(1, since / 12) * Math.PI)) * 0.09 * Math.exp(-since / 14) : 0;
+  return { fall, bounce, wobble: wob };
+};
+
 const MapScene: React.FC<{ f: Record<string, number>; stops: number[]; keys: CamKey[]; drawT: number }> = ({ f, stops, keys, drawT }) => {
   const frame = useCurrentFrame();
   const wrong = ramp01(frame, f.equiv - 4, f.equiv + 14, easeO);
-  const fall = ramp01(frame, f.no - 4, f.no + 16, (t) => t * t);
-  const bounce = f.no + 16 <= frame ? Math.sin(Math.min(1, (frame - f.no - 16) / 10) * Math.PI) * 0.06 * (1 - ramp01(frame, f.no + 16, f.no + 30)) : 0;
-  // El mapa cae doblado y se despliega
-  const drop = spring({ frame: frame - (f.asi + 6), fps: 50, config: { damping: 14, stiffness: 110, mass: 1 } });
+  const { fall, bounce, wobble } = itFall(frame, f);
+  // El mapa llega deslizándose por la mesa desde la izquierda, doblado, y se despliega
+  const slide = ramp01(frame, f.asi + 28, f.mapa - 6, (t) => 1 - Math.pow(1 - t, 3));
+  const hop = Math.sin(Math.PI * Math.min(1, slide * 1.25)) * 2.2;
   const openR = ramp01(frame, f.mapa - 8, f.mapa + 16, easeO);
   const openL = ramp01(frame, f.mapa + 2, f.mapa + 26, easeO);
   const tubeGeo = useMemo(() => new THREE.TubeGeometry(ROUTE.curve, 400, 0.55, 10, false), []);
@@ -287,7 +306,7 @@ const MapScene: React.FC<{ f: Record<string, number>; stops: number[]; keys: Cam
   const showBooks = frame < f.mapa + 60;
   return (
     <>
-      <Rig keys={keys} shake={0.3} />
+      <Rig keys={keys} shake={0.3} jolt={f.ti} />
       <hemisphereLight args={['#5A5F6E', '#1A120C', 0.6]} />
       <spotLight position={[-80, 160, 140]} angle={0.62} penumbra={0.85} intensity={4.4} decay={0} color="#FFD7A3" castShadow
         shadow-mapSize-width={1536} shadow-mapSize-height={1536} shadow-bias={-0.0004} shadow-normalBias={0.04} />
@@ -299,14 +318,14 @@ const MapScene: React.FC<{ f: Record<string, number>; stops: number[]; keys: Cam
           <StandingBook k="carrie" w={14} t={2.6} position={[-30, 10.5, 0]} rotation={[0, 0.22, 0]} dim={1 - 0.45 * wrong} />
           <StandingBook k="misery" w={14.5} t={3.6} position={[30, 10.9, 0]} rotation={[0, -0.22, 0]} dim={1 - 0.45 * wrong} />
           {/* It: se adelanta, crece un poco y cae hacia atrás */}
-          <group position={[0, 0, 7 * wrong - 3.2]} rotation={[-(Math.PI / 2) * fall - bounce, 0, 0]}>
-            <StandingBook k="it" w={17} t={6.4} position={[0, 12.75, 0]} rotation={[0, 0, 0]} />
+          <group position={[0, 0, 7 * wrong - 3.2]} rotation={[-(Math.PI / 2) * fall + bounce + wobble, 0, 0]}>
+            <StandingBook k="it" w={17} t={6.4} position={[0, 12.75, 3.2]} rotation={[0, 0, 0]} />
           </group>
         </group>
       )}
       {/* El mapa */}
-      {frame >= f.asi && (
-        <group position={[0, (1 - drop) * 42 + 0.14, MAP_Z]} rotation={[(1 - drop) * 0.5, (1 - drop) * 0.6, 0]}>
+      {frame >= f.asi + 26 && (
+        <group position={[-170 * (1 - slide), 0.14 + hop, MAP_Z + 6 * (1 - slide)]} rotation={[0, -0.55 * (1 - slide), 0]}>
           <MapPanel i={1} />
           <group position={[-P / 2, TH * (1 - openL) * 1.1, 0]} rotation={[0, 0, -Math.PI * (1 - openL)]}>
             <group position={[-P / 2, 0, 0]}><MapPanel i={0} /></group>
@@ -337,24 +356,29 @@ export const Mapa3D: React.FC = () => {
   const keys: CamKey[] = [
     { f: 0, pos: [0, 19, 72], look: [0, 12, -22], fov: 30 },
     { f: f.equiv + 26, pos: [3, 17, 56], look: [1, 12, -18], fov: 30 },
-    { f: f.ti, pos: [0, 24, 62], look: [0, 8, -16], fov: 30 },
-    { f: f.mapa - 6, pos: [0, 70, 120], look: [0, 0, MAP_Z - 6], fov: 30 },
+    { f: f.ti, pos: [0, 22, 60], look: [0, 9, -16], fov: 30 },
+    { f: f.asi + 8, pos: [0, 24, 64], look: [0, 8, -14], fov: 30 },
+    { f: f.mapa - 4, pos: [0, 112, 112], look: [0, 0, MAP_Z - 4], fov: 30 },
     { f: f.mapa + 34, pos: [0, 118, 108], look: [0, 0, MAP_Z - 2], fov: 30 },
     { f: stops[1], pos: [-3, 120, 110], look: [-3, 0, MAP_Z - 1], fov: 30 },
     { f: stops[3] + 10, pos: [2, 119, 109], look: [2, 0, MAP_Z - 1], fov: 30 },
     { f: c.dur, pos: [1, 116, 105], look: [1, 0, MAP_Z - 1], fov: 30, ease: (t) => t },
   ];
   const fr = ROUTE.frac;
-  const drawT = interpolate(frame, [stops[0] - 6, stops[0], stops[1] - 26, stops[1], stops[2] - 26, stops[2], stops[3] - 26, stops[3]], [0, fr[0], fr[0], fr[1], fr[1], fr[2], fr[2], fr[3]], { ...clamp, easing: easeInOut });
+  const seg3 = c.at('G04', 'los');
+  const drawT = interpolate(frame, [stops[0] - 6, stops[0], stops[1] - 26, stops[1], seg3 - 4, stops[2], stops[3] - 28, stops[3]], [0, fr[0], fr[0], fr[1], fr[1], fr[2], fr[2], fr[3]], { ...clamp, easing: easeInOut });
   const wrong = ramp01(frame, f.equiv - 2, f.equiv + 12, easeO);
-  const fall = ramp01(frame, f.no - 4, f.no + 16);
-  const itTop = projectAt(frame, keys, 0.3, [0, 30 - 26 * fall, -22 + 7 * wrong]);
-  const quote = ramp01(frame, f.no + 4, f.no + 20) * (1 - ramp01(frame, f.asi + 4, f.asi + 20));
+  const fall = itFall(frame, f).fall;
+  const tagOut = ramp01(frame, f.king - 10, f.no);
+  const itTop = projectAt(frame, keys, 0.3, [0, 30, -22 + 7 * wrong]);
+  const quote = ramp01(frame, f.ti - 4, f.ti + 12) * (1 - ramp01(frame, f.asi + 20, f.asi + 34));
+  const land = projectAt(frame, keys, 0.3, [0, 1, -22 + 7 * wrong - 16]);
+  const dust = frame >= f.ti - 1 ? ramp01(frame, f.ti - 1, f.ti + 30) : 0;
   const mapLift = 0.14 + 0.3;
   return (
     <AbsoluteFill style={{ background: '#0B0C0E' }}>
       <DeskBackdrop x={interpolate(frame, [0, c.dur], [-20, 20])} s={1.12} dim={0.4 + 0.3 * ramp01(frame, f.asi, f.mapa)} />
-      {ready && (
+      {ready && !AUDIO_ONLY && (
         <ThreeCanvas width={1920} height={1080} shadows gl={{ antialias: false, alpha: true, powerPreference: 'high-performance' }} camera={{ fov: 30, position: [0, 20, 100] }}>
           <MapScene f={f} stops={stops} keys={keys} drawT={drawT} />
         </ThreeCanvas>
@@ -363,10 +387,17 @@ export const Mapa3D: React.FC = () => {
       <Grain seed={Math.floor(frame / 2)} opacity={0.08} />
       {/* El libro equivocado */}
       {wrong > 0.01 && frame < f.asi + 10 && (
-        <div style={{ position: 'absolute', left: itTop.x, top: Math.max(110, itTop.y - 60), transform: `translate(-50%, -50%) scale(${0.8 + 0.2 * wrong})`, opacity: wrong * (1 - fall) }}>
+        <div style={{ position: 'absolute', left: itTop.x, top: Math.max(110, itTop.y - 60), transform: `translate(-50%, -50%) scale(${0.8 + 0.2 * wrong})`, opacity: wrong * (1 - tagOut) }}>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '12px 28px', borderRadius: 999, boxShadow: '0 20px 40px rgba(193,18,31,0.4)', whiteSpace: 'nowrap' }}>El libro equivocado</div>
         </div>
       )}
+      {/* polvo al caer */}
+      {dust > 0 && dust < 1 && Array.from({ length: 9 }).map((_, k) => {
+        const a = (k / 9) * Math.PI * 2 + 0.3;
+        const r = 40 + 260 * Math.pow(dust, 0.6);
+        return <div key={k} style={{ position: 'absolute', left: land.x + Math.cos(a) * r * 1.6 - 70, top: land.y + Math.sin(a) * r * 0.35 - 40, width: 140, height: 80, borderRadius: '50%',
+          background: 'radial-gradient(ellipse, rgba(235,220,200,0.35) 0%, rgba(235,220,200,0) 70%)', opacity: (1 - dust) * 0.9, transform: `scale(${0.6 + dust})` }} />;
+      })}
       {quote > 0.01 && (
         <div style={{ position: 'absolute', left: 0, right: 0, bottom: 110, textAlign: 'center', opacity: quote, transform: `translateY(${(1 - quote) * 16}px)` }}>
           <span style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 76, color: '#fff', textShadow: '0 8px 40px rgba(0,0,0,0.8)' }}>«King no es para mí»</span>
@@ -380,7 +411,7 @@ export const Mapa3D: React.FC = () => {
         const sc = projectAt(frame, keys, 0.3, [p[0], mapLift + 7, p[2] + MAP_Z]);
         const below = i % 2 === 0;
         return (
-          <div key={i} style={{ position: 'absolute', left: sc.x, top: sc.y + (below ? 150 : -10), transform: `translate(-50%, ${below ? '0%' : '-100%'}) translateY(${(1 - s) * (below ? 16 : -16)}px)`, opacity: s }}>
+          <div key={i} style={{ position: 'absolute', left: Math.max(300, Math.min(1620, sc.x)), top: sc.y + (below ? 150 : -10), transform: `translate(-50%, ${below ? '0%' : '-100%'}) translateY(${(1 - s) * (below ? 16 : -16)}px)`, opacity: s }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, background: 'rgba(255,255,255,0.96)', padding: '10px 24px 10px 10px', borderRadius: 999, boxShadow: '0 16px 40px rgba(0,0,0,0.35)', whiteSpace: 'nowrap' }}>
               <div style={{ width: 50, height: 50, borderRadius: '50%', background: color.ink, color: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30 }}>{i + 1}</div>
               <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, letterSpacing: -0.5, color: color.ink }}>{LABELS[i]}</span>
@@ -392,10 +423,11 @@ export const Mapa3D: React.FC = () => {
       <Sfx name="sk_book_slide" at={4} volume={0.4} />
       <Sfx name="whoosh_soft" at={f.equiv - 6} volume={0.5} />
       <Sfx name="sk_heart" at={f.equiv + 4} volume={0.45} />
-      <Sfx name="sk_book_thud" at={f.no + 15} volume={0.9} />
-      <Sfx name="impact" at={f.no + 15} volume={0.35} />
-      <Sfx name="whoosh_deep" at={f.asi + 4} volume={0.5} />
-      <Sfx name="sk_book_thud" at={f.asi + 30} volume={0.45} />
+      <Sfx name="sk_book_slide" at={f.no - 4} volume={0.35} />
+      <Sfx name="sk_book_thud" at={f.ti - 1} volume={0.95} />
+      <Sfx name="impact" at={f.ti - 1} volume={0.35} />
+      <Sfx name="whoosh_soft" at={f.asi + 24} volume={0.5} />
+      <Sfx name="sk_book_slide" at={f.asi + 30} volume={0.55} />
       <Sfx name="page_turn" at={f.mapa - 6} volume={0.8} />
       <Sfx name="page_turn" at={f.mapa + 6} volume={0.6} />
       {stops.map((s, i) => <Sfx key={i} name="sk_pin" at={s + 6} volume={0.7} />)}

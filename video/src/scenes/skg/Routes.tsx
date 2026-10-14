@@ -179,8 +179,8 @@ export const Outro: React.FC = () => {
           </div>
           <div style={{ marginTop: 60, opacity: end, transform: `translateY(${(1 - end) * 20}px)` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, whiteSpace: 'nowrap' }}>
-              <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 24, letterSpacing: 6, color: color.ink, background: color.yellow, padding: '6px 14px', borderRadius: 8 }}>AUTOR</span>
-              <span style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 32, color: color.ink2 }}>Por dónde y cómo empezar a leer</span>
+              <div style={{ width: 40, height: 3, background: color.yellow, borderRadius: 2 }} />
+              <span style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 30, letterSpacing: 3, textTransform: 'uppercase', color: color.ink2 }}>Por dónde y cómo empezar a leer</span>
             </div>
             <div style={{ marginTop: 14, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>Próximamente, otro autor.</div>
           </div>

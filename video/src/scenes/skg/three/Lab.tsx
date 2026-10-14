@@ -22,11 +22,11 @@ const CoversGrid: React.FC = () => {
 
 // Composición de pruebas: cada fotograma de salida es un fotograma elegido de una escena (para hojas de contacto rápidas).
 // npx remotion render src/index.ts SKLab3D out.mp4 --props='{"scene":"HOOK","frames":[20,100,200]}' --sequence
-const P = getInputProps() as { scene?: string; frames?: number[] };
-export const LAB_FRAMES = P.frames ?? [20, 100, 150, 230, 300, 420, 600, 690];
+const P = getInputProps() as { scene?: string; frames?: number[]; pairs?: [string, number][] };
+export const LAB_FRAMES = P.pairs ? P.pairs.map((p) => p[1]) : P.frames ?? [20, 100, 150, 230, 300, 420, 600, 690];
 export const Lab3D: React.FC = () => {
   const i = useCurrentFrame();
-  const scene = P.scene ?? 'HOOK3D';
+  const scene = P.pairs ? P.pairs[Math.min(i, P.pairs.length - 1)][0] : P.scene ?? 'HOOK3D';
   const C = scene === 'COVERS' ? CoversGrid : scene === 'HOOK3D' ? Hook3D : scene === 'HOURS3D' ? Hours3D : scene === 'MAPA3D' ? Mapa3D : scene === 'TITLE3D' ? TitleCard : (SKG_COMPONENTS as Record<string, React.FC>)[scene];
   return (
     <Freeze frame={scene === 'COVERS' ? 0 : LAB_FRAMES[Math.min(i, LAB_FRAMES.length - 1)]}>

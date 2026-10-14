@@ -1169,3 +1169,112 @@ export const coverTexture = (b: BookDef, key: string, w = 768) => {
   return t;
 };
 export const HAS_ILLUSTRATION = (key: string) => key in ILL || key.startsWith('torre');
+
+// ———————————————— Fotogramas ilustrados de las películas (16:9) ————————————————
+// Escenas propias que evocan cada historia sin reproducir carteles, fotogramas ni actores.
+const STILLS: Record<string, (ctx: Ctx, a: Win) => void> = {
+  // Cadena perpetua: muro de la prisión de noche, torre de vigilancia con foco y lluvia.
+  cadena: (ctx, a) => {
+    const u = a.w / 640;
+    sky(ctx, a, '#0C1218', '#283543');
+    rain(ctx, a, 220, 5, 'rgba(210,225,240,0.25)');
+    // haz del foco
+    ctx.fillStyle = 'rgba(255,245,215,0.14)';
+    ctx.beginPath();
+    ctx.moveTo(a.x + a.w * 0.72, a.y + a.h * 0.28);
+    ctx.lineTo(a.x + a.w * 0.12, a.y + a.h * 0.86);
+    ctx.lineTo(a.x + a.w * 0.36, a.y + a.h * 0.96);
+    ctx.closePath();
+    ctx.fill();
+    // muro
+    ctx.fillStyle = '#1A2129';
+    ctx.fillRect(a.x, a.y + a.h * 0.46, a.w, a.h * 0.54);
+    ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+    ctx.lineWidth = 2 * u;
+    for (let y = 0; y < 8; y++) for (let x = 0; x < 16; x++) ctx.strokeRect(a.x + x * 44 * u + (y % 2) * 22 * u, a.y + a.h * 0.46 + y * 24 * u, 44 * u, 24 * u);
+    // torre
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(a.x + a.w * 0.66, a.y + a.h * 0.26, a.w * 0.12, a.h * 0.3);
+    ctx.fillRect(a.x + a.w * 0.64, a.y + a.h * 0.22, a.w * 0.16, a.h * 0.06);
+    glow(ctx, a.x + a.w * 0.72, a.y + a.h * 0.28, 60 * u, '255,245,215', 0.8);
+    // alambrada
+    ctx.strokeStyle = 'rgba(10,12,16,0.9)';
+    ctx.lineWidth = 2 * u;
+    for (let i = 0; i < 40; i++) {
+      ctx.beginPath();
+      ctx.arc(a.x + i * 18 * u, a.y + a.h * 0.45, 9 * u, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+  },
+  // Cuenta conmigo: vía del tren que se pierde en el bosque al atardecer.
+  cuenta: (ctx, a) => {
+    const u = a.w / 640;
+    sky(ctx, a, '#F2B25C', '#F7DCA4');
+    glow(ctx, a.x + a.w * 0.5, a.y + a.h * 0.46, a.w * 0.4, '255,240,200', 0.8);
+    ridge(ctx, a, 0.58, 0.18, 11, '#5C6B3A', 14);
+    // pinos a los lados
+    const pine = (x: number, base: number, h: number) => {
+      ctx.fillStyle = '#26301A';
+      ctx.beginPath();
+      ctx.moveTo(x, base - h);
+      ctx.lineTo(x - h * 0.28, base);
+      ctx.lineTo(x + h * 0.28, base);
+      ctx.closePath();
+      ctx.fill();
+    };
+    for (let i = 0; i < 9; i++) {
+      pine(a.x + a.w * (0.02 + i * 0.045), a.y + a.h * 0.62 + i * 6 * u, (120 - i * 8) * u);
+      pine(a.x + a.w * (0.98 - i * 0.045), a.y + a.h * 0.62 + i * 6 * u, (120 - i * 8) * u);
+    }
+    ctx.fillStyle = '#3B3A2A';
+    ctx.fillRect(a.x, a.y + a.h * 0.6, a.w, a.h * 0.4);
+    // vía
+    const vx = a.x + a.w * 0.5, vy = a.y + a.h * 0.58;
+    ctx.fillStyle = '#6B5A44';
+    ctx.beginPath();
+    ctx.moveTo(vx - 4 * u, vy);
+    ctx.lineTo(vx + 4 * u, vy);
+    ctx.lineTo(a.x + a.w * 0.8, a.y + a.h);
+    ctx.lineTo(a.x + a.w * 0.2, a.y + a.h);
+    ctx.closePath();
+    ctx.fill();
+    for (let i = 0; i < 18; i++) {
+      const t = Math.pow(i / 18, 2);
+      const y = vy + (a.y + a.h - vy) * t;
+      const hw = (4 + (a.w * 0.26) * t) * 1.1;
+      ctx.fillStyle = '#3A2A1C';
+      ctx.fillRect(vx - hw, y, hw * 2, Math.max(1, 10 * u * t));
+    }
+    ctx.strokeStyle = '#B8B2A6';
+    ctx.lineWidth = 3 * u;
+    for (const s of [-1, 1]) {
+      ctx.beginPath();
+      ctx.moveTo(vx + s * 2 * u, vy);
+      ctx.lineTo(vx + s * a.w * 0.2, a.y + a.h);
+      ctx.stroke();
+    }
+  },
+  // La milla verde: el pasillo, reutilizando la ilustración de la cubierta.
+  milla: (ctx, a) => ILL.milla(ctx, a, { bg: '#2D5A3D', fg: '#F2EEDC', accent: '#E8D59A', foil: '#E8D59A', light: false, ink: '#F2EEDC' }),
+};
+const stillCache = new Map<string, string>();
+export const stillURL = (key: string, w = 900) => {
+  const id = `${key}-${w}`;
+  let u = stillCache.get(id);
+  if (!u) {
+    const c = document.createElement('canvas');
+    c.width = w;
+    c.height = Math.round((w * 9) / 16);
+    const ctx = c.getContext('2d')!;
+    STILLS[key](ctx, { x: 0, y: 0, w: c.width, h: c.height });
+    // viñeta y grano de película
+    const v = ctx.createRadialGradient(c.width / 2, c.height / 2, c.height * 0.3, c.width / 2, c.height / 2, c.width * 0.62);
+    v.addColorStop(0, 'rgba(0,0,0,0)');
+    v.addColorStop(1, 'rgba(0,0,0,0.5)');
+    ctx.fillStyle = v;
+    ctx.fillRect(0, 0, c.width, c.height);
+    u = c.toDataURL('image/jpeg', 0.92);
+    stillCache.set(id, u);
+  }
+  return u;
+};

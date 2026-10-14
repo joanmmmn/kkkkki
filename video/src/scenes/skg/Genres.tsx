@@ -1,5 +1,7 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, random, spring, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentFrame } from 'remotion';
+import { stillURL } from './covers';
+import { useFontsReady } from './three/lib3d';
 import { clamp, easeInOut, easeOut, keyframes } from '../../lib/anim';
 import { Sfx } from '../../components/Sfx';
 import { MaskTitle } from '../nxr/kit';
@@ -165,9 +167,9 @@ export const Territories: React.FC = () => {
 
 // ——— FILMS · G11 · Lo has visto en el cine ———
 const FILMS = [
-  { t: 'Cadena perpetua', y: 1994, from: 'de «Las cuatro estaciones»', word: 'Cadena' },
-  { t: 'Cuenta conmigo', y: 1986, from: 'de «Las cuatro estaciones»', word: 'Cuenta' },
-  { t: 'La milla verde', y: 1999, from: 'de «La milla verde»', word: 'milla' },
+  { t: 'Cadena perpetua', y: 1994, from: 'de «Las cuatro estaciones»', word: 'Cadena', still: 'cadena' },
+  { t: 'Cuenta conmigo', y: 1986, from: 'de «Las cuatro estaciones»', word: 'Cuenta', still: 'cuenta' },
+  { t: 'La milla verde', y: 1999, from: 'de «La milla verde»', word: 'milla', still: 'milla' },
 ];
 export const Films: React.FC = () => {
   const frame = useCurrentFrame();
@@ -178,6 +180,7 @@ export const Films: React.FC = () => {
   const fTerror = c.at('G11', 'terror');
   const at = FILMS.map((f) => c.at('G11', f.word));
   const beam = rampOut(frame, 4, 30);
+  const ready = useFontsReady();
   return (
     <SkNight lamp={[960, 160]}>
       {/* haz del proyector */}
@@ -187,26 +190,34 @@ export const Films: React.FC = () => {
         <div style={{ position: 'absolute', left: 0, right: 0, top: 120, textAlign: 'center' }}>
           <MaskTitle text="Seguro que lo has visto" at={6} size={86} align="center" color="#fff" hi={['visto']} />
         </div>
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 330, display: 'flex', justifyContent: 'center', gap: 50 }}>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 310, display: 'flex', justifyContent: 'center', gap: 44 }}>
           {FILMS.map((f, i) => {
             const s = spring({ frame: frame - (8 + i * 6), fps: 50, config: { damping: 14, stiffness: 160 } });
             const named = rampOut(frame, at[i] - 6, at[i] + 8);
             const strike = ramp(frame, fTerror - 8 + i * 4, fTerror + 6 + i * 4);
             const tag = rampOut(frame, fNing - 6 + i * 3, fNing + 6 + i * 3);
             return (
-              <div key={f.t} style={{ width: 470, opacity: s, transform: `translateY(${(1 - s) * 80}px) rotate(${(i - 1) * 2 * s}deg)` }}>
+              <div key={f.t} style={{ width: 540, opacity: s, transform: `translateY(${(1 - s) * 80}px) rotate(${(i - 1) * 2 * s}deg)` }}>
                 {/* fotograma de película */}
                 <div style={{ background: '#0E0E10', borderRadius: 18, padding: '30px 0', boxShadow: '0 30px 60px rgba(0,0,0,0.6)', position: 'relative', overflow: 'hidden' }}>
                   {[0, 1].map((side) => (
                     <div key={side} style={{ position: 'absolute', left: 0, right: 0, [side ? 'bottom' : 'top']: 8, height: 14, display: 'flex', justifyContent: 'space-around' }}>
-                      {Array.from({ length: 12 }).map((_, k) => <div key={k} style={{ width: 18, height: 14, borderRadius: 3, background: '#2A2A2E' }} />)}
+                      {Array.from({ length: 14 }).map((_, k) => <div key={k} style={{ width: 18, height: 14, borderRadius: 3, background: '#2A2A2E' }} />)}
                     </div>
                   ))}
-                  <div style={{ margin: '0 18px', height: 260, borderRadius: 8, background: `linear-gradient(160deg, ${['#36404F', '#3F4A3A', '#2D4A3A'][i]} 0%, #16181C 100%)`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                    <div style={{ position: 'absolute', inset: 0, borderRadius: 8, background: `rgba(255,236,190,${0.06 + 0.05 * Math.abs(Math.sin(frame / 3 + i))})`, opacity: 1 - named }} />
-                    <MiniIcon kind="film" size={64} c="rgba(255,255,255,0.35)" />
-                    <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: '#fff', marginTop: 14, textAlign: 'center', padding: '0 20px', opacity: named, transform: `translateY(${(1 - named) * 14}px)` }}>{f.t}</div>
-                    <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 30, color: 'rgba(255,255,255,0.65)', opacity: named }}>{f.y}</div>
+                  <div style={{ margin: '0 18px', height: 284, borderRadius: 6, background: '#0A0B0D', position: 'relative', overflow: 'hidden' }}>
+                    {/* fotograma ilustrado: se «proyecta» al nombrar la película */}
+                    {ready && <Img src={stillURL(f.still)} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: named * (0.86 + 0.14 * Math.abs(Math.sin(frame / 2.3 + i * 2))),
+                      transform: `scale(${1.08 - 0.06 * named + 0.004 * Math.sin(frame / 3 + i)}) translate(${Math.sin(frame / 5 + i) * 0.8}px, ${Math.cos(frame / 4 + i) * 0.6}px)` }} />}
+                    {/* fogonazo del proyector al arrancar */}
+                    <div style={{ position: 'absolute', inset: 0, background: '#FFF6DC', opacity: Math.max(0, 1 - Math.abs(frame - at[i] + 2) / 5) * 0.75 }} />
+                    {/* antes de nombrarla: pantalla con ruido */}
+                    <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${staticFile('pdr/img/grain.png')})`, backgroundSize: '256px', backgroundPosition: `${(frame * 37) % 256}px ${(frame * 53) % 256}px`, opacity: 0.35 * (1 - named) + 0.12 }} />
+                    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '40px 20px 14px', background: 'linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.78))', opacity: named, transform: `translateY(${(1 - named) * 14}px)` }}>
+                      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 42, color: '#fff', lineHeight: 1.05 }}>{f.t}</div>
+                      <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 26, color: 'rgba(255,255,255,0.72)' }}>{f.y}</div>
+                    </div>
+                    {named < 0.5 && <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 1 - named * 2 }}><MiniIcon kind="film" size={64} c="rgba(255,255,255,0.3)" /></div>}
                   </div>
                 </div>
                 <div style={{ marginTop: 22, textAlign: 'center', fontFamily: font.sans, fontWeight: 500, fontSize: 34, color: 'rgba(255,255,255,0.85)', opacity: rampOut(frame, fSalen - 4 + i * 4, fSalen + 10 + i * 4) }}>{f.from}</div>

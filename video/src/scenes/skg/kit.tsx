@@ -7,7 +7,7 @@ import { clamp, easeInOut, easeOut, Key, keyframes } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
 
 // ————————————————————————————————————————————————————————————————
-// «AUTOR: Por dónde y cómo empezar a leer» · sistema visual del episodio de Stephen King.
+// «Por dónde y cómo empezar a leer» · sistema visual del episodio de Stephen King.
 // Base SonorBooks (blanco cálido, amarillo #FFCA05, tinta, Ubuntu) + un rojo de episodio para el miedo y los hilos,
 // y el escenario «noche» de la marca para el gancho y el tablero de conexiones.
 // ————————————————————————————————————————————————————————————————
@@ -17,7 +17,7 @@ export const KR_DEEP = '#7A0A12';
 export const KR_SOFT = '#FBE7E8';
 export const PAPER = '#F6F1E7';
 
-export const SERIES = 'AUTOR · Por dónde y cómo empezar a leer';
+export const SERIES = 'Por dónde y cómo empezar a leer';
 
 // Fondo claro del episodio: el cálido de SonorBooks con un halo rojo muy tenue abajo a la izquierda y grano fino.
 export const SkStage: React.FC<{ children?: React.ReactNode; still?: boolean; redGlow?: number }> = ({ children, still = false, redGlow = 1 }) => {

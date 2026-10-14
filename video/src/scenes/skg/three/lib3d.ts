@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { useEffect, useState } from 'react';
-import { continueRender, delayRender } from 'remotion';
+import { continueRender, delayRender, getInputProps } from 'remotion';
 import { loadBrandFonts } from '../../../brand/fonts';
 
 // ————————————————————————————————————————————————————————————————
@@ -10,6 +10,9 @@ import { loadBrandFonts } from '../../../brand/fonts';
 // ————————————————————————————————————————————————————————————————
 
 loadBrandFonts();
+
+// En el render de solo audio no hace falta dibujar WebGL (y es lo más lento): --props='{"audioOnly":true}'.
+export const AUDIO_ONLY = Boolean((getInputProps() as { audioOnly?: boolean }).audioOnly);
 
 export const SANS = 'Ubuntu';
 export const SERIF = '"EB Garamond"';

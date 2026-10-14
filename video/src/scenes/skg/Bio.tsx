@@ -17,6 +17,7 @@ export const NOVEL_YEARS = [1974, 1975, 1977, 1977, 1978, 1979, 1979, 1980, 1981
 // los pueblos inventados de sus libros. Con «inviernos largos» empieza a nevar; con «esconden algo», una ventana se enciende.
 type P2 = [number, number];
 const ME = geo.pts as unknown as Record<string, P2>;
+const ME_C: P2 = [1606, 236]; // centro aproximado de Maine en el mapa
 export const Maine: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('MAINE');
@@ -48,15 +49,25 @@ export const Maine: React.FC = () => {
     { k: 'salemslot', label: "Salem's Lot", at: fMaine + 26, left: false },
   ];
   const snow = ramp(frame, fInv - 6, fInv + 30);
+  const lift = ramp(frame, fNac - 4, fPort + 10);
   const yearCard = rampOut(frame, fPort + 8, fPort + 22);
   return (
     <SkStage>
       <AbsoluteFill style={{ transform: `translate(${cx}px, ${cy}px) scale(${cs})`, transformOrigin: '50% 50%' }}>
         <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0, overflow: 'visible' }}>
-          {geo.states.map((s: { name: string; d: string }) => (
-            <path key={s.name} d={s.d} fill={s.name === 'Maine' ? color.yellow : '#ECEAE4'} stroke="#FFFFFF" strokeWidth={1.4} vectorEffect="non-scaling-stroke" />
+          <defs>
+            <filter id="me-shadow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2" /></filter>
+            <linearGradient id="me-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FFD84A" /><stop offset="1" stopColor="#F2B800" /></linearGradient>
+          </defs>
+          {geo.states.filter((s: { name: string }) => s.name !== 'Maine').map((s: { name: string; d: string }) => (
+            <path key={s.name} d={s.d} fill="#ECEAE4" stroke="#FFFFFF" strokeWidth={1.4} vectorEffect="non-scaling-stroke" />
           ))}
-          <path d={geo.maine} fill="none" stroke={color.ink} strokeWidth={2.2} vectorEffect="non-scaling-stroke" opacity={ramp(frame, fNac, fPort)} />
+          {/* Maine se levanta del mapa: sombra proyectada y relleno con degradado */}
+          <path d={geo.maine} fill="rgba(40,30,0,0.35)" filter="url(#me-shadow)" transform={`translate(${1.6 * lift} ${2.6 * lift})`} opacity={lift} />
+          <g transform={`translate(${ME_C[0]} ${ME_C[1]}) scale(${1 + 0.035 * lift}) translate(${-ME_C[0]} ${-ME_C[1]}) translate(${-0.8 * lift} ${-1.4 * lift})`}>
+            <path d={geo.maine} fill="url(#me-fill)" stroke="#FFFFFF" strokeWidth={1.4} vectorEffect="non-scaling-stroke" />
+            <path d={geo.maine} fill="none" stroke={color.ink} strokeWidth={2.2} vectorEffect="non-scaling-stroke" opacity={ramp(frame, fNac, fPort)} />
+          </g>
         </svg>
       </AbsoluteFill>
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 35% 50%, rgba(24,34,52,0.55) 0%, rgba(14,20,32,0.88) 100%)', opacity: snow }} />
@@ -127,6 +138,76 @@ export const Maine: React.FC = () => {
 
 // ——— CARRIE · G06–G07 ———
 // Pizarra de clase → máquina de escribir de noche → las páginas a la papelera → Tabitha las rescata → Carrie (1974).
+// Máquina de escribir ilustrada (cuerpo con volumen, teclas de marfil que se hunden, cesta de tipos y carro que avanza).
+const TW_ROWS = [11, 10, 9, 8];
+const TW_KEYS = TW_ROWS.flatMap((n, r) => Array.from({ length: n }).map((_, k) => ({ r, k, x: 300 - ((n - 1) * 40) / 2 + k * 40 + (r % 2) * 6, y: 262 + r * 34 })));
+const Typewriter: React.FC<{ w: number; pressed: number; carX: number; lamp?: number }> = ({ w, pressed, carX, lamp = 1 }) => {
+  const id = 'tw';
+  return (
+    <svg width={w} height={w * 0.72} viewBox="0 0 600 432" style={{ overflow: 'visible', display: 'block' }}>
+      <defs>
+        <linearGradient id={`${id}-body`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3A3D44" /><stop offset="0.55" stopColor="#24262B" /><stop offset="1" stopColor="#141518" /></linearGradient>
+        <linearGradient id={`${id}-roll`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#4A4D55" /><stop offset="0.35" stopColor="#15161A" /><stop offset="0.7" stopColor="#0C0D10" /><stop offset="1" stopColor="#2E3036" /></linearGradient>
+        <linearGradient id={`${id}-chrome`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#F4F4F2" /><stop offset="0.5" stopColor="#9EA2A8" /><stop offset="1" stopColor="#5C6066" /></linearGradient>
+        <radialGradient id={`${id}-key`} cx="0.4" cy="0.35" r="0.7"><stop offset="0" stopColor="#FFFBEF" /><stop offset="0.7" stopColor="#E8DFCB" /><stop offset="1" stopColor="#B9AE96" /></radialGradient>
+        <radialGradient id={`${id}-shine`} cx="0.3" cy="0" r="0.9"><stop offset="0" stopColor={`rgba(255,220,160,${0.28 * lamp})`} /><stop offset="1" stopColor="rgba(255,220,160,0)" /></radialGradient>
+      </defs>
+      {/* sombra en la mesa */}
+      <ellipse cx="300" cy="418" rx="300" ry="20" fill="rgba(0,0,0,0.55)" />
+      {/* carro: rodillo, pomos y palanca (se desplaza al escribir) */}
+      <g transform={`translate(${carX} 0)`}>
+        <rect x="18" y="118" width="564" height="44" rx="22" fill={`url(#${id}-roll)`} />
+        <rect x="18" y="124" width="564" height="6" rx="3" fill="rgba(255,255,255,0.12)" />
+        {[0, 1].map((k) => <g key={k}><rect x={k ? 572 : -6} y="112" width="34" height="56" rx="10" fill={`url(#${id}-chrome)`} /><rect x={k ? 578 : 0} y="118" width="22" height="44" rx="6" fill="rgba(0,0,0,0.25)" /></g>)}
+        <path d="M-4 128 Q -60 110 -70 70" stroke={`url(#${id}-chrome)`} strokeWidth="10" fill="none" strokeLinecap="round" />
+        <rect x="150" y="158" width="300" height="10" rx="4" fill={`url(#${id}-chrome)`} />
+      </g>
+      {/* cuerpo */}
+      <path d="M58 168 L542 168 Q566 170 572 196 L596 382 Q598 404 574 404 L26 404 Q2 404 4 382 L28 196 Q34 170 58 168 Z" fill={`url(#${id}-body)`} />
+      <path d="M58 168 L542 168 Q566 170 572 196 L574 206 L26 206 L28 196 Q34 170 58 168 Z" fill="rgba(255,255,255,0.06)" />
+      <path d="M40 232 L560 232" stroke="rgba(255,255,255,0.08)" strokeWidth="2" />
+      {/* cesta de tipos */}
+      <path d="M200 206 Q300 150 400 206 Z" fill="#0B0C0E" />
+      {Array.from({ length: 21 }).map((_, k) => {
+        const a = Math.PI + (k / 20) * Math.PI;
+        return <path key={k} d={`M${300 + Math.cos(a) * 30} ${206 + Math.sin(a) * 18} L${300 + Math.cos(a) * 92} ${206 + Math.sin(a) * 52}`} stroke="#6E727A" strokeWidth="2" />;
+      })}
+      {/* marca */}
+      <rect x="282" y="218" width="36" height="8" rx="4" fill="rgba(226,192,114,0.6)" />
+      {/* teclado */}
+      {TW_KEYS.map((kk, i) => {
+        const down = i === pressed ? 1 : 0;
+        return (
+          <g key={i} transform={`translate(0 ${down * 3})`}>
+            <rect x={kk.x - 1.5} y={kk.y + 6} width="3" height="16" fill="#0A0A0C" />
+            <circle cx={kk.x} cy={kk.y} r="15" fill={`url(#${id}-chrome)`} />
+            <circle cx={kk.x} cy={kk.y} r="12.5" fill={down ? '#CFC4AC' : `url(#${id}-key)`} />
+            <text x={kk.x} y={kk.y + 4} textAnchor="middle" fontFamily="Ubuntu" fontWeight="700" fontSize="11" fill="rgba(30,30,30,0.7)">{'QWERTYUIOPASDFGHJKLÑZXCVBNM,.-;:'[i % 32]}</text>
+          </g>
+        );
+      })}
+      <rect x="170" y="384" width="260" height="14" rx="7" fill={`url(#${id}-chrome)`} />
+      <rect x="40" y="168" width="520" height="236" fill={`url(#${id}-shine)`} />
+    </svg>
+  );
+};
+
+// Papelera de rejilla metálica.
+const Wastebasket: React.FC<{ w: number }> = ({ w }) => (
+  <svg width={w} height={w * 1.1} viewBox="0 0 220 242" style={{ overflow: 'visible', display: 'block' }}>
+    <defs>
+      <linearGradient id="wb-body" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#2A2C31" /><stop offset="0.35" stopColor="#5A5E66" /><stop offset="0.6" stopColor="#3A3D44" /><stop offset="1" stopColor="#1C1D21" /></linearGradient>
+      <pattern id="wb-mesh" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="none" /><path d="M0 0 L0 12" stroke="rgba(255,255,255,0.16)" strokeWidth="2" /></pattern>
+    </defs>
+    <ellipse cx="110" cy="236" rx="96" ry="10" fill="rgba(0,0,0,0.5)" />
+    <path d="M14 30 L36 228 Q110 244 184 228 L206 30 Z" fill="url(#wb-body)" />
+    <path d="M14 30 L36 228 Q110 244 184 228 L206 30 Z" fill="url(#wb-mesh)" />
+    <ellipse cx="110" cy="30" rx="96" ry="20" fill="#0D0E10" />
+    <ellipse cx="110" cy="30" rx="96" ry="20" fill="none" stroke="#9EA2A8" strokeWidth="6" />
+    <ellipse cx="110" cy="232" rx="74" ry="9" fill="none" stroke="#6E727A" strokeWidth="5" />
+  </svg>
+);
+
 export const CarrieOrigin: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('CARRIE');
@@ -160,8 +241,14 @@ export const CarrieOrigin: React.FC = () => {
   const [px, py] = paperPos(fly);
   const typed = Math.round(interpolate(frame, [fEscr + 4, fTiro - 6], [0, 7], clamp));
   const keyTimes = Array.from({ length: 14 }).map((_, i) => Math.round(fEscr + 4 + i * ((fTiro - 10 - fEscr) / 14)));
+  const hits = keyTimes.filter((t) => frame >= t).length;
+  const lastHit = keyTimes[hits - 1] ?? -99;
+  const pressed = frame - lastHit < 4 ? Math.floor(random(`k${hits}`) * TW_KEYS.length) : -1;
+  // el carro avanza a la izquierda con cada tecla y vuelve al sonar la campanilla
+  const carRet = ramp(frame, fTiro - 10, fTiro - 2, easeInOut);
+  const carX = -(hits % 15) * 9 * (1 - carRet) + 0;
   const book = spring({ frame: frame - (fKeri - 6), fps: 50, config: { damping: 15, stiffness: 120 } });
-  const spin = interpolate(frame, [fKeri - 6, fKeri + 40, c.dur], [-160, -16, -8], { ...clamp, easing: easeOut });
+  const spin = interpolate(frame, [fKeri - 6, fKeri + 40, c.dur], [-120, -16, -8], { ...clamp, easing: easeOut });
   const yearIn = spring({ frame: frame - fCuat + 6, fps: 50, config: { damping: 12, stiffness: 190 } });
   const rays = ramp(frame, fVida - 4, fVida + 20);
   return (
@@ -185,19 +272,20 @@ export const CarrieOrigin: React.FC = () => {
         {/* Escritorio de noche: máquina de escribir y hoja */}
         {night > 0.01 && (
           <AbsoluteFill style={{ opacity: night }}>
-            <div style={{ position: 'absolute', left: 960 - 300, top: 420, opacity: 1 - toBook, transform: `scale(${1 - toBook * 0.2})`, transformOrigin: '50% 80%' }}>
-              <CoverIcon kind="typewriter" size={600} c={'#E9E2D2'} sw={0.8} />
+            {/* escritorio de madera y luz del flexo */}
+            <div style={{ position: 'absolute', left: -200, right: -200, top: 838, bottom: -200, background: 'linear-gradient(180deg, #4A2F1D 0%, #2A1A10 40%, #120B07 100%)', opacity: 1 - toBook }} />
+            <div style={{ position: 'absolute', left: 960 - 700, top: 560, width: 1400, height: 520, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(255,214,140,0.22) 0%, rgba(255,214,140,0.06) 45%, rgba(255,214,140,0) 70%)', opacity: 1 - toBook }} />
+            <div style={{ position: 'absolute', left: 960 - 380 + 0, top: 388, opacity: 1 - toBook, transform: `scale(${1 - toBook * 0.2})`, transformOrigin: '50% 80%', zIndex: 2 }}>
+              <Typewriter w={760} pressed={pressed} carX={carX} />
             </div>
             {/* papelera */}
-            <svg width="220" height="240" viewBox="0 0 220 240" style={{ position: 'absolute', left: 1310, top: 600, opacity: (1 - toBook) * rampOut(frame, fTiro - 10, fTiro + 6) }}>
-              <path d="M20 30h180l-20 200H40z" fill="#3B3E44" stroke="#5A5E66" strokeWidth="4" />
-              <path d="M20 30h180" stroke="#7A7E86" strokeWidth="8" strokeLinecap="round" />
-              {[0, 1, 2, 3, 4].map((k) => <path key={k} d={`M${55 + k * 28} 50 L${62 + k * 24} 215`} stroke="#4C5058" strokeWidth="5" />)}
-            </svg>
+            <div style={{ position: 'absolute', left: 1330, top: 640, opacity: (1 - toBook) * rampOut(frame, fTiro - 10, fTiro + 6), zIndex: 1 }}>
+              <Wastebasket w={200} />
+            </div>
             {/* hoja */}
             {(fly < 0.995 || flyBack > 0) && toBook < 0.98 && (
-              <div style={{ position: 'absolute', left: px - 170, top: py - 200, width: 340, height: 440, transform: `scale(${1 - 0.72 * crumple - 0.1 * fly}) rotate(${crumple * 160 + fly * 220}deg)`, opacity: 1 - toBook,
-                filter: crumple > 0.05 ? `url(#crumple)` : undefined }}>
+              <div style={{ position: 'absolute', left: px - 170 + (fly > 0.001 || crumple > 0.001 ? 0 : carX * 1.267), top: py - 200, width: 340, height: 440, transform: `scale(${1 - 0.72 * crumple - 0.1 * fly}) rotate(${crumple * 160 + fly * 220}deg)`, opacity: 1 - toBook,
+                filter: crumple > 0.05 ? `url(#crumple)` : undefined, zIndex: fly > 0.001 || crumple > 0.02 ? 3 : 1 }}>
                 <div style={{ position: 'absolute', inset: 0, background: PAPER, borderRadius: 4 + crumple * 160, boxShadow: '0 20px 40px rgba(0,0,0,0.45)', overflow: 'hidden' }}>
                   <div style={{ position: 'absolute', left: 34, top: 40, fontFamily: '"Courier New", monospace', fontWeight: 700, fontSize: 30, color: '#222' }}>CARRIE</div>
                   {Array.from({ length: 12 }).map((_, i) => (

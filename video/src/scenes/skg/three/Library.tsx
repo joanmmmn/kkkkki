@@ -12,7 +12,7 @@ import { color, font, Grain, KR, NOVELS } from '../kit';
 import { NOVEL_YEARS } from '../Bio';
 import { sceneClock } from '../timeline';
 import { Book, bookGeo, bookMaterials, plateTex, sheetTex, ShelfBook, woodTex } from './books3d';
-import { camAt, CamKey, easeO, handheld, hash, lerp, ramp01, rng, useFontsReady, V3 } from './lib3d';
+import { camAt, CamKey, easeO, handheld, hash, lerp, ramp01, rng, useFontsReady, V3, AUDIO_ONLY } from './lib3d';
 
 // ————————————————————————————————————————————————————————————————
 // HOOK en 3D: la biblioteca de Stephen King se llena (las 64 novelas en orden de publicación), caen los relatos,
@@ -94,11 +94,15 @@ const Env: React.FC<{ intensity: number }> = ({ intensity }) => {
   return null;
 };
 
-export const Rig: React.FC<{ keys: CamKey[]; shake?: number }> = ({ keys, shake = 0.5 }) => {
+export const Rig: React.FC<{ keys: CamKey[]; shake?: number; jolt?: number }> = ({ keys, shake = 0.5, jolt }) => {
   const frame = useCurrentFrame();
   const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera;
   const c = camAt(frame, keys);
   const hh = handheld(frame, shake);
+  if (jolt !== undefined && frame >= jolt && frame < jolt + 30) {
+    const t = frame - jolt;
+    hh[1] += -0.9 * Math.exp(-t / 5) * Math.cos(t * 1.3);
+  }
   camera.position.set(c.pos[0] + hh[0], c.pos[1] + hh[1], c.pos[2]);
   camera.fov = c.fov;
   camera.near = 1;
@@ -144,6 +148,9 @@ export const Bookcase: React.FC<{ W: number; lit?: number; bare?: boolean }> = (
 };
 
 const SHEETS = 130;
+// Los libros entran desde el primer fotograma, uno cada 1,55 fotogramas (64 en unos 2 s).
+const DROP0 = 2;
+const DROP_STEP = 1.55;
 
 // Estanterías vecinas: libros genéricos sin título, en penumbra (10 modelos repetidos para no multiplicar texturas).
 const SIDE_PROTOS: ShelfBook[] = Array.from({ length: 10 }).map((_, k) => {
@@ -180,9 +187,10 @@ const SideCases: React.FC = () => {
 const HookScene: React.FC<{ fNov: number; fRel: number; fSig: number; fQ: number; fPor: number; dur: number; ySweep: [number, number] }> = ({ fNov, fRel, fSig, fQ, fPor, dur, ySweep }) => {
   const frame = useCurrentFrame();
   const { placed, W } = LAYOUT;
-  const dropAt = (i: number) => fNov - 30 + i * 1.18;
-  const lamp = ramp01(frame, 2, 34) * (1 - 0.12 * ramp01(frame, fQ, fPor));
-  const flick = frame < 34 ? 0.82 + 0.18 * Math.abs(Math.sin(frame * 1.7)) : 1;
+  const dropAt = (i: number) => DROP0 + i * DROP_STEP;
+  const lamp = (0.55 + 0.45 * ramp01(frame, 0, 14)) * (1 - 0.12 * ramp01(frame, fQ, fPor));
+  const flick = 1;
+  void fNov;
   // Año que corre de 1974 a 2026 y los libros/placas que se encienden a su paso.
   const yearNow = lerp(1974, 2026, ramp01(frame, ySweep[0], ySweep[1], (t) => 1 - Math.pow(1 - t, 2)));
   const sweeping = ramp01(frame, ySweep[0] - 6, ySweep[0] + 6) * (1 - ramp01(frame, ySweep[1] + 10, ySweep[1] + 40));
@@ -253,18 +261,18 @@ const HookScene: React.FC<{ fNov: number; fRel: number; fSig: number; fQ: number
         const rx = Math.sin(t / 13 + ph) * 1.15 + 0.35;
         const ry = ph + t * (r() - 0.5) * 0.05;
         const rz = Math.sin(t / 19 + ph * 2) * 0.55;
-        return <mesh key={i} geometry={sheetGeo} material={sheetMats[i % 6]} position={[x, y, z]} rotation={[rx, ry, rz]} castShadow={i % 4 === 0} />;
+        return <mesh key={i} geometry={sheetGeo} material={sheetMats[i % 6]} position={[x, y, z]} rotation={[rx, ry, rz]} castShadow={false} />;
       })}
     </>
   );
 };
 
-const QUESTIONS: { t: string; x: number; y: number; d: number }[] = [
-  { t: '¿It o El resplandor?', x: 520, y: 290, d: 0.9 },
-  { t: '¿Hay que leerlo en orden?', x: 1400, y: 250, d: 1.1 },
-  { t: '¿Cuál da más miedo?', x: 1270, y: 560, d: 0.8 },
-  { t: '¿Y si no me gusta el terror?', x: 600, y: 730, d: 1.15 },
-  { t: '¿Por cuál empiezo?', x: 1430, y: 845, d: 0.95 },
+const QUESTIONS: { t: string; x: number; y: number; d: number; r: number }[] = [
+  { t: '¿It o El resplandor?', x: 540, y: 280, d: 0.98, r: -3 },
+  { t: '¿Hay que leerlo en orden?', x: 1390, y: 250, d: 1.03, r: 2.5 },
+  { t: '¿Cuál da más miedo?', x: 1300, y: 575, d: 0.96, r: -2 },
+  { t: '¿Y si no me gusta el terror?', x: 610, y: 735, d: 1.04, r: 3 },
+  { t: '¿Por cuál empiezo?', x: 1400, y: 860, d: 1, r: -1.5 },
 ];
 
 export const Hook3D: React.FC = () => {
@@ -294,7 +302,7 @@ export const Hook3D: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#0B0C0E' }}>
       <AbsoluteFill style={{ filter: dim > 0.01 ? `blur(${(dim * 7).toFixed(2)}px) brightness(${(1 - dim * 0.42).toFixed(3)})` : undefined, transform: `scale(${1 + dim * 0.03})` }}>
-        {ready && !BENCH.noGL && (
+        {ready && !BENCH.noGL && !AUDIO_ONLY && (
           <ThreeCanvas width={1920} height={1080} shadows dpr={BENCH.dpr ?? undefined} gl={{ antialias: BENCH.aa ?? false, powerPreference: 'high-performance' }} camera={{ fov: 34, position: [0, 0, 100] }}>
             <HookScene fNov={fNov} fRel={fRel} fSig={fSig} fQ={fQ} fPor={fPor} dur={c.dur} ySweep={ySweep} />
           </ThreeCanvas>
@@ -303,7 +311,7 @@ export const Hook3D: React.FC = () => {
       {BENCH.bare ? null : <>
       {/* viñeta y grano de película */}
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.62) 100%)', pointerEvents: 'none' }} />
-      <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(11,12,14,${1 - ramp01(frame, 0, 26)}) 0%, rgba(11,12,14,${1 - ramp01(frame, 0, 26)}) 100%)` }} />
+      {frame < 10 && <AbsoluteFill style={{ background: '#0B0C0E', opacity: 1 - ramp01(frame, 0, 9) }} />}
       {!BENCH.noOv && <Grain seed={Math.floor(frame / 2)} opacity={0.1} />}
       {/* Cifras */}
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
@@ -320,19 +328,22 @@ export const Hook3D: React.FC = () => {
           </div>
         ))}
       </AbsoluteFill>
-      {/* Las dudas de siempre: tarjetas de cristal a distintas profundidades */}
+      {/* Las dudas de siempre: fichas de papel (como las de una biblioteca) a distintas profundidades */}
       {frame >= fQ && frame < fPor + 30 && QUESTIONS.map((q, k) => {
         const a = fQ + 8 + k * 16;
-        const s = spring({ frame: frame - a, fps: 50, config: { damping: 15, stiffness: 150 } });
+        const s = spring({ frame: frame - a, fps: 50, config: { damping: 13, stiffness: 160 } });
         const o = ramp01(frame, fPor - 10, fPor + 8);
         if (frame < a) return null;
-        const drift = (frame - a) * 0.12 * (q.x < 960 ? -1 : 1) * q.d;
+        const drift = (frame - a) * 0.1 * (q.x < 960 ? -1 : 1) * q.d;
         return (
-          <div key={k} style={{ position: 'absolute', left: q.x + drift, top: q.y - (frame - a) * 0.06 * q.d, transform: `translate(-50%, -50%) scale(${(0.82 + 0.18 * s) * q.d * (1 + 0.15 * o)})`, opacity: s * (1 - o),
-            filter: o > 0.01 || s < 0.98 ? `blur(${(o * 10 + (1 - s) * 6).toFixed(2)}px)` : undefined }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 18, background: 'rgba(22,23,27,0.58)', backdropFilter: 'blur(14px)', border: '1px solid rgba(255,255,255,0.16)', color: '#fff',
-              fontFamily: font.sans, fontWeight: 700, fontSize: 38, padding: '18px 32px 18px 18px', borderRadius: 24, boxShadow: '0 30px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.12)', whiteSpace: 'nowrap' }}>
-              <div style={{ width: 46, height: 46, borderRadius: '50%', background: k === 4 ? color.yellow : KR, color: k === 4 ? color.ink : '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 30 }}>?</div>
+          <div key={k} style={{ position: 'absolute', left: q.x + drift, top: q.y - (frame - a) * 0.05 * q.d + (1 - s) * 40, transform: `translate(-50%, -50%) rotate(${q.r * s + (1 - s) * q.r * 3}deg) scale(${(0.86 + 0.14 * s) * q.d * (1 + 0.12 * o)})`, opacity: Math.min(1, s * 1.6) * (1 - o),
+            filter: o > 0.01 ? `blur(${(o * 10).toFixed(2)}px)` : undefined }}>
+            <div style={{ position: 'relative', background: '#F4ECDA', color: '#1E1A14', fontFamily: font.serif, fontStyle: 'italic', fontWeight: 500, fontSize: 50, lineHeight: 1, padding: '34px 44px 26px', borderRadius: 4, whiteSpace: 'nowrap',
+              boxShadow: '0 28px 50px rgba(0,0,0,0.55), 0 2px 0 rgba(0,0,0,0.15)',
+              backgroundImage: 'linear-gradient(180deg, rgba(193,18,31,0.55) 0px, rgba(193,18,31,0.55) 2px, transparent 2px), repeating-linear-gradient(180deg, transparent 0px, transparent 31px, rgba(70,110,170,0.22) 31px, rgba(70,110,170,0.22) 33px)',
+              backgroundPosition: '0 18px, 0 18px', backgroundRepeat: 'no-repeat, repeat' }}>
+              {/* chincheta */}
+              <div style={{ position: 'absolute', left: '50%', top: -12, width: 26, height: 26, marginLeft: -13, borderRadius: '50%', background: 'radial-gradient(circle at 35% 30%, #FF6B6B, #C1121F 55%, #6A0810)', boxShadow: '0 6px 8px rgba(0,0,0,0.45)' }} />
               {q.t}
             </div>
           </div>
@@ -348,9 +359,8 @@ export const Hook3D: React.FC = () => {
       )}
       {/* Sonido */}
       <Sfx name="click" at={3} volume={0.8} />
-      <Sfx name="reverse_swell" at={fNov - 30} volume={0.5} />
-      {LAYOUT.placed.filter((_, i) => i % 5 === 0).map((p) => <Sfx key={p.i} name="sk_book_slide" at={Math.round(fNov - 30 + p.i * 1.18) + 2} volume={0.32 + 0.12 * ((p.i / 5) % 3)} />)}
-      {LAYOUT.placed.filter((_, i) => i % 9 === 4).map((p) => <Sfx key={`t${p.i}`} name="sk_book_thud" at={Math.round(fNov - 30 + p.i * 1.18) + 10} volume={0.28} />)}
+      {LAYOUT.placed.filter((_, i) => i % 5 === 0).map((p) => <Sfx key={p.i} name="sk_book_slide" at={Math.round(DROP0 + p.i * DROP_STEP) + 2} volume={0.32 + 0.12 * ((p.i / 5) % 3)} />)}
+      {LAYOUT.placed.filter((_, i) => i % 9 === 4).map((p) => <Sfx key={`t${p.i}`} name="sk_book_thud" at={Math.round(DROP0 + p.i * DROP_STEP) + 10} volume={0.28} />)}
       <Sfx name="hit_soft" at={fNov} volume={0.7} />
       <Sfx name="page_riffle" at={fRel - 4} volume={0.9} />
       <Sfx name="page_turn" at={fRel + 18} volume={0.5} />
@@ -358,7 +368,7 @@ export const Hook3D: React.FC = () => {
       <ChangeTicks value={(f) => String(Math.round(lerp(1974, 2026, ramp01(f, ySweep[0], ySweep[1], (t) => 1 - Math.pow(1 - t, 2))) / 2))} from={ySweep[0]} to={ySweep[1]} volume={0.5} />
       <Sfx name="shimmer" at={fSig + 4} volume={0.4} />
       <Sfx name="whoosh_deep" at={fQ + 2} volume={0.55} />
-      {QUESTIONS.map((_, k) => <Sfx key={`q${k}`} name="ui_pop" at={fQ + 9 + k * 16} volume={0.5} />)}
+      {QUESTIONS.map((_, k) => <Sfx key={`q${k}`} name="sk_pin" at={fQ + 10 + k * 16} volume={0.45} />)}
       <Sfx name="impact" at={fKing} volume={0.55} />
       </>}
     </AbsoluteFill>

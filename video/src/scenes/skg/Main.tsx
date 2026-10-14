@@ -36,14 +36,20 @@ const SceneShell: React.FC<{ dur: number; over: number; tin: Tr; tout: Tr; child
   const scale = (pushIn ? 0.965 + 0.035 * pin : 1) * (pushOut ? 1 + 0.045 * pout : 1);
   const blur = (pushIn ? (1 - pin) * 6 : 0) + (pushOut ? pout * 8 : 0);
   const filters = [mb > 0.4 ? `url(#s${id})` : '', blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : ''].filter(Boolean).join(' ');
+  // «dip»: fundido a negro de 12 fotogramas al salir y desde negro al entrar (las escenas oscuras en 3D).
+  const dipIn = tin === 'dip' ? 1 - interpolate(frame, [0, 12], [0, 1], { ...clamp, easing: easeOut }) : 0;
+  const dipOut = tout === 'dip' ? interpolate(frame, [dur - 12, dur], [0, 1], clamp) : 0;
+  const dip = Math.max(dipIn, dipOut);
   return (
     <>
+      {(tin === 'dip' || tout === 'dip') && <AbsoluteFill style={{ background: '#000' }} />}
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs><filter id={`s${id}`} x="-5%" y="0" width="110%" height="100%"><feGaussianBlur stdDeviation={`${mb.toFixed(1)} 0`} /></filter></defs>
       </svg>
       <AbsoluteFill style={{ transform: `translate(${x.toFixed(2)}px, ${(pushIn ? (1 - pin) * 14 : 0).toFixed(2)}px) scale(${scale})`, filter: filters || undefined, opacity: fadeIn * fadeOut }}>
         {children}
       </AbsoluteFill>
+      {dip > 0.001 && <AbsoluteFill style={{ background: '#000', opacity: dip }} />}
     </>
   );
 };
@@ -116,6 +122,7 @@ export const StephenKingGuide: React.FC = () => {
       })}
       {SKG_SCENES.slice(1).map((s) => (s.bump ? null
         : s.tin === 'cut' ? <Sfx key={s.id} name="swipe" at={skgStart(s.id)} volume={0.9} />
+        : s.tin === 'dip' ? <Sfx key={s.id} name="whoosh_soft" at={skgStart(s.id) - 6} volume={0.45} />
         : <Sfx key={s.id} name="transition" at={skgStart(s.id) + (s.tin === 'slide' ? 0 : 1)} volume={0.6} />))}
       {SKG_MUSIC && (!STEM || STEM === 'music') && <Audio src={staticFile(SKG_MUSIC)} volume={musicVolume} />}
     </AbsoluteFill>
