@@ -1,0 +1,119 @@
+{
+ "id": "W14",
+ "hash": "78c7a2f34381",
+ "text": "Mientras él escribe, alguien tiene que mantener la casa en pie. Y aquí entra la verdadera protagonista de esta historia: Mercedes Barcha.",
+ "duration": 8.88,
+ "words": [
+  {
+   "w": "Mientras",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "él",
+   "s": 0.48,
+   "e": 0.56
+  },
+  {
+   "w": "escribe,",
+   "s": 0.64,
+   "e": 1.36
+  },
+  {
+   "w": "alguien",
+   "s": 1.48,
+   "e": 1.84
+  },
+  {
+   "w": "tiene",
+   "s": 1.88,
+   "e": 2.08
+  },
+  {
+   "w": "que",
+   "s": 2.12,
+   "e": 2.16
+  },
+  {
+   "w": "mantener",
+   "s": 2.24,
+   "e": 2.72
+  },
+  {
+   "w": "la",
+   "s": 2.8,
+   "e": 2.88
+  },
+  {
+   "w": "casa",
+   "s": 2.96,
+   "e": 3.12
+  },
+  {
+   "w": "en",
+   "s": 3.2,
+   "e": 3.36
+  },
+  {
+   "w": "pie.",
+   "s": 3.48,
+   "e": 4.08
+  },
+  {
+   "w": "Y",
+   "s": 4.12,
+   "e": 4.16
+  },
+  {
+   "w": "aquí",
+   "s": 4.28,
+   "e": 4.44
+  },
+  {
+   "w": "entra",
+   "s": 4.48,
+   "e": 4.72
+  },
+  {
+   "w": "la",
+   "s": 4.8,
+   "e": 4.88
+  },
+  {
+   "w": "verdadera",
+   "s": 4.96,
+   "e": 5.36
+  },
+  {
+   "w": "protagonista",
+   "s": 5.44,
+   "e": 6.16
+  },
+  {
+   "w": "de",
+   "s": 6.24,
+   "e": 6.32
+  },
+  {
+   "w": "esta",
+   "s": 6.44,
+   "e": 6.56
+  },
+  {
+   "w": "historia:",
+   "s": 6.72,
+   "e": 7.52
+  },
+  {
+   "w": "Mercedes",
+   "s": 7.68,
+   "e": 8.16
+  },
+  {
+   "w": "Barcha.",
+   "s": 8.24,
+   "e": 8.88
+  }
+ ],
+ "speechEnd": 8.781
+}

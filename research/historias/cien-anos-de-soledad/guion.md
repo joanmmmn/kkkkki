@@ -1,0 +1,43 @@
+# La historia detrás del libro · Cien años de soledad — locución final
+
+Guion de trabajo, verificación y fuentes: documento «La historia detrás del libro: Cien años de soledad» en claude.ai (https://claude.ai/code/artifact/f0501c82-cfef-45b5-888f-81a49bf0edda).
+
+Voz: ElevenLabs, Martin Osborne (`D7dkYvH17OKLgp4SLulf`), `eleven_v4`, velocidad 1,08 (algo más pausada que las reseñas, por ser un relato). `say` solo para la pronunciación (Seix Barral, Bonfigli, SonorBooks).
+
+Cambio respecto al primer guion: se quitó que Porrúa recibiera el manuscrito «en un solo paquete» (solo aparece citado de segunda mano); W31 cuenta el mito de Seix Barral.
+
+- **W01** Agosto de mil novecientos sesenta y seis, oficina de correos de Ciudad de México.
+- **W02** Un hombre y una mujer dejan sobre la báscula un paquete de casi seiscientas páginas escritas a máquina. El empleado hace la cuenta: ochenta y dos pesos.
+- **W03** No les llega. Así que hacen algo que hoy parece una locura: abren el paquete, lo parten por la mitad y envían solo una parte.
+- **W04** Ese manuscrito partido en dos acabaría siendo una de las novelas más vendidas de la historia. Esta es la historia de cómo nació Cien años de soledad. Y de lo cerca que estuvo de quedarse en aquella oficina.
+- **W05** En mil novecientos sesenta y cinco, Gabriel García Márquez tiene treinta y ocho años. Es colombiano, vive en Ciudad de México con su mujer, Mercedes Barcha, y sus dos hijos, y ya ha publicado cuatro libros.
+- **W06** Ninguno ha sido un éxito: sus libros venden unos mil ejemplares; dos mil, con suerte. Para pagar las facturas escribe guiones de cine y textos de publicidad.
+- **W07** Pero arrastra una obsesión desde los dieciocho años: una novela sobre la casa de sus abuelos en Aracataca, el pueblo del Caribe colombiano donde se crió. Hasta tiene título provisional: La casa. La ha empezado muchas veces, y muchas veces la ha abandonado. No encuentra la forma de contarla.
+- **W08** Un día de mil novecientos sesenta y cinco, la familia sale en coche hacia Acapulco, de vacaciones. Y en plena carretera, a García Márquez se le aparece de golpe el arranque de la novela: un coronel ante un pelotón de fusilamiento que recuerda la tarde en que su padre lo llevó a conocer el hielo.
+- **W09** De repente sabe cómo contar la historia: con la naturalidad con la que su abuela contaba las cosas más increíbles, como si fueran lo más normal del mundo.
+- **W10** La versión más famosa dice que ahí mismo dio media vuelta, con la familia dentro, y volvió a casa a escribir. Él mismo lo resumió así: «Nunca llegué a Acapulco». Quédate con esa frase, porque al final volveremos sobre ella.
+- **W11** Calcula que le llevará unos seis meses. Le llevará dieciocho.
+- **W12** Se encierra en un cuarto de la casa que bautizan como «la cueva de la mafia» y escribe todos los días. En todo ese tiempo no gana ni un peso.
+- **W13** Sus amigos, el poeta Álvaro Mutis y el novelista Carlos Fuentes, pasan por casa para que les cuente el capítulo en curso. Fuentes lee los primeros capítulos y escribe a una revista mexicana para contar que acaba de leer algo fuera de lo común. Mutis recordaría que Gabo salía del cuarto al atardecer como quien acaba de pelear doce asaltos de boxeo.
+- **W14** Mientras él escribe, alguien tiene que mantener la casa en pie. Y aquí entra la verdadera protagonista de esta historia: Mercedes Barcha.
+- **W15** Primero empeñan el coche, y ese dinero dura unos seis meses. Después van a la casa de empeños las joyas que Mercedes había recibido de su familia. Luego, el televisor.
+- **W16** Hay un detalle que parece sacado de la novela: entre los vecinos que les ayudaron a salir adelante había tres familias de militares. El hombre que escribía sobre un pelotón de fusilamiento tenía en la casa de al lado otro pelotón: uno que le ayudaba a llegar a fin de mes.
+- **W17** Cuando pone el punto final, en agosto de mil novecientos sesenta y seis, la familia debe unos ciento veinte mil pesos, unos diez mil dólares de la época. Años después él diría que ni siquiera sabía cómo había hecho Mercedes para que no faltara comida en casa ni un solo día.
+- **W18** Y así volvemos a la oficina de correos. Un paquete de quinientas noventa cuartillas a doble espacio, en papel corriente, dirigido a Francisco Porrúa, director literario de la Editorial Sudamericana, en Buenos Aires.
+- **W19** Ochenta y dos pesos. No les llega. Parten el paquete en dos y mandan una mitad.
+- **W20** Vuelven a casa y Mercedes reúne lo último que queda por empeñar: el calentador sin el que Gabo no podía escribir, porque decía que lo aguantaba todo menos el frío; su propio secador de pelo; y la batidora. Con eso reúnen lo que falta y envían la otra mitad.
+- **W21** Al salir, Mercedes le suelta una frase que se haría célebre: «Ahora lo único que falta es que esta novela sea mala».
+- **W22** Y aún quedaba un último giro: sin darse cuenta, habían mandado primero la segunda mitad. En Buenos Aires, Porrúa tenía en las manos el final de la novela, y esperaba impaciente el principio.
+- **W23** Porrúa no necesitó llegar al final para decidirse. Contaría después que la publicación quedó decidida desde la primera línea, en el primer párrafo.
+- **W24** Sudamericana hace una apuesta enorme para un autor que vendía mil ejemplares: una primera tirada de ocho mil. El libro se termina de imprimir a finales de mayo de mil novecientos sesenta y siete y llega a las librerías de Buenos Aires a primeros de junio.
+- **W25** Se agota en pocas semanas. Antes de acabar el año ya hay cuatro ediciones y más de cuarenta y dos mil ejemplares. En tres años, más de medio millón.
+- **W26** En mil novecientos ochenta y dos, García Márquez recibe el Premio Nobel de Literatura. Hoy Cien años de soledad supera los cincuenta millones de ejemplares vendidos y se ha traducido a más de cuarenta idiomas. El propio Gabo dijo que, si todos sus lectores se juntaran en un mismo territorio, formarían uno de los veinte países más poblados del mundo.
+- **W27** Durante décadas se negó a vender los derechos para el cine. Creía que la historia no cabía en el tiempo de una película, y que contarla en otro idioma que no fuera el español no le haría justicia.
+- **W28** Casi cinco años después de su muerte, el día en que habría cumplido noventa y dos años, Netflix anunció que sus hijos le habían cedido los derechos. La serie se rodó entera en Colombia y en español. La primera parte se estrenó en diciembre de dos mil veinticuatro, y la segunda cerró la historia en agosto de dos mil veintiséis. Solo con la primera, las ventas del libro en Colombia se dispararon un trescientos por ciento.
+- **W29** Antes de terminar, un último giro. García Márquez contó esta historia muchas veces, y no siempre igual. En unas versiones el envío costaba ochenta y dos pesos; en otras, ochenta y tres. A veces llevaban cuarenta y cinco pesos en el bolsillo; a veces, cincuenta y tres.
+- **W30** Lo de Acapulco tampoco está tan claro. En alguna ocasión contó que sí llegó a la playa y que no tuvo ni un minuto de paz hasta volver a casa. Y su biógrafo Dasso Saldívar no da por buena la media vuelta en la carretera.
+- **W31** Hay más: durante años se repitió que antes la había rechazado la editorial Seix Barral. Pero Carlos Barral dijo que no la leyó hasta que ya estaba publicada.
+- **W32** ¿Exageró Gabo? Probablemente un poco. Pero tiene todo el sentido: el hombre que inventó Macondo contaba su propia vida igual que su novela, con lo increíble como si fuera lo más normal del mundo.
+- **W33** Y si quieres entrar en Macondo como se contaban las historias en casa de los abuelos de Gabo, en voz alta, tienes el audiolibro en español. Y no uno, sino tres narraciones: la de Gustavo Bonfigli, la del actor colombiano Juan Pablo Raba y una versión a varias voces.
+- **W34** En sonorbooks.com las comparas y ves en qué plataformas puedes escuchar cada una, incluidas las que tienen prueba gratuita. Tienes el enlace en la descripción, junto al artículo del blog con toda esta historia y sus fuentes.
+- **W35** Esto ha sido «La historia detrás del libro». ¿De qué libro quieres que contemos la historia en el próximo episodio? Déjalo en los comentarios.

@@ -1,0 +1,51 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 22828,
+ "end_frame": 25156,
+ "levels": [
+  -16.5
+ ],
+ "tail": false,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube story about how the novel One Hundred Years of Solitude was written",
+   "Latin American Caribbean color: nylon-string guitar, soft hand percussion, felt piano, warm strings, a touch of accordion pad used sparingly",
+   "magical realism: warm, nostalgic, intimate storytelling with a sense of wonder",
+   "key of A minor unless stated otherwise, around 92 BPM unless stated otherwise",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "reggaeton",
+   "latin pop",
+   "mariachi trumpets",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Finale",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "warm uplifting finale: the main theme returns on nylon guitar with strings and a light groove, hopeful A major",
+     "after about thirty seconds the percussion drops out for a calm warm outro",
+     "ends on a sustained final chord with a natural soft tail"
+    ],
+    "negative_local_styles": [
+     "abrupt cut",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 52560,
+    "lines": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "W01",
+ "hash": "6eb8f8b5e8f6",
+ "text": "Agosto de mil novecientos sesenta y seis, oficina de correos de Ciudad de México.",
+ "duration": 5.12,
+ "words": [
+  {
+   "w": "Agosto",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "de",
+   "s": 0.52,
+   "e": 0.56
+  },
+  {
+   "w": "mil",
+   "s": 0.64,
+   "e": 0.72
+  },
+  {
+   "w": "novecientos",
+   "s": 0.8,
+   "e": 1.44
+  },
+  {
+   "w": "sesenta",
+   "s": 1.52,
+   "e": 1.76
+  },
+  {
+   "w": "y",
+   "s": 1.84,
+   "e": 1.92
+  },
+  {
+   "w": "seis,",
+   "s": 2.0,
+   "e": 2.64
+  },
+  {
+   "w": "oficina",
+   "s": 2.72,
+   "e": 3.12
+  },
+  {
+   "w": "de",
+   "s": 3.16,
+   "e": 3.2
+  },
+  {
+   "w": "correos",
+   "s": 3.28,
+   "e": 3.68
+  },
+  {
+   "w": "de",
+   "s": 3.76,
+   "e": 3.84
+  },
+  {
+   "w": "Ciudad",
+   "s": 3.92,
+   "e": 4.24
+  },
+  {
+   "w": "de",
+   "s": 4.28,
+   "e": 4.32
+  },
+  {
+   "w": "México.",
+   "s": 4.4,
+   "e": 5.12
+  }
+ ],
+ "speechEnd": 4.955
+}

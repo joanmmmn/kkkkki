@@ -1,3 +1,4 @@
 deliverables/podimo/resena/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
 deliverables/storytel/resena/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
 deliverables/autores/*/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
+deliverables/historias/*/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text

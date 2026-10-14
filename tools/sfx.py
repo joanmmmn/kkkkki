@@ -52,6 +52,26 @@ KIT = {
     'sk_chime': ('Soft subway station chime, two gentle tones, clean, modern, no voice', 1.3, 0.7),
     'sk_peel': ('Peeling a paper sticker label off a book cover, short crisp tearing peel, close up', 0.8, 0.7),
     'sk_snow': ('Footsteps crunching in fresh deep snow, three slow steps, close up, no wind', 1.8, 0.6),
+    # La historia detrás del libro · Cien años de soledad (14/10/2026)
+    'hdl_scale': ('Heavy parcel set down on an old mechanical postal scale, metal platform clunk, spring creak and the needle wobbling, close up, dry, no music', 1.8, 0.7),
+    'hdl_stack': ('Thick stack of typed manuscript paper dropped flat on a wooden counter, solid papery thud, close up, dry', 0.8, 0.7),
+    'hdl_split': ('Splitting a thick stack of paper in two halves and sliding them apart on a wooden counter, papery shuffle, close up, dry', 1.2, 0.7),
+    'hdl_wrap': ('Wrapping a parcel in brown kraft paper and tying it tight with string, quick crinkle, close up, dry', 1.5, 0.7),
+    'hdl_car': ('Vintage 1960s car driving along a winding mountain road, warm engine hum passing steadily, no horn, no music', 6.0, 0.5),
+    'hdl_uturn': ('Old car making a quick U-turn on a gravel road, tires crunching and engine revving, close, no music', 2.2, 0.6),
+    'hdl_ice': ('Delicate magical ice crystal shimmer, glassy cold chime with a soft sparkle tail, clean, no music', 2.0, 0.6),
+    'hdl_bell': ('Boxing ring bell, three quick rings ding ding ding, close up, dry', 1.4, 0.7),
+    'hdl_register': ('Vintage mechanical cash register, keys and a bright ka-ching bell with the drawer sliding open, close up, dry', 1.2, 0.7),
+    'hdl_pawn': ('Small object set down on a glass shop counter followed by a paper receipt torn from a pad, close up, dry', 1.2, 0.7),
+    'hdl_press': ('Vintage letterpress printing press running, rhythmic heavy mechanical clatter of rollers and sheets, steady, no music', 5.0, 0.6),
+    'hdl_flutter': ('Soft flutter of a few butterfly wings passing close by, gentle airy papery rustle, magical, clean, no music', 1.6, 0.6),
+    'hdl_knock': ('Three friendly knocks on a wooden front door, close up, dry', 1.0, 0.7),
+    'hdl_tv': ('Old 1960s tube television switching off, short static crackle and a fading electric whine, close up', 1.2, 0.7),
+    'hdl_dryer': ('Old 1960s handheld hair dryer whirring for a moment and switching off with a click, close up, dry', 1.5, 0.7),
+    'hdl_blender': ('Vintage kitchen blender motor whirring briefly and stopping, close up, dry', 1.4, 0.7),
+    'hdl_tear': ('Tearing a single sheet of paper off a notepad, crisp, close up, dry', 0.6, 0.7),
+    'hdl_mail': ('Parcel dropped into a canvas mail sack, soft muffled thud, close up, dry', 0.7, 0.7),
+    'hdl_film': ('Film strip running fast through a vintage projector gate, rapid mechanical flutter then a click, close up', 1.6, 0.6),
 }
 
 

@@ -1,0 +1,57 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 8811,
+ "end_frame": 11723,
+ "levels": [
+  -17.0
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube story about how the novel One Hundred Years of Solitude was written",
+   "Latin American Caribbean color: nylon-string guitar, soft hand percussion, felt piano, warm strings, a touch of accordion pad used sparingly",
+   "magical realism: warm, nostalgic, intimate storytelling with a sense of wonder",
+   "key of A minor unless stated otherwise, around 92 BPM unless stated otherwise",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "reggaeton",
+   "latin pop",
+   "mariachi trumpets",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Mercedes",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "tender and resilient slow bolero feel at 76 BPM: solo piano and cello with soft nylon guitar",
+     "warm and emotional but hopeful, a continuous gentle pulse that never stops",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "drums",
+     "riser",
+     "pauses",
+     "breaks",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 66240,
+    "lines": []
+   }
+  ]
+ }
+}

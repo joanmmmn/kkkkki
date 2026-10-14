@@ -1,0 +1,174 @@
+{
+ "id": "W18",
+ "hash": "3e0a4fbd2d53",
+ "text": "Y así volvemos a la oficina de correos. Un paquete de quinientas noventa cuartillas a doble espacio, en papel corriente, dirigido a Francisco Porrúa, director literario de la Editorial Sudamericana, en Buenos Aires.",
+ "duration": 14.0,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "así",
+   "s": 0.2,
+   "e": 0.48
+  },
+  {
+   "w": "volvemos",
+   "s": 0.6,
+   "e": 0.96
+  },
+  {
+   "w": "a",
+   "s": 1.04,
+   "e": 1.08
+  },
+  {
+   "w": "la",
+   "s": 1.12,
+   "e": 1.16
+  },
+  {
+   "w": "oficina",
+   "s": 1.2,
+   "e": 1.6
+  },
+  {
+   "w": "de",
+   "s": 1.68,
+   "e": 1.76
+  },
+  {
+   "w": "correos.",
+   "s": 1.84,
+   "e": 2.8
+  },
+  {
+   "w": "Un",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "paquete",
+   "s": 3.0,
+   "e": 3.28
+  },
+  {
+   "w": "de",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "quinientas",
+   "s": 3.52,
+   "e": 4.0
+  },
+  {
+   "w": "noventa",
+   "s": 4.08,
+   "e": 4.48
+  },
+  {
+   "w": "cuartillas",
+   "s": 4.56,
+   "e": 5.12
+  },
+  {
+   "w": "a",
+   "s": 5.2,
+   "e": 5.24
+  },
+  {
+   "w": "doble",
+   "s": 5.28,
+   "e": 5.52
+  },
+  {
+   "w": "espacio,",
+   "s": 5.64,
+   "e": 6.36
+  },
+  {
+   "w": "en",
+   "s": 6.4,
+   "e": 6.56
+  },
+  {
+   "w": "papel",
+   "s": 6.6,
+   "e": 6.88
+  },
+  {
+   "w": "corriente,",
+   "s": 6.96,
+   "e": 7.76
+  },
+  {
+   "w": "dirigido",
+   "s": 7.84,
+   "e": 8.16
+  },
+  {
+   "w": "a",
+   "s": 8.24,
+   "e": 8.32
+  },
+  {
+   "w": "Francisco",
+   "s": 8.4,
+   "e": 9.04
+  },
+  {
+   "w": "Porrúa,",
+   "s": 9.08,
+   "e": 9.88
+  },
+  {
+   "w": "director",
+   "s": 9.92,
+   "e": 10.32
+  },
+  {
+   "w": "literario",
+   "s": 10.48,
+   "e": 10.88
+  },
+  {
+   "w": "de",
+   "s": 10.92,
+   "e": 10.96
+  },
+  {
+   "w": "la",
+   "s": 11.0,
+   "e": 11.04
+  },
+  {
+   "w": "Editorial",
+   "s": 11.24,
+   "e": 11.6
+  },
+  {
+   "w": "Sudamericana,",
+   "s": 11.64,
+   "e": 12.6
+  },
+  {
+   "w": "en",
+   "s": 12.64,
+   "e": 12.72
+  },
+  {
+   "w": "Buenos",
+   "s": 12.8,
+   "e": 13.04
+  },
+  {
+   "w": "Aires.",
+   "s": 13.12,
+   "e": 14.0
+  }
+ ],
+ "speechEnd": 13.565
+}

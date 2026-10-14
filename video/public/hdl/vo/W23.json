@@ -1,0 +1,124 @@
+{
+ "id": "W23",
+ "hash": "b9d5940cf800",
+ "text": "Porrúa no necesitó llegar al final para decidirse. Contaría después que la publicación quedó decidida desde la primera línea, en el primer párrafo.",
+ "duration": 9.84,
+ "words": [
+  {
+   "w": "Porrúa",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "no",
+   "s": 0.56,
+   "e": 0.64
+  },
+  {
+   "w": "necesitó",
+   "s": 0.68,
+   "e": 1.16
+  },
+  {
+   "w": "llegar",
+   "s": 1.2,
+   "e": 1.44
+  },
+  {
+   "w": "al",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "final",
+   "s": 1.8,
+   "e": 2.0
+  },
+  {
+   "w": "para",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "decidirse.",
+   "s": 2.32,
+   "e": 3.48
+  },
+  {
+   "w": "Contaría",
+   "s": 3.52,
+   "e": 3.92
+  },
+  {
+   "w": "después",
+   "s": 4.04,
+   "e": 4.4
+  },
+  {
+   "w": "que",
+   "s": 4.44,
+   "e": 4.48
+  },
+  {
+   "w": "la",
+   "s": 4.56,
+   "e": 4.64
+  },
+  {
+   "w": "publicación",
+   "s": 4.8,
+   "e": 5.28
+  },
+  {
+   "w": "quedó",
+   "s": 5.36,
+   "e": 5.56
+  },
+  {
+   "w": "decidida",
+   "s": 5.6,
+   "e": 6.08
+  },
+  {
+   "w": "desde",
+   "s": 6.16,
+   "e": 6.4
+  },
+  {
+   "w": "la",
+   "s": 6.48,
+   "e": 6.56
+  },
+  {
+   "w": "primera",
+   "s": 6.68,
+   "e": 6.96
+  },
+  {
+   "w": "línea,",
+   "s": 7.04,
+   "e": 7.64
+  },
+  {
+   "w": "en",
+   "s": 7.68,
+   "e": 7.76
+  },
+  {
+   "w": "el",
+   "s": 7.84,
+   "e": 7.92
+  },
+  {
+   "w": "primer",
+   "s": 8.0,
+   "e": 8.4
+  },
+  {
+   "w": "párrafo.",
+   "s": 8.44,
+   "e": 9.84
+  }
+ ],
+ "speechEnd": 9.006
+}

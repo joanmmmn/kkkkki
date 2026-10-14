@@ -32,3 +32,8 @@ video/public/music/skg_parts/*.mp3
 
 # Copias de revisión (se entregan por el chat y en el PC; el máster va en Git LFS)
 deliverables/autores/*/*_revision_720p.mp4
+
+# La historia detrás del libro: se guardan las composiciones (*.raw.mp3); las niveladas las rehace tools/hdl_music.py join
+video/public/music/hdl_parts/*.mp3
+!video/public/music/hdl_parts/*.raw.mp3
+deliverables/historias/*/*_revision_720p.mp4

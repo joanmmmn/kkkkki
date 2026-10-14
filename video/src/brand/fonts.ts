@@ -9,6 +9,11 @@ const faces: Array<[string, string, string, string]> = [
   ['Ubuntu', 'Ubuntu-700', '700', 'normal'],
   ['EB Garamond', 'EBGaramond-400', '400 500', 'normal'],
   ['EB Garamond', 'EBGaramond-400i', '400 500', 'italic'],
+  // «La historia detrás del libro» (14/10/2026): Garamond grueso para titulares y máquina de escribir de los sesenta.
+  ['EB Garamond', 'EBGaramond-600', '600', 'normal'],
+  ['EB Garamond', 'EBGaramond-600i', '600', 'italic'],
+  ['EB Garamond', 'EBGaramond-700', '700', 'normal'],
+  ['Special Elite', 'SpecialElite-400', '400', 'normal'],
 ];
 
 let loaded = false;

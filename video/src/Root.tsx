@@ -31,9 +31,15 @@ import { StephenKingGuide } from './scenes/skg/Main';
 import { SKG_TOTAL } from './scenes/skg/timeline';
 import { SKThumbA, SKThumbB } from './scenes/skg/Thumb';
 import { Lab3D, LAB_FRAMES } from './scenes/skg/three/Lab';
+import { CienAnosHistoria } from './scenes/hdl/Main';
+import { HDL_TOTAL } from './scenes/hdl/timeline';
+import { HDLThumbA, HDLThumbB } from './scenes/hdl/Thumb';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="HDLCien" component={CienAnosHistoria} durationInFrames={HDL_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="HDLThumbA" component={HDLThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="HDLThumbB" component={HDLThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="SKLab3D" component={Lab3D} durationInFrames={Math.max(5000, LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />

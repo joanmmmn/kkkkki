@@ -1,0 +1,59 @@
+{
+ "id": "W11",
+ "hash": "04afc793ec88",
+ "text": "Calcula que le llevará unos seis meses. Le llevará dieciocho.",
+ "duration": 4.8,
+ "words": [
+  {
+   "w": "Calcula",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "que",
+   "s": 0.48,
+   "e": 0.56
+  },
+  {
+   "w": "le",
+   "s": 0.6,
+   "e": 0.64
+  },
+  {
+   "w": "llevará",
+   "s": 0.72,
+   "e": 1.04
+  },
+  {
+   "w": "unos",
+   "s": 1.2,
+   "e": 1.36
+  },
+  {
+   "w": "seis",
+   "s": 1.44,
+   "e": 1.6
+  },
+  {
+   "w": "meses.",
+   "s": 1.68,
+   "e": 2.72
+  },
+  {
+   "w": "Le",
+   "s": 2.8,
+   "e": 2.88
+  },
+  {
+   "w": "llevará",
+   "s": 2.96,
+   "e": 3.36
+  },
+  {
+   "w": "dieciocho.",
+   "s": 3.48,
+   "e": 4.8
+  }
+ ],
+ "speechEnd": 4.223
+}
