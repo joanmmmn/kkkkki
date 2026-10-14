@@ -23,32 +23,38 @@ export const Mercedes: React.FC = () => {
   const houseP = sp(frame, fMien - 6, 14, 140);
   return (
     <PaperStage>
-      {/* la casa que se mantiene en pie */}
-      <div style={{ position: 'absolute', left: 230, top: 260, opacity: Math.min(1, houseP * 2) * (1 - ramp(frame, fVer - 10, fVer + 4)), transform: `translateY(${(1 - houseP) * 50}px)` }}>
-        <svg width={460} height={460} viewBox="0 0 230 230">
-          <path d="M30 110 L 115 40 L 200 110 L 200 200 L 30 200 Z" fill="#F5E9CF" stroke={P.ink} strokeWidth={4} transform={`rotate(${(1 - ramp(frame, fMien + 10, fPie)) * -8} 115 200)`} />
-          <path d="M20 112 L 115 32 L 210 112" fill="none" stroke={P.terra} strokeWidth={10} strokeLinecap="round" transform={`rotate(${(1 - ramp(frame, fMien + 10, fPie)) * -8} 115 200)`} />
-          <path d="M70 200 C 70 150, 90 140, 98 160 M 160 200 C 160 150, 140 140, 132 160" stroke={P.ink} strokeWidth={0} />
+      {/* la casa que se mantiene en pie, sostenida por Mercedes (silueta) */}
+      <div style={{ position: 'absolute', left: 150, top: 200, opacity: Math.min(1, houseP * 2) * (1 - ramp(frame, fCoche - 16, fCoche + 4)), transform: `translateY(${(1 - houseP) * 50}px)` }}>
+        <svg width={560} height={560} viewBox="0 0 230 230" style={{ overflow: 'visible' }}>
+          <g transform={`rotate(${(1 - ramp(frame, fMien + 10, fPie)) * -9} 30 200)`}>
+            <path d="M40 110 L 125 40 L 210 110 L 210 200 L 40 200 Z" fill="#F5E9CF" stroke={P.ink} strokeWidth={4} strokeLinejoin="round" />
+            <path d="M30 112 L 125 32 L 220 112" fill="none" stroke={P.terra} strokeWidth={10} strokeLinecap="round" strokeLinejoin="round" />
+            <rect x={105} y={140} width={36} height={60} fill={P.jungle} stroke={P.ink} strokeWidth={3} />
+            <rect x={60} y={124} width={32} height={30} fill={ramp(frame, fVer, fVer + 20) > 0 ? `rgba(255,202,5,${0.35 + 0.65 * ramp(frame, fVer, fVer + 20)})` : '#9CC2CF'} stroke={P.ink} strokeWidth={3} />
+            <rect x={160} y={124} width={32} height={30} fill="#9CC2CF" stroke={P.ink} strokeWidth={3} />
+          </g>
+          <path d="M10 200 L 240 200" stroke={P.ink} strokeWidth={4} strokeLinecap="round" />
         </svg>
-        <div style={{ textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 40, color: P.ink2, marginTop: -10 }}>la casa, en pie</div>
+        <div style={{ position: 'absolute', left: -110, top: 250 }}><Silhouette size={300} hair="long" c="#3B332B" /></div>
+        <div style={{ textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 42, color: P.ink2, marginTop: 6, opacity: rampOut(frame, fPie - 4, fPie + 10) }}>la casa, en pie</div>
       </div>
-      <div style={{ position: 'absolute', left: 800, top: 300, width: 1000, opacity: 1 - top }}>
+      <div style={{ position: 'absolute', left: 860, top: 300, width: 960, opacity: 1 - top }}>
         <div style={{ fontFamily: F.serif, fontWeight: 600, fontSize: 96, lineHeight: 1.05, color: P.ink }}>
           <Reveal text="La verdadera protagonista" at={fVer - 4} step={3} />
         </div>
       </div>
       <div style={{ opacity: 1 - top }}>
-        <NameCard at={fMer - 4} name="Mercedes Barcha" role="Mujer de García Márquez" x={800} y={520} w={760} icon={<Silhouette size={100} hair="long" />} accent={P.yellow} />
+        <NameCard at={fMer - 4} name="Mercedes Barcha" role="Mujer de García Márquez" x={860} y={540} w={760} icon={<Silhouette size={100} hair="long" />} accent={P.yellow} />
       </div>
       {frame > fMer && frame < fCoche && <Butterfly x={interpolate(frame, [fMer, fMer + 40], [1900, 1520], { ...clamp, easing: easeOut })} y={interpolate(frame, [fMer, fMer + 40], [180, 520], { ...clamp, easing: easeOut }) + Math.sin(frame / 7) * 6} size={70} seed="mer" flap={frame > fMer + 40 ? 0.8 : 3.4} rot={-10} />}
       {/* libreta de cuentas y papeletas */}
       <AbsoluteFill style={{ opacity: top }}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 110, textAlign: 'center', fontFamily: F.sans, fontWeight: 500, fontSize: 32, letterSpacing: 8, textTransform: 'uppercase', color: P.sepia }}>Lo que va al Monte de Piedad</div>
-        <PawnTicket x={430} y={300} at={fCoche - 2} label="El coche" icon={<CarIcon s={86} />} num="1147" rot={-4} w={380} stampAt={fCoche + 14} />
-        <PawnTicket x={960} y={330} at={fJoy - 2} label="Las joyas" icon={<Jewels s={86} />} num="1302" rot={2} w={380} stampAt={fJoy + 14} />
-        <PawnTicket x={1490} y={300} at={fTele - 2} label="El televisor" icon={<TV60 s={86} />} num="1386" rot={5} w={380} stampAt={fTele + 14} />
-        <Tag at={fSeis - 4} x={430} y={640} size={36} align="center" accent={P.yellow}>Da para unos 6 meses</Tag>
-        <Tag at={fJoy + 6} x={960} y={660} size={32} align="center">Regalos de su familia</Tag>
+        <PawnTicket x={400} y={330} at={fCoche - 2} label="El coche" icon={<CarIcon s={86} />} num="1147" rot={-4} w={500} stampAt={fCoche + 14} />
+        <PawnTicket x={960} y={370} at={fJoy - 2} label="Las joyas" icon={<Jewels s={86} />} num="1302" rot={2} w={500} stampAt={fJoy + 14} />
+        <PawnTicket x={1520} y={330} at={fTele - 2} label="El televisor" icon={<TV60 s={86} />} num="1386" rot={5} w={500} stampAt={fTele + 14} />
+        <Tag at={fSeis - 4} x={400} y={680} size={38} align="center" accent={P.yellow}>Da para unos 6 meses</Tag>
+        <Tag at={fJoy + 6} x={960} y={720} size={34} align="center">Regalos de su familia</Tag>
       </AbsoluteFill>
       <Sfx name="hdl_flutter" at={fMer + 2} volume={0.7} />
       <Sfx name="ui_pop" at={fMer - 2} volume={0.6} />

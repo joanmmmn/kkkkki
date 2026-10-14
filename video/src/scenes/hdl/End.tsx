@@ -8,7 +8,7 @@ import { Pill } from '../../components/Pill';
 import { BrowserWindow } from '../../components/BrowserWindow';
 import { LinkBadge } from '../nxr/kit';
 import { Butterfly, color, F, Flight, Marker, P, PaperStage, ramp, rampOut, Reveal, SERIES, shadow, sp } from './kit';
-import { Headphones } from './Icons';
+import { CaribHouse, Headphones } from './Icons';
 import { sceneClock } from './timeline';
 
 const NARR = [
@@ -23,6 +23,7 @@ export const AudioScene: React.FC = () => {
   const c = sceneClock('AUDIO');
   const fMac = c.at('W33', 'Macondo');
   const fVoz = c.at('W33', 'voz');
+  const fCasa = c.at('W33', 'casa');
   const fAud = c.at('W33', 'audiolibro');
   const fTres = c.at('W33', 'tres');
   const fSon = c.at('W34', 'Sónorbuks');
@@ -62,6 +63,16 @@ export const AudioScene: React.FC = () => {
             <div style={{ fontFamily: F.sans, fontWeight: 700, fontSize: 46, color: P.ink, lineHeight: 1.1 }}>Audiolibro<br /><span style={{ fontWeight: 500, color: P.sepia }}>en español</span></div>
           </div>
         </div>
+        {/* la casa de los abuelos, donde las historias se contaban en voz alta */}
+        <div style={{ position: 'absolute', left: 1040, top: 330, opacity: rampOut(frame, fCasa - 8, fCasa + 10) * (1 - ramp(frame, fTres - 16, fTres - 4)), transform: `scale(${0.94 + 0.06 * sp(frame, fCasa - 8, 16, 140)})`, transformOrigin: '50% 100%' }}>
+          <CaribHouse w={640} glow={ramp(frame, fVoz - 4, fVoz + 20)} />
+        </div>
+        {frame > fCasa + 4 && frame < fTres && (
+          <>
+            <Butterfly x={1700} y={330 - (frame - fCasa) * 0.9} size={62} seed="au1" rot={-14} opacity={rampOut(frame, fCasa + 4, fCasa + 16) * (1 - ramp(frame, fTres - 16, fTres - 4))} />
+            <Butterfly x={1110 + Math.sin(frame / 20) * 14} y={300 - (frame - fCasa) * 0.6} size={44} seed="au2" rot={18} opacity={rampOut(frame, fCasa + 12, fCasa + 24) * (1 - ramp(frame, fTres - 16, fTres - 4))} />
+          </>
+        )}
         <div style={{ position: 'absolute', left: 900, top: 200, width: 880, display: 'flex', flexDirection: 'column', gap: 26 }}>
           <div style={{ fontFamily: F.sans, fontWeight: 500, fontSize: 32, letterSpacing: 6, textTransform: 'uppercase', color: P.sepia, opacity: rampOut(frame, fTres - 6, fTres + 6) }}>Tres narraciones</div>
           {NARR.map((n, i) => {

@@ -26,13 +26,13 @@ export const Nobel: React.FC = () => {
   const medalP = sp(frame, fYear - 6, 10, 150);
   // países que se iluminan (traducciones), en orden aleatorio fijo
   const order = WORLD_COUNTRIES.map((_, i) => random(`tr${i}`));
-  const lit = interpolate(frame, [fTrad - 6, fCuar + 30], [0, 1], clamp);
+  const lit = interpolate(frame, [fHoy, fCuar + 24], [0, 1], clamp);
   return (
     <PaperStage>
       {/* Medalla */}
       <AbsoluteFill style={{ opacity: 1 - medalOut }}>
-        <div style={{ position: 'absolute', left: 330, top: 160, transform: `translateY(${(1 - medalP) * -500}px) rotate(${(1 - medalP) * -20}deg)` }}>
-          <Medal s={360} text="1982" />
+        <div style={{ position: 'absolute', left: 250, top: 90, transform: `translateY(${(1 - medalP) * -600}px) rotate(${(1 - medalP) * -20}deg)` }}>
+          <Medal s={500} text="1982" />
         </div>
         <div style={{ position: 'absolute', left: 860, top: 360, width: 900 }}>
           <div style={{ fontFamily: F.sans, fontWeight: 500, fontSize: 34, letterSpacing: 8, textTransform: 'uppercase', color: P.sepia, opacity: rampOut(frame, fNob - 8, fNob + 6) }}>Estocolmo · 1982</div>
@@ -45,7 +45,7 @@ export const Nobel: React.FC = () => {
         {Array.from({ length: 16 }).map((_, i) => {
           const k = Math.floor(random(`wb${i}`) * WORLD_COUNTRIES.length);
           const cc = WORLD_COUNTRIES[k].c ?? [960, 500];
-          const at = fTrad + i * 5;
+          const at = fCinc + i * 6;
           if (frame < at) return null;
           return <Butterfly key={i} x={cc[0]} y={cc[1] + 40 + Math.sin(frame / 8 + i) * 6} size={30 + random(`ws${i}`) * 16} seed={`w${i}`} flap={1.2} opacity={rampOut(frame, at, at + 10)} />;
         })}
@@ -62,7 +62,7 @@ export const Nobel: React.FC = () => {
       </AbsoluteFill>
       {/* El país de los lectores */}
       <AbsoluteFill style={{ opacity: mapOut }}>
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 110, textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 50, color: P.ink2, opacity: rampOut(frame, fLect - 6, fLect + 8) }}>Si todos sus lectores vivieran en un mismo lugar…</div>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 110, textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 50, color: P.ink2, opacity: rampOut(frame, fGabo - 4, fGabo + 10) }}>Gabo dijo que, si todos sus lectores vivieran en un mismo lugar…</div>
         <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0 }}>
           {Array.from({ length: 420 }).map((_, i) => {
             const r = (k: string) => random(`rd${i}${k}`);
@@ -71,7 +71,7 @@ export const Nobel: React.FC = () => {
             const wob = 1 + 0.18 * Math.sin(a * 3 + 1) + 0.1 * Math.cos(a * 5);
             const x = 960 + Math.cos(a) * rr * 420 * wob;
             const y = 560 + Math.sin(a) * rr * 250 * wob;
-            const at = fLect + rr * 40;
+            const at = fGabo + 6 + rr * 50;
             const p = rampOut(frame, at, at + 12);
             return <circle key={i} cx={x} cy={y} r={6 * p} fill={i % 7 === 0 ? P.terra : i % 3 === 0 ? P.jungle2 : P.ink2} opacity={0.85} />;
           })}
@@ -86,9 +86,9 @@ export const Nobel: React.FC = () => {
       <Sfx name="logo_sting" at={fNob} volume={0.5} />
       <Sfx name="zoom_out" at={fHoy - 8} volume={0.5} />
       <Sfx name="counter" at={fCinc - 4} volume={0.35} dur={30} fade={6} />
-      <Sfx name="hdl_flutter" at={fTrad + 4} volume={0.8} />
+      <Sfx name="hdl_flutter" at={fCinc + 4} volume={0.8} />
       <Sfx name="counter" at={fCuar - 4} volume={0.35} dur={26} fade={6} />
-      <Sfx name="sparkle" at={fLect + 4} volume={0.6} />
+      <Sfx name="sparkle" at={fGabo + 8} volume={0.6} />
       {WORLD_PTS && null}
     </PaperStage>
   );
@@ -108,7 +108,6 @@ export const Cine: React.FC = () => {
   const fNet = c.at('W28', 'Netflix');
   const fHij = c.at('W28', 'hijos');
   const fCol = c.at('W28', 'Colombia');
-  const fPri = c.at('W28', 'primera');
   const fDic = c.at('W28', 'diciembre');
   const fSeg = c.at('W28', 'segunda');
   const fAgo = c.at('W28', 'agosto');
@@ -124,13 +123,13 @@ export const Cine: React.FC = () => {
     <PaperStage>
       {/* Décadas diciendo que no */}
       <AbsoluteFill style={{ opacity: 1 - noOut }}>
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 100, textAlign: 'center', fontFamily: F.serif, fontWeight: 600, fontSize: 72, color: P.ink, opacity: rampOut(frame, fDec - 6, fDec + 8) }}>Durante décadas, los derechos para el cine: no</div>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 200, textAlign: 'center', fontFamily: F.serif, fontWeight: 600, fontSize: 72, color: P.ink, opacity: rampOut(frame, fDec - 6, fDec + 8) }}>Durante décadas, los derechos para el cine: no</div>
         {[0, 1, 2, 3, 4].map((i) => {
           const at = fNeg - 6 + i * 5;
           const s = sp(frame, at, 13, 170);
           if (frame < at - 2) return null;
           return (
-            <div key={i} style={{ position: 'absolute', left: 240 + i * 60, top: 260 + i * 30, width: 420, height: 270, background: '#FBF5E6', border: `2px solid ${P.sepia}`, borderRadius: 6, boxShadow: shadow.float, transform: `rotate(${(random(`of${i}`) - 0.5) * 14}deg) translateY(${(1 - s) * 80}px)`, opacity: Math.min(1, s * 2), padding: 26 }}>
+            <div key={i} style={{ position: 'absolute', left: 240 + i * 60, top: 390 + i * 30, width: 420, height: 270, background: '#FBF5E6', border: `2px solid ${P.sepia}`, borderRadius: 6, boxShadow: shadow.float, transform: `rotate(${(random(`of${i}`) - 0.5) * 14}deg) translateY(${(1 - s) * 80}px)`, opacity: Math.min(1, s * 2), padding: 26 }}>
               <div style={{ fontFamily: F.type, fontSize: 26, color: P.ink }}>Oferta · derechos de cine</div>
               {[0, 1, 2, 3].map((k) => <div key={k} style={{ height: 6, width: `${85 - k * 12}%`, background: 'rgba(29,26,22,0.35)', marginTop: 18 }} />)}
               <Stamp at={at + 8} text="No" size={60} rot={-14} style={{ right: 30, bottom: 26 }} />
@@ -138,7 +137,7 @@ export const Cine: React.FC = () => {
           );
         })}
         {/* el tiempo de una película */}
-        <div style={{ position: 'absolute', left: 1080, top: 280, width: 700, opacity: rampOut(frame, fTiem - 8, fTiem + 6) }}>
+        <div style={{ position: 'absolute', left: 1080, top: 420, width: 700, opacity: rampOut(frame, fTiem - 8, fTiem + 6) }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
             <FilmReel s={130} spin={frame * 4} />
             <div>
@@ -186,7 +185,7 @@ export const Cine: React.FC = () => {
         <div style={{ position: 'absolute', left: 980, top: 260, width: 820 }}>
           <div style={{ fontFamily: F.sans, fontWeight: 500, fontSize: 30, letterSpacing: 6, textTransform: 'uppercase', color: P.sepia }}>La serie</div>
           <div style={{ position: 'relative', marginTop: 60, height: 260 }}>
-            <div style={{ position: 'absolute', left: 20, right: 20, top: 60, height: 6, background: P.ink, transform: `scaleX(${ramp(frame, fPri - 6, fAgo + 10)})`, transformOrigin: 'left' }} />
+            <div style={{ position: 'absolute', left: 20, right: 20, top: 60, height: 6, background: P.ink, transform: `scaleX(${ramp(frame, fDic - 4, fAgo + 10)})`, transformOrigin: 'left' }} />
             {[{ at: fDic, x: 20, t: 'Parte 1', d: 'diciembre de 2024' }, { at: fAgo, x: 520, t: 'Parte 2', d: 'agosto de 2026' }].map((m, i) => {
               const s = sp(frame, m.at - 6, 12, 180);
               return (
@@ -204,7 +203,7 @@ export const Cine: React.FC = () => {
       {/* +300 % */}
       <AbsoluteFill style={{ opacity: serOut, alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
         <div style={{ fontFamily: F.sans, fontWeight: 500, fontSize: 34, letterSpacing: 6, textTransform: 'uppercase', color: P.sepia }}>Ventas del libro en Colombia tras la primera parte</div>
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 80, marginTop: 40 }}>
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 80, marginTop: 40, height: 560 }}>
           {[{ l: 'Antes', h: 120, c: P.sepia }, { l: 'Después', h: 480 * ramp(frame, fTres - 4, fTres + 24, easeOut), c: P.terra }].map((b, i) => (
             <div key={i} style={{ textAlign: 'center' }}>
               <div style={{ width: 200, height: Math.max(i ? 120 : 120, b.h), background: b.c, border: `3px solid ${P.ink}`, borderRadius: '12px 12px 0 0' }} />

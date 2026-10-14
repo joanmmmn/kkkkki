@@ -88,7 +88,7 @@ export const Escritor: React.FC = () => {
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', width: 640, marginTop: 10, fontFamily: F.sans, fontWeight: 500, fontSize: 26, color: P.sepia }}>
             <span>0</span>
-            <span style={{ fontWeight: 700, color: P.ink, fontSize: 40 }}>{frame < fDos ? <Count to={1000} a={fMil - 4} b={fMil + 16} prefix="≈ " /> : <><Count from={1000} to={2000} a={fDos} b={fDos + 20} /><span style={{ fontSize: 26, color: P.sepia, fontWeight: 500 }}> con suerte</span></>}</span>
+            <span style={{ fontWeight: 700, color: P.ink, fontSize: 40, opacity: rampOut(frame, fMil - 6, fMil + 2) }}>{frame < fDos ? <Count from={0} to={1000} a={fMil - 4} b={fMil + 16} prefix="≈ " /> : <><Count from={1000} to={2000} a={fDos} b={fDos + 20} /><span style={{ fontSize: 26, color: P.sepia, fontWeight: 500 }}> con suerte</span></>}</span>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@ export const Casa: React.FC = () => {
           <CaribHouse w={420} glow={ramp(frame, fCasa + 10, fCasa + 30)} />
           <div style={{ textAlign: 'center', fontFamily: F.serif, fontStyle: 'italic', fontSize: 34, color: P.ink2, marginTop: 6 }}>La casa de sus abuelos</div>
         </div>
-        <Tag at={fDie - 4} x={120} y={930} size={40} accent={P.yellow}>Una obsesión desde los 18 años</Tag>
+        <Tag at={fDie - 4} x={1180} y={930} size={40} accent={P.yellow}>Una obsesión desde los 18 años</Tag>
       </AbsoluteFill>
       {/* La página «LA CASA» y los intentos */}
       <AbsoluteFill style={{ opacity: mapOut }}>

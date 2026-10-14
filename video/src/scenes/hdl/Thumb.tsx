@@ -59,7 +59,7 @@ export const HDLThumbB: React.FC = () => (
         <div style={{ fontFamily: F.serif, fontWeight: 600, fontSize: 30, color: P.ink }}>{t.l}</div>
       </div>
     ))}
-    <Butterfly x={780} y={100} size={90} seed="tB1" flap={0} rot={-16} />
+    <Butterfly x={828} y={74} size={84} seed="tB1" flap={0} rot={-16} />
     <Butterfly x={1210} y={330} size={60} seed="tB2" flap={0} rot={24} />
   </AbsoluteFill>
 );

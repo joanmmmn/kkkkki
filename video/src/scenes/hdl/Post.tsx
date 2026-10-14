@@ -36,7 +36,7 @@ export const Correos: React.FC = () => {
   ]);
   const A = cam.toScreen(mx), B = cam.toScreen(ba);
   const split = ramp(frame, fPar, fPar + 18);
-  const lblP = sp(frame, fPaq - 4, 15, 140);
+  const lblP = sp(frame, 2, 15, 140);
   const typed: { text: string; times: number[] }[] = [];
   return (
     <PaperStage>
@@ -109,13 +109,13 @@ export const Empeno: React.FC = () => {
   const sendP = ramp(frame, fEnv - 6, fMit + 20, easeInOut);
   return (
     <PaperStage>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 110, textAlign: 'center', fontFamily: F.serif, fontWeight: 600, fontSize: 70, color: P.ink, opacity: rampOut(frame, fUlt - 8, fUlt + 8) }}>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 110, textAlign: 'center', fontFamily: F.serif, fontWeight: 600, fontSize: 70, color: P.ink, opacity: rampOut(frame, 2, 16) }}>
         Lo último que queda por empeñar
       </div>
-      <PawnTicket x={410} y={300} at={fCal - 2} label="El calentador" icon={<Heater s={86} on={1 - ramp(frame, fCal + 20, fCal + 40)} />} num="1412" rot={-4} w={460} stampAt={fCal + 18} />
-      <PawnTicket x={960} y={330} at={fSec - 2} label="El secador" icon={<HairDryer s={86} />} num="1413" rot={2} w={460} stampAt={fSec + 14} />
-      <PawnTicket x={1510} y={300} at={fBat - 2} label="La batidora" icon={<Blender s={86} />} num="1414" rot={5} w={460} stampAt={fBat + 14} />
-      <Tag at={fFrio - 4} x={410} y={660} size={32} align="center" out={fBat + 30}>Sin calor no podía escribir</Tag>
+      <PawnTicket x={400} y={330} at={fCal - 2} label="El calentador" icon={<Heater s={86} on={1 - ramp(frame, fCal + 20, fCal + 40)} />} num="1412" rot={-4} w={500} stampAt={fCal + 18} />
+      <PawnTicket x={960} y={370} at={fSec - 2} label="El secador" icon={<HairDryer s={86} />} num="1413" rot={2} w={500} stampAt={fSec + 14} />
+      <PawnTicket x={1520} y={330} at={fBat - 2} label="La batidora" icon={<Blender s={86} />} num="1414" rot={5} w={500} stampAt={fBat + 14} />
+      <Tag at={fFrio - 4} x={400} y={690} size={34} align="center" out={fBat + 30}>Sin calor no podía escribir</Tag>
       <div style={{ position: 'absolute', left: 0, right: 0, top: 760, textAlign: 'center', opacity: rampOut(frame, fReu - 6, fReu + 8) }}>
         <span style={{ fontFamily: F.sans, fontWeight: 700, fontSize: 48, color: P.jungle }}>✓ Reúnen lo que falta</span>
       </div>
@@ -171,15 +171,16 @@ export const Giro: React.FC = () => {
   const clockAng = (frame - fImp) * 12;
   return (
     <PaperStage>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 90, textAlign: 'center', fontFamily: F.sans, fontWeight: 500, fontSize: 32, letterSpacing: 8, textTransform: 'uppercase', color: P.sepia, opacity: rampOut(frame, fGiro - 6, fGiro + 8) }}>El último giro</div>
+      <div style={{ position: 'absolute', left: 150, top: 110, fontFamily: F.serif, fontWeight: 600, fontSize: 84, color: P.ink, opacity: rampOut(frame, 2, 16), transform: `translateY(${(1 - rampOut(frame, 2, 16)) * 20}px)` }}>Un último giro</div>
       {/* dos mitades en orden equivocado */}
       <div style={{ position: 'absolute', left: 150, top: 300, display: 'flex', gap: 60 }}>
         {[{ k: '2/2', at: fPri - 4, note: 'Llega primero' }, { k: '1/2', at: fSeg + 6, note: 'Todavía de viaje' }].map((p, i) => {
-          const s = sp(frame, p.at, 13, 160);
+          const s = sp(frame, 6 + i * 6, 13, 160);
+          const noteP = rampOut(frame, p.at, p.at + 12);
           return (
             <div key={i} style={{ opacity: Math.min(1, s * 2), transform: `translateY(${(1 - s) * 60}px)` }}>
               <Parcel w={380} h={270} label={<span style={{ fontFamily: F.type, fontSize: 44, background: '#FBF5E6', padding: '4px 12px', border: `2px solid ${P.ink}` }}>{p.k}</span>} />
-              <div style={{ marginTop: 18, fontFamily: F.sans, fontWeight: 700, fontSize: 32, color: i === 0 ? P.red : P.sepia, textAlign: 'center' }}>{p.note}</div>
+              <div style={{ marginTop: 18, fontFamily: F.sans, fontWeight: 700, fontSize: 32, color: i === 0 ? P.red : P.sepia, textAlign: 'center', opacity: noteP }}>{p.note}</div>
             </div>
           );
         })}

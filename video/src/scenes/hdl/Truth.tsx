@@ -11,6 +11,7 @@ import { sceneClock } from './timeline';
 export const Versiones: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('VERSIONES');
+  const fAntes = c.at('W29', 'Antes');
   const fGiro = c.at('W29', 'giro');
   const fVeces = c.at('W29', 'veces');
   const fIgual = c.at('W29', 'igual');
@@ -19,15 +20,16 @@ export const Versiones: React.FC = () => {
   const f45 = c.at('W29', 'cuarenta');
   const f53 = c.at('W29', 'cincuenta');
   const cards = [
-    { at: fVeces - 6, cost: '82', had: '?', x: 360, r: -8 },
-    { at: fVeces + 4, cost: '83', had: '45', x: 820, r: 2 },
-    { at: fVeces + 14, cost: '82', had: '53', x: 1280, r: 9 },
+    { at: fVeces - 6, cost: '82', had: '?', x: 500, r: -8 },
+    { at: fVeces + 4, cost: '83', had: '45', x: 960, r: 2 },
+    { at: fVeces + 14, cost: '82', had: '53', x: 1420, r: 9 },
   ];
   const hiCost = (v: string) => (v === '82' ? ramp(frame, f82 - 4, f82 + 6) * (1 - ramp(frame, f83 - 6, f83)) : ramp(frame, f83 - 4, f83 + 6) * (1 - ramp(frame, f45 - 6, f45)));
   const hiHad = (v: string) => (v === '45' ? ramp(frame, f45 - 4, f45 + 6) * (1 - ramp(frame, f53 - 6, f53)) : v === '53' ? ramp(frame, f53 - 4, f53 + 6) : 0);
   return (
     <PaperStage>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 110, textAlign: 'center' }}>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 52, textAlign: 'center', fontFamily: F.sans, fontWeight: 500, fontSize: 30, letterSpacing: 6, textTransform: 'uppercase', color: P.sepia, opacity: rampOut(frame, fAntes - 4, fAntes + 10) }}>Antes de terminar · un último giro</div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 116, textAlign: 'center' }}>
         <div style={{ fontFamily: F.serif, fontWeight: 600, fontSize: 80, color: P.ink }}><Reveal text="La misma historia, contada de varias formas" at={fGiro - 4} step={2} /></div>
       </div>
       {cards.map((k, i) => {
