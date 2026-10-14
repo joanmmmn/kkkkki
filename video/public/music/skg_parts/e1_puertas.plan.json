@@ -1,0 +1,55 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 8353,
+ "end_frame": 11903,
+ "levels": [
+  -15.5
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the novels of Stephen King",
+   "key of D minor, around 96 BPM unless stated otherwise",
+   "felt piano, music box, warm cello and string pads, soft analog synth pulses, tight modern percussion, subtle sub bass",
+   "elegant, intriguing and atmospheric with warmth, never cheesy horror",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "jump scare stingers",
+   "screams",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Five doors A",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "main theme: driving cinematic groove with a piano ostinato, low strings and steady modern drums",
+     "suspenseful undercurrent, confident momentum",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "breakdown",
+     "sudden stops",
+     "quiet intro",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 79000,
+    "lines": []
+   }
+  ]
+ }
+}

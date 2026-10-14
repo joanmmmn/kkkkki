@@ -1,0 +1,69 @@
+{
+ "id": "G12",
+ "hash": "87e05ea418c2",
+ "text": "Antes de elegir, hazte dos preguntas. La primera: ¿cuánto miedo quieres pasar?",
+ "duration": 6.0,
+ "words": [
+  {
+   "w": "Antes",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "de",
+   "s": 0.36,
+   "e": 0.4
+  },
+  {
+   "w": "elegir,",
+   "s": 0.44,
+   "e": 1.147
+  },
+  {
+   "w": "hazte",
+   "s": 1.173,
+   "e": 1.52
+  },
+  {
+   "w": "dos",
+   "s": 1.6,
+   "e": 1.76
+  },
+  {
+   "w": "preguntas.",
+   "s": 1.84,
+   "e": 2.92
+  },
+  {
+   "w": "La",
+   "s": 2.96,
+   "e": 3.04
+  },
+  {
+   "w": "primera:",
+   "s": 3.16,
+   "e": 3.88
+  },
+  {
+   "w": "¿cuánto",
+   "s": 3.92,
+   "e": 4.24
+  },
+  {
+   "w": "miedo",
+   "s": 4.32,
+   "e": 4.64
+  },
+  {
+   "w": "quieres",
+   "s": 4.72,
+   "e": 5.04
+  },
+  {
+   "w": "pasar?",
+   "s": 5.16,
+   "e": 6.0
+  }
+ ],
+ "speechEnd": 5.53
+}

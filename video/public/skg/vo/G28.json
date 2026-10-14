@@ -1,0 +1,154 @@
+{
+ "id": "G28",
+ "hash": "1ae0c7c63391",
+ "text": "Con Apocalipsis pasa lo mismo: cuarenta y ocho horas. Y La Torre Oscura es su gran saga de fantasía: siete libros principales y casi ciento cincuenta horas de audiolibro.",
+ "duration": 11.84,
+ "words": [
+  {
+   "w": "Con",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "Apocalipsis",
+   "s": 0.24,
+   "e": 0.96
+  },
+  {
+   "w": "pasa",
+   "s": 1.0,
+   "e": 1.28
+  },
+  {
+   "w": "lo",
+   "s": 1.32,
+   "e": 1.36
+  },
+  {
+   "w": "mismo:",
+   "s": 1.44,
+   "e": 2.16
+  },
+  {
+   "w": "cuarenta",
+   "s": 2.24,
+   "e": 2.72
+  },
+  {
+   "w": "y",
+   "s": 2.76,
+   "e": 2.8
+  },
+  {
+   "w": "ocho",
+   "s": 2.88,
+   "e": 3.04
+  },
+  {
+   "w": "horas.",
+   "s": 3.2,
+   "e": 4.08
+  },
+  {
+   "w": "Y",
+   "s": 4.16,
+   "e": 4.2
+  },
+  {
+   "w": "La",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "Torre",
+   "s": 4.4,
+   "e": 4.56
+  },
+  {
+   "w": "Oscura",
+   "s": 4.64,
+   "e": 5.04
+  },
+  {
+   "w": "es",
+   "s": 5.12,
+   "e": 5.2
+  },
+  {
+   "w": "su",
+   "s": 5.28,
+   "e": 5.36
+  },
+  {
+   "w": "gran",
+   "s": 5.44,
+   "e": 5.68
+  },
+  {
+   "w": "saga",
+   "s": 5.76,
+   "e": 6.0
+  },
+  {
+   "w": "de",
+   "s": 6.04,
+   "e": 6.08
+  },
+  {
+   "w": "fantasía:",
+   "s": 6.16,
+   "e": 7.24
+  },
+  {
+   "w": "siete",
+   "s": 7.28,
+   "e": 7.6
+  },
+  {
+   "w": "libros",
+   "s": 7.68,
+   "e": 7.92
+  },
+  {
+   "w": "principales",
+   "s": 8.0,
+   "e": 8.88
+  },
+  {
+   "w": "y",
+   "s": 8.96,
+   "e": 9.04
+  },
+  {
+   "w": "casi",
+   "s": 9.08,
+   "e": 9.36
+  },
+  {
+   "w": "ciento",
+   "s": 9.44,
+   "e": 9.84
+  },
+  {
+   "w": "cincuenta",
+   "s": 9.88,
+   "e": 10.4
+  },
+  {
+   "w": "horas",
+   "s": 10.48,
+   "e": 10.72
+  },
+  {
+   "w": "de",
+   "s": 10.76,
+   "e": 10.8
+  },
+  {
+   "w": "audiolibro.",
+   "s": 10.88,
+   "e": 11.84
+  }
+ ],
+ "speechEnd": 11.509
+}

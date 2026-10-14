@@ -1,0 +1,174 @@
+{
+ "id": "G34",
+ "hash": "87419d35d537",
+ "text": "¿Y escucharlo? Sus novelas más conocidas están en audiolibro en español. Casi todas las publica Penguin Random House Audio, y la mayoría con voces de Latinoamérica, como Carlos Manuel Vesga o Jane Santos.",
+ "duration": 13.52,
+ "words": [
+  {
+   "w": "¿Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "escucharlo?",
+   "s": 0.2,
+   "e": 1.08
+  },
+  {
+   "w": "Sus",
+   "s": 1.36,
+   "e": 1.52
+  },
+  {
+   "w": "novelas",
+   "s": 1.6,
+   "e": 1.92
+  },
+  {
+   "w": "más",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "conocidas",
+   "s": 2.16,
+   "e": 2.72
+  },
+  {
+   "w": "están",
+   "s": 2.8,
+   "e": 3.04
+  },
+  {
+   "w": "en",
+   "s": 3.08,
+   "e": 3.12
+  },
+  {
+   "w": "audiolibro",
+   "s": 3.2,
+   "e": 3.76
+  },
+  {
+   "w": "en",
+   "s": 3.8,
+   "e": 3.84
+  },
+  {
+   "w": "español.",
+   "s": 3.92,
+   "e": 4.88
+  },
+  {
+   "w": "Casi",
+   "s": 4.96,
+   "e": 5.12
+  },
+  {
+   "w": "todas",
+   "s": 5.2,
+   "e": 5.44
+  },
+  {
+   "w": "las",
+   "s": 5.52,
+   "e": 5.68
+  },
+  {
+   "w": "publica",
+   "s": 5.84,
+   "e": 6.08
+  },
+  {
+   "w": "Penguin",
+   "s": 6.24,
+   "e": 6.64
+  },
+  {
+   "w": "Random",
+   "s": 6.72,
+   "e": 7.04
+  },
+  {
+   "w": "House",
+   "s": 7.12,
+   "e": 7.44
+  },
+  {
+   "w": "Audio,",
+   "s": 7.52,
+   "e": 8.16
+  },
+  {
+   "w": "y",
+   "s": 8.2,
+   "e": 8.24
+  },
+  {
+   "w": "la",
+   "s": 8.32,
+   "e": 8.36
+  },
+  {
+   "w": "mayoría",
+   "s": 8.4,
+   "e": 8.88
+  },
+  {
+   "w": "con",
+   "s": 8.96,
+   "e": 9.04
+  },
+  {
+   "w": "voces",
+   "s": 9.12,
+   "e": 9.44
+  },
+  {
+   "w": "de",
+   "s": 9.48,
+   "e": 9.52
+  },
+  {
+   "w": "Latinoamérica,",
+   "s": 9.6,
+   "e": 10.56
+  },
+  {
+   "w": "como",
+   "s": 10.68,
+   "e": 10.8
+  },
+  {
+   "w": "Carlos",
+   "s": 10.88,
+   "e": 11.12
+  },
+  {
+   "w": "Manuel",
+   "s": 11.2,
+   "e": 11.44
+  },
+  {
+   "w": "Vesga",
+   "s": 11.52,
+   "e": 12.0
+  },
+  {
+   "w": "o",
+   "s": 12.08,
+   "e": 12.16
+  },
+  {
+   "w": "Jane",
+   "s": 12.24,
+   "e": 12.48
+  },
+  {
+   "w": "Santos.",
+   "s": 12.56,
+   "e": 13.52
+  }
+ ],
+ "speechEnd": 13.119
+}

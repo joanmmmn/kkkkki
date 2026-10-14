@@ -11,7 +11,9 @@ export type SfxName =
   | 'coins' | 'success' | 'fail' | 'card_flip' | 'tick_soft' | 'sparkle' | 'bass_drop' | 'reverse_swell' | 'phone_tap'
   | 'logo_sting' | 'page_riffle' | 'snap_in'
   // Muestras sueltas (WAV, recortadas a la muestra de typing.mp3 y counter.mp3): una pulsación de tecla y un tic de contador.
-  | 'key1' | 'key2' | 'key3' | 'key4' | 'key5' | 'key6' | 'key7' | 'key_space' | 'count_tick';
+  | 'key1' | 'key2' | 'key3' | 'key4' | 'key5' | 'key6' | 'key7' | 'key_space' | 'count_tick'
+  // AUTOR · Stephen King (ElevenLabs Sound Effects, tools/sfx.py; ganancia igualada a page_turn por sonoridad integrada)
+  | 'sk_crumple' | 'sk_bin' | 'sk_uncrumple' | 'sk_typebell' | 'sk_typing' | 'sk_wind' | 'sk_door' | 'sk_heart' | 'sk_thunder' | 'sk_clock' | 'sk_pin' | 'sk_string' | 'sk_book_thud' | 'sk_book_slide' | 'sk_projector' | 'sk_chime' | 'sk_peel' | 'sk_snow';
 const WAV: Partial<Record<SfxName, true>> = { key1: true, key2: true, key3: true, key4: true, key5: true, key6: true, key7: true, key_space: true, count_tick: true };
 
 // Mezcla: todos los archivos están normalizados a -1 dBFS de pico; GAIN iguala la sonoridad percibida.
@@ -26,6 +28,7 @@ const GAIN: Record<SfxName, number> = {
   hit_soft: 0.26, impact: 0.24, bass_drop: 0.12, stamp: 0.42, success: 0.16, fail: 0.18, cross: 0.26, coins: 0.22,
   riser: 0.14, reverse_swell: 0.18, logo_sting: 0.2, typing: 0.55, counter: 0.17, page_turn: 0.32, page_riffle: 0.32,
   key1: 0.55, key2: 0.55, key3: 0.55, key4: 0.55, key5: 0.55, key6: 0.55, key7: 0.55, key_space: 0.55, count_tick: 0.17,
+  sk_crumple: 0.39, sk_bin: 0.38, sk_uncrumple: 0.59, sk_typebell: 0.23, sk_typing: 0.38, sk_wind: 0.31, sk_door: 0.6, sk_heart: 0.41, sk_thunder: 0.23, sk_clock: 0.62, sk_pin: 0.59, sk_string: 0.25, sk_book_thud: 0.65, sk_book_slide: 0.71, sk_projector: 0.22, sk_chime: 0.18, sk_peel: 0.35, sk_snow: 0.76,
 };
 const SYNC: Partial<Record<SfxName, number>> = {
   // golpes: el pico

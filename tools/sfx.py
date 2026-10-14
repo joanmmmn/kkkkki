@@ -33,6 +33,25 @@ KIT = {
     'logo_sting': ('Short premium brand logo sting, warm bright synth chord swell with a sparkle on top, elegant, clean', 2.6, 0.5),
     'page_riffle': ('Fast riffle through the pages of a thick book, short, crisp, close up', 1.0, 0.7),
     'snap_in': ('Tight snappy interface element snapping into place, short click with a tiny thump, clean', 0.5, 0.7),
+    # AUTOR · Stephen King (14/10/2026)
+    'sk_crumple': ('Crumpling a sheet of paper into a tight ball with both hands, close up, dry, no music', 1.0, 0.7),
+    'sk_bin': ('A crumpled paper ball dropping into an empty metal waste basket, short, close up, dry', 0.8, 0.7),
+    'sk_uncrumple': ('Unfolding and smoothing out a crumpled sheet of paper on a wooden desk, close up, dry', 1.4, 0.7),
+    'sk_typebell': ('Vintage manual typewriter carriage return: small bell ding and carriage slide, close up, dry', 1.0, 0.7),
+    'sk_typing': ('Vintage manual typewriter, a quick burst of fast keystrokes, close up, dry, no music', 1.8, 0.7),
+    'sk_wind': ('Cold winter wind blowing softly around a house at night, low and eerie, steady, no music', 6.0, 0.5),
+    'sk_door': ('Heavy old wooden door slowly creaking open in an empty hallway, eerie, close up', 2.2, 0.7),
+    'sk_heart': ('Two slow deep heartbeats, cinematic low thumps, clean, no music', 1.8, 0.7),
+    'sk_thunder': ('Distant soft rolling thunder, cinematic, no rain, no music', 3.5, 0.6),
+    'sk_clock': ('Old mechanical wall clock ticking slowly, four ticks, close up, dry', 2.2, 0.7),
+    'sk_pin': ('A thumbtack being pushed into a cork notice board, crisp short click with a soft thud, close up', 0.7, 0.5),
+    'sk_string': ('Taut red string pulled quickly across a cork board, soft rubbing swish ending in a tiny twang', 0.9, 0.6),
+    'sk_book_thud': ('Heavy hardcover book dropped flat onto a wooden table, deep solid thud, close up, dry', 0.8, 0.7),
+    'sk_book_slide': ('A book sliding into place on a wooden bookshelf, short, close up, dry', 0.7, 0.7),
+    'sk_projector': ('Old film projector starting up and running, mechanical rattle, short, close up', 2.2, 0.6),
+    'sk_chime': ('Soft subway station chime, two gentle tones, clean, modern, no voice', 1.3, 0.7),
+    'sk_peel': ('Peeling a paper sticker label off a book cover, short crisp tearing peel, close up', 0.8, 0.7),
+    'sk_snow': ('Footsteps crunching in fresh deep snow, three slow steps, close up, no wind', 1.8, 0.6),
 }
 
 

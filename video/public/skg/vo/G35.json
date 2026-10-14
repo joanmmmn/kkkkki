@@ -1,0 +1,89 @@
+{
+ "id": "G35",
+ "hash": "ef26d66106fd",
+ "text": "Si prefieres el acento de España, mira la ficha: Carrie, por ejemplo, tiene versión en castellano.",
+ "duration": 6.08,
+ "words": [
+  {
+   "w": "Si",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "prefieres",
+   "s": 0.24,
+   "e": 0.64
+  },
+  {
+   "w": "el",
+   "s": 0.68,
+   "e": 0.72
+  },
+  {
+   "w": "acento",
+   "s": 0.8,
+   "e": 1.12
+  },
+  {
+   "w": "de",
+   "s": 1.16,
+   "e": 1.2
+  },
+  {
+   "w": "España,",
+   "s": 1.28,
+   "e": 2.0
+  },
+  {
+   "w": "mira",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "la",
+   "s": 2.32,
+   "e": 2.4
+  },
+  {
+   "w": "ficha:",
+   "s": 2.44,
+   "e": 3.28
+  },
+  {
+   "w": "Carrie,",
+   "s": 3.32,
+   "e": 3.76
+  },
+  {
+   "w": "por",
+   "s": 3.8,
+   "e": 3.84
+  },
+  {
+   "w": "ejemplo,",
+   "s": 3.92,
+   "e": 4.64
+  },
+  {
+   "w": "tiene",
+   "s": 4.72,
+   "e": 4.88
+  },
+  {
+   "w": "versión",
+   "s": 5.0,
+   "e": 5.28
+  },
+  {
+   "w": "en",
+   "s": 5.32,
+   "e": 5.36
+  },
+  {
+   "w": "castellano.",
+   "s": 5.44,
+   "e": 6.08
+  }
+ ],
+ "speechEnd": 6.08
+}

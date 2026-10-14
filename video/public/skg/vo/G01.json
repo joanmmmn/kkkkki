@@ -1,0 +1,64 @@
+{
+ "id": "G01",
+ "hash": "f1546e0d3a2a",
+ "text": "Más de sesenta novelas. Más de doscientos relatos. Medio siglo escribiendo.",
+ "duration": 6.08,
+ "words": [
+  {
+   "w": "Más",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "de",
+   "s": 0.4,
+   "e": 0.48
+  },
+  {
+   "w": "sesenta",
+   "s": 0.56,
+   "e": 1.12
+  },
+  {
+   "w": "novelas.",
+   "s": 1.2,
+   "e": 2.0
+  },
+  {
+   "w": "Más",
+   "s": 2.24,
+   "e": 2.4
+  },
+  {
+   "w": "de",
+   "s": 2.48,
+   "e": 2.52
+  },
+  {
+   "w": "doscientos",
+   "s": 2.56,
+   "e": 3.2
+  },
+  {
+   "w": "relatos.",
+   "s": 3.28,
+   "e": 4.12
+  },
+  {
+   "w": "Medio",
+   "s": 4.4,
+   "e": 4.72
+  },
+  {
+   "w": "siglo",
+   "s": 4.88,
+   "e": 5.2
+  },
+  {
+   "w": "escribiendo.",
+   "s": 5.28,
+   "e": 6.08
+  }
+ ],
+ "speechEnd": 6.08
+}

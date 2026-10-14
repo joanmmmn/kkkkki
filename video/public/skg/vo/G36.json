@@ -1,0 +1,109 @@
+{
+ "id": "G36",
+ "hash": "45c520a7a308",
+ "text": "En SonorBooks tienes sus audiolibros en español con su narrador, su duración y dónde escucharlos. El enlace, en la descripción.",
+ "duration": 8.8,
+ "words": [
+  {
+   "w": "En",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "SonorBooks",
+   "s": 0.24,
+   "e": 0.96
+  },
+  {
+   "w": "tienes",
+   "s": 1.04,
+   "e": 1.28
+  },
+  {
+   "w": "sus",
+   "s": 1.36,
+   "e": 1.44
+  },
+  {
+   "w": "audiolibros",
+   "s": 1.52,
+   "e": 2.08
+  },
+  {
+   "w": "en",
+   "s": 2.12,
+   "e": 2.16
+  },
+  {
+   "w": "español",
+   "s": 2.24,
+   "e": 2.72
+  },
+  {
+   "w": "con",
+   "s": 2.84,
+   "e": 2.96
+  },
+  {
+   "w": "su",
+   "s": 3.0,
+   "e": 3.04
+  },
+  {
+   "w": "narrador,",
+   "s": 3.12,
+   "e": 3.88
+  },
+  {
+   "w": "su",
+   "s": 3.92,
+   "e": 4.0
+  },
+  {
+   "w": "duración",
+   "s": 4.08,
+   "e": 4.72
+  },
+  {
+   "w": "y",
+   "s": 4.8,
+   "e": 4.88
+  },
+  {
+   "w": "dónde",
+   "s": 4.96,
+   "e": 5.2
+  },
+  {
+   "w": "escucharlos.",
+   "s": 5.28,
+   "e": 6.44
+  },
+  {
+   "w": "El",
+   "s": 6.48,
+   "e": 6.56
+  },
+  {
+   "w": "enlace,",
+   "s": 6.64,
+   "e": 7.32
+  },
+  {
+   "w": "en",
+   "s": 7.36,
+   "e": 7.44
+  },
+  {
+   "w": "la",
+   "s": 7.48,
+   "e": 7.52
+  },
+  {
+   "w": "descripción.",
+   "s": 7.6,
+   "e": 8.8
+  }
+ ],
+ "speechEnd": 8.374
+}

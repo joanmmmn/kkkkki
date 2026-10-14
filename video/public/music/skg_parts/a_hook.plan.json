@@ -1,0 +1,56 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 0,
+ "end_frame": 700,
+ "levels": [
+  -17.0
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the novels of Stephen King",
+   "key of D minor, around 96 BPM unless stated otherwise",
+   "felt piano, music box, warm cello and string pads, soft analog synth pulses, tight modern percussion, subtle sub bass",
+   "elegant, intriguing and atmospheric with warmth, never cheesy horror",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "jump scare stingers",
+   "screams",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Cold open",
+    "positive_local_styles": [
+     "cold open: an eerie music box melody over a low warm drone from the very first second",
+     "a soft heartbeat-like kick pulse enters after a few seconds",
+     "tension slowly builds with ticking clock-like percussion",
+     "opens up into warmer strings in the last four seconds",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "silence",
+     "long intro",
+     "slow fade in",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 22000,
+    "lines": []
+   }
+  ]
+ }
+}

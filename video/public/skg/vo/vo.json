@@ -1,0 +1,202 @@
+{
+  "voice_id": "D7dkYvH17OKLgp4SLulf",
+  "model_id": "eleven_v4",
+  "language_code": "es",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.3,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 1.13
+  },
+  "scenes": [
+    {
+      "id": "G01",
+      "text": "Más de sesenta novelas. Más de doscientos relatos. Medio siglo escribiendo."
+    },
+    {
+      "id": "G02",
+      "text": "Y una pregunta que todo el mundo se hace tarde o temprano: ¿por dónde empiezo con Stephen King?",
+      "say": "Y una pregunta que todo el mundo se hace tarde o temprano: ¿por dónde empiezo con Stíven King?"
+    },
+    {
+      "id": "G03",
+      "text": "Para que te hagas una idea: solo sus audiolibros en español que tenemos en SonorBooks suman más de setecientas horas. Un mes entero escuchando, día y noche, sin parar.",
+      "say": "Para que te hagas una idea: solo sus audiolibros en español que tenemos en Sónorbuks suman más de setecientas horas. Un mes entero escuchando, día y noche, sin parar."
+    },
+    {
+      "id": "G04",
+      "text": "Si empiezas por el libro equivocado, puedes acabar pensando que King no es para ti. Así que aquí tienes un mapa: qué escribe, cinco puertas de entrada según lo que te guste, los libros que es mejor dejar para después y en qué orden seguir."
+    },
+    {
+      "id": "G05",
+      "text": "Stephen King nació en 1947 en Portland, en el estado de Maine. Y Maine aparece en muchísimos de sus libros: pueblos pequeños, inviernos largos y vecinos que esconden algo.",
+      "say": "Stíven King nació en mil novecientos cuarenta y siete en Pórtland, en el estado de Méin. Y Méin aparece en muchísimos de sus libros: pueblos pequeños, inviernos largos y vecinos que esconden algo."
+    },
+    {
+      "id": "G06",
+      "text": "A principios de los setenta daba clases de inglés en un instituto y escribía en sus ratos libres. Un día tiró a la basura las primeras páginas de un relato sobre una chica con poderes."
+    },
+    {
+      "id": "G07",
+      "text": "Su mujer, Tabitha, las rescató y le animó a seguir. Aquel relato acabó siendo Carrie, su primera novela publicada. Salió en 1974 y le cambió la vida.",
+      "say": "Su mujer, Tábita, las rescató y le animó a seguir. Aquel relato acabó siendo Kéri, su primera novela publicada. Salió en mil novecientos setenta y cuatro y le cambió la vida."
+    },
+    {
+      "id": "G08",
+      "text": "Desde entonces no ha parado. En Mientras escribo cuenta que se marca dos mil palabras al día. Y llegó a publicar siete novelas con otro nombre, Richard Bachman, en parte para comprobar si sus libros se vendían por lo que contaban o por su firma. Lo descubrió un librero en 1985.",
+      "say": "Desde entonces no ha parado. En Mientras escribo cuenta que se marca dos mil palabras al día. Y llegó a publicar siete novelas con otro nombre, Ríchard Bákman, en parte para comprobar si sus libros se vendían por lo que contaban o por su firma. Lo descubrió un librero en mil novecientos ochenta y cinco."
+    },
+    {
+      "id": "G09",
+      "text": "Mucha gente cree que King solo escribe terror. Y es el rey del género, eso nadie lo discute. Pero su obra se parece más a un mapa con varios territorios."
+    },
+    {
+      "id": "G10",
+      "text": "Está el terror sobrenatural: hoteles, coches y pueblos malditos. El terror humano, donde el monstruo es una persona. La fantasía y la ciencia ficción, con viajes en el tiempo y otros mundos. El crimen, con detectives y asesinos. Y los relatos y novelas cortas."
+    },
+    {
+      "id": "G11",
+      "text": "Y aunque no lo hayas leído nunca, seguro que lo has visto. Cadena perpetua, Cuenta conmigo y La milla verde salen de libros suyos. Y ninguna de las tres es de terror."
+    },
+    {
+      "id": "G12",
+      "text": "Antes de elegir, hazte dos preguntas. La primera: ¿cuánto miedo quieres pasar?"
+    },
+    {
+      "id": "G13",
+      "text": "La segunda: ¿cuánto tiempo tienes? Porque con King la diferencia es enorme. Carrie se escucha en menos de ocho horas. Apocalipsis pasa de cuarenta y ocho.",
+      "say": "La segunda: ¿cuánto tiempo tienes? Porque con King la diferencia es enorme. Kéri se escucha en menos de ocho horas. Apocalipsis pasa de cuarenta y ocho."
+    },
+    {
+      "id": "G14",
+      "text": "Si quieres terror clásico, empieza por El resplandor, de 1977.",
+      "say": "Si quieres terror clásico, empieza por El resplandor, de mil novecientos setenta y siete."
+    },
+    {
+      "id": "G15",
+      "text": "Un escritor acepta cuidar un hotel aislado por la nieve durante todo el invierno, con su mujer y su hijo de cinco años. El hotel tiene otros planes."
+    },
+    {
+      "id": "G16",
+      "text": "Es King en estado puro: lo que más asusta no son los fantasmas, sino lo que le va pasando al padre. Audiolibro: dieciocho horas y media."
+    },
+    {
+      "id": "G17",
+      "text": "Si prefieres un miedo sin nada sobrenatural: Misery.",
+      "say": "Si prefieres un miedo sin nada sobrenatural: Mísery."
+    },
+    {
+      "id": "G18",
+      "text": "Un novelista se estrella con el coche en plena tormenta de nieve y lo rescata su admiradora número uno. El problema es que no piensa dejarlo marchar. Dos personajes, una casa y una tensión que no afloja. Catorce horas."
+    },
+    {
+      "id": "G19",
+      "text": "Si el terror no es lo tuyo: La milla verde."
+    },
+    {
+      "id": "G20",
+      "text": "El corredor de la muerte de una cárcel, en 1932. Un guardia y un preso enorme con un don que nadie se explica. Se publicó por entregas, en seis libritos, como una serie. Es de lo más emotivo que ha escrito. Catorce horas y media.",
+      "say": "El corredor de la muerte de una cárcel, en mil novecientos treinta y dos. Un guardia y un preso enorme con un don que nadie se explica. Se publicó por entregas, en seis libritos, como una serie. Es de lo más emotivo que ha escrito. Catorce horas y media."
+    },
+    {
+      "id": "G21",
+      "text": "Si te gustan la ciencia ficción o la historia: 22/11/63.",
+      "say": "Si te gustan la ciencia ficción o la historia: veintidós, once, sesenta y tres."
+    },
+    {
+      "id": "G22",
+      "text": "Un profesor descubre que en la despensa de un restaurante hay un pasadizo que lleva a 1958. Y se propone aguantar allí hasta el 22 de noviembre de 1963 para impedir el asesinato de Kennedy. Son casi treinta y tres horas, pero engancha como una serie.",
+      "say": "Un profesor descubre que en la despensa de un restaurante hay un pasadizo que lleva a mil novecientos cincuenta y ocho. Y se propone aguantar allí hasta el veintidós de noviembre de mil novecientos sesenta y tres para impedir el asesinato de Kénedy. Son casi treinta y tres horas, pero engancha como una serie."
+    },
+    {
+      "id": "G23",
+      "text": "Y si lo tuyo es el thriller: Mr. Mercedes.",
+      "say": "Y si lo tuyo es el thríler: Míster Mercedes."
+    },
+    {
+      "id": "G24",
+      "text": "Un policía jubilado recibe la carta de un asesino al que nunca atraparon. Ganó el premio Edgar a la mejor novela de misterio y abre una trilogía. Diecisiete horas."
+    },
+    {
+      "id": "G25",
+      "text": "¿Y si tienes poco tiempo? Carrie, con la que empezó todo, en menos de ocho horas. O Elevación, una novela corta que se escucha en poco más de tres.",
+      "say": "¿Y si tienes poco tiempo? Kéri, con la que empezó todo, en menos de ocho horas. O Elevación, una novela corta que se escucha en poco más de tres."
+    },
+    {
+      "id": "G26",
+      "text": "Ahora, las que es mejor no abrir primero. It es una obra maestra para muchos lectores, pero son más de cuarenta y seis horas de audio.",
+      "say": "Ahora, las que es mejor no abrir primero. Ít es una obra maestra para muchos lectores, pero son más de cuarenta y seis horas de audio."
+    },
+    {
+      "id": "G27",
+      "text": "Si es tu primer King y no te engancha su ritmo, con sus desvíos y sus historias dentro de la historia, es fácil quedarse a mitad."
+    },
+    {
+      "id": "G28",
+      "text": "Con Apocalipsis pasa lo mismo: cuarenta y ocho horas. Y La Torre Oscura es su gran saga de fantasía: siete libros principales y casi ciento cincuenta horas de audiolibro."
+    },
+    {
+      "id": "G29",
+      "text": "Es el centro de todo su universo. Así que la disfrutarás más si llegas con otros libros suyos ya leídos."
+    },
+    {
+      "id": "G30",
+      "text": "Porque aquí viene lo mejor: muchos de sus libros están conectados."
+    },
+    {
+      "id": "G31",
+      "text": "El Danny de El resplandor vuelve de adulto en Doctor Sueño. El protagonista de 22/11/63 pasa por Derry, el pueblo de It, y se cruza con dos de sus niños.",
+      "say": "El Dani de El resplandor vuelve de adulto en Doctor Sueño. El protagonista de veintidós, once, sesenta y tres pasa por Dérri, el pueblo de Ít, y se cruza con dos de sus niños."
+    },
+    {
+      "id": "G32",
+      "text": "Randall Flagg, el villano de Apocalipsis, reaparece en La Torre Oscura. Y Holly, una secundaria de Mr. Mercedes, acaba teniendo novela propia.",
+      "say": "Rándal Flag, el villano de Apocalipsis, reaparece en La Torre Oscura. Y Jóli, una secundaria de Míster Mercedes, acaba teniendo novela propia."
+    },
+    {
+      "id": "G33",
+      "text": "¿Hay que leerlo en orden? No. Solo en tres casos: La Torre Oscura, de principio a fin. La trilogía de Bill Hodges, antes de El visitante y de Holly. Y El resplandor, antes de Doctor Sueño.",
+      "say": "¿Hay que leerlo en orden? No. Solo en tres casos: La Torre Oscura, de principio a fin. La trilogía de Bil Jódges, antes de El visitante y de Jóli. Y El resplandor, antes de Doctor Sueño."
+    },
+    {
+      "id": "G34",
+      "text": "¿Y escucharlo? Sus novelas más conocidas están en audiolibro en español. Casi todas las publica Penguin Random House Audio, y la mayoría con voces de Latinoamérica, como Carlos Manuel Vesga o Jane Santos.",
+      "say": "¿Y escucharlo? Sus novelas más conocidas están en audiolibro en español. Casi todas las publica Pénguin Rándom Jaus Audio, y la mayoría con voces de Latinoamérica, como Carlos Manuel Vesga o Yein Santos."
+    },
+    {
+      "id": "G35",
+      "text": "Si prefieres el acento de España, mira la ficha: Carrie, por ejemplo, tiene versión en castellano.",
+      "say": "Si prefieres el acento de España, mira la ficha: Kéri, por ejemplo, tiene versión en castellano."
+    },
+    {
+      "id": "G36",
+      "text": "En SonorBooks tienes sus audiolibros en español con su narrador, su duración y dónde escucharlos. El enlace, en la descripción.",
+      "say": "En Sónorbuks tienes sus audiolibros en español con su narrador, su duración y dónde escucharlos. El enlace, en la descripción."
+    },
+    {
+      "id": "G37",
+      "text": "Resumiendo: tres rutas. Si quieres miedo: Carrie, El resplandor, Doctor Sueño y, cuando estés listo, It.",
+      "say": "Resumiendo: tres rutas. Si quieres miedo: Kéri, El resplandor, Doctor Sueño y, cuando estés listo, Ít."
+    },
+    {
+      "id": "G38",
+      "text": "Si quieres emoción y fantasía: La milla verde, 22/11/63 y Cuento de hadas.",
+      "say": "Si quieres emoción y fantasía: La milla verde, veintidós, once, sesenta y tres y Cuento de hadas."
+    },
+    {
+      "id": "G39",
+      "text": "Si quieres crimen: la trilogía de Bill Hodges, El visitante y Holly. Y al final del camino, para los valientes, La Torre Oscura.",
+      "say": "Si quieres crimen: la trilogía de Bil Jódges, El visitante y Jóli. Y al final del camino, para los valientes, La Torre Oscura."
+    },
+    {
+      "id": "G40",
+      "text": "¿Y tú? ¿Por cuál empezaste, o por cuál vas a empezar? Te leo en los comentarios. Y si quieres esta guía con otro autor, dime cuál."
+    },
+    {
+      "id": "G41",
+      "text": "Tu próxima historia te está esperando."
+    }
+  ]
+}

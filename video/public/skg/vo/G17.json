@@ -1,0 +1,49 @@
+{
+ "id": "G17",
+ "hash": "ca2dfd20a276",
+ "text": "Si prefieres un miedo sin nada sobrenatural: Misery.",
+ "duration": 4.0,
+ "words": [
+  {
+   "w": "Si",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "prefieres",
+   "s": 0.16,
+   "e": 0.64
+  },
+  {
+   "w": "un",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "miedo",
+   "s": 0.84,
+   "e": 1.12
+  },
+  {
+   "w": "sin",
+   "s": 1.2,
+   "e": 1.36
+  },
+  {
+   "w": "nada",
+   "s": 1.44,
+   "e": 1.68
+  },
+  {
+   "w": "sobrenatural:",
+   "s": 1.76,
+   "e": 3.04
+  },
+  {
+   "w": "Misery.",
+   "s": 3.08,
+   "e": 4.0
+  }
+ ],
+ "speechEnd": 3.63
+}

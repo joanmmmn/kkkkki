@@ -25,3 +25,7 @@ web/podimo-resena/preview-movil/
 web/storytel-resena/dist/
 web/storytel-resena/preview/
 web/storytel-resena/preview-movil/
+
+# AUTOR · Stephen King: se guardan las composiciones (*.raw.mp3); las niveladas las rehace tools/skg_music.py join
+video/public/music/skg_parts/*.mp3
+!video/public/music/skg_parts/*.raw.mp3
