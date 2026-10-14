@@ -93,7 +93,8 @@ Si lo pruebas, aquí tienes los 30 días gratis: https://sonorbooks.com/salir/au
   `miniatura_resena_A.png` («¿TODO INCLUIDO?», icono con cascos) y `miniatura_resena_B.png` («30 DÍAS GRATIS», el móvil con la app).
 - Sube los subtítulos `audible_resena.es.srt` (Subtítulos → Subir archivo → Con sincronización).
 - Idioma del vídeo y de los subtítulos: español (España).
-- Pantalla final: los últimos segundos dejan libre la mitad inferior para los elementos de pantalla final.
+- Pantalla final: los últimos 7 s (cierre de SonorBooks, desde 4:10) dejan libre la mitad inferior para los elementos de pantalla final.
+- Tarjeta (opcional): la reseña de Podimo a las 3:21, cuando la voz la nombra en el veredicto.
 - Precios y promociones cambian: Audible anuncia ahora mismo en su web «0,99 € al mes durante los primeros 3 meses» (Ahorros de temporada) y 3 meses gratis para clientes de Prime. El vídeo no los menciona a propósito (solo la prueba de 30 días de SonorBooks); la página los explica con fecha.
 
 ## TikTok / Instagram Reels / YouTube Shorts (vídeo vertical)

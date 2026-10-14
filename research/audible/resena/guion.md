@@ -106,6 +106,10 @@ variedad»: en las reseñas de 4 y 5 estrellas de las 100 «más útiles» salen
 mientras haces otra cosa (5); los exclusivos, una vez. Locución nueva de G11 (284 caracteres): el vídeo queda en 4:18 (12.903
 fotogramas) y los tres últimos capítulos empiezan un segundo antes.
 
+Retoques tras revisar el máster (14/10), solo en pantalla: en G03, la tarjeta de Premium dice «+90.000 títulos incluidos»
+(antes «Todo el catálogo incluido», que se podía leer como «está todo incluido») y la de Standard, «Mientras sigas suscrito»;
+las píldoras de G03, G13 y H04 ya no tienen doble espacio ni « :»; en H04, las etiquetas «Día 1» y «Día 30» bajan y no pisan el título.
+
 | Escena | Voz | En pantalla |
 |---|---|---|
 | G01 | ¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis. | Montaje rápido de la app (portada, Top 20, Drácula, reproductor, Los tres mundos, suscripción) y etiquetas |
