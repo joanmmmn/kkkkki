@@ -32,9 +32,9 @@ Alternativas:
 2:02 Sin límite de horas y perfil infantil
 2:13 Dispositivos (también en el ordenador)
 2:28 Opiniones: App Store y Google Play
-2:48 Lo bueno y lo malo de Audible
-3:08 Veredicto: ¿merece la pena?
-3:28 Cómo probar Audible 30 días gratis y cancelar
+2:47 Lo bueno y lo malo de Audible
+3:07 Veredicto: ¿merece la pena?
+3:27 Cómo probar Audible 30 días gratis y cancelar
 
 En esta reseña de Audible en español respondemos a todo lo que conviene saber antes de pagar:
 • Qué es Audible: la app de audiolibros de Amazon, en España desde octubre de 2020. Con Premium escuchas sin límite de horas su catálogo incluido: más de 90.000 títulos entre audiolibros, pódcasts y producciones propias.

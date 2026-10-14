@@ -186,8 +186,8 @@ const Stars: React.FC<{ v: number; size: number; c: string }> = ({ v, size, c })
 );
 
 // G11 · Opiniones: App Store España (4,7, unas 36.000 valoraciones) y Google Play (4,5, más de un millón de reseñas); lo que
-// más gusta (las narraciones y los exclusivos) y lo que más se critica (pagar la cuota y que algunos populares vayan aparte),
-// de las reseñas de la App Store España de 2025 y 2026.
+// más gusta (las narraciones y la variedad) y lo que más se critica (pagar la cuota y que algunos populares vayan aparte),
+// de las 100 reseñas «más útiles» de la App Store España (en las de 4 y 5 estrellas: narración 10, variedad 6, exclusivos 1).
 export const G11Opiniones: React.FC<P> = ({ lead }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -256,7 +256,7 @@ export const G11Opiniones: React.FC<P> = ({ lead }) => {
           {card('Google Play', vG, '4,5', atG, frame >= fCuatro2 + 10 ? 'Más de un millón de reseñas' : '', sG, actG)}
         </div>
         <div style={{ position: 'absolute', top: 576, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22 }}>
-          {frame >= fGusta - 4 && pill(true, sLike, 'Gusta:', 'las narraciones y sus exclusivos', like2)}
+          {frame >= fGusta - 4 && pill(true, sLike, 'Gusta:', 'las narraciones y la variedad', like2)}
           {frame >= fCritica - 4 && pill(false, sCrit, 'Se critica:', <>pagar la cuota <span style={{ opacity: crit3 }}>y que algunos populares vayan aparte</span></>, crit2)}
         </div>
       </AbsoluteFill>

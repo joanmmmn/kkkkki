@@ -101,6 +101,11 @@ Cancelar suscripción); App Store o Google Play si se pagó allí. Desistimiento
 
 ## Guion final (voz «Martin Osborne», `eleven_v4`, velocidad 1,13)
 
+G11 (revisión de datos, 14/10): «Lo que más gusta» pasa de «las narraciones y sus exclusivos» a «las narraciones y la
+variedad»: en las reseñas de 4 y 5 estrellas de las 100 «más útiles» salen la narración (10), la variedad (6) y escuchar
+mientras haces otra cosa (5); los exclusivos, una vez. Locución nueva de G11 (284 caracteres): el vídeo queda en 4:18 (12.903
+fotogramas) y los tres últimos capítulos empiezan un segundo antes.
+
 | Escena | Voz | En pantalla |
 |---|---|---|
 | G01 | ¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis. | Montaje rápido de la app (portada, Top 20, Drácula, reproductor, Los tres mundos, suscripción) y etiquetas |
@@ -113,7 +118,7 @@ Cancelar suscripción); App Store o Google Play si se pagó allí. Desistimiento
 | G08 | El reproductor llega a tres veces y media la velocidad, y tiene temporizador para dormir, capítulos, marcadores con notas, modo coche y descargas para escuchar sin conexión. | Velocidad 3,45 → 3,50, temporizador, capítulos, «Marcador añadido», modo coche, Descargados |
 | G09 | Y en Premium no hay reloj: escuches a velocidad normal o al triple, no se gasta nada. Para los peques, puedes crear un perfil infantil con solo los títulos que tú compartas. | 1,00 → 3,50, «No se gasta nada»; perfil infantil |
 | G10 | Funciona en Android y en iPhone, en el Apple Watch, en el coche con CarPlay y Android Auto, y en altavoces con Alexa. Y, a diferencia de otras, también puedes escuchar en el ordenador, desde su web. | Tarjetas de dispositivos y «También en el ordenador» |
-| G11 | ¿Y qué opinan los usuarios? En la App Store tiene un cuatro coma siete, con treinta y seis mil valoraciones, y en Google Play, un cuatro coma cinco. Lo que más gusta: las narraciones y sus exclusivos. Lo que más se critica: pagar la cuota y que algunos libros populares se paguen aparte. | Notas 4,7 y 4,5; gusta / se critica |
+| G11 | ¿Y qué opinan los usuarios? En la App Store tiene un cuatro coma siete, con treinta y seis mil valoraciones, y en Google Play, un cuatro coma cinco. Lo que más gusta: las narraciones y la variedad. Lo que más se critica: pagar la cuota y que algunos libros populares se paguen aparte. | Notas 4,7 y 4,5; gusta / se critica |
 | G12 | Lo bueno: sin límite de horas por nueve noventa y nueve, Originals con actores conocidos, una app muy completa y web para el ordenador. Lo malo: no está todo incluido, no hay ebooks ni plan familiar y, si te suscribes desde la app del móvil, puede salirte más caro y sin prueba gratis. | Lo bueno / lo malo |
 | G13 | ¿Merece la pena? Si escuchas mucho y te gustan las producciones originales, sí: por nueve noventa y nueve no cuentas horas. Si solo quieres un libro al mes, te basta Standard, o un plan con horas como Podimo. Y antes de pagar, busca tus libros: lo del catálogo extendido se paga aparte. | Veredicto; Standard 6,99 € y Podimo 4,99 € (20 h) |
 | H01 | ¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis de Audible Premium. | Sello 30 días; condiciones de la tarjeta de SonorBooks tal cual |
