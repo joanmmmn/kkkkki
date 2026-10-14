@@ -251,11 +251,12 @@ export const G11Opiniones: React.FC<P> = ({ lead }) => {
           <MaskTitle text="¿Qué opinan los usuarios?" hi="opinan" at={2} size={80} align="center" />
         </div>
         <div style={{ position: 'absolute', top: 250, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 48,
-          transform: `translateY(${(-90 * up).toFixed(2)}px) scale(${(1 - 0.22 * up).toFixed(4)}) translateX(${((1 - Math.min(1, sG)) * 334).toFixed(2)}px)`, transformOrigin: '50% 0%' }}>
+          transform: `translateY(${(-24 * up).toFixed(2)}px) scale(${(1 - 0.22 * up).toFixed(4)}) translateX(${((1 - Math.min(1, sG)) * 334).toFixed(2)}px)`, transformOrigin: '50% 0%' }}>
           {card('App Store (España)', vA, '4,7', atA, frame >= fTreinta - 4 ? 'Unas 36.000 valoraciones' : '', sA, actA)}
           {card('Google Play', vG, '4,5', atG, frame >= fCuatro2 + 10 ? 'Más de un millón de reseñas' : '', sG, actG)}
         </div>
-        <div style={{ position: 'absolute', top: 576, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22 }}>
+        {/* Con las píldoras, todo queda centrado en vertical (antes se quedaba arriba y la mitad de abajo, vacía). */}
+        <div style={{ position: 'absolute', top: 640, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22 }}>
           {frame >= fGusta - 4 && pill(true, sLike, 'Gusta:', 'las narraciones y la variedad', like2)}
           {frame >= fCritica - 4 && pill(false, sCrit, 'Se critica:', <>pagar la cuota <span style={{ opacity: crit3 }}>y que algunos populares vayan aparte</span></>, crit2)}
         </div>
@@ -441,7 +442,7 @@ export const G13Veredicto: React.FC<P> = ({ lead }) => {
         <div style={{ position: 'absolute', left: 0, right: 0, top: 900, display: 'flex', justifyContent: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '18px 40px 18px 26px', borderRadius: 999, background: AU_NAVY, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 38,
             opacity: sBusca, transform: `translateY(${((1 - sBusca) * 40).toFixed(2)}px) scale(${(0.85 + 0.15 * sBusca).toFixed(4)})`, boxShadow: '0 24px 60px rgba(11,26,38,0.3)' }}>
-            <SearchIcon size={44} c={AU} /> <span>Busca tus libros antes de pagar<span style={{ opacity: ext2, color: AU_SOFT, fontWeight: 500 }}>: el catálogo extendido va aparte</span></span>
+            <SearchIcon size={44} c={AU} /> <span>Busca tus libros antes de pagar<span style={{ opacity: ext2, color: AU_SOFT, fontWeight: 500, display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap', verticalAlign: 'top', maxWidth: ext2 * 720 }}>: el catálogo extendido va aparte</span></span>
           </div>
         </div>
       )}

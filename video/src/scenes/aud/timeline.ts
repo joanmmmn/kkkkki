@@ -48,7 +48,7 @@ export const AUD_SCENES: SceneDef[] = [
   simple('G11', 18, sec(0.52), 'Opiniones'),
   simple('G12', 20, sec(0.52), 'Lo bueno y lo malo'),
   simple('G13', 20, sec(0.52), 'Veredicto'),
-  simple('H01', 12, sec(0.52), '30 días gratis'),
+  simple('H01', 36, sec(0.52), 'Hasta 90 días gratis'),
   simple('H02', 16),
   simple('H03', 14, LEAD, undefined, 'slide'),
   simple('H04', 18),
@@ -81,5 +81,5 @@ export const AUD_CHAPTERS: { label: string; from: string }[] = [
   { label: 'Opiniones: App Store y Google Play', from: 'G11' },
   { label: 'Lo bueno y lo malo de Audible', from: 'G12' },
   { label: 'Veredicto: ¿merece la pena?', from: 'G13' },
-  { label: 'Cómo probar Audible 30 días gratis y cancelar', from: 'H01' },
+  { label: 'Cómo probar Audible gratis (hasta 90 días) y cancelar', from: 'H01' },
 ];

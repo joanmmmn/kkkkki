@@ -43,20 +43,20 @@ y Asier Etxeandia.
 ¿Quieres probarlo?
 
 11
-00:00:22,180 --> 00:00:25,500
-Desde SonorBooks
-tienes 30 días gratis.
+00:00:22,180 --> 00:00:25,790
+Desde SonorBooks tienes
+hasta 90 días gratis.
 
 12
-00:00:25,540 --> 00:00:28,620
+00:00:26,780 --> 00:00:29,860
 Y si cancelas el primer día,
 sigues escuchando hasta que
 
 13
-00:00:28,660 --> 00:00:30,060
+00:00:29,900 --> 00:00:31,300
 termina la prueba.
 
 14
-00:00:30,100 --> 00:00:33,230
+00:00:31,340 --> 00:00:34,470
 Busca tu próximo
 libro en SonorBooks.

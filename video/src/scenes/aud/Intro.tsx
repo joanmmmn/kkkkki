@@ -54,11 +54,11 @@ export const G01Hook: React.FC<P> = ({ lead, dur }) => {
   const fLetra = at('letra');
   const fBueno = at('bueno');
   const fMalo = at('malo');
-  const fTreinta = at('treinta');
+  const fHasta = at('hasta');
   const sLogo = useSpring(lead - 6);
   const sInst = useSpring(fInst - 2, 14, 190);
   // La portada mientras suena la pregunta; luego, lo que se nombra: el top 20, Drácula, el reproductor, la letra pequeña
-  // (un superventas que se paga aparte) y, con «treinta días», la suscripción Premium.
+  // (un superventas que se paga aparte) y, con «hasta noventa días gratis», la suscripción Premium.
   const s0: Shot = { rec: '00_inicio_top', at: 0, start: 1.0, hold: 15 };
   const s1: Shot = { rec: '04_top20', at: fCat - 6, start: 1.4, hold: 6.5 };
   s1.marks = [markOn(s1, fCat + 2, fOrig - 4, 10, 560, 644, 760, 24)];
@@ -66,8 +66,9 @@ export const G01Hook: React.FC<P> = ({ lead, dur }) => {
   const s3: Shot = { rec: '12_reproductor', at: fApp - 5, start: 6.0, hold: 17 };
   const s4: Shot = { rec: '11_tres_mundos', at: fLetra - 6, start: 3.0, hold: 18 };
   s4.marks = [markOn(s4, fLetra + 2, fBueno - 4, 24, 744, 616, 300, 22)];
-  const s5: Shot = { rec: '19_suscripcion', at: fTreinta - 8, start: 17.0, hold: 18.5 };
-  s5.marks = [markOn(s5, fTreinta, dur + 20, 16, 380, 632, 440, 22)];
+  // 19_suscripcion limpia entre 18,25 y 22,5 s (antes sale el círculo de «actualizar» encima del aviso).
+  const s5: Shot = { rec: '19_suscripcion', at: fHasta - 8, start: 18.3, hold: 22.3 };
+  s5.marks = [markOn(s5, fHasta, dur + 20, 16, 380, 632, 440, 22)];
   const shots = [s0, s1, s2, s3, s4, s5];
   const cx = 1425;
   const top = Math.round((1080 - PH.H) / 2);
@@ -76,7 +77,7 @@ export const G01Hook: React.FC<P> = ({ lead, dur }) => {
     focus: [
       { from: fCat + 4, to: fOrig - 6, y: 820, s: 1.18 },
       { from: fLetra + 4, to: fBueno - 8, y: 880, s: 1.55 },
-      { from: fTreinta + 2, to: dur, y: 560, s: 1.4 },
+      { from: fHasta + 2, to: dur, y: 560, s: 1.4 },
     ],
   });
   return (
@@ -103,10 +104,10 @@ export const G01Hook: React.FC<P> = ({ lead, dur }) => {
             <Chip at={fApp - 3} dimAt={fLetra - 3} label="La app" icon={<PhoneIcon size={26} />} size={30} reserve />
             <Chip at={fLetra - 3} dimAt={fBueno - 3} label="Letra pequeña" icon={<DocIcon size={26} />} size={30} reserve />
           </div>
-          <div style={{ display: 'flex', gap: 18, marginTop: 24, minHeight: 86 }}>
-            <Chip at={fBueno - 3} label="Lo bueno" icon={<CheckIcon size={36} c={color.green} />} accent="#E3F5EA" size={42} reserve />
-            <Chip at={fMalo - 3} label="Lo malo" icon={<CrossIcon size={36} />} accent="#FDECEC" size={42} reserve />
-            <Chip at={fTreinta - 3} label="30 días gratis" size={42} dark reserve />
+          <div style={{ display: 'flex', gap: 14, marginTop: 24, minHeight: 80 }}>
+            <Chip at={fBueno - 3} label="Lo bueno" icon={<CheckIcon size={32} c={color.green} />} accent="#E3F5EA" size={37} reserve />
+            <Chip at={fMalo - 3} label="Lo malo" icon={<CrossIcon size={32} />} accent="#FDECEC" size={37} reserve />
+            <Chip at={fHasta - 3} label="Hasta 90 días gratis" size={37} dark reserve />
           </div>
         </div>
       </AbsoluteFill>
@@ -117,7 +118,7 @@ export const G01Hook: React.FC<P> = ({ lead, dur }) => {
       {zoomPeaks(cam, 36, dur - 2).map((f) => <Sfx key={`z${f}`} name="zoom_in" at={f} volume={0.4} />)}
       <Sfx name="ui_pop" at={fBueno - 2} />
       <Sfx name="ui_pop" at={fMalo - 2} />
-      <Sfx name="sparkle" at={fTreinta - 2} />
+      <Sfx name="sparkle" at={fHasta - 2} />
     </AudStage>
   );
 };
@@ -400,7 +401,7 @@ export const G03Planes: React.FC<P> = ({ lead }) => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '16px 30px 16px 18px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.float,
           fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink, opacity: sNo, transform: `translateY(${((1 - sNo) * 40).toFixed(2)}px) scale(${(0.85 + 0.15 * sNo).toFixed(4)})` }}>
-          <CrossIcon size={44} /> <span>Sin plan anual<span style={{ opacity: famIn, display: 'inline-block', transform: `translateX(${((1 - famIn) * -12).toFixed(2)}px)` }}>&nbsp;ni familiar</span></span>
+          <CrossIcon size={44} /> <span>Sin plan anual<span style={{ opacity: famIn, display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap', verticalAlign: 'top', maxWidth: famIn * 240 }}>&nbsp;ni familiar</span></span>
         </div>
       </div>
       <Sfx name="card_flip" at={fPrem + 2} />
@@ -442,7 +443,9 @@ export const G04Extendido: React.FC<P> = (p) => {
   const s2: Shot = { rec: '02_huerfanos_ficha', at: fHuerf - 6, start: 2.2, hold: 4.6 };
   s2.marks = [markOn(s2, fHuerf + 2, fAparte - 6, 22, 996, 620, 72, 36)];
   const s3: Shot = { rec: '10_posteguillo', at: fAparte - 6, start: 5.0, hold: 15 };
-  s3.marks = [markOn(s3, fExt - 4, fTres - 6, 120, 330, 270, 40, 10), markOn(s3, fExt + 8, fTres - 6, 120, 1000, 270, 40, 10)];
+  // Una sola marca: la etiqueta «CATÁLOGO EXTENDIDO» de Los tres mundos (MarkLayer dibuja una marca cada vez; con dos a la vez
+  // la segunda no se veía y la cámara saltaba entre las dos).
+  s3.marks = [markOn(s3, fExt - 4, fTres - 6, 120, 330, 270, 40, 10)];
   const s4: Shot = { rec: '11_tres_mundos', at: fTres - 6, start: 3.0, hold: 18 };
   s4.marks = [markOn(s4, fTres + 2, fQuince - 4, 230, 756, 204, 40, 12), markOn(s4, fQuince - 2, p.dur + 20, 30, 934, 604, 104, 18)];
   const sCard = spring({ frame: frame - (fQuince - 6), fps, config: { damping: 14, stiffness: 170 } });

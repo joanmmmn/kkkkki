@@ -36,7 +36,7 @@ SHOTS = {
     'audible-marcador': ('16_marcadores', 21.4),
     'audible-descargados': ('18_biblioteca', 22.0),
     'audible-planes': ('19_suscripcion', 14.5),
-    'audible-cancelado': ('19_suscripcion', 18.0),
+    'audible-cancelado': ('19_suscripcion', 18.4),
     'audible-perfil-infantil': ('20_perfil_infantil', 9.6),
     'audible-perfil-infantil-hoja': ('20_perfil_infantil', 12.6),
 }

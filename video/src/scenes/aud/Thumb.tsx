@@ -6,7 +6,7 @@ import { InfinityIcon } from '../../components/Icons2';
 import { AppPhone, AU, AU_HOT, AudibleLogo, AudibleMark, AudStage } from './kit';
 
 // Miniatura de YouTube (1280×720) de la reseña: pregunta grande, móvil con la app real (Drácula, «audible ORIGINAL»),
-// el naranja de Audible en «sin límite de horas» y el sello de 30 días gratis.
+// el naranja de Audible en «sin límite de horas» y el sello de «Hasta 90 días gratis».
 export const AUDThumb: React.FC = () => (
   <AudStage still>
     <AbsoluteFill style={{ padding: '128px 0 0 64px' }}>
@@ -33,7 +33,7 @@ export const AUDThumb: React.FC = () => (
       <div style={{ fontSize: 22, marginTop: -2, lineHeight: 1.05, textAlign: 'center' }}>sin límite<br />de horas</div>
     </div>
     <div style={{ position: 'absolute', left: 676, top: 470, transform: 'rotate(-8deg)', padding: '14px 26px', borderRadius: 22, background: color.ink, color: '#fff', boxShadow: shadow.float, fontFamily: font.sans, fontWeight: 700, fontSize: 40, display: 'flex', alignItems: 'center', gap: 14 }}>
-      <AudibleMark size={40} /> 30 días <span style={{ color: color.yellow }}>GRATIS</span>
+      <AudibleMark size={40} /> <span>Hasta 90 días <span style={{ color: color.yellow }}>GRATIS</span></span>
     </div>
   </AudStage>
 );

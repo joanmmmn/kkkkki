@@ -1,8 +1,8 @@
 {
  "id": "J05",
- "hash": "ae63cdd3d141",
- "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis.",
- "duration": 4.4,
+ "hash": "e303544c3d2b",
+ "text": "¿Quieres probarlo? Desde SonorBooks tienes hasta noventa días gratis.",
+ "duration": 4.64,
  "words": [
   {
    "w": "¿Quieres",
@@ -21,29 +21,34 @@
   },
   {
    "w": "SonorBooks",
-   "s": 1.6,
+   "s": 1.64,
    "e": 2.24
   },
   {
    "w": "tienes",
    "s": 2.32,
-   "e": 2.72
+   "e": 2.64
   },
   {
-   "w": "treinta",
-   "s": 2.8,
-   "e": 3.12
+   "w": "hasta",
+   "s": 2.72,
+   "e": 2.96
+  },
+  {
+   "w": "noventa",
+   "s": 3.04,
+   "e": 3.52
   },
   {
    "w": "días",
-   "s": 3.2,
-   "e": 3.44
+   "s": 3.6,
+   "e": 3.84
   },
   {
    "w": "gratis.",
-   "s": 3.52,
-   "e": 4.4
+   "s": 3.92,
+   "e": 4.64
   }
  ],
- "speechEnd": 4.062
+ "speechEnd": 4.473
 }

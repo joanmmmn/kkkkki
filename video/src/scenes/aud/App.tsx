@@ -175,10 +175,12 @@ export const G07Buscar: React.FC<P> = (p) => {
   const s0: Shot = { rec: '06_buscar', at: 0, start: 11.8 - fTitulo / 50, hold: 13.0 };
   s0.marks = [markOn(s0, fTitulo + 4, fAutor - 6, 78, 46, 576, 80, 40)];
   const s0b: Shot = { rec: '06_buscar', at: fAutor - 6, start: 14.6, hold: 14.64 };
-  s0b.marks = [markOn(s0b, fAutor + 2, fFiltrar - 10, 10, 326, 654, 240, 22)];
-  // El filtro «Incluido» (toque a los ~6,2 s de la toma: de 46 a 38 resultados).
-  const s1 = align('08_incluido', 6.2, fFiltrar + 4, 14, { hold: 17 });
-  s1.marks = [markOn(s1, fFiltrar + 30, fFicha - 6, 452, 222, 196, 54, 27), markOn(s1, fPlan, fFicha - 6, 10, 322, 300, 54, 14)];
+  s0b.marks = [markOn(s0b, fAutor + 2, fFiltrar - 22, 10, 326, 654, 240, 22)];
+  // El filtro «Incluido»: el toque real cae a los ~6,03 s de la toma (a los 6,06 s la lista se queda cargando y a los 6,59 s
+  // salen los 38 resultados). La toma empieza medio segundo antes, con el filtro a la vista.
+  const s1 = align('08_incluido', 6.03, fFiltrar + 4, 24, { hold: 17 });
+  // Una marca cada vez (MarkLayer solo dibuja una): el filtro activo «Incluido ×» y, con «plan», «Resultados (38)».
+  s1.marks = [markOn(s1, fFiltrar + 34, fPlan - 2, 450, 222, 184, 56, 28), markOn(s1, fPlan, fFicha - 6, 10, 322, 300, 54, 14)];
   // La ficha: narrador (Eugenio Gómez), duración (12 h 46 min) y nota (4,5 con 283 valoraciones).
   const s2: Shot = { rec: '02_huerfanos_ficha', at: fFicha - 6, start: 2.2, hold: 4.6 };
   s2.marks = [
@@ -189,7 +191,7 @@ export const G07Buscar: React.FC<P> = (p) => {
   const keys = Array.from({ length: 7 }, (_, i) => Math.round(fTitulo - 14 + i * 2));
   return (
     <AppFeatureScene {...p} id="G07" title="Buscador y fichas" shots={[s0, s0b, s1, s2]} keys={keys} titleSize={100}
-      taps={[{ f: fFiltrar + 4, x: 548, y: 248 }]}
+      taps={[{ f: fFiltrar + 4, x: 526, y: 250 }]}
       focusExtra={[{ from: fBuscas, to: fTitulo - 2, y: 300, s: 1.1 }]}
       tags={[
         { word: 'titulo', label: 'Por título o autor', icon: ic(<SearchIcon size={32} />) },
@@ -224,20 +226,23 @@ export const G08Reproductor: React.FC<P> = (p) => {
   const s2b: Shot = { rec: '14_temporizador', at: fTemp + 36, start: 14.2, hold: 15.6 };
   s2b.marks = [markOn(s2b, fTemp + 40, fCap - 6, 104, 280, 456, 70, 35)];
   const s3: Shot = { rec: '15_capitulos', at: fCap - 6, start: 4.0, hold: 4.04 };
-  s3.marks = [markOn(s3, fCap + 2, fMarc - 6, 14, 250, 636, 520, 22)];
-  // «Marcador añadido · Agregar nota»: el aviso real tras pulsar «+ Favoritos» (aparece a los 21,0 s de la toma).
-  const s4 = align('16_marcadores', 21.0, fMarc + 8, 20, { hold: 23.4 });
-  s4.marks = [markOn(s4, fMarc + 10, fCoche - 6, 20, 1330, 624, 96, 20)];
+  s3.marks = [markOn(s3, fCap + 2, fMarc - 20, 14, 250, 636, 520, 22)];
+  // «Marcador añadido · Agregar nota»: el aviso real tras pulsar «+ Favoritos». En la toma, el toque cae a los ~20,56 s y el aviso
+  // sube entre 20,60 y 20,70 s; el círculo del toque va justo antes, con el botón todavía a la vista.
+  const s4 = align('16_marcadores', 20.56, fMarc + 6, 24, { hold: 23.4 });
+  s4.marks = [markOn(s4, fMarc + 14, fCoche - 6, 20, 1330, 624, 96, 20)];
   const s5: Shot = { rec: '12_reproductor', at: fCoche - 6, start: 9.0, hold: 17.5 };
-  s5.marks = [markOn(s5, fCoche, fDesc - 6, 172, 1328, 156, 92, 20)];
-  const s6: Shot = { rec: '17_descargar', at: fDesc - 6, start: 2.6, hold: 4.4 };
-  s6.marks = [markOn(s6, fDesc + 2, fCon - 2, 136, 128, 512, 64, 14)];
+  s5.marks = [markOn(s5, fCoche, fDesc - 12, 172, 1328, 156, 92, 20)];
+  // El menú «⋮» (arriba a la derecha): la cámara sube con «y descargas», el toque cae ahí y el menú entra con un corte (en la
+  // toma, el menú aparece entre 1,7 y 2,0 s).
+  const s6: Shot = { rec: '17_descargar', at: fDesc + 2, start: 1.8, hold: 4.4, fade: 0 };
+  s6.marks = [markOn(s6, fDesc + 14, fCon - 2, 136, 128, 512, 64, 14)];
   const s7: Shot = { rec: '18_biblioteca', at: fCon - 2, start: 21.4, hold: 31 };
   s7.marks = [markOn(s7, fCon + 4, p.dur + 20, 10, 170, 646, 200, 18)];
   return (
     <AppFeatureScene {...p} id="G08" title="El reproductor" side="left" shots={[s0, s1, s2, s2b, s3, s4, s5, s6, s7]} tagSize={40} tagGap={14}
-      taps={[{ f: fMedia - 48, x: 82, y: 1372 }, { f: fTemp + 30, x: 122, y: 1140 }, { f: fMarc + 6, x: 582, y: 1372 }, { f: fDesc - 10, x: 626, y: 84 }]}
-      focusExtra={[{ from: fRep, to: fTres - 10, y: 1150, s: 1.12 }]}
+      taps={[{ f: fMedia - 48, x: 82, y: 1372 }, { f: fTemp + 30, x: 122, y: 1140 }, { f: fMarc + 6, x: 582, y: 1372 }, { f: fDesc - 2, x: 626, y: 84 }]}
+      focusExtra={[{ from: fRep, to: fTres - 10, y: 1150, s: 1.12 }, { from: fDesc - 12, to: fDesc + 4, x: 520, y: 180, s: 1.3 }]}
       tags={[
         { word: 'tres', label: 'Hasta 3,5x', icon: ic(<SpeedIcon size={32} />) },
         { word: 'temporizador', label: 'Temporizador para dormir', icon: ic(<MoonIcon size={32} />) },

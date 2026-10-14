@@ -6,18 +6,18 @@ import { ChangeTicks, Sfx, STEM } from '../../components/Sfx';
 import { Logo, LogoIcon } from '../../components/Logo';
 import { Pill } from '../../components/Pill';
 import { Typewriter } from '../../components/Kinetic';
-import { CalendarIcon } from '../../components/Icons2';
+import { CalendarIcon, StarIcon } from '../../components/Icons2';
 import { VOS, voSrc } from '../../lib/vo';
 import { FeatureTag } from '../nxr/kit';
 import cfg from '../../../public/aud/vo/vo.json';
 import { hasVO, speechFrames, wf } from './timeline';
-import { AppPhone, AU, AU_DEEP, AU_HOT, AU_NAVY, AudibleLogo, AudStage, BigTitle, Burst, markOn, PhoneKey, Shot, Tap } from './kit';
+import { AppPhone, AU, AU_DEEP, AU_HOT, AU_NAVY, AU_SOFT, AudibleLogo, AudStage, BigTitle, Burst, markOn, PhoneKey, Shot, Tap } from './kit';
 
 // Versión vertical (Shorts, Reels, TikTok) de la reseña de Audible: 7 piezas (J01–J07) con el móvil real y subtítulos.
 const FPS = 50;
 const LEAD = 6;
 const IDS = ['J01', 'J02', 'J03', 'J04', 'J05', 'J06', 'J07'] as const;
-const EXTRA: Record<string, number> = { J01: 12, J02: 12, J03: 16, J04: 16, J05: 22, J06: 16, J07: 110 };
+const EXTRA: Record<string, number> = { J01: 12, J02: 12, J03: 16, J04: 16, J05: 64, J06: 16, J07: 110 };
 type Piece = { id: string; at: number; dur: number };
 const PIECES: Piece[] = (() => {
   let at = 0;
@@ -45,7 +45,7 @@ const estWords = (id: string): CW[] => {
 // Las cifras que la voz dice en letra se escriben con números en los subtítulos («nueve noventa y nueve» → «9,99 €»),
 // como en el .srt (tools/aud_meta.py).
 const NUMEROS: [string[], string][] = [
-  [['nueve', 'noventa', 'y', 'nueve'], '9,99 €'], [['noventa', 'mil'], '90.000'], [['treinta', 'dias'], '30 días'],
+  [['nueve', 'noventa', 'y', 'nueve'], '9,99 €'], [['noventa', 'mil'], '90.000'], [['treinta', 'dias'], '30 días'], [['noventa', 'dias'], '90 días'],
 ];
 const bare = (w: string) => w.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[.,;:¿?¡!«»…]/g, '');
 const cifras = (ws: CW[]): CW[] => {
@@ -208,24 +208,36 @@ const J04: React.FC<SP> = ({ lead, dur }) => {
   );
 };
 
-// J05 · 30 días gratis desde SonorBooks (contador mecánico 1 → 30 en el sello naranja de Audible).
+// J05 · Hasta 90 días gratis desde SonorBooks (contador mecánico 1 → 90 en el sello naranja de Audible) y, debajo, las dos pruebas:
+// 30 días gratis (condiciones literales de la tarjeta de SonorBooks) o 90 con Amazon Prime (nuevos suscriptores de Audible Premium).
 const J05: React.FC<SP> = ({ lead }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('J05', w, n);
-  const fTreinta = at('treinta');
+  const fHasta = at('hasta');
+  const fNoventa = at('noventa');
   const fSonor = at('sonorbooks');
-  const LAND = fTreinta + 6;
-  const rollFrom = fTreinta - 22;
-  const rollAt = (f: number) => Math.max(1, Math.floor(interpolate(f, [rollFrom, LAND], [1, 30], { ...clamp, easing: Easing.bezier(0.45, 0, 0.25, 1) }) + 1e-6));
-  const sBadge = spring({ frame: frame - (fTreinta - 16), fps, config: { damping: 12, stiffness: 150 } });
+  const LAND = fNoventa + 6;
+  const rollFrom = fHasta - 14;
+  const rollAt = (f: number) => Math.max(1, Math.floor(interpolate(f, [rollFrom, LAND], [1, 90], { ...clamp, easing: Easing.bezier(0.45, 0, 0.25, 1) }) + 1e-6));
+  const sBadge = spring({ frame: frame - (fHasta - 10), fps, config: { damping: 12, stiffness: 150 } });
+  const sHasta = spring({ frame: frame - (fHasta - 3), fps, config: { damping: 14, stiffness: 190 } });
   const sLogos = spring({ frame: frame - 2, fps, config: { damping: 18, stiffness: 150 } });
   // Los logotipos se quedan grandes en el centro mientras la voz dice «Desde SonorBooks» (con un latido en «SonorBooks») y suben
   // a la vez que entra el sello: así la pantalla nunca se queda vacía antes del contador.
-  const lift = interpolate(frame, [fTreinta - 26, fTreinta - 8], [0, 1], { ...clamp, easing: easeInOut });
+  const lift = interpolate(frame, [fHasta - 20, fHasta - 2], [0, 1], { ...clamp, easing: easeInOut });
   const pulse = interpolate(frame, [fSonor - 2, fSonor + 5, fSonor + 16], [0, 1, 0], clamp);
-  const sFine = spring({ frame: frame - LAND - 8, fps, config: { damping: 18, stiffness: 140 } });
+  const sA = spring({ frame: frame - LAND - 6, fps, config: { damping: 18, stiffness: 140 } });
+  const sB = spring({ frame: frame - LAND - 14, fps, config: { damping: 16, stiffness: 160 } });
+  const sFine = spring({ frame: frame - LAND - 20, fps, config: { damping: 18, stiffness: 140 } });
   const bump = frame < LAND ? 0 : frame < LAND + 2 ? (frame - LAND) / 2 : interpolate(frame, [LAND + 2, LAND + 20], [1, 0], { ...clamp, easing: easeOut });
+  const pill = (top: number, s: number, hot: boolean, icon: React.ReactNode, text: string) => (
+    <div style={{ position: 'absolute', top, display: 'flex', alignItems: 'center', gap: 16, padding: '14px 30px 14px 22px', borderRadius: 999, background: hot ? AU_SOFT : '#fff',
+      border: hot ? '2px solid rgba(247,153,28,0.5)' : `1px solid ${color.line}`, boxShadow: shadow.soft, fontFamily: font.sans, fontWeight: 700, fontSize: 42, color: color.ink,
+      opacity: s, transform: `translateY(${(1 - s) * 30}px)` }}>
+      {icon} {text}
+    </div>
+  );
   return (
     <AudStage>
       <AbsoluteFill style={{ alignItems: 'center' }}>
@@ -242,23 +254,23 @@ const J05: React.FC<SP> = ({ lead }) => {
           </svg>
           <div style={{ position: 'absolute', inset: 88, borderRadius: '50%', background: `linear-gradient(160deg, ${AU} 0%, ${AU_HOT} 100%)`, boxShadow: '0 40px 100px rgba(247,120,28,0.45)',
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 290, letterSpacing: -12, lineHeight: 0.9, color: '#fff', fontVariantNumeric: 'tabular-nums' }}>{rollAt(frame)}</div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 60, color: '#fff', letterSpacing: -1 }}>días gratis</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 60, letterSpacing: 1, color: '#fff', opacity: 0.95 * sHasta, transform: `translateY(${(1 - sHasta) * 14}px)` }}>hasta</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 250, letterSpacing: -12, lineHeight: 0.86, color: '#fff', fontVariantNumeric: 'tabular-nums' }}>{rollAt(frame)}</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 58, color: '#fff', letterSpacing: -1, marginTop: 6 }}>días gratis</div>
           </div>
         </div>
         <Burst at={LAND} x={540} y={750} r={260} seed="j05" colors={[AU, color.yellow, AU_HOT, AU_NAVY]} />
-        <div style={{ position: 'absolute', top: 1160, display: 'flex', alignItems: 'center', gap: 16, padding: '14px 30px 14px 22px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.soft,
-          fontFamily: font.sans, fontWeight: 700, fontSize: 42, color: color.ink, opacity: sFine, transform: `translateY(${(1 - sFine) * 30}px)` }}>
-          <CalendarIcon size={46} c={AU_DEEP} /> Audible Premium · Después, 9,99 €/mes
-        </div>
-        <div style={{ position: 'absolute', top: 1262, width: 900, textAlign: 'center', fontFamily: font.sans, fontWeight: 500, fontSize: 30, lineHeight: 1.3, color: color.muted, opacity: sFine }}>
-          Prueba para cuentas que cumplan las condiciones. Hay títulos de compra adicional.
+        {pill(1132, sA, false, <CalendarIcon size={46} c={AU_DEEP} />, '30 días gratis · Después, 9,99 €/mes')}
+        {pill(1226, sB, true, <StarIcon size={46} c={AU_DEEP} />, '90 días con Amazon Prime')}
+        <div style={{ position: 'absolute', top: 1322, width: 900, textAlign: 'center', fontFamily: font.sans, fontWeight: 500, fontSize: 29, lineHeight: 1.3, color: color.muted, opacity: sFine }}>
+          Prueba para cuentas que cumplan las condiciones. Hay títulos de compra adicional. Los 90 días con Prime, para nuevos suscriptores de Audible Premium.
         </div>
       </AbsoluteFill>
       <Sfx name="riser" at={LAND - 4} volume={0.7} />
       <ChangeTicks value={(f) => String(rollAt(f))} from={rollFrom} to={LAND} volume={0.8} />
       <Sfx name="impact" at={LAND} />
       <Sfx name="sparkle" at={LAND + 2} volume={0.7} />
+      <Sfx name="ui_pop" at={LAND + 14} volume={0.6} />
     </AudStage>
   );
 };
@@ -270,7 +282,8 @@ const J06: React.FC<SP> = ({ lead, dur }) => {
   const fCanc = at('cancelas');
   const fSigues = at('sigues');
   const fTermina = at('termina');
-  const s0: Shot = { rec: '19_suscripcion', at: 0, start: 17.6, hold: 19.2 };
+  // 19_suscripcion limpia entre 18,25 y 22,5 s (antes sale el círculo de «actualizar» encima del aviso).
+  const s0: Shot = { rec: '19_suscripcion', at: 0, start: 18.3, hold: 22.3 };
   s0.marks = [markOn(s0, fCanc - 2, fSigues - 4, 14, 140, 636, 180, 18), markOn(s0, fSigues - 2, dur + 10, 30, 470, 604, 150, 18)];
   return (
     <AudStage>

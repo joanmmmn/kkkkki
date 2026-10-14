@@ -10,7 +10,7 @@ import { Pill } from '../../components/Pill';
 import { Phase } from '../../components/Phase';
 import { CamKey, ScreenClip } from '../../components/ScreenClip';
 import { CheckIcon, CrossIcon } from '../../components/Icons';
-import { CalendarIcon, CardIcon, ClockIcon, DocIcon, GlobeIcon, PhoneIcon, UserIcon } from '../../components/Icons2';
+import { CalendarIcon, CardIcon, ClockIcon, DocIcon, GlobeIcon, PhoneIcon, StarIcon, UserIcon } from '../../components/Icons2';
 import { TiltWindow } from '../nxr/Verdict';
 import { wf } from './timeline';
 import {
@@ -27,19 +27,22 @@ import ms10 from '../../../public/str/web/10_sb_plataformas/meta.json';
 
 type P = SceneProps;
 
-// H01 · «Treinta días gratis desde SonorBooks»: los días caen en una insignia naranja (contador 1 → 30) y, debajo, las
-// condiciones literales de la tarjeta de Audible en SonorBooks.
+// H01 · «Hasta noventa días gratis desde SonorBooks»: el sello naranja cuenta de 1 a 90 con «hasta» y, debajo, las dos pruebas:
+// 30 días gratis (la tarjeta de Audible en SonorBooks, con sus condiciones literales) o 90 con Amazon Prime (audible.es, 14/10/2026:
+// «Exclusivo para miembros Prime. Los nuevos suscriptores de Audible Premium obtendrán 3 meses de prueba gratis»).
 export const H01Gratis: React.FC<P> = ({ lead }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('H01', w, n);
   const fSonor = at('sonorbooks');
+  const fHasta = at('hasta');
+  const fNoventa = at('noventa');
   const fTreinta = at('treinta');
-  const fPrem = at('premium');
-  const LAND = fTreinta + 8;
-  const badgeAt = fTreinta - 16;
-  const rollFrom = badgeAt - 4;
-  const rollAt = (f: number) => Math.max(1, Math.floor(interpolate(f, [rollFrom, LAND], [1, 30], { ...clamp, easing: Easing.bezier(0.45, 0, 0.25, 1) }) + 1e-6));
+  const fNoventa2 = at('noventa', 1);
+  const LAND = fNoventa + 8;
+  const badgeAt = fHasta - 14;
+  const rollFrom = badgeAt - 2;
+  const rollAt = (f: number) => Math.max(1, Math.floor(interpolate(f, [rollFrom, LAND], [1, 90], { ...clamp, easing: Easing.bezier(0.45, 0, 0.25, 1) }) + 1e-6));
   const roll = rollAt(frame);
   const steps: number[] = [];
   for (let f = rollFrom; f <= LAND; f++) if (rollAt(f) !== rollAt(f - 1)) steps.push(f);
@@ -47,14 +50,24 @@ export const H01Gratis: React.FC<P> = ({ lead }) => {
   const since = lastStep === undefined ? 99 : frame - lastStep;
   const kick = since < 4 ? [1, 0.5, 0.18, 0][since] : 0;
   const sBadge = spring({ frame: frame - badgeAt, fps, config: { damping: 12, stiffness: 150 } });
+  const sHasta = spring({ frame: frame - (fHasta - 3), fps, config: { damping: 14, stiffness: 190 } });
   const sLogo = spring({ frame: frame - (fSonor - 10), fps, config: { damping: 16, stiffness: 150 } });
-  const sCond = spring({ frame: frame - fPrem + 2, fps, config: { damping: 15, stiffness: 160 } });
+  const sA = spring({ frame: frame - (fTreinta - 3), fps, config: { damping: 14, stiffness: 180 } });
+  const sB = spring({ frame: frame - (fNoventa2 - 3), fps, config: { damping: 13, stiffness: 190 } });
+  const sFine = spring({ frame: frame - (fNoventa2 + 8), fps, config: { damping: 16, stiffness: 150 } });
   const rays = frame * 0.25;
   const bump = frame < LAND ? 0 : frame < LAND + 2 ? (frame - LAND) / 2 : interpolate(frame, [LAND + 2, LAND + 20], [1, 0], { ...clamp, easing: easeOut });
+  const pill = (s: number, hot: boolean, icon: React.ReactNode, text: string) => (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 30px 12px 18px', borderRadius: 999, background: hot ? AU_SOFT : '#fff',
+      border: hot ? '2px solid rgba(247,153,28,0.5)' : `1px solid ${color.line}`, boxShadow: shadow.float, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink,
+      opacity: s, transform: `translateY(${((1 - s) * 30).toFixed(2)}px) scale(${(0.9 + 0.1 * s).toFixed(4)})` }}>
+      {icon} {text}
+    </div>
+  );
   return (
     <AudStage>
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ position: 'absolute', top: 92, display: 'flex', alignItems: 'center', gap: 22, opacity: sLogo, transform: `translateY(${((1 - sLogo) * -30).toFixed(2)}px)` }}>
+      <AbsoluteFill>
+        <div style={{ position: 'absolute', top: 70, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 22, opacity: sLogo, transform: `translateY(${((1 - sLogo) * -30).toFixed(2)}px)` }}>
           <AudibleLogo width={250} />
           <span style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 34, color: color.ink2 }}>desde</span>
           <Logo size={58} animate={false} />
@@ -64,26 +77,29 @@ export const H01Gratis: React.FC<P> = ({ lead }) => {
             <MaskTitle text="¿Quieres probarlo?" hi="probarlo" at={lead - 4} size={124} align="center" out={badgeAt - 2} />
           </div>
         )}
-        <div style={{ position: 'relative', width: 560, height: 560, marginTop: 10, transform: `scale(${(sBadge * (1 + 0.07 * bump)).toFixed(4)})` }}>
-          <svg width="560" height="560" viewBox="0 0 560 560" style={{ position: 'absolute', inset: 0, transform: `rotate(${rays}deg)` }}>
+        {/* El sello: «hasta» + el contador (1 → 90) + «días gratis». */}
+        <div style={{ position: 'absolute', left: 960 - 260, top: 150, width: 520, height: 520, transform: `scale(${(sBadge * (1 + 0.07 * bump)).toFixed(4)})` }}>
+          <svg width="520" height="520" viewBox="0 0 560 560" style={{ position: 'absolute', inset: 0, transform: `rotate(${rays}deg)` }}>
             {Array.from({ length: 24 }).map((_, i) => (
               <path key={i} d="M280 280 L 268 0 L 292 0 Z" fill={AU} opacity={0.18} transform={`rotate(${i * 15} 280 280)`} />
             ))}
           </svg>
-          <div style={{ position: 'absolute', inset: 72, borderRadius: '50%', background: `linear-gradient(160deg, ${AU} 0%, ${AU_HOT} 100%)`, boxShadow: '0 40px 100px rgba(247,120,28,0.45)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 230, letterSpacing: -10, lineHeight: 0.86, color: '#fff', fontVariantNumeric: 'tabular-nums', transform: `translateY(${(kick * -12).toFixed(1)}px)` }}>{roll}</div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: '#fff', letterSpacing: -1, marginTop: 6 }}>días gratis</div>
+          <div style={{ position: 'absolute', inset: 64, borderRadius: '50%', background: `linear-gradient(160deg, ${AU} 0%, ${AU_HOT} 100%)`, boxShadow: '0 40px 100px rgba(247,120,28,0.45)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, letterSpacing: 1, color: '#fff', opacity: 0.95 * sHasta, transform: `translateY(${((1 - sHasta) * 12).toFixed(2)}px)`, marginBottom: 2 }}>hasta</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 196, letterSpacing: -9, lineHeight: 0.86, color: '#fff', fontVariantNumeric: 'tabular-nums', transform: `translateY(${(kick * -10).toFixed(1)}px)` }}>{roll}</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: '#fff', letterSpacing: -1, marginTop: 8 }}>días gratis</div>
           </div>
         </div>
-        <Burst at={LAND} x={960} y={556} r={210} seed="h01" colors={[AU, color.yellow, AU_HOT, AU_NAVY]} />
-        <div style={{ position: 'absolute', bottom: 70, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: sCond, transform: `translateY(${((1 - sCond) * 30).toFixed(2)}px)` }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 28px 12px 18px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.float,
-            fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>
-            <CalendarIcon size={40} c={AU_DEEP} /> Audible Premium · Después, 9,99 €/mes
-          </div>
-          <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 25, color: color.ink2 }}>
-            «Prueba para cuentas que cumplan las condiciones. Hay títulos de compra adicional.»
-          </div>
+        <Burst at={LAND} x={960} y={410} r={200} seed="h01" colors={[AU, color.yellow, AU_HOT, AU_NAVY]} />
+        {/* Las dos pruebas: la de la tarjeta de SonorBooks (condiciones literales) y la de Amazon Prime. */}
+        <div style={{ position: 'absolute', top: 712, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 22 }}>
+          {pill(sA, false, <CalendarIcon size={40} c={AU_DEEP} />, '30 días gratis · Después, 9,99 €/mes')}
+          {pill(sB, true, <StarIcon size={40} c={AU_DEEP} />, '90 días con Amazon Prime')}
+        </div>
+        <div style={{ position: 'absolute', top: 818, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: sFine, transform: `translateY(${((1 - sFine) * 20).toFixed(2)}px)`,
+          fontFamily: font.sans, fontWeight: 500, fontSize: 25, color: color.ink2 }}>
+          <div>«Prueba para cuentas que cumplan las condiciones. Hay títulos de compra adicional.»</div>
+          <div>Los 90 días con Prime, para nuevos suscriptores de Audible Premium (audible.es).</div>
         </div>
       </AbsoluteFill>
       <Sfx name="ui_pop" at={badgeAt + 2} volume={0.8} />
@@ -91,7 +107,8 @@ export const H01Gratis: React.FC<P> = ({ lead }) => {
       <ChangeTicks value={(f) => String(rollAt(f))} from={rollFrom} to={LAND} volume={0.55} />
       <Sfx name="impact" at={LAND} />
       <Sfx name="sparkle" at={LAND + 2} volume={0.8} />
-      <Sfx name="ui_pop" at={fPrem} volume={0.6} />
+      <Sfx name="ui_pop" at={fTreinta - 2} volume={0.6} />
+      <Sfx name="ui_pop" at={fNoventa2 - 2} volume={0.65} />
     </AudStage>
   );
 };
@@ -243,7 +260,8 @@ export const H04Truco: React.FC<P> = ({ lead, dur }) => {
   const fAmazon = at('amazon');
   const fApp = at('app');
   // Móvil: la suscripción real («Has cancelado tu plan… finaliza el 13 de noviembre») y Premium «Termina el 13 nov. 2026».
-  const s0: Shot = { rec: '19_suscripcion', at: 0, start: 16.4, hold: 19.2 };
+  // 19_suscripcion limpia entre 18,25 y 22,5 s (antes sale el círculo de «actualizar» encima del aviso).
+  const s0: Shot = { rec: '19_suscripcion', at: 0, start: 18.3, hold: 22.3 };
   s0.marks = [markOn(s0, fCanc - 2, fSigues - 6, 14, 140, 636, 180, 22), markOn(s0, fSigues - 2, fCancela - 6, 30, 470, 604, 150, 22)];
   const cx = 470;
   const top = Math.round((1080 - PH.H) / 2);
@@ -300,7 +318,7 @@ export const H04Truco: React.FC<P> = ({ lead, dur }) => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginTop: 56 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, alignSelf: 'flex-start', padding: '16px 30px 16px 20px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.float,
             fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink, opacity: sWeb, transform: `translateY(${((1 - sWeb) * 24).toFixed(2)}px)` }}>
-            <GlobeIcon size={42} /> <span>Cancela en audible.es<span style={{ opacity: amz }}>&nbsp;o en Amazon</span></span>
+            <GlobeIcon size={42} /> <span>Cancela en audible.es<span style={{ opacity: amz, display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap', verticalAlign: 'top', maxWidth: amz * 280 }}>&nbsp;o en Amazon</span></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, alignSelf: 'flex-start', padding: '16px 30px 16px 20px', borderRadius: 999, background: '#FDECEC', border: '2px solid rgba(229,72,77,0.3)',
             fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink, opacity: sApp, transform: `translateY(${((1 - sApp) * 24).toFixed(2)}px) scale(${(0.9 + 0.1 * sApp).toFixed(4)})`, transformOrigin: 'left center' }}>

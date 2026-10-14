@@ -37,7 +37,9 @@ NUMEROS = [
     (['nueve', 'noventa', 'y', 'nueve'], '9,99 €'), (['seis', 'noventa', 'y', 'nueve'], '6,99 €'), (['quince', 'diez'], '15,10 €'),
     (['noventa', 'mil'], '90.000'), (['dos', 'mil', 'veinte'], '2020'), (['treinta', 'y', 'seis', 'mil'], '36.000'),
     (['cuatro', 'coma', 'siete'], '4,7'), (['cuatro', 'coma', 'cinco'], '4,5'), (['top', 'veinte'], 'top 20'),
-    (['treinta', 'dias'], '30 días'), (['tres', 'veces', 'y', 'media'], '3,5 veces'),
+    (['treinta', 'dias'], '30 días'), (['noventa', 'dias'], '90 días'), (['tres', 'veces', 'y', 'media'], '3,5 veces'),
+    # Sueltas, al final (las combinaciones largas de arriba mandan): «treinta, o noventa si eres cliente de Amazon Prime».
+    (['treinta'], '30'), (['noventa'], '90'),
 ]
 
 

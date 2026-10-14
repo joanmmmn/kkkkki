@@ -13,7 +13,7 @@
  "scenes": [
   {
    "id": "G01",
-   "text": "¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo treinta días gratis."
+   "text": "¿Merece la pena pagar Audible? Lo hemos instalado y lo hemos usado a fondo: su catálogo, sus Originals, la app y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo hasta noventa días gratis."
   },
   {
    "id": "G02",
@@ -65,7 +65,7 @@
   },
   {
    "id": "H01",
-   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis de Audible Premium."
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes hasta noventa días gratis de Audible Premium: treinta, o noventa si eres cliente de Amazon Prime."
   },
   {
    "id": "H02",
@@ -105,7 +105,7 @@
   },
   {
    "id": "J05",
-   "text": "¿Quieres probarlo? Desde SonorBooks tienes treinta días gratis."
+   "text": "¿Quieres probarlo? Desde SonorBooks tienes hasta noventa días gratis."
   },
   {
    "id": "J06",
