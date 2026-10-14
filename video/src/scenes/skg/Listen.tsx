@@ -93,8 +93,8 @@ export const Voces: React.FC = () => {
             <MaskTitle text="La mayoría, de Latinoamérica" at={fLat - 6} size={88} align="center" hi={['Latinoamérica']} />
           </div>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 480, display: 'flex', justifyContent: 'center', gap: 50 }}>
-            <Narrator at={fVesga - 4} name="Carlos Manuel Vesga" country="Colombia" books="22/11/63 · Doctor Sueño · Mr. Mercedes" initials="CV" />
-            <Narrator at={fJane - 4} name="Jane Santos" country="República Dominicana" books="Misery · Carrie · Holly" initials="JS" />
+            <Narrator at={Math.min(fVesga - 4, fLat + 10)} name="Carlos Manuel Vesga" country="Colombia" books="22/11/63 · Doctor Sueño · Mr. Mercedes" initials="CV" />
+            <Narrator at={Math.min(fJane - 4, fLat + 18)} name="Jane Santos" country="República Dominicana" books="Misery · Carrie · Holly" initials="JS" />
           </div>
           <div style={{ position: 'absolute', left: 0, right: 0, bottom: 120, display: 'flex', justifyContent: 'center', opacity: rampOut(frame, fVesga, fVesga + 20) }}>
             <Wave w={900} h={70} c="rgba(16,16,16,0.22)" n={70} />
@@ -126,8 +126,8 @@ export const Voces: React.FC = () => {
       <Sfx name="shimmer" at={fEsp} volume={0.5} />
       <Sfx name="ui_pop" at={fPRH} volume={0.6} />
       <Sfx name="whoosh_soft" at={fLat - 12} volume={0.6} />
-      <Sfx name="ui_pop" at={fVesga - 2} volume={0.6} />
-      <Sfx name="ui_pop" at={fJane - 2} volume={0.6} />
+      <Sfx name="ui_pop" at={Math.min(fVesga - 4, fLat + 10) + 2} volume={0.6} />
+      <Sfx name="ui_pop" at={Math.min(fJane - 4, fLat + 18) + 2} volume={0.6} />
       <Sfx name="whoosh_soft" at={fAcento - 10} volume={0.6} />
       <Sfx name="card_flip" at={fCarrie - 6} volume={0.6} />
       <Sfx name="success" at={fCast} volume={0.45} />

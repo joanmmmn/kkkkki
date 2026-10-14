@@ -515,9 +515,9 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
           <div style={{ position: 'absolute', left: 960 - 330, top: 470, width: 660, height: 420, transform: `translateY(${(1 - env) * 400}px) rotate(${(1 - env) * -10 - 2}deg)`, perspective: 1200 }}>
             {/* carta que sale */}
             <div style={{ position: 'absolute', left: 50, right: 50, top: 30 - letter * 300, height: 380, background: PAPER, borderRadius: 6, boxShadow: '0 20px 40px rgba(0,0,0,0.45)', padding: 34 }}>
-              <div style={{ fontFamily: '"Courier New", monospace', fontWeight: 700, fontSize: 28, color: '#222' }}>Querido detective:</div>
+              <div style={{ width: '46%', height: 12, borderRadius: 6, background: 'rgba(30,30,30,0.7)' }} />
               {Array.from({ length: 6 }).map((_, i) => <div key={i} style={{ marginTop: 18, height: 10, borderRadius: 5, background: 'rgba(30,30,30,0.5)', width: `${92 - (i * 13) % 40}%` }} />)}
-              <div style={{ position: 'absolute', right: 34, bottom: 28, fontFamily: '"Courier New", monospace', fontWeight: 700, fontSize: 26, color: KR, opacity: rampOut(frame, fAses, fAses + 10) }}>— el asesino</div>
+              <div style={{ position: 'absolute', right: 34, bottom: 30, width: 140, height: 12, borderRadius: 6, background: KR, opacity: rampOut(frame, fAses, fAses + 10) }} />
             </div>
             <div style={{ position: 'absolute', inset: 0, background: '#E9E1CF', borderRadius: 10, boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }} />
             <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 240, transformOrigin: 'top center', transform: `rotateX(${180 * openL}deg)`, clipPath: 'polygon(0 0, 100% 0, 50% 100%)', background: '#D9CFB8' }} />

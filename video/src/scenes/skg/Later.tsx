@@ -134,7 +134,7 @@ export const TorreScene: React.FC = () => {
   const toTower = ramp(frame, fTorre - 18, fTorre + 4);
   const vols = ['torre1', 'torre2', 'torre3', 'torre4', 'torre5', 'torre6', 'torre7'];
   const hrs = [7.73, 13.92, 19.22, 29.1, 29.27, 15.58, 34.0];
-  const volAt = (i: number) => fSiete - 14 + i * 5;
+  const volAt = (i: number) => fTorre + 6 + i * Math.max(5, Math.round((fSiete - fTorre) / 7));
   const total = interpolate(frame, [fCasi - 6, fHoras + 20], [0, 148.8], { ...clamp, easing: easeOut });
   const orbit = ramp(frame, fCentro - 16, fCentro + 10);
   const others = ['resplandor', 'it', 'apocalipsis', 'd2263', 'salem', 'milla', 'misery', 'cuento'];

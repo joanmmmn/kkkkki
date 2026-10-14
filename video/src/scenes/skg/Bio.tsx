@@ -215,7 +215,7 @@ export const CarrieOrigin: React.FC = () => {
             <div style={{ position: 'absolute', left: 200, top: 300, opacity: rampOut(frame, fTab - 2, fTab + 12) * (1 - ramp(frame, fKeri - 24, fKeri - 10)) }}>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: color.yellow, textTransform: 'uppercase' }}>Su mujer</div>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 72, color: '#fff' }}>Tabitha</div>
-              <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 40, color: 'rgba(255,255,255,0.75)', opacity: rampOut(frame, fSeg - 6, fSeg + 8) }}>«Sigue con ella»</div>
+              <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 40, color: 'rgba(255,255,255,0.75)', opacity: rampOut(frame, fSeg - 6, fSeg + 8) }}>«Aquí tienes algo»</div>
             </div>
           </AbsoluteFill>
         )}
@@ -264,6 +264,7 @@ export const CarrieOrigin: React.FC = () => {
 
 // ——— BACHMAN · G08 ———
 const BACHMAN = ['Rabia', 'La larga marcha', 'Carretera maldita', 'El fugitivo', 'Maleficio', 'Posesión', 'Blaze'];
+const BACHMAN_Y = [1977, 1979, 1981, 1982, 1984, 1996, 2007];
 export const Bachman: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('BACHMAN');
@@ -349,7 +350,7 @@ export const Bachman: React.FC = () => {
             {BACHMAN.map((t, i) => {
               const s = spring({ frame: frame - (fSiete + 2 + i * 3), fps: 50, config: { damping: 14, stiffness: 180 } });
               const flip = ramp(frame, fLibrero + i * 3, fLibrero + 14 + i * 3);
-              const b: BookDef = { ...BOOKS.bachman, title: t, author: flip > 0.5 ? 'Stephen King' : 'Richard Bachman', bg: flip > 0.5 ? '#2B2238' : '#CBC3B5', fg: flip > 0.5 ? '#F1E6D2' : '#1D1D1D', accent: flip > 0.5 ? color.yellow : '#1D1D1D', icon: 'mask' };
+              const b: BookDef = { ...BOOKS.bachman, title: t, year: BACHMAN_Y[i], author: flip > 0.5 ? 'Stephen King' : 'Richard Bachman', bg: flip > 0.5 ? '#2B2238' : '#CBC3B5', fg: flip > 0.5 ? '#F1E6D2' : '#1D1D1D', accent: flip > 0.5 ? color.yellow : '#1D1D1D', icon: 'mask' };
               return (
                 <div key={t} style={{ transform: `translateY(${(1 - s) * 90}px) rotateY(${Math.sin(flip * Math.PI) * 0}deg)`, opacity: s }}>
                   <div style={{ transform: `scaleX(${Math.abs(Math.cos(flip * Math.PI))})` }}>
