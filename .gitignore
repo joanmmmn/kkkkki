@@ -29,3 +29,6 @@ web/storytel-resena/preview-movil/
 # AUTOR · Stephen King: se guardan las composiciones (*.raw.mp3); las niveladas las rehace tools/skg_music.py join
 video/public/music/skg_parts/*.mp3
 !video/public/music/skg_parts/*.raw.mp3
+
+# Copias de revisión (se entregan por el chat y en el PC; el máster va en Git LFS)
+deliverables/autores/*/*_revision_720p.mp4
