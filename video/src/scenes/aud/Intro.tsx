@@ -349,7 +349,7 @@ export const G03Planes: React.FC<P> = ({ lead }) => {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20, marginTop: 34 }}>
             {row(fLimite - 6, <InfinityIcon size={36} c={AU} />, 'Escucha sin límite de horas', true)}
-            {row(fLimite + 6, <BookIcon size={34} c="#fff" />, 'Todo el catálogo incluido', true)}
+            {row(fLimite + 6, <BookIcon size={34} c="#fff" />, '+90.000 títulos incluidos', true)}
           </div>
         </div>
       )}
@@ -388,7 +388,7 @@ export const G03Planes: React.FC<P> = ({ lead }) => {
             <div style={{ marginLeft: 12, fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink, opacity: sRow(fElegir + 2) }}>1 audiolibro al mes</div>
           </div>
           <div style={{ marginTop: 40 }}>
-            {row(fMientras - 6, <CalendarIcon size={34} c={AU_DEEP} />, 'Lo escuchas mientras sigas suscrito')}
+            {row(fMientras - 6, <CalendarIcon size={34} c={AU_DEEP} />, 'Mientras sigas suscrito')}
           </div>
         </div>
       )}
@@ -400,7 +400,7 @@ export const G03Planes: React.FC<P> = ({ lead }) => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '16px 30px 16px 18px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.float,
           fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: color.ink, opacity: sNo, transform: `translateY(${((1 - sNo) * 40).toFixed(2)}px) scale(${(0.85 + 0.15 * sNo).toFixed(4)})` }}>
-          <CrossIcon size={44} /> Sin plan anual<span style={{ opacity: famIn, display: 'inline-block', transform: `translateX(${((1 - famIn) * -12).toFixed(2)}px)` }}>&nbsp;ni familiar</span>
+          <CrossIcon size={44} /> <span>Sin plan anual<span style={{ opacity: famIn, display: 'inline-block', transform: `translateX(${((1 - famIn) * -12).toFixed(2)}px)` }}>&nbsp;ni familiar</span></span>
         </div>
       </div>
       <Sfx name="card_flip" at={fPrem + 2} />

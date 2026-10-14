@@ -275,7 +275,8 @@ export const H04Truco: React.FC<P> = ({ lead, dur }) => {
         </div>
         <MaskTitle text="Cancela y sigue escuchando" hi="escuchando" at={fCanc - 6} size={76} style={{ marginTop: 34 }} />
         {/* Los 30 días: el día 1 cancelas y la barra se llena hasta el final de la prueba. */}
-        <div style={{ position: 'relative', width: BW, marginTop: 50, opacity: sBar, transform: `translateY(${((1 - sBar) * 30).toFixed(2)}px)` }}>
+        {/* marginTop 92: las etiquetas «Día 1» y «Día 30» (a 64 px por encima de la barra) quedan 28 px por debajo del título. */}
+        <div style={{ position: 'relative', width: BW, marginTop: 92, opacity: sBar, transform: `translateY(${((1 - sBar) * 30).toFixed(2)}px)` }}>
           <div style={{ display: 'grid', gridTemplateColumns: `repeat(${days}, 1fr)`, gap: 5, height: 64 }}>
             {Array.from({ length: days }, (_, i) => {
               const on = fill * days > i;
@@ -299,7 +300,7 @@ export const H04Truco: React.FC<P> = ({ lead, dur }) => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginTop: 56 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, alignSelf: 'flex-start', padding: '16px 30px 16px 20px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.float,
             fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink, opacity: sWeb, transform: `translateY(${((1 - sWeb) * 24).toFixed(2)}px)` }}>
-            <GlobeIcon size={42} /> Cancela en audible.es<span style={{ opacity: amz }}>&nbsp;o en Amazon</span>
+            <GlobeIcon size={42} /> <span>Cancela en audible.es<span style={{ opacity: amz }}>&nbsp;o en Amazon</span></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, alignSelf: 'flex-start', padding: '16px 30px 16px 20px', borderRadius: 999, background: '#FDECEC', border: '2px solid rgba(229,72,77,0.3)',
             fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink, opacity: sApp, transform: `translateY(${((1 - sApp) * 24).toFixed(2)}px) scale(${(0.9 + 0.1 * sApp).toFixed(4)})`, transformOrigin: 'left center' }}>

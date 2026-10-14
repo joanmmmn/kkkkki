@@ -441,7 +441,7 @@ export const G13Veredicto: React.FC<P> = ({ lead }) => {
         <div style={{ position: 'absolute', left: 0, right: 0, top: 900, display: 'flex', justifyContent: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '18px 40px 18px 26px', borderRadius: 999, background: AU_NAVY, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 38,
             opacity: sBusca, transform: `translateY(${((1 - sBusca) * 40).toFixed(2)}px) scale(${(0.85 + 0.15 * sBusca).toFixed(4)})`, boxShadow: '0 24px 60px rgba(11,26,38,0.3)' }}>
-            <SearchIcon size={44} c={AU} /> Busca tus libros antes de pagar<span style={{ opacity: ext2, color: AU_SOFT, fontWeight: 500 }}>: el catálogo extendido va aparte</span>
+            <SearchIcon size={44} c={AU} /> <span>Busca tus libros antes de pagar<span style={{ opacity: ext2, color: AU_SOFT, fontWeight: 500 }}>: el catálogo extendido va aparte</span></span>
           </div>
         </div>
       )}
