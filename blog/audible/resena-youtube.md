@@ -6,7 +6,11 @@ ordenador), perfil infantil, App Store / Google Play, prueba de 30 días y cómo
 montaje v1 (4:18) con `tools/aud_meta.py`.
 
 ## Título
-**¿Merece la pena Audible? Opiniones, precio y 30 días gratis (2026)** ← recomendado (66 caracteres)
+**Audible: ¿Merece la pena en 2026? Reseña, Opinión, Cómo Funciona, Precios y Cómo Probarlo Gratis** ← recomendado: es el
+patrón con el que están hoy en el canal las reseñas de Nextory, Podimo, ElevenReader y Storytel (96 caracteres; límite, 100).
+
+Si se prefiere uno corto, que se lee entero en el buscador:
+- ¿Merece la pena Audible? Opiniones, precio y 30 días gratis (2026) (66 caracteres)
 
 Alternativas:
 - Audible: opiniones, precio, catálogo extendido y cómo probarlo 30 días gratis
@@ -85,6 +89,8 @@ Si lo pruebas, aquí tienes los 30 días gratis: https://sonorbooks.com/salir/au
 - **Archivo para subir:** `SonorBooks_Audible_Resena_1440p.mp4` (2560×1440, 50 fps; en Git LFS). Subido en 1440p, YouTube lo procesa con un códec de más calidad y se ve mejor también en 1080p. Si hace falta uno más ligero, `SonorBooks_Audible_Resena_1080p.mp4`.
 - **Reseña escrita:** la locución dice que la reseña completa por escrito está en la descripción. Publica antes la nueva página (`web/audible-resena`, pendiente de aprobación) en https://sonorbooks.com/es/blog/audible-resena/ y, al publicar el vídeo, reconstrúyela con su ID: `python3 web/audible-resena/build.py --yt ID --yt-fecha AAAA-MM-DD`.
 - Marca en YouTube «Incluye promoción pagada»: el vídeo enlaza a una oferta de afiliado (Amazon Afiliados).
+- **Miniatura:** `miniatura_resena.png`. Para «Probar y comparar» (hasta 3), con los estilos de las propuestas v2 del canal:
+  `miniatura_resena_A.png` («¿TODO INCLUIDO?», icono con cascos) y `miniatura_resena_B.png` («30 DÍAS GRATIS», el móvil con la app).
 - Sube los subtítulos `audible_resena.es.srt` (Subtítulos → Subir archivo → Con sincronización).
 - Idioma del vídeo y de los subtítulos: español (España).
 - Pantalla final: los últimos segundos dejan libre la mitad inferior para los elementos de pantalla final.
