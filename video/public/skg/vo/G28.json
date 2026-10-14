@@ -1,8 +1,8 @@
 {
  "id": "G28",
- "hash": "1ae0c7c63391",
- "text": "Con Apocalipsis pasa lo mismo: cuarenta y ocho horas. Y La Torre Oscura es su gran saga de fantasía: siete libros principales y casi ciento cincuenta horas de audiolibro.",
- "duration": 11.84,
+ "hash": "f0bcf443abee",
+ "text": "Con Apocalipsis pasa lo mismo: más de cuarenta y ocho horas de audio. Y La Torre Oscura es su gran saga de fantasía: siete libros principales y casi ciento cincuenta horas de audiolibro.",
+ "duration": 12.4,
  "words": [
   {
    "w": "Con",
@@ -27,128 +27,148 @@
   {
    "w": "mismo:",
    "s": 1.44,
-   "e": 2.16
+   "e": 2.28
+  },
+  {
+   "w": "más",
+   "s": 2.32,
+   "e": 2.48
+  },
+  {
+   "w": "de",
+   "s": 2.56,
+   "e": 2.64
   },
   {
    "w": "cuarenta",
-   "s": 2.24,
-   "e": 2.72
+   "s": 2.72,
+   "e": 3.16
   },
   {
    "w": "y",
-   "s": 2.76,
-   "e": 2.8
+   "s": 3.2,
+   "e": 3.24
   },
   {
    "w": "ocho",
-   "s": 2.88,
-   "e": 3.04
-  },
-  {
-   "w": "horas.",
-   "s": 3.2,
-   "e": 4.08
-  },
-  {
-   "w": "Y",
-   "s": 4.16,
-   "e": 4.2
-  },
-  {
-   "w": "La",
-   "s": 4.24,
-   "e": 4.32
-  },
-  {
-   "w": "Torre",
-   "s": 4.4,
-   "e": 4.56
-  },
-  {
-   "w": "Oscura",
-   "s": 4.64,
-   "e": 5.04
-  },
-  {
-   "w": "es",
-   "s": 5.12,
-   "e": 5.2
-  },
-  {
-   "w": "su",
-   "s": 5.28,
-   "e": 5.36
-  },
-  {
-   "w": "gran",
-   "s": 5.44,
-   "e": 5.68
-  },
-  {
-   "w": "saga",
-   "s": 5.76,
-   "e": 6.0
-  },
-  {
-   "w": "de",
-   "s": 6.04,
-   "e": 6.08
-  },
-  {
-   "w": "fantasía:",
-   "s": 6.16,
-   "e": 7.24
-  },
-  {
-   "w": "siete",
-   "s": 7.28,
-   "e": 7.6
-  },
-  {
-   "w": "libros",
-   "s": 7.68,
-   "e": 7.92
-  },
-  {
-   "w": "principales",
-   "s": 8.0,
-   "e": 8.88
-  },
-  {
-   "w": "y",
-   "s": 8.96,
-   "e": 9.04
-  },
-  {
-   "w": "casi",
-   "s": 9.08,
-   "e": 9.36
-  },
-  {
-   "w": "ciento",
-   "s": 9.44,
-   "e": 9.84
-  },
-  {
-   "w": "cincuenta",
-   "s": 9.88,
-   "e": 10.4
+   "s": 3.28,
+   "e": 3.52
   },
   {
    "w": "horas",
-   "s": 10.48,
-   "e": 10.72
+   "s": 3.6,
+   "e": 3.92
   },
   {
    "w": "de",
-   "s": 10.76,
-   "e": 10.8
+   "s": 3.96,
+   "e": 4.0
+  },
+  {
+   "w": "audio.",
+   "s": 4.08,
+   "e": 4.84
+  },
+  {
+   "w": "Y",
+   "s": 4.88,
+   "e": 4.92
+  },
+  {
+   "w": "La",
+   "s": 4.96,
+   "e": 5.04
+  },
+  {
+   "w": "Torre",
+   "s": 5.12,
+   "e": 5.28
+  },
+  {
+   "w": "Oscura",
+   "s": 5.36,
+   "e": 5.76
+  },
+  {
+   "w": "es",
+   "s": 5.84,
+   "e": 5.92
+  },
+  {
+   "w": "su",
+   "s": 6.0,
+   "e": 6.08
+  },
+  {
+   "w": "gran",
+   "s": 6.24,
+   "e": 6.4
+  },
+  {
+   "w": "saga",
+   "s": 6.48,
+   "e": 6.72
+  },
+  {
+   "w": "de",
+   "s": 6.8,
+   "e": 6.88
+  },
+  {
+   "w": "fantasía:",
+   "s": 7.0,
+   "e": 7.88
+  },
+  {
+   "w": "siete",
+   "s": 7.92,
+   "e": 8.24
+  },
+  {
+   "w": "libros",
+   "s": 8.32,
+   "e": 8.56
+  },
+  {
+   "w": "principales",
+   "s": 8.6,
+   "e": 9.36
+  },
+  {
+   "w": "y",
+   "s": 9.44,
+   "e": 9.52
+  },
+  {
+   "w": "casi",
+   "s": 9.56,
+   "e": 9.92
+  },
+  {
+   "w": "ciento",
+   "s": 9.96,
+   "e": 10.32
+  },
+  {
+   "w": "cincuenta",
+   "s": 10.4,
+   "e": 10.96
+  },
+  {
+   "w": "horas",
+   "s": 11.04,
+   "e": 11.28
+  },
+  {
+   "w": "de",
+   "s": 11.32,
+   "e": 11.36
   },
   {
    "w": "audiolibro.",
-   "s": 10.88,
-   "e": 11.84
+   "s": 11.44,
+   "e": 12.4
   }
  ],
- "speechEnd": 11.509
+ "speechEnd": 12.074
 }

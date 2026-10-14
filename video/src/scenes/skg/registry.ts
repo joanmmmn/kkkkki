@@ -1,5 +1,8 @@
 import React from 'react';
-import { Hook, Hours, Mapa, Title } from './Hook';
+import { Hook3D } from './three/Library';
+import { Hours3D } from './three/Desk';
+import { Mapa3D } from './three/Map3D';
+import { TitleCard } from './three/TitleCard';
 import { Maine, CarrieOrigin, Bachman } from './Bio';
 import { Territories, Films, Preguntas } from './Genres';
 import { D1, D2, D3, D4, D5, Cortos } from './Doors';
@@ -9,10 +12,10 @@ import { Voces, Web } from './Listen';
 import { Rutas, Coment, Outro } from './Routes';
 
 export const SKG_COMPONENTS: Record<string, React.FC> = {
-  HOOK: Hook,
-  HOURS: Hours,
-  MAPA: Mapa,
-  TITLE: Title,
+  HOOK: Hook3D,
+  HOURS: Hours3D,
+  MAPA: Mapa3D,
+  TITLE: TitleCard,
   MAINE: Maine,
   CARRIE: CarrieOrigin,
   BACHMAN: Bachman,

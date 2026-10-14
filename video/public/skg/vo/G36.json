@@ -1,8 +1,8 @@
 {
  "id": "G36",
- "hash": "45c520a7a308",
- "text": "En SonorBooks tienes sus audiolibros en español con su narrador, su duración y dónde escucharlos. El enlace, en la descripción.",
- "duration": 8.8,
+ "hash": "80bd9afe3fc3",
+ "text": "En SonorBooks tienes todos estos audiolibros en español, con su narrador, su duración y dónde escucharlos. Te dejo el enlace en la descripción.",
+ "duration": 9.44,
  "words": [
   {
    "w": "En",
@@ -12,98 +12,113 @@
   {
    "w": "SonorBooks",
    "s": 0.24,
-   "e": 0.96
+   "e": 1.04
   },
   {
    "w": "tienes",
-   "s": 1.04,
-   "e": 1.28
+   "s": 1.147,
+   "e": 1.36
   },
   {
-   "w": "sus",
-   "s": 1.36,
-   "e": 1.44
+   "w": "todos",
+   "s": 1.52,
+   "e": 1.68
+  },
+  {
+   "w": "estos",
+   "s": 1.76,
+   "e": 2.0
   },
   {
    "w": "audiolibros",
-   "s": 1.52,
-   "e": 2.08
+   "s": 2.08,
+   "e": 2.64
   },
   {
    "w": "en",
-   "s": 2.12,
-   "e": 2.16
-  },
-  {
-   "w": "español",
-   "s": 2.24,
+   "s": 2.68,
    "e": 2.72
   },
   {
+   "w": "español,",
+   "s": 2.8,
+   "e": 3.56
+  },
+  {
    "w": "con",
-   "s": 2.84,
-   "e": 2.96
+   "s": 3.6,
+   "e": 3.76
   },
   {
    "w": "su",
-   "s": 3.0,
-   "e": 3.04
+   "s": 3.8,
+   "e": 3.84
   },
   {
    "w": "narrador,",
-   "s": 3.12,
-   "e": 3.88
+   "s": 3.92,
+   "e": 4.68
   },
   {
    "w": "su",
-   "s": 3.92,
-   "e": 4.0
+   "s": 4.72,
+   "e": 4.8
   },
   {
    "w": "duración",
-   "s": 4.08,
-   "e": 4.72
+   "s": 4.88,
+   "e": 5.52
   },
   {
    "w": "y",
-   "s": 4.8,
-   "e": 4.88
+   "s": 5.6,
+   "e": 5.68
   },
   {
    "w": "dónde",
-   "s": 4.96,
-   "e": 5.2
+   "s": 5.72,
+   "e": 6.0
   },
   {
    "w": "escucharlos.",
-   "s": 5.28,
-   "e": 6.44
+   "s": 6.08,
+   "e": 7.093
   },
   {
-   "w": "El",
-   "s": 6.48,
-   "e": 6.56
+   "w": "Te",
+   "s": 7.147,
+   "e": 7.2
   },
   {
-   "w": "enlace,",
-   "s": 6.64,
-   "e": 7.32
-  },
-  {
-   "w": "en",
-   "s": 7.36,
+   "w": "dejo",
+   "s": 7.28,
    "e": 7.44
   },
   {
-   "w": "la",
+   "w": "el",
    "s": 7.48,
    "e": 7.52
   },
   {
-   "w": "descripción.",
+   "w": "enlace",
    "s": 7.6,
-   "e": 8.8
+   "e": 7.92
+  },
+  {
+   "w": "en",
+   "s": 7.96,
+   "e": 8.0
+  },
+  {
+   "w": "la",
+   "s": 8.08,
+   "e": 8.16
+  },
+  {
+   "w": "descripción.",
+   "s": 8.24,
+   "e": 9.44
   }
  ],
- "speechEnd": 8.374
+ "speechEnd": 8.947
 }

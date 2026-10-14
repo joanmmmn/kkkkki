@@ -1,8 +1,8 @@
 {
  "id": "G24",
- "hash": "3b3c544d8b6c",
- "text": "Un policía jubilado recibe la carta de un asesino al que nunca atraparon. Ganó el premio Edgar a la mejor novela de misterio y abre una trilogía. Diecisiete horas.",
- "duration": 11.44,
+ "hash": "be7d7de5fab0",
+ "text": "Un policía jubilado recibe la carta de un asesino al que nunca atraparon. Ganó el premio Edgar a la mejor novela de misterio y es la primera de una trilogía. Su audiolibro dura unas diecisiete horas.",
+ "duration": 12.8,
  "words": [
   {
    "w": "Un",
@@ -11,33 +11,33 @@
   },
   {
    "w": "policía",
-   "s": 0.267,
-   "e": 0.56
+   "s": 0.2,
+   "e": 0.64
   },
   {
    "w": "jubilado",
-   "s": 0.64,
-   "e": 1.2
+   "s": 0.68,
+   "e": 1.28
   },
   {
    "w": "recibe",
-   "s": 1.28,
-   "e": 1.6
+   "s": 1.36,
+   "e": 1.68
   },
   {
    "w": "la",
-   "s": 1.68,
+   "s": 1.72,
    "e": 1.76
   },
   {
    "w": "carta",
-   "s": 1.88,
-   "e": 2.08
+   "s": 1.84,
+   "e": 2.12
   },
   {
    "w": "de",
-   "s": 2.12,
-   "e": 2.16
+   "s": 2.16,
+   "e": 2.2
   },
   {
    "w": "un",
@@ -46,67 +46,67 @@
   },
   {
    "w": "asesino",
-   "s": 2.4,
-   "e": 2.88
+   "s": 2.48,
+   "e": 2.8
   },
   {
    "w": "al",
-   "s": 2.96,
-   "e": 3.04
+   "s": 2.88,
+   "e": 2.96
   },
   {
    "w": "que",
-   "s": 3.12,
+   "s": 3.04,
    "e": 3.2
   },
   {
    "w": "nunca",
-   "s": 3.28,
-   "e": 3.6
+   "s": 3.24,
+   "e": 3.52
   },
   {
    "w": "atraparon.",
-   "s": 3.68,
-   "e": 4.84
+   "s": 3.6,
+   "e": 4.76
   },
   {
    "w": "Ganó",
-   "s": 4.88,
-   "e": 5.08
+   "s": 4.8,
+   "e": 5.0
   },
   {
    "w": "el",
-   "s": 5.12,
-   "e": 5.2
+   "s": 5.04,
+   "e": 5.12
   },
   {
    "w": "premio",
-   "s": 5.28,
-   "e": 5.52
+   "s": 5.2,
+   "e": 5.44
   },
   {
    "w": "Edgar",
-   "s": 5.6,
-   "e": 5.84
+   "s": 5.52,
+   "e": 5.76
   },
   {
    "w": "a",
-   "s": 5.92,
-   "e": 5.96
+   "s": 5.84,
+   "e": 5.867
   },
   {
    "w": "la",
-   "s": 6.0,
-   "e": 6.04
+   "s": 5.893,
+   "e": 5.92
   },
   {
    "w": "mejor",
-   "s": 6.08,
-   "e": 6.4
+   "s": 6.0,
+   "e": 6.32
   },
   {
    "w": "novela",
-   "s": 6.48,
+   "s": 6.4,
    "e": 6.72
   },
   {
@@ -116,39 +116,74 @@
   },
   {
    "w": "misterio",
-   "s": 6.88,
+   "s": 6.84,
    "e": 7.52
   },
   {
    "w": "y",
    "s": 7.6,
-   "e": 7.68
+   "e": 7.64
   },
   {
-   "w": "abre",
-   "s": 7.76,
-   "e": 8.0
+   "w": "es",
+   "s": 7.68,
+   "e": 7.84
+  },
+  {
+   "w": "la",
+   "s": 7.88,
+   "e": 7.92
+  },
+  {
+   "w": "primera",
+   "s": 8.0,
+   "e": 8.32
+  },
+  {
+   "w": "de",
+   "s": 8.4,
+   "e": 8.48
   },
   {
    "w": "una",
-   "s": 8.12,
-   "e": 8.24
+   "s": 8.56,
+   "e": 8.72
   },
   {
    "w": "trilogía.",
-   "s": 8.28,
-   "e": 9.56
+   "s": 8.8,
+   "e": 9.72
   },
   {
-   "w": "Diecisiete",
-   "s": 9.6,
-   "e": 10.4
+   "w": "Su",
+   "s": 9.76,
+   "e": 9.84
+  },
+  {
+   "w": "audiolibro",
+   "s": 9.92,
+   "e": 10.48
+  },
+  {
+   "w": "dura",
+   "s": 10.56,
+   "e": 10.72
+  },
+  {
+   "w": "unas",
+   "s": 10.8,
+   "e": 11.04
+  },
+  {
+   "w": "diecisiete",
+   "s": 11.12,
+   "e": 11.76
   },
   {
    "w": "horas.",
-   "s": 10.48,
-   "e": 11.44
+   "s": 11.84,
+   "e": 12.8
   }
  ],
- "speechEnd": 10.926
+ "speechEnd": 12.232
 }

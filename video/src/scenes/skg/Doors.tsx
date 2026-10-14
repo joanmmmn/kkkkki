@@ -565,7 +565,7 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 export const D1: React.FC = () => (
   <DoorScene cfg={{
     sceneId: 'D1', n: 1, book: 'resplandor', kicker: 'Terror clásico', headline: '¿Terror clásico?', voA: 'G14', voB: 'G15', titleWord: 'resplandor', fear: 3, fearLabel: 'Miedo',
-    cStart: (c) => c.part('G16') - 4, hoursAt: (c) => c.at('G16', 'Audiolibro'),
+    cStart: (c) => c.part('G16') - 4, hoursAt: (c) => c.at('G16', 'dieciocho') - 4,
     quote: { text: 'Lo que más asusta no son los fantasmas: es lo que le va pasando al padre.', at: (c) => c.at('G16', 'asusta') },
     Vignette: VShining,
   }} />
@@ -573,25 +573,25 @@ export const D1: React.FC = () => (
 export const D2: React.FC = () => (
   <DoorScene cfg={{
     sceneId: 'D2', n: 2, book: 'misery', kicker: 'Miedo sin nada sobrenatural', headline: '¿Miedo sin fantasmas?', voA: 'G17', voB: 'G18', titleWord: 'Misery', fear: 2, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G18', 'Catorce') - 14, hoursAt: (c) => c.at('G18', 'Catorce'), Vignette: VMisery,
+    cStart: (c) => c.at('G18', 'audiolibro') - 16, hoursAt: (c) => c.at('G18', 'catorce') - 4, Vignette: VMisery,
   }} />
 );
 export const D3: React.FC = () => (
   <DoorScene cfg={{
     sceneId: 'D3', n: 3, book: 'milla', kicker: 'Si el terror no es lo tuyo', headline: '¿Sin terror?', voA: 'G19', voB: 'G20', titleWord: 'milla', fear: 1, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G20', 'Catorce') - 14, hoursAt: (c) => c.at('G20', 'Catorce'), Vignette: VMilla,
+    cStart: (c) => c.at('G20', 'audio') - 16, hoursAt: (c) => c.at('G20', 'catorce') - 4, Vignette: VMilla,
   }} />
 );
 export const D4: React.FC = () => (
   <DoorScene cfg={{
     sceneId: 'D4', n: 4, book: 'd2263', kicker: 'Ciencia ficción e historia', headline: '¿Ciencia ficción o historia?', voA: 'G21', voB: 'G22', titleWord: 'veintidós', fear: 1, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G22', 'Son') - 12, hoursAt: (c) => c.at('G22', 'treinta'), Vignette: V2263,
+    cStart: (c) => c.at('G22', 'larga') - 14, hoursAt: (c) => c.at('G22', 'treinta') - 4, Vignette: V2263,
   }} />
 );
 export const D5: React.FC = () => (
   <DoorScene cfg={{
     sceneId: 'D5', n: 5, book: 'mercedes', kicker: 'Thriller', headline: '¿Thriller?', voA: 'G23', voB: 'G24', titleWord: 'Mercedes', fear: 2, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G24', 'Diecisiete') - 14, hoursAt: (c) => c.at('G24', 'Diecisiete'), Vignette: VMercedes,
+    cStart: (c) => c.at('G24', 'audiolibro') - 16, hoursAt: (c) => c.at('G24', 'diecisiete') - 4, Vignette: VMercedes,
   }} />
 );
 

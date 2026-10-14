@@ -1,8 +1,8 @@
 {
  "id": "G18",
- "hash": "b9bee6799641",
- "text": "Un novelista se estrella con el coche en plena tormenta de nieve y lo rescata su admiradora número uno. El problema es que no piensa dejarlo marchar. Dos personajes, una casa y una tensión que no afloja. Catorce horas.",
- "duration": 15.6,
+ "hash": "fed3b6d7a8a0",
+ "text": "Un novelista se estrella con el coche en plena tormenta de nieve y lo rescata su admiradora número uno. El problema es que no piensa dejarlo marchar. Dos personajes, una casa y una tensión que no afloja en ningún momento. Su audiolibro dura unas catorce horas.",
+ "duration": 18.08,
  "words": [
   {
    "w": "Un",
@@ -21,27 +21,27 @@
   },
   {
    "w": "estrella",
-   "s": 1.0,
-   "e": 1.36
+   "s": 0.96,
+   "e": 1.28
   },
   {
    "w": "con",
-   "s": 1.44,
-   "e": 1.52
+   "s": 1.36,
+   "e": 1.44
   },
   {
    "w": "el",
-   "s": 1.6,
-   "e": 1.68
+   "s": 1.52,
+   "e": 1.6
   },
   {
    "w": "coche",
-   "s": 1.72,
-   "e": 2.0
+   "s": 1.68,
+   "e": 1.92
   },
   {
    "w": "en",
-   "s": 2.08,
+   "s": 2.04,
    "e": 2.16
   },
   {
@@ -62,26 +62,26 @@
   {
    "w": "nieve",
    "s": 3.12,
-   "e": 3.76
+   "e": 3.68
   },
   {
    "w": "y",
-   "s": 3.84,
-   "e": 3.893
+   "s": 3.76,
+   "e": 3.8
   },
   {
    "w": "lo",
-   "s": 3.947,
-   "e": 4.0
+   "s": 3.84,
+   "e": 3.92
   },
   {
    "w": "rescata",
-   "s": 4.08,
-   "e": 4.48
+   "s": 4.04,
+   "e": 4.4
   },
   {
    "w": "su",
-   "s": 4.52,
+   "s": 4.48,
    "e": 4.56
   },
   {
@@ -92,113 +92,148 @@
   {
    "w": "número",
    "s": 5.28,
-   "e": 5.6
+   "e": 5.68
   },
   {
    "w": "uno.",
-   "s": 5.68,
-   "e": 6.44
+   "s": 5.76,
+   "e": 6.6
   },
   {
    "w": "El",
-   "s": 6.48,
-   "e": 6.56
+   "s": 6.64,
+   "e": 6.72
   },
   {
    "w": "problema",
-   "s": 6.64,
-   "e": 6.96
+   "s": 6.8,
+   "e": 7.2
   },
   {
    "w": "es",
-   "s": 7.04,
-   "e": 7.12
+   "s": 7.28,
+   "e": 7.36
   },
   {
    "w": "que",
-   "s": 7.2,
-   "e": 7.28
+   "s": 7.44,
+   "e": 7.6
   },
   {
    "w": "no",
-   "s": 7.36,
-   "e": 7.44
+   "s": 7.68,
+   "e": 7.76
   },
   {
    "w": "piensa",
-   "s": 7.48,
-   "e": 7.84
+   "s": 7.84,
+   "e": 8.16
   },
   {
    "w": "dejarlo",
-   "s": 7.92,
-   "e": 8.24
+   "s": 8.24,
+   "e": 8.64
   },
   {
    "w": "marchar.",
-   "s": 8.32,
-   "e": 9.28
+   "s": 8.68,
+   "e": 9.6
   },
   {
    "w": "Dos",
-   "s": 9.36,
-   "e": 9.52
+   "s": 9.68,
+   "e": 9.84
   },
   {
    "w": "personajes,",
-   "s": 9.6,
-   "e": 10.6
+   "s": 9.92,
+   "e": 10.92
   },
   {
    "w": "una",
-   "s": 10.64,
-   "e": 10.8
+   "s": 10.96,
+   "e": 11.12
   },
   {
    "w": "casa",
-   "s": 10.88,
-   "e": 11.44
+   "s": 11.16,
+   "e": 11.76
   },
   {
    "w": "y",
-   "s": 11.52,
-   "e": 11.6
+   "s": 11.84,
+   "e": 11.88
   },
   {
    "w": "una",
-   "s": 11.68,
-   "e": 11.84
+   "s": 11.92,
+   "e": 12.08
   },
   {
    "w": "tensión",
-   "s": 11.88,
-   "e": 12.48
+   "s": 12.12,
+   "e": 12.56
   },
   {
    "w": "que",
-   "s": 12.56,
-   "e": 12.64
+   "s": 12.64,
+   "e": 12.72
   },
   {
    "w": "no",
-   "s": 12.72,
+   "s": 12.76,
    "e": 12.8
   },
   {
-   "w": "afloja.",
-   "s": 12.88,
-   "e": 13.8
+   "w": "afloja",
+   "s": 12.96,
+   "e": 13.28
   },
   {
-   "w": "Catorce",
-   "s": 13.84,
-   "e": 14.4
+   "w": "en",
+   "s": 13.36,
+   "e": 13.44
+  },
+  {
+   "w": "ningún",
+   "s": 13.6,
+   "e": 13.84
+  },
+  {
+   "w": "momento.",
+   "s": 13.92,
+   "e": 14.84
+  },
+  {
+   "w": "Su",
+   "s": 14.88,
+   "e": 14.96
+  },
+  {
+   "w": "audiolibro",
+   "s": 15.08,
+   "e": 15.52
+  },
+  {
+   "w": "dura",
+   "s": 15.6,
+   "e": 15.84
+  },
+  {
+   "w": "unas",
+   "s": 16.0,
+   "e": 16.16
+  },
+  {
+   "w": "catorce",
+   "s": 16.24,
+   "e": 16.8
   },
   {
    "w": "horas.",
-   "s": 14.48,
-   "e": 15.6
+   "s": 16.88,
+   "e": 18.08
   }
  ],
- "speechEnd": 15.007
+ "speechEnd": 17.28
 }

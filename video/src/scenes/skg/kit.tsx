@@ -1,5 +1,7 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { coverURL, HAS_ILLUSTRATION } from './covers';
+import { useFontsReady } from './three/lib3d';
 import { color, font, shadow } from '../../brand/tokens';
 import { clamp, easeInOut, easeOut, Key, keyframes } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
@@ -244,30 +246,25 @@ export const CoverIcon: React.FC<{ kind: IconKind; size: number; c: string; sw?:
   return <svg width={size} height={size} viewBox="0 0 24 24" style={{ overflow: 'visible', display: 'block' }} fill={fill}>{body}</svg>;
 };
 
-// Cubierta tipográfica de la colección (diseño propio, igual para todos los libros del vídeo).
+// Cubierta de la colección del vídeo (diseño propio, ver covers.ts): tela, dorados con relieve e ilustración en un arco.
+// Se dibuja una vez en canvas y se usa como imagen; <Img> espera a que esté decodificada antes de capturar el fotograma.
+let KEY_OF: Map<BookDef, string> | null = null;
+export const keyOf = (b: BookDef) => {
+  if (!KEY_OF) KEY_OF = new Map(Object.entries(BOOKS).map(([k, v]) => [v, k]));
+  return KEY_OF.get(b) ?? b.title;
+};
 export const Cover: React.FC<{ b: BookDef; w: number; h: number; shine?: number }> = ({ b, w, h, shine = 0 }) => {
-  const k = w / 300;
-  const author = b.author ?? 'Stephen King';
-  const long = b.title.length > 16;
-  const titleSize = (b.title.length > 22 ? 26 : long ? 31 : b.title.length > 9 ? 40 : 50) * k;
+  const ready = useFontsReady();
+  const key = keyOf(b);
+  const res = w >= 280 ? 1200 : w >= 170 ? 800 : w >= 110 ? 560 : 400;
+  const src = ready ? coverURL(b, key, res) : null;
   return (
     <div style={{ position: 'absolute', inset: 0, background: b.bg, overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${staticFile('pdr/img/grain.png')})`, backgroundSize: `${256 * k}px`, opacity: 0.16, mixBlendMode: 'overlay' }} />
-      <div style={{ position: 'absolute', left: 16 * k, right: 16 * k, top: 16 * k, bottom: 16 * k, border: `${1.4 * k}px solid ${b.accent}`, opacity: 0.55, borderRadius: 3 * k }} />
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 40 * k, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 15 * k, letterSpacing: 4.2 * k, textTransform: 'uppercase', color: b.fg, opacity: 0.92 }}>
-        {author}
-      </div>
-      {b.num !== undefined && (
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 66 * k, textAlign: 'center', fontFamily: font.serif, fontStyle: 'italic', fontSize: 18 * k, color: b.accent }}>La Torre Oscura {['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'][b.num - 1]}</div>
-      )}
-      <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.27, display: 'flex', justifyContent: 'center' }}>
-        <CoverIcon kind={b.icon} size={w * 0.4} c={b.accent} sw={1.25} />
-      </div>
-      <div style={{ position: 'absolute', left: 26 * k, right: 26 * k, top: h * 0.64, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: titleSize, lineHeight: 1.02, letterSpacing: -0.02 * titleSize, color: b.fg }}>
-        {b.title}
-      </div>
-      {b.year && (
-        <div style={{ position: 'absolute', left: 0, right: 0, bottom: 34 * k, textAlign: 'center', fontFamily: font.serif, fontSize: 18 * k, color: b.fg, opacity: 0.7 }}>{b.year}</div>
+      {src && <Img src={src} style={{ position: 'absolute', left: 0, top: 0, width: w, height: h, display: 'block' }} />}
+      {!HAS_ILLUSTRATION(key) && (
+        <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.27, display: 'flex', justifyContent: 'center' }}>
+          <CoverIcon kind={b.icon} size={w * 0.4} c={b.accent} sw={1.25} />
+        </div>
       )}
       {shine > 0 && (
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(115deg, rgba(255,255,255,0) ${20 + shine * 60}%, rgba(255,255,255,0.22) ${30 + shine * 60}%, rgba(255,255,255,0) ${42 + shine * 60}%)` }} />
@@ -276,45 +273,78 @@ export const Cover: React.FC<{ b: BookDef; w: number; h: number; shine?: number 
   );
 };
 
-// Libro en 3D (CSS): cubierta, lomo, cantos de páginas. `ry`/`rx`/`rz` en grados. La luz llega de arriba a la izquierda.
+// Libro en 3D (CSS): cubierta, contracubierta, lomo y cantos de páginas. `ry`/`rx`/`rz` en grados. La luz llega de arriba a la izquierda.
+// Sin `filter` en ninguna cara: en un contexto 3D Chrome a veces pinta la cara entera en negro durante un fotograma.
+// El sombreado va con capas semitransparentes encima de cada cara.
+const spineInk = (b: BookDef) => {
+  const n = parseInt(b.bg.slice(1), 16);
+  const l = (0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
+  return l > 0.62 ? b.fg : '#E2C072';
+};
+const Shade: React.FC<{ k: number }> = ({ k }) => (k === 0 ? null : (
+  <div style={{ position: 'absolute', inset: 0, background: k > 0 ? `rgba(0,0,0,${Math.min(0.9, k).toFixed(3)})` : `rgba(255,255,255,${Math.min(0.5, -k).toFixed(3)})`, pointerEvents: 'none' }} />
+));
 export const Book3D: React.FC<{
   b: BookDef; w?: number; h?: number; d?: number; rx?: number; ry?: number; rz?: number; floorShadow?: boolean; shine?: number; style?: React.CSSProperties; persp?: number;
 }> = ({ b, w = 300, h = 450, d = 64, rx = 0, ry = -18, rz = 0, floorShadow = true, shine = 0, style, persp = 2600 }) => {
   const rad = (ry * Math.PI) / 180;
-  const lightFront = 0.9 + 0.1 * Math.cos(rad);
-  const spineDark = 0.55 + 0.35 * Math.max(0, Math.sin(-rad));
-  const pageDark = 0.72 + 0.25 * Math.max(0, Math.sin(rad));
-  const face: React.CSSProperties = { position: 'absolute', backfaceVisibility: 'hidden' };
-  const spineBg = b.bg;
+  const frontShade = 0.1 - 0.1 * Math.cos(rad);
+  const spineShade = 0.45 - 0.35 * Math.max(0, Math.sin(-rad)) - 0.25;
+  const pageShade = 0.28 - 0.25 * Math.max(0, Math.sin(rad));
+  const face: React.CSSProperties = { position: 'absolute', backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' };
   return (
     <div style={{ width: w, height: h, perspective: persp, position: 'relative', ...style }}>
       {floorShadow && (
-        <div style={{ position: 'absolute', left: w * 0.05, right: w * 0.05, bottom: -h * 0.05, height: h * 0.08, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0) 70%)', filter: 'blur(6px)',
+        <div style={{ position: 'absolute', left: -w * 0.08, right: -w * 0.08, bottom: -h * 0.09, height: h * 0.16, borderRadius: '50%', background: 'radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.14) 38%, rgba(0,0,0,0) 70%)',
           transform: `translateX(${Math.sin(rad) * w * 0.12}px) scaleX(${0.85 + 0.15 * Math.abs(Math.cos(rad))})` }} />
       )}
       <div style={{ position: 'absolute', inset: 0, transformStyle: 'preserve-3d', transform: `rotateX(${rx}deg) rotateY(${ry}deg) rotateZ(${rz}deg)` }}>
         {/* cubierta */}
-        <div style={{ ...face, left: 0, top: 0, width: w, height: h, transform: `translateZ(${d / 2}px)`, borderRadius: `${w * 0.012}px ${w * 0.03}px ${w * 0.03}px ${w * 0.012}px`, overflow: 'hidden', filter: `brightness(${lightFront})` }}>
+        <div style={{ ...face, left: 0, top: 0, width: w, height: h, transform: `translateZ(${d / 2}px)`, borderRadius: `${w * 0.012}px ${w * 0.03}px ${w * 0.03}px ${w * 0.012}px`, overflow: 'hidden', background: b.bg }}>
           <Cover b={b} w={w} h={h} shine={shine} />
           <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: w * 0.045, background: 'linear-gradient(90deg, rgba(0,0,0,0.25), rgba(255,255,255,0.08) 60%, rgba(0,0,0,0))' }} />
+          <Shade k={frontShade} />
         </div>
         {/* contracubierta */}
-        <div style={{ ...face, left: 0, top: 0, width: w, height: h, transform: `rotateY(180deg) translateZ(${d / 2}px)`, background: b.bg, filter: 'brightness(0.8)' }} />
+        <div style={{ ...face, left: 0, top: 0, width: w, height: h, transform: `rotateY(180deg) translateZ(${d / 2}px)`, background: b.bg, overflow: 'hidden' }}>
+          <BackCover b={b} w={w} h={h} />
+          <Shade k={0.18} />
+        </div>
         {/* lomo */}
-        <div style={{ ...face, left: (w - d) / 2, top: 0, width: d, height: h, transform: `rotateY(-90deg) translateZ(${w / 2}px)`, background: spineBg, filter: `brightness(${spineDark + 0.25})`, overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.25), rgba(255,255,255,0.10) 45%, rgba(0,0,0,0.25))' }} />
-          <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.08, bottom: h * 0.08, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ transform: 'rotate(90deg)', whiteSpace: 'nowrap', fontFamily: font.sans, fontWeight: 700, fontSize: d * 0.3, color: b.fg, letterSpacing: 0.5 }}>
-              {b.spineTitle ?? b.title}<span style={{ opacity: 0.6, marginLeft: d * 0.35, fontSize: d * 0.22, letterSpacing: 2 }}>{(b.author ?? 'Stephen King').toUpperCase()}</span>
+        <div style={{ ...face, left: (w - d) / 2, top: 0, width: d, height: h, transform: `rotateY(-90deg) translateZ(${w / 2}px)`, background: b.bg, overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.10) 40%, rgba(0,0,0,0.28))' }} />
+          {[0.06, 0.075, 0.925, 0.94].map((t, i) => <div key={i} style={{ position: 'absolute', left: d * 0.1, right: d * 0.1, top: h * t, height: Math.max(1.5, h * (i % 3 === 0 ? 0.005 : 0.0028)), background: spineInk(b) }} />)}
+          <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.1, bottom: h * 0.1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ transform: 'rotate(90deg)', whiteSpace: 'nowrap', fontFamily: font.serif, fontWeight: 500, fontSize: d * 0.36, color: spineInk(b), letterSpacing: 0.5 }}>
+              {b.spineTitle ?? b.title}<span style={{ fontFamily: font.sans, fontWeight: 700, opacity: 0.75, marginLeft: d * 0.4, fontSize: d * 0.2, letterSpacing: 2.5 }}>{(b.author ?? 'Stephen King').toUpperCase()}</span>
             </div>
           </div>
+          <Shade k={spineShade} />
         </div>
         {/* páginas (canto derecho) */}
         <div style={{ ...face, left: (w - d) / 2, top: h * 0.012, width: d, height: h * 0.976, transform: `rotateY(90deg) translateZ(${w / 2 - w * 0.012}px)`,
-          background: `repeating-linear-gradient(90deg, #F3EEE2 0px, #F3EEE2 2px, #DCD5C4 2.6px, #F3EEE2 3.4px)`, filter: `brightness(${pageDark})` }} />
+          background: 'repeating-linear-gradient(90deg, #F3EEE2 0px, #F3EEE2 2px, #DCD5C4 2.6px, #F3EEE2 3.4px)' }}>
+          <Shade k={pageShade} />
+        </div>
         {/* cantos superior e inferior */}
-        <div style={{ ...face, left: 0, top: (h - d) / 2, width: w * 0.985, height: d, transform: `rotateX(90deg) translateZ(${h / 2}px)`, background: 'repeating-linear-gradient(0deg, #F6F2E8 0px, #F6F2E8 2px, #DED7C6 2.6px)', filter: 'brightness(1.02)' }} />
-        <div style={{ ...face, left: 0, top: (h - d) / 2, width: w * 0.985, height: d, transform: `rotateX(-90deg) translateZ(${h / 2}px)`, background: '#CFC8B6', filter: 'brightness(0.7)' }} />
+        <div style={{ ...face, left: 0, top: (h - d) / 2, width: w * 0.985, height: d, transform: `rotateX(90deg) translateZ(${h / 2}px)`, background: 'repeating-linear-gradient(0deg, #F6F2E8 0px, #F6F2E8 2px, #DED7C6 2.6px)' }} />
+        <div style={{ ...face, left: 0, top: (h - d) / 2, width: w * 0.985, height: d, transform: `rotateX(-90deg) translateZ(${h / 2}px)`, background: '#9C9686' }} />
+      </div>
+    </div>
+  );
+};
+
+// Contracubierta de la colección: sinopsis en líneas, sello y código de barras genéricos.
+export const BackCover: React.FC<{ b: BookDef; w: number; h: number }> = ({ b, w, h }) => {
+  const k = w / 300;
+  return (
+    <div style={{ position: 'absolute', inset: 0, background: b.bg }}>
+      <div style={{ position: 'absolute', left: 16 * k, right: 16 * k, top: 16 * k, bottom: 16 * k, border: `${1.4 * k}px solid ${b.accent}`, opacity: 0.45, borderRadius: 3 * k }} />
+      {Array.from({ length: 9 }).map((_, i) => (
+        <div key={i} style={{ position: 'absolute', left: 46 * k, top: h * 0.2 + i * 18 * k, height: 5 * k, borderRadius: 3 * k, width: `${(i === 8 ? 40 : 62 + ((i * 17) % 18))}%`, background: b.fg, opacity: 0.32 }} />
+      ))}
+      <div style={{ position: 'absolute', right: 40 * k, bottom: 40 * k, width: 70 * k, height: 44 * k, background: '#fff', borderRadius: 2 * k, padding: 5 * k, display: 'flex', gap: 1.6 * k }}>
+        {Array.from({ length: 16 }).map((_, i) => <div key={i} style={{ flex: (i * 7) % 3 === 0 ? 2 : 1, background: '#111' }} />)}
       </div>
     </div>
   );

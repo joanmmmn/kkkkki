@@ -1,8 +1,8 @@
 {
  "id": "G16",
- "hash": "861840fc2bb3",
- "text": "Es King en estado puro: lo que más asusta no son los fantasmas, sino lo que le va pasando al padre. Audiolibro: dieciocho horas y media.",
- "duration": 10.0,
+ "hash": "627978b99702",
+ "text": "Es King en estado puro: lo que más asusta no son los fantasmas, sino lo que le va pasando al padre. Y en audiolibro se escucha en unas dieciocho horas y media, con la voz de Julio Caycedo.",
+ "duration": 13.12,
  "words": [
   {
    "w": "Es",
@@ -11,52 +11,52 @@
   },
   {
    "w": "King",
-   "s": 0.24,
+   "s": 0.32,
    "e": 0.56
   },
   {
    "w": "en",
-   "s": 0.6,
-   "e": 0.64
+   "s": 0.64,
+   "e": 0.72
   },
   {
    "w": "estado",
-   "s": 0.72,
-   "e": 1.12
+   "s": 0.8,
+   "e": 1.2
   },
   {
    "w": "puro:",
-   "s": 1.2,
-   "e": 2.0
+   "s": 1.28,
+   "e": 2.08
   },
   {
    "w": "lo",
-   "s": 2.08,
-   "e": 2.16
-  },
-  {
-   "w": "que",
-   "s": 2.2,
+   "s": 2.16,
    "e": 2.24
   },
   {
-   "w": "más",
+   "w": "que",
    "s": 2.28,
-   "e": 2.4
+   "e": 2.32
+  },
+  {
+   "w": "más",
+   "s": 2.36,
+   "e": 2.48
   },
   {
    "w": "asusta",
-   "s": 2.48,
+   "s": 2.56,
    "e": 2.96
   },
   {
    "w": "no",
    "s": 3.04,
-   "e": 3.12
+   "e": 3.2
   },
   {
    "w": "son",
-   "s": 3.2,
+   "s": 3.28,
    "e": 3.36
   },
   {
@@ -76,17 +76,17 @@
   },
   {
    "w": "lo",
-   "s": 4.88,
-   "e": 4.96
+   "s": 4.84,
+   "e": 4.88
   },
   {
    "w": "que",
-   "s": 5.0,
-   "e": 5.04
+   "s": 4.96,
+   "e": 5.0
   },
   {
    "w": "le",
-   "s": 5.08,
+   "s": 5.04,
    "e": 5.12
   },
   {
@@ -96,7 +96,7 @@
   },
   {
    "w": "pasando",
-   "s": 5.36,
+   "s": 5.4,
    "e": 5.76
   },
   {
@@ -107,33 +107,93 @@
   {
    "w": "padre.",
    "s": 6.0,
-   "e": 6.4
+   "e": 6.84
   },
   {
-   "w": "Audiolibro:",
-   "s": 7.28,
+   "w": "Y",
+   "s": 6.88,
+   "e": 6.92
+  },
+  {
+   "w": "en",
+   "s": 6.96,
+   "e": 7.04
+  },
+  {
+   "w": "audiolibro",
+   "s": 7.16,
+   "e": 7.84
+  },
+  {
+   "w": "se",
+   "s": 7.92,
+   "e": 7.96
+  },
+  {
+   "w": "escucha",
+   "s": 8.0,
    "e": 8.4
   },
   {
+   "w": "en",
+   "s": 8.44,
+   "e": 8.48
+  },
+  {
+   "w": "unas",
+   "s": 8.6,
+   "e": 8.72
+  },
+  {
    "w": "dieciocho",
-   "s": 8.52,
-   "e": 8.96
+   "s": 8.8,
+   "e": 9.28
   },
   {
    "w": "horas",
-   "s": 9.04,
-   "e": 9.36
+   "s": 9.36,
+   "e": 9.6
   },
   {
    "w": "y",
-   "s": 9.4,
-   "e": 9.44
+   "s": 9.68,
+   "e": 9.72
   },
   {
-   "w": "media.",
-   "s": 9.52,
-   "e": 10.0
+   "w": "media,",
+   "s": 9.76,
+   "e": 10.453
+  },
+  {
+   "w": "con",
+   "s": 10.507,
+   "e": 10.56
+  },
+  {
+   "w": "la",
+   "s": 10.6,
+   "e": 10.64
+  },
+  {
+   "w": "voz",
+   "s": 10.72,
+   "e": 11.04
+  },
+  {
+   "w": "de",
+   "s": 11.12,
+   "e": 11.2
+  },
+  {
+   "w": "Julio",
+   "s": 11.28,
+   "e": 11.6
+  },
+  {
+   "w": "Caycedo.",
+   "s": 11.68,
+   "e": 13.12
   }
  ],
- "speechEnd": 10.0
+ "speechEnd": 12.248
 }
