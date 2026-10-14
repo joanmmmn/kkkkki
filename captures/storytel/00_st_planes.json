@@ -1,0 +1,28 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://www.storytel.com/es/subscriptions"},
+    {"wait": 2500},
+    {"clickText": "Rechazar", "dur": 10},
+    {"wait": 900},
+    {"eval": "window.scrollTo(0, 470)"},
+    {"wait": 1200},
+    {"move": [1560, 300], "dur": 10},
+    {"shot": "planes_still"},
+    {"record": true},
+    {"wait": 700},
+    {"mark": "to_plus"},
+    {"move": [1303, 684], "dur": 950},
+    {"wait": 250},
+    {"mark": "click_plus"},
+    {"click": true},
+    {"wait": 1600},
+    {"mark": "to_try"},
+    {"move": [762, 785], "dur": 850},
+    {"wait": 300},
+    {"mark": "click_try"},
+    {"fakeClick": true},
+    {"wait": 1000},
+    {"mark": "end"}
+  ]
+}

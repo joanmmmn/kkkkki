@@ -26,6 +26,11 @@ import pdrIndex from '../../public/pdr/rec/index.json';
 import pdw00 from '../../public/pdr/web/00_home/meta.json';
 import pdw11 from '../../public/pdr/web/11_ficha_click/meta.json';
 import pdw22 from '../../public/pdr/web/22_plataformas/meta.json';
+// Reseña de Storytel: tomas de la app (tools/str_clips.py) y grabaciones de storytel.com y SonorBooks (tools/record.mjs).
+import strIndex from '../../public/str/rec/index.json';
+import stw00 from '../../public/str/web/00_st_planes/meta.json';
+import stw01 from '../../public/str/web/01_st_alta/meta.json';
+import stw10 from '../../public/str/web/10_sb_plataformas/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
 const REC_DURATIONS: Record<string, number> = {
@@ -47,6 +52,10 @@ const REC_DURATIONS: Record<string, number> = {
   'pdr/web/00_home/video.mp4': pdw00.duration,
   'pdr/web/11_ficha_click/video.mp4': pdw11.duration,
   'pdr/web/22_plataformas/video.mp4': pdw22.duration,
+  ...Object.fromEntries(Object.entries(strIndex as Record<string, { duration: number }>).map(([k, v]) => [`str/rec/${k}/video.mp4`, v.duration])),
+  'str/web/00_st_planes/video.mp4': stw00.duration,
+  'str/web/01_st_alta/video.mp4': stw01.duration,
+  'str/web/10_sb_plataformas/video.mp4': stw10.duration,
 };
 
 export type CamKey = Key & { zoom: number; x: number; y: number };

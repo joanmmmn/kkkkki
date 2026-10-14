@@ -1,0 +1,64 @@
+{
+ "id": "B01",
+ "hash": "eb725401769d",
+ "text": "¿Quieres probarlo? Storytel te da siete días gratis desde su web.",
+ "duration": 4.32,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "probarlo?",
+   "s": 0.4,
+   "e": 1.2
+  },
+  {
+   "w": "Storytel",
+   "s": 1.4,
+   "e": 1.84
+  },
+  {
+   "w": "te",
+   "s": 1.92,
+   "e": 2.0
+  },
+  {
+   "w": "da",
+   "s": 2.08,
+   "e": 2.16
+  },
+  {
+   "w": "siete",
+   "s": 2.24,
+   "e": 2.48
+  },
+  {
+   "w": "días",
+   "s": 2.56,
+   "e": 2.8
+  },
+  {
+   "w": "gratis",
+   "s": 2.88,
+   "e": 3.2
+  },
+  {
+   "w": "desde",
+   "s": 3.28,
+   "e": 3.52
+  },
+  {
+   "w": "su",
+   "s": 3.6,
+   "e": 3.68
+  },
+  {
+   "w": "web.",
+   "s": 3.8,
+   "e": 4.32
+  }
+ ],
+ "speechEnd": 4.09
+}

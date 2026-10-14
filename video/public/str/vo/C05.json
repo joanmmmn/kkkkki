@@ -1,0 +1,54 @@
+{
+ "id": "C05",
+ "hash": "e90937e4a25f",
+ "text": "¿Quieres probarlo? Tienes siete días gratis en su web.",
+ "duration": 3.6,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "probarlo?",
+   "s": 0.4,
+   "e": 1.2
+  },
+  {
+   "w": "Tienes",
+   "s": 1.28,
+   "e": 1.6
+  },
+  {
+   "w": "siete",
+   "s": 1.64,
+   "e": 1.92
+  },
+  {
+   "w": "días",
+   "s": 2.0,
+   "e": 2.24
+  },
+  {
+   "w": "gratis",
+   "s": 2.32,
+   "e": 2.64
+  },
+  {
+   "w": "en",
+   "s": 2.72,
+   "e": 2.8
+  },
+  {
+   "w": "su",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "web.",
+   "s": 3.08,
+   "e": 3.6
+  }
+ ],
+ "speechEnd": 3.37
+}

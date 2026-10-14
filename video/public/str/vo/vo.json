@@ -1,0 +1,119 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "¿Merece la pena pagar Storytel? Lo hemos instalado y lo hemos usado a fondo: su catálogo, la app, los precios y su letra pequeña. Te contamos lo bueno, lo malo… y cómo probarlo siete días gratis sin que te cobren."
+  },
+  {
+   "id": "A02",
+   "text": "¿Qué es Storytel? Una app sueca de audiolibros y ebooks que llegó a España en dos mil diecisiete. Con una sola cuota escuchas y lees todo lo que quieras, sin límite de horas: más de seiscientos cincuenta mil títulos, y series que solo están aquí."
+  },
+  {
+   "id": "A03",
+   "text": "Tiene dos planes. Unlimited: ocho noventa y nueve al mes, para una persona. Y Family: quince noventa y nueve con dos cuentas, o veinte noventa y nueve con tres, cada una con su propia biblioteca. Los dos, sin permanencia y con siete días gratis."
+  },
+  {
+   "id": "A04",
+   "text": "Al abrir la app, la portada te enseña el top cincuenta del día y lo más nuevo, y arriba tienes pestañas para series, ebooks, títulos en inglés o en catalán, y una zona infantil."
+  },
+  {
+   "id": "A05",
+   "text": "Su sello propio son los Storytel Originals, que solo están aquí: La Suelta, la primera serie sonora de Juan Gómez-Jurado, o Modo Noche, una ficción sonora con actores, elegida mejor pódcast de dos mil veintitrés en los Podcast Days."
+  },
+  {
+   "id": "A06",
+   "text": "Buscas por título o por autor, o con la cámara, haciendo una foto a un libro. Y cada ficha te dice si puedes escucharlo, leerlo o las dos cosas, quién lo narra, cuánto dura y qué nota tiene."
+  },
+  {
+   "id": "A07",
+   "text": "El reproductor va de una a dos veces la velocidad, y tiene temporizador para dormir, capítulos, marcadores y descargas para escuchar sin conexión."
+  },
+  {
+   "id": "A08",
+   "text": "Y si el libro también tiene ebook, pulsas «Leer desde aquí» y sigues leyendo justo donde ibas, con la frase marcada. Incluso puedes buscar una palabra, y te lleva a ese minuto del audio."
+  },
+  {
+   "id": "A08B",
+   "text": "Y aquí no hay reloj: escuches a velocidad normal o al doble, no se gasta nada. Y para los peques hay una zona infantil, y un modo infantil que se protege con un PIN."
+  },
+  {
+   "id": "A09",
+   "text": "Funciona en Android y iPhone, en el Apple Watch y en relojes Wear OS, en el coche con CarPlay y Android Auto, y con Chromecast. Pero ojo: no hay app de ordenador, ni se puede escuchar en la web."
+  },
+  {
+   "id": "A10",
+   "text": "¿Y qué opinan los usuarios? En Google Play tiene un cuatro coma cinco, con más de medio millón de reseñas, y en la App Store, otro cuatro coma cinco. Lo que más gusta: pagar lo mismo, escuches lo que escuches. Lo que más se critica: que faltan novedades y superventas. Así que busca tus libros antes de pagar."
+  },
+  {
+   "id": "A11",
+   "text": "Lo bueno: sin límite de horas por ocho noventa y nueve, audiolibros y ebooks en la misma cuota, series exclusivas y un plan familiar con cuentas separadas. Lo malo: no está todo lo nuevo, no hay app de ordenador, la prueba es de solo siete días y, si cancelas durante la prueba, pierdes el acceso al momento."
+  },
+  {
+   "id": "A12",
+   "text": "¿Merece la pena? Si escuchas mucho, sí: por ocho noventa y nueve no cuentas horas, y si sois tres en casa, el Family sale a unos siete euros por persona. Si solo escuchas uno o dos libros al mes, hay planes más baratos con horas, como Podimo o Nextory."
+  },
+  {
+   "id": "B01",
+   "text": "¿Quieres probarlo? Storytel te da siete días gratis desde su web."
+  },
+  {
+   "id": "B02",
+   "text": "Elige Unlimited o Family, crea tu cuenta y añade tu forma de pago: hoy no pagas nada. Y si no quieres su publicidad, desmarca esta casilla."
+  },
+  {
+   "id": "B03",
+   "text": "Después, descarga la app y entra con tu cuenta."
+  },
+  {
+   "id": "B04",
+   "text": "¿Te convence? No hagas nada: al acabar la semana, empieza a cobrar ocho noventa y nueve al mes. ¿No te convence? Cancela en tu cuenta de la web de Storytel; la app te manda allí. Mejor el último día, porque al cancelar en la prueba pierdes el acceso al momento. Pero no en la última hora: entonces ya no te deja."
+  },
+  {
+   "id": "B05",
+   "text": "¿Dudas entre Storytel y otras? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma. Y en la descripción tienes la reseña completa por escrito."
+  },
+  {
+   "id": "B06",
+   "text": "Encuentra dónde escuchar tu próximo libro en SonorBooks."
+  },
+  {
+   "id": "C01",
+   "text": "¿Merece la pena Storytel? Lo hemos probado a fondo."
+  },
+  {
+   "id": "C02",
+   "text": "Por ocho noventa y nueve al mes escuchas y lees sin límite de horas: más de seiscientos cincuenta mil títulos."
+  },
+  {
+   "id": "C03",
+   "text": "Y con Family, dos cuentas por quince noventa y nueve, o tres por veinte noventa y nueve."
+  },
+  {
+   "id": "C04",
+   "text": "Lo malo: no hay app de ordenador, y si cancelas durante la prueba, pierdes el acceso al momento."
+  },
+  {
+   "id": "C05",
+   "text": "¿Quieres probarlo? Tienes siete días gratis en su web."
+  },
+  {
+   "id": "C06",
+   "text": "Si no te convence, cancela el último día de la prueba, antes de que te cobren."
+  },
+  {
+   "id": "C07",
+   "text": "Y antes de pagar, compara plataformas en SonorBooks."
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "00_inicio_top": {
+  "duration": 46.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 0.0,
+  "to": 46.0,
+  "audio": false
+ },
+ "01_inicio_scroll": {
+  "duration": 46.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 44.0,
+  "to": 90.0,
+  "audio": false
+ },
+ "02_inicio_top2": {
+  "duration": 12.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 88.0,
+  "to": 100.0,
+  "audio": false
+ },
+ "03_series": {
+  "duration": 10.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 97.0,
+  "to": 107.0,
+  "audio": false
+ },
+ "04_ebooks": {
+  "duration": 11.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 105.0,
+  "to": 116.0,
+  "audio": false
+ },
+ "05_infantil": {
+  "duration": 12.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 115.0,
+  "to": 127.0,
+  "audio": false
+ },
+ "06_perfil_kids": {
+  "duration": 30.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 127.0,
+  "to": 157.0,
+  "audio": false
+ },
+ "07_objetivo": {
+  "duration": 16.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 160.0,
+  "to": 176.0,
+  "audio": false
+ },
+ "08_suscripcion": {
+  "duration": 34.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 190.0,
+  "to": 224.0,
+  "audio": false
+ },
+ "09_config_app": {
+  "duration": 20.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 226.0,
+  "to": 246.0,
+  "audio": false
+ },
+ "10_buscar": {
+  "duration": 28.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 250.0,
+  "to": 278.0,
+  "audio": false
+ },
+ "11_suelta": {
+  "duration": 34.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 277.0,
+  "to": 311.0,
+  "audio": false
+ },
+ "12_bernarda_buscar": {
+  "duration": 12.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 328.0,
+  "to": 340.0,
+  "audio": false
+ },
+ "13_bernarda_ficha": {
+  "duration": 14.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 338.0,
+  "to": 352.0,
+  "audio": false
+ },
+ "14_reproductor": {
+  "duration": 76.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 350.0,
+  "to": 426.0,
+  "audio": false
+ },
+ "15_reproductor2": {
+  "duration": 96.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 424.0,
+  "to": 520.0,
+  "audio": false
+ },
+ "16_lectura": {
+  "duration": 82.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 518.0,
+  "to": 600.0,
+  "audio": false
+ },
+ "17_buscar_libro": {
+  "duration": 38.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 595.0,
+  "to": 633.0,
+  "audio": false
+ },
+ "18_buscar_audio": {
+  "duration": 45.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 631.0,
+  "to": 676.0,
+  "audio": false
+ },
+ "19_biblioteca": {
+  "duration": 22.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 674.0,
+  "to": 696.0,
+  "audio": false
+ },
+ "20_explorar": {
+  "duration": 78.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 694.0,
+  "to": 772.0,
+  "audio": false
+ },
+ "21_modo_noche": {
+  "duration": 39.0,
+  "src": "2026-10-13 21-44-18.mp4",
+  "from": 778.0,
+  "to": 817.0,
+  "audio": false
+ }
+}

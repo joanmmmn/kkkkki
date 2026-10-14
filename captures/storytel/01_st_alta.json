@@ -1,0 +1,25 @@
+{
+  "viewport": [1920, 1080], "slowmo": 3,
+  "steps": [
+    {"go": "https://www.storytel.com/es"},
+    {"wait": 2500},
+    {"clickText": "Rechazar", "dur": 10},
+    {"wait": 900},
+    {"go": "https://www.storytel.com/es/signup/campaign/standard_trial_unlimited_7d-free"},
+    {"wait": 2500},
+    {"move": [700, 760], "dur": 10},
+    {"shot": "alta_still"},
+    {"record": true},
+    {"wait": 800},
+    {"mark": "to_plan"},
+    {"move": [470, 490], "dur": 900},
+    {"wait": 900},
+    {"mark": "to_check"},
+    {"move": [1080, 702], "dur": 900},
+    {"wait": 250},
+    {"mark": "click_check"},
+    {"click": true},
+    {"wait": 1400},
+    {"mark": "end"}
+  ]
+}

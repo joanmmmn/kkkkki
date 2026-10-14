@@ -20,3 +20,8 @@ web/nextory-resena/preview-movil/
 web/podimo-resena/dist/
 web/podimo-resena/preview/
 web/podimo-resena/preview-movil/
+
+# Página de reseña de Storytel: salidas de build.py (se generan con web/storytel-resena/build.py)
+web/storytel-resena/dist/
+web/storytel-resena/preview/
+web/storytel-resena/preview-movil/

@@ -1,0 +1,124 @@
+{
+ "id": "A07",
+ "hash": "51da9f388e2e",
+ "text": "El reproductor va de una a dos veces la velocidad, y tiene temporizador para dormir, capítulos, marcadores y descargas para escuchar sin conexión.",
+ "duration": 9.92,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "reproductor",
+   "s": 0.24,
+   "e": 0.8
+  },
+  {
+   "w": "va",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "de",
+   "s": 1.04,
+   "e": 1.12
+  },
+  {
+   "w": "una",
+   "s": 1.2,
+   "e": 1.44
+  },
+  {
+   "w": "a",
+   "s": 1.48,
+   "e": 1.52
+  },
+  {
+   "w": "dos",
+   "s": 1.64,
+   "e": 1.76
+  },
+  {
+   "w": "veces",
+   "s": 1.84,
+   "e": 2.08
+  },
+  {
+   "w": "la",
+   "s": 2.16,
+   "e": 2.24
+  },
+  {
+   "w": "velocidad,",
+   "s": 2.32,
+   "e": 3.16
+  },
+  {
+   "w": "y",
+   "s": 3.2,
+   "e": 3.28
+  },
+  {
+   "w": "tiene",
+   "s": 3.32,
+   "e": 3.52
+  },
+  {
+   "w": "temporizador",
+   "s": 3.6,
+   "e": 4.32
+  },
+  {
+   "w": "para",
+   "s": 4.4,
+   "e": 4.48
+  },
+  {
+   "w": "dormir,",
+   "s": 4.56,
+   "e": 5.32
+  },
+  {
+   "w": "capítulos,",
+   "s": 5.36,
+   "e": 6.32
+  },
+  {
+   "w": "marcadores",
+   "s": 6.4,
+   "e": 7.2
+  },
+  {
+   "w": "y",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "descargas",
+   "s": 7.48,
+   "e": 7.92
+  },
+  {
+   "w": "para",
+   "s": 8.0,
+   "e": 8.08
+  },
+  {
+   "w": "escuchar",
+   "s": 8.16,
+   "e": 8.64
+  },
+  {
+   "w": "sin",
+   "s": 8.72,
+   "e": 8.8
+  },
+  {
+   "w": "conexión.",
+   "s": 8.88,
+   "e": 9.92
+  }
+ ],
+ "speechEnd": 9.511
+}

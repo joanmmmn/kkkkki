@@ -1,0 +1,49 @@
+{
+ "id": "C07",
+ "hash": "7e6c5dea3e38",
+ "text": "Y antes de pagar, compara plataformas en SonorBooks.",
+ "duration": 3.76,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "antes",
+   "s": 0.16,
+   "e": 0.4
+  },
+  {
+   "w": "de",
+   "s": 0.48,
+   "e": 0.52
+  },
+  {
+   "w": "pagar,",
+   "s": 0.56,
+   "e": 1.28
+  },
+  {
+   "w": "compara",
+   "s": 1.36,
+   "e": 1.68
+  },
+  {
+   "w": "plataformas",
+   "s": 1.76,
+   "e": 2.48
+  },
+  {
+   "w": "en",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 2.72,
+   "e": 3.76
+  }
+ ],
+ "speechEnd": 3.524
+}
