@@ -1,0 +1,100 @@
+/* «Los 10 mejores · Terror» — página del blog de SonorBooks. Portada de noche con una linterna; cuerpo claro de lectura. */
+.t10{--ink:#101010;--ink2:#4a4a4a;--muted:#8a8a8a;--line:#ececec;--yel:#ffca05;--red:#c1121f;--bone:#efe8dc;--night:#0b0b0d;
+  font-family:"Ubuntu",Arial,sans-serif;color:var(--ink)}
+.t10 *{box-sizing:border-box}
+.t10-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.t10-read{max-width:760px;margin:0 auto}
+
+/* ——— Portada ——— */
+.t10-hero{position:relative;background:radial-gradient(ellipse at 50% 30%,#1b1c20 0%,#0f1012 55%,#060607 100%);color:var(--bone);overflow:hidden;padding:26px 0 64px}
+.t10-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 120%,rgba(193,18,31,.22),rgba(193,18,31,0) 55%);pointer-events:none}
+.t10-crumbs{display:flex;align-items:center;gap:8px;font-size:14px;color:rgba(239,232,220,.62)}
+.t10-crumbs a{color:inherit;text-decoration:none}.t10-crumbs a:hover{color:#fff;text-decoration:underline}
+.t10-crumbs svg{width:14px;height:14px}
+.t10-kicker{display:inline-flex;align-items:center;gap:12px;margin-top:38px;font-weight:700;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:rgba(239,232,220,.7)}
+.t10-kicker b{background:var(--red);color:#fff;padding:5px 10px;border-radius:6px;letter-spacing:.2em}
+.t10-hero h1{font-weight:700;font-size:clamp(34px,5.4vw,64px);line-height:1.04;letter-spacing:-.025em;margin:16px 0 0;max-width:920px;color:#fff}
+.t10-hero h1 em{font-style:normal;color:var(--yel)}
+.t10-lede{font-family:"Merriweather",Georgia,serif;font-size:19px;line-height:1.6;color:rgba(239,232,220,.82);max-width:720px;margin:18px 0 0}
+.t10-shelf{position:relative;margin-top:44px;display:grid;grid-template-columns:repeat(10,1fr);gap:14px;z-index:1}
+.t10-shelf a{display:block;text-decoration:none;transition:transform .25s ease}
+.t10-shelf a:hover,.t10-shelf a:focus-visible{transform:translateY(-6px)}
+.t10-shelf .t10-n{display:block;text-align:center;margin-top:10px;font-weight:700;font-size:15px;color:rgba(239,232,220,.7)}
+.t10-beam{position:absolute;top:-80px;bottom:-80px;width:340px;left:-340px;background:radial-gradient(ellipse at center,rgba(255,220,140,.22),rgba(255,220,140,0) 70%);mix-blend-mode:screen;pointer-events:none;animation:t10-sweep 9s ease-in-out infinite;z-index:2}
+@keyframes t10-sweep{0%{transform:translateX(0)}50%{transform:translateX(calc(1180px + 340px))}100%{transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){.t10-beam{animation:none;display:none}.t10-shelf a{transition:none}}
+
+/* ——— Cubierta tipográfica (diseño propio, igual que en el vídeo) ——— */
+.t10-cover{position:relative;aspect-ratio:2/3;border-radius:3px 7px 7px 3px;background:var(--bg);color:var(--fg);overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.45),inset 0 0 0 1px rgba(0,0,0,.18)}
+.t10-cover::before{content:"";position:absolute;inset:6%;border:1px solid var(--ac);opacity:.55;border-radius:2px}
+.t10-cover::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5%;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(255,255,255,.08) 60%,rgba(0,0,0,0))}
+.t10-cover .a{position:absolute;left:8%;right:8%;top:11%;text-align:center;font-weight:700;font-size:clamp(5px,.62em,9px);letter-spacing:.18em;text-transform:uppercase;opacity:.92;line-height:1.2}
+.t10-cover svg{position:absolute;left:29%;top:25%;width:42%;height:28%;color:var(--ac)}
+.t10-cover .t{position:absolute;left:9%;right:9%;top:62%;text-align:center;font-weight:700;line-height:1.05;letter-spacing:-.01em;font-size:var(--ts,1.05em)}
+.t10-cover .y{position:absolute;left:0;right:0;bottom:8%;text-align:center;font-family:"Merriweather",Georgia,serif;font-size:.62em;opacity:.7}
+.t10-shelf .t10-cover{font-size:13px}
+
+/* ——— Vídeo ——— */
+.t10-video{position:relative;display:block;margin:-40px auto 0;max-width:900px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000 center/cover;box-shadow:0 30px 70px rgba(16,16,16,.25);z-index:3}
+.t10-video img{width:100%;height:100%;object-fit:cover;display:block;opacity:.88}
+.t10-video .play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--yel);color:var(--ink);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.t10-video .play svg{width:34px;height:34px;margin-left:4px}
+.t10-video .cap{position:absolute;left:18px;bottom:16px;right:18px;color:#fff;font-weight:700;font-size:15px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.t10-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ——— Cuerpo ——— */
+.t10-body{padding:56px 0 30px;font-family:"Merriweather",Georgia,serif;font-size:18px;line-height:1.7;color:#222}
+.t10-body h2{font-family:"Ubuntu",Arial,sans-serif;font-weight:700;letter-spacing:-.015em;color:var(--ink)}
+.t10-how{background:#faf8f3;border:1px solid var(--line);border-radius:16px;padding:20px 24px;font-size:16px;line-height:1.65}
+.t10-how b{font-family:"Ubuntu",Arial,sans-serif}
+
+.t10-item{display:grid;grid-template-columns:190px 1fr;gap:34px;margin:64px 0 0;padding-top:46px;border-top:1px solid var(--line);scroll-margin-top:90px}
+.t10-item .side{position:relative}
+.t10-item>div{min-width:0}
+.t10-item .side .t10-cover{font-size:19px}
+.t10-num{position:absolute;left:-16px;top:-16px;z-index:2;min-width:52px;height:52px;padding:0 12px;border-radius:999px;background:var(--yel);color:var(--ink);display:flex;align-items:center;justify-content:center;font:700 26px/1 "Ubuntu",Arial,sans-serif;box-shadow:0 8px 20px rgba(16,16,16,.18)}
+.t10-item.is-one .t10-num{background:var(--red);color:#fff}
+.t10-item h2{font-size:30px;line-height:1.12;margin:0}
+.t10-item .by{font-family:"Ubuntu",Arial,sans-serif;font-size:16px;color:var(--muted);margin:6px 0 14px}
+.t10-item p{margin:0 0 14px}
+
+.t10-narr{margin-top:18px;border-radius:16px;background:#111214;color:var(--bone);padding:18px 20px;font-family:"Ubuntu",Arial,sans-serif;font-size:15.5px;line-height:1.55;position:relative;overflow:hidden}
+.t10-narr::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--ac,var(--yel))}
+.t10-narr + .t10-narr{margin-top:10px}
+.t10-narr .lab{font-weight:700;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(239,232,220,.62)}
+.t10-narr .who{display:flex;align-items:center;gap:12px;margin-top:6px;font-weight:700;font-size:21px;color:#fff}
+.t10-narr .who svg{flex:0 0 auto;width:36px;height:36px;padding:7px;border-radius:50%;background:rgba(255,202,5,.15);color:var(--yel);border:1.5px solid var(--yel)}
+.t10-narr .sub{color:rgba(239,232,220,.62);font-size:14px;margin-left:48px}
+.t10-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.t10-facts span{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);font-weight:700;font-size:13.5px;line-height:1.35}
+.t10-facts .stars{color:var(--yel);letter-spacing:1px}
+.t10-narr .note{margin-top:10px;color:rgba(239,232,220,.78);font-size:14.5px}
+.t10-where{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px;font-family:"Ubuntu",Arial,sans-serif;font-size:14px}
+.t10-where .p{padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700;color:var(--ink2)}
+.t10-btn{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:13px 20px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font:700 15.5px/1 "Ubuntu",Arial,sans-serif;transition:transform .15s ease,background .15s ease}
+.t10-btn svg{width:18px;height:18px;color:var(--yel)}
+.t10-btn:hover,.t10-btn:focus-visible{background:#000;transform:translateY(-1px)}
+
+.t10-off{margin-top:70px;padding:26px 26px 18px;border-radius:18px;background:#0f1012;color:var(--bone);font-family:"Ubuntu",Arial,sans-serif;font-size:16px;line-height:1.65}
+.t10-off h2{color:#fff;margin:0 0 10px;font-size:26px}
+.t10-off ul{margin:12px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.t10-off li{padding:10px 14px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.t10-off li small{display:block;color:rgba(239,232,220,.6)}
+.t10-tip{margin-top:46px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;font-family:"Ubuntu",Arial,sans-serif}
+.t10-tip div{border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center;font-weight:700;font-size:17px}
+.t10-tip svg{display:block;margin:0 auto 10px;width:44px;height:44px;padding:9px;border-radius:50%;background:var(--yel);color:var(--ink)}
+.t10-method{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-family:"Ubuntu",Arial,sans-serif;font-size:14px;line-height:1.7;color:var(--ink2)}
+.t10-method b{color:var(--ink)}
+
+@media (max-width:900px){.t10-shelf{grid-template-columns:repeat(5,1fr)}.t10-beam{display:none}}
+@media (max-width:640px){.t10-shelf{gap:10px}.t10-shelf .t10-cover{font-size:7.5px}.t10-shelf .t10-cover .a,.t10-shelf .t10-cover .y{display:none}.t10-shelf .t10-cover svg{top:18%}.t10-shelf .t10-cover .t{top:56%}}
+@media (max-width:640px){
+  .t10-hero{padding-bottom:56px}.t10-lede{font-size:17px}
+  .t10-item{grid-template-columns:1fr;gap:18px}
+  .t10-item .side{max-width:150px}
+  .t10-item h2{font-size:25px}
+  .t10-body{font-size:17px}
+  .t10-tip{grid-template-columns:1fr}
+  .t10-video{margin-top:-30px;border-radius:12px}
+}

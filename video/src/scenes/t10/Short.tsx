@@ -60,7 +60,7 @@ const Subs: React.FC = () => {
   if (!cue) return null;
   const s = interpolate(frame - cue.a, [0, 5], [0.9, 1], clamp);
   return (
-    <div style={{ position: 'absolute', left: 60, right: 60, top: 1380, display: 'flex', justifyContent: 'center' }}>
+    <div style={{ position: 'absolute', left: 60, right: 60, top: 1580, display: 'flex', justifyContent: 'center' }}>
       <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, lineHeight: 1.15, color: '#fff', textAlign: 'center', transform: `scale(${s})`,
         textShadow: '0 4px 0 rgba(0,0,0,0.9), 0 0 24px rgba(0,0,0,0.9)', WebkitTextStroke: '2px rgba(0,0,0,0.85)', padding: '6px 18px', borderRadius: 14 }}>{cue.t}</div>
     </div>
@@ -94,14 +94,14 @@ export const T10Short: React.FC = () => {
             <Flashlight x={540} y={interpolate(s4, [0, 1], [1000, 500])} r={interpolate(light, [0, 1], [10, 560])} on={Math.max(light, s4)} dark={0.9} seed="sh" />
             {s4 < 0.5 && <BigNum n={1} at={6} size={interpolate(light, [0, 1], [900, 300])} x={540} y={interpolate(light, [0, 1], [900, 300])} />}
             {s4 < 0.5 && (
-              <div style={{ position: 'absolute', left: 0, right: 0, top: 1370, textAlign: 'center', opacity: (1 - s2) * ramp(frame, fTitle - 4, fTitle + 8) }}>
+              <div style={{ position: 'absolute', left: 0, right: 0, top: 1250, textAlign: 'center', opacity: (1 - s2) * ramp(frame, fTitle - 4, fTitle + 8) }}>
                 <MaskTitle text={b.title} at={fTitle - 2} size={110} color={BONE} align="center" />
                 <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 44, color: DIM, marginTop: 10 }}>{b.author} · {b.year}</div>
               </div>
             )}
             {s4 > 0 && (
               <div style={{ position: 'absolute', left: 60, top: 860, opacity: s4 }}>
-                <NarrCard n={b.narr[0]} at={f4 + 10} ratingAt={clock.at('X104', 'Trece') - 30} w={960} accent={b.accent} seed="short" />
+                <NarrCard n={b.narr[0]} at={f4 + 10} ratingAt={f4 + 36} w={960} accent={b.accent} seed="short" />
               </div>
             )}
           </Night>
@@ -127,7 +127,7 @@ export const T10Short: React.FC = () => {
           ]} /></div>}
           {s3 > 0 && (
             <AbsoluteFill style={{ opacity: s3 }}>
-              <div style={{ position: 'absolute', left: -420, top: -40, width: 1920, height: 1080, transform: 'scale(0.78)', transformOrigin: '50% 50%' }}><F10 at={f3 + 6} c={clock} /></div>
+              <div style={{ position: 'absolute', left: -420, top: 260, width: 1920, height: 1080, transform: 'scale(0.78)', transformOrigin: '50% 50%' }}><F10 at={f3 + 6} c={clock} /></div>
             </AbsoluteFill>
           )}
         </AbsoluteFill>
