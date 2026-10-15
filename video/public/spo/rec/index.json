@@ -1,0 +1,158 @@
+{
+ "00_buscar": {
+  "duration": 8.32,
+  "src": "2026-10-15 10-03-54.mp4",
+  "from": 6.0,
+  "to": 14.32,
+  "audio": false,
+  "datos": "tapados"
+ },
+ "01_hub": {
+  "duration": 55.8,
+  "src": "2026-10-15 10-03-54.mp4",
+  "from": 14.4,
+  "to": 70.2,
+  "audio": false
+ },
+ "02_reina_filtro": {
+  "duration": 16.06,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 33.4,
+  "to": 49.45,
+  "audio": false
+ },
+ "03_reina_ficha": {
+  "duration": 29.72,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 49.45,
+  "to": 79.15,
+  "audio": false
+ },
+ "04_muestra": {
+  "duration": 27.18,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 79.15,
+  "to": 106.3,
+  "audio": false
+ },
+ "05_reproductor": {
+  "duration": 31.46,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 118.0,
+  "to": 149.45,
+  "audio": false
+ },
+ "06_velocidad": {
+  "duration": 47.5,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 149.4,
+  "to": 196.9,
+  "audio": false
+ },
+ "07_temporizador": {
+  "duration": 5.28,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 196.85,
+  "to": 202.1,
+  "audio": false
+ },
+ "08_capitulos": {
+  "duration": 17.56,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 202.1,
+  "to": 219.65,
+  "audio": false
+ },
+ "09_pausa": {
+  "duration": 17.6,
+  "src": "2026-10-15 10-05-35.mp4",
+  "from": 219.6,
+  "to": 237.2,
+  "audio": false
+ },
+ "10_horas": {
+  "duration": 26.38,
+  "src": "2026-10-15 10-10-23.mp4",
+  "from": 0.0,
+  "to": 26.38,
+  "audio": false
+ },
+ "11_recarga": {
+  "duration": 12.98,
+  "src": "2026-10-15 10-10-23.mp4",
+  "from": 26.4,
+  "to": 39.38,
+  "audio": false
+ },
+ "12_checkout": {
+  "duration": 10.1,
+  "src": "2026-10-15 10-10-23.mp4",
+  "from": 50.4,
+  "to": 60.5,
+  "audio": false,
+  "datos": "tapados"
+ },
+ "13_horas_arriba": {
+  "duration": 15.28,
+  "src": "2026-10-15 10-10-23.mp4",
+  "from": 69.6,
+  "to": 84.88,
+  "audio": false
+ },
+ "14_asistenta": {
+  "duration": 12.8,
+  "src": "2026-10-15 10-12-28.mp4",
+  "from": 20.3,
+  "to": 33.1,
+  "audio": false
+ },
+ "15_asistenta_latino": {
+  "duration": 36.4,
+  "src": "2026-10-15 10-12-28.mp4",
+  "from": 33.1,
+  "to": 69.5,
+  "audio": false
+ },
+ "16_sombra": {
+  "duration": 16.6,
+  "src": "2026-10-15 10-14-07.mp4",
+  "from": 36.3,
+  "to": 52.9,
+  "audio": false
+ },
+ "17_bestia": {
+  "duration": 18.4,
+  "src": "2026-10-15 10-14-07.mp4",
+  "from": 76.5,
+  "to": 94.9,
+  "audio": false
+ },
+ "18_tres_mundos": {
+  "duration": 24.68,
+  "src": "2026-10-15 10-14-07.mp4",
+  "from": 99.1,
+  "to": 123.78,
+  "audio": false
+ },
+ "19_tres_mundos_ficha": {
+  "duration": 11.52,
+  "src": "2026-10-15 10-14-07.mp4",
+  "from": 123.78,
+  "to": 135.3,
+  "audio": false
+ },
+ "20_encuentra_pagina": {
+  "duration": 15.7,
+  "src": "2026-10-15 10-14-07.mp4",
+  "from": 135.3,
+  "to": 151.0,
+  "audio": false
+ },
+ "22_hp_sin_limites": {
+  "duration": 16.3,
+  "src": "2026-10-15 10-14-07.mp4",
+  "from": 209.7,
+  "to": 226.0,
+  "audio": false
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "id": "U08",
+ "hash": "dd51bd59b9bc",
+ "text": "En la app, los audiolibros están en Buscar, en la sección Audiolibros: novedades y tendencias, géneros, listas de sus editores y autores populares.",
+ "duration": 10.8,
+ "words": [
+  {
+   "w": "En",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "la",
+   "s": 0.2,
+   "e": 0.24
+  },
+  {
+   "w": "app,",
+   "s": 0.32,
+   "e": 0.8
+  },
+  {
+   "w": "los",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "audiolibros",
+   "s": 1.04,
+   "e": 1.6
+  },
+  {
+   "w": "están",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "en",
+   "s": 2.0,
+   "e": 2.16
+  },
+  {
+   "w": "Buscar,",
+   "s": 2.4,
+   "e": 2.96
+  },
+  {
+   "w": "en",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "la",
+   "s": 3.16,
+   "e": 3.2
+  },
+  {
+   "w": "sección",
+   "s": 3.28,
+   "e": 3.84
+  },
+  {
+   "w": "Audiolibros:",
+   "s": 3.92,
+   "e": 5.04
+  },
+  {
+   "w": "novedades",
+   "s": 5.12,
+   "e": 5.68
+  },
+  {
+   "w": "y",
+   "s": 5.72,
+   "e": 5.76
+  },
+  {
+   "w": "tendencias,",
+   "s": 5.8,
+   "e": 6.8
+  },
+  {
+   "w": "géneros,",
+   "s": 6.88,
+   "e": 7.64
+  },
+  {
+   "w": "listas",
+   "s": 7.68,
+   "e": 8.0
+  },
+  {
+   "w": "de",
+   "s": 8.08,
+   "e": 8.16
+  },
+  {
+   "w": "sus",
+   "s": 8.24,
+   "e": 8.32
+  },
+  {
+   "w": "editores",
+   "s": 8.48,
+   "e": 8.96
+  },
+  {
+   "w": "y",
+   "s": 9.04,
+   "e": 9.08
+  },
+  {
+   "w": "autores",
+   "s": 9.12,
+   "e": 9.6
+  },
+  {
+   "w": "populares.",
+   "s": 9.68,
+   "e": 10.8
+  }
+ ],
+ "speechEnd": 10.331
+}

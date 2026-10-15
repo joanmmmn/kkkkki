@@ -1,0 +1,69 @@
+{
+ "id": "Y01",
+ "hash": "b124e7a74636",
+ "text": "¿Merecen la pena los audiolibros de Spotify? Los hemos probado a fondo.",
+ "duration": 4.88,
+ "words": [
+  {
+   "w": "¿Merecen",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "la",
+   "s": 0.52,
+   "e": 0.56
+  },
+  {
+   "w": "pena",
+   "s": 0.64,
+   "e": 0.88
+  },
+  {
+   "w": "los",
+   "s": 0.96,
+   "e": 1.04
+  },
+  {
+   "w": "audiolibros",
+   "s": 1.12,
+   "e": 1.68
+  },
+  {
+   "w": "de",
+   "s": 1.72,
+   "e": 1.76
+  },
+  {
+   "w": "Spotify?",
+   "s": 1.84,
+   "e": 2.88
+  },
+  {
+   "w": "Los",
+   "s": 2.96,
+   "e": 3.12
+  },
+  {
+   "w": "hemos",
+   "s": 3.2,
+   "e": 3.44
+  },
+  {
+   "w": "probado",
+   "s": 3.6,
+   "e": 4.0
+  },
+  {
+   "w": "a",
+   "s": 4.04,
+   "e": 4.08
+  },
+  {
+   "w": "fondo.",
+   "s": 4.16,
+   "e": 4.88
+  }
+ ],
+ "speechEnd": 4.615
+}

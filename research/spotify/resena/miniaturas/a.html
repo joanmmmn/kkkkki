@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;800;900&display=block">
+<style>body{margin:0}.big{display:inline-block;font-family:Anton,Impact,sans-serif;line-height:.9;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;color:#111}</style></head>
+<body><div id="t" style="position:relative;width:1280px;height:720px;overflow:hidden;background:#F7F4EE;font-family:Inter,sans-serif">
+<img src="a_base.png" alt="" style="position:absolute;left:0;top:0;width:1280px;height:720px">
+<img src="../../../../video/public/spo/img/spotify_icon_green.svg" alt="" style="position:absolute;left:858px;top:330px;width:190px;height:190px">
+<div style="position:absolute;left:34px;top:0;bottom:0;width:640px;display:flex;flex-direction:column;justify-content:center;gap:16px">
+<div><span id="l1" class="big" style="font-size:220px"><span style="margin-right:.075em">¿</span>BASTAN</span></div>
+<div><span id="box" style="display:inline-block;background:#1ED760;border-radius:26px;padding:34px 26px 4px"><span id="fit" class="big" style="font-size:150px">12 HORAS?</span></span></div>
+</div></div>
+<script>
+document.fonts.ready.then(()=>{
+  const fit=(el,box,max,min)=>{let s=max;while(box.getBoundingClientRect().right>628&&s>min){s-=2;el.style.fontSize=s+'px';}return s;};
+  const l1=document.getElementById('l1');const a=fit(l1,l1,220,120);
+  const b=fit(document.getElementById('fit'),document.getElementById('box'),150,80);
+  document.body.dataset.ready=a+'/'+b;});
+</script></body></html>

@@ -1,0 +1,159 @@
+{
+ "id": "U10",
+ "hash": "bc041d4a64d2",
+ "text": "El reproductor va de cero coma cinco a tres coma cinco veces la velocidad, y tiene temporizador para dormir, capítulos, saltos de quince segundos y descargas para escuchar sin conexión.",
+ "duration": 11.92,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "reproductor",
+   "s": 0.24,
+   "e": 0.8
+  },
+  {
+   "w": "va",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "de",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "cero",
+   "s": 1.24,
+   "e": 1.36
+  },
+  {
+   "w": "coma",
+   "s": 1.44,
+   "e": 1.68
+  },
+  {
+   "w": "cinco",
+   "s": 1.76,
+   "e": 2.0
+  },
+  {
+   "w": "a",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "tres",
+   "s": 2.32,
+   "e": 2.4
+  },
+  {
+   "w": "coma",
+   "s": 2.48,
+   "e": 2.64
+  },
+  {
+   "w": "cinco",
+   "s": 2.72,
+   "e": 3.0
+  },
+  {
+   "w": "veces",
+   "s": 3.04,
+   "e": 3.44
+  },
+  {
+   "w": "la",
+   "s": 3.48,
+   "e": 3.52
+  },
+  {
+   "w": "velocidad,",
+   "s": 3.6,
+   "e": 4.52
+  },
+  {
+   "w": "y",
+   "s": 4.56,
+   "e": 4.64
+  },
+  {
+   "w": "tiene",
+   "s": 4.68,
+   "e": 4.96
+  },
+  {
+   "w": "temporizador",
+   "s": 5.08,
+   "e": 5.68
+  },
+  {
+   "w": "para",
+   "s": 5.76,
+   "e": 5.84
+  },
+  {
+   "w": "dormir,",
+   "s": 5.88,
+   "e": 6.72
+  },
+  {
+   "w": "capítulos,",
+   "s": 6.8,
+   "e": 7.64
+  },
+  {
+   "w": "saltos",
+   "s": 7.68,
+   "e": 8.0
+  },
+  {
+   "w": "de",
+   "s": 8.08,
+   "e": 8.16
+  },
+  {
+   "w": "quince",
+   "s": 8.2,
+   "e": 8.4
+  },
+  {
+   "w": "segundos",
+   "s": 8.48,
+   "e": 9.28
+  },
+  {
+   "w": "y",
+   "s": 9.32,
+   "e": 9.36
+  },
+  {
+   "w": "descargas",
+   "s": 9.52,
+   "e": 10.0
+  },
+  {
+   "w": "para",
+   "s": 10.08,
+   "e": 10.16
+  },
+  {
+   "w": "escuchar",
+   "s": 10.24,
+   "e": 10.64
+  },
+  {
+   "w": "sin",
+   "s": 10.72,
+   "e": 10.8
+  },
+  {
+   "w": "conexión.",
+   "s": 10.88,
+   "e": 11.92
+  }
+ ],
+ "speechEnd": 11.566
+}

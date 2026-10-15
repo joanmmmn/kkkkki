@@ -35,3 +35,8 @@ web/audible-resena/preview-movil/
 web/bookbeat-resena/dist/
 web/bookbeat-resena/preview/
 web/bookbeat-resena/preview-movil/
+
+# Página de reseña de los audiolibros de Spotify: salidas de build.py (se generan con web/spotify-audiolibros-resena/build.py)
+web/spotify-audiolibros-resena/dist/
+web/spotify-audiolibros-resena/preview/
+web/spotify-audiolibros-resena/preview-movil/

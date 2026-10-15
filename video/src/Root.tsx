@@ -30,6 +30,10 @@ import { AudibleReview } from './scenes/aud/Main';
 import { AUDThumb } from './scenes/aud/Thumb';
 import { AudibleReviewShort, AUD_SHORT_TOTAL } from './scenes/aud/Short';
 import { AUD_TOTAL } from './scenes/aud/timeline';
+import { SpotifyReview } from './scenes/spo/Main';
+import { SPOThumb } from './scenes/spo/Thumb';
+import { SpotifyReviewShort, SPO_SHORT_TOTAL } from './scenes/spo/Short';
+import { SPO_TOTAL } from './scenes/spo/timeline';
 import { BookBeatReview } from './scenes/bkb/Main';
 import { BKBThumb } from './scenes/bkb/Thumb';
 import { BookBeatReviewShort, BKB_SHORT_TOTAL } from './scenes/bkb/Short';
@@ -37,6 +41,9 @@ import { BKB_TOTAL } from './scenes/bkb/timeline';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="SPOReview" component={SpotifyReview} durationInFrames={SPO_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="SPOThumb" component={SPOThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="SPOShort" component={SpotifyReviewShort} durationInFrames={SPO_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
     <Composition id="BBReview" component={BookBeatReview} durationInFrames={BKB_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="BKBThumb" component={BKBThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="BKBShort" component={BookBeatReviewShort} durationInFrames={BKB_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

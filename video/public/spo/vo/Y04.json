@@ -1,0 +1,74 @@
+{
+ "id": "Y04",
+ "hash": "1180623a7600",
+ "text": "En español hay superventas como Reina Roja o La sombra del viento, incluidos.",
+ "duration": 5.44,
+ "words": [
+  {
+   "w": "En",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "español",
+   "s": 0.16,
+   "e": 0.64
+  },
+  {
+   "w": "hay",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "superventas",
+   "s": 0.88,
+   "e": 1.52
+  },
+  {
+   "w": "como",
+   "s": 1.68,
+   "e": 1.84
+  },
+  {
+   "w": "Reina",
+   "s": 1.92,
+   "e": 2.16
+  },
+  {
+   "w": "Roja",
+   "s": 2.24,
+   "e": 2.72
+  },
+  {
+   "w": "o",
+   "s": 2.8,
+   "e": 2.88
+  },
+  {
+   "w": "La",
+   "s": 2.96,
+   "e": 3.12
+  },
+  {
+   "w": "sombra",
+   "s": 3.2,
+   "e": 3.52
+  },
+  {
+   "w": "del",
+   "s": 3.6,
+   "e": 3.68
+  },
+  {
+   "w": "viento,",
+   "s": 3.72,
+   "e": 4.28
+  },
+  {
+   "w": "incluidos.",
+   "s": 4.32,
+   "e": 5.44
+  }
+ ],
+ "speechEnd": 5.028
+}
