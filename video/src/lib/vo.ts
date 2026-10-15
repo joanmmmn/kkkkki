@@ -54,3 +54,7 @@ export const wordFrame = (id: string, word: string, nth = 0, fallbackSec = 0) =>
     : hits[Math.min(nth, hits.length - 1)];
   return Math.round(pick.s * FPS);
 };
+
+// Locución recortada al final real de la voz (+0,2 s, con un fundido de 4 fotogramas): ElevenLabs deja a veces un ruido
+// («mm», respiración) en las últimas centésimas del archivo, después del silencio.
+export const voTrim = (id: string) => voSpeechFrames(id) + Math.round(0.2 * FPS);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, spring, staticFile, useCurrentFrame } from 'remotion';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
-import { VOS, voSrc } from '../../lib/vo';
+import { VOS, voSrc, voTrim } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { Logo } from '../../components/Logo';
 import { MaskTitle } from '../nxr/kit';
@@ -167,7 +167,7 @@ export const T10Short: React.FC = () => {
       )}
       <Subs />
       {(!STEM || STEM === 'vo') && PARTS.map((p) => (
-        <Sequence key={p.id} from={p.at} layout="none"><Audio src={voSrc(p.id)} /></Sequence>
+        <Sequence key={p.id} from={p.at} layout="none"><Audio src={voSrc(p.id)} trimAfter={voTrim(p.id)} volume={(f) => interpolate(f, [voTrim(p.id) - 4, voTrim(p.id)], [1, 0], clamp)} /></Sequence>
       ))}
       <Sfx name="bass_drop" at={8} volume={0.9} />
       <Sfx name="click" at={fTitle - 11} volume={0.7} />

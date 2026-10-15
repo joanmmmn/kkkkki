@@ -53,7 +53,7 @@ const bookScene = (p: number, ids: string[], b: string, c: string, gaps: number[
 export const T10_SCENES: SceneDef[] = [
   scene('HOOK', ['X01', 'X02', 'X03'], { lead: sec(1.1), gaps: [0.7, 0.8], extra: 24, night: true }),
   // v4 (Joan, 15/10): sin presentación de la serie; la regla enseña la web de SonorBooks (notas y opiniones).
-  scene('REGLA', ['X05', 'X07'], { lead: sec(0.5), gaps: [0.9], extra: 18, night: true, tin: 'cut' }),
+  scene('REGLA', ['X05', 'X07'], { lead: sec(1.4), gaps: [1.5], extra: 18, night: true, tin: 'cut' }),
   bookScene(1, ['X11', 'X12', 'X13', 'X14'], 'X13', 'X14', [0.5, 0.75, 0.75]),
   bookScene(2, ['X21', 'X22', 'X23', 'X24', 'X25'], 'X23', 'X24', [0.5, 0.75, 0.75, 0.55]),
   bookScene(3, ['X31', 'X32', 'X33', 'X34'], 'X33', 'X34', [0.5, 0.75, 0.75]),

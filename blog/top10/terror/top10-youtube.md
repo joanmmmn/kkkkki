@@ -14,17 +14,17 @@ Diez historias de terror que dan miedo de verdad, de menos a más miedo: Lovecra
 📚 La lista completa: https://sonorbooks.com/es/blog/libros-de-terror-que-dan-miedo/
 
 0:00 10 historias de terror que dan miedo de verdad
-0:25 10. La llamada de Cthulhu (H. P. Lovecraft)
-1:12 9. Cuentos de Edgar Allan Poe
-2:02 8. Cómo vender una casa encantada (Grady Hendrix)
-2:47 7. Distancia de rescate (Samanta Schweblin)
-3:28 6. Drácula (Bram Stoker)
-4:30 5. Apocalipsis Z (Manel Loureiro)
-5:23 4. Carcoma (Layla Martínez)
-6:14 3. El misterio de Salem's Lot (Stephen King)
-7:11 2. Nuestra parte de noche (Mariana Enriquez)
-8:04 1. El exorcista (William Peter Blatty)
-8:56 Cómo escucharlas gratis
+0:27 10. La llamada de Cthulhu (H. P. Lovecraft)
+1:13 9. Cuentos de Edgar Allan Poe
+2:04 8. Cómo vender una casa encantada (Grady Hendrix)
+2:48 7. Distancia de rescate (Samanta Schweblin)
+3:30 6. Drácula (Bram Stoker)
+4:31 5. Apocalipsis Z (Manel Loureiro)
+5:24 4. Carcoma (Layla Martínez)
+6:16 3. El misterio de Salem's Lot (Stephen King)
+7:13 2. Nuestra parte de noche (Mariana Enriquez)
+8:05 1. El exorcista (William Peter Blatty)
+8:57 Cómo escucharlas gratis
 
 Escúchalas en SonorBooks:
 10. La llamada de Cthulhu: https://sonorbooks.com/es/audiolibro/la-llamada-de-cthulhu-0226b70624/

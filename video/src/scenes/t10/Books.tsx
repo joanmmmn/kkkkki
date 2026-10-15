@@ -4,7 +4,7 @@ import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { VOS } from '../../lib/vo';
 import { Sfx } from '../../components/Sfx';
 import { BONE, bookAt, DIM, KickerN, MiniIcon, Narr, RED, Stars, color, font, flicker } from './kit';
-import { VIGNETTES } from './Vignettes';
+import { BEATS, DIORAMAS } from './Dioramas';
 import { FACTS } from './Facts';
 import { sceneClock, sceneDef } from './timeline';
 import { Ambient, camAt, CamKey, camStyle, COVERS, Cover3D, CoverStrip, coverSrc, countTo, DIGITS_W, KWords, lerp, ramp, sceneLevel, shakes, sp, VoiceBars } from './fx';
@@ -13,31 +13,7 @@ export const vid = (p: number, k: number) => `X${p}${k}`;
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 const hasWord = (vo: string, w: string) => Boolean(VOS[vo]?.words.some((x) => norm(x.w).startsWith(norm(w))));
 
-// Palabras clave de la sinopsis (fase A2), con la palabra de la locución en la que aparece cada una
-// y el encuadre de la cámara sobre la viñeta en ese momento (punto de la escena 1920×1080 y zoom).
-type Chip = { label: string; word: string; nth?: number; red?: boolean; f: [number, number, number] };
-const CHIPS: Record<number, Chip[]> = {
-  1: [{ label: 'Los papeles de un muerto', word: 'papeles', f: [760, 600, 1.3] }, { label: 'Un bajorrelieve de arcilla', word: 'bajorrelieve', f: [1130, 500, 1.28] },
-    { label: 'Cultos', word: 'cultos', f: [880, 640, 1.42] }, { label: 'Un nombre impronunciable', word: 'nombre', red: true, f: [1390, 300, 1.5] }],
-  2: [{ label: 'Un corazón bajo el suelo', word: 'corazón', red: true, f: [1110, 820, 1.42] }, { label: 'Enterrada en vida', word: 'enterrada', f: [960, 620, 1.2] },
-    { label: 'Un gato negro', word: 'gato', f: [300, 300, 1.7] }],
-  3: [{ label: 'La casa familiar', word: 'casa', f: [1320, 440, 1.22] }, { label: 'Títeres', word: 'títeres', f: [950, 430, 1.38] },
-    { label: 'Muñecas', word: 'muñecas', f: [470, 700, 1.55] }, { label: 'Un títere con planes propios', word: 'concreto', red: true, f: [940, 320, 1.7] }],
-  4: [{ label: 'Urgencias de un pueblo', word: 'urgencias', f: [1245, 400, 1.6] }, { label: 'Un niño que no es su hijo', word: 'niño', f: [918, 500, 1.75] },
-    { label: 'El momento exacto', word: 'exacto', f: [960, 560, 1.15] }, { label: 'Algo en el campo', word: 'campo', red: true, f: [960, 760, 1.35] }],
-  5: [{ label: 'Transilvania', word: 'Transilvania', f: [960, 520, 1.15] }, { label: 'Nunca come', word: 'come', f: [900, 430, 1.42] },
-    { label: 'Sin reflejo', word: 'espejo', f: [1040, 420, 1.62] }, { label: 'De día, nadie', word: 'día', red: true, f: [1280, 330, 1.35] }],
-  6: [{ label: 'Pontevedra', word: 'Pontevedra', f: [600, 700, 1.6] }, { label: 'Solo con su gato', word: 'gato', f: [960, 540, 1.2] },
-    { label: 'Un brote en Rusia', word: 'Rusia', f: [1300, 690, 1.62] }, { label: 'Se extiende', word: 'extenderse', red: true, f: [960, 500, 1.32] }],
-  7: [{ label: 'Abuela y nieta', word: 'abuela', f: [960, 540, 1.15] }, { label: 'Un niño desaparecido', word: 'desapareciera', f: [960, 380, 1.38] },
-    { label: 'Los vecinos murmuran', word: 'murmuran', f: [800, 620, 1.42] }, { label: 'Algo más en la casa', word: 'algo', red: true, f: [1110, 520, 1.7] }],
-  8: [{ label: 'Vuelve al pueblo', word: 'vuelve', f: [600, 810, 1.42] }, { label: 'La casa de la colina', word: 'casa', f: [1530, 300, 1.75] },
-    { label: 'Unos recién llegados', word: 'recién', f: [1300, 500, 1.3] }, { label: 'Desaparecen… o vuelven', word: 'desaparecer', red: true, f: [460, 860, 1.65] }],
-  9: [{ label: 'Plena dictadura', word: 'dictadura', f: [960, 540, 1.15] }, { label: 'Padre e hijo', word: 'padre', f: [960, 720, 1.45] },
-    { label: 'Un don', word: 'don', f: [960, 600, 1.25] }, { label: 'La Orden', word: 'Orden', red: true, f: [960, 220, 1.7] }],
-  10: [{ label: 'Washington', word: 'Washington', f: [960, 540, 1.12] }, { label: 'Ruidos en el desván', word: 'ruidos', f: [960, 170, 1.65] },
-    { label: 'Una voz que no es la suya', word: 'voz', f: [960, 330, 1.42] }, { label: 'Sin explicación', word: 'explicación', red: true, f: [960, 520, 1.28] }],
-};
+// Palabras clave de la sinopsis (fase A2) y encuadres de cámara: BEATS en Dioramas.tsx (v5).
 const TITLE_WORD: Record<number, string> = { 1: 'llamada', 2: 'cuentos', 3: 'Cómo', 4: 'Distancia', 5: 'Drácula', 6: 'Apocalipsis', 7: 'Carcoma', 8: 'misterio', 9: 'Nuestra', 10: 'exorcista' };
 
 // Cada palabra del título y del autor entra cuando la voz la dice (si no la dice, poco después de la anterior).
@@ -163,7 +139,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
   const def = sceneDef(id);
   const c = sceneClock(id);
   const b = bookAt(p);
-  const V = VIGNETTES[p];
+  const V = DIORAMAS[p];
   const Fact = FACTS[p];
   const covers = COVERS[p];
   const main = covers[0];
@@ -205,7 +181,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
   const beats = [fNum + 2 + 41, fNum + 2 + 41 + 46].filter((bt) => bt < fTitle - 14);
 
   // ——— A2 y B: viñeta con cámara ———
-  const chips = CHIPS[p].map((ch) => ({ ...ch, at: c.at(v2, ch.word, ch.nth ?? 0) }));
+  const chips = BEATS[p].map((ch) => ({ ...ch, at: c.at(v2, ch.word, ch.nth ?? 0) }));
   const keys: CamKey[] = [
     { at: fA2 - 10, fx: 960, fy: 540, s: 1.08 },
     ...chips.map((ch) => ({ at: ch.at - 8, fx: ch.f[0], fy: ch.f[1], s: ch.f[2], r: ch.red ? -1.2 : (ch.at % 2 ? 0.6 : -0.6), dur: ch.red ? 12 : 20 })),
@@ -284,7 +260,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
         <AbsoluteFill style={{ opacity: a2 }}>
           <AbsoluteFill style={{ overflow: 'hidden' }}>
             <AbsoluteFill style={camStyle({ ...cam, s: cam.s * throughIn }, camShake)}>
-              <V t0={fA2} />
+              <V t0={fA2} beats={chips.map((ch) => ch.at)} />
             </AbsoluteFill>
           </AbsoluteFill>
           <AbsoluteFill style={{ background: `rgba(0,0,0,${(0.5 * bIn).toFixed(3)})` }} />
@@ -402,7 +378,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
       <Sfx name="ui_pop" at={miniAt + 2} volume={0.6} />
       <Sfx name="sparkle" at={miniAt + 10} volume={0.3} />
       {cards > 1 && <Sfx name="swipe" at={cardAt(1) - 4} volume={0.5} />}
-      {VIG_SFX[p]?.(fA2, c)}
+      {VIG_SFX[p]?.(fA2, chips.map((ch) => ch.at))}
       {FACT_SFX[p]?.(fB, c)}
       {p !== 10 && <Sfx name="click" at={c.dur - 16} volume={0.35} />}
       {p === 10 && <><Sfx name="click" at={last + 4} volume={0.8} /><Sfx name="sk_heart" at={c.at('X105', 'Si')} volume={0.9} /><Sfx name="whoosh_deep" at={c.at('X105', 'Si') - 2} volume={0.6} /></>}
@@ -481,13 +457,20 @@ const Swing: React.FC<{ at: number; out: number; children: React.ReactNode }> = 
 };
 
 type Clock = ReturnType<typeof sceneClock>;
-// Sonido propio de cada viñeta (t0 = inicio de la fase A2).
-const VIG_SFX: Record<number, (t0: number, c: Clock) => React.ReactNode> = {
-  2: (t0) => <>{Array.from({ length: 8 }).map((_, i) => <Sfx key={i} name="sk_heart" at={t0 + i * 56} volume={0.55} />)}</>,
-  5: (t0) => <Sfx name="sk_wind" at={t0 + 4} volume={0.7} />,
-  7: (t0) => <Sfx name="sk_door" at={t0 + 140} volume={0.8} />,
-  8: (t0) => <Sfx name="sk_wind" at={t0 + 4} volume={0.55} />,
-  10: (t0) => <><Sfx name="sk_thunder" at={t0 + 180} volume={0.9} /><Sfx name="sk_thunder" at={t0 + 470} volume={0.7} /></>,
+// Sonido propio de cada diorama (v5): cada efecto cae en el «beat» de la voz que activa el objeto (bt = BEATS[p] en fotogramas).
+// sk_heart golpea 41 fotogramas después de empezar; el latido de Poe late cada 56 con pico 4 fotogramas después.
+const VIG_SFX: Record<number, (t0: number, bt: number[]) => React.ReactNode> = {
+  1: (_t0, [pap, baj, cul, nom]) => <><Sfx name="page_riffle" at={pap - 4} volume={0.55} /><Sfx name="sk_book_slide" at={baj - 6} volume={0.6} />
+    {[0, 1, 2, 3].map((k) => <Sfx key={k} name="sk_pin" at={cul - 4 + k * 6} volume={0.45} />)}<Sfx name="pencil_strike" at={nom} volume={0.6} /><Sfx name="reverse_swell" at={nom + 6} volume={0.35} /></>,
+  2: (_t0, [, cor, ent]) => <>{[0, 1, 2, 3, 4, 5].map((k) => <Sfx key={k} name="sk_heart" at={cor + 4 + k * 56 - 41} volume={0.6} />)}<Sfx name="sk_thunder" at={ent} volume={0.55} /></>,
+  3: (_t0, [, casa, tit, , con]) => <><Sfx name="stamp" at={casa - 2} volume={0.45} /><Sfx name="sk_string" at={tit - 6} volume={0.55} /><Sfx name="reverse_swell" at={con - 4} volume={0.45} /></>,
+  4: (_t0, [, , exa, cam]) => <><Sfx name="sk_clock" at={exa - 4} volume={0.6} /><Sfx name="sk_wind" at={cam - 10} volume={0.6} /></>,
+  5: (t0, [, , esp, dia]) => <><Sfx name="sk_wind" at={t0 + 4} volume={0.6} /><Sfx name="shimmer" at={esp - 6} volume={0.4} /><Sfx name="reverse_swell" at={dia - 4} volume={0.4} /></>,
+  6: (_t0, [pon, , rus, ext]) => <><Sfx name="ui_pop" at={pon - 4} volume={0.45} /><Sfx name="sk_projector" at={rus - 6} volume={0.35} /><Sfx name="riser" at={ext - 10} volume={0.4} /></>,
+  7: (_t0, [, des, , alg]) => <><Sfx name="sk_pin" at={des - 4} volume={0.5} /><Sfx name="sk_door" at={alg} volume={0.8} /></>,
+  8: (t0, [, , rec, des]) => <><Sfx name="sk_wind" at={t0 + 4} volume={0.5} /><Sfx name="stamp" at={rec - 2} volume={0.45} /><Sfx name="reverse_swell" at={des + 30} volume={0.4} /></>,
+  9: (_t0, [, , don, ord]) => <><Sfx name="shimmer" at={don - 6} volume={0.45} /><Sfx name="reverse_swell" at={ord - 6} volume={0.45} /></>,
+  10: (_t0, [was, rui, , voz]) => <><Sfx name="sk_thunder" at={was + 40} volume={0.8} /><Sfx name="hit_soft" at={rui} volume={0.7} /><Sfx name="hit_soft" at={rui + 14} volume={0.7} /><Sfx name="sk_thunder" at={voz} volume={0.6} /></>,
 };
 const FACT_SFX: Record<number, (fB: number, c: Clock) => React.ReactNode> = {
   5: (_fB, c) => <><Sfx name="sk_projector" at={c.at('X53', 'Nosferatu') - 8} volume={0.5} /><Sfx name="stamp" at={c.at('X53', 'permiso')} volume={0.9} /></>,

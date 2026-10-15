@@ -1,12 +1,12 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, random, spring, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, interpolate, random, spring, staticFile, useCurrentFrame } from 'remotion';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Sfx } from '../../components/Sfx';
 import { Logo } from '../../components/Logo';
 import { MaskTitle } from '../nxr/kit';
 import { BONE, BOOKS10, DIM, Flashlight, KickerN, Night, RED, color, flicker, font } from './kit';
 import { Img } from 'remotion';
-import { COVERS, Cover3D, CoverArt, bgSrc, KWords, shakes } from './fx';
+import { COVERS, Cover3D, CoverArt, bgSrc, countTo, KWords, shakes } from './fx';
 import { Browser, PAGES, Ring, viewAt } from './web';
 import { sceneClock } from './timeline';
 
@@ -215,6 +215,26 @@ export const Serie: React.FC = () => {
 };
 
 // La regla de la serie y por qué escucharlo.
+// ——— La investigación (v5, Joan 15/10: «una animación más trabajada donde se vea toda la investigación», sin rótulo arriba) ———
+// Muro de las 28 historias candidatas: las diez elegidas, censuradas; doce con audiolibro en español (portada real de Audible);
+// seis sin audiolibro en español (tachadas). Barrido por 8 plataformas → ficha de SonorBooks (nota y opiniones) → contadores
+// → descarte → las diez vuelan a las barras de «de menos a más miedo».
+type Cand = { k: 'top'; p: number } | { k: 'real'; f: string } | { k: 'none'; t: string; a: string };
+const CANDS: Cand[] = [
+  { k: 'real', f: 'misery' }, { k: 'top', p: 4 }, { k: 'none', t: 'Cementerio de animales', a: 'Stephen King' }, { k: 'real', f: 'frankenstein' }, { k: 'top', p: 9 }, { k: 'real', f: 'cosas_fuego' }, { k: 'top', p: 1 },
+  { k: 'none', t: 'La semilla del diablo', a: 'Ira Levin' }, { k: 'real', f: 'riada' }, { k: 'top', p: 6 }, { k: 'real', f: 'principe' }, { k: 'real', f: 'carrie' }, { k: 'top', p: 2 }, { k: 'none', t: 'Soy leyenda', a: 'Richard Matheson' },
+  { k: 'top', p: 7 }, { k: 'real', f: 'cadaver' }, { k: 'none', t: 'La maldición de Hill House', a: 'Shirley Jackson' }, { k: 'top', p: 10 }, { k: 'real', f: 'vampiro' }, { k: 'real', f: 'doctor_sueno' }, { k: 'top', p: 3 },
+  { k: 'real', f: 'chica_al_lado' }, { k: 'none', t: 'A ciegas', a: 'Josh Malerman' }, { k: 'top', p: 5 }, { k: 'real', f: 'cavendish' }, { k: 'none', t: 'La casa infernal', a: 'Richard Matheson' }, { k: 'top', p: 8 }, { k: 'real', f: 'hombre_arena' },
+];
+const COLS = 7, CW = 140, CH = 182, GX = 24, GY = 18;
+const GL = (1920 - (COLS * CW + (COLS - 1) * GX)) / 2, GT = 128;
+const cardPos = (i: number) => ({ x: GL + (i % COLS) * (CW + GX), y: GT + Math.floor(i / COLS) * (CH + GY) });
+const PLATS = ['Audible', 'Storytel', 'Nextory', 'Podimo', 'BookBeat', 'Apple Books', 'Google Play', 'SonorBooks'];
+// barras finales (de menos a más miedo)
+const BAR_L = (1920 - (10 * 100 + 9 * 26)) / 2, BAR_BASE = 770;
+const barX = (i: number) => BAR_L + i * 126;
+const barH = (i: number) => 40 + i * 30;
+
 export const Regla: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('REGLA');
@@ -224,83 +244,173 @@ export const Regla: React.FC = () => {
   const notas = c.at('X05', 'notas');
   const opin = c.at('X05', 'opiniones');
   const miles = c.at('X05', 'miles');
-  // v4: la web de SonorBooks (ficha real de «El Príncipe de la Niebla», que no está en la lista) con la nota de los oyentes.
-  const win = sp(frame, f5 - 8, 15, 105);
-  const s7 = ramp(frame, f7 - 10, f7 + 8);
+  const xEnd = c.voEnd('X05');
+  const princ = CANDS.findIndex((x) => x.k === 'real' && x.f === 'principe');
+  const pp = cardPos(princ);
+  // la ficha sale de su tarjeta y vuelve a ella
+  const open = ramp(frame, sbAt - 8, sbAt + 14, easeInOut) * (1 - ramp(frame, miles - 4, miles + 16, easeInOut));
+  const bw = lerp(CW, 1400, open), bh = lerp(CH, 840, open), bx = lerp(pp.x, 260, open), by = lerp(pp.y, 130, open);
   const view = viewAt(frame, [
-    { at: f5 - 8, cx: 720, cy: 415, z: 1 },
-    { at: sbAt - 4, cx: 740, cy: 360, z: 1.12, dur: 30 },
+    { at: sbAt - 8, cx: 720, cy: 415, z: 1 },
     { at: notas - 8, cx: 800, cy: 300, z: 2.5, dur: 18 },
     { at: opin - 6, cx: 760, cy: 330, z: 1.7, dur: 18 },
-    { at: miles - 4, cx: 740, cy: 380, z: 1.25, dur: 26 },
   ]);
+  // barrido y descarte
+  const scan = interpolate(frame, [8, f5 + 60], [-300, 2200], { ...clamp, easing: easeInOut });
+  const scan2 = interpolate(frame, [miles + 10, xEnd + 10], [-300, 2200], { ...clamp, easing: easeInOut });
+  const stampAt = xEnd - 30;
+  const dimAt = xEnd - 6;
+  const glowAt = xEnd + 10;
+  const flyAt = f7 - 18;
+  const camZ = 1 + 0.04 * ramp(frame, 0, flyAt) - 0.04 * ramp(frame, flyAt - 10, flyAt + 20);
   const bubbles = [
-    { t: 'Es como ver una película con los ojos cerrados', x: 70, y: 590, at: opin - 2, rot: -3 },
-    { t: 'Cambia de voz para cada personaje', x: 1250, y: 250, at: opin + 10, rot: 2.5 },
+    { t: 'Es como ver una película con los ojos cerrados', x: 70, y: 620, at: opin - 2, rot: -3 },
+    { t: 'Cambia de voz para cada personaje', x: 1260, y: 230, at: opin + 10, rot: 2.5 },
   ];
-  const drift = `scale(${(1.0 + 0.03 * ramp(frame, 0, c.dur)).toFixed(4)})`;
+  const stats = [
+    { n: 28, t: 'historias analizadas', at: miles - 4 },
+    { n: 8, t: 'plataformas', at: miles + 4 },
+    { n: 3000, t: 'valoraciones y opiniones', at: miles + 12, plus: true },
+  ];
+  const barsOn = ramp(frame, flyAt + 10, flyAt + 30);
   return (
     <AbsoluteFill>
       <Night red={0.7}>
-        <AbsoluteFill style={{ transform: drift }}>
-        {s7 < 1 && (
-          <AbsoluteFill style={{ opacity: 1 - s7, transform: `scale(${(1 - 0.12 * s7).toFixed(4)})` }}>
-            <div style={{ position: 'absolute', left: 0, right: 0, top: 70, display: 'flex', justifyContent: 'center', opacity: ramp(frame, f5 - 4, f5 + 10) }}>
-              <KickerN at={f5 - 4} text="Cómo las hemos elegido" />
-            </div>
-            <div style={{ position: 'absolute', left: 260, top: 140, perspective: 2200 }}>
-              <div style={{ transform: `translateY(${((1 - win) * 260).toFixed(1)}px) rotateX(${((1 - win) * 26).toFixed(2)}deg) scale(${(0.9 + 0.1 * win).toFixed(4)})`, opacity: Math.min(1, win * 1.5), transformOrigin: '50% 100%' }}>
-                <Browser page={PAGES.principe} w={1400} h={840} view={view} overlay={<Ring x={712} y={284} w={178} h={26} at={notas - 2} out={miles + 30} />} />
-              </div>
-            </div>
-            {/* lo que dicen los oyentes (opiniones reales de oyentes en Audible, resumidas) */}
-            {bubbles.map((bb, k) => {
-              const q = sp(frame, bb.at, 12, 170);
-              if (q <= 0.001) return null;
+        <AbsoluteFill style={{ transform: `scale(${camZ.toFixed(4)})` }}>
+          {/* plataformas consultadas */}
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 62, display: 'flex', justifyContent: 'center', gap: 14, opacity: 1 - barsOn }}>
+            {PLATS.map((pl, k) => {
+              const q = sp(frame, 6 + k * 5, 13, 190);
+              const lit = Math.max(0, 1 - Math.abs(scan - (300 + k * 190)) / 260);
               return (
-                <div key={k} style={{ position: 'absolute', left: bb.x, top: bb.y, maxWidth: 600, padding: '22px 30px', borderRadius: '26px 26px 26px 6px', background: '#fff', color: color.ink, boxShadow: '0 30px 80px rgba(0,0,0,0.55)',
-                  opacity: Math.min(1, q * 1.5), transform: `translateY(${((1 - q) * 40 + Math.sin(frame / 30 + k) * 5).toFixed(1)}px) scale(${(0.8 + 0.2 * q).toFixed(3)}) rotate(${(bb.rot * q).toFixed(2)}deg)` }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 20, letterSpacing: 3, textTransform: 'uppercase', color: '#8a8a8a' }}>
-                    <span style={{ fontFamily: font.serif, color: color.yellow, fontSize: 44, lineHeight: 0.6, letterSpacing: 0 }}>“</span> Lo que dicen los oyentes
+                <span key={pl} style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 24, padding: '8px 18px', borderRadius: 999, whiteSpace: 'nowrap',
+                  background: pl === 'SonorBooks' ? color.yellow : `rgba(255,255,255,${(0.07 + 0.2 * lit).toFixed(3)})`, color: pl === 'SonorBooks' ? color.ink : BONE,
+                  border: '1px solid rgba(255,255,255,0.16)', opacity: Math.min(1, q * 1.4), transform: `translateY(${((1 - q) * -20).toFixed(1)}px)` }}>{pl}</span>
+              );
+            })}
+          </div>
+          {/* el muro de candidatas */}
+          {CANDS.map((cd, i) => {
+            const { x, y } = cardPos(i);
+            const order = (i * 11) % 28;
+            const q = sp(frame, 2 + order * 1.6, 13, 170);
+            const passed = clamp01((scan - x) / 180);
+            const top = cd.k === 'top';
+            const none = cd.k === 'none';
+            const dim = top ? 0 : ramp(frame, dimAt + (none ? 0 : 6), dimAt + 20);
+            const glow = top ? ramp(frame, glowAt + order * 0.5, glowAt + 14 + order * 0.5) : 0;
+            const fly = top ? ramp(frame, flyAt + (cd.p - 1) * 2, flyAt + 26 + (cd.p - 1) * 2, easeInOut) : 0;
+            if (top && fly >= 1) return null;
+            const hidden = i === princ ? (open > 0.02 ? 0 : 1) : 1;
+            const stamp = none ? sp(frame, stampAt + order * 0.7, 11, 220) : 0;
+            const shine = Math.max(0, 1 - Math.abs(scan - x - CW / 2) / 90) + Math.max(0, 1 - Math.abs(scan2 - x - CW / 2) / 90) * (top ? 1 : 0.4);
+            // vuelo a las barras
+            const bi = top ? 10 - (11 - cd.p) : 0; // p=1 (n.º 10) → columna 0
+            const tx = top ? lerp(x, barX(bi), fly) : x;
+            const ty = top ? lerp(y, BAR_BASE - barH(bi) - 14 - 100, fly) : y;
+            const sz = top ? lerp(CW, 100, fly) : CW;
+            return (
+              <div key={i} style={{ position: 'absolute', left: tx, top: ty, width: sz, opacity: Math.min(1, q * 1.5) * hidden * (1 - 0.72 * dim) * (1 - barsOn * (top ? 0 : 1)),
+                transform: `translateY(${((1 - q) * 40).toFixed(1)}px) scale(${(0.85 + 0.15 * q + 0.06 * glow * (1 - fly)).toFixed(3)})`, zIndex: top ? 3 : 1 }}>
+                <div style={{ position: 'relative', width: sz, height: sz, borderRadius: 8, overflow: 'hidden',
+                  boxShadow: glow > 0 ? `0 0 0 ${(3 * glow).toFixed(1)}px ${color.yellow}, 0 0 ${(40 * glow).toFixed(0)}px rgba(255,202,5,${(0.5 * glow).toFixed(3)})` : '0 12px 30px rgba(0,0,0,0.55)' }}>
+                  {top && <CoverArt name={COVERS[cd.p][0]} size={sz} reveal={0} />}
+                  {cd.k === 'real' && <Img src={staticFile(`t10/cand/${cd.f}.jpg`)} style={{ width: sz, height: sz, display: 'block' }} />}
+                  {none && (
+                    <div style={{ width: sz, height: sz, background: 'linear-gradient(160deg, #2a2b30, #15161a)', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 14, boxSizing: 'border-box' }}>
+                      <div style={{ fontFamily: font.serif, fontSize: 21, lineHeight: 1.1, color: BONE }}>{cd.t}</div>
+                      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 13, letterSpacing: 1.5, textTransform: 'uppercase', color: DIM, marginTop: 8 }}>{cd.a}</div>
+                    </div>
+                  )}
+                  {shine > 0 && <div style={{ position: 'absolute', inset: 0, background: `rgba(255,236,190,${(0.28 * shine).toFixed(3)})`, mixBlendMode: 'screen' }} />}
+                  {stamp > 0 && (
+                    <div style={{ position: 'absolute', left: -10, right: -10, top: sz * 0.38, padding: '6px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 15, letterSpacing: 1,
+                      transform: `rotate(-12deg) scale(${(1.6 - 0.6 * stamp).toFixed(3)})`, opacity: Math.min(1, stamp * 1.5) }}>SIN AUDIO EN ESPAÑOL</div>
+                  )}
+                </div>
+                {/* lectura de la nota: barra que se llena al pasar el barrido (sin cifras inventadas) */}
+                {fly < 0.3 && (
+                  <div style={{ marginTop: 8, height: 30, display: 'flex', alignItems: 'center', gap: 8, opacity: 1 - fly * 3 }}>
+                    <span style={{ fontSize: 18, color: none ? 'rgba(255,255,255,0.25)' : color.yellow, letterSpacing: 1 }}>{none ? '—' : '★'}</span>
+                    <div style={{ flex: 1, height: 7, borderRadius: 4, background: 'rgba(255,255,255,0.1)', overflow: 'hidden' }}>
+                      <div style={{ width: `${(none ? 0 : 100 * passed * (top ? 0.95 : 0.55 + 0.35 * random(`cr${i}`))).toFixed(1)}%`, height: '100%', background: top ? color.yellow : 'rgba(239,232,220,0.55)', borderRadius: 4 }} />
+                    </div>
                   </div>
-                  <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 38, lineHeight: 1.2, marginTop: 10 }}>{bb.t}</div>
+                )}
+              </div>
+            );
+          })}
+          {/* la ficha de SonorBooks sale de su tarjeta */}
+          {open > 0.01 && (
+            <div style={{ position: 'absolute', left: bx, top: by, zIndex: 5 }}>
+              <Browser page={PAGES.principe} w={bw} h={bh} view={view} overlay={<Ring x={712} y={284} w={178} h={26} at={notas - 2} out={miles} />} />
+            </div>
+          )}
+          {open > 0.5 && bubbles.map((bb, k) => {
+            const q = sp(frame, bb.at, 12, 170) * Math.min(1, open * 2 - 1);
+            if (q <= 0.001) return null;
+            return (
+              <div key={k} style={{ position: 'absolute', left: bb.x, top: bb.y, maxWidth: 600, padding: '22px 30px', borderRadius: '26px 26px 26px 6px', background: '#fff', color: color.ink, boxShadow: '0 30px 80px rgba(0,0,0,0.55)', zIndex: 6,
+                opacity: Math.min(1, q * 1.5), transform: `translateY(${((1 - q) * 40 + Math.sin(frame / 30 + k) * 5).toFixed(1)}px) scale(${(0.8 + 0.2 * q).toFixed(3)}) rotate(${(bb.rot * q).toFixed(2)}deg)` }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 20, letterSpacing: 3, textTransform: 'uppercase', color: '#8a8a8a' }}>
+                  <span style={{ fontFamily: font.serif, color: color.yellow, fontSize: 44, lineHeight: 0.6, letterSpacing: 0 }}>“</span> Lo que dicen los oyentes
+                </div>
+                <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 38, lineHeight: 1.2, marginTop: 10 }}>{bb.t}</div>
+              </div>
+            );
+          })}
+          {/* contadores */}
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 955, display: 'flex', justifyContent: 'center', gap: 26, opacity: 1 - barsOn, zIndex: 4 }}>
+            {stats.map((st) => {
+              const q = sp(frame, st.at, 13, 180);
+              return (
+                <div key={st.t} style={{ display: 'flex', alignItems: 'baseline', gap: 12, padding: '14px 26px', borderRadius: 16, background: 'rgba(10,11,13,0.9)', border: '1px solid rgba(255,255,255,0.14)',
+                  opacity: Math.min(1, q * 1.4), transform: `translateY(${((1 - q) * 30).toFixed(1)}px)` }}>
+                  <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: color.yellow }}>{st.plus ? 'Más de ' : ''}{countTo(frame, st.at, 34, st.n, 0)}</span>
+                  <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: BONE }}>{st.t}</span>
                 </div>
               );
             })}
-          </AbsoluteFill>
-        )}
-        {s7 > 0 && (
-          <AbsoluteFill style={{ opacity: s7, alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'flex-end', gap: 26 }}>
+          </div>
+          {/* las barras */}
+          {barsOn > 0 && (
+            <AbsoluteFill style={{ opacity: barsOn }}>
               {Array.from({ length: 10 }).map((_, i) => {
                 const n = 10 - i;
-                const s = sp(frame, f7 + i * 3, 14, 170);
-                const h = 30 + i * 30;
                 const red = i / 9;
-                const grow = sp(frame, f7 + 6 + i * 3, 13, 140);
+                const grow = sp(frame, flyAt + 14 + i * 3, 13, 140);
+                const hh = barH(i) * grow;
                 return (
-                  <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, opacity: s, transform: `translateY(${(1 - s) * 40}px)` }}>
-                    <div style={{ borderRadius: 8, overflow: 'hidden', boxShadow: '0 10px 24px rgba(0,0,0,0.6)', transform: `translateY(${((1 - grow) * 30).toFixed(1)}px) rotate(${((1 - grow) * (i % 2 ? 10 : -10)).toFixed(2)}deg)` }}>
+                  <React.Fragment key={i}>
+                    <div style={{ position: 'absolute', left: barX(i), top: BAR_BASE - hh, width: 100, height: hh, borderRadius: 12,
+                      background: `rgba(${Math.round(80 + 113 * red)}, ${Math.round(80 - 62 * red)}, ${Math.round(80 - 49 * red)}, ${0.5 + 0.5 * red})`, boxShadow: n === 1 ? '0 0 40px rgba(193,18,31,0.6)' : undefined }} />
+                    <div style={{ position: 'absolute', left: barX(i), top: BAR_BASE - hh - 114, width: 100, height: 100, borderRadius: 8, overflow: 'hidden', boxShadow: '0 10px 24px rgba(0,0,0,0.6)', opacity: ramp(frame, flyAt + 26 + i * 2, flyAt + 28 + i * 2) }}>
                       <CoverArt name={COVERS[11 - n][0]} size={100} reveal={0} />
                     </div>
-                    <div style={{ width: 100, height: h * grow, borderRadius: 12, background: `rgba(${Math.round(80 + 113 * red)}, ${Math.round(80 - 62 * red)}, ${Math.round(80 - 49 * red)}, ${0.5 + 0.5 * red})`, boxShadow: n === 1 ? '0 0 40px rgba(193,18,31,0.6)' : undefined }} />
-                    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: n === 1 ? RED : BONE }}>{n}</span>
-                  </div>
+                    <span style={{ position: 'absolute', left: barX(i), top: BAR_BASE + 16, width: 100, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: n === 1 ? RED : BONE }}>{n}</span>
+                  </React.Fragment>
                 );
               })}
-            </div>
-            <div style={{ marginTop: 40 }}><MaskTitle text="De menos a más miedo" at={f7} size={72} color={BONE} align="center" /></div>
-          </AbsoluteFill>
-        )}
+              <div style={{ position: 'absolute', left: 0, right: 0, top: 880 }}><MaskTitle text="De menos a más miedo" at={f7} size={72} color={BONE} align="center" /></div>
+            </AbsoluteFill>
+          )}
         </AbsoluteFill>
       </Night>
-      <Sfx name="whoosh_soft" at={f5 - 6} volume={0.6} />
-      <Sfx name="zoom_in" at={notas - 6} volume={0.5} />
+      {Array.from({ length: 8 }).map((_, k) => <Sfx key={`c${k}`} name="tick" at={6 + k * 5} volume={0.35} />)}
+      <Sfx name="riser" at={f5 - 20} volume={0.25} />
+      <Sfx name="whoosh_soft" at={sbAt - 8} volume={0.6} />
+      <Sfx name="zoom_in" at={notas - 8} volume={0.5} />
       <Sfx name="snap_in" at={notas} volume={0.6} />
       {bubbles.map((bb, k) => <Sfx key={k} name="ui_pop" at={bb.at + 1} volume={0.6} />)}
-      <Sfx name="whoosh_deep" at={f7 - 8} volume={0.5} />
-      <Sfx name="riser" at={f7 - 10} volume={0.4} />
+      <Sfx name="whoosh_soft" at={miles - 4} volume={0.5} />
+      <Sfx name="counter" at={miles - 2} volume={0.4} />
+      <Sfx name="stamp" at={stampAt + 2} volume={0.5} />
+      <Sfx name="shimmer" at={glowAt} volume={0.4} />
+      <Sfx name="whoosh_deep" at={flyAt} volume={0.55} />
+      <Sfx name="riser" at={f7 - 10} volume={0.35} />
     </AbsoluteFill>
   );
 };
+const clamp01 = (x: number) => Math.max(0, Math.min(1, x));
+
 

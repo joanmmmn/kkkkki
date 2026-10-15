@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { T10_SCENES, t10Start, T10_TOTAL, t10VoIntervals, hasVO, Tin, sceneDef } from './timeline';
 import { T10_COMPONENTS } from './registry';
-import { voSrc } from '../../lib/vo';
+import { voSrc, voTrim } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeOut } from '../../lib/anim';
 import { dieFlicker } from './fx';
@@ -68,7 +68,7 @@ export const Top10Terror: React.FC = () => {
             <SceneShell dur={s.dur} over={over} tin={tin} tout={tout}>{C ? <C /> : null}</SceneShell>
             {(!STEM || STEM === 'vo') && s.vo.filter((v) => hasVO(v.id)).map((v, k) => (
               <Sequence key={k} from={v.at} layout="none" name={`vo:${v.id}`}>
-                <Audio src={voSrc(v.id)} />
+                <Audio src={voSrc(v.id)} trimAfter={voTrim(v.id)} volume={(f) => interpolate(f, [voTrim(v.id) - 4, voTrim(v.id)], [1, 0], clamp)} />
               </Sequence>
             ))}
           </Sequence>
