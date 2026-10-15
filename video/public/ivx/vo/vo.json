@@ -1,0 +1,107 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "W01",
+   "text": "¿Merece la pena pagar iVoox? Lo hemos usado a fondo: sus pódcast, la radio en directo, sus audiolibros y la letra pequeña de sus cookies. Te contamos lo bueno, lo malo… y cuánto cuesta de verdad."
+  },
+  {
+   "id": "W02",
+   "text": "¿Qué es iVoox? Una plataforma española de pódcast que nació en dos mil diez y que, según la propia empresa, supera los cinco millones de usuarios al mes. Además de pódcast, tiene radio en directo y audiolibros. Y lo básico es gratis… con una condición."
+  },
+  {
+   "id": "W03",
+   "text": "La condición son las cookies. Para usarlo gratis, tienes que aceptar que iVoox y sus más de mil socios las usen para la publicidad. Fíjate en el botón para no aceptarlas: «Rechazar y suscribirse». Y si las rechazas, solo te deja entrar pagando… o aceptándolas."
+  },
+  {
+   "id": "W04",
+   "text": "Si pagas, hay tres opciones. Premium cuesta tres noventa y nueve al mes, o treinta y nueve noventa al año, con el primer mes gratis: quita los anuncios y suma extras, como el modo coche. Plus, nueve noventa y nueve al mes: todo lo de Premium y su contenido exclusivo. Y si solo te importa un programa, puedes hacerte fan desde uno noventa y nueve."
+  },
+  {
+   "id": "W05",
+   "text": "En la app, Inicio te recomienda programas, y en Explorar tienes categorías, rankings y los iVoox Originals, sus programas propios, como Casus Belli o Universo de Misterios."
+  },
+  {
+   "id": "W06",
+   "text": "Casi todos los episodios se escuchan gratis y se pueden descargar. Pero ojo con el play azul: es contenido exclusivo de Plus. En La ContraHistoria, por ejemplo, de este episodio de una hora, sin Plus solo oyes siete minutos."
+  },
+  {
+   "id": "W07",
+   "text": "El reproductor va de media a tres veces la velocidad y tiene temporizador para dormir, de hasta dos horas. Y con Premium, puedes potenciar el volumen y usar el modo coche, con botones grandes."
+  },
+  {
+   "id": "W08",
+   "text": "Y no todo son pódcast: también escuchas la radio en directo, de la SER, COPE, Onda Cero o Radio Nacional a emisoras locales y musicales."
+  },
+  {
+   "id": "W09",
+   "text": "¿Y los audiolibros? Tienen su propia sección, con muchos clásicos: Poe, Unamuno o el Quijote. Pero muchos son exclusivos de Plus: al darle al play, te ofrece suscribirte y, sin pagar, solo oyes los primeros minutos. Es un buen extra, pero no una plataforma de audiolibros."
+  },
+  {
+   "id": "W10",
+   "text": "¿Y qué opinan los usuarios? En Google Play tiene un cuatro coma cuatro, con trescientas cuarenta y ocho mil reseñas y más de diez millones de descargas. Y en la App Store española, un cuatro coma cinco, con unas veintiún mil valoraciones."
+  },
+  {
+   "id": "W11",
+   "text": "Lo bueno: casi todo es gratis, con radio en directo y descargas, y Premium es barato: tres noventa y nueve al mes. Lo malo: para usarlo gratis, tienes que aceptar su publicidad personalizada, y muchos programas guardan episodios para Plus; con los audiolibros, igual."
+  },
+  {
+   "id": "W12",
+   "text": "¿Merece la pena? Para pódcast y radio, sí: gratis, si aceptas sus cookies, o por tres noventa y nueve al mes, sin anuncios. Plus solo compensa si sigues varios de sus programas exclusivos. Y si lo que buscas son audiolibros, te conviene más una plataforma de audiolibros."
+  },
+  {
+   "id": "X01",
+   "text": "¿Quieres probar Premium? En su web, el primer mes es gratis."
+  },
+  {
+   "id": "X02",
+   "text": "Elige el plan mensual o el anual: al acabar el mes gratis, se renueva solo, por tres noventa y nueve al mes o treinta y nueve noventa al año."
+  },
+  {
+   "id": "X03",
+   "text": "Para darte de baja, en la web entra en tu cuenta, ve a «Servicios contratados» y pulsa «Dar de baja», al menos un día antes de la renovación. En la app, está en Ajustes. Y si pagaste con Google Play o la App Store, se cancela en la tienda. Seguirás con Premium hasta que acabe lo que ya pagaste."
+  },
+  {
+   "id": "X04",
+   "text": "¿Buscas audiolibros? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma. Y en la descripción tienes la reseña completa por escrito."
+  },
+  {
+   "id": "X05",
+   "text": "Encuentra dónde escuchar tu próximo libro en SonorBooks."
+  },
+  {
+   "id": "Y01",
+   "text": "¿Merece la pena iVoox? Lo hemos probado a fondo."
+  },
+  {
+   "id": "Y02",
+   "text": "Casi todo es gratis: pódcast, radio en directo y descargas."
+  },
+  {
+   "id": "Y03",
+   "text": "Pero hay truco: si rechazas sus cookies de publicidad, te pide pagar."
+  },
+  {
+   "id": "Y04",
+   "text": "Premium quita los anuncios por tres noventa y nueve al mes, con el primer mes gratis."
+  },
+  {
+   "id": "Y05",
+   "text": "Y Plus, por nueve noventa y nueve, desbloquea lo exclusivo: sin él, solo oyes un avance."
+  },
+  {
+   "id": "Y06",
+   "text": "¿Buscas audiolibros? Compara plataformas en SonorBooks."
+  }
+ ]
+}

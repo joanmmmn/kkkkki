@@ -1,0 +1,49 @@
+{
+ "id": "X05",
+ "hash": "0489b7813c67",
+ "text": "Encuentra dónde escuchar tu próximo libro en SonorBooks.",
+ "duration": 4.0,
+ "words": [
+  {
+   "w": "Encuentra",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "dónde",
+   "s": 0.6,
+   "e": 0.88
+  },
+  {
+   "w": "escuchar",
+   "s": 0.96,
+   "e": 1.36
+  },
+  {
+   "w": "tu",
+   "s": 1.44,
+   "e": 1.52
+  },
+  {
+   "w": "próximo",
+   "s": 1.56,
+   "e": 1.92
+  },
+  {
+   "w": "libro",
+   "s": 2.0,
+   "e": 2.48
+  },
+  {
+   "w": "en",
+   "s": 2.56,
+   "e": 2.72
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 2.8,
+   "e": 4.0
+  }
+ ],
+ "speechEnd": 3.605
+}

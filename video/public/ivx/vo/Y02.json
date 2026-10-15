@@ -1,0 +1,59 @@
+{
+ "id": "Y02",
+ "hash": "21e4c3195ad1",
+ "text": "Casi todo es gratis: pódcast, radio en directo y descargas.",
+ "duration": 4.56,
+ "words": [
+  {
+   "w": "Casi",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "todo",
+   "s": 0.4,
+   "e": 0.48
+  },
+  {
+   "w": "es",
+   "s": 0.56,
+   "e": 0.64
+  },
+  {
+   "w": "gratis:",
+   "s": 0.72,
+   "e": 1.56
+  },
+  {
+   "w": "pódcast,",
+   "s": 1.6,
+   "e": 2.44
+  },
+  {
+   "w": "radio",
+   "s": 2.48,
+   "e": 2.72
+  },
+  {
+   "w": "en",
+   "s": 2.76,
+   "e": 2.8
+  },
+  {
+   "w": "directo",
+   "s": 3.04,
+   "e": 3.36
+  },
+  {
+   "w": "y",
+   "s": 3.4,
+   "e": 3.44
+  },
+  {
+   "w": "descargas.",
+   "s": 3.6,
+   "e": 4.56
+  }
+ ],
+ "speechEnd": 4.228
+}

@@ -1,0 +1,39 @@
+{
+ "id": "Y06",
+ "hash": "5a1352fbab29",
+ "text": "¿Buscas audiolibros? Compara plataformas en SonorBooks.",
+ "duration": 4.0,
+ "words": [
+  {
+   "w": "¿Buscas",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "audiolibros?",
+   "s": 0.48,
+   "e": 1.44
+  },
+  {
+   "w": "Compara",
+   "s": 1.52,
+   "e": 1.92
+  },
+  {
+   "w": "plataformas",
+   "s": 1.96,
+   "e": 2.72
+  },
+  {
+   "w": "en",
+   "s": 2.84,
+   "e": 2.96
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 3.04,
+   "e": 4.0
+  }
+ ],
+ "speechEnd": 3.83
+}

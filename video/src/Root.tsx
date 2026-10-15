@@ -34,6 +34,10 @@ import { AudiobooksReview } from './scenes/abc/Main';
 import { ABCThumb, ABCThumbB } from './scenes/abc/Thumb';
 import { AudiobooksReviewShort, ABC_SHORT_TOTAL } from './scenes/abc/Short';
 import { ABC_TOTAL } from './scenes/abc/timeline';
+import { IvooxReview } from './scenes/ivx/Main';
+import { IVXThumb, IVXThumbB } from './scenes/ivx/Thumb';
+import { IvooxReviewShort, IVX_SHORT_TOTAL } from './scenes/ivx/Short';
+import { IVX_TOTAL } from './scenes/ivx/timeline';
 
 export const Root: React.FC = () => (
   <>
@@ -43,6 +47,10 @@ export const Root: React.FC = () => (
     <Composition id="AUReview" component={AudibleReview} durationInFrames={AUD_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="AUDThumb" component={AUDThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="AUDShort" component={AudibleReviewShort} durationInFrames={AUD_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
+    <Composition id="IVXReview" component={IvooxReview} durationInFrames={IVX_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="IVXThumb" component={IVXThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="IVXThumbB" component={IVXThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="IVXShort" component={IvooxReviewShort} durationInFrames={IVX_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
     <Composition id="ABCReview" component={AudiobooksReview} durationInFrames={ABC_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="ABCThumb" component={ABCThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="ABCThumbB" component={ABCThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />

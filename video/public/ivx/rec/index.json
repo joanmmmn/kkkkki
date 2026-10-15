@@ -1,0 +1,345 @@
+{
+ "ajustes_cancelar": {
+  "duration": 14.7,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 961.3,
+  "to": 976.0,
+  "audio": false
+ },
+ "ajustes_resto": {
+  "duration": 30.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 976.0,
+  "to": 1006.0,
+  "audio": false
+ },
+ "apoyar": {
+  "duration": 20.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 431.0,
+  "to": 451.0,
+  "audio": false
+ },
+ "apoyar_2": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 463.0,
+  "to": 475.0,
+  "audio": false
+ },
+ "audiolibros_1": {
+  "duration": 49.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 147.0,
+  "to": 196.0,
+  "audio": false
+ },
+ "audiolibros_2": {
+  "duration": 43.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 1019.0,
+  "to": 1062.0,
+  "audio": false
+ },
+ "biblioteca": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 515.0,
+  "to": 531.0,
+  "audio": false
+ },
+ "biblioteca_2": {
+  "duration": 11.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 895.0,
+  "to": 906.0,
+  "audio": false
+ },
+ "buscar_populares": {
+  "duration": 19.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 555.0,
+  "to": 574.0,
+  "audio": false
+ },
+ "buscar_quijote": {
+  "duration": 25.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 574.0,
+  "to": 599.0,
+  "audio": false
+ },
+ "carta_2": {
+  "duration": 9.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 831.0,
+  "to": 840.0,
+  "audio": false
+ },
+ "config_reproductor": {
+  "duration": 35.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 327.0,
+  "to": 362.0,
+  "audio": false
+ },
+ "contrahistoria_avance": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 311.0,
+  "to": 327.0,
+  "audio": false
+ },
+ "contrahistoria_descarga": {
+  "duration": 40.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 475.0,
+  "to": 515.0,
+  "audio": false
+ },
+ "contrahistoria_ficha": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 295.0,
+  "to": 311.0,
+  "audio": false
+ },
+ "descargados": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 531.0,
+  "to": 543.0,
+  "audio": false
+ },
+ "explorar_2": {
+  "duration": 20.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 243.0,
+  "to": 263.5,
+  "audio": false
+ },
+ "explorar_3": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 543.0,
+  "to": 555.0,
+  "audio": false
+ },
+ "explorar_4": {
+  "duration": 13.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 665.0,
+  "to": 678.0,
+  "audio": false
+ },
+ "explorar_5": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 1007.0,
+  "to": 1019.0,
+  "audio": false
+ },
+ "explorar_carta": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 131.0,
+  "to": 147.0,
+  "audio": false
+ },
+ "inicio_2": {
+  "duration": 20.2,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 222.8,
+  "to": 243.0,
+  "audio": false
+ },
+ "inicio_3": {
+  "duration": 33.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 906.0,
+  "to": 939.5,
+  "audio": false
+ },
+ "inicio_scroll": {
+  "duration": 24.4,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 61.6,
+  "to": 86.0,
+  "audio": false
+ },
+ "inicio_top": {
+  "duration": 13.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 38.5,
+  "to": 52.0,
+  "audio": false
+ },
+ "lista_sorprendeme": {
+  "duration": 13.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 86.0,
+  "to": 99.0,
+  "audio": false
+ },
+ "lista_sorprendeme2": {
+  "duration": 10.4,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 120.6,
+  "to": 131.0,
+  "audio": false
+ },
+ "modo_coche": {
+  "duration": 49.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 374.0,
+  "to": 423.0,
+  "audio": false
+ },
+ "originals": {
+  "duration": 32.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 840.0,
+  "to": 872.0,
+  "audio": false
+ },
+ "plus_oferta": {
+  "duration": 23.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 1074.5,
+  "to": 1098.0,
+  "audio": false
+ },
+ "plus_programas": {
+  "duration": 31.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 263.5,
+  "to": 295.0,
+  "audio": false
+ },
+ "podcast_gratis": {
+  "duration": 14.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 23.0,
+  "to": 37.5,
+  "audio": false
+ },
+ "quijote_avance": {
+  "duration": 50.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 615.0,
+  "to": 665.0,
+  "audio": false
+ },
+ "quijote_ficha": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 599.0,
+  "to": 615.0,
+  "audio": false
+ },
+ "radio_ser": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 803.0,
+  "to": 819.0,
+  "audio": false
+ },
+ "radios_mini": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 819.0,
+  "to": 831.0,
+  "audio": false
+ },
+ "radios_nacionales": {
+  "duration": 17.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 786.0,
+  "to": 803.0,
+  "audio": false
+ },
+ "radios_tab": {
+  "duration": 14.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 678.0,
+  "to": 692.0,
+  "audio": false
+ },
+ "ranking": {
+  "duration": 23.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 872.0,
+  "to": 895.0,
+  "audio": false
+ },
+ "reproductor_2": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 362.0,
+  "to": 374.0,
+  "audio": false
+ },
+ "reproductor_3": {
+  "duration": 8.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 423.0,
+  "to": 431.0,
+  "audio": false
+ },
+ "reproductor_4": {
+  "duration": 12.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 451.0,
+  "to": 463.0,
+  "audio": false
+ },
+ "usher_avance": {
+  "duration": 16.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 1098.0,
+  "to": 1114.0,
+  "audio": false
+ },
+ "usher_ficha_1": {
+  "duration": 8.4,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 196.0,
+  "to": 204.4,
+  "audio": false
+ },
+ "usher_ficha_2": {
+  "duration": 12.5,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 1062.0,
+  "to": 1074.5,
+  "audio": false
+ },
+ "usher_mini": {
+  "duration": 18.0,
+  "src": "2026-10-15 11-20-23.mp4",
+  "from": 1114.0,
+  "to": 1132.0,
+  "audio": false
+ },
+ "web_aviso": {
+  "duration": 14.5,
+  "src": "2026-10-15 13-16-17.mp4",
+  "from": 26.5,
+  "to": 41.0,
+  "audio": false
+ },
+ "web_muro": {
+  "duration": 36.0,
+  "src": "2026-10-15 13-16-17.mp4",
+  "from": 40.5,
+  "to": 76.5,
+  "audio": false
+ },
+ "web_premium": {
+  "duration": 37.0,
+  "src": "2026-10-15 13-16-17.mp4",
+  "from": 76.0,
+  "to": 113.0,
+  "audio": false
+ }
+}

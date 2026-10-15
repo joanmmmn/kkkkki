@@ -1,0 +1,139 @@
+{
+ "id": "X04",
+ "hash": "f6ac2c4fd0e7",
+ "text": "¿Buscas audiolibros? En SonorBooks comparas el precio, las horas y los días gratis de cada plataforma. Y en la descripción tienes la reseña completa por escrito.",
+ "duration": 10.4,
+ "words": [
+  {
+   "w": "¿Buscas",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "audiolibros?",
+   "s": 0.48,
+   "e": 1.52
+  },
+  {
+   "w": "En",
+   "s": 1.6,
+   "e": 1.68
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.76,
+   "e": 2.4
+  },
+  {
+   "w": "comparas",
+   "s": 2.48,
+   "e": 2.88
+  },
+  {
+   "w": "el",
+   "s": 2.96,
+   "e": 3.12
+  },
+  {
+   "w": "precio,",
+   "s": 3.32,
+   "e": 3.68
+  },
+  {
+   "w": "las",
+   "s": 3.76,
+   "e": 3.92
+  },
+  {
+   "w": "horas",
+   "s": 4.0,
+   "e": 4.32
+  },
+  {
+   "w": "y",
+   "s": 4.48,
+   "e": 4.52
+  },
+  {
+   "w": "los",
+   "s": 4.56,
+   "e": 4.64
+  },
+  {
+   "w": "días",
+   "s": 4.72,
+   "e": 4.96
+  },
+  {
+   "w": "gratis",
+   "s": 5.16,
+   "e": 5.36
+  },
+  {
+   "w": "de",
+   "s": 5.44,
+   "e": 5.52
+  },
+  {
+   "w": "cada",
+   "s": 5.6,
+   "e": 5.76
+  },
+  {
+   "w": "plataforma.",
+   "s": 5.84,
+   "e": 6.88
+  },
+  {
+   "w": "Y",
+   "s": 6.92,
+   "e": 6.96
+  },
+  {
+   "w": "en",
+   "s": 7.0,
+   "e": 7.04
+  },
+  {
+   "w": "la",
+   "s": 7.08,
+   "e": 7.12
+  },
+  {
+   "w": "descripción",
+   "s": 7.2,
+   "e": 7.84
+  },
+  {
+   "w": "tienes",
+   "s": 7.92,
+   "e": 8.16
+  },
+  {
+   "w": "la",
+   "s": 8.24,
+   "e": 8.28
+  },
+  {
+   "w": "reseña",
+   "s": 8.32,
+   "e": 8.72
+  },
+  {
+   "w": "completa",
+   "s": 8.84,
+   "e": 9.2
+  },
+  {
+   "w": "por",
+   "s": 9.28,
+   "e": 9.36
+  },
+  {
+   "w": "escrito.",
+   "s": 9.44,
+   "e": 10.4
+  }
+ ],
+ "speechEnd": 10.004
+}

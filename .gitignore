@@ -35,3 +35,8 @@ web/audible-resena/preview-movil/
 web/audiobooks-com-resena/dist/
 web/audiobooks-com-resena/preview/
 web/audiobooks-com-resena/preview-movil/
+
+# Página de reseña de iVoox: salidas de build.py (se generan con web/ivoox-resena/build.py)
+web/ivoox-resena/dist/
+web/ivoox-resena/preview/
+web/ivoox-resena/preview-movil/
