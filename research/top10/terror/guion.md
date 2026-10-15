@@ -1,4 +1,4 @@
-# Los 10 mejores · Terror — guion v4 (15/10: «historias de terror»; locución final al final del archivo)
+# Los 10 mejores · Terror — guion v5 (15/10: «historias de terror»; locución final al final del archivo)
 
 Serie del canal SonorBooks España: «Los 10 mejores libros de X». Primer episodio: terror.
 Referencia de formato: «10 great atmospheric horror books in 10 minutes» (CriminOlly): diez libros, uno por minuto aprox.
@@ -120,7 +120,9 @@ Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género
 - En el n.º 5, «su adaptación es una de las películas internacionales más vistas de Prime Video» (para no repetir «película»), y la versión íntegra se menciona como «voz sintética autorizada», sin el nombre (está en el rótulo).
 - El cierre de marca añade «Tu próxima historia te está esperando.» como el resto del canal.
 - Vertical: «Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.» + X102–X105 + «Los otros nueve, en el vídeo completo.»
-- Whisper sobre toda la locución: se entiende todo (solo cambia cifras a núme## Cambios de la v4 (15/10, indicaciones de Joan)
+- Whisper sobre toda la locución: se entiende todo (solo cambia cifras a números).
+
+## Cambios de la v4 (15/10, indicaciones de Joan)
 - Se vende como **historias de terror** (ni libros ni audiolibros). Fuera de la entrada: auriculares, narraciones y «la voz con la que escucharlos».
 - Fuera la presentación de la serie (X04) y «en el terror la voz lo cambia todo» (X06).
 - X05 nuevo: «Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones…», con la ficha real de SonorBooks en pantalla.
@@ -128,7 +130,27 @@ Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género
 - Comprobado en el catálogo de Audible España (plan ES-AYCL, 15/10): entran en la suscripción 8 de las 10 (y las dos de Drácula y el Original de Apocalipsis Z). «El misterio de Salem's Lot» no entra, pero su ficha de SonorBooks la da gratis con el crédito de la prueba de Audiobooks.com. «El exorcista» no entra en ninguna prueba (compra): ni la voz ni su tarjeta dicen «gratis».
 - Minitarjeta al final de cada libro: «Escúchala en SonorBooks · Gratis con prueba» (El exorcista: «Dónde y cómo»).
 
-## Locución final, tal como suena (de video/public/t10/vo/vo.json, v4)
+## Cambios de la v5 (15/10, 14:46, indicaciones de Joan)
+- La locución no cambia. Cada archivo de voz se corta 0,2 s después del final real de la voz, con un fundido de 4 fotogramas. Así se quita la «m» de 0:22: era una cola de ElevenLabs tras el silencio de X05, y había colas parecidas en X12, X55, X74 y X103.
+- 0:16 (X05–X07): sin el título «Cómo las hemos elegido».
+  - La investigación entera en pantalla: muro de 28 candidatas (las 10 elegidas, censuradas; 12 descartadas con portada real; 6 sin audio en español) y 8 plataformas.
+  - La ficha real de SonorBooks con nota y opiniones de oyentes.
+  - Contadores (28 historias, 8 plataformas, más de 3.000 valoraciones y opiniones) y sello «SIN AUDIO EN ESPAÑOL» en las descartadas.
+  - Al final, las 10 elegidas vuelan a las barras «De menos a más miedo».
+- Sinopsis (X?2): cada historia tiene su escena ilustrada (Dioramas.tsx). Cada objeto entra cuando la voz lo nombra:
+  - Cthulhu: papeles, bajorrelieve, mapa de cultos y el nombre que se escribe solo.
+  - Poe: linterna sobre el ojo, corazón que late bajo las tablas, Usher y el gato.
+  - Hendrix: foto de los padres, SE VENDE, títeres, muñecas y el títere de ojos rojos.
+  - Schweblin: urgencias, el niño que le habla al oído, el reloj hacia atrás y el campo.
+  - Drácula: el carruaje, la cena con un plato, el espejo sin reflejo y el ataúd al amanecer.
+  - Apocalipsis Z: PONTEVEDRA, el gato, la tele con el brote en Rusia que se extiende.
+  - Carcoma: abuela y nieta, el cartel de DESAPARECIDO, los vecinos que murmuran y unos ojos en el armario.
+  - Salem's Lot: el coche que vuelve, la casa de la colina, VENDIDA, el pueblo que se apaga y una cara en la ventana.
+  - Nuestra parte de noche: el control militar, padre e hijo, el don y la Orden.
+  - El exorcista: Georgetown, «toc toc» en el desván, la cama que levita, la voz y los médicos sin explicación.
+  - Todo son ilustraciones propias: nada de fotogramas ni carteles de películas.
+
+## Locución final, tal como suena (de video/public/t10/vo/vo.json, v4; sin cambios en la v5)
 - **X01** Hay historias que asustan.
 - **X02** Y hay historias que, cuando apagas la luz, siguen ahí. Y no te dejan dormir.
 - **X03** Estas son las diez historias de terror que dan miedo de verdad.
