@@ -6,6 +6,7 @@ Alternativas:
 - Stephen King para principiantes: por dónde empezar a leer (y escuchar)
 
 DESCRIPCIÓN
+La guía completa: elige tu primer libro según lo que te guste, el orden de lectura y la duración de cada audiolibro: https://sonorbooks.com/es/blog/por-donde-empezar-a-leer-stephen-king/
 Todos los audiolibros de Stephen King en español, con su narrador y su duración: https://sonorbooks.com/es/audiolibros/?q=stephen+king
 
 ¿Por dónde empezar a leer a Stephen King? Más de sesenta novelas, más de doscientos relatos y medio siglo escribiendo. En el primer episodio de «Por dónde y cómo empezar a leer», la nueva sección de SonorBooks, te damos un mapa: qué escribe, cinco puertas de entrada según lo que te guste, qué libros conviene dejar para después, cuándo sí importa el orden y tres rutas para seguir.
@@ -58,3 +59,4 @@ AJUSTES
 - Promoción pagada: No (la descripción enlaza a sonorbooks.com, sin enlaces de afiliado directos; mismo criterio que «¿Escuchar es leer?»). A confirmar por Joan.
 - Para niños: No. Contenido alterado o sintético: No. Categoría: Gente y blogs (como el resto del canal).
 - Pantalla final: los últimos 12 s; la mitad derecha queda libre para vídeo y suscripción.
+- Artículo del blog: el enlace de la descripción solo funciona cuando el artículo esté publicado. Publicarlo antes que el vídeo o a la vez; después, reconstruir la página con web/stephen-king-guia/build.py --yt ID --yt-fecha AAAA-MM-DD.
