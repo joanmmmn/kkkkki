@@ -72,6 +72,8 @@ KIT = {
     'hdl_tear': ('Tearing a single sheet of paper off a notepad, crisp, close up, dry', 0.6, 0.7),
     'hdl_mail': ('Parcel dropped into a canvas mail sack, soft muffled thud, close up, dry', 0.7, 0.7),
     'hdl_film': ('Film strip running fast through a vintage projector gate, rapid mechanical flutter then a click, close up', 1.6, 0.6),
+    # v2 (15/10/2026)
+    'hdl_applause': ('Warm audience applause in a large concert hall, polite steady clapping that swells and settles, no cheering, no voices, no music', 5.0, 0.6),
 }
 
 

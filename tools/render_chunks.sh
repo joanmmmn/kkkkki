@@ -22,6 +22,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
     npx remotion render src/index.ts "$COMP" "$part" --frames="$a-$b" --concurrency=2 --crf=16 --muted --scale="$SCALE" \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
   fi
+  rm -rf /tmp/remotion-webpack-bundle-* 2>/dev/null || true
   echo "file '$(basename "$part")'" >> "$TMP/list.txt"
   echo "tramo $i ($a-$b) listo"
   i=$((i + 1))
@@ -38,6 +39,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
     npx remotion render src/index.ts "$COMP" "$apart" --frames="$a-$b" --codec=wav \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/audio_$i.log" 2>&1 || { echo "Falló el audio del tramo $a-$b" >&2; exit 1; }
   fi
+  rm -rf /tmp/remotion-webpack-bundle-* 2>/dev/null || true
   echo "file '$(basename "$apart")'" >> "$TMP/alist.txt"
   i=$((i + 1))
 done

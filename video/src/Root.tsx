@@ -34,6 +34,7 @@ import { Lab3D, LAB_FRAMES } from './scenes/skg/three/Lab';
 import { CienAnosHistoria } from './scenes/hdl/Main';
 import { HDL_TOTAL } from './scenes/hdl/timeline';
 import { HDLThumbA, HDLThumbB } from './scenes/hdl/Thumb';
+import { HDLThumbA2, HDLThumbB2 } from './scenes/hdl/v2Thumb';
 import { HDLLab } from './scenes/hdl/Lab';
 
 export const Root: React.FC = () => (
@@ -42,6 +43,8 @@ export const Root: React.FC = () => (
     <Composition id="HDLLab" component={HDLLab} durationInFrames={200} fps={FPS} width={W} height={H} />
     <Composition id="HDLThumbA" component={HDLThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="HDLThumbB" component={HDLThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="HDLThumbA2" component={HDLThumbA2} durationInFrames={1} fps={FPS} width={1920} height={1080} />
+    <Composition id="HDLThumbB2" component={HDLThumbB2} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="SKLab3D" component={Lab3D} durationInFrames={Math.max(5000, LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />

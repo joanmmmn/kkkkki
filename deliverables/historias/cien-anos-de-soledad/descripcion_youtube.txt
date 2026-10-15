@@ -2,8 +2,8 @@ CANAL: SonorBooks España (@SonorBooksEspaña)
 IDIOMA DEL VÍDEO: Español (España) · Para niños: No · Contenido alterado: No · Categoría: Gente y blogs
 INCLUYE PROMOCIÓN PAGADA: No (enlaza a sonorbooks.com, sin enlaces de afiliado directos; mismo criterio que la guía de Stephen King). Que lo confirme Joan.
 SUBTÍTULOS: cien_anos_historia.es.srt (Español, España)
-MINIATURA: miniatura_A.png (noche, «82 pesos»). Para «Probar y comparar»: miniatura_B.png («empeñaron hasta la batidora»).
-PANTALLA FINAL: los últimos ~12 s (8:11–8:23); la mitad derecha queda libre.
+MINIATURA: miniatura_A_v2.png (la oficina de correos de noche, «82 pesos», en el estilo de sombras del vídeo). Para «Probar y comparar»: miniatura_B_v2.png («empeñaron hasta la batidora»). Las de la v1 (miniatura_A.png y miniatura_B.png) quedan como alternativa.
+PANTALLA FINAL: los últimos ~12 s (8:13–8:25); la mitad derecha queda libre.
 
 ==== TÍTULO (recomendado) ====
 Cien años de soledad: la increíble historia de cómo nació (82 pesos y una batidora)
@@ -20,15 +20,15 @@ Para enviar Cien años de soledad a su editor hacían falta 82 pesos… y no los
 
 Capítulos
 0:00 82 pesos en una oficina de correos
-0:44 Un escritor que no vendía
-1:30 La carretera de Acapulco
-2:17 La cueva de la mafia
-2:56 Mercedes
-3:54 El envío del manuscrito
-4:55 Ocho mil ejemplares
-5:33 Lo que vino después
-6:37 ¿Pasó de verdad?
-7:36 Escuchar Cien años de soledad en audiolibro
+0:46 Un escritor que no vendía
+1:32 La carretera de Acapulco
+2:19 La cueva de la mafia
+2:58 Mercedes
+3:56 El envío del manuscrito
+4:57 Ocho mil ejemplares
+5:35 Lo que vino después
+6:39 ¿Pasó de verdad?
+7:38 Escuchar Cien años de soledad en audiolibro
 
 Fuentes principales (con enlaces en el artículo del blog)
 · Gabriel García Márquez, intervención en la presentación de la edición conmemorativa de Cien años de soledad (Asociación de Academias de la Lengua Española, 2007)

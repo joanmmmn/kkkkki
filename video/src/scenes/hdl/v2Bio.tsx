@@ -181,7 +181,7 @@ const HouseShots: React.FC<{ frame: number; f65: number; fGab: number; fTre: num
 };
 
 // Rótulo escrito a mano en crema (sobre la escena, no en la capa).
-const HandLabel: React.FC<{ text: string; x: number; y: number; a: number; out: number; size?: number }> = ({ text, x, y, a, out, size = 64 }) => {
+export const HandLabel: React.FC<{ text: string; x: number; y: number; a: number; out: number; size?: number }> = ({ text, x, y, a, out, size = 64 }) => {
   const frame = useCurrentFrame();
   const p = interpolate(frame, [a, a + 18], [0, 1], clamp);
   const o = 1 - ramp(frame, out, out + 10);

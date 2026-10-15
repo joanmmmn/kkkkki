@@ -37,7 +37,7 @@ export const PawnSlip: React.FC<{ x: number; y: number; at: number; num: string;
 };
 
 // Fachada del Monte de Piedad (silueta con portón iluminado).
-const PawnShop: React.FC<{ x: number; y: number; c: string; frame: number }> = ({ x, y, c }) => (
+export const PawnShop: React.FC<{ x: number; y: number; c: string; frame: number }> = ({ x, y, c }) => (
   <g transform={`translate(${x} ${y})`}>
     <rect x={-420} y={-560} width={840} height={560} fill={c} />
     <rect x={-440} y={-580} width={880} height={30} fill={c} />

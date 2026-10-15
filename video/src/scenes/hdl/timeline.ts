@@ -67,7 +67,7 @@ export const HDL_SCENES: SceneDef[] = [
   scene('FRASE', ['W21'], { extra: 34, tin: 'fade', night: true }),
   scene('GIRO', ['W22'], { extra: 18 }),
   scene('PORRUA', ['W23', 'W24'], { chapter: 'Ocho mil ejemplares', gaps: [0.55], extra: 10 }),
-  scene('AGOTADO', ['W25'], { extra: 22 }),
+  scene('AGOTADO', ['W25'], { extra: 40, tin: 'fade' }),
   scene('NOBEL', ['W26'], { chapter: 'Lo que vino después', extra: 16 }),
   scene('CINE', ['W27', 'W28'], { gaps: [0.55], extra: 18 }),
   scene('VERSIONES', ['W29'], { chapter: '¿Pasó de verdad?', extra: 14 }),

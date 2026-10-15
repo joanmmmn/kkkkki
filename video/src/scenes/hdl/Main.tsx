@@ -6,6 +6,7 @@ import { voSrc } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Butterfly, F, P, pathAt, SERIES } from './kit';
+import { ChapterVignette } from './v2Chapter';
 
 export const HDL_MUSIC: string | null = 'music/hdl_bed.mp3'; // ElevenLabs Music por bloques (tools/hdl_music.py) // ElevenLabs Music por bloques (tools/hdl_music.py)
 
@@ -64,6 +65,7 @@ export const ChapterCard: React.FC<{ title: string; index: number; total: number
   const x = pout * -2100;
   const curl = 1 - pin + pout * 0.6;
   const kIn = interpolate(frame, [12, 26], [0, 1], { ...clamp, easing: easeOut });
+  const vIn = interpolate(frame, [8, 24], [0, 1], { ...clamp, easing: easeOut });
   const tIn = interpolate(frame, [16, 32], [0, 1], { ...clamp, easing: easeOut });
   const line = interpolate(frame, [22, 40], [0, 1], { ...clamp, easing: easeOut });
   const u = interpolate(frame, [8, 64], [0, 1], clamp);
@@ -78,11 +80,12 @@ export const ChapterCard: React.FC<{ title: string; index: number; total: number
         <AbsoluteFill style={{ background: `linear-gradient(90deg, rgba(0,0,0,${(0.25 * curl).toFixed(3)}) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 80%, rgba(0,0,0,${(0.18 * curl).toFixed(3)}) 100%)` }} />
         {/* filete y adorno */}
         <div style={{ position: 'absolute', left: 120, right: 120, top: 100, bottom: 100, border: `2px solid rgba(122,102,80,0.35)` }} />
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 300, textAlign: 'center' }}>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 150, textAlign: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 40, opacity: vIn, transform: `scale(${0.92 + 0.08 * vIn})` }}><ChapterVignette index={index} w={380} /></div>
           <div style={{ fontFamily: F.sans, fontWeight: 500, fontSize: 30, letterSpacing: 10, textTransform: 'uppercase', color: P.sepia, opacity: kIn, transform: `translateY(${(1 - kIn) * 16}px)` }}>
             Capítulo {ROMAN[index - 1]} <span style={{ opacity: 0.5 }}>· de {total}</span>
           </div>
-          <div style={{ fontFamily: F.serif, fontWeight: 600, fontSize: 150, lineHeight: 1.05, color: P.ink, marginTop: 34, opacity: tIn, transform: `translateY(${(1 - tIn) * 30}px)`, letterSpacing: -2 }}>
+          <div style={{ fontFamily: F.serif, fontWeight: 600, fontSize: 132, lineHeight: 1.05, color: P.ink, marginTop: 26, opacity: tIn, transform: `translateY(${(1 - tIn) * 30}px)`, letterSpacing: -2 }}>
             {title}
           </div>
           <div style={{ margin: '44px auto 0', width: 420 * line, height: 3, background: P.yellow }} />

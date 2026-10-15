@@ -88,7 +88,7 @@ export const Hook2: React.FC = () => {
 };
 
 // ———————— A · La calle ————————
-const ShotStreet: React.FC<{ tB: number; fAgo: number; fOfi: number }> = ({ tB, fAgo, fOfi }) => {
+export const ShotStreet: React.FC<{ tB: number; fAgo: number; fOfi: number }> = ({ tB, fAgo, fOfi }) => {
   const frame = useCurrentFrame();
   const cam = useCamera([
     { f: 0, x: 960, y: 600, s: 1.04 },
@@ -194,7 +194,7 @@ const ShotCounter: React.FC<{ t0: number; t1: number; fHom: number; fMuj: number
 };
 
 // La sala de correos (fondo, lámpara, cartel). Compartida por los planos B y E.
-const Room: React.FC<{ frame: number; lamp?: number; swing?: number }> = ({ frame, lamp = 1, swing = 0 }) => (
+export const Room: React.FC<{ frame: number; lamp?: number; swing?: number }> = ({ frame, lamp = 1, swing = 0 }) => (
   <>
     <Sky stops={[[0, '#21170F'], [55, '#3B2A1E'], [100, '#1A120C']]} glows={[{ x: 1000, y: 330, r: 900, c: '#FFC27A', a: 0.33 * lamp }]} />
     <Layer z={0.5}>
@@ -445,7 +445,8 @@ const ShotSplit: React.FC<{ t0: number; end: number; fLoc: number; fAbr: number;
         {frame > fParte + 3 && frame < drop && (
           <g transform={`translate(${h2[0]} ${h2[1] - 12}) rotate(${-8 + toss * 70})`} opacity={rampOut(frame, fParte + 3, fParte + 6)}>
             <circle r={20} fill="none" stroke="#B5262B" strokeWidth={4} />
-            <text y={6} textAnchor="middle" fontFamily='"Special Elite", monospace' fontSize={16} fill="#B5262B">1/2</text>
+            <circle r={13} fill="none" stroke="#B5262B" strokeWidth={2} />
+            <path d="M -16 -3 Q -8 -8 0 -3 T 16 -3 M -16 4 Q -8 -1 0 4 T 16 4" stroke="#B5262B" strokeWidth={2} fill="none" />
           </g>
         )}
       </Layer>
@@ -461,13 +462,13 @@ const ShotSplit: React.FC<{ t0: number; end: number; fLoc: number; fAbr: number;
 // libros se apilan hasta formar una ciudad de libros bajo la luna (la cámara sube con ellos). De la torre más alta salen
 // las mariposas amarillas y el título. «Y de lo cerca que estuvo de quedarse en aquella oficina»: la cámara baja hasta
 // la fachada de correos, que se apaga.
-const PILES = Array.from({ length: 16 }).map((_, i) => {
+export const PILES = Array.from({ length: 16 }).map((_, i) => {
   const r = (k: string) => random(`pile-${i}-${k}`);
   const x = -120 + i * 140 + (r('x') - 0.5) * 60;
   const n = 6 + Math.floor(r('n') * 16) + (i === 7 || i === 8 ? 12 : 0);
   return { x, n, w: 150 + r('w') * 90, d: i === 7 || i === 8 ? 0 : 6 + r('d') * 30 };
 });
-const BookPile: React.FC<{ x: number; base: number; n: number; w: number; grow: number; seed: string; c: string }> = ({ x, base, n, w, grow, seed, c }) => {
+export const BookPile: React.FC<{ x: number; base: number; n: number; w: number; grow: number; seed: string; c: string }> = ({ x, base, n, w, grow, seed, c }) => {
   const books: React.ReactNode[] = [];
   let y = base;
   const shown = Math.floor(n * grow + 0.0001);
@@ -555,7 +556,7 @@ export const Legacy2: React.FC = () => {
             {/* el manuscrito se hace libro */}
             <div style={{ position: 'absolute', left: 0, top: 0, opacity: cover }}><Stack w={340} thick={116} x={0} y={0} cover="#1E2A33" shadowK={0.8} /></div>
             <div style={{ position: 'absolute', left: 200 * (1 - join) - 40, top: -150, opacity: 1 - join }}>
-              <div style={{ width: 70, height: 70, borderRadius: '50%', border: '5px solid #B5262B', color: '#B5262B', fontFamily: '"Special Elite", monospace', fontSize: 26, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-12deg)' }}>1/2</div>
+              <div style={{ width: 70, height: 70, borderRadius: '50%', border: '5px solid #B5262B', color: '#B5262B', fontFamily: '"Special Elite", monospace', fontSize: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-12deg)', letterSpacing: 1 }}>AGO 66</div>
             </div>
           </div>
         </Layer>
