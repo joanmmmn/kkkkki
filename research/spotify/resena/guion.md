@@ -89,8 +89,9 @@ miniaturas, subtítulos y textos de YouTube, y su página de reseña (`web/spoti
 (catálogo incluido); Podimo 4,99 € con 20 h; BookBeat desde 6,99 € (20 h). Con Spotify: Premium + Audiolibros+ = 20,98 € al mes por
 27 h.
 
-**Nota propuesta: 7/10** (precio si ya pagas Premium Individual 9 · catálogo en español 8 · app 8,5 · horas 5 · planes compartidos
-4 · ampliar 4).
+**Nota propuesta: 7/10.** En la página, por apartados: precio si ya pagas Premium Individual 9,5 · la app 8,5 · catálogo en
+español 8,5 · las horas 5 · ampliar las horas 4,5 · Duo, Familiar y Estudiantes 4 (media 6,7, redondeada a 7; la primera
+propuesta, 9 · 8 · 8,5 · 5 · 4 · 4, daba 6,4 y no cuadraba con el 7). El vídeo no muestra ninguna nota.
 
 ## Grabación
 
@@ -157,3 +158,20 @@ las tiendas) y la coherencia entre voz, pantalla y vertical. Cambios:
   en la web, «Escucha sin límites», funciones de la app, dispositivos, «Encuentra la página» (Page Match), App Store 4,7 con 3,4 M,
   cuentas del veredicto (Storytel 8,99 € y Audible 9,99 €, sin límite) y la cancelación. Google Play (4,2 con 36,5 M) no se pudo
   abrir en la revisión: es la cifra vista desde España el 15/10/2026.
+
+## Página web y textos de YouTube (15/10/2026, tarde)
+
+- Página `web/spotify-audiolibros-resena` (pendiente de aprobación) y textos `blog/spotify/resena-youtube.md`, con capturas de las
+  tomas (`tools/web_spo_media.py`; no se usan las dos tomas con partes tapadas) y la imagen para redes y el póster de la miniatura
+  real (`tools/web_spo_og.py`).
+- Segunda revisión independiente (página, calculadora y textos, contra spotify.com, su ayuda y la prensa). Cambios: las «más de
+  300 editoriales» son de todo Spotify (no la fuente de los títulos en español); al quitar Audiolibros+ se conservan las demás
+  horas (la ayuda se contradice sobre las del complemento, así que la página no lo concreta); con un libro no incluido, la app no
+  abre la web: pide comprarlo en spotify.com y ofrece enviar un correo; el título de «Opiniones» ya no promete opiniones de
+  usuarios; la calculadora concuerda en singular («te sobra 1 h») y sin «unos» delante de las medias; sin Premium cuenta Premium
+  Individual (Audiolibros+ como plan aparte, para la versión gratuita, no tiene precio en spotify.com/es); en la descripción de
+  YouTube, «Cómo probarlos gratis» (la voz de U01 lo promete) y, en el texto del vertical, «Si pagas Premium (no Estudiantes)».
+- Comprobado sin cambios: los textos de Spotify citados «tal cual» (viñetas y letra pequeña de cada plan, condiciones de
+  Audiolibros+ y ayuda para cancelar) coinciden letra a letra con las fuentes; precios, duraciones, la nota (media 6,7) y los
+  límites de YouTube (título 98 caracteres, descripción < 5.000 bytes, etiquetas 481 de 500).
+
