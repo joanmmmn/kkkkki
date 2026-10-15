@@ -1,8 +1,8 @@
 {
  "id": "X113",
- "hash": "a9d198bd9c27",
- "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género quieres para el próximo «Los diez mejores»?",
- "duration": 7.76,
+ "hash": "a6797fccb16f",
+ "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que te traigamos después?",
+ "duration": 6.88,
  "words": [
   {
    "w": "Y",
@@ -27,26 +27,26 @@
   {
    "w": "comentarios:",
    "s": 0.96,
-   "e": 2.08
+   "e": 2.1
   },
   {
    "w": "¿cuál",
-   "s": 2.107,
+   "s": 2.12,
    "e": 2.32
   },
   {
    "w": "te",
    "s": 2.4,
-   "e": 2.44
+   "e": 2.48
   },
   {
    "w": "ha",
-   "s": 2.48,
-   "e": 2.52
+   "s": 2.52,
+   "e": 2.56
   },
   {
    "w": "dado",
-   "s": 2.56,
+   "s": 2.6,
    "e": 2.8
   },
   {
@@ -56,59 +56,49 @@
   },
   {
    "w": "miedo?",
-   "s": 3.2,
-   "e": 4.08
+   "s": 3.16,
+   "e": 3.947
   },
   {
    "w": "¿Y",
-   "s": 4.107,
-   "e": 4.16
+   "s": 3.973,
+   "e": 4.08
   },
   {
    "w": "qué",
-   "s": 4.24,
-   "e": 4.32
+   "s": 4.12,
+   "e": 4.16
   },
   {
-   "w": "género",
-   "s": 4.4,
-   "e": 4.72
+   "w": "historias",
+   "s": 4.24,
+   "e": 4.8
   },
   {
    "w": "quieres",
-   "s": 4.84,
+   "s": 4.92,
    "e": 5.12
   },
   {
-   "w": "para",
-   "s": 5.2,
-   "e": 5.28
+   "w": "que",
+   "s": 5.16,
+   "e": 5.2
   },
   {
-   "w": "el",
-   "s": 5.36,
-   "e": 5.44
+   "w": "te",
+   "s": 5.28,
+   "e": 5.36
   },
   {
-   "w": "próximo",
-   "s": 5.48,
-   "e": 6.08
+   "w": "traigamos",
+   "s": 5.44,
+   "e": 5.84
   },
   {
-   "w": "«Los",
-   "s": 6.16,
-   "e": 6.32
-  },
-  {
-   "w": "diez",
-   "s": 6.4,
-   "e": 6.68
-  },
-  {
-   "w": "mejores»?",
-   "s": 6.72,
-   "e": 7.76
+   "w": "después?",
+   "s": 5.92,
+   "e": 6.88
   }
  ],
- "speechEnd": 7.305
+ "speechEnd": 6.462
 }

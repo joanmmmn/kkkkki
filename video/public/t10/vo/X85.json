@@ -1,8 +1,8 @@
 {
  "id": "X85",
- "hash": "bbf49be4a574",
- "text": "Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Apple Books y Google Play.",
- "duration": 6.64,
+ "hash": "5055cc39e5d5",
+ "text": "Un cuatro coma nueve sobre cinco. Y en SonorBooks te contamos cómo conseguirla gratis.",
+ "duration": 6.24,
  "words": [
   {
    "w": "Un",
@@ -17,11 +17,11 @@
   {
    "w": "coma",
    "s": 0.56,
-   "e": 0.8
+   "e": 0.72
   },
   {
    "w": "nueve",
-   "s": 0.84,
+   "s": 0.8,
    "e": 1.04
   },
   {
@@ -31,54 +31,49 @@
   },
   {
    "w": "cinco.",
-   "s": 1.52,
+   "s": 1.56,
    "e": 2.4
   },
   {
-   "w": "Diecisiete",
-   "s": 2.52,
-   "e": 2.96
-  },
-  {
-   "w": "horas,",
-   "s": 3.04,
-   "e": 3.68
+   "w": "Y",
+   "s": 2.427,
+   "e": 2.453
   },
   {
    "w": "en",
-   "s": 3.76,
-   "e": 3.84
+   "s": 2.48,
+   "e": 2.64
   },
   {
-   "w": "Audible,",
-   "s": 3.96,
-   "e": 4.64
+   "w": "SonorBooks",
+   "s": 2.68,
+   "e": 3.44
   },
   {
-   "w": "Apple",
-   "s": 4.72,
-   "e": 4.96
+   "w": "te",
+   "s": 3.52,
+   "e": 3.6
   },
   {
-   "w": "Books",
-   "s": 5.04,
-   "e": 5.36
+   "w": "contamos",
+   "s": 3.72,
+   "e": 4.16
   },
   {
-   "w": "y",
-   "s": 5.52,
-   "e": 5.6
+   "w": "cómo",
+   "s": 4.24,
+   "e": 4.48
   },
   {
-   "w": "Google",
-   "s": 5.68,
-   "e": 5.92
+   "w": "conseguirla",
+   "s": 4.6,
+   "e": 5.12
   },
   {
-   "w": "Play.",
-   "s": 6.0,
-   "e": 6.64
+   "w": "gratis.",
+   "s": 5.64,
+   "e": 6.24
   }
  ],
- "speechEnd": 6.473
+ "speechEnd": 5.93
 }

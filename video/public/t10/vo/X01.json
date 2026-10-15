@@ -1,8 +1,8 @@
 {
  "id": "X01",
- "hash": "c1b02e327a8b",
- "text": "Hay libros que asustan.",
- "duration": 1.68,
+ "hash": "0d1ec2be27ee",
+ "text": "Hay historias que asustan.",
+ "duration": 2.08,
  "words": [
   {
    "w": "Hay",
@@ -10,20 +10,20 @@
    "e": 0.24
   },
   {
-   "w": "libros",
-   "s": 0.36,
-   "e": 0.72
+   "w": "historias",
+   "s": 0.44,
+   "e": 0.96
   },
   {
    "w": "que",
-   "s": 0.76,
-   "e": 0.8
+   "s": 1.04,
+   "e": 1.12
   },
   {
    "w": "asustan.",
-   "s": 0.88,
-   "e": 1.68
+   "s": 1.24,
+   "e": 2.08
   }
  ],
- "speechEnd": 1.68
+ "speechEnd": 1.943
 }

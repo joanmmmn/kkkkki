@@ -19,10 +19,11 @@ NUM = [
     ('Número diez', 'Número 10'), ('Número nueve', 'Número 9'), ('Número ocho', 'Número 8'), ('Número siete', 'Número 7'), ('Número seis', 'Número 6'),
     ('Número cinco', 'Número 5'), ('Número cuatro', 'Número 4'), ('Número tres', 'Número 3'), ('Número dos', 'Número 2'), ('Número uno', 'Número 1'),
     ('los diez libros', 'los 10 libros'), ('«Los diez mejores»', '«Los 10 mejores»'), ('los diez mejores libros', 'los 10 mejores libros'), ('diez libros con fama', '10 libros con fama'),
+    ('las diez historias', 'las 10 historias'), ('más de cuatrocientos oyentes', 'más de 400 oyentes'), ('cuatro coma nueve', '4,9'),
 ]
 
 CHAPTERS = [
-    ('10 libros de terror que dan miedo de verdad', 'HOOK'),
+    ('10 historias de terror que dan miedo de verdad', 'HOOK'),
     ('10. La llamada de Cthulhu (H. P. Lovecraft)', 'B1'),
     ('9. Cuentos de Edgar Allan Poe', 'B2'),
     ('8. Cómo vender una casa encantada (Grady Hendrix)', 'B3'),
@@ -33,7 +34,7 @@ CHAPTERS = [
     ("3. El misterio de Salem's Lot (Stephen King)", 'B8'),
     ('2. Nuestra parte de noche (Mariana Enriquez)', 'B9'),
     ('1. El exorcista (William Peter Blatty)', 'B10'),
-    ('Cómo escucharlos (y dónde)', 'TIP'),
+    ('Cómo escucharlas gratis', 'TIP'),
 ]
 
 

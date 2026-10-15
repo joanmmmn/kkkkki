@@ -1,8 +1,8 @@
 {
  "id": "X104",
- "hash": "8ffe72964cc2",
- "text": "La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible. Trece horas, en Audible.",
- "duration": 11.12,
+ "hash": "80c5eb5e19e4",
+ "text": "La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible.",
+ "duration": 8.88,
  "words": [
   {
    "w": "La",
@@ -11,7 +11,7 @@
   },
   {
    "w": "narra",
-   "s": 0.24,
+   "s": 0.28,
    "e": 0.48
   },
   {
@@ -22,113 +22,93 @@
   {
    "w": "Solís,",
    "s": 1.12,
-   "e": 1.6
+   "e": 1.68
   },
   {
    "w": "con",
-   "s": 1.68,
-   "e": 1.76
+   "s": 1.8,
+   "e": 1.92
   },
   {
    "w": "voz",
-   "s": 1.84,
-   "e": 2.0
+   "s": 2.0,
+   "e": 2.16
   },
   {
    "w": "latina,",
-   "s": 2.08,
-   "e": 2.8
-  },
-  {
-   "w": "y",
-   "s": 2.84,
-   "e": 2.88
-  },
-  {
-   "w": "un",
-   "s": 2.96,
+   "s": 2.24,
    "e": 3.04
   },
   {
+   "w": "y",
+   "s": 3.08,
+   "e": 3.12
+  },
+  {
+   "w": "un",
+   "s": 3.2,
+   "e": 3.28
+  },
+  {
    "w": "oyente",
-   "s": 3.12,
-   "e": 3.52
+   "s": 3.36,
+   "e": 3.68
   },
   {
    "w": "lo",
-   "s": 3.6,
-   "e": 3.68
+   "s": 3.76,
+   "e": 3.84
   },
   {
    "w": "resume",
    "s": 3.92,
-   "e": 4.16
+   "e": 4.32
   },
   {
    "w": "así:",
-   "s": 4.24,
-   "e": 5.12
+   "s": 4.4,
+   "e": 5.2
   },
   {
    "w": "cuando",
-   "s": 5.16,
-   "e": 5.44
+   "s": 5.28,
+   "e": 5.6
   },
   {
    "w": "pone",
-   "s": 5.52,
-   "e": 5.76
-  },
-  {
-   "w": "la",
-   "s": 5.8,
+   "s": 5.72,
    "e": 5.84
   },
   {
+   "w": "la",
+   "s": 5.88,
+   "e": 5.92
+  },
+  {
    "w": "voz",
-   "s": 5.92,
-   "e": 6.08
+   "s": 6.0,
+   "e": 6.16
   },
   {
    "w": "del",
-   "s": 6.16,
-   "e": 6.24
+   "s": 6.24,
+   "e": 6.4
   },
   {
    "w": "demonio,",
-   "s": 6.32,
-   "e": 7.04
+   "s": 6.44,
+   "e": 7.2
   },
   {
    "w": "es",
-   "s": 7.16,
-   "e": 7.28
+   "s": 7.32,
+   "e": 7.44
   },
   {
    "w": "indescriptible.",
-   "s": 7.36,
-   "e": 8.48
-  },
-  {
-   "w": "Trece",
-   "s": 9.12,
-   "e": 9.44
-  },
-  {
-   "w": "horas,",
-   "s": 9.52,
-   "e": 10.16
-  },
-  {
-   "w": "en",
-   "s": 10.24,
-   "e": 10.32
-  },
-  {
-   "w": "Audible.",
-   "s": 10.44,
-   "e": 11.12
+   "s": 7.56,
+   "e": 8.88
   }
  ],
- "speechEnd": 10.944
+ "speechEnd": 8.624
 }

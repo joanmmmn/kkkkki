@@ -7,7 +7,7 @@ import { Logo } from '../../components/Logo';
 import { MaskTitle } from '../nxr/kit';
 import { BigNum, BONE, BOOKS10, bookAt, DIM, Flashlight, KickerN, Night, RED, StoryChips, color, flicker, font } from './kit';
 import { Img } from 'remotion';
-import { Ambient, COVERS, Cover3D, coverSrc, shakes } from './fx';
+import { COVERS, Cover3D, CoverArt } from './fx';
 import { VExorcista } from './Vignettes';
 import { F10 } from './Facts';
 import { NarrCard } from './Books';
@@ -150,7 +150,10 @@ export const T10Short: React.FC = () => {
                 const s = sp(frame, f6 + 4 + i * 2, 14, 170);
                 return (
                   <div key={bk.n} style={{ opacity: s * (bk.n === 1 ? 1 : 0.85), transform: `translateY(${(1 - s) * 30}px)`, position: 'relative' }}>
-                    <Img src={coverSrc(COVERS[11 - bk.n][0])} style={{ width: 160, height: 160, borderRadius: 8, display: 'block', boxShadow: '0 12px 30px rgba(0,0,0,0.6)', filter: bk.n === 1 ? undefined : 'brightness(0.8)' }} />
+                    <div style={{ borderRadius: 8, overflow: 'hidden', boxShadow: '0 12px 30px rgba(0,0,0,0.6)' }}>
+                      {/* los otros nueve, censurados: se descubren en el vídeo completo */}
+                      <CoverArt name={COVERS[11 - bk.n][0]} size={160} reveal={bk.n === 1 ? 1 : 0} />
+                    </div>
                     <div style={{ position: 'absolute', right: -6, top: -10, minWidth: 44, height: 44, borderRadius: 999, background: bk.n === 1 ? RED : color.yellow, color: bk.n === 1 ? '#fff' : color.ink, fontFamily: font.sans, fontWeight: 700, fontSize: 24, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{bk.n}</div>
                   </div>
                 );

@@ -1,4 +1,4 @@
-# Los 10 mejores · Terror — guion v3 (verificado; locución final)
+# Los 10 mejores · Terror — guion v4 (15/10: «historias de terror»; locución final al final del archivo)
 
 Serie del canal SonorBooks España: «Los 10 mejores libros de X». Primer episodio: terror.
 Referencia de formato: «10 great atmospheric horror books in 10 minutes» (CriminOlly): diez libros, uno por minuto aprox.
@@ -120,21 +120,24 @@ Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género
 - En el n.º 5, «su adaptación es una de las películas internacionales más vistas de Prime Video» (para no repetir «película»), y la versión íntegra se menciona como «voz sintética autorizada», sin el nombre (está en el rótulo).
 - El cierre de marca añade «Tu próxima historia te está esperando.» como el resto del canal.
 - Vertical: «Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.» + X102–X105 + «Los otros nueve, en el vídeo completo.»
-- Whisper sobre toda la locución: se entiende todo (solo cambia cifras a número y grafías de nombres extranjeros).
+- Whisper sobre toda la locución: se entiende todo (solo cambia cifras a núme## Cambios de la v4 (15/10, indicaciones de Joan)
+- Se vende como **historias de terror** (ni libros ni audiolibros). Fuera de la entrada: auriculares, narraciones y «la voz con la que escucharlos».
+- Fuera la presentación de la serie (X04) y «en el terror la voz lo cambia todo» (X06).
+- X05 nuevo: «Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones…», con la ficha real de SonorBooks en pantalla.
+- Cuña de SonorBooks poco a poco en las narraciones (X14, X34, X55, X65, X74, X85, X95) y cierre (X112) con la plataforma: «casi todas, gratis» con prueba.
+- Comprobado en el catálogo de Audible España (plan ES-AYCL, 15/10): entran en la suscripción 8 de las 10 (y las dos de Drácula y el Original de Apocalipsis Z). «El misterio de Salem's Lot» no entra, pero su ficha de SonorBooks la da gratis con el crédito de la prueba de Audiobooks.com. «El exorcista» no entra en ninguna prueba (compra): ni la voz ni su tarjeta dicen «gratis».
+- Minitarjeta al final de cada libro: «Escúchala en SonorBooks · Gratis con prueba» (El exorcista: «Dónde y cómo»).
 
-## Locución final, tal como suena (de video/public/t10/vo/vo.json)
-
-- **X01** Hay libros que asustan.
-- **X02** Y hay libros que, escuchados de noche, con los auriculares puestos y la luz apagada, no te dejan dormir.
-- **X03** Estos son los diez libros de terror que dan miedo de verdad. Y la voz con la que tienes que escucharlos.
-- **X04** Esto es «Los diez mejores»: en cada episodio, los diez mejores libros de un género y la voz con la que escucharlos. Hoy toca terror.
-- **X05** La regla es sencilla: diez libros con fama de quitar el sueño y, de cada uno, la narración en español que tienes que escuchar, elegida por las notas y las opiniones de los oyentes.
-- **X06** Porque en el terror la voz lo cambia todo: el ritmo, los silencios, el susurro justo antes del golpe.
+## Locución final, tal como suena (de video/public/t10/vo/vo.json, v4)
+- **X01** Hay historias que asustan.
+- **X02** Y hay historias que, cuando apagas la luz, siguen ahí. Y no te dejan dormir.
+- **X03** Estas son las diez historias de terror que dan miedo de verdad.
+- **X05** Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones de miles de oyentes y lectores.
 - **X07** Vamos de menos a más miedo.
 - **X11** Número diez: «La llamada de Cthulhu», de H. P. Lovecraft.
 - **X12** Un hombre ordena los papeles de su tío abuelo, un profesor que acaba de morir, y encuentra un bajorrelieve de arcilla, informes sobre cultos en distintos rincones del mundo y un nombre que la garganta humana apenas puede pronunciar.
 - **X13** Lovecraft escribió que la emoción más antigua del ser humano es el miedo, y que el miedo más antiguo es el miedo a lo desconocido. Este relato es la demostración.
-- **X14** Escúchalo con Benjamín Figueres: castellano, sin prisas, como quien lee un informe que no debería haber encontrado. Dura solo dos horas y está en casi todas las plataformas.
+- **X14** Y si quieres vivirla de verdad, escúchala: Benjamín Figueres la lee sin prisas, como quien encuentra un informe que no debería haber leído. Son dos horas, y puedes empezarla hoy mismo, gratis.
 - **X21** Número nueve: los cuentos de Edgar Allan Poe.
 - **X22** Un hombre te jura que no está loco mientras te cuenta cómo mató a un anciano… y cómo sigue oyendo latir su corazón bajo las tablas del suelo. Una mujer enterrada en vida en la casa Usher. Un gato negro que no se marcha.
 - **X23** Casi doscientos años después, siguen funcionando igual de bien. Y son cortos: perfectos para escuchar uno cada noche.
@@ -143,7 +146,7 @@ Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género
 - **X31** Número ocho: «Cómo vender una casa encantada», de Grady Hendrix.
 - **X32** Los padres de Louise acaban de morir y ella vuelve a la casa familiar para venderla junto a su hermano. El problema no son los recuerdos. Son los títeres. Y las muñecas. Y un títere en concreto que parece tener sus propios planes.
 - **X33** El New York Times tituló su crítica: «Un títere que es, de verdad, material de pesadillas». No exageraba.
-- **X34** La narra Esther Cordero, en castellano, y los oyentes destacan cómo cambia de voz para cada personaje: un cuatro coma cuatro en Audible con ciento sesenta valoraciones. Catorce horas, y está en casi todas las plataformas.
+- **X34** Escuchada, da todavía más miedo: Esther Cordero cambia de voz para cada personaje, y los oyentes le dan un cuatro coma cuatro. En SonorBooks tienes dónde escucharla gratis, hoy mismo.
 - **X41** Número siete: «Distancia de rescate», de Samanta Schweblin.
 - **X42** Una mujer agoniza en la sala de urgencias de un pueblo. A su lado, un niño que no es su hijo le habla al oído y le pide que encuentre el momento exacto en que todo empezó. Algo ha pasado en el campo. Algo les está pasando a los niños.
 - **X43** Ganó el premio Shirley Jackson, fue finalista del Booker Internacional y Netflix la convirtió en película.
@@ -152,34 +155,34 @@ Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género
 - **X52** Un joven abogado viaja a Transilvania para cerrar la compra de una finca cerca de Londres. Su cliente es un conde que nunca come con él, que no aparece en el espejo y que de día no está en ninguna parte.
 - **X53** Es la novela que fijó para siempre la imagen del vampiro. Tanto, que «Nosferatu», en mil novecientos veintidós, era Drácula con otro nombre y sin permiso: la viuda de Stoker lo denunció y un tribunal ordenó destruir las copias.
 - **X54** Aquí hay dos formas de escucharlo. Entera, con José Coronado y Sol de la Barreda: dieciocho horas y media y un cuatro coma ocho con más de seiscientas valoraciones.
-- **X55** O como una película para los oídos: el nuevo Drácula original de Audible, una adaptación libre dirigida por Carlota Pereda, con Asier Etxeandia, Claudia Salas y un reparto de más de veinticinco actores. Dura casi seis horas, y es lo más parecido a pasar la noche en el castillo. Las dos, en Audible.
+- **X55** O como una película para los oídos: el Drácula original de Audible, con Asier Etxeandia, Claudia Salas y más de veinticinco actores. Lo más parecido a pasar la noche en el castillo. Y las dos entran en la prueba gratuita de Audible.
 - **X61** Número cinco: «Apocalipsis Z», de Manel Loureiro.
 - **X62** Un abogado de Pontevedra, que vive solo con su gato, sigue por la tele un brote extraño en Rusia. Al principio es una noticia más. Luego, el brote empieza a extenderse.
 - **X63** Empezó como un blog en internet antes de ser novela, y su adaptación es una de las películas internacionales más vistas de Prime Video.
 - **X64** En audio tiene una versión que hay que oír: la ficción sonora original de Audible, con Javier Rey, Maggie Civantos y quince actores más. Los oyentes destacan los gruñidos de fondo, y dicen que es como ver una película con los ojos cerrados.
-- **X65** Es una adaptación de seis horas; la novela completa también está en audio, con una voz sintética autorizada, en Storytel, Nextory y Podimo.
+- **X65** Es una adaptación de seis horas; si prefieres la novela entera, también está en audio. Y las dos las puedes empezar gratis, con una prueba.
 - **X71** Número cuatro: «Carcoma», de Layla Martínez.
 - **X72** Una abuela y su nieta viven en una vieja casa de pueblo. La nieta ha vuelto después de que desapareciera el niño que cuidaba, el hijo de la familia más rica del pueblo. Los vecinos murmuran. Y en esa casa hay algo más que ellas dos.
 - **X73** Layla Martínez se inspiró en la casa que levantó su bisabuelo y en un armario que se abría solo. El resultado es terror rural, corto y feroz, y uno de los fenómenos editoriales del terror en España: ha agotado edición tras edición.
-- **X74** Paula Iwasaki la narra con voz de aquí, seca y sin sobreactuar: más de cuatrocientas valoraciones y un cuatro coma seis en la narración. Son tres horas: se escucha en una noche.
+- **X74** Paula Iwasaki la narra seca, sin sobreactuar, y más de cuatrocientos oyentes le dan un cuatro coma seis. Son tres horas: se escucha en una noche. Y la puedes empezar esta misma noche, gratis.
 - **X81** Número tres: «El misterio de Salem's Lot», de Stephen King.
 - **X82** Un escritor vuelve al pueblo de su infancia para escribir sobre la casa que le aterrorizaba de niño. A la vez, unos recién llegados compran esa misma casa. Y la gente del pueblo empieza a desaparecer… o a volver.
 - **X83** King se preguntó qué pasaría si Drácula volviera en el siglo veinte, en Estados Unidos, y en los años ochenta llegó a decir que, en cierto modo, era su historia favorita.
 - **X84** ¿Por qué este King y no «It» o «El resplandor»? Porque en español solo existen con voz latina. Y esta es la narración de King en castellano mejor valorada por los oyentes: Xavi Fernández, con una voz grave que convierte cada capítulo en un programa de radio de madrugada.
-- **X85** Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Apple Books y Google Play.
+- **X85** Un cuatro coma nueve sobre cinco. Y en SonorBooks te contamos cómo conseguirla gratis.
 - **X91** Número dos: «Nuestra parte de noche», de Mariana Enriquez.
 - **X92** Argentina, en plena dictadura. Un padre cruza el país en coche con su hijo pequeño. El niño ha heredado un don, y hay una sociedad secreta, la Orden, que lo quiere para sus rituales.
 - **X93** Es terror sobrenatural, pero también del más real. Ganó el Premio Herralde y, para buena parte de la crítica, es una de las grandes novelas de terror escritas en español en este siglo.
 - **X94** Mara Brenner la narra con acento argentino, y eso la hace todavía más auténtica: una voz distinta para cada personaje y un cuatro coma siete sobre cinco con más de doscientas valoraciones.
-- **X95** Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y está en todas las grandes plataformas.
+- **X95** Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y lo puedes empezar hoy mismo, gratis.
 - **X101** Número uno: «El exorcista», de William Peter Blatty.
 - **X102** Una actriz vive en Washington con su hija, Regan. Primero son ruidos en el desván. Luego, cambios en la niña. Después, una voz que no es la suya. Y ni los médicos ni los psiquiatras encuentran una explicación.
 - **X103** Blatty se inspiró en un caso real. En mil novecientos cuarenta y nueve, el Washington Post contó en portada que un sacerdote había liberado a un chico que, según decían, estaba en las garras del diablo. Blatty lo leyó cuando estudiaba en Georgetown.
-- **X104** La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible. Trece horas, en Audible.
+- **X104** La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible.
 - **X105** Escúchalo de noche. Si te atreves.
 - **X111** Un consejo para que funcione: de noche, con auriculares y sin mirar el móvil.
-- **X112** Cada uno de estos audiolibros tiene su ficha en SonorBooks, con las plataformas donde está esa narración y si puedes empezarla gratis con una prueba. Los enlaces están en la descripción, y en nuestro blog tienes la lista completa.
-- **X113** Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género quieres para el próximo «Los diez mejores»?
+- **X112** Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis. En SonorBooks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al play y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog.
+- **X113** Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que te traigamos después?
 - **X114** Tu próxima historia te está esperando.
-- **Y01** Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.
+- **Y01** Número uno de las historias de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.
 - **Y02** Los otros nueve, en el vídeo completo.

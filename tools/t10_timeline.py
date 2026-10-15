@@ -42,8 +42,7 @@ def book(p, ids, gaps, extra=26):
 def parse():
     out = [
         scene('HOOK', ['X01', 'X02', 'X03'], lead=sec(1.1), gaps=[0.7, 0.8], extra=24, night=True),
-        scene('SERIE', ['X04'], lead=sec(0.5), extra=30, night=True),
-        scene('REGLA', ['X05', 'X06', 'X07'], gaps=[0.55, 0.6], extra=18, night=True),
+        scene('REGLA', ['X05', 'X07'], lead=sec(0.5), gaps=[0.9], extra=18, night=True),
         book(1, ['X11', 'X12', 'X13', 'X14'], [0.5, 0.75, 0.75]),
         book(2, ['X21', 'X22', 'X23', 'X24', 'X25'], [0.5, 0.75, 0.75, 0.55]),
         book(3, ['X31', 'X32', 'X33', 'X34'], [0.5, 0.75, 0.75]),

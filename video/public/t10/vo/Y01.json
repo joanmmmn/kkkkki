@@ -1,17 +1,17 @@
 {
  "id": "Y01",
- "hash": "a464fb7c4947",
- "text": "Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.",
- "duration": 7.12,
+ "hash": "2b77b78c6106",
+ "text": "Número uno de las historias de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.",
+ "duration": 7.28,
  "words": [
   {
    "w": "Número",
    "s": 0.0,
-   "e": 0.4
+   "e": 0.32
   },
   {
    "w": "uno",
-   "s": 0.48,
+   "s": 0.4,
    "e": 0.64
   },
   {
@@ -20,80 +20,80 @@
    "e": 0.72
   },
   {
-   "w": "los",
+   "w": "las",
    "s": 0.8,
-   "e": 0.96
+   "e": 0.88
   },
   {
-   "w": "libros",
-   "s": 1.08,
-   "e": 1.28
-  },
-  {
-   "w": "de",
-   "s": 1.36,
+   "w": "historias",
+   "s": 0.96,
    "e": 1.44
   },
   {
-   "w": "terror",
-   "s": 1.64,
-   "e": 1.84
+   "w": "de",
+   "s": 1.52,
+   "e": 1.6
   },
   {
-   "w": "que",
-   "s": 1.92,
+   "w": "terror",
+   "s": 1.8,
    "e": 2.0
   },
   {
+   "w": "que",
+   "s": 2.08,
+   "e": 2.16
+  },
+  {
    "w": "dan",
-   "s": 2.12,
-   "e": 2.24
+   "s": 2.28,
+   "e": 2.4
   },
   {
    "w": "miedo",
-   "s": 2.32,
-   "e": 2.64
+   "s": 2.48,
+   "e": 2.8
   },
   {
    "w": "de",
-   "s": 2.68,
-   "e": 2.72
+   "s": 2.88,
+   "e": 2.96
   },
   {
    "w": "verdad:",
-   "s": 2.8,
-   "e": 3.787
+   "s": 3.04,
+   "e": 3.947
   },
   {
    "w": "«El",
-   "s": 3.813,
-   "e": 3.92
+   "s": 3.973,
+   "e": 4.08
   },
   {
    "w": "exorcista»,",
-   "s": 4.04,
-   "e": 5.08
+   "s": 4.16,
+   "e": 5.32
   },
   {
    "w": "de",
-   "s": 5.12,
-   "e": 5.28
+   "s": 5.36,
+   "e": 5.52
   },
   {
    "w": "William",
-   "s": 5.32,
-   "e": 5.76
+   "s": 5.56,
+   "e": 6.0
   },
   {
    "w": "Peter",
-   "s": 5.8,
-   "e": 6.08
+   "s": 6.04,
+   "e": 6.32
   },
   {
    "w": "Blatty.",
-   "s": 6.16,
-   "e": 7.12
+   "s": 6.4,
+   "e": 7.28
   }
  ],
- "speechEnd": 6.623
+ "speechEnd": 6.829
 }

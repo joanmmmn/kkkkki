@@ -45,7 +45,7 @@ export const Top10Terror: React.FC = () => {
   };
   const darkAt = t10Start('B10') + (sceneDef('B10').vo.find((v) => v.id === 'X105')?.at ?? 0);
   const tipAt = t10Start('TIP');
-  const lifts = T10_SCENES.filter((s) => s.book || s.id === 'SERIE').map((s) => [t10Start(s.id), t10Start(s.id) + (s.vo[0]?.at ?? sec(1))] as const);
+  const lifts = T10_SCENES.filter((s) => s.book || s.id === 'REGLA').map((s) => [t10Start(s.id), t10Start(s.id) + (s.vo[0]?.at ?? sec(1))] as const);
   const musicVolume = (f: number) => {
     const duck = 0.55 * env(f, vo);
     const lift = 1 + 0.4 * Math.max(0, ...lifts.map(([a, b]) => interpolate(f, [a, a + 6, b - 6, b], [0, 1, 1, 0], clamp)));

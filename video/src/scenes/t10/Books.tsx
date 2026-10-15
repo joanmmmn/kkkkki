@@ -7,7 +7,7 @@ import { BONE, bookAt, DIM, KickerN, MiniIcon, Narr, RED, Stars, color, font, fl
 import { VIGNETTES } from './Vignettes';
 import { FACTS } from './Facts';
 import { sceneClock, sceneDef } from './timeline';
-import { Ambient, camAt, CamKey, camStyle, COVERS, Cover3D, coverSrc, countTo, DIGITS_W, FearMeter, KWords, lerp, ramp, sceneLevel, shakes, sp, VoiceBars } from './fx';
+import { Ambient, camAt, CamKey, camStyle, COVERS, Cover3D, CoverStrip, coverSrc, countTo, DIGITS_W, KWords, lerp, ramp, sceneLevel, shakes, sp, VoiceBars } from './fx';
 
 export const vid = (p: number, k: number) => `X${p}${k}`;
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
@@ -187,7 +187,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
   // ——— A1: número → cae la portada → título ———
   const drop = sp(frame, fTitle - 12, 12, 110, 1.1);
   const land = fTitle + 2;
-  const cam1 = shakes(frame, [{ at: fNum + 1, amp: 22, dur: 18 }, { at: land, amp: 12, dur: 14 }], `a1${p}`);
+  const cam1 = shakes(frame, [{ at: fNum + 1, amp: 22, dur: 18 }, { at: land, amp: 12, dur: 14 }, { at: fTitle + 30, amp: 7, dur: 12 }], `a1${p}`);
   const push1 = 1 + 0.06 * ramp(frame, 0, fA2, easeInOut);
   const zoomThrough = ramp(frame, fA2 - 8, fA2 + 10, (t) => t * t * t);
   const titleWords = syncWords(v1, c.part(v1), b.title, fTitle - 2, TITLE_WORD[p]);
@@ -196,6 +196,11 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
   const numTo: [number, number, number] = [1010 + 230 * DIGITS_W * digits * 0.5 * 1.0, 250, 230];
   const flash = interpolate(frame, [fNum, fNum + 2, fNum + 10], [0, 1, 0], clamp);
   const coverIn = ramp(frame, fTitle - 12, fTitle + 6);
+  // la portada cae censurada y se descensura mientras la voz dice el título
+  const revA = fTitle + 4;
+  const revB = fTitle + 30;
+  const reveal = interpolate(frame, [revA, revB], [0, 1], clamp);
+  const revealHit = interpolate(frame, [revB - 1, revB + 1, revB + 12], [0, 1, 0], clamp);
   // latidos (sk_heart golpea 41 fotogramas después de empezar): uno o dos antes de que caiga la portada
   const beats = [fNum + 2 + 41, fNum + 2 + 41 + 46].filter((bt) => bt < fTitle - 14);
 
@@ -226,10 +231,13 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
     return hasWord(vo, 'coma') ? c.at(vo, 'cuatro') - 6 : cardAt(i) + 24;
   };
   const kingNote = p === 8 ? c.part('X84') : -1;
+  const lastNarr = narrIds.filter((v) => v !== 'X105').slice(-1)[0];
+  const miniAt = Math.min(c.voEnd(lastNarr) - 50, (p === 10 ? last : c.dur) - 150);
   const second = cards > 1 ? sp(frame, cardAt(1) - 6, 14, 120) : 0;
   const active = cards > 1 && frame >= cardAt(1) - 6 ? 1 : 0;
   const cv = sp(frame, fC - 2, 14, 100);
   const lv = level(frame);
+  const camC = ramp(frame, fC, c.dur, (x) => x);
 
   // ——— Cabecera pequeña (A2/B) ———
   const head = sp(frame, fA2 + 4, 15, 160);
@@ -249,8 +257,8 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
               {/* portada que cae y luego atraviesa la cámara */}
               <div style={{ position: 'absolute', left: 250, top: 200, transform: `translateY(${((1 - drop) * -820).toFixed(1)}px) scale(${(1 + 2.4 * zoomThrough).toFixed(4)})`, transformOrigin: '50% 50%',
                 opacity: Math.min(1, drop * 4) * (1 - zoomThrough) }}>
-                <Cover3D name={main} size={600} rx={(1 - drop) * -55 + Math.sin(frame / 90) * 2.5} ry={16 + Math.sin(frame / 70) * 5} rz={(1 - drop) * 8}
-                  shine={interpolate(frame, [land + 4, land + 46], [0, 1.2], clamp)} reflect glow={coverIn * (0.6 + 0.4 * flicker(frame, `g${p}`, 0.6))} glowColor="rgba(255,214,140," />
+                <Cover3D name={main} size={600} rx={(1 - drop) * -55 + Math.sin(frame / 90) * 2.5} ry={16 + Math.sin(frame / 70) * 5} rz={(1 - drop) * 8} reveal={reveal}
+                  shine={interpolate(frame, [revB - 2, revB + 36], [0, 1.2], clamp)} reflect glow={coverIn * (0.6 + 0.4 * flicker(frame, `g${p}`, 0.6)) + 0.8 * revealHit} glowColor="rgba(255,214,140," />
               </div>
               {/* número */}
               {frame < fA2 + 4 && <div style={{ opacity: 1 - zoomThrough }}><SlamNum n={b.n} at={fNum} move={fTitle} to={numTo} beats={beats} /></div>}
@@ -265,7 +273,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
                 </div>
               </div>
             </AbsoluteFill>
-            <FearMeter n={b.n} at={fNum + 8} out={fA2 - 4} x={1430} y={1000} />
+            <CoverStrip n={b.n} at={fNum + 8} out={fA2 - 4} reveal={reveal} x={1430} y={968} size={68} />
           </Ambient>
           {flash > 0 && <AbsoluteFill style={{ background: p === 10 ? `rgba(193,18,31,${(0.35 * flash).toFixed(3)})` : `rgba(255,236,210,${(0.22 * flash).toFixed(3)})` }} />}
         </AbsoluteFill>
@@ -305,6 +313,9 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
         <AbsoluteFill style={{ opacity: cIn }}>
           <AbsoluteFill>
             <Ambient name={main} name2={covers[1]} mix={cards > 1 ? ramp(frame, cardAt(1) - 6, cardAt(1) + 20) : 0} opacity={1} dark={0.52} seed={`c${p}`} red={0.7}>
+              {/* cámara lenta hacia dentro y paralaje: portadas y tarjetas se separan muy despacio */}
+              <AbsoluteFill style={{ transform: `scale(${(1 + 0.04 * camC).toFixed(4)})` }}>
+              <AbsoluteFill style={{ transform: `translateX(${(-18 * camC).toFixed(2)}px)` }}>
               {/* portadas */}
               {cards === 1 ? (
                 <div style={{ position: 'absolute', left: 230, top: 190, transform: `translateX(${((1 - cv) * -620).toFixed(1)}px)` }}>
@@ -331,9 +342,10 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
               <div style={{ position: 'absolute', left: cards > 1 ? 150 : 230, top: 860, width: 560, opacity: ramp(frame, fC + 4, fC + 20) }}>
                 <VoiceBars level={level} w={cards > 1 ? 620 : 560} h={86} n={34} c={color.yellow} />
               </div>
+              </AbsoluteFill>
               {/* tarjetas */}
-              <div style={{ position: 'absolute', left: 860, top: 0, height: 1080, width: 1000, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24 }}>
-                <KickerN at={fC + 4} text={cards > 1 ? 'Cómo escucharlo' : 'La narración que tienes que escuchar'} />
+              <div style={{ position: 'absolute', left: 860, top: 0, height: 1080, width: 1000, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24, transform: `translateX(${(12 * camC).toFixed(2)}px)` }}>
+                <KickerN at={fC + 4} text={cards > 1 ? 'Dos formas de vivirla' : 'Para vivirla de verdad'} />
                 {p === 8 && (
                   <div style={{ opacity: ramp(frame, kingNote, kingNote + 14) * (1 - 0.55 * ramp(frame, cardAt(0) - 6, cardAt(0) + 10)), fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: BONE,
                     display: 'flex', alignItems: 'center', gap: 16 }}>
@@ -349,10 +361,14 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
                     dim={cards > 1 && i === 0 ? ramp(frame, cardAt(1) - 4, cardAt(1) + 10) : 0} />
                 ))}
               </div>
+              </AbsoluteFill>
             </Ambient>
           </AbsoluteFill>
         </AbsoluteFill>
       )}
+
+      {/* minitarjeta al final de cada libro: «Escúchala en SonorBooks · gratis con prueba» (El exorcista no entra en ninguna prueba: sin «gratis») */}
+      {cIn > 0 && <ListenCard at={miniAt} free={p !== 10} plural={p === 2} out={p === 10 ? last : c.dur - 18} />}
 
       {/* final del n.º 1: se apaga todo */}
       {p === 10 && off > 0 && (
@@ -371,6 +387,9 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
       <Sfx name="whoosh_deep" at={fWord} volume={0.45} />
       <Sfx name="whoosh_fast" at={fTitle - 10} volume={0.5} />
       <Sfx name="sk_book_thud" at={land} volume={0.45} />
+      {[0, 1, 2, 3, 4, 5].map((k) => <Sfx key={`px${k}`} name="tick" at={revA + Math.round(((k + 1) * (revB - revA)) / 7)} volume={0.35} />)}
+      <Sfx name="reverse_swell" at={revB} volume={0.45} />
+      <Sfx name="snap_in" at={revB} volume={0.6} />
       <Sfx name="whoosh_deep" at={fA2 + 2} volume={0.6} />
       {chips.map((ch, i) => <Sfx key={i} name="tick_soft" at={ch.at} volume={0.75} />)}
       {chips.map((ch, i) => (i > 0 ? <Sfx key={`w${i}`} name="whoosh_soft" at={ch.at - 6} volume={0.22} /> : null))}
@@ -380,12 +399,37 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
       <Sfx name="click" at={fC + 4} volume={0.5} />
       {b.narr.map((_, i) => <Sfx key={`n${i}`} name="snap_in" at={cardAt(i)} volume={0.7} />)}
       {b.narr.map((_, i) => <Sfx key={`r${i}`} name="counter" at={ratingAtFor(i)} volume={0.35} />)}
+      <Sfx name="ui_pop" at={miniAt + 2} volume={0.6} />
+      <Sfx name="sparkle" at={miniAt + 10} volume={0.3} />
       {cards > 1 && <Sfx name="swipe" at={cardAt(1) - 4} volume={0.5} />}
       {VIG_SFX[p]?.(fA2, c)}
       {FACT_SFX[p]?.(fB, c)}
       {p !== 10 && <Sfx name="click" at={c.dur - 16} volume={0.35} />}
       {p === 10 && <><Sfx name="click" at={last + 4} volume={0.8} /><Sfx name="sk_heart" at={c.at('X105', 'Si')} volume={0.9} /><Sfx name="whoosh_deep" at={c.at('X105', 'Si') - 2} volume={0.6} /></>}
     </AbsoluteFill>
+  );
+};
+
+// Minitarjeta de SonorBooks (abajo, bajo las tarjetas de la narración).
+const ListenCard: React.FC<{ at: number; free: boolean; out: number; plural?: boolean }> = ({ at, free, out, plural = false }) => {
+  const frame = useCurrentFrame();
+  const s = sp(frame, at, 13, 170);
+  const o = 1 - ramp(frame, out - 8, out);
+  if (s <= 0.001 || o <= 0) return null;
+  const shine = interpolate(frame, [at + 6, at + 30], [0, 1], clamp);
+  return (
+    <div style={{ position: 'absolute', left: 860, top: 940, display: 'flex', alignItems: 'center', gap: 18, padding: '14px 26px 14px 16px', borderRadius: 18, background: color.yellow, color: color.ink,
+      boxShadow: '0 20px 50px rgba(0,0,0,0.5)', overflow: 'hidden', opacity: Math.min(1, s * 1.4) * o, transform: `translateY(${((1 - s) * 50).toFixed(1)}px) scale(${(0.85 + 0.15 * s).toFixed(3)})`, transformOrigin: '0 50%' }}>
+      <span style={{ width: 54, height: 54, borderRadius: 14, background: color.ink, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+        <svg width={30} height={30} viewBox="0 0 24 24"><path d="M3 5.5C6 4 9 4 12 6c3-2 6-2 9-.5V19c-3-1.5-6-1.5-9 .5-3-2-6-2-9-.5z" fill={color.yellow} /><path d="M10 9.5v6l5-3z" fill={color.ink} /></svg>
+      </span>
+      <div>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, lineHeight: 1.05 }}>{plural ? 'Escúchalos' : 'Escúchala'} en SonorBooks</div>
+        <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 24, marginTop: 4 }}>{free ? 'Gratis con prueba · enlace en la descripción' : 'Dónde y cómo · enlace en la descripción'}</div>
+      </div>
+      <svg width={30} height={30} viewBox="0 0 24 24" style={{ marginLeft: 8 }}><path d="M5 12h13M13 6l6 6-6 6" stroke={color.ink} strokeWidth={2.6} fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      {shine > 0 && shine < 1 && <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(105deg, rgba(255,255,255,0) ${(shine * 140 - 40).toFixed(1)}%, rgba(255,255,255,0.55) ${(shine * 140 - 25).toFixed(1)}%, rgba(255,255,255,0) ${(shine * 140 - 10).toFixed(1)}%)` }} />}
+    </div>
   );
 };
 

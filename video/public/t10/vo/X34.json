@@ -1,189 +1,159 @@
 {
  "id": "X34",
- "hash": "493250c80e46",
- "text": "La narra Esther Cordero, en castellano, y los oyentes destacan cómo cambia de voz para cada personaje: un cuatro coma cuatro en Audible con ciento sesenta valoraciones. Catorce horas, y está en casi todas las plataformas.",
- "duration": 14.56,
+ "hash": "0097e06d997d",
+ "text": "Escuchada, da todavía más miedo: Esther Cordero cambia de voz para cada personaje, y los oyentes le dan un cuatro coma cuatro. En SonorBooks tienes dónde escucharla gratis, hoy mismo.",
+ "duration": 12.88,
  "words": [
   {
-   "w": "La",
+   "w": "Escuchada,",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.88
   },
   {
-   "w": "narra",
-   "s": 0.24,
-   "e": 0.48
+   "w": "da",
+   "s": 0.96,
+   "e": 1.12
   },
   {
-   "w": "Esther",
-   "s": 0.6,
-   "e": 0.8
-  },
-  {
-   "w": "Cordero,",
-   "s": 0.88,
-   "e": 1.52
-  },
-  {
-   "w": "en",
-   "s": 1.6,
+   "w": "todavía",
+   "s": 1.2,
    "e": 1.68
   },
   {
-   "w": "castellano,",
+   "w": "más",
    "s": 1.76,
-   "e": 2.72
+   "e": 2.0
   },
   {
-   "w": "y",
-   "s": 2.76,
-   "e": 2.8
-  },
-  {
-   "w": "los",
-   "s": 2.88,
+   "w": "miedo:",
+   "s": 2.08,
    "e": 2.96
   },
   {
-   "w": "oyentes",
-   "s": 3.04,
-   "e": 3.44
+   "w": "Esther",
+   "s": 3.08,
+   "e": 3.28
   },
   {
-   "w": "destacan",
-   "s": 3.56,
-   "e": 3.92
-  },
-  {
-   "w": "cómo",
-   "s": 4.08,
-   "e": 4.32
+   "w": "Cordero",
+   "s": 3.36,
+   "e": 3.84
   },
   {
    "w": "cambia",
-   "s": 4.36,
-   "e": 4.64
+   "s": 3.88,
+   "e": 4.16
   },
   {
    "w": "de",
-   "s": 4.72,
-   "e": 4.8
+   "s": 4.2,
+   "e": 4.24
   },
   {
    "w": "voz",
-   "s": 4.88,
-   "e": 5.04
+   "s": 4.32,
+   "e": 4.48
   },
   {
    "w": "para",
-   "s": 5.12,
-   "e": 5.28
+   "s": 4.56,
+   "e": 4.72
   },
   {
    "w": "cada",
-   "s": 5.36,
-   "e": 5.6
+   "s": 4.8,
+   "e": 5.04
   },
   {
-   "w": "personaje:",
-   "s": 5.68,
-   "e": 6.72
+   "w": "personaje,",
+   "s": 5.2,
+   "e": 6.0
   },
   {
-   "w": "un",
-   "s": 6.84,
+   "w": "y",
+   "s": 6.04,
+   "e": 6.08
+  },
+  {
+   "w": "los",
+   "s": 6.16,
+   "e": 6.24
+  },
+  {
+   "w": "oyentes",
+   "s": 6.32,
+   "e": 6.8
+  },
+  {
+   "w": "le",
+   "s": 6.88,
    "e": 6.96
   },
   {
+   "w": "dan",
+   "s": 7.04,
+   "e": 7.12
+  },
+  {
+   "w": "un",
+   "s": 7.24,
+   "e": 7.36
+  },
+  {
    "w": "cuatro",
-   "s": 7.0,
-   "e": 7.2
+   "s": 7.4,
+   "e": 7.68
   },
   {
    "w": "coma",
-   "s": 7.28,
-   "e": 7.44
-  },
-  {
-   "w": "cuatro",
-   "s": 7.52,
-   "e": 7.76
-  },
-  {
-   "w": "en",
    "s": 7.84,
    "e": 8.0
   },
   {
-   "w": "Audible",
-   "s": 8.08,
-   "e": 8.4
+   "w": "cuatro.",
+   "s": 8.16,
+   "e": 8.96
   },
   {
-   "w": "con",
-   "s": 8.48,
-   "e": 8.72
+   "w": "En",
+   "s": 9.04,
+   "e": 9.12
   },
   {
-   "w": "ciento",
-   "s": 8.76,
-   "e": 9.04
+   "w": "SonorBooks",
+   "s": 9.2,
+   "e": 9.84
   },
   {
-   "w": "sesenta",
-   "s": 9.12,
-   "e": 9.52
+   "w": "tienes",
+   "s": 10.0,
+   "e": 10.32
   },
   {
-   "w": "valoraciones.",
-   "s": 9.6,
-   "e": 10.8
+   "w": "dónde",
+   "s": 10.36,
+   "e": 10.64
   },
   {
-   "w": "Catorce",
-   "s": 10.84,
-   "e": 11.28
+   "w": "escucharla",
+   "s": 10.72,
+   "e": 11.2
   },
   {
-   "w": "horas,",
-   "s": 11.36,
-   "e": 12.08
+   "w": "gratis,",
+   "s": 11.28,
+   "e": 11.92
   },
   {
-   "w": "y",
-   "s": 12.12,
+   "w": "hoy",
+   "s": 12.0,
    "e": 12.16
   },
   {
-   "w": "está",
-   "s": 12.28,
-   "e": 12.44
-  },
-  {
-   "w": "en",
-   "s": 12.48,
-   "e": 12.64
-  },
-  {
-   "w": "casi",
-   "s": 12.72,
+   "w": "mismo.",
+   "s": 12.24,
    "e": 12.88
-  },
-  {
-   "w": "todas",
-   "s": 13.04,
-   "e": 13.36
-  },
-  {
-   "w": "las",
-   "s": 13.44,
-   "e": 13.52
-  },
-  {
-   "w": "plataformas.",
-   "s": 13.6,
-   "e": 14.56
   }
  ],
- "speechEnd": 14.387
+ "speechEnd": 12.709
 }

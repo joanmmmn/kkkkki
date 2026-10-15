@@ -30,6 +30,32 @@ export const coverSrc = (name: string) => staticFile(`t10/covers/${name}.jpg`);
 export const bgSrc = (name: string) => staticFile(`t10/covers/bg_${name}.jpg`);
 export const mainCover = (p: number) => COVERS[p][0];
 
+// ———————————————— Censura ————————————————
+// Al principio del vídeo las portadas salen censuradas (mosaico + «?») y cada una se descensura cuando entra su libro
+// (petición de Joan, 15/10). Mosaicos pregenerados con ffmpeg (mz{N}_{portada}.png, 1200 px, de N×N teselas).
+export const MOSAIC = [8, 12, 18, 28, 44, 70];
+export const mosaicSrc = (name: string, n: number) => staticFile(`t10/covers/mz${n}_${name}.png`);
+// Arte de la portada con censura: reveal 0 = mosaico grueso con «?»; 1 = portada nítida. Entre medias, el mosaico se afina a saltos.
+export const CoverArt: React.FC<{ name: string; size: number; reveal?: number; light?: number; mark?: boolean; radius?: number }> = ({ name, size, reveal = 1, light = 1, mark = true, radius = 0 }) => {
+  const r = Math.max(0, Math.min(1, reveal));
+  const lvl = Math.min(MOSAIC.length - 1, Math.floor(r * (MOSAIC.length + 1)));
+  const fine = Math.max(0, Math.min(1, (r - MOSAIC.length / (MOSAIC.length + 1)) * (MOSAIC.length + 1)));
+  const img: React.CSSProperties = { position: 'absolute', left: 0, top: 0, width: size, height: size, display: 'block', borderRadius: radius,
+    filter: light < 1 ? `brightness(${(0.25 + 0.75 * light).toFixed(3)})` : undefined };
+  const q = mark ? Math.max(0, 1 - r * 3) : 0;
+  return (
+    <div style={{ position: 'relative', width: size, height: size, overflow: 'hidden', borderRadius: radius }}>
+      {r < 1 && <Img src={mosaicSrc(name, MOSAIC[lvl])} style={img} />}
+      {fine > 0 && <Img src={coverSrc(name)} style={{ ...img, opacity: fine }} />}
+      {r < 1 && <div style={{ position: 'absolute', inset: 0, background: `rgba(0,0,0,${(0.3 * (1 - r)).toFixed(3)})` }} />}
+      {q > 0 && (
+        <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: q, transform: `scale(${(1 + 0.4 * (1 - q)).toFixed(3)})`,
+          fontFamily: font.sans, fontWeight: 700, fontSize: size * 0.5, lineHeight: 1, color: 'rgba(255,255,255,0.88)', textShadow: `0 ${size * 0.02}px ${size * 0.08}px rgba(0,0,0,0.6)` }}>?</div>
+      )}
+    </div>
+  );
+};
+
 export const sp = (frame: number, at: number, d = 15, s = 170, mass = 1) => spring({ frame: frame - at, fps: FPS, config: { damping: d, stiffness: s, mass } });
 export const ramp = (frame: number, a: number, b: number, ez = easeInOut) => interpolate(frame, [a, b], [0, 1], { ...clamp, easing: ez });
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -94,15 +120,15 @@ export const camStyle = (c: ReturnType<typeof camAt>, extra = { x: 0, y: 0, r: 0
 // ———————————————— Portadas ————————————————
 // Portada real en 3D: cuadrada, con canto, brillo que la recorre, sombra y reflejo en el suelo.
 export const Cover3D: React.FC<{
-  name: string; size: number; rx?: number; ry?: number; rz?: number; shine?: number; light?: number; reflect?: boolean; radius?: number; glow?: number; glowColor?: string; style?: React.CSSProperties;
-}> = ({ name, size, rx = 0, ry = 0, rz = 0, shine = -1, light = 1, reflect = false, radius, glow = 0, glowColor = 'rgba(255,202,5,', style }) => {
+  name: string; size: number; rx?: number; ry?: number; rz?: number; shine?: number; light?: number; reflect?: boolean; radius?: number; glow?: number; glowColor?: string; style?: React.CSSProperties; reveal?: number;
+}> = ({ name, size, rx = 0, ry = 0, rz = 0, shine = -1, light = 1, reflect = false, radius, glow = 0, glowColor = 'rgba(255,202,5,', style, reveal = 1 }) => {
   const R = radius ?? size * 0.022;
   const depth = size * 0.035;
   const sh = shine;
   const face: React.CSSProperties = { position: 'absolute', left: 0, top: 0, width: size, height: size, borderRadius: R, overflow: 'hidden' };
   const art = (
     <>
-      <Img src={coverSrc(name)} style={{ width: size, height: size, display: 'block', filter: light < 1 ? `brightness(${(0.25 + 0.75 * light).toFixed(3)})` : undefined }} />
+      <CoverArt name={name} size={size} reveal={reveal} light={light} />
       {sh > -1 && sh < 2 && (
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(115deg, rgba(255,255,255,0) ${(-30 + sh * 130).toFixed(1)}%, rgba(255,255,255,0.32) ${(-18 + sh * 130).toFixed(1)}%, rgba(255,255,255,0) ${(-4 + sh * 130).toFixed(1)}%)`, mixBlendMode: 'screen' }} />
       )}
@@ -127,7 +153,7 @@ export const Cover3D: React.FC<{
         <div style={{ position: 'absolute', left: 0, top: size + size * 0.04, width: size, height: size * 0.42, overflow: 'hidden', opacity: 0.22 * light, pointerEvents: 'none',
           WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,0.9), rgba(0,0,0,0) 85%)' }}>
           <div style={{ width: size, height: size, transform: `scaleY(-1) rotateY(${ry * 0.6}deg)`, transformOrigin: '50% 50%', marginTop: -size * 0.58 }}>
-            <Img src={coverSrc(name)} style={{ width: size, height: size, borderRadius: R, display: 'block' }} />
+            <CoverArt name={name} size={size} reveal={reveal} mark={false} radius={R} />
           </div>
         </div>
       )}
@@ -215,6 +241,37 @@ export const FearMeter: React.FC<{ n: number; at: number; out: number; x?: numbe
         })}
       </div>
       <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 22 * k, color: 'rgba(239,232,220,0.75)' }}>{n}<span style={{ opacity: 0.55 }}>/10</span></span>
+    </div>
+  );
+};
+
+// Tira de las diez portadas (del 10 al 1): las ya vistas, nítidas; la del libro actual se descensura con `reveal`;
+// las que faltan siguen censuradas. Bajo la actual, una raya roja que crece (más roja cuanto más cerca del 1).
+export const CoverStrip: React.FC<{ n: number; at: number; out: number; reveal: number; x?: number; y?: number; size?: number }> = ({ n, at, out, reveal, x = 1430, y = 975, size = 70 }) => {
+  const frame = useCurrentFrame();
+  const inn = sp(frame, at, 16, 150);
+  const o = 1 - ramp(frame, out - 10, out);
+  if (inn <= 0.001 || o <= 0) return null;
+  const gap = size * 0.17;
+  return (
+    <div style={{ position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) translateY(${((1 - inn) * 50).toFixed(1)}px)`, opacity: Math.min(1, inn * 1.4) * o, display: 'flex', gap, alignItems: 'flex-end' }}>
+      {Array.from({ length: 10 }).map((_, i) => {
+        const k = 10 - i; // 10 … 1
+        const cur = k === n;
+        const s = sp(frame, at + 4 + i * 2, 13, 190);
+        const pop = cur ? sp(frame, at + 10, 11, 170) : 0;
+        const red = i / 9;
+        return (
+          <div key={k} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: size * 0.12, transform: `translateY(${((1 - s) * 24 - pop * size * 0.18).toFixed(1)}px) scale(${(1 + 0.22 * pop).toFixed(3)})`, transformOrigin: '50% 100%', opacity: Math.min(1, s * 1.5) }}>
+            <div style={{ borderRadius: size * 0.08, overflow: 'hidden', boxShadow: cur ? `0 0 0 ${Math.max(2, size * 0.04)}px ${k === 1 ? '#C1121F' : color.yellow}, 0 10px 26px rgba(0,0,0,0.6)` : '0 8px 20px rgba(0,0,0,0.55)', opacity: k < n ? 0.8 : 1 }}>
+              <CoverArt name={COVERS[11 - k][0]} size={size} reveal={k > n ? 1 : cur ? reveal : 0} mark={k <= n} />
+            </div>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: size * 0.3, color: cur ? '#fff' : 'rgba(239,232,220,0.5)' }}>{k}</span>
+            <div style={{ width: size * 0.7, height: Math.max(3, size * 0.05), borderRadius: 3, background: `rgba(${Math.round(120 + 110 * red)}, ${Math.round(110 - 92 * red)}, ${Math.round(110 - 80 * red)}, ${k >= n ? 0.9 : 0.15})`,
+              transform: `scaleX(${k > n ? 1 : cur ? ramp(frame, at + 12, at + 30) : 1})` }} />
+          </div>
+        );
+      })}
     </div>
   );
 };

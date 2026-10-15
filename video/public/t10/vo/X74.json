@@ -1,22 +1,22 @@
 {
  "id": "X74",
- "hash": "0a7af05bce01",
- "text": "Paula Iwasaki la narra con voz de aquí, seca y sin sobreactuar: más de cuatrocientas valoraciones y un cuatro coma seis en la narración. Son tres horas: se escucha en una noche.",
- "duration": 12.72,
+ "hash": "7506e556e20f",
+ "text": "Paula Iwasaki la narra seca, sin sobreactuar, y más de cuatrocientos oyentes le dan un cuatro coma seis. Son tres horas: se escucha en una noche. Y la puedes empezar esta misma noche, gratis.",
+ "duration": 14.08,
  "words": [
   {
    "w": "Paula",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.28
   },
   {
    "w": "Iwasaki",
-   "s": 0.36,
-   "e": 0.88
+   "s": 0.32,
+   "e": 0.96
   },
   {
    "w": "la",
-   "s": 0.96,
+   "s": 1.04,
    "e": 1.12
   },
   {
@@ -25,145 +25,155 @@
    "e": 1.44
   },
   {
-   "w": "con",
+   "w": "seca,",
    "s": 1.52,
-   "e": 1.6
-  },
-  {
-   "w": "voz",
-   "s": 1.68,
-   "e": 1.88
-  },
-  {
-   "w": "de",
-   "s": 1.92,
-   "e": 2.0
-  },
-  {
-   "w": "aquí,",
-   "s": 2.12,
-   "e": 2.68
-  },
-  {
-   "w": "seca",
-   "s": 2.72,
-   "e": 3.2
-  },
-  {
-   "w": "y",
-   "s": 3.24,
-   "e": 3.28
+   "e": 2.16
   },
   {
    "w": "sin",
-   "s": 3.36,
-   "e": 3.52
+   "s": 2.24,
+   "e": 2.4
   },
   {
-   "w": "sobreactuar:",
-   "s": 3.6,
-   "e": 4.76
-  },
-  {
-   "w": "más",
-   "s": 4.8,
-   "e": 4.96
-  },
-  {
-   "w": "de",
-   "s": 5.04,
-   "e": 5.12
-  },
-  {
-   "w": "cuatrocientas",
-   "s": 5.16,
-   "e": 5.76
-  },
-  {
-   "w": "valoraciones",
-   "s": 5.84,
-   "e": 6.64
+   "w": "sobreactuar,",
+   "s": 2.48,
+   "e": 3.48
   },
   {
    "w": "y",
-   "s": 6.72,
-   "e": 6.76
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "más",
+   "s": 3.64,
+   "e": 3.76
+  },
+  {
+   "w": "de",
+   "s": 3.84,
+   "e": 3.92
+  },
+  {
+   "w": "cuatrocientos",
+   "s": 3.96,
+   "e": 4.56
+  },
+  {
+   "w": "oyentes",
+   "s": 4.64,
+   "e": 5.12
+  },
+  {
+   "w": "le",
+   "s": 5.2,
+   "e": 5.28
+  },
+  {
+   "w": "dan",
+   "s": 5.36,
+   "e": 5.44
   },
   {
    "w": "un",
-   "s": 6.8,
-   "e": 6.96
+   "s": 5.52,
+   "e": 5.68
   },
   {
    "w": "cuatro",
-   "s": 7.04,
-   "e": 7.28
+   "s": 5.76,
+   "e": 6.08
   },
   {
    "w": "coma",
+   "s": 6.16,
+   "e": 6.4
+  },
+  {
+   "w": "seis.",
+   "s": 6.48,
+   "e": 7.32
+  },
+  {
+   "w": "Son",
    "s": 7.36,
    "e": 7.6
   },
   {
-   "w": "seis",
-   "s": 7.64,
+   "w": "tres",
+   "s": 7.72,
    "e": 7.84
   },
   {
-   "w": "en",
-   "s": 7.88,
-   "e": 7.92
-  },
-  {
-   "w": "la",
-   "s": 8.0,
-   "e": 8.08
-  },
-  {
-   "w": "narración.",
-   "s": 8.12,
-   "e": 9.16
-  },
-  {
-   "w": "Son",
-   "s": 9.2,
-   "e": 9.44
-  },
-  {
-   "w": "tres",
-   "s": 9.56,
-   "e": 9.68
-  },
-  {
    "w": "horas:",
-   "s": 9.76,
-   "e": 10.427
+   "s": 7.92,
+   "e": 8.6
   },
   {
    "w": "se",
-   "s": 10.453,
-   "e": 10.48
+   "s": 8.64,
+   "e": 8.72
   },
   {
    "w": "escucha",
-   "s": 10.56,
-   "e": 11.28
+   "s": 8.84,
+   "e": 9.2
   },
   {
    "w": "en",
-   "s": 11.36,
-   "e": 11.44
+   "s": 9.28,
+   "e": 9.36
   },
   {
    "w": "una",
-   "s": 11.52,
-   "e": 11.68
+   "s": 9.44,
+   "e": 9.52
   },
   {
    "w": "noche.",
-   "s": 11.8,
-   "e": 12.72
+   "s": 9.6,
+   "e": 10.36
+  },
+  {
+   "w": "Y",
+   "s": 10.4,
+   "e": 10.44
+  },
+  {
+   "w": "la",
+   "s": 10.48,
+   "e": 10.56
+  },
+  {
+   "w": "puedes",
+   "s": 10.6,
+   "e": 10.8
+  },
+  {
+   "w": "empezar",
+   "s": 10.88,
+   "e": 11.44
+  },
+  {
+   "w": "esta",
+   "s": 11.52,
+   "e": 11.84
+  },
+  {
+   "w": "misma",
+   "s": 11.96,
+   "e": 12.16
+  },
+  {
+   "w": "noche,",
+   "s": 12.24,
+   "e": 12.92
+  },
+  {
+   "w": "gratis.",
+   "s": 12.96,
+   "e": 14.08
   }
  ],
- "speechEnd": 12.133
+ "speechEnd": 13.519
 }

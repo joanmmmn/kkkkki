@@ -38,7 +38,7 @@ DOWNBEAT = 'starts instantly on a strong downbeat, no intro'
 BLOCKS = [
     ('a_hook', 'HOOK', 'Cold open', ['cold open: a lonely detuned music box melody over a deep drone from the very first second', 'a slow heartbeat pulse in the low end',
                                      'creaking bowed textures, tension growing', 'a dark swelling hit in the last two seconds'], ['long intro', 'slow fade in'], -17.0),
-    ('b_serie', 'SERIE', 'Title theme', [DOWNBEAT, 'title theme: a bold dark cinematic ostinato on low strings and piano at 90 BPM with deep hits', 'mysterious, confident, premium',
+    ('b_serie', 'REGLA', 'Title theme', [DOWNBEAT, 'title theme: a bold dark cinematic ostinato on low strings and piano at 90 BPM with deep hits', 'mysterious, confident, premium',
                                           'after fifteen seconds it settles into a tense pulsing bed'], ['bright', 'major key'], -16.0),
     ('c_libros1', 'B1', 'Suspense A', [DOWNBEAT, 'suspense bed: steady low pulse, sparse prepared piano notes, sustained cello drones and soft ticking', 'patient, atmospheric, slowly evolving',
                                         'a continuous pulse that never stops'], ['breaks', 'pauses', 'riser'], -16.5),

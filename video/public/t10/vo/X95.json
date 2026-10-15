@@ -1,8 +1,8 @@
 {
  "id": "X95",
- "hash": "b06cf7026367",
- "text": "Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y está en todas las grandes plataformas.",
- "duration": 8.0,
+ "hash": "23485cd3fd34",
+ "text": "Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y lo puedes empezar hoy mismo, gratis.",
+ "duration": 8.08,
  "words": [
   {
    "w": "Son",
@@ -11,27 +11,27 @@
   },
   {
    "w": "veintitrés",
-   "s": 0.32,
-   "e": 0.96
+   "s": 0.4,
+   "e": 1.04
   },
   {
    "w": "horas.",
-   "s": 1.04,
-   "e": 1.84
+   "s": 1.12,
+   "e": 1.92
   },
   {
    "w": "Un",
-   "s": 1.92,
-   "e": 2.0
+   "s": 2.0,
+   "e": 2.08
   },
   {
    "w": "viaje",
-   "s": 2.12,
-   "e": 2.4
+   "s": 2.2,
+   "e": 2.48
   },
   {
    "w": "largo,",
-   "s": 2.44,
+   "s": 2.52,
    "e": 3.12
   },
   {
@@ -51,54 +51,54 @@
   },
   {
    "w": "a",
-   "s": 3.84,
-   "e": 3.88
+   "s": 3.8,
+   "e": 3.84
   },
   {
    "w": "querer",
    "s": 3.92,
-   "e": 4.16
+   "e": 4.08
   },
   {
    "w": "bajarte.",
-   "s": 4.24,
-   "e": 4.8
+   "s": 4.16,
+   "e": 5.04
   },
   {
    "w": "Y",
-   "s": 5.28,
-   "e": 5.36
+   "s": 5.08,
+   "e": 5.12
   },
   {
-   "w": "está",
-   "s": 5.48,
-   "e": 5.68
+   "w": "lo",
+   "s": 5.2,
+   "e": 5.28
   },
   {
-   "w": "en",
-   "s": 5.8,
-   "e": 5.92
+   "w": "puedes",
+   "s": 5.333,
+   "e": 5.52
   },
   {
-   "w": "todas",
-   "s": 6.0,
-   "e": 6.32
+   "w": "empezar",
+   "s": 5.6,
+   "e": 6.0
   },
   {
-   "w": "las",
-   "s": 6.4,
-   "e": 6.48
+   "w": "hoy",
+   "s": 6.24,
+   "e": 6.4
   },
   {
-   "w": "grandes",
-   "s": 6.56,
-   "e": 6.88
+   "w": "mismo,",
+   "s": 6.48,
+   "e": 7.2
   },
   {
-   "w": "plataformas.",
-   "s": 6.96,
-   "e": 8.0
+   "w": "gratis.",
+   "s": 7.28,
+   "e": 8.08
   }
  ],
- "speechEnd": 7.759
+ "speechEnd": 7.876
 }

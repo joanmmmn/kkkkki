@@ -1,179 +1,94 @@
 {
  "id": "X05",
- "hash": "3560763ac227",
- "text": "La regla es sencilla: diez libros con fama de quitar el sueño y, de cada uno, la narración en español que tienes que escuchar, elegida por las notas y las opiniones de los oyentes.",
- "duration": 11.52,
+ "hash": "f340d792d1ca",
+ "text": "Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones de miles de oyentes y lectores.",
+ "duration": 6.64,
  "words": [
   {
-   "w": "La",
+   "w": "Para",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.16
   },
   {
-   "w": "regla",
-   "s": 0.16,
-   "e": 0.48
+   "w": "elegirlas,",
+   "s": 0.2,
+   "e": 1.12
   },
   {
-   "w": "es",
-   "s": 0.56,
-   "e": 0.64
+   "w": "en",
+   "s": 1.2,
+   "e": 1.28
   },
   {
-   "w": "sencilla:",
-   "s": 0.72,
-   "e": 1.76
+   "w": "SonorBooks",
+   "s": 1.36,
+   "e": 2.08
   },
   {
-   "w": "diez",
-   "s": 1.84,
-   "e": 2.0
+   "w": "hemos",
+   "s": 2.12,
+   "e": 2.32
   },
   {
-   "w": "libros",
-   "s": 2.08,
-   "e": 2.4
+   "w": "mirado",
+   "s": 2.4,
+   "e": 2.72
   },
   {
-   "w": "con",
-   "s": 2.48,
-   "e": 2.64
+   "w": "las",
+   "s": 2.8,
+   "e": 2.88
   },
   {
-   "w": "fama",
-   "s": 2.72,
-   "e": 2.96
+   "w": "notas",
+   "s": 2.96,
+   "e": 3.28
   },
   {
-   "w": "de",
-   "s": 3.0,
-   "e": 3.04
+   "w": "y",
+   "s": 3.36,
+   "e": 3.4
   },
   {
-   "w": "quitar",
-   "s": 3.08,
-   "e": 3.36
-  },
-  {
-   "w": "el",
+   "w": "las",
    "s": 3.44,
    "e": 3.52
   },
   {
-   "w": "sueño",
-   "s": 3.56,
-   "e": 4.24
-  },
-  {
-   "w": "y,",
-   "s": 4.32,
-   "e": 4.373
+   "w": "opiniones",
+   "s": 3.6,
+   "e": 4.16
   },
   {
    "w": "de",
-   "s": 4.4,
-   "e": 4.48
+   "s": 4.28,
+   "e": 4.4
   },
   {
-   "w": "cada",
-   "s": 4.52,
+   "w": "miles",
+   "s": 4.44,
    "e": 4.72
   },
   {
-   "w": "uno,",
+   "w": "de",
    "s": 4.8,
-   "e": 5.32
+   "e": 4.88
   },
   {
-   "w": "la",
-   "s": 5.36,
-   "e": 5.44
-  },
-  {
-   "w": "narración",
-   "s": 5.48,
-   "e": 5.92
-  },
-  {
-   "w": "en",
-   "s": 5.96,
-   "e": 6.0
-  },
-  {
-   "w": "español",
-   "s": 6.08,
-   "e": 6.56
-  },
-  {
-   "w": "que",
-   "s": 6.64,
-   "e": 6.8
-  },
-  {
-   "w": "tienes",
-   "s": 6.84,
-   "e": 7.12
-  },
-  {
-   "w": "que",
-   "s": 7.2,
-   "e": 7.24
-  },
-  {
-   "w": "escuchar,",
-   "s": 7.28,
-   "e": 8.12
-  },
-  {
-   "w": "elegida",
-   "s": 8.16,
-   "e": 8.56
-  },
-  {
-   "w": "por",
-   "s": 8.64,
-   "e": 8.72
-  },
-  {
-   "w": "las",
-   "s": 8.8,
-   "e": 8.96
-  },
-  {
-   "w": "notas",
-   "s": 9.08,
-   "e": 9.36
+   "w": "oyentes",
+   "s": 4.96,
+   "e": 5.36
   },
   {
    "w": "y",
-   "s": 9.4,
-   "e": 9.44
+   "s": 5.44,
+   "e": 5.48
   },
   {
-   "w": "las",
-   "s": 9.52,
-   "e": 9.6
-  },
-  {
-   "w": "opiniones",
-   "s": 9.68,
-   "e": 10.16
-  },
-  {
-   "w": "de",
-   "s": 10.2,
-   "e": 10.24
-  },
-  {
-   "w": "los",
-   "s": 10.32,
-   "e": 10.4
-  },
-  {
-   "w": "oyentes.",
-   "s": 10.48,
-   "e": 11.52
+   "w": "lectores.",
+   "s": 5.52,
+   "e": 6.64
   }
  ],
- "speechEnd": 11.057
+ "speechEnd": 6.146
 }

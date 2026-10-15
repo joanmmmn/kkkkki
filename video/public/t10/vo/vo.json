@@ -13,27 +13,20 @@
  "scenes": [
   {
    "id": "X01",
-   "text": "Hay libros que asustan."
+   "text": "Hay historias que asustan."
   },
   {
    "id": "X02",
-   "text": "Y hay libros que, escuchados de noche, con los auriculares puestos y la luz apagada, no te dejan dormir."
+   "text": "Y hay historias que, cuando apagas la luz, siguen ahí. Y no te dejan dormir."
   },
   {
    "id": "X03",
-   "text": "Estos son los diez libros de terror que dan miedo de verdad. Y la voz con la que tienes que escucharlos."
-  },
-  {
-   "id": "X04",
-   "text": "Esto es «Los diez mejores»: en cada episodio, los diez mejores libros de un género y la voz con la que escucharlos. Hoy toca terror."
+   "text": "Estas son las diez historias de terror que dan miedo de verdad."
   },
   {
    "id": "X05",
-   "text": "La regla es sencilla: diez libros con fama de quitar el sueño y, de cada uno, la narración en español que tienes que escuchar, elegida por las notas y las opiniones de los oyentes."
-  },
-  {
-   "id": "X06",
-   "text": "Porque en el terror la voz lo cambia todo: el ritmo, los silencios, el susurro justo antes del golpe."
+   "text": "Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones de miles de oyentes y lectores.",
+   "say": "Para elegirlas, en Sónorbuks hemos mirado las notas y las opiniones de miles de oyentes y lectores."
   },
   {
    "id": "X07",
@@ -55,7 +48,7 @@
   },
   {
    "id": "X14",
-   "text": "Escúchalo con Benjamín Figueres: castellano, sin prisas, como quien lee un informe que no debería haber encontrado. Dura solo dos horas y está en casi todas las plataformas."
+   "text": "Y si quieres vivirla de verdad, escúchala: Benjamín Figueres la lee sin prisas, como quien encuentra un informe que no debería haber leído. Son dos horas, y puedes empezarla hoy mismo, gratis."
   },
   {
    "id": "X21",
@@ -95,7 +88,8 @@
   },
   {
    "id": "X34",
-   "text": "La narra Esther Cordero, en castellano, y los oyentes destacan cómo cambia de voz para cada personaje: un cuatro coma cuatro en Audible con ciento sesenta valoraciones. Catorce horas, y está en casi todas las plataformas."
+   "text": "Escuchada, da todavía más miedo: Esther Cordero cambia de voz para cada personaje, y los oyentes le dan un cuatro coma cuatro. En SonorBooks tienes dónde escucharla gratis, hoy mismo.",
+   "say": "Escuchada, da todavía más miedo: Esther Cordero cambia de voz para cada personaje, y los oyentes le dan un cuatro coma cuatro. En Sónorbuks tienes dónde escucharla gratis, hoy mismo."
   },
   {
    "id": "X41",
@@ -136,8 +130,8 @@
   },
   {
    "id": "X55",
-   "text": "O como una película para los oídos: el nuevo Drácula original de Audible, una adaptación libre dirigida por Carlota Pereda, con Asier Etxeandia, Claudia Salas y un reparto de más de veinticinco actores. Dura casi seis horas, y es lo más parecido a pasar la noche en el castillo. Las dos, en Audible.",
-   "say": "O como una película para los oídos: el nuevo Drácula original de Audible, una adaptación libre dirigida por Carlota Pereda, con Asier Echeandía, Claudia Salas y un reparto de más de veinticinco actores. Dura casi seis horas, y es lo más parecido a pasar la noche en el castillo. Las dos, en Audible."
+   "text": "O como una película para los oídos: el Drácula original de Audible, con Asier Etxeandia, Claudia Salas y más de veinticinco actores. Lo más parecido a pasar la noche en el castillo. Y las dos entran en la prueba gratuita de Audible.",
+   "say": "O como una película para los oídos: el Drácula original de Audible, con Asier Echeandía, Claudia Salas y más de veinticinco actores. Lo más parecido a pasar la noche en el castillo. Y las dos entran en la prueba gratuita de Audible."
   },
   {
    "id": "X61",
@@ -160,8 +154,7 @@
   },
   {
    "id": "X65",
-   "text": "Es una adaptación de seis horas; la novela completa también está en audio, con una voz sintética autorizada, en Storytel, Nextory y Podimo.",
-   "say": "Es una adaptación de seis horas; la novela completa también está en audio, con una voz sintética autorizada, en Storytel, Nextory y Podímo."
+   "text": "Es una adaptación de seis horas; si prefieres la novela entera, también está en audio. Y las dos las puedes empezar gratis, con una prueba."
   },
   {
    "id": "X71",
@@ -179,7 +172,7 @@
   },
   {
    "id": "X74",
-   "text": "Paula Iwasaki la narra con voz de aquí, seca y sin sobreactuar: más de cuatrocientas valoraciones y un cuatro coma seis en la narración. Son tres horas: se escucha en una noche."
+   "text": "Paula Iwasaki la narra seca, sin sobreactuar, y más de cuatrocientos oyentes le dan un cuatro coma seis. Son tres horas: se escucha en una noche. Y la puedes empezar esta misma noche, gratis."
   },
   {
    "id": "X81",
@@ -201,8 +194,8 @@
   },
   {
    "id": "X85",
-   "text": "Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Apple Books y Google Play.",
-   "say": "Un cuatro coma nueve sobre cinco. Diecisiete horas, en Audible, Ápel Buks y Gúgel Pléi."
+   "text": "Un cuatro coma nueve sobre cinco. Y en SonorBooks te contamos cómo conseguirla gratis.",
+   "say": "Un cuatro coma nueve sobre cinco. Y en Sónorbuks te contamos cómo conseguirla gratis."
   },
   {
    "id": "X91",
@@ -222,7 +215,7 @@
   },
   {
    "id": "X95",
-   "text": "Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y está en todas las grandes plataformas."
+   "text": "Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y lo puedes empezar hoy mismo, gratis."
   },
   {
    "id": "X101",
@@ -241,7 +234,7 @@
   },
   {
    "id": "X104",
-   "text": "La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible. Trece horas, en Audible."
+   "text": "La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible."
   },
   {
    "id": "X105",
@@ -253,12 +246,12 @@
   },
   {
    "id": "X112",
-   "text": "Cada uno de estos audiolibros tiene su ficha en SonorBooks, con las plataformas donde está esa narración y si puedes empezarla gratis con una prueba. Los enlaces están en la descripción, y en nuestro blog tienes la lista completa.",
-   "say": "Cada uno de estos audiolibros tiene su ficha en Sónorbuks, con las plataformas donde está esa narración y si puedes empezarla gratis con una prueba. Los enlaces están en la descripción, y en nuestro blog tienes la lista completa."
+   "text": "Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis. En SonorBooks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al play y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog.",
+   "say": "Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis. En Sónorbuks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al plei y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog."
   },
   {
    "id": "X113",
-   "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género quieres para el próximo «Los diez mejores»?"
+   "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que te traigamos después?"
   },
   {
    "id": "X114",
@@ -266,8 +259,8 @@
   },
   {
    "id": "Y01",
-   "text": "Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.",
-   "say": "Número uno de los libros de terror que dan miedo de verdad: «El exorcista», de Wíliam Píter Bláti."
+   "text": "Número uno de las historias de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.",
+   "say": "Número uno de las historias de terror que dan miedo de verdad: «El exorcista», de Wíliam Píter Bláti."
   },
   {
    "id": "Y02",
