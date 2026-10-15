@@ -1,0 +1,139 @@
+{
+ "id": "D49",
+ "hash": "b2a161913a8a",
+ "text": "Las grandes preguntas: Memorias del subsuelo, El sueño de un hombre ridículo y El gran inquisidor. Y al final de todos los caminos, Los hermanos Karamázov.",
+ "duration": 11.28,
+ "words": [
+  {
+   "w": "Las",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "grandes",
+   "s": 0.4,
+   "e": 0.64
+  },
+  {
+   "w": "preguntas:",
+   "s": 0.72,
+   "e": 1.84
+  },
+  {
+   "w": "Memorias",
+   "s": 1.92,
+   "e": 2.4
+  },
+  {
+   "w": "del",
+   "s": 2.48,
+   "e": 2.56
+  },
+  {
+   "w": "subsuelo,",
+   "s": 2.64,
+   "e": 3.6
+  },
+  {
+   "w": "El",
+   "s": 3.68,
+   "e": 3.76
+  },
+  {
+   "w": "sueño",
+   "s": 3.84,
+   "e": 4.16
+  },
+  {
+   "w": "de",
+   "s": 4.24,
+   "e": 4.28
+  },
+  {
+   "w": "un",
+   "s": 4.32,
+   "e": 4.4
+  },
+  {
+   "w": "hombre",
+   "s": 4.48,
+   "e": 4.72
+  },
+  {
+   "w": "ridículo",
+   "s": 4.8,
+   "e": 5.68
+  },
+  {
+   "w": "y",
+   "s": 5.72,
+   "e": 5.76
+  },
+  {
+   "w": "El",
+   "s": 5.84,
+   "e": 5.92
+  },
+  {
+   "w": "gran",
+   "s": 6.0,
+   "e": 6.16
+  },
+  {
+   "w": "inquisidor.",
+   "s": 6.24,
+   "e": 7.36
+  },
+  {
+   "w": "Y",
+   "s": 7.4,
+   "e": 7.44
+  },
+  {
+   "w": "al",
+   "s": 7.52,
+   "e": 7.6
+  },
+  {
+   "w": "final",
+   "s": 7.76,
+   "e": 7.92
+  },
+  {
+   "w": "de",
+   "s": 8.0,
+   "e": 8.08
+  },
+  {
+   "w": "todos",
+   "s": 8.24,
+   "e": 8.4
+  },
+  {
+   "w": "los",
+   "s": 8.48,
+   "e": 8.56
+  },
+  {
+   "w": "caminos,",
+   "s": 8.6,
+   "e": 9.4
+  },
+  {
+   "w": "Los",
+   "s": 9.44,
+   "e": 9.6
+  },
+  {
+   "w": "hermanos",
+   "s": 9.68,
+   "e": 10.16
+  },
+  {
+   "w": "Karamázov.",
+   "s": 10.2,
+   "e": 11.28
+  }
+ ],
+ "speechEnd": 10.907
+}

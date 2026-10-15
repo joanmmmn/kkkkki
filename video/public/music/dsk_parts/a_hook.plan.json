@@ -1,0 +1,58 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 0,
+ "end_frame": 973,
+ "levels": [
+  -17.0
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the novels of Fyodor Dostoevsky",
+   "nineteenth-century Saint Petersburg atmosphere, introspective and literary, elegant and modern at the same time",
+   "key of A minor, around 92 BPM unless stated otherwise",
+   "felt piano, solo cello, warm string quartet and string pads, celesta, soft tubular bells, plucked domra-like strings, subtle low percussion, gentle sub bass",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "cliche russian folk dance",
+   "balalaika solo",
+   "accordion",
+   "jump scare stingers",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Cold open",
+    "positive_local_styles": [
+     "cold open at dawn in the snow: a low held cello note and a distant, muted military snare roll from the very first second",
+     "tension slowly builds for twelve seconds with a ticking clock-like pulse and soft timpani",
+     "at twelve seconds the drums and pulse stop at once and only a quiet high string note hangs for three seconds",
+     "at fifteen seconds a warm, relieved string chord blooms and a fragile solo piano melody begins",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "long intro",
+     "slow fade in",
+     "marching band",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 27460,
+    "lines": []
+   }
+  ]
+ }
+}

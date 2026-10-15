@@ -30,6 +30,10 @@ web/storytel-resena/preview-movil/
 video/public/music/skg_parts/*.mp3
 !video/public/music/skg_parts/*.raw.mp3
 
+# Por dónde empezar · Dostoievski: igual (las niveladas las rehace tools/dsk_music.py join)
+video/public/music/dsk_parts/*.mp3
+!video/public/music/dsk_parts/*.raw.mp3
+
 # Copias de revisión (se entregan por el chat y en el PC; el máster va en Git LFS)
 deliverables/autores/*/*_revision_720p.mp4
 

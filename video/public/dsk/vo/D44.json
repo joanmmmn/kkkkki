@@ -1,0 +1,134 @@
+{
+ "id": "D44",
+ "hash": "c043ef3b16be",
+ "text": "Dos: ¿voz humana o digital? Hay voces sintéticas que leen novelas enteras. Escucha siempre la muestra. Y en SonorBooks, fíjate en la etiqueta «voz digital».",
+ "duration": 12.0,
+ "words": [
+  {
+   "w": "Dos:",
+   "s": 0.0,
+   "e": 0.88
+  },
+  {
+   "w": "¿voz",
+   "s": 0.933,
+   "e": 1.12
+  },
+  {
+   "w": "humana",
+   "s": 1.2,
+   "e": 1.52
+  },
+  {
+   "w": "o",
+   "s": 1.68,
+   "e": 1.76
+  },
+  {
+   "w": "digital?",
+   "s": 2.04,
+   "e": 2.96
+  },
+  {
+   "w": "Hay",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "voces",
+   "s": 3.16,
+   "e": 3.44
+  },
+  {
+   "w": "sintéticas",
+   "s": 3.52,
+   "e": 4.16
+  },
+  {
+   "w": "que",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "leen",
+   "s": 4.44,
+   "e": 4.56
+  },
+  {
+   "w": "novelas",
+   "s": 4.64,
+   "e": 4.96
+  },
+  {
+   "w": "enteras.",
+   "s": 5.04,
+   "e": 6.0
+  },
+  {
+   "w": "Escucha",
+   "s": 6.12,
+   "e": 6.48
+  },
+  {
+   "w": "siempre",
+   "s": 6.56,
+   "e": 6.96
+  },
+  {
+   "w": "la",
+   "s": 7.0,
+   "e": 7.04
+  },
+  {
+   "w": "muestra.",
+   "s": 7.12,
+   "e": 7.6
+  },
+  {
+   "w": "Y",
+   "s": 8.0,
+   "e": 8.08
+  },
+  {
+   "w": "en",
+   "s": 8.16,
+   "e": 8.24
+  },
+  {
+   "w": "SonorBooks,",
+   "s": 8.32,
+   "e": 9.12
+  },
+  {
+   "w": "fíjate",
+   "s": 9.16,
+   "e": 9.52
+  },
+  {
+   "w": "en",
+   "s": 9.56,
+   "e": 9.6
+  },
+  {
+   "w": "la",
+   "s": 9.68,
+   "e": 9.72
+  },
+  {
+   "w": "etiqueta",
+   "s": 9.76,
+   "e": 10.24
+  },
+  {
+   "w": "«voz",
+   "s": 10.48,
+   "e": 10.72
+  },
+  {
+   "w": "digital».",
+   "s": 10.8,
+   "e": 12.0
+  }
+ ],
+ "speechEnd": 11.489
+}

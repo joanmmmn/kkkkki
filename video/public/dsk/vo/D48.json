@@ -1,0 +1,64 @@
+{
+ "id": "D48",
+ "hash": "204049ab7a4e",
+ "text": "Las grandes novelas: Crimen y castigo, El idiota y Los demonios.",
+ "duration": 5.28,
+ "words": [
+  {
+   "w": "Las",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "grandes",
+   "s": 0.24,
+   "e": 0.64
+  },
+  {
+   "w": "novelas:",
+   "s": 0.72,
+   "e": 1.68
+  },
+  {
+   "w": "Crimen",
+   "s": 1.72,
+   "e": 2.0
+  },
+  {
+   "w": "y",
+   "s": 2.08,
+   "e": 2.12
+  },
+  {
+   "w": "castigo,",
+   "s": 2.16,
+   "e": 2.96
+  },
+  {
+   "w": "El",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "idiota",
+   "s": 3.24,
+   "e": 3.84
+  },
+  {
+   "w": "y",
+   "s": 3.92,
+   "e": 3.96
+  },
+  {
+   "w": "Los",
+   "s": 4.0,
+   "e": 4.16
+  },
+  {
+   "w": "demonios.",
+   "s": 4.24,
+   "e": 5.28
+  }
+ ],
+ "speechEnd": 4.888
+}

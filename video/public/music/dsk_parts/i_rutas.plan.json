@@ -1,0 +1,52 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 24944,
+ "end_frame": 27392,
+ "levels": [
+  -16.0
+ ],
+ "tail": false,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the novels of Fyodor Dostoevsky",
+   "nineteenth-century Saint Petersburg atmosphere, introspective and literary, elegant and modern at the same time",
+   "key of A minor, around 92 BPM unless stated otherwise",
+   "felt piano, solo cello, warm string quartet and string pads, celesta, soft tubular bells, plucked domra-like strings, subtle low percussion, gentle sub bass",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "cliche russian folk dance",
+   "balalaika solo",
+   "accordion",
+   "jump scare stingers",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Routes and outro",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "uplifting finale: the main piano motif returns with full strings, cello and steady drums, hopeful A major lift",
+     "after about thirty seconds the drums drop out for a warm calm outro",
+     "ends on a sustained final chord with a natural soft tail"
+    ],
+    "negative_local_styles": [
+     "abrupt cut",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 54960,
+    "lines": []
+   }
+  ]
+ }
+}

@@ -30,14 +30,22 @@ import { StorytelReviewShort, STR_SHORT_TOTAL } from './scenes/str/Short';
 import { StephenKingGuide } from './scenes/skg/Main';
 import { SKG_TOTAL } from './scenes/skg/timeline';
 import { SKThumbA, SKThumbB } from './scenes/skg/Thumb';
+import { DSKThumbA, DSKThumbB } from './scenes/dsk/Thumb';
 import { Lab3D, LAB_FRAMES } from './scenes/skg/three/Lab';
+import { DostoievskiGuide } from './scenes/dsk/Main';
+import { DSK_TOTAL } from './scenes/dsk/timeline';
+import { DskLab, DSK_LAB_FRAMES } from './scenes/dsk/three/Lab';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="DSKGuide" component={DostoievskiGuide} durationInFrames={DSK_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="DSKLab" component={DskLab} durationInFrames={Math.max(5000, DSK_LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
     <Composition id="SKLab3D" component={Lab3D} durationInFrames={Math.max(5000, LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKThumbB" component={SKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="DSKThumbA" component={DSKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="DSKThumbB" component={DSKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STRShort" component={StorytelReviewShort} durationInFrames={STR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

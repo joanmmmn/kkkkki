@@ -1,0 +1,149 @@
+{
+ "id": "D15",
+ "hash": "cf51db71ea9b",
+ "text": "Escribió cinco grandes novelas: Crimen y castigo, El idiota, Los demonios, El adolescente y Los hermanos Karamázov. Y muchas novelas cortas, que son la mejor manera de entrar.",
+ "duration": 12.88,
+ "words": [
+  {
+   "w": "Escribió",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "cinco",
+   "s": 0.64,
+   "e": 0.96
+  },
+  {
+   "w": "grandes",
+   "s": 1.04,
+   "e": 1.44
+  },
+  {
+   "w": "novelas:",
+   "s": 1.52,
+   "e": 2.44
+  },
+  {
+   "w": "Crimen",
+   "s": 2.48,
+   "e": 2.8
+  },
+  {
+   "w": "y",
+   "s": 2.827,
+   "e": 2.853
+  },
+  {
+   "w": "castigo,",
+   "s": 2.88,
+   "e": 3.8
+  },
+  {
+   "w": "El",
+   "s": 3.84,
+   "e": 3.92
+  },
+  {
+   "w": "idiota,",
+   "s": 4.0,
+   "e": 4.853
+  },
+  {
+   "w": "Los",
+   "s": 4.907,
+   "e": 4.96
+  },
+  {
+   "w": "demonios,",
+   "s": 5.0,
+   "e": 5.88
+  },
+  {
+   "w": "El",
+   "s": 5.92,
+   "e": 6.0
+  },
+  {
+   "w": "adolescente",
+   "s": 6.08,
+   "e": 7.04
+  },
+  {
+   "w": "y",
+   "s": 7.12,
+   "e": 7.16
+  },
+  {
+   "w": "Los",
+   "s": 7.2,
+   "e": 7.36
+  },
+  {
+   "w": "hermanos",
+   "s": 7.44,
+   "e": 7.92
+  },
+  {
+   "w": "Karamázov.",
+   "s": 8.0,
+   "e": 9.0
+  },
+  {
+   "w": "Y",
+   "s": 9.04,
+   "e": 9.12
+  },
+  {
+   "w": "muchas",
+   "s": 9.24,
+   "e": 9.44
+  },
+  {
+   "w": "novelas",
+   "s": 9.52,
+   "e": 9.84
+  },
+  {
+   "w": "cortas,",
+   "s": 9.88,
+   "e": 10.48
+  },
+  {
+   "w": "que",
+   "s": 10.56,
+   "e": 10.64
+  },
+  {
+   "w": "son",
+   "s": 10.76,
+   "e": 10.88
+  },
+  {
+   "w": "la",
+   "s": 10.92,
+   "e": 10.96
+  },
+  {
+   "w": "mejor",
+   "s": 11.04,
+   "e": 11.28
+  },
+  {
+   "w": "manera",
+   "s": 11.36,
+   "e": 11.68
+  },
+  {
+   "w": "de",
+   "s": 11.76,
+   "e": 11.8
+  },
+  {
+   "w": "entrar.",
+   "s": 11.84,
+   "e": 12.88
+  }
+ ],
+ "speechEnd": 12.35
+}

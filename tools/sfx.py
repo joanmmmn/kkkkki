@@ -52,6 +52,20 @@ KIT = {
     'sk_chime': ('Soft subway station chime, two gentle tones, clean, modern, no voice', 1.3, 0.7),
     'sk_peel': ('Peeling a paper sticker label off a book cover, short crisp tearing peel, close up', 0.8, 0.7),
     'sk_snow': ('Footsteps crunching in fresh deep snow, three slow steps, close up, no wind', 1.8, 0.6),
+    # Por dónde y cómo empezar a leer · Dostoievski (15/10/2026)
+    'dk_drumroll': ('Military snare drum roll slowly building, outdoors on a frozen square in winter, distant, no music', 4.5, 0.6),
+    'dk_rifles': ('A line of soldiers raising old muskets to their shoulders at once, metallic clicks and fabric rustle, outdoors, no gunshots', 1.6, 0.6),
+    'dk_gallop': ('A single horse galloping fast over packed snow and approaching, outdoors, no music', 2.6, 0.6),
+    'dk_bell': ('One deep Orthodox church bell strike with a long resonant tail, distant, cold air', 4.0, 0.6),
+    'dk_knock': ('Three urgent knocks on an old wooden apartment door at night, close up, dry', 1.2, 0.7),
+    'dk_chains': ('Heavy iron shackle chains dragging and clanking on a stone floor, close up, dry', 1.8, 0.7),
+    'dk_roulette': ('Roulette wheel spinning with the ivory ball rolling and bouncing into a pocket, close up, no voices, no music', 4.0, 0.6),
+    'dk_quill': ('Quill pen scratching quickly on paper, close up, dry', 1.6, 0.7),
+    'dk_match': ('Striking a match and lighting a candle, soft flare, close up, dry', 1.4, 0.7),
+    'dk_train': ('Old steam locomotive slowly arriving at a snowy station: hiss of steam and one short distant whistle, no music', 3.5, 0.6),
+    'dk_crowd': ('Large solemn crowd murmuring softly outdoors in winter and slow footsteps in snow, no distinguishable words, no music', 5.0, 0.5),
+    'dk_seal': ('Breaking a red wax seal on a folded letter, crisp crack and paper rustle, close up, dry', 0.8, 0.7),
+    'dk_water': ('Gentle canal water lapping against stone embankment at night, calm, no music', 4.0, 0.5),
 }
 
 

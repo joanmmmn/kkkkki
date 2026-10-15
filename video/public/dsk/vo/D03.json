@@ -1,0 +1,94 @@
+{
+ "id": "D03",
+ "hash": "abfd5197ff8e",
+ "text": "Ese hombre era Fiódor Dostoievski. Y después escribió algunas de las novelas más grandes de la historia.",
+ "duration": 7.12,
+ "words": [
+  {
+   "w": "Ese",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "hombre",
+   "s": 0.28,
+   "e": 0.72
+  },
+  {
+   "w": "era",
+   "s": 0.8,
+   "e": 1.04
+  },
+  {
+   "w": "Fiódor",
+   "s": 1.12,
+   "e": 1.52
+  },
+  {
+   "w": "Dostoievski.",
+   "s": 1.56,
+   "e": 2.8
+  },
+  {
+   "w": "Y",
+   "s": 2.88,
+   "e": 2.92
+  },
+  {
+   "w": "después",
+   "s": 2.96,
+   "e": 3.36
+  },
+  {
+   "w": "escribió",
+   "s": 3.44,
+   "e": 3.92
+  },
+  {
+   "w": "algunas",
+   "s": 4.0,
+   "e": 4.32
+  },
+  {
+   "w": "de",
+   "s": 4.36,
+   "e": 4.4
+  },
+  {
+   "w": "las",
+   "s": 4.48,
+   "e": 4.56
+  },
+  {
+   "w": "novelas",
+   "s": 4.64,
+   "e": 5.12
+  },
+  {
+   "w": "más",
+   "s": 5.16,
+   "e": 5.36
+  },
+  {
+   "w": "grandes",
+   "s": 5.44,
+   "e": 5.84
+  },
+  {
+   "w": "de",
+   "s": 5.92,
+   "e": 5.96
+  },
+  {
+   "w": "la",
+   "s": 6.0,
+   "e": 6.08
+  },
+  {
+   "w": "historia.",
+   "s": 6.28,
+   "e": 7.12
+  }
+ ],
+ "speechEnd": 6.687
+}

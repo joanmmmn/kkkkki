@@ -1,0 +1,74 @@
+{
+ "id": "D47",
+ "hash": "632cebbb3f60",
+ "text": "Resumiendo: tres rutas. Para tantear: Noches blancas, El jugador y Memorias del subsuelo.",
+ "duration": 8.16,
+ "words": [
+  {
+   "w": "Resumiendo:",
+   "s": 0.0,
+   "e": 1.2
+  },
+  {
+   "w": "tres",
+   "s": 1.36,
+   "e": 1.52
+  },
+  {
+   "w": "rutas.",
+   "s": 1.6,
+   "e": 2.64
+  },
+  {
+   "w": "Para",
+   "s": 2.72,
+   "e": 2.8
+  },
+  {
+   "w": "tantear:",
+   "s": 2.88,
+   "e": 3.92
+  },
+  {
+   "w": "Noches",
+   "s": 4.0,
+   "e": 4.32
+  },
+  {
+   "w": "blancas,",
+   "s": 4.4,
+   "e": 5.2
+  },
+  {
+   "w": "El",
+   "s": 5.28,
+   "e": 5.36
+  },
+  {
+   "w": "jugador",
+   "s": 5.44,
+   "e": 6.24
+  },
+  {
+   "w": "y",
+   "s": 6.28,
+   "e": 6.32
+  },
+  {
+   "w": "Memorias",
+   "s": 6.4,
+   "e": 6.88
+  },
+  {
+   "w": "del",
+   "s": 6.96,
+   "e": 7.04
+  },
+  {
+   "w": "subsuelo.",
+   "s": 7.12,
+   "e": 8.16
+  }
+ ],
+ "speechEnd": 7.754
+}

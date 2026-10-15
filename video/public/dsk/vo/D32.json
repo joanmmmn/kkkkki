@@ -1,0 +1,154 @@
+{
+ "id": "D32",
+ "hash": "ad0583dd50f1",
+ "text": "El príncipe Myshkin vuelve de Suiza, bueno hasta la ingenuidad, y queda atrapado entre dos mujeres y un rival peligroso. Dostoievski quería retratar a un hombre bueno de verdad.",
+ "duration": 11.84,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "príncipe",
+   "s": 0.2,
+   "e": 0.64
+  },
+  {
+   "w": "Myshkin",
+   "s": 0.68,
+   "e": 1.2
+  },
+  {
+   "w": "vuelve",
+   "s": 1.24,
+   "e": 1.52
+  },
+  {
+   "w": "de",
+   "s": 1.6,
+   "e": 1.68
+  },
+  {
+   "w": "Suiza,",
+   "s": 1.76,
+   "e": 2.52
+  },
+  {
+   "w": "bueno",
+   "s": 2.56,
+   "e": 2.88
+  },
+  {
+   "w": "hasta",
+   "s": 2.92,
+   "e": 3.12
+  },
+  {
+   "w": "la",
+   "s": 3.16,
+   "e": 3.2
+  },
+  {
+   "w": "ingenuidad,",
+   "s": 3.32,
+   "e": 4.28
+  },
+  {
+   "w": "y",
+   "s": 4.32,
+   "e": 4.4
+  },
+  {
+   "w": "queda",
+   "s": 4.52,
+   "e": 4.64
+  },
+  {
+   "w": "atrapado",
+   "s": 4.72,
+   "e": 5.12
+  },
+  {
+   "w": "entre",
+   "s": 5.2,
+   "e": 5.44
+  },
+  {
+   "w": "dos",
+   "s": 5.52,
+   "e": 5.6
+  },
+  {
+   "w": "mujeres",
+   "s": 5.68,
+   "e": 6.24
+  },
+  {
+   "w": "y",
+   "s": 6.32,
+   "e": 6.4
+  },
+  {
+   "w": "un",
+   "s": 6.48,
+   "e": 6.56
+  },
+  {
+   "w": "rival",
+   "s": 6.64,
+   "e": 7.04
+  },
+  {
+   "w": "peligroso.",
+   "s": 7.08,
+   "e": 8.12
+  },
+  {
+   "w": "Dostoievski",
+   "s": 8.16,
+   "e": 8.96
+  },
+  {
+   "w": "quería",
+   "s": 9.04,
+   "e": 9.28
+  },
+  {
+   "w": "retratar",
+   "s": 9.36,
+   "e": 9.76
+  },
+  {
+   "w": "a",
+   "s": 9.8,
+   "e": 9.84
+  },
+  {
+   "w": "un",
+   "s": 9.88,
+   "e": 9.92
+  },
+  {
+   "w": "hombre",
+   "s": 10.0,
+   "e": 10.4
+  },
+  {
+   "w": "bueno",
+   "s": 10.44,
+   "e": 10.72
+  },
+  {
+   "w": "de",
+   "s": 10.76,
+   "e": 10.8
+  },
+  {
+   "w": "verdad.",
+   "s": 10.88,
+   "e": 11.84
+  }
+ ],
+ "speechEnd": 11.3
+}

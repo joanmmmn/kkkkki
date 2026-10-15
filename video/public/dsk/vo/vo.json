@@ -1,0 +1,241 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "D01",
+   "text": "San Petersburgo, 22 de diciembre de 1849. Un escritor de veintiocho años espera, en pleno invierno, frente a un pelotón de fusilamiento.",
+   "say": "San Petersburgo, veintidós de diciembre de mil ochocientos cuarenta y nueve. Un escritor de veintiocho años espera, en pleno invierno, frente a un pelotón de fusilamiento."
+  },
+  {
+   "id": "D02",
+   "text": "En el último momento llega una orden del zar: les perdona la vida. Todo había sido un simulacro."
+  },
+  {
+   "id": "D03",
+   "text": "Ese hombre era Fiódor Dostoievski. Y después escribió algunas de las novelas más grandes de la historia.",
+   "say": "Ese hombre era Fiódor Dostoiévski. Y después escribió algunas de las novelas más grandes de la historia."
+  },
+  {
+   "id": "D04",
+   "text": "Pero tienen fama de largas, densas y llenas de nombres rusos imposibles. Así que la pregunta es: ¿por dónde empiezo?"
+  },
+  {
+   "id": "D05",
+   "text": "Y en audio hay otro problema. Solo de Crimen y castigo, en SonorBooks hay más de veinte grabaciones en español. Unas duran dos horas y otras más de veinte. Unas las leen actores, y otras, voces digitales.",
+   "say": "Y en audio hay otro problema. Solo de Crimen y castigo, en Sónorbuks hay más de veinte grabaciones en español. Unas duran dos horas y otras más de veinte. Unas las leen actores, y otras, voces digitales."
+  },
+  {
+   "id": "D06",
+   "text": "Así que aquí tienes un mapa: quién era, cinco puertas de entrada según lo que busques, qué dejar para después y qué versión escuchar."
+  },
+  {
+   "id": "D07",
+   "text": "Nació en Moscú en 1821. Su padre era médico en un hospital para pobres, y a él lo mandaron a San Petersburgo a estudiar para ingeniero militar. Pero lo que quería era escribir.",
+   "say": "Nació en Moscú en mil ochocientos veintiuno. Su padre era médico en un hospital para pobres, y a él lo mandaron a San Petersburgo a estudiar para ingeniero militar. Pero lo que quería era escribir."
+  },
+  {
+   "id": "D08",
+   "text": "Su primera novela, Pobres gentes, gustó tanto que su compañero de piso y el poeta Nekrásov la leyeron de un tirón y, a las cuatro de la mañana, fueron a despertarlo para felicitarlo. Tenía veintitrés años."
+  },
+  {
+   "id": "D09",
+   "text": "En 1849 lo detuvieron por reunirse con un círculo que discutía ideas prohibidas. Después del simulacro, pasó cuatro años en un presidio de Siberia, encadenado, y luego otros cinco como soldado.",
+   "say": "En mil ochocientos cuarenta y nueve lo detuvieron por reunirse con un círculo que discutía ideas prohibidas. Después del simulacro, pasó cuatro años en un presidio de Siberia, encadenado, y luego otros cinco como soldado."
+  },
+  {
+   "id": "D10",
+   "text": "En el presidio, el único libro que le dejaban leer era el Nuevo Testamento."
+  },
+  {
+   "id": "D11",
+   "text": "Después llegaron la ruleta y las deudas. Y en 1865 firmó un contrato terrible: si no entregaba una novela nueva antes del 1 de noviembre del año siguiente, el editor podría publicar gratis todo lo que escribiera durante nueve años.",
+   "say": "Después llegaron la ruleta y las deudas. Y en mil ochocientos sesenta y cinco firmó un contrato terrible: si no entregaba una novela nueva antes del primero de noviembre del año siguiente, el editor podría publicar gratis todo lo que escribiera durante nueve años."
+  },
+  {
+   "id": "D12",
+   "text": "Contrató a una taquígrafa, Anna Snítkina, y le dictó El jugador en veintiséis días. Llegó a tiempo. Y unos meses después se casó con ella.",
+   "say": "Contrató a una taquígrafa, Ana Snítkina, y le dictó El jugador en veintiséis días. Llegó a tiempo. Y unos meses después se casó con ella."
+  },
+  {
+   "id": "D13",
+   "text": "Murió en 1881, pocos meses después de terminar Los hermanos Karamázov. Decenas de miles de personas acompañaron su ataúd.",
+   "say": "Murió en mil ochocientos ochenta y uno, pocos meses después de terminar Los hermanos Karamázov. Decenas de miles de personas acompañaron su ataúd."
+  },
+  {
+   "id": "D14",
+   "text": "Sus novelas parecen thrillers: un asesinato, una deuda, un juicio, una pasión. Pero lo que te atrapa son las preguntas: la culpa, la libertad, la fe, el dinero.",
+   "say": "Sus novelas parecen thrílers: un asesinato, una deuda, un juicio, una pasión. Pero lo que te atrapa son las preguntas: la culpa, la libertad, la fe, el dinero."
+  },
+  {
+   "id": "D15",
+   "text": "Escribió cinco grandes novelas: Crimen y castigo, El idiota, Los demonios, El adolescente y Los hermanos Karamázov. Y muchas novelas cortas, que son la mejor manera de entrar."
+  },
+  {
+   "id": "D16",
+   "text": "¿Por qué sigue tan vivo? Nietzsche dijo que era el único psicólogo del que tenía algo que aprender. Freud llamó a Los hermanos Karamázov la novela más grandiosa jamás escrita. Y Einstein, que Dostoievski le daba más que cualquier científico.",
+   "say": "¿Por qué sigue tan vivo? Níche dijo que era el único psicólogo del que tenía algo que aprender. Fróid llamó a Los hermanos Karamázov la novela más grandiosa jamás escrita. Y Áinstain, que Dostoiévski le daba más que cualquier científico."
+  },
+  {
+   "id": "D17",
+   "text": "Antes de elegir, dos preguntas. La primera: ¿cuánto tiempo tienes? Noches blancas se escucha en dos horas. Los hermanos Karamázov pasa de treinta y cinco."
+  },
+  {
+   "id": "D18",
+   "text": "La segunda: ¿qué versión vas a escuchar? Con un clásico, el libro es el mismo, pero la grabación no. Así que en cada puerta te digo cuál te recomendamos."
+  },
+  {
+   "id": "D19",
+   "text": "Si quieres probar en una tarde, empieza por Noches blancas, de 1848.",
+   "say": "Si quieres probar en una tarde, empieza por Noches blancas, de mil ochocientos cuarenta y ocho."
+  },
+  {
+   "id": "D20",
+   "text": "San Petersburgo, en esas noches de verano en las que casi no oscurece. Un joven solitario conoce a una chica junto a un canal, y se ven cuatro noches seguidas."
+  },
+  {
+   "id": "D21",
+   "text": "Es su historia más tierna, y en audiolibro dura poco más de dos horas, con la voz de Txema Regalado.",
+   "say": "Es su historia más tierna, y en audiolibro dura poco más de dos horas, con la voz de Chema Regalado."
+  },
+  {
+   "id": "D22",
+   "text": "Si quieres la puerta clásica: Crimen y castigo, de 1866.",
+   "say": "Si quieres la puerta clásica: Crimen y castigo, de mil ochocientos sesenta y seis."
+  },
+  {
+   "id": "D23",
+   "text": "Raskólnikov, un exestudiante pobre, cree que un hombre extraordinario puede saltarse las reglas. Y para demostrarlo, mata a una vieja prestamista. Desde su portal hasta la casa de ella hay exactamente setecientos treinta pasos: los ha contado."
+  },
+  {
+   "id": "D24",
+   "text": "Sabes quién es el asesino desde el principio, y aun así no puedes dejar de escuchar. Son unas veintidós horas y media, con Jordi Boixaderas: casi trescientas valoraciones y un 4,7 de media.",
+   "say": "Sabes quién es el asesino desde el principio, y aun así no puedes dejar de escuchar. Son unas veintidós horas y media, con Yórdi Boishadéras: casi trescientas valoraciones y un cuatro coma siete de media."
+  },
+  {
+   "id": "D25",
+   "text": "Si la quieres corta y con su vida dentro: El jugador, de 1866.",
+   "say": "Si la quieres corta y con su vida dentro: El jugador, de mil ochocientos sesenta y seis."
+  },
+  {
+   "id": "D26",
+   "text": "Un tutor ruso en un balneario alemán, una mujer que lo desprecia y una ruleta. Es la novela que dictó en veintiséis días. Y sabía de lo que hablaba: él también lo perdía todo en la ruleta."
+  },
+  {
+   "id": "D27",
+   "text": "En audiolibro, menos de seis horas. Aquí ninguna versión destaca: escucha las muestras y elige la tuya."
+  },
+  {
+   "id": "D28",
+   "text": "Si te gustan las ideas: Memorias del subsuelo, de 1864.",
+   "say": "Si te gustan las ideas: Memorias del subsuelo, de mil ochocientos sesenta y cuatro."
+  },
+  {
+   "id": "D29",
+   "text": "Empieza así: «Soy un hombre enfermo… Soy un hombre malo». Un funcionario retirado, encerrado en su rincón, discute con todo el mundo, empezando por él mismo.",
+   "say": "Empieza así: Soy un hombre enfermo... Soy un hombre malo. Un funcionario retirado, encerrado en su rincón, discute con todo el mundo, empezando por él mismo."
+  },
+  {
+   "id": "D30",
+   "text": "Muchos lo ven como el punto de partida del existencialismo. Son menos de cinco horas, y puedes escucharlo gratis en El Libro Total, con la voz de Omar Barrera."
+  },
+  {
+   "id": "D31",
+   "text": "Y si buscas una historia de amor: El idiota, de 1869.",
+   "say": "Y si buscas una historia de amor: El idiota, de mil ochocientos sesenta y nueve."
+  },
+  {
+   "id": "D32",
+   "text": "El príncipe Myshkin vuelve de Suiza, bueno hasta la ingenuidad, y queda atrapado entre dos mujeres y un rival peligroso. Dostoievski quería retratar a un hombre bueno de verdad.",
+   "say": "El príncipe Míshkin vuelve de Suiza, bueno hasta la ingenuidad, y queda atrapado entre dos mujeres y un rival peligroso. Dostoiévski quería retratar a un hombre bueno de verdad."
+  },
+  {
+   "id": "D33",
+   "text": "Y Myshkin cuenta los últimos minutos de un condenado antes de la ejecución. Ya sabes de dónde lo sacó. En audio, unas veintitrés horas y media, con Germán Gijón.",
+   "say": "Y Míshkin cuenta los últimos minutos de un condenado antes de la ejecución. Ya sabes de dónde lo sacó. En audio, unas veintitrés horas y media, con Germán Gijón."
+  },
+  {
+   "id": "D34",
+   "text": "¿Poco tiempo? El sueño de un hombre ridículo: un hombre al que ya nada le importa sueña con un mundo sin maldad. Menos de una hora. Y El gran inquisidor, un capítulo de Los hermanos Karamázov que se escucha solo: media hora, gratis en El Libro Total."
+  },
+  {
+   "id": "D35",
+   "text": "Y ahora, las que es mejor no abrir primero. Los hermanos Karamázov es su obra maestra: un padre odioso, sus hijos y un asesinato."
+  },
+  {
+   "id": "D36",
+   "text": "Pero son casi treinta y seis horas, y llega mejor cuando ya conoces su voz. Cuando llegues, la versión de Germán Gijón tiene un 4,9.",
+   "say": "Pero son casi treinta y seis horas, y llega mejor cuando ya conoces su voz. Cuando llegues, la versión de Germán Gijón tiene un cuatro coma nueve."
+  },
+  {
+   "id": "D37",
+   "text": "Con Los demonios pasa lo mismo: un grupo de revolucionarios en una ciudad de provincias, y más de treinta horas. Es la más dura de empezar."
+  },
+  {
+   "id": "D38",
+   "text": "Con Dostoievski no hay un universo compartido: lo que se repite es su vida. Sus años de presidio están en Memorias de la casa muerta. Y su epilepsia la tienen el príncipe Myshkin y Smerdiákov, en Los hermanos Karamázov.",
+   "say": "Con Dostoiévski no hay un universo compartido: lo que se repite es su vida. Sus años de presidio están en Memorias de la casa muerta. Y su epilepsia la tienen el príncipe Míshkin y Smerdiákov, en Los hermanos Karamázov."
+  },
+  {
+   "id": "D40",
+   "text": "En 1878 murió su hijo Alekséi, con casi tres años. Ese mismo año empezó su última novela, y a su héroe lo llamó Aliosha.",
+   "say": "En mil ochocientos setenta y ocho murió su hijo Alekséi, con casi tres años. Ese mismo año empezó su última novela, y a su héroe lo llamó Aliosha."
+  },
+  {
+   "id": "D41",
+   "text": "¿Hay que leerlo en orden? No: ninguna novela continúa otra. Lo que ayuda es ir de las cortas a las largas."
+  },
+  {
+   "id": "D42",
+   "text": "¿Y qué versión escuchar? Al ser un clásico, hay decenas de grabaciones. Mira tres cosas."
+  },
+  {
+   "id": "D43",
+   "text": "Uno: que sea íntegra. Las versiones de una a cinco horas de Crimen y castigo son adaptaciones o resúmenes. La novela entera pasa de veinte."
+  },
+  {
+   "id": "D44",
+   "text": "Dos: ¿voz humana o digital? Hay voces sintéticas que leen novelas enteras. Escucha siempre la muestra. Y en SonorBooks, fíjate en la etiqueta «voz digital».",
+   "say": "Dos: ¿voz humana o digital? Hay voces sintéticas que leen novelas enteras. Escucha siempre la muestra. Y en Sónorbuks, fíjate en la etiqueta voz digital."
+  },
+  {
+   "id": "D45",
+   "text": "Y tres: el acento. Jordi Boixaderas, Txema Regalado o Germán Gijón narran con acento de España. Omar Barrera, por ejemplo, desde Colombia.",
+   "say": "Y tres: el acento. Yórdi Boishadéras, Chema Regalado o Germán Gijón narran con acento de España. Omar Barrera, por ejemplo, desde Colombia."
+  },
+  {
+   "id": "D46",
+   "text": "En SonorBooks tienes todas las versiones de cada libro, con su narrador, su duración y dónde escucharla. Te lo dejo en la descripción.",
+   "say": "En Sónorbuks tienes todas las versiones de cada libro, con su narrador, su duración y dónde escucharla. Te lo dejo en la descripción."
+  },
+  {
+   "id": "D47",
+   "text": "Resumiendo: tres rutas. Para tantear: Noches blancas, El jugador y Memorias del subsuelo."
+  },
+  {
+   "id": "D48",
+   "text": "Las grandes novelas: Crimen y castigo, El idiota y Los demonios."
+  },
+  {
+   "id": "D49",
+   "text": "Las grandes preguntas: Memorias del subsuelo, El sueño de un hombre ridículo y El gran inquisidor. Y al final de todos los caminos, Los hermanos Karamázov."
+  },
+  {
+   "id": "D50",
+   "text": "¿Y tú? ¿Por cuál empezaste, o por cuál vas a empezar? Y si quieres otro autor en el próximo episodio, dímelo en los comentarios."
+  },
+  {
+   "id": "D51",
+   "text": "Tu próxima historia te está esperando."
+  }
+ ]
+}
