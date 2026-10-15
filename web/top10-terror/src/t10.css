@@ -24,16 +24,9 @@
 @keyframes t10-sweep{0%{transform:translateX(0)}50%{transform:translateX(calc(1180px + 340px))}100%{transform:translateX(0)}}
 @media (prefers-reduced-motion:reduce){.t10-beam{animation:none;display:none}.t10-shelf a{transition:none}}
 
-/* ——— Cubierta tipográfica (diseño propio, igual que en el vídeo) ——— */
-.t10-cover{position:relative;aspect-ratio:2/3;border-radius:3px 7px 7px 3px;background:var(--bg);color:var(--fg);overflow:hidden;
-  box-shadow:0 18px 40px rgba(0,0,0,.45),inset 0 0 0 1px rgba(0,0,0,.18)}
-.t10-cover::before{content:"";position:absolute;inset:6%;border:1px solid var(--ac);opacity:.55;border-radius:2px}
-.t10-cover::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5%;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(255,255,255,.08) 60%,rgba(0,0,0,0))}
-.t10-cover .a{position:absolute;left:8%;right:8%;top:11%;text-align:center;font-weight:700;font-size:clamp(5px,.62em,9px);letter-spacing:.18em;text-transform:uppercase;opacity:.92;line-height:1.2}
-.t10-cover svg{position:absolute;left:29%;top:25%;width:42%;height:28%;color:var(--ac)}
-.t10-cover .t{position:absolute;left:9%;right:9%;top:62%;text-align:center;font-weight:700;line-height:1.05;letter-spacing:-.01em;font-size:var(--ts,1.05em)}
-.t10-cover .y{position:absolute;left:0;right:0;bottom:8%;text-align:center;font-family:"Merriweather",Georgia,serif;font-size:.62em;opacity:.7}
-.t10-shelf .t10-cover{font-size:13px}
+/* ——— Portada real del audiolibro (cuadrada) ——— */
+.t10-cover{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:6px;background:#1b1c20;
+  box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.06)}
 
 /* ——— Vídeo ——— */
 .t10-video{position:relative;display:block;margin:-40px auto 0;max-width:900px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000 center/cover;box-shadow:0 30px 70px rgba(16,16,16,.25);z-index:3}
@@ -49,10 +42,9 @@
 .t10-how{background:#faf8f3;border:1px solid var(--line);border-radius:16px;padding:20px 24px;font-size:16px;line-height:1.65}
 .t10-how b{font-family:"Ubuntu",Arial,sans-serif}
 
-.t10-item{display:grid;grid-template-columns:190px 1fr;gap:34px;margin:64px 0 0;padding-top:46px;border-top:1px solid var(--line);scroll-margin-top:90px}
+.t10-item{display:grid;grid-template-columns:210px 1fr;gap:34px;margin:64px 0 0;padding-top:46px;border-top:1px solid var(--line);scroll-margin-top:90px}
 .t10-item .side{position:relative}
 .t10-item>div{min-width:0}
-.t10-item .side .t10-cover{font-size:19px}
 .t10-num{position:absolute;left:-16px;top:-16px;z-index:2;min-width:52px;height:52px;padding:0 12px;border-radius:999px;background:var(--yel);color:var(--ink);display:flex;align-items:center;justify-content:center;font:700 26px/1 "Ubuntu",Arial,sans-serif;box-shadow:0 8px 20px rgba(16,16,16,.18)}
 .t10-item.is-one .t10-num{background:var(--red);color:#fff}
 .t10-item h2{font-size:30px;line-height:1.12;margin:0}
@@ -88,7 +80,7 @@
 .t10-method b{color:var(--ink)}
 
 @media (max-width:900px){.t10-shelf{grid-template-columns:repeat(5,1fr)}.t10-beam{display:none}}
-@media (max-width:640px){.t10-shelf{gap:10px}.t10-shelf .t10-cover{font-size:7.5px}.t10-shelf .t10-cover .a,.t10-shelf .t10-cover .y{display:none}.t10-shelf .t10-cover svg{top:18%}.t10-shelf .t10-cover .t{top:56%}}
+@media (max-width:640px){.t10-shelf{gap:10px}}
 @media (max-width:640px){
   .t10-hero{padding-bottom:56px}.t10-lede{font-size:17px}
   .t10-item{grid-template-columns:1fr;gap:18px}
@@ -97,4 +89,6 @@
   .t10-body{font-size:17px}
   .t10-tip{grid-template-columns:1fr}
   .t10-video{margin-top:-30px;border-radius:12px}
+  .t10-video .play{width:60px;height:60px;margin:-30px 0 0 -30px}.t10-video .play svg{width:26px;height:26px}
+  .t10-video .cap{font-size:12px;left:12px;right:12px;bottom:10px}
 }

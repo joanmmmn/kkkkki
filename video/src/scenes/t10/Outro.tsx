@@ -8,7 +8,9 @@ import { Pill } from '../../components/Pill';
 import { Stage } from '../../components/Stage';
 import { LinkBadge, MaskTitle } from '../nxr/kit';
 import { Kicker } from '../nxr/App';
-import { BONE, Book10, BOOKS10, Cover10, DIM, KickerN, Night, RED, color, font, shadow } from './kit';
+import { BONE, Book10, BOOKS10, DIM, KickerN, Night, RED, color, font, shadow } from './kit';
+import { Img } from 'remotion';
+import { COVERS, coverSrc } from './fx';
 import { sceneClock } from './timeline';
 
 const fps = 50;
@@ -44,7 +46,8 @@ export const Tip: React.FC = () => {
             {tips.map((tp) => {
               const s = sp(frame, tp.at, 14, 170);
               return (
-                <div key={tp.t} style={{ width: 420, padding: '48px 30px', borderRadius: 30, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', textAlign: 'center', opacity: s, transform: `translateY(${(1 - s) * 40}px)` }}>
+                <div key={tp.t} style={{ width: 420, padding: '48px 30px', borderRadius: 30, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', textAlign: 'center', opacity: s,
+                  transform: `translateY(${((1 - s) * 60 + Math.sin(frame / 26 + tp.at) * 6).toFixed(1)}px) rotate(${((1 - s) * -6).toFixed(2)}deg) scale(${(0.85 + 0.15 * s).toFixed(3)})` }}>
                   <div style={{ width: 130, height: 130, borderRadius: '50%', background: color.yellow, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><TipIcon kind={tp.k} size={74} /></div>
                   <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 50, color: BONE, marginTop: 30 }}>{tp.t}</div>
                 </div>
@@ -99,14 +102,15 @@ export const Web: React.FC = () => {
           </div>
         </div>
         {/* las diez fichas */}
-        <div style={{ position: 'absolute', left: 1090, top: 120, width: 720, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 18, transform: `translateY(${-shift * 0}px)` }}>
+        <div style={{ position: 'absolute', left: 1090, top: 110, width: 720, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 18, transform: `perspective(2000px) rotateY(${(-8 + 4 * shift).toFixed(2)}deg) translateY(${(-shift * 10).toFixed(1)}px)` }}>
           {BOOKS10.slice().reverse().map((b, i) => {
             const s = sp(frame, f0 + 6 + i * 3, 14, 160);
             const lit = ramp(frame, plats + i * 2, plats + i * 2 + 10);
             return (
-              <div key={b.n} style={{ position: 'relative', height: 255, borderRadius: 12, overflow: 'hidden', background: '#fff', boxShadow: shadow.card, opacity: s, transform: `translateY(${(1 - s) * 30}px) scale(${0.9 + 0.1 * s})` }}>
-                <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 190 }}><Cover10 b={b} w={164} h={190} /></div>
-                <div style={{ position: 'absolute', left: 10, right: 10, bottom: 12, height: 40, borderRadius: 10, background: color.ink, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, opacity: lit }}>
+              <div key={b.n} style={{ position: 'relative', height: 232, borderRadius: 12, overflow: 'hidden', background: '#fff', boxShadow: shadow.card, opacity: s,
+                transform: `translateY(${((1 - s) * 30 + Math.sin(frame / 30 + i) * 3 * s).toFixed(1)}px) scale(${(0.9 + 0.1 * s + 0.04 * lit * (1 - ramp(frame, plats + i * 2 + 10, plats + i * 2 + 24))).toFixed(3)})` }}>
+                <Img src={coverSrc(COVERS[11 - b.n][0])} style={{ position: 'absolute', left: 0, top: 0, width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', left: 10, right: 10, bottom: 10, height: 40, borderRadius: 10, background: color.ink, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, opacity: lit }}>
                   <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 17, color: '#fff' }}>Escuchar ahora</span>
                 </div>
                 <div style={{ position: 'absolute', right: 8, top: 8, minWidth: 34, height: 34, borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 18, color: color.ink, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 8px' }}>{b.n}</div>

@@ -7,6 +7,7 @@
 Uso: python3 web/top10-terror/build.py [--yt ID_DE_YOUTUBE [--yt-fecha AAAA-MM-DD]]
 La lista sale de los datos de abajo (los mismos del vídeo y de blog/top10/terror/libros-de-terror-que-dan-miedo.md).
 Los enlaces «Ver dónde escucharlo» van a las fichas de SonorBooks (enlaces internos; la afiliación, si la hay, está en la ficha).
+Las portadas son las de las ediciones en audio recomendadas (Audible España).
 La carpeta site/ es la cabecera, el pie y los estilos del sitio, copiados de web/storytel-resena/site."""
 import hashlib, html, json, os, re, shutil, subprocess, sys
 
@@ -107,13 +108,16 @@ OFF = [('Cementerio de animales', 'Stephen King'), ('La semilla del diablo', 'Ir
 e = lambda s: html.escape(str(s), quote=True)
 
 
+# Portadas reales de las ediciones en audio que recomendamos (Audible España), como en el vídeo.
+COVER = {10: '10_cthulhu', 9: '09_poe', 8: '08_hendrix', 7: '07_distancia', 6: '06_dracula', 5: '05_apocalipsis_original',
+         4: '04_carcoma', 3: '03_salem', 2: '02_nuestra_parte', 1: '01_exorcista'}
+
+
 def cover(b, small=False):
-    L = len(b['t'])
-    ts = '0.62em' if L > 24 else '0.72em' if L > 18 else '0.86em' if L > 12 else '1.02em' if L > 8 else '1.22em'
-    y = f'<span class="y">{b["y"]}</span>' if b['y'] else ''
-    return (f'<div class="t10-cover" style="--bg:{b["bg"]};--fg:{b["fg"]};--ac:{b["ac"]};--ts:{ts}" aria-hidden="true">'
-            f'<span class="a">{e(b["a"])}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">{ICONS[b["i"]]}</svg>'
-            f'<span class="t">{e(b["t"])}</span>{y}</div>')
+    alt = '' if small else f'Portada del audiolibro «{e(b["t"])}»'
+    hidden = ' aria-hidden="true"' if small else ''
+    load = 'eager' if small else 'lazy'  # las de la portada se ven al cargar
+    return (f'<img class="t10-cover" src="{{{{A}}}}/media/cover-{COVER[b["n"]]}.webp" alt="{alt}" width="600" height="600" loading="{load}" decoding="async"{hidden}>')
 
 
 def stars(r):
@@ -143,7 +147,7 @@ def item(b):
 
 def page_html():
     tpl = open(os.path.join(SRC, 'page.html'), encoding='utf-8').read()
-    shelf = ''.join(f'<a href="#n{b["n"]}" aria-label="Número {b["n"]}: {e(b["t"])}">{cover(b)}<span class="t10-n">{b["n"]}</span></a>' for b in BOOKS)
+    shelf = ''.join(f'<a href="#n{b["n"]}" aria-label="Número {b["n"]}: {e(b["t"])}">{cover(b, small=True)}<span class="t10-n">{b["n"]}</span></a>' for b in BOOKS)
     off = ''.join(f'<li>«{e(t)}»<small>{e(a)}</small></li>' for t, a in OFF)
     return (tpl.replace('<!--SHELF-->', shelf).replace('<!--LIST-->', ''.join(item(b) for b in BOOKS)).replace('<!--OFF-->', off))
 
@@ -180,8 +184,11 @@ def jsonld():
 
 
 def media():
-    """Imagen para redes (1200×630) y póster del vídeo, a partir de la miniatura A del vídeo."""
+    """Imagen para redes (1200×630) y póster del vídeo, a partir de la miniatura A del vídeo, y las portadas (600 px, WebP)."""
     os.makedirs(MEDIA, exist_ok=True)
+    for name in COVER.values():
+        src = os.path.join(ROOT, 'video/public/t10/covers', f'{name}.jpg')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-vf', 'scale=600:600:flags=lanczos', '-c:v', 'libwebp', '-quality', '84', os.path.join(MEDIA, f'cover-{name}.webp')], check=True)
     thumb = os.path.join(ROOT, 'deliverables/top10/terror/miniatura_A.png')
     if not os.path.exists(thumb):
         thumb = os.path.join(ROOT, 'video/out/t10/thumb_A.png')

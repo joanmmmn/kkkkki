@@ -7,7 +7,7 @@ import { CoverIcon, Dust, Grain, IconKind, KR, MiniIcon } from '../skg/kit';
 // ————————————————————————————————————————————————————————————————
 // «Los 10 mejores» · Terror. Sistema visual del episodio: casi todo de noche, con una linterna de luz cálida
 // (el amarillo de SonorBooks rebajado) que va descubriendo cada libro. Rojo para el miedo, blanco roto para el texto.
-// Cubiertas tipográficas propias: sin portadas reales.
+// v2 (14/10, petición de Joan): portadas reales de los audiolibros (fx.tsx). Las cubiertas tipográficas (Cover10, Book10) quedan sin uso.
 // ————————————————————————————————————————————————————————————————
 
 export const SERIES = 'Los 10 mejores';

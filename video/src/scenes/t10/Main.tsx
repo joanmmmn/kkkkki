@@ -5,6 +5,7 @@ import { T10_COMPONENTS } from './registry';
 import { voSrc } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeOut } from '../../lib/anim';
+import { dieFlicker } from './fx';
 
 export const T10_MUSIC: string | null = 'music/t10_bed.mp3'; // ElevenLabs Music por bloques (tools/t10_music.py)
 
@@ -22,8 +23,9 @@ const SceneShell: React.FC<{ dur: number; over: number; tin: Tr; tout: Tr; child
   const pin = pushIn ? interpolate(frame, [0, IN], [0, 1], { ...clamp, easing: easeOut }) : 1;
   const pout = pushOut ? interpolate(frame, [dur - 6, dur + over], [0, 1], { ...clamp, easing: accel }) : 0;
   const fadeIn = pushIn ? interpolate(frame, [0, 10], [0, 1], { ...clamp, easing: easeOut }) : darkIn ? interpolate(frame, [0, 6], [0, 1], clamp) : 1;
-  const fadeOut = pushOut ? interpolate(frame, [dur - 2, dur + over], [1, 0], clamp) : darkOut ? interpolate(frame, [dur - 14, dur], [1, 0], clamp) : 1;
-  const scale = (pushIn ? 0.965 + 0.035 * pin : 1) * (pushOut ? 1 + 0.045 * pout : 1) * (darkOut ? 1 + 0.03 * interpolate(frame, [dur - 14, dur], [0, 1], clamp) : 1);
+  // «dark»: la luz se muere con un parpadeo de bombilla antes del negro.
+  const fadeOut = pushOut ? interpolate(frame, [dur - 2, dur + over], [1, 0], clamp) : darkOut ? dieFlicker(frame, dur, 18) : 1;
+  const scale = (pushIn ? 0.965 + 0.035 * pin : 1) * (pushOut ? 1 + 0.045 * pout : 1) * (darkOut ? 1 + 0.05 * interpolate(frame, [dur - 18, dur], [0, 1], clamp) : 1);
   const blur = (pushIn ? (1 - pin) * 6 : 0) + (pushOut ? pout * 8 : 0);
   return (
     <AbsoluteFill style={{ transform: `translateY(${(pushIn ? (1 - pin) * 14 : 0).toFixed(2)}px) scale(${scale})`, filter: blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : undefined, opacity: fadeIn * fadeOut }}>

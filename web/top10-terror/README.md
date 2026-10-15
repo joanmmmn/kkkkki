@@ -9,8 +9,8 @@ tienes la lista completa») y la descripción enlaza aquí.
   hay, está en la propia ficha. La página no usa la ruta `/salir/`.
 
 ## Qué lleva
-Portada de noche con las diez cubiertas tipográficas del vídeo (diseño propio, sin portadas reales) y una linterna que las
-recorre (sin movimiento con `prefers-reduced-motion`), el vídeo (se carga al pulsar, con youtube-nocookie), «Cómo los elegimos»,
+Portada de noche con las portadas reales de los diez audiolibros recomendados (Audible España, como en el vídeo) y una
+linterna que las recorre (sin movimiento con `prefers-reduced-motion`), el vídeo (se carga al pulsar, con youtube-nocookie), «Cómo los elegimos»,
 los diez libros del 10 al 1 (sinopsis breve, un dato comprobado, la narración: narrador, sello y año, duración, voz, nota de la
 narración con su número de valoraciones y su fuente, y dónde está), «Clásicos que no puedes escuchar en español», cómo
 escucharlos para que den miedo, y «Cómo lo comprobamos» con las fuentes. Sin índice lateral, sin preguntas frecuentes y sin firma.

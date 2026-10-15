@@ -1,8 +1,9 @@
 import React from 'react';
-import { AbsoluteFill } from 'remotion';
-import { Book10, BOOKS10, BONE, RED, color, font, Grain } from './kit';
+import { AbsoluteFill, Img } from 'remotion';
+import { coverSrc } from './fx';
+import { BONE, RED, color, font, Grain } from './kit';
 
-// Miniaturas 1280×720 (diseño propio: cubiertas tipográficas, sin portadas reales).
+// Miniaturas 1280×720. A lleva las portadas reales de los audiolibros; B, solo los auriculares.
 const Dark: React.FC<{ children: React.ReactNode; beam?: [number, number] }> = ({ children, beam = [420, 380] }) => (
   <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 40% 50%, #1A1B1F 0%, #0B0B0D 60%, #040405 100%)', overflow: 'hidden' }}>
     <div style={{ position: 'absolute', left: beam[0] - 520, top: beam[1] - 460, width: 1040, height: 920, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,130,0.30) 0%, rgba(255,214,130,0.08) 45%, rgba(0,0,0,0) 70%)' }} />
@@ -15,13 +16,15 @@ const Dark: React.FC<{ children: React.ReactNode; beam?: [number, number] }> = (
 
 // A · «10 libros que dan miedo de verdad»: abanico de cubiertas bajo la linterna.
 export const T10ThumbA: React.FC = () => {
-  const pick = [BOOKS10[9], BOOKS10[8], BOOKS10[6], BOOKS10[4], BOOKS10[0]];
+  // de atrás hacia delante; la última (El exorcista) queda encima
+  const pick = ['03_salem', '06_dracula_original', '02_nuestra_parte', '04_carcoma', '01_exorcista'];
+  const pos = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
   return (
     <Dark beam={[360, 380]}>
-      <div style={{ position: 'absolute', left: 40, top: 150, width: 640, height: 480 }}>
-        {pick.map((b, i) => (
-          <div key={b.n} style={{ position: 'absolute', left: 10 + i * 82, top: 60 + Math.abs(i - 2) * 16, transform: `rotate(${(i - 2) * 7}deg)`, transformOrigin: '50% 120%', zIndex: i === 0 ? 9 : 5 - Math.abs(i - 2) }}>
-            <Book10 b={b} w={212} h={318} d={28} ry={-14} lit={i === 0 ? 1 : 0.85} />
+      <div style={{ position: 'absolute', left: 0, top: 0, width: 720, height: 720 }}>
+        {pick.map((name, i) => (
+          <div key={name} style={{ position: 'absolute', left: pos[i][0], top: pos[i][1], transform: `rotate(${pos[i][2]}deg)`, zIndex: i }}>
+            <Img src={coverSrc(name)} style={{ width: i === 4 ? 380 : 290, height: i === 4 ? 380 : 290, borderRadius: 10, display: 'block', boxShadow: '0 24px 60px rgba(0,0,0,0.75)', filter: i === 4 ? undefined : 'brightness(0.78)' }} />
           </div>
         ))}
       </div>

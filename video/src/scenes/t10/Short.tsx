@@ -5,7 +5,9 @@ import { VOS, voSrc } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { Logo } from '../../components/Logo';
 import { MaskTitle } from '../nxr/kit';
-import { BigNum, BONE, Book10, BOOKS10, bookAt, DIM, Flashlight, KickerN, Night, RED, StoryChips, color, flicker, font } from './kit';
+import { BigNum, BONE, BOOKS10, bookAt, DIM, Flashlight, KickerN, Night, RED, StoryChips, color, flicker, font } from './kit';
+import { Img } from 'remotion';
+import { Ambient, COVERS, Cover3D, coverSrc, shakes } from './fx';
 import { VExorcista } from './Vignettes';
 import { F10 } from './Facts';
 import { NarrCard } from './Books';
@@ -88,8 +90,8 @@ export const T10Short: React.FC = () => {
       {(s2 < 1 || (s4 > 0 && off < 1)) && (
         <AbsoluteFill style={{ opacity: Math.max(1 - s2, s4) }}>
           <Night red={0.8}>
-            <div style={{ position: 'absolute', left: 540 - 200, top: interpolate(s4, [0, 1], [700, 200]), transform: `translateY(${(1 - bookIn) * 80}px) scale(${(0.7 + 0.3 * bookIn) * (1 - 0.15 * s4)})`, opacity: Math.min(1, bookIn * 1.5), transformOrigin: '50% 50%' }}>
-              <Book10 b={b} w={400} h={600} d={62} ry={-18 + Math.sin(frame / 60) * 5} rx={3} lit={Math.max(light, s4)} shine={ramp(frame, fTitle, fTitle + 40)} />
+            <div style={{ position: 'absolute', left: 540 - 260, top: interpolate(s4, [0, 1], [640, 200]), transform: `translateY(${(1 - bookIn) * 80}px) scale(${(0.7 + 0.3 * bookIn) * (1 - 0.15 * s4)})`, opacity: Math.min(1, bookIn * 1.5), transformOrigin: '50% 50%' }}>
+              <Cover3D name="01_exorcista" size={520} ry={14 + Math.sin(frame / 60) * 6} rx={Math.sin(frame / 80) * 3} light={0.3 + 0.7 * Math.max(light, s4)} shine={interpolate(frame, [fTitle + 2, fTitle + 44], [0, 1.2], clamp)} reflect glow={Math.max(light, s4)} glowColor="rgba(193,18,31," />
             </div>
             <Flashlight x={540} y={interpolate(s4, [0, 1], [1000, 500])} r={interpolate(light, [0, 1], [10, 560])} on={Math.max(light, s4)} dark={0.9} seed="sh" />
             {s4 < 0.5 && <BigNum n={1} at={6} size={interpolate(light, [0, 1], [900, 300])} x={540} y={interpolate(light, [0, 1], [900, 300])} />}
@@ -143,18 +145,18 @@ export const T10Short: React.FC = () => {
         <AbsoluteFill style={{ opacity: s6 }}>
           <Night red={0.6}>
             <div style={{ position: 'absolute', left: 0, right: 0, top: 220, display: 'flex', justifyContent: 'center' }}><Logo size={70} delay={0} dark /></div>
-            <div style={{ position: 'absolute', left: 90, right: 90, top: 420, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 22 }}>
+            <div style={{ position: 'absolute', left: 90, right: 90, top: 480, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 22, rowGap: 34 }}>
               {BOOKS10.map((bk, i) => {
                 const s = sp(frame, f6 + 4 + i * 2, 14, 170);
                 return (
                   <div key={bk.n} style={{ opacity: s * (bk.n === 1 ? 1 : 0.85), transform: `translateY(${(1 - s) * 30}px)`, position: 'relative' }}>
-                    <Book10 b={bk} w={160} h={240} d={22} ry={-12} lit={bk.n === 1 ? 1 : 0.7} />
+                    <Img src={coverSrc(COVERS[11 - bk.n][0])} style={{ width: 160, height: 160, borderRadius: 8, display: 'block', boxShadow: '0 12px 30px rgba(0,0,0,0.6)', filter: bk.n === 1 ? undefined : 'brightness(0.8)' }} />
                     <div style={{ position: 'absolute', right: -6, top: -10, minWidth: 44, height: 44, borderRadius: 999, background: bk.n === 1 ? RED : color.yellow, color: bk.n === 1 ? '#fff' : color.ink, fontFamily: font.sans, fontWeight: 700, fontSize: 24, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{bk.n}</div>
                   </div>
                 );
               })}
             </div>
-            <div style={{ position: 'absolute', left: 0, right: 0, top: 1060, textAlign: 'center' }}>
+            <div style={{ position: 'absolute', left: 0, right: 0, top: 940, textAlign: 'center' }}>
               <KickerN at={f6 + 6} text="Los 10 mejores · Terror" style={{ justifyContent: 'center' }} />
             </div>
           </Night>
