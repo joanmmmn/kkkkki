@@ -52,7 +52,7 @@ comillas o en el texto de cada plan.
   si tienes Premium → lo más barato en Spotify (las 12 h, recargas, Audiolibros+ o las dos), lo que pagas de más (o en total,
   sin Premium), una barra con lo que pone cada fuente de horas y la comparación con Storytel, Audible y Podimo. Funciona con el
   teclado y no guarda nada. La media de las recargas supone que escuchas lo mismo cada mes y gastas sus horas antes de que
-  caduquen (con 9 h o menos de más al mes salen más baratas que Audiolibros+), y la página lo dice.
+  caduquen (con 8 h o menos de más al mes, hasta 20 h en total, salen más baratas que Audiolibros+), y la página lo dice.
 - **Catálogo en español**: incluidos y de pago (con *Loba negra* y *La asistenta* en latino), cuatro capturas y cómo comprobar
   tu libro en la app.
 - **La app**: la sección Audiolibros (tres capturas en secuencia), sin filtro y con filtro, la ficha, la muestra, el reproductor
@@ -118,7 +118,8 @@ y el póster del vídeo (`media/spotify-audiolibros-resena-video.webp`, 1280×72
    `python3 tools/web_spo_og.py` y vuelve a construir.
 6. Publica la página con el vídeo ya subido: `python3 web/spotify-audiolibros-resena/build.py --yt ID_DEL_VIDEO --yt-fecha AAAA-MM-DD`.
    Así el enlace del vídeo apunta al vídeo (sin `--yt` apunta al canal de YouTube) y el JSON-LD lleva el `VideoObject`
-   (duración del montaje según `tools/spo_meta.py`; hora de España). El script avisa si se construye sin `--yt`.
+   (duración del montaje según `tools/spo_meta.py`; hora de España). El script avisa si se construye sin `--yt`. El nombre del
+   `VideoObject` es el título recomendado del vídeo (`blog/spotify/resena-youtube.md`): si se publica con otro, cámbialo en `build.py`.
 7. Las reseñas nuevas de Storytel, Audible y BookBeat deberían publicarse antes o a la vez: el carrusel las anuncia como
    «Storytel: opiniones, precio y 7 días gratis», «Audible: opiniones, precio y hasta 90 días gratis» y «BookBeat: opiniones,
    precio y 30 días gratis», y la comparativa enlaza a `/es/blog/bookbeat-resena/`. Si no, cambia esos títulos y enlaces en

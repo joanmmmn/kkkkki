@@ -94,7 +94,7 @@ def jsonld():
         from zoneinfo import ZoneInfo
         dia = datetime.date.fromisoformat(YT_FECHA) if YT_FECHA else datetime.date.today()
         subida = datetime.datetime(dia.year, dia.month, dia.day, 12, tzinfo=ZoneInfo('Europe/Madrid')).isoformat()  # +01:00 o +02:00 según el día
-        graph.append({'@type': 'VideoObject', '@id': url + '#video', 'name': '¿Merecen la pena los audiolibros de Spotify? Opiniones, precio y sus 12 horas',
+        graph.append({'@type': 'VideoObject', '@id': url + '#video', 'name': 'Audiolibros de Spotify: ¿Merecen la pena en 2026? Reseña, Opinión, Cómo Funcionan, Precios y Horas',
                       'description': 'Reseña de los audiolibros de Spotify en España: cómo funcionan las 12 horas de Premium, qué planes las tienen, '
                                      'cómo se gastan, Audiolibros+ y recargas, qué hay en español, la app, opiniones, lo bueno y lo malo, '
                                      'y cómo empezar, ver tus horas y cancelar.',

@@ -52,6 +52,7 @@ En esta reseña de los audiolibros de Spotify en español respondemos a todo lo 
 • Reproductor: de 0,5x a 3,5x, temporizador, capítulos, saltos de 15 segundos y descargas. Y «Encuentra la página»: escaneas una página de tu libro en papel o del ebook y sigues escuchando desde ahí.
 • Dispositivos: móvil, tablet, ordenador, reproductor web y Apple Watch.
 • Opiniones: 4,7 en la App Store y 4,2 en Google Play, pero es la nota de toda la app; de los audiolibros aún hay pocas reseñas.
+• Cómo probarlos gratis: la muestra de cualquier libro es gratis; Premium Individual tiene 1 mes por 0 € si nunca lo has probado (Spotify no aclara si incluye las 12 horas), y Audiolibros+, el primer mes gratis la primera vez.
 • Cómo ver tus horas: toca tu foto › Tu Premium › Tiempo de escucha de audiolibros.
 • Cómo cancelar: Premium se cancela en tu cuenta, en la web (Administrar tu plan › Cancelar suscripción); si estás en la prueba, pasas al plan gratis al momento. Audiolibros+ se quita aparte, sin cancelar Premium.
 
@@ -108,7 +109,7 @@ La reseña completa, por escrito: https://sonorbooks.com/es/blog/spotify-audioli
 
 ## TikTok / Instagram Reels / YouTube Shorts (vídeo vertical)
 ```
-¿Merecen la pena los audiolibros de Spotify? 🎧 Si pagas Premium, tienes 12 horas al mes sin pagar más… pero se cuentan a velocidad normal, las que no usas se pierden y en Duo y Familiar son solo para quien paga.
+¿Merecen la pena los audiolibros de Spotify? 🎧 Si pagas Premium (no Estudiantes), tienes 12 horas al mes sin pagar más… pero se cuentan a velocidad normal, las que no usas se pierden y en Duo y Familiar son solo para quien paga.
 #spotify #audiolibros #libros #booktok #sonorbooks
 ```
 Sin contenido de marca: no hay afiliado ni patrocinio. En YouTube, enlaza el Short al vídeo largo con «Vídeo relacionado».

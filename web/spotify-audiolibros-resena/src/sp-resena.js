@@ -117,42 +117,47 @@ $$('[data-calc]').forEach((box) => {
     seg.pl.style.width = w(Math.min(h, BASE));
     seg.ab.style.width = w(plusH);
     seg.rc.style.width = w(Math.min(recH, Math.max(0, SCALE - BASE - plusH)));
+    // «Te sobra 1 h» / «Te sobran 3 h»
+    const sobra = (n, T = 'Te') => `${T} ${n === 1 ? 'sobra' : 'sobran'} ${hrs(n)}`;
+    const falta = (n, T = 'Te') => `${T} ${n === 1 ? 'falta' : 'faltan'} ${hrs(n)}`;
     // Frente a Podimo (20 h): lo que te sobra o te falta
     rows.forEach((row) => {
       const cap = Number(row.dataset.cap), bar = $('.sp-bar i', row), txt = $('[data-bar-txt]', row);
       if (bar) bar.style.width = `${((Math.min(h, cap) / cap) * 100).toFixed(2)}%`;
       row.classList.toggle('is-over', h > cap);
-      txt.textContent = h > cap ? `Te faltan ${hrs(h - cap)}` : h === cap ? 'Justo' : `Te sobran ${hrs(cap - h)}`;
+      txt.textContent = h > cap ? falta(h - cap) : h === cap ? 'Justo' : sobra(cap - h);
     });
+    kEl.textContent = has ? 'Con tu Premium, lo más barato' : 'Sin Premium, lo más barato en Spotify';
     if (h === 0) {
-      kEl.textContent = has ? 'Con tu Premium, lo más barato' : 'Sin Premium, en Spotify necesitarías';
       name.textContent = '—';
       price.textContent = 'Pon las horas que escuchas';
       why.textContent = 'Mueve la barra con las horas que escuchas al mes: te decimos qué te sale más barato.';
       return;
     }
-    kEl.textContent = has ? 'Con tu Premium, lo más barato' : 'Sin Premium, en Spotify necesitarías';
     name.textContent = has
       ? { base: 'Te bastan las 12 h', rec: 'Recargas de 10 h', plus: 'Audiolibros+', plusrec: 'Audiolibros+ y recargas' }[mode]
       : { base: 'Premium Individual', rec: 'Premium y recargas', plus: 'Premium y Audiolibros+', plusrec: 'Premium, Audiolibros+ y recargas' }[mode];
-    const media = mode === 'rec' || mode === 'plusrec';
+    const media = mode === 'rec' || mode === 'plusrec' ? ', de media' : '';
     price.textContent = has
-      ? (mode === 'base' ? `0${NB}€ más al mes` : `${media ? 'Unos ' : ''}${eur(extra)} más al mes${media ? ', de media' : ''}`)
-      : (mode === 'base' ? `${eur(total)} al mes, con la música` : `${media ? 'Unos ' : ''}${eur(total)} al mes${media ? ', de media' : ''}`);
+      ? (mode === 'base' ? `0${NB}€ más al mes` : `${eur(extra)} más al mes${media}`)
+      : (mode === 'base' ? `${eur(total)} al mes, con la música` : `${eur(total)} al mes${media}`);
     let t;
     if (mode === 'base') {
+      const left = BASE - h;
       t = has
-        ? `Con ${hrs(h)} al mes, te bastan las 12${NB}h de Premium: no pagas nada más por los audiolibros.${h < BASE ? ` Te sobran ${hrs(BASE - h)}, que caducan cuando se renuevan.` : ''}`
+        ? `Con ${hrs(h)} al mes, te bastan las 12${NB}h de Premium: no pagas nada más por los audiolibros.${left ? ` ${sobra(left)}, que ${left === 1 ? 'caduca' : 'caducan'} en tu fecha de facturación.` : ''}`
         : `Con ${hrs(h)} al mes, te bastarían las 12${NB}h de Premium Individual, pero cuesta 11,99${NB}€ al mes (con la música). Solo para audiolibros, Podimo te da 20${NB}h por 4,99${NB}€, y Storytel, sin límite, cuesta 8,99${NB}€.`;
     } else if (mode === 'rec') {
-      t = `Con ${hrs(h)} al mes, las 12${NB}h de Premium se te quedan cortas por ${hrs(d)}. Lo más barato: recargas de 10${NB}h por 9,99${NB}€, que valen un año; cada una te da para ${meses(REC_H / d)}, unos ${eur(extra)} al mes de media. Audiolibros+ te costaría 8,99${NB}€ al mes.`
-        + (has ? '' : ` Sin Premium, súmale sus 11,99${NB}€. Solo para audiolibros, Storytel no te cuenta las horas por 8,99${NB}€.`);
+      t = (has ? `Con ${hrs(h)} al mes, las 12${NB}h de Premium se te quedan cortas por ${hrs(d)}.` : `Con ${hrs(h)} al mes, las 12${NB}h de Premium Individual se te quedarían cortas por ${hrs(d)}.`)
+        + ` Lo más barato: recargas de 10${NB}h por 9,99${NB}€, que valen un año; cada una te da para ${meses(REC_H / d)}: ${eur(extra)} al mes de media. Audiolibros+ te costaría 8,99${NB}€ al mes.`
+        + (has ? '' : ` Sin Premium, súmale sus 11,99${NB}€. Solo para audiolibros, Storytel, por 8,99${NB}€, no te cuenta las horas.`);
     } else if (mode === 'plus') {
-      t = `Con ${hrs(h)} al mes, te compensa Audiolibros+: 15${NB}h más por 8,99${NB}€ al mes, 27${NB}h en total.${h < BASE + PLUS_H ? ` Te sobran ${hrs(BASE + PLUS_H - h)}, que caducan cada mes.` : ''}`
+      const left = BASE + PLUS_H - h;
+      t = `Con ${hrs(h)} al mes, te compensa Audiolibros+: 15${NB}h más por 8,99${NB}€ al mes, 27${NB}h en total.${left ? ` ${sobra(left)}, que ${left === 1 ? 'caduca' : 'caducan'} cada mes.` : ''}`
         + (has ? ` Pero por 8,99${NB}€, Storytel no te cuenta las horas.` : ` Con Premium, 20,98${NB}€ al mes; Storytel, sin contar horas, cuesta 8,99${NB}€.`);
     } else {
-      t = `Con ${hrs(h)} al mes, ni con Audiolibros+ (27${NB}h) te llega: te faltan ${hrs(d - PLUS_H)}, que tendrías que cubrir con recargas. `
-        + (has ? `Por los audiolibros pagarías unos ${eur(extra)} al mes, encima de Premium.` : `Con Premium, unos ${eur(total)} al mes.`)
+      t = `Con ${hrs(h)} al mes, no te llega ni con Premium y Audiolibros+ (27${NB}h en total): ${falta(d - PLUS_H, 'te')}, que tendrías que cubrir con recargas.`
+        + (has ? ` Por los audiolibros pagarías ${eur(extra)} al mes de media, encima de Premium.` : ` Con Premium, ${eur(total)} al mes de media.`)
         + ` Storytel, por 8,99${NB}€, o Audible, por 9,99${NB}€, no te cuentan las horas.`;
     }
     why.textContent = t;
