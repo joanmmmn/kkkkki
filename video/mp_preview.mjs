@@ -26,6 +26,7 @@ for (const f of frames) {
   files.push(file);
 }
 const w = Math.round(comp.width * scale), h = Math.round(comp.height * scale);
+if (files.length === 1) { execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', files[0], '-q:v', '2', out]); console.log(`OK ${out}`); process.exit(0); }
 execFileSync('ffmpeg', ['-v', 'error', '-y', ...files.flatMap((f) => ['-i', f]),
   '-filter_complex', `${files.map((_, i) => `[${i}:v]drawtext=text='${frames[i]}':x=10:y=10:fontsize=20:fontcolor=red[v${i}]`).join(';')};${files.map((_, i) => `[v${i}]`).join('')}xstack=inputs=${files.length}:layout=${files.map((_, i) => `${(i % cols) * w}_${Math.floor(i / cols) * h}`).join('|')}:fill=white`,
   '-q:v', '3', out]);

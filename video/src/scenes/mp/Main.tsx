@@ -54,7 +54,8 @@ const SceneShell: React.FC<{ dur: number; over: number; tin: Tr; tout: Tr; child
 
 export const MejoresPlataformas: React.FC = () => {
   const { fps } = useVideoConfig();
-  const vo = mpVoIntervals();
+  // La voz de Omar (LibriVox) en el arranque en frío de Z17 también baja la música.
+  const vo = [...mpVoIntervals(), [mpStart('Z17') + 12, mpStart('Z17') + 12 + Math.round(5.5 * fps)] as const];
   const sec = (s: number) => Math.round(s * fps);
   const env = (f: number, list: (readonly [number, number])[]) => {
     let d = 0;

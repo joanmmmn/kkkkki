@@ -36,9 +36,12 @@ import { AudiobooksReviewShort, ABC_SHORT_TOTAL } from './scenes/abc/Short';
 import { ABC_TOTAL } from './scenes/abc/timeline';
 import { MejoresPlataformas } from './scenes/mp/Main';
 import { MP_TOTAL } from './scenes/mp/timeline';
+import { MPThumbA, MPThumbB } from './scenes/mp/Thumb';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="MPThumbA" component={MPThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="MPThumbB" component={MPThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="MPGuide" component={MejoresPlataformas} durationInFrames={MP_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />

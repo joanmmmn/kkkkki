@@ -1,0 +1,67 @@
+{
+ "model_id": "music_v1",
+ "levels": [
+  -16.0,
+  -14.5
+ ],
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental score for a premium, modern audiobook-platform guide on YouTube",
+   "key of D major, around 104 BPM unless stated otherwise",
+   "warm analog synths, tight modern drums, round sub bass, plucked synths, felt piano, clean electric guitar accents",
+   "polished, confident and optimistic",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Z01",
+    "positive_local_styles": [
+     "cold open: soft kick pulse and a catchy plucked synth hook from the very first second",
+     "builds steadily with filtered drums, a lift when the title appears",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops",
+     "quiet intro",
+     "fade in"
+    ],
+    "duration_ms": 22540,
+    "lines": []
+   },
+   {
+    "section_name": "Z02",
+    "positive_local_styles": [
+     "light, curious groove with plucks and hand percussion",
+     "steady and clear, explanatory mood",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 27780,
+    "lines": []
+   }
+  ]
+ },
+ "hash": "8d287e1fa212"
+}

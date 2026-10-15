@@ -1,0 +1,117 @@
+{
+ "model_id": "music_v1",
+ "levels": [
+  -16.0,
+  -14.5,
+  -14.5,
+  -14.5,
+  -14.5
+ ],
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental score for a premium, modern audiobook-platform guide on YouTube",
+   "key of D major, around 104 BPM unless stated otherwise",
+   "warm analog synths, tight modern drums, round sub bass, plucked synths, felt piano, clean electric guitar accents",
+   "polished, confident and optimistic",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Z07",
+    "positive_local_styles": [
+     "starts instantly on the downbeat",
+     "syncopated funk bass, clean guitar stabs, playful and bright",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops",
+     "quiet intro",
+     "fade in"
+    ],
+    "duration_ms": 26520,
+    "lines": []
+   },
+   {
+    "section_name": "Z08",
+    "positive_local_styles": [
+     "same funk groove with added arpeggios, curious and smart",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 30920,
+    "lines": []
+   },
+   {
+    "section_name": "Z09",
+    "positive_local_styles": [
+     "lighter breakdown of the groove with ticking hi-hats, like a clock",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 13140,
+    "lines": []
+   },
+   {
+    "section_name": "Z10",
+    "positive_local_styles": [
+     "groove returns with marimba and plucks, international flavour",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 33220,
+    "lines": []
+   },
+   {
+    "section_name": "Z11",
+    "positive_local_styles": [
+     "brighter and fresher, wide synth pads, a sense of novelty",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 24400,
+    "lines": []
+   }
+  ]
+ },
+ "hash": "e1c382293ee0"
+}

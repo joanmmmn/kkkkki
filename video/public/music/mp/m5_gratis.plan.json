@@ -1,0 +1,100 @@
+{
+ "model_id": "music_v1",
+ "levels": [
+  -16.0,
+  -14.5,
+  -14.5,
+  -14.5
+ ],
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental score for a premium, modern audiobook-platform guide on YouTube",
+   "key of D major, around 104 BPM unless stated otherwise",
+   "warm analog synths, tight modern drums, round sub bass, plucked synths, felt piano, clean electric guitar accents",
+   "polished, confident and optimistic",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies"
+  ],
+  "sections": [
+   {
+    "section_name": "Z15",
+    "positive_local_styles": [
+     "starts instantly on the downbeat",
+     "luminous, warm, acoustic guitar and soft drums, community feeling",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops",
+     "quiet intro",
+     "fade in"
+    ],
+    "duration_ms": 32600,
+    "lines": []
+   },
+   {
+    "section_name": "Z16",
+    "positive_local_styles": [
+     "same luminous groove, lighter",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 11320,
+    "lines": []
+   },
+   {
+    "section_name": "Z17",
+    "positive_local_styles": [
+     "very soft and sparse for the first six seconds (felt piano only, under a spoken excerpt), then gentle storytelling groove with piano and brushes",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 34420,
+    "lines": []
+   },
+   {
+    "section_name": "Z18",
+    "positive_local_styles": [
+     "warm piano groove with a classic, literary touch",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "sudden stops"
+    ],
+    "duration_ms": 21200,
+    "lines": []
+   }
+  ]
+ },
+ "hash": "b32fc9fd83f4"
+}
