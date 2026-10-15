@@ -9,6 +9,7 @@ import { Banana, CaribHouseSil, CREAM, Ridge, Tree, WARM } from './sets';
 import { WorldMap, WORLD_COUNTRIES } from './Maps';
 import { BookStack, CardTag } from './v2Success';
 import { HandLabel } from './v2Bio';
+import { VoiceWaves } from './v2End';
 
 // ————————————————————————————————————————————————————————————————
 // Capítulo VII · Lo que vino después (v2): el Nobel, los lectores, el cine
@@ -127,13 +128,14 @@ export const Nobel2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#05080B' }}>
       {shot}
-      <Sfx name="hdl_bell" at={fYear - 4} volume={0.35} />
+      <Sfx name="hdl_steps_stage" at={10} volume={0.9} dur={fRec - 40} fade={12} />
       <Sfx name="hdl_applause" at={fRec + 30} volume={0.55} dur={tMedal + 60 - fRec - 30} fade={30} />
+      <Sfx name="hdl_flash" at={fRec + 8} volume={0.6} />
       <Sfx name="shimmer" at={tMedal + 2} volume={0.6} />
       <Sfx name="whoosh_deep" at={tWall - 4} volume={0.4} />
-      <Sfx name="counter" at={fCinc - 4} volume={0.35} />
-      <Sfx name="counter" at={fCinc + 56} volume={0.3} dur={30} fade={8} />
-      {TRANSLATIONS.map((_, i) => <Sfx key={i} name="key1" at={fTrad + i * 9} volume={0.4} />)}
+      <Sfx name="hdl_tally" at={fCinc - 4} volume={0.8} />
+      <Sfx name="hdl_tally" at={fCinc + 50} volume={0.6} dur={36} fade={8} />
+      {TRANSLATIONS.map((_, i) => <Sfx key={i} name={(['key1', 'key4', 'key2', 'key6', 'key3', 'key7', 'key5'] as const)[i % 7]} at={fTrad + i * 9} volume={0.5} />)}
       <Sfx name="sk_typebell" at={fIdi + 26} volume={0.4} />
       <Sfx name="sparkle" at={fLect} volume={0.5} />
       <Sfx name="whoosh_soft" at={fJunt + 4} volume={0.5} />
@@ -196,6 +198,17 @@ const Ceremony: React.FC<{ t1: number; fYear: number; fGar: number; fRec: number
           return <Head key={i} x={-140 + i * 160 + (i % 2) * 30} y={1140 - clap} h={170 + random(`au${i}`) * 30} face={i % 3 === 0 ? -1 : 1} hair={(['short', 'bob', 'bun', 'side', 'curly'] as const)[i % 5]} c="#050302" />;
         })}
       </Layer>
+      {/* flashes de los fotógrafos */}
+      <AbsoluteFill>
+        {[0, 1, 2, 3, 4].map((i) => {
+          const at = fRec + 8 + i * 9 + Math.round(random(`fl${i}`) * 4);
+          const k = interpolate(frame, [at, at + 2, at + 9], [0, 1, 0], clamp);
+          if (k <= 0) return null;
+          const x = 160 + random(`fx${i}`) * 1600, y = 900 + random(`fy${i}`) * 160;
+          return <div key={i} style={{ position: 'absolute', left: x - 200, top: y - 200, width: 400, height: 400, borderRadius: '50%', background: `radial-gradient(circle, rgba(255,255,250,${0.95 * k}) 0%, rgba(255,250,235,${0.4 * k}) 25%, rgba(255,250,235,0) 70%)` }} />;
+        })}
+        <AbsoluteFill style={{ background: '#FFFBEF', opacity: [0, 1, 2, 3, 4].reduce((m, i) => { const at = fRec + 8 + i * 9 + Math.round(random(`fl${i}`) * 4); return Math.max(m, interpolate(frame, [at, at + 2, at + 8], [0, 0.22, 0], clamp)); }, 0) }} />
+      </AbsoluteFill>
       <PaperFinish opacity={0.45} vignette={0.65} warm={0.3} />
       <Slate text="Estocolmo · diciembre de 1982" a={fYear - 4} b={fYear + 40} out={t1 - 12} x={110} y={90} />
       {fGar < 0 && null}
@@ -232,7 +245,7 @@ const BookWall: React.FC<{ t0: number; t1: number; fHoy: number; fCinc: number; 
   for (let gy = -4; gy <= 4; gy++) {
     for (let gx = -10; gx <= 10; gx++) {
       const d = Math.hypot(gx, gy * 1.3);
-      const at = fHoy + 10 + d * 16 + random(`bw${gx}${gy}`) * 10;
+      const at = fHoy + 4 + Math.pow(d, 0.85) * 13 + random(`bw${gx}${gy}`) * 8;
       if (d > 0 && frame < at) continue;
       const p = d === 0 ? 1 : rampOut(frame, at, at + 12);
       const col = ['#1E2A33', '#22303A', '#1A252E', '#2A2A36'][Math.floor(random(`bc${gx}${gy}`) * 4)];
@@ -287,32 +300,54 @@ const Translations: React.FC<{ t0: number; t1: number; fTrad: number; fCuar: num
   );
 };
 
-// «El propio Gabo dijo que…»: en un sillón, ante un micrófono
+// «El propio Gabo dijo que…»: en un sillón, ante un micrófono; detrás, un mapa del mundo en la pared. Al decir «si todos
+// sus lectores…», la cámara se lanza dentro de ese mapa (y el plano siguiente es el mapa entero).
+const WALL_MAP = { x: 1180, y: 170, w: 480 };
 const GaboSays: React.FC<{ t0: number; t1: number; fDijo: number }> = ({ t0, t1, fDijo }) => {
   const frame = useCurrentFrame();
-  const cam = useCamera([{ f: t0, x: 900, y: 560, s: 1.15 }, { f: t1, x: 860, y: 540, s: 1.3 }], 0.5);
-  const talk = frame > fDijo - 10 ? Math.sin((frame - fDijo) / 7) : 0;
+  const k = WALL_MAP.w / 1920;
+  const mapCx = WALL_MAP.x + WALL_MAP.w / 2, mapCy = WALL_MAP.y + (1000 * k) / 2 - 10 * k;
+  const cam = useCamera([
+    { f: t0, x: 900, y: 560, s: 1.12 },
+    { f: t1 - 40, x: 960, y: 520, s: 1.26 },
+    { f: t1, x: mapCx, y: mapCy, s: 1920 / WALL_MAP.w, ez: 1 },
+  ], 0.4);
+  const talk = frame > fDijo - 10 && frame < t1 - 30 ? Math.sin((frame - fDijo) / 7) : 0;
+  const lamp = 0.9 + 0.1 * Math.sin(frame / 9) * Math.sin(frame / 23);
   return (
     <Rig cam={cam}>
-      <Sky stops={[[0, '#3A2A1C'], [100, '#1A120B']]} glows={[{ x: 1200, y: 360, r: 700, c: '#FFD98A', a: 0.35 }]} />
+      <Sky stops={[[0, '#3A2A1C'], [100, '#1A120B']]} glows={[{ x: 1420, y: 300, r: 600, c: '#FFD98A', a: 0.3 }, { x: 420, y: 520, r: 520, c: '#FFC27A', a: 0.3 * lamp }]} />
       <Layer z={0.6}>
-        {/* ventana con estantería */}
-        <rect x={1180} y={180} width={360} height={420} fill="#5A4A38" opacity={0.6} />
-        <rect x={1356} y={180} width={8} height={420} fill="#24180F" />
-        <rect x={1180} y={386} width={360} height={8} fill="#24180F" />
-        {Array.from({ length: 9 }).map((_, i) => <rect key={i} x={260 + i * 34} y={300 - (i % 3) * 8} width={26} height={110 + (i % 3) * 8} fill="#24180F" />)}
-        <rect x={240} y={410} width={340} height={12} fill="#24180F" />
+        {/* estantería */}
+        {Array.from({ length: 11 }).map((_, i) => <rect key={i} x={150 + i * 30} y={300 - (i % 3) * 8} width={24} height={110 + (i % 3) * 8} fill="#24180F" />)}
+        {Array.from({ length: 9 }).map((_, i) => <rect key={`b${i}`} x={170 + i * 34} y={466 - (i % 2) * 10} width={28} height={92 + (i % 2) * 10} fill="#24180F" />)}
+        <rect x={130} y={410} width={380} height={12} fill="#24180F" />
+        <rect x={130} y={558} width={380} height={12} fill="#24180F" />
+      </Layer>
+      <Layer z={1} html>
+        {/* el mapa del mundo de la pared (mismo dibujo que el plano siguiente) */}
+        <div style={{ position: 'absolute', left: WALL_MAP.x - 22, top: WALL_MAP.y - 22, width: WALL_MAP.w + 44, height: 1000 * k + 44, background: '#24180F', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }} />
+        <div style={{ position: 'absolute', left: WALL_MAP.x, top: WALL_MAP.y, width: WALL_MAP.w, height: 1000 * k, background: '#050B14', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', left: 0, top: 0, width: 1920, height: 1040, transform: `scale(${k})`, transformOrigin: '0 0' }}>
+            <WorldMap base="#1A2B3D" fill={() => '#1A2B3D'} style={{ top: 0 }} />
+          </div>
+        </div>
       </Layer>
       <Layer z={1}>
         <rect x={-300} y={860} width={2520} height={400} fill="#120B06" />
+        {/* lámpara de pie */}
+        <line x1={420} y1={860} x2={420} y2={520} stroke="#0B0604" strokeWidth={8} />
+        <path d="M 360 520 L 384 450 L 456 450 L 480 520 Z" fill="#0B0604" />
+        <ellipse cx={420} cy={522} rx={60} ry={8} fill="#FFD98A" opacity={0.6 * lamp} />
         {/* sillón */}
         <path d="M 640 860 L 650 640 C 650 600, 700 590, 720 620 L 730 700 L 930 700 C 960 700, 970 730, 960 760 L 950 860 Z" fill="#1E140C" />
-        <Person x={760} y={862} scale={2.2} kind="man" hair="curly" mustache pose={sitPose({ lean: 4, neck: -4, shF: 40 + talk * 14, elF: 70 + talk * 12, shB: 10, elB: 70 })} c="#0B0604" back="#1E140C" />
+        <Person x={760} y={862} scale={2.2} kind="man" hair="curly" mustache pose={sitPose({ lean: 4, neck: -4 + talk * 2, shF: 40 + talk * 14, elF: 70 + talk * 12, shB: 10, elB: 70 })} c="#0B0604" back="#1E140C" />
         {/* micrófono de pie */}
         <line x1={1120} y1={860} x2={1120} y2={600} stroke="#0B0604" strokeWidth={8} />
         <line x1={1120} y1={600} x2={1040} y2={560} stroke="#0B0604" strokeWidth={7} />
         <rect x={1010} y={538} width={44} height={30} rx={12} fill="#0B0604" transform="rotate(-25 1032 553)" />
         <path d="M 1080 860 L 1160 860 L 1120 846 Z" fill="#0B0604" />
+        <VoiceWaves x={870} y={500} t={frame} reach={150} n={3} on={rampOut(frame, fDijo - 30, fDijo - 10) * (1 - ramp(frame, t1 - 34, t1 - 20))} />
       </Layer>
       <PaperFinish opacity={0.45} vignette={0.6} warm={0.3} />
     </Rig>
@@ -465,23 +500,22 @@ export const Cine2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#05080B' }}>
       {shot}
-      {[0, 1, 2, 3, 4].map((i) => <Sfx key={i} name="sk_book_slide" at={offerAt(fNeg, i) - 6} volume={0.3} />)}
+      {[0, 1, 2, 3, 4].map((i) => <Sfx key={i} name="hdl_paper_slide" at={offerAt(fNeg, i) - 4} volume={0.6} />)}
       {[0, 1, 2, 3, 4].map((i) => <Sfx key={i} name="stamp" at={offerAt(fNeg, i) + 12} volume={0.6} />)}
       <Sfx name="sk_projector" at={tReel} volume={0.45} dur={tCal - tReel} fade={20} />
-      {[0, 1, 2, 3].map((i) => <Sfx key={i} name="pencil_strike" at={fOtro + 8 + i * 10} volume={0.4} />)}
+      {[0, 1, 2, 3].map((i) => <Sfx key={i} name="marker" at={fOtro + 2 + i * 10} volume={0.55} />)}
       <Sfx name="shimmer" at={fEsp} volume={0.4} />
-      {[0, 1, 2, 3, 4, 5].map((i) => <Sfx key={i} name="page_turn" at={tCal + 10 + i * 9} volume={0.25} />)}
-      <Sfx name="sk_chime" at={fNov + 8} volume={0.4} />
-      <Sfx name="sk_book_slide" at={fCed} volume={0.5} />
+      {[0, 1, 2, 3, 4, 5].map((i) => <Sfx key={i} name="hdl_tear" at={tCal + 12 + i * 9} volume={0.4} />)}
+      <Sfx name="hdl_candle" at={fNov} volume={0.8} />
+      <Sfx name="hdl_folder" at={fCed + 16} volume={0.9} />
       <Sfx name="stamp" at={fDer + 6} volume={0.8} />
       <Sfx name="hdl_film" at={fRod - 2} volume={0.6} />
-      <Sfx name="click" at={fRod + 6} volume={0.8} />
-      <Sfx name="hdl_tv" at={tSofa + 4} volume={0.35} />
+      <Sfx name="hdl_clapper" at={fRod + 6} volume={0.9} />
       <Sfx name="card_flip" at={fDic - 4} volume={0.4} />
       <Sfx name="card_flip" at={fAgo - 4} volume={0.4} />
       <Sfx name="hdl_flutter" at={fCerr + 4} volume={0.6} />
       <Sfx name="sk_book_thud" at={tSales + 10} volume={0.4} />
-      <Sfx name="counter" at={fTres - 4} volume={0.35} dur={34} fade={8} />
+      <Sfx name="hdl_tally" at={fTres - 4} volume={0.8} dur={40} fade={8} />
       <Sfx name="hit_soft" at={fTres + 30} volume={0.6} />
     </AbsoluteFill>
   );
@@ -803,17 +837,20 @@ const FilmSet: React.FC<{ t0: number; t1: number; fRod: number; fCol: number; fE
         <rect x={-300} y={880} width={2520} height={400} fill="#1E120A" />
         {/* grúa con cámara y su operador */}
         <line x1={760} y1={880} x2={760} y2={560} stroke="#120A05" strokeWidth={14} />
-        <line x1={560} y1={540} x2={1020} y2={460} stroke="#120A05" strokeWidth={12} />
-        <rect x={990} y={420} width={90} height={60} fill="#120A05" />
-        <rect x={1076} y={436} width={34} height={28} fill="#120A05" />
-        <circle cx={1010} cy={410} r={24} fill="#120A05" />
-        <circle cx={1060} cy={410} r={24} fill="#120A05" />
-        <rect x={520} y={520} width={60} height={60} fill="#120A05" />
-        <Person x={860} y={882} scale={2.0} kind="man" hair="cap" pose={{ lean: 4, shF: 70, elF: 20, shB: 50, elB: 30 }} c="#120A05" />
+        <path d="M 700 880 L 760 840 L 820 880 Z" fill="#120A05" />
+        <g transform={`rotate(${-4 + Math.sin((frame - t0) / 40) * 5} 760 540)`}>
+          <line x1={560} y1={540} x2={1020} y2={460} stroke="#120A05" strokeWidth={12} />
+          <rect x={990} y={420} width={90} height={60} fill="#120A05" />
+          <rect x={1076} y={436} width={34} height={28} fill="#120A05" />
+          <circle cx={1010} cy={410} r={24} fill="#120A05" transform={`rotate(${frame * 3} 1010 410)`} />
+          <circle cx={1060} cy={410} r={24} fill="#120A05" />
+          <rect x={520} y={520} width={60} height={60} fill="#120A05" />
+        </g>
+        <Person x={860} y={882} scale={2.0} kind="man" hair="cap" pose={{ lean: 4, shF: 70 + Math.sin((frame - t0) / 40) * 8, elF: 20, shB: 50, elB: 30 }} c="#120A05" />
         {/* foco sobre trípode */}
         <line x1={1560} y1={880} x2={1560} y2={560} stroke="#120A05" strokeWidth={8} />
         <rect x={1520} y={500} width={80} height={70} fill="#120A05" transform="rotate(-20 1560 535)" />
-        <Beam x={1520} y={540} w0={60} w1={500} len={500} rot={70} a={0.2} c="#FFF2C8" />
+        <Beam x={1520} y={540} w0={60} w1={500} len={500} rot={70} a={0.2 + 0.03 * Math.sin(frame / 3)} c="#FFF2C8" />
         {/* jirafa de sonido */}
         <Person x={1700} y={882} scale={2.0} face={-1} kind="woman" hair="bun" pose={{ lean: 2, shF: 150, elF: 10, shB: 140, elB: 20 }} c="#120A05" />
         <line x1={1690} y1={470} x2={1380} y2={380} stroke="#120A05" strokeWidth={6} />
@@ -868,7 +905,10 @@ const Premiere: React.FC<{ t0: number; t1: number; fDic: number; fSeg: number; f
         {/* sofá y familia, de espaldas */}
         <path d="M 520 960 L 520 800 C 520 770, 560 760, 600 760 L 1320 760 C 1360 760, 1400 770, 1400 800 L 1400 960 Z" fill="#070A0D" />
         {[[640, 'curly', 230], [800, 'bob', 220], [950, 'kid', 170], [1080, 'bun', 215], [1230, 'short', 230]].map(([x, h, s], i) => (
-          <Head key={i} x={x as number} y={800 - ((s as number) - 170) * 0.2} h={s as number} face={i % 2 ? -1 : 1} hair={h as never} kid={h === 'kid'} c="#070A0D" />
+          <g key={i}>
+            <g opacity={0.55 * glow} transform="translate(0 -3)"><Head x={x as number} y={800 - ((s as number) - 170) * 0.2} h={(s as number) + 4} face={i % 2 ? -1 : 1} hair={h as never} kid={h === 'kid'} c="#9CC4E4" /></g>
+            <Head x={x as number} y={800 - ((s as number) - 170) * 0.2 + Math.sin(frame / (30 + i * 7) + i) * 1.5} h={s as number} face={i % 2 ? -1 : 1} hair={h as never} kid={h === 'kid'} c="#070A0D" />
+          </g>
         ))}
         <rect x={500} y={770} width={40} height={190} rx={14} fill="#05080B" />
         <rect x={1380} y={770} width={40} height={190} rx={14} fill="#05080B" />

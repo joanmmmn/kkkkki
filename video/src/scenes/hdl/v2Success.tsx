@@ -98,7 +98,8 @@ export const Porrua2: React.FC = () => {
       <Sfx name="sk_book_thud" at={fMil + 4} volume={0.4} />
       {Array.from({ length: 8 }).map((_, i) => <Sfx key={i} name="sk_book_slide" at={fOcho + 4 + i * 4} volume={0.35} />)}
       <Sfx name="hdl_press" at={tPress} volume={0.7} dur={tStreet - tPress} fade={20} />
-      <Sfx name="hdl_car" at={tStreet} volume={0.35} dur={80} fade={20} />
+      <Sfx name="hdl_truck" at={tStreet} volume={0.7} dur={130} fade={30} />
+      <Sfx name="hdl_city_night" at={tStreet} volume={0.25} dur={end - tStreet} fade={20} />
       <Sfx name="sk_book_slide" at={fJun - 10} volume={0.5} />
     </AbsoluteFill>
   );
@@ -228,7 +229,7 @@ const PressShot: React.FC<{ t0: number; t1: number; fImp: number; fMayo: number 
         <Press x={760} y={900} c="#120C08" frame={frame} />
         <BookStack x={1340} y={900} n={20} seed="pr1" grow={pile} c="#2A2018" />
         <BookStack x={1490} y={900} n={20} seed="pr2" grow={Math.max(0, pile - 0.3) / 0.7} c="#2A2018" />
-        <Person x={1700} y={900} scale={2.4} face={-1} kind="man" hair="cap" pose={{ shF: 40, elF: 60, shB: 30, elB: 70 }} c="#120C08" />
+        <Person x={1700} y={900} scale={2.4} face={-1} kind="man" hair="cap" pose={{ lean: 8 + Math.max(0, Math.sin(frame / 11)) * 10, shF: 40 + Math.sin(frame / 11) * 22, elF: 60 - Math.sin(frame / 11) * 20, shB: 30 + Math.sin(frame / 11 + 1) * 16, elB: 70 }} c="#120C08" />
       </Layer>
       <PaperFinish opacity={0.45} vignette={0.6} warm={0.4} />
       {fImp < 0 && null}
@@ -306,12 +307,13 @@ export const Agotado2: React.FC = () => {
     <AbsoluteFill style={{ background: '#05080B' }}>
       {frame < tEd ? <SoldOut t1={tEd} fAgo={fAgo} fSem={fSem} /> : frame < tCity ? <Editions t0={tEd} t1={tCity} fAnt={fAnt} fCua={fCua} fEdi={fEdi} fCuar={fCuar} /> : <HalfMillion t0={tCity} end={end} fEn={fEn} fMed={fMed} />}
       {[0, 1, 2, 3, 4, 5].map((i) => <Sfx key={i} name="sk_book_slide" at={fAgo - 8 + i * 9} volume={0.3} />)}
-      <Sfx name="stamp" at={fSem} volume={0.9} />
-      {[0, 1, 2, 3, 4, 5].map((i) => <Sfx key={i} name="page_turn" at={fAnt + 4 + i * 12} volume={0.3} />)}
+      <Sfx name="hdl_shop_bell" at={fAgo - 16} volume={0.6} />
+      <Sfx name="hdl_sign_hang" at={fSem - 2} volume={0.9} />
+      {[0, 1, 2, 3, 4, 5].map((i) => <Sfx key={i} name="hdl_tear" at={fAnt + 6 + i * 12} volume={0.45} />)}
       {[1, 2, 3].map((i) => <Sfx key={i} name="sk_book_thud" at={fCua - 6 + i * 12 + 10} volume={0.45} />)}
-      <Sfx name="counter" at={fCuar - 4} volume={0.35} dur={34} fade={8} />
-      <Sfx name="counter" at={fEn + 8} volume={0.35} />
-      <Sfx name="counter" at={fEn + 8 + 56} volume={0.35} dur={fMed + 16 - fEn - 56} fade={8} />
+      <Sfx name="hdl_tally" at={fCuar - 4} volume={0.8} dur={36} fade={8} />
+      <Sfx name="hdl_tally" at={fEn + 8} volume={0.8} />
+      <Sfx name="hdl_tally" at={fEn + 8 + 50} volume={0.7} dur={fMed + 18 - fEn - 58} fade={8} />
       <Sfx name="hdl_flutter" at={fMed + 4} volume={0.6} />
     </AbsoluteFill>
   );

@@ -169,7 +169,7 @@ export const Versiones2: React.FC = () => {
       {[f82, f83, f45, f53].map((f, i) => <Sfx key={i} name="sk_pin" at={f - 6} volume={0.6} />)}
       <Sfx name="sk_string" at={f83 + 14} volume={0.5} />
       <Sfx name="sk_string" at={f53 + 14} volume={0.5} />
-      <Sfx name="zoom_out" at={fMuch - 6} volume={0.4} />
+      <Sfx name="whoosh_soft" at={fMuch - 4} volume={0.5} />
     </AbsoluteFill>
   );
 };
@@ -342,7 +342,9 @@ export const Macondo2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#05080B' }}>
       {frame < tTown ? <BoardWide t1={tTown} fExa={fExa} fProb={fProb} /> : <Town t0={tTown} end={end} fInv={fInv} fMac={fMac} fVida={fVida} fInc={fInc} fNor={fNor} />}
-      <Sfx name="zoom_out" at={2} volume={0.4} />
+      <Sfx name="whoosh_soft" at={4} volume={0.45} />
+      <Sfx name="hdl_crickets" at={tTown} volume={0.4} dur={end - tTown} fade={30} />
+      <Sfx name="hdl_steps_night" at={tTown + 6} volume={0.3} dur={end - tTown - 6} fade={30} />
       <Sfx name="hdl_flutter" at={tTown + 4} volume={0.6} />
       <Sfx name="shimmer" at={fMac - 4} volume={0.6} />
       <Sfx name="hdl_flutter" at={fInc} volume={0.7} />

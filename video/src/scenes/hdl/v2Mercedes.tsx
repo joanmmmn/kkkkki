@@ -94,7 +94,7 @@ export const Mercedes2: React.FC = () => {
       <PawnSlip x={1450} y={770} at={fTel + 10} num="1288" label="Televisor" rot={-3} frame={frame} />
       <Sfx name="sk_door" at={fMan} volume={0.35} />
       <Sfx name="hit_soft" at={fPie} volume={0.6} />
-      <Sfx name="zoom_in" at={fY} volume={0.4} />
+      <Sfx name="hdl_paper_whoosh" at={fY} volume={0.45} />
       <Sfx name="sparkle" at={fMer} volume={0.6} />
       <Sfx name="hdl_flutter" at={fMer + 10} volume={0.6} />
       <Sfx name="hdl_car" at={tCar} volume={0.4} dur={70} fade={20} />
@@ -362,7 +362,7 @@ export const Vecinos2: React.FC = () => {
       <Sfx name="sk_typing" at={fEl} volume={0.35} />
       <Sfx name="sk_heart" at={fPel} volume={0.4} />
       <Sfx name="whoosh_soft" at={fOtro - 6} volume={0.5} />
-      <Sfx name="success" at={fFin} volume={0.35} />
+      <Sfx name="coins" at={fFin + 2} volume={0.45} />
       {fDet + fVec + fMil + fLado < 0 && null}
     </AbsoluteFill>
   );
@@ -401,7 +401,7 @@ export const Deuda2: React.FC = () => {
       <Sfx name="sk_typebell" at={fFin + 14} volume={0.6} />
       <Sfx name="hdl_tear" at={tDebt - 4} volume={0.6} />
       {Array.from({ length: 10 }).map((_, i) => <Sfx key={i} name="sk_pin" at={tDebt + 8 + i * 9} volume={0.3} />)}
-      <Sfx name="counter" at={fCie - 2} volume={0.35} dur={40} fade={8} />
+      <Sfx name="hdl_tally" at={fCie - 2} volume={0.8} dur={44} fade={8} />
       <Sfx name="sk_clock" at={fSolo - 20} volume={0.4} />
       {fPun < 0 && null}
     </AbsoluteFill>

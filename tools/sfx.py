@@ -74,6 +74,29 @@ KIT = {
     'hdl_film': ('Film strip running fast through a vintage projector gate, rapid mechanical flutter then a click, close up', 1.6, 0.6),
     # v2 (15/10/2026)
     'hdl_applause': ('Warm audience applause in a large concert hall, polite steady clapping that swells and settles, no cheering, no voices, no music', 5.0, 0.6),
+    # v2, segunda pasada de sonido (15/10/2026)
+    'hdl_pencil_write': ('Writing quickly with a graphite pencil on a sheet of paper lying on a wooden counter, continuous scratchy handwriting strokes, close up, dry, no music', 2.2, 0.7),
+    'hdl_pencil_line': ('A single quick pencil line drawn firmly under a word on paper, short graphite scratch, close up, dry', 0.6, 0.7),
+    'hdl_pencil_tap': ('A single light tap of the end of a pencil on a wooden counter, short dry knock, close up', 0.5, 0.7),
+    'hdl_candle': ('Striking a wooden match and lighting a small birthday candle, soft flame puff, close up, quiet, no music', 1.8, 0.7),
+    'hdl_clapper': ('Movie set: a wooden clapperboard is snapped shut with a loud crisp clack, then quiet set ambience, no voice', 1.5, 0.45),
+    'hdl_spotlight': ('Old theatre spotlight switched on, heavy electrical clunk followed by a faint warm hum, close up', 1.3, 0.6),
+    'hdl_crickets': ('Warm tropical night ambience, gentle crickets and a few distant frogs, very calm and steady, no music, no voices', 10.0, 0.5),
+    'hdl_city_night': ('A big city at night far away, soft distant traffic hum and a faint breeze, very calm and steady, no horns, no sirens, no music', 10.0, 0.5),
+    'hdl_paper_slide': ('A sheet of paper sliding quickly across a wooden table and stopping, soft papery swish, close up, dry', 0.8, 0.7),
+    'hdl_folder': ('A cardboard folder pushed across a long wooden table, soft slide and gentle stop, close up, dry', 1.1, 0.7),
+    'hdl_tally': ('Old mechanical number counter rolling up quickly, fast light metallic clicking that slows down and stops, close up', 1.6, 0.6),
+    'hdl_truck': ('Small 1960s delivery van arriving on a city street and stopping, engine idling and a soft brake squeak, no horn, no music', 3.0, 0.6),
+    'hdl_shop_bell': ('Small brass bell on a shop door ringing as the door opens, one gentle jingle, close up', 1.2, 0.7),
+    'hdl_steps_stage': ('Calm footsteps of a man in leather shoes walking across a wooden stage, about six steps, large concert hall reverb', 3.0, 0.6),
+    'hdl_steps_night': ('Calm unhurried footsteps on a dirt road at night, slow steps, quiet, no music', 4.0, 0.6),
+    'hdl_paper_whoosh': ('A large sheet of paper swept quickly through the air, soft papery whoosh, clean, no music', 0.8, 0.6),
+    'hdl_rocking': ('An old wooden rocking chair rocking slowly on a wooden floor, clear rhythmic wood creaks every second, close up, no music', 5.0, 0.6),
+    'hdl_envelope': ('A paper envelope dropped onto a wooden desk, soft papery slap, close up, dry', 0.6, 0.7),
+    'hdl_lights_off': ('Lights of an empty old building switched off for the night: a heavy wall switch clunk and a faint electrical hum fading out, no music', 1.6, 0.6),
+    'hdl_switch': ('An old wall light switch flipped once, single solid click, close up, dry', 0.5, 0.7),
+    'hdl_sign_hang': ('A small wooden sign hung on a hook by a short chain, light chain rattle and a soft knock against glass, close up', 1.0, 0.6),
+    'hdl_flash': ('Several vintage press camera flashbulbs popping quickly in a concert hall, soft pops and shutter clicks, no voices', 1.6, 0.6),
 }
 
 

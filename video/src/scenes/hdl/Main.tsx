@@ -81,7 +81,7 @@ export const ChapterCard: React.FC<{ title: string; index: number; total: number
         {/* filete y adorno */}
         <div style={{ position: 'absolute', left: 120, right: 120, top: 100, bottom: 100, border: `2px solid rgba(122,102,80,0.35)` }} />
         <div style={{ position: 'absolute', left: 0, right: 0, top: 150, textAlign: 'center' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 40, opacity: vIn, transform: `scale(${0.92 + 0.08 * vIn})` }}><ChapterVignette index={index} w={380} /></div>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 40, opacity: vIn, transform: `scale(${0.92 + 0.08 * vIn})` }}><ChapterVignette index={index} w={380} t={Math.min(1, frame / 60)} /></div>
           <div style={{ fontFamily: F.sans, fontWeight: 500, fontSize: 30, letterSpacing: 10, textTransform: 'uppercase', color: P.sepia, opacity: kIn, transform: `translateY(${(1 - kIn) * 16}px)` }}>
             Capítulo {ROMAN[index - 1]} <span style={{ opacity: 0.5 }}>· de {total}</span>
           </div>
@@ -157,7 +157,7 @@ export const CienAnosHistoria: React.FC = () => {
       })}
       {HDL_SCENES.slice(1).map((s) => (s.chapter || s.tin === 'fade' ? null
         : s.tin === 'cut' ? <Sfx key={s.id} name="swipe" at={hdlStart(s.id)} volume={0.8} />
-        : <Sfx key={s.id} name="transition" at={hdlStart(s.id) + (s.tin === 'slide' ? 0 : 1)} volume={0.5} />))}
+        : <Sfx key={s.id} name="hdl_paper_whoosh" at={hdlStart(s.id) + (s.tin === 'slide' ? 0 : 1)} volume={0.55} />))}
       {HDL_MUSIC && (!STEM || STEM === 'music') && <Audio src={staticFile(HDL_MUSIC)} volume={musicVolume} />}
     </AbsoluteFill>
   );

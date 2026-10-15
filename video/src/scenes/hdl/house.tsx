@@ -176,6 +176,13 @@ export const House: React.FC<HouseProps> = ({ ink, lights = {}, sky = '#1C2C3E',
         <rect x={726} y={552} width={10} height={60} fill={ink} />
         <TypewriterSide x={612} y={540} c={ink} s={0.62} />
         <DeskLamp x={715} y={540} c={ink} s={0.55} on={L('study')} />
+        {/* motas de polvo en la luz de la lámpara */}
+        {L('study') > 0.2 && Array.from({ length: 14 }).map((_, i) => {
+          const r = (k: string) => random(`hm-${i}-${k}`);
+          const mx = 610 + r('x') * 150 + Math.sin(frame / (38 + r('p') * 30) + i) * 7;
+          const my = 440 + ((r('y') * 110 + frame * (0.08 + r('v') * 0.12)) % 110);
+          return <circle key={`m${i}`} cx={mx} cy={my} r={0.7 + r('s') * 0.7} fill="#FFE6B0" opacity={L('study') * (0.25 + 0.35 * Math.abs(Math.sin(frame / (14 + r('t') * 10) + i)))} />;
+        })}
         {/* silla */}
         <rect x={478} y={560} width={60} height={9} fill={ink} />
         <rect x={480} y={569} width={8} height={43} fill={ink} />

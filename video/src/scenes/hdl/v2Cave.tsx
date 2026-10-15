@@ -67,16 +67,16 @@ export const Cueva2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#05080B' }}>
       {shot}
-      <Sfx name="pencil_strike" at={fSeis + 4} volume={0.5} />
-      <Sfx name="pencil_strike" at={fLe} volume={0.7} />
+      <Sfx name="hdl_pencil_line" at={fSeis + 6} volume={0.8} />
+      <Sfx name="hdl_pencil_line" at={fLe + 2} volume={0.9} />
       <Sfx name="page_riffle" at={fLe + 6} volume={0.9} />
       <Sfx name="hdl_tear" at={fLe + 4} volume={0.5} />
       <Sfx name="hdl_tear" at={fDie} volume={0.5} />
-      <Sfx name="sk_door" at={fEnc + 4} volume={0.6} />
-      <Sfx name="sk_pin" at={fCue - 4} volume={0.8} />
+      <Sfx name="sk_door" at={fEnc + 4} volume={0.4} />
+      <Sfx name="sk_pin" at={fCue - 4} volume={0.5} />
       <Sfx name="sk_typing" at={fEsc} volume={0.4} />
       <Sfx name="sk_clock" at={fDias - 10} volume={0.4} />
-      <Sfx name="click" at={tWallet + 14} volume={0.6} />
+      <Sfx name="hdl_switch" at={tWallet + 14} volume={0.8} />
       <Sfx name="hdl_flutter" at={fGana + 6} volume={0.6} />
       {flips.length < 0 && null}
     </AbsoluteFill>
@@ -163,7 +163,7 @@ const CaveShot: React.FC<{ t0: number; t1: number; fBau: number; fCue: number; f
 // La caja del dinero, vacía: se abre y sale volando una polilla.
 const WalletShot: React.FC<{ t0: number; end: number; fGana: number; fPeso: number }> = ({ t0, end, fGana, fPeso }) => {
   const frame = useCurrentFrame();
-  const cam = useCamera([{ f: t0, x: 960, y: 600, s: 1.1 }, { f: end, x: 960, y: 560, s: 1.22 }], 0.5);
+  const cam = useCamera([{ f: t0, x: 960, y: 690, s: 1.55 }, { f: Math.min(fGana, fPeso - 30), x: 960, y: 660, s: 1.5 }, { f: fPeso, x: 960, y: 545, s: 1.1 }, { f: end, x: 960, y: 535, s: 1.13 }], 0.5);
   const open = ramp(frame, t0 + 8, t0 + 22, easeOut);
   const mt = (frame - fGana) / 50;
   return (
@@ -227,13 +227,13 @@ export const Amigos2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#05080B' }}>
       {shot}
-      <Sfx name="hdl_knock" at={fPas - 20} volume={0.8} />
+      <Sfx name="hdl_knock" at={fPas - 20} volume={0.55} />
       <Sfx name="hdl_flutter" at={fCue + 10} volume={0.6} />
       <Sfx name="page_turn" at={fLee + 6} volume={0.6} />
       <Sfx name="hdl_press" at={tMag + 4} volume={0.5} dur={70} fade={20} />
       <Sfx name="sparkle" at={fFue3} volume={0.5} />
-      <Sfx name="sk_door" at={fSal - 4} volume={0.6} />
-      <Sfx name="hdl_bell" at={fDoce} volume={1} />
+      <Sfx name="sk_door" at={fSal - 4} volume={0.4} />
+      <Sfx name="hdl_bell" at={fDoce} volume={0.75} />
     </AbsoluteFill>
   );
 };

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Audio, getInputProps, random, Sequence, staticFile, useVideoConfig } from 'remotion';
+import { Audio, getInputProps, random, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 
 // --props='{"stem":"sfx"|"vo"|"music"}' renderiza una sola capa de la mezcla (para medirla).
 export const STEM = (getInputProps() as { stem?: 'sfx' | 'vo' | 'music' }).stem;
+// --props='{"sfxlog":true}': cada efecto escribe en la consola su nombre y su fotograma (para auditar la mezcla).
+const SFX_LOG = Boolean((getInputProps() as { sfxlog?: boolean }).sfxlog);
 
 export type SfxName =
   | 'whoosh_fast' | 'whoosh_deep' | 'whoosh_soft' | 'click' | 'pop' | 'tick' | 'cross' | 'marker' | 'typing'
@@ -16,7 +18,11 @@ export type SfxName =
   | 'sk_crumple' | 'sk_bin' | 'sk_uncrumple' | 'sk_typebell' | 'sk_typing' | 'sk_wind' | 'sk_door' | 'sk_heart' | 'sk_thunder' | 'sk_clock' | 'sk_pin' | 'sk_string' | 'sk_book_thud' | 'sk_book_slide' | 'sk_projector' | 'sk_chime' | 'sk_peel' | 'sk_snow'
   // La historia detrás del libro · Cien años de soledad (ElevenLabs Sound Effects, ganancia igualada a page_turn por sonoridad integrada)
   | 'hdl_scale' | 'hdl_stack' | 'hdl_split' | 'hdl_wrap' | 'hdl_car' | 'hdl_uturn' | 'hdl_ice' | 'hdl_bell' | 'hdl_register' | 'hdl_pawn' | 'hdl_press'
-  | 'hdl_flutter' | 'hdl_knock' | 'hdl_tv' | 'hdl_dryer' | 'hdl_blender' | 'hdl_tear' | 'hdl_mail' | 'hdl_film' | 'hdl_applause';
+  | 'hdl_flutter' | 'hdl_knock' | 'hdl_tv' | 'hdl_dryer' | 'hdl_blender' | 'hdl_tear' | 'hdl_mail' | 'hdl_film' | 'hdl_applause'
+  // segunda pasada de sonido de la v2 (15/10/2026)
+  | 'hdl_pencil_write' | 'hdl_pencil_line' | 'hdl_pencil_tap' | 'hdl_candle' | 'hdl_clapper' | 'hdl_spotlight' | 'hdl_crickets' | 'hdl_city_night'
+  | 'hdl_paper_slide' | 'hdl_folder' | 'hdl_tally' | 'hdl_truck' | 'hdl_shop_bell' | 'hdl_steps_stage' | 'hdl_steps_night' | 'hdl_paper_whoosh'
+  | 'hdl_rocking' | 'hdl_envelope' | 'hdl_lights_off' | 'hdl_switch' | 'hdl_sign_hang' | 'hdl_flash';
 const WAV: Partial<Record<SfxName, true>> = { key1: true, key2: true, key3: true, key4: true, key5: true, key6: true, key7: true, key_space: true, count_tick: true };
 
 // Mezcla: todos los archivos están normalizados a -1 dBFS de pico; GAIN iguala la sonoridad percibida.
@@ -31,9 +37,12 @@ const GAIN: Record<SfxName, number> = {
   hit_soft: 0.26, impact: 0.24, bass_drop: 0.12, stamp: 0.42, success: 0.16, fail: 0.18, cross: 0.26, coins: 0.22,
   riser: 0.14, reverse_swell: 0.18, logo_sting: 0.2, typing: 0.55, counter: 0.17, page_turn: 0.32, page_riffle: 0.32,
   key1: 0.55, key2: 0.55, key3: 0.55, key4: 0.55, key5: 0.55, key6: 0.55, key7: 0.55, key_space: 0.55, count_tick: 0.17,
-  sk_crumple: 0.39, sk_bin: 0.38, sk_uncrumple: 0.59, sk_typebell: 0.23, sk_typing: 0.38, sk_wind: 0.31, sk_door: 0.6, sk_heart: 0.41, sk_thunder: 0.23, sk_clock: 0.62, sk_pin: 0.59, sk_string: 0.25, sk_book_thud: 0.65, sk_book_slide: 0.71, sk_projector: 0.22, sk_chime: 0.18, sk_peel: 0.35, sk_snow: 0.76,
+  sk_crumple: 0.39, sk_bin: 0.38, sk_uncrumple: 0.59, sk_typebell: 0.23, sk_typing: 0.38, sk_wind: 0.31, sk_door: 0.6, sk_heart: 0.41, sk_thunder: 0.23, sk_clock: 0.62, sk_pin: 0.48, sk_string: 0.25, sk_book_thud: 0.65, sk_book_slide: 0.71, sk_projector: 0.22, sk_chime: 0.18, sk_peel: 0.35, sk_snow: 0.76,
   hdl_scale: 0.23, hdl_stack: 0.77, hdl_split: 0.67, hdl_wrap: 0.49, hdl_car: 0.33, hdl_uturn: 0.19, hdl_ice: 0.15, hdl_bell: 0.39, hdl_register: 0.38,
   hdl_pawn: 0.17, hdl_press: 0.16, hdl_flutter: 0.53, hdl_knock: 0.62, hdl_tv: 0.48, hdl_dryer: 0.16, hdl_blender: 0.14, hdl_tear: 0.2, hdl_mail: 0.44, hdl_film: 0.29, hdl_applause: 0.2,
+  hdl_pencil_write: 0.26, hdl_pencil_line: 0.2, hdl_pencil_tap: 0.3, hdl_candle: 0.22, hdl_clapper: 0.32, hdl_spotlight: 0.2, hdl_crickets: 0.19,
+  hdl_city_night: 0.26, hdl_paper_slide: 0.19, hdl_folder: 0.14, hdl_tally: 0.3, hdl_truck: 0.17, hdl_shop_bell: 0.17, hdl_steps_stage: 0.4,
+  hdl_steps_night: 0.33, hdl_paper_whoosh: 0.24, hdl_rocking: 0.55, hdl_envelope: 0.45, hdl_lights_off: 0.22, hdl_switch: 0.3, hdl_sign_hang: 0.2, hdl_flash: 0.3,
 };
 const SYNC: Partial<Record<SfxName, number>> = {
   // golpes: el pico
@@ -47,12 +56,15 @@ const SYNC: Partial<Record<SfxName, number>> = {
   // trazo, tecleo y contador: arrancan con la animación (SYNC 0)
   // La historia detrás del libro: el golpe de cada efecto (envolvente de 5 ms, 14/10/2026)
   hdl_scale: 0.15, hdl_register: 0.08, hdl_knock: 0.15, hdl_tv: 0.18, hdl_uturn: 0.64, hdl_flutter: 0.88, hdl_split: 0.3, hdl_wrap: 0.2,
+  hdl_paper_whoosh: 0.33, hdl_paper_slide: 0.1, hdl_folder: 0.7, hdl_clapper: 0.05, hdl_shop_bell: 0.17, hdl_pencil_line: 0.3,
 };
 
 // Efecto de sonido cuyo golpe cae en el fotograma `at`; `volume` es relativo a la ganancia de mezcla del efecto.
 // `dur`: fotogramas que suena (para que un contador o un tecleo acaben con su animación) y `fade`: fundido final en fotogramas.
 export const Sfx: React.FC<{ name: SfxName; at: number; volume?: number; trimAfter?: number; dur?: number; fade?: number }> = ({ name, at, volume = 1, trimAfter, dur, fade = 0 }) => {
   const { fps } = useVideoConfig();
+  const rel = useCurrentFrame();
+  if (SFX_LOG) console.log(`SFXLOG ${JSON.stringify({ name, at, rel, volume, dur: dur ?? null })}`);
   if (STEM && STEM !== 'sfx') return null;
   const start = Math.round(at - (SYNC[name] ?? 0) * fps);
   const trimBefore = start < 0 ? -start : undefined;

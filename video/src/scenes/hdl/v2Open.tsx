@@ -61,20 +61,23 @@ export const Hook2: React.FC = () => {
       {/* destello cálido al cruzar la puerta */}
       <AbsoluteFill style={{ background: '#FFC77A', opacity: interpolate(frame, [tB - 6, tB, tB + 10], [0, 0.7, 0], clamp) }} />
       {/* ambiente y golpes */}
-      <Sfx name="sk_wind" at={0} volume={0.25} dur={tB + 10} fade={14} />
+      <Sfx name="hdl_city_night" at={0} volume={0.45} dur={tB + 12} fade={16} />
+      <Sfx name="sk_wind" at={0} volume={0.12} dur={tB + 10} fade={14} />
       <Sfx name="hdl_car" at={14} volume={0.55} dur={200} fade={50} />
-      <Sfx name="zoom_in" at={tB - 4} volume={0.5} />
+      <Sfx name="hdl_paper_whoosh" at={tB - 2} volume={0.5} />
       <Sfx name="sk_clock" at={tB + 6} volume={0.35} />
       <Sfx name="sk_clock" at={tB + 116} volume={0.25} />
       <Sfx name="hdl_stack" at={fPaq + 4} volume={0.8} />
       <Sfx name="hdl_scale" at={fPaq + 5} volume={0.9} />
       <Sfx name="page_riffle" at={fSeis + 6} volume={0.5} />
       <Sfx name="card_flip" at={tC} volume={0.4} />
-      <Sfx name="pencil_strike" at={fCuen - 6} volume={0.45} />
-      <Sfx name="pencil_strike" at={fOch + 2} volume={0.6} />
-      <Sfx name="pencil_strike" at={fPes + 14} volume={0.5} />
+      {/* el lápiz: suena mientras escribe cada línea (mismos tramos que ShotForm) y dos trazos al subrayar */}
+      <Sfx name="hdl_pencil_write" at={tC + 4} volume={0.8} dur={fCuen + 16 - tC - 4} fade={6} />
+      <Sfx name="hdl_pencil_write" at={fOch - 4} volume={0.95} dur={fPes + 10 - fOch} fade={6} />
+      <Sfx name="hdl_pencil_line" at={fPes + 16} volume={0.8} />
+      <Sfx name="hdl_pencil_line" at={fPes + 24} volume={0.6} />
       <Sfx name="coins" at={tD + 12} volume={0.8} />
-      {[0, 1, 2, 3].map((i) => <Sfx key={i} name="tick_soft" at={tD + 33 + i * 11} volume={0.9} />)}
+      {[0, 1, 2, 3].map((i) => <Sfx key={i} name="hdl_pencil_tap" at={tD + 27 + i * 11} volume={0.9} dur={9} fade={3} />)}
       <Sfx name="sk_heart" at={fLleg + 4} volume={0.45} />
       <Sfx name="card_flip" at={tE} volume={0.3} />
       <Sfx name="sk_string" at={fAbr + 6} volume={0.6} />
@@ -332,7 +335,7 @@ const ShotCoins: React.FC<{ t0: number; t1: number; fLleg: number; fNo: number }
   const open = ramp(frame, t0 + 8, t0 + 16);
   const handOut = ramp(frame, fLleg + 18, t1, easeInOut);
   const coins: [number, number, number][] = [[820, 600, 0], [930, 650, 2], [1010, 580, 4], [760, 700, 5], [880, 740, 7]];
-  const T0 = t0 + 30, TS = 11;
+  const T0 = t0 + 24, TS = 11;
   const tapI = Math.max(-1, Math.min(3, Math.floor((frame - T0) / TS)));
   const target = tapI >= 0 ? coins[tapI] : coins[0];
   const tapDown = tapI >= 0 && frame < T0 + 4 * TS ? interpolate((frame - T0) % TS, [0, 3, TS], [1, 0, 1]) : 1;
@@ -574,7 +577,7 @@ export const Legacy2: React.FC = () => {
       {PILES.map((p, i) => <Sfx key={i} name="sk_book_thud" at={Math.round(fAca + 14 + p.d + i * 3)} volume={0.12} />)}
       <Sfx name="hdl_flutter" at={fEsta} volume={1} />
       <Sfx name="sparkle" at={fCien} volume={0.6} />
-      <Sfx name="hdl_tv" at={fOfi - 2} volume={0.35} />
+      <Sfx name="hdl_lights_off" at={fOfi - 30} volume={0.7} />
     </AbsoluteFill>
   );
 };

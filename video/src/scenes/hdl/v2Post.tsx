@@ -114,12 +114,11 @@ export const Correos2: React.FC = () => {
       {shot}
       <AbsoluteFill style={{ background: '#FFC77A', opacity: interpolate(frame, [tPkg - 6, tPkg, tPkg + 10], [0, 0.6, 0], clamp) }} />
       <Sfx name="sk_wind" at={0} volume={0.2} dur={tPkg} fade={10} />
-      <Sfx name="zoom_in" at={tPkg - 6} volume={0.5} />
+      <Sfx name="hdl_paper_whoosh" at={tPkg - 4} volume={0.5} />
       <Sfx name="page_riffle" at={fQui} volume={0.8} />
-      <Sfx name="pencil_strike" at={fFra} volume={0.4} />
-      <Sfx name="pencil_strike" at={fEdi} volume={0.4} />
-      <Sfx name="pencil_strike" at={fBue} volume={0.4} />
-      <Sfx name="hdl_register" at={fOch} volume={0.6} />
+      {[fFra, fDirL, fEdi, fBue].map((f, i) => <Sfx key={i} name="hdl_pencil_write" at={f - 4} volume={i === 1 ? 0.55 : 0.7} dur={22} fade={5} />)}
+      <Sfx name="hdl_register" at={fOch} volume={0.45} />
+      <Sfx name="marker" at={fLle} volume={0.6} />
       <Sfx name="sk_heart" at={fLle} volume={0.4} />
       <Sfx name="hdl_split" at={fPar} volume={0.8} />
       <Sfx name="whoosh_soft" at={fMan + 4} volume={0.6} />
@@ -224,6 +223,7 @@ export const Empeno2: React.FC = () => {
     { f: fCal - 16, x: (S.x0 + S.x1) / 2, y: (S.y0 + S.y1) / 2, s: 3.6 },
     { f: fFri + 10, x: (S.x0 + S.x1) / 2, y: (S.y0 + S.y1) / 2, s: 3.8 },
     { f: fSec - 8, x: (B.x0 + B.x1) / 2, y: (B.y0 + B.y1) / 2, s: 4.2 },
+    { f: Math.round((fSec + fBat) / 2) - 8, x: ((B.x0 + B.x1) / 2 + K.x1 - 220) / 2, y: ((B.y0 + B.y1) / 2 + (K.y0 + K.y1) / 2) / 2, s: 2.3 },
     { f: fBat - 8, x: K.x1 - 220, y: (K.y0 + K.y1) / 2, s: 3.6 },
     { f: fCon, x: 960, y: 640, s: 0.92 },
     { f: tMap, x: 960, y: 640, s: 0.9 },
@@ -272,7 +272,7 @@ export const Empeno2: React.FC = () => {
           <PawnSlip x={1460} y={760} at={fBat + 12} num="1344" label="Batidora" rot={-3} frame={frame} scale={0.8} />
         </>
       )}
-      <Sfx name="sk_door" at={fVue + 4} volume={0.5} />
+      <Sfx name="sk_door" at={fVue + 4} volume={0.35} />
       <Sfx name="hdl_pawn" at={fCal + 10} volume={0.6} />
       <Sfx name="sk_wind" at={fCal + 18} volume={0.35} dur={fFri - fCal + 20} fade={14} />
       <Sfx name="hdl_dryer" at={fSec - 6} volume={0.8} />
@@ -329,7 +329,9 @@ export const Frase2: React.FC = () => {
       </AbsoluteFill>
       <PaperFinish opacity={0.45} vignette={0.6} />
       <Sfx name="sk_door" at={2} volume={0.4} />
-      <Sfx name="sk_wind" at={0} volume={0.2} dur={end} fade={20} />
+      <Sfx name="hdl_city_night" at={0} volume={0.4} dur={end} fade={24} />
+      <Sfx name="hdl_steps_night" at={14} volume={0.35} dur={110} fade={30} />
+      <Sfx name="sk_wind" at={0} volume={0.1} dur={end} fade={20} />
     </AbsoluteFill>
   );
 };
@@ -362,7 +364,7 @@ export const Giro2: React.FC = () => {
         <PorruaWaiting t0={tBA} end={end} fPor={fPor} fMan={fMan} fFin={fFin} fEsp={fEsp} fPrin={fPrin} />
       )}
       <Sfx name="reverse_swell" at={fGir - 30} volume={0.4} />
-      <Sfx name="hdl_mail" at={fPri} volume={0.7} />
+      <Sfx name="hdl_mail" at={fPri} volume={0.5} />
       <Sfx name="whoosh_soft" at={tBA} volume={0.5} />
       <Sfx name="sk_clock" at={fEsp - 6} volume={0.6} />
       <Sfx name="sk_clock" at={fEsp + 80} volume={0.5} />

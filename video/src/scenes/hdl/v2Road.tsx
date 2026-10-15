@@ -205,7 +205,6 @@ export const Carretera2: React.FC = () => {
       <PaperFinish opacity={0.45} vignette={0.55} warm={0.4 * (1 - tone)} />
       <Slate text="1965 · camino de Acapulco" a={f65 + 4} b={f65 + 44} out={fVac + 40} x={110} y={940} />
       <Sfx name="hdl_car" at={0} volume={0.6} dur={fGol + 20} fade={30} />
-      <Sfx name="sk_book_slide" at={fAca - 30} volume={0} />
       <Sfx name="reverse_swell" at={fGol - 40} volume={0.6} />
       <Sfx name="hdl_flutter" at={fGol} volume={1} />
       <Sfx name="shimmer" at={fArr} volume={0.5} />
@@ -293,8 +292,9 @@ export const Abuela2: React.FC = () => {
       </AbsoluteFill>
       {frame > fNat && <AbsoluteFill>{[0, 1, 2].map((i) => <Butterfly key={i} x={600 + i * 300 + Math.sin(frame / 15 + i) * 80} y={380 - i * 40 + Math.cos(frame / 11 + i) * 40} size={50} seed={`ab${i}`} glow={0.6} opacity={ramp(frame, fNat + i * 20, fNat + i * 20 + 20)} />)}</AbsoluteFill>}
       <PaperFinish opacity={0.45} vignette={0.6} />
-      <Sfx name="sk_wind" at={0} volume={0.15} dur={end} fade={20} />
-      <Sfx name="sk_clock" at={20} volume={0} />
+      <Sfx name="hdl_crickets" at={0} volume={0.35} dur={end} fade={20} />
+      <Sfx name="hdl_rocking" at={4} volume={0.45} dur={end - 4} fade={20} />
+      <Sfx name="sk_wind" at={0} volume={0.08} dur={end} fade={20} />
       <Sfx name="sparkle" at={fInc - 10} volume={0.6} />
       <Sfx name="hdl_flutter" at={fNat + 4} volume={0.6} />
       {fSab + fNor < 0 && null}
@@ -333,12 +333,12 @@ export const Vuelta2: React.FC = () => {
       {shot}
       <Slate text="La versión más famosa" a={4} b={fFam + 20} out={fDio - 10} x={110} y={940} />
       <Sfx name="hdl_car" at={0} volume={0.5} dur={fDio} fade={10} />
-      <Sfx name="hdl_uturn" at={fVue - 6} volume={1.2} />
+      <Sfx name="hdl_uturn" at={fVue - 6} volume={0.85} />
       <Sfx name="whoosh_soft" at={tHome} volume={0.4} />
       <Sfx name="sk_door" at={fEsc - 18} volume={0.4} />
       <Sfx name="sk_typing" at={fEsc + 4} volume={0.4} />
       <Sfx name="whoosh_soft" at={tQuote} volume={0.5} />
-      <Sfx name="sk_pin" at={tBoard + 30} volume={0.9} />
+      <Sfx name="sk_pin" at={tBoard + 30} volume={0.55} />
       <Sfx name="sk_string" at={fVolv} volume={0.3} />
       {tBoard < 0 && null}
     </AbsoluteFill>

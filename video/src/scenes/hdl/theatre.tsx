@@ -228,8 +228,14 @@ export const Person: React.FC<{
   x: number; y: number; scale?: number; face?: 1 | -1; kind?: Kind; hair?: Hair; mustache?: boolean; pose?: Pose; c?: string; back?: string; glasses?: boolean;
   front?: React.ReactNode; // objeto en la mano delantera (se dibuja en coordenadas de la mano, girado con el antebrazo)
   frontRot?: number;
-}> = ({ x, y, scale = 1, face = 1, kind = 'man', hair = 'short', mustache = false, pose = {}, c = P.ink, back, glasses = false, front, frontRot = 0 }) => {
+  idle?: number; // vida en reposo: la cabeza y el tronco respiran un poco (0 = quieto)
+}> = ({ x, y, scale = 1, face = 1, kind = 'man', hair = 'short', mustache = false, pose: pose0 = {}, c = P.ink, back, glasses = false, front, frontRot = 0, idle = 1 }) => {
   const K = KINDS[kind];
+  const frame = useCurrentFrame();
+  const seed = x * 0.013 + y * 0.007 + (kind.length * 1.7);
+  const pose: Pose = idle > 0
+    ? { ...pose0, lean: (pose0.lean ?? 0) + idle * Math.sin(frame / 63 + seed) * 0.7, neck: (pose0.neck ?? 0) + idle * (Math.sin(frame / 41 + seed * 1.3) * 1.8 + Math.sin(frame / 17 + seed * 2.1) * 0.5) }
+    : pose0;
   const sk = skeleton(kind, pose);
   const lean = pose.lean ?? 0;
   const bc = back ?? c;

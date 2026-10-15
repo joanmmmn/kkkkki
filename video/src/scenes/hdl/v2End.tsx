@@ -25,7 +25,7 @@ const NARR = [
 ];
 
 // Ondas de voz (arcos) que salen de un punto hacia la derecha (dir 1) o la izquierda (-1).
-const VoiceWaves: React.FC<{ x: number; y: number; dir?: 1 | -1; t: number; n?: number; c?: string; reach?: number; on?: number }> = ({ x, y, dir = 1, t, n = 4, c = '#FFD98A', reach = 260, on = 1 }) => (
+export const VoiceWaves: React.FC<{ x: number; y: number; dir?: 1 | -1; t: number; n?: number; c?: string; reach?: number; on?: number }> = ({ x, y, dir = 1, t, n = 4, c = '#FFD98A', reach = 260, on = 1 }) => (
   <g transform={`translate(${x} ${y}) scale(${dir} 1)`} opacity={on}>
     {Array.from({ length: n }).map((_, i) => {
       const k = ((t / 40 + i / n) % 1);
@@ -62,12 +62,13 @@ export const Audio2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: '#05080B' }}>
       {shot}
-      <Sfx name="sk_wind" at={0} volume={0.12} dur={tList} fade={20} />
+      <Sfx name="hdl_crickets" at={0} volume={0.35} dur={tList + 10} fade={16} />
+      <Sfx name="hdl_rocking" at={6} volume={0.4} dur={tList - 6} fade={16} />
       <Sfx name="hdl_flutter" at={fVoz} volume={0.6} />
       <Sfx name="whoosh_soft" at={tList - 4} volume={0.4} />
       <Sfx name="ui_pop" at={fAud - 4} volume={0.5} />
       <Sfx name="hit_soft" at={tMics + 4} volume={0.4} />
-      {NARR.map((n, i) => <Sfx key={`l${i}`} name="click" at={c.at('W33', n.w) - 6} volume={0.6} />)}
+      {NARR.map((n, i) => <Sfx key={`l${i}`} name="hdl_spotlight" at={c.at('W33', n.w) - 8} volume={0.8} />)}
       <Sfx name="whoosh_soft" at={tWeb - 4} volume={0.6} />
       <Sfx name="zoom_in" at={fComp - 4} volume={0.5} />
       <Sfx name="focus" at={fComp} volume={0.5} />
@@ -313,25 +314,36 @@ export const Outro2: React.FC = () => {
       </Rig>
       <AbsoluteFill style={{ background: 'linear-gradient(90deg, rgba(5,8,11,0.85) 0%, rgba(5,8,11,0.55) 45%, rgba(5,8,11,0) 62%)' }} />
       <PaperFinish opacity={0.35} vignette={0.5} />
-      <AbsoluteFill style={{ justifyContent: 'center', paddingLeft: 130 }}>
-        <div style={{ width: 820 }}>
-          <div style={{ fontFamily: '"Special Elite", monospace', fontSize: 36, letterSpacing: 3, color: '#E9D7B0', opacity: rampOut(frame, f0, f0 + 14) * (1 - 0.45 * ramp(frame, fProx - 24, fProx - 10)) }}>«{SERIES}»</div>
-          <div style={{ fontFamily: '"EB Garamond", serif', fontWeight: 600, fontSize: 84, color: '#F6EFE2', lineHeight: 1.05, marginTop: 22 }}>
-            <Words text="¿Qué libro contamos en el próximo episodio?" start={fProx - 20} stagger={3} size={84} weight={600} serif color="#F6EFE2" align="left" />
-          </div>
-          <div style={{ marginTop: 26, display: 'inline-flex', alignItems: 'center', gap: 14, padding: '14px 26px', borderRadius: 999, background: P.yellow, color: P.ink, fontFamily: '"Ubuntu", sans-serif', fontWeight: 700, fontSize: 34, opacity: rampOut(frame, fCom - 6, fCom + 8) }}>
-            <svg width={36} height={36} viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill={P.ink} /></svg>
-            Déjalo en los comentarios
-          </div>
-          <div style={{ marginTop: 70, opacity: brand, transform: `translateY(${(1 - brand) * 20}px)` }}>
-            <Logo size={84} delay={vEnd + 20} dark />
-            <div style={{ marginTop: 30 }}>
-              <Words text="Tu próxima historia te está esperando." start={vEnd + 30} stagger={4} size={54} weight={700} align="left" color="#F6EFE2" />
+      {/* 1 · «Esto ha sido…»: el nombre de la serie, grande; 2 · sube y deja sitio a la pregunta, el comentario y la marca */}
+      {(() => {
+        const up = ramp(frame, fProx - 26, fProx - 6, easeInOut);
+        const t1 = rampOut(frame, f0, f0 + 14);
+        return (
+          <div style={{ position: 'absolute', left: 130, top: interpolate(up, [0, 1], [300, 56]), width: 900, transformOrigin: '0 0', transform: `scale(${1 - 0.5 * up})`, opacity: t1 * (1 - 0.25 * up) }}>
+            <div style={{ fontFamily: '"Special Elite", monospace', fontSize: 34, letterSpacing: 3, color: '#E9D7B0' }}>Esto ha sido</div>
+            <div style={{ fontFamily: '"EB Garamond", serif', fontWeight: 600, fontSize: 104, lineHeight: 1.02, color: '#F6EFE2', marginTop: 12 }}>
+              <Words text="La historia detrás del libro" start={f0 + 6} stagger={3} size={104} weight={600} serif color="#F6EFE2" align="left" />
             </div>
-            <div style={{ marginTop: 30, opacity: sp(frame, vEnd + 60) }}><Pill size={36}>sonorbooks.com</Pill></div>
+            <div style={{ fontFamily: '"EB Garamond", serif', fontStyle: 'italic', fontSize: 46, color: P.yellow, marginTop: 14, opacity: rampOut(frame, f0 + 30, f0 + 46) }}>Episodio 1 · Cien años de soledad</div>
           </div>
+        );
+      })()}
+      <div style={{ position: 'absolute', left: 130, top: 270, width: 820 }}>
+        <div style={{ fontFamily: '"EB Garamond", serif', fontWeight: 600, fontSize: 84, color: '#F6EFE2', lineHeight: 1.05 }}>
+          <Words text="¿Qué libro contamos en el próximo episodio?" start={fProx - 14} stagger={3} size={84} weight={600} serif color="#F6EFE2" align="left" />
         </div>
-      </AbsoluteFill>
+        <div style={{ marginTop: 22, display: 'inline-flex', alignItems: 'center', gap: 14, padding: '12px 24px', borderRadius: 999, background: P.yellow, color: P.ink, fontFamily: '"Ubuntu", sans-serif', fontWeight: 700, fontSize: 32, opacity: rampOut(frame, fCom - 6, fCom + 8), transform: `translateY(${(1 - rampOut(frame, fCom - 6, fCom + 8)) * 16}px)` }}>
+          <svg width={36} height={36} viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill={P.ink} /></svg>
+          Déjalo en los comentarios
+        </div>
+        <div style={{ marginTop: 44, opacity: brand, transform: `translateY(${(1 - brand) * 20}px)` }}>
+          <Logo size={72} delay={vEnd + 20} dark />
+          <div style={{ marginTop: 20, width: 900 }}>
+            <Words text="Tu próxima historia te está esperando." start={vEnd + 30} stagger={4} size={46} weight={700} align="left" color="#F6EFE2" />
+          </div>
+          <div style={{ marginTop: 20, opacity: sp(frame, vEnd + 60) }}><Pill size={32}>sonorbooks.com</Pill></div>
+        </div>
+      </div>
       {frame > f0 && <Butterfly x={720 + Math.sin(frame / 30) * 60} y={250 + Math.cos(frame / 24) * 30} size={54} seed="out2" glow={0.6} opacity={rampOut(frame, f0, f0 + 20) * (1 - ramp(frame, vEnd + 10, vEnd + 30))} />}
       <Sfx name="hdl_flutter" at={f0 + 4} volume={0.6} />
       <Sfx name="ui_pop" at={fCom - 4} volume={0.6} />

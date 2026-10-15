@@ -87,13 +87,13 @@ export const Escritor2: React.FC = () => {
       )}
       <Sfx name="sk_typing" at={f65 + 6} volume={0.35} />
       <Sfx name="sk_typebell" at={fTre + 20} volume={0.4} />
-      <Sfx name="sk_book_slide" at={fCua - 2} volume={0.7} />
-      <Sfx name="sk_book_slide" at={fCua + 8} volume={0.6} />
-      <Sfx name="sk_book_slide" at={fCua + 18} volume={0.6} />
-      <Sfx name="sk_book_slide" at={fCua + 28} volume={0.6} />
+      <Sfx name="sk_book_slide" at={fCua - 2} volume={0.35} />
+      <Sfx name="sk_book_slide" at={fCua + 8} volume={0.3} />
+      <Sfx name="sk_book_slide" at={fCua + 18} volume={0.3} />
+      <Sfx name="sk_book_slide" at={fCua + 28} volume={0.3} />
       <Sfx name="card_flip" at={fNin - 8} volume={0.3} />
       <Sfx name="sk_wind" at={fNin - 8} volume={0.18} dur={fPara - fNin} fade={12} />
-      <Sfx name="pencil_strike" at={fDos + 4} volume={0.5} />
+      <Sfx name="hdl_pencil_write" at={fDos} volume={0.6} dur={14} fade={4} />
       <Sfx name="card_flip" at={fPara - 6} volume={0.3} />
       <Sfx name="hdl_tear" at={fFac - 6} volume={0.6} />
       <Sfx name="hdl_tear" at={fFac + 6} volume={0.5} />
