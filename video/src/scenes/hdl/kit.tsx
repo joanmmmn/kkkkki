@@ -279,8 +279,8 @@ export const Page: React.FC<{ w: number; h: number; lines?: number; seed?: strin
 };
 
 // Pila de cuartillas vista de frente (canto con hojas) y en ligera perspectiva. `sheets`: grosor visual.
-export const Stack: React.FC<{ w: number; thick: number; x: number; y: number; rot?: number; label?: React.ReactNode; wrapped?: number; string?: number; shadowK?: number }> = ({
-  w, thick, x, y, rot = 0, label, wrapped = 0, string = 0, shadowK = 1,
+export const Stack: React.FC<{ w: number; thick: number; x: number; y: number; rot?: number; label?: React.ReactNode; wrapped?: number; string?: number; shadowK?: number; cover?: string }> = ({
+  w, thick, x, y, rot = 0, label, wrapped = 0, string = 0, shadowK = 1, cover,
 }) => {
   const depth = w * 0.42;
   const lines = Math.max(4, Math.round(thick / 5));
@@ -293,6 +293,7 @@ export const Stack: React.FC<{ w: number; thick: number; x: number; y: number; r
           <div key={i} style={{ position: 'absolute', left: 0, right: 0, top: (i + 0.5) * (thick / lines), height: 1.2, background: 'rgba(120,100,70,0.35)', transform: `translateX(${(random(`st${i}`) - 0.5) * 6}px)` }} />
         ))}
         <div style={{ position: 'absolute', inset: 0, background: '#B88B57', opacity: wrapped }} />
+        {cover && <><div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 9, background: cover }} /><div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 9, background: cover }} /></>}
       </div>
       {/* cara superior */}
       <div style={{ position: 'absolute', left: 0, right: 0, bottom: thick, height: depth, background: '#FBF7EE', transform: 'skewX(-28deg)', transformOrigin: 'bottom', borderRadius: 3,
@@ -301,6 +302,12 @@ export const Stack: React.FC<{ w: number; thick: number; x: number; y: number; r
           <div key={i} style={{ position: 'absolute', left: '14%', width: `${60 + random(`tp${i}`) * 18}%`, top: `${16 + i * 10}%`, height: 3, background: 'rgba(29,26,22,0.35)', borderRadius: 2 }} />
         ))}
         <div style={{ position: 'absolute', inset: 0, background: '#C49A66', opacity: wrapped }} />
+        {cover && (
+          <div style={{ position: 'absolute', inset: 0, background: cover }}>
+            <div style={{ position: 'absolute', left: '22%', right: '22%', top: '34%', height: 4, background: '#D9B35F' }} />
+            <div style={{ position: 'absolute', left: '30%', right: '30%', top: '52%', height: 3, background: '#D9B35F', opacity: 0.7 }} />
+          </div>
+        )}
         {label && <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'skewX(28deg)' }}>{label}</div>}
       </div>
       {string > 0 && (

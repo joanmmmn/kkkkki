@@ -34,10 +34,12 @@ import { Lab3D, LAB_FRAMES } from './scenes/skg/three/Lab';
 import { CienAnosHistoria } from './scenes/hdl/Main';
 import { HDL_TOTAL } from './scenes/hdl/timeline';
 import { HDLThumbA, HDLThumbB } from './scenes/hdl/Thumb';
+import { HDLLab } from './scenes/hdl/Lab';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="HDLCien" component={CienAnosHistoria} durationInFrames={HDL_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="HDLLab" component={HDLLab} durationInFrames={200} fps={FPS} width={W} height={H} />
     <Composition id="HDLThumbA" component={HDLThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="HDLThumbB" component={HDLThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />

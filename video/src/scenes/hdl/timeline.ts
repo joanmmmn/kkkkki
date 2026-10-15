@@ -49,7 +49,7 @@ const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; e
 };
 
 export const HDL_SCENES: SceneDef[] = [
-  scene('HOOK', ['W01', 'W02', 'W03'], { lead: sec(1.2), gaps: [0.5, 0.55], extra: 8, night: true }),
+  scene('HOOK', ['W01', 'W02', 'W03'], { lead: sec(1.9), gaps: [0.5, 1.45], extra: 30, night: true }),
   scene('LEGACY', ['W04'], { extra: 24, tin: 'fade', night: true }),
   scene('TITLE', [], { minDur: sec(4.6), tin: 'fade', night: true }),
   scene('ESCRITOR', ['W05', 'W06'], { chapter: 'Un escritor que no vendía', gaps: [0.55], extra: 12 }),

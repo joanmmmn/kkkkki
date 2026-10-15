@@ -14,6 +14,10 @@ const faces: Array<[string, string, string, string]> = [
   ['EB Garamond', 'EBGaramond-600i', '600', 'italic'],
   ['EB Garamond', 'EBGaramond-700', '700', 'normal'],
   ['Special Elite', 'SpecialElite-400', '400', 'normal'],
+  // v2 (15/10/2026): letra a mano (la cuenta del empleado de correos, la etiqueta del paquete, notas del tablero). OFL.
+  ['Caveat', 'Caveat-400', '400', 'normal'],
+  ['Caveat', 'Caveat-700', '700', 'normal'],
+  ['Homemade Apple', 'HomemadeApple-400', '400', 'normal'],
 ];
 
 let loaded = false;
