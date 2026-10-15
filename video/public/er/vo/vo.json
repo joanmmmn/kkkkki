@@ -1,0 +1,63 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "R01",
+   "text": "¿Treinta días gratis de ElevenReader, en lugar de tres?"
+  },
+  {
+   "id": "R02",
+   "text": "En su web, la prueba normal de Ultra dura 3 días. Con el enlace de SonorBooks son 30, y ahorras un 15 % al pagar. Así se consigue, paso a paso."
+  },
+  {
+   "id": "R03",
+   "text": "Abre tu audiolibro en SonorBooks. Si la recomendación es ElevenReader, pulsa «Empezar prueba gratuita»."
+  },
+  {
+   "id": "R04",
+   "text": "Se abre la oferta de ElevenReader: 30 días gratis y un 15 % de ahorro. Pulsa el botón naranja."
+  },
+  {
+   "id": "R05",
+   "text": "Regístrate con Google, con Apple o con tu correo. Recuerda cuál usas: es la cuenta con la que entrarás en la app."
+  },
+  {
+   "id": "R06",
+   "text": "Elige Ultra y comprueba que pone 30 días gratis."
+  },
+  {
+   "id": "R07",
+   "text": "Añade tu tarjeta. Hoy pagas 0 euros: el primer cobro llega a los 30 días, ya con el 15 % de descuento."
+  },
+  {
+   "id": "R08A",
+   "text": "¡Listo! Tu prueba ya está activa."
+  },
+  {
+   "id": "R08B",
+   "text": "Descarga la app de ElevenReader, entra con la misma cuenta y busca tu libro."
+  },
+  {
+   "id": "R09",
+   "text": "Con Ultra tienes 20 horas al mes de audiolibros prémium, más de mil voces, descargas para escuchar sin conexión y, sin límite, tus propios PDF, ebooks y artículos convertidos en audio."
+  },
+  {
+   "id": "R10",
+   "text": "¿No quieres seguir? Cancela antes del día 30 desde tu perfil, en «Gestionar facturación». Mantienes el acceso hasta el final del periodo y luego pasas al plan gratis."
+  },
+  {
+   "id": "R11",
+   "text": "Encuentra dónde escuchar cualquier audiolibro, al mejor precio, en SonorBooks. Tu próxima historia te está esperando."
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "W01",
+   "text": "Esto no lo está leyendo una persona: es una inteligencia artificial, leyendo un PDF que acabamos de subir. Es ElevenReader, la app de lectura de ElevenLabs. ¿Merece la pena pagar por ella?"
+  },
+  {
+   "id": "W02",
+   "text": "La hemos probado a fondo, con el plan Ultra: catálogo, voces, tus propios documentos, lo mejor y lo peor. Y al final, cómo probarla gratis 30 días en vez de 3. La reseña completa está en nuestro blog: enlace en la descripción."
+  },
+  {
+   "id": "W03",
+   "text": "ElevenReader hace dos cosas: es una biblioteca de audiolibros, y convierte en audio cualquier texto tuyo, de un PDF a un artículo de internet. Funciona en la web, en iPhone y en Android, y lo sincroniza todo."
+  },
+  {
+   "id": "W04",
+   "text": "Empecemos por los audiolibros. Hay miles gratis, sobre todo clásicos, y con Ultra se suman más de doscientos mil prémium, hasta 20 horas al mes. En español hay bastantes incluidos, pero pocos superventas: «Cien años de soledad» se compra aparte, por 25 dólares, y «La sombra del viento» o «Patria» ni siquiera aparecen."
+  },
+  {
+   "id": "W05",
+   "text": "Pero donde de verdad brilla es con tus propios textos. Admite PDF, EPUB, Word, Markdown y TXT, o pegar un texto o un enlace. Le subimos este PDF de Bécquer, de 12 páginas, y en un momento teníamos 22 minutos de audio. Y fíjate: ha quitado él solo las cabeceras y los números de página."
+  },
+  {
+   "id": "W06",
+   "text": "Le das a Play, y el texto se resalta palabra a palabra: lees y escuchas a la vez. Por defecto lee Brian, una voz inglesa que también habla español."
+  },
+  {
+   "id": "W07",
+   "text": "Pero si eliges una voz recomendada para español, como Sara Martin…"
+  },
+  {
+   "id": "W08",
+   "text": "…se nota la diferencia. Hay más de mil voces: puedes ajustar su expresividad, diseñar la tuya o elegir voces icónicas, como la de Michael Caine."
+  },
+  {
+   "id": "W09",
+   "text": "El lector tiene capítulos, saltos de 15 segundos, marcadores y búsqueda en el texto, y puedes acelerarlo hasta cuatro veces. Además, cambias el tema, la letra, el tamaño y el color del resaltado."
+  },
+  {
+   "id": "W10",
+   "text": "Y hay más: una extensión de Chrome para guardar cualquier web, importación automática de lo que descargas, colecciones… y en el móvil, descargas sin conexión y temporizador para dormir."
+  },
+  {
+   "id": "W11A",
+   "text": "Lo mejor: las voces suenan muy naturales, convierte casi cualquier texto en audio, sin límite práctico con Ultra, y el plan gratis ya da 10 horas al mes."
+  },
+  {
+   "id": "W11B",
+   "text": "Lo peor: la web está en inglés, los audiolibros prémium tienen tope, faltan muchos superventas en español, no puedes descargar el audio ni compartir la cuenta, y en la web se paga en dólares."
+  },
+  {
+   "id": "W12",
+   "text": "¿Cuánto cuesta? Ultra vale 11 dólares al mes, o 99 al año, más IVA. En la App Store, 12 euros al mes. Con el enlace de SonorBooks, los primeros meses pagas un 15 % menos: en nuestra cuenta, 11,31 dólares al mes, IVA incluido."
+  },
+  {
+   "id": "W12B",
+   "text": "Y no te vayas: al final del vídeo te enseñamos un truco para probarlo gratis."
+  },
+  {
+   "id": "W13",
+   "text": "¿Merece la pena? Si lees mucho en PDF, ebooks o artículos, sí, y mucho. Si buscas sobre todo superventas en español, compara antes en SonorBooks. Nuestra nota: 8 sobre 10."
+  },
+  {
+   "id": "W14A",
+   "text": "Y ahora, el truco: 30 días gratis, en vez de 3."
+  },
+  {
+   "id": "W14B",
+   "text": "En la página de inicio de SonorBooks, ElevenReader está al final de las plataformas. Entra por ahí, o por nuestra reseña de ElevenReader: el enlace está en la descripción."
+  },
+  {
+   "id": "W14C",
+   "text": "Pulsa «Empezar prueba gratuita», crea tu cuenta, elige Ultra y añade tu tarjeta: hoy pagas 0 euros.",
+   "voice_settings": {
+    "speed": 1.2
+   }
+  },
+  {
+   "id": "W15",
+   "text": "¿Te gusta? Quédate, con un 15 % menos. ¿No? Cancela antes del día 30 y no pagas nada.",
+   "voice_settings": {
+    "speed": 1.2
+   }
+  },
+  {
+   "id": "W16",
+   "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks.",
+   "voice_settings": {
+    "speed": 1.2
+   }
+  }
+ ]
+}

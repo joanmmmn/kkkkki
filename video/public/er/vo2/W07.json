@@ -1,0 +1,65 @@
+{
+ "id": "W07",
+ "hash": "e79b83b1c4af",
+ "text": "Pero si eliges una voz recomendada para español, como Sara Martin…",
+ "duration": 4.32,
+ "words": [
+  {
+   "w": "Pero",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "si",
+   "s": 0.24,
+   "e": 0.32
+  },
+  {
+   "w": "eliges",
+   "s": 0.44,
+   "e": 0.72
+  },
+  {
+   "w": "una",
+   "s": 0.8,
+   "e": 0.88
+  },
+  {
+   "w": "voz",
+   "s": 0.96,
+   "e": 1.2
+  },
+  {
+   "w": "recomendada",
+   "s": 1.28,
+   "e": 1.92
+  },
+  {
+   "w": "para",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "español,",
+   "s": 2.16,
+   "e": 2.76
+  },
+  {
+   "w": "como",
+   "s": 2.8,
+   "e": 3.12
+  },
+  {
+   "w": "Sara",
+   "s": 3.16,
+   "e": 3.36
+  },
+  {
+   "w": "Martin…",
+   "s": 3.8,
+   "e": 4.32
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 4.32
+}

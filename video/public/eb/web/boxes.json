@@ -1,0 +1,1736 @@
+{
+ "portal:comunidades": {
+  "eBiblio Andalucía": [
+   665,
+   1089.4,
+   102,
+   54
+  ],
+  "eBiblio Aragón": [
+   777,
+   1089.4,
+   102,
+   54
+  ],
+  "eBiblio Asturias": [
+   889,
+   1089.4,
+   102,
+   54
+  ],
+  "eBiblio Canarias": [
+   1001,
+   1089.4,
+   102,
+   54
+  ],
+  "eBiblio Cantabria": [
+   1113,
+   1089.4,
+   102,
+   54
+  ],
+  "eBiblio Castilla-La Mancha": [
+   665,
+   1153.4,
+   102,
+   54
+  ],
+  "eBiblio Castilla y León": [
+   777,
+   1153.4,
+   102,
+   54
+  ],
+  "eBiblio Ceuta": [
+   889,
+   1153.4,
+   102,
+   54
+  ],
+  "eBiblio Comunitat Valenciana": [
+   1001,
+   1153.4,
+   102,
+   54
+  ],
+  "eBiblio Extremadura": [
+   1113,
+   1153.4,
+   102,
+   54
+  ],
+  "eBiblio Galicia": [
+   665,
+   1217.4,
+   102,
+   54
+  ],
+  "eBiblio Illes Balears": [
+   777,
+   1217.4,
+   102,
+   54
+  ],
+  "eBiblio La Rioja": [
+   889,
+   1217.4,
+   102,
+   54
+  ],
+  "eBiblio Madrid": [
+   1001,
+   1217.4,
+   102,
+   54
+  ],
+  "eBiblio Melilla": [
+   1113,
+   1217.4,
+   102,
+   54
+  ],
+  "eBiblio Murcia": [
+   665,
+   1281.4,
+   102,
+   54
+  ],
+  "eBiblio Navarra": [
+   777,
+   1281.4,
+   102,
+   54
+  ]
+ },
+ "portal:madrid": null,
+ "portal:height": 2390,
+ "portal:url": "https://ebiblio.es/inicio.html",
+ "alta:height": 2386,
+ "alta:url": "https://ebiblio.es/alta.html",
+ "mhome:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "mhome:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "mhome:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "mhome:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "mhome:crear": [
+  909.6,
+  9.8,
+  99.4,
+  17.5
+ ],
+ "mhome:nuevosAudio": [
+  60,
+  2023.4,
+  384.8,
+  40
+ ],
+ "mhome:height": 2600,
+ "mhome:url": "https://madrid.ebiblio.es/",
+ "maudio:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "maudio:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "maudio:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "maudio:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "maudio:f:Títulos disponibles": [
+  60,
+  286.5,
+  260,
+  24.8
+ ],
+ "maudio:f:Audiolibros": [
+  89.6,
+  430.6,
+  81,
+  20
+ ],
+ "maudio:f:Libros electrónicos": [
+  89.6,
+  397,
+  133.3,
+  20
+ ],
+ "maudio:f:Filtrar por": [
+  60,
+  259,
+  260,
+  18.7
+ ],
+ "maudio:f:Idioma": [
+  60,
+  1077.3,
+  260,
+  18.7
+ ],
+ "maudio:f:Castellano": [
+  1122.8,
+  8,
+  97.2,
+  22
+ ],
+ "maudio:total": [
+  360,
+  386,
+  860,
+  24
+ ],
+ "maudio:items": [
+  {
+   "title": "Mimoun",
+   "titleBox": [
+    513,
+    450,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    451,
+    127,
+    127
+   ],
+   "author": "Rafael Chirbes",
+   "tx": [
+    1026,
+    450,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 21 nov 2026 a las 18:39 Reservar Audio (Mimoun)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    595.4,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    450,
+    860,
+    201.4
+   ],
+   "href": "/resources/6ac7acc1f811b9e0a16f8eed"
+  },
+  {
+   "title": "No estamos solos",
+   "titleBox": [
+    513,
+    716.4,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    717.4,
+    127,
+    127
+   ],
+   "author": "Jonathan Caplan",
+   "tx": [
+    1026,
+    716.4,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 30 oct 2026 a las 15:21 Reservar Audio (No estamos solos)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    861.8,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    683.4,
+    860,
+    234.4
+   ],
+   "href": "/resources/6ac7acc1f811b9e0a16f8ee1"
+  },
+  {
+   "title": "Memorias de Cleopatra",
+   "titleBox": [
+    513,
+    982.8,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    983.8,
+    127,
+    127
+   ],
+   "author": "Margaret George",
+   "tx": [
+    1026,
+    982.8,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 29 oct 2026 a las 18:24 Reservar Audio (Memorias de Cleopatra)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    1128.2,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    949.8,
+    860,
+    234.4
+   ],
+   "href": "/resources/6ac7acc1f811b9e0a16f8ecb"
+  },
+  {
+   "title": "Infortunio (Trilogía de la Brecha 1)",
+   "titleBox": [
+    513,
+    1249.2,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1250.2,
+    127,
+    127
+   ],
+   "author": "Brandon Sanderson",
+   "tx": [
+    1026,
+    1249.2,
+    194,
+    176.9
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 7 dic 2026 a las 23:28 Reservar Audio (Infortunio (Trilogía de la Brecha 1))",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    1370.1,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1216.2,
+    860,
+    221
+   ],
+   "href": "/resources/6abd12c53fdf92d7b1c99448"
+  },
+  {
+   "title": "Un bien relativo (Blecker y Cano 2)",
+   "titleBox": [
+    513,
+    1502.2,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1503.2,
+    127,
+    127
+   ],
+   "author": "Teresa Cardona",
+   "tx": [
+    1026,
+    1502.2,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 14 nov 2026 a las 15:49 Reservar Audio (Un bien relativo (Blecker y Cano 2))",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    1647.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1469.2,
+    860,
+    234.4
+   ],
+   "href": "/resources/6abd12c53fdf92d7b1c99438"
+  },
+  {
+   "title": "Misterio S.A. 2 - No entres al parque",
+   "titleBox": [
+    513,
+    1768.5,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1769.5,
+    127,
+    127
+   ],
+   "author": "Juan Gómez-Jurado",
+   "tx": [
+    1026,
+    1768.5,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 23 oct 2026 a las 18:58 Reservar Audio (Misterio S.A. 2 - No entres al parque)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    1913.9,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1735.5,
+    860,
+    234.4
+   ],
+   "href": "/resources/6abd12c53fdf92d7b1c99408"
+  },
+  {
+   "title": "Los fae de las sombras 1 - Obsidian",
+   "titleBox": [
+    513,
+    2034.9,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2035.9,
+    127,
+    127
+   ],
+   "author": "K.F. Breene",
+   "tx": [
+    1026,
+    2034.9,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 23 oct 2026 a las 17:27 Reservar Audio (Los fae de las sombras 1 - Obsidian)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    2180.3,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2001.9,
+    860,
+    234.4
+   ],
+   "href": "/resources/6abd12c53fdf92d7b1c993fa"
+  },
+  {
+   "title": "El canto del cisne",
+   "titleBox": [
+    513,
+    2301.3,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2302.3,
+    127,
+    127
+   ],
+   "author": "Charles Spencer",
+   "tx": [
+    1026,
+    2301.3,
+    194,
+    176.9
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 30 dic 2026 a las 16:13 Reservar Audio (El canto del cisne)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    2422.2,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2268.3,
+    860,
+    221
+   ],
+   "href": "/resources/6abd12c53fdf92d7b1c993ec"
+  }
+ ],
+ "maudio:height": 2400,
+ "maudio:url": "https://madrid.ebiblio.es/resources?nature=audio",
+ "mavail:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "mavail:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "mavail:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "mavail:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "mavail:f:Títulos disponibles": [
+  60,
+  286.5,
+  260,
+  24.8
+ ],
+ "mavail:f:Audiolibros": [
+  89.6,
+  464.2,
+  81,
+  20
+ ],
+ "mavail:f:Libros electrónicos": [
+  89.6,
+  397,
+  133.3,
+  20
+ ],
+ "mavail:f:Filtrar por": [
+  60,
+  259,
+  260,
+  18.7
+ ],
+ "mavail:f:Idioma": [
+  60,
+  1077.3,
+  260,
+  18.7
+ ],
+ "mavail:f:Castellano": [
+  1122.8,
+  8,
+  97.2,
+  22
+ ],
+ "mavail:total": [
+  360,
+  386,
+  860,
+  24
+ ],
+ "mavail:items": [
+  {
+   "title": "Principio, medio, fin",
+   "titleBox": [
+    513,
+    450,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    451,
+    127,
+    127
+   ],
+   "author": "Valeria Luiselli",
+   "tx": [
+    1026,
+    450,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    502,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    557.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    450,
+    860,
+    188
+   ],
+   "href": "/resources/6abd12c23fdf92d7b1c9927d"
+  },
+  {
+   "title": "El dios y el gwisin (El Hilo del Destino 2)",
+   "titleBox": [
+    513,
+    703,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    704,
+    127,
+    127
+   ],
+   "author": "Sophie Kim",
+   "tx": [
+    1026,
+    703,
+    194,
+    163.5
+   ],
+   "avail": "2 ejemplares disponibles",
+   "availBox": [
+    1048,
+    755,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    810.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    670,
+    860,
+    221
+   ],
+   "href": "/resources/6aa91acdb11a8e282dadb20d"
+  },
+  {
+   "title": "La sabiduría de la ignorancia",
+   "titleBox": [
+    513,
+    956,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    957,
+    127,
+    127
+   ],
+   "author": "Alan Gregerman",
+   "tx": [
+    1026,
+    956,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    1008,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1063.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    923,
+    860,
+    245
+   ],
+   "href": "/resources/6a9e9cfb5c1c5c34fb221680"
+  },
+  {
+   "title": "El jardín del mundo",
+   "titleBox": [
+    513,
+    1233,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1234,
+    127,
+    127
+   ],
+   "author": "Pablo Montoya",
+   "tx": [
+    1026,
+    1233,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    1285,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1340.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1200,
+    860,
+    221
+   ],
+   "href": "/resources/6a9e9cfb5c1c5c34fb221634"
+  },
+  {
+   "title": "Mistborn. Historia secreta",
+   "titleBox": [
+    513,
+    1485.9,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1486.9,
+    127,
+    127
+   ],
+   "author": "Brandon Sanderson",
+   "tx": [
+    1026,
+    1485.9,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    1537.9,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1593.4,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1452.9,
+    860,
+    221
+   ],
+   "href": "/resources/6a60bb8c2bdb88f9a734aa58"
+  },
+  {
+   "title": "El regreso de la Guardia Carmesí (Malaz: El Imperio 2)",
+   "titleBox": [
+    513,
+    1738.9,
+    497,
+    67.2
+   ],
+   "cover": [
+    361,
+    1739.9,
+    127,
+    127
+   ],
+   "author": "Ian C. Esslemont",
+   "tx": [
+    1026,
+    1738.9,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    1790.9,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1846.4,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1705.9,
+    860,
+    254.6
+   ],
+   "href": "/resources/6a60bb8c2bdb88f9a734aa3e"
+  },
+  {
+   "title": "Alguien para nosotros (Sin miedo 3)",
+   "titleBox": [
+    513,
+    2025.5,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2026.5,
+    127,
+    127
+   ],
+   "author": "Juan Arcones",
+   "tx": [
+    1026,
+    2025.5,
+    194,
+    163.5
+   ],
+   "avail": "2 ejemplares disponibles",
+   "availBox": [
+    1048,
+    2077.5,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    2133,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1992.5,
+    860,
+    221
+   ],
+   "href": "/resources/6a60bb8b2bdb88f9a734a9f6"
+  },
+  {
+   "title": "La cicatriz en el hueso (A Fire in the Sky 2)",
+   "titleBox": [
+    513,
+    2278.5,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2279.5,
+    127,
+    127
+   ],
+   "author": "Sophie Jordan",
+   "tx": [
+    1026,
+    2278.5,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    2330.5,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    2386,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2245.5,
+    860,
+    221
+   ],
+   "href": "/resources/6a451a107d4426e92b0297df"
+  }
+ ],
+ "mavail:height": 2400,
+ "mavail:url": "https://madrid.ebiblio.es/resources?nature=audio&availability=available",
+ "mgm:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "mgm:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "mgm:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "mgm:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "mgm:f:Títulos disponibles": [
+  60,
+  286.5,
+  260,
+  24.8
+ ],
+ "mgm:f:Audiolibros": [
+  89.6,
+  430.6,
+  81,
+  20
+ ],
+ "mgm:f:Libros electrónicos": [
+  89.6,
+  397,
+  133.3,
+  20
+ ],
+ "mgm:f:Filtrar por": [
+  60,
+  259,
+  260,
+  18.7
+ ],
+ "mgm:f:Idioma": [
+  60,
+  721.5,
+  260,
+  18.7
+ ],
+ "mgm:f:Castellano": [
+  1122.8,
+  8,
+  97.2,
+  22
+ ],
+ "mgm:total": [
+  360,
+  450,
+  1,
+  1
+ ],
+ "mgm:items": [
+  {
+   "title": "Del amor y otros demonios",
+   "titleBox": [
+    513,
+    450,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    451,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    450,
+    194,
+    163.5
+   ],
+   "avail": "3 ejemplares disponibles",
+   "availBox": [
+    1048,
+    502,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    557.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    450,
+    860,
+    188
+   ],
+   "href": "/resources/60071027f1d3330001705b8b"
+  },
+  {
+   "title": "Crónica de una muerte anunciada",
+   "titleBox": [
+    513,
+    703,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    704,
+    127,
+    179.8
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    703,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 21 oct 2026 a las 09:55 Reservar Audio (Crónica de una muerte anunciada)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    848.4,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    670,
+    860,
+    234.4
+   ],
+   "href": "/resources/60071025f1d3330001705b2d"
+  },
+  {
+   "title": "Vivir para contarla",
+   "titleBox": [
+    513,
+    969.4,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    970.4,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    969.4,
+    194,
+    163.5
+   ],
+   "avail": "4 ejemplares disponibles",
+   "availBox": [
+    1048,
+    1021.4,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1076.9,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    936.4,
+    860,
+    245
+   ],
+   "href": "/resources/65719475d5bd80000165dfc1"
+  },
+  {
+   "title": "El coronel no tiene quien le escriba",
+   "titleBox": [
+    513,
+    1246.4,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1247.4,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    1246.4,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    1298.4,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1353.9,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1213.4,
+    860,
+    221
+   ],
+   "href": "/resources/60071026f1d3330001705b5a"
+  },
+  {
+   "title": "En agosto nos vemos",
+   "titleBox": [
+    513,
+    1499.3,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1500.3,
+    127,
+    179.8
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    1499.3,
+    194,
+    163.5
+   ],
+   "avail": "4 ejemplares disponibles",
+   "availBox": [
+    1048,
+    1551.3,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1606.8,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1466.3,
+    860,
+    245
+   ],
+   "href": "/resources/664f48bc76a5e4a81e34d39b"
+  },
+  {
+   "title": "El otoño del patriarca",
+   "titleBox": [
+    513,
+    1776.3,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    1777.3,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    1776.3,
+    194,
+    204.3
+   ],
+   "avail": "2 ejemplares disponibles",
+   "availBox": [
+    1048,
+    1869.1,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    1924.6,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    1743.3,
+    860,
+    237.3
+   ],
+   "href": "/resources/5fd0e46eb348c90001c3cb7e"
+  },
+  {
+   "title": "El olor de la guayaba",
+   "titleBox": [
+    513,
+    2045.6,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2046.6,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    2045.6,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    2097.6,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    2153.1,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2012.6,
+    860,
+    221
+   ],
+   "href": "/resources/648999058e79250001b1ceb6"
+  },
+  {
+   "title": "Cien años de soledad",
+   "titleBox": [
+    513,
+    2298.6,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2299.6,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    2298.6,
+    194,
+    176.9
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 7 ene 2027 a las 08:52 Reservar Audio (Cien años de soledad)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    2419.5,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2265.6,
+    860,
+    221
+   ],
+   "href": "/resources/602eb5bb8f0b980001c7c74b"
+  },
+  {
+   "title": "El amor en los tiempos del cólera",
+   "titleBox": [
+    513,
+    2551.5,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2552.5,
+    127,
+    127
+   ],
+   "author": "Gabriel García Márquez",
+   "tx": [
+    1026,
+    2551.5,
+    194,
+    201.4
+   ],
+   "avail": "AUDIO Próximo ejemplar disponible el 28 oct 2026 a las 13:59 Reservar Audio (El amor en los tiempos del cólera)",
+   "availBox": null,
+   "button": "Reservar",
+   "buttonBox": [
+    1048,
+    2696.9,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2518.5,
+    860,
+    234.4
+   ],
+   "href": "/resources/677eb2eef6cbb0c9fb9598a4"
+  },
+  {
+   "title": "García Márquez: Historia de un deicidio",
+   "titleBox": [
+    513,
+    2817.9,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    2818.9,
+    127,
+    127
+   ],
+   "author": "Mario Vargas Llosa",
+   "tx": [
+    1026,
+    2817.9,
+    194,
+    163.5
+   ],
+   "avail": "1 ejemplar disponible",
+   "availBox": [
+    1048,
+    2869.9,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    2925.4,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    2784.9,
+    860,
+    245
+   ],
+   "href": "/resources/65719475d5bd80000165df4e"
+  },
+  {
+   "title": "Federico García Lorca",
+   "titleBox": [
+    513,
+    3094.9,
+    497,
+    33.6
+   ],
+   "cover": [
+    361,
+    3095.9,
+    127,
+    127
+   ],
+   "author": "Jordi Amat",
+   "tx": [
+    1026,
+    3094.9,
+    194,
+    163.5
+   ],
+   "avail": "10 ejemplares disponibles",
+   "availBox": [
+    1048,
+    3146.9,
+    150,
+    38
+   ],
+   "button": "Prestar",
+   "buttonBox": [
+    1048,
+    3202.4,
+    150,
+    34
+   ],
+   "box": [
+    360,
+    3061.9,
+    860,
+    245
+   ],
+   "href": "/resources/641d9caeafecc50001335b29"
+  }
+ ],
+ "mgm:height": 3618,
+ "mgm:url": "https://madrid.ebiblio.es/resources?q=Garc%C3%ADa%20M%C3%A1rquez&nature=audio",
+ "rotono:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "rotono:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "rotono:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "rotono:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "rotono:href": "/resources/5fd0e46eb348c90001c3cb7e",
+ "rotono:title": [
+  360,
+  258,
+  576.2,
+  38.4
+ ],
+ "rotono:titleText": "El otoño del patriarca",
+ "rotono:cover": [
+  61,
+  259,
+  258,
+  258
+ ],
+ "rotono:tx": [
+  965,
+  258,
+  255,
+  204.3
+ ],
+ "rotono:txText": "AUDIO Audio completo 2 ejemplares disponibles Prestar Audio (El otoño del patriarca)",
+ "rotono:avail": [
+  987,
+  350.8,
+  150,
+  38
+ ],
+ "rotono:button": [
+  987,
+  406.3,
+  211,
+  34
+ ],
+ "rotono:buttonText": "Prestar Audio (El otoño del patriarca)",
+ "rotono:muestra": null,
+ "rotono:Editor": [
+  60,
+  545,
+  260,
+  21
+ ],
+ "rotono:Idioma": [
+  60,
+  692,
+  260,
+  21
+ ],
+ "rotono:height": 1264,
+ "rotono:url": "https://madrid.ebiblio.es/resources/5fd0e46eb348c90001c3cb7e",
+ "rcien:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "rcien:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "rcien:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "rcien:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "rcien:href": "/resources/602eb5bb8f0b980001c7c74b",
+ "rcien:title": [
+  360,
+  258,
+  576.2,
+  38.4
+ ],
+ "rcien:titleText": "Cien años de soledad",
+ "rcien:cover": [
+  61,
+  259,
+  258,
+  258
+ ],
+ "rcien:tx": [
+  965,
+  258,
+  255,
+  158.9
+ ],
+ "rcien:txText": "AUDIO Próximo ejemplar disponible el 7 ene 2027 a las 08:52 Reservar Audio (Cien años de soledad)",
+ "rcien:avail": null,
+ "rcien:button": [
+  987,
+  360.9,
+  211,
+  34
+ ],
+ "rcien:buttonText": "Reservar Audio (Cien años de soledad)",
+ "rcien:muestra": null,
+ "rcien:Editor": [
+  60,
+  545,
+  260,
+  21
+ ],
+ "rcien:Idioma": [
+  60,
+  692,
+  260,
+  21
+ ],
+ "rcien:height": 1190,
+ "rcien:url": "https://madrid.ebiblio.es/resources/602eb5bb8f0b980001c7c74b",
+ "mlogin:ident": [
+  415,
+  221,
+  450,
+  38.4
+ ],
+ "mlogin:usuario": [
+  446,
+  422.4,
+  388,
+  24
+ ],
+ "mlogin:contrasena": [
+  446,
+  496.4,
+  388,
+  24
+ ],
+ "mlogin:conectarse": [
+  719.1,
+  635.4,
+  114.9,
+  40
+ ],
+ "mlogin:aviso": [
+  457,
+  333.4,
+  366,
+  48
+ ],
+ "mlogin:inputs": [
+  [
+   446,
+   446.4,
+   388,
+   40
+  ],
+  [
+   446,
+   520.4,
+   388,
+   40
+  ]
+ ],
+ "mlogin:height": 857,
+ "mlogin:url": "https://madrid.ebiblio.es/ebiblio_auth_sign_in",
+ "mabout:height": 3000,
+ "mabout:url": "https://madrid.ebiblio.es/about",
+ "cifras:height": 3496,
+ "cifras:url": "https://ebiblio.es/en-cifras-2025.html",
+ "_fecha": "2026-10-14",
+ "rsapiens:cuenta": [
+  1037,
+  9.8,
+  61,
+  18
+ ],
+ "rsapiens:buscar": [
+  1030,
+  168,
+  190,
+  40
+ ],
+ "rsapiens:catalogo": [
+  137.8,
+  158,
+  99.4,
+  60
+ ],
+ "rsapiens:logo": [
+  60,
+  55,
+  278.8,
+  80
+ ],
+ "rsapiens:href": "/resources/5fd0e47cb348c90001c3ce14",
+ "rsapiens:title": [
+  360,
+  258,
+  576.2,
+  38.4
+ ],
+ "rsapiens:titleText": "Sapiens. De animales a dioses",
+ "rsapiens:cover": [
+  61,
+  259,
+  258,
+  258
+ ],
+ "rsapiens:tx": [
+  965,
+  258,
+  255,
+  138.8
+ ],
+ "rsapiens:txText": "AUDIO En este momento no hay reservas libres. Inténtelo más adelante",
+ "rsapiens:avail": [
+  987,
+  310,
+  150,
+  47.3
+ ],
+ "rsapiens:button": null,
+ "rsapiens:muestra": null,
+ "rsapiens:Editor": [
+  60,
+  545,
+  260,
+  21
+ ],
+ "rsapiens:Idioma": [
+  60,
+  692,
+  260,
+  21
+ ],
+ "rsapiens:height": 1233,
+ "rsapiens:url": "https://madrid.ebiblio.es/resources/5fd0e47cb348c90001c3ce14",
+ "portal:web": [
+  8,
+  996.4,
+  207.3,
+  30
+ ],
+ "portal:app": [
+  8,
+  1476.5,
+  203.6,
+  30
+ ]
+}

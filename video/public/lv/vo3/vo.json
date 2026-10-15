@@ -1,0 +1,75 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.08
+ },
+ "scenes": [
+  {
+   "id": "K01",
+   "text": "Esta voz es de Omar. No es una inteligencia artificial: es un voluntario que grabó este capítulo para que cualquiera pueda escucharlo gratis."
+  },
+  {
+   "id": "K02",
+   "text": "Y como él, miles de voluntarios de todo el mundo han grabado más de veintiún mil audiolibros. Todos gratis. Todos legales. Esto es LibriVox."
+  },
+  {
+   "id": "K03",
+   "text": "Te enseñamos qué es, cómo funciona y cómo usarlo, paso a paso. Y la guía completa está en nuestro blog: enlace en la descripción."
+  },
+  {
+   "id": "K04",
+   "text": "LibriVox nació en 2005 con una idea muy sencilla: que todos los libros de dominio público tengan su audiolibro, leído por personas y gratis para todo el mundo."
+  },
+  {
+   "id": "K05",
+   "text": "Funciona así: se elige un libro libre de derechos, los voluntarios se reparten los capítulos y los graban en casa, un revisor los escucha, y el audiolibro se publica en su web, con los audios guardados en Internet Archive. Sin anuncios, sin cuentas y sin cuotas."
+  },
+  {
+   "id": "K07",
+   "text": "En español hay más de mil obras y más de tres mil quinientas horas: el Quijote, el Lazarillo, La Regenta, Fortunata y Jacinta, las Leyendas de Bécquer… Vamos a encontrarlas."
+  },
+  {
+   "id": "K08",
+   "text": "Paso uno: entra en librivox punto org. La web está en inglés, pero es muy sencilla. En «Browse the catalog», pulsa «Language» y elige «Spanish»: ahí están todos los libros en español."
+  },
+  {
+   "id": "K09",
+   "text": "Paso dos: si buscas uno concreto, escribe el título o el autor en el buscador. Debajo de cada resultado verás «Solo», si lo lee una sola persona, o «Collaborative», si lo leen varias."
+  },
+  {
+   "id": "K10",
+   "text": "Paso tres: abre la ficha del libro. Cada capítulo tiene su lector y su duración. Con «Play», lo escuchas en el navegador. Para descargarlo: el título de cada capítulo es el MP3; «Whole book», el libro entero en un ZIP; y el M4B es un audiolibro con capítulos que recuerda por dónde vas. Sin restricciones: los archivos son tuyos."
+  },
+  {
+   "id": "K11",
+   "text": "Paso cuatro: el móvil. LibriVox no tiene app oficial, pero hay un truco: copia el enlace del botón «RSS» y pégalo en tu app de pódcasts. Cada capítulo aparece como un episodio, y puedes descargarlo para escucharlo sin conexión. Y si prefieres una app, hay varias gratuitas, de otros desarrolladores."
+  },
+  {
+   "id": "K06",
+   "text": "¿Y por qué es legal? Porque solo graban libros sin derechos de autor en Estados Unidos: los publicados hace noventa y cinco años o más. Por eso aquí no hay novedades: hay clásicos. Eso sí, en España no todos están libres: «Platero y yo», por ejemplo, no lo estará hasta dos mil treinta y nueve."
+  },
+  {
+   "id": "K12",
+   "text": "¿Y cómo suenan? Cada libro lo leen voluntarios distintos, así que la calidad cambia. En estas Leyendas leen once personas. Escucha a cuatro de ellas:"
+  },
+  {
+   "id": "K13",
+   "text": "Nuestro consejo: escucha un minuto antes de empezar, y si hay varias versiones, quédate con la voz que más te guste."
+  },
+  {
+   "id": "K14",
+   "text": "¿Merece la pena? Si te gustan los clásicos, sí, y mucho: no hay nada igual gratis. Pero solo hay clásicos, las voces son desiguales y la web está en inglés. Nuestra nota: siete y medio sobre diez."
+  },
+  {
+   "id": "K15",
+   "text": "Y para saber dónde escuchar cualquier libro, gratis o en qué plataforma y a qué precio, búscalo en SonorBooks."
+  }
+ ]
+}

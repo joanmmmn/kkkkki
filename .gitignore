@@ -35,3 +35,8 @@ web/audible-resena/preview-movil/
 web/audiobooks-com-resena/dist/
 web/audiobooks-com-resena/preview/
 web/audiobooks-com-resena/preview-movil/
+
+# Página «Las mejores plataformas de audiolibros en español»: salidas de build.py (se generan con web/mejores-plataformas/build.py)
+web/mejores-plataformas/dist/
+web/mejores-plataformas/preview/
+web/mejores-plataformas/preview-movil/

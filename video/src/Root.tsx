@@ -34,9 +34,12 @@ import { AudiobooksReview } from './scenes/abc/Main';
 import { ABCThumb, ABCThumbB } from './scenes/abc/Thumb';
 import { AudiobooksReviewShort, ABC_SHORT_TOTAL } from './scenes/abc/Short';
 import { ABC_TOTAL } from './scenes/abc/timeline';
+import { MejoresPlataformas } from './scenes/mp/Main';
+import { MP_TOTAL } from './scenes/mp/timeline';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="MPGuide" component={MejoresPlataformas} durationInFrames={MP_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STRShort" component={StorytelReviewShort} durationInFrames={STR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

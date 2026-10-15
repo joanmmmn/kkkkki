@@ -1,0 +1,123 @@
+{
+ "id": "K01",
+ "hash": "a20f17da0346",
+ "text": "Esta voz es de Omar. No es una inteligencia artificial: es un voluntario que grabó este capítulo para que cualquiera pueda escucharlo gratis.",
+ "duration": 9.04,
+ "words": [
+  {
+   "w": "Esta",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "voz",
+   "s": 0.4,
+   "e": 0.72
+  },
+  {
+   "w": "es",
+   "s": 0.8,
+   "e": 0.88
+  },
+  {
+   "w": "de",
+   "s": 0.96,
+   "e": 1.04
+  },
+  {
+   "w": "Omar.",
+   "s": 1.08,
+   "e": 1.72
+  },
+  {
+   "w": "No",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "es",
+   "s": 2.16,
+   "e": 2.32
+  },
+  {
+   "w": "una",
+   "s": 2.4,
+   "e": 2.48
+  },
+  {
+   "w": "inteligencia",
+   "s": 2.56,
+   "e": 3.04
+  },
+  {
+   "w": "artificial:",
+   "s": 3.12,
+   "e": 4.16
+  },
+  {
+   "w": "es",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "un",
+   "s": 4.36,
+   "e": 4.4
+  },
+  {
+   "w": "voluntario",
+   "s": 4.48,
+   "e": 5.04
+  },
+  {
+   "w": "que",
+   "s": 5.12,
+   "e": 5.2
+  },
+  {
+   "w": "grabó",
+   "s": 5.32,
+   "e": 5.52
+  },
+  {
+   "w": "este",
+   "s": 5.64,
+   "e": 5.76
+  },
+  {
+   "w": "capítulo",
+   "s": 5.84,
+   "e": 6.32
+  },
+  {
+   "w": "para",
+   "s": 6.56,
+   "e": 6.72
+  },
+  {
+   "w": "que",
+   "s": 6.8,
+   "e": 6.88
+  },
+  {
+   "w": "cualquiera",
+   "s": 6.96,
+   "e": 7.44
+  },
+  {
+   "w": "pueda",
+   "s": 7.52,
+   "e": 7.76
+  },
+  {
+   "w": "escucharlo",
+   "s": 7.84,
+   "e": 8.4
+  },
+  {
+   "w": "gratis.",
+   "s": 8.64,
+   "e": 9.04
+  }
+ ]
+}

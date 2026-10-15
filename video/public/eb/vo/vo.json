@@ -1,0 +1,83 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.08
+ },
+ "scenes": [
+  {
+   "id": "B01",
+   "text": "¿Sabías que con el carné de la biblioteca puedes escuchar audiolibros gratis en el móvil? Novedades y superventas, los mismos que en las apps de pago."
+  },
+  {
+   "id": "B02",
+   "text": "Solo el año pasado se prestaron más de quinientos mil. Sin pagar nada y sin anuncios. Esto es eBiblio: la biblioteca pública, en tu bolsillo."
+  },
+  {
+   "id": "B03",
+   "text": "Te contamos qué es, cómo sacar el carné, cómo pedir tu primer audiolibro paso a paso y lo que nadie te cuenta: las colas. La guía completa, con el enlace de tu comunidad, está en sonorbooks.com. Enlace en la descripción."
+  },
+  {
+   "id": "B04",
+   "text": "eBiblio es el préstamo digital de las bibliotecas públicas. Lo pone en marcha el Ministerio de Cultura con las comunidades autónomas, y es gratis para ti: los audiolibros los paga la biblioteca."
+  },
+  {
+   "id": "B05",
+   "text": "Y funciona como la biblioteca de siempre. Cada audiolibro tiene unos cuantos ejemplares. Si hay uno libre, te lo llevas veintiún días. Si están todos prestados, te pones a la cola."
+  },
+  {
+   "id": "B06",
+   "text": "Cada comunidad tiene su propio eBiblio, con su colección: en Madrid hay más de tres mil audiolibros; en Asturias, unos quinientos. Y en Cataluña y el País Vasco no hay eBiblio: tienen Biblio Digital y eLiburutegia, que funcionan parecido."
+  },
+  {
+   "id": "B07",
+   "text": "Lo único que necesitas es el carné de una biblioteca pública de tu comunidad. Es gratis. Se saca en cualquier biblioteca y, en muchas comunidades, también por internet. Y con los datos de tu carné entras en eBiblio."
+  },
+  {
+   "id": "B08",
+   "text": "Paso uno: entra en ebiblio punto es y elige tu comunidad. O instala la app eBiblio, busca tu comunidad y entra con los datos de tu carné."
+  },
+  {
+   "id": "B09",
+   "text": "Paso dos: busca. En el catálogo, marca «Audiolibros» y «Títulos disponibles». Así solo ves lo que te puedes llevar ahora mismo."
+  },
+  {
+   "id": "B10",
+   "text": "Paso tres: abre la ficha. Si pone «Prestar», es tuyo: confirmas y ya está. Si pone «Reservar», te dice cuándo quedará uno libre. Cuando te toca, te avisan por correo y tienes un plazo para confirmarlo."
+  },
+  {
+   "id": "B11",
+   "text": "Paso cuatro: escúchalo. En la web, en «Mi cuenta», «Escuchar en línea». En la app, en «Mis libros», con velocidad, saltos de treinta segundos y temporizador. Y si lo descargas, sin conexión."
+  },
+  {
+   "id": "B12",
+   "text": "Y a los veintiún días se devuelve solo: sin multas y sin hacer nada. No se puede renovar, pero si nadie lo está esperando, lo vuelves a pedir."
+  },
+  {
+   "id": "B13",
+   "text": "Lo que nadie te cuenta: las novedades tienen cola. Hoy, en Madrid, «Cien años de soledad» no queda libre hasta enero. Y de «Sapiens» ni siquiera quedan reservas."
+  },
+  {
+   "id": "B14",
+   "text": "Pero hay truco: en Madrid, a la vez, hay casi dos mil audiolibros que te puedes llevar ahora mismo. Y no son de segunda: son los de las editoriales, con sus mismos narradores."
+  },
+  {
+   "id": "B15",
+   "text": "Cuántos puedes tener a la vez depende de tu comunidad: de uno a siete. Y el más prestado en 2025 fue «El retrato de casada»."
+  },
+  {
+   "id": "B16",
+   "text": "¿Merece la pena? Si no te importa esperar por las novedades, es lo mejor que hay para escuchar audiolibros actuales gratis y legales en España. La app es mejorable, y el catálogo depende de dónde vivas. Nuestra nota: siete coma cinco sobre diez."
+  },
+  {
+   "id": "B17",
+   "text": "Y si el que buscas tiene cola, búscalo en SonorBooks: te decimos dónde escucharlo, gratis o en qué plataforma y a qué precio."
+  }
+ ]
+}

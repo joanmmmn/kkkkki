@@ -1,0 +1,23 @@
+{
+ "viewport": [1920, 1080],
+ "dpr": 2,
+ "slowmo": 2,
+ "steps": [
+  {"go": "https://www.spotify.com/es/audiobooks/"},
+  {"wait": 1500},
+  {"eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); [...document.querySelectorAll('button')].find(b=>/Close/.test(b.innerText))?.click();"},
+  {"move": [1500, 900], "dur": 10},
+  {"wait": 800},
+  {"record": true},
+  {"wait": 2600},
+  {"mark": "cards"},
+  {"scroll": 860, "dur": 1600},
+  {"wait": 3200},
+  {"mark": "plus"},
+  {"scroll": 820, "dur": 1500},
+  {"wait": 3200},
+  {"mark": "hilo"},
+  {"scroll": 900, "dur": 1500},
+  {"wait": 2600}
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "slowmo": 3,
+ "steps": [
+  {
+   "go": "https://www.bookbeat.com/es",
+   "until": "load"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "clickText": "I only accept required cookies",
+   "dur": 300
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "move": [
+    1500,
+    760
+   ],
+   "dur": 10
+  },
+  {
+   "wait": 600
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "to_btn"
+  },
+  {
+   "moveText": "Try 30 days for free",
+   "dur": 1100
+  },
+  {
+   "wait": 500
+  },
+  {
+   "fakeClick": true
+  },
+  {
+   "mark": "click_btn"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 1450,
+   "dur": 2600
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "trending"
+  },
+  {
+   "scroll": 830,
+   "dur": 2400
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "plans"
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

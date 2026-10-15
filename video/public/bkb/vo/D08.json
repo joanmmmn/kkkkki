@@ -1,0 +1,164 @@
+{
+ "id": "D08",
+ "hash": "1d2930a40676",
+ "text": "El reproductor llega a dos veces la velocidad, y tiene temporizador para dormir, que incluso puede activarse solo por la noche, capítulos, marcadores con notas y descargas para escuchar sin conexión.",
+ "duration": 12.88,
+ "words": [
+  {
+   "w": "El",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "reproductor",
+   "s": 0.16,
+   "e": 0.8
+  },
+  {
+   "w": "llega",
+   "s": 0.84,
+   "e": 1.08
+  },
+  {
+   "w": "a",
+   "s": 1.12,
+   "e": 1.28
+  },
+  {
+   "w": "dos",
+   "s": 1.4,
+   "e": 1.52
+  },
+  {
+   "w": "veces",
+   "s": 1.6,
+   "e": 1.92
+  },
+  {
+   "w": "la",
+   "s": 1.96,
+   "e": 2.0
+  },
+  {
+   "w": "velocidad,",
+   "s": 2.08,
+   "e": 3.0
+  },
+  {
+   "w": "y",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "tiene",
+   "s": 3.16,
+   "e": 3.36
+  },
+  {
+   "w": "temporizador",
+   "s": 3.48,
+   "e": 4.08
+  },
+  {
+   "w": "para",
+   "s": 4.16,
+   "e": 4.24
+  },
+  {
+   "w": "dormir,",
+   "s": 4.32,
+   "e": 5.0
+  },
+  {
+   "w": "que",
+   "s": 5.04,
+   "e": 5.08
+  },
+  {
+   "w": "incluso",
+   "s": 5.12,
+   "e": 5.6
+  },
+  {
+   "w": "puede",
+   "s": 5.653,
+   "e": 5.76
+  },
+  {
+   "w": "activarse",
+   "s": 5.84,
+   "e": 6.4
+  },
+  {
+   "w": "solo",
+   "s": 6.48,
+   "e": 6.72
+  },
+  {
+   "w": "por",
+   "s": 6.8,
+   "e": 6.88
+  },
+  {
+   "w": "la",
+   "s": 6.96,
+   "e": 7.04
+  },
+  {
+   "w": "noche,",
+   "s": 7.12,
+   "e": 7.8
+  },
+  {
+   "w": "capítulos,",
+   "s": 7.84,
+   "e": 8.773
+  },
+  {
+   "w": "marcadores",
+   "s": 8.827,
+   "e": 9.28
+  },
+  {
+   "w": "con",
+   "s": 9.36,
+   "e": 9.44
+  },
+  {
+   "w": "notas",
+   "s": 9.52,
+   "e": 10.16
+  },
+  {
+   "w": "y",
+   "s": 10.24,
+   "e": 10.28
+  },
+  {
+   "w": "descargas",
+   "s": 10.32,
+   "e": 10.88
+  },
+  {
+   "w": "para",
+   "s": 10.96,
+   "e": 11.04
+  },
+  {
+   "w": "escuchar",
+   "s": 11.12,
+   "e": 11.52
+  },
+  {
+   "w": "sin",
+   "s": 11.6,
+   "e": 11.68
+  },
+  {
+   "w": "conexión.",
+   "s": 11.76,
+   "e": 12.88
+  }
+ ],
+ "speechEnd": 12.373
+}

@@ -1,0 +1,80 @@
+{
+ "id": "R08B",
+ "hash": "e9e2c1bc858f",
+ "text": "Descarga la app de ElevenReader, entra con la misma cuenta y busca tu libro.",
+ "duration": 4.8,
+ "words": [
+  {
+   "w": "Descarga",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "la",
+   "s": 0.56,
+   "e": 0.64
+  },
+  {
+   "w": "app",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "de",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "ElevenReader,",
+   "s": 1.04,
+   "e": 2.08
+  },
+  {
+   "w": "entra",
+   "s": 2.2,
+   "e": 2.48
+  },
+  {
+   "w": "con",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "la",
+   "s": 2.68,
+   "e": 2.72
+  },
+  {
+   "w": "misma",
+   "s": 2.8,
+   "e": 2.96
+  },
+  {
+   "w": "cuenta",
+   "s": 3.04,
+   "e": 3.44
+  },
+  {
+   "w": "y",
+   "s": 3.6,
+   "e": 3.68
+  },
+  {
+   "w": "busca",
+   "s": 3.76,
+   "e": 4.08
+  },
+  {
+   "w": "tu",
+   "s": 4.16,
+   "e": 4.24
+  },
+  {
+   "w": "libro.",
+   "s": 4.36,
+   "e": 4.8
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 4.8
+}

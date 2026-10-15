@@ -1,0 +1,121 @@
+{
+ "andalucia": {
+  "audio": 831,
+  "audio_avail": 504,
+  "audio_spa": 756,
+  "ebook": 12432,
+  "all": 13487
+ },
+ "aragon": {
+  "audio": 495,
+  "audio_avail": 287,
+  "audio_spa": 431,
+  "ebook": 10945,
+  "all": 11646
+ },
+ "asturias": {
+  "audio": 450,
+  "audio_avail": 295,
+  "audio_spa": 382,
+  "ebook": 8588,
+  "all": 26089
+ },
+ "canarias": {
+  "audio": 994,
+  "audio_avail": 838,
+  "audio_spa": 924,
+  "ebook": 15490,
+  "all": 21570
+ },
+ "cantabria": {
+  "audio": 1454,
+  "audio_avail": 1197,
+  "audio_spa": 1384,
+  "ebook": 15274,
+  "all": 20845
+ },
+ "castillalamancha": {
+  "audio": 1101,
+  "audio_avail": 602,
+  "audio_spa": 1034,
+  "ebook": 14493,
+  "all": 19650
+ },
+ "castillayleon": {
+  "audio": 2567,
+  "audio_avail": 2148,
+  "audio_spa": 2434,
+  "ebook": 29242,
+  "all": 34785
+ },
+ "ceuta": {
+  "audio": 942,
+  "audio_avail": 916,
+  "audio_spa": 873,
+  "ebook": 9018,
+  "all": 13952
+ },
+ "comunitatvalenciana": {
+  "audio": 675,
+  "audio_avail": 454,
+  "audio_spa": 608,
+  "ebook": 9462,
+  "all": 14210
+ },
+ "extremadura": {
+  "audio": 825,
+  "audio_avail": 641,
+  "audio_spa": 757,
+  "ebook": 13581,
+  "all": 18667
+ },
+ "galicia": {
+  "audio": 1211,
+  "audio_avail": 895,
+  "audio_spa": 1144,
+  "ebook": 14452,
+  "all": 15721
+ },
+ "illesbalears": {
+  "audio": 892,
+  "audio_avail": 802,
+  "audio_spa": 807,
+  "ebook": 11756,
+  "all": 17053
+ },
+ "larioja": {
+  "audio": 1073,
+  "audio_avail": 910,
+  "audio_spa": 1002,
+  "ebook": 11608,
+  "all": 16811
+ },
+ "madrid": {
+  "audio": 3186,
+  "audio_avail": 1991,
+  "audio_spa": 3098,
+  "ebook": 25294,
+  "all": 31806
+ },
+ "melilla": {
+  "audio": 955,
+  "audio_avail": 953,
+  "audio_spa": 886,
+  "ebook": 8955,
+  "all": 10105
+ },
+ "murcia": {
+  "audio": 827,
+  "audio_avail": 517,
+  "audio_spa": 771,
+  "ebook": 13172,
+  "all": 17997
+ },
+ "navarra": {
+  "audio": 2276,
+  "audio_avail": 1933,
+  "audio_spa": 2165,
+  "ebook": 14874,
+  "all": 17322
+ }
+}

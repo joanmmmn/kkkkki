@@ -1,0 +1,86 @@
+{
+ "id": "W16",
+ "hash": "145e002c3e9d",
+ "text": "Y para saber dónde escuchar cualquier audiolibro, y a qué precio, búscalo en SonorBooks.",
+ "duration": 5.042,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.056
+  },
+  {
+   "w": "para",
+   "s": 0.132,
+   "e": 0.282
+  },
+  {
+   "w": "saber",
+   "s": 0.32,
+   "e": 0.584
+  },
+  {
+   "w": "dónde",
+   "s": 0.659,
+   "e": 0.885
+  },
+  {
+   "w": "escuchar",
+   "s": 0.96,
+   "e": 1.337
+  },
+  {
+   "w": "cualquier",
+   "s": 1.412,
+   "e": 1.713
+  },
+  {
+   "w": "audiolibro,",
+   "s": 1.788,
+   "e": 2.504
+  },
+  {
+   "w": "y",
+   "s": 2.541,
+   "e": 2.579
+  },
+  {
+   "w": "a",
+   "s": 2.617,
+   "e": 2.692
+  },
+  {
+   "w": "qué",
+   "s": 2.767,
+   "e": 2.843
+  },
+  {
+   "w": "precio,",
+   "s": 2.918,
+   "e": 3.408
+  },
+  {
+   "w": "búscalo",
+   "s": 3.483,
+   "e": 3.936
+  },
+  {
+   "w": "en",
+   "s": 4.049,
+   "e": 4.162
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 4.238,
+   "e": 5.011
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 5.011,
+ "tightened": {
+  "keep": 0.11,
+  "min": 0.18,
+  "tempo": 1.06,
+  "from": 5.68
+ }
+}

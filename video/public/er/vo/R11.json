@@ -1,0 +1,90 @@
+{
+ "id": "R11",
+ "hash": "493089747c89",
+ "text": "Encuentra dónde escuchar cualquier audiolibro, al mejor precio, en SonorBooks. Tu próxima historia te está esperando.",
+ "duration": 8.16,
+ "words": [
+  {
+   "w": "Encuentra",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "dónde",
+   "s": 0.64,
+   "e": 0.88
+  },
+  {
+   "w": "escuchar",
+   "s": 1.0,
+   "e": 1.36
+  },
+  {
+   "w": "cualquier",
+   "s": 1.44,
+   "e": 1.84
+  },
+  {
+   "w": "audiolibro,",
+   "s": 1.92,
+   "e": 2.72
+  },
+  {
+   "w": "al",
+   "s": 2.8,
+   "e": 2.88
+  },
+  {
+   "w": "mejor",
+   "s": 2.96,
+   "e": 3.28
+  },
+  {
+   "w": "precio,",
+   "s": 3.36,
+   "e": 4.0
+  },
+  {
+   "w": "en",
+   "s": 4.08,
+   "e": 4.24
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 4.4,
+   "e": 5.52
+  },
+  {
+   "w": "Tu",
+   "s": 5.6,
+   "e": 5.68
+  },
+  {
+   "w": "próxima",
+   "s": 5.72,
+   "e": 6.08
+  },
+  {
+   "w": "historia",
+   "s": 6.24,
+   "e": 6.72
+  },
+  {
+   "w": "te",
+   "s": 6.76,
+   "e": 6.8
+  },
+  {
+   "w": "está",
+   "s": 6.88,
+   "e": 7.12
+  },
+  {
+   "w": "esperando.",
+   "s": 7.2,
+   "e": 8.16
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 8.16
+}

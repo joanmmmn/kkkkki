@@ -1,0 +1,79 @@
+{
+ "id": "W04",
+ "hash": "659a7e12be9f",
+ "text": "Y de su millón de títulos, en español hay unos dieciséis mil quinientos audiolibros.",
+ "duration": 5.12,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "de",
+   "s": 0.16,
+   "e": 0.24
+  },
+  {
+   "w": "su",
+   "s": 0.32,
+   "e": 0.4
+  },
+  {
+   "w": "millón",
+   "s": 0.48,
+   "e": 0.64
+  },
+  {
+   "w": "de",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "títulos,",
+   "s": 0.84,
+   "e": 1.48
+  },
+  {
+   "w": "en",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "español",
+   "s": 1.68,
+   "e": 2.08
+  },
+  {
+   "w": "hay",
+   "s": 2.16,
+   "e": 2.24
+  },
+  {
+   "w": "unos",
+   "s": 2.36,
+   "e": 2.48
+  },
+  {
+   "w": "dieciséis",
+   "s": 2.56,
+   "e": 3.12
+  },
+  {
+   "w": "mil",
+   "s": 3.2,
+   "e": 3.36
+  },
+  {
+   "w": "quinientos",
+   "s": 3.44,
+   "e": 3.92
+  },
+  {
+   "w": "audiolibros.",
+   "s": 4.0,
+   "e": 5.12
+  }
+ ],
+ "speechEnd": 4.733
+}

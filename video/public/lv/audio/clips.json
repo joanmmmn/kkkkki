@@ -1,0 +1,280 @@
+{
+ "omar_cold": {
+  "dur": 5.45,
+  "reader": "Omar Mojica",
+  "text": "Yo no sé si esto es una historia que parece cuento o un cuento que parece historia.",
+  "gain_db": 8.1,
+  "words": [
+   [
+    0.13,
+    0.23,
+    "Yo"
+   ],
+   [
+    0.27,
+    0.39,
+    "no"
+   ],
+   [
+    0.45,
+    0.53,
+    "sé"
+   ],
+   [
+    0.73,
+    0.85,
+    "si"
+   ],
+   [
+    0.93,
+    1.15,
+    "esto"
+   ],
+   [
+    1.21,
+    1.29,
+    "es"
+   ],
+   [
+    1.35,
+    1.45,
+    "una"
+   ],
+   [
+    1.47,
+    1.81,
+    "historia"
+   ],
+   [
+    1.85,
+    1.93,
+    "que"
+   ],
+   [
+    1.97,
+    2.29,
+    "parece"
+   ],
+   [
+    2.35,
+    2.73,
+    "cuento"
+   ],
+   [
+    3.31,
+    3.37,
+    "o"
+   ],
+   [
+    3.43,
+    3.53,
+    "un"
+   ],
+   [
+    3.57,
+    4.05,
+    "cuento"
+   ],
+   [
+    4.09,
+    4.23,
+    "que"
+   ],
+   [
+    4.27,
+    4.63,
+    "parece"
+   ],
+   [
+    4.65,
+    5.17,
+    "historia."
+   ]
+  ]
+ },
+ "omar_aviso": {
+  "dur": 6.85,
+  "reader": "Omar Mojica",
+  "text": "Esta es una grabación de LibriVox. Todas las grabaciones de LibriVox son del dominio público.",
+  "gain_db": 8.2,
+  "words": [
+   [
+    0.14,
+    0.4,
+    "Esta"
+   ],
+   [
+    0.46,
+    0.56,
+    "es"
+   ],
+   [
+    0.639,
+    0.78,
+    "una"
+   ],
+   [
+    0.8,
+    1.38,
+    "grabación"
+   ],
+   [
+    1.42,
+    1.52,
+    "de"
+   ],
+   [
+    1.56,
+    2.18,
+    "LibriVox."
+   ],
+   [
+    2.94,
+    3.26,
+    "Todas"
+   ],
+   [
+    3.34,
+    3.46,
+    "las"
+   ],
+   [
+    3.5,
+    4.16,
+    "grabaciones"
+   ],
+   [
+    4.2,
+    4.28,
+    "de"
+   ],
+   [
+    4.32,
+    4.88,
+    "LibriVox"
+   ],
+   [
+    5.3,
+    5.5,
+    "son"
+   ],
+   [
+    5.54,
+    5.66,
+    "del"
+   ],
+   [
+    5.7,
+    6.04,
+    "dominio"
+   ],
+   [
+    6.14,
+    6.6,
+    "público."
+   ]
+  ]
+ },
+ "t_omar": {
+  "dur": 1.3,
+  "reader": "Omar Mojica",
+  "text": "El rayo de luna",
+  "gain_db": 4.9,
+  "words": [
+   [
+    0.15,
+    0.31,
+    "El"
+   ],
+   [
+    0.39,
+    0.65,
+    "rayo"
+   ],
+   [
+    0.71,
+    0.77,
+    "de"
+   ],
+   [
+    0.83,
+    1.13,
+    "luna:"
+   ]
+  ]
+ },
+ "t_elena": {
+  "dur": 1.45,
+  "reader": "Elena del Valle",
+  "text": "El monte de las ánimas",
+  "gain_db": 5.7,
+  "words": [
+   [
+    0.11,
+    0.19,
+    "El"
+   ],
+   [
+    0.25,
+    0.49,
+    "monte"
+   ],
+   [
+    0.53,
+    0.59,
+    "de"
+   ],
+   [
+    0.65,
+    0.79,
+    "las"
+   ],
+   [
+    0.87,
+    1.31,
+    "ánimas,"
+   ]
+  ]
+ },
+ "t_vicente": {
+  "dur": 1.05,
+  "reader": "Vicente Cepeda",
+  "text": "El Miserere",
+  "gain_db": -2.1,
+  "words": [
+   [
+    0.16,
+    0.24,
+    "El"
+   ],
+   [
+    0.3,
+    0.9,
+    "Miserere."
+   ]
+  ]
+ },
+ "t_rosa": {
+  "dur": 1.35,
+  "reader": "Rosacarmela",
+  "text": "Los ojos verdes",
+  "gain_db": 3.5,
+  "words": [
+   [
+    0.12,
+    0.28,
+    "Los"
+   ],
+   [
+    0.36,
+    0.66,
+    "ojos"
+   ],
+   [
+    0.76,
+    1.2,
+    "verdes,"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "id": "R10",
+ "hash": "cc9d9faeef3c",
+ "text": "¿No quieres seguir? Cancela antes del día 30 desde tu perfil, en «Gestionar facturación». Mantienes el acceso hasta el final del periodo y luego pasas al plan gratis.",
+ "duration": 10.48,
+ "words": [
+  {
+   "w": "¿No",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "quieres",
+   "s": 0.24,
+   "e": 0.48
+  },
+  {
+   "w": "seguir?",
+   "s": 0.56,
+   "e": 1.2
+  },
+  {
+   "w": "Cancela",
+   "s": 1.4,
+   "e": 1.64
+  },
+  {
+   "w": "antes",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "del",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "día",
+   "s": 2.16,
+   "e": 2.32
+  },
+  {
+   "w": "30",
+   "s": 2.4,
+   "e": 2.72
+  },
+  {
+   "w": "desde",
+   "s": 2.8,
+   "e": 3.0
+  },
+  {
+   "w": "tu",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "perfil,",
+   "s": 3.2,
+   "e": 3.84
+  },
+  {
+   "w": "en",
+   "s": 3.92,
+   "e": 4.0
+  },
+  {
+   "w": "«Gestionar",
+   "s": 4.04,
+   "e": 4.48
+  },
+  {
+   "w": "facturación».",
+   "s": 4.56,
+   "e": 5.68
+  },
+  {
+   "w": "Mantienes",
+   "s": 5.76,
+   "e": 6.16
+  },
+  {
+   "w": "el",
+   "s": 6.24,
+   "e": 6.28
+  },
+  {
+   "w": "acceso",
+   "s": 6.32,
+   "e": 6.72
+  },
+  {
+   "w": "hasta",
+   "s": 6.76,
+   "e": 6.96
+  },
+  {
+   "w": "el",
+   "s": 7.0,
+   "e": 7.04
+  },
+  {
+   "w": "final",
+   "s": 7.12,
+   "e": 7.36
+  },
+  {
+   "w": "del",
+   "s": 7.44,
+   "e": 7.52
+  },
+  {
+   "w": "periodo",
+   "s": 7.68,
+   "e": 8.16
+  },
+  {
+   "w": "y",
+   "s": 8.24,
+   "e": 8.32
+  },
+  {
+   "w": "luego",
+   "s": 8.36,
+   "e": 8.64
+  },
+  {
+   "w": "pasas",
+   "s": 8.76,
+   "e": 8.96
+  },
+  {
+   "w": "al",
+   "s": 9.04,
+   "e": 9.2
+  },
+  {
+   "w": "plan",
+   "s": 9.32,
+   "e": 9.44
+  },
+  {
+   "w": "gratis.",
+   "s": 9.92,
+   "e": 10.48
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 10.48
+}

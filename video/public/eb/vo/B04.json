@@ -1,0 +1,176 @@
+{
+ "id": "B04",
+ "hash": "8dd38e23e19f",
+ "text": "eBiblio es el préstamo digital de las bibliotecas públicas. Lo pone en marcha el Ministerio de Cultura con las comunidades autónomas, y es gratis para ti: los audiolibros los paga la biblioteca.",
+ "duration": 11.886,
+ "words": [
+  {
+   "w": "eBiblio",
+   "s": 0.0,
+   "e": 0.6
+  },
+  {
+   "w": "es",
+   "s": 0.68,
+   "e": 0.76
+  },
+  {
+   "w": "el",
+   "s": 0.84,
+   "e": 1.0
+  },
+  {
+   "w": "préstamo",
+   "s": 1.04,
+   "e": 1.4
+  },
+  {
+   "w": "digital",
+   "s": 1.64,
+   "e": 1.88
+  },
+  {
+   "w": "de",
+   "s": 1.92,
+   "e": 1.96
+  },
+  {
+   "w": "las",
+   "s": 2.04,
+   "e": 2.12
+  },
+  {
+   "w": "bibliotecas",
+   "s": 2.2,
+   "e": 2.84
+  },
+  {
+   "w": "públicas.",
+   "s": 2.88,
+   "e": 3.853
+  },
+  {
+   "w": "Lo",
+   "s": 3.907,
+   "e": 3.96
+  },
+  {
+   "w": "pone",
+   "s": 4.04,
+   "e": 4.12
+  },
+  {
+   "w": "en",
+   "s": 4.2,
+   "e": 4.28
+  },
+  {
+   "w": "marcha",
+   "s": 4.32,
+   "e": 4.6
+  },
+  {
+   "w": "el",
+   "s": 4.64,
+   "e": 4.68
+  },
+  {
+   "w": "Ministerio",
+   "s": 4.76,
+   "e": 5.24
+  },
+  {
+   "w": "de",
+   "s": 5.28,
+   "e": 5.32
+  },
+  {
+   "w": "Cultura",
+   "s": 5.36,
+   "e": 5.8
+  },
+  {
+   "w": "con",
+   "s": 5.88,
+   "e": 5.96
+  },
+  {
+   "w": "las",
+   "s": 6.04,
+   "e": 6.12
+  },
+  {
+   "w": "comunidades",
+   "s": 6.2,
+   "e": 6.76
+  },
+  {
+   "w": "autónomas,",
+   "s": 6.84,
+   "e": 7.68
+  },
+  {
+   "w": "y",
+   "s": 7.72,
+   "e": 7.8
+  },
+  {
+   "w": "es",
+   "s": 7.92,
+   "e": 8.04
+  },
+  {
+   "w": "gratis",
+   "s": 8.28,
+   "e": 8.52
+  },
+  {
+   "w": "para",
+   "s": 8.64,
+   "e": 8.76
+  },
+  {
+   "w": "ti:",
+   "s": 9.04,
+   "e": 9.36
+  },
+  {
+   "w": "los",
+   "s": 9.4,
+   "e": 9.56
+  },
+  {
+   "w": "audiolibros",
+   "s": 9.64,
+   "e": 10.44
+  },
+  {
+   "w": "los",
+   "s": 10.56,
+   "e": 10.68
+  },
+  {
+   "w": "paga",
+   "s": 10.76,
+   "e": 11.0
+  },
+  {
+   "w": "la",
+   "s": 11.04,
+   "e": 11.08
+  },
+  {
+   "w": "biblioteca.",
+   "s": 11.16,
+   "e": 11.84
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 11.84,
+ "tightened": {
+  "keep": 0.3,
+  "min": 0.42,
+  "tempo": 1.0,
+  "from": 12.24
+ }
+}

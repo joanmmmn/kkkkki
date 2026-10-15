@@ -1,0 +1,55 @@
+{
+ "id": "R01",
+ "hash": "adf2b4026cb1",
+ "text": "¿Treinta días gratis de ElevenReader, en lugar de tres?",
+ "duration": 3.36,
+ "words": [
+  {
+   "w": "¿Treinta",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "días",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "gratis",
+   "s": 0.92,
+   "e": 1.12
+  },
+  {
+   "w": "de",
+   "s": 1.16,
+   "e": 1.2
+  },
+  {
+   "w": "ElevenReader,",
+   "s": 1.28,
+   "e": 2.24
+  },
+  {
+   "w": "en",
+   "s": 2.32,
+   "e": 2.4
+  },
+  {
+   "w": "lugar",
+   "s": 2.44,
+   "e": 2.72
+  },
+  {
+   "w": "de",
+   "s": 2.76,
+   "e": 2.8
+  },
+  {
+   "w": "tres?",
+   "s": 2.88,
+   "e": 3.36
+  }
+ ],
+ "speechStart": 0.0,
+ "speechEnd": 3.36
+}
