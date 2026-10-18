@@ -9,7 +9,7 @@ Alternativas:
 - Mejores Apps de Audiolibros en Español 2026: Comparativa Definitiva, Precios, Trucos y Cuál Elegir (98)
 - Las Mejores Plataformas de Audiolibros en 2026: Audible, Storytel, Spotify y 8 más | Comparativa (96)
 
-## Descripción (4930 de 5.000 bytes)
+## Descripción (4971 de 5.000 bytes)
 ```
 ¿Cuál es la mejor plataforma de audiolibros en español? Hemos reseñado a fondo, una a una, once plataformas, incluida la recién llegada, Spotify: qué ofrece cada una, cuánto cuesta, sus trucos, su letra pequeña y cuál te conviene según cuánto escuchas.
 
@@ -59,7 +59,7 @@ Lo que verás:
 • Los 5 trucos: acelerar no ahorra horas, cuándo cancelar, alta en la web y no en la app, encadenar pruebas y buscar tu libro antes de pagar.
 
 🎧 Las reseñas completas de cada plataforma:
-Audible: https://youtu.be/nnRXlXi2rCk · Storytel: https://youtu.be/nPBV7b4Vowc · Nextory: https://youtu.be/x9dF1JRrej0 · Podimo: https://youtu.be/dy4RVorr39o · BookBeat: https://youtu.be/GpNFV9wZ-BM · Audiobooks.com: https://youtu.be/cif771omGrQ · ElevenReader: https://youtu.be/yHu33tVU5XU · LibriVox: https://youtu.be/Z6ehA2HmhWU · eBiblio: https://youtu.be/c8tJBNWibnc · El Libro Total: https://youtu.be/J0pkSx30dMM
+Audible: https://youtu.be/nnRXlXi2rCk · Storytel: https://youtu.be/nPBV7b4Vowc · Nextory: https://youtu.be/x9dF1JRrej0 · Podimo: https://youtu.be/dy4RVorr39o · BookBeat: https://youtu.be/GpNFV9wZ-BM · Spotify: https://youtu.be/5dKjJSF9knU · Audiobooks.com: https://youtu.be/cif771omGrQ · ElevenReader: https://youtu.be/yHu33tVU5XU · LibriVox: https://youtu.be/Z6ehA2HmhWU · eBiblio: https://youtu.be/c8tJBNWibnc · El Libro Total: https://youtu.be/J0pkSx30dMM
 
 🔎 Busca cualquier audiolibro y mira dónde escucharlo, con qué narrador y a qué precio: https://sonorbooks.com/es/
 
@@ -88,4 +88,4 @@ La comparativa entera, con la calculadora de horas: https://sonorbooks.com/es/bl
 - Subtítulos: `mejores_plataformas.es.srt` (Español, España). Miniatura: `miniatura.png`.
 - Pantalla final en los últimos 7,8 s (desde 8:28,5, el cierre de SonorBooks: el buscador en el centro y la marca arriba; las esquinas de abajo quedan libres): vídeo (la lista de reseñas) + suscribirse.
 - El artículo (https://sonorbooks.com/es/blog/mejores-plataformas-audiolibros/) tiene que estar publicado antes (pendiente de aprobación).
-- **Reseña de Spotify:** aún sin publicar, así que no está en la lista de reseñas de la descripción. La voz dice «Las once tienen su reseña en el canal»: publícala antes que este vídeo y regenera con `python3 tools/mp_youtube.py --spotify ID` (o pega a mano `Spotify: https://youtu.be/ID` detrás de BookBeat).
+- Las once reseñas del vídeo están publicadas (la de Spotify, 5dKjJSF9knU, desde el 18/10). iVoox (ri7JcUIrIak) también tiene reseña, pero no entra en este vídeo.

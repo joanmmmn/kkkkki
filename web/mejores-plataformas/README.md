@@ -29,8 +29,8 @@ su logotipo, no por un color. En orden:
 4. **Tabla comparativa de las 11** agrupada por forma de pago (precio, horas, prueba, ebooks, ordenador/web, familia y perfiles,
    lo mejor, el ojo); en el móvil, una ficha por plataforma con la etiqueta de cada dato.
 5. **Una ficha por plataforma** (lo mejor, el truco, el ojo, una captura real, el enlace a su reseña y el botón de prueba con sus
-   condiciones y el aviso de afiliado al lado). Las once tienen reseña: la de Spotify (/es/blog/spotify-audiolibros-resena/, rama
-   `resena-spotify`) aún no está publicada, así que conviene publicarla antes o a la vez que esta página.
+   condiciones y el aviso de afiliado al lado). Las once tienen reseña: el vídeo de la de Spotify está publicado (5dKjJSF9knU, 18/10),
+   pero su página (/es/blog/spotify-audiolibros-resena/, rama `resena-spotify`) daba 404: conviene publicarla antes o a la vez.
 6. **Los 5 trucos que valen para todas**, cada uno con su módulo: acelerar no ahorra horas (selector 1x / 1,5x / 2x), cuándo
    cancelar cada prueba (barras de días), alta en la web y no en la app, encadenar pruebas (150 días) y buscar el libro antes de
    pagar (*Los tres mundos* en Audible, BookBeat y Audiobooks.com, y la búsqueda real en SonorBooks con botón a

@@ -2,11 +2,9 @@
 """Textos de YouTube de «Las mejores plataformas de audiolibros en español» (título, descripción con capítulos, etiquetas
 y comentario fijado). Los capítulos salen de tools/mp_meta.py (locución real si existe; si no, estimados).
 
-Uso: python3 tools/mp_youtube.py [--spotify ID]   → deliverables/mejores-plataformas/youtube.md y descripcion_youtube.txt
-La reseña de Spotify aún no está en YouTube (18/10): con --spotify ID entra en la lista de reseñas; sin él, se queda fuera y
-youtube.md lo avisa (la voz dice «Las once tienen su reseña en el canal»: conviene publicarla antes que este vídeo).
+Uso: python3 tools/mp_youtube.py   → deliverables/mejores-plataformas/youtube.md y descripcion_youtube.txt
 """
-import argparse, os, sys
+import os, sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 import mp_meta  # noqa: E402
@@ -37,7 +35,8 @@ DIRECTOS = [
 ]
 RESENAS = [
     ('Audible', 'https://youtu.be/nnRXlXi2rCk'), ('Storytel', 'https://youtu.be/nPBV7b4Vowc'), ('Nextory', 'https://youtu.be/x9dF1JRrej0'),
-    ('Podimo', 'https://youtu.be/dy4RVorr39o'), ('BookBeat', 'https://youtu.be/GpNFV9wZ-BM'), ('Audiobooks.com', 'https://youtu.be/cif771omGrQ'),
+    ('Podimo', 'https://youtu.be/dy4RVorr39o'), ('BookBeat', 'https://youtu.be/GpNFV9wZ-BM'),
+    ('Spotify', 'https://youtu.be/5dKjJSF9knU'), ('Audiobooks.com', 'https://youtu.be/cif771omGrQ'),
     ('ElevenReader', 'https://youtu.be/yHu33tVU5XU'), ('LibriVox', 'https://youtu.be/Z6ehA2HmhWU'), ('eBiblio', 'https://youtu.be/c8tJBNWibnc'),
     ('El Libro Total', 'https://youtu.be/J0pkSx30dMM'),
 ]
@@ -100,12 +99,8 @@ def descripcion(caps, resenas):
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument('--spotify', help='ID de YouTube de la reseña de Spotify, cuando esté publicada')
-    args = ap.parse_args()
-    resenas = RESENAS[:5] + [('Spotify', f'https://youtu.be/{args.spotify}')] + RESENAS[5:] if args.spotify else RESENAS
     caps, total, estimados = capitulos()
-    desc = descripcion(caps, resenas)
+    desc = descripcion(caps, RESENAS)
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, 'descripcion_youtube.txt'), 'w').write(desc + '\n')
     tags = ', '.join(ETIQUETAS)
@@ -128,7 +123,7 @@ def main():
         '- Subtítulos: `mejores_plataformas.es.srt` (Español, España). Miniatura: `miniatura.png`.',
         '- Pantalla final en los últimos 7,8 s (desde 8:28,5, el cierre de SonorBooks: el buscador en el centro y la marca arriba; las esquinas de abajo quedan libres): vídeo (la lista de reseñas) + suscribirse.',
         f'- El artículo ({ARTICULO}) tiene que estar publicado antes (pendiente de aprobación).',
-        *([] if args.spotify else ['- **Reseña de Spotify:** aún sin publicar, así que no está en la lista de reseñas de la descripción. La voz dice «Las once tienen su reseña en el canal»: publícala antes que este vídeo y regenera con `python3 tools/mp_youtube.py --spotify ID` (o pega a mano `Spotify: https://youtu.be/ID` detrás de BookBeat).']),
+        '- Las once reseñas del vídeo están publicadas (la de Spotify, 5dKjJSF9knU, desde el 18/10). iVoox (ri7JcUIrIak) también tiene reseña, pero no entra en este vídeo.',
     ]
     open(os.path.join(OUT, 'youtube.md'), 'w').write('\n'.join(md) + '\n')
     print(f'OK · descripción {len(desc.encode())} bytes · etiquetas {len(tags)} caracteres' + (' · capítulos ESTIMADOS' if estimados else ''))

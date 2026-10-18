@@ -69,10 +69,11 @@ gratis · cierre (las once reseñas, el artículo y SonorBooks).
 - **Pantalla final:** los últimos 7,8 s (desde 8:28,5: el buscador de SonorBooks en el centro y la marca arriba); las esquinas
   de abajo quedan libres para «vídeo» (la lista de reseñas) y «suscribirse».
 - **Antes de subirlo:**
-  1. **La reseña de Spotify** tiene que estar publicada: la voz dice «Las once tienen su reseña en el canal». Con su ID,
-     `python3 tools/mp_youtube.py --spotify ID` la añade a la lista de reseñas de la descripción (cabe: 4.971 bytes).
+  1. **Las once reseñas ya están en el canal** (la de Spotify, 5dKjJSF9knU, desde el 18/10, 20:30), así que «Las once tienen su
+     reseña en el canal» es cierto y la descripción las enlaza todas (4.971 de 5.000 bytes). iVoox (ri7JcUIrIak, 18/10) también
+     tiene reseña, pero no entra en este vídeo ni en el artículo: la voz habla de «once plataformas».
   2. **El artículo** https://sonorbooks.com/es/blog/mejores-plataformas-audiolibros/ (`web/mejores-plataformas`, ya con las once
      y el enlace a la reseña de Spotify) tiene que estar publicado: es el primer enlace de la descripción y del comentario
      fijado. Al subir el vídeo: `python3 web/mejores-plataformas/build.py --yt ID --yt-fecha AAAA-MM-DD`.
-  3. Las fichas de las reseñas que enlaza la página y que aún dan 404 (BookBeat, eBiblio, Spotify) conviene publicarlas antes.
+  3. Las páginas de las reseñas que enlaza el artículo y que daban 404 (BookBeat, eBiblio y Spotify) conviene publicarlas antes.
 - **Aprobación de Joan:** pendiente.

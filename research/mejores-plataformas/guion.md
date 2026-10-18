@@ -4,7 +4,7 @@ Encargo de Joan (15/10/2026, 10:28): con todo el material de las reseñas de cad
 
 - **Canal:** SonorBooks España. **Formato:** 16:9, 2560×1440, 50 fps, 8:36. Mismo sistema que las reseñas (Remotion, voz «Martin Osborne» `eleven_v4` a 1,13, música por secciones, efectos al fotograma).
 - **Material:** rama `mejores-plataformas` (parte de `resena-audiobooks` + BookBeat, ElevenReader, LibriVox, eBiblio y, desde el 18/10, las tomas de la app de la reseña de Spotify, rama `resena-spotify`). Datos: los guiones y dossieres de cada reseña (10–15/10) y una comprobación nueva del 15/10.
-- **Once reseñas:** desde el 15/10 Spotify también tiene reseña (rama `resena-spotify`, sin publicar el 18/10), así que el vídeo habla de «once plataformas reseñadas» y su escena usa la app real. **Kobo Plus** se queda fuera (sin reseña, y su web y su prueba no se pudieron comprobar).
+- **Once reseñas:** desde el 15/10 Spotify también tiene reseña (rama `resena-spotify`; en YouTube desde el 18/10, 5dKjJSF9knU), así que el vídeo habla de «once plataformas reseñadas» y su escena usa la app real. **Kobo Plus** se queda fuera (sin reseña, y su web y su prueba no se pudieron comprobar).
 - **Afiliación:** el vídeo lleva enlaces de afiliado en la descripción → «Incluye promoción pagada». Reglas heredadas: no decir «busca en SonorBooks si tu libro está en Storytel/BookBeat»; sin venta agresiva.
 
 ## Comprobado el 15/10/2026 (cambios frente a las reseñas)
