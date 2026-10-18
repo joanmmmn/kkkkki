@@ -39,7 +39,10 @@ gratis · cierre (las once reseñas, el artículo y SonorBooks).
 - **Render:** a 2560×1440 por tramos de 2.000 fotogramas (`tools/render_chunks.sh`, ahora con tramos atómicos y `LIMIT=N` para
   lotes) y máster a −14 LUFS (`tools/master.sh`).
 - **Control de calidad:** `tools/qa_frames.py` en los 13 tramos: ningún fotograma con fallo · hojas de fotogramas del máster (dos
-  por escena) · Whisper sobre la mezcla final (`tools/qa_mix.py`, resultado abajo) · sonoridad −14,2 LUFS y pico −1,8 dBFS.
+  por escena) · Whisper sobre la mezcla final (`tools/qa_mix.py`): se entiende todo sobre la música, el 91,4 % de las 1.244
+  palabras del guion; lo que «falta» son cifras (Whisper las escribe en número) y grafías de marcas («Next Story», «11 Reader»,
+  «He Biblio», «Becker», «Enduo»). En Z19, en una pasada oyó «Audioball» por «Audible»; con una ventana más corta, «Audible», y
+  la locución limpia se transcribe bien · sonoridad −14,2 LUFS y pico −1,8 dBFS.
 
 ## Decisiones
 
