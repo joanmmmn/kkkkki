@@ -1,0 +1,55 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 22086,
+ "end_frame": 25502,
+ "levels": [
+  -17.0
+ ],
+ "tail": false,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic fantasy score for a premium YouTube countdown of the best fantasy stories",
+   "key of D minor, around 88 BPM unless stated otherwise",
+   "warm orchestral strings, harp arpeggios, celesta and glockenspiel sparkles, soft french horns, wooden flutes, gentle frame drums",
+   "magical, adventurous and full of wonder, elegant and premium, never cheesy",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "whispers",
+   "EDM",
+   "dubstep",
+   "distortion",
+   "trap hi-hat rolls",
+   "electric guitar",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle",
+   "comedic",
+   "horror",
+   "jump scare stingers"
+  ],
+  "sections": [
+   {
+    "section_name": "Release 1",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "release after the journey: calm warm felt piano, harp and soft strings, gentle and hopeful, D major, 76 BPM",
+     "warm and reassuring",
+     "ends on a sustained final chord with a natural soft tail"
+    ],
+    "negative_local_styles": [
+     "minor key",
+     "drums",
+     "abrupt cut",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 74320,
+    "lines": []
+   }
+  ]
+ }
+}
