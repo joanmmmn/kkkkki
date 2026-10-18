@@ -1,0 +1,75 @@
+{
+ "id": "X112A",
+ "hash": "split:ec5ce7da8c2a",
+ "text": "Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis.",
+ "duration": 5.277,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "lo",
+   "s": 0.16,
+   "e": 0.24
+  },
+  {
+   "w": "mejor:",
+   "s": 0.32,
+   "e": 1.04
+  },
+  {
+   "w": "puedes",
+   "s": 1.093,
+   "e": 1.28
+  },
+  {
+   "w": "empezar",
+   "s": 1.36,
+   "e": 1.72
+  },
+  {
+   "w": "a",
+   "s": 1.76,
+   "e": 1.813
+  },
+  {
+   "w": "escucharlas",
+   "s": 1.867,
+   "e": 2.48
+  },
+  {
+   "w": "hoy",
+   "s": 2.52,
+   "e": 2.72
+  },
+  {
+   "w": "mismo,",
+   "s": 2.76,
+   "e": 3.4
+  },
+  {
+   "w": "y",
+   "s": 3.44,
+   "e": 3.52
+  },
+  {
+   "w": "casi",
+   "s": 3.6,
+   "e": 3.84
+  },
+  {
+   "w": "todas,",
+   "s": 3.96,
+   "e": 4.8
+  },
+  {
+   "w": "gratis.",
+   "s": 5.12,
+   "e": 5.48
+  }
+ ],
+ "splitFrom": "X112",
+ "speechEnd": 5.277
+}

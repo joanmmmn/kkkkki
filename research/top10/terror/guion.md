@@ -150,7 +150,18 @@ Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué género
   - El exorcista: Georgetown, «toc toc» en el desván, la cama que levita, la voz y los médicos sin explicación.
   - Todo son ilustraciones propias: nada de fotogramas ni carteles de películas.
 
-## Locución final, tal como suena (de video/public/t10/vo/vo.json, v4; sin cambios en la v5)
+## Cambios de la v6 (18/10, 20:56, indicaciones de Joan)
+Joan: «te enrollas demasiado al final de cada libro con lo de escucharlo, deja eso para el final; en el vídeo solo deja el desplegable de escúchala en SonorBooks… comprime todo eso al máximo hasta el final». Vale para todos los episodios de la serie.
+- Cada libro acaba en el dato (X?3), con el desplegable «Escúchala en SonorBooks · Gratis con prueba» centrado bajo el dato durante unos 2,5 s.
+- Fuera del vídeo largo: X14, X24, X25, X34, X44, X54, X55, X64, X65, X74, X84, X85, X94, X95 y X104. Ya no hay fase de narración (tarjetas de narrador, ediciones, plataformas).
+- El n.º 1 conserva X105 («Escúchalo de noche. Si te atreves.»), que es el cierre dramático, no un argumento de venta.
+- Nueva escena ESCUCHA tras el consejo: las diez en una pantalla, con narrador, nota, duración, versiones extra y el sello «GRATIS CON PRUEBA» (El exorcista, «DE PAGO»).
+  - Su voz es la primera frase de X112 («…y casi todas, gratis»), cortada sin gastar créditos con tools/vo_split.py en X112A / X112B.
+  - La web de SonorBooks (WEB) empieza con X112B («En SonorBooks cada historia tiene su ficha…»).
+- Duración: de 9:49 a 6:55. Música: mismas piezas, reunidas con la nueva línea de tiempo; la del final, estirada al 87 % de tempo (rubberband) para cubrir el cierre.
+- El Short y las miniaturas no cambian.
+
+## Locución final, tal como suena (de video/public/t10/vo/vo.json, v4; sin cambios en la v5; en la v6 el vídeo largo ya no usa X?4/X?5 salvo X105)
 - **X01** Hay historias que asustan.
 - **X02** Y hay historias que, cuando apagas la luz, siguen ahí. Y no te dejan dormir.
 - **X03** Estas son las diez historias de terror que dan miedo de verdad.

@@ -28,12 +28,12 @@ export const wfEnd = (id: string, word: string, nth = 0) => {
 
 export type VoPart = { id: string; at: number };
 export type Tin = 'push' | 'cut' | 'slide' | 'dark';
-export type SceneDef = { id: string; vo: VoPart[]; dur: number; tin: Tin; night?: boolean; book?: number; phases?: { b: string; c: string } };
+export type SceneDef = { id: string; vo: VoPart[]; dur: number; tin: Tin; night?: boolean; book?: number; phases?: { b: string; c?: string } };
 const LEAD = sec(0.2);
 const GAP = sec(0.45);
 const TAIL = sec(0.36);
 
-const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; extra?: number; tin?: Tin; night?: boolean; minDur?: number; book?: number; phases?: { b: string; c: string } } = {}): SceneDef => {
+const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; extra?: number; tin?: Tin; night?: boolean; minDur?: number; book?: number; phases?: { b: string; c?: string } } = {}): SceneDef => {
   const lead = o.lead ?? LEAD;
   const vo: VoPart[] = [];
   let t = lead;
@@ -46,26 +46,29 @@ const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; e
   return { id, vo, dur, tin: o.tin ?? 'push', night: o.night, book: o.book, phases: o.phases };
 };
 
-// Cada libro: título y sinopsis (A) → dato (B) → narración (C). Antes del número, un instante de oscuridad.
-const bookScene = (p: number, ids: string[], b: string, c: string, gaps: number[], extra = 26) =>
-  scene(`B${p}`, ids, { lead: sec(1.15), gaps, extra, tin: 'dark', night: true, book: p, phases: { b, c } });
+// Cada libro: título y sinopsis (A) → dato (B) y la minitarjeta de SonorBooks. Antes del número, un instante de oscuridad.
+// v6 (Joan, 18/10): sin la parte de cómo escucharla al final de cada libro (restaba retención); todo eso, comprimido, al final (ESCUCHA).
+const bookScene = (p: number, ids: string[], b: string, gaps: number[], extra = 48) =>
+  scene(`B${p}`, ids, { lead: sec(1.15), gaps, extra, tin: 'dark', night: true, book: p, phases: { b } });
 
 export const T10_SCENES: SceneDef[] = [
   scene('HOOK', ['X01', 'X02', 'X03'], { lead: sec(1.1), gaps: [0.7, 0.8], extra: 24, night: true }),
   // v4 (Joan, 15/10): sin presentación de la serie; la regla enseña la web de SonorBooks (notas y opiniones).
   scene('REGLA', ['X05', 'X07'], { lead: sec(1.4), gaps: [1.5], extra: 18, night: true, tin: 'cut' }),
-  bookScene(1, ['X11', 'X12', 'X13', 'X14'], 'X13', 'X14', [0.5, 0.75, 0.75]),
-  bookScene(2, ['X21', 'X22', 'X23', 'X24', 'X25'], 'X23', 'X24', [0.5, 0.75, 0.75, 0.55]),
-  bookScene(3, ['X31', 'X32', 'X33', 'X34'], 'X33', 'X34', [0.5, 0.75, 0.75]),
-  bookScene(4, ['X41', 'X42', 'X43', 'X44'], 'X43', 'X44', [0.5, 0.75, 0.75]),
-  bookScene(5, ['X51', 'X52', 'X53', 'X54', 'X55'], 'X53', 'X54', [0.5, 0.75, 0.75, 0.6]),
-  bookScene(6, ['X61', 'X62', 'X63', 'X64', 'X65'], 'X63', 'X64', [0.5, 0.75, 0.75, 0.55]),
-  bookScene(7, ['X71', 'X72', 'X73', 'X74'], 'X73', 'X74', [0.5, 0.75, 0.75]),
-  bookScene(8, ['X81', 'X82', 'X83', 'X84', 'X85'], 'X83', 'X84', [0.5, 0.75, 0.75, 0.45]),
-  bookScene(9, ['X91', 'X92', 'X93', 'X94', 'X95'], 'X93', 'X94', [0.5, 0.75, 0.75, 0.5]),
-  bookScene(10, ['X101', 'X102', 'X103', 'X104', 'X105'], 'X103', 'X104', [0.5, 0.75, 0.75, 0.9], 60),
+  bookScene(1, ['X11', 'X12', 'X13'], 'X13', [0.5, 0.75]),
+  bookScene(2, ['X21', 'X22', 'X23'], 'X23', [0.5, 0.75]),
+  bookScene(3, ['X31', 'X32', 'X33'], 'X33', [0.5, 0.75]),
+  bookScene(4, ['X41', 'X42', 'X43'], 'X43', [0.5, 0.75]),
+  bookScene(5, ['X51', 'X52', 'X53'], 'X53', [0.5, 0.75]),
+  bookScene(6, ['X61', 'X62', 'X63'], 'X63', [0.5, 0.75]),
+  bookScene(7, ['X71', 'X72', 'X73'], 'X73', [0.5, 0.75]),
+  bookScene(8, ['X81', 'X82', 'X83'], 'X83', [0.5, 0.75]),
+  bookScene(9, ['X91', 'X92', 'X93'], 'X93', [0.5, 0.75]),
+  bookScene(10, ['X101', 'X102', 'X103', 'X105'], 'X103', [0.5, 0.75, 1.3], 60),
   scene('TIP', ['X111'], { lead: sec(0.6), extra: 30, night: true, tin: 'cut' }),
-  scene('WEB', ['X112'], { extra: 40 }),
+  // Las diez de un vistazo: narrador, nota, duración y prueba gratis (primera frase de X112, partida con tools/vo_split.py).
+  scene('ESCUCHA', ['X112A'], { lead: sec(0.5), extra: sec(2.4) }),
+  scene('WEB', ['X112B'], { lead: sec(0.3), extra: 40 }),
   scene('COMENT', ['X113'], { extra: 30 }),
   scene('OUTRO', ['X114'], { lead: sec(0.5), minDur: sec(14) }),
 ];

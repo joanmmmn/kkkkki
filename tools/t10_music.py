@@ -111,6 +111,13 @@ def _db(x, a, b):
     return 20 * np.log10(np.sqrt(np.mean(seg ** 2)) + 1e-9) if len(seg) else -120
 
 
+def stretch(x, tempo):
+    pcm = (np.clip(x, -1, 1) * 32767).astype(np.int16).tobytes()
+    out = subprocess.run(['ffmpeg', '-v', 'error', '-f', 's16le', '-ac', '2', '-ar', str(SR), '-i', '-', '-af', f'rubberband=tempo={tempo:.5f}', '-f', 's16le', '-ac', '2', '-ar', str(SR), '-'],
+                         input=pcm, capture_output=True, check=True).stdout
+    return np.frombuffer(out, np.int16).astype(np.float32).reshape(-1, 2) / 32768
+
+
 def lead_trim(x, plan):
     if plan['start_frame'] == 0:
         return 0
@@ -187,6 +194,11 @@ def main():
             pre = 0 if first else round(IN_PRE * SR)
             a = round(plan['start_frame'] / FPS * SR) - pre
             seg = round((plan['end_frame'] - plan['start_frame']) / FPS * SR) + pre
+            # v6: si el vídeo se ha alargado y la última pieza se queda corta, se estira un poco (rubberband, sin cambiar el tono).
+            if last and len(x) < seg + SR:
+                f = len(x) / (seg + SR)
+                x = stretch(x, f)
+                print(f'{name:12} estirada al {f * 100:.1f} % de tempo')
             keep = min(len(x), seg + (0 if last else round(OUT_POST * SR)))
             y = x[:keep].copy()
             if not first:
