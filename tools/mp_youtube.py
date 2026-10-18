@@ -126,7 +126,7 @@ def main():
         '- «Incluye promoción pagada»: sí (enlaces de afiliado en la descripción).',
         '- Lista «Reseñas de Plataformas de Audiolibros» (PLR0jixeiLWVE).',
         '- Subtítulos: `mejores_plataformas.es.srt` (Español, España). Miniatura: `miniatura.png`.',
-        '- Pantalla final en los últimos ~12 s (la marca va en la mitad de arriba): vídeo + suscribirse.',
+        '- Pantalla final en los últimos 7,8 s (desde 8:28,5, el cierre de SonorBooks: el buscador en el centro y la marca arriba; las esquinas de abajo quedan libres): vídeo (la lista de reseñas) + suscribirse.',
         f'- El artículo ({ARTICULO}) tiene que estar publicado antes (pendiente de aprobación).',
         *([] if args.spotify else ['- **Reseña de Spotify:** aún sin publicar, así que no está en la lista de reseñas de la descripción. La voz dice «Las once tienen su reseña en el canal»: publícala antes que este vídeo y regenera con `python3 tools/mp_youtube.py --spotify ID` (o pega a mano `Spotify: https://youtu.be/ID` detrás de BookBeat).']),
     ]
