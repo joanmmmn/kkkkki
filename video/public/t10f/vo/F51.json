@@ -1,0 +1,55 @@
+{
+ "id": "F51",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Número seis: «El nombre del viento», de Patrick Rothfuss.",
+ "duration": 4.573,
+ "speechEnd": 4.323,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.403
+  },
+  {
+   "w": "seis:",
+   "s": 0.471,
+   "e": 0.807
+  },
+  {
+   "w": "«El",
+   "s": 1.094,
+   "e": 1.296
+  },
+  {
+   "w": "nombre",
+   "s": 1.363,
+   "e": 1.767
+  },
+  {
+   "w": "del",
+   "s": 1.834,
+   "e": 2.036
+  },
+  {
+   "w": "viento»,",
+   "s": 2.103,
+   "e": 2.641
+  },
+  {
+   "w": "de",
+   "s": 2.928,
+   "e": 3.063
+  },
+  {
+   "w": "Patrick",
+   "s": 3.13,
+   "e": 3.601
+  },
+  {
+   "w": "Rothfuss.",
+   "s": 3.668,
+   "e": 4.273
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "F81",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Número tres: «Alas de sangre», de Rebecca Yarros.",
+ "duration": 4.035,
+ "speechEnd": 3.785,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.403
+  },
+  {
+   "w": "tres:",
+   "s": 0.471,
+   "e": 0.807
+  },
+  {
+   "w": "«Alas",
+   "s": 1.094,
+   "e": 1.43
+  },
+  {
+   "w": "de",
+   "s": 1.498,
+   "e": 1.632
+  },
+  {
+   "w": "sangre»,",
+   "s": 1.699,
+   "e": 2.237
+  },
+  {
+   "w": "de",
+   "s": 2.525,
+   "e": 2.659
+  },
+  {
+   "w": "Rebecca",
+   "s": 2.726,
+   "e": 3.197
+  },
+  {
+   "w": "Yarros.",
+   "s": 3.264,
+   "e": 3.735
+  }
+ ]
+}

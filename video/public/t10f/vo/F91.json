@@ -1,0 +1,50 @@
+{
+ "id": "F91",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Número dos: «El imperio final», de Brandon Sanderson.",
+ "duration": 4.304,
+ "speechEnd": 4.054,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.403
+  },
+  {
+   "w": "dos:",
+   "s": 0.471,
+   "e": 0.74
+  },
+  {
+   "w": "«El",
+   "s": 1.027,
+   "e": 1.229
+  },
+  {
+   "w": "imperio",
+   "s": 1.296,
+   "e": 1.767
+  },
+  {
+   "w": "final»,",
+   "s": 1.834,
+   "e": 2.305
+  },
+  {
+   "w": "de",
+   "s": 2.592,
+   "e": 2.726
+  },
+  {
+   "w": "Brandon",
+   "s": 2.794,
+   "e": 3.264
+  },
+  {
+   "w": "Sanderson.",
+   "s": 3.332,
+   "e": 4.004
+  }
+ ]
+}

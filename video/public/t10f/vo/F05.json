@@ -1,0 +1,95 @@
+{
+ "id": "F05",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones de miles de oyentes y lectores.",
+ "duration": 7.35,
+ "speechEnd": 7.1,
+ "words": [
+  {
+   "w": "Para",
+   "s": 0.0,
+   "e": 0.269
+  },
+  {
+   "w": "elegirlas,",
+   "s": 0.336,
+   "e": 1.009
+  },
+  {
+   "w": "en",
+   "s": 1.296,
+   "e": 1.43
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.498,
+   "e": 2.17
+  },
+  {
+   "w": "hemos",
+   "s": 2.237,
+   "e": 2.574
+  },
+  {
+   "w": "mirado",
+   "s": 2.641,
+   "e": 3.044
+  },
+  {
+   "w": "las",
+   "s": 3.112,
+   "e": 3.313
+  },
+  {
+   "w": "notas",
+   "s": 3.381,
+   "e": 3.717
+  },
+  {
+   "w": "y",
+   "s": 3.784,
+   "e": 3.904
+  },
+  {
+   "w": "las",
+   "s": 3.971,
+   "e": 4.173
+  },
+  {
+   "w": "opiniones",
+   "s": 4.24,
+   "e": 4.846
+  },
+  {
+   "w": "de",
+   "s": 4.913,
+   "e": 5.047
+  },
+  {
+   "w": "miles",
+   "s": 5.115,
+   "e": 5.451
+  },
+  {
+   "w": "de",
+   "s": 5.518,
+   "e": 5.653
+  },
+  {
+   "w": "oyentes",
+   "s": 5.72,
+   "e": 6.191
+  },
+  {
+   "w": "y",
+   "s": 6.258,
+   "e": 6.378
+  },
+  {
+   "w": "lectores.",
+   "s": 6.445,
+   "e": 7.05
+  }
+ ]
+}

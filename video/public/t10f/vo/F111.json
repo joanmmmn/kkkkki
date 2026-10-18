@@ -1,0 +1,110 @@
+{
+ "id": "F111",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Un consejo: escúchalas mientras caminas, cocinas o vas al trabajo. Son mundos enormes, y así se recorren sin darte cuenta.",
+ "duration": 9.69,
+ "speechEnd": 9.44,
+ "words": [
+  {
+   "w": "Un",
+   "s": 0.0,
+   "e": 0.134
+  },
+  {
+   "w": "consejo:",
+   "s": 0.202,
+   "e": 0.74
+  },
+  {
+   "w": "escúchalas",
+   "s": 1.027,
+   "e": 1.699
+  },
+  {
+   "w": "mientras",
+   "s": 1.767,
+   "e": 2.305
+  },
+  {
+   "w": "caminas,",
+   "s": 2.372,
+   "e": 2.91
+  },
+  {
+   "w": "cocinas",
+   "s": 3.197,
+   "e": 3.668
+  },
+  {
+   "w": "o",
+   "s": 3.735,
+   "e": 3.855
+  },
+  {
+   "w": "vas",
+   "s": 3.922,
+   "e": 4.124
+  },
+  {
+   "w": "al",
+   "s": 4.191,
+   "e": 4.326
+  },
+  {
+   "w": "trabajo.",
+   "s": 4.393,
+   "e": 4.931
+  },
+  {
+   "w": "Son",
+   "s": 5.418,
+   "e": 5.62
+  },
+  {
+   "w": "mundos",
+   "s": 5.687,
+   "e": 6.091
+  },
+  {
+   "w": "enormes,",
+   "s": 6.158,
+   "e": 6.696
+  },
+  {
+   "w": "y",
+   "s": 6.983,
+   "e": 7.103
+  },
+  {
+   "w": "así",
+   "s": 7.171,
+   "e": 7.372
+  },
+  {
+   "w": "se",
+   "s": 7.44,
+   "e": 7.574
+  },
+  {
+   "w": "recorren",
+   "s": 7.641,
+   "e": 8.179
+  },
+  {
+   "w": "sin",
+   "s": 8.247,
+   "e": 8.448
+  },
+  {
+   "w": "darte",
+   "s": 8.516,
+   "e": 8.852
+  },
+  {
+   "w": "cuenta.",
+   "s": 8.919,
+   "e": 9.39
+  }
+ ]
+}

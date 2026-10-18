@@ -1,0 +1,40 @@
+{
+ "id": "F21",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Número nueve: «Circe», de Madeline Miller.",
+ "duration": 3.564,
+ "speechEnd": 3.314,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.403
+  },
+  {
+   "w": "nueve:",
+   "s": 0.471,
+   "e": 0.874
+  },
+  {
+   "w": "«Circe»,",
+   "s": 1.161,
+   "e": 1.699
+  },
+  {
+   "w": "de",
+   "s": 1.987,
+   "e": 2.121
+  },
+  {
+   "w": "Madeline",
+   "s": 2.188,
+   "e": 2.726
+  },
+  {
+   "w": "Miller.",
+   "s": 2.794,
+   "e": 3.264
+  }
+ ]
+}

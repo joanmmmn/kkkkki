@@ -22,7 +22,9 @@ const ctx6 = req.context('../../public/str/vo', false, /[ABC]\d+[A-Z]?\.json$/);
 const ctx7 = req.context('../../public/skg/vo', false, /[GH]\d+[A-Z]?\.json$/);
 // «Los 10 mejores» · Terror (ids X..; Y.. para el vertical).
 const ctx8 = req.context('../../public/t10/vo', false, /[XY]\d+[A-Z]?\.json$/);
-export const VOS: Record<string, VO & { speechEnd?: number }> = {};
+// «Los 10 mejores» · Fantasía (ids F..; J.. para el vertical). Mientras no hay voz, tiempos estimados ("estimate": true).
+const ctx9 = req.context('../../public/t10f/vo', false, /[FJ]\d+[A-Z]?\.json$/);
+export const VOS: Record<string, VO & { speechEnd?: number; estimate?: boolean }> = {};
 for (const k of ctx1.keys()) { const v = ctx1(k); VOS[v.id] = v; }
 for (const k of ctx2.keys()) { const v = ctx2(k); VOS[v.id] = v; }
 for (const k of ctx3.keys()) { const v = ctx3(k); VOS[v.id] = v; }
@@ -31,9 +33,12 @@ for (const k of ctx5.keys()) { const v = ctx5(k); VOS[v.id] = v; }
 for (const k of ctx6.keys()) { const v = ctx6(k); VOS[v.id] = v; }
 for (const k of ctx7.keys()) { const v = ctx7(k); VOS[v.id] = v; }
 for (const k of ctx8.keys()) { const v = ctx8(k); VOS[v.id] = v; }
+for (const k of ctx9.keys()) { const v = ctx9(k); VOS[v.id] = v; }
 
-const dirOf = (id: string) => (/^[XY]\d/.test(id) ? 't10/vo' : /^[GH]\d/.test(id) ? 'skg/vo' : /^[ABC]\d/.test(id) ? 'str/vo' : /^[KLM]\d/.test(id) ? 'pdr/vo' : /^[RPQ]\d/.test(id) ? 'nxr/vo' : /^[NT]\d/.test(id) ? 'nx/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
+const dirOf = (id: string) => (/^[FJ]\d/.test(id) ? 't10f/vo' : /^[XY]\d/.test(id) ? 't10/vo' : /^[GH]\d/.test(id) ? 'skg/vo' : /^[ABC]\d/.test(id) ? 'str/vo' : /^[KLM]\d/.test(id) ? 'pdr/vo' : /^[RPQ]\d/.test(id) ? 'nxr/vo' : /^[NT]\d/.test(id) ? 'nx/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
 export const voSrc = (id: string) => staticFile(`${dirOf(id)}/${id}.mp3`);
+// Locución con tiempos estimados (sin audio todavía).
+export const voEstimate = (id: string) => Boolean(VOS[id]?.estimate);
 export const voFrames = (id: string) => Math.ceil((VOS[id]?.duration ?? 3) * FPS);
 // Duración hasta el final real de la voz (sin el silencio final del archivo).
 export const voSpeechFrames = (id: string) => Math.ceil((VOS[id]?.speechEnd ?? VOS[id]?.duration ?? 3) * FPS);

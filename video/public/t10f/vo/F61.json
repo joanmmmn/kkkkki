@@ -1,0 +1,55 @@
+{
+ "id": "F61",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Número cinco: «Olvidado rey Gudú», de Ana María Matute.",
+ "duration": 4.439,
+ "speechEnd": 4.189,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.403
+  },
+  {
+   "w": "cinco:",
+   "s": 0.471,
+   "e": 0.874
+  },
+  {
+   "w": "«Olvidado",
+   "s": 1.161,
+   "e": 1.767
+  },
+  {
+   "w": "rey",
+   "s": 1.834,
+   "e": 2.036
+  },
+  {
+   "w": "Gudú»,",
+   "s": 2.103,
+   "e": 2.506
+  },
+  {
+   "w": "de",
+   "s": 2.794,
+   "e": 2.928
+  },
+  {
+   "w": "Ana",
+   "s": 2.995,
+   "e": 3.197
+  },
+  {
+   "w": "María",
+   "s": 3.264,
+   "e": 3.601
+  },
+  {
+   "w": "Matute.",
+   "s": 3.668,
+   "e": 4.139
+  }
+ ]
+}

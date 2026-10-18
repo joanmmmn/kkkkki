@@ -1,0 +1,262 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.05
+ },
+ "scenes": [
+  {
+   "id": "F01",
+   "text": "Hay historias que se leen."
+  },
+  {
+   "id": "F02",
+   "text": "Y hay historias que te llevan tan lejos que, cuando vuelves, ya no eres el mismo."
+  },
+  {
+   "id": "F03",
+   "text": "Estas son las diez historias de fantasía de las que no vas a querer salir."
+  },
+  {
+   "id": "F05",
+   "text": "Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones de miles de oyentes y lectores.",
+   "say": "Para elegirlas, en Sónorbuks hemos mirado las notas y las opiniones de miles de oyentes y lectores."
+  },
+  {
+   "id": "F07",
+   "text": "Vamos de la más ligera a la más épica."
+  },
+  {
+   "id": "F11",
+   "text": "Número diez: «Alicia en el País de las Maravillas», de Lewis Carroll.",
+   "say": "Número diez: «Alicia en el País de las Maravillas», de Lúis Cárrol."
+  },
+  {
+   "id": "F12",
+   "text": "Una tarde de verano, Alicia ve pasar un conejo blanco con chaleco y reloj de bolsillo. Lo sigue por una madriguera y cae a un mundo donde encoge y crece según lo que come, toma el té con un sombrerero loco y una reina no para de gritar: «¡Que le corten la cabeza!»"
+  },
+  {
+   "id": "F13",
+   "text": "Carroll se la inventó en una excursión en barca, en mil ochocientos sesenta y dos, para entretener a tres hermanas. La pequeña Alice le pidió que se la escribiera. Tres años después, era un libro.",
+   "say": "Cárrol se la inventó en una excursión en barca, en mil ochocientos sesenta y dos, para entretener a tres hermanas. La pequeña Ális le pidió que se la escribiera. Tres años después, era un libro."
+  },
+  {
+   "id": "F14",
+   "text": "En castellano lo narra Michelle Jenner, y los oyentes le dan un cuatro coma ocho a la narración: dicen que hasta canta las canciones. Dura poco más de tres horas, y lo puedes empezar hoy mismo, gratis.",
+   "say": "En castellano lo narra Michel Yéner, y los oyentes le dan un cuatro coma ocho a la narración: dicen que hasta canta las canciones. Dura poco más de tres horas, y lo puedes empezar hoy mismo, gratis."
+  },
+  {
+   "id": "F21",
+   "text": "Número nueve: «Circe», de Madeline Miller.",
+   "say": "Número nueve: «Circe», de Mádelin Míler."
+  },
+  {
+   "id": "F22",
+   "text": "Hija del dios del Sol, Circe nace sin el poder de su padre ni la belleza de su madre. Hasta que descubre la brujería. Los dioses la destierran a una isla, y allí, sola, se convierte en la hechicera que temen los marineros."
+  },
+  {
+   "id": "F23",
+   "text": "Madeline Miller daba clases de latín y griego. En la «Odisea», Circe es solo la bruja que convierte en cerdos a los hombres de Ulises. Miller le dejó contar su versión, y la novela llegó al número uno del New York Times.",
+   "say": "Mádelin Míler daba clases de latín y griego. En la «Odisea», Circe es solo la bruja que convierte en cerdos a los hombres de Ulises. Míler le dejó contar su versión, y la novela llegó al número uno del Niu Iork Taims."
+  },
+  {
+   "id": "F24",
+   "text": "Sonia Román la narra serena, con un tono muy personal, y los oyentes le dan un cuatro coma siete a la narración. Y la puedes empezar hoy mismo, gratis."
+  },
+  {
+   "id": "F31",
+   "text": "Número ocho: «Harry Potter y la piedra filosofal», de J. K. Rowling.",
+   "say": "Número ocho: «Jarry Póter y la piedra filosofal», de Jota Ka Róulin."
+  },
+  {
+   "id": "F32",
+   "text": "Harry vive en una alacena, bajo la escalera de sus tíos. El día que cumple once años, un gigante echa la puerta abajo y le dice que es un mago. Le espera un colegio en un castillo… y alguien que quiere robar una piedra capaz de dar la vida eterna.",
+   "say": "Jarry vive en una alacena, bajo la escalera de sus tíos. El día que cumple once años, un gigante echa la puerta abajo y le dice que es un mago. Le espera un colegio en un castillo… y alguien que quiere robar una piedra capaz de dar la vida eterna."
+  },
+  {
+   "id": "F33",
+   "text": "Lo rechazaron una docena de editoriales. La que por fin lo publicó lo hizo porque la hija del fundador, de ocho años, leyó el primer capítulo y pidió más."
+  },
+  {
+   "id": "F34",
+   "text": "En castellano lo narra Leonor Watling, y es la más valorada de esta lista: un cuatro coma nueve, con casi tres mil valoraciones. Y lo puedes empezar hoy mismo, gratis.",
+   "say": "En castellano lo narra Leonor Uátlin, y es la más valorada de esta lista: un cuatro coma nueve, con casi tres mil valoraciones. Y lo puedes empezar hoy mismo, gratis."
+  },
+  {
+   "id": "F41",
+   "text": "Número siete: «El Hobbit», de J. R. R. Tolkien.",
+   "say": "Número siete: «El Jóbit», de Jota Erre Erre Tólkien."
+  },
+  {
+   "id": "F42",
+   "text": "Bilbo Bolsón vive tranquilo en su agujero hobbit. Hasta que un mago y trece enanos se presentan en su casa para llevárselo a recuperar un tesoro. Un tesoro que ya tiene dueño: un dragón.",
+   "say": "Bilbo Bolsón vive tranquilo en su agujero jóbit. Hasta que un mago y trece enanos se presentan en su casa para llevárselo a recuperar un tesoro. Un tesoro que ya tiene dueño: un dragón."
+  },
+  {
+   "id": "F43",
+   "text": "Tolkien lo empezó casi por casualidad: corrigiendo exámenes, encontró una hoja en blanco y escribió: «En un agujero en el suelo vivía un hobbit». Luego tuvo que averiguar qué era un hobbit.",
+   "say": "Tólkien lo empezó casi por casualidad: corrigiendo exámenes, encontró una hoja en blanco y escribió: «En un agujero en el suelo vivía un jóbit». Luego tuvo que averiguar qué era un jóbit."
+  },
+  {
+   "id": "F44",
+   "text": "Aquí hay dos voces. En Audible, Javier Gutiérrez, ganador de dos Goya, que interpreta a cada personaje, enanos incluidos: un cuatro coma ocho con más de quinientas valoraciones.",
+   "say": "Aquí hay dos voces. En Áudibol, Javier Gutiérrez, ganador de dos Goya, que interpreta a cada personaje, enanos incluidos: un cuatro coma ocho con más de quinientas valoraciones."
+  },
+  {
+   "id": "F45",
+   "text": "Si prefieres una lectura más clásica, Miguel Ángel Jenner lo narra en Storytel, Nextory y Podimo. Las dos, gratis con prueba.",
+   "say": "Si prefieres una lectura más clásica, Miguel Ángel Yéner lo narra en Stóritel, Néxtori y Pódimo. Las dos, gratis con prueba."
+  },
+  {
+   "id": "F51",
+   "text": "Número seis: «El nombre del viento», de Patrick Rothfuss.",
+   "say": "Número seis: «El nombre del viento», de Pátrik Rótfus."
+  },
+  {
+   "id": "F52",
+   "text": "En una posada perdida, un posadero pelirrojo sirve cerveza sin llamar la atención. Pero un cronista lo ha encontrado y sabe quién es en realidad: el héroe de mil leyendas. Durante tres días, va a contar su verdadera historia."
+  },
+  {
+   "id": "F53",
+   "text": "Rothfuss la empezó a escribir en la universidad, y varias editoriales la rechazaron. Cuando por fin se publicó, en dos mil siete, ganó el premio Quill y llegó a las listas del New York Times.",
+   "say": "Rótfus la empezó a escribir en la universidad, y varias editoriales la rechazaron. Cuando por fin se publicó, en dos mil siete, ganó el premio Cuil y llegó a las listas del Niu Iork Taims."
+  },
+  {
+   "id": "F54",
+   "text": "Raúl Lloréns la cuenta con calma de juglar, y los oyentes le dan un cuatro coma ocho. Son veintisiete horas, y en SonorBooks te contamos cómo conseguirla gratis.",
+   "say": "Raúl Lloréns la cuenta con calma de juglar, y los oyentes le dan un cuatro coma ocho. Son veintisiete horas, y en Sónorbuks te contamos cómo conseguirla gratis."
+  },
+  {
+   "id": "F61",
+   "text": "Número cinco: «Olvidado rey Gudú», de Ana María Matute."
+  },
+  {
+   "id": "F62",
+   "text": "En el reino de Olar, levantado a base de conquistas y traiciones, nace un príncipe con una maldición: no puede amar. Su madre, la reina Ardid, lo prepara para ser el rey más grande. Y bajo la tierra, en los lagos y en el mar, esperan trasgos, sirenas y piratas."
+  },
+  {
+   "id": "F63",
+   "text": "Matute la empezó a finales de los sesenta y la abandonó durante una larga depresión. La publicó en mil novecientos noventa y seis, veinticinco años después de su anterior novela: casi mil páginas de fantasía escrita en español. Catorce años más tarde, ganó el Premio Cervantes."
+  },
+  {
+   "id": "F64",
+   "text": "Neus Sendra la narra entera, casi treinta y cinco horas, y los oyentes le dan un cuatro coma nueve a la narración. Y la puedes empezar hoy mismo, gratis."
+  },
+  {
+   "id": "F71",
+   "text": "Número cuatro: «Memorias de Idhún», de Laura Gallego.",
+   "say": "Número cuatro: «Memorias de Idún», de Laura Gallego."
+  },
+  {
+   "id": "F72",
+   "text": "Jack tiene trece años. Una noche vuelve a casa y encuentra a sus padres asesinados. El culpable es Kirtash, un asesino llegado de Idhún, un mundo con tres soles y tres lunas donde los dragones y los unicornios han sido exterminados. Para detenerlo, Jack se une a la Resistencia.",
+   "say": "Yak tiene trece años. Una noche vuelve a casa y encuentra a sus padres asesinados. El culpable es Kírtash, un asesino llegado de Idún, un mundo con tres soles y tres lunas donde los dragones y los unicornios han sido exterminados. Para detenerlo, Yak se une a la Resistencia."
+  },
+  {
+   "id": "F73",
+   "text": "Laura Gallego ha vendido más de un millón de ejemplares de esta trilogía, y Netflix la convirtió en serie de animación en dos mil veinte.",
+   "say": "Laura Gallego ha vendido más de un millón de ejemplares de esta trilogía, y Nétflix la convirtió en serie de animación en dos mil veinte."
+  },
+  {
+   "id": "F74",
+   "text": "En audio la cuentan diez voces, una para cada personaje, e incluso a quien no conecta con la historia le parece una de las mejores narraciones que ha escuchado: un cuatro coma ocho. Y la puedes empezar hoy mismo, gratis."
+  },
+  {
+   "id": "F81",
+   "text": "Número tres: «Alas de sangre», de Rebecca Yarros.",
+   "say": "Número tres: «Alas de sangre», de Rebeca Yárros."
+  },
+  {
+   "id": "F82",
+   "text": "Violet iba a ser escriba. Pero su madre, la general, la obliga a entrar en el Colegio de Guerra de Basgiath, donde los cadetes se juegan la vida para que un dragón los elija. Y donde muchos la quieren muerta.",
+   "say": "Váiolet iba a ser escriba. Pero su madre, la general, la obliga a entrar en el Colegio de Guerra de Básguiaz, donde los cadetes se juegan la vida para que un dragón los elija. Y donde muchos la quieren muerta."
+  },
+  {
+   "id": "F83",
+   "text": "Entró directa al número uno del New York Times, fue el fenómeno del año en las redes, y Prime Video ya prepara la serie.",
+   "say": "Entró directa al número uno del Niu Iork Taims, fue el fenómeno del año en las redes, y Praim Vídeo ya prepara la serie."
+  },
+  {
+   "id": "F84",
+   "text": "Para vivirla de verdad, la versión dramatizada: más de treinta actores y efectos de sonido, como una película, y un cuatro coma ocho. Eso sí, no sigue la traducción del libro, y algún nombre te sonará distinto."
+  },
+  {
+   "id": "F85",
+   "text": "Si la prefieres tal cual, la versión íntegra suma más de mil cuatrocientas valoraciones. Las dos, gratis con prueba."
+  },
+  {
+   "id": "F91",
+   "text": "Número dos: «El imperio final», de Brandon Sanderson.",
+   "say": "Número dos: «El imperio final», de Brándon Sánderson."
+  },
+  {
+   "id": "F92",
+   "text": "Hace mil años, el héroe que debía salvar el mundo fracasó. Desde entonces reina un dios inmortal, del cielo cae ceniza y, de noche, todo se cubre de niebla. Vin, una ladrona callejera, descubre que puede tragar metales y quemarlos para conseguir poderes. Y una banda de ladrones la necesita para derribar al dios."
+  },
+  {
+   "id": "F93",
+   "text": "Sanderson es un fenómeno: en dos mil veintidós pidió dinero en Kickstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Es el proyecto más financiado de la historia de la plataforma.",
+   "say": "Sánderson es un fenómeno: en dos mil veintidós pidió dinero en Kíkstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Es el proyecto más financiado de la historia de la plataforma."
+  },
+  {
+   "id": "F94",
+   "text": "Francesc Belda pone una voz distinta a cada personaje, y los oyentes le dan un cuatro coma nueve. Son veinticuatro horas, y en SonorBooks te contamos cómo conseguirla gratis.",
+   "say": "Francesc Belda pone una voz distinta a cada personaje, y los oyentes le dan un cuatro coma nueve. Son veinticuatro horas, y en Sónorbuks te contamos cómo conseguirla gratis."
+  },
+  {
+   "id": "F101",
+   "text": "Número uno: «El Señor de los Anillos», de J. R. R. Tolkien.",
+   "say": "Número uno: «El Señor de los Anillos», de Jota Erre Erre Tólkien."
+  },
+  {
+   "id": "F102",
+   "text": "Frodo hereda de su tío Bilbo un anillo de oro. Un mago le revela la verdad: es el Anillo Único, el arma del Señor Oscuro. Y la única forma de destruirlo es llevarlo hasta el fuego donde se forjó, en el corazón de Mordor."
+  },
+  {
+   "id": "F103",
+   "text": "Tolkien tardó doce años en escribirla, y la editorial la partió en tres tomos para abaratarla. Él siempre insistió en que no era una trilogía, sino una sola novela.",
+   "say": "Tólkien tardó doce años en escribirla, y la editorial la partió en tres tomos para abaratarla. Él siempre insistió en que no era una trilogía, sino una sola novela."
+  },
+  {
+   "id": "F104",
+   "text": "La narran Miguel Ángel Jenner, que puso voz a Gimli en las películas, y Nuria Mediavilla, hija de Pepe Mediavilla, la voz de Gandalf. Un cuatro coma nueve con casi mil cuatrocientas valoraciones.",
+   "say": "La narran Miguel Ángel Yéner, que puso voz a Guimli en las películas, y Nuria Mediavilla, hija de Pepe Mediavilla, la voz de Gándalf. Un cuatro coma nueve con casi mil cuatrocientas valoraciones."
+  },
+  {
+   "id": "F105",
+   "text": "Son tres libros y más de sesenta horas. El viaje más largo de la lista… y del que menos vas a querer volver."
+  },
+  {
+   "id": "F111",
+   "text": "Un consejo: escúchalas mientras caminas, cocinas o vas al trabajo. Son mundos enormes, y así se recorren sin darte cuenta."
+  },
+  {
+   "id": "F112",
+   "text": "Y lo mejor: todas las puedes empezar hoy mismo, gratis. En SonorBooks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al play y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog.",
+   "say": "Y lo mejor: todas las puedes empezar hoy mismo, gratis. En Sónorbuks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al plei y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog."
+  },
+  {
+   "id": "F113",
+   "text": "Y cuéntanos en los comentarios: ¿en qué mundo te quedarías a vivir? ¿Y qué historias quieres que te traigamos después?"
+  },
+  {
+   "id": "F114",
+   "text": "Tu próxima historia te está esperando."
+  },
+  {
+   "id": "J01",
+   "text": "Número uno de las historias de fantasía de las que no vas a querer salir: «El Señor de los Anillos», de J. R. R. Tolkien.",
+   "say": "Número uno de las historias de fantasía de las que no vas a querer salir: «El Señor de los Anillos», de Jota Erre Erre Tólkien."
+  },
+  {
+   "id": "J02",
+   "text": "Las otras nueve, en el vídeo completo."
+  }
+ ]
+}

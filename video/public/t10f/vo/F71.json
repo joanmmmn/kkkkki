@@ -1,0 +1,50 @@
+{
+ "id": "F71",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Número cuatro: «Memorias de Idhún», de Laura Gallego.",
+ "duration": 4.304,
+ "speechEnd": 4.054,
+ "words": [
+  {
+   "w": "Número",
+   "s": 0.0,
+   "e": 0.403
+  },
+  {
+   "w": "cuatro:",
+   "s": 0.471,
+   "e": 0.941
+  },
+  {
+   "w": "«Memorias",
+   "s": 1.229,
+   "e": 1.834
+  },
+  {
+   "w": "de",
+   "s": 1.901,
+   "e": 2.036
+  },
+  {
+   "w": "Idhún»,",
+   "s": 2.103,
+   "e": 2.574
+  },
+  {
+   "w": "de",
+   "s": 2.861,
+   "e": 2.995
+  },
+  {
+   "w": "Laura",
+   "s": 3.063,
+   "e": 3.399
+  },
+  {
+   "w": "Gallego.",
+   "s": 3.466,
+   "e": 4.004
+  }
+ ]
+}

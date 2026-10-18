@@ -1,0 +1,45 @@
+{
+ "id": "J02",
+ "hash": "estimate",
+ "estimate": true,
+ "text": "Las otras nueve, en el vídeo completo.",
+ "duration": 3.075,
+ "speechEnd": 2.825,
+ "words": [
+  {
+   "w": "Las",
+   "s": 0.0,
+   "e": 0.202
+  },
+  {
+   "w": "otras",
+   "s": 0.269,
+   "e": 0.605
+  },
+  {
+   "w": "nueve,",
+   "s": 0.672,
+   "e": 1.076
+  },
+  {
+   "w": "en",
+   "s": 1.363,
+   "e": 1.498
+  },
+  {
+   "w": "el",
+   "s": 1.565,
+   "e": 1.699
+  },
+  {
+   "w": "vídeo",
+   "s": 1.767,
+   "e": 2.103
+  },
+  {
+   "w": "completo.",
+   "s": 2.17,
+   "e": 2.775
+  }
+ ]
+}
