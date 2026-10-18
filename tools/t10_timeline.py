@@ -35,7 +35,7 @@ def scene(sid, ids, lead=None, gaps=(), extra=0, min_dur=0, book=None, night=Fal
     return {'id': sid, 'vo': vo, 'dur': int(max(min_dur, t + TAIL + extra)), 'book': book, 'night': night}
 
 
-def book(p, ids, gaps, extra=26):
+def book(p, ids, gaps, extra=48):
     return scene(f'B{p}', ids, lead=sec(1.15), gaps=gaps, extra=extra, book=p, night=True)
 
 
@@ -43,18 +43,11 @@ def parse():
     out = [
         scene('HOOK', ['X01', 'X02', 'X03'], lead=sec(1.1), gaps=[0.7, 0.8], extra=24, night=True),
         scene('REGLA', ['X05', 'X07'], lead=sec(1.4), gaps=[1.5], extra=18, night=True),
-        book(1, ['X11', 'X12', 'X13', 'X14'], [0.5, 0.75, 0.75]),
-        book(2, ['X21', 'X22', 'X23', 'X24', 'X25'], [0.5, 0.75, 0.75, 0.55]),
-        book(3, ['X31', 'X32', 'X33', 'X34'], [0.5, 0.75, 0.75]),
-        book(4, ['X41', 'X42', 'X43', 'X44'], [0.5, 0.75, 0.75]),
-        book(5, ['X51', 'X52', 'X53', 'X54', 'X55'], [0.5, 0.75, 0.75, 0.6]),
-        book(6, ['X61', 'X62', 'X63', 'X64', 'X65'], [0.5, 0.75, 0.75, 0.55]),
-        book(7, ['X71', 'X72', 'X73', 'X74'], [0.5, 0.75, 0.75]),
-        book(8, ['X81', 'X82', 'X83', 'X84', 'X85'], [0.5, 0.75, 0.75, 0.45]),
-        book(9, ['X91', 'X92', 'X93', 'X94', 'X95'], [0.5, 0.75, 0.75, 0.5]),
-        book(10, ['X101', 'X102', 'X103', 'X104', 'X105'], [0.5, 0.75, 0.75, 0.9], extra=60),
+        *[book(p, [f'X{p}1', f'X{p}2', f'X{p}3'], [0.5, 0.75]) for p in range(1, 10)],
+        book(10, ['X101', 'X102', 'X103', 'X105'], [0.5, 0.75, 1.3], extra=60),
         scene('TIP', ['X111'], lead=sec(0.6), extra=30, night=True),
-        scene('WEB', ['X112'], extra=40),
+        scene('ESCUCHA', ['X112A'], lead=sec(0.5), extra=sec(2.4)),
+        scene('WEB', ['X112B'], lead=sec(0.3), extra=40),
         scene('COMENT', ['X113'], extra=30),
         scene('OUTRO', ['X114'], lead=sec(0.5), min_dur=sec(14)),
     ]

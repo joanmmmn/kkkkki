@@ -1,6 +1,8 @@
-# Los 10 mejores · Terror — textos para YouTube y redes (v4, 15/10/2026)
+# Los 10 mejores · Terror — textos para YouTube y redes (v6, 18/10/2026)
 
 Enfoque (Joan, 15/10): se vende como **historias de terror**, no como libros ni como audiolibros. SonorBooks entra poco a poco y siempre por el beneficio de quien lo ve: escucharlas gratis y hoy mismo.
+
+v6 (Joan, 18/10): cada historia termina en su dato curioso con el desplegable «Escúchala en SonorBooks»; lo de cómo escucharlas (narradores, notas, versiones, pruebas) va comprimido en una pantalla al final. Vídeo de 6:55.
 
 ## Título
 **Recomendado:** 10 historias de terror que dan miedo de verdad
@@ -15,16 +17,16 @@ Diez historias de terror que dan miedo de verdad, de menos a más miedo: Lovecra
 
 0:00 10 historias de terror que dan miedo de verdad
 0:27 10. La llamada de Cthulhu (H. P. Lovecraft)
-1:13 9. Cuentos de Edgar Allan Poe
-2:04 8. Cómo vender una casa encantada (Grady Hendrix)
-2:48 7. Distancia de rescate (Samanta Schweblin)
-3:30 6. Drácula (Bram Stoker)
-4:31 5. Apocalipsis Z (Manel Loureiro)
-5:24 4. Carcoma (Layla Martínez)
-6:16 3. El misterio de Salem's Lot (Stephen King)
-7:13 2. Nuestra parte de noche (Mariana Enriquez)
-8:05 1. El exorcista (William Peter Blatty)
-8:57 Cómo escucharlas gratis
+1:00 9. Cuentos de Edgar Allan Poe
+1:30 8. Cómo vender una casa encantada (Grady Hendrix)
+2:02 7. Distancia de rescate (Samanta Schweblin)
+2:32 6. Drácula (Bram Stoker)
+3:07 5. Apocalipsis Z (Manel Loureiro)
+3:35 4. Carcoma (Layla Martínez)
+4:13 3. El misterio de Salem's Lot (Stephen King)
+4:45 2. Nuestra parte de noche (Mariana Enriquez)
+5:17 1. El exorcista (William Peter Blatty)
+6:00 Cómo escucharlas gratis
 
 Escúchalas en SonorBooks:
 10. La llamada de Cthulhu: https://sonorbooks.com/es/audiolibro/la-llamada-de-cthulhu-0226b70624/
