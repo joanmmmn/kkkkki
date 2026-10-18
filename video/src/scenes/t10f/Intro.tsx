@@ -32,7 +32,7 @@ const Candle: React.FC<{ x: number; y: number; s?: number; seed: string }> = ({ 
     </div>
   );
 };
-const OpenBook: React.FC<{ glow: number; w?: number }> = ({ glow, w = 760 }) => {
+export const OpenBook: React.FC<{ glow: number; w?: number }> = ({ glow, w = 760 }) => {
   const h = w * 0.36;
   return (
     <div style={{ position: 'relative', width: w, height: h, perspective: 1600 }}>
@@ -53,7 +53,7 @@ const OpenBook: React.FC<{ glow: number; w?: number }> = ({ glow, w = 760 }) => 
   );
 };
 // Dragón en silueta (genérico), de perfil, con las alas que baten.
-const Dragon: React.FC<{ s?: number; flap: number; c?: string }> = ({ s = 1, flap, c = '#05060c' }) => {
+export const Dragon: React.FC<{ s?: number; flap: number; c?: string }> = ({ s = 1, flap, c = '#05060c' }) => {
   const wy = 40 * flap;
   return (
     <svg width={420 * s} height={220 * s} viewBox="0 0 420 220" style={{ overflow: 'visible' }}>
@@ -134,7 +134,9 @@ export const Hook: React.FC = () => {
               <div style={{ position: 'absolute', left: 580, top: 560 }}><OpenBook glow={glow} /></div>
               <Candle x={380} y={700} s={1.1} seed="hookc" />
             </AbsoluteFill>
-            <div style={{ position: 'absolute', left: 0, right: 0, top: 850, textAlign: 'center', opacity: 1 - dive * 3 }}>
+            {/* el rótulo, sobre la estantería (encima de las páginas iluminadas no se leía) */}
+            <div style={{ position: 'absolute', left: 360, right: 360, top: 250, height: 200, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(5,6,14,0.75) 0%, rgba(5,6,14,0) 70%)', opacity: 1 - dive * 3 }} />
+            <div style={{ position: 'absolute', left: 0, right: 0, top: 300, textAlign: 'center', opacity: 1 - dive * 3, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
               <MaskTitle text="Hay historias que se leen." at={f1} size={92} color={BONE} align="center" />
             </div>
             <AbsoluteFill style={{ background: `rgba(255,240,210,${(0.9 * dive).toFixed(3)})` }} />

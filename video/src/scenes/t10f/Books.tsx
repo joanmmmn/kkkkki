@@ -9,7 +9,7 @@ import { FACTS } from './Facts';
 import { sceneClock, sceneDef } from './timeline';
 import { Ambient, camAt, CamKey, camStyle, COVERS, Cover3D, CoverStrip, coverSrc, countTo, DIGITS_W, KWords, lerp, ramp, sceneLevel, shakes, sp, VoiceBars } from './fx';
 
-export const vid = (p: number, k: number) => `X${p}${k}`;
+export const vid = (p: number, k: number) => `F${p}${k}`;
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 const hasWord = (vo: string, w: string) => Boolean(VOS[vo]?.words.some((x) => norm(x.w).startsWith(norm(w))));
 
@@ -150,8 +150,10 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
   const fTitle = c.at(v1, TITLE_WORD[p]);
   const fA2 = c.part(v2) - 10;
   const fB = c.part(def.phases!.b) - 12;
-  const fC = c.part(def.phases!.c) - 12;
-  const narrIds = def.vo.map((v) => v.id).slice(def.vo.findIndex((v) => v.id === def.phases!.c));
+  // v6: sin fase C (la narración) — el libro acaba en el dato con la minitarjeta de SonorBooks; lo de escucharla va al final del vídeo.
+  const hasC = Boolean(def.phases!.c);
+  const fC = hasC ? c.part(def.phases!.c!) - 12 : c.dur + 1000;
+  const narrIds = hasC ? def.vo.map((v) => v.id).slice(def.vo.findIndex((v) => v.id === def.phases!.c)) : [];
   const last = p === 10 ? c.part('F105') : c.dur + 100;
   const level = (f: number) => sceneLevel(id, f);
 
@@ -205,12 +207,12 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
     return hasWord(vo, 'coma') ? c.at(vo, 'cuatro') - 6 : cardAt(i) + 24;
   };
   const lastNarr = narrIds.filter((v) => v !== 'F105').slice(-1)[0];
-  const miniAt = Math.min(c.voEnd(lastNarr) - 50, (p === 10 ? last : c.dur) - 150);
+  const miniAt = hasC ? Math.min(c.voEnd(lastNarr) - 50, (p === 10 ? last : c.dur) - 150) : c.voEnd(def.phases!.b) - 75;
   const second = cards > 1 ? sp(frame, cardAt(1) - 6, 14, 120) : 0;
   const active = cards > 1 && frame >= cardAt(1) - 6 ? 1 : 0;
   const cv = sp(frame, fC - 2, 14, 100);
   const lv = level(frame);
-  const camC = ramp(frame, fC, c.dur, (x) => x);
+  const camC = hasC ? ramp(frame, fC, c.dur, (x) => x) : 0;
 
   // ——— Cabecera pequeña (A2/B) ———
   const head = sp(frame, fA2 + 4, 15, 160);
@@ -331,7 +333,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
       )}
 
       {/* minitarjeta al final de cada libro: «Escúchala en SonorBooks · gratis con prueba» (El exorcista no entra en ninguna prueba: sin «gratis») */}
-      {cIn > 0 && <ListenCard at={miniAt} free plural={false} out={p === 10 ? last : c.dur - 18} />}
+      {(hasC ? cIn > 0 : frame >= miniAt - 2) && <ListenCard at={miniAt} free plural={false} out={p === 10 ? last : c.dur - 18} center={!hasC} />}
 
       {/* final del n.º 1: los tres tomos y «el viaje más largo de la lista» */}
       {p === 10 && off > 0 && (() => {
@@ -355,7 +357,7 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
             </div>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, letterSpacing: 6, textTransform: 'uppercase', color: DIM, marginTop: 50, opacity: ramp(frame, viaje - 6, viaje + 12) }}>El viaje más largo de la lista</div>
             <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 92, color: color.yellow, marginTop: 18, opacity: ramp(frame, volver - 20, volver + 4), textShadow: '0 0 60px rgba(255,202,5,0.35)',
-              transform: `scale(${(1 + 0.03 * ramp(frame, volver, c.dur)).toFixed(4)})` }}>…y del que no vas a querer volver.</div>
+              transform: `scale(${(1 + 0.03 * ramp(frame, volver, c.dur)).toFixed(4)})` }}>…y del que menos vas a querer volver.</div>
           </AbsoluteFill>
         );
       })()}
@@ -376,13 +378,13 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
       {chips.map((ch, i) => (i > 0 ? <Sfx key={`w${i}`} name="whoosh_soft" at={ch.at - 6} volume={0.22} /> : null))}
       <Sfx name="impact" at={redAt} volume={0.4} />
       <Sfx name={p === 3 || p === 10 || p === 2 ? 'page_turn' : 'card_flip'} at={fB + 6} volume={0.7} />
-      <Sfx name="whoosh_fast" at={fC - 2} volume={0.45} />
-      <Sfx name="click" at={fC + 4} volume={0.5} />
-      {b.narr.map((_, i) => <Sfx key={`n${i}`} name="snap_in" at={cardAt(i)} volume={0.7} />)}
-      {b.narr.map((_, i) => <Sfx key={`r${i}`} name="counter" at={ratingAtFor(i)} volume={0.35} />)}
+      {hasC && <Sfx name="whoosh_fast" at={fC - 2} volume={0.45} />}
+      {hasC && <Sfx name="click" at={fC + 4} volume={0.5} />}
+      {hasC && b.narr.map((_, i) => <Sfx key={`n${i}`} name="snap_in" at={cardAt(i)} volume={0.7} />)}
+      {hasC && b.narr.map((_, i) => <Sfx key={`r${i}`} name="counter" at={ratingAtFor(i)} volume={0.35} />)}
       <Sfx name="ui_pop" at={miniAt + 2} volume={0.6} />
       <Sfx name="sparkle" at={miniAt + 10} volume={0.3} />
-      {cards > 1 && <Sfx name="swipe" at={cardAt(1) - 4} volume={0.5} />}
+      {hasC && cards > 1 && <Sfx name="swipe" at={cardAt(1) - 4} volume={0.5} />}
       {VIG_SFX[p]?.(fA2, chips.map((ch) => ch.at))}
       {FACT_SFX[p]?.(fB, c)}
       {p !== 10 && <Sfx name="click" at={c.dur - 16} volume={0.35} />}
@@ -392,15 +394,16 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
 };
 
 // Minitarjeta de SonorBooks (abajo, bajo las tarjetas de la narración).
-const ListenCard: React.FC<{ at: number; free: boolean; out: number; plural?: boolean }> = ({ at, free, out, plural = false }) => {
+// v6: sin fase C la tarjeta cae centrada bajo el dato.
+const ListenCard: React.FC<{ at: number; free: boolean; out: number; plural?: boolean; center?: boolean }> = ({ at, free, out, plural = false, center = false }) => {
   const frame = useCurrentFrame();
   const s = sp(frame, at, 13, 170);
   const o = 1 - ramp(frame, out - 8, out);
   if (s <= 0.001 || o <= 0) return null;
   const shine = interpolate(frame, [at + 6, at + 30], [0, 1], clamp);
   return (
-    <div style={{ position: 'absolute', left: 860, top: 940, display: 'flex', alignItems: 'center', gap: 18, padding: '14px 26px 14px 16px', borderRadius: 18, background: color.yellow, color: color.ink,
-      boxShadow: '0 20px 50px rgba(0,0,0,0.5)', overflow: 'hidden', opacity: Math.min(1, s * 1.4) * o, transform: `translateY(${((1 - s) * 50).toFixed(1)}px) scale(${(0.85 + 0.15 * s).toFixed(3)})`, transformOrigin: '0 50%' }}>
+    <div style={{ position: 'absolute', ...(center ? { left: 0, right: 0, margin: '0 auto', width: 'fit-content', top: 944 } : { left: 860, top: 940 }), display: 'flex', alignItems: 'center', gap: 18, padding: '14px 26px 14px 16px', borderRadius: 18, background: color.yellow, color: color.ink,
+      boxShadow: '0 20px 50px rgba(0,0,0,0.5)', overflow: 'hidden', opacity: Math.min(1, s * 1.4) * o, transform: `translateY(${((1 - s) * 50).toFixed(1)}px) scale(${(0.85 + 0.15 * s).toFixed(3)})`, transformOrigin: center ? '50% 50%' : '0 50%' }}>
       <span style={{ width: 54, height: 54, borderRadius: 14, background: color.ink, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
         <svg width={30} height={30} viewBox="0 0 24 24"><path d="M3 5.5C6 4 9 4 12 6c3-2 6-2 9-.5V19c-3-1.5-6-1.5-9 .5-3-2-6-2-9-.5z" fill={color.yellow} /><path d="M10 9.5v6l5-3z" fill={color.ink} /></svg>
       </span>

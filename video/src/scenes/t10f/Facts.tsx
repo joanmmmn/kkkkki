@@ -170,7 +170,7 @@ export const F5: F = ({ at, c }) => {
             <Reveal key={k} at={st.at} dy={10}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
                 <span style={{ width: 22, height: 22, borderRadius: '50%', background: st.red ? RED : st.gold ? GOLD : BONE, flexShrink: 0 }} />
-                <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 50, color: st.gold ? GOLD : BONE, textDecoration: st.red ? 'line-through' : undefined, textDecorationColor: RED }}>{st.t}</span>
+                <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 50, color: st.gold ? GOLD : st.red ? '#FF9A7A' : BONE }}>{st.t}</span>
               </div>
             </Reveal>
           ))}
@@ -199,7 +199,7 @@ export const F6: F = ({ at, c }) => {
         <div style={{ position: 'relative', height: 220, marginTop: 20 }}>
           <div style={{ position: 'absolute', left: 60, right: 60, top: 110, height: 4, background: 'rgba(255,255,255,0.18)' }} />
           <div style={{ position: 'absolute', left: X(1971), width: (X(1996) - X(1971)) * gap, top: 100, height: 24, borderRadius: 12, background: 'rgba(226,85,44,0.35)' }} />
-          <div style={{ position: 'absolute', left: X(1971), width: X(1996) - X(1971), top: 140, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: RED, opacity: gap }}>25 años sin una novela</div>
+          <div style={{ position: 'absolute', left: X(1971), width: X(1996) - X(1971), top: 60, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: '#FF9A7A', opacity: gap }}>25 años sin una novela</div>
           {marks.map((m) => (
             <Reveal key={m.y} at={m.at} style={{ position: 'absolute', left: X(m.y) - 80, top: 0, width: 160, textAlign: 'center' }}>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: m.gold ? GOLD : m.dim ? DIM : BONE }}>{m.y === 1968 ? 'Años 60' : m.y}</div>

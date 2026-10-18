@@ -65,13 +65,72 @@ export const Tip: React.FC = () => {
   );
 };
 
+// v6 de la serie (Joan, 18/10): todo lo de cómo escucharlas, comprimido en una sola pantalla al final.
+// Las diez de un vistazo: quién la narra, nota, duración, versiones extra y prueba gratis. Voz: F112.
+const WHO: Record<number, string> = { 4: 'Narran 10 voces, una por personaje', 3: 'Dramatizada · más de 30 actores' };
+const EXTRA_VER: Record<number, string> = { 7: '+ Miguel Ángel Jenner, lectura clásica', 3: 'Otra traducción · o la íntegra, voz latina', 1: '3 libros · más de 60 horas' };
+export const Escucha: React.FC = () => {
+  const frame = useCurrentFrame();
+  const c = sceneClock('ESCUCHA');
+  const f0 = c.part('F112');
+  const gratis = c.at('F112', 'gratis') - 10;
+  const push = 1 + 0.025 * ramp(frame, f0, c.dur, (t) => t);
+  return (
+    <AbsoluteFill>
+      <Night red={0.45}>
+        <AbsoluteFill style={{ transform: `scale(${push.toFixed(4)})` }}>
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 56, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+            <KickerN at={f0 - 4} text="Cómo escucharlas" />
+            <MaskTitle text="Las diez, en audio" at={f0 + 2} size={70} color={BONE} hi="audio" align="center" />
+          </div>
+          <div style={{ position: 'absolute', left: 80, right: 80, top: 236, display: 'grid', gridTemplateColumns: '1fr 1fr', gridAutoFlow: 'column', gridTemplateRows: 'repeat(5, 140px)', columnGap: 40, rowGap: 12 }}>
+            {BOOKS10.map((b, i) => {
+              const s = sp(frame, f0 + 4 + i * 4, 15, 170);
+              const n = b.narr[0];
+              const q = sp(frame, gratis + i * 2, 11, 230);
+              const who = WHO[b.n] ?? `${/ y |^\d/.test(n.who) ? 'Narran' : 'Narra'} ${n.who}${n.voice !== 'Castellano' ? ` · ${n.voice.toLowerCase()}` : ''}`;
+              return (
+                <div key={b.n} style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 22, padding: '14px 22px 14px 14px', borderRadius: 20, background: 'rgba(255,255,255,0.055)', border: '1px solid rgba(255,255,255,0.11)',
+                  opacity: Math.min(1, s * 1.4), transform: `translateX(${((1 - s) * (i < 5 ? -60 : 60)).toFixed(1)}px)` }}>
+                  <div style={{ position: 'relative', flexShrink: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 22px rgba(0,0,0,0.5)' }}><CoverArt name={COVERS[11 - b.n][0]} size={112} /></div>
+                  <span style={{ position: 'absolute', left: 4, top: 4, minWidth: 40, height: 40, borderRadius: 999, background: b.n === 1 ? RED : color.yellow, color: b.n === 1 ? '#fff' : color.ink, fontFamily: font.sans, fontWeight: 700, fontSize: 22,
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 8px', boxShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>{b.n}</span>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: b.title.length > 24 ? 28 : 32, color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{b.title}</div>
+                    <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 23, color: DIM, marginTop: 4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{who}</div>
+                    {EXTRA_VER[b.n] && <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 19, color: color.yellow, marginTop: 6, whiteSpace: 'nowrap' }}>{EXTRA_VER[b.n]}</div>}
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, flexShrink: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: '#fff' }}>
+                      <svg width={26} height={26} viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill={color.yellow} /></svg>
+                      {n.rating.toFixed(1).replace('.', ',')}
+                    </div>
+                    <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 21, color: DIM, whiteSpace: 'nowrap' }}>{n.dur}</div>
+                    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 19, letterSpacing: 1, padding: '5px 12px', borderRadius: 999, whiteSpace: 'nowrap', background: '#16A34A', color: '#fff',
+                      opacity: Math.min(1, q * 1.5), transform: `scale(${(0.6 + 0.4 * q).toFixed(3)})`, transformOrigin: '100% 50%' }}>GRATIS CON PRUEBA</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </AbsoluteFill>
+      </Night>
+      <Sfx name="whoosh_soft" at={f0 - 6} volume={0.6} />
+      {BOOKS10.map((_, i) => <Sfx key={i} name="tick_soft" at={f0 + 6 + i * 4} volume={0.28} />)}
+      <Sfx name="sparkle" at={gratis} volume={0.45} />
+      {BOOKS10.map((b, i) => <Sfx key={`g${b.n}`} name="ui_pop" at={gratis + i * 2 + 1} volume={0.22} />)}
+    </AbsoluteFill>
+  );
+};
+
 // Las fichas de SonorBooks y el artículo del blog (vuelve la luz: el mundo claro de la marca).
 export const Web: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('WEB');
-  const f0 = c.part('F112');
-  const at = (w: string, n = 0) => c.at('F112', w, n);
-  const gratis = at('gratis');
+  const f0 = c.part('F115');
+  const at = (w: string, n = 0) => c.at('F115', w, n);
+  // v6: «…todas, gratis» va en ESCUCHA; aquí la portada con las pruebas gratis entra con «SonorBooks».
+  const gratis = at('SonorBooks') + 10;
   const ficha = at('ficha');
   const nota = at('nota');
   const plats = at('plataformas');
@@ -94,8 +153,8 @@ export const Web: React.FC = () => {
     { at: prueba - 10, cx: 1060, cy: 542, z: 1.7, dur: 16 },
     { at: play - 22, cx: 1020, cy: 590, z: 1.5, dur: 18 },
   ]);
-  const headline = frame < ficha - 8 ? 'Empieza gratis, hoy mismo' : frame < links - 10 ? 'Cada historia, su ficha' : '';
-  const hKey = frame < ficha - 8 ? gratis - 10 : ficha - 6;
+  const headline = frame < links - 10 ? 'Cada historia, su ficha' : '';
+  const hKey = f0 + 2;
   const cards = [156, 460, 764];
   return (
     <AbsoluteFill>
@@ -103,7 +162,7 @@ export const Web: React.FC = () => {
         {/* titular */}
         {headline && (
           <div key={headline} style={{ position: 'absolute', left: 0, right: 0, top: 46, display: 'flex', justifyContent: 'center', opacity: (frame >= hKey ? 1 : 0) * (1 - toGrid) }}>
-            <MaskTitle text={headline} at={hKey} size={76} hi={headline.startsWith('Empieza') ? 'gratis' : 'ficha'} align="center" />
+            <MaskTitle text={headline} at={hKey} size={76} hi="ficha" align="center" />
           </div>
         )}
         {/* la ventana con la web */}

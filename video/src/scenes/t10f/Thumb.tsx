@@ -2,91 +2,80 @@ import React from 'react';
 import { AbsoluteFill, Img } from 'remotion';
 import { CoverArt, coverSrc } from './fx';
 import { BONE, RED, color, font, Grain } from './kit';
+import { Dragon, OpenBook } from './Intro';
 
-// Miniaturas 1280×720. A lleva las portadas reales de los audiolibros; B, solo los auriculares.
+// Miniaturas 1280×720 de «Los 10 mejores · Fantasía». Ninguna dice «audiolibro» (se vende como historias).
 const Dark: React.FC<{ children: React.ReactNode; beam?: [number, number] }> = ({ children, beam = [420, 380] }) => (
-  <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 40% 50%, #1A1B1F 0%, #0B0B0D 60%, #040405 100%)', overflow: 'hidden' }}>
+  <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 40% 50%, #171a33 0%, #0a0b1a 60%, #04040a 100%)', overflow: 'hidden' }}>
     <div style={{ position: 'absolute', left: beam[0] - 520, top: beam[1] - 460, width: 1040, height: 920, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,130,0.30) 0%, rgba(255,214,130,0.08) 45%, rgba(0,0,0,0) 70%)' }} />
-    <div style={{ position: 'absolute', right: -300, bottom: -380, width: 900, height: 900, borderRadius: '50%', background: 'radial-gradient(circle, rgba(226,85,44,0.35) 0%, rgba(226,85,44,0) 62%)' }} />
+    <div style={{ position: 'absolute', right: -260, top: -360, width: 980, height: 900, borderRadius: '50%', background: 'radial-gradient(circle, rgba(120,96,255,0.30) 0%, rgba(120,96,255,0) 62%)' }} />
+    <div style={{ position: 'absolute', right: -300, bottom: -420, width: 900, height: 900, borderRadius: '50%', background: 'radial-gradient(circle, rgba(226,85,44,0.28) 0%, rgba(226,85,44,0) 62%)' }} />
     {children}
     <Grain seed={3} opacity={0.08} />
     <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)' }} />
   </AbsoluteFill>
 );
 
-// A · «10 libros que dan miedo de verdad»: abanico de cubiertas bajo la linterna.
-export const T10ThumbA: React.FC = () => {
-  // de atrás hacia delante; la última (El exorcista) queda encima
-  const pick = ['03_salem', '06_dracula_original', '02_nuestra_parte', '04_carcoma', '01_exorcista'];
-  const pos = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
-  return (
-    <Dark beam={[360, 380]}>
-      <div style={{ position: 'absolute', left: 0, top: 0, width: 720, height: 720 }}>
-        {pick.map((name, i) => (
-          <div key={name} style={{ position: 'absolute', left: pos[i][0], top: pos[i][1], transform: `rotate(${pos[i][2]}deg)`, zIndex: i }}>
-            <Img src={coverSrc(name)} style={{ width: i === 4 ? 380 : 290, height: i === 4 ? 380 : 290, borderRadius: 10, display: 'block', boxShadow: '0 24px 60px rgba(0,0,0,0.75)', filter: i === 4 ? undefined : 'brightness(0.78)' }} />
-          </div>
-        ))}
-      </div>
-      <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
-      <div style={{ position: 'absolute', right: 50, top: 330, width: 680, textAlign: 'right' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>DAN MIEDO</div>
-        <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>DE VERDAD</div>
-      </div>
-      <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
-        HISTORIAS DE TERROR
-      </div>
-    </Dark>
-  );
-};
+const PICK = ['08_harry', '04_idhun', '03_alas', '07_hobbit', '01_comunidad'];
+const POS = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
 
-// B · «No apagues la luz»: una bombilla que se apaga y unos ojos que miran desde la oscuridad (v4: sin auriculares).
-export const T10ThumbB: React.FC = () => (
-  <Dark beam={[330, 300]}>
-    <div style={{ position: 'absolute', left: 130, top: 0, width: 420, height: 720 }}>
-      <div style={{ position: 'absolute', left: 207, top: 0, width: 6, height: 190, background: '#2a2a2e' }} />
-      <div style={{ position: 'absolute', left: 60, top: 150, width: 300, height: 300, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,140,0.45), rgba(255,214,140,0) 65%)' }} />
-      <svg width={180} height={240} viewBox="0 0 24 32" style={{ position: 'absolute', left: 120, top: 180 }}>
-        <path d="M12 2a9 9 0 0 0-5 16.5c1 .8 1.6 2 1.6 3.3V24h6.8v-2.2c0-1.3.6-2.5 1.6-3.3A9 9 0 0 0 12 2z" fill="rgba(255,230,170,0.9)" stroke="#f2c94c" strokeWidth={0.8} />
-        <path d="M9 18c0-3 1.5-4 3-6 1.5 2 3 3 3 6" stroke="#b07a18" strokeWidth={0.7} fill="none" />
-        <rect x="8.4" y="24" width="7.2" height="5" rx="1" fill="#6b6b70" />
-      </svg>
-      {[[40, 520], [300, 560]].map(([x, y], k) => (
-        <div key={k} style={{ position: 'absolute', left: x, top: y, display: 'flex', gap: 22 }}>
-          {[0, 1].map((e) => <div key={e} style={{ width: 34, height: 16, borderRadius: '50%', background: '#F4F4F4', boxShadow: '0 0 22px rgba(255,255,255,0.85)' }} />)}
+const Words: React.FC<{ a: string; b: string }> = ({ a, b }) => (
+  <>
+    <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
+    <div style={{ position: 'absolute', right: 50, top: 330, width: 700, textAlign: 'right' }}>
+      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>{a}</div>
+      <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 84, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>{b}</div>
+    </div>
+    <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
+      HISTORIAS DE FANTASÍA
+    </div>
+  </>
+);
+
+// A · «No querrás salir»: abanico de portadas reales bajo una luz dorada (El Señor de los Anillos, encima).
+export const T10ThumbA: React.FC = () => (
+  <Dark beam={[360, 380]}>
+    <div style={{ position: 'absolute', left: 0, top: 0, width: 720, height: 720 }}>
+      {PICK.map((name, i) => (
+        <div key={name} style={{ position: 'absolute', left: POS[i][0], top: POS[i][1], transform: `rotate(${POS[i][2]}deg)`, zIndex: i }}>
+          <Img src={coverSrc(name)} style={{ width: i === 4 ? 380 : 290, height: i === 4 ? 380 : 290, borderRadius: 10, display: 'block', boxShadow: '0 24px 60px rgba(0,0,0,0.75)', filter: i === 4 ? undefined : 'brightness(0.78)' }} />
         </div>
       ))}
     </div>
-    <div style={{ position: 'absolute', right: 56, top: 120, width: 640, textAlign: 'right' }}>
-      <div style={{ display: 'inline-block', padding: '8px 20px', borderRadius: 10, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>10 HISTORIAS DE TERROR</div>
-      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 118, lineHeight: 0.92, color: BONE, letterSpacing: -4, marginTop: 26, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NO<br />APAGUES</div>
-      <div style={{ display: 'inline-block', marginTop: 16, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 84, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>LA LUZ</div>
-    </div>
+    <Words a="NO QUERRÁS" b="SALIR" />
   </Dark>
 );
 
+// B · «No querrás volver»: un libro abierto que brilla, con un mundo que sale de sus páginas y un dragón que lo cruza.
+export const T10ThumbB: React.FC = () => (
+  <Dark beam={[330, 330]}>
+    <div style={{ position: 'absolute', left: 0, top: 0, width: 700, height: 720 }}>
+      {/* luz que sube de las páginas */}
+      <div style={{ position: 'absolute', left: 120, top: 40, width: 420, height: 560, background: 'linear-gradient(0deg, rgba(255,226,160,0.55), rgba(255,226,160,0) 85%)', clipPath: 'polygon(30% 100%, 70% 100%, 100% 0, 0 0)' }} />
+      {/* montañas y castillo en silueta */}
+      <svg width={560} height={300} viewBox="0 0 560 300" style={{ position: 'absolute', left: 50, top: 210 }}>
+        <path d="M0 300 L90 150 L150 220 L240 90 L320 200 L390 120 L470 210 L560 140 L560 300 Z" fill="#1d1f3d" opacity={0.85} />
+        <path d="M220 300 V170 h20 v-30 h14 v30 h24 v-60 h16 v-26 l10 -18 l10 18 v26 h16 v60 h24 v-30 h14 v30 h20 V300 Z" fill="#0d0e22" />
+        {[[270, 190], [300, 150], [330, 190]].map(([x, y], k) => <rect key={k} x={x} y={y} width={8} height={12} rx={2} fill="#FFD27A" />)}
+      </svg>
+      <div style={{ position: 'absolute', left: 30, top: 470 }}><OpenBook glow={1} w={600} /></div>
+      <div style={{ position: 'absolute', left: 300, top: 70, transform: 'rotate(-8deg)' }}><Dragon s={0.85} flap={0.6} c="#06071a" /></div>
+      {[[90, 120], [520, 90], [600, 260], [60, 330], [470, 30]].map(([x, y], k) => <div key={k} style={{ position: 'absolute', left: x, top: y, width: 6, height: 6, borderRadius: 3, background: '#FFE7A8', boxShadow: '0 0 14px #FFD27A' }} />)}
+    </div>
+    <Words a="NO QUERRÁS" b="VOLVER" />
+  </Dark>
+);
 
 // C · como A, pero con las portadas censuradas (la intriga del principio del vídeo), para «Probar y comparar».
-export const T10ThumbC: React.FC = () => {
-  const pick = ['03_salem', '06_dracula_original', '02_nuestra_parte', '04_carcoma', '01_exorcista'];
-  const pos = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
-  return (
-    <Dark beam={[360, 380]}>
-      <div style={{ position: 'absolute', left: 0, top: 0, width: 720, height: 720 }}>
-        {pick.map((name, i) => (
-          <div key={name} style={{ position: 'absolute', left: pos[i][0], top: pos[i][1], transform: `rotate(${pos[i][2]}deg)`, zIndex: i, borderRadius: 10, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,0,0,0.75)' }}>
-            <CoverArt name={name} size={i === 4 ? 380 : 290} reveal={i === 4 ? 0.18 : 0} light={i === 4 ? 1 : 0.8} />
-          </div>
-        ))}
-      </div>
-      <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
-      <div style={{ position: 'absolute', right: 50, top: 330, width: 680, textAlign: 'right' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>DAN MIEDO</div>
-        <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>DE VERDAD</div>
-      </div>
-      <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
-        HISTORIAS DE TERROR
-      </div>
-    </Dark>
-  );
-};
+export const T10ThumbC: React.FC = () => (
+  <Dark beam={[360, 380]}>
+    <div style={{ position: 'absolute', left: 0, top: 0, width: 720, height: 720 }}>
+      {PICK.map((name, i) => (
+        <div key={name} style={{ position: 'absolute', left: POS[i][0], top: POS[i][1], transform: `rotate(${POS[i][2]}deg)`, zIndex: i, borderRadius: 10, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,0,0,0.75)' }}>
+          <CoverArt name={name} size={i === 4 ? 380 : 290} reveal={i === 4 ? 0.18 : 0} light={i === 4 ? 1 : 0.8} />
+        </div>
+      ))}
+    </div>
+    <Words a="NO QUERRÁS" b="SALIR" />
+  </Dark>
+);

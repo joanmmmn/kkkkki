@@ -28,12 +28,12 @@ export const wfEnd = (id: string, word: string, nth = 0) => {
 
 export type VoPart = { id: string; at: number };
 export type Tin = 'push' | 'cut' | 'slide' | 'dark';
-export type SceneDef = { id: string; vo: VoPart[]; dur: number; tin: Tin; night?: boolean; book?: number; phases?: { b: string; c: string } };
+export type SceneDef = { id: string; vo: VoPart[]; dur: number; tin: Tin; night?: boolean; book?: number; phases?: { b: string; c?: string } };
 const LEAD = sec(0.2);
 const GAP = sec(0.45);
 const TAIL = sec(0.36);
 
-const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; extra?: number; tin?: Tin; night?: boolean; minDur?: number; book?: number; phases?: { b: string; c: string } } = {}): SceneDef => {
+const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; extra?: number; tin?: Tin; night?: boolean; minDur?: number; book?: number; phases?: { b: string; c?: string } } = {}): SceneDef => {
   const lead = o.lead ?? LEAD;
   const vo: VoPart[] = [];
   let t = lead;
@@ -46,25 +46,27 @@ const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; e
   return { id, vo, dur, tin: o.tin ?? 'push', night: o.night, book: o.book, phases: o.phases };
 };
 
-// Cada libro: título y sinopsis (A) → dato (B) → narración (C). Antes del número, un instante de oscuridad.
-const bookScene = (p: number, ids: string[], b: string, c: string, gaps: number[], extra = 26) =>
-  scene(`B${p}`, ids, { lead: sec(1.15), gaps, extra, tin: 'dark', night: true, book: p, phases: { b, c } });
+// v6 de la serie (Joan, 18/10): cada libro acaba en el dato con la minitarjeta de SonorBooks; cómo escucharlas, comprimido al final (ESCUCHA).
+const bookScene = (p: number, ids: string[], b: string, gaps: number[], extra = 48) =>
+  scene(`B${p}`, ids, { lead: sec(1.15), gaps, extra, tin: 'dark', night: true, book: p, phases: { b } });
 
 export const T10_SCENES: SceneDef[] = [
   scene('HOOK', ['F01', 'F02', 'F03'], { lead: sec(1.1), gaps: [0.7, 0.8], extra: 24, night: true }),
   scene('REGLA', ['F05', 'F07'], { lead: sec(1.4), gaps: [1.5], extra: 18, night: true, tin: 'cut' }),
-  bookScene(1, ['F11', 'F12', 'F13', 'F14'], 'F13', 'F14', [0.5, 0.75, 0.75]),
-  bookScene(2, ['F21', 'F22', 'F23', 'F24'], 'F23', 'F24', [0.5, 0.75, 0.75]),
-  bookScene(3, ['F31', 'F32', 'F33', 'F34'], 'F33', 'F34', [0.5, 0.75, 0.75]),
-  bookScene(4, ['F41', 'F42', 'F43', 'F44', 'F45'], 'F43', 'F44', [0.5, 0.75, 0.75, 0.55]),
-  bookScene(5, ['F51', 'F52', 'F53', 'F54'], 'F53', 'F54', [0.5, 0.75, 0.75]),
-  bookScene(6, ['F61', 'F62', 'F63', 'F64'], 'F63', 'F64', [0.5, 0.75, 0.75]),
-  bookScene(7, ['F71', 'F72', 'F73', 'F74'], 'F73', 'F74', [0.5, 0.75, 0.75]),
-  bookScene(8, ['F81', 'F82', 'F83', 'F84', 'F85'], 'F83', 'F84', [0.5, 0.75, 0.75, 0.55]),
-  bookScene(9, ['F91', 'F92', 'F93', 'F94'], 'F93', 'F94', [0.5, 0.75, 0.75]),
-  bookScene(10, ['F101', 'F102', 'F103', 'F104', 'F105'], 'F103', 'F104', [0.5, 0.75, 0.75, 0.9], 60),
+  bookScene(1, ['F11', 'F12', 'F13'], 'F13', [0.5, 0.75]),
+  bookScene(2, ['F21', 'F22', 'F23'], 'F23', [0.5, 0.75]),
+  bookScene(3, ['F31', 'F32', 'F33'], 'F33', [0.5, 0.75]),
+  bookScene(4, ['F41', 'F42', 'F43'], 'F43', [0.5, 0.75]),
+  bookScene(5, ['F51', 'F52', 'F53'], 'F53', [0.5, 0.75]),
+  bookScene(6, ['F61', 'F62', 'F63'], 'F63', [0.5, 0.75]),
+  bookScene(7, ['F71', 'F72', 'F73'], 'F73', [0.5, 0.75]),
+  bookScene(8, ['F81', 'F82', 'F83'], 'F83', [0.5, 0.75]),
+  bookScene(9, ['F91', 'F92', 'F93'], 'F93', [0.5, 0.75]),
+  bookScene(10, ['F101', 'F102', 'F103', 'F105'], 'F103', [0.5, 0.75, 1.3], 60),
   scene('TIP', ['F111'], { lead: sec(0.6), extra: 30, night: true, tin: 'cut' }),
-  scene('WEB', ['F112'], { extra: 40 }),
+  // Las diez de un vistazo: narrador, nota, duración, versiones y prueba gratis.
+  scene('ESCUCHA', ['F112'], { lead: sec(0.5), extra: sec(2.4) }),
+  scene('WEB', ['F115'], { lead: sec(0.3), extra: 40 }),
   scene('COMENT', ['F113'], { extra: 30 }),
   scene('OUTRO', ['F114'], { lead: sec(0.5), minDur: sec(14) }),
 ];

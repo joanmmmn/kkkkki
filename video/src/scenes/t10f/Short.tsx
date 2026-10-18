@@ -10,11 +10,10 @@ import { Img } from 'remotion';
 import { COVERS, Cover3D, CoverArt, coverSrc } from './fx';
 import { BEATS, DIORAMAS } from './Dioramas';
 import { F10 } from './Facts';
-import { NarrCard } from './Books';
 import { sec, speechFrames, wf, wfEnd } from './timeline';
 
 // Vertical 9:16 (1080×1920): el n.º 1, «El Señor de los Anillos», con subtítulos grabados y las cifras en número.
-const SEQ: [string, number][] = [['J01', 0.6], ['F102', 0.55], ['F103', 0.65], ['F104', 0.65], ['F105', 0.8], ['J02', 0.7]];
+const SEQ: [string, number][] = [['J01', 0.6], ['F102', 0.55], ['F103', 0.65], ['F105', 0.8], ['J02', 0.7]];
 const PARTS = (() => {
   let t = 0;
   return SEQ.map(([id, gap]) => { t += sec(gap); const at = t; t += speechFrames(id); return { id, at }; });
@@ -29,7 +28,7 @@ const ramp = (frame: number, a: number, b: number, ez = easeInOut) => interpolat
 const sp = (frame: number, at: number, d = 15, s = 170) => spring({ frame: frame - at, fps: 50, config: { damping: d, stiffness: s } });
 
 // Subtítulos grabados: trozos de hasta ~26 caracteres repartidos por caracteres dentro de cada locución.
-const DIG: [string, string][] = [['Número uno', 'Número 1'], ['doce años', '12 años'], ['tres tomos', '3 tomos'], ['tres libros', '3 libros'], ['sesenta horas', '60 horas'], ['cuatro coma nueve', '4,9'], ['mil cuatrocientas', '1.400']];
+const DIG: [string, string][] = [['Número uno', 'Número 1'], ['doce años', '12 años'], ['tres tomos', '3 tomos'], ['tres libros', '3 libros'], ['sesenta horas', '60 horas']];
 const CUES = (() => {
   const out: { a: number; b: number; t: string }[] = [];
   for (const p of PARTS) {
@@ -75,11 +74,11 @@ export const T10Short: React.FC = () => {
   const fTitle = clock.at('J01', 'Señor');
   const f2 = part('F102') - 8;
   const f3 = part('F103') - 10;
-  const f4 = part('F104') - 10;
   const f5 = part('F105');
   const f6 = part('J02') - 6;
   const light = ramp(frame, fTitle - 12, fTitle + 6, easeOut);
-  const s2 = ramp(frame, f2, f2 + 14), s3 = ramp(frame, f3, f3 + 14), s4 = ramp(frame, f4, f4 + 14);
+  // v6: sin la tarjeta del narrador (cómo escucharla va en el vídeo largo, al final): del dato se pasa a los tres tomos.
+  const s2 = ramp(frame, f2, f2 + 14), s3 = ramp(frame, f3, f3 + 14), s4 = 0;
   const off = ramp(frame, f5, f5 + 10, easeOut);
   const s6 = ramp(frame, f6, f6 + 12);
   const bookIn = sp(frame, fTitle - 10, 16, 110);
@@ -88,7 +87,7 @@ export const T10Short: React.FC = () => {
   // encuadre vertical del diorama: primero el anillo y el mago (izquierda), luego Mordor (derecha)
   const panX = interpolate(frame, [beats[1] + 20, beats[2] - 6], [560, 1450], { ...clamp, easing: easeInOut });
   const panY = interpolate(frame, [beats[1] + 20, beats[2] - 6], [600, 420], { ...clamp, easing: easeInOut });
-  const K = 1.78 * (1.02 + 0.04 * ramp(frame, f2, f4));
+  const K = 1.78 * (1.02 + 0.04 * ramp(frame, f2, f5));
   const vols = ['01_comunidad', '01_dos_torres', '01_retorno'];
   return (
     <AbsoluteFill style={{ background: '#000' }}>
@@ -107,16 +106,11 @@ export const T10Short: React.FC = () => {
                 <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 44, color: DIM, marginTop: 10 }}>{b.author} · {b.year}</div>
               </div>
             )}
-            {s4 > 0 && (
-              <div style={{ position: 'absolute', left: 60, top: 860, opacity: s4 }}>
-                <NarrCard n={b.narr[0]} at={f4 + 10} ratingAt={clock.at('F104', 'cuatro') - 6} w={960} accent={b.accent} seed="short" />
-              </div>
-            )}
           </Night>
         </AbsoluteFill>
       )}
       {/* 2 y 3: el diorama y el dato */}
-      {s2 > 0 && s4 < 1 && (
+      {s2 > 0 && off < 1 && (
         <AbsoluteFill style={{ opacity: s2 * (1 - s4) }}>
           <div style={{ position: 'absolute', left: 540 - panX * K, top: 960 - panY * K, width: 1920, height: 1080, transform: `scale(${K.toFixed(4)})`, transformOrigin: '0 0',
             filter: `brightness(${1 - 0.55 * s3}) blur(${(s3 * 5).toFixed(2)}px)` }}>
@@ -144,7 +138,7 @@ export const T10Short: React.FC = () => {
             })}
           </div>
           <div style={{ position: 'absolute', left: 60, right: 60, top: 1180, textAlign: 'center', fontFamily: font.serif, fontStyle: 'italic', fontSize: 84, lineHeight: 1.1, color: color.yellow, textShadow: '0 0 60px rgba(255,202,5,0.35)',
-            opacity: ramp(frame, clock.at('F105', 'volver') - 20, clock.at('F105', 'volver') + 4) }}>…y del que no vas a querer volver.</div>
+            opacity: ramp(frame, clock.at('F105', 'volver') - 20, clock.at('F105', 'volver') + 4) }}>…y del que menos vas a querer volver.</div>
         </AbsoluteFill>
       )}
       {/* 6: los otros nueve */}
@@ -183,8 +177,6 @@ export const T10Short: React.FC = () => {
       <Sfx name="bass_drop" at={beats[2] - 2} volume={0.5} />
       <Sfx name="sk_thunder" at={beats[3]} volume={0.45} />
       <Sfx name="page_turn" at={f3 + 6} volume={0.7} />
-      <Sfx name="click" at={f4 + 4} volume={0.6} />
-      <Sfx name="snap_in" at={f4 + 10} volume={0.7} />
       <Sfx name="whoosh_deep" at={f5 + 2} volume={0.6} />
       {[0, 1, 2].map((k) => <Sfx key={k} name="sk_book_thud" at={f5 + 8 + k * 9} volume={0.5} />)}
       <Sfx name="sparkle" at={clock.at('F105', 'volver') - 6} volume={0.6} />

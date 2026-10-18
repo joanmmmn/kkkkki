@@ -34,6 +34,10 @@ import { Top10Terror } from './scenes/t10/Main';
 import { T10_TOTAL } from './scenes/t10/timeline';
 import { T10Short, T10_SHORT_TOTAL } from './scenes/t10/Short';
 import { T10ThumbA, T10ThumbB, T10ThumbC } from './scenes/t10/Thumb';
+import { Top10Fantasia } from './scenes/t10f/Main';
+import { T10_TOTAL as T10F_TOTAL } from './scenes/t10f/timeline';
+import { T10Short as T10FShort, T10_SHORT_TOTAL as T10F_SHORT_TOTAL } from './scenes/t10f/Short';
+import { T10ThumbA as T10FThumbA, T10ThumbB as T10FThumbB, T10ThumbC as T10FThumbC } from './scenes/t10f/Thumb';
 
 export const Root: React.FC = () => (
   <>
@@ -42,6 +46,11 @@ export const Root: React.FC = () => (
     <Composition id="T10ThumbA" component={T10ThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="T10ThumbB" component={T10ThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="T10ThumbC" component={T10ThumbC} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="T10Fantasia" component={Top10Fantasia} durationInFrames={T10F_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="T10FShort" component={T10FShort} durationInFrames={T10F_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
+    <Composition id="T10FThumbA" component={T10FThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="T10FThumbB" component={T10FThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="T10FThumbC" component={T10FThumbC} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKThumbB" component={SKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />

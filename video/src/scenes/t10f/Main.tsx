@@ -2,12 +2,12 @@ import React from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { T10_SCENES, t10Start, T10_TOTAL, t10VoIntervals, hasVO, Tin, sceneDef } from './timeline';
 import { T10_COMPONENTS } from './registry';
-import { voSrc, voTrim } from '../../lib/vo';
+import { VOS, voSrc, voTrim } from '../../lib/vo';
 import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeOut } from '../../lib/anim';
 import { dieFlicker } from './fx';
 
-export const T10_MUSIC: string | null = 'music/t10_bed.mp3'; // ElevenLabs Music por bloques (tools/t10_music.py)
+export const T10_MUSIC: string | null = null; // 'music/t10f_bed.mp3' cuando esté compuesta (tools/t10f_music.py)
 
 const IN = 14;
 const OV = 10;
@@ -34,7 +34,7 @@ const SceneShell: React.FC<{ dur: number; over: number; tin: Tr; tout: Tr; child
   );
 };
 
-export const Top10Terror: React.FC = () => {
+export const Top10Fantasia: React.FC = () => {
   const { fps } = useVideoConfig();
   const vo = t10VoIntervals();
   const sec = (s: number) => Math.round(s * fps);
@@ -43,7 +43,7 @@ export const Top10Terror: React.FC = () => {
     for (const [a, b] of list) d = Math.max(d, interpolate(f, [a - sec(0.18), a, b, b + sec(0.4)], [0, 1, 1, 0], clamp));
     return d;
   };
-  const darkAt = t10Start('B10') + (sceneDef('B10').vo.find((v) => v.id === 'X105')?.at ?? 0);
+  const darkAt = t10Start('B10') + (sceneDef('B10').vo.find((v) => v.id === 'F105')?.at ?? 0);
   const tipAt = t10Start('TIP');
   const lifts = T10_SCENES.filter((s) => s.book || s.id === 'REGLA').map((s) => [t10Start(s.id), t10Start(s.id) + (s.vo[0]?.at ?? sec(1))] as const);
   const musicVolume = (f: number) => {
@@ -51,9 +51,9 @@ export const Top10Terror: React.FC = () => {
     const lift = 1 + 0.4 * Math.max(0, ...lifts.map(([a, b]) => interpolate(f, [a, a + 6, b - 6, b], [0, 1, 1, 0], clamp)));
     const fadeIn = interpolate(f, [0, fps * 0.8], [0, 1], { extrapolateRight: 'clamp' });
     const fadeOut = interpolate(f, [T10_TOTAL - fps * 2, T10_TOTAL], [1, 0], clamp);
-    // «Escúchalo de noche. Si te atreves.»: la música casi desaparece con el apagón y vuelve con el consejo.
+    // «…y del que menos vas a querer volver»: la música se recoge bajo los tres tomos y vuelve con el consejo.
     const quiet = interpolate(f, [darkAt - 4, darkAt + 10, tipAt - 6, tipAt + 20], [0, 1, 1, 0], clamp);
-    return 0.24 * (1 - duck) * lift * fadeIn * fadeOut * (1 - 0.7 * quiet);
+    return 0.24 * (1 - duck) * lift * fadeIn * fadeOut * (1 - 0.35 * quiet);
   };
   return (
     <AbsoluteFill style={{ background: '#000' }}>
@@ -66,7 +66,7 @@ export const Top10Terror: React.FC = () => {
         return (
           <Sequence key={s.id} from={t10Start(s.id)} durationInFrames={s.dur + over} name={s.id}>
             <SceneShell dur={s.dur} over={over} tin={tin} tout={tout}>{C ? <C /> : null}</SceneShell>
-            {(!STEM || STEM === 'vo') && s.vo.filter((v) => hasVO(v.id)).map((v, k) => (
+            {(!STEM || STEM === 'vo') && s.vo.filter((v) => hasVO(v.id) && !VOS[v.id]?.estimate).map((v, k) => (
               <Sequence key={k} from={v.at} layout="none" name={`vo:${v.id}`}>
                 <Audio src={voSrc(v.id)} trimAfter={voTrim(v.id)} volume={(f) => interpolate(f, [voTrim(v.id) - 4, voTrim(v.id)], [1, 0], clamp)} />
               </Sequence>
