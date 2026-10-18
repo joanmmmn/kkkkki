@@ -19,17 +19,18 @@ const Dark: React.FC<{ children: React.ReactNode; beam?: [number, number] }> = (
 const PICK = ['08_harry', '04_idhun', '03_alas', '07_hobbit', '01_comunidad'];
 const POS = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
 
+// El texto va siempre por encima de las portadas (zIndex) y no se mete debajo del abanico.
 const Words: React.FC<{ a: string; b: string }> = ({ a, b }) => (
-  <>
+  <div style={{ position: 'absolute', inset: 0, zIndex: 20 }}>
     <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
-    <div style={{ position: 'absolute', right: 50, top: 330, width: 700, textAlign: 'right' }}>
-      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>{a}</div>
+    <div style={{ position: 'absolute', right: 46, top: 330, width: 560, textAlign: 'right' }}>
+      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 82, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>{a}</div>
       <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 84, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>{b}</div>
     </div>
     <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
       HISTORIAS DE FANTASÍA
     </div>
-  </>
+  </div>
 );
 
 // A · «No querrás salir»: abanico de portadas reales bajo una luz dorada (El Señor de los Anillos, encima).
@@ -58,7 +59,7 @@ export const T10ThumbB: React.FC = () => (
         <path d="M220 300 V170 h20 v-30 h14 v30 h24 v-60 h16 v-26 l10 -18 l10 18 v26 h16 v60 h24 v-30 h14 v30 h20 V300 Z" fill="#0d0e22" />
         {[[270, 190], [300, 150], [330, 190]].map(([x, y], k) => <rect key={k} x={x} y={y} width={8} height={12} rx={2} fill="#FFD27A" />)}
       </svg>
-      <div style={{ position: 'absolute', left: 30, top: 470 }}><OpenBook glow={1} w={600} /></div>
+      <div style={{ position: 'absolute', left: 70, top: 440 }}><OpenBook glow={1} w={520} /></div>
       <div style={{ position: 'absolute', left: 300, top: 70, transform: 'rotate(-8deg)' }}><Dragon s={0.85} flap={0.6} c="#06071a" /></div>
       {[[90, 120], [520, 90], [600, 260], [60, 330], [470, 30]].map(([x, y], k) => <div key={k} style={{ position: 'absolute', left: x, top: y, width: 6, height: 6, borderRadius: 3, background: '#FFE7A8', boxShadow: '0 0 14px #FFD27A' }} />)}
     </div>

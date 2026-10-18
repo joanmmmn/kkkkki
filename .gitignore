@@ -36,3 +36,7 @@ video/public/music/t10_parts/*.mp3
 # Página del blog «Los 10 libros de terror»: salidas de build.py (se generan con web/top10-terror/build.py)
 web/top10-terror/dist/
 web/top10-terror/preview/
+
+# Página del blog «Los 10 mejores libros de fantasía»: salidas de build.py (se generan con web/top10-fantasia/build.py)
+web/top10-fantasia/dist/
+web/top10-fantasia/preview/

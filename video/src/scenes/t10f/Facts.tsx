@@ -156,10 +156,10 @@ export const F4: F = ({ at, c }) => {
 export const F5: F = ({ at, c }) => {
   const steps = [
     { t: 'La empieza en la universidad', at: c.at('F53', 'universidad') - 8 },
-    { t: 'Varias editoriales la rechazan', at: c.at('F53', 'rechazaron') - 6, red: true },
+    { t: 'Rechazo tras rechazo', at: c.at('F53', 'rechazos') - 6, red: true },
     { t: '2007 · por fin se publica', at: c.at('F53', 'siete') - 8 },
     { t: 'Premio Quill', at: c.at('F53', 'Quill') - 6, gold: true },
-    { t: 'Listas del New York Times', at: c.at('F53', 'listas') - 6, gold: true },
+    { t: 'La 2.ª parte, n.º 1 del New York Times', at: c.at('F53', 'segunda') - 6, gold: true },
   ];
   return (
     <Center>
@@ -294,7 +294,7 @@ export const F9: F = ({ at, c }) => {
         </div>
         <div style={{ height: 22, borderRadius: 11, background: 'rgba(255,255,255,0.1)', marginTop: 20, overflow: 'hidden' }}><div style={{ width: `${(v / 41.7) * 100}%`, height: '100%', background: GOLD }} /></div>
       </Card>
-      <Pop at={c.at('F93', 'historia') - 6} rot={-2}><Badge>El proyecto más financiado de su historia</Badge></Pop>
+      <Pop at={c.at('F93', 'historia') - 6} rot={-2}><Badge>Récord de Kickstarter durante 3 años</Badge></Pop>
     </Center>
   );
 };

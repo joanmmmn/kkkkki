@@ -2,9 +2,9 @@
  "id": "F53",
  "hash": "estimate",
  "estimate": true,
- "text": "Rothfuss la empezó a escribir en la universidad, y varias editoriales la rechazaron. Cuando por fin se publicó, en dos mil siete, ganó el premio Quill y llegó a las listas del New York Times.",
- "duration": 14.436,
- "speechEnd": 14.186,
+ "text": "Rothfuss la empezó a escribir en la universidad, y durante años solo recibió rechazos. Cuando por fin se publicó, en dos mil siete, ganó el premio Quill, y su segunda parte debutó en el número uno del New York Times.",
+ "duration": 16.284,
+ "speechEnd": 16.034,
  "words": [
   {
    "w": "Rothfuss",
@@ -52,134 +52,159 @@
    "e": 3.688
   },
   {
-   "w": "varias",
+   "w": "durante",
    "s": 3.755,
-   "e": 4.159
+   "e": 4.226
   },
   {
-   "w": "editoriales",
-   "s": 4.226,
-   "e": 4.966
+   "w": "años",
+   "s": 4.293,
+   "e": 4.562
   },
   {
-   "w": "la",
-   "s": 5.033,
-   "e": 5.167
+   "w": "solo",
+   "s": 4.629,
+   "e": 4.898
   },
   {
-   "w": "rechazaron.",
-   "s": 5.235,
-   "e": 5.974
+   "w": "recibió",
+   "s": 4.966,
+   "e": 5.436
+  },
+  {
+   "w": "rechazos.",
+   "s": 5.504,
+   "e": 6.109
   },
   {
    "w": "Cuando",
-   "s": 6.462,
-   "e": 6.865
+   "s": 6.596,
+   "e": 7.0
   },
   {
    "w": "por",
-   "s": 6.932,
-   "e": 7.134
+   "s": 7.067,
+   "e": 7.269
   },
   {
    "w": "fin",
-   "s": 7.201,
-   "e": 7.403
+   "s": 7.336,
+   "e": 7.538
   },
   {
    "w": "se",
-   "s": 7.47,
-   "e": 7.605
+   "s": 7.605,
+   "e": 7.739
   },
   {
    "w": "publicó,",
-   "s": 7.672,
-   "e": 8.21
+   "s": 7.807,
+   "e": 8.345
   },
   {
    "w": "en",
-   "s": 8.497,
-   "e": 8.632
+   "s": 8.632,
+   "e": 8.766
   },
   {
    "w": "dos",
-   "s": 8.699,
-   "e": 8.901
+   "s": 8.834,
+   "e": 9.035
   },
   {
    "w": "mil",
-   "s": 8.968,
-   "e": 9.17
+   "s": 9.103,
+   "e": 9.304
   },
   {
    "w": "siete,",
-   "s": 9.237,
-   "e": 9.641
+   "s": 9.372,
+   "e": 9.775
   },
   {
    "w": "ganó",
-   "s": 9.928,
-   "e": 10.197
+   "s": 10.062,
+   "e": 10.331
   },
   {
    "w": "el",
-   "s": 10.264,
-   "e": 10.399
+   "s": 10.399,
+   "e": 10.533
   },
   {
    "w": "premio",
-   "s": 10.466,
-   "e": 10.869
+   "s": 10.6,
+   "e": 11.004
   },
   {
-   "w": "Quill",
-   "s": 10.937,
-   "e": 11.273
+   "w": "Quill,",
+   "s": 11.071,
+   "e": 11.475
   },
   {
    "w": "y",
-   "s": 11.34,
-   "e": 11.46
+   "s": 11.762,
+   "e": 11.882
   },
   {
-   "w": "llegó",
-   "s": 11.527,
-   "e": 11.864
+   "w": "su",
+   "s": 11.949,
+   "e": 12.084
   },
   {
-   "w": "a",
-   "s": 11.931,
-   "e": 12.051
+   "w": "segunda",
+   "s": 12.151,
+   "e": 12.622
   },
   {
-   "w": "las",
-   "s": 12.118,
-   "e": 12.32
+   "w": "parte",
+   "s": 12.689,
+   "e": 13.025
   },
   {
-   "w": "listas",
-   "s": 12.387,
-   "e": 12.791
+   "w": "debutó",
+   "s": 13.092,
+   "e": 13.496
+  },
+  {
+   "w": "en",
+   "s": 13.563,
+   "e": 13.698
+  },
+  {
+   "w": "el",
+   "s": 13.765,
+   "e": 13.899
+  },
+  {
+   "w": "número",
+   "s": 13.967,
+   "e": 14.37
+  },
+  {
+   "w": "uno",
+   "s": 14.437,
+   "e": 14.639
   },
   {
    "w": "del",
-   "s": 12.858,
-   "e": 13.06
+   "s": 14.706,
+   "e": 14.908
   },
   {
    "w": "New",
-   "s": 13.127,
-   "e": 13.329
+   "s": 14.975,
+   "e": 15.177
   },
   {
    "w": "York",
-   "s": 13.396,
-   "e": 13.665
+   "s": 15.244,
+   "e": 15.513
   },
   {
    "w": "Times.",
-   "s": 13.732,
-   "e": 14.136
+   "s": 15.581,
+   "e": 15.984
   }
  ]
 }

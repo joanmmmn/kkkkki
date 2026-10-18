@@ -2,9 +2,9 @@
  "id": "F93",
  "hash": "estimate",
  "estimate": true,
- "text": "Sanderson es un fenómeno: en dos mil veintidós pidió dinero en Kickstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Es el proyecto más financiado de la historia de la plataforma.",
- "duration": 16.244,
- "speechEnd": 15.994,
+ "text": "Sanderson es un fenómeno: en dos mil veintidós pidió dinero en Kickstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Durante tres años fue el proyecto más financiado de la historia de la plataforma.",
+ "duration": 17.522,
+ "speechEnd": 17.272,
  "words": [
   {
    "w": "Sanderson",
@@ -142,59 +142,74 @@
    "e": 11.287
   },
   {
-   "w": "Es",
+   "w": "Durante",
    "s": 11.774,
-   "e": 11.909
+   "e": 12.245
+  },
+  {
+   "w": "tres",
+   "s": 12.312,
+   "e": 12.581
+  },
+  {
+   "w": "años",
+   "s": 12.649,
+   "e": 12.918
+  },
+  {
+   "w": "fue",
+   "s": 12.985,
+   "e": 13.187
   },
   {
    "w": "el",
-   "s": 11.976,
-   "e": 12.111
+   "s": 13.254,
+   "e": 13.388
   },
   {
    "w": "proyecto",
-   "s": 12.178,
-   "e": 12.716
+   "s": 13.456,
+   "e": 13.994
   },
   {
    "w": "más",
-   "s": 12.783,
-   "e": 12.985
+   "s": 14.061,
+   "e": 14.263
   },
   {
    "w": "financiado",
-   "s": 13.052,
-   "e": 13.725
+   "s": 14.33,
+   "e": 15.002
   },
   {
    "w": "de",
-   "s": 13.792,
-   "e": 13.926
+   "s": 15.07,
+   "e": 15.204
   },
   {
    "w": "la",
-   "s": 13.994,
-   "e": 14.128
+   "s": 15.271,
+   "e": 15.406
   },
   {
    "w": "historia",
-   "s": 14.195,
-   "e": 14.733
+   "s": 15.473,
+   "e": 16.011
   },
   {
    "w": "de",
-   "s": 14.801,
-   "e": 14.935
+   "s": 16.078,
+   "e": 16.213
   },
   {
    "w": "la",
-   "s": 15.002,
-   "e": 15.137
+   "s": 16.28,
+   "e": 16.415
   },
   {
    "w": "plataforma.",
-   "s": 15.204,
-   "e": 15.944
+   "s": 16.482,
+   "e": 17.222
   }
  ]
 }
