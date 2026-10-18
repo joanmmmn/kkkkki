@@ -8,6 +8,8 @@ cd "$(dirname "$0")/../video"
 COMP="$1"; OUT="$2"; CHUNK="${3:-3000}"
 # SCALE=1.3333333333333333 renderiza a 2560x1440 (la composición sigue en 1920x1080): más nitidez y más calidad en YouTube.
 SCALE="${SCALE:-1}"
+# LIMIT=N renderiza como mucho N tramos de vídeo nuevos y para (para trabajos con tiempo limitado); se reanuda lanzándolo otra vez.
+LIMIT="${LIMIT:-0}"; NEW=0
 TMP="out/chunks/$COMP"
 mkdir -p "$TMP"
 TOTAL=$(npx remotion compositions src/index.ts 2>/dev/null | awk -v c="$COMP" '$1==c {print $4}')
@@ -19,6 +21,8 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
   b=$((a + CHUNK - 1)); [ "$b" -ge "$TOTAL" ] && b=$((TOTAL - 1))
   part="$TMP/part_$(printf %02d $i).mp4"
   if [ ! -s "$part" ]; then
+    if [ "$LIMIT" -gt 0 ] && [ "$NEW" -ge "$LIMIT" ]; then echo "Pausa tras $NEW tramos nuevos (LIMIT=$LIMIT): vuelve a lanzarlo para seguir"; exit 0; fi
+    NEW=$((NEW + 1))
     # Se renderiza a un nombre temporal y se renombra al acabar: si el proceso se corta, el tramo a medias no cuenta como hecho.
     npx remotion render src/index.ts "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf=16 --muted --scale="$SCALE" \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
