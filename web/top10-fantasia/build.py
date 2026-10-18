@@ -34,8 +34,8 @@ SITE_JS = ('<script type="module" src="/assets/chrome.mjs?v=467bec9dc6f34ed1"></
            '<script type="module" src="/assets/cookie-notice.mjs?v=5563de9897e063db"></script>')
 
 F = lambda slug: f'/es/audiolibro/{slug}/'
-# Fichas de SonorBooks (FICHAS_PENDIENTES: las que no se pudieron comprobar el 18/10 llevan None y enlazan a la búsqueda del catálogo).
-FICHAS = {10: None, 9: None, 8: None, 7: None, 6: None, 5: None, 4: None, 3: None, 2: None, 1: 'la-comunidad-del-anillo'}
+# Fichas de SonorBooks (comprobadas el 18/10, 22:00; None enlazaría a la búsqueda del catálogo).
+FICHAS = {10: 'alicia-en-el-pais-de-las-maravillas', 9: 'circe', 8: 'harry-potter-y-la-piedra-filosofal', 7: 'el-hobbit', 6: 'el-nombre-del-viento-cronica-del-asesino-de-reyes-1-ed42ea71a4', 5: 'olvidado-rey-gudu-edicion-especial-con-cantos-tintados-bac511c95b', 4: 'memorias-de-idhun-i-la-resistencia-volumen-1-33b59f6348', 3: 'alas-de-sangre', 2: 'el-imperio-final', 1: 'la-comunidad-del-anillo'}
 BUSCA = {10: 'Alicia en el País de las Maravillas', 9: 'Circe', 8: 'Harry Potter y la piedra filosofal', 7: 'El Hobbit', 6: 'El nombre del viento',
          5: 'Olvidado rey Gudú', 4: 'Memorias de Idhún', 3: 'Alas de sangre', 2: 'El imperio final', 1: 'La Comunidad del Anillo'}
 ficha = lambda n: F(FICHAS[n]) if FICHAS[n] else '/es/audiolibros/?q=' + BUSCA[n].replace(' ', '+')

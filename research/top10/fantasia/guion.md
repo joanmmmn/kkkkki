@@ -138,8 +138,8 @@ Ids F = vídeo largo; J = vertical. Con la regla v6 no hay F?4 ni F?5 salvo **F1
 - **F51** — Número seis: «El nombre del viento», de Patrick Rothfuss.  
   _Pronunciación (say):_ Número seis: «El nombre del viento», de Pátrik Rótfus.
 - **F52** — En una posada perdida, un posadero pelirrojo sirve cerveza sin llamar la atención. Pero un cronista lo ha encontrado y sabe quién es en realidad: el héroe de mil leyendas. Durante tres días, va a contar su verdadera historia.
-- **F53** — Rothfuss la empezó a escribir en la universidad, y varias editoriales la rechazaron. Cuando por fin se publicó, en dos mil siete, ganó el premio Quill y llegó a las listas del New York Times.  
-  _Pronunciación (say):_ Rótfus la empezó a escribir en la universidad, y varias editoriales la rechazaron. Cuando por fin se publicó, en dos mil siete, ganó el premio Cuil y llegó a las listas del Niu Iork Taims.
+- **F53** — Rothfuss la empezó a escribir en la universidad, y durante años solo recibió rechazos. Cuando por fin se publicó, en dos mil siete, ganó el premio Quill, y su segunda parte debutó en el número uno del New York Times.  
+  _Pronunciación (say):_ Rótfus la empezó a escribir en la universidad, y durante años solo recibió rechazos. Cuando por fin se publicó, en dos mil siete, ganó el premio Cuil, y su segunda parte debutó en el número uno del Niu Iork Taims.
 - **F61** — Número cinco: «Olvidado rey Gudú», de Ana María Matute.
 - **F62** — En el reino de Olar, levantado a base de conquistas y traiciones, nace un príncipe con una maldición: no puede amar. Su madre, la reina Ardid, lo prepara para ser el rey más grande. Y bajo la tierra, en los lagos y en el mar, esperan trasgos, sirenas y piratas.
 - **F63** — Matute la empezó a finales de los sesenta y la abandonó durante una larga depresión. La publicó en mil novecientos noventa y seis, veinticinco años después de su anterior novela: casi mil páginas de fantasía escrita en español. Catorce años más tarde, ganó el Premio Cervantes.
@@ -153,13 +153,13 @@ Ids F = vídeo largo; J = vertical. Con la regla v6 no hay F?4 ni F?5 salvo **F1
   _Pronunciación (say):_ Número tres: «Alas de sangre», de Rebeca Yárros.
 - **F82** — Violet iba a ser escriba. Pero su madre, la general, la obliga a entrar en el Colegio de Guerra de Basgiath, donde los cadetes se juegan la vida para que un dragón los elija. Y donde muchos la quieren muerta.  
   _Pronunciación (say):_ Váiolet iba a ser escriba. Pero su madre, la general, la obliga a entrar en el Colegio de Guerra de Básguiaz, donde los cadetes se juegan la vida para que un dragón los elija. Y donde muchos la quieren muerta.
-- **F83** — Entró directa al número uno del New York Times, fue el fenómeno del año en las redes, y Prime Video ya prepara la serie.  
-  _Pronunciación (say):_ Entró directa al número uno del Niu Iork Taims, fue el fenómeno del año en las redes, y Praim Vídeo ya prepara la serie.
+- **F83** — Llegó al número uno del New York Times, fue el fenómeno del año en las redes, y Prime Video ya prepara la serie.  
+  _Pronunciación (say):_ Llegó al número uno del Niu Iork Taims, fue el fenómeno del año en las redes, y Praim Vídeo ya prepara la serie.
 - **F91** — Número dos: «El imperio final», de Brandon Sanderson.  
   _Pronunciación (say):_ Número dos: «El imperio final», de Brándon Sánderson.
 - **F92** — Hace mil años, el héroe que debía salvar el mundo fracasó. Desde entonces reina un dios inmortal, del cielo cae ceniza y, de noche, todo se cubre de niebla. Vin, una ladrona callejera, descubre que puede tragar metales y quemarlos para conseguir poderes. Y una banda de ladrones la necesita para derribar al dios.
-- **F93** — Sanderson es un fenómeno: en dos mil veintidós pidió dinero en Kickstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Es el proyecto más financiado de la historia de la plataforma.  
-  _Pronunciación (say):_ Sánderson es un fenómeno: en dos mil veintidós pidió dinero en Kíkstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Es el proyecto más financiado de la historia de la plataforma.
+- **F93** — Sanderson es un fenómeno: en dos mil veintidós pidió dinero en Kickstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Durante tres años fue el proyecto más financiado de la historia de la plataforma.  
+  _Pronunciación (say):_ Sánderson es un fenómeno: en dos mil veintidós pidió dinero en Kíkstarter para publicar cuatro novelas secretas y reunió más de cuarenta y un millones de dólares. Durante tres años fue el proyecto más financiado de la historia de la plataforma.
 - **F101** — Número uno: «El Señor de los Anillos», de J. R. R. Tolkien.  
   _Pronunciación (say):_ Número uno: «El Señor de los Anillos», de Jota Erre Erre Tólkien.
 - **F102** — Frodo hereda de su tío Bilbo un anillo de oro. Un mago le revela la verdad: es el Anillo Único, el arma del Señor Oscuro. Y la única forma de destruirlo es llevarlo hasta el fuego donde se forjó, en el corazón de Mordor.

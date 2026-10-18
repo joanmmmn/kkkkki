@@ -1,6 +1,6 @@
 # Los 10 mejores · Fantasía — textos para YouTube y redes (borrador, 18/10/2026)
 
-> **Fichas pendientes:** el 18/10 sonorbooks.com respondía 429 (límite de peticiones) y solo está confirmada la de «La Comunidad del Anillo». Hay que rellenar las otras nueve antes de publicar.
+> **Fichas:** las diez comprobadas en sonorbooks.com el 18/10 (22:00). Para «El nombre del viento» se enlaza la ficha con la prueba de Audiobooks.com (la otra ficha no tiene un acceso confirmado).
 >
 > **Capítulos provisionales.** Los tiempos salen de la voz estimada (`python3 tools/t10f_timeline.py`). Cuando se genere la voz real se recalculan con `t10f_meta.py`, igual que en el episodio de terror, y se sustituyen aquí.
 
@@ -35,15 +35,15 @@ Diez historias de fantasía de las que no vas a querer salir, de la más ligera 
 7:21 Cómo escucharlas gratis
 
 Escúchalas en SonorBooks:
-10. Alicia en el País de las Maravillas: PENDIENTE (ficha por confirmar)
-9. Circe: PENDIENTE (ficha por confirmar)
-8. Harry Potter y la piedra filosofal: PENDIENTE (ficha por confirmar)
-7. El Hobbit: PENDIENTE (ficha por confirmar)
-6. El nombre del viento: PENDIENTE (ficha por confirmar)
-5. Olvidado rey Gudú: PENDIENTE (ficha por confirmar)
-4. Memorias de Idhún: PENDIENTE (ficha por confirmar)
-3. Alas de sangre: PENDIENTE (ficha por confirmar)
-2. El imperio final: PENDIENTE (ficha por confirmar)
+10. Alicia en el País de las Maravillas: https://sonorbooks.com/es/audiolibro/alicia-en-el-pais-de-las-maravillas/
+9. Circe: https://sonorbooks.com/es/audiolibro/circe/
+8. Harry Potter y la piedra filosofal: https://sonorbooks.com/es/audiolibro/harry-potter-y-la-piedra-filosofal/
+7. El Hobbit: https://sonorbooks.com/es/audiolibro/el-hobbit/
+6. El nombre del viento: https://sonorbooks.com/es/audiolibro/el-nombre-del-viento-cronica-del-asesino-de-reyes-1-ed42ea71a4/
+5. Olvidado rey Gudú: https://sonorbooks.com/es/audiolibro/olvidado-rey-gudu-edicion-especial-con-cantos-tintados-bac511c95b/
+4. Memorias de Idhún: https://sonorbooks.com/es/audiolibro/memorias-de-idhun-i-la-resistencia-volumen-1-33b59f6348/
+3. Alas de sangre: https://sonorbooks.com/es/audiolibro/alas-de-sangre/
+2. El imperio final: https://sonorbooks.com/es/audiolibro/el-imperio-final/
 1. El Señor de los Anillos: https://sonorbooks.com/es/audiolibro/la-comunidad-del-anillo/
 
 Notas y valoraciones comprobadas el 18/10/2026 en Audible España (salvo donde se indica) y en otras plataformas. Las pruebas gratuitas son para nuevos usuarios, con las condiciones de cada plataforma. «El nombre del viento» y «El imperio final» se empiezan gratis con el crédito de la prueba de Audiobooks.com.

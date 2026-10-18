@@ -28,21 +28,21 @@ De cada historia damos la narración recomendada y su nota en Audible España: l
 Una tarde de verano, Alicia ve pasar un conejo blanco con chaleco y reloj de bolsillo, lo sigue por una madriguera y cae a un mundo donde encoge y crece según lo que come, toma el té con un sombrerero loco y una reina no para de gritar: «¡Que le corten la cabeza!». Carroll se la inventó el 4 de julio de 1862, en una excursión en barca por el río Isis, para entretener a las tres hermanas Liddell. La pequeña Alice le pidió que se la escribiera, y en 1865 ya era un libro.
 
 **La narración:** Michelle Jenner (Audible Studios, 2020) · 3 h 13 min · castellano · 4,8 de 5 en la narración (586 valoraciones). Los oyentes destacan que hasta canta las canciones.
-**Dónde:** en exclusiva en Audible, incluida en el Plus. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=Alicia+en+el+Pa%C3%ADs+de+las+Maravillas) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** en exclusiva en Audible, incluida en el Plus. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/alicia-en-el-pais-de-las-maravillas/)
 
 ## 9. «Circe», de Madeline Miller (2018)
 
 Hija del dios del Sol, Circe nace sin el poder de su padre ni la belleza de su madre, hasta que descubre la brujería. Los dioses la destierran a una isla, y allí, sola, se convierte en la hechicera que temen los marineros. Miller daba clases de latín y griego. En el canto X de la «Odisea», Circe es solo la bruja que convierte en cerdos a los hombres de Ulises; Miller le dejó contar su versión, y la novela llegó al número uno del New York Times.
 
 **La narración:** Sonia Román (BookaVivo, 2024) · 16 h 44 min · castellano · 4,7 de 5 en la narración (208 valoraciones; 4,5 con 235 en Storytel). Serena y con un tono muy personal.
-**Dónde:** Audible, Storytel y Nextory. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=Circe) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Audible, Storytel y Nextory. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/circe/)
 
 ## 8. «Harry Potter y la piedra filosofal», de J. K. Rowling (1997)
 
 Harry vive en una alacena, bajo la escalera de sus tíos. El día que cumple once años, un gigante echa la puerta abajo y le dice que es un mago. Le espera un colegio en un castillo… y alguien que quiere robar una piedra capaz de dar la vida eterna. Lo rechazaron una docena de editoriales. Bloomsbury lo publicó después de que Alice, la hija de 8 años del fundador, Nigel Newton, leyera el primer capítulo y lo pusiera por las nubes.
 
 **La narración:** Leonor Watling (Pottermore Publishing, 2020) · 8 h 33 min · castellano · 4,9 de 5 en el audiolibro (2.904 valoraciones): la que más valoraciones tiene de toda la lista.
-**Dónde:** Audible, incluida en el Plus. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=Harry+Potter+y+la+piedra+filosofal) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Audible, incluida en el Plus. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/harry-potter-y-la-piedra-filosofal/)
 
 ## 7. «El Hobbit», de J. R. R. Tolkien (1937)
 
@@ -50,28 +50,28 @@ Bilbo Bolsón vive tranquilo en su agujero hobbit hasta que un mago y trece enan
 
 **Interpretada:** Javier Gutiérrez, dos veces Goya al mejor actor (Audible Studios y Planeta Audio, 2023) · 10 h 40 min · castellano · 4,8 de 5 en el audiolibro (535 valoraciones). Hace una voz para cada personaje, enanos incluidos. Encanta a la mayoría, aunque a quien busca una lectura sobria le sobra.
 **Lectura clásica:** Miguel Ángel Jenner (Planeta Audio, 2023) · 11 h 58 min · castellano · 4,7 de 5 en Storytel (160 valoraciones).
-**Dónde:** Gutiérrez, en Audible; Jenner, en Storytel, Nextory y Podimo. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=El+Hobbit) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Gutiérrez, en Audible; Jenner, en Storytel, Nextory y Podimo. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/el-hobbit/)
 
 ## 6. «El nombre del viento», de Patrick Rothfuss (2007)
 
 En una posada perdida, un posadero pelirrojo sirve cerveza sin llamar la atención. Pero un cronista lo ha encontrado y sabe quién es en realidad: el héroe de mil leyendas. Durante tres días, le va a contar su verdadera historia. Rothfuss la empezó en la universidad y pasó años acumulando rechazos de agentes. Cuando por fin se publicó, en 2007, ganó el premio Quill; su segunda parte debutó en el número uno del New York Times.
 
 **La narración:** Raúl Lloréns (Penguin Random House, 2016) · 27 h 20 min · castellano · 4,8 de 5 en el audiolibro (92 valoraciones). Con calma de juglar.
-**Dónde:** Audible y Audiobooks.com. No entra en el Plus de Audible, pero se puede empezar gratis con el crédito de la prueba de Audiobooks.com. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=El+nombre+del+viento) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Audible y Audiobooks.com. No entra en el Plus de Audible, pero se puede empezar gratis con el crédito de la prueba de Audiobooks.com. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/el-nombre-del-viento-cronica-del-asesino-de-reyes-1-ed42ea71a4/)
 
 ## 5. «Olvidado rey Gudú», de Ana María Matute (1996)
 
 En el reino de Olar, levantado a base de conquistas y traiciones, nace un príncipe con una maldición: no puede amar. Su madre, la reina Ardid, lo prepara para ser el rey más grande, y bajo la tierra, en los lagos y en el mar, esperan trasgos, sirenas y piratas. Matute la empezó a finales de los sesenta y la abandonó durante una larga depresión. La publicó en 1996, veinticinco años después de su anterior novela: casi mil páginas de fantasía escrita en español. Catorce años más tarde ganó el Premio Cervantes.
 
 **La narración:** Neus Sendra (Planeta Audio, 2021) · 34 h 34 min · castellano · 4,9 de 5 en la narración (77 valoraciones).
-**Dónde:** Audible, Storytel, Nextory y Podimo. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=Olvidado+rey+Gud%C3%BA) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Audible, Storytel, Nextory y Podimo. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/olvidado-rey-gudu-edicion-especial-con-cantos-tintados-bac511c95b/)
 
 ## 4. «Memorias de Idhún», de Laura Gallego (2004)
 
 Jack tiene trece años. Una noche vuelve a casa y encuentra a sus padres asesinados. El culpable es Kirtash, un asesino llegado de Idhún, un mundo con tres soles y tres lunas donde los dragones y los unicornios han sido exterminados. Para detenerlo, Jack se une a la Resistencia. La trilogía ha vendido más de un millón de ejemplares, y Netflix la convirtió en serie de animación en 2020.
 
 **La narración:** el primer libro, «La Resistencia» (Saga Egmont, 2021), con diez voces, una por personaje · 18 h 1 min · castellano · 4,8 de 5 en la narración (324 valoraciones). Hasta a quien no conecta con la historia le parece una de las mejores narraciones que ha escuchado.
-**Dónde:** Audible, Storytel, Nextory y Podimo. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=Memorias+de+Idh%C3%BAn) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Audible, Storytel, Nextory y Podimo. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/memorias-de-idhun-i-la-resistencia-volumen-1-33b59f6348/)
 
 ## 3. «Alas de sangre», de Rebecca Yarros (2023)
 
@@ -79,14 +79,14 @@ Violet iba a ser escriba. Pero su madre, la general, la obliga a entrar en el Co
 
 **Dramatizada:** más de 30 actores y efectos de sonido, como una película (BookaVivo, 2026), en dos partes · 17 h · castellano · 4,8 de 5 en el audiolibro (305 valoraciones en la parte 1). Ojo: no sigue la traducción publicada y algún nombre te sonará distinto.
 **Íntegra:** María Carolina Yarussi y Diego Longstaff (BookaVivo, 2023) · 21 h 7 min · voz latina · 4,6 de 5 en el audiolibro (1.427 valoraciones).
-**Dónde:** las dos, en Audible y Storytel; la íntegra, también en Nextory. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=Alas+de+sangre) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** las dos, en Audible y Storytel; la íntegra, también en Nextory. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/alas-de-sangre/)
 
 ## 2. «El imperio final», de Brandon Sanderson (2006)
 
 Hace mil años, el héroe que debía salvar el mundo fracasó. Desde entonces reina un dios inmortal, del cielo cae ceniza y, de noche, todo se cubre de niebla. Vin, una ladrona callejera, descubre que puede tragar metales y quemarlos para conseguir poderes, y una banda de ladrones la necesita para derribar al dios. Sanderson es un fenómeno: en 2022 pidió dinero en Kickstarter para publicar cuatro novelas secretas y reunió más de 41 millones de dólares. Durante tres años fue el proyecto más financiado de la historia de la plataforma.
 
 **La narración:** Francesc Belda (Penguin Random House, 2020) · 24 h 21 min · castellano · 4,9 de 5 en el audiolibro (206 valoraciones). Una voz distinta para cada personaje.
-**Dónde:** Audible y Audiobooks.com. No entra en el Plus de Audible, pero se puede empezar gratis con el crédito de la prueba de Audiobooks.com. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibros/?q=El+imperio+final) <!-- PENDIENTE: URL de la ficha (sonorbooks.com devolvía 429 el 18/10) -->
+**Dónde:** Audible y Audiobooks.com. No entra en el Plus de Audible, pero se puede empezar gratis con el crédito de la prueba de Audiobooks.com. → [Ver dónde escucharlo](https://sonorbooks.com/es/audiolibro/el-imperio-final/)
 
 ## 1. «El Señor de los Anillos», de J. R. R. Tolkien (1954-1955)
 

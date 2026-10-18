@@ -5,7 +5,7 @@ Es el artículo que acompaña al vídeo «Los 10 mejores · Fantasía» del cana
 - **URL prevista:** https://sonorbooks.com/es/blog/mejores-libros-de-fantasia/. Es una página nueva y no sustituye a ninguna.
 - **No está publicada.** Va al blog privado para la próxima actualización, y antes de subirla a producción tiene que aprobarla Joan.
 - **Enlaces:** cada historia lleva a su ficha de SonorBooks («Ver dónde escucharlo»). Son enlaces internos: la afiliación, si la hay, está en la propia ficha. La página no usa la ruta `/salir/`.
-- **Fichas pendientes:** el 18/10 sonorbooks.com devolvía 429 (límite de peticiones), así que solo está comprobada la ficha de «La Comunidad del Anillo». Las demás enlazan, de momento, a la búsqueda del catálogo (`/es/audiolibros/?q=…`). Cuando se conozcan, se rellenan en `FICHAS` (`build.py`) y se vuelve a construir.
+- **Fichas:** las diez comprobadas el 18/10 (22:00) y puestas en `FICHAS` (`build.py`). Para «El nombre del viento» se usa la ficha con la prueba de Audiobooks.com (la otra no tiene un acceso confirmado).
 
 ## Qué lleva
 - **Portada:** noche índigo con aurora violeta (sin movimiento con `prefers-reduced-motion`) y las portadas reales de las diez ediciones recomendadas (Audible España).
