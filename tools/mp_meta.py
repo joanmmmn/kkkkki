@@ -44,7 +44,7 @@ NUMEROS = [
     (['siete', 'de', 'octubre'], '7 de octubre'), (['dos', 'o', 'tres', 'dias'], '2 o 3 días'), (['trece', 'euros'], '13 €'), (['siete', 'euros'], '7 €'),
     (['veintiun', 'dias'], '21 días'), (['noventa', 'dias'], '90 días'), (['treinta', 'dias'], '30 días'), (['siete', 'dias'], '7 días'),
     (['quince', 'horas'], '15 horas'), (['doce', 'horas'], '12 horas'), (['veinte', 'horas'], '20 horas'), (['diez', 'horas'], '10 horas'),
-    (['cuatro', 'perfiles'], '4 perfiles'), (['dia', 'uno'], 'día 1'), (['treinta'], '30'), (['catorce'], '14'), (['veinte'], '20'),
+    (['audiolibros', 'plus'], 'Audiolibros+'), (['cuatro', 'perfiles'], '4 perfiles'), (['dia', 'uno'], 'día 1'), (['treinta'], '30'), (['catorce'], '14'), (['veinte'], '20'),
     (['cincuenta'], '50'), (['cien'], '100'), (['diez'], '10'), (['trece'], '13'),
 ]
 

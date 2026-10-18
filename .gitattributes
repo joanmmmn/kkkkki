@@ -2,3 +2,4 @@ deliverables/podimo/resena/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
 deliverables/storytel/resena/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
 deliverables/audible/resena/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
 deliverables/audiobooks/resena/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text
+deliverables/mejores-plataformas/*_1440p.mp4 filter=lfs diff=lfs merge=lfs -text

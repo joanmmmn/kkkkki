@@ -286,7 +286,7 @@ export const Z22Encadenar: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('Z22', w, n);
-  const fEnc = at('encadenar');
+  const fEnc = at('encadena');
   const fAud = at('audible');
   const fPod = at('podimo');
   const fBkb = at('bookbeat');

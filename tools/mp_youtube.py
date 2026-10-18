@@ -2,9 +2,11 @@
 """Textos de YouTube de «Las mejores plataformas de audiolibros en español» (título, descripción con capítulos, etiquetas
 y comentario fijado). Los capítulos salen de tools/mp_meta.py (locución real si existe; si no, estimados).
 
-Uso: python3 tools/mp_youtube.py   → deliverables/mejores-plataformas/youtube.md y descripcion_youtube.txt
+Uso: python3 tools/mp_youtube.py [--spotify ID]   → deliverables/mejores-plataformas/youtube.md y descripcion_youtube.txt
+La reseña de Spotify aún no está en YouTube (18/10): con --spotify ID entra en la lista de reseñas; sin él, se queda fuera y
+youtube.md lo avisa (la voz dice «Las once tienen su reseña en el canal»: conviene publicarla antes que este vídeo).
 """
-import os, sys
+import argparse, os, sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 import mp_meta  # noqa: E402
@@ -58,9 +60,9 @@ def capitulos():
     return out, total, estimados
 
 
-def descripcion(caps):
+def descripcion(caps, resenas):
     L = []
-    L.append('¿Cuál es la mejor plataforma de audiolibros en español? Hemos reseñado a fondo, una a una, diez plataformas (y les sumamos Spotify, recién llegada): qué ofrece cada una, cuánto cuesta, sus trucos, su letra pequeña y cuál te conviene según cuánto escuchas.')
+    L.append('¿Cuál es la mejor plataforma de audiolibros en español? Hemos reseñado a fondo, una a una, once plataformas, incluida la recién llegada, Spotify: qué ofrece cada una, cuánto cuesta, sus trucos, su letra pequeña y cuál te conviene según cuánto escuchas.')
     L.append('')
     L.append(f'📖 La comparativa entera, con todos los precios y una calculadora de horas: {ARTICULO}')
     L.append('')
@@ -76,16 +78,16 @@ def descripcion(caps):
     L.append('')
     L.append('Lo que verás:')
     L.append('• Las cuatro formas de pagar: tarifa plana (Audible, Storytel), por horas (Podimo, Nextory, BookBeat, Spotify), con créditos (Audiobooks.com) y gratis de verdad (eBiblio, LibriVox, El Libro Total).')
-    L.append('• Audible: Premium a 9,99 € sin límite, sus Originals, 3,5x, escucha en el ordenador y el catálogo extendido, que se paga aparte. Truco: si cancelas la prueba el primer día, sigues hasta que acaba.')
+    L.append('• Audible: Premium a 9,99 € sin límite, sus Originals con Dolby Atmos, la escucha en el ordenador y el catálogo extendido, que se paga aparte. Truco: si cancelas la prueba el primer día, sigues hasta que acaba.')
     L.append('• Storytel: 8,99 € sin límite, con ebooks; «Leer desde aquí» y la búsqueda dentro del libro. Family con 3 cuentas ≈ 7 € por persona. Ojo: si cancelas en la prueba, pierdes el acceso al momento.')
     L.append('• Podimo: 4,99 € con 20 h y pódcasts exclusivos. Nextory: 10 h, 30 h o sin límite, 4 perfiles y las horas que no gastas se guardan. BookBeat: 20, 50 o 100 h, con horas para cada perfil, pero la app está en inglés.')
-    L.append('• Spotify: Premium incluye 12 h de audiolibros al mes desde el 7 de octubre (solo el titular en Duo y Familiar; Estudiantes, no). Audiolibros+ añade 15 h por 8,99 €.')
+    L.append('• Spotify: Premium incluye 12 h de audiolibros al mes desde el 7 de octubre (en Duo y Familiar, solo el titular). Audiolibros+ añade 15 h por 8,99 €.')
     L.append('• Audiobooks.com: un crédito al mes que es tuyo para siempre (14,95 $ ≈ 13 €). ElevenReader: tus PDF y ebooks en audio con voces de IA.')
     L.append('• Gratis: eBiblio (novedades con el carné de la biblioteca), LibriVox (clásicos leídos por voluntarios) y El Libro Total (audiolectura).')
-    L.append('• Los 5 trucos: acelerar no ahorra horas, cuándo cancelar cada prueba, darte de alta en la web y no en la app, encadenar pruebas y buscar tu libro antes de pagar.')
+    L.append('• Los 5 trucos: acelerar no ahorra horas, cuándo cancelar, alta en la web y no en la app, encadenar pruebas y buscar tu libro antes de pagar.')
     L.append('')
     L.append('🎧 Las reseñas completas de cada plataforma:')
-    L.append(' · '.join(f'{t}: {u}' for t, u in RESENAS))
+    L.append(' · '.join(f'{t}: {u}' for t, u in resenas))
     L.append('')
     L.append('🔎 Busca cualquier audiolibro y mira dónde escucharlo, con qué narrador y a qué precio: https://sonorbooks.com/es/')
     L.append('')
@@ -98,8 +100,12 @@ def descripcion(caps):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--spotify', help='ID de YouTube de la reseña de Spotify, cuando esté publicada')
+    args = ap.parse_args()
+    resenas = RESENAS[:5] + [('Spotify', f'https://youtu.be/{args.spotify}')] + RESENAS[5:] if args.spotify else RESENAS
     caps, total, estimados = capitulos()
-    desc = descripcion(caps)
+    desc = descripcion(caps, resenas)
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, 'descripcion_youtube.txt'), 'w').write(desc + '\n')
     tags = ', '.join(ETIQUETAS)
@@ -122,6 +128,7 @@ def main():
         '- Subtítulos: `mejores_plataformas.es.srt` (Español, España). Miniatura: `miniatura.png`.',
         '- Pantalla final en los últimos ~12 s (la marca va en la mitad de arriba): vídeo + suscribirse.',
         f'- El artículo ({ARTICULO}) tiene que estar publicado antes (pendiente de aprobación).',
+        *([] if args.spotify else ['- **Reseña de Spotify:** aún sin publicar, así que no está en la lista de reseñas de la descripción. La voz dice «Las once tienen su reseña en el canal»: publícala antes que este vídeo y regenera con `python3 tools/mp_youtube.py --spotify ID` (o pega a mano `Spotify: https://youtu.be/ID` detrás de BookBeat).']),
     ]
     open(os.path.join(OUT, 'youtube.md'), 'w').write('\n'.join(md) + '\n')
     print(f'OK · descripción {len(desc.encode())} bytes · etiquetas {len(tags)} caracteres' + (' · capítulos ESTIMADOS' if estimados else ''))

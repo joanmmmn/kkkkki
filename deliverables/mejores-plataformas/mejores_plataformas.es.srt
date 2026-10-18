@@ -1,767 +1,654 @@
 1
-00:00:01,600 --> 00:00:06,714
-Hemos reseñado a fondo, una a una,
-diez plataformas de audiolibros
+00:00:01,600 --> 00:00:07,000
+Hemos reseñado a fondo, una a una, once
+plataformas de audiolibros en español,
 
 2
-00:00:06,754 --> 00:00:10,868
-en español: sus apps,
-sus precios y su letra pequeña.
+00:00:07,040 --> 00:00:10,560
+incluida la recién llegada,
+Spotify: sus apps,
 
 3
-00:00:10,908 --> 00:00:14,098
-Y les sumamos la recién llegada, Spotify.
+00:00:10,600 --> 00:00:13,160
+sus precios y su letra pequeña.
 
 4
-00:00:14,138 --> 00:00:19,714
-En este vídeo tienes lo mejor de cada una,
+00:00:13,200 --> 00:00:17,280
+Aquí tienes lo mejor de cada una,
 los trucos que no te cuentan…
 
 5
-00:00:19,754 --> 00:00:21,850
+00:00:17,320 --> 00:00:19,050
 y cuál te conviene a ti.
 
 6
-00:00:22,940 --> 00:00:25,592
-Lo primero: no todas cobran igual.
+00:00:20,140 --> 00:00:22,020
+No todas cobran igual.
 
 7
-00:00:25,632 --> 00:00:30,977
+00:00:22,060 --> 00:00:26,820
 Unas son tarifa plana: pagas una
 cuota y escuchas sin mirar el reloj.
 
 8
-00:00:31,017 --> 00:00:34,131
-Otras te dan un paquete de horas al mes.
+00:00:26,860 --> 00:00:28,820
+Otras te dan horas al mes.
 
 9
-00:00:34,171 --> 00:00:39,669
+00:00:28,860 --> 00:00:33,460
 Otras funcionan con créditos:
 un libro al mes que es tuyo para siempre.
 
 10
-00:00:39,709 --> 00:00:42,054
+00:00:33,500 --> 00:00:36,020
 Y otras son gratis, de verdad.
 
 11
-00:00:42,094 --> 00:00:47,515
-Para elegir, piensa cuánto escuchas:
-media hora al día son unas quince
+00:00:36,060 --> 00:00:42,070
+Para elegir, piensa cuánto escuchas: media
+hora al día son unas 15 horas al mes.
 
 12
-00:00:47,555 --> 00:00:48,805
-horas al mes.
+00:00:42,700 --> 00:00:45,780
+Empezamos por la más conocida: Audible.
 
 13
-00:00:49,980 --> 00:00:53,863
-Empezamos por la más conocida:
-Audible, de Amazon.
+00:00:45,820 --> 00:00:51,740
+Con Premium, por 9,99 € al mes,
+escuchas sin límite más de 90.000 títulos.
 
 14
-00:00:53,903 --> 00:00:57,478
-Con Premium, por nueve
-noventa y nueve al mes,
+00:00:51,780 --> 00:00:57,220
+Lo mejor: sus Originals, como Drácula,
+con actores y sonido Dolby Atmos;
 
 15
-00:00:57,518 --> 00:01:01,171
-escuchas sin límite más
-de noventa mil títulos.
+00:00:57,260 --> 00:01:01,140
+y algo que no tienen Storytel,
+Nextory ni BookBeat:
 
 16
-00:01:01,211 --> 00:01:06,094
-Lo mejor: sus Originals,
-como Drácula, producciones con actores
+00:01:01,180 --> 00:01:04,150
+escuchar en el ordenador, desde su web.
 
 17
-00:01:06,134 --> 00:01:11,325
-y sonido Dolby Atmos; un reproductor
-que llega a tres veces y media
-
-18
-00:01:11,365 --> 00:01:16,402
-la velocidad; y algo que no tienen
-Storytel, Nextory ni BookBeat:
-
-19
-00:01:16,442 --> 00:01:20,845
-también puedes escuchar en
-el ordenador, desde su web.
-
-20
-00:01:21,420 --> 00:01:24,303
+00:01:04,620 --> 00:01:07,540
 Pero ojo: Premium no lo incluye todo.
 
-21
-00:01:24,343 --> 00:01:28,842
-Algunos superventas,
-como Los tres mundos, de Posteguillo,
+18
+00:01:07,580 --> 00:01:12,140
+Algunos superventas, como Los tres mundos,
+van en su catálogo extendido y se
 
-22
-00:01:28,882 --> 00:01:32,534
-van en su catálogo
-extendido y se pagan aparte.
+19
+00:01:12,180 --> 00:01:13,433
+pagan aparte.
 
-23
-00:01:32,574 --> 00:01:33,918
+20
+00:01:13,473 --> 00:01:14,820
 ¿Un libro al mes?
 
-24
-00:01:33,958 --> 00:01:38,611
-Standard, por seis noventa y nueve,
+21
+00:01:14,860 --> 00:01:18,820
+Standard, por 6,99 €,
 mientras sigas suscrito.
 
-25
-00:01:38,651 --> 00:01:43,995
-Y un truco que hemos comprobado:
+22
+00:01:18,860 --> 00:01:22,420
+Y un truco comprobado:
 si cancelas la prueba el primer día,
 
-26
-00:01:44,035 --> 00:01:46,688
+23
+00:01:22,460 --> 00:01:24,527
 sigues escuchando hasta que acaba.
 
-27
-00:01:46,728 --> 00:01:50,593
-Con Amazon Prime,
-la prueba es de noventa días.
+24
+00:01:24,567 --> 00:01:27,750
+Con Amazon Prime, son 90 días.
 
-28
-00:01:51,300 --> 00:01:55,568
+25
+00:01:27,860 --> 00:01:33,220
 Su gran rival es Storytel:
-ocho noventa y nueve al mes,
+8,99 € al mes, también sin límite…
 
-29
-00:01:55,608 --> 00:02:01,337
-también sin límite de horas, con más
-de seiscientos cincuenta mil títulos…
-
-30
-00:02:01,377 --> 00:02:06,106
-y aquí, además, lees:
+26
+00:01:33,260 --> 00:01:37,230
+y además lees:
 audiolibros y ebooks en la misma cuota.
 
-31
-00:02:06,146 --> 00:02:09,645
+27
+00:01:37,380 --> 00:01:40,340
 Su función estrella:
 si el libro tiene ebook,
 
-32
-00:02:09,685 --> 00:02:14,260
-pulsas «Leer desde aquí» y
-sigues leyendo justo donde ibas.
+28
+00:01:40,380 --> 00:01:44,260
+pulsas «Leer desde aquí»
+y sigues justo donde ibas.
 
-33
-00:02:14,300 --> 00:02:20,242
-Y si buscas una palabra dentro del libro,
+29
+00:01:44,300 --> 00:01:48,430
+Y si buscas una palabra en el libro,
 te lleva a ese minuto del audio.
 
-34
-00:02:20,860 --> 00:02:25,512
-Si sois tres en casa,
-su plan Family sale a unos siete euros
+30
+00:01:48,980 --> 00:01:53,700
+Si sois tres en casa, el plan
+Family sale a unos 7 € por persona,
 
-35
-00:02:25,552 --> 00:02:29,205
-por persona, cada uno
-con su propia biblioteca.
+31
+00:01:53,740 --> 00:01:55,820
+cada uno con su biblioteca.
 
-36
-00:02:29,245 --> 00:02:34,512
-Lo malo: no se puede escuchar en
-el ordenador y la prueba es de solo
+32
+00:01:55,860 --> 00:02:00,820
+Lo malo: no se escucha en el ordenador
+y la prueba es de solo 7 días.
 
-37
-00:02:34,552 --> 00:02:35,435
-siete días.
-
-38
-00:02:35,475 --> 00:02:41,187
-Y cuidado: si cancelas durante la prueba,
+33
+00:02:00,860 --> 00:02:04,990
+Y si cancelas durante la prueba,
 pierdes el acceso al momento.
 
-39
-00:02:42,240 --> 00:02:46,431
+34
+00:02:05,600 --> 00:02:09,320
 Si escuchas menos,
-te sale más barato pagar por horas.
+sale más barato pagar por horas.
 
-40
-00:02:46,471 --> 00:02:50,969
-La más económica es Podimo:
-cuatro noventa y nueve al mes,
+35
+00:02:09,360 --> 00:02:15,440
+La más económica es Podimo: 4,99 € al mes,
+con 20 horas de audiolibros…
 
-41
-00:02:51,009 --> 00:02:53,508
-con veinte horas de audiolibros…
+36
+00:02:15,480 --> 00:02:20,730
+y sus pódcasts exclusivos, como
+Mimicidios o Entre el cielo y las nubes.
 
-42
-00:02:53,548 --> 00:02:57,200
-y sus pódcasts exclusivos,
-que solo están aquí,
-
-43
-00:02:57,240 --> 00:03:00,738
-como Mimicidios o Entre
-el cielo y las nubes,
-
-44
-00:03:00,778 --> 00:03:02,123
-de Laura Escanes.
-
-45
-00:03:02,163 --> 00:03:07,798
+37
+00:02:20,880 --> 00:02:25,530
 Eso sí: las horas no se acumulan;
-se reinician el día uno de cada mes.
+se reinician cada mes.
 
-46
-00:03:08,500 --> 00:03:12,460
+38
+00:02:26,080 --> 00:02:29,680
 Nextory es de las más
 completas si lees y escuchas:
 
-47
-00:03:12,500 --> 00:03:15,845
-más de un millón
-cuatrocientos mil títulos,
+39
+00:02:29,720 --> 00:02:33,850
+más de 1,4 millones de títulos,
+con el catálogo de Planeta.
 
-48
-00:03:15,885 --> 00:03:18,383
-con todo el catálogo de Planeta.
+40
+00:02:34,000 --> 00:02:40,920
+10 horas por 5,99 €, 30 por 7,99 €,
+o sin límite desde 9,99 €.
 
-49
-00:03:18,423 --> 00:03:23,306
-Diez horas por cinco noventa y nueve,
-treinta por siete noventa
-
-50
-00:03:23,346 --> 00:03:27,229
-y nueve, o sin límite desde
-nueve noventa y nueve.
-
-51
-00:03:27,269 --> 00:03:31,691
-Tiene cuatro perfiles,
+41
+00:02:40,960 --> 00:02:44,680
+Tiene 4 perfiles,
 con modo infantil, y El Librarian,
 
-52
-00:03:31,731 --> 00:03:36,922
+42
+00:02:44,720 --> 00:02:48,760
 un asistente con inteligencia artificial:
 le cuentas qué te apetece
 
-53
-00:03:36,962 --> 00:03:38,750
+43
+00:02:48,800 --> 00:02:50,490
 y te propone libros.
 
-54
-00:03:39,320 --> 00:03:43,665
+44
+00:02:50,880 --> 00:02:54,840
 Y una ventaja que no tienen Podimo,
 BookBeat ni Spotify:
 
-55
-00:03:43,705 --> 00:03:48,126
+45
+00:02:54,880 --> 00:02:58,200
 las horas que no gastas se
 guardan para el mes siguiente.
 
-56
-00:03:48,166 --> 00:03:51,801
+46
+00:02:58,240 --> 00:03:02,010
 Eso sí, leer gasta horas
 igual que escuchar.
 
-57
-00:03:52,560 --> 00:03:57,443
+47
+00:03:02,300 --> 00:03:06,340
 BookBeat también va por horas:
-veinte por seis noventa y nueve,
+20 por 6,99 €,
 
-58
-00:03:57,483 --> 00:04:02,982
-cincuenta por nueve noventa y nueve
-o cien por catorce noventa y nueve,
+48
+00:03:06,380 --> 00:03:11,700
+50 por 9,99 € o 100 por
+14,99 €, con ebooks.
 
-59
-00:04:03,022 --> 00:04:04,674
-con ebooks incluidos.
-
-60
-00:04:04,714 --> 00:04:08,982
-Y cada perfil extra,
-por cuatro noventa y nueve al mes,
-
-61
-00:04:09,022 --> 00:04:10,905
+49
+00:03:11,740 --> 00:03:14,553
+Y cada perfil extra
 tiene sus propias horas.
 
-62
-00:04:10,945 --> 00:04:15,674
+50
+00:03:14,593 --> 00:03:18,580
 Pero en España la app está en inglés,
-sin forma de cambiarla,
+y de su millón de títulos,
 
-63
-00:04:15,714 --> 00:04:21,212
-y de su millón de títulos, en español
-hay unos dieciséis mil quinientos
+51
+00:03:18,620 --> 00:03:24,550
+en español hay unos 16.500 audiolibros:
+faltan muchos de los más buscados.
 
-64
-00:04:21,252 --> 00:04:25,118
-audiolibros: faltan muchos
-de los más buscados.
-
-65
-00:04:25,780 --> 00:04:27,509
+52
+00:03:24,840 --> 00:03:27,240
 Y la novedad: Spotify.
 
-66
-00:04:27,549 --> 00:04:32,817
-Desde el siete de octubre,
-Premium incluye doce horas de audiolibros
+53
+00:03:27,280 --> 00:03:31,800
+Desde el 7 de octubre, Premium incluye
+12 horas de audiolibros al mes,
 
-67
-00:04:32,857 --> 00:04:34,971
-al mes, sin pagar nada más.
+54
+00:03:31,840 --> 00:03:33,120
+sin pagar más.
 
-68
-00:04:35,011 --> 00:04:39,586
-No se acumulan; en Duo y Familiar
-son solo para el titular,
+55
+00:03:33,160 --> 00:03:37,013
+No se acumulan;
+en Duo y Familiar son solo del titular,
 
-69
-00:04:39,626 --> 00:04:41,432
+56
+00:03:37,053 --> 00:03:38,880
 y Estudiantes no tiene.
 
-70
-00:04:41,472 --> 00:04:46,432
-Si te quedas corto, Audiolibros+
-te da quince horas más por ocho
+57
+00:03:38,920 --> 00:03:44,370
+Si te quedas corto,
+Audiolibros+ suma 15 horas por 8,99 €.
 
-71
-00:04:46,472 --> 00:04:48,492
-noventa y nueve al mes.
-
-72
-00:04:49,540 --> 00:04:54,885
+58
+00:03:44,900 --> 00:03:50,300
 Audiobooks.com funciona distinto:
-por catorce noventa y cinco dólares
+por 14,95 $ al mes,
 
-73
-00:04:54,925 --> 00:05:00,423
-al mes, unos trece euros, recibes un
-crédito que vale por el audiolibro
+59
+00:03:50,340 --> 00:03:54,940
+unos 13 €, recibes un crédito que
+vale por el audiolibro que quieras,
 
-74
-00:05:00,463 --> 00:05:05,038
-que quieras, y es tuyo para siempre,
-aunque te des de baja.
+60
+00:03:54,980 --> 00:03:56,860
+y es tuyo para siempre.
 
-75
-00:05:05,078 --> 00:05:08,731
+61
+00:03:56,900 --> 00:04:00,140
 Compensa con novedades largas:
 Los tres mundos,
 
-76
-00:05:08,771 --> 00:05:13,192
+62
+00:04:00,180 --> 00:04:03,980
 que en Audible se paga aparte,
 aquí entra con un crédito.
 
-77
-00:05:13,232 --> 00:05:18,192
-Y con una cuenta gratis,
-sin suscripción, tienes más de diez mil
+63
+00:04:04,020 --> 00:04:08,430
+Y solo con registrarte tienes
+más de 10.000 audiolibros gratis.
 
-78
-00:05:18,232 --> 00:05:19,944
-audiolibros gratis.
+64
+00:04:08,740 --> 00:04:12,060
+Eso sí: su buscador solo
+enseña libros en inglés hasta
 
-79
-00:05:20,480 --> 00:05:25,825
-Eso sí: su buscador solo enseña
-libros en inglés hasta que lo cambias
+65
+00:04:12,100 --> 00:04:13,820
+que lo cambias en Ajustes.
 
-80
-00:05:25,865 --> 00:05:26,748
-en Ajustes.
-
-81
-00:05:26,788 --> 00:05:28,345
+66
+00:04:13,860 --> 00:04:15,550
 Hazlo lo primero.
 
-82
-00:05:28,980 --> 00:05:32,632
+67
+00:04:15,740 --> 00:04:19,700
 ¿Y si el libro ya lo tienes,
 en PDF o en ebook?
 
-83
-00:05:32,672 --> 00:05:36,478
-Para eso está ElevenReader,
-la app de ElevenLabs:
+68
+00:04:19,740 --> 00:04:24,900
+Para eso está ElevenReader, de ElevenLabs:
+subes tu archivo y te lo lee una voz
 
-84
-00:05:36,518 --> 00:05:41,555
-subes tu archivo y te lo lee una
-voz con inteligencia artificial.
+69
+00:04:24,940 --> 00:04:26,740
+con inteligencia artificial.
 
-85
-00:05:41,595 --> 00:05:44,940
-Gratis tienes diez
-horas al mes; con Ultra,
+70
+00:04:26,780 --> 00:04:31,193
+Gratis tienes 10 horas al mes;
+con Ultra, tus archivos sin límite y,
 
-86
-00:05:44,980 --> 00:05:50,863
-tus archivos sin límite y veinte horas
-al mes de su catálogo de audiolibros.
+71
+00:04:31,233 --> 00:04:35,910
+al importar un PDF, se salta las
+cabeceras y los pies de página.
 
-87
-00:05:50,903 --> 00:05:57,076
-Y con Ultra, al importar un PDF, se
-salta las cabeceras y los pies de página.
-
-88
-00:05:58,080 --> 00:05:59,578
+72
+00:04:36,320 --> 00:04:38,280
 Y ahora, lo gratis.
 
-89
-00:05:59,618 --> 00:06:02,655
+73
+00:04:38,320 --> 00:04:41,960
 Lo mejor, y muy poco conocido: eBiblio.
 
-90
-00:06:02,695 --> 00:06:06,886
+74
+00:04:42,000 --> 00:04:44,813
 Con el carné de la biblioteca
 pública de tu comunidad,
 
-91
-00:06:06,926 --> 00:06:11,271
+75
+00:04:44,853 --> 00:04:48,680
 te llevas audiolibros actuales,
 novedades y superventas,
 
-92
-00:06:11,311 --> 00:06:15,117
-con los mismos narradores,
+76
+00:04:48,720 --> 00:04:50,720
 gratis y sin anuncios.
 
-93
-00:06:15,157 --> 00:06:19,348
-Funciona como la biblioteca:
-si hay un ejemplar libre,
+77
+00:04:50,760 --> 00:04:54,520
+Si hay un ejemplar libre,
+es tuyo 21 días; si no,
 
-94
-00:06:19,388 --> 00:06:23,194
-es tuyo veintiún días;
-si no, te pones a la cola.
+78
+00:04:54,560 --> 00:04:55,480
+a la cola.
 
-95
-00:06:23,234 --> 00:06:26,578
-Cataluña y el País
-Vasco no tienen eBiblio:
+79
+00:04:55,520 --> 00:04:58,840
+Cataluña y el País Vasco
+tienen su propio servicio:
 
-96
-00:06:26,618 --> 00:06:29,715
-tienen Biblio Digital y eLiburutegia.
+80
+00:04:58,880 --> 00:05:01,690
+Biblio Digital y eLiburutegia.
 
-97
-00:06:30,320 --> 00:06:35,049
-El truco para no esperar:
-en el catálogo, marca «Audiolibros»
+81
+00:05:01,960 --> 00:05:07,040
+El truco para no esperar: marca
+«Audiolibros» y «Títulos disponibles».
 
-98
-00:06:35,089 --> 00:06:36,972
-y «Títulos disponibles».
-
-99
-00:06:37,012 --> 00:06:41,108
-Así solo ves los que te
+82
+00:05:07,080 --> 00:05:10,370
+Así solo ves lo que te
 puedes llevar ahora mismo.
 
-100
-00:06:41,810 --> 00:06:44,660
+83
+00:05:10,550 --> 00:05:13,400
 Yo no sé si esto es una
 historia que parece cuento
 
-101
-00:06:44,990 --> 00:06:47,100
+84
+00:05:13,730 --> 00:05:15,840
 o un cuento que parece historia.
 
-102
-00:06:47,440 --> 00:06:52,631
-Para clásicos, LibriVox:
-más de veintiún mil audiolibros de dominio
+85
+00:05:16,180 --> 00:05:21,420
+Para clásicos, LibriVox: más de
+21.000 audiolibros de dominio público,
 
-103
-00:06:52,671 --> 00:06:57,631
-público, leídos por voluntarios,
-sin anuncios y sin registrarte.
+86
+00:05:21,460 --> 00:05:24,460
+leídos por voluntarios y sin registrarte.
 
-104
-00:06:57,671 --> 00:07:01,015
-En español hay más de
-quinientos cincuenta:
+87
+00:05:24,500 --> 00:05:27,260
+En español, más de 550:
 
-105
-00:07:01,055 --> 00:07:04,785
-el Quijote, La Regenta,
-las Leyendas de Bécquer…
+88
+00:05:27,300 --> 00:05:30,220
+el Quijote, La Regenta, Bécquer…
 
-106
-00:07:04,825 --> 00:07:09,938
+89
+00:05:30,260 --> 00:05:35,580
 No tiene app oficial, pero hay truco:
-pega el enlace RSS del libro
+pega el enlace RSS del libro en tu app
 
-107
-00:07:09,978 --> 00:07:14,092
-en tu app de pódcasts,
-y lo escuchas como un pódcast,
+90
+00:05:35,620 --> 00:05:38,990
+de pódcasts y lo escuchas como un pódcast.
 
-108
-00:07:14,132 --> 00:07:15,459
-con descargas.
+91
+00:05:39,260 --> 00:05:43,740
+Y El Libro Total:
+casi 6.700 audiolibros gratis,
 
-109
-00:07:16,160 --> 00:07:21,043
-Y El Libro Total: casi seis mil
-setecientos audiolibros gratis,
+92
+00:05:43,780 --> 00:05:46,180
+sin cuenta y con voces humanas.
 
-110
-00:07:21,083 --> 00:07:23,428
-sin cuenta, con voces humanas.
-
-111
-00:07:23,468 --> 00:07:29,428
+93
+00:05:46,220 --> 00:05:51,140
 Su gran función es la audiolectura:
 el texto se resalta mientras lo escuchas.
 
-112
-00:07:29,468 --> 00:07:33,197
+94
+00:05:51,180 --> 00:05:54,790
 Eso sí, casi todo son
-clásicos y relatos cortos,
+clásicos y relatos cortos.
 
-113
-00:07:33,237 --> 00:07:35,718
-y el audio necesita conexión.
-
-114
-00:07:36,720 --> 00:07:37,757
+95
+00:05:55,720 --> 00:05:56,880
 Primer truco…
 
-115
-00:07:37,797 --> 00:07:39,911
+96
+00:05:56,920 --> 00:05:59,280
 o mejor dicho, primer mito.
 
-116
-00:07:39,951 --> 00:07:44,218
+97
+00:05:59,320 --> 00:06:02,693
 En las de horas,
-escuchar más rápido no te ahorra nada:
+escuchar más rápido no ahorra nada:
 
-117
-00:07:44,258 --> 00:07:46,680
-se cuenta lo que dura el libro.
+98
+00:06:02,733 --> 00:06:04,453
+cuenta lo que dura el libro.
 
-118
-00:07:46,720 --> 00:07:52,295
-Un audiolibro de diez horas te gasta diez,
+99
+00:06:04,493 --> 00:06:08,960
+Un audiolibro de 10 horas te gasta 10,
 lo escuches como lo escuches.
 
-119
-00:07:52,335 --> 00:07:56,142
+100
+00:06:09,000 --> 00:06:12,160
 Si te gusta acelerar,
 lo tuyo es la tarifa plana:
 
-120
-00:07:56,182 --> 00:07:59,124
+101
+00:06:12,200 --> 00:06:15,490
 en Audible y Storytel no hay reloj.
 
-121
-00:07:59,880 --> 00:08:02,609
-Segundo: cuándo cancelar la prueba.
+102
+00:06:15,640 --> 00:06:18,320
+Segundo: cuándo cancelar.
 
-122
-00:08:02,649 --> 00:08:08,148
+103
+00:06:18,360 --> 00:06:23,520
 En Storytel, Nextory, Podimo y BookBeat,
 si cancelas durante la prueba,
 
-123
-00:08:08,188 --> 00:08:13,455
+104
+00:06:23,560 --> 00:06:28,240
 pierdes el acceso al momento:
-hazlo dos o tres días antes del final.
+hazlo 2 o 3 días antes del final.
 
-124
-00:08:13,495 --> 00:08:17,071
+105
+00:06:28,280 --> 00:06:32,080
 En Audiobooks.com, además,
 pierdes los libros.
 
-125
-00:08:17,111 --> 00:08:23,071
-En Audible, en cambio, puedes cancelar
-el primer día y sigues hasta el final.
+106
+00:06:32,120 --> 00:06:36,720
+En Audible, en cambio, cancela el
+primer día y sigues hasta el final.
 
-126
-00:08:23,111 --> 00:08:27,822
+107
+00:06:36,760 --> 00:06:41,490
 Y apúntate la fecha:
-BookBeat no te avisa antes de cobrar.
+BookBeat no avisa antes de cobrar.
 
-127
-00:08:28,580 --> 00:08:32,925
-Tercero: date de alta en la web,
-no en la app del móvil.
+108
+00:06:41,620 --> 00:06:45,740
+Tercero: date de alta
+en la web, no en la app.
 
-128
-00:08:32,965 --> 00:08:37,540
-En Audible, si te suscribes
-por la App Store o Google Play,
+109
+00:06:45,780 --> 00:06:50,860
+En Audible, por la App Store o Google
+Play no hay prueba gratis y puede salirte
 
-129
-00:08:37,580 --> 00:08:41,155
-no hay prueba gratis y
-puede salirte más caro.
+110
+00:06:50,900 --> 00:06:51,820
+más caro.
 
-130
-00:08:41,195 --> 00:08:46,309
-Y en Audiobooks.com, la app cobra
-diecisiete noventa y cinco euros
+111
+00:06:51,860 --> 00:06:56,780
+Y en Audiobooks.com,
+la app cobra 17,95 € al mes,
 
-131
-00:08:46,349 --> 00:08:48,830
-al mes, en vez de unos trece.
+112
+00:06:56,820 --> 00:06:58,830
+en vez de unos 13.
 
-132
-00:08:49,540 --> 00:08:52,654
-Cuarto: las pruebas se pueden encadenar.
+113
+00:06:58,980 --> 00:07:01,620
+Cuarto: encadena las pruebas.
 
-133
-00:08:52,694 --> 00:08:56,038
-Treinta días de Audible,
-treinta de Podimo,
+114
+00:07:01,660 --> 00:07:06,020
+30 días de Audible,
+30 de Podimo, 30 de BookBeat…
 
-134
-00:08:56,078 --> 00:08:57,654
-treinta de BookBeat…
-
-135
-00:08:57,694 --> 00:09:02,115
+115
+00:07:06,060 --> 00:07:09,780
 y desde SonorBooks,
-treinta de Nextory en vez de catorce,
+30 de Nextory en vez de 14,
 
-136
-00:09:02,155 --> 00:09:05,346
-y treinta de ElevenReader en vez de tres.
+116
+00:07:09,820 --> 00:07:12,780
+y 30 de ElevenReader en vez de tres.
 
-137
-00:09:05,386 --> 00:09:09,192
-Una detrás de otra,
+117
+00:07:12,820 --> 00:07:15,660
+Una tras otra,
 son meses de pruebas legales,
 
-138
-00:09:09,232 --> 00:09:12,500
+118
+00:07:15,700 --> 00:07:18,380
 si eres cliente nuevo y cancelas a tiempo.
 
-139
-00:09:12,540 --> 00:09:15,636
-Todos los enlaces, en la descripción.
+119
+00:07:18,420 --> 00:07:20,910
+Los enlaces, en la descripción.
 
-140
-00:09:16,500 --> 00:09:20,152
+120
+00:07:21,380 --> 00:07:25,220
 Y el quinto, el más importante:
 antes de pagar,
 
-141
-00:09:20,192 --> 00:09:22,306
-busca el libro que quieres.
+121
+00:07:25,260 --> 00:07:26,580
+busca tu libro.
 
-142
-00:09:22,346 --> 00:09:27,383
+122
+00:07:26,620 --> 00:07:30,860
 Ninguna lo tiene todo:
 Los tres mundos se paga aparte en Audible,
 
-143
-00:09:27,423 --> 00:09:32,152
+123
+00:07:30,900 --> 00:07:35,260
 no está en BookBeat y entra con
 un crédito en Audiobooks.com.
 
-144
-00:09:32,192 --> 00:09:37,152
-En SonorBooks buscas tu libro y
-ves en cuáles de las plataformas
+124
+00:07:35,300 --> 00:07:39,340
+En SonorBooks ves en cuáles de las
+plataformas que comparamos está,
 
-145
-00:09:37,192 --> 00:09:41,519
-que comparamos está,
+125
+00:07:39,380 --> 00:07:41,870
 con qué narrador y a qué precio.
 
-146
-00:09:42,520 --> 00:09:44,711
-Entonces, ¿cuál te conviene?
+126
+00:07:42,660 --> 00:07:44,020
+¿Cuál te conviene?
 
-147
-00:09:44,751 --> 00:09:50,018
+127
+00:07:44,060 --> 00:07:48,700
 Si escuchas mucho, tarifa plana:
-Storytel, por ocho noventa y nueve,
+Storytel, si también quieres ebooks,
 
-148
-00:09:50,058 --> 00:09:55,018
-si también quieres ebooks;
-o Audible, por nueve noventa y nueve,
+128
+00:07:48,740 --> 00:07:50,830
+o Audible, por sus Originals.
 
-149
-00:09:55,058 --> 00:09:56,942
-si buscas sus Originals.
-
-150
-00:09:56,982 --> 00:10:00,403
+129
+00:07:51,060 --> 00:07:54,300
 Si escuchas uno o dos
 libros al mes, Podimo.
 
-151
-00:10:00,443 --> 00:10:03,326
+130
+00:07:54,340 --> 00:07:57,140
 Si lees tanto como escuchas, Nextory.
 
-152
-00:10:03,366 --> 00:10:06,480
+131
+00:07:57,180 --> 00:07:59,900
 Si también escuchas en inglés, BookBeat.
 
-153
-00:10:06,520 --> 00:10:10,865
-Si ya pagas Spotify Premium,
-empieza por tus doce horas.
+132
+00:07:59,940 --> 00:08:02,980
+Si ya pagas Spotify Premium, tus 12 horas.
 
-154
-00:10:10,905 --> 00:10:15,385
-Y si quieres que los libros sean tuyos,
+133
+00:08:03,020 --> 00:08:06,830
+Y si quieres que sean tuyos,
 Audiobooks.com.
 
-155
-00:10:16,080 --> 00:10:17,502
+134
+00:08:07,200 --> 00:08:08,570
 ¿Y sin pagar nada?
 
-156
-00:10:17,542 --> 00:10:21,348
+135
+00:08:08,800 --> 00:08:12,040
 eBiblio para novedades,
 si no te importa esperar;
 
-157
-00:10:21,388 --> 00:10:26,732
+136
+00:08:12,080 --> 00:08:16,600
 LibriVox y El Libro Total para clásicos;
 y ElevenReader para escuchar
 
-158
-00:10:26,772 --> 00:10:28,253
+137
+00:08:16,640 --> 00:08:18,410
 tus propios PDF.
 
-159
-00:10:28,960 --> 00:10:32,612
-Las diez tienen su reseña
-completa en el canal,
-
-160
-00:10:32,652 --> 00:10:36,305
+138
+00:08:19,120 --> 00:08:23,040
+Las once tienen su reseña en el canal,
 y la comparativa entera,
-con todos los precios,
 
-161
-00:10:36,345 --> 00:10:38,920
+139
+00:08:23,080 --> 00:08:24,970
 en el artículo de la descripción.
 
-162
-00:10:38,960 --> 00:10:40,074
+140
+00:08:25,200 --> 00:08:26,400
 ¿Cuál usas tú?
 
-163
-00:10:40,114 --> 00:10:42,535
+141
+00:08:26,440 --> 00:08:28,360
 Cuéntanoslo en los comentarios.
 
-164
-00:10:42,575 --> 00:10:47,287
+142
+00:08:28,400 --> 00:08:32,650
 Y encuentra dónde escuchar tu
 próximo libro en SonorBooks.

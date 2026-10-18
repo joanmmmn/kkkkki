@@ -7,7 +7,7 @@ import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Bumper, BUMP_IN, BUMP_LEN, BUMP_LOCK } from './kit';
 
-export const MP_MUSIC: string | null = null; // music/mp_bed.mp3 cuando esté compuesta (tools/mp_music.py)
+export const MP_MUSIC: string | null = 'music/mp_bed.mp3'; // tools/mp_music.py
 
 // Transiciones entre escenas (cuando no hay separador ni enlace del móvil). La escena saliente dura OV fotogramas más
 // y queda debajo de la entrante, que aparece encima: así las dos se cruzan y nunca hay un fotograma vacío.

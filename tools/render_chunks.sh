@@ -19,8 +19,10 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
   b=$((a + CHUNK - 1)); [ "$b" -ge "$TOTAL" ] && b=$((TOTAL - 1))
   part="$TMP/part_$(printf %02d $i).mp4"
   if [ ! -s "$part" ]; then
-    npx remotion render src/index.ts "$COMP" "$part" --frames="$a-$b" --concurrency=2 --crf=16 --muted --scale="$SCALE" \
+    # Se renderiza a un nombre temporal y se renombra al acabar: si el proceso se corta, el tramo a medias no cuenta como hecho.
+    npx remotion render src/index.ts "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf=16 --muted --scale="$SCALE" \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
+    mv "${part%.mp4}.tmp.mp4" "$part"
   fi
   echo "file '$(basename "$part")'" >> "$TMP/list.txt"
   echo "tramo $i ($a-$b) listo"
@@ -35,8 +37,9 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
   b=$((a + CHUNK - 1)); [ "$b" -ge "$TOTAL" ] && b=$((TOTAL - 1))
   apart="$TMP/audio_$(printf %02d $i).wav"
   if [ ! -s "$apart" ]; then
-    npx remotion render src/index.ts "$COMP" "$apart" --frames="$a-$b" --codec=wav \
+    npx remotion render src/index.ts "$COMP" "${apart%.wav}.tmp.wav" --frames="$a-$b" --codec=wav \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/audio_$i.log" 2>&1 || { echo "Falló el audio del tramo $a-$b" >&2; exit 1; }
+    mv "${apart%.wav}.tmp.wav" "$apart"
   fi
   echo "file '$(basename "$apart")'" >> "$TMP/alist.txt"
   i=$((i + 1))

@@ -9,7 +9,7 @@ import { Pill } from '../../components/Pill';
 import { Phase } from '../../components/Phase';
 import { wf } from './timeline';
 import { color, font, Kicker, LinkBadge, MaskTitle, MpStage, PKey, PLAT, PlatTile, SceneProps, shadow, Sheen, useSpring } from './kit';
-import { TEN } from './Intro';
+import { ELEVEN } from './Intro';
 
 type P = SceneProps;
 
@@ -104,7 +104,7 @@ export const Z26Cierre: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('Z26', w, n);
-  const fDiez = at('diez');
+  const fDiez = at('once');
   const fCanal = at('canal');
   const fArt = at('articulo');
   const fCual = at('usas');
@@ -126,10 +126,10 @@ export const Z26Cierre: React.FC<P> = ({ lead, dur }) => {
         <AbsoluteFill>
           <div style={{ position: 'absolute', left: 130, top: 110 }}>
             <Kicker at={2} text="En el canal" />
-            <MaskTitle text="Las diez, reseñadas a fondo" hi="diez" at={5} size={84} />
+            <MaskTitle text="Las once, reseñadas a fondo" hi="once" at={5} size={84} />
           </div>
-          <div style={{ position: 'absolute', left: 130, top: 330, display: 'grid', gridTemplateColumns: 'repeat(5, 150px)', gap: 26 }}>
-            {TEN.map((k, i) => {
+          <div style={{ position: 'absolute', left: 130, top: 330, display: 'grid', gridTemplateColumns: 'repeat(6, 150px)', gap: 26 }}>
+            {ELEVEN.map((k, i) => {
               const s = spring({ frame: frame - fDiez - i * 3, fps, config: { damping: 13, stiffness: 190 } });
               return <PlatTile key={k} k={k} size={150} style={{ opacity: frame < fDiez - 1 ? 0 : s, transform: `translateY(${(1 - s) * 40}px) scale(${0.8 + 0.2 * s})` }} />;
             })}
@@ -170,7 +170,7 @@ export const Z26Cierre: React.FC<P> = ({ lead, dur }) => {
           </div>
         </AbsoluteFill>
       </Phase>
-      {TEN.map((_, i) => <Sfx key={i} name="tick_soft" at={fDiez + i * 3 + 4} volume={0.35} />)}
+      {ELEVEN.map((_, i) => <Sfx key={i} name="tick_soft" at={fDiez + i * 3 + 4} volume={0.35} />)}
       <Sfx name="ui_pop" at={fArt - 4} volume={0.6} />
       <Sfx name="pop" at={fCual} volume={0.7} />
       <Sfx name="whoosh_soft" at={p1Out} volume={0.6} />

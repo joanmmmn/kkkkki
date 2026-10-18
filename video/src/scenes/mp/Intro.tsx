@@ -20,6 +20,8 @@ const SCREENS: { k: PKey; src: string }[] = [
 ];
 // Las diez reseñadas, en el orden del vídeo; Spotify llega después, aparte.
 export const TEN: PKey[] = ['audible', 'storytel', 'podimo', 'nextory', 'bookbeat', 'audiobooks', 'elevenreader', 'ebiblio', 'librivox', 'elt'];
+// Las once reseñadas en el canal (Spotify, la última, desde el 15/10).
+export const ELEVEN: PKey[] = [...TEN, 'spotify'];
 
 // Z01 · Arranque: un móvil pasa por las apps reales a toda velocidad; después caen las diez fichas una a una, llega Spotify
 // con «Nuevo» y todo se aparta para el título y las tres promesas del vídeo.
@@ -28,13 +30,13 @@ export const Z01Hook: React.FC<P> = ({ lead, dur }) => {
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('Z01', w, n);
   const fUna = at('una');
-  const fDiez = at('diez');
+  const fDiez = at('once');
   const fApps = at('apps');
   const fPrecios = at('precios');
   const fLetra = at('letra');
-  const fSuma = at('sumamos');
+  const fSuma = at('recien');
   const fSpot = at('spotify');
-  const fVideo = at('video');
+  const fVideo = at('aqui');
   const fMejor = at('mejor');
   const fTrucos = at('trucos');
   const fConv = at('conviene');
@@ -108,7 +110,7 @@ export const Z01Hook: React.FC<P> = ({ lead, dur }) => {
             <Kicker at={fUna - 6} text="Reseñadas a fondo" />
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 26, opacity: sCount, transform: `translateY(${(1 - sCount) * 30}px)` }}>
               <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.9, letterSpacing: -16, color: color.ink }}>
-                {frame >= fDiez - 4 ? <Odometer text="10" at={fDiez - 4} size={300} dur={28} /> : <span style={{ color: 'transparent' }}>10</span>}
+                {frame >= fDiez - 4 ? <Odometer text="11" at={fDiez - 4} size={300} dur={28} /> : <span style={{ color: 'transparent' }}>11</span>}
               </span>
               <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, lineHeight: 1.05, letterSpacing: -1.5, color: color.ink }}>plataformas<br />en español</span>
             </div>
@@ -122,7 +124,7 @@ export const Z01Hook: React.FC<P> = ({ lead, dur }) => {
               })}
             </div>
             <div style={{ marginTop: 34, fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: color.ink2,
-              opacity: interpolate(frame, [fSuma - 4, fSuma + 10], [0, 1], clamp) }}>+ la recién llegada</div>
+              opacity: interpolate(frame, [fSuma - 4, fSuma + 10], [0, 1], clamp) }}>Incluida la recién llegada</div>
           </div>
         </div>
         {/* Título y promesas */}
@@ -141,7 +143,7 @@ export const Z01Hook: React.FC<P> = ({ lead, dur }) => {
       {SCREENS.slice(1).map((_, i) => <Sfx key={`z${i}`} name="swipe" at={8 + (i + 1) * CUT} volume={0.75} />)}
       <Sfx name="whoosh_fast" at={fUna - 4} volume={0.7} />
       {TEN.map((_, i) => <Sfx key={`t${i}`} name="snap_in" at={fUna + i * 4 + 9} volume={0.45} />)}
-      <ChangeTicks value={(f) => (f < fDiez - 4 ? '' : String(Math.round(10 * Math.min(1, spring({ frame: f - fDiez + 4, fps, config: { damping: 15, stiffness: 120 }, durationInFrames: 28 })))))} from={fDiez - 4} to={fDiez + 30} volume={0.8} />
+      <ChangeTicks value={(f) => (f < fDiez - 4 ? '' : String(Math.round(11 * Math.min(1, spring({ frame: f - fDiez + 4, fps, config: { damping: 15, stiffness: 120 }, durationInFrames: 28 })))))} from={fDiez - 4} to={fDiez + 30} volume={0.8} />
       {sideChips.map((c) => <Sfx key={c.label} name="ui_pop" at={c.f - 2} volume={0.6} />)}
       <Sfx name="pop" at={fSpot - 2} volume={0.8} />
       <Sfx name="sparkle" at={fSpot + 6} volume={0.6} />
@@ -165,7 +167,7 @@ export const Z02Modelos: React.FC<P> = ({ lead, dur }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const at = (w: string, n = 0) => lead + wf('Z02', w, n);
-  const fLo = at('primero');
+  const fLo = at('todas');
   const fWords = MODELS.map((m) => at(m.word));
   const fPiensa = at('piensa');
   const fMedia = at('media');

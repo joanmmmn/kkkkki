@@ -13,36 +13,36 @@
  "scenes": [
   {
    "id": "Z01",
-   "text": "Hemos reseñado a fondo, una a una, diez plataformas de audiolibros en español: sus apps, sus precios y su letra pequeña. Y les sumamos la recién llegada, Spotify. En este vídeo tienes lo mejor de cada una, los trucos que no te cuentan… y cuál te conviene a ti."
+   "text": "Hemos reseñado a fondo, una a una, once plataformas de audiolibros en español, incluida la recién llegada, Spotify: sus apps, sus precios y su letra pequeña. Aquí tienes lo mejor de cada una, los trucos que no te cuentan… y cuál te conviene a ti."
   },
   {
    "id": "Z02",
-   "text": "Lo primero: no todas cobran igual. Unas son tarifa plana: pagas una cuota y escuchas sin mirar el reloj. Otras te dan un paquete de horas al mes. Otras funcionan con créditos: un libro al mes que es tuyo para siempre. Y otras son gratis, de verdad. Para elegir, piensa cuánto escuchas: media hora al día son unas quince horas al mes."
+   "text": "No todas cobran igual. Unas son tarifa plana: pagas una cuota y escuchas sin mirar el reloj. Otras te dan horas al mes. Otras funcionan con créditos: un libro al mes que es tuyo para siempre. Y otras son gratis, de verdad. Para elegir, piensa cuánto escuchas: media hora al día son unas quince horas al mes."
   },
   {
    "id": "Z03",
-   "text": "Empezamos por la más conocida: Audible, de Amazon. Con Premium, por nueve noventa y nueve al mes, escuchas sin límite más de noventa mil títulos. Lo mejor: sus Originals, como Drácula, producciones con actores y sonido Dolby Atmos; un reproductor que llega a tres veces y media la velocidad; y algo que no tienen Storytel, Nextory ni BookBeat: también puedes escuchar en el ordenador, desde su web."
+   "text": "Empezamos por la más conocida: Audible. Con Premium, por nueve noventa y nueve al mes, escuchas sin límite más de noventa mil títulos. Lo mejor: sus Originals, como Drácula, con actores y sonido Dolby Atmos; y algo que no tienen Storytel, Nextory ni BookBeat: escuchar en el ordenador, desde su web."
   },
   {
    "id": "Z04",
-   "text": "Pero ojo: Premium no lo incluye todo. Algunos superventas, como Los tres mundos, de Posteguillo, van en su catálogo extendido y se pagan aparte. ¿Un libro al mes? Standard, por seis noventa y nueve, mientras sigas suscrito. Y un truco que hemos comprobado: si cancelas la prueba el primer día, sigues escuchando hasta que acaba. Con Amazon Prime, la prueba es de noventa días."
+   "text": "Pero ojo: Premium no lo incluye todo. Algunos superventas, como Los tres mundos, van en su catálogo extendido y se pagan aparte. ¿Un libro al mes? Standard, por seis noventa y nueve, mientras sigas suscrito. Y un truco comprobado: si cancelas la prueba el primer día, sigues escuchando hasta que acaba. Con Amazon Prime, son noventa días."
   },
   {
    "id": "Z05",
-   "text": "Su gran rival es Storytel: ocho noventa y nueve al mes, también sin límite de horas, con más de seiscientos cincuenta mil títulos… y aquí, además, lees: audiolibros y ebooks en la misma cuota. Su función estrella: si el libro tiene ebook, pulsas «Leer desde aquí» y sigues leyendo justo donde ibas. Y si buscas una palabra dentro del libro, te lleva a ese minuto del audio."
+   "text": "Su gran rival es Storytel: ocho noventa y nueve al mes, también sin límite… y además lees: audiolibros y ebooks en la misma cuota. Su función estrella: si el libro tiene ebook, pulsas «Leer desde aquí» y sigues justo donde ibas. Y si buscas una palabra en el libro, te lleva a ese minuto del audio."
   },
   {
    "id": "Z06",
-   "text": "Si sois tres en casa, su plan Family sale a unos siete euros por persona, cada uno con su propia biblioteca. Lo malo: no se puede escuchar en el ordenador y la prueba es de solo siete días. Y cuidado: si cancelas durante la prueba, pierdes el acceso al momento."
+   "text": "Si sois tres en casa, el plan Family sale a unos siete euros por persona, cada uno con su biblioteca. Lo malo: no se escucha en el ordenador y la prueba es de solo siete días. Y si cancelas durante la prueba, pierdes el acceso al momento."
   },
   {
    "id": "Z07",
-   "text": "Si escuchas menos, te sale más barato pagar por horas. La más económica es Podimo: cuatro noventa y nueve al mes, con veinte horas de audiolibros… y sus pódcasts exclusivos, que solo están aquí, como Mimicidios o Entre el cielo y las nubes, de Laura Escanes. Eso sí: las horas no se acumulan; se reinician el día uno de cada mes.",
-   "say": "Si escuchas menos, te sale más barato pagar por horas. La más económica es Podímo: cuatro noventa y nueve al mes, con veinte horas de audiolibros… y sus pódcasts exclusivos, que solo están aquí, como Mimicidios o Entre el cielo y las nubes, de Laura Escanes. Eso sí: las horas no se acumulan; se reinician el día uno de cada mes."
+   "text": "Si escuchas menos, sale más barato pagar por horas. La más económica es Podimo: cuatro noventa y nueve al mes, con veinte horas de audiolibros… y sus pódcasts exclusivos, como Mimicidios o Entre el cielo y las nubes. Eso sí: las horas no se acumulan; se reinician cada mes.",
+   "say": "Si escuchas menos, sale más barato pagar por horas. La más económica es Podímo: cuatro noventa y nueve al mes, con veinte horas de audiolibros… y sus pódcasts exclusivos, como Mimicidios o Entre el cielo y las nubes. Eso sí: las horas no se acumulan; se reinician cada mes."
   },
   {
    "id": "Z08",
-   "text": "Nextory es de las más completas si lees y escuchas: más de un millón cuatrocientos mil títulos, con todo el catálogo de Planeta. Diez horas por cinco noventa y nueve, treinta por siete noventa y nueve, o sin límite desde nueve noventa y nueve. Tiene cuatro perfiles, con modo infantil, y El Librarian, un asistente con inteligencia artificial: le cuentas qué te apetece y te propone libros."
+   "text": "Nextory es de las más completas si lees y escuchas: más de un millón cuatrocientos mil títulos, con el catálogo de Planeta. Diez horas por cinco noventa y nueve, treinta por siete noventa y nueve, o sin límite desde nueve noventa y nueve. Tiene cuatro perfiles, con modo infantil, y El Librarian, un asistente con inteligencia artificial: le cuentas qué te apetece y te propone libros."
   },
   {
    "id": "Z09",
@@ -51,16 +51,16 @@
   },
   {
    "id": "Z10",
-   "text": "BookBeat también va por horas: veinte por seis noventa y nueve, cincuenta por nueve noventa y nueve o cien por catorce noventa y nueve, con ebooks incluidos. Y cada perfil extra, por cuatro noventa y nueve al mes, tiene sus propias horas. Pero en España la app está en inglés, sin forma de cambiarla, y de su millón de títulos, en español hay unos dieciséis mil quinientos audiolibros: faltan muchos de los más buscados."
+   "text": "BookBeat también va por horas: veinte por seis noventa y nueve, cincuenta por nueve noventa y nueve o cien por catorce noventa y nueve, con ebooks. Y cada perfil extra tiene sus propias horas. Pero en España la app está en inglés, y de su millón de títulos, en español hay unos dieciséis mil quinientos audiolibros: faltan muchos de los más buscados."
   },
   {
    "id": "Z11",
-   "text": "Y la novedad: Spotify. Desde el siete de octubre, Premium incluye doce horas de audiolibros al mes, sin pagar nada más. No se acumulan; en Duo y Familiar son solo para el titular, y Estudiantes no tiene. Si te quedas corto, Audiolibros+ te da quince horas más por ocho noventa y nueve al mes.",
-   "say": "Y la novedad: Spotify. Desde el siete de octubre, Premium incluye doce horas de audiolibros al mes, sin pagar nada más. No se acumulan; en Duo y Familiar son solo para el titular, y Estudiantes no tiene. Si te quedas corto, Audiolibros más te da quince horas más por ocho noventa y nueve al mes."
+   "text": "Y la novedad: Spotify. Desde el siete de octubre, Premium incluye doce horas de audiolibros al mes, sin pagar más. No se acumulan; en Duo y Familiar son solo del titular, y Estudiantes no tiene. Si te quedas corto, Audiolibros+ suma quince horas por ocho noventa y nueve.",
+   "say": "Y la novedad: Spotify. Desde el siete de octubre, Premium incluye doce horas de audiolibros al mes, sin pagar más. No se acumulan; en Duo y Familiar son solo del titular, y Estudiantes no tiene. Si te quedas corto, Audiolibros Plus suma quince horas por ocho noventa y nueve."
   },
   {
    "id": "Z12",
-   "text": "Audiobooks.com funciona distinto: por catorce noventa y cinco dólares al mes, unos trece euros, recibes un crédito que vale por el audiolibro que quieras, y es tuyo para siempre, aunque te des de baja. Compensa con novedades largas: Los tres mundos, que en Audible se paga aparte, aquí entra con un crédito. Y con una cuenta gratis, sin suscripción, tienes más de diez mil audiolibros gratis."
+   "text": "Audiobooks.com funciona distinto: por catorce noventa y cinco dólares al mes, unos trece euros, recibes un crédito que vale por el audiolibro que quieras, y es tuyo para siempre. Compensa con novedades largas: Los tres mundos, que en Audible se paga aparte, aquí entra con un crédito. Y solo con registrarte tienes más de diez mil audiolibros gratis."
   },
   {
    "id": "Z13",
@@ -68,50 +68,50 @@
   },
   {
    "id": "Z14",
-   "text": "¿Y si el libro ya lo tienes, en PDF o en ebook? Para eso está ElevenReader, la app de ElevenLabs: subes tu archivo y te lo lee una voz con inteligencia artificial. Gratis tienes diez horas al mes; con Ultra, tus archivos sin límite y veinte horas al mes de su catálogo de audiolibros. Y con Ultra, al importar un PDF, se salta las cabeceras y los pies de página."
+   "text": "¿Y si el libro ya lo tienes, en PDF o en ebook? Para eso está ElevenReader, de ElevenLabs: subes tu archivo y te lo lee una voz con inteligencia artificial. Gratis tienes diez horas al mes; con Ultra, tus archivos sin límite y, al importar un PDF, se salta las cabeceras y los pies de página."
   },
   {
    "id": "Z15",
-   "text": "Y ahora, lo gratis. Lo mejor, y muy poco conocido: eBiblio. Con el carné de la biblioteca pública de tu comunidad, te llevas audiolibros actuales, novedades y superventas, con los mismos narradores, gratis y sin anuncios. Funciona como la biblioteca: si hay un ejemplar libre, es tuyo veintiún días; si no, te pones a la cola. Cataluña y el País Vasco no tienen eBiblio: tienen Biblio Digital y eLiburutegia."
+   "text": "Y ahora, lo gratis. Lo mejor, y muy poco conocido: eBiblio. Con el carné de la biblioteca pública de tu comunidad, te llevas audiolibros actuales, novedades y superventas, gratis y sin anuncios. Si hay un ejemplar libre, es tuyo veintiún días; si no, a la cola. Cataluña y el País Vasco tienen su propio servicio: Biblio Digital y eLiburutegia."
   },
   {
    "id": "Z16",
-   "text": "El truco para no esperar: en el catálogo, marca «Audiolibros» y «Títulos disponibles». Así solo ves los que te puedes llevar ahora mismo."
+   "text": "El truco para no esperar: marca «Audiolibros» y «Títulos disponibles». Así solo ves lo que te puedes llevar ahora mismo."
   },
   {
    "id": "Z17",
-   "text": "Para clásicos, LibriVox: más de veintiún mil audiolibros de dominio público, leídos por voluntarios, sin anuncios y sin registrarte. En español hay más de quinientos cincuenta: el Quijote, La Regenta, las Leyendas de Bécquer… No tiene app oficial, pero hay truco: pega el enlace RSS del libro en tu app de pódcasts, y lo escuchas como un pódcast, con descargas."
+   "text": "Para clásicos, LibriVox: más de veintiún mil audiolibros de dominio público, leídos por voluntarios y sin registrarte. En español, más de quinientos cincuenta: el Quijote, La Regenta, Bécquer… No tiene app oficial, pero hay truco: pega el enlace RSS del libro en tu app de pódcasts y lo escuchas como un pódcast."
   },
   {
    "id": "Z18",
-   "text": "Y El Libro Total: casi seis mil setecientos audiolibros gratis, sin cuenta, con voces humanas. Su gran función es la audiolectura: el texto se resalta mientras lo escuchas. Eso sí, casi todo son clásicos y relatos cortos, y el audio necesita conexión."
+   "text": "Y El Libro Total: casi seis mil setecientos audiolibros gratis, sin cuenta y con voces humanas. Su gran función es la audiolectura: el texto se resalta mientras lo escuchas. Eso sí, casi todo son clásicos y relatos cortos."
   },
   {
    "id": "Z19",
-   "text": "Primer truco… o mejor dicho, primer mito. En las de horas, escuchar más rápido no te ahorra nada: se cuenta lo que dura el libro. Un audiolibro de diez horas te gasta diez, lo escuches como lo escuches. Si te gusta acelerar, lo tuyo es la tarifa plana: en Audible y Storytel no hay reloj."
+   "text": "Primer truco… o mejor dicho, primer mito. En las de horas, escuchar más rápido no ahorra nada: cuenta lo que dura el libro. Un audiolibro de diez horas te gasta diez, lo escuches como lo escuches. Si te gusta acelerar, lo tuyo es la tarifa plana: en Audible y Storytel no hay reloj."
   },
   {
    "id": "Z20",
-   "text": "Segundo: cuándo cancelar la prueba. En Storytel, Nextory, Podimo y BookBeat, si cancelas durante la prueba, pierdes el acceso al momento: hazlo dos o tres días antes del final. En Audiobooks.com, además, pierdes los libros. En Audible, en cambio, puedes cancelar el primer día y sigues hasta el final. Y apúntate la fecha: BookBeat no te avisa antes de cobrar.",
-   "say": "Segundo: cuándo cancelar la prueba. En Storytel, Nextory, Podímo y BookBeat, si cancelas durante la prueba, pierdes el acceso al momento: hazlo dos o tres días antes del final. En Audiobooks.com, además, pierdes los libros. En Audible, en cambio, puedes cancelar el primer día y sigues hasta el final. Y apúntate la fecha: BookBeat no te avisa antes de cobrar."
+   "text": "Segundo: cuándo cancelar. En Storytel, Nextory, Podimo y BookBeat, si cancelas durante la prueba, pierdes el acceso al momento: hazlo dos o tres días antes del final. En Audiobooks.com, además, pierdes los libros. En Audible, en cambio, cancela el primer día y sigues hasta el final. Y apúntate la fecha: BookBeat no avisa antes de cobrar.",
+   "say": "Segundo: cuándo cancelar. En Storytel, Nextory, Podímo y BookBeat, si cancelas durante la prueba, pierdes el acceso al momento: hazlo dos o tres días antes del final. En Audiobooks.com, además, pierdes los libros. En Audible, en cambio, cancela el primer día y sigues hasta el final. Y apúntate la fecha: BookBeat no avisa antes de cobrar."
   },
   {
    "id": "Z21",
-   "text": "Tercero: date de alta en la web, no en la app del móvil. En Audible, si te suscribes por la App Store o Google Play, no hay prueba gratis y puede salirte más caro. Y en Audiobooks.com, la app cobra diecisiete noventa y cinco euros al mes, en vez de unos trece."
+   "text": "Tercero: date de alta en la web, no en la app. En Audible, por la App Store o Google Play no hay prueba gratis y puede salirte más caro. Y en Audiobooks.com, la app cobra diecisiete noventa y cinco euros al mes, en vez de unos trece."
   },
   {
    "id": "Z22",
-   "text": "Cuarto: las pruebas se pueden encadenar. Treinta días de Audible, treinta de Podimo, treinta de BookBeat… y desde SonorBooks, treinta de Nextory en vez de catorce, y treinta de ElevenReader en vez de tres. Una detrás de otra, son meses de pruebas legales, si eres cliente nuevo y cancelas a tiempo. Todos los enlaces, en la descripción.",
-   "say": "Cuarto: las pruebas se pueden encadenar. Treinta días de Audible, treinta de Podímo, treinta de BookBeat… y desde SonorBooks, treinta de Nextory en vez de catorce, y treinta de ElevenReader en vez de tres. Una detrás de otra, son meses de pruebas legales, si eres cliente nuevo y cancelas a tiempo. Todos los enlaces, en la descripción."
+   "text": "Cuarto: encadena las pruebas. Treinta días de Audible, treinta de Podimo, treinta de BookBeat… y desde SonorBooks, treinta de Nextory en vez de catorce, y treinta de ElevenReader en vez de tres. Una tras otra, son meses de pruebas legales, si eres cliente nuevo y cancelas a tiempo. Los enlaces, en la descripción.",
+   "say": "Cuarto: encadena las pruebas. Treinta días de Audible, treinta de Podímo, treinta de BookBeat… y desde SonorBooks, treinta de Nextory en vez de catorce, y treinta de ElevenReader en vez de tres. Una tras otra, son meses de pruebas legales, si eres cliente nuevo y cancelas a tiempo. Los enlaces, en la descripción."
   },
   {
    "id": "Z23",
-   "text": "Y el quinto, el más importante: antes de pagar, busca el libro que quieres. Ninguna lo tiene todo: Los tres mundos se paga aparte en Audible, no está en BookBeat y entra con un crédito en Audiobooks.com. En SonorBooks buscas tu libro y ves en cuáles de las plataformas que comparamos está, con qué narrador y a qué precio."
+   "text": "Y el quinto, el más importante: antes de pagar, busca tu libro. Ninguna lo tiene todo: Los tres mundos se paga aparte en Audible, no está en BookBeat y entra con un crédito en Audiobooks.com. En SonorBooks ves en cuáles de las plataformas que comparamos está, con qué narrador y a qué precio."
   },
   {
    "id": "Z24",
-   "text": "Entonces, ¿cuál te conviene? Si escuchas mucho, tarifa plana: Storytel, por ocho noventa y nueve, si también quieres ebooks; o Audible, por nueve noventa y nueve, si buscas sus Originals. Si escuchas uno o dos libros al mes, Podimo. Si lees tanto como escuchas, Nextory. Si también escuchas en inglés, BookBeat. Si ya pagas Spotify Premium, empieza por tus doce horas. Y si quieres que los libros sean tuyos, Audiobooks.com.",
-   "say": "Entonces, ¿cuál te conviene? Si escuchas mucho, tarifa plana: Storytel, por ocho noventa y nueve, si también quieres ebooks; o Audible, por nueve noventa y nueve, si buscas sus Originals. Si escuchas uno o dos libros al mes, Podímo. Si lees tanto como escuchas, Nextory. Si también escuchas en inglés, BookBeat. Si ya pagas Spotify Premium, empieza por tus doce horas. Y si quieres que los libros sean tuyos, Audiobooks.com."
+   "text": "¿Cuál te conviene? Si escuchas mucho, tarifa plana: Storytel, si también quieres ebooks, o Audible, por sus Originals. Si escuchas uno o dos libros al mes, Podimo. Si lees tanto como escuchas, Nextory. Si también escuchas en inglés, BookBeat. Si ya pagas Spotify Premium, tus doce horas. Y si quieres que sean tuyos, Audiobooks.com.",
+   "say": "¿Cuál te conviene? Si escuchas mucho, tarifa plana: Storytel, si también quieres ebooks, o Audible, por sus Originals. Si escuchas uno o dos libros al mes, Podímo. Si lees tanto como escuchas, Nextory. Si también escuchas en inglés, BookBeat. Si ya pagas Spotify Premium, tus doce horas. Y si quieres que sean tuyos, Audiobooks.com."
   },
   {
    "id": "Z25",
@@ -119,7 +119,7 @@
   },
   {
    "id": "Z26",
-   "text": "Las diez tienen su reseña completa en el canal, y la comparativa entera, con todos los precios, en el artículo de la descripción. ¿Cuál usas tú? Cuéntanoslo en los comentarios. Y encuentra dónde escuchar tu próximo libro en SonorBooks."
+   "text": "Las once tienen su reseña en el canal, y la comparativa entera, en el artículo de la descripción. ¿Cuál usas tú? Cuéntanoslo en los comentarios. Y encuentra dónde escuchar tu próximo libro en SonorBooks."
   }
  ]
 }

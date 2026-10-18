@@ -1,7 +1,7 @@
 # Las mejores plataformas de audiolibros en español — página nueva para sonorbooks.com
 
 Página nueva en **https://sonorbooks.com/es/blog/mejores-plataformas-audiolibros/** (canonical a esa URL). Es el artículo que
-acompaña al vídeo de SonorBooks España «Las mejores plataformas de audiolibros en español» (guion v2 del 15/10/2026,
+acompaña al vídeo de SonorBooks España «Las mejores plataformas de audiolibros en español» (guion v3 del 18/10/2026,
 `research/mejores-plataformas/guion.md`): el vídeo dice «la comparativa entera, con todos los precios, en el artículo de la
 descripción», y la descripción enlaza aquí. Usa el mismo sistema que las reseñas (`web/audible-resena`, `web/storytel-resena`,
 `web/audiobooks-com-resena`…): misma cabecera, pie y estilos del sitio, mismo `build.py`, mismo vídeo que se carga al pulsar.
@@ -29,7 +29,8 @@ su logotipo, no por un color. En orden:
 4. **Tabla comparativa de las 11** agrupada por forma de pago (precio, horas, prueba, ebooks, ordenador/web, familia y perfiles,
    lo mejor, el ojo); en el móvil, una ficha por plataforma con la etiqueta de cada dato.
 5. **Una ficha por plataforma** (lo mejor, el truco, el ojo, una captura real, el enlace a su reseña y el botón de prueba con sus
-   condiciones y el aviso de afiliado al lado). Spotify no tiene reseña: su ficha lo dice.
+   condiciones y el aviso de afiliado al lado). Las once tienen reseña: la de Spotify (/es/blog/spotify-audiolibros-resena/, rama
+   `resena-spotify`) aún no está publicada, así que conviene publicarla antes o a la vez que esta página.
 6. **Los 5 trucos que valen para todas**, cada uno con su módulo: acelerar no ahorra horas (selector 1x / 1,5x / 2x), cuándo
    cancelar cada prueba (barras de días), alta en la web y no en la app, encadenar pruebas (150 días) y buscar el libro antes de
    pagar (*Los tres mundos* en Audible, BookBeat y Audiobooks.com, y la búsqueda real en SonorBooks con botón a
@@ -64,8 +65,8 @@ src/page.html        plantilla completa de la página (cabecera y pie del sitio 
 src/mp-guia.css      estilos propios (todo con prefijo .mp / mp-)
 src/mp-guia.js       calculadora de horas, selector de velocidad, visor de capturas y vídeo (módulo ES, sin librerías)
 src/movil.html       visor para revisar la versión móvil; no va a producción
-media/               capturas (las de las reseñas, un fotograma de la toma de BookBeat y recortes de las webs públicas de
-                     Spotify, eBiblio Madrid, LibriVox y del buscador de SonorBooks), logotipos (SVG y WebP), imagen para redes y póster
+media/               capturas (las de las reseñas —la de Spotify, `spotify-reina-roja.webp`, de la suya, en la rama `resena-spotify`—,
+                     un fotograma de la toma de BookBeat y recortes de las webs públicas de Spotify (ya sin usar), eBiblio Madrid, LibriVox y del buscador de SonorBooks), logotipos (SVG y WebP), imagen para redes y póster
 site/                cabecera, pie y estilos del sitio (los mismos que las reseñas), logotipos de SonorBooks y fuentes de la vista previa
 build.py             genera dist/, preview/, preview.html y preview-movil/
 ```

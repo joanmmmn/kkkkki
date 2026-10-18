@@ -1,0 +1,50 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 20678,
+ "end_frame": 23264,
+ "levels": [
+  -16.0
+ ],
+ "tail": false,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the novels of Stephen King",
+   "key of D minor, around 96 BPM unless stated otherwise",
+   "felt piano, music box, warm cello and string pads, soft analog synth pulses, tight modern percussion, subtle sub bass",
+   "elegant, intriguing and atmospheric with warmth, never cheesy horror",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "jump scare stingers",
+   "screams",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Routes and outro",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "uplifting finale: the main piano motif returns with full strings and steady drums, hopeful D major lift",
+     "after about thirty seconds the drums drop out for a warm calm outro",
+     "ends on a sustained final chord with a natural soft tail"
+    ],
+    "negative_local_styles": [
+     "abrupt cut",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 57720,
+    "lines": []
+   }
+  ]
+ }
+}

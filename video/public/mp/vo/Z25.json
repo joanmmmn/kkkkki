@@ -1,0 +1,139 @@
+{
+ "id": "Z25",
+ "hash": "1104771da02c",
+ "text": "¿Y sin pagar nada? eBiblio para novedades, si no te importa esperar; LibriVox y El Libro Total para clásicos; y ElevenReader para escuchar tus propios PDF.",
+ "duration": 10.96,
+ "words": [
+  {
+   "w": "¿Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "sin",
+   "s": 0.16,
+   "e": 0.4
+  },
+  {
+   "w": "pagar",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "nada?",
+   "s": 0.8,
+   "e": 1.12
+  },
+  {
+   "w": "eBiblio",
+   "s": 1.6,
+   "e": 2.08
+  },
+  {
+   "w": "para",
+   "s": 2.16,
+   "e": 2.32
+  },
+  {
+   "w": "novedades,",
+   "s": 2.36,
+   "e": 3.12
+  },
+  {
+   "w": "si",
+   "s": 3.16,
+   "e": 3.2
+  },
+  {
+   "w": "no",
+   "s": 3.28,
+   "e": 3.36
+  },
+  {
+   "w": "te",
+   "s": 3.4,
+   "e": 3.44
+  },
+  {
+   "w": "importa",
+   "s": 3.52,
+   "e": 3.88
+  },
+  {
+   "w": "esperar;",
+   "s": 3.92,
+   "e": 4.8
+  },
+  {
+   "w": "LibriVox",
+   "s": 4.88,
+   "e": 5.52
+  },
+  {
+   "w": "y",
+   "s": 5.6,
+   "e": 5.68
+  },
+  {
+   "w": "El",
+   "s": 5.72,
+   "e": 5.76
+  },
+  {
+   "w": "Libro",
+   "s": 5.84,
+   "e": 6.08
+  },
+  {
+   "w": "Total",
+   "s": 6.16,
+   "e": 6.48
+  },
+  {
+   "w": "para",
+   "s": 6.56,
+   "e": 6.72
+  },
+  {
+   "w": "clásicos;",
+   "s": 6.8,
+   "e": 7.76
+  },
+  {
+   "w": "y",
+   "s": 7.8,
+   "e": 7.84
+  },
+  {
+   "w": "ElevenReader",
+   "s": 7.92,
+   "e": 8.64
+  },
+  {
+   "w": "para",
+   "s": 8.8,
+   "e": 8.96
+  },
+  {
+   "w": "escuchar",
+   "s": 9.04,
+   "e": 9.36
+  },
+  {
+   "w": "tus",
+   "s": 9.44,
+   "e": 9.68
+  },
+  {
+   "w": "propios",
+   "s": 9.76,
+   "e": 10.16
+  },
+  {
+   "w": "PDF.",
+   "s": 10.24,
+   "e": 10.96
+  }
+ ],
+ "speechEnd": 10.96
+}

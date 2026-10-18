@@ -54,10 +54,8 @@ export const Z03Audible: React.FC<P> = (p) => {
   const at = (w: string, n = 0) => p.lead + wf('Z03', w, n);
   const fPrem = at('premium');
   const fOrig = at('originals');
-  const fProd = at('producciones');
+  const fProd = at('actores');
   const fDolby = at('dolby');
-  const fRepr = at('reproductor');
-  const fTres = at('tres');
   const fAlgo = at('algo');
   const fOrd = at('ordenador');
   const s0: MShot = { dir: 'aud', rec: '00_inicio_top', at: 0, start: 2.0, hold: 15 };
@@ -65,18 +63,14 @@ export const Z03Audible: React.FC<P> = (p) => {
   const s1: MShot = { dir: 'aud', rec: '01_inicio_scroll', at: fOrig - 8, start: 11.4, hold: 12.4 };
   s1.marks = [markOn(s1, fOrig, fProd - 8, 8, 236, 330, 440, 22)];
   const s2: MShot = { dir: 'aud', rec: '05_dracula', at: fProd - 6, start: 7.9, hold: 9.6 };
-  s2.marks = [markOn(s2, fProd + 2, fDolby - 2, 48, 270, 592, 62, 16), markOn(s2, fDolby, fRepr - 8, 246, 370, 172, 40, 12)];
-  // La hoja de velocidad: 3,45 → 3,50 a los 26,3 s de la toma, justo con «media».
-  const s3 = align('aud', '13_velocidad', 26.3, at('media'), 44, { hold: 30 });
-  s3.marks = [markOn(s3, fTres - 4, fAlgo - 8, 8, 1098, 650, 196, 20)];
+  s2.marks = [markOn(s2, fProd + 2, fDolby - 2, 48, 270, 592, 62, 16), markOn(s2, fDolby, fAlgo - 8, 246, 370, 172, 40, 12)];
   return (
-    <PlatformScene {...p} id="Z03" k="audible" model="Tarifa plana" title="Audible" shots={[s0, s1, s2, s3]} titleSize={110} headerAt={p.lead - 4}
+    <PlatformScene {...p} id="Z03" k="audible" model="Tarifa plana" title="Audible" shots={[s0, s1, s2]} titleSize={110} headerAt={p.lead - 4}
       focusExtra={[]}
       rows={[
         { word: 'nueve', tone: 'price', label: '9,99 € al mes', sub: 'Premium · sin límite de horas' },
         { word: 'noventa', nth: 1, tone: 'info', label: 'Más de 90.000 títulos', sub: 'Audiolibros, pódcasts y Originals' },
         { word: 'originals', tone: 'best', label: 'Audible Originals', sub: 'Drácula: actores y Dolby Atmos' },
-        { word: 'reproductor', tone: 'best', label: 'Hasta 3,5x de velocidad' },
         { word: 'ordenador', tone: 'best', label: 'También en el ordenador', sub: 'Desde su web' },
       ]}
       overlay={<LaptopPlayer at={fOrd - 6} x={250} y={700} w={430} />}
@@ -179,7 +173,7 @@ export const Z06StorytelOjo: React.FC<P> = ({ lead, dur }) => {
   const fOrd = at('ordenador');
   const fPrueba = at('prueba');
   const fSolo = at('siete', 1);
-  const fCuidado = at('cuidado');
+  const fCuidado = at('cancelas');
   const fMomento = at('momento');
   const sFam = useSpring(fTres - 6, 15, 150);
   const split = interpolate(frame, [fFamily, fFamily + 26], [0, 1], { ...clamp, easing: easeInOut });
@@ -420,7 +414,7 @@ export const Z12Audiobooks: React.FC<P> = (p) => {
   const fCompensa = at('compensa');
   const fTres = at('tres');
   const fEntra = at('entra');
-  const fCuenta = at('cuenta');
+  const fCuenta = at('registrarte');
   const fDiez = at('diez');
   const s0: MShot = { dir: 'abc', rec: 'perfil_prueba', at: 0, start: 3.0, hold: 12 };
   s0.marks = [markOn(s0, fCredito - 2, fCompensa - 8, 66, 546, 528, 100, 26)];
@@ -434,7 +428,7 @@ export const Z12Audiobooks: React.FC<P> = (p) => {
         { word: 'catorce', tone: 'price', label: '14,95 $ al mes (≈13 €)', sub: '1 crédito = el audiolibro que quieras' },
         { word: 'siempre', tone: 'best', label: 'Tuyo para siempre', sub: 'Aunque te des de baja' },
         { word: 'tres', tone: 'best', label: 'Los tres mundos: 1 crédito', sub: 'En Audible se paga aparte' },
-        { word: 'diez', tone: 'best', label: '+10.000 audiolibros gratis', sub: 'Con una cuenta gratis, sin suscripción' },
+        { word: 'registrarte', tone: 'best', label: '+10.000 audiolibros gratis', sub: 'Con una cuenta gratis, sin suscripción' },
       ]}
       overlay={<><Sfx name="coins" at={fCredito} volume={0.6} /><Sfx name="success" at={fEntra} volume={0.4} /><Sfx name="sparkle" at={fDiez} volume={0.4} /></>}
       extra={<Sfx name="tick_soft" at={fSiempre} volume={0.2} />}

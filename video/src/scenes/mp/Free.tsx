@@ -6,7 +6,7 @@ import MAP from '../../../public/eb/map/ccaa.json';
 import LV_CLIPS from '../../../public/lv/audio/clips.json';
 import { wf } from './timeline';
 import {
-  color, font, Kicker, MaskTitle, MpStage, PagePane, PageKey, PageMark, PKey, PLAT, PlatTile, SceneProps, shadow, ToneChip, Tone, useSpring, WebPane,
+  color, font, Kicker, markOn, MaskTitle, MpStage, MShot, PagePane, PageKey, PageMark, PlatformScene, PKey, PLAT, PlatTile, SceneProps, shadow, ToneChip, Tone, useSpring, WebPane,
 } from './kit';
 
 type P = SceneProps;
@@ -62,40 +62,31 @@ const PaneSlot: React.FC<{ children: React.ReactNode; w: number; left?: number }
 };
 
 // Z11 · Spotify: 12 h incluidas en Premium desde el 7/10, que no se acumulan y solo son del titular; Audiolibros+ añade 15 h.
+// La app real (grabación de la reseña de Spotify, cuenta Premium de Joan; tomas sin datos personales): la sección Audiolibros,
+// la ficha de Reina Roja («Incluido con Premium») y «Tiempo de escucha de audiolibros» (12 h, Audiolibros+ y recargas).
 export const Z11Spotify: React.FC<P> = (p) => {
   const at = (w: string, n = 0) => p.lead + wf('Z11', w, n);
+  const fNov = at('novedad');
   const fDoce = at('doce');
   const fAcum = at('acumulan');
   const fDuo = at('duo');
   const fEst = at('estudiantes');
   const fPlus = at('audiolibros+');
-  const fQuince = at('quince');
-  // Página pública de audiolibros de Spotify (spotify.com/es/audiobooks, 15/10/2026), 1920 px de ancho y 4035 de alto.
-  const keys: PageKey[] = [
-    { f: 0, y: 0 },
-    { f: fDoce - 16, y: 0 },
-    { f: fDoce + 10, y: 820, zoom: 1.0 },
-    { f: fDoce + 30, y: 820, zoom: 1.32, x: 960 },
-    { f: fDuo - 14, y: 820, zoom: 1.32, x: 960 },
-    { f: fDuo + 10, y: 230, zoom: 1.2, x: 740 },
-    { f: fPlus - 14, y: 230, zoom: 1.2, x: 740 },
-    { f: fPlus + 12, y: 1500, zoom: 1.0 },
-    { f: fQuince + 6, y: 1500, zoom: 1.2, x: 1000 },
-  ];
-  const marks: PageMark[] = [
-    { from: fDoce + 30, to: fDuo - 10, x: 790, y: 1170, w: 340, h: 160, r: 14 },
-    { from: fDuo + 12, to: fPlus - 10, x: 385, y: 478, w: 705, h: 82, r: 12 },
-    { from: fQuince, to: p.dur + 20, x: 924, y: 2100, w: 254, h: 46, r: 23 },
-  ];
+  const s0: MShot = { dir: 'spo', rec: '01_hub', at: 0, start: 0.6, hold: 3.4 };
+  const s1: MShot = { dir: 'spo', rec: '03_reina_ficha', at: fDoce - 8, start: 1.0, hold: 17.5 };
+  s1.marks = [markOn(s1, fDoce, fAcum - 6, 14, 504, 322, 40, 12)];
+  const s2: MShot = { dir: 'spo', rec: '10_horas', at: fAcum - 6, start: 1.0, hold: 14.0 };
+  s2.marks = [markOn(s2, fAcum, fPlus - 8, 20, 312, 624, 150, 18)];
+  const s3: MShot = { dir: 'spo', rec: '10_horas', at: fPlus - 6, start: 16.0, hold: 26.0 };
+  s3.marks = [markOn(s3, fPlus, p.dur + 20, 22, 438, 620, 324, 20)];
   return (
-    <WebPlatformScene {...p} id="Z11" k="spotify" model="Novedad · desde el 7/10" title="Spotify" titleSize={110} headerAt={p.lead - 4}
-      visual={<PaneSlot w={1010}><PagePane src="mp/web/spotify_full.jpg" cssW={1920} cssH={4035} width={1010} url="spotify.com/es/audiobooks" keys={keys} marks={marks} /></PaneSlot>}
+    <PlatformScene {...p} id="Z11" k="spotify" model="Novedad · desde el 7/10" title="Spotify" side="left" shots={[s0, s1, s2, s3]} titleSize={110} headerAt={p.lead - 4}
       rows={[
         { word: 'doce', tone: 'best', label: '12 h al mes en Premium', sub: 'Sin pagar nada más' },
         { word: 'acumulan', tone: 'warn', label: 'No se acumulan', sub: 'Duo y Familiar: solo el titular · Estudiantes: no' },
         { word: 'audiolibros+', tone: 'price', label: 'Audiolibros+: +15 h', sub: '8,99 € al mes' },
       ]}
-      extra={<><Sfx name="zoom_in" at={fDoce + 22} volume={0.5} /><Sfx name="swipe" at={fDuo} volume={0.6} /><Sfx name="swipe" at={fPlus} volume={0.6} /><Sfx name="tick_soft" at={fAcum} volume={0.2} /><Sfx name="tick_soft" at={fEst} volume={0.2} /></>}
+      overlay={<><Sfx name="whoosh_soft" at={fNov} volume={0.3} /><Sfx name="tick_soft" at={fDuo} volume={0.2} /><Sfx name="tick_soft" at={fEst} volume={0.2} /></>}
     />
   );
 };
@@ -185,11 +176,13 @@ export const Z15eBiblio: React.FC<P> = (p) => {
   const fCarne = at('carne');
   const fComunidad = at('comunidad');
   const fActuales = at('actuales');
-  const fFunciona = at('funciona');
+  const fFunciona = at('ejemplar');
   const fLibre = at('libre');
   const fCola = at('cola');
   const fCat = at('cataluna');
   const sCard = useSpring(fCarne - 8, 14, 150);
+  const sLogo = useSpring(p.lead + 2, 15, 140);
+  const logoOut = interpolate(frame, [fComunidad - 10, fComunidad + 8], [0, 1], { ...clamp, easing: easeInOut });
   const W = 860;
   const k = W / 1600;
   // Las comunidades se encienden en cascada con «comunidad»; Cataluña y el País Vasco se rayan con su nombre.
@@ -236,8 +229,15 @@ export const Z15eBiblio: React.FC<P> = (p) => {
               );
             })}
           </svg>
+          {/* Arranque: el logotipo de eBiblio en grande, hasta que aparece el mapa */}
+          {frame < fComunidad + 12 && (
+            <div style={{ position: 'absolute', left: 130, top: 300, width: 600, height: 340, borderRadius: 44, background: '#fff', boxShadow: shadow.card, border: `1px solid ${color.line}`,
+              display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: Math.min(1, sLogo * 1.3) * (1 - logoOut), transform: `translateY(${(1 - sLogo) * 60 - logoOut * 40}px) scale(${(0.9 + 0.1 * sLogo) * (1 - 0.08 * logoOut)})` }}>
+              <Img src={staticFile('eb/img/ebiblio_logo.png')} style={{ width: 440, height: (440 * 240) / 492, display: 'block' }} />
+            </div>
+          )}
           {/* El carné */}
-          <div style={{ position: 'absolute', left: 40, top: 640, width: 360, height: 220, borderRadius: 24, background: `linear-gradient(140deg, ${PLAT.ebiblio.c} 0%, #C85A3C 100%)`, boxShadow: '0 30px 70px rgba(16,16,16,0.25)',
+          <div style={{ position: 'absolute', left: 470, top: 650, width: 360, height: 220, borderRadius: 24, background: `linear-gradient(140deg, ${PLAT.ebiblio.c} 0%, #C85A3C 100%)`, boxShadow: '0 30px 70px rgba(16,16,16,0.25)',
             opacity: Math.min(1, sCard * 1.3) * (1 - shelfIn), transform: `rotate(${-8 + 8 * sCard}deg) translateY(${(1 - sCard) * 120}px)`, transformOrigin: 'left top', padding: 26, boxSizing: 'border-box', color: '#fff' }}>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30 }}>Carné de biblioteca</div>
             <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 22, opacity: 0.85, marginTop: 6 }}>Biblioteca pública · gratis</div>

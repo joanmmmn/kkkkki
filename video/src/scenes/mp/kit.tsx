@@ -13,6 +13,7 @@ import pdrIndex from '../../../public/pdr/rec/index.json';
 import nxrIndex from '../../../public/nxr/rec/index.json';
 import bkbIndex from '../../../public/bkb/rec/index.json';
 import abcIndex from '../../../public/abc/rec/index.json';
+import spoIndex from '../../../public/spo/rec/index.json';
 import { wf } from './timeline';
 
 export { APP_H, APP_RATIO, APP_W, BigTitle, Bumper, BUMP_IN, BUMP_LEN, BUMP_LOCK, Burst, Chip, CountUp, LinkBadge, MaskTitle, PH, PHONE_W, Sheen, textWidth } from '../nxr/kit';
@@ -31,14 +32,14 @@ export const PLAT: Record<PKey, { name: string; c: string; deep: string; soft: s
   podimo: { name: 'Podimo', c: '#A89BED', deep: '#6E5BD9', soft: '#EEEAFE', dir: 'pdr' },
   nextory: { name: 'Nextory', c: '#FC5978', deep: '#D2335A', soft: '#FFE7ED', dir: 'nxr' },
   bookbeat: { name: 'BookBeat', c: '#CD96FF', deep: '#7B3FC4', soft: '#F5E6FF', dir: 'bkb' },
-  spotify: { name: 'Spotify', c: '#1ED760', deep: '#11843F', soft: '#E2F8EA' },
+  spotify: { name: 'Spotify', c: '#1ED760', deep: '#11843F', soft: '#E2F8EA', dir: 'spo' },
   audiobooks: { name: 'Audiobooks.com', c: '#FF501C', deep: '#D23A0B', soft: '#FFEDE6', dir: 'abc' },
   elevenreader: { name: 'ElevenReader', c: '#1C1C1C', deep: '#000000', soft: '#EFEFEF' },
   ebiblio: { name: 'eBiblio', c: '#E95D0E', deep: '#C85A3C', soft: '#FBEDE4' },
   librivox: { name: 'LibriVox', c: '#8D5F1E', deep: '#5E3E12', soft: '#F6EFE2' },
   elt: { name: 'El Libro Total', c: '#1A8FE3', deep: '#0E1A2B', soft: '#E3F1FC' },
 };
-const INDEX: Record<string, Record<string, unknown>> = { aud: audIndex, str: strIndex, pdr: pdrIndex, nxr: nxrIndex, bkb: bkbIndex, abc: abcIndex };
+const INDEX: Record<string, Record<string, unknown>> = { aud: audIndex, str: strIndex, pdr: pdrIndex, nxr: nxrIndex, bkb: bkbIndex, abc: abcIndex, spo: spoIndex };
 
 // Logotipo de cada plataforma (el de su cabecera; los mismos archivos que sus reseñas). `white` para fondos oscuros.
 export const PlatLogo: React.FC<{ k: PKey; width: number; white?: boolean; style?: React.CSSProperties }> = ({ k, width, white = false, style }) => {
