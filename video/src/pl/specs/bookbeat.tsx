@@ -11,7 +11,7 @@ export const piece: PLPiece = {
     kicker: 'Recenzja BookBeat', music: 'pl/bookbeat/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'BookBeat:\nczy warto?', hi: ['BookBeat:', 'BookBeat'], rec: { clip: 'portada', start: 0.3 },
-        cuts: [{ at: 'ceny', rec: { clip: 'cennik', start: 0.5 } }, { at: 'polski', rec: { clip: 'portada', start: 10.3 } }, { at: 'Powiemy', rec: { clip: 'rozdroze', start: 3.4 } }],
+        cuts: [{ at: 'ceny', rec: { clip: 'cennik', start: 0.5 } }, { at: 'polski', rec: { clip: 'portada', start: 10.3 } }, { at: 'Powiemy', rec: { clip: 'rozdroze', start: 0.4 } }],
         promises: [
           { at: 'ceny', label: 'Ceny i limity godzin', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'regulamin', label: 'Drobny druk', icon: 'doc' },
           { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', icon: 'gift' },
@@ -38,11 +38,13 @@ export const piece: PLPiece = {
           { at: 'muzyka', label: 'Muzyka i efekty', icon: 'music' }, { at: 'Rozdroze', label: 'Nowość: Rozdroże kruków', icon: 'book' },
           { at: 'sluchowisk', label: 'Słuchowiska po polsku: ok. 40', tone: 'bad' },
         ] },
-      { id: 'A06', kind: 'rec', kicker: 'Karta książki', title: 'Dwie oceny', rec: { clip: 'rozdroze', start: 2.6 },
+      { id: 'A06', kind: 'rec', kicker: 'Karta książki', title: 'Dwie oceny', rec: { clip: 'rozdroze', start: 3.2 },
         marks: [
-          { at: 'oceny', until: 'trwa', x: 740, y: 640, w: 440, h: 76 }, { at: 'trwa', until: ['cztery', 0], x: 653, y: 897, w: 600, h: 50 },
-          { at: ['cztery', 0], until: 'Fragment', x: 740, y: 640, w: 440, h: 76 }, { at: 'Fragment', x: 860, y: 128, w: 190, h: 46 },
+          { at: 'oceny', until: 'trwa', x: 730, y: 644, w: 460, h: 70 }, { at: 'trwa', until: ['cztery', 0], x: 653, y: 902, w: 600, h: 46 },
+          { at: ['cztery', 0], until: ['cztery', 1], x: 740, y: 644, w: 120, h: 70 }, { at: ['cztery', 1], until: 'Fragment', x: 1050, y: 644, w: 120, h: 70 },
+          { at: 'Fragment', x: 862, y: 134, w: 186, h: 38 },
         ],
+        zooms: [{ at: 'oceny', zoom: 1.6, x: 955, y: 620 }, { at: 'Fragment', zoom: 1.6, x: 955, y: 420 }],
         tags: [
           { at: 'oceny', label: 'Dwie oceny', sub: 'za treść i za lektora', icon: 'star' }, { at: 'trwa', label: '9 godz. 35 min', icon: 'clock' },
           { at: ['cztery', 0], label: '4,8 za książkę', icon: 'star' }, { at: ['cztery', 1], label: '4,9 za lektora', icon: 'mic' },
