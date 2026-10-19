@@ -83,8 +83,8 @@ def main():
                 w['w'] = t
         dur = res['alignment']['character_end_times_seconds'][-1]
         json.dump({'id': sc['id'], 'hash': h, 'text': sc['text'], 'duration': dur, 'words': words}, open(meta_path, 'w'), ensure_ascii=False, indent=1)
-        total += len(sc['text'])
-        print(f"{sc['id']}: {dur:.2f} s, {len(sc['text'])} caracteres")
+        total += len(spoken)
+        print(f"{sc['id']}: {dur:.2f} s, {len(spoken)} caracteres")
     print('caracteres enviados:', total)
 
 if __name__ == '__main__':
