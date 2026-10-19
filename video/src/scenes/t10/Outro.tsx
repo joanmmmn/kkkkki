@@ -36,13 +36,13 @@ export const Tip: React.FC = () => {
   const tips = [
     { k: 'moon' as const, t: 'W nocy', at: c.at('X111', 'nocy') - 6 },
     { k: 'head' as const, t: 'W słuchawkach', at: c.at('X111', 'słuchawkach') - 6 },
-    { k: 'phone' as const, t: 'Bez zerkania w telefon', at: c.at('X111', 'zerkania') - 6 },
+    { k: 'phone' as const, t: 'Bez zerkania w telefon', at: c.at('X111', 'zerkania') - 6 },
   ];
   return (
     <AbsoluteFill>
       <Night red={0.5}>
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
-          <KickerN at={c.part('X111')} text="Rada, żeby zadziałało" />
+          <KickerN at={c.part('X111')} text="Żeby naprawdę zadziałało" />
           <div style={{ display: 'flex', gap: 44, marginTop: 50 }}>
             {tips.map((tp) => {
               const s = sp(frame, tp.at, 14, 170);
@@ -64,7 +64,7 @@ export const Tip: React.FC = () => {
 
 // v6 (Joan, 18/10): todo lo de cómo escucharlas, comprimido en una sola pantalla al final. Polaco: pantalla POSŁUCHAJ.
 // Las diez de un vistazo: quién la lee, nota de Audioteka (siempre con su número de ocen), duración y cómo empezar (dossier):
-// ZA DARMO (Poe, Wolne Lektury) · W ABONAMENCIE (7 títulos en la suscripción de Storytel PL) · DO KUPIENIA (Audioteka). Voz: X112A.
+// ZA DARMO (Poe, Wolne Lektury) · W ABONAMENCIE (7 títulos: suscripción de Storytel PL y/o Audioteka Klub) · DO KUPIENIA (Hendrix, Salem, en Audioteka). Voz: X112A.
 const ACCESS = { free: { t: 'ZA DARMO', bg: '#16A34A', fg: '#fff' }, sub: { t: 'W ABONAMENCIE', bg: '#FFCA05', fg: '#101010' }, buy: { t: 'DO KUPIENIA', bg: 'rgba(255,255,255,0.12)', fg: 'rgba(239,232,220,0.8)' } };
 export const Escucha: React.FC = () => {
   const frame = useCurrentFrame();
@@ -81,7 +81,7 @@ export const Escucha: React.FC = () => {
         <AbsoluteFill style={{ transform: `scale(${push.toFixed(4)})` }}>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 56, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
             <KickerN at={f0 - 4} text="Posłuchaj" />
-            <MaskTitle text="Wszystkie dziesięć w audio" at={f0 + 2} size={70} color={BONE} hi="audio" align="center" />
+            <MaskTitle text="Wszystkie dziesięć w wersji audio" at={f0 + 2} size={70} color={BONE} hi="audio" align="center" />
           </div>
           <div style={{ position: 'absolute', left: 70, right: 70, top: 236, display: 'grid', gridTemplateColumns: '1fr 1fr', gridAutoFlow: 'column', gridTemplateRows: 'repeat(5, 140px)', columnGap: 36, rowGap: 12 }}>
             {rows.map((b, i) => {
@@ -98,7 +98,7 @@ export const Escucha: React.FC = () => {
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 8px', boxShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>{b.n}</span>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: b.title.length > 22 ? 27 : 31, color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{b.n === 9 ? 'Opowiadania Poego' : b.title}</div>
-                    <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 22, color: DIM, marginTop: 4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Czyta {n.who}</div>
+                    <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 22, color: DIM, marginTop: 4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{n.role ? `${n.role}: ` : 'Czyta '}{n.who}</div>
                     {n.extra && <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 19, color: color.yellow, marginTop: 6, whiteSpace: 'nowrap' }}>{n.extra}</div>}
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, flexShrink: 0 }}>
@@ -106,7 +106,7 @@ export const Escucha: React.FC = () => {
                       <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', whiteSpace: 'nowrap' }}>
                         <svg width={24} height={24} viewBox="0 0 24 24" style={{ alignSelf: 'center' }}><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill={color.yellow} /></svg>
                         {n.rating.toFixed(1).replace('.', ',')}
-                        <span style={{ fontWeight: 500, fontSize: 19, color: DIM }}>{n.votes} {ocen(n.votes)}</span>
+                        <span style={{ fontWeight: 500, fontSize: 19, color: DIM }}>{n.votesLabel ?? `${n.votes} ${ocen(n.votes)}`}</span>
                       </div>
                     ) : (
                       <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 21, color: DIM, whiteSpace: 'nowrap' }}>{n.source}</div>
@@ -122,7 +122,7 @@ export const Escucha: React.FC = () => {
             })}
           </div>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 1006, textAlign: 'center', fontFamily: font.sans, fontWeight: 500, fontSize: 20, color: DIM, opacity: ramp(frame, f0 + 30, f0 + 50) }}>
-            Oceny i czas: Audioteka · abonament: Storytel · stan na październik 2026
+            Oceny i czas: Audioteka · abonament: Storytel lub Audioteka Klub · stan na 19.10.2026
           </div>
         </AbsoluteFill>
       </Night>
@@ -227,7 +227,7 @@ export const Coment: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('COMENT');
   const f0 = c.part('X113');
-  const g = c.at('X113', 'historie') - 8;
+  const g = c.at('X113', 'historiach') - 8;
   const genres = ['Fantastyka', 'Thriller', 'Science fiction', 'Romans', 'Historia', 'Klasyka'];
   return (
     <AbsoluteFill>
@@ -237,7 +237,7 @@ export const Coment: React.FC = () => {
             <svg width={110} height={110} viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-5 4z" fill={color.yellow} stroke={color.ink} strokeWidth={1.6} strokeLinejoin="round" /></svg>
             <MaskTitle text="Która przestraszyła cię najbardziej?" at={f0 + 2} size={80} hi="najbardziej" />
           </div>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.ink2, marginTop: 70, opacity: ramp(frame, g - 4, g + 10) }}>I jakie historie mamy przynieść następnym razem?</div>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.ink2, marginTop: 70, opacity: ramp(frame, g - 4, g + 10) }}>I o jakich historiach mamy opowiedzieć następnym razem?</div>
           <div style={{ display: 'flex', gap: 18, marginTop: 34, flexWrap: 'wrap', justifyContent: 'center', width: 1500 }}>
             {genres.map((gn, i) => {
               const s = sp(frame, g + 4 + i * 4, 14, 190);

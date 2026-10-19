@@ -60,7 +60,7 @@ export const F1: F = ({ at, c }) => {
       <Card at={at} w={1340}>
         <Label>H.P. Lovecraft · 1927</Label>
         <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 62, lineHeight: 1.18, color: BONE, marginTop: 26 }}>
-          „Najstarszą i najsilniejszą emocją ludzkości jest strach, <Reveal at={c.at('X13', 'najstarszym') - 4} style={{ display: 'inline' }}><span style={{ color: '#63D2B4' }}>a najstarszym i najsilniejszym rodzajem strachu jest strach przed nieznanym</span>”.</Reveal>
+          „Najstarszą i najsilniejszą emocją ludzkości jest strach, <Reveal at={c.at('X13', 'najstarszym') - 4} style={{ display: 'inline' }}><span style={{ color: '#63D2B4' }}>a najstarszym i najsilniejszym rodzajem strachu jest strach przed nieznanym</span>”.</Reveal>
         </div>
         <Reveal at={q + 20}><div style={{ fontFamily: font.sans, fontSize: 28, color: DIM, marginTop: 26 }}>esej „Supernatural Horror in Literature”</div></Reveal>
       </Card>
@@ -173,13 +173,13 @@ export const F5: F = ({ at, c }) => {
   );
 };
 
-// 5 · «Inkub»: debiut → Nagroda Czytelników im. Stefana Grabińskiego → słuchowisko 2026.
+// 5 · «Inkub»: novela (Vesper, 2019) → Złoty Kościej 2019, «Krajowy Hit Roku» → słuchowisko 2026 (corrección del revisor: no fue el debut).
 export const F6: F = ({ c }) => {
   const frame = useCurrentFrame();
   const G = '#5BE3A0';
   const steps = [
-    { k: 'debiut', icon: 'book' as Big, t: 'Debiut', s: '2016' },
-    { k: 'Nagrodę', icon: 'award' as Big, t: 'Nagroda Czytelników', s: 'im. Stefana Grabińskiego' },
+    { k: 'powieść', icon: 'book' as Big, t: 'Powieść', s: '2019' },
+    { k: 'Złoty', icon: 'award' as Big, t: 'Złoty Kościej', s: 'Krajowy Hit Roku 2019' },
     { k: 'słuchowisko', icon: 'head' as Big, t: 'Słuchowisko', s: '2026' },
   ];
   return (
@@ -201,7 +201,7 @@ export const F6: F = ({ c }) => {
         })}
       </div>
       <Reveal at={c.at('X63', 'Danutą') - 6}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: BONE, marginTop: 30, textAlign: 'center' }}>Danuta Stenka <span style={{ color: G }}>i ponad 50 aktorów</span></div>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: BONE, marginTop: 30, textAlign: 'center' }}>Danuta Stenka <span style={{ color: G }}>i ponad 50 aktorów</span></div>
       </Reveal>
     </Center>
   );
@@ -246,7 +246,7 @@ export const F8: F = ({ at, c }) => (
     <Card at={at} w={1360}>
       <Label>Pytanie Stephena Kinga</Label>
       <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 72, lineHeight: 1.14, color: BONE, marginTop: 24 }}>
-        A gdyby Drakula wrócił w <span style={{ color: '#D93A3A' }}>XX wieku</span>, w Ameryce?
+        A gdyby Drakula wrócił w <span style={{ color: '#D93A3A' }}>XX wieku</span>, w Ameryce?
       </div>
       <Reveal at={c.at('X83', 'osiemdziesiątych') - 6}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 34, paddingTop: 26, borderTop: '1px solid rgba(255,255,255,0.14)' }}>
@@ -285,7 +285,7 @@ const Krasnal: React.FC<{ size: number; shine: number }> = ({ size, shine }) => 
 // 2 · «Manitou»: el primer horror de Masterton, best seller mundial, y el krasnal de Breslavia (2021).
 export const F9: F = ({ c }) => {
   const frame = useCurrentFrame();
-  const a = c.at('X93', 'bestsellerem') - 8;
+  const a = c.at('X93', 'bestseller') - 8;
   const w = c.at('X93', 'Wrocław') - 8;
   const k = c.at('X93', 'krasnala') - 6;
   const s = sp(frame, c.at('X93', 'pierwszy') - 6, 15, 150);
@@ -298,7 +298,7 @@ export const F9: F = ({ c }) => {
         <div style={{ width: 820, padding: '46px 54px', borderRadius: 28, background: 'rgba(12,8,6,0.88)', border: '1px solid rgba(232,133,63,0.3)', boxShadow: '0 50px 120px rgba(0,0,0,0.6)', boxSizing: 'border-box', opacity: s, transform: `translateX(${((1 - s) * -60).toFixed(1)}px)` }}>
           <Label c="#E8853F">Pierwszy horror Mastertona</Label>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 1, color: BONE, letterSpacing: -3, marginTop: 18, opacity: sB, transform: `scale(${(0.85 + 0.15 * sB).toFixed(3)})`, transformOrigin: '0 50%' }}>Światowy<br />bestseller</div>
-          <Reveal at={k - 4}><div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: BONE, marginTop: 34 }}>Krasnal z brązu <span style={{ color: '#E8853F' }}>z „Manitou” w ręku</span></div></Reveal>
+          <Reveal at={k - 4}><div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: BONE, marginTop: 34 }}>Krasnal z brązu <span style={{ color: '#E8853F' }}>z „Manitou” w ręku</span></div></Reveal>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '30px 40px', borderRadius: 28, background: 'radial-gradient(circle at 50% 40%, rgba(60,40,22,0.95), rgba(12,8,6,0.92))', border: '1px solid rgba(232,133,63,0.3)', boxShadow: '0 50px 120px rgba(0,0,0,0.6)', opacity: Math.min(1, sK * 1.4), transform: `translateY(${((1 - sK) * 80).toFixed(1)}px)` }}>
           <Krasnal size={300} shine={shine} />

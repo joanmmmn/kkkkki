@@ -169,9 +169,9 @@ export const Hook: React.FC = () => {
 type Cand = { k: 'top'; p: number } | { k: 'real'; f: string } | { k: 'none'; t: string; a: string };
 const CANDS: Cand[] = [
   { k: 'real', f: 'to' }, { k: 'top', p: 4 }, { k: 'none', t: 'Distancia de rescate', a: 'Samanta Schweblin' }, { k: 'real', f: 'zwierciadlo' }, { k: 'top', p: 9 }, { k: 'real', f: 'instytut' }, { k: 'top', p: 1 },
-  { k: 'none', t: 'Apocalipsis Z', a: 'Manel Loureiro' }, { k: 'real', f: 'demon' }, { k: 'top', p: 6 }, { k: 'real', f: 'lsnienie' }, { k: 'real', f: 'madonna' }, { k: 'top', p: 2 }, { k: 'none', t: 'Carcoma', a: 'Layla Martínez' },
+  { k: 'none', t: 'Apocalipsis Z', a: 'Manel Loureiro' }, { k: 'real', f: 'demon' }, { k: 'top', p: 6 }, { k: 'real', f: 'lsnienie' }, { k: 'real', f: 'madonna' }, { k: 'top', p: 2 }, { k: 'none', t: 'Kornik', a: 'Layla Martínez' },
   { k: 'top', p: 7 }, { k: 'real', f: 'legenda' }, { k: 'real', f: 'wzgorze' }, { k: 'top', p: 10 }, { k: 'real', f: 'bafomet' }, { k: 'real', f: 'cmetarz' }, { k: 'top', p: 3 },
-  { k: 'real', f: 'sruba' }, { k: 'none', t: 'Nuestra parte de noche', a: 'Mariana Enriquez' }, { k: 'top', p: 5 }, { k: 'real', f: 'final_girls' }, { k: 'none', t: 'Egzorcysta', a: 'William Peter Blatty' }, { k: 'top', p: 8 }, { k: 'real', f: 'kultor' },
+  { k: 'real', f: 'sruba' }, { k: 'none', t: 'Nasza część nocy', a: 'Mariana Enriquez' }, { k: 'top', p: 5 }, { k: 'real', f: 'final_girls' }, { k: 'none', t: 'Egzorcysta', a: 'William Peter Blatty' }, { k: 'top', p: 8 }, { k: 'real', f: 'kultor' },
 ];
 const COLS = 7, CW = 140, CH = 182, GX = 24, GY = 18;
 const GL = (1920 - (COLS * CW + (COLS - 1) * GX)) / 2, GT = 128;
@@ -267,11 +267,12 @@ export const Regla: React.FC = () => {
                     </div>
                   )}
                   {shine > 0 && <div style={{ position: 'absolute', inset: 0, background: `rgba(255,236,190,${(0.28 * shine).toFixed(3)})`, mixBlendMode: 'screen' }} />}
+                </div>
+                {/* el sello, fuera del recorte de la tarjeta (dentro se cortaba: «RAK AUDIOBOOKA») */}
                   {stamp > 0 && (
-                    <div style={{ position: 'absolute', left: -10, right: -10, top: sz * 0.33, padding: '5px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 12, lineHeight: 1.15, letterSpacing: 0.2,
+                    <div style={{ position: 'absolute', left: -10, right: -10, zIndex: 2, top: sz * 0.33, padding: '5px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 12, lineHeight: 1.15, letterSpacing: 0.2,
                       transform: `rotate(-12deg) scale(${(1.6 - 0.6 * stamp).toFixed(3)})`, opacity: Math.min(1, stamp * 1.5) }}>BRAK AUDIOBOOKA<br />PO POLSKU</div>
                   )}
-                </div>
                 {/* lectura de la nota: barra que se llena al pasar el barrido (sin cifras inventadas) */}
                 {fly < 0.3 && (
                   <div style={{ marginTop: 8, height: 30, display: 'flex', alignItems: 'center', gap: 8, opacity: 1 - fly * 3 }}>

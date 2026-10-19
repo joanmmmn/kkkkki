@@ -216,7 +216,8 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
       {/* ——— A2 y B: viñeta ——— */}
       {a2 > 0 && (
         <AbsoluteFill style={{ opacity: a2 }}>
-          <AbsoluteFill style={{ overflow: 'hidden' }}>
+          {/* en el dato, la ilustración se desenfoca un poco: nada del fondo compite con el texto */}
+          <AbsoluteFill style={{ overflow: 'hidden', filter: bIn > 0.01 ? `blur(${(5 * bIn).toFixed(2)}px)` : undefined }}>
             <AbsoluteFill style={camStyle({ ...cam, s: cam.s * throughIn }, camShake)}>
               <V t0={fA2} beats={chips.map((ch) => ch.at)} />
             </AbsoluteFill>
@@ -224,7 +225,9 @@ export const BookScene: React.FC<{ p: number }> = ({ p }) => {
           <AbsoluteFill style={{ background: `rgba(0,0,0,${(0.62 * bIn).toFixed(3)})` }} />
           {redFlash > 0 && <AbsoluteFill style={{ background: `rgba(193,18,31,${(0.28 * redFlash).toFixed(3)})`, mixBlendMode: 'screen' }} />}
           {/* cabecera: portada pequeña, número y título */}
-          <div style={{ position: 'absolute', left: 80, top: 62, display: 'flex', alignItems: 'center', gap: 22, opacity: Math.min(1, head * 1.4) * (1 - bIn * 0.5), transform: `translateX(${((1 - head) * -80).toFixed(1)}px)` }}>
+          {/* cabecera sobre fondo oscuro: el título blanco no se pierde cuando pasa algo claro por detrás (marionetas, luces) */}
+          <div style={{ position: 'absolute', left: 64, top: 50, display: 'flex', alignItems: 'center', gap: 22, padding: '12px 28px 12px 14px', borderRadius: 18, background: 'rgba(6,7,9,0.68)', boxShadow: '0 10px 30px rgba(0,0,0,0.35)',
+            opacity: Math.min(1, head * 1.4) * (1 - bIn * 0.5), transform: `translateX(${((1 - head) * -80).toFixed(1)}px)` }}>
             <div style={{ position: 'relative' }}>
               <Img src={coverSrc(main)} style={{ width: 112, height: 112, borderRadius: 8, display: 'block', boxShadow: '0 10px 30px rgba(0,0,0,0.6)' }} />
               <span style={{ position: 'absolute', right: -16, top: -14, minWidth: 50, height: 50, borderRadius: 999, background: p === 10 ? RED : color.yellow, color: p === 10 ? '#fff' : color.ink, fontFamily: font.sans, fontWeight: 700, fontSize: 28,
@@ -382,9 +385,9 @@ const FACT_SFX: Record<number, (fB: number, c: Clock) => React.ReactNode> = {
   2: (_fB, c) => <Sfx name="snap_in" at={c.at('X23', 'Leśmian') - 6} volume={0.6} />,
   4: (_fB, c) => <>{['najlepiej', 'cztery', 'ekran'].map((w) => <Sfx key={w} name="ui_pop" at={c.at('X43', w) - 4} volume={0.7} />)}</>,
   5: (_fB, c) => <><Sfx name="sk_projector" at={c.at('X53', 'Nosferatu') - 8} volume={0.5} /><Sfx name="stamp" at={c.at('X53', 'zgody')} volume={0.9} /></>,
-  6: (_fB, c) => <>{['debiut', 'Nagrodę', 'słuchowisko'].map((w) => <Sfx key={w} name="ui_pop" at={c.at('X63', w) - 4} volume={0.6} />)}</>,
+  6: (_fB, c) => <>{['powieść', 'Złoty', 'słuchowisko'].map((w) => <Sfx key={w} name="ui_pop" at={c.at('X63', w) - 4} volume={0.6} />)}</>,
   7: (_fB, c) => <>{['zadebiutował', 'nominowana'].map((w) => <Sfx key={w} name="ui_pop" at={c.at('X73', w) - 4} volume={0.6} />)}</>,
-  9: (_fB, c) => <><Sfx name="sparkle" at={c.at('X93', 'bestsellerem') - 6} volume={0.5} /><Sfx name="sk_book_thud" at={c.at('X93', 'Wrocław')} volume={0.5} /><Sfx name="shimmer" at={c.at('X93', 'krasnala')} volume={0.5} /></>,
+  9: (_fB, c) => <><Sfx name="sparkle" at={c.at('X93', 'bestseller') - 6} volume={0.5} /><Sfx name="sk_book_thud" at={c.at('X93', 'Wrocław')} volume={0.5} /><Sfx name="shimmer" at={c.at('X93', 'krasnala')} volume={0.5} /></>,
   10: (_fB, c) => <Sfx name="counter" at={c.at('X103', 'czterdzieści') - 4} volume={0.5} />,
 };
 

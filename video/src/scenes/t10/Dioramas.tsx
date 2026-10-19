@@ -33,7 +33,7 @@ export const BEATS: Record<number, Beat[]> = {
     { label: 'Dopiero początek koszmaru', word: 'koszmaru', red: true, f: [960, 420, 1.2] }],
   8: [{ label: 'Wraca do miasteczka', word: 'wraca', f: [1340, 760, 1.6] }, { label: 'Dom na wzgórzu', word: 'domu', f: [1530, 300, 1.8] },
     { label: 'Nowi przybysze', word: 'przybysze', f: [1440, 380, 1.6] }, { label: 'Znikają… albo wracają', word: 'znikać', red: true, f: [460, 840, 1.75] }],
-  9: [{ label: 'Guz na karku', word: 'karku', f: [420, 520, 1.6] }, { label: 'Prześwietlenie', word: 'Rentgen', f: [900, 360, 1.7] },
+  9: [{ label: 'Guz na karku', word: 'karku', f: [420, 520, 1.6] }, { label: 'Prześwietlenie', word: 'Prześwietlenie', f: [900, 360, 1.7] },
     { label: 'Lekarze bez odpowiedzi', word: 'lekarze', f: [900, 640, 1.35] }, { label: 'W środku rozwija się płód', word: 'płód', red: true, f: [930, 360, 2.1] },
     { label: 'Wróżbita', word: 'wróżbity', f: [1600, 620, 1.6] }],
   10: [{ label: 'Coś jest na zewnątrz', word: 'zewnątrz', f: [380, 400, 1.6] }, { label: 'Jedno spojrzenie', word: 'spojrzenie', red: true, f: [380, 400, 2] },

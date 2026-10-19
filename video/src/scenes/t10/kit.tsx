@@ -18,9 +18,11 @@ export const BEAM = 'rgba(255,220,140,';
 export type T10Icon = IconKind | 'tentacle' | 'heart' | 'puppet' | 'field' | 'wardrobe' | 'house' | 'cross' | 'tv';
 
 // Nagranie polecane (pantalla POSŁUCHAJ): lektor, czas, ocena w Audiotece (z liczbą ocen) i jak zacząć.
-// access: 'free' (za darmo, Wolne Lektury) · 'sub' (w abonamencie Storytel, sprawdzone 19.10.2026) · 'buy' (do kupienia w Audiotece).
+// access: 'free' (za darmo, Wolne Lektury) · 'sub' (w abonamencie Storytel PL y/o Audioteka Klub, sprawdzado 19.10.2026) · 'buy' (do kupienia w Audiotece).
+// role: «Czyta» por defecto; «Obsada» (słuchowisko) o «Głosy» (superprodukcja). votesLabel: si la captura de sonorbooks.pl muestra otra cifra.
 export type Narr = {
   label?: string; who: string; sub?: string; dur: string; rating: number; votes: number; source: string; access: 'free' | 'sub' | 'buy'; extra?: string;
+  role?: string; votesLabel?: string;
 };
 export type Book10 = {
   n: number; title: string; author: string; year?: number; bg: string; fg: string; accent: string; icon: T10Icon; spine?: string;
@@ -37,17 +39,17 @@ export const BOOKS10: Book10[] = [
   { n: 8, title: 'Jak sprzedać nawiedzony dom', author: 'Grady Hendrix', year: 2023, bg: '#EFE0C2', fg: '#2A1A12', accent: '#B5452B', icon: 'puppet', spine: 'Nawiedzony dom',
     narr: [{ who: 'Ilona Chojnowska', dur: '13 h 31 min', rating: 4.0, votes: 3, source: 'Audioteka', access: 'buy' }] },
   { n: 7, title: 'Dziecko Rosemary', author: 'Ira Levin', year: 1967, bg: '#3A1E24', fg: '#F4E6E8', accent: '#D98C9A', icon: 'house', sb: true,
-    narr: [{ who: 'Julia Kamińska', dur: '7 h 41 min', rating: 4.7, votes: 47, source: 'Audioteka', access: 'sub' }] },
+    narr: [{ who: 'Julia Kamińska', dur: '7 h 41 min', rating: 4.7, votes: 47, votesLabel: 'ponad 45 ocen', source: 'Audioteka', access: 'sub' }] },
   { n: 6, title: 'Drakula', author: 'Bram Stoker', year: 1897, bg: '#3A0A10', fg: '#F4E9DA', accent: '#E9C46A', icon: 'bat', sb: true,
     narr: [{ who: 'Andrzej Hausner', dur: '15 h 11 min', rating: 4.7, votes: 42, source: 'Audioteka', access: 'sub' }] },
-  { n: 5, title: 'Inkub', author: 'Artur Urbanowicz', year: 2016, bg: '#0F2620', fg: '#E6F2EC', accent: '#5BE3A0', icon: 'eye',
-    narr: [{ who: 'Danuta Stenka i inni', dur: '10 h 31 min', rating: 4.9, votes: 61, source: 'Audioteka', access: 'sub', extra: 'Słuchowisko · ponad 50 aktorów' }] },
+  { n: 5, title: 'Inkub', author: 'Artur Urbanowicz', year: 2019, bg: '#0F2620', fg: '#E6F2EC', accent: '#5BE3A0', icon: 'eye',
+    narr: [{ role: 'Obsada', who: 'Danuta Stenka i inni', dur: '10 h 31 min', rating: 4.9, votes: 61, source: 'Audioteka', access: 'sub', extra: 'Słuchowisko · ponad 50 aktorów' }] },
   { n: 4, title: 'Dom na Wyrębach', author: 'Stefan Darda', year: 2008, bg: '#1C2618', fg: '#EEF2E6', accent: '#A9C77E', icon: 'house',
     narr: [{ who: 'Wiktor Zborowski', dur: '12 h 26 min', rating: 4.5, votes: 223, source: 'Audioteka', access: 'sub' }] },
   { n: 3, title: 'Miasteczko Salem', author: 'Stephen King', year: 1975, bg: '#23272C', fg: '#EFE9DF', accent: '#D93A3A', icon: 'house', spine: 'Salem',
     narr: [{ who: 'Krzysztof Plewako-Szczerbiński', dur: '17 h 2 min', rating: 4.4, votes: 73, source: 'Audioteka', access: 'buy' }] },
   { n: 2, title: 'Manitou', author: 'Graham Masterton', year: 1975, bg: '#2A140C', fg: '#F6E8DC', accent: '#E8853F', icon: 'eye',
-    narr: [{ who: 'Marcel Sabat, Jarosław Boberek i inni', dur: '6 h 38 min', rating: 4.3, votes: 609, source: 'Audioteka', access: 'buy', extra: 'Superprodukcja Audioteki' }] },
+    narr: [{ role: 'Głosy', who: 'Marcel Sabat, Jarosław Boberek i inni', dur: '6 h 38 min', rating: 4.3, votes: 609, source: 'Audioteka', access: 'sub', extra: 'Superprodukcja Audioteki' }] },
   { n: 1, title: 'Nie otwieraj oczu', author: 'Josh Malerman', year: 2014, bg: '#0B0B0C', fg: '#F2F2F2', accent: '#9DB8E2', icon: 'eye',
     narr: [{ who: 'Andrzej Hausner', dur: '7 h 19 min', rating: 4.4, votes: 34, source: 'Audioteka', access: 'sub' }] },
 ];
