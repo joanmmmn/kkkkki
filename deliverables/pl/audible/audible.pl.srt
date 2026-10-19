@@ -81,7 +81,7 @@ tylko kupione i wzięte za kredyty.
 18
 00:01:10,280 --> 00:01:15,040
 W polskim Amazonie znajdziesz zakładkę
-„Audiobooki Audible” z filtrem języka.
+„Audiobooki Audible” z filtrem języka.
 
 19
 00:01:15,080 --> 00:01:20,000
@@ -222,68 +222,72 @@ planach, a w Premium dostają też kredyt na
 pierwszą książkę.
 
 48
-00:03:15,400 --> 00:03:21,040
-Wejdź na Amazon.pl, w zakładkę „Audiobooki
-Audible”, i wybierz „Wypróbuj Standard”
+00:03:15,400 --> 00:03:19,920
+Wejdź na Amazon.pl, w zakładkę
+„Audiobooki Audible”, i wybierz
 
 49
-00:03:21,080 --> 00:03:25,520
-albo „Premium”. Zalogujesz się kontem
-Amazon i podasz metodę płatności:
+00:03:19,960 --> 00:03:22,213
+„Wypróbuj Standard” albo „Premium”.
 
 50
+00:03:22,253 --> 00:03:25,520
+Zalogujesz się kontem Amazon
+i podasz metodę płatności:
+
+51
 00:03:25,560 --> 00:03:29,970
 dziś nie płacisz nic, a po
 30 dniach opłata pobierze się sama.
 
-51
+52
 00:03:30,020 --> 00:03:32,460
 Zapisz się na stronie, nie w aplikacji:
 
-52
+53
 00:03:32,500 --> 00:03:36,167
 w App Storze plany kupowane
 w aplikacji mają wyższe ceny.
 
-53
+54
 00:03:36,207 --> 00:03:39,790
 Potem pobierz aplikację
 i zaloguj się tym samym kontem.
 
-54
+55
 00:03:39,940 --> 00:03:44,940
 Zrezygnuj przed końcem 30 dni: link
-„Anuluj subskrypcję” jest na samym dole
+„Anuluj subskrypcję” jest na samym dole
 
-55
+56
 00:03:44,980 --> 00:03:50,350
 strony audible.de. Abonament z App
 Store’a albo Google Play anulujesz tam.
 
-56
+57
 00:03:50,620 --> 00:03:52,980
 I wykorzystaj kredyt przed rezygnacją:
 
-57
+58
 00:03:53,020 --> 00:03:56,820
 niewykorzystane kredyty przepadają,
 a książka wzięta za kredyt zostaje
 
-58
+59
 00:03:56,860 --> 00:03:58,470
 u ciebie na zawsze.
 
-59
+60
 00:03:58,520 --> 00:04:04,480
 Na sonorbooks.pl porównasz warunki Audible
 z Audioteką, Empik Go, Legimi i innymi
 
-60
+61
 00:04:04,520 --> 00:04:08,507
 serwisami oraz sprawdzisz, gdzie
 posłuchać audiobooka i za ile.
 
-61
+62
 00:04:08,547 --> 00:04:11,330
 Twoja następna historia
 już na ciebie czeka.
