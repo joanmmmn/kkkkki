@@ -21,10 +21,11 @@ export const piece: PLPiece = {
       { id: 'A02', kind: 'steps', bump: 'Jak to działa?', kicker: 'Kod z biblioteki', title: 'Jak to działa?', rec: { clip: '01_empik_biblioteki', start: 11.2, url: 'empik.com/biblioteki' }, steps: [
         { at: 'kupuje', title: 'Biblioteka kupuje pulę kodów' }, { at: 'rozdaje', title: 'Rozdaje je czytelnikom', sub: 'za darmo' },
         { at: 'wpisujesz', title: 'Kod wpisujesz w serwisie' }, { at: '30', title: 'Zwykle 30 dni', sub: 'bez limitu tytułów' },
-        { at: 'Placi', title: 'Płaci biblioteka', sub: 'Łódź: 500 000 zł z budżetu obywatelskiego', rec: { clip: '05_lodz_ebooki', start: 0.3, url: 'biblioteka.lodz.pl' } },
+        { at: 'Placi', title: 'Płaci biblioteka', sub: 'Łódź: 500 000 zł z budżetu obywatelskiego', rec: { clip: '05_lodz_ebooki', start: 0.3, holdAt: 3.3, url: 'biblioteka.lodz.pl' } },
       ],
-        marks: [{ at: 'rozdaje', until: 'wpisujesz', x: 376, y: 262, w: 260, h: 290 }, { at: 'wpisujesz', until: 'aplikacji', x: 826, y: 262, w: 300, h: 290 }, { at: 'aplikacji', until: 'Placi', x: 1316, y: 262, w: 260, h: 290 }],
-        zooms: [{ at: 'kupuje', zoom: 1.3, x: 976, y: 420 }] },
+        marks: [{ at: 'rozdaje', until: 'wpisujesz', x: 376, y: 262, w: 260, h: 290 }, { at: 'wpisujesz', until: 'aplikacji', x: 826, y: 262, w: 300, h: 290 }, { at: 'aplikacji', until: 'Placi', x: 1316, y: 262, w: 260, h: 290 },
+          { at: 'Lodzi', x: 652, y: 332, w: 136, h: 34 }],
+        zooms: [{ at: 'kupuje', zoom: 1.3, x: 976, y: 420 }, { at: 'Placi', zoom: 1.6, x: 760, y: 350 }] },
       { id: 'A03', kind: 'stat', kicker: 'Cena', title: 'Ile to kosztuje?', at: 'Nic', value: '0 zł', label: 'za kartę biblioteczną i za kod', tags: [
         { at: 'ustawy', label: 'Ustawa o bibliotekach, art. 14', sub: '„ogólnie dostępne i bezpłatne”', icon: 'doc' },
         { at: 'podpiac', label: 'Empik Go: bez karty płatniczej', sub: 'przy aktywacji kodu', icon: 'card' }, { at: 'wygasa', label: 'Po 30 dniach wygasa sam', sub: 'Empik Go, FAQ dla bibliotek', icon: 'clock' },
@@ -50,7 +51,7 @@ export const piece: PLPiece = {
         { at: 'audioseriale', label: 'Audiobooki i audioseriale', sub: 'oraz podcasty', icon: 'headphones' }, { at: 'Kids', label: 'Audioteka Kids', sub: 'aplikacja dla dzieci', icon: 'kid' },
         { at: 'promo', label: 'promo.audioteka.com', sub: 'po zalogowaniu: „Aktywuj dostęp”', icon: 'link' }, { at: 'trzydziesci', label: '30 dni', sub: 'maks. 2 urządzenia', icon: 'calendar' },
       ] },
-      { id: 'A07', kind: 'rec', bump: 'Każda biblioteka inaczej', kicker: 'Stan na 19.10.2026', title: 'Łódź i Wrocław', rec: { clip: '05_lodz_ebooki', start: 4.0, url: 'biblioteka.lodz.pl' },
+      { id: 'A07', kind: 'rec', bump: 'Każda biblioteka inaczej', kicker: 'Stan na 19.10.2026', title: 'Łódź i Wrocław', rec: { clip: '05_lodz_ebooki', start: 0.3, holdAt: 3.3, url: 'biblioteka.lodz.pl' },
         cuts: [
           { at: 'pazdzierniku', rec: { clip: '06_lodz_mapa', start: 4.0, url: 'biblioteka.lodz.pl' } },
           { at: 'Wroclawiu', rec: { clip: '07_wroclaw_legimi', start: 0.3, url: 'biblioteka.wroc.pl' } },
@@ -94,9 +95,10 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'polowac', label: 'Nie chcesz polować na kody', sub: 'kodów jest mało i szybko znikają' },
       ], alts: { at: 'probne', names: ['Okresy próbne serwisów', 'Wolne Lektury: klasyka za 0 zł'], label: 'Zamiast tego:' } },
-      { id: 'B01', kind: 'steps', bump: 'Jak odebrać kod', kicker: 'Krok 1', title: 'Karta biblioteczna', rec: { clip: '05_lodz_ebooki', start: 7.0, url: 'biblioteka.lodz.pl' }, steps: [
+      { id: 'B01', kind: 'steps', bump: 'Jak odebrać kod', kicker: 'Krok 1', title: 'Karta biblioteczna', rec: { clip: '05_lodz_ebooki', start: 9.8, url: 'biblioteka.lodz.pl' }, steps: [
         { at: 'zapisz', title: 'Zapisz się do biblioteki' }, { at: 'dokument', title: 'Weź dokument tożsamości' }, { at: 'reki', title: 'Łódź: karta od ręki', sub: 'w każdej filii' },
-      ] },
+      ],
+        marks: [{ at: 'dokument', x: 268, y: 586, w: 1070, h: 76 }], zooms: [{ at: 'zapisz', zoom: 1.6, x: 800, y: 620 }] },
       { id: 'B02', kind: 'rec', kicker: 'Krok 2', title: 'Sprawdź zasady', rec: { clip: '07_wroclaw_legimi', start: 6.0, url: 'biblioteka.wroc.pl' },
         tags: [
           { at: 'serwis', label: 'Który serwis?', sub: 'Legimi, Empik Go, Audioteka', icon: 'search' }, { at: 'filii', label: 'W filii', icon: 'library' },

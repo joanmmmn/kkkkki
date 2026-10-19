@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 244,
+ "duration": 12.639,
+ "offset": 0.039,
+ "marks": {
+  "budzet": 0.264,
+  "zasady": 3.426,
+  "fiszka": 7.797,
+  "end": 12.639
+ },
+ "events": []
+}
