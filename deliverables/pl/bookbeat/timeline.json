@@ -1,6 +1,6 @@
 {
- "total_frames": 13764,
- "seconds": 275.28,
+ "total_frames": 13769,
+ "seconds": 275.38,
  "chapters": [
   {
    "t": 11.5,
@@ -27,35 +27,35 @@
    "label": "Jak liczą się godziny"
   },
   {
-   "t": 129.82,
+   "t": 129.92,
    "label": "Profile rodzinne i dziecięce"
   },
   {
-   "t": 143.54,
+   "t": 143.64,
    "label": "Urządzenia"
   },
   {
-   "t": 157.24,
+   "t": 157.34,
    "label": "Opinie"
   },
   {
-   "t": 173.26,
+   "t": 173.36,
    "label": "Plusy i minusy"
   },
   {
-   "t": 189.1,
+   "t": 189.2,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 202.22,
+   "t": 202.32,
    "label": "Jak wypróbować za darmo"
   },
   {
-   "t": 230.84,
+   "t": 230.94,
    "label": "Jak zrezygnować"
   },
   {
-   "t": 243.04,
+   "t": 243.14,
    "label": "Drobny druk okresu próbnego"
   }
  ],
@@ -120,14 +120,14 @@
    "id": "A08",
    "kind": "rec",
    "start": 5654,
-   "dur": 837,
+   "dur": 842,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A08B",
    "kind": "rec",
-   "start": 6491,
+   "start": 6496,
    "dur": 686,
    "lead": 7,
    "bump": null
@@ -135,7 +135,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 7177,
+   "start": 7182,
    "dur": 699,
    "lead": 7,
    "bump": null
@@ -143,7 +143,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7876,
+   "start": 7881,
    "dur": 801,
    "lead": 26,
    "bump": "Opinie"
@@ -151,7 +151,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8677,
+   "start": 8682,
    "dur": 792,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -159,7 +159,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9469,
+   "start": 9474,
    "dur": 656,
    "lead": 26,
    "bump": "Werdykt"
@@ -167,7 +167,7 @@
   {
    "id": "B01",
    "kind": "steps",
-   "start": 10125,
+   "start": 10130,
    "dur": 407,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -175,7 +175,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10532,
+   "start": 10537,
    "dur": 579,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B03",
    "kind": "features",
-   "start": 11111,
+   "start": 11116,
    "dur": 445,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 11556,
+   "start": 11561,
    "dur": 596,
    "lead": 26,
    "bump": "Jak zrezygnować"
@@ -199,7 +199,7 @@
   {
    "id": "B05",
    "kind": "rec",
-   "start": 12152,
+   "start": 12157,
    "dur": 595,
    "lead": 7,
    "bump": null
@@ -207,7 +207,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12747,
+   "start": 12752,
    "dur": 1017,
    "lead": 7,
    "bump": null

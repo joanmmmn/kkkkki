@@ -121,178 +121,178 @@ przełączasz się między słuchaniem
 a czytaniem i wracasz w to samo miejsce.
 
 27
-00:01:53,220 --> 00:01:55,700
+00:01:53,220 --> 00:01:55,780
 Godziny liczą się według normalnego tempa:
 
 28
-00:01:55,740 --> 00:02:00,220
+00:01:55,820 --> 00:02:00,380
 dziesięciogodzinna książka zabierze ci
 10 godzin, bez względu na to, jak szybko
 
 29
-00:02:00,260 --> 00:02:04,700
+00:02:00,420 --> 00:02:04,967
 słuchasz. Czytanie też je zużywa,
 a niewykorzystane przepadają.
 
 30
-00:02:04,740 --> 00:02:09,470
+00:02:05,007 --> 00:02:09,554
 W Premium dokupisz 20 godzin za 17,99 zł.
 
 31
-00:02:09,960 --> 00:02:15,307
+00:02:10,060 --> 00:02:15,407
 Każdy profil ma tyle samo godzin co pakiet
 właściciela i wszyscy mogą słuchać naraz.
 
 32
-00:02:15,347 --> 00:02:19,440
+00:02:15,447 --> 00:02:19,540
 Profil dziecięcy pokazuje treści dla
 dzieci do 12 lat, ale bez blokady
 
 33
-00:02:19,480 --> 00:02:23,570
+00:02:19,580 --> 00:02:23,670
 rodzicielskiej. Profile dokupisz
 dopiero po okresie próbnym.
 
 34
-00:02:23,732 --> 00:02:28,840
+00:02:23,832 --> 00:02:28,940
 BookBeat działa na telefonach i tabletach
 z Androidem i iOS, na Apple Watch, nawet
 
 35
-00:02:28,880 --> 00:02:33,693
+00:02:28,980 --> 00:02:33,793
 bez telefonu, w samochodzie z CarPlay
 i Android Auto oraz z Chromecastem.
 
 36
-00:02:33,733 --> 00:02:37,690
+00:02:33,833 --> 00:02:37,790
 Na komputerze ani na czytniku
 e-booków BookBeat nie działa.
 
 37
-00:02:38,040 --> 00:02:43,728
+00:02:38,140 --> 00:02:43,828
 W Polsce oceny są wysokie: 4,8 w Google
 Play i w App Storze, gdzie ma ponad
 
 38
-00:02:43,768 --> 00:02:48,000
+00:02:43,868 --> 00:02:48,100
 10 000 ocen. Chwalą lektorów
 i wygodną aplikację.
 
 39
-00:02:48,040 --> 00:02:53,650
+00:02:48,140 --> 00:02:53,750
 Krytykują limity godzin, nawet w Premium,
 i zawiłą rezygnację, tylko przez stronę.
 
 40
-00:02:54,060 --> 00:02:59,380
+00:02:54,160 --> 00:02:59,480
 Plusy: 30 dni za darmo, audiobooki
 i e-booki w jednej cenie i profile dla
 
 41
-00:02:59,420 --> 00:03:04,980
+00:02:59,520 --> 00:03:05,080
 rodziny. Minusy: brak planu bez limitu,
 skromny polski katalog, przepadające
 
 42
-00:03:05,020 --> 00:03:09,350
+00:03:05,120 --> 00:03:09,450
 godziny i utrata dostępu od razu
 po rezygnacji w okresie próbnym.
 
 43
-00:03:09,900 --> 00:03:14,980
+00:03:10,000 --> 00:03:15,080
 Czy warto? Premium ma sens, jeśli mieścisz
 się w 100 godzinach, słuchasz z rodziną
 
 44
-00:03:15,020 --> 00:03:19,460
+00:03:15,120 --> 00:03:19,560
 albo po angielsku. Jeśli szukasz głównie
 polskich nowości, porównaj go najpierw
 
 45
-00:03:19,500 --> 00:03:21,990
+00:03:19,600 --> 00:03:22,090
 z Audioteką Klub czy Empik Go.
 
 46
-00:03:23,020 --> 00:03:25,380
+00:03:23,120 --> 00:03:25,480
 Jak wypróbować BookBeat za darmo?
 
 47
-00:03:25,420 --> 00:03:30,630
+00:03:25,520 --> 00:03:30,730
 Nowi użytkownicy dostają 30 dni
 z 20 godzinami słuchania i czytania.
 
 48
-00:03:30,780 --> 00:03:34,820
+00:03:30,880 --> 00:03:34,920
 Na stronie BookBeat zakładasz konto,
 wybierasz pakiet, który zacznie się po
 
 49
-00:03:34,860 --> 00:03:37,900
+00:03:34,960 --> 00:03:38,000
 okresie próbnym, i dodajesz
 metodę płatności.
 
 50
-00:03:37,940 --> 00:03:42,230
+00:03:38,040 --> 00:03:42,330
 Dziś nie płacisz nic, a zgody na
 marketing nie musisz zaznaczać.
 
 51
-00:03:42,360 --> 00:03:45,973
+00:03:42,460 --> 00:03:46,073
 Potem pobierasz aplikację
 i logujesz się tym samym kontem.
 
 52
-00:03:46,013 --> 00:03:51,410
+00:03:46,113 --> 00:03:51,510
 Uwaga: jeśli zapłacisz kartą podarunkową,
 okresu próbnego nie dostaniesz.
 
 53
-00:03:51,640 --> 00:03:54,600
+00:03:51,740 --> 00:03:54,700
 Jak zrezygnować? Tylko
 na stronie BookBeat:
 
 54
-00:03:54,640 --> 00:03:57,760
+00:03:54,740 --> 00:03:57,860
 w menu konta wejdź
 w „Zarządzaj subskrypcją” i wykonaj
 
 55
-00:03:57,800 --> 00:04:01,600
+00:03:57,900 --> 00:04:01,700
 wszystkie kroki. Bez e-maila
 z potwierdzeniem subskrypcja może nie
 
 56
-00:04:01,640 --> 00:04:03,090
+00:04:01,740 --> 00:04:03,190
 być anulowana.
 
 57
-00:04:03,180 --> 00:04:07,540
+00:04:03,280 --> 00:04:07,640
 Drobny druk: BookBeat nie przypomina
 o końcu okresu próbnego, a pierwszą
 
 58
-00:04:07,580 --> 00:04:09,700
+00:04:07,680 --> 00:04:09,800
 płatność pobiera dzień po nim.
 
 59
-00:04:09,740 --> 00:04:14,870
+00:04:09,840 --> 00:04:14,970
 Rezygnacja w trakcie próby od razu odcina
 dostęp, więc zrób to w ostatnim dniu.
 
 60
-00:04:15,080 --> 00:04:16,960
+00:04:15,180 --> 00:04:17,060
 Chcesz porównać inne opcje?
 
 61
-00:04:17,000 --> 00:04:22,773
+00:04:17,100 --> 00:04:22,873
 Na sonorbooks.pl zestawisz Audiotekę,
 Empik Go, Legimi czy Audible i sprawdzisz,
 
 62
-00:04:22,813 --> 00:04:25,067
+00:04:22,913 --> 00:04:25,167
 gdzie posłuchać audiobooka i za ile.
 
 63
-00:04:25,107 --> 00:04:27,970
+00:04:25,207 --> 00:04:28,070
 Twoja następna historia
 już na ciebie czeka.
