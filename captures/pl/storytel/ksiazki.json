@@ -9,6 +9,102 @@
  "crf": 20,
  "steps": [
   {
+   "go": "https://www.storytel.com/pl/originals",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    480,
+    300
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "row"
+  },
+  {
+   "move": [
+    704,
+    770
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    1072,
+    770
+   ],
+   "dur": 700
+  },
+  {
+   "mark": "row_kruk"
+  },
+  {
+   "wait": 1100
+  },
+  {
+   "move": [
+    1256,
+    770
+   ],
+   "dur": 600
+  },
+  {
+   "mark": "row_arka"
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "orig_end"
+  },
+  {
+   "record": false
+  },
+  {
    "go": "https://www.storytel.com/pl/books/kruk-s%C5%82uchowisko-1305884",
    "until": "domcontentloaded"
   },
@@ -47,7 +143,7 @@
    "wait": 400
   },
   {
-   "mark": "top"
+   "mark": "kruk"
   },
   {
    "move": [

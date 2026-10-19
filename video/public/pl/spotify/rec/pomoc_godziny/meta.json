@@ -4,13 +4,13 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 243,
- "duration": 10.453,
- "offset": 0.112,
+ "frames": 118,
+ "duration": 9.197,
+ "offset": 0.103,
  "marks": {
-  "top": 0.311,
-  "speed": 5.897,
-  "end": 10.452
+  "start": 0.317,
+  "open": 3.96,
+  "end": 9.197
  },
  "events": []
 }

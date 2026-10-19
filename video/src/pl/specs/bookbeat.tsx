@@ -11,12 +11,12 @@ export const piece: PLPiece = {
     kicker: 'Recenzja BookBeat', music: 'pl/bookbeat/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'BookBeat:\nczy warto?', hi: ['BookBeat:', 'BookBeat'], rec: { clip: 'portada', start: 0.3 },
-        cuts: [{ at: 'ceny', rec: { clip: 'cennik', start: 0.5 } }, { at: 'polski', rec: { clip: 'portada', start: 9.0 } }, { at: 'Powiemy', rec: { clip: 'rozdroze', start: 3.4 } }],
+        cuts: [{ at: 'ceny', rec: { clip: 'cennik', start: 0.5 } }, { at: 'polski', rec: { clip: 'portada', start: 10.3 } }, { at: 'Powiemy', rec: { clip: 'rozdroze', start: 3.4 } }],
         promises: [
           { at: 'ceny', label: 'Ceny i limity godzin', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'regulamin', label: 'Drobny druk', icon: 'doc' },
           { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', icon: 'gift' },
         ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest BookBeat?', rec: { clip: 'portada', start: 3.4 }, cuts: [{ at: 'pakiet', rec: { clip: 'cennik', start: 0.6 } }], facts: [
+      { id: 'A02', kind: 'intro', bump: 'Czym jest BookBeat?', rec: { clip: 'portada', start: 5.0 }, cuts: [{ at: 'pakiet', rec: { clip: 'cennik', start: 4.4 } }], facts: [
         { at: 'szwedzka', label: 'Ze Szwecji, grupa Bonnier', icon: 'globe' }, { at: 'polsku', label: 'Po polsku od 2020 roku', icon: 'calendar' },
         { at: 'Planu', label: 'Brak planu bez limitu', icon: 'infinity', tone: 'bad' }, { at: 'pakiet', label: 'Płacisz za pakiet godzin', icon: 'clock' },
       ], big: { at: 'miliona', value: 1000000, suffix: '+', label: 'audiobooków i e-booków' } },
@@ -89,8 +89,8 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'nowosci', label: 'Szukasz głównie polskich nowości', sub: 'najpierw porównaj inne serwisy' },
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
-      { id: 'B01', kind: 'steps', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Dla nowych użytkowników', rec: { clip: 'portada', start: 0.3, holdAt: 3.3 },
-        marks: [{ at: '30', until: '20', x: 156, y: 342, w: 641, h: 92 }, { at: '20', x: 194, y: 441, w: 564, h: 128 }],
+      { id: 'B01', kind: 'steps', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Dla nowych użytkowników', rec: { clip: 'portada', start: 0.3, holdAt: 3.0 },
+        marks: [{ at: '30', until: '20', x: 220, y: 350, w: 515, h: 76 }, { at: '20', x: 198, y: 444, w: 554, h: 120 }],
         steps: [
           { at: 'Nowi', title: 'Nowe konto', sub: 'okres próbny tylko raz' }, { at: '30', title: '30 dni za darmo' },
           { at: '20', title: '20 godzin w próbie', sub: 'słuchania i czytania' },

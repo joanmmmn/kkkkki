@@ -15,16 +15,20 @@ export const piece: PLPiece = {
         { at: 'ceny', label: 'Ceny', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'search' },
         { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '14', label: '14 dni za darmo', icon: 'gift' },
       ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, url: 'swiatczytnikow.pl' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4 } }], facts: [
+      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, holdAt: 4.2, url: 'swiatczytnikow.pl' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4 } }], facts: [
         { at: 'kanadyjska', label: 'Marka z Kanady', sub: 'czytniki i księgarnia z e-bookami', icon: 'ereader' },
         { at: 'Rakutena', label: 'Należy do Rakutena', sub: 'Japonia', icon: 'globe' },
         { at: 'Polsce', label: 'W Polsce od końca maja 2026', icon: 'calendar' },
         { at: 'czytnikach', label: 'Aplikacja i czytniki Kobo', icon: 'headphones' },
       ] },
       { id: 'A03', kind: 'rec', bump: 'Cennik', kicker: 'Cennik', title: 'Trzy plany', rec: { clip: 'sonorbooks', start: 9.0, url: 'sonorbooks.pl/platformy' },
-        cuts: [{ at: 'Rid', rec: { clip: 'swiat', start: 7.0, url: 'swiatczytnikow.pl' } }, { at: 'Placisz', rec: { clip: 'naczytniku', start: 8.8, url: 'naczytniku.pl' } }],
-        marks: [{ at: 'Placisz', until: 'czternascie', x: 364, y: 216, w: 792, h: 82 }, { at: 'czternascie', x: 364, y: 354, w: 792, h: 56 }],
-        zooms: [{ at: 'Placisz', zoom: 1.6, x: 760, y: 300 }],
+        cuts: [{ at: 'Rid', rec: { clip: 'swiat', start: 7.0, url: 'swiatczytnikow.pl' } }, { at: 'start', rec: { clip: 'naczytniku', start: 8.8, url: 'naczytniku.pl' } }],
+        marks: [
+          { at: 'Rid', until: 'Lisen', x: 560, y: 515, w: 210, h: 80 }, { at: 'Lisen', until: 'end', x: 520, y: 930, w: 250, h: 28 },
+          { at: 'end', until: 'Placisz', x: 860, y: 515, w: 210, h: 80 }, { at: 'Placisz', until: 'start', x: 560, y: 126, w: 545, h: 32 },
+          { at: 'start', x: 364, y: 354, w: 792, h: 56 },
+        ],
+        zooms: [{ at: 'Rid', zoom: 1.2, x: 830, y: 540 }, { at: 'start', zoom: 1.6, x: 760, y: 300 }],
         tags: [
           { at: 'warunkow', label: 'Stan: październik 2026', icon: 'calendar', tone: 'accent' },
           { at: 'Rid', label: 'Read: 39,90 zł', sub: 'e-booki · miesięcznie', icon: 'book' },
@@ -47,7 +51,7 @@ export const piece: PLPiece = {
           { at: 'poltora', label: '1,5 mln+ e-booków', icon: 'book' }, { at: 'angielsku', label: 'Głównie po angielsku', icon: 'globe' }, { at: 'malo', label: 'Po polsku: na razie mało', tone: 'bad' },
           { at: 'serwisy', label: '„prawie nic tam nie ma”', sub: 'Świat Czytników, 31.05.2026', icon: 'doc' },
         ] },
-      { id: 'A06', kind: 'rec', kicker: 'NaCzytniku.pl · 23.06.2026', title: 'Mocna oferta po angielsku', rec: { clip: 'naczytniku', start: 0.3, url: 'naczytniku.pl' },
+      { id: 'A06', kind: 'rec', kicker: 'NaCzytniku.pl · 23.06.2026', title: 'Mocna oferta po angielsku', rec: { clip: 'naczytniku', start: 0.3, holdAt: 6.1, url: 'naczytniku.pl' },
         marks: [{ at: 'angielsku', x: 364, y: 156, w: 792, h: 108 }], zooms: [{ at: 'angielsku', zoom: 1.5, x: 760, y: 300 }],
         tags: [
           { at: 'angielsku', label: 'EN: dużo większy wybór', tone: 'good' }, { at: 'audiobookow', label: 'Także audiobooki', icon: 'headphones' },
@@ -98,9 +102,9 @@ export const piece: PLPiece = {
       ] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_subskrypcja', start: 0.4, holdAt: 9.0 },
         marks: [{ at: 'czternastu', until: ['kobo', 1], x: 590, y: 200, w: 764, h: 62 }, { at: ['kobo', 1], until: 'anulowaniu', x: 800, y: 76, w: 480, h: 56 }, { at: 'anulowaniu', x: 844, y: 532, w: 660, h: 66 }], steps: [
-        { at: 'czternastu', title: 'Po 14 dniach: opłata co miesiąc' }, { at: 'anuluj', title: 'Anuluj przed końcem próby', sub: 'wtedy karta nie zostanie obciążona' },
-        { at: ['kobo', 1], title: 'kobo.com › konto › subskrypcje', sub: 'nie na czytniku ani w aplikacji na iPhone’a', rec: { clip: 'pomoc_anuluj', start: 6.45 } },
-        { at: 'anulowaniu', title: 'Po anulowaniu: koniec dostępu', sub: 'do książek z Kobo Plus' },
+        { at: 'czternastu', title: 'Po 14 dniach płacisz', sub: 'co miesiąc' }, { at: 'anuluj', title: 'Anuluj przed końcem próby', sub: 'wtedy karta nie zostanie obciążona' },
+        { at: ['kobo', 1], title: 'Na kobo.com, w koncie', sub: 'sekcja subskrypcji (nie na czytniku ani na iPhonie)', rec: { clip: 'pomoc_anuluj', start: 6.45 } },
+        { at: 'anulowaniu', title: 'Potem koniec dostępu', sub: 'do książek z Kobo Plus' },
       ] },
       { id: 'B06', kind: 'outro', rec: { clip: 'sonorbooks', start: 0.2, url: 'sonorbooks.pl/platformy' }, cta: 'Porównaj Kobo Plus\nz innymi:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'Audiotek', label: 'Audioteka · Empik Go · Legimi', icon: 'search' }] },

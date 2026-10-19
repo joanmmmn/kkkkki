@@ -35,7 +35,7 @@ export const piece: PLPiece = {
         tags: [{ at: 'ponad', label: '1000+ głosów', icon: 'mic' }, { at: 'jezyka', label: 'Według języka telefonu', icon: 'globe' }, { at: 'zaprojektujesz', label: 'Własny głos z opisu', sub: 'tylko w Ultra', icon: 'sparkle' },
           { at: 'Fronczewski', label: 'Piotr Fronczewski', sub: 'seria Iconic Voices', icon: 'star' }, { at: 'wspolpracy', label: 'Głos AI razem z aktorem', icon: 'mic' }] },
       { id: 'A06', kind: 'rec', bump: 'Polskie audiobooki', kicker: 'Po polsku', title: 'Co posłuchasz?', rec: { clip: 'lalka_wl', start: 0.4 },
-        cuts: [{ at: 'lektorami', rec: { clip: 'lalka_lektor', start: 0.1 } }, { at: 'kryminaly', rec: { clip: 'polska_czyta', start: 4.6 } }],
+        cuts: [{ at: 'lektorami', rec: { clip: 'lalka_lektor', start: 0.1 } }, { at: 'kryminaly', rec: { clip: 'polska_czyta', start: 3.6 } }],
         marks: [{ at: 'darmo', until: 'pierwszy', x: 364, y: 335, w: 320, h: 64 }, { at: 'pierwszy', until: 'ktory', x: 364, y: 782, w: 600, h: 40 }, { at: 'glos', until: 'lektorami', x: 364, y: 566, w: 600, h: 40 }, { at: 'Grzegorza', until: 'kryminaly', x: 362, y: 298, w: 590, h: 38 }, { at: 'Mankella', x: 1322, y: 266, w: 236, h: 340 }],
         tags: [{ at: 'darmo', label: 'Za darmo: Wolne Lektury', icon: 'gift', tone: 'good' }, { at: 'pierwszy', label: '„Lalka”, tom pierwszy', sub: '15 h 59 min', icon: 'book' }, { at: 'dowolny', label: 'Czyta głos AI', sub: 'do wyboru', icon: 'mic' },
           { at: 'lektorami', label: 'Ultra: z lektorami', icon: 'headphones' }, { at: 'Grzegorza', label: '„Lalka” · 36 h 4 min', sub: 'czytają G. Damięcki i K. Gosztyła', icon: 'book' }, { at: 'kryminaly', label: 'Henning Mankell', sub: 'kryminały po polsku', icon: 'book' }] },
@@ -45,7 +45,7 @@ export const piece: PLPiece = {
       { id: 'A08', kind: 'features', bump: 'Odtwarzacz', kicker: 'W aplikacji', title: 'Jak się słucha?', cols: 3, items: [
         { at: 'slowo', label: 'Podświetlanie', sub: 'słowo po słowie', icon: 'font' }, { at: 'Predkosc', label: 'Prędkość do 4×', icon: 'speed' },
         { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' }, { at: 'zakladki', label: 'Zakładki', icon: 'bookmark' },
-        { at: 'offline', label: 'Offline w Ultra', sub: 'pobrane pliki działają 60 dni', icon: 'download' },
+        { at: 'offline', label: 'Offline w Ultra', sub: 'pliki ważne 60 dni', icon: 'download' },
       ] },
       { id: 'A09', kind: 'devices', items: [
         { at: 'iPhon', label: 'iPhone', icon: 'phone', ok: true }, { at: 'iPad', label: 'iPad', icon: 'tablet', ok: true },
@@ -55,7 +55,7 @@ export const piece: PLPiece = {
       { id: 'A10', kind: 'ratings', bump: 'Opinie', kicker: 'Opinie · 19.10.2026', stores: [{ at: 'Gugl', store: 'google', rating: 4.6, count: '69,7 tys. opinii' }, { at: 'Ep', store: 'apple', rating: 4.7, count: '704 oceny w Polsce' }],
         likes: [{ at: 'naturalne', label: 'Naturalne głosy' }, { at: 'dowolny', label: 'Przeczyta dowolny plik' }],
         dislikes: [{ at: 'Androida', label: 'Brak Android Auto' }, { at: 'gubienie', label: 'Gubi miejsce po przerwie' }, { at: 'nagle', label: 'Nagle żąda płatnego planu' }] },
-      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'ElevenReader', pros: [
+      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', kicker: 'Podsumowanie', title: 'ElevenReader', pros: [
         { at: 'naturalne', label: 'Naturalne głosy' }, { at: 'prawie', label: 'Prawie każdy tekst → audio' }, { at: 'darmowa', label: 'Darmowa polska klasyka' }, { at: '10', label: '10 h miesięcznie za darmo' },
       ], cons: [
         { at: 'angielsku', label: 'Strona po angielsku, w USD' }, { at: 'tylko', label: 'Tylko 20 h premium / mies.' }, { at: 'wspoldzielenia', label: 'Bez współdzielenia konta' }, { at: 'eksportu', label: 'Bez eksportu nagrań' },
@@ -102,5 +102,5 @@ export const piece: PLPiece = {
       { label: 'Jak zrezygnować', from: 'B04' },
     ],
   },
-  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'clock', text: '10 h\nza darmo' }, label: { strong: 'Ultra', rest: '39 ZŁ / MIES.' } },
+  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'clock', text: '10 h/mies.\nza darmo' }, label: { strong: 'Ultra', rest: '39 ZŁ / MIES.' } },
 };

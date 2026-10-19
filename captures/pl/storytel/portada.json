@@ -22,6 +22,24 @@
    "wait": 600
   },
   {
+   "eval": "window.scrollTo(0,600)"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "eval": "window.scrollTo(0,1200)"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "eval": "window.scrollTo(0,2100)"
+  },
+  {
+   "wait": 700
+  },
+  {
    "eval": "window.scrollTo(0,3600)"
   },
   {
@@ -53,6 +71,112 @@
   },
   {
    "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    520,
+    330
+   ],
+   "dur": 1300
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 300,
+   "dur": 1800
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "covers"
+  },
+  {
+   "move": [
+    1100,
+    560
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "record": false
+  },
+  {
+   "eval": "window.scrollTo(0,2100)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "rok"
+  },
+  {
+   "move": [
+    1400,
+    420
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1350,
+    580
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "rok_end"
+  },
+  {
+   "record": false
   },
   {
    "eval": "window.scrollTo(0,4487)"
@@ -97,7 +221,7 @@
    "wait": 1500
   },
   {
-   "mark": "scroll"
+   "mark": "scroll2"
   },
   {
    "scroll": 450,

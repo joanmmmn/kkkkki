@@ -112,6 +112,103 @@
    "wait": 3000
   },
   {
+   "mark": "plany_end"
+  },
+  {
+   "record": false
+  },
+  {
+   "go": "https://www.storytel.com/pl/signup/campaign/autumnpromo2026_6m50off",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "card"
+  },
+  {
+   "move": [
+    470,
+    470
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "fine"
+  },
+  {
+   "move": [
+    420,
+    560
+   ],
+   "dur": 800
+  },
+  {
+   "move": [
+    700,
+    640
+   ],
+   "dur": 2400
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "consents"
+  },
+  {
+   "move": [
+    1300,
+    700
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1300,
+    782
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 2400
+  },
+  {
    "wait": 800
   },
   {
