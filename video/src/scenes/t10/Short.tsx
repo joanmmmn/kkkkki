@@ -36,14 +36,29 @@ const CUES = (() => {
     if (!v) continue;
     let text = v.text;
     for (const [x, y] of DIG) text = text.replace(x, y);
-    const words = text.split(' ');
+    // Norma tipográfica polaca (como tools/t10_meta.py): una palabra de una letra va pegada a la siguiente, la cifra a su palabra.
+    const raw = text.split(' ');
+    const words: string[] = [];
+    for (const w of raw) {
+      const prev = words[words.length - 1];
+      const last = prev?.split('\u00a0').pop() ?? '';
+      if (prev && ((last.replace(/[„”"«»–-]/g, '').length === 1 && /[a-zA-ZąęłńóśźżĄĘŁŃÓŚŹŻ]/.test(last)) || /^\d+$/.test(last))) words[words.length - 1] = `${prev}\u00a0${w}`;
+      else words.push(w);
+    }
     const chunks: string[] = [];
     let cur = '';
     for (const w of words) {
       const brk = /[.:?!…]$/.test(cur);
-      if (cur && (cur.length + w.length + 1 > 26 || brk)) { chunks.push(cur); cur = w; } else cur = cur ? `${cur} ${w}` : w;
+      if (cur && (cur.length + w.length + 1 > 28 || brk)) { chunks.push(cur); cur = w; } else cur = cur ? `${cur} ${w}` : w;
     }
     if (cur) chunks.push(cur);
+    // sin trozos sueltos: si el último trozo de una frase es muy corto, se lleva la última palabra del anterior
+    for (let i = 1; i < chunks.length; i++) {
+      if (chunks[i].length < 12 && !/[.:?!…]$/.test(chunks[i - 1])) {
+        const ws = chunks[i - 1].split(' ');
+        if (ws.length > 1) { const mv = ws.pop()!; chunks[i - 1] = ws.join(' '); chunks[i] = `${mv} ${chunks[i]}`; }
+      }
+    }
     const total = chunks.reduce((a, c) => a + c.length, 0);
     const dur = speechFrames(p.id);
     let acc = 0;
