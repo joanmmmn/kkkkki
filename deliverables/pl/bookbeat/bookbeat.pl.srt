@@ -13,7 +13,7 @@ Powiemy ci, co jest dobre, co złe i jak
 wypróbować go za darmo przez 30 dni.
 
 4
-00:00:12,328 --> 00:00:16,460
+00:00:12,356 --> 00:00:16,460
 BookBeat to szwedzka aplikacja
 z audiobookami i e-bookami, należąca do
 
@@ -58,7 +58,7 @@ Uwaga: ten milion to prawie same książki
 obcojęzyczne – najwięcej po angielsku i po
 
 14
-00:00:55,920 --> 00:00:58,716
+00:00:55,920 --> 00:00:59,013
 niemiecku; po polsku to niecałe 2%.
 
 15
@@ -79,10 +79,10 @@ z udziałem ponad 70 aktorów, z muzyką
 18
 00:01:14,160 --> 00:01:17,520
 i efektami. Jest też
-najnowsze „Rozdroże kruków”.
+najnowsze „Rozdroże kruków”.
 
 19
-00:01:17,560 --> 00:01:20,557
+00:01:17,560 --> 00:01:20,904
 Ale słuchowisk po polsku
 jest niewiele, około 40.
 
@@ -93,7 +93,7 @@ za treść i za lektora.
 
 21
 00:01:25,280 --> 00:01:33,760
-„Rozdroże kruków” trwa 9 godzin 35 minut
+„Rozdroże kruków” trwa 9 godzin 35 minut
 i ma 4,8 za książkę oraz 4,9 za czytanie.
 
 22
@@ -135,7 +135,7 @@ słuchasz. Czytanie też je zużywa,
 a niewykorzystane przepadają.
 
 30
-00:02:04,740 --> 00:02:08,643
+00:02:04,740 --> 00:02:09,470
 W Premium dokupisz 20 godzin za 17,99 zł.
 
 31
@@ -154,12 +154,12 @@ rodzicielskiej. Profile dokupisz
 dopiero po okresie próbnym.
 
 34
-00:02:23,706 --> 00:02:28,840
+00:02:23,732 --> 00:02:28,840
 BookBeat działa na telefonach i tabletach
 z Androidem i iOS, na Apple Watch, nawet
 
 35
-00:02:28,880 --> 00:02:33,436
+00:02:28,880 --> 00:02:33,693
 bez telefonu, w samochodzie z CarPlay
 i Android Auto oraz z Chromecastem.
 
@@ -169,12 +169,12 @@ Na komputerze ani na czytniku
 e-booków BookBeat nie działa.
 
 37
-00:02:38,040 --> 00:02:43,712
+00:02:38,040 --> 00:02:43,728
 W Polsce oceny są wysokie: 4,8 w Google
 Play i w App Storze, gdzie ma ponad
 
 38
-00:02:43,752 --> 00:02:48,000
+00:02:43,768 --> 00:02:48,000
 10 000 ocen. Chwalą lektorów
 i wygodną aplikację.
 
@@ -252,43 +252,47 @@ Jak zrezygnować? Tylko
 na stronie BookBeat:
 
 54
-00:03:54,640 --> 00:03:58,987
-w menu konta wejdź w „Zarządzaj
-subskrypcją” i wykonaj wszystkie kroki.
+00:03:54,640 --> 00:03:57,760
+w menu konta wejdź
+w „Zarządzaj subskrypcją” i wykonaj
 
 55
-00:03:59,027 --> 00:04:03,090
-Bez e-maila z potwierdzeniem
-subskrypcja może nie być anulowana.
+00:03:57,800 --> 00:04:01,600
+wszystkie kroki. Bez e-maila
+z potwierdzeniem subskrypcja może nie
 
 56
+00:04:01,640 --> 00:04:03,090
+być anulowana.
+
+57
 00:04:03,180 --> 00:04:07,540
 Drobny druk: BookBeat nie przypomina
 o końcu okresu próbnego, a pierwszą
 
-57
+58
 00:04:07,580 --> 00:04:09,700
 płatność pobiera dzień po nim.
 
-58
+59
 00:04:09,740 --> 00:04:14,870
 Rezygnacja w trakcie próby od razu odcina
 dostęp, więc zrób to w ostatnim dniu.
 
-59
+60
 00:04:15,080 --> 00:04:16,960
 Chcesz porównać inne opcje?
 
-60
+61
 00:04:17,000 --> 00:04:22,773
 Na sonorbooks.pl zestawisz Audiotekę,
 Empik Go, Legimi czy Audible i sprawdzisz,
 
-61
+62
 00:04:22,813 --> 00:04:25,067
 gdzie posłuchać audiobooka i za ile.
 
-62
+63
 00:04:25,107 --> 00:04:27,970
 Twoja następna historia
 już na ciebie czeka.
