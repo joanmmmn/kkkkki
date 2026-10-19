@@ -54,10 +54,10 @@ export const piece: PLPiece = {
         { at: 'Sklepy', label: 'Sklepy cynamonowe', sub: 'Schulz · 4 godz.', icon: 'book' },
       ] },
       { id: 'A06', kind: 'rec', bump: 'Jak szukać po polsku', kicker: 'Wyszukiwanie', title: 'Polish w trzech kliknięciach', rec: { clip: '02_jezyki', start: 0.3 },
-        cuts: [{ at: 'Solo', rec: { clip: '03_polish_list', start: 0.9, url: 'librivox.org/search' } }, { at: 'kilka', rec: { clip: '03_polish_list', start: 3.7, url: 'librivox.org/search' } }],
+        cuts: [{ at: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } }, { at: 'Solo', rec: { clip: '03_polish_list', start: 0.9, url: 'librivox.org/search' } }, { at: 'kilka', rec: { clip: '03_polish_list', start: 3.7, url: 'librivox.org/search' } }],
         marks: [
           { at: 'Browse', until: 'Language', x: 228, y: 410, w: 292, h: 48 }, { at: 'Language', until: 'Polish', x: 1316, y: 449, w: 366, h: 72 },
-          { at: 'Polish', until: 'Przy', x: 662, y: 448, w: 340, h: 112 },
+          { at: 'Polish', until: 'Przy', x: 662, y: 432, w: 340, h: 96 },
           { at: 'Solo', until: 'kilka', x: 770, y: 532, w: 200, h: 36 }, { at: 'Collaborative', x: 770, y: 676, w: 300, h: 36 },
         ],
         tags: [
@@ -137,8 +137,8 @@ export const piece: PLPiece = {
       ], alts: { at: 'Wolnych', names: ['Wolne Lektury · 0 zł · zawodowi lektorzy'], label: 'Alternatywa za darmo:' } },
       { id: 'B01', kind: 'rec', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Wejdź na stronę', rec: { clip: '01_portada', start: 0.3 },
         tags: [{ at: 'librivoks', label: 'librivox.org', icon: 'globe' }, { at: 'Rejestracja', label: 'Bez rejestracji', tone: 'good' }] },
-      { id: 'B02', kind: 'steps', kicker: 'Krok 2', title: 'Znajdź po polsku', rec: { clip: '02_jezyki', start: 1.6 }, steps: [
-        { at: 'Browse', title: 'Browse the catalog' }, { at: 'Language', title: 'Language' }, { at: 'Polish', title: 'Polish' },
+      { id: 'B02', kind: 'steps', kicker: 'Krok 2', title: 'Znajdź po polsku', rec: { clip: '02_jezyki', start: 2.3 }, steps: [
+        { at: 'Browse', title: 'Browse the catalog' }, { at: 'Language', title: 'Language' }, { at: 'Polish', title: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } },
         { at: 'wpisz', title: 'albo wpisz tytuł', sub: 'w wyszukiwarkę u góry strony', rec: { clip: '01_portada', start: 0.3 } },
       ], marks: [{ at: 'wpisz', x: 1246, y: 128, w: 440, h: 64 }] },
       { id: 'B03', kind: 'rec', kicker: 'Krok 3', title: 'Słuchaj od razu', rec: { clip: '05_lalka_play', start: 6.4 },

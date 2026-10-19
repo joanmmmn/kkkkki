@@ -4,16 +4,16 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 316,
- "duration": 15.385,
- "offset": 0.177,
+ "frames": 403,
+ "duration": 15.549,
+ "offset": 0.159,
  "marks": {
-  "top": 0.25,
-  "multi": 2.677,
-  "scroll": 5.98,
-  "faraon": 8.598,
-  "pages": 12.163,
-  "end": 15.385
+  "top": 0.243,
+  "multi": 2.7,
+  "scroll": 6.078,
+  "faraon": 8.729,
+  "pages": 12.356,
+  "end": 15.55
  },
  "events": []
 }
