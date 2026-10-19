@@ -72,7 +72,7 @@ export const piece: PLPiece = {
         ],
         zooms: [{ at: 'Minus', zoom: 3, x: 830, y: 462 }, { at: 'recenzjach', zoom: 1.7, x: 560, y: 330 }, { at: 'angielskiego', zoom: 1.5, x: 740, y: 860 }],
         tags: [
-          { at: 'niemiecku', label: 'audible.de: część po niemiecku', sub: 'Świat Czytników, 15.07.2026', tone: 'bad' }, { at: 'recenzjach', label: 'Recenzje w Google Play', sub: 'lipiec–wrzesień 2026', icon: 'doc' },
+          { at: 'niemiecku', label: 'Część po niemiecku', sub: 'audible.de · Świat Czytników, 15.07.2026', tone: 'bad' }, { at: 'recenzjach', label: 'Recenzje w Google Play', sub: 'lipiec–wrzesień 2026', icon: 'doc' },
           { at: 'mieszanke', label: 'Aplikacja: PL + DE + EN', tone: 'bad' }, { at: 'brak', label: 'Brak filtra „polski”', tone: 'bad' },
         ] },
       { id: 'A09', kind: 'devices', items: [
