@@ -1,4 +1,4 @@
-# 10 historii grozy, które naprawdę przerażają — guion PL v1 (19/10/2026)
+# 10 historii grozy, które naprawdę przerażają — guion PL v2 (19/10/2026, con las correcciones del revisor)
 
 Adaptación al polaco del episodio «Los 10 mejores · Terror» (v6, 6:55) de SonorBooks España para SonorBooks Polska. Misma estructura e IDs que la locución española v6 (X?1 número y título · X?2 sinopsis · X?3 dato). Las líneas X?4/X?5 ya no van en el vídeo largo; X104 solo se usa en el Short, como en el español.
 
@@ -28,7 +28,8 @@ Toma: Igual que el español.
 ES: Estas son diez historias de terror que dan miedo de verdad.
 
 ### X05  (≈ 5.6 s)
-VO (pl): Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy i czytelników.
+VO (pl): Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy.
+SAY: Żeby je wybrać, w Sonorbuks przejrzeliśmy oceny i opinie tysięcy słuchaczy.
 Pantalla: Muro de candidatas (ver dossier, «Candidatas»): 28 HISTORII · 3 PLATFORMY + sonorbooks.pl · PONAD 5000 OCEN (Audioteka). Sello en las descartadas: BRAK AUDIOBOOKA PO POLSKU. Ficha real de sonorbooks.pl: https://sonorbooks.pl/audiobook/zew-cthulhu/ (nota 4,3 · 23 ocen w Audiotece).
 Toma: Escena de investigación (v5) con los datos polacos.
 ES: Para elegirlas, en SonorBooks hemos mirado las notas y opiniones de miles de oyentes y lectores.
@@ -171,9 +172,9 @@ Toma: Diorama nuevo: aurora boreal verde sobre un pueblo del noreste; una casa d
 ES: La región de Suwałki, a pocos días de una aurora boreal. En el pueblecito de Jodoziory aparecen los cuerpos calcinados de un matrimonio. Los vecinos hablan de una luz verde, de una casa encantada… y de una mujer que, según dicen, hace años practicaba la brujería.
 
 ### X63  (≈ 14.6 s)
-VO (pl): To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w 2026 roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów.
-SAY: To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w dwa tysiące dwudziestym szóstym roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów.
-Pantalla: Rótulo: Nagroda Czytelników im. Stefana Grabińskiego · Słuchowisko 2026 · Danuta Stenka + 50 aktorów · Desplegable: Gdzie posłuchać · link w opisie
+VO (pl): To polska groza z prawdziwego zdarzenia: w 2019 roku czytelnicy wybrali tę powieść krajowym hitem roku w plebiscycie Złoty Kościej. A w 2026 roku powstało z niej słuchowisko z Danutą Stenką i ponad pięćdziesięcioma aktorami.
+SAY: To polska groza z prawdziwego zdarzenia: w dwa tysiące dziewiętnastym roku czytelnicy wybrali tę powieść krajowym hitem roku w plebiscycie Złoty Kościej. A w dwa tysiące dwudziestym szóstym roku powstało z niej słuchowisko z Danutą Stenką i ponad pięćdziesięcioma aktorami.
+Pantalla: Tarjetas: Powieść 2019 → Złoty Kościej 2019 (Krajowy Hit Roku) → Słuchowisko 2026 · Danuta Stenka i ponad 50 aktorów · Desplegable: Gdzie posłuchać · link w opisie (corregido tras la revisión: no fue el debut)
 Toma: —
 ES: Es terror polaco de verdad: una ópera prima que ganó el Premio de los Lectores Stefan Grabiński. Y en 2026 se convirtió en ficción sonora con Danuta Stenka y más de cincuenta actores.
 
@@ -233,14 +234,14 @@ Toma: ILUSTRACIÓN NUEVA (sustituye a Nuestra parte de noche).
 ES: Número dos: «Manitú», de Graham Masterton.
 
 ### X92  (≈ 13.4 s)
-VO (pl): Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Rentgen pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów.
+VO (pl): Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Prześwietlenie pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów.
 Pantalla: —
 Toma: Diorama nuevo: nuca con un bulto; placa de rayos X con una silueta fetal; médicos que se miran; la bola de cristal de un adivino.
 ES: Una mujer joven tiene en la nuca un bulto que crece día a día. La radiografía muestra algo que los médicos no saben explicar: dentro se está desarrollando un feto. Y ella busca ayuda en un adivino que vive de la ingenuidad de sus clientes.
 
 ### X93  (≈ 13.8 s)
-VO (pl): To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.
-SAY: To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitou w ręku.
+VO (pl): To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.
+SAY: To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitu w ręku.
 Pantalla: Rótulo: Wrocław, 2021 · krasnal Mastertona (dibujo propio de un enanito con un libro; sin foto) · Desplegable: Gdzie posłuchać · link w opisie
 Toma: —
 ES: Es la primera novela de terror de Masterton, que enseguida se convirtió en un éxito mundial. Y en Polonia Masterton tiene tantos fans que en 2021 Breslavia le dedicó un enanito de bronce… con «Manitou» en la mano.
@@ -256,8 +257,8 @@ Toma: ILUSTRACIÓN NUEVA (sustituye a El exorcista).
 ES: Número uno: «A ciegas» (Bird Box), de Josh Malerman.
 
 ### X102  (≈ 13.5 s)
-VO (pl): Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.
-SAY: Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malori i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.
+VO (pl): Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą pokonać rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.
+SAY: Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malori i dwoje małych dzieci muszą pokonać rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.
 Pantalla: —
 Toma: Diorama nuevo: una ventana tapada con mantas; un río en la niebla; una barca con una mujer y dos niños con vendas en los ojos; algo que se mueve en la orilla (solo una sombra).
 ES: Hay algo ahí fuera. Basta una mirada para que una persona enloquezca. Cinco años después, Malorie y dos niños pequeños tienen que recorrer treinta kilómetros de río… con los ojos vendados. Solo con el oído.
@@ -285,14 +286,14 @@ ES: Escúchalo de noche. Con los ojos cerrados. Si te atreves.
 ## CIERRE
 
 ### X111  (≈ 4.4 s)
-VO (pl): Rada, żeby zadziałało: w nocy, w słuchawkach i bez zerkania w telefon.
+VO (pl): Żeby naprawdę zadziałało: w nocy, w słuchawkach i bez zerkania w telefon.
 Pantalla: Iconos: noc · słuchawki · telefon przekreślony
 Toma: Igual que el español.
 ES: Un consejo para que funcione: de noche, con auriculares y sin mirar el móvil.
 
 ### X112A  (≈ 6.9 s)
-VO (pl): Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.
-SAY: Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Pou czeka na ciebie nawet za darmo, w Wolnych Lekturach.
+VO (pl): A co najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.
+SAY: A co najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Pou czeka na ciebie nawet za darmo, w Wolnych Lekturach.
 Pantalla: Escena POSŁUCHAJ: las 10 con lektor, nota (Audioteka), duración y versión extra; sello por título: ZA DARMO (Poe, Wolne Lektury) · W ABONAMENCIE (los 7 verificados en suscripción de Storytel) · DO KUPIENIA (Hendrix, Salem, Manitou en Audioteka). Ver fichas_pl.json.
 Toma: Sustituye a «GRATIS CON PRUEBA»: en Polonia no se ha verificado una prueba gratuita que cubra estos títulos.
 ES: Y lo mejor: muchas las puedes empezar hoy mismo, y a Poe lo tienes incluso gratis, en Wolne Lektury.
@@ -305,7 +306,7 @@ Toma: Grabación de pantalla de sonorbooks.pl.
 ES: En sonorbooks.pl comparas dónde escuchar un audiolibro y a qué precio. Los enlaces a las diez historias están en la descripción.
 
 ### X113  (≈ 6.8 s)
-VO (pl): I napisz w komentarzu: która przestraszyła cię najbardziej? I jakie historie mamy przynieść następnym razem?
+VO (pl): I napisz w komentarzu: która przestraszyła cię najbardziej? I o jakich historiach mamy opowiedzieć następnym razem?
 Pantalla: —
 Toma: Igual que el español.
 ES: Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que traigamos la próxima vez?
