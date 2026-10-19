@@ -61,7 +61,10 @@ def glue(ws):
                 or (digits_prev and (w['w'][:3].isdigit() and len(w['w'].rstrip('.,;:!?')) == 3)) \
                 or (digits_prev and w['w'].lower() in UNITS) \
                 or w['w'][:2] in ('’6', "'6") \
-                or whole.count('„') > whole.count('”')  # un título entre comillas no se parte
+                or whole.count('„') > whole.count('”') \
+                or (prev[:1].isupper() and prev.isalpha() and w['w'][:1].isupper() and len(whole) + len(w['w']) < 30)
+            # (lo último: nombres propios de varias palabras, «Nagrodę Edgara», «Jan Peszek», «Holly Gibney»; y un título
+            # entre comillas no se parte)
             if join:
                 out[-1] = {'w': out[-1]['w'] + '\u00a0' + w['w'], 's': out[-1]['s'], 'e': w['e']}
                 continue
