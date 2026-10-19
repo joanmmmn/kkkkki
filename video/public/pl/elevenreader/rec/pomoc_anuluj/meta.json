@@ -1,0 +1,18 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 104,
+ "duration": 10.293,
+ "offset": 0.138,
+ "marks": {
+  "apple": 0.393,
+  "google": 2.704,
+  "web": 4.75,
+  "note": 6.925,
+  "end": 10.293
+ },
+ "events": []
+}

@@ -25,7 +25,37 @@
    "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''; if (!document.getElementById('nozd')) { const st = document.createElement('style'); st.id = 'nozd'; st.textContent = 'iframe#launcher, iframe#webWidget, iframe[title*=\\'widżet\\' i], iframe[title*=\\'czat\\' i], iframe[title*=\\'messaging\\' i] { display: none !important; }'; document.head.appendChild(st); } try { window.zE && zE('webWidget', 'hide'); } catch (e) {}"
   },
   {
-   "eval": "window.scrollTo(0,600)"
+   "eval": "window.scrollTo(0, document.body.scrollHeight)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0, document.body.scrollHeight)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0, document.body.scrollHeight)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0, document.body.scrollHeight)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0, document.body.scrollHeight)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0,705)"
   },
   {
    "wait": 1200
@@ -63,8 +93,10 @@
    "mark": "scroll"
   },
   {
-   "scroll": 1900,
-   "dur": 2400
+   "eval": "(() => { const el = [...document.querySelectorAll('h4')].find((h) => h.textContent.trim() === 'Kategorie'); if (!el) return; const target = el.getBoundingClientRect().top + scrollY - 140; const start = scrollY; const t0 = Date.now(); const dur = 2400 * 3; const f = () => { const p = Math.min(1, (Date.now() - t0) / dur); const e = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; scrollTo(0, start + (target - start) * e); if (p < 1) requestAnimationFrame(f); }; f(); })()"
+  },
+  {
+   "wait": 2400
   },
   {
    "wait": 400
@@ -74,8 +106,8 @@
   },
   {
    "move": [
-    960,
-    330
+    700,
+    300
    ],
    "dur": 900
   },

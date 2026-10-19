@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 348,
+ "duration": 18.776,
+ "offset": 0.104,
+ "marks": {
+  "top": 0.305,
+  "scroll1": 1.596,
+  "kobo": 11.218,
+  "end": 18.776
+ },
+ "events": []
+}

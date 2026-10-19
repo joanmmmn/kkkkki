@@ -24,7 +24,7 @@
    "wait": 600
   },
   {
-   "eval": "(()=>{const t=\"Dotknij swojego zdj\\u0119cia profilowego\";const els=[...document.querySelectorAll('li,p,span,div,h2,h3')].filter(e=>e.textContent.includes(t)&&e.getBoundingClientRect().height>0);els.sort((a,b)=>a.textContent.length-b.textContent.length);const e=els[0];if(e){window.scrollTo(0,window.scrollY+e.getBoundingClientRect().top-330);}})()"
+   "eval": "(()=>{const t=\"\\u015aledzenie czasu\";const els=[...document.querySelectorAll('button,summary,h2,h3,h4,p,span,div,a')].filter(e=>e.textContent.includes(t)&&e.getBoundingClientRect().height>0);els.sort((a,b)=>a.textContent.length-b.textContent.length);const e=els[0];if(e){window.scrollTo(0,window.scrollY+e.getBoundingClientRect().top-200);}})()"
   },
   {
    "wait": 1200
@@ -43,23 +43,37 @@
    "wait": 400
   },
   {
-   "mark": "steps"
+   "mark": "start"
   },
   {
-   "moveText": "Dotknij swojego zdjęcia profilowego",
+   "moveText": "Śledzenie czasu",
    "exact": false,
    "dur": 1000
   },
   {
-   "wait": 1500
+   "wait": 300
   },
   {
-   "moveText": "Czas słuchania audiobooków",
-   "exact": false,
+   "click": true
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "open"
+  },
+  {
+   "move": [
+    900,
+    560
+   ],
    "dur": 900
   },
   {
-   "wait": 2500
+   "wait": 3500
+  },
+  {
+   "wait": 800
   },
   {
    "mark": "end"

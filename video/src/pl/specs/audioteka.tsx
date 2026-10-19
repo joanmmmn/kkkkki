@@ -64,9 +64,11 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'czytac', label: 'Chcesz też czytać ebooki', sub: 'Audioteka to tylko audio' },
       ], alts: { at: 'Legimi', names: ['Legimi', 'Empik Go'], label: 'Porównaj z:' } },
-      { id: 'B01', kind: 'rec', bump: '14 dni za darmo', kicker: 'Jak wypróbować', title: 'Pierwsze 14 dni: 0 zł', rec: { clip: 'klub_mobile', start: 0.3, mobile: true, url: 'klub.audioteka.com' },
+      { id: 'B01', kind: 'rec', bump: '14 dni za darmo', rec: { clip: 'klub_mobile', start: 0.3, mobile: true, url: 'klub.audioteka.com' },
+        marks: [{ at: 'Nowi', until: 'miesiecznym', x: 64, y: 746, w: 292, h: 32 }, { at: 'miesiecznym', x: 55, y: 535, w: 320, h: 360, r: 18 }],
         tags: [{ at: 'Nowi', label: 'Tylko dla nowych', icon: 'user' }, { at: 'darmo', label: '14 dni za darmo', icon: 'gift', tone: 'good' }, { at: 'miesiecznym', label: 'Tylko miesięczny Plan Optymalny', icon: 'calendar' }] },
-      { id: 'B02', kind: 'steps', kicker: 'Krok po kroku', title: 'Jak aktywować', rec: { clip: 'klub_mobile', start: 4.0, mobile: true, url: 'klub.audioteka.com' }, steps: [
+      { id: 'B02', kind: 'steps', kicker: 'Krok po kroku', title: 'Jak aktywować', rec: { clip: 'klub_mobile', start: 3.0, mobile: true, url: 'klub.audioteka.com' },
+        marks: [{ at: 'Wyprobuj', until: 'zaloz', x: 70, y: 805, w: 290, h: 62, r: 31 }], steps: [
         { at: 'klub', title: 'Wejdź na klub.audioteka.com' }, { at: 'Wyprobuj', title: '„Wypróbuj 14 dni za darmo”', sub: 'przy płatności miesięcznej' },
         { at: 'zaloz', title: 'Załóż konto' }, { at: 'metode', title: 'Podaj metodę płatności' },
       ], note: { at: 'nic', label: 'Przez 14 dni: 0 zł', icon: 'gift' } },
@@ -80,7 +82,7 @@ export const piece: PLPiece = {
       { id: 'B05', kind: 'steps', bump: 'Jak zrezygnować', kicker: 'Rezygnacja', title: 'Na audioteka.com', rec: { clip: 'pomoc', start: 2.0, holdAt: 15.3, url: 'audioteka.com/pl/centrum-pomocy' },
         marks: [{ at: 'Ustawienia', until: 'Zarzadzaj', x: 1388, y: 262, w: 158, h: 26 }, { at: 'Zarzadzaj', until: 'Anuluj', x: 696, y: 281, w: 202, h: 24 }, { at: 'Anuluj', until: 'Jesli', x: 1226, y: 281, w: 168, h: 24 }, { at: 'Gugl', until: 'Samo', x: 516, y: 420, w: 590, h: 248 }, { at: 'Samo', x: 516, y: 674, w: 968, h: 24 }], steps: [
         { at: 'Ustawienia', title: 'Ustawienia konta' }, { at: 'Zarzadzaj', title: 'Zarządzaj Audioteka Klub' },
-        { at: 'Anuluj', title: '„Anuluj subskrypcję”', sub: 'i „Rezygnuję z subskrypcji”' }, { at: 'Gugl', title: 'Z aplikacji? Google Play / App Store', sub: 'samo usunięcie aplikacji nie wystarczy' },
+        { at: 'Anuluj', title: '„Anuluj subskrypcję”', sub: 'i „Rezygnuję z subskrypcji”' }, { at: 'Gugl', title: 'Google Play / App Store', sub: 'gdy subskrypcja jest z aplikacji · usunięcie aplikacji nie wystarczy' },
       ], note: { at: 'przed', label: 'Przed końcem 14. dnia', icon: 'calendar' } },
       { id: 'B06', kind: 'outro', rec: { clip: 'sb_solaris', start: 0.3, url: 'sonorbooks.pl' }, cta: 'Sprawdź, co jest\nw Klubie:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'porownasz', label: 'Audioteka · Legimi · Empik Go', icon: 'search' }] },

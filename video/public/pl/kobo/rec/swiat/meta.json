@@ -4,15 +4,14 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 278,
- "duration": 16.866,
- "offset": 0.116,
+ "frames": 242,
+ "duration": 16.841,
+ "offset": 0.114,
  "marks": {
-  "top": 0.312,
-  "scroll": 4.29,
-  "ceny": 7.124,
-  "oferta": 11.785,
-  "end": 16.866
+  "top": 0.311,
+  "scroll": 4.247,
+  "ceny": 7.061,
+  "end": 16.842
  },
  "events": []
 }
