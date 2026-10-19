@@ -9,7 +9,7 @@ DESCRIPCIÓN
 La guía completa (por cuál empezar, qué dejar para el papel y qué versión escuchar): https://sonorbooks.com/es/blog/por-donde-empezar-a-leer-kierkegaard/
 Todos los audiolibros de Kierkegaard en español, con su narrador, su duración y dónde escucharlos: https://sonorbooks.com/es/audiolibros/?q=kierkegaard
 
-¿Por dónde empezar a leer a Kierkegaard? Tiene fama de difícil y firmaba con más de diez seudónimos. Y en audio hay una sorpresa: publicó más de treinta obras, pero en audiolibro en español solo hay cuatro. En el tercer episodio de «Por dónde y cómo empezar a leer» te damos un mapa: quién era, por cuál de las cuatro empezar, qué dejar para el papel y qué versión escuchar.
+¿Por dónde empezar a leer a Kierkegaard? Tiene fama de difícil y firmaba con más de diez seudónimos. Y en audio hay una sorpresa: publicó más de treinta obras, pero en audiolibro en español solo hay cuatro. En este episodio de «Por dónde y cómo empezar a leer» te damos un mapa: quién era, por cuál de las cuatro empezar, qué dejar para el papel y qué versión escuchar.
 
 Las cuatro puertas de entrada (duración del audiolibro en español y la narración que nombramos):
 1. Diario de un seductor (1843): si quieres empezar por una historia · unas 6 horas · Raúl Gutiérrez, gratis en El Libro Total
@@ -56,8 +56,9 @@ AJUSTES
 - Canal: SonorBooks España.
 - Idioma: Español (España). Subtítulos: kierkegaard_guia.es.srt (Español, España).
 - Miniatura: miniatura_A.png o miniatura_B.png; la otra, para «Probar y comparar».
-- Promoción pagada: No (la descripción enlaza a sonorbooks.com, sin enlaces de afiliado directos; mismo criterio que los episodios de Stephen King y Dostoievski). A confirmar por Joan.
+- Promoción pagada: No (regla del canal, Joan 14/10: los vídeos que solo enlazan a sonorbooks.com, sin enlace de afiliado directo, van sin marcar).
 - Para niños: No. Categoría: Gente y blogs (como el resto del canal).
-- Contenido alterado o sintético: lo que Joan decida para el episodio de Dostoievski (la locución es una voz sintética que no imita a ninguna persona real y la descripción ya lo dice; el episodio de Stephen King se subió con «No»).
+- Contenido alterado o sintético: No (regla del canal; la descripción ya dice que la locución es una voz sintética).
+- Lista: «Por Dónde Empezar con un Autor» (PLV57QSBKm0GQ); añadir su línea al apartado «Episodios» de la descripción de la lista: «Kierkegaard: por dónde empezar (Diario de un seductor, Temor y temblor, La pureza de corazón y La enfermedad mortal), quién habla en cada seudónimo y qué versión escuchar.»
 - Pantalla final: los últimos 12 s; la mitad derecha queda libre para vídeo y suscripción.
 - Artículo del blog: el primer enlace de la descripción solo funcionará cuando el artículo esté publicado (se hace después de que Joan apruebe el vídeo). Publicarlo antes que el vídeo o a la vez.

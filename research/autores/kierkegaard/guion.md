@@ -1,4 +1,4 @@
-# Por dónde y cómo empezar a leer · Episodio 3: Kierkegaard (guion final, 19/10/2026)
+# Por dónde y cómo empezar a leer · Kierkegaard (guion final, 19/10/2026)
 
 Encargo de Joan (19/10/2026, 08:18): «ahora vamos con kierkegaard». Mismo formato, calidad y animaciones que los episodios de
 Stephen King y Dostoievski. Título: «Kierkegaard: por dónde y cómo empezar a leer».
