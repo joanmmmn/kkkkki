@@ -114,8 +114,8 @@ export const piece: PLPiece = {
           { at: 'serwis', label: 'Który serwis?', sub: 'Legimi, Empik Go, Audioteka', icon: 'search' }, { at: 'filii', label: 'W filii', icon: 'library' },
           { at: 'mailem', label: 'Mailem', icon: 'mail' }, { at: 'formularz', label: 'Przez formularz', icon: 'doc' },
         ] },
-      { id: 'B03', kind: 'stat', kicker: 'Krok 3', title: 'Bądź pierwszy', at: 'Wroclawiu', value: '2.11.2026', label: 'następne wydawanie kodów w MBP we Wrocławiu', tags: [
-        { at: 'rana', label: 'Najlepiej z samego rana', icon: 'clock' }, { at: 'grudnia', label: 'Potem 1.12.2026', sub: 'stan na 19.10.2026', icon: 'calendar' },
+      { id: 'B03', kind: 'stat', kicker: 'Krok 3', title: 'Bądź pierwszy', at: 'pierwszego', value: '1. dzień', label: 'wydawania kodów – najlepiej z samego rana', tags: [
+        { at: 'Wroclawiu', label: 'Wrocław: 2.11.2026', sub: 'stan na 19.10.2026', icon: 'calendar' }, { at: 'grudnia', label: 'Potem 1.12.2026', icon: 'calendar' },
       ] },
       { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Aktywuj kod', rec: { clip: '02_empik_kod', start: 0.3, holdAt: 2.8, url: 'empik.com/go/biblioteki/kod' }, steps: [
         { at: 'aktywuj', title: 'W tym samym miesiącu' },
