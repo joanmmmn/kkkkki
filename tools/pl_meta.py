@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""SonorBooks Polska: línea de tiempo, capítulos de YouTube y subtítulos (.srt) de una pieza.
+
+Uso: python3 tools/pl_meta.py <pieza> [--out deliverables/pl/<pieza>] [--starts]
+
+Repite las cuentas de video/src/pl/Review.tsx (buildTimeline) leyendo las escenas de video/src/pl/specs/<pieza>.tsx
+(id, kind, bump, extra, lead) y las locuciones de video/public/pl/<pieza>/vo/<ID>.json.
+Los subtítulos usan el texto que se ve (`text`, con cifras) cronometrado con las palabras dichas (`say`).
+"""
+import json, math, os, re, sys, unicodedata
+
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+V = os.path.join(ROOT, 'video')
+FPS = 50
+CPS = 15.5
+BUMP_IN = 14
+OUTRO_HOLD = 375
+
+
+def rnd(x):
+    return math.floor(x + 0.5)  # Math.round de JavaScript
+
+
+def sec(s):
+    return rnd(s * FPS)
+
+
+def norm(w):
+    w = w.lower().replace('ł', 'l')
+    return ''.join(c for c in unicodedata.normalize('NFD', w) if unicodedata.category(c) != 'Mn' and c.isalnum())
+
+
+def parse_spec(slug):
+    src = open(os.path.join(V, 'src/pl/specs', f'{slug}.tsx'), encoding='utf-8').read()
+    body = src[src.index('scenes:'):]
+    scenes = []
+    # Cada escena empieza con «{ id: 'X', …» en su propia línea (convención de los specs).
+    for m in re.finditer(r"^\s*\{\s*id:\s*'([A-Z]\d+[A-Z]?)'(.*)$", body, re.M):
+        line = m.group(2)
+        kind = re.search(r"kind:\s*'(\w+)'", line)
+        bump = re.search(r"bump:\s*'([^']*)'", line)
+        extra = re.search(r"extra:\s*(\d+)", line)
+        lead = re.search(r"lead:\s*([\d.]+)", line)
+        scenes.append({'id': m.group(1), 'kind': kind.group(1) if kind else 'rec', 'bump': bump.group(1) if bump else None,
+                       'extra': int(extra.group(1)) if extra else None, 'lead': float(lead.group(1)) if lead else None})
+    chapters = re.findall(r"\{\s*label:\s*'([^']*)',\s*from:\s*'([A-Z]\d+[A-Z]?)'\s*\}", src)
+    return scenes, chapters
+
+
+def load_vo(slug):
+    cfg = json.load(open(os.path.join(V, 'public/pl', slug, 'vo/vo.json'), encoding='utf-8'))
+    out = {}
+    for s in cfg['scenes']:
+        p = os.path.join(V, 'public/pl', slug, 'vo', f"{s['id']}.json")
+        out[s['id']] = {'text': s['text'], 'say': s.get('say', s['text']), 'vo': json.load(open(p, encoding='utf-8')) if os.path.exists(p) else None}
+    return out
+
+
+def timeline(slug):
+    scenes, chapters = parse_spec(slug)
+    vos = load_vo(slug)
+    t = 0
+    out = []
+    for i, s in enumerate(scenes):
+        lead = sec(s['lead'] if s['lead'] is not None else (0.52 if s['bump'] else 0.3 if i == 0 else 0.14))
+        v = vos[s['id']]['vo']
+        speech = math.ceil(v.get('speechEnd', v['duration']) * FPS) if v else sec(len(vos[s['id']]['text']) / CPS)
+        extra = s['extra'] if s['extra'] is not None else (OUTRO_HOLD if s['kind'] == 'outro' else 22 if s['kind'] in ('plans', 'proscons', 'verdict') else 14)
+        dur = lead + speech + sec(0.32) + extra
+        out.append({**s, 'start': t, 'lead': lead, 'dur': dur, 'speech': speech})
+        t += dur
+    return out, t, chapters, vos
+
+
+def fmt_ch(t):
+    t = int(t)
+    return f'{t // 60}:{t % 60:02d}'
+
+
+def fmt_srt(t):
+    ms = int(round(t * 1000))
+    return f'{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}'
+
+
+def timed_words(item):
+    """Palabras del texto que se ve, con los tiempos de las palabras dichas (las cifras se interpolan)."""
+    shown = item['text'].split()
+    v = item['vo']
+    if not v:
+        return [{'w': w, 's': None, 'e': None} for w in shown]
+    spoken = v['words']
+    res = []
+    j = 0
+    for w in shown:
+        n = norm(w)
+        hit = None
+        if n and not any(ch.isdigit() for ch in w):
+            for k in range(j, min(len(spoken), j + 12)):
+                if norm(spoken[k]['w']) == n:
+                    hit = k
+                    break
+        if hit is not None:
+            res.append({'w': w, 's': spoken[hit]['s'], 'e': spoken[hit]['e']})
+            j = hit + 1
+        else:
+            res.append({'w': w, 's': None, 'e': None})
+    # Interpolación de las que no casan (cifras) entre sus vecinas.
+    end = v.get('speechEnd', v['duration'])
+    for i, r in enumerate(res):
+        if r['s'] is None:
+            prev = next((res[k]['e'] for k in range(i - 1, -1, -1) if res[k]['e'] is not None), 0.0)
+            nxt_i = next((k for k in range(i + 1, len(res)) if res[k]['s'] is not None), None)
+            nxt = res[nxt_i]['s'] if nxt_i is not None else end
+            gap = nxt_i - i if nxt_i is not None else len(res) - i
+            step = (nxt - prev) / (gap + 1)
+            r['s'] = prev + step * 0.1
+            r['e'] = prev + step
+    return res
+
+
+def srt(slug, scenes, vos, max_chars=42):
+    cues = []
+    for s in scenes:
+        item = vos[s['id']]
+        ws = timed_words(item)
+        if not ws or ws[0]['s'] is None:
+            continue
+        base = (s['start'] + s['lead']) / FPS
+        line, a = [], None
+        for k, w in enumerate(ws):
+            cand = ' '.join([x['w'] for x in line] + [w['w']])
+            if line and (len(cand) > max_chars * 2 or (len(cand) > max_chars and line[-1]['w'][-1] in '.?!:')):
+                cues.append([base + line[0]['s'], base + line[-1]['e'], ' '.join(x['w'] for x in line)])
+                line = []
+            line.append(w)
+            if w['w'][-1] in '.?!' and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
+                cues.append([base + line[0]['s'], base + line[-1]['e'], ' '.join(x['w'] for x in line)])
+                line = []
+        if line:
+            cues.append([base + line[0]['s'], base + line[-1]['e'], ' '.join(x['w'] for x in line)])
+    out = []
+    for i, (a, b, t) in enumerate(cues):
+        b = max(b + 0.25, a + 1.0)
+        if i + 1 < len(cues):
+            b = min(b, cues[i + 1][0] - 0.04)
+        # Dos líneas equilibradas
+        if len(t) > max_chars:
+            words = t.split()
+            best = min(range(1, len(words)), key=lambda k: abs(len(' '.join(words[:k])) - len(' '.join(words[k:]))))
+            t = ' '.join(words[:best]) + '\n' + ' '.join(words[best:])
+        out.append(f'{i + 1}\n{fmt_srt(a)} --> {fmt_srt(b)}\n{t}\n')
+    return '\n'.join(out)
+
+
+def main():
+    slug = sys.argv[1]
+    scenes, total, chapters, vos = timeline(slug)
+    if '--starts' in sys.argv:
+        for s in scenes:
+            print(f"{s['id']:5s} {s['kind']:9s} start={s['start']:6d} ({s['start'] / FPS:7.2f} s) dur={s['dur']:5d} {s['bump'] or ''}")
+        print(f'total {total} fotogramas = {total / FPS:.2f} s')
+    chs = [('0:00', None)]
+    lines = []
+    first_label = None
+    for label, frm in chapters:
+        s = next(x for x in scenes if x['id'] == frm)
+        t = (s['start'] - (BUMP_IN if s['bump'] else 0)) / FPS
+        lines.append((t, label))
+    out = sys.argv[sys.argv.index('--out') + 1] if '--out' in sys.argv else None
+    if out:
+        os.makedirs(out, exist_ok=True)
+        open(os.path.join(out, f'{slug}.pl.srt'), 'w', encoding='utf-8').write(srt(slug, scenes, vos))
+        json.dump({'total_frames': total, 'seconds': total / FPS, 'chapters': [{'t': round(t, 2), 'label': l} for t, l in lines],
+                   'scenes': [{k: s[k] for k in ('id', 'kind', 'start', 'dur', 'lead', 'bump')} for s in scenes]},
+                  open(os.path.join(out, 'timeline.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    for t, l in lines:
+        print(f'{fmt_ch(t)} {l}')
+
+
+if __name__ == '__main__':
+    main()

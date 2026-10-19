@@ -38,8 +38,19 @@ import { MejoresPlataformas } from './scenes/mp/Main';
 import { MP_TOTAL } from './scenes/mp/timeline';
 import { MPThumbA, MPThumbB } from './scenes/mp/Thumb';
 
+import { PL_PIECES } from './pl/specs';
+import { PLReview, buildTimeline } from './pl/Review';
+import { PLThumb } from './pl/Thumb';
+
 export const Root: React.FC = () => (
   <>
+    {PL_PIECES.map(({ spec, thumb, thumbB }) => (
+      <React.Fragment key={spec.slug}>
+        <Composition id={`PL-${spec.slug}`} component={PLReview} defaultProps={{ spec }} durationInFrames={Math.max(1, buildTimeline(spec).total)} fps={FPS} width={W} height={H} />
+        <Composition id={`PLThumb-${spec.slug}`} component={PLThumb} defaultProps={{ spec, t: thumb }} durationInFrames={1} fps={FPS} width={1280} height={720} />
+        {thumbB && <Composition id={`PLThumbB-${spec.slug}`} component={PLThumb} defaultProps={{ spec, t: thumbB }} durationInFrames={1} fps={FPS} width={1280} height={720} />}
+      </React.Fragment>
+    ))}
     <Composition id="MPThumbA" component={MPThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="MPThumbB" component={MPThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="MPGuide" component={MejoresPlataformas} durationInFrames={MP_TOTAL} fps={FPS} width={W} height={H} />

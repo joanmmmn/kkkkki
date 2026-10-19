@@ -42,8 +42,9 @@ const browser = await chromium.launch({
   args: ['--autoplay-policy=no-user-gesture-required', '--hide-scrollbars', '--font-render-hinting=none'],
 });
 const ctxOpts = script.mobile
-  ? { ...devices['iPhone 14 Pro Max'], locale: 'es-ES' }
-  : { viewport: { width: vw, height: vh }, deviceScaleFactor: dpr, locale: 'es-ES' };
+  ? { ...devices['iPhone 14 Pro Max'], locale: script.locale || 'es-ES', ...(script.timezone ? { timezoneId: script.timezone } : {}), ...(script.dpr ? { deviceScaleFactor: script.dpr } : {}) }
+  : { viewport: { width: vw, height: vh }, deviceScaleFactor: dpr, locale: script.locale || 'es-ES', ...(script.timezone ? { timezoneId: script.timezone } : {}) };
+if (script.locale) ctxOpts.extraHTTPHeaders = { 'Accept-Language': `${script.locale},${script.locale.split('-')[0]};q=0.9` };
 const ctx = await browser.newContext(ctxOpts);
 const page = await ctx.newPage();
 const cdp = await ctx.newCDPSession(page);
@@ -211,7 +212,7 @@ if (frames.length) {
   fs.writeFileSync(path.join(out, 'concat.txt'), lines.join('\n'));
   execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(out, 'concat.txt'),
     '-vf', `fps=50,scale=${vw * dpr}:${vh * dpr}:flags=lanczos,format=yuv420p`,
-    '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', '-movflags', '+faststart', path.join(out, 'video.mp4')]);
+    '-c:v', 'libx264', '-preset', 'slow', '-crf', String(script.crf || 14), '-movflags', '+faststart', path.join(out, 'video.mp4')]);
   const firstT = frames[0].t;
   fs.writeFileSync(path.join(out, 'meta.json'), JSON.stringify({
     viewport: [vw, vh], dpr, frames: frames.length, duration: +(total - firstT).toFixed(3), offset: +firstT.toFixed(3), marks: Object.fromEntries(Object.entries(marks).map(([k, v]) => [k, +(v - firstT).toFixed(3)])),

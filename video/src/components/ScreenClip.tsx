@@ -43,7 +43,10 @@ import abw10 from '../../public/abc/web/10_sb_plataformas/meta.json';
 import abw11 from '../../public/abc/web/11_sb_ficha/meta.json';
 
 // Duración de cada grabación (de su meta.json), para congelar el final.
+import plRecIndex from '../pl/rec_index.json';
+
 const REC_DURATIONS: Record<string, number> = {
+  ...Object.fromEntries(Object.entries(plRecIndex as Record<string, { duration: number }>).map(([k, v]) => [`pl/${k.split('/')[0]}/rec/${k.split('/')[1]}/video.mp4`, v.duration])),
   'elt/rec/01_home/video.mp4': home.duration,
   'elt/rec/02_search/video.mp4': search.duration,
   'elt/rec/03_reader/video.mp4': reader.duration,
