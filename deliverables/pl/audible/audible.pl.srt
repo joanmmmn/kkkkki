@@ -79,215 +79,211 @@ i książki wybrane w Standardzie; zostają
 tylko kupione i wzięte za kredyty.
 
 18
-00:01:10,280 --> 00:01:15,013
+00:01:10,280 --> 00:01:15,080
 W polskim Amazonie znajdziesz zakładkę
 „Audiobooki Audible” z filtrem języka.
 
 19
-00:01:15,053 --> 00:01:20,120
-Wśród popularnych są kryminały Remigiusza
-Mroza, sagi Joanny Jax i klasyka, jak
+00:01:15,120 --> 00:01:20,400
+Wśród popularnych są kryminały Mroza, sagi
+Joanny Jax i klasyka, jak Sienkiewicz czy
 
 20
-00:01:20,160 --> 00:01:22,080
-Sienkiewicz czy Kraszewski.
+00:01:20,440 --> 00:01:25,410
+Kraszewski. Sporo z nich to jednak
+domena publiczna i tytuły religijne.
 
 21
-00:01:22,120 --> 00:01:25,890
-Sporo z nich to jednak domena
-publiczna i tytuły religijne.
-
-22
-00:01:25,940 --> 00:01:29,220
+00:01:25,560 --> 00:01:28,840
 Książki kupisz też pojedynczo,
 ale nie jest tanio:
 
-23
-00:01:29,260 --> 00:01:33,860
+22
+00:01:28,880 --> 00:01:33,480
 w lipcu audiobooki Siembiedy
 i Mossa kosztowały po 54 zł.
 
-24
-00:01:33,900 --> 00:01:37,550
+23
+00:01:33,520 --> 00:01:37,170
 Członkowie Premium mają
 zniżki i specjalne wyprzedaże.
 
-25
-00:01:38,020 --> 00:01:42,620
+24
+00:01:37,640 --> 00:01:42,240
 Aplikacja Audible pozwala przyspieszyć
 lektora nawet do 3,5 raza.
 
-26
-00:01:42,660 --> 00:01:47,633
+25
+00:01:42,280 --> 00:01:47,253
 Ma wyłącznik czasowy, tryb samochodowy
 z dużymi przyciskami i pobieranie offline.
 
-27
-00:01:47,673 --> 00:01:51,860
+26
+00:01:47,293 --> 00:01:51,480
 Możesz też założyć profil dziecięcy
 z tytułami, które sam udostępnisz.
 
-28
-00:01:51,900 --> 00:01:54,940
+27
+00:01:51,520 --> 00:01:54,560
 Minus na start: tłumaczenie jest niepełne.
 
-29
-00:01:54,980 --> 00:02:00,500
+28
+00:01:54,600 --> 00:02:00,120
 Na stronie audible.de część treści bywa
 po niemiecku, a w recenzjach w Google Play
 
-30
-00:02:00,540 --> 00:02:04,367
+29
+00:02:00,160 --> 00:02:03,987
 użytkownicy skarżą się na mieszankę
 polskiego, niemieckiego i angielskiego
 
-31
-00:02:04,407 --> 00:02:07,830
+30
+00:02:04,027 --> 00:02:07,450
 w aplikacji i na brak
 filtra języka polskiego.
 
-32
-00:02:07,972 --> 00:02:12,680
+31
+00:02:07,592 --> 00:02:12,300
 Audible działa na telefonach i tabletach
 z Androidem i iOS, na Apple Watch
 
-33
-00:02:12,720 --> 00:02:17,610
+32
+00:02:12,340 --> 00:02:17,230
 i zegarkach z Wear OS oraz w samochodzie,
 z CarPlay albo Android Auto.
 
-34
-00:02:18,140 --> 00:02:24,660
+33
+00:02:17,760 --> 00:02:24,280
 Oceny? W polskim App Storze aplikacja
 ma średnią 4,8 przy ponad 4000 ocen,
 
-35
-00:02:24,700 --> 00:02:27,580
+34
+00:02:24,320 --> 00:02:27,200
 a w polskim Google Play 4,1.
 
-36
-00:02:27,620 --> 00:02:30,313
+35
+00:02:27,240 --> 00:02:29,933
 Chwalą wybór książek i wygodny odtwarzacz.
 
-37
-00:02:30,353 --> 00:02:33,350
+36
+00:02:29,973 --> 00:02:32,970
 Krytykują cenę i niepełne tłumaczenie.
 
-38
-00:02:33,820 --> 00:02:39,407
+37
+00:02:33,440 --> 00:02:39,027
 Plusy: 30 dni za darmo, w Premium
 książka na własność, ogromna kolekcja:
 
-39
-00:02:39,447 --> 00:02:42,980
+38
+00:02:39,067 --> 00:02:42,600
 ponad milion tytułów,
 i rozbudowany odtwarzacz.
 
-40
-00:02:43,020 --> 00:02:48,100
+39
+00:02:42,640 --> 00:02:47,720
 Minusy: mały polski katalog, w Standardzie
 jedna książka miesięcznie, niepełne
 
-41
-00:02:48,140 --> 00:02:51,670
+40
+00:02:47,760 --> 00:02:51,290
 tłumaczenie, brak e-booków
 i planu rodzinnego.
 
-42
-00:02:52,280 --> 00:02:56,880
+41
+00:02:51,900 --> 00:02:56,500
 Czy warto? Jeśli słuchasz po angielsku
 albo chcesz mieć książki na własność,
 
-43
-00:02:56,920 --> 00:03:01,640
+42
+00:02:56,540 --> 00:03:01,260
 Premium ma sens. Jeśli szukasz polskich
 tytułów, wybór jest na razie mały:
 
-44
-00:03:01,680 --> 00:03:05,570
+43
+00:03:01,300 --> 00:03:05,190
 porównaj Audible z Audioteką
 Klub, Empik Go czy Legimi.
 
-45
-00:03:06,600 --> 00:03:08,960
+44
+00:03:06,220 --> 00:03:08,580
 Jak wypróbować Audible za darmo?
 
-46
-00:03:09,000 --> 00:03:14,000
+45
+00:03:08,620 --> 00:03:13,620
 Nowi członkowie mają 30 dni za darmo w obu
 planach, a w Premium dostają też kredyt na
 
-47
-00:03:14,040 --> 00:03:15,490
+46
+00:03:13,660 --> 00:03:15,110
 pierwszą książkę.
 
-48
-00:03:15,640 --> 00:03:20,160
+47
+00:03:15,260 --> 00:03:19,780
 Wejdź na Amazon.pl, w zakładkę
 „Audiobooki Audible”, i wybierz
 
-49
-00:03:20,200 --> 00:03:22,453
+48
+00:03:19,820 --> 00:03:22,073
 „Wypróbuj Standard” albo „Premium”.
 
-50
-00:03:22,493 --> 00:03:25,760
+49
+00:03:22,113 --> 00:03:25,380
 Zalogujesz się kontem Amazon
 i podasz metodę płatności:
 
-51
-00:03:25,800 --> 00:03:30,210
+50
+00:03:25,420 --> 00:03:29,830
 dziś nie płacisz nic, a po
 30 dniach opłata pobierze się sama.
 
-52
-00:03:30,260 --> 00:03:32,700
+51
+00:03:29,880 --> 00:03:32,320
 Zapisz się na stronie, nie w aplikacji:
 
-53
-00:03:32,740 --> 00:03:36,407
+52
+00:03:32,360 --> 00:03:36,027
 w App Storze plany kupowane
 w aplikacji mają wyższe ceny.
 
-54
-00:03:36,447 --> 00:03:40,030
+53
+00:03:36,067 --> 00:03:39,650
 Potem pobierz aplikację
 i zaloguj się tym samym kontem.
 
-55
-00:03:40,180 --> 00:03:45,180
+54
+00:03:39,800 --> 00:03:44,800
 Zrezygnuj przed końcem 30 dni: link
 „Anuluj subskrypcję” jest na samym dole
 
-56
-00:03:45,220 --> 00:03:50,590
+55
+00:03:44,840 --> 00:03:50,210
 strony audible.de. Abonament z App
 Store’a albo Google Play anulujesz tam.
 
-57
-00:03:50,860 --> 00:03:53,220
+56
+00:03:50,480 --> 00:03:52,840
 I wykorzystaj kredyt przed rezygnacją:
 
-58
-00:03:53,260 --> 00:03:57,060
+57
+00:03:52,880 --> 00:03:56,680
 niewykorzystane kredyty przepadają,
 a książka wzięta za kredyt zostaje
 
-59
-00:03:57,100 --> 00:03:58,710
+58
+00:03:56,720 --> 00:03:58,330
 u ciebie na zawsze.
 
-60
-00:03:58,760 --> 00:04:04,720
+59
+00:03:58,380 --> 00:04:04,340
 Na sonorbooks.pl porównasz warunki Audible
 z Audioteką, Empik Go, Legimi i innymi
 
-61
-00:04:04,760 --> 00:04:08,747
+60
+00:04:04,380 --> 00:04:08,367
 serwisami oraz sprawdzisz, gdzie
 posłuchać audiobooka i za ile.
 
-62
-00:04:08,787 --> 00:04:11,570
+61
+00:04:08,407 --> 00:04:11,190
 Twoja następna historia
 już na ciebie czeka.
