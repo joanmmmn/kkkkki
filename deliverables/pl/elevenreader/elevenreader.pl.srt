@@ -4,7 +4,7 @@ Każdy tekst może ci przeczytać sztuczna
 inteligencja – nawet głosem Piotra
 
 2
-00:00:04,500 --> 00:00:08,710
+00:00:04,500 --> 00:00:08,980
 Fronczewskiego. To ElevenReader,
 aplikacja od ElevenLabs.
 
@@ -18,7 +18,7 @@ Sprawdziliśmy plan darmowy, Ultra,
 polskie audiobooki i drobny druk.
 
 5
-00:00:16,032 --> 00:00:21,300
+00:00:16,084 --> 00:00:21,300
 ElevenReader czyta na głos twoje pliki,
 artykuły i strony, a do tego ma bibliotekę
 
@@ -152,7 +152,7 @@ Androida Auto brakuje –
 i użytkownicy na to narzekają.
 
 33
-00:02:17,980 --> 00:02:22,870
+00:02:17,980 --> 00:02:22,980
 W Google Play ElevenReader
 ma 4,6 przy prawie 70 tys.
 
@@ -214,7 +214,7 @@ miesięcznie bez limitu godzin.
 Jak zacząć za darmo?
 
 46
-00:03:14,580 --> 00:03:19,910
+00:03:14,580 --> 00:03:19,940
 Załóż konto na elevenreader.io albo
 w aplikacji – przez konto Google, Apple
 
