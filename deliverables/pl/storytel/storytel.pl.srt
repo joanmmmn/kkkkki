@@ -19,7 +19,7 @@ próby teraz nie ma.
 5
 00:00:12,700 --> 00:00:19,020
 Storytel to szwedzki serwis z audiobookami
-i e-bookami, w Polsce od 2016 roku.
+i e-bookami, w Polsce od 2016 roku.
 
 6
 00:00:19,060 --> 00:00:23,540
@@ -28,22 +28,22 @@ polsku i po angielsku, a do wyboru masz
 
 7
 00:00:23,580 --> 00:00:26,070
-ponad 500 000 tytułów.
+ponad 500 000 tytułów.
 
 8
-00:00:26,660 --> 00:00:29,812
+00:00:26,660 --> 00:00:29,836
 Ma cztery plany, płatne co 30 dni.
 
 9
-00:00:29,852 --> 00:00:34,540
-Basic: 24,90 zł za 25 godzin.
+00:00:29,876 --> 00:00:34,540
+Basic: 24,90 zł za 25 godzin.
 
 10
-00:00:34,580 --> 00:00:38,672
-Premium: 34,90 zł za 50 godzin.
+00:00:34,580 --> 00:00:38,724
+Premium: 34,90 zł za 50 godzin.
 
 11
-00:00:38,712 --> 00:00:42,537
+00:00:38,764 --> 00:00:43,100
 Unlimited bez limitu: 44,90 zł.
 
 12
@@ -95,8 +95,8 @@ długość i ocenę słuchaczy:
 
 22
 00:01:24,700 --> 00:01:30,780
-„Kruk” trwa 3 godziny 7 minut
-i ma 4,6 z ponad 12 000 ocen.
+„Kruk” trwa 3 godziny 7 minut
+i ma 4,6 z ponad 12 000 ocen.
 
 23
 00:01:30,820 --> 00:01:32,830
@@ -155,7 +155,7 @@ Storytel działa na telefonach i tabletach
 z Androidem i iOS, na zegarkach,
 
 35
-00:02:17,520 --> 00:02:21,170
+00:02:17,520 --> 00:02:21,440
 w samochodzie z Android Auto
 i CarPlay oraz z Chromecastem.
 
@@ -167,7 +167,7 @@ stronie nie posłuchasz.
 37
 00:02:25,240 --> 00:02:33,720
 W polskim Google Play Storytel ma 4,7,
-a w App Store 4,8, z ponad 45 000 ocen.
+a w App Store 4,8, z ponad 45 000 ocen.
 
 38
 00:02:33,760 --> 00:02:36,213
@@ -230,7 +230,7 @@ nowi klienci mają dwie
 promocje na Unlimited.
 
 51
-00:03:22,340 --> 00:03:30,830
+00:03:22,340 --> 00:03:31,500
 Pierwsza: 22,45 zł miesięcznie przez
 pierwsze 180 dni, a potem 44,90 zł.
 
