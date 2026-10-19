@@ -131,13 +131,13 @@ export const T10Short: React.FC = () => {
       {/* 5: los tres tomos y el viaje */}
       {off > 0 && s6 < 1 && (
         <AbsoluteFill style={{ background: '#06070e', opacity: off * (1 - s6), alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 26, alignItems: 'center', marginTop: -340 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'center', marginTop: -340 }}>
             {vols.map((v, k) => {
               const q = sp(frame, f5 + 8 + k * 9, 14, 140);
-              return <Img key={v} src={coverSrc(v)} style={{ width: 300, height: 300, borderRadius: 8, opacity: Math.min(1, q * 1.4), transform: `translateX(${((k - 1) * 40 + (1 - q) * 80).toFixed(1)}px) rotate(${((k - 1) * 3).toFixed(1)}deg)`, boxShadow: '0 30px 80px rgba(0,0,0,0.6)' }} />;
+              return <Img key={v} src={coverSrc(v)} style={{ width: 250, height: 250, borderRadius: 8, opacity: Math.min(1, q * 1.4), transform: `translateX(${((k - 1) * 40 + (1 - q) * 80).toFixed(1)}px) rotate(${((k - 1) * 3).toFixed(1)}deg)`, boxShadow: '0 30px 80px rgba(0,0,0,0.6)' }} />;
             })}
           </div>
-          <div style={{ position: 'absolute', left: 60, right: 60, top: 1180, textAlign: 'center', fontFamily: font.serif, fontStyle: 'italic', fontSize: 84, lineHeight: 1.1, color: color.yellow, textShadow: '0 0 60px rgba(255,202,5,0.35)',
+          <div style={{ position: 'absolute', left: 60, right: 60, top: 1240, textAlign: 'center', fontFamily: font.serif, fontStyle: 'italic', fontSize: 80, lineHeight: 1.1, color: color.yellow, textShadow: '0 0 60px rgba(255,202,5,0.35)',
             opacity: ramp(frame, clock.at('F105', 'volver') - 20, clock.at('F105', 'volver') + 4) }}>…y del que menos vas a querer volver.</div>
         </AbsoluteFill>
       )}
