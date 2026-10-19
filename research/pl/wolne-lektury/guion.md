@@ -17,6 +17,9 @@
 > sin A00 (audio CC BY-SA); A03 «na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty»
 > (el banner de la colecta acaba el 31.10 y no se enseña); A07 «Nagrania są na wolnych licencjach» (Lalka y Quo vadis llevan
 > Licencja Wolnej Sztuki, no CC); B01 junta B01–B03 («…wybierz MP3: dostaniesz całą książkę w pliku ZIP»); B04 es una escena aparte.
+> Revisión del 19/10 (tarde): A02 «użytkowników», A03 «Nie ma abonamentu ani okresu próbnego, nie podajesz karty…», A06 «Nagrania Wolnych Lektur czytają ludzie…»,
+> A07 «…pobrane pliki możesz zatrzymać i legalnie udostępniać dalej», A09 «obie są nowe», B01 «w wyszukiwarce», B05 «autora, lektora, źródło i licencję i udostępniaj na tych samych
+> warunkach»; A12 se parte en A12 (veredicto) y A12B (comparación con la «Lalka» abreviada de Audioteka).
 
 ---
 

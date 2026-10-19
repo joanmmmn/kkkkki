@@ -37,7 +37,7 @@ export const piece: PLPiece = {
         zooms: [{ at: 'Wiedzmin', zoom: 1.45, x: 955, y: 480 }],
         tags: [
           { at: 'Wiedzmin', label: '„Wiedźmin. Ostatnie życzenie”', icon: 'headphones' }, { at: '70', label: 'Ponad 70 aktorów', icon: 'mic' },
-          { at: 'muzyka', label: 'Muzyka i efekty', icon: 'music' }, { at: 'Rozdroze', label: 'Najnowszy tom: „Rozdroże kruków”', icon: 'book' },
+          { at: 'muzyka', label: 'Muzyka i efekty', icon: 'music' }, { at: 'Rozdroze', label: 'Najnowszy tom', sub: '„Rozdroże kruków”', icon: 'book' },
           { at: 'sluchowisk', label: 'Słuchowiska po polsku: ok. 40', tone: 'bad' },
         ] },
       { id: 'A06', kind: 'rec', kicker: 'Karta książki', title: 'Dwie oceny', rec: { clip: 'rozdroze', start: 3.2 },
