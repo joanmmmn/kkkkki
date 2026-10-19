@@ -1,8 +1,8 @@
 {
  "id": "A08B",
- "hash": "36cbfb59d860",
- "text": "Trzy zasady obowiązują prawie wszędzie. Jeden kod na osobę w miesiącu, zwykle albo Legimi, albo Empik Go. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece.",
- "duration": 14.4,
+ "hash": "d751e1c2a61b",
+ "text": "Trzy zasady obowiązują prawie wszędzie. Najwyżej jeden kod w miesiącu, zwykle albo Legimi, albo Empik Go. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece.",
+ "duration": 14.64,
  "words": [
   {
    "w": "Trzy",
@@ -12,11 +12,11 @@
   {
    "w": "zasady",
    "s": 0.24,
-   "e": 0.72
+   "e": 0.8
   },
   {
    "w": "obowiązują",
-   "s": 0.8,
+   "s": 0.88,
    "e": 1.44
   },
   {
@@ -27,158 +27,153 @@
   {
    "w": "wszędzie.",
    "s": 1.8,
-   "e": 2.68
+   "e": 2.667
   },
   {
-   "w": "Jeden",
-   "s": 2.72,
-   "e": 2.96
-  },
-  {
-   "w": "kod",
-   "s": 3.04,
+   "w": "Najwyżej",
+   "s": 2.693,
    "e": 3.28
   },
   {
-   "w": "na",
-   "s": 3.32,
-   "e": 3.36
+   "w": "jeden",
+   "s": 3.36,
+   "e": 3.6
   },
   {
-   "w": "osobę",
-   "s": 3.44,
+   "w": "kod",
+   "s": 3.68,
    "e": 3.76
   },
   {
    "w": "w",
-   "s": 3.787,
-   "e": 3.813
+   "s": 3.84,
+   "e": 3.88
   },
   {
    "w": "miesiącu,",
-   "s": 3.84,
-   "e": 4.6
+   "s": 3.92,
+   "e": 4.68
   },
   {
    "w": "zwykle",
-   "s": 4.64,
-   "e": 5.04
+   "s": 4.72,
+   "e": 5.12
   },
   {
    "w": "albo",
-   "s": 5.12,
-   "e": 5.28
+   "s": 5.2,
+   "e": 5.44
   },
   {
    "w": "Legimi,",
-   "s": 5.4,
-   "e": 5.88
+   "s": 5.56,
+   "e": 6.04
   },
   {
    "w": "albo",
-   "s": 5.92,
-   "e": 6.16
+   "s": 6.08,
+   "e": 6.4
   },
   {
    "w": "Empik",
-   "s": 6.24,
-   "e": 6.56
+   "s": 6.48,
+   "e": 6.8
   },
   {
    "w": "Go.",
-   "s": 6.6,
-   "e": 7.32
+   "s": 6.84,
+   "e": 7.56
   },
   {
    "w": "Kod",
-   "s": 7.36,
-   "e": 7.6
-  },
-  {
-   "w": "trzeba",
-   "s": 7.64,
+   "s": 7.6,
    "e": 7.84
   },
   {
+   "w": "trzeba",
+   "s": 7.88,
+   "e": 8.08
+  },
+  {
    "w": "aktywować",
-   "s": 7.92,
-   "e": 8.4
+   "s": 8.16,
+   "e": 8.64
   },
   {
    "w": "do",
-   "s": 8.48,
-   "e": 8.56
+   "s": 8.72,
+   "e": 8.8
   },
   {
    "w": "końca",
-   "s": 8.68,
-   "e": 8.88
+   "s": 8.92,
+   "e": 9.12
   },
   {
    "w": "miesiąca,",
-   "s": 8.933,
-   "e": 9.56
+   "s": 9.173,
+   "e": 9.8
   },
   {
    "w": "inaczej",
-   "s": 9.6,
-   "e": 10.0
+   "s": 9.84,
+   "e": 10.24
   },
   {
    "w": "kolejnego",
-   "s": 10.04,
-   "e": 10.48
-  },
-  {
-   "w": "możesz",
-   "s": 10.52,
+   "s": 10.28,
    "e": 10.72
   },
   {
+   "w": "możesz",
+   "s": 10.76,
+   "e": 10.96
+  },
+  {
    "w": "nie",
-   "s": 10.8,
-   "e": 10.88
+   "s": 11.0,
+   "e": 11.04
   },
   {
    "w": "dostać.",
-   "s": 10.92,
-   "e": 11.92
+   "s": 11.12,
+   "e": 11.96
   },
   {
    "w": "I",
    "s": 12.0,
-   "e": 12.08
-  },
-  {
-   "w": "nie",
-   "s": 12.16,
    "e": 12.24
   },
   {
-   "w": "możesz",
+   "w": "nie",
    "s": 12.32,
-   "e": 12.56
+   "e": 12.4
+  },
+  {
+   "w": "możesz",
+   "s": 12.48,
+   "e": 12.8
   },
   {
    "w": "mieć",
-   "s": 12.64,
-   "e": 12.747
+   "s": 12.88,
+   "e": 13.0
   },
   {
    "w": "zaległości",
-   "s": 12.773,
-   "e": 13.2
+   "s": 13.04,
+   "e": 13.52
   },
   {
    "w": "w",
-   "s": 13.28,
-   "e": 13.333
+   "s": 13.56,
+   "e": 13.6
   },
   {
    "w": "bibliotece.",
-   "s": 13.387,
-   "e": 14.4
+   "s": 13.68,
+   "e": 14.64
   }
  ],
- "speechEnd": 13.993
+ "speechEnd": 14.279
 }

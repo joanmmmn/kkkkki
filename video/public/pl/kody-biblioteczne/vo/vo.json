@@ -43,8 +43,8 @@
   },
   {
    "id": "A07",
-   "text": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od 15 lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko 3 filie, kod działa aż 90 dni, ale kolejny dostaniesz dopiero po 3 miesiącach.",
-   "say": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od piętnastu lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko trzy filie, kod działa aż dziewięćdziesiąt dni, ale kolejny dostaniesz dopiero po trzech miesiącach."
+   "text": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od 15 lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko 3 filie, kod działa aż 90 dni, ale kolejny możesz dostać dopiero po 3 miesiącach.",
+   "say": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od piętnastu lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko trzy filie, kod działa aż dziewięćdziesiąt dni, ale kolejny możesz dostać dopiero po trzech miesiącach."
   },
   {
    "id": "A08",
@@ -53,8 +53,8 @@
   },
   {
    "id": "A08B",
-   "text": "Trzy zasady obowiązują prawie wszędzie. Jeden kod na osobę w miesiącu, zwykle albo Legimi, albo Empik Go. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece.",
-   "say": "Trzy zasady obowiązują prawie wszędzie. Jeden kod na osobę w miesiącu, zwykle albo Legimi, albo Empik Gou. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece."
+   "text": "Trzy zasady obowiązują prawie wszędzie. Najwyżej jeden kod w miesiącu, zwykle albo Legimi, albo Empik Go. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece.",
+   "say": "Trzy zasady obowiązują prawie wszędzie. Najwyżej jeden kod w miesiącu, zwykle albo Legimi, albo Empik Gou. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece."
   },
   {
    "id": "A09",
@@ -85,8 +85,7 @@
   },
   {
    "id": "B03",
-   "text": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu najbliższe terminy to 2 listopada i 1 grudnia.",
-   "say": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu najbliższe terminy to drugi listopada i pierwszy grudnia."
+   "text": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu i w Poznaniu to pierwszy dzień roboczy miesiąca."
   },
   {
    "id": "B04",
