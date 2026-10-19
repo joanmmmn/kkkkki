@@ -136,5 +136,5 @@ export const piece: PLPiece = {
       { label: 'Pierwsza opłata i jak zrezygnować', from: 'B04' },
     ],
   },
-  thumb: { line1: 'EMPIK GO', line2: 'CZY WARTO?', seal: { icon: 'infinity', text: 'Go Smart\n39,99 zł / 30 dni' }, label: { strong: '7 dni', rest: 'ZA DARMO' } },
+  thumb: { line1: 'EMPIK GO', line2: 'CZY WARTO?', seal: { icon: 'infinity', text: 'Go Smart\n39,99 zł\n/ 30 dni' }, label: { strong: '7 dni', rest: 'ZA DARMO' } },
 };

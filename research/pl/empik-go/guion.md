@@ -47,8 +47,8 @@ Toma: 02_go_funkcje (de 6,0 s a 14,0 s: carruseles «Nowości, o których wszysc
 ES: En empik.com/go, sin iniciar sesión, ves qué incluye la suscripción: novedades, superventas, audioteatro infantil y producciones propias de Empik Go.
 
 ### A05 · Empik Go Originals  (≈ 15 s)
-VO (pl): Empik Go ma ponad 130 własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.
-SAY (si difiere): Empik Go ma ponad sto trzydzieści własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralfem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.
+VO (pl): Empik Go ma 130 własnych produkcji, dostępnych tylko w Empik Go. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.
+SAY (si difiere): Empik Go ma sto trzydzieści własnych produkcji, dostępnych tylko w Empik Go. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralfem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.
 Pantalla: 130 produkcji oryginalnych – tylko w Empik Go · „Przygody Baltazara Gąbki” · „Chołod” · „Królestwo Pik”
 Toma: 03_go_originals (de 0,0 s a 8,0 s: carrusel «Empik Go Originals – tylko u nas») + 04_krolestwo_pik (de 0,0 s a 6,0 s)
 ES: Empik Go tiene más de 130 producciones propias que solo están aquí. Por ejemplo, «Przygody Baltazara Gąbki» con Makłowicz, Wojewódzki y Ralph Kaminski, «Chołod» de Szczepan Twardoch o «Królestwo Pik» de Weronika Ancerowicz.
@@ -89,15 +89,15 @@ Toma: animación (dos tarjetas de nota con contador; no usar la fila de notas de
 ES: Notas: 4,6 en Google Play con casi 54.000 valoraciones y 4,5 en la App Store polaca con casi 10.000. Los usuarios elogian el catálogo y lo fácil que es de usar. Critican que la app se cuelga (en pantalla: p. ej., entre capítulos) y los huecos del catálogo.
 
 ### A11 · Plusy i minusy  (≈ 17 s)
-VO (pl): Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, ponad 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.
-SAY (si difiere): Plusy: audiobuki, ibuki i podkasty w jednym abonamencie, ponad sto trzydzieści własnych produkcji, tryb dziecięcy i czytniki, z Kindlem włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobuków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.
+VO (pl): Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.
+SAY (si difiere): Plusy: audiobuki, ibuki i podkasty w jednym abonamencie, sto trzydzieści własnych produkcji, tryb dziecięcy i czytniki, z Kindlem włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobuków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.
 Pantalla: PLUSY: audio + ebook + podcasty · od 24,99 zł · 130+ Originals · tryb dziecięcy · czytniki + Kindle | MINUSY: Go Smart = 1 urządzenie · brak słuchania na komputerze · aplikacja bywa niestabilna
 Toma: animación (dos columnas)
 ES: Lo bueno: audiolibros, ebooks y pódcasts en una suscripción, más de 130 producciones propias, modo infantil y lectores, Kindle incluido. Lo malo: Go Smart funciona en un solo dispositivo, los audiolibros no se escuchan en el ordenador y la app a veces es inestable.
 
 ### A12 · Werdykt  (≈ 18 s)
-VO (pl): Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z Audioteka Klub za 29,90 zł.
-SAY (si difiere): Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do trzech książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobuków bez limitu, porównaj z Audioteka Klub za dwadzieścia dziewięć złotych dziewięćdziesiąt groszy.
+VO (pl): Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z abonamentem Audioteka Klub za 29,90 zł miesięcznie.
+SAY (si difiere): Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do trzech książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobuków bez limitu, porównaj z abonamentem Audioteka Klub za dwadzieścia dziewięć złotych dziewięćdziesiąt groszy miesięcznie.
 Pantalla: 1 telefon, czytasz i słuchasz → Go Smart 39,99 zł | do 3 książek/mies. → Go Standard 24,99 zł | tylko audio bez limitu → porównaj: Audioteka Klub 29,90 zł (stan na październik 2026)
 Toma: animación (tres tarjetas de veredicto)
 ES: Veredicto: Go Smart es buena opción si escuchas y lees en un solo móvil. Si terminas hasta 3 libros al mes, te basta Go Standard. Y si solo quieres audiolibros sin límite, compáralo con Audioteka Klub, por 29,90 zł.
@@ -148,3 +148,6 @@ ES: En sonorbooks.pl comparas los precios y las pruebas de Empik Go, Audioteka, 
 
 ---
 **Total `say`: 4021 caracteres ≈ 4:19 a 15,5 caracteres/s.**
+
+
+> Cambios tras la revisión (19.10.2026): A05, A11 y A12 reescritos y regenerados («130 własnych produkcji», «dostępnych tylko w Empik Go», «z abonamentem Audioteka Klub … miesięcznie»).

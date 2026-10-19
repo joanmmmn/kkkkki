@@ -18,40 +18,40 @@ słuchać 14 dni za darmo.
 
 5
 00:00:14,560 --> 00:00:20,880
-Audioteka działa od ponad 15 lat, a od
-2023 roku w całości należy do Wirtualnej
+Audioteka działa od ponad 15 lat, a od
+2023 roku w całości należy do Wirtualnej
 
 6
 00:00:20,920 --> 00:00:26,560
 Polski. W abonamencie Audioteka Klub masz
-ponad 50 000 audiobooków, audioseriali
+ponad 50 000 audiobooków, audioseriali
 
 7
 00:00:26,600 --> 00:00:32,970
-i podcastów, ponad 1300 znanych polskich
-głosów i nawet 500 nowości miesięcznie.
+i podcastów, ponad 1300 znanych polskich
+głosów i nawet 500 nowości miesięcznie.
 
 8
-00:00:33,380 --> 00:00:40,550
+00:00:33,380 --> 00:00:39,820
 Główny plan to Plan Optymalny: 29,90 zł
-miesięcznie, bez limitu godzin, z 14
+miesięcznie, bez limitu godzin,
 
 9
-00:00:40,660 --> 00:00:42,380
-dniami za darmo dla nowych.
+00:00:39,860 --> 00:00:42,380
+z 14 dniami za darmo dla nowych.
 
 10
-00:00:42,420 --> 00:00:45,870
+00:00:42,420 --> 00:00:46,380
 Płacąc z góry za rok, wydasz 299 zł.
 
 11
 00:00:46,420 --> 00:00:52,820
-Plan Smart to 17,90 zł za 20 godzin
+Plan Smart to 17,90 zł za 20 godzin
 miesięcznie, a Plan na Start jest tańszy
 
 12
 00:00:52,860 --> 00:00:54,830
-przez pierwsze 3 miesiące.
+przez pierwsze 3 miesiące.
 
 13
 00:00:55,420 --> 00:00:59,513
@@ -59,45 +59,45 @@ Cały katalog przejrzysz na
 audioteka.com bez logowania.
 
 14
-00:00:59,553 --> 00:01:04,060
-Przełącz widok z „Wszystkie” na „Audioteka
-Klub”, a zobaczysz tylko to, czego
+00:00:59,553 --> 00:01:03,753
+Przełącz widok z „Wszystkie” na
+„Audioteka Klub”, a zobaczysz tylko to,
 
 15
-00:01:04,100 --> 00:01:05,830
-posłuchasz w abonamencie.
+00:01:03,793 --> 00:01:05,830
+czego posłuchasz w abonamencie.
 
 16
 00:01:06,000 --> 00:01:08,610
 Na przykład „Solaris” Stanisława Lema:
 
 17
-00:01:08,650 --> 00:01:13,350
+00:01:08,650 --> 00:01:13,370
 superprodukcja z Robertem Więckiewiczem,
 Magdaleną Cielecką i Adamem Woronowiczem,
 
 18
-00:01:13,390 --> 00:01:17,140
-7 godzin 56 minut, średnia 4,8.
+00:01:13,410 --> 00:01:17,730
+7 godzin 56 minut, średnia 4,8.
 
 19
 00:01:17,770 --> 00:01:21,140
-Ma znaczek „Dostępne w Klubie”,
+Ma znaczek „Dostępne w Klubie”,
 więc jest w abonamencie.
 
 20
-00:01:21,640 --> 00:01:27,360
-To największy atut Audioteki: ponad 200
-superprodukcji i audioseriali, z muzyką,
+00:01:21,640 --> 00:01:26,640
+To największy atut Audioteki: ponad
+200 superprodukcji i audioseriali,
 
 21
-00:01:27,400 --> 00:01:32,400
-efektami i aktorami jak w kinie, i blisko
-700 tytułów, których posłuchasz tylko
+00:01:26,680 --> 00:01:32,080
+z muzyką, efektami i aktorami jak w kinie,
+i blisko 700 tytułów, których posłuchasz
 
 22
-00:01:32,440 --> 00:01:36,770
-tutaj. Klubowicze słuchają nowych
+00:01:32,120 --> 00:01:36,770
+tylko tutaj. Klubowicze słuchają nowych
 produkcji oryginalnych na kilka tygodni
 
 23
@@ -166,18 +166,18 @@ W aucie masz Android Auto i CarPlay,
 dźwięk wyślesz na Chromecast, a aplikacja
 
 37
-00:02:25,300 --> 00:02:27,715
+00:02:25,300 --> 00:02:27,937
 na iPhone'a działa też
 z zegarkiem Apple Watch.
 
 38
-00:02:28,820 --> 00:02:36,392
-Oceny są wysokie: 4,8 w Google Play przy
-prawie 68 tysiącach ocen i 4,7 w polskim
+00:02:28,820 --> 00:02:36,404
+Oceny są wysokie: 4,8 w Google Play przy
+prawie 68 tysiącach ocen i 4,7 w polskim
 
 39
-00:02:36,432 --> 00:02:39,393
-App Storze przy prawie 42 tysiącach.
+00:02:36,444 --> 00:02:39,393
+App Storze przy prawie 42 tysiącach.
 
 40
 00:02:39,433 --> 00:02:41,793
@@ -235,14 +235,14 @@ Chcesz wypróbować? Nowi klubowicze mają
 Planie Optymalnym.
 
 52
-00:03:24,380 --> 00:03:29,492
+00:03:24,380 --> 00:03:28,940
 Wejdź na klub.audioteka.com, przy
-płatności miesięcznej kliknij „Wypróbuj
+płatności miesięcznej kliknij
 
 53
-00:03:29,532 --> 00:03:33,620
-14 dni za darmo”, załóż konto
-i podaj metodę płatności.
+00:03:28,980 --> 00:03:33,620
+„Wypróbuj 14 dni za darmo”, załóż
+konto i podaj metodę płatności.
 
 54
 00:03:33,660 --> 00:03:36,550
@@ -253,52 +253,56 @@ Przez 14 dni nic nie płacisz.
 Pobierz aplikację Audioteka i zaloguj się.
 
 56
-00:03:39,573 --> 00:03:43,480
+00:03:39,573 --> 00:03:42,813
 Tytuły z abonamentu znajdziesz
-w zakładce „Twoje”, w sekcji „Bezpłatne
+w zakładce „Twoje”, w sekcji
 
 57
-00:03:43,520 --> 00:03:45,130
-w Audioteka Klub”.
+00:03:42,853 --> 00:03:45,130
+„Bezpłatne w Audioteka Klub”.
 
 58
-00:03:45,240 --> 00:03:49,107
-Jeśli nic nie zrobisz, po 14
-dniach subskrypcja się odnowi:
+00:03:45,240 --> 00:03:49,140
+Jeśli nic nie zrobisz, po
+14 dniach subskrypcja się odnowi:
 
 59
-00:03:49,147 --> 00:03:52,290
+00:03:49,180 --> 00:03:52,290
 29,90 zł miesięcznie.
 
 60
-00:03:52,880 --> 00:03:58,840
+00:03:52,880 --> 00:03:58,413
 Rezygnujesz na audioteka.com: Ustawienia
-konta, Zarządzaj Audioteka Klub, „Anuluj
+konta, Zarządzaj Audioteka Klub,
 
 61
-00:03:58,880 --> 00:04:03,400
-subskrypcję”. Jeśli subskrypcja jest
-z aplikacji, anulujesz ją w Google Play
+00:03:58,453 --> 00:03:59,960
+„Anuluj subskrypcję”.
 
 62
-00:04:03,440 --> 00:04:07,160
-albo App Storze. Samo usunięcie
-aplikacji nie wystarczy.
+00:04:00,000 --> 00:04:03,960
+Jeśli subskrypcja jest z aplikacji,
+anulujesz ją w Google Play albo App
 
 63
-00:04:07,200 --> 00:04:09,690
-Zrób to przed końcem 14. dnia.
+00:04:04,000 --> 00:04:07,160
+Storze. Samo usunięcie
+aplikacji nie wystarczy.
 
 64
+00:04:07,200 --> 00:04:09,690
+Zrób to przed końcem 14. dnia.
+
+65
 00:04:09,840 --> 00:04:14,640
 Na sonorbooks.pl sprawdzisz, czy
 twój audiobook jest w Audioteka Klub,
 
-65
+66
 00:04:14,680 --> 00:04:16,760
 i porównasz ceny innych platform.
 
-66
+67
 00:04:16,800 --> 00:04:19,610
 Twoja następna historia
 już na ciebie czeka.
