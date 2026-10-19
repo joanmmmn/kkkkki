@@ -1,8 +1,8 @@
 {
  "id": "A12",
- "hash": "279fa2f754f0",
- "text": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wtedy wystarczy Plan Smart. A jeśli chcesz też czytać ebooki, porównaj z Legimi albo Empik Go.",
- "duration": 13.2,
+ "hash": "8defc31d28a8",
+ "text": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wtedy wystarczy Plan Smart. A jeśli chcesz też czytać e-booki, porównaj z Legimi albo Empik Go.",
+ "duration": 13.3,
  "words": [
   {
    "w": "Werdykt:",
@@ -135,7 +135,7 @@
    "e": 10.16
   },
   {
-   "w": "ebooki,",
+   "w": "e-booki,",
    "s": 10.24,
    "e": 10.853
   },
@@ -161,14 +161,14 @@
   },
   {
    "w": "Empik",
-   "s": 12.16,
-   "e": 12.48
+   "s": 12.34,
+   "e": 12.66
   },
   {
    "w": "Go.",
-   "s": 12.8,
-   "e": 13.2
+   "s": 12.98,
+   "e": 13.38
   }
  ],
- "speechEnd": 13.09
+ "speechEnd": 13.27
 }

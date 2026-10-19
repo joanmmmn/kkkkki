@@ -25,9 +25,10 @@ export const piece: PLPiece = {
         { at: 'Standard', name: 'Standard', price: '29,99 zł', period: '/ mies.', features: ['40 godzin miesięcznie', 'Profil: +12,99 zł / mies.'] },
         { at: 'Premium', name: 'Premium', price: '34,99 zł', period: '/ mies.', features: ['100 godzin miesięcznie', 'Profil: +14,99 zł / mies.'], best: true, badge: 'Najwięcej godzin' },
       ], footer: [{ at: 'pakiety', label: 'Stan na październik 2026', icon: 'calendar' }, { at: 'czterech', label: 'Do 4 profili dodatkowych', icon: 'family' }, { at: 'zobowiazan', label: 'Bez zobowiązań', icon: 'lock' }] },
-      { id: 'A04', kind: 'stat', bump: 'Polski katalog', kicker: 'Wyszukiwarka BookBeat · 19.10.2026', title: 'Milion książek, ale ile po polsku?', at: '18', value: '18 000', unit: '+', count: { from: 0, to: 18000 },
+      { id: 'A04', kind: 'stat', bump: 'Polski katalog', kicker: 'Wyszukiwarka BookBeat · 19.10.2026', title: 'Milion książek, ale ile po polsku?', at: 'osiemnascie', value: '18 000', unit: '+', count: { from: 0, to: 18000 },
         label: 'audiobooków po polsku (i 12 000+ e-booków)', tags: [
-          { at: 'angielsku', label: 'Milion: głównie po angielsku i niemiecku', icon: 'globe' }, { at: 'Harry', label: 'Harry Potter · Wiedźmin', icon: 'book' },
+          { at: 'obcojezyczne', label: 'Milion: prawie same obcojęzyczne', sub: 'najwięcej po angielsku i niemiecku', icon: 'globe' },
+          { at: 'niecale', label: 'Po polsku: niecałe 2%', tone: 'bad' }, { at: 'Hari', label: 'Harry Potter · „Wiedźmin”', icon: 'book' },
           { at: 'sprawdz', label: 'Sprawdź swoje tytuły przed zapłatą', icon: 'search', tone: 'accent' },
         ] },
       { id: 'A05', kind: 'rec', kicker: 'Superprodukcja', title: 'Perełka katalogu', rec: { clip: 'wiedzmin', start: 5.3 },
@@ -35,8 +36,8 @@ export const piece: PLPiece = {
         marks: [{ at: '70', until: 'muzyka', x: 645, y: 470, w: 616, h: 72 }, { at: 'muzyka', until: 'Rozdroze', x: 645, y: 660, w: 616, h: 64 }],
         zooms: [{ at: 'Wiedzmin', zoom: 1.45, x: 955, y: 480 }],
         tags: [
-          { at: 'Wiedzmin', label: 'Wiedźmin. Ostatnie życzenie', icon: 'headphones' }, { at: '70', label: 'Ponad 70 aktorów', icon: 'mic' },
-          { at: 'muzyka', label: 'Muzyka i efekty', icon: 'music' }, { at: 'Rozdroze', label: 'Nowość: Rozdroże kruków', icon: 'book' },
+          { at: 'Wiedzmin', label: '„Wiedźmin. Ostatnie życzenie”', icon: 'headphones' }, { at: '70', label: 'Ponad 70 aktorów', icon: 'mic' },
+          { at: 'muzyka', label: 'Muzyka i efekty', icon: 'music' }, { at: 'Rozdroze', label: 'Najnowszy tom: „Rozdroże kruków”', icon: 'book' },
           { at: 'sluchowisk', label: 'Słuchowiska po polsku: ok. 40', tone: 'bad' },
         ] },
       { id: 'A06', kind: 'rec', kicker: 'Karta książki', title: 'Dwie oceny', rec: { clip: 'rozdroze', start: 3.2 },
@@ -54,7 +55,7 @@ export const piece: PLPiece = {
       { id: 'A07', kind: 'features', bump: 'Jak to działa', kicker: 'W aplikacji', title: 'Co potrafi aplikacja?', cols: 3, items: [
         { at: 'tempo', label: 'Tempo 0,5×–2×', icon: 'speed' }, { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' },
         { at: 'zakladki', label: 'Zakładki', sub: 'z notatkami', icon: 'bookmark' }, { at: 'pobierzesz', label: 'Offline', sub: 'pobierz książkę', icon: 'download' },
-        { at: 'ponad', label: 'Synchrobooki', sub: '2500+ po polsku: słuchasz i czytasz naraz', icon: 'sync' },
+        { at: 'ponad', label: 'Audio + e-book', sub: '2500+ po polsku · przełączasz bez utraty miejsca', icon: 'sync' },
       ] },
       { id: 'A08', kind: 'rec', kicker: 'Pytania i odpowiedzi', title: 'Jak liczą się godziny?', rec: { clip: 'faq_godziny', start: 1.3 },
         marks: [{ at: 'normalnego', x: 572, y: 330, w: 766, h: 148 }], zooms: [{ at: 'normalnego', zoom: 1.7, x: 955, y: 390 }],
@@ -91,7 +92,7 @@ export const piece: PLPiece = {
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'BookBeat:\nczy warto?', yes: [
         { at: 'miescisz', label: 'Mieścisz się w 100 h', sub: 'pakiet Premium' }, { at: 'rodzina', label: 'Słuchasz z rodziną' }, { at: 'angielsku', label: 'Słuchasz po angielsku' },
       ], no: [
-        { at: 'nowosci', label: 'Szukasz głównie polskich nowości', sub: 'najpierw porównaj inne serwisy' },
+        { at: 'nowosci', label: 'Szukasz polskich nowości', sub: 'najpierw porównaj inne serwisy' },
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'steps', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Dla nowych użytkowników', rec: { clip: 'portada', start: 0.3, holdAt: 3.0 },
         marks: [{ at: '30', until: '20', x: 220, y: 350, w: 515, h: 76 }, { at: '20', x: 198, y: 444, w: 554, h: 120 }],
@@ -103,7 +104,7 @@ export const piece: PLPiece = {
       { id: 'B02', kind: 'steps', kicker: 'Rejestracja', title: 'Krok po kroku', rec: { clip: 'rejestracja', start: 0.3, url: 'bookbeat.com/pl/registration' },
         marks: [
           { at: 'zakladasz', until: 'wybierasz', x: 700, y: 280, w: 510, h: 46 }, { at: 'wybierasz', until: 'dodajesz', x: 648, y: 410, w: 614, h: 84 },
-          { at: 'dodajesz', until: 'zgody', x: 648, y: 514, w: 614, h: 104 }, { at: 'zgody', x: 700, y: 826, w: 510, h: 142 },
+          { at: 'dodajesz', until: 'zgody', x: 648, y: 514, w: 614, h: 104 }, { at: 'zgody', x: 660, y: 826, w: 550, h: 142 },
         ],
         zooms: [{ at: 'zakladasz', zoom: 1.6, x: 955, y: 400 }, { at: 'wybierasz', zoom: 1.6, x: 950, y: 500 }, { at: 'zgody', zoom: 1.6, x: 955, y: 740 }],
         steps: [
@@ -118,7 +119,7 @@ export const piece: PLPiece = {
       ] },
       { id: 'B04', kind: 'steps', bump: 'Jak zrezygnować', kicker: 'Rezygnacja', title: 'Tylko na stronie BookBeat', steps: [
         { at: 'menu', title: 'Menu konta', sub: 'na bookbeat.com/pl' }, { at: 'Zarzadzaj', title: 'Zarządzaj subskrypcją' },
-        { at: 'wszystkie', title: 'Przejdź wszystkie kroki' }, { at: 'potwierdzeniem', title: 'Poczekaj na e-mail z potwierdzeniem', sub: 'bez niego subskrypcja może nie być anulowana' },
+        { at: 'wszystkie', title: 'Wykonaj wszystkie kroki' }, { at: 'potwierdzeniem', title: 'Poczekaj na e-mail z potwierdzeniem', sub: 'bez niego subskrypcja może nie być anulowana' },
       ], note: { at: 'Tylko', label: 'Nie w aplikacji ani w App Storze', icon: 'lock' } },
       { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Koniec okresu próbnego', rec: { clip: 'proba', start: 9.6, holdAt: 13.9 },
         marks: [{ at: 'pierwsza', x: 648, y: 742, w: 614, h: 86 }], zooms: [{ at: 'przypomina', zoom: 1.6, x: 950, y: 640 }],

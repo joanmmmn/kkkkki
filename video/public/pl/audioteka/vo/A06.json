@@ -2,7 +2,7 @@
  "id": "A06",
  "hash": "2ef9e06ca766",
  "text": "To największy atut Audioteki: ponad 200 superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko 700 tytułów, których posłuchasz tylko tutaj. Klubowicze słuchają nowych produkcji oryginalnych na kilka tygodni przed premierą w sklepie.",
- "duration": 17.09,
+ "duration": 16.57,
  "words": [
   {
    "w": "To",
@@ -131,63 +131,64 @@
   },
   {
    "w": "Klubowicze",
-   "s": 11.97,
-   "e": 12.45
+   "s": 11.45,
+   "e": 11.93
   },
   {
    "w": "słuchają",
-   "s": 12.53,
-   "e": 12.93
+   "s": 12.01,
+   "e": 12.41
   },
   {
    "w": "nowych",
-   "s": 13.01,
-   "e": 13.25
+   "s": 12.49,
+   "e": 12.73
   },
   {
    "w": "produkcji",
-   "s": 13.37,
-   "e": 13.73
+   "s": 12.85,
+   "e": 13.21
   },
   {
    "w": "oryginalnych",
-   "s": 13.81,
-   "e": 14.45
+   "s": 13.29,
+   "e": 13.93
   },
   {
    "w": "na",
-   "s": 14.53,
-   "e": 14.77
+   "s": 14.01,
+   "e": 14.25
   },
   {
    "w": "kilka",
-   "s": 14.85,
-   "e": 15.09
+   "s": 14.33,
+   "e": 14.57
   },
   {
    "w": "tygodni",
-   "s": 15.17,
-   "e": 15.57
+   "s": 14.65,
+   "e": 15.05
   },
   {
    "w": "przed",
-   "s": 15.69,
-   "e": 15.81
+   "s": 15.17,
+   "e": 15.29
   },
   {
    "w": "premierą",
-   "s": 15.89,
-   "e": 16.13
+   "s": 15.37,
+   "e": 15.61
   },
   {
    "w": "w",
-   "s": 16.17,
-   "e": 16.21
+   "s": 15.65,
+   "e": 15.69
   },
   {
    "w": "sklepie.",
-   "s": 16.29,
-   "e": 17.09
+   "s": 15.77,
+   "e": 16.57
   }
- ]
+ ],
+ "speechEnd": 16.283
 }

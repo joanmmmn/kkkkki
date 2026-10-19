@@ -13,8 +13,8 @@
  "scenes": [
   {
    "id": "A01",
-   "text": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
-   "say": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To Ilewen Rider, aplikacja od Ilewen Labs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk."
+   "text": "Każdy tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
+   "say": "Każdy tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To Ilewen Rider, aplikacja od Ilewen Labs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk."
   },
   {
    "id": "A02",
@@ -93,7 +93,7 @@
   {
    "id": "B06",
    "text": "Wolisz audiobooki z lektorem? Na sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
-   "say": "Wolisz audiobooki z lektorem? Na sonorbooks kropka pe el porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+   "say": "Wolisz audiobooki z lektorem? Na sonorbooks kropka pe el porównasz inne opcje – Audiotekę… Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka."
   }
  ]
 }
