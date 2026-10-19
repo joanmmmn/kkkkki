@@ -5,6 +5,8 @@
 # RANGES (opcional) fija los tramos a mano: «inicio-fin[:gl[:concurrencia]]» separados por espacios; lo que no cubran se
 # reparte en tramos normales. Las escenas en three.js (WebGL por software) van mejor con :swangle:1.
 # La salida lleva el audio en PCM: pásala después por tools/master.sh para el AAC a -14 LUFS.
+# PARTS="1 2" (opcional) renderiza solo esos tramos del plan y sale sin unir: sirve para repartir un render largo en varias
+# tandas (cada tanda cabe en el límite de una tarea en segundo plano). Al final, una pasada sin PARTS une todo.
 set -euo pipefail
 cd "$(dirname "$0")/../video"
 COMP="$1"; OUT="$2"; CHUNK="${3:-3000}"
@@ -31,6 +33,7 @@ for r in "${PLAN[@]}"; do
   rest="${r#*:}"; [ "$rest" = "$r" ] && rest=""
   gl="${rest%%:*}"; conc="${rest#*:}"; [ "$conc" = "$rest" ] && conc=""
   part="$TMP/part_$(printf %02d $i).mp4"
+  if [ -n "${PARTS:-}" ] && [[ " $PARTS " != *" $i "* ]]; then i=$((i + 1)); continue; fi
   if [ ! -s "$part" ]; then
     npx remotion render src/index.ts "$COMP" "$part" --frames="$a-$b" --concurrency="${conc:-2}" ${gl:+--gl=$gl} --crf=16 --muted --scale="$SCALE" \
       --timeout=240000 --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
@@ -39,6 +42,7 @@ for r in "${PLAN[@]}"; do
   echo "tramo $i ($a-$b ${gl:-}) listo $(date +%H:%M)"
   i=$((i + 1))
 done
+[ -n "${PARTS:-}" ] && { echo "Tramos $PARTS listos (sin unir)"; exit 0; }
 ffmpeg -v error -y -f concat -safe 0 -i "$TMP/list.txt" -c copy "$TMP/video.mp4"
 # El audio también por tramos (un render de audio seguido también agota la memoria) y unido en PCM, sin saltos:
 # a 50 fps cada fotograma son 960 muestras exactas a 48 kHz.
