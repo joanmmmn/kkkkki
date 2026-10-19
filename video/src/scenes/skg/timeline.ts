@@ -7,7 +7,7 @@ export const hasVO = (id: string) => Boolean(VOS[id]);
 export const speechFrames = (id: string) => (hasVO(id) ? voSpeechFrames(id) : sec(4));
 export const fullFrames = (id: string) => (hasVO(id) ? voFrames(id) : sec(4));
 
-const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9,]/g, '');
+const norm = (s: string) => s.toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9,]/g, '');
 const missing = new Set<string>();
 // Fotograma (relativo al inicio de la locución `id`) en que empieza la palabra `word` (n-ésima aparición).
 export const wf = (id: string, word: string, nth = 0) => {

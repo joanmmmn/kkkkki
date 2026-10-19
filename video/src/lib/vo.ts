@@ -35,7 +35,8 @@ export const voFrames = (id: string) => Math.ceil((VOS[id]?.duration ?? 3) * FPS
 // Duración hasta el final real de la voz (sin el silencio final del archivo).
 export const voSpeechFrames = (id: string) => Math.ceil((VOS[id]?.speechEnd ?? VOS[id]?.duration ?? 3) * FPS);
 
-const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9,]/g, '');
+// «ł» no se descompone con NFD: se pasa a «l» para que «Pół» no se quede en «po» (y case con «Ponad»).
+const norm = (s: string) => s.toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9,]/g, '');
 
 // Fotograma (relativo al inicio de la locución) en que empieza la palabra `word`.
 // Si se da `fallbackSec`, se elige la aparición más cercana a ese instante (evita confundir

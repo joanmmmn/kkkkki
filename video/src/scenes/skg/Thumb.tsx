@@ -7,7 +7,7 @@ import { BOOKS, Book3D, color, font, KR, NOVELS, SkNight, SkStage, Spine } from 
 const Brand: React.FC<{ dark?: boolean }> = ({ dark }) => (
   <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
     <LogoIcon size={58} />
-    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, letterSpacing: 3, textTransform: 'uppercase', color: dark ? 'rgba(255,255,255,0.8)' : color.ink2 }}>Od czego zacząć</span>
+    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, letterSpacing: 3, textTransform: 'uppercase', color: dark ? 'rgba(255,255,255,0.8)' : color.ink2 }}>Przewodnik na start</span>
   </div>
 );
 
@@ -36,7 +36,7 @@ export const SKThumbA: React.FC = () => (
           );
         })}
       </div>
-      <div style={{ position: 'absolute', right: 46, top: 560, transform: 'rotate(-5deg)', zIndex: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '10px 24px', borderRadius: 14, boxShadow: '0 16px 30px rgba(193,18,31,0.35)' }}>5 wejść</div>
+      <div style={{ position: 'absolute', right: 46, top: 560, transform: 'rotate(-5deg)', zIndex: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '10px 24px', borderRadius: 14, boxShadow: '0 16px 30px rgba(193,18,31,0.35)' }}>5 książek na start</div>
     </SkStage>
   </AbsoluteFill>
 );

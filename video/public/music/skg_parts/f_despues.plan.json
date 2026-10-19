@@ -1,7 +1,7 @@
 {
  "model_id": "music_v1",
- "start_frame": 14982,
- "end_frame": 16923,
+ "start_frame": 14271,
+ "end_frame": 15984,
  "levels": [
   -15.5
  ],
@@ -45,7 +45,7 @@
      "silence",
      "fade in"
     ],
-    "duration_ms": 46820,
+    "duration_ms": 42260,
     "lines": []
    }
   ]
