@@ -78,7 +78,7 @@ export const piece: PLPiece = {
       { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.8, count: 'ocena w Polsce · 19.10.2026' }, { at: 'Ep', store: 'apple', rating: 4.8, count: '10 056 ocen w Polsce' }],
         likes: [{ at: 'lektorow', label: 'Lektorzy' }, { at: 'wygodna', label: 'Wygodna aplikacja' }],
         dislikes: [{ at: 'limity', label: 'Limity godzin, nawet w Premium' }, { at: 'zawila', label: 'Rezygnacja tylko przez stronę' }] },
-      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'BookBeat', pros: [
+      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', pros: [
         { at: '30', label: '30 dni za darmo' }, { at: 'audiobooki', label: 'Audiobooki i e-booki w jednej cenie' }, { at: 'profile', label: 'Profile dla rodziny' },
       ], cons: [
         { at: 'brak', label: 'Brak planu bez limitu' }, { at: 'skromny', label: 'Skromny polski katalog' }, { at: 'przepadajace', label: 'Godziny przepadają' },

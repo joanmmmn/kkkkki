@@ -43,8 +43,8 @@ export const piece: PLPiece = {
           { at: 'Reszte', label: 'Reszta: zakup osobno', icon: 'coin' }, { at: 'filtr', label: 'Filtr „tylko Kobo Plus”', sub: 'po zalogowaniu na kobo.com', icon: 'search' },
         ] },
       { id: 'A05', kind: 'stat', bump: 'Polski katalog', kicker: 'Katalog na start', title: 'Ile tytułów?', at: 'sto', value: '150 000', unit: '+', count: { from: 0, to: 150000 },
-        label: 'audiobooków i 1,5 mln+ e-booków (strona Kobo, maj 2026)', tags: [
-          { at: 'angielsku', label: 'Głównie po angielsku', icon: 'globe' }, { at: 'malo', label: 'Po polsku: na razie mało', tone: 'bad' },
+        label: 'audiobooków na start (strona Kobo, maj 2026)', tags: [
+          { at: 'poltora', label: '1,5 mln+ e-booków', icon: 'book' }, { at: 'angielsku', label: 'Głównie po angielsku', icon: 'globe' }, { at: 'malo', label: 'Po polsku: na razie mało', tone: 'bad' },
           { at: 'serwisy', label: '„prawie nic tam nie ma”', sub: 'Świat Czytników, 31.05.2026', icon: 'doc' },
         ] },
       { id: 'A06', kind: 'rec', kicker: 'NaCzytniku.pl · 23.06.2026', title: 'Mocna oferta po angielsku', rec: { clip: 'naczytniku', start: 0.3, url: 'naczytniku.pl' },
@@ -58,8 +58,8 @@ export const piece: PLPiece = {
         { at: '10', label: '10 sekund', sub: 'w przód i w tył', icon: 'sync' }, { at: 'predkosci', label: 'Prędkość', icon: 'speed' },
         { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' }, { at: 'internetu', label: 'Offline', sub: 'pobierz audiobook', icon: 'download' },
       ] },
-      { id: 'A08', kind: 'rec', kicker: 'Pomoc Kobo', title: 'Audiobooki na czytniku', rec: { clip: 'pomoc_urzadzenia', start: 3.0 },
-        marks: [], zooms: [],
+      { id: 'A08', kind: 'rec', kicker: 'Pomoc Kobo', title: 'Audiobooki na czytniku', rec: { clip: 'pomoc_urzadzenia', start: 3.3 },
+        marks: [{ at: 'czytnikach', x: 826, y: 684, w: 664, h: 64 }], zooms: [{ at: 'czytnikach', zoom: 1.7, x: 1150, y: 640 }],
         tags: [
           { at: 'czytnikach', label: 'Wybrane czytniki Kobo', icon: 'ereader' }, { at: 'sluchawki', label: 'Słuchawki lub głośnik', sub: 'przez Bluetooth', icon: 'headphones' },
           { at: 'Klara', label: 'Clara BW · Clara Colour', icon: 'check' }, { at: 'Libra', label: 'Libra Colour · Sage', icon: 'check' },
