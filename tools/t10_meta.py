@@ -116,7 +116,9 @@ def fits2(words, m=MAXC):
 NOCUT = {'do', 'od', 'na', 'za', 'po', 'pod', 'nad', 'przed', 'przez', 'przy', 'dla', 'bez', 'ku', 'we', 'ze', 'oraz', 'ani', 'albo',
          'lub', 'czy', 'że', 'żeby', 'który', 'która', 'które', 'którego', 'jak', 'gdy', 'kiedy', 'co', 'nie', 'ponad', 'nawet', 'tylko',
          'tę', 'ten', 'ta', 'to', 'tym', 'tego', 'jego', 'jej', 'ich', 'swój', 'swoje', 'pewien', 'jedno', 'jedna', 'jeden', 'sam',
-         'tak', 'aż', 'coraz', 'ten', 'mu', 'go', 'tu', 'już', 'jeszcze', 'wciąż', 'by', 'tylu', 'niej', 'nim', 'je'}
+         'tak', 'aż', 'coraz', 'już', 'jeszcze', 'wciąż', 'by', 'tylu', 'gdyby', 'choć', 'bo', 'ale'}
+# Parejas que no se separan en este guion (sintagmas que la regla general no ve).
+KEEP = {('muszą', 'pokonać'), ('małych', 'dzieci'), ('zakątków', 'świata'), ('ludzkie', 'gardło'), ('jest', 'szalony'), ('bicie', 'jego'), ('lat', 'później')}
 
 
 def last_tok(w):
@@ -135,10 +137,15 @@ def cut_cost(words, k):
         c = 8  # tras un título entre comillas
     else:
         c = 12
-        if re.search(r'(ych|ymi|ego|emu|ym|im|ej)$', lt.lower()):
+        if re.search(r'(ych|ymi|imi|ego|emu|ym|im|kiej|nej|wej|tej|łej|rej|dej|giej)$', lt.lower()):
             c += 8  # adjetivo y su sustantivo («o zielonym | świetle», «dwoje małych | dzieci»)
     if lt.lower().strip('„”"«»') in NOCUT and lt[-1:].isalpha():
         c += 30
+    r0 = r.split('\u00a0')[0].lower().strip(',.„”')
+    if (lt.lower().strip(',.„”'), r0) in KEEP:
+        c += 40
+    if r0 in ('je', 'go', 'mu', 'mi', 'ci', 'się') and not ends_sentence(l):
+        c += 10  # un pronombre átono no abre línea («przełożył | je sam»)
     left = ' '.join(words[:k])
     if left.count('„') > left.count('”'):
         c += 25  # dentro de un título entre comillas
@@ -190,7 +197,7 @@ def groups_for(ws):
                 c += 1.6 * cut_cost(words, i)  # entre subtítulos el corte pesa más que entre líneas
                 # una frase que acaba dentro del subtítulo y otra que empieza y sigue en el siguiente
                 if inner and not ends_sentence(cue[-1]):
-                    c += 15
+                    c += 25
             # el final de una frase que viene del subtítulo anterior y, detrás, otra frase
             if inner and j > 0 and not ends_sentence(words[j - 1]):
                 c += 12
