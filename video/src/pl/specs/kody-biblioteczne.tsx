@@ -127,7 +127,7 @@ export const piece: PLPiece = {
         { at: 'pobierz', title: 'Pobierz aplikację serwisu' }, { at: 'zaloguj', title: 'Zaloguj się tym samym kontem' },
         { at: 'sciagnij', title: 'Pobierz audiobooki offline' }, { at: 'wygasnie', title: 'Po ok. 30 dniach dostęp wygasa', sub: 'po nowy kod wracasz do biblioteki' },
       ] },
-      { id: 'B06', kind: 'outro', rec: { clip: '13_sonorbooks_biblioteka', start: 0.2, url: 'sonorbooks.pl/platformy' }, cta: 'Kodu zabrakło?\nPorównaj ceny:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
+      { id: 'B06', kind: 'outro', rec: { clip: '13_sonorbooks_biblioteka', start: 1.2, url: 'sonorbooks.pl/platformy' }, cta: 'Kodu zabrakło?\nPorównaj ceny:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'Audioteki', label: 'Audioteka · Empik Go · Legimi', icon: 'search' }] },
     ],
     chapters: [
