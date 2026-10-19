@@ -1,0 +1,200 @@
+{
+ "total_frames": 13434,
+ "seconds": 268.68,
+ "chapters": [
+  {
+   "t": 13.64,
+   "label": "Czym jest Empik Go"
+  },
+  {
+   "t": 28.76,
+   "label": "Cennik: Go Smart, Go Max i Go Standard"
+  },
+  {
+   "t": 56.34,
+   "label": "Katalog i Empik Go Originals"
+  },
+  {
+   "t": 81.86,
+   "label": "Switch i odtwarzacz"
+  },
+  {
+   "t": 100.0,
+   "label": "Limit w Go Standard"
+  },
+  {
+   "t": 117.84,
+   "label": "Tryb dziecięcy"
+  },
+  {
+   "t": 129.14,
+   "label": "Urządzenia i czytniki"
+  },
+  {
+   "t": 147.66,
+   "label": "Opinie"
+  },
+  {
+   "t": 164.1,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 182.82,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 198.98,
+   "label": "Jak wypróbować 7 dni za darmo"
+  },
+  {
+   "t": 231.74,
+   "label": "Pierwsza opłata i jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 696,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 696,
+   "dur": 756,
+   "lead": 26,
+   "bump": "Czym jest Empik Go?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1452,
+   "dur": 1379,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2831,
+   "dur": 555,
+   "lead": 26,
+   "bump": "Katalog i Originals"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3386,
+   "dur": 721,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "features",
+   "start": 4107,
+   "dur": 893,
+   "lead": 26,
+   "bump": "Aplikacja"
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 5000,
+   "dur": 892,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "rec",
+   "start": 5892,
+   "dur": 565,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6457,
+   "dur": 940,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 7397,
+   "dur": 822,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8219,
+   "dur": 936,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 9155,
+   "dur": 808,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "stat",
+   "start": 9963,
+   "dur": 358,
+   "lead": 26,
+   "bump": "Jak wypróbować za darmo"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 10321,
+   "dur": 774,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "rec",
+   "start": 11095,
+   "dur": 492,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "stat",
+   "start": 11587,
+   "dur": 449,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "steps",
+   "start": 12036,
+   "dur": 525,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12561,
+   "dur": 873,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

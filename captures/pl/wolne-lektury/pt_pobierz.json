@@ -1,0 +1,191 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://wolnelektury.pl/katalog/lektura/pan-tadeusz/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelectorAll('.annoy-banner, .funding-promo-bar').forEach(e => (e.closest('.l-container') || e).remove())"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    779,
+    292
+   ],
+   "dur": 900
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "mark": "dialog"
+  },
+  {
+   "move": [
+    1180,
+    342
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "mp3"
+  },
+  {
+   "move": [
+    1180,
+    459
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "ogg"
+  },
+  {
+   "move": [
+    1180,
+    576
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "daisy"
+  },
+  {
+   "move": [
+    1180,
+    693
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "epub"
+  },
+  {
+   "move": [
+    1228,
+    155
+   ],
+   "dur": 700
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "closed"
+  },
+  {
+   "move": [
+    997,
+    292
+   ],
+   "dur": 800
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "mark": "ebook"
+  },
+  {
+   "move": [
+    1180,
+    352
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 900
+  },
+  {
+   "move": [
+    1180,
+    482
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 800
+  },
+  {
+   "move": [
+    1180,
+    600
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

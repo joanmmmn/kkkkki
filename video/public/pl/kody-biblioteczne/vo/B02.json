@@ -1,0 +1,109 @@
+{
+ "id": "B02",
+ "hash": "f3af0ca25468",
+ "text": "Krok drugi: na stronie swojej biblioteki sprawdź, który serwis oferuje i jak wydaje kody: w filii, mailem czy przez formularz.",
+ "duration": 8.16,
+ "words": [
+  {
+   "w": "Krok",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "drugi:",
+   "s": 0.32,
+   "e": 1.04
+  },
+  {
+   "w": "na",
+   "s": 1.08,
+   "e": 1.12
+  },
+  {
+   "w": "stronie",
+   "s": 1.2,
+   "e": 1.48
+  },
+  {
+   "w": "swojej",
+   "s": 1.52,
+   "e": 1.76
+  },
+  {
+   "w": "biblioteki",
+   "s": 1.84,
+   "e": 2.4
+  },
+  {
+   "w": "sprawdź,",
+   "s": 2.48,
+   "e": 3.04
+  },
+  {
+   "w": "który",
+   "s": 3.12,
+   "e": 3.36
+  },
+  {
+   "w": "serwis",
+   "s": 3.44,
+   "e": 3.76
+  },
+  {
+   "w": "oferuje",
+   "s": 3.84,
+   "e": 4.32
+  },
+  {
+   "w": "i",
+   "s": 4.48,
+   "e": 4.56
+  },
+  {
+   "w": "jak",
+   "s": 4.64,
+   "e": 4.8
+  },
+  {
+   "w": "wydaje",
+   "s": 4.88,
+   "e": 5.2
+  },
+  {
+   "w": "kody:",
+   "s": 5.28,
+   "e": 5.84
+  },
+  {
+   "w": "w",
+   "s": 5.88,
+   "e": 5.92
+  },
+  {
+   "w": "filii,",
+   "s": 6.0,
+   "e": 6.56
+  },
+  {
+   "w": "mailem",
+   "s": 6.64,
+   "e": 6.96
+  },
+  {
+   "w": "czy",
+   "s": 7.12,
+   "e": 7.2
+  },
+  {
+   "w": "przez",
+   "s": 7.28,
+   "e": 7.44
+  },
+  {
+   "w": "formularz.",
+   "s": 7.56,
+   "e": 8.16
+  }
+ ],
+ "speechEnd": 8.16
+}

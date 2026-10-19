@@ -1,0 +1,149 @@
+{
+ "id": "B05",
+ "hash": "5494d8213052",
+ "text": "Krok piąty: pobierz aplikację, zaloguj się tym samym kontem i ściągnij audiobooki do słuchania offline. Gdy dostęp wygaśnie, zwykle po 30 dniach, po nowy kod wracasz do biblioteki.",
+ "duration": 11.6,
+ "words": [
+  {
+   "w": "Krok",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "piąty:",
+   "s": 0.32,
+   "e": 1.12
+  },
+  {
+   "w": "pobierz",
+   "s": 1.2,
+   "e": 1.44
+  },
+  {
+   "w": "aplikację,",
+   "s": 1.52,
+   "e": 2.4
+  },
+  {
+   "w": "zaloguj",
+   "s": 2.48,
+   "e": 2.8
+  },
+  {
+   "w": "się",
+   "s": 2.84,
+   "e": 2.96
+  },
+  {
+   "w": "tym",
+   "s": 3.0,
+   "e": 3.12
+  },
+  {
+   "w": "samym",
+   "s": 3.2,
+   "e": 3.44
+  },
+  {
+   "w": "kontem",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "i",
+   "s": 4.0,
+   "e": 4.08
+  },
+  {
+   "w": "ściągnij",
+   "s": 4.2,
+   "e": 4.56
+  },
+  {
+   "w": "audiobooki",
+   "s": 4.64,
+   "e": 5.12
+  },
+  {
+   "w": "do",
+   "s": 5.16,
+   "e": 5.2
+  },
+  {
+   "w": "słuchania",
+   "s": 5.28,
+   "e": 5.68
+  },
+  {
+   "w": "offline.",
+   "s": 5.76,
+   "e": 6.48
+  },
+  {
+   "w": "Gdy",
+   "s": 6.72,
+   "e": 6.88
+  },
+  {
+   "w": "dostęp",
+   "s": 6.92,
+   "e": 7.2
+  },
+  {
+   "w": "wygaśnie,",
+   "s": 7.28,
+   "e": 8.0
+  },
+  {
+   "w": "zwykle",
+   "s": 8.08,
+   "e": 8.32
+  },
+  {
+   "w": "po",
+   "s": 8.4,
+   "e": 8.48
+  },
+  {
+   "w": "30",
+   "s": 8.56,
+   "e": 8.92
+  },
+  {
+   "w": "dniach,",
+   "s": 8.96,
+   "e": 9.6
+  },
+  {
+   "w": "po",
+   "s": 9.64,
+   "e": 9.68
+  },
+  {
+   "w": "nowy",
+   "s": 9.76,
+   "e": 10.0
+  },
+  {
+   "w": "kod",
+   "s": 10.08,
+   "e": 10.24
+  },
+  {
+   "w": "wracasz",
+   "s": 10.4,
+   "e": 10.72
+  },
+  {
+   "w": "do",
+   "s": 10.8,
+   "e": 10.84
+  },
+  {
+   "w": "biblioteki.",
+   "s": 10.88,
+   "e": 11.6
+  }
+ ],
+ "speechEnd": 11.6
+}

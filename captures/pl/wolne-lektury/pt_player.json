@@ -1,0 +1,170 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://wolnelektury.pl/katalog/lektura/pan-tadeusz/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelectorAll('.annoy-banner, .funding-promo-bar').forEach(e => (e.closest('.l-container') || e).remove())"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 500
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1277,
+    417
+   ],
+   "dur": 1000
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "chapters"
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "move": [
+    874,
+    441
+   ],
+   "dur": 800
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "speed"
+  },
+  {
+   "move": [
+    874,
+    463
+   ],
+   "dur": 300
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "move": [
+    810,
+    375
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "reader"
+  },
+  {
+   "move": [
+    1117,
+    464
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "time"
+  },
+  {
+   "move": [
+    738,
+    521
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "license"
+  },
+  {
+   "move": [
+    769,
+    441
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 200
+  },
+  {
+   "mark": "play"
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "id": "B05",
+ "hash": "71d78d821267",
+ "text": "I drobny druk: jeśli udostępniasz nagranie dalej, podaj autora, źródło i licencję. Licencję znajdziesz przy każdym nagraniu.",
+ "duration": 8.32,
+ "words": [
+  {
+   "w": "I",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "drobny",
+   "s": 0.32,
+   "e": 0.64
+  },
+  {
+   "w": "druk:",
+   "s": 0.68,
+   "e": 1.36
+  },
+  {
+   "w": "jeśli",
+   "s": 1.44,
+   "e": 1.68
+  },
+  {
+   "w": "udostępniasz",
+   "s": 1.76,
+   "e": 2.32
+  },
+  {
+   "w": "nagranie",
+   "s": 2.373,
+   "e": 2.72
+  },
+  {
+   "w": "dalej,",
+   "s": 2.8,
+   "e": 3.36
+  },
+  {
+   "w": "podaj",
+   "s": 3.44,
+   "e": 3.6
+  },
+  {
+   "w": "autora,",
+   "s": 3.68,
+   "e": 4.32
+  },
+  {
+   "w": "źródło",
+   "s": 4.4,
+   "e": 4.88
+  },
+  {
+   "w": "i",
+   "s": 4.907,
+   "e": 4.933
+  },
+  {
+   "w": "licencję.",
+   "s": 4.96,
+   "e": 5.92
+  },
+  {
+   "w": "Licencję",
+   "s": 6.0,
+   "e": 6.48
+  },
+  {
+   "w": "znajdziesz",
+   "s": 6.56,
+   "e": 6.96
+  },
+  {
+   "w": "przy",
+   "s": 7.0,
+   "e": 7.12
+  },
+  {
+   "w": "każdym",
+   "s": 7.2,
+   "e": 7.44
+  },
+  {
+   "w": "nagraniu.",
+   "s": 7.52,
+   "e": 8.32
+  }
+ ],
+ "speechEnd": 8.017
+}

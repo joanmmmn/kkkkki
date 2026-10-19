@@ -1,0 +1,184 @@
+{
+ "id": "A06",
+ "hash": "6b3b93afa4a7",
+ "text": "Audioteka Klub to audiobooki, audioseriale i podcasty, plus aplikacja dla dzieci Audioteka Kids. Kod wpisujesz po zalogowaniu na promo.audioteka.com, w polu „Aktywuj dostęp”. Dostęp trwa 30 dni, na maksymalnie dwóch urządzeniach.",
+ "duration": 16.32,
+ "words": [
+  {
+   "w": "Audioteka",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "Klub",
+   "s": 0.56,
+   "e": 0.88
+  },
+  {
+   "w": "to",
+   "s": 0.96,
+   "e": 1.12
+  },
+  {
+   "w": "audiobooki,",
+   "s": 1.2,
+   "e": 1.96
+  },
+  {
+   "w": "audioseriale",
+   "s": 2.0,
+   "e": 2.72
+  },
+  {
+   "w": "i",
+   "s": 2.76,
+   "e": 2.8
+  },
+  {
+   "w": "podcasty,",
+   "s": 2.92,
+   "e": 3.707
+  },
+  {
+   "w": "plus",
+   "s": 3.813,
+   "e": 3.92
+  },
+  {
+   "w": "aplikacja",
+   "s": 4.0,
+   "e": 4.48
+  },
+  {
+   "w": "dla",
+   "s": 4.52,
+   "e": 4.64
+  },
+  {
+   "w": "dzieci",
+   "s": 4.693,
+   "e": 5.04
+  },
+  {
+   "w": "Audioteka",
+   "s": 5.12,
+   "e": 5.6
+  },
+  {
+   "w": "Kids.",
+   "s": 5.68,
+   "e": 6.52
+  },
+  {
+   "w": "Kod",
+   "s": 6.56,
+   "e": 6.72
+  },
+  {
+   "w": "wpisujesz",
+   "s": 6.8,
+   "e": 7.2
+  },
+  {
+   "w": "po",
+   "s": 7.28,
+   "e": 7.32
+  },
+  {
+   "w": "zalogowaniu",
+   "s": 7.36,
+   "e": 7.92
+  },
+  {
+   "w": "na",
+   "s": 8.0,
+   "e": 8.24
+  },
+  {
+   "w": "promo",
+   "s": 8.44,
+   "e": 8.64
+  },
+  {
+   "w": "kropka",
+   "s": 8.68,
+   "e": 9.04
+  },
+  {
+   "w": "audioteka",
+   "s": 9.12,
+   "e": 9.68
+  },
+  {
+   "w": "kropka",
+   "s": 9.72,
+   "e": 10.08
+  },
+  {
+   "w": "kom,",
+   "s": 10.28,
+   "e": 10.52
+  },
+  {
+   "w": "w",
+   "s": 10.56,
+   "e": 10.64
+  },
+  {
+   "w": "polu",
+   "s": 10.72,
+   "e": 10.96
+  },
+  {
+   "w": "„Aktywuj",
+   "s": 11.0,
+   "e": 11.44
+  },
+  {
+   "w": "dostęp”.",
+   "s": 11.48,
+   "e": 12.36
+  },
+  {
+   "w": "Dostęp",
+   "s": 12.4,
+   "e": 12.8
+  },
+  {
+   "w": "trwa",
+   "s": 12.88,
+   "e": 13.12
+  },
+  {
+   "w": "trzydzieści",
+   "s": 13.16,
+   "e": 13.6
+  },
+  {
+   "w": "dni,",
+   "s": 13.76,
+   "e": 14.12
+  },
+  {
+   "w": "na",
+   "s": 14.16,
+   "e": 14.24
+  },
+  {
+   "w": "maksymalnie",
+   "s": 14.32,
+   "e": 14.88
+  },
+  {
+   "w": "dwóch",
+   "s": 14.92,
+   "e": 15.12
+  },
+  {
+   "w": "urządzeniach.",
+   "s": 15.2,
+   "e": 16.32
+  }
+ ],
+ "speechEnd": 15.841
+}

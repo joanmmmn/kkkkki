@@ -1,0 +1,174 @@
+{
+ "id": "A05",
+ "hash": "5f9aaefd2702",
+ "text": "W polskim Amazonie znajdziesz zakładkę Audiobooki Audible z filtrem języka. Wśród popularnych są kryminały Remigiusza Mroza, sagi Joanny Jax i klasyka, jak Sienkiewicz czy Kraszewski. Sporo to jednak domena publiczna i tytuły religijne.",
+ "duration": 15.04,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "polskim",
+   "s": 0.08,
+   "e": 0.48
+  },
+  {
+   "w": "Amazonie",
+   "s": 0.68,
+   "e": 1.04
+  },
+  {
+   "w": "znajdziesz",
+   "s": 1.08,
+   "e": 1.44
+  },
+  {
+   "w": "zakładkę",
+   "s": 1.48,
+   "e": 1.92
+  },
+  {
+   "w": "Audiobooki",
+   "s": 2.08,
+   "e": 2.64
+  },
+  {
+   "w": "Audible",
+   "s": 2.8,
+   "e": 3.28
+  },
+  {
+   "w": "z",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "filtrem",
+   "s": 3.56,
+   "e": 3.84
+  },
+  {
+   "w": "języka.",
+   "s": 3.92,
+   "e": 4.56
+  },
+  {
+   "w": "Wśród",
+   "s": 4.72,
+   "e": 4.96
+  },
+  {
+   "w": "popularnych",
+   "s": 5.04,
+   "e": 5.6
+  },
+  {
+   "w": "są",
+   "s": 5.68,
+   "e": 5.84
+  },
+  {
+   "w": "kryminały",
+   "s": 5.92,
+   "e": 6.4
+  },
+  {
+   "w": "Remigiusza",
+   "s": 6.48,
+   "e": 6.88
+  },
+  {
+   "w": "Mroza,",
+   "s": 6.96,
+   "e": 7.6
+  },
+  {
+   "w": "sagi",
+   "s": 7.68,
+   "e": 8.0
+  },
+  {
+   "w": "Joanny",
+   "s": 8.08,
+   "e": 8.4
+  },
+  {
+   "w": "Jax",
+   "s": 8.48,
+   "e": 8.88
+  },
+  {
+   "w": "i",
+   "s": 8.96,
+   "e": 9.04
+  },
+  {
+   "w": "klasyka,",
+   "s": 9.12,
+   "e": 9.72
+  },
+  {
+   "w": "jak",
+   "s": 9.76,
+   "e": 9.92
+  },
+  {
+   "w": "Sienkiewicz",
+   "s": 9.96,
+   "e": 10.56
+  },
+  {
+   "w": "czy",
+   "s": 10.64,
+   "e": 10.72
+  },
+  {
+   "w": "Kraszewski.",
+   "s": 10.8,
+   "e": 11.52
+  },
+  {
+   "w": "Sporo",
+   "s": 12.0,
+   "e": 12.28
+  },
+  {
+   "w": "to",
+   "s": 12.32,
+   "e": 12.4
+  },
+  {
+   "w": "jednak",
+   "s": 12.427,
+   "e": 12.72
+  },
+  {
+   "w": "domena",
+   "s": 12.8,
+   "e": 13.04
+  },
+  {
+   "w": "publiczna",
+   "s": 13.12,
+   "e": 13.68
+  },
+  {
+   "w": "i",
+   "s": 13.76,
+   "e": 13.84
+  },
+  {
+   "w": "tytuły",
+   "s": 13.92,
+   "e": 14.24
+  },
+  {
+   "w": "religijne.",
+   "s": 14.32,
+   "e": 15.04
+  }
+ ],
+ "speechEnd": 15.04
+}

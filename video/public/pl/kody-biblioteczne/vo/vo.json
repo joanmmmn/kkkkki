@@ -1,0 +1,106 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Z kartą biblioteczną słuchasz bestsellerów w Legimi, Empik Go albo Audiotece przez miesiąc za 0 zł. Darmowe audiobooki z biblioteki… gdzie jest haczyk? Kodów jest mało i szybko znikają. Pokażę, jak je zdobyć.",
+   "say": "Z kartą biblioteczną słuchasz bestsellerów w Legimi, Empik Gou albo Audiotece przez miesiąc za zero złotych. Darmowe audiobooki z biblioteki… gdzie jest haczyk? Kodów jest mało i szybko znikają. Pokażę, jak je zdobyć."
+  },
+  {
+   "id": "A02",
+   "text": "Jak to działa? Biblioteka kupuje pulę kodów i rozdaje je czytelnikom za darmo. Kod wpisujesz w serwisie i dostajesz dostęp do jego aplikacji, zwykle na 30 dni i bez limitu tytułów. Płaci biblioteka: w Łodzi mieszkańcy przegłosowali na to w budżecie obywatelskim 500 000 zł.",
+   "say": "Jak to działa? Biblioteka kupuje pulę kodów i rozdaje je czytelnikom za darmo. Kod wpisujesz w serwisie i dostajesz dostęp do jego aplikacji, zwykle na trzydzieści dni i bez limitu tytułów. Płaci biblioteka: w Łodzi mieszkańcy przegłosowali na to w budżecie obywatelskim pięćset tysięcy złotych."
+  },
+  {
+   "id": "A03",
+   "text": "Ile to kosztuje? Nic. Usługi bibliotek publicznych są z mocy ustawy ogólnodostępne i bezpłatne, więc karta też. A w Empik Go przy aktywacji kodu nie da się nawet podpiąć karty płatniczej: po 30 dniach dostęp po prostu wygasa.",
+   "say": "Ile to kosztuje? Nic. Usługi bibliotek publicznych są z mocy ustawy ogólnodostępne i bezpłatne, więc karta też. A w Empik Gou przy aktywacji kodu nie da się nawet podpiąć karty płatniczej: po trzydziestu dniach dostęp po prostu wygasa."
+  },
+  {
+   "id": "A04",
+   "text": "Legimi to e-booki i audiobooki: wrocławska biblioteka podaje około 80 000 audiobooków i 243 000 e-booków. Kod wpisujesz na stronie Legimi przygotowanej dla twojej biblioteki, na przykład łódzkiej, i słuchasz na dwóch urządzeniach.",
+   "say": "Legimi to e-booki i audiobooki: wrocławska biblioteka podaje około osiemdziesięciu tysięcy audiobooków i dwustu czterdziestu trzech tysięcy e-booków. Kod wpisujesz na stronie Legimi przygotowanej dla twojej biblioteki, na przykład łódzkiej, i słuchasz na dwóch urządzeniach."
+  },
+  {
+   "id": "A05",
+   "text": "Empik Go to audiobooki, e-booki, słuchowiska i podcasty. Ośmioznakowy kod wpisujesz na empik.com/biblioteki/kod. Działa najczęściej 30 dni, bez limitu tytułów, na jednym telefonie lub tablecie i jednym czytniku, plus Kindle.",
+   "say": "Empik Gou to audiobooki, e-booki, słuchowiska i podcasty. Ośmioznakowy kod wpisujesz na empik kropka kom ukośnik biblioteki ukośnik kod. Działa najczęściej trzydzieści dni, bez limitu tytułów, na jednym telefonie lub tablecie i jednym czytniku, plus Kindl."
+  },
+  {
+   "id": "A06",
+   "text": "Audioteka Klub to audiobooki, audioseriale i podcasty, plus aplikacja dla dzieci Audioteka Kids. Kod wpisujesz po zalogowaniu na promo.audioteka.com, w polu „Aktywuj dostęp”. Dostęp trwa 30 dni, na maksymalnie dwóch urządzeniach.",
+   "say": "Audioteka Klub to audiobooki, audioseriale i podcasty, plus aplikacja dla dzieci Audioteka Kids. Kod wpisujesz po zalogowaniu na promo kropka audioteka kropka kom, w polu „Aktywuj dostęp”. Dostęp trwa trzydzieści dni, na maksymalnie dwóch urządzeniach."
+  },
+  {
+   "id": "A07",
+   "text": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od 15 lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko 3 filie, kod działa aż 90 dni, ale kolejny dostaniesz dopiero po 3 miesiącach.",
+   "say": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od piętnastu lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko trzy filie, kod działa aż dziewięćdziesiąt dni, ale kolejny dostaniesz dopiero po trzech miesiącach."
+  },
+  {
+   "id": "A08",
+   "text": "W Gdańsku kod generujesz sam w internecie, ale tylko jeśli w tym roku wypożyczyłeś choć jedną książkę. W Poznaniu prośby przyjmowane są tylko mailem, pierwszego dnia roboczego miesiąca od 9:00. A w Warszawie każda biblioteka dzielnicowa ma własne zasady: na Bielanach jest formularz online, w Wesołej – kody do Audioteki.",
+   "say": "W Gdańsku kod generujesz sam w internecie, ale tylko jeśli w tym roku wypożyczyłeś choć jedną książkę. W Poznaniu prośby przyjmowane są tylko mailem, pierwszego dnia roboczego miesiąca od dziewiątej. A w Warszawie każda biblioteka dzielnicowa ma własne zasady: na Bielanach jest formularz online, w Wesołej – kody do Audioteki."
+  },
+  {
+   "id": "A08B",
+   "text": "Trzy zasady obowiązują prawie wszędzie. Jeden kod na osobę w miesiącu, zwykle albo Legimi, albo Empik Go. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece.",
+   "say": "Trzy zasady obowiązują prawie wszędzie. Jeden kod na osobę w miesiącu, zwykle albo Legimi, albo Empik Gou. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece."
+  },
+  {
+   "id": "A09",
+   "text": "Słuchasz w aplikacji serwisu, na Androidzie albo iPhonie. Audiobooki pobrane w Legimi i Empik Go działają offline, a Empik Go obsługuje też Android Auto i CarPlay.",
+   "say": "Słuchasz w aplikacji serwisu, na Androidzie albo ajfonie. Audiobooki pobrane w Legimi i Empik Gou działają offline, a Empik Gou obsługuje też Android Auto i Kar Plej."
+  },
+  {
+   "id": "A10",
+   "text": "A aplikacje? W Google Play i w polskim App Store wszystkie trzy mają od 4,5 do 4,8, przy tysiącach opinii. Z kodem słuchasz w tych samych aplikacjach co płacący abonenci.",
+   "say": "A aplikacje? W Gugl Plej i w polskim Ap Storze wszystkie trzy mają od czterech i pół do czterech i ośmiu dziesiątych, przy tysiącach opinii. Z kodem słuchasz w tych samych aplikacjach co płacący abonenci."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: 0 zł, bez limitu tytułów, z bestsellerami i nowościami, w pełnych aplikacjach. Minusy: kodów jest mało, trzeba pilnować dat, często iść do filii, a dostęp kończy się po miesiącu.",
+   "say": "Plusy: zero złotych, bez limitu tytułów, z bestsellerami i nowościami, w pełnych aplikacjach. Minusy: kodów jest mało, trzeba pilnować dat, często iść do filii, a dostęp kończy się po miesiącu."
+  },
+  {
+   "id": "A12",
+   "text": "Warto? Jeśli masz kartę i trochę cierpliwości, to najtańszy legalny sposób na nowości: zero złotych. Jeśli nie chcesz polować na kody, zostają okresy próbne serwisów albo darmowa klasyka z Wolnych Lektur."
+  },
+  {
+   "id": "B01",
+   "text": "Jak odebrać kod? Krok pierwszy: zapisz się do biblioteki. Zabierz dokument tożsamości: w Łodzi kartę dostajesz od ręki w każdej filii."
+  },
+  {
+   "id": "B02",
+   "text": "Krok drugi: na stronie swojej biblioteki sprawdź, który serwis oferuje i jak wydaje kody: w filii, mailem czy przez formularz."
+  },
+  {
+   "id": "B03",
+   "text": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu najbliższe terminy to 2 listopada i 1 grudnia.",
+   "say": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu najbliższe terminy to drugi listopada i pierwszy grudnia."
+  },
+  {
+   "id": "B04",
+   "text": "Krok czwarty: aktywuj kod jeszcze w tym samym miesiącu, na stronie serwisu, którą poda biblioteka, i zaloguj się albo załóż konto."
+  },
+  {
+   "id": "B05",
+   "text": "Krok piąty: pobierz aplikację, zaloguj się tym samym kontem i ściągnij audiobooki do słuchania offline. Gdy dostęp wygaśnie, zwykle po 30 dniach, po nowy kod wracasz do biblioteki.",
+   "say": "Krok piąty: pobierz aplikację, zaloguj się tym samym kontem i ściągnij audiobooki do słuchania offline. Gdy dostęp wygaśnie, zwykle po trzydziestu dniach, po nowy kod wracasz do biblioteki."
+  },
+  {
+   "id": "B06",
+   "text": "Kodu zabrakło? Na sonorbooks.pl porównasz okresy próbne i ceny Audioteki, Empik Go czy Legimi i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Kodu zabrakło? Na sonorbooks kropka pe el porównasz okresy próbne i ceny Audioteki, Empik Gou czy Legimi i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

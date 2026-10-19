@@ -1,0 +1,18 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 92,
+ "duration": 11.902,
+ "offset": 0.241,
+ "marks": {
+  "top": 0.174,
+  "dev": 4.058,
+  "kindle": 6.622,
+  "epub": 9.045,
+  "end": 11.901
+ },
+ "events": []
+}

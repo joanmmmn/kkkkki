@@ -1,0 +1,129 @@
+{
+ "id": "A05",
+ "hash": "4238855fbdd2",
+ "text": "Co tu znajdziesz? Głównie klasykę: „Lalkę” i „Faraona” Prusa, pierwszy tom „Potopu”, „Rękopis znaleziony w Saragossie”, „Na srebrnym globie” Żuławskiego i „Sklepy cynamonowe” Schulza.",
+ "duration": 11.6,
+ "words": [
+  {
+   "w": "Co",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "tu",
+   "s": 0.16,
+   "e": 0.24
+  },
+  {
+   "w": "znajdziesz?",
+   "s": 0.32,
+   "e": 1.2
+  },
+  {
+   "w": "Głównie",
+   "s": 1.24,
+   "e": 1.52
+  },
+  {
+   "w": "klasykę:",
+   "s": 1.6,
+   "e": 2.347
+  },
+  {
+   "w": "„Lalkę”",
+   "s": 2.373,
+   "e": 2.8
+  },
+  {
+   "w": "i",
+   "s": 2.84,
+   "e": 2.88
+  },
+  {
+   "w": "„Faraona”",
+   "s": 2.92,
+   "e": 3.4
+  },
+  {
+   "w": "Prusa,",
+   "s": 3.44,
+   "e": 4.12
+  },
+  {
+   "w": "pierwszy",
+   "s": 4.16,
+   "e": 4.4
+  },
+  {
+   "w": "tom",
+   "s": 4.48,
+   "e": 4.64
+  },
+  {
+   "w": "„Potopu”,",
+   "s": 4.72,
+   "e": 5.44
+  },
+  {
+   "w": "„Rękopis",
+   "s": 5.467,
+   "e": 6.0
+  },
+  {
+   "w": "znaleziony",
+   "s": 6.08,
+   "e": 6.48
+  },
+  {
+   "w": "w",
+   "s": 6.507,
+   "e": 6.533
+  },
+  {
+   "w": "Saragossie”,",
+   "s": 6.56,
+   "e": 7.467
+  },
+  {
+   "w": "„Na",
+   "s": 7.493,
+   "e": 7.6
+  },
+  {
+   "w": "srebrnym",
+   "s": 7.68,
+   "e": 8.16
+  },
+  {
+   "w": "globie”",
+   "s": 8.28,
+   "e": 8.507
+  },
+  {
+   "w": "Żuławskiego",
+   "s": 8.533,
+   "e": 9.36
+  },
+  {
+   "w": "i",
+   "s": 9.44,
+   "e": 9.6
+  },
+  {
+   "w": "„Sklepy",
+   "s": 9.64,
+   "e": 9.92
+  },
+  {
+   "w": "cynamonowe”",
+   "s": 10.0,
+   "e": 10.6
+  },
+  {
+   "w": "Schulza.",
+   "s": 10.64,
+   "e": 11.6
+  }
+ ],
+ "speechEnd": 11.136
+}

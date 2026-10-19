@@ -1,0 +1,164 @@
+{
+ "id": "A12",
+ "hash": "6533d009f534",
+ "text": "Warto? Jeśli masz kartę i trochę cierpliwości, to najtańszy legalny sposób na nowości: zero złotych. Jeśli nie chcesz polować na kody, zostają okresy próbne serwisów albo darmowa klasyka z Wolnych Lektur.",
+ "duration": 12.8,
+ "words": [
+  {
+   "w": "Warto?",
+   "s": 0.0,
+   "e": 0.96
+  },
+  {
+   "w": "Jeśli",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "masz",
+   "s": 1.28,
+   "e": 1.44
+  },
+  {
+   "w": "kartę",
+   "s": 1.52,
+   "e": 1.84
+  },
+  {
+   "w": "i",
+   "s": 1.92,
+   "e": 2.0
+  },
+  {
+   "w": "trochę",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "cierpliwości,",
+   "s": 2.32,
+   "e": 3.12
+  },
+  {
+   "w": "to",
+   "s": 3.2,
+   "e": 3.28
+  },
+  {
+   "w": "najtańszy",
+   "s": 3.36,
+   "e": 3.92
+  },
+  {
+   "w": "legalny",
+   "s": 4.0,
+   "e": 4.4
+  },
+  {
+   "w": "sposób",
+   "s": 4.48,
+   "e": 4.8
+  },
+  {
+   "w": "na",
+   "s": 4.88,
+   "e": 4.96
+  },
+  {
+   "w": "nowości:",
+   "s": 5.04,
+   "e": 5.84
+  },
+  {
+   "w": "zero",
+   "s": 5.92,
+   "e": 6.0
+  },
+  {
+   "w": "złotych.",
+   "s": 6.08,
+   "e": 6.96
+  },
+  {
+   "w": "Jeśli",
+   "s": 7.0,
+   "e": 7.2
+  },
+  {
+   "w": "nie",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "chcesz",
+   "s": 7.4,
+   "e": 7.6
+  },
+  {
+   "w": "polować",
+   "s": 7.68,
+   "e": 7.92
+  },
+  {
+   "w": "na",
+   "s": 8.0,
+   "e": 8.08
+  },
+  {
+   "w": "kody,",
+   "s": 8.12,
+   "e": 8.587
+  },
+  {
+   "w": "zostają",
+   "s": 8.613,
+   "e": 8.96
+  },
+  {
+   "w": "okresy",
+   "s": 9.04,
+   "e": 9.36
+  },
+  {
+   "w": "próbne",
+   "s": 9.4,
+   "e": 9.68
+  },
+  {
+   "w": "serwisów",
+   "s": 9.8,
+   "e": 10.32
+  },
+  {
+   "w": "albo",
+   "s": 10.4,
+   "e": 10.64
+  },
+  {
+   "w": "darmowa",
+   "s": 10.68,
+   "e": 11.04
+  },
+  {
+   "w": "klasyka",
+   "s": 11.08,
+   "e": 11.44
+  },
+  {
+   "w": "z",
+   "s": 11.52,
+   "e": 11.547
+  },
+  {
+   "w": "Wolnych",
+   "s": 11.573,
+   "e": 11.84
+  },
+  {
+   "w": "Lektur.",
+   "s": 11.88,
+   "e": 12.8
+  }
+ ],
+ "speechEnd": 12.313
+}

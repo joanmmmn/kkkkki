@@ -1,0 +1,128 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://biblioteka.wroc.pl/zbiory/e-zbiory/legimi-2/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,600)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "filie"
+  },
+  {
+   "move": [
+    1000,
+    300
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "harmonogram"
+  },
+  {
+   "move": [
+    800,
+    485
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "katalog"
+  },
+  {
+   "move": [
+    900,
+    610
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "scroll1"
+  },
+  {
+   "scroll": 520,
+   "dur": 1700
+  },
+  {
+   "mark": "zasady"
+  },
+  {
+   "move": [
+    900,
+    330
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "scroll2"
+  },
+  {
+   "scroll": 600,
+   "dur": 1700
+  },
+  {
+   "mark": "kod90"
+  },
+  {
+   "move": [
+    820,
+    185
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

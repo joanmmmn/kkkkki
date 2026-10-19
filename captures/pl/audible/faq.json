@@ -1,0 +1,128 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.amazon.pl/hz/audible/mlp",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,2700)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "moveText": "Co otrzymuję z miesięcznym członkostwem Audible?",
+   "exact": false,
+   "dur": 1000
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "otrzymuje"
+  },
+  {
+   "move": [
+    700,
+    387
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "standard"
+  },
+  {
+   "move": [
+    700,
+    519
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "anuluj"
+  },
+  {
+   "moveText": "Co się stanie z audiobookami w mojej Bibliotece",
+   "exact": false,
+   "dur": 900
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "anulowane"
+  },
+  {
+   "move": [
+    700,
+    448
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

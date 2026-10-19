@@ -1,0 +1,134 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://librivox.org/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.documentElement.style.zoom='1.5'"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    960,
+    487
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "move": [
+    790,
+    560
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "scroll1"
+  },
+  {
+   "scroll": 1250,
+   "dur": 1800
+  },
+  {
+   "wait": 200
+  },
+  {
+   "mark": "news"
+  },
+  {
+   "move": [
+    1450,
+    393
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2300
+  },
+  {
+   "mark": "scroll2"
+  },
+  {
+   "scroll": 1420,
+   "dur": 1800
+  },
+  {
+   "wait": 200
+  },
+  {
+   "mark": "stats"
+  },
+  {
+   "move": [
+    356,
+    813
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "move": [
+    833,
+    846
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

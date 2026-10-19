@@ -1,0 +1,103 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.biblioteka.lodz.pl/dla-czytelnikow/e-booki-audiobooki/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "clickText": "Akceptuj niezbędne",
+   "dur": 10
+  },
+  {
+   "wait": 500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,160)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "budzet"
+  },
+  {
+   "move": [
+    690,
+    345
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "zasady"
+  },
+  {
+   "scroll": 440,
+   "dur": 1500
+  },
+  {
+   "move": [
+    520,
+    285
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "fiszka"
+  },
+  {
+   "scroll": 800,
+   "dur": 2000
+  },
+  {
+   "move": [
+    700,
+    350
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

@@ -30,7 +30,7 @@ export const piece: PLPiece = {
           { at: 'angielsku', label: 'Milion: głównie po angielsku i niemiecku', icon: 'globe' }, { at: 'Harry', label: 'Harry Potter · Wiedźmin', icon: 'book' },
           { at: 'sprawdz', label: 'Sprawdź swoje tytuły przed zapłatą', icon: 'search', tone: 'accent' },
         ] },
-      { id: 'A05', kind: 'rec', kicker: 'Superprodukcja', title: 'Perełka katalogu', rec: { clip: 'wiedzmin', start: 4.0 },
+      { id: 'A05', kind: 'rec', kicker: 'Superprodukcja', title: 'Perełka katalogu', rec: { clip: 'wiedzmin', start: 5.3 },
         cuts: [{ at: 'Rozdroze', rec: { clip: 'rozdroze', start: 0.3 } }],
         marks: [{ at: '70', until: 'muzyka', x: 645, y: 470, w: 616, h: 72 }, { at: 'muzyka', until: 'Rozdroze', x: 645, y: 660, w: 616, h: 64 }],
         zooms: [{ at: 'Wiedzmin', zoom: 1.45, x: 955, y: 480 }],
@@ -94,20 +94,21 @@ export const piece: PLPiece = {
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'steps', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Dla nowych użytkowników', rec: { clip: 'portada', start: 0.3, holdAt: 3.0 },
         marks: [{ at: '30', until: '20', x: 220, y: 350, w: 515, h: 76 }, { at: '20', x: 198, y: 444, w: 554, h: 120 }],
+        zooms: [{ at: 'Nowi', zoom: 1.7, x: 565, y: 450 }],
         steps: [
           { at: 'Nowi', title: 'Nowe konto', sub: 'okres próbny tylko raz' }, { at: '30', title: '30 dni za darmo' },
           { at: '20', title: '20 godzin w próbie', sub: 'słuchania i czytania' },
         ] },
       { id: 'B02', kind: 'steps', kicker: 'Rejestracja', title: 'Krok po kroku', rec: { clip: 'rejestracja', start: 0.3, url: 'bookbeat.com/pl/registration' },
         marks: [
-          { at: 'zakladasz', until: 'wybierasz', x: 690, y: 270, w: 530, h: 64 }, { at: 'wybierasz', until: 'dodajesz', x: 690, y: 408, w: 580, h: 90 },
-          { at: 'dodajesz', until: 'zgody', x: 690, y: 510, w: 580, h: 110 }, { at: 'zgody', x: 725, y: 818, w: 490, h: 150 },
+          { at: 'zakladasz', until: 'wybierasz', x: 700, y: 280, w: 510, h: 46 }, { at: 'wybierasz', until: 'dodajesz', x: 690, y: 408, w: 580, h: 90 },
+          { at: 'dodajesz', until: 'zgody', x: 690, y: 510, w: 580, h: 110 }, { at: 'zgody', x: 700, y: 826, w: 510, h: 142 },
         ],
         steps: [
           { at: 'zakladasz', title: 'Załóż konto', sub: 'e-mail, Google lub Apple' },
           { at: 'wybierasz', title: 'Wybierz pakiet', sub: 'zacznie się po okresie próbnym', rec: { clip: 'proba', start: 4.0 } },
           { at: 'dodajesz', title: 'Dodaj metodę płatności' },
-          { at: 'zgody', title: 'Zgoda na marketing', sub: 'nie musisz jej zaznaczać', rec: { clip: 'rejestracja', start: 3.4, url: 'bookbeat.com/pl/registration' } },
+          { at: 'zgody', title: 'Zgoda na marketing', sub: 'nie musisz jej zaznaczać', rec: { clip: 'rejestracja', start: 4.6, url: 'bookbeat.com/pl/registration' } },
         ], note: { at: 'Dzis', label: 'Dziś płacisz 0 zł', icon: 'coin' } },
       { id: 'B03', kind: 'features', kicker: 'Potem', title: 'Aplikacja i karta podarunkowa', cols: 3, items: [
         { at: 'pobierasz', label: 'Pobierz aplikację', sub: 'App Store · Google Play', icon: 'download' }, { at: 'logujesz', label: 'Zaloguj się', sub: 'tym samym kontem', icon: 'user' },
@@ -143,5 +144,5 @@ export const piece: PLPiece = {
       { label: 'Drobny druk okresu próbnego', from: 'B05' },
     ],
   },
-  thumb: { line1: 'BOOKBEAT', line2: 'CZY WARTO?', seal: { icon: 'clock', text: '20–100 h\nmiesięcznie' }, label: { strong: '30 dni', rest: 'ZA DARMO' } },
+  thumb: { line1: 'BOOKBEAT', line2: 'CZY WARTO?', screen: 'pl/bookbeat/img/thumb_screen.jpg', screenMobile: false, seal: { icon: 'clock', text: '20–100 h\nmiesięcznie' }, label: { strong: '30 dni', rest: 'ZA DARMO' } },
 };

@@ -1,4 +1,24 @@
 {
+ "audible": {
+  "A01": "Czy warto płacić za Audible w Polsce? Sprawdziliśmy plany, polski katalog i drobny druk. Powiemy ci, co jest dobre, co złe i jak wypróbować go za darmo przez 30 dni.",
+  "A02": "Audible to serwis z audiobookami należący do Amazona. Polski abonament ruszył w lipcu 2026 roku: wchodzisz przez Amazon.pl, a obsługuje cię niemiecki serwis audible.de w polskiej wersji. Cała kolekcja to ponad milion audiobooków, ale po polsku w lipcu było ich około 3000.",
+  "A03": "Są dwa plany. Standard za 28,99 zł miesięcznie: co miesiąc wybierasz jeden audiobook z całej kolekcji i słuchasz go, dopóki płacisz. Premium za 41,99 zł: co miesiąc dostajesz kredyt na książkę, która zostaje twoja na zawsze, i tysiące tytułów do słuchania bez limitu. Oba bez zobowiązań.",
+  "A04": "Uwaga na zasady. W planie Standard niewykorzystany wybór nie przechodzi na kolejny miesiąc, a kredyty z Premium się kumulują, aż wygasną. Po rezygnacji tracisz katalog bez limitu i książki wybrane w Standardzie; zostają tylko kupione i wzięte za kredyty.",
+  "A05": "W polskim Amazonie znajdziesz zakładkę Audiobooki Audible z filtrem języka. Wśród popularnych są kryminały Remigiusza Mroza, sagi Joanny Jax i klasyka, jak Sienkiewicz czy Kraszewski. Sporo to jednak domena publiczna i tytuły religijne.",
+  "A06": "Książki kupisz też pojedynczo, ale nie jest tanio: w lipcu audiobooki Siembiedy i Mossa kosztowały po 54 zł. Członkowie Premium mają zniżki i specjalne wyprzedaże.",
+  "A07": "Aplikacja Audible pozwala przyspieszyć lektora nawet do 3,5 raza. Ma wyłącznik czasowy, tryb samochodowy z dużymi przyciskami i pobieranie offline. Możesz też założyć profil dziecięcy z tytułami, które sam udostępnisz.",
+  "A08": "Minus na start: tłumaczenie jest niepełne. Na stronie audible.de część treści bywa po niemiecku, a w recenzjach w Google Play użytkownicy skarżą się na mieszankę polskiego, niemieckiego i angielskiego w aplikacji i na brak filtra języka polskiego.",
+  "A09": "Audible działa na telefonach i tabletach z Androidem i iOS, na Apple Watch i zegarkach z Wear OS oraz w samochodzie, z CarPlay albo Android Auto.",
+  "A10": "Oceny? W polskim App Store aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
+  "A11": "Plusy: 30 dni za darmo, w Premium książka na własność co miesiąc, ogromny wybór po angielsku i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie tylko jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego.",
+  "A12": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz głównie polskich tytułów, na razie wybór jest mały: porównaj go z Audioteką Klub, Empik Go czy Legimi.",
+  "B01": "Jak wypróbować Audible za darmo? Nowi członkowie mają 30 dni za darmo w obu planach, a w Premium od razu dostajesz kredyt na pierwszą książkę.",
+  "B02": "Wejdź na Amazon.pl, w zakładkę Audiobooki Audible, i wybierz Wypróbuj Standard albo Premium. Zalogujesz się kontem Amazon i podasz metodę płatności: dziś nie płacisz nic, a po 30 dniach opłata pobierze się sama.",
+  "B03": "Zapisz się na stronie, nie w aplikacji: w App Store plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.",
+  "B04": "Nie chcesz płacić? Zrezygnuj przed końcem 30 dni. Na stronie audible.de link Anuluj subskrypcję jest na samym dole. Jeśli kupiłeś przez App Store albo Google Play, anulujesz tam.",
+  "B05": "I wykorzystaj kredyt przed rezygnacją: niewykorzystane kredyty przepadają, a książka wzięta za kredyt zostaje u ciebie na zawsze.",
+  "B06": "W sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+ },
  "audioteka": {
   "A01": "Czy warto płacić za Audiotekę? To polska platforma z audiobookami, znana z superprodukcji z gwiazdorską obsadą. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak słuchać 14 dni za darmo.",
   "A02": "Audioteka działa od ponad 15 lat, a od 2023 roku w całości należy do Wirtualnej Polski. W abonamencie Audioteka Klub masz ponad 50 000 audiobooków, audioseriali i podcastów, ponad 1300 znanych polskich głosów i nawet 500 nowości miesięcznie.",
@@ -100,6 +120,27 @@
   "B04": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
   "B06": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka."
  },
+ "kody-biblioteczne": {
+  "A01": "Z kartą biblioteczną słuchasz bestsellerów w Legimi, Empik Go albo Audiotece przez miesiąc za 0 zł. Darmowe audiobooki z biblioteki… gdzie jest haczyk? Kodów jest mało i szybko znikają. Pokażę, jak je zdobyć.",
+  "A02": "Jak to działa? Biblioteka kupuje pulę kodów i rozdaje je czytelnikom za darmo. Kod wpisujesz w serwisie i dostajesz dostęp do jego aplikacji, zwykle na 30 dni i bez limitu tytułów. Płaci biblioteka: w Łodzi mieszkańcy przegłosowali na to w budżecie obywatelskim 500 000 zł.",
+  "A03": "Ile to kosztuje? Nic. Usługi bibliotek publicznych są z mocy ustawy ogólnodostępne i bezpłatne, więc karta też. A w Empik Go przy aktywacji kodu nie da się nawet podpiąć karty płatniczej: po 30 dniach dostęp po prostu wygasa.",
+  "A04": "Legimi to e-booki i audiobooki: wrocławska biblioteka podaje około 80 000 audiobooków i 243 000 e-booków. Kod wpisujesz na stronie Legimi przygotowanej dla twojej biblioteki, na przykład łódzkiej, i słuchasz na dwóch urządzeniach.",
+  "A05": "Empik Go to audiobooki, e-booki, słuchowiska i podcasty. Ośmioznakowy kod wpisujesz na empik.com/biblioteki/kod. Działa najczęściej 30 dni, bez limitu tytułów, na jednym telefonie lub tablecie i jednym czytniku, plus Kindle.",
+  "A06": "Audioteka Klub to audiobooki, audioseriale i podcasty, plus aplikacja dla dzieci Audioteka Kids. Kod wpisujesz po zalogowaniu na promo.audioteka.com, w polu „Aktywuj dostęp”. Dostęp trwa 30 dni, na maksymalnie dwóch urządzeniach.",
+  "A07": "Ale każda biblioteka ma własne zasady. W Łodzi kody wydaje każda filia, co miesiąc, osobom od 15 lat, i tylko na papierze. W październiku skończyły się już wszystkie. We Wrocławiu wydają je tylko 3 filie, kod działa aż 90 dni, ale kolejny dostaniesz dopiero po 3 miesiącach.",
+  "A08": "W Gdańsku kod generujesz sam w internecie, ale tylko jeśli w tym roku wypożyczyłeś choć jedną książkę. W Poznaniu prośby przyjmowane są tylko mailem, pierwszego dnia roboczego miesiąca od 9:00. A w Warszawie każda biblioteka dzielnicowa ma własne zasady: na Bielanach jest formularz online, w Wesołej – kody do Audioteki.",
+  "A08B": "Trzy zasady obowiązują prawie wszędzie. Jeden kod na osobę w miesiącu, zwykle albo Legimi, albo Empik Go. Kod trzeba aktywować do końca miesiąca, inaczej kolejnego możesz nie dostać. I nie możesz mieć zaległości w bibliotece.",
+  "A09": "Słuchasz w aplikacji serwisu, na Androidzie albo iPhonie. Audiobooki pobrane w Legimi i Empik Go działają offline, a Empik Go obsługuje też Android Auto i CarPlay.",
+  "A10": "A aplikacje? W Google Play i w polskim App Store wszystkie trzy mają od 4,5 do 4,8, przy tysiącach opinii. Z kodem słuchasz w tych samych aplikacjach co płacący abonenci.",
+  "A11": "Plusy: 0 zł, bez limitu tytułów, z bestsellerami i nowościami, w pełnych aplikacjach. Minusy: kodów jest mało, trzeba pilnować dat, często iść do filii, a dostęp kończy się po miesiącu.",
+  "A12": "Warto? Jeśli masz kartę i trochę cierpliwości, to najtańszy legalny sposób na nowości: zero złotych. Jeśli nie chcesz polować na kody, zostają okresy próbne serwisów albo darmowa klasyka z Wolnych Lektur.",
+  "B01": "Jak odebrać kod? Krok pierwszy: zapisz się do biblioteki. Zabierz dokument tożsamości: w Łodzi kartę dostajesz od ręki w każdej filii.",
+  "B02": "Krok drugi: na stronie swojej biblioteki sprawdź, który serwis oferuje i jak wydaje kody: w filii, mailem czy przez formularz.",
+  "B03": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu najbliższe terminy to 2 listopada i 1 grudnia.",
+  "B04": "Krok czwarty: aktywuj kod jeszcze w tym samym miesiącu, na stronie serwisu, którą poda biblioteka, i zaloguj się albo załóż konto.",
+  "B05": "Krok piąty: pobierz aplikację, zaloguj się tym samym kontem i ściągnij audiobooki do słuchania offline. Gdy dostęp wygaśnie, zwykle po 30 dniach, po nowy kod wracasz do biblioteki.",
+  "B06": "Kodu zabrakło? Na sonorbooks.pl porównasz okresy próbne i ceny Audioteki, Empik Go czy Legimi i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+ },
  "legimi": {
   "A01": "Czy warto płacić za Legimi? To ebooki i audiobooki w jednym abonamencie. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Legimi 3 dni za darmo.",
   "A02": "Legimi to polska firma z Poznania, która od ponad 10 lat oferuje książki w abonamencie. W pakiecie bez limitu masz około 240 000 tytułów. Jej znak rozpoznawczy to synchrobooki: ebook i audiobook pod jedną okładką. Czytasz w tramwaju, a w domu słuchasz dalej od tego samego miejsca.",
@@ -119,6 +160,27 @@
   "B04": "Uważaj na umowę. Jeśli wybierzesz umowę na 12 miesięcy i nie zrezygnujesz w okresie próbnym, wiążesz się na rok, a wcześniejsze wypowiedzenie oznacza zwrot rabatu. Bez umowy zrezygnujesz w każdej chwili.",
   "B05": "Rezygnujesz na legimi.pl: Konto, Subskrypcja, przycisk „Zakończ”. Jeśli płacisz przez Apple – w ustawieniach Apple ID. Zrób to przed końcem 3. dnia i pamiętaj: rezygnacja w okresie próbnym kończy dostęp od razu.",
   "B06": "Zanim zapłacisz, porównaj na sonorbooks.pl ceny i okresy próbne Legimi, Audioteki, Empik Go i innych platform. Twoja następna historia już na ciebie czeka."
+ },
+ "librivox": {
+  "A01": "Ponad 21 000 darmowych audiobooków, legalnie i bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać.",
+  "A02": "LibriVox to projekt wolontariuszy, działa od 2005 roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Bez reklam i bez zysku. Dziś to 21 847 tytułów w 49 językach. Na początku rozdziału słyszysz taką formułkę:",
+  "A03": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej, więc możesz je pobrać, zachować i udostępniać. LibriVox prosi tylko o dobrowolne datki.",
+  "A04": "A po polsku? To mały zakątek: 31 projektów, czyli 27 książek, bo „Lalka” i „Faraon” mają po 3 tomy. Do tego ponad 120 krótszych nagrań w zbiorach wielojęzycznych: wiersze, opowiadania i pierwsze rozdziały powieści. Razem ponad 200 godzin.",
+  "A05": "Co tu znajdziesz? Głównie klasykę: „Lalkę” i „Faraona” Prusa, pierwszy tom „Potopu”, „Rękopis znaleziony w Saragossie”, „Na srebrnym globie” Żuławskiego i „Sklepy cynamonowe” Schulza.",
+  "A06": "Strona jest po angielsku, ale prosta. Kliknij „Browse the catalog”, potem „Language” i wybierz „Polish”. Przy każdej pozycji widzisz, czy czyta jedna osoba, „Solo”, kilka osób, „Collaborative”, czy to fragment zbioru wielojęzycznego, „Multilingual”.",
+  "A07": "Na stronie książki masz czas trwania, lektora i spis rozdziałów. „Play” odtwarza rozdział w przeglądarce, a tytuł rozdziału to plik MP3. „Download” ściąga całą książkę w pliku ZIP, jest też plik M4B. Bez DRM i bez logowania.",
+  "A08": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około 60 procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj minuty.",
+  "A08B": "Najważniejsze: LibriVox nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają 70 lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: A. A. Milne zmarł w 1956 roku, więc „Kubuś Puchatek” będzie w Polsce wolny dopiero od 1 stycznia 2027.",
+  "A09": "Na telefonie? LibriVox nie ma oficjalnej aplikacji. Link „RSS” wkleisz do aplikacji z podcastami albo użyjesz aplikacji innych firm, jak LibriVox Audio Books na Androida i LibriVox Audiobooks na iPhone'a.",
+  "A10": "Oceny tych aplikacji są dobre: na Androidzie 4,7 przy ponad 68 tysiącach opinii, a w polskim App Store 4,6 przy 62 ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a bez reklam kosztuje 24,99 zł.",
+  "A11": "Plusy: za darmo i legalnie, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko 27 książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji.",
+  "A12": "Warto? Do polskiej klasyki tak, jeśli pasuje ci głos lektora. Do nauki angielskiego to kopalnia: ponad 19 000 tytułów. A polską klasykę z zawodowymi lektorami masz za darmo także w Wolnych Lekturach.",
+  "B01": "Jak zacząć? Wejdź na librivox.org. Rejestracja nie jest potrzebna.",
+  "B02": "Kliknij „Browse the catalog”, potem „Language” i „Polish” albo wpisz tytuł w wyszukiwarkę.",
+  "B03": "Na stronie książki kliknij „Play” przy rozdziale i słuchaj od razu.",
+  "B04": "Offline? „Download” ściąga całą książkę, a tytuł rozdziału – jeden plik MP3.",
+  "B05": "I drobny druk: przy nagraniach spoza polskiej listy sprawdź, kiedy zmarł autor, a przy przekładach także tłumacz.",
+  "B06": "A jeśli wolisz zawodowych lektorów, na sonorbooks.pl porównasz Audiotekę, Empik Go, Legimi czy darmowe Wolne Lektury: gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
  },
  "spotify": {
   "A01": "Spotify ma już w Polsce audiobooki w cenie Premium. Czy warto z nich korzystać? Sprawdziliśmy ceny, limity i drobny druk: co jest dobre, co słabe i jak zacząć.",
@@ -159,5 +221,23 @@
   "B04": "Jak zrezygnować? Zaloguj się na stronie Storytel, wejdź w Subskrypcję, kliknij Anuluj i potwierdź – przyjdzie e-mail. Jeśli płacisz przez Google Play albo App Store, anulujesz tam. Samo usunięcie aplikacji nic nie zmienia.",
   "B05": "Drobny druk: według regulaminu, jeśli anulujesz w trakcie oferty promocyjnej, subskrypcja wygasa od razu. A w ostatniej godzinie przed kolejną płatnością nic już nie zmienisz.",
   "B06": "Chcesz porównać inne opcje? Na sonorbooks.pl zestawisz Audiotekę, Empik Go, Legimi czy Audible i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+ },
+ "wolne-lektury": {
+  "A01": "Pełna „Lalka” Prusa: ponad 32 godziny, czyta profesjonalny lektor. Cena: 0 zł. Bez konta, bez reklam i legalnie. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy plusy, minusy i to, jak zacząć.",
+  "A02": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od 2007 roku i ma 7332 utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok 1984”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad 7 milionów osób rocznie.",
+  "A03": "Ile to kosztuje? Nic. Nie ma abonamentu, okresu próbnego ani karty płatniczej, nie trzeba się nawet rejestrować. Fundacja żyje z dotacji i darowizn, więc na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty. To cały haczyk: wpłata jest dobrowolna.",
+  "A04": "W zakładce „Audiobooki” wybierasz epokę, gatunek albo autora. Uwaga: ponad połowa nagrań to poezja, często kilkuminutowe wiersze. Ale jest też ponad sto powieści: „Quo vadis” trwa ponad 20 godzin, a „W pustyni i w puszczy” – trzynaście i pół.",
+  "A05": "Otwórzmy „Pana Tadeusza”. Odtwarzacz jest od razu na stronie: dwanaście ksiąg jako rozdziały, prędkość od 0,5 do 2 razy i nazwisko lektora. Czyta Wiktor Korzeniewski, a całość trwa 8 godzin i 44 minuty.",
+  "A06": "Kto czyta? Ludzie, nie sztuczna inteligencja. „Kamizelkę” i „Latarnika” czyta Jan Peszek, „Tajemniczy ogród” – Paulina Holtz, a „Rok 1984” – Jan Staszczyk. Dramaty, jak „Zemsta” czy „Wesele”, czytane są na dwa głosy.",
+  "A07": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz MP3, OGG, DAISY dla osób z trudnościami w czytaniu i EPUB z dźwiękiem. Całą książkę ściągniesz jednym plikiem ZIP. Nagrania są na wolnych licencjach, więc pliki zostają u ciebie.",
+  "A08": "Do tego e-booki z przypisami i motywami literackimi: czytasz online albo pobierasz PDF, EPUB lub MOBI na Kindle'a. Przy lekturze szkolnej to duża pomoc: możesz jednocześnie czytać i słuchać.",
+  "A09": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i iPhone'a; ta na iPhone'a jest nowa, z grudnia 2025 roku. A pliki MP3 odtworzysz na każdym urządzeniu.",
+  "A10": "Opinie? Aplikacja ma w Google Play 4,6 przy 37 opiniach, a w polskim App Store 4,4 przy 14 ocenach. To mało, bo jest nowa. Krótkie opinie są pozytywne; w App Store ktoś zgłasza, że audiobook nie startuje w trakcie rozmowy telefonicznej.",
+  "A11": "Plusy: za darmo i legalnie, bez konta i bez reklam, prawdziwi lektorzy, pliki MP3 na zawsze i e-book w komplecie. Minusy: tylko klasyka i lektury, więc żadnych nowości; ponad połowa nagrań to krótkie wiersze; a aplikacja jest świeża i ma mało ocen.",
+  "A12": "Werdykt? Dla uczniów, rodziców i fanów klasyki trudno o lepszą darmową opcję. Dla porównania: „Lalka” z Zapasiewiczem w Audiotece trwa 8 godzin 55 minut i kosztuje 19,99 zł. Tu pełna wersja, ponad 32 godziny, za 0 zł. Szukasz nowości? Tu ich nie ma: sprawdź kod z biblioteki albo abonament, na przykład Audioteka, Empik Go czy Legimi.",
+  "B01": "Jak zacząć? Wejdź na wolnelektury.pl i kliknij „Audiobooki” albo wpisz tytuł w wyszukiwarkę. Na stronie utworu naciśnij play: słuchasz od razu, bez logowania. Do słuchania offline kliknij „pobierz audiobook” i wybierz MP3: dostaniesz całą książkę w pliku ZIP.",
+  "B04": "Na telefonie zainstaluj aplikację Wolne Lektury z Google Play albo App Store.",
+  "B05": "I drobny druk: jeśli udostępniasz nagranie dalej, podaj autora, źródło i licencję. Licencję znajdziesz przy każdym nagraniu.",
+  "B06": "A jeśli wolisz inne wydanie, na sonorbooks.pl porównasz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
  }
 }

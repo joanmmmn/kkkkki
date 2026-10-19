@@ -1,0 +1,189 @@
+{
+ "id": "A05",
+ "hash": "df235d9dbf22",
+ "text": "Empik Go to audiobooki, e-booki, słuchowiska i podcasty. Ośmioznakowy kod wpisujesz na empik.com/biblioteki/kod. Działa najczęściej 30 dni, bez limitu tytułów, na jednym telefonie lub tablecie i jednym czytniku, plus Kindle.",
+ "duration": 17.12,
+ "words": [
+  {
+   "w": "Empik",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "Gou",
+   "s": 0.48,
+   "e": 0.8
+  },
+  {
+   "w": "to",
+   "s": 0.96,
+   "e": 1.2
+  },
+  {
+   "w": "audiobooki,",
+   "s": 1.32,
+   "e": 2.0
+  },
+  {
+   "w": "e-booki,",
+   "s": 2.08,
+   "e": 2.56
+  },
+  {
+   "w": "słuchowiska",
+   "s": 2.68,
+   "e": 3.28
+  },
+  {
+   "w": "i",
+   "s": 3.36,
+   "e": 3.4
+  },
+  {
+   "w": "podcasty.",
+   "s": 3.44,
+   "e": 4.44
+  },
+  {
+   "w": "Ośmioznakowy",
+   "s": 4.48,
+   "e": 5.04
+  },
+  {
+   "w": "kod",
+   "s": 5.12,
+   "e": 5.28
+  },
+  {
+   "w": "wpisujesz",
+   "s": 5.36,
+   "e": 5.84
+  },
+  {
+   "w": "na",
+   "s": 5.96,
+   "e": 6.08
+  },
+  {
+   "w": "empik",
+   "s": 6.16,
+   "e": 6.56
+  },
+  {
+   "w": "kropka",
+   "s": 6.6,
+   "e": 6.96
+  },
+  {
+   "w": "kom",
+   "s": 7.2,
+   "e": 7.44
+  },
+  {
+   "w": "ukośnik",
+   "s": 7.52,
+   "e": 8.08
+  },
+  {
+   "w": "biblioteki",
+   "s": 8.16,
+   "e": 8.88
+  },
+  {
+   "w": "ukośnik",
+   "s": 8.96,
+   "e": 9.52
+  },
+  {
+   "w": "kod.",
+   "s": 9.6,
+   "e": 10.36
+  },
+  {
+   "w": "Działa",
+   "s": 10.4,
+   "e": 10.56
+  },
+  {
+   "w": "najczęściej",
+   "s": 10.6,
+   "e": 11.12
+  },
+  {
+   "w": "trzydzieści",
+   "s": 11.16,
+   "e": 11.6
+  },
+  {
+   "w": "dni,",
+   "s": 11.68,
+   "e": 12.133
+  },
+  {
+   "w": "bez",
+   "s": 12.187,
+   "e": 12.24
+  },
+  {
+   "w": "limitu",
+   "s": 12.32,
+   "e": 12.6
+  },
+  {
+   "w": "tytułów,",
+   "s": 12.64,
+   "e": 13.16
+  },
+  {
+   "w": "na",
+   "s": 13.2,
+   "e": 13.28
+  },
+  {
+   "w": "jednym",
+   "s": 13.36,
+   "e": 13.6
+  },
+  {
+   "w": "telefonie",
+   "s": 13.72,
+   "e": 14.08
+  },
+  {
+   "w": "lub",
+   "s": 14.133,
+   "e": 14.24
+  },
+  {
+   "w": "tablecie",
+   "s": 14.4,
+   "e": 14.96
+  },
+  {
+   "w": "i",
+   "s": 15.0,
+   "e": 15.04
+  },
+  {
+   "w": "jednym",
+   "s": 15.12,
+   "e": 15.36
+  },
+  {
+   "w": "czytniku,",
+   "s": 15.44,
+   "e": 16.16
+  },
+  {
+   "w": "plus",
+   "s": 16.24,
+   "e": 16.32
+  },
+  {
+   "w": "Kindl.",
+   "s": 16.44,
+   "e": 17.12
+  }
+ ],
+ "speechEnd": 16.745
+}

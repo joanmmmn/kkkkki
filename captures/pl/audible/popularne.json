@@ -1,0 +1,94 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.amazon.pl/hz/audible/mlp",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,1400)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "how"
+  },
+  {
+   "move": [
+    1280,
+    330
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "popular"
+  },
+  {
+   "move": [
+    824,
+    715
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "kraszewski"
+  },
+  {
+   "move": [
+    1368,
+    715
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

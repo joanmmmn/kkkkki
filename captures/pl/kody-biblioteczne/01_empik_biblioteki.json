@@ -1,0 +1,142 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.empik.com/dostosuj-zgody?ukryj-modal-cookie=1",
+   "until": "commit"
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "clickText": "Zapisz ustawienia",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "go": "https://www.empik.com/biblioteki",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,160))}window.scrollTo(0,0)})()"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1180,
+    340
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "scroll1"
+  },
+  {
+   "scroll": 1000,
+   "dur": 2200
+  },
+  {
+   "mark": "app"
+  },
+  {
+   "move": [
+    760,
+    470
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "scroll2"
+  },
+  {
+   "scroll": 2240,
+   "dur": 3000
+  },
+  {
+   "mark": "kroki"
+  },
+  {
+   "move": [
+    500,
+    490
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    970,
+    545
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "move": [
+    1440,
+    490
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

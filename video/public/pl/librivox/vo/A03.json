@@ -1,0 +1,154 @@
+{
+ "id": "A03",
+ "hash": "752c5aa5e448",
+ "text": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej, więc możesz je pobrać, zachować i udostępniać. LibriVox prosi tylko o dobrowolne datki.",
+ "duration": 12.8,
+ "words": [
+  {
+   "w": "Ile",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "to",
+   "s": 0.24,
+   "e": 0.32
+  },
+  {
+   "w": "kosztuje?",
+   "s": 0.4,
+   "e": 1.24
+  },
+  {
+   "w": "Nic.",
+   "s": 1.28,
+   "e": 1.96
+  },
+  {
+   "w": "Nie",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "ma",
+   "s": 2.12,
+   "e": 2.16
+  },
+  {
+   "w": "abonamentu,",
+   "s": 2.24,
+   "e": 3.08
+  },
+  {
+   "w": "konta",
+   "s": 3.12,
+   "e": 3.52
+  },
+  {
+   "w": "ani",
+   "s": 3.6,
+   "e": 3.76
+  },
+  {
+   "w": "okresu",
+   "s": 3.84,
+   "e": 4.16
+  },
+  {
+   "w": "próbnego.",
+   "s": 4.2,
+   "e": 5.08
+  },
+  {
+   "w": "Nagrania",
+   "s": 5.12,
+   "e": 5.52
+  },
+  {
+   "w": "są",
+   "s": 5.6,
+   "e": 5.68
+  },
+  {
+   "w": "w",
+   "s": 5.76,
+   "e": 5.813
+  },
+  {
+   "w": "domenie",
+   "s": 5.867,
+   "e": 6.16
+  },
+  {
+   "w": "publicznej,",
+   "s": 6.32,
+   "e": 6.8
+  },
+  {
+   "w": "więc",
+   "s": 6.88,
+   "e": 7.0
+  },
+  {
+   "w": "możesz",
+   "s": 7.04,
+   "e": 7.28
+  },
+  {
+   "w": "je",
+   "s": 7.36,
+   "e": 7.44
+  },
+  {
+   "w": "pobrać,",
+   "s": 7.48,
+   "e": 8.04
+  },
+  {
+   "w": "zachować",
+   "s": 8.08,
+   "e": 8.64
+  },
+  {
+   "w": "i",
+   "s": 8.68,
+   "e": 8.72
+  },
+  {
+   "w": "udostępniać.",
+   "s": 8.8,
+   "e": 9.973
+  },
+  {
+   "w": "LibriVox",
+   "s": 10.027,
+   "e": 10.48
+  },
+  {
+   "w": "prosi",
+   "s": 10.56,
+   "e": 10.8
+  },
+  {
+   "w": "tylko",
+   "s": 10.84,
+   "e": 11.12
+  },
+  {
+   "w": "o",
+   "s": 11.16,
+   "e": 11.2
+  },
+  {
+   "w": "dobrowolne",
+   "s": 11.28,
+   "e": 11.84
+  },
+  {
+   "w": "datki.",
+   "s": 11.96,
+   "e": 12.8
+  }
+ ],
+ "speechEnd": 12.332
+}

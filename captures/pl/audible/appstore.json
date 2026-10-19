@@ -1,0 +1,75 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://apps.apple.com/pl/app/id379693831?l=pl",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    400,
+    345
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "zakupy"
+  },
+  {
+   "move": [
+    645,
+    182
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

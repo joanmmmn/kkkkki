@@ -1,0 +1,98 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://apps.apple.com/pl/app/librivox-audiobooks/id596159212?l=pl",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    690,
+    116
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 900
+  },
+  {
+   "move": [
+    560,
+    182
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "rating"
+  },
+  {
+   "move": [
+    398,
+    330
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1700
+  },
+  {
+   "mark": "dev"
+  },
+  {
+   "move": [
+    1228,
+    350
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "id": "A06",
+ "hash": "6ee9cd5ed6ef",
+ "text": "Książki kupisz też pojedynczo, ale nie jest tanio: w lipcu audiobooki Siembiedy i Mossa kosztowały po 54 zł. Członkowie Premium mają zniżki i specjalne wyprzedaże.",
+ "duration": 11.36,
+ "words": [
+  {
+   "w": "Książki",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "kupisz",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "też",
+   "s": 0.8,
+   "e": 0.96
+  },
+  {
+   "w": "pojedynczo,",
+   "s": 1.0,
+   "e": 1.8
+  },
+  {
+   "w": "ale",
+   "s": 1.84,
+   "e": 2.16
+  },
+  {
+   "w": "nie",
+   "s": 2.24,
+   "e": 2.32
+  },
+  {
+   "w": "jest",
+   "s": 2.44,
+   "e": 2.56
+  },
+  {
+   "w": "tanio:",
+   "s": 2.64,
+   "e": 3.3
+  },
+  {
+   "w": "w",
+   "s": 3.32,
+   "e": 3.34
+  },
+  {
+   "w": "lipcu",
+   "s": 3.36,
+   "e": 3.76
+  },
+  {
+   "w": "audiobooki",
+   "s": 3.84,
+   "e": 4.32
+  },
+  {
+   "w": "Siembiedy",
+   "s": 4.36,
+   "e": 4.88
+  },
+  {
+   "w": "i",
+   "s": 4.92,
+   "e": 4.96
+  },
+  {
+   "w": "Mossa",
+   "s": 5.04,
+   "e": 5.44
+  },
+  {
+   "w": "kosztowały",
+   "s": 5.52,
+   "e": 6.0
+  },
+  {
+   "w": "po",
+   "s": 6.08,
+   "e": 6.16
+  },
+  {
+   "w": "pięćdziesiąt",
+   "s": 6.24,
+   "e": 6.68
+  },
+  {
+   "w": "cztery",
+   "s": 6.72,
+   "e": 6.96
+  },
+  {
+   "w": "złote.",
+   "s": 7.04,
+   "e": 7.94
+  },
+  {
+   "w": "Członkowie",
+   "s": 7.96,
+   "e": 8.32
+  },
+  {
+   "w": "Premium",
+   "s": 8.4,
+   "e": 8.8
+  },
+  {
+   "w": "mają",
+   "s": 8.84,
+   "e": 9.12
+  },
+  {
+   "w": "zniżki",
+   "s": 9.16,
+   "e": 9.6
+  },
+  {
+   "w": "i",
+   "s": 9.64,
+   "e": 9.68
+  },
+  {
+   "w": "specjalne",
+   "s": 9.76,
+   "e": 10.24
+  },
+  {
+   "w": "wyprzedaże.",
+   "s": 10.32,
+   "e": 11.36
+  }
+ ],
+ "speechEnd": 10.947
+}

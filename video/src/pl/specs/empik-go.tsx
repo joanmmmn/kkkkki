@@ -94,7 +94,7 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'tylko', label: 'Chcesz tylko audiobooków bez limitu', sub: 'porównaj z abonamentem tylko na audio' },
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies.'], label: 'Dla porównania (10.2026):' } },
-      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Na start', at: '7', value: '7 dni', label: 'za darmo w każdym planie', tags: [
+      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Empik Go', title: 'Okres próbny', at: 'Empik', value: '7 dni', label: 'za darmo w każdym planie', tags: [
         { at: 'karta', label: 'Tylko z kartą płatniczą', icon: 'card' }, { at: ['tylko', 1], label: 'Tylko raz', sub: 'bez względu na plan', icon: 'user' },
       ] },
       { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 0.4, mobile: true }, steps: [
@@ -132,8 +132,7 @@ export const piece: PLPiece = {
       { label: 'Plusy i minusy', from: 'A11' },
       { label: 'Werdykt: czy warto?', from: 'A12' },
       { label: 'Jak wypróbować 7 dni za darmo', from: 'B01' },
-      { label: 'Co po okresie próbnym', from: 'B04' },
-      { label: 'Jak zrezygnować', from: 'B05' },
+      { label: 'Pierwsza opłata i jak zrezygnować', from: 'B04' },
     ],
   },
   thumb: { line1: 'EMPIK GO', line2: 'CZY WARTO?', seal: { icon: 'infinity', text: 'Go Smart\n39,99 zł' }, label: { strong: '7 dni', rest: 'ZA DARMO' } },

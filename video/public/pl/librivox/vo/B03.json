@@ -1,0 +1,64 @@
+{
+ "id": "B03",
+ "hash": "fc220bf0c0b3",
+ "text": "Na stronie książki kliknij „Play” przy rozdziale i słuchaj od razu.",
+ "duration": 4.16,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "stronie",
+   "s": 0.16,
+   "e": 0.4
+  },
+  {
+   "w": "książki",
+   "s": 0.48,
+   "e": 0.96
+  },
+  {
+   "w": "kliknij",
+   "s": 1.04,
+   "e": 1.44
+  },
+  {
+   "w": "„Play”",
+   "s": 1.6,
+   "e": 2.04
+  },
+  {
+   "w": "przy",
+   "s": 2.08,
+   "e": 2.2
+  },
+  {
+   "w": "rozdziale",
+   "s": 2.24,
+   "e": 2.8
+  },
+  {
+   "w": "i",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "słuchaj",
+   "s": 3.12,
+   "e": 3.44
+  },
+  {
+   "w": "od",
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "razu.",
+   "s": 3.72,
+   "e": 4.16
+  }
+ ],
+ "speechEnd": 4.016
+}

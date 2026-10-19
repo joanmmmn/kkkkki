@@ -1,0 +1,169 @@
+{
+ "id": "A09",
+ "hash": "03a8d6c25f66",
+ "text": "Na telefonie? LibriVox nie ma oficjalnej aplikacji. Link „RSS” wkleisz do aplikacji z podcastami albo użyjesz aplikacji innych firm, jak LibriVox Audio Books na Androida i LibriVox Audiobooks na iPhone'a.",
+ "duration": 14.4,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "telefonie?",
+   "s": 0.16,
+   "e": 1.2
+  },
+  {
+   "w": "Librivoks",
+   "s": 1.28,
+   "e": 1.84
+  },
+  {
+   "w": "nie",
+   "s": 2.0,
+   "e": 2.16
+  },
+  {
+   "w": "ma",
+   "s": 2.2,
+   "e": 2.24
+  },
+  {
+   "w": "oficjalnej",
+   "s": 2.32,
+   "e": 2.8
+  },
+  {
+   "w": "aplikacji.",
+   "s": 2.88,
+   "e": 3.84
+  },
+  {
+   "w": "Link",
+   "s": 4.04,
+   "e": 4.24
+  },
+  {
+   "w": "„er",
+   "s": 4.28,
+   "e": 4.56
+  },
+  {
+   "w": "es",
+   "s": 4.68,
+   "e": 4.8
+  },
+  {
+   "w": "es”",
+   "s": 4.88,
+   "e": 5.28
+  },
+  {
+   "w": "wkleisz",
+   "s": 5.32,
+   "e": 5.68
+  },
+  {
+   "w": "do",
+   "s": 5.72,
+   "e": 5.76
+  },
+  {
+   "w": "aplikacji",
+   "s": 5.84,
+   "e": 6.24
+  },
+  {
+   "w": "z",
+   "s": 6.32,
+   "e": 6.373
+  },
+  {
+   "w": "podcastami",
+   "s": 6.427,
+   "e": 7.36
+  },
+  {
+   "w": "albo",
+   "s": 7.44,
+   "e": 7.68
+  },
+  {
+   "w": "użyjesz",
+   "s": 7.72,
+   "e": 8.04
+  },
+  {
+   "w": "aplikacji",
+   "s": 8.08,
+   "e": 8.56
+  },
+  {
+   "w": "innych",
+   "s": 8.64,
+   "e": 8.88
+  },
+  {
+   "w": "firm,",
+   "s": 8.96,
+   "e": 9.28
+  },
+  {
+   "w": "jak",
+   "s": 9.36,
+   "e": 9.6
+  },
+  {
+   "w": "Librivoks",
+   "s": 9.68,
+   "e": 10.16
+  },
+  {
+   "w": "Audio",
+   "s": 10.24,
+   "e": 10.48
+  },
+  {
+   "w": "Buks",
+   "s": 10.56,
+   "e": 10.8
+  },
+  {
+   "w": "na",
+   "s": 10.88,
+   "e": 10.96
+  },
+  {
+   "w": "Androida",
+   "s": 11.16,
+   "e": 11.76
+  },
+  {
+   "w": "i",
+   "s": 11.84,
+   "e": 12.0
+  },
+  {
+   "w": "Librivoks",
+   "s": 12.08,
+   "e": 12.64
+  },
+  {
+   "w": "Audiobuks",
+   "s": 12.72,
+   "e": 13.28
+  },
+  {
+   "w": "na",
+   "s": 13.36,
+   "e": 13.44
+  },
+  {
+   "w": "ajfona.",
+   "s": 13.52,
+   "e": 14.4
+  }
+ ],
+ "speechEnd": 13.965
+}

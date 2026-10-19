@@ -29,8 +29,8 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
     if [ "$LIMIT" -gt 0 ] && [ "$NEW" -ge "$LIMIT" ]; then echo "Pausa tras $NEW tramos nuevos (LIMIT=$LIMIT): vuelve a lanzarlo para seguir"; exit 0; fi
     NEW=$((NEW + 1))
     # Se renderiza a un nombre temporal y se renombra al acabar: si el proceso se corta, el tramo a medias no cuenta como hecho.
-    npx remotion render "$BUNDLE" "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf="${CRF:-16}" --muted --scale="$SCALE" \
-      --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
+    npx remotion render "$BUNDLE" "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency="${CONC:-2}" --crf="${CRF:-16}" --muted --scale="$SCALE" \
+      --offthreadvideo-cache-size-in-bytes="${OTC:-1500000000}" > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
     mv "${part%.mp4}.tmp.mp4" "$part"
   fi
   echo "file '$(basename "$part")'" >> "$TMP/list.txt"
@@ -47,7 +47,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
   apart="$TMP/audio_$(printf %02d $i).wav"
   if [ ! -s "$apart" ]; then
     npx remotion render "$BUNDLE" "$COMP" "${apart%.wav}.tmp.wav" --frames="$a-$b" --codec=wav \
-      --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/audio_$i.log" 2>&1 || { echo "Falló el audio del tramo $a-$b" >&2; exit 1; }
+      --offthreadvideo-cache-size-in-bytes="${OTC:-1500000000}" > "$TMP/audio_$i.log" 2>&1 || { echo "Falló el audio del tramo $a-$b" >&2; exit 1; }
     mv "${apart%.wav}.tmp.wav" "$apart"
   fi
   echo "file '$(basename "$apart")'" >> "$TMP/alist.txt"

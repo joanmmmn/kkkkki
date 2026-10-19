@@ -1,0 +1,134 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.empik.com/dostosuj-zgody?ukryj-modal-cookie=1",
+   "until": "commit"
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "clickText": "Zapisz ustawienia",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "go": "https://www.empik.com/go/biblioteki/kod",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1160,
+    300
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "limit"
+  },
+  {
+   "scroll": 600,
+   "dur": 1600
+  },
+  {
+   "move": [
+    1000,
+    385
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "faq"
+  },
+  {
+   "scroll": 650,
+   "dur": 1600
+  },
+  {
+   "clickText": "Jak długo ważny jest kod biblioteczny?",
+   "exact": false,
+   "dur": 900
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "dlugo"
+  },
+  {
+   "clickText": "wymagane jest podpięcie karty",
+   "exact": false,
+   "dur": 900
+  },
+  {
+   "wait": 1700
+  },
+  {
+   "mark": "karta"
+  },
+  {
+   "scroll": 700,
+   "dur": 1600
+  },
+  {
+   "clickText": "przedłużyć abonament biblioteczny",
+   "exact": false,
+   "dur": 900
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

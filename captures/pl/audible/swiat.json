@@ -1,0 +1,130 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://swiatczytnikow.pl/polski-serwis-audible-wlasnie-ruszyl-dwa-plany-abonamentowe-na-razie-skromna-oferta-i-niemiecka-domena/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelectorAll('#primary,#secondary').forEach(e=>e.style.visibility='hidden')"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,380)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    830,
+    170
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 980,
+   "dur": 2200
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "redirect"
+  },
+  {
+   "move": [
+    830,
+    113
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "scroll2"
+  },
+  {
+   "scroll": 760,
+   "dur": 2000
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "katalog"
+  },
+  {
+   "move": [
+    830,
+    82
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "cena"
+  },
+  {
+   "move": [
+    830,
+    333
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

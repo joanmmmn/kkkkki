@@ -11,7 +11,7 @@ export const piece: PLPiece = {
     kicker: 'Recenzja Legimi', music: 'pl/legimi/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Czy warto\npłacić za\nLegimi?', hi: ['Legimi'], rec: { clip: 'cennik', start: 0.4 }, promises: [{ at: 'cennik', label: 'Cennik', icon: 'coin' }, { at: 'regulamin', label: 'Regulamin', icon: 'doc' }, { at: 'opinie', label: 'Opinie', icon: 'star' }, { at: 'wyprobowac', label: '3 dni za darmo', icon: 'gift' }] },
-      { id: 'A02', kind: 'intro', bump: 'Co dostajesz?', kicker: 'Czym jest Legimi', rec: { clip: 'jak', start: 0.4, url: 'legimi.pl/jak-to-dziala' }, facts: [
+      { id: 'A02', kind: 'intro', bump: 'Co dostajesz?', kicker: 'Czym jest Legimi', rec: { clip: 'jak', start: 0.4, holdAt: 5.9, url: 'legimi.pl/jak-to-dziala' }, facts: [
         { at: 'poznania', label: 'Polska firma z Poznania', icon: 'globe' }, { at: 'dziesieciu', label: 'Abonament od ponad 10 lat', icon: 'calendar' },
         { at: 'synchrobuki', label: 'Synchrobooki', sub: 'ebook + audiobook pod jedną okładką', icon: 'sync' },
         { at: 'tramwaju', label: 'Czytasz, potem słuchasz dalej', sub: 'od tego samego miejsca', icon: 'headphones' },
@@ -38,8 +38,8 @@ export const piece: PLPiece = {
         { at: 'wgrac', label: 'Własne pliki EPUB', sub: 'do 4 miesięcznie (bez limitu)', icon: 'doc' },
       ] },
       { id: 'A07', kind: 'rec', kicker: 'Tylko w Legimi', title: 'Własne produkcje', rec: { clip: 'zastrzyk', start: 1.6 },
-        cuts: [{ at: 'ale', rec: { clip: 'szczegoly', start: 0.4, url: 'legimi.pl/cennik' } }],
-        marks: [{ at: 'katarzyna', until: 'ale', x: 382, y: 309, w: 164, h: 26 }, { at: 'punktow', x: 432, y: 278, w: 270, h: 48 }],
+        cuts: [{ at: 'ale', rec: { clip: 'szczegoly', start: 0.4, holdAt: 3.9, url: 'legimi.pl/cennik' } }],
+        marks: [{ at: 'katarzyna', until: 'ale', x: 382, y: 309, w: 164, h: 26 }, { at: 'katalogu', until: 'punktow', x: 432, y: 318, w: 270, h: 86 }, { at: 'punktow', x: 432, y: 278, w: 270, h: 48 }],
         zooms: [{ at: 'katarzyna', zoom: 2, x: 640, y: 360 }, { at: 'ale', zoom: 1.9, x: 640, y: 380 }],
         tags: [{ at: 'zastrzyk', label: '„Zastrzyk miłości”', sub: 'audioserial', icon: 'headphones' }, { at: 'tylko', label: 'Tylko w Legimi', tone: 'good' },
           { at: 'doplata', label: 'Katalog Klubowy: za dopłatą', tone: 'bad' }, { at: 'punktow', label: '150 pkt / mies. = 15 zł', icon: 'coin' },
@@ -74,8 +74,8 @@ export const piece: PLPiece = {
         { at: 'wejdz', title: 'Wejdź na legimi.pl/cennik' }, { at: 'wybierz', title: 'Wybierz pakiet' }, { at: 'kliknij', title: '„Wypróbuj przez 3 dni za darmo”' },
         { at: 'zaloz', title: 'Załóż konto' }, { at: 'podepnij', title: 'Karta lub PayPal', sub: 'płatność cykliczna; Legimi tylko autoryzuje kartę' },
       ], note: { at: 'dzis', label: 'Dziś płacisz 0 zł', icon: 'coin' } },
-      { id: 'B03', kind: 'rec', kicker: 'Krok 2', title: 'Aplikacja', rec: { clip: 'jak', start: 6.6, url: 'legimi.pl/jak-to-dziala' },
-        marks: [{ at: 'pobierz', until: 'dodaj', x: 684, y: 270, w: 268, h: 120 }, { at: 'dodaj', x: 969, y: 270, w: 268, h: 120 }], zooms: [{ at: 'pobierz', zoom: 1.5, x: 960, y: 380 }],
+      { id: 'B03', kind: 'rec', kicker: 'Krok 2', title: 'Aplikacja', rec: { clip: 'jak', start: 9.0, url: 'legimi.pl/jak-to-dziala' },
+        marks: [{ at: 'pobierz', until: 'dodaj', x: 680, y: 266, w: 272, h: 206 }, { at: 'dodaj', x: 980, y: 266, w: 246, h: 206 }], zooms: [{ at: 'pobierz', zoom: 1.5, x: 960, y: 380 }],
         tags: [{ at: 'pobierz', label: 'Pobierz aplikację', icon: 'download' }, { at: 'zaloguj', label: 'Zaloguj się', icon: 'user' }, { at: 'dodaj', label: '„Dodaj na półkę”', icon: 'bookmark' }] },
       { id: 'B04', kind: 'rec', kicker: 'Uwaga', title: 'Umowa czy bez umowy?', rec: { clip: 'cennik', start: 3.6, holdAt: 7.8 },
         cuts: [{ at: 'bez', rec: { clip: 'cennik', start: 8.2 } }],

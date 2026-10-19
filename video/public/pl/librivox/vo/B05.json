@@ -1,0 +1,94 @@
+{
+ "id": "B05",
+ "hash": "09799ae33189",
+ "text": "I drobny druk: przy nagraniach spoza polskiej listy sprawdź, kiedy zmarł autor, a przy przekładach także tłumacz.",
+ "duration": 7.28,
+ "words": [
+  {
+   "w": "I",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "drobny",
+   "s": 0.24,
+   "e": 0.56
+  },
+  {
+   "w": "druk:",
+   "s": 0.6,
+   "e": 1.28
+  },
+  {
+   "w": "przy",
+   "s": 1.32,
+   "e": 1.4
+  },
+  {
+   "w": "nagraniach",
+   "s": 1.44,
+   "e": 1.84
+  },
+  {
+   "w": "spoza",
+   "s": 1.92,
+   "e": 2.24
+  },
+  {
+   "w": "polskiej",
+   "s": 2.28,
+   "e": 2.6
+  },
+  {
+   "w": "listy",
+   "s": 2.64,
+   "e": 3.04
+  },
+  {
+   "w": "sprawdź,",
+   "s": 3.2,
+   "e": 3.68
+  },
+  {
+   "w": "kiedy",
+   "s": 3.72,
+   "e": 3.92
+  },
+  {
+   "w": "zmarł",
+   "s": 4.0,
+   "e": 4.32
+  },
+  {
+   "w": "autor,",
+   "s": 4.4,
+   "e": 5.04
+  },
+  {
+   "w": "a",
+   "s": 5.08,
+   "e": 5.12
+  },
+  {
+   "w": "przy",
+   "s": 5.2,
+   "e": 5.28
+  },
+  {
+   "w": "przekładach",
+   "s": 5.36,
+   "e": 6.08
+  },
+  {
+   "w": "także",
+   "s": 6.12,
+   "e": 6.32
+  },
+  {
+   "w": "tłumacz.",
+   "s": 6.4,
+   "e": 7.28
+  }
+ ],
+ "speechEnd": 6.945
+}

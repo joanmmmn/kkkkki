@@ -1,0 +1,71 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://wolnelektury.pl/katalog/lektura/kamizelka/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelectorAll('.annoy-banner, .funding-promo-bar').forEach(e => (e.closest('.l-container') || e).remove())"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    790,
+    375
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2800
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "id": "A04",
+ "hash": "860b95d37001",
+ "text": "Legimi to e-booki i audiobooki: wrocławska biblioteka podaje około 80 000 audiobooków i 243 000 e-booków. Kod wpisujesz na stronie Legimi przygotowanej dla twojej biblioteki, na przykład łódzkiej, i słuchasz na dwóch urządzeniach.",
+ "duration": 15.84,
+ "words": [
+  {
+   "w": "Legimi",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "to",
+   "s": 0.56,
+   "e": 0.8
+  },
+  {
+   "w": "e-booki",
+   "s": 0.88,
+   "e": 1.44
+  },
+  {
+   "w": "i",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "audiobooki:",
+   "s": 1.68,
+   "e": 2.6
+  },
+  {
+   "w": "wrocławska",
+   "s": 2.64,
+   "e": 3.12
+  },
+  {
+   "w": "biblioteka",
+   "s": 3.2,
+   "e": 3.68
+  },
+  {
+   "w": "podaje",
+   "s": 3.76,
+   "e": 4.0
+  },
+  {
+   "w": "około",
+   "s": 4.08,
+   "e": 4.4
+  },
+  {
+   "w": "osiemdziesięciu",
+   "s": 4.48,
+   "e": 5.147
+  },
+  {
+   "w": "tysięcy",
+   "s": 5.2,
+   "e": 5.52
+  },
+  {
+   "w": "audiobooków",
+   "s": 5.6,
+   "e": 6.24
+  },
+  {
+   "w": "i",
+   "s": 6.32,
+   "e": 6.4
+  },
+  {
+   "w": "dwustu",
+   "s": 6.48,
+   "e": 6.84
+  },
+  {
+   "w": "czterdziestu",
+   "s": 6.88,
+   "e": 7.44
+  },
+  {
+   "w": "trzech",
+   "s": 7.52,
+   "e": 7.68
+  },
+  {
+   "w": "tysięcy",
+   "s": 7.76,
+   "e": 8.16
+  },
+  {
+   "w": "e-booków.",
+   "s": 8.24,
+   "e": 9.16
+  },
+  {
+   "w": "Kod",
+   "s": 9.2,
+   "e": 9.36
+  },
+  {
+   "w": "wpisujesz",
+   "s": 9.44,
+   "e": 9.84
+  },
+  {
+   "w": "na",
+   "s": 9.88,
+   "e": 9.92
+  },
+  {
+   "w": "stronie",
+   "s": 10.0,
+   "e": 10.24
+  },
+  {
+   "w": "Legimi",
+   "s": 10.32,
+   "e": 10.72
+  },
+  {
+   "w": "przygotowanej",
+   "s": 10.76,
+   "e": 11.32
+  },
+  {
+   "w": "dla",
+   "s": 11.36,
+   "e": 11.44
+  },
+  {
+   "w": "twojej",
+   "s": 11.52,
+   "e": 11.76
+  },
+  {
+   "w": "biblioteki,",
+   "s": 11.84,
+   "e": 12.587
+  },
+  {
+   "w": "na",
+   "s": 12.613,
+   "e": 12.64
+  },
+  {
+   "w": "przykład",
+   "s": 12.68,
+   "e": 12.96
+  },
+  {
+   "w": "łódzkiej,",
+   "s": 13.0,
+   "e": 13.733
+  },
+  {
+   "w": "i",
+   "s": 13.76,
+   "e": 13.84
+  },
+  {
+   "w": "słuchasz",
+   "s": 13.96,
+   "e": 14.24
+  },
+  {
+   "w": "na",
+   "s": 14.32,
+   "e": 14.4
+  },
+  {
+   "w": "dwóch",
+   "s": 14.48,
+   "e": 14.64
+  },
+  {
+   "w": "urządzeniach.",
+   "s": 14.72,
+   "e": 15.84
+  }
+ ],
+ "speechEnd": 15.372
+}

@@ -1,0 +1,204 @@
+{
+ "id": "A04",
+ "hash": "35b795365a6e",
+ "text": "Uwaga na zasady. W planie Standard niewykorzystany wybór nie przechodzi na kolejny miesiąc, a kredyty z Premium się kumulują, aż wygasną. Po rezygnacji tracisz katalog bez limitu i książki wybrane w Standardzie; zostają tylko kupione i wzięte za kredyty.",
+ "duration": 15.12,
+ "words": [
+  {
+   "w": "Uwaga",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "na",
+   "s": 0.36,
+   "e": 0.4
+  },
+  {
+   "w": "zasady.",
+   "s": 0.48,
+   "e": 1.2
+  },
+  {
+   "w": "W",
+   "s": 1.28,
+   "e": 1.32
+  },
+  {
+   "w": "planie",
+   "s": 1.36,
+   "e": 1.6
+  },
+  {
+   "w": "Standard",
+   "s": 1.68,
+   "e": 2.16
+  },
+  {
+   "w": "niewykorzystany",
+   "s": 2.24,
+   "e": 2.96
+  },
+  {
+   "w": "wybór",
+   "s": 3.04,
+   "e": 3.36
+  },
+  {
+   "w": "nie",
+   "s": 3.44,
+   "e": 3.52
+  },
+  {
+   "w": "przechodzi",
+   "s": 3.56,
+   "e": 4.0
+  },
+  {
+   "w": "na",
+   "s": 4.04,
+   "e": 4.08
+  },
+  {
+   "w": "kolejny",
+   "s": 4.16,
+   "e": 4.48
+  },
+  {
+   "w": "miesiąc,",
+   "s": 4.52,
+   "e": 5.24
+  },
+  {
+   "w": "a",
+   "s": 5.28,
+   "e": 5.44
+  },
+  {
+   "w": "kredyty",
+   "s": 5.48,
+   "e": 5.84
+  },
+  {
+   "w": "z",
+   "s": 5.88,
+   "e": 5.92
+  },
+  {
+   "w": "Premium",
+   "s": 6.0,
+   "e": 6.32
+  },
+  {
+   "w": "się",
+   "s": 6.4,
+   "e": 6.52
+  },
+  {
+   "w": "kumulują,",
+   "s": 6.56,
+   "e": 7.24
+  },
+  {
+   "w": "aż",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "wygasną.",
+   "s": 7.44,
+   "e": 8.427
+  },
+  {
+   "w": "Po",
+   "s": 8.453,
+   "e": 8.48
+  },
+  {
+   "w": "rezygnacji",
+   "s": 8.56,
+   "e": 9.2
+  },
+  {
+   "w": "tracisz",
+   "s": 9.28,
+   "e": 9.6
+  },
+  {
+   "w": "katalog",
+   "s": 9.68,
+   "e": 10.0
+  },
+  {
+   "w": "bez",
+   "s": 10.08,
+   "e": 10.16
+  },
+  {
+   "w": "limitu",
+   "s": 10.24,
+   "e": 10.64
+  },
+  {
+   "w": "i",
+   "s": 10.68,
+   "e": 10.72
+  },
+  {
+   "w": "książki",
+   "s": 10.8,
+   "e": 11.2
+  },
+  {
+   "w": "wybrane",
+   "s": 11.28,
+   "e": 11.52
+  },
+  {
+   "w": "w",
+   "s": 11.56,
+   "e": 11.6
+  },
+  {
+   "w": "Standardzie;",
+   "s": 11.84,
+   "e": 12.52
+  },
+  {
+   "w": "zostają",
+   "s": 12.56,
+   "e": 12.88
+  },
+  {
+   "w": "tylko",
+   "s": 12.96,
+   "e": 13.2
+  },
+  {
+   "w": "kupione",
+   "s": 13.24,
+   "e": 13.76
+  },
+  {
+   "w": "i",
+   "s": 13.8,
+   "e": 13.84
+  },
+  {
+   "w": "wzięte",
+   "s": 13.92,
+   "e": 14.16
+  },
+  {
+   "w": "za",
+   "s": 14.24,
+   "e": 14.32
+  },
+  {
+   "w": "kredyty.",
+   "s": 14.36,
+   "e": 15.12
+  }
+ ],
+ "speechEnd": 14.86
+}

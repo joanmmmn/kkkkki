@@ -1,0 +1,169 @@
+{
+ "id": "A07",
+ "hash": "e3b78d131116",
+ "text": "Aplikacja Audible pozwala przyspieszyć lektora nawet do 3,5 raza. Ma wyłącznik czasowy, tryb samochodowy z dużymi przyciskami i pobieranie offline. Możesz też założyć profil dziecięcy z tytułami, które sam udostępnisz.",
+ "duration": 13.6,
+ "words": [
+  {
+   "w": "Aplikacja",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "Odibl",
+   "s": 0.72,
+   "e": 1.2
+  },
+  {
+   "w": "pozwala",
+   "s": 1.28,
+   "e": 1.6
+  },
+  {
+   "w": "przyspieszyć",
+   "s": 1.68,
+   "e": 2.16
+  },
+  {
+   "w": "lektora",
+   "s": 2.24,
+   "e": 2.56
+  },
+  {
+   "w": "nawet",
+   "s": 2.6,
+   "e": 2.88
+  },
+  {
+   "w": "do",
+   "s": 2.96,
+   "e": 3.12
+  },
+  {
+   "w": "trzech",
+   "s": 3.2,
+   "e": 3.44
+  },
+  {
+   "w": "i",
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "pół",
+   "s": 3.68,
+   "e": 3.76
+  },
+  {
+   "w": "raza.",
+   "s": 3.84,
+   "e": 4.6
+  },
+  {
+   "w": "Ma",
+   "s": 4.64,
+   "e": 4.72
+  },
+  {
+   "w": "wyłącznik",
+   "s": 4.8,
+   "e": 5.2
+  },
+  {
+   "w": "czasowy,",
+   "s": 5.36,
+   "e": 5.88
+  },
+  {
+   "w": "tryb",
+   "s": 5.92,
+   "e": 6.08
+  },
+  {
+   "w": "samochodowy",
+   "s": 6.16,
+   "e": 6.72
+  },
+  {
+   "w": "z",
+   "s": 6.747,
+   "e": 6.773
+  },
+  {
+   "w": "dużymi",
+   "s": 6.8,
+   "e": 7.12
+  },
+  {
+   "w": "przyciskami",
+   "s": 7.147,
+   "e": 7.92
+  },
+  {
+   "w": "i",
+   "s": 8.0,
+   "e": 8.08
+  },
+  {
+   "w": "pobieranie",
+   "s": 8.133,
+   "e": 8.64
+  },
+  {
+   "w": "offline.",
+   "s": 8.72,
+   "e": 9.627
+  },
+  {
+   "w": "Możesz",
+   "s": 9.653,
+   "e": 9.84
+  },
+  {
+   "w": "też",
+   "s": 9.92,
+   "e": 10.053
+  },
+  {
+   "w": "założyć",
+   "s": 10.107,
+   "e": 10.4
+  },
+  {
+   "w": "profil",
+   "s": 10.56,
+   "e": 10.72
+  },
+  {
+   "w": "dziecięcy",
+   "s": 10.773,
+   "e": 11.2
+  },
+  {
+   "w": "z",
+   "s": 11.28,
+   "e": 11.333
+  },
+  {
+   "w": "tytułami,",
+   "s": 11.387,
+   "e": 11.8
+  },
+  {
+   "w": "które",
+   "s": 11.84,
+   "e": 12.08
+  },
+  {
+   "w": "sam",
+   "s": 12.16,
+   "e": 12.32
+  },
+  {
+   "w": "udostępnisz.",
+   "s": 12.4,
+   "e": 13.6
+  }
+ ],
+ "speechEnd": 13.138
+}

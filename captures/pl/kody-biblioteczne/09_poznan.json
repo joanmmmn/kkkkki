@@ -1,0 +1,82 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://bracz.edu.pl/bazy-i-zasoby-cyfrowe/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,10480)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    920,
+    330
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "move": [
+    950,
+    435
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "move": [
+    760,
+    455
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "id": "B05",
+ "hash": "d907e4da8bc9",
+ "text": "I wykorzystaj kredyt przed rezygnacją: niewykorzystane kredyty przepadają, a książka wzięta za kredyt zostaje u ciebie na zawsze.",
+ "duration": 7.6,
+ "words": [
+  {
+   "w": "I",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "wykorzystaj",
+   "s": 0.16,
+   "e": 0.64
+  },
+  {
+   "w": "kredyt",
+   "s": 0.72,
+   "e": 1.04
+  },
+  {
+   "w": "przed",
+   "s": 1.16,
+   "e": 1.28
+  },
+  {
+   "w": "rezygnacją:",
+   "s": 1.32,
+   "e": 2.36
+  },
+  {
+   "w": "niewykorzystane",
+   "s": 2.4,
+   "e": 2.96
+  },
+  {
+   "w": "kredyty",
+   "s": 3.04,
+   "e": 3.44
+  },
+  {
+   "w": "przepadają,",
+   "s": 3.48,
+   "e": 4.2
+  },
+  {
+   "w": "a",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "książka",
+   "s": 4.4,
+   "e": 4.8
+  },
+  {
+   "w": "wzięta",
+   "s": 4.84,
+   "e": 5.12
+  },
+  {
+   "w": "za",
+   "s": 5.2,
+   "e": 5.28
+  },
+  {
+   "w": "kredyt",
+   "s": 5.36,
+   "e": 5.76
+  },
+  {
+   "w": "zostaje",
+   "s": 5.8,
+   "e": 6.16
+  },
+  {
+   "w": "u",
+   "s": 6.24,
+   "e": 6.28
+  },
+  {
+   "w": "ciebie",
+   "s": 6.32,
+   "e": 6.56
+  },
+  {
+   "w": "na",
+   "s": 6.6,
+   "e": 6.64
+  },
+  {
+   "w": "zawsze.",
+   "s": 6.72,
+   "e": 7.6
+  }
+ ],
+ "speechEnd": 7.158
+}

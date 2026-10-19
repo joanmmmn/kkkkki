@@ -16,6 +16,9 @@
    "wait": 3500
   },
   {
+   "wait": 2500
+  },
+  {
    "clickSel": "button:has-text('Ustawienia zaawansowane')",
    "dur": 10
   },
@@ -34,6 +37,12 @@
   },
   {
    "wait": 600
+  },
+  {
+   "eval": "document.documentElement.style.overflow='';document.body.style.overflow='';window.scrollTo(0,1262)"
+  },
+  {
+   "wait": 800
   },
   {
    "eval": "window.scrollTo(0,1262)"

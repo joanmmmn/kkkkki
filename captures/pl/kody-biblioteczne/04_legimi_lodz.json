@@ -1,0 +1,89 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/bmwl/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1270,
+    545
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "best"
+  },
+  {
+   "scroll": 600,
+   "dur": 2000
+  },
+  {
+   "move": [
+    700,
+    360
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 500
+  },
+  {
+   "move": [
+    1300,
+    360
+   ],
+   "dur": 1600
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

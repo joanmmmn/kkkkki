@@ -1,0 +1,112 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://bibliotekawesola.pl/audioteka-klub/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "clickText": "Zgoda",
+   "dur": 10
+  },
+  {
+   "wait": 500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,560)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "wymogi"
+  },
+  {
+   "move": [
+    560,
+    200
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "jak"
+  },
+  {
+   "move": [
+    660,
+    460
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 800
+  },
+  {
+   "move": [
+    760,
+    497
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": -560,
+   "dur": 1600
+  },
+  {
+   "mark": "tytul"
+  },
+  {
+   "move": [
+    900,
+    170
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

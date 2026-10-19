@@ -1,0 +1,174 @@
+{
+ "id": "A06",
+ "hash": "d33a4e46ee68",
+ "text": "Strona jest po angielsku, ale prosta. Kliknij „Browse the catalog”, potem „Language” i wybierz „Polish”. Przy każdej pozycji widzisz, czy czyta jedna osoba, „Solo”, kilka osób, „Collaborative”, czy to fragment zbioru wielojęzycznego, „Multilingual”.",
+ "duration": 16.0,
+ "words": [
+  {
+   "w": "Strona",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "jest",
+   "s": 0.44,
+   "e": 0.56
+  },
+  {
+   "w": "po",
+   "s": 0.6,
+   "e": 0.64
+  },
+  {
+   "w": "angielsku,",
+   "s": 0.76,
+   "e": 1.44
+  },
+  {
+   "w": "ale",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "prosta.",
+   "s": 1.68,
+   "e": 2.32
+  },
+  {
+   "w": "Kliknij",
+   "s": 2.48,
+   "e": 2.88
+  },
+  {
+   "w": "„Browse",
+   "s": 3.04,
+   "e": 3.44
+  },
+  {
+   "w": "the",
+   "s": 3.48,
+   "e": 3.52
+  },
+  {
+   "w": "catalog”,",
+   "s": 3.6,
+   "e": 4.32
+  },
+  {
+   "w": "potem",
+   "s": 4.4,
+   "e": 4.64
+  },
+  {
+   "w": "„Language”",
+   "s": 4.8,
+   "e": 5.6
+  },
+  {
+   "w": "i",
+   "s": 5.64,
+   "e": 5.68
+  },
+  {
+   "w": "wybierz",
+   "s": 5.76,
+   "e": 6.08
+  },
+  {
+   "w": "„Polish”.",
+   "s": 6.24,
+   "e": 7.28
+  },
+  {
+   "w": "Przy",
+   "s": 7.32,
+   "e": 7.44
+  },
+  {
+   "w": "każdej",
+   "s": 7.48,
+   "e": 7.72
+  },
+  {
+   "w": "pozycji",
+   "s": 7.76,
+   "e": 8.16
+  },
+  {
+   "w": "widzisz,",
+   "s": 8.28,
+   "e": 8.64
+  },
+  {
+   "w": "czy",
+   "s": 8.72,
+   "e": 8.8
+  },
+  {
+   "w": "czyta",
+   "s": 8.88,
+   "e": 9.12
+  },
+  {
+   "w": "jedna",
+   "s": 9.2,
+   "e": 9.44
+  },
+  {
+   "w": "osoba,",
+   "s": 9.52,
+   "e": 10.16
+  },
+  {
+   "w": "„Solo”,",
+   "s": 10.2,
+   "e": 10.96
+  },
+  {
+   "w": "kilka",
+   "s": 11.04,
+   "e": 11.28
+  },
+  {
+   "w": "osób,",
+   "s": 11.36,
+   "e": 11.84
+  },
+  {
+   "w": "„Collaborative”,",
+   "s": 11.88,
+   "e": 12.96
+  },
+  {
+   "w": "czy",
+   "s": 13.0,
+   "e": 13.04
+  },
+  {
+   "w": "to",
+   "s": 13.12,
+   "e": 13.2
+  },
+  {
+   "w": "fragment",
+   "s": 13.28,
+   "e": 13.68
+  },
+  {
+   "w": "zbioru",
+   "s": 13.76,
+   "e": 14.0
+  },
+  {
+   "w": "wielojęzycznego,",
+   "s": 14.04,
+   "e": 15.04
+  },
+  {
+   "w": "„Multilingual”.",
+   "s": 15.08,
+   "e": 16.0
+  }
+ ],
+ "speechEnd": 15.891
+}

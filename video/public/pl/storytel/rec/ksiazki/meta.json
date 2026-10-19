@@ -1,0 +1,25 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 186,
+ "duration": 27.799,
+ "offset": 0.131,
+ "marks": {
+  "top": 0.284,
+  "row": 3.289,
+  "row_kruk": 6.014,
+  "row_arka": 7.78,
+  "orig_end": 9.78,
+  "kruk": 10.263,
+  "czas": 12.604,
+  "ocena": 15.22,
+  "probka": 17.814,
+  "more": 20.751,
+  "canal": 23.263,
+  "end": 27.799
+ },
+ "events": []
+}

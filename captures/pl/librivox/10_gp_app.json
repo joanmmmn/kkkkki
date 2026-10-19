@@ -1,0 +1,121 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://play.google.com/store/apps/details?id=app.librivox.android&hl=pl&gl=PL",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    620,
+    150
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "dev"
+  },
+  {
+   "move": [
+    357,
+    216
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    358,
+    236
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "rating"
+  },
+  {
+   "move": [
+    360,
+    290
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "move": [
+    470,
+    290
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "mark": "supporter"
+  },
+  {
+   "move": [
+    1440,
+    860
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

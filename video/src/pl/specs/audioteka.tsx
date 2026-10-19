@@ -84,7 +84,7 @@ export const piece: PLPiece = {
         { at: 'Ustawienia', title: 'Ustawienia konta' }, { at: 'Zarzadzaj', title: 'Zarządzaj Audioteka Klub' },
         { at: 'Anuluj', title: '„Anuluj subskrypcję”', sub: 'i „Rezygnuję z subskrypcji”' }, { at: 'Gugl', title: 'Google Play / App Store', sub: 'gdy subskrypcja jest z aplikacji · usunięcie aplikacji nie wystarczy' },
       ], note: { at: 'przed', label: 'Przed końcem 14. dnia', icon: 'calendar' } },
-      { id: 'B06', kind: 'outro', rec: { clip: 'sb_solaris', start: 0.3, url: 'sonorbooks.pl' }, cta: 'Sprawdź, co jest\nw Klubie:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
+      { id: 'B06', kind: 'outro', rec: { clip: 'sb_solaris', start: 0.3, holdAt: 12.6, url: 'sonorbooks.pl' }, cta: 'Sprawdź, co jest\nw Klubie:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'porownasz', label: 'Audioteka · Legimi · Empik Go', icon: 'search' }] },
     ],
     chapters: [

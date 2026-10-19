@@ -1,0 +1,74 @@
+{
+ "id": "B04",
+ "hash": "eeff077b7272",
+ "text": "Na telefonie zainstaluj aplikację Wolne Lektury z Google Play albo App Store.",
+ "duration": 5.28,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "telefonie",
+   "s": 0.16,
+   "e": 0.8
+  },
+  {
+   "w": "zainstaluj",
+   "s": 0.88,
+   "e": 1.36
+  },
+  {
+   "w": "aplikację",
+   "s": 1.44,
+   "e": 2.0
+  },
+  {
+   "w": "Wolne",
+   "s": 2.08,
+   "e": 2.32
+  },
+  {
+   "w": "Lektury",
+   "s": 2.4,
+   "e": 2.88
+  },
+  {
+   "w": "z",
+   "s": 3.04,
+   "e": 3.08
+  },
+  {
+   "w": "Gugl",
+   "s": 3.12,
+   "e": 3.36
+  },
+  {
+   "w": "Plej",
+   "s": 3.44,
+   "e": 3.84
+  },
+  {
+   "w": "albo",
+   "s": 3.92,
+   "e": 4.16
+  },
+  {
+   "w": "z",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "Ap",
+   "s": 4.4,
+   "e": 4.48
+  },
+  {
+   "w": "Stora.",
+   "s": 4.56,
+   "e": 5.28
+  }
+ ],
+ "speechEnd": 4.929
+}

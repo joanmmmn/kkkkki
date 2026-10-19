@@ -1,0 +1,156 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://librivox.org/lalka-vol-1-by-boleslaw-prus/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.documentElement.style.zoom='1.5'"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1520,
+    570
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "donate"
+  },
+  {
+   "move": [
+    330,
+    433
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "mark": "download"
+  },
+  {
+   "move": [
+    488,
+    810
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "rss"
+  },
+  {
+   "move": [
+    488,
+    925
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 1400
+  },
+  {
+   "wait": 200
+  },
+  {
+   "mark": "details"
+  },
+  {
+   "move": [
+    480,
+    476
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "readby"
+  },
+  {
+   "move": [
+    474,
+    577
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "m4b"
+  },
+  {
+   "move": [
+    382,
+    927
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "id": "B01",
+ "hash": "2ad5cf3549eb",
+ "text": "Jak odebrać kod? Krok pierwszy: zapisz się do biblioteki. Zabierz dokument tożsamości: w Łodzi kartę dostajesz od ręki w każdej filii.",
+ "duration": 8.72,
+ "words": [
+  {
+   "w": "Jak",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "odebrać",
+   "s": 0.24,
+   "e": 0.6
+  },
+  {
+   "w": "kod?",
+   "s": 0.64,
+   "e": 1.36
+  },
+  {
+   "w": "Krok",
+   "s": 1.44,
+   "e": 1.6
+  },
+  {
+   "w": "pierwszy:",
+   "s": 1.68,
+   "e": 2.48
+  },
+  {
+   "w": "zapisz",
+   "s": 2.52,
+   "e": 2.827
+  },
+  {
+   "w": "się",
+   "s": 2.853,
+   "e": 2.96
+  },
+  {
+   "w": "do",
+   "s": 3.0,
+   "e": 3.04
+  },
+  {
+   "w": "biblioteki.",
+   "s": 3.12,
+   "e": 4.08
+  },
+  {
+   "w": "Zabierz",
+   "s": 4.12,
+   "e": 4.4
+  },
+  {
+   "w": "dokument",
+   "s": 4.44,
+   "e": 4.8
+  },
+  {
+   "w": "tożsamości:",
+   "s": 4.88,
+   "e": 5.76
+  },
+  {
+   "w": "w",
+   "s": 5.84,
+   "e": 5.88
+  },
+  {
+   "w": "Łodzi",
+   "s": 5.92,
+   "e": 6.24
+  },
+  {
+   "w": "kartę",
+   "s": 6.32,
+   "e": 6.6
+  },
+  {
+   "w": "dostajesz",
+   "s": 6.64,
+   "e": 7.04
+  },
+  {
+   "w": "od",
+   "s": 7.12,
+   "e": 7.2
+  },
+  {
+   "w": "ręki",
+   "s": 7.24,
+   "e": 7.52
+  },
+  {
+   "w": "w",
+   "s": 7.56,
+   "e": 7.6
+  },
+  {
+   "w": "każdej",
+   "s": 7.68,
+   "e": 7.92
+  },
+  {
+   "w": "filii.",
+   "s": 8.0,
+   "e": 8.72
+  }
+ ],
+ "speechEnd": 8.374
+}

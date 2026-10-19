@@ -1,0 +1,114 @@
+{
+ "id": "B03",
+ "hash": "77936769d77d",
+ "text": "Krok trzeci: zgłoś się pierwszego dnia wydawania, najlepiej z samego rana. We Wrocławiu najbliższe terminy to 2 listopada i 1 grudnia.",
+ "duration": 9.2,
+ "words": [
+  {
+   "w": "Krok",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "trzeci:",
+   "s": 0.32,
+   "e": 1.2
+  },
+  {
+   "w": "zgłoś",
+   "s": 1.24,
+   "e": 1.6
+  },
+  {
+   "w": "się",
+   "s": 1.64,
+   "e": 1.76
+  },
+  {
+   "w": "pierwszego",
+   "s": 1.84,
+   "e": 2.24
+  },
+  {
+   "w": "dnia",
+   "s": 2.32,
+   "e": 2.48
+  },
+  {
+   "w": "wydawania,",
+   "s": 2.56,
+   "e": 3.2
+  },
+  {
+   "w": "najlepiej",
+   "s": 3.253,
+   "e": 3.64
+  },
+  {
+   "w": "z",
+   "s": 3.68,
+   "e": 3.76
+  },
+  {
+   "w": "samego",
+   "s": 3.88,
+   "e": 4.08
+  },
+  {
+   "w": "rana.",
+   "s": 4.16,
+   "e": 4.88
+  },
+  {
+   "w": "We",
+   "s": 4.92,
+   "e": 4.96
+  },
+  {
+   "w": "Wrocławiu",
+   "s": 5.0,
+   "e": 5.52
+  },
+  {
+   "w": "najbliższe",
+   "s": 5.6,
+   "e": 6.08
+  },
+  {
+   "w": "terminy",
+   "s": 6.24,
+   "e": 6.48
+  },
+  {
+   "w": "to",
+   "s": 6.56,
+   "e": 6.72
+  },
+  {
+   "w": "2",
+   "s": 6.8,
+   "e": 7.04
+  },
+  {
+   "w": "listopada",
+   "s": 7.16,
+   "e": 7.68
+  },
+  {
+   "w": "i",
+   "s": 7.84,
+   "e": 7.92
+  },
+  {
+   "w": "1",
+   "s": 8.0,
+   "e": 8.32
+  },
+  {
+   "w": "grudnia.",
+   "s": 8.4,
+   "e": 9.2
+  }
+ ],
+ "speechEnd": 8.884
+}
