@@ -288,7 +288,7 @@ const Krasnal: React.FC<{ size: number; shine: number }> = ({ size, shine }) => 
 // 2 · «Manitou»: el primer horror de Masterton, best seller mundial, y el krasnal de Breslavia (2021).
 export const F9: F = ({ c }) => {
   const frame = useCurrentFrame();
-  const a = c.at('X93', 'bestseller') - 8;
+  const a = c.at('X93', 'światowy') - 6;
   const w = c.at('X93', 'Wrocław') - 8;
   const k = c.at('X93', 'krasnala') - 6;
   const s = sp(frame, c.at('X93', 'pierwszy') - 6, 15, 150);
@@ -299,8 +299,12 @@ export const F9: F = ({ c }) => {
     <Center>
       <div style={{ display: 'flex', alignItems: 'center', gap: 80 }}>
         <div style={{ width: 820, padding: '46px 54px', borderRadius: 28, background: 'rgba(12,8,6,0.88)', border: '1px solid rgba(232,133,63,0.3)', boxShadow: '0 50px 120px rgba(0,0,0,0.6)', boxSizing: 'border-box', opacity: s, transform: `translateX(${((1 - s) * -60).toFixed(1)}px)` }}>
-          <Label c="#E8853F">Pierwszy horror Mastertona</Label>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 1, color: BONE, letterSpacing: -3, marginTop: 18, opacity: sB, transform: `scale(${(0.85 + 0.15 * sB).toFixed(3)})`, transformOrigin: '0 50%' }}>Światowy<br />bestseller</div>
+          <Label c="#E8853F">Graham Masterton · 1975</Label>
+          {/* «Pierwszy horror» mientras lo dice; luego «Światowy bestseller» (sin tarjeta vacía al principio) */}
+          <div style={{ position: 'relative', height: 192, marginTop: 18 }}>
+            <div style={{ position: 'absolute', inset: 0, fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 1, color: BONE, letterSpacing: -3, opacity: 1 - Math.min(1, sB * 1.6) }}>Pierwszy<br />horror</div>
+            <div style={{ position: 'absolute', inset: 0, fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 1, color: BONE, letterSpacing: -3, opacity: sB, transform: `scale(${(0.85 + 0.15 * sB).toFixed(3)})`, transformOrigin: '0 50%' }}>Światowy<br />bestseller</div>
+          </div>
           <Reveal at={k - 4}><div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: BONE, marginTop: 34 }}>Krasnal z brązu <span style={{ color: '#E8853F' }}>z „Manitou” w ręku</span></div></Reveal>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '30px 40px', borderRadius: 28, background: 'radial-gradient(circle at 50% 40%, rgba(60,40,22,0.95), rgba(12,8,6,0.92))', border: '1px solid rgba(232,133,63,0.3)', boxShadow: '0 50px 120px rgba(0,0,0,0.6)', opacity: Math.min(1, sK * 1.4), transform: `translateY(${((1 - sK) * 80).toFixed(1)}px)` }}>

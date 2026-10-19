@@ -238,10 +238,10 @@ export const Coment: React.FC = () => {
             <MaskTitle text="Która przestraszyła cię najbardziej?" at={f0 + 2} size={80} hi="najbardziej" />
           </div>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.ink2, marginTop: 70, opacity: ramp(frame, g - 4, g + 10) }}>I o jakich historiach mamy opowiedzieć następnym razem?</div>
-          <div style={{ display: 'flex', gap: 18, marginTop: 34, flexWrap: 'wrap', justifyContent: 'center', width: 1500 }}>
+          <div style={{ display: 'flex', gap: 18, marginTop: 34, flexWrap: 'wrap', justifyContent: 'center', width: 1760 }}>
             {genres.map((gn, i) => {
               const s = sp(frame, g + 4 + i * 4, 14, 190);
-              return <span key={gn} style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, padding: '14px 32px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.soft, color: color.ink, opacity: s, transform: `translateY(${(1 - s) * 20}px)` }}>{gn}</span>;
+              return <span key={gn} style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 38, padding: '14px 30px', borderRadius: 999, background: '#fff', border: `1px solid ${color.line}`, boxShadow: shadow.soft, color: color.ink, opacity: s, transform: `translateY(${(1 - s) * 20}px)` }}>{gn}</span>;
             })}
           </div>
         </AbsoluteFill>
