@@ -1,8 +1,8 @@
 {
  "id": "A06",
- "hash": "2ef9e06ca766",
- "text": "To największy atut Audioteki: ponad 200 superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko 700 tytułów, których posłuchasz tylko tutaj. Klubowicze słuchają nowych produkcji oryginalnych na kilka tygodni przed premierą w sklepie.",
- "duration": 16.57,
+ "hash": "f6f3c80c6d40",
+ "text": "To największy atut Audioteki: ponad 200 superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko 700 tytułów, których posłuchasz tylko w Audiotece. Klubowicze słuchają nowych produkcji oryginalnych na kilka tygodni przed premierą w sklepie.",
+ "duration": 16.24,
  "words": [
   {
    "w": "To",
@@ -16,179 +16,184 @@
   },
   {
    "w": "atut",
-   "s": 0.88,
-   "e": 1.12
+   "s": 0.8,
+   "e": 1.04
   },
   {
    "w": "Audioteki:",
-   "s": 1.2,
-   "e": 2.0
+   "s": 1.12,
+   "e": 1.973
   },
   {
    "w": "ponad",
-   "s": 2.08,
-   "e": 2.4
+   "s": 2.027,
+   "e": 2.32
   },
   {
    "w": "200",
-   "s": 2.48,
-   "e": 2.88
+   "s": 2.4,
+   "e": 2.8
   },
   {
    "w": "superprodukcji",
-   "s": 2.96,
+   "s": 2.88,
+   "e": 3.68
+  },
+  {
+   "w": "i",
+   "s": 3.76,
    "e": 3.84
   },
   {
-   "w": "i",
-   "s": 3.92,
-   "e": 4.0
-  },
-  {
    "w": "audioseriali,",
-   "s": 4.08,
-   "e": 5.0
+   "s": 3.92,
+   "e": 4.827
   },
   {
    "w": "z",
-   "s": 5.04,
-   "e": 5.12
+   "s": 4.853,
+   "e": 4.88
   },
   {
    "w": "muzyką,",
-   "s": 5.2,
-   "e": 5.72
+   "s": 4.96,
+   "e": 5.56
   },
   {
    "w": "efektami",
-   "s": 5.76,
-   "e": 6.4
+   "s": 5.6,
+   "e": 6.16
   },
   {
    "w": "i",
-   "s": 6.44,
-   "e": 6.48
+   "s": 6.24,
+   "e": 6.28
   },
   {
    "w": "aktorami",
-   "s": 6.56,
-   "e": 6.96
+   "s": 6.32,
+   "e": 6.8
   },
   {
    "w": "jak",
+   "s": 6.88,
+   "e": 6.96
+  },
+  {
+   "w": "w",
    "s": 7.04,
    "e": 7.12
   },
   {
-   "w": "w",
-   "s": 7.2,
-   "e": 7.28
-  },
-  {
    "w": "kinie,",
-   "s": 7.4,
-   "e": 8.027
+   "s": 7.24,
+   "e": 7.8
   },
   {
    "w": "i",
-   "s": 8.053,
-   "e": 8.08
+   "s": 7.84,
+   "e": 7.92
   },
   {
    "w": "blisko",
-   "s": 8.12,
-   "e": 8.48
+   "s": 7.96,
+   "e": 8.32
   },
   {
    "w": "700",
-   "s": 8.52,
-   "e": 8.96
+   "s": 8.36,
+   "e": 8.8
   },
   {
    "w": "tytułów,",
-   "s": 9.04,
-   "e": 9.56
+   "s": 8.88,
+   "e": 9.32
   },
   {
    "w": "których",
-   "s": 9.6,
-   "e": 9.84
+   "s": 9.36,
+   "e": 9.6
   },
   {
    "w": "posłuchasz",
-   "s": 9.92,
-   "e": 10.4
+   "s": 9.68,
+   "e": 10.24
   },
   {
    "w": "tylko",
-   "s": 10.48,
-   "e": 10.72
-  },
-  {
-   "w": "tutaj.",
-   "s": 10.8,
-   "e": 11.573
-  },
-  {
-   "w": "Klubowicze",
-   "s": 11.45,
-   "e": 11.93
-  },
-  {
-   "w": "słuchają",
-   "s": 12.01,
-   "e": 12.41
-  },
-  {
-   "w": "nowych",
-   "s": 12.49,
-   "e": 12.73
-  },
-  {
-   "w": "produkcji",
-   "s": 12.85,
-   "e": 13.21
-  },
-  {
-   "w": "oryginalnych",
-   "s": 13.29,
-   "e": 13.93
-  },
-  {
-   "w": "na",
-   "s": 14.01,
-   "e": 14.25
-  },
-  {
-   "w": "kilka",
-   "s": 14.33,
-   "e": 14.57
-  },
-  {
-   "w": "tygodni",
-   "s": 14.65,
-   "e": 15.05
-  },
-  {
-   "w": "przed",
-   "s": 15.17,
-   "e": 15.29
-  },
-  {
-   "w": "premierą",
-   "s": 15.37,
-   "e": 15.61
+   "s": 10.32,
+   "e": 10.56
   },
   {
    "w": "w",
-   "s": 15.65,
-   "e": 15.69
+   "s": 10.64,
+   "e": 10.68
+  },
+  {
+   "w": "Audiotece.",
+   "s": 10.72,
+   "e": 11.547
+  },
+  {
+   "w": "Klubowicze",
+   "s": 11.573,
+   "e": 12.0
+  },
+  {
+   "w": "słuchają",
+   "s": 12.08,
+   "e": 12.48
+  },
+  {
+   "w": "nowych",
+   "s": 12.56,
+   "e": 12.72
+  },
+  {
+   "w": "produkcji",
+   "s": 12.8,
+   "e": 13.2
+  },
+  {
+   "w": "oryginalnych",
+   "s": 13.28,
+   "e": 13.84
+  },
+  {
+   "w": "na",
+   "s": 13.96,
+   "e": 14.08
+  },
+  {
+   "w": "kilka",
+   "s": 14.16,
+   "e": 14.4
+  },
+  {
+   "w": "tygodni",
+   "s": 14.48,
+   "e": 14.8
+  },
+  {
+   "w": "przed",
+   "s": 14.92,
+   "e": 15.04
+  },
+  {
+   "w": "premierą",
+   "s": 15.08,
+   "e": 15.36
+  },
+  {
+   "w": "w",
+   "s": 15.4,
+   "e": 15.44
   },
   {
    "w": "sklepie.",
-   "s": 15.77,
-   "e": 16.57
+   "s": 15.52,
+   "e": 16.24
   }
  ],
- "speechEnd": 16.283
+ "speechEnd": 15.929
 }

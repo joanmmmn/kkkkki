@@ -18,12 +18,12 @@ W tym filmie: czym jest Audioteka i co dostajesz w Audioteka Klub, ile kosztują
 1:05 Przykład: „Solaris”
 1:21 Superprodukcje i tytuły za dopłatą
 1:48 Aplikacja, limit godzin i Audioteka Kids
-2:14 Urządzenia
-2:28 Opinie
-2:45 Plusy i minusy
-3:02 Werdykt: czy warto?
-3:17 Jak wypróbować 14 dni za darmo
-3:52 Jak zrezygnować
+2:13 Urządzenia
+2:27 Opinie
+2:44 Plusy i minusy
+3:01 Werdykt: czy warto?
+3:15 Jak wypróbować 14 dni za darmo
+3:50 Jak zrezygnować
 
 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 

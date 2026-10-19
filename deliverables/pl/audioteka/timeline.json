@@ -1,6 +1,6 @@
 {
- "total_frames": 13359,
- "seconds": 267.18,
+ "total_frames": 13303,
+ "seconds": 266.06,
  "chapters": [
   {
    "t": 13.76,
@@ -19,35 +19,35 @@
    "label": "Przykład: „Solaris”"
   },
   {
-   "t": 81.5,
+   "t": 81.1,
    "label": "Superprodukcje i tytuły za dopłatą"
   },
   {
-   "t": 108.9,
+   "t": 108.14,
    "label": "Aplikacja, limit godzin i Audioteka Kids"
   },
   {
-   "t": 134.56,
+   "t": 133.8,
    "label": "Urządzenia"
   },
   {
-   "t": 148.02,
+   "t": 147.26,
    "label": "Opinie"
   },
   {
-   "t": 165.24,
+   "t": 164.48,
    "label": "Plusy i minusy"
   },
   {
-   "t": 182.5,
+   "t": 181.64,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 197.06,
+   "t": 195.94,
    "label": "Jak wypróbować 14 dni za darmo"
   },
   {
-   "t": 232.08,
+   "t": 230.96,
    "label": "Jak zrezygnować"
   }
  ],
@@ -88,22 +88,22 @@
    "id": "A05",
    "kind": "rec",
    "start": 3293,
-   "dur": 782,
+   "dur": 762,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A06",
    "kind": "intro",
-   "start": 4075,
-   "dur": 852,
+   "start": 4055,
+   "dur": 834,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A07",
    "kind": "rec",
-   "start": 4927,
+   "start": 4889,
    "dur": 532,
    "lead": 7,
    "bump": null
@@ -111,7 +111,7 @@
   {
    "id": "A08",
    "kind": "features",
-   "start": 5459,
+   "start": 5421,
    "dur": 519,
    "lead": 26,
    "bump": "Aplikacja"
@@ -119,7 +119,7 @@
   {
    "id": "A08S",
    "kind": "rec",
-   "start": 5978,
+   "start": 5940,
    "dur": 297,
    "lead": 7,
    "bump": null
@@ -127,7 +127,7 @@
   {
    "id": "A08B",
    "kind": "rec",
-   "start": 6275,
+   "start": 6237,
    "dur": 453,
    "lead": 7,
    "bump": null
@@ -135,7 +135,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6728,
+   "start": 6690,
    "dur": 687,
    "lead": 7,
    "bump": null
@@ -143,7 +143,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7415,
+   "start": 7377,
    "dur": 861,
    "lead": 26,
    "bump": "Opinie"
@@ -151,23 +151,23 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8276,
-   "dur": 863,
+   "start": 8238,
+   "dur": 858,
    "lead": 26,
    "bump": "Plusy i minusy"
   },
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9139,
-   "dur": 728,
+   "start": 9096,
+   "dur": 715,
    "lead": 26,
    "bump": "Werdykt"
   },
   {
    "id": "B01",
    "kind": "rec",
-   "start": 9867,
+   "start": 9811,
    "dur": 345,
    "lead": 26,
    "bump": "14 dni za darmo"
@@ -175,7 +175,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10212,
+   "start": 10156,
    "dur": 617,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B03",
    "kind": "features",
-   "start": 10829,
+   "start": 10773,
    "dur": 426,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11255,
+   "start": 11199,
    "dur": 363,
    "lead": 7,
    "bump": null
@@ -199,7 +199,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 11618,
+   "start": 11562,
    "dur": 867,
    "lead": 26,
    "bump": "Jak zrezygnować"
@@ -207,7 +207,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12485,
+   "start": 12429,
    "dur": 874,
    "lead": 7,
    "bump": null
