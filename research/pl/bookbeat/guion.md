@@ -142,3 +142,13 @@ SAY (si difiere): Chcesz porównać inne opcje? Na sonorbooks kropka pe el zesta
 Pantalla: «sonorbooks.pl» · Audioteka · Empik Go · Legimi · Audible · frase de marca «Twoja następna historia już na ciebie czeka.» (sin aviso de afiliado).
 Toma: 12_sonorbooks (de 0,0 s a 12,0 s) → cierre de marca SonorBooks.
 ES: ¿Quieres comparar otras opciones? En sonorbooks.pl comparas Audioteka, Empik Go, Legimi o Audible y ves dónde escuchar un audiolibro y a qué precio. Tu próxima historia ya te está esperando.
+
+---
+
+### Cambios v2 (revisión independiente, 19/10/2026)
+El texto definitivo de la locución está en `video/public/pl/bookbeat/vo/vo.json`. Cambios respecto a v1:
+- A07: «synchrobooki» era incorrecto (la ayuda de BookBeat, art. 39778101831325 del 09.10.2026, describe que cambias de formato sin perder el punto, no que leas y escuches a la vez; «Synchrobook» es el nombre de Legimi). Ahora: «A ponad 2500 polskich tytułów ma synchronizację: przełączasz się między słuchaniem a czytaniem i wracasz w to samo miejsce.»
+- A04: «prawie same książki obcojęzyczne – najwięcej po angielsku i po niemiecku; po polsku to niecałe 2%» (inglés y alemán suman el 47 % de los títulos).
+- B04: «wykonaj wszystkie kroki». A10: «w App Storze».
+- Polaco: A02 «należąca do grupy Bonnier»; A03 «Możesz dodać do czterech profili dodatkowych, od 9,99 zł miesięcznie za każdy»; A05 «„Wiedźmin” w wersji z udziałem ponad 70 aktorów»; A08 «bez względu na to, jak szybko słuchasz»; A08B «ma tyle samo godzin co pakiet właściciela»; A09 «Na komputerze ani na czytniku e-booków BookBeat nie działa».
+- Comillas polacas en „Wiedźmin”, „Rozdroże kruków” y „Zarządzaj subskrypcją”.

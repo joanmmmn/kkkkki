@@ -55,9 +55,12 @@ Sustituye en Polonia a la reseña española de **Podimo**.
 ## 6. App y reproductor (sin probar la app: solo fuentes oficiales)
 
 - Google Play: Chromecast, Android Auto, offline, **drzemka** (apagado automático), **velocidad de 0,5 «nawet do 3x»**, valoraciones, pódcasts gratuitos, notificaciones. App Store (texto en inglés): CarPlay, Chromecast, offline, snooze, velocidad 0,5–2x (descripción quizá antigua) → el guion dice «na Androidzie nawet 3 razy szybciej».
+- **Velocidad: las fuentes oficiales se contradicen.** Google Play: «od 0,5 nawet do 3x»; centro de ayuda «Aplikacje Audioteki» (pregunta «Czy mogę zmienić prędkość odtwarzania?», 19.10.2026): «Możliwe jest zmniejszenie prędkości czytania do 0,5x oraz zwiększenie do 2,0x»; App Store (inglés): 0,5–2x. → El vídeo no da cifra: «ustawisz prędkość odtwarzania» (cambio del 19.10, tras la revisión independiente). https://audioteka.com/pl/centrum-pomocy/aplikacje-audioteki/
 - Ayuda «Aplikacje Audioteki»: icono de velocímetro para la velocidad, «drzemka» con el icono del despertador, descargas con la flecha, Android Auto. https://audioteka.com/pl/centrum-pomocy/aplikacje-audioteki/
 - **Apple Watch**: la ficha del App Store (`supportedDevices` de https://itunes.apple.com/lookup?id=1107917398&country=pl) incluye Apple Watch; una reseña reciente lo confirma («super że jest na Watche»).
 - Pocos datos oficiales sobre marcadores; varias reseñas piden «zakładki» → no se menciona.
+
+- **Dónde están los títulos del abono en la app (B03):** «Pełną zawartość zbioru tytułów do słuchania w ramach Audioteka Klub bez dodatkowych opłat możesz przejrzeć przechodząc w aplikacji do zakładki "Twoje", a następnie wybierając "Bezpłatne w Audioteka Klub". Ten sam rezultat można uzyskać w zakładce "Katalog" przełączając widok z "Wszystkie" na "Audioteka Klub".» Centro de ayuda de Audioteka Klub, pregunta «Jak mogę znaleźć audiobooki dostępne bez dodatkowych opłat w subskrypcji?»: https://audioteka.com/pl/centrum-pomocy/audioteka-klub/
 
 ## 7. Dispositivos
 

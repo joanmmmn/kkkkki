@@ -8,11 +8,11 @@ Reseña de plataforma para SonorBooks Polska. Modelo: `es_models/elevenreader.vo
 - En `say`: «Ilewen Rider», «Ilewen Labs», «Ep Stor», «Gugl Plej», «ajfon/ajpad», «Kroma», «pe de ef», «Łord», «ilewen rider kropka i o», «sonorbooks kropka pe el», «Heninga Mankela», «Odibl».
 
 ### A01 · Gancho  (≈ 15 s)
-VO (pl): Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.
-SAY: Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To Ilewen Rider, aplikacja od Ilewen Labs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.
+VO (pl): Każdy tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.
+SAY: Każdy tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To Ilewen Rider, aplikacja od Ilewen Labs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.
 Pantalla: Texto que se subraya palabra a palabra mientras habla la voz; título «ElevenReader: czy warto płacić?»; etiquetas: Plan darmowy · Ultra · Polskie audiobooki · Drobny druk · Jak zacząć.
 Toma: 01_er_home (de 0,0 s a 4,0 s: cabecera de elevenreader.io) y 05_er_iconic (de 4,0 s a 8,0 s: tarjeta «Piotr Fronczewski™»). Si Joan graba la app, aquí va la lectura real de un PDF.
-ES: Este texto te lo puede leer una inteligencia artificial, incluso con la voz de Piotr Fronczewski. Es ElevenReader, la app de ElevenLabs. ¿Merece la pena pagar por ella? Hemos revisado el plan gratuito, Ultra, los audiolibros en polaco y la letra pequeña.
+ES: Cualquier texto te lo puede leer una inteligencia artificial, incluso con la voz de Piotr Fronczewski. Es ElevenReader, la app de ElevenLabs. ¿Merece la pena pagar por ella? Hemos revisado el plan gratuito, Ultra, los audiolibros en polaco y la letra pequeña.
 
 ### A02 · Czym jest ElevenReader  (≈ 18 s)
 VO (pl): ElevenReader czyta na głos twoje pliki, artykuły i strony, a do tego ma bibliotekę audiobooków. Stworzyło go ElevenLabs, firma dwóch Polaków założona w 2022 roku, a polska wersja aplikacji działa od kwietnia 2025 roku.
@@ -120,7 +120,7 @@ ES: Te das de baja donde lo compraste: en la web, avatar › Detalles de la cuen
 
 ### B06 · Cierre  (≈ 14 s)
 VO (pl): Wolisz audiobooki z lektorem? Na sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
-SAY: Wolisz audiobooki z lektorem? Na sonorbooks kropka pe el porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
+SAY: Wolisz audiobooki z lektorem? Na sonorbooks kropka pe el porównasz inne opcje – Audiotekę… Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
 Pantalla: «sonorbooks.pl» con la ficha de «Lalka» (Zbigniew Zapasiewicz) y sus opciones; frase de marca «Twoja następna historia już na ciebie czeka.» Sin aviso de afiliado.
 Toma: 15_sonorbooks_lalka (de 0,0 s a 8,0 s: ficha de «Lalka» en sonorbooks.pl con Audioteka Klub, compra suelta, Legimi y Empik Go) y 16_sonorbooks_platformy (de 0,0 s a 6,0 s). Cierre de marca SonorBooks.
 ES: ¿Prefieres audiolibros con narrador? En sonorbooks.pl comparas otras opciones (Audioteka, Empik Go, Legimi o Audible) y ves dónde escuchar un audiolibro y a qué precio. Tu próxima historia ya te está esperando.

@@ -10,7 +10,7 @@ export const piece: PLPiece = {
     logo: 'pl/audioteka/img/logo.svg', logoWhite: 'pl/audioteka/img/logo_white.svg', logoRatio: 27.92 / 119.919, tileBg: '#160829', tileLogoWhite: true,
     kicker: 'Recenzja Audioteki', music: 'pl/audioteka/music/bed.mp3',
     scenes: [
-      { id: 'A01', kind: 'hook', title: 'Audioteka:\nczy warto\npłacić?', hi: ['Audioteka:'], badge: 'Recenzja · 2026', rec: { clip: 'superprod', start: 0.2, holdAt: 14.0, url: 'audioteka.com/pl/katalog' }, promises: [
+      { id: 'A01', kind: 'hook', title: 'Audioteka:\nczy warto\npłacić?', hi: ['Audioteka:'], badge: 'Recenzja · 2026', rec: { clip: 'superprod', start: 0.2, holdAt: 14.0, url: 'audioteka.com/pl/katalog/superprodukcje-audioteki' }, promises: [
         { at: 'cennik', label: 'Cennik', icon: 'coin' }, { at: 'regulamin', label: 'Regulamin', icon: 'doc' }, { at: 'opinie', label: 'Opinie', icon: 'star' },
         { at: '14', label: '14 dni za darmo', sub: 'dla nowych klubowiczów', icon: 'gift', tone: 'good' },
       ] },
@@ -26,23 +26,23 @@ export const piece: PLPiece = {
       { id: 'A04', kind: 'rec', bump: 'Katalog i superprodukcje', kicker: 'audioteka.com', title: 'Katalog bez logowania', rec: { clip: 'katalog', start: 0.0, holdAt: 9.3, url: 'audioteka.com/pl/katalog' },
         marks: [{ at: 'Przelacz', x: 758, y: 468, w: 402, h: 48 }],
         tags: [{ at: 'logowania', label: 'Bez konta i logowania', icon: 'lock' }, { at: 'Wszystkie', label: '„Wszystkie”: cały sklep', icon: 'library' }, { at: 'Klub', label: '„Audioteka Klub”', sub: 'tylko tytuły z abonamentu', icon: 'check', tone: 'good' }] },
-      { id: 'A05', kind: 'rec', side: 'right', kicker: 'Przykład', title: '„Solaris” Lema', rec: { clip: 'solaris', start: 0.0, holdAt: 14.3, url: 'audioteka.com/pl/audiobook/solaris' },
+      { id: 'A05', kind: 'rec', side: 'right', kicker: 'Przykład', title: '„Solaris” Lema', rec: { clip: 'solaris', start: 0.0, holdAt: 10.5, url: 'audioteka.com/pl/audiobook/solaris-superprodukcja' },
         marks: [{ at: 'Robertem', until: 'siedem', x: 630, y: 350, w: 640, h: 34 }, { at: 'siedem', until: 'srednia', x: 630, y: 388, w: 145, h: 28 }, { at: 'srednia', until: 'znaczek', x: 540, y: 296, w: 178, h: 42 }, { at: 'znaczek', x: 1386, y: 226, w: 276, h: 262 }],
-        tags: [{ at: 'superprodukcja', label: 'Superprodukcja', icon: 'sparkle' }, { at: 'Robertem', label: 'Więckiewicz, Cielecka, Woronowicz', icon: 'mic' }, { at: 'siedem', label: '7 godz. 56 min', icon: 'clock' }, { at: 'srednia', label: 'Średnia ocen 4,8', icon: 'star' }, { at: 'znaczek', label: '„Dostępne w Klubie”', sub: 'czyli w abonamencie', icon: 'check', tone: 'good' }] },
-      { id: 'A06', kind: 'intro', kicker: 'Największy atut', rec: { clip: 'superprod', start: 5.4, holdAt: 14.0, url: 'audioteka.com/pl/katalog' },
-        cuts: [{ at: '700', rec: { clip: 'klub_korzysci', start: 2.6, url: 'klub.audioteka.com' } }, { at: 'Nowe', rec: { clip: 'klub_korzysci', start: 21.6, url: 'klub.audioteka.com' } }],
-        facts: [{ at: 'muzyka', label: 'Muzyka, efekty, aktorzy', sub: 'jak w kinie', icon: 'music' }, { at: '700', label: 'Blisko 700 tytułów', sub: 'tylko w Audiotece', icon: 'lock' }, { at: 'tygodnie', label: 'Premiery w Klubie', sub: 'tygodnie przed sklepem', icon: 'calendar' }],
+        tags: [{ at: 'superprodukcja', label: 'Superprodukcja', icon: 'sparkle' }, { at: 'Robertem', label: 'Więckiewicz, Cielecka, Woronowicz', icon: 'mic' }, { at: 'siedem', label: '7 h 56 min', icon: 'clock' }, { at: 'srednia', label: 'Średnia ocen 4,8', icon: 'star' }, { at: 'znaczek', label: '„Dostępne w Klubie”', sub: 'czyli w abonamencie', icon: 'check', tone: 'good' }] },
+      { id: 'A06', kind: 'intro', kicker: 'Największy atut', rec: { clip: 'superprod', start: 5.4, holdAt: 14.0, url: 'audioteka.com/pl/katalog/superprodukcje-audioteki' },
+        cuts: [{ at: '700', rec: { clip: 'klub_korzysci', start: 2.6, url: 'klub.audioteka.com' } }, { at: 'Klubowicze', rec: { clip: 'klub_korzysci', start: 21.6, url: 'klub.audioteka.com' } }],
+        facts: [{ at: 'muzyka', label: 'Muzyka, efekty, aktorzy', sub: 'jak w kinie', icon: 'music' }, { at: '700', label: 'Blisko 700 tytułów', sub: 'tylko w Audiotece', icon: 'lock' }, { at: 'tygodni', label: 'Premiery w Klubie', sub: 'wcześniej niż w sklepie', icon: 'calendar' }],
         big: { at: '200', value: 200, suffix: '+', label: 'superprodukcji i audioseriali' } },
       { id: 'A07', kind: 'rec', kicker: 'Poza abonamentem', title: 'Nie wszystko jest w Klubie', rec: { clip: 'klub_korzysci', start: 8.0, holdAt: 13.0, url: 'klub.audioteka.com' },
         marks: [{ at: 'Czesc', until: 'Klubowicze', x: 384, y: 418, w: 524, h: 66 }, { at: 'Klubowicze', until: 'kupione', x: 1312, y: 282, w: 246, h: 246, r: 123 }, { at: 'kupione', x: 384, y: 484, w: 480, h: 62 }],
         tags: [{ at: 'Czesc', label: 'Część tytułów trzeba kupić', sub: 'ze względów licencyjnych', icon: 'coin', tone: 'bad' }, { at: 'Klubowicze', label: 'Klubowicze płacą mniej', icon: 'card' }, { at: 'kupione', label: 'Kupione zostają na półce', sub: 'także po rezygnacji', icon: 'library', tone: 'good' }] },
       { id: 'A08', kind: 'features', bump: 'Aplikacja', kicker: 'W aplikacji', title: 'Co potrafi odtwarzacz?', items: [
-        { at: 'predkosc', label: 'Prędkość', sub: 'na Androidzie do 3×', icon: 'speed' }, { at: 'drzemke', label: 'Drzemka', sub: 'wyłącznik czasowy', icon: 'moon' },
+        { at: 'predkosc', label: 'Prędkość odtwarzania', icon: 'speed' }, { at: 'drzemke', label: 'Drzemka', sub: 'wyłącznik czasowy', icon: 'moon' },
         { at: 'offline', label: 'Offline', sub: 'pobierasz audiobooki', icon: 'download' }, { at: 'dwoch', label: '2 urządzenia', sub: 'słuchasz na jednym naraz', icon: 'phone' },
       ] },
       { id: 'A08S', kind: 'rec', side: 'right', kicker: 'Plan Smart', title: 'Limit godzin', rec: { clip: 'pomoc', start: 18.4, url: 'audioteka.com/pl/centrum-pomocy' },
         marks: [{ at: 'normalnej', until: 'niewykorzystane', x: 516, y: 314, w: 1150, h: 44 }, { at: 'niewykorzystane', x: 516, y: 436, w: 420, h: 26 }],
-        tags: [{ at: 'normalnej', label: 'Liczy się prędkość 1×', icon: 'speed' }, { at: 'niewykorzystane', label: 'Niewykorzystane przepadają', tone: 'bad' }] },
+        tags: [{ at: 'normalnej', label: 'Czas liczony przy 1×', icon: 'speed' }, { at: 'niewykorzystane', label: 'Niewykorzystane przepadają', tone: 'bad' }] },
       { id: 'A08B', kind: 'rec', kicker: 'Dla dzieci', title: 'Audioteka Kids', rec: { clip: 'kids', start: 2.0, url: 'klub.audioteka.com/audioteka-kids' },
         tags: [{ at: 'osobna', label: 'Osobna aplikacja', icon: 'kid' }, { at: 'cenie', label: 'W cenie Klubu', icon: 'check', tone: 'good' }, { at: 'jednym', label: '1 konto dziecka, 1 urządzenie', icon: 'phone' }, { at: 'Smart', label: 'W Planie Smart zużywa godziny', icon: 'clock', tone: 'bad' }] },
       { id: 'A09', kind: 'devices', items: [
@@ -55,14 +55,14 @@ export const piece: PLPiece = {
         likes: [{ at: 'lektorow', label: 'Lektorzy i głosy' }, { at: 'produkcje', label: 'Superprodukcje' }],
         dislikes: [{ at: 'doplaty', label: 'Dopłaty do wielu tytułów' }, { at: 'bledy', label: 'Błędy aplikacji', sub: 'np. CarPlay, Bluetooth' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Audioteka Klub', pros: [
-        { at: 'limitu', label: 'Bez limitu godzin', sub: 'w Planie Optymalnym' }, { at: 'superprodukcje', label: 'Superprodukcje i wyłączności' }, { at: '14', label: '14 dni na próbę', sub: 'dla nowych klubowiczów' }, { at: 'tanszy', label: 'Tańszy Plan Smart', sub: '20 godzin miesięcznie' },
+        { at: 'limitu', label: 'Bez limitu godzin', sub: 'w Planie Optymalnym' }, { at: 'superprodukcje', label: 'Superprodukcje i tytuły na wyłączność' }, { at: '14', label: '14 dni na próbę', sub: 'dla nowych klubowiczów' }, { at: 'tanszy', label: 'Tańszy Plan Smart', sub: '20 godzin miesięcznie' },
       ], cons: [
-        { at: 'tylko', label: 'Tylko audio, bez ebooków' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: ['tylko', 1], label: 'Klub tylko w aplikacji' }, { at: 'jednym', label: 'Jedno urządzenie naraz' },
+        { at: 'tylko', label: 'Tylko audio, bez e-booków' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: ['tylko', 1], label: 'Klub tylko w aplikacji' }, { at: 'jednym', label: 'Jedno urządzenie naraz' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Audioteka Klub:\nczy warto?', yes: [
         { at: 'duzo', label: 'Słuchasz dużo i po polsku', sub: 'Plan Optymalny bez limitu godzin' }, { at: 'mniej', label: 'Słuchasz mniej', sub: 'Plan Smart: 20 godzin miesięcznie' },
       ], no: [
-        { at: 'czytac', label: 'Chcesz też czytać ebooki', sub: 'Audioteka to tylko audio' },
+        { at: 'czytac', label: 'Chcesz też czytać e-booki', sub: 'Audioteka to tylko audio' },
       ], alts: { at: 'Legimi', names: ['Legimi', 'Empik Go'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'rec', bump: '14 dni za darmo', rec: { clip: 'klub_mobile', start: 0.3, mobile: true, url: 'klub.audioteka.com' },
         marks: [{ at: 'Nowi', until: 'miesiecznym', x: 64, y: 592, w: 288, h: 28 }, { at: 'miesiecznym', x: 55, y: 424, w: 320, h: 288, r: 18 }],

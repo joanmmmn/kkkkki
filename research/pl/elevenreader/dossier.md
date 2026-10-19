@@ -25,8 +25,10 @@ inglés y muestra dólares; la ayuda de ElevenLabs y su blog tienen versión pol
   («24 hours per day for your imports», a 1x; a más velocidad se gastan antes) · «200K+ premium audiobooks» con **«20 hours of premium
   titles each month»** · descargas offline · voces propias (Voice Design) · «Smart file imports – Skips headers, footers & filler text» ·
   soporte prioritario. Botón **«Start 3-day free trial»**.
-- La web no dice si al precio se suma el IVA polaco (el dossier español vio IVA añadido en el pago; no lo he podido comprobar para PL sin
-  cuenta). El vídeo da los precios de la web en dólares, tal como se ven.
+- Los precios de la web solo se han visto desde fuera de Polonia y sin pasar por el pago: el importe al pagar puede ser distinto. El vídeo
+  da los precios de la web en dólares, tal como se ven, con la nota «ceny w USD; kwota przy płatności może się różnić».
+- **Alta** ([elevenreader.io/reader/sign-up](https://elevenreader.io/reader/sign-up?source=homepage), 19/10/2026, en inglés): «Sign up with
+  Google», «Sign up with Apple» y «Sign up with email» (base de «Google, Apple albo e-mail» en B01).
 
 **App Store Polonia** ([ficha en polaco](https://apps.apple.com/pl/app/elevenreader-voice-reader/id6479373050?l=pl), «Zakupy w aplikacji»):
 **Ultra Monthly 39,00 zł · Ultra Annual 349,00 zł** (además: Plus Monthly 30,00 zł, Plus Annual 349,00 zł, 10 Hour Pack 20,00 zł, 20 Hour
@@ -123,7 +125,7 @@ Reembolsos: por Apple/Google si se compró allí; por support@elevenlabs.io si f
 
 ## 11. Notas legales del vídeo
 
-- Precios: web en USD (como se ven desde fuera de Polonia; puede haber impuestos en el pago) y App Store en zł; siempre con «stan na
+- Precios: web en USD (vistos desde fuera de Polonia y sin pasar por el pago; el importe al pagar puede ser distinto) y App Store en zł; siempre con «stan na
   październik 2026».
 - Fronczewski: es una voz IA licenciada por ElevenLabs («Iconic Voices»); el vídeo no insinúa que el actor recomiende la app ni que lea
   personalmente los textos. No usar su imagen fuera de lo que salga en las tomas de las páginas oficiales.

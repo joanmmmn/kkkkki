@@ -42,8 +42,11 @@ def parse_spec(slug):
         extra = re.search(r"extra:\s*(\d+)", line)
         lead = re.search(r"lead:\s*([\d.]+)", line)
         audio = re.search(r"audio:\s*\{[^}]*dur:\s*([\d.]+)", line)
+        # Subtítulo de una escena con audio real y sin locución: `caption: '…'` en la misma línea.
+        caption = re.search(r"caption:\s*'([^']*)'", line)
         scenes.append({'id': m.group(1), 'kind': kind.group(1) if kind else 'rec', 'bump': bump.group(1) if bump else None,
-                       'extra': int(extra.group(1)) if extra else None, 'lead': float(lead.group(1)) if lead else None, 'audio': float(audio.group(1)) if audio else 0.0})
+                       'extra': int(extra.group(1)) if extra else None, 'lead': float(lead.group(1)) if lead else None, 'audio': float(audio.group(1)) if audio else 0.0,
+                       'caption': caption.group(1) if caption else None})
     chapters = re.findall(r"\{\s*label:\s*'([^']*)',\s*from:\s*'([A-Z]\d+[A-Z]?)'\s*\}", src)
     return scenes, chapters
 
@@ -155,7 +158,13 @@ def srt(slug, scenes, vos, max_chars=42):
     """Subtítulos de dos líneas (≤ max_chars cada una), por frases, sin trozos sueltos muy cortos."""
     groups = []  # listas de palabras con tiempos absolutos
     for s in scenes:
-        item = vos[s['id']]
+        if s.get('caption') and s.get('audio'):
+            a = s['start'] / FPS + 0.05
+            groups.append([{'w': s['caption'], 's': a, 'e': a + s['audio'] - 0.2}])
+            continue
+        item = vos.get(s['id'])
+        if not item:
+            continue
         ws = glue(timed_words(item))
         if not ws or ws[0]['s'] is None:
             continue

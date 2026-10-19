@@ -1,112 +1,112 @@
 {
  "id": "A01",
- "hash": "83b3f09b8a9e",
- "text": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
- "duration": 14.48,
+ "hash": "9a26fdb6e0e2",
+ "text": "Każdy tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
+ "duration": 14.56,
  "words": [
   {
-   "w": "Ten",
+   "w": "Każdy",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.32
   },
   {
    "w": "tekst",
-   "s": 0.24,
-   "e": 0.64
+   "s": 0.4,
+   "e": 0.72
   },
   {
    "w": "może",
-   "s": 0.72,
-   "e": 0.88
+   "s": 0.8,
+   "e": 0.96
   },
   {
    "w": "ci",
-   "s": 0.96,
-   "e": 1.04
+   "s": 1.04,
+   "e": 1.12
   },
   {
    "w": "przeczytać",
-   "s": 1.08,
-   "e": 1.52
+   "s": 1.2,
+   "e": 1.6
   },
   {
    "w": "sztuczna",
-   "s": 1.573,
-   "e": 1.88
+   "s": 1.68,
+   "e": 2.0
   },
   {
    "w": "inteligencja",
-   "s": 1.92,
-   "e": 2.64
+   "s": 2.08,
+   "e": 2.72
   },
   {
    "w": "–",
-   "s": 2.88,
-   "e": 2.96
+   "s": 3.04,
+   "e": 3.08
   },
   {
    "w": "nawet",
-   "s": 3.04,
-   "e": 3.28
+   "s": 3.12,
+   "e": 3.44
   },
   {
    "w": "głosem",
-   "s": 3.36,
-   "e": 3.68
+   "s": 3.52,
+   "e": 3.8
   },
   {
    "w": "Piotra",
-   "s": 3.72,
-   "e": 3.92
+   "s": 3.84,
+   "e": 4.16
   },
   {
    "w": "Fronczewskiego.",
-   "s": 4.0,
-   "e": 4.72
+   "s": 4.2,
+   "e": 4.96
   },
   {
    "w": "To",
-   "s": 5.12,
-   "e": 5.28
+   "s": 5.36,
+   "e": 5.52
   },
   {
    "w": "Ilewen",
-   "s": 5.44,
-   "e": 5.84
+   "s": 5.68,
+   "e": 6.0
   },
   {
    "w": "Rider,",
-   "s": 5.92,
-   "e": 6.56
+   "s": 6.08,
+   "e": 6.72
   },
   {
    "w": "aplikacja",
-   "s": 6.64,
-   "e": 7.12
-  },
-  {
-   "w": "od",
-   "s": 7.2,
+   "s": 6.8,
    "e": 7.36
   },
   {
-   "w": "Ilewen",
+   "w": "od",
    "s": 7.44,
-   "e": 7.84
+   "e": 7.6
+  },
+  {
+   "w": "Ilewen",
+   "s": 7.68,
+   "e": 8.0
   },
   {
    "w": "Labs.",
-   "s": 7.88,
-   "e": 8.4
+   "s": 8.04,
+   "e": 8.56
   },
   {
    "w": "Czy",
-   "s": 8.56,
-   "e": 8.72
+   "s": 8.72,
+   "e": 8.8
   },
   {
    "w": "warto",
-   "s": 8.8,
+   "s": 8.88,
    "e": 9.12
   },
   {
@@ -126,49 +126,49 @@
   },
   {
    "w": "Sprawdziliśmy",
-   "s": 10.24,
-   "e": 10.8
+   "s": 10.32,
+   "e": 10.88
   },
   {
    "w": "plan",
-   "s": 10.88,
-   "e": 11.04
+   "s": 10.96,
+   "e": 11.12
   },
   {
    "w": "darmowy,",
-   "s": 11.12,
-   "e": 11.84
+   "s": 11.2,
+   "e": 11.8
   },
   {
    "w": "Ultra,",
-   "s": 12.04,
-   "e": 12.4
+   "s": 11.92,
+   "e": 12.48
   },
   {
    "w": "polskie",
-   "s": 12.44,
-   "e": 12.72
+   "s": 12.52,
+   "e": 12.8
   },
   {
    "w": "audiobooki",
-   "s": 12.8,
-   "e": 13.36
+   "s": 12.88,
+   "e": 13.44
   },
   {
    "w": "i",
-   "s": 13.52,
-   "e": 13.6
+   "s": 13.6,
+   "e": 13.68
   },
   {
    "w": "drobny",
-   "s": 13.68,
-   "e": 14.0
+   "s": 13.76,
+   "e": 14.08
   },
   {
    "w": "druk.",
-   "s": 14.04,
-   "e": 14.48
+   "s": 14.12,
+   "e": 14.56
   }
  ],
- "speechEnd": 14.48
+ "speechEnd": 14.56
 }
