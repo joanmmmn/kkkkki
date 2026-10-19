@@ -4,15 +4,15 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 720,
- "duration": 12.368,
- "offset": 0.013,
+ "frames": 123,
+ "duration": 12.492,
+ "offset": 0.218,
  "marks": {
-  "top": 0.39,
-  "cards": 3.028,
-  "czytasz": 5.543,
-  "niewyk": 8.85,
-  "end": 12.368
+  "top": 0.356,
+  "cards": 3.089,
+  "czytasz": 5.635,
+  "niewyk": 8.957,
+  "end": 12.492
  },
  "events": []
 }

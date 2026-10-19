@@ -1,0 +1,204 @@
+{
+ "total_frames": 13308,
+ "seconds": 266.16,
+ "chapters": [
+  {
+   "t": 15.1,
+   "label": "Czym jest ElevenReader"
+  },
+  {
+   "t": 32.12,
+   "label": "Cennik: Free i Ultra"
+  },
+  {
+   "t": 49.06,
+   "label": "Twoje pliki i teksty"
+  },
+  {
+   "t": 66.94,
+   "label": "Głosy i Piotr Fronczewski"
+  },
+  {
+   "t": 81.04,
+   "label": "Polskie audiobooki"
+  },
+  {
+   "t": 99.44,
+   "label": "Limit 20 godzin premium"
+  },
+  {
+   "t": 112.6,
+   "label": "Odtwarzacz"
+  },
+  {
+   "t": 126.62,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 137.1,
+   "label": "Opinie"
+  },
+  {
+   "t": 158.48,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 175.1,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 192.14,
+   "label": "Jak zacząć za darmo"
+  },
+  {
+   "t": 203.92,
+   "label": "Jak liczą się godziny"
+  },
+  {
+   "t": 217.26,
+   "label": "Ultra: 3 dni za darmo na stronie"
+  },
+  {
+   "t": 229.62,
+   "label": "Jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 769,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 769,
+   "dur": 851,
+   "lead": 26,
+   "bump": "Co to jest?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1620,
+   "dur": 847,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2467,
+   "dur": 880,
+   "lead": 26,
+   "bump": "Co potrafi?"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3347,
+   "dur": 719,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "rec",
+   "start": 4066,
+   "dur": 906,
+   "lead": 26,
+   "bump": "Polskie audiobooki"
+  },
+  {
+   "id": "A07",
+   "kind": "stat",
+   "start": 4972,
+   "dur": 672,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "features",
+   "start": 5644,
+   "dur": 687,
+   "lead": 26,
+   "bump": "Odtwarzacz"
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6331,
+   "dur": 538,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 6869,
+   "dur": 1069,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 7938,
+   "dur": 831,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 8769,
+   "dur": 852,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "steps",
+   "start": 9621,
+   "dur": 575,
+   "lead": 26,
+   "bump": "Jak zacząć"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 10196,
+   "dur": 667,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "rec",
+   "start": 10863,
+   "dur": 618,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11481,
+   "dur": 766,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12247,
+   "dur": 1061,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

@@ -53,8 +53,8 @@ export const piece: PLPiece = {
         { at: 'zakladki', label: 'Zakładki', sub: 'z notatkami', icon: 'bookmark' }, { at: 'pobierzesz', label: 'Offline', sub: 'pobierz książkę', icon: 'download' },
         { at: 'ponad', label: 'Synchrobooki', sub: '2500+ po polsku: słuchasz i czytasz naraz', icon: 'sync' },
       ] },
-      { id: 'A08', kind: 'rec', kicker: 'Pytania i odpowiedzi', title: 'Jak liczą się godziny?', rec: { clip: 'faq_godziny', start: 1.0 },
-        marks: [{ at: 'normalnego', x: 575, y: 305, w: 760, h: 150 }],
+      { id: 'A08', kind: 'rec', kicker: 'Pytania i odpowiedzi', title: 'Jak liczą się godziny?', rec: { clip: 'faq_godziny', start: 1.3 },
+        marks: [{ at: 'normalnego', x: 572, y: 330, w: 766, h: 148 }], zooms: [{ at: 'normalnego', zoom: 1.7, x: 955, y: 390 }],
         tags: [
           { at: 'normalnego', label: 'Liczy się normalne tempo', icon: 'speed' }, { at: 'dziesieciogodzinna', label: 'Książka 10 h = 10 h z pakietu', sub: 'nawet gdy słuchasz na 2×', icon: 'clock' },
           { at: 'Czytanie', label: 'E-booki też zużywają godziny', icon: 'book' }, { at: 'niewykorzystane', label: 'Niewykorzystane przepadają', tone: 'bad' },

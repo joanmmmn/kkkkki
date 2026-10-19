@@ -26,7 +26,7 @@ export const useAt = (c: SceneCtx) => (cue: Cue) => cueFrame(c, cue);
 
 // ——— Grabaciones ———
 type RecInfo = { duration: number; viewport: [number, number]; cursor?: { t: number; x: number; y: number; down?: boolean }[] };
-const REC = recIndex as Record<string, RecInfo>;
+const REC = recIndex as unknown as Record<string, RecInfo>;
 // «@common/<toma>»: tomas compartidas por todas las piezas (public/pl/common/rec/), como las de sonorbooks.pl.
 const split = (slug: string, clip: string): [string, string] => (clip.startsWith('@common/') ? ['common', clip.slice(8)] : [slug, clip]);
 export const recInfo = (slug: string, clip: string): RecInfo | undefined => { const [a, b] = split(slug, clip); return REC[`${a}/${b}`]; };
@@ -196,7 +196,7 @@ export const SceneHead: React.FC<{ c: SceneCtx; kicker?: string; title?: string;
           <span style={{ width: 12, height: 12, borderRadius: 6, background: c.spec.color }} />{kicker}
         </div>
       )}
-      {title && <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, letterSpacing: -2, lineHeight: 1.05, color: color.ink, marginTop: 8 }}>{title}</div>}
+      {title && <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 74, letterSpacing: -2.5, lineHeight: 1.05, color: color.ink, marginTop: 8 }}>{title}</div>}
     </div>
   );
 };
@@ -229,15 +229,38 @@ export const Stars: React.FC<{ value: number; size: number; fill?: number }> = (
 );
 
 // Tarjeta blanca con muelle de entrada.
-export const PopCard: React.FC<{ at: number; children: React.ReactNode; style?: React.CSSProperties; from?: 'up' | 'left' | 'right' }> = ({ at, children, style, from = 'up' }) => {
+// `ghostAt`: desde ese fotograma la tarjeta ya está en su sitio, apagada (gris y translúcida), y se enciende con su palabra (`at`):
+// así la escena no empieza vacía y se ve lo que va a llegar.
+export const PopCard: React.FC<{ at: number; ghostAt?: number; children: React.ReactNode; style?: React.CSSProperties; from?: 'up' | 'left' | 'right' }> = ({ at, ghostAt, children, style, from = 'up' }) => {
   const frame = useCurrentFrame();
   const p = useSpring(at, 15, 170);
-  if (frame < at - 1) return <div style={{ ...style, visibility: 'hidden' }}>{children}</div>;
+  const gs = useSpring(ghostAt ?? 0, 18, 150);
+  const g = ghostAt !== undefined ? gs : 0;
   const dx = from === 'left' ? -60 : from === 'right' ? 60 : 0;
   const dy = from === 'up' ? 50 : 0;
+  if (frame < at - 1) {
+    if (ghostAt === undefined || frame < ghostAt - 1) return <div style={{ ...style, visibility: 'hidden' }}>{children}</div>;
+    return (
+      <div style={{ background: '#fff', borderRadius: 28, boxShadow: shadow.soft, border: `1px solid ${color.line}`, opacity: 0.42 * Math.min(1, g * 1.3),
+        transform: `translateY(${(1 - g) * 30}px) scale(0.96)`, filter: 'grayscale(1)', ...style }}>{children}</div>
+    );
+  }
+  const flash = interpolate(frame, [at, at + 4, at + 16], [0, 1, 0], { ...clamp, easing: easeOut });
   return (
-    <div style={{ background: '#fff', borderRadius: 28, boxShadow: shadow.card, border: `1px solid ${color.line}`, opacity: Math.min(1, p * 1.4),
-      transform: `translate(${(1 - p) * dx}px, ${(1 - p) * dy}px) scale(${0.92 + 0.08 * p})`, ...style }}>{children}</div>
+    <div style={{ background: '#fff', borderRadius: 28, boxShadow: flash > 0.01 ? `${shadow.card}, 0 0 0 ${(6 * flash).toFixed(1)}px rgba(255,202,5,0.45)` : shadow.card, border: `1px solid ${color.line}`,
+      opacity: ghostAt !== undefined ? 1 : Math.min(1, p * 1.4),
+      transform: ghostAt !== undefined ? `scale(${0.96 + 0.04 * p + 0.025 * flash})` : `translate(${(1 - p) * dx}px, ${(1 - p) * dy}px) scale(${0.92 + 0.08 * p})`, ...style }}>{children}</div>
+  );
+};
+
+// Marca de agua: el icono de la plataforma, enorme y muy suave, que deriva despacio en una esquina (da profundidad a las escenas sin toma).
+export const Watermark: React.FC<{ spec: PlatformSpec; side?: 'right' | 'left' }> = ({ spec, side = 'right' }) => {
+  const frame = useCurrentFrame();
+  const t = frame / 50;
+  return (
+    <div style={{ position: 'absolute', [side]: -170 + Math.sin(t * 0.15) * 18, bottom: -230 + Math.cos(t * 0.12) * 14, opacity: 0.07, transform: `rotate(${-14 + Math.sin(t * 0.1) * 2}deg)`, pointerEvents: 'none' }}>
+      <PlatformTile spec={spec} size={640} style={{ boxShadow: 'none' }} />
+    </div>
   );
 };
 
