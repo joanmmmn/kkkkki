@@ -25,22 +25,22 @@ artykuły i strony, a do tego ma bibliotekę
 6
 00:00:21,340 --> 00:00:27,700
 audiobooków. Stworzyło go ElevenLabs,
-firma dwóch Polaków założona w 2022 roku,
+firma dwóch Polaków założona w 2022 roku,
 
 7
 00:00:27,740 --> 00:00:32,470
 a polska wersja aplikacji
-działa od kwietnia 2025 roku.
+działa od kwietnia 2025 roku.
 
 8
 00:00:33,000 --> 00:00:36,960
-Plan darmowy daje 10 godzin
+Plan darmowy daje 10 godzin
 zamiany tekstu na mowę miesięcznie.
 
 9
 00:00:37,000 --> 00:00:43,280
-Ultra na stronie to 11 dolarów miesięcznie
-albo 99 rocznie, z 3 dniami za darmo,
+Ultra na stronie to 11 dolarów miesięcznie
+albo 99 rocznie, z 3 dniami za darmo,
 
 10
 00:00:43,320 --> 00:00:49,410
@@ -50,7 +50,7 @@ miesięcznie albo 349 zł rocznie.
 11
 00:00:49,940 --> 00:00:58,340
 Największa siła to twoje teksty: pliki
-PDF, EPUB, Word, TXT i HTML do 500 stron,
+PDF, EPUB, Word, TXT i HTML do 500 stron,
 
 12
 00:00:58,380 --> 00:01:00,940
@@ -59,7 +59,7 @@ linki do artykułów albo zdjęcia kartek.
 13
 00:01:00,980 --> 00:01:06,670
 W Ultra import pomija nagłówki i stopki,
-a limit to 24 godziny audio dziennie.
+a limit to 24 godziny audio dziennie.
 
 14
 00:01:07,160 --> 00:01:11,840
@@ -105,18 +105,18 @@ kryminały Henninga Mankella po polsku.
 
 23
 00:01:39,660 --> 00:01:44,580
-Uwaga na limit: Ultra daje 20 godzin
+Uwaga na limit: Ultra daje 20 godzin
 tytułów premium miesięcznie, a „Lalka”
 
 24
 00:01:44,620 --> 00:01:48,860
-z lektorami trwa ponad 36
-godzin – to prawie 2 miesiące.
+z lektorami trwa ponad 36 godzin
+– to prawie 2 miesiące.
 
 25
 00:01:48,900 --> 00:01:52,870
 Można ją też kupić osobno,
-na stronie, za 24 dolary.
+na stronie, za 24 dolary.
 
 26
 00:01:53,480 --> 00:01:56,773
@@ -125,7 +125,7 @@ podświetla się słowo po słowie.
 
 27
 00:01:56,813 --> 00:02:01,227
-Prędkość podkręcisz do 4 razy,
+Prędkość podkręcisz do 4 razy,
 masz wyłącznik czasowy i zakładki.
 
 28
@@ -154,12 +154,12 @@ i użytkownicy na to narzekają.
 33
 00:02:17,980 --> 00:02:22,870
 W Google Play ElevenReader
-ma 4,6 przy prawie 70 tys.
+ma 4,6 przy prawie 70 tys.
 
 34
 00:02:23,020 --> 00:02:28,633
 opinii, a w polskim App
-Storze 4,7 przy 704 ocenach.
+Storze 4,7 przy 704 ocenach.
 
 35
 00:02:28,673 --> 00:02:32,633
@@ -182,12 +182,12 @@ zamienisz w audio, darmowa polska klasyka
 
 39
 00:02:45,200 --> 00:02:47,667
-i 10 godzin miesięcznie gratis.
+i 10 godzin miesięcznie gratis.
 
 40
 00:02:47,707 --> 00:02:52,200
 Minusy: strona po angielsku i w dolarach,
-tylko 20 godzin premium, bez
+tylko 20 godzin premium, bez
 
 41
 00:02:52,240 --> 00:02:55,370

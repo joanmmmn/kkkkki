@@ -46,9 +46,9 @@ export const piece: PLPiece = {
         marks: [
           { at: 'filtrem', until: 'Remigiusza', x: 12, y: 438, w: 84, h: 28 },
           { at: 'Remigiusza', until: 'Joanny', x: 694, y: 586, w: 256, h: 290 }, { at: 'Kraszewski', until: 'Sporo', x: 1240, y: 586, w: 256, h: 290 },
-          { at: 'Sporo', x: 500, y: 54, w: 660, h: 56 },
+          { at: 'Sporo', x: 504, y: 54, w: 652, h: 56 },
         ],
-        zooms: [{ at: 'zakladke', zoom: 1.7, x: 420, y: 360 }, { at: 'Remigiusza', zoom: 1.25, x: 960, y: 620 }, { at: 'Sporo', zoom: 1.8, x: 830, y: 220 }],
+        zooms: [{ at: 'zakladke', zoom: 1.7, x: 420, y: 360 }, { at: 'Remigiusza', zoom: 1.25, x: 960, y: 620 }, { at: 'Sporo', zoom: 3, x: 830, y: 180 }],
         tags: [
           { at: 'filtrem', label: 'Filtr: Język → Polski', icon: 'search' },
           { at: 'Remigiusza', label: 'Remigiusz Mróz', sub: 'kryminały', icon: 'book' },
@@ -56,7 +56,7 @@ export const piece: PLPiece = {
           { at: 'Sienkiewicz', label: 'Sienkiewicz · Kraszewski', sub: 'klasyka', icon: 'library' },
           { at: 'Sporo', label: 'Dużo domeny publicznej', sub: 'Świat Czytników, 15.07.2026', tone: 'bad' },
         ] },
-      { id: 'A06', kind: 'stat', kicker: 'Zakupy pojedyncze', title: 'Nie jest tanio', at: 'piecdziesiat', value: '54 zł', label: 'za audiobook Siembiedy lub Mossa (lipiec 2026)', tags: [
+      { id: 'A06', kind: 'stat', kicker: 'Zakupy pojedyncze', title: 'Nie jest tanio', at: 'tanio', value: '54 zł', label: 'za audiobook Siembiedy lub Mossa (lipiec 2026)', tags: [
         { at: 'lipcu', label: 'Świat Czytników, 15.07.2026', icon: 'doc' }, { at: 'Czlonkowie', label: 'Premium: zniżki i wyprzedaże', icon: 'coin', tone: 'good' },
       ] },
       { id: 'A07', kind: 'features', bump: 'Aplikacja', kicker: 'Odtwarzacz', title: 'Co potrafi aplikacja?', cols: 3, items: [
@@ -64,11 +64,15 @@ export const piece: PLPiece = {
         { at: 'tryb', label: 'Tryb samochodowy', sub: 'duże przyciski', icon: 'car' }, { at: 'pobieranie', label: 'Offline', sub: 'pobierz i słuchaj', icon: 'download' },
         { at: 'profil', label: 'Profil dziecięcy', sub: 'z tytułami, które udostępnisz', icon: 'kid' },
       ] },
-      { id: 'A08', kind: 'rec', kicker: 'Minus na start', title: 'Niepełne tłumaczenie', rec: { clip: 'gplay', start: 0.3, url: 'play.google.com' },
-        marks: [{ at: 'recenzjach', until: 'angielskiego', x: 302, y: 254, w: 120, h: 56 }, { at: 'angielskiego', x: 304, y: 846, w: 876, h: 130 }],
-        zooms: [{ at: 'recenzjach', zoom: 1.7, x: 560, y: 330 }, { at: 'angielskiego', zoom: 1.5, x: 740, y: 860 }],
+      { id: 'A08', kind: 'rec', kicker: 'Minus na start', title: 'Niepełne tłumaczenie', rec: { clip: 'swiat_de', start: 0.3, url: 'swiatczytnikow.pl' },
+        cuts: [{ at: 'recenzjach', rec: { clip: 'gplay', start: 0.3, url: 'play.google.com' } }],
+        marks: [
+          { at: 'niemiecku', until: 'recenzjach', x: 504, y: 296, w: 652, h: 74 },
+          { at: 'recenzjach', until: 'angielskiego', x: 302, y: 254, w: 120, h: 56 }, { at: 'angielskiego', x: 304, y: 846, w: 876, h: 130 },
+        ],
+        zooms: [{ at: 'Minus', zoom: 3, x: 830, y: 470 }, { at: 'recenzjach', zoom: 1.7, x: 560, y: 330 }, { at: 'angielskiego', zoom: 1.5, x: 740, y: 860 }],
         tags: [
-          { at: 'niemiecku', label: 'Strona: część po niemiecku', tone: 'bad' }, { at: 'recenzjach', label: 'Recenzje w Google Play', sub: 'lipiec–wrzesień 2026', icon: 'doc' },
+          { at: 'niemiecku', label: 'audible.de: część po niemiecku', sub: 'Świat Czytników, 15.07.2026', tone: 'bad' }, { at: 'recenzjach', label: 'Recenzje w Google Play', sub: 'lipiec–wrzesień 2026', icon: 'doc' },
           { at: 'mieszanke', label: 'Aplikacja: PL + DE + EN', tone: 'bad' }, { at: 'brak', label: 'Brak filtra „polski”', tone: 'bad' },
         ] },
       { id: 'A09', kind: 'devices', items: [
@@ -79,9 +83,9 @@ export const piece: PLPiece = {
       { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Ep', store: 'apple', rating: 4.8, count: '4413 ocen (Polska)' }, { at: 'Gugl', store: 'google', rating: 4.1, count: 'ocena w Polsce' }],
         likes: [{ at: 'wybor', label: 'Wybór książek' }, { at: 'odtwarzacz', label: 'Wygodny odtwarzacz' }],
         dislikes: [{ at: 'cene', label: 'Cena za 1 książkę miesięcznie' }, { at: 'tlumaczenie', label: 'Niepełne tłumaczenie' }],
-        notes: [{ at: 'sprzed', label: 'App Store: recenzje sprzed startu', sub: 'stan na 19.10.2026', icon: 'calendar' }] },
+        notes: [{ at: 'srednia', label: 'Ocena całej aplikacji', sub: 'stan na 19.10.2026', icon: 'star' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Audible w Polsce', pros: [
-        { at: '30', label: '30 dni za darmo', sub: 'dla nowych członków' }, { at: 'wlasnosc', label: 'Premium: książka na własność' }, { at: 'angielsku', label: 'Ogromny wybór po angielsku' }, { at: 'rozbudowany', label: 'Rozbudowany odtwarzacz' },
+        { at: '30', label: '30 dni za darmo', sub: 'dla nowych członków' }, { at: 'wlasnosc', label: 'Premium: książka na własność' }, { at: 'ogromna', label: 'Ogromna kolekcja', sub: 'ponad milion tytułów' }, { at: 'rozbudowany', label: 'Rozbudowany odtwarzacz' },
       ], cons: [
         { at: 'maly', label: 'Mały polski katalog' }, { at: 'Standardzie', label: 'Standard: 1 książka miesięcznie' }, { at: 'tlumaczenie', label: 'Niepełne tłumaczenie' }, { at: 'brak', label: 'Bez e-booków i planu rodzinnego' },
       ] },
@@ -91,8 +95,8 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'polskich', label: 'Szukasz głównie polskich tytułów', sub: 'na razie mały wybór' },
       ], alts: { at: 'porownaj', names: ['Audioteka Klub', 'Empik Go', 'Legimi'], label: 'Porównaj z:' } },
-      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Za darmo na start', at: '30', value: '30 dni', label: 'za darmo dla nowych członków', tags: [
-        { at: 'obu', label: 'Standard i Premium', icon: 'check' }, { at: 'kredyt', label: 'Premium: 1 kredyt', sub: 'już w okresie próbnym', icon: 'gift' },
+      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Za darmo na start', at: 'darmo', value: '30 dni', label: 'za darmo dla nowych członków', tags: [
+        { at: 'obu', label: 'Standard i Premium', icon: 'check' }, { at: 'kredyt', label: 'Premium: 1 kredyt', sub: 'w okresie próbnym', icon: 'gift' },
       ] },
       { id: 'B02', kind: 'steps', kicker: 'Jak zacząć', title: 'Zapis na Amazon.pl', rec: { clip: 'plany', start: 1.4 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na Amazon.pl', sub: 'zakładka Audiobooki Audible' }, { at: 'Wyprobuj', title: 'Wypróbuj Standard albo Premium' },
@@ -108,7 +112,7 @@ export const piece: PLPiece = {
         ] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', steps: [
         { at: 'Zrezygnuj', title: 'Zrezygnuj przed końcem 30 dni', sub: 'wtedy nie zapłacisz' }, { at: 'Anuluj', title: 'audible.de › „Anuluj subskrypcję”', sub: 'link na samym dole strony' },
-        { at: 'kupiles', title: 'Kupione w App Storze lub Google Play?', sub: 'anulujesz w sklepie' },
+        { at: 'Abonament', title: 'Abonament z App Store’a lub Google Play?', sub: 'anulujesz go w sklepie' },
       ] },
       { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Najpierw wykorzystaj kredyt', rec: { clip: 'faq', start: 4.0, holdAt: 8.9 },
         marks: [{ at: 'niewykorzystane', until: 'ksiazka', x: 370, y: 362, w: 650, h: 50 }, { at: 'ksiazka', x: 370, y: 318, w: 650, h: 50 }],

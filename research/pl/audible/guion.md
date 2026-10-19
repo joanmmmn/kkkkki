@@ -1,6 +1,6 @@
 # Audible w Polsce · recenzja (SonorBooks Polska) · guion v1 (19/10/2026)
 
-> Montaje (19/10, 16:50): A10 y B03 dicen «App Storze» (locativo) y B06 «Na sonorbooks.pl» (no «W»), según los añadidos del brief. El resto de la locución, igual.
+> Montaje (19/10, 16:50): A10 y B03 dicen «App Storze» (locativo) y B06 «Na sonorbooks.pl» (no «W»), según los añadidos del brief. Tras la revisión independiente (19/10, noche) cambian también A05 («Sporo z nich to jednak…»), A10 (media de la app, sin «recenzje sprzed startu»), A11 («ogromna kolekcja: ponad milion tytułów»), A12 («porównaj Audible z…»), B01 («a w Premium dostają też kredyt…»), B04 («Abonament z App Store’a albo Google Play anulujesz tam») y B06 («…oraz sprawdzisz…»). El texto definitivo está en `video/public/pl/audible/vo/vo.json`.
 
 - Modelo: reseña española de Audible (`es_models/audible.guion.md`), adaptada a Polonia con datos oficiales de hoy.
 - Locución: 3.998 caracteres de `say` → ≈ 4:18 a 15,5 car./s. Escenas e IDs en `vo.json`.
