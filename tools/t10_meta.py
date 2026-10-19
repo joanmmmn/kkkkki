@@ -111,50 +111,96 @@ def fits2(words, m=MAXC):
     return any(len(' '.join(words[:k])) <= m and len(' '.join(words[k:])) <= m for k in range(1, len(words)))
 
 
-def groups_for(ws):
-    """Trozos de hasta dos líneas, por frases, sin trozos sueltos muy cortos (lógica de tools/pl_meta.py)."""
-    gs, line = [], []
-    for k, w in enumerate(ws):
-        cand = [x['w'] for x in line] + [w['w']]
-        if line and (not fits2(cand) or (len(' '.join(cand)) > MAXC and ends_sentence(line[-1]['w'], ':'))):
-            # mejor cortar tras una coma o dos puntos cercanos que en mitad de una frase; y nunca dentro de un nombre («Nowym | Jorku»)
-            cut = len(line)
-            for i in range(len(line) - 1, 0, -1):
-                tail = ' '.join(x['w'] for x in line[i:])
-                if len(tail) > 26:
-                    break
-                if line[i - 1]['w'][-1:] in ',:;–' or line[i - 1]['w'] in ('–',):
-                    cut = i
-                    break
-            if cut == len(line) and line[-1]['w'][:1].isupper() and w['w'][:1].isupper() and line[-1]['w'][-1:].isalpha() and len(line) > 1:
-                cut = len(line) - 1
-            gs.append(line[:cut]); line = line[cut:]
-        line.append(w)
-        if ends_sentence(w['w']) and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
-            gs.append(line); line = []
-    if line:
-        gs.append(line)
-    k = 1
-    while k < len(gs):
-        cur, prev = gs[k], gs[k - 1]
-        if len(' '.join(x['w'] for x in cur)) < 14:
-            if fits2([x['w'] for x in prev + cur]):
-                gs[k - 1] = prev + cur; del gs[k]; continue
-            while len(prev) > 1 and len(' '.join(x['w'] for x in cur)) < 14 and fits2([x['w'] for x in [prev[-1]] + cur]) and not ends_sentence(prev[-2]['w']):
-                cur.insert(0, prev.pop())
-        k += 1
-    return gs
+# Palabras tras las que no se corta un subtítulo ni una línea (preposiciones, conjunciones, partículas):
+# «nominowana do | Nagrody Zajdla», «i ponad | pięćdziesięcioma», «nawet | za darmo».
+NOCUT = {'do', 'od', 'na', 'za', 'po', 'pod', 'nad', 'przed', 'przez', 'przy', 'dla', 'bez', 'ku', 'we', 'ze', 'oraz', 'ani', 'albo',
+         'lub', 'czy', 'że', 'żeby', 'który', 'która', 'które', 'którego', 'jak', 'gdy', 'kiedy', 'co', 'nie', 'ponad', 'nawet', 'tylko',
+         'tę', 'ten', 'ta', 'to', 'tym', 'tego', 'jego', 'jej', 'ich', 'swój', 'swoje', 'pewien', 'jedno', 'jedna', 'jeden', 'sam',
+         'tak', 'aż', 'coraz', 'ten', 'mu', 'go', 'tu', 'już', 'jeszcze', 'wciąż', 'by', 'tylu', 'niej', 'nim', 'je'}
 
 
-def split_penalty(words, k):
-    """No partir un título entre comillas («„Jak sprzedać nawiedzony | dom”») ni un nombre propio («Edgar Allan | Poe»)."""
-    left, l, r = ' '.join(words[:k]), words[k - 1], words[k]
-    pen = 0
+def last_tok(w):
+    return w.split('\u00a0')[-1].split(' ')[-1]
+
+
+def cut_cost(words, k):
+    """Coste de cortar entre words[k-1] y words[k] (vale para subtítulos y para líneas)."""
+    l, r = words[k - 1], words[k]
+    lt = last_tok(l)
+    if ends_sentence(l):
+        c = 0
+    elif lt[-1:] in ',:;' or r in ('–',) or lt == '–':
+        c = 3
+    elif lt[-1:] == '”':
+        c = 8  # tras un título entre comillas
+    else:
+        c = 12
+        if re.search(r'(ych|ymi|ego|emu|ym|im|ej)$', lt.lower()):
+            c += 8  # adjetivo y su sustantivo («o zielonym | świetle», «dwoje małych | dzieci»)
+    if lt.lower().strip('„”"«»') in NOCUT and lt[-1:].isalpha():
+        c += 30
+    left = ' '.join(words[:k])
     if left.count('„') > left.count('”'):
-        pen += 20
-    if l[:1].isupper() and r[:1].isupper() and l[-1:].isalpha() and not ends_sentence(l):
-        pen += 20
-    return pen
+        c += 25  # dentro de un título entre comillas
+    if lt[:1].isupper() and r[:1].isupper() and lt[-1:].isalpha():
+        c += 25  # dentro de un nombre propio («Nowym | Jorku», «Złoty | Kościej»)
+    return c
+
+
+def line_split(words):
+    """Mejor corte en dos líneas (≤ MAXC cada una): (coste, k); k = None si cabe en una línea."""
+    if len(' '.join(words)) <= MAXC:
+        return 0, None
+    best = (float('inf'), None)
+    for k in range(1, len(words)):
+        a, b = ' '.join(words[:k]), ' '.join(words[k:])
+        if len(a) > MAXC or len(b) > MAXC:
+            continue
+        c = abs(len(a) - len(b)) * 0.5 + cut_cost(words, k) + (6 if min(len(a), len(b)) < 12 else 0)
+        c += 6 * (sum(ends_sentence(w) for w in words[:k - 1]) + sum(ends_sentence(w) for w in words[k:-1]))  # frase que acaba a media línea
+        best = min(best, (c, k))
+    return best
+
+
+def groups_for(ws):
+    """Trozos de hasta dos líneas (≤ MAXC), por frases y sin trozos sueltos (lógica de tools/pl_meta.py), elegidos con
+    programación dinámica para no cortar tras una preposición o una conjunción ni dentro de un nombre o de un título."""
+    words = [x['w'] for x in ws]
+    n = len(words)
+    INF = float('inf')
+    best = [(INF, None)] * (n + 1)
+    best[0] = (0, None)
+    for i in range(1, n + 1):
+        for j in range(i - 1, -1, -1):
+            cue = words[j:i]
+            if not fits2(cue):
+                break
+            if best[j][0] == INF:
+                continue
+            ln = len(' '.join(cue))
+            c = best[j][0] + 10 + line_split(cue)[0]
+            if ln < 14 and n > 1:
+                c += 30
+            elif ln < 26:
+                c += (26 - ln) / 2
+            # una pausa larga dentro del subtítulo («Z zamkniętymi oczami. … Jeśli się odważysz.»)
+            c += 10 * sum(1 for k in range(j + 1, i) if ws[k]['s'] - ws[k - 1]['e'] > 0.5)
+            inner = any(ends_sentence(w) for w in cue[:-1])
+            if i < n:
+                c += 1.6 * cut_cost(words, i)  # entre subtítulos el corte pesa más que entre líneas
+                # una frase que acaba dentro del subtítulo y otra que empieza y sigue en el siguiente
+                if inner and not ends_sentence(cue[-1]):
+                    c += 15
+            # el final de una frase que viene del subtítulo anterior y, detrás, otra frase
+            if inner and j > 0 and not ends_sentence(words[j - 1]):
+                c += 12
+            if c < best[i][0]:
+                best[i] = (c, j)
+    gs, i = [], n
+    while i > 0:
+        j = best[i][1]
+        gs.insert(0, ws[j:i]); i = j
+    return gs
 
 
 def write_srt(path, items):
@@ -171,9 +217,8 @@ def write_srt(path, items):
             b = min(b, groups[i + 1][0]['s'] - 0.04)
         if len(t) > MAXC:
             words = t.split(' ')
-            best = min(range(1, len(words)), key=lambda k: (max(len(' '.join(words[:k])), len(' '.join(words[k:]))) > MAXC,
-                                                            abs(len(' '.join(words[:k])) - len(' '.join(words[k:]))) + split_penalty(words, k)))
-            t = ' '.join(words[:best]) + '\n' + ' '.join(words[best:])
+            k = line_split(words)[1]
+            t = ' '.join(words[:k]) + '\n' + ' '.join(words[k:])
         out.append(f'{i + 1}\n{ts(a)} --> {ts(b)}\n{t}\n')
     open(path, 'w').write('\n'.join(out))
     return len(groups)
