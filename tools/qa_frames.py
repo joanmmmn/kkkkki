@@ -41,12 +41,13 @@ def sospechosos(src, start):
     return out
 
 
-def comprobar(src, start, frame, comp, bundle, scale='1'):
+def comprobar(src, start, frame, comp, bundle, scale='1', gl=None):
     d = os.path.join(VIDEO, 'out', 'qa_frames', str(frame))
     os.makedirs(d, exist_ok=True)
     if not any(f.endswith('.png') for f in os.listdir(d)):
         subprocess.run(['npx', 'remotion', 'render', bundle, comp, d, '--sequence', f'--frames={frame}-{frame}', '--image-format=png',
-                        '--concurrency=1', '--log=error', '--offthreadvideo-cache-size-in-bytes=800000000', f'--scale={scale}'], cwd=VIDEO, check=True)
+                        '--concurrency=1', '--log=error', '--offthreadvideo-cache-size-in-bytes=800000000', f'--scale={scale}', '--timeout=300000']
+                       + ([f'--gl={gl}'] if gl else []), cwd=VIDEO, check=True)
     png = os.path.join(d, sorted(f for f in os.listdir(d) if f.endswith('.png'))[0])
     ref = np.asarray(Image.open(png).convert('RGB'), dtype=np.float32)
     h, w = ref.shape[:2]
@@ -63,6 +64,7 @@ if __name__ == '__main__':
     ap.add_argument('src'); ap.add_argument('--start', type=int, default=0); ap.add_argument('--comp', default='NXReview')
     ap.add_argument('--umbral', type=float, default=20)
     ap.add_argument('--scale', default='1', help='la misma escala del render (p. ej. 1.3333333333333333 para 2560x1440)')
+    ap.add_argument('--gl', default=None, help='el mismo motor WebGL del render (swangle para los tramos en three.js)')
     a = ap.parse_args()
     bundle = os.path.join(VIDEO, 'out', 'qa_bundle')
     if not os.path.isdir(bundle):
@@ -71,7 +73,7 @@ if __name__ == '__main__':
     print(f'{len(sus)} sospechosos (≥ {a.umbral})', flush=True)
     fallos = []
     for f, k in sus:
-        psnr, worst, png = comprobar(a.src, a.start, f, a.comp, bundle, a.scale)
+        psnr, worst, png = comprobar(a.src, a.start, f, a.comp, bundle, a.scale, a.gl)
         bad = psnr < 32 or worst > 12
         print(f'  {f}: intensidad {k:.0f}, PSNR {psnr:.1f} dB, peor bloque {worst:.1f} → {"FALLO" if bad else "ok"}', flush=True)
         if bad:
