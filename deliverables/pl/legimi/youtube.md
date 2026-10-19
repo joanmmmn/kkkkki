@@ -16,7 +16,7 @@ Sprawdziliśmy cennik, regulamin i opinie: co jest dobre, co słabe i jak wypró
 
 W filmie:
 • Czym jest Legimi i czym są synchrobooki (ebook i audiobook pod jedną okładką).
-• Cennik: bez limitu 54,99 zł bez umowy albo 49,99 zł z umową na 12 miesięcy, pakiety z limitem od 14,99 zł, pakiet premium ze SkyShowtime.
+• Cennik: bez limitu 54,99 zł bez umowy albo 49,99 zł (promocja) z umową na 12 miesięcy, pakiety z limitem od 14,99 zł, pakiet premium ze SkyShowtime.
 • Katalog i karta audiobooka na przykładzie „Hardej” Elżbiety Cherezińskiej.
 • Aplikacja: przełączanie ebook ⇄ audiobook, offline, prędkość, wyłącznik czasowy, własne pliki EPUB.
 • Własne produkcje (audioserial „Zastrzyk miłości”) i Katalog Klubowy za dopłatą; punkty w Klubie Mola Książkowego.
@@ -77,7 +77,7 @@ Wolisz czytać czy słuchać? 👇 A może na zmianę – i synchrobooki to coś
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; no hay enlace de afiliado de Legimi).
 - **Contenido para niños:** No.
 - **Por decidir / confirmar antes de publicar:**
-  - El precio de 49,99 zł con contrato de 12 meses figura en Legimi como «PROMOCJA» (sin fecha de fin). Si cambia antes de publicar, hay que retocar A03, B04 y la descripción.
-  - La ficha de Legimi en sonorbooks.pl/platformy anuncia «pierwsze 3 miesiące o 50% taniej», que hoy no aparece en ninguna página oficial de Legimi: conviene corregirla en la web. El vídeo no la menciona ni la enseña (el cierre usa las tarjetas de la portada de sonorbooks.pl).
+  - El precio de 49,99 zł con contrato de 12 meses figura en Legimi como «PROMOCJA» (sin fecha de fin) y la web indica «Najniższa cena z 30 dni przed obniżką: 44,99 zł»: hay que volver a mirar https://www.legimi.pl/cennik/ el día de publicar. Si ha cambiado, hay que retocar A03 (voz y tarjeta), B04 y la descripción.
+  - Web de SonorBooks (no del vídeo, pero conviene arreglarlo): la ficha de Legimi en sonorbooks.pl/platformy sigue anunciando «pierwsze 3 miesiące o 50% taniej», que hoy no existe en ninguna página oficial de Legimi (el vídeo no la menciona ni la enseña); y en la portada de sonorbooks.pl, la que sale en el cierre (toma común `sb_home_cards`), el logotipo de Audible lleva el lema en español «una empresa de amazon».
   - En la portada de Legimi hay una promo de lectores («CZYTNIK OD 1 ZŁ» + taza de regalo, «oferta limitowana»): no sale en el vídeo.
   - La baja (B05) va con animación: la ayuda de Legimi no se puede grabar desde el servidor.
