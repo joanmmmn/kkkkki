@@ -1,0 +1,176 @@
+{
+ "total_frames": 13278,
+ "seconds": 265.56,
+ "chapters": [
+  {
+   "t": 15.82,
+   "label": "Czym są Wolne Lektury"
+  },
+  {
+   "t": 40.58,
+   "label": "Ile to kosztuje i gdzie jest haczyk"
+  },
+  {
+   "t": 59.1,
+   "label": "Katalog audiobooków"
+  },
+  {
+   "t": 76.44,
+   "label": "Odtwarzacz i lektorzy"
+  },
+  {
+   "t": 108.02,
+   "label": "Pobieranie MP3 i e-booki"
+  },
+  {
+   "t": 137.6,
+   "label": "Urządzenia i aplikacja"
+  },
+  {
+   "t": 152.56,
+   "label": "Opinie"
+  },
+  {
+   "t": 170.8,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 189.12,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 215.32,
+   "label": "Jak zacząć"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 805,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 805,
+   "dur": 1238,
+   "lead": 26,
+   "bump": "Czym są Wolne Lektury?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 2043,
+   "dur": 926,
+   "lead": 26,
+   "bump": "Ile to kosztuje?"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2969,
+   "dur": 867,
+   "lead": 26,
+   "bump": "Co jest w katalogu?"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3836,
+   "dur": 767,
+   "lead": 26,
+   "bump": "Jak się słucha?"
+  },
+  {
+   "id": "A06",
+   "kind": "rec",
+   "start": 4603,
+   "dur": 812,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 5415,
+   "dur": 819,
+   "lead": 26,
+   "bump": "Pobieranie i e-booki"
+  },
+  {
+   "id": "A08",
+   "kind": "features",
+   "start": 6234,
+   "dur": 646,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6880,
+   "dur": 762,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 7642,
+   "dur": 912,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8554,
+   "dur": 916,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 9470,
+   "dur": 1310,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "steps",
+   "start": 10780,
+   "dur": 931,
+   "lead": 26,
+   "bump": "Jak zacząć"
+  },
+  {
+   "id": "B04",
+   "kind": "stat",
+   "start": 11711,
+   "dur": 284,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "rec",
+   "start": 11995,
+   "dur": 438,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12433,
+   "dur": 845,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}
