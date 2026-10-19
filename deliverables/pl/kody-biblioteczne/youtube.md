@@ -12,12 +12,12 @@ Alternatywy:
 ## Opis
 ```
 Z kartą biblioteczną możesz przez miesiąc słuchać audiobooków w Legimi, Empik Go albo Audiotece za 0 zł. Gdzie jest haczyk?
-Kodów jest mało, każda biblioteka ma własne zasady, a w wielu kody kończą się na początku miesiąca. Pokazujemy, jak je zdobyć.
+Kodów jest mało, każda biblioteka ma własne zasady, a w wielu kody kończą się na początku miesiąca. Pokażę, jak je zdobyć.
 
 🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 
 ⏱️ Rozdziały
-0:00 Darmowe audiobooki z biblioteki: gdzie haczyk?
+0:00 Darmowe audiobooki z biblioteki: gdzie jest haczyk?
 0:15 Jak działają kody z biblioteki
 0:33 Ile to kosztuje
 0:48 Legimi
@@ -48,8 +48,8 @@ W filmie:
 • MBP we Wrocławiu – Legimi: https://biblioteka.wroc.pl/zbiory/e-zbiory/legimi-2/
 • WiMBP w Gdańsku – Legimi: https://wbpg.org.pl/legimi/
 • Biblioteka Raczyńskich w Poznaniu – informacja o e-bookach: https://bracz.edu.pl/bazy-i-zasoby-cyfrowe/
-• Biblioteka Publiczna w Dzielnicy Bielany – kody do serwisów: https://www.bibliotekabielany.waw.pl/2024/12/23/kody-do-serwisow/
-• Biblioteka Wesoła – Audioteka Klub: https://bibliotekawesola.pl/audioteka-klub/
+• Biblioteka Publiczna w Dzielnicy Bielany – kody: https://www.bibliotekabielany.waw.pl/kody/
+• Biblioteka Wesoła – kody do Audioteka Klub, Legimi i Empik Go: https://bibliotekawesola.pl/kody-do-audioteka-klub-i-empik-go/
 • Ustawa o bibliotekach, art. 14: https://lexlege.pl/ustawa-o-bibliotekach/art-14/
 • Legimi, Empik Go i Audioteka w Google Play i w polskim App Storze (oceny z 19.10.2026)
 • Wolne Lektury: https://wolnelektury.pl
@@ -76,8 +76,9 @@ Kodu zabrakło? Ceny i okresy próbne serwisów porównasz na sonorbooks.pl: htt
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl). «No, no es contenido creado para niños». Subtítulos: `kody-biblioteczne.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**
-  1. **Datos que caducan rápido**: las reglas y la disponibilidad de cada biblioteca son de su web del 19/10/2026 (en pantalla: «Stan na 19.10.2026»). Lo más sensible: Łódź («W październiku skończyły się wszystkie kody», noticia del 5/10/2026) y Wrocław (próximas fechas 2.11 y 1.12.2026, que dice la voz). Si se publica después del 2 de noviembre, B03 queda desfasado (voz y etiqueta «Wrocław: 2.11.2026»; habría que regenerar esa frase, unos 145 caracteres de ElevenLabs).
+  1. **Datos que caducan rápido**: las reglas y la disponibilidad de cada biblioteca son de su web del 19/10/2026 (en pantalla: «Stan na 19.10.2026»). Lo más sensible: Łódź («W październiku skończyły się wszystkie kody», noticia del 5/10/2026). Wrocław y Poznań se citan por su regla fija (primer día laborable del mes), no por fechas.
   2. Varsovia: la web de la Biblioteka Publiczna m.st. Warszawy (koszykowa.pl) y bibliotekiwarszawy.pl no cargan desde el servidor (certificado incompleto); en el vídeo Varsovia sale solo con Bielany (en una etiqueta, sin toma) y Wesoła (toma). Kraków bloquea la IP del servidor: no se cita.
   3. «Sin tarjeta de pago» solo se afirma para Empik Go (su FAQ lo dice); para Legimi y Audioteka no hay frase oficial equivalente.
   4. El título y la miniatura dicen «za 0 zł»: es cierto con tarjeta de biblioteca y si se consigue código; la descripción lo matiza.
-  5. Miniatura: la plantilla pone siempre «RECENZJA» junto al logotipo; aquí el logotipo es el trío oficial Legimi · Empik Go · Audioteka (no hay marca única de los códigos). Si prefieres otra palabra, hay que tocar `Thumb.tsx` (compartido).
+  5. Miniatura: junto al logotipo (el trío oficial Legimi · Empik Go · Audioteka, porque los códigos no tienen marca propia) pone «PORADNIK», no «RECENZJA».
+  6. sonorbooks.pl/platformy/ (enlazada en el comentario fijado; la toma del cierre solo enseña la tarjeta «Kod z biblioteki» y no la de Empik Go) aún muestra la promoción caducada de Empik Go: conviene actualizarla antes de publicar.

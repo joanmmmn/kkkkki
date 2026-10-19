@@ -11,7 +11,7 @@
  "dpr": 1.5,
  "steps": [
   {
-   "go": "https://bibliotekawesola.pl/audioteka-klub/",
+   "go": "https://bibliotekawesola.pl/kody-do-audioteka-klub-i-empik-go/",
    "until": "domcontentloaded"
   },
   {
@@ -31,7 +31,7 @@
    "wait": 300
   },
   {
-   "eval": "window.scrollTo(0,560)"
+   "eval": "window.scrollTo(0,0)"
   },
   {
    "wait": 1200
@@ -50,60 +50,47 @@
    "wait": 300
   },
   {
-   "mark": "wymogi"
-  },
-  {
-   "move": [
-    560,
-    200
-   ],
-   "dur": 900
-  },
-  {
-   "wait": 1500
-  },
-  {
-   "mark": "jak"
-  },
-  {
-   "move": [
-    660,
-    460
-   ],
-   "dur": 900
-  },
-  {
-   "wait": 800
+   "mark": "tytul"
   },
   {
    "move": [
     760,
-    497
+    205
    ],
-   "dur": 700
+   "dur": 900
   },
   {
-   "wait": 1600
+   "wait": 2000
   },
   {
    "mark": "scroll"
   },
   {
-   "scroll": -560,
-   "dur": 1600
+   "scroll": 1000,
+   "dur": 2000
   },
   {
-   "mark": "tytul"
+   "mark": "kod"
   },
   {
    "move": [
-    900,
-    170
+    640,
+    420
    ],
-   "dur": 800
+   "dur": 900
   },
   {
-   "wait": 1300
+   "wait": 1000
+  },
+  {
+   "move": [
+    600,
+    460
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1500
   },
   {
    "mark": "end"

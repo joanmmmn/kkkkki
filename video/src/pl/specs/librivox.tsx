@@ -39,7 +39,7 @@ export const piece: PLPiece = {
         cuts: [{ at: 'bo', rec: { clip: '03_polish_list', start: 8.5, url: 'librivox.org/search' } }, { at: 'Do', rec: { clip: '03_polish_list', start: 3.4, holdAt: 5.9, url: 'librivox.org/search' } },
           { at: 'Razem', rec: { clip: '03_polish_list', start: 0.3, holdAt: 2.6, url: 'librivox.org/search' } }],
         marks: [{ at: 'krotszych', until: 'Razem', x: 770, y: 676, w: 300, h: 36 }],
-        zooms: [{ at: 'polsku', zoom: 1.3, x: 1150, y: 680 }],
+        zooms: [{ at: 'polsku', zoom: 1.5, x: 1150, y: 760 }],
         tags: [
           { at: 'trzydziesci', label: '31 projektów', sub: '= 27 książek', icon: 'book' },
           { at: 'Lalka', label: 'Lalka i Faraon', sub: 'po 3 tomy', icon: 'list' },

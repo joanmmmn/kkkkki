@@ -1,45 +1,45 @@
 {
- "total_frames": 13278,
- "seconds": 265.56,
+ "total_frames": 13675,
+ "seconds": 273.5,
  "chapters": [
   {
    "t": 15.82,
    "label": "Czym są Wolne Lektury"
   },
   {
-   "t": 40.58,
+   "t": 41.1,
    "label": "Ile to kosztuje i gdzie jest haczyk"
   },
   {
-   "t": 59.1,
+   "t": 59.94,
    "label": "Katalog audiobooków"
   },
   {
-   "t": 76.44,
+   "t": 77.28,
    "label": "Odtwarzacz i lektorzy"
   },
   {
-   "t": 108.02,
+   "t": 110.14,
    "label": "Pobieranie MP3 i e-booki"
   },
   {
-   "t": 137.6,
+   "t": 142.04,
    "label": "Urządzenia i aplikacja"
   },
   {
-   "t": 152.56,
+   "t": 156.66,
    "label": "Opinie"
   },
   {
-   "t": 170.8,
+   "t": 174.9,
    "label": "Plusy i minusy"
   },
   {
-   "t": 189.12,
+   "t": 193.22,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 215.32,
+   "t": 220.22,
    "label": "Jak zacząć"
   }
  ],
@@ -54,24 +54,24 @@
   },
   {
    "id": "A02",
-   "kind": "intro",
+   "kind": "rec",
    "start": 805,
-   "dur": 1238,
+   "dur": 1264,
    "lead": 26,
    "bump": "Czym są Wolne Lektury?"
   },
   {
    "id": "A03",
    "kind": "plans",
-   "start": 2043,
-   "dur": 926,
+   "start": 2069,
+   "dur": 942,
    "lead": 26,
    "bump": "Ile to kosztuje?"
   },
   {
    "id": "A04",
    "kind": "rec",
-   "start": 2969,
+   "start": 3011,
    "dur": 867,
    "lead": 26,
    "bump": "Co jest w katalogu?"
@@ -79,7 +79,7 @@
   {
    "id": "A05",
    "kind": "rec",
-   "start": 3836,
+   "start": 3878,
    "dur": 767,
    "lead": 26,
    "bump": "Jak się słucha?"
@@ -87,23 +87,23 @@
   {
    "id": "A06",
    "kind": "rec",
-   "start": 4603,
-   "dur": 812,
+   "start": 4645,
+   "dur": 876,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A07",
    "kind": "rec",
-   "start": 5415,
-   "dur": 819,
+   "start": 5521,
+   "dur": 935,
    "lead": 26,
    "bump": "Pobieranie i e-booki"
   },
   {
    "id": "A08",
    "kind": "features",
-   "start": 6234,
+   "start": 6456,
    "dur": 646,
    "lead": 7,
    "bump": null
@@ -111,15 +111,15 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6880,
-   "dur": 762,
+   "start": 7102,
+   "dur": 745,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7642,
+   "start": 7847,
    "dur": 912,
    "lead": 26,
    "bump": "Opinie"
@@ -127,7 +127,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8554,
+   "start": 8759,
    "dur": 916,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -135,23 +135,31 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9470,
-   "dur": 1310,
+   "start": 9675,
+   "dur": 330,
    "lead": 26,
    "bump": "Werdykt"
   },
   {
+   "id": "A12B",
+   "kind": "plans",
+   "start": 10005,
+   "dur": 1020,
+   "lead": 7,
+   "bump": null
+  },
+  {
    "id": "B01",
    "kind": "steps",
-   "start": 10780,
-   "dur": 931,
+   "start": 11025,
+   "dur": 935,
    "lead": 26,
    "bump": "Jak zacząć"
   },
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11711,
+   "start": 11960,
    "dur": 284,
    "lead": 7,
    "bump": null
@@ -159,15 +167,15 @@
   {
    "id": "B05",
    "kind": "rec",
-   "start": 11995,
-   "dur": 438,
+   "start": 12244,
+   "dur": 586,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12433,
+   "start": 12830,
    "dur": 845,
    "lead": 7,
    "bump": null

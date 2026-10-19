@@ -1,7 +1,7 @@
 1
 00:00:00,300 --> 00:00:05,460
-Pełna „Lalka” Prusa: ponad 32
-godziny, czyta profesjonalny lektor.
+Pełna „Lalka” Prusa: ponad 32 godziny,
+czyta profesjonalny lektor.
 
 2
 00:00:05,500 --> 00:00:09,670
@@ -23,7 +23,7 @@ Fundacji Wolne Lektury z Warszawy.
 
 6
 00:00:21,340 --> 00:00:26,420
-Działa od 2007 roku i ma 7332 utwory:
+Działa od 2007 roku i ma 7332 utwory:
 
 7
 00:00:26,460 --> 00:00:30,700
@@ -31,270 +31,283 @@ głównie lektury szkolne i klasykę z domeny
 publicznej, ale też nowe przekłady na
 
 8
-00:00:30,740 --> 00:00:34,576
+00:00:30,740 --> 00:00:35,480
 wolnej licencji, jak „Mały
 Książę” czy „Rok 1984”.
 
 9
-00:00:35,633 --> 00:00:40,950
-Nagrań jest ponad tysiąc, a z biblioteki
-korzysta ponad 7 milionów osób rocznie.
+00:00:35,520 --> 00:00:39,560
+Nagrań jest ponad tysiąc,
+a z biblioteki korzysta ponad 7 milionów
 
 10
-00:00:41,380 --> 00:00:43,287
-Ile to kosztuje? Nic.
+00:00:39,600 --> 00:00:41,370
+użytkowników rocznie.
 
 11
-00:00:43,327 --> 00:00:47,300
-Nie ma abonamentu, okresu próbnego ani
-karty płatniczej, nie trzeba się nawet
+00:00:41,900 --> 00:00:43,887
+Ile to kosztuje? Nic.
 
 12
-00:00:47,340 --> 00:00:51,820
+00:00:43,927 --> 00:00:48,180
+Nie ma abonamentu ani okresu próbnego,
+nie podajesz karty i nie musisz się nawet
+
+13
+00:00:48,220 --> 00:00:52,760
 rejestrować. Fundacja żyje z dotacji
 i darowizn, więc na stronie zobaczysz
 
-13
-00:00:51,860 --> 00:00:56,113
+14
+00:00:52,800 --> 00:00:57,053
 prośby o wsparcie, a wiele nagrań
 zaczyna się krótką zachętą do wpłaty.
 
-14
-00:00:56,153 --> 00:00:59,230
+15
+00:00:57,093 --> 00:01:00,170
 To cały haczyk: wpłata jest dobrowolna.
 
-15
-00:00:59,900 --> 00:01:04,393
+16
+00:01:00,740 --> 00:01:05,233
 W zakładce „Audiobooki” wybierasz
 epokę, gatunek albo autora.
 
-16
-00:01:04,433 --> 00:01:09,060
+17
+00:01:05,273 --> 00:01:09,900
 Uwaga: ponad połowa nagrań to
 poezja, często kilkuminutowe wiersze.
 
-17
-00:01:09,100 --> 00:01:14,380
-Ale jest też ponad sto powieści: „Quo
-vadis” trwa ponad 20 godzin, a „W pustyni
-
 18
-00:01:14,420 --> 00:01:16,790
-i w puszczy” – trzynaście i pół.
+00:01:09,940 --> 00:01:15,220
+Ale jest też ponad sto powieści: „Quo
+vadis” trwa ponad 20 godzin, a „W pustyni
 
 19
-00:01:17,240 --> 00:01:19,080
-Otwórzmy „Pana Tadeusza”.
+00:01:15,260 --> 00:01:17,630
+i w puszczy” – trzynaście i pół.
 
 20
-00:01:19,120 --> 00:01:21,120
-Odtwarzacz jest od razu na stronie:
+00:01:18,080 --> 00:01:19,920
+Otwórzmy „Pana Tadeusza”.
 
 21
-00:01:21,160 --> 00:01:26,560
-dwanaście ksiąg jako rozdziały, prędkość
-od 0,5 do 2 razy i nazwisko lektora.
+00:01:19,960 --> 00:01:21,960
+Odtwarzacz jest od razu na stronie:
 
 22
-00:01:26,600 --> 00:01:31,970
-Czyta Wiktor Korzeniewski,
-a całość trwa 8 godzin i 44 minuty.
+00:01:22,000 --> 00:01:27,400
+dwanaście ksiąg jako rozdziały, prędkość
+od 0,5 do 2 razy i nazwisko lektora.
 
 23
-00:01:32,200 --> 00:01:35,640
-Kto czyta? Ludzie, nie
-sztuczna inteligencja.
+00:01:27,440 --> 00:01:32,810
+Czyta Wiktor Korzeniewski,
+a całość trwa 8 godzin i 44 minuty.
 
 24
-00:01:35,680 --> 00:01:39,760
+00:01:33,040 --> 00:01:37,850
+Kto czyta? Nagrania Wolnych Lektur
+czytają ludzie, nie sztuczna inteligencja.
+
+25
+00:01:37,950 --> 00:01:42,030
 „Kamizelkę” i „Latarnika” czyta Jan
 Peszek, „Tajemniczy ogród” – Paulina
 
-25
-00:01:39,800 --> 00:01:44,213
+26
+00:01:42,070 --> 00:01:46,483
 Holtz, a „Rok 1984” – Jan Staszczyk.
 
-26
-00:01:44,253 --> 00:01:48,290
+27
+00:01:46,523 --> 00:01:50,560
 Dramaty, jak „Zemsta” czy
 „Wesele”, czytane są na dwa głosy.
 
-27
-00:01:48,820 --> 00:01:50,460
+28
+00:01:50,940 --> 00:01:52,580
 Chcesz słuchać offline?
 
-28
-00:01:50,500 --> 00:01:55,780
+29
+00:01:52,620 --> 00:01:57,900
 Kliknij „pobierz audiobook”: masz MP3,
 OGG, DAISY dla osób z trudnościami
 
-29
-00:01:55,820 --> 00:01:58,327
+30
+00:01:57,940 --> 00:02:00,447
 w czytaniu i EPUB z dźwiękiem.
 
-30
-00:01:58,367 --> 00:02:00,833
+31
+00:02:00,487 --> 00:02:02,860
 Całą książkę ściągniesz
 jednym plikiem ZIP.
 
-31
-00:02:00,873 --> 00:02:04,670
-Nagrania są na wolnych licencjach,
-więc pliki zostają u ciebie.
-
 32
-00:02:04,820 --> 00:02:08,247
+00:02:02,900 --> 00:02:07,460
+Nagrania są na wolnych licencjach:
+pobrane pliki możesz zatrzymać i legalnie
+
+33
+00:02:07,500 --> 00:02:09,070
+udostępniać dalej.
+
+34
+00:02:09,260 --> 00:02:12,687
 Do tego e-booki z przypisami
 i motywami literackimi:
 
-33
-00:02:08,287 --> 00:02:12,683
+35
+00:02:12,727 --> 00:02:17,327
 czytasz online albo pobierasz
 PDF, EPUB lub MOBI na Kindle'a.
 
-34
-00:02:12,927 --> 00:02:14,913
+36
+00:02:17,367 --> 00:02:19,353
 Przy lekturze szkolnej to duża pomoc:
 
-35
-00:02:14,953 --> 00:02:17,630
+37
+00:02:19,393 --> 00:02:22,070
 możesz jednocześnie czytać i słuchać.
 
-36
-00:02:17,740 --> 00:02:21,180
+38
+00:02:22,180 --> 00:02:25,700
 Słuchasz w przeglądarce, na
 komputerze i na telefonie.
 
-37
-00:02:21,220 --> 00:02:25,820
-Jest też darmowa aplikacja Wolne Lektury
-na Androida i iPhone'a; ta na iPhone'a
-
-38
-00:02:25,860 --> 00:02:29,247
-jest nowa, z grudnia 2025 roku.
-
 39
-00:02:29,287 --> 00:02:33,030
+00:02:25,740 --> 00:02:30,660
+Jest też darmowa aplikacja Wolne Lektury
+na Androida i iPhone'a; obie są nowe,
+
+40
+00:02:30,700 --> 00:02:33,220
+z grudnia 2025 roku.
+
+41
+00:02:33,260 --> 00:02:36,590
 A pliki MP3 odtworzysz
 na każdym urządzeniu.
 
-40
-00:02:33,360 --> 00:02:40,526
-Opinie? Aplikacja ma w Google Play 4,6
-przy 37 opiniach, a w polskim App Store
-
-41
-00:02:40,566 --> 00:02:43,160
-4,4 przy 14 ocenach.
-
 42
-00:02:43,200 --> 00:02:44,760
-To mało, bo jest nowa.
+00:02:37,460 --> 00:02:43,900
+Opinie? Aplikacja ma w Google Play
+4,6 przy 37 opiniach, a w polskim App
 
 43
-00:02:44,800 --> 00:02:48,947
-Krótkie opinie są pozytywne; w App Store
-ktoś zgłasza, że audiobook nie startuje
+00:02:43,940 --> 00:02:47,260
+Storze 4,4 przy 14 ocenach.
 
 44
-00:02:48,987 --> 00:02:51,290
-w trakcie rozmowy telefonicznej.
+00:02:47,300 --> 00:02:48,860
+To mało, bo jest nowa.
 
 45
-00:02:51,600 --> 00:02:57,108
+00:02:48,900 --> 00:02:53,047
+Krótkie opinie są pozytywne; w App Storze
+ktoś zgłasza, że audiobook nie startuje
+
+46
+00:02:53,087 --> 00:02:55,390
+w trakcie rozmowy telefonicznej.
+
+47
+00:02:55,700 --> 00:03:01,236
 Plusy: za darmo i legalnie, bez konta
 i bez reklam, prawdziwi lektorzy, pliki
 
-46
-00:02:57,148 --> 00:02:59,880
+48
+00:03:01,276 --> 00:03:03,980
 MP3 na zawsze i e-book w komplecie.
 
-47
-00:02:59,920 --> 00:03:04,960
+49
+00:03:04,020 --> 00:03:09,060
 Minusy: tylko klasyka i lektury, więc
 żadnych nowości; ponad połowa nagrań to
 
-48
-00:03:05,000 --> 00:03:09,290
+50
+00:03:09,100 --> 00:03:13,390
 krótkie wiersze; a aplikacja
 jest świeża i ma mało ocen.
 
-49
-00:03:09,920 --> 00:03:15,560
+51
+00:03:14,020 --> 00:03:19,690
 Werdykt? Dla uczniów, rodziców i fanów
 klasyki trudno o lepszą darmową opcję.
 
-50
-00:03:15,600 --> 00:03:20,600
-Dla porównania: „Lalka” z Zapasiewiczem
-w Audiotece trwa 8 godzin 55 minut
-
-51
-00:03:20,640 --> 00:03:23,237
-i kosztuje 19,99 zł.
-
 52
-00:03:23,920 --> 00:03:27,885
-Tu pełna wersja, ponad
-32 godziny, za 0 zł.
+00:03:20,500 --> 00:03:25,500
+Dla porównania: „Lalka” z Zapasiewiczem
+w Audiotece trwa 8 godzin 55 minut
 
 53
-00:03:28,053 --> 00:03:32,280
+00:03:25,540 --> 00:03:28,780
+i kosztuje 19,99 zł.
+
+54
+00:03:28,820 --> 00:03:32,913
+Tu pełna wersja, ponad
+32 godziny, za 0 zł.
+
+55
+00:03:32,953 --> 00:03:37,180
 Szukasz nowości? Tu ich nie ma: sprawdź
 kod z biblioteki albo abonament, na
 
-54
-00:03:32,320 --> 00:03:35,450
+56
+00:03:37,220 --> 00:03:40,350
 przykład Audioteka, Empik Go czy Legimi.
 
-55
-00:03:36,120 --> 00:03:41,840
+57
+00:03:41,020 --> 00:03:46,660
 Jak zacząć? Wejdź na wolnelektury.pl
 i kliknij „Audiobooki” albo wpisz tytuł
 
-56
-00:03:41,880 --> 00:03:44,970
-w wyszukiwarkę. Na stronie
+58
+00:03:46,700 --> 00:03:49,940
+w wyszukiwarce. Na stronie
 utworu naciśnij play:
 
-57
-00:03:45,080 --> 00:03:47,253
+59
+00:03:49,980 --> 00:03:52,153
 słuchasz od razu, bez logowania.
 
-58
-00:03:47,293 --> 00:03:51,196
+60
+00:03:52,193 --> 00:03:56,313
 Do słuchania offline kliknij
 „pobierz audiobook” i wybierz MP3:
 
-59
-00:03:51,453 --> 00:03:53,970
+61
+00:03:56,353 --> 00:03:58,950
 dostaniesz całą książkę w pliku ZIP.
 
-60
-00:03:54,360 --> 00:03:59,283
-Na telefonie zainstaluj aplikację Wolne
-Lektury z Google Play albo App Store.
-
-61
-00:04:00,040 --> 00:04:06,000
-I drobny druk: jeśli udostępniasz nagranie
-dalej, podaj autora, źródło i licencję.
-
 62
-00:04:06,040 --> 00:04:08,610
-Licencję znajdziesz przy każdym nagraniu.
+00:03:59,340 --> 00:04:04,519
+Na telefonie zainstaluj aplikację Wolne
+Lektury z Google Play albo z App Store'a.
 
 63
-00:04:08,800 --> 00:04:13,640
+00:04:05,020 --> 00:04:10,580
+I drobny druk: jeśli udostępniasz nagranie
+dalej, podaj autora, lektora, źródło
+
+64
+00:04:10,620 --> 00:04:13,980
+i licencję i udostępniaj
+na tych samych warunkach.
+
+65
+00:04:14,020 --> 00:04:16,550
+Licencję znajdziesz przy każdym nagraniu.
+
+66
+00:04:16,740 --> 00:04:21,580
 A jeśli wolisz inne wydanie, na
 sonorbooks.pl porównasz, gdzie posłuchać
 
-64
-00:04:13,680 --> 00:04:15,347
+67
+00:04:21,620 --> 00:04:23,287
 audiobooka i za ile.
 
-65
-00:04:15,387 --> 00:04:18,250
+68
+00:04:23,327 --> 00:04:26,190
 Twoja następna historia
 już na ciebie czeka.

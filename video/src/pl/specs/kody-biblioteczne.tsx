@@ -66,12 +66,12 @@ export const piece: PLPiece = {
         tags: [
           { at: 'Lodzi', label: 'Łódź: każda filia', sub: 'co miesiąc', icon: 'library' }, { at: '15', label: 'Od 15 lat · kod papierowy', icon: 'user' },
           { at: 'pazdzierniku', label: 'Październik: kodów brak', tone: 'bad' }, { at: 'Wroclawiu', label: 'Wrocław: tylko 3 filie', icon: 'library' },
-          { at: '90', label: 'Kod na 90 dni', sub: 'kolejny po 3 miesiącach', icon: 'calendar' },
+          { at: '90', label: 'Kod na 90 dni', sub: 'kolejny najwcześniej po 3 miesiącach', icon: 'calendar' },
         ] },
       { id: 'A08', kind: 'rec', kicker: 'Stan na 19.10.2026', title: 'Gdańsk, Poznań, Warszawa', rec: { clip: '08_gdansk_legimi', start: 0.3, url: 'wbpg.org.pl' },
         cuts: [{ at: 'Poznaniu', rec: { clip: '09_poznan', start: 0.3, url: 'bracz.edu.pl' } }, { at: 'Warszawie', rec: { clip: '11_wesola', start: 6.5, url: 'bibliotekawesola.pl' } }],
         marks: [{ at: 'Gdansku', until: 'generujesz', x: 360, y: 250, w: 1180, h: 125 }, { at: 'generujesz', until: 'wypozyczyles', x: 360, y: 386, w: 600, h: 26 }, { at: 'wypozyczyles', until: 'Poznaniu', x: 360, y: 348, w: 640, h: 26 },
-          { at: 'mailem', until: 'Warszawie', x: 640, y: 294, w: 625, h: 46 }, { at: 'Wesolej', x: 390, y: 148, w: 900, h: 48 }],
+          { at: 'mailem', until: 'Warszawie', x: 630, y: 282, w: 632, h: 56 }, { at: 'Wesolej', x: 390, y: 148, w: 900, h: 48 }],
         zooms: [{ at: 'Gdansku', zoom: 1.6, x: 860, y: 430 }, { at: 'Poznaniu', zoom: 2.2, x: 950, y: 330 }, { at: 'Warszawie', zoom: 1.3, x: 840, y: 330 }],
         tags: [
           { at: 'Gdansku', label: 'Gdańsk: kod online', icon: 'globe' }, { at: 'wypozyczyles', label: 'Min. 1 wypożyczenie', sub: 'w tym roku', icon: 'book' },
@@ -79,7 +79,7 @@ export const piece: PLPiece = {
           { at: 'Warszawie', label: 'Warszawa: każda dzielnica', sub: 'Bielany – formularz, Wesoła – Audioteka', icon: 'library' },
         ] },
       { id: 'A08B', kind: 'features', kicker: 'Prawie wszędzie', title: 'Trzy zasady', cols: 3, items: [
-        { at: 'Jeden', label: '1 kod na miesiąc', sub: 'zwykle Legimi albo Empik Go', icon: 'user' },
+        { at: 'Najwyzej', label: 'Najwyżej 1 kod w miesiącu', sub: 'zwykle Legimi albo Empik\u00A0Go', icon: 'user' },
         { at: 'aktywowac', label: 'Aktywuj do końca miesiąca', sub: 'inaczej możesz nie dostać kolejnego', icon: 'calendar' },
         { at: 'zaleglosci', label: 'Bez zaległości', sub: 'w bibliotece', icon: 'check' },
       ] },
@@ -115,7 +115,7 @@ export const piece: PLPiece = {
           { at: 'mailem', label: 'Mailem', icon: 'mail' }, { at: 'formularz', label: 'Przez formularz', icon: 'doc' },
         ] },
       { id: 'B03', kind: 'stat', kicker: 'Krok 3', title: 'Bądź pierwszy', at: 'pierwszego', value: '1. dzień', label: 'wydawania kodów – najlepiej z samego rana', tags: [
-        { at: 'Wroclawiu', label: 'Wrocław: 2.11.2026', sub: 'stan na 19.10.2026', icon: 'calendar' }, { at: 'grudnia', label: 'Potem 1.12.2026', icon: 'calendar' },
+        { at: 'Wroclawiu', label: 'Wrocław, Poznań: 1. dzień roboczy', sub: 'stan na 19.10.2026', icon: 'calendar' },
       ] },
       { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Aktywuj kod', rec: { clip: '02_empik_kod', start: 0.3, holdAt: 2.8, url: 'empik.com/go/biblioteki/kod' }, steps: [
         { at: 'aktywuj', title: 'W tym samym miesiącu' },
@@ -125,7 +125,7 @@ export const piece: PLPiece = {
         marks: [{ at: 'stronie', until: 'zaloguj', x: 1066, y: 246, w: 360, h: 70 }, { at: 'zaloguj', x: 1070, y: 414, w: 464, h: 286 }] },
       { id: 'B05', kind: 'steps', kicker: 'Krok 5', title: 'Słuchaj w aplikacji', steps: [
         { at: 'pobierz', title: 'Pobierz aplikację serwisu' }, { at: 'zaloguj', title: 'Zaloguj się tym samym kontem' },
-        { at: 'sciagnij', title: 'Pobierz audiobooki offline' }, { at: 'wygasnie', title: 'Po ok. 30 dniach dostęp wygasa', sub: 'po nowy kod wracasz do biblioteki' },
+        { at: 'sciagnij', title: 'Pobierz audiobooki offline' }, { at: 'wygasnie', title: 'Zwykle po 30 dniach dostęp wygasa', sub: 'po nowy kod wracasz do biblioteki' },
       ] },
       { id: 'B06', kind: 'outro', rec: { clip: '13_sonorbooks_biblioteka', start: 1.2, url: 'sonorbooks.pl/platformy' }, cta: 'Kodu zabrakło?\nPorównaj ceny:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'Audioteki', label: 'Audioteka · Empik Go · Legimi', icon: 'search' }] },
@@ -145,5 +145,5 @@ export const piece: PLPiece = {
       { label: 'Jak odebrać kod krok po kroku', from: 'B01' },
     ],
   },
-  thumb: { kicker: 'PORADNIK', line1: 'AUDIOBOOKI', line2: 'ZA 0 ZŁ?', seal: { icon: 'library', text: 'Kod z\nbiblioteki' }, label: { strong: 'Gdzie', rest: 'HACZYK?' } },
+  thumb: { kicker: 'PORADNIK', line1: 'AUDIOBOOKI', line2: 'ZA 0 ZŁ?', seal: { icon: 'library', text: 'Kod\nz biblioteki' }, label: { strong: 'Gdzie', rest: 'HACZYK?' } },
 };
