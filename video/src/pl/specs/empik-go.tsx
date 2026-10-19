@@ -97,7 +97,8 @@ export const piece: PLPiece = {
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Empik Go', title: 'Okres próbny', at: 'Empik', value: '7 dni', label: 'za darmo w każdym planie', tags: [
         { at: 'karta', label: 'Tylko z kartą płatniczą', icon: 'card' }, { at: ['tylko', 1], label: 'Tylko raz', sub: 'bez względu na plan', icon: 'user' },
       ] },
-      { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 0.4, mobile: true }, steps: [
+      { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 0.4, holdAt: 7.4, mobile: true },
+        marks: [{ at: 'wybierz', until: 'kliknij', x: 12, y: 280, w: 406, h: 312 }, { at: 'kliknij', until: 'Uwaga', x: 26, y: 522, w: 378, h: 56 }], steps: [
         { at: 'Wejdz', title: 'Wejdź na empik.com/go' }, { at: 'abonamentach', title: 'Abonamenty 30-dniowe', sub: 'wybierz plan' },
         { at: 'kliknij', title: '„Wypróbuj za darmo przez 7 dni”' }, { at: 'Zaloguj', title: 'Zaloguj się lub załóż konto Empik' },
         { at: 'podepnij', title: 'Podepnij kartę', sub: 'dziś płacisz 0 zł' },
