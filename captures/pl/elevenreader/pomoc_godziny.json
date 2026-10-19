@@ -1,0 +1,117 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-eleven-reader-hours-work",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    1903,
+    19
+   ],
+   "dur": 10
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "first"
+  },
+  {
+   "move": [
+    800,
+    362
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "speed"
+  },
+  {
+   "move": [
+    800,
+    438
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "free"
+  },
+  {
+   "move": [
+    800,
+    510
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "books"
+  },
+  {
+   "move": [
+    800,
+    546
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

@@ -1,0 +1,134 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://swiatczytnikow.pl/abonament-kobo-plus-juz-w-polsce-a-czytniki-kobo-sa-na-targach-ksiazki-w-warszawie/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "document.querySelector('#primary') && (document.querySelector('#primary').style.visibility='hidden')"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,420)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    730,
+    105
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 3760,
+   "dur": 2400
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "ceny"
+  },
+  {
+   "move": [
+    580,
+    290
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    600,
+    313
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 500
+  },
+  {
+   "move": [
+    620,
+    336
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "oferta"
+  },
+  {
+   "move": [
+    850,
+    369
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    930,
+    426
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

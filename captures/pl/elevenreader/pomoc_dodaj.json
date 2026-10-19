@@ -1,0 +1,144 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-i-add-content-to-eleven-reader",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    1903,
+    19
+   ],
+   "dur": 10
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    960,
+    650
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 1800
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "list"
+  },
+  {
+   "move": [
+    700,
+    373
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 500
+  },
+  {
+   "move": [
+    720,
+    421
+   ],
+   "dur": 400
+  },
+  {
+   "wait": 400
+  },
+  {
+   "move": [
+    700,
+    469
+   ],
+   "dur": 400
+  },
+  {
+   "wait": 400
+  },
+  {
+   "move": [
+    700,
+    517
+   ],
+   "dur": 400
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "formats"
+  },
+  {
+   "move": [
+    610,
+    630
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

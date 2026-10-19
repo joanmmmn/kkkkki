@@ -1,0 +1,111 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://sonorbooks.pl/audiobook/lalka/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1100,
+    160
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "card"
+  },
+  {
+   "move": [
+    1270,
+    470
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "options"
+  },
+  {
+   "move": [
+    1180,
+    733
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    1325,
+    733
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    1468,
+    733
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

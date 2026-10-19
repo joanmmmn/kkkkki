@@ -24,7 +24,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
     if [ "$LIMIT" -gt 0 ] && [ "$NEW" -ge "$LIMIT" ]; then echo "Pausa tras $NEW tramos nuevos (LIMIT=$LIMIT): vuelve a lanzarlo para seguir"; exit 0; fi
     NEW=$((NEW + 1))
     # Se renderiza a un nombre temporal y se renombra al acabar: si el proceso se corta, el tramo a medias no cuenta como hecho.
-    npx remotion render src/index.ts "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf=16 --muted --scale="$SCALE" \
+    npx remotion render src/index.ts "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf="${CRF:-16}" --muted --scale="$SCALE" \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
     mv "${part%.mp4}.tmp.mp4" "$part"
   fi

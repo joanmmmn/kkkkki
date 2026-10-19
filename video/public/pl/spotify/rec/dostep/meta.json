@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 1318,
+ "duration": 35.438,
+ "offset": 0.025,
+ "marks": {
+  "list": 0.378,
+  "own": 4.561,
+  "student": 34.638,
+  "end": 35.438
+ },
+ "events": []
+}

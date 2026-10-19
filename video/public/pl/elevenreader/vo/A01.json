@@ -1,0 +1,174 @@
+{
+ "id": "A01",
+ "hash": "83b3f09b8a9e",
+ "text": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
+ "duration": 14.64,
+ "words": [
+  {
+   "w": "Ten",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "tekst",
+   "s": 0.24,
+   "e": 0.64
+  },
+  {
+   "w": "może",
+   "s": 0.72,
+   "e": 0.88
+  },
+  {
+   "w": "ci",
+   "s": 0.96,
+   "e": 1.04
+  },
+  {
+   "w": "przeczytać",
+   "s": 1.08,
+   "e": 1.52
+  },
+  {
+   "w": "sztuczna",
+   "s": 1.573,
+   "e": 1.88
+  },
+  {
+   "w": "inteligencja",
+   "s": 1.92,
+   "e": 2.64
+  },
+  {
+   "w": "–",
+   "s": 2.88,
+   "e": 2.96
+  },
+  {
+   "w": "nawet",
+   "s": 3.04,
+   "e": 3.28
+  },
+  {
+   "w": "głosem",
+   "s": 3.36,
+   "e": 3.68
+  },
+  {
+   "w": "Piotra",
+   "s": 3.76,
+   "e": 4.0
+  },
+  {
+   "w": "Fronczewskiego.",
+   "s": 4.04,
+   "e": 4.8
+  },
+  {
+   "w": "To",
+   "s": 5.12,
+   "e": 5.28
+  },
+  {
+   "w": "Ilewen",
+   "s": 5.44,
+   "e": 5.84
+  },
+  {
+   "w": "Rider,",
+   "s": 5.92,
+   "e": 6.56
+  },
+  {
+   "w": "aplikacja",
+   "s": 6.64,
+   "e": 7.2
+  },
+  {
+   "w": "od",
+   "s": 7.28,
+   "e": 7.44
+  },
+  {
+   "w": "Ilewen",
+   "s": 7.52,
+   "e": 7.92
+  },
+  {
+   "w": "Labs.",
+   "s": 7.96,
+   "e": 8.32
+  },
+  {
+   "w": "Czy",
+   "s": 8.64,
+   "e": 8.72
+  },
+  {
+   "w": "warto",
+   "s": 8.8,
+   "e": 9.12
+  },
+  {
+   "w": "za",
+   "s": 9.16,
+   "e": 9.2
+  },
+  {
+   "w": "nią",
+   "s": 9.28,
+   "e": 9.36
+  },
+  {
+   "w": "płacić?",
+   "s": 9.44,
+   "e": 9.92
+  },
+  {
+   "w": "Sprawdziliśmy",
+   "s": 10.32,
+   "e": 10.88
+  },
+  {
+   "w": "plan",
+   "s": 10.96,
+   "e": 11.12
+  },
+  {
+   "w": "darmowy,",
+   "s": 11.2,
+   "e": 11.84
+  },
+  {
+   "w": "Ultra,",
+   "s": 11.92,
+   "e": 12.48
+  },
+  {
+   "w": "polskie",
+   "s": 12.52,
+   "e": 12.8
+  },
+  {
+   "w": "audiobooki",
+   "s": 12.88,
+   "e": 13.44
+  },
+  {
+   "w": "i",
+   "s": 13.6,
+   "e": 13.68
+  },
+  {
+   "w": "drobny",
+   "s": 13.76,
+   "e": 14.08
+  },
+  {
+   "w": "druk.",
+   "s": 14.16,
+   "e": 14.64
+  }
+ ],
+ "speechEnd": 14.511
+}

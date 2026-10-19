@@ -1,0 +1,129 @@
+{
+ "id": "A09",
+ "hash": "7e4899e06319",
+ "text": "Działa na iPhonie, iPadzie, Androidzie i w przeglądarce, z synchronizacją, a do Chrome'a jest rozszerzenie. Androida Auto brakuje – i użytkownicy na to narzekają.",
+ "duration": 10.16,
+ "words": [
+  {
+   "w": "Działa",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "na",
+   "s": 0.4,
+   "e": 0.48
+  },
+  {
+   "w": "iPhonie,",
+   "s": 0.6,
+   "e": 1.12
+  },
+  {
+   "w": "iPadzie,",
+   "s": 1.2,
+   "e": 1.84
+  },
+  {
+   "w": "Androidzie",
+   "s": 2.08,
+   "e": 2.48
+  },
+  {
+   "w": "i",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "w",
+   "s": 2.68,
+   "e": 2.72
+  },
+  {
+   "w": "przeglądarce,",
+   "s": 2.76,
+   "e": 3.68
+  },
+  {
+   "w": "z",
+   "s": 3.72,
+   "e": 3.76
+  },
+  {
+   "w": "synchronizacją,",
+   "s": 3.8,
+   "e": 4.96
+  },
+  {
+   "w": "a",
+   "s": 5.0,
+   "e": 5.04
+  },
+  {
+   "w": "do",
+   "s": 5.12,
+   "e": 5.2
+  },
+  {
+   "w": "Chrome'a",
+   "s": 5.24,
+   "e": 5.52
+  },
+  {
+   "w": "jest",
+   "s": 5.6,
+   "e": 5.84
+  },
+  {
+   "w": "rozszerzenie.",
+   "s": 5.88,
+   "e": 6.68
+  },
+  {
+   "w": "Androida",
+   "s": 6.88,
+   "e": 7.28
+  },
+  {
+   "w": "Auto",
+   "s": 7.36,
+   "e": 7.6
+  },
+  {
+   "w": "brakuje",
+   "s": 7.64,
+   "e": 8.08
+  },
+  {
+   "w": "–",
+   "s": 8.32,
+   "e": 8.347
+  },
+  {
+   "w": "i",
+   "s": 8.373,
+   "e": 8.4
+  },
+  {
+   "w": "użytkownicy",
+   "s": 8.48,
+   "e": 9.12
+  },
+  {
+   "w": "na",
+   "s": 9.16,
+   "e": 9.2
+  },
+  {
+   "w": "to",
+   "s": 9.24,
+   "e": 9.28
+  },
+  {
+   "w": "narzekają.",
+   "s": 9.36,
+   "e": 10.16
+  }
+ ],
+ "speechEnd": 10.005
+}

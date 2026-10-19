@@ -1,0 +1,117 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://elevenreader.io/pricing",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,280)"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "clickText": "Monthly",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "window.scrollTo(0,280)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "imports"
+  },
+  {
+   "move": [
+    1150,
+    480
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "smart"
+  },
+  {
+   "move": [
+    1150,
+    674
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "premium"
+  },
+  {
+   "move": [
+    1150,
+    546
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "trial"
+  },
+  {
+   "move": [
+    1262,
+    852
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

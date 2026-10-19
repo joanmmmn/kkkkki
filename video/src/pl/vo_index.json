@@ -1,1 +1,40 @@
-{}
+{
+ "elevenreader": {
+  "A01": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
+  "A02": "ElevenReader czyta na głos twoje pliki, artykuły i strony, a do tego ma bibliotekę audiobooków. Stworzyło go ElevenLabs, firma dwóch Polaków założona w 2022 roku, a polska wersja aplikacji działa od kwietnia 2025 roku.",
+  "A03": "Plan darmowy daje 10 godzin zamiany tekstu na mowę miesięcznie. Ultra na stronie to 11 dolarów miesięcznie albo 99 rocznie, z 3 dniami za darmo, a w polskim App Store – 39 zł miesięcznie albo 349 zł rocznie.",
+  "A04": "Największa siła to twoje teksty: pliki PDF, EPUB, Word, TXT i HTML do 500 stron, linki do artykułów albo zdjęcia kartek. W Ultra import pomija nagłówki i stopki, a limit to 24 godziny audio dziennie.",
+  "A05": "Głosów jest ponad 1000, a aplikacja poleca je według języka telefonu. W Ultra zaprojektujesz też własny głos na podstawie opisu. A wśród ikonicznych głosów jest Piotr Fronczewski – jego cyfrowy głos powstał we współpracy z aktorem.",
+  "A06": "A audiobooki po polsku? Za darmo jest klasyka z Wolnych Lektur, na przykład pierwszy tom „Lalki”, który przeczyta ci dowolny głos z aplikacji. W Ultra są też audiobooki z lektorami – choćby „Lalka” w interpretacji Grzegorza Damięckiego i Krzysztofa Gosztyły czy kryminały Henninga Mankella po polsku.",
+  "A07": "Uwaga na limit: Ultra daje 20 godzin tytułów premium miesięcznie, a „Lalka” z lektorami trwa ponad 36 godzin – to prawie 2 miesiące. Można ją też kupić osobno, na stronie, za 24 dolary.",
+  "A08": "Podczas słuchania tekst podświetla się słowo po słowie. Prędkość podkręcisz do 4 razy, masz wyłącznik czasowy i zakładki. W Ultra pobierzesz teksty i książki offline – pobrane pliki działają przez 60 dni.",
+  "A09": "Działa na iPhonie, iPadzie, Androidzie i w przeglądarce, z synchronizacją, a do Chrome'a jest rozszerzenie. Androida Auto brakuje – i użytkownicy na to narzekają.",
+  "A10": "W Google Play ElevenReader ma 4,6 przy prawie 70 tys. opinii, a w polskim App Store 4,7 przy 704 ocenach. Chwalone są naturalne głosy i to, że przeczyta dowolny plik. Krytykowane: brak Androida Auto, gubienie miejsca po przerwie i nagłe żądania płatnego planu.",
+  "A11": "Plusy: naturalne głosy, prawie każdy tekst zamienisz w audio, darmowa polska klasyka i 10 godzin miesięcznie gratis. Minusy: strona po angielsku i w dolarach, tylko 20 godzin premium, bez współdzielenia konta i bez eksportu nagrań.",
+  "A12": "Czy warto? Jeśli dużo czytasz z PDF-ów, e-booków bez wersji audio albo artykułów – tak. Jeśli szukasz polskich audiobooków z lektorem, porównaj najpierw abonamenty: Audioteka Klub kosztuje 29,90 zł miesięcznie bez limitu godzin.",
+  "B01": "Jak zacząć za darmo? Załóż konto na elevenreader.io albo w aplikacji – przez konto Google, Apple albo adres e-mail. Plan darmowy nie wymaga subskrypcji.",
+  "B02": "Wgraj plik albo wklej link i wybierz głos. Godziny schodzą tylko przy pierwszej zamianie tekstu na mowę – i szybciej, gdy słuchasz szybciej. Ponowne słuchanie i darmowe książki z biblioteki ich nie zużywają.",
+  "B03": "Chcesz Ultra? Na stronie masz 3 dni za darmo. Jeśli nie anulujesz przed końcem próby, subskrypcja ruszy sama i pobierze opłatę. W aplikacji płacisz w złotówkach, przez App Store albo Google Play.",
+  "B04": "Rezygnujesz tam, gdzie kupiłeś: na stronie – awatar, Szczegóły konta, Zarządzaj płatnościami; w telefonie – w subskrypcjach App Store albo Google Play. Samo odinstalowanie aplikacji nie wystarczy. Dostęp masz do końca opłaconego okresu.",
+  "B06": "Wolisz audiobooki z lektorem? W sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+ },
+ "spotify": {
+  "A01": "Spotify ma już w Polsce audiobooki w cenie Premium. Czy warto z nich korzystać? Sprawdziliśmy ceny, limity i drobny druk: co jest dobre, co słabe i jak zacząć.",
+  "A02": "Od 15 października audiobooki są w tej samej aplikacji co muzyka i podcasty. Z Premium masz 12 godzin słuchania miesięcznie bez dopłat. Katalog to ponad 350 000 tytułów, a po polsku – ponad 20 000, dostarczonych przez Legimi.",
+  "A03": "Godziny dostajesz w Premium Individual za 26,99 zł miesięcznie. W Duo za 36,99 zł i w Family za 45,99 zł ma je tylko właściciel planu, a Premium Student za 14,49 zł nie ma ich wcale. Wszystko bez umowy.",
+  "A04": "Godziny liczą się przy normalnej prędkości: 5-godzinny audiobook słuchany 2 razy szybciej i tak zabierze 5 godzin, a ponowne słuchanie też się liczy. Pula odnawia się w dniu rozliczenia, a niewykorzystane godziny przepadają.",
+  "A05": "Spotify podaje, że przeciętny audiobook trwa około 10 godzin – to mniej więcej jedna książka w miesiącu. Więcej daje dodatek Audiobooki+: 15 godzin miesięcznie za 17,99 zł, z pierwszym miesiącem za darmo. Są też jednorazowe doładowania ważne rok.",
+  "A06": "W aplikacji audiobooki są w zakładce Wyszukaj. Tytuły z abonamentu mają oznaczenie „Dostępny w Premium”, karta pokazuje czas trwania i ocenę, a fragment każdego posłuchasz za darmo.",
+  "A07": "Czego nie ma w abonamencie, kupisz osobno, ale tylko w przeglądarce – i taki tytuł nie zjada godzin. Z polskich książek Spotify wymienia na start m.in. „Hardą” Elżbiety Cherezińskiej i „Prawdę zapisaną w popiołach” Joanny Jax.",
+  "A08": "W odtwarzaczu zmienisz prędkość, przewiniesz o 15 sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki albo kod ISBN i słuchasz od tego miejsca.",
+  "A09": "Słuchasz na telefonie, tablecie, komputerze i w przeglądarce, na zegarku Apple Watch i w aucie przez CarPlay albo Android Auto.",
+  "A10": "A opinie? W polskim App Store Spotify ma 4,8 przy 1,5 mln ocen, a w Google Play 4,3 przy 36,5 mln opinii – ale to oceny całej aplikacji, z muzyką. O samych audiobookach opinii prawie nie ma, bo w Polsce są od 15 października.",
+  "A11": "Plusy: godziny w cenie Premium, ponad 20 000 polskich tytułów i jedna aplikacja, też na komputerze. Minusy: tylko 12 godzin, które przepadają, w Duo i Family tylko dla właściciela, Student bez godzin, a dokupowanie kosztuje.",
+  "A12": "Czy warto? Jeśli i tak płacisz za Premium Individual – tak: to bonus na mniej więcej jedną książkę w miesiącu. Jeśli słuchasz dużo, Premium z Audiobookami+ to 44,98 zł za 27 godzin, a Audioteka Klub kosztuje 29,90 zł bez limitu godzin.",
+  "B01": "Jak zacząć? Masz Premium Individual albo jesteś właścicielem planu Duo lub Family? Nic nie musisz robić: wejdź w Wyszukaj i wybierz Audiobooki.",
+  "B02": "Nie masz Premium? Individual ma pierwszy miesiąc za 0 zł, jeśli nigdy nie korzystałeś z Premium, także w planie Family czy Duo. Potem 26,99 zł miesięcznie. Spotify nie pisze wprost, czy w okresie próbnym masz 12 godzin.",
+  "B03": "Ile godzin ci zostało? Dotknij zdjęcia profilowego, wejdź w Twoje Premium i wybierz Czas słuchania audiobooków. Tam kupisz też doładowanie.",
+  "B04": "Rezygnujesz na stronie konta: Zarządzaj swoim planem, a potem Anuluj subskrypcję. Premium działa do końca okresu, ale w okresie próbnym od razu wracasz do wersji darmowej – więc anuluj pod koniec próby, przed płatnością. Audiobooki+ wyłączysz osobno.",
+  "B06": "Wahasz się między Spotify a innymi serwisami? W sonorbooks.pl porównasz, gdzie jeszcze posłuchasz audiobooka i za ile: w Audiotece, Empik Go, Legimi czy Audible. Twoja następna historia już na ciebie czeka."
+ }
+}

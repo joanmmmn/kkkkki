@@ -1,0 +1,199 @@
+{
+ "id": "A12",
+ "hash": "1c2cbd0fadf5",
+ "text": "Czy warto? Jeśli dużo czytasz z PDF-ów, e-booków bez wersji audio albo artykułów – tak. Jeśli szukasz polskich audiobooków z lektorem, porównaj najpierw abonamenty: Audioteka Klub kosztuje 29,90 zł miesięcznie bez limitu godzin.",
+ "duration": 15.84,
+ "words": [
+  {
+   "w": "Czy",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "warto?",
+   "s": 0.32,
+   "e": 0.64
+  },
+  {
+   "w": "Jeśli",
+   "s": 1.12,
+   "e": 1.44
+  },
+  {
+   "w": "dużo",
+   "s": 1.52,
+   "e": 1.72
+  },
+  {
+   "w": "czytasz",
+   "s": 1.76,
+   "e": 2.04
+  },
+  {
+   "w": "z",
+   "s": 2.08,
+   "e": 2.12
+  },
+  {
+   "w": "pe",
+   "s": 2.16,
+   "e": 2.24
+  },
+  {
+   "w": "de",
+   "s": 2.32,
+   "e": 2.4
+  },
+  {
+   "w": "efów,",
+   "s": 2.48,
+   "e": 2.96
+  },
+  {
+   "w": "e-booków",
+   "s": 3.0,
+   "e": 3.36
+  },
+  {
+   "w": "bez",
+   "s": 3.44,
+   "e": 3.6
+  },
+  {
+   "w": "wersji",
+   "s": 3.72,
+   "e": 3.92
+  },
+  {
+   "w": "audio",
+   "s": 4.0,
+   "e": 4.32
+  },
+  {
+   "w": "albo",
+   "s": 4.4,
+   "e": 4.6
+  },
+  {
+   "w": "artykułów",
+   "s": 4.64,
+   "e": 5.28
+  },
+  {
+   "w": "–",
+   "s": 5.6,
+   "e": 5.627
+  },
+  {
+   "w": "tak.",
+   "s": 5.653,
+   "e": 6.16
+  },
+  {
+   "w": "Jeśli",
+   "s": 6.4,
+   "e": 6.64
+  },
+  {
+   "w": "szukasz",
+   "s": 6.72,
+   "e": 6.96
+  },
+  {
+   "w": "polskich",
+   "s": 7.04,
+   "e": 7.44
+  },
+  {
+   "w": "audiobooków",
+   "s": 7.52,
+   "e": 7.92
+  },
+  {
+   "w": "z",
+   "s": 7.96,
+   "e": 8.0
+  },
+  {
+   "w": "lektorem,",
+   "s": 8.08,
+   "e": 8.72
+  },
+  {
+   "w": "porównaj",
+   "s": 8.8,
+   "e": 9.12
+  },
+  {
+   "w": "najpierw",
+   "s": 9.2,
+   "e": 9.52
+  },
+  {
+   "w": "abonamenty:",
+   "s": 9.6,
+   "e": 10.64
+  },
+  {
+   "w": "Audioteka",
+   "s": 10.72,
+   "e": 11.12
+  },
+  {
+   "w": "Klub",
+   "s": 11.2,
+   "e": 11.52
+  },
+  {
+   "w": "kosztuje",
+   "s": 11.6,
+   "e": 11.92
+  },
+  {
+   "w": "dwadzieścia",
+   "s": 11.96,
+   "e": 12.4
+  },
+  {
+   "w": "dziewięć",
+   "s": 12.44,
+   "e": 12.64
+  },
+  {
+   "w": "złotych",
+   "s": 12.72,
+   "e": 13.04
+  },
+  {
+   "w": "dziewięćdziesiąt",
+   "s": 13.12,
+   "e": 13.6
+  },
+  {
+   "w": "groszy",
+   "s": 13.68,
+   "e": 13.88
+  },
+  {
+   "w": "miesięcznie",
+   "s": 13.92,
+   "e": 14.48
+  },
+  {
+   "w": "bez",
+   "s": 14.72,
+   "e": 14.88
+  },
+  {
+   "w": "limitu",
+   "s": 14.96,
+   "e": 15.24
+  },
+  {
+   "w": "godzin.",
+   "s": 15.28,
+   "e": 15.84
+  }
+ ],
+ "speechEnd": 15.743
+}

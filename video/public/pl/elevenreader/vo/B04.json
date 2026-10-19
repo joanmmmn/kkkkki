@@ -1,0 +1,174 @@
+{
+ "id": "B04",
+ "hash": "ab87bc1cab75",
+ "text": "Rezygnujesz tam, gdzie kupiłeś: na stronie – awatar, Szczegóły konta, Zarządzaj płatnościami; w telefonie – w subskrypcjach App Store albo Google Play. Samo odinstalowanie aplikacji nie wystarczy. Dostęp masz do końca opłaconego okresu.",
+ "duration": 14.96,
+ "words": [
+  {
+   "w": "Rezygnujesz",
+   "s": 0.0,
+   "e": 0.64
+  },
+  {
+   "w": "tam,",
+   "s": 0.76,
+   "e": 0.907
+  },
+  {
+   "w": "gdzie",
+   "s": 0.933,
+   "e": 1.04
+  },
+  {
+   "w": "kupiłeś:",
+   "s": 1.12,
+   "e": 1.96
+  },
+  {
+   "w": "na",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "stronie",
+   "s": 2.16,
+   "e": 2.8
+  },
+  {
+   "w": "–",
+   "s": 2.827,
+   "e": 2.853
+  },
+  {
+   "w": "awatar,",
+   "s": 2.88,
+   "e": 3.547
+  },
+  {
+   "w": "Szczegóły",
+   "s": 3.573,
+   "e": 3.92
+  },
+  {
+   "w": "konta,",
+   "s": 4.0,
+   "e": 4.52
+  },
+  {
+   "w": "Zarządzaj",
+   "s": 4.56,
+   "e": 5.04
+  },
+  {
+   "w": "płatnościami;",
+   "s": 5.12,
+   "e": 6.1
+  },
+  {
+   "w": "w",
+   "s": 6.12,
+   "e": 6.14
+  },
+  {
+   "w": "telefonie",
+   "s": 6.16,
+   "e": 6.88
+  },
+  {
+   "w": "–",
+   "s": 6.907,
+   "e": 6.933
+  },
+  {
+   "w": "w",
+   "s": 6.96,
+   "e": 7.013
+  },
+  {
+   "w": "subskrypcjach",
+   "s": 7.067,
+   "e": 7.76
+  },
+  {
+   "w": "App",
+   "s": 7.84,
+   "e": 8.0
+  },
+  {
+   "w": "Store",
+   "s": 8.08,
+   "e": 8.32
+  },
+  {
+   "w": "albo",
+   "s": 8.4,
+   "e": 8.64
+  },
+  {
+   "w": "Google",
+   "s": 8.72,
+   "e": 8.96
+  },
+  {
+   "w": "Play.",
+   "s": 9.04,
+   "e": 9.72
+  },
+  {
+   "w": "Samo",
+   "s": 9.76,
+   "e": 10.0
+  },
+  {
+   "w": "odinstalowanie",
+   "s": 10.08,
+   "e": 10.72
+  },
+  {
+   "w": "aplikacji",
+   "s": 10.76,
+   "e": 11.2
+  },
+  {
+   "w": "nie",
+   "s": 11.28,
+   "e": 11.36
+  },
+  {
+   "w": "wystarczy.",
+   "s": 11.4,
+   "e": 12.267
+  },
+  {
+   "w": "Dostęp",
+   "s": 12.293,
+   "e": 12.72
+  },
+  {
+   "w": "masz",
+   "s": 12.8,
+   "e": 12.92
+  },
+  {
+   "w": "do",
+   "s": 12.96,
+   "e": 13.12
+  },
+  {
+   "w": "końca",
+   "s": 13.24,
+   "e": 13.44
+  },
+  {
+   "w": "opłaconego",
+   "s": 13.52,
+   "e": 14.0
+  },
+  {
+   "w": "okresu.",
+   "s": 14.08,
+   "e": 14.96
+  }
+ ],
+ "speechEnd": 14.575
+}

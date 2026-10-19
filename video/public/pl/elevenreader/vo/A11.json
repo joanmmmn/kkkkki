@@ -1,0 +1,184 @@
+{
+ "id": "A11",
+ "hash": "0e6956ed5a03",
+ "text": "Plusy: naturalne głosy, prawie każdy tekst zamienisz w audio, darmowa polska klasyka i 10 godzin miesięcznie gratis. Minusy: strona po angielsku i w dolarach, tylko 20 godzin premium, bez współdzielenia konta i bez eksportu nagrań.",
+ "duration": 15.76,
+ "words": [
+  {
+   "w": "Plusy:",
+   "s": 0.0,
+   "e": 0.8
+  },
+  {
+   "w": "naturalne",
+   "s": 0.88,
+   "e": 1.36
+  },
+  {
+   "w": "głosy,",
+   "s": 1.44,
+   "e": 2.0
+  },
+  {
+   "w": "prawie",
+   "s": 2.04,
+   "e": 2.32
+  },
+  {
+   "w": "każdy",
+   "s": 2.4,
+   "e": 2.8
+  },
+  {
+   "w": "tekst",
+   "s": 2.92,
+   "e": 3.2
+  },
+  {
+   "w": "zamienisz",
+   "s": 3.24,
+   "e": 3.6
+  },
+  {
+   "w": "w",
+   "s": 3.64,
+   "e": 3.68
+  },
+  {
+   "w": "audio,",
+   "s": 3.76,
+   "e": 4.347
+  },
+  {
+   "w": "darmowa",
+   "s": 4.373,
+   "e": 4.72
+  },
+  {
+   "w": "polska",
+   "s": 4.76,
+   "e": 5.04
+  },
+  {
+   "w": "klasyka",
+   "s": 5.12,
+   "e": 5.76
+  },
+  {
+   "w": "i",
+   "s": 5.84,
+   "e": 5.92
+  },
+  {
+   "w": "10",
+   "s": 5.96,
+   "e": 6.32
+  },
+  {
+   "w": "godzin",
+   "s": 6.4,
+   "e": 6.64
+  },
+  {
+   "w": "miesięcznie",
+   "s": 6.68,
+   "e": 7.12
+  },
+  {
+   "w": "gratis.",
+   "s": 7.6,
+   "e": 8.213
+  },
+  {
+   "w": "Minusy:",
+   "s": 8.347,
+   "e": 8.92
+  },
+  {
+   "w": "strona",
+   "s": 8.96,
+   "e": 9.28
+  },
+  {
+   "w": "po",
+   "s": 9.32,
+   "e": 9.36
+  },
+  {
+   "w": "angielsku",
+   "s": 9.44,
+   "e": 9.92
+  },
+  {
+   "w": "i",
+   "s": 10.0,
+   "e": 10.04
+  },
+  {
+   "w": "w",
+   "s": 10.08,
+   "e": 10.107
+  },
+  {
+   "w": "dolarach,",
+   "s": 10.133,
+   "e": 10.827
+  },
+  {
+   "w": "tylko",
+   "s": 10.853,
+   "e": 11.12
+  },
+  {
+   "w": "20",
+   "s": 11.16,
+   "e": 11.52
+  },
+  {
+   "w": "godzin",
+   "s": 11.6,
+   "e": 11.92
+  },
+  {
+   "w": "premium,",
+   "s": 12.24,
+   "e": 12.64
+  },
+  {
+   "w": "bez",
+   "s": 12.72,
+   "e": 12.8
+  },
+  {
+   "w": "współdzielenia",
+   "s": 12.88,
+   "e": 13.44
+  },
+  {
+   "w": "konta",
+   "s": 13.64,
+   "e": 14.0
+  },
+  {
+   "w": "i",
+   "s": 14.08,
+   "e": 14.16
+  },
+  {
+   "w": "bez",
+   "s": 14.28,
+   "e": 14.4
+  },
+  {
+   "w": "eksportu",
+   "s": 14.52,
+   "e": 14.88
+  },
+  {
+   "w": "nagrań.",
+   "s": 14.92,
+   "e": 15.76
+  }
+ ],
+ "speechEnd": 15.33
+}

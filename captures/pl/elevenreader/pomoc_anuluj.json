@@ -1,0 +1,117 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-i-cancel-my-eleven-reader-subscription",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    1903,
+    19
+   ],
+   "dur": 10
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "apple"
+  },
+  {
+   "move": [
+    760,
+    338
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "google"
+  },
+  {
+   "move": [
+    760,
+    386
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "web"
+  },
+  {
+   "move": [
+    760,
+    462
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "note"
+  },
+  {
+   "move": [
+    760,
+    538
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

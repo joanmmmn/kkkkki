@@ -1,0 +1,239 @@
+{
+ "id": "A06",
+ "hash": "74df1499e6d6",
+ "text": "A audiobooki po polsku? Za darmo jest klasyka z Wolnych Lektur, na przykład pierwszy tom „Lalki”, który przeczyta ci dowolny głos z aplikacji. W Ultra są też audiobooki z lektorami – choćby „Lalka” w interpretacji Grzegorza Damięckiego i Krzysztofa Gosztyły czy kryminały Henninga Mankella po polsku.",
+ "duration": 17.36,
+ "words": [
+  {
+   "w": "A",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "audiobooki",
+   "s": 0.16,
+   "e": 0.64
+  },
+  {
+   "w": "po",
+   "s": 0.68,
+   "e": 0.72
+  },
+  {
+   "w": "polsku?",
+   "s": 0.8,
+   "e": 1.68
+  },
+  {
+   "w": "Za",
+   "s": 1.76,
+   "e": 1.84
+  },
+  {
+   "w": "darmo",
+   "s": 1.88,
+   "e": 2.12
+  },
+  {
+   "w": "jest",
+   "s": 2.16,
+   "e": 2.32
+  },
+  {
+   "w": "klasyka",
+   "s": 2.4,
+   "e": 2.72
+  },
+  {
+   "w": "z",
+   "s": 2.8,
+   "e": 2.84
+  },
+  {
+   "w": "Wolnych",
+   "s": 2.88,
+   "e": 3.12
+  },
+  {
+   "w": "Lektur,",
+   "s": 3.2,
+   "e": 3.76
+  },
+  {
+   "w": "na",
+   "s": 3.8,
+   "e": 3.84
+  },
+  {
+   "w": "przykład",
+   "s": 3.92,
+   "e": 4.24
+  },
+  {
+   "w": "pierwszy",
+   "s": 4.32,
+   "e": 4.64
+  },
+  {
+   "w": "tom",
+   "s": 4.72,
+   "e": 4.88
+  },
+  {
+   "w": "„Lalki”,",
+   "s": 4.907,
+   "e": 5.6
+  },
+  {
+   "w": "który",
+   "s": 5.68,
+   "e": 5.92
+  },
+  {
+   "w": "przeczyta",
+   "s": 5.96,
+   "e": 6.32
+  },
+  {
+   "w": "ci",
+   "s": 6.44,
+   "e": 6.56
+  },
+  {
+   "w": "dowolny",
+   "s": 6.6,
+   "e": 7.04
+  },
+  {
+   "w": "głos",
+   "s": 7.16,
+   "e": 7.28
+  },
+  {
+   "w": "z",
+   "s": 7.36,
+   "e": 7.4
+  },
+  {
+   "w": "aplikacji.",
+   "s": 7.44,
+   "e": 8.52
+  },
+  {
+   "w": "W",
+   "s": 8.56,
+   "e": 8.64
+  },
+  {
+   "w": "Ultra",
+   "s": 8.8,
+   "e": 8.96
+  },
+  {
+   "w": "są",
+   "s": 9.04,
+   "e": 9.16
+  },
+  {
+   "w": "też",
+   "s": 9.2,
+   "e": 9.36
+  },
+  {
+   "w": "audiobooki",
+   "s": 9.44,
+   "e": 9.8
+  },
+  {
+   "w": "z",
+   "s": 9.84,
+   "e": 9.88
+  },
+  {
+   "w": "lektorami",
+   "s": 9.92,
+   "e": 10.64
+  },
+  {
+   "w": "–",
+   "s": 10.68,
+   "e": 10.72
+  },
+  {
+   "w": "choćby",
+   "s": 10.76,
+   "e": 11.04
+  },
+  {
+   "w": "„Lalka”",
+   "s": 11.067,
+   "e": 11.48
+  },
+  {
+   "w": "w",
+   "s": 11.52,
+   "e": 11.56
+  },
+  {
+   "w": "interpretacji",
+   "s": 11.6,
+   "e": 12.24
+  },
+  {
+   "w": "Grzegorza",
+   "s": 12.32,
+   "e": 12.68
+  },
+  {
+   "w": "Damięckiego",
+   "s": 12.72,
+   "e": 13.36
+  },
+  {
+   "w": "i",
+   "s": 13.4,
+   "e": 13.44
+  },
+  {
+   "w": "Krzysztofa",
+   "s": 13.48,
+   "e": 13.84
+  },
+  {
+   "w": "Gosztyły",
+   "s": 13.92,
+   "e": 14.72
+  },
+  {
+   "w": "czy",
+   "s": 14.8,
+   "e": 14.96
+  },
+  {
+   "w": "kryminały",
+   "s": 15.04,
+   "e": 15.44
+  },
+  {
+   "w": "Henninga",
+   "s": 15.52,
+   "e": 15.84
+  },
+  {
+   "w": "Mankella",
+   "s": 15.92,
+   "e": 16.32
+  },
+  {
+   "w": "po",
+   "s": 16.4,
+   "e": 16.48
+  },
+  {
+   "w": "polsku.",
+   "s": 16.52,
+   "e": 17.36
+  }
+ ],
+ "speechEnd": 16.988
+}

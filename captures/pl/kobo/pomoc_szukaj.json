@@ -1,0 +1,121 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://help.kobo.com/hc/en-us/articles/360018976213-Search-for-Kobo-Plus-titles",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "try{stP()}catch(e){}; document.querySelectorAll('div[id^=cki]').forEach(e=>e.remove())"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,1100)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "filtr"
+  },
+  {
+   "move": [
+    1166,
+    110
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    970,
+    167
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    910,
+    398
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 2660,
+   "dur": 2200
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "czytnik"
+  },
+  {
+   "move": [
+    1000,
+    345
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "move": [
+    900,
+    868
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

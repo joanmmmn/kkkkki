@@ -43,3 +43,5 @@ web/mejores-plataformas/preview-movil/
 
 # SonorBooks Polska: restos de las grabaciones
 video/public/pl/**/concat.txt
+video/public/pl/**/frames/
+video/out/

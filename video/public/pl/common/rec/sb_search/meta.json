@@ -1,0 +1,21 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 2,
+ "frames": 785,
+ "duration": 17.929,
+ "offset": 0.025,
+ "marks": {
+  "to_search": 0.684,
+  "typing": 2.124,
+  "enter": 4.021,
+  "results": 6.636,
+  "click_result": 8.05,
+  "ficha": 10.999,
+  "options": 13.564,
+  "end": 17.929
+ },
+ "events": []
+}

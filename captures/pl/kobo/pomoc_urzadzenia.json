@@ -1,0 +1,101 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://help.kobo.com/hc/en-us/articles/360017964574-Devices-that-support-audiobooks",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "try{stP()}catch(e){}; document.querySelectorAll('div[id^=cki]').forEach(e=>e.remove())"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    660,
+    230
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "list"
+  },
+  {
+   "move": [
+    875,
+    703
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 500
+  },
+  {
+   "move": [
+    1130,
+    732
+   ],
+   "dur": 1600
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    960,
+    703
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

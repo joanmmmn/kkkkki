@@ -1,0 +1,111 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://elevenreader.io/audiobooks/lalka-audiobook/983KJwqh8GXFo3AFK38F",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    600,
+    317
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "get"
+  },
+  {
+   "move": [
+    524,
+    481
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 560,
+   "dur": 1600
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "details"
+  },
+  {
+   "move": [
+    760,
+    578
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "move": [
+    800,
+    614
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

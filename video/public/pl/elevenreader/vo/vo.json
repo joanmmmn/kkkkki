@@ -1,0 +1,99 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
+   "say": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To Ilewen Rider, aplikacja od Ilewen Labs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk."
+  },
+  {
+   "id": "A02",
+   "text": "ElevenReader czyta na głos twoje pliki, artykuły i strony, a do tego ma bibliotekę audiobooków. Stworzyło go ElevenLabs, firma dwóch Polaków założona w 2022 roku, a polska wersja aplikacji działa od kwietnia 2025 roku.",
+   "say": "Ilewen Rider czyta na głos twoje pliki, artykuły i strony, a do tego ma bibliotekę audiobooków. Stworzyło go Ilewen Labs, firma dwóch Polaków założona w dwa tysiące dwudziestym drugim roku, a polska wersja aplikacji działa od kwietnia dwa tysiące dwudziestego piątego roku."
+  },
+  {
+   "id": "A03",
+   "text": "Plan darmowy daje 10 godzin zamiany tekstu na mowę miesięcznie. Ultra na stronie to 11 dolarów miesięcznie albo 99 rocznie, z 3 dniami za darmo, a w polskim App Store – 39 zł miesięcznie albo 349 zł rocznie.",
+   "say": "Plan darmowy daje dziesięć godzin zamiany tekstu na mowę miesięcznie. Ultra na stronie to jedenaście dolarów miesięcznie albo dziewięćdziesiąt dziewięć rocznie, z trzema dniami za darmo, a w polskim Ep Storze – trzydzieści dziewięć złotych miesięcznie albo trzysta czterdzieści dziewięć złotych rocznie."
+  },
+  {
+   "id": "A04",
+   "text": "Największa siła to twoje teksty: pliki PDF, EPUB, Word, TXT i HTML do 500 stron, linki do artykułów albo zdjęcia kartek. W Ultra import pomija nagłówki i stopki, a limit to 24 godziny audio dziennie.",
+   "say": "Największa siła to twoje teksty: pliki pe de ef, e-pub, Łord, te iks te i ha te em el do pięciuset stron, linki do artykułów albo zdjęcia kartek. W Ultra import pomija nagłówki i stopki, a limit to dwadzieścia cztery godziny audio dziennie."
+  },
+  {
+   "id": "A05",
+   "text": "Głosów jest ponad 1000, a aplikacja poleca je według języka telefonu. W Ultra zaprojektujesz też własny głos na podstawie opisu. A wśród ikonicznych głosów jest Piotr Fronczewski – jego cyfrowy głos powstał we współpracy z aktorem.",
+   "say": "Głosów jest ponad tysiąc, a aplikacja poleca je według języka telefonu. W Ultra zaprojektujesz też własny głos na podstawie opisu. A wśród ikonicznych głosów jest Piotr Fronczewski – jego cyfrowy głos powstał we współpracy z aktorem."
+  },
+  {
+   "id": "A06",
+   "text": "A audiobooki po polsku? Za darmo jest klasyka z Wolnych Lektur, na przykład pierwszy tom „Lalki”, który przeczyta ci dowolny głos z aplikacji. W Ultra są też audiobooki z lektorami – choćby „Lalka” w interpretacji Grzegorza Damięckiego i Krzysztofa Gosztyły czy kryminały Henninga Mankella po polsku.",
+   "say": "A audiobooki po polsku? Za darmo jest klasyka z Wolnych Lektur, na przykład pierwszy tom „Lalki”, który przeczyta ci dowolny głos z aplikacji. W Ultra są też audiobooki z lektorami – choćby „Lalka” w interpretacji Grzegorza Damięckiego i Krzysztofa Gosztyły czy kryminały Heninga Mankela po polsku."
+  },
+  {
+   "id": "A07",
+   "text": "Uwaga na limit: Ultra daje 20 godzin tytułów premium miesięcznie, a „Lalka” z lektorami trwa ponad 36 godzin – to prawie 2 miesiące. Można ją też kupić osobno, na stronie, za 24 dolary.",
+   "say": "Uwaga na limit: Ultra daje dwadzieścia godzin tytułów premium miesięcznie, a „Lalka” z lektorami trwa ponad trzydzieści sześć godzin – to prawie dwa miesiące. Można ją też kupić osobno, na stronie, za dwadzieścia cztery dolary."
+  },
+  {
+   "id": "A08",
+   "text": "Podczas słuchania tekst podświetla się słowo po słowie. Prędkość podkręcisz do 4 razy, masz wyłącznik czasowy i zakładki. W Ultra pobierzesz teksty i książki offline – pobrane pliki działają przez 60 dni.",
+   "say": "Podczas słuchania tekst podświetla się słowo po słowie. Prędkość podkręcisz do czterech razy, masz wyłącznik czasowy i zakładki. W Ultra pobierzesz teksty i książki offline – pobrane pliki działają przez sześćdziesiąt dni."
+  },
+  {
+   "id": "A09",
+   "text": "Działa na iPhonie, iPadzie, Androidzie i w przeglądarce, z synchronizacją, a do Chrome'a jest rozszerzenie. Androida Auto brakuje – i użytkownicy na to narzekają.",
+   "say": "Działa na ajfonie, ajpadzie, Androidzie i w przeglądarce, z synchronizacją, a do Kroma jest rozszerzenie. Androida Auto brakuje – i użytkownicy na to narzekają."
+  },
+  {
+   "id": "A10",
+   "text": "W Google Play ElevenReader ma 4,6 przy prawie 70 tys. opinii, a w polskim App Store 4,7 przy 704 ocenach. Chwalone są naturalne głosy i to, że przeczyta dowolny plik. Krytykowane: brak Androida Auto, gubienie miejsca po przerwie i nagłe żądania płatnego planu.",
+   "say": "W Gugl Plej Ilewen Rider ma cztery i sześć dziesiątych przy prawie siedemdziesięciu tysiącach opinii, a w polskim Ep Storze cztery i siedem dziesiątych przy siedmiuset czterech ocenach. Chwalone są naturalne głosy i to, że przeczyta dowolny plik. Krytykowane: brak Androida Auto, gubienie miejsca po przerwie i nagłe żądania płatnego planu."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: naturalne głosy, prawie każdy tekst zamienisz w audio, darmowa polska klasyka i 10 godzin miesięcznie gratis. Minusy: strona po angielsku i w dolarach, tylko 20 godzin premium, bez współdzielenia konta i bez eksportu nagrań.",
+   "say": "Plusy: naturalne głosy, prawie każdy tekst zamienisz w audio, darmowa polska klasyka i dziesięć godzin miesięcznie gratis. Minusy: strona po angielsku i w dolarach, tylko dwadzieścia godzin premium, bez współdzielenia konta i bez eksportu nagrań."
+  },
+  {
+   "id": "A12",
+   "text": "Czy warto? Jeśli dużo czytasz z PDF-ów, e-booków bez wersji audio albo artykułów – tak. Jeśli szukasz polskich audiobooków z lektorem, porównaj najpierw abonamenty: Audioteka Klub kosztuje 29,90 zł miesięcznie bez limitu godzin.",
+   "say": "Czy warto? Jeśli dużo czytasz z pe de efów, e-booków bez wersji audio albo artykułów – tak. Jeśli szukasz polskich audiobooków z lektorem, porównaj najpierw abonamenty: Audioteka Klub kosztuje dwadzieścia dziewięć złotych dziewięćdziesiąt groszy miesięcznie bez limitu godzin."
+  },
+  {
+   "id": "B01",
+   "text": "Jak zacząć za darmo? Załóż konto na elevenreader.io albo w aplikacji – przez konto Google, Apple albo adres e-mail. Plan darmowy nie wymaga subskrypcji.",
+   "say": "Jak zacząć za darmo? Załóż konto na ilewen rider kropka i o albo w aplikacji – przez konto Gugl, Epl albo adres imejl. Plan darmowy nie wymaga subskrypcji."
+  },
+  {
+   "id": "B02",
+   "text": "Wgraj plik albo wklej link i wybierz głos. Godziny schodzą tylko przy pierwszej zamianie tekstu na mowę – i szybciej, gdy słuchasz szybciej. Ponowne słuchanie i darmowe książki z biblioteki ich nie zużywają."
+  },
+  {
+   "id": "B03",
+   "text": "Chcesz Ultra? Na stronie masz 3 dni za darmo. Jeśli nie anulujesz przed końcem próby, subskrypcja ruszy sama i pobierze opłatę. W aplikacji płacisz w złotówkach, przez App Store albo Google Play.",
+   "say": "Chcesz Ultra? Na stronie masz trzy dni za darmo. Jeśli nie anulujesz przed końcem próby, subskrypcja ruszy sama i pobierze opłatę. W aplikacji płacisz w złotówkach, przez Ep Stor albo Gugl Plej."
+  },
+  {
+   "id": "B04",
+   "text": "Rezygnujesz tam, gdzie kupiłeś: na stronie – awatar, Szczegóły konta, Zarządzaj płatnościami; w telefonie – w subskrypcjach App Store albo Google Play. Samo odinstalowanie aplikacji nie wystarczy. Dostęp masz do końca opłaconego okresu.",
+   "say": "Rezygnujesz tam, gdzie kupiłeś: na stronie – awatar, Szczegóły konta, Zarządzaj płatnościami; w telefonie – w subskrypcjach Ep Stor albo Gugl Plej. Samo odinstalowanie aplikacji nie wystarczy. Dostęp masz do końca opłaconego okresu."
+  },
+  {
+   "id": "B06",
+   "text": "Wolisz audiobooki z lektorem? W sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Wolisz audiobooki z lektorem? W sonorbooks kropka pe el porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

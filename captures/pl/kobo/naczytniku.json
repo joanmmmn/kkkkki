@@ -1,0 +1,121 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.naczytniku.pl/kobo-plus-w-polsce-jak-wypada-w-porownaniu-z-legimi-i-empik-go/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "document.querySelector('#sidebar-primary') && (document.querySelector('#sidebar-primary').style.visibility='hidden')"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,2780)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "angielski"
+  },
+  {
+   "move": [
+    700,
+    175
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    800,
+    228
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 3100,
+   "dur": 2200
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "ceny"
+  },
+  {
+   "move": [
+    850,
+    216
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    640,
+    268
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "move": [
+    740,
+    353
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

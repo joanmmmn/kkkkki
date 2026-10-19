@@ -1,0 +1,101 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://help.kobo.com/hc/en-us/articles/360018976153-Kobo-Plus-Common-questions",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "try{stP()}catch(e){}; document.querySelectorAll('div[id^=cki]').forEach(e=>e.remove())"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,1200)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "poland"
+  },
+  {
+   "move": [
+    1222,
+    463
+   ],
+   "dur": 1300
+  },
+  {
+   "wait": 3800
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 1750,
+   "dur": 2200
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "unavail"
+  },
+  {
+   "move": [
+    900,
+    290
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1227,
+    390
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "id": "01_klub_plany",
+    "para": [
+      "A01",
+      "A02",
+      "A03"
+    ],
+    "url": "https://klub.audioteka.com/",
+    "viewport": "desktop",
+    "que_se_ve": "Cabecera «Wspaniały wybór audiobooków po polsku» (Ponad 50.000…, Ponad 200 superprodukcji…, Nawet 500…), portadas «Krawędź wieczności / Komtur / Wiedźma / Biosfera»; tarjetas «Miesięcznie»: Plan Smart 20h 17,90 zł, Plan na Start (17,90 zł tachado → 10,90 zł «przez 3 mies., później 29,90 zł») y Plan Optymalny 29,90 zł «14 dni za darmo dla nowych użytkowników»; pestañas «6 miesięcy» (179,40 zł) y «12 miesięcy» (299,00 zł).",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–4 s: cabecera quieta. 4–12 s: bajar hasta las tres tarjetas mensuales y pasar el ratón por Plan Optymalny (29,90 zł, «14 dni za darmo…»), luego Plan Smart 20h y Plan na Start. ≈12 s: clic en «6 miesięcy» (179,40 zł / 6 miesięcy); ≈16 s: clic en «12 miesięcy» (299,00 zł / 12 miesięcy, «12 miesięcy słuchania w cenie 10*»); hasta 20 s. Las pestañas se pulsan haciendo clic sobre su texto. No pulsar «Wybierz», «Wybierz taniej» ni «Wypróbuj 14 dni za darmo». OJO: el precio 10,90 zł del Plan na Start solo vale hasta el 26.10.2026 (15:00); si se publica después, no usar el tramo en que se ve esa tarjeta. Grabado desde servidor fuera de Polonia: comprobado el 19.10.2026 que la URL no redirige a otra versión de país y sale en polaco con precios en zł."
+  },
+  {
+    "id": "02_klub_korzysci",
+    "para": [
+      "A02",
+      "A06",
+      "A07"
+    ],
+    "url": "https://klub.audioteka.com/",
+    "viewport": "desktop",
+    "que_se_ve": "Sección «W ramach Audioteka Klub zyskujesz»: 50.000+ tytułów, 200+ superprodukcji, tryb offline, 1.300+ głosów, ceny klubowe, Audioteka Kids, 700+ tytułów tylko u nas; bloques «Słuchaj w ramach subskrypcji», «Kupuj w najlepszej klubowej cenie», «Dziel się z bliskimi» y «Wcześniejszy dostęp do najlepszych premier».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–5 s: bajar hasta «W ramach Audioteka Klub zyskujesz» y recorrer los iconos. 5–10 s: bajar a «Kupuj w najlepszej klubowej cenie» y «Dziel się z bliskimi». 10–14 s: «Wcześniejszy dostęp do najlepszych premier». No desplegar el FAQ."
+  },
+  {
+    "id": "03_strona_glowna",
+    "para": [
+      "A04"
+    ],
+    "url": "https://audioteka.com/pl/",
+    "viewport": "desktop",
+    "que_se_ve": "Portada de audioteka.com/pl: barra «Dołącz do Klubu i słuchaj najlepszych produkcji przez 14 dni za darmo!», menú (Audioseriale, Superprodukcje, Bestsellery, Nowości) y carruseles «Nowości», «Superprodukcje w Audioteka Klub», «Najnowsze w Audioteka Klub».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–4 s: arriba. 4–10 s: bajar hasta «Superprodukcje w Audioteka Klub». OJO: el banner «Tysiące tytułów za 10,90 zł/mies. przez 3 miesiące» es la promo que acaba el 26.10.2026: no encuadrarlo si se publica después. Toma de reserva (no la cita ninguna escena)."
+  },
+  {
+    "id": "04_katalog",
+    "para": [
+      "A04"
+    ],
+    "url": "https://audioteka.com/pl/katalog/",
+    "viewport": "desktop",
+    "que_se_ve": "«Katalog audiobooków» con las tarjetas de categorías y el interruptor «Wszystkie | Audioteka Klub».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–4 s: título «Katalog audiobooków» y categorías. ≈5 s: clic en «Audioteka Klub» del interruptor que está bajo «Nowości / Oferty specjalne / Bestsellery» (el que está en la parte de arriba, no el enlace del pie). 5–10 s: categorías con la vista «Audioteka Klub»."
+  },
+  {
+    "id": "05_solaris",
+    "para": [
+      "A05"
+    ],
+    "url": "https://audioteka.com/pl/audiobook/solaris-superprodukcja/",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha «Solaris» (Stanisław Lem): «Ocena użytkowników 4,8», «Głosy: Adam Woronowicz, Magdalena Cielecka, Robert Więckiewicz, zespół lektorów», «Długość 7 godzin 56 minut», «Superprodukcje Audioteki»; caja «Dostępne w Klubie – W ramach subskrypcji Audioteka Klub» y «39,99 zł Poza Audioteka Klub».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–12 s: ficha arriba; pasar el ratón por la nota 4,8, por los nombres de «Głosy», por «7 godzin 56 minut» y por la caja «Dostępne w Klubie» y «39,99 zł». No pulsar «Słuchaj fragmentu» (suena audio) ni «Dołącz do audioteka klub»."
+  },
+  {
+    "id": "06_superprodukcje",
+    "para": [
+      "A06"
+    ],
+    "url": "https://audioteka.com/pl/katalog/superprodukcje-audioteki/",
+    "viewport": "desktop",
+    "que_se_ve": "Rejilla «Superprodukcje Audioteki»: Tajemnica Tytana, Janosik, Kamień, Smoczyca, Solaris, Mistrz i Małgorzata, Ojciec Chrzestny, Gra o Tron…",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–10 s: bajar despacio por la rejilla de portadas. Sin clics."
+  },
+  {
+    "id": "07_kids",
+    "para": [
+      "A08B"
+    ],
+    "url": "https://klub.audioteka.com/audioteka-kids/",
+    "viewport": "desktop",
+    "que_se_ve": "«Odkrywaj Audioteka Kids!» – «Aplikacja, która zapewnia nieograniczony dostęp do tysięcy audiobooków dla Twojego dziecka w ramach subskrypcji Audioteka Klub».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). 0–6 s: cabecera quieta. (kids.audioteka.com redirige aquí.) No bajar hasta las tarjetas de precio si se publica después del 26.10.2026 (llevan la promo de 10,90 zł)."
+  },
+  {
+    "id": "08_pomoc_klub",
+    "para": [
+      "A08",
+      "B05"
+    ],
+    "url": "https://audioteka.com/pl/centrum-pomocy/audioteka-klub/",
+    "viewport": "desktop",
+    "que_se_ve": "Centro de ayuda, sección Audioteka Klub: pregunta «Jak mogę wyłączyć subskrypcję Audioteka Klub?» desplegada («Ustawienia konta» → «Zarządzaj Audioteka Klub» → «Anuluj subskrypcję» → «Rezygnuję z subskrypcji»; Google / Apple; «subskrypcja nie zostanie anulowana automatycznie w przypadku usunięcia aplikacji»); pregunta «Jak działa limit godzin w planach limitowanych Audioteka Klub?».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). Bajar hasta «Jak mogę wyłączyć subskrypcję Audioteka Klub?» y hacer clic para desplegarla. 0–6 s: recorrer la respuesta (Ustawienia konta, Zarządzaj Audioteka Klub, «Anuluj subskrypcję», la frase sobre borrar la app). Plegarla y desplegar «Jak działa limit godzin w planach limitowanych Audioteka Klub?»; 6–12 s: su respuesta."
+  },
+  {
+    "id": "09_klub_mobile",
+    "para": [
+      "B01",
+      "B02"
+    ],
+    "url": "https://klub.audioteka.com/",
+    "viewport": "mobile",
+    "que_se_ve": "Planes en móvil: tarjeta «Plan Optymalny» 29,90 zł / miesiąc, «14 dni za darmo dla nowych użytkowników» y botón «Wypróbuj 14 dni za darmo».",
+    "pasos": "En el aviso «Cenimy Twoją prywatność» pulsar «Ustawienia zaawansowane» y después «Zapisz» (todas las casillas vienen desactivadas; no pulsar «Akceptuję…» ni «Włączam wszystko…»). Con la pestaña «Miesięcznie», bajar hasta la tarjeta «Plan Optymalny». 0–5 s: precio y «14 dni za darmo dla nowych użytkowników». 5–10 s: centrar el botón «Wypróbuj 14 dni za darmo» sin pulsarlo."
+  },
+  {
+    "id": "10_sonorbooks_solaris",
+    "para": [
+      "B06"
+    ],
+    "url": "https://sonorbooks.pl/audiobook/solaris/",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de SonorBooks «Solaris»: «Nasza rekomendacja: audioteka · 0 zł · 14 dni za darmo», «Ten audiobook jest w abonamencie Klubu», «Ponad 50 000 tytułów bez limitu godzin» y la fila «Przeanalizowane opcje: audioteka · Legimi · empik go · ebookpoint».",
+    "pasos": "Pulsar «Rozumiem» en el aviso de cookies de abajo. 0–4 s: cabecera de la ficha (portada, «Czyta…», «7 godz. 56 min»). 4–10 s: bajar a la caja «Nasza rekomendacja» y pasar el ratón por «Ten audiobook jest w abonamencie Klubu». No pulsar «Wypróbuj za darmo» (es enlace de salida) ni desplegar las demás opciones."
+  }
+]

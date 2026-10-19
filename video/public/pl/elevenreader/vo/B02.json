@@ -1,0 +1,174 @@
+{
+ "id": "B02",
+ "hash": "b1c033774bb3",
+ "text": "Wgraj plik albo wklej link i wybierz głos. Godziny schodzą tylko przy pierwszej zamianie tekstu na mowę – i szybciej, gdy słuchasz szybciej. Ponowne słuchanie i darmowe książki z biblioteki ich nie zużywają.",
+ "duration": 12.96,
+ "words": [
+  {
+   "w": "Wgraj",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "plik",
+   "s": 0.48,
+   "e": 0.8
+  },
+  {
+   "w": "albo",
+   "s": 0.88,
+   "e": 1.2
+  },
+  {
+   "w": "wklej",
+   "s": 1.24,
+   "e": 1.52
+  },
+  {
+   "w": "link",
+   "s": 1.6,
+   "e": 1.92
+  },
+  {
+   "w": "i",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "wybierz",
+   "s": 2.16,
+   "e": 2.4
+  },
+  {
+   "w": "głos.",
+   "s": 2.64,
+   "e": 3.28
+  },
+  {
+   "w": "Godziny",
+   "s": 3.36,
+   "e": 3.6
+  },
+  {
+   "w": "schodzą",
+   "s": 3.68,
+   "e": 4.0
+  },
+  {
+   "w": "tylko",
+   "s": 4.08,
+   "e": 4.32
+  },
+  {
+   "w": "przy",
+   "s": 4.4,
+   "e": 4.56
+  },
+  {
+   "w": "pierwszej",
+   "s": 4.64,
+   "e": 4.96
+  },
+  {
+   "w": "zamianie",
+   "s": 5.04,
+   "e": 5.36
+  },
+  {
+   "w": "tekstu",
+   "s": 5.44,
+   "e": 5.76
+  },
+  {
+   "w": "na",
+   "s": 5.8,
+   "e": 5.84
+  },
+  {
+   "w": "mowę",
+   "s": 5.92,
+   "e": 6.48
+  },
+  {
+   "w": "–",
+   "s": 6.5,
+   "e": 6.52
+  },
+  {
+   "w": "i",
+   "s": 6.54,
+   "e": 6.56
+  },
+  {
+   "w": "szybciej,",
+   "s": 6.64,
+   "e": 7.307
+  },
+  {
+   "w": "gdy",
+   "s": 7.333,
+   "e": 7.52
+  },
+  {
+   "w": "słuchasz",
+   "s": 7.64,
+   "e": 7.92
+  },
+  {
+   "w": "szybciej.",
+   "s": 7.973,
+   "e": 8.92
+  },
+  {
+   "w": "Ponowne",
+   "s": 8.96,
+   "e": 9.28
+  },
+  {
+   "w": "słuchanie",
+   "s": 9.36,
+   "e": 9.84
+  },
+  {
+   "w": "i",
+   "s": 9.92,
+   "e": 10.0
+  },
+  {
+   "w": "darmowe",
+   "s": 10.04,
+   "e": 10.4
+  },
+  {
+   "w": "książki",
+   "s": 10.56,
+   "e": 10.8
+  },
+  {
+   "w": "z",
+   "s": 10.827,
+   "e": 10.853
+  },
+  {
+   "w": "biblioteki",
+   "s": 10.88,
+   "e": 11.52
+  },
+  {
+   "w": "ich",
+   "s": 11.6,
+   "e": 11.68
+  },
+  {
+   "w": "nie",
+   "s": 11.76,
+   "e": 11.84
+  },
+  {
+   "w": "zużywają.",
+   "s": 11.92,
+   "e": 12.96
+  }
+ ],
+ "speechEnd": 12.583
+}

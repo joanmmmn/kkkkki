@@ -1,0 +1,110 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://elevenreader.io/iconic-voices",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(() => { document.querySelectorAll('img').forEach((i) => { const s = i.getAttribute('src') || ''; if (s.includes('/_next/image?url=')) { const u = new URL(s, location.href).searchParams.get('url'); if (u && u.startsWith('http')) { i.removeAttribute('srcset'); i.removeAttribute('sizes'); i.loading = 'eager'; i.src = u; } } }); })()"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "eval": "window.scrollTo(0,3880)"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    960,
+    260
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 3880,
+   "dur": 2600
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "fron"
+  },
+  {
+   "move": [
+    520,
+    466
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    560,
+    520
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

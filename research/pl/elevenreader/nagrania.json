@@ -1,0 +1,130 @@
+[
+ {
+  "id": "01_er_home",
+  "para": ["A01", "A09"],
+  "url": "https://elevenreader.io/",
+  "viewport": "desktop",
+  "que_se_ve": "Portada oficial (en inglés): «Listen to anything in voices you’ll love», «200,000+ audiobooks included», la zona «Drop a file or click to upload» y, más abajo, el bloque con «Listen Online · Get iOS App · Google Play · Add to Chrome».",
+  "pasos": "Cerrar el aviso de cookies (Cookiebot) con «Deny»/«Necessary only» si aparece. 0–4 s: cabecera quieta. 4–9 s: bajar despacio hasta el bloque «Listen Online / Get iOS App / Add to Chrome» (y, si se ve, el enlace a Google Play). No soltar ni seleccionar ningún archivo en la zona de subida, no pulsar «Start listening free» ni «Upload & listen». La web solo existe en inglés (elevenreader.io/pl da 404). Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "02_er_pricing",
+  "para": ["A03", "A04", "A07", "A08", "B01", "B03"],
+  "url": "https://elevenreader.io/pricing",
+  "viewport": "desktop",
+  "que_se_ve": "Página de precios (en inglés y en dólares desde fuera de Polonia): Free «$0/mo» (10 hours of text to audio every month, 1,000+ natural voices, Thousands of free audiobooks, Syncs between web & mobile, 4.0x speed, sleep timer & bookmarks) y Ultra «$11» o «$8.25/mo billed annually» («Save $33/year»): unlimited text to audio, «24 hours per day for your imports», «200K+ premium audiobooks», «20 hours of premium titles each month», offline, custom voices, «Smart file imports – Skips headers, footers & filler text», botón «Start 3-day free trial».",
+  "pasos": "Cerrar cookies como en 01. Grabar a ritmo lento. 0–4 s: las dos tarjetas en «Monthly», cursor parado sobre la línea «4.0x speed, sleep timer & bookmarks» de Free (y sobre «Start listening free», sin pulsar). 4–10 s: pulsar el interruptor «Annual» (no es un formulario) para que Ultra muestre $8.25/mo y «Save $33/year»; volver a «Monthly». 10–14 s: cursor por «24 hours per day for your imports» y «Smart file imports – Skips headers, footers & filler text». 14–18 s: cursor sobre «20 hours of premium titles each month». 18–22 s: cursor sobre el botón «Start 3-day free trial», sin pulsarlo. Si la página saliera en zł desde Polonia, avisar: el vídeo da los precios de la web en dólares (los vistos el 19/10/2026). Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "03_er_appstore",
+  "para": ["A03", "A10"],
+  "url": "https://apps.apple.com/pl/app/elevenreader-voice-reader/id6479373050?l=pl",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de la App Store polaca en polaco: «Oceny: 704 · 4,7» y, abajo, «Zakupy w aplikacji»: «Ultra Monthly 39,00 zł», «Ultra Annual 349,00 zł» (también Plus Monthly 30,00 zł, packs de horas, etc.).",
+  "pasos": "0–4 s: cabecera con «Oceny: 704» y «4,7». 4–9 s: bajar directamente (con el scroll, sin pasar despacio por «Oceny i recenzje», que lleva nombres de usuarios) hasta «Informacje» → «Zakupy w aplikacji» y encuadrar las dos primeras filas, Ultra Monthly 39,00 zł y Ultra Annual 349,00 zł. Si el desplegable de compras está cerrado, abrirlo con un clic. El enlace id6479373050 redirige a esta URL; con ?l=pl sale en polaco. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "04_er_blog_pl",
+  "para": ["A02", "A05"],
+  "url": "https://elevenlabs.io/pl/blog/elevenreader-pl",
+  "viewport": "desktop",
+  "que_se_ve": "Nota oficial de ElevenLabs en polaco (25/04/2025): «ElevenReader przeczyta każdy tekst, dokument i książkę po polsku głosem AI Piotra Fronczewskiego» y el párrafo «ElevenLabs udostępnia polską wersję aplikacji mobilnej ElevenReader… ponad 6,8 tys. utworów po polsku z biblioteki Wolne Lektury… głos AI Piotra Fronczewskiego – pierwszy polski głos w serii Iconic Voices, przygotowany razem z artystą».",
+  "pasos": "Cerrar cookies. 0–8 s: título y primer párrafo (cursor bajo «polską wersję aplikacji mobilnej»). 8–14 s: seguir en el mismo párrafo hasta «pierwszy polski głos w serii Iconic Voices, przygotowany razem z artystą». Evitar el banner «Poznaj Eleven v4» si tapa el texto (cerrarlo con la X). No grabar la foto del actor en primer plano más de lo que aparezca en la cabecera de la nota. Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "05_er_iconic",
+  "para": ["A01", "A05"],
+  "url": "https://elevenreader.io/iconic-voices",
+  "viewport": "desktop",
+  "que_se_ve": "Página «Iconic Voices» con la lista de voces: Sir Michael Caine™, Dr. Maya Angelou™… y «Piotr Fronczewski™ – Piotr Fronczewski is one of Poland's most recognizable voices through decades of film, theatre, and narration».",
+  "pasos": "Cerrar cookies. 0–4 s: cabecera «Legendary voices, unforgettable listening». 4–10 s: bajar hasta «Featured icons» y pararse en la tarjeta de Piotr Fronczewski™. No pulsar «Start listening free». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "06_er_kolekcje_pl",
+  "para": ["A06"],
+  "url": "https://elevenreader.io/collections/polish",
+  "viewport": "desktop",
+  "que_se_ve": "«Polish audiobook collections»: 16 colecciones en polaco (Polska Czyta, Wielka Literatura Polska, Zbrodnia Po Polsku, Legimi, Najlepiej Sprzedające Się Książki…).",
+  "pasos": "Cerrar cookies. 0–6 s: título y lista de colecciones, cursor sobre «Polska Czyta» y «Legimi». Toma de reserva para A06 (no es imprescindible). Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "07_er_lalka_lektor",
+  "para": ["A06", "A07"],
+  "url": "https://elevenreader.io/audiobooks/lalka-audiobook/983KJwqh8GXFo3AFK38F",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de «Lalka» (Bolesław Prus) con narradores humanos: «Narrated by Grzegorz Damięcki, Krzysztof Gosztyła», «Length 36h 4m», «Language Polish», botones «Try for $0.00» y «Get for $24».",
+  "pasos": "Cerrar cookies. 0–6 s: cabecera de la ficha con portada, narradores y duración (cursor sobre «Narrated by…»). 6–10 s: cursor sobre «Get for $24», sin pulsarlo. No pulsar «Try for $0.00» ni «Preview» (no reproducir audio: la toma va sin sonido). La nota «4.1 (29.9K)» es de Goodreads/Amazon, no de ElevenReader: no destacarla. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "08_er_lalka_wl",
+  "para": ["A06"],
+  "url": "https://elevenreader.io/audiobooks/lalka-tom-pierwszy-audiobook/wolnelektury:lalka-tom-pierwszy",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de «Lalka, tom pierwszy» de Wolne Lektury: «Listen for free», «Listen with Sir Michael Caine™ and 1,000+ voices», «Length 15h 59m», «Format eBook with Audio», «Language Polish», índice de capítulos en polaco.",
+  "pasos": "Cerrar cookies. 0–5 s: cabecera con «Listen for free» y «15h 59m» (cursor encima, sin pulsar). Si cabe, bajar 1–2 s hasta «Language Polish» y el índice («I. Jak wygląda firma J. Mincel i S. Wokulski…»). Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "09_er_polska_czyta",
+  "para": ["A06"],
+  "url": "https://elevenreader.io/collections/polska-czyta-audiobooks/pl_bestsellers",
+  "viewport": "desktop",
+  "que_se_ve": "Colección «Polska Czyta» («Aktualne bestsellery z polskiego rynku książkowego…»): títulos en polaco con «Included in Ultra» y su precio en dólares (Alicja w krainie czasów, Stockholm Psycho, Kiedyś po ciebie wrócę, Krytyczny moment, Zapora – Henning Mankell, Lalka…).",
+  "pasos": "Cerrar cookies. 0–6 s: título de la colección y bajada hasta «Zapora – Henning Mankell · 14h 11m · Included in Ultra» (cursor encima). La colección cambia cada pocos días: si «Zapora» ya no está, usar otra fila de Henning Mankell desde https://elevenreader.io/collections/najlepiej-sprzedajace-sie-ksiazki-audiobooks/dynamic__pl__top_paid_books («O krok», «Piąta kobieta»). Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "10_er_pomoc_dodaj",
+  "para": ["A04"],
+  "url": "https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-i-add-content-to-eleven-reader",
+  "viewport": "desktop",
+  "que_se_ve": "Ayuda oficial en polaco «Jak dodać treści do ElevenReader?»: «Wpisz tekst», «Zeskanuj tekst», «Wklej link», «Prześlij plik» y la lista .epub, .pdf, .txt, .html, .docx.",
+  "pasos": "Cerrar cookies y, si tapa el texto, el banner superior. 0–8 s: las cuatro opciones y la lista de formatos (cursor bajando por ellas). Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "11_er_pomoc_anuluj",
+  "para": ["B04"],
+  "url": "https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-i-cancel-my-eleven-reader-subscription",
+  "viewport": "desktop",
+  "que_se_ve": "Ayuda oficial en polaco «Jak anulować subskrypcję ElevenReader?»: Apple «Ustawienia > [twoje imię] > Subskrypcje», Google Play «Sklep Play > ikona profilu > Płatności i subskrypcje > Subskrypcje», web «awatar > Szczegóły konta > Zarządzaj płatnościami» y «Anulowanie zapobiegnie przyszłym opłatom, ale zachowasz dostęp do końca bieżącego okresu rozliczeniowego».",
+  "pasos": "Cerrar cookies. 0–10 s: las tres rutas y la frase final, con el cursor subrayándolas. Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "12_er_pomoc_godziny",
+  "para": ["B02"],
+  "url": "https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-eleven-reader-hours-work",
+  "viewport": "desktop",
+  "que_se_ve": "Ayuda oficial en polaco «Jak działają godziny w ElevenReader?»: «Godziny są wykorzystywane tylko wtedy, gdy po raz pierwszy zamieniasz zaimportowany tekst na audio», «Im szybciej słuchasz, tym szybciej godziny są zużywane», «Nie płacisz za słuchanie tekstu, który został już zamieniony…», «Nie są pobierane godziny za słuchanie tysięcy bezpłatnych książek…», «Bezpłatny plan obejmuje 10 darmowych godzin miesięcznie».",
+  "pasos": "Cerrar cookies. 0–10 s: primer bloque y sus viñetas, con el cursor bajando. Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "13_er_gplay",
+  "para": ["A10"],
+  "url": "https://play.google.com/store/apps/details?id=io.elevenlabs.readerapp&hl=pl&gl=PL",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de Google Play en polaco: «ElevenReader: Czytaj na głos», 4,6 ★, «69,7 tys. opinii», «1 mln+ Pobrania».",
+  "pasos": "Sin iniciar sesión; cookies de Google: «Odrzuć wszystko». 0–4 s: cabecera. No pulsar «Zainstaluj». No bajar a las opiniones (nombres de usuarios). Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "14_audioteka_klub",
+  "para": ["A12"],
+  "url": "https://klub.audioteka.com/",
+  "viewport": "desktop",
+  "que_se_ve": "Audioteka Klub: tarjeta del Plan Optymalny «Słuchaj bez limitu godzin · 29,90 zł · 14 dni za darmo dla nowych użytkowników».",
+  "pasos": "Cerrar cookies si aparecen. 0–6 s: encuadrar la tarjeta de 29,90 zł; no mostrar la promoción de 10,90 zł (vale hasta el 26/10/2026 y el vídeo no la menciona). No pulsar «Wypróbuj 14 dni za darmo». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "15_sonorbooks_lalka",
+  "para": ["B06"],
+  "url": "https://sonorbooks.pl/audiobook/lalka/",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de «Lalka» en sonorbooks.pl (czyta Zbigniew Zapasiewicz, 8 godz. 55 min) con sus opciones: Audioteka Klub (14 dni za darmo, «Ten audiobook jest w abonamencie Klubu»), compra en Audiotece 19,99 zł, Legimi, Empik Go y Ebookpoint.",
+  "pasos": "Cerrar el aviso de cookies con «Rozumiem». 0–8 s: cabecera de la ficha y bajada hasta las opciones. No pulsar «Wypróbuj za darmo», «Kup w Audiotece» ni «Sprawdź w…». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "16_sonorbooks_platformy",
+  "para": ["B06"],
+  "url": "https://sonorbooks.pl/platformy/",
+  "viewport": "desktop",
+  "que_se_ve": "Página de plataformas de SonorBooks Polska: «Twoja historia. Twoja platforma.» y las tarjetas de Audioteka, Empik Go, Wolne Lektury, Legimi y Audible.",
+  "pasos": "Cerrar cookies con «Rozumiem». 0–6 s: cabecera y bajada por las primeras tarjetas hasta Audible. Probado con curl el 19/10/2026: 200."
+ }
+]

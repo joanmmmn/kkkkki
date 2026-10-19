@@ -1,0 +1,122 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://sonorbooks.pl/platformy/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    960,
+    560
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 600
+  },
+  {
+   "mark": "scroll1"
+  },
+  {
+   "scroll": 900,
+   "dur": 2400
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "scroll": 900,
+   "dur": 2400
+  },
+  {
+   "wait": 800
+  },
+  {
+   "scroll": 1020,
+   "dur": 2400
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "kobo"
+  },
+  {
+   "move": [
+    460,
+    358
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    520,
+    544
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    560,
+    614
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 2400
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

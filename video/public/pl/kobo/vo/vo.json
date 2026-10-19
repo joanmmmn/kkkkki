@@ -1,0 +1,100 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Czy warto płacić za Kobo Plus, jeśli chcesz słuchać audiobooków? Sprawdziliśmy ceny, polski katalog i drobny druk. Powiemy ci, co jest dobre, co słabe i jak wypróbować abonament 14 dni za darmo.",
+   "say": "Czy warto płacić za Kobo Plus, jeśli chcesz słuchać audiobooków? Sprawdziliśmy ceny, polski katalog i drobny druk. Powiemy ci, co jest dobre, co słabe i jak wypróbować abonament czternaście dni za darmo."
+  },
+  {
+   "id": "A02",
+   "text": "Kobo to kanadyjska marka czytników i księgarnia z e-bookami i audiobookami, od lat należąca do japońskiego Rakutena. Abonament Kobo Plus działa w Polsce od końca maja 2026 roku: e-booki i audiobooki w aplikacji, a także na czytnikach Kobo.",
+   "say": "Kobo to kanadyjska marka czytników i księgarnia z e-bookami i audiobookami, od lat należąca do japońskiego Rakutena. Abonament Kobo Plus działa w Polsce od końca maja dwa tysiące dwudziestego szóstego roku: e-booki i audiobooki w aplikacji, a także na czytnikach Kobo."
+  },
+  {
+   "id": "A03",
+   "text": "Według warunków publikowanych w październiku 2026 roku plany są trzy. Kobo Plus Read, z samymi e-bookami, i Kobo Plus Listen, z samymi audiobookami, kosztują po 39,90 zł miesięcznie. Read & Listen, z jednym i drugim, to 49,90 zł. Płacisz co miesiąc, bez zobowiązań, a na start masz 14 dni za darmo.",
+   "say": "Według warunków publikowanych w październiku dwa tysiące dwudziestego szóstego roku plany są trzy. Kobo Plus Rid, z samymi e-bookami, i Kobo Plus Lisen, z samymi audiobookami, kosztują po trzydzieści dziewięć złotych dziewięćdziesiąt groszy miesięcznie. Rid end Lisen, z jednym i drugim, to czterdzieści dziewięć złotych dziewięćdziesiąt groszy. Płacisz co miesiąc, bez zobowiązań, a na start masz czternaście dni za darmo."
+  },
+  {
+   "id": "A04",
+   "text": "W abonamencie słuchasz albo czytasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo.com włączysz w wyszukiwarce filtr „tylko Kobo Plus”.",
+   "say": "W abonamencie słuchasz albo czytasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo kropka kom włączysz w wyszukiwarce filtr „tylko Kobo Plus”."
+  },
+  {
+   "id": "A05",
+   "text": "Na start polska strona Kobo podawała ponad 1,5 mln e-booków i ponad 150 000 audiobooków. Tyle że to głównie książki po angielsku. Polskich tytułów, także audiobooków, jest w abonamencie na razie mało – piszą o tym polskie serwisy o czytnikach.",
+   "say": "Na start polska strona Kobo podawała ponad półtora miliona e-booków i ponad sto pięćdziesiąt tysięcy audiobooków. Tyle że to głównie książki po angielsku. Polskich tytułów, także audiobooków, jest w abonamencie na razie mało – piszą o tym polskie serwisy o czytnikach."
+  },
+  {
+   "id": "A06",
+   "text": "Po angielsku wybór jest dużo większy, także wśród audiobooków. Dlatego Kobo Plus Listen ma dziś sens głównie wtedy, gdy słuchasz w oryginale albo uczysz się angielskiego.",
+   "say": "Po angielsku wybór jest dużo większy, także wśród audiobooków. Dlatego Kobo Plus Lisen ma dziś sens głównie wtedy, gdy słuchasz w oryginale albo uczysz się angielskiego."
+  },
+  {
+   "id": "A07",
+   "text": "Słuchasz w darmowej aplikacji Kobo Books. Odtwarzacz ma spis rozdziałów, przeskoki o 10 sekund, zmianę prędkości i wyłącznik czasowy, a audiobook pobierzesz i posłuchasz bez internetu.",
+   "say": "Słuchasz w darmowej aplikacji Kobo Buks. Odtwarzacz ma spis rozdziałów, przeskoki o dziesięć sekund, zmianę prędkości i wyłącznik czasowy, a audiobook pobierzesz i posłuchasz bez internetu."
+  },
+  {
+   "id": "A08",
+   "text": "Najciekawsze: audiobooków posłuchasz też na wybranych czytnikach Kobo, przez słuchawki albo głośnik Bluetooth – na przykład na modelach Clara BW, Clara Colour, Libra Colour czy Sage.",
+   "say": "Najciekawsze: audiobooków posłuchasz też na wybranych czytnikach Kobo, przez słuchawki albo głośnik blutut – na przykład na modelach Klara Be Wu, Klara Kolor, Libra Kolor czy Sejdż."
+  },
+  {
+   "id": "A09",
+   "text": "Aplikacja działa na Androidzie i iPhonie, a z iPhone'a także w aucie przez CarPlay. Na komputerze audiobooków nie posłuchasz. I ważne: w aplikacji na iPhone'a abonamentu nie kupisz ani nie anulujesz – zrobisz to na kobo.com.",
+   "say": "Aplikacja działa na Androidzie i ajfonie, a z ajfona także w aucie przez Kar Plej. Na komputerze audiobooków nie posłuchasz. I ważne: w aplikacji na ajfona abonamentu nie kupisz ani nie anulujesz – zrobisz to na kobo kropka kom."
+  },
+  {
+   "id": "A10",
+   "text": "Aplikacja Kobo ma w Google Play 3,7 przy 308 tys. opinii, a w polskim App Store 4,2 przy 206 ocenach – to oceny całej aplikacji, nie samego abonamentu. Polskie serwisy o czytnikach chwalą, że Kobo Plus działa wprost na czytniku, ale krytykują skromny polski katalog i to, że przed zapłatą trudno sprawdzić, co w nim jest.",
+   "say": "Aplikacja Kobo ma w Gugl Plej trzy i siedem dziesiątych przy trzystu ośmiu tysiącach opinii, a w polskim Ep Storze cztery i dwie dziesiąte przy dwustu sześciu ocenach – to oceny całej aplikacji, nie samego abonamentu. Polskie serwisy o czytnikach chwalą, że Kobo Plus działa wprost na czytniku, ale krytykują skromny polski katalog i to, że przed zapłatą trudno sprawdzić, co w nim jest."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: bez limitu godzin, audiobooki także na czytniku, duży wybór po angielsku i 14 dni na próbę. Minusy: mało polskich audiobooków, brak słuchania na komputerze, w aplikacji abonamentu nie kupisz, a po rezygnacji tracisz dostęp do książek z abonamentu.",
+   "say": "Plusy: bez limitu godzin, audiobooki także na czytniku, duży wybór po angielsku i czternaście dni na próbę. Minusy: mało polskich audiobooków, brak słuchania na komputerze, w aplikacji abonamentu nie kupisz, a po rezygnacji tracisz dostęp do książek z abonamentu."
+  },
+  {
+   "id": "A12",
+   "text": "Czy warto? Jeśli masz czytnik Kobo i słuchasz po angielsku – tak, to wygodny abonament bez limitu godzin. Jeśli chcesz słuchać głównie po polsku, na razie lepszy będzie serwis z polskim katalogiem, na przykład Audioteka Klub za 29,90 zł miesięcznie, bez limitu godzin w katalogu Klubu. A w okresie próbnym sprawdź, czy są tu twoje książki.",
+   "say": "Czy warto? Jeśli masz czytnik Kobo i słuchasz po angielsku – tak, to wygodny abonament bez limitu godzin. Jeśli chcesz słuchać głównie po polsku, na razie lepszy będzie serwis z polskim katalogiem, na przykład Audioteka Klub za dwadzieścia dziewięć złotych dziewięćdziesiąt groszy miesięcznie, bez limitu godzin w katalogu Klubu. A w okresie próbnym sprawdź, czy są tu twoje książki."
+  },
+  {
+   "id": "B01",
+   "text": "Jak wypróbować za darmo? Wejdź na kobo.com, zaloguj się albo załóż darmowe konto Kobo i otwórz zakładkę Kobo Plus.",
+   "say": "Jak wypróbować za darmo? Wejdź na kobo kropka kom, zaloguj się albo załóż darmowe konto Kobo i otwórz zakładkę Kobo Plus."
+  },
+  {
+   "id": "B02",
+   "text": "Wybierz Listen albo Read & Listen i rozpocznij okres próbny. Musisz podać kartę – przedpłaconych kart Visa i Mastercard Kobo nie przyjmuje. Próba jest tylko dla nowych: jeśli miałeś już Kobo Plus, drugiej nie dostaniesz.",
+   "say": "Wybierz Lisen albo Rid end Lisen i rozpocznij okres próbny. Musisz podać kartę – przedpłaconych kart Wiza i Masterkard Kobo nie przyjmuje. Próba jest tylko dla nowych: jeśli miałeś już Kobo Plus, drugiej nie dostaniesz."
+  },
+  {
+   "id": "B03",
+   "text": "Potem zaloguj się w aplikacji Kobo Books albo na czytniku i dodawaj tytuły z oznaczeniem Kobo Plus.",
+   "say": "Potem zaloguj się w aplikacji Kobo Buks albo na czytniku i dodawaj tytuły z oznaczeniem Kobo Plus."
+  },
+  {
+   "id": "B04",
+   "text": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
+   "say": "Po czternastu dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo kropka kom, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na ajfona. Po anulowaniu tracisz dostęp do książek z abonamentu."
+  },
+  {
+   "id": "B06",
+   "text": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks kropka pe el zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

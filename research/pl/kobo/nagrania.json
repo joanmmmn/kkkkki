@@ -1,0 +1,166 @@
+[
+ {
+  "id": "01_kobo_plus",
+  "para": [
+   "A01",
+   "A03",
+   "B01"
+  ],
+  "url": "https://www.kobo.com/pl/pl/plus",
+  "viewport": "desktop",
+  "que_se_ve": "Página oficial de Kobo Plus para Polonia (la que enlaza sonorbooks.pl): cabecera, los planes Kobo Plus Read, Kobo Plus Listen y Kobo Plus Read & Listen con su precio en zł y el botón de prueba gratuita de 14 días.",
+  "pasos": "ATENCIÓN: el 19/10/2026 esta URL devolvió 403 con desafío de Cloudflare («Cierpliwości…», cabecera cf-mitigated: challenge) a curl y a un Chromium sin interfaz desde este servidor; no he podido ver su contenido. Si el navegador de grabación pasa el control solo (sin tener que resolver nada), grabar: cerrar cookies («Odrzuć»/«Tylko niezbędne» o la X); 0–4 s: cabecera; 4–14 s: bajar hasta los planes y pasar el ratón por Read, Listen y Read & Listen (3 s cada uno); 14–18 s: cursor sobre el botón de prueba gratuita, sin pulsarlo. ANTES de grabar la voz, comprobar que los precios (39,90 / 39,90 / 49,90 zł) y los 14 días coinciden con A03; si no, avisar para corregir el guion. Si aparece un captcha o una casilla de «verificar que eres humano», NO intentar superarlo: usar las tomas de reserva (14_sonorbooks_platformy, 11_kobo_naczytniku y 07_kobo_help_subskrypcja). Desde fuera de Polonia la web puede proponer otra tienda de país: quedarse en /pl/pl/ (no aceptar el cambio de país). No iniciar sesión."
+ },
+ {
+  "id": "02_kobo_help_faq",
+  "para": [
+   "A02",
+   "A04",
+   "A09"
+  ],
+  "url": "https://help.kobo.com/hc/en-us/articles/360018976153-Kobo-Plus-Common-questions",
+  "viewport": "desktop",
+  "que_se_ve": "Ayuda oficial de Kobo (en inglés; no hay versión polaca) «Kobo Plus: Common questions»: lista «Available Countries» con «Poland»; «Any time you see an eBook with the option Read with Kobo Plus, it’s available…»; «Kobo Plus subscriptions cannot be managed on Kobo eReaders or in the Kobo App for iOS».",
+  "pasos": "Cerrar el aviso de privacidad con «Ok». Empezar ya bajado en «Available Countries». 0–6 s: la lista, con el cursor parado en «Poland». 6–12 s: bajar hasta «How do I find a Kobo Plus book…» y subrayar «Read with Kobo Plus». 12–16 s: bajar a «How do I manage my Kobo Plus subscription?» y la frase «cannot be managed on Kobo eReaders or in the Kobo App for iOS». No pulsar «Chat With Us». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "03_kobo_help_urzadzenia",
+  "para": [
+   "A01",
+   "A08",
+   "A09"
+  ],
+  "url": "https://help.kobo.com/hc/en-us/articles/360017964574-Devices-that-support-audiobooks",
+  "viewport": "desktop",
+  "que_se_ve": "«Devices that support audiobooks»: lectores Kobo Sage, Libra 2, Elipsa, Clara 2E, Elipsa 2E, Libra Colour, Clara Colour y Clara BW; Android 6.0+, iPhone/iPad iOS 12+; «Apple CarPlay using the Kobo Books app for iOS»; «Audiobooks cannot be played: in Kobo Desktop…».",
+  "pasos": "Cerrar el aviso de privacidad con «Ok». 0–6 s: título y la lista de lectores (cursor encima de «Kobo Clara BW», «Kobo Clara Colour», «Kobo Libra Colour», «Kobo Sage»). 6–12 s: bajar a «Apple CarPlay…» y a «Audiobooks cannot be played». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "04_kobo_help_ios",
+  "para": [
+   "A07"
+  ],
+  "url": "https://help.kobo.com/hc/en-us/articles/360017964534-Audiobook-controls-on-iOS",
+  "viewport": "desktop",
+  "que_se_ve": "«Audiobook controls on iOS»: «Skip through audio chapters using the table of contents», «Adjust playback speed», «Set a timer…» y «Go ahead or backwards 10 seconds».",
+  "pasos": "Cerrar el aviso con «Ok». 0–8 s: la lista de funciones y, bajando un poco, «Go ahead or backwards 10 seconds» y «Use the sleep timer». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "05_kobo_help_anuluj",
+  "para": [
+   "B02",
+   "B04"
+  ],
+  "url": "https://help.kobo.com/hc/en-us/articles/360018976173-Cancel-or-renew-your-Kobo-Plus-subscription",
+  "viewport": "desktop",
+  "que_se_ve": "«Cancel or renew your Kobo Plus subscription»: «If you've already subscribed to Kobo Plus before, you won't be eligible for a second free trial…» y los pasos «Sign in… Click My Account… Click My Subscriptions… Cancel this subscription… You'll no longer have access to your Kobo Plus books».",
+  "pasos": "Cerrar el aviso con «Ok». 0–4 s: el párrafo de la segunda prueba. 4–12 s: los pasos numerados, con el cursor bajando hasta «You'll no longer have access to your Kobo Plus books». No pulsar «Go to kobo.com». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "06_kobo_help_szukaj",
+  "para": [
+   "A04",
+   "B03"
+  ],
+  "url": "https://help.kobo.com/hc/en-us/articles/360018976213-Search-for-Kobo-Plus-titles",
+  "viewport": "desktop",
+  "que_se_ve": "«Search for Kobo Plus titles»: en kobo.com, «Select the checkbox beside Show Kobo Plus books only» y «You must be signed in to your Kobo account to see the 'Show Kobo Plus books only' filter»; más abajo, la búsqueda en el lector (pestaña Kobo Plus) y en la app de Android.",
+  "pasos": "Cerrar el aviso con «Ok». 0–8 s: bloque de kobo.com con la casilla y la nota de inicio de sesión. 8–14 s: bajar a «Search for Kobo Plus titles on your Kobo eReader» y «…on your Kobo Books app for Android». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "07_kobo_help_subskrypcja",
+  "para": [
+   "B01",
+   "B02",
+   "B04"
+  ],
+  "url": "https://help.kobo.com/hc/en-us/articles/360018811614-Subscribe-to-Kobo-Plus-on-kobo-com",
+  "viewport": "desktop",
+  "que_se_ve": "«Subscribe to Kobo Plus on kobo.com»: «After the free trial period, we'll charge you monthly unless you cancel. Your credit card will not be charged if you cancel before the trial period is over.»; «A valid payment method is required to activate the free trial. Pre-paid Mastercard and Visa cards are not accepted at this time.»; «Activating Kobo Plus free trial: Sign in… Click Kobo Plus… Click Start free trial…».",
+  "pasos": "Cerrar el aviso con «Ok». 0–4 s: las dos primeras frases (cursor sobre «will not be charged if you cancel before the trial period is over»). 4–10 s: «Payment and Billing Information». 10–16 s: bajar a «Activating Kobo Plus free trial» y sus pasos. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "08_kobo_gplay",
+  "para": [
+   "A10"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.kobobooks.android&hl=pl&gl=PL",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de Google Play en polaco: «Kobo | eBooks & Audiobooks», 3,7 ★, «308 tys. opinii», «10 mln+ Pobrania»; en la descripción, «Kobo Plus oferuje nieograniczony dostęp…».",
+  "pasos": "Sin iniciar sesión; cookies de Google: «Odrzuć wszystko». 0–4 s: cabecera con nota, opiniones y descargas. No pulsar «Zainstaluj» ni bajar a las opiniones (nombres de usuarios). Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "09_kobo_appstore",
+  "para": [
+   "A10"
+  ],
+  "url": "https://apps.apple.com/pl/app/kobo-books-audiobooks/id301259483?l=pl",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de la App Store polaca en polaco: «Kobo Books & Audiobooks», «Oceny: 206 · 4,2».",
+  "pasos": "0–4 s: cabecera con «Oceny: 206» y «4,2». No bajar a «Oceny i recenzje». Con ?l=pl sale en polaco. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "10_kobo_swiatczytnikow",
+  "para": [
+   "A02",
+   "A05"
+  ],
+  "url": "https://swiatczytnikow.pl/abonament-kobo-plus-juz-w-polsce-a-czytniki-kobo-sa-na-targach-ksiazki-w-warszawie/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo de Świat Czytników (31/05/2026) «Abonament Kobo Plus już w Polsce!…»: «Strona zachęca „Wybieraj spośród ponad 1,5 miliona e-booków i ponad 150 000 audiobooków”» y «Jeśli jednak chodzi o polskie tytuły, to powiedzmy jasno – prawie nic tam nie ma».",
+  "pasos": "Cerrar cookies. 0–5 s: titular y fecha. 5–11 s: bajar hasta «Jaka jest oferta Kobo Plus?» y subrayar con el cursor la cita de la web de Kobo y «prawie nic tam nie ma». No grabar los comentarios del final (nombres de usuarios) ni anuncios. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "11_kobo_naczytniku",
+  "para": [
+   "A03",
+   "A05",
+   "A06"
+  ],
+  "url": "https://www.naczytniku.pl/kobo-plus-w-polsce-jak-wypada-w-porownaniu-z-legimi-i-empik-go/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo de NaCzytniku (23/06/2026) «Kobo Plus w Polsce. Jak wypada w porównaniu z Legimi i Empik Go»: «Największym problemem Kobo Plus jest obecnie polska oferta…», «Zupełnie inaczej wygląda sytuacja, gdy czytelnik sięga po książki po angielsku…» y, al final, «Pakiet z e-bookami kosztuje 39,90 zł miesięcznie. Pakiet z audiobookami również kosztuje 39,90 zł… Najszersza opcja… 49,90 zł miesięcznie» y «Kobo Plus można przetestować za darmo przez 14 dni».",
+  "pasos": "Cerrar cookies. 0–6 s: párrafo «Największym problemem…». 6–12 s: bajar al párrafo «Zupełnie inaczej wygląda sytuacja…». 12–18 s: bajar hasta las preguntas finales con los precios y los 14 días. Evitar anuncios y el formulario del boletín. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "12_kobo_cyfranek",
+  "para": [
+   "A10"
+  ],
+  "url": "https://cyfranek.wordpress.com/2026/05/30/wypozyczalnia-kobo-plus-dostepna-w-polsce/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo de Cyfranek (30/05/2026) «Wypożyczalnia Kobo Plus dostępna w Polsce»: los tres planes en PLN y la crítica «Nie ma jednak nigdzie informacji ani o ilości tytułów dostępnych w języku polskim… Brak też opcji wyświetlenia sobie oferty, którą obejmuje abonament».",
+  "pasos": "0–6 s: bajar hasta el párrafo de la crítica y subrayar «Brak też opcji wyświetlenia sobie oferty». No grabar comentarios. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "13_audioteka_klub",
+  "para": [
+   "A12"
+  ],
+  "url": "https://klub.audioteka.com/",
+  "viewport": "desktop",
+  "que_se_ve": "Audioteka Klub: tarjeta del Plan Optymalny «Słuchaj bez limitu godzin · 29,90 zł · 14 dni za darmo dla nowych użytkowników».",
+  "pasos": "Cerrar cookies si aparecen. 0–6 s: encuadrar la tarjeta de 29,90 zł; no mostrar la promoción de 10,90 zł (hasta el 26/10/2026; el vídeo no la menciona). No pulsar «Wypróbuj 14 dni za darmo». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "14_sonorbooks_platformy",
+  "para": [
+   "A03",
+   "B06"
+  ],
+  "url": "https://sonorbooks.pl/platformy/",
+  "viewport": "desktop",
+  "que_se_ve": "Página de plataformas de SonorBooks Polska: cabecera «Twoja historia. Twoja platforma.», tarjetas de Audioteka, Empik Go, Wolne Lektury, Legimi, Ebookpoint, Audible y «Rakuten Kobo» (Kobo Plus Listen · 39,90 zł / mies. · Tylko tytuły oznaczone jako Kobo Plus · Aplikacja Kobo · 14 dni za darmo (wymagana karta) · «Kobo Plus z e-bookami i audiobookami kosztuje 49,90 zł/mies.» · «Polskojęzycznych audiobooków jest w abonamencie na razie bardzo mało»).",
+  "pasos": "Cerrar cookies con «Rozumiem». 0–3 s: cabecera. 3–12 s: bajar despacio por Audioteka, Empik Go y Legimi. 12–18 s: llegar a la tarjeta «Rakuten Kobo» y quedarse 4–5 s. No pulsar «Zobacz warunki w serwisie Rakuten Kobo». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "15_sonorbooks_karta",
+  "para": [
+   "B06"
+  ],
+  "url": "https://sonorbooks.pl/audiobook/atomowe-nawyki/",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de «Atomowe nawyki» en sonorbooks.pl con sus opciones (Audioteka, Legimi, Empik Go, Ebookpoint).",
+  "pasos": "Cerrar cookies con «Rozumiem». 0–5 s: cabecera de la ficha y bajada hasta las opciones. No pulsar botones de compra. Probado con curl el 19/10/2026: 200."
+ }
+]
