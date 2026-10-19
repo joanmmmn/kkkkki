@@ -30,9 +30,10 @@ export const piece: PLPiece = {
         { at: 'ustawy', label: 'Ustawa o bibliotekach, art. 14', sub: '„ogólnie dostępne i bezpłatne”', icon: 'doc' },
         { at: 'podpiac', label: 'Empik Go: bez karty płatniczej', sub: 'przy aktywacji kodu', icon: 'card' }, { at: 'wygasa', label: 'Po 30 dniach wygasa sam', sub: 'Empik Go, FAQ dla bibliotek', icon: 'clock' },
       ] },
-      { id: 'A04', kind: 'rec', bump: 'Trzy serwisy', kicker: 'Serwis 1 z 3', title: 'Legimi', rec: { clip: '07_wroclaw_legimi', start: 2.6, url: 'biblioteka.wroc.pl' },
+      { id: 'A04', kind: 'rec', bump: 'Trzy serwisy', kicker: 'Serwis 1 z 3', title: 'Legimi', rec: { clip: '07_wroclaw_legimi', start: 4.5, holdAt: 6.5, url: 'biblioteka.wroc.pl' },
         cuts: [{ at: 'Kod', rec: { clip: '04_legimi_lodz', start: 0.3, holdAt: 2.9, url: 'legimi.pl/bmwl' } }],
-        marks: [{ at: 'przygotowanej', until: 'lodzkiej', x: 1070, y: 414, w: 464, h: 286 }, { at: 'lodzkiej', x: 1070, y: 230, w: 464, h: 136 }],
+        marks: [{ at: 'osiemdziesieciu', until: 'Kod', x: 650, y: 572, w: 630, h: 32 }, { at: 'przygotowanej', until: 'lodzkiej', x: 1070, y: 414, w: 464, h: 286 }, { at: 'lodzkiej', x: 1070, y: 230, w: 464, h: 136 }],
+        zooms: [{ at: 'osiemdziesieciu', zoom: 1.6, x: 960, y: 560 }, { at: 'Kod', zoom: 1.25, x: 1150, y: 450 }],
         tags: [
           { at: 'osiemdziesieciu', label: 'ok. 80 000 audiobooków', icon: 'headphones' }, { at: 'dwustu', label: 'ok. 243 000 e-booków', sub: 'dane MBP we Wrocławiu', icon: 'book' },
           { at: 'lodzkiej', label: 'legimi.pl/bmwl', sub: 'strona dla Łodzi', icon: 'link' }, { at: 'dwoch', label: '2 urządzenia', sub: 'według bibliotek', icon: 'phone' },
@@ -53,10 +54,15 @@ export const piece: PLPiece = {
       ] },
       { id: 'A07', kind: 'rec', bump: 'Każda biblioteka inaczej', kicker: 'Stan na 19.10.2026', title: 'Łódź i Wrocław', rec: { clip: '05_lodz_ebooki', start: 0.3, holdAt: 3.3, url: 'biblioteka.lodz.pl' },
         cuts: [
-          { at: 'pazdzierniku', rec: { clip: '06_lodz_mapa', start: 4.0, url: 'biblioteka.lodz.pl' } },
-          { at: 'Wroclawiu', rec: { clip: '07_wroclaw_legimi', start: 0.3, url: 'biblioteka.wroc.pl' } },
-          { at: 'kolejny', rec: { clip: '07_wroclaw_legimi', start: 8.0, url: 'biblioteka.wroc.pl' } },
+          { at: 'pazdzierniku', rec: { clip: '06_lodz_mapa', start: 5.0, url: 'biblioteka.lodz.pl' } },
+          { at: 'Wroclawiu', rec: { clip: '07_wroclaw_legimi', start: 0.3, holdAt: 2.3, url: 'biblioteka.wroc.pl' } },
+          { at: 'kolejny', rec: { clip: '07_wroclaw_legimi', start: 9.0, holdAt: 10.7, url: 'biblioteka.wroc.pl' } },
         ],
+        marks: [
+          { at: 'filia', until: '15', x: 262, y: 770, w: 1010, h: 34 }, { at: '15', until: 'papierze', x: 262, y: 732, w: 380, h: 32 }, { at: 'papierze', until: 'pazdzierniku', x: 262, y: 690, w: 500, h: 32 },
+          { at: 'pazdzierniku', until: 'Wroclawiu', x: 260, y: 512, w: 600, h: 82 }, { at: 'Wroclawiu', until: 'kolejny', x: 650, y: 262, w: 670, h: 80 }, { at: 'kolejny', x: 650, y: 404, w: 860, h: 30 },
+        ],
+        zooms: [{ at: 'Lodzi', zoom: 1.5, x: 700, y: 740 }, { at: 'pazdzierniku', zoom: 1.6, x: 640, y: 560 }, { at: 'Wroclawiu', zoom: 1.6, x: 980, y: 330 }, { at: 'kolejny', zoom: 1.6, x: 1080, y: 420 }],
         tags: [
           { at: 'Lodzi', label: 'Łódź: każda filia', sub: 'co miesiąc', icon: 'library' }, { at: '15', label: 'Od 15 lat · kod papierowy', icon: 'user' },
           { at: 'pazdzierniku', label: 'Październik: kodów brak', tone: 'bad' }, { at: 'Wroclawiu', label: 'Wrocław: tylko 3 filie', icon: 'library' },
@@ -99,7 +105,8 @@ export const piece: PLPiece = {
         { at: 'zapisz', title: 'Zapisz się do biblioteki' }, { at: 'dokument', title: 'Weź dokument tożsamości' }, { at: 'reki', title: 'Łódź: karta od ręki', sub: 'w każdej filii' },
       ],
         marks: [{ at: 'dokument', x: 268, y: 586, w: 1070, h: 76 }], zooms: [{ at: 'zapisz', zoom: 1.6, x: 800, y: 620 }] },
-      { id: 'B02', kind: 'rec', kicker: 'Krok 2', title: 'Sprawdź zasady', rec: { clip: '07_wroclaw_legimi', start: 6.0, url: 'biblioteka.wroc.pl' },
+      { id: 'B02', kind: 'rec', kicker: 'Krok 2', title: 'Sprawdź zasady', rec: { clip: '07_wroclaw_legimi', start: 8.6, holdAt: 10.7, url: 'biblioteka.wroc.pl' },
+        marks: [{ at: 'sprawdz', x: 650, y: 160, w: 880, h: 300 }], zooms: [{ at: 'stronie', zoom: 1.4, x: 1050, y: 320 }],
         tags: [
           { at: 'serwis', label: 'Który serwis?', sub: 'Legimi, Empik Go, Audioteka', icon: 'search' }, { at: 'filii', label: 'W filii', icon: 'library' },
           { at: 'mailem', label: 'Mailem', icon: 'mail' }, { at: 'formularz', label: 'Przez formularz', icon: 'doc' },

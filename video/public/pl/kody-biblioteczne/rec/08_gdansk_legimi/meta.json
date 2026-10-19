@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 123,
+ "duration": 8.541,
+ "offset": 0.21,
+ "marks": {
+  "wymogi": 0.299,
+  "online": 3.145,
+  "jeden": 5.297,
+  "end": 8.541
+ },
+ "events": []
+}

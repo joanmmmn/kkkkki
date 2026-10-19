@@ -9,7 +9,7 @@ import type { PLPiece } from './index';
 export const piece: PLPiece = {
   spec: {
     slug: 'audible', name: 'Audible', domain: 'amazon.pl', color: '#F7991C', deep: '#212325', soft: '#FEF1DD',
-    logo: 'pl/audible/img/logo.svg', logoWhite: 'pl/audible/img/logo_white.svg', logoRatio: 55 / 140,
+    logo: 'pl/audible/img/logo.svg', logoWhite: 'pl/audible/img/logo_white.svg', logoRatio: 55 / 140, tileBg: '#212325', tileLogoWhite: true,
     kicker: 'Recenzja Audible', music: 'pl/audible/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Audible\nw Polsce:\nczy warto?', hi: ['Audible'], rec: { clip: 'plany', start: 0.3 },
@@ -135,5 +135,5 @@ export const piece: PLPiece = {
       { label: 'Jak zrezygnować', from: 'B04' },
     ],
   },
-  thumb: { line1: 'AUDIBLE', line2: 'W POLSCE?', seal: { icon: 'gift', text: '30 dni\nza darmo' }, label: { strong: 'Standard', rest: 'CZY PREMIUM?' } },
+  thumb: { line1: 'AUDIBLE', line2: 'W POLSCE?', seal: { icon: 'book', text: 'Polski\nkatalog?' }, label: { strong: 'Standard', rest: 'CZY PREMIUM?' } },
 };
