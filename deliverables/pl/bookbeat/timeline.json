@@ -1,0 +1,216 @@
+{
+ "total_frames": 13359,
+ "seconds": 267.18,
+ "chapters": [
+  {
+   "t": 11.5,
+   "label": "Czym jest BookBeat"
+  },
+  {
+   "t": 25.12,
+   "label": "Cennik: Basic, Standard i Premium"
+  },
+  {
+   "t": 49.24,
+   "label": "Polski katalog"
+  },
+  {
+   "t": 64.48,
+   "label": "Wiedźmin i karta książki"
+  },
+  {
+   "t": 90.8,
+   "label": "Funkcje aplikacji"
+  },
+  {
+   "t": 105.94,
+   "label": "Jak liczą się godziny"
+  },
+  {
+   "t": 122.04,
+   "label": "Profile rodzinne i dziecięce"
+  },
+  {
+   "t": 135.5,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 149.0,
+   "label": "Opinie"
+  },
+  {
+   "t": 164.88,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 180.72,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 193.84,
+   "label": "Jak wypróbować za darmo"
+  },
+  {
+   "t": 222.46,
+   "label": "Jak zrezygnować"
+  },
+  {
+   "t": 234.94,
+   "label": "Drobny druk okresu próbnego"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 589,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 589,
+   "dur": 681,
+   "lead": 26,
+   "bump": "Czym jest BookBeat?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1270,
+   "dur": 1206,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "stat",
+   "start": 2476,
+   "dur": 748,
+   "lead": 26,
+   "bump": "Polski katalog"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3224,
+   "dur": 594,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "rec",
+   "start": 3818,
+   "dur": 736,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "features",
+   "start": 4554,
+   "dur": 743,
+   "lead": 26,
+   "bump": "Jak to działa"
+  },
+  {
+   "id": "A08",
+   "kind": "rec",
+   "start": 5297,
+   "dur": 805,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08B",
+   "kind": "rec",
+   "start": 6102,
+   "dur": 673,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6775,
+   "dur": 689,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 7464,
+   "dur": 794,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8258,
+   "dur": 792,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 9050,
+   "dur": 656,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "steps",
+   "start": 9706,
+   "dur": 407,
+   "lead": 26,
+   "bump": "Jak wypróbować za darmo"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 10113,
+   "dur": 579,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "features",
+   "start": 10692,
+   "dur": 445,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11137,
+   "dur": 610,
+   "lead": 26,
+   "bump": "Jak zrezygnować"
+  },
+  {
+   "id": "B05",
+   "kind": "rec",
+   "start": 11747,
+   "dur": 595,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12342,
+   "dur": 1017,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

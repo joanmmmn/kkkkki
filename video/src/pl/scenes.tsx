@@ -390,7 +390,7 @@ const Steps: React.FC<P<StepsScene>> = ({ c, s }) => {
         </div>
         {hasDevice && (
           <div style={{ position: 'absolute', right: mobile ? 220 : 90, top: mobile ? '50%' : 250, transform: mobile ? 'translateY(-50%)' : undefined }}>
-            <Device c={c} rec={baseRec} cuts={cuts} width={mobile ? 390 : 1060} marks={s.marks} tilt={mobile ? -8 : 0} />
+            <Device c={c} rec={baseRec} cuts={cuts} width={mobile ? 390 : 1060} marks={s.marks} zooms={s.zooms} tilt={mobile ? -8 : 0} />
           </div>
         )}
       </AbsoluteFill>

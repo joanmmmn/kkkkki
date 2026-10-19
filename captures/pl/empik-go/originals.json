@@ -1,0 +1,148 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://www.empik.com/dostosuj-zgody?ukryj-modal-cookie=1",
+   "until": "commit"
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "clickText": "Zapisz ustawienia",
+   "dur": 10
+  },
+  {
+   "wait": 700
+  },
+  {
+   "go": "https://www.empik.com/go",
+   "until": "commit"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,160))}window.scrollTo(0,0)})()"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "eval": "window.scrollTo(0,3640)"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "start"
+  },
+  {
+   "move": [
+    440,
+    560
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "move": [
+    1120,
+    560
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 900
+  },
+  {
+   "record": false
+  },
+  {
+   "eval": "(async()=>{for(let k=0;k<20;k++){document.querySelector('.originals-slider .btn-next').click();await new Promise(r=>setTimeout(r,1300))}await new Promise(r=>setTimeout(r,1500));document.querySelector('.originals-slider-in').scrollLeft=0})()"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 100
+  },
+  {
+   "mark": "balt"
+  },
+  {
+   "move": [
+    430,
+    600
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2800
+  },
+  {
+   "record": false
+  },
+  {
+   "eval": "(async()=>{for(let k=0;k<4;k++){document.querySelector('.originals-slider .btn-prev').click();await new Promise(r=>setTimeout(r,1600))}await new Promise(r=>setTimeout(r,1500));document.querySelector('.originals-slider-in').scrollLeft=0})()"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 100
+  },
+  {
+   "mark": "cholod"
+  },
+  {
+   "move": [
+    440,
+    640
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2800
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}

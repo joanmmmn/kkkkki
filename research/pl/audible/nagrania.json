@@ -1,0 +1,83 @@
+[
+  {
+    "id": "01_plany_amazon",
+    "para": [
+      "A01",
+      "A03",
+      "A04",
+      "B01",
+      "B02"
+    ],
+    "url": "https://www.amazon.pl/hz/audible/mlp",
+    "viewport": "desktop",
+    "que_se_ve": "Página de Audible en Amazon.pl (redirige a /hz/audible/arya/mlp?…purchaseType=STANDARD_MTRIAL…), en polaco y en zł: menú «Członkostwo Audible · Bestsellery · Nowości», cabecera «Oszczędzaj na audiobookach z członkostwem · Wypróbuj Standard za darmo · Automatyczne płatności 28,99 zł/miesiąc. Po 30-dniowym okresie próbnym. Możliwość rezygnacji co miesiąc.», tarjetas «Standard 28,99 zł/mies. po 30-dniowym okresie próbnym» y «Premium · Odnawia się automatycznie w cenie 41,99 zł/mies.», «Tak działa członkostwo Standard», «Najpopularniejsze tytuły Audible» (Na brzegu życia, Szepty spoza nicości – Remigiusz Mróz, Stara baśń – Kraszewski, Gambit – Siembieda…) y la FAQ («Ile kosztuje Audible?», «Co otrzymuję z miesięcznym członkostwem Audible?», «Co się stanie z audiobookami w mojej Bibliotece, jeśli anuluję?»). Comprobado con curl desde EE. UU. el 19/10/2026: 200, lang=pl-pl, precios en zł. La cabecera de Amazon muestra una ubicación genérica («Dostawa do: Warszawa 00277»), no datos personales.",
+    "pasos": "Abre la URL. En el aviso de cookies de Amazon pulsa «Odrzuć» (no aceptes). Si sale una página intermedia de Amazon con el botón «Kontynuuj zakupy», no sigas: recarga una vez y, si persiste, avisa y usa la animación. Para 3 s en la cabecera con «Wypróbuj Standard za darmo» y la frase de los 28,99 zł. Baja a las dos tarjetas de planes y para 4 s; pasa el ratón por «Wypróbuj plan Standard bezpłatnie» y por «Wypróbuj Premium bezpłatnie» sin pulsarlos. Baja a «Tak działa członkostwo Standard» (3 s) y a «Najpopularniejsze tytuły Audible» (3 s). Baja a «Najczęściej zadawane pytania» y para 3 s en cada una de las respuestas «Ile kosztuje Audible?», «Co otrzymuję z miesięcznym członkostwem Audible?» y «Co się stanie z audiobookami w mojej Bibliotece, jeśli anuluję?» (si son acordeones, despliégalos). No inicies sesión. Duración aproximada: 25 s."
+  },
+  {
+    "id": "02_katalog_amazon",
+    "para": [
+      "A05"
+    ],
+    "url": "https://www.amazon.pl/b?node=213913801031",
+    "viewport": "desktop",
+    "que_se_ve": "Sección «Książki do słuchania i programy oryginalne» de Amazon.pl (redirige a /Książki-do-słuchania-i-programy-oryginalne/b?ie=UTF8&node=213913801031): «Kochasz książki? Pokochasz Audible.», filtros laterales (Kategoria, Audible Originals, Trwanie, Format, Język con «Polski») y la fila «Bestseller» con títulos polacos (Na brzegu życia, Dolina spokoju – Joanna Jax, Mroczne sekrety – Marcel Moss, Kolejne 365 dni…) y la etiqueta «0,00 zł Bezpłatnie w ramach okresu próbnego Audible». Comprobado el 19/10/2026: 200, polaco.",
+    "pasos": "Abre la URL y rechaza las cookies («Odrzuć»). Para 3 s en la cabecera «Kochasz książki? Pokochasz Audible.». Baja por la columna de filtros hasta «Język» y pasa el ratón 2 s por «Polski» sin pulsarlo (la página de resultados filtrada da error 503 desde nuestro servidor). Baja a la fila «Bestseller» y para 4 s con los títulos polacos y la etiqueta «Bezpłatnie w ramach okresu próbnego Audible». No pulses portadas ni «Odkryj członkostwo». Duración aproximada: 11 s."
+  },
+  {
+    "id": "03_audible_de_pl",
+    "para": [
+      "A02",
+      "A07",
+      "A08",
+      "B04"
+    ],
+    "url": "https://www.audible.de/?language=pl_PL",
+    "viewport": "desktop",
+    "que_se_ve": "audible.de en polaco: menú en polaco («Audiobooki», «Słuchowiska», «Bestsellery»…), filas con títulos polacos (Lalka, W pustyni i w puszczy, Pan Wołodyjowski, Behawiorysta – Mróz…), el bloque «Jedna aplikacja przeznaczona do słuchania ulubionych pozycji» («Znajdź odpowiednią prędkość», «Ustaw wyłącznik czasowy», «Słuchaj w trybie samochodowym», «Słuchaj zawsze i wszędzie»), la FAQ con «Audible Standard kosztuje 28.99 zl miesięcznie. Audible Premium kosztuje 41.99 zl miesięcznie» y, en el pie, el enlace «Anuluj subskrypcję». OJO: desde fuera de Polonia la franja superior sale en alemán y en euros («Saisonale Sparangebote | 0,99 € pro Monat…») y algunos botones dicen «6,99 €/miesiąc»: es la oferta alemana; no la muestres salvo los 2 s de A08 (ver pasos) y nunca con los precios legibles. El selector de país del pie también depende de la IP (desde EE. UU. dice «Stany Zjednoczone (angielski)»): no lo encuadres. La dirección que enlaza sonorbooks.pl (https://www.audible.de/pl_PL/) devuelve 503 desde nuestro servidor; esta, con ?language=pl_PL, devuelve 200 (comprobado el 19/10/2026). Otras páginas de audible.de (p. ej. /ep/kostenlose-testversion-amazon-prime?language=pl_PL) redirigen desde EE. UU. a audible.com en inglés, y /pl_PL/ep/… da 503: no se usan.",
+    "pasos": "Abre la URL. Rechaza las cookies si aparece el aviso. Para A08: graba 2 s de la franja superior en alemán con la cifra en euros desenfocada o tapada en montaje. Para A02: baja hasta la primera fila de títulos polacos y para 3 s. Para A07: baja hasta «Jedna aplikacja przeznaczona do słuchania ulubionych pozycji» y para 5 s con los cuatro bloques (prędkość, wyłącznik czasowy, tryb samochodowy, offline). Para B04: baja hasta el pie y pasa el ratón 3 s por «Anuluj subskrypcję» sin pulsarlo. Evita encuadrar los botones con «6,99 €». No inicies sesión. Duración aproximada: 16 s."
+  },
+  {
+    "id": "04_swiat_czytnikow",
+    "para": [
+      "A02",
+      "A05",
+      "A06"
+    ],
+    "url": "https://swiatczytnikow.pl/polski-serwis-audible-wlasnie-ruszyl-dwa-plany-abonamentowe-na-razie-skromna-oferta-i-niemiecka-domena/",
+    "viewport": "desktop",
+    "que_se_ve": "Artículo de Świat Czytników del 15/07/2026 «Polski abonament Audible właśnie ruszył! Dwa plany subskrypcyjne, na razie skromna oferta i… niemiecka domena», con las frases «z polskiego Amazonu zostajemy przekierowani na niemiecką stronę audible.de», «Po przełączeniu na język polski widzę na razie około 3000 tytułów. Jest tam sporo domeny publicznej czy publikacji religijnych» y «Siembieda i Moss kosztują po 54 zł». Página pública de prensa (comprobado el 19/10/2026: 200, polaco).",
+    "pasos": "Abre la URL. Cierra el aviso de cookies si aparece (rechazar o X). Para 3 s en el titular y la fecha. Baja hasta «z polskiego Amazonu zostajemy przekierowani na niemiecką stronę audible.de» (3 s), después hasta «Po przełączeniu na język polski widzę na razie około 3000 tytułów…» (4 s) y hasta «Siembieda i Moss kosztują po 54 zł» (3 s). No bajes a los comentarios (llevan nombres de usuarios). Duración aproximada: 14 s."
+  },
+  {
+    "id": "05_google_play",
+    "para": [
+      "A08",
+      "A10"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=com.audible.application&hl=pl&gl=PL",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de Google Play en polaco: «Audible: Audio Entertainment», nota 4,1, «1,77 mln opinii», «100 mln+ Pobrania». La nota con gl=PL es la de Polonia (desde EE. UU. sale 4,6); el número de opiniones es mundial. Comprobado el 19/10/2026 (200, lang=pl).",
+    "pasos": "Abre la URL tal cual (con hl=pl&gl=PL). Si sale el aviso de cookies de Google, pulsa «Odrzuć wszystko». Encuadra la cabecera con 4,1 y para 4 s. No bajes a las reseñas (salen nombres) ni pulses «Zainstaluj». Duración aproximada: 5 s."
+  },
+  {
+    "id": "06_app_store",
+    "para": [
+      "A10",
+      "B03"
+    ],
+    "url": "https://apps.apple.com/pl/app/id379693831?l=pl",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de la App Store polaca en polaco (redirige a /pl/app/audible-audiobooks-podcasts/id379693831?l=pl): nota 4,8 y «Oceny: 4,4 tys.»; más abajo, la lista de compras dentro de la app con «UK - Audible iOS Standard Plan 39,99 zł», «DE - Audible iOS Standard Plan 39,99 zł», «Audible iOS Standard Plan 49,99 zł», «DE - Audible iOS Monthly 59,99 zł»… (todas por encima de los 28,99 zł / 41,99 zł de la web). Comprobado el 19/10/2026 (200, lang=pl).",
+    "pasos": "Abre la URL con «?l=pl». Para A10: encuadra la nota 4,8 y «Oceny: 4,4 tys.» y para 4 s. Para B03: baja hasta la sección de compras dentro de la aplicación y para 4 s con los planes y sus precios en zł. No bajes a las reseñas con nombres. Duración aproximada: 10 s."
+  },
+  {
+    "id": "07_sonorbooks",
+    "para": [
+      "B06"
+    ],
+    "url": "https://sonorbooks.pl/platformy/",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Platformy z audiobookami w Polsce» de SonorBooks con la tarjeta de Audible («Serwis Amazona dostępny w Polsce od lipca 2026 r. przez audible.de… od 28,99 zł / mies. … 30 dni za darmo… Premium kosztuje 41,99 zł/mies.») y las de Audioteka, Empik Go y Legimi. Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL. En el aviso de cookies pulsa «Rozumiem». Para 2 s en la cabecera «Twoja historia. Twoja platforma.». Baja hasta la tarjeta de Audible y para 4 s. Sube a las tarjetas de Audioteka, Empik Go y Legimi (2 s cada una). No pulses «Zobacz warunki w serwisie Audible» (lleva a https://www.audible.de/pl_PL/, que desde nuestro servidor da 503). Duración aproximada: 13 s."
+  }
+]

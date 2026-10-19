@@ -7,6 +7,10 @@ from faster_whisper import WhisperModel
 
 d = sys.argv[1]
 ids = sys.argv[2:] or sorted(f[:-4] for f in os.listdir(d) if f.endswith('.mp3'))
+# Un solo Whisper a la vez en la máquina (cada uno ocupa ~2 GB de RAM): los demás esperan su turno.
+import fcntl
+_lock = open('/tmp/claude-0/pl_whisper.lock', 'w')
+fcntl.flock(_lock, fcntl.LOCK_EX)
 m = WhisperModel('medium', device='cpu', compute_type='int8')
 for i in ids:
     tmp = tempfile.mktemp(suffix='.wav')

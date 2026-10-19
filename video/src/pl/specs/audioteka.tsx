@@ -10,7 +10,7 @@ export const piece: PLPiece = {
     logo: 'pl/audioteka/img/logo.svg', logoWhite: 'pl/audioteka/img/logo_white.svg', logoRatio: 27.92 / 119.919, tileBg: '#160829', tileLogoWhite: true,
     kicker: 'Recenzja Audioteki', music: 'pl/audioteka/music/bed.mp3',
     scenes: [
-      { id: 'A01', kind: 'hook', title: 'Audioteka:\nczy warto\npłacić?', hi: ['Audioteka:'], badge: 'Recenzja · 2026', rec: { clip: 'superprod', start: 0.4, url: 'audioteka.com/pl/katalog' }, promises: [
+      { id: 'A01', kind: 'hook', title: 'Audioteka:\nczy warto\npłacić?', hi: ['Audioteka:'], badge: 'Recenzja · 2026', rec: { clip: 'superprod', start: 0.2, holdAt: 14.0, url: 'audioteka.com/pl/katalog' }, promises: [
         { at: 'cennik', label: 'Cennik', icon: 'coin' }, { at: 'regulamin', label: 'Regulamin', icon: 'doc' }, { at: 'opinie', label: 'Opinie', icon: 'star' },
         { at: '14', label: '14 dni za darmo', icon: 'gift', tone: 'good' },
       ] },
@@ -26,10 +26,10 @@ export const piece: PLPiece = {
       { id: 'A04', kind: 'rec', bump: 'Katalog i superprodukcje', kicker: 'audioteka.com', title: 'Katalog bez logowania', rec: { clip: 'katalog', start: 0.0, url: 'audioteka.com/pl/katalog' },
         marks: [{ at: 'Przelacz', x: 758, y: 468, w: 402, h: 48 }],
         tags: [{ at: 'logowania', label: 'Bez konta i logowania', icon: 'lock' }, { at: 'Wszystkie', label: '„Wszystkie”: cały sklep', icon: 'library' }, { at: 'Klub', label: '„Audioteka Klub”', sub: 'tylko tytuły z abonamentu', icon: 'check', tone: 'good' }] },
-      { id: 'A05', kind: 'rec', side: 'right', kicker: 'Przykład', title: '„Solaris” Lema', rec: { clip: 'solaris', start: 0.4, url: 'audioteka.com/pl/audiobook/solaris' },
-        marks: [{ at: 'Robertem', until: 'siedem', x: 634, y: 300, w: 632, h: 30 }, { at: 'siedem', until: 'srednia', x: 548, y: 336, w: 240, h: 26 }, { at: 'srednia', until: 'znaczek', x: 548, y: 246, w: 182, h: 36 }, { at: 'znaczek', x: 1388, y: 178, w: 272, h: 254 }],
+      { id: 'A05', kind: 'rec', side: 'right', kicker: 'Przykład', title: '„Solaris” Lema', rec: { clip: 'solaris', start: 0.0, holdAt: 14.3, url: 'audioteka.com/pl/audiobook/solaris' },
+        marks: [{ at: 'Robertem', until: 'siedem', x: 630, y: 350, w: 640, h: 34 }, { at: 'siedem', until: 'srednia', x: 630, y: 388, w: 145, h: 28 }, { at: 'srednia', until: 'znaczek', x: 540, y: 296, w: 178, h: 42 }, { at: 'znaczek', x: 1386, y: 226, w: 276, h: 262 }],
         tags: [{ at: 'superprodukcja', label: 'Superprodukcja', icon: 'sparkle' }, { at: 'Robertem', label: 'Więckiewicz, Cielecka, Woronowicz', icon: 'mic' }, { at: 'siedem', label: '7 godz. 56 min', icon: 'clock' }, { at: 'srednia', label: 'Średnia ocen 4,8', icon: 'star' }, { at: 'znaczek', label: '„Dostępne w Klubie”', sub: 'czyli w abonamencie', icon: 'check', tone: 'good' }] },
-      { id: 'A06', kind: 'intro', kicker: 'Największy atut', rec: { clip: 'superprod', start: 6.0, url: 'audioteka.com/pl/katalog' },
+      { id: 'A06', kind: 'intro', kicker: 'Największy atut', rec: { clip: 'superprod', start: 5.4, holdAt: 14.0, url: 'audioteka.com/pl/katalog' },
         cuts: [{ at: '700', rec: { clip: 'klub_korzysci', start: 2.6, url: 'klub.audioteka.com' } }, { at: 'Nowe', rec: { clip: 'klub_korzysci', start: 21.6, url: 'klub.audioteka.com' } }],
         facts: [{ at: 'muzyka', label: 'Muzyka, efekty, aktorzy', sub: 'jak w kinie', icon: 'music' }, { at: '700', label: 'Blisko 700 tytułów', sub: 'tylko w Audiotece', icon: 'lock' }, { at: 'tygodnie', label: 'Premiery w Klubie', sub: 'tygodnie przed sklepem', icon: 'calendar' }],
         big: { at: '200', value: 200, suffix: '+', label: 'superprodukcji i audioseriali' } },

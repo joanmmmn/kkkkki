@@ -14,7 +14,8 @@ TMP="out/chunks/$COMP"
 mkdir -p "$TMP"
 # Un solo paquete de webpack para todos los tramos (cada `remotion render src/index.ts` dejaba ~1,3 GB en /tmp).
 BUNDLE="$TMP/bundle"
-[ -f "$BUNDLE/index.html" ] || npx remotion bundle src/index.ts --out-dir="$BUNDLE" > "$TMP/bundle.log" 2>&1
+PUB=""; case "$COMP" in PL*) [ -d public_pl ] && PUB="--public-dir=public_pl";; esac
+[ -f "$BUNDLE/index.html" ] || npx remotion bundle src/index.ts --out-dir="$BUNDLE" $PUB > "$TMP/bundle.log" 2>&1
 trap 'rm -rf "$BUNDLE"' EXIT
 TOTAL=$(npx remotion compositions "$BUNDLE" 2>/dev/null | awk -v c="$COMP" '$1==c {print $4}')
 [ -n "$TOTAL" ] || { echo "No encuentro la composición $COMP" >&2; exit 1; }

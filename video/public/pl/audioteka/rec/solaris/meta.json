@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 171,
+ "duration": 14.446,
+ "offset": 0.25,
+ "marks": {
+  "top": 0.173,
+  "voices": 2.501,
+  "klub": 7.331,
+  "end": 14.446
+ },
+ "events": []
+}

@@ -4,14 +4,15 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 86,
- "duration": 10.668,
- "offset": 0.195,
+ "frames": 73,
+ "duration": 11.855,
+ "offset": 0.28,
  "marks": {
-  "top": 0.39,
-  "scroll": 3.754,
-  "kat": 6.899,
-  "end": 10.668
+  "top": 0.282,
+  "scroll": 3.83,
+  "spacer": 6.629,
+  "icons": 8.761,
+  "end": 11.854
  },
  "events": []
 }

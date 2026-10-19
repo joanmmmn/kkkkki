@@ -41,8 +41,8 @@ export const piece: PLPiece = {
         { at: 'Unlimited', label: 'Unlimited: godzin nie liczysz', icon: 'infinity', tone: 'good' }, { at: 'urzadzeniu', label: '1 konto = 1 urządzenie naraz', icon: 'phone' },
       ] },
       { id: 'A08B', kind: 'rec', side: 'right', kicker: 'Rodzina i dzieci', title: 'Family i Kids Mode', rec: { clip: 'faq', start: 2.6 },
-        cuts: [{ at: 'dzieci', rec: { clip: 'zakup', start: 10.9 } }],
-        marks: [{ at: 'osobne', until: 'dzieci', x: 456, y: 634, w: 1004, h: 164 }, { at: 'dzieciecy', x: 882, y: 842, w: 840, h: 84 }],
+        cuts: [{ at: 'dzieci', rec: { clip: 'zakup', start: 10.9, holdAt: 14.5 } }],
+        marks: [{ at: 'osobne', until: 'dzieci', x: 456, y: 634, w: 1004, h: 164 }, { at: 'dzieciecy', x: 882, y: 906, w: 840, h: 96 }],
         tags: [{ at: 'osobne', label: 'Osobne konta i półki', icon: 'family' }, { at: 'jedna', label: 'Płaci jedna osoba', icon: 'card' }, { at: 'dzieciecy', label: 'Tryb dziecięcy z PIN-em', icon: 'lock' }] },
       { id: 'A09', kind: 'devices', items: [
         { at: 'telefonach', label: 'Telefon i tablet', sub: 'Android, iOS', icon: 'phone', ok: true }, { at: 'zegarkach', label: 'Zegarki', sub: 'Apple\u00a0Watch, Wear\u00a0OS', icon: 'watch', ok: true },

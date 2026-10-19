@@ -1,0 +1,200 @@
+{
+ "total_frames": 13299,
+ "seconds": 265.98,
+ "chapters": [
+  {
+   "t": 10.86,
+   "label": "Co dostajesz w Premium"
+  },
+  {
+   "t": 27.54,
+   "label": "Cennik: Individual, Duo, Family i Student"
+  },
+  {
+   "t": 50.42,
+   "label": "Jak liczą się godziny"
+  },
+  {
+   "t": 64.84,
+   "label": "Audiobooki+ i doładowania"
+  },
+  {
+   "t": 82.9,
+   "label": "Jak znaleźć audiobooki w aplikacji"
+  },
+  {
+   "t": 95.12,
+   "label": "Zakup pojedynczych tytułów"
+  },
+  {
+   "t": 110.08,
+   "label": "Funkcje odtwarzacza"
+  },
+  {
+   "t": 125.78,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 134.46,
+   "label": "Opinie"
+  },
+  {
+   "t": 153.5,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 170.0,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 190.22,
+   "label": "Jak zacząć"
+  },
+  {
+   "t": 216.32,
+   "label": "Ile godzin ci zostało"
+  },
+  {
+   "t": 228.54,
+   "label": "Jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 557,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 557,
+   "dur": 834,
+   "lead": 26,
+   "bump": "Co dostajesz?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1391,
+   "dur": 1144,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2535,
+   "dur": 707,
+   "lead": 26,
+   "bump": "Jak liczą się godziny"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3242,
+   "dur": 917,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "features",
+   "start": 4159,
+   "dur": 597,
+   "lead": 26,
+   "bump": "Jak to działa"
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 4756,
+   "dur": 748,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "features",
+   "start": 5504,
+   "dur": 785,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6289,
+   "dur": 448,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 6737,
+   "dur": 952,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 7689,
+   "dur": 825,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 8514,
+   "dur": 1011,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "steps",
+   "start": 9525,
+   "dur": 509,
+   "lead": 26,
+   "bump": "Jak zacząć"
+  },
+  {
+   "id": "B02",
+   "kind": "stat",
+   "start": 10034,
+   "dur": 782,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "steps",
+   "start": 10816,
+   "dur": 611,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11427,
+   "dur": 801,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12228,
+   "dur": 1071,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

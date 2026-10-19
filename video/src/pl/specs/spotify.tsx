@@ -28,7 +28,7 @@ export const piece: PLPiece = {
       { id: 'A07', kind: 'rec', kicker: 'Poza abonamentem', title: 'Zakup osobno', rec: { clip: 'pomoc_odblokuj', start: 3.2, url: 'support.spotify.com/pl' },
         marks: [{ at: 'osobno', until: 'przegladarce', x: 524, y: 284, w: 496, h: 72 }, { at: 'przegladarce', until: 'polskich', x: 524, y: 642, w: 496, h: 166 }],
         zooms: [{ at: 'przegladarce', zoom: 1.4, x: 770, y: 640 }, { at: 'polskich', zoom: 1, x: 960, y: 540 }],
-        tags: [{ at: 'osobno', label: 'Kupisz pojedynczy tytuł', icon: 'coin' }, { at: 'przegladarce', label: 'Tylko w przeglądarce', icon: 'globe' }, { at: 'zjada', label: 'Nie zużywa godzin', tone: 'good' }, { at: 'Harda', label: '„Harda” · E. Cherezińska', icon: 'book' }, { at: 'Prawde', label: '„Prawda zapisana w popiołach” · J. Jax', icon: 'book' }] },
+        tags: [{ at: 'osobno', label: 'Kupisz pojedynczy tytuł', icon: 'coin' }, { at: 'przegladarce', label: 'Tylko w przeglądarce', icon: 'globe' }, { at: 'zjada', label: 'Nie zużywa godzin', tone: 'good' }, { at: 'Harda', label: 'Elżbieta Cherezińska', sub: '„Harda”', icon: 'book' }, { at: 'Prawde', label: 'Joanna Jax', sub: '„Prawda zapisana w popiołach”', icon: 'book' }] },
       { id: 'A08', kind: 'features', kicker: 'Odtwarzacz', title: 'Co potrafi?', cols: 3, items: [
         { at: 'predkosc', label: 'Prędkość', icon: 'speed' }, { at: 'pietnascie', label: '15 sekund', sub: 'w przód i w tył', icon: 'sync' },
         { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' }, { at: 'offline', label: 'Offline', icon: 'download' },
@@ -57,9 +57,13 @@ export const piece: PLPiece = {
       { id: 'B02', kind: 'stat', kicker: 'Nie masz Premium?', at: 'zero', value: '0 zł', label: 'za pierwszy miesiąc Premium Individual (jeśli nie miałeś Premium)', tags: [
         { at: 'Potem', label: 'Potem 26,99 zł / mies.', icon: 'calendar' }, { at: 'wprost', label: '12 h w okresie próbnym? Spotify tego nie precyzuje', tone: 'bad' },
       ] },
-      { id: 'B03', kind: 'steps', kicker: 'Ile godzin zostało?', title: 'Sprawdź w aplikacji', rec: { clip: 'pomoc_doladowania', start: 6.2, url: 'support.spotify.com/pl' }, steps: [
-        { at: 'zdjecia', title: 'Zdjęcie profilowe' }, { at: 'Twoje', title: 'Twoje Premium' }, { at: 'Czas', title: 'Czas słuchania audiobooków', sub: 'tu kupisz też doładowanie' },
-      ] },
+      { id: 'B03', kind: 'steps', kicker: 'Ile godzin zostało?', title: 'Sprawdź w aplikacji', rec: { clip: 'pomoc_doladowania', start: 2.8, url: 'support.spotify.com/pl' }, steps: [
+        { at: 'zdjecia', title: 'Zdjęcie profilowe' }, { at: 'ustawienia', title: 'Ustawienia › Konto' }, { at: 'nazwy', title: 'Twój plan' },
+        { at: 'Czas', title: 'Czas słuchania audiobooków', sub: 'tu kupisz też doładowanie' },
+      ],
+        marks: [{ at: 'zdjecia', until: 'ustawienia', x: 538, y: 500, w: 336, h: 34 }, { at: 'ustawienia', until: 'Konto', x: 538, y: 525, w: 440, h: 32 },
+          { at: 'Konto', until: 'Czas', x: 538, y: 549, w: 456, h: 50 }, { at: 'Czas', x: 538, y: 591, w: 330, h: 32 }],
+        zooms: [{ at: 'zdjecia', zoom: 1.7, x: 760, y: 560 }] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_anuluj', start: 0.4, url: 'support.spotify.com/pl' }, steps: [
         { at: 'Zarzadzaj', title: 'Zarządzaj swoim planem' }, { at: 'Anuluj', title: 'Anuluj subskrypcję' },
         { at: 'okresie', title: 'W okresie próbnym: od razu wersja darmowa', sub: 'anuluj pod koniec próby, przed płatnością' },

@@ -59,7 +59,7 @@ export type RatingsScene = Base & { kind: 'ratings'; stores: StoreSpec[]; likes:
 export type ProsConsScene = Base & { kind: 'proscons'; pros: TagSpec[]; cons: TagSpec[] };
 export type VerdictScene = Base & { kind: 'verdict'; question?: string; yes: TagSpec[]; no: TagSpec[]; alts?: { at: Cue; names: string[]; label?: string } };
 export type StepSpec = { at: Cue; title: string; sub?: string; rec?: RecRef };
-export type StepsScene = Base & { kind: 'steps'; steps: StepSpec[]; rec?: RecRef; marks?: MarkSpec[]; note?: TagSpec };
+export type StepsScene = Base & { kind: 'steps'; steps: StepSpec[]; rec?: RecRef; marks?: MarkSpec[]; zooms?: ZoomSpec[]; note?: TagSpec };
 export type OutroScene = Base & { kind: 'outro'; rec?: RecRef; cta: string; ctaAt: Cue; tags?: TagSpec[]; signAt: Cue };
 
 export type SceneSpec = HookScene | IntroScene | PlansScene | RecScene | FeaturesScene | StatScene | DevicesScene | RatingsScene | ProsConsScene | VerdictScene | StepsScene | OutroScene;
