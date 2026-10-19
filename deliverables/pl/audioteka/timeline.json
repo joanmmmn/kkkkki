@@ -1,0 +1,228 @@
+{
+ "total_frames": 13339,
+ "seconds": 266.78,
+ "chapters": [
+  {
+   "t": 13.76,
+   "label": "Czym jest Audioteka"
+  },
+  {
+   "t": 32.58,
+   "label": "Cennik: Plan Optymalny, Smart i na Start"
+  },
+  {
+   "t": 54.62,
+   "label": "Katalog bez logowania"
+  },
+  {
+   "t": 65.86,
+   "label": "Przykład: „Solaris”"
+  },
+  {
+   "t": 80.92,
+   "label": "Superprodukcje i wyłączności"
+  },
+  {
+   "t": 97.4,
+   "label": "Co jest za dopłatą"
+  },
+  {
+   "t": 107.76,
+   "label": "Aplikacja i limit godzin"
+  },
+  {
+   "t": 126.16,
+   "label": "Audioteka Kids"
+  },
+  {
+   "t": 135.22,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 148.68,
+   "label": "Opinie"
+  },
+  {
+   "t": 165.86,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 182.4,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 196.78,
+   "label": "Jak wypróbować 14 dni za darmo"
+  },
+  {
+   "t": 224.82,
+   "label": "Co po okresie próbnym"
+  },
+  {
+   "t": 231.8,
+   "label": "Jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 702,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 702,
+   "dur": 941,
+   "lead": 26,
+   "bump": "Czym jest Audioteka"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1643,
+   "dur": 1102,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2745,
+   "dur": 548,
+   "lead": 26,
+   "bump": "Katalog i superprodukcje"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3293,
+   "dur": 753,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "intro",
+   "start": 4046,
+   "dur": 824,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 4870,
+   "dur": 532,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "features",
+   "start": 5402,
+   "dur": 609,
+   "lead": 26,
+   "bump": "Aplikacja"
+  },
+  {
+   "id": "A08S",
+   "kind": "rec",
+   "start": 6011,
+   "dur": 297,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08B",
+   "kind": "rec",
+   "start": 6308,
+   "dur": 453,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6761,
+   "dur": 687,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 7448,
+   "dur": 859,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8307,
+   "dur": 827,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 9134,
+   "dur": 719,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "rec",
+   "start": 9853,
+   "dur": 345,
+   "lead": 26,
+   "bump": "14 dni za darmo"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 10198,
+   "dur": 617,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "features",
+   "start": 10815,
+   "dur": 426,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "stat",
+   "start": 11241,
+   "dur": 363,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "steps",
+   "start": 11604,
+   "dur": 861,
+   "lead": 26,
+   "bump": "Jak zrezygnować"
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12465,
+   "dur": 874,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "total_frames": 13417,
+ "seconds": 268.34,
+ "chapters": [
+  {
+   "t": 12.3,
+   "label": "Czym jest Legimi"
+  },
+  {
+   "t": 31.6,
+   "label": "Cennik: bez limitu i z limitem"
+  },
+  {
+   "t": 51.38,
+   "label": "Katalog i karta audiobooka"
+  },
+  {
+   "t": 78.78,
+   "label": "Aplikacja i synchrobooki"
+  },
+  {
+   "t": 94.9,
+   "label": "Własne produkcje i dopłaty"
+  },
+  {
+   "t": 112.54,
+   "label": "Jak działają pakiety z limitem"
+  },
+  {
+   "t": 128.84,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 142.9,
+   "label": "Opinie"
+  },
+  {
+   "t": 158.88,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 177.86,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 193.48,
+   "label": "Jak wypróbować 3 dni za darmo"
+  },
+  {
+   "t": 220.08,
+   "label": "Uwaga na umowę na 12 miesięcy"
+  },
+  {
+   "t": 232.82,
+   "label": "Jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 629,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 629,
+   "dur": 965,
+   "lead": 26,
+   "bump": "Co dostajesz?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1594,
+   "dur": 989,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2583,
+   "dur": 584,
+   "lead": 26,
+   "bump": "Katalog"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3167,
+   "dur": 786,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "features",
+   "start": 3953,
+   "dur": 792,
+   "lead": 26,
+   "bump": "Jak to działa"
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 4745,
+   "dur": 882,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "rec",
+   "start": 5627,
+   "dur": 815,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6442,
+   "dur": 717,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 7159,
+   "dur": 799,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 7958,
+   "dur": 949,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 8907,
+   "dur": 781,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "stat",
+   "start": 9688,
+   "dur": 376,
+   "lead": 26,
+   "bump": "Jak wypróbować"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 10064,
+   "dur": 653,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "rec",
+   "start": 10717,
+   "dur": 287,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "rec",
+   "start": 11004,
+   "dur": 651,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "steps",
+   "start": 11655,
+   "dur": 828,
+   "lead": 26,
+   "bump": "Jak zrezygnować"
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12483,
+   "dur": 934,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

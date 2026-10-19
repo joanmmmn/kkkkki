@@ -1,0 +1,196 @@
+{
+ "total_frames": 13699,
+ "seconds": 273.98,
+ "chapters": [
+  {
+   "t": 12.82,
+   "label": "Czym jest Kobo Plus"
+  },
+  {
+   "t": 29.66,
+   "label": "Cennik: Read, Listen i Read & Listen"
+  },
+  {
+   "t": 56.06,
+   "label": "Jak działa abonament"
+  },
+  {
+   "t": 71.64,
+   "label": "Polski katalog"
+  },
+  {
+   "t": 88.32,
+   "label": "Dla kogo: książki po angielsku"
+  },
+  {
+   "t": 98.72,
+   "label": "Aplikacja i odtwarzacz"
+  },
+  {
+   "t": 111.6,
+   "label": "Audiobooki na czytnikach Kobo"
+  },
+  {
+   "t": 123.06,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 137.3,
+   "label": "Opinie"
+  },
+  {
+   "t": 161.66,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 179.12,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 202.04,
+   "label": "Jak wypróbować za darmo"
+  },
+  {
+   "t": 233.62,
+   "label": "Jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 655,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 655,
+   "dur": 842,
+   "lead": 26,
+   "bump": "Czym jest Kobo Plus?"
+  },
+  {
+   "id": "A03",
+   "kind": "rec",
+   "start": 1497,
+   "dur": 1320,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2817,
+   "dur": 779,
+   "lead": 26,
+   "bump": "Jak to działa"
+  },
+  {
+   "id": "A05",
+   "kind": "stat",
+   "start": 3596,
+   "dur": 820,
+   "lead": 26,
+   "bump": "Polski katalog"
+  },
+  {
+   "id": "A06",
+   "kind": "rec",
+   "start": 4416,
+   "dur": 534,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "features",
+   "start": 4950,
+   "dur": 630,
+   "lead": 26,
+   "bump": "Aplikacja i czytniki"
+  },
+  {
+   "id": "A08",
+   "kind": "rec",
+   "start": 5580,
+   "dur": 573,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6153,
+   "dur": 726,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 6879,
+   "dur": 1218,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8097,
+   "dur": 873,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 8970,
+   "dur": 1146,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "steps",
+   "start": 10116,
+   "dur": 484,
+   "lead": 26,
+   "bump": "Jak wypróbować za darmo"
+  },
+  {
+   "id": "B02",
+   "kind": "rec",
+   "start": 10600,
+   "dur": 733,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "steps",
+   "start": 11333,
+   "dur": 348,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11681,
+   "dur": 856,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12537,
+   "dur": 1162,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}
