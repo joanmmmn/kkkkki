@@ -7,7 +7,7 @@ import { Sfx, STEM } from '../../components/Sfx';
 import { clamp, easeOut } from '../../lib/anim';
 import { dieFlicker } from './fx';
 
-export const T10_MUSIC: string | null = null; // 'music/t10f_bed.mp3' cuando esté compuesta (tools/t10f_music.py)
+export const T10_MUSIC: string | null = 'music/t10f_bed.mp3'; // ElevenLabs Music por bloques (tools/t10f_music.py)
 
 const IN = 14;
 const OV = 10;

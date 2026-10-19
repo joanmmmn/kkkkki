@@ -257,7 +257,7 @@ export const F8: F = ({ at, c }) => {
           <div style={{ position: 'relative', height: 260 }}>
             {Array.from({ length: 16 }).map((_, k) => {
               const p = ((frame - fen) / 50 + k / 16) % 1;
-              return frame > fen - 6 ? <div key={k} style={{ position: 'absolute', left: 30 + ((k * 67) % 420), top: 230 - p * 240, fontSize: 30 + (k % 3) * 8, color: k % 2 ? '#ff5a7a' : GOLD, opacity: 1 - p }}>♥</div> : null;
+              return frame > fen - 6 ? <div key={k} style={{ position: 'absolute', left: 30 + ((k * 67) % 420), top: 140 - p * 150, fontSize: 30 + (k % 3) * 8, color: k % 2 ? '#ff5a7a' : GOLD, opacity: 1 - p }}>♥</div> : null;
             })}
             <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: BONE }}>El fenómeno del año</div>
           </div>
