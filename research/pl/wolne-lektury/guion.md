@@ -12,6 +12,12 @@
   **CC BY-SA 3.0**: si se usa, crédito en pantalla («„Pan Tadeusz”, czyta Wiktor Korzeniewski, Wolne Lektury, CC BY-SA 3.0»)
   y en la descripción. Decide Joan (ver notas legales del dossier). Si no se usa, el vídeo arranca en A01.
 
+
+> **Cambios en el montaje (19/10/2026)** — la locución final está en `video/public/pl/wolne-lektury/vo/vo.json`:
+> sin A00 (audio CC BY-SA); A03 «na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty»
+> (el banner de la colecta acaba el 31.10 y no se enseña); A07 «Nagrania są na wolnych licencjach» (Lalka y Quo vadis llevan
+> Licencja Wolnej Sztuki, no CC); B01 junta B01–B03 («…wybierz MP3: dostaniesz całą książkę w pliku ZIP»); B04 es una escena aparte.
+
 ---
 
 ### A01 · Gancho  (≈ 14 s)

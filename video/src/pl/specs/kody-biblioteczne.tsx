@@ -18,7 +18,7 @@ export const piece: PLPiece = {
         { at: 'Legimi', label: 'Legimi · Empik Go · Audioteka', icon: 'headphones' }, { at: '0', label: 'Miesiąc za 0 zł', sub: 'z kartą, jeśli zdobędziesz kod', icon: 'gift' },
         { at: 'haczyk', label: 'Gdzie jest haczyk?', icon: 'search', tone: 'accent' }, { at: 'zdobyc', label: 'Jak zdobyć kod', icon: 'play' },
       ] },
-      { id: 'A02', kind: 'steps', bump: 'Jak to działa?', kicker: 'Kod z biblioteki', title: 'Jak to działa?', rec: { clip: '01_empik_biblioteki', start: 11.2, url: 'empik.com/biblioteki' }, steps: [
+      { id: 'A02', kind: 'steps', bump: 'Jak to działa?', kicker: 'Kod z biblioteki', title: 'Jak to działa?', rec: { clip: '01_empik_biblioteki', start: 11.9, url: 'empik.com/biblioteki' }, steps: [
         { at: 'kupuje', title: 'Biblioteka kupuje pulę kodów' }, { at: 'rozdaje', title: 'Rozdaje je czytelnikom', sub: 'za darmo' },
         { at: 'wpisujesz', title: 'Kod wpisujesz w serwisie' }, { at: '30', title: 'Zwykle 30 dni', sub: 'bez limitu tytułów' },
         { at: 'Placi', title: 'Płaci biblioteka', sub: 'Łódź: 500 000 zł z budżetu obywatelskiego', rec: { clip: '05_lodz_ebooki', start: 0.3, holdAt: 3.3, url: 'biblioteka.lodz.pl' } },
