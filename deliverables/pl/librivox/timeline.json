@@ -1,6 +1,6 @@
 {
- "total_frames": 14112,
- "seconds": 282.24,
+ "total_frames": 14178,
+ "seconds": 283.56,
  "chapters": [
   {
    "t": 14.78,
@@ -35,23 +35,23 @@
    "label": "Prawo: USA a Polska"
   },
   {
-   "t": 159.44,
+   "t": 160.76,
    "label": "Na telefonie: RSS i aplikacje"
   },
   {
-   "t": 174.54,
+   "t": 175.86,
    "label": "Opinie o aplikacjach"
   },
   {
-   "t": 196.8,
+   "t": 198.12,
    "label": "Plusy i minusy"
   },
   {
-   "t": 214.76,
+   "t": 216.08,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 229.28,
+   "t": 230.6,
    "label": "Jak zacząć"
   }
  ],
@@ -132,14 +132,14 @@
    "id": "A08B",
    "kind": "rec",
    "start": 6676,
-   "dur": 1310,
+   "dur": 1376,
    "lead": 26,
    "bump": "Prawo: USA a Polska"
   },
   {
    "id": "A09",
    "kind": "rec",
-   "start": 7986,
+   "start": 8052,
    "dur": 755,
    "lead": 26,
    "bump": "Na telefonie"
@@ -147,7 +147,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 8741,
+   "start": 8807,
    "dur": 1113,
    "lead": 26,
    "bump": "Opinie"
@@ -155,7 +155,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 9854,
+   "start": 9920,
    "dur": 898,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -163,7 +163,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 10752,
+   "start": 10818,
    "dur": 726,
    "lead": 26,
    "bump": "Werdykt"
@@ -171,7 +171,7 @@
   {
    "id": "B01",
    "kind": "rec",
-   "start": 11478,
+   "start": 11544,
    "dur": 307,
    "lead": 26,
    "bump": "Jak zacząć"
@@ -179,7 +179,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 11785,
+   "start": 11851,
    "dur": 348,
    "lead": 7,
    "bump": null
@@ -187,7 +187,7 @@
   {
    "id": "B03",
    "kind": "rec",
-   "start": 12133,
+   "start": 12199,
    "dur": 238,
    "lead": 7,
    "bump": null
@@ -195,7 +195,7 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 12371,
+   "start": 12437,
    "dur": 298,
    "lead": 7,
    "bump": null
@@ -203,7 +203,7 @@
   {
    "id": "B05",
    "kind": "features",
-   "start": 12669,
+   "start": 12735,
    "dur": 385,
    "lead": 7,
    "bump": null
@@ -211,7 +211,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 13054,
+   "start": 13120,
    "dur": 1058,
    "lead": 7,
    "bump": null

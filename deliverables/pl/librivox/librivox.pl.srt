@@ -153,152 +153,153 @@ Zanim wybierzesz książkę,
 posłuchaj minuty.
 
 34
-00:02:14,040 --> 00:02:19,560
+00:02:14,040 --> 00:02:19,520
 Najważniejsze: LibriVox nagrywa książki
 wolne od praw w USA i sam prosi, by
 
 35
-00:02:19,600 --> 00:02:21,573
+00:02:19,560 --> 00:02:21,560
 sprawdzić prawo swojego kraju.
 
 36
-00:02:21,613 --> 00:02:25,333
+00:02:21,600 --> 00:02:25,320
 W Polsce prawa wygasają
 70 lat po śmierci autora.
 
 37
-00:02:25,373 --> 00:02:29,985
+00:02:25,360 --> 00:02:30,024
 Polskie nagrania to głównie dzieła
 dawnych autorów, ale uważaj na angielskie:
 
 38
-00:02:30,025 --> 00:02:36,504
-A. A. Milne zmarł w 1956 roku, więc „Kubuś
-Puchatek” będzie w Polsce wolny dopiero od
+00:02:30,064 --> 00:02:36,160
+A. A. Milne zmarł w 1956 roku, więc
+oryginalny, angielski „Kubuś Puchatek”
 
 39
-00:02:36,544 --> 00:02:38,550
-1 stycznia 2027.
+00:02:36,200 --> 00:02:39,770
+będzie w Polsce wolny
+dopiero od 1 stycznia 2027.
 
 40
-00:02:40,240 --> 00:02:44,240
+00:02:41,560 --> 00:02:45,560
 Na telefonie? LibriVox nie
 ma oficjalnej aplikacji.
 
 41
-00:02:44,280 --> 00:02:49,160
+00:02:45,600 --> 00:02:50,480
 Link „RSS” wkleisz do aplikacji
 z podcastami albo użyjesz aplikacji innych
 
 42
-00:02:49,200 --> 00:02:54,192
+00:02:50,520 --> 00:02:55,512
 firm, jak LibriVox Audio Books na Androida
 i LibriVox Audiobooks na iPhone'a.
 
 43
-00:02:55,340 --> 00:03:01,220
+00:02:56,660 --> 00:03:02,540
 Oceny tych aplikacji są dobre: na
 Androidzie 4,7 przy ponad 68 tysiącach
 
 44
-00:03:01,260 --> 00:03:06,473
+00:03:02,580 --> 00:03:07,793
 opinii, a w polskim App
 Storze 4,6 przy 62 ocenach.
 
 45
-00:03:06,513 --> 00:03:10,180
+00:03:07,833 --> 00:03:11,500
 Mają wyłącznik czasowy,
 zakładki i pobieranie offline.
 
 46
-00:03:10,220 --> 00:03:15,866
+00:03:11,540 --> 00:03:17,186
 Minus: wersja na Androida ma reklamy,
 a bez reklam kosztuje 24,99 zł.
 
 47
-00:03:17,600 --> 00:03:23,400
+00:03:18,920 --> 00:03:24,720
 Plusy: za darmo i legalnie, bez konta
 i reklam, prawdziwe głosy, pliki na zawsze
 
 48
-00:03:23,440 --> 00:03:25,827
+00:03:24,760 --> 00:03:27,147
 i ogromny wybór po angielsku.
 
 49
-00:03:25,867 --> 00:03:31,400
+00:03:27,187 --> 00:03:32,720
 Minusy: po polsku tylko 27 książek,
 głównie jeden lektor, nierówna jakość,
 
 50
-00:03:31,440 --> 00:03:35,050
+00:03:32,760 --> 00:03:36,370
 strona po angielsku i brak
 oficjalnej aplikacji.
 
 51
-00:03:35,560 --> 00:03:39,893
+00:03:36,880 --> 00:03:41,213
 Warto? Do polskiej klasyki tak,
 jeśli pasuje ci głos lektora.
 
 52
-00:03:39,933 --> 00:03:44,507
+00:03:41,253 --> 00:03:45,827
 Do nauki angielskiego to
 kopalnia: ponad 19 000 tytułów.
 
 53
-00:03:44,547 --> 00:03:49,490
+00:03:45,867 --> 00:03:50,810
 A polską klasykę z zawodowymi lektorami
 masz za darmo także w Wolnych Lekturach.
 
 54
-00:03:50,080 --> 00:03:52,830
+00:03:51,400 --> 00:03:54,150
 Jak zacząć? Wejdź na librivox.org.
 
 55
-00:03:53,480 --> 00:03:55,450
+00:03:54,800 --> 00:03:56,770
 Rejestracja nie jest potrzebna.
 
 56
-00:03:55,840 --> 00:04:01,160
+00:03:57,160 --> 00:04:02,480
 Kliknij „Browse the catalog”, potem
 „Language” i „Polish” albo wpisz tytuł
 
 57
-00:04:01,200 --> 00:04:02,730
+00:04:02,520 --> 00:04:04,050
 w wyszukiwarkę.
 
 58
-00:04:02,800 --> 00:04:07,210
+00:04:04,120 --> 00:04:08,530
 Na stronie książki kliknij „Play”
 przy rozdziale i słuchaj od razu.
 
 59
-00:04:07,560 --> 00:04:12,694
+00:04:08,880 --> 00:04:14,014
 Offline? „Download” ściąga całą książkę,
 a tytuł rozdziału – jeden plik MP3.
 
 60
-00:04:13,520 --> 00:04:18,560
+00:04:14,840 --> 00:04:19,880
 I drobny druk: przy nagraniach spoza
 polskiej listy sprawdź, kiedy zmarł autor,
 
 61
-00:04:18,600 --> 00:04:21,050
+00:04:19,920 --> 00:04:22,370
 a przy przekładach także tłumacz.
 
 62
-00:04:21,220 --> 00:04:26,568
+00:04:22,540 --> 00:04:27,888
 A jeśli wolisz zawodowych lektorów, na
 sonorbooks.pl porównasz Audiotekę, Empik
 
 63
-00:04:26,608 --> 00:04:29,500
+00:04:27,928 --> 00:04:30,820
 Go, Legimi czy darmowe Wolne Lektury:
 
 64
-00:04:29,540 --> 00:04:31,927
+00:04:30,860 --> 00:04:33,247
 gdzie posłuchać audiobooka i za ile.
 
 65
-00:04:31,967 --> 00:04:34,670
+00:04:33,287 --> 00:04:35,990
 Twoja następna historia
 już na ciebie czeka.

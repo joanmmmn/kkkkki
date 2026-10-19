@@ -24,7 +24,13 @@
    "wait": 300
   },
   {
-   "eval": "window.scrollTo(0,10480)"
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=800){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,120))}window.scrollTo(0,0)})()"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "(()=>{const t='Informacja o e-bookach';const els=[...document.querySelectorAll('h1,h2,h3,h4,strong,p,span,div')].filter(e=>e.textContent.includes(t)&&e.getBoundingClientRect().height>0);els.sort((a,b)=>a.textContent.length-b.textContent.length);const e=els[0];if(e){window.scrollTo(0,window.scrollY+e.getBoundingClientRect().top-160);}})()"
   },
   {
    "wait": 1200

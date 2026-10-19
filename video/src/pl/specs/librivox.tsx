@@ -123,7 +123,7 @@ export const piece: PLPiece = {
         { at: 'reklamy', label: 'Android: z reklamami', tone: 'bad' },
         { at: 'kosztuje', label: 'Bez reklam: 24,99 zł', sub: 'wersja Supporter · stan na październik 2026', icon: 'coin' },
       ] },
-      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'LibriVox', pros: [
+      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', kicker: 'Podsumowanie', title: 'LibriVox', pros: [
         { at: 'darmo', label: '0 zł i legalnie', sub: 'w USA; w Polsce: 70 lat po śmierci autora' }, { at: 'konta', label: 'Bez konta i reklam' }, { at: 'prawdziwe', label: 'Ludzkie głosy' },
         { at: 'zawsze', label: 'Pliki na zawsze' }, { at: 'ogromny', label: 'Ponad 19 000 tytułów po angielsku' },
       ], cons: [

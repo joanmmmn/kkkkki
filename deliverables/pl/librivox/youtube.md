@@ -26,11 +26,11 @@ Gdzie jest haczyk? Sprawdziliśmy, ile jest polskich nagrań, jak ich słuchać 
 1:41 Strona książki: słuchanie i pobieranie
 1:58 Lektorzy
 2:13 Prawo: USA a Polska
-2:39 Na telefonie: RSS i aplikacje
-2:54 Opinie o aplikacjach
-3:16 Plusy i minusy
-3:34 Werdykt: czy warto?
-3:49 Jak zacząć
+2:40 Na telefonie: RSS i aplikacje
+2:55 Opinie o aplikacjach
+3:18 Plusy i minusy
+3:36 Werdykt: czy warto?
+3:50 Jak zacząć
 
 W filmie:
 • LibriVox to projekt wolontariuszy (od sierpnia 2005), non-profit i bez reklam: 21 847 tytułów w 49 językach (stan na 19.10.2026).
