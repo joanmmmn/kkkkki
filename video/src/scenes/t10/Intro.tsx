@@ -268,7 +268,7 @@ export const Regla: React.FC = () => {
                   )}
                   {shine > 0 && <div style={{ position: 'absolute', inset: 0, background: `rgba(255,236,190,${(0.28 * shine).toFixed(3)})`, mixBlendMode: 'screen' }} />}
                   {stamp > 0 && (
-                    <div style={{ position: 'absolute', left: -10, right: -10, top: sz * 0.33, padding: '5px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 14, lineHeight: 1.15, letterSpacing: 0.6,
+                    <div style={{ position: 'absolute', left: -10, right: -10, top: sz * 0.33, padding: '5px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 12, lineHeight: 1.15, letterSpacing: 0.2,
                       transform: `rotate(-12deg) scale(${(1.6 - 0.6 * stamp).toFixed(3)})`, opacity: Math.min(1, stamp * 1.5) }}>BRAK AUDIOBOOKA<br />PO POLSKU</div>
                   )}
                 </div>

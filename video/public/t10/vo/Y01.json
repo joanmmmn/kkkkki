@@ -1,0 +1,74 @@
+{
+ "id": "Y01",
+ "hash": "f3847142a2e5",
+ "text": "Numer jeden wśród historii grozy, które naprawdę przerażają: „Nie otwieraj oczu” Josha Malermana.",
+ "duration": 6.48,
+ "words": [
+  {
+   "w": "Numer",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "jeden",
+   "s": 0.4,
+   "e": 0.72
+  },
+  {
+   "w": "wśród",
+   "s": 0.8,
+   "e": 1.04
+  },
+  {
+   "w": "historii",
+   "s": 1.24,
+   "e": 1.52
+  },
+  {
+   "w": "grozy,",
+   "s": 1.6,
+   "e": 1.96
+  },
+  {
+   "w": "które",
+   "s": 2.0,
+   "e": 2.24
+  },
+  {
+   "w": "naprawdę",
+   "s": 2.36,
+   "e": 2.8
+  },
+  {
+   "w": "przerażają:",
+   "s": 2.84,
+   "e": 3.88
+  },
+  {
+   "w": "„Nie",
+   "s": 3.92,
+   "e": 4.0
+  },
+  {
+   "w": "otwieraj",
+   "s": 4.08,
+   "e": 4.56
+  },
+  {
+   "w": "oczu”",
+   "s": 4.64,
+   "e": 5.04
+  },
+  {
+   "w": "Josha",
+   "s": 5.12,
+   "e": 5.36
+  },
+  {
+   "w": "Malermana.",
+   "s": 5.44,
+   "e": 6.48
+  }
+ ],
+ "speechEnd": 6.02
+}

@@ -1,0 +1,104 @@
+{
+ "id": "X104",
+ "hash": "7c4015b06425",
+ "text": "Czyta Andrzej Hausner, a jeden ze słuchaczy pisze krótko: to absolutna topka horroru wydanego u nas w ostatnich latach.",
+ "duration": 7.68,
+ "words": [
+  {
+   "w": "Czyta",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "Andrzej",
+   "s": 0.56,
+   "e": 0.88
+  },
+  {
+   "w": "Hausner,",
+   "s": 0.96,
+   "e": 1.76
+  },
+  {
+   "w": "a",
+   "s": 1.8,
+   "e": 1.84
+  },
+  {
+   "w": "jeden",
+   "s": 1.92,
+   "e": 2.16
+  },
+  {
+   "w": "ze",
+   "s": 2.2,
+   "e": 2.24
+  },
+  {
+   "w": "słuchaczy",
+   "s": 2.36,
+   "e": 2.72
+  },
+  {
+   "w": "pisze",
+   "s": 2.8,
+   "e": 2.96
+  },
+  {
+   "w": "krótko:",
+   "s": 3.0,
+   "e": 3.76
+  },
+  {
+   "w": "to",
+   "s": 3.88,
+   "e": 4.0
+  },
+  {
+   "w": "absolutna",
+   "s": 4.16,
+   "e": 4.72
+  },
+  {
+   "w": "topka",
+   "s": 4.96,
+   "e": 5.28
+  },
+  {
+   "w": "horroru",
+   "s": 5.36,
+   "e": 5.76
+  },
+  {
+   "w": "wydanego",
+   "s": 5.84,
+   "e": 6.24
+  },
+  {
+   "w": "u",
+   "s": 6.32,
+   "e": 6.36
+  },
+  {
+   "w": "nas",
+   "s": 6.4,
+   "e": 6.56
+  },
+  {
+   "w": "w",
+   "s": 6.587,
+   "e": 6.613
+  },
+  {
+   "w": "ostatnich",
+   "s": 6.64,
+   "e": 7.04
+  },
+  {
+   "w": "latach.",
+   "s": 7.12,
+   "e": 7.68
+  }
+ ],
+ "speechEnd": 7.538
+}

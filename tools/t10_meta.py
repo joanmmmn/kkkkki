@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Subtítulos (.srt) y capítulos de «Los 10 mejores · Terror» a partir de la locución y la línea de tiempo.
-Las cifras que la voz dice en letra van en número en los subtítulos.
+"""Subtítulos (.srt) y capítulos de «10 historii grozy, które naprawdę przerażają» (SonorBooks Polska) a partir de la locución
+y la línea de tiempo; también el .srt del vertical. Las cifras que la voz dice en letra van en número en los subtítulos.
 Uso: python3 tools/t10_meta.py <dir_salida>"""
 import json, os, re, sys
 
@@ -8,34 +8,29 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from t10_timeline import parse, FPS, VO  # noqa: E402
 from skg_meta import chunks, two_lines, ts  # noqa: E402
 
+# Polaco: las cifras van en número en `text` (vo.json); solo quedan en letra algunas fórmulas habladas.
 NUM = [
-    ('mil novecientos veintidós', '1922'), ('mil novecientos cuarenta y nueve', '1949'), ('siglo veinte', 'siglo XX'),
-    ('treinta y siete relatos', '37 relatos'), ('cuatro coma seis sobre cinco', '4,6 sobre 5'), ('cuatro coma seis', '4,6'),
-    ('cuatro coma cuatro', '4,4'), ('cuatro coma ocho', '4,8'), ('cuatro coma siete sobre cinco', '4,7 sobre 5'), ('cuatro coma nueve sobre cinco', '4,9 sobre 5'),
-    ('ciento sesenta valoraciones', '160 valoraciones'), ('más de seiscientas valoraciones', 'más de 600 valoraciones'), ('más de cuatrocientas valoraciones', 'más de 400 valoraciones'),
-    ('más de doscientas valoraciones', 'más de 200 valoraciones'), ('más de veinticinco actores', 'más de 25 actores'), ('quince actores', '15 actores'),
-    ('dieciocho horas y media', '18 horas y media'), ('veintitrés horas', '23 horas'), ('diecisiete horas', '17 horas'), ('catorce horas', '14 horas'),
-    ('trece horas', '13 horas'), ('seis horas', '6 horas'), ('tres horas', '3 horas'), ('dos horas', '2 horas'), ('quince minutos', '15 minutos'),
-    ('Número diez', 'Número 10'), ('Número nueve', 'Número 9'), ('Número ocho', 'Número 8'), ('Número siete', 'Número 7'), ('Número seis', 'Número 6'),
-    ('Número cinco', 'Número 5'), ('Número cuatro', 'Número 4'), ('Número tres', 'Número 3'), ('Número dos', 'Número 2'), ('Número uno', 'Número 1'),
-    ('los diez libros', 'los 10 libros'), ('«Los diez mejores»', '«Los 10 mejores»'), ('los diez mejores libros', 'los 10 mejores libros'), ('diez libros con fama', '10 libros con fama'),
-    ('las diez historias', 'las 10 historias'), ('más de cuatrocientos oyentes', 'más de 400 oyentes'), ('cuatro coma nueve', '4,9'),
+    ('Numer dziesięć', 'Numer 10'), ('Numer dziewięć', 'Numer 9'), ('Numer osiem', 'Numer 8'), ('Numer siedem', 'Numer 7'), ('Numer sześć', 'Numer 6'),
+    ('Numer pięć', 'Numer 5'), ('Numer cztery', 'Numer 4'), ('Numer trzy', 'Numer 3'), ('Numer dwa', 'Numer 2'), ('Numer jeden', 'Numer 1'),
+    ('Oto dziesięć historii', 'Oto 10 historii'), ('trzydzieści kilometrów', '30 kilometrów'), ('Pięć lat później', '5 lat później'),
 ]
 
 CHAPTERS = [
-    ('10 historias de terror que dan miedo de verdad', 'HOOK'),
-    ('10. La llamada de Cthulhu (H. P. Lovecraft)', 'B1'),
-    ('9. Cuentos de Edgar Allan Poe', 'B2'),
-    ('8. Cómo vender una casa encantada (Grady Hendrix)', 'B3'),
-    ('7. Distancia de rescate (Samanta Schweblin)', 'B4'),
-    ('6. Drácula (Bram Stoker)', 'B5'),
-    ('5. Apocalipsis Z (Manel Loureiro)', 'B6'),
-    ('4. Carcoma (Layla Martínez)', 'B7'),
-    ("3. El misterio de Salem's Lot (Stephen King)", 'B8'),
-    ('2. Nuestra parte de noche (Mariana Enriquez)', 'B9'),
-    ('1. El exorcista (William Peter Blatty)', 'B10'),
-    ('Cómo escucharlas gratis', 'TIP'),
+    ('10 historii grozy, które naprawdę przerażają', 'HOOK'),
+    ('10. Zew Cthulhu (H.P. Lovecraft)', 'B1'),
+    ('9. Opowiadania Edgara Allana Poego', 'B2'),
+    ('8. Jak sprzedać nawiedzony dom (Grady Hendrix)', 'B3'),
+    ('7. Dziecko Rosemary (Ira Levin)', 'B4'),
+    ('6. Drakula (Bram Stoker)', 'B5'),
+    ('5. Inkub (Artur Urbanowicz)', 'B6'),
+    ('4. Dom na Wyrębach (Stefan Darda)', 'B7'),
+    ('3. Miasteczko Salem (Stephen King)', 'B8'),
+    ('2. Manitou (Graham Masterton)', 'B9'),
+    ('1. Nie otwieraj oczu (Josh Malerman)', 'B10'),
+    ('Jak i gdzie ich posłuchać', 'TIP'),
 ]
+# Vertical (video/src/scenes/t10/Short.tsx): locuciones y pausas, en el mismo orden.
+SHORT = [('Y01', 0.6), ('X102', 0.55), ('X103', 0.65), ('X104', 0.65), ('X105', 0.8), ('Y02', 0.7)]
 
 
 def digits(t):
@@ -62,7 +57,7 @@ def main():
                 acc += len(c)
                 b = t0 + dur * acc / tot
                 subs.append((a, b + 0.15, two_lines(digits(c))))
-    with open(os.path.join(out, 'top10_terror.es.srt'), 'w') as f:
+    with open(os.path.join(out, 'top10-horror.pl.srt'), 'w') as f:
         for i, (a, b, t) in enumerate(subs, 1):
             f.write(f'{i}\n{ts(a)} --> {ts(min(b, subs[i][0] if i < len(subs) else b))}\n{t}\n\n')
     print(len(subs), 'subtítulos;', f'{total / FPS:.1f} s')
@@ -73,6 +68,26 @@ def main():
         lines.append(f'{int(t // 60)}:{int(t % 60):02d} {label}')
     open(os.path.join(out, 'capitulos.txt'), 'w').write('\n'.join(lines) + '\n')
     print('\n'.join(lines))
+    # vertical
+    if all(os.path.exists(os.path.join(VO, f'{v}.json')) for v, _ in SHORT):
+        import math
+        t, vs = 0, []
+        for v, gap in SHORT:
+            t += round(gap * FPS)
+            d = json.load(open(os.path.join(VO, f'{v}.json')))
+            vs.append((v, t, d))
+            t += math.ceil((d.get('speechEnd') or d['duration']) * FPS)
+        subs = []
+        for v, at, d in vs:
+            dur = d.get('speechEnd') or d['duration']
+            cs = chunks(d['text']); tot = sum(len(c) for c in cs); acc = 0
+            for c in cs:
+                a = at / FPS + dur * acc / tot; acc += len(c); b = at / FPS + dur * acc / tot
+                subs.append((a, b + 0.15, two_lines(digits(c))))
+        with open(os.path.join(out, 'top10-horror_short.pl.srt'), 'w') as f:
+            for i, (a, b, tx) in enumerate(subs, 1):
+                f.write(f'{i}\n{ts(a)} --> {ts(min(b, subs[i][0] if i < len(subs) else b))}\n{tx}\n\n')
+        print(len(subs), 'subtítulos del vertical')
 
 
 if __name__ == '__main__':

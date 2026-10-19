@@ -30,7 +30,7 @@ export const T10ThumbA: React.FC = () => {
       </div>
       <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
       <div style={{ position: 'absolute', right: 50, top: 330, width: 680, textAlign: 'right' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NAPRAWDĘ</div>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 84, lineHeight: 0.92, color: BONE, letterSpacing: -3, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NAPRAWDĘ</div>
         <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>PRZERAŻAJĄ</div>
       </div>
       <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
@@ -81,7 +81,7 @@ export const T10ThumbC: React.FC = () => {
       </div>
       <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
       <div style={{ position: 'absolute', right: 50, top: 330, width: 680, textAlign: 'right' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NAPRAWDĘ</div>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 84, lineHeight: 0.92, color: BONE, letterSpacing: -3, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NAPRAWDĘ</div>
         <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>PRZERAŻAJĄ</div>
       </div>
       <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>

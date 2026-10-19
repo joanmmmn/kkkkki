@@ -105,20 +105,22 @@ export const T10Short: React.FC = () => {
   const left = Math.min(0, Math.max(1080 - 1920 * kk, 540 - cx * kk));
   const top = Math.min(0, Math.max(1920 - 1080 * kk, 960 - 560 * kk));
   const redFlash = interpolate(frame, [beats[1].at - 1, beats[1].at + 1, beats[1].at + 14], [0, 1, 0], clamp);
+  // en vertical, una sola etiqueta cada vez (la última que ha dicho la voz)
+  const cur = beats.reduce((k, bt, i) => (frame >= bt.at - 3 ? i : k), -1);
   return (
     <AbsoluteFill style={{ background: '#000' }}>
       {/* 1 y 4: el libro bajo la linterna */}
       {(s2 < 1 || (s4 > 0 && off < 1)) && (
         <AbsoluteFill style={{ opacity: Math.max(1 - s2, s4) }}>
           <Night red={0.8}>
-            <div style={{ position: 'absolute', left: 540 - 260, top: interpolate(s4, [0, 1], [640, 170]), transform: `translateY(${(1 - bookIn) * 80}px) scale(${(0.7 + 0.3 * bookIn) * (1 - 0.15 * s4)})`, opacity: Math.min(1, bookIn * 1.5), transformOrigin: '50% 50%' }}>
+            <div style={{ position: 'absolute', left: 540 - 260, top: interpolate(s4, [0, 1], [540, 170]), transform: `translateY(${(1 - bookIn) * 80}px) scale(${(0.7 + 0.3 * bookIn) * (1 - 0.15 * s4)})`, opacity: Math.min(1, bookIn * 1.5), transformOrigin: '50% 50%' }}>
               <Cover3D name={COVERS[10][0]} size={520} ry={14 + Math.sin(frame / 60) * 6} rx={Math.sin(frame / 80) * 3} light={0.3 + 0.7 * Math.max(light, s4)} shine={interpolate(frame, [fTitle + 2, fTitle + 44], [0, 1.2], clamp)} reflect glow={Math.max(light, s4)} glowColor="rgba(193,18,31," reveal={1} />
             </div>
             <Flashlight x={540} y={interpolate(s4, [0, 1], [1000, 470])} r={interpolate(light, [0, 1], [10, 560])} on={Math.max(light, s4)} dark={0.9} seed="sh" />
             {s4 < 0.5 && <BigNum n={1} at={6} size={interpolate(light, [0, 1], [900, 300])} x={540} y={interpolate(light, [0, 1], [900, 300])} />}
             {s4 < 0.5 && (
-              <div style={{ position: 'absolute', left: 40, right: 40, top: 1230, textAlign: 'center', opacity: (1 - s2) * ramp(frame, fTitle - 4, fTitle + 8) }}>
-                <MaskTitle text={b.title} at={fTitle - 2} size={104} color={BONE} align="center" />
+              <div style={{ position: 'absolute', left: 30, right: 30, top: 1300, textAlign: 'center', opacity: (1 - s2) * ramp(frame, fTitle - 4, fTitle + 8) }}>
+                <MaskTitle text={b.title} at={fTitle - 2} size={88} color={BONE} align="center" />
                 <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 44, color: DIM, marginTop: 10 }}>{b.author} · {b.year}</div>
               </div>
             )}
@@ -143,10 +145,10 @@ export const T10Short: React.FC = () => {
             <span style={{ minWidth: 86, height: 86, borderRadius: 999, background: RED, color: '#fff', fontFamily: font.sans, fontWeight: 700, fontSize: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>1</span>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 52, color: '#fff', textShadow: '0 2px 20px rgba(0,0,0,0.8)' }}>{b.title}</div>
           </div>
-          {s3 < 1 && <div style={{ opacity: 1 - s3 }}><StoryChips left={60} bottom={700} items={beats.map((bt) => ({ label: bt.label, at: bt.at, red: bt.red }))} /></div>}
+          {s3 < 1 && cur >= 0 && <div style={{ opacity: 1 - s3 }}><StoryChips key={cur} left={60} bottom={700} items={[{ label: beats[cur].label, at: beats[cur].at, red: beats[cur].red }]} /></div>}
           {s3 > 0 && (
             <AbsoluteFill style={{ opacity: s3 }}>
-              <div style={{ position: 'absolute', left: -420, top: 300, width: 1920, height: 1080, transform: 'scale(0.62)', transformOrigin: '50% 50%' }}><F10 at={f3 + 6} c={clock} /></div>
+              <div style={{ position: 'absolute', left: -420, top: 280, width: 1920, height: 1080, transform: 'scale(0.95)', transformOrigin: '50% 50%' }}><F10 at={f3 + 6} c={clock} /></div>
             </AbsoluteFill>
           )}
         </AbsoluteFill>
