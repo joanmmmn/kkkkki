@@ -1,184 +1,135 @@
 {
  "id": "G06",
- "hash": "b198a645d009",
- "text": "A principios de los setenta daba clases de inglés en un instituto y escribía en sus ratos libres. Un día tiró a la basura las primeras páginas de un relato sobre una chica con poderes.",
- "duration": 11.52,
+ "hash": "35b6d52a668a",
+ "text": "Na początku lat siedemdziesiątych uczył angielskiego w liceum i pisał po godzinach. Pewnego dnia wyrzucił do kosza pierwsze strony powieści o dziewczynie z nadprzyrodzonymi mocami.",
+ "duration": 9.958,
  "words": [
   {
-   "w": "A",
+   "w": "Na",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.16
   },
   {
-   "w": "principios",
-   "s": 0.12,
-   "e": 0.64
+   "w": "początku",
+   "s": 0.187,
+   "e": 0.56
   },
   {
-   "w": "de",
-   "s": 0.68,
+   "w": "lat",
+   "s": 0.64,
    "e": 0.72
   },
   {
-   "w": "los",
-   "s": 0.8,
-   "e": 0.88
-  },
-  {
-   "w": "setenta",
-   "s": 1.0,
+   "w": "siedemdziesiątych",
+   "s": 0.76,
    "e": 1.68
   },
   {
-   "w": "daba",
+   "w": "uczył",
    "s": 1.76,
-   "e": 1.92
+   "e": 1.96
   },
   {
-   "w": "clases",
+   "w": "angielskiego",
    "s": 2.0,
-   "e": 2.32
+   "e": 2.56
   },
   {
-   "w": "de",
-   "s": 2.36,
-   "e": 2.4
+   "w": "w",
+   "s": 2.587,
+   "e": 2.613
   },
   {
-   "w": "inglés",
-   "s": 2.48,
-   "e": 2.8
+   "w": "liceum",
+   "s": 2.64,
+   "e": 3.2
   },
   {
-   "w": "en",
-   "s": 2.84,
-   "e": 2.88
+   "w": "i",
+   "s": 3.28,
+   "e": 3.44
   },
   {
-   "w": "un",
-   "s": 2.96,
-   "e": 3.04
+   "w": "pisał",
+   "s": 3.56,
+   "e": 3.76
   },
   {
-   "w": "instituto",
-   "s": 3.12,
+   "w": "po",
+   "s": 3.8,
    "e": 3.84
   },
   {
-   "w": "y",
+   "w": "godzinach.",
    "s": 3.92,
-   "e": 3.96
+   "e": 4.84
   },
   {
-   "w": "escribía",
-   "s": 4.0,
-   "e": 4.48
-  },
-  {
-   "w": "en",
-   "s": 4.52,
-   "e": 4.56
-  },
-  {
-   "w": "sus",
-   "s": 4.64,
-   "e": 4.8
-  },
-  {
-   "w": "ratos",
-   "s": 4.84,
+   "w": "Pewnego",
+   "s": 4.88,
    "e": 5.12
   },
   {
-   "w": "libres.",
+   "w": "dnia",
    "s": 5.2,
-   "e": 6.12
+   "e": 5.52
   },
   {
-   "w": "Un",
-   "s": 6.16,
-   "e": 6.24
+   "w": "wyrzucił",
+   "s": 5.56,
+   "e": 5.92
   },
   {
-   "w": "día",
-   "s": 6.32,
-   "e": 6.56
+   "w": "do",
+   "s": 5.96,
+   "e": 6.0
   },
   {
-   "w": "tiró",
-   "s": 6.64,
-   "e": 6.84
+   "w": "kosza",
+   "s": 6.08,
+   "e": 6.4
   },
   {
-   "w": "a",
+   "w": "pierwsze",
+   "s": 6.48,
+   "e": 6.8
+  },
+  {
+   "w": "strony",
    "s": 6.88,
-   "e": 6.907
+   "e": 7.2
   },
   {
-   "w": "la",
-   "s": 6.933,
-   "e": 6.96
+   "w": "powieści",
+   "s": 7.28,
+   "e": 7.76
   },
   {
-   "w": "basura",
-   "s": 7.04,
-   "e": 7.36
+   "w": "o",
+   "s": 7.8,
+   "e": 7.84
   },
   {
-   "w": "las",
-   "s": 7.44,
-   "e": 7.6
+   "w": "dziewczynie",
+   "s": 7.92,
+   "e": 8.32
   },
   {
-   "w": "primeras",
-   "s": 7.76,
-   "e": 8.0
+   "w": "z",
+   "s": 8.4,
+   "e": 8.44
   },
   {
-   "w": "páginas",
-   "s": 8.08,
-   "e": 8.48
-  },
-  {
-   "w": "de",
-   "s": 8.56,
-   "e": 8.64
-  },
-  {
-   "w": "un",
-   "s": 8.68,
-   "e": 8.72
-  },
-  {
-   "w": "relato",
-   "s": 8.8,
+   "w": "nadprzyrodzonymi",
+   "s": 8.48,
    "e": 9.28
   },
   {
-   "w": "sobre",
+   "w": "mocami.",
    "s": 9.32,
-   "e": 9.52
-  },
-  {
-   "w": "una",
-   "s": 9.6,
-   "e": 9.76
-  },
-  {
-   "w": "chica",
-   "s": 9.84,
-   "e": 10.16
-  },
-  {
-   "w": "con",
-   "s": 10.28,
-   "e": 10.4
-  },
-  {
-   "w": "poderes.",
-   "s": 10.44,
-   "e": 11.52
+   "e": 9.958
   }
  ],
- "speechEnd": 10.976
+ "trimmed": "35b6d52a668a",
+ "speechEnd": 9.798
 }

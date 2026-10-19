@@ -1,284 +1,285 @@
 {
  "id": "G08",
- "hash": "1b997a5698ba",
- "text": "Desde entonces no ha parado. En Mientras escribo cuenta que se marca dos mil palabras al día. Y llegó a publicar siete novelas con otro nombre, Richard Bachman, en parte para comprobar si sus libros se vendían por lo que contaban o por su firma. Lo descubrió un librero en 1985.",
- "duration": 20.24,
+ "hash": "4985d49e6d98",
+ "text": "Od tamtej pory nie zwalnia tempa. W „Jak pisać” opowiada, że wyznacza sobie dwa tysiące słów dziennie. A siedem powieści wydał pod innym nazwiskiem, jako Richard Bachman, między innymi po to, żeby sprawdzić, czy jego książki sprzedają się dzięki temu, co opowiadają, czy dzięki nazwisku. Tajemnicę odkrył w 1985 roku pracownik księgarni.",
+ "duration": 21.045,
  "words": [
   {
-   "w": "Desde",
+   "w": "Od",
    "s": 0.0,
-   "e": 0.24
+   "e": 0.16
   },
   {
-   "w": "entonces",
-   "s": 0.32,
+   "w": "tamtej",
+   "s": 0.24,
+   "e": 0.56
+  },
+  {
+   "w": "pory",
+   "s": 0.693,
    "e": 0.96
   },
   {
-   "w": "no",
-   "s": 1.08,
-   "e": 1.2
+   "w": "nie",
+   "s": 1.04,
+   "e": 1.12
   },
   {
-   "w": "ha",
-   "s": 1.24,
-   "e": 1.28
+   "w": "zwalnia",
+   "s": 1.16,
+   "e": 1.52
   },
   {
-   "w": "parado.",
-   "s": 1.36,
-   "e": 2.24
+   "w": "tempa.",
+   "s": 1.6,
+   "e": 2.32
   },
   {
-   "w": "En",
+   "w": "W",
+   "s": 2.347,
+   "e": 2.373
+  },
+  {
+   "w": "Jak",
    "s": 2.4,
    "e": 2.56
   },
   {
-   "w": "Mientras",
-   "s": 2.8,
-   "e": 3.2
+   "w": "pisać",
+   "s": 2.64,
+   "e": 3.12
   },
   {
-   "w": "escribo",
-   "s": 3.28,
-   "e": 3.92
+   "w": "opowiada,",
+   "s": 3.2,
+   "e": 3.68
   },
   {
-   "w": "cuenta",
-   "s": 4.0,
+   "w": "że",
+   "s": 3.76,
+   "e": 3.84
+  },
+  {
+   "w": "wyznacza",
+   "s": 3.88,
    "e": 4.24
   },
   {
-   "w": "que",
-   "s": 4.32,
-   "e": 4.4
-  },
-  {
-   "w": "se",
-   "s": 4.48,
+   "w": "sobie",
+   "s": 4.28,
    "e": 4.56
   },
   {
-   "w": "marca",
-   "s": 4.72,
-   "e": 4.88
+   "w": "dwa",
+   "s": 4.6,
+   "e": 4.72
   },
   {
-   "w": "dos",
-   "s": 4.96,
-   "e": 5.12
+   "w": "tysiące",
+   "s": 4.8,
+   "e": 5.2
   },
   {
-   "w": "mil",
+   "w": "słów",
    "s": 5.28,
    "e": 5.52
   },
   {
-   "w": "palabras",
-   "s": 5.6,
-   "e": 6.0
+   "w": "dziennie.",
+   "s": 5.56,
+   "e": 6.44
   },
   {
-   "w": "al",
-   "s": 6.08,
-   "e": 6.16
+   "w": "A",
+   "s": 6.48,
+   "e": 6.64
   },
   {
-   "w": "día.",
-   "s": 6.32,
-   "e": 6.96
+   "w": "siedem",
+   "s": 6.68,
+   "e": 6.88
   },
   {
-   "w": "Y",
-   "s": 7.0,
-   "e": 7.04
+   "w": "powieści",
+   "s": 6.96,
+   "e": 7.36
   },
   {
-   "w": "llegó",
-   "s": 7.12,
-   "e": 7.32
+   "w": "wydał",
+   "s": 7.44,
+   "e": 7.68
   },
   {
-   "w": "a",
-   "s": 7.36,
-   "e": 7.44
-  },
-  {
-   "w": "publicar",
-   "s": 7.6,
+   "w": "pod",
+   "s": 7.8,
    "e": 7.92
   },
   {
-   "w": "siete",
+   "w": "innym",
    "s": 8.0,
    "e": 8.24
   },
   {
-   "w": "novelas",
+   "w": "nazwiskiem,",
    "s": 8.32,
-   "e": 8.72
+   "e": 8.907
   },
   {
-   "w": "con",
-   "s": 8.8,
-   "e": 8.88
+   "w": "jako",
+   "s": 8.933,
+   "e": 9.28
   },
   {
-   "w": "otro",
-   "s": 8.96,
-   "e": 9.12
+   "w": "Riczard",
+   "s": 9.32,
+   "e": 9.68
   },
   {
-   "w": "nombre,",
-   "s": 9.2,
-   "e": 9.92
+   "w": "Bakman,",
+   "s": 9.76,
+   "e": 10.427
   },
   {
-   "w": "Ríchard",
-   "s": 10.08,
-   "e": 10.4
+   "w": "między",
+   "s": 10.453,
+   "e": 10.64
   },
   {
-   "w": "Bákman,",
-   "s": 10.56,
-   "e": 11.44
+   "w": "innymi",
+   "s": 10.72,
+   "e": 10.96
   },
   {
-   "w": "en",
-   "s": 11.52,
-   "e": 11.68
+   "w": "po",
+   "s": 11.04,
+   "e": 11.12
   },
   {
-   "w": "parte",
-   "s": 11.8,
-   "e": 12.08
+   "w": "to,",
+   "s": 11.2,
+   "e": 11.32
   },
   {
-   "w": "para",
+   "w": "żeby",
+   "s": 11.36,
+   "e": 11.52
+  },
+  {
+   "w": "sprawdzić,",
+   "s": 11.6,
+   "e": 12.107
+  },
+  {
+   "w": "czy",
+   "s": 12.133,
+   "e": 12.16
+  },
+  {
+   "w": "jego",
    "s": 12.2,
-   "e": 12.32
+   "e": 12.4
   },
   {
-   "w": "comprobar",
-   "s": 12.4,
+   "w": "książki",
+   "s": 12.56,
    "e": 12.8
   },
   {
-   "w": "si",
+   "w": "sprzedają",
    "s": 12.88,
-   "e": 12.96
+   "e": 13.28
   },
   {
-   "w": "sus",
-   "s": 13.04,
-   "e": 13.12
+   "w": "się",
+   "s": 13.32,
+   "e": 13.413
   },
   {
-   "w": "libros",
-   "s": 13.2,
-   "e": 13.52
+   "w": "dzięki",
+   "s": 13.467,
+   "e": 13.68
   },
   {
-   "w": "se",
-   "s": 13.56,
-   "e": 13.6
+   "w": "temu,",
+   "s": 13.8,
+   "e": 14.053
   },
   {
-   "w": "vendían",
-   "s": 13.68,
+   "w": "co",
+   "s": 14.107,
    "e": 14.16
   },
   {
-   "w": "por",
+   "w": "opowiadają,",
    "s": 14.24,
-   "e": 14.32
+   "e": 15.227
   },
   {
-   "w": "lo",
-   "s": 14.36,
-   "e": 14.4
-  },
-  {
-   "w": "que",
-   "s": 14.48,
-   "e": 14.56
-  },
-  {
-   "w": "contaban",
-   "s": 14.68,
+   "w": "czy",
+   "s": 15.253,
    "e": 15.28
   },
   {
-   "w": "o",
+   "w": "dzięki",
    "s": 15.36,
-   "e": 15.44
-  },
-  {
-   "w": "por",
-   "s": 15.52,
    "e": 15.6
   },
   {
-   "w": "su",
+   "w": "nazwisku.",
    "s": 15.68,
-   "e": 15.76
+   "e": 16.68
   },
   {
-   "w": "firma.",
-   "s": 15.8,
-   "e": 16.6
-  },
-  {
-   "w": "Lo",
-   "s": 16.64,
-   "e": 16.72
-  },
-  {
-   "w": "descubrió",
-   "s": 16.84,
+   "w": "Tajemnicę",
+   "s": 16.72,
    "e": 17.2
   },
   {
-   "w": "un",
-   "s": 17.24,
-   "e": 17.28
+   "w": "odkrył",
+   "s": 17.28,
+   "e": 17.52
   },
   {
-   "w": "librero",
-   "s": 17.4,
-   "e": 17.68
+   "w": "w",
+   "s": 17.547,
+   "e": 17.573
   },
   {
-   "w": "en",
-   "s": 17.76,
-   "e": 17.92
+   "w": "tysiąc",
+   "s": 17.6,
+   "e": 17.96
   },
   {
-   "w": "mil",
+   "w": "dziewięćset",
    "s": 18.0,
-   "e": 18.08
+   "e": 18.32
   },
   {
-   "w": "novecientos",
-   "s": 18.16,
-   "e": 18.8
+   "w": "osiemdziesiątym",
+   "s": 18.4,
+   "e": 18.96
   },
   {
-   "w": "ochenta",
-   "s": 18.88,
-   "e": 19.12
-  },
-  {
-   "w": "y",
-   "s": 19.2,
+   "w": "piątym",
+   "s": 19.04,
    "e": 19.28
   },
   {
-   "w": "cinco.",
-   "s": 19.4,
-   "e": 20.24
+   "w": "roku",
+   "s": 19.36,
+   "e": 19.6
+  },
+  {
+   "w": "pracownik",
+   "s": 19.68,
+   "e": 20.16
+  },
+  {
+   "w": "księgarni.",
+   "s": 20.24,
+   "e": 21.045
   }
  ],
- "speechEnd": 19.745
+ "trimmed": "4985d49e6d98",
+ "speechEnd": 20.885
 }

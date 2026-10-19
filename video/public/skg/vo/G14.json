@@ -1,79 +1,65 @@
 {
  "id": "G14",
- "hash": "aa47561c2f19",
- "text": "Si quieres terror clásico, empieza por El resplandor, de 1977.",
- "duration": 6.24,
+ "hash": "9e4a587fb084",
+ "text": "Pierwsze wejście: „Lśnienie”, z 1977 roku. Klasyczny horror.",
+ "duration": 5.939,
  "words": [
   {
-   "w": "Si",
+   "w": "Pierwsze",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.32
   },
   {
-   "w": "quieres",
-   "s": 0.24,
-   "e": 0.48
+   "w": "wejście:",
+   "s": 0.4,
+   "e": 1.2
   },
   {
-   "w": "terror",
-   "s": 0.56,
-   "e": 0.88
+   "w": "Lśnienie,",
+   "s": 1.28,
+   "e": 2.0
   },
   {
-   "w": "clásico,",
-   "s": 0.96,
-   "e": 1.76
+   "w": "z",
+   "s": 2.04,
+   "e": 2.08
   },
   {
-   "w": "empieza",
-   "s": 1.88,
-   "e": 2.32
+   "w": "tysiąc",
+   "s": 2.12,
+   "e": 2.4
   },
   {
-   "w": "por",
+   "w": "dziewięćset",
    "s": 2.48,
-   "e": 2.64
-  },
-  {
-   "w": "El",
-   "s": 2.72,
    "e": 2.88
   },
   {
-   "w": "resplandor,",
-   "s": 3.0,
-   "e": 3.88
+   "w": "siedemdziesiątego",
+   "s": 2.96,
+   "e": 3.6
   },
   {
-   "w": "de",
-   "s": 3.92,
+   "w": "siódmego",
+   "s": 3.68,
    "e": 4.0
   },
   {
-   "w": "mil",
+   "w": "roku.",
    "s": 4.08,
-   "e": 4.16
+   "e": 4.64
   },
   {
-   "w": "novecientos",
-   "s": 4.24,
-   "e": 4.8
-  },
-  {
-   "w": "setenta",
-   "s": 4.88,
+   "w": "Klasyczny",
+   "s": 4.72,
    "e": 5.2
   },
   {
-   "w": "y",
+   "w": "horror.",
    "s": 5.28,
-   "e": 5.32
-  },
-  {
-   "w": "siete.",
-   "s": 5.36,
-   "e": 6.24
+   "e": 5.939
   }
  ],
- "speechEnd": 5.797
+ "trimmed": "9e4a587fb084",
+ "speechEnd": 5.779
 }

@@ -18,28 +18,31 @@ type Station = { k: string; label: string; x: number; at: number };
 export const Rutas: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('RUTAS');
-  const L1 = c.at('G37', 'miedo');
-  const L2 = c.at('G38', 'emoción');
-  const L3 = c.at('G39', 'crimen');
-  const fFinal = c.at('G39', 'final');
-  const fVal = c.at('G39', 'valientes');
-  const fTorre = c.at('G39', 'Torre');
+  const L1 = c.at('G37', 'bać');
+  const L2 = c.at('G38', 'emocje');
+  const L3 = c.at('G39', 'kryminał');
+  const fFinal = c.at('G39', 'końcu');
+  const fVal = c.at('G39', 'drogi');
+  const fTorre = c.at('G39', 'Mroczna');
   const lines: { name: string; c: string; y: number; at: number; st: Station[] }[] = [
-    { name: 'Miedo', c: KR, y: 330, at: L1, st: [
+    { name: 'Strach', c: KR, y: 330, at: L1, st: [
       { k: 'carrie', label: 'Carrie', x: 420, at: c.at('G37', 'Carrie') },
-      { k: 'resplandor', label: 'El resplandor', x: 740, at: c.at('G37', 'resplandor') },
-      { k: 'doctor', label: 'Doctor Sueño', x: 1060, at: c.at('G37', 'Doctor') },
-      { k: 'it', label: 'It', x: 1380, at: c.at('G37', 'It') },
+      { k: 'resplandor', label: 'Lśnienie', x: 740, at: c.at('G37', 'Lśnienie') },
+      { k: 'doctor', label: 'Doktor Sen', x: 1060, at: c.at('G37', 'Doktor') },
+      { k: 'it', label: 'To', x: 1380, at: c.at('G37', 'To') },
     ] },
-    { name: 'Emoción y fantasía', c: '#D99A00', y: 600, at: L2, st: [
-      { k: 'milla', label: 'La milla verde', x: 420, at: c.at('G38', 'milla') },
-      { k: 'd2263', label: '22/11/63', x: 820, at: c.at('G38', 'veintidós') },
-      { k: 'cuento', label: 'Cuento de hadas', x: 1220, at: c.at('G38', 'Cuento') },
+    { name: 'Emocje i fantasy', c: '#D99A00', y: 600, at: L2, st: [
+      { k: 'milla', label: 'Zielona mila', x: 420, at: c.at('G38', 'Zielona') },
+      { k: 'd2263', label: 'Dallas ’63', x: 820, at: c.at('G38', 'Dallas') },
+      { k: 'cuento', label: 'Baśniowa opowieść', x: 1220, at: c.at('G38', 'Baśniowa') },
     ] },
-    { name: 'Crimen', c: color.ink, y: 870, at: L3, st: [
-      { k: 'mercedes', label: 'Trilogía Bill Hodges', x: 420, at: c.at('G39', 'trilogía') },
-      { k: 'visitante', label: 'El visitante', x: 820, at: c.at('G39', 'visitante') },
-      { k: 'holly', label: 'Holly', x: 1220, at: c.at('G39', 'Holly') },
+    // La voz polaca nombra los cinco libros de esta ruta (los tres de Hodges, Outsider y Holly).
+    { name: 'Kryminał', c: color.ink, y: 870, at: L3, st: [
+      { k: 'mercedes', label: 'Pan Mercedes', x: 400, at: c.at('G39', 'Pan') },
+      { k: 'quien', label: 'Znalezione\nnie kradzione', x: 625, at: c.at('G39', 'Znalezione') },
+      { k: 'fin', label: 'Koniec warty', x: 850, at: c.at('G39', 'Koniec') },
+      { k: 'visitante', label: 'Outsider', x: 1075, at: c.at('G39', 'Outsider') },
+      { k: 'holly', label: 'Holly', x: 1300, at: c.at('G39', 'Holly') },
     ] },
   ];
   const T: [number, number] = [1690, 600];
@@ -52,7 +55,7 @@ export const Rutas: React.FC = () => {
     <SkStage>
       <Cam keys={[{ f: 0, s: 0.94, x: 0, y: 20 }, { f: fFinal - 10, s: 0.92, x: 0, y: 14 }, { f: c.dur, s: 0.94, x: -10, y: 14 }]}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 30, textAlign: 'center' }}>
-          <MaskTitle text="Tres rutas" at={4} size={84} hi={['rutas']} align="center" />
+          <MaskTitle text="Trzy trasy" at={4} size={84} hi={['trasy']} align="center" />
         </div>
         <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0, overflow: 'visible' }}>
           {lines.map((l) => <path key={`g${l.name}`} d={`M ${l.st[0].x - 60} ${l.y} L ${l.st[l.st.length - 1].x} ${l.y}`} stroke="rgba(16,16,16,0.08)" strokeWidth={18} strokeLinecap="round" opacity={rampOut(frame, 6, 24)} />)}
@@ -80,7 +83,7 @@ export const Rutas: React.FC = () => {
                 <div key={s.k} style={{ position: 'absolute', left: s.x, top: l.y }}>
                   <div style={{ position: 'absolute', left: -26, top: -26, width: 52, height: 52, borderRadius: '50%', background: '#fff', border: `9px solid ${l.c}`, transform: `scale(${p})`, boxShadow: shadow.soft }} />
                   <div style={{ position: 'absolute', left: -36, top: -164, transform: `translateY(${(1 - p) * 20}px)`, opacity: p }}><FlatCover b={BOOKS[s.k]} w={72} /></div>
-                  <div style={{ position: 'absolute', left: -160, width: 320, top: 38, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink, opacity: p, whiteSpace: 'nowrap' }}>{s.label}</div>
+                  <div style={{ position: 'absolute', left: -160, width: 320, top: 38, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: l.st.length > 4 ? 27 : 30, lineHeight: 1.1, color: color.ink, opacity: p, whiteSpace: 'pre' }}>{s.label}</div>
                 </div>
               );
             })}
@@ -91,8 +94,8 @@ export const Rutas: React.FC = () => {
           <div style={{ position: 'absolute', left: -60, top: -60, width: 120, height: 120, borderRadius: '50%', background: color.ink, border: `10px solid ${color.yellow}`, transform: `scale(${term})`, boxShadow: `0 0 ${40 * term}px rgba(255,202,5,0.6)` }} />
           <div style={{ position: 'absolute', left: -64, top: -300, transform: `translateY(${(1 - term) * 30}px)` }}><FlatCover b={BOOKS.torre7} w={128} /></div>
           <div style={{ position: 'absolute', left: -200, width: 400, top: 76, textAlign: 'center' }}>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.ink }}>La Torre Oscura</div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: KR, opacity: rampOut(frame, fVal - 6, fVal + 8) }}>para los valientes</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: color.ink }}>Mroczna Wieża</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: KR, opacity: rampOut(frame, fVal - 6, fVal + 8) }}>na końcu drogi</div>
           </div>
         </div>
       </Cam>
@@ -109,11 +112,11 @@ export const Rutas: React.FC = () => {
 export const Coment: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('COMENT');
-  const fEmp = c.at('G40', 'empezaste');
-  const fLeo = c.at('G40', 'leo');
-  const fGuia = c.at('G40', 'guía');
-  const fAutor = c.at('G40', 'autor');
-  const q = 'Yo empecé por…';
+  const fEmp = c.at('G40', 'pierwsza');
+  const fLeo = c.at('G40', 'Napisz');
+  const fGuia = c.at('G40', 'daj');
+  const fAutor = c.at('G40', 'autora');
+  const q = 'Moja pierwsza to…';
   const t0 = fEmp + 6;
   const times = Array.from(q).map((_, i) => Math.round(t0 + i * 3.2));
   const box = sp(frame, 4, 16, 150);
@@ -121,15 +124,15 @@ export const Coment: React.FC = () => {
     <SkStage>
       <Cam keys={[{ f: 0, s: 1.03, x: 0, y: 0 }, { f: c.dur, s: 1, x: 0, y: 0 }]}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 120, textAlign: 'center' }}>
-          <MaskTitle text="¿Por cuál empezaste?" at={4} size={100} align="center" hi={['empezaste?']} />
+          <MaskTitle text="Twoja pierwsza książka Kinga?" at={4} size={100} align="center" hi={['Kinga?']} />
         </div>
         <div style={{ position: 'absolute', left: 360, top: 330, width: 1200, opacity: box, transform: `translateY(${(1 - box) * 40}px)` }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 26, background: '#fff', borderRadius: 30, boxShadow: shadow.card, padding: '30px 36px', border: `1px solid ${color.line}` }}>
-            <div style={{ width: 84, height: 84, borderRadius: '50%', background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 38 }}>Tú</div>
+            <div style={{ width: 84, height: 84, borderRadius: '50%', background: color.yellow, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 38 }}>Ty</div>
             <div style={{ flex: 1, fontFamily: font.sans, fontSize: 46, color: color.ink }}>
-              <Typewriter text={q} times={times} placeholder="Añade un comentario…" />
+              <Typewriter text={q} times={times} placeholder="Dodaj komentarz…" />
             </div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', background: color.ink, padding: '14px 28px', borderRadius: 999, opacity: rampOut(frame, fLeo - 4, fLeo + 8) }}>Comentar</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', background: color.ink, padding: '14px 28px', borderRadius: 999, opacity: rampOut(frame, fLeo - 4, fLeo + 8) }}>Skomentuj</div>
           </div>
         </div>
         {[0, 1, 2].map((i) => {
@@ -145,7 +148,7 @@ export const Coment: React.FC = () => {
           );
         })}
         <div style={{ position: 'absolute', left: 0, right: 0, top: 600, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 24, opacity: rampOut(frame, fGuia - 6, fGuia + 8) }}>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: color.ink }}>Próxima guía:</div>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: color.ink }}>Następny autor:</div>
           {['?', '?', '?'].map((t, i) => (
             <div key={i} style={{ width: 90, height: 120, borderRadius: 10, background: i === 1 ? color.yellow : '#fff', boxShadow: shadow.float, border: `2px dashed ${color.ink}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 56,
               transform: `translateY(${(1 - sp(frame, fAutor - 4 + i * 4, 11, 200)) * 40}px) rotate(${(i - 1) * 5}deg)` }}>{t}</div>
@@ -172,17 +175,17 @@ export const Outro: React.FC = () => {
         <div style={{ width: 760 }}>
           <Logo size={96} delay={2} />
           <div style={{ marginTop: 44 }}>
-            <Words text="Tu próxima historia te está esperando." start={f0} stagger={4} size={64} weight={700} align="left" />
+            <Words text="Twoja następna historia już na ciebie czeka." start={f0} stagger={4} size={64} weight={700} align="left" />
           </div>
           <div style={{ marginTop: 40, opacity: sp(frame, f0 + 40), display: 'flex', gap: 18, alignItems: 'center' }}>
-            <Pill size={38}>sonorbooks.com</Pill>
+            <Pill size={38}>sonorbooks.pl</Pill>
           </div>
           <div style={{ marginTop: 60, opacity: end, transform: `translateY(${(1 - end) * 20}px)` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, whiteSpace: 'nowrap' }}>
               <div style={{ width: 40, height: 3, background: color.yellow, borderRadius: 2 }} />
-              <span style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 30, letterSpacing: 3, textTransform: 'uppercase', color: color.ink2 }}>Por dónde y cómo empezar a leer</span>
+              <span style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 30, letterSpacing: 3, textTransform: 'uppercase', color: color.ink2 }}>Od czego i jak zacząć</span>
             </div>
-            <div style={{ marginTop: 14, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>Próximamente, otro autor.</div>
+            <div style={{ marginTop: 14, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>Wkrótce kolejny autor.</div>
           </div>
         </div>
       </AbsoluteFill>

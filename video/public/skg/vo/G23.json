@@ -1,54 +1,55 @@
 {
  "id": "G23",
- "hash": "a4b929137b47",
- "text": "Y si lo tuyo es el thriller: Mr. Mercedes.",
- "duration": 3.6,
+ "hash": "8c6ec8771ba1",
+ "text": "Piąte: „Pan Mercedes”, z 2014 roku. Thriller.",
+ "duration": 4.62,
  "words": [
   {
-   "w": "Y",
+   "w": "Piąte:",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.8
   },
   {
-   "w": "si",
-   "s": 0.16,
-   "e": 0.24
+   "w": "Pan",
+   "s": 0.88,
+   "e": 0.96
   },
   {
-   "w": "lo",
-   "s": 0.32,
-   "e": 0.4
+   "w": "Mercedes,",
+   "s": 1.08,
+   "e": 1.84
   },
   {
-   "w": "tuyo",
-   "s": 0.44,
-   "e": 0.64
+   "w": "z",
+   "s": 1.92,
+   "e": 1.96
   },
   {
-   "w": "es",
-   "s": 0.72,
-   "e": 0.88
+   "w": "dwa",
+   "s": 2.0,
+   "e": 2.12
   },
   {
-   "w": "el",
-   "s": 0.96,
-   "e": 1.04
+   "w": "tysiące",
+   "s": 2.16,
+   "e": 2.56
   },
   {
-   "w": "thriller:",
-   "s": 1.12,
-   "e": 1.92
+   "w": "czternastego",
+   "s": 2.64,
+   "e": 3.2
   },
   {
-   "w": "Mr.",
-   "s": 1.96,
-   "e": 2.32
+   "w": "roku.",
+   "s": 3.28,
+   "e": 3.84
   },
   {
-   "w": "Mercedes.",
-   "s": 2.4,
-   "e": 3.6
+   "w": "Triller.",
+   "s": 3.92,
+   "e": 4.62
   }
  ],
- "speechEnd": 3.188
+ "trimmed": "8c6ec8771ba1",
+ "speechEnd": 4.46
 }

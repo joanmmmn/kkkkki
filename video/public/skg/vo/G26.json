@@ -1,139 +1,110 @@
 {
  "id": "G26",
- "hash": "d97d23106086",
- "text": "Ahora, las que es mejor no abrir primero. It es una obra maestra para muchos lectores, pero son más de cuarenta y seis horas de audio.",
- "duration": 9.76,
+ "hash": "0051e568e516",
+ "text": "A teraz książki, które lepiej zostawić na później. Pierwsza: „To”, z 1986 roku. Ponad pięćdziesiąt cztery godziny.",
+ "duration": 9.253,
  "words": [
   {
-   "w": "Ahora,",
+   "w": "A",
    "s": 0.0,
-   "e": 0.64
+   "e": 0.08
   },
   {
-   "w": "las",
-   "s": 0.72,
-   "e": 0.88
+   "w": "teraz",
+   "s": 0.16,
+   "e": 0.4
   },
   {
-   "w": "que",
-   "s": 0.96,
-   "e": 1.04
+   "w": "książki,",
+   "s": 0.48,
+   "e": 1.0
   },
   {
-   "w": "es",
-   "s": 1.12,
-   "e": 1.2
+   "w": "które",
+   "s": 1.04,
+   "e": 1.36
   },
   {
-   "w": "mejor",
-   "s": 1.28,
-   "e": 1.6
+   "w": "lepiej",
+   "s": 1.44,
+   "e": 1.76
   },
   {
-   "w": "no",
-   "s": 1.76,
-   "e": 1.84
+   "w": "zostawić",
+   "s": 1.8,
+   "e": 2.2
   },
   {
-   "w": "abrir",
-   "s": 1.92,
-   "e": 2.24
+   "w": "na",
+   "s": 2.24,
+   "e": 2.32
   },
   {
-   "w": "primero.",
-   "s": 2.32,
-   "e": 3.28
+   "w": "później.",
+   "s": 2.36,
+   "e": 3.24
   },
   {
-   "w": "It",
-   "s": 3.36,
-   "e": 3.68
+   "w": "Pierwsza:",
+   "s": 3.28,
+   "e": 4.16
   },
   {
-   "w": "es",
-   "s": 3.92,
-   "e": 4.08
-  },
-  {
-   "w": "una",
-   "s": 4.16,
-   "e": 4.24
-  },
-  {
-   "w": "obra",
+   "w": "To,",
    "s": 4.32,
-   "e": 4.56
+   "e": 4.52
   },
   {
-   "w": "maestra",
+   "w": "z",
+   "s": 4.56,
+   "e": 4.6
+  },
+  {
+   "w": "tysiąc",
    "s": 4.64,
-   "e": 5.04
+   "e": 4.96
   },
   {
-   "w": "para",
-   "s": 5.12,
-   "e": 5.28
+   "w": "dziewięćset",
+   "s": 5.0,
+   "e": 5.44
   },
   {
-   "w": "muchos",
-   "s": 5.36,
-   "e": 5.6
+   "w": "osiemdziesiątego",
+   "s": 5.52,
+   "e": 6.12
   },
   {
-   "w": "lectores,",
-   "s": 5.68,
+   "w": "szóstego",
+   "s": 6.16,
    "e": 6.56
   },
   {
-   "w": "pero",
+   "w": "roku.",
    "s": 6.64,
-   "e": 6.76
+   "e": 7.32
   },
   {
-   "w": "son",
-   "s": 6.8,
-   "e": 6.96
+   "w": "Ponad",
+   "s": 7.36,
+   "e": 7.6
   },
   {
-   "w": "más",
-   "s": 7.04,
-   "e": 7.2
+   "w": "pięćdziesiąt",
+   "s": 7.68,
+   "e": 8.24
   },
   {
-   "w": "de",
-   "s": 7.28,
-   "e": 7.36
+   "w": "cztery",
+   "s": 8.32,
+   "e": 8.56
   },
   {
-   "w": "cuarenta",
-   "s": 7.4,
-   "e": 7.84
-  },
-  {
-   "w": "y",
-   "s": 7.92,
-   "e": 8.0
-  },
-  {
-   "w": "seis",
-   "s": 8.08,
-   "e": 8.32
-  },
-  {
-   "w": "horas",
-   "s": 8.4,
-   "e": 8.72
-  },
-  {
-   "w": "de",
-   "s": 8.76,
-   "e": 8.8
-  },
-  {
-   "w": "audio.",
-   "s": 8.88,
-   "e": 9.76
+   "w": "godziny.",
+   "s": 8.64,
+   "e": 9.253
   }
  ],
- "speechEnd": 9.358
+ "trimmed": "0051e568e516",
+ "speechEnd": 9.093
 }

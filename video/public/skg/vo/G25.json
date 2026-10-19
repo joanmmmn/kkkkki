@@ -1,154 +1,85 @@
 {
  "id": "G25",
- "hash": "47a97c5e966a",
- "text": "¿Y si tienes poco tiempo? Carrie, con la que empezó todo, en menos de ocho horas. O Elevación, una novela corta que se escucha en poco más de tres.",
- "duration": 10.64,
+ "hash": "38af34dcd69a",
+ "text": "A jeśli masz mało czasu: „Carrie”, nieco ponad siedem godzin, albo „Uniesienie”, niewiele ponad trzy.",
+ "duration": 6.329,
  "words": [
   {
-   "w": "¿Y",
+   "w": "A",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.04
   },
   {
-   "w": "si",
-   "s": 0.16,
-   "e": 0.24
+   "w": "jeśli",
+   "s": 0.08,
+   "e": 0.32
   },
   {
-   "w": "tienes",
-   "s": 0.32,
-   "e": 0.64
+   "w": "masz",
+   "s": 0.4,
+   "e": 0.56
   },
   {
-   "w": "poco",
-   "s": 0.68,
-   "e": 0.88
+   "w": "mało",
+   "s": 0.64,
+   "e": 0.8
   },
   {
-   "w": "tiempo?",
-   "s": 0.96,
-   "e": 1.84
+   "w": "czasu:",
+   "s": 0.88,
+   "e": 1.64
   },
   {
-   "w": "Carrie,",
-   "s": 1.88,
-   "e": 2.4
+   "w": "„Carrie”,",
+   "s": 1.68,
+   "e": 2.28
   },
   {
-   "w": "con",
-   "s": 2.48,
+   "w": "nieco",
+   "s": 2.32,
    "e": 2.56
   },
   {
-   "w": "la",
+   "w": "ponad",
    "s": 2.64,
-   "e": 2.72
-  },
-  {
-   "w": "que",
-   "s": 2.8,
    "e": 2.88
   },
   {
-   "w": "empezó",
-   "s": 2.96,
-   "e": 3.28
+   "w": "siedem",
+   "s": 2.92,
+   "e": 3.2
   },
   {
-   "w": "todo,",
-   "s": 3.36,
-   "e": 3.84
+   "w": "godzin,",
+   "s": 3.28,
+   "e": 3.8
   },
   {
-   "w": "en",
-   "s": 3.96,
-   "e": 4.08
+   "w": "albo",
+   "s": 3.84,
+   "e": 4.32
   },
   {
-   "w": "menos",
-   "s": 4.2,
-   "e": 4.4
+   "w": "„Uniesienie”,",
+   "s": 4.36,
+   "e": 5.16
   },
   {
-   "w": "de",
-   "s": 4.48,
-   "e": 4.56
+   "w": "niewiele",
+   "s": 5.2,
+   "e": 5.44
   },
   {
-   "w": "ocho",
-   "s": 4.64,
-   "e": 4.8
-  },
-  {
-   "w": "horas.",
-   "s": 4.88,
+   "w": "ponad",
+   "s": 5.52,
    "e": 5.76
   },
   {
-   "w": "O",
-   "s": 5.88,
-   "e": 6.0
-  },
-  {
-   "w": "Elevación,",
-   "s": 6.24,
-   "e": 7.2
-  },
-  {
-   "w": "una",
-   "s": 7.28,
-   "e": 7.36
-  },
-  {
-   "w": "novela",
-   "s": 7.44,
-   "e": 7.68
-  },
-  {
-   "w": "corta",
-   "s": 7.76,
-   "e": 8.08
-  },
-  {
-   "w": "que",
-   "s": 8.16,
-   "e": 8.24
-  },
-  {
-   "w": "se",
-   "s": 8.32,
-   "e": 8.4
-  },
-  {
-   "w": "escucha",
-   "s": 8.48,
-   "e": 8.8
-  },
-  {
-   "w": "en",
-   "s": 8.92,
-   "e": 9.04
-  },
-  {
-   "w": "poco",
-   "s": 9.12,
-   "e": 9.28
-  },
-  {
-   "w": "más",
-   "s": 9.36,
-   "e": 9.52
-  },
-  {
-   "w": "de",
-   "s": 9.6,
-   "e": 9.68
-  },
-  {
-   "w": "tres.",
-   "s": 9.84,
-   "e": 10.64
+   "w": "trzy.",
+   "s": 5.84,
+   "e": 6.329
   }
  ],
- "speechEnd": 10.13
+ "trimmed": "38af34dcd69a",
+ "speechEnd": 6.166
 }

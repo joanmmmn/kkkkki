@@ -4,9 +4,8 @@ import { ThreeCanvas } from '@remotion/three';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { AbsoluteFill, interpolate, spring, staticFile, useCurrentFrame } from 'remotion';
 import { Sfx, ChangeTicks } from '../../../components/Sfx';
-import { LogoIcon } from '../../../components/Logo';
-import { clamp, easeInOut, easeOut, fmtEs } from '../../../lib/anim';
-import { color, font, Grain, KR } from '../kit';
+import { clamp, easeInOut, easeOut } from '../../../lib/anim';
+import { color, font, Grain, KR, MiniIcon } from '../kit';
 import { sceneClock } from '../timeline';
 import { Book, ShelfBook, woodTex } from './books3d';
 import { CLOTHS, Rig } from './Library';
@@ -17,16 +16,25 @@ import { CamKey, canvasTex, easeO, hash, ramp01, rng, SANS, useFontsReady, V3, A
 // de la propia escena del gancho, public/skg/3d/biblioteca_fondo.jpg, puesta como fondo CSS del lienzo transparente).
 // ————————————————————————————————————————————————————————————————
 
-// Los 39 audiolibros de King en español del catálogo de SonorBooks (14/10/2026), de menor a mayor duración (horas).
-// Suman 724 h. Fuente: research/autores/stephen-king/king_fichas.json.
+// Las 85 grabaciones de King en polaco de Audioteka (19/10/2026; sin las dos antologías de otros autores), de menor a mayor
+// duración (horas). Suman 1427,9 h: «ponad 1400 godzin». Fuente: autor en audioteka.com/pl y la ficha de cada audiobook.
 export const AUDIO_HOURS: [string, number][] = [
-  ['Un rostro en la multitud', 1.46], ['La caja de botones de Gwendy', 2.88], ['Elevación', 3.29], ['Después', 6.92], ['Carrie', 7.42], ['El pistolero', 7.72],
-  ['La última misión de Gwendy', 8.58], ['La niebla', 10.06], ['Buick 8', 13.92], ['La llegada de los tres', 13.92], ['Misery', 14.2], ['Fin de guardia', 14.47],
-  ['La milla verde', 14.57], ['Quien pierde paga', 15.2], ['Canción de Susannah', 15.58], ['Cujo', 16.08], ['Revival', 16.22], ['La sangre manda', 16.77],
-  ["El misterio de Salem's Lot", 16.93], ['Mr. Mercedes', 17.3], ['Billy Summers', 18.22], ['Holly', 18.42], ['El resplandor', 18.53], ['Las tierras baldías', 19.2],
-  ['No tengas miedo', 19.29], ['La zona muerta', 19.53], ['El bazar de los malos sueños', 20.27], ['El visitante', 21.04], ['Doctor Sueño', 21.3], ['El Instituto', 21.32],
-  ['Si te gusta la oscuridad', 22.02], ['El cazador de sueños', 25.81], ['Cuento de hadas', 25.83], ['Mago y cristal', 29.1], ['Lobos del Calla', 29.27],
-  ['22/11/63', 32.72], ['La Torre Oscura', 34.0], ['It', 46.4], ['Apocalipsis', 48.27],
+  ['Rok wilkołaka', 2.2], ['Zimowa opowieść: Metoda oddychania', 2.9], ['Pudełko z guzikami Gwendy', 3.0], ['Uniesienie', 3.07], ['Colorado Kid', 4.22],
+  ['Wiosna nadziei: Skazani na Shawshank', 4.37], ['Ukryte okno, ukryty ogród', 6.12], ['Później', 6.48], ['Jesień niewinności: Ciało', 6.48], ['Pies z aparatu', 7.17],
+  ['Carrie', 7.2], ['Dziewczyna, która kochała Toma Gordona', 7.7], ['Uciekinier', 7.93], ['Lato zepsucia: Pojętny uczeń', 8.3], ['Biblioteczny policjant', 8.42],
+  ['Ostatnia misja Gwendy', 8.47], ['Joyland', 9.23], ['Wielki marsz', 9.72], ['Langoliery', 9.95], ['Blaze', 10.0], ['Wiatr przez dziurkę od klucza', 10.08],
+  ['Ostatni bastion Barta Dawesa', 10.12], ['Oczy smoka', 10.22], ['Chudszy', 10.27], ['Jak pisać. Pamiętnik rzemieślnika', 10.8], ['Dolores Claiborne', 11.13],
+  ['Roland', 11.25], ['Buick 8', 11.57], ['Gra Geralda', 13.58], ['Koniec warty', 13.63], ['Powołanie trójki', 13.83], ['Jest krew…', 14.03],
+  ['Znalezione nie kradzione', 14.07], ['Przebudzenie', 14.33], ['Nocna zmiana', 14.53], ['Komórka', 14.57], ['Regulatorzy', 14.9], ['Misery', 15.17], ['Cujo', 15.4],
+  ['Cmętarz zwieżąt', 15.5], ['Pan Mercedes', 15.52], ['Zielona mila', 15.58], ['Zielona mila', 15.8], ['Pieśń Susannah', 16.02],
+  ['Wszystko jest względne. 14 mrocznych opowieści', 16.32], ['Rose Madder', 16.32], ['Czarna bezgwiezdna noc', 16.33], ['Billy Summers', 16.55],
+  ['Miasteczko Salem', 17.03], ['Po zachodzie słońca', 17.17], ['Serca Atlantydów', 17.23], ['Podpalaczka', 17.82], ['Martwa strefa', 18.03], ['Historia Lisey', 18.13],
+  ['Instytut', 18.2], ['Ziemie jałowe', 18.95], ['Mroczna połowa', 19.35], ['Holly', 19.63], ['Nie wymiękaj', 19.82], ['Outsider', 19.87], ['Christine', 19.98],
+  ['Danse Macabre', 20.48], ['Doktor Sen', 20.65], ['Lśnienie', 21.13], ['Bazar złych snów', 21.58], ['Im mroczniej, tym lepiej', 21.97], ['Desperacja', 22.05],
+  ['Baśniowa opowieść', 22.17], ['Szkieletowa załoga', 22.8], ['Worek kości', 24.85], ['Czarny dom', 25.42], ['Stukostrachy', 26.75], ['Dallas ’63', 27.45],
+  ['Talizman', 27.48], ['Wilki z Calla', 27.55], ['Śpiące królewny', 27.75], ['Łowca snów', 28.05], ['Marzenia i koszmary', 28.37],
+  ['Czarnoksiężnik i kryształ', 28.93], ['Mroczna Wieża', 29.15], ['Bezsenność', 29.27], ['Ręka mistrza', 29.52], ['Sklepik z marzeniami', 31.12],
+  ['Bastion', 47.87], ['To', 54.02],
 ];
 
 export const DeskBackdrop: React.FC<{ x?: number; s?: number; dim?: number }> = ({ x = 0, s = 1.08, dim = 0.35 }) => (
@@ -138,13 +146,22 @@ const tileTex = (n: number, night: boolean) =>
     ctx.strokeRect(3, 3, w - 6, h - 6);
   });
 
+// 85 libros: caen más seguidos y las barras crecen más deprisa que en el español (39), para durar lo mismo.
+const DROP_STEP = 0.6;
+const BAR_STEP = 1.0;
+const BAR_END = 4 + AUDIO_HOURS.length * BAR_STEP + 20;
+// Calendario: dos meses (2 × 30 casillas), «dwa miesiące».
+const DAYS = 30;
+const TILE = 8.8;
+const PITCH = 10.2;
+
 const ROW_BOOKS = (() => {
   const r = rng(39);
   let x = 0;
-  const gap = 0.9;
+  const gap = 0.4;
   const list = AUDIO_HOURS.map(([t, hrs], i) => {
     const cl = CLOTHS[(i * 7 + 3) % CLOTHS.length];
-    const b: ShelfBook = { title: t, thick: 2.6 + Math.min(3.2, hrs / 14), h: 20 + r() * 3.4, depth: 14.6, cloth: cl.c, foil: cl.foil, variant: (Math.floor(r() * 4) % 4) as ShelfBook['variant'], seed: hash(`a${t}`) };
+    const b: ShelfBook = { title: t, thick: 1.2 + Math.min(1.5, hrs / 22), h: 20 + r() * 3.4, depth: 14.6, cloth: cl.c, foil: cl.foil, variant: (Math.floor(r() * 4) % 4) as ShelfBook['variant'], seed: hash(`a${t}`) };
     const out = { b, hrs, x: x + b.thick / 2 };
     x += b.thick + gap;
     return out;
@@ -158,12 +175,12 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
   const frame = useCurrentFrame();
   const { list } = ROW_BOOKS;
   const K = 1.25; // unidades por hora
-  const barAt = (i: number) => f.suman - 4 + i * 2.1;
+  const barAt = (i: number) => f.suman - 4 + i * BAR_STEP;
   const drain = ramp01(frame, f.mes - 10, f.mes + 20);
   const barGeo = useMemo(() => new RoundedBoxGeometry(1, 1, 1, 2, 0.12), []);
   const barMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#FFC21A', roughness: 0.38, metalness: 0.05, emissive: '#C86A00', emissiveIntensity: 0.22 }), []);
   const capMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#FFF4C2', emissive: '#FFF4C2', emissiveIntensity: 0.8 }), []);
-  const tileGeo = useMemo(() => new THREE.BoxGeometry(13.6, 0.9, 13.6), []);
+  const tileGeo = useMemo(() => new THREE.BoxGeometry(TILE, 0.7, TILE), []);
   const edgeMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#C8BEA6', roughness: 0.7 }), []);
   const tileMats = useMemo(() => Array.from({ length: 30 }).map((_, i) => {
     const day = new THREE.MeshStandardMaterial({ map: tileTex(i + 1, false), roughness: 0.75 });
@@ -173,10 +190,10 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
   const keys: CamKey[] = [
     { f: 0, pos: [-92, 13, 40], look: [-58, 11, -2], fov: 30 },
     { f: f.sonor, pos: [-46, 20, 92], look: [-14, 14, 0], fov: 30 },
-    { f: f.set + 30, pos: [-4, 52, 238], look: [0, 40, 0], fov: 30 },
-    { f: f.mes - 4, pos: [2, 51, 230], look: [2, 39, 0], fov: 30 },
-    { f: f.dia + 4, pos: [0, 138, 150], look: [0, 0, 47], fov: 30 },
-    { f: dur, pos: [0, 134, 140], look: [0, 0, 47], fov: 30, ease: (t) => t },
+    { f: f.set + 30, pos: [-4, 54, 250], look: [0, 40, 0], fov: 30 },
+    { f: f.mes - 4, pos: [2, 53, 242], look: [2, 39, 0], fov: 30 },
+    { f: f.dia + 4, pos: [0, 150, 160], look: [0, 0, 46], fov: 30 },
+    { f: dur, pos: [0, 146, 150], look: [0, 0, 46], fov: 30, ease: (t) => t },
   ];
   const lamp = 1;
   return (
@@ -188,7 +205,7 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
       <pointLight position={[110, 40, 60]} intensity={0.9} decay={0} distance={300} color={KR} />
       <Desk />
       {list.map((p, i) => {
-        const a = 4 + i * 1.3;
+        const a = 4 + i * DROP_STEP;
         const s = spring({ frame: frame - a, fps: 50, config: { damping: 15, stiffness: 160, mass: 0.8 } });
         if (frame < a) return null;
         const bs = spring({ frame: frame - barAt(i), fps: 50, config: { damping: 18, stiffness: 90 } });
@@ -205,22 +222,23 @@ const HoursScene: React.FC<{ f: Record<string, number>; dur: number }> = ({ f, d
           </group>
         );
       })}
-      {/* Calendario de 30 días sobre la mesa */}
-      {frame >= f.mes - 6 && Array.from({ length: 30 }).map((_, i) => {
+      {/* Calendario de dos meses (2 × 30 días) sobre la mesa */}
+      {frame >= f.mes - 6 && Array.from({ length: 2 * DAYS }).map((_, j) => {
+        const m = Math.floor(j / DAYS), i = j % DAYS;
         const col = i % 6, row = Math.floor(i / 6);
-        const a = f.mes - 4 + (col + row) * 2.2;
+        const a = f.mes - 4 + (col + row) * 2.2 + m * 10;
         const s = spring({ frame: frame - a, fps: 50, config: { damping: 14, stiffness: 170 } });
         if (frame < a) return null;
         // Noche en ola diagonal; luego día y noche se alternan sin parar
-        const w = (col + row) * 1.8;
+        const w = (col + row) * 1.8 + m * 6;
         const flip1 = ramp01(frame, f.noche - 6 + w, f.noche + 10 + w, easeO);
         const flip2 = ramp01(frame, f.sin + 6 + w, f.sin + 22 + w, easeO);
         const rot = Math.PI * (flip1 + flip2);
         const lift = Math.sin(Math.PI * ((flip1 + flip2) % 1)) * 5;
-        const x = (col - 2.5) * 16;
-        const z = 14 + row * 16;
+        const x = (m ? 1 : -1) * (3 * PITCH + 4) + (col - 2.5) * PITCH;
+        const z = 26 + row * PITCH;
         return (
-          <mesh key={i} geometry={tileGeo} material={tileMats[i]} position={[x, 0.45 + (1 - s) * 18 + lift, z]} rotation={[rot, 0, (1 - s) * 0.4]} scale={0.2 + 0.8 * s} castShadow receiveShadow />
+          <mesh key={j} geometry={tileGeo} material={tileMats[i]} position={[x, 0.35 + (1 - s) * 18 + lift, z]} rotation={[rot, 0, (1 - s) * 0.4]} scale={0.2 + 0.8 * s} castShadow receiveShadow />
         );
       })}
     </>
@@ -232,10 +250,10 @@ export const Hours3D: React.FC = () => {
   const ready = useFontsReady();
   const c = sceneClock('HOURS');
   const f = {
-    solo: c.at('G03', 'solo'), sonor: c.at('G03', 'SonorBooks'), suman: c.at('G03', 'suman'), set: c.at('G03', 'setecientas'),
-    mes: c.at('G03', 'mes'), dia: c.at('G03', 'día'), noche: c.at('G03', 'noche'), sin: c.at('G03', 'sin'),
+    solo: c.at('G03', 'samej'), sonor: c.at('G03', 'Audiotece'), suman: c.at('G03', 'trwają'), set: c.at('G03', 'tysiąc'),
+    mes: c.at('G03', 'dwa'), dia: c.at('G03', 'dzień'), noche: c.at('G03', 'noc'), sin: c.at('G03', 'bez'),
   };
-  const count = interpolate(frame, [f.suman, f.suman + 4 + 39 * 2.1 + 20], [0, 724], { ...clamp, easing: (t) => t * (2 - t) });
+  const count = interpolate(frame, [f.suman, f.suman + BAR_END], [0, 1400], { ...clamp, easing: (t) => t * (2 - t) });
   const counterIn = ramp01(frame, f.suman - 6, f.suman + 10) * (1 - ramp01(frame, f.mes - 12, f.mes + 4));
   const calIn = ramp01(frame, f.mes, f.mes + 16);
   const badge = ramp01(frame, f.sonor - 8, f.sonor + 8, easeO) * (1 - ramp01(frame, f.suman - 10, f.suman + 2));
@@ -254,8 +272,8 @@ export const Hours3D: React.FC = () => {
         <div style={{ position: 'absolute', left: 0, right: 0, top: 90, display: 'flex', justifyContent: 'center', opacity: badge, transform: `translateY(${(1 - badge) * 16}px)` }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '14px 30px 14px 20px', background: 'rgba(16,17,20,0.66)', backdropFilter: 'blur(12px)', borderRadius: 999,
             border: '1px solid rgba(255,255,255,0.16)', boxShadow: '0 20px 50px rgba(0,0,0,0.45)' }}>
-            <LogoIcon size={44} />
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: '#fff' }}>39 audiolibros en español <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 500 }}>· catálogo de SonorBooks</span></span>
+            <span style={{ width: 44, height: 44, borderRadius: '50%', background: color.yellow, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><MiniIcon kind="head" size={28} /></span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: '#fff' }}>Audiobooki Kinga po polsku <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 500 }}>· dane z Audioteki</span></span>
           </div>
         </div>
       )}
@@ -263,10 +281,10 @@ export const Hours3D: React.FC = () => {
       {counterIn > 0.01 && (
         <div style={{ position: 'absolute', left: 150, top: 96, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', opacity: counterIn, transform: `translateY(${(1 - counterIn) * 20}px)` }}>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 22 }}>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 200, letterSpacing: -9, lineHeight: 0.9, color: '#fff', fontVariantNumeric: 'tabular-nums', textShadow: '0 12px 50px rgba(0,0,0,0.6)' }}>{fmtEs(Math.round(count))}</span>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: color.yellow, textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>horas</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 200, letterSpacing: -9, lineHeight: 0.9, color: '#fff', fontVariantNumeric: 'tabular-nums', textShadow: '0 12px 50px rgba(0,0,0,0.6)' }}>{Math.round(count)}{count >= 1399.5 ? '+' : ''}</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: color.yellow, textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>godzin</span>
           </div>
-          <div style={{ marginTop: 12, marginLeft: 8, fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: 'rgba(255,255,255,0.85)', opacity: ramp01(frame, f.set, f.set + 14) }}>de Stephen King en audiolibro en español</div>
+          <div style={{ marginTop: 12, marginLeft: 8, fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: 'rgba(255,255,255,0.85)', opacity: ramp01(frame, f.set, f.set + 14) }}>Stephena Kinga w audiobookach po polsku</div>
         </div>
       )}
       {/* Un mes entero */}
@@ -274,20 +292,20 @@ export const Hours3D: React.FC = () => {
         <>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 260, background: 'linear-gradient(180deg, rgba(6,6,8,0.86) 0%, rgba(6,6,8,0.6) 55%, rgba(6,6,8,0) 100%)', opacity: calIn }} />
           <div style={{ position: 'absolute', left: 0, right: 0, top: 62, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 22, opacity: calIn, transform: `translateY(${(1 - calIn) * 20}px)` }}>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 88, letterSpacing: -3, color: '#fff', textShadow: '0 10px 40px rgba(0,0,0,0.7)' }}>Unos 30 días</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 88, letterSpacing: -3, color: '#fff', textShadow: '0 10px 40px rgba(0,0,0,0.7)' }}>Około 60 dni</span>
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, letterSpacing: -2, color: '#fff', padding: '4px 26px 10px', borderRadius: 18,
-              background: `rgba(193,18,31,${ramp01(frame, f.sin - 4, f.sin + 6)})`, boxShadow: frame >= f.sin - 4 ? '0 14px 40px rgba(193,18,31,0.45)' : undefined, transform: `scale(${1 + 0.06 * Math.sin(Math.PI * ramp01(frame, f.sin - 4, f.sin + 10))})` }}>sin parar</span>
+              background: `rgba(193,18,31,${ramp01(frame, f.sin - 4, f.sin + 6)})`, boxShadow: frame >= f.sin - 4 ? '0 14px 40px rgba(193,18,31,0.45)' : undefined, transform: `scale(${1 + 0.06 * Math.sin(Math.PI * ramp01(frame, f.sin - 4, f.sin + 10))})` }}>bez przerwy</span>
           </div>
         </>
       )}
       {/* Sonido */}
-      {Array.from({ length: 10 }).map((_, k) => <Sfx key={k} name="sk_book_slide" at={Math.round(4 + k * 4 * 1.3) + 2} volume={0.28 + 0.08 * (k % 3)} />)}
+      {Array.from({ length: 10 }).map((_, k) => <Sfx key={k} name="sk_book_slide" at={Math.round(4 + k * 8.5 * DROP_STEP) + 2} volume={0.28 + 0.08 * (k % 3)} />)}
       <Sfx name="ui_pop" at={f.sonor} volume={0.6} />
       <Sfx name="riser" at={f.suman - 10} volume={0.3} />
-      <ChangeTicks value={(fr) => String(Math.round(interpolate(fr, [f.suman, f.suman + 4 + 39 * 2.1 + 20], [0, 724], { ...clamp, easing: (t) => t * (2 - t) }) / 12))} from={f.suman} to={f.suman + 110} volume={0.5} />
+      <ChangeTicks value={(fr) => String(Math.round(interpolate(fr, [f.suman, f.suman + BAR_END], [0, 1400], { ...clamp, easing: (t) => t * (2 - t) }) / 23))} from={f.suman} to={f.suman + BAR_END} volume={0.5} />
       <Sfx name="hit_soft" at={f.set + 12} volume={0.7} />
       <Sfx name="whoosh_soft" at={f.mes - 8} volume={0.6} />
-      {Array.from({ length: 8 }).map((_, k) => <Sfx key={`d${k}`} name="card_flip" at={Math.round(f.mes - 2 + k * 4)} volume={0.35} />)}
+      {Array.from({ length: 10 }).map((_, k) => <Sfx key={`d${k}`} name="card_flip" at={Math.round(f.mes - 2 + k * 4)} volume={0.35} />)}
       <Sfx name="shimmer" at={f.noche - 4} volume={0.5} />
       {Array.from({ length: 6 }).map((_, k) => <Sfx key={`n${k}`} name="card_flip" at={Math.round(f.noche - 4 + k * 3.6)} volume={0.3} />)}
       <Sfx name="stamp" at={f.sin} volume={0.35} />

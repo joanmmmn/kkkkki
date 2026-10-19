@@ -1,79 +1,75 @@
 {
  "id": "G21",
- "hash": "6f5091da7e2c",
- "text": "Si te gustan la ciencia ficción o la historia: 22/11/63.",
- "duration": 6.16,
+ "hash": "426ff1e95f7f",
+ "text": "Czwarte: „Dallas ’63”, z 2011 roku. Science fiction i historia.",
+ "duration": 6.502,
  "words": [
   {
-   "w": "Si",
+   "w": "Czwarte:",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.88
   },
   {
-   "w": "te",
-   "s": 0.16,
-   "e": 0.24
+   "w": "Dallas",
+   "s": 0.96,
+   "e": 1.36
   },
   {
-   "w": "gustan",
-   "s": 0.32,
-   "e": 0.64
+   "w": "sześćdziesiąt",
+   "s": 1.44,
+   "e": 1.92
   },
   {
-   "w": "la",
-   "s": 0.68,
-   "e": 0.72
+   "w": "trzy,",
+   "s": 2.0,
+   "e": 2.56
   },
   {
-   "w": "ciencia",
-   "s": 0.8,
-   "e": 1.12
+   "w": "z",
+   "s": 2.587,
+   "e": 2.613
   },
   {
-   "w": "ficción",
-   "s": 1.2,
-   "e": 1.6
+   "w": "dwa",
+   "s": 2.64,
+   "e": 2.8
   },
   {
-   "w": "o",
-   "s": 1.64,
-   "e": 1.68
+   "w": "tysiące",
+   "s": 2.88,
+   "e": 3.2
   },
   {
-   "w": "la",
-   "s": 1.72,
-   "e": 1.76
+   "w": "jedenastego",
+   "s": 3.28,
+   "e": 3.76
   },
   {
-   "w": "historia:",
-   "s": 1.84,
-   "e": 2.88
+   "w": "roku.",
+   "s": 3.84,
+   "e": 4.48
   },
   {
-   "w": "veintidós,",
-   "s": 2.96,
-   "e": 4.0
+   "w": "Sajens",
+   "s": 4.52,
+   "e": 4.96
   },
   {
-   "w": "once,",
-   "s": 4.08,
-   "e": 4.8
+   "w": "fikszyn",
+   "s": 5.04,
+   "e": 5.6
   },
   {
-   "w": "sesenta",
-   "s": 4.88,
-   "e": 5.2
+   "w": "i",
+   "s": 5.627,
+   "e": 5.653
   },
   {
-   "w": "y",
-   "s": 5.253,
-   "e": 5.307
-  },
-  {
-   "w": "tres.",
-   "s": 5.36,
-   "e": 6.16
+   "w": "historia.",
+   "s": 5.68,
+   "e": 6.502
   }
  ],
- "speechEnd": 5.754
+ "trimmed": "426ff1e95f7f",
+ "speechEnd": 6.342
 }

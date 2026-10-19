@@ -1,139 +1,130 @@
 {
  "id": "G13",
- "hash": "1a750b168213",
- "text": "La segunda: ¿cuánto tiempo tienes? Porque con King la diferencia es enorme. Carrie se escucha en menos de ocho horas. Apocalipsis pasa de cuarenta y ocho.",
- "duration": 11.52,
+ "hash": "289ef73e6154",
+ "text": "Drugie: ile masz czasu? Bo u Kinga różnice są ogromne. „Carrie” po polsku przesłuchasz w nieco ponad siedem godzin. „To” trwa ponad pięćdziesiąt cztery.",
+ "duration": 9.732,
  "words": [
   {
-   "w": "La",
+   "w": "Drugie:",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.88
   },
   {
-   "w": "segunda:",
-   "s": 0.16,
+   "w": "ile",
+   "s": 1.0,
    "e": 1.12
   },
   {
-   "w": "¿cuánto",
-   "s": 1.16,
-   "e": 1.52
+   "w": "masz",
+   "s": 1.2,
+   "e": 1.32
   },
   {
-   "w": "tiempo",
-   "s": 1.6,
-   "e": 1.92
+   "w": "czasu?",
+   "s": 1.36,
+   "e": 2.24
   },
   {
-   "w": "tienes?",
-   "s": 1.96,
-   "e": 2.96
+   "w": "Bo",
+   "s": 2.32,
+   "e": 2.4
   },
   {
-   "w": "Porque",
-   "s": 3.08,
-   "e": 3.28
+   "w": "u",
+   "s": 2.44,
+   "e": 2.48
   },
   {
-   "w": "con",
-   "s": 3.36,
+   "w": "Kinga",
+   "s": 2.56,
+   "e": 3.04
+  },
+  {
+   "w": "różnice",
+   "s": 3.12,
    "e": 3.52
   },
   {
-   "w": "King",
-   "s": 3.6,
-   "e": 4.08
+   "w": "są",
+   "s": 3.56,
+   "e": 3.76
   },
   {
-   "w": "la",
-   "s": 4.16,
-   "e": 4.24
+   "w": "ogromne.",
+   "s": 3.84,
+   "e": 4.747
   },
   {
-   "w": "diferencia",
-   "s": 4.28,
-   "e": 4.88
+   "w": "„Carrie”",
+   "s": 4.773,
+   "e": 5.04
   },
   {
-   "w": "es",
-   "s": 4.96,
-   "e": 5.12
+   "w": "po",
+   "s": 5.12,
+   "e": 5.2
   },
   {
-   "w": "enorme.",
-   "s": 5.2,
+   "w": "polsku",
+   "s": 5.24,
+   "e": 5.6
+  },
+  {
+   "w": "przesłuchasz",
+   "s": 5.68,
    "e": 6.16
   },
   {
-   "w": "Carrie",
+   "w": "w",
+   "s": 6.187,
+   "e": 6.213
+  },
+  {
+   "w": "nieco",
    "s": 6.24,
    "e": 6.48
   },
   {
-   "w": "se",
+   "w": "ponad",
    "s": 6.56,
-   "e": 6.64
+   "e": 6.8
   },
   {
-   "w": "escucha",
-   "s": 6.76,
-   "e": 7.04
+   "w": "siedem",
+   "s": 6.84,
+   "e": 7.12
   },
   {
-   "w": "en",
-   "s": 7.12,
-   "e": 7.2
+   "w": "godzin.",
+   "s": 7.2,
+   "e": 7.88
   },
   {
-   "w": "menos",
-   "s": 7.28,
-   "e": 7.52
+   "w": "„To”",
+   "s": 7.92,
+   "e": 8.0
   },
   {
-   "w": "de",
-   "s": 7.6,
-   "e": 7.68
+   "w": "trwa",
+   "s": 8.04,
+   "e": 8.24
   },
   {
-   "w": "ocho",
-   "s": 7.76,
-   "e": 7.92
+   "w": "ponad",
+   "s": 8.32,
+   "e": 8.56
   },
   {
-   "w": "horas.",
-   "s": 8.0,
-   "e": 8.76
+   "w": "pięćdziesiąt",
+   "s": 8.6,
+   "e": 9.08
   },
   {
-   "w": "Apocalipsis",
-   "s": 8.8,
-   "e": 9.68
-  },
-  {
-   "w": "pasa",
-   "s": 9.72,
-   "e": 9.92
-  },
-  {
-   "w": "de",
-   "s": 10.0,
-   "e": 10.08
-  },
-  {
-   "w": "cuarenta",
-   "s": 10.16,
-   "e": 10.56
-  },
-  {
-   "w": "y",
-   "s": 10.64,
-   "e": 10.693
-  },
-  {
-   "w": "ocho.",
-   "s": 10.747,
-   "e": 11.52
+   "w": "cztery.",
+   "s": 9.12,
+   "e": 9.732
   }
  ],
- "speechEnd": 11.038
+ "trimmed": "289ef73e6154",
+ "speechEnd": 9.572
 }

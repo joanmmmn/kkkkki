@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Subtítulos (.srt) y capítulos del episodio «AUTOR · Stephen King» a partir de la locución y la línea de tiempo.
-Uso: python3 tools/skg_meta.py <dir_salida>"""
+"""Subtítulos (.srt) y capítulos del episodio de Stephen King (versión polaca, «Od czego i jak zacząć») a partir de la locución
+y la línea de tiempo. Uso: python3 tools/skg_meta.py <dir_salida>"""
 import json, os, re, sys
 from skg_timeline import parse, FPS, VO
 
@@ -75,7 +75,7 @@ def main():
                 acc += len(c)
                 b = t0 + dur * acc / tot
                 subs.append((a, b + 0.15, two_lines(c)))
-    with open(os.path.join(out, 'stephen_king_guia.es.srt'), 'w') as f:
+    with open(os.path.join(out, 'stephen_king_od_czego_zaczac.pl.srt'), 'w') as f:
         for i, (a, b, t) in enumerate(subs, 1):
             f.write(f'{i}\n{ts(a)} --> {ts(min(b, subs[i][0] if i < len(subs) else b))}\n{t}\n\n')
     print(len(subs), 'subtítulos;', f'{total / FPS:.1f} s')

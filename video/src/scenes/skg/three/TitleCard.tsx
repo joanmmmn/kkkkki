@@ -7,7 +7,7 @@ import { DeskBackdrop } from './Desk';
 import { sceneClock } from '../timeline';
 import { easeO, ramp01 } from './lib3d';
 
-// ——— TITLE · Cabecera centrada: «Por dónde y cómo empezar a leer» / Stephen King ———
+// ——— TITLE · Cabecera centrada: «Od czego i jak zacząć» / Stephen King (sin la palabra «AUTOR») ———
 // Sobre la biblioteca desenfocada del gancho; una luz cálida barre el nombre.
 export const TitleCard: React.FC = () => {
   const frame = useCurrentFrame();
@@ -31,7 +31,7 @@ export const TitleCard: React.FC = () => {
         {/* la sección */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 30, opacity: kick, transform: `translateY(${(1 - kick) * 18}px)` }}>
           <div style={{ width: 110 * kick, height: 2, background: 'linear-gradient(90deg, rgba(233,200,119,0), #E9C877)' }} />
-          <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontWeight: 500, fontSize: 88, letterSpacing: 0.5, color: '#F3EAD8', textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>Por dónde y cómo empezar a leer</div>
+          <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontWeight: 500, fontSize: 88, letterSpacing: 0.5, color: '#F3EAD8', textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>Od czego i jak zacząć</div>
           <div style={{ width: 110 * kick, height: 2, background: 'linear-gradient(90deg, #E9C877, rgba(233,200,119,0))' }} />
         </div>
         {/* el nombre, en dorado con relieve: entra con un barrido suave */}

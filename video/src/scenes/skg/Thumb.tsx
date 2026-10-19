@@ -7,7 +7,7 @@ import { BOOKS, Book3D, color, font, KR, NOVELS, SkNight, SkStage, Spine } from 
 const Brand: React.FC<{ dark?: boolean }> = ({ dark }) => (
   <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
     <LogoIcon size={58} />
-    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, letterSpacing: 3, textTransform: 'uppercase', color: dark ? 'rgba(255,255,255,0.8)' : color.ink2 }}>Guía para empezar</span>
+    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, letterSpacing: 3, textTransform: 'uppercase', color: dark ? 'rgba(255,255,255,0.8)' : color.ink2 }}>Od czego zacząć</span>
   </div>
 );
 
@@ -21,7 +21,7 @@ export const SKThumbA: React.FC = () => (
         STEPHEN<br />KING
       </div>
       <div style={{ position: 'absolute', left: 56, top: 418 }}>
-        <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, letterSpacing: -3, color: color.ink, background: color.yellow, padding: '0 16px', borderRadius: 10, boxDecorationBreak: 'clone', lineHeight: 1.16 }}>¿Por dónde<br />empiezo?</span>
+        <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, letterSpacing: -3, color: color.ink, background: color.yellow, padding: '0 16px', borderRadius: 10, boxDecorationBreak: 'clone', lineHeight: 1.16 }}>Od czego<br />zacząć?</span>
       </div>
       {/* abanico de libros */}
       <div style={{ position: 'absolute', left: 600, top: 170, width: 620, height: 520, transform: 'scale(0.94)', transformOrigin: '50% 50%' }}>
@@ -36,7 +36,7 @@ export const SKThumbA: React.FC = () => (
           );
         })}
       </div>
-      <div style={{ position: 'absolute', right: 46, top: 560, transform: 'rotate(-5deg)', zIndex: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '10px 24px', borderRadius: 14, boxShadow: '0 16px 30px rgba(193,18,31,0.35)' }}>5 puertas</div>
+      <div style={{ position: 'absolute', right: 46, top: 560, transform: 'rotate(-5deg)', zIndex: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '10px 24px', borderRadius: 14, boxShadow: '0 16px 30px rgba(193,18,31,0.35)' }}>5 wejść</div>
     </SkStage>
   </AbsoluteFill>
 );
@@ -48,12 +48,12 @@ export const SKThumbB: React.FC = () => (
     <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)' }} />
     <div style={{ position: 'absolute', left: 64, top: 64 }}><Brand dark /></div>
     <div style={{ position: 'absolute', left: 60, top: 150, fontFamily: font.sans, fontWeight: 700, fontSize: 94, lineHeight: 1.08, letterSpacing: -4, color: '#fff', textShadow: '0 10px 40px rgba(0,0,0,0.6)' }}>
-      ¿Por dónde<br />empiezo con<br /><span style={{ color: color.ink, background: color.yellow, padding: '0 14px', borderRadius: 10, textShadow: 'none' }}>Stephen King?</span>
+      Od czego<br />zacząć<br /><span style={{ color: color.ink, background: color.yellow, padding: '0 14px', borderRadius: 10, textShadow: 'none' }}>Stephena Kinga?</span>
     </div>
     <div style={{ position: 'absolute', left: 880, top: 150 }}>
       <div style={{ position: 'absolute', left: -120, top: -60, width: 540, height: 580, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(255,214,120,0.55), rgba(255,214,120,0) 62%)' }} />
       <Book3D b={BOOKS.resplandor} w={290} h={435} d={50} ry={-22} rx={3} />
     </div>
-    <div style={{ position: 'absolute', left: 64, bottom: 54, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '8px 22px', borderRadius: 12 }}>5 puertas de entrada</div>
+    <div style={{ position: 'absolute', left: 64, bottom: 54, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '8px 22px', borderRadius: 12 }}>5 książek na start</div>
   </AbsoluteFill>
 );

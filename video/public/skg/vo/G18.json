@@ -1,239 +1,145 @@
 {
  "id": "G18",
- "hash": "fed3b6d7a8a0",
- "text": "Un novelista se estrella con el coche en plena tormenta de nieve y lo rescata su admiradora número uno. El problema es que no piensa dejarlo marchar. Dos personajes, una casa y una tensión que no afloja en ningún momento. Su audiolibro dura unas catorce horas.",
- "duration": 18.08,
+ "hash": "d3955bd4d5d0",
+ "text": "Pisarz ma wypadek w środku śnieżycy. Ratuje go jego fanka numer jeden, która wcale nie zamierza go wypuścić. Po polsku czyta Krzysztof Plewako-Szczerbiński: nieco ponad piętnaście godzin.",
+ "duration": 11.209,
  "words": [
   {
-   "w": "Un",
+   "w": "Pisarz",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.4
   },
   {
-   "w": "novelista",
-   "s": 0.24,
-   "e": 0.72
+   "w": "ma",
+   "s": 0.48,
+   "e": 0.56
   },
   {
-   "w": "se",
-   "s": 0.8,
-   "e": 0.88
+   "w": "wypadek",
+   "s": 0.6,
+   "e": 1.0
   },
   {
-   "w": "estrella",
-   "s": 0.96,
-   "e": 1.28
+   "w": "w",
+   "s": 1.04,
+   "e": 1.08
   },
   {
-   "w": "con",
-   "s": 1.36,
+   "w": "środku",
+   "s": 1.12,
    "e": 1.44
   },
   {
-   "w": "el",
+   "w": "śnieżycy.",
    "s": 1.52,
-   "e": 1.6
+   "e": 2.36
   },
   {
-   "w": "coche",
-   "s": 1.68,
-   "e": 1.92
+   "w": "Ratuje",
+   "s": 2.4,
+   "e": 2.72
   },
   {
-   "w": "en",
-   "s": 2.04,
-   "e": 2.16
+   "w": "go",
+   "s": 2.76,
+   "e": 2.8
   },
   {
-   "w": "plena",
-   "s": 2.2,
-   "e": 2.4
+   "w": "jego",
+   "s": 2.88,
+   "e": 3.12
   },
   {
-   "w": "tormenta",
-   "s": 2.48,
-   "e": 2.96
+   "w": "fanka",
+   "s": 3.16,
+   "e": 3.44
   },
   {
-   "w": "de",
-   "s": 3.0,
-   "e": 3.04
-  },
-  {
-   "w": "nieve",
-   "s": 3.12,
+   "w": "numer",
+   "s": 3.56,
    "e": 3.68
   },
   {
-   "w": "y",
+   "w": "jeden,",
    "s": 3.76,
-   "e": 3.8
+   "e": 4.16
   },
   {
-   "w": "lo",
-   "s": 3.84,
-   "e": 3.92
+   "w": "która",
+   "s": 4.2,
+   "e": 4.48
   },
   {
-   "w": "rescata",
-   "s": 4.04,
-   "e": 4.4
+   "w": "wcale",
+   "s": 4.56,
+   "e": 4.88
   },
   {
-   "w": "su",
-   "s": 4.48,
-   "e": 4.56
+   "w": "nie",
+   "s": 4.96,
+   "e": 5.04
   },
   {
-   "w": "admiradora",
-   "s": 4.64,
-   "e": 5.2
+   "w": "zamierza",
+   "s": 5.08,
+   "e": 5.44
   },
   {
-   "w": "número",
-   "s": 5.28,
-   "e": 5.68
+   "w": "go",
+   "s": 5.48,
+   "e": 5.52
   },
   {
-   "w": "uno.",
-   "s": 5.76,
-   "e": 6.6
+   "w": "wypuścić.",
+   "s": 5.6,
+   "e": 6.747
   },
   {
-   "w": "El",
-   "s": 6.64,
-   "e": 6.72
+   "w": "Po",
+   "s": 6.773,
+   "e": 6.8
   },
   {
-   "w": "problema",
-   "s": 6.8,
+   "w": "polsku",
+   "s": 6.88,
    "e": 7.2
   },
   {
-   "w": "es",
+   "w": "czyta",
    "s": 7.28,
-   "e": 7.36
-  },
-  {
-   "w": "que",
-   "s": 7.44,
    "e": 7.6
   },
   {
-   "w": "no",
-   "s": 7.68,
-   "e": 7.76
+   "w": "Krzysztof",
+   "s": 7.627,
+   "e": 8.0
   },
   {
-   "w": "piensa",
-   "s": 7.84,
-   "e": 8.16
+   "w": "Plewako-Szczerbiński:",
+   "s": 8.08,
+   "e": 9.44
   },
   {
-   "w": "dejarlo",
-   "s": 8.24,
-   "e": 8.64
+   "w": "nieco",
+   "s": 9.52,
+   "e": 9.68
   },
   {
-   "w": "marchar.",
-   "s": 8.68,
-   "e": 9.6
+   "w": "ponad",
+   "s": 9.76,
+   "e": 10.08
   },
   {
-   "w": "Dos",
-   "s": 9.68,
-   "e": 9.84
+   "w": "piętnaście",
+   "s": 10.16,
+   "e": 10.56
   },
   {
-   "w": "personajes,",
-   "s": 9.92,
-   "e": 10.92
-  },
-  {
-   "w": "una",
-   "s": 10.96,
-   "e": 11.12
-  },
-  {
-   "w": "casa",
-   "s": 11.16,
-   "e": 11.76
-  },
-  {
-   "w": "y",
-   "s": 11.84,
-   "e": 11.88
-  },
-  {
-   "w": "una",
-   "s": 11.92,
-   "e": 12.08
-  },
-  {
-   "w": "tensión",
-   "s": 12.12,
-   "e": 12.56
-  },
-  {
-   "w": "que",
-   "s": 12.64,
-   "e": 12.72
-  },
-  {
-   "w": "no",
-   "s": 12.76,
-   "e": 12.8
-  },
-  {
-   "w": "afloja",
-   "s": 12.96,
-   "e": 13.28
-  },
-  {
-   "w": "en",
-   "s": 13.36,
-   "e": 13.44
-  },
-  {
-   "w": "ningún",
-   "s": 13.6,
-   "e": 13.84
-  },
-  {
-   "w": "momento.",
-   "s": 13.92,
-   "e": 14.84
-  },
-  {
-   "w": "Su",
-   "s": 14.88,
-   "e": 14.96
-  },
-  {
-   "w": "audiolibro",
-   "s": 15.08,
-   "e": 15.52
-  },
-  {
-   "w": "dura",
-   "s": 15.6,
-   "e": 15.84
-  },
-  {
-   "w": "unas",
-   "s": 16.0,
-   "e": 16.16
-  },
-  {
-   "w": "catorce",
-   "s": 16.24,
-   "e": 16.8
-  },
-  {
-   "w": "horas.",
-   "s": 16.88,
-   "e": 18.08
+   "w": "godzin.",
+   "s": 10.64,
+   "e": 11.209
   }
  ],
- "speechEnd": 17.28
+ "trimmed": "d3955bd4d5d0",
+ "speechEnd": 11.049
 }

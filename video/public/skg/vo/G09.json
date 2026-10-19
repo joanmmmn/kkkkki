@@ -1,159 +1,135 @@
 {
  "id": "G09",
- "hash": "b79892ff1e31",
- "text": "Mucha gente cree que King solo escribe terror. Y es el rey del género, eso nadie lo discute. Pero su obra se parece más a un mapa con varios territorios.",
- "duration": 10.48,
+ "hash": "800fa7880c6e",
+ "text": "Wielu ludzi myśli, że King pisze tylko horrory. I jest królem gatunku, tego nikt nie podważa. Ale jego twórczość przypomina raczej mapę z kilkoma krainami.",
+ "duration": 9.875,
  "words": [
   {
-   "w": "Mucha",
+   "w": "Wielu",
    "s": 0.0,
-   "e": 0.28
+   "e": 0.32
   },
   {
-   "w": "gente",
-   "s": 0.32,
-   "e": 0.72
+   "w": "ludzi",
+   "s": 0.36,
+   "e": 0.64
   },
   {
-   "w": "cree",
-   "s": 0.8,
-   "e": 0.96
-  },
-  {
-   "w": "que",
-   "s": 1.04,
+   "w": "myśli,",
+   "s": 0.72,
    "e": 1.12
   },
   {
+   "w": "że",
+   "s": 1.24,
+   "e": 1.36
+  },
+  {
    "w": "King",
-   "s": 1.2,
-   "e": 1.6
+   "s": 1.52,
+   "e": 1.68
   },
   {
-   "w": "solo",
-   "s": 1.68,
-   "e": 1.92
+   "w": "pisze",
+   "s": 1.76,
+   "e": 2.0
   },
   {
-   "w": "escribe",
-   "s": 2.0,
+   "w": "tylko",
+   "s": 2.08,
    "e": 2.32
   },
   {
-   "w": "terror.",
+   "w": "horrory.",
    "s": 2.4,
-   "e": 3.32
+   "e": 3.28
   },
   {
-   "w": "Y",
+   "w": "I",
    "s": 3.36,
-   "e": 3.44
+   "e": 3.4
   },
   {
-   "w": "es",
-   "s": 3.52,
-   "e": 3.6
+   "w": "jest",
+   "s": 3.44,
+   "e": 3.68
   },
   {
-   "w": "el",
-   "s": 3.68,
-   "e": 3.76
-  },
-  {
-   "w": "rey",
-   "s": 3.84,
+   "w": "królem",
+   "s": 3.72,
    "e": 4.0
   },
   {
-   "w": "del",
-   "s": 4.08,
-   "e": 4.16
+   "w": "gatunku,",
+   "s": 4.04,
+   "e": 4.693
   },
   {
-   "w": "género,",
-   "s": 4.24,
-   "e": 4.84
+   "w": "tego",
+   "s": 4.747,
+   "e": 4.88
   },
   {
-   "w": "eso",
-   "s": 4.88,
+   "w": "nikt",
+   "s": 4.96,
    "e": 5.12
   },
   {
-   "w": "nadie",
+   "w": "nie",
    "s": 5.2,
-   "e": 5.52
+   "e": 5.28
   },
   {
-   "w": "lo",
-   "s": 5.56,
-   "e": 5.6
+   "w": "podważa.",
+   "s": 5.36,
+   "e": 6.2
   },
   {
-   "w": "discute.",
-   "s": 5.72,
-   "e": 6.6
+   "w": "Ale",
+   "s": 6.24,
+   "e": 6.48
   },
   {
-   "w": "Pero",
-   "s": 6.64,
+   "w": "jego",
+   "s": 6.52,
    "e": 6.72
   },
   {
-   "w": "su",
+   "w": "twórczość",
    "s": 6.8,
-   "e": 6.88
-  },
-  {
-   "w": "obra",
-   "s": 6.96,
-   "e": 7.2
-  },
-  {
-   "w": "se",
-   "s": 7.28,
    "e": 7.36
   },
   {
-   "w": "parece",
-   "s": 7.48,
-   "e": 7.68
+   "w": "przypomina",
+   "s": 7.413,
+   "e": 7.76
   },
   {
-   "w": "más",
-   "s": 7.72,
-   "e": 7.92
+   "w": "raczej",
+   "s": 7.84,
+   "e": 8.24
   },
   {
-   "w": "a",
-   "s": 8.0,
-   "e": 8.053
-  },
-  {
-   "w": "un",
-   "s": 8.107,
-   "e": 8.16
-  },
-  {
-   "w": "mapa",
-   "s": 8.24,
+   "w": "mapę",
+   "s": 8.36,
    "e": 8.56
   },
   {
-   "w": "con",
-   "s": 8.68,
-   "e": 8.8
+   "w": "z",
+   "s": 8.64,
+   "e": 8.667
   },
   {
-   "w": "varios",
-   "s": 8.88,
-   "e": 9.12
+   "w": "kilkoma",
+   "s": 8.693,
+   "e": 9.04
   },
   {
-   "w": "territorios.",
-   "s": 9.2,
-   "e": 10.48
+   "w": "krainami.",
+   "s": 9.12,
+   "e": 9.875
   }
  ],
- "speechEnd": 9.955
+ "trimmed": "800fa7880c6e",
+ "speechEnd": 9.715
 }

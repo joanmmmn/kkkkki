@@ -1,124 +1,115 @@
 {
  "id": "G39",
- "hash": "9ca41a8fc930",
- "text": "Si quieres crimen: la trilogía de Bill Hodges, El visitante y Holly. Y al final del camino, para los valientes, La Torre Oscura.",
- "duration": 9.76,
+ "hash": "756e47835b6c",
+ "text": "Jeśli wciąga cię kryminał: „Pan Mercedes”, „Znalezione nie kradzione”, „Koniec warty”, „Outsider” i „Holly”. A na końcu drogi czeka „Mroczna Wieża”.",
+ "duration": 9.452,
  "words": [
   {
-   "w": "Si",
+   "w": "Jeśli",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.24
   },
   {
-   "w": "quieres",
-   "s": 0.24,
-   "e": 0.56
+   "w": "wciąga",
+   "s": 0.32,
+   "e": 0.64
   },
   {
-   "w": "crimen:",
-   "s": 0.64,
-   "e": 1.44
+   "w": "cię",
+   "s": 0.68,
+   "e": 0.8
   },
   {
-   "w": "la",
-   "s": 1.48,
-   "e": 1.52
+   "w": "kryminał:",
+   "s": 0.84,
+   "e": 1.76
   },
   {
-   "w": "trilogía",
-   "s": 1.6,
-   "e": 2.16
+   "w": "„Pan",
+   "s": 1.84,
+   "e": 1.92
   },
   {
-   "w": "de",
-   "s": 2.24,
-   "e": 2.32
+   "w": "Mercedes”,",
+   "s": 2.0,
+   "e": 2.72
   },
   {
-   "w": "Bill",
-   "s": 2.36,
-   "e": 2.56
+   "w": "„Znalezione",
+   "s": 2.8,
+   "e": 3.28
   },
   {
-   "w": "Hodges,",
-   "s": 2.64,
+   "w": "nie",
+   "s": 3.36,
    "e": 3.44
   },
   {
-   "w": "El",
-   "s": 3.52,
-   "e": 3.6
+   "w": "kradzione”,",
+   "s": 3.48,
+   "e": 4.16
   },
   {
-   "w": "visitante",
-   "s": 3.68,
+   "w": "„Koniec",
+   "s": 4.24,
    "e": 4.56
   },
   {
-   "w": "y",
-   "s": 4.6,
-   "e": 4.64
+   "w": "warty”,",
+   "s": 4.693,
+   "e": 5.2
   },
   {
-   "w": "Holly.",
-   "s": 4.8,
-   "e": 5.52
+   "w": "„Outsider”",
+   "s": 5.24,
+   "e": 6.0
   },
   {
-   "w": "Y",
-   "s": 5.56,
-   "e": 5.6
+   "w": "i",
+   "s": 6.08,
+   "e": 6.16
   },
   {
-   "w": "al",
-   "s": 5.68,
-   "e": 5.76
+   "w": "„Holly”.",
+   "s": 6.24,
+   "e": 7.04
   },
   {
-   "w": "final",
-   "s": 5.84,
-   "e": 6.08
-  },
-  {
-   "w": "del",
-   "s": 6.16,
-   "e": 6.24
-  },
-  {
-   "w": "camino,",
-   "s": 6.32,
-   "e": 6.96
-  },
-  {
-   "w": "para",
-   "s": 7.04,
+   "w": "A",
+   "s": 7.08,
    "e": 7.12
   },
   {
-   "w": "los",
+   "w": "na",
    "s": 7.2,
    "e": 7.28
   },
   {
-   "w": "valientes,",
-   "s": 7.36,
-   "e": 8.32
+   "w": "końcu",
+   "s": 7.4,
+   "e": 7.6
   },
   {
-   "w": "La",
-   "s": 8.4,
-   "e": 8.48
+   "w": "drogi",
+   "s": 7.72,
+   "e": 8.08
   },
   {
-   "w": "Torre",
-   "s": 8.6,
+   "w": "czeka",
+   "s": 8.12,
+   "e": 8.4
+  },
+  {
+   "w": "„Mroczna",
+   "s": 8.44,
    "e": 8.8
   },
   {
-   "w": "Oscura.",
+   "w": "Wieża”.",
    "s": 8.88,
-   "e": 9.76
+   "e": 9.452
   }
  ],
- "speechEnd": 9.438
+ "trimmed": "756e47835b6c",
+ "speechEnd": 9.292
 }

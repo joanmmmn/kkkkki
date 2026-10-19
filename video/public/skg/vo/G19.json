@@ -1,59 +1,85 @@
 {
  "id": "G19",
- "hash": "a50c955f3edb",
- "text": "Si el terror no es lo tuyo: La milla verde.",
- "duration": 3.52,
+ "hash": "fb36c8ca4613",
+ "text": "Trzecie: „Zielona mila”, z 1996 roku. Jeśli horror to nie twoja bajka.",
+ "duration": 7.052,
  "words": [
   {
-   "w": "Si",
+   "w": "Trzecie:",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.88
   },
   {
-   "w": "el",
-   "s": 0.2,
-   "e": 0.24
-  },
-  {
-   "w": "terror",
-   "s": 0.32,
-   "e": 0.72
-  },
-  {
-   "w": "no",
-   "s": 0.88,
-   "e": 0.96
-  },
-  {
-   "w": "es",
-   "s": 1.04,
-   "e": 1.12
-  },
-  {
-   "w": "lo",
-   "s": 1.2,
+   "w": "Zielona",
+   "s": 0.96,
    "e": 1.28
   },
   {
-   "w": "tuyo:",
+   "w": "mila,",
    "s": 1.36,
-   "e": 2.24
+   "e": 1.92
   },
   {
-   "w": "La",
-   "s": 2.32,
+   "w": "z",
+   "s": 1.96,
+   "e": 2.0
+  },
+  {
+   "w": "tysiąc",
+   "s": 2.04,
    "e": 2.4
   },
   {
-   "w": "milla",
+   "w": "dziewięćset",
    "s": 2.48,
-   "e": 2.8
+   "e": 2.96
   },
   {
-   "w": "verde.",
-   "s": 2.88,
-   "e": 3.52
+   "w": "dziewięćdziesiątego",
+   "s": 3.0,
+   "e": 3.68
+  },
+  {
+   "w": "szóstego",
+   "s": 3.76,
+   "e": 4.08
+  },
+  {
+   "w": "roku.",
+   "s": 4.16,
+   "e": 4.853
+  },
+  {
+   "w": "Jeśli",
+   "s": 4.907,
+   "e": 5.12
+  },
+  {
+   "w": "horror",
+   "s": 5.2,
+   "e": 5.68
+  },
+  {
+   "w": "to",
+   "s": 5.76,
+   "e": 5.84
+  },
+  {
+   "w": "nie",
+   "s": 5.92,
+   "e": 6.08
+  },
+  {
+   "w": "twoja",
+   "s": 6.16,
+   "e": 6.4
+  },
+  {
+   "w": "bajka.",
+   "s": 6.44,
+   "e": 7.052
   }
  ],
- "speechEnd": 3.373
+ "trimmed": "fb36c8ca4613",
+ "speechEnd": 6.884
 }

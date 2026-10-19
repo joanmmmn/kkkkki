@@ -15,7 +15,7 @@ import { Book, bookGeo, bookMaterials, plateTex, sheetTex, ShelfBook, woodTex } 
 import { camAt, CamKey, easeO, handheld, hash, lerp, ramp01, rng, useFontsReady, V3, AUDIO_ONLY } from './lib3d';
 
 // ————————————————————————————————————————————————————————————————
-// HOOK en 3D: la biblioteca de Stephen King se llena (las 64 novelas en orden de publicación), caen los relatos,
+// HOOK en 3D: la biblioteca de Stephen King se llena (las 64 novelas, títulos polacos, en orden de publicación), caen los relatos,
 // unas placas de latón marcan los años de 1974 a hoy y la cámara se aleja para la pregunta.
 // ————————————————————————————————————————————————————————————————
 
@@ -25,11 +25,11 @@ export const CLOTHS: { c: string; foil: ShelfBook['foil'] }[] = [
   { c: '#1E2433', foil: 'silver' }, { c: '#C9BFA9', foil: 'red' }, { c: '#7D1F14', foil: 'cream' }, { c: '#111214', foil: 'gold' },
 ];
 const THICK: Record<string, number> = {
-  It: 6.4, Apocalipsis: 6.2, 'La cúpula': 6.0, '22/11/63': 5.4, Insomnia: 5.0, 'Los Tommyknockers': 4.9, 'La Torre Oscura': 5.2, 'Mago y cristal': 4.8,
-  'Lobos del Calla': 4.9, 'Cuento de hadas': 4.6, 'El Instituto': 4.2, 'La historia de Lisey': 4.4, 'Duma Key': 4.4, 'Desesperación': 4.2, Holly: 3.9,
-  Christine: 4.3, 'El talismán': 4.6, 'Casa Negra': 4.6, Cell: 3.4, 'Billy Summers': 3.9, 'Fin de guardia': 3.5, 'Doctor Sueño': 4.1, Carrie: 2.4,
-  Rabia: 2.1, 'Los ojos del dragón': 3.0, 'El ciclo del hombre lobo': 1.9, 'Colorado Kid': 1.9, 'Elevación': 1.8, Joyland: 2.6, Blaze: 2.8,
-  'La larga marcha': 2.9, 'El fugitivo': 2.6, 'El pistolero': 2.6, 'Después': 2.5, 'No tengas miedo': 4.0, 'Cementerio de animales': 3.9, Misery: 3.4,
+  To: 6.4, Bastion: 6.2, 'Pod kopułą': 6.0, 'Dallas ’63': 5.4, Bezsenność: 5.0, Stukostrachy: 4.9, 'Mroczna Wieża': 5.2, 'Czarnoksiężnik i kryształ': 4.8,
+  'Wilki z Calla': 4.9, 'Baśniowa opowieść': 4.6, Instytut: 4.2, 'Historia Lisey': 4.4, 'Ręka mistrza': 4.4, Desperacja: 4.2, Holly: 3.9,
+  Christine: 4.3, Talizman: 4.6, 'Czarny dom': 4.6, Komórka: 3.4, 'Billy Summers': 3.9, 'Koniec warty': 3.5, 'Doktor Sen': 4.1, Carrie: 2.4,
+  Rage: 2.1, 'Oczy smoka': 3.0, 'Rok wilkołaka': 1.9, 'Colorado Kid': 1.9, Uniesienie: 1.8, Joyland: 2.6, Blaze: 2.8,
+  'Wielki marsz': 2.9, Uciekinier: 2.6, Roland: 2.6, 'Później': 2.5, 'Nie wymiękaj': 4.0, 'Smętarz dla zwierzaków': 3.9, Misery: 3.4,
 };
 
 export const ROW_Y = [20, -12, -44]; // cara superior de cada balda
@@ -268,23 +268,24 @@ const HookScene: React.FC<{ fNov: number; fRel: number; fSig: number; fQ: number
 };
 
 const QUESTIONS: { t: string; x: number; y: number; d: number; r: number }[] = [
-  { t: '¿It o El resplandor?', x: 540, y: 280, d: 0.98, r: -3 },
-  { t: '¿Hay que leerlo en orden?', x: 1390, y: 250, d: 1.03, r: 2.5 },
-  { t: '¿Cuál da más miedo?', x: 1300, y: 575, d: 0.96, r: -2 },
-  { t: '¿Y si no me gusta el terror?', x: 610, y: 735, d: 1.04, r: 3 },
-  { t: '¿Por cuál empiezo?', x: 1400, y: 860, d: 1, r: -1.5 },
+  { t: '„To” czy „Lśnienie”?', x: 540, y: 280, d: 0.98, r: -3 },
+  { t: 'Czytać po kolei?', x: 1390, y: 250, d: 1.03, r: 2.5 },
+  { t: 'Która jest najstraszniejsza?', x: 1300, y: 575, d: 0.96, r: -2 },
+  { t: 'A jeśli nie lubię horrorów?', x: 610, y: 735, d: 1.04, r: 3 },
+  { t: 'Którą wybrać na start?', x: 1400, y: 860, d: 1, r: -1.5 },
 ];
 
 export const Hook3D: React.FC = () => {
   const frame = useCurrentFrame();
   const ready = useFontsReady();
   const c = sceneClock('HOOK');
-  const fNov = c.at('G01', 'sesenta');
-  const fRel = c.at('G01', 'doscientos');
-  const fSig = c.at('G01', 'Medio');
+  const fNov = c.at('G01', 'sześćdziesiąt');
+  const fRel = c.at('G01', 'dwieście');
+  const fSig = c.at('G01', 'Pół');
   const fQ = c.part('G02');
-  const fPor = c.at('G02', 'por');
-  const fKing = c.at('G02', 'Stephen');
+  const fPor = c.at('G02', 'od');
+  // «od czego zacząć Kinga?»: el nombre es la última palabra, así que la segunda línea entra con «zacząć».
+  const fKing = c.at('G02', 'zacząć');
   const ySweep: [number, number] = [fSig - 2, fSig + 72];
   const dim = BENCH.bare ? 0 : ramp01(frame, fPor - 14, fPor + 16);
   const statIn = (a: number) => interpolate(frame, [a - 2, a + 14], [0, 1], { ...clamp, easing: easeOut });
@@ -295,9 +296,9 @@ export const Hook3D: React.FC = () => {
   const count = (a: number, n: number) => Math.round(interpolate(frame, [a - 2, a + 20], [0, n], { ...clamp, easing: easeOut }));
   const year = Math.round(lerp(1974, 2026, ramp01(frame, ySweep[0], ySweep[1], (t) => 1 - Math.pow(1 - t, 2))));
   const stats = [
-    { o: s1, big: `+${count(fNov, 60)}`, small: 'novelas' },
-    { o: s2, big: `+${count(fRel, 200)}`, small: 'relatos' },
-    { o: s3, big: `+${count(fSig, 50)}`, small: 'años escribiendo', sub: `1974 → ${year}` },
+    { o: s1, big: `${count(fNov, 60)}+`, small: 'powieści' },
+    { o: s2, big: `${count(fRel, 200)}+`, small: 'opowiadań' },
+    { o: s3, big: `${count(fSig, 50)}`, small: 'lat pisania', sub: `1974 → ${year}` },
   ];
   return (
     <AbsoluteFill style={{ background: '#0B0C0E' }}>
@@ -352,8 +353,8 @@ export const Hook3D: React.FC = () => {
       {/* La pregunta */}
       {frame >= fPor - 6 && (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-          <MaskTitle text="¿Por dónde empiezo" at={fPor - 2} size={136} align="center" color="#fff" style={{ textShadow: '0 12px 50px rgba(0,0,0,0.55)' }} />
-          <MaskTitle text="con Stephen King?" at={fKing - 8} size={136} align="center" color={color.yellow} style={{ marginTop: -6, textShadow: '0 12px 50px rgba(0,0,0,0.55)' }} />
+          <MaskTitle text="Od czego zacząć" at={fPor - 2} size={136} align="center" color="#fff" style={{ textShadow: '0 12px 50px rgba(0,0,0,0.55)' }} />
+          <MaskTitle text="Stephena Kinga?" at={fKing - 8} size={136} align="center" color={color.yellow} style={{ marginTop: -6, textShadow: '0 12px 50px rgba(0,0,0,0.55)' }} />
           <div style={{ marginTop: 34, width: 520 * ramp01(frame, fKing + 6, fKing + 34, easeO), height: 6, borderRadius: 3, background: KR }} />
         </AbsoluteFill>
       )}

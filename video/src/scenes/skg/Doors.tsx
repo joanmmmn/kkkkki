@@ -44,11 +44,18 @@ const Person: React.FC<{ h: number; c?: string; kid?: boolean; big?: boolean }> 
 
 // ———————————————— Puerta y tarjeta del libro ————————————————
 
+type FactDef = { icon: 'clock' | 'mic' | 'star'; label: string; sub?: string; at: number };
 type DoorCfg = {
   sceneId: string; n: number; book: string; kicker: string; headline: string; voA: string; voB: string; titleWord: string; fear: 0 | 1 | 2 | 3; fearLabel: string;
   cStart: (c: Clock) => number; hoursAt: (c: Clock) => number; quote?: { text: string; at: (c: Clock) => number };
+  // Versión polaca: el género se dice después del título («Pierwsze wejście: Lśnienie, z 1977 roku. Klasyczny horror.»),
+  // así que el antetítulo entra con esa palabra; y cada puerta lleva sus datos (lector, duración…) en el orden en que se dicen.
+  kickerAt?: (c: Clock) => number; facts?: (c: Clock) => FactDef[];
   Vignette: React.FC<{ c: Clock; from: number; to: number }>;
 };
+const FactIcon: React.FC<{ k: FactDef['icon'] }> = ({ k }) => (k === 'star'
+  ? <svg width={30} height={30} viewBox="0 0 24 24"><path d="m12 3.2 2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.8l-5.4 2.9 1.2-6-4.5-4.2 6.1-.7z" fill={color.ink} /></svg>
+  : <MiniIcon kind={k} size={30} />);
 
 const DoorCard: React.FC<{ cfg: DoorCfg; c: Clock; mode: 'intro' | 'facts'; from: number }> = ({ cfg, c, mode, from }) => {
   const frame = useCurrentFrame();
@@ -89,20 +96,23 @@ const DoorCard: React.FC<{ cfg: DoorCfg; c: Clock; mode: 'intro' | 'facts'; from
       </div>
       {/* Texto */}
       <div style={{ position: 'absolute', left: 980, top: 0, height: 1080, width: 860, display: 'flex', flexDirection: 'column', justifyContent: 'center', transform: `translateX(${tx}px)` }}>
-        <Kicker at={intro ? fTitle - 4 : from + 2} text={`Puerta ${cfg.n} · ${cfg.kicker}`} />
+        <Kicker at={intro ? (cfg.kickerAt ? cfg.kickerAt(c) : fTitle - 4) : from + 2} text={`Wejście ${cfg.n} · ${cfg.kicker}`} />
         <div style={{ position: 'relative' }}>
           {intro && frame < fTitle + 6 && (
             <div style={{ position: 'absolute', left: 0, bottom: 0 }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, letterSpacing: 5, color: color.muted, textTransform: 'uppercase', marginBottom: 14, opacity: rampOut(frame, 4, 16) * (1 - ramp(frame, fTitle - 12, fTitle - 2)) }}>Puerta {cfg.n}</div>
-              <MaskTitle text={cfg.headline} at={6} size={84} out={fTitle - 6} />
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, letterSpacing: 5, color: color.muted, textTransform: 'uppercase', marginBottom: 14, opacity: rampOut(frame, 4, 16) * (1 - ramp(frame, fTitle - 12, fTitle - 2)) }}>Pięć wejść</div>
+              {/* En polaco el título llega enseguida («Drugie: Misery…»): sin tiempo para leer el antetítulo, no se muestra. */}
+              {fTitle > 50 && <MaskTitle text={cfg.headline} at={6} size={84} out={fTitle - 6} />}
             </div>
           )}
           <MaskTitle text={b.title} at={intro ? fTitle - 4 : from + 4} size={b.title.length > 12 ? 104 : 128} />
         </div>
         <div style={{ display: 'flex', gap: 16, marginTop: 34, flexWrap: 'wrap' }}>
           <Fact at={intro ? fTitle + 14 : from + 10} icon={<MiniIcon kind="cal" size={30} />} label={String(b.year)} size={38} />
-          {!intro && <Fact at={hoursAt} icon={<MiniIcon kind="clock" size={30} />} label={b.hours ?? ''} sub="audiolibro en español" size={38} />}
-          {!intro && <Fact at={hoursAt + 8} icon={<MiniIcon kind="mic" size={30} />} label={b.narrator ?? ''} sub="narrador" size={38} />}
+          {!intro && (cfg.facts ? cfg.facts(c) : [
+            { icon: 'clock', label: b.hours ?? '', sub: 'audiobook po polsku', at: hoursAt },
+            { icon: 'mic', label: b.narrator ?? '', sub: 'lektor', at: hoursAt + 8 },
+          ] as FactDef[]).map((fd, i) => <Fact key={i} at={Math.max(from + 10, fd.at)} icon={<FactIcon k={fd.icon} />} label={fd.label} sub={fd.sub} size={38} />)}
         </div>
         {!intro && (
           <div style={{ marginTop: 34, opacity: rampOut(frame, from + 14, from + 28) }}>
@@ -159,8 +169,7 @@ const DoorScene: React.FC<{ cfg: DoorCfg }> = ({ cfg }) => {
       <Sfx name="shimmer" at={fTitle - 2} volume={0.5} />
       <Sfx name="whoosh_deep" at={fB - 4} volume={0.6} />
       <Sfx name="whoosh_soft" at={fC - 8} volume={0.55} />
-      <Sfx name="ui_pop" at={cfg.hoursAt(c) + 1} volume={0.6} />
-      <Sfx name="ui_pop" at={cfg.hoursAt(c) + 9} volume={0.5} />
+      {(cfg.facts ? cfg.facts(c).map((fd) => Math.max(fC + 10, fd.at)) : [cfg.hoursAt(c), cfg.hoursAt(c) + 8]).map((a, i) => <Sfx key={`fp${i}`} name="ui_pop" at={a + 1} volume={0.6 - i * 0.05} />)}
       {Array.from({ length: cfg.fear }).map((_, i) => <Sfx key={i} name="tick_soft" at={fC + 18 + i * 5} volume={0.6} />)}
     </AbsoluteFill>
   );
@@ -171,13 +180,13 @@ const DoorScene: React.FC<{ cfg: DoorCfg }> = ({ cfg }) => {
 // 1 · El resplandor: un hotel enorme en la montaña, nieve, una familia; las ventanas se apagan y una queda roja.
 const VShining: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const frame = useCurrentFrame();
-  const fHotel = c.at('G15', 'hotel');
-  const fNieve = c.at('G15', 'nieve');
-  const fInv = c.at('G15', 'invierno');
-  const fMujer = c.at('G15', 'mujer');
-  const fHijo = c.at('G15', 'hijo');
+  const fHotel = c.at('G15', 'hotelu');
+  const fNieve = c.at('G15', 'śnieg');
+  const fInv = c.at('G15', 'zimę');
+  const fMujer = c.at('G15', 'żoną');
+  const fHijo = c.at('G15', 'synem');
   const fPlanes = c.at('G15', 'hotel', 1);
-  const fOtros = c.at('G15', 'otros');
+  const fOtros = c.at('G15', 'inne');
   const snow = 0.4 + 0.6 * ramp(frame, fNieve - 6, fNieve + 30);
   const dark = ramp(frame, fPlanes - 6, fOtros + 6);
   const rows = 4, cols = 13;
@@ -224,7 +233,7 @@ const VShining: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
         <Snow n={220} wind={1.4} speed={1 + snow} opacity={snow} seed="shining" />
       </Cam>
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 60% 50%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%)', opacity: 0.5 + 0.5 * dark }} />
-      <StoryChips items={[{ label: 'Un hotel aislado', at: fHotel }, { label: 'Nieve', at: fNieve }, { label: 'Todo el invierno', at: fInv }, { label: 'Su mujer y su hijo', at: fMujer }, { label: 'El hotel tiene otros planes', at: fOtros, red: true }]} />
+      <StoryChips items={[{ label: 'Cała zima', at: fInv }, { label: 'Hotel odcięty przez śnieg', at: fHotel }, { label: 'Żona i syn', at: fMujer }, { label: 'Hotel ma inne plany', at: fOtros, red: true }]} />
       <Sfx name="sk_wind" at={c.part('G15') - 4} volume={1} dur={c.voEnd('G15') - c.part('G15') + 30} fade={30} />
       <Sfx name="sk_snow" at={fMujer} volume={0.6} />
       <Sfx name="bass_drop" at={fOtros + 2} volume={0.6} />
@@ -236,15 +245,15 @@ const VShining: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 // 2 · Misery: coche en la tormenta, una luz que se acerca, una casa con la puerta cerrada y la tensión que sube.
 const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const frame = useCurrentFrame();
-  const fEstr = c.at('G18', 'estrella');
-  const fTorm = c.at('G18', 'tormenta');
-  const fResc = c.at('G18', 'rescata');
-  const fNum = c.at('G18', 'número');
-  const fProb = c.at('G18', 'problema');
-  const fMarchar = c.at('G18', 'marchar');
-  const fDos = c.at('G18', 'Dos');
-  const fCasa = c.at('G18', 'casa');
-  const fTens = c.at('G18', 'tensión');
+  const fEstr = c.at('G18', 'wypadek');
+  const fTorm = c.at('G18', 'śnieżycy');
+  const fResc = c.at('G18', 'Ratuje');
+  const fNum = c.at('G18', 'numer');
+  const fProb = c.at('G18', 'która');
+  const fMarchar = c.at('G18', 'wypuścić');
+  const fDos = fMarchar + 10;
+  const fCasa = fProb + 16;
+  const fTens = fMarchar;
   const toHouse = ramp(frame, fProb - 8, fProb + 2);
   const crash = ramp(frame, fEstr + 6, fEstr + 22, easeOut);
   const lantern = ramp(frame, fResc - 10, fResc + 20);
@@ -276,7 +285,7 @@ const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
             <div style={{ position: 'absolute', left: -160, top: -160, width: 360, height: 360, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,200,90,0.55), rgba(255,200,90,0) 65%)' }} />
             <Person h={180} c="#0B0D12" />
             <div style={{ position: 'absolute', left: 6, top: -70, opacity: rampOut(frame, fNum - 4, fNum + 10), transform: `scale(${sp(frame, fNum - 2, 10, 220)})` }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', background: KR, padding: '6px 16px', borderRadius: 999, whiteSpace: 'nowrap' }}>♥ Fan n.º 1</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', background: KR, padding: '6px 16px', borderRadius: 999, whiteSpace: 'nowrap' }}>♥ Fanka nr 1</div>
             </div>
           </div>
           <Snow n={260} wind={4.5} speed={1.8} opacity={0.95} seed="misery" />
@@ -311,7 +320,7 @@ const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
           <Snow n={120} wind={1.2} speed={0.8} opacity={0.8} seed="misery2" />
         </AbsoluteFill>
       )}
-      <StoryChips items={[{ label: 'Accidente en la nieve', at: fEstr }, { label: 'Su fan número uno', at: fNum }, { label: 'No lo deja marchar', at: fMarchar, red: true }, { label: 'Dos personajes, una casa', at: fDos }]} />
+      <StoryChips items={[{ label: 'Wypadek w śnieżycy', at: fEstr }, { label: 'Fanka numer jeden', at: fNum }, { label: 'Nie zamierza go wypuścić', at: fMarchar, red: true }]} />
       <Sfx name="sk_wind" at={c.part('G18') - 4} volume={1} dur={fProb - c.part('G18') + 20} fade={20} />
       <Sfx name="impact" at={fEstr + 12} volume={0.7} />
       <Sfx name="sk_snow" at={fResc} volume={0.8} />
@@ -327,15 +336,14 @@ const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 // 3 · La milla verde: el pasillo de suelo verde, 1932, un guardia y un preso enorme con un don; seis libritos.
 const VMilla: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const frame = useCurrentFrame();
-  const fCorr = c.at('G20', 'corredor');
-  const fAnio = c.at('G20', 'mil');
-  const fGuard = c.at('G20', 'guardia');
-  const fPreso = c.at('G20', 'preso');
-  const fDon = c.at('G20', 'don');
-  const fPub = c.at('G20', 'publicó');
-  const fSeis = c.at('G20', 'seis');
-  const fSerie = c.at('G20', 'serie');
-  const fEmo = c.at('G20', 'emotivo');
+  const fCorr = c.at('G20', 'Korytarz');
+  const fAnio = c.at('G20', 'tysiąc');
+  const fGuard = c.at('G20', 'Strażnik');
+  const fPreso = c.at('G20', 'więzień');
+  const fDon = c.at('G20', 'darem');
+  const fPub = c.at('G20', 'ukazała');
+  const fSeis = c.at('G20', 'sześciu');
+  const fSerie = c.at('G20', 'częściach');
   const booklets = ramp(frame, fPub - 10, fPub + 10);
   const glow = ramp(frame, fDon - 6, fDon + 24);
   return (
@@ -395,26 +403,22 @@ const VMilla: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
               return (
                 <div key={i} style={{ width: 170, height: 255, borderRadius: 6, background: '#2D5A3D', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', position: 'relative', opacity: s, transform: `translateY(${(1 - s) * 60}px) rotate(${(i - 2.5) * 3}deg)` }}>
                   <div style={{ position: 'absolute', inset: 10, border: '2px solid rgba(232,213,154,0.6)', borderRadius: 4 }} />
-                  <div style={{ position: 'absolute', left: 0, right: 0, top: 40, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 18, letterSpacing: 2, color: '#F2EEDC' }}>LA MILLA VERDE</div>
+                  <div style={{ position: 'absolute', left: 0, right: 0, top: 40, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 18, letterSpacing: 2, color: '#F2EEDC' }}>ZIELONA MILA</div>
                   <div style={{ position: 'absolute', left: 0, right: 0, top: 90, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 92, color: '#E8D59A' }}>{i + 1}</div>
                   <div style={{ position: 'absolute', left: 0, right: 0, bottom: 30, textAlign: 'center', fontFamily: font.serif, fontSize: 20, color: '#F2EEDC', opacity: 0.8 }}>1996</div>
                 </div>
               );
             })}
           </div>
-          <div style={{ marginTop: 60, fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: '#fff', opacity: rampOut(frame, fSerie - 4, fSerie + 10) }}>Por entregas, <span style={{ color: color.yellow }}>como una serie</span></div>
-          <div style={{ marginTop: 30, opacity: rampOut(frame, fEmo - 4, fEmo + 10), transform: `scale(${sp(frame, fEmo - 2, 9, 200)})` }}>
-            <svg width="80" height="80" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9.2-9.3C1.6 7.3 4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3 0 5.4 2.8 4.2 6.2C19.5 15.4 12 20 12 20z" fill={KR} /></svg>
-          </div>
+          <div style={{ marginTop: 60, fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: '#fff', opacity: rampOut(frame, fSerie - 10, fSerie + 6) }}>Wydana w <span style={{ color: color.yellow }}>sześciu częściach</span></div>
         </AbsoluteFill>
       )}
       <Dust n={40} />
-      {!booklets && <StoryChips items={[{ label: 'El corredor de la muerte', at: fCorr }, { label: 'Un guardia', at: fGuard }, { label: 'Un preso con un don', at: fPreso }]} />}
+      {!booklets && <StoryChips items={[{ label: 'Korytarz śmierci', at: fCorr }, { label: 'Strażnik', at: fGuard }, { label: 'Więzień z niezwykłym darem', at: fPreso }]} />}
       <Sfx name="stamp" at={fAnio + 2} volume={0.5} />
       <Sfx name="sk_snow" at={fGuard - 10} volume={0.25} />
       <Sfx name="shimmer" at={fDon} volume={0.6} />
       {Array.from({ length: 6 }).map((_, i) => <Sfx key={i} name="card_flip" at={fSeis - 6 + i * 4} volume={0.55} />)}
-      <Sfx name="sparkle" at={fEmo} volume={0.5} />
     </AbsoluteFill>
   );
 };
@@ -422,13 +426,13 @@ const VMilla: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 // 4 · 22/11/63: la puerta de la despensa, el salto a 1958 y el calendario hasta el 22 de noviembre de 1963.
 const V2263: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const frame = useCurrentFrame();
-  const fDesp = c.at('G22', 'despensa');
-  const fPas = c.at('G22', 'pasadizo');
-  const f58 = c.at('G22', 'mil');
-  const fAg = c.at('G22', 'aguantar');
-  const f22 = c.at('G22', 'veintidós');
-  const fImp = c.at('G22', 'impedir');
-  const fKen = c.at('G22', 'Kénedy');
+  const fDesp = c.at('G22', 'spiżarni');
+  const fPas = c.at('G22', 'prowadzi');
+  const f58 = c.at('G22', 'tysiąc');
+  const fAg = c.at('G22', 'Bohater');
+  const f22 = c.at('G22', 'dwudziestego');
+  const fImp = c.at('G22', 'zapobiec');
+  const fKen = c.at('G22', 'Kenediego');
   const open = ramp(frame, fPas - 6, fPas + 18);
   const year = Math.round(interpolate(frame, [fPas + 4, f58 + 30], [2011, 1958], { ...clamp, easing: easeInOut }));
   const toCal = ramp(frame, fAg - 14, fAg + 6);
@@ -447,7 +451,7 @@ const V2263: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
             <div style={{ position: 'absolute', left: 820, top: 230, width: 280, height: 480, perspective: 1400 }}>
               <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, rgba(255,240,200,${open}) 0%, rgba(255,200,120,${0.6 * open}) 40%, #120D09 80%)` }} />
               <div style={{ position: 'absolute', inset: 0, background: '#5A3F2A', transformOrigin: 'left center', transform: `rotateY(${-100 * open}deg)`, boxShadow: 'inset 0 0 0 10px #4A3222', backfaceVisibility: 'hidden' }}>
-                <div style={{ position: 'absolute', left: 30, right: 30, top: 40, height: 60, borderRadius: 6, background: '#F3E7D3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 2, color: '#5A3F2A' }}>DESPENSA</div>
+                <div style={{ position: 'absolute', left: 30, right: 30, top: 40, height: 60, borderRadius: 6, background: '#F3E7D3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 2, color: '#5A3F2A' }}>SPIŻARNIA</div>
                 <div style={{ position: 'absolute', right: 26, top: 250, width: 20, height: 20, borderRadius: '50%', background: '#D8A23F' }} />
               </div>
               <div style={{ position: 'absolute', left: -14, top: -14, right: -14, bottom: 0, border: '14px solid #3B2A1D', borderBottom: 'none', borderRadius: 4, opacity: 1, boxShadow: rampOut(frame, fDesp - 4, fDesp + 10) > 0 ? `0 0 0 ${6 * rampOut(frame, fDesp - 4, fDesp + 10)}px ${color.yellow}` : undefined }} />
@@ -461,7 +465,7 @@ const V2263: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
         <AbsoluteFill style={{ opacity: toCal, background: 'linear-gradient(180deg, #F3E7D3, #E3D1B5)', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ position: 'relative', width: 620, height: 640, borderRadius: 28, background: '#fff', boxShadow: shadow.card, overflow: 'hidden', transform: `rotate(${-2 + 2 * toCal}deg)` }}>
             <div style={{ height: 150, background: '#8C1C13', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: '#fff', letterSpacing: 4 }}>
-              {frame < f22 - 6 ? calY : 'NOVIEMBRE 1963'}
+              {frame < f22 - 6 ? calY : 'LISTOPAD 1963'}
             </div>
             <div style={{ position: 'absolute', left: 0, right: 0, top: 170, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 300, color: color.ink, lineHeight: 1 }}>
               {frame < f22 - 6 ? Math.max(1, Math.floor(((frame * 7) % 28) + 1)) : 22}
@@ -472,10 +476,10 @@ const V2263: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
               {circle > 0.01 && <ellipse cx="310" cy="320" rx="230" ry="190" stroke={KR} strokeWidth="12" fill="none" pathLength={1} strokeDasharray={`${circle} 1`} strokeLinecap="round" transform="rotate(-8 310 320)" />}
             </svg>
           </div>
-          <div style={{ marginTop: 50, fontFamily: font.sans, fontWeight: 700, fontSize: 54, color: color.ink, opacity: rampOut(frame, fImp - 4, fImp + 10) }}>Objetivo: <span style={{ color: KR }}>impedirlo</span></div>
+          <div style={{ marginTop: 50, fontFamily: font.sans, fontWeight: 700, fontSize: 54, color: color.ink, opacity: rampOut(frame, fImp - 4, fImp + 10) }}>Cel: <span style={{ color: KR }}>zapobiec zamachowi</span></div>
         </AbsoluteFill>
       )}
-      <StoryChips dark={toCal < 0.5} items={[{ label: 'Una despensa', at: fDesp }, { label: 'Un pasadizo a 1958', at: f58 }, { label: 'Hasta el 22/11/1963', at: f22, red: true }]} />
+      <StoryChips dark={toCal < 0.5} items={[{ label: 'Spiżarnia w barze', at: fDesp }, { label: 'Przejście do 1958 roku', at: f58 }, { label: 'Cel: 22.11.1963', at: f22, red: true }]} />
       <Sfx name="focus" at={fDesp} volume={0.6} />
       <Sfx name="sk_door" at={fPas - 6} volume={0.6} />
       <ChangeTicks value={(f) => String(Math.round(interpolate(f, [fPas + 4, f58 + 30], [2011, 1958], { ...clamp, easing: easeInOut })))} from={fPas + 4} to={f58 + 30} volume={0.5} />
@@ -491,13 +495,13 @@ const V2263: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 // 5 · Mr. Mercedes: la carta del asesino, los faros, el premio Edgar y la trilogía.
 const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const frame = useCurrentFrame();
-  const fPol = c.at('G24', 'policía');
-  const fCarta = c.at('G24', 'carta');
-  const fAses = c.at('G24', 'asesino');
-  const fNunca = c.at('G24', 'nunca');
-  const fGano = c.at('G24', 'Ganó');
-  const fEdgar = c.at('G24', 'Edgar');
-  const fTri = c.at('G24', 'trilogía');
+  const fPol = c.at('G24', 'policjant');
+  const fCarta = c.at('G24', 'list');
+  const fAses = c.at('G24', 'mordercy');
+  const fNunca = c.at('G24', 'nigdy');
+  const fGano = c.at('G24', 'zdobyła');
+  const fEdgar = c.at('G24', 'Edgara');
+  const fTri = c.at('G24', 'trylogię');
   const env = sp(frame, fCarta - 16, 16, 120);
   const openL = ramp(frame, fCarta + 4, fCarta + 20);
   const letter = ramp(frame, fCarta + 14, fAses + 10);
@@ -512,7 +516,7 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
           {/* placa de policía (genérica) */}
           <div style={{ position: 'absolute', left: 230, top: 330, opacity: rampOut(frame, fPol - 6, fPol + 8), transform: `rotate(-8deg) scale(${0.8 + 0.2 * sp(frame, fPol - 4, 12, 180)})` }}>
             <svg width="260" height="300" viewBox="0 0 26 30"><path d="M13 1 L24 5 V14 C24 21 19 26 13 29 C7 26 2 21 2 14 V5Z" fill="#C9A24A" stroke="#7A5A1A" strokeWidth="1" /><circle cx="13" cy="14" r="6" fill="#E9C873" stroke="#7A5A1A" strokeWidth="0.8" /><path d="M13 10.5l1 2.2 2.4.3-1.8 1.6.5 2.4L13 15.8l-2.1 1.2.5-2.4-1.8-1.6 2.4-.3z" fill="#7A5A1A" /></svg>
-            <div style={{ position: 'absolute', left: -20, right: -20, top: 250, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 4, color: '#fff', background: KR, borderRadius: 8, padding: '6px 0', transform: 'rotate(6deg)' }}>JUBILADO</div>
+            <div style={{ position: 'absolute', left: -20, right: -20, top: 250, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 4, color: '#fff', background: KR, borderRadius: 8, padding: '6px 0', transform: 'rotate(6deg)' }}>EMERYT</div>
           </div>
           {/* sobre */}
           <div style={{ position: 'absolute', left: 960 - 330, top: 470, width: 660, height: 420, transform: `translateY(${(1 - env) * 400}px) rotate(${(1 - env) * -10 - 2}deg)`, perspective: 1200 }}>
@@ -524,7 +528,7 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
             </div>
             <div style={{ position: 'absolute', inset: 0, background: '#E9E1CF', borderRadius: 10, boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }} />
             <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 240, transformOrigin: 'top center', transform: `rotateX(${180 * openL}deg)`, clipPath: 'polygon(0 0, 100% 0, 50% 100%)', background: '#D9CFB8' }} />
-            <div style={{ position: 'absolute', left: 230, top: 260, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#4A4030', opacity: 1 - openL }}>Det. Bill Hodges (jubilado)</div>
+            <div style={{ position: 'absolute', left: 230, top: 260, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#4A4030', opacity: 1 - openL }}>Det. Bill Hodges (emeryt)</div>
           </div>
         </Cam>
       </AbsoluteFill>
@@ -532,11 +536,11 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
         <AbsoluteFill style={{ opacity: toAward, alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <div style={{ opacity: 1 - tri, transform: `scale(${(0.8 + 0.2 * sp(frame, fEdgar - 6, 11, 160)) * (1 - 0.3 * tri)})`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div style={{ width: 440, height: 440, borderRadius: '50%', background: 'radial-gradient(circle at 35% 30%, #FFE28A, #D9A441 55%, #8A6420)', boxShadow: '0 30px 70px rgba(0,0,0,0.6), inset 0 0 0 14px rgba(255,255,255,0.25)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, letterSpacing: 6, color: '#4A3410' }}>PREMIO</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, letterSpacing: 6, color: '#4A3410' }}>NAGRODA</div>
               <div style={{ fontFamily: font.serif, fontSize: 124, color: '#3A2808', lineHeight: 1 }}>Edgar</div>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 38, color: '#4A3410', marginTop: 10 }}>2015</div>
             </div>
-            <div style={{ marginTop: 44, fontFamily: font.sans, fontWeight: 700, fontSize: 60, color: '#fff' }}>Mejor novela de misterio</div>
+            <div style={{ marginTop: 44, fontFamily: font.sans, fontWeight: 700, fontSize: 60, color: '#fff' }}>Najlepsza powieść</div>
           </div>
           {tri > 0 && (
             <div style={{ position: 'absolute', display: 'flex', gap: 60, opacity: tri, transform: `translateY(${(1 - tri) * 60}px)` }}>
@@ -548,10 +552,10 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
               ))}
             </div>
           )}
-          {tri > 0 && <div style={{ position: 'absolute', top: 90, fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: '#fff', opacity: tri }}>Trilogía de Bill Hodges</div>}
+          {tri > 0 && <div style={{ position: 'absolute', top: 90, fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: '#fff', opacity: tri }}>Trylogia o Billu Hodgesie</div>}
         </AbsoluteFill>
       )}
-      {toAward < 0.5 && <StoryChips items={[{ label: 'Un policía jubilado', at: c.at('G24', 'policía') }, { label: 'La carta de un asesino', at: fCarta + 6 }, { label: 'Nunca lo atraparon', at: fNunca, red: true }]} />}
+      {toAward < 0.5 && <StoryChips items={[{ label: 'Emerytowany policjant', at: fPol }, { label: 'List od mordercy', at: fCarta + 6 }, { label: 'Nigdy go nie złapano', at: fNunca, red: true }]} />}
       <Sfx name="swipe" at={fCarta - 12} volume={0.7} />
       <Sfx name="sk_peel" at={fCarta + 6} volume={0.7} />
       <Sfx name="page_turn" at={fCarta + 16} volume={0.6} />
@@ -567,34 +571,64 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 
 export const D1: React.FC = () => (
   <DoorScene cfg={{
-    sceneId: 'D1', n: 1, book: 'resplandor', kicker: 'Terror clásico', headline: '¿Terror clásico?', voA: 'G14', voB: 'G15', titleWord: 'resplandor', fear: 3, fearLabel: 'Miedo',
-    cStart: (c) => c.part('G16') - 4, hoursAt: (c) => c.at('G16', 'dieciocho') - 4,
-    quote: { text: 'Lo que más asusta no son los fantasmas: es lo que le va pasando al padre.', at: (c) => c.at('G16', 'asusta') },
+    sceneId: 'D1', n: 1, book: 'resplandor', kicker: 'Klasyczny horror', headline: 'Pierwsze wejście', voA: 'G14', voB: 'G15', titleWord: 'Lśnienie', fear: 3, fearLabel: 'Strach',
+    kickerAt: (c) => c.at('G14', 'Klasyczny'),
+    cStart: (c) => c.part('G16') - 4, hoursAt: (c) => c.at('G16', 'dwadzieścia') - 4,
+    facts: (c) => [
+      { icon: 'mic', label: 'Woronowicz · Kulesza · Gosztyła', sub: 'słuchowisko z obsadą aktorską', at: c.at('G16', 'słuchowisko') },
+      { icon: 'clock', label: '21 h 8 min', sub: 'po polsku', at: c.at('G16', 'dwadzieścia') - 4 },
+      { icon: 'star', label: '4,7 / 5', sub: 'ponad 1000 ocen w Audiotece', at: c.at('G16', 'godzin') + 6 },
+    ],
+    quote: { text: 'Najbardziej przeraża to, co dzieje się z ojcem.', at: (c) => c.at('G16', 'Najbardziej') },
     Vignette: VShining,
   }} />
 );
 export const D2: React.FC = () => (
   <DoorScene cfg={{
-    sceneId: 'D2', n: 2, book: 'misery', kicker: 'Miedo sin nada sobrenatural', headline: '¿Miedo sin fantasmas?', voA: 'G17', voB: 'G18', titleWord: 'Misery', fear: 2, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G18', 'audiolibro') - 16, hoursAt: (c) => c.at('G18', 'catorce') - 4, Vignette: VMisery,
+    sceneId: 'D2', n: 2, book: 'misery', kicker: 'Realistyczny strach', headline: 'Drugie wejście', voA: 'G17', voB: 'G18', titleWord: 'Mizeri', fear: 2, fearLabel: 'Strach',
+    kickerAt: (c) => c.at('G17', 'Strach'),
+    cStart: (c) => c.at('G18', 'polsku') - 20, hoursAt: (c) => c.at('G18', 'piętnaście') - 4,
+    facts: (c) => [
+      { icon: 'mic', label: 'Krzysztof Plewako-Szczerbiński', sub: 'lektor', at: c.at('G18', 'Krzysztof') - 4 },
+      { icon: 'clock', label: '15 h 10 min', sub: 'audiobook po polsku', at: c.at('G18', 'piętnaście') - 4 },
+    ],
+    Vignette: VMisery,
   }} />
 );
 export const D3: React.FC = () => (
   <DoorScene cfg={{
-    sceneId: 'D3', n: 3, book: 'milla', kicker: 'Si el terror no es lo tuyo', headline: '¿Sin terror?', voA: 'G19', voB: 'G20', titleWord: 'milla', fear: 1, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G20', 'audio') - 16, hoursAt: (c) => c.at('G20', 'catorce') - 4, Vignette: VMilla,
+    sceneId: 'D3', n: 3, book: 'milla', kicker: 'Jeśli nie lubisz horrorów', headline: 'Trzecie wejście', voA: 'G19', voB: 'G20', titleWord: 'Zielona', fear: 1, fearLabel: 'Strach',
+    kickerAt: (c) => c.at('G19', 'Jeśli'),
+    cStart: (c) => c.at('G20', 'polsku') - 20, hoursAt: (c) => c.at('G20', 'piętnaście') - 4,
+    facts: (c) => [
+      { icon: 'mic', label: 'Zbigniew Zapasiewicz', sub: '15 h 35 min', at: c.at('G20', 'Zbigniew') - 4 },
+      { icon: 'mic', label: 'Piotr Głowacki', sub: 'nowsze nagranie · 15 h 48 min', at: c.at('G20', 'Piotr') - 4 },
+    ],
+    Vignette: VMilla,
   }} />
 );
 export const D4: React.FC = () => (
   <DoorScene cfg={{
-    sceneId: 'D4', n: 4, book: 'd2263', kicker: 'Ciencia ficción e historia', headline: '¿Ciencia ficción o historia?', voA: 'G21', voB: 'G22', titleWord: 'veintidós', fear: 1, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G22', 'larga') - 14, hoursAt: (c) => c.at('G22', 'treinta') - 4, Vignette: V2263,
+    sceneId: 'D4', n: 4, book: 'd2263', kicker: 'Science fiction i historia', headline: 'Czwarte wejście', voA: 'G21', voB: 'G22', titleWord: 'Dallas', fear: 1, fearLabel: 'Strach',
+    kickerAt: (c) => c.at('G21', 'Sajens'),
+    cStart: (c) => c.at('G22', 'Czyta') - 14, hoursAt: (c) => c.at('G22', 'dwadzieścia') - 4,
+    facts: (c) => [
+      { icon: 'mic', label: 'Filip Kosior', sub: 'lektor', at: c.at('G22', 'Filip') - 4 },
+      { icon: 'clock', label: '27 h 27 min', sub: 'audiobook po polsku', at: c.at('G22', 'dwadzieścia') - 4 },
+    ],
+    Vignette: V2263,
   }} />
 );
 export const D5: React.FC = () => (
   <DoorScene cfg={{
-    sceneId: 'D5', n: 5, book: 'mercedes', kicker: 'Thriller', headline: '¿Thriller?', voA: 'G23', voB: 'G24', titleWord: 'Mercedes', fear: 2, fearLabel: 'Miedo',
-    cStart: (c) => c.at('G24', 'audiolibro') - 16, hoursAt: (c) => c.at('G24', 'diecisiete') - 4, Vignette: VMercedes,
+    sceneId: 'D5', n: 5, book: 'mercedes', kicker: 'Thriller', headline: 'Piąte wejście', voA: 'G23', voB: 'G24', titleWord: 'Mercedes', fear: 2, fearLabel: 'Strach',
+    kickerAt: (c) => c.at('G23', 'Triller'),
+    cStart: (c) => c.at('G24', 'Całą') - 16, hoursAt: (c) => c.at('G24', 'piętnaście') - 4,
+    facts: (c) => [
+      { icon: 'mic', label: 'Jan Peszek', sub: 'czyta całą trylogię', at: c.at('G24', 'Peszek') - 4 },
+      { icon: 'clock', label: '15 h 31 min', sub: 'pierwszy tom', at: c.at('G24', 'piętnaście') - 4 },
+    ],
+    Vignette: VMercedes,
   }} />
 );
 
@@ -603,12 +637,12 @@ export const Cortos: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('CORTOS');
   const fCarrie = c.at('G25', 'Carrie');
-  const fOcho = c.at('G25', 'ocho');
-  const fElev = c.at('G25', 'Elevación');
-  const fTres = c.at('G25', 'tres');
+  const fOcho = c.at('G25', 'siedem');
+  const fElev = c.at('G25', 'Uniesienie');
+  const fTres = c.at('G25', 'trzy');
   const items = [
-    { k: 'carrie', at: fCarrie, hours: 7.42, label: '7 h 25 min', sub: 'su primera novela · en castellano, con José Posada', valAt: fOcho },
-    { k: 'elevacion', at: fElev, hours: 3.28, label: '3 h 17 min', sub: 'novela corta · Cristian Villamil', valAt: fTres },
+    { k: 'carrie', at: fCarrie, hours: 7.2, label: '7 h 12 min', sub: 'jego pierwsza powieść · czyta Filip Kosior', valAt: fOcho },
+    { k: 'elevacion', at: fElev, hours: 3.07, label: '3 h 4 min', sub: 'krótka powieść · czyta Leszek Filipowicz', valAt: fTres },
   ];
   const sw = sp(frame, 4, 14, 160);
   return (
@@ -618,7 +652,7 @@ export const Cortos: React.FC = () => {
           <div style={{ transform: `scale(${sw}) rotate(${(1 - sw) * -40}deg)` }}>
             <svg width="110" height="110" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8.5" fill="#fff" stroke={color.ink} strokeWidth="1.8" /><path d="M12 13V8.5" stroke={KR} strokeWidth="2" strokeLinecap="round" transform={`rotate(${frame * 6} 12 13)`} /><path d="M10 2.5h4M12 2.5v2" stroke={color.ink} strokeWidth="1.8" strokeLinecap="round" /></svg>
           </div>
-          <MaskTitle text="¿Poco tiempo?" at={2} size={110} />
+          <MaskTitle text="Mało czasu?" at={2} size={110} />
         </div>
         {items.map((it, i) => {
           const s = sp(frame, 10 + i * 6, 15, 150);

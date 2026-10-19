@@ -1,7 +1,7 @@
 import { FPS } from '../../brand/tokens';
 import { VOS, voFrames, voSpeechFrames, wordFrame } from '../../lib/vo';
 
-// «AUTOR: Por dónde y cómo empezar a leer» · Stephen King. Locución en public/skg/vo (ids G..).
+// «Od czego i jak zacząć» · Stephen King (versión polaca de «AUTOR: Por dónde y cómo empezar a leer»). Locución en public/skg/vo (ids G..).
 export const sec = (s: number) => Math.round(s * FPS);
 export const hasVO = (id: string) => Boolean(VOS[id]);
 export const speechFrames = (id: string) => (hasVO(id) ? voSpeechFrames(id) : sec(4));
@@ -51,29 +51,29 @@ const scene = (id: string, ids: string[], o: { lead?: number; gaps?: number[]; e
 };
 
 export const SKG_SCENES: SceneDef[] = [
-  scene('HOOK', ['G01', 'G02'], { lead: sec(0.9), gaps: [0.5], extra: 8, night: true }),
+  scene('HOOK', ['G01', 'G02'], { lead: sec(0.9), gaps: [0.5], extra: 30, night: true }),
   scene('HOURS', ['G03'], { extra: 14, tin: 'dip' }),
   scene('MAPA', ['G04'], { extra: 10, tin: 'dip' }),
   scene('TITLE', [], { minDur: sec(3.6), tin: 'dip' }),
-  scene('MAINE', ['G05'], { bump: 'Quién es', extra: 10 }),
+  scene('MAINE', ['G05'], { bump: 'Kim jest', extra: 10 }),
   scene('CARRIE', ['G06', 'G07'], { gaps: [0.5], extra: 12 }),
   scene('BACHMAN', ['G08'], { extra: 16 }),
-  scene('TERR', ['G09', 'G10'], { bump: 'Qué escribe', gaps: [0.45], extra: 60 }),
+  scene('TERR', ['G09', 'G10'], { bump: 'Co pisze', gaps: [0.45], extra: 60 }),
   scene('FILMS', ['G11'], { extra: 40 }),
-  scene('PREG', ['G12', 'G13'], { bump: 'Antes de elegir', gaps: [0.6], extra: 18 }),
-  scene('D1', ['G14', 'G15', 'G16'], { bump: 'Cinco puertas', gaps: [0.45, 0.5], extra: 14 }),
+  scene('PREG', ['G12', 'G13'], { bump: 'Zanim wybierzesz', gaps: [0.6], extra: 18 }),
+  scene('D1', ['G14', 'G15', 'G16'], { bump: 'Pięć wejść', gaps: [0.45, 0.5], extra: 14 }),
   scene('D2', ['G17', 'G18'], { gaps: [0.45], extra: 56, tin: 'slide' }),
   scene('D3', ['G19', 'G20'], { gaps: [0.45], extra: 56, tin: 'slide' }),
   scene('D4', ['G21', 'G22'], { gaps: [0.45], extra: 56, tin: 'slide' }),
   scene('D5', ['G23', 'G24'], { gaps: [0.45], extra: 56, tin: 'slide' }),
   scene('CORTOS', ['G25'], { extra: 16 }),
-  scene('IT', ['G26', 'G27'], { bump: 'Mejor para después', gaps: [0.4], extra: 12 }),
+  scene('IT', ['G26', 'G27'], { bump: 'Lepiej na później', gaps: [0.4], extra: 12 }),
   scene('TORRE', ['G28', 'G29'], { gaps: [0.45], extra: 16 }),
-  scene('CONEX', ['G30', 'G31', 'G32'], { bump: 'Libros conectados', gaps: [0.4, 0.45], extra: 70, night: true }),
+  scene('CONEX', ['G30', 'G31', 'G32'], { bump: 'Wszystko się łączy', gaps: [0.4, 0.45], extra: 70, night: true }),
   scene('ORDEN', ['G33'], { extra: 18 }),
-  scene('VOCES', ['G34', 'G35'], { bump: 'Escuchar a King', gaps: [0.5], extra: 14 }),
-  scene('WEB', ['G36'], { extra: 20 }),
-  scene('RUTAS', ['G37', 'G38', 'G39'], { bump: 'Tu ruta', gaps: [0.4, 0.45], extra: 24 }),
+  scene('VOCES', ['G34', 'G35'], { bump: 'Słuchać Kinga', gaps: [0.5], extra: 14 }),
+  scene('WEB', ['G36'], { extra: 60 }),
+  scene('RUTAS', ['G37', 'G38', 'G39'], { bump: 'Twoja trasa', gaps: [0.4, 0.45], extra: 24 }),
   scene('COMENT', ['G40'], { extra: 14 }),
   scene('OUTRO', ['G41'], { lead: sec(0.5), minDur: sec(14) }),
 ];
@@ -102,20 +102,19 @@ export const sceneClock = (sceneId: string) => {
   };
 };
 
-// Capítulos de YouTube (descripción).
+// Capítulos de YouTube (descripción). CORTOS (7 s) va dentro del de D5: YouTube pide al menos 10 s por capítulo.
 export const SKG_CHAPTERS: { label: string; from: string }[] = [
-  { label: '¿Por dónde empezar con Stephen King?', from: 'HOOK' },
-  { label: 'Quién es Stephen King', from: 'MAINE' },
-  { label: 'Qué escribe: mucho más que terror', from: 'TERR' },
-  { label: 'Antes de elegir: miedo y tiempo', from: 'PREG' },
-  { label: 'El resplandor', from: 'D1' },
+  { label: 'Stephen King: od czego zacząć?', from: 'HOOK' },
+  { label: 'Kim jest Stephen King', from: 'MAINE' },
+  { label: 'Co pisze: nie tylko horror', from: 'TERR' },
+  { label: 'Zanim wybierzesz: strach i czas', from: 'PREG' },
+  { label: 'Lśnienie', from: 'D1' },
   { label: 'Misery', from: 'D2' },
-  { label: 'La milla verde', from: 'D3' },
-  { label: '22/11/63', from: 'D4' },
-  { label: 'Mr. Mercedes', from: 'D5' },
-  { label: 'Si tienes poco tiempo: Carrie y Elevación', from: 'CORTOS' },
-  { label: 'Mejor para después: It, Apocalipsis y La Torre Oscura', from: 'IT' },
-  { label: 'Libros conectados (y cuándo importa el orden)', from: 'CONEX' },
-  { label: 'Escuchar a King en audiolibro', from: 'VOCES' },
-  { label: 'Tres rutas de lectura', from: 'RUTAS' },
+  { label: 'Zielona mila', from: 'D3' },
+  { label: 'Dallas ’63', from: 'D4' },
+  { label: 'Pan Mercedes (i dwie krótkie: Carrie, Uniesienie)', from: 'D5' },
+  { label: 'Lepiej na później: To, Bastion i Mroczna Wieża', from: 'IT' },
+  { label: 'Wszystko się łączy (i kiedy liczy się kolejność)', from: 'CONEX' },
+  { label: 'Słuchać Kinga po polsku: lektorzy', from: 'VOCES' },
+  { label: 'Trzy trasy', from: 'RUTAS' },
 ];

@@ -41,25 +41,25 @@ type Region = { key: string; label: string; sub: string; c: string; line: string
 export const Territories: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('TERR');
-  const fTerror = c.at('G09', 'terror');
-  const fRey = c.at('G09', 'rey');
-  const fDisc = c.at('G09', 'discute');
-  const fMapa = c.at('G09', 'mapa');
-  const fTerr = c.at('G09', 'territorios');
-  const rAt = [c.at('G10', 'terror'), c.at('G10', 'terror', 1), c.at('G10', 'fantasía'), c.at('G10', 'crimen'), c.at('G10', 'relatos')];
-  const ex = [c.at('G10', 'hoteles'), c.at('G10', 'coches'), c.at('G10', 'pueblos')];
-  const fMonstruo = c.at('G10', 'monstruo');
-  const fViajes = c.at('G10', 'viajes');
-  const fMundos = c.at('G10', 'mundos');
-  const fDetect = c.at('G10', 'detectives');
-  const fAses = c.at('G10', 'asesinos');
-  const fCortas = c.at('G10', 'cortas');
+  const fTerror = c.at('G09', 'horrory');
+  const fRey = c.at('G09', 'królem');
+  const fDisc = c.at('G09', 'podważa');
+  const fMapa = c.at('G09', 'mapę');
+  const fTerr = c.at('G09', 'krainami');
+  const rAt = [c.at('G10', 'horror'), c.at('G10', 'horror', 1), c.at('G10', 'Fantasy'), c.at('G10', 'Kryminał'), c.at('G10', 'opowiadania')];
+  const ex = [c.at('G10', 'hotele'), c.at('G10', 'samochody'), c.at('G10', 'miasteczka')];
+  const fMonstruo = c.at('G10', 'potworem');
+  const fViajes = c.at('G10', 'podróżami');
+  const fMundos = c.at('G10', 'światami');
+  const fDetect = c.at('G10', 'detektywami');
+  const fAses = c.at('G10', 'mordercami');
+  const fCortas = c.at('G10', 'krótkie');
   const regions: Region[] = [
-    { key: 'sob', label: 'Terror sobrenatural', sub: 'hoteles, coches y pueblos malditos', c: '#F8DADC', line: KR, cx: 520, cy: 330, rx: 360, ry: 220, books: ['resplandor', 'christine', 'salem'], icon: <CoverIcon kind="hotel" size={34} c={KR} sw={2} /> },
-    { key: 'hum', label: 'Terror humano', sub: 'el monstruo es una persona', c: '#ECE3F3', line: '#5B2333', cx: 1390, cy: 300, rx: 360, ry: 210, books: ['misery', 'dolores', 'gerald'], icon: <CoverIcon kind="eye" size={34} c="#5B2333" sw={2} /> },
-    { key: 'fan', label: 'Fantasía y ciencia ficción', sub: 'viajes en el tiempo y otros mundos', c: '#DCE9F6', line: '#24314A', cx: 420, cy: 790, rx: 330, ry: 200, books: ['d2263', 'torre1', 'cuento'], icon: <CoverIcon kind="stars" size={34} c="#24314A" sw={2} /> },
-    { key: 'cri', label: 'Crimen', sub: 'detectives y asesinos', c: '#FFF1BF', line: '#8A6A00', cx: 1000, cy: 640, rx: 270, ry: 190, books: ['mercedes', 'holly', 'billy'], icon: <CoverIcon kind="magnifier" size={34} c="#8A6A00" sw={2} /> },
-    { key: 'rel', label: 'Relatos y novelas cortas', sub: 'más de doscientos', c: '#E1EFE2', line: '#2D5A3D', cx: 1530, cy: 800, rx: 330, ry: 200, books: ['cuatro', 'umbral', 'oscuridad'], icon: <CoverIcon kind="notebook" size={34} c="#2D5A3D" sw={2} /> },
+    { key: 'sob', label: 'Horror nadprzyrodzony', sub: 'przeklęte hotele, samochody i miasteczka', c: '#F8DADC', line: KR, cx: 520, cy: 330, rx: 360, ry: 220, books: ['resplandor', 'christine', 'salem'], icon: <CoverIcon kind="hotel" size={34} c={KR} sw={2} /> },
+    { key: 'hum', label: 'Horror ludzki', sub: 'potworem jest człowiek', c: '#ECE3F3', line: '#5B2333', cx: 1390, cy: 300, rx: 360, ry: 210, books: ['misery', 'dolores', 'gerald'], icon: <CoverIcon kind="eye" size={34} c="#5B2333" sw={2} /> },
+    { key: 'fan', label: 'Fantasy i science fiction', sub: 'podróże w czasie i inne światy', c: '#DCE9F6', line: '#24314A', cx: 420, cy: 790, rx: 330, ry: 200, books: ['d2263', 'torre1', 'cuento'], icon: <CoverIcon kind="stars" size={34} c="#24314A" sw={2} /> },
+    { key: 'cri', label: 'Kryminał', sub: 'detektywi i mordercy', c: '#FFF1BF', line: '#8A6A00', cx: 1000, cy: 640, rx: 270, ry: 190, books: ['mercedes', 'holly', 'billy'], icon: <CoverIcon kind="magnifier" size={34} c="#8A6A00" sw={2} /> },
+    { key: 'rel', label: 'Opowiadania i krótkie powieści', sub: 'ponad dwieście opowiadań', c: '#E1EFE2', line: '#2D5A3D', cx: 1530, cy: 800, rx: 330, ry: 200, books: ['cuatro', 'umbral', 'oscuridad'], icon: <CoverIcon kind="notebook" size={34} c="#2D5A3D" sw={2} /> },
   ];
   // Fase 1: «TERROR» enorme. Fase 2: el mapa.
   const toMap = ramp(frame, fMapa - 14, fMapa + 10);
@@ -89,11 +89,11 @@ export const Territories: React.FC = () => {
             <div style={{ position: 'absolute', left: '50%', top: -150, transform: `translateX(-50%) translateY(${(1 - crown) * -80}px) rotate(${(1 - crown) * -20}deg)`, opacity: crown }}>
               <CoverIcon kind="tiara" size={150} c={color.ink} sw={1.6} />
             </div>
-            <div style={{ position: 'absolute', left: 0, right: 0, top: -64, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 6, color: color.muted, textTransform: 'uppercase', opacity: rampOut(frame, 4, 20) * (1 - crown) }}>Lo que mucha gente cree</div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 290, letterSpacing: -14, color: KR, lineHeight: 1, transform: `scale(${1 + 0.06 * Math.sin(Math.min(1, solo) * Math.PI)})` }}>TERROR</div>
-            <div style={{ position: 'absolute', right: -40, top: -26, fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: '#fff', background: color.ink, padding: '6px 20px', borderRadius: 12, transform: `rotate(8deg) scale(${solo})`, opacity: (1 - crown) }}>solo</div>
+            <div style={{ position: 'absolute', left: 0, right: 0, top: -64, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 6, color: color.muted, textTransform: 'uppercase', opacity: rampOut(frame, 4, 20) * (1 - crown) }}>Co myśli wielu ludzi</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 290, letterSpacing: -14, color: KR, lineHeight: 1, transform: `scale(${1 + 0.06 * Math.sin(Math.min(1, solo) * Math.PI)})` }}>HORROR</div>
+            <div style={{ position: 'absolute', right: -40, top: -26, fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: '#fff', background: color.ink, padding: '6px 20px', borderRadius: 12, transform: `rotate(8deg) scale(${solo})`, opacity: (1 - crown) }}>tylko</div>
             <div style={{ textAlign: 'center', marginTop: 18, fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: color.ink, opacity: rampOut(frame, fRey, fRey + 12) }}>
-              El rey del género
+              Król gatunku
               <span style={{ display: 'inline-block', marginLeft: 18, color: color.ink, background: color.yellow, padding: '2px 16px', borderRadius: 10, transform: `scale(${spring({ frame: frame - fDisc, fps: 50, config: { damping: 10, stiffness: 220 } })})` }}>✓</span>
             </div>
           </div>
@@ -167,17 +167,17 @@ export const Territories: React.FC = () => {
 
 // ——— FILMS · G11 · Lo has visto en el cine ———
 const FILMS = [
-  { t: 'Cadena perpetua', y: 1994, from: 'de «Las cuatro estaciones»', word: 'Cadena', still: 'cadena' },
-  { t: 'Cuenta conmigo', y: 1986, from: 'de «Las cuatro estaciones»', word: 'Cuenta', still: 'cuenta' },
-  { t: 'La milla verde', y: 1999, from: 'de «La milla verde»', word: 'milla', still: 'milla' },
+  { t: 'Skazani na Shawshank', y: 1994, from: 'z tomu „Cztery pory roku”', word: 'Skazani', still: 'cadena' },
+  { t: 'Stań przy mnie', y: 1986, from: 'z tomu „Cztery pory roku”', word: 'Stań', still: 'cuenta' },
+  { t: 'Zielona mila', y: 1999, from: 'z powieści „Zielona mila”', word: 'Zielona', still: 'milla' },
 ];
 export const Films: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('FILMS');
-  const fVisto = c.at('G11', 'visto');
-  const fSalen = c.at('G11', 'salen');
-  const fNing = c.at('G11', 'ninguna');
-  const fTerror = c.at('G11', 'terror');
+  const fVisto = c.at('G11', 'filmy');
+  const fSalen = c.at('G11', 'powstały');
+  const fNing = c.at('G11', 'żaden');
+  const fTerror = c.at('G11', 'horrorem');
   const at = FILMS.map((f) => c.at('G11', f.word));
   const beam = rampOut(frame, 4, 30);
   const ready = useFontsReady();
@@ -188,7 +188,7 @@ export const Films: React.FC = () => {
         background: 'conic-gradient(from 166deg at 50% 0%, rgba(255,230,170,0) 0deg, rgba(255,230,170,0.16) 8deg, rgba(255,230,170,0.22) 14deg, rgba(255,230,170,0.16) 20deg, rgba(255,230,170,0) 28deg)', filter: 'blur(8px)' }} />
       <Cam keys={[{ f: 0, s: 1.08, x: 0, y: 20 }, { f: c.dur, s: 1, x: 0, y: 0 }]}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 120, textAlign: 'center' }}>
-          <MaskTitle text="Seguro que lo has visto" at={6} size={86} align="center" color="#fff" hi={['visto']} />
+          <MaskTitle text="Na pewno znasz te filmy" at={6} size={86} align="center" color="#fff" hi={['filmy']} />
         </div>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 310, display: 'flex', justifyContent: 'center', gap: 44 }}>
           {FILMS.map((f, i) => {
@@ -223,7 +223,7 @@ export const Films: React.FC = () => {
                 <div style={{ marginTop: 22, textAlign: 'center', fontFamily: font.sans, fontWeight: 500, fontSize: 34, color: 'rgba(255,255,255,0.85)', opacity: rampOut(frame, fSalen - 4 + i * 4, fSalen + 10 + i * 4) }}>{f.from}</div>
                 <div style={{ marginTop: 22, display: 'flex', justifyContent: 'center', opacity: tag, transform: `scale(${0.8 + 0.2 * tag})` }}>
                   <span style={{ position: 'relative', fontFamily: font.sans, fontWeight: 700, fontSize: 44, color: '#fff', background: 'rgba(193,18,31,0.9)', padding: '10px 32px', borderRadius: 999 }}>
-                    Terror
+                    Horror
                     <span style={{ position: 'absolute', left: 14, right: 14, top: '50%', height: 5, background: '#fff', borderRadius: 3, transform: `scaleX(${strike}) rotate(-6deg)`, transformOrigin: 'left' }} />
                   </span>
                 </div>
@@ -245,16 +245,16 @@ export const Films: React.FC = () => {
 export const Preguntas: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('PREG');
-  const fDos = c.at('G12', 'dos');
-  const fPrim = c.at('G12', 'primera');
-  const fMiedo = c.at('G12', 'miedo');
-  const fSeg = c.at('G13', 'segunda');
-  const fTiempo = c.at('G13', 'tiempo');
-  const fDif = c.at('G13', 'diferencia');
+  const fDos = c.at('G12', 'dwa');
+  const fPrim = c.at('G12', 'Pierwsze');
+  const fMiedo = c.at('G12', 'bać');
+  const fSeg = c.at('G13', 'Drugie');
+  const fTiempo = c.at('G13', 'czasu');
+  const fDif = c.at('G13', 'różnice');
   const fCarrie = c.at('G13', 'Carrie');
-  const fOcho = c.at('G13', 'ocho');
-  const fApo = c.at('G13', 'Apocalipsis');
-  const fCuar = c.at('G13', 'cuarenta');
+  const fOcho = c.at('G13', 'siedem');
+  const fApo = c.at('G13', 'To');
+  const fCuar = c.at('G13', 'pięćdziesiąt');
   const q1 = spring({ frame: frame - 10, fps: 50, config: { damping: 15, stiffness: 160 } });
   const q2 = spring({ frame: frame - 16, fps: 50, config: { damping: 15, stiffness: 160 } });
   const focus1 = ramp(frame, fPrim - 8, fPrim + 10) * (1 - ramp(frame, fSeg - 10, fSeg + 6));
@@ -267,7 +267,7 @@ export const Preguntas: React.FC = () => {
       opacity: appear * (1 - 0.55 * (n === 1 ? focus2 : focus1 > 0.5 ? 0 : 0)), transform: `translateY(${(1 - appear) * 80}px) scale(${0.92 + 0.08 * appear + 0.04 * foc})` }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
         <span style={{ width: 70, height: 70, borderRadius: '50%', background: foc > 0.5 ? color.yellow : color.ink, color: foc > 0.5 ? color.ink : color.yellow, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 38 }}>{n}</span>
-        <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 4, color: color.muted, textTransform: 'uppercase' }}>Pregunta</span>
+        <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 4, color: color.muted, textTransform: 'uppercase' }}>Pytanie</span>
       </div>
       <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, letterSpacing: -2, lineHeight: 1.05, color: color.ink, marginTop: 30 }}>{title}</div>
       <div style={{ position: 'absolute', right: 46, bottom: 40 }}>{icon}</div>
@@ -278,10 +278,10 @@ export const Preguntas: React.FC = () => {
     <SkStage>
       <AbsoluteFill style={{ opacity: 1 - bars, transform: `translateY(${-bars * 60}px) scale(${1 - bars * 0.06})`, filter: bars > 0.01 ? `blur(${bars * 8}px)` : undefined }}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 90, textAlign: 'center' }}>
-          <MaskTitle text="Antes de elegir, dos preguntas" at={4} size={72} align="center" hi={['dos']} />
+          <MaskTitle text="Zanim wybierzesz: dwa pytania" at={4} size={72} align="center" hi={['dwa']} />
         </div>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 290, display: 'flex', justifyContent: 'center', gap: 60 }}>
-          {card(1, '¿Cuánto miedo quieres pasar?', focus1, q1, (
+          {card(1, 'Jak bardzo chcesz się bać?', focus1, q1, (
             <svg width="240" height="150" viewBox="0 0 240 150">
               <path d="M20 130 A100 100 0 0 1 220 130" stroke="#ECE8E2" strokeWidth="26" fill="none" strokeLinecap="round" />
               <path d="M20 130 A100 100 0 0 1 220 130" stroke="url(#fear)" strokeWidth="26" fill="none" strokeLinecap="round" />
@@ -290,7 +290,7 @@ export const Preguntas: React.FC = () => {
               <circle cx="120" cy="130" r="14" fill={color.ink} />
             </svg>
           ))}
-          {card(2, '¿Cuánto tiempo tienes?', focus2, q2, (
+          {card(2, 'Ile masz czasu?', focus2, q2, (
             <div style={{ transform: `rotate(${frame * (focus2 > 0 ? 3 : 0.4)}deg)` }}><MiniIcon kind="clock" size={150} c={color.ink} /></div>
           ))}
         </div>
@@ -298,11 +298,11 @@ export const Preguntas: React.FC = () => {
       {bars > 0 && (
         <AbsoluteFill style={{ opacity: bars, justifyContent: 'center', paddingLeft: 190, gap: 64 }}>
           <div>
-            <Kicker at={fDif - 14} text="Duración del audiolibro en español" />
-            <MaskTitle text="La diferencia es enorme" at={fDif - 10} size={84} hi={['enorme']} />
+            <Kicker at={fDif - 14} text="Długość audiobooka po polsku" />
+            <MaskTitle text="Różnice są ogromne" at={fDif - 10} size={84} hi={['ogromne']} />
           </div>
-          <HoursBar hours={7.42} label="Carrie" at={fCarrie} trackAt={fDif - 8} width={1300} maxH={50} c={color.ink} h={64} size={1.5} showValue={frame > fOcho - 10 ? '7 h 25 min' : undefined} />
-          <HoursBar hours={48.27} label="Apocalipsis" at={fApo} trackAt={fDif - 4} width={1300} maxH={50} c={KR} dur={50} h={64} size={1.5} showValue={frame > fCuar + 10 ? '48 h 16 min' : undefined} />
+          <HoursBar hours={7.2} label="Carrie" at={fCarrie} trackAt={fDif - 8} width={1300} maxH={58} c={color.ink} h={64} size={1.5} showValue={frame > fOcho - 10 ? '7 h 12 min' : undefined} />
+          <HoursBar hours={54.02} label="To" at={fApo} trackAt={fDif - 4} width={1300} maxH={58} c={KR} dur={50} h={64} size={1.5} showValue={frame > fCuar + 10 ? '54 h 1 min' : undefined} />
         </AbsoluteFill>
       )}
       <Sfx name="ui_pop" at={12} volume={0.6} />

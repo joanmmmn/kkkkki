@@ -14,7 +14,7 @@ import { Rig } from './Library';
 import { canvasTex, CamKey, easeO, projectAt, ramp01, rng, SANS, SERIF, useFontsReady, V3, AUDIO_ONLY } from './lib3d';
 
 // ————————————————————————————————————————————————————————————————
-// MAPA en 3D: tres libros sobre la mesa; el equivocado (It) se adelanta y cae. Llega un mapa doblado,
+// MAPA en 3D: tres libros sobre la mesa; el equivocado (To, el «It» español) se adelanta y cae. Llega un mapa doblado,
 // se despliega y la ruta del vídeo se dibuja con tinta roja entre cuatro chinchetas.
 // ————————————————————————————————————————————————————————————————
 
@@ -198,11 +198,11 @@ const mapCanvas = () => {
   ctx.font = `700 54px ${SANS}`;
   (ctx as unknown as { letterSpacing: string }).letterSpacing = '18px';
   ctx.fillStyle = 'rgba(60,38,12,0.85)';
-  ctx.fillText('EL MAPA DE ESTE VÍDEO', W / 2, 150);
+  ctx.fillText('MAPA TEGO ODCINKA', W / 2, 150);
   (ctx as unknown as { letterSpacing: string }).letterSpacing = '0px';
   ctx.font = `italic 400 44px ${SERIF}`;
   ctx.fillStyle = 'rgba(60,38,12,0.7)';
-  ctx.fillText('Stephen King · por dónde y cómo empezar a leer', W / 2, 214);
+  ctx.fillText('Stephen King · od czego i jak zacząć', W / 2, 214);
   // marcas de pliegue
   ctx.strokeStyle = 'rgba(90,60,20,0.18)';
   ctx.lineWidth = 3;
@@ -295,7 +295,9 @@ const MapScene: React.FC<{ f: Record<string, number>; stops: number[]; keys: Cam
   const wrong = ramp01(frame, f.equiv - 4, f.equiv + 14, easeO);
   const { fall, bounce, wobble } = itFall(frame, f);
   // El mapa llega deslizándose por la mesa desde la izquierda, doblado, y se despliega
-  const slide = ramp01(frame, f.asi + 28, f.mapa - 6, (t) => 1 - Math.pow(1 - t, 3));
+  // En polaco «Dlatego masz tu mapę» es más corto que «Así que aquí tienes un mapa»: el mapa entra como mucho 40 fotogramas antes de «mapę».
+  const fSlide = Math.min(f.asi + 28, f.mapa - 40);
+  const slide = ramp01(frame, fSlide, f.mapa - 6, (t) => 1 - Math.pow(1 - t, 3));
   const hop = Math.sin(Math.PI * Math.min(1, slide * 1.25)) * 2.2;
   const openR = ramp01(frame, f.mapa - 8, f.mapa + 16, easeO);
   const openL = ramp01(frame, f.mapa + 2, f.mapa + 26, easeO);
@@ -324,7 +326,7 @@ const MapScene: React.FC<{ f: Record<string, number>; stops: number[]; keys: Cam
         </group>
       )}
       {/* El mapa */}
-      {frame >= f.asi + 26 && (
+      {frame >= fSlide - 2 && (
         <group position={[-170 * (1 - slide), 0.14 + hop, MAP_Z + 6 * (1 - slide)]} rotation={[0, -0.55 * (1 - slide), 0]}>
           <MapPanel i={1} />
           <group position={[-P / 2, TH * (1 - openL) * 1.1, 0]} rotation={[0, 0, -Math.PI * (1 - openL)]}>
@@ -342,17 +344,17 @@ const MapScene: React.FC<{ f: Record<string, number>; stops: number[]; keys: Cam
   );
 };
 
-const LABELS = ['Qué escribe', 'Cinco puertas de entrada', 'Mejor para después', 'En qué orden seguir'];
+const LABELS = ['Co pisze', 'Pięć wejść', 'Lepiej na później', 'W jakiej kolejności dalej'];
 
 export const Mapa3D: React.FC = () => {
   const frame = useCurrentFrame();
   const ready = useFontsReady();
   const c = sceneClock('MAPA');
   const f = {
-    libro: c.at('G04', 'libro'), equiv: c.at('G04', 'equivocado'), king: c.at('G04', 'King'), no: c.at('G04', 'no'), ti: c.at('G04', 'ti'),
-    asi: c.at('G04', 'Así'), mapa: c.at('G04', 'mapa'),
+    libro: c.at('G04', 'książki'), equiv: c.at('G04', 'złej'), king: c.at('G04', 'King'), no: c.at('G04', 'nie'), ti: c.at('G04', 'ciebie'),
+    asi: c.at('G04', 'Dlatego'), mapa: c.at('G04', 'mapę'),
   };
-  const stops = [c.at('G04', 'qué', 2), c.at('G04', 'cinco'), c.at('G04', 'dejar'), c.at('G04', 'orden')];
+  const stops = [c.at('G04', 'co'), c.at('G04', 'pięć'), c.at('G04', 'później'), c.at('G04', 'kolejności')];
   const keys: CamKey[] = [
     { f: 0, pos: [0, 19, 72], look: [0, 12, -22], fov: 30 },
     { f: f.equiv + 26, pos: [3, 17, 56], look: [1, 12, -18], fov: 30 },
@@ -365,7 +367,7 @@ export const Mapa3D: React.FC = () => {
     { f: c.dur, pos: [1, 116, 105], look: [1, 0, MAP_Z - 1], fov: 30, ease: (t) => t },
   ];
   const fr = ROUTE.frac;
-  const seg3 = c.at('G04', 'los');
+  const seg3 = c.at('G04', 'książki', 1);
   const drawT = interpolate(frame, [stops[0] - 6, stops[0], stops[1] - 26, stops[1], seg3 - 4, stops[2], stops[3] - 28, stops[3]], [0, fr[0], fr[0], fr[1], fr[1], fr[2], fr[2], fr[3]], { ...clamp, easing: easeInOut });
   const wrong = ramp01(frame, f.equiv - 2, f.equiv + 12, easeO);
   const fall = itFall(frame, f).fall;
@@ -388,7 +390,7 @@ export const Mapa3D: React.FC = () => {
       {/* El libro equivocado */}
       {wrong > 0.01 && frame < f.asi + 10 && (
         <div style={{ position: 'absolute', left: itTop.x, top: Math.max(110, itTop.y - 60), transform: `translate(-50%, -50%) scale(${0.8 + 0.2 * wrong})`, opacity: wrong * (1 - tagOut) }}>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '12px 28px', borderRadius: 999, boxShadow: '0 20px 40px rgba(193,18,31,0.4)', whiteSpace: 'nowrap' }}>El libro equivocado</div>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: KR, padding: '12px 28px', borderRadius: 999, boxShadow: '0 20px 40px rgba(193,18,31,0.4)', whiteSpace: 'nowrap' }}>Zła książka na start</div>
         </div>
       )}
       {/* polvo al caer */}
@@ -400,7 +402,7 @@ export const Mapa3D: React.FC = () => {
       })}
       {quote > 0.01 && (
         <div style={{ position: 'absolute', left: 0, right: 0, bottom: 110, textAlign: 'center', opacity: quote, transform: `translateY(${(1 - quote) * 16}px)` }}>
-          <span style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 76, color: '#fff', textShadow: '0 8px 40px rgba(0,0,0,0.8)' }}>«King no es para mí»</span>
+          <span style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 76, color: '#fff', textShadow: '0 8px 40px rgba(0,0,0,0.8)' }}>„King nie jest dla mnie”</span>
         </div>
       )}
       {/* Etiquetas de las paradas, pegadas a sus chinchetas */}
@@ -426,8 +428,8 @@ export const Mapa3D: React.FC = () => {
       <Sfx name="sk_book_slide" at={f.no - 4} volume={0.35} />
       <Sfx name="sk_book_thud" at={f.ti - 1} volume={0.95} />
       <Sfx name="impact" at={f.ti - 1} volume={0.35} />
-      <Sfx name="whoosh_soft" at={f.asi + 24} volume={0.5} />
-      <Sfx name="sk_book_slide" at={f.asi + 30} volume={0.55} />
+      <Sfx name="whoosh_soft" at={Math.min(f.asi + 24, f.mapa - 44)} volume={0.5} />
+      <Sfx name="sk_book_slide" at={Math.min(f.asi + 30, f.mapa - 38)} volume={0.55} />
       <Sfx name="page_turn" at={f.mapa - 6} volume={0.8} />
       <Sfx name="page_turn" at={f.mapa + 6} volume={0.6} />
       {stops.map((s, i) => <Sfx key={i} name="sk_pin" at={s + 6} volume={0.7} />)}

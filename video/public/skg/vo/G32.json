@@ -1,119 +1,125 @@
 {
  "id": "G32",
- "hash": "093a95234fa7",
- "text": "Randall Flagg, el villano de Apocalipsis, reaparece en La Torre Oscura. Y Holly, una secundaria de Mr. Mercedes, acaba teniendo novela propia.",
- "duration": 10.64,
+ "hash": "4e9ee9d4eb08",
+ "text": "Randall Flagg z „Bastionu” wraca w „Mrocznej Wieży”. A Holly Gibney, która pojawia się w „Panu Mercedesie”, w końcu dostała własną powieść: „Holly”.",
+ "duration": 8.662,
  "words": [
   {
    "w": "Randall",
    "s": 0.0,
-   "e": 0.48
+   "e": 0.4
   },
   {
-   "w": "Flagg,",
-   "s": 0.68,
-   "e": 1.12
+   "w": "Flagg",
+   "s": 0.48,
+   "e": 0.72
   },
   {
-   "w": "el",
-   "s": 1.2,
-   "e": 1.28
+   "w": "z",
+   "s": 0.8,
+   "e": 0.84
   },
   {
-   "w": "villano",
-   "s": 1.32,
-   "e": 1.68
+   "w": "„Bastionu”",
+   "s": 0.88,
+   "e": 1.52
   },
   {
-   "w": "de",
-   "s": 1.72,
-   "e": 1.76
+   "w": "wraca",
+   "s": 1.6,
+   "e": 1.92
   },
   {
-   "w": "Apocalipsis,",
-   "s": 1.84,
-   "e": 2.8
+   "w": "w",
+   "s": 1.96,
+   "e": 2.0
   },
   {
-   "w": "reaparece",
-   "s": 2.88,
-   "e": 3.52
+   "w": "„Mrocznej",
+   "s": 2.04,
+   "e": 2.4
   },
   {
-   "w": "en",
-   "s": 3.6,
+   "w": "Wieży”.",
+   "s": 2.48,
+   "e": 3.24
+  },
+  {
+   "w": "A",
+   "s": 3.28,
+   "e": 3.44
+  },
+  {
+   "w": "Holly",
+   "s": 3.48,
    "e": 3.68
   },
   {
-   "w": "La",
+   "w": "Gibney,",
    "s": 3.76,
-   "e": 3.84
+   "e": 4.2
   },
   {
-   "w": "Torre",
-   "s": 3.92,
-   "e": 4.16
-  },
-  {
-   "w": "Oscura.",
+   "w": "która",
    "s": 4.24,
-   "e": 5.28
+   "e": 4.48
   },
   {
-   "w": "Y",
-   "s": 5.36,
-   "e": 5.44
+   "w": "pojawia",
+   "s": 4.52,
+   "e": 4.8
   },
   {
-   "w": "Holly,",
-   "s": 5.52,
-   "e": 6.16
+   "w": "się",
+   "s": 4.84,
+   "e": 4.92
   },
   {
-   "w": "una",
-   "s": 6.24,
+   "w": "w",
+   "s": 4.96,
+   "e": 5.0
+  },
+  {
+   "w": "„Panu",
+   "s": 5.04,
+   "e": 5.2
+  },
+  {
+   "w": "Mercedesie”,",
+   "s": 5.28,
+   "e": 6.027
+  },
+  {
+   "w": "w",
+   "s": 6.053,
+   "e": 6.08
+  },
+  {
+   "w": "końcu",
+   "s": 6.2,
    "e": 6.4
   },
   {
-   "w": "secundaria",
+   "w": "dostała",
    "s": 6.48,
-   "e": 6.96
+   "e": 6.8
   },
   {
-   "w": "de",
-   "s": 7.04,
-   "e": 7.12
+   "w": "własną",
+   "s": 6.88,
+   "e": 7.28
   },
   {
-   "w": "Mr.",
-   "s": 7.16,
-   "e": 7.44
+   "w": "powieść:",
+   "s": 7.36,
+   "e": 8.107
   },
   {
-   "w": "Mercedes,",
-   "s": 7.56,
-   "e": 8.24
-  },
-  {
-   "w": "acaba",
-   "s": 8.32,
-   "e": 8.64
-  },
-  {
-   "w": "teniendo",
-   "s": 8.72,
-   "e": 9.12
-  },
-  {
-   "w": "novela",
-   "s": 9.2,
-   "e": 9.52
-  },
-  {
-   "w": "propia.",
-   "s": 9.6,
-   "e": 10.64
+   "w": "„Holly”.",
+   "s": 8.133,
+   "e": 8.662
   }
  ],
- "speechEnd": 10.145
+ "trimmed": "4e9ee9d4eb08",
+ "speechEnd": 8.502
 }

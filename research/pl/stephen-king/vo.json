@@ -1,0 +1,195 @@
+{
+ "scenes": [
+  {
+   "id": "G01",
+   "text": "Ponad sześćdziesiąt powieści. Ponad dwieście opowiadań. Pół wieku pisania."
+  },
+  {
+   "id": "G02",
+   "text": "I pytanie, które prędzej czy później zadaje sobie każdy: od czego zacząć Kinga?"
+  },
+  {
+   "id": "G03",
+   "text": "Żeby pokazać skalę: w samej Audiotece jego audiobooki po polsku trwają łącznie ponad 1400 godzin. To mniej więcej dwa miesiące słuchania, dzień i noc, bez przerwy.",
+   "say": "Żeby pokazać skalę: w samej Audiotece jego audiobooki po polsku trwają łącznie ponad tysiąc czterysta godzin. To mniej więcej dwa miesiące słuchania, dzień i noc, bez przerwy."
+  },
+  {
+   "id": "G04",
+   "text": "Jeśli zaczniesz od złej książki, możesz dojść do wniosku, że King nie jest dla ciebie. Dlatego masz tu mapę: co pisze, pięć wejść zależnie od tego, co lubisz, książki, które lepiej zostawić na później, i w jakiej kolejności iść dalej."
+  },
+  {
+   "id": "G05",
+   "text": "Stephen King urodził się w 1947 roku w Portland, w stanie Maine. I Maine jest prawie we wszystkim, co pisze: małe miasteczka, długie zimy i sąsiedzi, którzy coś ukrywają.",
+   "say": "Stiwen King urodził się w tysiąc dziewięćset czterdziestym siódmym roku w Portland, w stanie Mejn. I Mejn jest prawie we wszystkim, co pisze: małe miasteczka, długie zimy i sąsiedzi, którzy coś ukrywają."
+  },
+  {
+   "id": "G06",
+   "text": "Na początku lat siedemdziesiątych uczył angielskiego w liceum i pisał po godzinach. Pewnego dnia wyrzucił do kosza pierwsze strony powieści o dziewczynie z nadprzyrodzonymi mocami."
+  },
+  {
+   "id": "G07",
+   "text": "Jego żona, Tabitha, wyjęła je ze śmieci i namówiła go, żeby pisał dalej. Ta powieść to „Carrie”. Ukazała się w 1974 roku i odmieniła jego życie.",
+   "say": "Jego żona, Tabita, wyjęła je ze śmieci i namówiła go, żeby pisał dalej. Ta powieść to Kerri. Ukazała się w tysiąc dziewięćset siedemdziesiątym czwartym roku i odmieniła jego życie."
+  },
+  {
+   "id": "G08",
+   "text": "Od tamtej pory nie zwalnia tempa. W „Jak pisać” opowiada, że wyznacza sobie dwa tysiące słów dziennie. A siedem powieści wydał pod innym nazwiskiem, jako Richard Bachman, między innymi po to, żeby sprawdzić, czy jego książki sprzedają się dzięki temu, co opowiadają, czy dzięki nazwisku. Tajemnicę odkrył w 1985 roku pracownik księgarni.",
+   "say": "Od tamtej pory nie zwalnia tempa. W Jak pisać opowiada, że wyznacza sobie dwa tysiące słów dziennie. A siedem powieści wydał pod innym nazwiskiem, jako Riczard Bakman, między innymi po to, żeby sprawdzić, czy jego książki sprzedają się dzięki temu, co opowiadają, czy dzięki nazwisku. Tajemnicę odkrył w tysiąc dziewięćset osiemdziesiątym piątym roku pracownik księgarni."
+  },
+  {
+   "id": "G09",
+   "text": "Wielu ludzi myśli, że King pisze tylko horrory. I jest królem gatunku, tego nikt nie podważa. Ale jego twórczość przypomina raczej mapę z kilkoma krainami."
+  },
+  {
+   "id": "G10",
+   "text": "Jest horror nadprzyrodzony: przeklęte hotele, samochody i miasteczka. Horror ludzki, w którym potworem jest człowiek. Fantasy i science fiction, z podróżami w czasie i innymi światami. Kryminał, z detektywami i mordercami. I opowiadania oraz krótkie powieści.",
+   "say": "Jest horror nadprzyrodzony: przeklęte hotele, samochody i miasteczka. Horror ludzki, w którym potworem jest człowiek. Fantazy i sajens fikszyn, z podróżami w czasie i innymi światami. Kryminał, z detektywami i mordercami. I opowiadania oraz krótkie powieści."
+  },
+  {
+   "id": "G11",
+   "text": "A nawet jeśli nie znasz jego książek, na pewno znasz filmy. „Skazani na Shawshank”, „Stań przy mnie” i „Zielona mila” powstały na podstawie jego prozy. I żaden z nich nie jest horrorem.",
+   "say": "A nawet jeśli nie znasz jego książek, na pewno znasz filmy. Skazani na Szołszenk, Stań przy mnie i Zielona mila powstały na podstawie jego prozy. I żaden z nich nie jest horrorem."
+  },
+  {
+   "id": "G12",
+   "text": "Zanim wybierzesz, zadaj sobie dwa pytania. Pierwsze: jak bardzo chcesz się bać?"
+  },
+  {
+   "id": "G13",
+   "text": "Drugie: ile masz czasu? Bo u Kinga różnice są ogromne. „Carrie” po polsku przesłuchasz w nieco ponad siedem godzin. „To” trwa ponad pięćdziesiąt cztery.",
+   "say": "Drugie: ile masz czasu? Bo u Kinga różnice są ogromne. Kerri po polsku przesłuchasz w nieco ponad siedem godzin. To trwa ponad pięćdziesiąt cztery."
+  },
+  {
+   "id": "G14",
+   "text": "Pierwsze wejście: „Lśnienie”, z 1977 roku. Klasyczny horror.",
+   "say": "Pierwsze wejście: Lśnienie, z tysiąc dziewięćset siedemdziesiątego siódmego roku. Klasyczny horror."
+  },
+  {
+   "id": "G15",
+   "text": "Pisarz zgadza się przez całą zimę pilnować hotelu odciętego przez śnieg, razem z żoną i pięcioletnim synem. Hotel ma jednak inne plany."
+  },
+  {
+   "id": "G16",
+   "text": "Najbardziej przeraża to, co dzieje się z ojcem. A po polsku to wyjątkowe wydanie: słuchowisko, w którym grają Adam Woronowicz, Agata Kulesza i Krzysztof Gosztyła. Ponad dwadzieścia jeden godzin."
+  },
+  {
+   "id": "G17",
+   "text": "Drugie: „Misery”, z 1987 roku. Strach bez grama zjawisk nadprzyrodzonych.",
+   "say": "Drugie: Mizeri, z tysiąc dziewięćset osiemdziesiątego siódmego roku. Strach bez grama zjawisk nadprzyrodzonych."
+  },
+  {
+   "id": "G18",
+   "text": "Pisarz ma wypadek w środku śnieżycy. Ratuje go jego fanka numer jeden, która wcale nie zamierza go wypuścić. Po polsku czyta Krzysztof Plewako-Szczerbiński: nieco ponad piętnaście godzin."
+  },
+  {
+   "id": "G19",
+   "text": "Trzecie: „Zielona mila”, z 1996 roku. Jeśli horror to nie twoja bajka.",
+   "say": "Trzecie: Zielona mila, z tysiąc dziewięćset dziewięćdziesiątego szóstego roku. Jeśli horror to nie twoja bajka."
+  },
+  {
+   "id": "G20",
+   "text": "Korytarz śmierci, rok 1932. Strażnik i ogromny więzień z niezwykłym darem. Powieść ukazała się w sześciu częściach. A po polsku czyta ją Zbigniew Zapasiewicz albo, w nowszym nagraniu, Piotr Głowacki. Obie wersje trwają ponad piętnaście i pół godziny.",
+   "say": "Korytarz śmierci, rok tysiąc dziewięćset trzydziesty drugi. Strażnik i ogromny więzień z niezwykłym darem. Powieść ukazała się w sześciu częściach. A po polsku czyta ją Zbigniew Zapasiewicz albo, w nowszym nagraniu, Piotr Głowacki. Obie wersje trwają ponad piętnaście i pół godziny."
+  },
+  {
+   "id": "G21",
+   "text": "Czwarte: „Dallas ’63”, z 2011 roku. Science fiction i historia.",
+   "say": "Czwarte: Dallas sześćdziesiąt trzy, z dwa tysiące jedenastego roku. Sajens fikszyn i historia."
+  },
+  {
+   "id": "G22",
+   "text": "Przejście w spiżarni pewnego baru prowadzi do 1958 roku. Bohater chce dotrwać do 22 listopada 1963 i zapobiec zamachowi na Kennedy’ego. Czyta Filip Kosior: ponad dwadzieścia siedem godzin.",
+   "say": "Przejście w spiżarni pewnego baru prowadzi do tysiąc dziewięćset pięćdziesiątego ósmego roku. Bohater chce dotrwać do dwudziestego drugiego listopada tysiąc dziewięćset sześćdziesiątego trzeciego i zapobiec zamachowi na Kenediego. Czyta Filip Kosior: ponad dwadzieścia siedem godzin."
+  },
+  {
+   "id": "G23",
+   "text": "Piąte: „Pan Mercedes”, z 2014 roku. Thriller.",
+   "say": "Piąte: Pan Mercedes, z dwa tysiące czternastego roku. Triller."
+  },
+  {
+   "id": "G24",
+   "text": "Emerytowany policjant dostaje list od mordercy, którego nigdy nie złapano. Powieść zdobyła Nagrodę Edgara dla najlepszej powieści i otwiera trylogię o Billu Hodgesie. Całą trylogię czyta po polsku Jan Peszek, a pierwszy tom trwa ponad piętnaście godzin.",
+   "say": "Emerytowany policjant dostaje list od mordercy, którego nigdy nie złapano. Powieść zdobyła Nagrodę Edgara dla najlepszej powieści i otwiera trylogię o Billu Hodżesie. Całą trylogię czyta po polsku Jan Peszek, a pierwszy tom trwa ponad piętnaście godzin."
+  },
+  {
+   "id": "G25",
+   "text": "A jeśli masz mało czasu: „Carrie”, nieco ponad siedem godzin, albo „Uniesienie”, niewiele ponad trzy.",
+   "say": "A jeśli masz mało czasu: Kerri, nieco ponad siedem godzin, albo Uniesienie, niewiele ponad trzy."
+  },
+  {
+   "id": "G26",
+   "text": "Lepiej na później: „To”, z 1986 roku. Ponad pięćdziesiąt cztery godziny.",
+   "say": "Lepiej na później: To, z tysiąc dziewięćset osiemdziesiątego szóstego roku. Ponad pięćdziesiąt cztery godziny."
+  },
+  {
+   "id": "G27",
+   "text": "Dla wielu czytelników to arcydzieło. Ale jeśli to twój pierwszy King i nie złapiesz jego rytmu, łatwo utknąć w połowie."
+  },
+  {
+   "id": "G28",
+   "text": "„Bastion”, z 1978 roku: prawie czterdzieści osiem godzin.",
+   "say": "Bastion, z tysiąc dziewięćset siedemdziesiątego ósmego roku: prawie czterdzieści osiem godzin."
+  },
+  {
+   "id": "G29",
+   "text": "I „Mroczna Wieża”: siedem tomów, prawie sto czterdzieści sześć godzin słuchania. To centrum jego uniwersum. Lepiej sięgnąć po nią, kiedy masz już za sobą inne jego książki."
+  },
+  {
+   "id": "G30",
+   "text": "Bo u Kinga wszystko się łączy. Mały Danny z „Lśnienia” wraca jako dorosły w „Doktorze Śnie”."
+  },
+  {
+   "id": "G31",
+   "text": "W „Dallas ’63” bohater trafia do Derry, miasta z „To”, i poznaje Beverly i Richiego.",
+   "say": "W Dallas sześćdziesiąt trzy bohater trafia do Derry, miasta z To, i poznaje Bewerli i Riczjego."
+  },
+  {
+   "id": "G32",
+   "text": "Randall Flagg z „Bastionu” wraca w „Mrocznej Wieży”. A Holly Gibney, która pojawia się w „Panu Mercedesie”, w końcu dostała własną powieść: „Holly”.",
+   "say": "Rendal Flag z Bastionu wraca w Mrocznej Wieży. A Holi Gibni, która pojawia się w Panu Mercedesie, w końcu dostała własną powieść: Holi."
+  },
+  {
+   "id": "G33",
+   "text": "Kolejność ma znaczenie tylko w trzech przypadkach: „Mroczna Wieża”; trylogia o Billu Hodgesie przed „Outsiderem” i „Holly”; i „Lśnienie” przed „Doktorem Snem”.",
+   "say": "Kolejność ma znaczenie tylko w trzech przypadkach: Mroczna Wieża; trylogia o Billu Hodżesie przed Autsajderem i Holi; i Lśnienie przed Doktorem Snem."
+  },
+  {
+   "id": "G34",
+   "text": "Po polsku audiobooki Kinga wydają głównie Albatros i Prószyński. I King ma u nas swoje głosy: Leszek Filipowicz przeczytał prawie dwadzieścia jego książek, Jan Peszek całą trylogię o Billu Hodgesie, a Mateusz Drozda wszystkie tomy „Mrocznej Wieży”.",
+   "say": "Po polsku audiobooki Kinga wydają głównie Albatros i Prószyński. I King ma u nas swoje głosy: Leszek Filipowicz przeczytał prawie dwadzieścia jego książek, Jan Peszek całą trylogię o Billu Hodżesie, a Mateusz Drozda wszystkie tomy Mrocznej Wieży."
+  },
+  {
+   "id": "G35",
+   "text": "A Zbigniew Zapasiewicz czyta „Zieloną milę” i cztery opowieści z „Czterech pór roku”, w tym „Skazanych na Shawshank”.",
+   "say": "A Zbigniew Zapasiewicz czyta Zieloną milę i cztery opowieści z Czterech pór roku, w tym Skazanych na Szołszenk."
+  },
+  {
+   "id": "G36",
+   "text": "Na sonorbooks.pl sprawdzisz lektora, czas trwania i to, gdzie posłuchać audiobooka i za ile.",
+   "say": "Na sonorbooks kropka pe el sprawdzisz lektora, czas trwania i to, gdzie posłuchać audiobooka i za ile."
+  },
+  {
+   "id": "G37",
+   "text": "Jeśli chcesz się bać: „Carrie”, potem „Lśnienie”, „Doktor Sen” i na końcu „To”.",
+   "say": "Jeśli chcesz się bać: Kerri, potem Lśnienie, Doktor Sen i na końcu To."
+  },
+  {
+   "id": "G38",
+   "text": "Jeśli wolisz emocje i fantasy: „Zielona mila”, „Dallas ’63” i „Baśniowa opowieść”.",
+   "say": "Jeśli wolisz emocje i fantazy: Zielona mila, Dallas sześćdziesiąt trzy i Baśniowa opowieść."
+  },
+  {
+   "id": "G39",
+   "text": "Jeśli wciąga cię kryminał: „Pan Mercedes”, „Znalezione nie kradzione”, „Koniec warty”, „Outsider” i „Holly”. A na końcu drogi czeka „Mroczna Wieża”.",
+   "say": "Jeśli wciąga cię kryminał: Pan Mercedes, Znalezione nie kradzione, Koniec warty, Autsajder i Holi. A na końcu drogi czeka Mroczna Wieża."
+  },
+  {
+   "id": "G40",
+   "text": "A twoja pierwsza książka Kinga? Napisz w komentarzu. I daj znać, którego autora chcesz w następnym odcinku."
+  },
+  {
+   "id": "G41",
+   "text": "Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

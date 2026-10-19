@@ -7,7 +7,7 @@ import { clamp, easeInOut, easeOut, Key, keyframes } from '../../lib/anim';
 import { Stage } from '../../components/Stage';
 
 // ————————————————————————————————————————————————————————————————
-// «Por dónde y cómo empezar a leer» · sistema visual del episodio de Stephen King.
+// «Od czego i jak zacząć» (versión polaca de «Por dónde y cómo empezar a leer») · sistema visual del episodio de Stephen King.
 // Base SonorBooks (blanco cálido, amarillo #FFCA05, tinta, Ubuntu) + un rojo de episodio para el miedo y los hilos,
 // y el escenario «noche» de la marca para el gancho y el tablero de conexiones.
 // ————————————————————————————————————————————————————————————————
@@ -17,7 +17,7 @@ export const KR_DEEP = '#7A0A12';
 export const KR_SOFT = '#FBE7E8';
 export const PAPER = '#F6F1E7';
 
-export const SERIES = 'Por dónde y cómo empezar a leer';
+export const SERIES = 'Od czego i jak zacząć';
 
 // Fondo claro del episodio: el cálido de SonorBooks con un halo rojo muy tenue abajo a la izquierda y grano fino.
 export const SkStage: React.FC<{ children?: React.ReactNode; still?: boolean; redGlow?: number }> = ({ children, still = false, redGlow = 1 }) => {
@@ -106,51 +106,52 @@ export type BookDef = {
   spineTitle?: string; num?: number;
 };
 
-// Datos de duración y narrador: fichas de SonorBooks España (14/10/2026).
+// Datos de duración y lector: grabaciones polacas de Audioteka (fuente de las fichas de sonorbooks.pl), 19/10/2026.
+// research/pl/stephen-king/fichas_pl.json. Las claves siguen siendo las del episodio español (ilustraciones de covers.ts).
 export const BOOKS: Record<string, BookDef> = {
-  resplandor: { title: 'El resplandor', year: 1977, bg: '#1B2838', fg: '#F4EFE6', accent: '#E3463C', icon: 'hotel', hours: '18 h 32 min', narrator: 'Julio Caycedo' },
-  misery: { title: 'Misery', year: 1987, bg: '#EEE7D9', fg: '#1A1A1A', accent: KR, icon: 'typewriter', hours: '14 h 12 min', narrator: 'Jane Santos' },
-  milla: { title: 'La milla verde', year: 1996, bg: '#2D5A3D', fg: '#F2EEDC', accent: '#E8D59A', icon: 'corridor', hours: '14 h 34 min', narrator: 'Juan Sebastián Aragón' },
-  d2263: { title: '22/11/63', year: 2011, bg: '#D8A23F', fg: '#1C1C1C', accent: '#8C1C13', icon: 'calendar', hours: '32 h 43 min', narrator: 'Carlos Manuel Vesga' },
-  mercedes: { title: 'Mr. Mercedes', year: 2014, bg: '#121212', fg: '#FFFFFF', accent: '#FFCA05', icon: 'letter', hours: '17 h 18 min', narrator: 'Carlos Manuel Vesga' },
-  carrie: { title: 'Carrie', year: 1974, bg: '#F1D5DA', fg: '#3A0A10', accent: KR, icon: 'tiara', hours: '7 h 25 min', narrator: 'José Posada' },
-  elevacion: { title: 'Elevación', year: 2018, bg: '#DCE8F4', fg: '#16324F', accent: '#3F6E9E', icon: 'feather', hours: '3 h 17 min', narrator: 'Cristian Villamil' },
-  it: { title: 'It', year: 1986, bg: '#7A0A12', fg: '#F7F1E8', accent: '#F7F1E8', icon: 'boat', hours: '46 h 24 min', narrator: 'Julio Caycedo' },
-  apocalipsis: { title: 'Apocalipsis', year: 1978, bg: '#3B3E44', fg: '#F2F2F2', accent: '#E5484D', icon: 'virus', hours: '48 h 16 min', narrator: 'Cristian Villamil' },
-  doctor: { title: 'Doctor Sueño', year: 2013, bg: '#24314A', fg: '#F4EFE6', accent: '#9DB8E2', icon: 'moon', hours: '21 h 18 min', narrator: 'Carlos Manuel Vesga' },
-  cuento: { title: 'Cuento de hadas', year: 2022, bg: '#4A2E80', fg: '#F7E9C6', accent: '#F2C94C', icon: 'key', hours: '25 h 50 min', narrator: 'Julio Caycedo' },
-  holly: { title: 'Holly', year: 2023, bg: '#F4F1EA', fg: '#101010', accent: '#2457C5', icon: 'magnifier', hours: '18 h 25 min' },
-  visitante: { title: 'El visitante', year: 2018, bg: '#5A3F31', fg: '#F4EFE6', accent: '#F2C94C', icon: 'eye', hours: '21 h 3 min' },
-  quien: { title: 'Quien pierde paga', year: 2015, bg: '#103E40', fg: '#F2EEDC', accent: '#F2C94C', icon: 'notebook', hours: '15 h 12 min' },
-  fin: { title: 'Fin de guardia', year: 2016, bg: '#38393D', fg: '#F2F2F2', accent: '#6FD39A', icon: 'pulse', hours: '14 h 28 min' },
+  resplandor: { title: 'Lśnienie', year: 1977, bg: '#1B2838', fg: '#F4EFE6', accent: '#E3463C', icon: 'hotel', hours: '21 h 8 min', narrator: 'Woronowicz · Kulesza · Gosztyła' },
+  misery: { title: 'Misery', year: 1987, bg: '#EEE7D9', fg: '#1A1A1A', accent: KR, icon: 'typewriter', hours: '15 h 10 min', narrator: 'Krzysztof Plewako-Szczerbiński' },
+  milla: { title: 'Zielona mila', year: 1996, bg: '#2D5A3D', fg: '#F2EEDC', accent: '#E8D59A', icon: 'corridor', hours: '15 h 35 min', narrator: 'Zbigniew Zapasiewicz' },
+  d2263: { title: 'Dallas ’63', year: 2011, bg: '#D8A23F', fg: '#1C1C1C', accent: '#8C1C13', icon: 'calendar', hours: '27 h 27 min', narrator: 'Filip Kosior' },
+  mercedes: { title: 'Pan Mercedes', year: 2014, bg: '#121212', fg: '#FFFFFF', accent: '#FFCA05', icon: 'letter', hours: '15 h 31 min', narrator: 'Jan Peszek' },
+  carrie: { title: 'Carrie', year: 1974, bg: '#F1D5DA', fg: '#3A0A10', accent: KR, icon: 'tiara', hours: '7 h 12 min', narrator: 'Filip Kosior' },
+  elevacion: { title: 'Uniesienie', year: 2018, bg: '#DCE8F4', fg: '#16324F', accent: '#3F6E9E', icon: 'feather', hours: '3 h 4 min', narrator: 'Leszek Filipowicz' },
+  it: { title: 'To', year: 1986, bg: '#7A0A12', fg: '#F7F1E8', accent: '#F7F1E8', icon: 'boat', hours: '54 h 1 min', narrator: 'Leszek Filipowicz' },
+  apocalipsis: { title: 'Bastion', year: 1978, bg: '#3B3E44', fg: '#F2F2F2', accent: '#E5484D', icon: 'virus', hours: '47 h 52 min', narrator: 'Marcin Popczyński' },
+  doctor: { title: 'Doktor Sen', year: 2013, bg: '#24314A', fg: '#F4EFE6', accent: '#9DB8E2', icon: 'moon', hours: '20 h 39 min', narrator: 'Roch Siemianowski' },
+  cuento: { title: 'Baśniowa opowieść', year: 2022, bg: '#4A2E80', fg: '#F7E9C6', accent: '#F2C94C', icon: 'key', hours: '22 h 10 min', narrator: 'Maciej Kowalik' },
+  holly: { title: 'Holly', year: 2023, bg: '#F4F1EA', fg: '#101010', accent: '#2457C5', icon: 'magnifier', hours: '19 h 38 min' },
+  visitante: { title: 'Outsider', year: 2018, bg: '#5A3F31', fg: '#F4EFE6', accent: '#F2C94C', icon: 'eye', hours: '19 h 52 min' },
+  quien: { title: 'Znalezione nie kradzione', year: 2015, bg: '#103E40', fg: '#F2EEDC', accent: '#F2C94C', icon: 'notebook', hours: '14 h 4 min' },
+  fin: { title: 'Koniec warty', year: 2016, bg: '#38393D', fg: '#F2F2F2', accent: '#6FD39A', icon: 'pulse', hours: '13 h 38 min' },
   christine: { title: 'Christine', year: 1983, bg: '#8C1C13', fg: '#F7F1E8', accent: '#F2C94C', icon: 'car' },
   dolores: { title: 'Dolores Claiborne', year: 1992, bg: '#3E5566', fg: '#F1ECE2', accent: '#E9D9A6', icon: 'moon' },
-  gerald: { title: 'El juego de Gerald', year: 1992, bg: '#5B2333', fg: '#F7F1E8', accent: '#E9D9A6', icon: 'key' },
-  billy: { title: 'Billy Summers', year: 2021, bg: '#2F3A2E', fg: '#F2EEDC', accent: '#E8D59A', icon: 'notebook', hours: '18 h 13 min' },
-  cuatro: { title: 'Las cuatro estaciones', year: 1982, bg: '#E8DCC4', fg: '#2A2A2A', accent: '#8C1C13', icon: 'stars' },
-  umbral: { title: 'El umbral de la noche', year: 1978, bg: '#1F2630', fg: '#EFE9DF', accent: '#9DB8E2', icon: 'door' },
-  oscuridad: { title: 'Si te gusta la oscuridad', year: 2024, bg: '#101010', fg: '#F2F2F2', accent: '#C1121F', icon: 'moon', hours: '22 h 1 min' },
-  salem: { title: "El misterio de Salem's Lot", year: 1975, bg: '#2A2E33', fg: '#EFE9DF', accent: KR, icon: 'bat', spineTitle: "Salem's Lot" },
-  mientras: { title: 'Mientras escribo', year: 2000, bg: '#FFFFFF', fg: '#101010', accent: '#FFCA05', icon: 'pencil' },
-  bachman: { title: 'Rabia', year: 1977, bg: '#CBC3B5', fg: '#1D1D1D', accent: '#1D1D1D', icon: 'mask', author: 'Richard Bachman' },
-  torre1: { title: 'El pistolero', year: 1982, bg: '#2B2238', fg: '#F1E6D2', accent: '#D9A441', icon: 'tower', num: 1, hours: '7 h 44 min' },
-  torre2: { title: 'La llegada de los tres', year: 1987, bg: '#2F2540', fg: '#F1E6D2', accent: '#D9A441', icon: 'door', num: 2, hours: '13 h 55 min' },
-  torre3: { title: 'Las tierras baldías', year: 1991, bg: '#33283F', fg: '#F1E6D2', accent: '#D9A441', icon: 'stars', num: 3, hours: '19 h 13 min' },
-  torre4: { title: 'Mago y cristal', year: 1997, bg: '#372A45', fg: '#F1E6D2', accent: '#D9A441', icon: 'moon', num: 4, hours: '29 h 6 min' },
-  torre5: { title: 'Lobos del Calla', year: 2003, bg: '#3B2D49', fg: '#F1E6D2', accent: '#D9A441', icon: 'eye', num: 5, hours: '29 h 16 min' },
-  torre6: { title: 'Canción de Susannah', year: 2004, bg: '#3F304D', fg: '#F1E6D2', accent: '#D9A441', icon: 'key', num: 6, hours: '15 h 35 min' },
-  torre7: { title: 'La Torre Oscura', year: 2004, bg: '#433352', fg: '#F1E6D2', accent: '#D9A441', icon: 'tower', num: 7, hours: '34 h' },
+  gerald: { title: 'Gra Geralda', year: 1992, bg: '#5B2333', fg: '#F7F1E8', accent: '#E9D9A6', icon: 'key' },
+  billy: { title: 'Billy Summers', year: 2021, bg: '#2F3A2E', fg: '#F2EEDC', accent: '#E8D59A', icon: 'notebook', hours: '16 h 33 min' },
+  cuatro: { title: 'Cztery pory roku', year: 1982, bg: '#E8DCC4', fg: '#2A2A2A', accent: '#8C1C13', icon: 'stars' },
+  umbral: { title: 'Nocna zmiana', year: 1978, bg: '#1F2630', fg: '#EFE9DF', accent: '#9DB8E2', icon: 'door' },
+  oscuridad: { title: 'Im mroczniej, tym lepiej', year: 2024, bg: '#101010', fg: '#F2F2F2', accent: '#C1121F', icon: 'moon', hours: '21 h 58 min' },
+  salem: { title: 'Miasteczko Salem', year: 1975, bg: '#2A2E33', fg: '#EFE9DF', accent: KR, icon: 'bat' },
+  mientras: { title: 'Jak pisać. Pamiętnik rzemieślnika', year: 2000, bg: '#FFFFFF', fg: '#101010', accent: '#FFCA05', icon: 'pencil', spineTitle: 'Jak pisać' },
+  bachman: { title: 'Rage', year: 1977, bg: '#CBC3B5', fg: '#1D1D1D', accent: '#1D1D1D', icon: 'mask', author: 'Richard Bachman' },
+  torre1: { title: 'Roland', year: 1982, bg: '#2B2238', fg: '#F1E6D2', accent: '#D9A441', icon: 'tower', num: 1, hours: '11 h 15 min' },
+  torre2: { title: 'Powołanie trójki', year: 1987, bg: '#2F2540', fg: '#F1E6D2', accent: '#D9A441', icon: 'door', num: 2, hours: '13 h 50 min' },
+  torre3: { title: 'Ziemie jałowe', year: 1991, bg: '#33283F', fg: '#F1E6D2', accent: '#D9A441', icon: 'stars', num: 3, hours: '18 h 57 min' },
+  torre4: { title: 'Czarnoksiężnik i kryształ', year: 1997, bg: '#372A45', fg: '#F1E6D2', accent: '#D9A441', icon: 'moon', num: 4, hours: '28 h 56 min' },
+  torre5: { title: 'Wilki z Calla', year: 2003, bg: '#3B2D49', fg: '#F1E6D2', accent: '#D9A441', icon: 'eye', num: 5, hours: '27 h 33 min' },
+  torre6: { title: 'Pieśń Susannah', year: 2004, bg: '#3F304D', fg: '#F1E6D2', accent: '#D9A441', icon: 'key', num: 6, hours: '16 h 1 min' },
+  torre7: { title: 'Mroczna Wieża', year: 2004, bg: '#433352', fg: '#F1E6D2', accent: '#D9A441', icon: 'tower', num: 7, hours: '29 h 9 min' },
 };
 
-// Títulos en español de sus novelas (orden de publicación, hasta 2025): lomos del gancho.
+// Títulos polacos de sus novelas (orden de publicación, hasta 2025): lomos del gancho.
 export const NOVELS: string[] = [
-  'Carrie', "El misterio de Salem's Lot", 'El resplandor', 'Rabia', 'Apocalipsis', 'La larga marcha', 'La zona muerta', 'Ojos de fuego', 'Carretera maldita',
-  'Cujo', 'El fugitivo', 'El pistolero', 'Christine', 'Cementerio de animales', 'El ciclo del hombre lobo', 'El talismán', 'Los ojos del dragón', 'Maleficio',
-  'It', 'La llegada de los tres', 'Misery', 'Los Tommyknockers', 'La mitad oscura', 'Las tierras baldías', 'La tienda', 'El juego de Gerald', 'Dolores Claiborne',
-  'Insomnia', 'Rose Madder', 'La milla verde', 'Desesperación', 'Posesión', 'Mago y cristal', 'Un saco de huesos', 'La chica que amaba a Tom Gordon',
-  'El cazador de sueños', 'Casa Negra', 'Buick 8', 'Lobos del Calla', 'Canción de Susannah', 'La Torre Oscura', 'Colorado Kid', 'Cell', 'La historia de Lisey',
-  'Blaze', 'Duma Key', 'La cúpula', '22/11/63', 'El viento por la cerradura', 'Joyland', 'Doctor Sueño', 'Mr. Mercedes', 'Revival', 'Quien pierde paga',
-  'Fin de guardia', 'Bellas durmientes', 'El visitante', 'Elevación', 'El Instituto', 'Después', 'Billy Summers', 'Cuento de hadas', 'Holly', 'No tengas miedo',
+  'Carrie', 'Miasteczko Salem', 'Lśnienie', 'Rage', 'Bastion', 'Wielki marsz', 'Martwa strefa', 'Podpalaczka', 'Ostatni bastion Barta Dawesa',
+  'Cujo', 'Uciekinier', 'Roland', 'Christine', 'Smętarz dla zwierzaków', 'Rok wilkołaka', 'Talizman', 'Oczy smoka', 'Chudszy',
+  'To', 'Powołanie trójki', 'Misery', 'Stukostrachy', 'Mroczna połowa', 'Ziemie jałowe', 'Sklepik z marzeniami', 'Gra Geralda', 'Dolores Claiborne',
+  'Bezsenność', 'Rose Madder', 'Zielona mila', 'Desperacja', 'Regulatorzy', 'Czarnoksiężnik i kryształ', 'Worek kości', 'Dziewczyna, która kochała Toma Gordona',
+  'Łowca snów', 'Czarny dom', 'Buick 8', 'Wilki z Calla', 'Pieśń Susannah', 'Mroczna Wieża', 'Colorado Kid', 'Komórka', 'Historia Lisey',
+  'Blaze', 'Ręka mistrza', 'Pod kopułą', 'Dallas ’63', 'Wiatr przez dziurkę od klucza', 'Joyland', 'Doktor Sen', 'Pan Mercedes', 'Przebudzenie', 'Znalezione nie kradzione',
+  'Koniec warty', 'Śpiące królewny', 'Outsider', 'Uniesienie', 'Instytut', 'Później', 'Billy Summers', 'Baśniowa opowieść', 'Holly', 'Nie wymiękaj',
 ];
 
 // Iconos propios de las cubiertas (trazo, viewBox 24×24). Ilustraciones genéricas, sin portadas ni personajes reales.
@@ -400,7 +401,7 @@ export const rampOut = (frame: number, a: number, b: number) => interpolate(fram
 // ———————————————— Datos en pantalla ————————————————
 
 // Medidor de miedo: tres marcas que se llenan de rojo.
-export const FearMeter: React.FC<{ level: 0 | 1 | 2 | 3; at: number; size?: number; label?: string; dark?: boolean }> = ({ level, at, size = 34, label = 'Miedo', dark = false }) => {
+export const FearMeter: React.FC<{ level: 0 | 1 | 2 | 3; at: number; size?: number; label?: string; dark?: boolean }> = ({ level, at, size = 34, label = 'Strach', dark = false }) => {
   const frame = useCurrentFrame();
   return (
     <div style={{ display: 'inline-flex', alignItems: 'center', gap: size * 0.45 }}>

@@ -1,199 +1,155 @@
 {
  "id": "G16",
- "hash": "627978b99702",
- "text": "Es King en estado puro: lo que más asusta no son los fantasmas, sino lo que le va pasando al padre. Y en audiolibro se escucha en unas dieciocho horas y media, con la voz de Julio Caycedo.",
- "duration": 13.12,
+ "hash": "110cf5450a3c",
+ "text": "Najbardziej przeraża to, co dzieje się z ojcem. A po polsku to wyjątkowe wydanie: słuchowisko, w którym grają Adam Woronowicz, Agata Kulesza i Krzysztof Gosztyła. Ponad dwadzieścia jeden godzin.",
+ "duration": 11.963,
  "words": [
   {
-   "w": "Es",
+   "w": "Najbardziej",
    "s": 0.0,
-   "e": 0.16
-  },
-  {
-   "w": "King",
-   "s": 0.32,
    "e": 0.56
   },
   {
-   "w": "en",
-   "s": 0.64,
-   "e": 0.72
+   "w": "przeraża",
+   "s": 0.6,
+   "e": 1.12
   },
   {
-   "w": "estado",
-   "s": 0.8,
-   "e": 1.2
+   "w": "to,",
+   "s": 1.24,
+   "e": 1.6
   },
   {
-   "w": "puro:",
-   "s": 1.28,
-   "e": 2.08
+   "w": "co",
+   "s": 1.68,
+   "e": 1.76
   },
   {
-   "w": "lo",
-   "s": 2.16,
+   "w": "dzieje",
+   "s": 1.813,
+   "e": 2.0
+  },
+  {
+   "w": "się",
+   "s": 2.04,
+   "e": 2.16
+  },
+  {
+   "w": "z",
+   "s": 2.2,
    "e": 2.24
   },
   {
-   "w": "que",
-   "s": 2.28,
-   "e": 2.32
-  },
-  {
-   "w": "más",
-   "s": 2.36,
-   "e": 2.48
-  },
-  {
-   "w": "asusta",
-   "s": 2.56,
-   "e": 2.96
-  },
-  {
-   "w": "no",
-   "s": 3.04,
+   "w": "ojcem.",
+   "s": 2.32,
    "e": 3.2
   },
   {
-   "w": "son",
-   "s": 3.28,
+   "w": "A",
+   "s": 3.24,
+   "e": 3.28
+  },
+  {
+   "w": "po",
+   "s": 3.32,
    "e": 3.36
   },
   {
-   "w": "los",
+   "w": "polsku",
    "s": 3.44,
-   "e": 3.6
+   "e": 3.76
   },
   {
-   "w": "fantasmas,",
-   "s": 3.72,
-   "e": 4.56
+   "w": "to",
+   "s": 3.84,
+   "e": 4.0
   },
   {
-   "w": "sino",
-   "s": 4.6,
-   "e": 4.8
+   "w": "wyjątkowe",
+   "s": 4.08,
+   "e": 4.64
   },
   {
-   "w": "lo",
-   "s": 4.84,
-   "e": 4.88
+   "w": "wydanie:",
+   "s": 4.72,
+   "e": 5.44
   },
   {
-   "w": "que",
-   "s": 4.96,
-   "e": 5.0
+   "w": "słuchowisko,",
+   "s": 5.56,
+   "e": 6.027
   },
   {
-   "w": "le",
-   "s": 5.04,
-   "e": 5.12
+   "w": "w",
+   "s": 6.053,
+   "e": 6.08
   },
   {
-   "w": "va",
-   "s": 5.2,
-   "e": 5.28
+   "w": "którym",
+   "s": 6.12,
+   "e": 6.36
   },
   {
-   "w": "pasando",
-   "s": 5.4,
-   "e": 5.76
+   "w": "grają",
+   "s": 6.4,
+   "e": 6.8
   },
   {
-   "w": "al",
-   "s": 5.84,
-   "e": 5.92
-  },
-  {
-   "w": "padre.",
-   "s": 6.0,
-   "e": 6.84
-  },
-  {
-   "w": "Y",
-   "s": 6.88,
-   "e": 6.92
-  },
-  {
-   "w": "en",
-   "s": 6.96,
+   "w": "Adam",
+   "s": 6.92,
    "e": 7.04
   },
   {
-   "w": "audiolibro",
-   "s": 7.16,
-   "e": 7.84
+   "w": "Woronowicz,",
+   "s": 7.08,
+   "e": 7.76
   },
   {
-   "w": "se",
-   "s": 7.92,
-   "e": 7.96
+   "w": "Agata",
+   "s": 7.84,
+   "e": 8.08
   },
   {
-   "w": "escucha",
-   "s": 8.0,
-   "e": 8.4
+   "w": "Kulesza",
+   "s": 8.16,
+   "e": 8.64
   },
   {
-   "w": "en",
-   "s": 8.44,
-   "e": 8.48
-  },
-  {
-   "w": "unas",
-   "s": 8.6,
+   "w": "i",
+   "s": 8.68,
    "e": 8.72
   },
   {
-   "w": "dieciocho",
+   "w": "Krzysztof",
    "s": 8.8,
-   "e": 9.28
+   "e": 9.2
   },
   {
-   "w": "horas",
-   "s": 9.36,
-   "e": 9.6
+   "w": "Gosztyła.",
+   "s": 9.24,
+   "e": 10.107
   },
   {
-   "w": "y",
-   "s": 9.68,
-   "e": 9.72
+   "w": "Ponad",
+   "s": 10.133,
+   "e": 10.48
   },
   {
-   "w": "media,",
-   "s": 9.76,
-   "e": 10.453
-  },
-  {
-   "w": "con",
-   "s": 10.507,
-   "e": 10.56
-  },
-  {
-   "w": "la",
-   "s": 10.6,
-   "e": 10.64
-  },
-  {
-   "w": "voz",
-   "s": 10.72,
+   "w": "dwadzieścia",
+   "s": 10.52,
    "e": 11.04
   },
   {
-   "w": "de",
+   "w": "jeden",
    "s": 11.12,
-   "e": 11.2
+   "e": 11.28
   },
   {
-   "w": "Julio",
-   "s": 11.28,
-   "e": 11.6
-  },
-  {
-   "w": "Caycedo.",
-   "s": 11.68,
-   "e": 13.12
+   "w": "godzin.",
+   "s": 11.36,
+   "e": 11.963
   }
  ],
- "speechEnd": 12.248
+ "trimmed": "110cf5450a3c",
+ "speechEnd": 11.803
 }

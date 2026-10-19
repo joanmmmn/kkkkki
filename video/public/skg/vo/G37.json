@@ -1,89 +1,75 @@
 {
  "id": "G37",
- "hash": "037ef1e26028",
- "text": "Resumiendo: tres rutas. Si quieres miedo: Carrie, El resplandor, Doctor Sueño y, cuando estés listo, It.",
- "duration": 9.6,
+ "hash": "90d82564cfe8",
+ "text": "Jeśli chcesz się bać: „Carrie”, potem „Lśnienie”, „Doktor Sen” i na końcu „To”.",
+ "duration": 5.8,
  "words": [
   {
-   "w": "Resumiendo:",
+   "w": "Jeśli",
    "s": 0.0,
-   "e": 1.12
+   "e": 0.24
   },
   {
-   "w": "tres",
-   "s": 1.28,
-   "e": 1.44
+   "w": "chcesz",
+   "s": 0.32,
+   "e": 0.56
   },
   {
-   "w": "rutas.",
-   "s": 1.52,
-   "e": 2.48
+   "w": "się",
+   "s": 0.6,
+   "e": 0.72
   },
   {
-   "w": "Si",
-   "s": 2.56,
-   "e": 2.64
+   "w": "bać:",
+   "s": 0.8,
+   "e": 1.52
   },
   {
-   "w": "quieres",
-   "s": 2.72,
-   "e": 2.96
+   "w": "„Carrie”,",
+   "s": 1.6,
+   "e": 2.16
   },
   {
-   "w": "miedo:",
-   "s": 3.04,
-   "e": 3.76
+   "w": "potem",
+   "s": 2.24,
+   "e": 2.56
   },
   {
-   "w": "Carrie,",
-   "s": 3.8,
-   "e": 4.48
+   "w": "„Lśnienie”,",
+   "s": 2.64,
+   "e": 3.44
   },
   {
-   "w": "El",
-   "s": 4.56,
-   "e": 4.64
+   "w": "„Doktor",
+   "s": 3.52,
+   "e": 3.84
   },
   {
-   "w": "resplandor,",
-   "s": 4.72,
-   "e": 5.76
+   "w": "Sen”",
+   "s": 3.92,
+   "e": 4.32
   },
   {
-   "w": "Doctor",
-   "s": 5.96,
-   "e": 6.16
+   "w": "i",
+   "s": 4.36,
+   "e": 4.4
   },
   {
-   "w": "Sueño",
-   "s": 6.24,
-   "e": 6.64
+   "w": "na",
+   "s": 4.48,
+   "e": 4.56
   },
   {
-   "w": "y,",
-   "s": 6.96,
-   "e": 7.2
+   "w": "końcu",
+   "s": 4.68,
+   "e": 5.12
   },
   {
-   "w": "cuando",
-   "s": 7.28,
-   "e": 7.52
-  },
-  {
-   "w": "estés",
-   "s": 7.6,
-   "e": 7.84
-  },
-  {
-   "w": "listo,",
-   "s": 8.0,
-   "e": 8.64
-  },
-  {
-   "w": "It.",
-   "s": 8.76,
-   "e": 9.6
+   "w": "„To”.",
+   "s": 5.44,
+   "e": 5.8
   }
  ],
- "speechEnd": 9.06
+ "trimmed": "90d82564cfe8",
+ "speechEnd": 5.73
 }

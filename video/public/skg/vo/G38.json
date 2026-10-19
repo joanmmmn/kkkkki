@@ -1,94 +1,75 @@
 {
  "id": "G38",
- "hash": "83db67421ae6",
- "text": "Si quieres emoción y fantasía: La milla verde, 22/11/63 y Cuento de hadas.",
- "duration": 7.6,
+ "hash": "c0972275a7fe",
+ "text": "Jeśli wolisz emocje i fantasy: „Zielona mila”, „Dallas ’63” i „Baśniowa opowieść”.",
+ "duration": 6.563,
  "words": [
   {
-   "w": "Si",
+   "w": "Jeśli",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.24
   },
   {
-   "w": "quieres",
-   "s": 0.24,
-   "e": 0.48
+   "w": "wolisz",
+   "s": 0.32,
+   "e": 0.64
   },
   {
-   "w": "emoción",
-   "s": 0.56,
-   "e": 1.04
+   "w": "emocje",
+   "s": 0.76,
+   "e": 1.2
   },
   {
-   "w": "y",
-   "s": 1.08,
-   "e": 1.12
-  },
-  {
-   "w": "fantasía:",
+   "w": "i",
    "s": 1.24,
-   "e": 2.08
+   "e": 1.28
   },
   {
-   "w": "La",
-   "s": 2.32,
+   "w": "fantazy:",
+   "s": 1.36,
    "e": 2.4
   },
   {
-   "w": "milla",
+   "w": "Zielona",
    "s": 2.48,
-   "e": 2.72
+   "e": 2.8
   },
   {
-   "w": "verde,",
-   "s": 2.84,
+   "w": "mila,",
+   "s": 2.88,
    "e": 3.44
   },
   {
-   "w": "veintidós,",
-   "s": 3.52,
-   "e": 4.48
+   "w": "Dallas",
+   "s": 3.64,
+   "e": 3.84
   },
   {
-   "w": "once,",
-   "s": 4.68,
-   "e": 5.12
+   "w": "sześćdziesiąt",
+   "s": 3.92,
+   "e": 4.4
   },
   {
-   "w": "sesenta",
-   "s": 5.2,
-   "e": 5.52
+   "w": "trzy",
+   "s": 4.48,
+   "e": 4.64
   },
   {
-   "w": "y",
-   "s": 5.56,
-   "e": 5.6
+   "w": "i",
+   "s": 4.96,
+   "e": 5.2
   },
   {
-   "w": "tres",
-   "s": 5.68,
-   "e": 5.84
+   "w": "Baśniowa",
+   "s": 5.28,
+   "e": 5.68
   },
   {
-   "w": "y",
-   "s": 6.32,
-   "e": 6.4
-  },
-  {
-   "w": "Cuento",
-   "s": 6.56,
-   "e": 6.88
-  },
-  {
-   "w": "de",
-   "s": 6.96,
-   "e": 7.04
-  },
-  {
-   "w": "hadas.",
-   "s": 7.08,
-   "e": 7.6
+   "w": "opowieść.",
+   "s": 5.8,
+   "e": 6.563
   }
  ],
- "speechEnd": 7.6
+ "trimmed": "c0972275a7fe",
+ "speechEnd": 6.403
 }

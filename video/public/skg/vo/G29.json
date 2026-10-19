@@ -1,109 +1,145 @@
 {
  "id": "G29",
- "hash": "7bd8932d5be4",
- "text": "Es el centro de todo su universo. Así que la disfrutarás más si llegas con otros libros suyos ya leídos.",
- "duration": 7.04,
+ "hash": "56082f074342",
+ "text": "I „Mroczna Wieża”: siedem tomów, prawie sto czterdzieści sześć godzin słuchania. To centrum jego uniwersum. Lepiej sięgnąć po nią, kiedy masz już za sobą inne jego książki.",
+ "duration": 10.1,
  "words": [
   {
-   "w": "Es",
+   "w": "I",
    "s": 0.0,
-   "e": 0.24
+   "e": 0.08
   },
   {
-   "w": "el",
-   "s": 0.32,
-   "e": 0.4
+   "w": "„Mroczna",
+   "s": 0.24,
+   "e": 0.64
   },
   {
-   "w": "centro",
-   "s": 0.48,
-   "e": 0.88
-  },
-  {
-   "w": "de",
-   "s": 1.0,
-   "e": 1.12
-  },
-  {
-   "w": "todo",
-   "s": 1.28,
+   "w": "Wieża”:",
+   "s": 0.72,
    "e": 1.44
   },
   {
-   "w": "su",
-   "s": 1.48,
-   "e": 1.52
+   "w": "siedem",
+   "s": 1.52,
+   "e": 1.76
   },
   {
-   "w": "universo.",
-   "s": 1.6,
-   "e": 2.68
+   "w": "tomów,",
+   "s": 1.84,
+   "e": 2.4
   },
   {
-   "w": "Así",
-   "s": 2.72,
+   "w": "prawie",
+   "s": 2.44,
+   "e": 2.72
+  },
+  {
+   "w": "sto",
+   "s": 2.8,
    "e": 2.96
   },
   {
-   "w": "que",
-   "s": 3.0,
-   "e": 3.04
+   "w": "czterdzieści",
+   "s": 3.04,
+   "e": 3.6
   },
   {
-   "w": "la",
-   "s": 3.08,
-   "e": 3.12
-  },
-  {
-   "w": "disfrutarás",
-   "s": 3.2,
+   "w": "sześć",
+   "s": 3.68,
    "e": 3.84
   },
   {
-   "w": "más",
-   "s": 3.88,
-   "e": 4.16
+   "w": "godzin",
+   "s": 4.0,
+   "e": 4.24
   },
   {
-   "w": "si",
-   "s": 4.24,
-   "e": 4.4
+   "w": "słuchania.",
+   "s": 4.32,
+   "e": 5.28
   },
   {
-   "w": "llegas",
-   "s": 4.453,
-   "e": 4.72
+   "w": "To",
+   "s": 5.36,
+   "e": 5.44
   },
   {
-   "w": "con",
-   "s": 4.8,
-   "e": 4.88
-  },
-  {
-   "w": "otros",
-   "s": 5.04,
-   "e": 5.2
-  },
-  {
-   "w": "libros",
-   "s": 5.28,
-   "e": 5.52
-  },
-  {
-   "w": "suyos",
+   "w": "centrum",
    "s": 5.56,
-   "e": 5.92
+   "e": 5.84
   },
   {
-   "w": "ya",
-   "s": 6.0,
-   "e": 6.08
+   "w": "jego",
+   "s": 5.88,
+   "e": 6.0
   },
   {
-   "w": "leídos.",
-   "s": 6.16,
-   "e": 7.04
+   "w": "uniwersum.",
+   "s": 6.08,
+   "e": 6.92
+  },
+  {
+   "w": "Lepiej",
+   "s": 6.96,
+   "e": 7.2
+  },
+  {
+   "w": "sięgnąć",
+   "s": 7.24,
+   "e": 7.6
+  },
+  {
+   "w": "po",
+   "s": 7.64,
+   "e": 7.68
+  },
+  {
+   "w": "nią,",
+   "s": 7.76,
+   "e": 7.88
+  },
+  {
+   "w": "kiedy",
+   "s": 7.92,
+   "e": 8.08
+  },
+  {
+   "w": "masz",
+   "s": 8.16,
+   "e": 8.28
+  },
+  {
+   "w": "już",
+   "s": 8.32,
+   "e": 8.427
+  },
+  {
+   "w": "za",
+   "s": 8.453,
+   "e": 8.48
+  },
+  {
+   "w": "sobą",
+   "s": 8.56,
+   "e": 8.88
+  },
+  {
+   "w": "inne",
+   "s": 8.96,
+   "e": 9.12
+  },
+  {
+   "w": "jego",
+   "s": 9.2,
+   "e": 9.36
+  },
+  {
+   "w": "książki.",
+   "s": 9.56,
+   "e": 10.1
   }
  ],
- "speechEnd": 6.708
+ "trimmed": "56082f074342",
+ "speechEnd": 9.94
 }

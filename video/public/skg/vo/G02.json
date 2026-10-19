@@ -1,99 +1,75 @@
 {
  "id": "G02",
- "hash": "01440175b116",
- "text": "Y una pregunta que todo el mundo se hace tarde o temprano: ¿por dónde empiezo con Stephen King?",
- "duration": 6.24,
+ "hash": "53deeb00b5dd",
+ "text": "I pytanie, które prędzej czy później zadaje sobie każdy: od czego zacząć Kinga?",
+ "duration": 4.929,
  "words": [
   {
-   "w": "Y",
+   "w": "I",
    "s": 0.0,
    "e": 0.08
   },
   {
-   "w": "una",
-   "s": 0.2,
-   "e": 0.32
+   "w": "pytanie,",
+   "s": 0.16,
+   "e": 0.533
   },
   {
-   "w": "pregunta",
-   "s": 0.4,
-   "e": 0.72
+   "w": "które",
+   "s": 0.587,
+   "e": 0.88
   },
   {
-   "w": "que",
-   "s": 0.8,
-   "e": 0.96
+   "w": "prędzej",
+   "s": 0.96,
+   "e": 1.28
   },
   {
-   "w": "todo",
-   "s": 1.04,
-   "e": 1.2
+   "w": "czy",
+   "s": 1.36,
+   "e": 1.44
   },
   {
-   "w": "el",
-   "s": 1.28,
-   "e": 1.36
-  },
-  {
-   "w": "mundo",
-   "s": 1.4,
-   "e": 1.68
-  },
-  {
-   "w": "se",
-   "s": 1.76,
+   "w": "później",
+   "s": 1.48,
    "e": 1.84
   },
   {
-   "w": "hace",
+   "w": "zadaje",
    "s": 1.88,
    "e": 2.16
   },
   {
-   "w": "tarde",
-   "s": 2.24,
-   "e": 2.48
+   "w": "sobie",
+   "s": 2.2,
+   "e": 2.4
   },
   {
-   "w": "o",
-   "s": 2.52,
-   "e": 2.56
+   "w": "każdy:",
+   "s": 2.48,
+   "e": 3.24
   },
   {
-   "w": "temprano:",
-   "s": 2.68,
-   "e": 3.627
+   "w": "od",
+   "s": 3.28,
+   "e": 3.44
   },
   {
-   "w": "¿por",
-   "s": 3.653,
+   "w": "czego",
+   "s": 3.52,
    "e": 3.76
   },
   {
-   "w": "dónde",
-   "s": 3.8,
-   "e": 4.0
+   "w": "zacząć",
+   "s": 3.84,
+   "e": 4.24
   },
   {
-   "w": "empiezo",
-   "s": 4.08,
-   "e": 4.64
-  },
-  {
-   "w": "con",
-   "s": 4.72,
-   "e": 4.8
-  },
-  {
-   "w": "Stephen",
-   "s": 4.88,
-   "e": 5.28
-  },
-  {
-   "w": "King?",
-   "s": 5.72,
-   "e": 6.24
+   "w": "Kinga?",
+   "s": 4.4,
+   "e": 4.929
   }
  ],
- "speechEnd": 6.01
+ "trimmed": "53deeb00b5dd",
+ "speechEnd": 4.769
 }

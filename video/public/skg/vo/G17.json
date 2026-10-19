@@ -1,49 +1,75 @@
 {
  "id": "G17",
- "hash": "ca2dfd20a276",
- "text": "Si prefieres un miedo sin nada sobrenatural: Misery.",
- "duration": 4.0,
+ "hash": "6ee2aa3731c1",
+ "text": "Drugie: „Misery”, z 1987 roku. Strach bez grama zjawisk nadprzyrodzonych.",
+ "duration": 7.454,
  "words": [
   {
-   "w": "Si",
+   "w": "Drugie:",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.88
   },
   {
-   "w": "prefieres",
-   "s": 0.16,
-   "e": 0.64
-  },
-  {
-   "w": "un",
-   "s": 0.72,
-   "e": 0.8
-  },
-  {
-   "w": "miedo",
-   "s": 0.84,
-   "e": 1.12
-  },
-  {
-   "w": "sin",
-   "s": 1.2,
-   "e": 1.36
-  },
-  {
-   "w": "nada",
-   "s": 1.44,
+   "w": "Mizeri,",
+   "s": 0.96,
    "e": 1.68
   },
   {
-   "w": "sobrenatural:",
-   "s": 1.76,
-   "e": 3.04
+   "w": "z",
+   "s": 1.72,
+   "e": 1.76
   },
   {
-   "w": "Misery.",
-   "s": 3.08,
-   "e": 4.0
+   "w": "tysiąc",
+   "s": 1.8,
+   "e": 2.16
+  },
+  {
+   "w": "dziewięćset",
+   "s": 2.2,
+   "e": 2.56
+  },
+  {
+   "w": "osiemdziesiątego",
+   "s": 2.72,
+   "e": 3.32
+  },
+  {
+   "w": "siódmego",
+   "s": 3.36,
+   "e": 3.68
+  },
+  {
+   "w": "roku.",
+   "s": 3.76,
+   "e": 4.64
+  },
+  {
+   "w": "Strach",
+   "s": 4.76,
+   "e": 5.12
+  },
+  {
+   "w": "bez",
+   "s": 5.28,
+   "e": 5.44
+  },
+  {
+   "w": "grama",
+   "s": 5.52,
+   "e": 5.84
+  },
+  {
+   "w": "zjawisk",
+   "s": 5.92,
+   "e": 6.32
+  },
+  {
+   "w": "nadprzyrodzonych.",
+   "s": 6.44,
+   "e": 7.454
   }
  ],
- "speechEnd": 3.63
+ "trimmed": "6ee2aa3731c1",
+ "speechEnd": 7.294
 }

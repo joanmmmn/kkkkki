@@ -1,174 +1,195 @@
 {
  "id": "G34",
- "hash": "87419d35d537",
- "text": "¿Y escucharlo? Sus novelas más conocidas están en audiolibro en español. Casi todas las publica Penguin Random House Audio, y la mayoría con voces de Latinoamérica, como Carlos Manuel Vesga o Jane Santos.",
- "duration": 13.52,
+ "hash": "0c27a4662e3f",
+ "text": "Po polsku audiobooki Kinga wydają głównie Albatros i Prószyński. I King ma u nas swoje głosy: Leszek Filipowicz przeczytał prawie dwadzieścia jego książek, Jan Peszek całą trylogię o Billu Hodgesie, a Mateusz Drozda wszystkie tomy „Mrocznej Wieży”.",
+ "duration": 14.477,
  "words": [
   {
-   "w": "¿Y",
+   "w": "Po",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.16
   },
   {
-   "w": "escucharlo?",
-   "s": 0.2,
-   "e": 1.08
+   "w": "polsku",
+   "s": 0.24,
+   "e": 0.64
   },
   {
-   "w": "Sus",
-   "s": 1.36,
-   "e": 1.52
+   "w": "audiobooki",
+   "s": 0.72,
+   "e": 1.2
   },
   {
-   "w": "novelas",
+   "w": "Kinga",
+   "s": 1.28,
+   "e": 1.56
+  },
+  {
+   "w": "wydają",
    "s": 1.6,
    "e": 1.92
   },
   {
-   "w": "más",
+   "w": "głównie",
    "s": 2.0,
-   "e": 2.08
+   "e": 2.32
   },
   {
-   "w": "conocidas",
-   "s": 2.16,
-   "e": 2.72
+   "w": "Albatros",
+   "s": 2.4,
+   "e": 2.96
   },
   {
-   "w": "están",
-   "s": 2.8,
-   "e": 3.04
+   "w": "i",
+   "s": 3.04,
+   "e": 3.08
   },
   {
-   "w": "en",
-   "s": 3.08,
-   "e": 3.12
+   "w": "Prószyński.",
+   "s": 3.12,
+   "e": 4.12
   },
   {
-   "w": "audiolibro",
-   "s": 3.2,
-   "e": 3.76
+   "w": "I",
+   "s": 4.16,
+   "e": 4.32
   },
   {
-   "w": "en",
-   "s": 3.8,
-   "e": 3.84
+   "w": "King",
+   "s": 4.4,
+   "e": 4.64
   },
   {
-   "w": "español.",
-   "s": 3.92,
+   "w": "ma",
+   "s": 4.72,
+   "e": 4.8
+  },
+  {
+   "w": "u",
+   "s": 4.84,
    "e": 4.88
   },
   {
-   "w": "Casi",
+   "w": "nas",
    "s": 4.96,
-   "e": 5.12
+   "e": 5.04
   },
   {
-   "w": "todas",
-   "s": 5.2,
+   "w": "swoje",
+   "s": 5.12,
    "e": 5.44
   },
   {
-   "w": "las",
-   "s": 5.52,
-   "e": 5.68
+   "w": "głosy:",
+   "s": 5.6,
+   "e": 6.267
   },
   {
-   "w": "publica",
-   "s": 5.84,
-   "e": 6.08
+   "w": "Leszek",
+   "s": 6.293,
+   "e": 6.48
   },
   {
-   "w": "Penguin",
-   "s": 6.24,
-   "e": 6.64
-  },
-  {
-   "w": "Random",
-   "s": 6.72,
+   "w": "Filipowicz",
+   "s": 6.56,
    "e": 7.04
   },
   {
-   "w": "House",
+   "w": "przeczytał",
    "s": 7.12,
    "e": 7.44
   },
   {
-   "w": "Audio,",
+   "w": "prawie",
    "s": 7.52,
-   "e": 8.16
+   "e": 7.76
   },
   {
-   "w": "y",
-   "s": 8.2,
+   "w": "dwadzieścia",
+   "s": 7.8,
    "e": 8.24
   },
   {
-   "w": "la",
+   "w": "jego",
    "s": 8.32,
-   "e": 8.36
+   "e": 8.48
   },
   {
-   "w": "mayoría",
-   "s": 8.4,
-   "e": 8.88
+   "w": "książek,",
+   "s": 8.64,
+   "e": 9.28
   },
   {
-   "w": "con",
-   "s": 8.96,
-   "e": 9.04
-  },
-  {
-   "w": "voces",
-   "s": 9.12,
+   "w": "Jan",
+   "s": 9.36,
    "e": 9.44
   },
   {
-   "w": "de",
-   "s": 9.48,
-   "e": 9.52
+   "w": "Peszek",
+   "s": 9.52,
+   "e": 9.84
   },
   {
-   "w": "Latinoamérica,",
-   "s": 9.6,
-   "e": 10.56
+   "w": "całą",
+   "s": 9.92,
+   "e": 10.16
   },
   {
-   "w": "como",
-   "s": 10.68,
-   "e": 10.8
-  },
-  {
-   "w": "Carlos",
-   "s": 10.88,
-   "e": 11.12
-  },
-  {
-   "w": "Manuel",
-   "s": 11.2,
-   "e": 11.44
-  },
-  {
-   "w": "Vesga",
-   "s": 11.52,
-   "e": 12.0
+   "w": "trylogię",
+   "s": 10.24,
+   "e": 10.6
   },
   {
    "w": "o",
-   "s": 12.08,
-   "e": 12.16
+   "s": 10.64,
+   "e": 10.72
   },
   {
-   "w": "Jane",
-   "s": 12.24,
-   "e": 12.48
+   "w": "Billu",
+   "s": 10.8,
+   "e": 10.92
   },
   {
-   "w": "Santos.",
-   "s": 12.56,
+   "w": "Hodgesie,",
+   "s": 10.96,
+   "e": 11.8
+  },
+  {
+   "w": "a",
+   "s": 11.84,
+   "e": 11.92
+  },
+  {
+   "w": "Mateusz",
+   "s": 12.0,
+   "e": 12.32
+  },
+  {
+   "w": "Drozda",
+   "s": 12.4,
+   "e": 12.8
+  },
+  {
+   "w": "wszystkie",
+   "s": 12.88,
+   "e": 13.28
+  },
+  {
+   "w": "tomy",
+   "s": 13.32,
    "e": 13.52
+  },
+  {
+   "w": "„Mrocznej",
+   "s": 13.56,
+   "e": 13.84
+  },
+  {
+   "w": "Wieży”.",
+   "s": 13.92,
+   "e": 14.477
   }
  ],
- "speechEnd": 13.119
+ "trimmed": "0c27a4662e3f",
+ "speechEnd": 14.317
 }

@@ -28,23 +28,26 @@ const pinOf = (k: string): [number, number] => { const c = CARDS.find((q) => q.k
 export const Conexiones: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('CONEX');
-  const fMuchos = c.at('G30', 'muchos');
-  const fCon = c.at('G30', 'conectados');
-  const fDani = c.at('G31', 'Dani');
-  const fDoc = c.at('G31', 'Doctor');
-  const fProt = c.at('G31', 'protagonista');
-  const fDerry = c.at('G31', 'Dérri');
-  const fPasa = c.at('G31', 'pasa');
-  const fIt = c.at('G31', 'Ít');
-  const fNinos = c.at('G31', 'niños');
+  // Polaco: G30 «Bo u Kinga wszystko się łączy. Mały Danny z „Lśnienia” wraca jako dorosły w „Doktorze Śnie”.»
+  // G31 «W „Dallas ’63” bohater trafia do Derry, miasta z „To”, i poznaje Beverly i Richiego.» (palabras habladas: say)
+  // G32 «Randall Flagg z „Bastionu” wraca w „Mrocznej Wieży”. A Holly Gibney, która pojawia się w „Panu Mercedesie”, w końcu dostała własną powieść: „Holly”.»
+  const fMuchos = c.at('G30', 'wszystko');
+  const fCon = c.at('G30', 'łączy');
+  const fDani = c.at('G30', 'Danny');
+  const fDoc = c.at('G30', 'Doktorze');
+  const fProt = c.at('G31', 'bohater');
+  const fDerry = c.at('G31', 'Derry');
+  const fPasa = c.at('G31', 'trafia');
+  const fIt = c.at('G31', 'To');
+  const fNinos = c.at('G31', 'poznaje');
   const fFlagg = c.at('G32', 'Randall');
-  const fReap = c.at('G32', 'reaparece');
-  const fTorre = c.at('G32', 'Torre');
+  const fReap = c.at('G32', 'wraca');
+  const fTorre = c.at('G32', 'Mrocznej');
   const fHolly = c.at('G32', 'Holly');
-  const fNovela = c.at('G32', 'novela');
+  const fNovela = c.at('G32', 'powieść');
   const links = [
-    { a: 'resplandor', b: 'doctor', at: fDoc - 10, label: 'Danny, de niño a adulto', lAt: fDani },
-    { a: 'd2263', b: 'it', at: fPasa - 6, label: 'Derry, 1958', lAt: fDerry - 4, sub: 'Beverly y Richie', subAt: fNinos },
+    { a: 'resplandor', b: 'doctor', at: fDoc - 10, label: 'Danny, już dorosły', lAt: fDani },
+    { a: 'd2263', b: 'it', at: fPasa - 6, label: 'Derry, 1958', lAt: fDerry - 4, sub: 'Beverly i Richie', subAt: fNinos },
     { a: 'apocalipsis', b: 'torre7', at: fReap - 4, label: 'Randall Flagg', lAt: fFlagg },
     { a: 'mercedes', b: 'holly', at: fNovela - 16, label: 'Holly Gibney', lAt: fHolly },
   ];
@@ -99,7 +102,7 @@ export const Conexiones: React.FC = () => {
         })}
       </AbsoluteFill>
       <div style={{ position: 'absolute', left: 0, right: 0, top: 36, textAlign: 'center', opacity: rampOut(frame, 4, 18) * (1 - ramp(frame, fDani - 20, fDani - 6)) }}>
-        <MaskTitle text="Muchos están conectados" at={6} size={70} align="center" color="#fff" hi={['conectados']} />
+        <MaskTitle text="Wszystko się łączy" at={6} size={70} align="center" color="#fff" hi={['łączy']} />
       </div>
       {CARDS.map((cd, i) => <Sfx key={cd.k} name="sk_pin" at={Math.min(fMuchos - 10, 8) + 4 + i * 4} volume={0.6} />)}
       {links.map((l, i) => <Sfx key={`s${i}`} name="sk_string" at={l.at + 4} volume={0.8} />)}
@@ -115,31 +118,31 @@ const PAPER2 = '#F4EDDC';
 export const Orden: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('ORDEN');
-  const fNo = c.at('G33', 'No');
-  const fTres = c.at('G33', 'tres');
-  const fTorre = c.at('G33', 'Torre');
-  const fTril = c.at('G33', 'trilogía');
-  const fVis = c.at('G33', 'visitante');
+  const fNo = c.at('G33', 'Nie');
+  const fTres = c.at('G33', 'trzech');
+  const fTorre = c.at('G33', 'Mroczna');
+  const fTril = c.at('G33', 'trylogia');
+  const fVis = c.at('G33', 'Outsiderem');
   const fHolly = c.at('G33', 'Holly');
-  const fResp = c.at('G33', 'resplandor');
-  const fDoc = c.at('G33', 'Doctor');
+  const fResp = c.at('G33', 'Lśnienie');
+  const fDoc = c.at('G33', 'Doktorem');
   const no = sp(frame, fNo - 2, 9, 260);
   const toList = ramp(frame, fTres - 14, fTres + 4);
   const rows = [
-    { label: 'La Torre Oscura', at: fTorre - 6, books: ['torre1', 'torre2', 'torre3', 'torre4', 'torre5', 'torre6', 'torre7'], stepAt: (i: number) => fTorre + i * 4 },
-    { label: 'Bill Hodges y Holly', at: fTril - 6, books: ['mercedes', 'quien', 'fin', 'visitante', 'holly'], stepAt: (i: number) => (i < 3 ? fTril + i * 5 : i === 3 ? fVis - 4 : fHolly - 4) },
-    { label: 'El resplandor', at: fResp - 6, books: ['resplandor', 'doctor'], stepAt: (i: number) => (i === 0 ? fResp : fDoc - 4) },
+    { label: 'Mroczna Wieża', at: fTorre - 6, books: ['torre1', 'torre2', 'torre3', 'torre4', 'torre5', 'torre6', 'torre7'], stepAt: (i: number) => fTorre + i * 4 },
+    { label: 'Bill Hodges i Holly', at: fTril - 6, books: ['mercedes', 'quien', 'fin', 'visitante', 'holly'], stepAt: (i: number) => (i < 3 ? fTril + i * 5 : i === 3 ? fVis - 4 : fHolly - 4) },
+    { label: 'Lśnienie', at: fResp - 6, books: ['resplandor', 'doctor'], stepAt: (i: number) => (i === 0 ? fResp : fDoc - 4) },
   ];
   return (
     <SkStage>
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: 1 - toList, transform: `scale(${1 - 0.1 * toList})`, filter: toList > 0.01 ? `blur(${toList * 8}px)` : undefined }}>
-        <MaskTitle text="¿Hay que leerlo en orden?" at={2} size={92} align="center" />
-        <div style={{ marginTop: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 230, color: '#fff', background: KR, padding: '0 70px', borderRadius: 40, transform: `rotate(-5deg) scale(${1.6 - 0.6 * no})`, opacity: Math.min(1, no * 3), boxShadow: '0 30px 60px rgba(193,18,31,0.35)' }}>NO</div>
+        <MaskTitle text="Czytać po kolei?" at={2} size={92} align="center" />
+        <div style={{ marginTop: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 230, color: '#fff', background: KR, padding: '0 70px', borderRadius: 40, transform: `rotate(-5deg) scale(${1.6 - 0.6 * no})`, opacity: Math.min(1, no * 3), boxShadow: '0 30px 60px rgba(193,18,31,0.35)' }}>NIE</div>
       </AbsoluteFill>
       {toList > 0 && (
         <AbsoluteFill style={{ opacity: toList, paddingLeft: 140, paddingTop: 110 }}>
-          <Kicker at={fTres - 6} text="Salvo en tres casos" />
-          <MaskTitle text="Aquí sí importa el orden" at={fTres - 4} size={80} hi={['orden']} />
+          <Kicker at={fTres - 6} text="Tylko w trzech przypadkach" />
+          <MaskTitle text="Tu kolejność ma znaczenie" at={fTres - 4} size={80} hi={['znaczenie']} />
           <div style={{ display: 'flex', flexDirection: 'column', gap: 30, marginTop: 40 }}>
             {rows.map((r, ri) => {
               const s = sp(frame, r.at, 15, 170);

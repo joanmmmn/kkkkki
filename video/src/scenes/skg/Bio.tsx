@@ -1,6 +1,6 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, random, spring, useCurrentFrame } from 'remotion';
-import { clamp, easeInOut, easeOut, fmtEs, keyframes } from '../../lib/anim';
+import { clamp, easeInOut, easeOut, keyframes } from '../../lib/anim';
 import { Sfx, ChangeTicks, Keystrokes } from '../../components/Sfx';
 import { Chip, MaskTitle, Burst } from '../nxr/kit';
 import { Kicker } from '../nxr/App';
@@ -21,13 +21,13 @@ const ME_C: P2 = [1606, 236]; // centro aproximado de Maine en el mapa
 export const Maine: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('MAINE');
-  const fNac = c.at('G05', 'nació');
-  const fPort = c.at('G05', 'Pórtland');
-  const fMaine = c.at('G05', 'Méin', 1);
-  const fPueb = c.at('G05', 'pueblos');
-  const fInv = c.at('G05', 'inviernos');
-  const fVec = c.at('G05', 'vecinos');
-  const fEsc = c.at('G05', 'esconden');
+  const fNac = c.at('G05', 'urodził');
+  const fPort = c.at('G05', 'Portland');
+  const fMaine = c.at('G05', 'Mejn', 1);
+  const fPueb = c.at('G05', 'miasteczka');
+  const fInv = c.at('G05', 'zimy');
+  const fVec = c.at('G05', 'sąsiedzi');
+  const fEsc = c.at('G05', 'ukrywają');
   // Cámara: de todo el país a Maine (centro de Maine a la izquierda del encuadre, el texto a la derecha).
   const center: P2 = [1606, 236];
   const target: P2 = [640, 560];
@@ -112,19 +112,19 @@ export const Maine: React.FC = () => {
           <div style={{ position: 'absolute', left: 44, top: -66, opacity: yearCard, transform: `translateX(${(1 - yearCard) * -16}px)` }}>
             <div style={{ background: color.ink, color: '#fff', borderRadius: 20, padding: '14px 24px', boxShadow: shadow.float, whiteSpace: 'nowrap' }}>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 40 }}>Portland</div>
-              <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 28, color: color.yellow }}>Nace en 1947</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 28, color: color.yellow }}>Urodził się w 1947</div>
             </div>
           </div>
         </div>
       )}
       {/* Rótulo de los pueblos */}
       <div style={{ position: 'absolute', left: 1160, top: 190, width: 660, padding: '46px 48px 54px', background: '#fff', borderRadius: 32, boxShadow: shadow.card, opacity: rampOut(frame, fMaine + 8, fMaine + 22), transform: `translateY(${(1 - rampOut(frame, fMaine + 8, fMaine + 22)) * 30}px)` }}>
-        <Kicker at={fMaine + 8} text="Pueblos inventados" />
-        <MaskTitle text="El Maine de sus libros" at={fMaine + 12} size={72} />
+        <Kicker at={fMaine + 8} text="Fikcyjne miasteczka" />
+        <MaskTitle text="Maine z jego książek" at={fMaine + 12} size={72} />
         <div style={{ display: 'flex', flexDirection: 'column', gap: 22, marginTop: 44, alignItems: 'flex-start' }}>
-          <Chip at={fPueb - 2} label="Pueblos pequeños" icon={<MiniIcon kind="pin" size={30} />} dimAt={fInv} />
-          <Chip at={fInv - 2} label="Inviernos largos" icon={<CoverIcon kind="stars" size={30} c={color.ink} sw={2} />} dimAt={fVec} />
-          <Chip at={fVec - 2} label="Vecinos que esconden algo" icon={<CoverIcon kind="eye" size={30} c={color.ink} sw={2} />} accent={KR} />
+          <Chip at={fPueb - 2} label="Małe miasteczka" icon={<MiniIcon kind="pin" size={30} />} dimAt={fInv} />
+          <Chip at={fInv - 2} label="Długie zimy" icon={<CoverIcon kind="stars" size={30} c={color.ink} sw={2} />} dimAt={fVec} />
+          <Chip at={fVec - 2} label="Sąsiedzi, którzy coś ukrywają" icon={<CoverIcon kind="eye" size={30} c={color.ink} sw={2} />} accent={KR} />
         </div>
       </div>
       <Sfx name="zoom_in" at={fPort - 8} volume={0.7} />
@@ -182,7 +182,7 @@ const Typewriter: React.FC<{ w: number; pressed: number; carX: number; lamp?: nu
             <rect x={kk.x - 1.5} y={kk.y + 6} width="3" height="16" fill="#0A0A0C" />
             <circle cx={kk.x} cy={kk.y} r="15" fill={`url(#${id}-chrome)`} />
             <circle cx={kk.x} cy={kk.y} r="12.5" fill={down ? '#CFC4AC' : `url(#${id}-key)`} />
-            <text x={kk.x} y={kk.y + 4} textAnchor="middle" fontFamily="Ubuntu" fontWeight="700" fontSize="11" fill="rgba(30,30,30,0.7)">{'QWERTYUIOPASDFGHJKLÑZXCVBNM,.-;:'[i % 32]}</text>
+            <text x={kk.x} y={kk.y + 4} textAnchor="middle" fontFamily="Ubuntu" fontWeight="700" fontSize="11" fill="rgba(30,30,30,0.7)">{'QWERTYUIOPASDFGHJKL;ZXCVBNM,.-/:'[i % 32]}</text>
           </g>
         );
       })}
@@ -211,20 +211,20 @@ const Wastebasket: React.FC<{ w: number }> = ({ w }) => (
 export const CarrieOrigin: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('CARRIE');
-  const fIng = c.at('G06', 'inglés');
-  const fEscr = c.at('G06', 'escribía');
-  const fTiro = c.at('G06', 'tiró');
-  const fBas = c.at('G06', 'basura');
-  const fRel = c.at('G06', 'relato');
-  const fChica = c.at('G06', 'chica');
-  const fTab = c.at('G07', 'Tábita');
-  const fResc = c.at('G07', 'rescató');
-  const fSeg = c.at('G07', 'seguir');
-  const fKeri = c.at('G07', 'Kéri');
-  const fPrim = c.at('G07', 'primera');
-  const fSal = c.at('G07', 'Salió');
-  const fCuat = c.at('G07', 'cuatro');
-  const fVida = c.at('G07', 'vida');
+  const fIng = c.at('G06', 'angielskiego');
+  const fEscr = c.at('G06', 'pisał');
+  const fTiro = c.at('G06', 'wyrzucił');
+  const fBas = c.at('G06', 'kosza');
+  const fRel = c.at('G06', 'powieści');
+  const fChica = c.at('G06', 'dziewczynie');
+  const fTab = c.at('G07', 'Tabita');
+  const fResc = c.at('G07', 'wyjęła');
+  const fSeg = c.at('G07', 'dalej');
+  const fKeri = c.at('G07', 'Kerri');
+  const fSal = c.at('G07', 'Ukazała');
+  const fPrim = fSal;
+  const fCuat = c.at('G07', 'czwartym');
+  const fVida = c.at('G07', 'życie');
   const night = ramp(frame, fEscr - 14, fEscr + 10);
   // Hoja de papel: se escribe (escribía), se arruga y vuela a la papelera (tiró) y vuelve (rescató).
   const crumple = ramp(frame, fTiro - 2, fTiro + 12) * (1 - ramp(frame, fResc + 6, fResc + 24));
@@ -263,7 +263,7 @@ export const CarrieOrigin: React.FC = () => {
             <div style={{ position: 'absolute', left: 70, top: 60, fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: 'rgba(255,255,255,0.88)' }}>English</div>
             <div style={{ position: 'absolute', left: 70, top: 160, width: 880 * rampOut(frame, 6, 40), height: 4, background: 'rgba(255,255,255,0.6)', borderRadius: 2 }} />
             <div style={{ position: 'absolute', left: 70, top: 220, fontFamily: font.sans, fontWeight: 500, fontSize: 46, color: 'rgba(255,255,255,0.8)', opacity: rampOut(frame, fIng - 10, fIng + 6) }}>
-              Profesor de inglés en un instituto de Maine
+              Nauczyciel angielskiego w liceum w Maine
             </div>
             <div style={{ position: 'absolute', right: 70, bottom: 50, fontFamily: font.sans, fontWeight: 700, fontSize: 120, color: 'rgba(255,255,255,0.9)', opacity: rampOut(frame, 10, 30) }}>1971</div>
             <div style={{ position: 'absolute', left: 60, bottom: 16, width: 160, height: 20, borderRadius: 6, background: '#F3EEE2' }} />
@@ -297,13 +297,13 @@ export const CarrieOrigin: React.FC = () => {
             )}
             {/* Rótulos */}
             <div style={{ position: 'absolute', left: 1240, top: 300, opacity: rampOut(frame, fRel - 4, fRel + 10) * (1 - ramp(frame, fTab - 10, fTab)) }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 52, color: '#fff' }}>Un relato</div>
-              <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 38, color: 'rgba(255,255,255,0.7)', opacity: rampOut(frame, fChica - 4, fChica + 10) }}>sobre una chica con poderes</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 52, color: '#fff' }}>Pierwsze strony powieści</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 38, color: 'rgba(255,255,255,0.7)', opacity: rampOut(frame, fChica - 4, fChica + 10) }}>o dziewczynie z nadprzyrodzonymi mocami</div>
             </div>
             <div style={{ position: 'absolute', left: 200, top: 300, opacity: rampOut(frame, fTab - 2, fTab + 12) * (1 - ramp(frame, fKeri - 24, fKeri - 10)) }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: color.yellow, textTransform: 'uppercase' }}>Su mujer</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: color.yellow, textTransform: 'uppercase' }}>Jego żona</div>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 72, color: '#fff' }}>Tabitha</div>
-              <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 40, color: 'rgba(255,255,255,0.75)', opacity: rampOut(frame, fSeg - 6, fSeg + 8) }}>«Aquí tienes algo»</div>
+              <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 40, color: 'rgba(255,255,255,0.75)', opacity: rampOut(frame, fSeg - 6, fSeg + 8) }}>„Pisz dalej”</div>
             </div>
           </AbsoluteFill>
         )}
@@ -317,12 +317,12 @@ export const CarrieOrigin: React.FC = () => {
               <Book3D b={BOOKS.carrie} w={340} h={510} d={48} ry={spin} rx={4} shine={ramp(frame, fPrim, fPrim + 30)} />
             </div>
             <div style={{ width: 560 }}>
-              <Kicker at={fPrim - 4} text="Su primera novela publicada" style={{ color: 'rgba(255,255,255,0.75)' }} />
+              <Kicker at={fPrim - 4} text="Jego pierwsza wydana powieść" style={{ color: 'rgba(255,255,255,0.75)' }} />
               <MaskTitle text="Carrie" at={fKeri - 2} size={150} color="#fff" />
               <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 30, transform: `scale(${0.6 + 0.4 * yearIn})`, opacity: Math.min(1, yearIn * 2), transformOrigin: 'left center' }}>
                 <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, color: color.ink, background: color.yellow, padding: '4px 28px', borderRadius: 18 }}>1974</span>
               </div>
-              <div style={{ marginTop: 26, fontFamily: font.sans, fontWeight: 500, fontSize: 40, color: 'rgba(255,255,255,0.85)', opacity: rampOut(frame, fVida - 6, fVida + 10) }}>…y le cambió la vida.</div>
+              <div style={{ marginTop: 26, fontFamily: font.sans, fontWeight: 500, fontSize: 40, color: 'rgba(255,255,255,0.85)', opacity: rampOut(frame, fVida - 6, fVida + 10) }}>…i odmieniła jego życie.</div>
             </div>
           </AbsoluteFill>
         )}
@@ -351,23 +351,23 @@ export const CarrieOrigin: React.FC = () => {
 };
 
 // ——— BACHMAN · G08 ———
-const BACHMAN = ['Rabia', 'La larga marcha', 'Carretera maldita', 'El fugitivo', 'Maleficio', 'Posesión', 'Blaze'];
+const BACHMAN = ['Rage', 'Wielki marsz', 'Ostatni bastion Barta Dawesa', 'Uciekinier', 'Chudszy', 'Regulatorzy', 'Blaze'];
 const BACHMAN_Y = [1977, 1979, 1981, 1982, 1984, 1996, 2007];
 export const Bachman: React.FC = () => {
   const frame = useCurrentFrame();
   const c = sceneClock('BACHMAN');
-  const fParado = c.at('G08', 'parado');
-  const fMientras = c.at('G08', 'Mientras');
-  const fDos = c.at('G08', 'dos');
-  const fDia = c.at('G08', 'día');
-  const fSiete = c.at('G08', 'siete');
-  const fNombre = c.at('G08', 'nombre');
-  const fRich = c.at('G08', 'Ríchard');
-  const fComp = c.at('G08', 'comprobar');
-  const fContaban = c.at('G08', 'contaban');
-  const fFirma = c.at('G08', 'firma');
-  const fLibrero = c.at('G08', 'librero');
-  const fOch = c.at('G08', 'ochenta');
+  const fParado = c.at('G08', 'zwalnia');
+  const fMientras = c.at('G08', 'Jak');
+  const fDos = c.at('G08', 'dwa');
+  const fDia = c.at('G08', 'dziennie');
+  const fSiete = c.at('G08', 'siedem');
+  const fNombre = c.at('G08', 'nazwiskiem');
+  const fRich = c.at('G08', 'Riczard');
+  const fComp = c.at('G08', 'sprawdzić');
+  const fContaban = c.at('G08', 'opowiadają');
+  const fFirma = c.at('G08', 'nazwisku');
+  const fLibrero = c.at('G08', 'Tajemnicę');
+  const fOch = c.at('G08', 'osiemdziesiątym');
   // Fase 1: línea temporal 1974–2025 que se llena de lomos (0 → fMientras)
   const p1out = ramp(frame, fMientras - 14, fMientras + 4);
   const x0 = 180, x1 = 1740;
@@ -404,7 +404,7 @@ export const Bachman: React.FC = () => {
             );
           })}
           <div style={{ position: 'absolute', left: 0, right: 0, top: 230, textAlign: 'center' }}>
-            <MaskTitle text="No ha parado" at={2} size={120} align="center" />
+            <MaskTitle text="Nie zwalnia tempa" at={2} size={120} align="center" />
           </div>
         </AbsoluteFill>
       )}
@@ -413,11 +413,11 @@ export const Bachman: React.FC = () => {
         <AbsoluteFill style={{ opacity: p2in * (1 - p2out), flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 110, transform: `scale(${0.96 + 0.04 * p2in})` }}>
           <Book3D b={BOOKS.mientras} w={300} h={450} d={40} ry={interpolate(frame, [fMientras - 8, fSiete], [-40, -14], clamp)} rx={4} />
           <div style={{ width: 760 }}>
-            <Kicker at={fMientras} text="Mientras escribo (2000)" />
+            <Kicker at={fMientras} text="„Jak pisać” (2000)" />
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 22 }}>
-              <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 210, letterSpacing: -9, color: color.ink, fontVariantNumeric: 'tabular-nums' }}>{fmtEs(Math.round(words / 10) * 10)}</span>
+              <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 210, letterSpacing: -9, color: color.ink, fontVariantNumeric: 'tabular-nums' }}>{Math.round(words / 10) * 10}</span>
             </div>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: color.ink, marginTop: -10 }}>palabras <span style={{ background: color.yellow, padding: '0 14px', borderRadius: 10 }}>al día</span></div>
+            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: color.ink, marginTop: -10 }}>słów <span style={{ background: color.yellow, padding: '0 14px', borderRadius: 10 }}>dziennie</span></div>
             <div style={{ marginTop: 34, display: 'flex', flexDirection: 'column', gap: 12 }}>
               {Array.from({ length: 6 }).map((_, i) => (
                 <div key={i} style={{ height: 12, borderRadius: 6, background: 'rgba(16,16,16,0.12)', width: 700 - (i % 3) * 90, overflow: 'hidden' }}>
@@ -432,7 +432,7 @@ export const Bachman: React.FC = () => {
       {p3in > 0 && (
         <AbsoluteFill style={{ opacity: p3in }}>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 120, textAlign: 'center' }}>
-            <MaskTitle text="Siete novelas con otro nombre" at={fSiete - 2} size={84} align="center" />
+            <MaskTitle text="Siedem powieści pod innym nazwiskiem" at={fSiete - 2} size={84} align="center" />
           </div>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 330, display: 'flex', justifyContent: 'center', gap: 26 }}>
             {BACHMAN.map((t, i) => {
@@ -455,12 +455,12 @@ export const Bachman: React.FC = () => {
             </div>
           </div>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 860, display: 'flex', justifyContent: 'center', gap: 26, opacity: scaleQ }}>
-            <Chip at={fComp + 2} label="¿Por la historia?" icon={<MiniIcon kind="book" size={30} />} dimAt={fContaban + 20} />
-            <Chip at={fFirma - 4} label="¿O por la firma?" icon={<CoverIcon kind="pencil" size={30} c={color.ink} sw={2} />} />
+            <Chip at={fComp + 2} label="Dzięki historii?" icon={<MiniIcon kind="book" size={30} />} dimAt={fContaban + 20} />
+            <Chip at={fFirma - 4} label="Czy dzięki nazwisku?" icon={<CoverIcon kind="pencil" size={30} c={color.ink} sw={2} />} />
           </div>
           {/* revelado */}
           <div style={{ position: 'absolute', left: 0, right: 0, top: 740, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 34, opacity: reveal }}>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 62, color: color.ink }}>Lo descubrió un librero</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 62, color: color.ink }}>Odkrył to pracownik księgarni</span>
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 90, color: '#fff', background: KR, padding: '0 26px', borderRadius: 16,
               transform: `rotate(-4deg) scale(${1.4 - 0.4 * spring({ frame: frame - fOch, fps: 50, config: { damping: 10, stiffness: 240 } })})`, opacity: rampOut(frame, fOch - 2, fOch + 2), boxShadow: `0 20px 40px ${KR_DEEP}55` }}>1985</span>
           </div>

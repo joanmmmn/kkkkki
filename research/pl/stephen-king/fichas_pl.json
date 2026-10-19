@@ -1,0 +1,696 @@
+{
+ "consultado": "2026-10-19",
+ "fuente_principal": "Audioteka (JSON-LD de cada ficha: duration, readBy, aggregateRating) y sonorbooks.pl; Storytel PL (api.storytel.net) como contraste",
+ "totales_king_audioteka": {
+  "grabaciones_en_polaco": 87,
+  "horas": 1470.6,
+  "nota": "Autor https://audioteka.com/pl/autor/stephen-king/ (4 páginas, 93 títulos; 6 en alemán de Lübbe Audio excluidos). Sin las dos antologías ajenas (17 podniebnych koszmarów, Inne światy niż te) y sin la segunda Zielona mila: ~1412 h. En cualquier caso, «ponad 1400 godzin»."
+ },
+ "libros": [
+  {
+   "es": "Carrie",
+   "original": "Carrie",
+   "pl": "Carrie",
+   "anio": 1974,
+   "escena": [
+    "G07",
+    "G13",
+    "G25",
+    "G37"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Filip Kosior"
+     ],
+     "duracion_min": 432,
+     "duracion": "7 h 12 min",
+     "editorial": "Prószyński i S-ka",
+     "nota_audioteka": 4.2,
+     "valoraciones_audioteka": 37,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/carrie/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/carrie/",
+   "nota": "Única grabación en polaco encontrada (Audioteka; no aparece en Storytel PL). En Audioteka hay además una versión en alemán (Franziska Pigulla, Lübbe Audio) que NO cuenta.",
+   "duracion_total_min": 432,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "El resplandor",
+   "original": "The Shining",
+   "pl": "Lśnienie",
+   "anio": 1977,
+   "escena": [
+    "G14",
+    "G15",
+    "G16",
+    "G30",
+    "G33",
+    "G37"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Adam Woronowicz",
+      "Agata Kulesza",
+      "Krzysztof Gosztyła",
+      "zespół lektorów"
+     ],
+     "duracion_min": 1268,
+     "duracion": "21 h 8 min",
+     "editorial": "Prószyński i S-ka",
+     "nota_audioteka": 4.7,
+     "valoraciones_audioteka": 1070,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/lsnienie/",
+     "url_sonorbooks": "https://sonorbooks.pl/audiobook/lsnienie/",
+     "nota": "Słuchowisko z obsadą aktorską (sonorbooks.pl: «Wydanie: Słuchowisko z obsadą aktorską»). Tłum. Zofia Zinserling. Audiobook – pełny."
+    }
+   ],
+   "url": "https://sonorbooks.pl/audiobook/lsnienie/",
+   "duracion_total_min": 1268,
+   "en_sonorbooks_pl": true,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Misery",
+   "original": "Misery",
+   "pl": "Misery",
+   "anio": 1987,
+   "escena": [
+    "G17",
+    "G18"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Krzysztof Plewako-Szczerbiński"
+     ],
+     "duracion_min": 910,
+     "duracion": "15 h 10 min",
+     "editorial": "Prószyński i S-ka",
+     "nota_audioteka": 4.6,
+     "valoraciones_audioteka": 65,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/misery/",
+     "url_storytel": "https://www.storytel.com/pl/books/misery-13303497",
+     "nota": "Storytel: 15 h 9 min, ★4,5. Tłum. Robert P. Lipski."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/misery/",
+   "duracion_total_min": 910,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "La milla verde",
+   "original": "The Green Mile",
+   "pl": "Zielona mila",
+   "anio": 1996,
+   "escena": [
+    "G11",
+    "G19",
+    "G20",
+    "G35",
+    "G38"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Zbigniew Zapasiewicz"
+     ],
+     "duracion_min": 935,
+     "duracion": "15 h 35 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.9,
+     "valoraciones_audioteka": 115,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/zielona-mila/",
+     "nota": "Tłum. Andrzej Szulc."
+    },
+    {
+     "lektor": [
+      "Piotr Głowacki"
+     ],
+     "duracion_min": 948,
+     "duracion": "15 h 48 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.8,
+     "valoraciones_audioteka": 52,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/zielona-mila-albatros/",
+     "url_storytel": "https://www.storytel.com/pl/books/zielona-mila-15287566",
+     "nota": "Storytel: 15 h 48 min, ★4,9."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/zielona-mila/",
+   "duracion_total_min": 1883,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "22/11/63",
+   "original": "11/22/63",
+   "pl": "Dallas '63",
+   "anio": 2011,
+   "escena": [
+    "G21",
+    "G22",
+    "G31",
+    "G38"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Filip Kosior"
+     ],
+     "duracion_min": 1647,
+     "duracion": "27 h 27 min",
+     "editorial": "Prószyński i S-ka",
+     "nota_audioteka": 4.8,
+     "valoraciones_audioteka": 459,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/dallas-63/",
+     "nota": "Tłum. Tomasz Wilusz. No encontrado en Storytel PL."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/dallas-63/",
+   "duracion_total_min": 1647,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Mr. Mercedes",
+   "original": "Mr. Mercedes",
+   "pl": "Pan Mercedes",
+   "anio": 2014,
+   "escena": [
+    "G23",
+    "G24",
+    "G32",
+    "G39"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Jan Peszek"
+     ],
+     "duracion_min": 931,
+     "duracion": "15 h 31 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.5,
+     "valoraciones_audioteka": 323,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/pan-mercedes-audioteka/",
+     "url_storytel": "https://www.storytel.com/pl/books/pan-mercedes-15113598",
+     "nota": "Tłum. Danuta Górska. Storytel: 15 h 30 min, ★4,43."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/pan-mercedes-audioteka/",
+   "duracion_total_min": 931,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Elevación",
+   "original": "Elevation",
+   "pl": "Uniesienie",
+   "anio": 2018,
+   "escena": [
+    "G25"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Leszek Filipowicz"
+     ],
+     "duracion_min": 184,
+     "duracion": "3 h 4 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.1,
+     "valoraciones_audioteka": 72,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/uniesienie/",
+     "url_storytel": "https://www.storytel.com/pl/books/uniesienie-15162015",
+     "nota": "Storytel: 3 h 4 min, ★4,5."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/uniesienie/",
+   "duracion_total_min": 184,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "It",
+   "original": "It",
+   "pl": "To",
+   "anio": 1986,
+   "escena": [
+    "G13",
+    "G26",
+    "G27",
+    "G31",
+    "G37"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Leszek Filipowicz"
+     ],
+     "duracion_min": 3241,
+     "duracion": "54 h 1 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.1,
+     "valoraciones_audioteka": 228,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/to/",
+     "url_sonorbooks": "https://sonorbooks.pl/audiobook/to-stephen-king/",
+     "nota": "Tłum. Robert Lipski."
+    }
+   ],
+   "url": "https://sonorbooks.pl/audiobook/to-stephen-king/",
+   "duracion_total_min": 3241,
+   "en_sonorbooks_pl": true,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Apocalipsis",
+   "original": "The Stand",
+   "pl": "Bastion",
+   "anio": 1978,
+   "escena": [
+    "G28",
+    "G32"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Marcin Popczyński"
+     ],
+     "duracion_min": 2872,
+     "duracion": "47 h 52 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4,
+     "valoraciones_audioteka": 143,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/bastion/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/bastion/",
+   "nota": "47 h 52 min: «prawie czterdzieści osiem godzin». En Audioteka hay además «The Stand – Das letzte Gefecht» en alemán (no cuenta).",
+   "duracion_total_min": 2872,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "La Torre Oscura (7 libros)",
+   "original": "The Dark Tower I–VII",
+   "pl": "Mroczna Wieża (tomy 1–7)",
+   "anio": "1982–2004",
+   "escena": [
+    "G29",
+    "G32",
+    "G33",
+    "G39"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 675,
+     "duracion": "11 h 15 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 3.6,
+     "valoraciones_audioteka": 210,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-1-roland/"
+    },
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 830,
+     "duracion": "13 h 50 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.6,
+     "valoraciones_audioteka": 132,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-2-powolanie-trojki/"
+    },
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 1137,
+     "duracion": "18 h 57 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.8,
+     "valoraciones_audioteka": 93,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-3-ziemie-jalowe/"
+    },
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 1736,
+     "duracion": "28 h 56 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.8,
+     "valoraciones_audioteka": 99,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-4-czarnoksieznik-i-krysztal/"
+    },
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 1653,
+     "duracion": "27 h 33 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.8,
+     "valoraciones_audioteka": 86,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-5-wilki-z-calla/"
+    },
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 961,
+     "duracion": "16 h 1 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.6,
+     "valoraciones_audioteka": 69,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-6-piesn-susannah/"
+    },
+    {
+     "lektor": [
+      "Mateusz Drozda"
+     ],
+     "duracion_min": 1749,
+     "duracion": "29 h 9 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.7,
+     "valoraciones_audioteka": 90,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-7-mroczna-wieza/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/mroczna-wieza-tom-1-roland/",
+   "nota": "Total tomos 1–7: 8741 min = 145 h 41 min («prawie sto czterdzieści sześć godzin»). Todos con Mateusz Drozda (Albatros). Existe además el tomo 4,5 «Wiatr przez dziurkę od klucza» (10 h 5 min), no incluido en el total.",
+   "duracion_total_min": 8741,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Doctor Sueño",
+   "original": "Doctor Sleep",
+   "pl": "Doktor Sen",
+   "anio": 2013,
+   "escena": [
+    "G30",
+    "G33",
+    "G37"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Roch Siemianowski"
+     ],
+     "duracion_min": 1239,
+     "duracion": "20 h 39 min",
+     "editorial": "Prószyński Media",
+     "nota_audioteka": 3.5,
+     "valoraciones_audioteka": 2,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/doktor-sen-proszynski-media/",
+     "url_storytel": "https://www.storytel.com/pl/books/doktor-sen-13431859",
+     "nota": "Storytel: 20 h 42 min, ★4,86. Tłum. Tomasz Wilusz. En Audioteka solo 2 valoraciones."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/doktor-sen-proszynski-media/",
+   "duracion_total_min": 1239,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Holly",
+   "original": "Holly",
+   "pl": "Holly",
+   "anio": 2023,
+   "escena": [
+    "G32",
+    "G33",
+    "G39"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Mariusz Bonaszewski"
+     ],
+     "duracion_min": 1178,
+     "duracion": "19 h 38 min",
+     "editorial": "Prószyński Media",
+     "nota_audioteka": 4.2,
+     "valoraciones_audioteka": 46,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/holly/",
+     "nota": "Tłum. Tomasz Wilusz."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/holly/",
+   "duracion_total_min": 1178,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Quien pierde paga",
+   "original": "Finders Keepers",
+   "pl": "Znalezione nie kradzione",
+   "anio": 2015,
+   "escena": [
+    "G39"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Jan Peszek"
+     ],
+     "duracion_min": 844,
+     "duracion": "14 h 4 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.6,
+     "valoraciones_audioteka": 271,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/znalezione-nie-kradzione/",
+     "url_storytel": "https://www.storytel.com/pl/books/znalezione-nie-kradzione-15113599",
+     "nota": "Storytel: 14 h 4 min, ★4,8."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/znalezione-nie-kradzione/",
+   "duracion_total_min": 844,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Fin de guardia",
+   "original": "End of Watch",
+   "pl": "Koniec warty",
+   "anio": 2016,
+   "escena": [
+    "G39"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Jan Peszek"
+     ],
+     "duracion_min": 818,
+     "duracion": "13 h 38 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.6,
+     "valoraciones_audioteka": 183,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/koniec-warty/",
+     "url_storytel": "https://www.storytel.com/pl/books/koniec-warty-15113398",
+     "nota": "Storytel: 13 h 38 min, ★4,62."
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/koniec-warty/",
+   "duracion_total_min": 818,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "El visitante",
+   "original": "The Outsider",
+   "pl": "Outsider",
+   "anio": 2018,
+   "escena": [
+    "G33",
+    "G39"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Leszek Filipowicz"
+     ],
+     "duracion_min": 1192,
+     "duracion": "19 h 52 min",
+     "editorial": "Prószyński i S-ka",
+     "nota_audioteka": 4.3,
+     "valoraciones_audioteka": 192,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/outsider/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/outsider/",
+   "duracion_total_min": 1192,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Cuento de hadas",
+   "original": "Fairy Tale",
+   "pl": "Baśniowa opowieść",
+   "anio": 2022,
+   "escena": [
+    "G38"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Maciej Kowalik"
+     ],
+     "duracion_min": 1330,
+     "duracion": "22 h 10 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.5,
+     "valoraciones_audioteka": 307,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/basniowa-opowiesc/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/basniowa-opowiesc/",
+   "duracion_total_min": 1330,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Mientras escribo",
+   "original": "On Writing",
+   "pl": "Jak pisać. Pamiętnik rzemieślnika",
+   "anio": 2000,
+   "escena": [
+    "G08"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Leszek Filipowicz"
+     ],
+     "duracion_min": 648,
+     "duracion": "10 h 48 min",
+     "editorial": "Prószyński Media",
+     "nota_audioteka": 5,
+     "valoraciones_audioteka": 1,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/jak-pisac-pamietnik-rzemieslnika/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/jak-pisac-pamietnik-rzemieslnika/",
+   "duracion_total_min": 648,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Cadena perpetua (relato en «Las cuatro estaciones»)",
+   "original": "Rita Hayworth and Shawshank Redemption (Different Seasons)",
+   "pl": "Wiosna nadziei: Skazani na Shawshank (Cztery pory roku)",
+   "anio": 1982,
+   "escena": [
+    "G11",
+    "G35"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Zbigniew Zapasiewicz"
+     ],
+     "duracion_min": 262,
+     "duracion": "4 h 22 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.8,
+     "valoraciones_audioteka": 329,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/wiosna-nadziei-skazani-na-shawshank/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/wiosna-nadziei-skazani-na-shawshank/",
+   "nota": "Película: «Skazani na Shawshank» (1994). Las cuatro novelas cortas de «Cztery pory roku» están en Audioteka con Zbigniew Zapasiewicz.",
+   "duracion_total_min": 262,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Cuenta conmigo (relato «El cuerpo»)",
+   "original": "The Body (Different Seasons)",
+   "pl": "Jesień niewinności: Ciało (Cztery pory roku)",
+   "anio": 1982,
+   "escena": [
+    "G11",
+    "G35"
+   ],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Zbigniew Zapasiewicz"
+     ],
+     "duracion_min": 389,
+     "duracion": "6 h 29 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 3.9,
+     "valoraciones_audioteka": 55,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/jesien-niewinnosci-cialo/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/jesien-niewinnosci-cialo/",
+   "nota": "Película: «Stań przy mnie» (1986), según pl.wikipedia.org/wiki/Stephen_King («1986 – Stań przy mnie (na podst. noweli Ciało ze zbioru Cztery pory roku)»).",
+   "duracion_total_min": 389,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  },
+  {
+   "es": "Instytut (no sale en el vídeo español; está en sonorbooks.pl)",
+   "original": "The Institute",
+   "pl": "Instytut",
+   "anio": 2019,
+   "escena": [],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Maciej Kowalik"
+     ],
+     "duracion_min": 1092,
+     "duracion": "18 h 12 min",
+     "editorial": "Wydawnictwo Albatros",
+     "nota_audioteka": 4.6,
+     "valoraciones_audioteka": 520,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/instytut-albatros/",
+     "url_sonorbooks": "https://sonorbooks.pl/audiobook/instytut/"
+    }
+   ],
+   "url": "https://sonorbooks.pl/audiobook/instytut/",
+   "nota": "Una de las tres fichas de King en sonorbooks.pl. Útil para el enlace general.",
+   "duracion_total_min": 1092,
+   "en_sonorbooks_pl": true,
+   "audiobook_pl": true
+  },
+  {
+   "es": "No tengas miedo (solo en datos españoles)",
+   "original": "Never Flinch",
+   "pl": "Nie wymiękaj",
+   "anio": 2025,
+   "escena": [],
+   "grabaciones": [
+    {
+     "lektor": [
+      "Piotr Grabowski"
+     ],
+     "duracion_min": 1189,
+     "duracion": "19 h 49 min",
+     "editorial": "Prószyński i S-ka",
+     "nota_audioteka": 3.6,
+     "valoraciones_audioteka": 18,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/nie-wymiekaj/"
+    }
+   ],
+   "url": "https://audioteka.com/pl/audiobook/nie-wymiekaj/",
+   "nota": "Novela de 2025 con Holly Gibney; no se cita en la locución polaca.",
+   "duracion_total_min": 1189,
+   "en_sonorbooks_pl": false,
+   "audiobook_pl": true
+  }
+ ]
+}

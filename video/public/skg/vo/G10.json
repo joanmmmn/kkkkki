@@ -1,229 +1,190 @@
 {
  "id": "G10",
- "hash": "b5f5444c8ce8",
- "text": "Está el terror sobrenatural: hoteles, coches y pueblos malditos. El terror humano, donde el monstruo es una persona. La fantasía y la ciencia ficción, con viajes en el tiempo y otros mundos. El crimen, con detectives y asesinos. Y los relatos y novelas cortas.",
- "duration": 18.8,
+ "hash": "8cc7766aebff",
+ "text": "Jest horror nadprzyrodzony: przeklęte hotele, samochody i miasteczka. Horror ludzki, w którym potworem jest człowiek. Fantasy i science fiction, z podróżami w czasie i innymi światami. Kryminał, z detektywami i mordercami. I opowiadania oraz krótkie powieści.",
+ "duration": 17.63,
  "words": [
   {
-   "w": "Está",
+   "w": "Jest",
    "s": 0.0,
    "e": 0.24
   },
   {
-   "w": "el",
+   "w": "horror",
    "s": 0.32,
-   "e": 0.4
+   "e": 0.72
   },
   {
-   "w": "terror",
-   "s": 0.6,
-   "e": 0.8
+   "w": "nadprzyrodzony:",
+   "s": 0.8,
+   "e": 1.84
   },
   {
-   "w": "sobrenatural:",
-   "s": 0.84,
-   "e": 2.0
+   "w": "przeklęte",
+   "s": 1.88,
+   "e": 2.32
   },
   {
-   "w": "hoteles,",
-   "s": 2.04,
-   "e": 2.8
+   "w": "hotele,",
+   "s": 2.36,
+   "e": 2.96
   },
   {
-   "w": "coches",
-   "s": 2.88,
-   "e": 3.36
+   "w": "samochody",
+   "s": 3.04,
+   "e": 3.6
   },
   {
-   "w": "y",
-   "s": 3.44,
-   "e": 3.52
+   "w": "i",
+   "s": 3.68,
+   "e": 3.76
   },
   {
-   "w": "pueblos",
-   "s": 3.6,
-   "e": 4.0
+   "w": "miasteczka.",
+   "s": 3.8,
+   "e": 4.48
   },
   {
-   "w": "malditos.",
-   "s": 4.04,
-   "e": 5.08
+   "w": "Horror",
+   "s": 4.96,
+   "e": 5.36
   },
   {
-   "w": "El",
-   "s": 5.12,
-   "e": 5.2
+   "w": "ludzki,",
+   "s": 5.44,
+   "e": 6.0
   },
   {
-   "w": "terror",
-   "s": 5.28,
-   "e": 5.52
+   "w": "w",
+   "s": 6.04,
+   "e": 6.08
   },
   {
-   "w": "humano,",
-   "s": 5.64,
-   "e": 6.28
+   "w": "którym",
+   "s": 6.12,
+   "e": 6.32
   },
   {
-   "w": "donde",
-   "s": 6.32,
-   "e": 6.56
+   "w": "potworem",
+   "s": 6.4,
+   "e": 6.88
   },
   {
-   "w": "el",
-   "s": 6.6,
-   "e": 6.64
+   "w": "jest",
+   "s": 6.96,
+   "e": 7.04
   },
   {
-   "w": "monstruo",
-   "s": 6.72,
-   "e": 7.2
+   "w": "człowiek.",
+   "s": 7.2,
+   "e": 7.76
   },
   {
-   "w": "es",
-   "s": 7.28,
-   "e": 7.44
-  },
-  {
-   "w": "una",
-   "s": 7.52,
-   "e": 7.6
-  },
-  {
-   "w": "persona.",
-   "s": 7.68,
-   "e": 8.6
-  },
-  {
-   "w": "La",
-   "s": 8.64,
+   "w": "Fantasy",
+   "s": 8.16,
    "e": 8.72
   },
   {
-   "w": "fantasía",
-   "s": 8.84,
+   "w": "i",
+   "s": 8.8,
+   "e": 8.88
+  },
+  {
+   "w": "science",
+   "s": 8.96,
    "e": 9.28
   },
   {
-   "w": "y",
+   "w": "fiction,",
    "s": 9.36,
-   "e": 9.44
+   "e": 9.92
   },
   {
-   "w": "la",
-   "s": 9.52,
-   "e": 9.6
-  },
-  {
-   "w": "ciencia",
-   "s": 9.64,
+   "w": "z",
+   "s": 9.96,
    "e": 10.0
   },
   {
-   "w": "ficción,",
-   "s": 10.04,
-   "e": 10.84
+   "w": "podróżami",
+   "s": 10.08,
+   "e": 10.48
   },
   {
-   "w": "con",
-   "s": 10.88,
-   "e": 10.96
+   "w": "w",
+   "s": 10.52,
+   "e": 10.56
   },
   {
-   "w": "viajes",
-   "s": 11.04,
-   "e": 11.36
+   "w": "czasie",
+   "s": 10.64,
+   "e": 11.04
   },
   {
-   "w": "en",
-   "s": 11.4,
-   "e": 11.44
+   "w": "i",
+   "s": 11.12,
+   "e": 11.2
   },
   {
-   "w": "el",
-   "s": 11.52,
+   "w": "innymi",
+   "s": 11.32,
    "e": 11.6
   },
   {
-   "w": "tiempo",
-   "s": 11.68,
-   "e": 12.08
+   "w": "światami.",
+   "s": 11.64,
+   "e": 12.24
   },
   {
-   "w": "y",
-   "s": 12.16,
-   "e": 12.2
-  },
-  {
-   "w": "otros",
-   "s": 12.24,
-   "e": 12.56
-  },
-  {
-   "w": "mundos.",
+   "w": "Kryminał,",
    "s": 12.64,
-   "e": 13.56
+   "e": 13.28
   },
   {
-   "w": "El",
-   "s": 13.6,
-   "e": 13.76
+   "w": "z",
+   "s": 13.307,
+   "e": 13.333
   },
   {
-   "w": "crimen,",
-   "s": 13.8,
-   "e": 14.453
+   "w": "detektywami",
+   "s": 13.36,
+   "e": 14.08
   },
   {
-   "w": "con",
-   "s": 14.507,
-   "e": 14.56
+   "w": "i",
+   "s": 14.16,
+   "e": 14.2
   },
   {
-   "w": "detectives",
-   "s": 14.76,
-   "e": 15.28
+   "w": "mordercami.",
+   "s": 14.24,
+   "e": 14.96
   },
   {
-   "w": "y",
+   "w": "I",
    "s": 15.36,
-   "e": 15.4
+   "e": 15.44
   },
   {
-   "w": "asesinos.",
-   "s": 15.44,
-   "e": 16.44
+   "w": "opowiadania",
+   "s": 15.52,
+   "e": 16.16
   },
   {
-   "w": "Y",
-   "s": 16.48,
-   "e": 16.56
+   "w": "oraz",
+   "s": 16.24,
+   "e": 16.48
   },
   {
-   "w": "los",
-   "s": 16.64,
-   "e": 16.72
+   "w": "krótkie",
+   "s": 16.56,
+   "e": 16.88
   },
   {
-   "w": "relatos",
-   "s": 16.84,
-   "e": 17.28
-  },
-  {
-   "w": "y",
-   "s": 17.307,
-   "e": 17.333
-  },
-  {
-   "w": "novelas",
-   "s": 17.36,
-   "e": 17.76
-  },
-  {
-   "w": "cortas.",
-   "s": 17.84,
-   "e": 18.8
+   "w": "powieści.",
+   "s": 16.96,
+   "e": 17.6
   }
  ],
- "speechEnd": 18.366
+ "trimmed": "8cc7766aebff",
+ "speechEnd": 17.515
 }

@@ -1,169 +1,170 @@
 {
  "id": "G11",
- "hash": "e178504af982",
- "text": "Y aunque no lo hayas leído nunca, seguro que lo has visto. Cadena perpetua, Cuenta conmigo y La milla verde salen de libros suyos. Y ninguna de las tres es de terror.",
- "duration": 11.52,
+ "hash": "84cd38363e8a",
+ "text": "A nawet jeśli nie znasz jego książek, na pewno znasz filmy. „Skazani na Shawshank”, „Stań przy mnie” i „Zielona mila” powstały na podstawie jego prozy. I żaden z nich nie jest horrorem.",
+ "duration": 10.831,
  "words": [
   {
-   "w": "Y",
+   "w": "A",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.04
   },
   {
-   "w": "aunque",
-   "s": 0.12,
-   "e": 0.4
+   "w": "nawet",
+   "s": 0.08,
+   "e": 0.32
   },
   {
-   "w": "no",
-   "s": 0.44,
-   "e": 0.48
+   "w": "jeśli",
+   "s": 0.4,
+   "e": 0.64
   },
   {
-   "w": "lo",
-   "s": 0.52,
-   "e": 0.56
+   "w": "nie",
+   "s": 0.72,
+   "e": 0.8
   },
   {
-   "w": "hayas",
-   "s": 0.64,
-   "e": 0.96
+   "w": "znasz",
+   "s": 0.88,
+   "e": 1.04
   },
   {
-   "w": "leído",
-   "s": 1.04,
+   "w": "jego",
+   "s": 1.12,
    "e": 1.28
   },
   {
-   "w": "nunca,",
-   "s": 1.36,
-   "e": 1.96
+   "w": "książek,",
+   "s": 1.48,
+   "e": 2.08
   },
   {
-   "w": "seguro",
-   "s": 2.0,
-   "e": 2.4
+   "w": "na",
+   "s": 2.16,
+   "e": 2.24
   },
   {
-   "w": "que",
-   "s": 2.48,
-   "e": 2.52
+   "w": "pewno",
+   "s": 2.32,
+   "e": 2.56
   },
   {
-   "w": "lo",
-   "s": 2.56,
-   "e": 2.64
-  },
-  {
-   "w": "has",
-   "s": 2.72,
+   "w": "znasz",
+   "s": 2.6,
    "e": 2.8
   },
   {
-   "w": "visto.",
-   "s": 2.84,
-   "e": 3.72
+   "w": "filmy.",
+   "s": 2.88,
+   "e": 3.573
   },
   {
-   "w": "Cadena",
-   "s": 3.76,
+   "w": "„Skazani",
+   "s": 3.627,
+   "e": 3.92
+  },
+  {
+   "w": "na",
+   "s": 4.0,
    "e": 4.08
   },
   {
-   "w": "perpetua,",
-   "s": 4.2,
-   "e": 4.987
+   "w": "Shawshank”,",
+   "s": 4.133,
+   "e": 4.76
   },
   {
-   "w": "Cuenta",
-   "s": 5.013,
-   "e": 5.36
+   "w": "„Stań",
+   "s": 4.8,
+   "e": 5.04
   },
   {
-   "w": "conmigo",
-   "s": 5.48,
-   "e": 6.16
+   "w": "przy",
+   "s": 5.12,
+   "e": 5.28
   },
   {
-   "w": "y",
-   "s": 6.2,
+   "w": "mnie”",
+   "s": 5.36,
+   "e": 5.68
+  },
+  {
+   "w": "i",
+   "s": 5.76,
+   "e": 5.84
+  },
+  {
+   "w": "„Zielona",
+   "s": 5.88,
    "e": 6.24
   },
   {
-   "w": "La",
-   "s": 6.32,
-   "e": 6.4
+   "w": "mila”",
+   "s": 6.28,
+   "e": 6.8
   },
   {
-   "w": "milla",
-   "s": 6.44,
-   "e": 6.64
+   "w": "powstały",
+   "s": 6.88,
+   "e": 7.2
   },
   {
-   "w": "verde",
-   "s": 6.72,
-   "e": 7.28
+   "w": "na",
+   "s": 7.28,
+   "e": 7.36
   },
   {
-   "w": "salen",
-   "s": 7.36,
-   "e": 7.6
-  },
-  {
-   "w": "de",
-   "s": 7.68,
+   "w": "podstawie",
+   "s": 7.44,
    "e": 7.76
   },
   {
-   "w": "libros",
+   "w": "jego",
    "s": 7.84,
-   "e": 8.08
+   "e": 8.0
   },
   {
-   "w": "suyos.",
-   "s": 8.16,
-   "e": 9.08
+   "w": "prozy.",
+   "s": 8.12,
+   "e": 8.773
   },
   {
-   "w": "Y",
-   "s": 9.12,
+   "w": "I",
+   "s": 8.827,
+   "e": 8.88
+  },
+  {
+   "w": "żaden",
+   "s": 8.96,
    "e": 9.2
   },
   {
-   "w": "ninguna",
+   "w": "z",
    "s": 9.28,
-   "e": 9.52
+   "e": 9.32
   },
   {
-   "w": "de",
-   "s": 9.56,
-   "e": 9.6
+   "w": "nich",
+   "s": 9.36,
+   "e": 9.68
   },
   {
-   "w": "las",
+   "w": "nie",
    "s": 9.72,
-   "e": 9.84
+   "e": 9.76
   },
   {
-   "w": "tres",
-   "s": 10.0,
-   "e": 10.16
+   "w": "jest",
+   "s": 9.84,
+   "e": 10.0
   },
   {
-   "w": "es",
-   "s": 10.24,
-   "e": 10.32
-  },
-  {
-   "w": "de",
-   "s": 10.4,
-   "e": 10.48
-  },
-  {
-   "w": "terror.",
-   "s": 10.96,
-   "e": 11.52
+   "w": "horrorem.",
+   "s": 10.08,
+   "e": 10.831
   }
  ],
- "speechEnd": 11.25
+ "trimmed": "84cd38363e8a",
+ "speechEnd": 10.671
 }

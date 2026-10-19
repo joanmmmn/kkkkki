@@ -336,7 +336,7 @@ const ILL: Record<string, Ill> = {
     ctx.font = `700 ${24 * u}px ${SANS}`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('NOVIEMBRE 1963', 0, -109 * u);
+    ctx.fillText('LISTOPAD 1963', 0, -109 * u);
     ctx.fillStyle = '#1C1C1C';
     ctx.font = `700 ${150 * u}px ${SANS}`;
     ctx.fillText('22', 0, 14 * u);
@@ -347,7 +347,7 @@ const ILL: Record<string, Ill> = {
     ctx.stroke();
     ctx.fillStyle = 'rgba(28,28,28,0.6)';
     ctx.font = `500 ${22 * u}px ${SANS}`;
-    ctx.fillText('viernes', 0, 104 * u);
+    ctx.fillText('piątek', 0, 104 * u);
     ctx.restore();
   },
   mercedes: (ctx, a) => {
@@ -1057,7 +1057,7 @@ export const drawCover = (ctx: Ctx, b: BookDef, key: string, w: number, h: numbe
   (ctx as unknown as { letterSpacing: string }).letterSpacing = '0px';
   if (b.num !== undefined) {
     ctx.font = `italic 400 ${30 * k}px ${SERIF}`;
-    embossText(ctx, `La Torre Oscura ${['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'][b.num - 1]}`, w / 2, 132 * k, light ? b.accent : foil, k);
+    embossText(ctx, `Mroczna Wieża ${['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'][b.num - 1]}`, w / 2, 132 * k, light ? b.accent : foil, k);
   }
   // ventana con arco
   const a: Win = { x: 84 * k, y: (b.num !== undefined ? 168 : 150) * k, w: w - 168 * k, h: 470 * k - (b.num !== undefined ? 18 * k : 0) };
