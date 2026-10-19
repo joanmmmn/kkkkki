@@ -79,215 +79,215 @@ i książki wybrane w Standardzie; zostają
 tylko kupione i wzięte za kredyty.
 
 18
-00:01:10,280 --> 00:01:15,040
+00:01:10,280 --> 00:01:15,013
 W polskim Amazonie znajdziesz zakładkę
 „Audiobooki Audible” z filtrem języka.
 
 19
-00:01:15,080 --> 00:01:20,000
+00:01:15,053 --> 00:01:20,120
 Wśród popularnych są kryminały Remigiusza
 Mroza, sagi Joanny Jax i klasyka, jak
 
 20
-00:01:20,040 --> 00:01:21,840
+00:01:20,160 --> 00:01:22,080
 Sienkiewicz czy Kraszewski.
 
 21
-00:01:21,880 --> 00:01:25,570
+00:01:22,120 --> 00:01:25,890
 Sporo z nich to jednak domena
 publiczna i tytuły religijne.
 
 22
-00:01:25,700 --> 00:01:28,980
+00:01:25,940 --> 00:01:29,220
 Książki kupisz też pojedynczo,
 ale nie jest tanio:
 
 23
-00:01:29,020 --> 00:01:33,620
+00:01:29,260 --> 00:01:33,860
 w lipcu audiobooki Siembiedy
 i Mossa kosztowały po 54 zł.
 
 24
-00:01:33,660 --> 00:01:37,310
+00:01:33,900 --> 00:01:37,550
 Członkowie Premium mają
 zniżki i specjalne wyprzedaże.
 
 25
-00:01:37,780 --> 00:01:42,380
+00:01:38,020 --> 00:01:42,620
 Aplikacja Audible pozwala przyspieszyć
 lektora nawet do 3,5 raza.
 
 26
-00:01:42,420 --> 00:01:47,393
+00:01:42,660 --> 00:01:47,633
 Ma wyłącznik czasowy, tryb samochodowy
 z dużymi przyciskami i pobieranie offline.
 
 27
-00:01:47,433 --> 00:01:51,620
+00:01:47,673 --> 00:01:51,860
 Możesz też założyć profil dziecięcy
 z tytułami, które sam udostępnisz.
 
 28
-00:01:51,660 --> 00:01:54,700
+00:01:51,900 --> 00:01:54,940
 Minus na start: tłumaczenie jest niepełne.
 
 29
-00:01:54,740 --> 00:02:00,260
+00:01:54,980 --> 00:02:00,500
 Na stronie audible.de część treści bywa
 po niemiecku, a w recenzjach w Google Play
 
 30
-00:02:00,300 --> 00:02:04,127
+00:02:00,540 --> 00:02:04,367
 użytkownicy skarżą się na mieszankę
 polskiego, niemieckiego i angielskiego
 
 31
-00:02:04,167 --> 00:02:07,590
+00:02:04,407 --> 00:02:07,830
 w aplikacji i na brak
 filtra języka polskiego.
 
 32
-00:02:07,732 --> 00:02:12,440
+00:02:07,972 --> 00:02:12,680
 Audible działa na telefonach i tabletach
 z Androidem i iOS, na Apple Watch
 
 33
-00:02:12,480 --> 00:02:17,370
+00:02:12,720 --> 00:02:17,610
 i zegarkach z Wear OS oraz w samochodzie,
 z CarPlay albo Android Auto.
 
 34
-00:02:17,900 --> 00:02:24,420
+00:02:18,140 --> 00:02:24,660
 Oceny? W polskim App Storze aplikacja
 ma średnią 4,8 przy ponad 4000 ocen,
 
 35
-00:02:24,460 --> 00:02:27,340
+00:02:24,700 --> 00:02:27,580
 a w polskim Google Play 4,1.
 
 36
-00:02:27,380 --> 00:02:30,073
+00:02:27,620 --> 00:02:30,313
 Chwalą wybór książek i wygodny odtwarzacz.
 
 37
-00:02:30,113 --> 00:02:33,110
+00:02:30,353 --> 00:02:33,350
 Krytykują cenę i niepełne tłumaczenie.
 
 38
-00:02:33,580 --> 00:02:39,167
+00:02:33,820 --> 00:02:39,407
 Plusy: 30 dni za darmo, w Premium
 książka na własność, ogromna kolekcja:
 
 39
-00:02:39,207 --> 00:02:42,740
+00:02:39,447 --> 00:02:42,980
 ponad milion tytułów,
 i rozbudowany odtwarzacz.
 
 40
-00:02:42,780 --> 00:02:47,860
+00:02:43,020 --> 00:02:48,100
 Minusy: mały polski katalog, w Standardzie
 jedna książka miesięcznie, niepełne
 
 41
-00:02:47,900 --> 00:02:51,430
+00:02:48,140 --> 00:02:51,670
 tłumaczenie, brak e-booków
 i planu rodzinnego.
 
 42
-00:02:52,040 --> 00:02:56,640
+00:02:52,280 --> 00:02:56,880
 Czy warto? Jeśli słuchasz po angielsku
 albo chcesz mieć książki na własność,
 
 43
-00:02:56,680 --> 00:03:01,400
+00:02:56,920 --> 00:03:01,640
 Premium ma sens. Jeśli szukasz polskich
 tytułów, wybór jest na razie mały:
 
 44
-00:03:01,440 --> 00:03:05,330
+00:03:01,680 --> 00:03:05,570
 porównaj Audible z Audioteką
 Klub, Empik Go czy Legimi.
 
 45
-00:03:06,360 --> 00:03:08,720
+00:03:06,600 --> 00:03:08,960
 Jak wypróbować Audible za darmo?
 
 46
-00:03:08,760 --> 00:03:13,760
+00:03:09,000 --> 00:03:14,000
 Nowi członkowie mają 30 dni za darmo w obu
 planach, a w Premium dostają też kredyt na
 
 47
-00:03:13,800 --> 00:03:15,250
+00:03:14,040 --> 00:03:15,490
 pierwszą książkę.
 
 48
-00:03:15,400 --> 00:03:19,920
+00:03:15,640 --> 00:03:20,160
 Wejdź na Amazon.pl, w zakładkę
 „Audiobooki Audible”, i wybierz
 
 49
-00:03:19,960 --> 00:03:22,213
+00:03:20,200 --> 00:03:22,453
 „Wypróbuj Standard” albo „Premium”.
 
 50
-00:03:22,253 --> 00:03:25,520
+00:03:22,493 --> 00:03:25,760
 Zalogujesz się kontem Amazon
 i podasz metodę płatności:
 
 51
-00:03:25,560 --> 00:03:29,970
+00:03:25,800 --> 00:03:30,210
 dziś nie płacisz nic, a po
 30 dniach opłata pobierze się sama.
 
 52
-00:03:30,020 --> 00:03:32,460
+00:03:30,260 --> 00:03:32,700
 Zapisz się na stronie, nie w aplikacji:
 
 53
-00:03:32,500 --> 00:03:36,167
+00:03:32,740 --> 00:03:36,407
 w App Storze plany kupowane
 w aplikacji mają wyższe ceny.
 
 54
-00:03:36,207 --> 00:03:39,790
+00:03:36,447 --> 00:03:40,030
 Potem pobierz aplikację
 i zaloguj się tym samym kontem.
 
 55
-00:03:39,940 --> 00:03:44,940
+00:03:40,180 --> 00:03:45,180
 Zrezygnuj przed końcem 30 dni: link
 „Anuluj subskrypcję” jest na samym dole
 
 56
-00:03:44,980 --> 00:03:50,350
+00:03:45,220 --> 00:03:50,590
 strony audible.de. Abonament z App
 Store’a albo Google Play anulujesz tam.
 
 57
-00:03:50,620 --> 00:03:52,980
+00:03:50,860 --> 00:03:53,220
 I wykorzystaj kredyt przed rezygnacją:
 
 58
-00:03:53,020 --> 00:03:56,820
+00:03:53,260 --> 00:03:57,060
 niewykorzystane kredyty przepadają,
 a książka wzięta za kredyt zostaje
 
 59
-00:03:56,860 --> 00:03:58,470
+00:03:57,100 --> 00:03:58,710
 u ciebie na zawsze.
 
 60
-00:03:58,520 --> 00:04:04,480
+00:03:58,760 --> 00:04:04,720
 Na sonorbooks.pl porównasz warunki Audible
 z Audioteką, Empik Go, Legimi i innymi
 
 61
-00:04:04,520 --> 00:04:08,507
+00:04:04,760 --> 00:04:08,747
 serwisami oraz sprawdzisz, gdzie
 posłuchać audiobooka i za ile.
 
 62
-00:04:08,547 --> 00:04:11,330
+00:04:08,787 --> 00:04:11,570
 Twoja następna historia
 już na ciebie czeka.

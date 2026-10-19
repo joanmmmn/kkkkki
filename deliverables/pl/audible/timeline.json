@@ -1,6 +1,6 @@
 {
- "total_frames": 12934,
- "seconds": 258.68,
+ "total_frames": 12946,
+ "seconds": 258.92,
  "chapters": [
   {
    "t": 11.1,
@@ -19,35 +19,35 @@
    "label": "Polski katalog"
   },
   {
-   "t": 85.56,
+   "t": 85.8,
    "label": "Zakupy pojedyncze"
   },
   {
-   "t": 96.98,
+   "t": 97.22,
    "label": "Aplikacja i odtwarzacz"
   },
   {
-   "t": 111.52,
+   "t": 111.76,
    "label": "Tłumaczenie i urządzenia"
   },
   {
-   "t": 137.1,
+   "t": 137.34,
    "label": "Opinie"
   },
   {
-   "t": 152.78,
+   "t": 153.02,
    "label": "Plusy i minusy"
   },
   {
-   "t": 171.24,
+   "t": 171.48,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 185.56,
+   "t": 185.8,
    "label": "Jak wypróbować za darmo"
   },
   {
-   "t": 219.8,
+   "t": 220.04,
    "label": "Jak zrezygnować"
   }
  ],
@@ -88,14 +88,14 @@
    "id": "A05",
    "kind": "rec",
    "start": 3507,
-   "dur": 771,
+   "dur": 783,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A06",
    "kind": "stat",
-   "start": 4278,
+   "start": 4290,
    "dur": 585,
    "lead": 7,
    "bump": null
@@ -103,7 +103,7 @@
   {
    "id": "A07",
    "kind": "features",
-   "start": 4863,
+   "start": 4875,
    "dur": 713,
    "lead": 26,
    "bump": "Aplikacja"
@@ -111,7 +111,7 @@
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5576,
+   "start": 5588,
    "dur": 801,
    "lead": 7,
    "bump": null
@@ -119,7 +119,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6377,
+   "start": 6389,
    "dur": 492,
    "lead": 7,
    "bump": null
@@ -127,7 +127,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 6869,
+   "start": 6881,
    "dur": 784,
    "lead": 26,
    "bump": "Opinie"
@@ -135,7 +135,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 7653,
+   "start": 7665,
    "dur": 923,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -143,7 +143,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 8576,
+   "start": 8588,
    "dur": 716,
    "lead": 26,
    "bump": "Werdykt"
@@ -151,7 +151,7 @@
   {
    "id": "B01",
    "kind": "stat",
-   "start": 9292,
+   "start": 9304,
    "dur": 471,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -159,7 +159,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 9763,
+   "start": 9775,
    "dur": 731,
    "lead": 7,
    "bump": null
@@ -167,7 +167,7 @@
   {
    "id": "B03",
    "kind": "rec",
-   "start": 10494,
+   "start": 10506,
    "dur": 496,
    "lead": 7,
    "bump": null
@@ -175,7 +175,7 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 10990,
+   "start": 11002,
    "dur": 534,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B05",
    "kind": "rec",
-   "start": 11524,
+   "start": 11536,
    "dur": 395,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 11919,
+   "start": 11931,
    "dur": 1015,
    "lead": 7,
    "bump": null
