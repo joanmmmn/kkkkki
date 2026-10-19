@@ -172,5 +172,5 @@ export const piece: PLPiece = {
       { label: 'Jak zacząć', from: 'B01' },
     ],
   },
-  thumb: { line1: 'AUDIOBOOKI', line2: 'ZA DARMO?', seal: { icon: 'headphones', text: '21 847\ntytułów' }, label: { strong: '0 zł', rest: 'BEZ REJESTRACJI' } },
+  thumb: { line1: 'AUDIOBOOKI', line2: 'ZA DARMO?', screen: 'pl/librivox/img/thumb_screen.jpg', screenMobile: false, seal: { icon: 'headphones', text: '21 847\ntytułów' }, label: { strong: '0 zł', rest: 'BEZ REJESTRACJI' } },
 };

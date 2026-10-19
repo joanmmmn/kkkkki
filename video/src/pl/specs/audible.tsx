@@ -46,8 +46,9 @@ export const piece: PLPiece = {
         marks: [
           { at: 'filtrem', until: 'Remigiusza', x: 12, y: 438, w: 84, h: 28 },
           { at: 'Remigiusza', until: 'Joanny', x: 694, y: 586, w: 256, h: 290 }, { at: 'Kraszewski', until: 'Sporo', x: 1240, y: 586, w: 256, h: 290 },
+          { at: 'Sporo', x: 500, y: 54, w: 660, h: 56 },
         ],
-        zooms: [{ at: 'zakladke', zoom: 1.7, x: 420, y: 360 }, { at: 'Remigiusza', zoom: 1.25, x: 960, y: 620 }],
+        zooms: [{ at: 'zakladke', zoom: 1.7, x: 420, y: 360 }, { at: 'Remigiusza', zoom: 1.25, x: 960, y: 620 }, { at: 'Sporo', zoom: 1.8, x: 830, y: 220 }],
         tags: [
           { at: 'filtrem', label: 'Filtr: Język → Polski', icon: 'search' },
           { at: 'Remigiusza', label: 'Remigiusz Mróz', sub: 'kryminały', icon: 'book' },
