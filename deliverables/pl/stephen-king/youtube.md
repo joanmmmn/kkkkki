@@ -24,8 +24,8 @@ Rozdziały:
 4:17 Pan Mercedes (i dwie krótkie: Carrie, Uniesienie)
 4:45 Lepiej na później: To, Bastion i Mroczna Wieża
 5:19 Wszystko się łączy (i kiedy liczy się kolejność)
-5:54 Słuchać Kinga po polsku: lektorzy
-6:24 Trzy trasy
+5:55 Słuchać Kinga po polsku: lektorzy
+6:25 Trzy trasy
 
 Sprawdź lektora, czas trwania i to, gdzie posłuchać audiobooka i za ile:
 https://sonorbooks.pl/audiobooki/?q=stephen+king
@@ -60,7 +60,7 @@ A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której
 - **Idioma del vídeo:** polaco (también el de los subtítulos y los textos de YouTube).
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl).
 - **¿Es para niños?** No.
-- **Duración:** 21490 fotogramas a 50 fps = 429.8 s (7:09). El español dura 7:45; el polaco es más corto porque la locución lo es (no se ha rellenado).
+- **Duración:** 21525 fotogramas a 50 fps = 430.5 s (7:10). El español dura 7:45; el polaco es más corto porque la locución lo es (no se ha rellenado).
 - **Pantalla final:** los últimos 14 s (escena OUTRO: logo, «Twoja następna historia już na ciebie czeka.», sonorbooks.pl) dejan libre la mitad derecha para los elementos de YouTube: vídeo siguiente y botón de suscripción.
 - **Subtítulos:** `stephen_king_od_czego_zaczac.pl.srt` (polaco). **Capítulos:** `capitulos.txt` (ya están en la descripción). **Miniaturas:** `miniatura_A.png` (clara) y `miniatura_B.png` (biblioteca 3D con los lomos en polaco).
 

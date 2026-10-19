@@ -1,22 +1,22 @@
 {
  "id": "G31",
- "hash": "8e590a317fc2",
- "text": "W „Dallas ’63” bohater trafia do Derry, miasta z „To”, i poznaje Beverly i Richiego.",
- "duration": 6.03,
+ "hash": "670debab65ba",
+ "text": "W „Dallas ’63” bohater trafia do Derry, miasta z powieści „To”, i poznaje Beverly i Richiego.",
+ "duration": 6.61,
  "words": [
   {
    "w": "W",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.04
   },
   {
    "w": "Dallas",
-   "s": 0.16,
-   "e": 0.56
+   "s": 0.08,
+   "e": 0.48
   },
   {
    "w": "sześćdziesiąt",
-   "s": 0.6,
+   "s": 0.56,
    "e": 1.04
   },
   {
@@ -27,11 +27,11 @@
   {
    "w": "bohater",
    "s": 1.68,
-   "e": 2.08
+   "e": 2.0
   },
   {
    "w": "trafia",
-   "s": 2.16,
+   "s": 2.08,
    "e": 2.4
   },
   {
@@ -42,49 +42,54 @@
   {
    "w": "Derry,",
    "s": 2.6,
-   "e": 3.04
+   "e": 3.12
   },
   {
    "w": "miasta",
-   "s": 3.08,
-   "e": 3.36
+   "s": 3.16,
+   "e": 3.44
   },
   {
    "w": "z",
-   "s": 3.44,
+   "s": 3.48,
    "e": 3.52
   },
   {
+   "w": "powieści",
+   "s": 3.6,
+   "e": 3.92
+  },
+  {
    "w": "To,",
-   "s": 3.64,
-   "e": 4.08
-  },
-  {
-   "w": "i",
-   "s": 4.12,
-   "e": 4.16
-  },
-  {
-   "w": "poznaje",
-   "s": 4.24,
+   "s": 4.08,
    "e": 4.56
   },
   {
-   "w": "Bewerli",
+   "w": "i",
    "s": 4.64,
+   "e": 4.68
+  },
+  {
+   "w": "poznaje",
+   "s": 4.72,
    "e": 5.12
   },
   {
-   "w": "i",
+   "w": "Bewerli",
    "s": 5.2,
-   "e": 5.24
+   "e": 5.68
+  },
+  {
+   "w": "i",
+   "s": 5.76,
+   "e": 5.8
   },
   {
    "w": "Riczjego.",
-   "s": 5.28,
-   "e": 6.0
+   "s": 5.84,
+   "e": 6.56
   }
  ],
- "trimmed": "8e590a317fc2",
- "speechEnd": 5.907
+ "trimmed": "670debab65ba",
+ "speechEnd": 6.61
 }
