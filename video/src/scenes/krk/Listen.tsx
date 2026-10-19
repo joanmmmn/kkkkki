@@ -137,7 +137,7 @@ export const Version: React.FC = () => {
           </svg>
           <div style={{ position: 'absolute', left: hx(2.8) - 10, top: AX.y - 300, opacity: adapt, transform: `translateY(${(1 - adapt) * 14}px)`, whiteSpace: 'nowrap' }}>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink2 }}>3 h 18 min</div>
-            <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 28, color: color.muted }}>adaptación, con varias voces</div>
+            <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 28, color: color.muted }}>adaptación,<br />con varias voces</div>
           </div>
           <div style={{ position: 'absolute', left: hx(5.3) - 10, top: AX.y - 300, opacity: full, transform: `translateY(${(1 - full) * 14}px)`, whiteSpace: 'nowrap' }}>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: KR }}>De 5 h 30 min a 7 h</div>

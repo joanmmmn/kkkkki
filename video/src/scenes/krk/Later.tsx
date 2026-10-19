@@ -192,9 +192,9 @@ export const Vida: React.FC = () => {
             return (
               <div key={b.k} style={{ position: 'absolute', left: BX, top: b.y, display: 'flex', alignItems: 'center', gap: 26, transform: `translateY(${(1 - s) * -30}px)`, opacity: s }}>
                 <FlatCover b={BOOKS[b.k]} w={150} rot={i % 2 ? -3 : 3} dark />
-                <div style={{ width: 380 }}>
-                  <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, color: '#fff', lineHeight: 1.1 }}>{BOOKS[b.k].title}</div>
-                  <div style={{ marginTop: 4, fontFamily: font.sans, fontWeight: 500, fontSize: 24, color: 'rgba(255,255,255,0.6)' }}>{BOOKS[b.k].year}{b.k === 'culpable' ? ' · en Estadios en el camino de la vida' : ''}</div>
+                <div style={{ width: 400 }}>
+                  <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 34, color: '#fff', lineHeight: 1.1, whiteSpace: 'pre-line' }}>{b.k === 'culpable' ? '¿Culpable?\n¿No culpable?' : BOOKS[b.k].title}</div>
+                  <div style={{ marginTop: 4, fontFamily: font.sans, fontWeight: 500, fontSize: b.k === 'culpable' ? 22 : 24, color: 'rgba(255,255,255,0.6)', whiteSpace: 'pre-line' }}>{BOOKS[b.k].year}{b.k === 'culpable' ? '\nen Estadios en el camino de la vida' : ''}</div>
                   {b.note && <div style={{ marginTop: 8, fontFamily: font.serif, fontStyle: 'italic', fontSize: 28, color: '#F3D79A', opacity: rampOut(frame, (b.noteAt ?? 0) - 4, (b.noteAt ?? 0) + 10) }}>{b.note}</div>}
                 </div>
               </div>

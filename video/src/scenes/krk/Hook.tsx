@@ -33,9 +33,10 @@ export const Handwrite: React.FC<{ text: string; a: number; b: number; size: num
   const p = ramp(frame, a, b, (t) => t);
   if (p <= 0) return null;
   const edge = 6;
+  const pad = Math.round(size * 0.3); // los rasgos de la letra que sobresalen de la caja no se recortan
   const m = `linear-gradient(90deg, #000 0%, #000 ${p * (100 + edge) - edge}%, rgba(0,0,0,0) ${p * (100 + edge)}%)`;
   return (
-    <div style={{ position: 'relative', fontFamily: HANDF, fontSize: size, color: colorInk, lineHeight: 1.15, whiteSpace: 'nowrap', WebkitMaskImage: m, maskImage: m, ...style }}>{text}</div>
+    <div style={{ position: 'relative', fontFamily: HANDF, fontSize: size, color: colorInk, lineHeight: 1.15, whiteSpace: 'nowrap', paddingLeft: pad, paddingRight: pad, marginLeft: -pad, marginRight: -pad, WebkitMaskImage: m, maskImage: m, ...style }}>{text}</div>
   );
 };
 

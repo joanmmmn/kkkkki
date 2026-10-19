@@ -238,11 +238,11 @@ const VDiario: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
       {/* piezas (de pie, sobre el tablero) */}
       <div style={{ position: 'absolute', left: 430 + move * 150, top: 420 - move * 40, opacity: kingIn, transform: `translateY(${(1 - kingIn) * -60}px)` }}>
         <Piece kind="king" size={120} c="#1A1214" edge="#8C6A2C" />
-        <div style={{ textAlign: 'center', marginTop: 8, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#F3EAD8' }}>Johannes</div>
+        <div style={{ textAlign: 'center', marginTop: 8 }}><span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: '#F3EAD8', background: 'rgba(20,10,16,0.82)', padding: '4px 14px', borderRadius: 999 }}>Johannes</span></div>
       </div>
       <div style={{ position: 'absolute', left: 760, top: 380, opacity: queenIn, transform: `translateY(${(1 - queenIn) * -60}px)` }}>
         <Piece kind="queen" size={110} c="#F4ECDA" edge="#8C6A2C" />
-        <div style={{ textAlign: 'center', marginTop: 8, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#F3EAD8' }}>Cordelia</div>
+        <div style={{ textAlign: 'center', marginTop: 8 }}><span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: '#F3EAD8', background: 'rgba(20,10,16,0.82)', padding: '4px 14px', borderRadius: 999 }}>Cordelia</span></div>
       </div>
       {/* los anillos del compromiso */}
       {frame >= f.comp - 5 && (
@@ -252,7 +252,7 @@ const VDiario: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
         </div>
       )}
       {/* el diario */}
-      <div style={{ position: 'absolute', left: 1180, top: 210, width: 560, height: 680, transform: `translateX(${(1 - diary) * 700}px) rotate(${3 - (1 - diary) * 6}deg)`, boxShadow: '0 40px 80px rgba(0,0,0,0.5)', borderRadius: 6, overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', left: 1180, top: 210, width: 560, height: 680, transform: `translateX(${(1 - diary) * 900}px) rotate(${3 - (1 - diary) * 6}deg)`, opacity: Math.min(1, diary * 4), boxShadow: '0 40px 80px rgba(0,0,0,0.5)', borderRadius: 6, overflow: 'hidden' }}>
         <PaperBG tone="#EFE5CF" />
         <div style={{ position: 'absolute', left: 50, top: 50, width: 460 }}>
           <Handwrite text="Cordelia" a={f.anota} b={f.anota + 16} size={78} />
@@ -347,7 +347,7 @@ const VTemor: React.FC<{ c: Clock; from: number; to: number }> = ({ c, from }) =
       </AbsoluteFill>
       {/* la firma */}
       {frame >= f.firma - 5 && (
-        <div style={{ position: 'absolute', right: 120, top: 120, opacity: sig * (1 - scale), transform: `translateY(${(1 - sig) * -20}px) rotate(2deg)` }}>
+        <div style={{ position: 'absolute', right: 120, top: 120, opacity: sig * (1 - scale) * (1 - panels), transform: `translateY(${(1 - sig) * -20}px) rotate(2deg)` }}>
           <div style={{ background: '#F1E8D4', borderRadius: 8, padding: '16px 36px 22px', boxShadow: '0 20px 50px rgba(0,0,0,0.45)' }}>
             <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 22, letterSpacing: 5, color: 'rgba(42,32,24,0.6)', textTransform: 'uppercase' }}>lo firma</div>
             <div style={{ fontFamily: HANDF, fontSize: 76, color: '#2A2018', whiteSpace: 'nowrap' }}>Johannes de Silentio</div>
@@ -356,7 +356,7 @@ const VTemor: React.FC<{ c: Clock; from: number; to: number }> = ({ c, from }) =
       )}
       {/* cuatro maneras */}
       {frame >= f.cuatro - 7 && (
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 150, display: 'flex', justifyContent: 'center', gap: 26, opacity: panels * (1 - panelsOut) }}>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 56, display: 'flex', justifyContent: 'center', gap: 26, opacity: panels * (1 - panelsOut) }}>
           {[0, 1, 2, 3].map((i) => {
             const s = sp(frame, f.cuatro - 4 + i * 5, 14, 170);
             const tint = ['#E8B37A', '#B9A3C9', '#9FB8C9', '#D9897A'][i];
@@ -511,7 +511,7 @@ const VEnfermedad: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) =>
         {frame >= f.incl - 4 && (
           <div style={{ position: 'absolute', left: 1180, top: 560, opacity: rampOut(frame, f.incl - 2, f.incl + 10) }}>
             <svg width={120} height={90} style={{ position: 'absolute', left: -150, top: 30 }}><path d="M110 20 Q40 10 10 70" stroke="#F1D58C" strokeWidth={5} fill="none" /><path d="M10 70 l4 -22 M10 70 l20 -10" stroke="#F1D58C" strokeWidth={5} /></svg>
-            <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 48, color: '#F1D58C', maxWidth: 560, lineHeight: 1.15 }}>incluso en quien no sabe que la tiene</div>
+            <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 48, color: '#F6DE9C', lineHeight: 1.15, whiteSpace: 'nowrap', background: 'rgba(12,14,20,0.9)', padding: '14px 26px 18px', borderRadius: 14, boxShadow: '0 16px 40px rgba(0,0,0,0.5)' }}>incluso en quien<br />no sabe que la tiene</div>
           </div>
         )}
       </AbsoluteFill>

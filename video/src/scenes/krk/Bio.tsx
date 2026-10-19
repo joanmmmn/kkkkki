@@ -292,7 +292,7 @@ const Candle: React.FC<{ x: number; y: number; h: number; lit: number; t: number
           <path d={`M60 128 C 50 ${100 - smoke * 20} 72 ${80 - smoke * 30} 58 ${40 - smoke * 50}`} stroke={`rgba(200,200,210,${0.5 * Math.sin(smoke * Math.PI)})`} strokeWidth={3} fill="none" />
         )}
       </svg>
-      {label && <div style={{ position: 'absolute', left: -40, right: -40, top: h + 160, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', opacity: rampOut(frame, labelAt, labelAt + 12) }}>{label}</div>}
+      {label && <div style={{ position: 'absolute', left: -140, right: -140, top: h + 160, textAlign: 'center', whiteSpace: 'nowrap', fontFamily: font.sans, fontWeight: 700, fontSize: 27, color: '#fff', opacity: rampOut(frame, labelAt, labelAt + 12) }}>{label}</div>}
     </div>
   );
 };
@@ -437,13 +437,13 @@ export const Boom: React.FC = () => {
         const s = sp(frame, b.at - 4, 13, 140);
         if (frame < b.at - 5) return null;
         const sig = rampOut(frame, Math.max(b.at + 10, f.cada + i * 6), Math.max(b.at + 26, f.cada + i * 6 + 16));
-        const x = b.x * (1 - split) + (40 + i * 300) * split;
+        const x = b.x * (1 - split) + (30 + i * 290) * split;
         const sc = 1 - 0.3 * split;
         return (
           <div key={b.k} style={{ position: 'absolute', left: x + 120, top: 330 + 30 * split, transform: `translateY(${(1 - s) * 200}px) rotate(${(1 - s) * (i - 1) * 18}deg) scale(${(0.6 + 0.4 * s) * sc})`, transformOrigin: '50% 0%', opacity: Math.min(1, s * 1.5) }}>
             <Book3D b={BOOKS[b.k]} w={230} h={345} d={34} ry={-16 + i * 8} rx={3} />
-            <div style={{ position: 'absolute', left: -200, right: -200, top: 380 + split * (i % 2) * 80, textAlign: 'center', opacity: sig }}>
-              <div style={{ fontFamily: HANDF, fontSize: 58 + 8 * split, color: color.ink, whiteSpace: 'nowrap' }}>{b.sig}</div>
+            <div style={{ position: 'absolute', left: -200, right: -200, top: 380 + (i % 2) * 80, textAlign: 'center', opacity: sig }}>
+              <div style={{ fontFamily: HANDF, fontSize: 58 - 6 * split, color: color.ink, whiteSpace: 'nowrap' }}>{b.sig}</div>
             </div>
           </div>
         );
@@ -451,7 +451,7 @@ export const Boom: React.FC = () => {
       {/* «cada uno, un autor distinto» */}
       {frame >= f.autor - 6 && split < 1 && (
         <div style={{ position: 'absolute', left: 1370, top: 430, width: 440, opacity: rampOut(frame, f.autor - 4, f.autor + 10) * (1 - split) }}>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, lineHeight: 1.05, color: color.ink }}>Cada uno, un autor distinto</div>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, lineHeight: 1.05, color: color.ink }}>Cada uno,<br />un autor distinto</div>
         </div>
       )}
       {/* a la vez, con su nombre: discursos edificantes */}
