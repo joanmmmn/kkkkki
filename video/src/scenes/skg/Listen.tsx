@@ -161,8 +161,8 @@ export const Web: React.FC = () => {
     { f: fNarr - 20, s: 1, x: 0, y: 0 },
     { f: fNarr + 6, s: 1.9, x: -(1100 * k - W / 2) * 1.9, y: -(366 * k - 400) * 1.9 },
     { f: fDonde - 6, s: 1.9, x: -(1100 * k - W / 2) * 1.9, y: -(366 * k - 400) * 1.9 },
-    { f: fDonde + 14, s: 1.5, x: -(1110 * k - W / 2) * 1.5, y: -(560 * k - 400) * 1.5 },
-    { f: fEnlace - 8, s: 1.5, x: -(1110 * k - W / 2) * 1.5, y: -(560 * k - 400) * 1.5 },
+    { f: fDonde + 14, s: 1.5, x: -(1110 * k - W / 2) * 1.5, y: -(580 * k - 400) * 1.5 },
+    { f: fEnlace - 8, s: 1.5, x: -(1110 * k - W / 2) * 1.5, y: -(580 * k - 400) * 1.5 },
     { f: fEnlace + 20, s: 0.86, x: 0, y: -40 },
   ];
   const kk = (p: string) => keyframes(frame, cam, p, easeInOut);
@@ -178,8 +178,9 @@ export const Web: React.FC = () => {
           <BrowserWindow width={W} url={frame < fNarr - 14 ? 'sonorbooks.pl/audiobooki/?q=stephen+king' : 'sonorbooks.pl/audiobook/lsnienie/'}>
             <Img src={staticFile('skg/web/buscar.png')} style={{ position: 'absolute', left: 0, top: -interpolate(frame, [fSonor, fNarr - 22], [0, 120], { ...clamp, easing: easeInOut }), width: W, opacity: 1 - toFicha }} />
             <Img src={staticFile('skg/web/lsnienie.png')} style={{ position: 'absolute', left: 0, top: 0, width: W, opacity: toFicha }} />
-            {box(785, 355, 660, 36, fNarr - 2, fDonde)}
-            {box(790, 395, 650, 345, fDonde + 6, fEnlace + 4)}
+            {/* sonorbooks.pl/audiobook/lsnienie/ a 1600×900: línea «Czyta … · 21 godz. 8 min» y recuadro de dónde escucharlo y precio */}
+            {box(785, 357, 660, 36, fNarr - 2, fDonde)}
+            {box(790, 397, 650, 372, fDonde + 6, fEnlace + 4)}
           </BrowserWindow>
         </div>
       </AbsoluteFill>
