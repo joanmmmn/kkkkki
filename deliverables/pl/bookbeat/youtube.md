@@ -27,11 +27,11 @@ Sprawdziliśmy ceny, limity godzin, polski katalog i regulamin: co jest dobre, c
 2:02 Profile rodzinne i dziecięce
 2:15 Urządzenia
 2:29 Opinie
-2:44 Plusy i minusy
+2:45 Plusy i minusy
 3:00 Werdykt: czy warto?
 3:13 Jak wypróbować za darmo
 3:42 Jak zrezygnować
-3:54 Drobny druk okresu próbnego
+3:55 Drobny druk okresu próbnego
 
 W filmie:
 • Trzy pakiety: Basic 22,99 zł (20 godzin), Standard 29,99 zł (40 godzin) i Premium 34,99 zł (100 godzin) miesięcznie, bez zobowiązań. Do 4 profili dodatkowych od 9,99 zł miesięcznie za profil. Planu bez limitu nie ma.

@@ -81,8 +81,8 @@ Toma: 08_o_nas (de 0,0 s a 3,0 s: «…kompatybilny z Android Auto, Apple Carpla
 ES: BookBeat funciona en móviles y tabletas Android e iOS, en el Apple Watch incluso sin el móvil, en el coche con CarPlay y Android Auto, y con Chromecast. En el ordenador o en un lector de ebooks no puedes escuchar.
 
 ### A10 · Opinie  (≈ 15 s)
-VO (pl): W Polsce oceny są wysokie: 4,8 w Google Play i w App Store, gdzie ma ponad 10 000 ocen. Chwalą lektorów i wygodną aplikację. Krytykują limity godzin, nawet w Premium, i zawiłą rezygnację, tylko przez stronę.
-SAY (si difiere): W Polsce oceny są wysokie: cztery przecinek osiem w Gugl Plej i w Ep Stor, gdzie ma ponad dziesięć tysięcy ocen. Chwalą lektorów i wygodną aplikację. Krytykują limity godzin, nawet w Premium, i zawiłą rezygnację, tylko przez stronę.
+VO (pl): W Polsce oceny są wysokie: 4,8 w Google Play i w App Storze, gdzie ma ponad 10 000 ocen. Chwalą lektorów i wygodną aplikację. Krytykują limity godzin, nawet w Premium, i zawiłą rezygnację, tylko przez stronę.
+SAY (si difiere): W Polsce oceny są wysokie: cztery przecinek osiem w Gugl Plej i w Ep Storze, gdzie ma ponad dziesięć tysięcy ocen. Chwalą lektorów i wygodną aplikację. Krytykują limity godzin, nawet w Premium, i zawiłą rezygnację, tylko przez stronę.
 Pantalla: «Google Play (PL) ★ 4,8» · «App Store (PL) ★ 4,8 · 10 056 ocen» · «👍 Lektorzy · wygodna aplikacja» · «👎 Limity godzin · trudna rezygnacja» · pie «Stan na 19.10.2026».
 Toma: 10_google_play (de 0,0 s a 5,0 s) → 11_app_store (de 0,0 s a 5,0 s) → animación.
 ES: En Polonia tiene muy buenas notas: 4,8 en Google Play y en la App Store, donde suma más de 10.000 valoraciones. Gustan los narradores y lo cómoda que es la app. Se critican los límites de horas, incluso en Premium, y lo enrevesado de darse de baja, solo desde la web.

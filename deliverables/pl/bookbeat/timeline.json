@@ -1,6 +1,6 @@
 {
- "total_frames": 13359,
- "seconds": 267.18,
+ "total_frames": 13366,
+ "seconds": 267.32,
  "chapters": [
   {
    "t": 11.5,
@@ -39,23 +39,23 @@
    "label": "Opinie"
   },
   {
-   "t": 164.88,
+   "t": 165.02,
    "label": "Plusy i minusy"
   },
   {
-   "t": 180.72,
+   "t": 180.86,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 193.84,
+   "t": 193.98,
    "label": "Jak wypróbować za darmo"
   },
   {
-   "t": 222.46,
+   "t": 222.6,
    "label": "Jak zrezygnować"
   },
   {
-   "t": 234.94,
+   "t": 235.08,
    "label": "Drobny druk okresu próbnego"
   }
  ],
@@ -144,14 +144,14 @@
    "id": "A10",
    "kind": "ratings",
    "start": 7464,
-   "dur": 794,
+   "dur": 801,
    "lead": 26,
    "bump": "Opinie"
   },
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8258,
+   "start": 8265,
    "dur": 792,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -159,7 +159,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9050,
+   "start": 9057,
    "dur": 656,
    "lead": 26,
    "bump": "Werdykt"
@@ -167,7 +167,7 @@
   {
    "id": "B01",
    "kind": "steps",
-   "start": 9706,
+   "start": 9713,
    "dur": 407,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -175,7 +175,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10113,
+   "start": 10120,
    "dur": 579,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B03",
    "kind": "features",
-   "start": 10692,
+   "start": 10699,
    "dur": 445,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 11137,
+   "start": 11144,
    "dur": 610,
    "lead": 26,
    "bump": "Jak zrezygnować"
@@ -199,7 +199,7 @@
   {
    "id": "B05",
    "kind": "rec",
-   "start": 11747,
+   "start": 11754,
    "dur": 595,
    "lead": 7,
    "bump": null
@@ -207,7 +207,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12342,
+   "start": 12349,
    "dur": 1017,
    "lead": 7,
    "bump": null
