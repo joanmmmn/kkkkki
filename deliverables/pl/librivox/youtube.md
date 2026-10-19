@@ -1,6 +1,6 @@
 # YouTube · LibriVox po polsku (SonorBooks Polska)
 
-Duración: 4:49 · Subtítulos: `librivox.pl.srt` · Miniatura: `PLThumb-librivox`
+Duración: 4:46 · Subtítulos: `librivox.pl.srt` · Miniatura: `PLThumb-librivox`
 
 ## Tytuł (92 znaki)
 **LibriVox: darmowe audiobooki po polsku. Gdzie jest haczyk? Jak słuchać i na co uważać (2026)**
@@ -19,18 +19,18 @@ Gdzie jest haczyk? Sprawdziliśmy, ile jest polskich nagrań, jak ich słuchać 
 ⏱️ Rozdziały
 0:00 Darmowe audiobooki: gdzie jest haczyk?
 0:15 Czym jest LibriVox
-0:41 Ile to kosztuje
-0:54 Ile jest po polsku
-1:13 Polska klasyka w LibriVox
+0:42 Ile to kosztuje
+0:55 Ile jest po polsku
+1:14 Polska klasyka w LibriVox
 1:25 Jak szukać po polsku
 1:42 Strona książki: słuchanie i pobieranie
-2:00 Lektorzy
-2:16 Prawo: USA a Polska
-2:44 Na telefonie: RSS i aplikacje
-2:59 Opinie o aplikacjach
-3:23 Plusy i minusy
-3:42 Werdykt: czy warto?
-3:57 Jak zacząć
+1:59 Lektorzy
+2:15 Prawo: USA a Polska
+2:43 Na telefonie: RSS i aplikacje
+2:57 Opinie o aplikacjach
+3:21 Plusy i minusy
+3:40 Werdykt: czy warto?
+3:54 Jak zacząć
 
 W filmie:
 • LibriVox to projekt wolontariuszy (od sierpnia 2005), niekomercyjny i bez reklam: 21 847 tytułów w 49 językach (stan na 19.10.2026).

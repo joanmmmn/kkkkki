@@ -31,7 +31,7 @@ export const piece: PLPiece = {
           { at: 'niecale', label: 'Po polsku: niecałe 2%', tone: 'bad' }, { at: 'Hari', label: 'Harry Potter · „Wiedźmin”', icon: 'book' },
           { at: 'sprawdz', label: 'Sprawdź swoje tytuły przed zapłatą', icon: 'search', tone: 'accent' },
         ] },
-      { id: 'A05', kind: 'rec', kicker: 'Superprodukcja', title: 'Perełka katalogu', rec: { clip: 'wiedzmin', start: 5.3 },
+      { id: 'A05', kind: 'rec', kicker: 'Superprodukcja', title: 'Perełka katalogu', rec: { clip: 'wiedzmin', start: 3.6 },
         cuts: [{ at: 'Rozdroze', rec: { clip: 'rozdroze', start: 0.3 } }],
         marks: [{ at: '70', until: 'muzyka', x: 645, y: 470, w: 616, h: 98 }, { at: 'muzyka', until: 'Rozdroze', x: 645, y: 578, w: 616, h: 72 }],
         zooms: [{ at: 'Wiedzmin', zoom: 1.45, x: 955, y: 480 }],
