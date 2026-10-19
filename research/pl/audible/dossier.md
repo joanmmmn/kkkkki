@@ -38,7 +38,7 @@ Todo consultado el **19/10/2026** salvo que se indique otra fecha. Pedido desde 
 - Escuchar en el navegador: no verificado para Polonia; no se menciona.
 
 ## Notas en las tiendas (Polonia)
-- **App Store Polonia** (`itunes.apple.com/lookup?id=379693831&country=pl`): averageUserRating **4,76841**, userRatingCount **4.413**, versión 4.79.2 (12/10/2026). Web con `?l=pl`: «Oceny: 4,4 tys.». Las 50 reseñas más recientes del feed polaco van de 2018 a noviembre de 2022: **ninguna es posterior al lanzamiento polaco**.
+- **App Store Polonia** (`itunes.apple.com/lookup?id=379693831&country=pl`): averageUserRating **4,76841**, userRatingCount **4.413**, versión 4.79.2 (12/10/2026). Web con `?l=pl`: «Oceny: 4,4 tys.». Corrección (19/10, revisión): el feed polaco de reseñas (`itunes.apple.com/pl/rss/customerreviews/id=379693831/sortby=mostrecent/json`) tiene **6 reseñas posteriores al lanzamiento polaco** (09.09–12.10.2026: notas 4, 1, 2, 1, 1 y 3; la mayoría en inglés) y el resto son anteriores (hasta 2018). El vídeo ya no dice que las reseñas sean de antes del lanzamiento: da la media de toda la app («ocena całej aplikacji, stan na 19.10.2026»).
 - **Google Play** (`hl=pl&gl=PL`): **4,1**, «1,77 mln opinii» (mundial), «100 mln+ Pobrania». Con otros países: EE. UU. 4,6, Alemania 4,4, España 4,5.
 - **Qué dicen los usuarios** (reseñas de Google Play en Polonia desde julio de 2026, más Świat Czytników):
   - Gusta: la variedad («Świetny wybór książek!»), el reproductor (modo coche con botones grandes, historial, listas).
