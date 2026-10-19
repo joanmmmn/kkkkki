@@ -1,0 +1,154 @@
+{
+ "id": "A08B",
+ "hash": "d7079e7ca7fa",
+ "text": "Family to osobne konta z własnymi półkami, opłacane przez jedną osobę, zwykle w jednym domu. A dla dzieci jest tryb dziecięcy, zabezpieczony kodem PIN, z samymi tytułami dla dzieci.",
+ "duration": 11.2,
+ "words": [
+  {
+   "w": "Family",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "to",
+   "s": 0.56,
+   "e": 0.8
+  },
+  {
+   "w": "osobne",
+   "s": 0.92,
+   "e": 1.28
+  },
+  {
+   "w": "konta",
+   "s": 1.4,
+   "e": 1.6
+  },
+  {
+   "w": "z",
+   "s": 1.68,
+   "e": 1.72
+  },
+  {
+   "w": "własnymi",
+   "s": 1.76,
+   "e": 2.16
+  },
+  {
+   "w": "półkami,",
+   "s": 2.24,
+   "e": 2.84
+  },
+  {
+   "w": "opłacane",
+   "s": 2.88,
+   "e": 3.36
+  },
+  {
+   "w": "przez",
+   "s": 3.4,
+   "e": 3.6
+  },
+  {
+   "w": "jedną",
+   "s": 3.64,
+   "e": 3.92
+  },
+  {
+   "w": "osobę,",
+   "s": 4.04,
+   "e": 4.6
+  },
+  {
+   "w": "zwykle",
+   "s": 4.64,
+   "e": 4.88
+  },
+  {
+   "w": "w",
+   "s": 4.96,
+   "e": 4.987
+  },
+  {
+   "w": "jednym",
+   "s": 5.013,
+   "e": 5.28
+  },
+  {
+   "w": "domu.",
+   "s": 5.4,
+   "e": 6.04
+  },
+  {
+   "w": "A",
+   "s": 6.08,
+   "e": 6.16
+  },
+  {
+   "w": "dla",
+   "s": 6.24,
+   "e": 6.32
+  },
+  {
+   "w": "dzieci",
+   "s": 6.36,
+   "e": 6.64
+  },
+  {
+   "w": "jest",
+   "s": 6.72,
+   "e": 6.96
+  },
+  {
+   "w": "tryb",
+   "s": 7.04,
+   "e": 7.16
+  },
+  {
+   "w": "dziecięcy,",
+   "s": 7.2,
+   "e": 7.88
+  },
+  {
+   "w": "zabezpieczony",
+   "s": 7.92,
+   "e": 8.48
+  },
+  {
+   "w": "kodem",
+   "s": 8.52,
+   "e": 8.8
+  },
+  {
+   "w": "PIN,",
+   "s": 8.88,
+   "e": 9.28
+  },
+  {
+   "w": "z",
+   "s": 9.307,
+   "e": 9.333
+  },
+  {
+   "w": "samymi",
+   "s": 9.36,
+   "e": 9.68
+  },
+  {
+   "w": "tytułami",
+   "s": 9.76,
+   "e": 10.08
+  },
+  {
+   "w": "dla",
+   "s": 10.16,
+   "e": 10.24
+  },
+  {
+   "w": "dzieci.",
+   "s": 10.32,
+   "e": 11.2
+  }
+ ],
+ "speechEnd": 10.746
+}

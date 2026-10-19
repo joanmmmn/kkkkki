@@ -35,7 +35,8 @@ export const piece: PLPiece = {
         ] },
       { id: 'A04', kind: 'rec', bump: 'Jak to działa', kicker: 'Pomoc Kobo', title: 'Co jest w abonamencie?', rec: { clip: 'pomoc_faq', start: 8.1 },
         cuts: [{ at: 'zalogowaniu', rec: { clip: 'pomoc_szukaj', start: 0.3 } }],
-        marks: [{ at: 'oznaczonych', until: 'Reszte', x: 784, y: 376, w: 760, h: 58 }, { at: 'Reszte', until: 'zalogowaniu', x: 784, y: 276, w: 760, h: 78 }],
+        marks: [{ at: 'oznaczonych', until: 'Reszte', x: 784, y: 376, w: 760, h: 58 }, { at: 'Reszte', until: 'zalogowaniu', x: 784, y: 276, w: 760, h: 78 },
+          { at: 'zalogowaniu', until: 'filtr', x: 824, y: 156, w: 720, h: 48 }, { at: 'filtr', x: 836, y: 370, w: 150, h: 54 }],
         zooms: [{ at: 'limitu', zoom: 1.45, x: 1160, y: 340 }],
         tags: [
           { at: 'limitu', label: 'Bez limitu godzin', icon: 'infinity' }, { at: 'oznaczonych', label: 'Tylko tytuły Kobo Plus', icon: 'check' },
@@ -79,20 +80,24 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'polsku', label: 'Słuchasz głównie po polsku', sub: 'na razie lepszy polski katalog' },
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. · bez limitu w katalogu Klubu'], label: 'Dla porównania (10.2026):' } },
-      { id: 'B01', kind: 'steps', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Jak zacząć', rec: { clip: 'pomoc_subskrypcja', start: 12.0 }, marks: [], steps: [
+      { id: 'B01', kind: 'steps', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Jak zacząć', rec: { clip: 'pomoc_subskrypcja', start: 11.7 },
+        marks: [{ at: 'zaloguj', until: 'zakladke', x: 630, y: 152, w: 250, h: 28 }, { at: 'zakladke', x: 816, y: 286, w: 92, h: 32 }], steps: [
         { at: ['kobo', 0], title: 'Wejdź na kobo.com' }, { at: 'zaloguj', title: 'Zaloguj się', sub: 'albo załóż darmowe konto Kobo' }, { at: 'zakladke', title: 'Otwórz zakładkę Kobo Plus' },
       ] },
-      { id: 'B02', kind: 'rec', kicker: 'Okres próbny', title: 'Karta i jedna próba', rec: { clip: 'pomoc_subskrypcja', start: 4.0 },
+      { id: 'B02', kind: 'rec', kicker: 'Okres próbny', title: 'Karta i jedna próba', rec: { clip: 'pomoc_subskrypcja', start: 0.4, holdAt: 9.0 },
         cuts: [{ at: 'Proba', rec: { clip: 'pomoc_anuluj', start: 0.3 } }],
-        marks: [{ at: 'Proba', x: 784, y: 240, w: 730, h: 56 }], zooms: [],
+        marks: [{ at: 'karte', until: 'przedplaconych', x: 616, y: 662, w: 560, h: 30 }, { at: 'przedplaconych', until: 'Proba', x: 616, y: 692, w: 560, h: 30 }, { at: 'Proba', x: 784, y: 240, w: 730, h: 56 }],
+        zooms: [{ at: 'Wybierz', zoom: 1.5, x: 900, y: 560 }, { at: 'Proba', zoom: 1.5, x: 1100, y: 330 }],
         tags: [
           { at: 'Listen', label: 'Listen lub Read & Listen', icon: 'headphones' }, { at: 'karte', label: 'Karta wymagana', icon: 'card' },
           { at: 'przedplaconych', label: 'Bez kart przedpłaconych', tone: 'bad' }, { at: 'nowych', label: 'Tylko dla nowych', sub: 'jedna próba na konto', icon: 'user' },
         ] },
-      { id: 'B03', kind: 'steps', kicker: 'Słuchanie', title: 'Dodaj tytuły Kobo Plus', rec: { clip: 'pomoc_szukaj', start: 12.0 }, marks: [], steps: [
+      { id: 'B03', kind: 'steps', kicker: 'Słuchanie', title: 'Dodaj tytuły Kobo Plus', rec: { clip: 'pomoc_szukaj', start: 10.7 },
+        marks: [{ at: 'aplikacji', until: 'czytniku', x: 824, y: 790, w: 420, h: 94 }, { at: 'czytniku', x: 824, y: 340, w: 560, h: 30 }], steps: [
         { at: 'zaloguj', title: 'Zaloguj się', sub: 'w aplikacji Kobo Books albo na czytniku' }, { at: 'dodawaj', title: 'Dodawaj tytuły „Kobo Plus”' },
       ] },
-      { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_subskrypcja', start: 0.3 }, marks: [], steps: [
+      { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_subskrypcja', start: 0.4, holdAt: 9.0 },
+        marks: [{ at: 'czternastu', until: ['kobo', 1], x: 590, y: 200, w: 764, h: 62 }, { at: ['kobo', 1], until: 'anulowaniu', x: 800, y: 76, w: 480, h: 56 }, { at: 'anulowaniu', x: 844, y: 532, w: 660, h: 66 }], steps: [
         { at: 'czternastu', title: 'Po 14 dniach: opłata co miesiąc' }, { at: 'anuluj', title: 'Anuluj przed końcem próby', sub: 'wtedy karta nie zostanie obciążona' },
         { at: ['kobo', 1], title: 'kobo.com › konto › subskrypcje', sub: 'nie na czytniku ani w aplikacji na iPhone’a', rec: { clip: 'pomoc_anuluj', start: 6.45 } },
         { at: 'anulowaniu', title: 'Po anulowaniu: koniec dostępu', sub: 'do książek z Kobo Plus' },

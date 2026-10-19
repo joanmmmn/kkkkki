@@ -1,0 +1,109 @@
+{
+ "id": "B03",
+ "hash": "25ae834b0945",
+ "text": "Wybierasz ofertę, zakładasz konto i dodajesz płatność; zgód marketingowych nie musisz zaznaczać. Potem logujesz się w aplikacji tym samym kontem.",
+ "duration": 9.28,
+ "words": [
+  {
+   "w": "Wybierasz",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "ofertę,",
+   "s": 0.48,
+   "e": 1.2
+  },
+  {
+   "w": "zakładasz",
+   "s": 1.28,
+   "e": 1.76
+  },
+  {
+   "w": "konto",
+   "s": 1.8,
+   "e": 2.16
+  },
+  {
+   "w": "i",
+   "s": 2.24,
+   "e": 2.32
+  },
+  {
+   "w": "dodajesz",
+   "s": 2.36,
+   "e": 2.8
+  },
+  {
+   "w": "płatność;",
+   "s": 2.92,
+   "e": 3.68
+  },
+  {
+   "w": "zgód",
+   "s": 3.76,
+   "e": 4.0
+  },
+  {
+   "w": "marketingowych",
+   "s": 4.24,
+   "e": 4.72
+  },
+  {
+   "w": "nie",
+   "s": 4.8,
+   "e": 4.88
+  },
+  {
+   "w": "musisz",
+   "s": 4.96,
+   "e": 5.2
+  },
+  {
+   "w": "zaznaczać.",
+   "s": 5.28,
+   "e": 6.2
+  },
+  {
+   "w": "Potem",
+   "s": 6.24,
+   "e": 6.56
+  },
+  {
+   "w": "logujesz",
+   "s": 6.64,
+   "e": 7.04
+  },
+  {
+   "w": "się",
+   "s": 7.08,
+   "e": 7.147
+  },
+  {
+   "w": "w",
+   "s": 7.173,
+   "e": 7.2
+  },
+  {
+   "w": "aplikacji",
+   "s": 7.28,
+   "e": 7.76
+  },
+  {
+   "w": "tym",
+   "s": 7.84,
+   "e": 8.0
+  },
+  {
+   "w": "samym",
+   "s": 8.08,
+   "e": 8.32
+  },
+  {
+   "w": "kontem.",
+   "s": 8.44,
+   "e": 9.28
+  }
+ ],
+ "speechEnd": 8.814
+}

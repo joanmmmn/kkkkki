@@ -1,0 +1,121 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.bookbeat.com/pl/familyaccount",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "clickSel": "#onetrust-reject-all-handler",
+   "dur": 10
+  },
+  {
+   "wait": 600
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "hero"
+  },
+  {
+   "move": [
+    476,
+    497
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 1600
+  },
+  {
+   "wait": 200
+  },
+  {
+   "mark": "hours"
+  },
+  {
+   "move": [
+    485,
+    445
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "blocks"
+  },
+  {
+   "move": [
+    485,
+    262
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "kids"
+  },
+  {
+   "move": [
+    485,
+    612
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

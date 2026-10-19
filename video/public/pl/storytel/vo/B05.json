@@ -1,0 +1,134 @@
+{
+ "id": "B05",
+ "hash": "65b4158a23c1",
+ "text": "Drobny druk: według regulaminu, jeśli anulujesz w trakcie oferty promocyjnej, subskrypcja wygasa od razu. A w ostatniej godzinie przed kolejną płatnością nic już nie zmienisz.",
+ "duration": 10.64,
+ "words": [
+  {
+   "w": "Drobny",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "druk:",
+   "s": 0.44,
+   "e": 1.12
+  },
+  {
+   "w": "według",
+   "s": 1.2,
+   "e": 1.44
+  },
+  {
+   "w": "regulaminu,",
+   "s": 1.56,
+   "e": 2.28
+  },
+  {
+   "w": "jeśli",
+   "s": 2.32,
+   "e": 2.64
+  },
+  {
+   "w": "anulujesz",
+   "s": 2.72,
+   "e": 3.12
+  },
+  {
+   "w": "w",
+   "s": 3.2,
+   "e": 3.28
+  },
+  {
+   "w": "trakcie",
+   "s": 3.36,
+   "e": 3.52
+  },
+  {
+   "w": "oferty",
+   "s": 3.6,
+   "e": 3.92
+  },
+  {
+   "w": "promocyjnej,",
+   "s": 4.0,
+   "e": 4.84
+  },
+  {
+   "w": "subskrypcja",
+   "s": 4.88,
+   "e": 5.44
+  },
+  {
+   "w": "wygasa",
+   "s": 5.52,
+   "e": 5.92
+  },
+  {
+   "w": "od",
+   "s": 6.0,
+   "e": 6.08
+  },
+  {
+   "w": "razu.",
+   "s": 6.2,
+   "e": 6.76
+  },
+  {
+   "w": "A",
+   "s": 6.8,
+   "e": 6.88
+  },
+  {
+   "w": "w",
+   "s": 6.96,
+   "e": 7.0
+  },
+  {
+   "w": "ostatniej",
+   "s": 7.04,
+   "e": 7.44
+  },
+  {
+   "w": "godzinie",
+   "s": 7.52,
+   "e": 7.76
+  },
+  {
+   "w": "przed",
+   "s": 7.88,
+   "e": 8.0
+  },
+  {
+   "w": "kolejną",
+   "s": 8.04,
+   "e": 8.4
+  },
+  {
+   "w": "płatnością",
+   "s": 8.52,
+   "e": 9.2
+  },
+  {
+   "w": "nic",
+   "s": 9.28,
+   "e": 9.44
+  },
+  {
+   "w": "już",
+   "s": 9.48,
+   "e": 9.56
+  },
+  {
+   "w": "nie",
+   "s": 9.6,
+   "e": 9.68
+  },
+  {
+   "w": "zmienisz.",
+   "s": 9.76,
+   "e": 10.64
+  }
+ ],
+ "speechEnd": 10.22
+}

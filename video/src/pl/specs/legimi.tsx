@@ -17,9 +17,9 @@ export const piece: PLPiece = {
         { at: 'tramwaju', label: 'Czytasz, potem słuchasz dalej', sub: 'od tego samego miejsca', icon: 'headphones' },
       ], big: { at: 'dwustu', value: 240000, prefix: '~', label: 'tytułów w pakiecie bez limitu' } },
       { id: 'A03', kind: 'plans', bump: 'Cennik', kicker: 'Cennik · październik 2026', title: 'Ile kosztuje Legimi?', plans: [
-        { at: 'piecdziesiat', name: 'Bez limitu', price: '54,99 zł', period: '/ mies.', note: 'bez umowy', features: ['Ebooki + audiobooki', '~240 000 tytułów', 'Do 4 urządzeń'], best: true, badge: 'Najczęściej wybierany' },
+        { at: ['bez', 0], name: 'Bez limitu', price: '54,99 zł', period: '/ mies.', note: 'bez umowy', features: ['Ebooki + audiobooki', '~240 000 tytułów', 'Do 4 urządzeń'], best: true, badge: 'Najczęściej wybierany' },
         { at: 'czterdziesci', name: 'Bez limitu + umowa', price: '49,99 zł', period: '/ mies.', note: 'umowa na 12 mies. (promocja)', features: ['To samo, 5 zł taniej', 'Po roku: 54,99 zł'] },
-        { at: 'czternastu', name: 'Z limitem', price: '14,99 zł', period: '/ mies.', note: '300 stron lub 8 h', features: ['1000 stron / 26 h: 19,99 zł', '2000 stron / 53 h: 34,99 zł', 'Niewykorzystane przechodzą dalej'] },
+        { at: 'pakiety', name: 'Z limitem', price: '14,99 zł', period: '/ mies.', note: '300 stron lub 8 h', features: ['1000 stron / 26 h: 19,99 zł', '2000 stron / 53 h: 34,99 zł', 'Niewykorzystane przechodzą dalej'] },
       ], footer: [{ at: 'umowy', label: 'Premium ze SkyShowtime: 69,99 zł (bez okresu próbnego)', icon: 'tv' }] },
       { id: 'A04', kind: 'rec', bump: 'Katalog', kicker: 'legimi.pl', title: 'Katalog bez logowania', rec: { clip: 'home', start: 0 },
         cuts: [{ at: 'przy', rec: { clip: 'harda', start: 0.4 } }],
@@ -55,7 +55,7 @@ export const piece: PLPiece = {
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Legimi', pros: [
         { at: 'ebooki', label: 'Ebooki i audiobooki w jednym' }, { at: 'synchrobooki', label: 'Synchrobooki' }, { at: 'urzadzenia', label: '4 urządzenia, także czytnik' }, { at: 'tansze', label: 'Tańsze pakiety z limitem' },
       ], cons: [
-        { at: 'placisz', label: 'Bez umowy drożej niż Audioteka Klub i Empik Go' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: 'posluchasz', label: 'Audiobooki tylko w telefonie i tablecie' }, { at: 'komputerze', label: 'Okres próbny: tylko 3 dni' },
+        { at: 'placisz', label: 'Bez umowy: 54,99 zł', sub: 'drożej niż Audioteka Klub i Empik Go' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: 'posluchasz', label: 'Audiobooki tylko w telefonie i tablecie' }, { at: 'komputerze', label: 'Okres próbny: tylko 3 dni' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Legimi:\nczy warto?', yes: [
         { at: 'zmiane', label: 'Na zmianę czytasz i słuchasz' }, { at: 'czytnik', label: 'Masz czytnik', sub: 'także Kindle (tylko ebooki)' },

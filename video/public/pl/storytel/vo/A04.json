@@ -1,0 +1,139 @@
+{
+ "id": "A04",
+ "hash": "a443ba9e91fd",
+ "text": "Katalog przejrzysz na stronie bez logowania: cotygodniowe propozycje, wyczekiwane premiery i najpopularniejsze tytuły, takie jak Harry Potter czy Wiedźmin. Ale słuchasz i czytasz tylko w aplikacji.",
+ "duration": 11.28,
+ "words": [
+  {
+   "w": "Katalog",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "przejrzysz",
+   "s": 0.44,
+   "e": 0.8
+  },
+  {
+   "w": "na",
+   "s": 0.84,
+   "e": 0.88
+  },
+  {
+   "w": "stronie",
+   "s": 0.96,
+   "e": 1.28
+  },
+  {
+   "w": "bez",
+   "s": 1.36,
+   "e": 1.52
+  },
+  {
+   "w": "logowania:",
+   "s": 1.6,
+   "e": 2.32
+  },
+  {
+   "w": "cotygodniowe",
+   "s": 2.44,
+   "e": 2.88
+  },
+  {
+   "w": "propozycje,",
+   "s": 2.96,
+   "e": 3.76
+  },
+  {
+   "w": "wyczekiwane",
+   "s": 3.813,
+   "e": 4.32
+  },
+  {
+   "w": "premiery",
+   "s": 4.4,
+   "e": 4.88
+  },
+  {
+   "w": "i",
+   "s": 4.96,
+   "e": 5.04
+  },
+  {
+   "w": "najpopularniejsze",
+   "s": 5.12,
+   "e": 5.92
+  },
+  {
+   "w": "tytuły,",
+   "s": 6.0,
+   "e": 6.56
+  },
+  {
+   "w": "takie",
+   "s": 6.6,
+   "e": 6.8
+  },
+  {
+   "w": "jak",
+   "s": 6.88,
+   "e": 6.96
+  },
+  {
+   "w": "Harry",
+   "s": 7.04,
+   "e": 7.2
+  },
+  {
+   "w": "Potter",
+   "s": 7.28,
+   "e": 7.6
+  },
+  {
+   "w": "czy",
+   "s": 7.68,
+   "e": 7.76
+  },
+  {
+   "w": "Wiedźmin.",
+   "s": 7.84,
+   "e": 8.4
+  },
+  {
+   "w": "Ale",
+   "s": 8.8,
+   "e": 8.96
+  },
+  {
+   "w": "słuchasz",
+   "s": 9.04,
+   "e": 9.52
+  },
+  {
+   "w": "i",
+   "s": 9.56,
+   "e": 9.6
+  },
+  {
+   "w": "czytasz",
+   "s": 9.68,
+   "e": 10.08
+  },
+  {
+   "w": "tylko",
+   "s": 10.16,
+   "e": 10.4
+  },
+  {
+   "w": "w",
+   "s": 10.44,
+   "e": 10.48
+  },
+  {
+   "w": "aplikacji.",
+   "s": 10.56,
+   "e": 11.28
+  }
+ ],
+ "speechEnd": 11.28
+}

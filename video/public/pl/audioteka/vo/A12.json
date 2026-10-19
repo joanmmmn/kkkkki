@@ -1,8 +1,8 @@
 {
  "id": "A12",
- "hash": "a41a9d3401ac",
- "text": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wystarczy Plan Smart. A jeśli chcesz też czytać ebooki, porównaj z Legimi albo Empik Go.",
- "duration": 13.04,
+ "hash": "279fa2f754f0",
+ "text": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wtedy wystarczy Plan Smart. A jeśli chcesz też czytać ebooki, porównaj z Legimi albo Empik Go.",
+ "duration": 13.2,
  "words": [
   {
    "w": "Werdykt:",
@@ -22,26 +22,26 @@
   {
    "w": "dużo",
    "s": 1.8,
-   "e": 2.16
+   "e": 2.08
   },
   {
    "w": "i",
-   "s": 2.2,
-   "e": 2.24
+   "s": 2.16,
+   "e": 2.2
   },
   {
    "w": "po",
-   "s": 2.32,
-   "e": 2.4
+   "s": 2.24,
+   "e": 2.32
   },
   {
    "w": "polsku,",
-   "s": 2.44,
-   "e": 3.2
+   "s": 2.4,
+   "e": 3.16
   },
   {
    "w": "Plan",
-   "s": 3.28,
+   "s": 3.2,
    "e": 3.36
   },
   {
@@ -52,11 +52,11 @@
   {
    "w": "bez",
    "s": 4.0,
-   "e": 4.16
+   "e": 4.08
   },
   {
    "w": "limitu",
-   "s": 4.28,
+   "s": 4.16,
    "e": 4.48
   },
   {
@@ -77,93 +77,98 @@
   {
    "w": "oferta.",
    "s": 5.52,
-   "e": 6.347
+   "e": 6.28
   },
   {
    "w": "Słuchasz",
-   "s": 6.373,
+   "s": 6.32,
    "e": 6.64
   },
   {
    "w": "mniej?",
-   "s": 6.72,
+   "s": 6.68,
    "e": 7.32
   },
   {
-   "w": "Wystarczy",
+   "w": "Wtedy",
    "s": 7.36,
-   "e": 7.76
+   "e": 7.547
+  },
+  {
+   "w": "wystarczy",
+   "s": 7.573,
+   "e": 8.0
   },
   {
    "w": "Plan",
-   "s": 7.84,
-   "e": 7.92
+   "s": 8.12,
+   "e": 8.24
   },
   {
    "w": "Smart.",
-   "s": 8.0,
-   "e": 8.827
+   "s": 8.32,
+   "e": 9.0
   },
   {
    "w": "A",
-   "s": 8.853,
-   "e": 8.88
+   "s": 9.04,
+   "e": 9.08
   },
   {
    "w": "jeśli",
-   "s": 8.96,
-   "e": 9.12
+   "s": 9.12,
+   "e": 9.28
   },
   {
    "w": "chcesz",
-   "s": 9.2,
-   "e": 9.48
+   "s": 9.36,
+   "e": 9.64
   },
   {
    "w": "też",
-   "s": 9.52,
-   "e": 9.68
+   "s": 9.68,
+   "e": 9.893
   },
   {
    "w": "czytać",
-   "s": 9.76,
-   "e": 10.0
+   "s": 9.947,
+   "e": 10.16
   },
   {
    "w": "ebooki,",
-   "s": 10.08,
-   "e": 10.693
+   "s": 10.24,
+   "e": 10.853
   },
   {
    "w": "porównaj",
-   "s": 10.747,
-   "e": 11.04
+   "s": 10.907,
+   "e": 11.2
   },
   {
    "w": "z",
-   "s": 11.067,
-   "e": 11.093
+   "s": 11.24,
+   "e": 11.28
   },
   {
    "w": "Legimi",
-   "s": 11.12,
-   "e": 11.6
+   "s": 11.4,
+   "e": 11.76
   },
   {
    "w": "albo",
-   "s": 11.68,
-   "e": 11.92
+   "s": 11.84,
+   "e": 12.08
   },
   {
    "w": "Empik",
-   "s": 12.0,
-   "e": 12.32
+   "s": 12.16,
+   "e": 12.48
   },
   {
    "w": "Go.",
-   "s": 12.4,
-   "e": 13.04
+   "s": 12.8,
+   "e": 13.2
   }
  ],
- "speechEnd": 12.69
+ "speechEnd": 13.09
 }

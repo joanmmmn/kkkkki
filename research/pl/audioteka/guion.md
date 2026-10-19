@@ -152,3 +152,11 @@ ES: En sonorbooks.pl compruebas si tu audiolibro está en Audioteka Klub y compa
 
 ---
 **Total `say`: 4039 caracteres ≈ 4:20 a 15,5 caracteres/s.**
+
+---
+## Cambios en el montaje (19.10.2026)
+
+- **A08** se parte en dos escenas con el mismo texto: A08 (app: velocidad, drzemka, offline, 2 dispositivos) y **A08S** («W Planie Smart godziny liczą się…»), que va sobre la respuesta oficial del centro de ayuda.
+- **A12**: «Słuchasz mniej? Wystarczy Plan Smart.» → «Słuchasz mniej? **Wtedy** wystarczy Plan Smart.» (Whisper oía «Dostarczy»).
+- **Promoción del Plan na Start (10,90 zł hasta el 26.10.2026):** el vídeo se publica después, así que no sale en pantalla ni en las tomas. Las tomas de klub.audioteka.com y de Audioteka Kids se graban con la pestaña «12 miesięcy» (sin la tarjeta de la promoción) y la del móvil empieza en el Plan Optymalny. El Plan na Start sale solo como etiqueta, sin precio.
+- Tomas (`captures/pl/audioteka/`): superprod (gancho), klub_hero (A02), katalog (A04), solaris (A05), klub_korzysci (A06, A07), pomoc (A08S, B05), kids (A08B), klub_mobile (B01, B02), sb_solaris (B06). La 03_strona_glowna no se graba (lleva el banner de la promoción).

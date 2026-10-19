@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 124,
+ "duration": 10.594,
+ "offset": 0.114,
+ "marks": {
+  "table": 0.452,
+  "standard": 2.437,
+  "premium": 3.973,
+  "profiles": 5.538,
+  "included": 7.313,
+  "end": 10.593
+ },
+ "events": []
+}

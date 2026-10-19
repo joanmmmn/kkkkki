@@ -1,0 +1,179 @@
+{
+ "id": "A08",
+ "hash": "935d9ef5fdf8",
+ "text": "W planach Basic i Premium czas liczy się przy normalnym tempie: słuchasz dwa razy szybciej, a schodzi pełna długość nagrania. W Unlimited godzin nie liczysz, ale na jednym koncie słuchasz naraz na jednym urządzeniu.",
+ "duration": 12.88,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "planach",
+   "s": 0.08,
+   "e": 0.48
+  },
+  {
+   "w": "Basic",
+   "s": 0.56,
+   "e": 0.96
+  },
+  {
+   "w": "i",
+   "s": 1.013,
+   "e": 1.067
+  },
+  {
+   "w": "Premium",
+   "s": 1.12,
+   "e": 1.6
+  },
+  {
+   "w": "czas",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "liczy",
+   "s": 2.0,
+   "e": 2.16
+  },
+  {
+   "w": "się",
+   "s": 2.24,
+   "e": 2.32
+  },
+  {
+   "w": "przy",
+   "s": 2.36,
+   "e": 2.48
+  },
+  {
+   "w": "normalnym",
+   "s": 2.64,
+   "e": 2.96
+  },
+  {
+   "w": "tempie:",
+   "s": 3.04,
+   "e": 3.76
+  },
+  {
+   "w": "słuchasz",
+   "s": 3.88,
+   "e": 4.24
+  },
+  {
+   "w": "dwa",
+   "s": 4.28,
+   "e": 4.4
+  },
+  {
+   "w": "razy",
+   "s": 4.52,
+   "e": 4.64
+  },
+  {
+   "w": "szybciej,",
+   "s": 4.72,
+   "e": 5.2
+  },
+  {
+   "w": "a",
+   "s": 5.24,
+   "e": 5.28
+  },
+  {
+   "w": "schodzi",
+   "s": 5.36,
+   "e": 5.68
+  },
+  {
+   "w": "pełna",
+   "s": 5.76,
+   "e": 6.0
+  },
+  {
+   "w": "długość",
+   "s": 6.08,
+   "e": 6.48
+  },
+  {
+   "w": "nagrania.",
+   "s": 6.533,
+   "e": 7.52
+  },
+  {
+   "w": "W",
+   "s": 7.547,
+   "e": 7.573
+  },
+  {
+   "w": "Unlimited",
+   "s": 7.6,
+   "e": 8.32
+  },
+  {
+   "w": "godzin",
+   "s": 8.4,
+   "e": 8.72
+  },
+  {
+   "w": "nie",
+   "s": 8.76,
+   "e": 8.8
+  },
+  {
+   "w": "liczysz,",
+   "s": 8.88,
+   "e": 9.44
+  },
+  {
+   "w": "ale",
+   "s": 9.52,
+   "e": 9.6
+  },
+  {
+   "w": "na",
+   "s": 9.68,
+   "e": 9.76
+  },
+  {
+   "w": "jednym",
+   "s": 9.8,
+   "e": 10.08
+  },
+  {
+   "w": "koncie",
+   "s": 10.2,
+   "e": 10.4
+  },
+  {
+   "w": "słuchasz",
+   "s": 10.48,
+   "e": 10.8
+  },
+  {
+   "w": "naraz",
+   "s": 10.88,
+   "e": 11.2
+  },
+  {
+   "w": "na",
+   "s": 11.28,
+   "e": 11.36
+  },
+  {
+   "w": "jednym",
+   "s": 11.4,
+   "e": 11.68
+  },
+  {
+   "w": "urządzeniu.",
+   "s": 11.72,
+   "e": 12.88
+  }
+ ],
+ "speechEnd": 12.306
+}

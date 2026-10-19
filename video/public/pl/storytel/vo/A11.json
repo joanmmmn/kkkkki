@@ -1,0 +1,179 @@
+{
+ "id": "A11",
+ "hash": "4f2262a4228d",
+ "text": "Plusy: Unlimited bez limitu godzin, audiobooki i e-booki w jednej cenie, własne słuchowiska i konta rodzinne. Minusy: wyższa cena Unlimited, brak darmowej próby i wersji na komputer oraz książki znikające z dnia na dzień.",
+ "duration": 15.44,
+ "words": [
+  {
+   "w": "Plusy:",
+   "s": 0.0,
+   "e": 0.8
+  },
+  {
+   "w": "Unlimited",
+   "s": 0.88,
+   "e": 1.52
+  },
+  {
+   "w": "bez",
+   "s": 1.76,
+   "e": 2.0
+  },
+  {
+   "w": "limitu",
+   "s": 2.12,
+   "e": 2.32
+  },
+  {
+   "w": "godzin,",
+   "s": 2.4,
+   "e": 3.04
+  },
+  {
+   "w": "audiobooki",
+   "s": 3.16,
+   "e": 3.68
+  },
+  {
+   "w": "i",
+   "s": 3.76,
+   "e": 3.84
+  },
+  {
+   "w": "e-booki",
+   "s": 3.92,
+   "e": 4.32
+  },
+  {
+   "w": "w",
+   "s": 4.36,
+   "e": 4.4
+  },
+  {
+   "w": "jednej",
+   "s": 4.48,
+   "e": 4.72
+  },
+  {
+   "w": "cenie,",
+   "s": 4.8,
+   "e": 5.44
+  },
+  {
+   "w": "własne",
+   "s": 5.52,
+   "e": 5.84
+  },
+  {
+   "w": "słuchowiska",
+   "s": 5.96,
+   "e": 6.56
+  },
+  {
+   "w": "i",
+   "s": 6.64,
+   "e": 6.72
+  },
+  {
+   "w": "konta",
+   "s": 6.8,
+   "e": 7.04
+  },
+  {
+   "w": "rodzinne.",
+   "s": 7.12,
+   "e": 7.96
+  },
+  {
+   "w": "Minusy:",
+   "s": 8.0,
+   "e": 8.84
+  },
+  {
+   "w": "wyższa",
+   "s": 8.88,
+   "e": 9.2
+  },
+  {
+   "w": "cena",
+   "s": 9.24,
+   "e": 9.44
+  },
+  {
+   "w": "Unlimited,",
+   "s": 9.52,
+   "e": 10.427
+  },
+  {
+   "w": "brak",
+   "s": 10.453,
+   "e": 10.64
+  },
+  {
+   "w": "darmowej",
+   "s": 10.68,
+   "e": 11.12
+  },
+  {
+   "w": "próby",
+   "s": 11.16,
+   "e": 11.52
+  },
+  {
+   "w": "i",
+   "s": 11.6,
+   "e": 11.68
+  },
+  {
+   "w": "wersji",
+   "s": 11.8,
+   "e": 12.0
+  },
+  {
+   "w": "na",
+   "s": 12.04,
+   "e": 12.08
+  },
+  {
+   "w": "komputer",
+   "s": 12.2,
+   "e": 12.88
+  },
+  {
+   "w": "oraz",
+   "s": 12.96,
+   "e": 13.2
+  },
+  {
+   "w": "książki",
+   "s": 13.36,
+   "e": 13.6
+  },
+  {
+   "w": "znikające",
+   "s": 13.68,
+   "e": 14.24
+  },
+  {
+   "w": "z",
+   "s": 14.28,
+   "e": 14.32
+  },
+  {
+   "w": "dnia",
+   "s": 14.36,
+   "e": 14.48
+  },
+  {
+   "w": "na",
+   "s": 14.56,
+   "e": 14.64
+  },
+  {
+   "w": "dzień.",
+   "s": 14.72,
+   "e": 15.44
+  }
+ ],
+ "speechEnd": 15.01
+}

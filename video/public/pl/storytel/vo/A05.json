@@ -1,0 +1,164 @@
+{
+ "id": "A05",
+ "hash": "745f47b60a99",
+ "text": "Wizytówką serwisu są produkcje Storytel Original, dostępne tylko tutaj. Na przykład Kruk, słuchowisko Storytel i Canal+ z Michałem Żurawskim, albo Arka. Niebo Jakuba Żulczyka i Piotra Rogoży, z Jakubem Gierszałem.",
+ "duration": 14.24,
+ "words": [
+  {
+   "w": "Wizytówką",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "serwisu",
+   "s": 0.64,
+   "e": 1.12
+  },
+  {
+   "w": "są",
+   "s": 1.16,
+   "e": 1.28
+  },
+  {
+   "w": "produkcje",
+   "s": 1.36,
+   "e": 1.84
+  },
+  {
+   "w": "Storytel",
+   "s": 1.92,
+   "e": 2.4
+  },
+  {
+   "w": "Orydżinal,",
+   "s": 2.48,
+   "e": 3.2
+  },
+  {
+   "w": "dostępne",
+   "s": 3.24,
+   "e": 3.76
+  },
+  {
+   "w": "tylko",
+   "s": 3.84,
+   "e": 4.16
+  },
+  {
+   "w": "tutaj.",
+   "s": 4.24,
+   "e": 4.907
+  },
+  {
+   "w": "Na",
+   "s": 4.933,
+   "e": 4.96
+  },
+  {
+   "w": "przykład",
+   "s": 5.04,
+   "e": 5.52
+  },
+  {
+   "w": "Kruk,",
+   "s": 5.6,
+   "e": 6.12
+  },
+  {
+   "w": "słuchowisko",
+   "s": 6.16,
+   "e": 6.64
+  },
+  {
+   "w": "Storytel",
+   "s": 6.72,
+   "e": 7.28
+  },
+  {
+   "w": "i",
+   "s": 7.36,
+   "e": 7.44
+  },
+  {
+   "w": "Kanal",
+   "s": 7.48,
+   "e": 7.76
+  },
+  {
+   "w": "Plus",
+   "s": 7.92,
+   "e": 8.08
+  },
+  {
+   "w": "z",
+   "s": 8.12,
+   "e": 8.16
+  },
+  {
+   "w": "Michałem",
+   "s": 8.24,
+   "e": 8.48
+  },
+  {
+   "w": "Żurawskim,",
+   "s": 8.56,
+   "e": 9.48
+  },
+  {
+   "w": "albo",
+   "s": 9.52,
+   "e": 9.92
+  },
+  {
+   "w": "Arka.",
+   "s": 10.0,
+   "e": 10.613
+  },
+  {
+   "w": "Niebo",
+   "s": 10.667,
+   "e": 10.88
+  },
+  {
+   "w": "Jakuba",
+   "s": 11.0,
+   "e": 11.2
+  },
+  {
+   "w": "Żulczyka",
+   "s": 11.28,
+   "e": 11.76
+  },
+  {
+   "w": "i",
+   "s": 11.8,
+   "e": 11.84
+  },
+  {
+   "w": "Piotra",
+   "s": 11.92,
+   "e": 12.16
+  },
+  {
+   "w": "Rogoży,",
+   "s": 12.2,
+   "e": 12.747
+  },
+  {
+   "w": "z",
+   "s": 12.773,
+   "e": 12.8
+  },
+  {
+   "w": "Jakubem",
+   "s": 12.88,
+   "e": 13.2
+  },
+  {
+   "w": "Gierszałem.",
+   "s": 13.28,
+   "e": 14.24
+  }
+ ],
+ "speechEnd": 13.836
+}
