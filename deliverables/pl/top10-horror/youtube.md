@@ -1,6 +1,6 @@
 # YouTube · 10 historii grozy, które naprawdę przerażają (SonorBooks Polska)
 
-Duración: 6:23 (383.5 s, 19176 fotogramas) · Subtítulos: `top10-horror.pl.srt` (vertical: `top10-horror_short.pl.srt`) · Miniaturas: `miniatura_A.png`, `miniatura_B.png`, `miniatura_C.png`
+Duración: 6:23 (383.3 s, 19167 fotogramas) · Subtítulos: `top10-horror.pl.srt` (vertical: `top10-horror_short.pl.srt`) · Miniaturas: `miniatura_A.png`, `miniatura_B.png`, `miniatura_C.png`
 
 ## Tytuł (44 znaki)
 **10 historii grozy, które naprawdę przerażają**
@@ -27,8 +27,8 @@ Oto 10 historii grozy – od najmniej strasznej do najstraszniejszej – i jak i
 3:31 4. Dom na Wyrębach (Stefan Darda)
 3:59 3. Miasteczko Salem (Stephen King)
 4:29 2. Manitou (Graham Masterton)
-5:01 1. Nie otwieraj oczu (Josh Malerman)
-5:37 Jak i gdzie ich posłuchać
+5:00 1. Nie otwieraj oczu (Josh Malerman)
+5:36 Jak i gdzie ich posłuchać
 
 🎧 Gdzie posłuchać (nagrania z filmu)
 10. Zew Cthulhu – H.P. Lovecraft, czyta Wojciech Żołądkowicz: https://sonorbooks.pl/audiobook/zew-cthulhu/
@@ -82,11 +82,17 @@ Która z tych historii przestraszyła cię najbardziej? I jakie historie mamy pr
 Gdzie posłuchać każdej z nich i za ile – porównasz na https://sonorbooks.pl
 ```
 
-## Short (vertical, 0:48 (48.8 s, 2440 fotogramas))
+## Short (vertical, 0:48 (48.8 s, 2442 fotogramas))
 - Tytuł: **Nie otwieraj oczu: numer 1 wśród historii grozy #shorts** (55 znaków)
 - Opis: `Numer jeden z naszej listy 10 historii grozy, które naprawdę przerażają. Pozostałe dziewięć – w pełnym filmie na kanale. Gdzie posłuchać: https://audioteka.com/pl/audiobook/nie-otwieraj-oczu/ · Porównaj na https://sonorbooks.pl #horror #audiobooki #shorts`
 
 ## Para Joan (español)
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (los enlaces llevan a sonorbooks.pl, Audioteka y Wolne Lektury; ninguno es de pago por la marca). «No, no es contenido creado para niños» (terror). Subtítulos: `top10-horror.pl.srt` (polaco).
-- Pantalla final: los últimos ~10 s (cierre de SonorBooks, mitad inferior libre para el vídeo siguiente y el botón de suscribirse).
-
+- Pantalla final: de 6:10 al final (13 s; cierre de SonorBooks con la mitad inferior libre para el vídeo siguiente y el botón de suscribirse).
+- **Lista:** se mantienen 5 libros del español y se sustituyen 5 sin audiolibro en polaco (dossier §3): *Dziecko Rosemary* (n.º 7), *Inkub. Słuchowisko* (5), *Dom na Wyrębach* (4), *Manitou* (2) y *Nie otwieraj oczu* (1). Grabiński solo aparece por su nombre (premio de *Inkub*).
+- **Por decidir (del dossier):** ¿*Manitou* o *Zwierciadło piekieł* (misma superprodukcja de Audioteka, más valoraciones) en el n.º 2? ¿Un clásico polaco más explícito (Grabiński) en lugar de Darda? Si publicas en sonorbooks.pl/blog un artículo con la lista, se puede añadir la frase «la lista completa en el blog».
+- **Sin «gratis con prueba»:** la voz solo dice que muchas se pueden empezar hoy y que Poe es gratis (Wolne Lektury). En la pantalla POSŁUCHAJ cada título lleva su sello: ZA DARMO (Poe) · W ABONAMENCIE (6 títulos en la suscripción de Storytel PL) · DO KUPIENIA (Hendrix, Salem, Manitou, en Audioteka). Las notas de Audioteka van siempre con su número de valoraciones (Hendrix: 4,0 con 3).
+- **sonorbooks.pl en pantalla:** en la investigación se abre la ficha real de *Lśnienie* (una candidata descartada), no la de *Zew Cthulhu* como proponía el guion, para no destapar antes de tiempo una portada de la lista (siguen censuradas hasta que entra cada libro). Al final: categoría Horror → ficha de *Dziecko Rosemary* con la opción «Zakup pojedynczy 49,99 zł» elegida en su lista de opciones (la recomendación por defecto de la ficha es Audioteka Klub «0 zł · 14 dni za darmo»; no se enseña para no prometer pruebas gratis, según el dossier).
+- **Portadas reales** de la edición recomendada (Audioteka). Excepciones: *Dom na Wyrębach*, la misma portada desde Storytel (en Audioteka solo hay 500 px); Poe, la portada de Wolne Lektury completada a cuadrado con un fondo desenfocado. Muro de candidatas: 13 portadas de Audioteka (*Nawiedzony dom na wzgórzu*, de Storytel) y 5 tarjetas de texto con los títulos originales de los libros españoles sin audio en polaco (*Distancia de rescate*, *Apocalipsis Z*, *Carcoma*, *Nuestra parte de noche*) y *Egzorcysta*, con el sello BRAK AUDIOBOOKA PO POLSKU.
+- **Ilustraciones nuevas** (propias, sin fotogramas ni carteles): Rosemary (kamienica, vecinos con la bandeja, cuna, calendario), Inkub (zorza, cartel JODOZIORY, casa calcinada sin nada explícito, luz verde, foto antigua), Darda (profesor, casa con SPRZEDAM, znicz, vecino, ojos en el bosque), Manitou (bulto en la nuca, radiografía con el feto, médicos, adivino) y Nie otwieraj oczu (ventana tapada, caja con pájaros, río con los ojos vendados). El krasnal de Breslavia es un dibujo propio.
+- **Short:** n.º 1 (*Nie otwieraj oczu*), con la opinión anónima de un oyente de Audioteka (04/05/2026) que cita el dossier.

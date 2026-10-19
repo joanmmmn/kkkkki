@@ -5,7 +5,7 @@ Uso: python3 tools/t10_meta.py <dir_salida>"""
 import json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from t10_timeline import parse, FPS, VO  # noqa: E402
+from t10_timeline import parse, FPS, VO, sec  # noqa: E402
 from skg_meta import chunks, two_lines, ts  # noqa: E402
 
 # Polaco: las cifras van en número en `text` (vo.json); solo quedan en letra algunas fórmulas habladas.
@@ -73,7 +73,7 @@ def main():
         import math
         t, vs = 0, []
         for v, gap in SHORT:
-            t += round(gap * FPS)
+            t += sec(gap)
             d = json.load(open(os.path.join(VO, f'{v}.json')))
             vs.append((v, t, d))
             t += math.ceil((d.get('speechEnd') or d['duration']) * FPS)
