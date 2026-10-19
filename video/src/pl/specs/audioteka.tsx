@@ -12,7 +12,7 @@ export const piece: PLPiece = {
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Audioteka:\nczy warto\npłacić?', hi: ['Audioteka:'], badge: 'Recenzja · 2026', rec: { clip: 'superprod', start: 0.2, holdAt: 14.0, url: 'audioteka.com/pl/katalog' }, promises: [
         { at: 'cennik', label: 'Cennik', icon: 'coin' }, { at: 'regulamin', label: 'Regulamin', icon: 'doc' }, { at: 'opinie', label: 'Opinie', icon: 'star' },
-        { at: '14', label: '14 dni za darmo', icon: 'gift', tone: 'good' },
+        { at: '14', label: '14 dni za darmo', sub: 'dla nowych klubowiczów', icon: 'gift', tone: 'good' },
       ] },
       { id: 'A02', kind: 'intro', bump: 'Czym jest Audioteka', rec: { clip: 'klub_hero', start: 0.4, url: 'klub.audioteka.com' }, facts: [
         { at: 'pietnastu', label: 'Od ponad 15 lat', icon: 'calendar' }, { at: 'Wirtualnej', label: 'Grupa Wirtualna Polska', sub: '100% od 2023 roku', icon: 'chart' },
@@ -22,8 +22,8 @@ export const piece: PLPiece = {
         { at: 'Optymalny', name: 'Plan Optymalny', price: '29,90 zł', period: '/ mies.', features: ['Bez limitu godzin', '14 dni za darmo dla nowych'], best: true, badge: 'Główny plan' },
         { at: 'rok', name: 'Optymalny na rok', price: '299,00 zł', period: '/ 12 mies.', note: 'płatność z góry', features: ['12 miesięcy w cenie 10', 'Na 6 mies.: 179,40 zł'] },
         { at: 'Smart', name: 'Plan Smart 20h', price: '17,90 zł', period: '/ mies.', features: ['20 godzin miesięcznie', '!Niewykorzystane przepadają'] },
-      ], footer: [{ at: 'Start', label: 'Plan na Start: taniej przez pierwsze 3 miesiące', icon: 'calendar' }] },
-      { id: 'A04', kind: 'rec', bump: 'Katalog i superprodukcje', kicker: 'audioteka.com', title: 'Katalog bez logowania', rec: { clip: 'katalog', start: 0.0, url: 'audioteka.com/pl/katalog' },
+      ], footer: [{ at: 'Optymalny', label: 'Ceny: stan na październik 2026', icon: 'calendar' }, { at: 'Start', label: 'Plan na Start: taniej przez pierwsze 3 miesiące', icon: 'coin' }] },
+      { id: 'A04', kind: 'rec', bump: 'Katalog i superprodukcje', kicker: 'audioteka.com', title: 'Katalog bez logowania', rec: { clip: 'katalog', start: 0.0, holdAt: 9.3, url: 'audioteka.com/pl/katalog' },
         marks: [{ at: 'Przelacz', x: 758, y: 468, w: 402, h: 48 }],
         tags: [{ at: 'logowania', label: 'Bez konta i logowania', icon: 'lock' }, { at: 'Wszystkie', label: '„Wszystkie”: cały sklep', icon: 'library' }, { at: 'Klub', label: '„Audioteka Klub”', sub: 'tylko tytuły z abonamentu', icon: 'check', tone: 'good' }] },
       { id: 'A05', kind: 'rec', side: 'right', kicker: 'Przykład', title: '„Solaris” Lema', rec: { clip: 'solaris', start: 0.0, holdAt: 14.3, url: 'audioteka.com/pl/audiobook/solaris' },
@@ -51,24 +51,24 @@ export const piece: PLPiece = {
         { at: 'aucie', label: 'Android Auto', icon: 'car', ok: true }, { at: 'Kar', label: 'CarPlay', icon: 'car', ok: true },
         { at: 'Kromkast', label: 'Chromecast', icon: 'cast', ok: true }, { at: 'Epl', label: 'Apple Watch', icon: 'watch', ok: true },
       ] },
-      { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.8, count: '67,6 tys. ocen · 19.10.2026' }, { at: 'Ep', store: 'apple', rating: 4.7, count: '41,9 tys. ocen · 19.10.2026' }],
+      { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.8, count: '67,6 tys. ocen · stan na 19.10.2026' }, { at: 'Ep', store: 'apple', rating: 4.7, count: '41,9 tys. ocen · stan na 19.10.2026' }],
         likes: [{ at: 'lektorow', label: 'Lektorzy i głosy' }, { at: 'produkcje', label: 'Superprodukcje' }],
         dislikes: [{ at: 'doplaty', label: 'Dopłaty do wielu tytułów' }, { at: 'bledy', label: 'Błędy aplikacji', sub: 'np. CarPlay, Bluetooth' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Audioteka Klub', pros: [
-        { at: 'limitu', label: 'Bez limitu godzin za 29,90 zł' }, { at: 'superprodukcje', label: 'Superprodukcje i wyłączności' }, { at: '14', label: '14 dni na próbę' }, { at: 'tanszy', label: 'Tańszy Plan Smart: 17,90 zł' },
+        { at: 'limitu', label: 'Bez limitu godzin', sub: 'w Planie Optymalnym' }, { at: 'superprodukcje', label: 'Superprodukcje i wyłączności' }, { at: '14', label: '14 dni na próbę', sub: 'dla nowych klubowiczów' }, { at: 'tanszy', label: 'Tańszy Plan Smart', sub: '20 godzin miesięcznie' },
       ], cons: [
         { at: 'tylko', label: 'Tylko audio, bez ebooków' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: ['tylko', 1], label: 'Klub tylko w aplikacji' }, { at: 'jednym', label: 'Jedno urządzenie naraz' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Audioteka Klub:\nczy warto?', yes: [
-        { at: 'duzo', label: 'Słuchasz dużo i po polsku', sub: 'Plan Optymalny: 29,90 zł bez limitu' }, { at: 'mniej', label: 'Słuchasz mniej', sub: 'Plan Smart: 17,90 zł za 20 godzin' },
+        { at: 'duzo', label: 'Słuchasz dużo i po polsku', sub: 'Plan Optymalny bez limitu godzin' }, { at: 'mniej', label: 'Słuchasz mniej', sub: 'Plan Smart: 20 godzin miesięcznie' },
       ], no: [
         { at: 'czytac', label: 'Chcesz też czytać ebooki', sub: 'Audioteka to tylko audio' },
       ], alts: { at: 'Legimi', names: ['Legimi', 'Empik Go'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'rec', bump: '14 dni za darmo', rec: { clip: 'klub_mobile', start: 0.3, mobile: true, url: 'klub.audioteka.com' },
-        marks: [{ at: 'Nowi', until: 'miesiecznym', x: 64, y: 746, w: 292, h: 32 }, { at: 'miesiecznym', x: 55, y: 535, w: 320, h: 360, r: 18 }],
-        tags: [{ at: 'Nowi', label: 'Tylko dla nowych', icon: 'user' }, { at: 'darmo', label: '14 dni za darmo', icon: 'gift', tone: 'good' }, { at: 'miesiecznym', label: 'Tylko miesięczny Plan Optymalny', icon: 'calendar' }] },
+        marks: [{ at: 'Nowi', until: 'miesiecznym', x: 64, y: 592, w: 288, h: 28 }, { at: 'miesiecznym', x: 55, y: 424, w: 320, h: 288, r: 18 }],
+        tags: [{ at: 'Nowi', label: 'Tylko dla nowych klubowiczów', icon: 'user' }, { at: 'darmo', label: '14 dni za darmo', sub: 'okres próbny tylko raz', icon: 'gift', tone: 'good' }, { at: 'miesiecznym', label: 'Tylko miesięczny Plan Optymalny', icon: 'calendar' }] },
       { id: 'B02', kind: 'steps', kicker: 'Krok po kroku', title: 'Jak aktywować', rec: { clip: 'klub_mobile', start: 3.0, mobile: true, url: 'klub.audioteka.com' },
-        marks: [{ at: 'Wyprobuj', until: 'zaloz', x: 70, y: 805, w: 290, h: 62, r: 31 }], steps: [
+        marks: [{ at: 'Wyprobuj', until: 'zaloz', x: 68, y: 638, w: 294, h: 52, r: 26 }], steps: [
         { at: 'klub', title: 'Wejdź na klub.audioteka.com' }, { at: 'Wyprobuj', title: '„Wypróbuj 14 dni za darmo”', sub: 'przy płatności miesięcznej' },
         { at: 'zaloz', title: 'Załóż konto' }, { at: 'metode', title: 'Podaj metodę płatności' },
       ], note: { at: 'nic', label: 'Przez 14 dni: 0 zł', icon: 'gift' } },
@@ -77,7 +77,7 @@ export const piece: PLPiece = {
         { at: 'Twoje', label: 'Zakładka „Twoje”', sub: '„Bezpłatne w Audioteka Klub”', icon: 'library' },
       ] },
       { id: 'B04', kind: 'stat', kicker: 'Po okresie próbnym', at: 'dwadziescia', value: '29,90 zł', label: 'miesięcznie od 15. dnia, jeśli nie zrezygnujesz', tags: [
-        { at: 'odnowi', label: 'Subskrypcja odnawia się sama', icon: 'sync' },
+        { at: 'odnowi', label: 'Subskrypcja odnawia się sama', icon: 'sync' }, { at: 'miesiecznie', label: 'Stan na październik 2026', icon: 'calendar' },
       ] },
       { id: 'B05', kind: 'steps', bump: 'Jak zrezygnować', kicker: 'Rezygnacja', title: 'Na audioteka.com', rec: { clip: 'pomoc', start: 2.0, holdAt: 15.3, url: 'audioteka.com/pl/centrum-pomocy' },
         marks: [{ at: 'Ustawienia', until: 'Zarzadzaj', x: 1388, y: 262, w: 158, h: 26 }, { at: 'Zarzadzaj', until: 'Anuluj', x: 696, y: 281, w: 202, h: 24 }, { at: 'Anuluj', until: 'Jesli', x: 1226, y: 281, w: 168, h: 24 }, { at: 'Gugl', until: 'Samo', x: 516, y: 420, w: 590, h: 248 }, { at: 'Samo', x: 516, y: 674, w: 968, h: 24 }], steps: [
@@ -92,18 +92,15 @@ export const piece: PLPiece = {
       { label: 'Cennik: Plan Optymalny, Smart i na Start', from: 'A03' },
       { label: 'Katalog bez logowania', from: 'A04' },
       { label: 'Przykład: „Solaris”', from: 'A05' },
-      { label: 'Superprodukcje i wyłączności', from: 'A06' },
-      { label: 'Co jest za dopłatą', from: 'A07' },
-      { label: 'Aplikacja i limit godzin', from: 'A08' },
-      { label: 'Audioteka Kids', from: 'A08B' },
+      { label: 'Superprodukcje i tytuły za dopłatą', from: 'A06' },
+      { label: 'Aplikacja, limit godzin i Audioteka Kids', from: 'A08' },
       { label: 'Urządzenia', from: 'A09' },
       { label: 'Opinie', from: 'A10' },
       { label: 'Plusy i minusy', from: 'A11' },
       { label: 'Werdykt: czy warto?', from: 'A12' },
       { label: 'Jak wypróbować 14 dni za darmo', from: 'B01' },
-      { label: 'Co po okresie próbnym', from: 'B04' },
       { label: 'Jak zrezygnować', from: 'B05' },
     ],
   },
-  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'infinity', text: '29,90 zł\nbez limitu' }, label: { strong: '14 dni', rest: 'ZA DARMO' } },
+  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'infinity', text: 'Bez limitu\ngodzin' }, label: { strong: '14 dni', rest: 'ZA DARMO' } },
 };

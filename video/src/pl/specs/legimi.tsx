@@ -16,7 +16,7 @@ export const piece: PLPiece = {
         { at: 'synchrobuki', label: 'Synchrobooki', sub: 'ebook + audiobook pod jedną okładką', icon: 'sync' },
         { at: 'tramwaju', label: 'Czytasz, potem słuchasz dalej', sub: 'od tego samego miejsca', icon: 'headphones' },
       ], big: { at: 'dwustu', value: 240000, prefix: '~', label: 'tytułów w pakiecie bez limitu' } },
-      { id: 'A03', kind: 'plans', bump: 'Cennik', kicker: 'Cennik · październik 2026', title: 'Ile kosztuje Legimi?', plans: [
+      { id: 'A03', kind: 'plans', bump: 'Cennik', kicker: 'Cennik · stan na październik 2026', title: 'Ile kosztuje Legimi?', plans: [
         { at: ['bez', 0], name: 'Bez limitu', price: '54,99 zł', period: '/ mies.', note: 'bez umowy', features: ['Ebooki + audiobooki', '~240 000 tytułów', 'Do 4 urządzeń'], best: true, badge: 'Najczęściej wybierany' },
         { at: 'czterdziesci', name: 'Bez limitu + umowa', price: '49,99 zł', period: '/ mies.', note: 'umowa na 12 mies. (promocja)', features: ['To samo, 5 zł taniej', 'Po roku: 54,99 zł'] },
         { at: 'pakiety', name: 'Z limitem', price: '14,99 zł', period: '/ mies.', note: '8 h słuchania lub 300 stron', features: ['26 h: 19,99 zł', '53 h: 34,99 zł', 'Reszta przechodzi na kolejny miesiąc'] },
@@ -24,14 +24,14 @@ export const piece: PLPiece = {
       { id: 'A04', kind: 'rec', bump: 'Katalog', kicker: 'legimi.pl', title: 'Katalog bez logowania', rec: { clip: 'home', start: 0.3 },
         cuts: [{ at: 'abonamencie', rec: { clip: 'harda', start: 0.4, holdAt: 3.5 } }],
         marks: [{ at: 'przy', until: 'abonamencie', x: 692, y: 366, w: 56, h: 32 }, { at: 'abonamencie', x: 684, y: 160, w: 186, h: 58 }],
-        zooms: [{ at: 'przy', zoom: 1.8, x: 700, y: 330 }, { at: 'abonamencie', zoom: 1.8, x: 800, y: 300 }],
+        zooms: [{ at: 'przy', zoom: 1.8, x: 700, y: 330 }, { at: 'abonamencie', zoom: 1.6, x: 925, y: 340 }],
         tags: [{ at: 'logowania', label: 'Bez logowania', icon: 'lock' }, { at: 'bestsellery', label: 'Bestsellery, nowości', sub: 'i kategorie', icon: 'list' },
           { at: 'przy', label: 'Ikony formatu', sub: 'ebook i/lub audiobook', icon: 'book' }, { at: 'abonamencie', label: '„audiobook w abonamencie”', icon: 'headphones' }] },
       { id: 'A05', kind: 'rec', kicker: 'Karta audiobooka', title: '„Harda”', rec: { clip: 'harda', start: 3.8 },
         marks: [{ at: 'filip', until: 'dwadziescia', x: 382, y: 643, w: 184, h: 26 }, { at: 'dwadziescia', until: 'srednia', x: 382, y: 605, w: 202, h: 26 },
           { at: 'srednia', until: 'obok', x: 382, y: 688, w: 264, h: 30 }, { at: 'liczbe', x: 508, y: 605, w: 76, h: 26 }],
         zooms: [{ at: 'czyta', zoom: 2.1, x: 640, y: 640 }],
-        tags: [{ at: 'filip', label: 'Lektor: Filip Kosior', icon: 'mic' }, { at: 'dwadziescia', label: '21 godz. 53 min', icon: 'clock' }, { at: 'srednia', label: '4,7 / 5 · 557 ocen', icon: 'star' }, { at: 'liczbe', label: '822 strony', sub: 'ważne w pakietach z limitem', icon: 'book' }] },
+        tags: [{ at: 'filip', label: 'Lektor: Filip Kosior', icon: 'mic' }, { at: 'dwadziescia', label: '21 godz. 53 min', icon: 'clock' }, { at: 'srednia', label: '4,7 / 5 · 557 ocen', sub: 'stan na 19.10.2026', icon: 'star' }, { at: 'liczbe', label: '822 strony', sub: 'ważne w pakietach z limitem', icon: 'book' }] },
       { id: 'A06', kind: 'features', bump: 'Jak to działa', kicker: 'W aplikacji', title: 'Co potrafi aplikacja?', cols: 3, items: [
         { at: 'przelaczasz', label: 'Ebook i audiobook', sub: 'przełączasz się w synchrobookach', icon: 'sync' }, { at: 'internetu', label: 'Także offline', icon: 'wifiOff' },
         { at: 'predkosc', label: 'Prędkość', icon: 'speed' }, { at: 'wylacznik', label: 'Wyłącznik czasowy', sub: 'także na koniec rozdziału', icon: 'moon' },
@@ -42,22 +42,23 @@ export const piece: PLPiece = {
         marks: [{ at: 'katarzyna', until: 'ale', x: 382, y: 309, w: 164, h: 26 }, { at: 'katalogu', until: 'punktow', x: 432, y: 318, w: 270, h: 86 }, { at: 'punktow', x: 432, y: 278, w: 270, h: 48 }],
         zooms: [{ at: 'katarzyna', zoom: 2, x: 640, y: 360 }, { at: 'ale', zoom: 1.9, x: 640, y: 380 }],
         tags: [{ at: 'zastrzyk', label: '„Zastrzyk miłości”', sub: 'audioserial', icon: 'headphones' }, { at: 'tylko', label: 'Tylko w Legimi', tone: 'good' },
-          { at: 'doplata', label: 'Katalog Klubowy: za dopłatą', tone: 'bad' }, { at: 'punktow', label: '150 pkt / mies. = 15 zł', icon: 'coin' },
-          { at: 'obnizysz', label: 'Klubowy+: 0 zł za punkty', sub: 'maks. 2 tytuły / mies.', icon: 'gift' }] },
+          { at: 'doplata', label: 'Katalog Klubowy: za dopłatą', tone: 'bad' }, { at: 'punktow', label: '150 pkt / mies. = 15 zł', sub: 'pakiet bez limitu · stan na październik 2026', icon: 'coin' },
+          { at: 'obnizysz', label: 'Klubowy+: 0 zł za punkty', sub: 'od 149 pkt za tytuł, maks. 2 / mies.', icon: 'gift' }] },
       { id: 'A08', kind: 'rec', kicker: 'Pakiety z limitem', title: 'Wspólna pula stron', rec: { clip: 'limit', start: 0.4, url: 'legimi.pl/cennik' },
         marks: [{ at: 'czytanie', until: 'niewykorzystany', x: 434, y: 434, w: 272, h: 32 }, { at: 'niewykorzystany', x: 434, y: 516, w: 282, h: 52 }],
-        zooms: [{ at: 'czytanie', zoom: 1.8, x: 760, y: 470 }],
-        tags: [{ at: 'wspolna', label: 'Jedna pula stron', sub: 'na czytanie i słuchanie', icon: 'book' }, { at: 'godzina', label: '1 h audiobooka ≈ 37,6 strony', icon: 'clock' },
+        zooms: [{ at: 'czytanie', zoom: 2, x: 690, y: 470 }],
+        tags: [{ at: 'wspolna', label: 'Jedna pula stron', sub: 'na czytanie i słuchanie', icon: 'book' }, { at: 'godzina', label: '1 h audiobooka ≈ 37,6 strony', sub: 'sam audiobook, bez ebooka', icon: 'clock' },
           { at: 'normalnej', label: 'Liczy się prędkość 1×', icon: 'speed' }, { at: 'niewykorzystany', label: 'Reszta przechodzi', sub: 'na kolejny miesiąc', tone: 'good' },
           { at: 'przekroczysz', label: 'Przekroczysz limit?', sub: 'kolejna opłata jak za abonament', tone: 'bad' }] },
       { id: 'A09', kind: 'devices', title: 'Gdzie czytasz i słuchasz?', items: [
         { at: 'smartfonie', label: 'Smartfon', sub: 'Android, iOS', icon: 'phone', ok: true }, { at: 'tablecie', label: 'Tablet', icon: 'tablet', ok: true },
         { at: 'komputerze', label: 'Komputer z Windows', sub: 'tylko ebooki', icon: 'laptop', ok: true }, { at: 'czytniku', label: 'Czytnik', sub: 'PocketBook, inkBOOK…', icon: 'ereader', ok: true },
-        { at: 'kindlu', label: 'Kindle', sub: 'do 10 ebooków / mies.', icon: 'ereader', ok: true }, { at: 'audiobukow', label: 'Audiobooki na komputerze', icon: 'headphones', ok: false },
+        { at: 'kindlu', label: 'Kindle', sub: 'do 10 ebooków / mies. (bez limitu)', icon: 'ereader', ok: true }, { at: 'audiobukow', label: 'Audiobooki na komputerze', icon: 'headphones', ok: false },
       ] },
       { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'gugl', store: 'google', rating: 4.5, count: '49,9 tys. ocen' }, { at: 'ep', store: 'apple', rating: 4.5, count: '16,5 tys. ocen (Polska)' }],
-        likes: [{ at: 'wybor', label: 'Ogromny wybór' }, { at: 'cene', label: 'Cena' }], dislikes: [{ at: 'bledy', label: 'Błędy aplikacji' }, { at: 'doplaty', label: 'Dopłaty do części tytułów' }] },
-      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Legimi', pros: [
+        likes: [{ at: 'wybor', label: 'Ogromny wybór' }, { at: 'cene', label: 'Cena' }], dislikes: [{ at: 'bledy', label: 'Błędy aplikacji' }, { at: 'doplaty', label: 'Dopłaty do części tytułów' }],
+        notes: [{ at: 'ep', label: 'Stan na 19.10.2026', icon: 'calendar' }] },
+      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', kicker: 'Ceny: stan na październik 2026', title: 'Legimi: plusy i minusy', pros: [
         { at: 'ebooki', label: 'Ebooki i audiobooki w jednym' }, { at: 'synchrobooki', label: 'Synchrobooki' }, { at: 'urzadzenia', label: '4 urządzenia, także czytnik' }, { at: 'tansze', label: 'Tańsze pakiety z limitem' },
       ], cons: [
         { at: 'placisz', label: 'Bez umowy: 54,99 zł', sub: 'drożej niż Audioteka Klub i Empik Go' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: 'posluchasz', label: 'Audiobooki: tylko telefon i tablet' }, { at: 'komputerze', label: 'Okres próbny: tylko 3 dni' },
@@ -65,9 +66,9 @@ export const piece: PLPiece = {
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Legimi:\nczy warto?', yes: [
         { at: 'zmiane', label: 'Na zmianę czytasz i słuchasz' }, { at: 'czytnik', label: 'Masz czytnik', sub: 'także Kindle (tylko ebooki)' },
       ], no: [
-        { at: 'tylko', label: 'Tylko słuchasz', sub: 'Audioteka Klub: 29,90 zł bez limitu godzin' }, { at: 'malo', label: 'Słuchasz mało', sub: 'wybierz pakiet z limitem od 14,99 zł' },
-      ] },
-      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować', kicker: 'Okres próbny', at: 'dni', value: '3', unit: 'dni', count: { from: 0, to: 3 }, label: 'za darmo – tylko raz', tags: [
+        { at: 'tylko', label: 'Tylko słuchasz', sub: 'porównaj z Audioteka Klub (bez limitu godzin)' }, { at: 'malo', label: 'Słuchasz mało', sub: 'wybierz pakiet z limitem' },
+      ], alts: { at: 'tylko', names: ['Audioteka Klub · 29,90 zł / mies.', 'Legimi z limitem · od 14,99 zł / mies.'], label: 'Stan na październik 2026:' } },
+      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować', kicker: 'Okres próbny', at: 'dni', value: '3', unit: 'dni', count: { from: 0, to: 3 }, label: 'za darmo – tylko raz, z kartą lub PayPal', tags: [
         { at: 'konto', label: 'Raz na konto', icon: 'user' }, { at: 'urzadzenie', label: 'Raz na urządzenie', icon: 'phone' }, { at: 'karte', label: 'Raz na kartę', icon: 'card' },
       ] },
       { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 1.4, mobile: true }, marks: [{ at: 'kliknij', until: 'zaloz', x: 30, y: 511, w: 370, h: 52 }], steps: [
@@ -80,7 +81,7 @@ export const piece: PLPiece = {
       { id: 'B04', kind: 'rec', kicker: 'Uwaga', title: 'Umowa czy bez umowy?', rec: { clip: 'cennik', start: 3.6, holdAt: 7.8 },
         cuts: [{ at: 'bez', rec: { clip: 'cennik', start: 8.2 } }],
         marks: [{ at: 'miesiecy', until: 'bez', x: 722, y: 290, w: 216, h: 66 }, { at: 'bez', x: 937, y: 290, w: 262, h: 66 }], zooms: [{ at: 'umowe', zoom: 1.6, x: 960, y: 440 }],
-        tags: [{ at: 'miesiecy', label: 'Umowa na 12 mies.: 49,99 zł', icon: 'calendar' }, { at: 'zwrot', label: 'Wcześniejsza rezygnacja', sub: '= zwrot rabatu', tone: 'bad' },
+        tags: [{ at: 'miesiecy', label: 'Umowa na 12 mies.: 49,99 zł', sub: 'promocja · stan na październik 2026', icon: 'calendar' }, { at: 'zwrot', label: 'Wcześniejsza rezygnacja', sub: '= zwrot rabatu', tone: 'bad' },
           { at: 'bez', label: 'Bez umowy: 54,99 zł', sub: 'rezygnujesz, kiedy chcesz', tone: 'good' }] },
       { id: 'B05', kind: 'steps', bump: 'Jak zrezygnować', kicker: 'Rezygnacja', title: 'Jak zrezygnować', steps: [
         { at: 'konto', title: 'legimi.pl → Konto' }, { at: 'subskrypcja', title: 'Subskrypcja' }, { at: 'zakoncz', title: 'Przycisk „Zakończ”', sub: 'na Androidzie także w aplikacji' },

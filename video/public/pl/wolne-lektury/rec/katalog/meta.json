@@ -1,0 +1,18 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 217,
+ "duration": 14.128,
+ "offset": 0.084,
+ "marks": {
+  "top": 0.46,
+  "tags": 2.629,
+  "scroll": 7.352,
+  "poems": 10.695,
+  "end": 14.128
+ },
+ "events": []
+}

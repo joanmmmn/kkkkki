@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 397,
+ "duration": 19.782,
+ "offset": 0.058,
+ "marks": {
+  "top": 0.257,
+  "limit": 2.919,
+  "faq": 6.892,
+  "dlugo": 11.393,
+  "karta": 14.386,
+  "end": 19.783
+ },
+ "events": []
+}

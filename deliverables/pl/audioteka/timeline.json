@@ -1,6 +1,6 @@
 {
- "total_frames": 13339,
- "seconds": 266.78,
+ "total_frames": 13347,
+ "seconds": 266.94,
  "chapters": [
   {
    "t": 13.76,
@@ -20,19 +20,11 @@
   },
   {
    "t": 80.92,
-   "label": "Superprodukcje i wyłączności"
-  },
-  {
-   "t": 97.4,
-   "label": "Co jest za dopłatą"
+   "label": "Superprodukcje i tytuły za dopłatą"
   },
   {
    "t": 107.76,
-   "label": "Aplikacja i limit godzin"
-  },
-  {
-   "t": 126.16,
-   "label": "Audioteka Kids"
+   "label": "Aplikacja, limit godzin i Audioteka Kids"
   },
   {
    "t": 135.22,
@@ -43,23 +35,19 @@
    "label": "Opinie"
   },
   {
-   "t": 165.86,
+   "t": 165.9,
    "label": "Plusy i minusy"
   },
   {
-   "t": 182.4,
+   "t": 182.44,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 196.78,
+   "t": 196.82,
    "label": "Jak wypróbować 14 dni za darmo"
   },
   {
-   "t": 224.82,
-   "label": "Co po okresie próbnym"
-  },
-  {
-   "t": 231.8,
+   "t": 231.84,
    "label": "Jak zrezygnować"
   }
  ],
@@ -156,14 +144,14 @@
    "id": "A10",
    "kind": "ratings",
    "start": 7448,
-   "dur": 859,
+   "dur": 861,
    "lead": 26,
    "bump": "Opinie"
   },
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8307,
+   "start": 8309,
    "dur": 827,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -171,7 +159,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9134,
+   "start": 9136,
    "dur": 719,
    "lead": 26,
    "bump": "Werdykt"
@@ -179,7 +167,7 @@
   {
    "id": "B01",
    "kind": "rec",
-   "start": 9853,
+   "start": 9855,
    "dur": 345,
    "lead": 26,
    "bump": "14 dni za darmo"
@@ -187,7 +175,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10198,
+   "start": 10200,
    "dur": 617,
    "lead": 7,
    "bump": null
@@ -195,7 +183,7 @@
   {
    "id": "B03",
    "kind": "features",
-   "start": 10815,
+   "start": 10817,
    "dur": 426,
    "lead": 7,
    "bump": null
@@ -203,7 +191,7 @@
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11241,
+   "start": 11243,
    "dur": 363,
    "lead": 7,
    "bump": null
@@ -211,15 +199,15 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 11604,
-   "dur": 861,
+   "start": 11606,
+   "dur": 867,
    "lead": 26,
    "bump": "Jak zrezygnować"
   },
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12465,
+   "start": 12473,
    "dur": 874,
    "lead": 7,
    "bump": null

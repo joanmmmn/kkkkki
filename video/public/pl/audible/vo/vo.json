@@ -57,8 +57,8 @@
   },
   {
    "id": "A10",
-   "text": "Oceny? W polskim App Store aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
-   "say": "Oceny? W polskim Ep Stor aplikacja ma cztery przecinek osiem z ponad czterech tysięcy ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Gugl Plej to cztery przecinek jeden. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie."
+   "text": "Oceny? W polskim App Storze aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
+   "say": "Oceny? W polskim Ep Storze aplikacja ma cztery przecinek osiem z ponad czterech tysięcy ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Gugl Plej to cztery przecinek jeden. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie."
   },
   {
    "id": "A11",
@@ -82,8 +82,8 @@
   },
   {
    "id": "B03",
-   "text": "Zapisz się na stronie, nie w aplikacji: w App Store plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.",
-   "say": "Zapisz się na stronie, nie w aplikacji: w Ep Stor plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem."
+   "text": "Zapisz się na stronie, nie w aplikacji: w App Storze plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.",
+   "say": "Zapisz się na stronie, nie w aplikacji: w Ep Storze plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem."
   },
   {
    "id": "B04",
@@ -96,8 +96,8 @@
   },
   {
    "id": "B06",
-   "text": "W sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
-   "say": "W sonorbooks kropka pe el porównasz warunki Odibl z Audioteką, Empik Goł, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+   "text": "Na sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Na sonorbooks kropka pe el porównasz warunki Odibl z Audioteką, Empik Goł, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
   }
  ]
 }

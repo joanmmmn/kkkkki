@@ -1,6 +1,6 @@
 # YouTube · Legimi: recenzja (SonorBooks Polska)
 
-Duración: 4:28 · Subtítulos: `legimi.pl.srt` · Capítulos y línea de tiempo: `timeline.json`
+Duración: 4:29 · Subtítulos: `legimi.pl.srt` · Capítulos y línea de tiempo: `timeline.json`
 
 ## Tytuł (74 znaki)
 **Legimi: czy warto w 2026? Recenzja, opinie, cena i jak wypróbować za darmo**
@@ -22,7 +22,7 @@ W filmie:
 • Własne produkcje (audioserial „Zastrzyk miłości”) i Katalog Klubowy za dopłatą; punkty w Klubie Mola Książkowego.
 • Jak działają pakiety z limitem: wspólna pula stron, ile stron „zjada” godzina słuchania i co się dzieje po przekroczeniu limitu.
 • Urządzenia, Kindle i to, gdzie (nie) posłuchasz audiobooków.
-• Oceny w Google Play i App Store, plusy, minusy i werdykt.
+• Oceny w Google Play i App Storze, plusy, minusy i werdykt.
 • Jak wypróbować 3 dni za darmo, na co uważać przy umowie na 12 miesięcy i jak zrezygnować.
 
 ⏱️ Rozdziały
@@ -35,11 +35,11 @@ W filmie:
 1:52 Jak działają pakiety z limitem
 2:08 Urządzenia
 2:22 Opinie
-2:38 Plusy i minusy
-2:57 Werdykt: czy warto?
+2:39 Plusy i minusy
+2:58 Werdykt: czy warto?
 3:13 Jak wypróbować 3 dni za darmo
 3:40 Uwaga na umowę na 12 miesięcy
-3:52 Jak zrezygnować
+3:53 Jak zrezygnować
 
 🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 

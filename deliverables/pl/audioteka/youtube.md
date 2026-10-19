@@ -16,16 +16,13 @@ W tym filmie: czym jest Audioteka i co dostajesz w Audioteka Klub, ile kosztują
 0:32 Cennik: Plan Optymalny, Smart i na Start
 0:54 Katalog bez logowania
 1:05 Przykład: „Solaris”
-1:20 Superprodukcje i wyłączności
-1:37 Co jest za dopłatą
-1:47 Aplikacja i limit godzin
-2:06 Audioteka Kids
+1:20 Superprodukcje i tytuły za dopłatą
+1:47 Aplikacja, limit godzin i Audioteka Kids
 2:15 Urządzenia
 2:28 Opinie
 2:45 Plusy i minusy
 3:02 Werdykt: czy warto?
 3:16 Jak wypróbować 14 dni za darmo
-3:44 Co po okresie próbnym
 3:51 Jak zrezygnować
 
 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
@@ -53,7 +50,7 @@ Audioteka, Audioteka Klub, Audioteka recenzja, Audioteka opinie, Audioteka cena,
 
 ## Przypięty komentarz
 
-Słuchasz w Planie Optymalnym czy w Planie Smart? Napisz, co ostatnio słuchałeś w Audiotece 👇
+Słuchasz w Planie Optymalnym czy w Planie Smart? Napisz, czego teraz słuchasz w Audiotece 👇
 A zanim kupisz audiobook, sprawdź na https://sonorbooks.pl, czy jest w abonamencie Audioteka Klub i gdzie posłuchasz go najtaniej.
 
 ---
@@ -68,3 +65,4 @@ A zanim kupisz audiobook, sprawdź na https://sonorbooks.pl, czy jest w abonamen
   - La promoción del Plan na Start (10,90 zł/mes, hasta el 26.10.2026 a las 15:00) no aparece en ningún sitio: ni en la voz, ni en los textos, ni en las tomas (las de klub.audioteka.com se grabaron con la pestaña «12 miesięcy» o encuadrando solo el Plan Optymalny). La voz dice solo que el Plan na Start «es más barato los 3 primeros meses» y la pantalla lo dice sin precio. Si al publicar ese plan ya no existe en klub.audioteka.com, conviene quitar esa media frase (A03) o la etiqueta.
   - Precios y notas comprobados el 19.10.2026 (Plan Optymalny 29,90 zł; 6 meses 179,40 zł; 12 meses 299,00 zł; Plan Smart 20h 17,90 zł; Google Play 4,8 con 67,6 mil valoraciones; App Store 4,7 con 41,9 mil). Si se publica mucho más tarde, revisarlos.
   - Las valoraciones de usuarios se resumen sin nombres (de 500 reseñas recientes de la App Store polaca).
+  - Miniatura: «CZY WARTO PŁACIĆ?», sello «Bez limitu godzin» y etiqueta «14 dni ZA DARMO» (sin precios, para que no caduque).

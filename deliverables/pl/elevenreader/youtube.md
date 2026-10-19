@@ -16,11 +16,11 @@ Sprawdziliśmy plan darmowy, ceny w Polsce, polskie audiobooki i drobny druk.
 
 W tym filmie:
 • Czym jest ElevenReader i od kiedy działa po polsku (od 25.04.2025).
-• Cennik: Free z 10 godzinami zamiany tekstu na mowę miesięcznie i Ultra – na stronie 11 USD miesięcznie albo 99 USD rocznie (3 dni za darmo), w polskim App Store 39,00 zł miesięcznie albo 349,00 zł rocznie.
+• Cennik: Free z 10 godzinami zamiany tekstu na mowę miesięcznie i Ultra – na stronie 11 USD miesięcznie albo 99 USD rocznie (3 dni za darmo), w polskim App Storze 39,00 zł miesięcznie albo 349,00 zł rocznie.
 • Twoje teksty w audio: PDF, EPUB, Word, TXT i HTML do 500 stron, linki do artykułów i zdjęcia kartek.
 • Ponad 1000 głosów i głos AI Piotra Fronczewskiego z serii Iconic Voices.
 • Polskie audiobooki: darmowa klasyka z Wolnych Lektur i tytuły z lektorami w Ultra – z limitem 20 godzin premium miesięcznie.
-• Odtwarzacz, urządzenia (bez Android Auto), oceny w Google Play i App Store, plusy i minusy.
+• Odtwarzacz, urządzenia (bez Android Auto), oceny w Google Play i App Storze, plusy i minusy.
 • Werdykt, jak zacząć za darmo, jak liczą się godziny, próba Ultra i jak zrezygnować.
 
 Rozdziały
@@ -45,7 +45,7 @@ Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 
 Źródła (oficjalne):
 • Cennik ElevenReader: https://elevenreader.io/pricing
-• ElevenReader w App Store (Polska): https://apps.apple.com/pl/app/elevenreader-voice-reader/id6479373050?l=pl
+• ElevenReader w App Storze (Polska): https://apps.apple.com/pl/app/elevenreader-voice-reader/id6479373050?l=pl
 • ElevenReader w Google Play: https://play.google.com/store/apps/details?id=io.elevenlabs.readerapp&hl=pl&gl=PL
 • Centrum pomocy (po polsku) – czym jest ElevenReader: https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/what-is-eleven-reader
 • Jak dodać treści: https://elevenlabs.io/docs/pl/help-center/product/mobile-apps/eleven-reader/how-do-i-add-content-to-eleven-reader
@@ -87,4 +87,4 @@ Porównanie platform z audiobookami po polsku: https://sonorbooks.pl
   3. **Derechos de consumidor:** la ficha de la App Store polaca indica que Eleven Labs Inc. no se ha identificado como comerciante (los derechos de consumidor de la UE no se aplicarían). No está en el vídeo; decide si lo quieres en la descripción.
   4. **Logotipo:** la plantilla usa el mismo archivo para el icono y la marca, así que he montado un logotipo apilado (icono oficial del sol encima del logotipo oficial «ElevenReader» de elevenreader.io), en negro y en blanco.
   5. **Demo de la app:** el gancho va con las webs oficiales. Si grabas la app leyendo un PDF propio de dominio público con una voz polaca, se puede poner en A01.
-  6. **Miniatura:** «CZY WARTO PŁACIĆ?», sello «10 h za darmo» (plan Free) y etiqueta «Ultra 39 ZŁ / MIES.» (App Store PL).
+  6. **Miniatura:** «CZY WARTO PŁACIĆ?», sello «10 h/mies. za darmo» (plan Free) y etiqueta «Ultra 39 ZŁ / MIES.» (App Store PL).

@@ -23,12 +23,12 @@ export const piece: PLPiece = {
         { at: 'milionow', label: '7 mln użytkowników rocznie', icon: 'user' },
       ], big: { at: ['siedem', 0], value: 7332, label: 'utwory w bibliotece' } },
       { id: 'A03', kind: 'plans', bump: 'Ile to kosztuje?', kicker: 'Cennik', title: 'Nic nie płacisz', plans: [
-        { at: 'Nic', name: 'Wolne Lektury', price: '0 zł', period: 'bez opłat', features: ['Bez abonamentu', 'Bez okresu próbnego', 'Bez karty płatniczej', 'Bez rejestracji'], best: true, badge: 'Za darmo' },
+        { at: 'Nic', name: 'Wolne Lektury', price: '0 zł', period: 'bez opłat', note: 'stan na październik 2026', features: ['Bez abonamentu', 'Bez okresu próbnego', 'Bez karty płatniczej', 'Bez rejestracji'], best: true, badge: 'Za darmo' },
         { at: 'darowizn', name: 'Darowizna', price: 'Dowolna', period: 'kwota', note: 'jednorazowo albo co miesiąc', features: ['Całkowicie dobrowolna', 'Utrzymuje bibliotekę'] },
       ], footer: [{ at: 'prosby', label: 'Prośby o wsparcie', sub: 'na stronie i na początku wielu nagrań', icon: 'heart' }, { at: 'haczyk', label: 'To cały „haczyk”', icon: 'search', tone: 'accent' }] },
       { id: 'A04', kind: 'rec', bump: 'Co jest w katalogu?', kicker: 'Katalog', title: 'Zakładka „Audiobooki”', rec: { clip: 'katalog', start: 1.0 },
         cuts: [{ at: 'Quo', rec: { clip: 'quo_vadis', start: 0.3 } }],
-        marks: [{ at: 'epoke', until: 'Uwaga', x: 392, y: 306, w: 1138, h: 44 }, { at: 'Quo', x: 1046, y: 453, w: 142, h: 22 }],
+        marks: [{ at: 'epoke', until: 'Uwaga', x: 392, y: 306, w: 1138, h: 44 }, { at: 'Quo', x: 1046, y: 450, w: 144, h: 27 }],
         tags: [
           { at: 'epoke', label: 'Epoka, gatunek, autor', icon: 'search' }, { at: 'polowa', label: 'Ponad połowa to poezja', sub: 'często kilkuminutowe wiersze', icon: 'chart' },
           { at: 'sto', label: 'Ponad 100 powieści', icon: 'book' }, { at: 'Quo', label: '„Quo vadis”', sub: '20 godz. 34 min', icon: 'clock' },
@@ -36,13 +36,14 @@ export const piece: PLPiece = {
         ] },
       { id: 'A05', kind: 'rec', bump: 'Jak się słucha?', kicker: '„Pan Tadeusz”', title: 'Odtwarzacz na stronie', rec: { clip: 'pt_player', start: 0.3 },
         marks: [{ at: 'dwanascie', until: 'predkosc', x: 1044, y: 426, w: 284, h: 302 }, { at: 'predkosc', until: 'nazwisko', x: 850, y: 360, w: 50, h: 132 },
-          { at: 'nazwisko', until: 'osiem', x: 688, y: 364, w: 250, h: 24 }, { at: 'osiem', x: 1048, y: 455, w: 142, h: 20 }],
+          { at: 'nazwisko', until: 'osiem', x: 688, y: 360, w: 160, h: 28 }, { at: 'osiem', x: 1050, y: 450, w: 138, h: 27 }],
         tags: [
           { at: 'dwanascie', label: '12 ksiąg = rozdziały', icon: 'list' }, { at: 'predkosc', label: 'Prędkość 0,5×–2×', icon: 'speed' },
           { at: 'Wiktor', label: 'Wiktor Korzeniewski', sub: 'lektor', icon: 'mic' }, { at: 'osiem', label: '8 godz. 44 min', icon: 'clock' },
         ] },
       { id: 'A06', kind: 'rec', kicker: 'Lektorzy', title: 'Ludzie, nie AI', rec: { clip: 'kamizelka', start: 0.3 }, cuts: [{ at: 'Tajemniczy', rec: { clip: 'ogrod', start: 0.3 } }],
-        marks: [{ at: 'Peszek', until: 'Tajemniczy', x: 688, y: 364, w: 236, h: 24 }, { at: 'Holtz', x: 688, y: 364, w: 300, h: 24 }],
+        marks: [{ at: 'Peszek', until: 'Tajemniczy', x: 688, y: 360, w: 108, h: 28 }, { at: 'Holtz', x: 688, y: 390, w: 120, h: 28 }],
+        zooms: [{ at: 'Ludzie', zoom: 1.8, x: 960, y: 330 }],
         tags: [
           { at: 'Peszek', label: 'Jan Peszek', sub: '„Kamizelka”, „Latarnik”', icon: 'mic' }, { at: 'Holtz', label: 'Paulina Holtz', sub: '„Tajemniczy ogród”', icon: 'mic' },
           { at: 'Staszczyk', label: 'Jan Staszczyk', sub: '„Rok 1984”', icon: 'mic' }, { at: 'Dramaty', label: 'Dramaty na dwa głosy', sub: '„Zemsta”, „Wesele”', icon: 'family' },
@@ -66,8 +67,8 @@ export const piece: PLPiece = {
       ] },
       { id: 'A10', kind: 'ratings', bump: 'Opinie', title: 'Aplikacja Wolne Lektury', stores: [{ at: 'Plej', store: 'google', rating: 4.6, count: '37 opinii' }, { at: 'Storze', store: 'apple', rating: 4.4, count: '14 ocen (Polska)' }],
         notes: [{ at: 'malo', label: 'Mało ocen: aplikacja jest nowa', sub: 'stan na 19.10.2026', icon: 'calendar' }],
-        likes: [{ at: 'pozytywne', label: 'Krótkie, pozytywne opinie' }],
-        dislikes: [{ at: 'zglasza', label: 'Nie startuje podczas rozmowy', sub: 'jedno zgłoszenie w App Store' }] },
+        likes: [{ at: 'pozytywne', label: 'Krótkie, pozytywne opinie', sub: 'w Google Play' }],
+        dislikes: [{ at: 'zglasza', label: 'Nie startuje podczas rozmowy', sub: 'jedno zgłoszenie w App Storze' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Wolne Lektury', pros: [
         { at: 'darmo', label: '0 zł i legalnie' }, { at: 'konta', label: 'Bez konta i bez reklam' }, { at: 'prawdziwi', label: 'Prawdziwi lektorzy' },
         { at: 'zawsze', label: 'Pliki MP3 na zawsze' }, { at: 'komplecie', label: 'E-book w komplecie' },
@@ -77,7 +78,7 @@ export const piece: PLPiece = {
         { at: 'pelna', label: '„Lalka”: pełna wersja za 0 zł', sub: '2 tomy, ponad 32 godziny' },
       ], no: [
         { at: 'Szukasz', label: 'Szukasz nowości', sub: 'sprawdź kod z biblioteki albo abonament' },
-      ], alts: { at: 'Audiotece', names: ['Audioteka: „Lalka” z Zapasiewiczem', '8 godz. 55 min · 19,99 zł'], label: 'Dla porównania (10.2026):' } },
+      ], alts: { at: 'Audiotece', names: ['„Lalka” w Audiotece: czyta Zapasiewicz · 8 godz. 55 min · 19,99 zł'], label: 'Stan na październik 2026:' } },
       { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Bez konta', title: 'Słuchasz od razu', rec: { clip: 'portada', start: 0.2 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na wolnelektury.pl' }, { at: 'Audiobooki', title: 'Kliknij „Audiobooki”' },
         { at: 'wpisz', title: 'albo wyszukaj tytuł', rec: { clip: 'szukaj', start: 0.2 } },
@@ -85,7 +86,7 @@ export const piece: PLPiece = {
         { at: 'pobierz', title: 'Offline: „pobierz audiobook”', sub: 'MP3 = cała książka w ZIP', rec: { clip: 'pt_pobierz', start: 0.3 } },
       ],
         marks: [{ at: 'Audiobooki', until: 'wpisz', x: 382, y: 258, w: 102, h: 33 }, { at: 'plej', until: 'pobierz', x: 740, y: 412, w: 58, h: 58, r: 29 }, { at: 'pobierz', x: 676, y: 257, w: 206, h: 71 }] },
-      { id: 'B04', kind: 'stat', kicker: 'Na telefonie', title: 'Aplikacja Wolne Lektury', at: 'zainstaluj', value: '0 zł', label: 'darmowa aplikacja na Androida i iPhone’a', tags: [
+      { id: 'B04', kind: 'stat', kicker: 'Na telefonie', title: 'Aplikacja Wolne Lektury', at: 'zainstaluj', value: '0 zł', label: 'darmowa aplikacja na Androida i iPhone’a (stan na 19.10.2026)', tags: [
         { at: 'Plej', label: 'Google Play', icon: 'phone' }, { at: 'Stora', label: 'App Store', icon: 'phone' },
       ] },
       { id: 'B05', kind: 'rec', kicker: 'Licencja', title: 'Drobny druk', rec: { clip: 'pt_player', start: 14.0 },

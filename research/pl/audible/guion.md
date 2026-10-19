@@ -1,5 +1,7 @@
 # Audible w Polsce · recenzja (SonorBooks Polska) · guion v1 (19/10/2026)
 
+> Montaje (19/10, 16:50): A10 y B03 dicen «App Storze» (locativo) y B06 «Na sonorbooks.pl» (no «W»), según los añadidos del brief. El resto de la locución, igual.
+
 - Modelo: reseña española de Audible (`es_models/audible.guion.md`), adaptada a Polonia con datos oficiales de hoy.
 - Locución: 3.998 caracteres de `say` → ≈ 4:18 a 15,5 car./s. Escenas e IDs en `vo.json`.
 - Diferencias con el vídeo español: en Polonia Audible acaba de llegar (julio de 2026), se contrata desde **Amazon.pl** y lo gestiona **audible.de** en polaco; los planes son **Standard 28,99 zł** (un audiolibro al mes mientras pagues) y **Premium 41,99 zł** (un crédito al mes para quedarte el libro + catálogo sin límite); el catálogo en polaco es pequeño (≈ 3.000 títulos en julio, según Świat Czytników) y la traducción está incompleta. No hay datos oficiales de los «90 días con Prime» en Polonia: no se mencionan.
@@ -74,8 +76,8 @@ Toma: animación.
 ES: Audible funciona en móviles y tabletas Android e iOS, en el Apple Watch y en relojes Wear OS, y en el coche con CarPlay o Android Auto.
 
 ### A10 · Opinie  (≈ 20 s)
-VO (pl): Oceny? W polskim App Store aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.
-SAY (si difiere): Oceny? W polskim Ep Stor aplikacja ma cztery przecinek osiem z ponad czterech tysięcy ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Gugl Plej to cztery przecinek jeden. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.
+VO (pl): Oceny? W polskim App Storze aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.
+SAY (si difiere): Oceny? W polskim Ep Storze aplikacja ma cztery przecinek osiem z ponad czterech tysięcy ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Gugl Plej to cztery przecinek jeden. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.
 Pantalla: «App Store (PL) ★ 4,8 · 4413 ocen» con nota «recenzje sprzed startu» · «Google Play (PL) ★ 4,1» · «👍 Wybór książek · odtwarzacz» · «👎 Cena za 1 książkę · tłumaczenie» · pie «Stan na 19.10.2026».
 Toma: 06_app_store (de 0,0 s a 4,0 s) → 05_google_play (de 0,0 s a 4,0 s) → animación.
 ES: ¿Notas? En la App Store polaca la app tiene un 4,8 con más de 4.000 valoraciones, pero las últimas reseñas son de antes del lanzamiento en Polonia. En Google Play de Polonia, un 4,1. Gusta la variedad y el reproductor. Se critica pagar la cuota por un libro al mes y la traducción a medias.
@@ -109,8 +111,8 @@ Toma: 01_plany_amazon (de 3,0 s a 9,0 s: el ratón pasa por «Wypróbuj plan Sta
 ES: Entra en Amazon.pl, en la sección Audiolibros Audible, y elige «Probar Standard» o «Probar Premium». Entras con tu cuenta de Amazon y das una forma de pago: hoy no pagas nada, y a los 30 días el cobro se hace solo.
 
 ### B03 · Nie w aplikacji  (≈ 9,5 s)
-VO (pl): Zapisz się na stronie, nie w aplikacji: w App Store plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.
-SAY (si difiere): Zapisz się na stronie, nie w aplikacji: w Ep Stor plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.
+VO (pl): Zapisz się na stronie, nie w aplikacji: w App Storze plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.
+SAY (si difiere): Zapisz się na stronie, nie w aplikacji: w Ep Storze plany kupowane w aplikacji mają wyższe ceny. Potem pobierz aplikację i zaloguj się tym samym kontem.
 Pantalla: «Strona: 28,99 / 41,99 zł» frente a «App Store: od 39,99 zł» · «Zapisz się na stronie».
 Toma: 06_app_store (de 4,0 s a 10,0 s: lista de compras dentro de la app).
 ES: Suscríbete en la web, no en la app: en la App Store los planes comprados desde la aplicación son más caros. Después descarga la app y entra con la misma cuenta.
@@ -130,8 +132,8 @@ Toma: animación; detrás, 01_plany_amazon (FAQ «Co otrzymuję…», 3 s).
 ES: Y gasta el crédito antes de darte de baja: los créditos sin usar se pierden, y el libro canjeado con un crédito se queda contigo para siempre.
 
 ### B06 · Cierre  (≈ 12,5 s)
-VO (pl): W sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.
-SAY (si difiere): W sonorbooks kropka pe el porównasz warunki Odibl z Audioteką, Empik Goł, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.
+VO (pl): Na sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.
+SAY (si difiere): Na sonorbooks kropka pe el porównasz warunki Odibl z Audioteką, Empik Goł, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.
 Pantalla: «sonorbooks.pl» · tarjeta de Audible y, al lado, Audioteka · Empik Go · Legimi · frase de marca «Twoja następna historia już na ciebie czeka.» (sin aviso de afiliado: el enlace de Audible en sonorbooks.pl no lleva afiliación).
 Toma: 07_sonorbooks (de 0,0 s a 13,0 s) → cierre de marca SonorBooks.
 ES: En sonorbooks.pl comparas las condiciones de Audible con Audioteka, Empik Go, Legimi y otros servicios, y ves dónde escuchar un audiolibro y a qué precio. Tu próxima historia ya te está esperando.

@@ -15,7 +15,7 @@ export const piece: PLPiece = {
       { id: 'A01', kind: 'hook', title: 'Audible\nw Polsce:\nczy warto?', hi: ['Audible'], rec: { clip: 'plany', start: 0.3 },
         cuts: [{ at: 'polski', rec: { clip: 'katalog', start: 2.4 } }, { at: 'drobny', rec: { clip: 'faq', start: 2.2 } }], promises: [
         { at: 'plany', label: 'Plany i ceny', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'search' },
-        { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', icon: 'gift' },
+        { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', sub: 'dla nowych członków', icon: 'gift' },
       ] },
       { id: 'A02', kind: 'intro', bump: 'Czym jest Audible?', rec: { clip: 'swiat', start: 0.3, url: 'swiatczytnikow.pl' },
         cuts: [{ at: 'wchodzisz', rec: { clip: 'plany', start: 0.3 } }, { at: 'niemiecki', rec: { clip: 'audible_de', start: 0.3, url: 'audible.de' } }], facts: [
@@ -75,7 +75,7 @@ export const piece: PLPiece = {
         dislikes: [{ at: 'cene', label: 'Cena za 1 książkę miesięcznie' }, { at: 'tlumaczenie', label: 'Niepełne tłumaczenie' }],
         notes: [{ at: 'sprzed', label: 'App Store: recenzje sprzed startu', sub: 'stan na 19.10.2026', icon: 'calendar' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Audible w Polsce', pros: [
-        { at: '30', label: '30 dni za darmo' }, { at: 'wlasnosc', label: 'Premium: książka na własność' }, { at: 'angielsku', label: 'Ogromny wybór po angielsku' }, { at: 'rozbudowany', label: 'Rozbudowany odtwarzacz' },
+        { at: '30', label: '30 dni za darmo', sub: 'dla nowych członków' }, { at: 'wlasnosc', label: 'Premium: książka na własność' }, { at: 'angielsku', label: 'Ogromny wybór po angielsku' }, { at: 'rozbudowany', label: 'Rozbudowany odtwarzacz' },
       ], cons: [
         { at: 'maly', label: 'Mały polski katalog' }, { at: 'Standardzie', label: 'Standard: 1 książka miesięcznie' }, { at: 'tlumaczenie', label: 'Niepełne tłumaczenie' }, { at: 'brak', label: 'Bez e-booków i planu rodzinnego' },
       ] },
@@ -86,22 +86,22 @@ export const piece: PLPiece = {
         { at: 'polskich', label: 'Szukasz głównie polskich tytułów', sub: 'na razie mały wybór' },
       ], alts: { at: 'porownaj', names: ['Audioteka Klub', 'Empik Go', 'Legimi'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Za darmo na start', at: '30', value: '30 dni', label: 'za darmo dla nowych członków', tags: [
-        { at: 'obu', label: 'Standard i Premium', icon: 'check' }, { at: 'kredyt', label: 'Premium: kredyt od razu', icon: 'gift' },
+        { at: 'obu', label: 'Standard i Premium', icon: 'check' }, { at: 'kredyt', label: 'Premium: 1 kredyt', sub: 'już w okresie próbnym', icon: 'gift' },
       ] },
       { id: 'B02', kind: 'steps', kicker: 'Jak zacząć', title: 'Zapis na Amazon.pl', rec: { clip: 'plany', start: 0.3 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na Amazon.pl', sub: 'zakładka Audiobooki Audible' }, { at: 'Wyprobuj', title: 'Wypróbuj Standard albo Premium' },
         { at: 'Zalogujesz', title: 'Zaloguj się kontem Amazon', sub: 'i podaj metodę płatności' }, { at: 'dzis', title: 'Dziś 0 zł', sub: 'po 30 dniach 28,99 / 41,99 zł automatycznie' },
-      ],
+      ], note: { at: 'dzis', label: 'Ceny: stan na październik 2026', icon: 'calendar' },
         marks: [{ at: 'Wyprobuj', until: 'Premium', x: 508, y: 545, w: 424, h: 50 }, { at: 'Premium', until: 'Zalogujesz', x: 988, y: 545, w: 424, h: 50 }] },
       { id: 'B03', kind: 'rec', kicker: 'Ważne', title: 'Zapisz się na stronie', rec: { clip: 'appstore', start: 0.3, url: 'apps.apple.com/pl' },
-        marks: [{ at: 'App', until: 'Potem', x: 576, y: 172, w: 140, h: 22 }], zooms: [{ at: 'App', zoom: 1.6, x: 640, y: 300 }],
+        marks: [{ at: 'App', until: 'Potem', x: 584, y: 168, w: 124, h: 28 }], zooms: [{ at: 'App', zoom: 1.6, x: 640, y: 300 }],
         tags: [
           { at: 'stronie', label: 'Zapis na stronie Amazon.pl', icon: 'globe', tone: 'good' }, { at: 'wyzsze', label: 'W aplikacji (App Store) drożej', tone: 'bad' },
           { at: 'pobierz', label: 'Potem pobierz aplikację', icon: 'download' }, { at: 'zaloguj', label: 'To samo konto', icon: 'user' },
         ] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', steps: [
         { at: 'Zrezygnuj', title: 'Zrezygnuj przed końcem 30 dni', sub: 'wtedy nie zapłacisz' }, { at: 'Anuluj', title: 'audible.de › „Anuluj subskrypcję”', sub: 'link na samym dole strony' },
-        { at: 'kupiles', title: 'Kupione w App Store lub Google Play?', sub: 'anulujesz w sklepie' },
+        { at: 'kupiles', title: 'Kupione w App Storze lub Google Play?', sub: 'anulujesz w sklepie' },
       ] },
       { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Najpierw wykorzystaj kredyt', rec: { clip: 'faq', start: 3.2 },
         marks: [{ at: 'niewykorzystane', until: 'ksiazka', x: 370, y: 366, w: 650, h: 52 }, { at: 'ksiazka', x: 370, y: 322, w: 650, h: 52 }],
@@ -120,15 +120,13 @@ export const piece: PLPiece = {
       { label: 'Polski katalog', from: 'A05' },
       { label: 'Zakupy pojedyncze', from: 'A06' },
       { label: 'Aplikacja i odtwarzacz', from: 'A07' },
-      { label: 'Tłumaczenie', from: 'A08' },
-      { label: 'Urządzenia', from: 'A09' },
+      { label: 'Tłumaczenie i urządzenia', from: 'A08' },
       { label: 'Opinie', from: 'A10' },
       { label: 'Plusy i minusy', from: 'A11' },
       { label: 'Werdykt: czy warto?', from: 'A12' },
       { label: 'Jak wypróbować za darmo', from: 'B01' },
-      { label: 'Zapis na stronie, nie w aplikacji', from: 'B03' },
       { label: 'Jak zrezygnować', from: 'B04' },
     ],
   },
-  thumb: { line1: 'AUDIBLE', line2: 'W POLSCE?', seal: { icon: 'coin', text: 'od 28,99 zł\n/ mies.' }, label: { strong: '30 dni', rest: 'ZA DARMO' } },
+  thumb: { line1: 'AUDIBLE', line2: 'W POLSCE?', seal: { icon: 'gift', text: '30 dni\nza darmo' }, label: { strong: 'Standard', rest: 'CZY PREMIUM?' } },
 };

@@ -1,0 +1,22 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 302,
+ "duration": 19.462,
+ "offset": 0.152,
+ "marks": {
+  "top": 0.266,
+  "dialog": 2.476,
+  "mp3": 4.632,
+  "ogg": 6.16,
+  "daisy": 7.642,
+  "epub": 9.559,
+  "closed": 11.549,
+  "ebook": 13.566,
+  "end": 19.462
+ },
+ "events": []
+}

@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 67,
+ "duration": 7.482,
+ "offset": 0.086,
+ "marks": {
+  "top": 0.336,
+  "pustyni": 2.838,
+  "basn": 5.083,
+  "end": 7.482
+ },
+ "events": []
+}

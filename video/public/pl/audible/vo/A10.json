@@ -1,18 +1,18 @@
 {
  "id": "A10",
- "hash": "057f9d158d5f",
- "text": "Oceny? W polskim App Store aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
- "duration": 18.64,
+ "hash": "c9d20e1b8ca0",
+ "text": "Oceny? W polskim App Storze aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
+ "duration": 18.4,
  "words": [
   {
    "w": "Oceny?",
    "s": 0.0,
-   "e": 0.88
+   "e": 0.96
   },
   {
    "w": "W",
-   "s": 0.92,
-   "e": 0.96
+   "s": 0.987,
+   "e": 1.013
   },
   {
    "w": "polskim",
@@ -22,11 +22,11 @@
   {
    "w": "Ep",
    "s": 1.44,
-   "e": 1.6
+   "e": 1.52
   },
   {
-   "w": "Stor",
-   "s": 1.68,
+   "w": "Storze",
+   "s": 1.6,
    "e": 1.92
   },
   {
@@ -42,12 +42,12 @@
   {
    "w": "cztery",
    "s": 2.72,
-   "e": 2.96
+   "e": 2.88
   },
   {
    "w": "przecinek",
    "s": 3.04,
-   "e": 3.44
+   "e": 3.36
   },
   {
    "w": "osiem",
@@ -56,17 +56,17 @@
   },
   {
    "w": "z",
-   "s": 3.92,
-   "e": 3.96
+   "s": 3.84,
+   "e": 3.92
   },
   {
    "w": "ponad",
    "s": 4.0,
-   "e": 4.32
+   "e": 4.24
   },
   {
    "w": "czterech",
-   "s": 4.4,
+   "s": 4.32,
    "e": 4.64
   },
   {
@@ -76,164 +76,164 @@
   },
   {
    "w": "ocen,",
-   "s": 5.2,
-   "e": 5.76
+   "s": 5.12,
+   "e": 5.84
   },
   {
    "w": "ale",
-   "s": 5.88,
-   "e": 6.0
+   "s": 5.96,
+   "e": 6.08
   },
   {
    "w": "ostatnie",
-   "s": 6.08,
-   "e": 6.4
+   "s": 6.16,
+   "e": 6.48
   },
   {
    "w": "recenzje",
-   "s": 6.52,
-   "e": 6.88
+   "s": 6.56,
+   "e": 6.96
   },
   {
    "w": "są",
-   "s": 6.92,
-   "e": 7.04
+   "s": 7.0,
+   "e": 7.12
   },
   {
    "w": "jeszcze",
-   "s": 7.12,
+   "s": 7.2,
    "e": 7.36
   },
   {
    "w": "sprzed",
-   "s": 7.48,
+   "s": 7.44,
    "e": 7.76
   },
   {
    "w": "polskiego",
-   "s": 7.8,
+   "s": 7.813,
    "e": 8.16
   },
   {
    "w": "startu.",
    "s": 8.24,
-   "e": 9.067
+   "e": 8.96
   },
   {
    "w": "W",
-   "s": 9.093,
-   "e": 9.12
+   "s": 9.0,
+   "e": 9.04
   },
   {
    "w": "polskim",
-   "s": 9.16,
-   "e": 9.44
+   "s": 9.08,
+   "e": 9.36
   },
   {
    "w": "Gugl",
-   "s": 9.52,
-   "e": 9.76
+   "s": 9.44,
+   "e": 9.68
   },
   {
    "w": "Plej",
-   "s": 9.84,
-   "e": 10.16
+   "s": 9.76,
+   "e": 10.08
   },
   {
    "w": "to",
-   "s": 10.28,
-   "e": 10.4
+   "s": 10.16,
+   "e": 10.32
   },
   {
    "w": "cztery",
-   "s": 10.48,
-   "e": 10.72
+   "s": 10.4,
+   "e": 10.56
   },
   {
    "w": "przecinek",
-   "s": 10.76,
-   "e": 11.16
+   "s": 10.64,
+   "e": 11.12
   },
   {
    "w": "jeden.",
    "s": 11.2,
-   "e": 12.027
+   "e": 11.84
   },
   {
    "w": "Chwalą",
-   "s": 12.053,
-   "e": 12.32
+   "s": 11.88,
+   "e": 12.16
   },
   {
    "w": "wybór",
-   "s": 12.4,
-   "e": 12.64
+   "s": 12.24,
+   "e": 12.4
   },
   {
    "w": "książek",
-   "s": 12.8,
-   "e": 13.2
+   "s": 12.48,
+   "e": 12.96
   },
   {
    "w": "i",
-   "s": 13.28,
-   "e": 13.36
+   "s": 13.04,
+   "e": 13.12
   },
   {
    "w": "wygodny",
-   "s": 13.44,
-   "e": 13.76
+   "s": 13.2,
+   "e": 13.56
   },
   {
    "w": "odtwarzacz.",
-   "s": 13.84,
-   "e": 14.68
+   "s": 13.6,
+   "e": 14.52
   },
   {
    "w": "Krytykują",
-   "s": 14.72,
-   "e": 15.2
+   "s": 14.56,
+   "e": 15.04
   },
   {
    "w": "cenę",
-   "s": 15.28,
-   "e": 15.52
+   "s": 15.16,
+   "e": 15.32
   },
   {
    "w": "za",
-   "s": 15.6,
-   "e": 15.68
+   "s": 15.36,
+   "e": 15.44
   },
   {
    "w": "jedną",
-   "s": 15.707,
-   "e": 15.92
+   "s": 15.48,
+   "e": 15.68
   },
   {
    "w": "książkę",
-   "s": 16.04,
-   "e": 16.24
+   "s": 15.8,
+   "e": 16.0
   },
   {
    "w": "miesięcznie",
-   "s": 16.32,
-   "e": 16.96
+   "s": 16.08,
+   "e": 16.72
   },
   {
    "w": "i",
-   "s": 17.08,
-   "e": 17.2
+   "s": 16.84,
+   "e": 16.96
   },
   {
    "w": "niepełne",
-   "s": 17.28,
-   "e": 17.6
+   "s": 17.04,
+   "e": 17.36
   },
   {
    "w": "tłumaczenie.",
-   "s": 17.627,
-   "e": 18.64
+   "s": 17.44,
+   "e": 18.4
   }
  ],
- "speechEnd": 18.263
+ "speechEnd": 18.069
 }

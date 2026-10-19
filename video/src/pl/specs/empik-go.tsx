@@ -13,7 +13,7 @@ export const piece: PLPiece = {
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Empik Go:\nczy warto?', hi: ['Empik', 'Go:', 'Go'], rec: { clip: 'plany', start: 0.3 }, promises: [
         { at: 'cennik', label: 'Cennik', icon: 'coin' }, { at: 'regulamin', label: 'Regulamin', icon: 'doc' }, { at: 'opinie', label: 'Opinie', icon: 'star' },
-        { at: 'plusy', label: 'Plusy i minusy', tone: 'good' }, { at: '7', label: '7 dni za darmo', icon: 'gift' },
+        { at: 'plusy', label: 'Plusy i minusy', tone: 'good' }, { at: '7', label: '7 dni za darmo', sub: 'z kartą płatniczą, tylko raz', icon: 'gift' },
       ] },
       { id: 'A02', kind: 'intro', bump: 'Czym jest Empik Go?', rec: { clip: 'hero', start: 0.4 }, facts: [
         { at: 'Empiku', label: 'Usługa Empiku', sub: 'Empik S.A., Warszawa', icon: 'library' },
@@ -25,7 +25,7 @@ export const piece: PLPiece = {
         { at: 'Smart', name: 'Go Smart', price: '39,99 zł', period: '/ 30 dni', features: ['Bez limitu tytułów', '1 urządzenie + Kindle'] },
         { at: 'Maks', name: 'Go Max', price: '49,99 zł', period: '/ 30 dni', features: ['Bez limitu tytułów', '2 urządzenia + Kindle', '4 urządzenia: 69,99 zł'] },
         { at: 'Standard', name: 'Go Standard', price: '24,99 zł', period: '/ 30 dni', features: ['3 tytuły / 30 dni', '2 urządzenia + Kindle'] },
-      ], footer: [{ at: 'plany', label: 'Stan na październik 2026', icon: 'calendar', tone: 'accent' }, { at: 'Kindl', label: 'Czytnik Kindle w każdym planie', icon: 'ereader' }] },
+      ], footer: [{ at: 'plany', label: 'Ceny: stan na październik 2026', icon: 'calendar', tone: 'accent' }, { at: 'Kindl', label: 'Czytnik Kindle w każdym planie', icon: 'ereader' }] },
       { id: 'A04', kind: 'rec', bump: 'Katalog i Originals', kicker: 'empik.com/go', title: 'Zajrzyj bez logowania', rec: { clip: 'katalog', start: 0.3 },
         cuts: [{ at: 'wlasne', rec: { clip: 'originals', start: 0.3 } }],
         marks: [{ at: 'nowosci', until: 'bestsellery', x: 640, y: 116, w: 640, h: 60 }, { at: 'bestsellery', until: 'wlasne', x: 680, y: 452, w: 560, h: 60 }, { at: 'wlasne', x: 660, y: 96, w: 600, h: 60 }],
@@ -80,7 +80,7 @@ export const piece: PLPiece = {
         { at: 'Kindlu', label: 'Kindle', sub: 'do 10 ebooków na okres', icon: 'book', ok: true },
       ] },
       { id: 'A10', kind: 'ratings', bump: 'Opinie', title: 'Oceny i opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.6, count: '53,7 tys. ocen' }, { at: 'Ep', store: 'apple', rating: 4.5, count: '9,8 tys. ocen (Polska)' }],
-        notes: [{ at: 'Oceny', label: 'Stan na 19.10.2026', sub: 'oceny całej aplikacji', icon: 'calendar' }],
+        notes: [{ at: 'Oceny', label: 'Oceny całej aplikacji', sub: 'stan na 19.10.2026', icon: 'calendar' }],
         likes: [{ at: 'duzy', label: 'Duży wybór tytułów' }, { at: 'latwa', label: 'Łatwa obsługa' }],
         dislikes: [{ at: 'zawieszanie', label: 'Aplikacja się zawiesza', sub: 'np. przy zmianie rozdziału' }, { at: 'braki', label: 'Braki w katalogu' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Empik Go', pros: [
@@ -93,7 +93,7 @@ export const piece: PLPiece = {
         { at: 'Standard', label: 'Kończysz do 3 książek miesięcznie', sub: 'Go Standard · 24,99 zł / 30 dni' },
       ], no: [
         { at: 'tylko', label: 'Chcesz tylko audiobooków bez limitu', sub: 'porównaj z abonamentem tylko na audio' },
-      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies.'], label: 'Dla porównania (10.2026):' } },
+      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. · bez limitu w katalogu Klubu'], label: 'Dla porównania (stan na 10.2026):' } },
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Empik Go', title: 'Okres próbny', at: 'Empik', value: '7 dni', label: 'za darmo w każdym planie', tags: [
         { at: 'karta', label: 'Tylko z kartą płatniczą', icon: 'card' }, { at: ['tylko', 1], label: 'Tylko raz', sub: 'bez względu na plan', icon: 'user' },
       ] },
@@ -110,7 +110,7 @@ export const piece: PLPiece = {
           { at: 'Pobierz', label: 'Pobierz aplikację Empik Go', icon: 'download' }, { at: 'zaloguj', label: 'Zaloguj się', icon: 'user' },
         ] },
       { id: 'B04', kind: 'stat', kicker: 'Po okresie próbnym', title: 'Pierwsza opłata', at: 'osmego', value: '8.', unit: 'dzień', label: 'zaczyna się płatny okres, jeśli nie zrezygnujesz', tags: [
-        { at: 'Smart', label: 'Go Smart: 39,99 zł / 30 dni', icon: 'card' },
+        { at: 'Smart', label: 'Go Smart: 39,99 zł / 30 dni', sub: 'stan na październik 2026', icon: 'card' },
       ] },
       { id: 'B05', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'faq_tabela', start: 6.0, url: 'empik.com/go/faq' },
         marks: [{ at: 'Twoje', until: 'Anuluj', x: 1076, y: 482, w: 278, h: 28 }, { at: 'Anuluj', x: 616, y: 98, w: 770, h: 90 }], steps: [

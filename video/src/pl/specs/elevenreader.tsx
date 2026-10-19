@@ -10,7 +10,7 @@ export const piece: PLPiece = {
     logo: 'pl/elevenreader/img/logo.svg', logoWhite: 'pl/elevenreader/img/logo_white.svg', logoRatio: 205 / 343, tileBg: '#111', tileLogoWhite: true,
     kicker: 'Recenzja ElevenReader', music: 'pl/elevenreader/music/bed.mp3',
     scenes: [
-      { id: 'A01', kind: 'hook', title: 'ElevenReader:\nczy warto\npłacić?', hi: ['ElevenReader'], rec: { clip: 'home_hero', start: 0.1 },
+      { id: 'A01', kind: 'hook', title: 'ElevenReader:\nczy warto\npłacić?', hi: ['ElevenReader'], rec: { clip: 'home_hero', start: 0.1, holdAt: 4.0 },
         cuts: [{ at: 'Piotra', rec: { clip: 'iconic', start: 5.9 } }, { at: ['Ilewen', 0], rec: { clip: 'home_hero', start: 7.35 } }],
         promises: [{ at: 'darmowy', label: 'Plan darmowy', icon: 'gift' }, { at: 'Ultra', label: 'Ultra', icon: 'star' }, { at: 'polskie', label: 'Polskie audiobooki', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'doc' }] },
       { id: 'A02', kind: 'intro', bump: 'Co to jest?', rec: { clip: 'blog', start: 0.4, url: 'elevenlabs.io/pl/blog' }, facts: [
@@ -35,7 +35,7 @@ export const piece: PLPiece = {
         tags: [{ at: 'ponad', label: '1000+ głosów', icon: 'mic' }, { at: 'jezyka', label: 'Według języka telefonu', icon: 'globe' }, { at: 'zaprojektujesz', label: 'Własny głos z opisu', sub: 'tylko w Ultra', icon: 'sparkle' },
           { at: 'Fronczewski', label: 'Piotr Fronczewski', sub: 'seria Iconic Voices', icon: 'star' }, { at: 'wspolpracy', label: 'Głos AI razem z aktorem', icon: 'mic' }] },
       { id: 'A06', kind: 'rec', bump: 'Polskie audiobooki', kicker: 'Po polsku', title: 'Co posłuchasz?', rec: { clip: 'lalka_wl', start: 0.4 },
-        cuts: [{ at: 'lektorami', rec: { clip: 'lalka_lektor', start: 0.1 } }, { at: 'kryminaly', rec: { clip: 'polska_czyta', start: 3.6 } }],
+        cuts: [{ at: 'lektorami', rec: { clip: 'lalka_lektor', start: 0.1, holdAt: 4.9 } }, { at: 'kryminaly', rec: { clip: 'polska_czyta', start: 3.6 } }],
         marks: [{ at: 'darmo', until: 'pierwszy', x: 364, y: 335, w: 320, h: 64 }, { at: 'pierwszy', until: 'ktory', x: 364, y: 782, w: 600, h: 40 }, { at: 'glos', until: 'lektorami', x: 364, y: 566, w: 600, h: 40 }, { at: 'Grzegorza', until: 'kryminaly', x: 362, y: 298, w: 590, h: 38 }, { at: 'Mankella', x: 1322, y: 266, w: 236, h: 340 }],
         tags: [{ at: 'darmo', label: 'Za darmo: Wolne Lektury', icon: 'gift', tone: 'good' }, { at: 'pierwszy', label: '„Lalka”, tom pierwszy', sub: '15 h 59 min', icon: 'book' }, { at: 'dowolny', label: 'Czyta głos AI', sub: 'do wyboru', icon: 'mic' },
           { at: 'lektorami', label: 'Ultra: z lektorami', icon: 'headphones' }, { at: 'Grzegorza', label: '„Lalka” · 36 h 4 min', sub: 'czytają G. Damięcki i K. Gosztyła', icon: 'book' }, { at: 'kryminaly', label: 'Henning Mankell', sub: 'kryminały po polsku', icon: 'book' }] },
@@ -45,14 +45,14 @@ export const piece: PLPiece = {
       { id: 'A08', kind: 'features', bump: 'Odtwarzacz', kicker: 'W aplikacji', title: 'Jak się słucha?', cols: 3, items: [
         { at: 'slowo', label: 'Podświetlanie', sub: 'słowo po słowie', icon: 'font' }, { at: 'Predkosc', label: 'Prędkość do 4×', icon: 'speed' },
         { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' }, { at: 'zakladki', label: 'Zakładki', icon: 'bookmark' },
-        { at: 'offline', label: 'Offline w Ultra', sub: 'pliki ważne 60 dni', icon: 'download' },
+        { at: 'offline', label: 'Offline w Ultra', sub: 'pliki ważne przez 60 dni', icon: 'download' },
       ] },
       { id: 'A09', kind: 'devices', items: [
         { at: 'iPhon', label: 'iPhone', icon: 'phone', ok: true }, { at: 'iPad', label: 'iPad', icon: 'tablet', ok: true },
         { at: 'Androidzie', label: 'Android', icon: 'phone', ok: true }, { at: 'przegladarce', label: 'Przeglądarka', sub: 'z synchronizacją', icon: 'globe', ok: true },
         { at: 'Chrome', label: 'Rozszerzenie do Chrome', icon: 'laptop', ok: true }, { at: 'Androida', label: 'Android Auto', sub: 'brak', icon: 'car', ok: false },
       ] },
-      { id: 'A10', kind: 'ratings', bump: 'Opinie', kicker: 'Opinie · 19.10.2026', stores: [{ at: 'Gugl', store: 'google', rating: 4.6, count: '69,7 tys. opinii' }, { at: 'Ep', store: 'apple', rating: 4.7, count: '704 oceny w Polsce' }],
+      { id: 'A10', kind: 'ratings', bump: 'Opinie', kicker: 'Opinie · stan na 19.10.2026', stores: [{ at: 'Gugl', store: 'google', rating: 4.6, count: '69,7 tys. opinii' }, { at: 'Ep', store: 'apple', rating: 4.7, count: '704 oceny w Polsce' }],
         likes: [{ at: 'naturalne', label: 'Naturalne głosy' }, { at: 'dowolny', label: 'Przeczyta dowolny plik' }],
         dislikes: [{ at: 'Androida', label: 'Brak Android Auto' }, { at: 'gubienie', label: 'Gubi miejsce po przerwie' }, { at: 'nagle', label: 'Nagle żąda płatnego planu' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', kicker: 'Podsumowanie', title: 'ElevenReader', pros: [
@@ -64,10 +64,10 @@ export const piece: PLPiece = {
         { at: 'duzo', label: 'Dużo czytasz PDF-ów i artykułów', sub: 'albo e-booków bez wersji audio' },
       ], no: [
         { at: 'szukasz', label: 'Szukasz audiobooków z lektorem', sub: 'porównaj najpierw abonamenty' },
-      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. bez limitu godzin'], label: 'Dla porównania:' } },
+      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. bez limitu godzin', 'stan na październik 2026'], label: 'Dla porównania:' } },
       { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Konto za darmo', rec: { clip: 'pricing_free', start: 4.0 },
         marks: [{ at: 'Plan', x: 418, y: 818, w: 480, h: 66 }],
-        steps: [{ at: 'Zaloz', title: 'Załóż konto', sub: 'na elevenreader.io albo w aplikacji' }, { at: 'Gugl', title: 'Google, Apple albo e-mail' }, { at: 'Plan', title: 'Plan Free: 0 zł', sub: 'bez subskrypcji' }] },
+        steps: [{ at: 'Zaloz', title: 'Załóż konto', sub: 'na elevenreader.io albo w aplikacji' }, { at: 'Gugl', title: 'Google, Apple albo e-mail' }, { at: 'Plan', title: 'Plan Free: 0 zł', sub: 'bez subskrypcji · stan na październik 2026' }] },
       { id: 'B02', kind: 'steps', kicker: 'Krok 2', title: 'Pierwszy plik', rec: { clip: 'pomoc_godziny', start: 0.4, url: 'elevenlabs.io/docs/pl' },
         marks: [{ at: 'pierwszej', until: 'Ponowne', x: 552, y: 346, w: 570, h: 32 }, { at: 'szybciej', until: 'Ponowne', x: 566, y: 422, w: 760, h: 32 }, { at: 'Ponowne', x: 566, y: 492, w: 800, h: 70 }],
         zooms: [{ at: 'Godziny', zoom: 1.8, x: 900, y: 450 }],
@@ -77,7 +77,7 @@ export const piece: PLPiece = {
         marks: [{ at: 'stronie', until: 'aplikacji', x: 1018, y: 818, w: 488, h: 68 }, { at: 'zlotowkach', x: 1360, y: 450, w: 530, h: 48 }],
         zooms: [{ at: 'zlotowkach', zoom: 2.4, x: 1600, y: 470 }],
         tags: [{ at: 'stronie', label: 'Strona: 3 dni za darmo', icon: 'gift', tone: 'good' }, { at: 'anulujesz', label: 'Anuluj przed końcem', icon: 'calendar' }, { at: 'ruszy', label: 'Potem płatność sama', tone: 'bad' },
-          { at: 'zlotowkach', label: 'Aplikacja: 39,00 zł', sub: 'App Store PL · stan na 10.2026', icon: 'coin' }] },
+          { at: 'zlotowkach', label: 'Aplikacja: 39,00 zł', sub: 'App Store PL · stan na październik 2026', icon: 'coin' }] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_anuluj', start: 0.4, url: 'elevenlabs.io/docs/pl' },
         marks: [{ at: 'stronie', until: 'telefonie', x: 552, y: 440, w: 816, h: 72 }, { at: 'telefonie', until: 'Samo', x: 552, y: 316, w: 816, h: 120 }, { at: 'Dostep', x: 552, y: 516, w: 816, h: 72 }],
         zooms: [{ at: 'stronie', zoom: 1.7, x: 960, y: 450 }],

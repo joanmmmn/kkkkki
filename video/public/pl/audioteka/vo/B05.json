@@ -1,8 +1,8 @@
 {
  "id": "B05",
- "hash": "843e130c0156",
- "text": "Rezygnujesz na audioteka.com: Ustawienia konta, Zarządzaj Audioteka Klub, „Anuluj subskrypcję”. Jeśli subskrypcja jest z aplikacji, anulujesz ją w Google Play albo App Store. Samo usunięcie aplikacji nie wystarczy. Zrób to przed końcem 14. dnia.",
- "duration": 16.48,
+ "hash": "0d6de7226240",
+ "text": "Rezygnujesz na audioteka.com: Ustawienia konta, Zarządzaj Audioteka Klub, „Anuluj subskrypcję”. Jeśli subskrypcja jest z aplikacji, anulujesz ją w Google Play albo App Storze. Samo usunięcie aplikacji nie wystarczy. Zrób to przed końcem 14. dnia.",
+ "duration": 16.56,
  "words": [
   {
    "w": "Rezygnujesz",
@@ -22,21 +22,21 @@
   {
    "w": "kropka",
    "s": 1.56,
-   "e": 1.92
+   "e": 1.84
   },
   {
    "w": "kom:",
-   "s": 2.28,
-   "e": 2.68
+   "s": 1.92,
+   "e": 2.56
   },
   {
    "w": "Ustawienia",
-   "s": 2.72,
+   "s": 2.64,
    "e": 3.12
   },
   {
    "w": "konta,",
-   "s": 3.2,
+   "s": 3.28,
    "e": 3.8
   },
   {
@@ -51,7 +51,7 @@
   },
   {
    "w": "Klub,",
-   "s": 4.92,
+   "s": 4.96,
    "e": 5.547
   },
   {
@@ -62,31 +62,31 @@
   {
    "w": "subskrypcję”.",
    "s": 6.0,
-   "e": 7.12
+   "e": 7.04
   },
   {
    "w": "Jeśli",
-   "s": 7.16,
-   "e": 7.36
+   "s": 7.12,
+   "e": 7.28
   },
   {
    "w": "subskrypcja",
-   "s": 7.48,
-   "e": 7.96
+   "s": 7.36,
+   "e": 7.88
   },
   {
    "w": "jest",
-   "s": 8.0,
+   "s": 7.92,
    "e": 8.16
   },
   {
    "w": "z",
-   "s": 8.24,
-   "e": 8.28
+   "s": 8.187,
+   "e": 8.213
   },
   {
    "w": "aplikacji,",
-   "s": 8.32,
+   "s": 8.24,
    "e": 9.08
   },
   {
@@ -101,89 +101,89 @@
   },
   {
    "w": "w",
-   "s": 9.8,
-   "e": 9.84
+   "s": 9.787,
+   "e": 9.813
   },
   {
    "w": "Gugl",
-   "s": 9.88,
-   "e": 10.16
+   "s": 9.84,
+   "e": 10.08
   },
   {
    "w": "Plej",
-   "s": 10.24,
+   "s": 10.16,
    "e": 10.48
   },
   {
    "w": "albo",
    "s": 10.56,
-   "e": 10.8
+   "e": 10.88
   },
   {
    "w": "Ep",
-   "s": 10.88,
-   "e": 10.96
+   "s": 10.96,
+   "e": 11.04
   },
   {
-   "w": "Stor.",
-   "s": 11.04,
-   "e": 11.8
+   "w": "Storze.",
+   "s": 11.12,
+   "e": 11.96
   },
   {
    "w": "Samo",
-   "s": 11.84,
-   "e": 12.08
+   "s": 12.0,
+   "e": 12.24
   },
   {
    "w": "usunięcie",
-   "s": 12.16,
-   "e": 12.56
+   "s": 12.32,
+   "e": 12.72
   },
   {
    "w": "aplikacji",
-   "s": 12.6,
-   "e": 13.04
-  },
-  {
-   "w": "nie",
-   "s": 13.12,
+   "s": 12.76,
    "e": 13.2
   },
   {
+   "w": "nie",
+   "s": 13.28,
+   "e": 13.36
+  },
+  {
    "w": "wystarczy.",
-   "s": 13.24,
-   "e": 14.04
+   "s": 13.4,
+   "e": 14.28
   },
   {
    "w": "Zrób",
-   "s": 14.08,
-   "e": 14.32
-  },
-  {
-   "w": "to",
-   "s": 14.4,
+   "s": 14.32,
    "e": 14.48
   },
   {
+   "w": "to",
+   "s": 14.56,
+   "e": 14.64
+  },
+  {
    "w": "przed",
-   "s": 14.6,
-   "e": 14.72
+   "s": 14.76,
+   "e": 14.88
   },
   {
    "w": "końcem",
-   "s": 14.8,
-   "e": 15.12
+   "s": 14.96,
+   "e": 15.28
   },
   {
    "w": "czternastego",
-   "s": 15.2,
-   "e": 15.76
+   "s": 15.32,
+   "e": 15.84
   },
   {
    "w": "dnia.",
-   "s": 15.8,
-   "e": 16.48
+   "s": 15.92,
+   "e": 16.56
   }
  ],
- "speechEnd": 16.09
+ "speechEnd": 16.21
 }

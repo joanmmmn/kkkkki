@@ -1,0 +1,28 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 388,
+ "duration": 19.94,
+ "offset": 0.169,
+ "marks": {
+  "top": 0.35,
+  "chapters": 3.838,
+  "speed": 7.327,
+  "reader": 10.639,
+  "time": 12.882,
+  "license": 15.27,
+  "play": 16.39,
+  "end": 19.94
+ },
+ "events": [
+  {
+   "t": 16.573,
+   "type": "audio_play",
+   "src": "https://wolnelektury.pl/media/book/ogg/pan-tadeusz_001_ksiega-pierwsza-gospodarstwo.ogg",
+   "at": 0.019078
+  }
+ ]
+}

@@ -15,7 +15,7 @@ export const piece: PLPiece = {
     kicker: 'Kody z biblioteki', music: 'pl/kody-biblioteczne/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Darmowe\naudiobooki\nz biblioteki', hi: ['Darmowe'], rec: { clip: '04_legimi_lodz', start: 4.6, url: 'legimi.pl/bmwl' }, promises: [
-        { at: 'Legimi', label: 'Legimi · Empik Go · Audioteka', icon: 'headphones' }, { at: '0', label: 'Miesiąc za 0 zł', icon: 'gift' },
+        { at: 'Legimi', label: 'Legimi · Empik Go · Audioteka', icon: 'headphones' }, { at: '0', label: 'Miesiąc za 0 zł', sub: 'z kartą, jeśli zdobędziesz kod', icon: 'gift' },
         { at: 'haczyk', label: 'Gdzie jest haczyk?', icon: 'search', tone: 'accent' }, { at: 'zdobyc', label: 'Jak zdobyć kod', icon: 'play' },
       ] },
       { id: 'A02', kind: 'steps', bump: 'Jak to działa?', kicker: 'Kod z biblioteki', title: 'Jak to działa?', rec: { clip: '01_empik_biblioteki', start: 10.2, url: 'empik.com/biblioteki' }, steps: [
@@ -25,13 +25,13 @@ export const piece: PLPiece = {
       ] },
       { id: 'A03', kind: 'stat', kicker: 'Cena', title: 'Ile to kosztuje?', at: 'Nic', value: '0 zł', label: 'za kartę biblioteczną i za kod', tags: [
         { at: 'ustawy', label: 'Ustawa o bibliotekach, art. 14', sub: '„ogólnie dostępne i bezpłatne”', icon: 'doc' },
-        { at: 'podpiac', label: 'Empik Go: bez karty płatniczej', icon: 'card' }, { at: 'wygasa', label: 'Po 30 dniach wygasa sam', icon: 'clock' },
+        { at: 'podpiac', label: 'Empik Go: bez karty płatniczej', sub: 'przy aktywacji kodu', icon: 'card' }, { at: 'wygasa', label: 'Po 30 dniach wygasa sam', sub: 'Empik Go, FAQ dla bibliotek', icon: 'clock' },
       ] },
       { id: 'A04', kind: 'rec', bump: 'Trzy serwisy', kicker: 'Serwis 1 z 3', title: 'Legimi', rec: { clip: '07_wroclaw_legimi', start: 2.6, url: 'biblioteka.wroc.pl' },
         cuts: [{ at: 'Kod', rec: { clip: '04_legimi_lodz', start: 0.3, url: 'legimi.pl/bmwl' } }],
         tags: [
           { at: 'osiemdziesieciu', label: 'ok. 80 000 audiobooków', icon: 'headphones' }, { at: 'dwustu', label: 'ok. 243 000 e-booków', sub: 'dane MBP we Wrocławiu', icon: 'book' },
-          { at: 'lodzkiej', label: 'legimi.pl/bmwl', sub: 'strona dla Łodzi', icon: 'link' }, { at: 'dwoch', label: '2 urządzenia', icon: 'phone' },
+          { at: 'lodzkiej', label: 'legimi.pl/bmwl', sub: 'strona dla Łodzi', icon: 'link' }, { at: 'dwoch', label: '2 urządzenia', sub: 'według bibliotek', icon: 'phone' },
         ] },
       { id: 'A05', kind: 'rec', kicker: 'Serwis 2 z 3', title: 'Empik Go', rec: { clip: '02_empik_kod', start: 0.3, url: 'empik.com/go/biblioteki/kod' },
         cuts: [{ at: 'Dziala', rec: { clip: '02_empik_kod', start: 8.0, url: 'empik.com/go/biblioteki/kod' } }, { at: 'jednym', rec: { clip: '02_empik_kod', start: 4.5, url: 'empik.com/go/biblioteki/kod' } }],
@@ -72,7 +72,7 @@ export const piece: PLPiece = {
         { at: 'offline', label: 'Offline', sub: 'Legimi i Empik Go', icon: 'download', ok: true },
         { at: 'Auto', label: 'Android Auto', sub: 'Empik Go', icon: 'car', ok: true }, { at: 'Kar', label: 'CarPlay', sub: 'Empik Go', icon: 'car', ok: true },
       ] },
-      { id: 'A10', kind: 'features', kicker: 'Oceny · 19.10.2026', title: 'Aplikacje: 4,5–4,8', items: [
+      { id: 'A10', kind: 'features', kicker: 'Oceny · stan na 19.10.2026', title: 'Aplikacje: 4,5–4,8', items: [
         { at: 'Gugl', label: 'Audioteka', sub: 'Google Play 4,8 · App Store 4,7', icon: 'star' },
         { at: 'Storze', label: 'Empik Go', sub: 'Google Play 4,6 · App Store 4,5', icon: 'star' },
         { at: 'wszystkie', label: 'Legimi', sub: 'Google Play 4,5 · App Store 4,5', icon: 'star' },
@@ -97,7 +97,7 @@ export const piece: PLPiece = {
           { at: 'mailem', label: 'Mailem', icon: 'mail' }, { at: 'formularz', label: 'Przez formularz', icon: 'doc' },
         ] },
       { id: 'B03', kind: 'stat', kicker: 'Krok 3', title: 'Bądź pierwszy', at: 'Wroclawiu', value: '2.11.2026', label: 'następne wydawanie kodów w MBP we Wrocławiu', tags: [
-        { at: 'rana', label: 'Najlepiej z samego rana', icon: 'clock' }, { at: 'grudnia', label: 'Potem 1.12.2026', icon: 'calendar' },
+        { at: 'rana', label: 'Najlepiej z samego rana', icon: 'clock' }, { at: 'grudnia', label: 'Potem 1.12.2026', sub: 'stan na 19.10.2026', icon: 'calendar' },
       ] },
       { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Aktywuj kod', rec: { clip: '02_empik_kod', start: 0.3, url: 'empik.com/go/biblioteki/kod' }, steps: [
         { at: 'aktywuj', title: 'W tym samym miesiącu' },

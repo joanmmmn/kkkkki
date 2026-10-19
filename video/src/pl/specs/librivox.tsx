@@ -97,7 +97,7 @@ export const piece: PLPiece = {
           { at: 'kraju', label: 'Poza USA: sprawdź prawo', sub: '„please verify the copyright status…”', icon: 'search' },
           { at: 'siedemdziesiat', label: 'Polska: 70 lat', sub: 'po śmierci autora (art. 36 i 39 pr. aut.)', icon: 'calendar' },
           { at: 'Miln', label: 'A. A. Milne † 1956', icon: 'user' },
-          { at: 'Kubus', label: 'Winnie-the-Pooh', sub: 'USA: od 2022 · Polska: od 1.01.2027', tone: 'bad' },
+          { at: 'Kubus', label: 'Winnie-the-Pooh (oryginał)', sub: 'USA: od 2022 · Polska: od 1.01.2027', tone: 'bad' },
         ] },
       { id: 'A09', kind: 'rec', bump: 'Na telefonie', kicker: 'Aplikacje', title: 'Brak oficjalnej aplikacji', rec: { clip: '01_portada', start: 5.9 },
         cuts: [{ at: 'Link', rec: { clip: '04_lalka', start: 6.5 } }, { at: 'jak', rec: { clip: '10_gp_app', start: 0.3, url: 'play.google.com' } },
@@ -113,14 +113,14 @@ export const piece: PLPiece = {
           { at: 'ajfona', label: 'LibriVox Audiobooks', sub: 'iPhone · nieoficjalna (BookDesign)', icon: 'phone' },
         ] },
       { id: 'A10', kind: 'ratings', bump: 'Opinie', kicker: 'Aplikacje innych firm', title: 'Oceny w sklepach', stores: [
-        { at: 'Androidzie', store: 'google', rating: 4.7, count: '68,2 tys. opinii · 19.10.2026' }, { at: 'Storze', store: 'apple', rating: 4.6, count: '62 oceny (Polska) · 19.10.2026' },
+        { at: 'Androidzie', store: 'google', rating: 4.7, count: '68,2 tys. opinii · stan na 19.10.2026' }, { at: 'Storze', store: 'apple', rating: 4.6, count: '62 oceny (Polska) · stan na 19.10.2026' },
       ], likes: [], dislikes: [], notes: [
         { at: 'wylacznik', label: 'Wyłącznik czasowy, zakładki', sub: 'i pobieranie offline', icon: 'moon' },
         { at: 'reklamy', label: 'Android: z reklamami', tone: 'bad' },
-        { at: 'kosztuje', label: 'Bez reklam: 24,99 zł', sub: 'wersja Supporter · październik 2026', icon: 'coin' },
+        { at: 'kosztuje', label: 'Bez reklam: 24,99 zł', sub: 'wersja Supporter · stan na październik 2026', icon: 'coin' },
       ] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'LibriVox', pros: [
-        { at: 'darmo', label: '0 zł i legalnie' }, { at: 'konta', label: 'Bez konta i reklam' }, { at: 'prawdziwe', label: 'Ludzkie głosy' },
+        { at: 'darmo', label: '0 zł i legalnie', sub: 'w USA; w Polsce: 70 lat po śmierci autora' }, { at: 'konta', label: 'Bez konta i reklam' }, { at: 'prawdziwe', label: 'Ludzkie głosy' },
         { at: 'zawsze', label: 'Pliki na zawsze' }, { at: 'ogromny', label: 'Ponad 19 000 tytułów po angielsku' },
       ], cons: [
         { at: 'dwadziescia', label: 'Tylko 27 książek po polsku' }, { at: 'glownie', label: 'Głównie jeden lektor' }, { at: 'nierowna', label: 'Nierówna jakość' },

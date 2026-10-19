@@ -14,7 +14,7 @@ export const piece: PLPiece = {
         cuts: [{ at: 'ceny', rec: { clip: 'cennik', start: 0.5 } }, { at: 'polski', rec: { clip: 'portada', start: 10.3 } }, { at: 'Powiemy', rec: { clip: 'rozdroze', start: 0.4 } }],
         promises: [
           { at: 'ceny', label: 'Ceny i limity godzin', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'regulamin', label: 'Drobny druk', icon: 'doc' },
-          { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', icon: 'gift' },
+          { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', sub: 'dla nowych użytkowników', icon: 'gift' },
         ] },
       { id: 'A02', kind: 'intro', bump: 'Czym jest BookBeat?', rec: { clip: 'portada', start: 5.0 }, cuts: [{ at: 'pakiet', rec: { clip: 'cennik', start: 4.4 } }], facts: [
         { at: 'szwedzka', label: 'Ze Szwecji, grupa Bonnier', icon: 'globe' }, { at: 'polsku', label: 'Po polsku od 2020 roku', icon: 'calendar' },
@@ -61,7 +61,7 @@ export const piece: PLPiece = {
         tags: [
           { at: 'normalnego', label: 'Liczy się normalne tempo', icon: 'speed' }, { at: 'dziesieciogodzinna', label: 'Książka 10 h = 10 h z pakietu', sub: 'nawet gdy słuchasz na 2×', icon: 'clock' },
           { at: 'Czytanie', label: 'E-booki też zużywają godziny', icon: 'book' }, { at: 'niewykorzystane', label: 'Niewykorzystane przepadają', tone: 'bad' },
-          { at: 'Premium', label: 'Premium: +20 h za 17,99 zł', icon: 'coin' },
+          { at: 'Premium', label: 'Premium: +20 h za 17,99 zł', sub: 'stan na październik 2026', icon: 'coin' },
         ] },
       { id: 'A08B', kind: 'rec', kicker: 'Konto rodzinne', title: 'Profile dla rodziny', rec: { clip: 'rodzina', start: 3.0, url: 'bookbeat.com/pl/familyaccount' },
         marks: [
@@ -78,11 +78,11 @@ export const piece: PLPiece = {
         { at: 'samochodzie', label: 'CarPlay i Android Auto', icon: 'car', ok: true }, { at: 'Kromkastem', label: 'Chromecast', icon: 'cast', ok: true },
         { at: 'komputerze', label: 'Komputer', icon: 'laptop', ok: false }, { at: 'czytniku', label: 'Czytnik', sub: 'e-booków', icon: 'ereader', ok: false },
       ] },
-      { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.8, count: 'ocena w Polsce · 19.10.2026' }, { at: 'Ep', store: 'apple', rating: 4.8, count: '10 056 ocen w Polsce' }],
+      { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.8, count: 'w Polsce · stan na 19.10.2026' }, { at: 'Ep', store: 'apple', rating: 4.8, count: '10 056 ocen w Polsce · stan na 19.10.2026' }],
         likes: [{ at: 'lektorow', label: 'Lektorzy' }, { at: 'wygodna', label: 'Wygodna aplikacja' }],
         dislikes: [{ at: 'limity', label: 'Limity godzin, nawet w Premium' }, { at: 'zawila', label: 'Rezygnacja tylko przez stronę' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', pros: [
-        { at: '30', label: '30 dni za darmo' }, { at: 'audiobooki', label: 'Audiobooki i e-booki w jednej cenie' }, { at: 'profile', label: 'Profile dla rodziny' },
+        { at: '30', label: '30 dni za darmo', sub: 'dla nowych użytkowników' }, { at: 'audiobooki', label: 'Audiobooki i e-booki w jednej cenie' }, { at: 'profile', label: 'Profile dla rodziny' },
       ], cons: [
         { at: 'brak', label: 'Brak planu bez limitu' }, { at: 'skromny', label: 'Skromny polski katalog' }, { at: 'przepadajace', label: 'Godziny przepadają' },
         { at: 'utrata', label: 'Rezygnacja w próbie = koniec dostępu' },
@@ -96,7 +96,7 @@ export const piece: PLPiece = {
         marks: [{ at: '30', until: '20', x: 220, y: 350, w: 515, h: 76 }, { at: '20', x: 198, y: 444, w: 554, h: 120 }],
         zooms: [{ at: 'Nowi', zoom: 1.7, x: 565, y: 450 }],
         steps: [
-          { at: 'Nowi', title: 'Nowe konto', sub: 'okres próbny tylko raz' }, { at: '30', title: '30 dni za darmo' },
+          { at: 'Nowi', title: 'Nowe konto', sub: 'okres próbny tylko raz' }, { at: '30', title: '30 dni za darmo', sub: 'po dodaniu metody płatności' },
           { at: '20', title: '20 godzin w próbie', sub: 'słuchania i czytania' },
         ] },
       { id: 'B02', kind: 'steps', kicker: 'Rejestracja', title: 'Krok po kroku', rec: { clip: 'rejestracja', start: 0.3, url: 'bookbeat.com/pl/registration' },
@@ -117,7 +117,7 @@ export const piece: PLPiece = {
       { id: 'B04', kind: 'steps', bump: 'Jak zrezygnować', kicker: 'Rezygnacja', title: 'Tylko na stronie BookBeat', steps: [
         { at: 'menu', title: 'Menu konta', sub: 'na bookbeat.com/pl' }, { at: 'Zarzadzaj', title: 'Zarządzaj subskrypcją' },
         { at: 'wszystkie', title: 'Przejdź wszystkie kroki' }, { at: 'potwierdzeniem', title: 'Poczekaj na e-mail z potwierdzeniem', sub: 'bez niego subskrypcja może nie być anulowana' },
-      ], note: { at: 'Tylko', label: 'Nie w aplikacji ani w App Store', icon: 'lock' } },
+      ], note: { at: 'Tylko', label: 'Nie w aplikacji ani w App Storze', icon: 'lock' } },
       { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Koniec okresu próbnego', rec: { clip: 'proba', start: 8.0, holdAt: 14.0 },
         marks: [{ at: 'pierwsza', x: 690, y: 740, w: 580, h: 90 }],
         tags: [

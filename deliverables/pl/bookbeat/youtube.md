@@ -38,7 +38,7 @@ W filmie:
 • Katalog: ponad milion książek, ale głównie po angielsku i po niemiecku. Po polsku ponad 18 000 audiobooków i ponad 12 000 e-booków (wyszukiwarka BookBeat, 19.10.2026), m.in. Harry Potter i „Wiedźmin” w superprodukcji z udziałem ponad 70 aktorów.
 • Jak liczą się godziny: według normalnego tempa, czytanie e-booków też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.
 • Aplikacja (tempo 0,5–2×, wyłącznik czasowy, zakładki z notatkami, offline, synchrobooki), profile rodzinne i profil dziecięcy, urządzenia: telefon, tablet, Apple Watch, CarPlay, Android Auto i Chromecast. Na komputerze ani na czytniku e-booków nie posłuchasz.
-• Oceny w Google Play i w App Store w Polsce, plusy i minusy oraz werdykt.
+• Oceny w Google Play i w App Storze w Polsce, plusy i minusy oraz werdykt.
 • Jak wypróbować za darmo (30 dni z 20 godzinami, tylko dla nowych użytkowników; z kartą podarunkową bez okresu próbnego), jak zrezygnować (tylko na stronie BookBeat) i drobny druk: BookBeat nie przypomina o końcu próby, a rezygnacja w trakcie próby od razu kończy dostęp.
 
 📚 Źródła
@@ -57,7 +57,7 @@ W filmie:
 • Pomoc BookBeat – profil dziecięcy: https://support.bookbeat.com/hc/pl/articles/360000850418
 • Wiedźmin. Ostatnie życzenie: https://www.bookbeat.com/pl/book/609952
 • Wiedźmin. Rozdroże kruków: https://www.bookbeat.com/pl/book/2043828
-• BookBeat w Google Play i w polskim App Store (oceny z 19.10.2026)
+• BookBeat w Google Play i w polskim App Storze (oceny z 19.10.2026)
 • BookBeat, komunikat prasowy z 1.12.2025: https://www.mynewsdesk.com/bookbeat/pressreleases/1-punkt-2-million-users-in-10-years-bookbeat-turns-double-digits-3419141
 
 📌 Ceny i warunki: stan na październik 2026. Mogą się zmienić – przed zakupem sprawdź je na bookbeat.com/pl. Okres próbny tylko dla nowych użytkowników. Liczby tytułów po polsku pochodzą z wyszukiwarki BookBeat (19.10.2026) i zmieniają się codziennie.

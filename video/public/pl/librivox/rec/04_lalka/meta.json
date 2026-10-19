@@ -1,0 +1,22 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 387,
+ "duration": 16.734,
+ "offset": 0.051,
+ "marks": {
+  "top": 0.369,
+  "donate": 2.668,
+  "download": 4.515,
+  "rss": 6.792,
+  "scroll": 8.793,
+  "details": 10.442,
+  "readby": 12.586,
+  "m4b": 14.429,
+  "end": 16.733
+ },
+ "events": []
+}
