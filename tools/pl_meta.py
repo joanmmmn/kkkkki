@@ -138,7 +138,9 @@ def glue(ws):
             prev = out[-1]['w'].split('\u00a0')[-1]
             digits_prev = bool(re.match(r'^\d+([.,]\d+)?$', prev))  # 4,7 · 29,90 · 2026 (sin puntuación detrás)
             ordinal = bool(re.match(r'^\d+\.$', prev)) and w['w'][:1].islower()  # «3. dnia» (no «2026. Potem»)
-            join = (len(prev) == 1 and prev.isalpha()) or ordinal \
+            open_q = out[-1]['w'].rfind('„') > out[-1]['w'].rfind('”')  # título entre comillas aún abierto
+            short_title = open_q and len(out[-1]['w'][out[-1]['w'].rfind('„'):]) + 1 + len(w['w']) <= 28
+            join = (len(prev) == 1 and prev.isalpha()) or ordinal or short_title \
                 or (digits_prev and (w['w'][:3].isdigit() and len(w['w'].rstrip('.,;:!?')) == 3)) \
                 or (digits_prev and w['w'][:1].isalpha()) \
                 or (digits_prev and w['w'].lower() in UNITS)
@@ -178,14 +180,22 @@ def srt(slug, scenes, vos, max_chars=42):
             continue
         base = (s['start'] + s['lead']) / FPS
         ws = [{'w': w['w'], 's': base + w['s'], 'e': base + w['e']} for w in ws]
+        # Dentro de un título entre comillas («„Arka. Niebo”») el punto no acaba frase: se marca cada palabra.
+        inq = False
+        for w in ws:
+            w['q'] = inq or ('„' in w['w'] and '”' not in w['w'].split('„')[-1])
+            if '„' in w['w']:
+                inq = '”' not in w['w'].split('„')[-1]
+            if '”' in w['w']:
+                inq = False
         scene_groups, line = [], []
         for k, w in enumerate(ws):
             cand = [x['w'] for x in line] + [w['w']]
-            if line and (not fits2(cand, max_chars) or (len(' '.join(cand)) > max_chars and ends_sentence(line[-1]['w'], ':'))):
+            if line and (not fits2(cand, max_chars) or (len(' '.join(cand)) > max_chars and not line[-1]['q'] and ends_sentence(line[-1]['w'], ':'))):
                 scene_groups.append(line)
                 line = []
             line.append(w)
-            if ends_sentence(w['w']) and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
+            if not w['q'] and ends_sentence(w['w']) and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
                 scene_groups.append(line)
                 line = []
         if line:

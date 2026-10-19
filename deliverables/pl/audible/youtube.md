@@ -1,6 +1,6 @@
 # YouTube · Audible w Polsce (SonorBooks Polska)
 
-Duración: 4:24 · Subtítulos: `audible.pl.srt` · Miniatura: `PLThumb-audible`
+Duración: 4:18 · Subtítulos: `audible.pl.srt` · Miniatura: `PLThumb-audible`
 
 ## Tytuł (75 znaków)
 **Audible: czy warto w 2026? Recenzja, opinie, cena i jak wypróbować za darmo**
@@ -23,13 +23,13 @@ Sprawdziliśmy plany, polski katalog i drobny druk: co jest dobre, co słabe i j
 0:53 Zasady: wybory i kredyty
 1:10 Polski katalog
 1:25 Zakupy pojedyncze
-1:37 Aplikacja i odtwarzacz
+1:36 Aplikacja i odtwarzacz
 1:51 Tłumaczenie i urządzenia
 2:17 Opinie
-2:36 Plusy i minusy
-2:54 Werdykt: czy warto?
-3:08 Jak wypróbować za darmo
-3:43 Jak zrezygnować
+2:32 Plusy i minusy
+2:51 Werdykt: czy warto?
+3:05 Jak wypróbować za darmo
+3:39 Jak zrezygnować
 
 W filmie:
 • Dwa plany: Standard za 28,99 zł miesięcznie (co miesiąc wybierasz 1 audiobook i słuchasz go, dopóki płacisz) i Premium za 41,99 zł miesięcznie (1 kredyt miesięcznie na książkę, która zostaje Twoja na zawsze, plus tysiące tytułów bez limitu). Bez zobowiązań.
