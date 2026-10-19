@@ -1,0 +1,114 @@
+{
+ "id": "B05",
+ "hash": "16723c7ecafa",
+ "text": "Rezygnujesz na empik.com: Twoje konto, Abonamenty, „Anuluj abonament”, albo w aplikacji, w zakładce Konto. Zrób to najpóźniej siódmego dnia.",
+ "duration": 10.24,
+ "words": [
+  {
+   "w": "Rezygnujesz",
+   "s": 0.0,
+   "e": 0.64
+  },
+  {
+   "w": "na",
+   "s": 0.76,
+   "e": 0.88
+  },
+  {
+   "w": "empik",
+   "s": 0.96,
+   "e": 1.36
+  },
+  {
+   "w": "kropka",
+   "s": 1.413,
+   "e": 1.6
+  },
+  {
+   "w": "kom:",
+   "s": 1.76,
+   "e": 2.24
+  },
+  {
+   "w": "Twoje",
+   "s": 2.36,
+   "e": 2.56
+  },
+  {
+   "w": "konto,",
+   "s": 2.64,
+   "e": 3.28
+  },
+  {
+   "w": "Abonamenty,",
+   "s": 3.36,
+   "e": 4.32
+  },
+  {
+   "w": "„Anuluj",
+   "s": 4.373,
+   "e": 4.72
+  },
+  {
+   "w": "abonament”,",
+   "s": 4.8,
+   "e": 5.68
+  },
+  {
+   "w": "albo",
+   "s": 5.76,
+   "e": 5.92
+  },
+  {
+   "w": "w",
+   "s": 5.947,
+   "e": 5.973
+  },
+  {
+   "w": "aplikacji,",
+   "s": 6.0,
+   "e": 6.66
+  },
+  {
+   "w": "w",
+   "s": 6.68,
+   "e": 6.7
+  },
+  {
+   "w": "zakładce",
+   "s": 6.72,
+   "e": 7.2
+  },
+  {
+   "w": "Konto.",
+   "s": 7.28,
+   "e": 7.96
+  },
+  {
+   "w": "Zrób",
+   "s": 8.0,
+   "e": 8.16
+  },
+  {
+   "w": "to",
+   "s": 8.24,
+   "e": 8.32
+  },
+  {
+   "w": "najpóźniej",
+   "s": 8.373,
+   "e": 8.88
+  },
+  {
+   "w": "siódmego",
+   "s": 8.92,
+   "e": 9.36
+  },
+  {
+   "w": "dnia.",
+   "s": 9.44,
+   "e": 10.24
+  }
+ ],
+ "speechEnd": 9.757
+}

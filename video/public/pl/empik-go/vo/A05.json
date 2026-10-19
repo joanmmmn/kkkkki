@@ -1,0 +1,159 @@
+{
+ "id": "A05",
+ "hash": "fafc461513ae",
+ "text": "Empik Go ma ponad 130 własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
+ "duration": 14.08,
+ "words": [
+  {
+   "w": "Empik",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "Go",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "ma",
+   "s": 0.8,
+   "e": 0.88
+  },
+  {
+   "w": "ponad",
+   "s": 0.96,
+   "e": 1.28
+  },
+  {
+   "w": "sto",
+   "s": 1.36,
+   "e": 1.44
+  },
+  {
+   "w": "trzydzieści",
+   "s": 1.52,
+   "e": 2.0
+  },
+  {
+   "w": "własnych",
+   "s": 2.08,
+   "e": 2.48
+  },
+  {
+   "w": "produkcji,",
+   "s": 2.6,
+   "e": 3.0
+  },
+  {
+   "w": "dostępnych",
+   "s": 3.04,
+   "e": 3.6
+  },
+  {
+   "w": "tylko",
+   "s": 3.68,
+   "e": 3.92
+  },
+  {
+   "w": "tutaj.",
+   "s": 3.96,
+   "e": 4.8
+  },
+  {
+   "w": "Na",
+   "s": 4.84,
+   "e": 4.88
+  },
+  {
+   "w": "przykład",
+   "s": 4.92,
+   "e": 5.36
+  },
+  {
+   "w": "„Przygody",
+   "s": 5.4,
+   "e": 5.84
+  },
+  {
+   "w": "Baltazara",
+   "s": 5.88,
+   "e": 6.32
+  },
+  {
+   "w": "Gąbki”",
+   "s": 6.4,
+   "e": 6.84
+  },
+  {
+   "w": "z",
+   "s": 6.88,
+   "e": 6.907
+  },
+  {
+   "w": "Makłowiczem,",
+   "s": 6.933,
+   "e": 7.64
+  },
+  {
+   "w": "Wojewódzkim",
+   "s": 7.68,
+   "e": 8.32
+  },
+  {
+   "w": "i",
+   "s": 8.36,
+   "e": 8.4
+  },
+  {
+   "w": "Ralfem",
+   "s": 8.48,
+   "e": 8.72
+  },
+  {
+   "w": "Kaminskim,",
+   "s": 8.8,
+   "e": 9.787
+  },
+  {
+   "w": "„Chołod”",
+   "s": 9.813,
+   "e": 10.28
+  },
+  {
+   "w": "Szczepana",
+   "s": 10.32,
+   "e": 10.64
+  },
+  {
+   "w": "Twardocha",
+   "s": 10.72,
+   "e": 11.28
+  },
+  {
+   "w": "czy",
+   "s": 11.44,
+   "e": 11.6
+  },
+  {
+   "w": "„Królestwo",
+   "s": 11.627,
+   "e": 12.16
+  },
+  {
+   "w": "Pik”",
+   "s": 12.2,
+   "e": 12.52
+  },
+  {
+   "w": "Weroniki",
+   "s": 12.56,
+   "e": 12.96
+  },
+  {
+   "w": "Ancerowicz.",
+   "s": 13.04,
+   "e": 14.08
+  }
+ ],
+ "speechEnd": 13.671
+}

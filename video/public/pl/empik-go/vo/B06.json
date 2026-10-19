@@ -1,0 +1,129 @@
+{
+ "id": "B06",
+ "hash": "7ab1a0fe651b",
+ "text": "Na sonorbooks.pl porównasz ceny i okresy próbne Empik Go, Audioteki, Legimi i innych platform. Twoja następna historia już na ciebie czeka.",
+ "duration": 9.76,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "sonorbooks",
+   "s": 0.24,
+   "e": 0.8
+  },
+  {
+   "w": "kropka",
+   "s": 0.88,
+   "e": 1.12
+  },
+  {
+   "w": "pe",
+   "s": 1.2,
+   "e": 1.36
+  },
+  {
+   "w": "el",
+   "s": 1.44,
+   "e": 1.6
+  },
+  {
+   "w": "porównasz",
+   "s": 1.68,
+   "e": 2.16
+  },
+  {
+   "w": "ceny",
+   "s": 2.2,
+   "e": 2.48
+  },
+  {
+   "w": "i",
+   "s": 2.52,
+   "e": 2.56
+  },
+  {
+   "w": "okresy",
+   "s": 2.64,
+   "e": 2.96
+  },
+  {
+   "w": "próbne",
+   "s": 3.04,
+   "e": 3.36
+  },
+  {
+   "w": "Empik",
+   "s": 3.44,
+   "e": 3.84
+  },
+  {
+   "w": "Go,",
+   "s": 3.96,
+   "e": 4.24
+  },
+  {
+   "w": "Audioteki,",
+   "s": 4.32,
+   "e": 5.04
+  },
+  {
+   "w": "Legimi",
+   "s": 5.16,
+   "e": 5.6
+  },
+  {
+   "w": "i",
+   "s": 5.68,
+   "e": 5.76
+  },
+  {
+   "w": "innych",
+   "s": 5.84,
+   "e": 6.08
+  },
+  {
+   "w": "platform.",
+   "s": 6.16,
+   "e": 7.093
+  },
+  {
+   "w": "Twoja",
+   "s": 7.147,
+   "e": 7.28
+  },
+  {
+   "w": "następna",
+   "s": 7.32,
+   "e": 7.76
+  },
+  {
+   "w": "historia",
+   "s": 7.96,
+   "e": 8.4
+  },
+  {
+   "w": "już",
+   "s": 8.48,
+   "e": 8.667
+  },
+  {
+   "w": "na",
+   "s": 8.693,
+   "e": 8.72
+  },
+  {
+   "w": "ciebie",
+   "s": 8.8,
+   "e": 8.96
+  },
+  {
+   "w": "czeka.",
+   "s": 9.04,
+   "e": 9.76
+  }
+ ],
+ "speechEnd": 9.486
+}

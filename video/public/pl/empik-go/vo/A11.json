@@ -1,0 +1,189 @@
+{
+ "id": "A11",
+ "hash": "879b899f6252",
+ "text": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, ponad 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
+ "duration": 17.92,
+ "words": [
+  {
+   "w": "Plusy:",
+   "s": 0.0,
+   "e": 0.88
+  },
+  {
+   "w": "audiobuki,",
+   "s": 0.96,
+   "e": 1.84
+  },
+  {
+   "w": "ibuki",
+   "s": 1.92,
+   "e": 2.4
+  },
+  {
+   "w": "i",
+   "s": 2.48,
+   "e": 2.52
+  },
+  {
+   "w": "podkasty",
+   "s": 2.56,
+   "e": 3.12
+  },
+  {
+   "w": "w",
+   "s": 3.2,
+   "e": 3.24
+  },
+  {
+   "w": "jednym",
+   "s": 3.28,
+   "e": 3.6
+  },
+  {
+   "w": "abonamencie,",
+   "s": 3.64,
+   "e": 4.64
+  },
+  {
+   "w": "ponad",
+   "s": 4.72,
+   "e": 5.04
+  },
+  {
+   "w": "sto",
+   "s": 5.12,
+   "e": 5.28
+  },
+  {
+   "w": "trzydzieści",
+   "s": 5.36,
+   "e": 5.76
+  },
+  {
+   "w": "własnych",
+   "s": 5.84,
+   "e": 6.24
+  },
+  {
+   "w": "produkcji,",
+   "s": 6.36,
+   "e": 7.08
+  },
+  {
+   "w": "tryb",
+   "s": 7.12,
+   "e": 7.28
+  },
+  {
+   "w": "dziecięcy",
+   "s": 7.333,
+   "e": 7.92
+  },
+  {
+   "w": "i",
+   "s": 7.96,
+   "e": 8.0
+  },
+  {
+   "w": "czytniki,",
+   "s": 8.08,
+   "e": 8.76
+  },
+  {
+   "w": "z",
+   "s": 8.8,
+   "e": 8.84
+  },
+  {
+   "w": "Kindlem",
+   "s": 8.88,
+   "e": 9.2
+  },
+  {
+   "w": "włącznie.",
+   "s": 9.24,
+   "e": 10.2
+  },
+  {
+   "w": "Minusy:",
+   "s": 10.24,
+   "e": 11.16
+  },
+  {
+   "w": "Go",
+   "s": 11.2,
+   "e": 11.28
+  },
+  {
+   "w": "Smart",
+   "s": 11.44,
+   "e": 11.76
+  },
+  {
+   "w": "działa",
+   "s": 11.8,
+   "e": 12.0
+  },
+  {
+   "w": "na",
+   "s": 12.08,
+   "e": 12.16
+  },
+  {
+   "w": "jednym",
+   "s": 12.24,
+   "e": 12.56
+  },
+  {
+   "w": "urządzeniu,",
+   "s": 12.6,
+   "e": 13.4
+  },
+  {
+   "w": "audiobuków",
+   "s": 13.44,
+   "e": 14.0
+  },
+  {
+   "w": "nie",
+   "s": 14.08,
+   "e": 14.16
+  },
+  {
+   "w": "posłuchasz",
+   "s": 14.28,
+   "e": 14.64
+  },
+  {
+   "w": "na",
+   "s": 14.68,
+   "e": 14.72
+  },
+  {
+   "w": "komputerze,",
+   "s": 14.8,
+   "e": 15.653
+  },
+  {
+   "w": "a",
+   "s": 15.707,
+   "e": 15.76
+  },
+  {
+   "w": "aplikacja",
+   "s": 15.84,
+   "e": 16.4
+  },
+  {
+   "w": "bywa",
+   "s": 16.48,
+   "e": 16.64
+  },
+  {
+   "w": "niestabilna.",
+   "s": 16.72,
+   "e": 17.92
+  }
+ ],
+ "speechEnd": 17.422
+}

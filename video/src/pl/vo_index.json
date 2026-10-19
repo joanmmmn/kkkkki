@@ -61,6 +61,26 @@
   "B04": "Rezygnujesz tam, gdzie kupiłeś: na stronie – awatar, Szczegóły konta, Zarządzaj płatnościami; w telefonie – w subskrypcjach App Store albo Google Play. Samo odinstalowanie aplikacji nie wystarczy. Dostęp masz do końca opłaconego okresu.",
   "B06": "Wolisz audiobooki z lektorem? W sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka."
  },
+ "empik-go": {
+  "A01": "Czy warto płacić za Empik Go? To audiobooki, ebooki i podcasty w jednej aplikacji. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Empik Go 7 dni za darmo.",
+  "A02": "Empik Go to usługa Empiku. Aplikacja wystartowała w 2017 roku, abonament – w 2018. Dziś masz w nim ponad 240 000 audiobooków, ebooków i podcastów, a nowości dochodzą co tydzień.",
+  "A03": "Są trzy plany, rozliczane co 30 dni. Go Smart: 39,99 zł, bez limitu tytułów, na jednym urządzeniu. Go Max: 49,99 zł za 2 urządzenia, a za 4 – 69,99 zł. Go Standard: 24,99 zł za 3 tytuły, na 2 urządzeniach. W każdym działa też czytnik Kindle.",
+  "A04": "Na empik.com/go bez logowania zobaczysz, co jest w abonamencie: nowości, bestsellery, słuchowiska dla dzieci i własne produkcje Empik Go.",
+  "A05": "Empik Go ma ponad 130 własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
+  "A06": "Od połowy września w Go Max i Go Smart działa Switch: przełączasz się między ebookiem a audiobookiem tej samej książki bez utraty miejsca, w wybranych tytułach. Odtwarzacz ma regulację prędkości, rozdziały, drzemkę i pobieranie offline, a syntezator mowy przeczyta ci ebooka.",
+  "A07": "W Go Standard limit zużywasz, dodając tytuł do biblioteki. Podcasty i ASMR są bez limitu, a cały serial audio liczy się jak jeden tytuł. Niewykorzystany limit przechodzi dalej, do 180 dni, a wybór cofniesz, jeśli nie przekroczysz 10 procent i nic nie pobierzesz.",
+  "A08": "Tryb dziecięcy pokazuje tylko treści dla dzieci, blokuje zakupy i ustawienia, a wyjście z niego chronisz PIN-em. Pamiętaj: tytuły z biblioteki masz, dopóki płacisz abonament.",
+  "A09": "Audiobooków słuchasz w aplikacji na Androida i iOS, nie w przeglądarce. W aucie działa Android Auto i CarPlay, a dźwięk wyślesz na Chromecast. Ebooki przeczytasz też na czytnikach GoBook, inkBOOK, PocketBook i Bemi, a na Kindle'u – do 10 nowych ebooków w okresie rozliczeniowym.",
+  "A10": "Oceny: 4,6 w Google Play przy prawie 54 tysiącach ocen i 4,5 w polskim App Store przy prawie 10 tysiącach. Użytkownicy chwalą duży wybór i łatwą obsługę. Krytykują zawieszanie się aplikacji i braki w katalogu.",
+  "A11": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, ponad 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
+  "A12": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z Audioteka Klub za 29,90 zł.",
+  "B01": "Chcesz wypróbować? Empik Go daje 7 dni za darmo, tylko przy płatności kartą i tylko raz.",
+  "B02": "Wejdź na empik.com/go, w abonamentach 30-dniowych wybierz plan i kliknij „Wypróbuj za darmo przez 7 dni”. Zaloguj się albo załóż konto Empik i podepnij kartę. Uwaga: w aplikacji okres i cena mogą być inne.",
+  "B03": "W Go Max i Go Smart przez 7 dni korzystasz bez limitu, w Go Standard – z jednym tytułem. Pobierz aplikację Empik Go i zaloguj się.",
+  "B04": "Jeśli nie zrezygnujesz, ósmego dnia zaczyna się płatny okres – w Go Smart to 39,99 zł za 30 dni.",
+  "B05": "Rezygnujesz na empik.com: Twoje konto, Abonamenty, „Anuluj abonament”, albo w aplikacji, w zakładce Konto. Zrób to najpóźniej siódmego dnia.",
+  "B06": "Na sonorbooks.pl porównasz ceny i okresy próbne Empik Go, Audioteki, Legimi i innych platform. Twoja następna historia już na ciebie czeka."
+ },
  "kobo": {
   "A01": "Czy warto płacić za Kobo Plus, jeśli chcesz słuchać audiobooków? Sprawdziliśmy ceny, polski katalog i drobny druk. Powiemy ci, co jest dobre, co słabe i jak wypróbować abonament 14 dni za darmo.",
   "A02": "Kobo to kanadyjska marka czytników i księgarnia z e-bookami i audiobookami, od lat należąca do japońskiego Rakutena. Abonament Kobo Plus działa w Polsce od końca maja 2026 roku: e-booki i audiobooki w aplikacji, a także na czytnikach Kobo.",

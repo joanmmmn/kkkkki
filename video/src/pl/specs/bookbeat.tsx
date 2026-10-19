@@ -44,7 +44,7 @@ export const piece: PLPiece = {
           { at: ['cztery', 0], until: ['cztery', 1], x: 740, y: 644, w: 120, h: 70 }, { at: ['cztery', 1], until: 'Fragment', x: 1050, y: 644, w: 120, h: 70 },
           { at: 'Fragment', x: 862, y: 134, w: 186, h: 38 },
         ],
-        zooms: [{ at: 'oceny', zoom: 1.6, x: 955, y: 620 }, { at: 'Fragment', zoom: 1.6, x: 955, y: 420 }],
+        zooms: [{ at: 'oceny', zoom: 1.6, x: 955, y: 650 }, { at: 'Fragment', zoom: 1.6, x: 955, y: 420 }],
         tags: [
           { at: 'oceny', label: 'Dwie oceny', sub: 'za treść i za lektora', icon: 'star' }, { at: 'trwa', label: '9 godz. 35 min', icon: 'clock' },
           { at: ['cztery', 0], label: '4,8 za książkę', icon: 'star' }, { at: ['cztery', 1], label: '4,9 za lektora', icon: 'mic' },

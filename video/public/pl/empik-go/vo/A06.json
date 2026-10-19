@@ -1,0 +1,214 @@
+{
+ "id": "A06",
+ "hash": "d8404b2b9daa",
+ "text": "Od połowy września w Go Max i Go Smart działa Switch: przełączasz się między ebookiem a audiobookiem tej samej książki bez utraty miejsca, w wybranych tytułach. Odtwarzacz ma regulację prędkości, rozdziały, drzemkę i pobieranie offline, a syntezator mowy przeczyta ci ebooka.",
+ "duration": 17.12,
+ "words": [
+  {
+   "w": "Od",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "połowy",
+   "s": 0.2,
+   "e": 0.48
+  },
+  {
+   "w": "września",
+   "s": 0.52,
+   "e": 0.96
+  },
+  {
+   "w": "w",
+   "s": 1.04,
+   "e": 1.12
+  },
+  {
+   "w": "Go",
+   "s": 1.2,
+   "e": 1.36
+  },
+  {
+   "w": "Max",
+   "s": 1.4,
+   "e": 1.76
+  },
+  {
+   "w": "i",
+   "s": 1.84,
+   "e": 1.92
+  },
+  {
+   "w": "Go",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "Smart",
+   "s": 2.24,
+   "e": 2.56
+  },
+  {
+   "w": "działa",
+   "s": 2.64,
+   "e": 2.96
+  },
+  {
+   "w": "Switch:",
+   "s": 3.04,
+   "e": 3.76
+  },
+  {
+   "w": "przełączasz",
+   "s": 3.813,
+   "e": 4.24
+  },
+  {
+   "w": "się",
+   "s": 4.28,
+   "e": 4.36
+  },
+  {
+   "w": "między",
+   "s": 4.4,
+   "e": 4.72
+  },
+  {
+   "w": "ebookiem",
+   "s": 4.8,
+   "e": 5.28
+  },
+  {
+   "w": "a",
+   "s": 5.36,
+   "e": 5.44
+  },
+  {
+   "w": "audiobookiem",
+   "s": 5.52,
+   "e": 6.16
+  },
+  {
+   "w": "tej",
+   "s": 6.24,
+   "e": 6.36
+  },
+  {
+   "w": "samej",
+   "s": 6.4,
+   "e": 6.6
+  },
+  {
+   "w": "książki",
+   "s": 6.64,
+   "e": 7.2
+  },
+  {
+   "w": "bez",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "utraty",
+   "s": 7.44,
+   "e": 7.76
+  },
+  {
+   "w": "miejsca,",
+   "s": 7.84,
+   "e": 8.347
+  },
+  {
+   "w": "w",
+   "s": 8.373,
+   "e": 8.4
+  },
+  {
+   "w": "wybranych",
+   "s": 8.48,
+   "e": 8.8
+  },
+  {
+   "w": "tytułach.",
+   "s": 8.88,
+   "e": 9.867
+  },
+  {
+   "w": "Odtwarzacz",
+   "s": 9.893,
+   "e": 10.4
+  },
+  {
+   "w": "ma",
+   "s": 10.48,
+   "e": 10.56
+  },
+  {
+   "w": "regulację",
+   "s": 10.64,
+   "e": 11.04
+  },
+  {
+   "w": "prędkości,",
+   "s": 11.08,
+   "e": 11.8
+  },
+  {
+   "w": "rozdziały,",
+   "s": 11.84,
+   "e": 12.52
+  },
+  {
+   "w": "drzemkę",
+   "s": 12.56,
+   "e": 13.12
+  },
+  {
+   "w": "i",
+   "s": 13.2,
+   "e": 13.28
+  },
+  {
+   "w": "pobieranie",
+   "s": 13.32,
+   "e": 13.76
+  },
+  {
+   "w": "offline,",
+   "s": 13.84,
+   "e": 14.613
+  },
+  {
+   "w": "a",
+   "s": 14.667,
+   "e": 14.72
+  },
+  {
+   "w": "syntezator",
+   "s": 14.8,
+   "e": 15.36
+  },
+  {
+   "w": "mowy",
+   "s": 15.4,
+   "e": 15.68
+  },
+  {
+   "w": "przeczyta",
+   "s": 15.72,
+   "e": 16.08
+  },
+  {
+   "w": "ci",
+   "s": 16.16,
+   "e": 16.24
+  },
+  {
+   "w": "ebooka.",
+   "s": 16.32,
+   "e": 17.12
+  }
+ ],
+ "speechEnd": 16.74
+}

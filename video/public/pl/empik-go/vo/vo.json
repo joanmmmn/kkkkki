@@ -1,0 +1,105 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Czy warto płacić za Empik Go? To audiobooki, ebooki i podcasty w jednej aplikacji. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Empik Go 7 dni za darmo.",
+   "say": "Czy warto płacić za Empik Go? To audiobuki, ibuki i podkasty w jednej aplikacji. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Empik Go siedem dni za darmo."
+  },
+  {
+   "id": "A02",
+   "text": "Empik Go to usługa Empiku. Aplikacja wystartowała w 2017 roku, abonament – w 2018. Dziś masz w nim ponad 240 000 audiobooków, ebooków i podcastów, a nowości dochodzą co tydzień.",
+   "say": "Empik Go to usługa Empiku. Aplikacja wystartowała w dwa tysiące siedemnastym roku, abonament – w dwa tysiące osiemnastym. Dziś masz w nim ponad dwieście czterdzieści tysięcy audiobuków, ibuków i podkastów, a nowości dochodzą co tydzień."
+  },
+  {
+   "id": "A03",
+   "text": "Są trzy plany, rozliczane co 30 dni. Go Smart: 39,99 zł, bez limitu tytułów, na jednym urządzeniu. Go Max: 49,99 zł za 2 urządzenia, a za 4 – 69,99 zł. Go Standard: 24,99 zł za 3 tytuły, na 2 urządzeniach. W każdym działa też czytnik Kindle.",
+   "say": "Są trzy plany, rozliczane co trzydzieści dni. Go Smart: trzydzieści dziewięć złotych dziewięćdziesiąt dziewięć groszy, bez limitu tytułów, na jednym urządzeniu. Go Maks: czterdzieści dziewięć złotych dziewięćdziesiąt dziewięć groszy za dwa urządzenia, a za cztery – sześćdziesiąt dziewięć złotych dziewięćdziesiąt dziewięć groszy. Go Standard: dwadzieścia cztery złote dziewięćdziesiąt dziewięć groszy za trzy tytuły, na dwóch urządzeniach. W każdym działa też czytnik Kindl."
+  },
+  {
+   "id": "A04",
+   "text": "Na empik.com/go bez logowania zobaczysz, co jest w abonamencie: nowości, bestsellery, słuchowiska dla dzieci i własne produkcje Empik Go.",
+   "say": "Na empik kropka kom ukośnik go bez logowania zobaczysz, co jest w abonamencie: nowości, bestsellery, słuchowiska dla dzieci i własne produkcje Empik Go."
+  },
+  {
+   "id": "A05",
+   "text": "Empik Go ma ponad 130 własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
+   "say": "Empik Go ma ponad sto trzydzieści własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralfem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz."
+  },
+  {
+   "id": "A06",
+   "text": "Od połowy września w Go Max i Go Smart działa Switch: przełączasz się między ebookiem a audiobookiem tej samej książki bez utraty miejsca, w wybranych tytułach. Odtwarzacz ma regulację prędkości, rozdziały, drzemkę i pobieranie offline, a syntezator mowy przeczyta ci ebooka.",
+   "say": "Od połowy września w Go Maks i Go Smart działa Słicz: przełączasz się między ibukiem a audiobukiem tej samej książki bez utraty miejsca, w wybranych tytułach. Odtwarzacz ma regulację prędkości, rozdziały, drzemkę i pobieranie offline, a syntezator mowy przeczyta ci ibuka."
+  },
+  {
+   "id": "A07",
+   "text": "W Go Standard limit zużywasz, dodając tytuł do biblioteki. Podcasty i ASMR są bez limitu, a cały serial audio liczy się jak jeden tytuł. Niewykorzystany limit przechodzi dalej, do 180 dni, a wybór cofniesz, jeśli nie przekroczysz 10 procent i nic nie pobierzesz.",
+   "say": "W Go Standard limit zużywasz, dodając tytuł do biblioteki. Podkasty i a es em er są bez limitu, a cały serial audio liczy się jak jeden tytuł. Niewykorzystany limit przechodzi dalej, do stu osiemdziesięciu dni, a wybór cofniesz, jeśli nie przekroczysz dziesięciu procent i nic nie pobierzesz."
+  },
+  {
+   "id": "A08",
+   "text": "Tryb dziecięcy pokazuje tylko treści dla dzieci, blokuje zakupy i ustawienia, a wyjście z niego chronisz PIN-em. Pamiętaj: tytuły z biblioteki masz, dopóki płacisz abonament.",
+   "say": "Tryb dziecięcy pokazuje tylko treści dla dzieci, blokuje zakupy i ustawienia, a wyjście z niego chronisz pinem. Pamiętaj: tytuły z biblioteki masz, dopóki płacisz abonament."
+  },
+  {
+   "id": "A09",
+   "text": "Audiobooków słuchasz w aplikacji na Androida i iOS, nie w przeglądarce. W aucie działa Android Auto i CarPlay, a dźwięk wyślesz na Chromecast. Ebooki przeczytasz też na czytnikach GoBook, inkBOOK, PocketBook i Bemi, a na Kindle'u – do 10 nowych ebooków w okresie rozliczeniowym.",
+   "say": "Audiobuków słuchasz w aplikacji na Androida i aj o es, nie w przeglądarce. W aucie działa Android Auto i Kar Plej, a dźwięk wyślesz na Kromkast. Ibuki przeczytasz też na czytnikach Go Buk, Ink Buk, Poket Buk i Bemi, a na Kindlu – do dziesięciu nowych ibuków w okresie rozliczeniowym."
+  },
+  {
+   "id": "A10",
+   "text": "Oceny: 4,6 w Google Play przy prawie 54 tysiącach ocen i 4,5 w polskim App Store przy prawie 10 tysiącach. Użytkownicy chwalą duży wybór i łatwą obsługę. Krytykują zawieszanie się aplikacji i braki w katalogu.",
+   "say": "Oceny: cztery przecinek sześć w Gugl Plej przy prawie pięćdziesięciu czterech tysiącach ocen i cztery i pół w polskim Ep Stor przy prawie dziesięciu tysiącach. Użytkownicy chwalą duży wybór i łatwą obsługę. Krytykują zawieszanie się aplikacji i braki w katalogu."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, ponad 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
+   "say": "Plusy: audiobuki, ibuki i podkasty w jednym abonamencie, ponad sto trzydzieści własnych produkcji, tryb dziecięcy i czytniki, z Kindlem włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobuków nie posłuchasz na komputerze, a aplikacja bywa niestabilna."
+  },
+  {
+   "id": "A12",
+   "text": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z Audioteka Klub za 29,90 zł.",
+   "say": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do trzech książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobuków bez limitu, porównaj z Audioteka Klub za dwadzieścia dziewięć złotych dziewięćdziesiąt groszy."
+  },
+  {
+   "id": "B01",
+   "text": "Chcesz wypróbować? Empik Go daje 7 dni za darmo, tylko przy płatności kartą i tylko raz.",
+   "say": "Chcesz wypróbować? Empik Go daje siedem dni za darmo, tylko przy płatności kartą i tylko raz."
+  },
+  {
+   "id": "B02",
+   "text": "Wejdź na empik.com/go, w abonamentach 30-dniowych wybierz plan i kliknij „Wypróbuj za darmo przez 7 dni”. Zaloguj się albo załóż konto Empik i podepnij kartę. Uwaga: w aplikacji okres i cena mogą być inne.",
+   "say": "Wejdź na empik kropka kom ukośnik go, w abonamentach trzydziestodniowych wybierz plan i kliknij „Wypróbuj za darmo przez siedem dni”. Zaloguj się albo załóż konto Empik i podepnij kartę. Uwaga: w aplikacji okres i cena mogą być inne."
+  },
+  {
+   "id": "B03",
+   "text": "W Go Max i Go Smart przez 7 dni korzystasz bez limitu, w Go Standard – z jednym tytułem. Pobierz aplikację Empik Go i zaloguj się.",
+   "say": "W Go Maks i Go Smart przez siedem dni korzystasz bez limitu, w Go Standard – z jednym tytułem. Pobierz aplikację Empik Go i zaloguj się."
+  },
+  {
+   "id": "B04",
+   "text": "Jeśli nie zrezygnujesz, ósmego dnia zaczyna się płatny okres – w Go Smart to 39,99 zł za 30 dni.",
+   "say": "Jeśli nie zrezygnujesz, ósmego dnia zaczyna się płatny okres – w Go Smart to trzydzieści dziewięć złotych dziewięćdziesiąt dziewięć groszy za trzydzieści dni."
+  },
+  {
+   "id": "B05",
+   "text": "Rezygnujesz na empik.com: Twoje konto, Abonamenty, „Anuluj abonament”, albo w aplikacji, w zakładce Konto. Zrób to najpóźniej siódmego dnia.",
+   "say": "Rezygnujesz na empik kropka kom: Twoje konto, Abonamenty, „Anuluj abonament”, albo w aplikacji, w zakładce Konto. Zrób to najpóźniej siódmego dnia."
+  },
+  {
+   "id": "B06",
+   "text": "Na sonorbooks.pl porównasz ceny i okresy próbne Empik Go, Audioteki, Legimi i innych platform. Twoja następna historia już na ciebie czeka.",
+   "say": "Na sonorbooks kropka pe el porównasz ceny i okresy próbne Empik Go, Audioteki, Legimi i innych platform. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

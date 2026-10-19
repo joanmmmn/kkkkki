@@ -25,8 +25,9 @@ export const piece: PLPiece = {
         { at: 'Wyszukaj', label: 'Zakładka „Wyszukaj”', icon: 'search' }, { at: 'Dostepny', label: '„Dostępny w Premium”', sub: 'tytuły z abonamentu', icon: 'check' },
         { at: 'trwania', label: 'Czas trwania i ocena', icon: 'clock' }, { at: 'fragment', label: 'Darmowy fragment', sub: 'każdego audiobooka', icon: 'play' },
       ] },
-      { id: 'A07', kind: 'rec', kicker: 'Poza abonamentem', title: 'Zakup osobno', rec: { clip: 'pomoc_odblokuj', start: 0.6, url: 'support.spotify.com/pl' },
-        marks: [{ at: 'zjada', x: 532, y: 232, w: 472, h: 82 }],
+      { id: 'A07', kind: 'rec', kicker: 'Poza abonamentem', title: 'Zakup osobno', rec: { clip: 'pomoc_odblokuj', start: 3.2, url: 'support.spotify.com/pl' },
+        marks: [{ at: 'osobno', until: 'przegladarce', x: 524, y: 284, w: 496, h: 72 }, { at: 'przegladarce', until: 'polskich', x: 524, y: 642, w: 496, h: 166 }],
+        zooms: [{ at: 'przegladarce', zoom: 1.4, x: 770, y: 640 }, { at: 'polskich', zoom: 1, x: 960, y: 540 }],
         tags: [{ at: 'osobno', label: 'Kupisz pojedynczy tytuł', icon: 'coin' }, { at: 'przegladarce', label: 'Tylko w przeglądarce', icon: 'globe' }, { at: 'zjada', label: 'Nie zużywa godzin', tone: 'good' }, { at: 'Harda', label: '„Harda” · E. Cherezińska', icon: 'book' }, { at: 'Prawde', label: '„Prawda zapisana w popiołach” · J. Jax', icon: 'book' }] },
       { id: 'A08', kind: 'features', kicker: 'Odtwarzacz', title: 'Co potrafi?', cols: 3, items: [
         { at: 'predkosc', label: 'Prędkość', icon: 'speed' }, { at: 'pietnascie', label: '15 sekund', sub: 'w przód i w tył', icon: 'sync' },

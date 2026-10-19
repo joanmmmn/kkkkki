@@ -27,7 +27,7 @@ export const piece: PLPiece = {
       { id: 'A04', kind: 'rec', bump: 'Co potrafi?', kicker: 'Import', title: 'Twoje teksty → audio', rec: { clip: 'pomoc_dodaj', start: 4.4, url: 'elevenlabs.io/docs/pl' },
         cuts: [{ at: 'Ultra', rec: { clip: 'pricing_ultra', start: 1.6 } }],
         marks: [{ at: 'pe', until: 'linki', x: 570, y: 550, w: 130, h: 176 }, { at: 'linki', until: 'Ultra', x: 570, y: 404, w: 720, h: 80 }, { at: 'pomija', x: 1018, y: 650, w: 440, h: 66 }, { at: 'dwadziescia', x: 1018, y: 440, w: 440, h: 66 }],
-        tags: [{ at: 'pe', label: 'PDF, EPUB, Word, TXT, HTML', icon: 'doc' }, { at: 'pieciuset', label: 'Do 500 stron', icon: 'book' }, { at: 'linki', label: 'Link do artykułu', icon: 'link' }, { at: 'zdjecia', label: 'Zdjęcie kartki', icon: 'phone' },
+        tags: [{ at: 'pe', label: 'PDF, EPUB, Word', sub: 'a także TXT i HTML', icon: 'doc' }, { at: 'pieciuset', label: 'Do 500 stron', icon: 'book' }, { at: 'linki', label: 'Link do artykułu', icon: 'link' }, { at: 'zdjecia', label: 'Zdjęcie kartki', icon: 'phone' },
           { at: 'pomija', label: 'Bez nagłówków i stopek', sub: 'tylko w Ultra', icon: 'sparkle' }, { at: 'dwadziescia', label: 'Do 24 h audio dziennie', sub: 'tylko w Ultra', icon: 'clock' }] },
       { id: 'A05', kind: 'rec', kicker: 'Głosy', title: 'Ponad 1000 głosów', rec: { clip: 'home_hero', start: 7.35 },
         cuts: [{ at: 'ikonicznych', rec: { clip: 'iconic', start: 5.9 } }, { at: 'cyfrowy', rec: { clip: 'blog', start: 5.0, url: 'elevenlabs.io/pl/blog' } }],

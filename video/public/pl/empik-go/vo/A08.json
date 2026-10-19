@@ -1,0 +1,134 @@
+{
+ "id": "A08",
+ "hash": "19e4e7837ad5",
+ "text": "Tryb dziecięcy pokazuje tylko treści dla dzieci, blokuje zakupy i ustawienia, a wyjście z niego chronisz PIN-em. Pamiętaj: tytuły z biblioteki masz, dopóki płacisz abonament.",
+ "duration": 10.96,
+ "words": [
+  {
+   "w": "Tryb",
+   "s": 0.0,
+   "e": 0.2
+  },
+  {
+   "w": "dziecięcy",
+   "s": 0.24,
+   "e": 0.8
+  },
+  {
+   "w": "pokazuje",
+   "s": 0.88,
+   "e": 1.44
+  },
+  {
+   "w": "tylko",
+   "s": 1.52,
+   "e": 1.76
+  },
+  {
+   "w": "treści",
+   "s": 1.84,
+   "e": 2.08
+  },
+  {
+   "w": "dla",
+   "s": 2.16,
+   "e": 2.24
+  },
+  {
+   "w": "dzieci,",
+   "s": 2.32,
+   "e": 2.84
+  },
+  {
+   "w": "blokuje",
+   "s": 2.88,
+   "e": 3.2
+  },
+  {
+   "w": "zakupy",
+   "s": 3.28,
+   "e": 3.68
+  },
+  {
+   "w": "i",
+   "s": 3.72,
+   "e": 3.76
+  },
+  {
+   "w": "ustawienia,",
+   "s": 3.84,
+   "e": 4.68
+  },
+  {
+   "w": "a",
+   "s": 4.72,
+   "e": 4.8
+  },
+  {
+   "w": "wyjście",
+   "s": 4.88,
+   "e": 5.2
+  },
+  {
+   "w": "z",
+   "s": 5.24,
+   "e": 5.28
+  },
+  {
+   "w": "niego",
+   "s": 5.36,
+   "e": 5.6
+  },
+  {
+   "w": "chronisz",
+   "s": 5.72,
+   "e": 6.0
+  },
+  {
+   "w": "PIN-em.",
+   "s": 6.08,
+   "e": 6.827
+  },
+  {
+   "w": "Pamiętaj:",
+   "s": 6.853,
+   "e": 7.64
+  },
+  {
+   "w": "tytuły",
+   "s": 7.68,
+   "e": 8.0
+  },
+  {
+   "w": "z",
+   "s": 8.04,
+   "e": 8.08
+  },
+  {
+   "w": "biblioteki",
+   "s": 8.16,
+   "e": 8.72
+  },
+  {
+   "w": "masz,",
+   "s": 8.8,
+   "e": 9.147
+  },
+  {
+   "w": "dopóki",
+   "s": 9.173,
+   "e": 9.52
+  },
+  {
+   "w": "płacisz",
+   "s": 9.6,
+   "e": 9.84
+  },
+  {
+   "w": "abonament.",
+   "s": 9.92,
+   "e": 10.96
+  }
+ ],
+ "speechEnd": 10.558
+}

@@ -1,0 +1,22 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 494,
+ "duration": 28.62,
+ "offset": 0.086,
+ "marks": {
+  "cards": 0.328,
+  "family": 6.614,
+  "family3": 10.5,
+  "kids": 11.652,
+  "plany_end": 14.652,
+  "card": 15.103,
+  "fine": 17.812,
+  "consents": 22.096,
+  "end": 28.62
+ },
+ "events": []
+}

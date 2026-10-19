@@ -1,0 +1,124 @@
+{
+ "id": "A04",
+ "hash": "8f76cc110ce1",
+ "text": "Na empik.com/go bez logowania zobaczysz, co jest w abonamencie: nowości, bestsellery, słuchowiska dla dzieci i własne produkcje Empik Go.",
+ "duration": 10.08,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "empik",
+   "s": 0.24,
+   "e": 0.64
+  },
+  {
+   "w": "kropka",
+   "s": 0.72,
+   "e": 0.96
+  },
+  {
+   "w": "kom",
+   "s": 1.12,
+   "e": 1.36
+  },
+  {
+   "w": "ukośnik",
+   "s": 1.44,
+   "e": 1.92
+  },
+  {
+   "w": "go",
+   "s": 2.0,
+   "e": 2.4
+  },
+  {
+   "w": "bez",
+   "s": 2.48,
+   "e": 2.64
+  },
+  {
+   "w": "logowania",
+   "s": 2.72,
+   "e": 3.12
+  },
+  {
+   "w": "zobaczysz,",
+   "s": 3.2,
+   "e": 3.733
+  },
+  {
+   "w": "co",
+   "s": 3.787,
+   "e": 3.84
+  },
+  {
+   "w": "jest",
+   "s": 3.92,
+   "e": 4.08
+  },
+  {
+   "w": "w",
+   "s": 4.107,
+   "e": 4.133
+  },
+  {
+   "w": "abonamencie:",
+   "s": 4.16,
+   "e": 5.16
+  },
+  {
+   "w": "nowości,",
+   "s": 5.2,
+   "e": 5.92
+  },
+  {
+   "w": "bestsellery,",
+   "s": 6.0,
+   "e": 6.76
+  },
+  {
+   "w": "słuchowiska",
+   "s": 6.8,
+   "e": 7.28
+  },
+  {
+   "w": "dla",
+   "s": 7.36,
+   "e": 7.44
+  },
+  {
+   "w": "dzieci",
+   "s": 7.52,
+   "e": 7.92
+  },
+  {
+   "w": "i",
+   "s": 8.0,
+   "e": 8.08
+  },
+  {
+   "w": "własne",
+   "s": 8.16,
+   "e": 8.48
+  },
+  {
+   "w": "produkcje",
+   "s": 8.6,
+   "e": 8.96
+  },
+  {
+   "w": "Empik",
+   "s": 9.04,
+   "e": 9.36
+  },
+  {
+   "w": "Go.",
+   "s": 9.68,
+   "e": 10.08
+  }
+ ],
+ "speechEnd": 9.97
+}
