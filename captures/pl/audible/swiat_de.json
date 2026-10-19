@@ -1,0 +1,84 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
+ "steps": [
+  {
+   "go": "https://swiatczytnikow.pl/polski-serwis-audible-wlasnie-ruszyl-dwa-plany-abonamentowe-na-razie-skromna-oferta-i-niemiecka-domena/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(()=>{document.querySelectorAll('#primary,#secondary').forEach(e=>e.style.visibility='hidden');document.querySelectorAll('#comments,#respond,#footer,#colophon').forEach(e=>e.style.display='none');})()"
+  },
+  {
+   "eval": "(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,80))}})()"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "eval": "(()=>{const p=[...document.querySelectorAll('p')].find(e=>e.textContent.includes('co jakiś czas treść'));if(p)window.scrollTo(0,p.getBoundingClientRect().top+window.scrollY-300);})()"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    830,
+    330
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "para"
+  },
+  {
+   "move": [
+    1000,
+    335
+   ],
+   "dur": 1500
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "mark": "end"
+  }
+ ]
+}
