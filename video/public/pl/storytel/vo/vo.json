@@ -1,0 +1,106 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Czy warto płacić za Storytel? Sprawdziliśmy ceny, katalog, funkcje aplikacji i regulamin. Powiemy ci, co jest dobre, co złe i jak zacząć najtaniej, bo darmowej próby teraz nie ma."
+  },
+  {
+   "id": "A02",
+   "text": "Storytel to szwedzki serwis z audiobookami i e-bookami, w Polsce od 2016 roku. Słuchasz i czytasz w jednej aplikacji, po polsku i po angielsku, a do wyboru masz ponad 500 000 tytułów.",
+   "say": "Storytel to szwedzki serwis z audiobookami i e-bookami, w Polsce od dwa tysiące szesnastego roku. Słuchasz i czytasz w jednej aplikacji, po polsku i po angielsku, a do wyboru masz ponad pięćset tysięcy tytułów."
+  },
+  {
+   "id": "A03",
+   "text": "Ma cztery plany, płatne co 30 dni. Basic: 24,90 zł za 25 godzin. Premium: 34,90 zł za 50 godzin. Unlimited bez limitu: 44,90 zł. I Family, też bez limitu: 59,90 zł za dwa konta albo 69,90 zł za trzy. Bez zobowiązań.",
+   "say": "Ma cztery plany, płatne co trzydzieści dni. Bejzik: dwadzieścia cztery złote dziewięćdziesiąt groszy za dwadzieścia pięć godzin. Premium: trzydzieści cztery złote dziewięćdziesiąt groszy za pięćdziesiąt godzin. Anlimitid bez limitu: czterdzieści cztery złote dziewięćdziesiąt groszy. I Femili, też bez limitu: pięćdziesiąt dziewięć złotych dziewięćdziesiąt groszy za dwa konta albo sześćdziesiąt dziewięć złotych dziewięćdziesiąt groszy za trzy. Bez zobowiązań."
+  },
+  {
+   "id": "A04",
+   "text": "Katalog przejrzysz na stronie bez logowania: cotygodniowe propozycje, wyczekiwane premiery i najpopularniejsze tytuły, takie jak Harry Potter czy Wiedźmin. Ale słuchasz i czytasz tylko w aplikacji.",
+   "say": "Katalog przejrzysz na stronie bez logowania: cotygodniowe propozycje, wyczekiwane premiery i najpopularniejsze tytuły, takie jak Hari Poter czy Wiedźmin. Ale słuchasz i czytasz tylko w aplikacji."
+  },
+  {
+   "id": "A05",
+   "text": "Wizytówką serwisu są produkcje Storytel Original, dostępne tylko tutaj. Na przykład Kruk, słuchowisko Storytel i Canal+ z Michałem Żurawskim, albo Arka. Niebo Jakuba Żulczyka i Piotra Rogoży, z Jakubem Gierszałem.",
+   "say": "Wizytówką serwisu są produkcje Storytel Orydżinal, dostępne tylko tutaj. Na przykład Kruk, słuchowisko Storytel i Kanal Plus z Michałem Żurawskim, albo Arka. Niebo Jakuba Żulczyka i Piotra Rogoży, z Jakubem Gierszałem."
+  },
+  {
+   "id": "A06",
+   "text": "Karta książki pokazuje lektorów, długość i ocenę słuchaczy: Kruk trwa 3 godziny 7 minut i ma 4,6 z ponad 12 000 ocen. Możesz też odsłuchać próbkę.",
+   "say": "Karta książki pokazuje lektorów, długość i ocenę słuchaczy: Kruk trwa trzy godziny i siedem minut i ma cztery przecinek sześć z ponad dwunastu tysięcy ocen. Możesz też odsłuchać próbkę."
+  },
+  {
+   "id": "A07",
+   "text": "Jeśli książka ma obie wersje, w dowolnym miejscu przełączysz się ze słuchania na czytanie. Masz zmianę tempa, zakładki, wyłącznik czasowy i tryb offline, a nowości to szukanie słów nawet w audiobooku i wyszukiwanie książki aparatem."
+  },
+  {
+   "id": "A08",
+   "text": "W planach Basic i Premium czas liczy się przy normalnym tempie: słuchasz dwa razy szybciej, a schodzi pełna długość nagrania. W Unlimited godzin nie liczysz, ale na jednym koncie słuchasz naraz na jednym urządzeniu.",
+   "say": "W planach Bejzik i Premium czas liczy się przy normalnym tempie: słuchasz dwa razy szybciej, a schodzi pełna długość nagrania. W Anlimitid godzin nie liczysz, ale na jednym koncie słuchasz naraz na jednym urządzeniu."
+  },
+  {
+   "id": "A08B",
+   "text": "Family to osobne konta z własnymi półkami, opłacane przez jedną osobę, zwykle w jednym domu. A dla dzieci jest tryb dziecięcy, zabezpieczony kodem PIN, z samymi tytułami dla dzieci.",
+   "say": "Femili to osobne konta z własnymi półkami, opłacane przez jedną osobę, zwykle w jednym domu. A dla dzieci jest tryb dziecięcy, zabezpieczony kodem pin, z samymi tytułami dla dzieci."
+  },
+  {
+   "id": "A09",
+   "text": "Storytel działa na telefonach i tabletach z Androidem i iOS, na zegarkach, w samochodzie z Android Auto i CarPlay oraz z Chromecastem. Ale na komputerze ani na stronie nie posłuchasz.",
+   "say": "Storytel działa na telefonach i tabletach z Androidem i aj o es, na zegarkach, w samochodzie z Android Auto i Kar Plej oraz z Kromkastem. Ale na komputerze ani na stronie nie posłuchasz."
+  },
+  {
+   "id": "A10",
+   "text": "W polskim Google Play Storytel ma 4,7, a w App Store 4,8, z ponad 45 000 ocen. Użytkownicy chwalą jedną cenę za wszystko. Krytykują znikanie książek bez uprzedzenia, nawet w połowie serii, i tytuły czytane przez sztuczną inteligencję.",
+   "say": "W polskim Gugl Plej Storytel ma cztery przecinek siedem, a w Ep Stor cztery przecinek osiem, z ponad czterdziestu pięciu tysięcy ocen. Użytkownicy chwalą jedną cenę za wszystko. Krytykują znikanie książek bez uprzedzenia, nawet w połowie serii, i tytuły czytane przez sztuczną inteligencję."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: Unlimited bez limitu godzin, audiobooki i e-booki w jednej cenie, własne słuchowiska i konta rodzinne. Minusy: wyższa cena Unlimited, brak darmowej próby i wersji na komputer oraz książki znikające z dnia na dzień.",
+   "say": "Plusy: Anlimitid bez limitu godzin, audiobooki i e-booki w jednej cenie, własne słuchowiska i konta rodzinne. Minusy: wyższa cena Anlimitid, brak darmowej próby i wersji na komputer oraz książki znikające z dnia na dzień."
+  },
+  {
+   "id": "A12",
+   "text": "Czy warto? Jeśli słuchasz dużo, tak, zwłaszcza z promocją: w Unlimited nie liczysz godzin. Jeśli słuchasz mniej, wystarczy Basic. A przed decyzją porównaj go z Audioteką Klub czy Empik Go.",
+   "say": "Czy warto? Jeśli słuchasz dużo, tak, zwłaszcza z promocją: w Anlimitid nie liczysz godzin. Jeśli słuchasz mniej, wystarczy Bejzik. A przed decyzją porównaj go z Audioteką Klub czy Empik Goł."
+  },
+  {
+   "id": "B01",
+   "text": "Jak zacząć taniej? Na stronie Storytel nie ma teraz darmowego okresu próbnego, ale nowi klienci mają dwie promocje na Unlimited.",
+   "say": "Jak zacząć taniej? Na stronie Storytel nie ma teraz darmowego okresu próbnego, ale nowi klienci mają dwie promocje na Anlimitid."
+  },
+  {
+   "id": "B02",
+   "text": "Pierwsza: 22,45 zł miesięcznie przez pierwsze 180 dni, a potem 44,90 zł. Druga: pierwszy rok za 320 zł, płatne z góry.",
+   "say": "Pierwsza: dwadzieścia dwa złote czterdzieści pięć groszy miesięcznie przez pierwsze sto osiemdziesiąt dni, a potem czterdzieści cztery złote dziewięćdziesiąt groszy. Druga: pierwszy rok za trzysta dwadzieścia złotych, płatne z góry."
+  },
+  {
+   "id": "B03",
+   "text": "Wybierasz ofertę, zakładasz konto i dodajesz płatność; zgód marketingowych nie musisz zaznaczać. Potem logujesz się w aplikacji tym samym kontem."
+  },
+  {
+   "id": "B04",
+   "text": "Jak zrezygnować? Zaloguj się na stronie Storytel, wejdź w Subskrypcję, kliknij Anuluj i potwierdź – przyjdzie e-mail. Jeśli płacisz przez Google Play albo App Store, anulujesz tam. Samo usunięcie aplikacji nic nie zmienia.",
+   "say": "Jak zrezygnować? Zaloguj się na stronie Storytel, wejdź w Subskrypcję, kliknij Anuluj i potwierdź – przyjdzie e-mail. Jeśli płacisz przez Gugl Plej albo Ep Stor, anulujesz tam. Samo usunięcie aplikacji nic nie zmienia."
+  },
+  {
+   "id": "B05",
+   "text": "Drobny druk: według regulaminu, jeśli anulujesz w trakcie oferty promocyjnej, subskrypcja wygasa od razu. A w ostatniej godzinie przed kolejną płatnością nic już nie zmienisz."
+  },
+  {
+   "id": "B06",
+   "text": "Chcesz porównać inne opcje? Na sonorbooks.pl zestawisz Audiotekę, Empik Go, Legimi czy Audible i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Chcesz porównać inne opcje? Na sonorbooks kropka pe el zestawisz Audiotekę, Empik Goł, Legimi czy Odibl i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}
