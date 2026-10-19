@@ -1,6 +1,6 @@
 # YouTube · 10 historii grozy, które naprawdę przerażają (SonorBooks Polska)
 
-Duración: 6:24 (384.3 s, 19217 fotogramas) · Subtítulos: `top10-horror.pl.srt` (vertical: `top10-horror_short.pl.srt`) · Miniaturas: `miniatura_A.png`, `miniatura_B.png`, `miniatura_C.png`
+Duración: 6:24 (384.6 s, 19229 fotogramas) · Subtítulos: `top10-horror.pl.srt` (vertical: `top10-horror_short.pl.srt`) · Miniaturas: `miniatura_A.png`, `miniatura_B.png`, `miniatura_C.png`
 
 ## Tytuł (44 znaki)
 **10 historii grozy, które naprawdę przerażają**
@@ -27,7 +27,7 @@ Oto 10 historii grozy – od najmniej strasznej do najstraszniejszej – i jak i
 3:33 4. Dom na Wyrębach (Stefan Darda)
 4:00 3. Miasteczko Salem (Stephen King)
 4:30 2. Manitou (Graham Masterton)
-5:01 1. Nie otwieraj oczu (Josh Malerman)
+5:02 1. Nie otwieraj oczu (Josh Malerman)
 5:38 Jak i gdzie ich posłuchać
 
 🎧 Gdzie posłuchać (nagrania z filmu)
