@@ -1,139 +1,139 @@
 {
  "id": "B04",
- "hash": "8db20cc0b7e5",
- "text": "Jak zrezygnować? Tylko na stronie BookBeat: w menu konta wejdź w Zarządzaj subskrypcją i przejdź wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana.",
- "duration": 11.52,
+ "hash": "8bfd511c9280",
+ "text": "Jak zrezygnować? Tylko na stronie BookBeat: w menu konta wejdź w „Zarządzaj subskrypcją” i wykonaj wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana.",
+ "duration": 11.2,
  "words": [
   {
    "w": "Jak",
    "s": 0.0,
-   "e": 0.24
+   "e": 0.16
   },
   {
    "w": "zrezygnować?",
-   "s": 0.28,
-   "e": 1.52
+   "s": 0.24,
+   "e": 1.36
   },
   {
    "w": "Tylko",
-   "s": 1.56,
-   "e": 1.84
+   "s": 1.4,
+   "e": 1.68
   },
   {
    "w": "na",
-   "s": 1.92,
-   "e": 2.0
+   "s": 1.72,
+   "e": 1.76
   },
   {
    "w": "stronie",
-   "s": 2.08,
-   "e": 2.32
+   "s": 1.84,
+   "e": 2.16
   },
   {
    "w": "BookBeat:",
-   "s": 2.4,
-   "e": 3.2
+   "s": 2.24,
+   "e": 2.96
   },
   {
    "w": "w",
-   "s": 3.24,
-   "e": 3.28
+   "s": 3.0,
+   "e": 3.04
   },
   {
    "w": "menu",
-   "s": 3.4,
-   "e": 3.52
+   "s": 3.16,
+   "e": 3.28
   },
   {
    "w": "konta",
-   "s": 3.6,
-   "e": 4.0
+   "s": 3.36,
+   "e": 3.76
   },
   {
    "w": "wejdź",
-   "s": 4.08,
-   "e": 4.48
+   "s": 3.84,
+   "e": 4.16
   },
   {
    "w": "w",
-   "s": 4.52,
-   "e": 4.56
+   "s": 4.2,
+   "e": 4.24
   },
   {
-   "w": "Zarządzaj",
-   "s": 4.6,
-   "e": 5.04
+   "w": "„Zarządzaj",
+   "s": 4.32,
+   "e": 4.8
   },
   {
-   "w": "subskrypcją",
-   "s": 5.12,
-   "e": 5.84
+   "w": "subskrypcją”",
+   "s": 4.88,
+   "e": 5.6
   },
   {
    "w": "i",
-   "s": 5.92,
-   "e": 6.0
+   "s": 5.64,
+   "e": 5.68
   },
   {
-   "w": "przejdź",
-   "s": 6.04,
-   "e": 6.32
+   "w": "wykonaj",
+   "s": 5.76,
+   "e": 6.08
   },
   {
    "w": "wszystkie",
-   "s": 6.4,
-   "e": 6.72
+   "s": 6.16,
+   "e": 6.48
   },
   {
    "w": "kroki.",
-   "s": 6.8,
-   "e": 7.64
+   "s": 6.56,
+   "e": 7.333
   },
   {
    "w": "Bez",
-   "s": 7.68,
-   "e": 7.84
+   "s": 7.387,
+   "e": 7.48
   },
   {
    "w": "e-maila",
-   "s": 7.92,
-   "e": 8.2
+   "s": 7.52,
+   "e": 7.88
   },
   {
    "w": "z",
-   "s": 8.24,
-   "e": 8.28
+   "s": 7.92,
+   "e": 7.96
   },
   {
    "w": "potwierdzeniem",
-   "s": 8.32,
-   "e": 9.04
+   "s": 8.0,
+   "e": 8.72
   },
   {
    "w": "subskrypcja",
-   "s": 9.16,
-   "e": 9.68
+   "s": 8.8,
+   "e": 9.44
   },
   {
    "w": "może",
-   "s": 9.76,
-   "e": 10.0
+   "s": 9.52,
+   "e": 9.76
   },
   {
    "w": "nie",
-   "s": 10.08,
-   "e": 10.16
+   "s": 9.84,
+   "e": 9.92
   },
   {
    "w": "być",
-   "s": 10.24,
-   "e": 10.36
+   "s": 10.0,
+   "e": 10.12
   },
   {
    "w": "anulowana.",
-   "s": 10.4,
-   "e": 11.52
+   "s": 10.16,
+   "e": 11.2
   }
  ],
- "speechEnd": 11.07
+ "speechEnd": 10.782
 }

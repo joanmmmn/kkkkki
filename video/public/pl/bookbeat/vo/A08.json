@@ -1,8 +1,8 @@
 {
  "id": "A08",
- "hash": "035cc2426306",
- "text": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci 10 godzin, jakkolwiek szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.",
- "duration": 15.36,
+ "hash": "e64e86ab82bb",
+ "text": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci 10 godzin, bez względu na to, jak szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.",
+ "duration": 16.0,
  "words": [
   {
    "w": "Godziny",
@@ -12,163 +12,183 @@
   {
    "w": "liczą",
    "s": 0.56,
-   "e": 0.8
+   "e": 0.72
   },
   {
    "w": "się",
-   "s": 0.84,
-   "e": 0.96
+   "s": 0.8,
+   "e": 0.933
   },
   {
    "w": "według",
-   "s": 1.04,
-   "e": 1.28
+   "s": 0.987,
+   "e": 1.2
   },
   {
    "w": "normalnego",
-   "s": 1.44,
-   "e": 1.84
+   "s": 1.36,
+   "e": 1.76
   },
   {
    "w": "tempa:",
-   "s": 1.92,
-   "e": 2.56
+   "s": 1.84,
+   "e": 2.48
   },
   {
    "w": "dziesięciogodzinna",
-   "s": 2.64,
-   "e": 3.36
+   "s": 2.52,
+   "e": 3.28
   },
   {
    "w": "książka",
-   "s": 3.44,
-   "e": 3.92
+   "s": 3.52,
+   "e": 3.76
   },
   {
    "w": "zabierze",
-   "s": 3.96,
-   "e": 4.24
+   "s": 3.84,
+   "e": 4.16
   },
   {
    "w": "ci",
-   "s": 4.32,
-   "e": 4.48
+   "s": 4.24,
+   "e": 4.32
   },
   {
    "w": "dziesięć",
-   "s": 4.56,
-   "e": 4.88
+   "s": 4.48,
+   "e": 4.72
   },
   {
    "w": "godzin,",
-   "s": 4.96,
-   "e": 5.44
+   "s": 4.88,
+   "e": 5.52
   },
   {
-   "w": "jakkolwiek",
-   "s": 5.48,
-   "e": 6.0
+   "w": "bez",
+   "s": 5.6,
+   "e": 5.68
+  },
+  {
+   "w": "względu",
+   "s": 5.76,
+   "e": 6.08
+  },
+  {
+   "w": "na",
+   "s": 6.16,
+   "e": 6.24
+  },
+  {
+   "w": "to,",
+   "s": 6.32,
+   "e": 6.48
+  },
+  {
+   "w": "jak",
+   "s": 6.56,
+   "e": 6.64
   },
   {
    "w": "szybko",
-   "s": 6.04,
-   "e": 6.28
+   "s": 6.68,
+   "e": 6.96
   },
   {
    "w": "słuchasz.",
-   "s": 6.32,
-   "e": 7.2
+   "s": 7.04,
+   "e": 7.52
   },
   {
    "w": "Czytanie",
-   "s": 7.24,
-   "e": 7.6
+   "s": 7.92,
+   "e": 8.32
   },
   {
    "w": "też",
-   "s": 7.68,
-   "e": 7.84
+   "s": 8.4,
+   "e": 8.56
   },
   {
    "w": "je",
-   "s": 7.88,
-   "e": 7.92
+   "s": 8.6,
+   "e": 8.64
   },
   {
    "w": "zużywa,",
-   "s": 8.0,
-   "e": 8.52
+   "s": 8.76,
+   "e": 9.28
   },
   {
    "w": "a",
-   "s": 8.56,
-   "e": 8.72
+   "s": 9.32,
+   "e": 9.36
   },
   {
    "w": "niewykorzystane",
-   "s": 8.773,
-   "e": 9.44
+   "s": 9.4,
+   "e": 10.16
   },
   {
    "w": "przepadają.",
-   "s": 9.48,
-   "e": 10.507
+   "s": 10.32,
+   "e": 11.24
   },
   {
    "w": "W",
-   "s": 10.533,
-   "e": 10.56
+   "s": 11.52,
+   "e": 11.56
   },
   {
    "w": "Premium",
-   "s": 10.8,
-   "e": 11.04
+   "s": 11.6,
+   "e": 12.0
   },
   {
    "w": "dokupisz",
-   "s": 11.08,
-   "e": 11.44
+   "s": 12.04,
+   "e": 12.48
   },
   {
    "w": "dwadzieścia",
-   "s": 11.52,
-   "e": 11.92
+   "s": 12.52,
+   "e": 12.96
   },
   {
    "w": "godzin",
-   "s": 12.0,
-   "e": 12.32
+   "s": 13.04,
+   "e": 13.36
   },
   {
    "w": "za",
-   "s": 12.4,
-   "e": 12.56
+   "s": 13.44,
+   "e": 13.52
   },
   {
    "w": "siedemnaście",
-   "s": 12.6,
-   "e": 13.12
-  },
-  {
-   "w": "złotych",
-   "s": 13.2,
-   "e": 13.6
-  },
-  {
-   "w": "dziewięćdziesiąt",
-   "s": 13.64,
+   "s": 13.6,
    "e": 14.16
   },
   {
-   "w": "dziewięć",
+   "w": "złotych",
    "s": 14.24,
-   "e": 14.4
+   "e": 14.56
+  },
+  {
+   "w": "dziewięćdziesiąt",
+   "s": 14.64,
+   "e": 15.12
+  },
+  {
+   "w": "dziewięć",
+   "s": 15.2,
+   "e": 15.36
   },
   {
    "w": "groszy.",
-   "s": 14.48,
-   "e": 15.36
+   "s": 15.44,
+   "e": 16.0
   }
  ],
- "speechEnd": 15.36
+ "speechEnd": 16.0
 }

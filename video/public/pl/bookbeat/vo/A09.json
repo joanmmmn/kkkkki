@@ -1,8 +1,8 @@
 {
  "id": "A09",
- "hash": "05044d783be0",
- "text": "BookBeat działa na telefonach i tabletach z Androidem i iOS, na Apple Watch, nawet bez telefonu, w samochodzie z CarPlay i Android Auto oraz z Chromecastem. Na komputerze ani na czytniku e-booków nie posłuchasz.",
- "duration": 13.52,
+ "hash": "d32a2d01f241",
+ "text": "BookBeat działa na telefonach i tabletach z Androidem i iOS, na Apple Watch, nawet bez telefonu, w samochodzie z CarPlay i Android Auto oraz z Chromecastem. Na komputerze ani na czytniku e-booków BookBeat nie działa.",
+ "duration": 13.76,
  "words": [
   {
    "w": "Bukbit",
@@ -16,12 +16,12 @@
   },
   {
    "w": "na",
-   "s": 0.8,
-   "e": 0.88
+   "s": 0.76,
+   "e": 0.8
   },
   {
    "w": "telefonach",
-   "s": 1.0,
+   "s": 0.88,
    "e": 1.44
   },
   {
@@ -46,7 +46,7 @@
   },
   {
    "w": "i",
-   "s": 2.92,
+   "s": 2.88,
    "e": 3.04
   },
   {
@@ -57,41 +57,41 @@
   {
    "w": "o",
    "s": 3.36,
-   "e": 3.44
+   "e": 3.4
   },
   {
    "w": "es,",
-   "s": 3.52,
-   "e": 4.0
+   "s": 3.44,
+   "e": 3.88
   },
   {
    "w": "na",
-   "s": 4.08,
-   "e": 4.16
+   "s": 3.92,
+   "e": 4.0
   },
   {
    "w": "Epl",
-   "s": 4.24,
-   "e": 4.4
+   "s": 4.08,
+   "e": 4.32
   },
   {
    "w": "Łocz,",
-   "s": 4.48,
-   "e": 5.0
+   "s": 4.36,
+   "e": 4.84
   },
   {
    "w": "nawet",
-   "s": 5.04,
-   "e": 5.28
+   "s": 4.88,
+   "e": 5.12
   },
   {
    "w": "bez",
-   "s": 5.36,
-   "e": 5.52
+   "s": 5.2,
+   "e": 5.36
   },
   {
    "w": "telefonu,",
-   "s": 5.64,
+   "s": 5.44,
    "e": 6.18
   },
   {
@@ -102,36 +102,36 @@
   {
    "w": "samochodzie",
    "s": 6.24,
-   "e": 6.64
-  },
-  {
-   "w": "z",
-   "s": 6.68,
    "e": 6.72
   },
   {
+   "w": "z",
+   "s": 6.76,
+   "e": 6.8
+  },
+  {
    "w": "Kar",
-   "s": 6.8,
-   "e": 6.96
+   "s": 6.92,
+   "e": 7.04
   },
   {
    "w": "Plej",
-   "s": 7.04,
-   "e": 7.28
+   "s": 7.08,
+   "e": 7.36
   },
   {
    "w": "i",
-   "s": 7.36,
-   "e": 7.44
+   "s": 7.52,
+   "e": 7.56
   },
   {
    "w": "Android",
-   "s": 7.52,
-   "e": 7.84
+   "s": 7.6,
+   "e": 7.92
   },
   {
    "w": "Auto",
-   "s": 8.0,
+   "s": 8.08,
    "e": 8.48
   },
   {
@@ -147,48 +147,53 @@
   {
    "w": "Kromkastem.",
    "s": 9.0,
-   "e": 10.053
+   "e": 10.027
   },
   {
    "w": "Na",
-   "s": 10.107,
-   "e": 10.16
+   "s": 10.053,
+   "e": 10.08
   },
   {
    "w": "komputerze",
-   "s": 10.24,
-   "e": 10.88
+   "s": 10.16,
+   "e": 10.8
   },
   {
    "w": "ani",
-   "s": 10.96,
-   "e": 11.12
+   "s": 10.88,
+   "e": 11.04
   },
   {
    "w": "na",
-   "s": 11.16,
-   "e": 11.2
+   "s": 11.08,
+   "e": 11.12
   },
   {
    "w": "czytniku",
-   "s": 11.28,
-   "e": 11.68
+   "s": 11.2,
+   "e": 11.52
   },
   {
    "w": "e-booków",
-   "s": 11.72,
-   "e": 12.24
+   "s": 11.6,
+   "e": 12.16
+  },
+  {
+   "w": "Bukbit",
+   "s": 12.24,
+   "e": 12.64
   },
   {
    "w": "nie",
-   "s": 12.28,
-   "e": 12.32
+   "s": 12.72,
+   "e": 12.8
   },
   {
-   "w": "posłuchasz.",
-   "s": 12.4,
-   "e": 13.52
+   "w": "działa.",
+   "s": 12.84,
+   "e": 13.76
   }
  ],
- "speechEnd": 13.021
+ "speechEnd": 13.225
 }
