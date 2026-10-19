@@ -4,13 +4,15 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 135,
- "duration": 7.116,
- "offset": 0.076,
+ "frames": 198,
+ "duration": 8.592,
+ "offset": 0.05,
  "marks": {
-  "top": 0.834,
-  "menu": 3.371,
-  "end": 7.108
+  "top": 0.578,
+  "click": 1.529,
+  "menu": 3.452,
+  "audiobooki": 5.69,
+  "end": 8.593
  },
  "events": []
 }

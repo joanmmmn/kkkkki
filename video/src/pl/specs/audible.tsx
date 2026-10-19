@@ -42,8 +42,12 @@ export const piece: PLPiece = {
           { at: 'zostaja', label: 'Kupione i za kredyty zostają', tone: 'good' },
         ] },
       { id: 'A05', kind: 'rec', kicker: 'Amazon.pl', title: 'Polski katalog', rec: { clip: 'katalog', start: 0.3 },
-        cuts: [{ at: 'popularnych', rec: { clip: 'popularne', start: 2.6 } }, { at: 'Sporo', rec: { clip: 'swiat', start: 11.0, url: 'swiatczytnikow.pl' } }],
-        marks: [{ at: 'filtrem', until: 'popularnych', x: 14, y: 432, w: 120, h: 520 }],
+        cuts: [{ at: 'Remigiusza', rec: { clip: 'popularne', start: 3.0 } }, { at: 'Sporo', rec: { clip: 'swiat', start: 11.0, url: 'swiatczytnikow.pl' } }],
+        marks: [
+          { at: 'filtrem', until: 'Remigiusza', x: 12, y: 438, w: 84, h: 28 },
+          { at: 'Remigiusza', until: 'Joanny', x: 694, y: 586, w: 256, h: 290 }, { at: 'Kraszewski', until: 'Sporo', x: 1240, y: 586, w: 256, h: 290 },
+        ],
+        zooms: [{ at: 'zakladke', zoom: 1.7, x: 420, y: 360 }, { at: 'Remigiusza', zoom: 1.25, x: 960, y: 620 }],
         tags: [
           { at: 'filtrem', label: 'Filtr: Język → Polski', icon: 'search' },
           { at: 'Remigiusza', label: 'Remigiusz Mróz', sub: 'kryminały', icon: 'book' },

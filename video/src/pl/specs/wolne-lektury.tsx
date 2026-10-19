@@ -8,14 +8,15 @@ import type { PLPiece } from './index';
 export const piece: PLPiece = {
   spec: {
     slug: 'wolne-lektury', name: 'Wolne Lektury', domain: 'wolnelektury.pl', color: '#85C7CC', deep: '#2E7F86', soft: '#E7F4F5',
-    logo: 'pl/wolne-lektury/img/logo.svg', logoRatio: 44 / 230, tileBg: '#FFFFFF', tileLogoWhite: false,
+    logo: 'pl/wolne-lektury/img/logo.svg', logoRatio: 44 / 230, tileBg: '#083F4D', tileLogoWhite: false,
     kicker: 'Recenzja Wolnych Lektur', music: 'pl/wolne-lektury/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Darmowe\naudiobooki…\ngdzie haczyk?', hi: ['haczyk'], rec: { clip: 'lalka', start: 0.4 }, promises: [
         { at: 'trzydziesci', label: '„Lalka”: 32 godz. za 0 zł', icon: 'headphones' }, { at: 'konta', label: 'Bez konta i bez reklam', icon: 'user' },
         { at: 'legalnie', label: 'Legalnie', tone: 'good' }, { at: 'plusy', label: 'Plusy, minusy, jak zacząć', icon: 'search' },
       ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym są Wolne Lektury?', rec: { clip: 'o_projekcie', start: 0.3, rate: 0.6 }, facts: [
+      { id: 'A02', kind: 'intro', bump: 'Czym są Wolne Lektury?', rec: { clip: 'o_projekcie', start: 0.3, rate: 0.6 },
+        cuts: [{ at: 'Nagran', rec: { clip: 'o_projekcie', start: 6.2 } }, { at: 'milionow', rec: { clip: 'o_projekcie', start: 1.6 } }], facts: [
         { at: 'Fundacji', label: 'Fundacja Wolne Lektury', sub: 'Warszawa', icon: 'library' },
         { at: 'dwa', label: 'Działa od 2007 roku', icon: 'calendar' },
         { at: 'przeklady', label: 'Nowe przekłady na wolnej licencji', sub: '„Mały Książę”, „Rok 1984”', icon: 'book' },
@@ -83,7 +84,7 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'Szukasz', label: 'Szukasz nowości', sub: 'sprawdź kod z biblioteki albo abonament' },
       ], alts: { at: 'Audiotece', names: ['„Lalka” w Audiotece: czyta Zapasiewicz · 8 godz. 55 min · 19,99 zł'], label: 'Stan na październik 2026:' } },
-      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Bez konta', title: 'Słuchasz od razu', rec: { clip: 'portada', start: 0.2 }, steps: [
+      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Bez konta', title: 'Słuchasz od razu', rec: { clip: 'portada', start: 1.3 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na wolnelektury.pl' }, { at: 'Audiobooki', title: 'Kliknij „Audiobooki”' },
         { at: 'wpisz', title: 'albo wyszukaj tytuł', rec: { clip: 'szukaj', start: 0.2 } },
         { at: 'plej', title: 'Naciśnij play', sub: 'bez logowania', rec: { clip: 'pt_player', start: 15.5 } },
