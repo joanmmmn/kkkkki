@@ -1,0 +1,220 @@
+{
+ "total_frames": 14112,
+ "seconds": 282.24,
+ "chapters": [
+  {
+   "t": 14.78,
+   "label": "Czym jest LibriVox"
+  },
+  {
+   "t": 40.68,
+   "label": "Ile to kosztuje"
+  },
+  {
+   "t": 54.14,
+   "label": "Ile jest po polsku"
+  },
+  {
+   "t": 72.56,
+   "label": "Polska klasyka w LibriVox"
+  },
+  {
+   "t": 84.16,
+   "label": "Jak szukać po polsku"
+  },
+  {
+   "t": 101.46,
+   "label": "Strona książki: słuchanie i pobieranie"
+  },
+  {
+   "t": 118.48,
+   "label": "Lektorzy"
+  },
+  {
+   "t": 133.24,
+   "label": "Prawo: USA a Polska"
+  },
+  {
+   "t": 159.44,
+   "label": "Na telefonie: RSS i aplikacje"
+  },
+  {
+   "t": 174.54,
+   "label": "Opinie o aplikacjach"
+  },
+  {
+   "t": 196.8,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 214.76,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 229.28,
+   "label": "Jak zacząć"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 753,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 753,
+   "dur": 1033,
+   "lead": 26,
+   "bump": "Czym jest LibriVox?"
+  },
+  {
+   "id": "A02B",
+   "kind": "features",
+   "start": 1786,
+   "dur": 262,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A03",
+   "kind": "stat",
+   "start": 2048,
+   "dur": 673,
+   "lead": 26,
+   "bump": "Ile to kosztuje?"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2721,
+   "dur": 907,
+   "lead": 26,
+   "bump": "Ile jest po polsku?"
+  },
+  {
+   "id": "A05",
+   "kind": "features",
+   "start": 3628,
+   "dur": 594,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "rec",
+   "start": 4222,
+   "dur": 851,
+   "lead": 26,
+   "bump": "Jak szukać po polsku"
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 5073,
+   "dur": 851,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "stat",
+   "start": 5924,
+   "dur": 752,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08B",
+   "kind": "rec",
+   "start": 6676,
+   "dur": 1310,
+   "lead": 26,
+   "bump": "Prawo: USA a Polska"
+  },
+  {
+   "id": "A09",
+   "kind": "rec",
+   "start": 7986,
+   "dur": 755,
+   "lead": 26,
+   "bump": "Na telefonie"
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 8741,
+   "dur": 1113,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 9854,
+   "dur": 898,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 10752,
+   "dur": 726,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "rec",
+   "start": 11478,
+   "dur": 307,
+   "lead": 26,
+   "bump": "Jak zacząć"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 11785,
+   "dur": 348,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "rec",
+   "start": 12133,
+   "dur": 238,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 12371,
+   "dur": 298,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "features",
+   "start": 12669,
+   "dur": 385,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 13054,
+   "dur": 1058,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

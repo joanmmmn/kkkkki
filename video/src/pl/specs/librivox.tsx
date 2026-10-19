@@ -136,7 +136,7 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'zawodowymi', label: 'Wolisz zawodowych lektorów', sub: 'polska klasyka za 0 zł: Wolne Lektury' },
       ], alts: { at: 'Wolnych', names: ['Wolne Lektury · 0 zł · zawodowi lektorzy'], label: 'Alternatywa za darmo:' } },
-      { id: 'B01', kind: 'rec', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Wejdź na stronę', rec: { clip: '01_portada', start: 0.3 },
+      { id: 'B01', kind: 'rec', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Wejdź na stronę', rec: { clip: '01_portada', start: 0.3, holdAt: 4.4 },
         tags: [{ at: 'librivoks', label: 'librivox.org', icon: 'globe' }, { at: 'Rejestracja', label: 'Bez rejestracji', tone: 'good' }] },
       { id: 'B02', kind: 'steps', kicker: 'Krok 2', title: 'Znajdź po polsku', rec: { clip: '02_jezyki', start: 2.3 }, steps: [
         { at: 'Browse', title: 'Browse the catalog' }, { at: 'Language', title: 'Language' }, { at: 'Polish', title: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } },

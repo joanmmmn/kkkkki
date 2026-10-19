@@ -1,0 +1,304 @@
+1
+00:00:00,300 --> 00:00:05,660
+Ponad 21 000 darmowych audiobooków,
+legalnie i bez rejestracji, czytanych
+
+2
+00:00:05,700 --> 00:00:09,030
+przez ludzi. Także po
+polsku, jak „Lalka” Prusa.
+
+3
+00:00:09,180 --> 00:00:11,990
+Darmowe audiobooki… gdzie jest haczyk?
+
+4
+00:00:12,060 --> 00:00:14,790
+Sprawdzamy, jak słuchać i na co uważać.
+
+5
+00:00:15,620 --> 00:00:20,020
+LibriVox to projekt wolontariuszy,
+działa od 2005 roku.
+
+6
+00:00:20,060 --> 00:00:24,300
+Cel: każda książka z domeny publicznej
+ma mieć darmowy audiobook czytany przez
+
+7
+00:00:24,340 --> 00:00:27,113
+człowieka. Bez reklam i bez zysku.
+
+8
+00:00:27,153 --> 00:00:32,873
+Dziś to 21 847 tytułów w 49 językach.
+
+9
+00:00:32,913 --> 00:00:35,830
+Na początku rozdziału
+słyszysz taką formułkę:
+
+10
+00:00:41,480 --> 00:00:43,440
+Ile to kosztuje? Nic.
+
+11
+00:00:43,480 --> 00:00:46,560
+Nie ma abonamentu, konta
+ani okresu próbnego.
+
+12
+00:00:46,600 --> 00:00:51,467
+Nagrania są w domenie publicznej, więc
+możesz je pobrać, zachować i udostępniać.
+
+13
+00:00:51,507 --> 00:00:54,530
+LibriVox prosi tylko o dobrowolne datki.
+
+14
+00:00:54,940 --> 00:01:01,087
+A po polsku? To mały zakątek: 31
+projektów, czyli 27 książek, bo „Lalka”
+
+15
+00:01:01,127 --> 00:01:03,180
+i „Faraon” mają po 3 tomy.
+
+16
+00:01:03,220 --> 00:01:06,860
+Do tego ponad 120 krótszych
+nagrań w zbiorach wielojęzycznych:
+
+17
+00:01:06,900 --> 00:01:10,153
+wiersze, opowiadania
+i pierwsze rozdziały powieści.
+
+18
+00:01:10,193 --> 00:01:12,660
+Razem ponad 200 godzin.
+
+19
+00:01:12,700 --> 00:01:18,127
+Co tu znajdziesz? Głównie klasykę: „Lalkę”
+i „Faraona” Prusa, pierwszy tom „Potopu”,
+
+20
+00:01:18,167 --> 00:01:22,660
+„Rękopis znaleziony w Saragossie”, „Na
+srebrnym globie” Żuławskiego i „Sklepy
+
+21
+00:01:22,700 --> 00:01:24,550
+cynamonowe” Schulza.
+
+22
+00:01:24,960 --> 00:01:27,400
+Strona jest po angielsku, ale prosta.
+
+23
+00:01:27,440 --> 00:01:32,240
+Kliknij „Browse the catalog”, potem
+„Language” i wybierz „Polish”.
+
+24
+00:01:32,280 --> 00:01:36,800
+Przy każdej pozycji widzisz, czy
+czyta jedna osoba, „Solo”, kilka osób,
+
+25
+00:01:36,840 --> 00:01:41,210
+„Collaborative”, czy to fragment
+zbioru wielojęzycznego, „Multilingual”.
+
+26
+00:01:41,600 --> 00:01:46,070
+Na stronie książki masz czas
+trwania, lektora i spis rozdziałów.
+
+27
+00:01:46,110 --> 00:01:50,613
+„Play” odtwarza rozdział w przeglądarce,
+a tytuł rozdziału to plik MP3.
+
+28
+00:01:50,653 --> 00:01:55,610
+„Download” ściąga całą książkę
+w pliku ZIP, jest też plik M4B.
+
+29
+00:01:56,000 --> 00:01:58,410
+Bez DRM i bez logowania.
+
+30
+00:01:58,620 --> 00:02:02,540
+A głosy? To wolontariusze,
+więc jakość bywa różna.
+
+31
+00:02:02,580 --> 00:02:07,420
+Po polsku dominuje jeden lektor: Piotr
+Nater nagrał około 60 procent wszystkich
+
+32
+00:02:07,460 --> 00:02:10,660
+polskich godzin, w tym
+całą „Lalkę” i „Faraona”.
+
+33
+00:02:10,700 --> 00:02:13,590
+Zanim wybierzesz książkę,
+posłuchaj minuty.
+
+34
+00:02:14,040 --> 00:02:19,560
+Najważniejsze: LibriVox nagrywa książki
+wolne od praw w USA i sam prosi, by
+
+35
+00:02:19,600 --> 00:02:21,573
+sprawdzić prawo swojego kraju.
+
+36
+00:02:21,613 --> 00:02:25,333
+W Polsce prawa wygasają
+70 lat po śmierci autora.
+
+37
+00:02:25,373 --> 00:02:29,985
+Polskie nagrania to głównie dzieła
+dawnych autorów, ale uważaj na angielskie:
+
+38
+00:02:30,025 --> 00:02:36,504
+A. A. Milne zmarł w 1956 roku, więc „Kubuś
+Puchatek” będzie w Polsce wolny dopiero od
+
+39
+00:02:36,544 --> 00:02:38,550
+1 stycznia 2027.
+
+40
+00:02:40,240 --> 00:02:44,240
+Na telefonie? LibriVox nie
+ma oficjalnej aplikacji.
+
+41
+00:02:44,280 --> 00:02:49,160
+Link „RSS” wkleisz do aplikacji
+z podcastami albo użyjesz aplikacji innych
+
+42
+00:02:49,200 --> 00:02:54,192
+firm, jak LibriVox Audio Books na Androida
+i LibriVox Audiobooks na iPhone'a.
+
+43
+00:02:55,340 --> 00:03:01,220
+Oceny tych aplikacji są dobre: na
+Androidzie 4,7 przy ponad 68 tysiącach
+
+44
+00:03:01,260 --> 00:03:06,473
+opinii, a w polskim App
+Storze 4,6 przy 62 ocenach.
+
+45
+00:03:06,513 --> 00:03:10,180
+Mają wyłącznik czasowy,
+zakładki i pobieranie offline.
+
+46
+00:03:10,220 --> 00:03:15,866
+Minus: wersja na Androida ma reklamy,
+a bez reklam kosztuje 24,99 zł.
+
+47
+00:03:17,600 --> 00:03:23,400
+Plusy: za darmo i legalnie, bez konta
+i reklam, prawdziwe głosy, pliki na zawsze
+
+48
+00:03:23,440 --> 00:03:25,827
+i ogromny wybór po angielsku.
+
+49
+00:03:25,867 --> 00:03:31,400
+Minusy: po polsku tylko 27 książek,
+głównie jeden lektor, nierówna jakość,
+
+50
+00:03:31,440 --> 00:03:35,050
+strona po angielsku i brak
+oficjalnej aplikacji.
+
+51
+00:03:35,560 --> 00:03:39,893
+Warto? Do polskiej klasyki tak,
+jeśli pasuje ci głos lektora.
+
+52
+00:03:39,933 --> 00:03:44,507
+Do nauki angielskiego to
+kopalnia: ponad 19 000 tytułów.
+
+53
+00:03:44,547 --> 00:03:49,490
+A polską klasykę z zawodowymi lektorami
+masz za darmo także w Wolnych Lekturach.
+
+54
+00:03:50,080 --> 00:03:52,830
+Jak zacząć? Wejdź na librivox.org.
+
+55
+00:03:53,480 --> 00:03:55,450
+Rejestracja nie jest potrzebna.
+
+56
+00:03:55,840 --> 00:04:01,160
+Kliknij „Browse the catalog”, potem
+„Language” i „Polish” albo wpisz tytuł
+
+57
+00:04:01,200 --> 00:04:02,730
+w wyszukiwarkę.
+
+58
+00:04:02,800 --> 00:04:07,210
+Na stronie książki kliknij „Play”
+przy rozdziale i słuchaj od razu.
+
+59
+00:04:07,560 --> 00:04:12,694
+Offline? „Download” ściąga całą książkę,
+a tytuł rozdziału – jeden plik MP3.
+
+60
+00:04:13,520 --> 00:04:18,560
+I drobny druk: przy nagraniach spoza
+polskiej listy sprawdź, kiedy zmarł autor,
+
+61
+00:04:18,600 --> 00:04:21,050
+a przy przekładach także tłumacz.
+
+62
+00:04:21,220 --> 00:04:26,568
+A jeśli wolisz zawodowych lektorów, na
+sonorbooks.pl porównasz Audiotekę, Empik
+
+63
+00:04:26,608 --> 00:04:29,500
+Go, Legimi czy darmowe Wolne Lektury:
+
+64
+00:04:29,540 --> 00:04:31,927
+gdzie posłuchać audiobooka i za ile.
+
+65
+00:04:31,967 --> 00:04:34,670
+Twoja następna historia
+już na ciebie czeka.

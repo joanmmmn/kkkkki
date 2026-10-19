@@ -1,0 +1,200 @@
+{
+ "total_frames": 13204,
+ "seconds": 264.08,
+ "chapters": [
+  {
+   "t": 11.1,
+   "label": "Czym jest Audible"
+  },
+  {
+   "t": 30.7,
+   "label": "Cennik: Standard i Premium"
+  },
+  {
+   "t": 53.88,
+   "label": "Zasady: wybory i kredyty"
+  },
+  {
+   "t": 70.14,
+   "label": "Polski katalog"
+  },
+  {
+   "t": 85.76,
+   "label": "Zakupy pojedyncze"
+  },
+  {
+   "t": 97.18,
+   "label": "Aplikacja i odtwarzacz"
+  },
+  {
+   "t": 111.72,
+   "label": "Tłumaczenie i urządzenia"
+  },
+  {
+   "t": 137.3,
+   "label": "Opinie"
+  },
+  {
+   "t": 156.5,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 174.7,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 188.86,
+   "label": "Jak wypróbować za darmo"
+  },
+  {
+   "t": 223.22,
+   "label": "Jak zrezygnować"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 569,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 569,
+   "dur": 980,
+   "lead": 26,
+   "bump": "Czym jest Audible?"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1549,
+   "dur": 1159,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2708,
+   "dur": 799,
+   "lead": 26,
+   "bump": "Jak to działa"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3507,
+   "dur": 781,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "stat",
+   "start": 4288,
+   "dur": 585,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "features",
+   "start": 4873,
+   "dur": 713,
+   "lead": 26,
+   "bump": "Aplikacja"
+  },
+  {
+   "id": "A08",
+   "kind": "rec",
+   "start": 5586,
+   "dur": 801,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6387,
+   "dur": 492,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 6879,
+   "dur": 960,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 7839,
+   "dur": 910,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 8749,
+   "dur": 708,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "stat",
+   "start": 9457,
+   "dur": 477,
+   "lead": 26,
+   "bump": "Jak wypróbować za darmo"
+  },
+  {
+   "id": "B02",
+   "kind": "steps",
+   "start": 9934,
+   "dur": 731,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "rec",
+   "start": 10665,
+   "dur": 496,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11161,
+   "dur": 648,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "rec",
+   "start": 11809,
+   "dur": 395,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12204,
+   "dur": 1000,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}

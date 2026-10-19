@@ -1,0 +1,21 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 266,
+ "duration": 15.305,
+ "offset": 0.175,
+ "marks": {
+  "filie": 0.14,
+  "harmonogram": 2.407,
+  "katalog": 4.468,
+  "scroll1": 6.602,
+  "zasady": 8.323,
+  "scroll2": 10.81,
+  "kod90": 12.584,
+  "end": 15.305
+ },
+ "events": []
+}
