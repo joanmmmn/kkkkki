@@ -1,104 +1,84 @@
 {
  "id": "X113",
- "hash": "a6797fccb16f",
- "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que te traigamos después?",
- "duration": 6.88,
+ "hash": "acbc79ed4b1c",
+ "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I jakie historie mamy przynieść następnym razem?",
+ "duration": 6.4,
  "words": [
   {
-   "w": "Y",
+   "w": "I",
    "s": 0.0,
    "e": 0.08
   },
   {
-   "w": "cuéntanos",
-   "s": 0.16,
-   "e": 0.64
+   "w": "napisz",
+   "s": 0.2,
+   "e": 0.4
   },
   {
-   "w": "en",
-   "s": 0.68,
-   "e": 0.72
+   "w": "w",
+   "s": 0.44,
+   "e": 0.48
   },
   {
-   "w": "los",
-   "s": 0.8,
-   "e": 0.88
+   "w": "komentarzu:",
+   "s": 0.587,
+   "e": 1.36
   },
   {
-   "w": "comentarios:",
-   "s": 0.96,
-   "e": 2.1
+   "w": "która",
+   "s": 1.44,
+   "e": 1.68
   },
   {
-   "w": "¿cuál",
-   "s": 2.12,
-   "e": 2.32
+   "w": "przestraszyła",
+   "s": 1.76,
+   "e": 2.24
   },
   {
-   "w": "te",
-   "s": 2.4,
-   "e": 2.48
+   "w": "cię",
+   "s": 2.32,
+   "e": 2.46
   },
   {
-   "w": "ha",
+   "w": "najbardziej?",
    "s": 2.52,
-   "e": 2.56
+   "e": 3.4
   },
   {
-   "w": "dado",
-   "s": 2.6,
-   "e": 2.8
+   "w": "I",
+   "s": 3.44,
+   "e": 3.52
   },
   {
-   "w": "más",
-   "s": 2.88,
-   "e": 3.12
+   "w": "jakie",
+   "s": 3.64,
+   "e": 3.84
   },
   {
-   "w": "miedo?",
-   "s": 3.16,
-   "e": 3.947
+   "w": "historie",
+   "s": 4.04,
+   "e": 4.32
   },
   {
-   "w": "¿Y",
-   "s": 3.973,
-   "e": 4.08
+   "w": "mamy",
+   "s": 4.4,
+   "e": 4.56
   },
   {
-   "w": "qué",
-   "s": 4.12,
-   "e": 4.16
+   "w": "przynieść",
+   "s": 4.64,
+   "e": 5.04
   },
   {
-   "w": "historias",
-   "s": 4.24,
-   "e": 4.8
+   "w": "następnym",
+   "s": 5.08,
+   "e": 5.52
   },
   {
-   "w": "quieres",
-   "s": 4.92,
-   "e": 5.12
-  },
-  {
-   "w": "que",
-   "s": 5.16,
-   "e": 5.2
-  },
-  {
-   "w": "te",
-   "s": 5.28,
-   "e": 5.36
-  },
-  {
-   "w": "traigamos",
-   "s": 5.44,
-   "e": 5.84
-  },
-  {
-   "w": "después?",
-   "s": 5.92,
-   "e": 6.88
+   "w": "razem?",
+   "s": 5.64,
+   "e": 6.4
   }
  ],
- "speechEnd": 6.462
+ "speechEnd": 5.976
 }

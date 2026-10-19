@@ -1,199 +1,169 @@
 {
  "id": "X102",
- "hash": "c8e0436c4198",
- "text": "Una actriz vive en Washington con su hija, Regan. Primero son ruidos en el desván. Luego, cambios en la niña. Después, una voz que no es la suya. Y ni los médicos ni los psiquiatras encuentran una explicación.",
- "duration": 16.24,
+ "hash": "f186ceb71350",
+ "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
+ "duration": 14.16,
  "words": [
   {
-   "w": "Una",
+   "w": "Coś",
    "s": 0.0,
    "e": 0.24
   },
   {
-   "w": "actriz",
+   "w": "jest",
    "s": 0.36,
-   "e": 0.72
+   "e": 0.48
   },
   {
-   "w": "vive",
-   "s": 0.8,
-   "e": 1.04
+   "w": "na",
+   "s": 0.56,
+   "e": 0.64
   },
   {
-   "w": "en",
-   "s": 1.12,
-   "e": 1.2
+   "w": "zewnątrz.",
+   "s": 0.76,
+   "e": 1.6
   },
   {
-   "w": "Washington",
-   "s": 1.24,
-   "e": 1.84
+   "w": "Wystarczy",
+   "s": 1.64,
+   "e": 2.16
   },
   {
-   "w": "con",
-   "s": 1.96,
-   "e": 2.08
+   "w": "jedno",
+   "s": 2.2,
+   "e": 2.48
   },
   {
-   "w": "su",
-   "s": 2.16,
-   "e": 2.24
+   "w": "spojrzenie,",
+   "s": 2.56,
+   "e": 3.08
   },
   {
-   "w": "hija,",
-   "s": 2.28,
-   "e": 2.8
+   "w": "żeby",
+   "s": 3.12,
+   "e": 3.28
   },
   {
-   "w": "Regan.",
-   "s": 2.88,
-   "e": 3.92
+   "w": "człowieka",
+   "s": 3.32,
+   "e": 3.76
   },
   {
-   "w": "Primero",
-   "s": 4.04,
-   "e": 4.32
+   "w": "ogarnął",
+   "s": 3.84,
+   "e": 4.24
   },
   {
-   "w": "son",
-   "s": 4.4,
-   "e": 4.56
+   "w": "obłęd.",
+   "s": 4.36,
+   "e": 5.36
   },
   {
-   "w": "ruidos",
-   "s": 4.64,
-   "e": 5.04
+   "w": "Pięć",
+   "s": 5.4,
+   "e": 5.56
   },
   {
-   "w": "en",
-   "s": 5.08,
-   "e": 5.12
+   "w": "lat",
+   "s": 5.6,
+   "e": 5.76
   },
   {
-   "w": "el",
-   "s": 5.2,
-   "e": 5.28
-  },
-  {
-   "w": "desván.",
-   "s": 5.36,
+   "w": "później",
+   "s": 5.84,
    "e": 6.24
   },
   {
-   "w": "Luego,",
-   "s": 6.28,
-   "e": 6.907
+   "w": "Malorie",
+   "s": 6.32,
+   "e": 6.8
   },
   {
-   "w": "cambios",
-   "s": 6.933,
-   "e": 7.36
+   "w": "i",
+   "s": 6.84,
+   "e": 6.88
   },
   {
-   "w": "en",
-   "s": 7.44,
+   "w": "dwoje",
+   "s": 6.96,
+   "e": 7.2
+  },
+  {
+   "w": "małych",
+   "s": 7.28,
    "e": 7.52
   },
   {
-   "w": "la",
-   "s": 7.56,
-   "e": 7.6
+   "w": "dzieci",
+   "s": 7.573,
+   "e": 7.84
   },
   {
-   "w": "niña.",
-   "s": 7.68,
-   "e": 8.44
+   "w": "muszą",
+   "s": 7.92,
+   "e": 8.16
   },
   {
-   "w": "Después,",
-   "s": 8.48,
-   "e": 9.32
+   "w": "przepłynąć",
+   "s": 8.2,
+   "e": 8.64
   },
   {
-   "w": "una",
-   "s": 9.36,
+   "w": "rzeką",
+   "s": 8.68,
+   "e": 9.04
+  },
+  {
+   "w": "trzydzieści",
+   "s": 9.08,
    "e": 9.52
   },
   {
-   "w": "voz",
-   "s": 9.64,
-   "e": 9.84
+   "w": "kilometrów…",
+   "s": 9.6,
+   "e": 10.773
   },
   {
-   "w": "que",
-   "s": 9.92,
-   "e": 10.08
+   "w": "z",
+   "s": 10.827,
+   "e": 10.88
   },
   {
-   "w": "no",
-   "s": 10.16,
-   "e": 10.32
+   "w": "opaskami",
+   "s": 10.96,
+   "e": 11.36
   },
   {
-   "w": "es",
-   "s": 10.4,
-   "e": 10.56
+   "w": "na",
+   "s": 11.44,
+   "e": 11.52
   },
   {
-   "w": "la",
-   "s": 10.64,
-   "e": 10.72
+   "w": "oczach.",
+   "s": 11.64,
+   "e": 12.36
   },
   {
-   "w": "suya.",
-   "s": 10.8,
-   "e": 11.56
-  },
-  {
-   "w": "Y",
-   "s": 11.6,
-   "e": 11.64
-  },
-  {
-   "w": "ni",
-   "s": 11.68,
-   "e": 11.76
-  },
-  {
-   "w": "los",
-   "s": 11.88,
-   "e": 12.0
-  },
-  {
-   "w": "médicos",
-   "s": 12.12,
-   "e": 12.48
-  },
-  {
-   "w": "ni",
-   "s": 12.56,
-   "e": 12.64
-  },
-  {
-   "w": "los",
-   "s": 12.72,
+   "w": "Zdani",
+   "s": 12.4,
    "e": 12.8
   },
   {
-   "w": "psiquiatras",
-   "s": 12.84,
-   "e": 13.6
+   "w": "tylko",
+   "s": 12.88,
+   "e": 13.12
   },
   {
-   "w": "encuentran",
-   "s": 13.68,
-   "e": 14.32
+   "w": "na",
+   "s": 13.16,
+   "e": 13.2
   },
   {
-   "w": "una",
-   "s": 14.4,
-   "e": 14.56
-  },
-  {
-   "w": "explicación.",
-   "s": 14.68,
-   "e": 16.24
+   "w": "słuch.",
+   "s": 13.28,
+   "e": 14.16
   }
  ],
- "speechEnd": 15.5
+ "speechEnd": 13.69
 }

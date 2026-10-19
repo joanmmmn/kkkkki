@@ -1,259 +1,184 @@
 {
  "id": "X42",
- "hash": "9724fc0d6656",
- "text": "Una mujer agoniza en la sala de urgencias de un pueblo. A su lado, un niño que no es su hijo le habla al oído y le pide que encuentre el momento exacto en que todo empezó. Algo ha pasado en el campo. Algo les está pasando a los niños.",
- "duration": 15.92,
+ "hash": "6fdb6ac91ff4",
+ "text": "Młode małżeństwo wprowadza się do eleganckiej starej kamienicy w Nowym Jorku. Starsi sąsiedzi są aż nazbyt pomocni. Rosemary zachodzi w ciążę… i z każdym tygodniem jest coraz pewniejsza, że sąsiedzi czegoś chcą od jej dziecka.",
+ "duration": 14.48,
  "words": [
   {
-   "w": "Una",
+   "w": "Młode",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.24
   },
   {
-   "w": "mujer",
-   "s": 0.2,
-   "e": 0.48
+   "w": "małżeństwo",
+   "s": 0.32,
+   "e": 0.88
   },
   {
-   "w": "agoniza",
-   "s": 0.56,
-   "e": 0.96
-  },
-  {
-   "w": "en",
+   "w": "wprowadza",
    "s": 1.04,
-   "e": 1.12
+   "e": 1.36
   },
   {
-   "w": "la",
-   "s": 1.2,
-   "e": 1.28
+   "w": "się",
+   "s": 1.44,
+   "e": 1.56
   },
   {
-   "w": "sala",
-   "s": 1.32,
-   "e": 1.52
+   "w": "do",
+   "s": 1.6,
+   "e": 1.68
   },
   {
-   "w": "de",
-   "s": 1.56,
-   "e": 1.6
+   "w": "eleganckiej",
+   "s": 1.76,
+   "e": 2.4
   },
   {
-   "w": "urgencias",
-   "s": 1.72,
-   "e": 2.24
+   "w": "starej",
+   "s": 2.48,
+   "e": 2.8
   },
   {
-   "w": "de",
-   "s": 2.28,
-   "e": 2.32
+   "w": "kamienicy",
+   "s": 2.84,
+   "e": 3.28
   },
   {
-   "w": "un",
-   "s": 2.4,
-   "e": 2.56
+   "w": "w",
+   "s": 3.32,
+   "e": 3.36
   },
   {
-   "w": "pueblo.",
-   "s": 2.6,
-   "e": 3.48
+   "w": "Nowym",
+   "s": 3.44,
+   "e": 3.6
   },
   {
-   "w": "A",
-   "s": 3.52,
-   "e": 3.56
+   "w": "Jorku.",
+   "s": 3.64,
+   "e": 4.52
   },
   {
-   "w": "su",
-   "s": 3.6,
-   "e": 3.68
-  },
-  {
-   "w": "lado,",
-   "s": 3.72,
-   "e": 4.28
-  },
-  {
-   "w": "un",
-   "s": 4.32,
-   "e": 4.48
-  },
-  {
-   "w": "niño",
+   "w": "Starsi",
    "s": 4.56,
-   "e": 4.8
+   "e": 4.88
   },
   {
-   "w": "que",
-   "s": 4.88,
-   "e": 4.96
+   "w": "sąsiedzi",
+   "s": 4.96,
+   "e": 5.44
   },
   {
-   "w": "no",
-   "s": 5.04,
-   "e": 5.12
+   "w": "są",
+   "s": 5.52,
+   "e": 5.68
   },
   {
-   "w": "es",
-   "s": 5.2,
-   "e": 5.28
-  },
-  {
-   "w": "su",
-   "s": 5.32,
-   "e": 5.36
-  },
-  {
-   "w": "hijo",
-   "s": 5.44,
-   "e": 5.76
-  },
-  {
-   "w": "le",
+   "w": "aż",
    "s": 5.84,
-   "e": 5.92
+   "e": 6.0
   },
   {
-   "w": "habla",
-   "s": 6.0,
-   "e": 6.16
+   "w": "nazbyt",
+   "s": 6.12,
+   "e": 6.427
   },
   {
-   "w": "al",
-   "s": 6.24,
-   "e": 6.32
+   "w": "pomocni.",
+   "s": 6.453,
+   "e": 7.547
   },
   {
-   "w": "oído",
-   "s": 6.4,
-   "e": 6.96
+   "w": "Rosemary",
+   "s": 7.573,
+   "e": 7.88
   },
   {
-   "w": "y",
-   "s": 7.0,
-   "e": 7.04
+   "w": "zachodzi",
+   "s": 7.92,
+   "e": 8.24
   },
   {
-   "w": "le",
-   "s": 7.12,
-   "e": 7.2
+   "w": "w",
+   "s": 8.28,
+   "e": 8.32
   },
   {
-   "w": "pide",
-   "s": 7.28,
-   "e": 7.44
+   "w": "ciążę…",
+   "s": 8.4,
+   "e": 9.2
   },
   {
-   "w": "que",
-   "s": 7.48,
-   "e": 7.52
-  },
-  {
-   "w": "encuentre",
-   "s": 7.64,
-   "e": 8.0
-  },
-  {
-   "w": "el",
-   "s": 8.08,
-   "e": 8.16
-  },
-  {
-   "w": "momento",
-   "s": 8.36,
-   "e": 8.6
-  },
-  {
-   "w": "exacto",
-   "s": 8.64,
-   "e": 9.16
-  },
-  {
-   "w": "en",
-   "s": 9.2,
+   "w": "i",
+   "s": 9.28,
    "e": 9.36
   },
   {
-   "w": "que",
-   "s": 9.48,
-   "e": 9.6
+   "w": "z",
+   "s": 9.44,
+   "e": 9.48
   },
   {
-   "w": "todo",
-   "s": 9.76,
-   "e": 9.92
+   "w": "każdym",
+   "s": 9.52,
+   "e": 9.84
   },
   {
-   "w": "empezó.",
-   "s": 10.0,
-   "e": 10.92
+   "w": "tygodniem",
+   "s": 9.88,
+   "e": 10.32
   },
   {
-   "w": "Algo",
+   "w": "jest",
+   "s": 10.44,
+   "e": 10.56
+  },
+  {
+   "w": "coraz",
+   "s": 10.64,
+   "e": 10.88
+  },
+  {
+   "w": "pewniejsza,",
    "s": 10.96,
-   "e": 11.2
+   "e": 11.72
   },
   {
-   "w": "ha",
-   "s": 11.28,
-   "e": 11.36
-  },
-  {
-   "w": "pasado",
-   "s": 11.48,
-   "e": 11.76
-  },
-  {
-   "w": "en",
-   "s": 11.8,
+   "w": "że",
+   "s": 11.76,
    "e": 11.84
   },
   {
-   "w": "el",
+   "w": "sąsiedzi",
    "s": 11.92,
-   "e": 12.0
+   "e": 12.48
   },
   {
-   "w": "campo.",
-   "s": 12.08,
+   "w": "czegoś",
+   "s": 12.52,
    "e": 12.84
   },
   {
-   "w": "Algo",
+   "w": "chcą",
    "s": 12.88,
-   "e": 13.44
+   "e": 13.28
   },
   {
-   "w": "les",
-   "s": 13.52,
-   "e": 13.68
+   "w": "od",
+   "s": 13.32,
+   "e": 13.36
   },
   {
-   "w": "está",
-   "s": 13.8,
-   "e": 14.0
+   "w": "jej",
+   "s": 13.44,
+   "e": 13.52
   },
   {
-   "w": "pasando",
-   "s": 14.12,
+   "w": "dziecka.",
+   "s": 13.6,
    "e": 14.48
-  },
-  {
-   "w": "a",
-   "s": 14.52,
-   "e": 14.56
-  },
-  {
-   "w": "los",
-   "s": 14.64,
-   "e": 14.72
-  },
-  {
-   "w": "niños.",
-   "s": 14.8,
-   "e": 15.92
   }
  ],
- "speechEnd": 15.287
+ "speechEnd": 14.071
 }

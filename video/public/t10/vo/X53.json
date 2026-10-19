@@ -1,204 +1,199 @@
 {
  "id": "X53",
- "hash": "75c07a5bd377",
- "text": "Es la novela que fijó para siempre la imagen del vampiro. Tanto, que «Nosferatu», en mil novecientos veintidós, era Drácula con otro nombre y sin permiso: la viuda de Stoker lo denunció y un tribunal ordenó destruir las copias.",
- "duration": 15.68,
+ "hash": "8215aa37f8f3",
+ "text": "To powieść, która na zawsze ustaliła, jak wygląda wampir. Do tego stopnia, że „Nosferatu” z 1922 roku był Drakulą pod innym nazwiskiem i bez zgody: wdowa po Stokerze wytoczyła proces, a sąd nakazał zniszczyć kopie.",
+ "duration": 14.32,
  "words": [
   {
-   "w": "Es",
+   "w": "To",
    "s": 0.0,
-   "e": 0.24
+   "e": 0.08
   },
   {
-   "w": "la",
-   "s": 0.28,
-   "e": 0.32
+   "w": "powieść,",
+   "s": 0.16,
+   "e": 0.6
   },
   {
-   "w": "novela",
-   "s": 0.4,
-   "e": 0.72
-  },
-  {
-   "w": "que",
-   "s": 0.8,
+   "w": "która",
+   "s": 0.64,
    "e": 0.88
   },
   {
-   "w": "fijó",
+   "w": "na",
    "s": 0.96,
-   "e": 1.2
+   "e": 1.04
   },
   {
-   "w": "para",
-   "s": 1.32,
-   "e": 1.44
+   "w": "zawsze",
+   "s": 1.08,
+   "e": 1.36
   },
   {
-   "w": "siempre",
-   "s": 1.52,
-   "e": 1.84
-  },
-  {
-   "w": "la",
-   "s": 1.92,
+   "w": "ustaliła,",
+   "s": 1.44,
    "e": 2.0
   },
   {
-   "w": "imagen",
+   "w": "jak",
    "s": 2.08,
-   "e": 2.48
+   "e": 2.24
   },
   {
-   "w": "del",
-   "s": 2.56,
+   "w": "wygląda",
+   "s": 2.32,
    "e": 2.64
   },
   {
-   "w": "vampiro.",
-   "s": 2.68,
-   "e": 3.68
+   "w": "wampir.",
+   "s": 2.72,
+   "e": 3.44
   },
   {
-   "w": "Tanto,",
-   "s": 3.72,
-   "e": 4.32
+   "w": "Do",
+   "s": 3.48,
+   "e": 3.52
   },
   {
-   "w": "que",
-   "s": 4.48,
-   "e": 4.64
+   "w": "tego",
+   "s": 3.6,
+   "e": 3.76
   },
   {
-   "w": "«Nosferatu»,",
-   "s": 4.72,
-   "e": 5.68
+   "w": "stopnia,",
+   "s": 3.88,
+   "e": 4.24
   },
   {
-   "w": "en",
-   "s": 5.76,
-   "e": 5.84
+   "w": "że",
+   "s": 4.36,
+   "e": 4.48
   },
   {
-   "w": "mil",
-   "s": 5.92,
-   "e": 6.0
+   "w": "Nosferatu",
+   "s": 4.56,
+   "e": 5.12
   },
   {
-   "w": "novecientos",
-   "s": 6.04,
-   "e": 6.56
+   "w": "z",
+   "s": 5.16,
+   "e": 5.2
   },
   {
-   "w": "veintidós,",
-   "s": 6.64,
-   "e": 7.44
+   "w": "tysiąc",
+   "s": 5.24,
+   "e": 5.52
   },
   {
-   "w": "era",
-   "s": 7.56,
-   "e": 7.68
+   "w": "dziewięćset",
+   "s": 5.6,
+   "e": 5.92
   },
   {
-   "w": "Drácula",
-   "s": 7.76,
-   "e": 8.16
+   "w": "dwudziestego",
+   "s": 6.0,
+   "e": 6.4
   },
   {
-   "w": "con",
-   "s": 8.24,
-   "e": 8.4
+   "w": "drugiego",
+   "s": 6.48,
+   "e": 6.8
   },
   {
-   "w": "otro",
-   "s": 8.48,
-   "e": 8.64
+   "w": "roku",
+   "s": 6.88,
+   "e": 7.12
   },
   {
-   "w": "nombre",
-   "s": 8.88,
+   "w": "był",
+   "s": 7.44,
+   "e": 7.56
+  },
+  {
+   "w": "Drakulą",
+   "s": 7.6,
+   "e": 8.08
+  },
+  {
+   "w": "pod",
+   "s": 8.2,
+   "e": 8.32
+  },
+  {
+   "w": "innym",
+   "s": 8.4,
+   "e": 8.56
+  },
+  {
+   "w": "nazwiskiem",
+   "s": 8.64,
    "e": 9.12
   },
   {
-   "w": "y",
-   "s": 9.2,
-   "e": 9.28
+   "w": "i",
+   "s": 9.28,
+   "e": 9.32
   },
   {
-   "w": "sin",
+   "w": "bez",
    "s": 9.36,
    "e": 9.52
   },
   {
-   "w": "permiso:",
+   "w": "zgody:",
    "s": 9.6,
-   "e": 10.56
+   "e": 10.4
   },
   {
-   "w": "la",
-   "s": 10.64,
+   "w": "wdowa",
+   "s": 10.48,
    "e": 10.72
   },
   {
-   "w": "viuda",
-   "s": 10.8,
-   "e": 11.04
+   "w": "po",
+   "s": 10.76,
+   "e": 10.8
   },
   {
-   "w": "de",
-   "s": 11.08,
-   "e": 11.12
+   "w": "Stokerze",
+   "s": 10.88,
+   "e": 11.28
   },
   {
-   "w": "Stoker",
-   "s": 11.2,
+   "w": "wytoczyła",
+   "s": 11.333,
    "e": 11.68
   },
   {
-   "w": "lo",
+   "w": "proces,",
    "s": 11.76,
-   "e": 11.84
+   "e": 12.32
   },
   {
-   "w": "denunció",
-   "s": 11.92,
-   "e": 12.64
+   "w": "a",
+   "s": 12.36,
+   "e": 12.4
   },
   {
-   "w": "y",
-   "s": 12.68,
-   "e": 12.72
+   "w": "sąd",
+   "s": 12.48,
+   "e": 12.8
   },
   {
-   "w": "un",
-   "s": 12.8,
-   "e": 12.88
+   "w": "nakazał",
+   "s": 12.88,
+   "e": 13.2
   },
   {
-   "w": "tribunal",
-   "s": 13.0,
-   "e": 13.36
+   "w": "zniszczyć",
+   "s": 13.28,
+   "e": 13.68
   },
   {
-   "w": "ordenó",
-   "s": 13.52,
-   "e": 13.76
-  },
-  {
-   "w": "destruir",
-   "s": 13.84,
+   "w": "kopie.",
+   "s": 13.8,
    "e": 14.32
-  },
-  {
-   "w": "las",
-   "s": 14.44,
-   "e": 14.56
-  },
-  {
-   "w": "copias.",
-   "s": 14.68,
-   "e": 15.68
   }
  ],
- "speechEnd": 15.125
+ "speechEnd": 14.136
 }

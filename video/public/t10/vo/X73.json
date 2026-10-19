@@ -1,219 +1,129 @@
 {
  "id": "X73",
- "hash": "f45898a449ad",
- "text": "Layla Martínez se inspiró en la casa que levantó su bisabuelo y en un armario que se abría solo. El resultado es terror rural, corto y feroz, y uno de los fenómenos editoriales del terror en España: ha agotado edición tras edición.",
- "duration": 15.76,
+ "hash": "098dbe9d8e3e",
+ "text": "Tą powieścią Darda zadebiutował w 2008 roku, a książka była nominowana do Nagrody Zajdla. Groza miesza się tu z polskimi wierzeniami ludowymi.",
+ "duration": 9.12,
  "words": [
   {
-   "w": "Layla",
+   "w": "Tą",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.16
   },
   {
-   "w": "Martínez",
-   "s": 0.44,
-   "e": 1.04
+   "w": "powieścią",
+   "s": 0.24,
+   "e": 0.72
   },
   {
-   "w": "se",
-   "s": 1.12,
+   "w": "Darda",
+   "s": 0.8,
    "e": 1.2
   },
   {
-   "w": "inspiró",
-   "s": 1.32,
-   "e": 1.6
-  },
-  {
-   "w": "en",
-   "s": 1.64,
-   "e": 1.68
-  },
-  {
-   "w": "la",
-   "s": 1.76,
+   "w": "zadebiutował",
+   "s": 1.28,
    "e": 1.84
   },
   {
-   "w": "casa",
+   "w": "w",
    "s": 1.88,
+   "e": 1.92
+  },
+  {
+   "w": "dwa",
+   "s": 1.96,
    "e": 2.08
   },
   {
-   "w": "que",
+   "w": "tysiące",
    "s": 2.16,
-   "e": 2.24
+   "e": 2.48
   },
   {
-   "w": "levantó",
-   "s": 2.44,
-   "e": 2.72
+   "w": "ósmym",
+   "s": 2.64,
+   "e": 2.88
   },
   {
-   "w": "su",
-   "s": 2.76,
-   "e": 2.8
+   "w": "roku,",
+   "s": 2.96,
+   "e": 3.44
   },
   {
-   "w": "bisabuelo",
-   "s": 2.88,
-   "e": 3.68
+   "w": "a",
+   "s": 3.48,
+   "e": 3.52
   },
   {
-   "w": "y",
-   "s": 3.72,
-   "e": 3.76
+   "w": "książka",
+   "s": 3.6,
+   "e": 4.0
   },
   {
-   "w": "en",
-   "s": 3.8,
-   "e": 3.84
+   "w": "była",
+   "s": 4.08,
+   "e": 4.24
   },
   {
-   "w": "un",
-   "s": 3.88,
-   "e": 3.92
+   "w": "nominowana",
+   "s": 4.28,
+   "e": 4.8
   },
   {
-   "w": "armario",
-   "s": 4.0,
-   "e": 4.48
+   "w": "do",
+   "s": 4.84,
+   "e": 4.88
   },
   {
-   "w": "que",
-   "s": 4.56,
-   "e": 4.64
+   "w": "Nagrody",
+   "s": 4.92,
+   "e": 5.28
   },
   {
-   "w": "se",
-   "s": 4.72,
-   "e": 4.76
+   "w": "Zajdla.",
+   "s": 5.36,
+   "e": 6.32
   },
   {
-   "w": "abría",
-   "s": 4.8,
-   "e": 5.2
-  },
-  {
-   "w": "solo.",
-   "s": 5.24,
-   "e": 6.04
-  },
-  {
-   "w": "El",
-   "s": 6.08,
-   "e": 6.16
-  },
-  {
-   "w": "resultado",
-   "s": 6.24,
+   "w": "Groza",
+   "s": 6.44,
    "e": 6.8
   },
   {
-   "w": "es",
+   "w": "miesza",
    "s": 6.88,
-   "e": 7.2
+   "e": 7.12
   },
   {
-   "w": "terror",
+   "w": "się",
+   "s": 7.16,
+   "e": 7.28
+  },
+  {
+   "w": "tu",
+   "s": 7.32,
+   "e": 7.36
+  },
+  {
+   "w": "z",
    "s": 7.4,
-   "e": 7.6
+   "e": 7.44
   },
   {
-   "w": "rural,",
-   "s": 7.68,
-   "e": 8.36
+   "w": "polskimi",
+   "s": 7.48,
+   "e": 7.92
   },
   {
-   "w": "corto",
-   "s": 8.4,
-   "e": 8.8
+   "w": "wierzeniami",
+   "s": 7.96,
+   "e": 8.4
   },
   {
-   "w": "y",
-   "s": 8.88,
-   "e": 8.96
-  },
-  {
-   "w": "feroz,",
-   "s": 9.08,
-   "e": 9.72
-  },
-  {
-   "w": "y",
-   "s": 9.76,
-   "e": 9.8
-  },
-  {
-   "w": "uno",
-   "s": 9.84,
-   "e": 10.0
-  },
-  {
-   "w": "de",
-   "s": 10.04,
-   "e": 10.08
-  },
-  {
-   "w": "los",
-   "s": 10.16,
-   "e": 10.24
-  },
-  {
-   "w": "fenómenos",
-   "s": 10.32,
-   "e": 10.72
-  },
-  {
-   "w": "editoriales",
-   "s": 10.92,
-   "e": 11.36
-  },
-  {
-   "w": "del",
-   "s": 11.44,
-   "e": 11.6
-  },
-  {
-   "w": "terror",
-   "s": 11.76,
-   "e": 11.92
-  },
-  {
-   "w": "en",
-   "s": 12.0,
-   "e": 12.08
-  },
-  {
-   "w": "España:",
-   "s": 12.2,
-   "e": 13.0
-  },
-  {
-   "w": "ha",
-   "s": 13.04,
-   "e": 13.12
-  },
-  {
-   "w": "agotado",
-   "s": 13.2,
-   "e": 13.68
-  },
-  {
-   "w": "edición",
-   "s": 13.76,
-   "e": 14.32
-  },
-  {
-   "w": "tras",
-   "s": 14.4,
-   "e": 14.56
-  },
-  {
-   "w": "edición.",
-   "s": 14.64,
-   "e": 15.76
+   "w": "ludowymi.",
+   "s": 8.48,
+   "e": 9.12
   }
  ],
- "speechEnd": 15.273
+ "speechEnd": 9.12
 }

@@ -1,214 +1,179 @@
 {
  "id": "X52",
- "hash": "f92ec3c2f9ae",
- "text": "Un joven abogado viaja a Transilvania para cerrar la compra de una finca cerca de Londres. Su cliente es un conde que nunca come con él, que no aparece en el espejo y que de día no está en ninguna parte.",
- "duration": 12.96,
+ "hash": "0656bc30290a",
+ "text": "Młody prawnik jedzie do Transylwanii, żeby sfinalizować sprzedaż posiadłości pod Londynem. Jego klient to hrabia, który nigdy nie je z nim kolacji, nie odbija się w lustrze i za dnia nigdzie go nie ma.",
+ "duration": 11.76,
  "words": [
   {
-   "w": "Un",
+   "w": "Młody",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.32
   },
   {
-   "w": "joven",
-   "s": 0.24,
-   "e": 0.48
+   "w": "prawnik",
+   "s": 0.4,
+   "e": 0.88
   },
   {
-   "w": "abogado",
-   "s": 0.56,
-   "e": 0.96
+   "w": "jedzie",
+   "s": 0.92,
+   "e": 1.12
   },
   {
-   "w": "viaja",
-   "s": 1.12,
-   "e": 1.44
+   "w": "do",
+   "s": 1.16,
+   "e": 1.2
   },
   {
-   "w": "a",
-   "s": 1.48,
-   "e": 1.52
+   "w": "Transylwanii,",
+   "s": 1.28,
+   "e": 2.04
   },
   {
-   "w": "Transilvania",
-   "s": 1.68,
+   "w": "żeby",
+   "s": 2.08,
    "e": 2.32
   },
   {
-   "w": "para",
-   "s": 2.4,
-   "e": 2.56
-  },
-  {
-   "w": "cerrar",
-   "s": 2.68,
-   "e": 2.88
-  },
-  {
-   "w": "la",
-   "s": 2.96,
+   "w": "sfinalizować",
+   "s": 2.36,
    "e": 3.04
   },
   {
-   "w": "compra",
+   "w": "sprzedaż",
    "s": 3.12,
-   "e": 3.44
-  },
-  {
-   "w": "de",
-   "s": 3.48,
    "e": 3.52
   },
   {
-   "w": "una",
-   "s": 3.6,
-   "e": 3.76
+   "w": "posiadłości",
+   "s": 3.56,
+   "e": 4.08
   },
   {
-   "w": "finca",
-   "s": 3.88,
-   "e": 4.16
+   "w": "pod",
+   "s": 4.16,
+   "e": 4.24
   },
   {
-   "w": "cerca",
-   "s": 4.24,
-   "e": 4.56
+   "w": "Londynem.",
+   "s": 4.28,
+   "e": 5.147
   },
   {
-   "w": "de",
-   "s": 4.6,
-   "e": 4.64
+   "w": "Jego",
+   "s": 5.173,
+   "e": 5.36
   },
   {
-   "w": "Londres.",
-   "s": 4.68,
-   "e": 5.64
-  },
-  {
-   "w": "Su",
-   "s": 5.68,
+   "w": "klient",
+   "s": 5.4,
    "e": 5.76
   },
   {
-   "w": "cliente",
+   "w": "to",
    "s": 5.84,
-   "e": 6.24
+   "e": 5.92
   },
   {
-   "w": "es",
-   "s": 6.32,
-   "e": 6.4
+   "w": "hrabia,",
+   "s": 6.0,
+   "e": 6.453
   },
   {
-   "w": "un",
-   "s": 6.48,
-   "e": 6.64
+   "w": "który",
+   "s": 6.507,
+   "e": 6.8
   },
   {
-   "w": "conde",
-   "s": 6.8,
-   "e": 6.96
-  },
-  {
-   "w": "que",
-   "s": 7.04,
+   "w": "nigdy",
+   "s": 6.84,
    "e": 7.12
   },
   {
-   "w": "nunca",
-   "s": 7.2,
+   "w": "nie",
+   "s": 7.16,
+   "e": 7.2
+  },
+  {
+   "w": "je",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "z",
+   "s": 7.387,
+   "e": 7.413
+  },
+  {
+   "w": "nim",
+   "s": 7.44,
    "e": 7.52
   },
   {
-   "w": "come",
-   "s": 7.64,
-   "e": 7.76
+   "w": "kolacji,",
+   "s": 7.6,
+   "e": 8.36
   },
   {
-   "w": "con",
-   "s": 7.84,
-   "e": 7.92
+   "w": "nie",
+   "s": 8.4,
+   "e": 8.44
   },
   {
-   "w": "él,",
-   "s": 8.0,
-   "e": 8.507
+   "w": "odbija",
+   "s": 8.48,
+   "e": 8.8
   },
   {
-   "w": "que",
-   "s": 8.533,
-   "e": 8.56
+   "w": "się",
+   "s": 8.88,
+   "e": 8.96
   },
   {
-   "w": "no",
-   "s": 8.6,
-   "e": 8.64
+   "w": "w",
+   "s": 8.987,
+   "e": 9.013
   },
   {
-   "w": "aparece",
-   "s": 8.72,
-   "e": 9.12
+   "w": "lustrze",
+   "s": 9.04,
+   "e": 9.68
   },
   {
-   "w": "en",
-   "s": 9.16,
-   "e": 9.2
+   "w": "i",
+   "s": 9.72,
+   "e": 9.76
   },
   {
-   "w": "el",
-   "s": 9.24,
-   "e": 9.28
+   "w": "za",
+   "s": 9.84,
+   "e": 9.92
   },
   {
-   "w": "espejo",
-   "s": 9.36,
-   "e": 10.08
+   "w": "dnia",
+   "s": 10.0,
+   "e": 10.32
   },
   {
-   "w": "y",
-   "s": 10.16,
-   "e": 10.24
+   "w": "nigdzie",
+   "s": 10.4,
+   "e": 10.64
   },
   {
-   "w": "que",
-   "s": 10.32,
-   "e": 10.4
+   "w": "go",
+   "s": 10.72,
+   "e": 10.8
   },
   {
-   "w": "de",
-   "s": 10.44,
-   "e": 10.48
+   "w": "nie",
+   "s": 10.88,
+   "e": 10.96
   },
   {
-   "w": "día",
-   "s": 10.56,
-   "e": 10.88
-  },
-  {
-   "w": "no",
-   "s": 10.96,
-   "e": 11.04
-  },
-  {
-   "w": "está",
-   "s": 11.16,
-   "e": 11.32
-  },
-  {
-   "w": "en",
-   "s": 11.36,
-   "e": 11.44
-  },
-  {
-   "w": "ninguna",
-   "s": 11.52,
-   "e": 12.0
-  },
-  {
-   "w": "parte.",
-   "s": 12.16,
-   "e": 12.96
+   "w": "ma.",
+   "s": 11.32,
+   "e": 11.76
   }
  ],
- "speechEnd": 12.45
+ "speechEnd": 11.76
 }

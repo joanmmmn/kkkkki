@@ -1,59 +1,49 @@
 {
  "id": "X31",
- "hash": "0972088d2a29",
- "text": "Número ocho: «Cómo vender una casa encantada», de Grady Hendrix.",
- "duration": 5.52,
+ "hash": "429d6750ae7f",
+ "text": "Numer osiem: „Jak sprzedać nawiedzony dom” Grady’ego Hendrixa.",
+ "duration": 4.32,
  "words": [
   {
-   "w": "Número",
+   "w": "Numer",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.24
   },
   {
-   "w": "ocho:",
-   "s": 0.48,
+   "w": "osiem:",
+   "s": 0.4,
+   "e": 1.12
+  },
+  {
+   "w": "„Jak",
+   "s": 1.2,
    "e": 1.36
   },
   {
-   "w": "«Cómo",
-   "s": 1.4,
-   "e": 1.6
+   "w": "sprzedać",
+   "s": 1.44,
+   "e": 1.88
   },
   {
-   "w": "vender",
-   "s": 1.68,
-   "e": 2.0
+   "w": "nawiedzony",
+   "s": 1.92,
+   "e": 2.4
   },
   {
-   "w": "una",
-   "s": 2.08,
-   "e": 2.24
+   "w": "dom”",
+   "s": 2.56,
+   "e": 2.72
   },
   {
-   "w": "casa",
-   "s": 2.32,
-   "e": 2.56
+   "w": "Grady’ego",
+   "s": 2.8,
+   "e": 3.28
   },
   {
-   "w": "encantada»,",
-   "s": 2.68,
-   "e": 3.68
-  },
-  {
-   "w": "de",
-   "s": 3.76,
-   "e": 3.84
-  },
-  {
-   "w": "Grady",
-   "s": 3.92,
+   "w": "Hendrixa.",
+   "s": 3.32,
    "e": 4.32
-  },
-  {
-   "w": "Hendrix.",
-   "s": 4.36,
-   "e": 5.52
   }
  ],
- "speechEnd": 4.96
+ "speechEnd": 3.959
 }

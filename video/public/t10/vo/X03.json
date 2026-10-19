@@ -1,69 +1,44 @@
 {
  "id": "X03",
- "hash": "b76c001eea94",
- "text": "Estas son las diez historias de terror que dan miedo de verdad.",
- "duration": 4.56,
+ "hash": "75868d6f88bd",
+ "text": "Oto dziesięć historii grozy, które naprawdę przerażają.",
+ "duration": 3.92,
  "words": [
   {
-   "w": "Estas",
+   "w": "Oto",
    "s": 0.0,
-   "e": 0.4
+   "e": 0.32
   },
   {
-   "w": "son",
-   "s": 0.52,
-   "e": 0.64
+   "w": "dziesięć",
+   "s": 0.4,
+   "e": 0.72
   },
   {
-   "w": "las",
-   "s": 0.72,
-   "e": 0.88
+   "w": "historii",
+   "s": 0.8,
+   "e": 1.2
   },
   {
-   "w": "diez",
-   "s": 0.96,
-   "e": 1.16
+   "w": "grozy,",
+   "s": 1.28,
+   "e": 1.76
   },
   {
-   "w": "historias",
-   "s": 1.2,
-   "e": 1.68
+   "w": "które",
+   "s": 1.8,
+   "e": 2.08
   },
   {
-   "w": "de",
-   "s": 1.76,
-   "e": 1.84
+   "w": "naprawdę",
+   "s": 2.24,
+   "e": 2.72
   },
   {
-   "w": "terror",
-   "s": 2.16,
-   "e": 2.48
-  },
-  {
-   "w": "que",
-   "s": 2.56,
-   "e": 2.64
-  },
-  {
-   "w": "dan",
-   "s": 2.8,
-   "e": 2.96
-  },
-  {
-   "w": "miedo",
-   "s": 3.0,
-   "e": 3.36
-  },
-  {
-   "w": "de",
-   "s": 3.44,
-   "e": 3.52
-  },
-  {
-   "w": "verdad.",
-   "s": 3.6,
-   "e": 4.56
+   "w": "przerażają.",
+   "s": 2.76,
+   "e": 3.92
   }
  ],
- "speechEnd": 4.016
+ "speechEnd": 3.52
 }

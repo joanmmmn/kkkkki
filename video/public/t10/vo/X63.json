@@ -1,129 +1,169 @@
 {
  "id": "X63",
- "hash": "eb0dd0130045",
- "text": "Empezó como un blog en internet antes de ser novela, y su adaptación es una de las películas internacionales más vistas de Prime Video.",
- "duration": 8.88,
+ "hash": "f5d859fdced0",
+ "text": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w 2026 roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów.",
+ "duration": 13.12,
  "words": [
   {
-   "w": "Empezó",
+   "w": "To",
    "s": 0.0,
-   "e": 0.4
+   "e": 0.16
   },
   {
-   "w": "como",
-   "s": 0.52,
-   "e": 0.64
+   "w": "polska",
+   "s": 0.2,
+   "e": 0.56
   },
   {
-   "w": "un",
-   "s": 0.68,
-   "e": 0.72
+   "w": "groza",
+   "s": 0.64,
+   "e": 0.96
   },
   {
-   "w": "blog",
-   "s": 0.8,
-   "e": 1.04
-  },
-  {
-   "w": "en",
-   "s": 1.08,
+   "w": "z",
+   "s": 1.04,
    "e": 1.12
   },
   {
-   "w": "internet",
-   "s": 1.2,
-   "e": 1.84
+   "w": "prawdziwego",
+   "s": 1.16,
+   "e": 1.6
   },
   {
-   "w": "antes",
-   "s": 1.92,
-   "e": 2.24
-  },
-  {
-   "w": "de",
-   "s": 2.28,
-   "e": 2.32
-  },
-  {
-   "w": "ser",
-   "s": 2.4,
+   "w": "zdarzenia:",
+   "s": 1.68,
    "e": 2.56
   },
   {
-   "w": "novela,",
+   "w": "debiut,",
    "s": 2.64,
-   "e": 3.48
+   "e": 2.92
   },
   {
-   "w": "y",
-   "s": 3.52,
-   "e": 3.6
+   "w": "który",
+   "s": 2.96,
+   "e": 3.12
   },
   {
-   "w": "su",
-   "s": 3.64,
-   "e": 3.68
+   "w": "zdobył",
+   "s": 3.2,
+   "e": 3.467
   },
   {
-   "w": "adaptación",
-   "s": 3.76,
-   "e": 4.56
+   "w": "Nagrodę",
+   "s": 3.493,
+   "e": 3.8
   },
   {
-   "w": "es",
-   "s": 4.64,
-   "e": 4.8
+   "w": "Czytelników",
+   "s": 3.84,
+   "e": 4.4
   },
   {
-   "w": "una",
-   "s": 4.88,
-   "e": 4.96
+   "w": "imienia",
+   "s": 4.48,
+   "e": 4.72
   },
   {
-   "w": "de",
-   "s": 5.0,
-   "e": 5.04
+   "w": "Stefana",
+   "s": 4.8,
+   "e": 5.12
   },
   {
-   "w": "las",
-   "s": 5.12,
-   "e": 5.2
+   "w": "Grabińskiego.",
+   "s": 5.2,
+   "e": 6.24
   },
   {
-   "w": "películas",
-   "s": 5.28,
-   "e": 5.68
+   "w": "A",
+   "s": 6.28,
+   "e": 6.32
   },
   {
-   "w": "internacionales",
-   "s": 5.76,
-   "e": 6.72
+   "w": "w",
+   "s": 6.4,
+   "e": 6.44
   },
   {
-   "w": "más",
-   "s": 6.76,
+   "w": "dwa",
+   "s": 6.48,
+   "e": 6.6
+  },
+  {
+   "w": "tysiące",
+   "s": 6.64,
    "e": 6.96
   },
   {
-   "w": "vistas",
-   "s": 7.0,
-   "e": 7.36
+   "w": "dwudziestym",
+   "s": 7.04,
+   "e": 7.44
   },
   {
-   "w": "de",
-   "s": 7.44,
-   "e": 7.6
+   "w": "szóstym",
+   "s": 7.52,
+   "e": 7.76
   },
   {
-   "w": "Prime",
-   "s": 7.64,
-   "e": 7.92
+   "w": "roku",
+   "s": 7.84,
+   "e": 8.08
   },
   {
-   "w": "Video.",
-   "s": 8.36,
+   "w": "powstało",
+   "s": 8.16,
+   "e": 8.56
+  },
+  {
+   "w": "z",
+   "s": 8.64,
+   "e": 8.693
+  },
+  {
+   "w": "niego",
+   "s": 8.747,
    "e": 8.88
+  },
+  {
+   "w": "słuchowisko",
+   "s": 9.0,
+   "e": 9.52
+  },
+  {
+   "w": "z",
+   "s": 9.68,
+   "e": 9.707
+  },
+  {
+   "w": "Danutą",
+   "s": 9.733,
+   "e": 10.08
+  },
+  {
+   "w": "Stenką",
+   "s": 10.16,
+   "e": 10.56
+  },
+  {
+   "w": "i",
+   "s": 10.88,
+   "e": 10.96
+  },
+  {
+   "w": "ponad",
+   "s": 11.04,
+   "e": 11.28
+  },
+  {
+   "w": "pięćdziesięciorgiem",
+   "s": 11.36,
+   "e": 12.08
+  },
+  {
+   "w": "aktorów.",
+   "s": 12.16,
+   "e": 13.12
   }
  ],
- "speechEnd": 8.65
+ "speechEnd": 12.784
 }

@@ -1,174 +1,189 @@
 {
  "id": "X93",
- "hash": "a974e5944539",
- "text": "Es terror sobrenatural, pero también del más real. Ganó el Premio Herralde y, para buena parte de la crítica, es una de las grandes novelas de terror escritas en español en este siglo.",
- "duration": 12.0,
+ "hash": "dc8e7659b473",
+ "text": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.",
+ "duration": 12.64,
  "words": [
   {
-   "w": "Es",
+   "w": "To",
    "s": 0.0,
-   "e": 0.24
+   "e": 0.16
   },
   {
-   "w": "terror",
-   "s": 0.32,
-   "e": 0.72
+   "w": "pierwszy",
+   "s": 0.2,
+   "e": 0.56
   },
   {
-   "w": "sobrenatural,",
-   "s": 0.76,
-   "e": 1.84
+   "w": "horror",
+   "s": 0.64,
+   "e": 0.96
   },
   {
-   "w": "pero",
-   "s": 1.88,
-   "e": 2.0
+   "w": "Mastertona,",
+   "s": 1.0,
+   "e": 1.64
   },
   {
-   "w": "también",
-   "s": 2.08,
-   "e": 2.48
+   "w": "który",
+   "s": 1.68,
+   "e": 2.08
   },
   {
-   "w": "del",
-   "s": 2.6,
+   "w": "bardzo",
+   "s": 2.2,
+   "e": 2.4
+  },
+  {
+   "w": "szybko",
+   "s": 2.44,
    "e": 2.72
   },
   {
-   "w": "más",
+   "w": "stał",
    "s": 2.8,
-   "e": 2.96
+   "e": 2.92
   },
   {
-   "w": "real.",
-   "s": 3.04,
-   "e": 4.0
+   "w": "się",
+   "s": 2.96,
+   "e": 3.08
   },
   {
-   "w": "Ganó",
-   "s": 4.04,
-   "e": 4.28
+   "w": "światowym",
+   "s": 3.12,
+   "e": 3.52
   },
   {
-   "w": "el",
-   "s": 4.32,
-   "e": 4.4
+   "w": "bestsellerem.",
+   "s": 3.6,
+   "e": 4.587
   },
   {
-   "w": "Premio",
-   "s": 4.48,
-   "e": 4.72
+   "w": "A",
+   "s": 4.613,
+   "e": 4.64
   },
   {
-   "w": "Herralde",
+   "w": "w",
+   "s": 4.72,
+   "e": 4.76
+  },
+  {
+   "w": "Polsce",
    "s": 4.8,
-   "e": 5.28
+   "e": 5.12
   },
   {
-   "w": "y,",
-   "s": 5.6,
-   "e": 5.76
+   "w": "Masterton",
+   "s": 5.2,
+   "e": 5.68
   },
   {
-   "w": "para",
+   "w": "ma",
+   "s": 5.76,
+   "e": 5.84
+  },
+  {
+   "w": "tylu",
    "s": 5.88,
-   "e": 6.0
+   "e": 6.08
   },
   {
-   "w": "buena",
-   "s": 6.04,
-   "e": 6.24
+   "w": "fanów,",
+   "s": 6.2,
+   "e": 6.76
   },
   {
-   "w": "parte",
-   "s": 6.32,
-   "e": 6.56
-  },
-  {
-   "w": "de",
-   "s": 6.6,
-   "e": 6.64
-  },
-  {
-   "w": "la",
-   "s": 6.68,
-   "e": 6.72
-  },
-  {
-   "w": "crítica,",
+   "w": "że",
    "s": 6.8,
-   "e": 7.52
+   "e": 6.88
   },
   {
-   "w": "es",
-   "s": 7.6,
-   "e": 7.68
+   "w": "w",
+   "s": 6.92,
+   "e": 6.96
   },
   {
-   "w": "una",
-   "s": 7.76,
+   "w": "dwa",
+   "s": 7.0,
+   "e": 7.08
+  },
+  {
+   "w": "tysiące",
+   "s": 7.12,
+   "e": 7.44
+  },
+  {
+   "w": "dwudziestym",
+   "s": 7.52,
    "e": 7.84
   },
   {
-   "w": "de",
+   "w": "pierwszym",
    "s": 7.92,
-   "e": 7.96
+   "e": 8.24
   },
   {
-   "w": "las",
-   "s": 8.0,
-   "e": 8.08
+   "w": "roku",
+   "s": 8.32,
+   "e": 8.64
   },
   {
-   "w": "grandes",
-   "s": 8.16,
-   "e": 8.48
-  },
-  {
-   "w": "novelas",
-   "s": 8.56,
-   "e": 8.96
-  },
-  {
-   "w": "de",
-   "s": 9.0,
+   "w": "Wrocław",
+   "s": 8.68,
    "e": 9.04
   },
   {
-   "w": "terror",
+   "w": "postawił",
    "s": 9.12,
-   "e": 9.44
+   "e": 9.52
   },
   {
-   "w": "escritas",
-   "s": 9.56,
-   "e": 9.92
+   "w": "mu",
+   "s": 9.6,
+   "e": 9.68
   },
   {
-   "w": "en",
-   "s": 10.0,
-   "e": 10.08
+   "w": "krasnala",
+   "s": 9.72,
+   "e": 10.16
   },
   {
-   "w": "español",
-   "s": 10.16,
-   "e": 10.56
+   "w": "z",
+   "s": 10.24,
+   "e": 10.28
   },
   {
-   "w": "en",
-   "s": 10.64,
-   "e": 10.72
-  },
-  {
-   "w": "este",
-   "s": 10.8,
+   "w": "brązu",
+   "s": 10.32,
    "e": 11.04
   },
   {
-   "w": "siglo.",
-   "s": 11.16,
-   "e": 12.0
+   "w": "–",
+   "s": 11.06,
+   "e": 11.08
+  },
+  {
+   "w": "z",
+   "s": 11.1,
+   "e": 11.12
+  },
+  {
+   "w": "Manitou",
+   "s": 11.2,
+   "e": 11.52
+  },
+  {
+   "w": "w",
+   "s": 11.56,
+   "e": 11.6
+  },
+  {
+   "w": "ręku.",
+   "s": 11.72,
+   "e": 12.64
   }
  ],
- "speechEnd": 11.531
+ "speechEnd": 12.028
 }

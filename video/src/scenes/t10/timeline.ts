@@ -1,7 +1,7 @@
 import { FPS } from '../../brand/tokens';
 import { VOS, voFrames, voSpeechFrames, wordFrame } from '../../lib/vo';
 
-// «Los 10 mejores» · Terror. Locución en public/t10/vo (ids X..; Y.. para el vertical).
+// «10 historii grozy» (SonorBooks Polska; adaptación de «Los 10 mejores · Terror»). Locución en public/t10/vo (ids X..; Y.. para el vertical).
 export const sec = (s: number) => Math.round(s * FPS);
 export const hasVO = (id: string) => Boolean(VOS[id]);
 export const speechFrames = (id: string) => (hasVO(id) ? voSpeechFrames(id) : sec(4));
@@ -66,7 +66,7 @@ export const T10_SCENES: SceneDef[] = [
   bookScene(9, ['X91', 'X92', 'X93'], 'X93', [0.5, 0.75]),
   bookScene(10, ['X101', 'X102', 'X103', 'X105'], 'X103', [0.5, 0.75, 1.3], 60),
   scene('TIP', ['X111'], { lead: sec(0.6), extra: 30, night: true, tin: 'cut' }),
-  // Las diez de un vistazo: narrador, nota, duración y prueba gratis (primera frase de X112, partida con tools/vo_split.py).
+  // Las diez de un vistazo (POSŁUCHAJ): lektor, nota, duración y cómo empezar.
   scene('ESCUCHA', ['X112A'], { lead: sec(0.5), extra: sec(2.4) }),
   scene('WEB', ['X112B'], { lead: sec(0.3), extra: 40 }),
   scene('COMENT', ['X113'], { extra: 30 }),
@@ -96,16 +96,16 @@ export const sceneClock = (sceneId: string) => {
 
 // Capítulos de YouTube (descripción).
 export const T10_CHAPTERS: { label: string; from: string }[] = [
-  { label: '10 libros de terror que dan miedo de verdad', from: 'HOOK' },
-  { label: '10. La llamada de Cthulhu (H. P. Lovecraft)', from: 'B1' },
-  { label: '9. Cuentos de Edgar Allan Poe', from: 'B2' },
-  { label: '8. Cómo vender una casa encantada (Grady Hendrix)', from: 'B3' },
-  { label: '7. Distancia de rescate (Samanta Schweblin)', from: 'B4' },
-  { label: '6. Drácula (Bram Stoker)', from: 'B5' },
-  { label: '5. Apocalipsis Z (Manel Loureiro)', from: 'B6' },
-  { label: '4. Carcoma (Layla Martínez)', from: 'B7' },
-  { label: "3. El misterio de Salem's Lot (Stephen King)", from: 'B8' },
-  { label: '2. Nuestra parte de noche (Mariana Enriquez)', from: 'B9' },
-  { label: '1. El exorcista (William Peter Blatty)', from: 'B10' },
-  { label: 'Cómo escucharlos (y dónde)', from: 'TIP' },
+  { label: '10 historii grozy, które naprawdę przerażają', from: 'HOOK' },
+  { label: '10. Zew Cthulhu (H.P. Lovecraft)', from: 'B1' },
+  { label: '9. Opowiadania Edgara Allana Poego', from: 'B2' },
+  { label: '8. Jak sprzedać nawiedzony dom (Grady Hendrix)', from: 'B3' },
+  { label: '7. Dziecko Rosemary (Ira Levin)', from: 'B4' },
+  { label: '6. Drakula (Bram Stoker)', from: 'B5' },
+  { label: '5. Inkub (Artur Urbanowicz)', from: 'B6' },
+  { label: '4. Dom na Wyrębach (Stefan Darda)', from: 'B7' },
+  { label: '3. Miasteczko Salem (Stephen King)', from: 'B8' },
+  { label: '2. Manitou (Graham Masterton)', from: 'B9' },
+  { label: '1. Nie otwieraj oczu (Josh Malerman)', from: 'B10' },
+  { label: 'Jak i gdzie ich posłuchać', from: 'TIP' },
 ];

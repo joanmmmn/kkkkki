@@ -1,39 +1,34 @@
 {
  "id": "X07",
- "hash": "a822f0ddf4f3",
- "text": "Vamos de menos a más miedo.",
- "duration": 2.56,
+ "hash": "11d02e8c0093",
+ "text": "Od najmniej strasznej do najstraszniejszej.",
+ "duration": 3.28,
  "words": [
   {
-   "w": "Vamos",
+   "w": "Od",
    "s": 0.0,
-   "e": 0.4
+   "e": 0.08
   },
   {
-   "w": "de",
-   "s": 0.48,
+   "w": "najmniej",
+   "s": 0.16,
    "e": 0.56
   },
   {
-   "w": "menos",
-   "s": 0.68,
-   "e": 0.96
+   "w": "strasznej",
+   "s": 0.64,
+   "e": 1.36
   },
   {
-   "w": "a",
-   "s": 1.04,
-   "e": 1.12
+   "w": "do",
+   "s": 1.44,
+   "e": 1.68
   },
   {
-   "w": "más",
-   "s": 1.16,
-   "e": 1.44
-  },
-  {
-   "w": "miedo.",
-   "s": 1.48,
-   "e": 2.56
+   "w": "najstraszniejszej.",
+   "s": 1.84,
+   "e": 3.28
   }
  ],
- "speechEnd": 1.995
+ "speechEnd": 2.879
 }

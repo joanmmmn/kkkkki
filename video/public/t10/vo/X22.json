@@ -1,229 +1,179 @@
 {
  "id": "X22",
- "hash": "b459a69392f6",
- "text": "Un hombre te jura que no está loco mientras te cuenta cómo mató a un anciano… y cómo sigue oyendo latir su corazón bajo las tablas del suelo. Una mujer enterrada en vida en la casa Usher. Un gato negro que no se marcha.",
- "duration": 15.52,
+ "hash": "ad29dedd76c3",
+ "text": "Mężczyzna przysięga ci, że nie jest szalony, i opowiada, jak zabił starca… i jak wciąż słyszy bicie jego serca pod deskami podłogi. Kobieta pogrzebana żywcem w domu Usherów. Czarny kot, który nie chce odejść.",
+ "duration": 14.4,
  "words": [
   {
-   "w": "Un",
+   "w": "Mężczyzna",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.56
   },
   {
-   "w": "hombre",
-   "s": 0.16,
-   "e": 0.48
-  },
-  {
-   "w": "te",
-   "s": 0.56,
-   "e": 0.64
-  },
-  {
-   "w": "jura",
-   "s": 0.68,
-   "e": 0.88
-  },
-  {
-   "w": "que",
-   "s": 0.96,
-   "e": 1.04
-  },
-  {
-   "w": "no",
-   "s": 1.12,
+   "w": "przysięga",
+   "s": 0.6,
    "e": 1.2
   },
   {
-   "w": "está",
+   "w": "ci,",
    "s": 1.28,
-   "e": 1.44
+   "e": 1.52
   },
   {
-   "w": "loco",
-   "s": 1.56,
-   "e": 1.76
+   "w": "że",
+   "s": 1.6,
+   "e": 1.68
   },
   {
-   "w": "mientras",
-   "s": 1.84,
-   "e": 2.24
+   "w": "nie",
+   "s": 1.76,
+   "e": 1.92
   },
   {
-   "w": "te",
-   "s": 2.32,
-   "e": 2.4
+   "w": "jest",
+   "s": 2.04,
+   "e": 2.16
   },
   {
-   "w": "cuenta",
-   "s": 2.533,
-   "e": 2.8
+   "w": "szalony,",
+   "s": 2.24,
+   "e": 2.88
   },
   {
-   "w": "cómo",
-   "s": 2.88,
-   "e": 3.12
+   "w": "i",
+   "s": 2.92,
+   "e": 2.96
   },
   {
-   "w": "mató",
-   "s": 3.24,
-   "e": 3.44
+   "w": "opowiada,",
+   "s": 3.04,
+   "e": 3.76
   },
   {
-   "w": "a",
-   "s": 3.52,
-   "e": 3.56
+   "w": "jak",
+   "s": 3.84,
+   "e": 3.92
   },
   {
-   "w": "un",
-   "s": 3.6,
-   "e": 3.68
+   "w": "zabił",
+   "s": 4.0,
+   "e": 4.24
   },
   {
-   "w": "anciano…",
-   "s": 3.76,
-   "e": 5.0
+   "w": "starca…",
+   "s": 4.32,
+   "e": 5.36
   },
   {
-   "w": "y",
-   "s": 5.04,
-   "e": 5.12
-  },
-  {
-   "w": "cómo",
-   "s": 5.2,
+   "w": "i",
+   "s": 5.4,
    "e": 5.44
   },
   {
-   "w": "sigue",
+   "w": "jak",
    "s": 5.52,
-   "e": 5.68
+   "e": 5.6
   },
   {
-   "w": "oyendo",
-   "s": 5.76,
-   "e": 6.16
+   "w": "wciąż",
+   "s": 5.68,
+   "e": 6.08
   },
   {
-   "w": "latir",
-   "s": 6.28,
+   "w": "słyszy",
+   "s": 6.16,
    "e": 6.48
   },
   {
-   "w": "su",
+   "w": "bicie",
    "s": 6.56,
-   "e": 6.64
+   "e": 6.8
   },
   {
-   "w": "corazón",
-   "s": 6.72,
-   "e": 7.2
+   "w": "jego",
+   "s": 6.84,
+   "e": 7.04
   },
   {
-   "w": "bajo",
-   "s": 7.28,
+   "w": "serca",
+   "s": 7.12,
    "e": 7.44
   },
   {
-   "w": "las",
+   "w": "pod",
    "s": 7.52,
-   "e": 7.68
+   "e": 7.6
   },
   {
-   "w": "tablas",
-   "s": 7.76,
+   "w": "deskami",
+   "s": 7.68,
    "e": 8.08
   },
   {
-   "w": "del",
-   "s": 8.16,
-   "e": 8.32
+   "w": "podłogi.",
+   "s": 8.2,
+   "e": 9.0
   },
   {
-   "w": "suelo.",
-   "s": 8.36,
-   "e": 9.56
-  },
-  {
-   "w": "Una",
-   "s": 9.6,
+   "w": "Kobieta",
+   "s": 9.36,
    "e": 9.76
   },
   {
-   "w": "mujer",
+   "w": "pogrzebana",
    "s": 9.84,
-   "e": 10.08
+   "e": 10.4
   },
   {
-   "w": "enterrada",
-   "s": 10.16,
-   "e": 10.64
-  },
-  {
-   "w": "en",
-   "s": 10.72,
+   "w": "żywcem",
+   "s": 10.48,
    "e": 10.88
   },
   {
-   "w": "vida",
-   "s": 11.0,
-   "e": 11.12
+   "w": "w",
+   "s": 10.92,
+   "e": 10.96
   },
   {
-   "w": "en",
-   "s": 11.2,
-   "e": 11.28
+   "w": "domu",
+   "s": 11.04,
+   "e": 11.2
   },
   {
-   "w": "la",
-   "s": 11.36,
-   "e": 11.44
+   "w": "Usherów.",
+   "s": 11.28,
+   "e": 12.04
   },
   {
-   "w": "casa",
-   "s": 11.52,
-   "e": 11.84
+   "w": "Czarny",
+   "s": 12.24,
+   "e": 12.56
   },
   {
-   "w": "Usher.",
-   "s": 11.92,
-   "e": 12.92
+   "w": "kot,",
+   "s": 12.64,
+   "e": 13.04
   },
   {
-   "w": "Un",
-   "s": 12.96,
-   "e": 13.12
+   "w": "który",
+   "s": 13.12,
+   "e": 13.28
   },
   {
-   "w": "gato",
-   "s": 13.2,
-   "e": 13.44
+   "w": "nie",
+   "s": 13.36,
+   "e": 13.52
   },
   {
-   "w": "negro",
-   "s": 13.52,
-   "e": 13.92
+   "w": "chce",
+   "s": 13.56,
+   "e": 13.68
   },
   {
-   "w": "que",
-   "s": 14.0,
-   "e": 14.08
-  },
-  {
-   "w": "no",
-   "s": 14.16,
-   "e": 14.24
-  },
-  {
-   "w": "se",
-   "s": 14.32,
+   "w": "odejść.",
+   "s": 13.84,
    "e": 14.4
-  },
-  {
-   "w": "marcha.",
-   "s": 14.44,
-   "e": 15.52
   }
  ],
- "speechEnd": 14.889
+ "speechEnd": 14.4
 }

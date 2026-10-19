@@ -5,13 +5,11 @@ import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { CoverIcon, Dust, Grain, IconKind, KR, MiniIcon } from '../skg/kit';
 
 // ————————————————————————————————————————————————————————————————
-// «Los 10 mejores» · Terror. Sistema visual del episodio: casi todo de noche, con una linterna de luz cálida
+// «10 historii grozy» (SonorBooks Polska; adaptación de «Los 10 mejores · Terror»). Sistema visual del episodio: casi todo de noche, con una linterna de luz cálida
 // (el amarillo de SonorBooks rebajado) que va descubriendo cada libro. Rojo para el miedo, blanco roto para el texto.
-// v2 (14/10, petición de Joan): portadas reales de los audiolibros (fx.tsx). Las cubiertas tipográficas (Cover10, Book10) quedan sin uso.
+// Portadas reales de los audiolibros recomendados (fx.tsx).
 // ————————————————————————————————————————————————————————————————
 
-export const SERIES = 'Los 10 mejores';
-export const GENRE = 'Terror';
 export const RED = KR;
 export const BONE = '#EFE8DC';
 export const DIM = 'rgba(239,232,220,0.62)';
@@ -19,48 +17,46 @@ export const BEAM = 'rgba(255,220,140,';
 
 export type T10Icon = IconKind | 'tentacle' | 'heart' | 'puppet' | 'field' | 'wardrobe' | 'house' | 'cross' | 'tv';
 
+// Nagranie polecane (pantalla POSŁUCHAJ): lektor, czas, ocena w Audiotece (z liczbą ocen) i jak zacząć.
+// access: 'free' (za darmo, Wolne Lektury) · 'sub' (w abonamencie Storytel, sprawdzone 19.10.2026) · 'buy' (do kupienia w Audiotece).
 export type Narr = {
-  label?: string; who: string; sub?: string; voice: string; dur: string; rating: number; votes: number; source: string; plats: string[];
+  label?: string; who: string; sub?: string; dur: string; rating: number; votes: number; source: string; access: 'free' | 'sub' | 'buy'; extra?: string;
 };
 export type Book10 = {
   n: number; title: string; author: string; year?: number; bg: string; fg: string; accent: string; icon: T10Icon; spine?: string;
-  narr: Narr[];
+  narr: Narr[]; sb?: boolean;
 };
 
-// Datos comprobados el 14/10/2026 (Audible España salvo indicación): ver research/top10/terror/guion.md.
+// Dane sprawdzone 19.10.2026 (Audioteka, Storytel PL, Wolne Lektury, sonorbooks.pl): research/pl/top10-horror/dossier.md i fichas_pl.json.
+// sb: tytuł ma kartę na sonorbooks.pl (tylko 3 z 10).
 export const BOOKS10: Book10[] = [
-  { n: 10, title: 'La llamada de Cthulhu', author: 'H. P. Lovecraft', year: 1928, bg: '#0E2A2C', fg: '#E6F0EC', accent: '#63D2B4', icon: 'tentacle', spine: 'Cthulhu',
-    narr: [{ who: 'Benjamín Figueres', sub: 'Saga Egmont · 2022', voice: 'Castellano', dur: '2 h', rating: 4.5, votes: 55, source: 'Audible', plats: ['Audible', 'Storytel', 'Nextory', 'Podimo', 'BookBeat'] }] },
-  { n: 9, title: 'Cuentos extraordinarios', author: 'Edgar Allan Poe', bg: '#171615', fg: '#F2EEE6', accent: '#D2283A', icon: 'heart', spine: 'Cuentos',
-    narr: [
-      { label: 'La recopilación · 37 relatos', who: 'Jordi Boixaderas', sub: 'Audible Studios · 2022', voice: 'Castellano', dur: '21 h', rating: 4.6, votes: 38, source: 'Audible', plats: ['Audible'] },
-      { label: 'Para probar · dramatizado', who: '«El corazón delator»', sub: 'Pablo López · Saga Egmont', voice: 'Castellano', dur: '15 min', rating: 5.0, votes: 25, source: 'Audible', plats: ['Audible', 'Storytel'] },
-    ] },
-  { n: 8, title: 'Cómo vender una casa encantada', author: 'Grady Hendrix', year: 2023, bg: '#EFE0C2', fg: '#2A1A12', accent: '#B5452B', icon: 'puppet', spine: 'Casa encantada',
-    narr: [{ who: 'Esther Cordero', sub: 'Planeta Audio · 2023', voice: 'Castellano', dur: '14 h', rating: 4.4, votes: 160, source: 'Audible', plats: ['Audible', 'Storytel', 'Nextory', 'Podimo', 'BookBeat'] }] },
-  { n: 7, title: 'Distancia de rescate', author: 'Samanta Schweblin', year: 2014, bg: '#C8D1A3', fg: '#1E2A14', accent: '#5E7424', icon: 'field',
-    narr: [{ who: 'Paula Pichersky', sub: 'Planeta Audio · 2025', voice: 'Castellano', dur: '2 h 51 min', rating: 4.4, votes: 98, source: 'Audible', plats: ['Audible', 'Storytel', 'Nextory', 'Podimo', 'BookBeat'] }] },
-  { n: 6, title: 'Drácula', author: 'Bram Stoker', year: 1897, bg: '#3A0A10', fg: '#F4E9DA', accent: '#E9C46A', icon: 'bat',
-    narr: [
-      { label: 'Entera', who: 'José Coronado y Sol de la Barreda', sub: 'Audible Studios · 2020', voice: 'Castellano', dur: '18 h 33 min', rating: 4.8, votes: 647, source: 'Audible', plats: ['Audible', 'Apple Books'] },
-      { label: 'Audible Original · adaptación libre', who: 'Asier Etxeandia, Claudia Salas…', sub: 'Dirigida por Carlota Pereda · +25 actores', voice: 'Castellano', dur: '5 h 50 min', rating: 4.7, votes: 164, source: 'Audible', plats: ['Audible'] },
-    ] },
-  { n: 5, title: 'Apocalipsis Z', author: 'Manel Loureiro', year: 2007, bg: '#262B25', fg: '#ECEDE6', accent: '#9BD14B', icon: 'virus',
-    narr: [
-      { label: 'Audible Original · ficción sonora', who: 'Javier Rey y Maggie Civantos', sub: 'y 15 actores más', voice: 'Castellano', dur: '5 h 56 min', rating: 4.7, votes: 264, source: 'Audible', plats: ['Audible', 'Apple Books'] },
-      { label: 'La novela completa', who: 'Voz sintética autorizada', sub: 'Réplica de la voz de Octavi Pujades', voice: 'Castellano', dur: '14 h 29 min', rating: 4.4, votes: 134, source: 'Storytel', plats: ['Storytel', 'Nextory', 'Podimo', 'BookBeat'] },
-    ] },
-  { n: 4, title: 'Carcoma', author: 'Layla Martínez', year: 2021, bg: '#5E3F28', fg: '#F6EBDD', accent: '#E7C9A0', icon: 'wardrobe',
-    narr: [{ who: 'Paula Iwasaki', sub: 'Storyside · 2024', voice: 'Castellano', dur: '3 h', rating: 4.6, votes: 406, source: 'Audible', plats: ['Audible', 'Storytel', 'Podimo', 'Apple Books'] }] },
-  { n: 3, title: "El misterio de Salem's Lot", author: 'Stephen King', year: 1975, bg: '#23272C', fg: '#EFE9DF', accent: '#D93A3A', icon: 'house', spine: "Salem's Lot",
-    narr: [{ who: 'Xavi Fernández', sub: 'Penguin Random House · 2016', voice: 'Castellano', dur: '16 h 56 min', rating: 4.9, votes: 19, source: 'Audible', plats: ['Audible', 'Apple Books', 'Google Play'] }] },
-  { n: 2, title: 'Nuestra parte de noche', author: 'Mariana Enriquez', year: 2019, bg: '#15102A', fg: '#EDE6F7', accent: '#B48CF2', icon: 'eye',
-    narr: [{ who: 'Mara Brenner', sub: 'Anagrama · 2021', voice: 'Acento argentino', dur: '23 h 14 min', rating: 4.7, votes: 213, source: 'Audible', plats: ['Audible', 'Storytel', 'Nextory', 'Podimo', 'BookBeat'] }] },
-  { n: 1, title: 'El exorcista', author: 'William Peter Blatty', year: 1971, bg: '#0B0B0C', fg: '#F2F2F2', accent: '#9DB8E2', icon: 'cross',
-    narr: [{ who: 'Fernando Solís', sub: 'Penguin Random House Audio · 2023', voice: 'Voz latina', dur: '13 h 11 min', rating: 4.9, votes: 64, source: 'Audible EE. UU.', plats: ['Audible', 'Apple Books', 'Google Play'] }] },
+  { n: 10, title: 'Zew Cthulhu', author: 'H.P. Lovecraft', year: 1928, bg: '#0E2A2C', fg: '#E6F0EC', accent: '#63D2B4', icon: 'tentacle', sb: true,
+    narr: [{ who: 'Wojciech Żołądkowicz', dur: '1 h 56 min', rating: 4.3, votes: 23, source: 'Audioteka', access: 'sub' }] },
+  { n: 9, title: 'Edgar Allan Poe', author: 'Opowiadania', bg: '#171615', fg: '#F2EEE6', accent: '#D2283A', icon: 'heart', spine: 'Poe',
+    narr: [{ who: 'Wiktor Korzeniewski', dur: '17 · 27 · 50 min', rating: 0, votes: 0, source: 'Wolne Lektury', access: 'free', extra: '3 opowiadania · przekład Leśmiana' }] },
+  { n: 8, title: 'Jak sprzedać nawiedzony dom', author: 'Grady Hendrix', year: 2023, bg: '#EFE0C2', fg: '#2A1A12', accent: '#B5452B', icon: 'puppet', spine: 'Nawiedzony dom',
+    narr: [{ who: 'Ilona Chojnowska', dur: '13 h 31 min', rating: 4.0, votes: 3, source: 'Audioteka', access: 'buy' }] },
+  { n: 7, title: 'Dziecko Rosemary', author: 'Ira Levin', year: 1967, bg: '#3A1E24', fg: '#F4E6E8', accent: '#D98C9A', icon: 'house', sb: true,
+    narr: [{ who: 'Julia Kamińska', dur: '7 h 41 min', rating: 4.7, votes: 47, source: 'Audioteka', access: 'sub' }] },
+  { n: 6, title: 'Drakula', author: 'Bram Stoker', year: 1897, bg: '#3A0A10', fg: '#F4E9DA', accent: '#E9C46A', icon: 'bat', sb: true,
+    narr: [{ who: 'Andrzej Hausner', dur: '15 h 11 min', rating: 4.7, votes: 42, source: 'Audioteka', access: 'sub' }] },
+  { n: 5, title: 'Inkub', author: 'Artur Urbanowicz', year: 2016, bg: '#0F2620', fg: '#E6F2EC', accent: '#5BE3A0', icon: 'eye',
+    narr: [{ who: 'Danuta Stenka i inni', dur: '10 h 31 min', rating: 4.9, votes: 61, source: 'Audioteka', access: 'sub', extra: 'Słuchowisko · ponad 50 aktorów' }] },
+  { n: 4, title: 'Dom na Wyrębach', author: 'Stefan Darda', year: 2008, bg: '#1C2618', fg: '#EEF2E6', accent: '#A9C77E', icon: 'house',
+    narr: [{ who: 'Wiktor Zborowski', dur: '12 h 26 min', rating: 4.5, votes: 223, source: 'Audioteka', access: 'sub' }] },
+  { n: 3, title: 'Miasteczko Salem', author: 'Stephen King', year: 1975, bg: '#23272C', fg: '#EFE9DF', accent: '#D93A3A', icon: 'house', spine: 'Salem',
+    narr: [{ who: 'Krzysztof Plewako-Szczerbiński', dur: '17 h 2 min', rating: 4.4, votes: 73, source: 'Audioteka', access: 'buy' }] },
+  { n: 2, title: 'Manitou', author: 'Graham Masterton', year: 1975, bg: '#2A140C', fg: '#F6E8DC', accent: '#E8853F', icon: 'eye',
+    narr: [{ who: 'Marcel Sabat, Jarosław Boberek i inni', dur: '6 h 38 min', rating: 4.3, votes: 609, source: 'Audioteka', access: 'buy', extra: 'Superprodukcja Audioteki' }] },
+  { n: 1, title: 'Nie otwieraj oczu', author: 'Josh Malerman', year: 2014, bg: '#0B0B0C', fg: '#F2F2F2', accent: '#9DB8E2', icon: 'eye',
+    narr: [{ who: 'Andrzej Hausner', dur: '7 h 19 min', rating: 4.4, votes: 34, source: 'Audioteka', access: 'sub' }] },
 ];
 export const bookAt = (p: number) => BOOKS10[p - 1];
-export const NUM_WORDS = ['', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez'];
+// Odmiana «ocena» po liczebniku (1 ocena, 2–4 oceny, 5+ ocen; 12–14 ocen; 22–24 oceny…).
+export const ocen = (n: number) => {
+  const d = n % 10, dd = n % 100;
+  return n === 1 ? 'ocena' : d >= 2 && d <= 4 && !(dd >= 12 && dd <= 14) ? 'oceny' : 'ocen';
+};
 
 // ———————————————— Iconos de cubierta (trazo, 24×24) ————————————————
 export const Icon10: React.FC<{ kind: T10Icon; size: number; c: string; sw?: number }> = ({ kind, size, c, sw = 1.3 }) => {
@@ -126,64 +122,6 @@ export const Icon10: React.FC<{ kind: T10Icon; size: number; c: string; sw?: num
   })();
   if (own) return <svg width={size} height={size} viewBox="0 0 24 24" style={{ overflow: 'visible', display: 'block' }}>{own}</svg>;
   return <CoverIcon kind={kind as IconKind} size={size} c={c} sw={sw} />;
-};
-
-// Cubierta tipográfica de la colección (diseño propio, igual para los diez).
-export const Cover10: React.FC<{ b: Book10; w: number; h: number; shine?: number }> = ({ b, w, h, shine = 0 }) => {
-  const k = w / 300;
-  const L = b.title.length;
-  const titleSize = (L > 24 ? 25 : L > 18 ? 29 : L > 12 ? 35 : L > 8 ? 42 : 52) * k;
-  return (
-    <div style={{ position: 'absolute', inset: 0, background: b.bg, overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${staticFile('pdr/img/grain.png')})`, backgroundSize: `${256 * k}px`, opacity: 0.16, mixBlendMode: 'overlay' }} />
-      <div style={{ position: 'absolute', left: 16 * k, right: 16 * k, top: 16 * k, bottom: 16 * k, border: `${1.4 * k}px solid ${b.accent}`, opacity: 0.55, borderRadius: 3 * k }} />
-      <div style={{ position: 'absolute', left: 20 * k, right: 20 * k, top: 40 * k, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 14 * k, letterSpacing: 3.6 * k, textTransform: 'uppercase', color: b.fg, opacity: 0.92 }}>
-        {b.author}
-      </div>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.25, display: 'flex', justifyContent: 'center' }}>
-        <Icon10 kind={b.icon} size={w * 0.42} c={b.accent} sw={1.25} />
-      </div>
-      <div style={{ position: 'absolute', left: 24 * k, right: 24 * k, top: h * 0.63, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: titleSize, lineHeight: 1.03, letterSpacing: -0.02 * titleSize, color: b.fg }}>
-        {b.title}
-      </div>
-      {b.year && <div style={{ position: 'absolute', left: 0, right: 0, bottom: 32 * k, textAlign: 'center', fontFamily: font.serif, fontSize: 18 * k, color: b.fg, opacity: 0.7 }}>{b.year}</div>}
-      {shine > 0 && (
-        <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(115deg, rgba(255,255,255,0) ${20 + shine * 60}%, rgba(255,255,255,0.22) ${30 + shine * 60}%, rgba(255,255,255,0) ${42 + shine * 60}%)` }} />
-      )}
-    </div>
-  );
-};
-
-// Libro en 3D (CSS). La luz llega de arriba a la izquierda; `lit` oscurece el libro cuando la linterna no lo alumbra.
-export const Book10: React.FC<{ b: Book10; w?: number; h?: number; d?: number; rx?: number; ry?: number; rz?: number; shine?: number; lit?: number; style?: React.CSSProperties }> = ({
-  b, w = 300, h = 450, d = 58, rx = 0, ry = -18, rz = 0, shine = 0, lit = 1, style,
-}) => {
-  const rad = (ry * Math.PI) / 180;
-  const lightFront = (0.9 + 0.1 * Math.cos(rad)) * (0.25 + 0.75 * lit);
-  const spineDark = (0.55 + 0.35 * Math.max(0, Math.sin(-rad))) * (0.25 + 0.75 * lit);
-  const pageDark = (0.72 + 0.25 * Math.max(0, Math.sin(rad))) * (0.25 + 0.75 * lit);
-  const face: React.CSSProperties = { position: 'absolute', backfaceVisibility: 'hidden' };
-  return (
-    <div style={{ width: w, height: h, perspective: 2600, position: 'relative', ...style }}>
-      <div style={{ position: 'absolute', left: w * 0.05, right: w * 0.05, bottom: -h * 0.05, height: h * 0.08, borderRadius: '50%', background: `radial-gradient(ellipse, rgba(0,0,0,${0.55 * lit}) 0%, rgba(0,0,0,0) 70%)`, filter: 'blur(6px)' }} />
-      <div style={{ position: 'absolute', inset: 0, transformStyle: 'preserve-3d', transform: `rotateX(${rx}deg) rotateY(${ry}deg) rotateZ(${rz}deg)` }}>
-        <div style={{ ...face, left: 0, top: 0, width: w, height: h, transform: `translateZ(${d / 2}px)`, borderRadius: `${w * 0.012}px ${w * 0.03}px ${w * 0.03}px ${w * 0.012}px`, overflow: 'hidden', filter: `brightness(${lightFront})` }}>
-          <Cover10 b={b} w={w} h={h} shine={shine} />
-          <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: w * 0.045, background: 'linear-gradient(90deg, rgba(0,0,0,0.25), rgba(255,255,255,0.08) 60%, rgba(0,0,0,0))' }} />
-        </div>
-        <div style={{ ...face, left: 0, top: 0, width: w, height: h, transform: `rotateY(180deg) translateZ(${d / 2}px)`, background: b.bg, filter: 'brightness(0.6)' }} />
-        <div style={{ ...face, left: (w - d) / 2, top: 0, width: d, height: h, transform: `rotateY(-90deg) translateZ(${w / 2}px)`, background: b.bg, filter: `brightness(${spineDark + 0.2})`, overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.25), rgba(255,255,255,0.10) 45%, rgba(0,0,0,0.25))' }} />
-          <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.08, bottom: h * 0.08, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ transform: 'rotate(90deg)', whiteSpace: 'nowrap', fontFamily: font.sans, fontWeight: 700, fontSize: d * 0.3, color: b.fg }}>{b.spine ?? b.title}</div>
-          </div>
-        </div>
-        <div style={{ ...face, left: (w - d) / 2, top: h * 0.012, width: d, height: h * 0.976, transform: `rotateY(90deg) translateZ(${w / 2 - w * 0.012}px)`,
-          background: 'repeating-linear-gradient(90deg, #F3EEE2 0px, #F3EEE2 2px, #DCD5C4 2.6px, #F3EEE2 3.4px)', filter: `brightness(${pageDark})` }} />
-        <div style={{ ...face, left: 0, top: (h - d) / 2, width: w * 0.985, height: d, transform: `rotateX(90deg) translateZ(${h / 2}px)`, background: 'repeating-linear-gradient(0deg, #F6F2E8 0px, #F6F2E8 2px, #DED7C6 2.6px)', filter: `brightness(${0.4 + 0.6 * lit})` }} />
-      </div>
-    </div>
-  );
 };
 
 // ———————————————— Escenario ————————————————

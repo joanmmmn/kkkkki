@@ -1,99 +1,139 @@
 {
  "id": "X23",
- "hash": "a68d3da6178d",
- "text": "Casi doscientos años después, siguen funcionando igual de bien. Y son cortos: perfectos para escuchar uno cada noche.",
- "duration": 8.64,
+ "hash": "a9f79defce4d",
+ "text": "Prawie dwieście lat później wciąż działają tak samo. Są krótkie: w sam raz, żeby słuchać jednego co wieczór. A na polski przełożył je sam Bolesław Leśmian.",
+ "duration": 9.68,
  "words": [
   {
-   "w": "Casi",
+   "w": "Prawie",
    "s": 0.0,
    "e": 0.24
   },
   {
-   "w": "doscientos",
+   "w": "dwieście",
    "s": 0.32,
+   "e": 0.64
+  },
+  {
+   "w": "lat",
+   "s": 0.72,
    "e": 0.88
   },
   {
-   "w": "años",
+   "w": "później",
    "s": 0.96,
-   "e": 1.2
+   "e": 1.44
   },
   {
-   "w": "después,",
-   "s": 1.32,
-   "e": 2.08
+   "w": "wciąż",
+   "s": 1.52,
+   "e": 1.92
   },
   {
-   "w": "siguen",
-   "s": 2.16,
+   "w": "działają",
+   "s": 2.0,
+   "e": 2.32
+  },
+  {
+   "w": "tak",
+   "s": 2.373,
    "e": 2.48
   },
   {
-   "w": "funcionando",
-   "s": 2.6,
-   "e": 3.12
+   "w": "samo.",
+   "s": 2.56,
+   "e": 3.227
   },
   {
-   "w": "igual",
-   "s": 3.2,
-   "e": 3.44
+   "w": "Są",
+   "s": 3.253,
+   "e": 3.36
   },
   {
-   "w": "de",
-   "s": 3.52,
-   "e": 3.6
+   "w": "krótkie:",
+   "s": 3.44,
+   "e": 4.18
   },
   {
-   "w": "bien.",
-   "s": 3.64,
+   "w": "w",
+   "s": 4.2,
+   "e": 4.22
+  },
+  {
+   "w": "sam",
+   "s": 4.24,
    "e": 4.4
   },
   {
-   "w": "Y",
-   "s": 4.48,
-   "e": 4.56
+   "w": "raz,",
+   "s": 4.52,
+   "e": 4.693
   },
   {
-   "w": "son",
-   "s": 4.68,
-   "e": 4.8
+   "w": "żeby",
+   "s": 4.747,
+   "e": 4.88
   },
   {
-   "w": "cortos:",
-   "s": 4.84,
-   "e": 5.68
+   "w": "słuchać",
+   "s": 4.96,
+   "e": 5.24
   },
   {
-   "w": "perfectos",
-   "s": 5.92,
-   "e": 6.32
+   "w": "jednego",
+   "s": 5.28,
+   "e": 5.6
   },
   {
-   "w": "para",
-   "s": 6.4,
-   "e": 6.48
+   "w": "co",
+   "s": 5.68,
+   "e": 5.76
   },
   {
-   "w": "escuchar",
-   "s": 6.6,
-   "e": 7.12
+   "w": "wieczór.",
+   "s": 5.84,
+   "e": 6.667
   },
   {
-   "w": "uno",
-   "s": 7.2,
-   "e": 7.44
+   "w": "A",
+   "s": 6.693,
+   "e": 6.72
   },
   {
-   "w": "cada",
-   "s": 7.52,
-   "e": 7.68
+   "w": "na",
+   "s": 6.8,
+   "e": 6.88
   },
   {
-   "w": "noche.",
-   "s": 7.76,
+   "w": "polski",
+   "s": 6.92,
+   "e": 7.36
+  },
+  {
+   "w": "przełożył",
+   "s": 7.4,
+   "e": 7.813
+  },
+  {
+   "w": "je",
+   "s": 7.867,
+   "e": 7.92
+  },
+  {
+   "w": "sam",
+   "s": 8.0,
+   "e": 8.24
+  },
+  {
+   "w": "Bolesław",
+   "s": 8.28,
    "e": 8.64
+  },
+  {
+   "w": "Leśmian.",
+   "s": 8.72,
+   "e": 9.68
   }
  ],
- "speechEnd": 8.239
+ "speechEnd": 9.183
 }

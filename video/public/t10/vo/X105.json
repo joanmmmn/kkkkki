@@ -1,39 +1,59 @@
 {
  "id": "X105",
- "hash": "da496c756549",
- "text": "Escúchalo de noche. Si te atreves.",
- "duration": 3.36,
+ "hash": "29d4b88e9a28",
+ "text": "Słuchaj go w nocy. Z zamkniętymi oczami. Jeśli się odważysz.",
+ "duration": 4.64,
  "words": [
   {
-   "w": "Escúchalo",
+   "w": "Słuchaj",
    "s": 0.0,
-   "e": 0.64
+   "e": 0.32
   },
   {
-   "w": "de",
-   "s": 0.68,
-   "e": 0.72
+   "w": "go",
+   "s": 0.4,
+   "e": 0.48
   },
   {
-   "w": "noche.",
-   "s": 0.8,
-   "e": 1.76
+   "w": "w",
+   "s": 0.56,
+   "e": 0.6
   },
   {
-   "w": "Si",
-   "s": 1.84,
-   "e": 2.0
+   "w": "nocy.",
+   "s": 0.64,
+   "e": 1.36
   },
   {
-   "w": "te",
-   "s": 2.08,
+   "w": "Z",
+   "s": 1.44,
+   "e": 1.48
+  },
+  {
+   "w": "zamkniętymi",
+   "s": 1.52,
    "e": 2.16
   },
   {
-   "w": "atreves.",
-   "s": 2.24,
+   "w": "oczami.",
+   "s": 2.28,
+   "e": 3.04
+  },
+  {
+   "w": "Jeśli",
+   "s": 3.12,
    "e": 3.36
+  },
+  {
+   "w": "się",
+   "s": 3.4,
+   "e": 3.48
+  },
+  {
+   "w": "odważysz.",
+   "s": 3.52,
+   "e": 4.64
   }
  ],
- "speechEnd": 2.96
+ "speechEnd": 4.175
 }

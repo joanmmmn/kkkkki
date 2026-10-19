@@ -1,39 +1,44 @@
 {
  "id": "X114",
- "hash": "1e003bd60721",
- "text": "Tu próxima historia te está esperando.",
- "duration": 2.64,
+ "hash": "277f6520479f",
+ "text": "Twoja następna historia już na ciebie czeka.",
+ "duration": 2.96,
  "words": [
   {
-   "w": "Tu",
+   "w": "Twoja",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.24
   },
   {
-   "w": "próxima",
-   "s": 0.2,
-   "e": 0.56
+   "w": "następna",
+   "s": 0.32,
+   "e": 0.8
   },
   {
    "w": "historia",
-   "s": 0.64,
-   "e": 1.28
-  },
-  {
-   "w": "te",
-   "s": 1.36,
+   "s": 1.0,
    "e": 1.44
   },
   {
-   "w": "está",
-   "s": 1.56,
-   "e": 1.72
+   "w": "już",
+   "s": 1.6,
+   "e": 1.84
   },
   {
-   "w": "esperando.",
-   "s": 1.76,
-   "e": 2.64
+   "w": "na",
+   "s": 1.88,
+   "e": 1.92
+  },
+  {
+   "w": "ciebie",
+   "s": 2.0,
+   "e": 2.16
+  },
+  {
+   "w": "czeka.",
+   "s": 2.24,
+   "e": 2.96
   }
  ],
- "speechEnd": 2.479
+ "speechEnd": 2.684
 }

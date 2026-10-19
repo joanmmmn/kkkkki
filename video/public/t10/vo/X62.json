@@ -1,164 +1,169 @@
 {
  "id": "X62",
- "hash": "62628f3090ef",
- "text": "Un abogado de Pontevedra, que vive solo con su gato, sigue por la tele un brote extraño en Rusia. Al principio es una noticia más. Luego, el brote empieza a extenderse.",
- "duration": 11.68,
+ "hash": "3ca86a13f47b",
+ "text": "Suwalszczyzna, kilka dni przed zorzą polarną. W małej wsi Jodoziory ktoś znajduje spopielone zwłoki małżeństwa. Miejscowi mówią o zielonym świetle, o nawiedzonym domu… i o kobiecie, która kiedyś podobno parała się czarami.",
+ "duration": 15.12,
  "words": [
   {
-   "w": "Un",
+   "w": "Suwalszczyzna,",
    "s": 0.0,
-   "e": 0.16
+   "e": 1.12
   },
   {
-   "w": "abogado",
-   "s": 0.24,
-   "e": 0.64
+   "w": "kilka",
+   "s": 1.2,
+   "e": 1.44
   },
   {
-   "w": "de",
-   "s": 0.72,
-   "e": 0.8
-  },
-  {
-   "w": "Pontevedra,",
-   "s": 0.907,
-   "e": 1.64
-  },
-  {
-   "w": "que",
-   "s": 1.68,
+   "w": "dni",
+   "s": 1.52,
    "e": 1.76
   },
   {
-   "w": "vive",
-   "s": 1.8,
-   "e": 2.0
+   "w": "przed",
+   "s": 1.92,
+   "e": 2.08
   },
   {
-   "w": "solo",
-   "s": 2.08,
-   "e": 2.32
+   "w": "zorzą",
+   "s": 2.12,
+   "e": 2.4
   },
   {
-   "w": "con",
-   "s": 2.4,
-   "e": 2.56
+   "w": "polarną.",
+   "s": 2.48,
+   "e": 3.36
   },
   {
-   "w": "su",
-   "s": 2.6,
-   "e": 2.64
+   "w": "W",
+   "s": 3.4,
+   "e": 3.44
   },
   {
-   "w": "gato,",
-   "s": 2.72,
-   "e": 3.413
-  },
-  {
-   "w": "sigue",
-   "s": 3.467,
-   "e": 3.6
-  },
-  {
-   "w": "por",
-   "s": 3.68,
+   "w": "małej",
+   "s": 3.52,
    "e": 3.76
   },
   {
-   "w": "la",
-   "s": 3.84,
-   "e": 3.92
+   "w": "wsi",
+   "s": 3.8,
+   "e": 4.0
   },
   {
-   "w": "tele",
+   "w": "Jodoziory",
    "s": 4.04,
-   "e": 4.16
+   "e": 4.64
   },
   {
-   "w": "un",
-   "s": 4.24,
-   "e": 4.32
+   "w": "ktoś",
+   "s": 4.72,
+   "e": 4.96
   },
   {
-   "w": "brote",
-   "s": 4.36,
-   "e": 4.56
+   "w": "znajduje",
+   "s": 5.0,
+   "e": 5.44
   },
   {
-   "w": "extraño",
-   "s": 4.64,
-   "e": 5.12
+   "w": "spopielone",
+   "s": 5.52,
+   "e": 5.92
   },
   {
-   "w": "en",
-   "s": 5.2,
-   "e": 5.28
-  },
-  {
-   "w": "Rusia.",
-   "s": 5.32,
-   "e": 6.2
-  },
-  {
-   "w": "Al",
-   "s": 6.24,
+   "w": "zwłoki",
+   "s": 6.0,
    "e": 6.32
   },
   {
-   "w": "principio",
+   "w": "małżeństwa.",
    "s": 6.4,
-   "e": 6.88
+   "e": 7.52
   },
   {
-   "w": "es",
-   "s": 6.96,
-   "e": 7.12
+   "w": "Miejscowi",
+   "s": 7.56,
+   "e": 8.08
   },
   {
-   "w": "una",
-   "s": 7.2,
-   "e": 7.28
+   "w": "mówią",
+   "s": 8.133,
+   "e": 8.4
   },
   {
-   "w": "noticia",
-   "s": 7.4,
-   "e": 7.76
+   "w": "o",
+   "s": 8.44,
+   "e": 8.48
   },
   {
-   "w": "más.",
-   "s": 7.8,
-   "e": 8.52
-  },
-  {
-   "w": "Luego,",
+   "w": "zielonym",
    "s": 8.56,
-   "e": 9.24
+   "e": 8.96
   },
   {
-   "w": "el",
-   "s": 9.28,
-   "e": 9.44
-  },
-  {
-   "w": "brote",
-   "s": 9.547,
+   "w": "świetle,",
+   "s": 9.04,
    "e": 9.76
   },
   {
-   "w": "empieza",
-   "s": 9.88,
-   "e": 10.24
+   "w": "o",
+   "s": 9.84,
+   "e": 9.92
   },
   {
-   "w": "a",
-   "s": 10.267,
-   "e": 10.293
+   "w": "nawiedzonym",
+   "s": 10.0,
+   "e": 10.48
   },
   {
-   "w": "extenderse.",
-   "s": 10.32,
-   "e": 11.68
+   "w": "domu…",
+   "s": 10.56,
+   "e": 11.44
+  },
+  {
+   "w": "i",
+   "s": 11.48,
+   "e": 11.52
+  },
+  {
+   "w": "o",
+   "s": 11.6,
+   "e": 11.64
+  },
+  {
+   "w": "kobiecie,",
+   "s": 11.68,
+   "e": 12.24
+  },
+  {
+   "w": "która",
+   "s": 12.28,
+   "e": 12.56
+  },
+  {
+   "w": "kiedyś",
+   "s": 12.6,
+   "e": 13.04
+  },
+  {
+   "w": "podobno",
+   "s": 13.16,
+   "e": 13.6
+  },
+  {
+   "w": "parała",
+   "s": 13.72,
+   "e": 14.0
+  },
+  {
+   "w": "się",
+   "s": 14.04,
+   "e": 14.16
+  },
+  {
+   "w": "czarami.",
+   "s": 14.2,
+   "e": 15.12
   }
  ],
- "speechEnd": 11.138
+ "speechEnd": 14.729
 }

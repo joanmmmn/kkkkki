@@ -1,49 +1,44 @@
 {
  "id": "X101",
- "hash": "0c70c5ef1458",
- "text": "Número uno: «El exorcista», de William Peter Blatty.",
- "duration": 4.64,
+ "hash": "cc2bef653769",
+ "text": "Numer jeden: „Nie otwieraj oczu” Josha Malermana.",
+ "duration": 3.84,
  "words": [
   {
-   "w": "Número",
+   "w": "Numer",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.24
   },
   {
-   "w": "uno:",
-   "s": 0.48,
+   "w": "jeden:",
+   "s": 0.32,
+   "e": 1.04
+  },
+  {
+   "w": "„Nie",
+   "s": 1.12,
    "e": 1.2
   },
   {
-   "w": "«El",
-   "s": 1.24,
-   "e": 1.36
+   "w": "otwieraj",
+   "s": 1.28,
+   "e": 1.76
   },
   {
-   "w": "exorcista»,",
-   "s": 1.44,
-   "e": 2.48
+   "w": "oczu”",
+   "s": 1.84,
+   "e": 2.32
   },
   {
-   "w": "de",
-   "s": 2.56,
+   "w": "Josha",
+   "s": 2.347,
    "e": 2.64
   },
   {
-   "w": "William",
+   "w": "Malermana.",
    "s": 2.72,
-   "e": 3.04
-  },
-  {
-   "w": "Peter",
-   "s": 3.2,
-   "e": 3.52
-  },
-  {
-   "w": "Blatty.",
-   "s": 3.6,
-   "e": 4.64
+   "e": 3.84
   }
  ],
- "speechEnd": 4.087
+ "speechEnd": 3.364
 }

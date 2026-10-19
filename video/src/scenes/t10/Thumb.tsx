@@ -14,10 +14,10 @@ const Dark: React.FC<{ children: React.ReactNode; beam?: [number, number] }> = (
   </AbsoluteFill>
 );
 
-// A · «10 libros que dan miedo de verdad»: abanico de cubiertas bajo la linterna.
+// A · «10 historii grozy… naprawdę przerażają»: abanico de portadas reales bajo la linterna.
 export const T10ThumbA: React.FC = () => {
   // de atrás hacia delante; la última (El exorcista) queda encima
-  const pick = ['03_salem', '06_dracula_original', '02_nuestra_parte', '04_carcoma', '01_exorcista'];
+  const pick = ['p03_salem', 'p06_drakula', 'p02_manitou', 'p04_darda', 'p01_malerman'];
   const pos = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
   return (
     <Dark beam={[360, 380]}>
@@ -30,17 +30,17 @@ export const T10ThumbA: React.FC = () => {
       </div>
       <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
       <div style={{ position: 'absolute', right: 50, top: 330, width: 680, textAlign: 'right' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>DAN MIEDO</div>
-        <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>DE VERDAD</div>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NAPRAWDĘ</div>
+        <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>PRZERAŻAJĄ</div>
       </div>
       <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
-        HISTORIAS DE TERROR
+        HISTORIE GROZY
       </div>
     </Dark>
   );
 };
 
-// B · «No apagues la luz»: una bombilla que se apaga y unos ojos que miran desde la oscuridad (v4: sin auriculares).
+// B · «Nie gaś światła»: una bombilla que se apaga y unos ojos que miran desde la oscuridad.
 export const T10ThumbB: React.FC = () => (
   <Dark beam={[330, 300]}>
     <div style={{ position: 'absolute', left: 130, top: 0, width: 420, height: 720 }}>
@@ -58,17 +58,17 @@ export const T10ThumbB: React.FC = () => (
       ))}
     </div>
     <div style={{ position: 'absolute', right: 56, top: 120, width: 640, textAlign: 'right' }}>
-      <div style={{ display: 'inline-block', padding: '8px 20px', borderRadius: 10, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>10 HISTORIAS DE TERROR</div>
-      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 118, lineHeight: 0.92, color: BONE, letterSpacing: -4, marginTop: 26, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NO<br />APAGUES</div>
-      <div style={{ display: 'inline-block', marginTop: 16, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 84, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>LA LUZ</div>
+      <div style={{ display: 'inline-block', padding: '8px 20px', borderRadius: 10, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 36, color: color.ink }}>10 HISTORII GROZY</div>
+      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 118, lineHeight: 0.92, color: BONE, letterSpacing: -4, marginTop: 26, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NIE<br />GAŚ</div>
+      <div style={{ display: 'inline-block', marginTop: 16, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 84, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>ŚWIATŁA</div>
     </div>
   </Dark>
 );
 
 
-// C · como A, pero con las portadas censuradas (la intriga del principio del vídeo), para «Probar y comparar».
+// C · como A, pero con las portadas censuradas (la intriga del principio del vídeo).
 export const T10ThumbC: React.FC = () => {
-  const pick = ['03_salem', '06_dracula_original', '02_nuestra_parte', '04_carcoma', '01_exorcista'];
+  const pick = ['p03_salem', 'p06_drakula', 'p02_manitou', 'p04_darda', 'p01_malerman'];
   const pos = [[20, 250, -16], [420, 240, 14], [110, 185, -7], [320, 175, 7], [170, 210, 0]];
   return (
     <Dark beam={[360, 380]}>
@@ -81,11 +81,11 @@ export const T10ThumbC: React.FC = () => {
       </div>
       <div style={{ position: 'absolute', right: 70, top: 40, fontFamily: font.sans, fontWeight: 700, fontSize: 300, lineHeight: 0.8, letterSpacing: -18, color: 'transparent', WebkitTextStroke: '5px rgba(255,202,5,0.9)' }}>10</div>
       <div style={{ position: 'absolute', right: 50, top: 330, width: 680, textAlign: 'right' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>DAN MIEDO</div>
-        <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>DE VERDAD</div>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, lineHeight: 0.92, color: BONE, letterSpacing: -4, textShadow: '0 6px 30px rgba(0,0,0,0.8)' }}>NAPRAWDĘ</div>
+        <div style={{ display: 'inline-block', marginTop: 14, padding: '6px 22px', background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: '#fff', letterSpacing: -2, borderRadius: 10, transform: 'rotate(-2deg)' }}>PRZERAŻAJĄ</div>
       </div>
       <div style={{ position: 'absolute', left: 44, top: 40, display: 'flex', alignItems: 'center', gap: 12, padding: '10px 20px', borderRadius: 999, background: color.yellow, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink }}>
-        HISTORIAS DE TERROR
+        HISTORIE GROZY
       </div>
     </Dark>
   );

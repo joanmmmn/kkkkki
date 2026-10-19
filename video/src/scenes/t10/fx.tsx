@@ -6,25 +6,26 @@ import { Dust, Grain } from '../skg/kit';
 import { sceneDef } from './timeline';
 
 // ————————————————————————————————————————————————————————————————
-// «Los 10 mejores» · Terror, v2: portadas reales de cada audiolibro (Audible España; la novela completa
-// de Apocalipsis Z, de Storytel), cámara en movimiento, voz que mueve la luz y transiciones con parpadeo.
+// «10 historii grozy» (SonorBooks Polska): portadas reales de cada audiolibro, cámara en movimiento, voz que mueve la luz
+// y transiciones con parpadeo.
 // ————————————————————————————————————————————————————————————————
 
 const ENV: Record<string, number[]> = require('./voenv.json');
 const FPS = 50;
 
-// Portadas por libro (p = 1 → n.º 10 … p = 10 → n.º 1), una por narración, en el orden de `narr`.
+// Portadas por libro (p = 1 → n.º 10 … p = 10 → n.º 1): la de la edición recomendada, de su ficha oficial
+// (Audioteka; «Dom na Wyrębach», la misma portada en Storytel, con más resolución; Poe, la de Wolne Lektury, completada a cuadrado).
 export const COVERS: Record<number, string[]> = {
-  1: ['10_cthulhu'],
-  2: ['09_poe', '09_corazon'],
-  3: ['08_hendrix'],
-  4: ['07_distancia'],
-  5: ['06_dracula', '06_dracula_original'],
-  6: ['05_apocalipsis_original', '05_apocalipsis_novela'],
-  7: ['04_carcoma'],
-  8: ['03_salem'],
-  9: ['02_nuestra_parte'],
-  10: ['01_exorcista'],
+  1: ['p10_zew'],
+  2: ['p09_poe'],
+  3: ['p08_hendrix'],
+  4: ['p07_rosemary'],
+  5: ['p06_drakula'],
+  6: ['p05_inkub'],
+  7: ['p04_darda'],
+  8: ['p03_salem'],
+  9: ['p02_manitou'],
+  10: ['p01_malerman'],
 };
 export const coverSrc = (name: string) => staticFile(`t10/covers/${name}.jpg`);
 export const bgSrc = (name: string) => staticFile(`t10/covers/bg_${name}.jpg`);
@@ -206,43 +207,13 @@ export const KWords: React.FC<{ words: { t: string; at: number; hi?: boolean }[]
   );
 };
 
-// Número que cuenta hasta su valor (formato español).
+// Número que cuenta hasta su valor (formato polaco: coma decimal y espacio de miles a partir de 10 000).
 export const countTo = (frame: number, at: number, dur: number, value: number, decimals = 0) => {
   const p = interpolate(frame, [at, at + dur], [0, 1], { ...clamp, easing: easeOut });
   const v = value * p;
   const [int, dec] = v.toFixed(decimals).split('.');
-  const grouped = int.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  const grouped = int.length > 4 ? int.replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0') : int;
   return dec ? `${grouped},${dec}` : grouped;
-};
-
-// Medidor de miedo: diez segmentos del 10 al 1; se enciende el del libro actual (cada vez más rojo).
-export const FearMeter: React.FC<{ n: number; at: number; out: number; x?: number; y?: number; k?: number }> = ({ n, at, out, x = 960, y = 1000, k = 1.5 }) => {
-  const frame = useCurrentFrame();
-  const inn = sp(frame, at, 16, 160);
-  const o = 1 - ramp(frame, out - 10, out);
-  if (inn <= 0.001 || o <= 0) return null;
-  return (
-    <div style={{ position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) translateY(${((1 - inn) * 40).toFixed(1)}px)`, opacity: inn * o, display: 'flex', alignItems: 'center', gap: 18 * k }}>
-      <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 20 * k, letterSpacing: 6 * k, color: 'rgba(239,232,220,0.62)' }}>MIEDO</span>
-      <div style={{ display: 'flex', gap: 6 * k, alignItems: 'flex-end' }}>
-        {Array.from({ length: 10 }).map((_, i) => {
-          const kk = 10 - i; // 10 … 1
-          const red = i / 9;
-          const done = kk > n; // ya pasados
-          const cur = kk === n;
-          const fill = ramp(frame, at + 6 + i * 2, at + 14 + i * 2);
-          const lit = cur ? ramp(frame, at + 10 + i * 2, at + 22 + i * 2) : 0;
-          const base = `rgba(${Math.round(110 + 120 * red)}, ${Math.round(110 - 92 * red)}, ${Math.round(110 - 80 * red)},`;
-          const pulse = cur ? 0.75 + 0.25 * Math.sin(frame / 5) : 1;
-          return (
-            <div key={i} style={{ width: 34 * k, height: (10 + i * 2.4) * k, borderRadius: 4 * k, background: cur ? `${base}${(0.95 * lit * pulse).toFixed(3)})` : done ? `${base}${(0.5 * fill).toFixed(3)})` : 'rgba(255,255,255,0.10)',
-              boxShadow: cur ? `0 0 ${(22 * lit * k).toFixed(0)}px ${base}0.85)` : undefined, transform: cur ? `scaleY(${(1 + 0.4 * lit).toFixed(3)})` : undefined, transformOrigin: '50% 100%' }} />
-          );
-        })}
-      </div>
-      <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 22 * k, color: 'rgba(239,232,220,0.75)' }}>{n}<span style={{ opacity: 0.55 }}>/10</span></span>
-    </div>
-  );
 };
 
 // Tira de las diez portadas (del 10 al 1): las ya vistas, nítidas; la del libro actual se descensura con `reveal`;

@@ -1,270 +1,215 @@
 {
- "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
  "model_id": "eleven_v4",
- "language_code": "es",
+ "language_code": "pl",
  "output_format": "mp3_44100_128",
  "voice_settings": {
-  "stability": 0.5,
-  "similarity_boost": 0.8,
+  "stability": 0.4,
+  "similarity_boost": 0.75,
   "style": 0.0,
   "use_speaker_boost": true,
-  "speed": 1.05
+  "speed": 1.04
  },
  "scenes": [
   {
    "id": "X01",
-   "text": "Hay historias que asustan."
+   "text": "Są historie, które straszą."
   },
   {
    "id": "X02",
-   "text": "Y hay historias que, cuando apagas la luz, siguen ahí. Y no te dejan dormir."
+   "text": "I są historie, które zostają z tobą, kiedy gasisz światło. I nie dają ci zasnąć."
   },
   {
    "id": "X03",
-   "text": "Estas son las diez historias de terror que dan miedo de verdad."
+   "text": "Oto dziesięć historii grozy, które naprawdę przerażają."
   },
   {
    "id": "X05",
-   "text": "Para elegirlas, en SonorBooks hemos mirado las notas y las opiniones de miles de oyentes y lectores.",
-   "say": "Para elegirlas, en Sónorbuks hemos mirado las notas y las opiniones de miles de oyentes y lectores."
+   "text": "Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy i czytelników.",
+   "say": "Żeby je wybrać, w Sonorbuks przejrzeliśmy oceny i opinie tysięcy słuchaczy i czytelników."
   },
   {
    "id": "X07",
-   "text": "Vamos de menos a más miedo."
+   "text": "Od najmniej strasznej do najstraszniejszej."
   },
   {
    "id": "X11",
-   "text": "Número diez: «La llamada de Cthulhu», de H. P. Lovecraft.",
-   "say": "Número diez: «La llamada de Ctulu», de Hache Pe Lóvecraft."
+   "text": "Numer dziesięć: „Zew Cthulhu” H.P. Lovecrafta.",
+   "say": "Numer dziesięć: Zew Ktulu Ha Pe Lawkrafta."
   },
   {
    "id": "X12",
-   "text": "Un hombre ordena los papeles de su tío abuelo, un profesor que acaba de morir, y encuentra un bajorrelieve de arcilla, informes sobre cultos en distintos rincones del mundo y un nombre que la garganta humana apenas puede pronunciar."
+   "text": "Pewien mężczyzna porządkuje papiery stryjecznego dziadka, profesora, który niedawno zmarł. Znajduje glinianą płaskorzeźbę, raporty o kultach z różnych zakątków świata i imię, które ludzkie gardło ledwie potrafi wymówić."
   },
   {
    "id": "X13",
-   "text": "Lovecraft escribió que la emoción más antigua del ser humano es el miedo, y que el miedo más antiguo es el miedo a lo desconocido. Este relato es la demostración.",
-   "say": "Lóvecraft escribió que la emoción más antigua del ser humano es el miedo, y que el miedo más antiguo es el miedo a lo desconocido. Este relato es la demostración."
-  },
-  {
-   "id": "X14",
-   "text": "Y si quieres vivirla de verdad, escúchala: Benjamín Figueres la lee sin prisas, como quien encuentra un informe que no debería haber leído. Son dos horas, y puedes empezarla hoy mismo, gratis."
+   "text": "Lovecraft napisał, że najstarszą emocją człowieka jest strach, a najstarszym rodzajem strachu – strach przed nieznanym. To opowiadanie jest tego dowodem.",
+   "say": "Lawkraft napisał, że najstarszą emocją człowieka jest strach, a najstarszym rodzajem strachu – strach przed nieznanym. To opowiadanie jest tego dowodem."
   },
   {
    "id": "X21",
-   "text": "Número nueve: los cuentos de Edgar Allan Poe."
+   "text": "Numer dziewięć: Edgar Allan Poe i jego opowiadania.",
+   "say": "Numer dziewięć: Edgar Alan Pou i jego opowiadania."
   },
   {
    "id": "X22",
-   "text": "Un hombre te jura que no está loco mientras te cuenta cómo mató a un anciano… y cómo sigue oyendo latir su corazón bajo las tablas del suelo. Una mujer enterrada en vida en la casa Usher. Un gato negro que no se marcha."
+   "text": "Mężczyzna przysięga ci, że nie jest szalony, i opowiada, jak zabił starca… i jak wciąż słyszy bicie jego serca pod deskami podłogi. Kobieta pogrzebana żywcem w domu Usherów. Czarny kot, który nie chce odejść.",
+   "say": "Mężczyzna przysięga ci, że nie jest szalony, i opowiada, jak zabił starca… i jak wciąż słyszy bicie jego serca pod deskami podłogi. Kobieta pogrzebana żywcem w domu Asherów. Czarny kot, który nie chce odejść."
   },
   {
    "id": "X23",
-   "text": "Casi doscientos años después, siguen funcionando igual de bien. Y son cortos: perfectos para escuchar uno cada noche."
-  },
-  {
-   "id": "X24",
-   "text": "La gran recopilación, «Cuentos extraordinarios», con treinta y siete relatos, la narra Jordi Boixaderas en Audible, y los oyentes le dan un cuatro coma seis sobre cinco.",
-   "say": "La gran recopilación, «Cuentos extraordinarios», con treinta y siete relatos, la narra Jordi Boishaderas en Audible, y los oyentes le dan un cuatro coma seis sobre cinco."
-  },
-  {
-   "id": "X25",
-   "text": "¿Prefieres probar antes? «El corazón delator», en versión dramatizada, dura quince minutos. Una buena forma de saber si eres valiente."
+   "text": "Prawie dwieście lat później wciąż działają tak samo. Są krótkie: w sam raz, żeby słuchać jednego co wieczór. A na polski przełożył je sam Bolesław Leśmian."
   },
   {
    "id": "X31",
-   "text": "Número ocho: «Cómo vender una casa encantada», de Grady Hendrix.",
-   "say": "Número ocho: «Cómo vender una casa encantada», de Greidi Héndrix."
+   "text": "Numer osiem: „Jak sprzedać nawiedzony dom” Grady’ego Hendrixa.",
+   "say": "Numer osiem: Jak sprzedać nawiedzony dom Grejdiego Hendriksa."
   },
   {
    "id": "X32",
-   "text": "Los padres de Louise acaban de morir y ella vuelve a la casa familiar para venderla junto a su hermano. El problema no son los recuerdos. Son los títeres. Y las muñecas. Y un títere en concreto que parece tener sus propios planes.",
-   "say": "Los padres de Luís acaban de morir y ella vuelve a la casa familiar para venderla junto a su hermano. El problema no son los recuerdos. Son los títeres. Y las muñecas. Y un títere en concreto que parece tener sus propios planes."
+   "text": "Rodzice Louise właśnie zmarli, a ona wraca do rodzinnego domu, żeby sprzedać go razem z bratem. Problemem nie są wspomnienia. Problemem są kukiełki. I lalki. I jedna konkretna kukiełka, która chyba ma własne plany.",
+   "say": "Rodzice Luiz właśnie zmarli, a ona wraca do rodzinnego domu, żeby sprzedać go razem z bratem. Problemem nie są wspomnienia. Problemem są kukiełki. I lalki. I jedna konkretna kukiełka, która chyba ma własne plany."
   },
   {
    "id": "X33",
-   "text": "El New York Times tituló su crítica: «Un títere que es, de verdad, material de pesadillas». No exageraba.",
-   "say": "El Niu York Taims tituló su crítica: «Un títere que es, de verdad, material de pesadillas». No exageraba."
-  },
-  {
-   "id": "X34",
-   "text": "Escuchada, da todavía más miedo: Esther Cordero cambia de voz para cada personaje, y los oyentes le dan un cuatro coma cuatro. En SonorBooks tienes dónde escucharla gratis, hoy mismo.",
-   "say": "Escuchada, da todavía más miedo: Esther Cordero cambia de voz para cada personaje, y los oyentes le dan un cuatro coma cuatro. En Sónorbuks tienes dónde escucharla gratis, hoy mismo."
+   "text": "„The New York Times” zatytułował recenzję: „Kukiełka, która naprawdę jest materiałem na koszmary”. I nie przesadzał.",
+   "say": "Nju Jork Tajms zatytułował recenzję: Kukiełka, która naprawdę jest materiałem na koszmary. I nie przesadzał."
   },
   {
    "id": "X41",
-   "text": "Número siete: «Distancia de rescate», de Samanta Schweblin.",
-   "say": "Número siete: «Distancia de rescate», de Samanta Shuéblin."
+   "text": "Numer siedem: „Dziecko Rosemary” Iry Levina.",
+   "say": "Numer siedem: Dziecko Rozmeri Ajry Lewina."
   },
   {
    "id": "X42",
-   "text": "Una mujer agoniza en la sala de urgencias de un pueblo. A su lado, un niño que no es su hijo le habla al oído y le pide que encuentre el momento exacto en que todo empezó. Algo ha pasado en el campo. Algo les está pasando a los niños."
+   "text": "Młode małżeństwo wprowadza się do eleganckiej starej kamienicy w Nowym Jorku. Starsi sąsiedzi są aż nazbyt pomocni. Rosemary zachodzi w ciążę… i z każdym tygodniem jest coraz pewniejsza, że sąsiedzi czegoś chcą od jej dziecka.",
+   "say": "Młode małżeństwo wprowadza się do eleganckiej starej kamienicy w Nowym Jorku. Starsi sąsiedzi są aż nazbyt pomocni. Rozmeri zachodzi w ciążę… i z każdym tygodniem jest coraz pewniejsza, że sąsiedzi czegoś chcą od jej dziecka."
   },
   {
    "id": "X43",
-   "text": "Ganó el premio Shirley Jackson, fue finalista del Booker Internacional y Netflix la convirtió en película.",
-   "say": "Ganó el premio Shérli Yákson, fue finalista del Búker Internacional y Netflix la convirtió en película."
-  },
-  {
-   "id": "X44",
-   "text": "Paula Pichersky la narra casi en susurros, y ahí está la clave: es como si alguien te contara la pesadilla al oído. Menos de tres horas, en casi todas las plataformas.",
-   "say": "Paula Pichérski la narra casi en susurros, y ahí está la clave: es como si alguien te contara la pesadilla al oído. Menos de tres horas, en casi todas las plataformas."
+   "text": "To najlepiej sprzedający się horror lat sześćdziesiątych: ponad 4 miliony egzemplarzy. A w 1968 roku przeniósł go na ekran Roman Polański.",
+   "say": "To najlepiej sprzedający się horror lat sześćdziesiątych: ponad cztery miliony egzemplarzy. A w tysiąc dziewięćset sześćdziesiątym ósmym roku przeniósł go na ekran Roman Polański."
   },
   {
    "id": "X51",
-   "text": "Número seis: «Drácula», de Bram Stoker.",
-   "say": "Número seis: «Drácula», de Bram Estóker."
+   "text": "Numer sześć: „Drakula” Brama Stokera."
   },
   {
    "id": "X52",
-   "text": "Un joven abogado viaja a Transilvania para cerrar la compra de una finca cerca de Londres. Su cliente es un conde que nunca come con él, que no aparece en el espejo y que de día no está en ninguna parte."
+   "text": "Młody prawnik jedzie do Transylwanii, żeby sfinalizować sprzedaż posiadłości pod Londynem. Jego klient to hrabia, który nigdy nie je z nim kolacji, nie odbija się w lustrze i za dnia nigdzie go nie ma."
   },
   {
    "id": "X53",
-   "text": "Es la novela que fijó para siempre la imagen del vampiro. Tanto, que «Nosferatu», en mil novecientos veintidós, era Drácula con otro nombre y sin permiso: la viuda de Stoker lo denunció y un tribunal ordenó destruir las copias.",
-   "say": "Es la novela que fijó para siempre la imagen del vampiro. Tanto, que «Nosferatu», en mil novecientos veintidós, era Drácula con otro nombre y sin permiso: la viuda de Estóker lo denunció y un tribunal ordenó destruir las copias."
-  },
-  {
-   "id": "X54",
-   "text": "Aquí hay dos formas de escucharlo. Entera, con José Coronado y Sol de la Barreda: dieciocho horas y media y un cuatro coma ocho con más de seiscientas valoraciones."
-  },
-  {
-   "id": "X55",
-   "text": "O como una película para los oídos: el Drácula original de Audible, con Asier Etxeandia, Claudia Salas y más de veinticinco actores. Lo más parecido a pasar la noche en el castillo. Y las dos entran en la prueba gratuita de Audible.",
-   "say": "O como una película para los oídos: el Drácula original de Audible, con Asier Echeandía, Claudia Salas y más de veinticinco actores. Lo más parecido a pasar la noche en el castillo. Y las dos entran en la prueba gratuita de Audible."
+   "text": "To powieść, która na zawsze ustaliła, jak wygląda wampir. Do tego stopnia, że „Nosferatu” z 1922 roku był Drakulą pod innym nazwiskiem i bez zgody: wdowa po Stokerze wytoczyła proces, a sąd nakazał zniszczyć kopie.",
+   "say": "To powieść, która na zawsze ustaliła, jak wygląda wampir. Do tego stopnia, że Nosferatu z tysiąc dziewięćset dwudziestego drugiego roku był Drakulą pod innym nazwiskiem i bez zgody: wdowa po Stokerze wytoczyła proces, a sąd nakazał zniszczyć kopie."
   },
   {
    "id": "X61",
-   "text": "Número cinco: «Apocalipsis Z», de Manel Loureiro.",
-   "say": "Número cinco: «Apocalipsis Zeta», de Manel Loureiro."
+   "text": "Numer pięć: „Inkub” Artura Urbanowicza."
   },
   {
    "id": "X62",
-   "text": "Un abogado de Pontevedra, que vive solo con su gato, sigue por la tele un brote extraño en Rusia. Al principio es una noticia más. Luego, el brote empieza a extenderse."
+   "text": "Suwalszczyzna, kilka dni przed zorzą polarną. W małej wsi Jodoziory ktoś znajduje spopielone zwłoki małżeństwa. Miejscowi mówią o zielonym świetle, o nawiedzonym domu… i o kobiecie, która kiedyś podobno parała się czarami."
   },
   {
    "id": "X63",
-   "text": "Empezó como un blog en internet antes de ser novela, y su adaptación es una de las películas internacionales más vistas de Prime Video.",
-   "say": "Empezó como un blog en internet antes de ser novela, y su adaptación es una de las películas internacionales más vistas de Práim Video."
-  },
-  {
-   "id": "X64",
-   "text": "En audio tiene una versión que hay que oír: la ficción sonora original de Audible, con Javier Rey, Maggie Civantos y quince actores más. Los oyentes destacan los gruñidos de fondo, y dicen que es como ver una película con los ojos cerrados.",
-   "say": "En audio tiene una versión que hay que oír: la ficción sonora original de Audible, con Javier Rey, Magui Civantos y quince actores más. Los oyentes destacan los gruñidos de fondo, y dicen que es como ver una película con los ojos cerrados."
-  },
-  {
-   "id": "X65",
-   "text": "Es una adaptación de seis horas; si prefieres la novela entera, también está en audio. Y las dos las puedes empezar gratis, con una prueba."
+   "text": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w 2026 roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów.",
+   "say": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w dwa tysiące dwudziestym szóstym roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów."
   },
   {
    "id": "X71",
-   "text": "Número cuatro: «Carcoma», de Layla Martínez.",
-   "say": "Número cuatro: «Carcoma», de Leila Martínez."
+   "text": "Numer cztery: „Dom na Wyrębach” Stefana Dardy."
   },
   {
    "id": "X72",
-   "text": "Una abuela y su nieta viven en una vieja casa de pueblo. La nieta ha vuelto después de que desapareciera el niño que cuidaba, el hijo de la familia más rica del pueblo. Los vecinos murmuran. Y en esa casa hay algo más que ellas dos."
+   "text": "Wykładowca akademicki po rozwodzie kupuje dom na leśnym odludziu, choć wie, że umarł w nim poprzedni właściciel. Jedyny sąsiad to dziwny, opryskliwy typ. A to dopiero początek koszmaru."
   },
   {
    "id": "X73",
-   "text": "Layla Martínez se inspiró en la casa que levantó su bisabuelo y en un armario que se abría solo. El resultado es terror rural, corto y feroz, y uno de los fenómenos editoriales del terror en España: ha agotado edición tras edición.",
-   "say": "Leila Martínez se inspiró en la casa que levantó su bisabuelo y en un armario que se abría solo. El resultado es terror rural, corto y feroz, y uno de los fenómenos editoriales del terror en España: ha agotado edición tras edición."
-  },
-  {
-   "id": "X74",
-   "text": "Paula Iwasaki la narra seca, sin sobreactuar, y más de cuatrocientos oyentes le dan un cuatro coma seis. Son tres horas: se escucha en una noche. Y la puedes empezar esta misma noche, gratis."
+   "text": "Tą powieścią Darda zadebiutował w 2008 roku, a książka była nominowana do Nagrody Zajdla. Groza miesza się tu z polskimi wierzeniami ludowymi.",
+   "say": "Tą powieścią Darda zadebiutował w dwa tysiące ósmym roku, a książka była nominowana do Nagrody Zajdla. Groza miesza się tu z polskimi wierzeniami ludowymi."
   },
   {
    "id": "X81",
-   "text": "Número tres: «El misterio de Salem's Lot», de Stephen King.",
-   "say": "Número tres: «El misterio de Séilems Lot», de Stíven King."
+   "text": "Numer trzy: „Miasteczko Salem” Stephena Kinga.",
+   "say": "Numer trzy: Miasteczko Salem Stiwena Kinga."
   },
   {
    "id": "X82",
-   "text": "Un escritor vuelve al pueblo de su infancia para escribir sobre la casa que le aterrorizaba de niño. A la vez, unos recién llegados compran esa misma casa. Y la gente del pueblo empieza a desaparecer… o a volver."
+   "text": "Pisarz wraca do miasteczka z dzieciństwa, żeby napisać o domu, który przerażał go jako chłopca. W tym samym czasie ten sam dom kupują nowi przybysze. A ludzie w miasteczku zaczynają znikać… albo wracać."
   },
   {
    "id": "X83",
-   "text": "King se preguntó qué pasaría si Drácula volviera en el siglo veinte, en Estados Unidos, y en los años ochenta llegó a decir que, en cierto modo, era su historia favorita."
-  },
-  {
-   "id": "X84",
-   "text": "¿Por qué este King y no «It» o «El resplandor»? Porque en español solo existen con voz latina. Y esta es la narración de King en castellano mejor valorada por los oyentes: Xavi Fernández, con una voz grave que convierte cada capítulo en un programa de radio de madrugada.",
-   "say": "¿Por qué este King y no «It» o «El resplandor»? Porque en español solo existen con voz latina. Y esta es la narración de King en castellano mejor valorada por los oyentes: Chavi Fernández, con una voz grave que convierte cada capítulo en un programa de radio de madrugada."
-  },
-  {
-   "id": "X85",
-   "text": "Un cuatro coma nueve sobre cinco. Y en SonorBooks te contamos cómo conseguirla gratis.",
-   "say": "Un cuatro coma nueve sobre cinco. Y en Sónorbuks te contamos cómo conseguirla gratis."
+   "text": "King zastanawiał się, co by było, gdyby Drakula wrócił w XX wieku, w Ameryce. A w latach osiemdziesiątych mówił, że w pewnym sensie to jego ulubiona historia.",
+   "say": "King zastanawiał się, co by było, gdyby Drakula wrócił w dwudziestym wieku, w Ameryce. A w latach osiemdziesiątych mówił, że w pewnym sensie to jego ulubiona historia."
   },
   {
    "id": "X91",
-   "text": "Número dos: «Nuestra parte de noche», de Mariana Enriquez."
+   "text": "Numer dwa: „Manitou” Grahama Mastertona.",
+   "say": "Numer dwa: Manitou Grejema Mastertona."
   },
   {
    "id": "X92",
-   "text": "Argentina, en plena dictadura. Un padre cruza el país en coche con su hijo pequeño. El niño ha heredado un don, y hay una sociedad secreta, la Orden, que lo quiere para sus rituales."
+   "text": "Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Rentgen pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów."
   },
   {
    "id": "X93",
-   "text": "Es terror sobrenatural, pero también del más real. Ganó el Premio Herralde y, para buena parte de la crítica, es una de las grandes novelas de terror escritas en español en este siglo."
-  },
-  {
-   "id": "X94",
-   "text": "Mara Brenner la narra con acento argentino, y eso la hace todavía más auténtica: una voz distinta para cada personaje y un cuatro coma siete sobre cinco con más de doscientas valoraciones."
-  },
-  {
-   "id": "X95",
-   "text": "Son veintitrés horas. Un viaje largo, pero no vas a querer bajarte. Y lo puedes empezar hoy mismo, gratis."
+   "text": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.",
+   "say": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitou w ręku."
   },
   {
    "id": "X101",
-   "text": "Número uno: «El exorcista», de William Peter Blatty.",
-   "say": "Número uno: «El exorcista», de Wíliam Píter Bláti."
+   "text": "Numer jeden: „Nie otwieraj oczu” Josha Malermana.",
+   "say": "Numer jeden: Nie otwieraj oczu Dżosza Malermana."
   },
   {
    "id": "X102",
-   "text": "Una actriz vive en Washington con su hija, Regan. Primero son ruidos en el desván. Luego, cambios en la niña. Después, una voz que no es la suya. Y ni los médicos ni los psiquiatras encuentran una explicación.",
-   "say": "Una actriz vive en Guáshington con su hija, Rígan. Primero son ruidos en el desván. Luego, cambios en la niña. Después, una voz que no es la suya. Y ni los médicos ni los psiquiatras encuentran una explicación."
+   "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
+   "say": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malori i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch."
   },
   {
    "id": "X103",
-   "text": "Blatty se inspiró en un caso real. En mil novecientos cuarenta y nueve, el Washington Post contó en portada que un sacerdote había liberado a un chico que, según decían, estaba en las garras del diablo. Blatty lo leyó cuando estudiaba en Georgetown.",
-   "say": "Bláti se inspiró en un caso real. En mil novecientos cuarenta y nueve, el Guáshington Post contó en portada que un sacerdote había liberado a un chico que, según decían, estaba en las garras del diablo. Bláti lo leyó cuando estudiaba en Yórchtaun."
-  },
-  {
-   "id": "X104",
-   "text": "La narra Fernando Solís, con voz latina, y un oyente lo resume así: cuando pone la voz del demonio, es indescriptible."
+   "text": "To debiut Malermana z 2014 roku. Netflix zrobił z niego film z Sandrą Bullock, który w pierwszym tygodniu obejrzało ponad 45 milionów kont.",
+   "say": "To debiut Malermana z dwa tysiące czternastego roku. Netflix zrobił z niego film z Sandrą Bullock, który w pierwszym tygodniu obejrzało ponad czterdzieści pięć milionów kont."
   },
   {
    "id": "X105",
-   "text": "Escúchalo de noche. Si te atreves."
+   "text": "Słuchaj go w nocy. Z zamkniętymi oczami. Jeśli się odważysz."
   },
   {
    "id": "X111",
-   "text": "Un consejo para que funcione: de noche, con auriculares y sin mirar el móvil."
+   "text": "Rada, żeby zadziałało: w nocy, w słuchawkach i bez zerkania w telefon."
   },
   {
-   "id": "X112",
-   "text": "Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis. En SonorBooks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al play y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog.",
-   "say": "Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis. En Sónorbuks cada historia tiene su ficha, con su nota, las plataformas donde está y su prueba gratuita: eliges una, le das al plei y empiezas sin pagar. Los enlaces están en la descripción, y la lista completa, en nuestro blog."
+   "id": "X112A",
+   "text": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
+   "say": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Pou czeka na ciebie nawet za darmo, w Wolnych Lekturach."
+  },
+  {
+   "id": "X112B",
+   "text": "Na sonorbooks.pl porównasz, gdzie posłuchać audiobooka i za ile. Linki do wszystkich dziesięciu historii są w opisie.",
+   "say": "Na sonorbooks kropka pe el porównasz, gdzie posłuchać audiobooka i za ile. Linki do wszystkich dziesięciu historii są w opisie."
   },
   {
    "id": "X113",
-   "text": "Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que te traigamos después?"
+   "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I jakie historie mamy przynieść następnym razem?"
   },
   {
    "id": "X114",
-   "text": "Tu próxima historia te está esperando."
+   "text": "Twoja następna historia już na ciebie czeka."
+  },
+  {
+   "id": "X104",
+   "text": "Czyta Andrzej Hausner, a jeden ze słuchaczy pisze krótko: to absolutna topka horroru wydanego u nas w ostatnich latach."
   },
   {
    "id": "Y01",
-   "text": "Número uno de las historias de terror que dan miedo de verdad: «El exorcista», de William Peter Blatty.",
-   "say": "Número uno de las historias de terror que dan miedo de verdad: «El exorcista», de Wíliam Píter Bláti."
+   "text": "Numer jeden wśród historii grozy, które naprawdę przerażają: „Nie otwieraj oczu” Josha Malermana.",
+   "say": "Numer jeden wśród historii grozy, które naprawdę przerażają: Nie otwieraj oczu Dżosza Malermana."
   },
   {
    "id": "Y02",
-   "text": "Los otros nueve, en el vídeo completo."
+   "text": "Pozostałe dziewięć – w pełnym filmie."
   }
  ]
 }

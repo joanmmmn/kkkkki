@@ -1,204 +1,149 @@
 {
  "id": "X12",
- "hash": "26d550528763",
- "text": "Un hombre ordena los papeles de su tío abuelo, un profesor que acaba de morir, y encuentra un bajorrelieve de arcilla, informes sobre cultos en distintos rincones del mundo y un nombre que la garganta humana apenas puede pronunciar.",
- "duration": 15.04,
+ "hash": "4d114acfe4ec",
+ "text": "Pewien mężczyzna porządkuje papiery stryjecznego dziadka, profesora, który niedawno zmarł. Znajduje glinianą płaskorzeźbę, raporty o kultach z różnych zakątków świata i imię, które ludzkie gardło ledwie potrafi wymówić.",
+ "duration": 13.28,
  "words": [
   {
-   "w": "Un",
+   "w": "Pewien",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.24
   },
   {
-   "w": "hombre",
-   "s": 0.16,
-   "e": 0.4
+   "w": "mężczyzna",
+   "s": 0.28,
+   "e": 0.88
   },
   {
-   "w": "ordena",
-   "s": 0.48,
-   "e": 0.8
-  },
-  {
-   "w": "los",
-   "s": 0.88,
-   "e": 0.96
-  },
-  {
-   "w": "papeles",
-   "s": 1.04,
+   "w": "porządkuje",
+   "s": 0.96,
    "e": 1.44
   },
   {
-   "w": "de",
+   "w": "papiery",
    "s": 1.52,
-   "e": 1.6
+   "e": 1.84
   },
   {
-   "w": "su",
-   "s": 1.68,
-   "e": 1.76
+   "w": "stryjecznego",
+   "s": 1.96,
+   "e": 2.4
   },
   {
-   "w": "tío",
-   "s": 1.8,
-   "e": 2.0
+   "w": "dziadka,",
+   "s": 2.48,
+   "e": 3.12
   },
   {
-   "w": "abuelo,",
-   "s": 2.08,
-   "e": 2.84
+   "w": "profesora,",
+   "s": 3.24,
+   "e": 3.84
   },
   {
-   "w": "un",
-   "s": 2.88,
-   "e": 2.96
-  },
-  {
-   "w": "profesor",
-   "s": 3.08,
-   "e": 3.52
-  },
-  {
-   "w": "que",
-   "s": 3.56,
-   "e": 3.6
-  },
-  {
-   "w": "acaba",
-   "s": 3.68,
-   "e": 4.0
-  },
-  {
-   "w": "de",
-   "s": 4.04,
+   "w": "który",
+   "s": 3.88,
    "e": 4.08
   },
   {
-   "w": "morir,",
-   "s": 4.2,
-   "e": 4.84
+   "w": "niedawno",
+   "s": 4.133,
+   "e": 4.48
   },
   {
-   "w": "y",
-   "s": 4.88,
-   "e": 4.92
-  },
-  {
-   "w": "encuentra",
-   "s": 4.96,
+   "w": "zmarł.",
+   "s": 4.56,
    "e": 5.44
   },
   {
-   "w": "un",
-   "s": 5.52,
-   "e": 5.6
+   "w": "Znajduje",
+   "s": 5.48,
+   "e": 5.84
   },
   {
-   "w": "bajorrelieve",
-   "s": 5.64,
-   "e": 6.32
+   "w": "glinianą",
+   "s": 5.92,
+   "e": 6.28
   },
   {
-   "w": "de",
-   "s": 6.36,
-   "e": 6.4
+   "w": "płaskorzeźbę,",
+   "s": 6.32,
+   "e": 7.28
   },
   {
-   "w": "arcilla,",
-   "s": 6.52,
-   "e": 7.32
+   "w": "raporty",
+   "s": 7.4,
+   "e": 7.76
   },
   {
-   "w": "informes",
-   "s": 7.36,
+   "w": "o",
+   "s": 7.8,
    "e": 7.84
   },
   {
-   "w": "sobre",
+   "w": "kultach",
    "s": 7.92,
-   "e": 8.16
+   "e": 8.32
   },
   {
-   "w": "cultos",
-   "s": 8.24,
-   "e": 8.64
+   "w": "z",
+   "s": 8.36,
+   "e": 8.4
   },
   {
-   "w": "en",
-   "s": 8.72,
-   "e": 8.8
+   "w": "różnych",
+   "s": 8.52,
+   "e": 8.72
   },
   {
-   "w": "distintos",
-   "s": 8.92,
-   "e": 9.28
+   "w": "zakątków",
+   "s": 8.76,
+   "e": 9.12
   },
   {
-   "w": "rincones",
-   "s": 9.44,
-   "e": 9.92
+   "w": "świata",
+   "s": 9.2,
+   "e": 9.6
   },
   {
-   "w": "del",
+   "w": "i",
    "s": 10.0,
-   "e": 10.08
+   "e": 10.16
   },
   {
-   "w": "mundo",
-   "s": 10.16,
-   "e": 10.8
+   "w": "imię,",
+   "s": 10.28,
+   "e": 10.64
   },
   {
-   "w": "y",
-   "s": 10.88,
-   "e": 10.92
+   "w": "które",
+   "s": 10.68,
+   "e": 10.96
   },
   {
-   "w": "un",
-   "s": 10.96,
-   "e": 11.04
+   "w": "ludzkie",
+   "s": 11.013,
+   "e": 11.28
   },
   {
-   "w": "nombre",
-   "s": 11.12,
-   "e": 11.44
+   "w": "gardło",
+   "s": 11.36,
+   "e": 11.76
   },
   {
-   "w": "que",
-   "s": 11.52,
-   "e": 11.6
+   "w": "ledwie",
+   "s": 11.84,
+   "e": 12.16
   },
   {
-   "w": "la",
-   "s": 11.64,
-   "e": 11.68
+   "w": "potrafi",
+   "s": 12.24,
+   "e": 12.56
   },
   {
-   "w": "garganta",
-   "s": 11.76,
-   "e": 12.24
-  },
-  {
-   "w": "humana",
-   "s": 12.36,
-   "e": 12.64
-  },
-  {
-   "w": "apenas",
-   "s": 12.8,
-   "e": 13.36
-  },
-  {
-   "w": "puede",
-   "s": 13.4,
-   "e": 13.68
-  },
-  {
-   "w": "pronunciar.",
-   "s": 13.8,
-   "e": 15.04
+   "w": "wymówić.",
+   "s": 12.6,
+   "e": 13.28
   }
  ],
- "speechEnd": 14.466
+ "speechEnd": 13.194
 }

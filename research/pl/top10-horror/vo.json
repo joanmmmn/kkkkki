@@ -1,0 +1,203 @@
+{
+ "scenes": [
+  {
+   "id": "X01",
+   "text": "Są historie, które straszą."
+  },
+  {
+   "id": "X02",
+   "text": "I są historie, które zostają z tobą, kiedy gasisz światło. I nie dają ci zasnąć."
+  },
+  {
+   "id": "X03",
+   "text": "Oto dziesięć historii grozy, które naprawdę przerażają."
+  },
+  {
+   "id": "X05",
+   "text": "Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy i czytelników."
+  },
+  {
+   "id": "X07",
+   "text": "Od najmniej strasznej do najstraszniejszej."
+  },
+  {
+   "id": "X11",
+   "text": "Numer dziesięć: „Zew Cthulhu” H.P. Lovecrafta.",
+   "say": "Numer dziesięć: Zew Ktulu Ha Pe Lawkrafta."
+  },
+  {
+   "id": "X12",
+   "text": "Pewien mężczyzna porządkuje papiery stryjecznego dziadka, profesora, który niedawno zmarł. Znajduje glinianą płaskorzeźbę, raporty o kultach z różnych zakątków świata i imię, które ludzkie gardło ledwie potrafi wymówić."
+  },
+  {
+   "id": "X13",
+   "text": "Lovecraft napisał, że najstarszą emocją człowieka jest strach, a najstarszym rodzajem strachu – strach przed nieznanym. To opowiadanie jest tego dowodem.",
+   "say": "Lawkraft napisał, że najstarszą emocją człowieka jest strach, a najstarszym rodzajem strachu – strach przed nieznanym. To opowiadanie jest tego dowodem."
+  },
+  {
+   "id": "X21",
+   "text": "Numer dziewięć: Edgar Allan Poe i jego opowiadania.",
+   "say": "Numer dziewięć: Edgar Alan Pou i jego opowiadania."
+  },
+  {
+   "id": "X22",
+   "text": "Mężczyzna przysięga ci, że nie jest szalony, i opowiada, jak zabił starca… i jak wciąż słyszy bicie jego serca pod deskami podłogi. Kobieta pogrzebana żywcem w domu Usherów. Czarny kot, który nie chce odejść.",
+   "say": "Mężczyzna przysięga ci, że nie jest szalony, i opowiada, jak zabił starca… i jak wciąż słyszy bicie jego serca pod deskami podłogi. Kobieta pogrzebana żywcem w domu Asherów. Czarny kot, który nie chce odejść."
+  },
+  {
+   "id": "X23",
+   "text": "Prawie dwieście lat później wciąż działają tak samo. Są krótkie: w sam raz, żeby słuchać jednego co wieczór. A na polski przełożył je sam Bolesław Leśmian."
+  },
+  {
+   "id": "X31",
+   "text": "Numer osiem: „Jak sprzedać nawiedzony dom” Grady’ego Hendrixa.",
+   "say": "Numer osiem: Jak sprzedać nawiedzony dom Grejdiego Hendriksa."
+  },
+  {
+   "id": "X32",
+   "text": "Rodzice Louise właśnie zmarli, a ona wraca do rodzinnego domu, żeby sprzedać go razem z bratem. Problemem nie są wspomnienia. Problemem są kukiełki. I lalki. I jedna konkretna kukiełka, która chyba ma własne plany.",
+   "say": "Rodzice Luiz właśnie zmarli, a ona wraca do rodzinnego domu, żeby sprzedać go razem z bratem. Problemem nie są wspomnienia. Problemem są kukiełki. I lalki. I jedna konkretna kukiełka, która chyba ma własne plany."
+  },
+  {
+   "id": "X33",
+   "text": "„The New York Times” zatytułował recenzję: „Kukiełka, która naprawdę jest materiałem na koszmary”. I nie przesadzał.",
+   "say": "Nju Jork Tajms zatytułował recenzję: Kukiełka, która naprawdę jest materiałem na koszmary. I nie przesadzał."
+  },
+  {
+   "id": "X41",
+   "text": "Numer siedem: „Dziecko Rosemary” Iry Levina.",
+   "say": "Numer siedem: Dziecko Rozmeri Ajry Lewina."
+  },
+  {
+   "id": "X42",
+   "text": "Młode małżeństwo wprowadza się do eleganckiej starej kamienicy w Nowym Jorku. Starsi sąsiedzi są aż nazbyt pomocni. Rosemary zachodzi w ciążę… i z każdym tygodniem jest coraz pewniejsza, że sąsiedzi czegoś chcą od jej dziecka.",
+   "say": "Młode małżeństwo wprowadza się do eleganckiej starej kamienicy w Nowym Jorku. Starsi sąsiedzi są aż nazbyt pomocni. Rozmeri zachodzi w ciążę… i z każdym tygodniem jest coraz pewniejsza, że sąsiedzi czegoś chcą od jej dziecka."
+  },
+  {
+   "id": "X43",
+   "text": "To najlepiej sprzedający się horror lat sześćdziesiątych: ponad 4 miliony egzemplarzy. A w 1968 roku przeniósł go na ekran Roman Polański.",
+   "say": "To najlepiej sprzedający się horror lat sześćdziesiątych: ponad cztery miliony egzemplarzy. A w tysiąc dziewięćset sześćdziesiątym ósmym roku przeniósł go na ekran Roman Polański."
+  },
+  {
+   "id": "X51",
+   "text": "Numer sześć: „Drakula” Brama Stokera."
+  },
+  {
+   "id": "X52",
+   "text": "Młody prawnik jedzie do Transylwanii, żeby sfinalizować sprzedaż posiadłości pod Londynem. Jego klient to hrabia, który nigdy nie je z nim kolacji, nie odbija się w lustrze i za dnia nigdzie go nie ma."
+  },
+  {
+   "id": "X53",
+   "text": "To powieść, która na zawsze ustaliła, jak wygląda wampir. Do tego stopnia, że „Nosferatu” z 1922 roku był Drakulą pod innym nazwiskiem i bez zgody: wdowa po Stokerze wytoczyła proces, a sąd nakazał zniszczyć kopie.",
+   "say": "To powieść, która na zawsze ustaliła, jak wygląda wampir. Do tego stopnia, że Nosferatu z tysiąc dziewięćset dwudziestego drugiego roku był Drakulą pod innym nazwiskiem i bez zgody: wdowa po Stokerze wytoczyła proces, a sąd nakazał zniszczyć kopie."
+  },
+  {
+   "id": "X61",
+   "text": "Numer pięć: „Inkub” Artura Urbanowicza."
+  },
+  {
+   "id": "X62",
+   "text": "Suwalszczyzna, kilka dni przed zorzą polarną. W małej wsi Jodoziory ktoś znajduje spopielone zwłoki małżeństwa. Miejscowi mówią o zielonym świetle, o nawiedzonym domu… i o kobiecie, która kiedyś podobno parała się czarami."
+  },
+  {
+   "id": "X63",
+   "text": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w 2026 roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów.",
+   "say": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w dwa tysiące dwudziestym szóstym roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów."
+  },
+  {
+   "id": "X71",
+   "text": "Numer cztery: „Dom na Wyrębach” Stefana Dardy."
+  },
+  {
+   "id": "X72",
+   "text": "Wykładowca akademicki po rozwodzie kupuje dom na leśnym odludziu, choć wie, że umarł w nim poprzedni właściciel. Jedyny sąsiad to dziwny, opryskliwy typ. A to dopiero początek koszmaru."
+  },
+  {
+   "id": "X73",
+   "text": "Tą powieścią Darda zadebiutował w 2008 roku, a książka była nominowana do Nagrody Zajdla. Groza miesza się tu z polskimi wierzeniami ludowymi.",
+   "say": "Tą powieścią Darda zadebiutował w dwa tysiące ósmym roku, a książka była nominowana do Nagrody Zajdla. Groza miesza się tu z polskimi wierzeniami ludowymi."
+  },
+  {
+   "id": "X81",
+   "text": "Numer trzy: „Miasteczko Salem” Stephena Kinga.",
+   "say": "Numer trzy: Miasteczko Salem Stiwena Kinga."
+  },
+  {
+   "id": "X82",
+   "text": "Pisarz wraca do miasteczka z dzieciństwa, żeby napisać o domu, który przerażał go jako chłopca. W tym samym czasie ten sam dom kupują nowi przybysze. A ludzie w miasteczku zaczynają znikać… albo wracać."
+  },
+  {
+   "id": "X83",
+   "text": "King zastanawiał się, co by było, gdyby Drakula wrócił w XX wieku, w Ameryce. A w latach osiemdziesiątych mówił, że w pewnym sensie to jego ulubiona historia.",
+   "say": "King zastanawiał się, co by było, gdyby Drakula wrócił w dwudziestym wieku, w Ameryce. A w latach osiemdziesiątych mówił, że w pewnym sensie to jego ulubiona historia."
+  },
+  {
+   "id": "X91",
+   "text": "Numer dwa: „Manitou” Grahama Mastertona.",
+   "say": "Numer dwa: Manitou Grejema Mastertona."
+  },
+  {
+   "id": "X92",
+   "text": "Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Rentgen pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów."
+  },
+  {
+   "id": "X93",
+   "text": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.",
+   "say": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitou w ręku."
+  },
+  {
+   "id": "X101",
+   "text": "Numer jeden: „Nie otwieraj oczu” Josha Malermana.",
+   "say": "Numer jeden: Nie otwieraj oczu Dżosza Malermana."
+  },
+  {
+   "id": "X102",
+   "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
+   "say": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malori i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch."
+  },
+  {
+   "id": "X103",
+   "text": "To debiut Malermana z 2014 roku. Netflix zrobił z niego film z Sandrą Bullock, który w pierwszym tygodniu obejrzało ponad 45 milionów kont.",
+   "say": "To debiut Malermana z dwa tysiące czternastego roku. Netflix zrobił z niego film z Sandrą Bullock, który w pierwszym tygodniu obejrzało ponad czterdzieści pięć milionów kont."
+  },
+  {
+   "id": "X104",
+   "text": "Czyta Andrzej Hausner, a jeden ze słuchaczy pisze krótko: to absolutna topka horroru wydanego u nas w ostatnich latach."
+  },
+  {
+   "id": "X105",
+   "text": "Słuchaj go w nocy. Z zamkniętymi oczami. Jeśli się odważysz."
+  },
+  {
+   "id": "X111",
+   "text": "Rada, żeby zadziałało: w nocy, w słuchawkach i bez zerkania w telefon."
+  },
+  {
+   "id": "X112A",
+   "text": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
+   "say": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Pou czeka na ciebie nawet za darmo, w Wolnych Lekturach."
+  },
+  {
+   "id": "X112B",
+   "text": "Na sonorbooks.pl porównasz, gdzie posłuchać audiobooka i za ile. Linki do wszystkich dziesięciu historii są w opisie.",
+   "say": "Na sonorbooks kropka pe el porównasz, gdzie posłuchać audiobooka i za ile. Linki do wszystkich dziesięciu historii są w opisie."
+  },
+  {
+   "id": "X113",
+   "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I jakie historie mamy przynieść następnym razem?"
+  },
+  {
+   "id": "X114",
+   "text": "Twoja następna historia już na ciebie czeka."
+  },
+  {
+   "id": "Y01",
+   "text": "Numer jeden wśród historii grozy, które naprawdę przerażają: „Nie otwieraj oczu” Josha Malermana.",
+   "say": "Numer jeden wśród historii grozy, które naprawdę przerażają: Nie otwieraj oczu Dżosza Malermana."
+  },
+  {
+   "id": "Y02",
+   "text": "Pozostałe dziewięć – w pełnym filmie."
+  }
+ ]
+}

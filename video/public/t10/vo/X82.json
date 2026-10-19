@@ -1,204 +1,174 @@
 {
  "id": "X82",
- "hash": "8cf26ee34bb0",
- "text": "Un escritor vuelve al pueblo de su infancia para escribir sobre la casa que le aterrorizaba de niño. A la vez, unos recién llegados compran esa misma casa. Y la gente del pueblo empieza a desaparecer… o a volver.",
- "duration": 14.4,
+ "hash": "509ffb98eb8f",
+ "text": "Pisarz wraca do miasteczka z dzieciństwa, żeby napisać o domu, który przerażał go jako chłopca. W tym samym czasie ten sam dom kupują nowi przybysze. A ludzie w miasteczku zaczynają znikać… albo wracać.",
+ "duration": 13.52,
  "words": [
   {
-   "w": "Un",
+   "w": "Pisarz",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.48
   },
   {
-   "w": "escritor",
-   "s": 0.16,
-   "e": 0.72
+   "w": "wraca",
+   "s": 0.56,
+   "e": 0.88
   },
   {
-   "w": "vuelve",
-   "s": 0.8,
-   "e": 1.04
+   "w": "do",
+   "s": 0.92,
+   "e": 0.96
   },
   {
-   "w": "al",
-   "s": 1.12,
-   "e": 1.2
+   "w": "miasteczka",
+   "s": 1.0,
+   "e": 1.44
   },
   {
-   "w": "pueblo",
-   "s": 1.24,
+   "w": "z",
+   "s": 1.48,
    "e": 1.52
   },
   {
-   "w": "de",
-   "s": 1.56,
-   "e": 1.6
+   "w": "dzieciństwa,",
+   "s": 1.573,
+   "e": 2.32
   },
   {
-   "w": "su",
-   "s": 1.68,
-   "e": 1.76
+   "w": "żeby",
+   "s": 2.4,
+   "e": 2.56
   },
   {
-   "w": "infancia",
-   "s": 1.88,
-   "e": 2.48
-  },
-  {
-   "w": "para",
-   "s": 2.56,
-   "e": 2.64
-  },
-  {
-   "w": "escribir",
-   "s": 2.72,
-   "e": 3.12
-  },
-  {
-   "w": "sobre",
-   "s": 3.2,
-   "e": 3.36
-  },
-  {
-   "w": "la",
-   "s": 3.44,
-   "e": 3.52
-  },
-  {
-   "w": "casa",
-   "s": 3.6,
-   "e": 3.92
-  },
-  {
-   "w": "que",
-   "s": 3.96,
-   "e": 4.0
-  },
-  {
-   "w": "le",
-   "s": 4.08,
-   "e": 4.16
-  },
-  {
-   "w": "aterrorizaba",
-   "s": 4.24,
-   "e": 4.96
-  },
-  {
-   "w": "de",
-   "s": 5.0,
-   "e": 5.04
-  },
-  {
-   "w": "niño.",
-   "s": 5.12,
-   "e": 5.96
-  },
-  {
-   "w": "A",
-   "s": 6.0,
-   "e": 6.027
-  },
-  {
-   "w": "la",
-   "s": 6.053,
-   "e": 6.08
-  },
-  {
-   "w": "vez,",
-   "s": 6.16,
-   "e": 6.76
-  },
-  {
-   "w": "unos",
-   "s": 6.8,
-   "e": 7.04
-  },
-  {
-   "w": "recién",
-   "s": 7.12,
-   "e": 7.44
-  },
-  {
-   "w": "llegados",
-   "s": 7.48,
-   "e": 8.0
-  },
-  {
-   "w": "compran",
-   "s": 8.12,
-   "e": 8.4
-  },
-  {
-   "w": "esa",
-   "s": 8.48,
-   "e": 8.72
-  },
-  {
-   "w": "misma",
-   "s": 8.84,
-   "e": 9.04
-  },
-  {
-   "w": "casa.",
-   "s": 9.12,
-   "e": 9.88
-  },
-  {
-   "w": "Y",
-   "s": 9.92,
-   "e": 10.0
-  },
-  {
-   "w": "la",
-   "s": 10.08,
-   "e": 10.16
-  },
-  {
-   "w": "gente",
-   "s": 10.2,
-   "e": 10.48
-  },
-  {
-   "w": "del",
-   "s": 10.56,
-   "e": 10.64
-  },
-  {
-   "w": "pueblo",
-   "s": 10.72,
-   "e": 11.04
-  },
-  {
-   "w": "empieza",
-   "s": 11.12,
-   "e": 11.6
-  },
-  {
-   "w": "a",
-   "s": 11.64,
-   "e": 11.68
-  },
-  {
-   "w": "desaparecer…",
-   "s": 11.8,
-   "e": 13.0
+   "w": "napisać",
+   "s": 2.64,
+   "e": 2.96
   },
   {
    "w": "o",
-   "s": 13.04,
-   "e": 13.12
+   "s": 3.04,
+   "e": 3.12
   },
   {
-   "w": "a",
-   "s": 13.2,
-   "e": 13.28
+   "w": "domu,",
+   "s": 3.2,
+   "e": 3.6
   },
   {
-   "w": "volver.",
-   "s": 13.32,
-   "e": 14.4
+   "w": "który",
+   "s": 3.64,
+   "e": 3.92
+  },
+  {
+   "w": "przerażał",
+   "s": 3.96,
+   "e": 4.4
+  },
+  {
+   "w": "go",
+   "s": 4.48,
+   "e": 4.56
+  },
+  {
+   "w": "jako",
+   "s": 4.6,
+   "e": 4.8
+  },
+  {
+   "w": "chłopca.",
+   "s": 4.84,
+   "e": 5.56
+  },
+  {
+   "w": "W",
+   "s": 5.84,
+   "e": 5.92
+  },
+  {
+   "w": "tym",
+   "s": 5.96,
+   "e": 6.04
+  },
+  {
+   "w": "samym",
+   "s": 6.08,
+   "e": 6.32
+  },
+  {
+   "w": "czasie",
+   "s": 6.4,
+   "e": 6.72
+  },
+  {
+   "w": "ten",
+   "s": 6.96,
+   "e": 7.12
+  },
+  {
+   "w": "sam",
+   "s": 7.2,
+   "e": 7.36
+  },
+  {
+   "w": "dom",
+   "s": 7.44,
+   "e": 7.68
+  },
+  {
+   "w": "kupują",
+   "s": 7.76,
+   "e": 8.16
+  },
+  {
+   "w": "nowi",
+   "s": 8.24,
+   "e": 8.4
+  },
+  {
+   "w": "przybysze.",
+   "s": 8.48,
+   "e": 9.28
+  },
+  {
+   "w": "A",
+   "s": 9.52,
+   "e": 9.6
+  },
+  {
+   "w": "ludzie",
+   "s": 9.64,
+   "e": 9.84
+  },
+  {
+   "w": "w",
+   "s": 9.88,
+   "e": 9.92
+  },
+  {
+   "w": "miasteczku",
+   "s": 9.96,
+   "e": 10.56
+  },
+  {
+   "w": "zaczynają",
+   "s": 10.8,
+   "e": 11.28
+  },
+  {
+   "w": "znikać…",
+   "s": 11.36,
+   "e": 12.48
+  },
+  {
+   "w": "albo",
+   "s": 12.56,
+   "e": 12.72
+  },
+  {
+   "w": "wracać.",
+   "s": 12.8,
+   "e": 13.52
   }
  ],
- "speechEnd": 13.871
+ "speechEnd": 13.428
 }

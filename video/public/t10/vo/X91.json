@@ -1,54 +1,34 @@
 {
  "id": "X91",
- "hash": "a3364dc071fa",
- "text": "Número dos: «Nuestra parte de noche», de Mariana Enriquez.",
- "duration": 4.8,
+ "hash": "c3ea2f92d48e",
+ "text": "Numer dwa: „Manitou” Grahama Mastertona.",
+ "duration": 2.96,
  "words": [
   {
-   "w": "Número",
+   "w": "Numer",
    "s": 0.0,
    "e": 0.24
   },
   {
-   "w": "dos:",
-   "s": 0.4,
-   "e": 1.2
+   "w": "dwa:",
+   "s": 0.32,
+   "e": 0.96
   },
   {
-   "w": "«Nuestra",
-   "s": 1.24,
-   "e": 1.68
+   "w": "„Manitou”",
+   "s": 1.08,
+   "e": 1.52
   },
   {
-   "w": "parte",
-   "s": 1.76,
-   "e": 2.04
+   "w": "Grahama",
+   "s": 1.6,
+   "e": 2.0
   },
   {
-   "w": "de",
-   "s": 2.08,
-   "e": 2.16
-  },
-  {
-   "w": "noche»,",
-   "s": 2.28,
-   "e": 2.92
-  },
-  {
-   "w": "de",
-   "s": 2.96,
-   "e": 3.04
-  },
-  {
-   "w": "Mariana",
-   "s": 3.12,
-   "e": 3.48
-  },
-  {
-   "w": "Enriquez.",
-   "s": 3.52,
-   "e": 4.8
+   "w": "Mastertona.",
+   "s": 2.04,
+   "e": 2.96
   }
  ],
- "speechEnd": 4.172
+ "speechEnd": 2.817
 }

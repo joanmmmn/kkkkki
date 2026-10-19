@@ -1,0 +1,433 @@
+{
+ "consultado": "2026-10-19",
+ "fuentes": "Audioteka (JSON-LD de cada ficha), Storytel PL (api.storytel.net/search, store STHP-PL), Wolne Lektury (API), sonorbooks.pl",
+ "orden": "de menos a más miedo (10 → 1)",
+ "en_sonorbooks_pl": [
+  "Zew Cthulhu",
+  "Dziecko Rosemary",
+  "Drakula"
+ ],
+ "lista": [
+  {
+   "puesto": 10,
+   "es_original_es": "La llamada de Cthulhu — H. P. Lovecraft",
+   "estado": "se mantiene",
+   "pl": "Zew Cthulhu",
+   "original": "The Call of Cthulhu",
+   "autor": "H.P. Lovecraft",
+   "recomendada": {
+    "lektor": [
+     "Wojciech Żołądkowicz"
+    ],
+    "duracion_min": 116,
+    "duracion": "1 h 56 min",
+    "editorial": [
+     "Wydawnictwo Łukasz Tomys Publishing"
+    ],
+    "nota_audioteka": 4.3,
+    "valoraciones_audioteka": 23,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/zew-cthulhu-wyd-lukasz-tomys-publishing/",
+    "url_sonorbooks": "https://sonorbooks.pl/audiobook/zew-cthulhu/",
+    "url_storytel": "https://www.storytel.com/pl/books/zew-cthulhu-13388769",
+    "storytel": "1 h 55 min, ★4,29, en suscripción"
+   },
+   "otras_grabaciones": [
+    {
+     "lektor": "Sebastian Kumor",
+     "duracion": "1 h 42 min",
+     "storytel": "★4,86",
+     "url": "https://www.storytel.com/pl/books/zew-cthulhu-14399268"
+    },
+    {
+     "lektor": "Piotr Zelt",
+     "duracion": "1 h 34 min",
+     "storytel": "★4,23",
+     "url": "https://www.storytel.com/pl/books/zew-cthulhu-952705"
+    },
+    {
+     "lektor": "Janusz Zadura",
+     "duracion": "1 h 38 min",
+     "storytel": "★4,04",
+     "url": "https://www.storytel.com/pl/books/zew-cthulhu-2922241"
+    }
+   ],
+   "enlace_video": "https://sonorbooks.pl/audiobook/zew-cthulhu/",
+   "plataformas_verificadas": [
+    "Audioteka (compra)",
+    "Storytel PL (suscripción)"
+   ],
+   "nota": "Se recomienda la edición de la ficha de sonorbooks.pl (Wojciech Żołądkowicz) por coherencia con el enlace. Sebastian Kumor tiene mejor nota en Storytel, pero solo allí."
+  },
+  {
+   "puesto": 9,
+   "es_original_es": "Cuentos de Edgar Allan Poe",
+   "estado": "se mantiene (adaptado: traducción de Leśmian)",
+   "pl": "Opowiadania Edgara Allana Poego (przekład Bolesława Leśmiana)",
+   "original": "Tales (The Tell-Tale Heart, The Fall of the House of Usher, The Black Cat…)",
+   "autor": "Edgar Allan Poe",
+   "recomendada": {
+    "titulo": "Serce oskarżycielem / Czarny kot / Zagłada domu Usherów (Wolne Lektury, gratis)",
+    "lektor": [
+     "Wiktor Korzeniewski"
+    ],
+    "duracion": "17 min / 27 min / 50 min",
+    "duracion_min": [
+     17,
+     27,
+     50
+    ],
+    "traductor": "Bolesław Leśmian",
+    "url": [
+     "https://wolnelektury.pl/katalog/lektura/serce-oskarzycielem/",
+     "https://wolnelektury.pl/katalog/lektura/czarny-kot/",
+     "https://wolnelektury.pl/katalog/lektura/zaglada-domu-usherow/"
+    ],
+    "fuente": "API https://wolnelektury.pl/api/books/<slug>/ (audio_length 17:13, 26:32, 50:06; translators: Bolesław Leśmian)"
+   },
+   "otras_grabaciones": [
+    {
+     "lektor": [
+      "Wojciech Masiak"
+     ],
+     "duracion_min": 480,
+     "duracion": "8 h 0 min",
+     "editorial": [
+      "Saga Egmont"
+     ],
+     "nota_audioteka": 3.4,
+     "valoraciones_audioteka": 5,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/opowiesci-nadzwyczajne-tom-i/",
+     "nota": "Leśmian; 10 relatos (incl. Serce oskarżycielem, Zagłada domu Usherów, Studnia i wahadło). Audioteka indica 8 h 0 min (dato dudoso); Storytel: 3 h 31 min, ★3,66. Reseña: sin capítulos por relato.",
+     "url_storytel": "https://www.storytel.com/pl/books/opowieści-nadzwyczajne-tom-i-577390"
+    },
+    {
+     "lektor": [
+      "Wojciech Masiak"
+     ],
+     "duracion_min": 480,
+     "duracion": "8 h 0 min",
+     "editorial": [
+      "Saga Egmont"
+     ],
+     "nota_audioteka": 4.7,
+     "valoraciones_audioteka": 3,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/opowiesci-nadzwyczajne-tom-ii/",
+     "nota": "Leśmian; incl. Czarny kot, William Wilson, Maska śmierci szkarłatnej. Audioteka 8 h 0 min (dudoso); Storytel 3 h 49 min, ★4,44.",
+     "url_storytel": "https://www.storytel.com/pl/books/opowieści-nadzwyczajne-tom-ii-577405"
+    },
+    {
+     "lektor": [
+      "Krzysztof Tubilewicz"
+     ],
+     "duracion_min": 534,
+     "duracion": "8 h 54 min",
+     "editorial": [
+      "Świat Książki"
+     ],
+     "nota_audioteka": 4.1,
+     "valoraciones_audioteka": 8,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/wybor-opowiadan-swiat-ksiazki/"
+    },
+    {
+     "lektor": [
+      "Maciej Więckowski"
+     ],
+     "duracion_min": 285,
+     "duracion": "4 h 45 min",
+     "editorial": [
+      "Uroboros"
+     ],
+     "nota_audioteka": 0,
+     "valoraciones_audioteka": 0,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/zaglada-domu-usherow-i-inne-opowiadania/"
+    }
+   ],
+   "enlace_video": "https://wolnelektury.pl/katalog/lektura/serce-oskarzycielem/",
+   "plataformas_verificadas": [
+    "Wolne Lektury (gratis)",
+    "Audioteka",
+    "Storytel PL"
+   ],
+   "nota": "No está en sonorbooks.pl. El «extra» del vídeo español (El corazón delator dramatizado, 15 min) pasa a «Serce oskarżycielem», 17 min, gratis en Wolne Lektury."
+  },
+  {
+   "puesto": 8,
+   "es_original_es": "Cómo vender una casa encantada — Grady Hendrix",
+   "estado": "se mantiene",
+   "pl": "Jak sprzedać nawiedzony dom",
+   "original": "How to Sell a Haunted House",
+   "autor": "Grady Hendrix",
+   "recomendada": {
+    "lektor": [
+     "Ilona Chojnowska"
+    ],
+    "duracion_min": 811,
+    "duracion": "13 h 31 min",
+    "editorial": [
+     "ZYSK i S-ka"
+    ],
+    "nota_audioteka": 4,
+    "valoraciones_audioteka": 3,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/jak-sprzedac-nawiedzony-dom/",
+    "traductor": "Tomasz Bieroń"
+   },
+   "otras_grabaciones": [],
+   "enlace_video": "https://audioteka.com/pl/audiobook/jak-sprzedac-nawiedzony-dom/",
+   "plataformas_verificadas": [
+    "Audioteka"
+   ],
+   "nota": "No está en sonorbooks.pl ni en Storytel PL (búsqueda 19/10/2026). Solo 3 valoraciones en Audioteka: no citar la nota en voz."
+  },
+  {
+   "puesto": 7,
+   "es_original_es": "Distancia de rescate — Samanta Schweblin",
+   "estado": "SUSTITUIDO: sin audiobook en polaco (Audioteka y Storytel PL solo tienen otros títulos de Schweblin)",
+   "pl": "Dziecko Rosemary",
+   "original": "Rosemary's Baby",
+   "autor": "Ira Levin",
+   "recomendada": {
+    "lektor": [
+     "Julia Kamińska"
+    ],
+    "duracion_min": 461,
+    "duracion": "7 h 41 min",
+    "editorial": [
+     "Wydawnictwo Albatros"
+    ],
+    "nota_audioteka": 4.7,
+    "valoraciones_audioteka": 47,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/dziecko-rosemary-albatros/",
+    "url_sonorbooks": "https://sonorbooks.pl/audiobook/dziecko-rosemary/",
+    "url_storytel": "https://www.storytel.com/pl/books/dziecko-rosemary-14754080",
+    "storytel": "7 h 40 min, ★4,53",
+    "traductor": "Janusz Ochab"
+   },
+   "otras_grabaciones": [],
+   "enlace_video": "https://sonorbooks.pl/audiobook/dziecko-rosemary/",
+   "plataformas_verificadas": [
+    "Audioteka",
+    "Storytel PL (suscripción)"
+   ],
+   "justificacion": "Era una de las candidatas del episodio español (descartada allí solo por no tener audio en español). Novela corta de terror sobre la maternidad con narradora (Julia Kamińska), como Schweblin; en sonorbooks.pl; y gancho polaco: la adaptó Roman Polański (1968)."
+  },
+  {
+   "puesto": 6,
+   "es_original_es": "Drácula — Bram Stoker",
+   "estado": "se mantiene",
+   "pl": "Drakula",
+   "original": "Dracula",
+   "autor": "Bram Stoker",
+   "recomendada": {
+    "lektor": [
+     "Andrzej Hausner"
+    ],
+    "duracion_min": 911,
+    "duracion": "15 h 11 min",
+    "editorial": [
+     "Uroboros"
+    ],
+    "nota_audioteka": 4.7,
+    "valoraciones_audioteka": 42,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/drakula-empik/",
+    "url_sonorbooks": "https://sonorbooks.pl/audiobook/drakula/",
+    "url_storytel": "https://www.storytel.com/pl/books/drakula-10338354",
+    "storytel": "15 h 11 min, ★4,37"
+   },
+   "otras_grabaciones": [
+    {
+     "lektor": [
+      "Krzysztof Gosztyła"
+     ],
+     "duracion_min": 169,
+     "duracion": "2 h 49 min",
+     "editorial": [
+      "Frajda"
+     ],
+     "nota_audioteka": 5,
+     "valoraciones_audioteka": 5,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/drakula/",
+     "nota": "Adaptación infantil (Frajda, categoría «Dla dzieci»), no la novela."
+    }
+   ],
+   "enlace_video": "https://sonorbooks.pl/audiobook/drakula/",
+   "plataformas_verificadas": [
+    "Audioteka",
+    "Storytel PL (suscripción)"
+   ],
+   "nota": "Storytel anuncia otra «Drakula» con Maciej Więckowski (sin publicar, fecha 2027)."
+  },
+  {
+   "puesto": 5,
+   "es_original_es": "Apocalipsis Z — Manel Loureiro (ficción sonora Audible Original)",
+   "estado": "SUSTITUIDO: sin audiobook en polaco",
+   "pl": "Inkub. Słuchowisko",
+   "original": "Inkub (Artur Urbanowicz, 2016)",
+   "autor": "Artur Urbanowicz",
+   "recomendada": {
+    "lektor": [
+     "Danuta Stenka",
+     "Karolina Klich",
+     "Marzena Trybała",
+     "Piotr Witkowski"
+    ],
+    "duracion_min": 631,
+    "duracion": "10 h 31 min",
+    "editorial": [
+     "Czarna Owca"
+    ],
+    "nota_audioteka": 4.9,
+    "valoraciones_audioteka": 61,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/inkub-sluchowisko/",
+    "url_storytel": "https://www.storytel.com/pl/books/inkub-słuchowisko-15061547",
+    "storytel": "10 h 31 min, ★4,65, estreno 21.08.2026",
+    "reparto": "Danuta Stenka, Piotr Witkowski, Karolina Klich; narradora Marzena Trybała; 52 actores más; adaptación y dirección Jan Hussakowski"
+   },
+   "otras_grabaciones": [],
+   "enlace_video": "https://audioteka.com/pl/audiobook/inkub-sluchowisko/",
+   "plataformas_verificadas": [
+    "Audioteka",
+    "Storytel PL (suscripción)"
+   ],
+   "justificacion": "Equivalente directo de la ficción sonora de Audible con actores conocidos: un słuchowisko polaco de 2026 con Danuta Stenka y más de 50 actores, basado en una novela polaca de terror premiada (Nagroda Czytelników Polskiej Literatury Grozy im. Stefana Grabińskiego, según taniaksiazka.pl)."
+  },
+  {
+   "puesto": 4,
+   "es_original_es": "Carcoma — Layla Martínez",
+   "estado": "SUSTITUIDO: sin traducción/audio en polaco",
+   "pl": "Dom na Wyrębach",
+   "original": "Dom na Wyrębach (Stefan Darda, 2008)",
+   "autor": "Stefan Darda",
+   "recomendada": {
+    "lektor": [
+     "Wiktor Zborowski"
+    ],
+    "duracion_min": 746,
+    "duracion": "12 h 26 min",
+    "editorial": [
+     "Heraclon International"
+    ],
+    "nota_audioteka": 4.5,
+    "valoraciones_audioteka": 223,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/dom-na-wyrebach/",
+    "url_storytel": "https://www.storytel.com/pl/books/dom-na-wyrębach-36402",
+    "storytel": "12 h 25 min, ★4,37"
+   },
+   "otras_grabaciones": [],
+   "enlace_video": "https://audioteka.com/pl/audiobook/dom-na-wyrebach/",
+   "plataformas_verificadas": [
+    "Audioteka",
+    "Storytel PL (suscripción)"
+   ],
+   "justificacion": "El hueco de Carcoma es el del terror rural de autor local. Darda es el equivalente polaco: casa aislada en el bosque, un vecino inquietante y creencias populares polacas (debut de 2008, nominado al Premio Zajdel); lo lee Wiktor Zborowski y es el horror polaco con más valoraciones en Audioteka entre los revisados (223)."
+  },
+  {
+   "puesto": 3,
+   "es_original_es": "El misterio de Salem's Lot — Stephen King",
+   "estado": "se mantiene",
+   "pl": "Miasteczko Salem",
+   "original": "'Salem's Lot",
+   "autor": "Stephen King",
+   "recomendada": {
+    "lektor": [
+     "Krzysztof Plewako-Szczerbiński"
+    ],
+    "duracion_min": 1022,
+    "duracion": "17 h 2 min",
+    "editorial": [
+     "Prószyński i S-ka"
+    ],
+    "nota_audioteka": 4.4,
+    "valoraciones_audioteka": 73,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/miasteczko-salem/",
+    "traductor": "Arkadiusz Nakoniecznik"
+   },
+   "otras_grabaciones": [],
+   "enlace_video": "https://audioteka.com/pl/audiobook/miasteczko-salem/",
+   "plataformas_verificadas": [
+    "Audioteka"
+   ],
+   "nota": "No encontrado en Storytel PL. El argumento español «solo existen con voz latina» no se usa (en v6 la X84 ya no está en el vídeo largo)."
+  },
+  {
+   "puesto": 2,
+   "es_original_es": "Nuestra parte de noche — Mariana Enriquez",
+   "estado": "SUSTITUIDO: sin edición/audio en polaco (de Enriquez solo «Słoneczne miejsce dla mrocznych ludzi»)",
+   "pl": "Manitou",
+   "original": "The Manitou",
+   "autor": "Graham Masterton",
+   "recomendada": {
+    "lektor": [
+     "Anna Karczmarczyk",
+     "Jarosław Boberek",
+     "Marcel Sabat",
+     "zespół lektorów"
+    ],
+    "duracion_min": 398,
+    "duracion": "6 h 38 min",
+    "editorial": [
+     "Audioteka",
+     "Wydawnictwo Albatros"
+    ],
+    "nota_audioteka": 4.3,
+    "valoraciones_audioteka": 609,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/manitou/",
+    "formato": "słuchowisko con reparto (Audioteka / Wydawnictwo Albatros)"
+   },
+   "otras_grabaciones": [
+    {
+     "lektor": [
+      "Antoni Pawlicki",
+      "Jakub Strach",
+      "Marian Opania",
+      "zespół lektorów"
+     ],
+     "duracion_min": 884,
+     "duracion": "14 h 44 min",
+     "editorial": [
+      "Audioteka"
+     ],
+     "nota_audioteka": 4.5,
+     "valoraciones_audioteka": 1247,
+     "url_audioteka": "https://audioteka.com/pl/audiobook/zwierciadlo-piekiel-superprodukcja/",
+     "nota": "Alternativa: «Zwierciadło piekieł», superprodukcja de Audioteka, ★4,5 con 1247 valoraciones."
+    }
+   ],
+   "enlace_video": "https://audioteka.com/pl/audiobook/manitou/",
+   "plataformas_verificadas": [
+    "Audioteka"
+   ],
+   "justificacion": "Masterton es un autor de culto en Polonia (pl.wikipedia: en 2021 Wrocław le dedicó un enano de bronce con «Manitou» en la mano). Su debut tiene un słuchowisko polaco con 609 valoraciones. Como El exorcista: médicos sin explicación ante algo que crece dentro de una mujer."
+  },
+  {
+   "puesto": 1,
+   "es_original_es": "El exorcista — William Peter Blatty",
+   "estado": "SUSTITUIDO: sin audiobook en polaco (en Audioteka solo «Der Exorzist» en alemán)",
+   "pl": "Nie otwieraj oczu",
+   "original": "Bird Box",
+   "autor": "Josh Malerman",
+   "recomendada": {
+    "lektor": [
+     "Andrzej Hausner"
+    ],
+    "duracion_min": 439,
+    "duracion": "7 h 19 min",
+    "editorial": [
+     "MUZA S.A."
+    ],
+    "nota_audioteka": 4.4,
+    "valoraciones_audioteka": 34,
+    "url_audioteka": "https://audioteka.com/pl/audiobook/nie-otwieraj-oczu/",
+    "url_storytel": "https://www.storytel.com/pl/books/nie-otwieraj-oczu-13928893",
+    "storytel": "7 h 19 min, ★4,26",
+    "traductor": "Filip Sporczyk"
+   },
+   "otras_grabaciones": [],
+   "enlace_video": "https://audioteka.com/pl/audiobook/nie-otwieraj-oczu/",
+   "plataformas_verificadas": [
+    "Audioteka",
+    "Storytel PL (suscripción)"
+   ],
+   "justificacion": "Era otra candidata del episodio español (A ciegas), descartada allí solo por no tener audio en español. Debut de Malerman (2014), película de Netflix con Sandra Bullock (45 millones de cuentas la primera semana) y un final perfecto para audio: «escúchalo con los ojos cerrados»."
+  }
+ ]
+}

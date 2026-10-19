@@ -1,75 +1,104 @@
 {
  "id": "X112A",
- "hash": "split:ec5ce7da8c2a",
- "text": "Y lo mejor: puedes empezar a escucharlas hoy mismo, y casi todas, gratis.",
- "duration": 5.277,
+ "hash": "4987d10577b4",
+ "text": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
+ "duration": 6.88,
  "words": [
   {
-   "w": "Y",
+   "w": "Najlepsze:",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.96
   },
   {
-   "w": "lo",
-   "s": 0.16,
-   "e": 0.24
-  },
-  {
-   "w": "mejor:",
-   "s": 0.32,
-   "e": 1.04
-  },
-  {
-   "w": "puedes",
-   "s": 1.093,
+   "w": "wiele",
+   "s": 1.04,
    "e": 1.28
   },
   {
-   "w": "empezar",
+   "w": "z",
    "s": 1.36,
-   "e": 1.72
+   "e": 1.4
   },
   {
-   "w": "a",
+   "w": "nich",
+   "s": 1.44,
+   "e": 1.68
+  },
+  {
+   "w": "możesz",
    "s": 1.76,
-   "e": 1.813
+   "e": 2.0
   },
   {
-   "w": "escucharlas",
-   "s": 1.867,
-   "e": 2.48
+   "w": "zacząć",
+   "s": 2.08,
+   "e": 2.4
   },
   {
-   "w": "hoy",
-   "s": 2.52,
+   "w": "jeszcze",
+   "s": 2.48,
    "e": 2.72
   },
   {
-   "w": "mismo,",
-   "s": 2.76,
-   "e": 3.4
+   "w": "dziś,",
+   "s": 2.8,
+   "e": 3.28
   },
   {
-   "w": "y",
-   "s": 3.44,
-   "e": 3.52
+   "w": "a",
+   "s": 3.36,
+   "e": 3.44
   },
   {
-   "w": "casi",
+   "w": "Poe",
    "s": 3.6,
-   "e": 3.84
+   "e": 3.92
   },
   {
-   "w": "todas,",
-   "s": 3.96,
-   "e": 4.8
+   "w": "czeka",
+   "s": 4.0,
+   "e": 4.24
   },
   {
-   "w": "gratis.",
-   "s": 5.12,
-   "e": 5.48
+   "w": "na",
+   "s": 4.28,
+   "e": 4.32
+  },
+  {
+   "w": "ciebie",
+   "s": 4.4,
+   "e": 4.64
+  },
+  {
+   "w": "nawet",
+   "s": 4.72,
+   "e": 4.96
+  },
+  {
+   "w": "za",
+   "s": 5.04,
+   "e": 5.12
+  },
+  {
+   "w": "darmo,",
+   "s": 5.16,
+   "e": 5.68
+  },
+  {
+   "w": "w",
+   "s": 5.72,
+   "e": 5.76
+  },
+  {
+   "w": "Wolnych",
+   "s": 5.84,
+   "e": 6.16
+  },
+  {
+   "w": "Lekturach.",
+   "s": 6.24,
+   "e": 6.88
   }
  ],
- "splitFrom": "X112",
- "speechEnd": 5.277
+ "speechEnd": 6.782
 }

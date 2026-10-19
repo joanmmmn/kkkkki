@@ -1,89 +1,129 @@
 {
  "id": "X43",
- "hash": "7d2be0a77853",
- "text": "Ganó el premio Shirley Jackson, fue finalista del Booker Internacional y Netflix la convirtió en película.",
- "duration": 6.88,
+ "hash": "2c34e6c298cd",
+ "text": "To najlepiej sprzedający się horror lat sześćdziesiątych: ponad 4 miliony egzemplarzy. A w 1968 roku przeniósł go na ekran Roman Polański.",
+ "duration": 9.76,
  "words": [
   {
-   "w": "Ganó",
+   "w": "To",
    "s": 0.0,
-   "e": 0.28
+   "e": 0.08
   },
   {
-   "w": "el",
-   "s": 0.32,
-   "e": 0.4
+   "w": "najlepiej",
+   "s": 0.12,
+   "e": 0.56
   },
   {
-   "w": "premio",
-   "s": 0.48,
-   "e": 0.88
+   "w": "sprzedający",
+   "s": 0.6,
+   "e": 1.12
   },
   {
-   "w": "Shirley",
-   "s": 0.96,
+   "w": "się",
+   "s": 1.16,
    "e": 1.28
   },
   {
-   "w": "Jackson,",
-   "s": 1.32,
-   "e": 2.12
+   "w": "horror",
+   "s": 1.36,
+   "e": 1.68
   },
   {
-   "w": "fue",
-   "s": 2.16,
-   "e": 2.32
+   "w": "lat",
+   "s": 1.76,
+   "e": 1.92
   },
   {
-   "w": "finalista",
-   "s": 2.44,
-   "e": 2.8
+   "w": "sześćdziesiątych:",
+   "s": 1.96,
+   "e": 2.933
   },
   {
-   "w": "del",
-   "s": 2.88,
-   "e": 3.04
-  },
-  {
-   "w": "Booker",
-   "s": 3.08,
+   "w": "ponad",
+   "s": 2.987,
    "e": 3.28
   },
   {
-   "w": "Internacional",
+   "w": "cztery",
    "s": 3.36,
-   "e": 4.32
+   "e": 3.6
   },
   {
-   "w": "y",
-   "s": 4.36,
-   "e": 4.4
+   "w": "miliony",
+   "s": 3.68,
+   "e": 4.04
   },
   {
-   "w": "Netflix",
-   "s": 4.48,
-   "e": 4.96
+   "w": "egzemplarzy.",
+   "s": 4.08,
+   "e": 5.08
   },
   {
-   "w": "la",
-   "s": 5.04,
-   "e": 5.12
+   "w": "A",
+   "s": 5.12,
+   "e": 5.16
   },
   {
-   "w": "convirtió",
+   "w": "w",
    "s": 5.2,
-   "e": 5.68
+   "e": 5.24
   },
   {
-   "w": "en",
-   "s": 5.76,
-   "e": 5.84
+   "w": "tysiąc",
+   "s": 5.28,
+   "e": 5.56
   },
   {
-   "w": "película.",
-   "s": 5.92,
+   "w": "dziewięćset",
+   "s": 5.6,
+   "e": 6.0
+  },
+  {
+   "w": "sześćdziesiątym",
+   "s": 6.027,
+   "e": 6.56
+  },
+  {
+   "w": "ósmym",
+   "s": 6.64,
    "e": 6.88
+  },
+  {
+   "w": "roku",
+   "s": 6.96,
+   "e": 7.28
+  },
+  {
+   "w": "przeniósł",
+   "s": 7.32,
+   "e": 7.707
+  },
+  {
+   "w": "go",
+   "s": 7.733,
+   "e": 7.76
+  },
+  {
+   "w": "na",
+   "s": 7.84,
+   "e": 7.92
+  },
+  {
+   "w": "ekran",
+   "s": 8.0,
+   "e": 8.32
+  },
+  {
+   "w": "Roman",
+   "s": 8.4,
+   "e": 8.64
+  },
+  {
+   "w": "Polański.",
+   "s": 8.68,
+   "e": 9.76
   }
  ],
- "speechEnd": 6.514
+ "speechEnd": 9.307
 }

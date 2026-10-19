@@ -1,159 +1,114 @@
 {
  "id": "X13",
- "hash": "d764abb3cdfd",
- "text": "Lovecraft escribió que la emoción más antigua del ser humano es el miedo, y que el miedo más antiguo es el miedo a lo desconocido. Este relato es la demostración.",
- "duration": 11.2,
+ "hash": "f8e67f9a3a89",
+ "text": "Lovecraft napisał, że najstarszą emocją człowieka jest strach, a najstarszym rodzajem strachu – strach przed nieznanym. To opowiadanie jest tego dowodem.",
+ "duration": 9.52,
  "words": [
   {
    "w": "Lovecraft",
    "s": 0.0,
-   "e": 0.64
+   "e": 0.48
   },
   {
-   "w": "escribió",
-   "s": 0.72,
-   "e": 1.2
+   "w": "napisał,",
+   "s": 0.6,
+   "e": 1.12
   },
   {
-   "w": "que",
+   "w": "że",
    "s": 1.24,
-   "e": 1.28
-  },
-  {
-   "w": "la",
-   "s": 1.32,
    "e": 1.36
   },
   {
-   "w": "emoción",
+   "w": "najstarszą",
    "s": 1.44,
-   "e": 1.92
+   "e": 2.0
   },
   {
-   "w": "más",
-   "s": 1.96,
-   "e": 2.08
+   "w": "emocją",
+   "s": 2.08,
+   "e": 2.48
   },
   {
-   "w": "antigua",
-   "s": 2.16,
-   "e": 2.64
+   "w": "człowieka",
+   "s": 2.52,
+   "e": 2.88
   },
   {
-   "w": "del",
-   "s": 2.72,
-   "e": 2.8
+   "w": "jest",
+   "s": 3.0,
+   "e": 3.12
   },
   {
-   "w": "ser",
-   "s": 2.88,
-   "e": 2.96
-  },
-  {
-   "w": "humano",
-   "s": 3.04,
-   "e": 3.6
-  },
-  {
-   "w": "es",
-   "s": 3.68,
-   "e": 3.84
-  },
-  {
-   "w": "el",
-   "s": 3.92,
-   "e": 4.0
-  },
-  {
-   "w": "miedo,",
-   "s": 4.04,
-   "e": 4.84
-  },
-  {
-   "w": "y",
-   "s": 4.88,
-   "e": 4.96
-  },
-  {
-   "w": "que",
-   "s": 5.0,
-   "e": 5.04
-  },
-  {
-   "w": "el",
-   "s": 5.12,
-   "e": 5.2
-  },
-  {
-   "w": "miedo",
-   "s": 5.24,
-   "e": 5.52
-  },
-  {
-   "w": "más",
-   "s": 5.56,
-   "e": 5.68
-  },
-  {
-   "w": "antiguo",
-   "s": 5.8,
-   "e": 6.4
-  },
-  {
-   "w": "es",
-   "s": 6.48,
-   "e": 6.64
-  },
-  {
-   "w": "el",
-   "s": 6.72,
-   "e": 6.8
-  },
-  {
-   "w": "miedo",
-   "s": 6.88,
-   "e": 7.12
+   "w": "strach,",
+   "s": 3.2,
+   "e": 3.92
   },
   {
    "w": "a",
-   "s": 7.2,
-   "e": 7.253
+   "s": 3.96,
+   "e": 4.0
   },
   {
-   "w": "lo",
-   "s": 7.307,
-   "e": 7.36
+   "w": "najstarszym",
+   "s": 4.04,
+   "e": 4.56
   },
   {
-   "w": "desconocido.",
-   "s": 7.44,
-   "e": 8.6
+   "w": "rodzajem",
+   "s": 4.64,
+   "e": 4.96
   },
   {
-   "w": "Este",
+   "w": "strachu",
+   "s": 5.04,
+   "e": 5.52
+  },
+  {
+   "w": "–",
+   "s": 5.84,
+   "e": 5.92
+  },
+  {
+   "w": "strach",
+   "s": 6.0,
+   "e": 6.24
+  },
+  {
+   "w": "przed",
+   "s": 6.32,
+   "e": 6.48
+  },
+  {
+   "w": "nieznanym.",
+   "s": 6.56,
+   "e": 7.52
+  },
+  {
+   "w": "To",
+   "s": 7.6,
+   "e": 7.68
+  },
+  {
+   "w": "opowiadanie",
+   "s": 7.76,
+   "e": 8.32
+  },
+  {
+   "w": "jest",
+   "s": 8.44,
+   "e": 8.56
+  },
+  {
+   "w": "tego",
    "s": 8.64,
-   "e": 8.88
+   "e": 8.8
   },
   {
-   "w": "relato",
-   "s": 9.0,
+   "w": "dowodem.",
+   "s": 8.88,
    "e": 9.52
-  },
-  {
-   "w": "es",
-   "s": 9.6,
-   "e": 9.76
-  },
-  {
-   "w": "la",
-   "s": 9.8,
-   "e": 9.84
-  },
-  {
-   "w": "demostración.",
-   "s": 9.96,
-   "e": 11.2
   }
  ],
- "speechEnd": 10.765
+ "speechEnd": 9.52
 }

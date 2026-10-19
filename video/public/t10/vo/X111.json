@@ -1,79 +1,69 @@
 {
  "id": "X111",
- "hash": "6082a3741fba",
- "text": "Un consejo para que funcione: de noche, con auriculares y sin mirar el móvil.",
- "duration": 5.92,
+ "hash": "5102dace543e",
+ "text": "Rada, żeby zadziałało: w nocy, w słuchawkach i bez zerkania w telefon.",
+ "duration": 5.04,
  "words": [
   {
-   "w": "Un",
+   "w": "Rada,",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.56
   },
   {
-   "w": "consejo",
-   "s": 0.16,
-   "e": 0.72
+   "w": "żeby",
+   "s": 0.64,
+   "e": 0.8
   },
   {
-   "w": "para",
-   "s": 0.8,
-   "e": 0.96
+   "w": "zadziałało:",
+   "s": 0.84,
+   "e": 1.76
   },
   {
-   "w": "que",
-   "s": 1.04,
-   "e": 1.12
+   "w": "w",
+   "s": 1.8,
+   "e": 1.84
   },
   {
-   "w": "funcione:",
-   "s": 1.24,
-   "e": 2.16
+   "w": "nocy,",
+   "s": 1.92,
+   "e": 2.48
   },
   {
-   "w": "de",
-   "s": 2.24,
-   "e": 2.32
+   "w": "w",
+   "s": 2.507,
+   "e": 2.533
   },
   {
-   "w": "noche,",
-   "s": 2.4,
-   "e": 3.08
+   "w": "słuchawkach",
+   "s": 2.56,
+   "e": 3.28
   },
   {
-   "w": "con",
-   "s": 3.12,
-   "e": 3.2
+   "w": "i",
+   "s": 3.44,
+   "e": 3.52
   },
   {
-   "w": "auriculares",
-   "s": 3.28,
-   "e": 4.16
+   "w": "bez",
+   "s": 3.68,
+   "e": 3.84
   },
   {
-   "w": "y",
-   "s": 4.24,
+   "w": "zerkania",
+   "s": 3.92,
    "e": 4.32
   },
   {
-   "w": "sin",
-   "s": 4.44,
-   "e": 4.56
+   "w": "w",
+   "s": 4.347,
+   "e": 4.373
   },
   {
-   "w": "mirar",
-   "s": 4.64,
-   "e": 4.8
-  },
-  {
-   "w": "el",
-   "s": 4.88,
-   "e": 4.96
-  },
-  {
-   "w": "móvil.",
-   "s": 5.04,
-   "e": 5.92
+   "w": "telefon.",
+   "s": 4.4,
+   "e": 5.04
   }
  ],
- "speechEnd": 5.477
+ "speechEnd": 4.95
 }

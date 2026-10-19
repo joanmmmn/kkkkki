@@ -11,29 +11,34 @@ import { Dust, Grain, flicker, font } from './kit';
 // ————————————————————————————————————————————————————————————————
 
 export type Beat = { label: string; word: string; nth?: number; red?: boolean; f: [number, number, number] };
+// Polaco (19/10/2026): las palabras son las de la locución X?2 tal como se alinean (grafía del guion si `say` tiene las mismas palabras).
 export const BEATS: Record<number, Beat[]> = {
-  1: [{ label: 'Los papeles de su tío abuelo', word: 'papeles', f: [560, 600, 1.32] }, { label: 'Un bajorrelieve de arcilla', word: 'bajorrelieve', f: [1040, 690, 1.75] },
-    { label: 'Cultos por todo el mundo', word: 'cultos', f: [1540, 400, 1.55] }, { label: 'Un nombre impronunciable', word: 'nombre', red: true, f: [1330, 760, 1.7] }],
-  2: [{ label: 'El ojo del anciano', word: 'anciano', f: [360, 330, 1.75] }, { label: 'Un corazón bajo el suelo', word: 'corazón', red: true, f: [900, 860, 1.45] },
-    { label: 'Enterrada en vida', word: 'enterrada', f: [1460, 420, 1.55] }, { label: 'Un gato negro', word: 'gato', f: [1660, 800, 1.9] }],
-  3: [{ label: 'Sus padres acaban de morir', word: 'padres', f: [380, 360, 1.75] }, { label: 'La casa familiar, en venta', word: 'casa', f: [620, 690, 1.65] },
-    { label: 'Títeres', word: 'títeres', f: [1060, 420, 1.35] }, { label: 'Muñecas', word: 'muñecas', f: [1560, 650, 1.65] },
-    { label: 'Un títere con planes propios', word: 'concreto', red: true, f: [1060, 360, 1.85] }],
-  4: [{ label: 'Urgencias de un pueblo', word: 'urgencias', f: [380, 470, 1.55] }, { label: 'Un niño que no es su hijo', word: 'niño', f: [300, 600, 1.8] },
-    { label: 'El momento exacto', word: 'exacto', f: [760, 250, 2.1] }, { label: 'Algo en el campo', word: 'campo', red: true, f: [1440, 470, 1.45] }],
-  5: [{ label: 'Rumbo a Transilvania', word: 'Transilvania', f: [360, 470, 1.5] }, { label: 'Nunca come', word: 'come', f: [1060, 640, 1.65] },
-    { label: 'Sin reflejo', word: 'espejo', f: [1560, 460, 1.6] }, { label: 'De día, nadie', word: 'día', red: true, f: [1240, 600, 1.25] }],
-  6: [{ label: 'Pontevedra', word: 'Pontevedra', f: [330, 390, 1.6] }, { label: 'Solo con su gato', word: 'gato', f: [560, 690, 1.75] },
-    { label: 'Un brote en Rusia', word: 'Rusia', f: [1420, 440, 1.5] }, { label: 'Se extiende', word: 'extenderse', red: true, f: [1420, 470, 1.6] }],
-  7: [{ label: 'Abuela y nieta', word: 'abuela', f: [820, 460, 1.75] }, { label: 'Un niño desaparecido', word: 'desapareciera', f: [1460, 520, 1.85] },
-    { label: 'Los vecinos murmuran', word: 'murmuran', f: [300, 460, 1.5] }, { label: 'Algo más en la casa', word: 'algo', red: true, f: [1150, 470, 2] }],
-  8: [{ label: 'Vuelve al pueblo', word: 'vuelve', f: [1340, 760, 1.6] }, { label: 'La casa de la colina', word: 'casa', f: [1530, 300, 1.8] },
-    { label: 'Unos recién llegados', word: 'recién', f: [1440, 380, 1.6] }, { label: 'Desaparecen… o vuelven', word: 'desaparecer', red: true, f: [460, 840, 1.75] }],
-  9: [{ label: 'Plena dictadura', word: 'dictadura', f: [960, 640, 1.45] }, { label: 'Padre e hijo', word: 'padre', f: [960, 830, 1.9] },
-    { label: 'Un don', word: 'don', f: [960, 820, 2.2] }, { label: 'La Orden', word: 'Orden', red: true, f: [420, 430, 1.55] }],
-  10: [{ label: 'Washington', word: 'Washington', f: [470, 560, 1.25] }, { label: 'Ruidos en el desván', word: 'ruidos', f: [470, 190, 1.85] },
-    { label: 'Cambios en la niña', word: 'cambios', f: [1360, 560, 1.5] }, { label: 'Una voz que no es la suya', word: 'voz', f: [1360, 500, 1.7] },
-    { label: 'Sin explicación', word: 'explicación', red: true, f: [1700, 420, 1.7] }],
+  1: [{ label: 'Papiery zmarłego profesora', word: 'papiery', f: [560, 600, 1.32] }, { label: 'Gliniana płaskorzeźba', word: 'płaskorzeźbę', f: [1040, 690, 1.75] },
+    { label: 'Kulty na całym świecie', word: 'kultach', f: [1540, 400, 1.55] }, { label: 'Imię nie do wymówienia', word: 'imię', red: true, f: [1330, 760, 1.7] }],
+  2: [{ label: 'Oko starca', word: 'starca', f: [360, 330, 1.75] }, { label: 'Serce pod podłogą', word: 'serca', red: true, f: [900, 860, 1.45] },
+    { label: 'Pogrzebana żywcem', word: 'pogrzebana', f: [1460, 420, 1.55] }, { label: 'Czarny kot', word: 'kot', f: [1660, 800, 1.9] }],
+  3: [{ label: 'Rodzice nie żyją', word: 'Rodzice', f: [380, 360, 1.75] }, { label: 'Dom na sprzedaż', word: 'sprzedać', f: [620, 690, 1.65] },
+    { label: 'Kukiełki', word: 'kukiełki', f: [1060, 420, 1.35] }, { label: 'Lalki', word: 'lalki', f: [1560, 650, 1.65] },
+    { label: 'Kukiełka z własnymi planami', word: 'konkretna', red: true, f: [1060, 360, 1.85] }],
+  4: [{ label: 'Stara kamienica w Nowym Jorku', word: 'kamienicy', f: [380, 560, 1.4] }, { label: 'Aż nazbyt pomocni sąsiedzi', word: 'sąsiedzi', f: [960, 640, 1.6] },
+    { label: 'Rosemary jest w ciąży', word: 'ciążę', f: [1360, 420, 1.8] }, { label: 'Tydzień po tygodniu', word: 'tygodniem', f: [1300, 230, 2.1] },
+    { label: 'Czego chcą od jej dziecka?', word: 'czegoś', red: true, f: [1560, 470, 1.5] }],
+  5: [{ label: 'Do Transylwanii', word: 'Transylwanii', f: [360, 470, 1.5] }, { label: 'Nigdy nie je', word: 'kolacji', f: [1060, 640, 1.65] },
+    { label: 'Bez odbicia', word: 'lustrze', f: [1560, 460, 1.6] }, { label: 'Za dnia – nikogo', word: 'dnia', red: true, f: [1240, 600, 1.25] }],
+  6: [{ label: 'Zorza nad Suwalszczyzną', word: 'zorzą', f: [960, 300, 1.25] }, { label: 'Wieś Jodoziory', word: 'Jodoziory', f: [330, 660, 1.75] },
+    { label: 'Spopielone zwłoki', word: 'spopielone', f: [1160, 680, 1.9] }, { label: 'Zielone światło', word: 'zielonym', f: [1520, 560, 1.4] },
+    { label: 'Kobieta, która parała się czarami', word: 'czarami', red: true, f: [640, 600, 1.7] }],
+  7: [{ label: 'Wykładowca po rozwodzie', word: 'Wykładowca', f: [400, 770, 1.7] }, { label: 'Dom na leśnym odludziu', word: 'dom', f: [960, 600, 1.5] },
+    { label: 'Poprzedni właściciel nie żyje', word: 'umarł', f: [1060, 770, 2] }, { label: 'Dziwny sąsiad', word: 'sąsiad', f: [1600, 720, 1.6] },
+    { label: 'Dopiero początek koszmaru', word: 'koszmaru', red: true, f: [960, 420, 1.2] }],
+  8: [{ label: 'Wraca do miasteczka', word: 'wraca', f: [1340, 760, 1.6] }, { label: 'Dom na wzgórzu', word: 'domu', f: [1530, 300, 1.8] },
+    { label: 'Nowi przybysze', word: 'przybysze', f: [1440, 380, 1.6] }, { label: 'Znikają… albo wracają', word: 'znikać', red: true, f: [460, 840, 1.75] }],
+  9: [{ label: 'Guz na karku', word: 'karku', f: [420, 520, 1.6] }, { label: 'Prześwietlenie', word: 'Rentgen', f: [900, 360, 1.7] },
+    { label: 'Lekarze bez odpowiedzi', word: 'lekarze', f: [900, 640, 1.35] }, { label: 'W środku rozwija się płód', word: 'płód', red: true, f: [930, 360, 2.1] },
+    { label: 'Wróżbita', word: 'wróżbity', f: [1600, 620, 1.6] }],
+  10: [{ label: 'Coś jest na zewnątrz', word: 'zewnątrz', f: [380, 400, 1.6] }, { label: 'Jedno spojrzenie', word: 'spojrzenie', red: true, f: [380, 400, 2] },
+    { label: 'Rzeką przez 30 km', word: 'rzeką', f: [1300, 640, 1.35] }, { label: 'Z opaskami na oczach', word: 'opaskami', f: [1260, 640, 2.2] },
+    { label: 'Tylko słuch', word: 'słuch', f: [1340, 580, 1.6] }],
 };
 
 type D = React.FC<{ t0: number; beats: number[] }>;
@@ -96,7 +101,7 @@ const Cat: React.FC<{ x: number; y: number; s: number; eyes: number; arch?: numb
 );
 const Sign: React.FC<{ x: number; y: number; w: number; h: number; t: string; bg?: string; fg?: string; rot?: number; size?: number; style?: React.CSSProperties }> = ({ x, y, w, h, t, bg = '#E9E2D2', fg = '#1a1410', rot = 0, size = 34, style }) => (
   <div style={{ position: 'absolute', left: x, top: y, width: w, height: h, background: bg, color: fg, transform: `rotate(${rot}deg)`, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
-    fontFamily: font.sans, fontWeight: 700, fontSize: size, letterSpacing: 1, boxShadow: '0 10px 24px rgba(0,0,0,0.5)', borderRadius: 4, ...style }}>{t}</div>
+    fontFamily: font.sans, fontWeight: 700, fontSize: size, letterSpacing: 1, whiteSpace: 'pre-line', boxShadow: '0 10px 24px rgba(0,0,0,0.5)', borderRadius: 4, ...style }}>{t}</div>
 );
 const Moon: React.FC<{ x: number; y: number; r: number; c?: string }> = ({ x, y, r, c = '#E6EEF8' }) => (
   <>
@@ -105,7 +110,7 @@ const Moon: React.FC<{ x: number; y: number; r: number; c?: string }> = ({ x, y,
   </>
 );
 
-// ———————————————— 10 · La llamada de Cthulhu: el despacho del profesor ————————————————
+// ———————————————— 10 · Zew Cthulhu: el despacho del profesor ————————————————
 const DCthulhu: D = ({ t0, beats: [bPap, bBaj, bCul, bNom] }) => {
   const frame = useCurrentFrame();
   const lamp = flicker(frame, 'lampC', frame > bNom ? 2.4 : 0.5);
@@ -138,9 +143,9 @@ const DCthulhu: D = ({ t0, beats: [bPap, bBaj, bCul, bNom] }) => {
         </svg>
       </div>
       {[
-        { x: 1240, y: 520, t: 'Ritual en los pantanos de Luisiana', rot: -4 },
-        { x: 1530, y: 540, t: 'Un culto extraño en Groenlandia', rot: 3 },
-        { x: 1700, y: 360, t: 'Un barco a la deriva en el Pacífico', rot: -2 },
+        { x: 1240, y: 520, t: 'Rytuał na bagnach Luizjany', rot: -4 },
+        { x: 1530, y: 540, t: 'Dziwny kult na Grenlandii', rot: 3 },
+        { x: 1700, y: 360, t: 'Statek dryfujący po Pacyfiku', rot: -2 },
       ].map((cl, k) => {
         const q = pop(frame, bCul + k * 7, 12, 200);
         return q > 0.01 ? <div key={k} style={{ opacity: Math.min(1, q * 1.4) }}><Clip x={cl.x} y={cl.y} w={230} t={cl.t} rot={cl.rot} s={0.7 + 0.3 * q} /></div> : null;
@@ -270,7 +275,7 @@ const DPoe: D = ({ t0, beats: [bOjo, bCor, bEnt, bGato] }) => {
       <Glow x={900} y={800} r={340} c={`rgba(230,40,58,${(0.5 * heart * hOn).toFixed(3)})`} />
       {tums.map(({ k, m }) => (
         <div key={k} style={{ position: 'absolute', left: 900 + (k % 2 ? 150 : -290), top: 700 - m * 2.2, fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: '#ff8a8a', whiteSpace: 'nowrap',
-          opacity: interpolate(m, [0, 3, 26, 40], [0, 1, 0.8, 0], clamp), transform: `scale(${(0.8 + 0.25 * interpolate(m, [0, 6], [0, 1], clamp)).toFixed(3)})`, textShadow: '0 0 20px rgba(255,60,60,0.8)' }}>tum…</div>
+          opacity: interpolate(m, [0, 3, 26, 40], [0, 1, 0.8, 0], clamp), transform: `scale(${(0.8 + 0.25 * interpolate(m, [0, 6], [0, 1], clamp)).toFixed(3)})`, textShadow: '0 0 20px rgba(255,60,60,0.8)' }}>tuk…</div>
       ))}
       {/* el gato negro */}
       <Glow x={1660} y={820} r={260} c="rgba(255,200,120,0.12)" />
@@ -279,7 +284,7 @@ const DPoe: D = ({ t0, beats: [bOjo, bCor, bEnt, bGato] }) => {
   );
 };
 
-// ———————————————— 8 · Cómo vender una casa encantada: la casa de los padres ————————————————
+// ———————————————— 8 · Jak sprzedać nawiedzony dom: la casa de los padres ————————————————
 const Puppet: React.FC<{ c: string; s?: number; head?: number; glow?: number }> = ({ c, s = 1, head = 0, glow = 0 }) => (
   <svg width={260 * s} height={560 * s} viewBox="0 0 260 560" style={{ overflow: 'visible' }}>
     {[70, 130, 190].map((x) => <path key={x} d={`M${x} -400 L${x === 130 ? 130 : x === 70 ? 92 : 168} ${x === 130 ? 150 : 250}`} stroke="rgba(239,232,220,0.35)" strokeWidth={1.4} />)}
@@ -316,10 +321,10 @@ const DHendrix: D = ({ t0, beats: [bPad, bCasa, bTit, bMun, bCon] }) => {
         </div>
         <div style={{ position: 'absolute', right: -16, top: 20, width: 100, height: 18, background: '#050505', transform: 'rotate(40deg)' }} />
       </div>
-      {/* cartel SE VENDE */}
+      {/* cartel NA SPRZEDAŻ */}
       <div style={{ position: 'absolute', left: 520, top: 600, opacity: Math.min(1, sign * 1.4), transform: `translateY(${((1 - sign) * 80).toFixed(1)}px) rotate(${(-6 + 4 * (1 - sign)).toFixed(2)}deg)`, transformOrigin: '50% 100%' }}>
         <div style={{ position: 'absolute', left: 110, top: 160, width: 14, height: 140, background: '#4a3020' }} />
-        <Sign x={0} y={0} w={240} h={170} t="SE VENDE" bg="#E8E0CE" fg="#9b2c1c" size={46} style={{ border: '6px solid #9b2c1c' }} />
+        <Sign x={0} y={0} w={240} h={170} t={'NA\nSPRZEDAŻ'} bg="#E8E0CE" fg="#9b2c1c" size={40} style={{ border: '6px solid #9b2c1c', lineHeight: 1.05 }} />
       </div>
       {/* ventana */}
       <div style={{ position: 'absolute', left: 1500, top: 110, width: 300, height: 380, background: 'linear-gradient(180deg, #2B3A55, #1A2234)', boxShadow: 'inset 0 0 0 16px #2A1B14' }}>
@@ -346,63 +351,7 @@ const DHendrix: D = ({ t0, beats: [bPad, bCasa, bTit, bMun, bCon] }) => {
   );
 };
 
-// ———————————————— 7 · Distancia de rescate: urgencias y el campo ————————————————
-const DSchweblin: D = ({ t0, beats: [bUrg, bNin, bExa, bCam] }) => {
-  const frame = useCurrentFrame();
-  const t = frame - t0;
-  const ecg = (x: number) => {
-    const m = ((x + t * 6) % 220 + 220) % 220;
-    return m > 100 && m < 112 ? -60 * Math.sin(((m - 100) / 12) * Math.PI) : m > 112 && m < 122 ? 30 * Math.sin(((m - 112) / 10) * Math.PI) : 0;
-  };
-  const kid = pop(frame, bNin - 6, 13, 150);
-  const clock = interpolate(frame, [bExa - 4, bExa + 60], [0, -720], { ...clamp, easing: easeOut });
-  const mist = rmp(frame, bCam - 10, bCam + 60);
-  return (
-    <Stage bg="linear-gradient(180deg, #1c2622 0%, #141c18 100%)" dust="rgba(200,255,220,0.2)">
-      {/* sala */}
-      <div style={{ position: 'absolute', left: 0, top: 0, width: 960, height: 1080, background: 'linear-gradient(180deg, #24302b, #18201c)' }} />
-      <Glow x={420} y={140} r={420} c="rgba(200,255,230,0.14)" />
-      {/* monitor */}
-      <div style={{ position: 'absolute', left: 120, top: 250, width: 280, height: 180, background: '#0a0f0d', border: '10px solid #39443f', borderRadius: 10 }}>
-        <svg width={260} height={160} viewBox="0 0 260 160" style={{ position: 'absolute', left: 0, top: 0 }}>
-          <path d={Array.from({ length: 53 }).map((_, i) => `${i ? 'L' : 'M'}${i * 5} ${80 + ecg(i * 5)}`).join(' ')} stroke="#5CFF9D" strokeWidth={3} fill="none" opacity={frame >= bUrg - 6 ? 1 : 0.3} />
-        </svg>
-      </div>
-      <div style={{ position: 'absolute', left: 420, top: 300, width: 10, height: 380, background: '#5d6a64' }} />
-      <div style={{ position: 'absolute', left: 395, top: 300, width: 60, height: 80, borderRadius: 10, background: 'rgba(200,230,255,0.35)' }} />
-      {/* cama y mujer */}
-      <div style={{ position: 'absolute', left: 150, top: 640, width: 640, height: 60, background: '#d8dfda', borderRadius: 12 }} />
-      <div style={{ position: 'absolute', left: 150, top: 700, width: 640, height: 120, background: '#86928c' }} />
-      <div style={{ position: 'absolute', left: 170, top: 590, width: 180, height: 70, borderRadius: 30, background: '#eef2ef' }} />
-      <div style={{ position: 'absolute', left: 220, top: 560, width: 90, height: 90, borderRadius: '50%', background: '#2b2420' }} />
-      <div style={{ position: 'absolute', left: 300, top: 600, width: 470, height: 70, borderRadius: '30px 12px 12px 30px', background: '#aab8b0' }} />
-      {/* el niño que le habla al oído */}
-      <div style={{ opacity: Math.min(1, kid * 1.4), transform: `translateX(${((1 - kid) * 40).toFixed(1)}px)` }}>
-        <Fig kind="child" x={120} y={830} h={330} c="#0b0e0c" />
-        {[0, 1, 2].map((k) => {
-          const w = ((frame - bNin) / 14 + k / 3) % 1;
-          return frame > bNin ? <div key={k} style={{ position: 'absolute', left: 180 + w * 50, top: 548 + w * 22, width: 30 + w * 34, height: 30 + w * 34, borderRadius: '50%', border: `3px solid rgba(200,255,220,${(0.75 * (1 - w)).toFixed(3)})`, borderLeftColor: 'transparent', borderBottomColor: 'transparent', transform: 'rotate(45deg)' }} /> : null;
-        })}
-      </div>
-      {/* reloj */}
-      <div style={{ position: 'absolute', left: 680, top: 170, width: 160, height: 160, borderRadius: '50%', background: '#e6ece8', border: '8px solid #39443f' }}>
-        {[0, 1].map((k) => <div key={k} style={{ position: 'absolute', left: 77, top: k ? 30 : 46, width: 6, height: k ? 50 : 34, background: '#111', transformOrigin: `3px ${k ? 50 : 34}px`, transform: `rotate(${(k ? clock : clock / 12) + (k ? 0 : 120)}deg)` }} />)}
-      </div>
-      {/* ventana al campo */}
-      <div style={{ position: 'absolute', left: 1000, top: 110, width: 880, height: 680, overflow: 'hidden', boxShadow: 'inset 0 0 0 16px #39443f' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, #3A4632 0%, #5A6648 38%, #1A2117 39%, #0E120C 100%)' }} />
-        <svg width={880} height={680} viewBox="0 0 880 680" style={{ position: 'absolute', inset: 0 }}>
-          {Array.from({ length: 23 }).map((_, i) => <path key={i} d={`M440 262 L${-700 + i * 100} 680`} stroke="rgba(150,175,90,0.3)" strokeWidth={3} />)}
-          <rect x="600" y="230" width="60" height="34" fill="#0D110B" /><path d="M592 232 L630 210 L668 232Z" fill="#0D110B" />
-          {[[200, 500], [260, 520], [700, 560]].map(([x, y], k) => <g key={k} opacity={mist}><rect x={x} y={y} width="44" height="60" rx="6" fill="#2a3a22" /><rect x={x} y={y + 14} width="44" height="6" fill="#9BD14B" /></g>)}
-        </svg>
-        {[0, 1, 2].map((i) => <div key={i} style={{ position: 'absolute', left: -300 + ((t * (0.6 + i * 0.3) + i * 400) % 1400), top: 300 + i * 90 - mist * 80, width: 900, height: 220, borderRadius: '50%', background: `radial-gradient(ellipse, rgba(170,230,110,${(0.12 + 0.3 * mist).toFixed(3)}), rgba(0,0,0,0) 70%)`, filter: 'blur(12px)' }} />)}
-      </div>
-    </Stage>
-  );
-};
-
-// ———————————————— 6 · Drácula: el viaje, la cena, el espejo y el amanecer ————————————————
+// ———————————————— 6 · Drakula: el viaje, la cena, el espejo y el amanecer ————————————————
 const DDracula: D = ({ t0, beats: [bTra, bCom, bEsp, bDia] }) => {
   const frame = useCurrentFrame();
   const t = frame - t0;
@@ -468,130 +417,7 @@ const DDracula: D = ({ t0, beats: [bTra, bCom, bEsp, bDia] }) => {
   );
 };
 
-// ———————————————— 5 · Apocalipsis Z: Pontevedra, el gato y la tele ————————————————
-// Siluetas aproximadas de Europa y Rusia (u, v de 0 a 1 sobre la rejilla de puntos de la tele): [cx, cy, rx, ry].
-const LAND: [number, number, number, number][] = [
-  [0.07, 0.72, 0.075, 0.15], [0.16, 0.55, 0.07, 0.15], [0.11, 0.3, 0.035, 0.12], [0.27, 0.45, 0.1, 0.2], [0.3, 0.14, 0.07, 0.2], [0.27, 0.76, 0.03, 0.12],
-  [0.36, 0.7, 0.05, 0.1], [0.42, 0.42, 0.08, 0.26], [0.72, 0.35, 0.3, 0.29], [0.47, 0.84, 0.07, 0.07], [0.72, 0.74, 0.15, 0.13],
-];
-const DApocalipsis: D = ({ t0, beats: [bPon, bGat, bRus, bExt] }) => {
-  const frame = useCurrentFrame();
-  const t = frame - t0;
-  const spread = interpolate(frame, [bExt - 10, bExt + 140], [0, 1], { ...clamp, easing: easeInOut });
-  const ru = rmp(frame, bRus - 6, bRus + 10);
-  const cols = 30, rows = 13;
-  const cat = pop(frame, bGat - 6, 13, 170);
-  const sign = pop(frame, bPon - 6, 13, 170);
-  return (
-    <Stage bg="#0B0D0B" dust="rgba(200,220,255,0.15)">
-      {/* ventana con lluvia y el cartel de Pontevedra */}
-      <div style={{ position: 'absolute', left: 120, top: 140, width: 420, height: 480, background: 'linear-gradient(180deg, #1a2430, #0d141c)', boxShadow: 'inset 0 0 0 14px #2a2a26', overflow: 'hidden' }}>
-        {Array.from({ length: 40 }).map((_, i) => { const r = (k: string) => random(`rain${i}${k}`); const y = ((t * (6 + r('v') * 4) + r('y') * 480) % 520) - 40; return <div key={i} style={{ position: 'absolute', left: r('x') * 420, top: y, width: 2, height: 22, background: 'rgba(200,220,255,0.35)' }} />; })}
-        <div style={{ position: 'absolute', left: 60, top: 300, width: 300, height: 180, background: '#0a0f14' }} />
-        <div style={{ opacity: Math.min(1, sign * 1.4), transform: `scale(${(0.8 + 0.2 * sign).toFixed(3)})`, transformOrigin: '50% 100%' }}>
-          <div style={{ position: 'absolute', left: 200, top: 250, width: 8, height: 120, background: '#5a5f66' }} />
-          <Sign x={80} y={180} w={250} h={70} t="PONTEVEDRA" bg="#F2F2EE" fg="#1a1a1a" size={30} style={{ border: '4px solid #1a1a1a' }} />
-        </div>
-      </div>
-      {/* sofá, el abogado y su gato */}
-      <div style={{ position: 'absolute', left: 230, top: 720, width: 640, height: 200, borderRadius: 30, background: '#2a2e2a' }} />
-      <div style={{ position: 'absolute', left: 230, top: 640, width: 640, height: 110, borderRadius: '30px 30px 0 0', background: '#33382f' }} />
-      <Fig kind="stand" x={470} y={800} h={300} c="#0a0b0a" />
-      <div style={{ opacity: Math.min(1, cat * 1.4), transform: `translateY(${((1 - cat) * 30).toFixed(1)}px)` }}><Cat x={760} y={700} s={0.9} eyes={rmp(frame, bGat, bGat + 8)} /></div>
-      <Glow x={1300} y={460} r={700} c={`rgba(120,170,255,${(0.12 + 0.05 * Math.sin(frame / 3)).toFixed(3)})`} />
-      {/* la tele */}
-      <div style={{ position: 'absolute', left: 1000, top: 170, width: 840, height: 560, borderRadius: 36, background: 'linear-gradient(160deg, #3A3A36, #1D1D1B)', boxShadow: '0 40px 120px rgba(0,0,0,0.7), inset 0 0 0 6px #4A4A45' }}>
-        <div style={{ position: 'absolute', left: 40, top: 40, width: 760, height: 430, borderRadius: 24, overflow: 'hidden', background: '#0E1410' }}>
-          <svg width={760} height={430} style={{ position: 'absolute', inset: 0 }}>
-            <filter id="tvn2"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed={frame % 97} /><feColorMatrix type="saturate" values="0" /></filter>
-            <rect width="760" height="430" filter="url(#tvn2)" opacity={0.14} />
-            {Array.from({ length: rows }).map((_, r) => Array.from({ length: cols }).map((__, c) => {
-              const rr = random(`map2-${r}-${c}`);
-              if (rr < 0.07 || !LAND.some(([cx, cy, rx, ry]) => ((c / (cols - 1) - cx) / rx) ** 2 + ((r / (rows - 1) - cy) / ry) ** 2 < 1)) return null;
-              const x = 40 + c * 23.5, y = 50 + r * 25;
-              const seed = c / (cols - 1) > 0.86 && Math.abs(r - 5) < 3 ? ru : 0;
-              const inf = c / (cols - 1) > 1 - spread * 1.15 + (random(`mj2-${r}-${c}`) - 0.5) * 0.12;
-              const on = Math.max(seed, inf ? 1 : 0);
-              return <circle key={`${r}-${c}`} cx={x} cy={y} r={on ? 6 : 4.5} fill={on ? '#E5484D' : 'rgba(155,209,75,0.45)'} opacity={on ? 0.75 + 0.25 * Math.sin(t / 8 + c) : 1} />;
-            }))}
-            <text x="700" y="34" fill="rgba(239,232,220,0.85)" fontFamily="Ubuntu" fontWeight={700} fontSize="22" textAnchor="end" opacity={ru}>RUSIA</text>
-            <text x="34" y="350" fill="rgba(239,232,220,0.85)" fontFamily="Ubuntu" fontWeight={700} fontSize="22">PONTEVEDRA</text>
-            <circle cx="56" cy="244" r={7} fill="#FFCA05" /><circle cx="56" cy="244" r={12 + 10 * Math.abs(Math.sin(t / 12))} fill="none" stroke="#FFCA05" strokeWidth={2} opacity={0.6} />
-          </svg>
-          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 52, background: '#C1121F', display: 'flex', alignItems: 'center', overflow: 'hidden', opacity: ru }}>
-            <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 26, color: '#fff', whiteSpace: 'nowrap', transform: `translateX(${(760 - ((frame - bRus) * 4) % 2200).toFixed(1)}px)` }}>
-              ÚLTIMA HORA · UN BROTE EXTRAÑO EN RUSIA · LAS AUTORIDADES PIDEN CALMA · ÚLTIMA HORA · UN BROTE EXTRAÑO EN RUSIA
-            </div>
-          </div>
-          <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.25) 0px, rgba(0,0,0,0.25) 2px, rgba(0,0,0,0) 3px, rgba(0,0,0,0) 5px)' }} />
-        </div>
-      </div>
-      <div style={{ position: 'absolute', left: 980, top: 740, width: 880, height: 30, background: '#1a1714' }} />
-    </Stage>
-  );
-};
-
-// ———————————————— 4 · Carcoma: la casa del pueblo ————————————————
-const DCarcoma: D = ({ t0, beats: [bAbu, bDes, bMur, bAlg] }) => {
-  const frame = useCurrentFrame();
-  const two = rmp(frame, bAbu - 8, bAbu + 8);
-  const poster = pop(frame, bDes - 6, 12, 170);
-  const mur = (k: number) => pop(frame, bMur - 4 + k * 6, 12, 200);
-  const open = interpolate(frame, [bAlg, bAlg + 60], [0, 1], { ...clamp, easing: easeInOut });
-  return (
-    <Stage bg="linear-gradient(180deg, #0c0a10 0%, #1a1520 55%, #0a0806 100%)" dust="rgba(255,220,170,0.2)">
-      <Moon x={1720} y={120} r={46} />
-      {/* calle */}
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 880, bottom: 0, background: '#0b0907' }} />
-      {/* vecinos a los lados */}
-      {[{ x: 40, w: 440 }, { x: 1560, w: 360 }].map((hh, k) => (
-        <div key={k} style={{ position: 'absolute', left: hh.x, top: 240, width: hh.w, height: 640, background: '#120e0c', boxShadow: 'inset 0 0 0 2px rgba(0,0,0,0.6)' }}>
-          {[0, 1].map((r) => [0, 1].map((cc) => {
-            const lit = k === 0 || cc === 0;
-            const i = r * 2 + cc;
-            return (
-              <div key={`${r}${cc}`} style={{ position: 'absolute', left: 50 + cc * (hh.w / 2), top: 70 + r * 260, width: 120, height: 150, background: lit ? '#d9a95a' : '#0a0806', boxShadow: 'inset 0 0 0 8px #2a1d14' }}>
-                {lit && <Fig kind={i % 2 ? 'bun' : 'woman'} x={60} y={150} h={110} c="#1a1008" />}
-                {lit && mur(i + k * 4) > 0.01 && (
-                  <div style={{ position: 'absolute', left: k ? -70 : 90, top: -50, padding: '6px 14px', borderRadius: 14, background: '#efe6d2', fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#1a1008', transform: `scale(${mur(i + k * 4).toFixed(3)})` }}>…</div>
-                )}
-              </div>
-            );
-          }))}
-        </div>
-      ))}
-      {/* la casa de la abuela */}
-      <div style={{ position: 'absolute', left: 560, top: 260, width: 820, height: 620, background: 'linear-gradient(180deg, #3a2a1c, #22180f)', boxShadow: '0 0 0 3px rgba(0,0,0,0.5)' }}>
-        <div style={{ position: 'absolute', left: -40, top: -130, width: 900, height: 140, background: '#1a120b', clipPath: 'polygon(5% 100%, 50% 0, 95% 100%)' }} />
-        {/* ventana 1: abuela y nieta */}
-        <div style={{ position: 'absolute', left: 140, top: 120, width: 240, height: 230, background: `rgba(230,180,110,${(0.25 + 0.65 * two).toFixed(3)})`, boxShadow: 'inset 0 0 0 12px #1a120b', overflow: 'hidden' }}>
-          <Fig kind="bun" x={90} y={250} h={190} c="#120a05" />
-          <Fig kind="woman" x={170} y={250} h={170} c="#160c06" style={{ opacity: two }} />
-        </div>
-        {/* ventana 2: el armario */}
-        <div style={{ position: 'absolute', left: 470, top: 120, width: 240, height: 230, background: '#0a0705', boxShadow: 'inset 0 0 0 12px #1a120b', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', left: 60, top: 40, width: 120, height: 190, background: '#4a311f' }}>
-            <div style={{ position: 'absolute', left: 60, top: 0, width: 60, height: 190, background: '#050302' }} />
-            {[66, 84].map((x) => <div key={x} style={{ position: 'absolute', left: x, top: 64, width: 8, height: 8 * rmp(frame, bAlg + 34, bAlg + 40), borderRadius: '50%', background: '#f4efe2', boxShadow: '0 0 10px 3px rgba(255,240,210,0.6)', opacity: rmp(frame, bAlg + 30, bAlg + 36) }} />)}
-            <div style={{ position: 'absolute', left: 60, top: 0, width: 60, height: 190, background: '#5E3F28', transformOrigin: 'right center', transform: `perspective(400px) rotateY(${(open * 70).toFixed(1)}deg)` }} />
-            <div style={{ position: 'absolute', left: 0, top: 0, width: 60, height: 190, background: '#5E3F28' }} />
-          </div>
-          <Glow x={150} y={130} r={120} c={`rgba(255,230,180,${(0.25 * open).toFixed(3)})`} />
-        </div>
-        <div style={{ position: 'absolute', left: 360, top: 430, width: 120, height: 190, background: '#140d08', boxShadow: 'inset 0 0 0 8px #241810' }} />
-      </div>
-      {/* farola con el cartel del niño desaparecido */}
-      <div style={{ position: 'absolute', left: 1440, top: 240, width: 14, height: 640, background: '#1a1a1d' }} />
-      <Glow x={1447} y={250} r={180} c="rgba(255,214,150,0.25)" />
-      <div style={{ position: 'absolute', left: 1395, top: 430, width: 120, height: 160, background: '#E9E2D2', boxShadow: '0 10px 20px rgba(0,0,0,0.5)', transform: `rotate(${(-4 + (1 - poster) * 10).toFixed(2)}deg) scale(${poster.toFixed(3)})`, transformOrigin: '50% 0%' }}>
-        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 13, textAlign: 'center', marginTop: 8, color: '#9b2c1c', letterSpacing: 1 }}>DESAPARECIDO</div>
-        <div style={{ position: 'relative', margin: '6px auto 0', width: 70, height: 80, background: '#bfb6a2', overflow: 'hidden' }}><Fig kind="child" x={35} y={100} h={100} c="#5a5244" /></div>
-      </div>
-    </Stage>
-  );
-};
-
-// ———————————————— 3 · Salem's Lot: el regreso, la casa, los recién llegados ————————————————
+// ———————————————— 3 · Miasteczko Salem: el regreso, la casa, los recién llegados ————————————————
 const DSalem: D = ({ t0, beats: [bVue, bCas, bRec, bDes] }) => {
   const frame = useCurrentFrame();
   const t = frame - t0;
@@ -642,9 +468,9 @@ const DSalem: D = ({ t0, beats: [bVue, bCas, bRec, bDes] }) => {
           </div>
         );
       })()}
-      {/* VENDIDA y el camión de mudanzas */}
+      {/* SPRZEDANY y el camión de mudanzas */}
       <div style={{ position: 'absolute', left: 1600, top: 300, transform: `scale(${sold.toFixed(3)})`, transformOrigin: '50% 100%' }}>
-        <Sign x={0} y={0} w={130} h={52} t="VENDIDA" bg="#C1121F" fg="#fff" size={22} />
+        <Sign x={-10} y={0} w={150} h={52} t="SPRZEDANY" bg="#C1121F" fg="#fff" size={21} />
         <div style={{ position: 'absolute', left: 60, top: 52, width: 6, height: 40, background: '#3a3a3a' }} />
       </div>
       {(() => {
@@ -660,123 +486,508 @@ const DSalem: D = ({ t0, beats: [bVue, bCas, bRec, bDes] }) => {
   );
 };
 
-// ———————————————— 2 · Nuestra parte de noche: el control, el coche, el don, la Orden ————————————————
-const DEnriquez: D = ({ t0, beats: [bDic, bPad, bDon, bOrd] }) => {
+// ———————————————— 7 · Dziecko Rosemary: la kamienica, los vecinos, la cuna (nueva, PL) ————————————————
+// Silueta de perfil de una mujer embarazada (mira a la derecha); 110 × 200 de referencia, (x, y) = pies.
+const Pregnant: React.FC<{ x: number; y: number; h: number; c?: string; glow?: number }> = ({ x, y, h, c = '#0a0608', glow = 0 }) => {
+  const s = h / 200;
+  return (
+    <svg width={110 * s} height={200 * s} viewBox="0 0 110 200" style={{ position: 'absolute', left: x - 55 * s, top: y - 200 * s, overflow: 'visible' }}>
+      {glow > 0 && <circle cx="72" cy="98" r="30" fill={`rgba(255,196,160,${(0.55 * glow).toFixed(3)})`} style={{ filter: 'blur(9px)' }} />}
+      <path d="M50 3a14 14 0 1 1 0 28a14 14 0 1 1 0-28zM37 35q14-5 27 1l3 26q20 10 22 34q1 24-20 31l6 70h-12l-6-56h-6l-4 56h-12l3-70q-8-30-2-62z" fill={c} />
+      <path d="M58 64q14 10 22 30" stroke={c} strokeWidth={7} strokeLinecap="round" fill="none" />
+    </svg>
+  );
+};
+const DRosemary: D = ({ t0, beats: [bKam, bSas, bCia, bTyg, bCze] }) => {
   const frame = useCurrentFrame();
   const t = frame - t0;
-  const check = pop(frame, bDic - 6, 13, 150);
-  const sweep = Math.sin((frame - bDic) / 22) * 0.5 + 0.5;
-  const don = rmp(frame, bDon - 6, bDon + 20);
-  const ord = rmp(frame, bOrd - 8, bOrd + 30);
-  const eye = rmp(frame, bOrd + 10, bOrd + 50);
+  const wave = (k: number) => rmp(frame, bKam - 12 + k * 2, bKam - 4 + k * 2);
+  const door = rmp(frame, bSas - 12, bSas + 10, easeOut);
+  const pair = pop(frame, bSas - 4, 13, 150);
+  const ros = rmp(frame, bCia - 10, bCia + 12);
+  const belly = rmp(frame, bCia, bCia + 20) * (0.75 + 0.25 * Math.sin(frame / 9));
+  const weeks = interpolate(frame, [bTyg - 6, bTyg + 80], [0, 9], clamp);
+  const red = rmp(frame, bCze - 4, bCze + 18);
+  const spin = t / 46 + Math.max(0, frame - bCze) * Math.max(0, frame - bCze) / 900;
+  const page = Math.floor(weeks / 5);
   return (
-    <Stage bg="linear-gradient(180deg, #07060F 0%, #120E24 50%, #040309 100%)" dust="rgba(200,170,255,0.2)">
-      {Array.from({ length: 60 }).map((_, i) => { const r = (k: string) => random(`st2-${i}-${k}`); const sw = don * Math.sin(frame / 40 + i) * 20; return <div key={i} style={{ position: 'absolute', left: r('x') * W + sw, top: r('y') * 420, width: 2, height: 2, borderRadius: 1, background: '#fff', opacity: 0.3 + 0.5 * Math.abs(Math.sin(frame / (20 + r('t') * 30) + i)) }} />; })}
-      {/* el ojo en el cielo (la Orden) */}
-      <div style={{ position: 'absolute', left: 760, top: 80, width: 400, height: 200, opacity: eye }}>
-        <svg width={400} height={200} viewBox="0 0 400 200">
-          <path d={`M10 100 Q200 ${100 - 90 * eye} 390 100 Q200 ${100 + 90 * eye} 10 100Z`} fill="rgba(180,140,242,0.10)" stroke="rgba(180,140,242,0.6)" strokeWidth={3} />
-          <circle cx="200" cy="100" r={38 * eye} fill="rgba(180,140,242,0.35)" /><circle cx="200" cy="100" r={14 * eye} fill="#07060F" />
+    <Stage bg="#0c0a0e" dust="rgba(255,220,190,0.22)">
+      {/* fuera: la vieja kamienica de Nueva York */}
+      <div style={{ position: 'absolute', left: 0, top: 0, width: 700, height: 1080, background: 'linear-gradient(180deg, #0b0d18 0%, #171b2c 66%, #07080c 100%)', overflow: 'hidden' }}>
+        <Moon x={120} y={110} r={36} />
+        <svg width={700} height={1080} viewBox="0 0 700 1080" style={{ position: 'absolute', inset: 0 }}>
+          <path d="M90 1080 V300 H140 V240 L190 186 L240 240 V300 H300 V214 L355 150 L410 214 V300 H470 V240 L520 186 L570 240 V300 H620 V1080 Z" fill="#05060a" />
+          {[[140, 240], [240, 240], [470, 240], [570, 240]].map(([x, y], k) => <path key={k} d={`M${x - 14} ${y} l14 -22 l14 22z`} fill="#05060a" />)}
+          <path d="M330 1080 V1012 a25 25 0 0 1 50 0 V1080z" fill={`rgba(255,200,130,${(0.25 + 0.5 * wave(12)).toFixed(3)})`} />
         </svg>
-      </div>
-      <svg width={W} height={H} style={{ position: 'absolute', inset: 0 }}>
-        <path d="M0 640 Q 300 540 620 600 L 900 560 L 900 1080 L 0 1080 Z" fill="#06050b" />
-        <path d="M940 520 L980 520 L1500 1080 L420 1080 Z" fill="#0B0A10" />
-        {Array.from({ length: 10 }).map((_, i) => { const p = ((i / 10 + t / 260) % 1); const y = 520 + Math.pow(p, 2.2) * 560; const w = 2 + p * 10; const h = 4 + p * 40; return <rect key={i} x={960 - w / 2} y={y} width={w} height={h} fill="rgba(239,232,220,0.5)" />; })}
-      </svg>
-      {/* la Orden: figuras encapuchadas en círculo con velas */}
-      <div style={{ opacity: ord }}>
-        <Glow x={400} y={520} r={340} c="rgba(180,140,242,0.5)" />
-        <Glow x={400} y={560} r={160} c={`rgba(255,170,90,${(0.55 * flicker(frame, 'fuegoE', 1)).toFixed(3)})`} />
-        {Array.from({ length: 7 }).map((_, k) => {
-          const a = (k / 7) * Math.PI * 2;
-          const x = 400 + Math.cos(a) * 190, y = 560 + Math.sin(a) * 50;
-          return <React.Fragment key={k}><Fig kind="hood" x={x} y={y} h={150 + Math.sin(a) * 30} c="#030207" /><Glow x={x + 30} y={y - 40} r={40} c={`rgba(255,200,120,${(0.6 * flicker(frame, `cv${k}`, 1)).toFixed(3)})`} /></React.Fragment>;
+        {Array.from({ length: 24 }).map((_, k) => {
+          const c = k % 4, r = Math.floor(k / 4);
+          const on = random(`rw${k}`) < 0.55 || k === 9 ? wave(r * 2 + c) : (k % 7 === 0 ? 1 : 0);
+          return <div key={k} style={{ position: 'absolute', left: 145 + c * 120, top: 330 + r * 112, width: 60, height: 80, borderRadius: '30px 30px 0 0',
+            background: on > 0.01 ? `rgba(255,${190 + Math.round(30 * random(`rc${k}`))},120,${(0.85 * on * flicker(frame, `rw${k}`, 0.5)).toFixed(3)})` : '#0d0f17', boxShadow: on > 0.5 ? '0 0 18px rgba(255,200,120,0.35)' : undefined }} />;
         })}
+        <div style={{ position: 'absolute', left: 660, top: 760, width: 8, height: 320, background: '#121218' }} />
+        <Glow x={664} y={760} r={120} c="rgba(255,214,150,0.25)" />
       </div>
-      {/* control militar */}
-      <div style={{ opacity: Math.min(1, check * 1.4) }}>
-        <div style={{ position: 'absolute', left: 1040, top: 650, width: 360, height: 22, background: 'repeating-linear-gradient(90deg, #C1121F 0 40px, #eee 40px 80px)', transform: 'rotate(-4deg)' }} />
-        <Fig kind="stand" x={1460} y={720} h={210} c="#05060a" />
-        <div style={{ position: 'absolute', left: 1430, top: 508, width: 64, height: 18, borderRadius: '8px 8px 2px 2px', background: '#05060a' }} />
-        <div style={{ position: 'absolute', left: 1480, top: 560, width: 700, height: 160, background: `linear-gradient(200deg, rgba(255,250,220,${(0.28 * sweep).toFixed(3)}), rgba(255,250,220,0))`, clipPath: 'polygon(0 40%, 100% 0, 100% 100%, 0 60%)', transform: `rotate(${(160 + 20 * sweep).toFixed(1)}deg)`, transformOrigin: '0 50%' }} />
-      </div>
-      {/* el coche con padre e hijo */}
-      <div style={{ position: 'absolute', left: 960 - 130, top: 760 }}>
-        <div style={{ width: 260, height: 110, borderRadius: '40px 40px 12px 12px', background: '#08070C', position: 'relative' }}>
-          <div style={{ position: 'absolute', left: 40, top: 14, width: 180, height: 46, borderRadius: '20px 20px 4px 4px', background: `rgba(${Math.round(40 + 140 * don)}, ${Math.round(40 + 100 * don)}, ${Math.round(70 + 172 * don)}, ${(0.6 + 0.3 * don).toFixed(3)})`, overflow: 'hidden' }}>
-            <Fig kind="stand" x={60} y={80} h={80} c="#020203" />
-            <Fig kind="child" x={135} y={78} h={55} c="#020203" />
+      <div style={{ position: 'absolute', left: 700, top: 0, width: 18, height: 1080, background: '#050405' }} />
+      {/* el rellano: la puerta y los vecinos */}
+      <div style={{ position: 'absolute', left: 718, top: 0, width: 462, height: 1080, background: 'linear-gradient(180deg, #23160f, #170e0a)', overflow: 'hidden' }}>
+        <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(90deg, rgba(0,0,0,0.25) 0 3px, transparent 3px 66px)' }} />
+        <Glow x={232} y={110} r={260} c="rgba(255,214,150,0.22)" />
+        <div style={{ position: 'absolute', left: 112, top: 360, width: 240, height: 560, background: `rgba(240,214,170,${(0.9 * door).toFixed(3)})`, boxShadow: 'inset 0 0 0 10px #120a06' }}>
+          <Glow x={120} y={140} r={260} c={`rgba(255,226,180,${(0.6 * door).toFixed(3)})`} />
+          {/* el resto de la «familia» aparece detrás cuando la voz dice que quieren algo */}
+          {[0, 1, 2, 3].map((k) => <Fig key={k} kind={k % 2 ? 'bun' : 'old'} x={30 + k * 60} y={560} h={300 + (k % 2) * 30} c={`rgba(40,26,16,${(0.75 * red).toFixed(3)})`} />)}
+          <div style={{ opacity: Math.min(1, pair * 1.3), transform: `translateY(${((1 - pair) * 40).toFixed(1)}px)` }}>
+            <Fig kind="old" x={70} y={562} h={430} c="#1c130c" />
+            <Fig kind="bun" x={176} y={562} h={390} c="#24170e" />
+            {[[58, 260], [176, 300]].map(([x, y], k) => <React.Fragment key={k}>{[0, 10].map((dx) => <div key={dx} style={{ position: 'absolute', left: x + dx - 4, top: y, width: 5, height: 5, borderRadius: '50%', background: '#ff3b3b', opacity: red, boxShadow: '0 0 8px #ff3b3b' }} />)}</React.Fragment>)}
+            {/* la bandeja: tarta y un vaso de algo verde */}
+            <div style={{ position: 'absolute', left: 60, top: 380, width: 140, height: 12, borderRadius: 6, background: '#b9a27a' }} />
+            <div style={{ position: 'absolute', left: 78, top: 346, width: 56, height: 34, borderRadius: '28px 28px 4px 4px', background: '#e6a4b0' }} />
+            <div style={{ position: 'absolute', left: 152, top: 340, width: 24, height: 40, borderRadius: 4, background: 'rgba(120,200,110,0.85)' }} />
+            {[0, 1, 2].map((k) => <div key={k} style={{ position: 'absolute', left: 92 + k * 12, top: 300 - ((t * 0.8 + k * 14) % 40), width: 3, height: 18, borderRadius: 2, background: 'rgba(255,255,255,0.35)', opacity: pair }} />)}
           </div>
-          {[26, 210].map((x) => <div key={x} style={{ position: 'absolute', left: x, top: 64, width: 30, height: 16, borderRadius: 4, background: '#FF3B3B', boxShadow: '0 0 30px 8px rgba(255,59,59,0.55)' }} />)}
         </div>
-        <Glow x={130} y={30} r={200} c={`rgba(180,140,242,${(0.55 * don).toFixed(3)})`} />
+        {/* la hoja de la puerta, con su mirilla */}
+        <div style={{ position: 'absolute', left: 112, top: 360, width: 240, height: 560, transformOrigin: '0 50%', transform: `perspective(900px) rotateY(${(-74 * door).toFixed(1)}deg)`, background: 'linear-gradient(90deg, #3a2416, #2a190f)', boxShadow: 'inset 0 0 0 10px #1a0f08' }}>
+          {[[30, 40], [30, 300]].map(([x, y], k) => <div key={k} style={{ position: 'absolute', left: x, top: y, width: 180, height: 220, boxShadow: 'inset 0 0 0 6px rgba(0,0,0,0.3)' }} />)}
+          <div style={{ position: 'absolute', left: 108, top: 190, width: 24, height: 24, borderRadius: '50%', background: '#c9a24a', boxShadow: 'inset 0 0 0 7px #1a0f08' }} />
+          <div style={{ position: 'absolute', left: 196, top: 300, width: 18, height: 18, borderRadius: '50%', background: '#c9a24a' }} />
+        </div>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 920, bottom: 0, background: '#0f0906' }} />
+      </div>
+      {/* el cuarto del bebé */}
+      <div style={{ position: 'absolute', left: 1180, top: 0, width: 740, height: 640, background: 'linear-gradient(180deg, #2b1d24, #1d141a)', overflow: 'hidden' }}>
+        <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(90deg, rgba(255,210,220,0.05) 0 18px, transparent 18px 54px)' }} />
+        <div style={{ position: 'absolute', left: 520, top: 90, width: 160, height: 240, background: 'linear-gradient(180deg, #1c2640, #0e1424)', boxShadow: 'inset 0 0 0 10px #1a1014' }}>
+          <div style={{ position: 'absolute', left: 74, top: 0, width: 10, height: 240, background: '#1a1014' }} />
+          <div style={{ position: 'absolute', left: 96, top: 40, width: 36, height: 36, borderRadius: '50%', background: '#E6EEF8', boxShadow: '0 0 30px rgba(220,235,255,0.8)' }} />
+        </div>
+        {/* el calendario: una semana tachada tras otra */}
+        <div style={{ position: 'absolute', left: 50, top: 110, width: 150, height: 180, background: '#E9E2D2', boxShadow: '0 10px 24px rgba(0,0,0,0.5)', transform: 'rotate(-2deg)' }}>
+          <div style={{ height: 30, background: '#7a2a34' }} />
+          {Array.from({ length: 5 }).map((_, r) => {
+            const done = Math.max(0, Math.min(1, weeks - page * 5 - r));
+            return (
+              <div key={`${page}-${r}`} style={{ position: 'relative', display: 'flex', gap: 4, padding: '6px 8px 0' }}>
+                {Array.from({ length: 7 }).map((__, d) => <div key={d} style={{ width: 16, height: 18, background: 'rgba(60,40,30,0.18)' }} />)}
+                <div style={{ position: 'absolute', left: 6, top: 14, width: `${(132 * done).toFixed(1)}px`, height: 4, background: '#C1121F', transform: 'rotate(-3deg)' }} />
+              </div>
+            );
+          })}
+        </div>
+        <Glow x={420} y={480} r={280} c={`rgba(193,18,31,${(0.45 * red).toFixed(3)})`} />
+        {/* la cuna vacía y el móvil */}
+        <div style={{ position: 'absolute', left: 420, top: 0, width: 2, height: 250, background: 'rgba(239,232,220,0.45)' }} />
+        <div style={{ position: 'absolute', left: 340, top: 250, width: 160, height: 4, background: '#cdb89a', transform: `scaleX(${Math.cos(spin).toFixed(3)})` }}>
+          {[0, 1].map((k) => <div key={k} style={{ position: 'absolute', left: k ? 150 : 0, top: 4, width: 2, height: 46, background: 'rgba(239,232,220,0.45)' }}>
+            <div style={{ position: 'absolute', left: -12, top: 46, width: 26, height: 26, borderRadius: k ? '50%' : 4, background: k ? '#e6c46a' : '#9fc3d8' }} /></div>)}
+        </div>
+        <div style={{ position: 'absolute', left: 270, top: 400, width: 300, height: 180 }}>
+          <div style={{ position: 'absolute', left: 0, top: 0, width: 300, height: 14, background: '#3a2418' }} />
+          <div style={{ position: 'absolute', left: 0, top: 120, width: 300, height: 14, background: '#3a2418' }} />
+          <div style={{ position: 'absolute', left: 14, top: 96, width: 272, height: 26, borderRadius: 8, background: '#e9e4dc' }} />
+          {Array.from({ length: 13 }).map((_, k) => <div key={k} style={{ position: 'absolute', left: 6 + k * 23, top: 10, width: 7, height: 112, background: '#3a2418' }} />)}
+          {[0, 290].map((x) => <div key={x} style={{ position: 'absolute', left: x, top: 0, width: 12, height: 180, background: '#2c1a10' }} />)}
+        </div>
+        {/* sombras de manos que se acercan a la cuna */}
+        {red > 0 && [0, 1, 2, 3, 4].map((k) => {
+          const q = rmp(frame, bCze + k * 5, bCze + 50 + k * 5, easeOut);
+          return (
+            <svg key={k} width={260} height={120} viewBox="0 0 260 120" style={{ position: 'absolute', left: 760 - 330 * q - (k % 2) * 40, top: 160 + k * 70, opacity: 0.8 * red, transform: `rotate(${(k - 2) * 8}deg)` }}>
+              <path d="M260 60 L120 52 Q90 48 70 40 L10 30 Q4 34 10 38 L66 50 L8 58 Q2 63 8 66 L68 64 L12 80 Q6 85 13 88 L74 76 L30 100 Q26 106 33 107 L96 84 Q120 78 150 74 L260 70Z" fill="#040203" />
+            </svg>
+          );
+        })}
+        {/* Rosemary */}
+        <div style={{ opacity: ros }}><Pregnant x={150} y={600} h={360} c="#0b0709" glow={belly} /></div>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 600, height: 40, background: '#130c10' }} />
+      </div>
+      {/* el piso de abajo: cajas de la mudanza */}
+      <div style={{ position: 'absolute', left: 1180, top: 640, width: 740, height: 440, background: 'linear-gradient(180deg, #1a1210, #0e0907)' }}>
+        {[[90, 230, 170, 120], [270, 260, 150, 90], [130, 130, 130, 100], [520, 250, 160, 100]].map(([x, y, w, h], k) => (
+          <div key={k} style={{ position: 'absolute', left: x, top: y, width: w, height: h, background: '#6b4f33', boxShadow: 'inset 0 0 0 3px rgba(0,0,0,0.25)' }}>
+            <div style={{ position: 'absolute', left: 0, right: 0, top: h * 0.45, height: 10, background: 'rgba(200,180,140,0.5)' }} />
+          </div>
+        ))}
       </div>
     </Stage>
   );
 };
 
-// ———————————————— 1 · El exorcista: la casa, el desván, la niña, la voz, los médicos ————————————————
-const DExorcista: D = ({ t0, beats: [bWas, bRui, bCam, bVoz, bExp] }) => {
+// ———————————————— 5 · Inkub: la zorza, Jodoziory, la casa calcinada, la luz verde y la vieja foto (nueva, PL) ————————————————
+const DInkub: D = ({ t0, beats: [bZor, bJod, bSpo, bZie, bCza] }) => {
   const frame = useCurrentFrame();
   const t = frame - t0;
-  const attic = rmp(frame, bRui - 6, bRui + 4) * flicker(frame, 'attic2', 1.4) * (0.55 + 0.45 * Math.abs(Math.sin(t / 9)));
-  const shake = (frame > bCam ? Math.sin(frame * 1.7) * 6 * (1 - rmp(frame, bCam + 120, bCam + 160)) : 0) - 46 * rmp(frame, bCam + 6, bCam + 46) * (1 - rmp(frame, bVoz + 60, bVoz + 100));
-  const claw = rmp(frame, bCam + 20, bCam + 34);
-  const lampF = frame > bCam ? flicker(frame, 'reganL', 2.2) : 1;
-  const voz = rmp(frame, bVoz - 4, bVoz + 10);
-  const xr = pop(frame, bExp - 8, 13, 150);
-  const bolt = Math.max(0, ...[bWas + 40, bVoz].map((b) => interpolate(frame, [b, b + 2, b + 6, b + 8, b + 22], [0, 1, 0.2, 0.8, 0], clamp)));
+  const aur = 0.3 + 0.7 * rmp(frame, bZor - 12, bZor + 30);
+  const sign = pop(frame, bJod - 6, 12, 170);
+  const burn = rmp(frame, bSpo - 6, bSpo + 10);
+  const ash = rmp(frame, bSpo + 6, bSpo + 40);
+  const tape = rmp(frame, bSpo + 14, bSpo + 34, easeOut);
+  const green = rmp(frame, bZie - 6, bZie + 16);
+  const pulse = 0.7 + 0.3 * Math.sin(frame / 6);
+  const photo = pop(frame, bCza - 8, 10, 120);
+  const witch = rmp(frame, bCza + 8, bCza + 24);
+  const ribbon = (k: number) => {
+    const pts = Array.from({ length: 30 }).map((_, i) => { const x = -120 + i * 74; return `${i ? 'L' : 'M'}${x} ${(150 + k * 70 + Math.sin(x / 240 + t / 70 + k * 1.7) * 60).toFixed(1)}`; }).join(' ');
+    return pts;
+  };
   return (
-    <Stage bg="linear-gradient(180deg, #06080D 0%, #0D1220 70%, #05060A 100%)" dust="rgba(200,215,255,0.15)">
-      <AbsoluteFill style={{ background: `rgba(190,210,255,${(0.2 * bolt).toFixed(3)})` }} />
-      {/* la casa de Georgetown */}
-      <div style={{ position: 'absolute', left: 140, top: 160, width: 640, height: 920, background: 'linear-gradient(180deg, #2A1E1A, #1A120F)' }}>
-        <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.35) 0px, rgba(0,0,0,0.35) 2px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 26px), repeating-linear-gradient(90deg, rgba(0,0,0,0.25) 0px, rgba(0,0,0,0.25) 2px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 56px)', opacity: 0.8 }} />
-        <div style={{ position: 'absolute', left: -30, top: -110, width: 700, height: 120, background: '#0D0A09', clipPath: 'polygon(6% 100%, 50% 0%, 94% 100%)' }} />
-        <div style={{ position: 'absolute', left: 270, top: -30, width: 100, height: 90, background: `rgba(160,190,240,${(0.15 + 0.6 * attic).toFixed(3)})`, boxShadow: `0 0 ${(60 * attic).toFixed(0)}px rgba(160,190,240,${(0.7 * attic).toFixed(3)}), inset 0 0 0 8px #0D0A09` }} />
-        {['toc', 'toc'].map((tt, k) => {
-          const q = pop(frame, bRui + k * 14, 10, 220);
-          return frame > bRui + k * 14 ? <div key={k} style={{ position: 'absolute', left: 390 + k * 70, top: -90 + k * 30, fontFamily: font.serif, fontStyle: 'italic', fontSize: 40, color: '#cfe0ff', opacity: q * (1 - rmp(frame, bRui + 60, bRui + 80)), transform: `scale(${q.toFixed(3)}) rotate(${k ? 8 : -8}deg)` }}>{tt}</div> : null;
-        })}
-        {[0, 1, 2].map((r) => [0, 1].map((cc) => <div key={`${r}${cc}`} style={{ position: 'absolute', left: 110 + cc * 300, top: 120 + r * 230, width: 120, height: 160, background: r === 0 && cc === 1 ? 'rgba(255,214,150,0.16)' : '#080606', boxShadow: 'inset 0 0 0 8px #0D0A09' }} />))}
-      </div>
-      {/* farola */}
-      <div style={{ position: 'absolute', left: 860, top: 380, width: 12, height: 700, background: '#151515' }} />
-      <Glow x={866} y={390} r={200} c="rgba(255,214,150,0.25)" />
-      <Sign x={756} y={412} w={220} h={44} t="WASHINGTON, D.C." bg="#1d4a2a" fg="#efe6d2" size={19} />
-      <Sign x={766} y={466} w={200} h={40} t="GEORGETOWN" bg="#1d4a2a" fg="#efe6d2" size={19} />
-      {/* el cuarto de Regan (corte) */}
-      <div style={{ position: 'absolute', left: 1020, top: 160, width: 860, height: 700, background: 'linear-gradient(180deg, #1c1f2c, #121420)', boxShadow: 'inset 0 0 0 10px #0a0b10', overflow: 'hidden', transform: `translateX(${(shake * 0.3).toFixed(2)}px)` }}>
-        {/* cama */}
-        <div style={{ position: 'absolute', left: 140, top: 590, width: 440, height: 26, borderRadius: '50%', background: 'rgba(0,0,0,0.45)', filter: 'blur(6px)' }} />
-        <Glow x={640} y={300} r={240} c={`rgba(255,214,150,${(0.22 * lampF).toFixed(3)})`} />
-        <svg width={200} height={140} viewBox="0 0 200 140" style={{ position: 'absolute', left: 300, top: 170, opacity: claw }}>{[0, 1, 2, 3].map((k) => <path key={k} d={`M${20 + k * 30} 10 l ${44 * claw} ${112 * claw}`} stroke="rgba(120,30,34,0.85)" strokeWidth={7} fill="none" strokeLinecap="round" />)}</svg>
-        <div style={{ position: 'absolute', left: 120, top: 420 + shake, width: 460, height: 140, background: '#e4e0d8', borderRadius: 10 }} />
-        <div style={{ position: 'absolute', left: 120, top: 330 + shake, width: 30, height: 260, background: '#3a3026' }} />
-        <div style={{ position: 'absolute', left: 170, top: 380 + shake, width: 120, height: 60, borderRadius: 26, background: '#f2efe8' }} />
-        <div style={{ position: 'absolute', left: 200, top: 350 + shake, width: 70, height: 70, borderRadius: '50%', background: '#2a221c' }} />
-        {/* la voz que no es la suya */}
-        {voz > 0 && (
-          <svg width={860} height={700} style={{ position: 'absolute', inset: 0, opacity: voz * (1 - 0.7 * xr) }}>
-            <path d={Array.from({ length: 90 }).map((_, i) => { const x = 280 + i * 6.4; const a = (random(`vz${i}${Math.floor(frame / 2)}`) - 0.5) * 140 * Math.sin((i / 90) * Math.PI); return `${i ? 'L' : 'M'}${x} ${380 + a}`; }).join(' ')} stroke="#ff3b3b" strokeWidth={4} fill="none" style={{ filter: 'drop-shadow(0 0 10px rgba(255,59,59,0.8))' }} />
-          </svg>
-        )}
-        {/* caja de luz con radiografías */}
-        <div style={{ position: 'absolute', left: 560, top: 60, width: 250, height: 220, background: '#dfe9f2', boxShadow: `0 0 ${(40 * xr).toFixed(0)}px rgba(220,235,255,0.6)`, opacity: Math.min(1, xr * 1.4), transform: `scale(${(0.85 + 0.15 * xr).toFixed(3)})` }}>
+    <Stage bg="linear-gradient(180deg, #040810 0%, #0a1620 55%, #0b1814 72%, #040605 100%)" dust="rgba(180,255,210,0.18)">
+      {Array.from({ length: 70 }).map((_, i) => { const r = (k: string) => random(`ist-${i}-${k}`); return <div key={i} style={{ position: 'absolute', left: r('x') * W, top: r('y') * 520, width: 2, height: 2, borderRadius: 1, background: '#fff', opacity: 0.25 + 0.45 * Math.abs(Math.sin(frame / (18 + r('t') * 30) + i)) }} />; })}
+      {/* la zorza */}
+      <svg width={W} height={700} viewBox={`0 0 ${W} 700`} style={{ position: 'absolute', left: 0, top: 0, mixBlendMode: 'screen' }}>
+        <defs>
+          <linearGradient id="aurG" x1="0" y1="0" x2="0" y2="700" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#b48cf2" stopOpacity="0.55" /><stop offset="0.35" stopColor="#5BE3A0" stopOpacity="0.9" /><stop offset="0.8" stopColor="#2fbf7a" stopOpacity="0.15" /></linearGradient>
+          <filter id="aurB"><feGaussianBlur stdDeviation="16" /></filter>
+        </defs>
+        {[0, 1, 2].map((k) => <path key={k} d={ribbon(k)} stroke="url(#aurG)" strokeWidth={120 - k * 25} fill="none" filter="url(#aurB)" opacity={aur * (0.55 + 0.35 * Math.sin(t / 40 + k * 2))} />)}
+        {[0, 1].map((k) => <path key={`c${k}`} d={ribbon(k)} stroke="#9dffcf" strokeWidth={3} fill="none" opacity={0.35 * aur} />)}
+        {/* cortinas: rayos verticales que cuelgan de cada cinta */}
+        <defs><linearGradient id="curG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7dffc0" stopOpacity="0.8" /><stop offset="1" stopColor="#2fbf7a" stopOpacity="0" /></linearGradient></defs>
+        {[0, 1].map((k) => Array.from({ length: 150 }).map((_, i) => {
+          const x = -40 + i * 14;
+          const y = 150 + k * 70 + Math.sin(x / 240 + t / 70 + k * 1.7) * 60;
+          const h = 90 + 80 * Math.abs(Math.sin(i * 0.7 + t / 30 + k));
+          return <rect key={`r${k}-${i}`} x={x} y={y - 10} width={6} height={h} fill="url(#curG)" opacity={aur * (0.25 + 0.2 * Math.sin(i * 1.3 + t / 20))} />;
+        }))}
+      </svg>
+      {/* el bosque */}
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: 'absolute', inset: 0 }}>
+        {Array.from({ length: 46 }).map((_, i) => { const r = (k: string) => random(`isp-${i}-${k}`); const x = i * 44 + r('x') * 30 - 20; const h = 110 + r('h') * 170; return <path key={i} d={`M${x} 700 L${x + 26} ${700 - h} L${x + 52} 700Z`} fill="#030605" />; })}
+        <rect x="0" y="698" width={W} height="382" fill="#050807" />
+      </svg>
+      {/* casas de la aldea */}
+      {[[440, 600, 150], [620, 620, 120]].map(([x, y, w], k) => (
+        <div key={k} style={{ position: 'absolute', left: x, top: y, width: w, height: 110, background: '#0c0a08' }}>
+          <div style={{ position: 'absolute', left: -10, top: -50, width: w + 20, height: 52, background: '#080605', clipPath: 'polygon(0 100%, 50% 0, 100% 100%)' }} />
+          <div style={{ position: 'absolute', left: w * 0.35, top: 34, width: 26, height: 30, background: `rgba(255,200,120,${(0.55 * flicker(frame, `ih${k}`, 0.6)).toFixed(3)})` }} />
+        </div>
+      ))}
+      {/* la casa del matrimonio */}
+      <div style={{ position: 'absolute', left: 960, top: 520, width: 400, height: 300, background: 'linear-gradient(180deg, #20160f, #140d08)' }}>
+        <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.35) 0 3px, transparent 3px 30px)' }} />
+        <div style={{ position: 'absolute', left: -30, top: -130, width: 460, height: 132, background: '#0d0805', clipPath: 'polygon(0 100%, 50% 0, 100% 100%)' }} />
+        <div style={{ position: 'absolute', left: 40, top: 60, width: 280, height: 170, background: '#120d0a', boxShadow: 'inset 0 0 0 10px #2a1b10', overflow: 'hidden' }}>
+          <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 100%, rgba(255,120,50,${(0.95 * burn * (1 - 0.55 * ash)).toFixed(3)}) 0%, rgba(255,90,40,${(0.35 * burn).toFixed(3)}) 45%, rgba(0,0,0,0) 80%)` }} />
+          <div style={{ position: 'absolute', left: 10, right: 10, top: 118, height: 40, background: '#2a1d14' }} />
+          {/* lo que queda: dos siluetas de ceniza tumbadas, con hollín alrededor (sin nada explícito) */}
           {[0, 1].map((k) => (
-            <div key={k} style={{ position: 'absolute', left: 14 + k * 118, top: 14, width: 104, height: 140, background: '#141a22', borderRadius: 6 }}>
-              <div style={{ position: 'absolute', left: 22, top: 20, width: 60, height: 74, borderRadius: '50% 50% 44% 44%', border: '3px solid rgba(220,235,255,0.7)' }} />
+            <div key={k} style={{ position: 'absolute', left: 20 + k * 126, top: 104 - k * 4, width: 120, height: 40, opacity: ash }}>
+              <div style={{ position: 'absolute', inset: -10, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(0,0,0,0.75), rgba(0,0,0,0) 70%)' }} />
+              <svg width={120} height={40} viewBox="0 0 130 40" style={{ position: 'absolute', inset: 0, filter: 'blur(0.8px)' }}>
+                <path d="M6 20a10 10 0 1 1 20 0a10 10 0 1 1-20 0zM28 12q30-4 60 2l34 3v8l-34 3q-30 6-60 2z" fill="#9a928a" />
+              </svg>
             </div>
           ))}
-          <div style={{ position: 'absolute', left: 0, right: 0, top: 160, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 48, color: '#C1121F' }}>? ? ?</div>
+          <AbsoluteFill style={{ background: `rgba(91,227,160,${(0.3 * green * pulse).toFixed(3)})`, mixBlendMode: 'screen' }} />
+          {Array.from({ length: 12 }).map((_, k) => { const r = (q: string) => random(`emb${k}${q}`); const m = ((t * (0.8 + r('v')) + r('o') * 120) % 120); return <div key={k} style={{ position: 'absolute', left: 20 + r('x') * 200, top: 150 - m * 1.4, width: 4, height: 4, borderRadius: 2, background: '#ffb060', opacity: burn * (1 - m / 120) * (1 - 0.5 * ash) }} />; })}
         </div>
-        <div style={{ opacity: xr }}><Fig kind="stand" x={620} y={660} h={320} c="#c9d0d8" /><Fig kind="stand" x={760} y={660} h={300} c="#b4bcc6" />
-          {[[620, 394, 42], [760, 411, 39]].map(([x, y, r]) => <div key={x} style={{ position: 'absolute', left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: '50%', background: '#2a221c' }} />)}</div>
+        <div style={{ position: 'absolute', left: 320, top: 150, width: 56, height: 150, background: '#0a0605' }} />
+      </div>
+      {/* cinta policial */}
+      <div style={{ position: 'absolute', left: 930, top: 760, width: 470 * tape, height: 22, background: 'repeating-linear-gradient(135deg, #f2c94c 0 22px, #111 22px 44px)', transform: 'rotate(-5deg)', transformOrigin: '0 50%', boxShadow: '0 6px 14px rgba(0,0,0,0.5)' }} />
+      {/* la luz verde entre los árboles */}
+      <Glow x={1580} y={560} r={360} c={`rgba(91,227,160,${(0.42 * green * pulse).toFixed(3)})`} />
+      <div style={{ position: 'absolute', left: 1580 - 26, top: 560 - 26, width: 52, height: 52, borderRadius: '50%', background: '#d8ffe9', boxShadow: `0 0 ${(60 * green).toFixed(0)}px 20px rgba(91,227,160,${(0.8 * green).toFixed(3)})`, opacity: green, transform: `scale(${(0.8 + 0.25 * pulse).toFixed(3)})` }} />
+      {[1460, 1520, 1650, 1720].map((x, k) => <div key={x} style={{ position: 'absolute', left: x, top: 380 + (k % 2) * 30, width: 22, height: 700, background: '#020403' }} />)}
+      {/* el cartel de la aldea */}
+      <div style={{ position: 'absolute', left: 150, top: 580, opacity: Math.min(1, sign * 1.4), transform: `translateY(${((1 - sign) * 60).toFixed(1)}px) rotate(${(-3 + 3 * (1 - sign)).toFixed(2)}deg)`, transformOrigin: '50% 100%' }}>
+        <div style={{ position: 'absolute', left: 60, top: 80, width: 12, height: 220, background: '#5a5f66' }} />
+        <div style={{ position: 'absolute', left: 250, top: 80, width: 12, height: 220, background: '#5a5f66' }} />
+        <Sign x={0} y={0} w={320} h={90} t="JODOZIORY" bg="#F2F2EE" fg="#111" size={44} style={{ border: '5px solid #111', borderRadius: 2 }} />
+      </div>
+      {/* el tronco y la vieja foto */}
+      <div style={{ position: 'absolute', left: 600, top: 470, width: 40, height: 610, background: 'linear-gradient(90deg, #0b0806, #1c140d 60%, #090705)', clipPath: 'polygon(0 4%, 50% 0, 100% 4%, 100% 100%, 0 100%)' }} />
+      <div style={{ position: 'absolute', left: 530, top: 500, width: 180, height: 220, padding: 12, background: '#e9dfc8', boxShadow: '0 16px 30px rgba(0,0,0,0.7)', opacity: Math.min(1, photo * 1.5),
+        transformOrigin: '50% 6px', transform: `rotate(${(-6 - 40 * (1 - photo)).toFixed(2)}deg)` }}>
+        <div style={{ position: 'relative', width: '100%', height: '100%', background: 'radial-gradient(circle at 50% 35%, #b49c74, #6a5638)', overflow: 'hidden', filter: 'sepia(0.7)' }}>
+          <Fig kind="woman" x={78} y={230} h={200} c="#3a2a1a" />
+          <div style={{ position: 'absolute', left: 50, top: 20, width: 56, height: 46, background: '#4a3624', clipPath: 'polygon(50% 0, 100% 100%, 0 100%)' }} />
+          {[70, 86].map((x) => <div key={x} style={{ position: 'absolute', left: x, top: 54, width: 5, height: 5, borderRadius: '50%', background: '#ff3b3b', opacity: witch, boxShadow: '0 0 10px 2px rgba(255,59,59,0.8)' }} />)}
+        </div>
+        <div style={{ position: 'absolute', left: 84, top: -6, width: 12, height: 12, borderRadius: '50%', background: '#888' }} />
+      </div>
+      {/* hierbas secas colgadas */}
+      <div style={{ position: 'absolute', left: 716, top: 486, opacity: photo }}>
+        <div style={{ width: 2, height: 60, background: '#6b5a3a', marginLeft: 20 }} />
+        {[0, 1, 2, 3, 4].map((k) => <div key={k} style={{ position: 'absolute', left: 8 + k * 6, top: 56, width: 4, height: 70 + (k % 2) * 16, background: '#5a6b3a', transform: `rotate(${(k - 2) * 6}deg)`, transformOrigin: '50% 0' }} />)}
       </div>
     </Stage>
   );
 };
 
-export const DIORAMAS: Record<number, D> = { 1: DCthulhu, 2: DPoe, 3: DHendrix, 4: DSchweblin, 5: DDracula, 6: DApocalipsis, 7: DCarcoma, 8: DSalem, 9: DEnriquez, 10: DExorcista };
+// ———————————————— 4 · Dom na Wyrębach: el profesor, la casa del bosque, el znicz y el vecino (nueva, PL) ————————————————
+const DDarda: D = ({ t0, beats: [bWyk, bDom, bUma, bSas, bKos] }) => {
+  const frame = useCurrentFrame();
+  const t = frame - t0;
+  const man = pop(frame, bWyk - 6, 13, 150);
+  const split = rmp(frame, bWyk + 4, bWyk + 30, easeOut);
+  const fall = rmp(frame, bWyk + 34, bWyk + 70, (x) => x * x);
+  const rim = 'drop-shadow(0 0 2px rgba(215,228,255,0.6)) drop-shadow(0 0 12px rgba(170,195,255,0.28))';
+  const house = rmp(frame, bDom - 6, bDom + 10);
+  const sign = pop(frame, bDom + 2, 11, 180);
+  const grave = pop(frame, bUma - 6, 12, 160);
+  const nb = pop(frame, bSas - 6, 13, 150);
+  const lantern = rmp(frame, bSas - 2, bSas + 8) * flicker(frame, 'lant', 0.8);
+  const red = rmp(frame, bKos - 4, bKos + 20);
+  const mist = rmp(frame, bKos - 10, bKos + 60);
+  return (
+    <Stage bg="linear-gradient(180deg, #0a0d12 0%, #141b14 55%, #070906 100%)" dust="rgba(220,240,200,0.18)">
+      <Moon x={1500} y={140} r={50} c="#E9EDE2" />
+      {/* bosque */}
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: 'absolute', inset: 0 }}>
+        {Array.from({ length: 34 }).map((_, i) => { const r = (k: string) => random(`dsp-${i}-${k}`); const x = i * 60 + r('x') * 30 - 30; const h = 300 + r('h') * 330; return <path key={i} d={`M${x} 790 L${x + 34} ${790 - h} L${x + 68} 790Z`} fill={i % 3 ? '#050805' : '#080c08'} />; })}
+        <rect x="0" y="780" width={W} height="300" fill="#0a0d08" />
+        <path d="M0 1000 C 300 940, 500 900, 820 860" stroke="#151a12" strokeWidth={70} fill="none" />
+      </svg>
+      {/* ojos entre los árboles */}
+      {Array.from({ length: 16 }).map((_, k) => {
+        const r = (q: string) => random(`dey${k}${q}`);
+        const o = rmp(frame, bKos + r('d') * 30, bKos + 6 + r('d') * 30) * (Math.floor((frame + r('b') * 90) / 6) % 15 === 0 ? 0.1 : 1);
+        const x = 80 + r('x') * 1760, y = 330 + r('y') * 360;
+        return <React.Fragment key={k}>{[0, 16].map((dx) => <div key={dx} style={{ position: 'absolute', left: x + dx, top: y, width: 7, height: 4, borderRadius: '50%', background: k % 3 ? '#ff4a3a' : '#ffcf5a', opacity: o * red, boxShadow: '0 0 10px 2px rgba(255,80,60,0.7)' }} />)}</React.Fragment>;
+      })}
+      {/* kapliczka al borde del camino */}
+      <div style={{ position: 'absolute', left: 620, top: 600, width: 14, height: 200, background: '#1c140c' }} />
+      <div style={{ position: 'absolute', left: 596, top: 560, width: 62, height: 56, background: '#20170e', clipPath: 'polygon(50% 0, 100% 40%, 100% 100%, 0 100%, 0 40%)' }} />
+      <Glow x={627} y={596} r={50} c={`rgba(255,190,110,${(0.3 + 0.4 * red).toFixed(3)})`} />
+      {/* la casa del bosque */}
+      <div style={{ position: 'absolute', left: 760, top: 520, width: 420, height: 290, background: 'linear-gradient(180deg, #2a1d12, #1a120a)', boxShadow: '0 0 0 2px rgba(0,0,0,0.5)' }}>
+        <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.35) 0 3px, transparent 3px 26px)' }} />
+        <div style={{ position: 'absolute', left: -40, top: -150, width: 500, height: 152, background: '#0e0a06', clipPath: 'polygon(0 100%, 50% 0, 100% 100%)' }} />
+        {[[50, 80], [290, 80]].map(([x, y], k) => <div key={k} style={{ position: 'absolute', left: x, top: y, width: 90, height: 100, background: `rgba(255,205,130,${(0.08 + 0.5 * house * flicker(frame, `dw${k}`, 0.7)).toFixed(3)})`, boxShadow: 'inset 0 0 0 8px #120c07' }} />)}
+        <div style={{ position: 'absolute', left: 170, top: 110, width: 80, height: 180, background: '#0a0705', transformOrigin: '0 50%', transform: `perspective(500px) rotateY(${(-40 * rmp(frame, bUma + 10, bUma + 60)).toFixed(1)}deg)`, boxShadow: 'inset 0 0 0 5px #1e140b' }} />
+      </div>
+      {/* SPRZEDAM en la valla */}
+      <div style={{ position: 'absolute', left: 1180, top: 700, width: 220, height: 12, background: '#2a2016' }} />
+      {[1190, 1290, 1390].map((x) => <div key={x} style={{ position: 'absolute', left: x, top: 680, width: 12, height: 130, background: '#2a2016' }} />)}
+      <div style={{ position: 'absolute', left: 1200, top: 640, opacity: Math.min(1, sign * 1.4), transform: `rotate(${(4 + 8 * (1 - sign)).toFixed(2)}deg) scale(${(0.6 + 0.4 * sign).toFixed(3)})` }}>
+        <Sign x={0} y={0} w={190} h={64} t="SPRZEDAM" bg="#EFE8DA" fg="#9b2c1c" size={32} style={{ border: '4px solid #9b2c1c' }} />
+      </div>
+      {/* el znicz y la cruz del dueño anterior */}
+      <div style={{ position: 'absolute', left: 1010, top: 740, opacity: Math.min(1, grave * 1.4), transform: `translateY(${((1 - grave) * 30).toFixed(1)}px)` }}>
+        <div style={{ position: 'absolute', left: 46, top: -20, width: 10, height: 110, background: '#3a2a1c' }} />
+        <div style={{ position: 'absolute', left: 22, top: 4, width: 58, height: 10, background: '#3a2a1c' }} />
+        <Glow x={18} y={66} r={70} c={`rgba(255,80,60,${(0.45 * flicker(frame, 'znicz', 1)).toFixed(3)})`} />
+        <div style={{ position: 'absolute', left: 6, top: 60, width: 24, height: 32, borderRadius: '4px 4px 8px 8px', background: 'rgba(200,30,40,0.85)', boxShadow: '0 0 20px rgba(255,60,60,0.6)' }} />
+        <div style={{ position: 'absolute', left: 14, top: 48, width: 8, height: 14, borderRadius: '50% 50% 40% 40%', background: '#ffd27a', transform: `scale(${flicker(frame, 'znf', 1).toFixed(3)})` }} />
+        {[70, 86].map((x, k) => <div key={x} style={{ position: 'absolute', left: x, top: 70 + k * 6, width: 16, height: 16, borderRadius: '50%', background: k ? '#c9c2b0' : '#a3332e' }} />)}
+      </div>
+      {/* el vecino: valla, farol y perro */}
+      <div style={{ position: 'absolute', left: 1500, top: 560, width: 330, height: 200, background: '#100c08' }}>
+        <div style={{ position: 'absolute', left: -20, top: -90, width: 370, height: 92, background: '#0a0705', clipPath: 'polygon(0 100%, 50% 0, 100% 100%)' }} />
+        <div style={{ position: 'absolute', left: 120, top: 60, width: 70, height: 70, background: `rgba(255,205,130,${(0.15 + 0.5 * nb).toFixed(3)})`, boxShadow: 'inset 0 0 0 6px #0a0705' }} />
+      </div>
+      <div style={{ opacity: Math.min(1, nb * 1.4), transform: `translateX(${((1 - nb) * 50).toFixed(1)}px)`, filter: 'drop-shadow(0 0 2px rgba(255,214,150,0.5))' }}>
+        <Fig kind="stand" x={1620} y={900} h={300} c="#050605" />
+        <div style={{ position: 'absolute', left: 1576, top: 586, width: 88, height: 16, borderRadius: 6, background: '#050605' }} />
+        <Glow x={1690} y={790} r={130} c={`rgba(255,200,120,${(0.5 * lantern).toFixed(3)})`} />
+        <div style={{ position: 'absolute', left: 1680, top: 770, width: 20, height: 30, borderRadius: 4, background: '#ffcf7a', opacity: lantern, boxShadow: '0 0 20px 6px rgba(255,200,120,0.6)' }} />
+        <svg width={120} height={80} viewBox="0 0 120 80" style={{ position: 'absolute', left: 1700, top: 822 }}><path d="M10 40 q0-16 16-18 l8-14 l6 12 h40 q20 0 22 20 l8 30 h-10 l-6-16 h-46 l-6 16 h-10 l2-20 q-24-2-24-10z" fill="#050605" /><circle cx="28" cy="34" r="3" fill="#ffcf5a" opacity={nb} /></svg>
+      </div>
+      {[1470, 1530, 1590, 1650, 1710, 1770, 1830, 1890].map((x) => <div key={x} style={{ position: 'absolute', left: x, top: 820, width: 14, height: 100, background: '#1a140e', clipPath: 'polygon(0 12%, 50% 0, 100% 12%, 100% 100%, 0 100%)' }} />)}
+      <div style={{ position: 'absolute', left: 1460, top: 850, width: 460, height: 10, background: '#1a140e' }} />
+      {/* el profesor y su coche */}
+      <div style={{ position: 'absolute', left: 120, top: 880 }}>
+        <div style={{ position: 'absolute', left: 0, top: -60, width: 200, height: 60, borderRadius: '26px 26px 6px 6px', background: '#2a2f38' }} />
+        <div style={{ position: 'absolute', left: 40, top: -54, width: 100, height: 22, borderRadius: '10px 10px 2px 2px', background: '#121418' }} />
+        <div style={{ position: 'absolute', left: 190, top: -34, width: 14, height: 10, borderRadius: 4, background: '#fff6d8', boxShadow: '0 0 18px 6px rgba(255,240,200,0.6)' }} />
+        <div style={{ position: 'absolute', left: 200, top: -50, width: 420, height: 60, background: 'linear-gradient(90deg, rgba(255,240,200,0.4), rgba(255,240,200,0))', clipPath: 'polygon(0 30%, 100% 0, 100% 100%, 0 70%)' }} />
+      </div>
+      <div style={{ opacity: Math.min(1, man * 1.4), transform: `translateY(${((1 - man) * 30).toFixed(1)}px)` }}>
+        <div style={{ filter: rim }}>
+          <Fig kind="stand" x={420} y={960} h={300} c="#040504" />
+          <div style={{ position: 'absolute', left: 448, top: 860, width: 46, height: 34, borderRadius: 4, background: '#040504' }} />
+        </div>
+        {/* la foto de boda partida en dos */}
+        {[-1, 1].map((sg) => (
+          <div key={sg} style={{ position: 'absolute', left: 390 + sg * 4 + sg * (40 * split + 30 * fall), top: 560 + 30 * split + 330 * fall, width: 50, height: 66, background: '#d9ccb0', clipPath: sg < 0 ? 'polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%)' : 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%)',
+            transform: `rotate(${(sg * (14 * split + 70 * fall)).toFixed(2)}deg)`, opacity: man * (1 - 0.3 * split) * (1 - fall), boxShadow: '0 6px 14px rgba(0,0,0,0.5)' }}>
+            <Fig kind={sg < 0 ? 'stand' : 'woman'} x={25} y={66} h={50} c="#5a4a36" />
+          </div>
+        ))}
+      </div>
+      {[0, 1].map((i) => <div key={i} style={{ position: 'absolute', left: -500 + ((t * (0.6 + i * 0.3) + i * 900) % 2800), top: 740 + i * 90, width: 1500, height: 220, borderRadius: '50%', background: `radial-gradient(ellipse, rgba(200,215,200,${(0.08 + 0.18 * mist).toFixed(3)}), rgba(0,0,0,0) 70%)`, filter: 'blur(14px)' }} />)}
+    </Stage>
+  );
+};
+
+// Símbolos del adivino (estrella, luna, sol) dibujados, sin depender de las fuentes.
+const Glyph: React.FC<{ k: number; size: number; c: string }> = ({ k, size, c }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24">
+    {k === 0 && <path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill={c} />}
+    {k === 1 && <path d="M15.5 3A9 9 0 1 0 21 17.5 7.5 7.5 0 0 1 15.5 3z" fill={c} />}
+    {k === 2 && <><circle cx="12" cy="12" r="5" fill={c} />{Array.from({ length: 8 }).map((_, i) => <path key={i} d="M12 1.5v4" stroke={c} strokeWidth={2} strokeLinecap="round" transform={`rotate(${i * 45} 12 12)`} />)}</>}
+  </svg>
+);
+// ———————————————— 2 · Manitou: el bulto en la nuca, la radiografía, los médicos y el adivino (nueva, PL) ————————————————
+const DManitou: D = ({ t0, beats: [bKar, bRen, bLek, bPlo, bWro] }) => {
+  const frame = useCurrentFrame();
+  const t = frame - t0;
+  const grow = interpolate(frame, [bKar - 6, bKar + 120], [0.25, 1], { ...clamp, easing: easeOut });
+  const beat = 0.5 + 0.5 * Math.sin(frame / 7);
+  const xr = rmp(frame, bRen - 8, bRen + 4) * (frame < bRen + 12 ? flicker(frame, 'xr', 2.5) : 1);
+  const docs = pop(frame, bLek - 6, 13, 150);
+  const fetus = rmp(frame, bPlo - 4, bPlo + 14);
+  const kick = frame > bPlo ? Math.max(0, Math.sin((frame - bPlo) / 5)) * Math.exp(-(frame - bPlo) / 60) : 0;
+  const ball = rmp(frame, bWro - 6, bWro + 14);
+  const cards = (k: number) => pop(frame, bWro + 2 + k * 5, 12, 200);
+  return (
+    <Stage bg="#0d1211" dust="rgba(220,240,255,0.15)">
+      {/* consulta */}
+      <div style={{ position: 'absolute', left: 0, top: 0, width: 1260, height: 1080, background: 'linear-gradient(180deg, #1c2725 0%, #121a19 70%, #0b0f0e 100%)' }} />
+      <Glow x={900} y={120} r={420} c="rgba(200,240,255,0.10)" />
+      {/* la caja de luz con la radiografía */}
+      <div style={{ position: 'absolute', left: 700, top: 130, width: 420, height: 440, background: `rgba(${Math.round(30 + 190 * xr)},${Math.round(36 + 200 * xr)},${Math.round(44 + 210 * xr)},1)`, boxShadow: `0 0 ${(70 * xr).toFixed(0)}px rgba(200,230,255,${(0.45 * xr).toFixed(3)}), inset 0 0 0 10px #2a3433` }}>
+        <div style={{ position: 'absolute', left: 30, top: 30, width: 360, height: 380, background: '#0b1016', opacity: 0.2 + 0.8 * xr }}>
+          <svg width={360} height={380} viewBox="0 0 360 380" style={{ position: 'absolute', inset: 0, opacity: xr }}>
+            <path d="M120 40 C 200 10 290 50 300 130 C 306 190 280 220 250 236 L 210 240 C 190 250 170 250 150 236 C 110 230 90 200 92 160 C 70 150 70 120 90 110 C 90 80 100 54 120 40 Z" fill="none" stroke="rgba(225,240,255,0.85)" strokeWidth={5} />
+            <circle cx="170" cy="140" r="16" fill="none" stroke="rgba(225,240,255,0.6)" strokeWidth={4} />
+            {Array.from({ length: 6 }).map((_, k) => <rect key={k} x={232 - k * 2} y={246 + k * 22} width={34} height={16} rx={4} fill="rgba(225,240,255,0.75)" />)}
+            {/* el bulto, en la nuca */}
+            <ellipse cx="292" cy="262" rx={46 * grow} ry={52 * grow} fill="rgba(225,240,255,0.16)" stroke="rgba(225,240,255,0.5)" strokeWidth={3} />
+            <g opacity={fetus} transform={`translate(292 262) scale(${(0.8 + 0.2 * fetus + 0.05 * kick).toFixed(3)})`}>
+              <path d="M-6 -30 a16 16 0 1 1 18 18 q14 10 10 30 q-6 18 -26 16 q-18 -4 -18 -22 q0 -14 10 -22 q-6 -8 6 -20z" fill="rgba(255,235,235,0.9)" />
+              <path d="M2 4 q-10 6 -6 16" stroke="#0b1016" strokeWidth={3} fill="none" />
+            </g>
+          </svg>
+          <Glow x={292} y={262} r={120} c={`rgba(255,60,60,${(0.4 * fetus * (0.6 + 0.4 * beat)).toFixed(3)})`} />
+        </div>
+      </div>
+      {/* ventana esmerilada detrás de la paciente: la silueta y el bulto se recortan contra la luz */}
+      <div style={{ position: 'absolute', left: 70, top: 150, width: 580, height: 640, background: 'linear-gradient(180deg, #8fa3a0 0%, #5f7472 70%, #3a4846 100%)', boxShadow: 'inset 0 0 0 14px #2a3433, 0 0 80px rgba(170,200,200,0.25)' }}>
+        <div style={{ position: 'absolute', left: 283, top: 0, width: 14, height: 640, background: '#2a3433' }} />
+        <div style={{ position: 'absolute', left: 0, top: 313, width: 580, height: 14, background: '#2a3433' }} />
+      </div>
+      {/* la paciente, de perfil: el bulto crece en la nuca */}
+      <div style={{ position: 'absolute', left: 140, top: 250 }}>
+        <svg width={400} height={830} viewBox="0 0 400 830" style={{ overflow: 'visible' }}>
+          <path d="M200 40 C300 40 360 110 360 200 C360 260 344 300 330 330 L332 420 C360 470 400 500 400 560 L400 830 L0 830 L0 600 C0 540 60 500 120 470 L128 400 C110 384 100 364 96 344 L72 304 L82 286 L60 254 L82 216 C70 120 120 40 200 40 Z" fill="#070909" />
+          <path d="M200 40 C300 40 360 110 360 200 C356 150 320 70 210 60 C170 60 130 80 110 120 C 120 70 160 40 200 40Z" fill="#1a1412" />
+          <ellipse cx={342} cy={360} rx={22 + 34 * grow * (0.94 + 0.06 * beat)} ry={26 + 38 * grow * (0.94 + 0.06 * beat)} fill="#070909" />
+        </svg>
+        <Glow x={360} y={360} r={90 + 60 * grow} c={`rgba(220,30,40,${(0.18 + 0.4 * grow * beat).toFixed(3)})`} />
+      </div>
+      {/* los médicos */}
+      <div style={{ opacity: Math.min(1, docs * 1.4), transform: `translateY(${((1 - docs) * 40).toFixed(1)}px)` }}>
+        <Fig kind="stand" x={790} y={1000} h={380} c="#c9d0d8" /><Fig kind="stand" x={1030} y={1000} h={360} c="#b4bcc6" />
+        {[[790, 645, 44], [1030, 668, 41]].map(([x, y, r]) => <div key={x} style={{ position: 'absolute', left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: '50%', background: '#2a221c' }} />)}
+        {[[740, 560], [1080, 584]].map(([x, y], k) => {
+          const q = pop(frame, bLek + 4 + k * 8, 10, 220);
+          return <div key={k} style={{ position: 'absolute', left: x, top: y - 40 * q, fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: '#e8f2ff', opacity: q, transform: `scale(${q.toFixed(3)}) rotate(${k ? 10 : -10}deg)` }}>?</div>;
+        })}
+      </div>
+      {/* el adivino */}
+      <div style={{ position: 'absolute', left: 1260, top: 0, width: 660, height: 1080, background: 'linear-gradient(180deg, #1a0f22 0%, #120a18 70%, #07040a 100%)', overflow: 'hidden' }}>
+        {Array.from({ length: 9 }).map((_, k) => <div key={k} style={{ position: 'absolute', left: k * 76 - 10, top: 0, width: 80, height: 640, background: k % 2 ? '#2a1636' : '#24122f', borderRadius: '0 0 40px 40px', transform: `skewX(${(Math.sin(t / 50 + k) * 2).toFixed(2)}deg)` }} />)}
+        {[[140, 120], [460, 200], [300, 80]].map(([x, y], k) => <div key={k} style={{ position: 'absolute', left: x, top: y }}><Glyph k={k === 1 ? 1 : 0} size={44} c={`rgba(230,196,106,${(0.35 + 0.4 * ball).toFixed(3)})`} /></div>)}
+        <Fig kind="stand" x={330} y={760} h={360} c="#05030a" />
+        <div style={{ position: 'absolute', left: 270, top: 384, width: 120, height: 20, borderRadius: 6, background: '#05030a' }} />
+        <div style={{ position: 'absolute', left: 296, top: 352, width: 70, height: 40, borderRadius: '20px 20px 4px 4px', background: '#05030a' }} />
+        <div style={{ position: 'absolute', left: 60, top: 740, width: 540, height: 360, borderRadius: '50% 50% 0 0 / 30% 30% 0 0', background: 'linear-gradient(180deg, #4a1838, #2a0c20)' }} />
+        <Glow x={340} y={700} r={260} c={`rgba(180,140,242,${(0.15 + 0.5 * ball).toFixed(3)})`} />
+        <div style={{ position: 'absolute', left: 270, top: 630, width: 140, height: 140, borderRadius: '50%', background: `radial-gradient(circle at 38% 34%, #ffffff 0%, rgba(210,190,255,${(0.6 + 0.35 * ball).toFixed(3)}) 30%, rgba(90,60,160,0.85) 75%)`, boxShadow: `0 0 ${(80 * ball).toFixed(0)}px rgba(200,170,255,0.7)` }}>
+          <div style={{ position: 'absolute', left: 40, top: 46, width: 60, height: 50, borderRadius: '50%', background: 'rgba(255,255,255,0.25)', filter: 'blur(6px)', transform: `rotate(${(t * 2).toFixed(1)}deg)` }} />
+        </div>
+        <div style={{ position: 'absolute', left: 300, top: 762, width: 80, height: 22, borderRadius: 6, background: '#c9a24a' }} />
+        {[0, 1, 2].map((k) => {
+          const q = cards(k);
+          return <div key={k} style={{ position: 'absolute', left: 120 + k * 70, top: 800, width: 56, height: 86, borderRadius: 6, background: q > 0.5 ? '#e9dfc8' : '#3a1a4a', border: '3px solid #c9a24a', transform: `rotate(${(-14 + k * 14).toFixed(1)}deg) scaleX(${Math.abs(1 - 2 * Math.min(1, q)).toFixed(3)})`, opacity: Math.min(1, ball * 2) }}>
+            {q > 0.5 && <div style={{ display: 'flex', justifyContent: 'center', marginTop: 22 }}><Glyph k={[1, 0, 2][k]} size={32} c="#7a2a8a" /></div>}
+          </div>;
+        })}
+        <div style={{ position: 'absolute', left: 520, top: 690, width: 14, height: 60, background: '#efe6d2' }}><div style={{ position: 'absolute', left: -2, top: -18, width: 18, height: 18, borderRadius: '50% 50% 40% 40%', background: '#ffcf7a', transform: `scale(${flicker(frame, 'mcan', 1).toFixed(3)})` }} /></div>
+      </div>
+      <div style={{ position: 'absolute', left: 1250, top: 0, width: 14, height: 1080, background: '#050405' }} />
+    </Stage>
+  );
+};
+
+// ———————————————— 1 · Nie otwieraj oczu: la ventana tapada, la caja de pájaros y el río (nueva, PL) ————————————————
+const Bird: React.FC<{ x: number; y: number; s: number; flap: number }> = ({ x, y, s, flap }) => (
+  <svg width={40 * s} height={30 * s} viewBox="0 0 40 30" style={{ position: 'absolute', left: x, top: y, overflow: 'visible' }}>
+    <ellipse cx="20" cy="18" rx="12" ry="8" fill="#d8c27a" /><circle cx="30" cy="11" r="6" fill="#d8c27a" /><path d="M35 11 l6 2 l-6 2z" fill="#b07a18" />
+    <path d={`M14 16 q6 ${(-14 * flap).toFixed(1)} 14 -2`} fill="#b89a50" /><circle cx="31" cy="10" r="1.4" fill="#111" />
+  </svg>
+);
+const Child: React.FC<{ x: number; y: number; h: number; band: number; c?: string }> = ({ x, y, h, band, c = '#0a0c0e' }) => {
+  const s = h / 100;
+  return (
+    <div style={{ position: 'absolute', left: x - 30 * s, top: y - 100 * s, width: 60 * s, height: 100 * s }}>
+      <svg width={60 * s} height={100 * s} viewBox="0 0 60 100" style={{ position: 'absolute', inset: 0 }}><path d="M30 8a14 14 0 1 1 0 28a14 14 0 1 1 0-28zM12 40q18-6 36 0l6 60h-48z" fill={c} /></svg>
+      <div style={{ position: 'absolute', left: 13 * s, top: 18 * s, width: 34 * s * band, height: 7 * s, background: '#f2f0ea', boxShadow: `0 0 ${(8 * band).toFixed(0)}px rgba(255,255,255,0.5)` }} />
+    </div>
+  );
+};
+const DMalerman: D = ({ t0, beats: [bZew, bSpo, bRze, bOpa, bSlu] }) => {
+  const frame = useCurrentFrame();
+  const t = frame - t0;
+  const pass = interpolate(frame, [bZew - 20, bZew + 70], [-0.2, 1.2], clamp);
+  const lift = rmp(frame, bSpo - 6, bSpo + 6, easeOut) * (1 - rmp(frame, bSpo + 26, bSpo + 46));
+  const glare = interpolate(frame, [bSpo - 2, bSpo + 2, bSpo + 20, bSpo + 50], [0, 1, 0.6, 0], clamp);
+  const flap = (k: number) => (frame > bZew - 10 && frame < bSpo + 60 ? Math.abs(Math.sin(frame / 2.2 + k)) : 0.15);
+  const boat = interpolate(frame, [bRze - 40, bRze + 160], [0, 1], { ...clamp, easing: easeOut });
+  const band = rmp(frame, bOpa - 8, bOpa + 10, easeOut);
+  const hear = rmp(frame, bSlu - 8, bSlu + 6);
+  const sway = Math.sin(t / 30) * 6;
+  return (
+    <Stage bg="#0a0c0f" dust="rgba(220,230,240,0.14)">
+      {/* dentro: la ventana tapada con mantas */}
+      <div style={{ position: 'absolute', left: 0, top: 0, width: 760, height: 1080, background: 'linear-gradient(180deg, #1a1a1c, #0f0f11)' }}>
+        <AbsoluteFill style={{ backgroundImage: 'repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 64px)' }} />
+        <div style={{ position: 'absolute', left: 140, top: 130, width: 480, height: 500, background: '#d9dde2', overflow: 'hidden', boxShadow: 'inset 0 0 0 16px #2a2622' }}>
+          <AbsoluteFill style={{ background: `rgba(255,250,240,${(0.25 + 0.75 * glare).toFixed(3)})` }} />
+          {[0, 1, 2].map((k) => (
+            <div key={k} style={{ position: 'absolute', left: 16 + k * 150, top: 16, width: 152, height: 468, background: ['#4a3a32', '#3b4450', '#5a4636'][k], transformOrigin: k === 2 ? '50% 0' : '50% 0',
+              transform: `skewX(${(Math.sin(t / 24 + k) * 1.6 + (pass > 0 && pass < 1 ? Math.sin(frame / 4 + k) * 3 : 0)).toFixed(2)}deg)${k === 2 ? ` rotate(${(-28 * lift).toFixed(2)}deg)` : ''}`,
+              backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0 6px, transparent 6px 22px)', boxShadow: 'inset -6px 0 12px rgba(0,0,0,0.35)', opacity: 0.97 }}>
+              {[20, 76, 132].map((x) => <div key={x} style={{ position: 'absolute', left: x - 4, top: 6, width: 8, height: 8, borderRadius: '50%', background: '#888' }} />)}
+            </div>
+          ))}
+          {/* la sombra de lo que pasa por fuera, a través de las mantas */}
+          <div style={{ position: 'absolute', left: -340 + 1150 * pass, top: 40, width: 320, height: 460, borderRadius: '45% 45% 30% 30%', background: 'rgba(0,0,0,0.72)', filter: 'blur(26px)', mixBlendMode: 'multiply' }} />
+        </div>
+        {glare > 0 && <Glow x={560} y={560} r={420} c={`rgba(255,250,235,${(0.55 * glare).toFixed(3)})`} />}
+        {/* la caja con pájaros */}
+        <div style={{ position: 'absolute', left: 120, top: 780, width: 560, height: 24, background: '#2a1c12' }} />
+        <div style={{ position: 'absolute', left: 300, top: 660, width: 200, height: 122, background: '#6b4a2a', boxShadow: 'inset 0 0 0 6px #3a2614' }}>
+          {[0, 1, 2, 3, 4].map((k) => <div key={k} style={{ position: 'absolute', left: 18 + k * 36, top: 18, width: 10, height: 10, borderRadius: '50%', background: '#120a04' }} />)}
+          <Bird x={30 + flap(0) * 6} y={50 - flap(0) * 10} s={1.4} flap={flap(0)} />
+          <Bird x={110 - flap(1) * 6} y={56 - flap(1) * 12} s={1.3} flap={flap(1)} />
+        </div>
+      </div>
+      <div style={{ position: 'absolute', left: 760, top: 0, width: 16, height: 1080, background: '#050506' }} />
+      {/* fuera: el río en la niebla */}
+      <div style={{ position: 'absolute', left: 776, top: 0, width: 1144, height: 1080, background: 'linear-gradient(180deg, #2a323a 0%, #3a444c 40%, #1a2128 62%, #0c1115 100%)', overflow: 'hidden' }}>
+        <svg width={1144} height={1080} viewBox="0 0 1144 1080" style={{ position: 'absolute', inset: 0 }}>
+          <path d="M0 560 Q 200 520 420 540 T 1144 520 L1144 600 L0 620Z" fill="#0d1216" />
+          {Array.from({ length: 30 }).map((_, i) => { const r = (k: string) => random(`mtr${i}${k}`); const x = i * 40 + r('x') * 20; const h = 90 + r('h') * 140; return <path key={i} d={`M${x} 580 L${x + 18} ${580 - h} L${x + 36} 580Z`} fill="#141b20" />; })}
+          <rect x="0" y="600" width="1144" height="300" fill="#1e2a31" />
+          {Array.from({ length: 14 }).map((_, i) => <path key={i} d={`M${((i * 97 + t * 1.2) % 1300) - 100} ${640 + (i % 5) * 50} q 30 -6 60 0`} stroke="rgba(200,220,230,0.25)" strokeWidth={3} fill="none" />)}
+          <rect x="0" y="900" width="1144" height="180" fill="#0b1013" />
+          {Array.from({ length: 40 }).map((_, i) => { const x = i * 30 + (i % 3) * 7; return <path key={`r${i}`} d={`M${x} 920 q ${(Math.sin(t / 26 + i) * 8).toFixed(1)} -60 ${(4 + (i % 4) * 3).toFixed(0)} -${110 + (i % 5) * 20}`} stroke="#0f1712" strokeWidth={5} fill="none" />; })}
+        </svg>
+        {/* algo en la otra orilla: solo una distorsión */}
+        <div style={{ position: 'absolute', left: 820 + 40 * Math.sin(t / 40), top: 380, width: 140, height: 220, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(10,14,18,0.6), rgba(10,14,18,0) 70%)', opacity: 0.4 + 0.5 * hear, filter: 'blur(6px)', transform: `scaleY(${(1 + 0.1 * Math.sin(frame / 5)).toFixed(3)})` }} />
+        {/* la barca */}
+        <div style={{ position: 'absolute', left: -120 + 520 * boat, top: 640 + Math.sin(t / 22) * 4, transform: `rotate(${(sway * 0.3).toFixed(2)}deg)` }}>
+          <Child x={190} y={70} h={190} band={band} c="#07090b" />
+          <Child x={100} y={74} h={110} band={band} c="#07090b" />
+          <Child x={300} y={76} h={100} band={band} c="#07090b" />
+          <svg width={420} height={110} viewBox="0 0 420 110" style={{ position: 'absolute', left: 0, top: 50 }}><path d="M0 10 H420 L370 90 H50 Z" fill="#2a1c12" stroke="#120a06" strokeWidth={4} /><path d="M140 0 L60 110" stroke="#3a2a1a" strokeWidth={8} /></svg>
+          {hear > 0 && [0, 1, 2].map((k) => {
+            const w = ((frame - bSlu) / 26 + k / 3) % 1;
+            return <div key={k} style={{ position: 'absolute', left: 190 - 40 - 120 * w, top: -40 - 120 * w, width: 80 + 240 * w, height: 80 + 240 * w, borderRadius: '50%', border: `3px solid rgba(220,235,255,${(0.6 * hear * (1 - w)).toFixed(3)})`, borderBottomColor: 'transparent' }} />;
+          })}
+        </div>
+        <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(200,210,220,0.0) 30%, rgba(200,210,220,0.18) 55%, rgba(200,210,220,0.05) 80%)' }} />
+        {[0, 1, 2].map((i) => <div key={i} style={{ position: 'absolute', left: -400 + ((t * (0.5 + i * 0.25) + i * 600) % 2000), top: 560 + i * 70, width: 1200, height: 200, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(210,220,230,0.16), rgba(0,0,0,0) 70%)', filter: 'blur(14px)' }} />)}
+      </div>
+    </Stage>
+  );
+};
+
+export const DIORAMAS: Record<number, D> = { 1: DCthulhu, 2: DPoe, 3: DHendrix, 4: DRosemary, 5: DDracula, 6: DInkub, 7: DDarda, 8: DSalem, 9: DManitou, 10: DMalerman };
 export const _keep = { css, W };

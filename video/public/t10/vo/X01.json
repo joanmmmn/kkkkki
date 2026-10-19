@@ -1,29 +1,29 @@
 {
  "id": "X01",
- "hash": "0d1ec2be27ee",
- "text": "Hay historias que asustan.",
- "duration": 2.08,
+ "hash": "78c816ccda3a",
+ "text": "Są historie, które straszą.",
+ "duration": 2.24,
  "words": [
   {
-   "w": "Hay",
+   "w": "Są",
    "s": 0.0,
    "e": 0.24
   },
   {
-   "w": "historias",
+   "w": "historie,",
    "s": 0.44,
-   "e": 0.96
+   "e": 1.04
   },
   {
-   "w": "que",
-   "s": 1.04,
-   "e": 1.12
+   "w": "które",
+   "s": 1.12,
+   "e": 1.36
   },
   {
-   "w": "asustan.",
-   "s": 1.24,
-   "e": 2.08
+   "w": "straszą.",
+   "s": 1.44,
+   "e": 2.24
   }
  ],
- "speechEnd": 1.943
+ "speechEnd": 2.115
 }

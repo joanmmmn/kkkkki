@@ -37,11 +37,12 @@ import { T10ThumbA, T10ThumbB, T10ThumbC } from './scenes/t10/Thumb';
 
 export const Root: React.FC = () => (
   <>
-    <Composition id="T10Terror" component={Top10Terror} durationInFrames={T10_TOTAL} fps={FPS} width={W} height={H} />
-    <Composition id="T10Short" component={T10Short} durationInFrames={T10_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
-    <Composition id="T10ThumbA" component={T10ThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
-    <Composition id="T10ThumbB" component={T10ThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
-    <Composition id="T10ThumbC" component={T10ThumbC} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    {/* SonorBooks Polska · «10 historii grozy, które naprawdę przerażają» (rama pl-top10-horror; el español está en top10-terror) */}
+    <Composition id="PL-top10-horror" component={Top10Terror} durationInFrames={T10_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="PL-top10-horror-short" component={T10Short} durationInFrames={T10_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />
+    <Composition id="PL-top10-horror-thumbA" component={T10ThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="PL-top10-horror-thumbB" component={T10ThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="PL-top10-horror-thumbC" component={T10ThumbC} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKThumbB" component={SKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />

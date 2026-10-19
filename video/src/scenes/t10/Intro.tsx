@@ -2,11 +2,10 @@ import React from 'react';
 import { AbsoluteFill, interpolate, random, spring, staticFile, useCurrentFrame } from 'remotion';
 import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Sfx } from '../../components/Sfx';
-import { Logo } from '../../components/Logo';
 import { MaskTitle } from '../nxr/kit';
 import { BONE, BOOKS10, DIM, Flashlight, KickerN, Night, RED, color, flicker, font } from './kit';
 import { Img } from 'remotion';
-import { COVERS, Cover3D, CoverArt, bgSrc, countTo, KWords, shakes } from './fx';
+import { COVERS, Cover3D, CoverArt, bgSrc, countTo, KWords } from './fx';
 import { Browser, PAGES, Ring, viewAt } from './web';
 import { sceneClock } from './timeline';
 
@@ -40,10 +39,10 @@ export const Hook: React.FC = () => {
   const f1 = c.part('X01');
   const f2 = c.part('X02');
   const f3 = c.part('X03');
-  const lightOff = c.at('X02', 'apagas');
-  const sleepAt = c.at('X02', 'dormir');
-  const tenAt = c.at('X03', 'diez');
-  const verdadAt = c.at('X03', 'verdad');
+  const lightOff = c.at('X02', 'gasisz');
+  const sleepAt = c.at('X02', 'zasnąć');
+  const tenAt = c.at('X03', 'dziesięć');
+  const verdadAt = c.at('X03', 'przerażają');
   const MONT = 5;
   const montA = f3 - 6;
   const montEnd = montA + MONT * 10;
@@ -71,7 +70,7 @@ export const Hook: React.FC = () => {
             </AbsoluteFill>
             <Flashlight x={sweepX} y={480} r={360} on={ramp(frame, f1 - 40, f1 - 20)} seed="hook1" />
             <div style={{ position: 'absolute', left: 0, right: 0, top: 820, textAlign: 'center' }}>
-              <MaskTitle text="Hay historias que asustan." at={f1} size={92} color={BONE} align="center" />
+              <MaskTitle text="Są historie, które straszą." at={f1} size={92} color={BONE} align="center" />
             </div>
           </Night>
         </AbsoluteFill>
@@ -92,8 +91,8 @@ export const Hook: React.FC = () => {
             <AbsoluteFill style={{ background: `rgba(0,0,0,${0.55 * (1 - lampOn)})` }} />
             </AbsoluteFill>
             <div style={{ position: 'absolute', left: 1000, top: 700, width: 840 }}>
-              {['Cuando apagas la luz…', 'siguen ahí.', 'Y no te dejan dormir.'].map((t, i) => {
-                const a = [c.at('X02', 'cuando') - 4, c.at('X02', 'siguen') - 4, sleepAt - 10][i];
+              {['Zostają z tobą,', 'kiedy gasisz światło.', 'I nie dają ci zasnąć.'].map((t, i) => {
+                const a = [c.at('X02', 'zostają') - 4, c.at('X02', 'kiedy') - 4, c.at('X02', 'nie') - 6][i];
                 const s = sp(frame, a, 15, 180);
                 return <div key={t} style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 54, color: i === 2 ? color.yellow : BONE, opacity: s, transform: `translateX(${(1 - s) * 40}px)`, marginBottom: 10 }}>{t}</div>;
               })}
@@ -142,8 +141,8 @@ export const Hook: React.FC = () => {
             )}
             <div style={{ position: 'absolute', left: 160, right: 160, top: 470 }}>
               <KWords words={[
-                { t: 'Las', at: c.at('X03', 'las') - 3 }, { t: '10', at: tenAt - 2, hi: true }, { t: 'historias', at: c.at('X03', 'historias') - 3 }, { t: 'de', at: c.at('X03', 'de') - 3 }, { t: 'terror', at: c.at('X03', 'terror') - 3 },
-                { t: 'que', at: c.at('X03', 'que') - 3 }, { t: 'dan', at: c.at('X03', 'dan') - 3 }, { t: 'miedo', at: c.at('X03', 'miedo') - 3 }, { t: 'de', at: verdadAt - 8, hi: true }, { t: 'verdad', at: verdadAt - 3, hi: true },
+                { t: '10', at: tenAt - 2, hi: true }, { t: 'historii', at: c.at('X03', 'historii') - 3 }, { t: 'grozy,', at: c.at('X03', 'grozy') - 3 },
+                { t: 'które', at: c.at('X03', 'które') - 3 }, { t: 'naprawdę', at: c.at('X03', 'naprawdę') - 3, hi: true }, { t: 'przerażają', at: verdadAt - 3, hi: true },
               ]} size={92} color={BONE} hiColor={color.yellow} align="center" />
             </div>
           </Night>
@@ -162,74 +161,22 @@ export const Hook: React.FC = () => {
   );
 };
 
-// Cabecera de la serie: «LOS 10 MEJORES · TERROR».
-export const Serie: React.FC = () => {
-  const frame = useCurrentFrame();
-  const c = sceneClock('SERIE');
-  const f0 = c.part('X04');
-  const hoy = c.at('X04', 'terror') - 6;
-  const s = sp(frame, f0 - 2, 18, 120);
-  const ten = sp(frame, f0 + 6, 12, 160);
-  const t = ramp(frame, hoy, hoy + 10, easeOut);
-  const ringIn = ramp(frame, f0 - 6, f0 + 40, easeOut);
-  const ang = frame * 0.32 + (1 - ringIn) * 90;
-  const hit = shakes(frame, [{ at: hoy + 8, amp: 18, dur: 18 }], 'serie');
-  const red = interpolate(frame, [hoy + 6, hoy + 8, hoy + 26], [0, 1, 0], clamp);
-  return (
-    <AbsoluteFill>
-      <Night red={0.6 + 0.6 * t}>
-        {/* anillo de portadas girando al fondo */}
-        <AbsoluteFill style={{ perspective: 1500, opacity: 0.85 * ringIn }}>
-          <div style={{ position: 'absolute', left: 960 - 130, top: 540 - 130, width: 260, height: 260, transformStyle: 'preserve-3d', transform: `translateZ(-760px) rotateX(-12deg) rotateY(${ang.toFixed(2)}deg)` }}>
-            {BOOKS10.map((b, i) => {
-              const a = (i * 36 + ang) % 360;
-              const front = Math.cos((a * Math.PI) / 180);
-              return (
-                <div key={b.n} style={{ position: 'absolute', inset: 0, transform: `rotateY(${i * 36}deg) translateZ(900px)`, backfaceVisibility: 'hidden' }}>
-                  <CoverArt name={COVERS[11 - b.n][0]} size={260} reveal={0} radius={8} light={0.6 + 0.4 * Math.max(0, front)} />
-                </div>
-              );
-            })}
-          </div>
-        </AbsoluteFill>
-        <AbsoluteFill style={{ background: 'radial-gradient(ellipse 900px 420px at 50% 47%, rgba(5,5,6,0.82) 0%, rgba(5,5,6,0.5) 55%, rgba(5,5,6,0) 100%)' }} />
-        {red > 0 && <AbsoluteFill style={{ background: `rgba(193,18,31,${(0.25 * red).toFixed(3)})` }} />}
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 210, display: 'flex', flexDirection: 'column', alignItems: 'center', transform: `translate(${hit.x.toFixed(1)}px, ${hit.y.toFixed(1)}px)` }}>
-          <div style={{ opacity: s }}><Logo size={70} delay={0} dark /></div>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 30, marginTop: 40, opacity: s, transform: `scale(${0.92 + 0.08 * s})` }}>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 120, color: BONE, letterSpacing: -4 }}>Los</span>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 250, color: color.yellow, letterSpacing: -12, lineHeight: 0.9, transform: `scale(${0.6 + 0.4 * ten})`, display: 'inline-block' }}>10</span>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 120, color: BONE, letterSpacing: -4 }}>mejores</span>
-          </div>
-          <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 40, color: DIM, marginTop: 20, opacity: ramp(frame, c.at('X04', 'episodio') - 6, c.at('X04', 'episodio') + 12) }}>
-            Los diez mejores libros de un género. Y la voz con la que escucharlos.
-          </div>
-          <div style={{ marginTop: 54, padding: '14px 56px', borderRadius: 14, background: RED, fontFamily: font.sans, fontWeight: 700, fontSize: 92, letterSpacing: 16, color: '#fff',
-            opacity: t * flicker(frame, 'terror', 0.7), transform: `scale(${1.25 - 0.25 * t})`, boxShadow: `0 0 ${80 * t}px rgba(193,18,31,0.55)` }}>TERROR</div>
-        </div>
-      </Night>
-      <Sfx name="logo_sting" at={f0} volume={0.6} />
-      <Sfx name="bass_drop" at={hoy + 6} volume={0.8} />
-    </AbsoluteFill>
-  );
-};
-
-// La regla de la serie y por qué escucharlo.
-// ——— La investigación (v5, Joan 15/10: «una animación más trabajada donde se vea toda la investigación», sin rótulo arriba) ———
-// Muro de las 28 historias candidatas: las diez elegidas, censuradas; doce con audiolibro en español (portada real de Audible);
-// seis sin audiolibro en español (tachadas). Barrido por 8 plataformas → ficha de SonorBooks (nota y opiniones) → contadores
-// → descarte → las diez vuelan a las barras de «de menos a más miedo».
+// ——— La investigación (v5 del español; polaco 19/10/2026) ———
+// Muro de las 28 historias candidatas: las diez elegidas, censuradas; trece con audiolibro en polaco (portada real de su ficha
+// en Audioteka o Storytel); cinco sin audiolibro en polaco (las del episodio español que no tienen audio aquí, con sello).
+// Barrido por las plataformas consultadas → ficha real de sonorbooks.pl de una candidata descartada («Lśnienie»: abrir la de un
+// libro de la lista lo destaparía antes de tiempo) → contadores → descarte → las diez vuelan a las barras.
 type Cand = { k: 'top'; p: number } | { k: 'real'; f: string } | { k: 'none'; t: string; a: string };
 const CANDS: Cand[] = [
-  { k: 'real', f: 'misery' }, { k: 'top', p: 4 }, { k: 'none', t: 'Cementerio de animales', a: 'Stephen King' }, { k: 'real', f: 'frankenstein' }, { k: 'top', p: 9 }, { k: 'real', f: 'cosas_fuego' }, { k: 'top', p: 1 },
-  { k: 'none', t: 'La semilla del diablo', a: 'Ira Levin' }, { k: 'real', f: 'riada' }, { k: 'top', p: 6 }, { k: 'real', f: 'principe' }, { k: 'real', f: 'carrie' }, { k: 'top', p: 2 }, { k: 'none', t: 'Soy leyenda', a: 'Richard Matheson' },
-  { k: 'top', p: 7 }, { k: 'real', f: 'cadaver' }, { k: 'none', t: 'La maldición de Hill House', a: 'Shirley Jackson' }, { k: 'top', p: 10 }, { k: 'real', f: 'vampiro' }, { k: 'real', f: 'doctor_sueno' }, { k: 'top', p: 3 },
-  { k: 'real', f: 'chica_al_lado' }, { k: 'none', t: 'A ciegas', a: 'Josh Malerman' }, { k: 'top', p: 5 }, { k: 'real', f: 'cavendish' }, { k: 'none', t: 'La casa infernal', a: 'Richard Matheson' }, { k: 'top', p: 8 }, { k: 'real', f: 'hombre_arena' },
+  { k: 'real', f: 'to' }, { k: 'top', p: 4 }, { k: 'none', t: 'Distancia de rescate', a: 'Samanta Schweblin' }, { k: 'real', f: 'zwierciadlo' }, { k: 'top', p: 9 }, { k: 'real', f: 'instytut' }, { k: 'top', p: 1 },
+  { k: 'none', t: 'Apocalipsis Z', a: 'Manel Loureiro' }, { k: 'real', f: 'demon' }, { k: 'top', p: 6 }, { k: 'real', f: 'lsnienie' }, { k: 'real', f: 'madonna' }, { k: 'top', p: 2 }, { k: 'none', t: 'Carcoma', a: 'Layla Martínez' },
+  { k: 'top', p: 7 }, { k: 'real', f: 'legenda' }, { k: 'real', f: 'wzgorze' }, { k: 'top', p: 10 }, { k: 'real', f: 'bafomet' }, { k: 'real', f: 'cmetarz' }, { k: 'top', p: 3 },
+  { k: 'real', f: 'sruba' }, { k: 'none', t: 'Nuestra parte de noche', a: 'Mariana Enriquez' }, { k: 'top', p: 5 }, { k: 'real', f: 'final_girls' }, { k: 'none', t: 'Egzorcysta', a: 'William Peter Blatty' }, { k: 'top', p: 8 }, { k: 'real', f: 'kultor' },
 ];
 const COLS = 7, CW = 140, CH = 182, GX = 24, GY = 18;
 const GL = (1920 - (COLS * CW + (COLS - 1) * GX)) / 2, GT = 128;
 const cardPos = (i: number) => ({ x: GL + (i % COLS) * (CW + GX), y: GT + Math.floor(i / COLS) * (CH + GY) });
-const PLATS = ['Audible', 'Storytel', 'Nextory', 'Podimo', 'BookBeat', 'Apple Books', 'Google Play', 'SonorBooks'];
+const PLATS = ['Audioteka', 'Storytel', 'Wolne Lektury', 'sonorbooks.pl'];
 // barras finales (de menos a más miedo)
 const BAR_L = (1920 - (10 * 100 + 9 * 26)) / 2, BAR_BASE = 770;
 const barX = (i: number) => BAR_L + i * 126;
@@ -241,19 +188,20 @@ export const Regla: React.FC = () => {
   const f5 = c.part('X05');
   const f7 = c.part('X07');
   const sbAt = c.at('X05', 'SonorBooks');
-  const notas = c.at('X05', 'notas');
-  const opin = c.at('X05', 'opiniones');
-  const miles = c.at('X05', 'miles');
+  const notas = c.at('X05', 'oceny');
+  const opin = c.at('X05', 'opinie');
+  const miles = c.at('X05', 'tysięcy');
   const xEnd = c.voEnd('X05');
-  const princ = CANDS.findIndex((x) => x.k === 'real' && x.f === 'principe');
+  const princ = CANDS.findIndex((x) => x.k === 'real' && x.f === 'lsnienie');
   const pp = cardPos(princ);
   // la ficha sale de su tarjeta y vuelve a ella
   const open = ramp(frame, sbAt - 8, sbAt + 14, easeInOut) * (1 - ramp(frame, miles - 4, miles + 16, easeInOut));
   const bw = lerp(CW, 1400, open), bh = lerp(CH, 840, open), bx = lerp(pp.x, 260, open), by = lerp(pp.y, 130, open);
+  // ficha real de sonorbooks.pl: nota (★ 4,7) y número de valoraciones en Audioteka (px CSS de la captura, 1440 de ancho)
   const view = viewAt(frame, [
     { at: sbAt - 8, cx: 720, cy: 415, z: 1 },
-    { at: notas - 8, cx: 800, cy: 300, z: 2.5, dur: 18 },
-    { at: opin - 6, cx: 760, cy: 330, z: 1.7, dur: 18 },
+    { at: notas - 8, cx: 790, cy: 318, z: 2.6, dur: 18 },
+    { at: opin - 6, cx: 830, cy: 322, z: 2.2, dur: 18 },
   ]);
   // barrido y descarte
   const scan = interpolate(frame, [8, f5 + 60], [-300, 2200], { ...clamp, easing: easeInOut });
@@ -263,14 +211,10 @@ export const Regla: React.FC = () => {
   const glowAt = xEnd + 10;
   const flyAt = f7 - 18;
   const camZ = 1 + 0.04 * ramp(frame, 0, flyAt) - 0.04 * ramp(frame, flyAt - 10, flyAt + 20);
-  const bubbles = [
-    { t: 'Es como ver una película con los ojos cerrados', x: 70, y: 620, at: opin - 2, rot: -3 },
-    { t: 'Cambia de voz para cada personaje', x: 1260, y: 230, at: opin + 10, rot: 2.5 },
-  ];
   const stats = [
-    { n: 28, t: 'historias analizadas', at: miles - 4 },
-    { n: 8, t: 'plataformas', at: miles + 4 },
-    { n: 3000, t: 'valoraciones y opiniones', at: miles + 12, plus: true },
+    { n: 28, t: 'historii', at: miles - 4 },
+    { n: 3, t: 'platformy + sonorbooks.pl', at: miles + 4 },
+    { n: 5000, t: 'ocen w Audiotece', at: miles + 12, plus: true },
   ];
   const barsOn = ramp(frame, flyAt + 10, flyAt + 30);
   return (
@@ -281,7 +225,7 @@ export const Regla: React.FC = () => {
           <div style={{ position: 'absolute', left: 0, right: 0, top: 62, display: 'flex', justifyContent: 'center', gap: 14, opacity: 1 - barsOn }}>
             {PLATS.map((pl, k) => {
               const q = sp(frame, 6 + k * 5, 13, 190);
-              const lit = Math.max(0, 1 - Math.abs(scan - (300 + k * 190)) / 260);
+              const lit = Math.max(0, 1 - Math.abs(scan - (960 + (k - 1.5) * 260)) / 260);
               return (
                 <span key={pl} style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 24, padding: '8px 18px', borderRadius: 999, whiteSpace: 'nowrap',
                   background: pl === 'SonorBooks' ? color.yellow : `rgba(255,255,255,${(0.07 + 0.2 * lit).toFixed(3)})`, color: pl === 'SonorBooks' ? color.ink : BONE,
@@ -324,8 +268,8 @@ export const Regla: React.FC = () => {
                   )}
                   {shine > 0 && <div style={{ position: 'absolute', inset: 0, background: `rgba(255,236,190,${(0.28 * shine).toFixed(3)})`, mixBlendMode: 'screen' }} />}
                   {stamp > 0 && (
-                    <div style={{ position: 'absolute', left: -10, right: -10, top: sz * 0.38, padding: '6px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 15, letterSpacing: 1,
-                      transform: `rotate(-12deg) scale(${(1.6 - 0.6 * stamp).toFixed(3)})`, opacity: Math.min(1, stamp * 1.5) }}>SIN AUDIO EN ESPAÑOL</div>
+                    <div style={{ position: 'absolute', left: -10, right: -10, top: sz * 0.33, padding: '5px 0', background: RED, color: '#fff', textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 14, lineHeight: 1.15, letterSpacing: 0.6,
+                      transform: `rotate(-12deg) scale(${(1.6 - 0.6 * stamp).toFixed(3)})`, opacity: Math.min(1, stamp * 1.5) }}>BRAK AUDIOBOOKA<br />PO POLSKU</div>
                   )}
                 </div>
                 {/* lectura de la nota: barra que se llena al pasar el barrido (sin cifras inventadas) */}
@@ -343,22 +287,9 @@ export const Regla: React.FC = () => {
           {/* la ficha de SonorBooks sale de su tarjeta */}
           {open > 0.01 && (
             <div style={{ position: 'absolute', left: bx, top: by, zIndex: 5 }}>
-              <Browser page={PAGES.principe} w={bw} h={bh} view={view} overlay={<Ring x={712} y={284} w={178} h={26} at={notas - 2} out={miles} />} />
+              <Browser page={PAGES.lsnienie} w={bw} h={bh} view={view} overlay={<><Ring x={714} y={306} w={46} h={26} at={notas - 2} out={opin - 4} r={8} /><Ring x={760} y={306} w={150} h={26} at={opin - 2} out={miles} r={8} /></>} />
             </div>
           )}
-          {open > 0.5 && bubbles.map((bb, k) => {
-            const q = sp(frame, bb.at, 12, 170) * Math.min(1, open * 2 - 1);
-            if (q <= 0.001) return null;
-            return (
-              <div key={k} style={{ position: 'absolute', left: bb.x, top: bb.y, maxWidth: 600, padding: '22px 30px', borderRadius: '26px 26px 26px 6px', background: '#fff', color: color.ink, boxShadow: '0 30px 80px rgba(0,0,0,0.55)', zIndex: 6,
-                opacity: Math.min(1, q * 1.5), transform: `translateY(${((1 - q) * 40 + Math.sin(frame / 30 + k) * 5).toFixed(1)}px) scale(${(0.8 + 0.2 * q).toFixed(3)}) rotate(${(bb.rot * q).toFixed(2)}deg)` }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, fontFamily: font.sans, fontWeight: 700, fontSize: 20, letterSpacing: 3, textTransform: 'uppercase', color: '#8a8a8a' }}>
-                  <span style={{ fontFamily: font.serif, color: color.yellow, fontSize: 44, lineHeight: 0.6, letterSpacing: 0 }}>“</span> Lo que dicen los oyentes
-                </div>
-                <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 38, lineHeight: 1.2, marginTop: 10 }}>{bb.t}</div>
-              </div>
-            );
-          })}
           {/* contadores */}
           <div style={{ position: 'absolute', left: 0, right: 0, top: 955, display: 'flex', justifyContent: 'center', gap: 26, opacity: 1 - barsOn, zIndex: 4 }}>
             {stats.map((st) => {
@@ -366,7 +297,7 @@ export const Regla: React.FC = () => {
               return (
                 <div key={st.t} style={{ display: 'flex', alignItems: 'baseline', gap: 12, padding: '14px 26px', borderRadius: 16, background: 'rgba(10,11,13,0.9)', border: '1px solid rgba(255,255,255,0.14)',
                   opacity: Math.min(1, q * 1.4), transform: `translateY(${((1 - q) * 30).toFixed(1)}px)` }}>
-                  <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: color.yellow }}>{st.plus ? 'Más de ' : ''}{countTo(frame, st.at, 34, st.n, 0)}</span>
+                  <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 46, color: color.yellow }}>{st.plus ? 'Ponad ' : ''}{countTo(frame, st.at, 34, st.n, 0)}</span>
                   <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 28, color: BONE }}>{st.t}</span>
                 </div>
               );
@@ -391,7 +322,7 @@ export const Regla: React.FC = () => {
                   </React.Fragment>
                 );
               })}
-              <div style={{ position: 'absolute', left: 0, right: 0, top: 880 }}><MaskTitle text="De menos a más miedo" at={f7} size={72} color={BONE} align="center" /></div>
+              <div style={{ position: 'absolute', left: 0, right: 0, top: 880 }}><MaskTitle text="Od najmniej strasznej do najstraszniejszej" at={f7} size={62} color={BONE} align="center" stagger={2} /></div>
             </AbsoluteFill>
           )}
         </AbsoluteFill>
@@ -401,7 +332,7 @@ export const Regla: React.FC = () => {
       <Sfx name="whoosh_soft" at={sbAt - 8} volume={0.6} />
       <Sfx name="zoom_in" at={notas - 8} volume={0.5} />
       <Sfx name="snap_in" at={notas} volume={0.6} />
-      {bubbles.map((bb, k) => <Sfx key={k} name="ui_pop" at={bb.at + 1} volume={0.6} />)}
+      <Sfx name="snap_in" at={opin} volume={0.5} />
       <Sfx name="whoosh_soft" at={miles - 4} volume={0.5} />
       <Sfx name="counter" at={miles - 2} volume={0.4} />
       <Sfx name="stamp" at={stampAt + 2} volume={0.5} />

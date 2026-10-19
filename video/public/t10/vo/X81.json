@@ -1,59 +1,39 @@
 {
  "id": "X81",
- "hash": "3061a0d4c309",
- "text": "Número tres: «El misterio de Salem's Lot», de Stephen King.",
- "duration": 5.2,
+ "hash": "4fab8321073b",
+ "text": "Numer trzy: „Miasteczko Salem” Stephena Kinga.",
+ "duration": 3.36,
  "words": [
   {
-   "w": "Número",
+   "w": "Numer",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.24
   },
   {
-   "w": "tres:",
-   "s": 0.48,
-   "e": 1.36
+   "w": "trzy:",
+   "s": 0.4,
+   "e": 1.04
   },
   {
-   "w": "«El",
-   "s": 1.4,
+   "w": "„Miasteczko",
+   "s": 1.08,
    "e": 1.52
   },
   {
-   "w": "misterio",
-   "s": 1.6,
+   "w": "Salem”",
+   "s": 1.68,
    "e": 2.08
   },
   {
-   "w": "de",
-   "s": 2.16,
-   "e": 2.24
+   "w": "Stephena",
+   "s": 2.24,
+   "e": 2.64
   },
   {
-   "w": "Salem's",
-   "s": 2.32,
-   "e": 2.88
-  },
-  {
-   "w": "Lot»,",
-   "s": 3.04,
-   "e": 3.52
-  },
-  {
-   "w": "de",
-   "s": 3.56,
-   "e": 3.6
-  },
-  {
-   "w": "Stephen",
-   "s": 3.76,
-   "e": 4.16
-  },
-  {
-   "w": "King.",
-   "s": 4.24,
-   "e": 5.2
+   "w": "Kinga.",
+   "s": 2.72,
+   "e": 3.36
   }
  ],
- "speechEnd": 4.667
+ "speechEnd": 3.223
 }

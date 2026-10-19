@@ -1,224 +1,179 @@
 {
  "id": "X32",
- "hash": "fefaf5449d31",
- "text": "Los padres de Louise acaban de morir y ella vuelve a la casa familiar para venderla junto a su hermano. El problema no son los recuerdos. Son los títeres. Y las muñecas. Y un títere en concreto que parece tener sus propios planes.",
- "duration": 15.92,
+ "hash": "590ab8ec9b81",
+ "text": "Rodzice Louise właśnie zmarli, a ona wraca do rodzinnego domu, żeby sprzedać go razem z bratem. Problemem nie są wspomnienia. Problemem są kukiełki. I lalki. I jedna konkretna kukiełka, która chyba ma własne plany.",
+ "duration": 14.32,
  "words": [
   {
-   "w": "Los",
+   "w": "Rodzice",
    "s": 0.0,
-   "e": 0.16
-  },
-  {
-   "w": "padres",
-   "s": 0.24,
-   "e": 0.56
-  },
-  {
-   "w": "de",
-   "s": 0.6,
-   "e": 0.64
+   "e": 0.48
   },
   {
    "w": "Louise",
-   "s": 0.72,
-   "e": 1.04
+   "s": 0.56,
+   "e": 0.88
   },
   {
-   "w": "acaban",
-   "s": 1.12,
-   "e": 1.44
+   "w": "właśnie",
+   "s": 0.96,
+   "e": 1.2
   },
   {
-   "w": "de",
-   "s": 1.52,
-   "e": 1.6
-  },
-  {
-   "w": "morir",
-   "s": 1.68,
-   "e": 2.24
-  },
-  {
-   "w": "y",
-   "s": 2.32,
-   "e": 2.36
-  },
-  {
-   "w": "ella",
-   "s": 2.4,
-   "e": 2.64
-  },
-  {
-   "w": "vuelve",
-   "s": 2.68,
-   "e": 2.96
+   "w": "zmarli,",
+   "s": 1.28,
+   "e": 2.0
   },
   {
    "w": "a",
-   "s": 2.987,
-   "e": 3.013
+   "s": 2.08,
+   "e": 2.16
   },
   {
-   "w": "la",
-   "s": 3.04,
-   "e": 3.12
+   "w": "ona",
+   "s": 2.28,
+   "e": 2.4
   },
   {
-   "w": "casa",
-   "s": 3.16,
+   "w": "wraca",
+   "s": 2.48,
+   "e": 2.72
+  },
+  {
+   "w": "do",
+   "s": 2.76,
+   "e": 2.8
+  },
+  {
+   "w": "rodzinnego",
+   "s": 2.88,
    "e": 3.36
   },
   {
-   "w": "familiar",
+   "w": "domu,",
    "s": 3.44,
+   "e": 3.72
+  },
+  {
+   "w": "żeby",
+   "s": 3.76,
    "e": 3.92
   },
   {
-   "w": "para",
-   "s": 4.0,
-   "e": 4.16
+   "w": "sprzedać",
+   "s": 4.04,
+   "e": 4.4
   },
   {
-   "w": "venderla",
-   "s": 4.293,
-   "e": 4.64
+   "w": "go",
+   "s": 4.48,
+   "e": 4.56
   },
   {
-   "w": "junto",
-   "s": 4.72,
-   "e": 4.96
+   "w": "razem",
+   "s": 4.64,
+   "e": 4.8
   },
   {
-   "w": "a",
-   "s": 5.04,
-   "e": 5.08
+   "w": "z",
+   "s": 4.88,
+   "e": 4.92
   },
   {
-   "w": "su",
-   "s": 5.12,
-   "e": 5.2
+   "w": "bratem.",
+   "s": 4.96,
+   "e": 5.92
   },
   {
-   "w": "hermano.",
-   "s": 5.28,
-   "e": 6.28
-  },
-  {
-   "w": "El",
-   "s": 6.32,
+   "w": "Problemem",
+   "s": 6.08,
    "e": 6.4
   },
   {
-   "w": "problema",
+   "w": "nie",
    "s": 6.48,
-   "e": 7.04
+   "e": 6.56
   },
   {
-   "w": "no",
-   "s": 7.12,
-   "e": 7.2
+   "w": "są",
+   "s": 6.6,
+   "e": 6.72
   },
   {
-   "w": "son",
-   "s": 7.28,
-   "e": 7.44
+   "w": "wspomnienia.",
+   "s": 6.76,
+   "e": 7.68
   },
   {
-   "w": "los",
-   "s": 7.52,
-   "e": 7.6
+   "w": "Problemem",
+   "s": 7.84,
+   "e": 8.16
   },
   {
-   "w": "recuerdos.",
-   "s": 7.68,
-   "e": 8.84
+   "w": "są",
+   "s": 8.2,
+   "e": 8.32
   },
   {
-   "w": "Son",
-   "s": 8.88,
-   "e": 9.12
-  },
-  {
-   "w": "los",
-   "s": 9.24,
+   "w": "kukiełki.",
+   "s": 8.4,
    "e": 9.36
   },
   {
-   "w": "títeres.",
-   "s": 9.44,
-   "e": 10.28
+   "w": "I",
+   "s": 9.4,
+   "e": 9.44
   },
   {
-   "w": "Y",
-   "s": 10.32,
+   "w": "lalki.",
+   "s": 9.52,
    "e": 10.4
   },
   {
-   "w": "las",
-   "s": 10.52,
-   "e": 10.64
+   "w": "I",
+   "s": 10.48,
+   "e": 10.56
   },
   {
-   "w": "muñecas.",
-   "s": 10.72,
-   "e": 11.64
+   "w": "jedna",
+   "s": 10.64,
+   "e": 10.96
   },
   {
-   "w": "Y",
-   "s": 11.68,
-   "e": 11.76
+   "w": "konkretna",
+   "s": 11.04,
+   "e": 11.6
   },
   {
-   "w": "un",
-   "s": 11.88,
-   "e": 12.0
+   "w": "kukiełka,",
+   "s": 11.64,
+   "e": 12.16
   },
   {
-   "w": "títere",
-   "s": 12.08,
-   "e": 12.32
+   "w": "która",
+   "s": 12.2,
+   "e": 12.56
   },
   {
-   "w": "en",
-   "s": 12.4,
-   "e": 12.48
+   "w": "chyba",
+   "s": 12.68,
+   "e": 12.88
   },
   {
-   "w": "concreto",
-   "s": 12.6,
-   "e": 13.12
+   "w": "ma",
+   "s": 12.96,
+   "e": 13.04
   },
   {
-   "w": "que",
-   "s": 13.2,
-   "e": 13.28
+   "w": "własne",
+   "s": 13.12,
+   "e": 13.52
   },
   {
-   "w": "parece",
-   "s": 13.36,
-   "e": 13.68
-  },
-  {
-   "w": "tener",
-   "s": 13.76,
-   "e": 14.08
-  },
-  {
-   "w": "sus",
-   "s": 14.2,
+   "w": "plany.",
+   "s": 13.6,
    "e": 14.32
-  },
-  {
-   "w": "propios",
-   "s": 14.4,
-   "e": 14.8
-  },
-  {
-   "w": "planes.",
-   "s": 14.88,
-   "e": 15.92
   }
  ],
- "speechEnd": 15.377
+ "speechEnd": 13.939
 }

@@ -1,49 +1,49 @@
 {
  "id": "X21",
- "hash": "074f22d2c220",
- "text": "Número nueve: los cuentos de Edgar Allan Poe.",
- "duration": 3.76,
+ "hash": "8849b566ba3b",
+ "text": "Numer dziewięć: Edgar Allan Poe i jego opowiadania.",
+ "duration": 3.52,
  "words": [
   {
-   "w": "Número",
+   "w": "Numer",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.24
   },
   {
-   "w": "nueve:",
-   "s": 0.4,
-   "e": 1.2
-  },
-  {
-   "w": "los",
-   "s": 1.28,
-   "e": 1.44
-  },
-  {
-   "w": "cuentos",
-   "s": 1.52,
-   "e": 1.92
-  },
-  {
-   "w": "de",
-   "s": 2.0,
-   "e": 2.08
+   "w": "dziewięć:",
+   "s": 0.32,
+   "e": 1.12
   },
   {
    "w": "Edgar",
-   "s": 2.16,
-   "e": 2.4
+   "s": 1.2,
+   "e": 1.44
   },
   {
    "w": "Allan",
-   "s": 2.48,
-   "e": 2.72
+   "s": 1.52,
+   "e": 1.76
   },
   {
-   "w": "Poe.",
-   "s": 2.8,
-   "e": 3.76
+   "w": "Poe",
+   "s": 1.84,
+   "e": 2.08
+  },
+  {
+   "w": "i",
+   "s": 2.24,
+   "e": 2.28
+  },
+  {
+   "w": "jego",
+   "s": 2.32,
+   "e": 2.56
+  },
+  {
+   "w": "opowiadania.",
+   "s": 2.64,
+   "e": 3.52
   }
  ],
- "speechEnd": 3.192
+ "speechEnd": 3.359
 }

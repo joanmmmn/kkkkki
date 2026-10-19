@@ -5,16 +5,17 @@ import { color, font } from '../../brand/tokens';
 import { sp } from './fx';
 
 // ————————————————————————————————————————————————————————————————
-// La web de SonorBooks dentro del vídeo (v4, petición de Joan del 15/10): capturas reales de sonorbooks.com
-// (Playwright, 1440 px de ancho a 2x) en una ventana de navegador, con cámara que se acerca a lo que dice la voz.
-// Las capturas: public/t10/web/sb_principe.jpg y sb_carcoma.jpg (fichas, 1440×830) y sb_home.jpg (portada, 1440×900).
+// La web de SonorBooks dentro del vídeo: capturas reales y públicas de sonorbooks.pl (Playwright, pl-PL, sin aviso de cookies,
+// 1440 px de ancho a 2x, 19/10/2026) en una ventana de navegador, con cámara que se acerca a lo que dice la voz.
+// sb_lsnienie.jpg (ficha de una candidata descartada, 1440×830), sb_horror.jpg (categoría Horror, 1440×960) y
+// sb_rosemary.jpg (ficha de «Dziecko Rosemary» con la opción de compra en Audioteka elegida en su lista de opciones, 1440×830).
 // ————————————————————————————————————————————————————————————————
 
 export type Page = { src: string; url: string; h: number };
 export const PAGES = {
-  principe: { src: 't10/web/sb_principe.jpg', url: 'sonorbooks.com/es/audiolibro/el-principe-de-la-niebla', h: 830 },
-  carcoma: { src: 't10/web/sb_carcoma.jpg', url: 'sonorbooks.com/es/audiolibro/carcoma', h: 830 },
-  home: { src: 't10/web/sb_home.jpg', url: 'sonorbooks.com/es', h: 900 },
+  lsnienie: { src: 't10/web/sb_lsnienie.jpg', url: 'sonorbooks.pl/audiobook/lsnienie/', h: 830 },
+  rosemary: { src: 't10/web/sb_rosemary.jpg', url: 'sonorbooks.pl/audiobook/dziecko-rosemary/', h: 830 },
+  horror: { src: 't10/web/sb_horror.jpg', url: 'sonorbooks.pl/kategoria/horror/', h: 960 },
 } satisfies Record<string, Page>;
 
 // Vista: el punto (cx, cy) de la página (px CSS de la captura) queda en el centro, con zoom z (1 = la página entera a lo ancho).

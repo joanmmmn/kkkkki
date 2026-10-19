@@ -1,59 +1,44 @@
 {
  "id": "X11",
- "hash": "d0ec371fb211",
- "text": "Número diez: «La llamada de Cthulhu», de H. P. Lovecraft.",
- "duration": 4.96,
+ "hash": "fb54242093df",
+ "text": "Numer dziesięć: „Zew Cthulhu” H.P. Lovecrafta.",
+ "duration": 3.44,
  "words": [
   {
-   "w": "Número",
+   "w": "Numer",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.24
   },
   {
-   "w": "diez:",
-   "s": 0.4,
-   "e": 1.28
+   "w": "dziesięć:",
+   "s": 0.32,
+   "e": 1.2
   },
   {
-   "w": "«La",
-   "s": 1.32,
-   "e": 1.44
+   "w": "Zew",
+   "s": 1.28,
+   "e": 1.52
   },
   {
-   "w": "llamada",
-   "s": 1.52,
-   "e": 1.92
-  },
-  {
-   "w": "de",
-   "s": 1.96,
+   "w": "Ktulu",
+   "s": 1.6,
    "e": 2.0
   },
   {
-   "w": "Cthulhu»,",
-   "s": 2.08,
-   "e": 2.88
+   "w": "Ha",
+   "s": 2.16,
+   "e": 2.32
   },
   {
-   "w": "de",
-   "s": 2.96,
-   "e": 3.04
+   "w": "Pe",
+   "s": 2.4,
+   "e": 2.48
   },
   {
-   "w": "H.",
-   "s": 3.08,
-   "e": 3.36
-  },
-  {
-   "w": "P.",
-   "s": 3.44,
-   "e": 3.6
-  },
-  {
-   "w": "Lovecraft.",
-   "s": 3.68,
-   "e": 4.96
+   "w": "Lawkrafta.",
+   "s": 2.52,
+   "e": 3.44
   }
  ],
- "speechEnd": 4.396
+ "speechEnd": 3.275
 }
