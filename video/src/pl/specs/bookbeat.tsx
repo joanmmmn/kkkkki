@@ -33,7 +33,7 @@ export const piece: PLPiece = {
         ] },
       { id: 'A05', kind: 'rec', kicker: 'Superprodukcja', title: 'Perełka katalogu', rec: { clip: 'wiedzmin', start: 5.3 },
         cuts: [{ at: 'Rozdroze', rec: { clip: 'rozdroze', start: 0.3 } }],
-        marks: [{ at: '70', until: 'muzyka', x: 645, y: 470, w: 616, h: 72 }, { at: 'muzyka', until: 'Rozdroze', x: 645, y: 660, w: 616, h: 64 }],
+        marks: [{ at: '70', until: 'muzyka', x: 645, y: 470, w: 616, h: 98 }, { at: 'muzyka', until: 'Rozdroze', x: 645, y: 578, w: 616, h: 72 }],
         zooms: [{ at: 'Wiedzmin', zoom: 1.45, x: 955, y: 480 }],
         tags: [
           { at: 'Wiedzmin', label: '„Wiedźmin. Ostatnie życzenie”', icon: 'headphones' }, { at: '70', label: 'Ponad 70 aktorów', icon: 'mic' },
