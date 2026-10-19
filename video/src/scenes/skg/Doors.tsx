@@ -233,7 +233,7 @@ const VShining: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
         <Snow n={220} wind={1.4} speed={1 + snow} opacity={snow} seed="shining" />
       </Cam>
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 60% 50%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%)', opacity: 0.5 + 0.5 * dark }} />
-      <StoryChips items={[{ label: 'Cała zima', at: fInv }, { label: 'Hotel odcięty przez śnieg', at: fHotel }, { label: 'Żona i syn', at: fMujer }, { label: 'Hotel ma inne plany', at: fOtros, red: true }]} />
+      <StoryChips items={[{ label: 'Cała zima', at: fInv }, { label: 'Hotel odcięty od świata przez śnieg', at: fHotel }, { label: 'Żona i syn', at: fMujer }, { label: 'Hotel ma inne plany', at: fOtros, red: true }]} />
       <Sfx name="sk_wind" at={c.part('G15') - 4} volume={1} dur={c.voEnd('G15') - c.part('G15') + 30} fade={30} />
       <Sfx name="sk_snow" at={fMujer} volume={0.6} />
       <Sfx name="bass_drop" at={fOtros + 2} volume={0.6} />
@@ -248,7 +248,7 @@ const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const fEstr = c.at('G18', 'wypadek');
   const fTorm = c.at('G18', 'śnieżycy');
   const fResc = c.at('G18', 'Ratuje');
-  const fNum = c.at('G18', 'numer');
+  const fNum = c.at('G18', 'największa');
   const fProb = c.at('G18', 'która');
   const fMarchar = c.at('G18', 'wypuścić');
   const fDos = fMarchar + 10;
@@ -285,7 +285,7 @@ const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
             <div style={{ position: 'absolute', left: -160, top: -160, width: 360, height: 360, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,200,90,0.55), rgba(255,200,90,0) 65%)' }} />
             <Person h={180} c="#0B0D12" />
             <div style={{ position: 'absolute', left: 6, top: -70, opacity: rampOut(frame, fNum - 4, fNum + 10), transform: `scale(${sp(frame, fNum - 2, 10, 220)})` }}>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', background: KR, padding: '6px 16px', borderRadius: 999, whiteSpace: 'nowrap' }}>♥ Fanka nr 1</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#fff', background: KR, padding: '6px 16px', borderRadius: 999, whiteSpace: 'nowrap' }}>♥ Największa fanka</div>
             </div>
           </div>
           <Snow n={260} wind={4.5} speed={1.8} opacity={0.95} seed="misery" />
@@ -320,7 +320,7 @@ const VMisery: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
           <Snow n={120} wind={1.2} speed={0.8} opacity={0.8} seed="misery2" />
         </AbsoluteFill>
       )}
-      <StoryChips items={[{ label: 'Wypadek w śnieżycy', at: fEstr }, { label: 'Fanka numer jeden', at: fNum }, { label: 'Nie zamierza go wypuścić', at: fMarchar, red: true }]} />
+      <StoryChips items={[{ label: 'Wypadek w śnieżycy', at: fEstr }, { label: 'Jego największa fanka', at: fNum }, { label: 'Nie zamierza go wypuścić', at: fMarchar, red: true }]} />
       <Sfx name="sk_wind" at={c.part('G18') - 4} volume={1} dur={fProb - c.part('G18') + 20} fade={20} />
       <Sfx name="impact" at={fEstr + 12} volume={0.7} />
       <Sfx name="sk_snow" at={fResc} volume={0.8} />
@@ -446,7 +446,7 @@ const V2263: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
             {/* pared del restaurante con azulejos y un mostrador */}
             <AbsoluteFill style={{ background: 'linear-gradient(180deg, #F3E7D3 0%, #E7D6BC 62%, #8C1C13 62%, #8C1C13 66%, #2A1F17 66%)' }} />
             <AbsoluteFill style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.05) 2px, transparent 2px), linear-gradient(90deg, rgba(0,0,0,0.05) 2px, transparent 2px)', backgroundSize: '60px 60px', height: 670 }} />
-            <div style={{ position: 'absolute', left: 1400, top: 200, fontFamily: font.serif, fontStyle: 'italic', fontSize: 80, color: '#8C1C13', border: '6px solid #8C1C13', padding: '4px 34px', borderRadius: 20 }}>Diner</div>
+            <div style={{ position: 'absolute', left: 1400, top: 200, fontFamily: font.serif, fontStyle: 'italic', fontSize: 80, color: '#8C1C13', border: '6px solid #8C1C13', padding: '4px 34px', borderRadius: 20 }}>Bar</div>
             {/* puerta de la despensa */}
             <div style={{ position: 'absolute', left: 820, top: 230, width: 280, height: 480, perspective: 1400 }}>
               <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, rgba(255,240,200,${open}) 0%, rgba(255,200,120,${0.6 * open}) 40%, #120D09 80%)` }} />
@@ -528,7 +528,7 @@ const VMercedes: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
             </div>
             <div style={{ position: 'absolute', inset: 0, background: '#E9E1CF', borderRadius: 10, boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }} />
             <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 240, transformOrigin: 'top center', transform: `rotateX(${180 * openL}deg)`, clipPath: 'polygon(0 0, 100% 0, 50% 100%)', background: '#D9CFB8' }} />
-            <div style={{ position: 'absolute', left: 230, top: 260, fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#4A4030', opacity: 1 - openL }}>Det. Bill Hodges (emeryt)</div>
+            <div style={{ position: 'absolute', left: 0, right: 0, top: 260, textAlign: 'center', fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: '#4A4030', opacity: 1 - openL }}>Bill Hodges, emerytowany detektyw</div>
           </div>
         </Cam>
       </AbsoluteFill>

@@ -5,7 +5,7 @@ import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeom
 import { AbsoluteFill, interpolate, spring, staticFile, useCurrentFrame } from 'remotion';
 import { Sfx, ChangeTicks } from '../../../components/Sfx';
 import { clamp, easeInOut, easeOut } from '../../../lib/anim';
-import { color, font, Grain, KR, MiniIcon } from '../kit';
+import { color, font, godzinPl, Grain, KR, MiniIcon } from '../kit';
 import { sceneClock } from '../timeline';
 import { Book, ShelfBook, woodTex } from './books3d';
 import { CLOTHS, Rig } from './Library';
@@ -273,7 +273,7 @@ export const Hours3D: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '14px 30px 14px 20px', background: 'rgba(16,17,20,0.66)', backdropFilter: 'blur(12px)', borderRadius: 999,
             border: '1px solid rgba(255,255,255,0.16)', boxShadow: '0 20px 50px rgba(0,0,0,0.45)' }}>
             <span style={{ width: 44, height: 44, borderRadius: '50%', background: color.yellow, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><MiniIcon kind="head" size={28} /></span>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: '#fff' }}>Audiobooki Kinga po polsku <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 500 }}>· dane z Audioteki</span></span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: '#fff' }}>Audiobooki Kinga po polsku <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 500 }}>· dane z Audioteki, 19.10.2026</span></span>
           </div>
         </div>
       )}
@@ -282,7 +282,7 @@ export const Hours3D: React.FC = () => {
         <div style={{ position: 'absolute', left: 150, top: 96, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', opacity: counterIn, transform: `translateY(${(1 - counterIn) * 20}px)` }}>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 22 }}>
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 200, letterSpacing: -9, lineHeight: 0.9, color: '#fff', fontVariantNumeric: 'tabular-nums', textShadow: '0 12px 50px rgba(0,0,0,0.6)' }}>{Math.round(count)}{count >= 1399.5 ? '+' : ''}</span>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: color.yellow, textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>godzin</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 76, color: color.yellow, textShadow: '0 8px 30px rgba(0,0,0,0.6)' }}>{godzinPl(Math.round(count))}</span>
           </div>
           <div style={{ marginTop: 12, marginLeft: 8, fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: 'rgba(255,255,255,0.85)', opacity: ramp01(frame, f.set, f.set + 14) }}>Stephena Kinga w audiobookach po polsku</div>
         </div>

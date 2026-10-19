@@ -19,6 +19,14 @@ export const PAPER = '#F6F1E7';
 
 export const SERIES = 'Od czego i jak zacząć';
 
+// Plural polaco de «godzina» para los contadores: 1 godzina; 2–4, 22–24… godziny (salvo 12–14); el resto, godzin.
+export const godzinPl = (n: number) => {
+  const a = Math.abs(Math.floor(n));
+  if (a === 1) return 'godzina';
+  const d = a % 10, t = a % 100;
+  return d >= 2 && d <= 4 && (t < 12 || t > 14) ? 'godziny' : 'godzin';
+};
+
 // Fondo claro del episodio: el cálido de SonorBooks con un halo rojo muy tenue abajo a la izquierda y grano fino.
 export const SkStage: React.FC<{ children?: React.ReactNode; still?: boolean; redGlow?: number }> = ({ children, still = false, redGlow = 1 }) => {
   const frame = useCurrentFrame();

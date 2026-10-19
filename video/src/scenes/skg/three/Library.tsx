@@ -298,7 +298,7 @@ export const Hook3D: React.FC = () => {
   const stats = [
     { o: s1, big: `${count(fNov, 60)}+`, small: 'powieści' },
     { o: s2, big: `${count(fRel, 200)}+`, small: 'opowiadań' },
-    { o: s3, big: `${count(fSig, 50)}`, small: 'lat pisania', sub: `1974 → ${year}` },
+    { o: s3, big: `${count(fSig, 50)}+`, small: 'lat pisania', sub: `1974 → ${year}` },
   ];
   return (
     <AbsoluteFill style={{ background: '#0B0C0E' }}>

@@ -1,120 +1,130 @@
 {
  "id": "G15",
- "hash": "06d5297024be",
- "text": "Pisarz zgadza się przez całą zimę pilnować hotelu odciętego przez śnieg, razem z żoną i pięcioletnim synem. Hotel ma jednak inne plany.",
- "duration": 8.709,
+ "hash": "ca3b3a69c472",
+ "text": "Pisarz zgadza się przez całą zimę pilnować hotelu odciętego od świata przez śnieg, razem z żoną i pięcioletnim synem. Hotel ma jednak inne plany.",
+ "duration": 9.496,
  "words": [
   {
    "w": "Pisarz",
    "s": 0.0,
-   "e": 0.48
+   "e": 0.56
   },
   {
    "w": "zgadza",
-   "s": 0.56,
-   "e": 0.88
+   "s": 0.64,
+   "e": 0.96
   },
   {
    "w": "się",
-   "s": 0.92,
-   "e": 1.04
+   "s": 1.0,
+   "e": 1.12
   },
   {
    "w": "przez",
-   "s": 1.093,
-   "e": 1.28
+   "s": 1.16,
+   "e": 1.44
   },
   {
    "w": "całą",
-   "s": 1.36,
-   "e": 1.6
+   "s": 1.52,
+   "e": 1.76
   },
   {
    "w": "zimę",
-   "s": 1.68,
-   "e": 1.92
+   "s": 1.84,
+   "e": 2.08
   },
   {
    "w": "pilnować",
-   "s": 2.0,
-   "e": 2.4
+   "s": 2.12,
+   "e": 2.56
   },
   {
    "w": "hotelu",
-   "s": 2.48,
-   "e": 2.88
+   "s": 2.72,
+   "e": 2.96
   },
   {
    "w": "odciętego",
-   "s": 2.96,
-   "e": 3.44
+   "s": 3.04,
+   "e": 3.52
+  },
+  {
+   "w": "od",
+   "s": 3.6,
+   "e": 3.68
+  },
+  {
+   "w": "świata",
+   "s": 3.76,
+   "e": 4.0
   },
   {
    "w": "przez",
-   "s": 3.52,
-   "e": 3.76
+   "s": 4.04,
+   "e": 4.24
   },
   {
    "w": "śnieg,",
-   "s": 3.84,
-   "e": 4.36
+   "s": 4.32,
+   "e": 4.96
   },
   {
    "w": "razem",
-   "s": 4.4,
-   "e": 4.64
-  },
-  {
-   "w": "z",
-   "s": 4.68,
-   "e": 4.72
-  },
-  {
-   "w": "żoną",
-   "s": 4.8,
+   "s": 5.04,
    "e": 5.2
   },
   {
-   "w": "i",
+   "w": "z",
    "s": 5.28,
-   "e": 5.36
+   "e": 5.32
+  },
+  {
+   "w": "żoną",
+   "s": 5.36,
+   "e": 5.76
+  },
+  {
+   "w": "i",
+   "s": 5.8,
+   "e": 5.84
   },
   {
    "w": "pięcioletnim",
-   "s": 5.44,
-   "e": 6.0
+   "s": 6.0,
+   "e": 6.56
   },
   {
    "w": "synem.",
-   "s": 6.12,
-   "e": 6.84
+   "s": 6.64,
+   "e": 7.52
   },
   {
    "w": "Hotel",
-   "s": 6.88,
-   "e": 7.2
+   "s": 7.72,
+   "e": 7.92
   },
   {
    "w": "ma",
-   "s": 7.24,
-   "e": 7.28
-  },
-  {
-   "w": "jednak",
-   "s": 7.36,
-   "e": 7.76
-  },
-  {
-   "w": "inne",
-   "s": 7.84,
+   "s": 8.0,
    "e": 8.08
   },
   {
+   "w": "jednak",
+   "s": 8.12,
+   "e": 8.56
+  },
+  {
+   "w": "inne",
+   "s": 8.72,
+   "e": 8.88
+  },
+  {
    "w": "plany.",
-   "s": 8.16,
-   "e": 8.709
+   "s": 8.96,
+   "e": 9.496
   }
  ],
- "trimmed": "06d5297024be",
- "speechEnd": 8.549
+ "trimmed": "ca3b3a69c472",
+ "speechEnd": 9.336
 }

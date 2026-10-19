@@ -1,8 +1,8 @@
 {
  "id": "G24",
- "hash": "7fb058be08b4",
- "text": "Emerytowany policjant dostaje list od mordercy, którego nigdy nie złapano. Powieść zdobyła Nagrodę Edgara dla najlepszej powieści i otwiera trylogię o Billu Hodgesie. Całą trylogię czyta po polsku Jan Peszek, a pierwszy tom trwa ponad piętnaście godzin.",
- "duration": 14.65,
+ "hash": "7e9246233155",
+ "text": "Emerytowany policjant dostaje list od mordercy, którego nigdy nie złapano. Książka zdobyła Nagrodę Edgara za najlepszą powieść i otwiera trylogię o Billu Hodgesie. Całą trylogię czyta po polsku Jan Peszek, a pierwszy tom trwa ponad piętnaście godzin.",
+ "duration": 14.623,
  "words": [
   {
    "w": "Emerytowany",
@@ -12,62 +12,62 @@
   {
    "w": "policjant",
    "s": 0.64,
-   "e": 1.28
+   "e": 1.2
   },
   {
    "w": "dostaje",
-   "s": 1.32,
+   "s": 1.28,
    "e": 1.68
   },
   {
    "w": "list",
-   "s": 1.8,
-   "e": 1.92
+   "s": 1.76,
+   "e": 2.0
   },
   {
    "w": "od",
-   "s": 2.0,
-   "e": 2.08
+   "s": 2.08,
+   "e": 2.16
   },
   {
    "w": "mordercy,",
-   "s": 2.12,
-   "e": 2.693
+   "s": 2.2,
+   "e": 2.8
   },
   {
    "w": "którego",
-   "s": 2.747,
-   "e": 3.12
+   "s": 2.88,
+   "e": 3.28
   },
   {
    "w": "nigdy",
-   "s": 3.16,
-   "e": 3.44
+   "s": 3.36,
+   "e": 3.6
   },
   {
    "w": "nie",
-   "s": 3.48,
-   "e": 3.52
+   "s": 3.68,
+   "e": 3.76
   },
   {
    "w": "złapano.",
-   "s": 3.6,
-   "e": 4.507
+   "s": 3.8,
+   "e": 4.667
   },
   {
-   "w": "Powieść",
-   "s": 4.533,
-   "e": 4.88
+   "w": "Książka",
+   "s": 4.693,
+   "e": 5.04
   },
   {
    "w": "zdobyła",
-   "s": 4.96,
-   "e": 5.28
+   "s": 5.08,
+   "e": 5.36
   },
   {
    "w": "Nagrodę",
-   "s": 5.32,
-   "e": 5.68
+   "s": 5.4,
+   "e": 5.72
   },
   {
    "w": "Edgara",
@@ -75,98 +75,98 @@
    "e": 6.16
   },
   {
-   "w": "dla",
+   "w": "za",
    "s": 6.2,
-   "e": 6.32
+   "e": 6.24
   },
   {
-   "w": "najlepszej",
-   "s": 6.36,
-   "e": 6.72
+   "w": "najlepszą",
+   "s": 6.32,
+   "e": 6.8
   },
   {
-   "w": "powieści",
-   "s": 6.8,
-   "e": 7.44
+   "w": "powieść",
+   "s": 6.88,
+   "e": 7.28
   },
   {
    "w": "i",
-   "s": 7.48,
-   "e": 7.52
+   "s": 7.32,
+   "e": 7.36
   },
   {
    "w": "otwiera",
-   "s": 7.6,
-   "e": 7.92
+   "s": 7.44,
+   "e": 7.76
   },
   {
    "w": "trylogię",
-   "s": 8.0,
-   "e": 8.4
+   "s": 7.84,
+   "e": 8.32
   },
   {
    "w": "o",
-   "s": 8.48,
-   "e": 8.56
+   "s": 8.4,
+   "e": 8.48
   },
   {
    "w": "Billu",
-   "s": 8.64,
-   "e": 8.8
+   "s": 8.56,
+   "e": 8.72
   },
   {
    "w": "Hodgesie.",
-   "s": 8.84,
-   "e": 9.733
+   "s": 8.76,
+   "e": 9.627
   },
   {
    "w": "Całą",
-   "s": 9.787,
-   "e": 9.92
+   "s": 9.653,
+   "e": 9.84
   },
   {
    "w": "trylogię",
-   "s": 10.0,
-   "e": 10.32
+   "s": 9.92,
+   "e": 10.24
   },
   {
    "w": "czyta",
-   "s": 10.4,
-   "e": 10.56
+   "s": 10.32,
+   "e": 10.48
   },
   {
    "w": "po",
-   "s": 10.64,
-   "e": 10.72
+   "s": 10.56,
+   "e": 10.64
   },
   {
    "w": "polsku",
-   "s": 10.76,
-   "e": 11.04
+   "s": 10.68,
+   "e": 10.96
   },
   {
    "w": "Jan",
-   "s": 11.16,
-   "e": 11.28
+   "s": 11.04,
+   "e": 11.2
   },
   {
    "w": "Peszek,",
-   "s": 11.36,
-   "e": 11.8
+   "s": 11.28,
+   "e": 11.84
   },
   {
    "w": "a",
-   "s": 11.84,
-   "e": 12.0
+   "s": 11.96,
+   "e": 12.08
   },
   {
    "w": "pierwszy",
-   "s": 12.04,
-   "e": 12.4
+   "s": 12.12,
+   "e": 12.48
   },
   {
    "w": "tom",
-   "s": 12.48,
+   "s": 12.6,
    "e": 12.72
   },
   {
@@ -181,15 +181,15 @@
   },
   {
    "w": "piętnaście",
-   "s": 13.48,
-   "e": 14.0
+   "s": 13.44,
+   "e": 13.92
   },
   {
    "w": "godzin.",
-   "s": 14.12,
-   "e": 14.65
+   "s": 14.0,
+   "e": 14.623
   }
  ],
- "trimmed": "7fb058be08b4",
- "speechEnd": 14.49
+ "trimmed": "7e9246233155",
+ "speechEnd": 14.463
 }

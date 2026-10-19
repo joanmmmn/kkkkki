@@ -4,7 +4,7 @@ import { clamp, easeInOut, easeOut } from '../../lib/anim';
 import { Sfx, ChangeTicks } from '../../components/Sfx';
 import { MaskTitle } from '../nxr/kit';
 import { Kicker } from '../nxr/App';
-import { BOOKS, Book3D, Cam, color, Fact, font, KR, LyingBook, MiniIcon, ramp, rampOut, shadow, SkStage } from './kit';
+import { BOOKS, Book3D, Cam, color, Fact, font, godzinPl, KR, LyingBook, MiniIcon, ramp, rampOut, shadow, SkStage } from './kit';
 import { FlatCover } from './Genres';
 import { sceneClock } from './timeline';
 
@@ -57,7 +57,7 @@ export const ItScene: React.FC = () => {
           <Kicker at={fIt} text="To (1986)" />
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 18, opacity: rampOut(frame, fCuar - 8, fCuar + 4) }}>
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 200, letterSpacing: -8, color: KR, fontVariantNumeric: 'tabular-nums' }}>{Math.floor(hours)}</span>
-            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, color: color.ink }}>godzin</span>
+            <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, color: color.ink }}>{godzinPl(hours)}</span>
           </div>
           <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 36, color: color.ink2, opacity: rampOut(frame, fHoras + 10, fHoras + 24) }}>54 h 1 min · czyta Leszek Filipowicz</div>
           <div style={{ marginTop: 44, fontFamily: font.serif, fontStyle: 'italic', fontSize: 58, lineHeight: 1.15, color: color.ink, opacity: rampOut(frame, fObra - 6, fObra + 10) }}>Dla wielu czytelników<br />to arcydzieło…</div>
@@ -80,7 +80,7 @@ export const ItScene: React.FC = () => {
           <div style={{ position: 'absolute', left: 1080, top: 470, opacity: stop, transform: `scale(${0.8 + 0.2 * sp(frame, fMitad - 2, 10, 220)})` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, fontFamily: font.sans, fontWeight: 700, fontSize: 40, color: '#fff', background: color.ink, padding: '12px 26px', borderRadius: 999, boxShadow: shadow.float }}>
               <svg width="30" height="30" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1" fill="#fff" /><rect x="14" y="5" width="4" height="14" rx="1" fill="#fff" /></svg>
-              Porzucone w połowie
+              Porzucony w połowie
             </div>
           </div>
         </AbsoluteFill>
@@ -201,7 +201,7 @@ export const TorreScene: React.FC = () => {
             </div>
             <div style={{ position: 'absolute', right: 120, top: 380, textAlign: 'right', opacity: rampOut(frame, fCasi - 8, fCasi + 6) * (1 - orbit) }}>
               <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 190, letterSpacing: -8, color: color.ink, fontVariantNumeric: 'tabular-nums' }}>{Math.round(total)}</div>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: color.ink }}>godzin</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: color.ink }}>{godzinPl(Math.round(total))}</div>
               <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 30, color: color.ink2, marginTop: 10, opacity: rampOut(frame, fHoras + 10, fHoras + 24) }}>145 h 41 min · czyta Mateusz Drozda</div>
             </div>
             <div style={{ position: 'absolute', left: 0, right: 0, top: 80, textAlign: 'center', opacity: orbit }}>

@@ -18,16 +18,16 @@ Rozdziały:
 1:39 Co pisze: nie tylko horror
 2:21 Zanim wybierzesz: strach i czas
 2:38 Lśnienie
-3:06 Misery
-3:26 Zielona mila
-3:53 Dallas ’63
-4:17 Pan Mercedes (i dwie krótkie: Carrie, Uniesienie)
-4:45 Lepiej na później: To, Bastion i Mroczna Wieża
-5:19 Wszystko się łączy (i kiedy liczy się kolejność)
-5:55 Słuchać Kinga po polsku: lektorzy
-6:25 Trzy trasy
+3:07 Misery
+3:27 Zielona mila
+3:54 Dallas ’63
+4:18 Pan Mercedes (i dwie krótkie: Carrie, Uniesienie)
+4:46 Lepiej na później: To, Bastion i Mroczna Wieża
+5:20 Wszystko się łączy (i kiedy liczy się kolejność)
+5:56 Słuchać Kinga po polsku: lektorzy
+6:26 Trzy trasy
 
-Sprawdź lektora, czas trwania i to, gdzie posłuchać audiobooka i za ile:
+Na sonorbooks.pl są już „Lśnienie” i „To” (oraz „Instytut”) – z lektorem, czasem trwania i informacją, gdzie posłuchać i za ile:
 https://sonorbooks.pl/audiobooki/?q=stephen+king
 „Lśnienie” (słuchowisko): https://sonorbooks.pl/audiobook/lsnienie/
 „To”: https://sonorbooks.pl/audiobook/to-stephen-king/
@@ -51,7 +51,7 @@ Stephen King, od czego zacząć Stephena Kinga, Stephen King od czego zacząć, 
 
 ## Przypięty komentarz
 
-A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której zaczniesz teraz? Napisz też, którego autora chcesz w następnym odcinku „Od czego i jak zacząć”. Wszystkie audiobooki Kinga z odcinka porównasz tutaj: https://sonorbooks.pl/audiobooki/?q=stephen+king
+A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której zaczniesz teraz? Napisz też, którego autora chcesz w następnym odcinku „Od czego i jak zacząć”. Na sonorbooks.pl są już „Lśnienie” i „To” (oraz „Instytut”) – z lektorem, czasem trwania i informacją, gdzie posłuchać i za ile: https://sonorbooks.pl/audiobooki/?q=stephen+king
 
 ---
 
@@ -60,7 +60,7 @@ A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której
 - **Idioma del vídeo:** polaco (también el de los subtítulos y los textos de YouTube).
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl).
 - **¿Es para niños?** No.
-- **Duración:** 21525 fotogramas a 50 fps = 430.5 s (7:10). El español dura 7:45; el polaco es más corto porque la locución lo es (no se ha rellenado).
+- **Duración:** 21577 fotogramas a 50 fps = 431.5 s (7:11). El español dura 7:45; el polaco es más corto porque la locución lo es (no se ha rellenado).
 - **Pantalla final:** los últimos 14 s (escena OUTRO: logo, «Twoja następna historia już na ciebie czeka.», sonorbooks.pl) dejan libre la mitad derecha para los elementos de YouTube: vídeo siguiente y botón de suscripción.
 - **Subtítulos:** `stephen_king_od_czego_zaczac.pl.srt` (polaco). **Capítulos:** `capitulos.txt` (ya están en la descripción). **Miniaturas:** `miniatura_A.png` (clara) y `miniatura_B.png` (biblioteca 3D con los lomos en polaco).
 
@@ -68,7 +68,7 @@ A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której
 
 1. **Nota de «Lśnienie» en pantalla (no en la voz):** «4,7 / 5 · ponad 1000 ocen w Audiotece», como pedía el guion. Si prefieres no enseñar notas, se quita en una línea (`Doors.tsx`, D1).
 2. **Captura de sonorbooks.pl:** la ficha de «Lśnienie» muestra la portada real del audiolibro (el słuchowisko de Prószyński, con la cara de un actor), igual que la captura española mostraba portadas reales. Si no la quieres, se puede difuminar la portada en la captura.
-3. **Cambios pequeños en el guion polaco** (para que case con la animación): G26 empieza «A teraz książki, które lepiej zostawić na później. Pierwsza: „To”…» (da tiempo a ver los tres libros «na później»); G33 empieza con la pregunta «Czy trzeba czytać po kolei? Nie.» (como el español, para el sello «NIE»); en G30 «Danny» se pronuncia «Deni»; en G31, «miasta z powieści „To”» (con «miasta z „To”» la voz sonaba «miasta sto»).
+3. **Cambios pequeños en el guion polaco** (para que case con la animación): G26 empieza «A teraz książki, które lepiej zostawić na później. Pierwsza: „To”…» (da tiempo a ver los tres libros «na później»); G33 empieza con la pregunta «Czy trzeba czytać po kolei? Nie.» (como el español, para el sello «NIE»); en G30 «Danny» se pronuncia «Deni»; en G31, «miasta z powieści „To”» (con «miasta z „To”» la voz sonaba «miasta sto»). Tras la revisión: G15 «odciętego od świata przez śnieg», G18 «jego największa fanka» y G24 «Książka zdobyła Nagrodę Edgara za najlepszą powieść».
 4. **Separador del bloque 06:** «Wszystko się łączy» en vez de «Wszystko jest połączone» (no cabía en el rótulo grande y es lo que dice la voz).
 5. **Capítulos:** «Mało czasu? Carrie i Uniesienie» (7 s) va dentro del capítulo de «Pan Mercedes», porque YouTube pide al menos 10 s por capítulo.
 6. **Datos marcados «a verificar» en el español** que siguen igual: el motivo de Bachman («między innymi po to…», prudente), 1932 y las seis entregas de «Zielona mila», y el Edgar 2015. «Nowsze nagranie» de Głowacki se dice por lógica (Zapasiewicz murió en 2009), sin fecha publicada.

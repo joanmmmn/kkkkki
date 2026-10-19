@@ -84,10 +84,10 @@ export const Voces: React.FC = () => {
             );
           })}
         </div>
-        <div style={{ position: 'absolute', left: 1310, top: 380, width: 520, opacity: rampOut(frame, fPRH - 6, fPRH + 10), transform: `translateX(${(1 - rampOut(frame, fPRH - 6, fPRH + 10)) * 30}px)` }}>
+        <div style={{ position: 'absolute', left: 1360, top: 380, width: 500, opacity: rampOut(frame, fPRH - 6, fPRH + 10), transform: `translateX(${(1 - rampOut(frame, fPRH - 6, fPRH + 10)) * 30}px)` }}>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 4, color: color.muted, textTransform: 'uppercase' }}>Wydają głównie</div>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, lineHeight: 1.08, color: color.ink, marginTop: 10 }}>Albatros<br />i Prószyński</div>
-          <div style={{ marginTop: 40 }}><Wave w={440} h={90} c={color.ink} /></div>
+          <div style={{ marginTop: 40 }}><Wave w={420} h={90} c={color.ink} /></div>
         </div>
       </AbsoluteFill>
       {/* Fase 2: voces */}

@@ -1,8 +1,8 @@
 {
  "id": "G18",
- "hash": "d3955bd4d5d0",
- "text": "Pisarz ma wypadek w środku śnieżycy. Ratuje go jego fanka numer jeden, która wcale nie zamierza go wypuścić. Po polsku czyta Krzysztof Plewako-Szczerbiński: nieco ponad piętnaście godzin.",
- "duration": 11.209,
+ "hash": "8c7d89677822",
+ "text": "Pisarz ma wypadek w środku śnieżycy. Ratuje go jego największa fanka, która wcale nie zamierza go wypuścić. Po polsku czyta Krzysztof Plewako-Szczerbiński: nieco ponad piętnaście godzin.",
+ "duration": 11.49,
  "words": [
   {
    "w": "Pisarz",
@@ -17,12 +17,12 @@
   {
    "w": "wypadek",
    "s": 0.6,
-   "e": 1.0
+   "e": 1.04
   },
   {
    "w": "w",
-   "s": 1.04,
-   "e": 1.08
+   "s": 1.067,
+   "e": 1.093
   },
   {
    "w": "środku",
@@ -32,114 +32,109 @@
   {
    "w": "śnieżycy.",
    "s": 1.52,
-   "e": 2.36
+   "e": 2.4
   },
   {
    "w": "Ratuje",
-   "s": 2.4,
-   "e": 2.72
-  },
-  {
-   "w": "go",
-   "s": 2.76,
+   "s": 2.44,
    "e": 2.8
   },
   {
+   "w": "go",
+   "s": 2.84,
+   "e": 2.88
+  },
+  {
    "w": "jego",
-   "s": 2.88,
+   "s": 2.96,
    "e": 3.12
   },
   {
-   "w": "fanka",
-   "s": 3.16,
-   "e": 3.44
-  },
-  {
-   "w": "numer",
-   "s": 3.56,
+   "w": "największa",
+   "s": 3.2,
    "e": 3.68
   },
   {
-   "w": "jeden,",
+   "w": "fanka,",
    "s": 3.76,
-   "e": 4.16
+   "e": 4.24
   },
   {
    "w": "która",
-   "s": 4.2,
-   "e": 4.48
+   "s": 4.28,
+   "e": 4.56
   },
   {
    "w": "wcale",
-   "s": 4.56,
-   "e": 4.88
-  },
-  {
-   "w": "nie",
-   "s": 4.96,
+   "s": 4.64,
    "e": 5.04
   },
   {
+   "w": "nie",
+   "s": 5.12,
+   "e": 5.2
+  },
+  {
    "w": "zamierza",
-   "s": 5.08,
-   "e": 5.44
+   "s": 5.28,
+   "e": 5.6
   },
   {
    "w": "go",
-   "s": 5.48,
-   "e": 5.52
+   "s": 5.68,
+   "e": 5.76
   },
   {
    "w": "wypuścić.",
-   "s": 5.6,
-   "e": 6.747
+   "s": 5.8,
+   "e": 6.96
   },
   {
    "w": "Po",
-   "s": 6.773,
-   "e": 6.8
+   "s": 7.0,
+   "e": 7.04
   },
   {
    "w": "polsku",
-   "s": 6.88,
-   "e": 7.2
+   "s": 7.12,
+   "e": 7.36
   },
   {
    "w": "czyta",
-   "s": 7.28,
-   "e": 7.6
+   "s": 7.44,
+   "e": 7.68
   },
   {
    "w": "Krzysztof",
-   "s": 7.627,
-   "e": 8.0
+   "s": 7.84,
+   "e": 8.24
   },
   {
    "w": "Plewako-Szczerbiński:",
-   "s": 8.08,
-   "e": 9.44
+   "s": 8.28,
+   "e": 9.6
   },
   {
    "w": "nieco",
-   "s": 9.52,
-   "e": 9.68
+   "s": 9.68,
+   "e": 9.92
   },
   {
    "w": "ponad",
-   "s": 9.76,
-   "e": 10.08
+   "s": 10.0,
+   "e": 10.32
   },
   {
    "w": "piętnaście",
-   "s": 10.16,
-   "e": 10.56
+   "s": 10.4,
+   "e": 10.8
   },
   {
    "w": "godzin.",
-   "s": 10.64,
-   "e": 11.209
+   "s": 10.88,
+   "e": 11.49
   }
  ],
- "trimmed": "d3955bd4d5d0",
- "speechEnd": 11.049
+ "trimmed": "8c7d89677822",
+ "speechEnd": 11.325
 }

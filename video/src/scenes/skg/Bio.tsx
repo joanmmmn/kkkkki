@@ -46,7 +46,8 @@ export const Maine: React.FC = () => {
   const towns = [
     { k: 'derry', label: 'Derry', at: fMaine + 10, left: false },
     { k: 'castlerock', label: 'Castle Rock', at: fMaine + 18, left: true },
-    { k: 'salemslot', label: "Salem's Lot", at: fMaine + 26, left: false },
+    // a la izquierda (tierra adentro): a la derecha cruzaba la línea de costa
+    { k: 'salemslot', label: "Salem's Lot", at: fMaine + 26, left: true },
   ];
   const snow = ramp(frame, fInv - 6, fInv + 30);
   const lift = ramp(frame, fNac - 4, fPort + 10);
@@ -260,7 +261,7 @@ export const CarrieOrigin: React.FC = () => {
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: 1 - night, transform: `scale(${1 - night * 0.05})` }}>
           <div style={{ width: 1120, height: 560, borderRadius: 26, background: '#24473A', border: '22px solid #8A6A45', boxShadow: shadow.card, position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 40% 40%, rgba(255,255,255,0.08), rgba(0,0,0,0.12))' }} />
-            <div style={{ position: 'absolute', left: 70, top: 60, fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: 'rgba(255,255,255,0.88)' }}>English</div>
+            <div style={{ position: 'absolute', left: 70, top: 60, fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: 'rgba(255,255,255,0.88)' }}>Język angielski</div>
             <div style={{ position: 'absolute', left: 70, top: 160, width: 880 * rampOut(frame, 6, 40), height: 4, background: 'rgba(255,255,255,0.6)', borderRadius: 2 }} />
             <div style={{ position: 'absolute', left: 70, top: 220, fontFamily: font.sans, fontWeight: 500, fontSize: 46, color: 'rgba(255,255,255,0.8)', opacity: rampOut(frame, fIng - 10, fIng + 6) }}>
               Nauczyciel angielskiego w liceum w Maine
