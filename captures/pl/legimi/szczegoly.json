@@ -1,0 +1,107 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/cennik/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "eval": "window.scrollTo(0,560)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    565,
+    302
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "dev"
+  },
+  {
+   "move": [
+    560,
+    452
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "kindle"
+  },
+  {
+   "move": [
+    545,
+    523
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "epub"
+  },
+  {
+   "move": [
+    560,
+    592
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

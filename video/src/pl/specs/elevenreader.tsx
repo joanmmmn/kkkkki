@@ -1,0 +1,106 @@
+// ElevenReader en Polonia (app de ElevenLabs; versión polaca desde el 25/04/2025). Investigación y guion: research/pl/elevenreader/.
+// Los «cues» son palabras de la locución tal como se dice (`say` de vo.json): «Ilewen», «Gugl», «Ep» (Storze)…
+// ElevenReader no está en sonorbooks.pl: el cierre solo invita a comparar las demás opciones. Precios de la web en USD (como se ven) y de la
+// App Store polaca en zł; el vídeo no dice nada del IVA de la web ni de la duración de la prueba dentro de la app.
+import type { PLPiece } from './index';
+
+export const piece: PLPiece = {
+  spec: {
+    slug: 'elevenreader', name: 'ElevenReader', domain: 'elevenreader.io', color: '#1C1C1C', deep: '#000000', soft: '#EFEFEF',
+    logo: 'pl/elevenreader/img/logo.svg', logoWhite: 'pl/elevenreader/img/logo_white.svg', logoRatio: 205 / 343, tileBg: '#111', tileLogoWhite: true,
+    kicker: 'Recenzja ElevenReader', music: 'pl/elevenreader/music/bed.mp3',
+    scenes: [
+      { id: 'A01', kind: 'hook', title: 'ElevenReader:\nczy warto\npłacić?', hi: ['ElevenReader'], rec: { clip: 'home_hero', start: 0.4 },
+        cuts: [{ at: 'Piotra', rec: { clip: 'iconic', start: 6.2 } }, { at: ['Ilewen', 0], rec: { clip: 'home_hero', start: 6.0 } }],
+        promises: [{ at: 'darmowy', label: 'Plan darmowy', icon: 'gift' }, { at: 'Ultra', label: 'Ultra', icon: 'star' }, { at: 'polskie', label: 'Polskie audiobooki', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'doc' }] },
+      { id: 'A02', kind: 'intro', bump: 'Co to jest?', rec: { clip: 'blog', start: 0.4, url: 'elevenlabs.io/pl/blog' }, facts: [
+        { at: 'pliki', label: 'Czyta na głos twoje pliki', sub: 'artykuły i strony internetowe', icon: 'doc' },
+        { at: 'biblioteke', label: 'Biblioteka audiobooków', icon: 'library' },
+        { at: 'Polakow', label: 'ElevenLabs · od 2022', sub: 'Mati Staniszewski i Piotr Dąbkowski', icon: 'user' },
+        { at: 'kwietnia', label: 'Po polsku od 25.04.2025', icon: 'calendar' },
+      ] },
+      { id: 'A03', kind: 'plans', bump: 'Cennik', title: 'Ile kosztuje Ultra?', plans: [
+        { at: 'darmowy', name: 'Free', price: '0 zł', period: '/ mies.', features: ['10 h zamiany tekstu na mowę', 'Odnawia się co miesiąc'] },
+        { at: 'stronie', name: 'Ultra · strona', price: '11 USD', period: '/ mies.', note: 'albo 99 USD / rok', features: ['3 dni za darmo', 'Strona po angielsku'] },
+        { at: 'Ep', name: 'Ultra · App Store', price: '39,00 zł', period: '/ mies.', note: 'albo 349,00 zł / rok', features: ['Polski App Store', 'Płacisz w złotówkach'] },
+      ], footer: [{ at: 'trzysta', label: 'Ceny: stan na październik 2026', icon: 'calendar' }, { at: 'trzysta', label: 'Bez planu rodzinnego', icon: 'family' }] },
+      { id: 'A04', kind: 'rec', bump: 'Co potrafi?', kicker: 'Import', title: 'Twoje teksty → audio', rec: { clip: 'pomoc_dodaj', start: 3.6, url: 'elevenlabs.io/docs/pl' },
+        cuts: [{ at: 'Ultra', rec: { clip: 'pricing_ultra', start: 1.6 } }],
+        marks: [{ at: 'pe', until: 'linki', x: 570, y: 545, w: 130, h: 180 }, { at: 'linki', until: 'Ultra', x: 570, y: 401, w: 700, h: 80 }, { at: 'pomija', x: 1018, y: 650, w: 440, h: 66 }, { at: 'dwadziescia', x: 1018, y: 440, w: 440, h: 66 }],
+        tags: [{ at: 'pe', label: 'PDF, EPUB, Word, TXT, HTML', icon: 'doc' }, { at: 'pieciuset', label: 'Do 500 stron', icon: 'book' }, { at: 'linki', label: 'Link do artykułu', icon: 'link' }, { at: 'zdjecia', label: 'Zdjęcie kartki', icon: 'phone' },
+          { at: 'pomija', label: 'Bez nagłówków i stopek', sub: 'tylko w Ultra', icon: 'sparkle' }, { at: 'dwadziescia', label: 'Do 24 h audio dziennie', sub: 'tylko w Ultra', icon: 'clock' }] },
+      { id: 'A05', kind: 'rec', kicker: 'Głosy', title: 'Ponad 1000 głosów', rec: { clip: 'home_hero', start: 6.6 },
+        cuts: [{ at: 'ikonicznych', rec: { clip: 'iconic', start: 6.2 } }, { at: 'cyfrowy', rec: { clip: 'blog', start: 6.0, url: 'elevenlabs.io/pl/blog' } }],
+        marks: [{ at: 'ponad', until: 'ikonicznych', x: 414, y: 846, w: 330, h: 80 }, { at: 'Fronczewski', until: 'cyfrowy', x: 362, y: 140, w: 400, h: 420 }, { at: 'wspolpracy', x: 552, y: 762, w: 800, h: 34 }],
+        tags: [{ at: 'ponad', label: '1000+ głosów', icon: 'mic' }, { at: 'jezyka', label: 'Według języka telefonu', icon: 'globe' }, { at: 'zaprojektujesz', label: 'Własny głos z opisu', sub: 'tylko w Ultra', icon: 'sparkle' },
+          { at: 'Fronczewski', label: 'Piotr Fronczewski', sub: 'seria Iconic Voices', icon: 'star' }, { at: 'wspolpracy', label: 'Głos AI razem z aktorem', icon: 'mic' }] },
+      { id: 'A06', kind: 'rec', bump: 'Polskie audiobooki', kicker: 'Po polsku', title: 'Co posłuchasz?', rec: { clip: 'lalka_wl', start: 0.4 },
+        cuts: [{ at: 'lektorami', rec: { clip: 'lalka_lektor', start: 0.4 } }, { at: 'kryminaly', rec: { clip: 'polska_czyta', start: 4.6 } }],
+        marks: [{ at: 'darmo', until: 'dowolny', x: 364, y: 335, w: 320, h: 64 }, { at: 'dowolny', until: 'lektorami', x: 364, y: 822, w: 600, h: 44 }, { at: 'Grzegorza', until: 'kryminaly', x: 362, y: 298, w: 590, h: 38 }, { at: 'Mankella', x: 1322, y: 266, w: 236, h: 340 }],
+        tags: [{ at: 'darmo', label: 'Za darmo: Wolne Lektury', icon: 'gift', tone: 'good' }, { at: 'pierwszy', label: '„Lalka”, tom pierwszy', sub: '15 h 59 min', icon: 'book' }, { at: 'dowolny', label: 'Czyta głos AI', sub: 'do wyboru', icon: 'mic' },
+          { at: 'lektorami', label: 'Ultra: z lektorami', icon: 'headphones' }, { at: 'Grzegorza', label: '„Lalka” · 36 h 4 min', sub: 'czytają G. Damięcki i K. Gosztyła', icon: 'book' }, { at: 'kryminaly', label: 'Henning Mankell', sub: 'kryminały po polsku', icon: 'book' }] },
+      { id: 'A07', kind: 'stat', kicker: 'Limit w Ultra', title: '20 h premium miesięcznie', at: 'trzydziesci', value: '36', unit: 'h', count: { from: 0, to: 36 }, label: '„Lalka” z lektorami: prawie 2 miesiące limitu', tags: [
+        { at: 'osobno', label: 'Albo zakup: 24 USD na stronie', icon: 'coin' }, { at: 'dolary', label: 'Stan na październik 2026', icon: 'calendar' },
+      ] },
+      { id: 'A08', kind: 'features', bump: 'Odtwarzacz', kicker: 'W aplikacji', title: 'Jak się słucha?', cols: 3, items: [
+        { at: 'slowo', label: 'Podświetlanie', sub: 'słowo po słowie', icon: 'font' }, { at: 'Predkosc', label: 'Prędkość do 4×', icon: 'speed' },
+        { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' }, { at: 'zakladki', label: 'Zakładki', icon: 'bookmark' },
+        { at: 'offline', label: 'Offline w Ultra', sub: 'pobrane pliki działają 60 dni', icon: 'download' },
+      ] },
+      { id: 'A09', kind: 'devices', items: [
+        { at: 'iPhon', label: 'iPhone', icon: 'phone', ok: true }, { at: 'iPad', label: 'iPad', icon: 'tablet', ok: true },
+        { at: 'Androidzie', label: 'Android', icon: 'phone', ok: true }, { at: 'przegladarce', label: 'Przeglądarka', sub: 'z synchronizacją', icon: 'globe', ok: true },
+        { at: 'Chrome', label: 'Rozszerzenie do Chrome', icon: 'laptop', ok: true }, { at: 'Androida', label: 'Android Auto', sub: 'brak', icon: 'car', ok: false },
+      ] },
+      { id: 'A10', kind: 'ratings', bump: 'Opinie', kicker: 'Opinie · 19.10.2026', stores: [{ at: 'Gugl', store: 'google', rating: 4.6, count: '69,7 tys. opinii' }, { at: 'Ep', store: 'apple', rating: 4.7, count: '704 oceny w Polsce' }],
+        likes: [{ at: 'naturalne', label: 'Naturalne głosy' }, { at: 'dowolny', label: 'Przeczyta dowolny plik' }],
+        dislikes: [{ at: 'Androida', label: 'Brak Android Auto' }, { at: 'gubienie', label: 'Gubi miejsce po przerwie' }, { at: 'nagle', label: 'Nagle żąda płatnego planu' }] },
+      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'ElevenReader', pros: [
+        { at: 'naturalne', label: 'Naturalne głosy' }, { at: 'prawie', label: 'Prawie każdy tekst → audio' }, { at: 'darmowa', label: 'Darmowa polska klasyka' }, { at: '10', label: '10 h miesięcznie za darmo' },
+      ], cons: [
+        { at: 'angielsku', label: 'Strona po angielsku, w USD' }, { at: 'tylko', label: 'Tylko 20 h premium / mies.' }, { at: 'wspoldzielenia', label: 'Bez współdzielenia konta' }, { at: 'eksportu', label: 'Bez eksportu nagrań' },
+      ] },
+      { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'ElevenReader:\nczy warto płacić?', yes: [
+        { at: 'duzo', label: 'Dużo czytasz PDF-ów i artykułów', sub: 'albo e-booków bez wersji audio' },
+      ], no: [
+        { at: 'szukasz', label: 'Szukasz audiobooków z lektorem', sub: 'porównaj najpierw abonamenty' },
+      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. bez limitu godzin'], label: 'Dla porównania:' } },
+      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Konto za darmo', rec: { clip: 'pricing_free', start: 3.0 },
+        marks: [{ at: 'Plan', x: 418, y: 818, w: 480, h: 66 }],
+        steps: [{ at: 'Zaloz', title: 'Załóż konto', sub: 'na elevenreader.io albo w aplikacji' }, { at: 'Gugl', title: 'Google, Apple albo e-mail' }, { at: 'Plan', title: 'Plan Free: 0 zł', sub: 'bez subskrypcji' }] },
+      { id: 'B02', kind: 'steps', kicker: 'Krok 2', title: 'Pierwszy plik', rec: { clip: 'pomoc_godziny', start: 0.4, url: 'elevenlabs.io/docs/pl' },
+        marks: [{ at: 'pierwszej', until: 'Ponowne', x: 552, y: 344, w: 640, h: 36 }, { at: 'szybciej', until: 'Ponowne', x: 566, y: 420, w: 640, h: 36 }, { at: 'Ponowne', x: 566, y: 488, w: 800, h: 80 }],
+        steps: [{ at: 'Wgraj', title: 'Wgraj plik albo wklej link' }, { at: 'wybierz', title: 'Wybierz głos' }, { at: 'pierwszej', title: 'Godziny schodzą raz', sub: 'przy 1. zamianie · szybciej, gdy słuchasz szybciej' }, { at: 'Ponowne', title: 'Ponowne słuchanie: 0 h', sub: 'darmowe książki też nie zużywają godzin' }] },
+      { id: 'B03', kind: 'rec', kicker: 'Krok 3', title: 'Ultra na próbę', rec: { clip: 'pricing_ultra', start: 6.0 },
+        cuts: [{ at: 'aplikacji', rec: { clip: 'appstore_iap', start: 0.6, url: 'apps.apple.com/pl' } }],
+        marks: [{ at: 'stronie', until: 'aplikacji', x: 1018, y: 818, w: 488, h: 68 }, { at: 'zlotowkach', x: 1360, y: 450, w: 530, h: 48 }],
+        zooms: [{ at: 'zlotowkach', zoom: 2.4, x: 1600, y: 470 }],
+        tags: [{ at: 'stronie', label: 'Strona: 3 dni za darmo', icon: 'gift', tone: 'good' }, { at: 'anulujesz', label: 'Anuluj przed końcem', icon: 'calendar' }, { at: 'ruszy', label: 'Potem płatność sama', tone: 'bad' },
+          { at: 'zlotowkach', label: 'Aplikacja: 39,00 zł', sub: 'App Store PL · stan na 10.2026', icon: 'coin' }] },
+      { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_anuluj', start: 0.4, url: 'elevenlabs.io/docs/pl' },
+        marks: [{ at: 'stronie', until: 'telefonie', x: 552, y: 440, w: 816, h: 72 }, { at: 'telefonie', until: 'Samo', x: 552, y: 316, w: 816, h: 120 }, { at: 'Dostep', x: 552, y: 516, w: 816, h: 72 }],
+        steps: [{ at: 'stronie', title: 'Strona: awatar', sub: 'Szczegóły konta › Zarządzaj płatnościami' }, { at: 'telefonie', title: 'Telefon: subskrypcje', sub: 'w App Store albo Google Play' },
+          { at: 'odinstalowanie', title: 'Odinstalowanie ≠ rezygnacja' }, { at: 'Dostep', title: 'Dostęp do końca okresu', sub: 'za który już zapłaciłeś' }] },
+      { id: 'B06', kind: 'outro', rec: { clip: 'sb_lalka', start: 0.2, url: 'sonorbooks.pl' }, cta: 'Wolisz lektora?\nPorównaj opcje:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
+        tags: [{ at: 'Audioteke', label: 'Audioteka · Empik Go · Legimi · Audible', icon: 'search' }] },
+    ],
+    chapters: [
+      { label: 'Czym jest ElevenReader', from: 'A02' },
+      { label: 'Cennik: Free i Ultra', from: 'A03' },
+      { label: 'Twoje pliki i teksty', from: 'A04' },
+      { label: 'Głosy i Piotr Fronczewski', from: 'A05' },
+      { label: 'Polskie audiobooki', from: 'A06' },
+      { label: 'Limit 20 godzin premium', from: 'A07' },
+      { label: 'Odtwarzacz', from: 'A08' },
+      { label: 'Urządzenia', from: 'A09' },
+      { label: 'Opinie', from: 'A10' },
+      { label: 'Plusy i minusy', from: 'A11' },
+      { label: 'Werdykt: czy warto?', from: 'A12' },
+      { label: 'Jak zacząć za darmo', from: 'B01' },
+      { label: 'Jak liczą się godziny', from: 'B02' },
+      { label: 'Ultra: 3 dni za darmo na stronie', from: 'B03' },
+      { label: 'Jak zrezygnować', from: 'B04' },
+    ],
+  },
+  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'clock', text: '10 h\nza darmo' }, label: { strong: 'Ultra', rest: '39 ZŁ / MIES.' } },
+};

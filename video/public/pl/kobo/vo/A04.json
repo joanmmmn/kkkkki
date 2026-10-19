@@ -1,0 +1,184 @@
+{
+ "id": "A04",
+ "hash": "89679c06760c",
+ "text": "W abonamencie słuchasz albo czytasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo.com włączysz w wyszukiwarce filtr „tylko Kobo Plus”.",
+ "duration": 14.96,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "abonamencie",
+   "s": 0.08,
+   "e": 0.72
+  },
+  {
+   "w": "słuchasz",
+   "s": 0.8,
+   "e": 1.28
+  },
+  {
+   "w": "albo",
+   "s": 1.36,
+   "e": 1.6
+  },
+  {
+   "w": "czytasz,",
+   "s": 1.68,
+   "e": 2.16
+  },
+  {
+   "w": "ile",
+   "s": 2.24,
+   "e": 2.32
+  },
+  {
+   "w": "chcesz,",
+   "s": 2.4,
+   "e": 3.0
+  },
+  {
+   "w": "bez",
+   "s": 3.04,
+   "e": 3.2
+  },
+  {
+   "w": "limitu",
+   "s": 3.36,
+   "e": 3.6
+  },
+  {
+   "w": "godzin",
+   "s": 3.68,
+   "e": 4.24
+  },
+  {
+   "w": "–",
+   "s": 4.32,
+   "e": 4.4
+  },
+  {
+   "w": "ale",
+   "s": 4.48,
+   "e": 4.56
+  },
+  {
+   "w": "tylko",
+   "s": 4.64,
+   "e": 4.88
+  },
+  {
+   "w": "tytułów",
+   "s": 4.96,
+   "e": 5.36
+  },
+  {
+   "w": "oznaczonych",
+   "s": 5.44,
+   "e": 5.88
+  },
+  {
+   "w": "jako",
+   "s": 5.92,
+   "e": 6.24
+  },
+  {
+   "w": "Kobo",
+   "s": 6.28,
+   "e": 6.56
+  },
+  {
+   "w": "Plus.",
+   "s": 6.92,
+   "e": 7.32
+  },
+  {
+   "w": "Resztę",
+   "s": 7.36,
+   "e": 7.6
+  },
+  {
+   "w": "sklepu",
+   "s": 7.68,
+   "e": 8.08
+  },
+  {
+   "w": "kupujesz",
+   "s": 8.12,
+   "e": 8.48
+  },
+  {
+   "w": "osobno.",
+   "s": 8.56,
+   "e": 9.547
+  },
+  {
+   "w": "Po",
+   "s": 9.573,
+   "e": 9.6
+  },
+  {
+   "w": "zalogowaniu",
+   "s": 9.64,
+   "e": 10.16
+  },
+  {
+   "w": "na",
+   "s": 10.28,
+   "e": 10.4
+  },
+  {
+   "w": "kobo",
+   "s": 10.44,
+   "e": 10.72
+  },
+  {
+   "w": "kropka",
+   "s": 10.773,
+   "e": 11.04
+  },
+  {
+   "w": "kom",
+   "s": 11.12,
+   "e": 11.52
+  },
+  {
+   "w": "włączysz",
+   "s": 11.6,
+   "e": 12.0
+  },
+  {
+   "w": "w",
+   "s": 12.027,
+   "e": 12.053
+  },
+  {
+   "w": "wyszukiwarce",
+   "s": 12.08,
+   "e": 12.72
+  },
+  {
+   "w": "filtr",
+   "s": 12.8,
+   "e": 13.2
+  },
+  {
+   "w": "„tylko",
+   "s": 13.24,
+   "e": 13.68
+  },
+  {
+   "w": "Kobo",
+   "s": 13.72,
+   "e": 14.0
+  },
+  {
+   "w": "Plus”.",
+   "s": 14.16,
+   "e": 14.96
+  }
+ ],
+ "speechEnd": 14.45
+}

@@ -1,0 +1,194 @@
+{
+ "id": "A08",
+ "hash": "982ecb7f8986",
+ "text": "W pakietach z limitem czytanie i słuchanie zużywają wspólną pulę stron. Godzina samego audiobooka to około 38 stron, liczona przy normalnej prędkości. Niewykorzystany limit przechodzi na kolejny miesiąc, ale jeśli go przekroczysz, Legimi pobierze kolejną opłatę.",
+ "duration": 15.68,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "pakietach",
+   "s": 0.08,
+   "e": 0.48
+  },
+  {
+   "w": "z",
+   "s": 0.52,
+   "e": 0.56
+  },
+  {
+   "w": "limitem",
+   "s": 0.64,
+   "e": 1.04
+  },
+  {
+   "w": "czytanie",
+   "s": 1.12,
+   "e": 1.52
+  },
+  {
+   "w": "i",
+   "s": 1.56,
+   "e": 1.6
+  },
+  {
+   "w": "słuchanie",
+   "s": 1.68,
+   "e": 2.08
+  },
+  {
+   "w": "zużywają",
+   "s": 2.16,
+   "e": 2.64
+  },
+  {
+   "w": "wspólną",
+   "s": 2.68,
+   "e": 3.12
+  },
+  {
+   "w": "pulę",
+   "s": 3.2,
+   "e": 3.44
+  },
+  {
+   "w": "stron.",
+   "s": 3.56,
+   "e": 4.16
+  },
+  {
+   "w": "Godzina",
+   "s": 4.24,
+   "e": 4.48
+  },
+  {
+   "w": "samego",
+   "s": 4.56,
+   "e": 4.88
+  },
+  {
+   "w": "audiobuka",
+   "s": 4.96,
+   "e": 5.52
+  },
+  {
+   "w": "to",
+   "s": 5.6,
+   "e": 5.68
+  },
+  {
+   "w": "około",
+   "s": 5.8,
+   "e": 6.0
+  },
+  {
+   "w": "trzydziestu",
+   "s": 6.08,
+   "e": 6.56
+  },
+  {
+   "w": "ośmiu",
+   "s": 6.64,
+   "e": 6.88
+  },
+  {
+   "w": "stron,",
+   "s": 6.96,
+   "e": 7.36
+  },
+  {
+   "w": "liczona",
+   "s": 7.44,
+   "e": 7.68
+  },
+  {
+   "w": "przy",
+   "s": 7.76,
+   "e": 7.92
+  },
+  {
+   "w": "normalnej",
+   "s": 8.0,
+   "e": 8.4
+  },
+  {
+   "w": "prędkości.",
+   "s": 8.48,
+   "e": 9.52
+  },
+  {
+   "w": "Niewykorzystany",
+   "s": 9.573,
+   "e": 10.24
+  },
+  {
+   "w": "limit",
+   "s": 10.4,
+   "e": 10.56
+  },
+  {
+   "w": "przechodzi",
+   "s": 10.6,
+   "e": 10.96
+  },
+  {
+   "w": "na",
+   "s": 11.0,
+   "e": 11.04
+  },
+  {
+   "w": "kolejny",
+   "s": 11.12,
+   "e": 11.44
+  },
+  {
+   "w": "miesiąc,",
+   "s": 11.48,
+   "e": 12.16
+  },
+  {
+   "w": "ale",
+   "s": 12.28,
+   "e": 12.4
+  },
+  {
+   "w": "jeśli",
+   "s": 12.48,
+   "e": 12.72
+  },
+  {
+   "w": "go",
+   "s": 12.76,
+   "e": 12.8
+  },
+  {
+   "w": "przekroczysz,",
+   "s": 12.88,
+   "e": 13.68
+  },
+  {
+   "w": "Legimi",
+   "s": 13.8,
+   "e": 14.16
+  },
+  {
+   "w": "pobierze",
+   "s": 14.213,
+   "e": 14.48
+  },
+  {
+   "w": "kolejną",
+   "s": 14.56,
+   "e": 14.96
+  },
+  {
+   "w": "opłatę.",
+   "s": 15.04,
+   "e": 15.68
+  }
+ ],
+ "speechEnd": 15.559
+}

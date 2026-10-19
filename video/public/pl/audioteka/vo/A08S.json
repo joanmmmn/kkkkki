@@ -1,0 +1,69 @@
+{
+ "id": "A08S",
+ "hash": "c26fde107043",
+ "text": "W Planie Smart godziny liczą się przy normalnej prędkości, a niewykorzystane przepadają.",
+ "duration": 5.2,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "Planie",
+   "s": 0.08,
+   "e": 0.4
+  },
+  {
+   "w": "Smart",
+   "s": 0.64,
+   "e": 0.88
+  },
+  {
+   "w": "godziny",
+   "s": 1.04,
+   "e": 1.36
+  },
+  {
+   "w": "liczą",
+   "s": 1.44,
+   "e": 1.6
+  },
+  {
+   "w": "się",
+   "s": 1.68,
+   "e": 1.84
+  },
+  {
+   "w": "przy",
+   "s": 1.867,
+   "e": 1.92
+  },
+  {
+   "w": "normalnej",
+   "s": 2.0,
+   "e": 2.48
+  },
+  {
+   "w": "prędkości,",
+   "s": 2.52,
+   "e": 3.28
+  },
+  {
+   "w": "a",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "niewykorzystane",
+   "s": 3.48,
+   "e": 4.24
+  },
+  {
+   "w": "przepadają.",
+   "s": 4.4,
+   "e": 5.2
+  }
+ ],
+ "speechEnd": 5.2
+}

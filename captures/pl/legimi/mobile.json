@@ -1,0 +1,85 @@
+{
+ "viewport": [
+  430,
+  932
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/cennik/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    215,
+    700
+   ],
+   "dur": 10
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 2400
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "btn"
+  },
+  {
+   "move": [
+    215,
+    537
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 2,
+ "mobile": true
+}

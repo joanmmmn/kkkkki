@@ -1,0 +1,204 @@
+{
+ "id": "A11",
+ "hash": "0f3f1dea6ed6",
+ "text": "Plusy: bez limitu godzin, audiobooki także na czytniku, duży wybór po angielsku i 14 dni na próbę. Minusy: mało polskich audiobooków, brak słuchania na komputerze, w aplikacji abonamentu nie kupisz, a po rezygnacji tracisz dostęp do książek z abonamentu.",
+ "duration": 16.64,
+ "words": [
+  {
+   "w": "Plusy:",
+   "s": 0.0,
+   "e": 0.8
+  },
+  {
+   "w": "bez",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "limitu",
+   "s": 1.04,
+   "e": 1.36
+  },
+  {
+   "w": "godzin,",
+   "s": 1.48,
+   "e": 2.0
+  },
+  {
+   "w": "audiobooki",
+   "s": 2.12,
+   "e": 2.64
+  },
+  {
+   "w": "także",
+   "s": 2.68,
+   "e": 2.96
+  },
+  {
+   "w": "na",
+   "s": 3.0,
+   "e": 3.04
+  },
+  {
+   "w": "czytniku,",
+   "s": 3.12,
+   "e": 3.92
+  },
+  {
+   "w": "duży",
+   "s": 4.0,
+   "e": 4.16
+  },
+  {
+   "w": "wybór",
+   "s": 4.24,
+   "e": 4.48
+  },
+  {
+   "w": "po",
+   "s": 4.52,
+   "e": 4.56
+  },
+  {
+   "w": "angielsku",
+   "s": 4.64,
+   "e": 5.28
+  },
+  {
+   "w": "i",
+   "s": 5.36,
+   "e": 5.44
+  },
+  {
+   "w": "14",
+   "s": 5.48,
+   "e": 6.08
+  },
+  {
+   "w": "dni",
+   "s": 6.16,
+   "e": 6.32
+  },
+  {
+   "w": "na",
+   "s": 6.4,
+   "e": 6.48
+  },
+  {
+   "w": "próbę.",
+   "s": 6.52,
+   "e": 7.413
+  },
+  {
+   "w": "Minusy:",
+   "s": 7.547,
+   "e": 8.12
+  },
+  {
+   "w": "mało",
+   "s": 8.16,
+   "e": 8.4
+  },
+  {
+   "w": "polskich",
+   "s": 8.44,
+   "e": 8.8
+  },
+  {
+   "w": "audiobooków,",
+   "s": 8.88,
+   "e": 9.64
+  },
+  {
+   "w": "brak",
+   "s": 9.68,
+   "e": 9.92
+  },
+  {
+   "w": "słuchania",
+   "s": 10.04,
+   "e": 10.32
+  },
+  {
+   "w": "na",
+   "s": 10.36,
+   "e": 10.4
+  },
+  {
+   "w": "komputerze,",
+   "s": 10.48,
+   "e": 11.3
+  },
+  {
+   "w": "w",
+   "s": 11.32,
+   "e": 11.34
+  },
+  {
+   "w": "aplikacji",
+   "s": 11.36,
+   "e": 11.84
+  },
+  {
+   "w": "abonamentu",
+   "s": 11.88,
+   "e": 12.4
+  },
+  {
+   "w": "nie",
+   "s": 12.48,
+   "e": 12.56
+  },
+  {
+   "w": "kupisz,",
+   "s": 12.6,
+   "e": 13.16
+  },
+  {
+   "w": "a",
+   "s": 13.2,
+   "e": 13.36
+  },
+  {
+   "w": "po",
+   "s": 13.4,
+   "e": 13.44
+  },
+  {
+   "w": "rezygnacji",
+   "s": 13.52,
+   "e": 14.16
+  },
+  {
+   "w": "tracisz",
+   "s": 14.24,
+   "e": 14.56
+  },
+  {
+   "w": "dostęp",
+   "s": 14.64,
+   "e": 14.96
+  },
+  {
+   "w": "do",
+   "s": 15.0,
+   "e": 15.04
+  },
+  {
+   "w": "książek",
+   "s": 15.2,
+   "e": 15.44
+  },
+  {
+   "w": "z",
+   "s": 15.467,
+   "e": 15.493
+  },
+  {
+   "w": "abonamentu.",
+   "s": 15.52,
+   "e": 16.64
+  }
+ ],
+ "speechEnd": 16.173
+}

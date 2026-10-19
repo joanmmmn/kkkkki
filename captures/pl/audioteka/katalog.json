@@ -1,0 +1,115 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://audioteka.com/pl/katalog/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "clickSel": "button:has-text('Ustawienia zaawansowane')",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "clickSel": "button:has-text('Zapisz')",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    860,
+    492
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "move": [
+    1060,
+    492
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": true
+  },
+  {
+   "mark": "klub"
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "move": [
+    960,
+    760
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "scroll": 320,
+   "dur": 1800
+  },
+  {
+   "wait": 2400
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

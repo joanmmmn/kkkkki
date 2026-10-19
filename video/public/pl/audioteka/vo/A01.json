@@ -1,0 +1,164 @@
+{
+ "id": "A01",
+ "hash": "1f84329f9b58",
+ "text": "Czy warto płacić za Audiotekę? To polska platforma z audiobookami, znana z superprodukcji z gwiazdorską obsadą. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak słuchać 14 dni za darmo.",
+ "duration": 13.28,
+ "words": [
+  {
+   "w": "Czy",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "warto",
+   "s": 0.24,
+   "e": 0.52
+  },
+  {
+   "w": "płacić",
+   "s": 0.56,
+   "e": 0.88
+  },
+  {
+   "w": "za",
+   "s": 0.96,
+   "e": 1.04
+  },
+  {
+   "w": "Audiotekę?",
+   "s": 1.12,
+   "e": 1.76
+  },
+  {
+   "w": "To",
+   "s": 2.08,
+   "e": 2.24
+  },
+  {
+   "w": "polska",
+   "s": 2.28,
+   "e": 2.56
+  },
+  {
+   "w": "platforma",
+   "s": 2.76,
+   "e": 3.0
+  },
+  {
+   "w": "z",
+   "s": 3.04,
+   "e": 3.08
+  },
+  {
+   "w": "audiobookami,",
+   "s": 3.12,
+   "e": 3.84
+  },
+  {
+   "w": "znana",
+   "s": 3.88,
+   "e": 4.08
+  },
+  {
+   "w": "z",
+   "s": 4.16,
+   "e": 4.24
+  },
+  {
+   "w": "superprodukcji",
+   "s": 4.32,
+   "e": 5.04
+  },
+  {
+   "w": "z",
+   "s": 5.08,
+   "e": 5.12
+  },
+  {
+   "w": "gwiazdorską",
+   "s": 5.16,
+   "e": 5.76
+  },
+  {
+   "w": "obsadą.",
+   "s": 5.88,
+   "e": 6.32
+  },
+  {
+   "w": "Sprawdziliśmy",
+   "s": 6.72,
+   "e": 7.28
+  },
+  {
+   "w": "cennik,",
+   "s": 7.36,
+   "e": 7.92
+  },
+  {
+   "w": "regulamin",
+   "s": 8.0,
+   "e": 8.48
+  },
+  {
+   "w": "i",
+   "s": 8.56,
+   "e": 8.6
+  },
+  {
+   "w": "opinie.",
+   "s": 8.64,
+   "e": 9.44
+  },
+  {
+   "w": "Zobacz",
+   "s": 9.48,
+   "e": 9.76
+  },
+  {
+   "w": "plusy,",
+   "s": 9.92,
+   "e": 10.32
+  },
+  {
+   "w": "minusy",
+   "s": 10.48,
+   "e": 10.72
+  },
+  {
+   "w": "i",
+   "s": 10.88,
+   "e": 10.96
+  },
+  {
+   "w": "jak",
+   "s": 11.04,
+   "e": 11.2
+  },
+  {
+   "w": "słuchać",
+   "s": 11.28,
+   "e": 11.68
+  },
+  {
+   "w": "14",
+   "s": 11.76,
+   "e": 12.32
+  },
+  {
+   "w": "dni",
+   "s": 12.4,
+   "e": 12.56
+  },
+  {
+   "w": "za",
+   "s": 12.6,
+   "e": 12.64
+  },
+  {
+   "w": "darmo.",
+   "s": 12.72,
+   "e": 13.28
+  }
+ ],
+ "speechEnd": 13.132
+}

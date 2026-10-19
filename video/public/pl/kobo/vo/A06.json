@@ -1,0 +1,139 @@
+{
+ "id": "A06",
+ "hash": "120b8f48f34d",
+ "text": "Po angielsku wybór jest dużo większy, także wśród audiobooków. Dlatego Kobo Plus Listen ma dziś sens głównie wtedy, gdy słuchasz w oryginale albo uczysz się angielskiego.",
+ "duration": 10.24,
+ "words": [
+  {
+   "w": "Po",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "angielsku",
+   "s": 0.08,
+   "e": 0.72
+  },
+  {
+   "w": "wybór",
+   "s": 0.8,
+   "e": 1.04
+  },
+  {
+   "w": "jest",
+   "s": 1.2,
+   "e": 1.36
+  },
+  {
+   "w": "dużo",
+   "s": 1.44,
+   "e": 1.68
+  },
+  {
+   "w": "większy,",
+   "s": 1.84,
+   "e": 2.347
+  },
+  {
+   "w": "także",
+   "s": 2.373,
+   "e": 2.64
+  },
+  {
+   "w": "wśród",
+   "s": 2.68,
+   "e": 2.88
+  },
+  {
+   "w": "audiobooków.",
+   "s": 2.96,
+   "e": 3.947
+  },
+  {
+   "w": "Dlatego",
+   "s": 3.973,
+   "e": 4.4
+  },
+  {
+   "w": "Kobo",
+   "s": 4.44,
+   "e": 4.72
+  },
+  {
+   "w": "Plus",
+   "s": 4.84,
+   "e": 4.96
+  },
+  {
+   "w": "Listen",
+   "s": 5.04,
+   "e": 5.44
+  },
+  {
+   "w": "ma",
+   "s": 5.52,
+   "e": 5.6
+  },
+  {
+   "w": "dziś",
+   "s": 5.68,
+   "e": 5.84
+  },
+  {
+   "w": "sens",
+   "s": 5.88,
+   "e": 6.16
+  },
+  {
+   "w": "głównie",
+   "s": 6.2,
+   "e": 6.48
+  },
+  {
+   "w": "wtedy,",
+   "s": 6.56,
+   "e": 6.987
+  },
+  {
+   "w": "gdy",
+   "s": 7.013,
+   "e": 7.2
+  },
+  {
+   "w": "słuchasz",
+   "s": 7.32,
+   "e": 7.52
+  },
+  {
+   "w": "w",
+   "s": 7.6,
+   "e": 7.653
+  },
+  {
+   "w": "oryginale",
+   "s": 7.707,
+   "e": 8.32
+  },
+  {
+   "w": "albo",
+   "s": 8.4,
+   "e": 8.72
+  },
+  {
+   "w": "uczysz",
+   "s": 8.8,
+   "e": 9.04
+  },
+  {
+   "w": "się",
+   "s": 9.08,
+   "e": 9.16
+  },
+  {
+   "w": "angielskiego.",
+   "s": 9.2,
+   "e": 10.24
+  }
+ ],
+ "speechEnd": 9.923
+}

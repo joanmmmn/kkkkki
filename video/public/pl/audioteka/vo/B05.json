@@ -1,0 +1,189 @@
+{
+ "id": "B05",
+ "hash": "843e130c0156",
+ "text": "Rezygnujesz na audioteka.com: Ustawienia konta, Zarządzaj Audioteka Klub, „Anuluj subskrypcję”. Jeśli subskrypcja jest z aplikacji, anulujesz ją w Google Play albo App Store. Samo usunięcie aplikacji nie wystarczy. Zrób to przed końcem 14. dnia.",
+ "duration": 16.48,
+ "words": [
+  {
+   "w": "Rezygnujesz",
+   "s": 0.0,
+   "e": 0.64
+  },
+  {
+   "w": "na",
+   "s": 0.76,
+   "e": 0.88
+  },
+  {
+   "w": "audioteka",
+   "s": 0.96,
+   "e": 1.52
+  },
+  {
+   "w": "kropka",
+   "s": 1.56,
+   "e": 1.92
+  },
+  {
+   "w": "kom:",
+   "s": 2.28,
+   "e": 2.68
+  },
+  {
+   "w": "Ustawienia",
+   "s": 2.72,
+   "e": 3.12
+  },
+  {
+   "w": "konta,",
+   "s": 3.2,
+   "e": 3.8
+  },
+  {
+   "w": "Zarządzaj",
+   "s": 3.84,
+   "e": 4.32
+  },
+  {
+   "w": "Audioteka",
+   "s": 4.4,
+   "e": 4.88
+  },
+  {
+   "w": "Klub,",
+   "s": 4.92,
+   "e": 5.547
+  },
+  {
+   "w": "„Anuluj",
+   "s": 5.573,
+   "e": 5.92
+  },
+  {
+   "w": "subskrypcję”.",
+   "s": 6.0,
+   "e": 7.12
+  },
+  {
+   "w": "Jeśli",
+   "s": 7.16,
+   "e": 7.36
+  },
+  {
+   "w": "subskrypcja",
+   "s": 7.48,
+   "e": 7.96
+  },
+  {
+   "w": "jest",
+   "s": 8.0,
+   "e": 8.16
+  },
+  {
+   "w": "z",
+   "s": 8.24,
+   "e": 8.28
+  },
+  {
+   "w": "aplikacji,",
+   "s": 8.32,
+   "e": 9.08
+  },
+  {
+   "w": "anulujesz",
+   "s": 9.12,
+   "e": 9.52
+  },
+  {
+   "w": "ją",
+   "s": 9.6,
+   "e": 9.76
+  },
+  {
+   "w": "w",
+   "s": 9.8,
+   "e": 9.84
+  },
+  {
+   "w": "Gugl",
+   "s": 9.88,
+   "e": 10.16
+  },
+  {
+   "w": "Plej",
+   "s": 10.24,
+   "e": 10.48
+  },
+  {
+   "w": "albo",
+   "s": 10.56,
+   "e": 10.8
+  },
+  {
+   "w": "Ep",
+   "s": 10.88,
+   "e": 10.96
+  },
+  {
+   "w": "Stor.",
+   "s": 11.04,
+   "e": 11.8
+  },
+  {
+   "w": "Samo",
+   "s": 11.84,
+   "e": 12.08
+  },
+  {
+   "w": "usunięcie",
+   "s": 12.16,
+   "e": 12.56
+  },
+  {
+   "w": "aplikacji",
+   "s": 12.6,
+   "e": 13.04
+  },
+  {
+   "w": "nie",
+   "s": 13.12,
+   "e": 13.2
+  },
+  {
+   "w": "wystarczy.",
+   "s": 13.24,
+   "e": 14.04
+  },
+  {
+   "w": "Zrób",
+   "s": 14.08,
+   "e": 14.32
+  },
+  {
+   "w": "to",
+   "s": 14.4,
+   "e": 14.48
+  },
+  {
+   "w": "przed",
+   "s": 14.6,
+   "e": 14.72
+  },
+  {
+   "w": "końcem",
+   "s": 14.8,
+   "e": 15.12
+  },
+  {
+   "w": "czternastego",
+   "s": 15.2,
+   "e": 15.76
+  },
+  {
+   "w": "dnia.",
+   "s": 15.8,
+   "e": 16.48
+  }
+ ],
+ "speechEnd": 16.09
+}

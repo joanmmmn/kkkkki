@@ -1,0 +1,139 @@
+{
+ "id": "A07",
+ "hash": "d25874963c38",
+ "text": "Słuchasz w darmowej aplikacji Kobo Books. Odtwarzacz ma spis rozdziałów, przeskoki o 10 sekund, zmianę prędkości i wyłącznik czasowy, a audiobook pobierzesz i posłuchasz bez internetu.",
+ "duration": 11.92,
+ "words": [
+  {
+   "w": "Słuchasz",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "w",
+   "s": 0.44,
+   "e": 0.48
+  },
+  {
+   "w": "darmowej",
+   "s": 0.52,
+   "e": 0.88
+  },
+  {
+   "w": "aplikacji",
+   "s": 0.96,
+   "e": 1.52
+  },
+  {
+   "w": "Kobo",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "Books.",
+   "s": 2.0,
+   "e": 2.72
+  },
+  {
+   "w": "Odtwarzacz",
+   "s": 2.76,
+   "e": 3.28
+  },
+  {
+   "w": "ma",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "spis",
+   "s": 3.52,
+   "e": 3.76
+  },
+  {
+   "w": "rozdziałów,",
+   "s": 3.88,
+   "e": 4.52
+  },
+  {
+   "w": "przeskoki",
+   "s": 4.56,
+   "e": 4.96
+  },
+  {
+   "w": "o",
+   "s": 5.04,
+   "e": 5.08
+  },
+  {
+   "w": "10",
+   "s": 5.12,
+   "e": 5.44
+  },
+  {
+   "w": "sekund,",
+   "s": 5.52,
+   "e": 6.12
+  },
+  {
+   "w": "zmianę",
+   "s": 6.16,
+   "e": 6.453
+  },
+  {
+   "w": "prędkości",
+   "s": 6.507,
+   "e": 7.12
+  },
+  {
+   "w": "i",
+   "s": 7.2,
+   "e": 7.28
+  },
+  {
+   "w": "wyłącznik",
+   "s": 7.36,
+   "e": 7.84
+  },
+  {
+   "w": "czasowy,",
+   "s": 7.92,
+   "e": 8.76
+  },
+  {
+   "w": "a",
+   "s": 8.8,
+   "e": 8.88
+  },
+  {
+   "w": "audiobook",
+   "s": 8.96,
+   "e": 9.44
+  },
+  {
+   "w": "pobierzesz",
+   "s": 9.48,
+   "e": 9.96
+  },
+  {
+   "w": "i",
+   "s": 10.0,
+   "e": 10.08
+  },
+  {
+   "w": "posłuchasz",
+   "s": 10.16,
+   "e": 10.64
+  },
+  {
+   "w": "bez",
+   "s": 10.72,
+   "e": 10.8
+  },
+  {
+   "w": "internetu.",
+   "s": 11.08,
+   "e": 11.92
+  }
+ ],
+ "speechEnd": 11.473
+}

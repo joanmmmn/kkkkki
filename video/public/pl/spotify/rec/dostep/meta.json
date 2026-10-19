@@ -3,15 +3,15 @@
   1920,
   1080
  ],
- "dpr": 2,
- "frames": 1318,
- "duration": 35.438,
- "offset": 0.025,
+ "dpr": 1.5,
+ "frames": 378,
+ "duration": 11.597,
+ "offset": 0.056,
  "marks": {
-  "list": 0.378,
-  "own": 4.561,
-  "student": 34.638,
-  "end": 35.438
+  "list": 0.348,
+  "own": 4.669,
+  "student": 10.797,
+  "end": 11.597
  },
  "events": []
 }

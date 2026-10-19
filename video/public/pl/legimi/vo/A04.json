@@ -1,0 +1,139 @@
+{
+ "id": "A04",
+ "hash": "d0d7c2b5744c",
+ "text": "Katalog przejrzysz na legimi.pl bez logowania: bestsellery, nowości i kategorie. Przy każdym tytule widzisz, czy jest w abonamencie jako ebook, czy jako audiobook.",
+ "duration": 10.88,
+ "words": [
+  {
+   "w": "Katalog",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "przejrzysz",
+   "s": 0.44,
+   "e": 0.96
+  },
+  {
+   "w": "na",
+   "s": 1.08,
+   "e": 1.2
+  },
+  {
+   "w": "legimi",
+   "s": 1.28,
+   "e": 1.76
+  },
+  {
+   "w": "kropka",
+   "s": 1.8,
+   "e": 2.08
+  },
+  {
+   "w": "pe",
+   "s": 2.16,
+   "e": 2.4
+  },
+  {
+   "w": "el",
+   "s": 2.52,
+   "e": 2.64
+  },
+  {
+   "w": "bez",
+   "s": 2.72,
+   "e": 2.8
+  },
+  {
+   "w": "logowania:",
+   "s": 2.88,
+   "e": 3.707
+  },
+  {
+   "w": "bestsellery,",
+   "s": 3.813,
+   "e": 4.44
+  },
+  {
+   "w": "nowości",
+   "s": 4.48,
+   "e": 5.12
+  },
+  {
+   "w": "i",
+   "s": 5.16,
+   "e": 5.2
+  },
+  {
+   "w": "kategorie.",
+   "s": 5.28,
+   "e": 6.267
+  },
+  {
+   "w": "Przy",
+   "s": 6.293,
+   "e": 6.4
+  },
+  {
+   "w": "każdym",
+   "s": 6.48,
+   "e": 6.72
+  },
+  {
+   "w": "tytule",
+   "s": 6.8,
+   "e": 7.12
+  },
+  {
+   "w": "widzisz,",
+   "s": 7.2,
+   "e": 7.547
+  },
+  {
+   "w": "czy",
+   "s": 7.573,
+   "e": 7.6
+  },
+  {
+   "w": "jest",
+   "s": 7.68,
+   "e": 7.84
+  },
+  {
+   "w": "w",
+   "s": 7.88,
+   "e": 7.92
+  },
+  {
+   "w": "abonamencie",
+   "s": 8.0,
+   "e": 8.48
+  },
+  {
+   "w": "jako",
+   "s": 8.56,
+   "e": 8.8
+  },
+  {
+   "w": "ibuk,",
+   "s": 8.88,
+   "e": 9.413
+  },
+  {
+   "w": "czy",
+   "s": 9.467,
+   "e": 9.52
+  },
+  {
+   "w": "jako",
+   "s": 9.56,
+   "e": 9.84
+  },
+  {
+   "w": "audiobuk.",
+   "s": 9.92,
+   "e": 10.88
+  }
+ ],
+ "speechEnd": 10.553
+}

@@ -1,0 +1,164 @@
+{
+ "id": "A05",
+ "hash": "e0507a3f2bdb",
+ "text": "Na przykład „Solaris” Lema: superprodukcja z Robertem Więckiewiczem, Magdaleną Cielecką i Adamem Woronowiczem, 7 godzin 56 minut, średnia 4,8. Ma znaczek „Dostępne w Klubie”, więc jest w abonamencie.",
+ "duration": 14.32,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "przykład",
+   "s": 0.16,
+   "e": 0.48
+  },
+  {
+   "w": "„Solaris”",
+   "s": 0.72,
+   "e": 1.32
+  },
+  {
+   "w": "Lema:",
+   "s": 1.36,
+   "e": 2.0
+  },
+  {
+   "w": "superprodukcja",
+   "s": 2.08,
+   "e": 2.8
+  },
+  {
+   "w": "z",
+   "s": 2.88,
+   "e": 2.92
+  },
+  {
+   "w": "Robertem",
+   "s": 2.96,
+   "e": 3.36
+  },
+  {
+   "w": "Więckiewiczem,",
+   "s": 3.44,
+   "e": 4.16
+  },
+  {
+   "w": "Magdaleną",
+   "s": 4.24,
+   "e": 4.64
+  },
+  {
+   "w": "Cielecką",
+   "s": 4.72,
+   "e": 5.2
+  },
+  {
+   "w": "i",
+   "s": 5.28,
+   "e": 5.36
+  },
+  {
+   "w": "Adamem",
+   "s": 5.44,
+   "e": 5.76
+  },
+  {
+   "w": "Woronowiczem,",
+   "s": 5.84,
+   "e": 6.8
+  },
+  {
+   "w": "siedem",
+   "s": 6.88,
+   "e": 7.12
+  },
+  {
+   "w": "godzin",
+   "s": 7.2,
+   "e": 7.52
+  },
+  {
+   "w": "pięćdziesiąt",
+   "s": 7.68,
+   "e": 8.12
+  },
+  {
+   "w": "sześć",
+   "s": 8.16,
+   "e": 8.32
+  },
+  {
+   "w": "minut,",
+   "s": 8.48,
+   "e": 8.96
+  },
+  {
+   "w": "średnia",
+   "s": 9.0,
+   "e": 9.44
+  },
+  {
+   "w": "cztery",
+   "s": 9.6,
+   "e": 9.84
+  },
+  {
+   "w": "przecinek",
+   "s": 9.92,
+   "e": 10.32
+  },
+  {
+   "w": "osiem.",
+   "s": 10.4,
+   "e": 11.12
+  },
+  {
+   "w": "Ma",
+   "s": 11.2,
+   "e": 11.28
+  },
+  {
+   "w": "znaczek",
+   "s": 11.36,
+   "e": 11.68
+  },
+  {
+   "w": "„Dostępne",
+   "s": 11.76,
+   "e": 12.32
+  },
+  {
+   "w": "w",
+   "s": 12.36,
+   "e": 12.4
+  },
+  {
+   "w": "Klubie”,",
+   "s": 12.48,
+   "e": 12.96
+  },
+  {
+   "w": "więc",
+   "s": 13.04,
+   "e": 13.2
+  },
+  {
+   "w": "jest",
+   "s": 13.28,
+   "e": 13.44
+  },
+  {
+   "w": "w",
+   "s": 13.48,
+   "e": 13.52
+  },
+  {
+   "w": "abonamencie.",
+   "s": 13.56,
+   "e": 14.32
+  }
+ ],
+ "speechEnd": 14.32
+}

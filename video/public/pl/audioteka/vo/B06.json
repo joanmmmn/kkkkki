@@ -1,0 +1,134 @@
+{
+ "id": "B06",
+ "hash": "68d5d1fe45b4",
+ "text": "Na sonorbooks.pl sprawdzisz, czy twój audiobook jest w Audioteka Klub, i porównasz ceny innych platform. Twoja następna historia już na ciebie czeka.",
+ "duration": 9.52,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "sonorbooks",
+   "s": 0.24,
+   "e": 0.88
+  },
+  {
+   "w": "kropka",
+   "s": 0.96,
+   "e": 1.2
+  },
+  {
+   "w": "pe",
+   "s": 1.28,
+   "e": 1.52
+  },
+  {
+   "w": "el",
+   "s": 1.6,
+   "e": 1.68
+  },
+  {
+   "w": "sprawdzisz,",
+   "s": 1.84,
+   "e": 2.44
+  },
+  {
+   "w": "czy",
+   "s": 2.48,
+   "e": 2.56
+  },
+  {
+   "w": "twój",
+   "s": 2.64,
+   "e": 2.88
+  },
+  {
+   "w": "audiobuk",
+   "s": 2.96,
+   "e": 3.36
+  },
+  {
+   "w": "jest",
+   "s": 3.44,
+   "e": 3.68
+  },
+  {
+   "w": "w",
+   "s": 3.76,
+   "e": 3.8
+  },
+  {
+   "w": "Audioteka",
+   "s": 3.84,
+   "e": 4.32
+  },
+  {
+   "w": "Klub,",
+   "s": 4.4,
+   "e": 4.8
+  },
+  {
+   "w": "i",
+   "s": 4.84,
+   "e": 4.88
+  },
+  {
+   "w": "porównasz",
+   "s": 4.96,
+   "e": 5.36
+  },
+  {
+   "w": "ceny",
+   "s": 5.44,
+   "e": 5.68
+  },
+  {
+   "w": "innych",
+   "s": 5.76,
+   "e": 6.0
+  },
+  {
+   "w": "platform.",
+   "s": 6.24,
+   "e": 6.88
+  },
+  {
+   "w": "Twoja",
+   "s": 6.96,
+   "e": 7.12
+  },
+  {
+   "w": "następna",
+   "s": 7.16,
+   "e": 7.6
+  },
+  {
+   "w": "historia",
+   "s": 7.8,
+   "e": 8.32
+  },
+  {
+   "w": "już",
+   "s": 8.4,
+   "e": 8.56
+  },
+  {
+   "w": "na",
+   "s": 8.6,
+   "e": 8.64
+  },
+  {
+   "w": "ciebie",
+   "s": 8.72,
+   "e": 8.88
+  },
+  {
+   "w": "czeka.",
+   "s": 8.96,
+   "e": 9.52
+  }
+ ],
+ "speechEnd": 9.52
+}

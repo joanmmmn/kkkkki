@@ -1,0 +1,89 @@
+{
+ "id": "B04",
+ "hash": "81520320e054",
+ "text": "Jeśli nic nie zrobisz, po 14 dniach subskrypcja się odnowi: 29,90 zł miesięcznie.",
+ "duration": 6.8,
+ "words": [
+  {
+   "w": "Jeśli",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "nic",
+   "s": 0.44,
+   "e": 0.56
+  },
+  {
+   "w": "nie",
+   "s": 0.64,
+   "e": 0.72
+  },
+  {
+   "w": "zrobisz,",
+   "s": 0.827,
+   "e": 1.28
+  },
+  {
+   "w": "po",
+   "s": 1.36,
+   "e": 1.4
+  },
+  {
+   "w": "czternastu",
+   "s": 1.44,
+   "e": 1.96
+  },
+  {
+   "w": "dniach",
+   "s": 2.0,
+   "e": 2.32
+  },
+  {
+   "w": "subskrypcja",
+   "s": 2.44,
+   "e": 2.96
+  },
+  {
+   "w": "się",
+   "s": 3.0,
+   "e": 3.08
+  },
+  {
+   "w": "odnowi:",
+   "s": 3.12,
+   "e": 3.84
+  },
+  {
+   "w": "dwadzieścia",
+   "s": 3.88,
+   "e": 4.2
+  },
+  {
+   "w": "dziewięć",
+   "s": 4.24,
+   "e": 4.48
+  },
+  {
+   "w": "złotych",
+   "s": 4.56,
+   "e": 4.88
+  },
+  {
+   "w": "dziewięćdziesiąt",
+   "s": 4.96,
+   "e": 5.48
+  },
+  {
+   "w": "groszy",
+   "s": 5.52,
+   "e": 5.76
+  },
+  {
+   "w": "miesięcznie.",
+   "s": 5.84,
+   "e": 6.8
+  }
+ ],
+ "speechEnd": 6.511
+}

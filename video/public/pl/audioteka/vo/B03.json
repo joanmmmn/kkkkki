@@ -1,0 +1,104 @@
+{
+ "id": "B03",
+ "hash": "fc7ce122a44d",
+ "text": "Pobierz aplikację Audioteka i zaloguj się. Tytuły z abonamentu znajdziesz w zakładce „Twoje”, w sekcji „Bezpłatne w Audioteka Klub”.",
+ "duration": 8.16,
+ "words": [
+  {
+   "w": "Pobierz",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "aplikację",
+   "s": 0.4,
+   "e": 0.88
+  },
+  {
+   "w": "Audioteka",
+   "s": 0.96,
+   "e": 1.6
+  },
+  {
+   "w": "i",
+   "s": 1.68,
+   "e": 1.76
+  },
+  {
+   "w": "zaloguj",
+   "s": 1.84,
+   "e": 2.24
+  },
+  {
+   "w": "się.",
+   "s": 2.32,
+   "e": 2.827
+  },
+  {
+   "w": "Tytuły",
+   "s": 2.853,
+   "e": 3.12
+  },
+  {
+   "w": "z",
+   "s": 3.16,
+   "e": 3.2
+  },
+  {
+   "w": "abonamentu",
+   "s": 3.24,
+   "e": 3.8
+  },
+  {
+   "w": "znajdziesz",
+   "s": 3.84,
+   "e": 4.16
+  },
+  {
+   "w": "w",
+   "s": 4.24,
+   "e": 4.267
+  },
+  {
+   "w": "zakładce",
+   "s": 4.293,
+   "e": 4.8
+  },
+  {
+   "w": "„Twoje”,",
+   "s": 4.907,
+   "e": 5.46
+  },
+  {
+   "w": "w",
+   "s": 5.48,
+   "e": 5.5
+  },
+  {
+   "w": "sekcji",
+   "s": 5.52,
+   "e": 6.08
+  },
+  {
+   "w": "„Bezpłatne",
+   "s": 6.133,
+   "e": 6.72
+  },
+  {
+   "w": "w",
+   "s": 6.8,
+   "e": 6.88
+  },
+  {
+   "w": "Audioteka",
+   "s": 6.96,
+   "e": 7.36
+  },
+  {
+   "w": "Klub”.",
+   "s": 7.44,
+   "e": 8.16
+  }
+ ],
+ "speechEnd": 7.774
+}

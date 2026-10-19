@@ -1,0 +1,114 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/ebook-zastrzyk-milosci-audioserial-odcinek-1-tomasz-zak,b1413340.html",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    900,
+    300
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 1800
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "cast"
+  },
+  {
+   "move": [
+    470,
+    316
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "scroll2"
+  },
+  {
+   "scroll": 900,
+   "dur": 1800
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "prod"
+  },
+  {
+   "move": [
+    555,
+    264
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

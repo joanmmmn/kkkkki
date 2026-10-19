@@ -1,0 +1,184 @@
+{
+ "id": "A06",
+ "hash": "60a42f26dd67",
+ "text": "To największy atut Audioteki: ponad 200 superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko 700 tytułów, których posłuchasz tylko tutaj. Nowe produkcje oryginalne klubowicze słyszą tygodnie przed premierą w sklepie.",
+ "duration": 16.16,
+ "words": [
+  {
+   "w": "To",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "największy",
+   "s": 0.12,
+   "e": 0.72
+  },
+  {
+   "w": "atut",
+   "s": 0.88,
+   "e": 1.12
+  },
+  {
+   "w": "Audioteki:",
+   "s": 1.2,
+   "e": 2.0
+  },
+  {
+   "w": "ponad",
+   "s": 2.08,
+   "e": 2.4
+  },
+  {
+   "w": "200",
+   "s": 2.48,
+   "e": 2.88
+  },
+  {
+   "w": "superprodukcji",
+   "s": 2.96,
+   "e": 3.84
+  },
+  {
+   "w": "i",
+   "s": 3.92,
+   "e": 4.0
+  },
+  {
+   "w": "audioseriali,",
+   "s": 4.08,
+   "e": 5.0
+  },
+  {
+   "w": "z",
+   "s": 5.04,
+   "e": 5.12
+  },
+  {
+   "w": "muzyką,",
+   "s": 5.2,
+   "e": 5.72
+  },
+  {
+   "w": "efektami",
+   "s": 5.76,
+   "e": 6.4
+  },
+  {
+   "w": "i",
+   "s": 6.44,
+   "e": 6.48
+  },
+  {
+   "w": "aktorami",
+   "s": 6.56,
+   "e": 6.96
+  },
+  {
+   "w": "jak",
+   "s": 7.04,
+   "e": 7.12
+  },
+  {
+   "w": "w",
+   "s": 7.2,
+   "e": 7.28
+  },
+  {
+   "w": "kinie,",
+   "s": 7.4,
+   "e": 8.027
+  },
+  {
+   "w": "i",
+   "s": 8.053,
+   "e": 8.08
+  },
+  {
+   "w": "blisko",
+   "s": 8.12,
+   "e": 8.48
+  },
+  {
+   "w": "700",
+   "s": 8.52,
+   "e": 8.96
+  },
+  {
+   "w": "tytułów,",
+   "s": 9.04,
+   "e": 9.56
+  },
+  {
+   "w": "których",
+   "s": 9.6,
+   "e": 9.84
+  },
+  {
+   "w": "posłuchasz",
+   "s": 9.92,
+   "e": 10.4
+  },
+  {
+   "w": "tylko",
+   "s": 10.48,
+   "e": 10.72
+  },
+  {
+   "w": "tutaj.",
+   "s": 10.8,
+   "e": 11.573
+  },
+  {
+   "w": "Nowe",
+   "s": 11.627,
+   "e": 11.72
+  },
+  {
+   "w": "produkcje",
+   "s": 11.76,
+   "e": 12.24
+  },
+  {
+   "w": "oryginalne",
+   "s": 12.32,
+   "e": 13.2
+  },
+  {
+   "w": "klubowicze",
+   "s": 13.28,
+   "e": 13.68
+  },
+  {
+   "w": "słyszą",
+   "s": 13.76,
+   "e": 14.08
+  },
+  {
+   "w": "tygodnie",
+   "s": 14.16,
+   "e": 14.64
+  },
+  {
+   "w": "przed",
+   "s": 14.72,
+   "e": 14.8
+  },
+  {
+   "w": "premierą",
+   "s": 14.88,
+   "e": 15.2
+  },
+  {
+   "w": "w",
+   "s": 15.227,
+   "e": 15.253
+  },
+  {
+   "w": "sklepie.",
+   "s": 15.28,
+   "e": 16.16
+  }
+ ],
+ "speechEnd": 15.733
+}

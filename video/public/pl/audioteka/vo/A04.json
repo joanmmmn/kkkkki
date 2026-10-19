@@ -1,0 +1,129 @@
+{
+ "id": "A04",
+ "hash": "40f8329d9d24",
+ "text": "Cały katalog przejrzysz na audioteka.com bez logowania. Przełącz widok z „Wszystkie” na „Audioteka Klub”, a zobaczysz tylko to, czego posłuchasz w abonamencie.",
+ "duration": 10.16,
+ "words": [
+  {
+   "w": "Cały",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "katalog",
+   "s": 0.32,
+   "e": 0.72
+  },
+  {
+   "w": "przejrzysz",
+   "s": 0.8,
+   "e": 1.28
+  },
+  {
+   "w": "na",
+   "s": 1.4,
+   "e": 1.52
+  },
+  {
+   "w": "audioteka",
+   "s": 1.6,
+   "e": 2.16
+  },
+  {
+   "w": "kropka",
+   "s": 2.2,
+   "e": 2.48
+  },
+  {
+   "w": "kom",
+   "s": 2.56,
+   "e": 2.96
+  },
+  {
+   "w": "bez",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "logowania.",
+   "s": 3.2,
+   "e": 4.107
+  },
+  {
+   "w": "Przełącz",
+   "s": 4.133,
+   "e": 4.4
+  },
+  {
+   "w": "widok",
+   "s": 4.48,
+   "e": 4.8
+  },
+  {
+   "w": "z",
+   "s": 4.88,
+   "e": 4.96
+  },
+  {
+   "w": "„Wszystkie”",
+   "s": 4.987,
+   "e": 5.6
+  },
+  {
+   "w": "na",
+   "s": 5.68,
+   "e": 5.92
+  },
+  {
+   "w": "„Audioteka",
+   "s": 5.96,
+   "e": 6.48
+  },
+  {
+   "w": "Klub”,",
+   "s": 6.56,
+   "e": 7.2
+  },
+  {
+   "w": "a",
+   "s": 7.24,
+   "e": 7.28
+  },
+  {
+   "w": "zobaczysz",
+   "s": 7.32,
+   "e": 7.68
+  },
+  {
+   "w": "tylko",
+   "s": 7.76,
+   "e": 8.0
+  },
+  {
+   "w": "to,",
+   "s": 8.08,
+   "e": 8.347
+  },
+  {
+   "w": "czego",
+   "s": 8.373,
+   "e": 8.56
+  },
+  {
+   "w": "posłuchasz",
+   "s": 8.68,
+   "e": 9.04
+  },
+  {
+   "w": "w",
+   "s": 9.067,
+   "e": 9.093
+  },
+  {
+   "w": "abonamencie.",
+   "s": 9.12,
+   "e": 10.16
+  }
+ ],
+ "speechEnd": 9.834
+}

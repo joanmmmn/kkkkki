@@ -1,0 +1,125 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://klub.audioteka.com/audioteka-kids/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "clickSel": "button:has-text('Ustawienia zaawansowane')",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "clickSel": "button:has-text('Zapisz')",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "move": [
+    1131,
+    681
+   ],
+   "dur": 10
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    600,
+    230
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "move": [
+    1300,
+    330
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 1460,
+   "dur": 2800
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "parents"
+  },
+  {
+   "move": [
+    640,
+    330
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

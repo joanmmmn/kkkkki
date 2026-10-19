@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 473,
+ "duration": 13.463,
+ "offset": 0.067,
+ "marks": {
+  "cards": 0.351,
+  "student": 3.073,
+  "duo": 5.091,
+  "scroll": 7.403,
+  "family": 9.534,
+  "end": 13.463
+ },
+ "events": []
+}

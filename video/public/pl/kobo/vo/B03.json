@@ -1,0 +1,94 @@
+{
+ "id": "B03",
+ "hash": "0fcbf3ad1992",
+ "text": "Potem zaloguj się w aplikacji Kobo Books albo na czytniku i dodawaj tytuły z oznaczeniem Kobo Plus.",
+ "duration": 6.4,
+ "words": [
+  {
+   "w": "Potem",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "zaloguj",
+   "s": 0.56,
+   "e": 0.88
+  },
+  {
+   "w": "się",
+   "s": 0.92,
+   "e": 1.04
+  },
+  {
+   "w": "w",
+   "s": 1.067,
+   "e": 1.093
+  },
+  {
+   "w": "aplikacji",
+   "s": 1.12,
+   "e": 1.6
+  },
+  {
+   "w": "Kobo",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "Books",
+   "s": 2.0,
+   "e": 2.4
+  },
+  {
+   "w": "albo",
+   "s": 2.48,
+   "e": 2.64
+  },
+  {
+   "w": "na",
+   "s": 2.72,
+   "e": 2.8
+  },
+  {
+   "w": "czytniku",
+   "s": 2.88,
+   "e": 3.44
+  },
+  {
+   "w": "i",
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "dodawaj",
+   "s": 3.68,
+   "e": 4.08
+  },
+  {
+   "w": "tytuły",
+   "s": 4.16,
+   "e": 4.48
+  },
+  {
+   "w": "z",
+   "s": 4.56,
+   "e": 4.6
+  },
+  {
+   "w": "oznaczeniem",
+   "s": 4.64,
+   "e": 5.2
+  },
+  {
+   "w": "Kobo",
+   "s": 5.28,
+   "e": 5.52
+  },
+  {
+   "w": "Plus.",
+   "s": 5.92,
+   "e": 6.4
+  }
+ ],
+ "speechEnd": 6.21
+}

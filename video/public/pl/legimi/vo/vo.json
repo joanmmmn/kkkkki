@@ -1,0 +1,104 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Czy warto płacić za Legimi? To ebooki i audiobooki w jednym abonamencie. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Legimi 3 dni za darmo.",
+   "say": "Czy warto płacić za Legimi? To ibuki i audiobuki w jednym abonamencie. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Legimi trzy dni za darmo."
+  },
+  {
+   "id": "A02",
+   "text": "Legimi to polska firma z Poznania, która od ponad 10 lat oferuje książki w abonamencie. W pakiecie bez limitu masz około 240 000 tytułów. Jej znak rozpoznawczy to synchrobooki: ebook i audiobook pod jedną okładką. Czytasz w tramwaju, a w domu słuchasz dalej od tego samego miejsca.",
+   "say": "Legimi to polska firma z Poznania, która od ponad dziesięciu lat oferuje książki w abonamencie. W pakiecie bez limitu masz około dwustu czterdziestu tysięcy tytułów. Jej znak rozpoznawczy to synchrobuki: ibuk i audiobuk pod jedną okładką. Czytasz w tramwaju, a w domu słuchasz dalej od tego samego miejsca."
+  },
+  {
+   "id": "A03",
+   "text": "Do słuchania potrzebujesz pakietu z audiobookami. Bez limitu kosztuje 54,99 zł miesięcznie bez umowy albo 49,99 zł z umową na 12 miesięcy. Pakiety z limitem zaczynają się od 14,99 zł za 8 godzin słuchania.",
+   "say": "Do słuchania potrzebujesz pakietu z audiobukami. Bez limitu kosztuje pięćdziesiąt cztery złote dziewięćdziesiąt dziewięć groszy miesięcznie bez umowy albo czterdzieści dziewięć złotych dziewięćdziesiąt dziewięć groszy z umową na dwanaście miesięcy. Pakiety z limitem zaczynają się od czternastu złotych dziewięćdziesięciu dziewięciu groszy za osiem godzin słuchania."
+  },
+  {
+   "id": "A04",
+   "text": "Katalog przejrzysz na legimi.pl bez logowania: bestsellery, nowości i kategorie. Przy każdym tytule widzisz, czy jest w abonamencie jako ebook, czy jako audiobook.",
+   "say": "Katalog przejrzysz na legimi kropka pe el bez logowania: bestsellery, nowości i kategorie. Przy każdym tytule widzisz, czy jest w abonamencie jako ibuk, czy jako audiobuk."
+  },
+  {
+   "id": "A05",
+   "text": "Na przykład „Harda” Elżbiety Cherezińskiej: czyta Filip Kosior, 21 godzin 53 minuty, średnia 4,7 przy 557 ocenach. Obok czasu widzisz też liczbę stron, ważną w pakietach z limitem.",
+   "say": "Na przykład „Harda” Elżbiety Cherezińskiej: czyta Filip Kosior, dwadzieścia jeden godzin pięćdziesiąt trzy minuty, średnia cztery przecinek siedem przy pięciuset pięćdziesięciu siedmiu ocenach. Obok czasu widzisz też liczbę stron, ważną w pakietach z limitem."
+  },
+  {
+   "id": "A06",
+   "text": "W aplikacji, w synchrobookach, przełączasz się między ebookiem a audiobookiem, także bez internetu. Zmienisz prędkość i ustawisz wyłącznik czasowy, także na koniec rozdziału. Możesz też wgrać do 4 własnych ebooków EPUB miesięcznie.",
+   "say": "W aplikacji, w synchrobukach, przełączasz się między ibukiem a audiobukiem, także bez internetu. Zmienisz prędkość i ustawisz wyłącznik czasowy, także na koniec rozdziału. Możesz też wgrać do czterech własnych ibuków w formacie e-pub miesięcznie."
+  },
+  {
+   "id": "A07",
+   "text": "Legimi ma też własne produkcje, jak audioserial „Zastrzyk miłości” z Katarzyną Bujakiewicz – tylko w Legimi. Ale nie wszystko jest w abonamencie: tytuły z Katalogu Klubowego są za dopłatą. Co miesiąc dostajesz 150 punktów, wartych 15 zł – nimi obniżysz te dopłaty.",
+   "say": "Legimi ma też własne produkcje, jak audioserial „Zastrzyk miłości” z Katarzyną Bujakiewicz – tylko w Legimi. Ale nie wszystko jest w abonamencie: tytuły z Katalogu Klubowego są za dopłatą. Co miesiąc dostajesz sto pięćdziesiąt punktów, wartych piętnaście złotych – nimi obniżysz te dopłaty."
+  },
+  {
+   "id": "A08",
+   "text": "W pakietach z limitem czytanie i słuchanie zużywają wspólną pulę stron. Godzina samego audiobooka to około 38 stron, liczona przy normalnej prędkości. Niewykorzystany limit przechodzi na kolejny miesiąc, ale jeśli go przekroczysz, Legimi pobierze kolejną opłatę.",
+   "say": "W pakietach z limitem czytanie i słuchanie zużywają wspólną pulę stron. Godzina samego audiobuka to około trzydziestu ośmiu stron, liczona przy normalnej prędkości. Niewykorzystany limit przechodzi na kolejny miesiąc, ale jeśli go przekroczysz, Legimi pobierze kolejną opłatę."
+  },
+  {
+   "id": "A09",
+   "text": "Pakiet bez limitu działa na 4 urządzeniach: smartfonie, tablecie, komputerze z Windowsem i czytniku. Na Kindle'u przeczytasz do 10 ebooków miesięcznie. Ale audiobooków słuchasz tylko w aplikacji na Androida i iOS.",
+   "say": "Pakiet bez limitu działa na czterech urządzeniach: smartfonie, tablecie, komputerze z Łindołsem i czytniku. Na Kindlu przeczytasz do dziesięciu ibuków miesięcznie. Ale audiobuków słuchasz tylko w aplikacji na Androida i aj o es."
+  },
+  {
+   "id": "A10",
+   "text": "W Google Play Legimi ma 4,5 przy prawie 50 tysiącach ocen, w polskim App Store też 4,5 – przy ponad 16 tysiącach. Użytkownicy chwalą ogromny wybór i cenę. Krytykują błędy aplikacji i dopłaty do części tytułów.",
+   "say": "W Gugl Plej Legimi ma cztery i pół przy prawie pięćdziesięciu tysiącach ocen, w polskim Ep Stor też cztery i pół – przy ponad szesnastu tysiącach. Użytkownicy chwalą ogromny wybór i cenę. Krytykują błędy aplikacji i dopłaty do części tytułów."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: ebooki i audiobooki w jednym abonamencie, synchrobooki, 4 urządzenia z czytnikiem oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobooków nie posłuchasz na komputerze.",
+   "say": "Plusy: ibuki i audiobuki w jednym abonamencie, synchrobuki, cztery urządzenia z czytnikiem oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobuków nie posłuchasz na komputerze."
+  },
+  {
+   "id": "A12",
+   "text": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteka Klub: 29,90 zł bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem.",
+   "say": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteka Klub: dwadzieścia dziewięć złotych dziewięćdziesiąt groszy bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem."
+  },
+  {
+   "id": "B01",
+   "text": "Chcesz to sprawdzić? Legimi daje 3 dni za darmo – raz na konto, raz na urządzenie i raz na kartę.",
+   "say": "Chcesz to sprawdzić? Legimi daje trzy dni za darmo – raz na konto, raz na urządzenie i raz na kartę."
+  },
+  {
+   "id": "B02",
+   "text": "Wejdź na legimi.pl, w cenniku wybierz pakiet i kliknij „Wypróbuj przez 3 dni za darmo”. Załóż konto i podepnij kartę albo PayPal z płatnością cykliczną. Dziś nic nie płacisz.",
+   "say": "Wejdź na legimi kropka pe el, w cenniku wybierz pakiet i kliknij „Wypróbuj przez trzy dni za darmo”. Załóż konto i podepnij kartę albo Pej Pal z płatnością cykliczną. Dziś nic nie płacisz."
+  },
+  {
+   "id": "B03",
+   "text": "Potem pobierz aplikację Legimi na telefon, zaloguj się i dodaj książki na półkę."
+  },
+  {
+   "id": "B04",
+   "text": "Uważaj na umowę. Jeśli wybierzesz umowę na 12 miesięcy i nie zrezygnujesz w okresie próbnym, wiążesz się na rok, a wcześniejsze wypowiedzenie oznacza zwrot rabatu. Bez umowy zrezygnujesz w każdej chwili.",
+   "say": "Uważaj na umowę. Jeśli wybierzesz umowę na dwanaście miesięcy i nie zrezygnujesz w okresie próbnym, wiążesz się na rok, a wcześniejsze wypowiedzenie oznacza zwrot rabatu. Bez umowy zrezygnujesz w każdej chwili."
+  },
+  {
+   "id": "B05",
+   "text": "Rezygnujesz na legimi.pl: Konto, Subskrypcja, przycisk „Zakończ”. Jeśli płacisz przez Apple – w ustawieniach Apple ID. Zrób to przed końcem 3. dnia i pamiętaj: rezygnacja w okresie próbnym kończy dostęp od razu.",
+   "say": "Rezygnujesz na legimi kropka pe el: Konto, Subskrypcja, przycisk „Zakończ”. Jeśli płacisz przez Epl – w ustawieniach Epl aj di. Zrób to przed końcem trzeciego dnia i pamiętaj: rezygnacja w okresie próbnym kończy dostęp od razu."
+  },
+  {
+   "id": "B06",
+   "text": "Zanim zapłacisz, porównaj na sonorbooks.pl ceny i okresy próbne Legimi, Audioteki, Empik Go i innych platform. Twoja następna historia już na ciebie czeka.",
+   "say": "Zanim zapłacisz, porównaj na sonorbooks kropka pe el ceny i okresy próbne Legimi, Audioteki, Empik Go i innych platform. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

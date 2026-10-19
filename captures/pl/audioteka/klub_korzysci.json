@@ -1,0 +1,152 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://klub.audioteka.com/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "clickSel": "button:has-text('Ustawienia zaawansowane')",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "clickSel": "button:has-text('Zapisz')",
+   "dur": 10
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,1560)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "grid"
+  },
+  {
+   "move": [
+    700,
+    302
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "move": [
+    1120,
+    302
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "scroll1"
+  },
+  {
+   "scroll": 1000,
+   "dur": 2200
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "kupuj"
+  },
+  {
+   "move": [
+    660,
+    440
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "scroll": 440,
+   "dur": 2000
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "dziel"
+  },
+  {
+   "move": [
+    1250,
+    480
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "scroll": 1250,
+   "dur": 2400
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "premiery"
+  },
+  {
+   "move": [
+    1250,
+    380
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 3200
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

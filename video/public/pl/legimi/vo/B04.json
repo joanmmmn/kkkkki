@@ -1,0 +1,164 @@
+{
+ "id": "B04",
+ "hash": "401af2aabcfb",
+ "text": "Uważaj na umowę. Jeśli wybierzesz umowę na 12 miesięcy i nie zrezygnujesz w okresie próbnym, wiążesz się na rok, a wcześniejsze wypowiedzenie oznacza zwrot rabatu. Bez umowy zrezygnujesz w każdej chwili.",
+ "duration": 12.72,
+ "words": [
+  {
+   "w": "Uważaj",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "na",
+   "s": 0.48,
+   "e": 0.56
+  },
+  {
+   "w": "umowę.",
+   "s": 0.68,
+   "e": 1.413
+  },
+  {
+   "w": "Jeśli",
+   "s": 1.467,
+   "e": 1.6
+  },
+  {
+   "w": "wybierzesz",
+   "s": 1.68,
+   "e": 2.08
+  },
+  {
+   "w": "umowę",
+   "s": 2.16,
+   "e": 2.4
+  },
+  {
+   "w": "na",
+   "s": 2.44,
+   "e": 2.48
+  },
+  {
+   "w": "12",
+   "s": 2.56,
+   "e": 2.96
+  },
+  {
+   "w": "miesięcy",
+   "s": 3.04,
+   "e": 3.6
+  },
+  {
+   "w": "i",
+   "s": 3.76,
+   "e": 3.84
+  },
+  {
+   "w": "nie",
+   "s": 3.92,
+   "e": 4.0
+  },
+  {
+   "w": "zrezygnujesz",
+   "s": 4.04,
+   "e": 4.64
+  },
+  {
+   "w": "w",
+   "s": 4.667,
+   "e": 4.693
+  },
+  {
+   "w": "okresie",
+   "s": 4.72,
+   "e": 5.04
+  },
+  {
+   "w": "próbnym,",
+   "s": 5.08,
+   "e": 5.8
+  },
+  {
+   "w": "wiążesz",
+   "s": 5.84,
+   "e": 6.24
+  },
+  {
+   "w": "się",
+   "s": 6.28,
+   "e": 6.4
+  },
+  {
+   "w": "na",
+   "s": 6.44,
+   "e": 6.48
+  },
+  {
+   "w": "rok,",
+   "s": 6.56,
+   "e": 7.08
+  },
+  {
+   "w": "a",
+   "s": 7.12,
+   "e": 7.2
+  },
+  {
+   "w": "wcześniejsze",
+   "s": 7.28,
+   "e": 7.76
+  },
+  {
+   "w": "wypowiedzenie",
+   "s": 7.8,
+   "e": 8.4
+  },
+  {
+   "w": "oznacza",
+   "s": 8.44,
+   "e": 8.8
+  },
+  {
+   "w": "zwrot",
+   "s": 8.88,
+   "e": 9.12
+  },
+  {
+   "w": "rabatu.",
+   "s": 9.24,
+   "e": 10.04
+  },
+  {
+   "w": "Bez",
+   "s": 10.08,
+   "e": 10.24
+  },
+  {
+   "w": "umowy",
+   "s": 10.32,
+   "e": 10.8
+  },
+  {
+   "w": "zrezygnujesz",
+   "s": 10.84,
+   "e": 11.44
+  },
+  {
+   "w": "w",
+   "s": 11.52,
+   "e": 11.573
+  },
+  {
+   "w": "każdej",
+   "s": 11.627,
+   "e": 11.84
+  },
+  {
+   "w": "chwili.",
+   "s": 11.92,
+   "e": 12.72
+  }
+ ],
+ "speechEnd": 12.272
+}

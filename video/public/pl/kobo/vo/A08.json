@@ -1,0 +1,144 @@
+{
+ "id": "A08",
+ "hash": "06c8f78770b4",
+ "text": "Najciekawsze: audiobooków posłuchasz też na wybranych czytnikach Kobo, przez słuchawki albo głośnik Bluetooth – na przykład na modelach Clara BW, Clara Colour, Libra Colour czy Sage.",
+ "duration": 10.8,
+ "words": [
+  {
+   "w": "Najciekawsze:",
+   "s": 0.0,
+   "e": 1.04
+  },
+  {
+   "w": "audiobooków",
+   "s": 1.16,
+   "e": 1.68
+  },
+  {
+   "w": "posłuchasz",
+   "s": 1.76,
+   "e": 2.16
+  },
+  {
+   "w": "też",
+   "s": 2.2,
+   "e": 2.32
+  },
+  {
+   "w": "na",
+   "s": 2.36,
+   "e": 2.4
+  },
+  {
+   "w": "wybranych",
+   "s": 2.48,
+   "e": 2.88
+  },
+  {
+   "w": "czytnikach",
+   "s": 2.96,
+   "e": 3.36
+  },
+  {
+   "w": "Kobo,",
+   "s": 3.44,
+   "e": 3.92
+  },
+  {
+   "w": "przez",
+   "s": 3.96,
+   "e": 4.16
+  },
+  {
+   "w": "słuchawki",
+   "s": 4.28,
+   "e": 4.72
+  },
+  {
+   "w": "albo",
+   "s": 4.88,
+   "e": 5.12
+  },
+  {
+   "w": "głośnik",
+   "s": 5.2,
+   "e": 5.6
+  },
+  {
+   "w": "blutut",
+   "s": 5.64,
+   "e": 6.0
+  },
+  {
+   "w": "–",
+   "s": 6.4,
+   "e": 6.427
+  },
+  {
+   "w": "na",
+   "s": 6.453,
+   "e": 6.48
+  },
+  {
+   "w": "przykład",
+   "s": 6.52,
+   "e": 6.8
+  },
+  {
+   "w": "na",
+   "s": 6.88,
+   "e": 6.92
+  },
+  {
+   "w": "modelach",
+   "s": 6.96,
+   "e": 7.36
+  },
+  {
+   "w": "Klara",
+   "s": 7.44,
+   "e": 7.68
+  },
+  {
+   "w": "Be",
+   "s": 7.76,
+   "e": 7.92
+  },
+  {
+   "w": "Wu,",
+   "s": 7.96,
+   "e": 8.32
+  },
+  {
+   "w": "Klara",
+   "s": 8.36,
+   "e": 8.56
+  },
+  {
+   "w": "Kolor,",
+   "s": 8.72,
+   "e": 9.2
+  },
+  {
+   "w": "Libra",
+   "s": 9.28,
+   "e": 9.52
+  },
+  {
+   "w": "Kolor",
+   "s": 9.6,
+   "e": 9.92
+  },
+  {
+   "w": "czy",
+   "s": 10.08,
+   "e": 10.16
+  },
+  {
+   "w": "Sejdż.",
+   "s": 10.24,
+   "e": 10.8
+  }
+ ],
+ "speechEnd": 10.705
+}

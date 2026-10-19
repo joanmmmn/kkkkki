@@ -1,0 +1,91 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "eval": "window.scrollTo(0,600)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    700,
+    520
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 1900,
+   "dur": 2400
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "kat"
+  },
+  {
+   "move": [
+    960,
+    330
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

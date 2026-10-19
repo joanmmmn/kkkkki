@@ -1,0 +1,150 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/ebook-harda-elzbieta-cherezinska,b652962.html",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "clickText": "Recenzje",
+   "dur": 10
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    775,
+    185
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 330,
+   "dur": 1800
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "det"
+  },
+  {
+   "move": [
+    450,
+    577
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "lektor"
+  },
+  {
+   "move": [
+    478,
+    661
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "czas"
+  },
+  {
+   "move": [
+    470,
+    623
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "oceny"
+  },
+  {
+   "move": [
+    596,
+    707
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "strony"
+  },
+  {
+   "move": [
+    541,
+    623
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

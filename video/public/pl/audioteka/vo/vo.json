@@ -1,0 +1,112 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Czy warto płacić za Audiotekę? To polska platforma z audiobookami, znana z superprodukcji z gwiazdorską obsadą. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak słuchać 14 dni za darmo.",
+   "say": "Czy warto płacić za Audiotekę? To polska platforma z audiobukami, znana z superprodukcji z gwiazdorską obsadą. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak słuchać czternaście dni za darmo."
+  },
+  {
+   "id": "A02",
+   "text": "Audioteka działa od ponad 15 lat, a od 2023 roku w całości należy do Wirtualnej Polski. W abonamencie Audioteka Klub masz ponad 50 000 audiobooków, audioseriali i podcastów, ponad 1300 znanych polskich głosów i nawet 500 nowości miesięcznie.",
+   "say": "Audioteka działa od ponad piętnastu lat, a od dwa tysiące dwudziestego trzeciego roku w całości należy do Wirtualnej Polski. W abonamencie Audioteka Klub masz ponad pięćdziesiąt tysięcy audiobuków, audioseriali i podkastów, ponad tysiąc trzysta znanych polskich głosów i nawet pięćset nowości miesięcznie."
+  },
+  {
+   "id": "A03",
+   "text": "Główny plan to Plan Optymalny: 29,90 zł miesięcznie, bez limitu godzin, z 14 dniami za darmo dla nowych. Płacąc z góry za rok, wydasz 299 zł. Plan Smart to 17,90 zł za 20 godzin miesięcznie, a Plan na Start jest tańszy przez pierwsze 3 miesiące.",
+   "say": "Główny plan to Plan Optymalny: dwadzieścia dziewięć złotych dziewięćdziesiąt groszy miesięcznie, bez limitu godzin, z czternastoma dniami za darmo dla nowych. Płacąc z góry za rok, wydasz dwieście dziewięćdziesiąt dziewięć złotych. Plan Smart to siedemnaście złotych dziewięćdziesiąt groszy za dwadzieścia godzin miesięcznie, a Plan na Start jest tańszy przez pierwsze trzy miesiące."
+  },
+  {
+   "id": "A04",
+   "text": "Cały katalog przejrzysz na audioteka.com bez logowania. Przełącz widok z „Wszystkie” na „Audioteka Klub”, a zobaczysz tylko to, czego posłuchasz w abonamencie.",
+   "say": "Cały katalog przejrzysz na audioteka kropka kom bez logowania. Przełącz widok z „Wszystkie” na „Audioteka Klub”, a zobaczysz tylko to, czego posłuchasz w abonamencie."
+  },
+  {
+   "id": "A05",
+   "text": "Na przykład „Solaris” Lema: superprodukcja z Robertem Więckiewiczem, Magdaleną Cielecką i Adamem Woronowiczem, 7 godzin 56 minut, średnia 4,8. Ma znaczek „Dostępne w Klubie”, więc jest w abonamencie.",
+   "say": "Na przykład „Solaris” Lema: superprodukcja z Robertem Więckiewiczem, Magdaleną Cielecką i Adamem Woronowiczem, siedem godzin pięćdziesiąt sześć minut, średnia cztery przecinek osiem. Ma znaczek „Dostępne w Klubie”, więc jest w abonamencie."
+  },
+  {
+   "id": "A06",
+   "text": "To największy atut Audioteki: ponad 200 superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko 700 tytułów, których posłuchasz tylko tutaj. Nowe produkcje oryginalne klubowicze słyszą tygodnie przed premierą w sklepie.",
+   "say": "To największy atut Audioteki: ponad dwieście superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko siedemset tytułów, których posłuchasz tylko tutaj. Nowe produkcje oryginalne klubowicze słyszą tygodnie przed premierą w sklepie."
+  },
+  {
+   "id": "A07",
+   "text": "Ale nie wszystko jest w Klubie. Część audiobooków, ze względów licencyjnych, trzeba kupić. Klubowicze płacą niższą cenę, a kupione tytuły zostają na półce także po rezygnacji.",
+   "say": "Ale nie wszystko jest w Klubie. Część audiobuków, ze względów licencyjnych, trzeba kupić. Klubowicze płacą niższą cenę, a kupione tytuły zostają na półce także po rezygnacji."
+  },
+  {
+   "id": "A08",
+   "text": "W aplikacji ustawisz prędkość, na Androidzie nawet 3 razy szybciej, i drzemkę, a audiobooki pobierzesz do słuchania offline. Konto działa na dwóch urządzeniach, ale słuchasz na jednym naraz.",
+   "say": "W aplikacji ustawisz prędkość, na Androidzie nawet trzy razy szybciej, i drzemkę, a audiobuki pobierzesz do słuchania offline. Konto działa na dwóch urządzeniach, ale słuchasz na jednym naraz."
+  },
+  {
+   "id": "A08S",
+   "text": "W Planie Smart godziny liczą się przy normalnej prędkości, a niewykorzystane przepadają."
+  },
+  {
+   "id": "A08B",
+   "text": "Dla dzieci jest osobna aplikacja Audioteka Kids, w cenie Klubu, na jednym urządzeniu. W Planie Smart słuchanie w niej też zużywa godziny."
+  },
+  {
+   "id": "A09",
+   "text": "Z Klubu korzystasz tylko w aplikacji na Androida i iOS, nie w przeglądarce. W aucie masz Android Auto i CarPlay, dźwięk wyślesz na Chromecast, a aplikacja na iPhone'a działa też z zegarkiem Apple Watch.",
+   "say": "Z Klubu korzystasz tylko w aplikacji na Androida i aj o es, nie w przeglądarce. W aucie masz Android Auto i Kar Plej, dźwięk wyślesz na Kromkast, a aplikacja na ajfona działa też z zegarkiem Epl Łocz."
+  },
+  {
+   "id": "A10",
+   "text": "Oceny są wysokie: 4,8 w Google Play przy prawie 68 tysiącach ocen i 4,7 w polskim App Store przy prawie 42 tysiącach. Użytkownicy chwalą lektorów i produkcje. Krytykują dopłaty do wielu tytułów i błędy aplikacji.",
+   "say": "Oceny są wysokie: cztery przecinek osiem w Gugl Plej przy prawie sześćdziesięciu ośmiu tysiącach ocen i cztery przecinek siedem w polskim Ep Stor przy prawie czterdziestu dwóch tysiącach. Użytkownicy chwalą lektorów i produkcje. Krytykują dopłaty do wielu tytułów i błędy aplikacji."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: bez limitu godzin, superprodukcje i wyłączności, 14 dni na próbę i tańszy Plan Smart. Minusy: tylko audio, bez ebooków, część tytułów do dokupienia, a z Klubu korzystasz tylko w aplikacji i na jednym urządzeniu naraz.",
+   "say": "Plusy: bez limitu godzin, superprodukcje i wyłączności, czternaście dni na próbę i tańszy Plan Smart. Minusy: tylko audio, bez ibuków, część tytułów do dokupienia, a z Klubu korzystasz tylko w aplikacji i na jednym urządzeniu naraz."
+  },
+  {
+   "id": "A12",
+   "text": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wystarczy Plan Smart. A jeśli chcesz też czytać ebooki, porównaj z Legimi albo Empik Go.",
+   "say": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wystarczy Plan Smart. A jeśli chcesz też czytać ibuki, porównaj z Legimi albo Empik Go."
+  },
+  {
+   "id": "B01",
+   "text": "Chcesz wypróbować? Nowi klubowicze mają 14 dni za darmo, tylko w miesięcznym Planie Optymalnym.",
+   "say": "Chcesz wypróbować? Nowi klubowicze mają czternaście dni za darmo, tylko w miesięcznym Planie Optymalnym."
+  },
+  {
+   "id": "B02",
+   "text": "Wejdź na klub.audioteka.com, przy płatności miesięcznej kliknij „Wypróbuj 14 dni za darmo”, załóż konto i podaj metodę płatności. Przez 14 dni nic nie płacisz.",
+   "say": "Wejdź na klub kropka audioteka kropka kom, przy płatności miesięcznej kliknij „Wypróbuj czternaście dni za darmo”, załóż konto i podaj metodę płatności. Przez czternaście dni nic nie płacisz."
+  },
+  {
+   "id": "B03",
+   "text": "Pobierz aplikację Audioteka i zaloguj się. Tytuły z abonamentu znajdziesz w zakładce „Twoje”, w sekcji „Bezpłatne w Audioteka Klub”."
+  },
+  {
+   "id": "B04",
+   "text": "Jeśli nic nie zrobisz, po 14 dniach subskrypcja się odnowi: 29,90 zł miesięcznie.",
+   "say": "Jeśli nic nie zrobisz, po czternastu dniach subskrypcja się odnowi: dwadzieścia dziewięć złotych dziewięćdziesiąt groszy miesięcznie."
+  },
+  {
+   "id": "B05",
+   "text": "Rezygnujesz na audioteka.com: Ustawienia konta, Zarządzaj Audioteka Klub, „Anuluj subskrypcję”. Jeśli subskrypcja jest z aplikacji, anulujesz ją w Google Play albo App Store. Samo usunięcie aplikacji nie wystarczy. Zrób to przed końcem 14. dnia.",
+   "say": "Rezygnujesz na audioteka kropka kom: Ustawienia konta, Zarządzaj Audioteka Klub, „Anuluj subskrypcję”. Jeśli subskrypcja jest z aplikacji, anulujesz ją w Gugl Plej albo Ep Stor. Samo usunięcie aplikacji nie wystarczy. Zrób to przed końcem czternastego dnia."
+  },
+  {
+   "id": "B06",
+   "text": "Na sonorbooks.pl sprawdzisz, czy twój audiobook jest w Audioteka Klub, i porównasz ceny innych platform. Twoja następna historia już na ciebie czeka.",
+   "say": "Na sonorbooks kropka pe el sprawdzisz, czy twój audiobuk jest w Audioteka Klub, i porównasz ceny innych platform. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

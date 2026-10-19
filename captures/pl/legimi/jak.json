@@ -1,0 +1,143 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.legimi.pl/jak-to-dziala/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    560,
+    468
+   ],
+   "dur": 1200
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "btn"
+  },
+  {
+   "move": [
+    535,
+    592
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 700,
+   "dur": 2000
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "steps"
+  },
+  {
+   "move": [
+    532,
+    350
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1100
+  },
+  {
+   "mark": "s2"
+  },
+  {
+   "move": [
+    817,
+    350
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "s3"
+  },
+  {
+   "move": [
+    1102,
+    350
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1300
+  },
+  {
+   "mark": "s4"
+  },
+  {
+   "move": [
+    1387,
+    350
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

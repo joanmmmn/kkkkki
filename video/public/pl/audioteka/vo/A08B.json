@@ -1,0 +1,119 @@
+{
+ "id": "A08B",
+ "hash": "9819faf7f69a",
+ "text": "Dla dzieci jest osobna aplikacja Audioteka Kids, w cenie Klubu, na jednym urządzeniu. W Planie Smart słuchanie w niej też zużywa godziny.",
+ "duration": 8.72,
+ "words": [
+  {
+   "w": "Dla",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "dzieci",
+   "s": 0.24,
+   "e": 0.56
+  },
+  {
+   "w": "jest",
+   "s": 0.64,
+   "e": 0.88
+  },
+  {
+   "w": "osobna",
+   "s": 0.96,
+   "e": 1.28
+  },
+  {
+   "w": "aplikacja",
+   "s": 1.36,
+   "e": 1.92
+  },
+  {
+   "w": "Audioteka",
+   "s": 2.0,
+   "e": 2.48
+  },
+  {
+   "w": "Kids,",
+   "s": 2.56,
+   "e": 3.12
+  },
+  {
+   "w": "w",
+   "s": 3.147,
+   "e": 3.173
+  },
+  {
+   "w": "cenie",
+   "s": 3.2,
+   "e": 3.44
+  },
+  {
+   "w": "Klubu,",
+   "s": 3.52,
+   "e": 4.027
+  },
+  {
+   "w": "na",
+   "s": 4.053,
+   "e": 4.08
+  },
+  {
+   "w": "jednym",
+   "s": 4.16,
+   "e": 4.4
+  },
+  {
+   "w": "urządzeniu.",
+   "s": 4.44,
+   "e": 5.48
+  },
+  {
+   "w": "W",
+   "s": 5.52,
+   "e": 5.56
+  },
+  {
+   "w": "Planie",
+   "s": 5.6,
+   "e": 5.84
+  },
+  {
+   "w": "Smart",
+   "s": 5.92,
+   "e": 6.32
+  },
+  {
+   "w": "słuchanie",
+   "s": 6.4,
+   "e": 6.8
+  },
+  {
+   "w": "w",
+   "s": 6.88,
+   "e": 6.987
+  },
+  {
+   "w": "niej",
+   "s": 7.093,
+   "e": 7.2
+  },
+  {
+   "w": "też",
+   "s": 7.28,
+   "e": 7.4
+  },
+  {
+   "w": "zużywa",
+   "s": 7.44,
+   "e": 7.76
+  },
+  {
+   "w": "godziny.",
+   "s": 7.84,
+   "e": 8.72
+  }
+ ],
+ "speechEnd": 8.302
+}
