@@ -1,6 +1,6 @@
 {
- "total_frames": 13434,
- "seconds": 268.68,
+ "total_frames": 13480,
+ "seconds": 269.6,
  "chapters": [
   {
    "t": 13.64,
@@ -15,39 +15,39 @@
    "label": "Katalog i Empik Go Originals"
   },
   {
-   "t": 81.86,
+   "t": 82.18,
    "label": "Switch i odtwarzacz"
   },
   {
-   "t": 100.0,
+   "t": 100.32,
    "label": "Limit w Go Standard"
   },
   {
-   "t": 117.84,
+   "t": 118.16,
    "label": "Tryb dziecięcy"
   },
   {
-   "t": 129.14,
+   "t": 129.46,
    "label": "Urządzenia i czytniki"
   },
   {
-   "t": 147.66,
+   "t": 147.98,
    "label": "Opinie"
   },
   {
-   "t": 164.1,
+   "t": 164.42,
    "label": "Plusy i minusy"
   },
   {
-   "t": 182.82,
+   "t": 182.74,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 198.98,
+   "t": 199.9,
    "label": "Jak wypróbować 7 dni za darmo"
   },
   {
-   "t": 231.74,
+   "t": 232.66,
    "label": "Pierwsza opłata i jak zrezygnować"
   }
  ],
@@ -88,14 +88,14 @@
    "id": "A05",
    "kind": "rec",
    "start": 3386,
-   "dur": 721,
+   "dur": 737,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A06",
    "kind": "features",
-   "start": 4107,
+   "start": 4123,
    "dur": 893,
    "lead": 26,
    "bump": "Aplikacja"
@@ -103,7 +103,7 @@
   {
    "id": "A07",
    "kind": "rec",
-   "start": 5000,
+   "start": 5016,
    "dur": 892,
    "lead": 7,
    "bump": null
@@ -111,7 +111,7 @@
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5892,
+   "start": 5908,
    "dur": 565,
    "lead": 7,
    "bump": null
@@ -119,7 +119,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6457,
+   "start": 6473,
    "dur": 940,
    "lead": 7,
    "bump": null
@@ -127,7 +127,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7397,
+   "start": 7413,
    "dur": 822,
    "lead": 26,
    "bump": "Opinie"
@@ -135,23 +135,23 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8219,
-   "dur": 936,
+   "start": 8235,
+   "dur": 916,
    "lead": 26,
    "bump": "Plusy i minusy"
   },
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9155,
-   "dur": 808,
+   "start": 9151,
+   "dur": 858,
    "lead": 26,
    "bump": "Werdykt"
   },
   {
    "id": "B01",
    "kind": "stat",
-   "start": 9963,
+   "start": 10009,
    "dur": 358,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -159,7 +159,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10321,
+   "start": 10367,
    "dur": 774,
    "lead": 7,
    "bump": null
@@ -167,7 +167,7 @@
   {
    "id": "B03",
    "kind": "rec",
-   "start": 11095,
+   "start": 11141,
    "dur": 492,
    "lead": 7,
    "bump": null
@@ -175,7 +175,7 @@
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11587,
+   "start": 11633,
    "dur": 449,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 12036,
+   "start": 12082,
    "dur": 525,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12561,
+   "start": 12607,
    "dur": 873,
    "lead": 7,
    "bump": null
