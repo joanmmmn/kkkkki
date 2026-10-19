@@ -1,6 +1,6 @@
 {
- "total_frames": 13717,
- "seconds": 274.34,
+ "total_frames": 13725,
+ "seconds": 274.5,
  "chapters": [
   {
    "t": 15.42,
@@ -27,27 +27,27 @@
    "label": "Zasady bibliotek: Łódź i Wrocław"
   },
   {
-   "t": 118.32,
+   "t": 118.86,
    "label": "Gdańsk, Poznań i Warszawa"
   },
   {
-   "t": 138.36,
+   "t": 138.9,
    "label": "Trzy zasady wspólne"
   },
   {
-   "t": 152.82,
+   "t": 153.64,
    "label": "Aplikacje i oceny"
   },
   {
-   "t": 176.9,
+   "t": 177.72,
    "label": "Plusy i minusy"
   },
   {
-   "t": 190.88,
+   "t": 191.7,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 204.48,
+   "t": 205.3,
    "label": "Jak odebrać kod krok po kroku"
   }
  ],
@@ -104,14 +104,14 @@
    "id": "A07",
    "kind": "rec",
    "start": 4981,
-   "dur": 935,
+   "dur": 962,
    "lead": 26,
    "bump": "Każda biblioteka inaczej"
   },
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5916,
+   "start": 5943,
    "dur": 1002,
    "lead": 7,
    "bump": null
@@ -119,15 +119,15 @@
   {
    "id": "A08B",
    "kind": "features",
-   "start": 6918,
-   "dur": 737,
+   "start": 6945,
+   "dur": 751,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A09",
    "kind": "devices",
-   "start": 7655,
+   "start": 7696,
    "dur": 567,
    "lead": 26,
    "bump": "Aplikacje"
@@ -135,7 +135,7 @@
   {
    "id": "A10",
    "kind": "features",
-   "start": 8222,
+   "start": 8263,
    "dur": 637,
    "lead": 7,
    "bump": null
@@ -143,7 +143,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8859,
+   "start": 8900,
    "dur": 699,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -151,7 +151,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9558,
+   "start": 9599,
    "dur": 680,
    "lead": 26,
    "bump": "Werdykt"
@@ -159,7 +159,7 @@
   {
    "id": "B01",
    "kind": "steps",
-   "start": 10238,
+   "start": 10279,
    "dur": 475,
    "lead": 26,
    "bump": "Jak odebrać kod"
@@ -167,7 +167,7 @@
   {
    "id": "B02",
    "kind": "rec",
-   "start": 10713,
+   "start": 10754,
    "dur": 445,
    "lead": 7,
    "bump": null
@@ -175,15 +175,15 @@
   {
    "id": "B03",
    "kind": "stat",
-   "start": 11158,
-   "dur": 482,
+   "start": 11199,
+   "dur": 449,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B04",
    "kind": "steps",
-   "start": 11640,
+   "start": 11648,
    "dur": 440,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 12080,
+   "start": 12088,
    "dur": 617,
    "lead": 7,
    "bump": null
@@ -199,7 +199,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12697,
+   "start": 12705,
    "dur": 1020,
    "lead": 7,
    "bump": null

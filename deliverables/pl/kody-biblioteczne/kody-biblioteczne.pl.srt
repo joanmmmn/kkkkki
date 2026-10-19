@@ -55,17 +55,17 @@ kodu nie da się nawet podpiąć karty
 
 13
 00:00:45,260 --> 00:00:49,030
-płatniczej: po 30 dniach
+płatniczej: po 30 dniach
 dostęp po prostu wygasa.
 
 14
 00:00:49,540 --> 00:00:55,820
 Legimi to e-booki i audiobooki: wrocławska
-biblioteka podaje około 80 000 audiobooków
+biblioteka podaje około 80 000 audiobooków
 
 15
 00:00:55,860 --> 00:00:58,700
-i 243 000 e-booków.
+i 243 000 e-booków.
 
 16
 00:00:58,740 --> 00:01:02,180
@@ -83,7 +83,7 @@ Empik Go to audiobooki,
 e-booki, słuchowiska i podcasty.
 
 19
-00:01:10,140 --> 00:01:14,150
+00:01:10,140 --> 00:01:16,020
 Ośmioznakowy kod wpisujesz
 na empik.com/biblioteki/kod.
 
@@ -93,7 +93,7 @@ Działa najczęściej 30 dni, bez limitu
 tytułów, na jednym telefonie lub tablecie
 
 21
-00:01:20,660 --> 00:01:22,442
+00:01:20,660 --> 00:01:22,655
 i jednym czytniku, plus Kindle.
 
 22
@@ -108,198 +108,198 @@ zalogowaniu na promo.audioteka.com, w polu
 
 24
 00:01:34,160 --> 00:01:39,730
-„Aktywuj dostęp”. Dostęp trwa 30 dni,
+„Aktywuj dostęp”. Dostęp trwa 30 dni,
 na maksymalnie dwóch urządzeniach.
 
 25
-00:01:40,140 --> 00:01:42,620
+00:01:40,140 --> 00:01:42,740
 Ale każda biblioteka ma własne zasady.
 
 26
-00:01:42,660 --> 00:01:47,460
+00:01:42,780 --> 00:01:47,833
 W Łodzi kody wydaje każda filia, co
-miesiąc, osobom od 15 lat, i tylko na
+miesiąc, osobom od 15 lat, i tylko na
 
 27
-00:01:47,500 --> 00:01:50,793
+00:01:47,873 --> 00:01:51,033
 papierze. W październiku
 skończyły się już wszystkie.
 
 28
-00:01:50,833 --> 00:01:56,300
-We Wrocławiu wydają je tylko 3 filie, kod
-działa aż 90 dni, ale kolejny dostaniesz
+00:01:51,073 --> 00:01:56,460
+We Wrocławiu wydają je tylko 3 filie,
+kod działa aż 90 dni, ale kolejny możesz
 
 29
-00:01:56,340 --> 00:01:58,310
-dopiero po 3 miesiącach.
+00:01:56,500 --> 00:01:58,870
+dostać dopiero po 3 miesiącach.
 
 30
-00:01:58,460 --> 00:02:03,300
+00:01:59,000 --> 00:02:03,840
 W Gdańsku kod generujesz sam w internecie,
 ale tylko jeśli w tym roku wypożyczyłeś
 
 31
-00:02:03,340 --> 00:02:04,953
+00:02:03,880 --> 00:02:05,493
 choć jedną książkę.
 
 32
-00:02:04,993 --> 00:02:09,300
+00:02:05,533 --> 00:02:09,840
 W Poznaniu prośby przyjmowane są tylko
 mailem, pierwszego dnia roboczego miesiąca
 
 33
-00:02:09,340 --> 00:02:14,073
+00:02:09,880 --> 00:02:14,613
 od 9:00. A w Warszawie każda biblioteka
 dzielnicowa ma własne zasady:
 
 34
-00:02:14,113 --> 00:02:18,390
+00:02:14,653 --> 00:02:18,930
 na Bielanach jest formularz online,
 w Wesołej – kody do Audioteki.
 
 35
-00:02:18,500 --> 00:02:21,180
+00:02:19,040 --> 00:02:21,693
 Trzy zasady obowiązują prawie wszędzie.
 
 36
-00:02:21,220 --> 00:02:25,820
-Jeden kod na osobę w miesiącu,
+00:02:21,733 --> 00:02:26,600
+Najwyżej jeden kod w miesiącu,
 zwykle albo Legimi, albo Empik Go.
 
 37
-00:02:25,860 --> 00:02:30,460
+00:02:26,640 --> 00:02:31,000
 Kod trzeba aktywować do końca miesiąca,
 inaczej kolejnego możesz nie dostać.
 
 38
-00:02:30,500 --> 00:02:33,150
+00:02:31,040 --> 00:02:33,930
 I nie możesz mieć zaległości w bibliotece.
 
 39
-00:02:33,620 --> 00:02:37,056
+00:02:34,440 --> 00:02:38,053
 Słuchasz w aplikacji serwisu,
 na Androidzie albo iPhonie.
 
 40
-00:02:37,273 --> 00:02:42,420
+00:02:38,093 --> 00:02:43,240
 Audiobooki pobrane w Legimi i Empik Go
 działają offline, a Empik Go obsługuje też
 
 41
-00:02:42,460 --> 00:02:43,777
+00:02:43,280 --> 00:02:44,904
 Android Auto i CarPlay.
 
 42
-00:02:44,580 --> 00:02:50,990
+00:02:45,400 --> 00:02:52,320
 A aplikacje? W Google Play i w polskim App
-Storze wszystkie trzy mają od 4,5 do 4,8,
+Storze wszystkie trzy mają od 4,5 do 4,8,
 
 43
-00:02:51,540 --> 00:02:53,180
+00:02:52,360 --> 00:02:54,000
 przy tysiącach opinii.
 
 44
-00:02:53,220 --> 00:02:57,150
+00:02:54,040 --> 00:02:57,970
 Z kodem słuchasz w tych samych
 aplikacjach co płacący abonenci.
 
 45
-00:02:57,700 --> 00:03:03,020
+00:02:58,520 --> 00:03:03,840
 Plusy: 0 zł, bez limitu tytułów,
 z bestsellerami i nowościami, w pełnych
 
 46
-00:03:03,060 --> 00:03:08,727
+00:03:03,880 --> 00:03:09,547
 aplikacjach. Minusy: kodów jest mało,
 trzeba pilnować dat, często iść do filii,
 
 47
-00:03:08,767 --> 00:03:11,070
+00:03:09,587 --> 00:03:11,890
 a dostęp kończy się po miesiącu.
 
 48
-00:03:11,680 --> 00:03:16,520
+00:03:12,500 --> 00:03:17,340
 Warto? Jeśli masz kartę i trochę
 cierpliwości, to najtańszy legalny sposób
 
 49
-00:03:16,560 --> 00:03:18,640
+00:03:17,380 --> 00:03:19,460
 na nowości: zero złotych.
 
 50
-00:03:18,680 --> 00:03:22,720
+00:03:19,500 --> 00:03:23,540
 Jeśli nie chcesz polować na kody, zostają
 okresy próbne serwisów albo darmowa
 
 51
-00:03:22,760 --> 00:03:24,730
+00:03:23,580 --> 00:03:25,550
 klasyka z Wolnych Lektur.
 
 52
-00:03:25,280 --> 00:03:29,360
+00:03:26,100 --> 00:03:30,180
 Jak odebrać kod? Krok pierwszy:
 zapisz się do biblioteki.
 
 53
-00:03:29,400 --> 00:03:34,250
+00:03:30,220 --> 00:03:35,070
 Zabierz dokument tożsamości: w Łodzi
 kartę dostajesz od ręki w każdej filii.
 
 54
-00:03:34,400 --> 00:03:39,640
+00:03:35,220 --> 00:03:40,460
 Krok drugi: na stronie swojej biblioteki
 sprawdź, który serwis oferuje i jak wydaje
 
 55
-00:03:39,680 --> 00:03:42,810
+00:03:40,500 --> 00:03:43,630
 kody: w filii, mailem czy przez formularz.
 
 56
-00:03:43,300 --> 00:03:48,180
+00:03:44,120 --> 00:03:49,010
 Krok trzeci: zgłoś się pierwszego dnia
 wydawania, najlepiej z samego rana.
 
 57
-00:03:48,220 --> 00:03:52,750
-We Wrocławiu najbliższe terminy
-to 2 listopada i 1 grudnia.
+00:03:49,160 --> 00:03:52,610
+We Wrocławiu i w Poznaniu to
+pierwszy dzień roboczy miesiąca.
 
 58
-00:03:52,940 --> 00:03:57,820
+00:03:53,100 --> 00:03:57,980
 Krok czwarty: aktywuj kod jeszcze w tym
 samym miesiącu, na stronie serwisu, którą
 
 59
-00:03:57,860 --> 00:04:01,670
+00:03:58,020 --> 00:04:01,830
 poda biblioteka, i zaloguj
 się albo załóż konto.
 
 60
-00:04:01,740 --> 00:04:06,980
+00:04:01,900 --> 00:04:07,140
 Krok piąty: pobierz aplikację, zaloguj się
 tym samym kontem i ściągnij audiobooki do
 
 61
-00:04:07,020 --> 00:04:12,500
+00:04:07,180 --> 00:04:12,660
 słuchania offline. Gdy dostęp wygaśnie,
-zwykle po 30 dniach, po nowy kod wracasz
+zwykle po 30 dniach, po nowy kod wracasz
 
 62
-00:04:12,540 --> 00:04:13,590
+00:04:12,700 --> 00:04:13,750
 do biblioteki.
 
 63
-00:04:14,080 --> 00:04:20,240
+00:04:14,240 --> 00:04:20,400
 Kodu zabrakło? Na sonorbooks.pl porównasz
 okresy próbne i ceny Audioteki, Empik Go
 
 64
-00:04:20,280 --> 00:04:24,147
+00:04:20,440 --> 00:04:24,307
 czy Legimi i sprawdzisz, gdzie
 posłuchać audiobooka i za ile.
 
 65
-00:04:24,187 --> 00:04:27,050
+00:04:24,347 --> 00:04:27,210
 Twoja następna historia
 już na ciebie czeka.

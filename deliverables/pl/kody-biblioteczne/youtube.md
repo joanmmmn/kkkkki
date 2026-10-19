@@ -26,10 +26,10 @@ Kodów jest mało, każda biblioteka ma własne zasady, a w wielu kody kończą 
 1:39 Zasady bibliotek: Łódź i Wrocław
 1:58 Gdańsk, Poznań i Warszawa
 2:18 Trzy zasady wspólne
-2:32 Aplikacje i oceny
-2:56 Plusy i minusy
-3:10 Werdykt: czy warto?
-3:24 Jak odebrać kod krok po kroku
+2:33 Aplikacje i oceny
+2:57 Plusy i minusy
+3:11 Werdykt: czy warto?
+3:25 Jak odebrać kod krok po kroku
 
 W filmie:
 • Jak to działa: biblioteka kupuje pulę kodów i rozdaje je czytelnikom za darmo; kod daje dostęp do aplikacji serwisu, zwykle na 30 dni i bez limitu tytułów.
