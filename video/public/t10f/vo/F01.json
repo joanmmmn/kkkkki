@@ -1,35 +1,34 @@
 {
  "id": "F01",
- "hash": "estimate",
- "estimate": true,
+ "hash": "3afba0e7b1ef",
  "text": "Hay historias que se leen.",
- "duration": 2.048,
- "speechEnd": 1.798,
+ "duration": 1.84,
  "words": [
   {
    "w": "Hay",
    "s": 0.0,
-   "e": 0.202
+   "e": 0.24
   },
   {
    "w": "historias",
-   "s": 0.269,
-   "e": 0.874
+   "s": 0.44,
+   "e": 0.88
   },
   {
    "w": "que",
-   "s": 0.941,
-   "e": 1.143
+   "s": 0.96,
+   "e": 1.04
   },
   {
    "w": "se",
-   "s": 1.21,
-   "e": 1.345
+   "s": 1.12,
+   "e": 1.2
   },
   {
    "w": "leen.",
-   "s": 1.412,
-   "e": 1.748
+   "s": 1.4,
+   "e": 1.84
   }
- ]
+ ],
+ "speechEnd": 1.726
 }

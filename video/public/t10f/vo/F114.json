@@ -1,40 +1,39 @@
 {
  "id": "F114",
- "hash": "estimate",
- "estimate": true,
+ "hash": "1e003bd60721",
  "text": "Tu próxima historia te está esperando.",
- "duration": 2.855,
- "speechEnd": 2.605,
+ "duration": 3.04,
  "words": [
   {
    "w": "Tu",
    "s": 0.0,
-   "e": 0.134
+   "e": 0.08
   },
   {
    "w": "próxima",
-   "s": 0.202,
-   "e": 0.672
+   "s": 0.16,
+   "e": 0.56
   },
   {
    "w": "historia",
-   "s": 0.74,
-   "e": 1.278
+   "s": 0.76,
+   "e": 1.28
   },
   {
    "w": "te",
-   "s": 1.345,
-   "e": 1.479
+   "s": 1.36,
+   "e": 1.44
   },
   {
    "w": "está",
-   "s": 1.547,
-   "e": 1.816
+   "s": 1.52,
+   "e": 1.76
   },
   {
    "w": "esperando.",
-   "s": 1.883,
-   "e": 2.555
+   "s": 1.84,
+   "e": 3.04
   }
- ]
+ ],
+ "speechEnd": 2.584
 }
