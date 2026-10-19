@@ -1,8 +1,8 @@
 {
  "id": "A07",
- "hash": "1ce09f2eb3bb",
- "text": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz MP3, OGG, DAISY dla osób z trudnościami w czytaniu i EPUB z dźwiękiem. Całą książkę ściągniesz jednym plikiem ZIP. Nagrania są na wolnych licencjach, więc pliki zostają u ciebie.",
- "duration": 15.6,
+ "hash": "c3e9152b75ca",
+ "text": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz MP3, OGG, DAISY dla osób z trudnościami w czytaniu i EPUB z dźwiękiem. Całą książkę ściągniesz jednym plikiem ZIP. Nagrania są na wolnych licencjach: pobrane pliki możesz zatrzymać i legalnie udostępniać dalej.",
+ "duration": 17.88,
  "words": [
   {
    "w": "Chcesz",
@@ -142,58 +142,74 @@
   {
    "w": "zip.",
    "s": 11.44,
-   "e": 12.027
+   "e": 11.96
   },
   {
    "w": "Nagrania",
-   "s": 12.053,
-   "e": 12.4
+   "s": 11.96,
+   "e": 12.44
   },
   {
    "w": "są",
-   "s": 12.44,
-   "e": 12.56
+   "s": 12.48,
+   "e": 12.6
   },
   {
    "w": "na",
-   "s": 12.64,
-   "e": 12.72
+   "s": 12.68,
+   "e": 12.76
   },
   {
    "w": "wolnych",
-   "s": 12.76,
-   "e": 13.04
+   "s": 12.8,
+   "e": 13.08
   },
   {
-   "w": "licencjach,",
-   "s": 13.16,
-   "e": 13.64
+   "w": "licencjach:",
+   "s": 13.2,
+   "e": 14.04
   },
   {
-   "w": "więc",
-   "s": 13.68,
-   "e": 13.92
+   "w": "pobrane",
+   "s": 14.093,
+   "e": 14.44
   },
   {
    "w": "pliki",
-   "s": 13.96,
-   "e": 14.24
+   "s": 14.48,
+   "e": 14.76
   },
   {
-   "w": "zostają",
-   "s": 14.32,
-   "e": 14.72
+   "w": "możesz",
+   "s": 14.84,
+   "e": 15.08
   },
   {
-   "w": "u",
-   "s": 14.76,
-   "e": 14.8
+   "w": "zatrzymać",
+   "s": 15.12,
+   "e": 15.8
   },
   {
-   "w": "ciebie.",
-   "s": 14.88,
-   "e": 15.6
+   "w": "i",
+   "s": 15.88,
+   "e": 15.96
+  },
+  {
+   "w": "legalnie",
+   "s": 16.16,
+   "e": 16.52
+  },
+  {
+   "w": "udostępniać",
+   "s": 16.56,
+   "e": 17.08
+  },
+  {
+   "w": "dalej.",
+   "s": 17.16,
+   "e": 17.88
   }
  ],
- "speechEnd": 15.25
+ "spliced": true,
+ "speechEnd": 17.561
 }

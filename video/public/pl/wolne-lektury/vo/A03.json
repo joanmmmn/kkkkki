@@ -1,8 +1,8 @@
 {
  "id": "A03",
- "hash": "20608c1f9674",
- "text": "Ile to kosztuje? Nic. Nie ma abonamentu, okresu próbnego ani karty płatniczej, nie trzeba się nawet rejestrować. Fundacja żyje z dotacji i darowizn, więc na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty. To cały haczyk: wpłata jest dobrowolna.",
- "duration": 17.6,
+ "hash": "c6c380dc8e6a",
+ "text": "Ile to kosztuje? Nic. Nie ma abonamentu ani okresu próbnego, nie podajesz karty i nie musisz się nawet rejestrować. Fundacja żyje z dotacji i darowizn, więc na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty. To cały haczyk: wpłata jest dobrowolna.",
+ "duration": 17.84,
  "words": [
   {
    "w": "Ile",
@@ -17,218 +17,229 @@
   {
    "w": "kosztuje?",
    "s": 0.32,
-   "e": 1.16
+   "e": 1.2
   },
   {
    "w": "Nic.",
-   "s": 1.2,
-   "e": 1.893
+   "s": 1.56,
+   "e": 1.973
   },
   {
    "w": "Nie",
-   "s": 1.947,
-   "e": 2.0
-  },
-  {
-   "w": "ma",
-   "s": 2.04,
+   "s": 2.027,
    "e": 2.08
   },
   {
-   "w": "abonamentu,",
-   "s": 2.16,
-   "e": 2.92
+   "w": "ma",
+   "s": 2.12,
+   "e": 2.16
   },
   {
-   "w": "okresu",
-   "s": 2.96,
-   "e": 3.28
-  },
-  {
-   "w": "próbnego",
-   "s": 3.36,
-   "e": 3.84
+   "w": "abonamentu",
+   "s": 2.24,
+   "e": 2.96
   },
   {
    "w": "ani",
-   "s": 3.92,
-   "e": 4.08
+   "s": 3.04,
+   "e": 3.2
   },
   {
-   "w": "karty",
-   "s": 4.16,
-   "e": 4.4
+   "w": "okresu",
+   "s": 3.28,
+   "e": 3.6
   },
   {
-   "w": "płatniczej,",
-   "s": 4.48,
-   "e": 5.253
+   "w": "próbnego,",
+   "s": 3.64,
+   "e": 4.347
   },
   {
    "w": "nie",
-   "s": 5.307,
-   "e": 5.36
+   "s": 4.373,
+   "e": 4.4
   },
   {
-   "w": "trzeba",
-   "s": 5.4,
-   "e": 5.6
+   "w": "podajesz",
+   "s": 4.48,
+   "e": 4.84
   },
   {
-   "w": "się",
-   "s": 5.64,
-   "e": 5.707
-  },
-  {
-   "w": "nawet",
-   "s": 5.733,
-   "e": 5.92
-  },
-  {
-   "w": "rejestrować.",
-   "s": 5.96,
-   "e": 7.12
-  },
-  {
-   "w": "Fundacja",
-   "s": 7.2,
-   "e": 7.52
-  },
-  {
-   "w": "żyje",
-   "s": 7.6,
-   "e": 7.76
-  },
-  {
-   "w": "z",
-   "s": 7.8,
-   "e": 7.84
-  },
-  {
-   "w": "dotacji",
-   "s": 7.96,
-   "e": 8.4
+   "w": "karty",
+   "s": 4.88,
+   "e": 5.28
   },
   {
    "w": "i",
-   "s": 8.44,
-   "e": 8.48
+   "s": 5.36,
+   "e": 5.4
   },
   {
-   "w": "darowizn,",
-   "s": 8.6,
-   "e": 9.28
+   "w": "nie",
+   "s": 5.44,
+   "e": 5.6
   },
   {
-   "w": "więc",
-   "s": 9.36,
-   "e": 9.52
-  },
-  {
-   "w": "na",
-   "s": 9.6,
-   "e": 9.68
-  },
-  {
-   "w": "stronie",
-   "s": 9.76,
-   "e": 10.0
-  },
-  {
-   "w": "zobaczysz",
-   "s": 10.04,
-   "e": 10.4
-  },
-  {
-   "w": "prośby",
-   "s": 10.48,
-   "e": 10.8
-  },
-  {
-   "w": "o",
-   "s": 10.827,
-   "e": 10.853
-  },
-  {
-   "w": "wsparcie,",
-   "s": 10.88,
-   "e": 11.72
-  },
-  {
-   "w": "a",
-   "s": 11.76,
-   "e": 11.84
-  },
-  {
-   "w": "wiele",
-   "s": 11.92,
-   "e": 12.08
-  },
-  {
-   "w": "nagrań",
-   "s": 12.16,
-   "e": 12.48
-  },
-  {
-   "w": "zaczyna",
-   "s": 12.52,
-   "e": 12.8
+   "w": "musisz",
+   "s": 5.68,
+   "e": 5.92
   },
   {
    "w": "się",
-   "s": 12.88,
-   "e": 12.987
+   "s": 5.96,
+   "e": 6.04
+  },
+  {
+   "w": "nawet",
+   "s": 6.08,
+   "e": 6.24
+  },
+  {
+   "w": "rejestrować.",
+   "s": 6.32,
+   "e": 7.44
+  },
+  {
+   "w": "Fundacja",
+   "s": 7.62,
+   "e": 7.94
+  },
+  {
+   "w": "żyje",
+   "s": 8.02,
+   "e": 8.18
+  },
+  {
+   "w": "z",
+   "s": 8.22,
+   "e": 8.26
+  },
+  {
+   "w": "dotacji",
+   "s": 8.38,
+   "e": 8.82
+  },
+  {
+   "w": "i",
+   "s": 8.86,
+   "e": 8.9
+  },
+  {
+   "w": "darowizn,",
+   "s": 9.02,
+   "e": 9.7
+  },
+  {
+   "w": "więc",
+   "s": 9.78,
+   "e": 9.94
+  },
+  {
+   "w": "na",
+   "s": 10.02,
+   "e": 10.1
+  },
+  {
+   "w": "stronie",
+   "s": 10.18,
+   "e": 10.42
+  },
+  {
+   "w": "zobaczysz",
+   "s": 10.46,
+   "e": 10.82
+  },
+  {
+   "w": "prośby",
+   "s": 10.9,
+   "e": 11.22
+  },
+  {
+   "w": "o",
+   "s": 11.247,
+   "e": 11.273
+  },
+  {
+   "w": "wsparcie,",
+   "s": 11.3,
+   "e": 12.14
+  },
+  {
+   "w": "a",
+   "s": 12.18,
+   "e": 12.26
+  },
+  {
+   "w": "wiele",
+   "s": 12.34,
+   "e": 12.5
+  },
+  {
+   "w": "nagrań",
+   "s": 12.58,
+   "e": 12.9
+  },
+  {
+   "w": "zaczyna",
+   "s": 12.94,
+   "e": 13.22
+  },
+  {
+   "w": "się",
+   "s": 13.3,
+   "e": 13.407
   },
   {
    "w": "krótką",
-   "s": 13.013,
-   "e": 13.36
+   "s": 13.433,
+   "e": 13.78
   },
   {
    "w": "zachętą",
-   "s": 13.4,
-   "e": 13.76
+   "s": 13.82,
+   "e": 14.18
   },
   {
    "w": "do",
-   "s": 13.84,
-   "e": 13.92
+   "s": 14.26,
+   "e": 14.34
   },
   {
    "w": "wpłaty.",
-   "s": 14.0,
-   "e": 14.747
+   "s": 14.42,
+   "e": 15.167
   },
   {
    "w": "To",
-   "s": 14.773,
-   "e": 14.8
+   "s": 15.193,
+   "e": 15.22
   },
   {
    "w": "cały",
-   "s": 14.88,
-   "e": 15.04
+   "s": 15.3,
+   "e": 15.46
   },
   {
    "w": "haczyk:",
-   "s": 15.12,
-   "e": 15.84
+   "s": 15.54,
+   "e": 16.26
   },
   {
    "w": "wpłata",
-   "s": 15.88,
-   "e": 16.16
+   "s": 16.3,
+   "e": 16.58
   },
   {
    "w": "jest",
-   "s": 16.32,
-   "e": 16.48
+   "s": 16.74,
+   "e": 16.9
   },
   {
    "w": "dobrowolna.",
-   "s": 16.56,
-   "e": 17.6
+   "s": 16.98,
+   "e": 18.02
   }
  ],
- "speechEnd": 17.228
+ "spliced": true,
+ "speechEnd": 17.548
 }

@@ -18,12 +18,12 @@
   },
   {
    "id": "A02",
-   "text": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od 2007 roku i ma 7332 utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok 1984”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad 7 milionów osób rocznie.",
-   "say": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od dwa tysiące siódmego roku i ma siedem tysięcy trzysta trzydzieści dwa utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok tysiąc dziewięćset osiemdziesiąty czwarty”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad siedem milionów osób rocznie."
+   "text": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od 2007 roku i ma 7332 utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok 1984”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad 7 milionów użytkowników rocznie.",
+   "say": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od dwa tysiące siódmego roku i ma siedem tysięcy trzysta trzydzieści dwa utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok tysiąc dziewięćset osiemdziesiąty czwarty”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad siedem milionów użytkowników rocznie."
   },
   {
    "id": "A03",
-   "text": "Ile to kosztuje? Nic. Nie ma abonamentu, okresu próbnego ani karty płatniczej, nie trzeba się nawet rejestrować. Fundacja żyje z dotacji i darowizn, więc na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty. To cały haczyk: wpłata jest dobrowolna."
+   "text": "Ile to kosztuje? Nic. Nie ma abonamentu ani okresu próbnego, nie podajesz karty i nie musisz się nawet rejestrować. Fundacja żyje z dotacji i darowizn, więc na stronie zobaczysz prośby o wsparcie, a wiele nagrań zaczyna się krótką zachętą do wpłaty. To cały haczyk: wpłata jest dobrowolna."
   },
   {
    "id": "A04",
@@ -37,13 +37,13 @@
   },
   {
    "id": "A06",
-   "text": "Kto czyta? Ludzie, nie sztuczna inteligencja. „Kamizelkę” i „Latarnika” czyta Jan Peszek, „Tajemniczy ogród” – Paulina Holtz, a „Rok 1984” – Jan Staszczyk. Dramaty, jak „Zemsta” czy „Wesele”, czytane są na dwa głosy.",
-   "say": "Kto czyta? Ludzie, nie sztuczna inteligencja. „Kamizelkę” i „Latarnika” czyta Jan Peszek, „Tajemniczy ogród” – Paulina Holtz, a „Rok tysiąc dziewięćset osiemdziesiąty czwarty” – Jan Staszczyk. Dramaty, jak „Zemsta” czy „Wesele”, czytane są na dwa głosy."
+   "text": "Kto czyta? Nagrania Wolnych Lektur czytają ludzie, nie sztuczna inteligencja. „Kamizelkę” i „Latarnika” czyta Jan Peszek, „Tajemniczy ogród” – Paulina Holtz, a „Rok 1984” – Jan Staszczyk. Dramaty, jak „Zemsta” czy „Wesele”, czytane są na dwa głosy.",
+   "say": "Kto czyta? Nagrania Wolnych Lektur czytają ludzie, nie sztuczna inteligencja. „Kamizelkę” i „Latarnika” czyta Jan Peszek, „Tajemniczy ogród” – Paulina Holtz, a „Rok tysiąc dziewięćset osiemdziesiąty czwarty” – Jan Staszczyk. Dramaty, jak „Zemsta” czy „Wesele”, czytane są na dwa głosy."
   },
   {
    "id": "A07",
-   "text": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz MP3, OGG, DAISY dla osób z trudnościami w czytaniu i EPUB z dźwiękiem. Całą książkę ściągniesz jednym plikiem ZIP. Nagrania są na wolnych licencjach, więc pliki zostają u ciebie.",
-   "say": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz em pe trzy, ogg, dejzi dla osób z trudnościami w czytaniu i e-pub z dźwiękiem. Całą książkę ściągniesz jednym plikiem zip. Nagrania są na wolnych licencjach, więc pliki zostają u ciebie."
+   "text": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz MP3, OGG, DAISY dla osób z trudnościami w czytaniu i EPUB z dźwiękiem. Całą książkę ściągniesz jednym plikiem ZIP. Nagrania są na wolnych licencjach: pobrane pliki możesz zatrzymać i legalnie udostępniać dalej.",
+   "say": "Chcesz słuchać offline? Kliknij „pobierz audiobook”: masz em pe trzy, ogg, dejzi dla osób z trudnościami w czytaniu i e-pub z dźwiękiem. Całą książkę ściągniesz jednym plikiem zip. Nagrania są na wolnych licencjach: pobrane pliki możesz zatrzymać i legalnie udostępniać dalej."
   },
   {
    "id": "A08",
@@ -52,12 +52,12 @@
   },
   {
    "id": "A09",
-   "text": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i iPhone'a; ta na iPhone'a jest nowa, z grudnia 2025 roku. A pliki MP3 odtworzysz na każdym urządzeniu.",
-   "say": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i ajfona; ta na ajfona jest nowa, z grudnia dwa tysiące dwudziestego piątego roku. A pliki em pe trzy odtworzysz na każdym urządzeniu."
+   "text": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i iPhone'a; obie są nowe, z grudnia 2025 roku. A pliki MP3 odtworzysz na każdym urządzeniu.",
+   "say": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i ajfona; obie są nowe, z grudnia dwa tysiące dwudziestego piątego roku. A pliki em pe trzy odtworzysz na każdym urządzeniu."
   },
   {
    "id": "A10",
-   "text": "Opinie? Aplikacja ma w Google Play 4,6 przy 37 opiniach, a w polskim App Store 4,4 przy 14 ocenach. To mało, bo jest nowa. Krótkie opinie są pozytywne; w App Store ktoś zgłasza, że audiobook nie startuje w trakcie rozmowy telefonicznej.",
+   "text": "Opinie? Aplikacja ma w Google Play 4,6 przy 37 opiniach, a w polskim App Storze 4,4 przy 14 ocenach. To mało, bo jest nowa. Krótkie opinie są pozytywne; w App Storze ktoś zgłasza, że audiobook nie startuje w trakcie rozmowy telefonicznej.",
    "say": "Opinie? Aplikacja ma w Gugl Plej cztery przecinek sześć przy trzydziestu siedmiu opiniach, a w polskim Ap Storze cztery przecinek cztery przy czternastu ocenach. To mało, bo jest nowa. Krótkie opinie są pozytywne; w Ap Storze ktoś zgłasza, że audiobook nie startuje w trakcie rozmowy telefonicznej."
   },
   {
@@ -67,22 +67,26 @@
   },
   {
    "id": "A12",
-   "text": "Werdykt? Dla uczniów, rodziców i fanów klasyki trudno o lepszą darmową opcję. Dla porównania: „Lalka” z Zapasiewiczem w Audiotece trwa 8 godzin 55 minut i kosztuje 19,99 zł. Tu pełna wersja, ponad 32 godziny, za 0 zł. Szukasz nowości? Tu ich nie ma: sprawdź kod z biblioteki albo abonament, na przykład Audioteka, Empik Go czy Legimi.",
-   "say": "Werdykt? Dla uczniów, rodziców i fanów klasyki trudno o lepszą darmową opcję. Dla porównania: „Lalka” z Zapasiewiczem w Audiotece trwa osiem godzin pięćdziesiąt pięć minut i kosztuje dziewiętnaście złotych dziewięćdziesiąt dziewięć groszy. Tu pełna wersja, ponad trzydzieści dwie godziny, za zero złotych. Szukasz nowości? Tu ich nie ma: sprawdź kod z biblioteki albo abonament, na przykład Audioteka, Empik Gou czy Legimi."
+   "text": "Werdykt? Dla uczniów, rodziców i fanów klasyki trudno o lepszą darmową opcję."
+  },
+  {
+   "id": "A12B",
+   "text": "Dla porównania: „Lalka” z Zapasiewiczem w Audiotece trwa 8 godzin 55 minut i kosztuje 19,99 zł. Tu pełna wersja, ponad 32 godziny, za 0 zł. Szukasz nowości? Tu ich nie ma: sprawdź kod z biblioteki albo abonament, na przykład Audioteka, Empik Go czy Legimi.",
+   "say": "Dla porównania: „Lalka” z Zapasiewiczem w Audiotece trwa osiem godzin pięćdziesiąt pięć minut i kosztuje dziewiętnaście złotych dziewięćdziesiąt dziewięć groszy. Tu pełna wersja, ponad trzydzieści dwie godziny, za zero złotych. Szukasz nowości? Tu ich nie ma: sprawdź kod z biblioteki albo abonament, na przykład Audioteka, Empik Gou czy Legimi."
   },
   {
    "id": "B01",
-   "text": "Jak zacząć? Wejdź na wolnelektury.pl i kliknij „Audiobooki” albo wpisz tytuł w wyszukiwarkę. Na stronie utworu naciśnij play: słuchasz od razu, bez logowania. Do słuchania offline kliknij „pobierz audiobook” i wybierz MP3: dostaniesz całą książkę w pliku ZIP.",
-   "say": "Jak zacząć? Wejdź na wolnelektury kropka pe el i kliknij „Audiobooki” albo wpisz tytuł w wyszukiwarkę. Na stronie utworu naciśnij plej: słuchasz od razu, bez logowania. Do słuchania offline kliknij „pobierz audiobook” i wybierz em pe trzy: dostaniesz całą książkę w pliku zip."
+   "text": "Jak zacząć? Wejdź na wolnelektury.pl i kliknij „Audiobooki” albo wpisz tytuł w wyszukiwarce. Na stronie utworu naciśnij play: słuchasz od razu, bez logowania. Do słuchania offline kliknij „pobierz audiobook” i wybierz MP3: dostaniesz całą książkę w pliku ZIP.",
+   "say": "Jak zacząć? Wejdź na wolnelektury kropka pe el i kliknij „Audiobooki” albo wpisz tytuł w wyszukiwarce. Na stronie utworu naciśnij plej: słuchasz od razu, bez logowania. Do słuchania offline kliknij „pobierz audiobook” i wybierz em pe trzy: dostaniesz całą książkę w pliku zip."
   },
   {
    "id": "B04",
-   "text": "Na telefonie zainstaluj aplikację Wolne Lektury z Google Play albo App Store.",
+   "text": "Na telefonie zainstaluj aplikację Wolne Lektury z Google Play albo z App Store'a.",
    "say": "Na telefonie zainstaluj aplikację Wolne Lektury z Gugl Plej albo z Ap Stora."
   },
   {
    "id": "B05",
-   "text": "I drobny druk: jeśli udostępniasz nagranie dalej, podaj autora, źródło i licencję. Licencję znajdziesz przy każdym nagraniu."
+   "text": "I drobny druk: jeśli udostępniasz nagranie dalej, podaj autora, lektora, źródło i licencję i udostępniaj na tych samych warunkach. Licencję znajdziesz przy każdym nagraniu."
   },
   {
    "id": "B06",

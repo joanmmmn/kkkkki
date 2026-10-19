@@ -1,8 +1,8 @@
 {
  "id": "B05",
- "hash": "71d78d821267",
- "text": "I drobny druk: jeśli udostępniasz nagranie dalej, podaj autora, źródło i licencję. Licencję znajdziesz przy każdym nagraniu.",
- "duration": 8.32,
+ "hash": "94403c0072e8",
+ "text": "I drobny druk: jeśli udostępniasz nagranie dalej, podaj autora, lektora, źródło i licencję i udostępniaj na tych samych warunkach. Licencję znajdziesz przy każdym nagraniu.",
+ "duration": 11.28,
  "words": [
   {
    "w": "I",
@@ -17,17 +17,17 @@
   {
    "w": "druk:",
    "s": 0.68,
-   "e": 1.36
+   "e": 1.44
   },
   {
    "w": "jeśli",
-   "s": 1.44,
-   "e": 1.68
+   "s": 1.52,
+   "e": 1.76
   },
   {
    "w": "udostępniasz",
-   "s": 1.76,
-   "e": 2.32
+   "s": 1.8,
+   "e": 2.347
   },
   {
    "w": "nagranie",
@@ -50,45 +50,80 @@
    "e": 4.32
   },
   {
-   "w": "źródło",
+   "w": "lektora,",
    "s": 4.4,
-   "e": 4.88
+   "e": 5.04
+  },
+  {
+   "w": "źródło",
+   "s": 5.12,
+   "e": 5.52
   },
   {
    "w": "i",
-   "s": 4.907,
-   "e": 4.933
+   "s": 5.6,
+   "e": 5.68
   },
   {
-   "w": "licencję.",
-   "s": 4.96,
-   "e": 5.92
+   "w": "licencję",
+   "s": 5.8,
+   "e": 6.32
   },
   {
-   "w": "Licencję",
-   "s": 6.0,
-   "e": 6.48
+   "w": "i",
+   "s": 6.64,
+   "e": 6.72
   },
   {
-   "w": "znajdziesz",
-   "s": 6.56,
-   "e": 6.96
+   "w": "udostępniaj",
+   "s": 6.8,
+   "e": 7.32
   },
   {
-   "w": "przy",
-   "s": 7.0,
-   "e": 7.12
-  },
-  {
-   "w": "każdym",
-   "s": 7.2,
+   "w": "na",
+   "s": 7.36,
    "e": 7.44
   },
   {
-   "w": "nagraniu.",
+   "w": "tych",
    "s": 7.52,
-   "e": 8.32
+   "e": 7.64
+  },
+  {
+   "w": "samych",
+   "s": 7.68,
+   "e": 7.92
+  },
+  {
+   "w": "warunkach.",
+   "s": 8.0,
+   "e": 8.88
+  },
+  {
+   "w": "Licencję",
+   "s": 9.0,
+   "e": 9.44
+  },
+  {
+   "w": "znajdziesz",
+   "s": 9.52,
+   "e": 9.92
+  },
+  {
+   "w": "przy",
+   "s": 9.96,
+   "e": 10.08
+  },
+  {
+   "w": "każdym",
+   "s": 10.16,
+   "e": 10.4
+  },
+  {
+   "w": "nagraniu.",
+   "s": 10.48,
+   "e": 11.28
   }
  ],
- "speechEnd": 8.017
+ "speechEnd": 10.975
 }

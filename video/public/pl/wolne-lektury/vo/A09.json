@@ -1,8 +1,8 @@
 {
  "id": "A09",
- "hash": "474f45cf754c",
- "text": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i iPhone'a; ta na iPhone'a jest nowa, z grudnia 2025 roku. A pliki MP3 odtworzysz na każdym urządzeniu.",
- "duration": 15.04,
+ "hash": "6e46f816584c",
+ "text": "Słuchasz w przeglądarce, na komputerze i na telefonie. Jest też darmowa aplikacja Wolne Lektury na Androida i iPhone'a; obie są nowe, z grudnia 2025 roku. A pliki MP3 odtworzysz na każdym urządzeniu.",
+ "duration": 14.16,
  "words": [
   {
    "w": "Słuchasz",
@@ -27,178 +27,168 @@
   {
    "w": "komputerze",
    "s": 1.52,
-   "e": 2.16
+   "e": 2.24
   },
   {
    "w": "i",
-   "s": 2.24,
+   "s": 2.28,
    "e": 2.32
   },
   {
    "w": "na",
-   "s": 2.36,
-   "e": 2.4
+   "s": 2.4,
+   "e": 2.44
   },
   {
    "w": "telefonie.",
    "s": 2.48,
-   "e": 3.44
+   "e": 3.52
   },
   {
    "w": "Jest",
-   "s": 3.48,
-   "e": 3.68
+   "s": 3.56,
+   "e": 3.76
   },
   {
    "w": "też",
-   "s": 3.76,
-   "e": 3.92
+   "s": 3.84,
+   "e": 4.0
   },
   {
    "w": "darmowa",
-   "s": 3.96,
-   "e": 4.32
+   "s": 4.053,
+   "e": 4.4
   },
   {
    "w": "aplikacja",
-   "s": 4.4,
-   "e": 4.88
+   "s": 4.48,
+   "e": 4.96
   },
   {
    "w": "Wolne",
-   "s": 4.96,
-   "e": 5.2
+   "s": 5.04,
+   "e": 5.28
   },
   {
    "w": "Lektury",
-   "s": 5.28,
-   "e": 5.76
+   "s": 5.36,
+   "e": 5.84
   },
   {
    "w": "na",
-   "s": 5.84,
-   "e": 5.92
+   "s": 5.92,
+   "e": 6.0
   },
   {
    "w": "Androida",
-   "s": 6.0,
+   "s": 6.08,
    "e": 6.56
   },
   {
    "w": "i",
-   "s": 6.6,
-   "e": 6.64
+   "s": 6.64,
+   "e": 6.72
   },
   {
    "w": "ajfona;",
-   "s": 6.72,
-   "e": 7.44
+   "s": 6.8,
+   "e": 7.6
   },
   {
-   "w": "ta",
-   "s": 7.48,
-   "e": 7.52
-  },
-  {
-   "w": "na",
-   "s": 7.6,
-   "e": 7.64
-  },
-  {
-   "w": "ajfona",
+   "w": "obie",
    "s": 7.68,
+   "e": 7.8
+  },
+  {
+   "w": "są",
+   "s": 7.84,
    "e": 8.0
   },
   {
-   "w": "jest",
-   "s": 8.12,
-   "e": 8.24
-  },
-  {
-   "w": "nowa,",
-   "s": 8.32,
-   "e": 8.76
+   "w": "nowe,",
+   "s": 8.08,
+   "e": 8.48
   },
   {
    "w": "z",
-   "s": 8.8,
-   "e": 8.84
+   "s": 8.52,
+   "e": 8.56
   },
   {
    "w": "grudnia",
-   "s": 8.88,
-   "e": 9.28
+   "s": 8.6,
+   "e": 8.88
   },
   {
    "w": "dwa",
-   "s": 9.32,
-   "e": 9.4
+   "s": 8.96,
+   "e": 9.04
   },
   {
    "w": "tysiące",
-   "s": 9.44,
-   "e": 9.76
+   "s": 9.12,
+   "e": 9.4
   },
   {
    "w": "dwudziestego",
-   "s": 9.84,
-   "e": 10.24
+   "s": 9.44,
+   "e": 9.84
   },
   {
    "w": "piątego",
-   "s": 10.32,
-   "e": 10.6
+   "s": 9.92,
+   "e": 10.2
   },
   {
    "w": "roku.",
-   "s": 10.64,
-   "e": 11.493
+   "s": 10.24,
+   "e": 11.04
   },
   {
    "w": "A",
-   "s": 11.547,
-   "e": 11.6
+   "s": 11.08,
+   "e": 11.12
   },
   {
    "w": "pliki",
-   "s": 11.68,
-   "e": 12.0
+   "s": 11.2,
+   "e": 11.52
   },
   {
    "w": "em",
-   "s": 12.08,
-   "e": 12.16
+   "s": 11.6,
+   "e": 11.68
   },
   {
    "w": "pe",
-   "s": 12.24,
-   "e": 12.32
+   "s": 11.76,
+   "e": 11.84
   },
   {
    "w": "trzy",
-   "s": 12.4,
-   "e": 12.72
+   "s": 11.92,
+   "e": 12.08
   },
   {
    "w": "odtworzysz",
-   "s": 12.8,
-   "e": 13.28
+   "s": 12.32,
+   "e": 12.88
   },
   {
    "w": "na",
-   "s": 13.36,
-   "e": 13.52
+   "s": 12.92,
+   "e": 12.96
   },
   {
    "w": "każdym",
-   "s": 13.6,
-   "e": 13.84
+   "s": 13.12,
+   "e": 13.44
   },
   {
    "w": "urządzeniu.",
-   "s": 13.92,
-   "e": 15.04
+   "s": 13.52,
+   "e": 14.16
   }
  ],
- "speechEnd": 14.492
+ "speechEnd": 14.16
 }

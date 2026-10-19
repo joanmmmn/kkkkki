@@ -1,8 +1,8 @@
 {
  "id": "A02",
- "hash": "15041a129e71",
- "text": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od 2007 roku i ma 7332 utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok 1984”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad 7 milionów osób rocznie.",
- "duration": 24.08,
+ "hash": "dcaaac97ec8f",
+ "text": "Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy. Działa od 2007 roku i ma 7332 utwory: głównie lektury szkolne i klasykę z domeny publicznej, ale też nowe przekłady na wolnej licencji, jak „Mały Książę” czy „Rok 1984”. Nagrań jest ponad tysiąc, a z biblioteki korzysta ponad 7 milionów użytkowników rocznie.",
+ "duration": 24.42,
  "words": [
   {
    "w": "Wolne",
@@ -242,73 +242,74 @@
   {
    "w": "czwarty”.",
    "s": 17.92,
-   "e": 18.987
+   "e": 18.9
   },
   {
    "w": "Nagrań",
-   "s": 19.013,
-   "e": 19.36
+   "s": 18.9,
+   "e": 19.3
   },
   {
    "w": "jest",
-   "s": 19.44,
-   "e": 19.52
+   "s": 19.38,
+   "e": 19.46
   },
   {
    "w": "ponad",
-   "s": 19.6,
-   "e": 19.84
+   "s": 19.54,
+   "e": 19.86
   },
   {
    "w": "tysiąc,",
-   "s": 19.92,
-   "e": 20.44
+   "s": 19.9,
+   "e": 20.58
   },
   {
    "w": "a",
-   "s": 20.48,
-   "e": 20.56
+   "s": 20.62,
+   "e": 20.66
   },
   {
    "w": "z",
-   "s": 20.64,
-   "e": 20.68
+   "s": 20.7,
+   "e": 20.74
   },
   {
    "w": "biblioteki",
-   "s": 20.72,
-   "e": 21.2
+   "s": 20.82,
+   "e": 21.3
   },
   {
    "w": "korzysta",
-   "s": 21.28,
-   "e": 21.68
+   "s": 21.38,
+   "e": 21.74
   },
   {
    "w": "ponad",
-   "s": 21.76,
-   "e": 22.0
+   "s": 21.78,
+   "e": 22.1
   },
   {
    "w": "siedem",
-   "s": 22.08,
-   "e": 22.32
+   "s": 22.14,
+   "e": 22.42
   },
   {
    "w": "milionów",
-   "s": 22.4,
-   "e": 22.8
+   "s": 22.5,
+   "e": 22.9
   },
   {
-   "w": "osób",
-   "s": 22.88,
-   "e": 23.12
+   "w": "użytkowników",
+   "s": 22.98,
+   "e": 23.62
   },
   {
    "w": "rocznie.",
-   "s": 23.2,
-   "e": 24.08
+   "s": 23.7,
+   "e": 24.5
   }
  ],
- "speechEnd": 23.623
+ "spliced": true,
+ "speechEnd": 24.154
 }
