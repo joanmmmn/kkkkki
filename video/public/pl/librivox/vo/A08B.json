@@ -1,8 +1,8 @@
 {
  "id": "A08B",
- "hash": "841809c4444a",
- "text": "Najważniejsze: LibriVox nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają 70 lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: A. A. Milne zmarł w 1956 roku, więc oryginalny, angielski „Kubuś Puchatek” będzie w Polsce wolny dopiero od 1 stycznia 2027.",
- "duration": 26.4,
+ "hash": "fdcfd61c710f",
+ "text": "Najważniejsze: LibriVox nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają 70 lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: A. A. Milne zmarł w 1956 roku, więc angielski oryginał „Kubusia Puchatka” będzie w Polsce w domenie publicznej dopiero od 1 stycznia 2027.",
+ "duration": 27.7,
  "words": [
   {
    "w": "Najważniejsze:",
@@ -191,139 +191,153 @@
   },
   {
    "w": "Ej",
-   "s": 16.04,
-   "e": 16.16
+   "s": 16.02,
+   "e": 16.26
   },
   {
    "w": "Ej",
-   "s": 16.24,
-   "e": 16.36
+   "s": 16.66,
+   "e": 16.86
   },
   {
    "w": "Miln",
-   "s": 16.4,
-   "e": 16.8
+   "s": 16.9,
+   "e": 17.22
   },
   {
    "w": "zmarł",
-   "s": 16.96,
-   "e": 17.28
+   "s": 17.3,
+   "e": 17.62
   },
   {
    "w": "w",
-   "s": 17.32,
-   "e": 17.36
+   "s": 17.66,
+   "e": 17.7
   },
   {
    "w": "tysiąc",
-   "s": 17.4,
-   "e": 17.6
+   "s": 17.74,
+   "e": 18.02
   },
   {
    "w": "dziewięćset",
-   "s": 17.76,
-   "e": 18.08
+   "s": 18.1,
+   "e": 18.42
   },
   {
    "w": "pięćdziesiątym",
-   "s": 18.16,
-   "e": 18.64
+   "s": 18.5,
+   "e": 19.06
   },
   {
    "w": "szóstym",
-   "s": 18.72,
-   "e": 19.0
+   "s": 19.14,
+   "e": 19.46
   },
   {
    "w": "roku,",
-   "s": 19.04,
-   "e": 19.52
+   "s": 19.54,
+   "e": 20.14
   },
   {
    "w": "więc",
-   "s": 19.6,
-   "e": 19.84
-  },
-  {
-   "w": "oryginalny,",
-   "s": 19.92,
-   "e": 20.48
+   "s": 20.18,
+   "e": 20.42
   },
   {
    "w": "angielski",
-   "s": 20.6,
-   "e": 21.04
+   "s": 20.5,
+   "e": 20.9
   },
   {
-   "w": "„Kubuś",
-   "s": 21.067,
-   "e": 21.32
+   "w": "oryginał",
+   "s": 20.98,
+   "e": 21.46
   },
   {
-   "w": "Puchatek”",
-   "s": 21.36,
-   "e": 22.08
+   "w": "„Kubusia",
+   "s": 21.487,
+   "e": 21.86
+  },
+  {
+   "w": "Puchatka”",
+   "s": 21.94,
+   "e": 22.58
   },
   {
    "w": "będzie",
-   "s": 22.16,
-   "e": 22.32
+   "s": 22.62,
+   "e": 22.82
   },
   {
    "w": "w",
-   "s": 22.36,
-   "e": 22.4
+   "s": 22.9,
+   "e": 22.94
   },
   {
    "w": "Polsce",
-   "s": 22.48,
-   "e": 22.8
+   "s": 22.98,
+   "e": 23.3
   },
   {
-   "w": "wolny",
-   "s": 22.853,
-   "e": 23.04
+   "w": "w",
+   "s": 23.34,
+   "e": 23.38
+  },
+  {
+   "w": "domenie",
+   "s": 23.46,
+   "e": 23.7
+  },
+  {
+   "w": "publicznej",
+   "s": 23.86,
+   "e": 24.26
   },
   {
    "w": "dopiero",
-   "s": 23.12,
-   "e": 23.52
+   "s": 24.3,
+   "e": 24.66
   },
   {
    "w": "od",
-   "s": 23.6,
-   "e": 23.68
+   "s": 24.74,
+   "e": 24.82
   },
   {
    "w": "pierwszego",
-   "s": 23.72,
-   "e": 24.08
+   "s": 24.86,
+   "e": 25.22
   },
   {
    "w": "stycznia",
-   "s": 24.16,
-   "e": 24.56
+   "s": 25.3,
+   "e": 25.7
   },
   {
    "w": "dwa",
-   "s": 24.64,
-   "e": 24.8
+   "s": 25.74,
+   "e": 25.86
   },
   {
    "w": "tysiące",
-   "s": 24.88,
-   "e": 25.2
+   "s": 25.94,
+   "e": 26.26
   },
   {
    "w": "dwudziestego",
-   "s": 25.28,
-   "e": 25.68
+   "s": 26.34,
+   "e": 26.74
   },
   {
    "w": "siódmego.",
-   "s": 25.84,
-   "e": 26.4
+   "s": 26.82,
+   "e": 27.78
   }
  ],
- "speechEnd": 26.4
+ "spliced": {
+  "from": 37,
+  "to": 64,
+  "segment_chars": 212
+ }
 }

@@ -1,8 +1,8 @@
 {
  "id": "A11",
- "hash": "00a741c30aa6",
- "text": "Plusy: za darmo i legalnie, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko 27 książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji.",
- "duration": 17.2,
+ "hash": "5d930b9cd2c4",
+ "text": "Plusy: za darmo i legalnie w USA, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko 27 książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji.",
+ "duration": 18.2,
  "words": [
   {
    "w": "Plusy:",
@@ -25,175 +25,189 @@
    "e": 1.52
   },
   {
-   "w": "legalnie,",
+   "w": "legalnie",
    "s": 1.72,
-   "e": 2.28
+   "e": 2.0
+  },
+  {
+   "w": "w",
+   "s": 2.08,
+   "e": 2.12
+  },
+  {
+   "w": "USA,",
+   "s": 2.16,
+   "e": 2.92
   },
   {
    "w": "bez",
-   "s": 2.32,
-   "e": 2.48
+   "s": 2.96,
+   "e": 3.12
   },
   {
    "w": "konta",
-   "s": 2.56,
-   "e": 2.88
+   "s": 3.2,
+   "e": 3.52
   },
   {
    "w": "i",
-   "s": 2.92,
-   "e": 2.96
+   "s": 3.56,
+   "e": 3.6
   },
   {
    "w": "reklam,",
-   "s": 3.04,
-   "e": 3.653
+   "s": 3.68,
+   "e": 4.267
   },
   {
    "w": "prawdziwe",
-   "s": 3.707,
-   "e": 4.08
+   "s": 4.293,
+   "e": 4.64
   },
   {
    "w": "głosy,",
-   "s": 4.16,
-   "e": 4.827
+   "s": 4.72,
+   "e": 5.387
   },
   {
    "w": "pliki",
-   "s": 4.853,
-   "e": 5.12
+   "s": 5.413,
+   "e": 5.68
   },
   {
    "w": "na",
-   "s": 5.16,
-   "e": 5.2
+   "s": 5.76,
+   "e": 5.84
   },
   {
    "w": "zawsze",
-   "s": 5.28,
-   "e": 5.76
+   "s": 5.88,
+   "e": 6.32
   },
   {
    "w": "i",
-   "s": 5.84,
-   "e": 5.92
-  },
-  {
-   "w": "ogromny",
-   "s": 6.0,
+   "s": 6.4,
    "e": 6.48
   },
   {
-   "w": "wybór",
+   "w": "ogromny",
    "s": 6.56,
-   "e": 6.8
+   "e": 7.04
+  },
+  {
+   "w": "wybór",
+   "s": 7.12,
+   "e": 7.36
   },
   {
    "w": "po",
-   "s": 6.84,
-   "e": 6.88
+   "s": 7.4,
+   "e": 7.44
   },
   {
    "w": "angielsku.",
-   "s": 7.0,
-   "e": 8.133
+   "s": 7.56,
+   "e": 8.56
   },
   {
    "w": "Minusy:",
-   "s": 8.267,
-   "e": 8.92
+   "s": 9.347,
+   "e": 10.0
   },
   {
    "w": "po",
-   "s": 8.96,
-   "e": 9.04
+   "s": 10.04,
+   "e": 10.12
   },
   {
    "w": "polsku",
-   "s": 9.08,
-   "e": 9.44
+   "s": 10.16,
+   "e": 10.52
   },
   {
    "w": "tylko",
-   "s": 9.52,
-   "e": 9.76
+   "s": 10.6,
+   "e": 10.84
   },
   {
    "w": "dwadzieścia",
-   "s": 9.8,
-   "e": 10.24
+   "s": 10.88,
+   "e": 11.32
   },
   {
    "w": "siedem",
-   "s": 10.267,
-   "e": 10.48
+   "s": 11.347,
+   "e": 11.56
   },
   {
    "w": "książek,",
-   "s": 10.68,
-   "e": 11.24
+   "s": 11.76,
+   "e": 12.32
   },
   {
    "w": "głównie",
-   "s": 11.28,
-   "e": 11.68
+   "s": 12.36,
+   "e": 12.76
   },
   {
    "w": "jeden",
-   "s": 11.72,
-   "e": 11.92
+   "s": 12.8,
+   "e": 13.0
   },
   {
    "w": "lektor,",
-   "s": 12.0,
-   "e": 12.68
+   "s": 13.08,
+   "e": 13.76
   },
   {
    "w": "nierówna",
-   "s": 12.72,
-   "e": 13.08
+   "s": 13.8,
+   "e": 14.16
   },
   {
    "w": "jakość,",
-   "s": 13.12,
-   "e": 13.8
+   "s": 14.2,
+   "e": 14.88
   },
   {
    "w": "strona",
-   "s": 13.84,
-   "e": 14.08
+   "s": 14.92,
+   "e": 15.16
   },
   {
    "w": "po",
-   "s": 14.16,
-   "e": 14.24
+   "s": 15.24,
+   "e": 15.32
   },
   {
    "w": "angielsku",
-   "s": 14.36,
-   "e": 14.96
+   "s": 15.44,
+   "e": 16.04
   },
   {
    "w": "i",
-   "s": 15.04,
-   "e": 15.12
+   "s": 16.12,
+   "e": 16.2
   },
   {
    "w": "brak",
-   "s": 15.2,
-   "e": 15.44
+   "s": 16.28,
+   "e": 16.52
   },
   {
    "w": "oficjalnej",
-   "s": 15.52,
-   "e": 16.0
+   "s": 16.6,
+   "e": 17.08
   },
   {
    "w": "aplikacji.",
-   "s": 16.08,
-   "e": 17.2
+   "s": 17.16,
+   "e": 18.28
   }
  ],
- "speechEnd": 16.672
+ "spliced": {
+  "from": 0,
+  "to": 19,
+  "segment_chars": 116
+ }
 }

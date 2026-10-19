@@ -13,18 +13,18 @@
  "scenes": [
   {
    "id": "A01",
-   "text": "Ponad 21 000 darmowych audiobooków, legalnie i bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać.",
-   "say": "Ponad dwadzieścia jeden tysięcy darmowych audiobooków, legalnie i bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać."
+   "text": "Ponad 21 000 darmowych audiobooków z domeny publicznej, bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać.",
+   "say": "Ponad dwadzieścia jeden tysięcy darmowych audiobooków z domeny publicznej, bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać."
   },
   {
    "id": "A02",
-   "text": "LibriVox to projekt wolontariuszy, działa od 2005 roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Bez reklam i bez zysku. Dziś to 21 847 tytułów w 49 językach. Na początku rozdziału słyszysz taką formułkę:",
-   "say": "Librivoks to projekt wolontariuszy, działa od dwa tysiące piątego roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Bez reklam i bez zysku. Dziś to dwadzieścia jeden tysięcy osiemset czterdzieści siedem tytułów w czterdziestu dziewięciu językach. Na początku rozdziału słyszysz taką formułkę:"
+   "text": "LibriVox to projekt wolontariuszy, działa od 2005 roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Niekomercyjnie i bez reklam. Dziś to 21 847 tytułów w 49 językach. Na początku rozdziału słyszysz taką formułkę:",
+   "say": "Librivoks to projekt wolontariuszy, działa od dwa tysiące piątego roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Niekomercyjnie i bez reklam. Dziś to dwadzieścia jeden tysięcy osiemset czterdzieści siedem tytułów w czterdziestu dziewięciu językach. Na początku rozdziału słyszysz taką formułkę:"
   },
   {
    "id": "A03",
-   "text": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej, więc możesz je pobrać, zachować i udostępniać. LibriVox prosi tylko o dobrowolne datki.",
-   "say": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej, więc możesz je pobrać, zachować i udostępniać. Librivoks prosi tylko o dobrowolne datki."
+   "text": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej w USA, więc możesz je pobrać i zachować. LibriVox prosi tylko o dobrowolne datki.",
+   "say": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej w USA, więc możesz je pobrać i zachować. Librivoks prosi tylko o dobrowolne datki."
   },
   {
    "id": "A04",
@@ -43,33 +43,33 @@
   },
   {
    "id": "A07",
-   "text": "Na stronie książki masz czas trwania, lektora i spis rozdziałów. „Play” odtwarza rozdział w przeglądarce, a tytuł rozdziału to plik MP3. „Download” ściąga całą książkę w pliku ZIP, jest też plik M4B. Bez DRM i bez logowania.",
-   "say": "Na stronie książki masz czas trwania, lektora i spis rozdziałów. „Plej” odtwarza rozdział w przeglądarce, a tytuł rozdziału to plik em pe trzy. „Dałnlołd” ściąga całą książkę w pliku zip, jest też plik em cztery be. Bez de er em i bez logowania."
+   "text": "Na stronie książki masz czas trwania, lektora i spis rozdziałów. „Play” odtwarza rozdział w przeglądarce, a tytuł rozdziału to link do pliku MP3. „Download” ściąga całą książkę w pliku ZIP, są też pliki M4B. Bez DRM i bez logowania.",
+   "say": "Na stronie książki masz czas trwania, lektora i spis rozdziałów. „Plej” odtwarza rozdział w przeglądarce, a tytuł rozdziału to link do pliku em pe trzy. „Dałnlołd” ściąga całą książkę w pliku zip, są też pliki em cztery be. Bez de er em i bez logowania."
   },
   {
    "id": "A08",
-   "text": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około 60 procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj minuty.",
-   "say": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około sześćdziesięciu procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj minuty."
+   "text": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około 60 procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj najpierw minuty nagrania.",
+   "say": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około sześćdziesięciu procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj najpierw minuty nagrania."
   },
   {
    "id": "A08B",
-   "text": "Najważniejsze: LibriVox nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają 70 lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: A. A. Milne zmarł w 1956 roku, więc oryginalny, angielski „Kubuś Puchatek” będzie w Polsce wolny dopiero od 1 stycznia 2027.",
-   "say": "Najważniejsze: Librivoks nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają siedemdziesiąt lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: Ej Ej Miln zmarł w tysiąc dziewięćset pięćdziesiątym szóstym roku, więc oryginalny, angielski „Kubuś Puchatek” będzie w Polsce wolny dopiero od pierwszego stycznia dwa tysiące dwudziestego siódmego."
+   "text": "Najważniejsze: LibriVox nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają 70 lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: A. A. Milne zmarł w 1956 roku, więc angielski oryginał „Kubusia Puchatka” będzie w Polsce w domenie publicznej dopiero od 1 stycznia 2027.",
+   "say": "Najważniejsze: Librivoks nagrywa książki wolne od praw w USA i sam prosi, by sprawdzić prawo swojego kraju. W Polsce prawa wygasają siedemdziesiąt lat po śmierci autora. Polskie nagrania to głównie dzieła dawnych autorów, ale uważaj na angielskie: Ej Ej Miln zmarł w tysiąc dziewięćset pięćdziesiątym szóstym roku, więc angielski oryginał „Kubusia Puchatka” będzie w Polsce w domenie publicznej dopiero od pierwszego stycznia dwa tysiące dwudziestego siódmego."
   },
   {
    "id": "A09",
-   "text": "Na telefonie? LibriVox nie ma oficjalnej aplikacji. Link „RSS” wkleisz do aplikacji z podcastami albo użyjesz aplikacji innych firm, jak LibriVox Audio Books na Androida i LibriVox Audiobooks na iPhone'a.",
-   "say": "Na telefonie? Librivoks nie ma oficjalnej aplikacji. Link „er es es” wkleisz do aplikacji z podcastami albo użyjesz aplikacji innych firm, jak Librivoks Audio Buks na Androida i Librivoks Audiobuks na ajfona."
+   "text": "Na telefonie? LibriVox nie ma oficjalnej aplikacji. Link „RSS” wkleisz do aplikacji do podcastów albo użyjesz aplikacji innych firm, jak LibriVox Audio Books na Androida i LibriVox Audiobooks na iPhone'a.",
+   "say": "Na telefonie? Librivoks nie ma oficjalnej aplikacji. Link „er es es” wkleisz do aplikacji do podcastów albo użyjesz aplikacji innych firm, jak Librivoks Audio Buks na Androida i Librivoks Audiobuks na ajfona."
   },
   {
    "id": "A10",
-   "text": "Oceny tych aplikacji są dobre: na Androidzie 4,7 przy ponad 68 tysiącach opinii, a w polskim App Storze 4,6 przy 62 ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a bez reklam kosztuje 24,99 zł.",
-   "say": "Oceny tych aplikacji są dobre: na Androidzie cztery przecinek siedem przy ponad sześćdziesięciu ośmiu tysiącach opinii, a w polskim Ap Storze cztery przecinek sześć przy sześćdziesięciu dwóch ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a bez reklam kosztuje dwadzieścia cztery złote dziewięćdziesiąt dziewięć groszy."
+   "text": "Oceny tych aplikacji są dobre: na Androidzie 4,7 przy ponad 68 tysiącach opinii, a w polskim App Storze 4,6 przy 62 ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a osobna wersja bez reklam kosztuje jednorazowo 24,99 zł.",
+   "say": "Oceny tych aplikacji są dobre: na Androidzie cztery przecinek siedem przy ponad sześćdziesięciu ośmiu tysiącach opinii, a w polskim Ap Storze cztery przecinek sześć przy sześćdziesięciu dwóch ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a osobna wersja bez reklam kosztuje jednorazowo dwadzieścia cztery złote dziewięćdziesiąt dziewięć groszy."
   },
   {
    "id": "A11",
-   "text": "Plusy: za darmo i legalnie, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko 27 książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji.",
-   "say": "Plusy: za darmo i legalnie, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko dwadzieścia siedem książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji."
+   "text": "Plusy: za darmo i legalnie w USA, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko 27 książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji.",
+   "say": "Plusy: za darmo i legalnie w USA, bez konta i reklam, prawdziwe głosy, pliki na zawsze i ogromny wybór po angielsku. Minusy: po polsku tylko dwadzieścia siedem książek, głównie jeden lektor, nierówna jakość, strona po angielsku i brak oficjalnej aplikacji."
   },
   {
    "id": "A12",

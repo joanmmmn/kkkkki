@@ -1,8 +1,8 @@
 {
  "id": "A09",
- "hash": "03a8d6c25f66",
- "text": "Na telefonie? LibriVox nie ma oficjalnej aplikacji. Link „RSS” wkleisz do aplikacji z podcastami albo użyjesz aplikacji innych firm, jak LibriVox Audio Books na Androida i LibriVox Audiobooks na iPhone'a.",
- "duration": 14.4,
+ "hash": "86d881220684",
+ "text": "Na telefonie? LibriVox nie ma oficjalnej aplikacji. Link „RSS” wkleisz do aplikacji do podcastów albo użyjesz aplikacji innych firm, jak LibriVox Audio Books na Androida i LibriVox Audiobooks na iPhone'a.",
+ "duration": 14.39,
  "words": [
   {
    "w": "Na",
@@ -37,133 +37,137 @@
   {
    "w": "aplikacji.",
    "s": 2.88,
-   "e": 3.84
+   "e": 3.83
   },
   {
    "w": "Link",
-   "s": 4.04,
-   "e": 4.24
+   "s": 3.83,
+   "e": 4.15
   },
   {
    "w": "„er",
-   "s": 4.28,
-   "e": 4.56
+   "s": 4.31,
+   "e": 4.55
   },
   {
    "w": "es",
-   "s": 4.68,
-   "e": 4.8
+   "s": 4.67,
+   "e": 4.79
   },
   {
    "w": "es”",
-   "s": 4.88,
-   "e": 5.28
+   "s": 4.87,
+   "e": 5.27
   },
   {
    "w": "wkleisz",
-   "s": 5.32,
-   "e": 5.68
+   "s": 5.35,
+   "e": 5.75
   },
   {
    "w": "do",
-   "s": 5.72,
-   "e": 5.76
+   "s": 5.79,
+   "e": 5.83
   },
   {
    "w": "aplikacji",
-   "s": 5.84,
-   "e": 6.24
+   "s": 5.91,
+   "e": 6.31
   },
   {
-   "w": "z",
-   "s": 6.32,
-   "e": 6.373
+   "w": "do",
+   "s": 6.39,
+   "e": 6.47
   },
   {
-   "w": "podcastami",
-   "s": 6.427,
-   "e": 7.36
+   "w": "podcastów",
+   "s": 6.55,
+   "e": 7.19
   },
   {
    "w": "albo",
-   "s": 7.44,
-   "e": 7.68
+   "s": 7.27,
+   "e": 7.51
   },
   {
    "w": "użyjesz",
-   "s": 7.72,
-   "e": 8.04
+   "s": 7.55,
+   "e": 7.87
   },
   {
    "w": "aplikacji",
-   "s": 8.08,
-   "e": 8.56
+   "s": 7.91,
+   "e": 8.39
   },
   {
    "w": "innych",
-   "s": 8.64,
-   "e": 8.88
+   "s": 8.47,
+   "e": 8.79
   },
   {
    "w": "firm,",
-   "s": 8.96,
-   "e": 9.28
+   "s": 8.91,
+   "e": 9.07
   },
   {
    "w": "jak",
-   "s": 9.36,
-   "e": 9.6
+   "s": 9.11,
+   "e": 9.35
   },
   {
    "w": "Librivoks",
-   "s": 9.68,
-   "e": 10.16
+   "s": 9.43,
+   "e": 10.07
   },
   {
    "w": "Audio",
-   "s": 10.24,
-   "e": 10.48
+   "s": 10.31,
+   "e": 10.55
   },
   {
    "w": "Buks",
-   "s": 10.56,
-   "e": 10.8
+   "s": 10.63,
+   "e": 10.87
   },
   {
    "w": "na",
-   "s": 10.88,
-   "e": 10.96
+   "s": 10.91,
+   "e": 10.95
   },
   {
    "w": "Androida",
-   "s": 11.16,
-   "e": 11.76
+   "s": 11.03,
+   "e": 11.83
   },
   {
    "w": "i",
-   "s": 11.84,
-   "e": 12.0
+   "s": 11.91,
+   "e": 12.07
   },
   {
    "w": "Librivoks",
-   "s": 12.08,
-   "e": 12.64
+   "s": 12.15,
+   "e": 12.71
   },
   {
    "w": "Audiobuks",
-   "s": 12.72,
-   "e": 13.28
+   "s": 12.79,
+   "e": 13.35
   },
   {
    "w": "na",
-   "s": 13.36,
-   "e": 13.44
+   "s": 13.39,
+   "e": 13.43
   },
   {
    "w": "ajfona.",
-   "s": 13.52,
-   "e": 14.4
+   "s": 13.51,
+   "e": 14.47
   }
  ],
- "speechEnd": 13.965
+ "spliced": {
+  "from": 7,
+  "to": 32,
+  "segment_chars": 155
+ }
 }

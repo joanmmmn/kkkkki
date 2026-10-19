@@ -1,8 +1,8 @@
 {
  "id": "A02",
- "hash": "9db9674a693c",
- "text": "LibriVox to projekt wolontariuszy, działa od 2005 roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Bez reklam i bez zysku. Dziś to 21 847 tytułów w 49 językach. Na początku rozdziału słyszysz taką formułkę:",
- "duration": 20.0,
+ "hash": "10d41b2aa47b",
+ "text": "LibriVox to projekt wolontariuszy, działa od 2005 roku. Cel: każda książka z domeny publicznej ma mieć darmowy audiobook czytany przez człowieka. Niekomercyjnie i bez reklam. Dziś to 21 847 tytułów w 49 językach. Na początku rozdziału słyszysz taką formułkę:",
+ "duration": 20.29,
  "words": [
   {
    "w": "Librivoks",
@@ -117,128 +117,127 @@
   {
    "w": "człowieka.",
    "s": 8.76,
-   "e": 9.573
+   "e": 9.44
   },
   {
-   "w": "Bez",
-   "s": 9.627,
-   "e": 9.72
-  },
-  {
-   "w": "reklam",
-   "s": 9.76,
-   "e": 10.24
+   "w": "Niekomercyjnie",
+   "s": 9.44,
+   "e": 10.32
   },
   {
    "w": "i",
-   "s": 10.32,
-   "e": 10.4
-  },
-  {
-   "w": "bez",
    "s": 10.48,
    "e": 10.56
   },
   {
-   "w": "zysku.",
+   "w": "bez",
    "s": 10.64,
-   "e": 11.52
+   "e": 10.8
+  },
+  {
+   "w": "reklam.",
+   "s": 10.88,
+   "e": 11.44
   },
   {
    "w": "Dziś",
-   "s": 11.573,
-   "e": 11.76
+   "s": 11.943,
+   "e": 12.13
   },
   {
    "w": "to",
-   "s": 11.84,
-   "e": 11.92
+   "s": 12.21,
+   "e": 12.29
   },
   {
    "w": "dwadzieścia",
-   "s": 11.96,
-   "e": 12.4
+   "s": 12.33,
+   "e": 12.77
   },
   {
    "w": "jeden",
-   "s": 12.44,
-   "e": 12.56
+   "s": 12.81,
+   "e": 12.93
   },
   {
    "w": "tysięcy",
-   "s": 12.64,
-   "e": 13.28
+   "s": 13.01,
+   "e": 13.65
   },
   {
    "w": "osiemset",
-   "s": 13.36,
-   "e": 13.76
+   "s": 13.73,
+   "e": 14.13
   },
   {
    "w": "czterdzieści",
-   "s": 13.84,
-   "e": 14.4
+   "s": 14.21,
+   "e": 14.77
   },
   {
    "w": "siedem",
-   "s": 14.453,
-   "e": 14.64
+   "s": 14.823,
+   "e": 15.01
   },
   {
    "w": "tytułów",
-   "s": 14.72,
-   "e": 15.2
+   "s": 15.09,
+   "e": 15.57
   },
   {
    "w": "w",
-   "s": 15.24,
-   "e": 15.28
+   "s": 15.61,
+   "e": 15.65
   },
   {
    "w": "czterdziestu",
-   "s": 15.32,
-   "e": 15.84
+   "s": 15.69,
+   "e": 16.21
   },
   {
    "w": "dziewięciu",
-   "s": 15.92,
-   "e": 16.24
+   "s": 16.29,
+   "e": 16.61
   },
   {
    "w": "językach.",
-   "s": 16.32,
-   "e": 17.307
+   "s": 16.69,
+   "e": 17.677
   },
   {
    "w": "Na",
-   "s": 17.333,
-   "e": 17.36
+   "s": 17.703,
+   "e": 17.73
   },
   {
    "w": "początku",
-   "s": 17.4,
-   "e": 17.76
+   "s": 17.77,
+   "e": 18.13
   },
   {
    "w": "rozdziału",
-   "s": 17.84,
-   "e": 18.24
+   "s": 18.21,
+   "e": 18.61
   },
   {
    "w": "słyszysz",
-   "s": 18.28,
-   "e": 18.64
+   "s": 18.65,
+   "e": 19.01
   },
   {
    "w": "taką",
-   "s": 18.68,
-   "e": 18.88
+   "s": 19.05,
+   "e": 19.25
   },
   {
    "w": "formułkę:",
-   "s": 18.96,
-   "e": 20.0
+   "s": 19.33,
+   "e": 20.37
   }
  ],
- "speechEnd": 19.535
+ "spliced": {
+  "from": 23,
+  "to": 28,
+  "segment_chars": 28
+ }
 }

@@ -1,8 +1,8 @@
 {
  "id": "A03",
- "hash": "752c5aa5e448",
- "text": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej, więc możesz je pobrać, zachować i udostępniać. LibriVox prosi tylko o dobrowolne datki.",
- "duration": 12.8,
+ "hash": "a12a01cadd4c",
+ "text": "Ile to kosztuje? Nic. Nie ma abonamentu, konta ani okresu próbnego. Nagrania są w domenie publicznej w USA, więc możesz je pobrać i zachować. LibriVox prosi tylko o dobrowolne datki.",
+ "duration": 12.81,
  "words": [
   {
    "w": "Ile",
@@ -61,94 +61,103 @@
   },
   {
    "w": "Nagrania",
-   "s": 5.12,
-   "e": 5.52
+   "s": 5.08,
+   "e": 5.56
   },
   {
    "w": "są",
    "s": 5.6,
-   "e": 5.68
+   "e": 5.72
   },
   {
    "w": "w",
    "s": 5.76,
-   "e": 5.813
+   "e": 5.8
   },
   {
    "w": "domenie",
-   "s": 5.867,
-   "e": 6.16
+   "s": 5.88,
+   "e": 6.12
   },
   {
-   "w": "publicznej,",
-   "s": 6.32,
+   "w": "publicznej",
+   "s": 6.2,
+   "e": 6.68
+  },
+  {
+   "w": "w",
+   "s": 6.76,
    "e": 6.8
   },
   {
+   "w": "USA,",
+   "s": 6.84,
+   "e": 7.56
+  },
+  {
    "w": "więc",
-   "s": 6.88,
-   "e": 7.0
+   "s": 7.68,
+   "e": 7.88
   },
   {
    "w": "możesz",
-   "s": 7.04,
-   "e": 7.28
+   "s": 7.96,
+   "e": 8.2
   },
   {
    "w": "je",
-   "s": 7.36,
-   "e": 7.44
+   "s": 8.28,
+   "e": 8.36
   },
   {
-   "w": "pobrać,",
-   "s": 7.48,
-   "e": 8.04
-  },
-  {
-   "w": "zachować",
-   "s": 8.08,
-   "e": 8.64
+   "w": "pobrać",
+   "s": 8.4,
+   "e": 8.84
   },
   {
    "w": "i",
-   "s": 8.68,
-   "e": 8.72
+   "s": 8.88,
+   "e": 8.92
   },
   {
-   "w": "udostępniać.",
-   "s": 8.8,
-   "e": 9.973
+   "w": "zachować.",
+   "s": 9.0,
+   "e": 9.72
   },
   {
    "w": "LibriVox",
-   "s": 10.027,
-   "e": 10.48
+   "s": 10.117,
+   "e": 10.57
   },
   {
    "w": "prosi",
-   "s": 10.56,
-   "e": 10.8
+   "s": 10.65,
+   "e": 10.89
   },
   {
    "w": "tylko",
-   "s": 10.84,
-   "e": 11.12
+   "s": 10.93,
+   "e": 11.21
   },
   {
    "w": "o",
-   "s": 11.16,
-   "e": 11.2
+   "s": 11.25,
+   "e": 11.29
   },
   {
    "w": "dobrowolne",
-   "s": 11.28,
-   "e": 11.84
+   "s": 11.37,
+   "e": 11.93
   },
   {
    "w": "datki.",
-   "s": 11.96,
-   "e": 12.8
+   "s": 12.05,
+   "e": 12.89
   }
  ],
- "speechEnd": 12.332
+ "spliced": {
+  "from": 11,
+  "to": 23,
+  "segment_chars": 73
+ }
 }

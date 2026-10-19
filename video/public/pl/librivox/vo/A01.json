@@ -1,8 +1,8 @@
 {
  "id": "A01",
- "hash": "346552e1bb3d",
- "text": "Ponad 21 000 darmowych audiobooków, legalnie i bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać.",
- "duration": 14.24,
+ "hash": "3182a41515a7",
+ "text": "Ponad 21 000 darmowych audiobooków z domeny publicznej, bez rejestracji, czytanych przez ludzi. Także po polsku, jak „Lalka” Prusa. Darmowe audiobooki… gdzie jest haczyk? Sprawdzamy, jak słuchać i na co uważać.",
+ "duration": 14.6,
  "words": [
   {
    "w": "Ponad",
@@ -27,138 +27,147 @@
   {
    "w": "darmowych",
    "s": 1.68,
-   "e": 2.16
+   "e": 2.08
   },
   {
-   "w": "audiobooków,",
-   "s": 2.28,
-   "e": 3.04
+   "w": "audiobooków",
+   "s": 2.16,
+   "e": 2.72
   },
   {
-   "w": "legalnie",
-   "s": 3.24,
-   "e": 3.68
+   "w": "z",
+   "s": 2.76,
+   "e": 2.8
   },
   {
-   "w": "i",
-   "s": 3.76,
-   "e": 3.84
+   "w": "domeny",
+   "s": 2.88,
+   "e": 3.12
+  },
+  {
+   "w": "publicznej,",
+   "s": 3.2,
+   "e": 3.92
   },
   {
    "w": "bez",
-   "s": 3.92,
-   "e": 4.08
+   "s": 4.04,
+   "e": 4.16
   },
   {
    "w": "rejestracji,",
-   "s": 4.16,
-   "e": 4.96
+   "s": 4.2,
+   "e": 5.12
   },
   {
    "w": "czytanych",
-   "s": 5.04,
-   "e": 5.36
-  },
-  {
-   "w": "przez",
-   "s": 5.4,
+   "s": 5.2,
    "e": 5.6
   },
   {
+   "w": "przez",
+   "s": 5.68,
+   "e": 5.84
+  },
+  {
    "w": "ludzi.",
-   "s": 5.64,
-   "e": 6.0
+   "s": 5.92,
+   "e": 6.4
   },
   {
    "w": "Także",
-   "s": 6.32,
-   "e": 6.56
+   "s": 6.68,
+   "e": 6.92
   },
   {
    "w": "po",
-   "s": 6.64,
-   "e": 6.72
+   "s": 7.0,
+   "e": 7.08
   },
   {
    "w": "polsku,",
-   "s": 6.76,
-   "e": 7.36
+   "s": 7.12,
+   "e": 7.72
   },
   {
    "w": "jak",
-   "s": 7.48,
-   "e": 7.6
+   "s": 7.84,
+   "e": 7.96
   },
   {
    "w": "„Lalka”",
-   "s": 7.68,
-   "e": 8.04
+   "s": 8.04,
+   "e": 8.4
   },
   {
    "w": "Prusa.",
-   "s": 8.08,
-   "e": 8.48
+   "s": 8.44,
+   "e": 8.84
   },
   {
    "w": "Darmowe",
-   "s": 8.88,
-   "e": 9.28
+   "s": 9.24,
+   "e": 9.64
   },
   {
    "w": "audiobooki…",
-   "s": 9.36,
-   "e": 10.48
+   "s": 9.72,
+   "e": 10.84
   },
   {
    "w": "gdzie",
-   "s": 10.56,
-   "e": 10.68
+   "s": 10.92,
+   "e": 11.04
   },
   {
    "w": "jest",
-   "s": 10.72,
-   "e": 10.88
+   "s": 11.08,
+   "e": 11.24
   },
   {
    "w": "haczyk?",
-   "s": 10.96,
-   "e": 11.44
+   "s": 11.32,
+   "e": 11.8
   },
   {
    "w": "Sprawdzamy,",
-   "s": 11.76,
-   "e": 12.28
+   "s": 12.12,
+   "e": 12.64
   },
   {
    "w": "jak",
-   "s": 12.32,
-   "e": 12.48
+   "s": 12.68,
+   "e": 12.84
   },
   {
    "w": "słuchać",
-   "s": 12.56,
-   "e": 12.96
+   "s": 12.92,
+   "e": 13.32
   },
   {
    "w": "i",
-   "s": 13.12,
-   "e": 13.2
+   "s": 13.48,
+   "e": 13.56
   },
   {
    "w": "na",
-   "s": 13.28,
-   "e": 13.36
+   "s": 13.64,
+   "e": 13.72
   },
   {
    "w": "co",
-   "s": 13.44,
-   "e": 13.52
+   "s": 13.8,
+   "e": 13.88
   },
   {
    "w": "uważać.",
-   "s": 13.56,
-   "e": 14.24
+   "s": 13.92,
+   "e": 14.6
   }
  ],
- "speechEnd": 14.149
+ "spliced": {
+  "from": 0,
+  "to": 13,
+  "segment_chars": 114
+ }
 }

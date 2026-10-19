@@ -1,8 +1,8 @@
 {
  "id": "A08",
- "hash": "0096e4de1620",
- "text": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około 60 procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj minuty.",
- "duration": 14.72,
+ "hash": "81cb5c470896",
+ "text": "A głosy? To wolontariusze, więc jakość bywa różna. Po polsku dominuje jeden lektor: Piotr Nater nagrał około 60 procent wszystkich polskich godzin, w tym całą „Lalkę” i „Faraona”. Zanim wybierzesz książkę, posłuchaj najpierw minuty nagrania.",
+ "duration": 15.6,
  "words": [
   {
    "w": "A",
@@ -146,29 +146,43 @@
   },
   {
    "w": "Zanim",
-   "s": 12.08,
+   "s": 12.0,
    "e": 12.32
   },
   {
    "w": "wybierzesz",
    "s": 12.4,
-   "e": 12.72
+   "e": 12.8
   },
   {
    "w": "książkę,",
-   "s": 12.88,
-   "e": 13.32
+   "s": 13.0,
+   "e": 13.52
   },
   {
    "w": "posłuchaj",
-   "s": 13.36,
-   "e": 13.76
+   "s": 13.64,
+   "e": 14.0
   },
   {
-   "w": "minuty.",
-   "s": 13.84,
-   "e": 14.72
+   "w": "najpierw",
+   "s": 14.04,
+   "e": 14.4
+  },
+  {
+   "w": "minuty",
+   "s": 14.48,
+   "e": 14.8
+  },
+  {
+   "w": "nagrania.",
+   "s": 14.88,
+   "e": 15.6
   }
  ],
- "speechEnd": 14.296
+ "spliced": {
+  "from": 28,
+  "to": 33,
+  "segment_chars": 61
+ }
 }

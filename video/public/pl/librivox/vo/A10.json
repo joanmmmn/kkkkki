@@ -1,8 +1,8 @@
 {
  "id": "A10",
- "hash": "57b25c32417b",
- "text": "Oceny tych aplikacji są dobre: na Androidzie 4,7 przy ponad 68 tysiącach opinii, a w polskim App Storze 4,6 przy 62 ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a bez reklam kosztuje 24,99 zł.",
- "duration": 21.52,
+ "hash": "53a313bb0a21",
+ "text": "Oceny tych aplikacji są dobre: na Androidzie 4,7 przy ponad 68 tysiącach opinii, a w polskim App Storze 4,6 przy 62 ocenach. Mają wyłącznik czasowy, zakładki i pobieranie offline. Minus: wersja na Androida ma reklamy, a osobna wersja bez reklam kosztuje jednorazowo 24,99 zł.",
+ "duration": 22.98,
  "words": [
   {
    "w": "Oceny",
@@ -177,88 +177,107 @@
   {
    "w": "offline.",
    "s": 14.32,
-   "e": 14.84
+   "e": 14.74
   },
   {
    "w": "Minus:",
-   "s": 14.88,
-   "e": 15.76
+   "s": 14.74,
+   "e": 15.62
   },
   {
    "w": "wersja",
-   "s": 15.84,
-   "e": 16.0
+   "s": 15.74,
+   "e": 15.94
   },
   {
    "w": "na",
-   "s": 16.04,
-   "e": 16.08
+   "s": 15.98,
+   "e": 16.02
   },
   {
    "w": "Androida",
-   "s": 16.16,
-   "e": 16.56
+   "s": 16.1,
+   "e": 16.5
   },
   {
    "w": "ma",
-   "s": 16.6,
-   "e": 16.64
+   "s": 16.58,
+   "e": 16.66
   },
   {
    "w": "reklamy,",
-   "s": 16.72,
-   "e": 17.413
+   "s": 16.74,
+   "e": 17.42
   },
   {
    "w": "a",
-   "s": 17.467,
-   "e": 17.52
+   "s": 17.46,
+   "e": 17.54
+  },
+  {
+   "w": "osobna",
+   "s": 17.62,
+   "e": 17.94
+  },
+  {
+   "w": "wersja",
+   "s": 18.02,
+   "e": 18.34
   },
   {
    "w": "bez",
-   "s": 17.6,
-   "e": 17.76
+   "s": 18.46,
+   "e": 18.58
   },
   {
    "w": "reklam",
-   "s": 17.84,
-   "e": 18.16
+   "s": 18.66,
+   "e": 18.98
   },
   {
    "w": "kosztuje",
-   "s": 18.24,
-   "e": 18.56
+   "s": 19.02,
+   "e": 19.38
+  },
+  {
+   "w": "jednorazowo",
+   "s": 19.42,
+   "e": 20.02
   },
   {
    "w": "dwadzieścia",
-   "s": 18.64,
-   "e": 19.04
+   "s": 20.1,
+   "e": 20.5
   },
   {
    "w": "cztery",
-   "s": 19.12,
-   "e": 19.28
+   "s": 20.58,
+   "e": 20.82
   },
   {
    "w": "złote",
-   "s": 19.44,
-   "e": 19.76
+   "s": 20.9,
+   "e": 21.22
   },
   {
    "w": "dziewięćdziesiąt",
-   "s": 19.8,
-   "e": 20.36
+   "s": 21.26,
+   "e": 21.86
   },
   {
    "w": "dziewięć",
-   "s": 20.4,
-   "e": 20.64
+   "s": 21.9,
+   "e": 22.1
   },
   {
    "w": "groszy.",
-   "s": 20.72,
-   "e": 21.52
+   "s": 22.18,
+   "e": 23.06
   }
  ],
- "speechEnd": 21.134
+ "spliced": {
+  "from": 35,
+  "to": 51,
+  "segment_chars": 144
+ }
 }
