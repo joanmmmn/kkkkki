@@ -33,7 +33,7 @@
    "wait": 900
   },
   {
-   "eval": "(()=>{const p=[...document.querySelectorAll('p')].find(e=>e.textContent.includes('co jakiś czas treść'));if(p)window.scrollTo(0,p.getBoundingClientRect().top+window.scrollY-300);})()"
+   "eval": "(()=>{const p=[...document.querySelectorAll('p')].filter(e=>e.offsetParent!==null&&e.getBoundingClientRect().height>0).find(e=>e.textContent.replace(/\\s+/g,' ').includes('treść mamy po niemiecku'));if(p)window.scrollTo(0,p.getBoundingClientRect().top+window.scrollY-300);})()"
   },
   {
    "wait": 2500

@@ -15,14 +15,17 @@ export const piece: PLPiece = {
         { at: 'trzydziesci', label: '„Lalka”: 32 godz. za 0 zł', icon: 'headphones' }, { at: 'konta', label: 'Bez konta i bez reklam', icon: 'user' },
         { at: 'legalnie', label: 'Legalnie', tone: 'good' }, { at: 'plusy', label: 'Plusy, minusy, jak zacząć', icon: 'search' },
       ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym są Wolne Lektury?', rec: { clip: 'o_projekcie', start: 0.3, rate: 0.6 },
-        cuts: [{ at: 'Nagran', rec: { clip: 'o_projekcie', start: 6.2 } }, { at: 'milionow', rec: { clip: 'o_projekcie', start: 1.6 } }], facts: [
-        { at: 'Fundacji', label: 'Fundacja Wolne Lektury', sub: 'Warszawa', icon: 'library' },
-        { at: 'dwa', label: 'Działa od 2007 roku', icon: 'calendar' },
-        { at: 'przeklady', label: 'Nowe przekłady na wolnej licencji', sub: '„Mały Książę”, „Rok 1984”', icon: 'book' },
-        { at: 'Nagran', label: 'Ponad 1000 nagrań', icon: 'headphones' },
-        { at: 'milionow', label: '7 mln użytkowników rocznie', icon: 'user' },
-      ], big: { at: ['siedem', 0], value: 7332, label: 'utwory w bibliotece' } },
+      { id: 'A02', kind: 'rec', bump: 'Czym są Wolne Lektury?', kicker: 'O projekcie', title: 'Biblioteka internetowa', rec: { clip: 'o_projekcie', start: 8.6, holdAt: 11.0 },
+        cuts: [{ at: ['siedem', 0], rec: { clip: 'o_projekcie', start: 4.4, holdAt: 5.0 } }, { at: 'Nagran', rec: { clip: 'o_projekcie', start: 6.4, holdAt: 7.2 } },
+          { at: 'milionow', rec: { clip: 'o_projekcie', start: 1.9, holdAt: 2.7 } }],
+        marks: [{ at: 'Fundacji', until: ['siedem', 0], x: 384, y: 612, w: 500, h: 62 }, { at: ['siedem', 0], until: 'przeklady', x: 384, y: 351, w: 412, h: 35 },
+          { at: 'przeklady', until: 'Nagran', x: 384, y: 405, w: 560, h: 88 }, { at: 'Nagran', until: 'milionow', x: 384, y: 621, w: 470, h: 35 }, { at: 'milionow', x: 384, y: 240, w: 546, h: 62 }],
+        zooms: [{ at: 'Fundacji', zoom: 2, x: 640, y: 640 }, { at: ['siedem', 0], zoom: 2, x: 660, y: 420 }],
+        tags: [
+          { at: 'Fundacji', label: 'Fundacja Wolne Lektury', sub: 'Warszawa · od 2007 roku', icon: 'library' }, { at: ['siedem', 0], label: '7332 utwory', sub: 'lektury szkolne i klasyka', icon: 'book' },
+          { at: 'przeklady', label: 'Nowe przekłady', sub: '„Mały Książę”, „Rok 1984”', icon: 'sparkle' }, { at: 'Nagran', label: 'Ponad 1000 nagrań', icon: 'headphones' },
+          { at: 'milionow', label: '7 mln użytkowników rocznie', icon: 'user' },
+        ] },
       { id: 'A03', kind: 'plans', bump: 'Ile to kosztuje?', kicker: 'Cennik', title: 'Nic nie płacisz', plans: [
         { at: 'Nic', name: 'Wolne Lektury', price: '0 zł', period: 'bez opłat', note: 'stan na październik 2026', features: ['Bez abonamentu', 'Bez okresu próbnego', 'Bez karty płatniczej', 'Bez rejestracji'], best: true, badge: 'Za darmo' },
         { at: 'darowizn', name: 'Darowizna', price: 'Dowolna', period: 'kwota', note: 'jednorazowo albo co miesiąc', features: ['Całkowicie dobrowolna', 'Utrzymuje bibliotekę'] },
@@ -46,7 +49,7 @@ export const piece: PLPiece = {
           { at: 'Wiktor', label: 'Wiktor Korzeniewski', sub: 'lektor', icon: 'mic' }, { at: 'osiem', label: '8 godz. 44 min', icon: 'clock' },
         ] },
       { id: 'A06', kind: 'rec', kicker: 'Lektorzy', title: 'Ludzie, nie AI', rec: { clip: 'kamizelka', start: 0.3 }, cuts: [{ at: 'Tajemniczy', rec: { clip: 'ogrod', start: 0.3 } }],
-        marks: [{ at: 'Peszek', until: 'Tajemniczy', x: 688, y: 360, w: 108, h: 28 }, { at: 'Holtz', x: 688, y: 390, w: 120, h: 28 }],
+        marks: [{ at: 'Kamizelke', until: 'Tajemniczy', x: 688, y: 360, w: 108, h: 28 }, { at: 'Holtz', x: 688, y: 390, w: 120, h: 28 }],
         zooms: [{ at: 'Ludzie', zoom: 1.8, x: 960, y: 330 }],
         tags: [
           { at: 'Peszek', label: 'Jan Peszek', sub: '„Kamizelka”, „Latarnik”', icon: 'mic' }, { at: 'Holtz', label: 'Paulina Holtz', sub: '„Tajemniczy ogród”', icon: 'mic' },
@@ -59,7 +62,7 @@ export const piece: PLPiece = {
         tags: [
           { at: 'em', label: 'MP3 i OGG', icon: 'download' }, { at: 'dejzi', label: 'DAISY', sub: 'dla osób z trudnościami w czytaniu', icon: 'book' },
           { at: 'e-pub', label: 'EPUB + audiobook', icon: 'sync' }, { at: 'Cala', label: 'Cała książka w ZIP', icon: 'download' },
-          { at: 'wolnych', label: 'Wolne licencje', sub: 'pliki zostają u ciebie', tone: 'good' },
+          { at: 'wolnych', label: 'Wolne licencje', sub: 'pliki zatrzymasz i udostępnisz dalej', tone: 'good' },
         ] },
       { id: 'A08', kind: 'features', kicker: 'E-booki w komplecie', title: 'Czytaj i słuchaj', items: [
         { at: 'przypisami', label: 'Przypisy i motywy', sub: 'literackie, w tekście', icon: 'doc' }, { at: 'online', label: 'Czytaj online', sub: 'w przeglądarce', icon: 'globe' },
@@ -67,23 +70,25 @@ export const piece: PLPiece = {
       ] },
       { id: 'A09', kind: 'devices', items: [
         { at: 'przegladarce', label: 'Przeglądarka', icon: 'globe', ok: true }, { at: 'komputerze', label: 'Komputer', icon: 'laptop', ok: true },
-        { at: 'telefonie', label: 'Telefon', icon: 'phone', ok: true }, { at: 'Androida', label: 'Android', sub: 'darmowa aplikacja', icon: 'phone', ok: true },
+        { at: 'telefonie', label: 'Telefon', icon: 'phone', ok: true }, { at: 'Androida', label: 'Android', sub: 'aplikacja od 12.2025', icon: 'phone', ok: true },
         { at: 'ajfona', label: 'iPhone', sub: 'aplikacja od 12.2025', icon: 'phone', ok: true }, { at: 'em', label: 'Pliki MP3', sub: 'każde urządzenie', icon: 'download', ok: true },
       ] },
       { id: 'A10', kind: 'ratings', bump: 'Opinie', title: 'Aplikacja Wolne Lektury', stores: [{ at: 'Plej', store: 'google', rating: 4.6, count: '37 opinii' }, { at: 'Storze', store: 'apple', rating: 4.4, count: '14 ocen (Polska)' }],
-        notes: [{ at: 'malo', label: 'Mało ocen: aplikacja jest nowa', sub: 'stan na 19.10.2026', icon: 'calendar' }],
+        notes: [{ at: 'malo', label: 'Mało ocen: aplikacja jest nowa', sub: 'stan na 19.10.2026', icon: 'calendar' },
+          { at: 'zglasza', label: 'Nie startuje podczas rozmowy', sub: 'jedno zgłoszenie w App Storze', tone: 'bad' }],
         likes: [{ at: 'pozytywne', label: 'Krótkie, pozytywne opinie', sub: 'w Google Play' }],
-        dislikes: [{ at: 'zglasza', label: 'Nie startuje podczas rozmowy', sub: 'jedno zgłoszenie w App Storze' }] },
+        dislikes: [] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Wolne Lektury', pros: [
         { at: 'darmo', label: '0 zł i legalnie' }, { at: 'konta', label: 'Bez konta i bez reklam' }, { at: 'prawdziwi', label: 'Prawdziwi lektorzy' },
         { at: 'zawsze', label: 'Pliki MP3 na zawsze' }, { at: 'komplecie', label: 'E-book w komplecie' },
       ], cons: [{ at: 'tylko', label: 'Tylko klasyka i lektury', sub: 'żadnych nowości' }, { at: 'polowa', label: 'Ponad połowa to wiersze' }, { at: 'swieza', label: 'Nowa aplikacja, mało ocen' }] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Wolne Lektury:\nczy warto?', yes: [
-        { at: 'uczniow', label: 'Uczniowie, rodzice, fani klasyki', sub: 'trudno o lepszą darmową opcję' },
-        { at: 'pelna', label: '„Lalka”: pełna wersja za 0 zł', sub: '2 tomy, ponad 32 godziny' },
-      ], no: [
-        { at: 'Szukasz', label: 'Szukasz nowości', sub: 'sprawdź kod z biblioteki albo abonament' },
-      ], alts: { at: 'Audiotece', names: ['„Lalka” w Audiotece: czyta Zapasiewicz · 8 godz. 55 min · 19,99 zł'], label: 'Stan na październik 2026:' } },
+        { at: 'uczniow', label: 'Uczniowie i rodzice', sub: 'lektury szkolne za darmo' }, { at: 'fanow', label: 'Fani klasyki', sub: 'trudno o lepszą darmową opcję' },
+      ], no: [] },
+      { id: 'A12B', kind: 'plans', kicker: 'Dla porównania', title: '„Lalka” Prusa', plans: [
+        { at: 'Audiotece', name: 'Audioteka', price: '19,99 zł', period: 'zakup', note: 'stan na październik 2026', features: ['!Wersja skrócona', 'Czyta Zbigniew Zapasiewicz', '8 h 55 min'] },
+        { at: 'pelna', name: 'Wolne Lektury', price: '0 zł', period: 'bez opłat', note: 'stan na październik 2026', features: ['Pełna wersja, 2 tomy', 'Czyta Albert Osik', '32 h 04 min'], best: true, badge: 'Pełna wersja' },
+      ], footer: [{ at: 'Szukasz', label: 'Szukasz nowości? Tu ich nie ma', tone: 'bad' }, { at: 'kod', label: 'Kod z biblioteki albo abonament', sub: 'np. Audioteka, Empik Go, Legimi', icon: 'library' }] },
       { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Bez konta', title: 'Słuchasz od razu', rec: { clip: 'portada', start: 2.4 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na wolnelektury.pl' }, { at: 'Audiobooki', title: 'Kliknij „Audiobooki”' },
         { at: 'wpisz', title: 'albo wyszukaj tytuł', rec: { clip: 'szukaj', start: 0.2 } },
@@ -97,10 +102,10 @@ export const piece: PLPiece = {
       { id: 'B05', kind: 'rec', kicker: 'Licencja', title: 'Drobny druk', rec: { clip: 'pt_player', start: 9.3, holdAt: 15.6 },
         marks: [{ at: 'licencje', x: 698, y: 504, w: 80, h: 34 }], zooms: [{ at: 'udostepniasz', zoom: 2.2, x: 800, y: 470 }],
         tags: [
-          { at: 'udostepniasz', label: 'Udostępniasz dalej?', icon: 'link' }, { at: 'autora', label: 'Autor · źródło · licencja', icon: 'doc' },
+          { at: 'udostepniasz', label: 'Udostępniasz dalej?', icon: 'link' }, { at: 'autora', label: 'Autor · lektor · źródło · licencja', icon: 'doc' }, { at: 'tych', label: 'Na tych samych warunkach', icon: 'sync' },
           { at: 'znajdziesz', label: 'Przy każdym nagraniu', sub: 'ikona licencji', icon: 'check' },
         ] },
-      { id: 'B06', kind: 'outro', rec: { clip: '@common/sb_search', start: 5.2, url: 'sonorbooks.pl' }, cta: 'Porównaj, gdzie\nposłuchasz i za ile:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
+      { id: 'B06', kind: 'outro', rec: { clip: '@common/sb_platformy', start: 2.6, holdAt: 6.3, url: 'sonorbooks.pl/platformy' }, cta: 'Porównaj, gdzie\nposłuchasz i za ile:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'porownasz', label: 'Audioteka · Empik Go · Legimi', sub: 'ceny: stan na październik 2026', icon: 'search' }] },
     ],
     chapters: [

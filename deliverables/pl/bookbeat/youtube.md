@@ -1,6 +1,6 @@
 # YouTube · BookBeat (SonorBooks Polska)
 
-Duración: 4:27 · Subtítulos: `bookbeat.pl.srt` · Miniatura: `PLThumb-bookbeat`
+Duración: 4:35 · Subtítulos: `bookbeat.pl.srt` · Miniatura: `PLThumb-bookbeat`
 
 ## Tytuł (76 znaków)
 **BookBeat: czy warto w 2026? Recenzja, opinie, cena i jak wypróbować za darmo**
@@ -19,19 +19,19 @@ Sprawdziliśmy ceny, limity godzin, polski katalog i regulamin: co jest dobre, c
 ⏱️ Rozdziały
 0:00 BookBeat: czy warto?
 0:11 Czym jest BookBeat
-0:25 Cennik: Basic, Standard i Premium
-0:49 Polski katalog
-1:04 Wiedźmin i karta książki
-1:30 Funkcje aplikacji
-1:45 Jak liczą się godziny
-2:02 Profile rodzinne i dziecięce
-2:15 Urządzenia
-2:29 Opinie
-2:45 Plusy i minusy
-3:00 Werdykt: czy warto?
-3:13 Jak wypróbować za darmo
-3:42 Jak zrezygnować
-3:55 Drobny druk okresu próbnego
+0:26 Cennik: Basic, Standard i Premium
+0:50 Polski katalog
+1:08 Wiedźmin i karta książki
+1:35 Funkcje aplikacji
+1:53 Jak liczą się godziny
+2:09 Profile rodzinne i dziecięce
+2:23 Urządzenia
+2:37 Opinie
+2:53 Plusy i minusy
+3:09 Werdykt: czy warto?
+3:22 Jak wypróbować za darmo
+3:50 Jak zrezygnować
+4:03 Drobny druk okresu próbnego
 
 W filmie:
 • Trzy pakiety: Basic 22,99 zł (20 godzin), Standard 29,99 zł (40 godzin) i Premium 34,99 zł (100 godzin) miesięcznie, bez zobowiązań. Do 4 profili dodatkowych od 9,99 zł miesięcznie za profil. Planu bez limitu nie ma.
