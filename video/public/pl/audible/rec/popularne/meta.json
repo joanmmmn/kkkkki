@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 121,
+ "duration": 7.8,
+ "offset": 0.098,
+ "marks": {
+  "how": 0.386,
+  "popular": 3.043,
+  "kraszewski": 5.381,
+  "end": 7.8
+ },
+ "events": []
+}

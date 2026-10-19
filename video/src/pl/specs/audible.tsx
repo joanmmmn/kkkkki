@@ -13,7 +13,7 @@ export const piece: PLPiece = {
     kicker: 'Recenzja Audible', music: 'pl/audible/music/bed.mp3',
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Audible\nw Polsce:\nczy warto?', hi: ['Audible'], rec: { clip: 'plany', start: 0.3 },
-        cuts: [{ at: 'polski', rec: { clip: 'katalog', start: 2.4 } }, { at: 'drobny', rec: { clip: 'faq', start: 2.2 } }], promises: [
+        cuts: [{ at: 'polski', rec: { clip: 'audible_de', start: 0.3, url: 'audible.de' } }, { at: 'Powiemy', rec: { clip: 'plany', start: 6.3 } }], promises: [
         { at: 'plany', label: 'Plany i ceny', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'search' },
         { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '30', label: '30 dni za darmo', sub: 'dla nowych członków', icon: 'gift' },
       ] },
@@ -89,11 +89,12 @@ export const piece: PLPiece = {
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Okres próbny', title: 'Za darmo na start', at: '30', value: '30 dni', label: 'za darmo dla nowych członków', tags: [
         { at: 'obu', label: 'Standard i Premium', icon: 'check' }, { at: 'kredyt', label: 'Premium: 1 kredyt', sub: 'już w okresie próbnym', icon: 'gift' },
       ] },
-      { id: 'B02', kind: 'steps', kicker: 'Jak zacząć', title: 'Zapis na Amazon.pl', rec: { clip: 'plany', start: 0.3 }, steps: [
+      { id: 'B02', kind: 'steps', kicker: 'Jak zacząć', title: 'Zapis na Amazon.pl', rec: { clip: 'plany', start: 1.4 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na Amazon.pl', sub: 'zakładka Audiobooki Audible' }, { at: 'Wyprobuj', title: 'Wypróbuj Standard albo Premium' },
         { at: 'Zalogujesz', title: 'Zaloguj się kontem Amazon', sub: 'i podaj metodę płatności' }, { at: 'dzis', title: 'Dziś 0 zł', sub: 'po 30 dniach 28,99 / 41,99 zł automatycznie' },
       ], note: { at: 'dzis', label: 'Ceny: stan na październik 2026', icon: 'calendar' },
-        marks: [{ at: 'Wyprobuj', until: 'Premium', x: 508, y: 545, w: 424, h: 50 }, { at: 'Premium', until: 'Zalogujesz', x: 988, y: 545, w: 424, h: 50 }] },
+        marks: [{ at: 'Wyprobuj', until: 'Premium', x: 508, y: 545, w: 424, h: 50 }, { at: 'Premium', until: 'Zalogujesz', x: 988, y: 545, w: 424, h: 50 }, { at: 'dzis', x: 500, y: 598, w: 920, h: 56 }],
+        zooms: [{ at: 'Wyprobuj', zoom: 1.3, x: 960, y: 480 }] },
       { id: 'B03', kind: 'rec', kicker: 'Ważne', title: 'Zapisz się na stronie', rec: { clip: 'appstore', start: 0.3, url: 'apps.apple.com/pl' },
         marks: [{ at: 'App', until: 'Potem', x: 584, y: 168, w: 124, h: 28 }], zooms: [{ at: 'App', zoom: 1.6, x: 640, y: 300 }],
         tags: [
