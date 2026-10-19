@@ -1,6 +1,6 @@
 {
- "total_frames": 13299,
- "seconds": 265.98,
+ "total_frames": 13307,
+ "seconds": 266.14,
  "chapters": [
   {
    "t": 10.86,
@@ -12,50 +12,46 @@
   },
   {
    "t": 50.42,
-   "label": "Jak liczą się godziny"
+   "label": "Jak liczone są godziny"
   },
   {
    "t": 64.84,
    "label": "Audiobooki+ i doładowania"
   },
   {
-   "t": 82.9,
+   "t": 84.34,
    "label": "Jak znaleźć audiobooki w aplikacji"
   },
   {
-   "t": 95.12,
+   "t": 96.56,
    "label": "Zakup pojedynczych tytułów"
   },
   {
-   "t": 110.08,
-   "label": "Funkcje odtwarzacza"
+   "t": 111.52,
+   "label": "Funkcje odtwarzacza i urządzenia"
   },
   {
-   "t": 125.78,
-   "label": "Urządzenia"
-  },
-  {
-   "t": 134.46,
+   "t": 134.62,
    "label": "Opinie"
   },
   {
-   "t": 153.5,
+   "t": 153.66,
    "label": "Plusy i minusy"
   },
   {
-   "t": 170.0,
+   "t": 170.16,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 190.22,
+   "t": 190.38,
    "label": "Jak zacząć"
   },
   {
-   "t": 216.32,
+   "t": 216.48,
    "label": "Ile godzin ci zostało"
   },
   {
-   "t": 228.54,
+   "t": 228.7,
    "label": "Jak zrezygnować"
   }
  ],
@@ -90,20 +86,20 @@
    "start": 2535,
    "dur": 707,
    "lead": 26,
-   "bump": "Jak liczą się godziny"
+   "bump": "Jak liczone są godziny"
   },
   {
    "id": "A05",
    "kind": "rec",
    "start": 3242,
-   "dur": 917,
+   "dur": 989,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A06",
    "kind": "features",
-   "start": 4159,
+   "start": 4231,
    "dur": 597,
    "lead": 26,
    "bump": "Jak to działa"
@@ -111,7 +107,7 @@
   {
    "id": "A07",
    "kind": "rec",
-   "start": 4756,
+   "start": 4828,
    "dur": 748,
    "lead": 7,
    "bump": null
@@ -119,15 +115,15 @@
   {
    "id": "A08",
    "kind": "features",
-   "start": 5504,
-   "dur": 785,
+   "start": 5576,
+   "dur": 721,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6289,
+   "start": 6297,
    "dur": 448,
    "lead": 7,
    "bump": null
@@ -135,7 +131,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 6737,
+   "start": 6745,
    "dur": 952,
    "lead": 26,
    "bump": "Opinie"
@@ -143,7 +139,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 7689,
+   "start": 7697,
    "dur": 825,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -151,7 +147,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 8514,
+   "start": 8522,
    "dur": 1011,
    "lead": 26,
    "bump": "Werdykt"
@@ -159,7 +155,7 @@
   {
    "id": "B01",
    "kind": "steps",
-   "start": 9525,
+   "start": 9533,
    "dur": 509,
    "lead": 26,
    "bump": "Jak zacząć"
@@ -167,7 +163,7 @@
   {
    "id": "B02",
    "kind": "stat",
-   "start": 10034,
+   "start": 10042,
    "dur": 782,
    "lead": 7,
    "bump": null
@@ -175,7 +171,7 @@
   {
    "id": "B03",
    "kind": "steps",
-   "start": 10816,
+   "start": 10824,
    "dur": 611,
    "lead": 7,
    "bump": null
@@ -183,7 +179,7 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 11427,
+   "start": 11435,
    "dur": 801,
    "lead": 7,
    "bump": null
@@ -191,7 +187,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12228,
+   "start": 12236,
    "dur": 1071,
    "lead": 7,
    "bump": null

@@ -1,8 +1,8 @@
 {
  "id": "A04",
- "hash": "89679c06760c",
- "text": "W abonamencie słuchasz albo czytasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo.com włączysz w wyszukiwarce filtr „tylko Kobo Plus”.",
- "duration": 14.96,
+ "hash": "f9745bcdabc9",
+ "text": "W abonamencie czytasz albo słuchasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo.com włączysz w wyszukiwarce filtr „tylko Kobo Plus”.",
+ "duration": 14.88,
  "words": [
   {
    "w": "W",
@@ -15,18 +15,18 @@
    "e": 0.72
   },
   {
-   "w": "słuchasz",
+   "w": "czytasz",
    "s": 0.8,
-   "e": 1.28
+   "e": 1.24
   },
   {
    "w": "albo",
-   "s": 1.36,
-   "e": 1.6
+   "s": 1.28,
+   "e": 1.52
   },
   {
-   "w": "czytasz,",
-   "s": 1.68,
+   "w": "słuchasz,",
+   "s": 1.6,
    "e": 2.16
   },
   {
@@ -37,91 +37,91 @@
   {
    "w": "chcesz,",
    "s": 2.4,
-   "e": 3.0
+   "e": 3.04
   },
   {
    "w": "bez",
-   "s": 3.04,
-   "e": 3.2
+   "s": 3.12,
+   "e": 3.28
   },
   {
    "w": "limitu",
    "s": 3.36,
-   "e": 3.6
+   "e": 3.68
   },
   {
    "w": "godzin",
-   "s": 3.68,
-   "e": 4.24
+   "s": 3.8,
+   "e": 4.08
   },
   {
    "w": "–",
-   "s": 4.32,
-   "e": 4.4
+   "s": 4.4,
+   "e": 4.48
   },
   {
    "w": "ale",
-   "s": 4.48,
-   "e": 4.56
+   "s": 4.56,
+   "e": 4.64
   },
   {
    "w": "tylko",
-   "s": 4.64,
-   "e": 4.88
+   "s": 4.72,
+   "e": 4.96
   },
   {
    "w": "tytułów",
-   "s": 4.96,
-   "e": 5.36
+   "s": 5.04,
+   "e": 5.52
   },
   {
    "w": "oznaczonych",
-   "s": 5.44,
-   "e": 5.88
+   "s": 5.56,
+   "e": 6.0
   },
   {
    "w": "jako",
-   "s": 5.92,
+   "s": 6.04,
    "e": 6.24
   },
   {
    "w": "Kobo",
-   "s": 6.28,
-   "e": 6.56
+   "s": 6.32,
+   "e": 6.64
   },
   {
    "w": "Plus.",
-   "s": 6.92,
-   "e": 7.32
+   "s": 6.84,
+   "e": 7.44
   },
   {
    "w": "Resztę",
-   "s": 7.36,
-   "e": 7.6
+   "s": 7.52,
+   "e": 7.72
   },
   {
    "w": "sklepu",
-   "s": 7.68,
-   "e": 8.08
+   "s": 7.76,
+   "e": 8.16
   },
   {
    "w": "kupujesz",
-   "s": 8.12,
-   "e": 8.48
+   "s": 8.2,
+   "e": 8.56
   },
   {
    "w": "osobno.",
-   "s": 8.56,
-   "e": 9.547
+   "s": 8.64,
+   "e": 9.56
   },
   {
    "w": "Po",
-   "s": 9.573,
-   "e": 9.6
+   "s": 9.6,
+   "e": 9.64
   },
   {
    "w": "zalogowaniu",
-   "s": 9.64,
+   "s": 9.68,
    "e": 10.16
   },
   {
@@ -132,31 +132,31 @@
   {
    "w": "kobo",
    "s": 10.44,
-   "e": 10.72
+   "e": 10.64
   },
   {
    "w": "kropka",
-   "s": 10.773,
+   "s": 10.72,
    "e": 11.04
   },
   {
    "w": "kom",
    "s": 11.12,
-   "e": 11.52
+   "e": 11.44
   },
   {
    "w": "włączysz",
-   "s": 11.6,
+   "s": 11.52,
    "e": 12.0
   },
   {
    "w": "w",
-   "s": 12.027,
-   "e": 12.053
+   "s": 12.08,
+   "e": 12.12
   },
   {
    "w": "wyszukiwarce",
-   "s": 12.08,
+   "s": 12.16,
    "e": 12.72
   },
   {
@@ -177,7 +177,7 @@
   {
    "w": "Plus”.",
    "s": 14.16,
-   "e": 14.96
+   "e": 14.88
   }
  ],
  "speechEnd": 14.45

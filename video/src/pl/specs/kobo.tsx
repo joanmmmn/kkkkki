@@ -15,23 +15,23 @@ export const piece: PLPiece = {
         { at: 'ceny', label: 'Ceny', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'search' },
         { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '14', label: '14 dni za darmo', icon: 'gift' },
       ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, holdAt: 4.2, url: '' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4 } }], facts: [
+      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, holdAt: 4.2, url: 'swiatczytnikow.pl' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4, url: 'help.kobo.com' } }], facts: [
         { at: 'kanadyjska', label: 'Marka z Kanady', sub: 'czytniki i księgarnia z e-bookami', icon: 'ereader' },
         { at: 'Rakutena', label: 'Należy do Rakutena', sub: 'Japonia', icon: 'globe' },
         { at: 'Polsce', label: 'W Polsce od końca maja 2026', icon: 'calendar' },
         { at: 'czytnikach', label: 'Aplikacja i czytniki Kobo', icon: 'headphones' },
       ] },
-      { id: 'A03', kind: 'rec', bump: 'Cennik', kicker: 'Cennik', title: 'Trzy plany', rec: { clip: 'sonorbooks', start: 11.25, url: '' },
+      { id: 'A03', kind: 'rec', bump: 'Cennik', kicker: 'Cennik', title: 'Trzy plany', rec: { clip: 'sonorbooks', start: 11.25, url: 'sonorbooks.pl/platformy' },
         cuts: [{ at: 'Rid', rec: { clip: 'swiat', start: 7.1, url: 'swiatczytnikow.pl' } }, { at: 'start', rec: { clip: 'naczytniku', start: 8.8, url: 'naczytniku.pl' } }],
         marks: [
-          { at: 'warunkow', until: 'plany', x: 380, y: 322, w: 260, h: 40 }, { at: 'plany', until: 'Rid', x: 380, y: 600, w: 520, h: 32 },
+          { at: 'strony', until: 'plany', x: 380, y: 322, w: 260, h: 40 }, { at: 'plany', until: 'Rid', x: 380, y: 600, w: 520, h: 32 },
           { at: 'Rid', until: 'Lisen', x: 548, y: 166, w: 274, h: 616 }, { at: 'Lisen', until: 'end', x: 520, y: 940, w: 220, h: 26 },
           { at: 'end', until: 'Placisz', x: 842, y: 166, w: 274, h: 616 }, { at: 'Placisz', until: 'start', x: 576, y: 126, w: 508, h: 30 },
           { at: 'start', x: 364, y: 354, w: 792, h: 56 },
         ],
         zooms: [{ at: 'Wedlug', zoom: 1.5, x: 640, y: 440 }, { at: 'Rid', zoom: 1.2, x: 830, y: 540 }, { at: 'start', zoom: 1.6, x: 760, y: 300 }],
         tags: [
-          { at: 'warunkow', label: 'Stan: październik 2026', sub: 'źródła: sonorbooks.pl i prasa', icon: 'calendar', tone: 'accent' },
+          { at: 'strony', label: 'Strona Kobo, 19.10.2026', sub: 'kobo.com/pl', icon: 'calendar', tone: 'accent' },
           { at: 'Rid', label: 'Read: 39,90 zł', sub: 'e-booki · miesięcznie', icon: 'book' },
           { at: 'Lisen', label: 'Listen: 39,90 zł', sub: 'audiobooki · miesięcznie', icon: 'headphones' },
           { at: 'end', label: 'Read & Listen: 49,90 zł', sub: 'e-booki i audiobooki', icon: 'sparkle' },
@@ -81,7 +81,7 @@ export const piece: PLPiece = {
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Kobo Plus', pros: [{ at: 'limitu', label: 'Bez limitu godzin' }, { at: 'czytniku', label: 'Audiobooki także na czytniku' }, { at: 'angielsku', label: 'Duży wybór po angielsku' }, { at: '14', label: '14 dni na próbę' }], cons: [{ at: 'malo', label: 'Mało polskich audiobooków' }, { at: 'komputerze', label: 'Nie posłuchasz na komputerze' }, { at: 'kupisz', label: 'Abonamentu nie kupisz w aplikacji' }, { at: 'rezygnacji', label: 'Po rezygnacji koniec dostępu' }] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Kobo Plus:\nczy warto?', yes: [
         { at: 'tak', label: 'Czytnik Kobo + angielski', sub: 'wygodny abonament bez limitu godzin' },
-        { at: 'probnym', label: 'W próbie znajdziesz swoje książki', sub: 'sprawdź to w ciągu 14 dni' },
+        { at: 'probnym', label: 'Twoje książki są w Kobo Plus', sub: 'sprawdź to w okresie próbnym' },
       ], no: [
         { at: 'polsku', label: 'Słuchasz głównie po polsku', sub: 'na razie lepszy polski katalog' },
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. · bez limitu w katalogu Klubu'], label: 'Dla porównania (10.2026):' } },
@@ -104,7 +104,7 @@ export const piece: PLPiece = {
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_subskrypcja', start: 0.4, holdAt: 9.0 },
         marks: [{ at: 'czternastu', until: ['kobo', 1], x: 590, y: 200, w: 764, h: 62 }, { at: ['kobo', 1], until: 'anulowaniu', x: 800, y: 76, w: 480, h: 56 }, { at: 'anulowaniu', x: 844, y: 532, w: 660, h: 66 }], steps: [
         { at: 'czternastu', title: 'Po 14 dniach płacisz', sub: 'co miesiąc' }, { at: 'anuluj', title: 'Anuluj przed końcem próby', sub: 'wtedy karta nie zostanie obciążona' },
-        { at: ['kobo', 1], title: 'Na kobo.com, w koncie', sub: 'sekcja subskrypcji (nie na czytniku ani na iPhonie)', rec: { clip: 'pomoc_anuluj', start: 6.45 } },
+        { at: ['kobo', 1], title: 'Na kobo.com, w ustawieniach konta', sub: 'sekcja subskrypcji (nie na czytniku ani na iPhonie)', rec: { clip: 'pomoc_anuluj', start: 6.45 } },
         { at: 'anulowaniu', title: 'Potem koniec dostępu', sub: 'do książek z Kobo Plus' },
       ] },
       { id: 'B06', kind: 'outro', rec: { clip: 'sonorbooks', start: 0.2, url: 'sonorbooks.pl/platformy' }, cta: 'Porównaj Kobo Plus\nz innymi:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',

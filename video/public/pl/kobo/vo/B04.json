@@ -1,8 +1,8 @@
 {
  "id": "B04",
- "hash": "175ec61bafa6",
- "text": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
- "duration": 16.88,
+ "hash": "b573aff6dd34",
+ "text": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, na swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
+ "duration": 16.8,
  "words": [
   {
    "w": "Po",
@@ -27,31 +27,31 @@
   {
    "w": "zacznie",
    "s": 1.52,
-   "e": 1.76
+   "e": 1.84
   },
   {
    "w": "pobierać",
-   "s": 1.84,
-   "e": 2.2
+   "s": 1.867,
+   "e": 2.24
   },
   {
    "w": "opłatę",
-   "s": 2.24,
-   "e": 2.6
+   "s": 2.32,
+   "e": 2.64
   },
   {
    "w": "co",
-   "s": 2.64,
-   "e": 2.72
+   "s": 2.72,
+   "e": 2.8
   },
   {
    "w": "miesiąc.",
-   "s": 2.8,
-   "e": 3.653
+   "s": 2.84,
+   "e": 3.64
   },
   {
    "w": "Jeśli",
-   "s": 3.707,
+   "s": 3.68,
    "e": 3.92
   },
   {
@@ -66,97 +66,97 @@
   },
   {
    "w": "płacić,",
-   "s": 4.36,
-   "e": 5.0
+   "s": 4.347,
+   "e": 4.92
   },
   {
    "w": "anuluj",
-   "s": 5.04,
-   "e": 5.36
+   "s": 4.96,
+   "e": 5.28
   },
   {
    "w": "przed",
-   "s": 5.48,
-   "e": 5.6
+   "s": 5.4,
+   "e": 5.52
   },
   {
    "w": "końcem",
-   "s": 5.68,
-   "e": 5.92
+   "s": 5.6,
+   "e": 5.84
   },
   {
    "w": "próby",
-   "s": 6.0,
-   "e": 6.48
+   "s": 5.88,
+   "e": 6.4
   },
   {
    "w": "–",
-   "s": 6.54,
-   "e": 6.6
+   "s": 6.46,
+   "e": 6.52
   },
   {
    "w": "na",
-   "s": 6.66,
-   "e": 6.72
+   "s": 6.58,
+   "e": 6.64
   },
   {
    "w": "kobo",
-   "s": 6.8,
-   "e": 7.04
+   "s": 6.68,
+   "e": 6.96
   },
   {
    "w": "kropka",
-   "s": 7.12,
-   "e": 7.44
+   "s": 7.0,
+   "e": 7.28
   },
   {
    "w": "kom,",
-   "s": 7.52,
-   "e": 7.867
+   "s": 7.36,
+   "e": 7.787
   },
   {
-   "w": "w",
-   "s": 7.893,
-   "e": 7.92
+   "w": "na",
+   "s": 7.813,
+   "e": 7.84
   },
   {
    "w": "swoim",
-   "s": 7.96,
-   "e": 8.24
+   "s": 7.92,
+   "e": 8.16
   },
   {
    "w": "koncie,",
-   "s": 8.36,
-   "e": 8.82
+   "s": 8.28,
+   "e": 8.827
   },
   {
    "w": "w",
-   "s": 8.84,
-   "e": 8.86
+   "s": 8.853,
+   "e": 8.88
   },
   {
    "w": "sekcji",
-   "s": 8.88,
+   "s": 8.96,
    "e": 9.2
   },
   {
    "w": "subskrypcji.",
    "s": 9.28,
-   "e": 10.373
+   "e": 10.347
   },
   {
    "w": "Nie",
-   "s": 10.427,
-   "e": 10.48
+   "s": 10.373,
+   "e": 10.4
   },
   {
    "w": "zrobisz",
-   "s": 10.52,
-   "e": 10.8
+   "s": 10.48,
+   "e": 10.72
   },
   {
    "w": "tego",
-   "s": 10.84,
+   "s": 10.8,
    "e": 10.96
   },
   {
@@ -167,73 +167,73 @@
   {
    "w": "czytniku",
    "s": 11.12,
-   "e": 11.68
+   "e": 11.6
   },
   {
    "w": "ani",
-   "s": 11.76,
-   "e": 11.92
+   "s": 11.68,
+   "e": 11.84
   },
   {
    "w": "w",
-   "s": 11.947,
-   "e": 11.973
+   "s": 11.867,
+   "e": 11.893
   },
   {
    "w": "aplikacji",
-   "s": 12.0,
-   "e": 12.48
+   "s": 11.92,
+   "e": 12.4
   },
   {
    "w": "na",
-   "s": 12.52,
-   "e": 12.56
+   "s": 12.44,
+   "e": 12.48
   },
   {
    "w": "ajfona.",
-   "s": 12.64,
-   "e": 13.48
+   "s": 12.56,
+   "e": 13.4
   },
   {
    "w": "Po",
-   "s": 13.52,
-   "e": 13.6
+   "s": 13.44,
+   "e": 13.52
   },
   {
    "w": "anulowaniu",
-   "s": 13.68,
-   "e": 14.32
+   "s": 13.6,
+   "e": 14.24
   },
   {
    "w": "tracisz",
-   "s": 14.4,
-   "e": 14.8
+   "s": 14.32,
+   "e": 14.64
   },
   {
    "w": "dostęp",
-   "s": 14.84,
-   "e": 15.12
+   "s": 14.72,
+   "e": 15.04
   },
   {
    "w": "do",
-   "s": 15.2,
-   "e": 15.28
+   "s": 15.08,
+   "e": 15.12
   },
   {
    "w": "książek",
-   "s": 15.4,
-   "e": 15.6
+   "s": 15.2,
+   "e": 15.52
   },
   {
    "w": "z",
-   "s": 15.64,
-   "e": 15.68
+   "s": 15.547,
+   "e": 15.573
   },
   {
    "w": "abonamentu.",
-   "s": 15.72,
-   "e": 16.88
+   "s": 15.6,
+   "e": 16.8
   }
  ],
- "speechEnd": 16.376
+ "speechEnd": 16.294
 }

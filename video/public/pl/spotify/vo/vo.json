@@ -33,8 +33,8 @@
   },
   {
    "id": "A05",
-   "text": "Spotify podaje, że przeciętny audiobook trwa około 10 godzin – to mniej więcej jedna książka w miesiącu. Więcej daje dodatek Audiobooki+: 15 godzin miesięcznie za 17,99 zł, z pierwszym miesiącem za darmo. Są też jednorazowe doładowania ważne rok.",
-   "say": "Spotifaj podaje, że przeciętny audiobook trwa około dziesięciu godzin – to mniej więcej jedna książka w miesiącu. Więcej daje dodatek Audiobooki Plus: piętnaście godzin miesięcznie za siedemnaście złotych dziewięćdziesiąt dziewięć groszy, z pierwszym miesiącem za darmo. Są też jednorazowe doładowania ważne rok."
+   "text": "Spotify podaje, że przeciętny audiobook trwa około 10 godzin – to mniej więcej jedna książka w miesiącu. Więcej daje dodatek Audiobooki+: 15 godzin miesięcznie za 17,99 zł, z pierwszym miesiącem za darmo, jeśli nie miałeś go wcześniej. Są też jednorazowe doładowania ważne przez rok.",
+   "say": "Spotifaj podaje, że przeciętny audiobook trwa około dziesięciu godzin – to mniej więcej jedna książka w miesiącu. Więcej daje dodatek Audiobooki Plus: piętnaście godzin miesięcznie za siedemnaście złotych dziewięćdziesiąt dziewięć groszy, z pierwszym miesiącem za darmo, jeśli nie miałeś go wcześniej. Są też jednorazowe doładowania ważne przez rok."
   },
   {
    "id": "A06",
@@ -48,8 +48,8 @@
   },
   {
    "id": "A08",
-   "text": "W odtwarzaczu zmienisz prędkość, przewiniesz o 15 sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki albo kod ISBN i słuchasz od tego miejsca.",
-   "say": "W odtwarzaczu zmienisz prędkość, przewiniesz o piętnaście sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki albo kod i es be en i słuchasz od tego miejsca."
+   "text": "W odtwarzaczu zmienisz prędkość, przewiniesz o 15 sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz do słuchania offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki i słuchasz od tego miejsca.",
+   "say": "W odtwarzaczu zmienisz prędkość, przewiniesz o piętnaście sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz do słuchania offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki i słuchasz od tego miejsca."
   },
   {
    "id": "A09",

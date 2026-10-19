@@ -1,8 +1,8 @@
 {
  "id": "B06",
- "hash": "eab7768befe8",
- "text": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka.",
- "duration": 15.44,
+ "hash": "2d089bc41138",
+ "text": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? Na sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka.",
+ "duration": 14.96,
  "words": [
   {
    "w": "Chcesz",
@@ -22,86 +22,86 @@
   {
    "w": "Plus",
    "s": 1.04,
-   "e": 1.36
+   "e": 1.28
   },
   {
    "w": "z",
-   "s": 1.44,
-   "e": 1.52
+   "s": 1.36,
+   "e": 1.44
   },
   {
    "w": "Audioteką,",
-   "s": 1.6,
-   "e": 2.4
+   "s": 1.52,
+   "e": 2.24
   },
   {
    "w": "Empik",
-   "s": 2.52,
-   "e": 2.8
+   "s": 2.32,
+   "e": 2.64
   },
   {
    "w": "Go",
-   "s": 2.88,
-   "e": 3.12
+   "s": 2.72,
+   "e": 2.96
   },
   {
    "w": "czy",
-   "s": 3.2,
-   "e": 3.36
+   "s": 3.04,
+   "e": 3.12
   },
   {
    "w": "Legimi?",
-   "s": 3.44,
-   "e": 3.92
+   "s": 3.2,
+   "e": 4.08
   },
   {
-   "w": "W",
-   "s": 4.32,
-   "e": 4.36
+   "w": "Na",
+   "s": 4.16,
+   "e": 4.32
   },
   {
    "w": "sonorbooks",
    "s": 4.4,
-   "e": 5.04
+   "e": 4.96
   },
   {
    "w": "kropka",
-   "s": 5.093,
+   "s": 5.04,
    "e": 5.28
   },
   {
    "w": "pe",
-   "s": 5.44,
-   "e": 5.6
+   "s": 5.36,
+   "e": 5.52
   },
   {
    "w": "el",
-   "s": 5.68,
+   "s": 5.6,
    "e": 5.76
   },
   {
    "w": "zestawisz",
-   "s": 5.84,
+   "s": 5.92,
    "e": 6.32
   },
   {
    "w": "ich",
    "s": 6.4,
-   "e": 6.48
+   "e": 6.56
   },
   {
    "w": "ceny,",
-   "s": 6.56,
+   "s": 6.64,
    "e": 7.04
   },
   {
    "w": "limity",
    "s": 7.12,
-   "e": 7.52
+   "e": 7.6
   },
   {
    "w": "i",
-   "s": 7.6,
+   "s": 7.64,
    "e": 7.68
   },
   {
@@ -111,99 +111,99 @@
   },
   {
    "w": "próbne,",
-   "s": 8.12,
+   "s": 8.16,
    "e": 8.8
   },
   {
    "w": "a",
    "s": 8.88,
-   "e": 8.96
+   "e": 8.92
   },
   {
    "w": "na",
-   "s": 9.04,
-   "e": 9.12
+   "s": 8.96,
+   "e": 9.04
   },
   {
    "w": "karcie",
-   "s": 9.16,
-   "e": 9.4
+   "s": 9.08,
+   "e": 9.32
   },
   {
    "w": "audiobooka",
-   "s": 9.44,
-   "e": 10.0
+   "s": 9.36,
+   "e": 9.84
   },
   {
    "w": "sprawdzisz,",
-   "s": 10.16,
-   "e": 10.72
+   "s": 10.0,
+   "e": 10.52
   },
   {
    "w": "gdzie",
-   "s": 10.8,
-   "e": 10.96
+   "s": 10.56,
+   "e": 10.72
   },
   {
    "w": "go",
-   "s": 11.0,
-   "e": 11.04
+   "s": 10.8,
+   "e": 10.88
   },
   {
    "w": "posłuchasz",
-   "s": 11.12,
-   "e": 11.68
+   "s": 10.96,
+   "e": 11.44
   },
   {
    "w": "i",
-   "s": 11.76,
-   "e": 11.84
+   "s": 11.52,
+   "e": 11.56
   },
   {
    "w": "za",
-   "s": 11.92,
-   "e": 12.0
+   "s": 11.6,
+   "e": 11.68
   },
   {
    "w": "ile.",
-   "s": 12.16,
-   "e": 12.4
+   "s": 11.76,
+   "e": 12.453
   },
   {
    "w": "Twoja",
-   "s": 12.8,
-   "e": 13.04
+   "s": 12.507,
+   "e": 12.64
   },
   {
    "w": "następna",
-   "s": 13.12,
-   "e": 13.44
+   "s": 12.68,
+   "e": 13.12
   },
   {
    "w": "historia",
-   "s": 13.52,
-   "e": 14.08
+   "s": 13.32,
+   "e": 13.76
   },
   {
    "w": "już",
-   "s": 14.24,
-   "e": 14.4
+   "s": 13.84,
+   "e": 14.04
   },
   {
    "w": "na",
-   "s": 14.48,
-   "e": 14.52
+   "s": 14.08,
+   "e": 14.16
   },
   {
    "w": "ciebie",
-   "s": 14.56,
-   "e": 14.8
+   "s": 14.2,
+   "e": 14.4
   },
   {
    "w": "czeka.",
-   "s": 14.84,
-   "e": 15.44
+   "s": 14.44,
+   "e": 14.96
   }
  ],
- "speechEnd": 15.261
+ "speechEnd": 14.96
 }

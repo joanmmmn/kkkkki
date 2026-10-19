@@ -122,35 +122,82 @@ def timed_words(item):
     return res
 
 
+UNITS = {'zł', 'gr', 'h', 'min', 's', 'dni', 'dzień', 'tys.', 'mln', 'mld', '%', 'zł/mies.', 'zł,', 'zł.', 'h,', 'h.', 'dni,', 'dni.', 'min.', 'min,'}
+
+
+def glue(ws):
+    """Pega con espacio duro lo que no se puede partir entre líneas ni entre subtítulos (norma tipográfica polaca):
+    una palabra de una letra con la siguiente («w domu», «i 14»), los grupos de cifras («20 000») y la cifra con su unidad
+    («14 dni», «39,90 zł»)."""
+    out = []
+    for w in ws:
+        if out:
+            prev = out[-1]['w'].split('\u00a0')[-1]
+            digits_prev = prev.replace(',', '').replace('.', '').isdigit()
+            join = (len(prev) == 1 and prev.isalpha()) \
+                or (digits_prev and (w['w'][:3].isdigit() and len(w['w'].rstrip('.,;:!?')) == 3)) \
+                or (digits_prev and w['w'].lower() in UNITS)
+            if join:
+                out[-1] = {'w': out[-1]['w'] + '\u00a0' + w['w'], 's': out[-1]['s'], 'e': w['e']}
+                continue
+        out.append(dict(w))
+    return out
+
+
+def fits2(words, max_chars):
+    """¿Caben estas palabras en un subtítulo de dos líneas de max_chars como mucho?"""
+    if len(' '.join(words)) <= max_chars:
+        return True
+    return any(len(' '.join(words[:k])) <= max_chars and len(' '.join(words[k:])) <= max_chars for k in range(1, len(words)))
+
+
 def srt(slug, scenes, vos, max_chars=42):
-    cues = []
+    """Subtítulos de dos líneas (≤ max_chars cada una), por frases, sin trozos sueltos muy cortos."""
+    groups = []  # listas de palabras con tiempos absolutos
     for s in scenes:
         item = vos[s['id']]
-        ws = timed_words(item)
+        ws = glue(timed_words(item))
         if not ws or ws[0]['s'] is None:
             continue
         base = (s['start'] + s['lead']) / FPS
-        line, a = [], None
+        ws = [{'w': w['w'], 's': base + w['s'], 'e': base + w['e']} for w in ws]
+        scene_groups, line = [], []
         for k, w in enumerate(ws):
-            cand = ' '.join([x['w'] for x in line] + [w['w']])
-            if line and (len(cand) > max_chars * 2 or (len(cand) > max_chars and line[-1]['w'][-1] in '.?!:')):
-                cues.append([base + line[0]['s'], base + line[-1]['e'], ' '.join(x['w'] for x in line)])
+            cand = [x['w'] for x in line] + [w['w']]
+            if line and (not fits2(cand, max_chars) or (len(' '.join(cand)) > max_chars and line[-1]['w'][-1] in '.?!:')):
+                scene_groups.append(line)
                 line = []
             line.append(w)
             if w['w'][-1] in '.?!' and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
-                cues.append([base + line[0]['s'], base + line[-1]['e'], ' '.join(x['w'] for x in line)])
+                scene_groups.append(line)
                 line = []
         if line:
-            cues.append([base + line[0]['s'], base + line[-1]['e'], ' '.join(x['w'] for x in line)])
+            scene_groups.append(line)
+        # Un trozo muy corto («Plus.», «jest.») se junta con el anterior si cabe; si no, se le pasan palabras del anterior.
+        k = 1
+        while k < len(scene_groups):
+            cur, prev = scene_groups[k], scene_groups[k - 1]
+            if len(' '.join(x['w'] for x in cur)) < 14:
+                if fits2([x['w'] for x in prev + cur], max_chars):
+                    scene_groups[k - 1] = prev + cur
+                    del scene_groups[k]
+                    continue
+                while len(prev) > 1 and len(' '.join(x['w'] for x in cur)) < 14 and fits2([x['w'] for x in [prev[-1]] + cur], max_chars) \
+                        and prev[-2]['w'][-1] not in '.?!':
+                    cur.insert(0, prev.pop())
+            k += 1
+        groups += scene_groups
     out = []
-    for i, (a, b, t) in enumerate(cues):
+    for i, g in enumerate(groups):
+        a, b, t = g[0]['s'], g[-1]['e'], ' '.join(x['w'] for x in g)
         b = max(b + 0.25, a + 1.0)
-        if i + 1 < len(cues):
-            b = min(b, cues[i + 1][0] - 0.04)
-        # Dos líneas equilibradas
+        if i + 1 < len(groups):
+            b = min(b, groups[i + 1][0]['s'] - 0.04)
+        # Dos líneas equilibradas, ninguna de más de max_chars
         if len(t) > max_chars:
-            words = t.split()
-            best = min(range(1, len(words)), key=lambda k: abs(len(' '.join(words[:k])) - len(' '.join(words[k:]))))
+            words = t.split(' ')  # el espacio duro no se parte
+            best = min(range(1, len(words)), key=lambda k: (max(len(' '.join(words[:k])), len(' '.join(words[k:]))) > max_chars,
+                                                            abs(len(' '.join(words[:k])) - len(' '.join(words[k:])))))
             t = ' '.join(words[:best]) + '\n' + ' '.join(words[best:])
         out.append(f'{i + 1}\n{fmt_srt(a)} --> {fmt_srt(b)}\n{t}\n')
     return '\n'.join(out)

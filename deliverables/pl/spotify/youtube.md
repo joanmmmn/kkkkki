@@ -20,12 +20,11 @@ Sprawdziliśmy ceny, limity i drobny druk: co jest dobre, co słabe i jak zaczą
 0:00 Audiobooki w Spotify: czy warto?
 0:10 Co dostajesz w Premium
 0:27 Cennik: Individual, Duo, Family i Student
-0:50 Jak liczą się godziny
+0:50 Jak liczone są godziny
 1:04 Audiobooki+ i doładowania
-1:22 Jak znaleźć audiobooki w aplikacji
-1:35 Zakup pojedynczych tytułów
-1:50 Funkcje odtwarzacza
-2:05 Urządzenia
+1:24 Jak znaleźć audiobooki w aplikacji
+1:36 Zakup pojedynczych tytułów
+1:51 Funkcje odtwarzacza i urządzenia
 2:14 Opinie
 2:33 Plusy i minusy
 2:50 Werdykt: czy warto?
@@ -37,7 +36,7 @@ W filmie:
 • 12 godzin audiobooków miesięcznie w Premium Individual (26,99 zł). W Duo (36,99 zł) i Family (45,99 zł) godziny ma tylko właściciel planu, Premium Student (14,49 zł) ich nie ma.
 • Ponad 350 000 tytułów, w tym ponad 20 000 po polsku, dostarczonych przez Legimi.
 • Liczy się czas przy normalnej prędkości, ponowne słuchanie też zużywa godziny, a niewykorzystane przepadają.
-• Audiobooki+: 15 godzin więcej za 17,99 zł miesięcznie; doładowania ważne rok.
+• Audiobooki+: 15 godzin więcej za 17,99 zł miesięcznie; doładowania ważne przez rok.
 • Pojedyncze tytuły spoza abonamentu kupisz w przeglądarce – nie zużywają godzin.
 • Funkcje odtwarzacza, urządzenia, oceny aplikacji, plusy i minusy oraz werdykt z porównaniem z Audioteka Klub (29,90 zł miesięcznie, bez limitu godzin w katalogu Klubu).
 • Jak zacząć, gdzie sprawdzić pozostałe godziny i jak zrezygnować.

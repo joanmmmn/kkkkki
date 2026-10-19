@@ -1,6 +1,6 @@
 {
- "total_frames": 13699,
- "seconds": 273.98,
+ "total_frames": 13601,
+ "seconds": 272.02,
  "chapters": [
   {
    "t": 12.82,
@@ -11,47 +11,47 @@
    "label": "Cennik: Read, Listen i Read & Listen"
   },
   {
-   "t": 56.06,
+   "t": 54.5,
    "label": "Jak działa abonament"
   },
   {
-   "t": 71.64,
+   "t": 70.08,
    "label": "Polski katalog"
   },
   {
-   "t": 88.32,
+   "t": 86.76,
    "label": "Dla kogo: książki po angielsku"
   },
   {
-   "t": 98.72,
+   "t": 97.16,
    "label": "Aplikacja i odtwarzacz"
   },
   {
-   "t": 111.6,
+   "t": 110.04,
    "label": "Audiobooki na czytnikach Kobo"
   },
   {
-   "t": 123.06,
+   "t": 121.5,
    "label": "Urządzenia"
   },
   {
-   "t": 137.3,
+   "t": 135.74,
    "label": "Opinie"
   },
   {
-   "t": 161.66,
+   "t": 160.1,
    "label": "Plusy i minusy"
   },
   {
-   "t": 179.12,
+   "t": 177.56,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 202.04,
+   "t": 200.48,
    "label": "Jak wypróbować za darmo"
   },
   {
-   "t": 233.62,
+   "t": 232.06,
    "label": "Jak zrezygnować"
   }
  ],
@@ -76,14 +76,14 @@
    "id": "A03",
    "kind": "rec",
    "start": 1497,
-   "dur": 1320,
+   "dur": 1242,
    "lead": 26,
    "bump": "Cennik"
   },
   {
    "id": "A04",
    "kind": "rec",
-   "start": 2817,
+   "start": 2739,
    "dur": 779,
    "lead": 26,
    "bump": "Jak to działa"
@@ -91,7 +91,7 @@
   {
    "id": "A05",
    "kind": "stat",
-   "start": 3596,
+   "start": 3518,
    "dur": 820,
    "lead": 26,
    "bump": "Polski katalog"
@@ -99,7 +99,7 @@
   {
    "id": "A06",
    "kind": "rec",
-   "start": 4416,
+   "start": 4338,
    "dur": 534,
    "lead": 7,
    "bump": null
@@ -107,7 +107,7 @@
   {
    "id": "A07",
    "kind": "features",
-   "start": 4950,
+   "start": 4872,
    "dur": 630,
    "lead": 26,
    "bump": "Aplikacja i czytniki"
@@ -115,7 +115,7 @@
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5580,
+   "start": 5502,
    "dur": 573,
    "lead": 7,
    "bump": null
@@ -123,7 +123,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6153,
+   "start": 6075,
    "dur": 726,
    "lead": 7,
    "bump": null
@@ -131,7 +131,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 6879,
+   "start": 6801,
    "dur": 1218,
    "lead": 26,
    "bump": "Opinie"
@@ -139,7 +139,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8097,
+   "start": 8019,
    "dur": 873,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -147,7 +147,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 8970,
+   "start": 8892,
    "dur": 1146,
    "lead": 26,
    "bump": "Werdykt"
@@ -155,7 +155,7 @@
   {
    "id": "B01",
    "kind": "steps",
-   "start": 10116,
+   "start": 10038,
    "dur": 484,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -163,7 +163,7 @@
   {
    "id": "B02",
    "kind": "rec",
-   "start": 10600,
+   "start": 10522,
    "dur": 733,
    "lead": 7,
    "bump": null
@@ -171,7 +171,7 @@
   {
    "id": "B03",
    "kind": "steps",
-   "start": 11333,
+   "start": 11255,
    "dur": 348,
    "lead": 7,
    "bump": null
@@ -179,16 +179,16 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 11681,
-   "dur": 856,
+   "start": 11603,
+   "dur": 852,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12537,
-   "dur": 1162,
+   "start": 12455,
+   "dur": 1146,
    "lead": 7,
    "bump": null
   }

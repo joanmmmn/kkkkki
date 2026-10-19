@@ -60,7 +60,7 @@ export const piece: PLPiece = {
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Legimi', pros: [
         { at: 'ebooki', label: 'Ebooki i audiobooki w jednym' }, { at: 'synchrobooki', label: 'Synchrobooki' }, { at: 'urzadzenia', label: '4 urządzenia, także czytnik' }, { at: 'tansze', label: 'Tańsze pakiety z limitem' },
       ], cons: [
-        { at: 'placisz', label: 'Bez umowy: 54,99 zł', sub: 'drożej niż Audioteka Klub i Empik Go' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: 'posluchasz', label: 'Audiobooki tylko w telefonie i tablecie' }, { at: 'komputerze', label: 'Okres próbny: tylko 3 dni' },
+        { at: 'placisz', label: 'Bez umowy: 54,99 zł', sub: 'drożej niż Audioteka Klub i Empik Go' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: 'posluchasz', label: 'Audiobooki: tylko telefon i tablet' }, { at: 'komputerze', label: 'Okres próbny: tylko 3 dni' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Legimi:\nczy warto?', yes: [
         { at: 'zmiane', label: 'Na zmianę czytasz i słuchasz' }, { at: 'czytnik', label: 'Masz czytnik', sub: 'także Kindle (tylko ebooki)' },
@@ -70,7 +70,7 @@ export const piece: PLPiece = {
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować', kicker: 'Okres próbny', at: 'dni', value: '3', unit: 'dni', count: { from: 0, to: 3 }, label: 'za darmo – tylko raz', tags: [
         { at: 'konto', label: 'Raz na konto', icon: 'user' }, { at: 'urzadzenie', label: 'Raz na urządzenie', icon: 'phone' }, { at: 'karte', label: 'Raz na kartę', icon: 'card' },
       ] },
-      { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 0.4, mobile: true }, marks: [{ at: 'kliknij', until: 'zaloz', x: 30, y: 511, w: 370, h: 52 }], steps: [
+      { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 1.4, mobile: true }, marks: [{ at: 'kliknij', until: 'zaloz', x: 30, y: 511, w: 370, h: 52 }], steps: [
         { at: 'wejdz', title: 'Wejdź na legimi.pl/cennik' }, { at: 'wybierz', title: 'Wybierz pakiet' }, { at: 'kliknij', title: '„Wypróbuj przez 3 dni za darmo”' },
         { at: 'zaloz', title: 'Załóż konto' }, { at: 'podepnij', title: 'Karta lub PayPal', sub: 'płatność cykliczna; Legimi tylko autoryzuje kartę' },
       ], note: { at: 'dzis', label: 'Dziś płacisz 0 zł', icon: 'coin' } },

@@ -1,8 +1,8 @@
 {
  "id": "A08",
- "hash": "811257f66ac1",
- "text": "W odtwarzaczu zmienisz prędkość, przewiniesz o 15 sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki albo kod ISBN i słuchasz od tego miejsca.",
- "duration": 15.04,
+ "hash": "e8c2bb7c8f20",
+ "text": "W odtwarzaczu zmienisz prędkość, przewiniesz o 15 sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz do słuchania offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki i słuchasz od tego miejsca.",
+ "duration": 13.68,
  "words": [
   {
    "w": "W",
@@ -12,36 +12,36 @@
   {
    "w": "odtwarzaczu",
    "s": 0.08,
-   "e": 0.64
+   "e": 0.72
   },
   {
    "w": "zmienisz",
-   "s": 0.72,
+   "s": 0.8,
    "e": 1.12
   },
   {
    "w": "prędkość,",
-   "s": 1.16,
-   "e": 1.84
+   "s": 1.2,
+   "e": 1.92
   },
   {
    "w": "przewiniesz",
-   "s": 1.92,
+   "s": 1.96,
    "e": 2.4
   },
   {
    "w": "o",
-   "s": 2.44,
-   "e": 2.48
+   "s": 2.427,
+   "e": 2.453
   },
   {
-   "w": "piętnaście",
-   "s": 2.56,
-   "e": 2.96
+   "w": "15",
+   "s": 2.48,
+   "e": 2.88
   },
   {
    "w": "sekund",
-   "s": 3.04,
+   "s": 2.96,
    "e": 3.36
   },
   {
@@ -52,133 +52,113 @@
   {
    "w": "ustawisz",
    "s": 3.68,
-   "e": 4.16
+   "e": 4.08
   },
   {
    "w": "wyłącznik",
-   "s": 4.24,
-   "e": 4.64
+   "s": 4.16,
+   "e": 4.56
   },
   {
    "w": "czasowy,",
-   "s": 4.72,
-   "e": 5.52
+   "s": 4.64,
+   "e": 5.44
   },
   {
    "w": "a",
-   "s": 5.56,
-   "e": 5.6
+   "s": 5.48,
+   "e": 5.52
   },
   {
    "w": "audiobooki",
-   "s": 5.68,
+   "s": 5.6,
    "e": 6.24
   },
   {
    "w": "pobierzesz",
    "s": 6.32,
-   "e": 6.72
+   "e": 6.747
+  },
+  {
+   "w": "do",
+   "s": 6.773,
+   "e": 6.8
+  },
+  {
+   "w": "słuchania",
+   "s": 6.88,
+   "e": 7.28
   },
   {
    "w": "offline.",
-   "s": 6.96,
-   "e": 7.44
+   "s": 7.36,
+   "e": 8.08
   },
   {
    "w": "Jest",
-   "s": 7.68,
-   "e": 7.84
+   "s": 8.32,
+   "e": 8.48
   },
   {
    "w": "też",
-   "s": 7.92,
-   "e": 8.16
-  },
-  {
-   "w": "Dopasowanie",
-   "s": 8.24,
+   "s": 8.56,
    "e": 8.8
   },
   {
-   "w": "strony:",
+   "w": "Dopasowanie",
    "s": 8.88,
-   "e": 9.68
+   "e": 9.44
   },
   {
-   "w": "skanujesz",
-   "s": 9.72,
+   "w": "strony:",
+   "s": 9.56,
    "e": 10.16
   },
   {
-   "w": "stronę",
+   "w": "skanujesz",
    "s": 10.24,
-   "e": 10.48
+   "e": 10.64
+  },
+  {
+   "w": "stronę",
+   "s": 10.72,
+   "e": 11.0
   },
   {
    "w": "papierowej",
-   "s": 10.52,
-   "e": 10.88
-  },
-  {
-   "w": "książki",
-   "s": 10.96,
+   "s": 11.04,
    "e": 11.44
   },
   {
-   "w": "albo",
+   "w": "książki",
    "s": 11.52,
-   "e": 11.68
-  },
-  {
-   "w": "kod",
-   "s": 11.84,
-   "e": 12.08
+   "e": 11.92
   },
   {
    "w": "i",
-   "s": 12.24,
-   "e": 12.32
-  },
-  {
-   "w": "es",
-   "s": 12.48,
-   "e": 12.72
-  },
-  {
-   "w": "be",
-   "s": 12.8,
-   "e": 12.88
-  },
-  {
-   "w": "en",
-   "s": 12.96,
-   "e": 13.12
-  },
-  {
-   "w": "i",
-   "s": 13.44,
-   "e": 13.52
+   "s": 12.08,
+   "e": 12.16
   },
   {
    "w": "słuchasz",
-   "s": 13.6,
-   "e": 14.0
+   "s": 12.24,
+   "e": 12.64
   },
   {
    "w": "od",
-   "s": 14.08,
-   "e": 14.16
+   "s": 12.72,
+   "e": 12.8
   },
   {
    "w": "tego",
-   "s": 14.24,
-   "e": 14.4
+   "s": 12.88,
+   "e": 13.04
   },
   {
    "w": "miejsca.",
-   "s": 14.48,
-   "e": 15.04
+   "s": 13.12,
+   "e": 13.68
   }
  ],
- "speechEnd": 14.957
+ "speechEnd": 13.68
 }

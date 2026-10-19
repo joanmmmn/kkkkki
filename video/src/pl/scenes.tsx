@@ -204,6 +204,8 @@ const Stat: React.FC<P<StatScene>> = ({ c, s }) => {
   const frame = useCurrentFrame();
   const at = cueFrame(c, s.at);
   const p = useSpring(at, 13, 150);
+  // La frase de la cifra entra al principio (la pantalla no se queda vacía) y la cifra llega con su palabra.
+  const pl = useSpring(Math.min(at, 10), 16, 150);
   const value = s.count ? fmtPl(s.count.from + (s.count.to - s.count.from) * interpolate(frame, [at, at + 36], [0, 1], { ...clamp, easing: easeOut }), s.count.decimals ?? 0) : s.value;
   return (
     <MpStage tint={c.spec.color}>
@@ -215,7 +217,7 @@ const Stat: React.FC<P<StatScene>> = ({ c, s }) => {
           {s.unit && <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 96, color: c.spec.deep }}>{s.unit}</span>}
         </div>
         <div style={{ height: 22, width: 420 * p, background: color.yellow, borderRadius: 11, marginTop: -6 }} />
-        <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 46, color: color.ink2, marginTop: 30, opacity: p, textAlign: 'center', maxWidth: 1400 }}>{s.label}</div>
+        <div style={{ fontFamily: font.sans, fontWeight: 500, fontSize: 46, color: color.ink2, marginTop: 30, opacity: pl, textAlign: 'center', maxWidth: 1400 }}>{s.label}</div>
         {s.tags && <div style={{ display: 'flex', gap: 22, marginTop: 50, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 1700 }}>{s.tags.map((t, i) => <Tag key={i} c={c} t={t} size={36} />)}</div>}
       </AbsoluteFill>
       <Sfx name={s.count ? 'counter' : 'hit_soft'} at={at} dur={s.count ? 36 : undefined} volume={0.7} />
@@ -270,7 +272,7 @@ const Ratings: React.FC<P<RatingsScene>> = ({ c, s }) => {
                 <div style={{ flex: 1 }}>
                   <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 32, color: color.ink2 }}>{st.store === 'google' ? 'Google Play' : 'App Store'}</div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginTop: 6 }}>
-                    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 112, letterSpacing: -4, lineHeight: 1 }}>{fmtPl(v, 1)}</span>
+                    <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 112, letterSpacing: -4, lineHeight: 1 }}>{frame < at ? '–' : fmtPl(v, 1)}</span>
                     <div>
                       <Stars value={st.rating} size={44} fill={interpolate(frame, [at, at + 30], [0, 1], clamp)} />
                       <div style={{ fontFamily: font.sans, fontSize: 29, color: color.muted, marginTop: 8 }}>{st.count}</div>
@@ -328,7 +330,7 @@ const Verdict: React.FC<P<VerdictScene>> = ({ c, s }) => {
   const altP = useSpring(altAt, 15, 160);
   const list = (title: string, tone: 'good' | 'bad', items: typeof s.yes, x: number) => (
     <div style={{ position: 'absolute', left: x, top: 330, width: 800 }}>
-      <FadeLabel at={items.length ? cueFrame(c, items[0].at) - 6 : 99999} text={title} c={tone === 'good' ? color.green : color.red} size={40} caps={false} style={{ marginBottom: 20 }} />
+      <FadeLabel at={items.length ? Math.min(cueFrame(c, items[0].at) - 6, 14) : 99999} text={title} c={tone === 'good' ? color.green : color.red} size={40} caps={false} style={{ marginBottom: 20 }} />
       <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>{items.map((t, i) => <Tag key={i} c={c} t={{ ...t, tone }} size={38} />)}</div>
     </div>
   );

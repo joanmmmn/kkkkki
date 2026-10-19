@@ -23,13 +23,13 @@
   },
   {
    "id": "A03",
-   "text": "Według warunków publikowanych w październiku 2026 roku plany są trzy. Kobo Plus Read, z samymi e-bookami, i Kobo Plus Listen, z samymi audiobookami, kosztują po 39,90 zł miesięcznie. Read & Listen, z jednym i drugim, to 49,90 zł. Płacisz co miesiąc, bez zobowiązań, a na start masz 14 dni za darmo.",
-   "say": "Według warunków publikowanych w październiku dwa tysiące dwudziestego szóstego roku plany są trzy. Kobo Plus Rid, z samymi e-bookami, i Kobo Plus Lisen, z samymi audiobookami, kosztują po trzydzieści dziewięć złotych dziewięćdziesiąt groszy miesięcznie. Rid end Lisen, z jednym i drugim, to czterdzieści dziewięć złotych dziewięćdziesiąt groszy. Płacisz co miesiąc, bez zobowiązań, a na start masz czternaście dni za darmo."
+   "text": "Według strony Kobo w październiku 2026 roku plany są trzy. Kobo Plus Read, z samymi e-bookami, i Kobo Plus Listen, z samymi audiobookami, kosztują po 39,90 zł miesięcznie. Read & Listen, z jednym i drugim, to 49,90 zł. Płacisz co miesiąc, bez zobowiązań, a na start masz 14 dni za darmo.",
+   "say": "Według strony Kobo w październiku dwa tysiące dwudziestego szóstego roku plany są trzy. Kobo Plus Rid, z samymi e-bookami, i Kobo Plus Lisen, z samymi audiobookami, kosztują po trzydzieści dziewięć złotych dziewięćdziesiąt groszy miesięcznie. Rid end Lisen, z jednym i drugim, to czterdzieści dziewięć złotych dziewięćdziesiąt groszy. Płacisz co miesiąc, bez zobowiązań, a na start masz czternaście dni za darmo."
   },
   {
    "id": "A04",
-   "text": "W abonamencie słuchasz albo czytasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo.com włączysz w wyszukiwarce filtr „tylko Kobo Plus”.",
-   "say": "W abonamencie słuchasz albo czytasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo kropka kom włączysz w wyszukiwarce filtr „tylko Kobo Plus”."
+   "text": "W abonamencie czytasz albo słuchasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo.com włączysz w wyszukiwarce filtr „tylko Kobo Plus”.",
+   "say": "W abonamencie czytasz albo słuchasz, ile chcesz, bez limitu godzin – ale tylko tytułów oznaczonych jako Kobo Plus. Resztę sklepu kupujesz osobno. Po zalogowaniu na kobo kropka kom włączysz w wyszukiwarce filtr „tylko Kobo Plus”."
   },
   {
    "id": "A05",
@@ -58,7 +58,7 @@
   },
   {
    "id": "A10",
-   "text": "Aplikacja Kobo ma w Google Play 3,7 przy 308 tys. opinii, a w polskim App Store 4,2 przy 206 ocenach – to oceny całej aplikacji, nie samego abonamentu. Polskie serwisy o czytnikach chwalą, że Kobo Plus działa wprost na czytniku, ale krytykują skromny polski katalog i to, że przed zapłatą trudno sprawdzić, co w nim jest.",
+   "text": "Aplikacja Kobo ma w Google Play 3,7 przy 308 tys. opinii, a w polskim App Storze 4,2 przy 206 ocenach – to oceny całej aplikacji, nie samego abonamentu. Polskie serwisy o czytnikach chwalą, że Kobo Plus działa wprost na czytniku, ale krytykują skromny polski katalog i to, że przed zapłatą trudno sprawdzić, co w nim jest.",
    "say": "Aplikacja Kobo ma w Gugl Plej trzy i siedem dziesiątych przy trzystu ośmiu tysiącach opinii, a w polskim Ep Storze cztery i dwie dziesiąte przy dwustu sześciu ocenach – to oceny całej aplikacji, nie samego abonamentu. Polskie serwisy o czytnikach chwalą, że Kobo Plus działa wprost na czytniku, ale krytykują skromny polski katalog i to, że przed zapłatą trudno sprawdzić, co w nim jest."
   },
   {
@@ -88,13 +88,13 @@
   },
   {
    "id": "B04",
-   "text": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
-   "say": "Po czternastu dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo kropka kom, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na ajfona. Po anulowaniu tracisz dostęp do książek z abonamentu."
+   "text": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, na swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
+   "say": "Po czternastu dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo kropka kom, na swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na ajfona. Po anulowaniu tracisz dostęp do książek z abonamentu."
   },
   {
    "id": "B06",
-   "text": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka.",
-   "say": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks kropka pe el zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka."
+   "text": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? Na sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? Na sonorbooks kropka pe el zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka."
   }
  ]
 }
