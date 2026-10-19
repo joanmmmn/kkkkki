@@ -1,0 +1,20 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 96,
+ "duration": 15.201,
+ "offset": 0.222,
+ "marks": {
+  "top": 0.254,
+  "step1": 3.038,
+  "step2": 5.437,
+  "step3": 7.38,
+  "step4": 9.81,
+  "after": 11.616,
+  "end": 15.2
+ },
+ "events": []
+}

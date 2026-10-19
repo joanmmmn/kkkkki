@@ -41,6 +41,7 @@ type Base = {
   // Audio real que suena en la escena (p. ej. un fragmento de un audiolibro de dominio público), desde `lead`.
   // La escena dura al menos `dur` segundos aunque no tenga locución (si no hay locución, deja su `text` vacío en vo.json).
   audio?: { src: string; dur: number; volume?: number };
+  caption?: string; // subtítulo (.srt) del audio real de una escena sin locución (lo lee tools/pl_meta.py)
 };
 
 export type HookScene = Base & { kind: 'hook'; title: string; hi?: string[]; rec?: RecRef; cuts?: Cut[]; promises: TagSpec[]; badge?: string };

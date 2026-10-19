@@ -24,27 +24,27 @@ export const piece: PLPiece = {
         cuts: [{ at: 'Cel', rec: { clip: '09_about', start: 0.4, holdAt: 6.6, url: 'librivox.org/pages/about-librivox' } }, { at: 'Dzis', rec: { clip: '01_portada', start: 11.9 } }], facts: [
         { at: 'wolontariuszy', label: 'Projekt wolontariuszy', icon: 'user' },
         { at: 'dwa', label: 'Od sierpnia 2005', icon: 'calendar' },
-        { at: 'reklam', label: 'Non-profit, bez reklam', icon: 'heart' },
+        { at: 'Niekomercyjnie', label: 'Niekomercyjnie, bez reklam', icon: 'heart' },
         { at: 'jezykach', label: '49 języków', icon: 'globe' },
       ], big: { at: 'dwadziescia', value: 21847, label: 'tytułów (stan na 19.10.2026)' } },
-      { id: 'A02B', kind: 'features', tin: 'cut', audio: { src: 'pl/librivox/audio/lalka_formulka.mp3', dur: 4.5, volume: 1 }, kicker: 'Prawdziwe nagranie', title: 'Posłuchaj', cols: 1, items: [
+      { id: 'A02B', kind: 'features', tin: 'cut', audio: { src: 'pl/librivox/audio/lalka_formulka.mp3', dur: 4.5, volume: 1 }, caption: '„Nagranie LibriVox. Wszystkie nagrania LibriVox należą do domeny publicznej.”', kicker: 'Prawdziwe nagranie', title: 'Posłuchaj', cols: 1, items: [
         { at: 'Nagranie', label: '„Nagranie LibriVox. Wszystkie nagrania LibriVox należą do domeny publicznej.”', icon: 'speaker' },
         { at: 'Lalka', label: '„Lalka”, tom 1, rozdział 1', sub: 'Bolesław Prus · czyta Piotr Nater', icon: 'book' },
         { at: 'domena', label: 'LibriVox · domena publiczna', icon: 'check' },
       ] },
       { id: 'A03', kind: 'stat', bump: 'Ile to kosztuje?', kicker: 'Cena', title: 'Ile płacisz?', at: 'Nic', value: '0 zł', label: 'bez abonamentu i konta: nie ma czego anulować', tags: [
-        { at: 'pobrac', label: 'Pobierz, zachowaj, udostępniaj', icon: 'download' }, { at: 'datki', label: 'Tylko dobrowolne datki', icon: 'heart' },
+        { at: 'pobrac', label: 'Pobierz i zachowaj', sub: 'domena publiczna w USA', icon: 'download' }, { at: 'datki', label: 'Tylko dobrowolne datki', icon: 'heart' },
       ] },
       { id: 'A04', kind: 'rec', bump: 'Ile jest po polsku?', kicker: 'Katalog po polsku', title: 'Mały zakątek', rec: { clip: '03_polish_list', start: 0.3, url: 'librivox.org/search' },
         cuts: [{ at: 'bo', rec: { clip: '03_polish_list', start: 8.5, url: 'librivox.org/search' } }, { at: 'Do', rec: { clip: '03_polish_list', start: 3.4, holdAt: 5.9, url: 'librivox.org/search' } },
-          { at: 'Razem', rec: { clip: '03_polish_list', start: 12.4, url: 'librivox.org/search' } }],
+          { at: 'Razem', rec: { clip: '03_polish_list', start: 0.3, holdAt: 2.6, url: 'librivox.org/search' } }],
         marks: [{ at: 'krotszych', until: 'Razem', x: 770, y: 676, w: 300, h: 36 }],
-        zooms: [{ at: 'polsku', zoom: 1.3, x: 1000, y: 540 }, { at: 'Razem', zoom: 1.6, x: 900, y: 850 }],
+        zooms: [{ at: 'polsku', zoom: 1.3, x: 1000, y: 540 }],
         tags: [
           { at: 'trzydziesci', label: '31 projektów', sub: '= 27 książek', icon: 'book' },
           { at: 'Lalka', label: 'Lalka i Faraon', sub: 'po 3 tomy', icon: 'list' },
           { at: 'sto', label: '121 krótszych nagrań', sub: 'w zbiorach wielojęzycznych', icon: 'headphones' },
-          { at: 'Razem', label: 'Razem ≈ 207 godzin', sub: 'liczenie SonorBooks, 19.10.2026', icon: 'clock' },
+          { at: 'Razem', label: 'Razem ≈ 207 godzin', sub: 'wg obliczeń SonorBooks, 19.10.2026', icon: 'clock' },
         ] },
       { id: 'A05', kind: 'features', kicker: 'Co znajdziesz', title: 'Głównie klasyka', cols: 3, items: [
         { at: 'Lalke', label: 'Lalka', sub: 'Prus · 3 tomy · 29 godz.', icon: 'book' },
@@ -54,7 +54,7 @@ export const piece: PLPiece = {
         { at: 'srebrnym', label: 'Na srebrnym globie', sub: 'Żuławski · 10 godz.', icon: 'book' },
         { at: 'Sklepy', label: 'Sklepy cynamonowe', sub: 'Schulz · 4 godz.', icon: 'book' },
       ] },
-      { id: 'A06', kind: 'rec', bump: 'Jak szukać po polsku', kicker: 'Wyszukiwanie', title: 'Polish w trzech kliknięciach', rec: { clip: '02_jezyki', start: 0.3 },
+      { id: 'A06', kind: 'rec', bump: 'Jak szukać po polsku', kicker: 'Wyszukiwanie', title: '„Polish” w trzech kliknięciach', rec: { clip: '02_jezyki', start: 0.3 },
         cuts: [{ at: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } }, { at: 'Solo', rec: { clip: '03_polish_list', start: 0.9, url: 'librivox.org/search' } }, { at: 'kilka', rec: { clip: '03_polish_list', start: 3.7, holdAt: 5.9, url: 'librivox.org/search' } }],
         marks: [
           { at: 'Browse', until: 'potem', x: 228, y: 410, w: 292, h: 48 }, { at: 'potem', until: 'Language', x: 1316, y: 449, w: 366, h: 72 },
@@ -69,24 +69,24 @@ export const piece: PLPiece = {
         ] },
       { id: 'A07', kind: 'rec', kicker: 'Strona książki', title: '„Lalka”, tom 1', rec: { clip: '04_lalka', start: 10.4 },
         cuts: [{ at: 'spis', rec: { clip: '05_lalka_play', start: 4.9 } }, { at: 'Plej', rec: { clip: '05_lalka_play', start: 7.3 } },
-          { at: 'Dalnlold', rec: { clip: '04_lalka', start: 4.4 } }, { at: 'jest', rec: { clip: '04_lalka', start: 14.3 } }],
+          { at: 'Dalnlold', rec: { clip: '04_lalka', start: 4.4 } }, { at: 'sa', rec: { clip: '04_lalka', start: 14.3 } }],
         marks: [
           { at: 'czas', until: 'lektora', x: 230, y: 456, w: 340, h: 38 }, { at: 'lektora', until: 'spis', x: 230, y: 557, w: 340, h: 38 },
           { at: 'Plej', until: 'tytul', x: 663, y: 432, w: 46, h: 48 }, { at: 'tytul', until: 'Dalnlold', x: 740, y: 436, w: 640, h: 44 },
-          { at: 'Dalnlold', until: 'jest', x: 420, y: 780, w: 136, h: 60 }, { at: 'cztery', x: 230, y: 905, w: 310, h: 110 },
+          { at: 'Dalnlold', until: 'sa', x: 420, y: 780, w: 136, h: 60 }, { at: 'cztery', x: 230, y: 905, w: 310, h: 110 },
         ],
         zooms: [{ at: 'czas', zoom: 1.5, x: 560, y: 540 }, { at: 'spis', zoom: 1.25, x: 1000, y: 600 }, { at: 'Dalnlold', zoom: 1.5, x: 560, y: 800 }],
         tags: [
           { at: 'czas', label: '9 godz. 12 min', sub: 'czyta Piotr Nater', icon: 'clock' },
           { at: 'Plej', label: 'Play', sub: 'słuchasz w przeglądarce', icon: 'play' },
-          { at: 'tytul', label: 'Tytuł rozdziału', sub: 'plik MP3', icon: 'link' },
-          { at: 'Dalnlold', label: 'Download', sub: 'cała książka w ZIP · jest też M4B', icon: 'download' },
+          { at: 'tytul', label: 'Tytuł rozdziału', sub: 'link do pliku MP3', icon: 'link' },
+          { at: 'Dalnlold', label: 'Download', sub: 'cała książka w ZIP · są też pliki M4B', icon: 'download' },
           { at: 'Bez', label: 'Bez DRM i logowania', tone: 'good' },
         ] },
-      { id: 'A08', kind: 'stat', kicker: 'Lektorzy', title: 'Jeden głos dominuje', at: '60', value: '≈60', unit: '%', label: 'polskich godzin nagrał Piotr Nater (liczenie SonorBooks, 19.10.2026)', tags: [
+      { id: 'A08', kind: 'stat', kicker: 'Lektorzy', title: 'Jeden głos dominuje', at: '60', value: '≈60', unit: '%', label: 'polskich godzin nagrał Piotr Nater (wg obliczeń SonorBooks, 19.10.2026)', tags: [
         { at: 'wolontariusze', label: 'Wolontariusze: jakość bywa różna', icon: 'mic' },
         { at: 'Lalke', label: 'Cała „Lalka” i „Faraon”', icon: 'book' },
-        { at: 'posluchaj', label: 'Najpierw posłuchaj minuty', icon: 'headphones' },
+        { at: 'posluchaj', label: 'Najpierw posłuchaj minuty nagrania', icon: 'headphones' },
       ] },
       { id: 'A08B', kind: 'rec', bump: 'Prawo: USA a Polska', kicker: 'Na co uważać', title: 'Wolne w USA, a w Polsce?', rec: { clip: '05_lalka_play', start: 0.3, holdAt: 3.2 },
         cuts: [{ at: 'Ej', rec: { clip: '07_winnie', start: 1.9 } }, { at: 'Kubus', rec: { clip: '07_winnie', start: 7.5 } }],
@@ -109,10 +109,10 @@ export const piece: PLPiece = {
           { at: 'oficjalnej', until: 'Link', x: 1250, y: 338, w: 420, h: 72 }, { at: 'Link', until: 'jak', x: 420, y: 895, w: 136, h: 60 },
           { at: 'Androida', until: ['Librivoks', 2], x: 300, y: 100, w: 640, h: 150 }, { at: 'ajfona', x: 1176, y: 300, w: 110, h: 90 },
         ],
-        zooms: [{ at: 'Na', zoom: 1.5, x: 1450, y: 400 }, { at: 'Link', zoom: 1.4, x: 560, y: 800 }, { at: 'jak', zoom: 1, x: 960, y: 540 }],
+        zooms: [{ at: 'Na', zoom: 1.5, x: 1450, y: 400 }, { at: 'Link', zoom: 1.4, x: 560, y: 800 }, { at: 'jak', zoom: 2.4, x: 600, y: 215 }, { at: ['Librivoks', 2], zoom: 1.3, x: 900, y: 400 }],
         tags: [
           { at: 'oficjalnej', label: 'Oficjalnie: tylko strona', sub: '„Our only official outlet…”', tone: 'bad' },
-          { at: 'wkleisz', label: 'RSS', sub: 'do aplikacji z podcastami', icon: 'radio' },
+          { at: 'wkleisz', label: 'RSS', sub: 'do aplikacji do podcastów', icon: 'radio' },
           { at: 'Androida', label: 'LibriVox Audio Books', sub: 'Android · nieoficjalna (BookDesign)', icon: 'phone' },
           { at: 'ajfona', label: 'LibriVox Audiobooks', sub: 'iPhone · nieoficjalna (BookDesign)', icon: 'phone' },
         ] },
@@ -121,10 +121,10 @@ export const piece: PLPiece = {
       ], likes: [], dislikes: [], notes: [
         { at: 'wylacznik', label: 'Wyłącznik czasowy, zakładki', sub: 'i pobieranie offline', icon: 'moon' },
         { at: 'reklamy', label: 'Android: z reklamami', tone: 'bad' },
-        { at: 'kosztuje', label: 'Bez reklam: 24,99 zł', sub: 'wersja Supporter · stan na październik 2026', icon: 'coin' },
+        { at: 'kosztuje', label: 'Bez reklam: 24,99 zł', sub: 'osobna wersja Supporter, jednorazowo · stan na 19.10.2026', icon: 'coin' },
       ] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', kicker: 'Podsumowanie', title: 'LibriVox', pros: [
-        { at: 'darmo', label: '0 zł i legalnie', sub: 'w USA; w Polsce: 70 lat po śmierci autora' }, { at: 'konta', label: 'Bez konta i reklam' }, { at: 'prawdziwe', label: 'Ludzkie głosy' },
+        { at: 'darmo', label: '0 zł i legalnie w USA', sub: 'w Polsce: 70 lat po śmierci autora' }, { at: 'konta', label: 'Bez konta i reklam' }, { at: 'prawdziwe', label: 'Ludzkie głosy' },
         { at: 'zawsze', label: 'Pliki na zawsze' }, { at: 'ogromny', label: 'Ponad 19 000 tytułów po angielsku' },
       ], cons: [
         { at: 'dwadziescia', label: 'Tylko 27 książek po polsku' }, { at: 'glownie', label: 'Głównie jeden lektor' }, { at: 'nierowna', label: 'Nierówna jakość' },
@@ -150,8 +150,8 @@ export const piece: PLPiece = {
         { at: 'tytul', title: 'Tytuł rozdziału', sub: 'jeden plik MP3', rec: { clip: '05_lalka_play', start: 5.0 } },
       ], marks: [{ at: 'Dalnlold', until: 'tytul', x: 420, y: 780, w: 136, h: 60 }, { at: 'tytul', x: 740, y: 436, w: 640, h: 44 }] },
       { id: 'B05', kind: 'features', kicker: 'Krok 5', title: 'Drobny druk', items: [
-        { at: 'autor', label: 'Autor: † + 70 lat', sub: 'przy nagraniach spoza polskiej listy', icon: 'user' },
-        { at: 'tlumacz', label: 'Przekład? Tłumacz: † + 70 lat', sub: 'tłumaczenie ma własne prawa', icon: 'book' },
+        { at: 'autor', label: 'Autor: † + 70 lat', sub: 'przed pobraniem', icon: 'user' },
+        { at: 'tlumacz', label: 'Przekład? Tłumacz: † + 70 lat', sub: 'tłumaczenie ma własne prawa', icon: 'book' },
       ] },
       { id: 'B06', kind: 'outro', rec: { clip: '@common/sb_platformy', start: 0.2, url: 'sonorbooks.pl/platformy' }, cta: 'Wolisz zawodowych\nlektorów? Porównaj:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'Audioteke', label: 'Audioteka · Empik Go · Legimi', icon: 'search' }, { at: 'Wolne', label: 'Wolne Lektury · 0 zł', icon: 'book' }] },

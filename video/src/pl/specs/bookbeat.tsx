@@ -109,9 +109,9 @@ export const piece: PLPiece = {
         zooms: [{ at: 'zakladasz', zoom: 1.6, x: 955, y: 400 }, { at: 'wybierasz', zoom: 1.6, x: 950, y: 500 }, { at: 'zgody', zoom: 1.6, x: 955, y: 740 }],
         steps: [
           { at: 'zakladasz', title: 'Załóż konto', sub: 'e-mail, Google lub Apple' },
-          { at: 'wybierasz', title: 'Wybierz pakiet', sub: 'zacznie się po okresie próbnym', rec: { clip: 'proba', start: 4.5 } },
+          { at: 'wybierasz', title: 'Wybierz pakiet', sub: 'zacznie się po okresie próbnym', rec: { clip: 'proba', start: 5.3 } },
           { at: 'dodajesz', title: 'Dodaj metodę płatności' },
-          { at: 'zgody', title: 'Zgoda na marketing', sub: 'nie musisz jej zaznaczać', rec: { clip: 'rejestracja', start: 4.6, url: 'bookbeat.com/pl/registration' } },
+          { at: 'zgody', title: 'Zgoda na marketing', sub: 'nie musisz jej zaznaczać', rec: { clip: 'rejestracja', start: 4.3, url: 'bookbeat.com/pl/registration' } },
         ], note: { at: 'Dzis', label: 'Dziś płacisz 0 zł', icon: 'coin' } },
       { id: 'B03', kind: 'features', kicker: 'Potem', title: 'Aplikacja i karta podarunkowa', cols: 3, items: [
         { at: 'pobierasz', label: 'Pobierz aplikację', sub: 'App Store · Google Play', icon: 'download' }, { at: 'logujesz', label: 'Zaloguj się', sub: 'tym samym kontem', icon: 'user' },
@@ -121,7 +121,7 @@ export const piece: PLPiece = {
         { at: 'menu', title: 'Menu konta', sub: 'na bookbeat.com/pl' }, { at: 'Zarzadzaj', title: 'Zarządzaj subskrypcją' },
         { at: 'wszystkie', title: 'Wykonaj wszystkie kroki' }, { at: 'potwierdzeniem', title: 'Poczekaj na e-mail z potwierdzeniem', sub: 'bez niego subskrypcja może nie być anulowana' },
       ], note: { at: 'Tylko', label: 'Nie w aplikacji ani w App Storze', icon: 'lock' } },
-      { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Koniec okresu próbnego', rec: { clip: 'proba', start: 9.6, holdAt: 13.9 },
+      { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Koniec okresu próbnego', rec: { clip: 'proba', start: 10.8, holdAt: 15.1 },
         marks: [{ at: 'pierwsza', x: 648, y: 742, w: 614, h: 86 }], zooms: [{ at: 'przypomina', zoom: 1.6, x: 950, y: 640 }],
         tags: [
           { at: 'przypomina', label: 'Brak przypomnienia', sub: 'o końcu okresu próbnego', tone: 'bad' }, { at: 'pierwsza', label: 'Dzień 31: pierwsza płatność', icon: 'calendar' },

@@ -1,57 +1,57 @@
 {
- "total_frames": 14178,
- "seconds": 283.56,
+ "total_frames": 14446,
+ "seconds": 288.92,
  "chapters": [
   {
-   "t": 14.78,
+   "t": 15.14,
    "label": "Czym jest LibriVox"
   },
   {
-   "t": 40.68,
+   "t": 41.42,
    "label": "Ile to kosztuje"
   },
   {
-   "t": 54.14,
+   "t": 54.98,
    "label": "Ile jest po polsku"
   },
   {
-   "t": 72.56,
+   "t": 73.4,
    "label": "Polska klasyka w LibriVox"
   },
   {
-   "t": 84.16,
+   "t": 85.0,
    "label": "Jak szukać po polsku"
   },
   {
-   "t": 101.46,
+   "t": 102.3,
    "label": "Strona książki: słuchanie i pobieranie"
   },
   {
-   "t": 118.48,
+   "t": 120.18,
    "label": "Lektorzy"
   },
   {
-   "t": 133.24,
+   "t": 136.14,
    "label": "Prawo: USA a Polska"
   },
   {
-   "t": 160.76,
+   "t": 164.66,
    "label": "Na telefonie: RSS i aplikacje"
   },
   {
-   "t": 175.86,
+   "t": 179.82,
    "label": "Opinie o aplikacjach"
   },
   {
-   "t": 198.12,
+   "t": 203.58,
    "label": "Plusy i minusy"
   },
   {
-   "t": 216.08,
+   "t": 222.62,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 230.6,
+   "t": 237.14,
    "label": "Jak zacząć"
   }
  ],
@@ -60,22 +60,22 @@
    "id": "A01",
    "kind": "hook",
    "start": 0,
-   "dur": 753,
+   "dur": 771,
    "lead": 15,
    "bump": null
   },
   {
    "id": "A02",
    "kind": "intro",
-   "start": 753,
-   "dur": 1033,
+   "start": 771,
+   "dur": 1052,
    "lead": 26,
    "bump": "Czym jest LibriVox?"
   },
   {
    "id": "A02B",
    "kind": "features",
-   "start": 1786,
+   "start": 1823,
    "dur": 262,
    "lead": 7,
    "bump": null
@@ -83,15 +83,15 @@
   {
    "id": "A03",
    "kind": "stat",
-   "start": 2048,
-   "dur": 673,
+   "start": 2085,
+   "dur": 678,
    "lead": 26,
    "bump": "Ile to kosztuje?"
   },
   {
    "id": "A04",
    "kind": "rec",
-   "start": 2721,
+   "start": 2763,
    "dur": 907,
    "lead": 26,
    "bump": "Ile jest po polsku?"
@@ -99,7 +99,7 @@
   {
    "id": "A05",
    "kind": "features",
-   "start": 3628,
+   "start": 3670,
    "dur": 594,
    "lead": 7,
    "bump": null
@@ -107,7 +107,7 @@
   {
    "id": "A06",
    "kind": "rec",
-   "start": 4222,
+   "start": 4264,
    "dur": 851,
    "lead": 26,
    "bump": "Jak szukać po polsku"
@@ -115,55 +115,55 @@
   {
    "id": "A07",
    "kind": "rec",
-   "start": 5073,
-   "dur": 851,
+   "start": 5115,
+   "dur": 894,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A08",
    "kind": "stat",
-   "start": 5924,
-   "dur": 752,
+   "start": 6009,
+   "dur": 812,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A08B",
    "kind": "rec",
-   "start": 6676,
-   "dur": 1376,
+   "start": 6821,
+   "dur": 1426,
    "lead": 26,
    "bump": "Prawo: USA a Polska"
   },
   {
    "id": "A09",
    "kind": "rec",
-   "start": 8052,
-   "dur": 755,
+   "start": 8247,
+   "dur": 758,
    "lead": 26,
    "bump": "Na telefonie"
   },
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 8807,
-   "dur": 1113,
+   "start": 9005,
+   "dur": 1188,
    "lead": 26,
    "bump": "Opinie"
   },
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 9920,
-   "dur": 898,
+   "start": 10193,
+   "dur": 952,
    "lead": 26,
    "bump": "Plusy i minusy"
   },
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 10818,
+   "start": 11145,
    "dur": 726,
    "lead": 26,
    "bump": "Werdykt"
@@ -171,7 +171,7 @@
   {
    "id": "B01",
    "kind": "rec",
-   "start": 11544,
+   "start": 11871,
    "dur": 307,
    "lead": 26,
    "bump": "Jak zacząć"
@@ -179,7 +179,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 11851,
+   "start": 12178,
    "dur": 348,
    "lead": 7,
    "bump": null
@@ -187,7 +187,7 @@
   {
    "id": "B03",
    "kind": "rec",
-   "start": 12199,
+   "start": 12526,
    "dur": 238,
    "lead": 7,
    "bump": null
@@ -195,7 +195,7 @@
   {
    "id": "B04",
    "kind": "steps",
-   "start": 12437,
+   "start": 12764,
    "dur": 298,
    "lead": 7,
    "bump": null
@@ -203,15 +203,15 @@
   {
    "id": "B05",
    "kind": "features",
-   "start": 12735,
-   "dur": 385,
+   "start": 13062,
+   "dur": 326,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B06",
    "kind": "outro",
-   "start": 13120,
+   "start": 13388,
    "dur": 1058,
    "lead": 7,
    "bump": null

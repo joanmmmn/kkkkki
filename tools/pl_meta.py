@@ -131,20 +131,28 @@ UNITS = {'zł', 'gr', 'h', 'min', 's', 'dni', 'dzień', 'tys.', 'mln', 'mld', '%
 def glue(ws):
     """Pega con espacio duro lo que no se puede partir entre líneas ni entre subtítulos (norma tipográfica polaca):
     una palabra de una letra con la siguiente («w domu», «i 14»), los grupos de cifras («20 000») y la cifra con su unidad
-    («14 dni», «39,90 zł»)."""
+    («14 dni», «39,90 zł», «53 minuty»)."""
     out = []
     for w in ws:
         if out:
             prev = out[-1]['w'].split('\u00a0')[-1]
-            digits_prev = prev.replace(',', '').replace('.', '').isdigit()
-            join = (len(prev) == 1 and prev.isalpha()) \
+            digits_prev = bool(re.match(r'^\d+([.,]\d+)?$', prev))  # 4,7 · 29,90 · 2026 (sin puntuación detrás)
+            ordinal = bool(re.match(r'^\d+\.$', prev)) and w['w'][:1].islower()  # «3. dnia» (no «2026. Potem»)
+            join = (len(prev) == 1 and prev.isalpha()) or ordinal \
                 or (digits_prev and (w['w'][:3].isdigit() and len(w['w'].rstrip('.,;:!?')) == 3)) \
+                or (digits_prev and w['w'][:1].isalpha()) \
                 or (digits_prev and w['w'].lower() in UNITS)
             if join:
                 out[-1] = {'w': out[-1]['w'] + '\u00a0' + w['w'], 's': out[-1]['s'], 'e': w['e']}
                 continue
         out.append(dict(w))
     return out
+
+
+def ends_sentence(w, extra=''):
+    """¿Acaba frase esta palabra? (Los ordinales como «3. dnia» ya van pegados a su palabra por `glue`.)"""
+    last = w.split('\u00a0')[-1]
+    return last[-1] in '.?!' + extra
 
 
 def fits2(words, max_chars):
@@ -173,11 +181,11 @@ def srt(slug, scenes, vos, max_chars=42):
         scene_groups, line = [], []
         for k, w in enumerate(ws):
             cand = [x['w'] for x in line] + [w['w']]
-            if line and (not fits2(cand, max_chars) or (len(' '.join(cand)) > max_chars and line[-1]['w'][-1] in '.?!:')):
+            if line and (not fits2(cand, max_chars) or (len(' '.join(cand)) > max_chars and ends_sentence(line[-1]['w'], ':'))):
                 scene_groups.append(line)
                 line = []
             line.append(w)
-            if w['w'][-1] in '.?!' and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
+            if ends_sentence(w['w']) and len(' '.join(x['w'] for x in line)) > 18 and k + 1 < len(ws):
                 scene_groups.append(line)
                 line = []
         if line:
@@ -192,7 +200,7 @@ def srt(slug, scenes, vos, max_chars=42):
                     del scene_groups[k]
                     continue
                 while len(prev) > 1 and len(' '.join(x['w'] for x in cur)) < 14 and fits2([x['w'] for x in [prev[-1]] + cur], max_chars) \
-                        and prev[-2]['w'][-1] not in '.?!':
+                        and not ends_sentence(prev[-2]['w']):
                     cur.insert(0, prev.pop())
             k += 1
         groups += scene_groups

@@ -15,6 +15,7 @@ export type ThumbSpec = {
   seal?: { icon: IconName; text: string }; // sello redondo (\n para dos líneas)
   label?: { strong: string; rest: string }; // etiqueta negra: «14 dni» + «ZA DARMO»
   pros?: [string, string]; // por defecto «Plusy», «Minusy»
+  kicker?: string; // por defecto «RECENZJA» (en las guías: «PORADNIK»)
 };
 
 export const PLThumb: React.FC<{ spec: PlatformSpec; t: ThumbSpec }> = ({ spec, t }) => (
@@ -22,7 +23,7 @@ export const PLThumb: React.FC<{ spec: PlatformSpec; t: ThumbSpec }> = ({ spec, 
     <AbsoluteFill style={{ padding: '120px 0 0 64px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 18, height: 70 }}>
         <PlatformLogo spec={spec} width={Math.min(300, 64 / spec.logoRatio)} />
-        <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.muted, marginLeft: 6, marginTop: 6 }}>RECENZJA</span>
+        <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.muted, marginLeft: 6, marginTop: 6 }}>{t.kicker ?? 'RECENZJA'}</span>
       </div>
       <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 104, letterSpacing: -4, lineHeight: 0.96, color: color.ink, marginTop: 30 }}>{t.line1}</div>
       <div style={{ position: 'relative', display: 'inline-block', alignSelf: 'flex-start', marginTop: 4 }}>

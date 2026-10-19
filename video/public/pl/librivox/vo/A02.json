@@ -239,5 +239,6 @@
   "from": 23,
   "to": 28,
   "segment_chars": 28
- }
+ },
+ "speechEnd": 19.905
 }
