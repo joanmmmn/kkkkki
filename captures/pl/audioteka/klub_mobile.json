@@ -36,7 +36,7 @@
    "wait": 600
   },
   {
-   "eval": "window.scrollTo(0,1640)"
+   "eval": "window.scrollTo(0,1262)"
   },
   {
    "wait": 1200
@@ -48,26 +48,10 @@
    "wait": 400
   },
   {
-   "mark": "card"
+   "mark": "cards"
   },
   {
-   "wait": 5200
-  },
-  {
-   "mark": "scroll"
-  },
-  {
-   "scroll": 150,
-   "dur": 1500
-  },
-  {
-   "wait": 200
-  },
-  {
-   "mark": "button"
-  },
-  {
-   "wait": 8000
+   "wait": 15000
   },
   {
    "wait": 800

@@ -12,7 +12,11 @@ SCALE="${SCALE:-1}"
 LIMIT="${LIMIT:-0}"; NEW=0
 TMP="out/chunks/$COMP"
 mkdir -p "$TMP"
-TOTAL=$(npx remotion compositions src/index.ts 2>/dev/null | awk -v c="$COMP" '$1==c {print $4}')
+# Un solo paquete de webpack para todos los tramos (cada `remotion render src/index.ts` dejaba ~1,3 GB en /tmp).
+BUNDLE="$TMP/bundle"
+[ -f "$BUNDLE/index.html" ] || npx remotion bundle src/index.ts --out-dir="$BUNDLE" > "$TMP/bundle.log" 2>&1
+trap 'rm -rf "$BUNDLE"' EXIT
+TOTAL=$(npx remotion compositions "$BUNDLE" 2>/dev/null | awk -v c="$COMP" '$1==c {print $4}')
 [ -n "$TOTAL" ] || { echo "No encuentro la composición $COMP" >&2; exit 1; }
 echo "$COMP: $TOTAL fotogramas, tramos de $CHUNK"
 : > "$TMP/list.txt"
@@ -24,7 +28,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
     if [ "$LIMIT" -gt 0 ] && [ "$NEW" -ge "$LIMIT" ]; then echo "Pausa tras $NEW tramos nuevos (LIMIT=$LIMIT): vuelve a lanzarlo para seguir"; exit 0; fi
     NEW=$((NEW + 1))
     # Se renderiza a un nombre temporal y se renombra al acabar: si el proceso se corta, el tramo a medias no cuenta como hecho.
-    npx remotion render src/index.ts "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf="${CRF:-16}" --muted --scale="$SCALE" \
+    npx remotion render "$BUNDLE" "$COMP" "${part%.mp4}.tmp.mp4" --frames="$a-$b" --concurrency=2 --crf="${CRF:-16}" --muted --scale="$SCALE" \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/part_$i.log" 2>&1 || { echo "Falló el tramo $a-$b (ver $TMP/part_$i.log)" >&2; exit 1; }
     mv "${part%.mp4}.tmp.mp4" "$part"
   fi
@@ -41,7 +45,7 @@ for ((a = 0; a < TOTAL; a += CHUNK)); do
   b=$((a + CHUNK - 1)); [ "$b" -ge "$TOTAL" ] && b=$((TOTAL - 1))
   apart="$TMP/audio_$(printf %02d $i).wav"
   if [ ! -s "$apart" ]; then
-    npx remotion render src/index.ts "$COMP" "${apart%.wav}.tmp.wav" --frames="$a-$b" --codec=wav \
+    npx remotion render "$BUNDLE" "$COMP" "${apart%.wav}.tmp.wav" --frames="$a-$b" --codec=wav \
       --offthreadvideo-cache-size-in-bytes=1500000000 > "$TMP/audio_$i.log" 2>&1 || { echo "Falló el audio del tramo $a-$b" >&2; exit 1; }
     mv "${apart%.wav}.tmp.wav" "$apart"
   fi

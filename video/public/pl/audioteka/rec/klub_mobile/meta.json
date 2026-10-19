@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  430,
+  932
+ ],
+ "dpr": 2,
+ "frames": 131,
+ "duration": 16.215,
+ "offset": 0.025,
+ "marks": {
+  "card": 0.39,
+  "scroll": 5.59,
+  "button": 7.413,
+  "end": 16.215
+ },
+ "events": []
+}

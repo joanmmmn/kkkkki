@@ -32,7 +32,7 @@ export const piece: PLPiece = {
         marks: [{ at: 'lektorow', until: 'dlugosc', x: 667, y: 256, w: 1199, h: 132 }, { at: 'trzy', until: 'cztery', x: 760, y: 436, w: 182, h: 64 }, { at: 'cztery', until: 'Mozesz', x: 667, y: 436, w: 96, h: 64 }, { at: 'odsluchac', x: 290, y: 517, w: 138, h: 72 }],
         tags: [{ at: 'lektorow', label: 'Lektorzy', icon: 'mic' }, { at: 'trzy', label: '3 godz. 7 min', icon: 'clock' }, { at: 'cztery', label: '4,6 · 12 161 ocen', icon: 'star' }, { at: 'odsluchac', label: 'Próbka do odsłuchu', icon: 'play' }] },
       { id: 'A07', kind: 'features', kicker: 'Aplikacja', title: 'Co potrafi?', cols: 3, items: [
-        { at: 'przelaczysz', label: 'Słuchanie i czytanie', sub: 'przełączasz w dowolnym miejscu', icon: 'sync' }, { at: 'tempa', label: 'Tempo', icon: 'speed' },
+        { at: 'przelaczysz', label: 'Słuchaj i czytaj', sub: 'w dowolnym miejscu', icon: 'sync' }, { at: 'tempa', label: 'Tempo', icon: 'speed' },
         { at: 'zakladki', label: 'Zakładki', icon: 'bookmark' }, { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' },
         { at: 'offline', label: 'Offline', icon: 'download' }, { at: 'szukanie', label: 'Szukanie w audiobooku', sub: 'nowość: Search in Book', icon: 'search' },
         { at: 'wyszukiwanie', label: 'Książka ze zdjęcia', sub: 'nowość: Story Scan', icon: 'sparkle' },
@@ -45,8 +45,8 @@ export const piece: PLPiece = {
         marks: [{ at: 'osobne', until: 'dzieci', x: 456, y: 634, w: 1004, h: 164 }, { at: 'dzieciecy', x: 958, y: 900, w: 910, h: 110 }],
         tags: [{ at: 'osobne', label: 'Osobne konta i półki', icon: 'family' }, { at: 'jedna', label: 'Płaci jedna osoba', icon: 'card' }, { at: 'dzieciecy', label: 'Tryb dziecięcy z PIN-em', icon: 'lock' }] },
       { id: 'A09', kind: 'devices', items: [
-        { at: 'telefonach', label: 'Telefon i tablet', sub: 'Android, iOS', icon: 'phone', ok: true }, { at: 'zegarkach', label: 'Zegarki', sub: 'Apple Watch, Wear OS', icon: 'watch', ok: true },
-        { at: 'samochodzie', label: 'Samochód', sub: 'Android Auto, CarPlay', icon: 'car', ok: true }, { at: 'Kromkastem', label: 'Chromecast', sub: 'z Androidem', icon: 'cast', ok: true },
+        { at: 'telefonach', label: 'Telefon i tablet', sub: 'Android, iOS', icon: 'phone', ok: true }, { at: 'zegarkach', label: 'Zegarki', sub: 'Apple\u00a0Watch, Wear\u00a0OS', icon: 'watch', ok: true },
+        { at: 'samochodzie', label: 'Samochód', sub: 'Android\u00a0Auto, CarPlay', icon: 'car', ok: true }, { at: 'Kromkastem', label: 'Chromecast', sub: 'z Androidem', icon: 'cast', ok: true },
         { at: 'komputerze', label: 'Komputer', icon: 'laptop', ok: false }, { at: 'stronie', label: 'Strona www', icon: 'globe', ok: false },
       ] },
       { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Gugl', store: 'google', rating: 4.7, count: 'w Polsce, 19.10.2026' }, { at: 'Ep', store: 'apple', rating: 4.8, count: '45 772 oceny w Polsce' }],
@@ -58,7 +58,9 @@ export const piece: PLPiece = {
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', yes: [
         { at: 'duzo', label: 'Słuchasz dużo', sub: 'Unlimited bez liczenia godzin, najlepiej z promocją' }, { at: 'mniej', label: 'Słuchasz mniej', sub: 'wystarczy Basic: 25 h za 24,90 zł' },
-      ], no: [], alts: { at: 'porownaj', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
+      ], no: [
+        { at: 'przed', label: 'Chcesz najpierw spróbować za darmo', sub: 'teraz nie ma darmowej próby' },
+      ], alts: { at: 'porownaj', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'stat', bump: 'Jak zacząć taniej', kicker: 'Nowi klienci', title: 'Darmowej próby teraz nie ma', at: 'dwie', value: '2', label: 'promocje na Unlimited dla nowych klientów', tags: [
         { at: 'Unlimited', label: 'Stan na październik 2026', icon: 'calendar' },
       ] },
@@ -101,5 +103,5 @@ export const piece: PLPiece = {
       { label: 'Drobny druk regulaminu', from: 'B05' },
     ],
   },
-  thumb: { line1: 'STORYTEL', line2: 'CZY WARTO?', seal: { icon: 'infinity', text: 'Unlimited\n44,90 zł' }, label: { strong: 'Bez', rest: 'DARMOWEJ PRÓBY' } },
+  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'infinity', text: 'Unlimited\n44,90 zł' }, label: { strong: 'Bez', rest: 'DARMOWEJ PRÓBY' } },
 };
