@@ -15,13 +15,13 @@ export const piece: PLPiece = {
         { at: 'ceny', label: 'Ceny', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'search' },
         { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '14', label: '14 dni za darmo', icon: 'gift' },
       ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, holdAt: 4.2, url: 'swiatczytnikow.pl' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4 } }], facts: [
+      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, holdAt: 4.2, url: '' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4 } }], facts: [
         { at: 'kanadyjska', label: 'Marka z Kanady', sub: 'czytniki i księgarnia z e-bookami', icon: 'ereader' },
         { at: 'Rakutena', label: 'Należy do Rakutena', sub: 'Japonia', icon: 'globe' },
         { at: 'Polsce', label: 'W Polsce od końca maja 2026', icon: 'calendar' },
         { at: 'czytnikach', label: 'Aplikacja i czytniki Kobo', icon: 'headphones' },
       ] },
-      { id: 'A03', kind: 'rec', bump: 'Cennik', kicker: 'Cennik', title: 'Trzy plany', rec: { clip: 'sonorbooks', start: 11.25, url: 'sonorbooks.pl/platformy' },
+      { id: 'A03', kind: 'rec', bump: 'Cennik', kicker: 'Cennik', title: 'Trzy plany', rec: { clip: 'sonorbooks', start: 11.25, url: '' },
         cuts: [{ at: 'Rid', rec: { clip: 'swiat', start: 7.1, url: 'swiatczytnikow.pl' } }, { at: 'start', rec: { clip: 'naczytniku', start: 8.8, url: 'naczytniku.pl' } }],
         marks: [
           { at: 'warunkow', until: 'plany', x: 380, y: 322, w: 260, h: 40 }, { at: 'plany', until: 'Rid', x: 380, y: 600, w: 520, h: 32 },
@@ -31,7 +31,7 @@ export const piece: PLPiece = {
         ],
         zooms: [{ at: 'Wedlug', zoom: 1.5, x: 640, y: 440 }, { at: 'Rid', zoom: 1.2, x: 830, y: 540 }, { at: 'start', zoom: 1.6, x: 760, y: 300 }],
         tags: [
-          { at: 'warunkow', label: 'Stan: październik 2026', icon: 'calendar', tone: 'accent' },
+          { at: 'warunkow', label: 'Stan: październik 2026', sub: 'źródła: sonorbooks.pl i prasa', icon: 'calendar', tone: 'accent' },
           { at: 'Rid', label: 'Read: 39,90 zł', sub: 'e-booki · miesięcznie', icon: 'book' },
           { at: 'Lisen', label: 'Listen: 39,90 zł', sub: 'audiobooki · miesięcznie', icon: 'headphones' },
           { at: 'end', label: 'Read & Listen: 49,90 zł', sub: 'e-booki i audiobooki', icon: 'sparkle' },

@@ -25,36 +25,6 @@
    "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''; if (!document.getElementById('nozd')) { const st = document.createElement('style'); st.id = 'nozd'; st.textContent = 'iframe#launcher, iframe#webWidget, iframe[title*=\\'widżet\\' i], iframe[title*=\\'czat\\' i], iframe[title*=\\'messaging\\' i] { display: none !important; }'; document.head.appendChild(st); } try { window.zE && zE('webWidget', 'hide'); } catch (e) {}"
   },
   {
-   "eval": "window.scrollTo(0, document.body.scrollHeight)"
-  },
-  {
-   "wait": 1200
-  },
-  {
-   "eval": "window.scrollTo(0, document.body.scrollHeight)"
-  },
-  {
-   "wait": 1200
-  },
-  {
-   "eval": "window.scrollTo(0, document.body.scrollHeight)"
-  },
-  {
-   "wait": 1200
-  },
-  {
-   "eval": "window.scrollTo(0, document.body.scrollHeight)"
-  },
-  {
-   "wait": 1200
-  },
-  {
-   "eval": "window.scrollTo(0, document.body.scrollHeight)"
-  },
-  {
-   "wait": 1200
-  },
-  {
    "eval": "window.scrollTo(0,705)"
   },
   {
@@ -82,7 +52,7 @@
   {
    "move": [
     700,
-    520
+    420
    ],
    "dur": 1200
   },
@@ -93,26 +63,37 @@
    "mark": "scroll"
   },
   {
-   "eval": "(() => { const el = [...document.querySelectorAll('h4')].find((h) => h.textContent.trim() === 'Kategorie'); if (!el) return; const target = el.getBoundingClientRect().top + scrollY - 140; const start = scrollY; const t0 = Date.now(); const dur = 2400 * 3; const f = () => { const p = Math.min(1, (Date.now() - t0) / dur); const e = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; scrollTo(0, start + (target - start) * e); if (p < 1) requestAnimationFrame(f); }; f(); })()"
+   "scroll": 897,
+   "dur": 2200
   },
   {
-   "wait": 2400
+   "wait": 300
   },
   {
-   "wait": 400
-  },
-  {
-   "mark": "kat"
+   "mark": "spacer"
   },
   {
    "move": [
-    700,
+    668,
     300
    ],
    "dur": 900
   },
   {
-   "wait": 2600
+   "wait": 900
+  },
+  {
+   "mark": "icons"
+  },
+  {
+   "move": [
+    722,
+    382
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 2400
   },
   {
    "mark": "end"

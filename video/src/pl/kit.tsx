@@ -145,6 +145,7 @@ const MissingRec: React.FC<{ width: number; height: number; name: string }> = ({
 
 // Ventana de navegador o teléfono, según la toma.
 export const Device: React.FC<{ c: SceneCtx; rec?: RecRef; cuts?: Cut[]; width: number; marks?: MarkSpec[]; zooms?: ZoomSpec[]; tilt?: number; style?: React.CSSProperties }> = ({ c, rec, cuts, width, marks, zooms, tilt = 0, style }) => {
+  const frame = useCurrentFrame();
   const first = rec ?? cuts?.[0]?.rec;
   if (!first) return null;
   if (first.mobile) {
@@ -156,9 +157,13 @@ export const Device: React.FC<{ c: SceneCtx; rec?: RecRef; cuts?: Cut[]; width: 
       </div>
     );
   }
+  // La barra de direcciones enseña la URL de la toma que se ve en cada momento (las escenas con cortes cambian de web).
+  const shots = shotsOf(c, rec, cuts);
+  const active = shots.reduce((a, s2) => (frame >= s2.from ? s2 : a), shots[0]);
+  const url = active?.rec.url ?? first.url ?? c.spec.domain;
   return (
     <div style={{ transform: tilt ? `perspective(2400px) rotateY(${tilt}deg)` : undefined, ...style }}>
-      <BrowserWindow width={width} url={first.url ?? c.spec.domain}>
+      <BrowserWindow width={width} url={url}>
         <RecScreen c={c} rec={rec} cuts={cuts} width={width} marks={marks} zooms={zooms} />
       </BrowserWindow>
     </div>
