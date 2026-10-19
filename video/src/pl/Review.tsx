@@ -23,7 +23,7 @@ export const buildTimeline = (spec: PlatformSpec): { scenes: Timed[]; total: num
   let t = 0;
   const scenes: Timed[] = spec.scenes.map((s, i) => {
     const lead = sec(s.lead ?? (s.bump ? 0.52 : i === 0 ? 0.3 : 0.14));
-    const speech = plSpeechFrames(spec.slug, s.id, voText(spec.slug, s.id));
+    const speech = Math.max(plSpeechFrames(spec.slug, s.id, voText(spec.slug, s.id)), s.audio ? Math.ceil(s.audio.dur * FPS) : 0);
     const extra = s.extra ?? (s.kind === 'outro' ? OUTRO_HOLD : s.kind === 'plans' || s.kind === 'proscons' || s.kind === 'verdict' ? 22 : 14);
     const dur = lead + speech + TAIL + extra;
     const pre = s.bump ? BUMP_PRE : 0;
@@ -64,7 +64,10 @@ export const PLReview: React.FC<{ spec: PlatformSpec }> = ({ spec }) => {
   const { fps } = useVideoConfig();
   const { scenes, total } = buildTimeline(spec);
   const bumps = scenes.filter((x) => x.s.bump);
-  const vo = scenes.filter((x) => plHasVO(spec.slug, x.s.id)).map((x) => [x.start + x.lead, x.start + x.lead + plFullFrames(spec.slug, x.s.id, voText(spec.slug, x.s.id))] as const);
+  const vo = [
+    ...scenes.filter((x) => plHasVO(spec.slug, x.s.id)).map((x) => [x.start + x.lead, x.start + x.lead + plFullFrames(spec.slug, x.s.id, voText(spec.slug, x.s.id))] as const),
+    ...scenes.filter((x) => x.s.audio).map((x) => [x.start + x.lead, x.start + x.lead + Math.ceil(x.s.audio!.dur * FPS)] as const),
+  ];
   const env = (f: number) => {
     let d = 0;
     for (const [a, b] of vo) d = Math.max(d, interpolate(f, [a - sec(0.15), a, b, b + sec(0.35)], [0, 1, 1, 0], clamp));
@@ -94,6 +97,11 @@ export const PLReview: React.FC<{ spec: PlatformSpec }> = ({ spec }) => {
                 <SceneView c={ctx} s={x.s} />
               </Sequence>
             </Shell>
+            {(!STEM || STEM === 'vo') && x.s.audio && (
+              <Sequence from={x.lead} layout="none" name={`audio:${x.s.id}`}>
+                <Audio src={staticFile(x.s.audio.src)} volume={x.s.audio.volume ?? 1} />
+              </Sequence>
+            )}
             {(!STEM || STEM === 'vo') && plHasVO(spec.slug, x.s.id) && (
               <Sequence from={x.lead} layout="none" name={`vo:${x.s.id}`}>
                 <Audio src={plVoSrc(spec.slug, x.s.id)} />

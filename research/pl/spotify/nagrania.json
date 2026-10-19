@@ -1,0 +1,122 @@
+[
+ {
+  "id": "01_premium_plany",
+  "para": ["A02", "A03", "A09", "B02"],
+  "url": "https://www.spotify.com/pl/premium/",
+  "viewport": "desktop",
+  "que_se_ve": "Página oficial de planes Premium en Polonia, en polaco y en zł: cabecera «Wypróbuj za 0 zł przez 1 miesiąc» con la letra pequeña «0 zł za 1 miesiąc, potem 26,99 zł miesięcznie»; tarjeta «Audiobooki – Odkryj ponad 350 000 tytułów…»; bloque de dispositivos «Słuchaj Spotify. Gdzie tylko chcesz»; las cuatro tarjetas Individual (26,99 zł, «12 godzin odtwarzania audiobooków…»), Student (14,49 zł), Duo (36,99 zł) y Family (45,99 zł), estas dos con «(dotyczy tylko właściciela planu)».",
+  "pasos": "Si sale el aviso de cookies, cerrarlo con «Odrzuć wszystkie» o la X (no aceptar publicidad) antes de empezar a grabar. Grabar desde arriba. 0–3 s: cabecera quieta, con el cursor sobre el botón verde sin pulsarlo (que se lea la letra pequeña). 3–8 s: bajar despacio hasta la sección «Wszystko, co kochasz, jest tutaj» y pararse en la tarjeta «Audiobooki – Odkryj ponad 350 000 tytułów». 8–13 s: bajar hasta «Słuchaj Spotify. Gdzie tylko chcesz» (W trasie / W ruchu / W domu). 13–28 s: bajar hasta las cuatro tarjetas de planes y pasar el ratón por cada una unos 3 s (Individual, Student, Duo, Family), deteniéndose en la línea «12 godzin… (dotyczy tylko właściciela planu)». No pulsar «Wypróbuj», «Kup Premium Duo» ni «Kup Premium Family». Probado con curl el 19/10/2026 desde fuera de Polonia: 200, en polaco, precios en zł, sin redirección de país."
+ },
+ {
+  "id": "02_audiobooks_hero",
+  "para": ["A01", "A02"],
+  "url": "https://www.spotify.com/pl/audiobooks/",
+  "viewport": "desktop",
+  "que_se_ve": "Cabecera de la página de audiolibros de Spotify Polonia: «Zanurz się w świecie wspaniałych historii.», la letra pequeña sobre quién tiene horas y, debajo, «Audiobooki w Spotify»: «Comiesięczne godziny słuchania» y «Setki tysięcy pozycji».",
+  "pasos": "Cerrar cookies como en 01. 0–4 s: cabecera quieta. 4–9 s: bajar despacio hasta los bloques «Comiesięczne godziny słuchania» y «Setki tysięcy pozycji» y quedarse ahí. No pulsar «Przeglądaj audiobooki» ni «Odkrywaj Audiobooki+» (llevan al reproductor o al inicio de sesión). Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "03_audiobooks_plus",
+  "para": ["A05", "B04"],
+  "url": "https://www.spotify.com/pl/audiobooks/",
+  "viewport": "desktop",
+  "que_se_ve": "Sección «Audiobooki+» de la misma página: «Dodatek Audiobooki+ zapewnia co miesiąc 15 godzin…», «Potem 17,99 zł/mies., rezygnacja w każdej chwili» y la letra pequeña «Tylko dla osób, które nie korzystały jeszcze z dodatku Audiobooki+… Możesz anulować dodatek Audiobooki+ w dowolnym momencie bez rezygnacji z planu Premium… Niewykorzystane godziny odtwarzania z tego dodatku wygasają co miesiąc».",
+  "pasos": "Cerrar cookies. Bajar directamente hasta el título «Audiobooki+» antes de grabar. 0–7 s: el bloque con «15 godzin» y «17,99 zł/mies.» (cursor encima del texto, sin pulsar el botón «Wypróbuj Audiobooki+ za 17,99 zł»). 7–12 s: bajar un poco hasta la letra pequeña y pasar el cursor por la frase «bez rezygnacji z planu Premium»."
+ },
+ {
+  "id": "04_audiobooks_dostep",
+  "para": ["A06", "B01"],
+  "url": "https://www.spotify.com/pl/audiobooks/",
+  "viewport": "desktop",
+  "que_se_ve": "Sección «Jak uzyskać dostęp do audiobooków w Spotify»: «Mam własny plan Premium» (12 godzin, renovación el día de facturación, horas que caducan), «Korzystam z planu Premium Family lub Duo należącego do innej osoby», «Korzystam z Premium Student» («Premium Student nie obejmuje godzin słuchania audiobooków», «Możesz bezpłatnie posłuchać fragmentu dowolnego audiobooka»).",
+  "pasos": "Cerrar cookies. Bajar hasta «Jak uzyskać dostęp do audiobooków w Spotify». 0–6 s: bloque «Mam własny plan Premium» con sus marcas ✓ (si es un desplegable, abrirlo con un clic; no es un formulario). 6–10 s: abrir o bajar a «Korzystam z Premium Student» y detenerse en «Możesz bezpłatnie posłuchać fragmentu dowolnego audiobooka». 10–14 s: bloque de Family/Duo. No pulsar «Zobacz plany Premium» ni «Poproś właściciela planu o Audiobooki+»."
+ },
+ {
+  "id": "05_audiobooks_funkcje",
+  "para": ["A08"],
+  "url": "https://www.spotify.com/pl/audiobooks/",
+  "viewport": "desktop",
+  "que_se_ve": "Sección «Nie trać wątku»: «Przypomnienia treści», «Dopasowanie strony – Płynnie przechodź między książką drukowaną lub e-bookiem a audiobookiem w Spotify» y «Śledź historię».",
+  "pasos": "Cerrar cookies. Bajar hasta «Nie trać wątku». 0–6 s: las tres tarjetas, con el cursor parado 3 s sobre «Dopasowanie strony»."
+ },
+ {
+  "id": "06_pomoc_godziny",
+  "para": ["A04"],
+  "url": "https://support.spotify.com/pl/article/audiobooks-premium-plans/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo de ayuda oficial «Audiobooki w planach Premium»: qué planes tienen horas («Premium Family (wyłącznie dla właścicieli planów)», «Uwaga: Premium Student nie obejmuje dostępu do audiobooków»), cómo se calculan («w normalnej prędkości», el ejemplo del audiobook de 5 horas a 2x), «Czy czas słuchania może przepaść?» y «Co się stanie, gdy skończy mi się czas słuchania?» («Zapisujemy Twój postęp…»).",
+  "pasos": "Cerrar cookies con la X o «Odrzuć». 0–4 s: título y lista «Które plany obejmują czas słuchania audiobooków?». 4–12 s: bajar hasta «W jaki sposób obliczany jest wykorzystany czas słuchania audiobooków?» y pasar el cursor por el párrafo «Na przykład, gdy przesłuchasz 5-godzinnego audiobooka…». 12–22 s: bajar por «Czy czas słuchania może przepaść?» y «Co się stanie, gdy skończy mi się czas słuchania?». No iniciar sesión. Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "07_pomoc_doladowania",
+  "para": ["A05", "B03"],
+  "url": "https://support.spotify.com/pl/article/audiobook-listening-time-purchase/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo «Kupowanie czasu słuchania audiobooków»: la tabla (Godziny w ramach planu / Audiobooki+ / Audiobooki+ dla członków planu / Doładowanie «Ważne przez 12 miesięcy od daty zakupu») y, más abajo, los pasos para móvil «Dotknij swojego zdjęcia profilowego. Dotknij Twoje Premium. Wybierz Czas słuchania audiobooków.» y «W sekcji Doładowania wybierz opcję Doładuj konto».",
+  "pasos": "Cerrar cookies. 0–8 s: la tabla, con el cursor bajando por las filas hasta «Doładowanie». 8–16 s: bajar hasta «Jak poprosić właściciela planu o doładowanie» → «Urządzenia mobilne» (los tres pasos) y luego subir a «Jak doładować konto?» («W sekcji Doładowania wybierz opcję Doładuj konto»). No pulsar los enlaces «Przejdź do sekcji…» (piden iniciar sesión)."
+ },
+ {
+  "id": "08_pomoc_katalog",
+  "para": ["A06"],
+  "url": "https://support.spotify.com/pl/article/audiobooks-subscriber-catalog/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo «Audiobooki w katalogu subskrybenta»: «Audiobook z katalogu subskrybenta jest oznaczony jako Dostępny w Premium» y los pasos «Przejdź do sekcji Wyszukaj. W sekcji Przeglądaj wszystko wybierz Audiobooki.»",
+  "pasos": "Cerrar cookies. 0–8 s: título, la frase «oznaczony jako Dostępny w Premium» (cursor encima) y los tres pasos. 8–12 s: bajar a «Nie możesz znaleźć audiobooka?» («Zawartość katalogu i dostęp do niego zależą od kraju…»)."
+ },
+ {
+  "id": "09_pomoc_odblokuj",
+  "para": ["A07", "A08"],
+  "url": "https://support.spotify.com/pl/article/audiobooks-unlock/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo «Odblokuj audiobooki»: «Płatności za audiobooki można obecnie dokonywać wyłącznie w przeglądarce internetowej…», la nota «jeśli dostęp do audiobooka opłacono osobno, jego odtwarzanie nie będzie wliczać się…» y la sección «Odtwarzanie i pobieranie audiobooków» (prędkość, 15 sekund, Wyłącznik czasowy, pobieranie offline).",
+  "pasos": "Cerrar cookies. Empezar ya bajado en «Jak zapłacić za dostęp do audiobooka?». 0–9 s: la frase «wyłącznie w przeglądarce internetowej» y la «Uwaga» sobre el tiempo de escucha. 9–16 s: bajar hasta «Odtwarzanie i pobieranie audiobooków» y recorrer con el cursor «prędkością odtwarzania», «15 sekund» y «Wyłącznik czasowy». No pulsar «Kup» ni enlaces de compra."
+ },
+ {
+  "id": "10_pomoc_anuluj",
+  "para": ["B04"],
+  "url": "https://support.spotify.com/pl/article/cancel-premium/",
+  "viewport": "desktop",
+  "que_se_ve": "Artículo «Jak anulować Premium?»: «Przejdź do sekcji Zarządzaj swoim planem. Wybierz opcję Anuluj subskrypcję.», «Twój plan Premium pozostanie aktywny do kolejnego okresu rozliczeniowego…» y la nota «w przypadku rezygnacji z subskrypcji podczas bezpłatnego okresu Twoje konto zostanie natychmiast przeniesione do bezpłatnej wersji serwisu. Nie można ponownie aktywować bezpłatnego okresu próbnego.»",
+  "pasos": "Cerrar cookies. 0–10 s: los dos pasos y la nota «Uwaga», con el cursor subrayando «natychmiast przeniesione». No pulsar «Zarządzaj swoim planem» (pide iniciar sesión) ni el enlace al formulario de cancelación."
+ },
+ {
+  "id": "11_gplay",
+  "para": ["A10"],
+  "url": "https://play.google.com/store/apps/details?id=com.spotify.music&hl=pl&gl=PL",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de Google Play en polaco: «Spotify: muzyka i podcasty», 4,3 ★, «36,5 mln opinie» (así lo escribe Google), «1 mld+ Pobrania».",
+  "pasos": "Sin iniciar sesión. Si sale el aviso de cookies de Google, «Odrzuć wszystko». 0–4 s: la cabecera con la nota, el número de opiniones y las descargas. No pulsar «Zainstaluj». No mostrar opiniones con nombres de usuarios (no bajar a la sección de reseñas). Probado con curl el 19/10/2026: 200, en polaco."
+ },
+ {
+  "id": "12_appstore",
+  "para": ["A10"],
+  "url": "https://apps.apple.com/pl/app/spotify-music-and-podcasts/id324684580?l=pl",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de la App Store polaca en polaco (con ?l=pl): «Oceny: 1,5 mln», 4,8.",
+  "pasos": "0–4 s: la cabecera con «Oceny: 1,5 mln» y «4,8». No bajar a «Oceny i recenzje» (salen nombres de usuarios). Sin ?l=pl la página sale en inglés: usar la URL tal cual. Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "13_audioteka_klub",
+  "para": ["A12"],
+  "url": "https://klub.audioteka.com/",
+  "viewport": "desktop",
+  "que_se_ve": "Página oficial de Audioteka Klub: tarjeta del Plan Optymalny «Słuchaj bez limitu godzin · 29,90 zł · 14 dni za darmo dla nowych użytkowników».",
+  "pasos": "Cerrar cookies con «Odrzuć»/X si aparece. 0–6 s: la tarjeta de 29,90 zł con «Słuchaj bez limitu godzin». Ojo: hasta el 26/10/2026 hay una promoción de 10,90 zł durante 3 meses en la misma zona; encuadrar la tarjeta de 29,90 zł y no mostrar la promoción (el vídeo no la menciona). No pulsar «Wypróbuj 14 dni za darmo». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "14_sonorbooks_platformy",
+  "para": ["B06"],
+  "url": "https://sonorbooks.pl/platformy/",
+  "viewport": "desktop",
+  "que_se_ve": "Página de plataformas de SonorBooks Polska: cabecera «Twoja historia. Twoja platforma.» y las tarjetas de Audioteka, Empik Go, Legimi y Audible con precio, límites y prueba.",
+  "pasos": "Cerrar el aviso de cookies con «Rozumiem». 0–3 s: cabecera. 3–12 s: bajar despacio por Audioteka, Empik Go, Wolne Lektury, Legimi y hasta Audible (pararse 1–2 s en cada tarjeta). No iniciar sesión ni pulsar «Zobacz warunki…». Probado con curl el 19/10/2026: 200."
+ },
+ {
+  "id": "15_sonorbooks_karta",
+  "para": ["B06"],
+  "url": "https://sonorbooks.pl/audiobook/atomowe-nawyki/",
+  "viewport": "desktop",
+  "que_se_ve": "Ficha de «Atomowe nawyki» en sonorbooks.pl con sus opciones: Audioteka (49,99 zł, zakup pojedynczy), Legimi, Empik Go y Ebookpoint.",
+  "pasos": "Cerrar cookies con «Rozumiem». 0–6 s: cabecera de la ficha y bajada hasta las opciones analizadas. No pulsar «Kup w Audiotece» ni «Sprawdź w…». Probado con curl el 19/10/2026: 200."
+ }
+]

@@ -6,7 +6,7 @@
 
 Uso: python3 tools/pl_index.py
 """
-import json, os
+import json, os, subprocess
 ROOT = os.path.join(os.path.dirname(__file__), '..', 'video')
 PUB = os.path.join(ROOT, 'public', 'pl')
 vo, rec = {}, {}
@@ -24,6 +24,11 @@ for slug in sorted(os.listdir(PUB)) if os.path.isdir(PUB) else []:
             if not os.path.exists(mj):
                 continue
             m = json.load(open(mj))
+            vid = os.path.join(rd, clip, 'video.mp4')
+            for name, args in (('first.jpg', ['-ss', '0']), ('last.jpg', ['-sseof', '-0.1'])):
+                dst = os.path.join(rd, clip, name)
+                if os.path.exists(vid) and (not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(vid)):
+                    subprocess.run(['ffmpeg', '-v', 'error', '-y', *args, '-i', vid, '-frames:v', '1', '-q:v', '3', dst], check=False)
             item = {'duration': m['duration'], 'viewport': m.get('viewport', [1920, 1080])}
             cj = os.path.join(rd, clip, 'cursor.json')
             if os.path.exists(cj):

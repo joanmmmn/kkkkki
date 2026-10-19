@@ -1,0 +1,109 @@
+{
+ "id": "B03",
+ "hash": "86b57def963e",
+ "text": "Ile godzin ci zostało? Dotknij zdjęcia profilowego, wejdź w Twoje Premium i wybierz Czas słuchania audiobooków. Tam kupisz też doładowanie.",
+ "duration": 8.64,
+ "words": [
+  {
+   "w": "Ile",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "godzin",
+   "s": 0.24,
+   "e": 0.48
+  },
+  {
+   "w": "ci",
+   "s": 0.52,
+   "e": 0.56
+  },
+  {
+   "w": "zostało?",
+   "s": 0.64,
+   "e": 1.52
+  },
+  {
+   "w": "Dotknij",
+   "s": 1.64,
+   "e": 1.92
+  },
+  {
+   "w": "zdjęcia",
+   "s": 2.0,
+   "e": 2.32
+  },
+  {
+   "w": "profilowego,",
+   "s": 2.48,
+   "e": 3.2
+  },
+  {
+   "w": "wejdź",
+   "s": 3.28,
+   "e": 3.52
+  },
+  {
+   "w": "w",
+   "s": 3.56,
+   "e": 3.6
+  },
+  {
+   "w": "Twoje",
+   "s": 3.68,
+   "e": 3.92
+  },
+  {
+   "w": "Premium",
+   "s": 4.16,
+   "e": 4.4
+  },
+  {
+   "w": "i",
+   "s": 4.44,
+   "e": 4.48
+  },
+  {
+   "w": "wybierz",
+   "s": 4.56,
+   "e": 4.96
+  },
+  {
+   "w": "Czas",
+   "s": 5.04,
+   "e": 5.28
+  },
+  {
+   "w": "słuchania",
+   "s": 5.36,
+   "e": 5.76
+  },
+  {
+   "w": "audiobooków.",
+   "s": 5.84,
+   "e": 6.84
+  },
+  {
+   "w": "Tam",
+   "s": 6.88,
+   "e": 7.12
+  },
+  {
+   "w": "kupisz",
+   "s": 7.2,
+   "e": 7.44
+  },
+  {
+   "w": "też",
+   "s": 7.48,
+   "e": 7.6
+  },
+  {
+   "w": "doładowanie.",
+   "s": 7.64,
+   "e": 8.64
+  }
+ ],
+ "speechEnd": 8.312
+}

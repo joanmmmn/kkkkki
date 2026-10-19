@@ -1,0 +1,98 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.spotify.com/pl/audiobooks/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    700,
+    380
+   ],
+   "dur": 1400
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "scroll"
+  },
+  {
+   "scroll": 640,
+   "dur": 2600
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "cols"
+  },
+  {
+   "move": [
+    960,
+    520
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "move": [
+    1340,
+    520
+   ],
+   "dur": 800
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

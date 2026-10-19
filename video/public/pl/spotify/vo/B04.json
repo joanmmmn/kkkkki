@@ -1,0 +1,199 @@
+{
+ "id": "B04",
+ "hash": "08457d77e5c9",
+ "text": "Rezygnujesz na stronie konta: Zarządzaj swoim planem, a potem Anuluj subskrypcję. Premium działa do końca okresu, ale w okresie próbnym od razu wracasz do wersji darmowej – więc anuluj pod koniec próby, przed płatnością. Audiobooki+ wyłączysz osobno.",
+ "duration": 15.68,
+ "words": [
+  {
+   "w": "Rezygnujesz",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "na",
+   "s": 0.64,
+   "e": 0.72
+  },
+  {
+   "w": "stronie",
+   "s": 0.8,
+   "e": 1.04
+  },
+  {
+   "w": "konta:",
+   "s": 1.12,
+   "e": 1.8
+  },
+  {
+   "w": "Zarządzaj",
+   "s": 1.84,
+   "e": 2.24
+  },
+  {
+   "w": "swoim",
+   "s": 2.32,
+   "e": 2.64
+  },
+  {
+   "w": "planem,",
+   "s": 2.76,
+   "e": 3.16
+  },
+  {
+   "w": "a",
+   "s": 3.2,
+   "e": 3.28
+  },
+  {
+   "w": "potem",
+   "s": 3.36,
+   "e": 3.76
+  },
+  {
+   "w": "Anuluj",
+   "s": 3.84,
+   "e": 4.16
+  },
+  {
+   "w": "subskrypcję.",
+   "s": 4.24,
+   "e": 5.493
+  },
+  {
+   "w": "Premium",
+   "s": 5.627,
+   "e": 5.76
+  },
+  {
+   "w": "działa",
+   "s": 5.84,
+   "e": 6.0
+  },
+  {
+   "w": "do",
+   "s": 6.08,
+   "e": 6.16
+  },
+  {
+   "w": "końca",
+   "s": 6.28,
+   "e": 6.48
+  },
+  {
+   "w": "okresu,",
+   "s": 6.56,
+   "e": 7.16
+  },
+  {
+   "w": "ale",
+   "s": 7.2,
+   "e": 7.28
+  },
+  {
+   "w": "w",
+   "s": 7.36,
+   "e": 7.387
+  },
+  {
+   "w": "okresie",
+   "s": 7.413,
+   "e": 7.76
+  },
+  {
+   "w": "próbnym",
+   "s": 7.8,
+   "e": 8.32
+  },
+  {
+   "w": "od",
+   "s": 8.4,
+   "e": 8.56
+  },
+  {
+   "w": "razu",
+   "s": 8.68,
+   "e": 8.84
+  },
+  {
+   "w": "wracasz",
+   "s": 8.88,
+   "e": 9.2
+  },
+  {
+   "w": "do",
+   "s": 9.24,
+   "e": 9.28
+  },
+  {
+   "w": "wersji",
+   "s": 9.36,
+   "e": 9.6
+  },
+  {
+   "w": "darmowej",
+   "s": 9.64,
+   "e": 10.32
+  },
+  {
+   "w": "–",
+   "s": 10.347,
+   "e": 10.373
+  },
+  {
+   "w": "więc",
+   "s": 10.4,
+   "e": 10.68
+  },
+  {
+   "w": "anuluj",
+   "s": 10.72,
+   "e": 11.12
+  },
+  {
+   "w": "pod",
+   "s": 11.2,
+   "e": 11.28
+  },
+  {
+   "w": "koniec",
+   "s": 11.32,
+   "e": 11.6
+  },
+  {
+   "w": "próby,",
+   "s": 11.64,
+   "e": 12.08
+  },
+  {
+   "w": "przed",
+   "s": 12.16,
+   "e": 12.24
+  },
+  {
+   "w": "płatnością.",
+   "s": 12.36,
+   "e": 13.32
+  },
+  {
+   "w": "Audiobooki",
+   "s": 13.36,
+   "e": 13.84
+  },
+  {
+   "w": "Plus",
+   "s": 14.04,
+   "e": 14.24
+  },
+  {
+   "w": "wyłączysz",
+   "s": 14.32,
+   "e": 14.72
+  },
+  {
+   "w": "osobno.",
+   "s": 14.8,
+   "e": 15.68
+  }
+ ],
+ "speechEnd": 15.263
+}

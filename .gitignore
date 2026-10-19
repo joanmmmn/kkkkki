@@ -40,3 +40,6 @@ web/audiobooks-com-resena/preview-movil/
 web/mejores-plataformas/dist/
 web/mejores-plataformas/preview/
 web/mejores-plataformas/preview-movil/
+
+# SonorBooks Polska: restos de las grabaciones
+video/public/pl/**/concat.txt

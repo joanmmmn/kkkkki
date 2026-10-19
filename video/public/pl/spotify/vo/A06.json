@@ -1,0 +1,144 @@
+{
+ "id": "A06",
+ "hash": "bbaae4536f60",
+ "text": "W aplikacji audiobooki są w zakładce Wyszukaj. Tytuły z abonamentu mają oznaczenie „Dostępny w Premium”, karta pokazuje czas trwania i ocenę, a fragment każdego posłuchasz za darmo.",
+ "duration": 11.2,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "aplikacji",
+   "s": 0.08,
+   "e": 0.56
+  },
+  {
+   "w": "audiobooki",
+   "s": 0.64,
+   "e": 1.28
+  },
+  {
+   "w": "są",
+   "s": 1.36,
+   "e": 1.52
+  },
+  {
+   "w": "w",
+   "s": 1.547,
+   "e": 1.573
+  },
+  {
+   "w": "zakładce",
+   "s": 1.6,
+   "e": 2.24
+  },
+  {
+   "w": "Wyszukaj.",
+   "s": 2.32,
+   "e": 3.147
+  },
+  {
+   "w": "Tytuły",
+   "s": 3.173,
+   "e": 3.44
+  },
+  {
+   "w": "z",
+   "s": 3.48,
+   "e": 3.52
+  },
+  {
+   "w": "abonamentu",
+   "s": 3.56,
+   "e": 4.08
+  },
+  {
+   "w": "mają",
+   "s": 4.12,
+   "e": 4.32
+  },
+  {
+   "w": "oznaczenie",
+   "s": 4.4,
+   "e": 4.96
+  },
+  {
+   "w": "„Dostępny",
+   "s": 4.987,
+   "e": 5.52
+  },
+  {
+   "w": "w",
+   "s": 5.56,
+   "e": 5.6
+  },
+  {
+   "w": "Premium”,",
+   "s": 5.68,
+   "e": 6.32
+  },
+  {
+   "w": "karta",
+   "s": 6.36,
+   "e": 6.64
+  },
+  {
+   "w": "pokazuje",
+   "s": 6.72,
+   "e": 7.2
+  },
+  {
+   "w": "czas",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "trwania",
+   "s": 7.44,
+   "e": 7.92
+  },
+  {
+   "w": "i",
+   "s": 7.96,
+   "e": 8.0
+  },
+  {
+   "w": "ocenę,",
+   "s": 8.08,
+   "e": 8.693
+  },
+  {
+   "w": "a",
+   "s": 8.747,
+   "e": 8.8
+  },
+  {
+   "w": "fragment",
+   "s": 9.0,
+   "e": 9.2
+  },
+  {
+   "w": "każdego",
+   "s": 9.28,
+   "e": 9.84
+  },
+  {
+   "w": "posłuchasz",
+   "s": 9.92,
+   "e": 10.24
+  },
+  {
+   "w": "za",
+   "s": 10.32,
+   "e": 10.4
+  },
+  {
+   "w": "darmo.",
+   "s": 10.44,
+   "e": 11.2
+  }
+ ],
+ "speechEnd": 10.814
+}

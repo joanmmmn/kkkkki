@@ -1,0 +1,76 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://sonorbooks.pl/platformy/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "clickText": "Rozumiem",
+   "dur": 10
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "window.scrollTo(0, 0)"
+  },
+  {
+   "move": [
+    960,
+    600
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "scroll1"
+  },
+  {
+   "scroll": 900,
+   "dur": 2600
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "scroll2"
+  },
+  {
+   "scroll": 900,
+   "dur": 2600
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "scroll3"
+  },
+  {
+   "scroll": 900,
+   "dur": 2600
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster"
+}

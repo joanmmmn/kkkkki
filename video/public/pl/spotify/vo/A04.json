@@ -1,0 +1,174 @@
+{
+ "id": "A04",
+ "hash": "84f715ca7d21",
+ "text": "Godziny liczą się przy normalnej prędkości: 5-godzinny audiobook słuchany 2 razy szybciej i tak zabierze 5 godzin, a ponowne słuchanie też się liczy. Pula odnawia się w dniu rozliczenia, a niewykorzystane godziny przepadają.",
+ "duration": 13.36,
+ "words": [
+  {
+   "w": "Godziny",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "liczą",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "się",
+   "s": 0.8,
+   "e": 0.92
+  },
+  {
+   "w": "przy",
+   "s": 0.96,
+   "e": 1.04
+  },
+  {
+   "w": "normalnej",
+   "s": 1.12,
+   "e": 1.6
+  },
+  {
+   "w": "prędkości:",
+   "s": 1.64,
+   "e": 2.613
+  },
+  {
+   "w": "5-godzinny",
+   "s": 2.667,
+   "e": 3.2
+  },
+  {
+   "w": "audiobook",
+   "s": 3.28,
+   "e": 3.76
+  },
+  {
+   "w": "słuchany",
+   "s": 3.88,
+   "e": 4.16
+  },
+  {
+   "w": "2",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "razy",
+   "s": 4.4,
+   "e": 4.64
+  },
+  {
+   "w": "szybciej",
+   "s": 4.693,
+   "e": 5.12
+  },
+  {
+   "w": "i",
+   "s": 5.2,
+   "e": 5.28
+  },
+  {
+   "w": "tak",
+   "s": 5.36,
+   "e": 5.52
+  },
+  {
+   "w": "zabierze",
+   "s": 5.6,
+   "e": 6.0
+  },
+  {
+   "w": "5",
+   "s": 6.08,
+   "e": 6.24
+  },
+  {
+   "w": "godzin,",
+   "s": 6.32,
+   "e": 6.907
+  },
+  {
+   "w": "a",
+   "s": 6.933,
+   "e": 6.96
+  },
+  {
+   "w": "ponowne",
+   "s": 7.04,
+   "e": 7.36
+  },
+  {
+   "w": "słuchanie",
+   "s": 7.48,
+   "e": 8.0
+  },
+  {
+   "w": "też",
+   "s": 8.08,
+   "e": 8.187
+  },
+  {
+   "w": "się",
+   "s": 8.213,
+   "e": 8.28
+  },
+  {
+   "w": "liczy.",
+   "s": 8.32,
+   "e": 9.067
+  },
+  {
+   "w": "Pula",
+   "s": 9.093,
+   "e": 9.36
+  },
+  {
+   "w": "odnawia",
+   "s": 9.44,
+   "e": 9.76
+  },
+  {
+   "w": "się",
+   "s": 9.8,
+   "e": 9.88
+  },
+  {
+   "w": "w",
+   "s": 9.92,
+   "e": 9.96
+  },
+  {
+   "w": "dniu",
+   "s": 10.0,
+   "e": 10.2
+  },
+  {
+   "w": "rozliczenia,",
+   "s": 10.24,
+   "e": 11.0
+  },
+  {
+   "w": "a",
+   "s": 11.04,
+   "e": 11.12
+  },
+  {
+   "w": "niewykorzystane",
+   "s": 11.16,
+   "e": 11.84
+  },
+  {
+   "w": "godziny",
+   "s": 11.92,
+   "e": 12.32
+  },
+  {
+   "w": "przepadają.",
+   "s": 12.36,
+   "e": 13.36
+  }
+ ],
+ "speechEnd": 13.016
+}

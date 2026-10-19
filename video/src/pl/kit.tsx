@@ -27,8 +27,10 @@ export const useAt = (c: SceneCtx) => (cue: Cue) => cueFrame(c, cue);
 // ——— Grabaciones ———
 type RecInfo = { duration: number; viewport: [number, number]; cursor?: { t: number; x: number; y: number; down?: boolean }[] };
 const REC = recIndex as Record<string, RecInfo>;
-export const recInfo = (slug: string, clip: string): RecInfo | undefined => REC[`${slug}/${clip}`];
-export const recSrc = (slug: string, clip: string) => `pl/${slug}/rec/${clip}/video.mp4`;
+// «@common/<toma>»: tomas compartidas por todas las piezas (public/pl/common/rec/), como las de sonorbooks.pl.
+const split = (slug: string, clip: string): [string, string] => (clip.startsWith('@common/') ? ['common', clip.slice(8)] : [slug, clip]);
+export const recInfo = (slug: string, clip: string): RecInfo | undefined => { const [a, b] = split(slug, clip); return REC[`${a}/${b}`]; };
+export const recSrc = (slug: string, clip: string) => { const [a, b] = split(slug, clip); return `pl/${a}/rec/${b}/video.mp4`; };
 
 // ——— Iconos ———
 const S: React.FC<{ size: number; children: React.ReactNode }> = ({ size, children }) => (

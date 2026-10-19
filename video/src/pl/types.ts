@@ -38,12 +38,16 @@ type Base = {
   lead?: number; // segundos antes de que empiece la voz
   title?: string; // título corto de la escena (arriba)
   kicker?: string;
+  // Audio real que suena en la escena (p. ej. un fragmento de un audiolibro de dominio público), desde `lead`.
+  // La escena dura al menos `dur` segundos aunque no tenga locución (si no hay locución, deja su `text` vacío en vo.json).
+  audio?: { src: string; dur: number; volume?: number };
 };
 
 export type HookScene = Base & { kind: 'hook'; title: string; hi?: string[]; rec?: RecRef; cuts?: Cut[]; promises: TagSpec[]; badge?: string };
 export type IntroScene = Base & {
   kind: 'intro'; facts: TagSpec[]; big?: { at: Cue; value: number; decimals?: number; prefix?: string; suffix?: string; label: string }; rec?: RecRef; cuts?: Cut[];
 };
+// features: «!texto» se pinta con una cruz (lo que el plan no incluye).
 export type PlanSpec = { at: Cue; name: string; price: string; period: string; note?: string; features: string[]; best?: boolean; badge?: string };
 export type PlansScene = Base & { kind: 'plans'; plans: PlanSpec[]; footer?: TagSpec[] };
 export type RecScene = Base & { kind: 'rec'; rec: RecRef; cuts?: Cut[]; marks?: MarkSpec[]; zooms?: ZoomSpec[]; tags?: TagSpec[]; side?: 'left' | 'right' };
@@ -51,7 +55,7 @@ export type FeaturesScene = Base & { kind: 'features'; items: TagSpec[]; cols?: 
 export type StatScene = Base & { kind: 'stat'; at: Cue; value: string; unit?: string; label: string; tags?: TagSpec[]; count?: { from: number; to: number; decimals?: number } };
 export type DevicesScene = Base & { kind: 'devices'; items: (TagSpec & { ok: boolean })[] };
 export type StoreSpec = { at: Cue; store: 'google' | 'apple'; rating: number; count: string };
-export type RatingsScene = Base & { kind: 'ratings'; stores: StoreSpec[]; likes: TagSpec[]; dislikes: TagSpec[] };
+export type RatingsScene = Base & { kind: 'ratings'; stores: StoreSpec[]; likes: TagSpec[]; dislikes: TagSpec[]; notes?: TagSpec[] };
 export type ProsConsScene = Base & { kind: 'proscons'; pros: TagSpec[]; cons: TagSpec[] };
 export type VerdictScene = Base & { kind: 'verdict'; question?: string; yes: TagSpec[]; no: TagSpec[]; alts?: { at: Cue; names: string[]; label?: string } };
 export type StepSpec = { at: Cue; title: string; sub?: string; rec?: RecRef };

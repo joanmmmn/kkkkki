@@ -41,8 +41,9 @@ def parse_spec(slug):
         bump = re.search(r"bump:\s*'([^']*)'", line)
         extra = re.search(r"extra:\s*(\d+)", line)
         lead = re.search(r"lead:\s*([\d.]+)", line)
+        audio = re.search(r"audio:\s*\{[^}]*dur:\s*([\d.]+)", line)
         scenes.append({'id': m.group(1), 'kind': kind.group(1) if kind else 'rec', 'bump': bump.group(1) if bump else None,
-                       'extra': int(extra.group(1)) if extra else None, 'lead': float(lead.group(1)) if lead else None})
+                       'extra': int(extra.group(1)) if extra else None, 'lead': float(lead.group(1)) if lead else None, 'audio': float(audio.group(1)) if audio else 0.0})
     chapters = re.findall(r"\{\s*label:\s*'([^']*)',\s*from:\s*'([A-Z]\d+[A-Z]?)'\s*\}", src)
     return scenes, chapters
 
@@ -59,12 +60,15 @@ def load_vo(slug):
 def timeline(slug):
     scenes, chapters = parse_spec(slug)
     vos = load_vo(slug)
+    for s in scenes:  # escenas sin locución (solo audio real)
+        vos.setdefault(s['id'], {'text': '', 'say': '', 'vo': None})
     t = 0
     out = []
     for i, s in enumerate(scenes):
         lead = sec(s['lead'] if s['lead'] is not None else (0.52 if s['bump'] else 0.3 if i == 0 else 0.14))
         v = vos[s['id']]['vo']
         speech = math.ceil(v.get('speechEnd', v['duration']) * FPS) if v else sec(len(vos[s['id']]['text']) / CPS)
+        speech = max(speech, math.ceil(s['audio'] * FPS))
         extra = s['extra'] if s['extra'] is not None else (OUTRO_HOLD if s['kind'] == 'outro' else 22 if s['kind'] in ('plans', 'proscons', 'verdict') else 14)
         dur = lead + speech + sec(0.32) + extra
         out.append({**s, 'start': t, 'lead': lead, 'dur': dur, 'speech': speech})

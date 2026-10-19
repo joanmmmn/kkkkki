@@ -160,10 +160,12 @@ async function smoothScroll(px, dur = 1500, sel) {
     const el = sel ? document.querySelector(sel) : null;
     const getY = () => (el ? el.scrollTop : window.scrollY);
     const setY = (y) => (el ? (el.scrollTop = y) : window.scrollTo(0, y));
-    const start = getY(), t0 = performance.now();
+    // Reloj de pared (Date.now): el sello de tiempo de requestAnimationFrame va más lento con Animation.setPlaybackRate
+    // (cámara lenta) y en páginas pesadas el desplazamiento duraba varias veces lo previsto.
+    const start = getY(), t0 = Date.now();
     const e = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-    const step = (now) => {
-      const p = Math.min(1, (now - t0) / dur);
+    const step = () => {
+      const p = Math.min(1, (Date.now() - t0) / dur);
       setY(start + px * e(p));
       if (p < 1) requestAnimationFrame(step); else res();
     };
@@ -185,6 +187,17 @@ for (const s of script.steps) {
     if (s.type) { for (const ch of s.type) { await page.keyboard.type(ch); logCursor(); await page.waitForTimeout((s.delay ?? 85) * SLOW); } }
     if (s.press) await page.keyboard.press(s.press);
     if (s.scroll) await smoothScroll(s.scroll, s.dur, s.sel ?? script.scrollSel);
+    if (s.nocookies) {
+      // Avisos de cookies (pl): pulsa el botón habitual o, si no, quita las capas conocidas (OneTrust, Cookiebot, Didomi…).
+      for (const l of ['Rozumiem', 'Akceptuję', 'Akceptuj', 'Zaakceptuj wszystkie', 'Akceptuj wszystkie', 'Zgadzam się', 'Odrzuć', 'Odrzuć wszystkie', 'Odrzuć wszystko', 'Tylko niezbędne', 'Accept all', 'Reject all']) {
+        const b = page.getByRole('button', { name: l, exact: true }).first();
+        if (await b.isVisible().catch(() => false)) { await b.click().catch(() => {}); await page.waitForTimeout(600); break; }
+      }
+      await page.evaluate(() => {
+        for (const q of ['#onetrust-consent-sdk', '#CybotCookiebotDialog', '#didomi-host', '#usercentrics-root', '#qc-cmp2-container', '.fc-consent-root', '.cc-window']) document.querySelectorAll(q).forEach((e) => e.remove());
+        document.documentElement.style.overflow = ''; document.body.style.overflow = '';
+      }).catch(() => {});
+    }
     if (s.eval) await page.evaluate(s.eval);
     if (s.mark) marks[s.mark] = +tRel().toFixed(3);
     if (s.wait) {
@@ -212,7 +225,7 @@ if (frames.length) {
   fs.writeFileSync(path.join(out, 'concat.txt'), lines.join('\n'));
   execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(out, 'concat.txt'),
     '-vf', `fps=50,scale=${vw * dpr}:${vh * dpr}:flags=lanczos,format=yuv420p`,
-    '-c:v', 'libx264', '-preset', 'slow', '-crf', String(script.crf || 14), '-movflags', '+faststart', path.join(out, 'video.mp4')]);
+    '-c:v', 'libx264', '-preset', script.preset || 'slow', '-crf', String(script.crf || 14), '-movflags', '+faststart', path.join(out, 'video.mp4')]);
   const firstT = frames[0].t;
   fs.writeFileSync(path.join(out, 'meta.json'), JSON.stringify({
     viewport: [vw, vh], dpr, frames: frames.length, duration: +(total - firstT).toFixed(3), offset: +firstT.toFixed(3), marks: Object.fromEntries(Object.entries(marks).map(([k, v]) => [k, +(v - firstT).toFixed(3)])),

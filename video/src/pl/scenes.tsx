@@ -121,11 +121,14 @@ const Plans: React.FC<P<PlansScene>> = ({ c, s }) => {
                 </div>
                 {p.note && <div style={{ fontFamily: font.sans, fontSize: 24, color: color.muted, marginTop: 4 }}>{p.note}</div>}
                 <div style={{ height: 1, background: color.line, margin: '22px 0 18px' }} />
-                {p.features.map((f, k) => (
-                  <div key={k} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, fontFamily: font.sans, fontSize: n >= 4 ? 25 : 27, lineHeight: 1.25, color: color.ink, marginTop: k ? 12 : 0 }}>
-                    <span style={{ flexShrink: 0, marginTop: 2 }}><CheckIcon size={28} c={color.green} /></span>{f}
-                  </div>
-                ))}
+                {p.features.map((f, k) => {
+                  const neg = f.startsWith('!');
+                  return (
+                    <div key={k} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, fontFamily: font.sans, fontSize: n >= 4 ? 25 : 27, lineHeight: 1.25, color: neg ? color.ink2 : color.ink, marginTop: k ? 12 : 0 }}>
+                      <span style={{ flexShrink: 0, marginTop: 2 }}>{neg ? <CrossIcon size={28} /> : <CheckIcon size={28} c={color.green} />}</span>{neg ? f.slice(1) : f}
+                    </div>
+                  );
+                })}
                 <Sfx name="ui_pop" at={at} volume={0.7} />
               </PopCard>
             );
@@ -277,6 +280,8 @@ const Ratings: React.FC<P<RatingsScene>> = ({ c, s }) => {
           {s.likes.map((t, i) => <Tag key={`l${i}`} c={c} t={{ ...t, tone: 'good' }} size={32} />)}
           {s.dislikes.length > 0 && <FadeLabel at={cueFrame(c, s.dislikes[0].at) - 4} text="Krytykują" c={color.red} style={{ marginTop: 22 }} />}
           {s.dislikes.map((t, i) => <Tag key={`d${i}`} c={c} t={{ ...t, tone: 'bad' }} size={32} />)}
+          {s.notes && s.notes.length > 0 && <FadeLabel at={cueFrame(c, s.notes[0].at) - 4} text="Uwaga" c={color.ink2} style={{ marginTop: s.likes.length || s.dislikes.length ? 22 : 0 }} />}
+          {s.notes?.map((t, i) => <Tag key={`n${i}`} c={c} t={t} size={32} />)}
         </div>
       </AbsoluteFill>
     </MpStage>

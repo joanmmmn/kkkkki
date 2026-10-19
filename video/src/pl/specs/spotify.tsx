@@ -1,0 +1,88 @@
+// Audiobooki w Spotify (Polska, desde el 15/10/2026). Investigación y guion: research/pl/spotify/.
+// Los «cues» son palabras de la locución tal como se dice (`say` de vo.json): «Indiwidżual», «Femili», «Plus»…
+import type { PLPiece } from './index';
+
+export const piece: PLPiece = {
+  spec: {
+    slug: 'spotify', name: 'Spotify', domain: 'spotify.com/pl', color: '#1ED760', deep: '#11843F', soft: '#E2F8EA',
+    logo: 'pl/spotify/img/logo.svg', logoWhite: 'pl/spotify/img/logo_white.svg', logoRatio: 225.25 / 823.46, tileBg: '#121212', tileLogoWhite: true,
+    kicker: 'Audiobooki w Spotify', music: 'pl/spotify/music/bed.mp3',
+    scenes: [
+      { id: 'A01', kind: 'hook', title: 'Audiobooki\nw Spotify:\nczy warto?', hi: ['Spotify:', 'Spotify'], rec: { clip: 'hero', start: 0.4 }, promises: [{ at: 'dobre', label: 'Co jest dobre', tone: 'good' }, { at: 'slabe', label: 'Co słabe', tone: 'bad' }, { at: 'zaczac', label: 'Jak zacząć', icon: 'play' }] },
+      { id: 'A02', kind: 'intro', bump: 'Co dostajesz?', rec: { clip: 'hero', start: 5.6 }, facts: [{ at: 'pietnastego', label: 'W Polsce od 15.10.2026', icon: 'calendar' }, { at: 'aplikacji', label: 'Muzyka, podcasty i audiobooki', sub: 'w jednej aplikacji', icon: 'headphones' }, { at: 'dwanascie', label: '12 h miesięcznie w Premium', icon: 'clock' }, { at: 'Legimi', label: 'Polski katalog od Legimi', icon: 'book' }], big: { at: 'trzysta', value: 350000, suffix: '+', label: 'tytułów, w tym 20 000+ po polsku' } },
+      { id: 'A03', kind: 'plans', bump: 'Cennik', title: 'Kto ma godziny?', plans: [
+        { at: 'Indiwi', name: 'Individual', price: '26,99 zł', period: '/ mies.', features: ['12 h audiobooków'], best: true, badge: 'Godziny w cenie' },
+        { at: 'Duo', name: 'Duo', price: '36,99 zł', period: '/ mies.', features: ['12 h tylko dla właściciela'] },
+        { at: 'Femili', name: 'Family', price: '45,99 zł', period: '/ mies.', features: ['12 h tylko dla właściciela'] },
+        { at: 'Student', name: 'Student', price: '14,49 zł', period: '/ mies.', features: ['!Bez godzin audiobooków'] },
+      ], footer: [{ at: 'umowy', label: 'Bez umowy', icon: 'lock' }] },
+      { id: 'A04', kind: 'rec', bump: 'Jak liczą się godziny', kicker: 'Pomoc Spotify', title: 'Godzina to godzina', rec: { clip: 'pomoc_godziny', start: 6.0, url: 'support.spotify.com/pl' },
+        marks: [{ at: 'normalnej', x: 532, y: 236, w: 472, h: 82 }],
+        tags: [{ at: 'normalnej', label: 'Liczy się normalna prędkość', icon: 'speed' }, { at: 'szybciej', label: '2× szybciej = tyle samo godzin', icon: 'clock' }, { at: 'ponowne', label: 'Ponowne słuchanie też', icon: 'sync' }, { at: 'przepadaja', label: 'Niewykorzystane przepadają', tone: 'bad' }] },
+      { id: 'A05', kind: 'rec', kicker: 'Więcej godzin', title: 'Audiobooki+', rec: { clip: 'plus', start: 0.6 },
+        tags: [{ at: 'dziesieciu', label: 'Przeciętny audiobook ≈ 10 h', icon: 'book' }, { at: 'Plus', label: 'Audiobooki+: 15 h / mies.', icon: 'clock' }, { at: 'siedemnascie', label: '17,99 zł miesięcznie', icon: 'coin' }, { at: 'pierwszym', label: 'Pierwszy miesiąc za darmo', icon: 'gift' }, { at: 'doladowania', label: 'Doładowania ważne rok', icon: 'calendar' }] },
+      { id: 'A06', kind: 'features', bump: 'Jak to działa', kicker: 'W aplikacji', title: 'Gdzie są audiobooki?', items: [
+        { at: 'Wyszukaj', label: 'Zakładka „Wyszukaj”', icon: 'search' }, { at: 'Dostepny', label: '„Dostępny w Premium”', sub: 'tytuły z abonamentu', icon: 'check' },
+        { at: 'trwania', label: 'Czas trwania i ocena', icon: 'clock' }, { at: 'fragment', label: 'Darmowy fragment', sub: 'każdego audiobooka', icon: 'play' },
+      ] },
+      { id: 'A07', kind: 'rec', kicker: 'Poza abonamentem', title: 'Zakup osobno', rec: { clip: 'pomoc_odblokuj', start: 0.6, url: 'support.spotify.com/pl' },
+        marks: [{ at: 'zjada', x: 532, y: 232, w: 472, h: 82 }],
+        tags: [{ at: 'osobno', label: 'Kupisz pojedynczy tytuł', icon: 'coin' }, { at: 'przegladarce', label: 'Tylko w przeglądarce', icon: 'globe' }, { at: 'zjada', label: 'Nie zużywa godzin', tone: 'good' }, { at: 'Harda', label: '„Harda” · E. Cherezińska', icon: 'book' }, { at: 'Prawde', label: '„Prawda zapisana w popiołach” · J. Jax', icon: 'book' }] },
+      { id: 'A08', kind: 'features', kicker: 'Odtwarzacz', title: 'Co potrafi?', cols: 3, items: [
+        { at: 'predkosc', label: 'Prędkość', icon: 'speed' }, { at: 'pietnascie', label: '15 sekund', sub: 'w przód i w tył', icon: 'sync' },
+        { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' }, { at: 'offline', label: 'Offline', icon: 'download' },
+        { at: 'Dopasowanie', label: 'Dopasowanie strony', sub: 'zeskanuj stronę albo ISBN', icon: 'book' },
+      ] },
+      { id: 'A09', kind: 'devices', items: [
+        { at: 'telefonie', label: 'Telefon', icon: 'phone', ok: true }, { at: 'tablecie', label: 'Tablet', icon: 'tablet', ok: true },
+        { at: 'komputerze', label: 'Komputer', icon: 'laptop', ok: true }, { at: 'przegladarce', label: 'Przeglądarka', icon: 'globe', ok: true },
+        { at: 'zegarku', label: 'Apple Watch', icon: 'watch', ok: true }, { at: 'aucie', label: 'CarPlay i Android Auto', icon: 'car', ok: true },
+      ] },
+      { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'Storze', store: 'apple', rating: 4.8, count: '1,5 mln ocen' }, { at: 'Plej', store: 'google', rating: 4.3, count: '36,5 mln opinii' }],
+        likes: [], dislikes: [], notes: [{ at: 'calej', label: 'To oceny całej aplikacji', sub: 'razem z muzyką', icon: 'music' }, { at: 'samych', label: 'O audiobookach: prawie brak opinii', sub: 'w Polsce dopiero od 15.10', icon: 'calendar' }] },
+      { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Audiobooki w Spotify', pros: [
+        { at: 'cenie', label: 'Godziny w cenie Premium' }, { at: 'polskich', label: '20 000+ tytułów po polsku' }, { at: 'aplikacja', label: 'Jedna aplikacja, też na komputerze' },
+      ], cons: [
+        { at: 'tylko', label: 'Tylko 12 h, które przepadają' }, { at: ['Duo', 0], label: 'Duo i Family: tylko właściciel' }, { at: 'Student', label: 'Student bez godzin' }, { at: 'dokupowanie', label: 'Dokupowanie kosztuje' },
+      ] },
+      { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Audiobooki w Spotify:\nczy warto?', yes: [
+        { at: 'bonus', label: 'Masz już Premium Individual', sub: 'to bonus na ok. 1 książkę w miesiącu' },
+      ], no: [
+        { at: 'duzo', label: 'Słuchasz dużo', sub: 'Premium + Audiobooki+ = 44,98 zł za 27 h' },
+      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł bez limitu godzin'], label: 'Dla porównania:' } },
+      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Masz Premium?', title: 'Nic nie musisz robić', rec: { clip: 'dostep', start: 0.4 }, steps: [
+        { at: 'Wyszukaj', title: 'Wejdź w „Wyszukaj”' }, { at: 'Audiobooki', title: 'Wybierz „Audiobooki”' },
+      ] },
+      { id: 'B02', kind: 'stat', kicker: 'Nie masz Premium?', at: 'zero', value: '0 zł', label: 'za pierwszy miesiąc Premium Individual (jeśli nie miałeś Premium)', tags: [
+        { at: 'Potem', label: 'Potem 26,99 zł / mies.', icon: 'calendar' }, { at: 'wprost', label: '12 h w okresie próbnym? Spotify tego nie precyzuje', tone: 'bad' },
+      ] },
+      { id: 'B03', kind: 'steps', kicker: 'Ile godzin zostało?', title: 'Sprawdź w aplikacji', rec: { clip: 'pomoc_doladowania', start: 6.2, url: 'support.spotify.com/pl' }, steps: [
+        { at: 'zdjecia', title: 'Zdjęcie profilowe' }, { at: 'Twoje', title: 'Twoje Premium' }, { at: 'Czas', title: 'Czas słuchania audiobooków', sub: 'tu kupisz też doładowanie' },
+      ] },
+      { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'pomoc_anuluj', start: 0.4, url: 'support.spotify.com/pl' }, steps: [
+        { at: 'Zarzadzaj', title: 'Zarządzaj swoim planem' }, { at: 'Anuluj', title: 'Anuluj subskrypcję' },
+        { at: 'okresie', title: 'W okresie próbnym: od razu wersja darmowa', sub: 'anuluj pod koniec próby, przed płatnością' },
+        { at: 'Plus', title: 'Audiobooki+ wyłączasz osobno' },
+      ] },
+      { id: 'B06', kind: 'outro', rec: { clip: '@common/sb_search', start: 0.2, url: 'sonorbooks.pl' }, cta: 'Porównaj, gdzie\nposłuchasz taniej:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
+        tags: [{ at: 'Audiotece', label: 'Audioteka · Empik Go · Legimi · Audible', icon: 'search' }] },
+    ],
+    chapters: [
+      { label: 'Co dostajesz w Premium', from: 'A02' },
+      { label: 'Cennik: Individual, Duo, Family i Student', from: 'A03' },
+      { label: 'Jak liczą się godziny', from: 'A04' },
+      { label: 'Audiobooki+ i doładowania', from: 'A05' },
+      { label: 'Jak znaleźć audiobooki w aplikacji', from: 'A06' },
+      { label: 'Zakup pojedynczych tytułów', from: 'A07' },
+      { label: 'Funkcje odtwarzacza', from: 'A08' },
+      { label: 'Urządzenia', from: 'A09' },
+      { label: 'Opinie', from: 'A10' },
+      { label: 'Plusy i minusy', from: 'A11' },
+      { label: 'Werdykt: czy warto?', from: 'A12' },
+      { label: 'Jak zacząć', from: 'B01' },
+      { label: 'Ile godzin ci zostało', from: 'B03' },
+      { label: 'Jak zrezygnować', from: 'B04' },
+    ],
+  },
+  thumb: { line1: 'AUDIOBOOKI', line2: 'W SPOTIFY?', seal: { icon: 'clock', text: '12 godzin\nw Premium' }, label: { strong: 'Czy warto', rest: 'W 2026?' } },
+};

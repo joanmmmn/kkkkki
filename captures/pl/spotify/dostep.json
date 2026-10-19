@@ -1,0 +1,94 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.spotify.com/pl/audiobooks/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,2950)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "list"
+  },
+  {
+   "moveText": "Mam własny plan Premium",
+   "dur": 1000
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "own"
+  },
+  {
+   "scroll": 260,
+   "dur": 1400
+  },
+  {
+   "wait": 600
+  },
+  {
+   "moveText": "Korzystam z Premium Student",
+   "dur": 900
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "student"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

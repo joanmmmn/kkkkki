@@ -1,0 +1,119 @@
+{
+ "id": "B01",
+ "hash": "9a5c5d4f12ad",
+ "text": "Jak zacząć? Masz Premium Individual albo jesteś właścicielem planu Duo lub Family? Nic nie musisz robić: wejdź w Wyszukaj i wybierz Audiobooki.",
+ "duration": 9.44,
+ "words": [
+  {
+   "w": "Jak",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "zacząć?",
+   "s": 0.36,
+   "e": 1.2
+  },
+  {
+   "w": "Masz",
+   "s": 1.28,
+   "e": 1.44
+  },
+  {
+   "w": "Premium",
+   "s": 1.6,
+   "e": 1.76
+  },
+  {
+   "w": "Individual",
+   "s": 1.84,
+   "e": 2.56
+  },
+  {
+   "w": "albo",
+   "s": 2.64,
+   "e": 2.88
+  },
+  {
+   "w": "jesteś",
+   "s": 2.96,
+   "e": 3.16
+  },
+  {
+   "w": "właścicielem",
+   "s": 3.2,
+   "e": 3.76
+  },
+  {
+   "w": "planu",
+   "s": 3.88,
+   "e": 4.08
+  },
+  {
+   "w": "Duo",
+   "s": 4.16,
+   "e": 4.4
+  },
+  {
+   "w": "lub",
+   "s": 4.48,
+   "e": 4.64
+  },
+  {
+   "w": "Family?",
+   "s": 4.72,
+   "e": 5.56
+  },
+  {
+   "w": "Nic",
+   "s": 5.6,
+   "e": 5.76
+  },
+  {
+   "w": "nie",
+   "s": 5.8,
+   "e": 5.84
+  },
+  {
+   "w": "musisz",
+   "s": 5.92,
+   "e": 6.16
+  },
+  {
+   "w": "robić:",
+   "s": 6.24,
+   "e": 6.827
+  },
+  {
+   "w": "wejdź",
+   "s": 6.853,
+   "e": 7.04
+  },
+  {
+   "w": "w",
+   "s": 7.08,
+   "e": 7.12
+  },
+  {
+   "w": "Wyszukaj",
+   "s": 7.2,
+   "e": 7.76
+  },
+  {
+   "w": "i",
+   "s": 7.84,
+   "e": 7.88
+  },
+  {
+   "w": "wybierz",
+   "s": 7.92,
+   "e": 8.32
+  },
+  {
+   "w": "Audiobooki.",
+   "s": 8.4,
+   "e": 9.44
+  }
+ ],
+ "speechEnd": 9.056
+}

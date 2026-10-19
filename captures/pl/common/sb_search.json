@@ -1,0 +1,149 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://sonorbooks.pl/",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "clickText": "Rozumiem",
+   "dur": 10
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "window.scrollTo(0, 0)"
+  },
+  {
+   "move": [
+    1300,
+    700
+   ],
+   "dur": 10
+  },
+  {
+   "shot": "home_still"
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 700
+  },
+  {
+   "mark": "to_search"
+  },
+  {
+   "moveSel": "#home-query",
+   "dur": 900
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "typing"
+  },
+  {
+   "type": "Cień wiatru",
+   "delay": 110
+  },
+  {
+   "wait": 500
+  },
+  {
+   "mark": "enter"
+  },
+  {
+   "press": "Enter"
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "mark": "results"
+  },
+  {
+   "move": [
+    476,
+    650
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 500
+  },
+  {
+   "mark": "click_result"
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2800
+  },
+  {
+   "mark": "ficha"
+  },
+  {
+   "move": [
+    1275,
+    470
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "options"
+  },
+  {
+   "move": [
+    1180,
+    733
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    1325,
+    733
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    1468,
+    733
+   ],
+   "dur": 500
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster"
+}

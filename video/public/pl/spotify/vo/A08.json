@@ -1,0 +1,184 @@
+{
+ "id": "A08",
+ "hash": "811257f66ac1",
+ "text": "W odtwarzaczu zmienisz prędkość, przewiniesz o 15 sekund i ustawisz wyłącznik czasowy, a audiobooki pobierzesz offline. Jest też Dopasowanie strony: skanujesz stronę papierowej książki albo kod ISBN i słuchasz od tego miejsca.",
+ "duration": 15.04,
+ "words": [
+  {
+   "w": "W",
+   "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "odtwarzaczu",
+   "s": 0.08,
+   "e": 0.64
+  },
+  {
+   "w": "zmienisz",
+   "s": 0.72,
+   "e": 1.12
+  },
+  {
+   "w": "prędkość,",
+   "s": 1.16,
+   "e": 1.84
+  },
+  {
+   "w": "przewiniesz",
+   "s": 1.92,
+   "e": 2.4
+  },
+  {
+   "w": "o",
+   "s": 2.44,
+   "e": 2.48
+  },
+  {
+   "w": "piętnaście",
+   "s": 2.56,
+   "e": 2.96
+  },
+  {
+   "w": "sekund",
+   "s": 3.04,
+   "e": 3.36
+  },
+  {
+   "w": "i",
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "ustawisz",
+   "s": 3.68,
+   "e": 4.16
+  },
+  {
+   "w": "wyłącznik",
+   "s": 4.24,
+   "e": 4.64
+  },
+  {
+   "w": "czasowy,",
+   "s": 4.72,
+   "e": 5.52
+  },
+  {
+   "w": "a",
+   "s": 5.56,
+   "e": 5.6
+  },
+  {
+   "w": "audiobooki",
+   "s": 5.68,
+   "e": 6.24
+  },
+  {
+   "w": "pobierzesz",
+   "s": 6.32,
+   "e": 6.72
+  },
+  {
+   "w": "offline.",
+   "s": 6.96,
+   "e": 7.44
+  },
+  {
+   "w": "Jest",
+   "s": 7.68,
+   "e": 7.84
+  },
+  {
+   "w": "też",
+   "s": 7.92,
+   "e": 8.16
+  },
+  {
+   "w": "Dopasowanie",
+   "s": 8.24,
+   "e": 8.8
+  },
+  {
+   "w": "strony:",
+   "s": 8.88,
+   "e": 9.68
+  },
+  {
+   "w": "skanujesz",
+   "s": 9.72,
+   "e": 10.16
+  },
+  {
+   "w": "stronę",
+   "s": 10.24,
+   "e": 10.48
+  },
+  {
+   "w": "papierowej",
+   "s": 10.52,
+   "e": 10.88
+  },
+  {
+   "w": "książki",
+   "s": 10.96,
+   "e": 11.44
+  },
+  {
+   "w": "albo",
+   "s": 11.52,
+   "e": 11.68
+  },
+  {
+   "w": "kod",
+   "s": 11.84,
+   "e": 12.08
+  },
+  {
+   "w": "i",
+   "s": 12.24,
+   "e": 12.32
+  },
+  {
+   "w": "es",
+   "s": 12.48,
+   "e": 12.72
+  },
+  {
+   "w": "be",
+   "s": 12.8,
+   "e": 12.88
+  },
+  {
+   "w": "en",
+   "s": 12.96,
+   "e": 13.12
+  },
+  {
+   "w": "i",
+   "s": 13.44,
+   "e": 13.52
+  },
+  {
+   "w": "słuchasz",
+   "s": 13.6,
+   "e": 14.0
+  },
+  {
+   "w": "od",
+   "s": 14.08,
+   "e": 14.16
+  },
+  {
+   "w": "tego",
+   "s": 14.24,
+   "e": 14.4
+  },
+  {
+   "w": "miejsca.",
+   "s": 14.48,
+   "e": 15.04
+  }
+ ],
+ "speechEnd": 14.957
+}
