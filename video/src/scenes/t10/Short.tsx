@@ -11,6 +11,7 @@ import { BEATS, DIORAMAS } from './Dioramas';
 import { F10 } from './Facts';
 import { NarrCard } from './Books';
 import { sec, speechFrames, wf, wfEnd } from './timeline';
+import { chunkWords, glueWords } from './subchunks';
 
 // Vertical 9:16 (1080×1920): el n.º 1, «Nie otwieraj oczu», con subtítulos grabados y las cifras en número.
 const SEQ: [string, number][] = [['Y01', 0.6], ['X102', 0.55], ['X103', 0.65], ['X104', 0.65], ['X105', 0.8], ['Y02', 0.7]];
@@ -27,8 +28,8 @@ const clock = { dur: T10_SHORT_TOTAL, part, at: (vo: string, w: string, n = 0) =
 const ramp = (frame: number, a: number, b: number, ez = easeInOut) => interpolate(frame, [a, b], [0, 1], { ...clamp, easing: ez });
 const sp = (frame: number, at: number, d = 15, s = 170) => spring({ frame: frame - at, fps: 50, config: { damping: d, stiffness: s } });
 
-// Subtítulos grabados: trozos de hasta ~26 caracteres repartidos por caracteres dentro de cada locución.
-const DIG: [string, string][] = [['Numer jeden', 'Numer 1'], ['trzydzieści kilometrów', '30 kilometrów'], ['Pozostałe dziewięć', 'Pozostałe 9']];
+// Subtítulos grabados: trozos de una línea (≤ 28 caracteres) repartidos por caracteres dentro de cada locución.
+const DIG: [string, string][] = [['Numer jeden', 'Numer 1'], ['trzydzieści kilometrów', '30 kilometrów']];
 const CUES = (() => {
   const out: { a: number; b: number; t: string }[] = [];
   for (const p of PARTS) {
@@ -36,29 +37,8 @@ const CUES = (() => {
     if (!v) continue;
     let text = v.text;
     for (const [x, y] of DIG) text = text.replace(x, y);
-    // Norma tipográfica polaca (como tools/t10_meta.py): una palabra de una letra va pegada a la siguiente, la cifra a su palabra.
-    const raw = text.split(' ');
-    const words: string[] = [];
-    for (const w of raw) {
-      const prev = words[words.length - 1];
-      const last = prev?.split('\u00a0').pop() ?? '';
-      if (prev && ((last.replace(/[„”"«»–-]/g, '').length === 1 && /[a-zA-ZąęłńóśźżĄĘŁŃÓŚŹŻ]/.test(last)) || /^\d+$/.test(last))) words[words.length - 1] = `${prev}\u00a0${w}`;
-      else words.push(w);
-    }
-    const chunks: string[] = [];
-    let cur = '';
-    for (const w of words) {
-      const brk = /[.:?!…]$/.test(cur);
-      if (cur && (cur.length + w.length + 1 > 28 || brk)) { chunks.push(cur); cur = w; } else cur = cur ? `${cur} ${w}` : w;
-    }
-    if (cur) chunks.push(cur);
-    // sin trozos sueltos: si el último trozo de una frase es muy corto, se lleva la última palabra del anterior
-    for (let i = 1; i < chunks.length; i++) {
-      if (chunks[i].length < 12 && !/[.:?!…]$/.test(chunks[i - 1])) {
-        const ws = chunks[i - 1].split(' ');
-        if (ws.length > 1) { const mv = ws.pop()!; chunks[i - 1] = ws.join(' '); chunks[i] = `${mv} ${chunks[i]}`; }
-      }
-    }
+    // Norma tipográfica polaca y cortes como tools/t10_meta.py (subchunks.ts).
+    const chunks = chunkWords(glueWords(text));
     const total = chunks.reduce((a, c) => a + c.length, 0);
     const dur = speechFrames(p.id);
     let acc = 0;

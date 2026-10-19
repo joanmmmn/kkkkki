@@ -5,7 +5,7 @@ const NOCUT = new Set(['do', 'od', 'na', 'za', 'po', 'pod', 'nad', 'przed', 'prz
   'lub', 'czy', 'że', 'żeby', 'który', 'która', 'które', 'którego', 'jak', 'gdy', 'kiedy', 'co', 'nie', 'ponad', 'nawet', 'tylko',
   'tę', 'ten', 'ta', 'to', 'tym', 'tego', 'jego', 'jej', 'ich', 'swój', 'swoje', 'pewien', 'jedno', 'jedna', 'jeden', 'sam',
   'tak', 'aż', 'coraz', 'już', 'jeszcze', 'wciąż', 'by', 'tylu', 'gdyby', 'choć', 'bo', 'ale']);
-const KEEP = new Set(['muszą|pokonać', 'małych|dzieci', 'jedno|spojrzenie', 'lat|później']);
+const KEEP = new Set(['muszą|pokonać', 'małych|dzieci', 'dwoje|małych', 'jedno|spojrzenie', 'lat|później', 'pisze|krótko', 'absolutna|topka']);
 const LETTER = /[a-zA-ZąęłńóśźżĄĘŁŃÓŚŹŻ]/;
 const endsSentence = (w: string) => /[.?!…]$/.test(w.replace(/[”"»]+$/, ''));
 const lastTok = (w: string) => w.split(' ').pop() ?? w;
@@ -17,7 +17,7 @@ export const glueWords = (text: string): string[] => {
     const prev = words[words.length - 1];
     const last = prev ? lastTok(prev) : '';
     const single = last.replace(/[„”"«»–-]/g, '').length === 1 && LETTER.test(last);
-    if (prev && (single || /^\d+$/.test(last))) words[words.length - 1] = `${prev} ${w}`;
+    if (prev && (single || (/^\d+$/.test(last) && LETTER.test(w[0] ?? '')))) words[words.length - 1] = `${prev} ${w}`;
     else words.push(w);
   }
   return words;
