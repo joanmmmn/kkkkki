@@ -21,7 +21,7 @@ OUT = os.path.join(ROOT, 'video/public/music')
 PARTS = os.path.join(OUT, 't10f_parts')
 SR = 44100
 TAIL = 0.3
-EXTRA = 22.0
+EXTRA = 12.0  # la música se compone después de la voz real: 12 s de margen bastan (y ahorran créditos)
 
 GLOBAL = [
     'instrumental cinematic fantasy score for a premium YouTube countdown of the best fantasy stories',
