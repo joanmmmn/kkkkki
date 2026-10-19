@@ -73,7 +73,7 @@ export const piece: PLPiece = {
         { at: 'zgod', title: 'Zgody marketingowe?', sub: 'nie musisz zaznaczać' }, { at: 'logujesz', title: 'Zaloguj się w aplikacji', sub: 'tym samym kontem' },
       ], marks: [{ at: 'zgod', x: 1040, y: 664, w: 552, h: 164 }] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'faq', start: 17.4, holdAt: 24.0 }, steps: [
-        { at: 'Zaloguj', title: 'Zaloguj się na stronie' }, { at: 'Subskrypcje', title: 'Wejdź w „Subskrypcję”' },
+        { at: 'Zaloguj', title: 'Zaloguj się na stronie' }, { at: 'Subskrypcje', title: 'Ustawienia konta › Subskrypcja' },
         { at: 'Anuluj', title: 'Anuluj i potwierdź', sub: 'przyjdzie e-mail' }, { at: 'Google', title: 'Google Play / App Store', sub: 'anulujesz tam' },
       ], marks: [{ at: 'Zaloguj', until: 'Google', x: 460, y: 486, w: 580, h: 38 }, { at: 'Google', x: 460, y: 524, w: 760, h: 38 }],
         note: { at: 'usuniecie', label: 'Usunięcie aplikacji nie anuluje', icon: 'phone' } },
