@@ -34,7 +34,7 @@ export const piece: PLPiece = {
           { at: 'nowosci', label: 'Nowości', icon: 'sparkle' }, { at: 'bestsellery', label: 'Bestsellery', icon: 'star' },
           { at: 'sluchowiska', label: 'Słuchowiska dla dzieci', icon: 'kid' }, { at: 'wlasne', label: 'Empik Go Originals', icon: 'mic' },
         ] },
-      { id: 'A05', kind: 'rec', kicker: 'Empik Go Originals', title: '130+ własnych produkcji', rec: { clip: 'originals', start: 0.3, holdAt: 4.7 },
+      { id: 'A05', kind: 'rec', kicker: 'Empik Go Originals', title: '130 własnych produkcji', rec: { clip: 'originals', start: 0.3, holdAt: 4.7 },
         cuts: [{ at: 'Przygody', rec: { clip: 'originals', start: 4.85, holdAt: 8.85 } }, { at: 'Cholod', rec: { clip: 'originals', start: 8.95 } }, { at: 'Krolestwo', rec: { clip: 'pik', start: 0.4, holdAt: 4.1, url: 'empik.com/go/krolestwo-pik' } }],
         marks: [{ at: 'Przygody', until: 'Cholod', x: 240, y: 186, w: 392, h: 570 }, { at: 'Cholod', until: 'Krolestwo', x: 240, y: 186, w: 392, h: 570 }, { at: 'Krolestwo', x: 384, y: 212, w: 520, h: 114 }],
         tags: [
@@ -44,7 +44,7 @@ export const piece: PLPiece = {
           { at: 'Krolestwo', label: '„Królestwo Pik”', sub: 'Weronika Ancerowicz', icon: 'book' },
         ] },
       { id: 'A06', kind: 'features', bump: 'Aplikacja', kicker: 'Aplikacja Empik Go', title: 'Switch i odtwarzacz', cols: 3, items: [
-        { at: 'Switch', label: 'Funkcja Switch', sub: 'Go Max i Go Smart, od poł. września', icon: 'sync' },
+        { at: 'Switch', label: 'Funkcja Switch', sub: 'Go Max i Go Smart, od poł. września 2026', icon: 'sync' },
         { at: 'utraty', label: 'Ebook ⇄ audiobook', sub: 'bez utraty miejsca, w wybranych tytułach', icon: 'bookmark' },
         { at: 'predkosci', label: 'Prędkość i rozdziały', icon: 'speed' },
         { at: 'drzemke', label: 'Drzemka', sub: 'także na koniec rozdziału', icon: 'moon' },
@@ -62,7 +62,7 @@ export const piece: PLPiece = {
           { at: 'Podkasty', label: 'Podcasty i ASMR bez limitu', icon: 'mic' },
           { at: 'serial', label: 'Serial audio = 1 tytuł', icon: 'headphones' },
           { at: 'Niewykorzystany', label: 'Limit przechodzi dalej', sub: 'do 180 dni, przy opłaconym abonamencie', icon: 'calendar' },
-          { at: 'cofniesz', label: 'Wybór cofniesz', sub: 'do 10% i bez pobierania', icon: 'sync' },
+          { at: 'cofniesz', label: 'Wybór cofniesz', sub: 'do 10%, bez pobierania i wysyłki na Kindle', icon: 'sync' },
         ] },
       { id: 'A08', kind: 'rec', kicker: 'Dla dzieci', title: 'Tryb dziecięcy', rec: { clip: 'kids', start: 0.3, url: 'empik.com/go/kidsmode' },
         cuts: [{ at: 'wyjscie', rec: { clip: 'kids', start: 4.15, url: 'empik.com/go/kidsmode' } }, { at: 'Pamietaj', rec: { clip: 'faq_limit', start: 16.8, url: 'empik.com/go/faq' } }],
@@ -86,20 +86,18 @@ export const piece: PLPiece = {
         likes: [{ at: 'duzy', label: 'Duży wybór tytułów' }, { at: 'latwa', label: 'Łatwa obsługa' }],
         dislikes: [{ at: 'zawieszanie', label: 'Aplikacja się zawiesza', sub: 'np. przy zmianie rozdziału' }, { at: 'braki', label: 'Braki w katalogu' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Empik Go', pros: [
-        { at: 'audiobuki', label: 'Audiobooki, ebooki i podcasty' }, { at: 'sto', label: '130+ własnych produkcji' }, { at: 'tryb', label: 'Tryb dziecięcy' }, { at: 'czytniki', label: 'Czytniki, także Kindle' },
+        { at: 'audiobuki', label: 'Audiobooki, ebooki i podcasty' }, { at: 'sto', label: '130 własnych produkcji' }, { at: 'tryb', label: 'Tryb dziecięcy' }, { at: 'czytniki', label: 'Czytniki, także Kindle' },
       ], cons: [
         { at: 'Smart', label: 'Go Smart: tylko 1 urządzenie' }, { at: 'komputerze', label: 'Nie posłuchasz na komputerze' }, { at: 'niestabilna', label: 'Aplikacja bywa niestabilna' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Empik Go:\nczy warto?', yes: [
         { at: 'Smart', label: 'Słuchasz i czytasz na 1 telefonie', sub: 'Go Smart · 39,99 zł / 30 dni' },
         { at: 'Standard', label: 'Kończysz do 3 książek miesięcznie', sub: 'Go Standard · 24,99 zł / 30 dni' },
-      ], no: [
-        { at: 'tylko', label: 'Chcesz tylko audiobooków bez limitu', sub: 'porównaj z abonamentem tylko na audio' },
-      ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. · bez limitu w katalogu Klubu'], label: 'Dla porównania (stan na 10.2026):' } },
+      ], no: [], alts: { at: 'tylko', names: ['Audioteka Klub · 29,90 zł / mies. (stan na październik 2026)'], label: 'Tylko audiobooki bez limitu? Porównaj z:' } },
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Empik Go', title: 'Okres próbny', at: 'Empik', value: '7 dni', label: 'za darmo w każdym planie', tags: [
         { at: 'karta', label: 'Tylko z kartą płatniczą', icon: 'card' }, { at: ['tylko', 1], label: 'Tylko raz', sub: 'bez względu na plan', icon: 'user' },
       ] },
-      { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 0.4, holdAt: 7.4, mobile: true },
+      { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 4.7, holdAt: 7.4, mobile: true },
         marks: [{ at: 'wybierz', until: 'kliknij', x: 12, y: 280, w: 406, h: 312 }, { at: 'kliknij', until: 'Uwaga', x: 26, y: 522, w: 378, h: 56 }], steps: [
         { at: 'Wejdz', title: 'Wejdź na empik.com/go' }, { at: 'abonamentach', title: 'Abonamenty 30-dniowe', sub: 'wybierz plan' },
         { at: 'kliknij', title: '„Wypróbuj za darmo przez 7 dni”' }, { at: 'Zaloguj', title: 'Zaloguj się lub załóż konto Empik' },
@@ -138,5 +136,5 @@ export const piece: PLPiece = {
       { label: 'Pierwsza opłata i jak zrezygnować', from: 'B04' },
     ],
   },
-  thumb: { line1: 'EMPIK GO', line2: 'CZY WARTO?', seal: { icon: 'infinity', text: 'Go Smart\n39,99 zł' }, label: { strong: '7 dni', rest: 'ZA DARMO' } },
+  thumb: { line1: 'EMPIK GO', line2: 'CZY WARTO?', seal: { icon: 'infinity', text: 'Go Smart\n39,99 zł / 30 dni' }, label: { strong: '7 dni', rest: 'ZA DARMO' } },
 };
