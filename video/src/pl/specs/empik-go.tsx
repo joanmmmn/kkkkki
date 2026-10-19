@@ -32,9 +32,9 @@ export const piece: PLPiece = {
           { at: 'nowosci', label: 'Nowości', icon: 'sparkle' }, { at: 'bestsellery', label: 'Bestsellery', icon: 'star' },
           { at: 'sluchowiska', label: 'Słuchowiska dla dzieci', icon: 'kid' }, { at: 'wlasne', label: 'Empik Go Originals', icon: 'mic' },
         ] },
-      { id: 'A05', kind: 'rec', kicker: 'Empik Go Originals', title: '130+ własnych produkcji', rec: { clip: 'originals', start: 3.0 },
-        cuts: [{ at: 'Przygody', rec: { clip: 'originals', start: 5.0 } }, { at: 'Cholod', rec: { clip: 'originals', start: 9.0 } }, { at: 'Krolestwo', rec: { clip: 'pik', start: 0.4, url: 'empik.com/go/krolestwo-pik' } }],
-        marks: [{ at: 'Przygody', until: 'Cholod', x: 240, y: 198, w: 392, h: 572 }, { at: 'Cholod', until: 'Krolestwo', x: 240, y: 198, w: 392, h: 572 }],
+      { id: 'A05', kind: 'rec', kicker: 'Empik Go Originals', title: '130+ własnych produkcji', rec: { clip: 'originals', start: 0.3, holdAt: 4.7 },
+        cuts: [{ at: 'Przygody', rec: { clip: 'originals', start: 4.85, holdAt: 8.85 } }, { at: 'Cholod', rec: { clip: 'originals', start: 8.95 } }, { at: 'Krolestwo', rec: { clip: 'pik', start: 0.4, holdAt: 4.1, url: 'empik.com/go/krolestwo-pik' } }],
+        marks: [{ at: 'Przygody', until: 'Cholod', x: 240, y: 186, w: 392, h: 570 }, { at: 'Cholod', until: 'Krolestwo', x: 240, y: 186, w: 392, h: 570 }, { at: 'Krolestwo', x: 384, y: 212, w: 520, h: 114 }],
         tags: [
           { at: 'tylko', label: 'Tylko w Empik Go', icon: 'lock' },
           { at: 'Przygody', label: '„Przygody Baltazara Gąbki”', sub: 'Makłowicz, Wojewódzki, Ralph Kaminski…', icon: 'mic' },
@@ -51,20 +51,21 @@ export const piece: PLPiece = {
       ] },
       { id: 'A07', kind: 'rec', kicker: 'FAQ Empik Go', title: 'Limit w Go Standard', rec: { clip: 'faq_limit', start: 0.3, url: 'empik.com/go/faq' },
         marks: [
-          { at: 'dodajac', until: 'Podkasty', x: 584, y: 100, w: 792, h: 132 }, { at: 'Podkasty', until: 'Niewykorzystany', x: 584, y: 603, w: 792, h: 152 },
-          { at: 'Niewykorzystany', until: 'wybor', x: 584, y: 442, w: 792, h: 152 }, { at: 'wybor', x: 584, y: 240, w: 792, h: 194 },
+          { at: 'dodajac', until: 'Podkasty', x: 584, y: 112, w: 792, h: 102 }, { at: 'Podkasty', until: 'Niewykorzystany', x: 584, y: 614, w: 792, h: 126 },
+          { at: 'Niewykorzystany', until: 'wybor', x: 584, y: 454, w: 792, h: 126 }, { at: 'wybor', x: 608, y: 360, w: 760, h: 54 },
         ],
-        zooms: [{ at: 'limit', zoom: 1.6, x: 980, y: 300 }, { at: 'Podkasty', zoom: 1.6, x: 980, y: 640 }, { at: 'Niewykorzystany', zoom: 1.6, x: 980, y: 480 }, { at: 'wybor', zoom: 1.6, x: 980, y: 330 }],
+        zooms: [{ at: 'limit', zoom: 1.6, x: 980, y: 300 }, { at: 'Podkasty', zoom: 1.6, x: 980, y: 620 }, { at: 'Niewykorzystany', zoom: 1.6, x: 980, y: 480 }, { at: 'wybor', zoom: 1.6, x: 980, y: 360 }],
         tags: [
           { at: 'dodajac', label: 'Dodanie do biblioteki = 1 tytuł', icon: 'library' },
           { at: 'Podkasty', label: 'Podcasty i ASMR bez limitu', icon: 'mic' },
           { at: 'serial', label: 'Serial audio = 1 tytuł', icon: 'headphones' },
-          { at: 'Niewykorzystany', label: 'Niewykorzystany limit: do 180 dni', sub: 'przy opłaconym abonamencie', icon: 'calendar' },
+          { at: 'Niewykorzystany', label: 'Limit przechodzi dalej', sub: 'do 180 dni, przy opłaconym abonamencie', icon: 'calendar' },
           { at: 'cofniesz', label: 'Wybór cofniesz', sub: 'do 10% i bez pobierania', icon: 'sync' },
         ] },
       { id: 'A08', kind: 'rec', kicker: 'Dla dzieci', title: 'Tryb dziecięcy', rec: { clip: 'kids', start: 0.3, url: 'empik.com/go/kidsmode' },
-        cuts: [{ at: 'wyjscie', rec: { clip: 'kids', start: 4.0, url: 'empik.com/go/kidsmode' } }, { at: 'Pamietaj', rec: { clip: 'faq_limit', start: 17.0, url: 'empik.com/go/faq' } }],
-        marks: [{ at: 'tylko', until: 'wyjscie', x: 1272, y: 636, w: 264, h: 264 }, { at: 'PIN', until: 'Pamietaj', x: 820, y: 270, w: 240, h: 520 }, { at: 'tytuly', x: 584, y: 883, w: 792, h: 132 }],
+        cuts: [{ at: 'wyjscie', rec: { clip: 'kids', start: 4.15, url: 'empik.com/go/kidsmode' } }, { at: 'Pamietaj', rec: { clip: 'faq_limit', start: 16.8, url: 'empik.com/go/faq' } }],
+        marks: [{ at: 'tylko', until: 'wyjscie', x: 1272, y: 636, w: 264, h: 264 }, { at: 'PIN', until: 'Pamietaj', x: 820, y: 266, w: 240, h: 580 }, { at: 'tytuly', x: 584, y: 894, w: 792, h: 102 }],
+        zooms: [{ at: 'Pamietaj', zoom: 1.6, x: 980, y: 760 }],
         tags: [
           { at: 'tylko', label: 'Tylko treści dla dzieci', icon: 'kid' }, { at: 'blokuje', label: 'Blokada zakupów i ustawień', icon: 'lock' },
           { at: 'PIN', label: 'Wyjście chronione PIN-em', icon: 'lock' },
@@ -111,8 +112,8 @@ export const piece: PLPiece = {
       { id: 'B04', kind: 'stat', kicker: 'Po okresie próbnym', title: 'Pierwsza opłata', at: 'osmego', value: '8.', unit: 'dzień', label: 'zaczyna się płatny okres, jeśli nie zrezygnujesz', tags: [
         { at: 'Smart', label: 'Go Smart: 39,99 zł / 30 dni', sub: 'stan na październik 2026', icon: 'card' },
       ] },
-      { id: 'B05', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'faq_tabela', start: 6.0, url: 'empik.com/go/faq' },
-        marks: [{ at: 'Twoje', until: 'Anuluj', x: 1076, y: 482, w: 278, h: 28 }, { at: 'Anuluj', x: 616, y: 98, w: 770, h: 90 }], steps: [
+      { id: 'B05', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'faq_tabela', start: 5.4, holdAt: 13.1, url: 'empik.com/go/faq' },
+        marks: [{ at: 'Twoje', until: 'Anuluj', x: 1074, y: 482, w: 284, h: 26 }, { at: 'Anuluj', x: 616, y: 100, w: 770, h: 80 }], zooms: [{ at: 'Twoje', zoom: 1.6, x: 990, y: 300 }], steps: [
         { at: 'Twoje', title: 'empik.com → Twoje konto', sub: 'zakładka „Abonamenty”' }, { at: 'Anuluj', title: '„Anuluj abonament”' },
         { at: 'aplikacji', title: 'Albo w aplikacji: „Konto”' }, { at: 'najpozniej', title: 'Najpóźniej 7. dnia', sub: 'zanim zacznie się płatny okres' },
       ], note: { at: ['Konto', 1], label: 'Kupione w Google Play lub App Store?', sub: 'płatności obsługuje sklep', icon: 'phone' } },

@@ -21,6 +21,15 @@
    "nocookies": true
   },
   {
+   "eval": "(()=>{const b=[...document.querySelectorAll('button,a,input[type=submit],span')].find(e=>/Kontynuuj bez akceptacji/i.test(e.textContent||e.value||''));if(b)b.click();const r=document.querySelector('#sp-cc-rejectall-link');if(r)r.click();})()"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "document.querySelectorAll('#sp-cc,[id^=sp-cc]').forEach(e=>e.remove())"
+  },
+  {
    "wait": 600
   },
   {
@@ -41,6 +50,15 @@
     900
    ],
    "dur": 10
+  },
+  {
+   "eval": "(()=>{const b=[...document.querySelectorAll('button,a,input[type=submit],span')].find(e=>/Kontynuuj bez akceptacji/i.test(e.textContent||e.value||''));if(b)b.click();const r=document.querySelector('#sp-cc-rejectall-link');if(r)r.click();})()"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelectorAll('#sp-cc,[id^=sp-cc]').forEach(e=>e.remove())"
   },
   {
    "record": true
