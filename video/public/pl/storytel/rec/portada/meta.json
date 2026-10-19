@@ -1,0 +1,22 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 410,
+ "duration": 29.233,
+ "offset": 0.077,
+ "marks": {
+  "top": 0.366,
+  "scroll": 3.56,
+  "covers": 5.738,
+  "rok": 9.334,
+  "rok_end": 15.228,
+  "rows": 15.663,
+  "scroll2": 20.888,
+  "popular": 22.98,
+  "end": 29.232
+ },
+ "events": []
+}

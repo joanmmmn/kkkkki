@@ -63,7 +63,7 @@ A zanim kupisz audiobook, sprawdź na https://sonorbooks.pl, czy jest w abonamen
 - **Idioma del vídeo:** Polaco (título, descripción y subtítulos `audioteka.pl.srt` en polaco).
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; no hay enlaces de afiliado de Audioteka).
 - **Contenido para niños:** No.
-- **Duración:** 4:26 (capítulos arriba, desde `pl_meta`).
+- **Duración:** 4:27 (capítulos arriba, desde `pl_meta`).
 - **Decidir / confirmar antes de publicar:**
   - La promoción del Plan na Start (10,90 zł/mes, hasta el 26.10.2026 a las 15:00) no aparece en ningún sitio: ni en la voz, ni en los textos, ni en las tomas (las de klub.audioteka.com se grabaron con la pestaña «12 miesięcy» o encuadrando solo el Plan Optymalny). La voz dice solo que el Plan na Start «es más barato los 3 primeros meses» y la pantalla lo dice sin precio. Si al publicar ese plan ya no existe en klub.audioteka.com, conviene quitar esa media frase (A03) o la etiqueta.
   - Precios y notas comprobados el 19.10.2026 (Plan Optymalny 29,90 zł; 6 meses 179,40 zł; 12 meses 299,00 zł; Plan Smart 20h 17,90 zł; Google Play 4,8 con 67,6 mil valoraciones; App Store 4,7 con 41,9 mil). Si se publica mucho más tarde, revisarlos.

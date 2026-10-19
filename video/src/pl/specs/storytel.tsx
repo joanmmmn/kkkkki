@@ -9,10 +9,10 @@ export const piece: PLPiece = {
     logo: 'pl/storytel/img/logo.svg', logoWhite: 'pl/storytel/img/logo_white.svg', logoRatio: 24 / 115, tileBg: '#101010', tileLogoWhite: true,
     kicker: 'Recenzja Storytel', music: 'pl/storytel/music/bed.mp3',
     scenes: [
-      { id: 'A01', kind: 'hook', title: 'Storytel:\nczy warto\npłacić?', hi: ['Storytel'], rec: { clip: 'hero', start: 0.4 },
+      { id: 'A01', kind: 'hook', title: 'Storytel:\nczy warto\npłacić?', hi: ['Storytel'], rec: { clip: 'portada', start: 0.4 },
         cuts: [{ at: 'ceny', rec: { clip: 'zakup', start: 0.3 } }, { at: 'Powiemy', rec: { clip: 'ksiazki', start: 3.3 } }, { at: 'zaczac', rec: { clip: 'zakup', start: 14.9 } }],
         promises: [{ at: 'ceny', label: 'Ceny, katalog, regulamin', icon: 'search' }, { at: 'dobre', label: 'Co dobre', tone: 'good' }, { at: 'zle', label: 'Co złe', tone: 'bad' }, { at: 'najtaniej', label: 'Jak zacząć najtaniej', sub: 'darmowej próby teraz nie ma', icon: 'coin' }] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest Storytel', rec: { clip: 'hero', start: 3.2 },
+      { id: 'A02', kind: 'intro', bump: 'Czym jest Storytel', rec: { clip: 'portada', start: 3.0, holdAt: 8.5 },
         facts: [{ at: 'szwedzki', label: 'Szwedzki serwis', sub: 'audiobooki i e-booki', icon: 'headphones' }, { at: 'szesnastego', label: 'W Polsce od 2016 roku', icon: 'calendar' }, { at: 'Sluchasz', label: 'Słuchasz i czytasz', sub: 'w jednej aplikacji', icon: 'book' }, { at: 'angielsku', label: 'Po polsku i po angielsku', icon: 'globe' }],
         big: { at: 'piecset', value: 500000, suffix: '+', label: 'tytułów do wyboru' } },
       { id: 'A03', kind: 'plans', bump: 'Cennik', title: 'Cztery plany, płatne co 30 dni', plans: [
@@ -21,8 +21,8 @@ export const piece: PLPiece = {
         { at: 'Anlimitid', name: 'Unlimited', price: '44,90 zł', period: '/ 30 dni', features: ['Bez limitu godzin'], best: true, badge: 'Bez limitu' },
         { at: 'Femili', name: 'Family', price: '59,90 zł', period: '/ 30 dni', note: 'za 2 konta', features: ['3 konta: 69,90 zł', 'Bez limitu godzin'] },
       ], footer: [{ at: 'plany', label: 'Stan na październik 2026', icon: 'calendar' }, { at: 'zobowiazan', label: 'Bez zobowiązań', icon: 'lock' }] },
-      { id: 'A04', kind: 'rec', bump: 'Jak to działa', kicker: 'Bez logowania', title: 'Katalog na stronie', rec: { clip: 'katalog', start: 0.2 },
-        marks: [{ at: 'cotygodniowe', until: 'wyczekiwane', x: 52, y: 138, w: 440, h: 56 }, { at: 'wyczekiwane', until: 'najpopularniejsze', x: 52, y: 493, w: 422, h: 56 }, { at: 'Harry', until: 'Ale', x: 60, y: 440, w: 370, h: 260 }],
+      { id: 'A04', kind: 'rec', bump: 'Jak to działa', kicker: 'Bez logowania', title: 'Katalog na stronie', rec: { clip: 'portada', start: 15.5 },
+        marks: [{ at: 'cotygodniowe', until: 'wyczekiwane', x: 52, y: 146, w: 440, h: 56 }, { at: 'wyczekiwane', until: 'najpopularniejsze', x: 52, y: 500, w: 422, h: 56 }, { at: 'Harry', until: 'Ale', x: 62, y: 462, w: 366, h: 228 }],
         tags: [{ at: 'logowania', label: 'Bez logowania', icon: 'globe' }, { at: 'Harry', label: 'Harry Potter, Wiedźmin…', icon: 'book' }, { at: 'Ale', label: 'Słuchasz tylko w aplikacji', icon: 'phone', tone: 'accent' }] },
       { id: 'A05', kind: 'rec', kicker: 'Tylko w Storytel', title: 'Storytel Original', rec: { clip: 'ksiazki', start: 0.3 },
         cuts: [{ at: 'Kruk', rec: { clip: 'ksiazki', start: 23.0 } }, { at: 'Arka', rec: { clip: 'arka', start: 0.3 } }],
@@ -42,7 +42,7 @@ export const piece: PLPiece = {
       ] },
       { id: 'A08B', kind: 'rec', side: 'right', kicker: 'Rodzina i dzieci', title: 'Family i Kids Mode', rec: { clip: 'faq', start: 2.6 },
         cuts: [{ at: 'dzieci', rec: { clip: 'zakup', start: 10.9, holdAt: 14.5 } }],
-        marks: [{ at: 'osobne', until: 'dzieci', x: 456, y: 634, w: 1004, h: 164 }, { at: 'dzieciecy', x: 882, y: 906, w: 840, h: 96 }],
+        marks: [{ at: 'osobne', until: 'dzieci', x: 456, y: 634, w: 1004, h: 164 }, { at: 'dzieciecy', x: 882, y: 904, w: 840, h: 106 }],
         tags: [{ at: 'osobne', label: 'Osobne konta i półki', icon: 'family' }, { at: 'jedna', label: 'Płaci jedna osoba', icon: 'card' }, { at: 'dzieciecy', label: 'Tryb dziecięcy z PIN-em', icon: 'lock' }] },
       { id: 'A09', kind: 'devices', items: [
         { at: 'telefonach', label: 'Telefon i tablet', sub: 'Android, iOS', icon: 'phone', ok: true }, { at: 'zegarkach', label: 'Zegarki', sub: 'Apple\u00a0Watch, Wear\u00a0OS', icon: 'watch', ok: true },
@@ -61,12 +61,12 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'przed', label: 'Chcesz najpierw spróbować za darmo', sub: 'teraz nie ma darmowej próby' },
       ], alts: { at: 'porownaj', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
-      { id: 'B01', kind: 'stat', bump: 'Jak zacząć taniej', kicker: 'Nowi klienci', title: 'Darmowej próby teraz nie ma', at: 'dwie', value: '2', label: 'promocje na Unlimited dla nowych klientów', tags: [
-        { at: 'Unlimited', label: 'Stan na październik 2026', icon: 'calendar' },
+      { id: 'B01', kind: 'stat', bump: 'Jak zacząć taniej', kicker: 'Nowi klienci', title: 'Okres próbny?', at: 'darmowego', value: '0', unit: 'dni', label: 'darmowej próby na stronie Storytel', tags: [
+        { at: 'dwie', label: '2 promocje dla nowych klientów', icon: 'gift' }, { at: 'Unlimited', label: 'Stan na październik 2026', icon: 'calendar' },
       ] },
       { id: 'B02', kind: 'rec', kicker: 'Tylko dla nowych klientów', title: 'Dwie promocje', rec: { clip: 'zakup', start: 14.8, url: 'storytel.com/pl/signup' },
-        cuts: [{ at: 'Druga', rec: { clip: 'rok', start: 0.3 } }],
-        marks: [{ at: 'dwadziescia', until: 'potem', x: 326, y: 452, w: 254, h: 62 }, { at: 'potem', until: 'Druga', x: 326, y: 521, w: 422, h: 134 }, { at: 'pierwszy', x: 962, y: 448, w: 904, h: 300 }],
+        cuts: [{ at: 'Druga', rec: { clip: 'portada', start: 9.4 } }],
+        marks: [{ at: 'dwadziescia', until: 'potem', x: 326, y: 452, w: 254, h: 62 }, { at: 'potem', until: 'Druga', x: 326, y: 521, w: 422, h: 134 }, { at: 'pierwszy', x: 958, y: 352, w: 880, h: 258 }],
         tags: [{ at: 'miesiecznie', label: '22,45 zł / mies.', sub: 'przez pierwsze 180 dni', icon: 'coin' }, { at: 'potem', label: 'Potem 44,90 zł', icon: 'calendar' }, { at: 'pierwszy', label: '320 zł za pierwszy rok', icon: 'gift' }, { at: 'platne', label: 'Płatne z góry', icon: 'card' }] },
       { id: 'B03', kind: 'steps', kicker: 'Rejestracja', title: 'Konto i aplikacja', rec: { clip: 'zakup', start: 18.3, url: 'storytel.com/pl/signup' }, steps: [
         { at: 'oferte', title: 'Wybierz ofertę' }, { at: 'zakladasz', title: 'Konto i płatność' },
@@ -97,8 +97,7 @@ export const piece: PLPiece = {
       { label: 'Opinie', from: 'A10' },
       { label: 'Plusy i minusy', from: 'A11' },
       { label: 'Werdykt: czy warto?', from: 'A12' },
-      { label: 'Jak zacząć taniej: promocje', from: 'B01' },
-      { label: 'Konto i aplikacja', from: 'B03' },
+      { label: 'Jak zacząć taniej: promocje i konto', from: 'B01' },
       { label: 'Jak zrezygnować', from: 'B04' },
       { label: 'Drobny druk regulaminu', from: 'B05' },
     ],

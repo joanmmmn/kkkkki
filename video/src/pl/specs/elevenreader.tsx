@@ -65,7 +65,7 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'szukasz', label: 'Szukasz audiobooków z lektorem', sub: 'porównaj najpierw abonamenty' },
       ], alts: { at: 'Audioteka', names: ['Audioteka Klub · 29,90 zł / mies. bez limitu godzin'], label: 'Dla porównania:' } },
-      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Konto za darmo', rec: { clip: 'pricing_free', start: 3.0 },
+      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Krok 1', title: 'Konto za darmo', rec: { clip: 'pricing_free', start: 4.0 },
         marks: [{ at: 'Plan', x: 418, y: 818, w: 480, h: 66 }],
         steps: [{ at: 'Zaloz', title: 'Załóż konto', sub: 'na elevenreader.io albo w aplikacji' }, { at: 'Gugl', title: 'Google, Apple albo e-mail' }, { at: 'Plan', title: 'Plan Free: 0 zł', sub: 'bez subskrypcji' }] },
       { id: 'B02', kind: 'steps', kicker: 'Krok 2', title: 'Pierwszy plik', rec: { clip: 'pomoc_godziny', start: 0.4, url: 'elevenlabs.io/docs/pl' },

@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 127,
+ "duration": 13.684,
+ "offset": 0.31,
+ "marks": {
+  "annual": 0.238,
+  "monthly": 2.863,
+  "free": 5.198,
+  "speed": 7.664,
+  "start": 9.968,
+  "end": 13.684
+ },
+ "events": []
+}

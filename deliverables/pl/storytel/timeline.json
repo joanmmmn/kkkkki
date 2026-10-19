@@ -1,0 +1,220 @@
+{
+ "total_frames": 13570,
+ "seconds": 271.4,
+ "chapters": [
+  {
+   "t": 11.9,
+   "label": "Czym jest Storytel"
+  },
+  {
+   "t": 25.86,
+   "label": "Cennik: Basic, Premium, Unlimited i Family"
+  },
+  {
+   "t": 53.1,
+   "label": "Katalog na stronie"
+  },
+  {
+   "t": 65.78,
+   "label": "Storytel Original"
+  },
+  {
+   "t": 80.36,
+   "label": "Karta książki"
+  },
+  {
+   "t": 92.84,
+   "label": "Funkcje aplikacji"
+  },
+  {
+   "t": 107.32,
+   "label": "Limity godzin i urządzeń"
+  },
+  {
+   "t": 120.38,
+   "label": "Family i tryb dziecięcy"
+  },
+  {
+   "t": 131.88,
+   "label": "Urządzenia"
+  },
+  {
+   "t": 143.86,
+   "label": "Opinie"
+  },
+  {
+   "t": 162.12,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 178.42,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 192.42,
+   "label": "Jak zacząć taniej: promocje i konto"
+  },
+  {
+   "t": 224.88,
+   "label": "Jak zrezygnować"
+  },
+  {
+   "t": 239.74,
+   "label": "Drobny druk regulaminu"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 609,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "intro",
+   "start": 609,
+   "dur": 698,
+   "lead": 26,
+   "bump": "Czym jest Storytel"
+  },
+  {
+   "id": "A03",
+   "kind": "plans",
+   "start": 1307,
+   "dur": 1362,
+   "lead": 26,
+   "bump": "Cennik"
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2669,
+   "dur": 620,
+   "lead": 26,
+   "bump": "Jak to działa"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3289,
+   "dur": 729,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "rec",
+   "start": 4018,
+   "dur": 624,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "features",
+   "start": 4642,
+   "dur": 724,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08",
+   "kind": "stat",
+   "start": 5366,
+   "dur": 653,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08B",
+   "kind": "rec",
+   "start": 6019,
+   "dur": 575,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 6594,
+   "dur": 613,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A10",
+   "kind": "ratings",
+   "start": 7207,
+   "dur": 913,
+   "lead": 26,
+   "bump": "Opinie"
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8120,
+   "dur": 815,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 8935,
+   "dur": 700,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "stat",
+   "start": 9635,
+   "dur": 438,
+   "lead": 26,
+   "bump": "Jak zacząć taniej"
+  },
+  {
+   "id": "B02",
+   "kind": "rec",
+   "start": 10073,
+   "dur": 693,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "steps",
+   "start": 10766,
+   "dur": 478,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11244,
+   "dur": 743,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "features",
+   "start": 11987,
+   "dur": 549,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12536,
+   "dur": 1034,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}
