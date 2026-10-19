@@ -21,7 +21,7 @@ Serie del canal SonorBooks España, «Los 10 mejores». Segundo episodio, despu�
 - **Enfoque (Joan, 15/10):** se vende como **historias**, no como libros ni audiolibros. SonorBooks entra poco a poco y siempre por el beneficio de quien lo ve: escucharlas gratis y hoy mismo. No es promoción pagada.
 - **Formato v6 (Joan, 18/10):** cada historia acaba en su dato curioso, con el desplegable «Escúchala en SonorBooks · Gratis con prueba». Todo lo de cómo escucharlas va comprimido al final: la pantalla ESCUCHA con las diez y la web.
 - **Voz:** Martin Osborne (ElevenLabs, `eleven_v4`, estabilidad 0,5, similitud 0,8, velocidad 1,05), la misma del episodio de terror. Texto y pronunciaciones en `video/public/t10f/vo/vo.json`. En la voz, las cifras van en letra; en rótulos y subtítulos, en número.
-- **Duración estimada:** 8:30 (`python3 tools/t10f_timeline.py`, con tiempos estimados a 14,87 caracteres/s). La real sale al generar la voz.
+- **Duración:** 7:44 con la voz real (generada el 19/10/2026 con la cuenta nueva de ElevenLabs: 6.128 caracteres, más una toma nueva de F81 porque Whisper oía «Anas de sangre»). Whisper comprobó las 43 locuciones.
 - **Orden:** de la más ligera a la más épica.
 
 ## La lista

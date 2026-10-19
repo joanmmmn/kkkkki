@@ -1,8 +1,8 @@
-# Los 10 mejores · Fantasía — textos para YouTube y redes (borrador, 18/10/2026)
+# Los 10 mejores · Fantasía — textos para YouTube y redes (19/10/2026)
 
 > **Fichas:** las diez comprobadas en sonorbooks.com el 18/10 (22:00). Para «El nombre del viento» se enlaza la ficha con la prueba de Audiobooks.com (la otra ficha no tiene un acceso confirmado).
 >
-> **Capítulos provisionales.** Los tiempos salen de la voz estimada (`python3 tools/t10f_timeline.py`). Cuando se genere la voz real se recalculan con `t10f_meta.py`, igual que en el episodio de terror, y se sustituyen aquí.
+> **Capítulos:** calculados con la voz real (19/10/2026, `python3 tools/t10f_meta.py`). Vídeo de 7:44.
 
 **Enfoque (Joan, 15/10):** se vende como **historias**, no como libros ni como audiolibros. SonorBooks entra poco a poco y siempre por el beneficio de quien lo ve: escucharlas gratis y hoy mismo.
 **Formato v6 (Joan, 18/10):** cada historia acaba en su dato; lo de cómo escucharlas va comprimido al final del vídeo.
@@ -22,17 +22,17 @@ Diez historias de fantasía de las que no vas a querer salir, de la más ligera 
 📚 La lista completa: https://sonorbooks.com/es/blog/mejores-libros-de-fantasia/
 
 0:00 10 historias de fantasía de las que no vas a querer salir
-0:29 10. Alicia en el País de las Maravillas (Lewis Carroll)
-1:12 9. Circe (Madeline Miller)
-1:52 8. Harry Potter y la piedra filosofal (J. K. Rowling)
-2:32 7. El Hobbit (J. R. R. Tolkien)
-3:08 6. El nombre del viento (Patrick Rothfuss)
-3:47 5. Olvidado rey Gudú (Ana María Matute)
-4:36 4. Memorias de Idhún (Laura Gallego)
-5:14 3. Alas de sangre (Rebecca Yarros)
-5:46 2. El imperio final (Brandon Sanderson)
-6:34 1. El Señor de los Anillos (J. R. R. Tolkien)
-7:21 Cómo escucharlas gratis
+0:27 10. Alicia en el País de las Maravillas (Lewis Carroll)
+1:04 9. Circe (Madeline Miller)
+1:39 8. Harry Potter y la piedra filosofal (J. K. Rowling)
+2:15 7. El Hobbit (J. R. R. Tolkien)
+2:48 6. El nombre del viento (Patrick Rothfuss)
+3:25 5. Olvidado rey Gudú (Ana María Matute)
+4:11 4. Memorias de Idhún (Laura Gallego)
+4:45 3. Alas de sangre (Rebecca Yarros)
+5:13 2. El imperio final (Brandon Sanderson)
+5:57 1. El Señor de los Anillos (J. R. R. Tolkien)
+6:40 Cómo escucharlas gratis
 
 Escúchalas en SonorBooks:
 10. Alicia en el País de las Maravillas: https://sonorbooks.com/es/audiolibro/alicia-en-el-pais-de-las-maravillas/
