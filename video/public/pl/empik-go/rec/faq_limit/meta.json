@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 223,
+ "duration": 20.455,
+ "offset": 0.237,
+ "marks": {
+  "start": 0.181,
+  "asmr": 3.8,
+  "zalegly": 9.396,
+  "cofnij": 13.301,
+  "dlugo": 17.046,
+  "end": 20.454
+ },
+ "events": []
+}
