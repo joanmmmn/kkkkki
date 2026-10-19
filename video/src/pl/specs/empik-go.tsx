@@ -2,6 +2,8 @@
 // Todas las tomas son páginas públicas de empik.com/go (las fichas de producto de empik.com dan 403 y no se usan).
 // La promoción «Go Smart za 19,99 zł» terminó el 15.10.2026: no sale ni en la voz ni en pantalla (no se graba la pestaña
 // «Płatność jednorazowa» ni la tabla de precios de /go/kidsmode, y la toma de precios empieza por debajo de las pestañas).
+// La toma `plany` se recortó a 10 s (la página se colgó a los 8,1 s, ya con 4 urządzenia = 69,99 zł): A01 la congela con holdAt.
+// El cierre usa la portada de sonorbooks.pl (@common/sb_home_cards) y no /platformy/, cuya tarjeta de Empik Go aún anuncia la promoción vencida.
 // Los «cues» son palabras de la locución tal como quedan en vo/<ID>.json: «Maks», «Kindl», «Podkasty», «Gugl», «Ep»…
 import type { PLPiece } from './index';
 

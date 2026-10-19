@@ -21,7 +21,7 @@ export const piece: PLPiece = {
         { at: 'uwazac', label: 'Na co uważać?', icon: 'search' },
       ] },
       { id: 'A02', kind: 'intro', bump: 'Czym jest LibriVox?', rec: { clip: '09_about', start: 9.0, url: 'librivox.org/pages/about-librivox' },
-        cuts: [{ at: 'Cel', rec: { clip: '09_about', start: 0.4, url: 'librivox.org/pages/about-librivox' } }, { at: 'Dzis', rec: { clip: '01_portada', start: 11.7 } }], facts: [
+        cuts: [{ at: 'Cel', rec: { clip: '09_about', start: 0.4, holdAt: 6.6, url: 'librivox.org/pages/about-librivox' } }, { at: 'Dzis', rec: { clip: '01_portada', start: 11.9 } }], facts: [
         { at: 'wolontariuszy', label: 'Projekt wolontariuszy', icon: 'user' },
         { at: 'dwa', label: 'Od sierpnia 2005', icon: 'calendar' },
         { at: 'reklam', label: 'Non-profit, bez reklam', icon: 'heart' },
@@ -66,9 +66,9 @@ export const piece: PLPiece = {
           { at: 'Collaborative', label: 'Collaborative', sub: 'czyta kilka osób', icon: 'family' },
           { at: 'Multilingual', label: 'Multilingual', sub: 'fragment zbioru wielojęzycznego', icon: 'globe' },
         ] },
-      { id: 'A07', kind: 'rec', kicker: 'Strona książki', title: '„Lalka”, tom 1', rec: { clip: '04_lalka', start: 9.9 },
-        cuts: [{ at: 'spis', rec: { clip: '05_lalka_play', start: 4.6 } }, { at: 'Plej', rec: { clip: '05_lalka_play', start: 7.0 } },
-          { at: 'Dalnlold', rec: { clip: '04_lalka', start: 4.3 } }, { at: 'jest', rec: { clip: '04_lalka', start: 13.7 } }],
+      { id: 'A07', kind: 'rec', kicker: 'Strona książki', title: '„Lalka”, tom 1', rec: { clip: '04_lalka', start: 10.4 },
+        cuts: [{ at: 'spis', rec: { clip: '05_lalka_play', start: 4.9 } }, { at: 'Plej', rec: { clip: '05_lalka_play', start: 7.3 } },
+          { at: 'Dalnlold', rec: { clip: '04_lalka', start: 4.4 } }, { at: 'jest', rec: { clip: '04_lalka', start: 14.3 } }],
         marks: [
           { at: 'czas', until: 'lektora', x: 230, y: 456, w: 340, h: 38 }, { at: 'lektora', until: 'spis', x: 230, y: 557, w: 340, h: 38 },
           { at: 'Plej', until: 'tytul', x: 663, y: 432, w: 46, h: 48 }, { at: 'tytul', until: 'Dalnlold', x: 740, y: 436, w: 640, h: 44 },
@@ -87,10 +87,10 @@ export const piece: PLPiece = {
         { at: 'posluchaj', label: 'Najpierw posłuchaj minuty', icon: 'headphones' },
       ] },
       { id: 'A08B', kind: 'rec', bump: 'Prawo: USA a Polska', kicker: 'Na co uważać', title: 'Wolne w USA, a w Polsce?', rec: { clip: '05_lalka_play', start: 0.3, holdAt: 3.2 },
-        cuts: [{ at: 'Ej', rec: { clip: '07_winnie', start: 1.7 } }, { at: 'Kubus', rec: { clip: '07_winnie', start: 7.4 } }],
+        cuts: [{ at: 'Ej', rec: { clip: '07_winnie', start: 1.9 } }, { at: 'Kubus', rec: { clip: '07_winnie', start: 7.5 } }],
         marks: [
           { at: 'prosi', until: 'Ej', x: 236, y: 518, w: 370, h: 192 },
-          { at: 'Miln', until: 'Kubus', x: 776, y: 476, w: 112, h: 36 }, { at: 'pierwszego', x: 230, y: 864, w: 320, h: 38 },
+          { at: 'Miln', until: 'Kubus', x: 776, y: 476, w: 112, h: 36 }, { at: 'bedzie', x: 230, y: 864, w: 320, h: 38 },
         ],
         tags: [
           { at: 'USA', label: 'Wolne od praw w USA', icon: 'globe' },
@@ -99,8 +99,8 @@ export const piece: PLPiece = {
           { at: 'Miln', label: 'A. A. Milne † 1956', icon: 'user' },
           { at: 'Kubus', label: 'Winnie-the-Pooh (oryginał)', sub: 'USA: od 2022 · Polska: od 1.01.2027', tone: 'bad' },
         ] },
-      { id: 'A09', kind: 'rec', bump: 'Na telefonie', kicker: 'Aplikacje', title: 'Brak oficjalnej aplikacji', rec: { clip: '01_portada', start: 5.9 },
-        cuts: [{ at: 'Link', rec: { clip: '04_lalka', start: 6.5 } }, { at: 'jak', rec: { clip: '10_gp_app', start: 0.3, url: 'play.google.com' } },
+      { id: 'A09', kind: 'rec', bump: 'Na telefonie', kicker: 'Aplikacje', title: 'Brak oficjalnej aplikacji', rec: { clip: '01_portada', start: 6.5, holdAt: 9.8 },
+        cuts: [{ at: 'Link', rec: { clip: '04_lalka', start: 6.7 } }, { at: 'jak', rec: { clip: '10_gp_app', start: 0.3, url: 'play.google.com' } },
           { at: ['Librivoks', 2], rec: { clip: '11_appstore_app', start: 0.3, url: 'apps.apple.com/pl' } }],
         marks: [
           { at: 'oficjalnej', until: 'Link', x: 1250, y: 338, w: 420, h: 72 }, { at: 'Link', until: 'jak', x: 420, y: 895, w: 136, h: 60 },
@@ -138,12 +138,12 @@ export const piece: PLPiece = {
         { at: 'Browse', title: 'Browse the catalog' }, { at: 'Language', title: 'Language' }, { at: 'Polish', title: 'Polish' },
         { at: 'wpisz', title: 'albo wpisz tytuł', sub: 'w wyszukiwarkę u góry strony', rec: { clip: '01_portada', start: 0.3 } },
       ], marks: [{ at: 'wpisz', x: 1246, y: 128, w: 440, h: 64 }] },
-      { id: 'B03', kind: 'rec', kicker: 'Krok 3', title: 'Słuchaj od razu', rec: { clip: '05_lalka_play', start: 6.6 },
+      { id: 'B03', kind: 'rec', kicker: 'Krok 3', title: 'Słuchaj od razu', rec: { clip: '05_lalka_play', start: 6.4 },
         marks: [{ at: 'Play', x: 663, y: 432, w: 46, h: 48 }], zooms: [{ at: 'stronie', zoom: 1.6, x: 820, y: 470 }],
         tags: [{ at: 'Play', label: 'Play przy rozdziale', icon: 'play' }, { at: 'razu', label: 'Od razu w przeglądarce', tone: 'good' }] },
-      { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Pobierz na offline', rec: { clip: '04_lalka', start: 4.2 }, steps: [
+      { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Pobierz na offline', rec: { clip: '04_lalka', start: 4.4 }, steps: [
         { at: 'Dalnlold', title: 'Download', sub: 'cała książka (ZIP)' },
-        { at: 'tytul', title: 'Tytuł rozdziału', sub: 'jeden plik MP3', rec: { clip: '05_lalka_play', start: 4.7 } },
+        { at: 'tytul', title: 'Tytuł rozdziału', sub: 'jeden plik MP3', rec: { clip: '05_lalka_play', start: 5.0 } },
       ], marks: [{ at: 'Dalnlold', until: 'tytul', x: 420, y: 780, w: 136, h: 60 }, { at: 'tytul', x: 740, y: 436, w: 640, h: 44 }] },
       { id: 'B05', kind: 'features', kicker: 'Krok 5', title: 'Drobny druk', items: [
         { at: 'autor', label: 'Autor: † + 70 lat', sub: 'przy nagraniach spoza polskiej listy', icon: 'user' },

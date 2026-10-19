@@ -93,7 +93,7 @@
    "wait": 700
   },
   {
-   "eval": "window.scrollTo(0,9585)"
+   "eval": "(()=>{const a=document.querySelector('a.js-sublink[data-primary_key=\"51\"]');window.scrollTo(0,window.scrollY+a.getBoundingClientRect().top-440)})()"
   },
   {
    "wait": 1000
@@ -118,10 +118,7 @@
    "wait": 500
   },
   {
-   "move": [
-    709,
-    472
-   ],
+   "moveSel": "a.js-sublink[data-primary_key=\"51\"]",
    "dur": 650
   },
   {
@@ -134,7 +131,10 @@
    "click": true
   },
   {
-   "wait": 3600
+   "eval": "new Promise(r=>{const t0=Date.now();const t=setInterval(()=>{if(document.body.innerText.includes('Antymonachomachia')||Date.now()-t0>30000){clearInterval(t);r(1)}},250)})"
+  },
+  {
+   "wait": 1500
   },
   {
    "mark": "results"

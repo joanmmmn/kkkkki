@@ -18,11 +18,13 @@ export const piece: PLPiece = {
         { at: 'Legimi', label: 'Legimi · Empik Go · Audioteka', icon: 'headphones' }, { at: '0', label: 'Miesiąc za 0 zł', sub: 'z kartą, jeśli zdobędziesz kod', icon: 'gift' },
         { at: 'haczyk', label: 'Gdzie jest haczyk?', icon: 'search', tone: 'accent' }, { at: 'zdobyc', label: 'Jak zdobyć kod', icon: 'play' },
       ] },
-      { id: 'A02', kind: 'steps', bump: 'Jak to działa?', kicker: 'Kod z biblioteki', title: 'Jak to działa?', rec: { clip: '01_empik_biblioteki', start: 10.2, url: 'empik.com/biblioteki' }, steps: [
+      { id: 'A02', kind: 'steps', bump: 'Jak to działa?', kicker: 'Kod z biblioteki', title: 'Jak to działa?', rec: { clip: '01_empik_biblioteki', start: 11.2, url: 'empik.com/biblioteki' }, steps: [
         { at: 'kupuje', title: 'Biblioteka kupuje pulę kodów' }, { at: 'rozdaje', title: 'Rozdaje je czytelnikom', sub: 'za darmo' },
         { at: 'wpisujesz', title: 'Kod wpisujesz w serwisie' }, { at: '30', title: 'Zwykle 30 dni', sub: 'bez limitu tytułów' },
         { at: 'Placi', title: 'Płaci biblioteka', sub: 'Łódź: 500 000 zł z budżetu obywatelskiego', rec: { clip: '05_lodz_ebooki', start: 0.3, url: 'biblioteka.lodz.pl' } },
-      ] },
+      ],
+        marks: [{ at: 'rozdaje', until: 'wpisujesz', x: 376, y: 262, w: 260, h: 290 }, { at: 'wpisujesz', until: 'aplikacji', x: 826, y: 262, w: 300, h: 290 }, { at: 'aplikacji', until: 'Placi', x: 1316, y: 262, w: 260, h: 290 }],
+        zooms: [{ at: 'kupuje', zoom: 1.3, x: 976, y: 420 }] },
       { id: 'A03', kind: 'stat', kicker: 'Cena', title: 'Ile to kosztuje?', at: 'Nic', value: '0 zł', label: 'za kartę biblioteczną i za kod', tags: [
         { at: 'ustawy', label: 'Ustawa o bibliotekach, art. 14', sub: '„ogólnie dostępne i bezpłatne”', icon: 'doc' },
         { at: 'podpiac', label: 'Empik Go: bez karty płatniczej', sub: 'przy aktywacji kodu', icon: 'card' }, { at: 'wygasa', label: 'Po 30 dniach wygasa sam', sub: 'Empik Go, FAQ dla bibliotek', icon: 'clock' },
@@ -33,8 +35,11 @@ export const piece: PLPiece = {
           { at: 'osiemdziesieciu', label: 'ok. 80 000 audiobooków', icon: 'headphones' }, { at: 'dwustu', label: 'ok. 243 000 e-booków', sub: 'dane MBP we Wrocławiu', icon: 'book' },
           { at: 'lodzkiej', label: 'legimi.pl/bmwl', sub: 'strona dla Łodzi', icon: 'link' }, { at: 'dwoch', label: '2 urządzenia', sub: 'według bibliotek', icon: 'phone' },
         ] },
-      { id: 'A05', kind: 'rec', kicker: 'Serwis 2 z 3', title: 'Empik Go', rec: { clip: '02_empik_kod', start: 0.3, url: 'empik.com/go/biblioteki/kod' },
-        cuts: [{ at: 'Dziala', rec: { clip: '02_empik_kod', start: 8.0, url: 'empik.com/go/biblioteki/kod' } }, { at: 'jednym', rec: { clip: '02_empik_kod', start: 4.5, url: 'empik.com/go/biblioteki/kod' } }],
+      { id: 'A05', kind: 'rec', kicker: 'Serwis 2 z 3', title: 'Empik Go', rec: { clip: '02_empik_kod', start: 0.3, holdAt: 2.8, url: 'empik.com/go/biblioteki/kod' },
+        cuts: [{ at: 'Dziala', rec: { clip: '02_empik_kod', start: 10.6, holdAt: 11.3, url: 'empik.com/go/biblioteki/kod' } }, { at: 'jednym', rec: { clip: '02_empik_kod', start: 5.2, holdAt: 6.8, url: 'empik.com/go/biblioteki/kod' } }],
+        marks: [{ at: 'Osmioznakowy', until: ['empik', 1], x: 1046, y: 440, w: 410, h: 34 }, { at: ['empik', 1], until: 'Dziala', x: 1066, y: 246, w: 360, h: 70 },
+          { at: 'najczesciej', until: 'jednym', x: 380, y: 128, w: 1166, h: 108 }, { at: 'jednym', x: 786, y: 372, w: 460, h: 36 }],
+        zooms: [{ at: 'Osmioznakowy', zoom: 1.5, x: 1250, y: 380 }, { at: 'Dziala', zoom: 1.6, x: 960, y: 200 }, { at: 'jednym', zoom: 1.4, x: 960, y: 330 }],
         tags: [
           { at: 'audiobooki', label: 'Audiobooki i e-booki', sub: 'słuchowiska, podcasty', icon: 'headphones' }, { at: 'Osmioznakowy', label: 'Kod: 8 znaków', icon: 'lock' },
           { at: ['empik', 1], label: 'empik.com/biblioteki/kod', icon: 'link' }, { at: 'najczesciej', label: 'Najczęściej 30 dni', icon: 'calendar' },
@@ -99,7 +104,7 @@ export const piece: PLPiece = {
       { id: 'B03', kind: 'stat', kicker: 'Krok 3', title: 'Bądź pierwszy', at: 'Wroclawiu', value: '2.11.2026', label: 'następne wydawanie kodów w MBP we Wrocławiu', tags: [
         { at: 'rana', label: 'Najlepiej z samego rana', icon: 'clock' }, { at: 'grudnia', label: 'Potem 1.12.2026', sub: 'stan na 19.10.2026', icon: 'calendar' },
       ] },
-      { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Aktywuj kod', rec: { clip: '02_empik_kod', start: 0.3, url: 'empik.com/go/biblioteki/kod' }, steps: [
+      { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Aktywuj kod', rec: { clip: '02_empik_kod', start: 0.3, holdAt: 2.8, url: 'empik.com/go/biblioteki/kod' }, steps: [
         { at: 'aktywuj', title: 'W tym samym miesiącu' },
         { at: 'stronie', title: 'Na stronie podanej przez bibliotekę', sub: 'np. empik.com/biblioteki/kod, legimi.pl/bmwl' },
         { at: 'zaloguj', title: 'Zaloguj się albo załóż konto', rec: { clip: '04_legimi_lodz', start: 0.3, url: 'legimi.pl/bmwl' } },

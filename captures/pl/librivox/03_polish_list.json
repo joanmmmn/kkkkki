@@ -30,6 +30,9 @@
    "wait": 600
   },
   {
+   "eval": "new Promise(r=>{const t0=Date.now();const t=setInterval(()=>{if(document.body.innerText.includes('Antymonachomachia')||Date.now()-t0>30000){clearInterval(t);r(1)}},250)})"
+  },
+  {
    "wait": 2500
   },
   {

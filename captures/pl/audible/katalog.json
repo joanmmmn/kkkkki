@@ -30,7 +30,7 @@
    "wait": 900
   },
   {
-   "eval": "window.scrollTo(0,1150)"
+   "eval": "(()=>{const h=[...document.querySelectorAll('h2')].find(e=>e.textContent.trim()==='Bestseller');if(h)window.scrollTo(0,h.getBoundingClientRect().top+window.scrollY-170);})()"
   },
   {
    "wait": 1200
@@ -52,10 +52,8 @@
    "mark": "top"
   },
   {
-   "move": [
-    62,
-    932
-   ],
+   "moveText": "Polski",
+   "exact": true,
    "dur": 1200
   },
   {
@@ -65,10 +63,8 @@
    "mark": "bestseller"
   },
   {
-   "move": [
-    672,
-    290
-   ],
+   "moveText": "Dolina spokoju",
+   "exact": false,
    "dur": 1000
   },
   {
@@ -76,8 +72,8 @@
   },
   {
    "move": [
-    672,
-    478
+    760,
+    470
    ],
    "dur": 600
   },

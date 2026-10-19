@@ -4,14 +4,14 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 67,
- "duration": 7.482,
- "offset": 0.086,
+ "frames": 65,
+ "duration": 7.628,
+ "offset": 0.174,
  "marks": {
-  "top": 0.336,
-  "pustyni": 2.838,
+  "top": 0.262,
+  "pustyni": 2.807,
   "basn": 5.083,
-  "end": 7.482
+  "end": 7.628
  },
  "events": []
 }
