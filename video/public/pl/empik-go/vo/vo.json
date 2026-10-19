@@ -33,8 +33,8 @@
   },
   {
    "id": "A05",
-   "text": "Empik Go ma ponad 130 własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
-   "say": "Empik Go ma ponad sto trzydzieści własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralfem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz."
+   "text": "Empik Go ma 130 własnych produkcji, dostępnych tylko w Empik Go. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
+   "say": "Empik Go ma sto trzydzieści własnych produkcji, dostępnych tylko w Empik Go. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralfem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz."
   },
   {
    "id": "A06",
@@ -63,13 +63,13 @@
   },
   {
    "id": "A11",
-   "text": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, ponad 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
-   "say": "Plusy: audiobuki, ibuki i podkasty w jednym abonamencie, ponad sto trzydzieści własnych produkcji, tryb dziecięcy i czytniki, z Kindlem włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobuków nie posłuchasz na komputerze, a aplikacja bywa niestabilna."
+   "text": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
+   "say": "Plusy: audiobuki, ibuki i podkasty w jednym abonamencie, sto trzydzieści własnych produkcji, tryb dziecięcy i czytniki, z Kindlem włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobuków nie posłuchasz na komputerze, a aplikacja bywa niestabilna."
   },
   {
    "id": "A12",
-   "text": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z Audioteka Klub za 29,90 zł.",
-   "say": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do trzech książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobuków bez limitu, porównaj z Audioteka Klub za dwadzieścia dziewięć złotych dziewięćdziesiąt groszy."
+   "text": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z abonamentem Audioteka Klub za 29,90 zł miesięcznie.",
+   "say": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do trzech książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobuków bez limitu, porównaj z abonamentem Audioteka Klub za dwadzieścia dziewięć złotych dziewięćdziesiąt groszy miesięcznie."
   },
   {
    "id": "B01",

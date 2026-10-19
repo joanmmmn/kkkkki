@@ -1,8 +1,8 @@
 {
  "id": "A05",
- "hash": "fafc461513ae",
- "text": "Empik Go ma ponad 130 własnych produkcji, dostępnych tylko tutaj. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
- "duration": 14.08,
+ "hash": "9d759a26d6f4",
+ "text": "Empik Go ma 130 własnych produkcji, dostępnych tylko w Empik Go. Na przykład „Przygody Baltazara Gąbki” z Makłowiczem, Wojewódzkim i Ralphem Kaminskim, „Chołod” Szczepana Twardocha czy „Królestwo Pik” Weroniki Ancerowicz.",
+ "duration": 14.48,
  "words": [
   {
    "w": "Empik",
@@ -17,143 +17,148 @@
   {
    "w": "ma",
    "s": 0.8,
-   "e": 0.88
-  },
-  {
-   "w": "ponad",
-   "s": 0.96,
-   "e": 1.28
+   "e": 0.96
   },
   {
    "w": "sto",
-   "s": 1.36,
-   "e": 1.44
+   "s": 1.04,
+   "e": 1.2
   },
   {
    "w": "trzydzieści",
-   "s": 1.52,
-   "e": 2.0
+   "s": 1.28,
+   "e": 1.76
   },
   {
    "w": "własnych",
-   "s": 2.08,
-   "e": 2.48
+   "s": 1.84,
+   "e": 2.24
   },
   {
    "w": "produkcji,",
-   "s": 2.6,
-   "e": 3.0
+   "s": 2.32,
+   "e": 2.88
   },
   {
    "w": "dostępnych",
-   "s": 3.04,
-   "e": 3.6
+   "s": 2.92,
+   "e": 3.52
   },
   {
    "w": "tylko",
-   "s": 3.68,
+   "s": 3.6,
+   "e": 3.84
+  },
+  {
+   "w": "w",
+   "s": 3.88,
    "e": 3.92
   },
   {
-   "w": "tutaj.",
-   "s": 3.96,
-   "e": 4.8
+   "w": "Empik",
+   "s": 4.0,
+   "e": 4.24
+  },
+  {
+   "w": "Go.",
+   "s": 4.32,
+   "e": 4.96
   },
   {
    "w": "Na",
-   "s": 4.84,
-   "e": 4.88
+   "s": 5.0,
+   "e": 5.04
   },
   {
    "w": "przykład",
-   "s": 4.92,
-   "e": 5.36
+   "s": 5.08,
+   "e": 5.44
   },
   {
    "w": "„Przygody",
-   "s": 5.4,
-   "e": 5.84
+   "s": 5.6,
+   "e": 6.0
   },
   {
    "w": "Baltazara",
-   "s": 5.88,
-   "e": 6.32
+   "s": 6.04,
+   "e": 6.48
   },
   {
    "w": "Gąbki”",
-   "s": 6.4,
-   "e": 6.84
+   "s": 6.56,
+   "e": 7.04
   },
   {
    "w": "z",
-   "s": 6.88,
-   "e": 6.907
+   "s": 7.067,
+   "e": 7.093
   },
   {
    "w": "Makłowiczem,",
-   "s": 6.933,
-   "e": 7.64
+   "s": 7.12,
+   "e": 7.76
   },
   {
    "w": "Wojewódzkim",
-   "s": 7.68,
-   "e": 8.32
+   "s": 7.8,
+   "e": 8.48
   },
   {
    "w": "i",
-   "s": 8.36,
-   "e": 8.4
+   "s": 8.52,
+   "e": 8.56
   },
   {
    "w": "Ralfem",
-   "s": 8.48,
-   "e": 8.72
+   "s": 8.6,
+   "e": 8.88
   },
   {
    "w": "Kaminskim,",
-   "s": 8.8,
-   "e": 9.787
+   "s": 8.92,
+   "e": 9.84
   },
   {
    "w": "„Chołod”",
-   "s": 9.813,
-   "e": 10.28
+   "s": 9.88,
+   "e": 10.32
   },
   {
    "w": "Szczepana",
-   "s": 10.32,
-   "e": 10.64
+   "s": 10.36,
+   "e": 10.72
   },
   {
    "w": "Twardocha",
-   "s": 10.72,
-   "e": 11.28
-  },
-  {
-   "w": "czy",
-   "s": 11.44,
+   "s": 10.76,
    "e": 11.6
   },
   {
+   "w": "czy",
+   "s": 11.72,
+   "e": 11.84
+  },
+  {
    "w": "„Królestwo",
-   "s": 11.627,
-   "e": 12.16
+   "s": 11.867,
+   "e": 12.4
   },
   {
    "w": "Pik”",
-   "s": 12.2,
-   "e": 12.52
+   "s": 12.44,
+   "e": 12.8
   },
   {
    "w": "Weroniki",
-   "s": 12.56,
-   "e": 12.96
+   "s": 12.88,
+   "e": 13.28
   },
   {
    "w": "Ancerowicz.",
-   "s": 13.04,
-   "e": 14.08
+   "s": 13.36,
+   "e": 14.48
   }
  ],
- "speechEnd": 13.671
+ "speechEnd": 13.986
 }

@@ -1,8 +1,8 @@
 {
  "id": "A11",
- "hash": "879b899f6252",
- "text": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, ponad 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
- "duration": 17.92,
+ "hash": "32f5bddad0a3",
+ "text": "Plusy: audiobooki, ebooki i podcasty w jednym abonamencie, 130 własnych produkcji, tryb dziecięcy i czytniki, z Kindle'em włącznie. Minusy: Go Smart działa na jednym urządzeniu, audiobooków nie posłuchasz na komputerze, a aplikacja bywa niestabilna.",
+ "duration": 17.6,
  "words": [
   {
    "w": "Plusy:",
@@ -12,178 +12,173 @@
   {
    "w": "audiobuki,",
    "s": 0.96,
-   "e": 1.84
+   "e": 1.76
   },
   {
    "w": "ibuki",
-   "s": 1.92,
+   "s": 1.84,
    "e": 2.4
   },
   {
    "w": "i",
-   "s": 2.48,
-   "e": 2.52
+   "s": 2.44,
+   "e": 2.48
   },
   {
    "w": "podkasty",
    "s": 2.56,
-   "e": 3.12
+   "e": 3.04
   },
   {
    "w": "w",
-   "s": 3.2,
-   "e": 3.24
+   "s": 3.12,
+   "e": 3.2
   },
   {
    "w": "jednym",
-   "s": 3.28,
-   "e": 3.6
+   "s": 3.24,
+   "e": 3.52
   },
   {
    "w": "abonamencie,",
-   "s": 3.64,
-   "e": 4.64
-  },
-  {
-   "w": "ponad",
-   "s": 4.72,
-   "e": 5.04
+   "s": 3.6,
+   "e": 4.6
   },
   {
    "w": "sto",
-   "s": 5.12,
-   "e": 5.28
+   "s": 4.64,
+   "e": 4.72
   },
   {
    "w": "trzydzieści",
+   "s": 4.88,
+   "e": 5.28
+  },
+  {
+   "w": "własnych",
    "s": 5.36,
    "e": 5.76
   },
   {
-   "w": "własnych",
-   "s": 5.84,
-   "e": 6.24
-  },
-  {
    "w": "produkcji,",
-   "s": 6.36,
-   "e": 7.08
+   "s": 5.92,
+   "e": 6.68
   },
   {
    "w": "tryb",
-   "s": 7.12,
-   "e": 7.28
+   "s": 6.72,
+   "e": 6.907
   },
   {
    "w": "dziecięcy",
-   "s": 7.333,
-   "e": 7.92
+   "s": 6.933,
+   "e": 7.52
   },
   {
    "w": "i",
-   "s": 7.96,
-   "e": 8.0
+   "s": 7.56,
+   "e": 7.6
   },
   {
    "w": "czytniki,",
-   "s": 8.08,
-   "e": 8.76
+   "s": 7.68,
+   "e": 8.427
   },
   {
    "w": "z",
-   "s": 8.8,
-   "e": 8.84
+   "s": 8.453,
+   "e": 8.48
   },
   {
    "w": "Kindlem",
-   "s": 8.88,
-   "e": 9.2
+   "s": 8.6,
+   "e": 8.8
   },
   {
    "w": "włącznie.",
-   "s": 9.24,
-   "e": 10.2
+   "s": 8.88,
+   "e": 9.973
   },
   {
    "w": "Minusy:",
-   "s": 10.24,
-   "e": 11.16
+   "s": 10.107,
+   "e": 10.853
   },
   {
    "w": "Go",
-   "s": 11.2,
-   "e": 11.28
+   "s": 10.907,
+   "e": 10.96
   },
   {
    "w": "Smart",
-   "s": 11.44,
-   "e": 11.76
+   "s": 11.04,
+   "e": 11.36
   },
   {
    "w": "działa",
-   "s": 11.8,
-   "e": 12.0
+   "s": 11.44,
+   "e": 11.68
   },
   {
    "w": "na",
-   "s": 12.08,
-   "e": 12.16
+   "s": 11.76,
+   "e": 11.84
   },
   {
    "w": "jednym",
-   "s": 12.24,
-   "e": 12.56
+   "s": 11.88,
+   "e": 12.16
   },
   {
    "w": "urządzeniu,",
-   "s": 12.6,
-   "e": 13.4
+   "s": 12.2,
+   "e": 13.0
   },
   {
    "w": "audiobuków",
-   "s": 13.44,
-   "e": 14.0
+   "s": 13.04,
+   "e": 13.6
   },
   {
    "w": "nie",
-   "s": 14.08,
-   "e": 14.16
+   "s": 13.68,
+   "e": 13.76
   },
   {
    "w": "posłuchasz",
-   "s": 14.28,
-   "e": 14.64
+   "s": 13.84,
+   "e": 14.24
   },
   {
    "w": "na",
-   "s": 14.68,
-   "e": 14.72
+   "s": 14.28,
+   "e": 14.32
   },
   {
    "w": "komputerze,",
-   "s": 14.8,
-   "e": 15.653
+   "s": 14.4,
+   "e": 15.32
   },
   {
    "w": "a",
-   "s": 15.707,
-   "e": 15.76
+   "s": 15.36,
+   "e": 15.44
   },
   {
    "w": "aplikacja",
-   "s": 15.84,
-   "e": 16.4
+   "s": 15.52,
+   "e": 16.08
   },
   {
    "w": "bywa",
-   "s": 16.48,
-   "e": 16.64
+   "s": 16.16,
+   "e": 16.32
   },
   {
    "w": "niestabilna.",
-   "s": 16.72,
-   "e": 17.92
+   "s": 16.44,
+   "e": 17.6
   }
  ],
- "speechEnd": 17.422
+ "speechEnd": 17.039
 }

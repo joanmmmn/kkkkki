@@ -19,15 +19,15 @@ Sprawdziliśmy Wolne Lektury: katalog, lektorów, pobieranie MP3, aplikację i d
 ⏱️ Rozdziały
 0:00 Darmowe audiobooki: gdzie jest haczyk?
 0:15 Czym są Wolne Lektury
-0:41 Ile to kosztuje i gdzie jest haczyk
+0:40 Ile to kosztuje i gdzie jest haczyk
 0:59 Katalog audiobooków
-1:17 Odtwarzacz i lektorzy
+1:16 Odtwarzacz i lektorzy
 1:50 Pobieranie MP3 i e-booki
-2:22 Urządzenia i aplikacja
+2:21 Urządzenia i aplikacja
 2:36 Opinie
 2:54 Plusy i minusy
-3:13 Werdykt: czy warto?
-3:40 Jak zacząć
+3:12 Werdykt: czy warto?
+3:39 Jak zacząć
 
 W filmie:
 • Wolne Lektury to internetowa biblioteka Fundacji Wolne Lektury z Warszawy, działająca od 2007 roku: 7332 utwory, ponad 1000 audiobooków i ponad 7 mln użytkowników rocznie.

@@ -1,8 +1,8 @@
 {
  "id": "A12",
- "hash": "88b7ba0e53cc",
- "text": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z Audioteka Klub za 29,90 zł.",
- "duration": 15.28,
+ "hash": "ca47aff7955e",
+ "text": "Werdykt: Go Smart to dobry wybór, jeśli słuchasz i czytasz na jednym telefonie. Jeśli kończysz do 3 książek miesięcznie, wystarczy Go Standard. A jeśli chcesz tylko audiobooków bez limitu, porównaj z abonamentem Audioteka Klub za 29,90 zł miesięcznie.",
+ "duration": 16.32,
  "words": [
   {
    "w": "Werdykt:",
@@ -32,27 +32,27 @@
   {
    "w": "wybór,",
    "s": 2.16,
-   "e": 2.48
+   "e": 2.44
   },
   {
    "w": "jeśli",
-   "s": 2.56,
-   "e": 2.8
+   "s": 2.48,
+   "e": 2.72
   },
   {
    "w": "słuchasz",
-   "s": 2.88,
-   "e": 3.28
+   "s": 2.8,
+   "e": 3.2
   },
   {
    "w": "i",
-   "s": 3.32,
-   "e": 3.36
+   "s": 3.24,
+   "e": 3.28
   },
   {
    "w": "czytasz",
-   "s": 3.44,
-   "e": 3.72
+   "s": 3.36,
+   "e": 3.68
   },
   {
    "w": "na",
@@ -67,76 +67,76 @@
   {
    "w": "telefonie.",
    "s": 4.28,
-   "e": 5.013
+   "e": 5.067
   },
   {
    "w": "Jeśli",
-   "s": 5.067,
+   "s": 5.093,
    "e": 5.28
   },
   {
    "w": "kończysz",
    "s": 5.4,
-   "e": 5.6
+   "e": 5.68
   },
   {
    "w": "do",
-   "s": 5.68,
-   "e": 5.76
+   "s": 5.76,
+   "e": 5.84
   },
   {
    "w": "trzech",
-   "s": 5.8,
-   "e": 6.0
+   "s": 5.88,
+   "e": 6.08
   },
   {
    "w": "książek",
-   "s": 6.08,
+   "s": 6.16,
    "e": 6.4
   },
   {
    "w": "miesięcznie,",
    "s": 6.48,
-   "e": 7.26
+   "e": 7.227
   },
   {
    "w": "wystarczy",
-   "s": 7.32,
-   "e": 7.68
+   "s": 7.253,
+   "e": 7.6
   },
   {
    "w": "Go",
-   "s": 7.76,
-   "e": 7.84
+   "s": 7.68,
+   "e": 7.76
   },
   {
    "w": "Standard.",
-   "s": 7.92,
-   "e": 8.76
+   "s": 7.84,
+   "e": 8.747
   },
   {
    "w": "A",
-   "s": 8.8,
-   "e": 8.84
+   "s": 8.773,
+   "e": 8.8
   },
   {
    "w": "jeśli",
    "s": 8.88,
-   "e": 9.12
+   "e": 9.04
   },
   {
    "w": "chcesz",
-   "s": 9.16,
-   "e": 9.4
+   "s": 9.08,
+   "e": 9.36
   },
   {
    "w": "tylko",
-   "s": 9.44,
+   "s": 9.4,
    "e": 9.68
   },
   {
    "w": "audiobuków",
-   "s": 9.8,
+   "s": 9.76,
    "e": 10.32
   },
   {
@@ -146,7 +146,7 @@
   },
   {
    "w": "limitu,",
-   "s": 10.56,
+   "s": 10.64,
    "e": 11.173
   },
   {
@@ -156,49 +156,59 @@
   },
   {
    "w": "z",
-   "s": 11.6,
-   "e": 11.64
+   "s": 11.56,
+   "e": 11.6
+  },
+  {
+   "w": "abonamentem",
+   "s": 11.68,
+   "e": 12.24
   },
   {
    "w": "Audioteka",
-   "s": 11.68,
-   "e": 12.16
-  },
-  {
-   "w": "Klub",
-   "s": 12.24,
-   "e": 12.56
-  },
-  {
-   "w": "za",
-   "s": 12.64,
+   "s": 12.32,
    "e": 12.8
   },
   {
-   "w": "dwadzieścia",
+   "w": "Klub",
    "s": 12.84,
-   "e": 13.2
+   "e": 13.12
+  },
+  {
+   "w": "za",
+   "s": 13.2,
+   "e": 13.28
+  },
+  {
+   "w": "dwadzieścia",
+   "s": 13.36,
+   "e": 13.76
   },
   {
    "w": "dziewięć",
-   "s": 13.28,
-   "e": 13.44
+   "s": 13.8,
+   "e": 14.0
   },
   {
    "w": "złotych",
-   "s": 13.52,
-   "e": 13.84
-  },
-  {
-   "w": "dziewięćdziesiąt",
-   "s": 13.92,
+   "s": 14.08,
    "e": 14.4
   },
   {
-   "w": "groszy.",
+   "w": "dziewięćdziesiąt",
    "s": 14.48,
+   "e": 15.0
+  },
+  {
+   "w": "groszy",
+   "s": 15.04,
    "e": 15.28
+  },
+  {
+   "w": "miesięcznie.",
+   "s": 15.333,
+   "e": 16.32
   }
  ],
- "speechEnd": 14.877
+ "speechEnd": 15.864
 }
