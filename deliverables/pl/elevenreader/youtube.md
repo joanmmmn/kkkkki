@@ -16,19 +16,19 @@ Sprawdziliśmy plan darmowy, ceny w Polsce, polskie audiobooki i drobny druk.
 
 W tym filmie:
 • Czym jest ElevenReader i od kiedy działa po polsku (od 25.04.2025).
-• Cennik: Free z 10 godzinami zamiany tekstu na mowę miesięcznie i Ultra – na stronie 11 USD miesięcznie albo 99 USD rocznie (3 dni za darmo), w polskim App Storze 39,00 zł miesięcznie albo 349,00 zł rocznie.
+• Cennik: Free z 10 godzinami zamiany tekstu na mowę miesięcznie i Ultra – na elevenreader.io 11 USD miesięcznie albo 99 USD rocznie (3 dni za darmo; ceny w USD, kwota przy płatności może się różnić), w polskim App Storze 39,00 zł miesięcznie albo 349,00 zł rocznie.
 • Twoje teksty w audio: PDF, EPUB, Word, TXT i HTML do 500 stron, linki do artykułów i zdjęcia kartek.
 • Ponad 1000 głosów i głos AI Piotra Fronczewskiego z serii Iconic Voices.
 • Polskie audiobooki: darmowa klasyka z Wolnych Lektur i tytuły z lektorami w Ultra – z limitem 20 godzin premium miesięcznie.
 • Odtwarzacz, urządzenia (bez Android Auto), oceny w Google Play i App Storze, plusy i minusy.
-• Werdykt, jak zacząć za darmo, jak liczą się godziny, próba Ultra i jak zrezygnować.
+• Werdykt, jak zacząć za darmo, jak liczone są godziny, próba Ultra i jak zrezygnować.
 
 Rozdziały
 0:00 ElevenReader: czy warto?
 0:15 Czym jest ElevenReader
 0:32 Cennik: Free i Ultra
 0:49 Twoje pliki i teksty
-1:06 Głosy i Piotr Fronczewski
+1:07 Głosy i Piotr Fronczewski
 1:21 Polskie audiobooki
 1:39 Limit 20 godzin premium
 1:52 Odtwarzacz
@@ -37,7 +37,7 @@ Rozdziały
 2:38 Plusy i minusy
 2:55 Werdykt: czy warto?
 3:12 Jak zacząć za darmo
-3:23 Jak liczą się godziny
+3:24 Jak liczone są godziny
 3:37 Ultra: 3 dni za darmo na stronie
 3:49 Jak zrezygnować
 
@@ -55,9 +55,10 @@ Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 • Iconic Voices: https://elevenreader.io/iconic-voices
 • „Lalka” z lektorami: https://elevenreader.io/audiobooks/lalka-audiobook/983KJwqh8GXFo3AFK38F
 • „Lalka, tom pierwszy” (Wolne Lektury): https://elevenreader.io/audiobooks/lalka-tom-pierwszy-audiobook/wolnelektury:lalka-tom-pierwszy
+• Rejestracja (Google, Apple albo e-mail): https://elevenreader.io/reader/sign-up
 • Audioteka Klub: https://klub.audioteka.com/
 
-Ceny i warunki: stan na październik 2026 (oceny w sklepach: 19.10.2026). Ceny ze strony elevenreader.io podajemy w dolarach, tak jak pokazuje je strona; ceny w aplikacji – według polskiego App Store. Mogą się zmienić.
+Ceny i warunki: stan na październik 2026 (oceny w sklepach: 19.10.2026). Ceny ze strony elevenreader.io podajemy w dolarach, tak jak pokazuje je strona (ceny w USD; kwota przy płatności może się różnić); ceny w aplikacji – według polskiego App Store'a. Mogą się zmienić.
 Film nie jest sponsorowany i nie zawiera linków afiliacyjnych. Głos Piotra Fronczewskiego w ElevenReader to licencjonowany głos AI z serii Iconic Voices. Opinie użytkowników to ich zdanie, nie nasze testy. Znaki towarowe należą do ich właścicieli. Muzyka skomponowana dla SonorBooks.
 
 #ElevenReader #audiobooki #AI
@@ -82,10 +83,10 @@ Porównanie platform z audiobookami po polsku: https://sonorbooks.pl
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; ElevenReader no está en sonorbooks.pl y no hay enlace de afiliado polaco).
 - **Contenido para niños:** No.
 - **Qué hay que decidir o comprobar:**
-  1. **Pronunciación de «Fronczewskiego» en el gancho (A01, 0:04).** La primera toma salía «Kiotra» en vez de «Piotra» (Whisper medium y large-v3 coincidían) y la regeneré; en la nueva, Whisper medium oye «Piotra Frączewskiego» (suena igual que Fronczewskiego) y large-v3 «Franczewskiego». Conviene escucharla; si no convence, se regenera solo A01 (224 caracteres).
-  2. **Precios de la web en USD** (11 USD/mes, 99 USD/año, «Lalka» 24 USD), vistos desde fuera de Polonia. No sabemos si el pago desde Polonia muestra otra moneda ni si suma IVA: el vídeo no dice nada de eso. Tampoco sabemos cuánto dura la prueba dentro de la app (los «3 días» son de la web).
+  1. **Escuchar A01 y B06.** A01 ahora empieza «Każdy tekst…» y se ha regenerado (antes salió «Kiotra» en vez de «Piotra»); conviene oír «Piotra Fronczewskiego». En B06 hay una pausa nueva antes de «Empik Go» («Audiotekę… Empik Go») para que no se pegue a la «ę».
+  2. **Precios de la web en USD** (11 USD/mes, 99 USD/año, «Lalka» 24 USD): solo se vieron desde fuera de Polonia y sin pasar por el pago, así que el vídeo y la descripción dicen «ceny w USD; kwota przy płatności może się różnić». No sabemos cuánto dura la prueba dentro de la app (los «3 días» son de la web).
   3. **Derechos de consumidor:** la ficha de la App Store polaca indica que Eleven Labs Inc. no se ha identificado como comerciante (los derechos de consumidor de la UE no se aplicarían). No está en el vídeo; decide si lo quieres en la descripción.
   4. **Logotipo:** la plantilla usa el mismo archivo para el icono y la marca, así que he montado un logotipo apilado (icono oficial del sol encima del logotipo oficial «ElevenReader» de elevenreader.io), en negro y en blanco.
   5. **Demo de la app:** el gancho va con las webs oficiales. Si grabas la app leyendo un PDF propio de dominio público con una voz polaca, se puede poner en A01.
-  6. **Cambios sobre el guion del investigador:** el cierre dice «Na sonorbooks.pl» (no «W»), como pide el brief, y los subtítulos de A03/A10 dicen «w polskim App Storze» (la voz ya lo declinaba).
-  7. **Miniatura:** «CZY WARTO PŁACIĆ?», sello «10 h/mies. za darmo» (plan Free) y etiqueta «Ultra 39 ZŁ / MIES.» (App Store PL).
+  6. **Cambios sobre el guion del investigador:** el gancho dice «Każdy tekst…» (en pantalla no se lee ningún texto concreto), el cierre dice «Na sonorbooks.pl» (no «W») y enseña la página /platformy/ de sonorbooks.pl, y los subtítulos de A03/A10 dicen «w polskim App Storze» (la voz ya lo declinaba).
+  7. **Miniatura:** «CZY WARTO PŁACIĆ?», sello «10 h/mies. za darmo» (plan Free) y etiqueta «App Store 39 ZŁ / MIES.» (precio de Ultra en la App Store polaca; «Ultra w App Store» no cabía).

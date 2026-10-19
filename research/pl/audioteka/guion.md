@@ -162,3 +162,12 @@ ES: En sonorbooks.pl compruebas si tu audiolibro está en Audioteka Klub y compa
 - **A10 / B05** (añadidos del 19/10, 16:45): «w polskim App Store» → «w polskim **App Storze**»; «w Google Play albo App Store» → «… albo **App Storze**» (say «Ep Storze»).
 - Pantalla: precios con «stan na październik 2026» (A03, B04), notas de tiendas con «stan na 19.10.2026»; A11 y A12 sin cifras de precio; condiciones de los 14 días en `sub`.
 - Tomas (`captures/pl/audioteka/`): superprod (gancho), klub_hero (A02), katalog (A04), solaris (A05), klub_korzysci (A06, A07), pomoc (A08S, B05), kids (A08B), klub_mobile (B01, B02), sb_solaris (B06). La 03_strona_glowna no se graba (lleva el banner de la promoción).
+
+### Revisión independiente (19.10.2026, noche)
+
+- A05: «„Solaris” Lema» → «„Solaris” **Stanisława** Lema» (se oía «Solarii Slema»). Pantalla «7 h 56 min».
+- A06: última frase → «Klubowicze słuchają nowych produkcji oryginalnych na kilka tygodni przed premierą w sklepie.»; pantalla «wcześniej niż w sklepie».
+- A08: sin cifra de velocidad («ustawisz prędkość odtwarzania»): Google Play dice hasta 3x y el centro de ayuda hasta 2,0x (ver dossier).
+- A11: «wyłączności» → «tytuły na wyłączność»; «e-booków/e-booki» en pantalla y subtítulos.
+- A12: pausa de 0,18 s antes de «Empik Go» (solo audio; el texto no cambia salvo «e-booki»).
+- Para no pasar de 5.500 caracteres, en A05, A06 y A11 solo se regeneró la frase cambiada y se empalmó en la pausa natural con el audio anterior (ajuste de volumen < 0,6 dB); A08 se regeneró entera.

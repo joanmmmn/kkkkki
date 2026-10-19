@@ -1,295 +1,295 @@
 1
-00:00:00,300 --> 00:00:04,260
-Ten tekst może ci przeczytać sztuczna
+00:00:00,300 --> 00:00:04,460
+Każdy tekst może ci przeczytać sztuczna
 inteligencja – nawet głosem Piotra
 
 2
-00:00:04,300 --> 00:00:08,510
+00:00:04,500 --> 00:00:08,710
 Fronczewskiego. To ElevenReader,
 aplikacja od ElevenLabs.
 
 3
-00:00:08,860 --> 00:00:10,470
+00:00:09,020 --> 00:00:10,470
 Czy warto za nią płacić?
 
 4
-00:00:10,540 --> 00:00:15,030
+00:00:10,620 --> 00:00:15,110
 Sprawdziliśmy plan darmowy, Ultra,
 polskie audiobooki i drobny druk.
 
 5
-00:00:15,952 --> 00:00:21,220
+00:00:16,032 --> 00:00:21,300
 ElevenReader czyta na głos twoje pliki,
 artykuły i strony, a do tego ma bibliotekę
 
 6
-00:00:21,260 --> 00:00:27,620
+00:00:21,340 --> 00:00:27,700
 audiobooków. Stworzyło go ElevenLabs,
 firma dwóch Polaków założona w 2022 roku,
 
 7
-00:00:27,660 --> 00:00:32,390
+00:00:27,740 --> 00:00:32,470
 a polska wersja aplikacji
 działa od kwietnia 2025 roku.
 
 8
-00:00:32,920 --> 00:00:36,880
+00:00:33,000 --> 00:00:36,960
 Plan darmowy daje 10 godzin
 zamiany tekstu na mowę miesięcznie.
 
 9
-00:00:36,920 --> 00:00:43,200
+00:00:37,000 --> 00:00:43,280
 Ultra na stronie to 11 dolarów miesięcznie
 albo 99 rocznie, z 3 dniami za darmo,
 
 10
-00:00:43,240 --> 00:00:49,330
+00:00:43,320 --> 00:00:49,410
 a w polskim App Storze – 39 zł
 miesięcznie albo 349 zł rocznie.
 
 11
-00:00:49,860 --> 00:00:58,260
+00:00:49,940 --> 00:00:58,340
 Największa siła to twoje teksty: pliki
 PDF, EPUB, Word, TXT i HTML do 500 stron,
 
 12
-00:00:58,300 --> 00:01:00,860
+00:00:58,380 --> 00:01:00,940
 linki do artykułów albo zdjęcia kartek.
 
 13
-00:01:00,900 --> 00:01:06,590
+00:01:00,980 --> 00:01:06,670
 W Ultra import pomija nagłówki i stopki,
 a limit to 24 godziny audio dziennie.
 
 14
-00:01:07,080 --> 00:01:11,760
+00:01:07,160 --> 00:01:11,840
 Głosów jest ponad 1000, a aplikacja
 poleca je według języka telefonu.
 
 15
-00:01:11,800 --> 00:01:15,253
+00:01:11,880 --> 00:01:15,333
 W Ultra zaprojektujesz też
 własny głos na podstawie opisu.
 
 16
-00:01:15,293 --> 00:01:19,600
+00:01:15,373 --> 00:01:19,680
 A wśród ikonicznych głosów jest Piotr
 Fronczewski – jego cyfrowy głos powstał we
 
 17
-00:01:19,640 --> 00:01:21,250
+00:01:19,720 --> 00:01:21,330
 współpracy z aktorem.
 
 18
-00:01:21,840 --> 00:01:23,560
+00:01:21,920 --> 00:01:23,640
 A audiobooki po polsku?
 
 19
-00:01:23,600 --> 00:01:27,760
+00:01:23,680 --> 00:01:27,840
 Za darmo jest klasyka z Wolnych Lektur,
 na przykład pierwszy tom „Lalki”, który
 
 20
-00:01:27,800 --> 00:01:30,360
+00:01:27,880 --> 00:01:30,440
 przeczyta ci dowolny głos z aplikacji.
 
 21
-00:01:30,400 --> 00:01:34,520
+00:01:30,480 --> 00:01:34,600
 W Ultra są też audiobooki z lektorami –
 choćby „Lalka” w interpretacji Grzegorza
 
 22
-00:01:34,560 --> 00:01:39,450
+00:01:34,640 --> 00:01:39,530
 Damięckiego i Krzysztofa Gosztyły czy
 kryminały Henninga Mankella po polsku.
 
 23
-00:01:39,580 --> 00:01:44,500
+00:01:39,660 --> 00:01:44,580
 Uwaga na limit: Ultra daje 20 godzin
 tytułów premium miesięcznie, a „Lalka”
 
 24
-00:01:44,540 --> 00:01:48,780
+00:01:44,620 --> 00:01:48,860
 z lektorami trwa ponad 36
 godzin – to prawie 2 miesiące.
 
 25
-00:01:48,820 --> 00:01:52,790
+00:01:48,900 --> 00:01:52,870
 Można ją też kupić osobno,
 na stronie, za 24 dolary.
 
 26
-00:01:53,400 --> 00:01:56,693
+00:01:53,480 --> 00:01:56,773
 Podczas słuchania tekst
 podświetla się słowo po słowie.
 
 27
-00:01:56,733 --> 00:02:01,147
+00:01:56,813 --> 00:02:01,227
 Prędkość podkręcisz do 4 razy,
 masz wyłącznik czasowy i zakładki.
 
 28
-00:02:01,187 --> 00:02:04,480
+00:02:01,267 --> 00:02:04,560
 W Ultra pobierzesz teksty
 i książki offline – pobrane pliki
 
 29
-00:02:04,520 --> 00:02:06,530
+00:02:04,600 --> 00:02:06,610
 działają przez 60 dni.
 
 30
-00:02:06,760 --> 00:02:11,960
+00:02:06,840 --> 00:02:12,040
 Działa na iPhonie, iPadzie, Androidzie
 i w przeglądarce, z synchronizacją, a do
 
 31
-00:02:12,000 --> 00:02:13,600
+00:02:12,080 --> 00:02:13,680
 Chrome'a jest rozszerzenie.
 
 32
-00:02:13,640 --> 00:02:17,170
+00:02:13,720 --> 00:02:17,250
 Androida Auto brakuje –
 i użytkownicy na to narzekają.
 
 33
-00:02:17,900 --> 00:02:22,790
+00:02:17,980 --> 00:02:22,870
 W Google Play ElevenReader
 ma 4,6 przy prawie 70 tys.
 
 34
-00:02:22,940 --> 00:02:28,553
+00:02:23,020 --> 00:02:28,633
 opinii, a w polskim App
 Storze 4,7 przy 704 ocenach.
 
 35
-00:02:28,593 --> 00:02:32,553
+00:02:28,673 --> 00:02:32,633
 Chwalone są naturalne głosy
 i to, że przeczyta dowolny plik.
 
 36
-00:02:32,593 --> 00:02:37,340
+00:02:32,673 --> 00:02:37,420
 Krytykowane: brak Androida Auto, gubienie
 miejsca po przerwie i nagłe żądania
 
 37
-00:02:37,380 --> 00:02:38,790
+00:02:37,460 --> 00:02:38,870
 płatnego planu.
 
 38
-00:02:39,280 --> 00:02:45,080
+00:02:39,360 --> 00:02:45,160
 Plusy: naturalne głosy, prawie każdy tekst
 zamienisz w audio, darmowa polska klasyka
 
 39
-00:02:45,120 --> 00:02:47,587
+00:02:45,200 --> 00:02:47,667
 i 10 godzin miesięcznie gratis.
 
 40
-00:02:47,627 --> 00:02:52,120
+00:02:47,707 --> 00:02:52,200
 Minusy: strona po angielsku i w dolarach,
 tylko 20 godzin premium, bez
 
 41
-00:02:52,160 --> 00:02:55,290
+00:02:52,240 --> 00:02:55,370
 współdzielenia konta
 i bez eksportu nagrań.
 
 42
-00:02:55,900 --> 00:03:01,513
+00:02:55,980 --> 00:03:01,593
 Czy warto? Jeśli dużo czytasz z PDF-ów,
 e-booków bez wersji audio albo artykułów –
 
 43
-00:03:01,553 --> 00:03:06,580
+00:03:01,633 --> 00:03:06,660
 tak. Jeśli szukasz polskich audiobooków
 z lektorem, porównaj najpierw abonamenty:
 
 44
-00:03:06,620 --> 00:03:11,990
+00:03:06,700 --> 00:03:12,070
 Audioteka Klub kosztuje 29,90 zł
 miesięcznie bez limitu godzin.
 
 45
-00:03:12,940 --> 00:03:14,460
+00:03:13,020 --> 00:03:14,540
 Jak zacząć za darmo?
 
 46
-00:03:14,500 --> 00:03:19,830
+00:03:14,580 --> 00:03:19,910
 Załóż konto na elevenreader.io albo
 w aplikacji – przez konto Google, Apple
 
 47
-00:03:19,900 --> 00:03:23,910
+00:03:19,980 --> 00:03:23,990
 albo adres e-mail. Plan
 darmowy nie wymaga subskrypcji.
 
 48
-00:03:24,060 --> 00:03:27,380
+00:03:24,140 --> 00:03:27,460
 Wgraj plik albo wklej link i wybierz głos.
 
 49
-00:03:27,420 --> 00:03:31,660
+00:03:27,500 --> 00:03:31,740
 Godziny schodzą tylko przy pierwszej
 zamianie tekstu na mowę – i szybciej, gdy
 
 50
-00:03:31,700 --> 00:03:35,620
+00:03:31,780 --> 00:03:35,700
 słuchasz szybciej. Ponowne słuchanie
 i darmowe książki z biblioteki
 
 51
-00:03:35,660 --> 00:03:37,270
+00:03:35,740 --> 00:03:37,350
 ich nie zużywają.
 
 52
-00:03:37,400 --> 00:03:40,560
+00:03:37,480 --> 00:03:40,640
 Chcesz Ultra? Na stronie
 masz 3 dni za darmo.
 
 53
-00:03:40,600 --> 00:03:45,280
+00:03:40,680 --> 00:03:45,360
 Jeśli nie anulujesz przed końcem próby,
 subskrypcja ruszy sama i pobierze opłatę.
 
 54
-00:03:45,320 --> 00:03:49,650
+00:03:45,400 --> 00:03:49,730
 W aplikacji płacisz w złotówkach,
 przez App Store albo Google Play.
 
 55
-00:03:49,760 --> 00:03:54,840
+00:03:49,840 --> 00:03:54,920
 Rezygnujesz tam, gdzie kupiłeś: na stronie
 – awatar, Szczegóły konta, Zarządzaj
 
 56
-00:03:54,880 --> 00:03:58,760
+00:03:54,960 --> 00:03:58,840
 płatnościami; w telefonie –
 w subskrypcjach App Store albo Google
 
 57
-00:03:58,800 --> 00:04:02,013
+00:03:58,880 --> 00:04:02,093
 Play. Samo odinstalowanie
 aplikacji nie wystarczy.
 
 58
-00:04:02,053 --> 00:04:04,970
+00:04:02,133 --> 00:04:05,050
 Dostęp masz do końca opłaconego okresu.
 
 59
-00:04:05,080 --> 00:04:06,880
+00:04:05,160 --> 00:04:06,960
 Wolisz audiobooki z lektorem?
 
 60
-00:04:06,920 --> 00:04:13,020
+00:04:07,000 --> 00:04:13,120
 Na sonorbooks.pl porównasz inne opcje –
 Audiotekę, Empik Go, Legimi czy Audible –
 
 61
-00:04:13,060 --> 00:04:16,000
+00:04:13,160 --> 00:04:16,107
 i sprawdzisz, gdzie posłuchasz
 audiobooka i za ile.
 
 62
-00:04:16,040 --> 00:04:19,010
+00:04:16,147 --> 00:04:19,010
 Twoja następna historia
 już na ciebie czeka.

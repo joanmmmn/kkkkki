@@ -16,14 +16,14 @@ W tym filmie: czym jest Audioteka i co dostajesz w Audioteka Klub, ile kosztują
 0:32 Cennik: Plan Optymalny, Smart i na Start
 0:54 Katalog bez logowania
 1:05 Przykład: „Solaris”
-1:20 Superprodukcje i tytuły za dopłatą
-1:47 Aplikacja, limit godzin i Audioteka Kids
-2:15 Urządzenia
+1:21 Superprodukcje i tytuły za dopłatą
+1:48 Aplikacja, limit godzin i Audioteka Kids
+2:14 Urządzenia
 2:28 Opinie
 2:45 Plusy i minusy
 3:02 Werdykt: czy warto?
-3:16 Jak wypróbować 14 dni za darmo
-3:51 Jak zrezygnować
+3:17 Jak wypróbować 14 dni za darmo
+3:52 Jak zrezygnować
 
 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 
@@ -62,7 +62,9 @@ A zanim kupisz audiobook, sprawdź na https://sonorbooks.pl, czy jest w abonamen
 - **Contenido para niños:** No.
 - **Duración:** 4:27 (capítulos arriba, desde `pl_meta`).
 - **Decidir / confirmar antes de publicar:**
-  - La promoción del Plan na Start (10,90 zł/mes, hasta el 26.10.2026 a las 15:00) no aparece en ningún sitio: ni en la voz, ni en los textos, ni en las tomas (las de klub.audioteka.com se grabaron con la pestaña «12 miesięcy» o encuadrando solo el Plan Optymalny). La voz dice solo que el Plan na Start «es más barato los 3 primeros meses» y la pantalla lo dice sin precio. Si al publicar ese plan ya no existe en klub.audioteka.com, conviene quitar esa media frase (A03) o la etiqueta.
+  - La promoción del Plan na Start (10,90 zł/mes, hasta el 26.10.2026 a las 15:00) no aparece en ningún sitio: ni en la voz, ni en los textos, ni en las tomas (las de klub.audioteka.com se grabaron con la pestaña «12 miesięcy» o encuadrando solo los planes Smart y Optymalny). Lo que dice el vídeo del Plan na Start («más barato los 3 primeros meses», sin precio) sigue siendo cierto después del 26.10 si el plan existe. **El día de publicar, comprueba que el Plan na Start siga en klub.audioteka.com**; si ya no está, hay que quitar la media frase de A03 («a Plan na Start jest tańszy przez pierwsze trzy miesiące»), el pie de A03 («Plan na Start: taniej przez pierwsze 3 miesiące») y «i na Start» del capítulo y de la descripción.
+  - Matiz: sin la promoción, el Plan na Start cuesta lo mismo que el Plan Smart (17,90 zł/mes) pero sin límite de horas durante esos 3 meses, así que para quien empieza el «Tańszy Plan Smart» de A11 y la recomendación de A12 («Słuchasz mniej? Wtedy wystarczy Plan Smart») son menos claros los 3 primeros meses.
+  - La ficha de «Solaris» en sonorbooks.pl muestra una promoción de Empik Go ya caducada (no sale en el encuadre del vídeo); conviene actualizarla en la web.
   - Precios y notas comprobados el 19.10.2026 (Plan Optymalny 29,90 zł; 6 meses 179,40 zł; 12 meses 299,00 zł; Plan Smart 20h 17,90 zł; Google Play 4,8 con 67,6 mil valoraciones; App Store 4,7 con 41,9 mil). Si se publica mucho más tarde, revisarlos.
   - Las valoraciones de usuarios se resumen sin nombres (de 500 reseñas recientes de la App Store polaca).
   - Miniatura: «CZY WARTO PŁACIĆ?», sello «Bez limitu godzin» y etiqueta «14 dni ZA DARMO» (sin precios, para que no caduque).
