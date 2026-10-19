@@ -7,6 +7,8 @@
  "locale": "pl-PL",
  "timezone": "Europe/Warsaw",
  "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
  "steps": [
   {
    "go": "https://support.spotify.com/pl/article/audiobooks-unlock/",
@@ -22,7 +24,7 @@
    "wait": 600
   },
   {
-   "eval": "window.scrollTo(0,1780)"
+   "eval": "(()=>{const t=\"Je\\u015bli Tw\\u00f3j plan nie obejmuje\";const els=[...document.querySelectorAll('button,summary,h2,h3,h4,p,span,div,a')].filter(e=>e.textContent.includes(t)&&e.getBoundingClientRect().height>0);els.sort((a,b)=>a.textContent.length-b.textContent.length);const e=els[0];if(e){window.scrollTo(0,window.scrollY+e.getBoundingClientRect().top-260);}})()"
   },
   {
    "wait": 1200
@@ -41,40 +43,34 @@
    "wait": 400
   },
   {
-   "mark": "pay"
+   "mark": "start"
   },
   {
-   "move": [
-    760,
-    270
-   ],
-   "dur": 1200
-  },
-  {
-   "wait": 2600
-  },
-  {
-   "mark": "scroll"
-  },
-  {
-   "scroll": 650,
-   "dur": 2000
+   "moveText": "Jeśli Twój plan nie obejmuje",
+   "exact": false,
+   "dur": 1000
   },
   {
    "wait": 300
   },
   {
-   "mark": "player"
+   "click": true
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "open"
   },
   {
    "move": [
-    780,
-    330
+    900,
+    520
    ],
    "dur": 900
   },
   {
-   "wait": 2600
+   "wait": 3500
   },
   {
    "wait": 800
@@ -82,7 +78,5 @@
   {
    "mark": "end"
   }
- ],
- "preset": "faster",
- "dpr": 1.5
+ ]
 }

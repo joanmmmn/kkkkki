@@ -7,6 +7,8 @@
  "locale": "pl-PL",
  "timezone": "Europe/Warsaw",
  "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
  "steps": [
   {
    "go": "https://support.spotify.com/pl/article/audiobook-listening-time-purchase/",
@@ -22,7 +24,7 @@
    "wait": 600
   },
   {
-   "eval": "window.scrollTo(0,1450)"
+   "eval": "(()=>{const t=\"Dotknij swojego zdj\\u0119cia profilowego\";const els=[...document.querySelectorAll('li,p,span,div,h2,h3')].filter(e=>e.textContent.includes(t)&&e.getBoundingClientRect().height>0);els.sort((a,b)=>a.textContent.length-b.textContent.length);const e=els[0];if(e){window.scrollTo(0,window.scrollY+e.getBoundingClientRect().top-330);}})()"
   },
   {
    "wait": 1200
@@ -41,48 +43,26 @@
    "wait": 400
   },
   {
-   "mark": "table"
-  },
-  {
-   "move": [
-    970,
-    300
-   ],
-   "dur": 1200
-  },
-  {
-   "wait": 2400
-  },
-  {
-   "mark": "scroll"
-  },
-  {
-   "scroll": 1500,
-   "dur": 2600
-  },
-  {
-   "wait": 300
-  },
-  {
    "mark": "steps"
   },
   {
-   "move": [
-    780,
-    130
-   ],
+   "moveText": "Dotknij swojego zdjęcia profilowego",
+   "exact": false,
+   "dur": 1000
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "moveText": "Czas słuchania audiobooków",
+   "exact": false,
    "dur": 900
   },
   {
-   "wait": 2600
-  },
-  {
-   "wait": 800
+   "wait": 2500
   },
   {
    "mark": "end"
   }
- ],
- "preset": "faster",
- "dpr": 1.5
+ ]
 }

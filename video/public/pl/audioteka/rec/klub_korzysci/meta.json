@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 354,
+ "duration": 27.485,
+ "offset": 0.062,
+ "marks": {
+  "grid": 0.368,
+  "scroll1": 6.645,
+  "kupuj": 9.245,
+  "dziel": 15.884,
+  "premiery": 22.357,
+  "end": 27.485
+ },
+ "events": []
+}

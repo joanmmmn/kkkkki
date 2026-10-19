@@ -7,6 +7,8 @@
  "locale": "pl-PL",
  "timezone": "Europe/Warsaw",
  "crf": 20,
+ "preset": "faster",
+ "dpr": 1.5,
  "steps": [
   {
    "go": "https://support.spotify.com/pl/article/audiobooks-premium-plans/",
@@ -22,7 +24,7 @@
    "wait": 600
   },
   {
-   "eval": "window.scrollTo(0,0)"
+   "eval": "(()=>{const t=\"W jaki spos\\u00f3b obliczany\";const els=[...document.querySelectorAll('button,summary,h2,h3,h4,p,span,div,a')].filter(e=>e.textContent.includes(t)&&e.getBoundingClientRect().height>0);els.sort((a,b)=>a.textContent.length-b.textContent.length);const e=els[0];if(e){window.scrollTo(0,window.scrollY+e.getBoundingClientRect().top-260);}})()"
   },
   {
    "wait": 1200
@@ -41,37 +43,34 @@
    "wait": 400
   },
   {
-   "mark": "top"
+   "mark": "start"
   },
   {
-   "move": [
-    760,
-    620
-   ],
-   "dur": 1200
-  },
-  {
-   "wait": 1500
-  },
-  {
-   "scroll": 1000,
-   "dur": 2400
+   "moveText": "W jaki sposób obliczany",
+   "exact": false,
+   "dur": 1000
   },
   {
    "wait": 300
   },
   {
-   "mark": "speed"
+   "click": true
+  },
+  {
+   "wait": 1600
+  },
+  {
+   "mark": "open"
   },
   {
    "move": [
-    760,
-    280
+    900,
+    520
    ],
    "dur": 900
   },
   {
-   "wait": 2800
+   "wait": 3500
   },
   {
    "wait": 800
@@ -79,7 +78,5 @@
   {
    "mark": "end"
   }
- ],
- "preset": "faster",
- "dpr": 1.5
+ ]
 }
