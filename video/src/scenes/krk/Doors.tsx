@@ -254,12 +254,14 @@ const VDiario: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
       {/* el diario */}
       <div style={{ position: 'absolute', left: 1180, top: 210, width: 560, height: 680, transform: `translateX(${(1 - diary) * 700}px) rotate(${3 - (1 - diary) * 6}deg)`, boxShadow: '0 40px 80px rgba(0,0,0,0.5)', borderRadius: 6, overflow: 'hidden' }}>
         <PaperBG tone="#EFE5CF" />
-        <div style={{ position: 'absolute', left: 50, top: 50 }}>
-          <Handwrite text="Cordelia…" a={f.anota} b={f.anota + 16} size={78} />
-          <Handwrite text="paso a paso," a={f.anota + 12} b={f.anota + 30} size={64} colorInk="#3A2E22" />
-          <Handwrite text="que no lo note." a={f.anota + 26} b={f.anota + 46} size={64} colorInk="#3A2E22" />
-          {frame >= f.comp && <Handwrite text="Comprometidos." a={f.comp} b={f.comp + 20} size={70} colorInk={KR_DEEP} />}
-          {frame >= f.rompa && <Handwrite text="Ella ha roto." a={f.rompa + 2} b={f.rompa + 22} size={70} colorInk={WAX} />}
+        <div style={{ position: 'absolute', left: 50, top: 50, width: 460 }}>
+          <Handwrite text="Cordelia" a={f.anota} b={f.anota + 16} size={78} />
+          {/* renglones ilegibles (no se inventan frases del libro) */}
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((k) => {
+            const at = k < 5 ? f.anota + 10 + k * 7 : k < 8 ? f.comp + (k - 5) * 7 : f.rompa + 2 + (k - 8) * 8;
+            const w = ramp(frame, at, at + 14);
+            return <div key={k} style={{ height: 9, marginTop: k === 0 ? 40 : k === 5 || k === 8 ? 52 : 34, width: `${(70 + ((k * 23) % 30)) * w}%`, background: k >= 8 ? 'rgba(158,27,34,0.55)' : k >= 5 ? 'rgba(23,58,51,0.5)' : 'rgba(58,46,34,0.42)', borderRadius: 5 }} />;
+          })}
         </div>
       </div>
       {/* ¿Te suena? */}
@@ -466,7 +468,8 @@ const VPureza: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
 
 // 4 · La enfermedad mortal: fachada de noche con muchas ventanas; la desesperación aparece en casi todas, también en la de
 // la fiesta (quien no sabe que la tiene); después, la primera página y su dificultad.
-const OPENING = 'El hombre es espíritu. Pero ¿qué es el espíritu? El espíritu es el yo. Pero ¿qué es el yo? El yo es una relación que se relaciona consigo misma, o dicho de otro modo: es lo que en la relación hace que esta se relacione consigo misma.';
+// Traducción propia del danés («Mennesket er Aand. Men hvad er Aand? Aand er Selvet…»), Primera parte, A.
+const OPENING = 'El ser humano es espíritu. Pero ¿qué es el espíritu? El espíritu es el yo. Pero ¿qué es el yo? El yo es una relación que se relaciona consigo misma, o es, en la relación, el hecho de que la relación se relacione consigo misma; el yo no es la relación, sino que la relación se relacione consigo misma.';
 const VEnfermedad: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) => {
   const frame = useCurrentFrame();
   const f = {
@@ -516,8 +519,8 @@ const VEnfermedad: React.FC<{ c: Clock; from: number; to: number }> = ({ c }) =>
         <AbsoluteFill style={{ opacity: toPage }}>
           <div style={{ position: 'absolute', left: 300, top: 150, width: 1320, height: 700, transform: `rotate(-1deg) translateY(${(1 - toPage) * 200}px)`, boxShadow: '0 40px 90px rgba(0,0,0,0.6)', borderRadius: 4, overflow: 'hidden' }}>
             <PaperBG tone="#EFE6D0" />
-            <div style={{ position: 'absolute', left: 90, right: 90, top: 70, fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 6, color: 'rgba(42,32,24,0.55)', textTransform: 'uppercase' }}>La enfermedad mortal · primera página</div>
-            <div style={{ position: 'absolute', left: 90, right: 90, top: 140, fontFamily: font.serif, fontSize: 46, lineHeight: 1.32, color: '#2A2018', textAlign: 'justify' }}>{OPENING}</div>
+            <div style={{ position: 'absolute', left: 90, right: 90, top: 70, fontFamily: font.sans, fontWeight: 700, fontSize: 26, letterSpacing: 6, color: 'rgba(42,32,24,0.55)', textTransform: 'uppercase' }}>La enfermedad mortal · así empieza la primera parte</div>
+            <div style={{ position: 'absolute', left: 90, right: 90, top: 140, fontFamily: font.serif, fontSize: 52, lineHeight: 1.34, color: '#2A2018', textAlign: 'justify' }}>{OPENING}</div>
           </div>
           <div style={{ position: 'absolute', left: 300, top: 900, opacity: rampOut(frame, f.dif - 6, f.dif + 6) }}>
             <FearMeter level={3} at={f.dif} label="Dificultad para empezar" dark />

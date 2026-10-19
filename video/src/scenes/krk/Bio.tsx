@@ -423,7 +423,7 @@ export const Boom: React.FC = () => {
       {/* Regine y el anillo */}
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: ringIn * (1 - ringOut), transform: `scale(${0.9 + 0.1 * ringIn + 0.2 * ringOut})`, filter: ringOut > 0.01 ? `blur(${ringOut * 10}px)` : undefined }}>
         <RingIcon size={240} spin={frame / 14} />
-        <div style={{ marginTop: 26, fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: color.ink }}>Regine Olsen · 1841</div>
+        <div style={{ marginTop: 26, fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: color.ink }}>Regine Olsen · 1840–1841</div>
       </AbsoluteFill>
       {/* 1843 */}
       {frame >= f.year - 2 && (
@@ -674,22 +674,22 @@ export const Fin: React.FC = () => {
   const toEnd = ramp(frame, f.mur - 8, f.mur + 12);
   return (
     <SkNight lamp={[960, 500]}>
-      {/* El instante: diez números */}
+      {/* El instante: los nueve números que salieron en vida (el 10 se publicó después de su muerte) */}
       <AbsoluteFill style={{ opacity: 1 - toStreet }}>
         <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0, opacity: 0.45 }}>
           {/* silueta de la iglesia */}
           <path d="M760 900 V520 L860 440 L960 520 V900Z M900 520 V250 L930 180 L960 250 V520Z" fill="#2B323C" />
           <path d="M1040 900 V600 H1300 V900Z" fill="#2B323C" />
         </svg>
-        {Array.from({ length: 10 }).map((_, i) => {
+        {Array.from({ length: 9 }).map((_, i) => {
           const a = f.atac - 6 + i * 4;
           const s = sp(frame, a, 13, 170);
           if (frame < a - 1) return null;
-          const x = 260 + (i % 5) * 300, y = 300 + Math.floor(i / 5) * 330;
+          const x = 260 + (i % 5) * 300 + (i >= 5 ? 150 : 0), y = 300 + Math.floor(i / 5) * 330;
           return (
             <div key={i} style={{ position: 'absolute', left: x, top: y, width: 240, height: 300, background: '#EFE6D0', borderRadius: 4, boxShadow: '0 20px 40px rgba(0,0,0,0.5)', transform: `translateY(${(1 - s) * -80}px) rotate(${((i * 37) % 9) - 4}deg)`, opacity: s, padding: 18 }}>
               <div style={{ fontFamily: font.serif, fontSize: 34, color: '#1A1714', textAlign: 'center', borderBottom: '2px solid #1A1714', paddingBottom: 6 }}>El instante</div>
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: WAX, textAlign: 'center', marginTop: 20 }}>Nº {i + 1}</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, color: WAX, textAlign: 'center', marginTop: 20 }}>N.º {i + 1}</div>
               {[0, 1, 2, 3].map((k) => <div key={k} style={{ height: 6, marginTop: 12, width: `${70 + ((k * 13 + i * 7) % 30)}%`, background: 'rgba(26,23,20,0.35)', borderRadius: 3 }} />)}
             </div>
           );
@@ -730,11 +730,11 @@ export const Fin: React.FC = () => {
       {toEnd > 0.01 && (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: toEnd }}>
           <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 64, color: 'rgba(243,234,216,0.85)' }}>Søren Kierkegaard</div>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, letterSpacing: 10, color: '#F1D58C', marginTop: 12 }}>1813 – 1855</div>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 64, letterSpacing: 10, color: '#F1D58C', marginTop: 12 }}>1813–1855</div>
           <div style={{ marginTop: 30, fontFamily: font.sans, fontWeight: 700, fontSize: 120, color: '#fff', opacity: rampOut(frame, f.cuar - 4, f.cuar + 10), transform: `scale(${0.9 + 0.1 * rampOut(frame, f.cuar - 4, f.cuar + 10)})` }}>42 años</div>
         </AbsoluteFill>
       )}
-      {Array.from({ length: 10 }).map((_, i) => <Sfx key={i} name="page_turn" at={f.atac - 6 + i * 4} volume={0.2} />)}
+      {Array.from({ length: 9 }).map((_, i) => <Sfx key={i} name="page_turn" at={f.atac - 6 + i * 4} volume={0.2} />)}
       <Sfx name="kk_cobble" at={f.oct - 10} volume={0.5} />
       <Sfx name="hit_soft" at={f.despl + 16} volume={0.6} />
       <Sfx name="kk_bell" at={f.mur} volume={0.8} />

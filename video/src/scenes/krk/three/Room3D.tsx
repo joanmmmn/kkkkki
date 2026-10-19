@@ -110,7 +110,7 @@ const skyTex = () =>
   });
 
 // Carta: papel verjurado con la letra del joven (líneas en caligrafía inglesa).
-export const LETTER_LINES = ['Olvida a quien escribe esto;', 'perdona a un hombre que,', 'aunque sea capaz de algo,', 'no es capaz de hacer', 'feliz a una muchacha.'];
+export const LETTER_LINES = ['Olvida a quien escribe esto;', 'perdona a alguien que,', 'aunque fuera capaz de algo,', 'no fue capaz de hacer', 'feliz a una muchacha.'];
 const letterTex = () =>
   canvasTex('kk-letter', 1024, 1448, (ctx, w, h) => {
     ctx.fillStyle = '#F1E8D4';
@@ -215,7 +215,7 @@ const STACKS: { x: number; z: number; n: number; ry: number }[] = [
 ];
 const PILE_BOOKS: ShelfBook[] = ['O lo uno o lo otro', 'Temor y temblor', 'La repetición', 'Migajas filosóficas', 'El concepto de la angustia', 'Estadios en el camino de la vida', 'Post scriptum', 'La enfermedad mortal']
   .map((t, i) => ({ title: t, thick: 3 + (i % 3) * 0.8, h: 22, depth: 15, cloth: ['#4A2E22', '#22323F', '#2E3B33', '#5E1C2B', '#4F5961', '#3B3631', '#6A5733', '#14191F'][i], foil: 'gold' as const, variant: (i % 4) as ShelfBook['variant'], seed: hash(t),
-    author: ['Victor Eremita', 'Johannes de Silentio', 'Constantin Constantius', 'Johannes Climacus', 'Vigilius Haufniensis', 'Hilarius Bookbinder', 'Johannes Climacus', 'Anti-Climacus'][i] }));
+    author: ['Victor Eremita', 'Johannes de Silentio', 'Constantin Constantius', 'Johannes Climacus', 'Vigilius Haufniensis', 'Hilarius Bogbinder', 'Johannes Climacus', 'Anti-Climacus'][i] }));
 
 export type RoomProps = {
   keys: CamKey[];

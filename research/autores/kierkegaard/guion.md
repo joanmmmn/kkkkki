@@ -113,11 +113,17 @@ mentira» (J37) se quitó del montaje. El anillo de diamantes en forma de cruz n
   carta dice que devolvió «su anillo», sin más detalle); la carta se pliega, se lacra con «SK» y se envía; montones de manuscritos
   y libros con los seudónimos.
 - Biblioteca 3D con las 35 obras publicadas en vida (1838–1855); recuento «En audiolibro en español: 4».
-- Bio: mapa de Dinamarca propio, páramo de Jutlandia, siete velas (se apagan la madre y cinco hermanos), Gilleleje 1835,
-  la explosión de 1843 con las firmas, El Corsario (caricatura propia con la pernera corta), «33 → 34», *El instante* y 1855.
+- Bio: mapa de Dinamarca propio, páramo de Jutlandia, ocho velas (la madre y los siete hijos; se apagan la madre y cinco
+  hermanos), Gilleleje 1835, la explosión de 1843 con las firmas, El Corsario (caricatura propia con la pernera corta),
+  «33 → 34», los nueve números de *El instante* que salieron en vida (el 10 es póstumo) y 1855.
 - Los textos «a mano» usan Pinyon Script (OFL, en `video/public/fonts/`).
-- La primera página de *La enfermedad mortal* en pantalla es traducción propia; la página «Mejor en papel» lleva líneas ilegibles
-  (para no inventar citas).
+- Sin citas inventadas: la carta del anillo es fiel al original («Olvida a quien escribe esto; perdona a alguien que, aunque
+  fuera capaz de algo, no fue capaz de hacer feliz a una muchacha»); el diario de Johannes y la página «Mejor en papel» llevan
+  renglones ilegibles; el comienzo de la primera parte de *La enfermedad mortal* es traducción propia del danés («Mennesket er
+  Aand…»); la frase de 1843 se presenta como «una idea de su diario» (es paráfrasis).
+- Revisión independiente del texto en pantalla, la descripción y los subtítulos (19/10/2026): correcciones aplicadas (carta,
+  diario de Johannes, *El instante*, rótulo de la primera parte, Regine 1840–1841, Hilarius Bogbinder, N.º, guiones, cortes
+  de subtítulos).
 
 ## Datos y fuentes
 

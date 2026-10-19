@@ -71,7 +71,13 @@ TITLES = ['Diario de un seductor', 'O lo uno o lo otro', 'Temor y temblor', 'La 
           'El concepto de la angustia', 'Mi punto de vista', 'Migajas filosóficas', 'La repetición', 'El Libro Total', 'El Corsario', 'El instante',
           'Johannes de Silentio', 'Victor Eremita', 'Anti-Climacus', 'Johannes Climacus', 'Raúl Gutiérrez', 'Geraldo Medina', 'Paul Strathern',
           'Regine Olsen', 'Søren Kierkegaard', 'voz digital', 'el vértigo de la libertad', 'Iglesia de Dinamarca',
-          'Kierkegaard en 90 minutos', '¿Culpable? ¿No culpable?', 'treinta y tres', 'treinta y cuatro', 'su propio nombre', 'Diario de un seductor']
+          'Kierkegaard en 90 minutos', '¿Culpable? ¿No culpable?', 'treinta y tres', 'treinta y cuatro', 'su propio nombre', 'Diario de un seductor', 'hora y media', 'Olvida a quien escribe esto', 'Marco Lubián', 'palabra por palabra']
+
+
+NUMW = {'uno', 'una', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'diecinueve', 'veintiún', 'veintiuno',
+        'veintidós', 'veintiocho', 'treinta', 'cuarenta', 'media', 'cien', '90', '100'}
+UNITS = {'años', 'horas', 'hora', 'minutos', 'min'}
+OPEN = {'a', 'al', 'de', 'del', 'en', 'con', 'por', 'para', 'sin', 'sobre', 'hasta', 'desde', 'entre', 'como', 'pero', 'porque', 'aunque', 'cuando', 'y', 'o', 'que'}
 
 
 def two_lines(t):
@@ -84,12 +90,17 @@ def two_lines(t):
         if len(a) <= MAX and len(b) <= MAX:
             score = abs(len(a) - len(b))
             last = words[i - 1].lower().strip('¿¡«»"')
+            first = words[i].lower().strip('¿¡«»"')
             if last in WEAK:
                 score += 30  # no cortar tras artículo o preposición
             if any(ti in t and t.index(ti) < len(a) < t.index(ti) + len(ti) for ti in TITLES):
                 score += 60  # no partir un título o un nombre
+            if last.strip(',.') in NUMW and first.strip(',.') in UNITS:
+                score += 60  # «diecinueve | años»
             if a.endswith((',', '.', ':', ';', '?', '!')):
-                score -= 6
+                score -= 18  # mejor tras una pausa
+            elif first in OPEN:
+                score -= 8  # o al empezar un sintagma
             if best is None or score < best[0]:
                 best = (score, a + '\n' + b)
     return best[1] if best else t

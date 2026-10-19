@@ -39,7 +39,7 @@ export const Formas: React.FC = () => {
       <div style={{ position: 'absolute', left: 760, top: 230, opacity: man * (1 - manOut), transform: `translateX(${manOut * -500}px) rotate(${-4 - manOut * 20}deg) scale(${0.9 + 0.1 * man})` }}>
         <div style={{ position: 'relative', width: 400, height: 560, background: '#9A9C9E', borderRadius: 8, boxShadow: shadow.card, padding: 40, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, letterSpacing: 6, color: '#EDEDED', textTransform: 'uppercase' }}>Manual de</div>
-          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 58, color: '#fff' }}>Filosofía</div>
+          <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 58, color: '#fff' }}>filosofía</div>
           <div style={{ marginTop: 40, width: '70%', height: 4, background: 'rgba(255,255,255,0.5)' }} />
           {/* tachón */}
           <svg width={460} height={600} style={{ position: 'absolute', left: -30, top: -20, overflow: 'visible' }}>
@@ -267,7 +267,7 @@ export const Ideas: React.FC = () => {
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 70, color: KR }}>→</span>
           </div>
           <div style={{ position: 'absolute', left: 160, right: 160, top: 120, textAlign: 'center' }}>
-            <Kicker at={f.frase} text="Diario, 1843" style={{ justifyContent: 'center' }} />
+            <Kicker at={f.frase} text="Una idea de su diario · 1843" style={{ justifyContent: 'center' }} />
             <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 66, lineHeight: 1.2, color: color.ink }}>
               <span style={{ opacity: rampOut(frame, f.vida - 4, f.vida + 10) }}>La vida se entiende mirando hacia atrás, </span>
               <span style={{ opacity: rampOut(frame, f.viv - 8, f.viv + 8) }}>pero hay que vivirla hacia delante.</span>

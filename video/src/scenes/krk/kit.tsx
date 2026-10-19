@@ -147,7 +147,7 @@ export const NOVEL_YEARS: number[] = [1838, 1841, 1843, 1843, 1843, 1843, 1843, 
 // Firma de cada obra en la portada (los seudónimos en cursiva en los lomos).
 export const SIGNED: string[] = [
   'S. Kierkegaard', 'S. A. Kierkegaard', 'Victor Eremita', 'S. Kierkegaard', 'Constantin Constantius', 'Johannes de Silentio', 'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard',
-  'S. Kierkegaard', 'Johannes Climacus', 'Vigilius Haufniensis', 'Nicolaus Notabene', 'S. Kierkegaard', 'S. Kierkegaard', 'Hilarius Bookbinder', 'Johannes Climacus', 'S. Kierkegaard',
+  'S. Kierkegaard', 'Johannes Climacus', 'Vigilius Haufniensis', 'Nicolaus Notabene', 'S. Kierkegaard', 'S. Kierkegaard', 'Hilarius Bogbinder', 'Johannes Climacus', 'S. Kierkegaard',
   'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard', 'Inter et Inter', 'S. Kierkegaard', 'H. H.', 'Anti-Climacus', 'S. Kierkegaard', 'Anti-Climacus', 'S. Kierkegaard',
   'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard', 'S. Kierkegaard',
 ];

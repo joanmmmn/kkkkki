@@ -266,7 +266,7 @@ export const Name3D: React.FC = () => {
             <div style={{ position: 'relative', fontFamily: font.sans, fontWeight: 700, fontSize: 176, letterSpacing: -7, lineHeight: 0.95, color: '#fff', textShadow: '0 10px 60px rgba(0,0,0,0.6)' }}>Kierkegaard</div>
             <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 22, marginTop: 22 }}>
               <div style={{ width: 70 * nameIn, height: 3, background: color.yellow, borderRadius: 2 }} />
-              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 42, letterSpacing: 8, color: color.yellow }}>1813 – 1855</div>
+              <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 42, letterSpacing: 8, color: color.yellow }}>1813–1855</div>
               <div style={{ width: 70 * nameIn, height: 3, background: color.yellow, borderRadius: 2 }} />
             </div>
             <div style={{ position: 'relative', marginTop: 30, opacity: padreIn, transform: `translateY(${(1 - padreIn) * 14}px)`, fontFamily: font.serif, fontStyle: 'italic', fontSize: 50, color: '#F3EAD8' }}>

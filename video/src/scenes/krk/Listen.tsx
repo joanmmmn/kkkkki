@@ -188,7 +188,6 @@ export const Version: React.FC = () => {
       <Sfx name="focus" at={fEtiq} volume={0.6} />
       <Sfx name="ui_tap" at={fMin - 6} volume={0.5} />
       <Sfx name="sk_clock" at={fMin} volume={0.3} dur={60} fade={10} />
-      {OLDGOLD && MiniIcon && interpolate && null}
     </SkStage>
   );
 };
