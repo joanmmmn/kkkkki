@@ -18,48 +18,48 @@
   },
   {
    "id": "A02",
-   "text": "BookBeat to szwedzka aplikacja z audiobookami i e-bookami z grupy Bonnier, po polsku od 2020 roku. Planu bez limitu tu nie ma: płacisz za pakiet godzin i słuchasz, czego chcesz, z ponad miliona książek.",
-   "say": "Bukbit to szwedzka aplikacja z audiobookami i e-bookami z grupy Bonnier, po polsku od dwa tysiące dwudziestego roku. Planu bez limitu tu nie ma: płacisz za pakiet godzin i słuchasz, czego chcesz, z ponad miliona książek."
+   "text": "BookBeat to szwedzka aplikacja z audiobookami i e-bookami, należąca do grupy Bonnier, po polsku od 2020 roku. Planu bez limitu tu nie ma: płacisz za pakiet godzin i słuchasz, czego chcesz, z ponad miliona książek.",
+   "say": "Bukbit to szwedzka aplikacja z audiobookami i e-bookami, należąca do grupy Bonnier, po polsku od dwa tysiące dwudziestego roku. Planu bez limitu tu nie ma: płacisz za pakiet godzin i słuchasz, czego chcesz, z ponad miliona książek."
   },
   {
    "id": "A03",
-   "text": "Są trzy pakiety. Basic: 22,99 zł za 20 godzin miesięcznie. Standard: 29,99 zł za 40 godzin. Premium: 34,99 zł za 100 godzin. Do konta dodasz do czterech profili, od 9,99 zł miesięcznie za profil. Bez zobowiązań.",
-   "say": "Są trzy pakiety. Bejzik: dwadzieścia dwa złote dziewięćdziesiąt dziewięć groszy za dwadzieścia godzin miesięcznie. Standard: dwadzieścia dziewięć złotych dziewięćdziesiąt dziewięć groszy za czterdzieści godzin. Premium: trzydzieści cztery złote dziewięćdziesiąt dziewięć groszy za sto godzin. Do konta dodasz do czterech profili, od dziewięciu złotych dziewięćdziesięciu dziewięciu groszy miesięcznie za profil. Bez zobowiązań."
+   "text": "Są trzy pakiety. Basic: 22,99 zł za 20 godzin miesięcznie. Standard: 29,99 zł za 40 godzin. Premium: 34,99 zł za 100 godzin. Możesz dodać do czterech profili dodatkowych, od 9,99 zł miesięcznie za każdy. Bez zobowiązań.",
+   "say": "Są trzy pakiety. Bejzik: dwadzieścia dwa złote dziewięćdziesiąt dziewięć groszy za dwadzieścia godzin miesięcznie. Standard: dwadzieścia dziewięć złotych dziewięćdziesiąt dziewięć groszy za czterdzieści godzin. Premium: trzydzieści cztery złote dziewięćdziesiąt dziewięć groszy za sto godzin. Możesz dodać do czterech profili dodatkowych, od dziewięciu złotych dziewięćdziesięciu dziewięciu groszy miesięcznie za każdy. Bez zobowiązań."
   },
   {
    "id": "A04",
-   "text": "Uwaga: ten milion to głównie książki po angielsku i po niemiecku. Po polsku jest ponad 18 000 audiobooków i ponad 12 000 e-booków. Są hity, jak Harry Potter czy Wiedźmin, ale sprawdź swoje tytuły przed zapłatą.",
-   "say": "Uwaga: ten milion to głównie książki po angielsku i po niemiecku. Po polsku jest ponad osiemnaście tysięcy audiobooków i ponad dwanaście tysięcy e-booków. Są hity, jak Hari Poter czy Wiedźmin, ale sprawdź swoje tytuły przed zapłatą."
+   "text": "Uwaga: ten milion to prawie same książki obcojęzyczne – najwięcej po angielsku i po niemiecku; po polsku to niecałe 2%. To ponad 18 000 audiobooków i ponad 12 000 e-booków. Są hity, jak Harry Potter czy „Wiedźmin”, ale sprawdź swoje tytuły przed zapłatą.",
+   "say": "Uwaga: ten milion to prawie same książki obcojęzyczne – najwięcej po angielsku i po niemiecku; po polsku to niecałe dwa procent. To ponad osiemnaście tysięcy audiobooków i ponad dwanaście tysięcy e-booków. Są hity, jak Hari Poter czy Wiedźmin, ale sprawdź swoje tytuły przed zapłatą."
   },
   {
    "id": "A05",
-   "text": "Perełka katalogu to Wiedźmin z udziałem ponad 70 aktorów, z muzyką i efektami. Jest też najnowsze Rozdroże kruków. Ale słuchowisk po polsku jest niewiele, około 40.",
-   "say": "Perełka katalogu to Wiedźmin z udziałem ponad siedemdziesięciu aktorów, z muzyką i efektami. Jest też najnowsze Rozdroże kruków. Ale słuchowisk po polsku jest niewiele, około czterdziestu."
+   "text": "Perełka katalogu to „Wiedźmin” w wersji z udziałem ponad 70 aktorów, z muzyką i efektami. Jest też najnowsze „Rozdroże kruków”. Ale słuchowisk po polsku jest niewiele, około 40.",
+   "say": "Perełka katalogu to Wiedźmin w wersji z udziałem ponad siedemdziesięciu aktorów, z muzyką i efektami. Jest też najnowsze Rozdroże kruków. Ale słuchowisk po polsku jest niewiele, około czterdziestu."
   },
   {
    "id": "A06",
-   "text": "Karta książki ma dwie oceny: za treść i za lektora. Rozdroże kruków trwa 9 godzin 35 minut i ma 4,8 za książkę oraz 4,9 za czytanie. Fragment odsłuchasz bez logowania.",
+   "text": "Karta książki ma dwie oceny: za treść i za lektora. „Rozdroże kruków” trwa 9 godzin 35 minut i ma 4,8 za książkę oraz 4,9 za czytanie. Fragment odsłuchasz bez logowania.",
    "say": "Karta książki ma dwie oceny: za treść i za lektora. Rozdroże kruków trwa dziewięć godzin i trzydzieści pięć minut i ma cztery przecinek osiem za książkę oraz cztery przecinek dziewięć za czytanie. Fragment odsłuchasz bez logowania."
   },
   {
    "id": "A07",
-   "text": "W aplikacji zmienisz tempo od 0,5 do 2 razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad 2500 polskich tytułów to synchrobooki: słuchasz i czytasz jednocześnie.",
-   "say": "W aplikacji zmienisz tempo od pół do dwóch razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad dwa i pół tysiąca polskich tytułów to synchrobooki: słuchasz i czytasz jednocześnie."
+   "text": "W aplikacji zmienisz tempo od 0,5 do 2 razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad 2500 polskich tytułów ma synchronizację: przełączasz się między słuchaniem a czytaniem i wracasz w to samo miejsce.",
+   "say": "W aplikacji zmienisz tempo od pół do dwóch razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad dwa i pół tysiąca polskich tytułów ma synchronizację: przełączasz się między słuchaniem a czytaniem i wracasz w to samo miejsce."
   },
   {
    "id": "A08",
-   "text": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci 10 godzin, jakkolwiek szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.",
-   "say": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci dziesięć godzin, jakkolwiek szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz dwadzieścia godzin za siedemnaście złotych dziewięćdziesiąt dziewięć groszy."
+   "text": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci 10 godzin, bez względu na to, jak szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.",
+   "say": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci dziesięć godzin, bez względu na to, jak szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz dwadzieścia godzin za siedemnaście złotych dziewięćdziesiąt dziewięć groszy."
   },
   {
    "id": "A08B",
-   "text": "Każdy profil ma tyle godzin, co pakiet właściciela, i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do 12 lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym.",
-   "say": "Każdy profil ma tyle godzin, co pakiet właściciela, i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do dwunastu lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym."
+   "text": "Każdy profil ma tyle samo godzin co pakiet właściciela i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do 12 lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym.",
+   "say": "Każdy profil ma tyle samo godzin co pakiet właściciela i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do dwunastu lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym."
   },
   {
    "id": "A09",
-   "text": "BookBeat działa na telefonach i tabletach z Androidem i iOS, na Apple Watch, nawet bez telefonu, w samochodzie z CarPlay i Android Auto oraz z Chromecastem. Na komputerze ani na czytniku e-booków nie posłuchasz.",
-   "say": "Bukbit działa na telefonach i tabletach z Androidem i aj o es, na Epl Łocz, nawet bez telefonu, w samochodzie z Kar Plej i Android Auto oraz z Kromkastem. Na komputerze ani na czytniku e-booków nie posłuchasz."
+   "text": "BookBeat działa na telefonach i tabletach z Androidem i iOS, na Apple Watch, nawet bez telefonu, w samochodzie z CarPlay i Android Auto oraz z Chromecastem. Na komputerze ani na czytniku e-booków BookBeat nie działa.",
+   "say": "Bukbit działa na telefonach i tabletach z Androidem i aj o es, na Epl Łocz, nawet bez telefonu, w samochodzie z Kar Plej i Android Auto oraz z Kromkastem. Na komputerze ani na czytniku e-booków Bukbit nie działa."
   },
   {
    "id": "A10",
@@ -92,8 +92,8 @@
   },
   {
    "id": "B04",
-   "text": "Jak zrezygnować? Tylko na stronie BookBeat: w menu konta wejdź w Zarządzaj subskrypcją i przejdź wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana.",
-   "say": "Jak zrezygnować? Tylko na stronie Bukbit: w menu konta wejdź w Zarządzaj subskrypcją i przejdź wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana."
+   "text": "Jak zrezygnować? Tylko na stronie BookBeat: w menu konta wejdź w „Zarządzaj subskrypcją” i wykonaj wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana.",
+   "say": "Jak zrezygnować? Tylko na stronie Bukbit: w menu konta wejdź w Zarządzaj subskrypcją i wykonaj wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana."
   },
   {
    "id": "B05",

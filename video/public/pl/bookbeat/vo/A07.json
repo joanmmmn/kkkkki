@@ -1,37 +1,37 @@
 {
  "id": "A07",
- "hash": "66df205c40a3",
- "text": "W aplikacji zmienisz tempo od 0,5 do 2 razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad 2500 polskich tytułów to synchrobooki: słuchasz i czytasz jednocześnie.",
- "duration": 14.24,
+ "hash": "9e3435832cca",
+ "text": "W aplikacji zmienisz tempo od 0,5 do 2 razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad 2500 polskich tytułów ma synchronizację: przełączasz się między słuchaniem a czytaniem i wracasz w to samo miejsce.",
+ "duration": 16.4,
  "words": [
   {
    "w": "W",
    "s": 0.0,
-   "e": 0.04
+   "e": 0.08
   },
   {
    "w": "aplikacji",
-   "s": 0.08,
-   "e": 0.64
+   "s": 0.16,
+   "e": 0.72
   },
   {
    "w": "zmienisz",
-   "s": 0.72,
-   "e": 1.04
+   "s": 0.8,
+   "e": 1.12
   },
   {
    "w": "tempo",
    "s": 1.2,
-   "e": 1.44
+   "e": 1.52
   },
   {
    "w": "od",
-   "s": 1.52,
-   "e": 1.68
+   "s": 1.64,
+   "e": 1.76
   },
   {
    "w": "pół",
-   "s": 1.76,
+   "s": 1.88,
    "e": 2.0
   },
   {
@@ -42,138 +42,177 @@
   {
    "w": "dwóch",
    "s": 2.24,
-   "e": 2.4
+   "e": 2.48
   },
   {
    "w": "razy,",
-   "s": 2.48,
-   "e": 3.04
+   "s": 2.56,
+   "e": 3.16
   },
   {
    "w": "ustawisz",
-   "s": 3.12,
-   "e": 3.44
+   "s": 3.2,
+   "e": 3.6
   },
   {
    "w": "wyłącznik",
-   "s": 3.52,
-   "e": 3.92
+   "s": 3.68,
+   "e": 4.08
   },
   {
    "w": "czasowy,",
-   "s": 4.0,
-   "e": 4.827
+   "s": 4.16,
+   "e": 4.92
   },
   {
    "w": "dodasz",
-   "s": 4.853,
-   "e": 5.12
+   "s": 4.96,
+   "e": 5.2
   },
   {
    "w": "zakładki",
-   "s": 5.16,
-   "e": 5.6
+   "s": 5.28,
+   "e": 5.68
   },
   {
    "w": "z",
-   "s": 5.627,
-   "e": 5.653
+   "s": 5.707,
+   "e": 5.733
   },
   {
    "w": "notatkami",
-   "s": 5.68,
-   "e": 6.32
-  },
-  {
-   "w": "i",
-   "s": 6.4,
+   "s": 5.76,
    "e": 6.48
   },
   {
-   "w": "pobierzesz",
+   "w": "i",
    "s": 6.52,
-   "e": 6.92
+   "e": 6.56
+  },
+  {
+   "w": "pobierzesz",
+   "s": 6.64,
+   "e": 7.08
   },
   {
    "w": "książki",
-   "s": 6.96,
-   "e": 7.36
+   "s": 7.12,
+   "e": 7.52
   },
   {
    "w": "offline.",
-   "s": 7.44,
-   "e": 8.427
+   "s": 7.6,
+   "e": 8.507
   },
   {
    "w": "A",
-   "s": 8.453,
-   "e": 8.48
+   "s": 8.533,
+   "e": 8.56
   },
   {
    "w": "ponad",
-   "s": 8.56,
-   "e": 8.88
+   "s": 8.64,
+   "e": 8.96
   },
   {
    "w": "dwa",
-   "s": 8.92,
-   "e": 9.04
-  },
-  {
-   "w": "i",
-   "s": 9.12,
+   "s": 9.0,
    "e": 9.2
   },
   {
-   "w": "pół",
+   "w": "i",
    "s": 9.28,
    "e": 9.36
   },
   {
-   "w": "tysiąca",
+   "w": "pół",
    "s": 9.44,
-   "e": 9.84
+   "e": 9.52
+  },
+  {
+   "w": "tysiąca",
+   "s": 9.6,
+   "e": 10.08
   },
   {
    "w": "polskich",
-   "s": 9.88,
-   "e": 10.24
+   "s": 10.12,
+   "e": 10.48
   },
   {
    "w": "tytułów",
-   "s": 10.32,
-   "e": 10.72
+   "s": 10.56,
+   "e": 10.96
   },
   {
-   "w": "to",
-   "s": 10.8,
-   "e": 10.88
+   "w": "ma",
+   "s": 11.04,
+   "e": 11.12
   },
   {
-   "w": "synchrobooki:",
-   "s": 10.96,
-   "e": 12.027
+   "w": "synchronizację:",
+   "s": 11.16,
+   "e": 12.36
   },
   {
-   "w": "słuchasz",
-   "s": 12.133,
-   "e": 12.48
+   "w": "przełączasz",
+   "s": 12.4,
+   "e": 12.8
+  },
+  {
+   "w": "się",
+   "s": 12.88,
+   "e": 12.96
+  },
+  {
+   "w": "między",
+   "s": 13.0,
+   "e": 13.2
+  },
+  {
+   "w": "słuchaniem",
+   "s": 13.28,
+   "e": 13.76
+  },
+  {
+   "w": "a",
+   "s": 13.8,
+   "e": 13.84
+  },
+  {
+   "w": "czytaniem",
+   "s": 13.92,
+   "e": 14.48
   },
   {
    "w": "i",
-   "s": 12.52,
-   "e": 12.56
+   "s": 14.56,
+   "e": 14.64
   },
   {
-   "w": "czytasz",
-   "s": 12.64,
-   "e": 12.987
+   "w": "wracasz",
+   "s": 14.72,
+   "e": 15.04
   },
   {
-   "w": "jednocześnie.",
-   "s": 13.013,
-   "e": 14.24
+   "w": "w",
+   "s": 15.067,
+   "e": 15.093
+  },
+  {
+   "w": "to",
+   "s": 15.12,
+   "e": 15.2
+  },
+  {
+   "w": "samo",
+   "s": 15.24,
+   "e": 15.44
+  },
+  {
+   "w": "miejsce.",
+   "s": 15.52,
+   "e": 16.4
   }
- ],
- "speechEnd": 13.727
+ ]
 }
