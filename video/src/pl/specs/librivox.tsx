@@ -74,6 +74,7 @@ export const piece: PLPiece = {
           { at: 'Plej', until: 'tytul', x: 663, y: 432, w: 46, h: 48 }, { at: 'tytul', until: 'Dalnlold', x: 740, y: 436, w: 640, h: 44 },
           { at: 'Dalnlold', until: 'jest', x: 420, y: 780, w: 136, h: 60 }, { at: 'cztery', x: 230, y: 905, w: 310, h: 110 },
         ],
+        zooms: [{ at: 'czas', zoom: 1.5, x: 560, y: 540 }, { at: 'spis', zoom: 1.25, x: 1000, y: 600 }, { at: 'Dalnlold', zoom: 1.5, x: 560, y: 800 }],
         tags: [
           { at: 'czas', label: '9 godz. 12 min', sub: 'czyta Piotr Nater', icon: 'clock' },
           { at: 'Plej', label: 'Play', sub: 'słuchasz w przeglądarce', icon: 'play' },
@@ -92,6 +93,7 @@ export const piece: PLPiece = {
           { at: 'prosi', until: 'Ej', x: 236, y: 518, w: 370, h: 192 },
           { at: 'Miln', until: 'Kubus', x: 776, y: 476, w: 112, h: 36 }, { at: 'bedzie', x: 230, y: 864, w: 320, h: 38 },
         ],
+        zooms: [{ at: 'prosi', zoom: 1.6, x: 600, y: 620 }, { at: 'Ej', zoom: 1.3, x: 900, y: 560 }],
         tags: [
           { at: 'USA', label: 'Wolne od praw w USA', icon: 'globe' },
           { at: 'kraju', label: 'Poza USA: sprawdź prawo', sub: '„please verify the copyright status…”', icon: 'search' },
@@ -106,6 +108,7 @@ export const piece: PLPiece = {
           { at: 'oficjalnej', until: 'Link', x: 1250, y: 338, w: 420, h: 72 }, { at: 'Link', until: 'jak', x: 420, y: 895, w: 136, h: 60 },
           { at: 'Androida', until: ['Librivoks', 2], x: 300, y: 100, w: 640, h: 150 }, { at: 'ajfona', x: 1176, y: 300, w: 110, h: 90 },
         ],
+        zooms: [{ at: 'Na', zoom: 1.5, x: 1450, y: 400 }, { at: 'Link', zoom: 1.4, x: 560, y: 800 }, { at: 'jak', zoom: 1, x: 960, y: 540 }],
         tags: [
           { at: 'oficjalnej', label: 'Oficjalnie: tylko strona', sub: '„Our only official outlet…”', tone: 'bad' },
           { at: 'wkleisz', label: 'RSS', sub: 'do aplikacji z podcastami', icon: 'radio' },

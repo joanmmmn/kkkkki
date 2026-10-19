@@ -9,6 +9,7 @@
  "crf": 20,
  "preset": "faster",
  "dpr": 1.5,
+ "scrollSel": "html",
  "steps": [
   {
    "go": "https://wolnelektury.pl/katalog/lektura/tajemniczy-ogrod/",
@@ -30,7 +31,7 @@
    "wait": 400
   },
   {
-   "eval": "window.scrollTo(0,0)"
+   "eval": "document.documentElement.scrollTop = 0"
   },
   {
    "wait": 1200

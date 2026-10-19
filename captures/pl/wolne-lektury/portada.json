@@ -9,6 +9,7 @@
  "crf": 20,
  "preset": "faster",
  "dpr": 1.5,
+ "scrollSel": "html",
  "steps": [
   {
    "go": "https://wolnelektury.pl/",
@@ -30,7 +31,7 @@
    "wait": 400
   },
   {
-   "eval": "window.scrollTo(0,0)"
+   "eval": "document.documentElement.scrollTop = 0"
   },
   {
    "wait": 1200
@@ -46,7 +47,7 @@
    "record": true
   },
   {
-   "wait": 900
+   "wait": 600
   },
   {
    "mark": "top"
@@ -56,13 +57,16 @@
     1512,
     34
    ],
-   "dur": 1000
+   "dur": 900
+  },
+  {
+   "mark": "click"
   },
   {
    "click": true
   },
   {
-   "wait": 1200
+   "wait": 1800
   },
   {
    "mark": "menu"
@@ -72,16 +76,19 @@
     433,
     274
    ],
-   "dur": 900
+   "dur": 1300
   },
   {
-   "wait": 300
+   "wait": 900
+  },
+  {
+   "mark": "audiobooki"
   },
   {
    "fakeClick": true
   },
   {
-   "wait": 1600
+   "wait": 2000
   },
   {
    "wait": 800
