@@ -1,12 +1,22 @@
 {
  "id": "X112A",
- "hash": "4987d10577b4",
- "text": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
+ "hash": "44f13b050b8b",
+ "text": "A co najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
  "duration": 6.88,
  "words": [
   {
-   "w": "Najlepsze:",
+   "w": "A",
    "s": 0.0,
+   "e": 0.04
+  },
+  {
+   "w": "co",
+   "s": 0.08,
+   "e": 0.16
+  },
+  {
+   "w": "najlepsze:",
+   "s": 0.2,
    "e": 0.96
   },
   {
@@ -22,83 +32,83 @@
   {
    "w": "nich",
    "s": 1.44,
-   "e": 1.68
+   "e": 1.6
   },
   {
    "w": "możesz",
-   "s": 1.76,
-   "e": 2.0
+   "s": 1.68,
+   "e": 1.92
   },
   {
    "w": "zacząć",
-   "s": 2.08,
-   "e": 2.4
+   "s": 2.0,
+   "e": 2.32
   },
   {
    "w": "jeszcze",
-   "s": 2.48,
+   "s": 2.4,
    "e": 2.72
   },
   {
    "w": "dziś,",
-   "s": 2.8,
-   "e": 3.28
+   "s": 2.84,
+   "e": 3.24
   },
   {
    "w": "a",
-   "s": 3.36,
-   "e": 3.44
+   "s": 3.28,
+   "e": 3.36
   },
   {
    "w": "Poe",
-   "s": 3.6,
-   "e": 3.92
+   "s": 3.44,
+   "e": 3.76
   },
   {
    "w": "czeka",
-   "s": 4.0,
-   "e": 4.24
+   "s": 3.8,
+   "e": 4.0
   },
   {
    "w": "na",
-   "s": 4.28,
-   "e": 4.32
+   "s": 4.04,
+   "e": 4.08
   },
   {
    "w": "ciebie",
-   "s": 4.4,
-   "e": 4.64
+   "s": 4.16,
+   "e": 4.4
   },
   {
    "w": "nawet",
-   "s": 4.72,
-   "e": 4.96
+   "s": 4.48,
+   "e": 4.72
   },
   {
    "w": "za",
-   "s": 5.04,
-   "e": 5.12
+   "s": 4.8,
+   "e": 4.88
   },
   {
    "w": "darmo,",
-   "s": 5.16,
-   "e": 5.68
+   "s": 4.92,
+   "e": 5.4
   },
   {
    "w": "w",
-   "s": 5.72,
-   "e": 5.76
+   "s": 5.44,
+   "e": 5.52
   },
   {
    "w": "Wolnych",
-   "s": 5.84,
-   "e": 6.16
+   "s": 5.56,
+   "e": 5.84
   },
   {
    "w": "Lekturach.",
-   "s": 6.24,
+   "s": 5.88,
    "e": 6.88
   }
  ],
- "speechEnd": 6.782
+ "speechEnd": 6.403
 }

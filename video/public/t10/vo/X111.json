@@ -1,17 +1,17 @@
 {
  "id": "X111",
- "hash": "5102dace543e",
- "text": "Rada, żeby zadziałało: w nocy, w słuchawkach i bez zerkania w telefon.",
- "duration": 5.04,
+ "hash": "6b1b3401b46a",
+ "text": "Żeby naprawdę zadziałało: w nocy, w słuchawkach i bez zerkania w telefon.",
+ "duration": 5.2,
  "words": [
   {
-   "w": "Rada,",
+   "w": "Żeby",
    "s": 0.0,
-   "e": 0.56
+   "e": 0.24
   },
   {
-   "w": "żeby",
-   "s": 0.64,
+   "w": "naprawdę",
+   "s": 0.32,
    "e": 0.8
   },
   {
@@ -21,12 +21,12 @@
   },
   {
    "w": "w",
-   "s": 1.8,
-   "e": 1.84
+   "s": 1.787,
+   "e": 1.813
   },
   {
    "w": "nocy,",
-   "s": 1.92,
+   "s": 1.84,
    "e": 2.48
   },
   {
@@ -46,24 +46,24 @@
   },
   {
    "w": "bez",
-   "s": 3.68,
+   "s": 3.6,
    "e": 3.84
   },
   {
    "w": "zerkania",
-   "s": 3.92,
-   "e": 4.32
+   "s": 3.96,
+   "e": 4.28
   },
   {
    "w": "w",
-   "s": 4.347,
-   "e": 4.373
+   "s": 4.32,
+   "e": 4.36
   },
   {
    "w": "telefon.",
    "s": 4.4,
-   "e": 5.04
+   "e": 5.2
   }
  ],
- "speechEnd": 4.95
+ "speechEnd": 4.898
 }

@@ -1,189 +1,189 @@
 {
  "id": "X92",
- "hash": "e634e66a2ed9",
- "text": "Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Rentgen pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów.",
- "duration": 13.76,
+ "hash": "c4a2afbd113b",
+ "text": "Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Prześwietlenie pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów.",
+ "duration": 14.32,
  "words": [
   {
    "w": "Młoda",
    "s": 0.0,
-   "e": 0.32
+   "e": 0.24
   },
   {
    "w": "kobieta",
-   "s": 0.373,
+   "s": 0.32,
    "e": 0.72
   },
   {
    "w": "ma",
-   "s": 0.76,
-   "e": 0.8
+   "s": 0.8,
+   "e": 0.88
   },
   {
    "w": "na",
-   "s": 0.88,
+   "s": 0.92,
    "e": 0.96
   },
   {
    "w": "karku",
-   "s": 1.0,
-   "e": 1.28
+   "s": 1.04,
+   "e": 1.44
   },
   {
    "w": "guz,",
-   "s": 1.36,
-   "e": 1.76
+   "s": 1.52,
+   "e": 1.92
   },
   {
    "w": "który",
-   "s": 1.8,
-   "e": 2.0
+   "s": 2.0,
+   "e": 2.24
   },
   {
    "w": "rośnie",
-   "s": 2.12,
-   "e": 2.4
+   "s": 2.32,
+   "e": 2.64
   },
   {
    "w": "z",
-   "s": 2.44,
-   "e": 2.48
+   "s": 2.68,
+   "e": 2.72
   },
   {
    "w": "dnia",
-   "s": 2.56,
-   "e": 2.8
+   "s": 2.8,
+   "e": 2.96
   },
   {
    "w": "na",
-   "s": 2.84,
-   "e": 2.88
+   "s": 3.04,
+   "e": 3.12
   },
   {
    "w": "dzień.",
-   "s": 2.96,
-   "e": 3.64
+   "s": 3.16,
+   "e": 3.867
   },
   {
-   "w": "Rentgen",
-   "s": 3.68,
-   "e": 4.0
-  },
-  {
-   "w": "pokazuje",
-   "s": 4.08,
+   "w": "Prześwietlenie",
+   "s": 3.893,
    "e": 4.48
   },
   {
+   "w": "pokazuje",
+   "s": 4.52,
+   "e": 4.96
+  },
+  {
    "w": "coś,",
-   "s": 4.56,
-   "e": 4.84
+   "s": 5.04,
+   "e": 5.387
   },
   {
    "w": "czego",
-   "s": 4.88,
-   "e": 5.04
+   "s": 5.413,
+   "e": 5.6
   },
   {
    "w": "lekarze",
-   "s": 5.12,
-   "e": 5.44
-  },
-  {
-   "w": "nie",
-   "s": 5.48,
-   "e": 5.52
-  },
-  {
-   "w": "potrafią",
-   "s": 5.6,
+   "s": 5.68,
    "e": 6.0
   },
   {
-   "w": "wyjaśnić:",
+   "w": "nie",
    "s": 6.08,
-   "e": 7.067
+   "e": 6.16
+  },
+  {
+   "w": "potrafią",
+   "s": 6.24,
+   "e": 6.56
+  },
+  {
+   "w": "wyjaśnić:",
+   "s": 6.64,
+   "e": 7.62
   },
   {
    "w": "w",
-   "s": 7.093,
-   "e": 7.12
+   "s": 7.64,
+   "e": 7.66
   },
   {
    "w": "środku",
-   "s": 7.16,
-   "e": 7.76
+   "s": 7.68,
+   "e": 8.32
   },
   {
    "w": "rozwija",
-   "s": 7.84,
-   "e": 8.16
+   "s": 8.4,
+   "e": 8.8
   },
   {
    "w": "się",
-   "s": 8.2,
-   "e": 8.4
+   "s": 8.88,
+   "e": 9.0
   },
   {
    "w": "płód.",
-   "s": 8.44,
-   "e": 9.387
+   "s": 9.04,
+   "e": 10.027
   },
   {
    "w": "A",
-   "s": 9.413,
-   "e": 9.44
+   "s": 10.053,
+   "e": 10.08
   },
   {
    "w": "pomocy",
-   "s": 9.52,
-   "e": 9.84
-  },
-  {
-   "w": "kobieta",
-   "s": 9.92,
-   "e": 10.24
-  },
-  {
-   "w": "szuka",
-   "s": 10.28,
+   "s": 10.16,
    "e": 10.48
   },
   {
-   "w": "u",
+   "w": "kobieta",
    "s": 10.56,
-   "e": 10.6
+   "e": 10.8
   },
   {
-   "w": "wróżbity,",
-   "s": 10.64,
+   "w": "szuka",
+   "s": 10.88,
+   "e": 11.12
+  },
+  {
+   "w": "u",
+   "s": 11.2,
    "e": 11.24
   },
   {
-   "w": "który",
+   "w": "wróżbity,",
    "s": 11.28,
-   "e": 11.52
+   "e": 11.947
+  },
+  {
+   "w": "który",
+   "s": 11.973,
+   "e": 12.24
   },
   {
    "w": "żyje",
-   "s": 11.6,
-   "e": 11.92
-  },
-  {
-   "w": "z",
-   "s": 11.947,
-   "e": 11.973
-  },
-  {
-   "w": "naiwności",
-   "s": 12.0,
+   "s": 12.32,
    "e": 12.56
   },
   {
+   "w": "z",
+   "s": 12.587,
+   "e": 12.613
+  },
+  {
+   "w": "naiwności",
+   "s": 12.64,
+   "e": 13.2
+  },
+  {
    "w": "klientów.",
-   "s": 12.6,
-   "e": 13.76
+   "s": 13.24,
+   "e": 14.32
   }
  ],
- "speechEnd": 13.212
+ "speechEnd": 13.831
 }

@@ -1,8 +1,8 @@
 {
  "id": "X05",
- "hash": "74706bdb8ad8",
- "text": "Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy i czytelników.",
- "duration": 5.52,
+ "hash": "6071da76736d",
+ "text": "Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy.",
+ "duration": 4.88,
  "words": [
   {
    "w": "Żeby",
@@ -17,58 +17,48 @@
   {
    "w": "wybrać,",
    "s": 0.48,
-   "e": 1.04
+   "e": 0.96
   },
   {
    "w": "w",
-   "s": 1.08,
-   "e": 1.12
+   "s": 1.0,
+   "e": 1.04
   },
   {
    "w": "SonorBooks",
-   "s": 1.24,
-   "e": 1.76
+   "s": 1.16,
+   "e": 1.68
   },
   {
    "w": "przejrzeliśmy",
-   "s": 1.8,
-   "e": 2.4
+   "s": 1.72,
+   "e": 2.32
   },
   {
    "w": "oceny",
-   "s": 2.52,
+   "s": 2.44,
+   "e": 2.8
+  },
+  {
+   "w": "i",
+   "s": 2.84,
    "e": 2.88
   },
   {
-   "w": "i",
-   "s": 2.92,
-   "e": 2.96
-  },
-  {
    "w": "opinie",
-   "s": 3.04,
-   "e": 3.44
+   "s": 2.96,
+   "e": 3.36
   },
   {
    "w": "tysięcy",
-   "s": 3.52,
-   "e": 4.0
+   "s": 3.44,
+   "e": 3.92
   },
   {
-   "w": "słuchaczy",
-   "s": 4.08,
-   "e": 4.56
-  },
-  {
-   "w": "i",
-   "s": 4.587,
-   "e": 4.613
-  },
-  {
-   "w": "czytelników.",
-   "s": 4.64,
-   "e": 5.52
+   "w": "słuchaczy.",
+   "s": 4.0,
+   "e": 4.88
   }
  ],
- "speechEnd": 5.435
+ "speechEnd": 4.88
 }

@@ -1,8 +1,8 @@
 {
  "id": "X102",
- "hash": "f186ceb71350",
- "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
- "duration": 14.16,
+ "hash": "62f465fd24d2",
+ "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą pokonać rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
+ "duration": 14.32,
  "words": [
   {
    "w": "Coś",
@@ -11,82 +11,82 @@
   },
   {
    "w": "jest",
-   "s": 0.36,
-   "e": 0.48
+   "s": 0.32,
+   "e": 0.4
   },
   {
    "w": "na",
-   "s": 0.56,
-   "e": 0.64
+   "s": 0.48,
+   "e": 0.56
   },
   {
    "w": "zewnątrz.",
-   "s": 0.76,
-   "e": 1.6
+   "s": 0.68,
+   "e": 1.52
   },
   {
    "w": "Wystarczy",
-   "s": 1.64,
-   "e": 2.16
+   "s": 1.56,
+   "e": 2.08
   },
   {
    "w": "jedno",
-   "s": 2.2,
-   "e": 2.48
+   "s": 2.12,
+   "e": 2.4
   },
   {
    "w": "spojrzenie,",
-   "s": 2.56,
-   "e": 3.08
+   "s": 2.48,
+   "e": 3.0
   },
   {
    "w": "żeby",
-   "s": 3.12,
-   "e": 3.28
+   "s": 3.04,
+   "e": 3.2
   },
   {
    "w": "człowieka",
-   "s": 3.32,
-   "e": 3.76
+   "s": 3.24,
+   "e": 3.68
   },
   {
    "w": "ogarnął",
-   "s": 3.84,
-   "e": 4.24
+   "s": 3.76,
+   "e": 4.16
   },
   {
    "w": "obłęd.",
-   "s": 4.36,
-   "e": 5.36
+   "s": 4.24,
+   "e": 5.2
   },
   {
    "w": "Pięć",
-   "s": 5.4,
-   "e": 5.56
+   "s": 5.28,
+   "e": 5.44
   },
   {
    "w": "lat",
-   "s": 5.6,
-   "e": 5.76
+   "s": 5.52,
+   "e": 5.68
   },
   {
    "w": "później",
-   "s": 5.84,
+   "s": 5.72,
    "e": 6.24
   },
   {
    "w": "Malorie",
-   "s": 6.32,
-   "e": 6.8
+   "s": 6.36,
+   "e": 6.72
   },
   {
    "w": "i",
-   "s": 6.84,
+   "s": 6.8,
    "e": 6.88
   },
   {
    "w": "dwoje",
-   "s": 6.96,
+   "s": 6.92,
    "e": 7.2
   },
   {
@@ -97,73 +97,73 @@
   {
    "w": "dzieci",
    "s": 7.573,
-   "e": 7.84
-  },
-  {
-   "w": "muszą",
-   "s": 7.92,
    "e": 8.16
   },
   {
-   "w": "przepłynąć",
+   "w": "muszą",
    "s": 8.2,
-   "e": 8.64
+   "e": 8.4
+  },
+  {
+   "w": "pokonać",
+   "s": 8.44,
+   "e": 8.827
   },
   {
    "w": "rzeką",
-   "s": 8.68,
-   "e": 9.04
+   "s": 8.853,
+   "e": 9.12
   },
   {
    "w": "trzydzieści",
-   "s": 9.08,
-   "e": 9.52
+   "s": 9.2,
+   "e": 9.68
   },
   {
    "w": "kilometrów…",
-   "s": 9.6,
-   "e": 10.773
+   "s": 9.76,
+   "e": 10.987
   },
   {
    "w": "z",
-   "s": 10.827,
-   "e": 10.88
+   "s": 11.013,
+   "e": 11.04
   },
   {
    "w": "opaskami",
-   "s": 10.96,
-   "e": 11.36
+   "s": 11.12,
+   "e": 11.6
   },
   {
    "w": "na",
-   "s": 11.44,
-   "e": 11.52
+   "s": 11.64,
+   "e": 11.68
   },
   {
    "w": "oczach.",
-   "s": 11.64,
-   "e": 12.36
+   "s": 11.76,
+   "e": 12.52
   },
   {
    "w": "Zdani",
-   "s": 12.4,
-   "e": 12.8
+   "s": 12.56,
+   "e": 12.96
   },
   {
    "w": "tylko",
-   "s": 12.88,
-   "e": 13.12
+   "s": 13.04,
+   "e": 13.28
   },
   {
    "w": "na",
-   "s": 13.16,
-   "e": 13.2
+   "s": 13.36,
+   "e": 13.44
   },
   {
    "w": "słuch.",
-   "s": 13.28,
-   "e": 14.16
+   "s": 13.52,
+   "e": 14.32
   }
  ],
- "speechEnd": 13.69
+ "speechEnd": 13.866
 }

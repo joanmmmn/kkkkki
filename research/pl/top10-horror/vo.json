@@ -14,7 +14,8 @@
   },
   {
    "id": "X05",
-   "text": "Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy i czytelników."
+   "text": "Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy słuchaczy.",
+   "say": "Żeby je wybrać, w Sonorbuks przejrzeliśmy oceny i opinie tysięcy słuchaczy."
   },
   {
    "id": "X07",
@@ -101,8 +102,8 @@
   },
   {
    "id": "X63",
-   "text": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w 2026 roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów.",
-   "say": "To polska groza z prawdziwego zdarzenia: debiut, który zdobył Nagrodę Czytelników imienia Stefana Grabińskiego. A w dwa tysiące dwudziestym szóstym roku powstało z niego słuchowisko z Danutą Stenką i ponad pięćdziesięciorgiem aktorów."
+   "text": "To polska groza z prawdziwego zdarzenia: w 2019 roku czytelnicy wybrali tę powieść krajowym hitem roku w plebiscycie Złoty Kościej. A w 2026 roku powstało z niej słuchowisko z Danutą Stenką i ponad pięćdziesięcioma aktorami.",
+   "say": "To polska groza z prawdziwego zdarzenia: w dwa tysiące dziewiętnastym roku czytelnicy wybrali tę powieść krajowym hitem roku w plebiscycie Złoty Kościej. A w dwa tysiące dwudziestym szóstym roku powstało z niej słuchowisko z Danutą Stenką i ponad pięćdziesięcioma aktorami."
   },
   {
    "id": "X71",
@@ -138,12 +139,12 @@
   },
   {
    "id": "X92",
-   "text": "Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Rentgen pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów."
+   "text": "Młoda kobieta ma na karku guz, który rośnie z dnia na dzień. Prześwietlenie pokazuje coś, czego lekarze nie potrafią wyjaśnić: w środku rozwija się płód. A pomocy kobieta szuka u wróżbity, który żyje z naiwności klientów."
   },
   {
    "id": "X93",
-   "text": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.",
-   "say": "To pierwszy horror Mastertona, który bardzo szybko stał się światowym bestsellerem. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitou w ręku."
+   "text": "To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.",
+   "say": "To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitu w ręku."
   },
   {
    "id": "X101",
@@ -152,8 +153,8 @@
   },
   {
    "id": "X102",
-   "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
-   "say": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malori i dwoje małych dzieci muszą przepłynąć rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch."
+   "text": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malorie i dwoje małych dzieci muszą pokonać rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch.",
+   "say": "Coś jest na zewnątrz. Wystarczy jedno spojrzenie, żeby człowieka ogarnął obłęd. Pięć lat później Malori i dwoje małych dzieci muszą pokonać rzeką trzydzieści kilometrów… z opaskami na oczach. Zdani tylko na słuch."
   },
   {
    "id": "X103",
@@ -170,12 +171,12 @@
   },
   {
    "id": "X111",
-   "text": "Rada, żeby zadziałało: w nocy, w słuchawkach i bez zerkania w telefon."
+   "text": "Żeby naprawdę zadziałało: w nocy, w słuchawkach i bez zerkania w telefon."
   },
   {
    "id": "X112A",
-   "text": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
-   "say": "Najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Pou czeka na ciebie nawet za darmo, w Wolnych Lekturach."
+   "text": "A co najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.",
+   "say": "A co najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Pou czeka na ciebie nawet za darmo, w Wolnych Lekturach."
   },
   {
    "id": "X112B",
@@ -184,7 +185,7 @@
   },
   {
    "id": "X113",
-   "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I jakie historie mamy przynieść następnym razem?"
+   "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I o jakich historiach mamy opowiedzieć następnym razem?"
   },
   {
    "id": "X114",

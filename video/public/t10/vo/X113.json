@@ -1,27 +1,27 @@
 {
  "id": "X113",
- "hash": "acbc79ed4b1c",
- "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I jakie historie mamy przynieść następnym razem?",
- "duration": 6.4,
+ "hash": "b4b73e1025dd",
+ "text": "I napisz w komentarzu: która przestraszyła cię najbardziej? I o jakich historiach mamy opowiedzieć następnym razem?",
+ "duration": 6.48,
  "words": [
   {
    "w": "I",
    "s": 0.0,
-   "e": 0.08
+   "e": 0.04
   },
   {
    "w": "napisz",
-   "s": 0.2,
-   "e": 0.4
+   "s": 0.08,
+   "e": 0.32
   },
   {
    "w": "w",
-   "s": 0.44,
-   "e": 0.48
+   "s": 0.4,
+   "e": 0.427
   },
   {
    "w": "komentarzu:",
-   "s": 0.587,
+   "s": 0.453,
    "e": 1.36
   },
   {
@@ -31,54 +31,59 @@
   },
   {
    "w": "przestraszyła",
-   "s": 1.76,
+   "s": 1.72,
    "e": 2.24
   },
   {
    "w": "cię",
-   "s": 2.32,
-   "e": 2.46
+   "s": 2.28,
+   "e": 2.36
   },
   {
    "w": "najbardziej?",
-   "s": 2.52,
-   "e": 3.4
+   "s": 2.4,
+   "e": 3.28
   },
   {
    "w": "I",
-   "s": 3.44,
-   "e": 3.52
+   "s": 3.36,
+   "e": 3.44
   },
   {
-   "w": "jakie",
-   "s": 3.64,
-   "e": 3.84
+   "w": "o",
+   "s": 3.52,
+   "e": 3.6
   },
   {
-   "w": "historie",
-   "s": 4.04,
-   "e": 4.32
+   "w": "jakich",
+   "s": 3.68,
+   "e": 3.92
+  },
+  {
+   "w": "historiach",
+   "s": 4.08,
+   "e": 4.48
   },
   {
    "w": "mamy",
-   "s": 4.4,
-   "e": 4.56
+   "s": 4.52,
+   "e": 4.72
   },
   {
-   "w": "przynieść",
-   "s": 4.64,
-   "e": 5.04
+   "w": "opowiedzieć",
+   "s": 4.8,
+   "e": 5.24
   },
   {
    "w": "następnym",
-   "s": 5.08,
-   "e": 5.52
+   "s": 5.28,
+   "e": 5.76
   },
   {
    "w": "razem?",
-   "s": 5.64,
-   "e": 6.4
+   "s": 5.84,
+   "e": 6.48
   }
  ],
- "speechEnd": 5.976
+ "speechEnd": 6.233
 }
