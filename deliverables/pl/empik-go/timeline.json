@@ -1,6 +1,6 @@
 {
- "total_frames": 13480,
- "seconds": 269.6,
+ "total_frames": 13474,
+ "seconds": 269.48,
  "chapters": [
   {
    "t": 13.64,
@@ -15,39 +15,39 @@
    "label": "Katalog i Empik Go Originals"
   },
   {
-   "t": 82.18,
+   "t": 81.86,
    "label": "Switch i odtwarzacz"
   },
   {
-   "t": 100.32,
+   "t": 100.0,
    "label": "Limit w Go Standard"
   },
   {
-   "t": 118.16,
+   "t": 117.84,
    "label": "Tryb dziecięcy"
   },
   {
-   "t": 129.46,
+   "t": 129.14,
    "label": "Urządzenia i czytniki"
   },
   {
-   "t": 147.98,
+   "t": 147.66,
    "label": "Opinie"
   },
   {
-   "t": 164.42,
+   "t": 164.1,
    "label": "Plusy i minusy"
   },
   {
-   "t": 182.74,
+   "t": 182.42,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 199.9,
+   "t": 199.58,
    "label": "Jak wypróbować 7 dni za darmo"
   },
   {
-   "t": 232.66,
+   "t": 232.54,
    "label": "Pierwsza opłata i jak zrezygnować"
   }
  ],
@@ -88,14 +88,14 @@
    "id": "A05",
    "kind": "rec",
    "start": 3386,
-   "dur": 737,
+   "dur": 721,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A06",
    "kind": "features",
-   "start": 4123,
+   "start": 4107,
    "dur": 893,
    "lead": 26,
    "bump": "Aplikacja"
@@ -103,7 +103,7 @@
   {
    "id": "A07",
    "kind": "rec",
-   "start": 5016,
+   "start": 5000,
    "dur": 892,
    "lead": 7,
    "bump": null
@@ -111,7 +111,7 @@
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5908,
+   "start": 5892,
    "dur": 565,
    "lead": 7,
    "bump": null
@@ -119,7 +119,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6473,
+   "start": 6457,
    "dur": 940,
    "lead": 7,
    "bump": null
@@ -127,7 +127,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7413,
+   "start": 7397,
    "dur": 822,
    "lead": 26,
    "bump": "Opinie"
@@ -135,7 +135,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8235,
+   "start": 8219,
    "dur": 916,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -143,7 +143,7 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9151,
+   "start": 9135,
    "dur": 858,
    "lead": 26,
    "bump": "Werdykt"
@@ -151,7 +151,7 @@
   {
    "id": "B01",
    "kind": "stat",
-   "start": 10009,
+   "start": 9993,
    "dur": 358,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -159,15 +159,15 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10367,
-   "dur": 774,
+   "start": 10351,
+   "dur": 784,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B03",
    "kind": "rec",
-   "start": 11141,
+   "start": 11135,
    "dur": 492,
    "lead": 7,
    "bump": null
@@ -175,7 +175,7 @@
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11633,
+   "start": 11627,
    "dur": 449,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 12082,
+   "start": 12076,
    "dur": 525,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12607,
+   "start": 12601,
    "dur": 873,
    "lead": 7,
    "bump": null

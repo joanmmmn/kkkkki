@@ -21,9 +21,9 @@ Sprawdziliśmy cennik, regulamin i opinie: plusy, minusy i jak wypróbować Empi
 0:13 Czym jest Empik Go
 0:28 Cennik: Go Smart, Go Max i Go Standard
 0:56 Katalog i Empik Go Originals
-1:22 Switch i odtwarzacz
+1:21 Switch i odtwarzacz
 1:40 Limit w Go Standard
-1:58 Tryb dziecięcy
+1:57 Tryb dziecięcy
 2:09 Urządzenia i czytniki
 2:27 Opinie
 2:44 Plusy i minusy
