@@ -1,0 +1,19 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 167,
+ "duration": 13.306,
+ "offset": 0.13,
+ "marks": {
+  "hero": 0.328,
+  "scroll": 3.152,
+  "hours": 5.034,
+  "blocks": 7.297,
+  "kids": 9.464,
+  "end": 13.306
+ },
+ "events": []
+}
