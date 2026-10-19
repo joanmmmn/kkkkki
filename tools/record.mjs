@@ -42,7 +42,7 @@ const browser = await chromium.launch({
   args: ['--autoplay-policy=no-user-gesture-required', '--hide-scrollbars', '--font-render-hinting=none'],
 });
 const ctxOpts = script.mobile
-  ? { ...devices['iPhone 14 Pro Max'], locale: script.locale || 'es-ES', ...(script.timezone ? { timezoneId: script.timezone } : {}), ...(script.dpr ? { deviceScaleFactor: script.dpr } : {}) }
+  ? { ...devices['iPhone 14 Pro Max'], ...(script.viewport ? { viewport: { width: vw, height: vh } } : {}), locale: script.locale || 'es-ES', ...(script.timezone ? { timezoneId: script.timezone } : {}), ...(script.dpr ? { deviceScaleFactor: script.dpr } : {}) }
   : { viewport: { width: vw, height: vh }, deviceScaleFactor: dpr, locale: script.locale || 'es-ES', ...(script.timezone ? { timezoneId: script.timezone } : {}) };
 if (script.locale) ctxOpts.extraHTTPHeaders = { 'Accept-Language': `${script.locale},${script.locale.split('-')[0]};q=0.9` };
 const ctx = await browser.newContext(ctxOpts);
