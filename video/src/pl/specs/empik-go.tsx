@@ -93,7 +93,9 @@ export const piece: PLPiece = {
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Empik Go:\nczy warto?', yes: [
         { at: 'Smart', label: 'Słuchasz i czytasz na 1 telefonie', sub: 'Go Smart · 39,99 zł / 30 dni' },
         { at: 'Standard', label: 'Kończysz do 3 książek miesięcznie', sub: 'Go Standard · 24,99 zł / 30 dni' },
-      ], no: [], alts: { at: 'tylko', names: ['Audioteka Klub · 29,90 zł / mies. (stan na październik 2026)'], label: 'Tylko audiobooki bez limitu? Porównaj z:' } },
+      ], noTitle: 'Porównaj, jeśli…', no: [
+        { at: 'tylko', label: 'Chcesz tylko audiobooków bez limitu', sub: 'Audioteka Klub · 29,90 zł / mies. (stan na październik 2026)' },
+      ] },
       { id: 'B01', kind: 'stat', bump: 'Jak wypróbować za darmo', kicker: 'Empik Go', title: 'Okres próbny', at: 'Empik', value: '7 dni', label: 'za darmo w każdym planie', tags: [
         { at: 'karta', label: 'Tylko z kartą płatniczą', icon: 'card' }, { at: ['tylko', 1], label: 'Tylko raz', sub: 'bez względu na plan', icon: 'user' },
       ] },

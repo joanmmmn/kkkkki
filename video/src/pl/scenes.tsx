@@ -340,8 +340,8 @@ const Verdict: React.FC<P<VerdictScene>> = ({ c, s }) => {
         <div style={{ position: 'absolute', left: 130, top: 90 }}>
           <MaskTitle text={s.question ?? `Czy warto płacić\nza ${c.spec.name}?`} at={4} size={84} hi={[c.spec.name.split(' ')[0]]} />
         </div>
-        {list('Tak, jeśli…', 'good', s.yes, 130)}
-        {list('Raczej nie, jeśli…', 'bad', s.no, 1000)}
+        {list(s.yesTitle ?? 'Tak, jeśli…', 'good', s.yes, 130)}
+        {list(s.noTitle ?? 'Raczej nie, jeśli…', 'bad', s.no, 1000)}
         {s.alts && (
           <div style={{ position: 'absolute', left: 130, right: 130, bottom: 80, display: 'flex', alignItems: 'center', gap: 20, opacity: altP, transform: `translateY(${(1 - altP) * 30}px)` }}>
             <span style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: color.ink2 }}>{s.alts.label ?? 'Porównaj z:'}</span>

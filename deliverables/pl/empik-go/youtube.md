@@ -1,6 +1,6 @@
 # YouTube · Empik Go (SonorBooks Polska)
 
-Duración: 4:30 · Subtítulos: `empik-go.pl.srt` · Miniatura: `PLThumb-empik-go`
+Duración: 4:29 · Subtítulos: `empik-go.pl.srt` · Miniatura: `PLThumb-empik-go`
 
 ## Tytuł (76 znaków)
 **Empik Go: czy warto w 2026? Recenzja, opinie, cena i jak wypróbować za darmo**
