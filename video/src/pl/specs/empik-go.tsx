@@ -11,7 +11,7 @@ export const piece: PLPiece = {
     logo: 'pl/empik-go/img/logo.svg', logoWhite: 'pl/empik-go/img/logo_white.svg', logoRatio: 58 / 213, tileBg: '#002023', tileLogoWhite: true,
     kicker: 'Recenzja Empik Go', music: 'pl/empik-go/music/bed.mp3',
     scenes: [
-      { id: 'A01', kind: 'hook', title: 'Empik Go:\nczy warto?', hi: ['Empik', 'Go:', 'Go'], rec: { clip: 'plany', start: 0.3 }, promises: [
+      { id: 'A01', kind: 'hook', title: 'Empik Go:\nczy warto?', hi: ['Empik', 'Go:', 'Go'], rec: { clip: 'plany', start: 0.3, holdAt: 8.3 }, promises: [
         { at: 'cennik', label: 'Cennik', icon: 'coin' }, { at: 'regulamin', label: 'Regulamin', icon: 'doc' }, { at: 'opinie', label: 'Opinie', icon: 'star' },
         { at: 'plusy', label: 'Plusy i minusy', tone: 'good' }, { at: '7', label: '7 dni za darmo', sub: 'z kartą płatniczą, tylko raz', icon: 'gift' },
       ] },
@@ -26,9 +26,8 @@ export const piece: PLPiece = {
         { at: 'Maks', name: 'Go Max', price: '49,99 zł', period: '/ 30 dni', features: ['Bez limitu tytułów', '2 urządzenia + Kindle', '4 urządzenia: 69,99 zł'] },
         { at: 'Standard', name: 'Go Standard', price: '24,99 zł', period: '/ 30 dni', features: ['3 tytuły / 30 dni', '2 urządzenia + Kindle'] },
       ], footer: [{ at: 'plany', label: 'Ceny: stan na październik 2026', icon: 'calendar', tone: 'accent' }, { at: 'Kindl', label: 'Czytnik Kindle w każdym planie', icon: 'ereader' }] },
-      { id: 'A04', kind: 'rec', bump: 'Katalog i Originals', kicker: 'empik.com/go', title: 'Zajrzyj bez logowania', rec: { clip: 'katalog', start: 0.3 },
-        cuts: [{ at: 'wlasne', rec: { clip: 'originals', start: 0.3 } }],
-        marks: [{ at: 'nowosci', until: 'bestsellery', x: 640, y: 116, w: 640, h: 60 }, { at: 'bestsellery', until: 'wlasne', x: 680, y: 452, w: 560, h: 60 }, { at: 'wlasne', x: 660, y: 96, w: 600, h: 60 }],
+      { id: 'A04', kind: 'rec', bump: 'Katalog i Originals', kicker: 'empik.com/go', title: 'Zajrzyj bez logowania', rec: { clip: 'katalog', start: 0.2 },
+        marks: [{ at: 'nowosci', until: 'bestsellery', x: 640, y: 112, w: 640, h: 54 }, { at: 'bestsellery', until: 'wlasne', x: 686, y: 470, w: 548, h: 54 }, { at: 'wlasne', x: 668, y: 920, w: 584, h: 56 }],
         tags: [
           { at: 'nowosci', label: 'Nowości', icon: 'sparkle' }, { at: 'bestsellery', label: 'Bestsellery', icon: 'star' },
           { at: 'sluchowiska', label: 'Słuchowiska dla dzieci', icon: 'kid' }, { at: 'wlasne', label: 'Empik Go Originals', icon: 'mic' },

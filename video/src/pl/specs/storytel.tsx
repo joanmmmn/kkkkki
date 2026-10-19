@@ -11,8 +11,8 @@ export const piece: PLPiece = {
     scenes: [
       { id: 'A01', kind: 'hook', title: 'Storytel:\nczy warto\npłacić?', hi: ['Storytel'], rec: { clip: 'portada', start: 0.4 },
         cuts: [{ at: 'ceny', rec: { clip: 'zakup', start: 0.3 } }, { at: 'Powiemy', rec: { clip: 'ksiazki', start: 3.3 } }, { at: 'zaczac', rec: { clip: 'zakup', start: 14.9 } }],
-        promises: [{ at: 'ceny', label: 'Ceny, katalog, regulamin', icon: 'search' }, { at: 'dobre', label: 'Co dobre', tone: 'good' }, { at: 'zle', label: 'Co złe', tone: 'bad' }, { at: 'najtaniej', label: 'Jak zacząć najtaniej', sub: 'darmowej próby teraz nie ma', icon: 'coin' }] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest Storytel', rec: { clip: 'portada', start: 3.0, holdAt: 8.5 },
+        promises: [{ at: 'ceny', label: 'Ceny, katalog, regulamin', icon: 'search' }, { at: 'dobre', label: 'Co dobre', tone: 'good' }, { at: 'zle', label: 'Co złe', tone: 'bad' }, { at: 'najtaniej', label: 'Jak zacząć najtaniej', sub: 'na stronie Storytel nie ma teraz darmowej próby', icon: 'coin' }] },
+      { id: 'A02', kind: 'intro', bump: 'Czym jest Storytel', rec: { clip: 'portada', start: 2.6, holdAt: 3.4 },
         facts: [{ at: 'szwedzki', label: 'Szwedzki serwis', sub: 'audiobooki i e-booki', icon: 'headphones' }, { at: 'szesnastego', label: 'W Polsce od 2016 roku', icon: 'calendar' }, { at: 'Sluchasz', label: 'Słuchasz i czytasz', sub: 'w jednej aplikacji', icon: 'book' }, { at: 'angielsku', label: 'Po polsku i po angielsku', icon: 'globe' }],
         big: { at: 'piecset', value: 500000, suffix: '+', label: 'tytułów do wyboru' } },
       { id: 'A03', kind: 'plans', bump: 'Cennik', title: 'Cztery plany, płatne co 30 dni', plans: [
@@ -33,11 +33,11 @@ export const piece: PLPiece = {
         tags: [{ at: 'lektorow', label: 'Lektorzy', icon: 'mic' }, { at: 'trzy', label: '3 godz. 7 min', icon: 'clock' }, { at: 'cztery', label: '4,6 · 12 161 ocen', icon: 'star' }, { at: 'odsluchac', label: 'Próbka do odsłuchu', icon: 'play' }] },
       { id: 'A07', kind: 'features', kicker: 'Aplikacja', title: 'Co potrafi?', cols: 3, items: [
         { at: 'przelaczysz', label: 'Słuchaj i czytaj', sub: 'w dowolnym miejscu', icon: 'sync' }, { at: 'tempa', label: 'Tempo', icon: 'speed' },
-        { at: 'zakladki', label: 'Zakładki', icon: 'bookmark' }, { at: 'wylacznik', label: 'Wyłącznik czasowy', icon: 'moon' },
+        { at: 'zakladki', label: 'Zakładki', icon: 'bookmark' }, { at: 'uspienia', label: 'Czas uśpienia', icon: 'moon' },
         { at: 'offline', label: 'Offline', icon: 'download' }, { at: 'szukanie', label: 'Szukanie w audiobooku', sub: 'nowość: Search in Book', icon: 'search' },
         { at: 'wyszukiwanie', label: 'Książka ze zdjęcia', sub: 'nowość: Story Scan', icon: 'sparkle' },
       ] },
-      { id: 'A08', kind: 'stat', kicker: 'Basic i Premium', title: 'Liczy się tempo 1×', at: 'szybciej', value: '−4 h', label: 'z limitu za 2 godziny słuchania w tempie 2×', tags: [
+      { id: 'A08', kind: 'stat', kicker: 'Basic i Premium', title: 'Liczy się tempo 1×', at: 'tempo', value: '−4 h', label: 'z limitu za 2 godziny słuchania w tempie 2×', tags: [
         { at: 'Unlimited', label: 'Unlimited: godzin nie liczysz', icon: 'infinity', tone: 'good' }, { at: 'urzadzeniu', label: '1 konto = 1 urządzenie naraz', icon: 'phone' },
       ] },
       { id: 'A08B', kind: 'rec', side: 'right', kicker: 'Rodzina i dzieci', title: 'Family i Kids Mode', rec: { clip: 'faq', start: 2.6 },
@@ -54,12 +54,12 @@ export const piece: PLPiece = {
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', title: 'Storytel w Polsce', pros: [
         { at: 'Unlimited', label: 'Unlimited bez limitu godzin' }, { at: 'audiobooki', label: 'Audiobooki i e-booki w jednej cenie' }, { at: 'wlasne', label: 'Storytel Original' }, { at: 'konta', label: 'Konta rodzinne' },
       ], cons: [
-        { at: ['Unlimited', 1], label: 'Droższy Unlimited: 44,90 zł', sub: 'wcześniej 39,90 zł' }, { at: 'darmowej', label: 'Brak darmowej próby' }, { at: 'komputer', label: 'Brak wersji na komputer' }, { at: 'znikajace', label: 'Znikające książki' },
+        { at: ['Unlimited', 1], label: 'Droższy Unlimited: 44,90 zł', sub: 'wcześniej 39,90 zł' }, { at: 'darmowej', label: 'Brak darmowej próby na stronie' }, { at: 'komputer', label: 'Brak wersji na komputer' }, { at: 'znikajace', label: 'Znikające książki' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', yes: [
         { at: 'duzo', label: 'Słuchasz dużo', sub: 'Unlimited bez liczenia godzin, najlepiej z promocją' }, { at: 'mniej', label: 'Słuchasz mniej', sub: 'wystarczy Basic: 25 h za 24,90 zł' },
       ], no: [
-        { at: 'przed', label: 'Chcesz najpierw spróbować za darmo', sub: 'teraz nie ma darmowej próby' },
+        { at: 'przed', label: 'Chcesz najpierw spróbować za darmo', sub: 'na stronie Storytel teraz jej nie ma' },
       ], alts: { at: 'porownaj', names: ['Audioteka Klub', 'Empik Go'], label: 'Porównaj z:' } },
       { id: 'B01', kind: 'stat', bump: 'Jak zacząć taniej', kicker: 'Nowi klienci', title: 'Okres próbny?', at: 'darmowego', value: '0', unit: 'dni', label: 'darmowej próby na stronie Storytel', tags: [
         { at: 'dwie', label: '2 promocje dla nowych klientów', icon: 'gift' }, { at: 'Unlimited', label: 'Stan na październik 2026', icon: 'calendar' },
@@ -67,9 +67,9 @@ export const piece: PLPiece = {
       { id: 'B02', kind: 'rec', kicker: 'Tylko dla nowych klientów', title: 'Dwie promocje', rec: { clip: 'zakup', start: 14.8, url: 'storytel.com/pl/signup' },
         cuts: [{ at: 'Druga', rec: { clip: 'portada', start: 9.4 } }],
         marks: [{ at: 'dwadziescia', until: 'potem', x: 326, y: 452, w: 254, h: 62 }, { at: 'potem', until: 'Druga', x: 326, y: 521, w: 422, h: 134 }, { at: 'pierwszy', x: 958, y: 352, w: 880, h: 258 }],
-        tags: [{ at: 'miesiecznie', label: '22,45 zł / mies.', sub: 'przez pierwsze 180 dni', icon: 'coin' }, { at: 'potem', label: 'Potem 44,90 zł', icon: 'calendar' }, { at: 'pierwszy', label: '320 zł za pierwszy rok', icon: 'gift' }, { at: 'platne', label: 'Płatne z góry', icon: 'card' }] },
+        tags: [{ at: 'miesiecznie', label: '22,45 zł / mies.', sub: 'pierwsze 180 dni · promocja do 30.11.2026', icon: 'coin' }, { at: 'potem', label: 'Potem 44,90 zł', icon: 'calendar' }, { at: 'pierwszy', label: '320 zł za pierwszy rok', icon: 'gift' }, { at: 'platne', label: 'Płatne z góry', icon: 'card' }] },
       { id: 'B03', kind: 'steps', kicker: 'Rejestracja', title: 'Konto i aplikacja', rec: { clip: 'zakup', start: 18.3, url: 'storytel.com/pl/signup' }, steps: [
-        { at: 'oferte', title: 'Wybierz ofertę' }, { at: 'zakladasz', title: 'Konto i płatność' },
+        { at: 'oferte', title: 'Wybierz ofertę' }, { at: 'zakladasz', title: 'Konto i metoda płatności' },
         { at: 'zgod', title: 'Zgody marketingowe?', sub: 'nie musisz zaznaczać' }, { at: 'logujesz', title: 'Zaloguj się w aplikacji', sub: 'tym samym kontem' },
       ], marks: [{ at: 'zgod', x: 1040, y: 664, w: 552, h: 164 }] },
       { id: 'B04', kind: 'steps', kicker: 'Rezygnacja', title: 'Jak zrezygnować', rec: { clip: 'faq', start: 17.4, holdAt: 24.0 }, steps: [
@@ -78,8 +78,8 @@ export const piece: PLPiece = {
       ], marks: [{ at: 'Zaloguj', until: 'Google', x: 460, y: 486, w: 580, h: 38 }, { at: 'Google', x: 460, y: 524, w: 760, h: 38 }],
         note: { at: 'usuniecie', label: 'Usunięcie aplikacji nie anuluje', icon: 'phone' } },
       { id: 'B05', kind: 'features', kicker: 'Drobny druk', title: 'Regulamin Storytel', cols: 1, items: [
-        { at: 'anulujesz', label: 'Rezygnujesz w trakcie promocji? Koniec od razu', sub: 'regulamin, pkt 3.1 i 6.2', icon: 'doc' },
-        { at: 'ostatniej', label: 'Godzina przed płatnością: bez zmian', sub: 'regulamin, pkt 6.2', icon: 'clock', tone: 'bad' },
+        { at: 'anulujesz', label: 'Rezygnujesz w trakcie promocji? Koniec od razu', sub: 'dotyczy też oferty rocznej za 320 zł · regulamin, pkt 3.1 i 6.2', icon: 'doc' },
+        { at: 'ostatniej', label: 'Godzinę przed płatnością nic nie zmienisz', sub: 'regulamin, pkt 6.2', icon: 'clock', tone: 'bad' },
       ] },
       { id: 'B06', kind: 'outro', rec: { clip: '@common/sb_search', start: 0.2, url: 'sonorbooks.pl' }, cta: 'Porównaj, gdzie\nposłuchasz i za ile:\nsonorbooks.pl', ctaAt: 'sonorbooks', signAt: 'Twoja',
         tags: [{ at: 'Audiotek', label: 'Audioteka · Empik Go · Legimi · Audible', icon: 'search' }] },
@@ -102,5 +102,5 @@ export const piece: PLPiece = {
       { label: 'Drobny druk regulaminu', from: 'B05' },
     ],
   },
-  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'infinity', text: 'Unlimited\n44,90 zł' }, label: { strong: 'Bez', rest: 'DARMOWEJ PRÓBY' } },
+  thumb: { line1: 'CZY WARTO', line2: 'PŁACIĆ?', seal: { icon: 'infinity', text: '44,90 zł\n/ 30 dni' }, label: { strong: 'Bez', rest: 'DARMOWEJ PRÓBY' } },
 };

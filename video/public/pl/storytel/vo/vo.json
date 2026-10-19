@@ -32,22 +32,22 @@
   },
   {
    "id": "A05",
-   "text": "Wizytówką serwisu są produkcje Storytel Original, dostępne tylko tutaj. Na przykład Kruk, słuchowisko Storytel i Canal+ z Michałem Żurawskim, albo Arka. Niebo Jakuba Żulczyka i Piotra Rogoży, z Jakubem Gierszałem.",
+   "text": "Wizytówką serwisu są produkcje Storytel Original, dostępne tylko tutaj. Na przykład „Kruk”, słuchowisko Storytel i Canal+ z Michałem Żurawskim, albo „Arka. Niebo” Jakuba Żulczyka i Piotra Rogoży, z Jakubem Gierszałem.",
    "say": "Wizytówką serwisu są produkcje Storytel Orydżinal, dostępne tylko tutaj. Na przykład Kruk, słuchowisko Storytel i Kanal Plus z Michałem Żurawskim, albo Arka. Niebo Jakuba Żulczyka i Piotra Rogoży, z Jakubem Gierszałem."
   },
   {
    "id": "A06",
-   "text": "Karta książki pokazuje lektorów, długość i ocenę słuchaczy: Kruk trwa 3 godziny 7 minut i ma 4,6 z ponad 12 000 ocen. Możesz też odsłuchać próbkę.",
+   "text": "Karta książki pokazuje lektorów, długość i ocenę słuchaczy: „Kruk” trwa 3 godziny 7 minut i ma 4,6 z ponad 12 000 ocen. Możesz też odsłuchać próbkę.",
    "say": "Karta książki pokazuje lektorów, długość i ocenę słuchaczy: Kruk trwa trzy godziny i siedem minut i ma cztery przecinek sześć z ponad dwunastu tysięcy ocen. Możesz też odsłuchać próbkę."
   },
   {
    "id": "A07",
-   "text": "Jeśli książka ma obie wersje, w dowolnym miejscu przełączysz się ze słuchania na czytanie. Masz zmianę tempa, zakładki, wyłącznik czasowy i tryb offline, a nowości to szukanie słów nawet w audiobooku i wyszukiwanie książki aparatem."
+   "text": "Jeśli książka ma obie wersje, w dowolnym miejscu przełączysz się ze słuchania na czytanie. Masz zmianę tempa, zakładki, czas uśpienia i tryb offline, a nowości to szukanie słów nawet w audiobooku i wyszukiwanie książki aparatem."
   },
   {
    "id": "A08",
-   "text": "W planach Basic i Premium czas liczy się przy normalnym tempie: słuchasz dwa razy szybciej, a schodzi pełna długość nagrania. W Unlimited godzin nie liczysz, ale na jednym koncie słuchasz naraz na jednym urządzeniu.",
-   "say": "W planach Bejzik i Premium czas liczy się przy normalnym tempie: słuchasz dwa razy szybciej, a schodzi pełna długość nagrania. W Anlimitid godzin nie liczysz, ale na jednym koncie słuchasz naraz na jednym urządzeniu."
+   "text": "W planach Basic i Premium uważaj na tempo: nawet jeśli słuchasz dwa razy szybciej, z limitu schodzi tyle, ile przy normalnym tempie. W Unlimited godzin nie liczysz, ale jedno konto działa naraz tylko na jednym urządzeniu.",
+   "say": "W planach Bejzik i Premium uważaj na tempo: nawet jeśli słuchasz dwa razy szybciej, z limitu schodzi tyle, ile przy normalnym tempie. W Anlimitid godzin nie liczysz, ale jedno konto działa naraz tylko na jednym urządzeniu."
   },
   {
    "id": "A08B",
@@ -71,8 +71,8 @@
   },
   {
    "id": "A12",
-   "text": "Czy warto? Jeśli słuchasz dużo, tak, zwłaszcza z promocją: w Unlimited nie liczysz godzin. Jeśli słuchasz mniej, wystarczy Basic. A przed decyzją porównaj go z Audioteką Klub czy Empik Go.",
-   "say": "Czy warto? Jeśli słuchasz dużo, tak, zwłaszcza z promocją: w Anlimitid nie liczysz godzin. Jeśli słuchasz mniej, wystarczy Bejzik. A przed decyzją porównaj go z Audioteką Klub czy Empik Goł."
+   "text": "Czy warto? Jeśli słuchasz dużo, tak, zwłaszcza z promocją: w Unlimited nie liczysz godzin. Jeśli słuchasz mniej, wystarczy Basic. A przed decyzją porównaj Storytel z Audioteką Klub czy Empik Go.",
+   "say": "Czy warto? Jeśli słuchasz dużo, tak, zwłaszcza z promocją: w Anlimitid nie liczysz godzin. Jeśli słuchasz mniej, wystarczy Bejzik. A przed decyzją porównaj Storytel z Audioteką Klub czy Empik Goł."
   },
   {
    "id": "B01",
@@ -86,7 +86,7 @@
   },
   {
    "id": "B03",
-   "text": "Wybierasz ofertę, zakładasz konto i dodajesz płatność; zgód marketingowych nie musisz zaznaczać. Potem logujesz się w aplikacji tym samym kontem."
+   "text": "Wybierasz ofertę, zakładasz konto i dodajesz metodę płatności; zgód marketingowych nie musisz zaznaczać. Potem logujesz się w aplikacji tym samym kontem."
   },
   {
    "id": "B04",

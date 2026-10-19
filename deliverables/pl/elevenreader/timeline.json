@@ -1,6 +1,6 @@
 {
- "total_frames": 13308,
- "seconds": 266.16,
+ "total_frames": 13316,
+ "seconds": 266.32,
  "chapters": [
   {
    "t": 15.1,
@@ -196,7 +196,7 @@
    "id": "B06",
    "kind": "outro",
    "start": 12247,
-   "dur": 1061,
+   "dur": 1069,
    "lead": 7,
    "bump": null
   }

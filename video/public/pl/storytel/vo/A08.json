@@ -1,8 +1,8 @@
 {
  "id": "A08",
- "hash": "935d9ef5fdf8",
- "text": "W planach Basic i Premium czas liczy się przy normalnym tempie: słuchasz dwa razy szybciej, a schodzi pełna długość nagrania. W Unlimited godzin nie liczysz, ale na jednym koncie słuchasz naraz na jednym urządzeniu.",
- "duration": 12.88,
+ "hash": "4fc3d8627088",
+ "text": "W planach Basic i Premium uważaj na tempo: nawet jeśli słuchasz dwa razy szybciej, z limitu schodzi tyle, ile przy normalnym tempie. W Unlimited godzin nie liczysz, ale jedno konto działa naraz tylko na jednym urządzeniu.",
+ "duration": 13.36,
  "words": [
   {
    "w": "W",
@@ -30,150 +30,160 @@
    "e": 1.6
   },
   {
-   "w": "czas",
+   "w": "uważaj",
    "s": 1.68,
-   "e": 1.92
+   "e": 2.08
   },
   {
-   "w": "liczy",
-   "s": 2.0,
-   "e": 2.16
+   "w": "na",
+   "s": 2.16,
+   "e": 2.24
   },
   {
-   "w": "się",
-   "s": 2.24,
-   "e": 2.32
+   "w": "tempo:",
+   "s": 2.4,
+   "e": 3.0
   },
   {
-   "w": "przy",
-   "s": 2.36,
-   "e": 2.48
-  },
-  {
-   "w": "normalnym",
-   "s": 2.64,
-   "e": 2.96
-  },
-  {
-   "w": "tempie:",
+   "w": "nawet",
    "s": 3.04,
-   "e": 3.76
+   "e": 3.28
+  },
+  {
+   "w": "jeśli",
+   "s": 3.36,
+   "e": 3.6
   },
   {
    "w": "słuchasz",
-   "s": 3.88,
-   "e": 4.24
+   "s": 3.68,
+   "e": 4.0
   },
   {
    "w": "dwa",
+   "s": 4.04,
+   "e": 4.16
+  },
+  {
+   "w": "razy",
    "s": 4.28,
    "e": 4.4
   },
   {
-   "w": "razy",
-   "s": 4.52,
-   "e": 4.64
-  },
-  {
    "w": "szybciej,",
-   "s": 4.72,
-   "e": 5.2
+   "s": 4.48,
+   "e": 5.0
   },
   {
-   "w": "a",
-   "s": 5.24,
-   "e": 5.28
+   "w": "z",
+   "s": 5.04,
+   "e": 5.08
+  },
+  {
+   "w": "limitu",
+   "s": 5.12,
+   "e": 5.4
   },
   {
    "w": "schodzi",
-   "s": 5.36,
-   "e": 5.68
+   "s": 5.44,
+   "e": 5.76
   },
   {
-   "w": "pełna",
-   "s": 5.76,
-   "e": 6.0
+   "w": "tyle,",
+   "s": 5.84,
+   "e": 6.28
   },
   {
-   "w": "długość",
-   "s": 6.08,
-   "e": 6.48
+   "w": "ile",
+   "s": 6.32,
+   "e": 6.4
   },
   {
-   "w": "nagrania.",
-   "s": 6.533,
-   "e": 7.52
+   "w": "przy",
+   "s": 6.48,
+   "e": 6.56
+  },
+  {
+   "w": "normalnym",
+   "s": 6.64,
+   "e": 7.12
+  },
+  {
+   "w": "tempie.",
+   "s": 7.24,
+   "e": 7.96
   },
   {
    "w": "W",
-   "s": 7.547,
-   "e": 7.573
+   "s": 8.0,
+   "e": 8.04
   },
   {
    "w": "Unlimited",
-   "s": 7.6,
-   "e": 8.32
-  },
-  {
-   "w": "godzin",
-   "s": 8.4,
-   "e": 8.72
-  },
-  {
-   "w": "nie",
-   "s": 8.76,
+   "s": 8.08,
    "e": 8.8
   },
   {
-   "w": "liczysz,",
+   "w": "godzin",
    "s": 8.88,
-   "e": 9.44
+   "e": 9.2
+  },
+  {
+   "w": "nie",
+   "s": 9.24,
+   "e": 9.28
+  },
+  {
+   "w": "liczysz,",
+   "s": 9.36,
+   "e": 9.88
   },
   {
    "w": "ale",
-   "s": 9.52,
-   "e": 9.6
+   "s": 9.92,
+   "e": 10.16
   },
   {
-   "w": "na",
-   "s": 9.68,
-   "e": 9.76
-  },
-  {
-   "w": "jednym",
-   "s": 9.8,
-   "e": 10.08
-  },
-  {
-   "w": "koncie",
+   "w": "jedno",
    "s": 10.2,
-   "e": 10.4
+   "e": 10.48
   },
   {
-   "w": "słuchasz",
-   "s": 10.48,
+   "w": "konto",
+   "s": 10.52,
    "e": 10.8
   },
   {
+   "w": "działa",
+   "s": 10.84,
+   "e": 11.04
+  },
+  {
    "w": "naraz",
-   "s": 10.88,
-   "e": 11.2
+   "s": 11.12,
+   "e": 11.44
+  },
+  {
+   "w": "tylko",
+   "s": 11.48,
+   "e": 11.76
   },
   {
    "w": "na",
-   "s": 11.28,
-   "e": 11.36
+   "s": 11.8,
+   "e": 11.84
   },
   {
    "w": "jednym",
-   "s": 11.4,
-   "e": 11.68
+   "s": 11.92,
+   "e": 12.24
   },
   {
    "w": "urządzeniu.",
-   "s": 11.72,
-   "e": 12.88
+   "s": 12.28,
+   "e": 13.36
   }
  ],
- "speechEnd": 12.306
+ "speechEnd": 12.881
 }

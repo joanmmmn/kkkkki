@@ -80,12 +80,12 @@ Original, dostępne tylko tutaj.
 
 19
 00:01:10,853 --> 00:01:16,547
-Na przykład Kruk, słuchowisko Storytel
-i Canal+ z Michałem Żurawskim, albo Arka.
+Na przykład „Kruk”, słuchowisko Storytel
+i Canal+ z Michałem Żurawskim, albo „Arka.
 
 20
 00:01:16,587 --> 00:01:20,410
-Niebo Jakuba Żulczyka i Piotra
+Niebo” Jakuba Żulczyka i Piotra
 Rogoży, z Jakubem Gierszałem.
 
 21
@@ -95,7 +95,7 @@ długość i ocenę słuchaczy:
 
 22
 00:01:24,700 --> 00:01:30,780
-Kruk trwa 3 godziny 7 minut
+„Kruk” trwa 3 godziny 7 minut
 i ma 4,6 z ponad 12 000 ocen.
 
 23
@@ -103,207 +103,202 @@ i ma 4,6 z ponad 12 000 ocen.
 Możesz też odsłuchać próbkę.
 
 24
-00:01:32,980 --> 00:01:37,340
+00:01:32,980 --> 00:01:37,260
 Jeśli książka ma obie wersje, w dowolnym
 miejscu przełączysz się ze słuchania na
 
 25
-00:01:37,380 --> 00:01:42,353
+00:01:37,300 --> 00:01:43,140
 czytanie. Masz zmianę tempa, zakładki,
-wyłącznik czasowy i tryb offline,
+czas uśpienia i tryb offline, a nowości to
 
 26
-00:01:42,393 --> 00:01:45,820
-a nowości to szukanie słów nawet
-w audiobooku i wyszukiwanie
+00:01:43,180 --> 00:01:47,310
+szukanie słów nawet w audiobooku
+i wyszukiwanie książki aparatem.
 
 27
-00:01:45,860 --> 00:01:47,310
-książki aparatem.
+00:01:47,460 --> 00:01:50,460
+W planach Basic i Premium uważaj na tempo:
 
 28
-00:01:47,460 --> 00:01:51,300
-W planach Basic i Premium czas
-liczy się przy normalnym tempie:
+00:01:50,500 --> 00:01:54,660
+nawet jeśli słuchasz dwa razy szybciej,
+z limitu schodzi tyle, ile przy normalnym
 
 29
-00:01:51,340 --> 00:01:54,967
-słuchasz dwa razy szybciej,
-a schodzi pełna długość nagrania.
+00:01:54,700 --> 00:01:59,340
+tempie. W Unlimited godzin nie liczysz,
+ale jedno konto działa naraz tylko na
 
 30
-00:01:55,007 --> 00:01:58,820
-W Unlimited godzin nie liczysz, ale
-na jednym koncie słuchasz naraz na
-
-31
-00:01:58,860 --> 00:02:00,480
+00:01:59,380 --> 00:02:01,060
 jednym urządzeniu.
 
-32
-00:02:00,520 --> 00:02:05,440
+31
+00:02:01,100 --> 00:02:06,020
 Family to osobne konta z własnymi półkami,
 opłacane przez jedną osobę, zwykle
 
-33
-00:02:05,480 --> 00:02:09,787
+32
+00:02:06,060 --> 00:02:10,367
 w jednym domu. A dla dzieci jest tryb
 dziecięcy, zabezpieczony kodem PIN,
 
-34
-00:02:09,827 --> 00:02:11,970
+33
+00:02:10,407 --> 00:02:12,550
 z samymi tytułami dla dzieci.
 
-35
-00:02:12,020 --> 00:02:16,900
+34
+00:02:12,600 --> 00:02:17,480
 Storytel działa na telefonach i tabletach
 z Androidem i iOS, na zegarkach,
 
-36
-00:02:16,940 --> 00:02:20,590
+35
+00:02:17,520 --> 00:02:21,170
 w samochodzie z Android Auto
 i CarPlay oraz z Chromecastem.
 
-37
-00:02:20,900 --> 00:02:24,190
+36
+00:02:21,480 --> 00:02:24,770
 Ale na komputerze ani na
 stronie nie posłuchasz.
 
-38
-00:02:24,660 --> 00:02:33,140
+37
+00:02:25,240 --> 00:02:33,720
 W polskim Google Play Storytel ma 4,7,
 a w App Store 4,8, z ponad 45 000 ocen.
 
-39
-00:02:33,180 --> 00:02:35,633
+38
+00:02:33,760 --> 00:02:36,213
 Użytkownicy chwalą jedną cenę za wszystko.
 
-40
-00:02:35,673 --> 00:02:39,420
+39
+00:02:36,253 --> 00:02:40,000
 Krytykują znikanie książek bez
 uprzedzenia, nawet w połowie serii,
 
-41
-00:02:39,460 --> 00:02:42,590
+40
+00:02:40,040 --> 00:02:43,170
 i tytuły czytane przez
 sztuczną inteligencję.
 
-42
-00:02:42,920 --> 00:02:48,400
+41
+00:02:43,500 --> 00:02:48,980
 Plusy: Unlimited bez limitu godzin,
 audiobooki i e-booki w jednej cenie,
 
-43
-00:02:48,440 --> 00:02:50,880
+42
+00:02:49,020 --> 00:02:51,460
 własne słuchowiska i konta rodzinne.
 
-44
-00:02:50,920 --> 00:02:56,240
+43
+00:02:51,500 --> 00:02:56,820
 Minusy: wyższa cena Unlimited, brak
 darmowej próby i wersji na komputer oraz
 
-45
-00:02:56,280 --> 00:02:58,610
+44
+00:02:56,860 --> 00:02:59,190
 książki znikające z dnia na dzień.
 
-46
-00:02:59,220 --> 00:03:03,540
+45
+00:02:59,800 --> 00:03:03,960
 Czy warto? Jeśli słuchasz dużo,
 tak, zwłaszcza z promocją:
 
-47
-00:03:03,580 --> 00:03:05,710
+46
+00:03:04,000 --> 00:03:06,240
 w Unlimited nie liczysz godzin.
 
-48
-00:03:05,860 --> 00:03:08,270
+47
+00:03:06,280 --> 00:03:08,610
 Jeśli słuchasz mniej, wystarczy Basic.
 
-49
-00:03:08,340 --> 00:03:12,190
-A przed decyzją porównaj go
+48
+00:03:08,760 --> 00:03:13,010
+A przed decyzją porównaj Storytel
 z Audioteką Klub czy Empik Go.
 
-50
-00:03:13,220 --> 00:03:18,220
+49
+00:03:13,960 --> 00:03:18,960
 Jak zacząć taniej? Na stronie Storytel nie
 ma teraz darmowego okresu próbnego, ale
 
-51
-00:03:18,260 --> 00:03:21,310
+50
+00:03:19,000 --> 00:03:22,050
 nowi klienci mają dwie
 promocje na Unlimited.
 
-52
-00:03:21,600 --> 00:03:30,090
+51
+00:03:22,340 --> 00:03:30,830
 Pierwsza: 22,45 zł miesięcznie przez
 pierwsze 180 dni, a potem 44,90 zł.
 
-53
-00:03:30,800 --> 00:03:35,050
+52
+00:03:31,540 --> 00:03:35,790
 Druga: pierwszy rok za
 320 zł, płatne z góry.
 
-54
-00:03:35,460 --> 00:03:40,220
+53
+00:03:36,200 --> 00:03:40,400
 Wybierasz ofertę, zakładasz konto
-i dodajesz płatność; zgód marketingowych
+i dodajesz metodę płatności; zgód
+
+54
+00:03:40,440 --> 00:03:42,640
+marketingowych nie musisz zaznaczać.
 
 55
-00:03:40,260 --> 00:03:41,660
-nie musisz zaznaczać.
-
-56
-00:03:41,700 --> 00:03:44,980
+00:03:42,680 --> 00:03:45,890
 Potem logujesz się
 w aplikacji tym samym kontem.
 
-57
-00:03:45,020 --> 00:03:50,260
+56
+00:03:45,980 --> 00:03:51,220
 Jak zrezygnować? Zaloguj się na stronie
 Storytel, wejdź w Subskrypcję, kliknij
 
-58
-00:03:50,300 --> 00:03:53,033
+57
+00:03:51,260 --> 00:03:53,993
 Anuluj i potwierdź – przyjdzie e-mail.
 
-59
-00:03:53,073 --> 00:03:56,820
+58
+00:03:54,033 --> 00:03:57,780
 Jeśli płacisz przez Google Play
 albo App Store, anulujesz tam.
 
-60
-00:03:56,860 --> 00:03:59,750
+59
+00:03:57,820 --> 00:04:00,710
 Samo usunięcie aplikacji nic nie zmienia.
 
-61
-00:03:59,880 --> 00:04:04,720
+60
+00:04:00,840 --> 00:04:05,680
 Drobny druk: według regulaminu, jeśli
 anulujesz w trakcie oferty promocyjnej,
 
-62
-00:04:04,760 --> 00:04:06,640
+61
+00:04:05,720 --> 00:04:07,600
 subskrypcja wygasa od razu.
 
-63
-00:04:06,680 --> 00:04:10,770
+62
+00:04:07,640 --> 00:04:11,730
 A w ostatniej godzinie przed kolejną
 płatnością nic już nie zmienisz.
 
-64
-00:04:10,860 --> 00:04:12,550
+63
+00:04:11,820 --> 00:04:13,510
 Chcesz porównać inne opcje?
 
-65
-00:04:12,700 --> 00:04:18,820
+64
+00:04:13,660 --> 00:04:19,780
 Na sonorbooks.pl zestawisz Audiotekę,
 Empik Go, Legimi czy Audible i sprawdzisz,
 
-66
-00:04:18,860 --> 00:04:21,140
+65
+00:04:19,820 --> 00:04:22,100
 gdzie posłuchać audiobooka i za ile.
 
-67
-00:04:21,180 --> 00:04:23,990
+66
+00:04:22,140 --> 00:04:24,950
 Twoja następna historia
 już na ciebie czeka.

@@ -1,7 +1,7 @@
 {
  "id": "A07",
- "hash": "e4d1b9ee7f64",
- "text": "Jeśli książka ma obie wersje, w dowolnym miejscu przełączysz się ze słuchania na czytanie. Masz zmianę tempa, zakładki, wyłącznik czasowy i tryb offline, a nowości to szukanie słów nawet w audiobooku i wyszukiwanie książki aparatem.",
+ "hash": "7fab275bda30",
+ "text": "Jeśli książka ma obie wersje, w dowolnym miejscu przełączysz się ze słuchania na czytanie. Masz zmianę tempa, zakładki, czas uśpienia i tryb offline, a nowości to szukanie słów nawet w audiobooku i wyszukiwanie książki aparatem.",
  "duration": 14.08,
  "words": [
   {
@@ -27,32 +27,32 @@
   {
    "w": "wersje,",
    "s": 1.2,
-   "e": 1.84
+   "e": 1.8
   },
   {
    "w": "w",
-   "s": 1.867,
-   "e": 1.893
+   "s": 1.84,
+   "e": 1.88
   },
   {
    "w": "dowolnym",
    "s": 1.92,
-   "e": 2.32
+   "e": 2.4
   },
   {
    "w": "miejscu",
-   "s": 2.4,
-   "e": 2.72
+   "s": 2.44,
+   "e": 2.8
   },
   {
    "w": "przełączysz",
-   "s": 2.76,
+   "s": 2.84,
    "e": 3.28
   },
   {
    "w": "się",
-   "s": 3.32,
-   "e": 3.44
+   "s": 3.36,
+   "e": 3.48
   },
   {
    "w": "ze",
@@ -66,67 +66,67 @@
   },
   {
    "w": "na",
-   "s": 4.24,
-   "e": 4.32
+   "s": 4.2,
+   "e": 4.24
   },
   {
    "w": "czytanie.",
-   "s": 4.4,
-   "e": 5.253
+   "s": 4.32,
+   "e": 5.16
   },
   {
    "w": "Masz",
-   "s": 5.307,
-   "e": 5.4
+   "s": 5.2,
+   "e": 5.36
   },
   {
    "w": "zmianę",
    "s": 5.44,
-   "e": 5.76
+   "e": 5.72
   },
   {
    "w": "tempa,",
-   "s": 5.92,
-   "e": 6.373
+   "s": 5.76,
+   "e": 6.36
   },
   {
    "w": "zakładki,",
-   "s": 6.427,
-   "e": 7.173
+   "s": 6.4,
+   "e": 7.16
   },
   {
-   "w": "wyłącznik",
-   "s": 7.227,
-   "e": 7.6
+   "w": "czas",
+   "s": 7.2,
+   "e": 7.44
   },
   {
-   "w": "czasowy",
-   "s": 7.72,
-   "e": 8.16
+   "w": "uśpienia",
+   "s": 7.48,
+   "e": 8.0
   },
   {
    "w": "i",
-   "s": 8.24,
-   "e": 8.32
+   "s": 8.08,
+   "e": 8.16
   },
   {
    "w": "tryb",
-   "s": 8.4,
-   "e": 8.56
+   "s": 8.24,
+   "e": 8.48
   },
   {
    "w": "offline,",
-   "s": 8.64,
-   "e": 9.387
+   "s": 8.56,
+   "e": 9.32
   },
   {
    "w": "a",
-   "s": 9.413,
-   "e": 9.44
+   "s": 9.36,
+   "e": 9.4
   },
   {
    "w": "nowości",
-   "s": 9.52,
+   "s": 9.44,
    "e": 9.92
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "w": "szukanie",
-   "s": 10.24,
-   "e": 10.64
+   "s": 10.2,
+   "e": 10.56
   },
   {
    "w": "słów",
-   "s": 10.68,
+   "s": 10.64,
    "e": 10.88
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "w": "i",
-   "s": 12.04,
-   "e": 12.08
+   "s": 12.08,
+   "e": 12.12
   },
   {
    "w": "wyszukiwanie",
@@ -172,13 +172,13 @@
   {
    "w": "książki",
    "s": 12.88,
-   "e": 13.08
+   "e": 13.12
   },
   {
    "w": "aparatem.",
-   "s": 13.12,
+   "s": 13.2,
    "e": 14.08
   }
  ],
- "speechEnd": 13.738
+ "speechEnd": 13.73
 }

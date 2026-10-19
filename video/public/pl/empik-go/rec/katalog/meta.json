@@ -1,0 +1,16 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 95,
+ "duration": 10.104,
+ "offset": 0.228,
+ "marks": {
+  "top": 0.192,
+  "ebooki": 4.772,
+  "end": 10.105
+ },
+ "events": []
+}

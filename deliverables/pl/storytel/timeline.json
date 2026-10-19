@@ -1,6 +1,6 @@
 {
- "total_frames": 13570,
- "seconds": 271.4,
+ "total_frames": 13618,
+ "seconds": 272.36,
  "chapters": [
   {
    "t": 11.9,
@@ -31,35 +31,35 @@
    "label": "Limity godzin i urządzeń"
   },
   {
-   "t": 120.38,
+   "t": 120.96,
    "label": "Family i tryb dziecięcy"
   },
   {
-   "t": 131.88,
+   "t": 132.46,
    "label": "Urządzenia"
   },
   {
-   "t": 143.86,
+   "t": 144.44,
    "label": "Opinie"
   },
   {
-   "t": 162.12,
+   "t": 162.7,
    "label": "Plusy i minusy"
   },
   {
-   "t": 178.42,
+   "t": 179.0,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 192.42,
+   "t": 193.16,
    "label": "Jak zacząć taniej: promocje i konto"
   },
   {
-   "t": 224.88,
+   "t": 225.84,
    "label": "Jak zrezygnować"
   },
   {
-   "t": 239.74,
+   "t": 240.7,
    "label": "Drobny druk regulaminu"
   }
  ],
@@ -124,14 +124,14 @@
    "id": "A08",
    "kind": "stat",
    "start": 5366,
-   "dur": 653,
+   "dur": 682,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A08B",
    "kind": "rec",
-   "start": 6019,
+   "start": 6048,
    "dur": 575,
    "lead": 7,
    "bump": null
@@ -139,7 +139,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6594,
+   "start": 6623,
    "dur": 613,
    "lead": 7,
    "bump": null
@@ -147,7 +147,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7207,
+   "start": 7236,
    "dur": 913,
    "lead": 26,
    "bump": "Opinie"
@@ -155,7 +155,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8120,
+   "start": 8149,
    "dur": 815,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -163,15 +163,15 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 8935,
-   "dur": 700,
+   "start": 8964,
+   "dur": 708,
    "lead": 26,
    "bump": "Werdykt"
   },
   {
    "id": "B01",
    "kind": "stat",
-   "start": 9635,
+   "start": 9672,
    "dur": 438,
    "lead": 26,
    "bump": "Jak zacząć taniej"
@@ -179,7 +179,7 @@
   {
    "id": "B02",
    "kind": "rec",
-   "start": 10073,
+   "start": 10110,
    "dur": 693,
    "lead": 7,
    "bump": null
@@ -187,15 +187,15 @@
   {
    "id": "B03",
    "kind": "steps",
-   "start": 10766,
-   "dur": 478,
+   "start": 10803,
+   "dur": 489,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B04",
    "kind": "steps",
-   "start": 11244,
+   "start": 11292,
    "dur": 743,
    "lead": 7,
    "bump": null
@@ -203,7 +203,7 @@
   {
    "id": "B05",
    "kind": "features",
-   "start": 11987,
+   "start": 12035,
    "dur": 549,
    "lead": 7,
    "bump": null
@@ -211,7 +211,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12536,
+   "start": 12584,
    "dur": 1034,
    "lead": 7,
    "bump": null

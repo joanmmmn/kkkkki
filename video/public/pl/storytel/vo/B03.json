@@ -1,8 +1,8 @@
 {
  "id": "B03",
- "hash": "25ae834b0945",
- "text": "Wybierasz ofertę, zakładasz konto i dodajesz płatność; zgód marketingowych nie musisz zaznaczać. Potem logujesz się w aplikacji tym samym kontem.",
- "duration": 9.28,
+ "hash": "fb55029f0987",
+ "text": "Wybierasz ofertę, zakładasz konto i dodajesz metodę płatności; zgód marketingowych nie musisz zaznaczać. Potem logujesz się w aplikacji tym samym kontem.",
+ "duration": 9.44,
  "words": [
   {
    "w": "Wybierasz",
@@ -12,98 +12,103 @@
   {
    "w": "ofertę,",
    "s": 0.48,
-   "e": 1.2
+   "e": 1.12
   },
   {
    "w": "zakładasz",
-   "s": 1.28,
-   "e": 1.76
+   "s": 1.2,
+   "e": 1.6
   },
   {
    "w": "konto",
-   "s": 1.8,
-   "e": 2.16
+   "s": 1.64,
+   "e": 2.0
   },
   {
    "w": "i",
-   "s": 2.24,
-   "e": 2.32
+   "s": 2.08,
+   "e": 2.16
   },
   {
    "w": "dodajesz",
-   "s": 2.36,
-   "e": 2.8
+   "s": 2.2,
+   "e": 2.6
   },
   {
-   "w": "płatność;",
-   "s": 2.92,
-   "e": 3.68
+   "w": "metodę",
+   "s": 2.64,
+   "e": 2.88
+  },
+  {
+   "w": "płatności;",
+   "s": 2.96,
+   "e": 3.92
   },
   {
    "w": "zgód",
-   "s": 3.76,
-   "e": 4.0
+   "s": 4.0,
+   "e": 4.16
   },
   {
    "w": "marketingowych",
    "s": 4.24,
-   "e": 4.72
+   "e": 4.96
   },
   {
    "w": "nie",
-   "s": 4.8,
-   "e": 4.88
+   "s": 5.04,
+   "e": 5.12
   },
   {
    "w": "musisz",
-   "s": 4.96,
-   "e": 5.2
+   "s": 5.2,
+   "e": 5.44
   },
   {
    "w": "zaznaczać.",
-   "s": 5.28,
-   "e": 6.2
+   "s": 5.52,
+   "e": 6.44
   },
   {
    "w": "Potem",
-   "s": 6.24,
-   "e": 6.56
+   "s": 6.48,
+   "e": 6.8
   },
   {
    "w": "logujesz",
-   "s": 6.64,
-   "e": 7.04
+   "s": 6.88,
+   "e": 7.28
   },
   {
    "w": "się",
-   "s": 7.08,
-   "e": 7.147
+   "s": 7.32,
+   "e": 7.387
   },
   {
    "w": "w",
-   "s": 7.173,
-   "e": 7.2
+   "s": 7.413,
+   "e": 7.44
   },
   {
    "w": "aplikacji",
-   "s": 7.28,
-   "e": 7.76
-  },
-  {
-   "w": "tym",
-   "s": 7.84,
+   "s": 7.52,
    "e": 8.0
   },
   {
+   "w": "tym",
+   "s": 8.04,
+   "e": 8.16
+  },
+  {
    "w": "samym",
-   "s": 8.08,
-   "e": 8.32
+   "s": 8.24,
+   "e": 8.48
   },
   {
    "w": "kontem.",
-   "s": 8.44,
-   "e": 9.28
+   "s": 8.56,
+   "e": 9.44
   }
  ],
- "speechEnd": 8.814
+ "speechEnd": 9.021
 }
