@@ -44,7 +44,13 @@
    "wait": 1500
   },
   {
-   "eval": "window.scrollTo(0,3640)"
+   "eval": "(()=>{const b=[...document.querySelectorAll('button,a,span,p')].find(e=>e.textContent.trim()==='Zatrzymaj animację');if(b)b.click()})()"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "window.scrollTo(0,document.querySelector('.originals-header').getBoundingClientRect().top+scrollY-110)"
   },
   {
    "wait": 900
@@ -89,7 +95,7 @@
    "record": false
   },
   {
-   "eval": "(async()=>{for(let k=0;k<20;k++){document.querySelector('.originals-slider .btn-next').click();await new Promise(r=>setTimeout(r,1300))}await new Promise(r=>setTimeout(r,1500));document.querySelector('.originals-slider-in').scrollLeft=0})()"
+   "eval": "(async()=>{jQuery('.originals-item[data-book=\\'21\\']').trigger('click');await new Promise(r=>setTimeout(r,2500));document.querySelector('.originals-slider-in').scrollLeft=0})()"
   },
   {
    "wait": 1200
@@ -117,7 +123,7 @@
    "record": false
   },
   {
-   "eval": "(async()=>{for(let k=0;k<4;k++){document.querySelector('.originals-slider .btn-prev').click();await new Promise(r=>setTimeout(r,1600))}await new Promise(r=>setTimeout(r,1500));document.querySelector('.originals-slider-in').scrollLeft=0})()"
+   "eval": "(async()=>{jQuery('.originals-item[data-book=\\'17\\']').trigger('click');await new Promise(r=>setTimeout(r,2500));document.querySelector('.originals-slider-in').scrollLeft=0})()"
   },
   {
    "wait": 1200

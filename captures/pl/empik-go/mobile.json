@@ -44,6 +44,12 @@
    "wait": 1500
   },
   {
+   "eval": "(()=>{const b=[...document.querySelectorAll('button,a,span,p')].find(e=>e.textContent.trim()==='Zatrzymaj animację');if(b)b.click()})()"
+  },
+  {
+   "wait": 300
+  },
+  {
    "eval": "window.scrollTo(0,0)"
   },
   {
@@ -72,8 +78,7 @@
    "mark": "scroll"
   },
   {
-   "scroll": 1080,
-   "dur": 2200
+   "eval": "(async()=>{const h=[...document.querySelectorAll('h3')].find(e=>e.textContent.trim()==='Go Smart');const to=h.getBoundingClientRect().top+scrollY-301;const s0=scrollY,dy=to-s0,d=2200*3,t0=Date.now();const e=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;await new Promise(res=>{const st=()=>{const p=Math.min(1,(Date.now()-t0)/d);scrollTo(0,s0+dy*e(p));p<1?requestAnimationFrame(st):res()};requestAnimationFrame(st)})})()"
   },
   {
    "wait": 200
@@ -88,8 +93,7 @@
    "mark": "btn"
   },
   {
-   "scroll": 110,
-   "dur": 800
+   "eval": "(async()=>{const h=[...document.querySelectorAll('h3')].find(e=>e.textContent.trim()==='Go Smart');const to=scrollY+110;const s0=scrollY,dy=to-s0,d=800*3,t0=Date.now();const e=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;await new Promise(res=>{const st=()=>{const p=Math.min(1,(Date.now()-t0)/d);scrollTo(0,s0+dy*e(p));p<1?requestAnimationFrame(st):res()};requestAnimationFrame(st)})})()"
   },
   {
    "wait": 3200
