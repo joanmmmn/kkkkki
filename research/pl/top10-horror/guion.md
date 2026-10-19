@@ -242,7 +242,7 @@ ES: Una mujer joven tiene en la nuca un bulto que crece día a día. La radiogra
 ### X93  (≈ 13.8 s)
 VO (pl): To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w 2021 roku Wrocław postawił mu krasnala z brązu – z „Manitou” w ręku.
 SAY: To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitu w ręku.
-Pantalla: Rótulo: Wrocław, 2021 · krasnal Mastertona (dibujo propio de un enanito con un libro; sin foto) · Desplegable: Gdzie posłuchać · link w opisie
+Pantalla: Tarjeta «Graham Masterton · 1975»: «Pierwszy horror» → «Światowy bestseller» · Rótulo: Wrocław, 2021 · krasnal Mastertona (dibujo propio de un enanito con un libro; sin foto) · Desplegable: Gdzie posłuchać · link w opisie
 Toma: —
 ES: Es la primera novela de terror de Masterton y, de entrada, un éxito mundial. Y en Polonia Masterton tiene tantos fans que en 2021 Breslavia le dedicó un enanito de bronce… con «Manitou» en la mano.
 

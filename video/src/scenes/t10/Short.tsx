@@ -71,7 +71,7 @@ const Review: React.FC<{ at: number }> = ({ at }) => {
     <div style={{ width: 960, padding: '30px 40px', borderRadius: '30px 30px 30px 8px', background: '#fff', color: color.ink, boxShadow: '0 30px 80px rgba(0,0,0,0.55)', opacity: Math.min(1, q * 1.4),
       transform: `translateY(${((1 - q) * 40).toFixed(1)}px) rotate(${(-1.5 * q).toFixed(2)}deg)` }}>
       <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 24, letterSpacing: 3, textTransform: 'uppercase', color: '#8a8a8a' }}>Opinia słuchacza · Audioteka</div>
-      <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 50, lineHeight: 1.18, marginTop: 12 }}>„To absolutna topka wydanego u nas w ostatnich latach horroru”</div>
+      <div style={{ fontFamily: font.serif, fontStyle: 'italic', fontSize: 50, lineHeight: 1.18, marginTop: 12 }}>„To absolutna topka wydanego u nas w ostatnich latach horroru”</div>
     </div>
   );
 };
