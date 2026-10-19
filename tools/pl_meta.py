@@ -119,7 +119,7 @@ def timed_words(item):
             nxt_i = next((k for k in range(i + 1, len(res)) if res[k]['s'] is not None), None)
             nxt = res[nxt_i]['s'] if nxt_i is not None else end
             gap = nxt_i - i if nxt_i is not None else len(res) - i
-            step = (nxt - prev) / (gap + 1)
+            step = (nxt - prev) / max(gap, 1)  # el hueco se reparte entero entre las palabras sin casar
             r['s'] = prev + step * 0.1
             r['e'] = prev + step
     return res
