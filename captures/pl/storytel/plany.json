@@ -1,0 +1,123 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.storytel.com/pl/subscriptions",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,560)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "cards"
+  },
+  {
+   "move": [
+    1555,
+    400
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "move": [
+    1160,
+    400
+   ],
+   "dur": 700
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "move": [
+    365,
+    380
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "mark": "family"
+  },
+  {
+   "move": [
+    1303,
+    528
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "mark": "family3"
+  },
+  {
+   "move": [
+    1250,
+    935
+   ],
+   "dur": 1100
+  },
+  {
+   "mark": "kids"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

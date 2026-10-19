@@ -1,4 +1,26 @@
 {
+ "audioteka": {
+  "A01": "Czy warto płacić za Audiotekę? To polska platforma z audiobookami, znana z superprodukcji z gwiazdorską obsadą. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak słuchać 14 dni za darmo.",
+  "A02": "Audioteka działa od ponad 15 lat, a od 2023 roku w całości należy do Wirtualnej Polski. W abonamencie Audioteka Klub masz ponad 50 000 audiobooków, audioseriali i podcastów, ponad 1300 znanych polskich głosów i nawet 500 nowości miesięcznie.",
+  "A03": "Główny plan to Plan Optymalny: 29,90 zł miesięcznie, bez limitu godzin, z 14 dniami za darmo dla nowych. Płacąc z góry za rok, wydasz 299 zł. Plan Smart to 17,90 zł za 20 godzin miesięcznie, a Plan na Start jest tańszy przez pierwsze 3 miesiące.",
+  "A04": "Cały katalog przejrzysz na audioteka.com bez logowania. Przełącz widok z „Wszystkie” na „Audioteka Klub”, a zobaczysz tylko to, czego posłuchasz w abonamencie.",
+  "A05": "Na przykład „Solaris” Lema: superprodukcja z Robertem Więckiewiczem, Magdaleną Cielecką i Adamem Woronowiczem, 7 godzin 56 minut, średnia 4,8. Ma znaczek „Dostępne w Klubie”, więc jest w abonamencie.",
+  "A06": "To największy atut Audioteki: ponad 200 superprodukcji i audioseriali, z muzyką, efektami i aktorami jak w kinie, i blisko 700 tytułów, których posłuchasz tylko tutaj. Nowe produkcje oryginalne klubowicze słyszą tygodnie przed premierą w sklepie.",
+  "A07": "Ale nie wszystko jest w Klubie. Część audiobooków, ze względów licencyjnych, trzeba kupić. Klubowicze płacą niższą cenę, a kupione tytuły zostają na półce także po rezygnacji.",
+  "A08": "W aplikacji ustawisz prędkość, na Androidzie nawet 3 razy szybciej, i drzemkę, a audiobooki pobierzesz do słuchania offline. Konto działa na dwóch urządzeniach, ale słuchasz na jednym naraz.",
+  "A08S": "W Planie Smart godziny liczą się przy normalnej prędkości, a niewykorzystane przepadają.",
+  "A08B": "Dla dzieci jest osobna aplikacja Audioteka Kids, w cenie Klubu, na jednym urządzeniu. W Planie Smart słuchanie w niej też zużywa godziny.",
+  "A09": "Z Klubu korzystasz tylko w aplikacji na Androida i iOS, nie w przeglądarce. W aucie masz Android Auto i CarPlay, dźwięk wyślesz na Chromecast, a aplikacja na iPhone'a działa też z zegarkiem Apple Watch.",
+  "A10": "Oceny są wysokie: 4,8 w Google Play przy prawie 68 tysiącach ocen i 4,7 w polskim App Store przy prawie 42 tysiącach. Użytkownicy chwalą lektorów i produkcje. Krytykują dopłaty do wielu tytułów i błędy aplikacji.",
+  "A11": "Plusy: bez limitu godzin, superprodukcje i wyłączności, 14 dni na próbę i tańszy Plan Smart. Minusy: tylko audio, bez ebooków, część tytułów do dokupienia, a z Klubu korzystasz tylko w aplikacji i na jednym urządzeniu naraz.",
+  "A12": "Werdykt: jeśli słuchasz dużo i po polsku, Plan Optymalny bez limitu godzin to mocna oferta. Słuchasz mniej? Wystarczy Plan Smart. A jeśli chcesz też czytać ebooki, porównaj z Legimi albo Empik Go.",
+  "B01": "Chcesz wypróbować? Nowi klubowicze mają 14 dni za darmo, tylko w miesięcznym Planie Optymalnym.",
+  "B02": "Wejdź na klub.audioteka.com, przy płatności miesięcznej kliknij „Wypróbuj 14 dni za darmo”, załóż konto i podaj metodę płatności. Przez 14 dni nic nie płacisz.",
+  "B03": "Pobierz aplikację Audioteka i zaloguj się. Tytuły z abonamentu znajdziesz w zakładce „Twoje”, w sekcji „Bezpłatne w Audioteka Klub”.",
+  "B04": "Jeśli nic nie zrobisz, po 14 dniach subskrypcja się odnowi: 29,90 zł miesięcznie.",
+  "B05": "Rezygnujesz na audioteka.com: Ustawienia konta, Zarządzaj Audioteka Klub, „Anuluj subskrypcję”. Jeśli subskrypcja jest z aplikacji, anulujesz ją w Google Play albo App Store. Samo usunięcie aplikacji nie wystarczy. Zrób to przed końcem 14. dnia.",
+  "B06": "Na sonorbooks.pl sprawdzisz, czy twój audiobook jest w Audioteka Klub, i porównasz ceny innych platform. Twoja następna historia już na ciebie czeka."
+ },
  "elevenreader": {
   "A01": "Ten tekst może ci przeczytać sztuczna inteligencja – nawet głosem Piotra Fronczewskiego. To ElevenReader, aplikacja od ElevenLabs. Czy warto za nią płacić? Sprawdziliśmy plan darmowy, Ultra, polskie audiobooki i drobny druk.",
   "A02": "ElevenReader czyta na głos twoje pliki, artykuły i strony, a do tego ma bibliotekę audiobooków. Stworzyło go ElevenLabs, firma dwóch Polaków założona w 2022 roku, a polska wersja aplikacji działa od kwietnia 2025 roku.",
@@ -36,6 +58,26 @@
   "B03": "Potem zaloguj się w aplikacji Kobo Books albo na czytniku i dodawaj tytuły z oznaczeniem Kobo Plus.",
   "B04": "Po 14 dniach Kobo zacznie pobierać opłatę co miesiąc. Jeśli nie chcesz płacić, anuluj przed końcem próby – na kobo.com, w swoim koncie, w sekcji subskrypcji. Nie zrobisz tego na czytniku ani w aplikacji na iPhone'a. Po anulowaniu tracisz dostęp do książek z abonamentu.",
   "B06": "Chcesz porównać Kobo Plus z Audioteką, Empik Go czy Legimi? W sonorbooks.pl zestawisz ich ceny, limity i okresy próbne, a na karcie audiobooka sprawdzisz, gdzie go posłuchasz i za ile. Twoja następna historia już na ciebie czeka."
+ },
+ "legimi": {
+  "A01": "Czy warto płacić za Legimi? To ebooki i audiobooki w jednym abonamencie. Sprawdziliśmy cennik, regulamin i opinie. Zobacz plusy, minusy i jak wypróbować Legimi 3 dni za darmo.",
+  "A02": "Legimi to polska firma z Poznania, która od ponad 10 lat oferuje książki w abonamencie. W pakiecie bez limitu masz około 240 000 tytułów. Jej znak rozpoznawczy to synchrobooki: ebook i audiobook pod jedną okładką. Czytasz w tramwaju, a w domu słuchasz dalej od tego samego miejsca.",
+  "A03": "Do słuchania potrzebujesz pakietu z audiobookami. Bez limitu kosztuje 54,99 zł miesięcznie bez umowy albo 49,99 zł z umową na 12 miesięcy. Pakiety z limitem zaczynają się od 14,99 zł za 8 godzin słuchania.",
+  "A04": "Katalog przejrzysz na legimi.pl bez logowania: bestsellery, nowości i kategorie. Przy każdym tytule widzisz, czy jest w abonamencie jako ebook, czy jako audiobook.",
+  "A05": "Na przykład „Harda” Elżbiety Cherezińskiej: czyta Filip Kosior, 21 godzin 53 minuty, średnia 4,7 przy 557 ocenach. Obok czasu widzisz też liczbę stron, ważną w pakietach z limitem.",
+  "A06": "W aplikacji, w synchrobookach, przełączasz się między ebookiem a audiobookiem, także bez internetu. Zmienisz prędkość i ustawisz wyłącznik czasowy, także na koniec rozdziału. Możesz też wgrać do 4 własnych ebooków EPUB miesięcznie.",
+  "A07": "Legimi ma też własne produkcje, jak audioserial „Zastrzyk miłości” z Katarzyną Bujakiewicz – tylko w Legimi. Ale nie wszystko jest w abonamencie: tytuły z Katalogu Klubowego są za dopłatą. Co miesiąc dostajesz 150 punktów, wartych 15 zł – nimi obniżysz te dopłaty.",
+  "A08": "W pakietach z limitem czytanie i słuchanie zużywają wspólną pulę stron. Godzina samego audiobooka to około 38 stron, liczona przy normalnej prędkości. Niewykorzystany limit przechodzi na kolejny miesiąc, ale jeśli go przekroczysz, Legimi pobierze kolejną opłatę.",
+  "A09": "Pakiet bez limitu działa na 4 urządzeniach: smartfonie, tablecie, komputerze z Windowsem i czytniku. Na Kindle'u przeczytasz do 10 ebooków miesięcznie. Ale audiobooków słuchasz tylko w aplikacji na Androida i iOS.",
+  "A10": "W Google Play Legimi ma 4,5 przy prawie 50 tysiącach ocen, w polskim App Store też 4,5 – przy ponad 16 tysiącach. Użytkownicy chwalą ogromny wybór i cenę. Krytykują błędy aplikacji i dopłaty do części tytułów.",
+  "A11": "Plusy: ebooki i audiobooki w jednym abonamencie, synchrobooki, 4 urządzenia z czytnikiem oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobooków nie posłuchasz na komputerze.",
+  "A12": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteka Klub: 29,90 zł bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem.",
+  "B01": "Chcesz to sprawdzić? Legimi daje 3 dni za darmo – raz na konto, raz na urządzenie i raz na kartę.",
+  "B02": "Wejdź na legimi.pl, w cenniku wybierz pakiet i kliknij „Wypróbuj przez 3 dni za darmo”. Załóż konto i podepnij kartę albo PayPal z płatnością cykliczną. Dziś nic nie płacisz.",
+  "B03": "Potem pobierz aplikację Legimi na telefon, zaloguj się i dodaj książki na półkę.",
+  "B04": "Uważaj na umowę. Jeśli wybierzesz umowę na 12 miesięcy i nie zrezygnujesz w okresie próbnym, wiążesz się na rok, a wcześniejsze wypowiedzenie oznacza zwrot rabatu. Bez umowy zrezygnujesz w każdej chwili.",
+  "B05": "Rezygnujesz na legimi.pl: Konto, Subskrypcja, przycisk „Zakończ”. Jeśli płacisz przez Apple – w ustawieniach Apple ID. Zrób to przed końcem 3. dnia i pamiętaj: rezygnacja w okresie próbnym kończy dostęp od razu.",
+  "B06": "Zanim zapłacisz, porównaj na sonorbooks.pl ceny i okresy próbne Legimi, Audioteki, Empik Go i innych platform. Twoja następna historia już na ciebie czeka."
  },
  "spotify": {
   "A01": "Spotify ma już w Polsce audiobooki w cenie Premium. Czy warto z nich korzystać? Sprawdziliśmy ceny, limity i drobny druk: co jest dobre, co słabe i jak zacząć.",

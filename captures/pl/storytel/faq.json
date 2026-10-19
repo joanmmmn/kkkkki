@@ -1,0 +1,147 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.storytel.com/pl",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,6000)"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "eval": "window.scrollTo(0,7000)"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,7000)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "list"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "clickText": "Jak działa plan Storytel Family?",
+   "dur": 1000
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "family"
+  },
+  {
+   "move": [
+    900,
+    690
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "clickText": "Jak działa plan Storytel Family?",
+   "dur": 700
+  },
+  {
+   "wait": 500
+  },
+  {
+   "clickText": "Jakie urządzenia są obsługiwane przez aplikację Storytel?",
+   "dur": 900
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "devices"
+  },
+  {
+   "move": [
+    900,
+    560
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "clickText": "Jakie urządzenia są obsługiwane przez aplikację Storytel?",
+   "dur": 700
+  },
+  {
+   "wait": 500
+  },
+  {
+   "clickText": "Czy mogę w dowolnym momencie anulować swoją subskrypcję Storytel?",
+   "dur": 900
+  },
+  {
+   "wait": 300
+  },
+  {
+   "mark": "cancel"
+  },
+  {
+   "move": [
+    900,
+    520
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 3400
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

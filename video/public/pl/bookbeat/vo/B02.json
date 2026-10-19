@@ -1,0 +1,149 @@
+{
+ "id": "B02",
+ "hash": "838921dd92a9",
+ "text": "Na stronie BookBeat zakładasz konto, wybierasz pakiet, który zacznie się po okresie próbnym, i dodajesz metodę płatności. Dziś nie płacisz nic, a zgody na marketing nie musisz zaznaczać.",
+ "duration": 11.2,
+ "words": [
+  {
+   "w": "Na",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "stronie",
+   "s": 0.16,
+   "e": 0.48
+  },
+  {
+   "w": "BookBeat",
+   "s": 0.56,
+   "e": 1.04
+  },
+  {
+   "w": "zakładasz",
+   "s": 1.12,
+   "e": 1.6
+  },
+  {
+   "w": "konto,",
+   "s": 1.64,
+   "e": 2.24
+  },
+  {
+   "w": "wybierasz",
+   "s": 2.32,
+   "e": 2.72
+  },
+  {
+   "w": "pakiet,",
+   "s": 2.84,
+   "e": 3.147
+  },
+  {
+   "w": "który",
+   "s": 3.173,
+   "e": 3.36
+  },
+  {
+   "w": "zacznie",
+   "s": 3.44,
+   "e": 3.68
+  },
+  {
+   "w": "się",
+   "s": 3.76,
+   "e": 3.92
+  },
+  {
+   "w": "po",
+   "s": 3.96,
+   "e": 4.0
+  },
+  {
+   "w": "okresie",
+   "s": 4.08,
+   "e": 4.36
+  },
+  {
+   "w": "próbnym,",
+   "s": 4.4,
+   "e": 5.2
+  },
+  {
+   "w": "i",
+   "s": 5.24,
+   "e": 5.28
+  },
+  {
+   "w": "dodajesz",
+   "s": 5.36,
+   "e": 5.72
+  },
+  {
+   "w": "metodę",
+   "s": 5.76,
+   "e": 6.04
+  },
+  {
+   "w": "płatności.",
+   "s": 6.08,
+   "e": 7.12
+  },
+  {
+   "w": "Dziś",
+   "s": 7.16,
+   "e": 7.44
+  },
+  {
+   "w": "nie",
+   "s": 7.52,
+   "e": 7.6
+  },
+  {
+   "w": "płacisz",
+   "s": 7.627,
+   "e": 7.92
+  },
+  {
+   "w": "nic,",
+   "s": 8.0,
+   "e": 8.48
+  },
+  {
+   "w": "a",
+   "s": 8.56,
+   "e": 8.64
+  },
+  {
+   "w": "zgody",
+   "s": 8.72,
+   "e": 8.96
+  },
+  {
+   "w": "na",
+   "s": 9.04,
+   "e": 9.12
+  },
+  {
+   "w": "marketing",
+   "s": 9.4,
+   "e": 9.68
+  },
+  {
+   "w": "nie",
+   "s": 9.76,
+   "e": 9.84
+  },
+  {
+   "w": "musisz",
+   "s": 9.92,
+   "e": 10.16
+  },
+  {
+   "w": "zaznaczać.",
+   "s": 10.24,
+   "e": 11.2
+  }
+ ],
+ "speechEnd": 10.834
+}

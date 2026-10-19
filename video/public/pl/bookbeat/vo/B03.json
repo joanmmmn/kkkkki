@@ -1,0 +1,99 @@
+{
+ "id": "B03",
+ "hash": "c55f8fdb6b00",
+ "text": "Potem pobierasz aplikację i logujesz się tym samym kontem. Uwaga: jeśli zapłacisz kartą podarunkową, okresu próbnego nie dostaniesz.",
+ "duration": 8.8,
+ "words": [
+  {
+   "w": "Potem",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "pobierasz",
+   "s": 0.36,
+   "e": 0.72
+  },
+  {
+   "w": "aplikację",
+   "s": 0.8,
+   "e": 1.44
+  },
+  {
+   "w": "i",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "logujesz",
+   "s": 1.72,
+   "e": 2.08
+  },
+  {
+   "w": "się",
+   "s": 2.12,
+   "e": 2.24
+  },
+  {
+   "w": "tym",
+   "s": 2.32,
+   "e": 2.48
+  },
+  {
+   "w": "samym",
+   "s": 2.56,
+   "e": 2.8
+  },
+  {
+   "w": "kontem.",
+   "s": 2.92,
+   "e": 3.627
+  },
+  {
+   "w": "Uwaga:",
+   "s": 3.653,
+   "e": 4.347
+  },
+  {
+   "w": "jeśli",
+   "s": 4.373,
+   "e": 4.56
+  },
+  {
+   "w": "zapłacisz",
+   "s": 4.68,
+   "e": 5.04
+  },
+  {
+   "w": "kartą",
+   "s": 5.12,
+   "e": 5.44
+  },
+  {
+   "w": "podarunkową,",
+   "s": 5.52,
+   "e": 6.36
+  },
+  {
+   "w": "okresu",
+   "s": 6.4,
+   "e": 6.8
+  },
+  {
+   "w": "próbnego",
+   "s": 6.84,
+   "e": 7.28
+  },
+  {
+   "w": "nie",
+   "s": 7.36,
+   "e": 7.44
+  },
+  {
+   "w": "dostaniesz.",
+   "s": 7.48,
+   "e": 8.8
+  }
+ ],
+ "speechEnd": 8.158
+}

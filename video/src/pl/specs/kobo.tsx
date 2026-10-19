@@ -15,7 +15,7 @@ export const piece: PLPiece = {
         { at: 'ceny', label: 'Ceny', icon: 'coin' }, { at: 'polski', label: 'Polski katalog', icon: 'book' }, { at: 'drobny', label: 'Drobny druk', icon: 'search' },
         { at: 'dobre', label: 'Plusy i minusy', tone: 'good' }, { at: '14', label: '14 dni za darmo', icon: 'gift' },
       ] },
-      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, url: 'swiatczytnikow.pl' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.6 } }], facts: [
+      { id: 'A02', kind: 'intro', bump: 'Czym jest Kobo Plus?', rec: { clip: 'swiat', start: 0.3, url: 'swiatczytnikow.pl' }, cuts: [{ at: 'Abonament', rec: { clip: 'pomoc_faq', start: 0.2, holdAt: 5.4 } }], facts: [
         { at: 'kanadyjska', label: 'Marka z Kanady', sub: 'czytniki i księgarnia z e-bookami', icon: 'ereader' },
         { at: 'Rakutena', label: 'Należy do Rakutena', sub: 'Japonia', icon: 'globe' },
         { at: 'Polsce', label: 'W Polsce od końca maja 2026', icon: 'calendar' },
@@ -33,9 +33,10 @@ export const piece: PLPiece = {
           { at: 'Placisz', label: 'Bez zobowiązań', sub: 'płacisz co miesiąc', icon: 'sync' },
           { at: 'czternascie', label: '14 dni za darmo', icon: 'gift' },
         ] },
-      { id: 'A04', kind: 'rec', bump: 'Jak to działa', kicker: 'Pomoc Kobo', title: 'Co jest w abonamencie?', rec: { clip: 'pomoc_faq', start: 8.0 },
+      { id: 'A04', kind: 'rec', bump: 'Jak to działa', kicker: 'Pomoc Kobo', title: 'Co jest w abonamencie?', rec: { clip: 'pomoc_faq', start: 8.1 },
         cuts: [{ at: 'zalogowaniu', rec: { clip: 'pomoc_szukaj', start: 0.3 } }],
-        marks: [], zooms: [],
+        marks: [{ at: 'oznaczonych', until: 'Reszte', x: 784, y: 376, w: 760, h: 58 }, { at: 'Reszte', until: 'zalogowaniu', x: 784, y: 276, w: 760, h: 78 }],
+        zooms: [{ at: 'limitu', zoom: 1.45, x: 1160, y: 340 }],
         tags: [
           { at: 'limitu', label: 'Bez limitu godzin', icon: 'infinity' }, { at: 'oznaczonych', label: 'Tylko tytuły Kobo Plus', icon: 'check' },
           { at: 'Reszte', label: 'Reszta: zakup osobno', icon: 'coin' }, { at: 'filtr', label: 'Filtr „tylko Kobo Plus”', sub: 'po zalogowaniu na kobo.com', icon: 'search' },

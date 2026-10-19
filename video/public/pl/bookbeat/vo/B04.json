@@ -1,0 +1,139 @@
+{
+ "id": "B04",
+ "hash": "8db20cc0b7e5",
+ "text": "Jak zrezygnować? Tylko na stronie BookBeat: w menu konta wejdź w Zarządzaj subskrypcją i przejdź wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana.",
+ "duration": 11.52,
+ "words": [
+  {
+   "w": "Jak",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "zrezygnować?",
+   "s": 0.28,
+   "e": 1.52
+  },
+  {
+   "w": "Tylko",
+   "s": 1.56,
+   "e": 1.84
+  },
+  {
+   "w": "na",
+   "s": 1.92,
+   "e": 2.0
+  },
+  {
+   "w": "stronie",
+   "s": 2.08,
+   "e": 2.32
+  },
+  {
+   "w": "BookBeat:",
+   "s": 2.4,
+   "e": 3.2
+  },
+  {
+   "w": "w",
+   "s": 3.24,
+   "e": 3.28
+  },
+  {
+   "w": "menu",
+   "s": 3.4,
+   "e": 3.52
+  },
+  {
+   "w": "konta",
+   "s": 3.6,
+   "e": 4.0
+  },
+  {
+   "w": "wejdź",
+   "s": 4.08,
+   "e": 4.48
+  },
+  {
+   "w": "w",
+   "s": 4.52,
+   "e": 4.56
+  },
+  {
+   "w": "Zarządzaj",
+   "s": 4.6,
+   "e": 5.04
+  },
+  {
+   "w": "subskrypcją",
+   "s": 5.12,
+   "e": 5.84
+  },
+  {
+   "w": "i",
+   "s": 5.92,
+   "e": 6.0
+  },
+  {
+   "w": "przejdź",
+   "s": 6.04,
+   "e": 6.32
+  },
+  {
+   "w": "wszystkie",
+   "s": 6.4,
+   "e": 6.72
+  },
+  {
+   "w": "kroki.",
+   "s": 6.8,
+   "e": 7.64
+  },
+  {
+   "w": "Bez",
+   "s": 7.68,
+   "e": 7.84
+  },
+  {
+   "w": "e-maila",
+   "s": 7.92,
+   "e": 8.2
+  },
+  {
+   "w": "z",
+   "s": 8.24,
+   "e": 8.28
+  },
+  {
+   "w": "potwierdzeniem",
+   "s": 8.32,
+   "e": 9.04
+  },
+  {
+   "w": "subskrypcja",
+   "s": 9.16,
+   "e": 9.68
+  },
+  {
+   "w": "może",
+   "s": 9.76,
+   "e": 10.0
+  },
+  {
+   "w": "nie",
+   "s": 10.08,
+   "e": 10.16
+  },
+  {
+   "w": "być",
+   "s": 10.24,
+   "e": 10.36
+  },
+  {
+   "w": "anulowana.",
+   "s": 10.4,
+   "e": 11.52
+  }
+ ],
+ "speechEnd": 11.07
+}

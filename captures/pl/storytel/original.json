@@ -1,0 +1,110 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.storytel.com/pl/originals",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,0)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    480,
+    300
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "mark": "row"
+  },
+  {
+   "move": [
+    704,
+    770
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 700
+  },
+  {
+   "move": [
+    1072,
+    770
+   ],
+   "dur": 700
+  },
+  {
+   "mark": "kruk"
+  },
+  {
+   "wait": 1100
+  },
+  {
+   "move": [
+    1256,
+    770
+   ],
+   "dur": 600
+  },
+  {
+   "mark": "arka"
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

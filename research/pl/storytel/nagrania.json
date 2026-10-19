@@ -1,0 +1,167 @@
+[
+  {
+    "id": "01_portada",
+    "para": [
+      "A01",
+      "A04"
+    ],
+    "url": "https://www.storytel.com/pl",
+    "viewport": "desktop",
+    "que_se_ve": "Portada polaca de Storytel: banner «Storytel Unlimited 50% taniej przez pół roku», filas «Cotygodniowe propozycje», «Najbardziej wyczekiwane książki» y «Najpopularniejsze książki» (Harry Potter i Kamień Filozoficzny, Wiedźmin…). Comprobado con curl el 19/10/2026: 200, en polaco (lang=pl-PL), sin redirección desde EE. UU.",
+    "pasos": "Abre la URL y espera a que cargue. Si sale el banner de cookies (OneTrust), pulsa el botón de rechazar o «solo necesarias» (no aceptes todas); si solo hay una X, ciérralo con la X. Quédate 3 s en el banner superior «Storytel Unlimited 50% taniej przez pół roku» sin pulsar «Skorzystaj z promocji». Baja despacio hasta «Cotygodniowe propozycje» y para 3 s; sigue hasta «Najbardziej wyczekiwane książki» y para 3 s; sigue hasta «Najpopularniejsze książki» y para 4 s con Harry Potter y Wiedźmin a la vista. No pulses ninguna portada. Duración aproximada: 18 s."
+  },
+  {
+    "id": "02_cennik",
+    "para": [
+      "A03",
+      "A11"
+    ],
+    "url": "https://www.storytel.com/pl/subscriptions",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Nasze subskrypcje» con las cuatro tarjetas: Unlimited 44.90 zł/30 dni (badge «Najpopularniejsze»), Premium 34.90 zł/30 dni con «50 godzin/miesięcznie», Family «Od 59.90 zł /30 dni · 2-3 konta» con selector «Ty + 1 członek rodziny», Basic 24.90 zł/30 dni con «25 godzin/miesięcznie». Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL; rechaza las cookies como en 01_portada. Baja hasta el título «Wybierz swoją subskrypcję:» de modo que se vean las cuatro tarjetas y para 3 s. Pasa el ratón, 2 s cada una, por Basic, Premium, Unlimited y Family (en este orden, que es el de la locución A03). En la tarjeta Family pulsa una vez el botón «+» del selector de miembros (su etiqueta es «Dodaj konto»): el texto cambia a «Ty + 2 członków rodziny · 3 konta · 69.90 zł /30 dni»; para 3 s. Es solo un selector de la página, no envía nada. No pulses «Wypróbuj» ni «Skorzystaj z promocji». Duración aproximada: 16 s."
+  },
+  {
+    "id": "03_original",
+    "para": [
+      "A05"
+    ],
+    "url": "https://www.storytel.com/pl/originals",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Storytel Original»: texto «Dostępne tylko w Storytel!» y fila «Najpopularniejsze» con Klangor. Słuchowisko, Kruk. Słuchowisko y Arka. Niebo. Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y rechaza las cookies. Para 3 s en la cabecera con el texto «…stworzone specjalnie dla miłośników formy audio. Dostępne tylko w Storytel!». Baja hasta la fila «Najpopularniejsze» y para 4 s con las portadas de Klangor, Kruk y Arka. Niebo a la vista. No pulses «Wypróbuj». Duración aproximada: 8 s."
+  },
+  {
+    "id": "04_kruk",
+    "para": [
+      "A05",
+      "A06"
+    ],
+    "url": "https://www.storytel.com/pl/books/kruk-s%C5%82uchowisko-1305884",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de «Kruk. Słuchowisko»: autoras (Aleksandra Zielińska, Jakub Korolczuk), lista de lectores, «Wydawca: Storytel Original», «12161 ocena · 4.6», «Czas: 3 Godz. 7 min», «Język: Polski», botón «Próbka» y descripción «Storytel i Canal+ przedstawiają – „Kruk. Słuchowisko”. W rolach głównych: Michał Żurawski…». Arriba sale un banner de la promoción («Słuchaj 50% taniej przez pół roku… 22,45 zł»). Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y rechaza las cookies. Para 2 s en el título y la portada. Baja hasta el bloque de datos (Wydawca, ocena, Czas, Język) y para 4 s; pasa el ratón por «3 Godz. 7 min» y por «4.6». Pasa el ratón 2 s por el botón «Próbka» sin pulsarlo. Baja hasta el párrafo «Storytel i Canal+ przedstawiają… W rolach głównych: Michał Żurawski…» y para 4 s. Duración aproximada: 14 s."
+  },
+  {
+    "id": "05_arka",
+    "para": [
+      "A05"
+    ],
+    "url": "https://www.storytel.com/pl/books/arka-niebo-9458008",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de «Arka. Niebo» (Jakub Żulczyk, Piotr Rogoża; Storytel Original; 3 Godz. 35 min) y el reparto «W rolach głównych: Jakub Gierszał jako Michał Kutera». Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y rechaza las cookies. Para 2 s en el título con los autores Jakub Żulczyk y Piotr Rogoża. Baja hasta «W rolach głównych: Jakub Gierszał jako Michał Kutera» y para 3 s. Duración aproximada: 7 s."
+  },
+  {
+    "id": "06_funkcje",
+    "para": [
+      "A07"
+    ],
+    "url": "https://www.storytel.com/pl/c/app-features",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Nowe funkcje aplikacji»: bloques Search in Book («Szukaj wewnątrz e-booków – a po raz pierwszy – także wewnątrz audiobooków»), Dolby Immersive Audio, Story Scan («Znajdź dowolną książkę, po prostu robiąc zdjęcie aparatem») y Voice Switcher. Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y rechaza las cookies. Para 3 s en el bloque «Search in Book»; baja a «Story Scan» y para 3 s; baja a «Dolby Immersive Audio» y para 2 s. No pulses «Zasubskrybuj teraz i wypróbuj tę funkcję». Duración aproximada: 10 s."
+  },
+  {
+    "id": "07_faq_urzadzenia",
+    "para": [
+      "A09"
+    ],
+    "url": "https://www.storytel.com/pl",
+    "viewport": "desktop",
+    "que_se_ve": "Preguntas frecuentes de la portada («Masz pytania? Mamy odpowiedzi»), con la pregunta «Jakie urządzenia są obsługiwane przez aplikację Storytel?» abierta: teléfonos y tabletas Android e iOS; Apple Watch y Wear OS; Android Auto, Apple CarPlay y Android Automotive; Chromecast (Android); y «Nie można słuchać lub czytać na komputerze ani za pośrednictwem strony internetowej Storytel».",
+    "pasos": "Abre la URL y rechaza las cookies. Baja hasta el título «Masz pytania? Mamy odpowiedzi». Pulsa la pregunta «Jakie urządzenia są obsługiwane przez aplikację Storytel?» para desplegarla (es un acordeón, no un formulario) y para 5 s con la lista de dispositivos y la frase final sobre el ordenador a la vista. Duración aproximada: 8 s."
+  },
+  {
+    "id": "08_faq_anulowanie",
+    "para": [
+      "B04"
+    ],
+    "url": "https://www.storytel.com/pl",
+    "viewport": "desktop",
+    "que_se_ve": "Pregunta frecuente «Czy mogę w dowolnym momencie anulować swoją subskrypcję Storytel?» desplegada: «nie obowiązują żadne okresy zobowiązań…»; formas de cancelar: app o web («Ustawienia konta»), App Store / Google Play, plataforma del socio.",
+    "pasos": "Igual que 07_faq_urzadzenia, pero despliega la pregunta «Czy mogę w dowolnym momencie anulować swoją subskrypcję Storytel?» y para 5 s. Duración aproximada: 7 s."
+  },
+  {
+    "id": "09_faq_family",
+    "para": [
+      "A08B"
+    ],
+    "url": "https://www.storytel.com/pl",
+    "viewport": "desktop",
+    "que_se_ve": "Pregunta frecuente «Jak działa plan Storytel Family?» desplegada: cuentas individuales con su propio correo y «własną prywatną półkę z książkami»; «Jeden wspólny rachunek».",
+    "pasos": "Igual que 07_faq_urzadzenia, pero despliega «Jak działa plan Storytel Family?» y para 5 s. Duración aproximada: 7 s."
+  },
+  {
+    "id": "10_kids",
+    "para": [
+      "A08B"
+    ],
+    "url": "https://www.storytel.com/pl/subscriptions",
+    "viewport": "desktop",
+    "que_se_ve": "Bloque «Odkryj swoją historię dzięki Storytel» con «Bezpieczny tryb dziecięcy: Dzięki ograniczeniom w trybie Kids Mode Twoje maluchy mogą bezpiecznie…».",
+    "pasos": "Abre la URL y rechaza las cookies. Baja por debajo de las tarjetas de planes hasta el bloque «Odkryj swoją historię dzięki Storytel» y para 4 s con «Bezpieczny tryb dziecięcy» a la vista. Duración aproximada: 6 s."
+  },
+  {
+    "id": "11_promo_6m",
+    "para": [
+      "A12",
+      "B01",
+      "B02"
+    ],
+    "url": "https://www.storytel.com/pl/signup/campaign/autumnpromo2026_6m50off",
+    "viewport": "desktop",
+    "que_se_ve": "Página de alta de la promoción: «Unlimited · 1 konto • Nieograniczony Dostęp · 22.45 zł przez 6 miesięcy · 44.90 zł /30 dni» y la letra pequeña: «Najniższa cena z 30 dni: 39,90 zł. Promocja dotyczy planu Storytel Unlimited. Pierwsze 180 dni w cenie promocyjnej 22,45 zł/mies. Po okresie promocyjnym subskrypcja zostanie automatycznie przedłużona na czas nieokreślony w cenie regularnej 44,90 zł/ mies. Oferta przeznaczona jest wyłącznie dla nowych klientów.» Debajo, el formulario de registro (correo, contraseña). Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y rechaza las cookies. Para 3 s en la tarjeta «Unlimited · 22.45 zł przez 6 miesięcy · 44.90 zł /30 dni». Pasa el ratón despacio por el párrafo de la letra pequeña (4 s). No escribas en «Adres email» ni «Hasło», no pulses «Kontynuuj w Google», «Kontynuuj z Apple» ni «Załóż konto». Duración aproximada: 8 s."
+  },
+  {
+    "id": "12_promo_rok",
+    "para": [
+      "B02"
+    ],
+    "url": "https://www.storytel.com/pl/signup/campaign/annualpromounlimted33off1year",
+    "viewport": "desktop",
+    "que_se_ve": "Página de alta de la oferta anual: «Unlimited · 320 zł przez 365 dni» y «Jednorazowa płatność w wysokości 320 zł … jest uiszczana z góry». Ojo: el párrafo siguiente dice que después se renueva a 39,90 zł al mes, cifra que no coincide con el precio actual (44,90 zł): no lo encuadres de cerca. Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y rechaza las cookies. Encuadra solo la tarjeta superior «Unlimited · 320 zł przez 365 dni» y la primera frase «Jednorazowa płatność w wysokości 320 zł… jest uiszczana z góry»; para 4 s. No hagas zoom sobre la frase de la renovación a 39,90 zł. No toques el formulario. Duración aproximada: 5 s."
+  },
+  {
+    "id": "13_zgody",
+    "para": [
+      "B03"
+    ],
+    "url": "https://www.storytel.com/pl/signup/campaign/autumnpromo2026_6m50off",
+    "viewport": "desktop",
+    "que_se_ve": "Las dos casillas opcionales del alta, sin marcar: «Chcę otrzymywać powiadomienia od Storytel, takie jak osobiste rekomendacje, wiadomości i oferty.» y «Udostępniam moje dane rejestracyjne partnerom marketingowym (również spoza UE/EOG)…», y el texto «Klikając „Utwórz konto”, wyrażasz zgodę na Ogólne zasady i warunki Storytel».",
+    "pasos": "Abre la URL y rechaza las cookies. Baja hasta las dos casillas de consentimiento, sin marcarlas, y para 4 s; pasa el ratón por encima de ellas. No escribas nada y no pulses «Załóż konto». Duración aproximada: 6 s."
+  },
+  {
+    "id": "14_google_play",
+    "para": [
+      "A10"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=grit.storytel.app&hl=pl&gl=PL",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de Google Play en polaco: «Storytel: Audiobooki i książki», nota 4,7, «529 tys. opinii», «10 mln+ Pobrania». La nota con gl=PL es la de Polonia (desde EE. UU. sale 4,4); el número de opiniones es mundial. Comprobado el 19/10/2026 (200, lang=pl).",
+    "pasos": "Abre la URL tal cual (con hl=pl&gl=PL, para que salga la nota de Polonia). Si aparece el aviso de cookies de Google, pulsa «Odrzuć wszystko». Encuadra la cabecera con 4,7 y «529 tys. opinii» y para 4 s. No bajes a las reseñas (salen nombres de usuarios) y no pulses «Zainstaluj». Duración aproximada: 5 s."
+  },
+  {
+    "id": "15_app_store",
+    "para": [
+      "A10"
+    ],
+    "url": "https://apps.apple.com/pl/app/id348177651?l=pl",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de la App Store polaca en polaco (redirige a /pl/app/storytel-audiobooki-i-ksiazki/id348177651?l=pl): nota 4,8 y «Oceny: 46 tys.». Sin «?l=pl» la página sale en inglés. Comprobado el 19/10/2026 (200, lang=pl).",
+    "pasos": "Abre la URL con «?l=pl». Encuadra la cabecera con la nota 4,8 y «Oceny: 46 tys.» y para 4 s. No bajes hasta las reseñas con nombres. Duración aproximada: 5 s."
+  },
+  {
+    "id": "16_sonorbooks",
+    "para": [
+      "B06"
+    ],
+    "url": "https://sonorbooks.pl/platformy/",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Platformy z audiobookami w Polsce» de SonorBooks («Twoja historia. Twoja platforma.»), con las tarjetas de Audioteka, Empik Go, Wolne Lektury, Legimi, Ebookpoint, Audible, Rakuten Kobo… (Storytel no está). Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL. En el aviso de cookies pulsa «Rozumiem». Para 2 s en la cabecera «Twoja historia. Twoja platforma.». Baja despacio por las tarjetas de Audioteka, Empik Go y Legimi (2 s cada una) y sigue hasta la de Audible (2 s). No pulses ningún «Zobacz warunki». Duración aproximada: 12 s."
+  }
+]

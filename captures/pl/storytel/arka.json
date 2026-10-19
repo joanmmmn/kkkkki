@@ -1,0 +1,94 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.storytel.com/pl/books/arka-niebo-9458008",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,620)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    800,
+    246
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "gierszal"
+  },
+  {
+   "move": [
+    1470,
+    299
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "move": [
+    1000,
+    530
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2200
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

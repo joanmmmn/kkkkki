@@ -1,0 +1,169 @@
+{
+ "id": "A08B",
+ "hash": "09b4eb4a4f16",
+ "text": "Każdy profil ma tyle godzin, co pakiet właściciela, i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do 12 lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym.",
+ "duration": 13.28,
+ "words": [
+  {
+   "w": "Każdy",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "profil",
+   "s": 0.52,
+   "e": 0.72
+  },
+  {
+   "w": "ma",
+   "s": 0.84,
+   "e": 0.96
+  },
+  {
+   "w": "tyle",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "godzin,",
+   "s": 1.32,
+   "e": 1.64
+  },
+  {
+   "w": "co",
+   "s": 1.68,
+   "e": 1.84
+  },
+  {
+   "w": "pakiet",
+   "s": 1.92,
+   "e": 2.08
+  },
+  {
+   "w": "właściciela,",
+   "s": 2.16,
+   "e": 3.013
+  },
+  {
+   "w": "i",
+   "s": 3.067,
+   "e": 3.12
+  },
+  {
+   "w": "wszyscy",
+   "s": 3.16,
+   "e": 3.52
+  },
+  {
+   "w": "mogą",
+   "s": 3.6,
+   "e": 3.84
+  },
+  {
+   "w": "słuchać",
+   "s": 3.88,
+   "e": 4.16
+  },
+  {
+   "w": "naraz.",
+   "s": 4.24,
+   "e": 5.093
+  },
+  {
+   "w": "Profil",
+   "s": 5.147,
+   "e": 5.36
+  },
+  {
+   "w": "dziecięcy",
+   "s": 5.413,
+   "e": 5.92
+  },
+  {
+   "w": "pokazuje",
+   "s": 5.96,
+   "e": 6.32
+  },
+  {
+   "w": "treści",
+   "s": 6.44,
+   "e": 6.72
+  },
+  {
+   "w": "dla",
+   "s": 6.773,
+   "e": 6.88
+  },
+  {
+   "w": "dzieci",
+   "s": 6.933,
+   "e": 7.2
+  },
+  {
+   "w": "do",
+   "s": 7.28,
+   "e": 7.36
+  },
+  {
+   "w": "12",
+   "s": 7.4,
+   "e": 7.8
+  },
+  {
+   "w": "lat,",
+   "s": 7.84,
+   "e": 8.24
+  },
+  {
+   "w": "ale",
+   "s": 8.4,
+   "e": 8.56
+  },
+  {
+   "w": "bez",
+   "s": 8.64,
+   "e": 8.72
+  },
+  {
+   "w": "blokady",
+   "s": 8.8,
+   "e": 9.12
+  },
+  {
+   "w": "rodzicielskiej.",
+   "s": 9.2,
+   "e": 10.48
+  },
+  {
+   "w": "Profile",
+   "s": 10.64,
+   "e": 10.8
+  },
+  {
+   "w": "dokupisz",
+   "s": 10.84,
+   "e": 11.2
+  },
+  {
+   "w": "dopiero",
+   "s": 11.24,
+   "e": 11.68
+  },
+  {
+   "w": "po",
+   "s": 11.72,
+   "e": 11.76
+  },
+  {
+   "w": "okresie",
+   "s": 11.84,
+   "e": 12.16
+  },
+  {
+   "w": "próbnym.",
+   "s": 12.24,
+   "e": 13.28
+  }
+ ],
+ "speechEnd": 12.705
+}

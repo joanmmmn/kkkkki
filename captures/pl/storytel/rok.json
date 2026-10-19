@@ -1,0 +1,90 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.storytel.com/pl",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0,1200)"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "eval": "window.scrollTo(0,2100)"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,2100)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "block"
+  },
+  {
+   "move": [
+    1400,
+    420
+   ],
+   "dur": 1100
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1350,
+    580
+   ],
+   "dur": 900
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

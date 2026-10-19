@@ -1,0 +1,174 @@
+{
+ "id": "A08",
+ "hash": "035cc2426306",
+ "text": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci 10 godzin, jakkolwiek szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.",
+ "duration": 15.36,
+ "words": [
+  {
+   "w": "Godziny",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "liczą",
+   "s": 0.56,
+   "e": 0.8
+  },
+  {
+   "w": "się",
+   "s": 0.84,
+   "e": 0.96
+  },
+  {
+   "w": "według",
+   "s": 1.04,
+   "e": 1.28
+  },
+  {
+   "w": "normalnego",
+   "s": 1.44,
+   "e": 1.84
+  },
+  {
+   "w": "tempa:",
+   "s": 1.92,
+   "e": 2.56
+  },
+  {
+   "w": "dziesięciogodzinna",
+   "s": 2.64,
+   "e": 3.36
+  },
+  {
+   "w": "książka",
+   "s": 3.44,
+   "e": 3.92
+  },
+  {
+   "w": "zabierze",
+   "s": 3.96,
+   "e": 4.24
+  },
+  {
+   "w": "ci",
+   "s": 4.32,
+   "e": 4.48
+  },
+  {
+   "w": "dziesięć",
+   "s": 4.56,
+   "e": 4.88
+  },
+  {
+   "w": "godzin,",
+   "s": 4.96,
+   "e": 5.44
+  },
+  {
+   "w": "jakkolwiek",
+   "s": 5.48,
+   "e": 6.0
+  },
+  {
+   "w": "szybko",
+   "s": 6.04,
+   "e": 6.28
+  },
+  {
+   "w": "słuchasz.",
+   "s": 6.32,
+   "e": 7.2
+  },
+  {
+   "w": "Czytanie",
+   "s": 7.24,
+   "e": 7.6
+  },
+  {
+   "w": "też",
+   "s": 7.68,
+   "e": 7.84
+  },
+  {
+   "w": "je",
+   "s": 7.88,
+   "e": 7.92
+  },
+  {
+   "w": "zużywa,",
+   "s": 8.0,
+   "e": 8.52
+  },
+  {
+   "w": "a",
+   "s": 8.56,
+   "e": 8.72
+  },
+  {
+   "w": "niewykorzystane",
+   "s": 8.773,
+   "e": 9.44
+  },
+  {
+   "w": "przepadają.",
+   "s": 9.48,
+   "e": 10.507
+  },
+  {
+   "w": "W",
+   "s": 10.533,
+   "e": 10.56
+  },
+  {
+   "w": "Premium",
+   "s": 10.8,
+   "e": 11.04
+  },
+  {
+   "w": "dokupisz",
+   "s": 11.08,
+   "e": 11.44
+  },
+  {
+   "w": "dwadzieścia",
+   "s": 11.52,
+   "e": 11.92
+  },
+  {
+   "w": "godzin",
+   "s": 12.0,
+   "e": 12.32
+  },
+  {
+   "w": "za",
+   "s": 12.4,
+   "e": 12.56
+  },
+  {
+   "w": "siedemnaście",
+   "s": 12.6,
+   "e": 13.12
+  },
+  {
+   "w": "złotych",
+   "s": 13.2,
+   "e": 13.6
+  },
+  {
+   "w": "dziewięćdziesiąt",
+   "s": 13.64,
+   "e": 14.16
+  },
+  {
+   "w": "dziewięć",
+   "s": 14.24,
+   "e": 14.4
+  },
+  {
+   "w": "groszy.",
+   "s": 14.48,
+   "e": 15.36
+  }
+ ],
+ "speechEnd": 15.36
+}

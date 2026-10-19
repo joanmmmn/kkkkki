@@ -1,0 +1,109 @@
+{
+ "voice_id": "ju4v8uYSowm1stRz3YUN",
+ "model_id": "eleven_v4",
+ "language_code": "pl",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.4,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.04
+ },
+ "scenes": [
+  {
+   "id": "A01",
+   "text": "Czy warto płacić za BookBeat? Sprawdziliśmy ceny, limity godzin, polski katalog i regulamin. Powiemy ci, co jest dobre, co złe i jak wypróbować go za darmo przez 30 dni.",
+   "say": "Czy warto płacić za Bukbit? Sprawdziliśmy ceny, limity godzin, polski katalog i regulamin. Powiemy ci, co jest dobre, co złe i jak wypróbować go za darmo przez trzydzieści dni."
+  },
+  {
+   "id": "A02",
+   "text": "BookBeat to szwedzka aplikacja z audiobookami i e-bookami z grupy Bonnier, po polsku od 2020 roku. Planu bez limitu tu nie ma: płacisz za pakiet godzin i słuchasz, czego chcesz, z ponad miliona książek.",
+   "say": "Bukbit to szwedzka aplikacja z audiobookami i e-bookami z grupy Bonnier, po polsku od dwa tysiące dwudziestego roku. Planu bez limitu tu nie ma: płacisz za pakiet godzin i słuchasz, czego chcesz, z ponad miliona książek."
+  },
+  {
+   "id": "A03",
+   "text": "Są trzy pakiety. Basic: 22,99 zł za 20 godzin miesięcznie. Standard: 29,99 zł za 40 godzin. Premium: 34,99 zł za 100 godzin. Do konta dodasz do czterech profili, od 9,99 zł miesięcznie za profil. Bez zobowiązań.",
+   "say": "Są trzy pakiety. Bejzik: dwadzieścia dwa złote dziewięćdziesiąt dziewięć groszy za dwadzieścia godzin miesięcznie. Standard: dwadzieścia dziewięć złotych dziewięćdziesiąt dziewięć groszy za czterdzieści godzin. Premium: trzydzieści cztery złote dziewięćdziesiąt dziewięć groszy za sto godzin. Do konta dodasz do czterech profili, od dziewięciu złotych dziewięćdziesięciu dziewięciu groszy miesięcznie za profil. Bez zobowiązań."
+  },
+  {
+   "id": "A04",
+   "text": "Uwaga: ten milion to głównie książki po angielsku i po niemiecku. Po polsku jest ponad 18 000 audiobooków i ponad 12 000 e-booków. Są hity, jak Harry Potter czy Wiedźmin, ale sprawdź swoje tytuły przed zapłatą.",
+   "say": "Uwaga: ten milion to głównie książki po angielsku i po niemiecku. Po polsku jest ponad osiemnaście tysięcy audiobooków i ponad dwanaście tysięcy e-booków. Są hity, jak Hari Poter czy Wiedźmin, ale sprawdź swoje tytuły przed zapłatą."
+  },
+  {
+   "id": "A05",
+   "text": "Perełka katalogu to Wiedźmin z udziałem ponad 70 aktorów, z muzyką i efektami. Jest też najnowsze Rozdroże kruków. Ale słuchowisk po polsku jest niewiele, około 40.",
+   "say": "Perełka katalogu to Wiedźmin z udziałem ponad siedemdziesięciu aktorów, z muzyką i efektami. Jest też najnowsze Rozdroże kruków. Ale słuchowisk po polsku jest niewiele, około czterdziestu."
+  },
+  {
+   "id": "A06",
+   "text": "Karta książki ma dwie oceny: za treść i za lektora. Rozdroże kruków trwa 9 godzin 35 minut i ma 4,8 za książkę oraz 4,9 za czytanie. Fragment odsłuchasz bez logowania.",
+   "say": "Karta książki ma dwie oceny: za treść i za lektora. Rozdroże kruków trwa dziewięć godzin i trzydzieści pięć minut i ma cztery przecinek osiem za książkę oraz cztery przecinek dziewięć za czytanie. Fragment odsłuchasz bez logowania."
+  },
+  {
+   "id": "A07",
+   "text": "W aplikacji zmienisz tempo od 0,5 do 2 razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad 2500 polskich tytułów to synchrobooki: słuchasz i czytasz jednocześnie.",
+   "say": "W aplikacji zmienisz tempo od pół do dwóch razy, ustawisz wyłącznik czasowy, dodasz zakładki z notatkami i pobierzesz książki offline. A ponad dwa i pół tysiąca polskich tytułów to synchrobooki: słuchasz i czytasz jednocześnie."
+  },
+  {
+   "id": "A08",
+   "text": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci 10 godzin, jakkolwiek szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz 20 godzin za 17,99 zł.",
+   "say": "Godziny liczą się według normalnego tempa: dziesięciogodzinna książka zabierze ci dziesięć godzin, jakkolwiek szybko słuchasz. Czytanie też je zużywa, a niewykorzystane przepadają. W Premium dokupisz dwadzieścia godzin za siedemnaście złotych dziewięćdziesiąt dziewięć groszy."
+  },
+  {
+   "id": "A08B",
+   "text": "Każdy profil ma tyle godzin, co pakiet właściciela, i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do 12 lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym.",
+   "say": "Każdy profil ma tyle godzin, co pakiet właściciela, i wszyscy mogą słuchać naraz. Profil dziecięcy pokazuje treści dla dzieci do dwunastu lat, ale bez blokady rodzicielskiej. Profile dokupisz dopiero po okresie próbnym."
+  },
+  {
+   "id": "A09",
+   "text": "BookBeat działa na telefonach i tabletach z Androidem i iOS, na Apple Watch, nawet bez telefonu, w samochodzie z CarPlay i Android Auto oraz z Chromecastem. Na komputerze ani na czytniku e-booków nie posłuchasz.",
+   "say": "Bukbit działa na telefonach i tabletach z Androidem i aj o es, na Epl Łocz, nawet bez telefonu, w samochodzie z Kar Plej i Android Auto oraz z Kromkastem. Na komputerze ani na czytniku e-booków nie posłuchasz."
+  },
+  {
+   "id": "A10",
+   "text": "W Polsce oceny są wysokie: 4,8 w Google Play i w App Store, gdzie ma ponad 10 000 ocen. Chwalą lektorów i wygodną aplikację. Krytykują limity godzin, nawet w Premium, i zawiłą rezygnację, tylko przez stronę.",
+   "say": "W Polsce oceny są wysokie: cztery przecinek osiem w Gugl Plej i w Ep Stor, gdzie ma ponad dziesięć tysięcy ocen. Chwalą lektorów i wygodną aplikację. Krytykują limity godzin, nawet w Premium, i zawiłą rezygnację, tylko przez stronę."
+  },
+  {
+   "id": "A11",
+   "text": "Plusy: 30 dni za darmo, audiobooki i e-booki w jednej cenie i profile dla rodziny. Minusy: brak planu bez limitu, skromny polski katalog, przepadające godziny i utrata dostępu od razu po rezygnacji w okresie próbnym.",
+   "say": "Plusy: trzydzieści dni za darmo, audiobooki i e-booki w jednej cenie i profile dla rodziny. Minusy: brak planu bez limitu, skromny polski katalog, przepadające godziny i utrata dostępu od razu po rezygnacji w okresie próbnym."
+  },
+  {
+   "id": "A12",
+   "text": "Czy warto? Premium ma sens, jeśli mieścisz się w 100 godzinach, słuchasz z rodziną albo po angielsku. Jeśli szukasz głównie polskich nowości, porównaj go najpierw z Audioteką Klub czy Empik Go.",
+   "say": "Czy warto? Premium ma sens, jeśli mieścisz się w stu godzinach, słuchasz z rodziną albo po angielsku. Jeśli szukasz głównie polskich nowości, porównaj go najpierw z Audioteką Klub czy Empik Goł."
+  },
+  {
+   "id": "B01",
+   "text": "Jak wypróbować BookBeat za darmo? Nowi użytkownicy dostają 30 dni z 20 godzinami słuchania i czytania.",
+   "say": "Jak wypróbować Bukbit za darmo? Nowi użytkownicy dostają trzydzieści dni z dwudziestoma godzinami słuchania i czytania."
+  },
+  {
+   "id": "B02",
+   "text": "Na stronie BookBeat zakładasz konto, wybierasz pakiet, który zacznie się po okresie próbnym, i dodajesz metodę płatności. Dziś nie płacisz nic, a zgody na marketing nie musisz zaznaczać.",
+   "say": "Na stronie Bukbit zakładasz konto, wybierasz pakiet, który zacznie się po okresie próbnym, i dodajesz metodę płatności. Dziś nie płacisz nic, a zgody na marketing nie musisz zaznaczać."
+  },
+  {
+   "id": "B03",
+   "text": "Potem pobierasz aplikację i logujesz się tym samym kontem. Uwaga: jeśli zapłacisz kartą podarunkową, okresu próbnego nie dostaniesz."
+  },
+  {
+   "id": "B04",
+   "text": "Jak zrezygnować? Tylko na stronie BookBeat: w menu konta wejdź w Zarządzaj subskrypcją i przejdź wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana.",
+   "say": "Jak zrezygnować? Tylko na stronie Bukbit: w menu konta wejdź w Zarządzaj subskrypcją i przejdź wszystkie kroki. Bez e-maila z potwierdzeniem subskrypcja może nie być anulowana."
+  },
+  {
+   "id": "B05",
+   "text": "Drobny druk: BookBeat nie przypomina o końcu okresu próbnego, a pierwszą płatność pobiera dzień po nim. Rezygnacja w trakcie próby od razu odcina dostęp, więc zrób to w ostatnim dniu.",
+   "say": "Drobny druk: Bukbit nie przypomina o końcu okresu próbnego, a pierwszą płatność pobiera dzień po nim. Rezygnacja w trakcie próby od razu odcina dostęp, więc zrób to w ostatnim dniu."
+  },
+  {
+   "id": "B06",
+   "text": "Chcesz porównać inne opcje? Na sonorbooks.pl zestawisz Audiotekę, Empik Go, Legimi czy Audible i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Chcesz porównać inne opcje? Na sonorbooks kropka pe el zestawisz Audiotekę, Empik Goł, Legimi czy Odibl i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+  }
+ ]
+}

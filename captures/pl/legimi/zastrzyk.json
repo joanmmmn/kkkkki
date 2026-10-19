@@ -22,7 +22,7 @@
    "wait": 600
   },
   {
-   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''; if (!document.getElementById('nozd')) { const st = document.createElement('style'); st.id = 'nozd'; st.textContent = 'iframe#launcher, iframe#webWidget, iframe[title*=\\'widżet\\' i], iframe[title*=\\'czat\\' i], iframe[title*=\\'messaging\\' i] { display: none !important; }'; document.head.appendChild(st); } try { window.zE && zE('webWidget', 'hide'); } catch (e) {}"
   },
   {
    "eval": "window.scrollTo(0,0)"
@@ -38,7 +38,7 @@
    "dur": 10
   },
   {
-   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''"
+   "eval": "document.querySelector('#onetrust-consent-sdk')?.remove(); document.documentElement.style.overflow=''; document.body.style.overflow=''; if (!document.getElementById('nozd')) { const st = document.createElement('style'); st.id = 'nozd'; st.textContent = 'iframe#launcher, iframe#webWidget, iframe[title*=\\'widżet\\' i], iframe[title*=\\'czat\\' i], iframe[title*=\\'messaging\\' i] { display: none !important; }'; document.head.appendChild(st); } try { window.zE && zE('webWidget', 'hide'); } catch (e) {}"
   },
   {
    "record": true

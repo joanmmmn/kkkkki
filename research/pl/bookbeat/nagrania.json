@@ -1,0 +1,127 @@
+[
+  {
+    "id": "01_portada",
+    "para": [
+      "A01",
+      "B01"
+    ],
+    "url": "https://www.bookbeat.com/pl",
+    "viewport": "desktop",
+    "que_se_ve": "Portada polaca: «Słuchaj audiobooków · 30 dni za darmo · …Podczas okresu próbnego otrzymujesz dostęp do 20 godzin słuchania i czytania. Po zakończeniu okresu próbnego Twoja subskrypcja będzie automatycznie kontynuowana od 22,99 zł/mies.», botón «Wypróbuj 30 dni za darmo» y la fila «Hity dnia» (Horyzont, Waldkauz, Świat jest teatrem, Lalka, Wiedźmin. Rozdroże kruków…). bookbeat.pl redirige aquí. Comprobado con curl el 19/10/2026: 200, en polaco (lang=pl-PL), sin redirección de país desde EE. UU.",
+    "pasos": "Abre la URL. En el banner de cookies elige la opción de aceptar solo las necesarias (o rechazar); si solo hay una X, ciérralo. Para 4 s en la cabecera «30 dni za darmo» con el texto de las 20 horas y el precio desde 22,99 zł. Pasa el ratón por «Wypróbuj 30 dni za darmo» sin pulsarlo. Baja hasta «Hity dnia» y para 3 s. Duración aproximada: 9 s."
+  },
+  {
+    "id": "02_cennik",
+    "para": [
+      "A03",
+      "A11"
+    ],
+    "url": "https://www.bookbeat.com/pl/our-subscriptions",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Subskrypcje i ceny»: tabla Basic (22,99 zł · 20 godzin · profil 9,99 zł), Standard (29,99 zł · 40 godzin · profil 12,99 zł), Premium (34,99 zł · 100 godzin · profil 14,99 zł); «Zawarte w każdym planie: Dostęp do ponad 1 000 000 książek · Zmień subskrypcję w dowolnym momencie · Anuluj, kiedy chcesz · Dodaj do 4 dodatkowych profili». Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y gestiona las cookies como en 01_portada. Baja hasta la tabla de los tres planes y para 3 s. Pasa el ratón 2 s por cada columna: Basic, Standard y Premium (orden de la locución A03). Pasa el ratón por las filas «Profil/miesiąc» (2 s). Baja hasta «Zawarte w każdym planie» y para 3 s. No pulses «Wypróbuj BookBeat za darmo». Duración aproximada: 14 s."
+  },
+  {
+    "id": "03_proba_kroki",
+    "para": [
+      "B02",
+      "B05"
+    ],
+    "url": "https://www.bookbeat.com/pl/our-subscriptions",
+    "viewport": "desktop",
+    "que_se_ve": "Bloques «Każdy nowy użytkownik może wypróbować BookBeat za darmo… Otrzymasz 30 dni za darmo, w tym 20 godzin słuchania i czytania» y «Okres próbny krok po kroku»: Załóż konto → Wybierz subskrypcję («Rozpocznie się ona po zakończeniu bezpłatnego okresu próbnego») → Dodaj informacje o płatności («opłata zostanie naliczona dopiero po rozpoczęciu miesięcznej subskrypcji») → Pobierz aplikację; y «Po okresie próbnym».",
+    "pasos": "Abre la URL y gestiona las cookies. Baja hasta «Każdy nowy użytkownik może wypróbować BookBeat za darmo» y para 3 s. Sigue hasta «Okres próbny krok po kroku» y pasa el ratón por los cuatro pasos, 2 s cada uno. Para 2 s en «Po okresie próbnym». Duración aproximada: 13 s."
+  },
+  {
+    "id": "04_wiedzmin",
+    "para": [
+      "A05"
+    ],
+    "url": "https://www.bookbeat.com/pl/book/609952",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de «Wiedźmin. Ostatnie życzenie» (Andrzej Sapkowski) con la descripción «W produkcji tego audiobooka wzięło udział ponad 70 znakomitych aktorów…» y la música de Adam Skorupa. Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y gestiona las cookies. Para 2 s en el título y la portada. Baja hasta el primer párrafo de «Opis książki» («…ponad 70 znakomitych aktorów…») y para 4 s. No pulses «Słuchaj fragmentu». Duración aproximada: 7 s."
+  },
+  {
+    "id": "05_rozdroze",
+    "para": [
+      "A05",
+      "A06"
+    ],
+    "url": "https://www.bookbeat.com/pl/book/2043828",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de «Wiedźmin. Rozdroże kruków»: etiquetas «Polska · Fantastyka · Nagrodzone · Nasz wybór · Najlepiej oceniane», «Średnia ocena 4,8 Książka» y «Średnia ocena 4,9 Lektor», «Autor. Andrzej Sapkowski», «Lektor. Zespół lektorów», «Audiobook. 9 godzin 35 minut» y el botón «Słuchaj fragmentu». Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y gestiona las cookies. Para 2 s en el título. Baja hasta las dos notas y para 3 s; pasa el ratón por «4,8 Książka» y después por «4,9 Lektor». Baja hasta «Lektor. Zespół lektorów» y «Audiobook. 9 godzin 35 minut» y para 3 s. Pasa el ratón 2 s por «Słuchaj fragmentu» sin pulsarlo. Duración aproximada: 12 s."
+  },
+  {
+    "id": "06_faq_godziny",
+    "para": [
+      "A08"
+    ],
+    "url": "https://www.bookbeat.com/pl",
+    "viewport": "desktop",
+    "que_se_ve": "Preguntas frecuentes de la portada con «Jak liczone są godziny w BookBeat?» desplegada: el tiempo se cuenta a velocidad normal, también en e-books (por caracteres e imágenes); y «Ile kosztuje BookBeat?» con los tres paquetes.",
+    "pasos": "Abre la URL y gestiona las cookies. Baja hasta «Często zadawane pytania i odpowiedzi». Despliega «Jak liczone są godziny w BookBeat?» (acordeón) y para 5 s. Despliega «Ile kosztuje BookBeat?» y para 4 s. No despliegues «Jak działa okres próbny?»: su texto todavía habla de «2 tygodnie» y contradice los 30 días actuales. Duración aproximada: 11 s."
+  },
+  {
+    "id": "07_rodzina",
+    "para": [
+      "A08B"
+    ],
+    "url": "https://www.bookbeat.com/pl/familyaccount",
+    "viewport": "desktop",
+    "que_se_ve": "Página de la cuenta familiar: «Dodaj do 4 profili dodatkowych… Koszt jednego profilu dodatkowego już od 9,99 zł/miesięcznie», «Tyle samo godzin w lepszej cenie», «Profil dziecięcy dla najmłodszych… dla dzieci do 12. roku życia» y la FAQ «Czy wszystkie profile mogą słuchać w tym samym czasie? Tak». Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y gestiona las cookies. Para 3 s en la cabecera con «Dodaj do 4 profili dodatkowych… od 9,99 zł/miesięcznie». Baja a «Tyle samo godzin w lepszej cenie» (2 s) y a «Profil dziecięcy dla najmłodszych» (3 s). Baja a la FAQ y despliega «Czy wszystkie profile mogą słuchać w tym samym czasie?» (3 s). Duración aproximada: 12 s."
+  },
+  {
+    "id": "08_o_nas",
+    "para": [
+      "A02",
+      "A09"
+    ],
+    "url": "https://www.bookbeat.com/pl/about",
+    "viewport": "desktop",
+    "que_se_ve": "Página «O BookBeat»: «BookBeat jest częścią grupy Bonnier…», «Za pomocą naszej aplikacji zyskujesz dostęp do ponad 1 000 000 książek… BookBeat jest również kompatybilny z Android Auto, Apple Carplay i Apple Watch» y «Adres dla odwiedzających: Sveavägen 56, Sztokholm». Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y gestiona las cookies. Baja hasta el párrafo que termina en «…kompatybilny z Android Auto, Apple Carplay i Apple Watch» y para 3 s. Sigue hasta «BookBeat jest częścią grupy Bonnier» y para 3 s. Duración aproximada: 8 s."
+  },
+  {
+    "id": "09_rejestracja",
+    "para": [
+      "B02"
+    ],
+    "url": "https://www.bookbeat.com/pl/registration",
+    "viewport": "desktop",
+    "que_se_ve": "Formulario de alta vacío: «Załóż konto, aby wypróbować BookBeat za darmo przez 30 dni z 20 godzinami słuchania i czytania», campos Imię, Nazwisko, Adres e-mail, Hasło; casilla obligatoria de Regulamin y casilla opcional «Tak, chcę otrzymywać powiadomienia o spersonalizowanych rekomendacjach książek, ofertach promocyjnych…» sin marcar. Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL y gestiona las cookies. Para 3 s en el título con «przez 30 dni z 20 godzinami». Baja hasta las casillas y pasa el ratón 3 s por la casilla de marketing («Tak, chcę otrzymywać powiadomienia…»), sin marcarla. No escribas en ningún campo, no marques nada y no pulses «Załóż konto» ni los botones de Google/Apple. Duración aproximada: 7 s."
+  },
+  {
+    "id": "10_google_play",
+    "para": [
+      "A10"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=com.bookbeat.android&hl=pl&gl=PL",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de Google Play en polaco: «BookBeat Audiobooki i E-booki», nota 4,8, «44,1 tys. opinii», «1 mln+ Pobrania». La nota con gl=PL es la de Polonia (desde EE. UU. sale 3,6 y desde España 4,2); el número de opiniones es mundial. Comprobado el 19/10/2026 (200, lang=pl).",
+    "pasos": "Abre la URL tal cual (con hl=pl&gl=PL). Si sale el aviso de cookies de Google, pulsa «Odrzuć wszystko». Encuadra la cabecera con 4,8 y para 4 s. No bajes a las reseñas (salen nombres) ni pulses «Zainstaluj». Duración aproximada: 5 s."
+  },
+  {
+    "id": "11_app_store",
+    "para": [
+      "A10"
+    ],
+    "url": "https://apps.apple.com/pl/app/id1056652614?l=pl",
+    "viewport": "desktop",
+    "que_se_ve": "Ficha de la App Store polaca en polaco («BookBeat Audiobooki i E-booki»): nota 4,8 y «Oceny: 10 tys.». Sin «?l=pl» sale en inglés. Comprobado el 19/10/2026 (200, lang=pl).",
+    "pasos": "Abre la URL con «?l=pl». Encuadra la nota 4,8 y «Oceny: 10 tys.» y para 4 s. No bajes a las reseñas con nombres. Duración aproximada: 5 s."
+  },
+  {
+    "id": "12_sonorbooks",
+    "para": [
+      "B06"
+    ],
+    "url": "https://sonorbooks.pl/platformy/",
+    "viewport": "desktop",
+    "que_se_ve": "Página «Platformy z audiobookami w Polsce» de SonorBooks («Twoja historia. Twoja platforma.») con las tarjetas de Audioteka, Empik Go, Wolne Lektury, Legimi, Ebookpoint, Audible, Rakuten Kobo… (BookBeat no está). Comprobado el 19/10/2026 (200, polaco).",
+    "pasos": "Abre la URL. En el aviso de cookies pulsa «Rozumiem». Para 2 s en la cabecera. Baja despacio por las tarjetas de Audioteka, Empik Go y Legimi (2 s cada una) y sigue hasta la de Audible (2 s). No pulses ningún «Zobacz warunki». Duración aproximada: 12 s."
+  }
+]

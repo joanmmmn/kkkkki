@@ -1,0 +1,139 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "slowmo": 3,
+ "locale": "pl-PL",
+ "timezone": "Europe/Warsaw",
+ "crf": 20,
+ "steps": [
+  {
+   "go": "https://www.storytel.com/pl/books/kruk-s%C5%82uchowisko-1305884",
+   "until": "domcontentloaded"
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "wait": 600
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "nocookies": true
+  },
+  {
+   "eval": "window.scrollTo(0,620)"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "move": [
+    1500,
+    900
+   ],
+   "dur": 10
+  },
+  {
+   "record": true
+  },
+  {
+   "wait": 400
+  },
+  {
+   "mark": "top"
+  },
+  {
+   "move": [
+    1000,
+    120
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "data"
+  },
+  {
+   "move": [
+    722,
+    472
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "move": [
+    850,
+    472
+   ],
+   "dur": 600
+  },
+  {
+   "wait": 1400
+  },
+  {
+   "mark": "probka"
+  },
+  {
+   "move": [
+    362,
+    553
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "mark": "more"
+  },
+  {
+   "move": [
+    722,
+    657
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 200
+  },
+  {
+   "click": true
+  },
+  {
+   "wait": 900
+  },
+  {
+   "mark": "canal"
+  },
+  {
+   "move": [
+    1000,
+    690
+   ],
+   "dur": 1000
+  },
+  {
+   "wait": 2600
+  },
+  {
+   "wait": 800
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "preset": "faster",
+ "dpr": 1.5
+}

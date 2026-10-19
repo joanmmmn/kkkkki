@@ -1,0 +1,164 @@
+{
+ "id": "B06",
+ "hash": "5b1eed74c920",
+ "text": "Chcesz porównać inne opcje? Na sonorbooks.pl zestawisz Audiotekę, Empik Go, Legimi czy Audible i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+ "duration": 12.64,
+ "words": [
+  {
+   "w": "Chcesz",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "porównać",
+   "s": 0.4,
+   "e": 0.8
+  },
+  {
+   "w": "inne",
+   "s": 0.92,
+   "e": 1.04
+  },
+  {
+   "w": "opcje?",
+   "s": 1.12,
+   "e": 1.84
+  },
+  {
+   "w": "Na",
+   "s": 1.92,
+   "e": 2.0
+  },
+  {
+   "w": "sonorbooks",
+   "s": 2.08,
+   "e": 2.64
+  },
+  {
+   "w": "kropka",
+   "s": 2.72,
+   "e": 2.96
+  },
+  {
+   "w": "pe",
+   "s": 3.08,
+   "e": 3.2
+  },
+  {
+   "w": "el",
+   "s": 3.28,
+   "e": 3.44
+  },
+  {
+   "w": "zestawisz",
+   "s": 3.52,
+   "e": 4.0
+  },
+  {
+   "w": "Audiotekę,",
+   "s": 4.08,
+   "e": 4.88
+  },
+  {
+   "w": "Empik",
+   "s": 4.96,
+   "e": 5.2
+  },
+  {
+   "w": "Goł,",
+   "s": 5.32,
+   "e": 5.68
+  },
+  {
+   "w": "Legimi",
+   "s": 5.76,
+   "e": 6.08
+  },
+  {
+   "w": "czy",
+   "s": 6.16,
+   "e": 6.32
+  },
+  {
+   "w": "Odibl",
+   "s": 6.4,
+   "e": 6.96
+  },
+  {
+   "w": "i",
+   "s": 7.04,
+   "e": 7.12
+  },
+  {
+   "w": "sprawdzisz,",
+   "s": 7.2,
+   "e": 7.707
+  },
+  {
+   "w": "gdzie",
+   "s": 7.733,
+   "e": 7.92
+  },
+  {
+   "w": "posłuchać",
+   "s": 8.0,
+   "e": 8.36
+  },
+  {
+   "w": "audiobooka",
+   "s": 8.4,
+   "e": 9.04
+  },
+  {
+   "w": "i",
+   "s": 9.08,
+   "e": 9.12
+  },
+  {
+   "w": "za",
+   "s": 9.2,
+   "e": 9.28
+  },
+  {
+   "w": "ile.",
+   "s": 9.36,
+   "e": 9.973
+  },
+  {
+   "w": "Twoja",
+   "s": 10.027,
+   "e": 10.16
+  },
+  {
+   "w": "następna",
+   "s": 10.24,
+   "e": 10.56
+  },
+  {
+   "w": "historia",
+   "s": 10.64,
+   "e": 11.36
+  },
+  {
+   "w": "już",
+   "s": 11.44,
+   "e": 11.56
+  },
+  {
+   "w": "na",
+   "s": 11.6,
+   "e": 11.68
+  },
+  {
+   "w": "ciebie",
+   "s": 11.76,
+   "e": 11.92
+  },
+  {
+   "w": "czeka.",
+   "s": 11.96,
+   "e": 12.64
+  }
+ ],
+ "speechEnd": 12.368
+}

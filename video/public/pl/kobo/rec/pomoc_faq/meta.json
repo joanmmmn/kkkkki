@@ -1,0 +1,17 @@
+{
+ "viewport": [
+  1920,
+  1080
+ ],
+ "dpr": 1.5,
+ "frames": 420,
+ "duration": 14.651,
+ "offset": 0.085,
+ "marks": {
+  "poland": 0.318,
+  "scroll": 5.462,
+  "unavail": 8.054,
+  "end": 14.651
+ },
+ "events": []
+}
