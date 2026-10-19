@@ -5,7 +5,7 @@
  ],
  "dpr": 1.5,
  "frames": 134,
- "duration": 289.014,
+ "duration": 10.0,
  "offset": 0.064,
  "marks": {
   "cards": 0.344,
@@ -13,8 +13,9 @@
   "plus": 3.825,
   "plus3": 6.316,
   "plus4": 8.053,
-  "minus": 289.012,
-  "end": 289.014
+  "minus": 10.0,
+  "end": 10.0
  },
- "events": []
+ "events": [],
+ "note": "La página se colgó a los 8,1 s (después de ⊕⊕ = 4 urządzenia, 69,99 zł): se recorta a 10 s."
 }
