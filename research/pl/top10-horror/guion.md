@@ -32,7 +32,7 @@ VO (pl): Żeby je wybrać, w SonorBooks przejrzeliśmy oceny i opinie tysięcy s
 SAY: Żeby je wybrać, w Sonorbuks przejrzeliśmy oceny i opinie tysięcy słuchaczy.
 Pantalla: Muro de candidatas (ver dossier, «Candidatas»): 28 HISTORII · 3 PLATFORMY + sonorbooks.pl · PONAD 5000 OCEN (Audioteka). Sello en las descartadas: BRAK AUDIOBOOKA PO POLSKU. Ficha real de sonorbooks.pl: https://sonorbooks.pl/audiobook/zew-cthulhu/ (nota 4,3 · 23 ocen w Audiotece).
 Toma: Escena de investigación (v5) con los datos polacos.
-ES: Para elegirlas, en SonorBooks hemos mirado las notas y opiniones de miles de oyentes y lectores.
+ES: Para elegirlas, en SonorBooks hemos mirado las notas y opiniones de miles de oyentes.
 
 ### X07  (≈ 2.7 s)
 VO (pl): Od najmniej strasznej do najstraszniejszej.
@@ -176,7 +176,7 @@ VO (pl): To polska groza z prawdziwego zdarzenia: w 2019 roku czytelnicy wybrali
 SAY: To polska groza z prawdziwego zdarzenia: w dwa tysiące dziewiętnastym roku czytelnicy wybrali tę powieść krajowym hitem roku w plebiscycie Złoty Kościej. A w dwa tysiące dwudziestym szóstym roku powstało z niej słuchowisko z Danutą Stenką i ponad pięćdziesięcioma aktorami.
 Pantalla: Tarjetas: Powieść 2019 → Złoty Kościej 2019 (Krajowy Hit Roku) → Słuchowisko 2026 · Danuta Stenka i ponad 50 aktorów · Desplegable: Gdzie posłuchać · link w opisie (corregido tras la revisión: no fue el debut)
 Toma: —
-ES: Es terror polaco de verdad: una ópera prima que ganó el Premio de los Lectores Stefan Grabiński. Y en 2026 se convirtió en ficción sonora con Danuta Stenka y más de cincuenta actores.
+ES: Es terror polaco de verdad: en 2019 los lectores eligieron esta novela «éxito nacional del año» en el plebiscito Złoty Kościej. Y en 2026 se convirtió en ficción sonora con Danuta Stenka y más de cincuenta actores.
 
 
 ## 4 · DOM NA WYRĘBACH (sustituye a Carcoma)
@@ -244,7 +244,7 @@ VO (pl): To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsc
 SAY: To pierwszy horror Mastertona i od razu światowy bestseller. A w Polsce Masterton ma tylu fanów, że w dwa tysiące dwudziestym pierwszym roku Wrocław postawił mu krasnala z brązu – z Manitu w ręku.
 Pantalla: Rótulo: Wrocław, 2021 · krasnal Mastertona (dibujo propio de un enanito con un libro; sin foto) · Desplegable: Gdzie posłuchać · link w opisie
 Toma: —
-ES: Es la primera novela de terror de Masterton, que enseguida se convirtió en un éxito mundial. Y en Polonia Masterton tiene tantos fans que en 2021 Breslavia le dedicó un enanito de bronce… con «Manitou» en la mano.
+ES: Es la primera novela de terror de Masterton y, de entrada, un éxito mundial. Y en Polonia Masterton tiene tantos fans que en 2021 Breslavia le dedicó un enanito de bronce… con «Manitou» en la mano.
 
 
 ## 1 · NIE OTWIERAJ OCZU (sustituye a El exorcista)
@@ -289,7 +289,7 @@ ES: Escúchalo de noche. Con los ojos cerrados. Si te atreves.
 VO (pl): Żeby naprawdę zadziałało: w nocy, w słuchawkach i bez zerkania w telefon.
 Pantalla: Iconos: noc · słuchawki · telefon przekreślony
 Toma: Igual que el español.
-ES: Un consejo para que funcione: de noche, con auriculares y sin mirar el móvil.
+ES: Para que funcione de verdad: de noche, con auriculares y sin mirar el móvil.
 
 ### X112A  (≈ 6.9 s)
 VO (pl): A co najlepsze: wiele z nich możesz zacząć jeszcze dziś, a Poe czeka na ciebie nawet za darmo, w Wolnych Lekturach.
@@ -309,7 +309,7 @@ ES: En sonorbooks.pl comparas dónde escuchar un audiolibro y a qué precio. Los
 VO (pl): I napisz w komentarzu: która przestraszyła cię najbardziej? I o jakich historiach mamy opowiedzieć następnym razem?
 Pantalla: —
 Toma: Igual que el español.
-ES: Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y qué historias quieres que traigamos la próxima vez?
+ES: Y cuéntanos en los comentarios: ¿cuál te ha dado más miedo? ¿Y de qué historias quieres que hablemos la próxima vez?
 
 ### X114  (≈ 2.8 s)
 VO (pl): Twoja następna historia już na ciebie czeka.

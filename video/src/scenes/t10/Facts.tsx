@@ -178,12 +178,15 @@ export const F6: F = ({ c }) => {
   const frame = useCurrentFrame();
   const G = '#5BE3A0';
   const steps = [
-    { k: 'powieść', icon: 'book' as Big, t: 'Powieść', s: '2019' },
+    { k: 'dwa', icon: 'book' as Big, t: 'Powieść', s: '2019' },
     { k: 'Złoty', icon: 'award' as Big, t: 'Złoty Kościej', s: 'Krajowy Hit Roku 2019' },
     { k: 'słuchowisko', icon: 'head' as Big, t: 'Słuchowisko', s: '2026' },
   ];
   return (
     <Center>
+      <Reveal at={c.at('X63', 'polska') - 6}>
+        <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 56, color: BONE, marginBottom: 36, textAlign: 'center' }}>Polska groza <span style={{ color: G }}>z prawdziwego zdarzenia</span></div>
+      </Reveal>
       <div style={{ display: 'flex', alignItems: 'center', gap: 26 }}>
         {steps.map((st, i) => {
           const a = c.at('X63', st.k) - 6;
