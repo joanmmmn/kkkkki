@@ -25,7 +25,7 @@ od lat należąca do japońskiego Rakutena.
 6
 00:00:21,007 --> 00:00:25,740
 Abonament Kobo Plus działa
-w Polsce od końca maja 2026 roku:
+w Polsce od końca maja 2026 roku:
 
 7
 00:00:25,780 --> 00:00:29,950
@@ -35,7 +35,7 @@ a także na czytnikach Kobo.
 8
 00:00:30,460 --> 00:00:35,740
 Według strony Kobo w październiku
-2026 roku plany są trzy.
+2026 roku plany są trzy.
 
 9
 00:00:35,780 --> 00:00:41,247
@@ -43,11 +43,11 @@ Kobo Plus Read, z samymi e-bookami,
 i Kobo Plus Listen, z samymi audiobookami,
 
 10
-00:00:41,287 --> 00:00:44,850
+00:00:41,287 --> 00:00:44,860
 kosztują po 39,90 zł miesięcznie.
 
 11
-00:00:44,890 --> 00:00:49,368
+00:00:44,900 --> 00:00:49,967
 Read & Listen, z jednym
 i drugim, to 49,90 zł.
 
@@ -72,235 +72,238 @@ Resztę sklepu kupujesz osobno.
 16
 00:01:04,900 --> 00:01:10,430
 Po zalogowaniu na kobo.com włączysz
-w wyszukiwarce filtr „tylko Kobo Plus”.
+w wyszukiwarce filtr „tylko Kobo Plus”.
 
 17
-00:01:10,880 --> 00:01:16,410
+00:01:10,880 --> 00:01:15,380
 Na start polska strona Kobo podawała
-ponad 1,5 mln e-booków i ponad 150 000
+ponad 1,5 mln e-booków i ponad
 
 18
-00:01:16,560 --> 00:01:19,853
-audiobooków. Tyle że to
-głównie książki po angielsku.
+00:01:15,420 --> 00:01:17,693
+150 000 audiobooków.
 
 19
+00:01:17,733 --> 00:01:19,853
+Tyle że to głównie książki po angielsku.
+
+20
 00:01:19,893 --> 00:01:24,240
 Polskich tytułów, także audiobooków, jest
 w abonamencie na razie mało – piszą o tym
 
-20
+21
 00:01:24,280 --> 00:01:26,410
 polskie serwisy o czytnikach.
 
-21
+22
 00:01:26,900 --> 00:01:30,833
 Po angielsku wybór jest dużo
 większy, także wśród audiobooków.
 
-22
+23
 00:01:30,873 --> 00:01:35,260
 Dlatego Kobo Plus Listen ma dziś sens
 głównie wtedy, gdy słuchasz w oryginale
 
-23
+24
 00:01:35,300 --> 00:01:37,390
 albo uczysz się angielskiego.
 
-24
+25
 00:01:37,960 --> 00:01:40,680
 Słuchasz w darmowej aplikacji Kobo Books.
 
-25
+26
 00:01:40,720 --> 00:01:45,840
 Odtwarzacz ma spis rozdziałów, przeskoki
-o 10 sekund, zmianę prędkości i wyłącznik
+o 10 sekund, zmianę prędkości i wyłącznik
 
-26
+27
 00:01:45,880 --> 00:01:50,130
 czasowy, a audiobook pobierzesz
 i posłuchasz bez internetu.
 
-27
+28
 00:01:50,180 --> 00:01:54,420
 Najciekawsze: audiobooków posłuchasz
 też na wybranych czytnikach Kobo, przez
 
-28
-00:01:54,460 --> 00:01:58,690
+29
+00:01:54,460 --> 00:01:58,988
 słuchawki albo głośnik Bluetooth – na
 przykład na modelach Clara BW, Clara
 
-29
-00:01:58,730 --> 00:02:00,863
+30
+00:01:59,028 --> 00:02:01,135
 Colour, Libra Colour czy Sage.
 
-30
-00:02:01,640 --> 00:02:06,596
+31
+00:02:01,640 --> 00:02:06,773
 Aplikacja działa na Androidzie i iPhonie,
 a z iPhone'a także w aucie przez CarPlay.
 
-31
+32
 00:02:06,813 --> 00:02:09,173
 Na komputerze audiobooków nie posłuchasz.
 
-32
+33
 00:02:09,213 --> 00:02:13,600
 I ważne: w aplikacji na iPhone'a
 abonamentu nie kupisz ani nie anulujesz –
 
-33
-00:02:13,640 --> 00:02:15,097
+34
+00:02:13,640 --> 00:02:15,664
 zrobisz to na kobo.com.
 
-34
-00:02:16,540 --> 00:02:21,377
-Aplikacja Kobo ma w Google
-Play 3,7 przy 308 tys.
-
 35
-00:02:21,580 --> 00:02:28,260
-opinii, a w polskim App Storze 4,2 przy
-206 ocenach – to oceny całej aplikacji,
+00:02:16,540 --> 00:02:21,540
+Aplikacja Kobo ma w Google
+Play 3,7 przy 308 tys.
 
 36
+00:02:21,580 --> 00:02:28,260
+opinii, a w polskim App Storze 4,2 przy
+206 ocenach – to oceny całej aplikacji,
+
+37
 00:02:28,300 --> 00:02:29,940
 nie samego abonamentu.
 
-37
+38
 00:02:29,980 --> 00:02:34,620
 Polskie serwisy o czytnikach chwalą, że
 Kobo Plus działa wprost na czytniku, ale
 
-38
+39
 00:02:34,660 --> 00:02:39,033
 krytykują skromny polski katalog i to,
 że przed zapłatą trudno sprawdzić,
 
-39
+40
 00:02:39,073 --> 00:02:40,550
 co w nim jest.
 
-40
+41
 00:02:40,900 --> 00:02:46,220
 Plusy: bez limitu godzin, audiobooki
 także na czytniku, duży wybór po angielsku
 
-41
+42
 00:02:46,260 --> 00:02:52,180
 i 14 dni na próbę. Minusy: mało polskich
 audiobooków, brak słuchania na komputerze,
 
-42
+43
 00:02:52,220 --> 00:02:56,060
 w aplikacji abonamentu nie kupisz,
 a po rezygnacji tracisz dostęp do
 
-43
+44
 00:02:56,100 --> 00:02:57,790
 książek z abonamentu.
 
-44
+45
 00:02:58,360 --> 00:03:03,360
 Czy warto? Jeśli masz czytnik Kobo
 i słuchasz po angielsku – tak, to wygodny
 
-45
+46
 00:03:03,400 --> 00:03:05,173
 abonament bez limitu godzin.
 
-46
+47
 00:03:05,213 --> 00:03:09,400
 Jeśli chcesz słuchać głównie po polsku,
 na razie lepszy będzie serwis z polskim
 
-47
+48
 00:03:09,440 --> 00:03:15,600
 katalogiem, na przykład Audioteka Klub za
 29,90 zł miesięcznie, bez limitu godzin
 
-48
+49
 00:03:15,640 --> 00:03:20,690
 w katalogu Klubu. A w okresie próbnym
 sprawdź, czy są tu twoje książki.
 
-49
+50
 00:03:21,280 --> 00:03:23,000
 Jak wypróbować za darmo?
 
-50
+51
 00:03:23,040 --> 00:03:28,160
 Wejdź na kobo.com, zaloguj się albo
 załóż darmowe konto Kobo i otwórz
 
-51
+52
 00:03:28,200 --> 00:03:30,090
 zakładkę Kobo Plus.
 
-52
+53
 00:03:30,580 --> 00:03:35,340
 Wybierz Listen albo Read &
 Listen i rozpocznij okres próbny.
 
-53
+54
 00:03:35,380 --> 00:03:40,030
 Musisz podać kartę – przedpłaconych kart
 Visa i Mastercard Kobo nie przyjmuje.
 
-54
+55
 00:03:40,260 --> 00:03:44,750
 Próba jest tylko dla nowych: jeśli miałeś
 już Kobo Plus, drugiej nie dostaniesz.
 
-55
+56
 00:03:45,240 --> 00:03:49,760
 Potem zaloguj się w aplikacji Kobo
 Books albo na czytniku i dodawaj tytuły
 
-56
+57
 00:03:49,800 --> 00:03:51,890
 z oznaczeniem Kobo Plus.
 
-57
+58
 00:03:52,200 --> 00:03:55,840
-Po 14 dniach Kobo zacznie
+Po 14 dniach Kobo zacznie
 pobierać opłatę co miesiąc.
 
-58
+59
 00:03:55,880 --> 00:04:00,440
 Jeśli nie chcesz płacić, anuluj przed
 końcem próby – na kobo.com, na swoim
 
-59
+60
 00:04:00,480 --> 00:04:02,533
 koncie, w sekcji subskrypcji.
 
-60
-00:04:02,573 --> 00:04:05,410
+61
+00:04:02,573 --> 00:04:05,600
 Nie zrobisz tego na czytniku
 ani w aplikacji na iPhone'a.
 
-61
+62
 00:04:05,640 --> 00:04:09,200
 Po anulowaniu tracisz dostęp
 do książek z abonamentu.
 
-62
+63
 00:04:09,240 --> 00:04:13,360
 Chcesz porównać Kobo Plus
 z Audioteką, Empik Go czy Legimi?
 
-63
+64
 00:04:13,400 --> 00:04:18,560
 Na sonorbooks.pl zestawisz ich ceny,
 limity i okresy próbne, a na karcie
 
-64
+65
 00:04:18,600 --> 00:04:21,707
 audiobooka sprawdzisz, gdzie
 go posłuchasz i za ile.
 
-65
+66
 00:04:21,747 --> 00:04:24,450
 Twoja następna historia
 już na ciebie czeka.
