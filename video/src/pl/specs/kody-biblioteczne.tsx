@@ -14,7 +14,7 @@ export const piece: PLPiece = {
     logo: 'pl/kody-biblioteczne/img/logo.svg', logoWhite: 'pl/kody-biblioteczne/img/logo_white.svg', logoRatio: 300.97 / 320,
     kicker: 'Kody z biblioteki', music: 'pl/kody-biblioteczne/music/bed.mp3',
     scenes: [
-      { id: 'A01', kind: 'hook', title: 'Darmowe\naudiobooki\nz biblioteki', hi: ['Darmowe'], rec: { clip: '04_legimi_lodz', start: 4.6, url: 'legimi.pl/bmwl' }, promises: [
+      { id: 'A01', kind: 'hook', title: 'Darmowe\naudiobooki\nz biblioteki', hi: ['Darmowe'], rec: { clip: '04_legimi_lodz', start: 1.5, url: 'legimi.pl/bmwl' }, promises: [
         { at: 'Legimi', label: 'Legimi · Empik Go · Audioteka', icon: 'headphones' }, { at: '0', label: 'Miesiąc za 0 zł', sub: 'z kartą, jeśli zdobędziesz kod', icon: 'gift' },
         { at: 'haczyk', label: 'Gdzie jest haczyk?', icon: 'search', tone: 'accent' }, { at: 'zdobyc', label: 'Jak zdobyć kod', icon: 'play' },
       ] },
@@ -30,7 +30,8 @@ export const piece: PLPiece = {
         { at: 'podpiac', label: 'Empik Go: bez karty płatniczej', sub: 'przy aktywacji kodu', icon: 'card' }, { at: 'wygasa', label: 'Po 30 dniach wygasa sam', sub: 'Empik Go, FAQ dla bibliotek', icon: 'clock' },
       ] },
       { id: 'A04', kind: 'rec', bump: 'Trzy serwisy', kicker: 'Serwis 1 z 3', title: 'Legimi', rec: { clip: '07_wroclaw_legimi', start: 2.6, url: 'biblioteka.wroc.pl' },
-        cuts: [{ at: 'Kod', rec: { clip: '04_legimi_lodz', start: 0.3, url: 'legimi.pl/bmwl' } }],
+        cuts: [{ at: 'Kod', rec: { clip: '04_legimi_lodz', start: 0.3, holdAt: 2.9, url: 'legimi.pl/bmwl' } }],
+        marks: [{ at: 'przygotowanej', until: 'lodzkiej', x: 1070, y: 414, w: 464, h: 286 }, { at: 'lodzkiej', x: 1070, y: 230, w: 464, h: 136 }],
         tags: [
           { at: 'osiemdziesieciu', label: 'ok. 80 000 audiobooków', icon: 'headphones' }, { at: 'dwustu', label: 'ok. 243 000 e-booków', sub: 'dane MBP we Wrocławiu', icon: 'book' },
           { at: 'lodzkiej', label: 'legimi.pl/bmwl', sub: 'strona dla Łodzi', icon: 'link' }, { at: 'dwoch', label: '2 urządzenia', sub: 'według bibliotek', icon: 'phone' },
@@ -107,8 +108,9 @@ export const piece: PLPiece = {
       { id: 'B04', kind: 'steps', kicker: 'Krok 4', title: 'Aktywuj kod', rec: { clip: '02_empik_kod', start: 0.3, holdAt: 2.8, url: 'empik.com/go/biblioteki/kod' }, steps: [
         { at: 'aktywuj', title: 'W tym samym miesiącu' },
         { at: 'stronie', title: 'Na stronie podanej przez bibliotekę', sub: 'np. empik.com/biblioteki/kod, legimi.pl/bmwl' },
-        { at: 'zaloguj', title: 'Zaloguj się albo załóż konto', rec: { clip: '04_legimi_lodz', start: 0.3, url: 'legimi.pl/bmwl' } },
-      ] },
+        { at: 'zaloguj', title: 'Zaloguj się albo załóż konto', rec: { clip: '04_legimi_lodz', start: 0.3, holdAt: 2.9, url: 'legimi.pl/bmwl' } },
+      ],
+        marks: [{ at: 'stronie', until: 'zaloguj', x: 1066, y: 246, w: 360, h: 70 }, { at: 'zaloguj', x: 1070, y: 414, w: 464, h: 286 }] },
       { id: 'B05', kind: 'steps', kicker: 'Krok 5', title: 'Słuchaj w aplikacji', steps: [
         { at: 'pobierz', title: 'Pobierz aplikację serwisu' }, { at: 'zaloguj', title: 'Zaloguj się tym samym kontem' },
         { at: 'sciagnij', title: 'Pobierz audiobooki offline' }, { at: 'wygasnie', title: 'Po ok. 30 dniach dostęp wygasa', sub: 'po nowy kod wracasz do biblioteki' },
