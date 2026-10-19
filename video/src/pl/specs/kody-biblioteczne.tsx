@@ -71,8 +71,8 @@ export const piece: PLPiece = {
       { id: 'A08', kind: 'rec', kicker: 'Stan na 19.10.2026', title: 'Gdańsk, Poznań, Warszawa', rec: { clip: '08_gdansk_legimi', start: 0.3, url: 'wbpg.org.pl' },
         cuts: [{ at: 'Poznaniu', rec: { clip: '09_poznan', start: 0.3, url: 'bracz.edu.pl' } }, { at: 'Warszawie', rec: { clip: '11_wesola', start: 0.3, holdAt: 3.3, url: 'bibliotekawesola.pl' } }],
         marks: [{ at: 'Gdansku', until: 'generujesz', x: 360, y: 250, w: 1180, h: 125 }, { at: 'generujesz', until: 'wypozyczyles', x: 360, y: 386, w: 600, h: 26 }, { at: 'wypozyczyles', until: 'Poznaniu', x: 360, y: 348, w: 640, h: 26 },
-          { at: 'mailem', until: 'Warszawie', x: 630, y: 282, w: 632, h: 56 }, { at: 'Wesolej', x: 386, y: 160, w: 1080, h: 104 }],
-        zooms: [{ at: 'Gdansku', zoom: 1.6, x: 860, y: 430 }, { at: 'Poznaniu', zoom: 2.2, x: 950, y: 330 }, { at: 'Warszawie', zoom: 1.3, x: 840, y: 330 }],
+          { at: 'mailem', until: 'Warszawie', x: 630, y: 572, w: 636, h: 60 }, { at: 'Wesolej', x: 386, y: 160, w: 1080, h: 104 }],
+        zooms: [{ at: 'Gdansku', zoom: 1.6, x: 860, y: 430 }, { at: 'Poznaniu', zoom: 2.2, x: 950, y: 600 }, { at: 'Warszawie', zoom: 1.3, x: 840, y: 330 }],
         tags: [
           { at: 'Gdansku', label: 'Gdańsk: kod online', icon: 'globe' }, { at: 'wypozyczyles', label: 'Min. 1 wypożyczenie', sub: 'w tym roku', icon: 'book' },
           { at: 'Poznaniu', label: 'Poznań: tylko e-mail', icon: 'mail' }, { at: 'pierwszego', label: '1. dzień roboczy, od 9:00', icon: 'clock' },
