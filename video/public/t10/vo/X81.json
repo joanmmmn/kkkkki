@@ -1,8 +1,8 @@
 {
  "id": "X81",
- "hash": "4fab8321073b",
+ "hash": "b800e0209345",
  "text": "Numer trzy: „Miasteczko Salem” Stephena Kinga.",
- "duration": 3.36,
+ "duration": 3.52,
  "words": [
   {
    "w": "Numer",
@@ -16,13 +16,13 @@
   },
   {
    "w": "„Miasteczko",
-   "s": 1.08,
+   "s": 1.067,
    "e": 1.52
   },
   {
    "w": "Salem”",
-   "s": 1.68,
-   "e": 2.08
+   "s": 1.6,
+   "e": 2.16
   },
   {
    "w": "Stephena",
@@ -32,8 +32,8 @@
   {
    "w": "Kinga.",
    "s": 2.72,
-   "e": 3.36
+   "e": 3.52
   }
  ],
- "speechEnd": 3.223
+ "speechEnd": 3.214
 }
