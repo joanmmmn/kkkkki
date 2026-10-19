@@ -15,7 +15,9 @@ export type SfxName =
   // AUTOR · Stephen King (ElevenLabs Sound Effects, tools/sfx.py; ganancia igualada a page_turn por sonoridad integrada)
   | 'sk_crumple' | 'sk_bin' | 'sk_uncrumple' | 'sk_typebell' | 'sk_typing' | 'sk_wind' | 'sk_door' | 'sk_heart' | 'sk_thunder' | 'sk_clock' | 'sk_pin' | 'sk_string' | 'sk_book_thud' | 'sk_book_slide' | 'sk_projector' | 'sk_chime' | 'sk_peel' | 'sk_snow'
   // Por dónde y cómo empezar a leer · Dostoievski (ElevenLabs Sound Effects, tools/sfx.py; ganancia igualada a page_turn por sonoridad integrada)
-  | 'dk_drumroll' | 'dk_rifles' | 'dk_gallop' | 'dk_bell' | 'dk_knock' | 'dk_chains' | 'dk_roulette' | 'dk_quill' | 'dk_match' | 'dk_train' | 'dk_crowd' | 'dk_seal' | 'dk_water';
+  | 'dk_drumroll' | 'dk_rifles' | 'dk_gallop' | 'dk_bell' | 'dk_knock' | 'dk_chains' | 'dk_roulette' | 'dk_quill' | 'dk_match' | 'dk_train' | 'dk_crowd' | 'dk_seal' | 'dk_water'
+  // Por dónde y cómo empezar a leer · Kierkegaard (ElevenLabs Sound Effects, tools/sfx.py; ganancia igualada a page_turn por sonoridad integrada, 19/10/2026)
+  | 'kk_room' | 'kk_ring' | 'kk_fold' | 'kk_wax' | 'kk_waves' | 'kk_heath' | 'kk_laugh' | 'kk_press' | 'kk_cobble' | 'kk_bell' | 'kk_candle_out' | 'kk_thunder';
 const WAV: Partial<Record<SfxName, true>> = { key1: true, key2: true, key3: true, key4: true, key5: true, key6: true, key7: true, key_space: true, count_tick: true };
 
 // Mezcla: todos los archivos están normalizados a -1 dBFS de pico; GAIN iguala la sonoridad percibida.
@@ -32,6 +34,7 @@ const GAIN: Record<SfxName, number> = {
   key1: 0.55, key2: 0.55, key3: 0.55, key4: 0.55, key5: 0.55, key6: 0.55, key7: 0.55, key_space: 0.55, count_tick: 0.17,
   sk_crumple: 0.39, sk_bin: 0.38, sk_uncrumple: 0.59, sk_typebell: 0.23, sk_typing: 0.38, sk_wind: 0.31, sk_door: 0.6, sk_heart: 0.41, sk_thunder: 0.23, sk_clock: 0.62, sk_pin: 0.59, sk_string: 0.25, sk_book_thud: 0.65, sk_book_slide: 0.71, sk_projector: 0.22, sk_chime: 0.18, sk_peel: 0.35, sk_snow: 0.76,
   dk_drumroll: 0.15, dk_rifles: 0.39, dk_gallop: 0.67, dk_bell: 0.31, dk_knock: 0.78, dk_chains: 0.24, dk_roulette: 0.59, dk_quill: 0.35, dk_match: 0.35, dk_train: 0.16, dk_crowd: 0.46, dk_seal: 1, dk_water: 0.66,
+  kk_room: 0.39, kk_ring: 0.51, kk_fold: 0.66, kk_wax: 1, kk_waves: 0.25, kk_heath: 0.24, kk_laugh: 0.15, kk_press: 0.63, kk_cobble: 0.75, kk_bell: 0.24, kk_candle_out: 0.17, kk_thunder: 0.22,
 };
 const SYNC: Partial<Record<SfxName, number>> = {
   // golpes: el pico

@@ -1,0 +1,56 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 1269,
+ "end_frame": 3463,
+ "levels": [
+  -16.0
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the philosopher Søren Kierkegaard",
+   "nineteenth-century Copenhagen atmosphere: Nordic, introspective and literary, candlelit rooms and grey northern light, elegant and modern at the same time",
+   "key of D minor, around 86 BPM unless stated otherwise",
+   "felt piano, solo cello, warm string quartet and string pads, soft harmonium pad, celesta, distant soft church bells, gentle low percussion, subtle sub bass",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "folk dance",
+   "bagpipes",
+   "accordion",
+   "jump scare stingers",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Curious intro",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "curious and elegant: felt piano ostinato with pizzicato strings, celesta sparkles and soft brushed percussion",
+     "steady, inviting momentum",
+     "a warm swelling cinematic climax with a big soft hit in the last four seconds",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "heavy drums",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 51880,
+    "lines": []
+   }
+  ]
+ }
+}

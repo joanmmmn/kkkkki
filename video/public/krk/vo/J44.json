@@ -1,0 +1,89 @@
+{
+ "id": "J44",
+ "hash": "235d638fbba4",
+ "text": "Resumiendo: tres rutas. Si te gustan las historias: Diario de un seductor y Temor y temblor.",
+ "duration": 7.2,
+ "words": [
+  {
+   "w": "Resumiendo:",
+   "s": 0.0,
+   "e": 1.12
+  },
+  {
+   "w": "tres",
+   "s": 1.24,
+   "e": 1.36
+  },
+  {
+   "w": "rutas.",
+   "s": 1.52,
+   "e": 2.4
+  },
+  {
+   "w": "Si",
+   "s": 2.44,
+   "e": 2.48
+  },
+  {
+   "w": "te",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "gustan",
+   "s": 2.68,
+   "e": 2.96
+  },
+  {
+   "w": "las",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "historias:",
+   "s": 3.28,
+   "e": 4.16
+  },
+  {
+   "w": "Diario",
+   "s": 4.24,
+   "e": 4.56
+  },
+  {
+   "w": "de",
+   "s": 4.64,
+   "e": 4.72
+  },
+  {
+   "w": "un",
+   "s": 4.76,
+   "e": 4.8
+  },
+  {
+   "w": "seductor",
+   "s": 4.88,
+   "e": 5.52
+  },
+  {
+   "w": "y",
+   "s": 5.76,
+   "e": 5.84
+  },
+  {
+   "w": "Temor",
+   "s": 6.0,
+   "e": 6.32
+  },
+  {
+   "w": "y",
+   "s": 6.4,
+   "e": 6.44
+  },
+  {
+   "w": "temblor.",
+   "s": 6.48,
+   "e": 7.2
+  }
+ ],
+ "speechEnd": 7.079
+}

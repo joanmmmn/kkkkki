@@ -1,0 +1,94 @@
+{
+ "id": "J03",
+ "hash": "b4c5f332b5f9",
+ "text": "Ese hombre era Søren Kierkegaard, el filósofo danés al que hoy se llama el padre del existencialismo.",
+ "duration": 7.04,
+ "words": [
+  {
+   "w": "Ese",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "hombre",
+   "s": 0.28,
+   "e": 0.56
+  },
+  {
+   "w": "era",
+   "s": 0.64,
+   "e": 0.88
+  },
+  {
+   "w": "Søren",
+   "s": 0.96,
+   "e": 1.36
+  },
+  {
+   "w": "Kierkegaard,",
+   "s": 1.44,
+   "e": 2.36
+  },
+  {
+   "w": "el",
+   "s": 2.4,
+   "e": 2.56
+  },
+  {
+   "w": "filósofo",
+   "s": 2.64,
+   "e": 3.04
+  },
+  {
+   "w": "danés",
+   "s": 3.12,
+   "e": 3.44
+  },
+  {
+   "w": "al",
+   "s": 3.52,
+   "e": 3.6
+  },
+  {
+   "w": "que",
+   "s": 3.68,
+   "e": 3.76
+  },
+  {
+   "w": "hoy",
+   "s": 3.8,
+   "e": 3.92
+  },
+  {
+   "w": "se",
+   "s": 4.0,
+   "e": 4.08
+  },
+  {
+   "w": "llama",
+   "s": 4.12,
+   "e": 4.64
+  },
+  {
+   "w": "el",
+   "s": 4.76,
+   "e": 4.88
+  },
+  {
+   "w": "padre",
+   "s": 4.96,
+   "e": 5.28
+  },
+  {
+   "w": "del",
+   "s": 5.36,
+   "e": 5.44
+  },
+  {
+   "w": "existencialismo.",
+   "s": 5.6,
+   "e": 7.04
+  }
+ ],
+ "speechEnd": 6.527
+}

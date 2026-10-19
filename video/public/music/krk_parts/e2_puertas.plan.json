@@ -1,0 +1,57 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 16845,
+ "end_frame": 20420,
+ "levels": [
+  -15.5
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the philosopher Søren Kierkegaard",
+   "nineteenth-century Copenhagen atmosphere: Nordic, introspective and literary, candlelit rooms and grey northern light, elegant and modern at the same time",
+   "key of D minor, around 86 BPM unless stated otherwise",
+   "felt piano, solo cello, warm string quartet and string pads, soft harmonium pad, celesta, distant soft church bells, gentle low percussion, subtle sub bass",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "folk dance",
+   "bagpipes",
+   "accordion",
+   "jump scare stingers",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Four doors B",
+    "positive_local_styles": [
+     "starts instantly on a strong downbeat, no intro",
+     "same main theme with one extra layer: soft harmonium chords and gentle bells",
+     "keeps the driving momentum, slightly more spiritual and luminous",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "breakdown",
+     "sudden stops",
+     "quiet intro",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 79500,
+    "lines": []
+   }
+  ]
+ }
+}

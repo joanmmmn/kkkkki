@@ -66,6 +66,19 @@ KIT = {
     'dk_crowd': ('Large solemn crowd murmuring softly outdoors in winter and slow footsteps in snow, no distinguishable words, no music', 5.0, 0.5),
     'dk_seal': ('Breaking a red wax seal on a folded letter, crisp crack and paper rustle, close up, dry', 0.8, 0.7),
     'dk_water': ('Gentle canal water lapping against stone embankment at night, calm, no music', 4.0, 0.5),
+    # Por dónde y cómo empezar a leer · Kierkegaard (19/10/2026)
+    'kk_room': ('Quiet old room at dusk in summer: faint distant city sounds through a closed window, a clock ticking far away, soft room tone, no music', 6.0, 0.5),
+    'kk_ring': ('A small gold ring dropped onto a wooden desk: delicate metallic clink, a short roll and settle, close up, dry', 1.4, 0.7),
+    'kk_fold': ('Folding a sheet of thick old paper in three and sliding it into an envelope, crisp creases, close up, dry', 1.4, 0.7),
+    'kk_wax': ('Pressing a brass seal into soft hot sealing wax on an envelope: soft squish then a firm tap, close up, dry', 1.0, 0.7),
+    'kk_waves': ('Calm summer sea washing over a pebble beach, gentle waves, a few distant seagulls, no music', 5.0, 0.5),
+    'kk_heath': ('Cold wind blowing over an empty moor, a few distant sheep bleating, desolate, no music', 5.0, 0.5),
+    'kk_laugh': ('A small group of people in an old city street jeering and laughing at someone, muffled, no distinguishable words, no music', 2.6, 0.6),
+    'kk_press': ('Old hand printing press clanking rhythmically and paper sheets being stacked, close up, no music', 2.6, 0.6),
+    'kk_cobble': ('Footsteps on wet cobblestones in an old European street and a horse carriage passing in the distance, no music', 3.5, 0.6),
+    'kk_bell': ('One large Lutheran church bell strike in a northern European city, long resonant tail, distant, no music', 4.0, 0.6),
+    'kk_candle_out': ('Blowing out a candle: soft breath puff and a faint hiss of smoke, close up, dry', 0.9, 0.7),
+    'kk_thunder': ('Distant rolling thunder over open countryside with wind, no rain, no music', 3.5, 0.6),
 }
 
 

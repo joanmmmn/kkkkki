@@ -1,0 +1,230 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "J01",
+   "text": "Copenhague, agosto de 1841. Un joven de veintiocho años devuelve a su prometida el anillo de compromiso, con una nota: «Olvida a quien escribe esto».",
+   "say": "Copenhague, agosto de mil ochocientos cuarenta y uno. Un joven de veintiocho años devuelve a su prometida el anillo de compromiso, con una nota: Olvida a quien escribe esto."
+  },
+  {
+   "id": "J02",
+   "text": "Ella tenía diecinueve años y quedó desesperada. Él nunca explicó del todo por qué lo hizo. Pero volvió sobre aquello una y otra vez en sus libros… muchas veces, con nombres falsos."
+  },
+  {
+   "id": "J03",
+   "text": "Ese hombre era Søren Kierkegaard, el filósofo danés al que hoy se llama el padre del existencialismo.",
+   "say": "Ese hombre era Sóren Kírkegor, el filósofo danés al que hoy se llama el padre del existencialismo."
+  },
+  {
+   "id": "J04",
+   "text": "Escribió sobre la angustia, la desesperación, la fe y cómo vivir tu propia vida. Pero tiene fama de difícil: firmaba con más de diez seudónimos. Así que la pregunta es: ¿por dónde empiezo?"
+  },
+  {
+   "id": "J05",
+   "text": "Y en audio, otra sorpresa: publicó más de treinta obras, y en audiolibro en español solo hay cuatro. La buena noticia: son cuatro buenas puertas."
+  },
+  {
+   "id": "J06",
+   "text": "Así que aquí tienes un mapa: quién era, por cuál de las cuatro empezar, qué dejar para el papel y qué versión escuchar."
+  },
+  {
+   "id": "J07",
+   "text": "Nació en Copenhague en 1813, el último de siete hermanos. Su padre era un comerciante muy rico, pero de niño había sido pastor en los páramos de Jutlandia, y allí, hambriento y agotado, un día maldijo a Dios.",
+   "say": "Nació en Copenhague en mil ochocientos trece, el último de siete hermanos. Su padre era un comerciante muy rico, pero de niño había sido pastor en los páramos de Jutlandia, y allí, hambriento y agotado, un día maldijo a Dios."
+  },
+  {
+   "id": "J08",
+   "text": "Llegó a creer que lo pagarían sus hijos: que ninguno pasaría de los treinta y tres años, la edad de Cristo. Y con veintiún años, Søren ya había perdido a su madre y a cinco de sus hermanos.",
+   "say": "Llegó a creer que lo pagarían sus hijos: que ninguno pasaría de los treinta y tres años, la edad de Cristo. Y con veintiún años, Sóren ya había perdido a su madre y a cinco de sus hermanos."
+  },
+  {
+   "id": "J09",
+   "text": "A los veintidós escribió en su diario lo que buscaba: «Encontrar una verdad que sea verdad para mí, la idea por la que quiero vivir y morir».",
+   "say": "A los veintidós escribió en su diario lo que buscaba: Encontrar una verdad que sea verdad para mí, la idea por la que quiero vivir y morir."
+  },
+  {
+   "id": "J10",
+   "text": "Luego llegaron Regine y el anillo. Y justo después, en 1843, una explosión: O lo uno o lo otro, Temor y temblor, La repetición… cada uno firmado por un autor distinto. Y a la vez, con su propio nombre, discursos edificantes.",
+   "say": "Luego llegaron Reguíne y el anillo. Y justo después, en mil ochocientos cuarenta y tres, una explosión: O lo uno o lo otro, Temor y temblor, La repetición… cada uno firmado por un autor distinto. Y a la vez, con su propio nombre, discursos edificantes."
+  },
+  {
+   "id": "J11",
+   "text": "En 1846 se enfrentó a una revista satírica, El Corsario, que se burló de él durante meses: lo dibujaban con una pernera más corta que la otra, y por la calle le gritaban «¡O lo uno o lo otro!».",
+   "say": "En mil ochocientos cuarenta y seis se enfrentó a una revista satírica, El Corsario, que se burló de él durante meses: lo dibujaban con una pernera más corta que la otra, y por la calle le gritaban ¡O lo uno o lo otro!."
+  },
+  {
+   "id": "J12",
+   "text": "El día que cumplió treinta y cuatro escribió en su diario: «Qué extraño que haya cumplido treinta y cuatro años». La maldición no se había cumplido.",
+   "say": "El día que cumplió treinta y cuatro escribió en su diario: Qué extraño que haya cumplido treinta y cuatro años. La maldición no se había cumplido."
+  },
+  {
+   "id": "J13",
+   "text": "Su último año lo pasó atacando a la Iglesia oficial de Dinamarca. En octubre de 1855 se desplomó en la calle, y murió semanas después en el hospital. Tenía cuarenta y dos años.",
+   "say": "Su último año lo pasó atacando a la Iglesia oficial de Dinamarca. En octubre de mil ochocientos cincuenta y cinco se desplomó en la calle, y murió semanas después en el hospital. Tenía cuarenta y dos años."
+  },
+  {
+   "id": "J14",
+   "text": "No escribe como un filósofo de manual: escribe diarios, cartas, discursos y hasta el diario de un seductor. Y todo gira en torno a una pregunta: ¿cómo se vive una vida que sea de verdad tuya?"
+  },
+  {
+   "id": "J15",
+   "text": "Para él hay tres maneras de vivir, como tres escalones. La estética: vivir para el placer y huir del aburrimiento. La ética: elegir, comprometerse y responder de ello. Y la religiosa: la fe, un salto que nadie puede dar por ti."
+  },
+  {
+   "id": "J16",
+   "text": "De ahí salen las palabras que hoy asociamos con él: la angustia, que El concepto de la angustia define como «el vértigo de la libertad», y la desesperación. Y una frase de su diario: la vida se entiende mirando hacia atrás, pero hay que vivirla hacia delante.",
+   "say": "De ahí salen las palabras que hoy asociamos con él: la angustia, que El concepto de la angustia define como el vértigo de la libertad, y la desesperación. Y una frase de su diario: la vida se entiende mirando hacia atrás, pero hay que vivirla hacia delante."
+  },
+  {
+   "id": "J17",
+   "text": "¿Por qué sigue tan vivo? Kafka escribió que su caso era muy parecido al suyo, y que lo confirmaba como un amigo. Unamuno lo llamaba hermano. Y Wittgenstein dijo que era, con mucho, el pensador más profundo de su siglo.",
+   "say": "¿Por qué sigue tan vivo? Kafka escribió que su caso era muy parecido al suyo, y que lo confirmaba como un amigo. Unamuno lo llamaba hermano. Y Víttguenstain dijo que era, con mucho, el pensador más profundo de su siglo."
+  },
+  {
+   "id": "J18",
+   "text": "Antes de elegir, dos cosas. La primera: ¿quién habla? Cuando un libro lo firma Johannes de Silentio o Anti-Climacus, no es exactamente Kierkegaard: es un personaje con su propio punto de vista. Él mismo pidió que no le atribuyeran lo que decían.",
+   "say": "Antes de elegir, dos cosas. La primera: ¿quién habla? Cuando un libro lo firma Yojánes de Silentio o Anticlímacus, no es exactamente Kírkegor: es un personaje con su propio punto de vista. Él mismo pidió que no le atribuyeran lo que decían."
+  },
+  {
+   "id": "J19",
+   "text": "La segunda: el ritmo. Sus libros en audio duran de cinco a siete horas y media, pero no se escuchan como una novela. Si sueles subir la velocidad, aquí bájala, y no tengas miedo de volver atrás."
+  },
+  {
+   "id": "J20",
+   "text": "Si quieres empezar por una historia: Diario de un seductor, de 1843.",
+   "say": "Si quieres empezar por una historia: Diario de un seductor, de mil ochocientos cuarenta y tres."
+  },
+  {
+   "id": "J21",
+   "text": "Johannes planea conquistar a la joven Cordelia como quien juega una partida de ajedrez, y lo anota todo en su diario. Consigue que se comprometan… y luego hace que sea ella quien rompa. ¿Te suena?",
+   "say": "Yojánes planea conquistar a la joven Cordelia como quien juega una partida de ajedrez, y lo anota todo en su diario. Consigue que se comprometan… y luego hace que sea ella quien rompa. ¿Te suena?"
+  },
+  {
+   "id": "J22",
+   "text": "Ojo: no es un manual de seducción. Es el retrato de la vida estética, el primer escalón, y cierra la primera parte de O lo uno o lo otro. Se escucha como una novela: unas seis horas, gratis en El Libro Total, con la voz de Raúl Gutiérrez."
+  },
+  {
+   "id": "J23",
+   "text": "Si quieres la puerta clásica: Temor y temblor, también de 1843.",
+   "say": "Si quieres la puerta clásica: Temor y temblor, también de mil ochocientos cuarenta y tres."
+  },
+  {
+   "id": "J24",
+   "text": "Dios le pide a Abraham que sacrifique a su hijo Isaac, y Abraham se pone en camino. El autor, que firma Johannes de Silentio, cuenta la escena de cuatro maneras distintas, y no deja de preguntarse: ¿Abraham es un hombre de fe… o un asesino?",
+   "say": "Dios le pide a Abraham que sacrifique a su hijo Isaac, y Abraham se pone en camino. El autor, que firma Yojánes de Silentio, cuenta la escena de cuatro maneras distintas, y no deja de preguntarse: ¿Abraham es un hombre de fe… o un asesino?"
+  },
+  {
+   "id": "J25",
+   "text": "Es probablemente su libro más conocido, y de los que más se recomiendan para empezar. Dura de cinco a seis horas, y hay dos grabaciones: escucha las muestras y elige."
+  },
+  {
+   "id": "J26",
+   "text": "Si buscas algo espiritual: La pureza de corazón es querer una sola cosa, de 1847.",
+   "say": "Si buscas algo espiritual: La pureza de corazón es querer una sola cosa, de mil ochocientos cuarenta y siete."
+  },
+  {
+   "id": "J27",
+   "text": "Aquí ya no hay seudónimo: lo firma él. Es un discurso para preparar la confesión, y la idea cabe en el título: querer el bien de verdad, y no por miedo al castigo ni por el premio."
+  },
+  {
+   "id": "J28",
+   "text": "En audio solo existe con voz digital: siete horas y media, en ElevenReader.",
+   "say": "En audio solo existe con voz digital: siete horas y media, en Iléven Ríder."
+  },
+  {
+   "id": "J29",
+   "text": "Y si quieres ir al fondo: La enfermedad mortal, de 1849.",
+   "say": "Y si quieres ir al fondo: La enfermedad mortal, de mil ochocientos cuarenta y nueve."
+  },
+  {
+   "id": "J30",
+   "text": "La enfermedad mortal es la desesperación, y el libro la encuentra en todas partes, incluso en quien no sabe que la tiene. Las primeras páginas son famosas por lo difíciles: no te rindas ahí."
+  },
+  {
+   "id": "J31",
+   "text": "Lo firma Anti-Climacus, un seudónimo que, según él, estaba por encima de él mismo. Son unas cinco horas y cuarto, con la voz de Geraldo Medina.",
+   "say": "Lo firma Anticlímacus, un seudónimo que, según él, estaba por encima de él mismo. Son unas cinco horas y cuarto, con la voz de Geraldo Medina."
+  },
+  {
+   "id": "J32",
+   "text": "¿Poco tiempo? Kierkegaard en 90 minutos, de Paul Strathern: su vida y sus ideas en hora y media, con Marco Lubián. Y 100 citas de Søren Kierkegaard: media hora con sus frases.",
+   "say": "¿Poco tiempo? Kírkegor en noventa minutos, de Pol Strázern: su vida y sus ideas en hora y media, con Marco Lubián. Y cien citas de Sóren Kírkegor: media hora con sus frases."
+  },
+  {
+   "id": "J33",
+   "text": "Y ahora, lo que todavía no tiene audiolibro en español: O lo uno o lo otro completo, El concepto de la angustia, Las obras del amor y sus diarios, miles de páginas."
+  },
+  {
+   "id": "J34",
+   "text": "Cuando hayas escuchado los cuatro, ese es el siguiente paso. Y mejor en papel, con tiempo y un lápiz."
+  },
+  {
+   "id": "J35",
+   "text": "Con Kierkegaard, la vida está dentro de los libros, aunque lleven otra firma. Regine está en Diario de un seductor, y en ¿Culpable? ¿No culpable?, que copia palabra por palabra la nota del anillo.",
+   "say": "Con Kírkegor, la vida está dentro de los libros, aunque lleven otra firma. Reguíne está en Diario de un seductor, y en ¿Culpable? ¿No culpable?, que copia palabra por palabra la nota del anillo."
+  },
+  {
+   "id": "J36",
+   "text": "En 1843 escribió en su diario: «Si hubiera tenido fe, me habría quedado con Regine». Ese mismo año publicó Temor y temblor: un hombre que, gracias a la fe, recupera lo que estaba dispuesto a perder.",
+   "say": "En mil ochocientos cuarenta y tres escribió en su diario: Si hubiera tenido fe, me habría quedado con Reguíne. Ese mismo año publicó Temor y temblor: un hombre que, gracias a la fe, recupera lo que estaba dispuesto a perder."
+  },
+  {
+   "id": "J38",
+   "text": "¿Hay que leerlo en orden? No hace falta. Lo que ayuda es subir sus escalones, de la estética a la fe: primero Diario de un seductor, luego Temor y temblor y, al final, La enfermedad mortal."
+  },
+  {
+   "id": "J39",
+   "text": "¿Y qué versión escuchar? De Diario de un seductor hay en SonorBooks cinco grabaciones en español. Mira tres cosas.",
+   "say": "¿Y qué versión escuchar? De Diario de un seductor hay en Sónorbuks cinco grabaciones en español. Mira tres cosas."
+  },
+  {
+   "id": "J40",
+   "text": "Uno: que sea íntegra. La de tres horas es una adaptación con varias voces; el texto completo dura de cinco horas y media a siete."
+  },
+  {
+   "id": "J41",
+   "text": "Dos: ¿voz humana o digital? En SonorBooks, las voces sintéticas llevan la etiqueta «voz digital».",
+   "say": "Dos: ¿voz humana o digital? En Sónorbuks, las voces sintéticas llevan la etiqueta voz digital."
+  },
+  {
+   "id": "J42",
+   "text": "Y tres: la muestra. En filosofía, una voz que no te convence se hace muy larga: escucha siempre un minuto antes de empezar."
+  },
+  {
+   "id": "J43",
+   "text": "En SonorBooks tienes todas las versiones de cada libro, con su narrador, su duración y dónde escucharla. Te lo dejo en la descripción.",
+   "say": "En Sónorbuks tienes todas las versiones de cada libro, con su narrador, su duración y dónde escucharla. Te lo dejo en la descripción."
+  },
+  {
+   "id": "J44",
+   "text": "Resumiendo: tres rutas. Si te gustan las historias: Diario de un seductor y Temor y temblor."
+  },
+  {
+   "id": "J45",
+   "text": "Si buscas algo espiritual: La pureza de corazón y Temor y temblor."
+  },
+  {
+   "id": "J46",
+   "text": "Y si prefieres entenderlo antes de leerlo: Kierkegaard en 90 minutos y Temor y temblor. Al final de los tres caminos, La enfermedad mortal.",
+   "say": "Y si prefieres entenderlo antes de leerlo: Kírkegor en noventa minutos y Temor y temblor. Al final de los tres caminos, La enfermedad mortal."
+  },
+  {
+   "id": "J47",
+   "text": "¿Y tú? ¿Por cuál empezaste, o por cuál vas a empezar? Y si quieres otro autor en el próximo episodio, dímelo en los comentarios."
+  },
+  {
+   "id": "J48",
+   "text": "Tu próxima historia te está esperando."
+  }
+ ]
+}

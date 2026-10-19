@@ -1,0 +1,57 @@
+{
+ "model_id": "music_v1",
+ "start_frame": 0,
+ "end_frame": 1269,
+ "levels": [
+  -17.0
+ ],
+ "tail": true,
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental cinematic documentary score for a premium YouTube guide about the philosopher Søren Kierkegaard",
+   "nineteenth-century Copenhagen atmosphere: Nordic, introspective and literary, candlelit rooms and grey northern light, elegant and modern at the same time",
+   "key of D minor, around 86 BPM unless stated otherwise",
+   "felt piano, solo cello, warm string quartet and string pads, soft harmonium pad, celesta, distant soft church bells, gentle low percussion, subtle sub bass",
+   "mix leaves plenty of space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "folk dance",
+   "bagpipes",
+   "accordion",
+   "jump scare stingers",
+   "heavy EDM drop",
+   "distortion",
+   "dubstep",
+   "trap hi-hat rolls",
+   "aggressive drums",
+   "harsh high frequencies",
+   "lo-fi crackle"
+  ],
+  "sections": [
+   {
+    "section_name": "Cold open",
+    "positive_local_styles": [
+     "cold open in a quiet candlelit room at dusk: a solo felt piano plays a fragile, hesitant melody over a very soft held string note from the very first second",
+     "a soft clock-like pulse enters after six seconds; at about twelve seconds a melancholic solo cello line joins",
+     "from fifteen seconds the music slowly grows with string pads, like years passing, building gently towards the end",
+     "keeps playing at full energy until the very last second, no ending"
+    ],
+    "negative_local_styles": [
+     "long intro",
+     "slow fade in",
+     "drums",
+     "ending",
+     "fade out",
+     "outro",
+     "silence",
+     "fade in"
+    ],
+    "duration_ms": 33380,
+    "lines": []
+   }
+  ]
+ }
+}

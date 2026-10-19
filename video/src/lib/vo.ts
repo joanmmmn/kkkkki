@@ -22,6 +22,8 @@ const ctx6 = req.context('../../public/str/vo', false, /[ABC]\d+[A-Z]?\.json$/);
 const ctx7 = req.context('../../public/skg/vo', false, /[GH]\d+[A-Z]?\.json$/);
 // Por dónde y cómo empezar a leer · Dostoievski (ids D..).
 const ctx8 = req.context('../../public/dsk/vo', false, /D\d+[A-Z]?\.json$/);
+// Por dónde y cómo empezar a leer · Kierkegaard (ids J..).
+const ctx9 = req.context('../../public/krk/vo', false, /J\d+[A-Z]?\.json$/);
 export const VOS: Record<string, VO & { speechEnd?: number }> = {};
 for (const k of ctx1.keys()) { const v = ctx1(k); VOS[v.id] = v; }
 for (const k of ctx2.keys()) { const v = ctx2(k); VOS[v.id] = v; }
@@ -31,8 +33,9 @@ for (const k of ctx5.keys()) { const v = ctx5(k); VOS[v.id] = v; }
 for (const k of ctx6.keys()) { const v = ctx6(k); VOS[v.id] = v; }
 for (const k of ctx7.keys()) { const v = ctx7(k); VOS[v.id] = v; }
 for (const k of ctx8.keys()) { const v = ctx8(k); VOS[v.id] = v; }
+for (const k of ctx9.keys()) { const v = ctx9(k); VOS[v.id] = v; }
 
-const dirOf = (id: string) => (/^D\d/.test(id) ? 'dsk/vo' : /^[GH]\d/.test(id) ? 'skg/vo' : /^[ABC]\d/.test(id) ? 'str/vo' : /^[KLM]\d/.test(id) ? 'pdr/vo' : /^[RPQ]\d/.test(id) ? 'nxr/vo' : /^[NT]\d/.test(id) ? 'nx/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
+const dirOf = (id: string) => (/^J\d/.test(id) ? 'krk/vo' : /^D\d/.test(id) ? 'dsk/vo' : /^[GH]\d/.test(id) ? 'skg/vo' : /^[ABC]\d/.test(id) ? 'str/vo' : /^[KLM]\d/.test(id) ? 'pdr/vo' : /^[RPQ]\d/.test(id) ? 'nxr/vo' : /^[NT]\d/.test(id) ? 'nx/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
 export const voSrc = (id: string) => staticFile(`${dirOf(id)}/${id}.mp3`);
 export const voFrames = (id: string) => Math.ceil((VOS[id]?.duration ?? 3) * FPS);
 // Duración hasta el final real de la voz (sin el silencio final del archivo).

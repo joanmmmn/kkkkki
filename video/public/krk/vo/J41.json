@@ -1,0 +1,84 @@
+{
+ "id": "J41",
+ "hash": "4d765fc33996",
+ "text": "Dos: ¿voz humana o digital? En SonorBooks, las voces sintéticas llevan la etiqueta «voz digital».",
+ "duration": 8.0,
+ "words": [
+  {
+   "w": "Dos:",
+   "s": 0.0,
+   "e": 0.96
+  },
+  {
+   "w": "¿voz",
+   "s": 1.013,
+   "e": 1.2
+  },
+  {
+   "w": "humana",
+   "s": 1.28,
+   "e": 1.6
+  },
+  {
+   "w": "o",
+   "s": 1.76,
+   "e": 1.84
+  },
+  {
+   "w": "digital?",
+   "s": 1.92,
+   "e": 2.96
+  },
+  {
+   "w": "En",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "SonorBooks,",
+   "s": 3.2,
+   "e": 4.08
+  },
+  {
+   "w": "las",
+   "s": 4.16,
+   "e": 4.32
+  },
+  {
+   "w": "voces",
+   "s": 4.36,
+   "e": 4.56
+  },
+  {
+   "w": "sintéticas",
+   "s": 4.6,
+   "e": 5.28
+  },
+  {
+   "w": "llevan",
+   "s": 5.333,
+   "e": 5.52
+  },
+  {
+   "w": "la",
+   "s": 5.6,
+   "e": 5.68
+  },
+  {
+   "w": "etiqueta",
+   "s": 5.76,
+   "e": 6.24
+  },
+  {
+   "w": "«voz",
+   "s": 6.56,
+   "e": 6.8
+  },
+  {
+   "w": "digital».",
+   "s": 6.88,
+   "e": 8.0
+  }
+ ],
+ "speechEnd": 7.513
+}

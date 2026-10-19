@@ -35,17 +35,25 @@ import { Lab3D, LAB_FRAMES } from './scenes/skg/three/Lab';
 import { DostoievskiGuide } from './scenes/dsk/Main';
 import { DSK_TOTAL } from './scenes/dsk/timeline';
 import { DskLab, DSK_LAB_FRAMES } from './scenes/dsk/three/Lab';
+import { KierkegaardGuide } from './scenes/krk/Main';
+import { KRK_TOTAL } from './scenes/krk/timeline';
+import { KrkLab, KRK_LAB_FRAMES } from './scenes/krk/three/Lab';
+import { KRKThumbA, KRKThumbB } from './scenes/krk/Thumb';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="SKGuide" component={StephenKingGuide} durationInFrames={SKG_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="DSKGuide" component={DostoievskiGuide} durationInFrames={DSK_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="DSKLab" component={DskLab} durationInFrames={Math.max(5000, DSK_LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
+    <Composition id="KRKGuide" component={KierkegaardGuide} durationInFrames={KRK_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="KRKLab" component={KrkLab} durationInFrames={Math.max(5000, KRK_LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
     <Composition id="SKLab3D" component={Lab3D} durationInFrames={Math.max(5000, LAB_FRAMES.length)} fps={FPS} width={W} height={H} />
     <Composition id="SKThumbA" component={SKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="SKThumbB" component={SKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="DSKThumbA" component={DSKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="DSKThumbB" component={DSKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="KRKThumbA" component={KRKThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="KRKThumbB" component={KRKThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STRShort" component={StorytelReviewShort} durationInFrames={STR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

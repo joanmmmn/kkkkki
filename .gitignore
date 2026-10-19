@@ -34,6 +34,10 @@ video/public/music/skg_parts/*.mp3
 video/public/music/dsk_parts/*.mp3
 !video/public/music/dsk_parts/*.raw.mp3
 
+# Por dónde empezar · Kierkegaard: igual (las niveladas las rehace tools/krk_music.py join)
+video/public/music/krk_parts/*.mp3
+!video/public/music/krk_parts/*.raw.mp3
+
 # Copias de revisión (se entregan por el chat y en el PC; el máster va en Git LFS)
 deliverables/autores/*/*_revision_720p.mp4
 

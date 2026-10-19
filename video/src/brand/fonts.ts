@@ -9,6 +9,8 @@ const faces: Array<[string, string, string, string]> = [
   ['Ubuntu', 'Ubuntu-700', '700', 'normal'],
   ['EB Garamond', 'EBGaramond-400', '400 500', 'normal'],
   ['EB Garamond', 'EBGaramond-400i', '400 500', 'italic'],
+  // Letra caligráfica (cartas y diarios del episodio de Kierkegaard). SIL OFL, ver public/fonts/PinyonScript-OFL.txt.
+  ['Pinyon Script', 'PinyonScript-400', '400', 'normal'],
 ];
 
 let loaded = false;
