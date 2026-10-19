@@ -1,17 +1,17 @@
 {
  "id": "B01",
- "hash": "f3ef84a446d1",
- "text": "Jak wypróbować Audible za darmo? Nowi członkowie mają 30 dni za darmo w obu planach, a w Premium od razu dostajesz kredyt na pierwszą książkę.",
- "duration": 8.8,
+ "hash": "1e802553c5fc",
+ "text": "Jak wypróbować Audible za darmo? Nowi członkowie mają 30 dni za darmo w obu planach, a w Premium dostają też kredyt na pierwszą książkę.",
+ "duration": 8.64,
  "words": [
   {
    "w": "Jak",
    "s": 0.0,
-   "e": 0.24
+   "e": 0.16
   },
   {
    "w": "wypróbować",
-   "s": 0.32,
+   "s": 0.24,
    "e": 0.8
   },
   {
@@ -41,94 +41,89 @@
   },
   {
    "w": "mają",
-   "s": 3.12,
-   "e": 3.28
+   "s": 3.08,
+   "e": 3.36
   },
   {
    "w": "30",
-   "s": 3.32,
-   "e": 3.76
+   "s": 3.4,
+   "e": 3.84
   },
   {
    "w": "dni",
-   "s": 3.84,
-   "e": 4.0
-  },
-  {
-   "w": "za",
-   "s": 4.08,
+   "s": 4.0,
    "e": 4.16
   },
   {
-   "w": "darmo",
-   "s": 4.2,
-   "e": 4.48
+   "w": "za",
+   "s": 4.24,
+   "e": 4.32
   },
   {
-   "w": "w",
-   "s": 4.56,
+   "w": "darmo",
+   "s": 4.36,
    "e": 4.64
   },
   {
+   "w": "w",
+   "s": 4.68,
+   "e": 4.72
+  },
+  {
    "w": "obu",
-   "s": 4.72,
-   "e": 4.88
+   "s": 4.8,
+   "e": 4.96
   },
   {
    "w": "planach,",
-   "s": 5.0,
-   "e": 5.52
-  },
-  {
-   "w": "a",
-   "s": 5.56,
+   "s": 5.08,
    "e": 5.6
   },
   {
-   "w": "w",
+   "w": "a",
    "s": 5.68,
-   "e": 5.76
+   "e": 5.72
+  },
+  {
+   "w": "w",
+   "s": 5.76,
+   "e": 5.84
   },
   {
    "w": "Premium",
-   "s": 5.96,
-   "e": 6.16
+   "s": 6.04,
+   "e": 6.24
   },
   {
-   "w": "od",
-   "s": 6.24,
-   "e": 6.32
+   "w": "dostają",
+   "s": 6.28,
+   "e": 6.64
   },
   {
-   "w": "razu",
-   "s": 6.44,
-   "e": 6.6
-  },
-  {
-   "w": "dostajesz",
-   "s": 6.64,
-   "e": 7.04
+   "w": "też",
+   "s": 6.72,
+   "e": 6.88
   },
   {
    "w": "kredyt",
-   "s": 7.08,
-   "e": 7.36
+   "s": 6.92,
+   "e": 7.2
   },
   {
    "w": "na",
-   "s": 7.44,
-   "e": 7.52
+   "s": 7.28,
+   "e": 7.36
   },
   {
    "w": "pierwszą",
-   "s": 7.56,
-   "e": 7.84
+   "s": 7.44,
+   "e": 7.76
   },
   {
    "w": "książkę.",
-   "s": 8.0,
-   "e": 8.8
+   "s": 7.92,
+   "e": 8.64
   }
  ],
- "speechEnd": 8.407
+ "speechEnd": 8.281
 }

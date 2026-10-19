@@ -1,52 +1,52 @@
 {
  "id": "B06",
- "hash": "6e35844b0228",
- "text": "Na sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
- "duration": 12.24,
+ "hash": "7c1e313004ab",
+ "text": "Na sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami oraz sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+ "duration": 12.56,
  "words": [
   {
    "w": "Na",
    "s": 0.0,
-   "e": 0.16
+   "e": 0.08
   },
   {
    "w": "sonorbooks",
    "s": 0.24,
-   "e": 0.88
+   "e": 0.8
   },
   {
    "w": "kropka",
-   "s": 0.933,
+   "s": 0.84,
    "e": 1.12
   },
   {
    "w": "pe",
    "s": 1.2,
-   "e": 1.44
+   "e": 1.36
   },
   {
    "w": "el",
-   "s": 1.56,
-   "e": 1.68
+   "s": 1.44,
+   "e": 1.6
   },
   {
    "w": "porównasz",
-   "s": 1.76,
-   "e": 2.08
+   "s": 1.68,
+   "e": 2.0
   },
   {
    "w": "warunki",
-   "s": 2.16,
-   "e": 2.56
+   "s": 2.08,
+   "e": 2.48
   },
   {
    "w": "Odibl",
-   "s": 2.64,
-   "e": 3.04
+   "s": 2.56,
+   "e": 2.96
   },
   {
    "w": "z",
-   "s": 3.08,
+   "s": 3.04,
    "e": 3.12
   },
   {
@@ -62,103 +62,103 @@
   {
    "w": "Goł,",
    "s": 4.4,
-   "e": 4.8
+   "e": 4.76
   },
   {
    "w": "Legimi",
-   "s": 4.88,
-   "e": 5.28
-  },
-  {
-   "w": "i",
-   "s": 5.32,
+   "s": 4.8,
    "e": 5.36
   },
   {
-   "w": "innymi",
+   "w": "i",
    "s": 5.44,
-   "e": 5.76
+   "e": 5.52
+  },
+  {
+   "w": "innymi",
+   "s": 5.64,
+   "e": 5.92
   },
   {
    "w": "serwisami",
-   "s": 5.84,
-   "e": 6.64
+   "s": 6.0,
+   "e": 6.8
   },
   {
-   "w": "i",
-   "s": 6.72,
-   "e": 6.76
+   "w": "oraz",
+   "s": 6.88,
+   "e": 7.12
   },
   {
    "w": "sprawdzisz,",
-   "s": 6.8,
-   "e": 7.4
+   "s": 7.2,
+   "e": 7.787
   },
   {
    "w": "gdzie",
-   "s": 7.44,
-   "e": 7.6
+   "s": 7.813,
+   "e": 8.0
   },
   {
    "w": "posłuchać",
-   "s": 7.68,
-   "e": 8.08
+   "s": 8.08,
+   "e": 8.48
   },
   {
    "w": "audiobooka",
-   "s": 8.16,
-   "e": 8.72
+   "s": 8.56,
+   "e": 9.04
   },
   {
    "w": "i",
-   "s": 8.76,
-   "e": 8.8
+   "s": 9.08,
+   "e": 9.12
   },
   {
    "w": "za",
-   "s": 8.88,
-   "e": 8.96
+   "s": 9.2,
+   "e": 9.28
   },
   {
    "w": "ile.",
-   "s": 9.28,
-   "e": 9.653
+   "s": 9.6,
+   "e": 9.973
   },
   {
    "w": "Twoja",
-   "s": 9.707,
-   "e": 9.84
+   "s": 10.027,
+   "e": 10.16
   },
   {
    "w": "następna",
-   "s": 9.88,
-   "e": 10.32
+   "s": 10.2,
+   "e": 10.64
   },
   {
    "w": "historia",
-   "s": 10.52,
-   "e": 10.96
+   "s": 10.84,
+   "e": 11.28
   },
   {
    "w": "już",
-   "s": 11.04,
-   "e": 11.24
+   "s": 11.36,
+   "e": 11.547
   },
   {
    "w": "na",
-   "s": 11.28,
-   "e": 11.36
-  },
-  {
-   "w": "ciebie",
-   "s": 11.4,
+   "s": 11.573,
    "e": 11.6
   },
   {
+   "w": "ciebie",
+   "s": 11.68,
+   "e": 11.92
+  },
+  {
    "w": "czeka.",
-   "s": 11.64,
-   "e": 12.24
+   "s": 11.96,
+   "e": 12.56
   }
  ],
- "speechEnd": 12.022
+ "speechEnd": 12.323
 }

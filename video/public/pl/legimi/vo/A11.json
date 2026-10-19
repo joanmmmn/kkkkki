@@ -1,8 +1,8 @@
 {
  "id": "A11",
- "hash": "3f15f62e0388",
- "text": "Plusy: ebooki i audiobooki w jednym abonamencie, synchrobooki, 4 urządzenia z czytnikiem oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobooków nie posłuchasz na komputerze.",
- "duration": 18.08,
+ "hash": "c4e17503abe6",
+ "text": "Plusy: ebooki i audiobooki w jednym abonamencie, synchrobooki, 4 urządzenia, w tym czytnik, oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobooków nie posłuchasz na komputerze.",
+ "duration": 18.64,
  "words": [
   {
    "w": "Plusy:",
@@ -17,7 +17,7 @@
   {
    "w": "i",
    "s": 1.52,
-   "e": 1.68
+   "e": 1.6
   },
   {
    "w": "audiobooki",
@@ -26,189 +26,194 @@
   },
   {
    "w": "w",
-   "s": 2.36,
-   "e": 2.4
+   "s": 2.4,
+   "e": 2.44
   },
   {
    "w": "jednym",
-   "s": 2.44,
+   "s": 2.48,
    "e": 2.72
   },
   {
    "w": "abonamencie,",
-   "s": 2.76,
-   "e": 3.68
+   "s": 2.8,
+   "e": 3.72
   },
   {
    "w": "synchrobooki,",
    "s": 3.76,
-   "e": 4.8
+   "e": 4.773
   },
   {
    "w": "4",
-   "s": 4.88,
-   "e": 5.12
+   "s": 4.827,
+   "e": 5.04
   },
   {
-   "w": "urządzenia",
-   "s": 5.2,
-   "e": 5.6
-  },
-  {
-   "w": "z",
-   "s": 5.64,
+   "w": "urządzenia,",
+   "s": 5.12,
    "e": 5.68
   },
   {
-   "w": "czytnikiem",
-   "s": 5.76,
-   "e": 6.24
+   "w": "w",
+   "s": 5.72,
+   "e": 5.76
+  },
+  {
+   "w": "tym",
+   "s": 5.8,
+   "e": 5.92
+  },
+  {
+   "w": "czytnik,",
+   "s": 6.04,
+   "e": 6.68
   },
   {
    "w": "oraz",
-   "s": 6.32,
-   "e": 6.64
+   "s": 6.72,
+   "e": 7.04
   },
   {
    "w": "tańsze",
-   "s": 6.72,
-   "e": 6.96
-  },
-  {
-   "w": "pakiety",
-   "s": 7.0,
+   "s": 7.12,
    "e": 7.36
   },
   {
+   "w": "pakiety",
+   "s": 7.44,
+   "e": 7.76
+  },
+  {
    "w": "z",
-   "s": 7.387,
-   "e": 7.413
+   "s": 7.787,
+   "e": 7.813
   },
   {
    "w": "limitem.",
-   "s": 7.44,
-   "e": 8.44
+   "s": 7.84,
+   "e": 8.76
   },
   {
    "w": "Minusy:",
-   "s": 8.48,
-   "e": 9.413
+   "s": 8.8,
+   "e": 9.64
   },
   {
    "w": "bez",
-   "s": 9.467,
-   "e": 9.52
+   "s": 9.68,
+   "e": 9.84
   },
   {
    "w": "umowy",
-   "s": 9.6,
-   "e": 9.92
+   "s": 9.92,
+   "e": 10.24
   },
   {
    "w": "płacisz",
-   "s": 10.0,
-   "e": 10.32
+   "s": 10.32,
+   "e": 10.64
   },
   {
    "w": "więcej",
-   "s": 10.44,
-   "e": 10.72
+   "s": 10.72,
+   "e": 11.12
   },
   {
    "w": "niż",
-   "s": 10.8,
-   "e": 11.0
+   "s": 11.2,
+   "e": 11.32
   },
   {
    "w": "w",
-   "s": 11.04,
-   "e": 11.08
+   "s": 11.36,
+   "e": 11.4
   },
   {
    "w": "Audioteka",
-   "s": 11.12,
-   "e": 11.6
-  },
-  {
-   "w": "Klub",
-   "s": 11.64,
+   "s": 11.44,
    "e": 11.92
   },
   {
+   "w": "Klub",
+   "s": 11.96,
+   "e": 12.24
+  },
+  {
    "w": "czy",
-   "s": 12.04,
-   "e": 12.16
+   "s": 12.36,
+   "e": 12.48
   },
   {
    "w": "Empik",
-   "s": 12.24,
-   "e": 12.56
+   "s": 12.56,
+   "e": 12.88
   },
   {
    "w": "Go",
-   "s": 12.6,
-   "e": 12.64
+   "s": 12.96,
+   "e": 13.04
   },
   {
    "w": "Smart,",
-   "s": 12.8,
-   "e": 13.493
+   "s": 13.12,
+   "e": 13.893
   },
   {
    "w": "część",
-   "s": 13.547,
-   "e": 13.68
-  },
-  {
-   "w": "tytułów",
-   "s": 13.76,
+   "s": 13.947,
    "e": 14.16
   },
   {
-   "w": "jest",
+   "w": "tytułów",
    "s": 14.24,
-   "e": 14.4
-  },
-  {
-   "w": "za",
-   "s": 14.48,
    "e": 14.56
   },
   {
+   "w": "jest",
+   "s": 14.64,
+   "e": 14.88
+  },
+  {
+   "w": "za",
+   "s": 14.92,
+   "e": 14.96
+  },
+  {
    "w": "dopłatą,",
-   "s": 14.6,
-   "e": 15.32
+   "s": 15.0,
+   "e": 15.88
   },
   {
    "w": "a",
-   "s": 15.36,
-   "e": 15.52
+   "s": 15.92,
+   "e": 16.08
   },
   {
    "w": "audiobooków",
-   "s": 15.6,
-   "e": 16.32
+   "s": 16.2,
+   "e": 16.8
   },
   {
    "w": "nie",
-   "s": 16.4,
-   "e": 16.48
-  },
-  {
-   "w": "posłuchasz",
-   "s": 16.56,
+   "s": 16.88,
    "e": 16.96
   },
   {
+   "w": "posłuchasz",
+   "s": 17.04,
+   "e": 17.44
+  },
+  {
    "w": "na",
-   "s": 17.0,
-   "e": 17.04
+   "s": 17.48,
+   "e": 17.52
   },
   {
    "w": "komputerze.",
-   "s": 17.12,
-   "e": 18.08
+   "s": 17.6,
+   "e": 18.64
   }
  ],
- "speechEnd": 17.698
+ "speechEnd": 18.172
 }

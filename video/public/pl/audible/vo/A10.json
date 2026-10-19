@@ -1,8 +1,8 @@
 {
  "id": "A10",
- "hash": "c9d20e1b8ca0",
- "text": "Oceny? W polskim App Storze aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
- "duration": 18.4,
+ "hash": "cf37f8a4b413",
+ "text": "Oceny? W polskim App Storze aplikacja ma średnią 4,8 przy ponad 4000 ocen, a w polskim Google Play 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę i niepełne tłumaczenie.",
+ "duration": 14.96,
  "words": [
   {
    "w": "Oceny?",
@@ -40,200 +40,145 @@
    "e": 2.64
   },
   {
-   "w": "cztery",
-   "s": 2.72,
-   "e": 2.88
+   "w": "średnią",
+   "s": 2.68,
+   "e": 3.04
   },
   {
-   "w": "przecinek",
-   "s": 3.04,
+   "w": "cztery",
+   "s": 3.12,
    "e": 3.36
   },
   {
-   "w": "osiem",
-   "s": 3.52,
-   "e": 3.76
+   "w": "przecinek",
+   "s": 3.44,
+   "e": 3.88
   },
   {
-   "w": "z",
-   "s": 3.84,
-   "e": 3.92
+   "w": "osiem",
+   "s": 4.0,
+   "e": 4.16
+  },
+  {
+   "w": "przy",
+   "s": 4.32,
+   "e": 4.48
   },
   {
    "w": "ponad",
-   "s": 4.0,
-   "e": 4.24
+   "s": 4.56,
+   "e": 4.88
   },
   {
    "w": "czterech",
-   "s": 4.32,
-   "e": 4.64
+   "s": 4.96,
+   "e": 5.2
   },
   {
-   "w": "tysięcy",
-   "s": 4.72,
-   "e": 5.04
+   "w": "tysiącach",
+   "s": 5.28,
+   "e": 5.68
   },
   {
    "w": "ocen,",
-   "s": 5.12,
-   "e": 5.84
-  },
-  {
-   "w": "ale",
-   "s": 5.96,
-   "e": 6.08
-  },
-  {
-   "w": "ostatnie",
-   "s": 6.16,
+   "s": 5.84,
    "e": 6.48
   },
   {
-   "w": "recenzje",
+   "w": "a",
    "s": 6.56,
-   "e": 6.96
+   "e": 6.64
   },
   {
-   "w": "są",
-   "s": 7.0,
-   "e": 7.12
-  },
-  {
-   "w": "jeszcze",
-   "s": 7.2,
-   "e": 7.36
-  },
-  {
-   "w": "sprzed",
-   "s": 7.44,
-   "e": 7.76
-  },
-  {
-   "w": "polskiego",
-   "s": 7.813,
-   "e": 8.16
-  },
-  {
-   "w": "startu.",
-   "s": 8.24,
-   "e": 8.96
-  },
-  {
-   "w": "W",
-   "s": 9.0,
-   "e": 9.04
+   "w": "w",
+   "s": 6.68,
+   "e": 6.72
   },
   {
    "w": "polskim",
-   "s": 9.08,
-   "e": 9.36
+   "s": 6.76,
+   "e": 7.12
   },
   {
    "w": "Gugl",
-   "s": 9.44,
-   "e": 9.68
+   "s": 7.2,
+   "e": 7.4
   },
   {
    "w": "Plej",
-   "s": 9.76,
-   "e": 10.08
-  },
-  {
-   "w": "to",
-   "s": 10.16,
-   "e": 10.32
+   "s": 7.44,
+   "e": 7.84
   },
   {
    "w": "cztery",
-   "s": 10.4,
-   "e": 10.56
+   "s": 7.92,
+   "e": 8.08
   },
   {
    "w": "przecinek",
-   "s": 10.64,
-   "e": 11.12
+   "s": 8.24,
+   "e": 8.64
   },
   {
    "w": "jeden.",
-   "s": 11.2,
-   "e": 11.84
+   "s": 8.72,
+   "e": 9.44
   },
   {
    "w": "Chwalą",
-   "s": 11.88,
-   "e": 12.16
+   "s": 9.48,
+   "e": 9.76
   },
   {
    "w": "wybór",
-   "s": 12.24,
-   "e": 12.4
+   "s": 9.84,
+   "e": 10.0
   },
   {
    "w": "książek",
-   "s": 12.48,
-   "e": 12.96
+   "s": 10.08,
+   "e": 10.64
   },
   {
    "w": "i",
-   "s": 13.04,
-   "e": 13.12
+   "s": 10.72,
+   "e": 10.8
   },
   {
    "w": "wygodny",
-   "s": 13.2,
-   "e": 13.56
+   "s": 10.88,
+   "e": 11.28
   },
   {
    "w": "odtwarzacz.",
-   "s": 13.6,
-   "e": 14.52
+   "s": 11.36,
+   "e": 12.187
   },
   {
    "w": "Krytykują",
-   "s": 14.56,
-   "e": 15.04
+   "s": 12.213,
+   "e": 12.72
   },
   {
    "w": "cenę",
-   "s": 15.16,
-   "e": 15.32
-  },
-  {
-   "w": "za",
-   "s": 15.36,
-   "e": 15.44
-  },
-  {
-   "w": "jedną",
-   "s": 15.48,
-   "e": 15.68
-  },
-  {
-   "w": "książkę",
-   "s": 15.8,
-   "e": 16.0
-  },
-  {
-   "w": "miesięcznie",
-   "s": 16.08,
-   "e": 16.72
+   "s": 12.8,
+   "e": 13.2
   },
   {
    "w": "i",
-   "s": 16.84,
-   "e": 16.96
+   "s": 13.28,
+   "e": 13.44
   },
   {
    "w": "niepełne",
-   "s": 17.04,
-   "e": 17.36
+   "s": 13.52,
+   "e": 13.84
   },
   {
    "w": "tłumaczenie.",
-   "s": 17.44,
-   "e": 18.4
+   "s": 13.92,
+   "e": 14.96
   }
  ],
- "speechEnd": 18.069
+ "speechEnd": 14.558
 }

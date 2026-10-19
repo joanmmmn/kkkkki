@@ -23,8 +23,8 @@
   },
   {
    "id": "A03",
-   "text": "Do słuchania potrzebujesz pakietu z audiobookami. Bez limitu kosztuje 54,99 zł miesięcznie bez umowy albo 49,99 zł z umową na 12 miesięcy. Pakiety z limitem zaczynają się od 14,99 zł za 8 godzin słuchania.",
-   "say": "Do słuchania potrzebujesz pakietu z audiobukami. Bez limitu kosztuje pięćdziesiąt cztery złote dziewięćdziesiąt dziewięć groszy miesięcznie bez umowy albo czterdzieści dziewięć złotych dziewięćdziesiąt dziewięć groszy z umową na dwanaście miesięcy. Pakiety z limitem zaczynają się od czternastu złotych dziewięćdziesięciu dziewięciu groszy za osiem godzin słuchania."
+   "text": "Do słuchania potrzebujesz pakietu z audiobookami. Bez limitu kosztuje 54,99 zł miesięcznie bez umowy albo 49,99 zł w promocji z umową na 12 miesięcy. Pakiety z limitem zaczynają się od 14,99 zł za 8 godzin słuchania.",
+   "say": "Do słuchania potrzebujesz pakietu z audiobukami. Bez limitu kosztuje pięćdziesiąt cztery złote dziewięćdziesiąt dziewięć groszy miesięcznie bez umowy albo czterdzieści dziewięć złotych dziewięćdziesiąt dziewięć groszy w promocji z umową na dwanaście miesięcy. Pakiety z limitem zaczynają się od czternastu złotych dziewięćdziesięciu dziewięciu groszy za osiem godzin słuchania."
   },
   {
    "id": "A04",
@@ -38,7 +38,7 @@
   },
   {
    "id": "A06",
-   "text": "W aplikacji, w synchrobookach, przełączasz się między ebookiem a audiobookiem, także bez internetu. Zmienisz prędkość i ustawisz wyłącznik czasowy, także na koniec rozdziału. Możesz też wgrać do 4 własnych ebooków EPUB miesięcznie.",
+   "text": "W aplikacji, w synchrobookach, przełączasz się między ebookiem a audiobookiem, także bez internetu. Zmienisz prędkość i ustawisz wyłącznik czasowy, także na koniec rozdziału. Możesz też wgrać do 4 własnych ebooków w formacie EPUB miesięcznie.",
    "say": "W aplikacji, w synchrobukach, przełączasz się między ibukiem a audiobukiem, także bez internetu. Zmienisz prędkość i ustawisz wyłącznik czasowy, także na koniec rozdziału. Możesz też wgrać do czterech własnych ibuków w formacie e-pub miesięcznie."
   },
   {
@@ -63,13 +63,13 @@
   },
   {
    "id": "A11",
-   "text": "Plusy: ebooki i audiobooki w jednym abonamencie, synchrobooki, 4 urządzenia z czytnikiem oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobooków nie posłuchasz na komputerze.",
-   "say": "Plusy: ibuki i audiobuki w jednym abonamencie, synchrobuki, cztery urządzenia z czytnikiem oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobuków nie posłuchasz na komputerze."
+   "text": "Plusy: ebooki i audiobooki w jednym abonamencie, synchrobooki, 4 urządzenia, w tym czytnik, oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobooków nie posłuchasz na komputerze.",
+   "say": "Plusy: ibuki i audiobuki w jednym abonamencie, synchrobuki, cztery urządzenia, w tym czytnik, oraz tańsze pakiety z limitem. Minusy: bez umowy płacisz więcej niż w Audioteka Klub czy Empik Go Smart, część tytułów jest za dopłatą, a audiobuków nie posłuchasz na komputerze."
   },
   {
    "id": "A12",
-   "text": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteka Klub: 29,90 zł bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem.",
-   "say": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteka Klub: dwadzieścia dziewięć złotych dziewięćdziesiąt groszy bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem."
+   "text": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteką Klub: 29,90 zł bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem.",
+   "say": "Werdykt: Legimi ma sens, jeśli na zmianę czytasz i słuchasz albo masz czytnik. Jeśli tylko słuchasz, porównaj z Audioteką Klub: dwadzieścia dziewięć złotych dziewięćdziesiąt groszy bez limitu godzin. A jeśli słuchasz mało, zacznij od pakietu z limitem."
   },
   {
    "id": "B01",

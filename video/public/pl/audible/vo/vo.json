@@ -32,8 +32,8 @@
   },
   {
    "id": "A05",
-   "text": "W polskim Amazonie znajdziesz zakładkę Audiobooki Audible z filtrem języka. Wśród popularnych są kryminały Remigiusza Mroza, sagi Joanny Jax i klasyka, jak Sienkiewicz czy Kraszewski. Sporo to jednak domena publiczna i tytuły religijne.",
-   "say": "W polskim Amazonie znajdziesz zakładkę Audiobooki Odibl z filtrem języka. Wśród popularnych są kryminały Remigiusza Mroza, sagi Joanny Jax i klasyka, jak Sienkiewicz czy Kraszewski. Sporo to jednak domena publiczna i tytuły religijne."
+   "text": "W polskim Amazonie znajdziesz zakładkę „Audiobooki Audible” z filtrem języka. Wśród popularnych są kryminały Remigiusza Mroza, sagi Joanny Jax i klasyka, jak Sienkiewicz czy Kraszewski. Sporo z nich to jednak domena publiczna i tytuły religijne.",
+   "say": "W polskim Amazonie znajdziesz zakładkę Audiobooki Odibl z filtrem języka. Wśród popularnych są kryminały Remigiusza Mroza, sagi Joanny Jax i klasyka, jak Sienkiewicz czy Kraszewski. Sporo z nich to jednak domena publiczna i tytuły religijne."
   },
   {
    "id": "A06",
@@ -57,27 +57,27 @@
   },
   {
    "id": "A10",
-   "text": "Oceny? W polskim App Storze aplikacja ma 4,8 z ponad 4000 ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Google Play to 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie.",
-   "say": "Oceny? W polskim Ep Storze aplikacja ma cztery przecinek osiem z ponad czterech tysięcy ocen, ale ostatnie recenzje są jeszcze sprzed polskiego startu. W polskim Gugl Plej to cztery przecinek jeden. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę za jedną książkę miesięcznie i niepełne tłumaczenie."
+   "text": "Oceny? W polskim App Storze aplikacja ma średnią 4,8 przy ponad 4000 ocen, a w polskim Google Play 4,1. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę i niepełne tłumaczenie.",
+   "say": "Oceny? W polskim Ep Storze aplikacja ma średnią cztery przecinek osiem przy ponad czterech tysiącach ocen, a w polskim Gugl Plej cztery przecinek jeden. Chwalą wybór książek i wygodny odtwarzacz. Krytykują cenę i niepełne tłumaczenie."
   },
   {
    "id": "A11",
-   "text": "Plusy: 30 dni za darmo, w Premium książka na własność co miesiąc, ogromny wybór po angielsku i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie tylko jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego.",
-   "say": "Plusy: trzydzieści dni za darmo, w Premium książka na własność co miesiąc, ogromny wybór po angielsku i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie tylko jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego."
+   "text": "Plusy: 30 dni za darmo, w Premium książka na własność, ogromna kolekcja: ponad milion tytułów, i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego.",
+   "say": "Plusy: trzydzieści dni za darmo, w Premium książka na własność, ogromna kolekcja: ponad milion tytułów, i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego."
   },
   {
    "id": "A12",
-   "text": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz głównie polskich tytułów, na razie wybór jest mały: porównaj go z Audioteką Klub, Empik Go czy Legimi.",
-   "say": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz głównie polskich tytułów, na razie wybór jest mały: porównaj go z Audioteką Klub, Empik Goł czy Legimi."
+   "text": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz polskich tytułów, wybór jest na razie mały: porównaj Audible z Audioteką Klub, Empik Go czy Legimi.",
+   "say": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz polskich tytułów, wybór jest na razie mały: porównaj Odibl z Audioteką Klub, Empik Goł czy Legimi."
   },
   {
    "id": "B01",
-   "text": "Jak wypróbować Audible za darmo? Nowi członkowie mają 30 dni za darmo w obu planach, a w Premium od razu dostajesz kredyt na pierwszą książkę.",
-   "say": "Jak wypróbować Odibl za darmo? Nowi członkowie mają trzydzieści dni za darmo w obu planach, a w Premium od razu dostajesz kredyt na pierwszą książkę."
+   "text": "Jak wypróbować Audible za darmo? Nowi członkowie mają 30 dni za darmo w obu planach, a w Premium dostają też kredyt na pierwszą książkę.",
+   "say": "Jak wypróbować Odibl za darmo? Nowi członkowie mają trzydzieści dni za darmo w obu planach, a w Premium dostają też kredyt na pierwszą książkę."
   },
   {
    "id": "B02",
-   "text": "Wejdź na Amazon.pl, w zakładkę Audiobooki Audible, i wybierz Wypróbuj Standard albo Premium. Zalogujesz się kontem Amazon i podasz metodę płatności: dziś nie płacisz nic, a po 30 dniach opłata pobierze się sama.",
+   "text": "Wejdź na Amazon.pl, w zakładkę „Audiobooki Audible”, i wybierz „Wypróbuj Standard” albo „Premium”. Zalogujesz się kontem Amazon i podasz metodę płatności: dziś nie płacisz nic, a po 30 dniach opłata pobierze się sama.",
    "say": "Wejdź na Amazon kropka pe el, w zakładkę Audiobooki Odibl, i wybierz Wypróbuj Standard albo Premium. Zalogujesz się kontem Amazon i podasz metodę płatności: dziś nie płacisz nic, a po trzydziestu dniach opłata pobierze się sama."
   },
   {
@@ -87,8 +87,8 @@
   },
   {
    "id": "B04",
-   "text": "Nie chcesz płacić? Zrezygnuj przed końcem 30 dni. Na stronie audible.de link Anuluj subskrypcję jest na samym dole. Jeśli kupiłeś przez App Store albo Google Play, anulujesz tam.",
-   "say": "Nie chcesz płacić? Zrezygnuj przed końcem trzydziestu dni. Na stronie odibl kropka de e link Anuluj subskrypcję jest na samym dole. Jeśli kupiłeś przez Ep Stor albo Gugl Plej, anulujesz tam."
+   "text": "Zrezygnuj przed końcem 30 dni: link „Anuluj subskrypcję” jest na samym dole strony audible.de. Abonament z App Store’a albo Google Play anulujesz tam.",
+   "say": "Zrezygnuj przed końcem trzydziestu dni: link Anuluj subskrypcję jest na samym dole strony odibl kropka de e. Abonament z Ep Stora albo Gugl Plej anulujesz tam."
   },
   {
    "id": "B05",
@@ -96,8 +96,8 @@
   },
   {
    "id": "B06",
-   "text": "Na sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
-   "say": "Na sonorbooks kropka pe el porównasz warunki Odibl z Audioteką, Empik Goł, Legimi i innymi serwisami i sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
+   "text": "Na sonorbooks.pl porównasz warunki Audible z Audioteką, Empik Go, Legimi i innymi serwisami oraz sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka.",
+   "say": "Na sonorbooks kropka pe el porównasz warunki Odibl z Audioteką, Empik Goł, Legimi i innymi serwisami oraz sprawdzisz, gdzie posłuchać audiobooka i za ile. Twoja następna historia już na ciebie czeka."
   }
  ]
 }

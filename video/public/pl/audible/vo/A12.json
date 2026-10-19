@@ -1,8 +1,8 @@
 {
  "id": "A12",
- "hash": "2286ba8872ab",
- "text": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz głównie polskich tytułów, na razie wybór jest mały: porównaj go z Audioteką Klub, Empik Go czy Legimi.",
- "duration": 12.88,
+ "hash": "83b3f8d88c36",
+ "text": "Czy warto? Jeśli słuchasz po angielsku albo chcesz mieć książki na własność, Premium ma sens. Jeśli szukasz polskich tytułów, wybór jest na razie mały: porównaj Audible z Audioteką Klub, Empik Go czy Legimi.",
+ "duration": 13.04,
  "words": [
   {
    "w": "Czy",
@@ -12,7 +12,7 @@
   {
    "w": "warto?",
    "s": 0.32,
-   "e": 0.64
+   "e": 0.88
   },
   {
    "w": "Jeśli",
@@ -42,138 +42,133 @@
   {
    "w": "chcesz",
    "s": 2.88,
-   "e": 3.16
+   "e": 3.173
   },
   {
    "w": "mieć",
-   "s": 3.2,
-   "e": 3.36
+   "s": 3.227,
+   "e": 3.32
   },
   {
    "w": "książki",
-   "s": 3.48,
+   "s": 3.36,
    "e": 3.68
   },
   {
    "w": "na",
    "s": 3.76,
-   "e": 3.8
+   "e": 3.84
   },
   {
    "w": "własność,",
-   "s": 3.84,
+   "s": 3.88,
    "e": 4.56
   },
   {
    "w": "Premium",
-   "s": 4.76,
-   "e": 4.96
+   "s": 4.64,
+   "e": 5.04
   },
   {
    "w": "ma",
-   "s": 5.04,
-   "e": 5.12
+   "s": 5.12,
+   "e": 5.2
   },
   {
    "w": "sens.",
-   "s": 5.2,
-   "e": 5.6
+   "s": 5.28,
+   "e": 5.68
   },
   {
    "w": "Jeśli",
-   "s": 6.0,
-   "e": 6.24
+   "s": 6.16,
+   "e": 6.32
   },
   {
    "w": "szukasz",
-   "s": 6.28,
-   "e": 6.56
-  },
-  {
-   "w": "głównie",
-   "s": 6.6,
-   "e": 6.88
+   "s": 6.4,
+   "e": 6.64
   },
   {
    "w": "polskich",
-   "s": 6.96,
-   "e": 7.36
+   "s": 6.8,
+   "e": 7.12
   },
   {
    "w": "tytułów,",
-   "s": 7.44,
-   "e": 8.08
-  },
-  {
-   "w": "na",
-   "s": 8.12,
-   "e": 8.16
-  },
-  {
-   "w": "razie",
-   "s": 8.24,
-   "e": 8.48
+   "s": 7.2,
+   "e": 7.84
   },
   {
    "w": "wybór",
-   "s": 8.56,
-   "e": 8.8
+   "s": 7.92,
+   "e": 8.16
   },
   {
    "w": "jest",
-   "s": 8.88,
-   "e": 8.96
+   "s": 8.24,
+   "e": 8.32
+  },
+  {
+   "w": "na",
+   "s": 8.36,
+   "e": 8.4
+  },
+  {
+   "w": "razie",
+   "s": 8.48,
+   "e": 8.64
   },
   {
    "w": "mały:",
-   "s": 9.04,
-   "e": 9.6
+   "s": 8.72,
+   "e": 9.36
   },
   {
    "w": "porównaj",
-   "s": 9.68,
-   "e": 10.0
+   "s": 9.4,
+   "e": 9.76
   },
   {
-   "w": "go",
-   "s": 10.08,
-   "e": 10.16
-  },
-  {
-   "w": "z",
-   "s": 10.2,
+   "w": "Audible",
+   "s": 9.84,
    "e": 10.24
   },
   {
-   "w": "Audioteką",
+   "w": "z",
    "s": 10.32,
-   "e": 10.8
+   "e": 10.36
+  },
+  {
+   "w": "Audioteką",
+   "s": 10.4,
+   "e": 10.88
   },
   {
    "w": "Klub,",
-   "s": 10.88,
-   "e": 11.28
+   "s": 10.96,
+   "e": 11.44
   },
   {
    "w": "Empik",
-   "s": 11.4,
-   "e": 11.68
+   "s": 11.56,
+   "e": 11.84
   },
   {
    "w": "Go",
-   "s": 11.76,
-   "e": 12.0
+   "s": 11.92,
+   "e": 12.16
   },
   {
    "w": "czy",
-   "s": 12.08,
-   "e": 12.24
+   "s": 12.24,
+   "e": 12.4
   },
   {
    "w": "Legimi.",
-   "s": 12.32,
-   "e": 12.88
+   "s": 12.48,
+   "e": 13.04
   }
  ],
- "speechEnd": 12.88
+ "speechEnd": 13.04
 }

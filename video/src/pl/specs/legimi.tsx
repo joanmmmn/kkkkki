@@ -18,13 +18,13 @@ export const piece: PLPiece = {
       ], big: { at: 'dwustu', value: 240000, prefix: '~', label: 'tytułów w pakiecie bez limitu' } },
       { id: 'A03', kind: 'plans', bump: 'Cennik', kicker: 'Cennik · stan na październik 2026', title: 'Ile kosztuje Legimi?', plans: [
         { at: ['bez', 0], name: 'Bez limitu', price: '54,99 zł', period: '/ mies.', note: 'bez umowy', features: ['Ebooki + audiobooki', '~240 000 tytułów', 'Do 4 urządzeń'], best: true, badge: 'Najczęściej wybierany' },
-        { at: 'czterdziesci', name: 'Bez limitu + umowa', price: '49,99 zł', period: '/ mies.', note: 'umowa na 12 mies. (promocja)', features: ['To samo, 5 zł taniej', 'Po roku: 54,99 zł'] },
+        { at: 'czterdziesci', name: 'Bez limitu + umowa', price: '49,99 zł', period: '/ mies.', note: 'umowa na 12 mies.', badge: 'PROMOCJA', features: ['To samo, 5 zł taniej', 'Po roku: 54,99 zł'] },
         { at: 'pakiety', name: 'Z limitem', price: '14,99 zł', period: '/ mies.', note: '8 h słuchania lub 300 stron', features: ['26 h: 19,99 zł', '53 h: 34,99 zł', 'Reszta przechodzi na kolejny miesiąc'] },
       ], footer: [{ at: 'umowy', label: 'Premium ze SkyShowtime: 69,99 zł (bez okresu próbnego)', icon: 'tv' }] },
       { id: 'A04', kind: 'rec', bump: 'Katalog', kicker: 'legimi.pl', title: 'Katalog bez logowania', rec: { clip: 'home', start: 0.3 },
         cuts: [{ at: 'abonamencie', rec: { clip: 'harda', start: 0.4, holdAt: 3.5 } }],
         marks: [{ at: 'przy', until: 'abonamencie', x: 692, y: 366, w: 56, h: 32 }, { at: 'abonamencie', x: 684, y: 160, w: 186, h: 58 }],
-        zooms: [{ at: 'przy', zoom: 1.8, x: 700, y: 330 }, { at: 'abonamencie', zoom: 1.6, x: 925, y: 340 }],
+        zooms: [{ at: 'przy', zoom: 1.8, x: 700, y: 330 }, { at: 'abonamencie', zoom: 1.4, x: 960, y: 390 }],
         tags: [{ at: 'logowania', label: 'Bez logowania', icon: 'lock' }, { at: 'bestsellery', label: 'Bestsellery, nowości', sub: 'i kategorie', icon: 'list' },
           { at: 'przy', label: 'Ikony formatu', sub: 'ebook i/lub audiobook', icon: 'book' }, { at: 'abonamencie', label: '„audiobook w abonamencie”', icon: 'headphones' }] },
       { id: 'A05', kind: 'rec', kicker: 'Karta audiobooka', title: '„Harda”', rec: { clip: 'harda', start: 3.8 },
@@ -35,7 +35,7 @@ export const piece: PLPiece = {
       { id: 'A06', kind: 'features', bump: 'Jak to działa', kicker: 'W aplikacji', title: 'Co potrafi aplikacja?', cols: 3, items: [
         { at: 'przelaczasz', label: 'Ebook i audiobook', sub: 'przełączasz się w synchrobookach', icon: 'sync' }, { at: 'internetu', label: 'Także offline', icon: 'wifiOff' },
         { at: 'predkosc', label: 'Prędkość', icon: 'speed' }, { at: 'wylacznik', label: 'Wyłącznik czasowy', sub: 'także na koniec rozdziału', icon: 'moon' },
-        { at: 'wgrac', label: 'Własne pliki EPUB', sub: 'do 4 miesięcznie (bez limitu)', icon: 'doc' },
+        { at: 'wgrac', label: 'Własne pliki EPUB', sub: 'do 4 miesięcznie (pakiet bez limitu)', icon: 'doc' },
       ] },
       { id: 'A07', kind: 'rec', kicker: 'Tylko w Legimi', title: 'Własne produkcje', rec: { clip: 'zastrzyk', start: 1.6 },
         cuts: [{ at: 'ale', rec: { clip: 'szczegoly', start: 0.4, holdAt: 3.9, url: 'legimi.pl/cennik' } }],
@@ -44,7 +44,7 @@ export const piece: PLPiece = {
         tags: [{ at: 'zastrzyk', label: '„Zastrzyk miłości”', sub: 'audioserial', icon: 'headphones' }, { at: 'tylko', label: 'Tylko w Legimi', tone: 'good' },
           { at: 'doplata', label: 'Katalog Klubowy: za dopłatą', tone: 'bad' }, { at: 'punktow', label: '150 pkt / mies. = 15 zł', sub: 'pakiet bez limitu · stan na październik 2026', icon: 'coin' },
           { at: 'obnizysz', label: 'Klubowy+: 0 zł za punkty', sub: 'od 149 pkt za tytuł, maks. 2 / mies.', icon: 'gift' }] },
-      { id: 'A08', kind: 'rec', kicker: 'Pakiety z limitem', title: 'Wspólna pula stron', rec: { clip: 'limit', start: 0.4, url: 'legimi.pl/cennik' },
+      { id: 'A08', kind: 'rec', kicker: 'Pakiety z limitem', title: 'Wspólna pula stron', rec: { clip: 'limit', start: 2.0, url: 'legimi.pl/cennik' },
         marks: [{ at: 'czytanie', until: 'niewykorzystany', x: 434, y: 434, w: 272, h: 32 }, { at: 'niewykorzystany', x: 434, y: 516, w: 282, h: 52 }],
         zooms: [{ at: 'czytanie', zoom: 2, x: 690, y: 470 }],
         tags: [{ at: 'wspolna', label: 'Jedna pula stron', sub: 'na czytanie i słuchanie', icon: 'book' }, { at: 'godzina', label: '1 h audiobooka ≈ 37,6 strony', sub: 'sam audiobook, bez ebooka', icon: 'clock' },
@@ -52,27 +52,27 @@ export const piece: PLPiece = {
           { at: 'przekroczysz', label: 'Przekroczysz limit?', sub: 'kolejna opłata jak za abonament', tone: 'bad' }] },
       { id: 'A09', kind: 'devices', title: 'Gdzie czytasz i słuchasz?', items: [
         { at: 'smartfonie', label: 'Smartfon', sub: 'Android, iOS', icon: 'phone', ok: true }, { at: 'tablecie', label: 'Tablet', icon: 'tablet', ok: true },
-        { at: 'komputerze', label: 'Komputer z Windows', sub: 'tylko ebooki', icon: 'laptop', ok: true }, { at: 'czytniku', label: 'Czytnik', sub: 'PocketBook, inkBOOK…', icon: 'ereader', ok: true },
-        { at: 'kindlu', label: 'Kindle', sub: 'do 10 ebooków / mies. (bez limitu)', icon: 'ereader', ok: true }, { at: 'audiobukow', label: 'Audiobooki na komputerze', icon: 'headphones', ok: false },
+        { at: 'komputerze', label: 'Komputer z Windowsem', sub: 'tylko ebooki', icon: 'laptop', ok: true }, { at: 'czytniku', label: 'Czytnik', sub: 'PocketBook, inkBOOK…', icon: 'ereader', ok: true },
+        { at: 'kindlu', label: 'Kindle', sub: 'do 10 ebooków / mies. (pakiet bez limitu)', icon: 'ereader', ok: true }, { at: 'audiobukow', label: 'Audiobooki na komputerze', icon: 'headphones', ok: false },
       ] },
-      { id: 'A10', kind: 'ratings', bump: 'Opinie', stores: [{ at: 'gugl', store: 'google', rating: 4.5, count: '49,9 tys. ocen' }, { at: 'ep', store: 'apple', rating: 4.5, count: '16,5 tys. ocen (Polska)' }],
-        likes: [{ at: 'wybor', label: 'Ogromny wybór' }, { at: 'cene', label: 'Cena' }], dislikes: [{ at: 'bledy', label: 'Błędy aplikacji' }, { at: 'doplaty', label: 'Dopłaty do części tytułów' }],
-        notes: [{ at: 'ep', label: 'Stan na 19.10.2026', icon: 'calendar' }] },
+      { id: 'A10', kind: 'ratings', bump: 'Opinie', kicker: 'Oceny · stan na 19.10.2026', stores: [{ at: 'gugl', store: 'google', rating: 4.5, count: '49,9 tys. ocen' }, { at: 'ep', store: 'apple', rating: 4.5, count: '16,5 tys. ocen (Polska)' }],
+        likes: [{ at: 'wybor', label: 'Ogromny wybór' }, { at: 'cene', label: 'Cena' }], dislikes: [{ at: 'bledy', label: 'Błędy aplikacji' }, { at: 'doplaty', label: 'Dopłaty do części tytułów' }] },
       { id: 'A11', kind: 'proscons', bump: 'Plusy i minusy', kicker: 'Ceny: stan na październik 2026', title: 'Legimi: plusy i minusy', pros: [
-        { at: 'ebooki', label: 'Ebooki i audiobooki w jednym' }, { at: 'synchrobooki', label: 'Synchrobooki' }, { at: 'urzadzenia', label: '4 urządzenia, także czytnik' }, { at: 'tansze', label: 'Tańsze pakiety z limitem' },
+        { at: 'ebooki', label: 'Ebooki i audiobooki w jednym' }, { at: 'synchrobooki', label: 'Synchrobooki' }, { at: 'urzadzenia', label: '4 urządzenia, w tym czytnik' }, { at: 'tansze', label: 'Tańsze pakiety z limitem' },
       ], cons: [
         { at: 'placisz', label: 'Bez umowy: 54,99 zł', sub: 'drożej niż Audioteka Klub i Empik Go' }, { at: 'czesc', label: 'Część tytułów za dopłatą' }, { at: 'posluchasz', label: 'Audiobooki: tylko telefon i tablet' }, { at: 'komputerze', label: 'Okres próbny: tylko 3 dni' },
       ] },
       { id: 'A12', kind: 'verdict', bump: 'Werdykt', question: 'Legimi:\nczy warto?', yes: [
         { at: 'zmiane', label: 'Na zmianę czytasz i słuchasz' }, { at: 'czytnik', label: 'Masz czytnik', sub: 'także Kindle (tylko ebooki)' },
+        { at: 'malo', label: 'Słuchasz mało', sub: 'wybierz pakiet z limitem' },
       ], no: [
-        { at: 'tylko', label: 'Tylko słuchasz', sub: 'porównaj z Audioteka Klub (bez limitu godzin)' }, { at: 'malo', label: 'Słuchasz mało', sub: 'wybierz pakiet z limitem' },
+        { at: 'tylko', label: 'Tylko słuchasz', sub: 'porównaj z Audioteką Klub (bez limitu godzin)' },
       ], alts: { at: 'tylko', names: ['Audioteka Klub · 29,90 zł / mies.', 'Legimi z limitem · od 14,99 zł / mies.'], label: 'Stan na październik 2026:' } },
-      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować', kicker: 'Okres próbny', at: 'dni', value: '3', unit: 'dni', count: { from: 0, to: 3 }, label: 'za darmo – tylko raz, z kartą lub PayPal', tags: [
+      { id: 'B01', kind: 'stat', bump: 'Jak wypróbować', kicker: 'Okres próbny', at: 'dni', value: '3', unit: 'dni', count: { from: 0, to: 3 }, label: 'za darmo – tylko raz, z kartą lub PayPalem', tags: [
         { at: 'konto', label: 'Raz na konto', icon: 'user' }, { at: 'urzadzenie', label: 'Raz na urządzenie', icon: 'phone' }, { at: 'karte', label: 'Raz na kartę', icon: 'card' },
       ] },
       { id: 'B02', kind: 'steps', kicker: 'Krok 1', title: 'Konto i karta', rec: { clip: 'mobile', start: 1.4, mobile: true }, marks: [{ at: 'kliknij', until: 'zaloz', x: 30, y: 511, w: 370, h: 52 }], steps: [
-        { at: 'wejdz', title: 'Wejdź na legimi.pl/cennik' }, { at: 'wybierz', title: 'Wybierz pakiet' }, { at: 'kliknij', title: '„Wypróbuj przez 3 dni za darmo”' },
+        { at: 'wejdz', title: 'Wejdź na legimi.pl/cennik' }, { at: 'wybierz', title: 'Wybierz pakiet', sub: 'domyślnie: umowa na 12 mies.; bez umowy → „Umowa na czas nieokreślony”' }, { at: 'kliknij', title: '„Wypróbuj przez 3 dni za darmo”' },
         { at: 'zaloz', title: 'Załóż konto' }, { at: 'podepnij', title: 'Karta lub PayPal', sub: 'płatność cykliczna; Legimi tylko autoryzuje kartę' },
       ], note: { at: 'dzis', label: 'Dziś płacisz 0 zł', icon: 'coin' } },
       { id: 'B03', kind: 'rec', kicker: 'Krok 2', title: 'Aplikacja', rec: { clip: 'jak', start: 9.0, url: 'legimi.pl/jak-to-dziala' },

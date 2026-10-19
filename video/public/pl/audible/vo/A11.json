@@ -1,8 +1,8 @@
 {
  "id": "A11",
- "hash": "11c044f03523",
- "text": "Plusy: 30 dni za darmo, w Premium książka na własność co miesiąc, ogromny wybór po angielsku i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie tylko jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego.",
- "duration": 17.28,
+ "hash": "bf85f0b2080c",
+ "text": "Plusy: 30 dni za darmo, w Premium książka na własność, ogromna kolekcja: ponad milion tytułów, i rozbudowany odtwarzacz. Minusy: mały polski katalog, w Standardzie jedna książka miesięcznie, niepełne tłumaczenie, brak e-booków i planu rodzinnego.",
+ "duration": 17.6,
  "words": [
   {
    "w": "Plusy:",
@@ -26,164 +26,154 @@
   },
   {
    "w": "darmo,",
-   "s": 1.76,
-   "e": 2.32
+   "s": 1.72,
+   "e": 2.24
   },
   {
    "w": "w",
-   "s": 2.4,
-   "e": 2.44
+   "s": 2.32,
+   "e": 2.36
   },
   {
    "w": "Premium",
-   "s": 2.48,
+   "s": 2.4,
    "e": 2.88
   },
   {
    "w": "książka",
-   "s": 2.96,
-   "e": 3.36
+   "s": 3.08,
+   "e": 3.28
   },
   {
    "w": "na",
+   "s": 3.32,
+   "e": 3.36
+  },
+  {
+   "w": "własność,",
    "s": 3.44,
-   "e": 3.48
+   "e": 4.28
   },
   {
-   "w": "własność",
-   "s": 3.52,
-   "e": 4.08
+   "w": "ogromna",
+   "s": 4.32,
+   "e": 4.88
   },
   {
-   "w": "co",
-   "s": 4.16,
-   "e": 4.24
+   "w": "kolekcja:",
+   "s": 4.92,
+   "e": 5.573
   },
   {
-   "w": "miesiąc,",
-   "s": 4.28,
-   "e": 5.04
-  },
-  {
-   "w": "ogromny",
-   "s": 5.12,
-   "e": 5.6
-  },
-  {
-   "w": "wybór",
-   "s": 5.68,
+   "w": "ponad",
+   "s": 5.627,
    "e": 5.92
   },
   {
-   "w": "po",
-   "s": 5.96,
-   "e": 6.0
+   "w": "milion",
+   "s": 6.0,
+   "e": 6.32
   },
   {
-   "w": "angielsku",
-   "s": 6.08,
-   "e": 6.72
+   "w": "tytułów,",
+   "s": 6.4,
+   "e": 7.16
   },
   {
    "w": "i",
-   "s": 6.8,
-   "e": 6.84
+   "s": 7.2,
+   "e": 7.36
   },
   {
    "w": "rozbudowany",
-   "s": 6.88,
-   "e": 7.44
+   "s": 7.44,
+   "e": 8.0
   },
   {
    "w": "odtwarzacz.",
-   "s": 7.52,
-   "e": 8.693
+   "s": 8.08,
+   "e": 9.16
   },
   {
    "w": "Minusy:",
-   "s": 8.827,
-   "e": 9.493
+   "s": 9.2,
+   "e": 10.133
   },
   {
    "w": "mały",
-   "s": 9.547,
-   "e": 9.76
+   "s": 10.187,
+   "e": 10.4
   },
   {
    "w": "polski",
-   "s": 9.8,
-   "e": 10.08
+   "s": 10.44,
+   "e": 10.72
   },
   {
    "w": "katalog,",
-   "s": 10.12,
-   "e": 10.92
+   "s": 10.76,
+   "e": 11.46
   },
   {
    "w": "w",
-   "s": 10.96,
-   "e": 11.0
+   "s": 11.48,
+   "e": 11.5
   },
   {
    "w": "Standardzie",
-   "s": 11.04,
-   "e": 11.52
-  },
-  {
-   "w": "tylko",
-   "s": 11.6,
-   "e": 11.92
+   "s": 11.52,
+   "e": 12.16
   },
   {
    "w": "jedna",
-   "s": 12.0,
-   "e": 12.24
+   "s": 12.24,
+   "e": 12.48
   },
   {
    "w": "książka",
-   "s": 12.32,
-   "e": 12.64
+   "s": 12.56,
+   "e": 12.88
   },
   {
    "w": "miesięcznie,",
-   "s": 12.693,
-   "e": 13.573
+   "s": 12.92,
+   "e": 13.88
   },
   {
    "w": "niepełne",
-   "s": 13.627,
-   "e": 13.92
+   "s": 13.92,
+   "e": 14.24
   },
   {
    "w": "tłumaczenie,",
-   "s": 13.947,
-   "e": 14.84
-  },
-  {
-   "w": "brak",
-   "s": 14.88,
+   "s": 14.32,
    "e": 15.12
   },
   {
+   "w": "brak",
+   "s": 15.2,
+   "e": 15.44
+  },
+  {
    "w": "e-booków",
-   "s": 15.16,
-   "e": 15.76
+   "s": 15.48,
+   "e": 16.0
   },
   {
    "w": "i",
-   "s": 15.84,
-   "e": 15.92
+   "s": 16.08,
+   "e": 16.24
   },
   {
    "w": "planu",
-   "s": 16.04,
-   "e": 16.2
+   "s": 16.36,
+   "e": 16.533
   },
   {
    "w": "rodzinnego.",
-   "s": 16.24,
-   "e": 17.28
+   "s": 16.587,
+   "e": 17.6
   }
  ],
- "speechEnd": 16.918
+ "speechEnd": 17.177
 }

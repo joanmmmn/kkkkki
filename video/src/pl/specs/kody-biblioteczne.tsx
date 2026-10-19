@@ -145,5 +145,5 @@ export const piece: PLPiece = {
       { label: 'Jak odebrać kod krok po kroku', from: 'B01' },
     ],
   },
-  thumb: { line1: 'AUDIOBOOKI', line2: 'ZA 0 ZŁ?', seal: { icon: 'library', text: 'Kod z\nbiblioteki' }, label: { strong: 'Gdzie', rest: 'HACZYK?' } },
+  thumb: { kicker: 'PORADNIK', line1: 'AUDIOBOOKI', line2: 'ZA 0 ZŁ?', seal: { icon: 'library', text: 'Kod z\nbiblioteki' }, label: { strong: 'Gdzie', rest: 'HACZYK?' } },
 };
