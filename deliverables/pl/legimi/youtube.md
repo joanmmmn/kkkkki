@@ -1,6 +1,6 @@
 # YouTube · Legimi: recenzja (SonorBooks Polska)
 
-Duración: 4:29 · Subtítulos: `legimi.pl.srt` · Capítulos y línea de tiempo: `timeline.json`
+Duración: 4:30 · Subtítulos: `legimi.pl.srt` · Capítulos y línea de tiempo: `timeline.json`
 
 ## Tytuł (74 znaki)
 **Legimi: czy warto w 2026? Recenzja, opinie, cena i jak wypróbować za darmo**
@@ -30,16 +30,16 @@ W filmie:
 0:12 Czym jest Legimi
 0:31 Cennik: bez limitu i z limitem
 0:51 Katalog i karta audiobooka
-1:18 Aplikacja i synchrobooki
-1:34 Własne produkcje i dopłaty
+1:19 Aplikacja i synchrobooki
+1:35 Własne produkcje i dopłaty
 1:52 Jak działają pakiety z limitem
-2:08 Urządzenia
-2:22 Opinie
+2:09 Urządzenia
+2:23 Opinie
 2:39 Plusy i minusy
-2:58 Werdykt: czy warto?
-3:13 Jak wypróbować 3 dni za darmo
-3:40 Uwaga na umowę na 12 miesięcy
-3:53 Jak zrezygnować
+2:59 Werdykt: czy warto?
+3:14 Jak wypróbować 3 dni za darmo
+3:41 Uwaga na umowę na 12 miesięcy
+3:54 Jak zrezygnować
 
 🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
 

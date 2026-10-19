@@ -1,6 +1,6 @@
 {
- "total_frames": 13429,
- "seconds": 268.58,
+ "total_frames": 13484,
+ "seconds": 269.68,
  "chapters": [
   {
    "t": 12.3,
@@ -11,47 +11,47 @@
    "label": "Cennik: bez limitu i z limitem"
   },
   {
-   "t": 51.38,
+   "t": 51.82,
    "label": "Katalog i karta audiobooka"
   },
   {
-   "t": 78.78,
+   "t": 79.22,
    "label": "Aplikacja i synchrobooki"
   },
   {
-   "t": 94.9,
+   "t": 95.34,
    "label": "Własne produkcje i dopłaty"
   },
   {
-   "t": 112.54,
+   "t": 112.98,
    "label": "Jak działają pakiety z limitem"
   },
   {
-   "t": 128.84,
+   "t": 129.28,
    "label": "Urządzenia"
   },
   {
-   "t": 142.9,
+   "t": 143.34,
    "label": "Opinie"
   },
   {
-   "t": 159.12,
+   "t": 159.56,
    "label": "Plusy i minusy"
   },
   {
-   "t": 178.1,
+   "t": 179.02,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 193.72,
+   "t": 194.82,
    "label": "Jak wypróbować 3 dni za darmo"
   },
   {
-   "t": 220.32,
+   "t": 221.42,
    "label": "Uwaga na umowę na 12 miesięcy"
   },
   {
-   "t": 233.06,
+   "t": 234.16,
    "label": "Jak zrezygnować"
   }
  ],
@@ -76,14 +76,14 @@
    "id": "A03",
    "kind": "plans",
    "start": 1594,
-   "dur": 989,
+   "dur": 1011,
    "lead": 26,
    "bump": "Cennik"
   },
   {
    "id": "A04",
    "kind": "rec",
-   "start": 2583,
+   "start": 2605,
    "dur": 584,
    "lead": 26,
    "bump": "Katalog"
@@ -91,7 +91,7 @@
   {
    "id": "A05",
    "kind": "rec",
-   "start": 3167,
+   "start": 3189,
    "dur": 786,
    "lead": 7,
    "bump": null
@@ -99,7 +99,7 @@
   {
    "id": "A06",
    "kind": "features",
-   "start": 3953,
+   "start": 3975,
    "dur": 792,
    "lead": 26,
    "bump": "Jak to działa"
@@ -107,7 +107,7 @@
   {
    "id": "A07",
    "kind": "rec",
-   "start": 4745,
+   "start": 4767,
    "dur": 882,
    "lead": 7,
    "bump": null
@@ -115,7 +115,7 @@
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5627,
+   "start": 5649,
    "dur": 815,
    "lead": 7,
    "bump": null
@@ -123,7 +123,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6442,
+   "start": 6464,
    "dur": 717,
    "lead": 7,
    "bump": null
@@ -131,7 +131,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7159,
+   "start": 7181,
    "dur": 811,
    "lead": 26,
    "bump": "Opinie"
@@ -139,23 +139,23 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 7970,
-   "dur": 949,
+   "start": 7992,
+   "dur": 973,
    "lead": 26,
    "bump": "Plusy i minusy"
   },
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 8919,
-   "dur": 781,
+   "start": 8965,
+   "dur": 790,
    "lead": 26,
    "bump": "Werdykt"
   },
   {
    "id": "B01",
    "kind": "stat",
-   "start": 9700,
+   "start": 9755,
    "dur": 376,
    "lead": 26,
    "bump": "Jak wypróbować"
@@ -163,7 +163,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10076,
+   "start": 10131,
    "dur": 653,
    "lead": 7,
    "bump": null
@@ -171,7 +171,7 @@
   {
    "id": "B03",
    "kind": "rec",
-   "start": 10729,
+   "start": 10784,
    "dur": 287,
    "lead": 7,
    "bump": null
@@ -179,7 +179,7 @@
   {
    "id": "B04",
    "kind": "rec",
-   "start": 11016,
+   "start": 11071,
    "dur": 651,
    "lead": 7,
    "bump": null
@@ -187,7 +187,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 11667,
+   "start": 11722,
    "dur": 828,
    "lead": 26,
    "bump": "Jak zrezygnować"
@@ -195,7 +195,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12495,
+   "start": 12550,
    "dur": 934,
    "lead": 7,
    "bump": null

@@ -19,19 +19,19 @@ wypróbować Legimi 3 dni za darmo.
 5
 00:00:13,100 --> 00:00:17,540
 Legimi to polska firma z Poznania,
-która od ponad 10 lat oferuje książki
+która od ponad 10 lat oferuje książki
 
 6
 00:00:17,580 --> 00:00:22,740
 w abonamencie. W pakiecie bez
-limitu masz około 240 000 tytułów.
+limitu masz około 240 000 tytułów.
 
 7
-00:00:22,780 --> 00:00:24,687
+00:00:22,780 --> 00:00:24,980
 Jej znak rozpoznawczy to synchrobooki:
 
 8
-00:00:24,727 --> 00:00:27,900
+00:00:25,020 --> 00:00:27,900
 ebook i audiobook pod jedną okładką.
 
 9
@@ -40,259 +40,267 @@ Czytasz w tramwaju, a w domu słuchasz
 dalej od tego samego miejsca.
 
 10
-00:00:32,400 --> 00:00:34,950
+00:00:32,400 --> 00:00:35,280
 Do słuchania potrzebujesz
 pakietu z audiobookami.
 
 11
 00:00:35,320 --> 00:00:44,200
 Bez limitu kosztuje 54,99 zł miesięcznie
-bez umowy albo 49,99 zł z umową na 12
+bez umowy albo 49,99 zł w promocji z umową
 
 12
-00:00:44,240 --> 00:00:51,450
-miesięcy. Pakiety z limitem zaczynają
-się od 14,99 zł za 8 godzin słuchania.
+00:00:44,240 --> 00:00:50,080
+na 12 miesięcy. Pakiety z limitem
+zaczynają się od 14,99 zł za
 
 13
-00:00:52,180 --> 00:00:55,953
+00:00:50,120 --> 00:00:51,930
+8 godzin słuchania.
+
+14
+00:00:52,620 --> 00:00:56,393
 Katalog przejrzysz na
 legimi.pl bez logowania:
 
-14
-00:00:55,993 --> 00:00:58,433
+15
+00:00:56,433 --> 00:00:58,873
 bestsellery, nowości i kategorie.
 
-15
-00:00:58,473 --> 00:01:01,700
+16
+00:00:58,913 --> 00:01:02,140
 Przy każdym tytule widzisz, czy
 jest w abonamencie jako ebook, czy
 
-16
-00:01:01,740 --> 00:01:02,740
+17
+00:01:02,180 --> 00:01:03,423
 jako audiobook.
 
-17
-00:01:03,480 --> 00:01:06,400
+18
+00:01:03,920 --> 00:01:06,840
 Na przykład „Harda”
 Elżbiety Cherezińskiej:
 
-18
-00:01:06,440 --> 00:01:14,760
-czyta Filip Kosior, 21 godzin 53
-minuty, średnia 4,7 przy 557 ocenach.
-
 19
-00:01:14,800 --> 00:01:18,930
+00:01:06,880 --> 00:01:15,200
+czyta Filip Kosior, 21 godzin
+53 minuty, średnia 4,7 przy 557 ocenach.
+
+20
+00:01:15,240 --> 00:01:19,370
 Obok czasu widzisz też liczbę
 stron, ważną w pakietach z limitem.
 
-20
-00:01:19,580 --> 00:01:24,500
+21
+00:01:20,020 --> 00:01:24,940
 W aplikacji, w synchrobookach, przełączasz
 się między ebookiem a audiobookiem, także
 
-21
-00:01:24,540 --> 00:01:28,900
+22
+00:01:24,980 --> 00:01:29,340
 bez internetu. Zmienisz prędkość
 i ustawisz wyłącznik czasowy, także na
 
-22
-00:01:28,940 --> 00:01:34,630
-koniec rozdziału. Możesz też wgrać do
-4 własnych ebooków EPUB miesięcznie.
-
 23
-00:01:35,040 --> 00:01:39,600
-Legimi ma też własne produkcje, jak
-audioserial „Zastrzyk miłości” z Katarzyną
+00:01:29,380 --> 00:01:33,580
+koniec rozdziału. Możesz też wgrać
+do 4 własnych ebooków w formacie
 
 24
-00:01:39,640 --> 00:01:41,800
-Bujakiewicz – tylko w Legimi.
+00:01:33,620 --> 00:01:35,070
+EPUB miesięcznie.
 
 25
-00:01:41,840 --> 00:01:43,667
-Ale nie wszystko jest w abonamencie:
+00:01:35,480 --> 00:01:40,040
+Legimi ma też własne produkcje, jak
+audioserial „Zastrzyk miłości” z Katarzyną
 
 26
-00:01:43,707 --> 00:01:46,280
-tytuły z Katalogu Klubowego są za dopłatą.
+00:01:40,080 --> 00:01:42,240
+Bujakiewicz – tylko w Legimi.
 
 27
-00:01:46,320 --> 00:01:52,570
-Co miesiąc dostajesz 150 punktów,
-wartych 15 zł – nimi obniżysz te dopłaty.
+00:01:42,280 --> 00:01:44,107
+Ale nie wszystko jest w abonamencie:
 
 28
-00:01:52,680 --> 00:01:56,880
+00:01:44,147 --> 00:01:46,720
+tytuły z Katalogu Klubowego są za dopłatą.
+
+29
+00:01:46,760 --> 00:01:53,010
+Co miesiąc dostajesz 150 punktów,
+wartych 15 zł – nimi obniżysz te dopłaty.
+
+30
+00:01:53,120 --> 00:01:57,320
 W pakietach z limitem czytanie
 i słuchanie zużywają wspólną pulę stron.
 
-29
-00:01:56,920 --> 00:02:02,213
-Godzina samego audiobooka to około 38
-stron, liczona przy normalnej prędkości.
-
-30
-00:02:02,253 --> 00:02:05,520
-Niewykorzystany limit przechodzi
-na kolejny miesiąc, ale jeśli go
-
 31
-00:02:05,560 --> 00:02:08,610
-przekroczysz, Legimi
-pobierze kolejną opłatę.
+00:01:57,360 --> 00:02:01,560
+Godzina samego audiobooka to około
+38 stron, liczona przy normalnej
 
 32
-00:02:08,980 --> 00:02:11,740
-Pakiet bez limitu działa
-na 4 urządzeniach:
+00:02:01,600 --> 00:02:05,840
+prędkości. Niewykorzystany limit
+przechodzi na kolejny miesiąc, ale jeśli
 
 33
-00:02:11,780 --> 00:02:15,580
+00:02:05,880 --> 00:02:09,050
+go przekroczysz, Legimi
+pobierze kolejną opłatę.
+
+34
+00:02:09,420 --> 00:02:12,180
+Pakiet bez limitu działa
+na 4 urządzeniach:
+
+35
+00:02:12,220 --> 00:02:16,020
 smartfonie, tablecie, komputerze
 z Windowsem i czytniku.
 
-34
-00:02:15,620 --> 00:02:18,620
+36
+00:02:16,060 --> 00:02:19,060
 Na Kindle'u przeczytasz
-do 10 ebooków miesięcznie.
+do 10 ebooków miesięcznie.
 
-35
-00:02:18,660 --> 00:02:22,424
+37
+00:02:19,100 --> 00:02:23,259
 Ale audiobooków słuchasz tylko
 w aplikacji na Androida i iOS.
 
-36
-00:02:23,700 --> 00:02:29,891
-W Google Play Legimi ma 4,5 przy prawie 50
-tysiącach ocen, w polskim App Storze też
-
-37
-00:02:29,931 --> 00:02:32,820
-4,5 – przy ponad 16 tysiącach.
-
 38
-00:02:32,860 --> 00:02:35,500
-Użytkownicy chwalą ogromny wybór i cenę.
+00:02:24,140 --> 00:02:30,100
+W Google Play Legimi ma 4,5 przy prawie
+50 tysiącach ocen, w polskim App Storze
 
 39
-00:02:35,540 --> 00:02:39,550
+00:02:30,140 --> 00:02:33,260
+też 4,5 – przy ponad 16 tysiącach.
+
+40
+00:02:33,300 --> 00:02:35,940
+Użytkownicy chwalą ogromny wybór i cenę.
+
+41
+00:02:35,980 --> 00:02:39,990
 Krytykują błędy aplikacji
 i dopłaty do części tytułów.
 
-40
-00:02:39,920 --> 00:02:45,520
-Plusy: ebooki i audiobooki w jednym
-abonamencie, synchrobooki, 4 urządzenia
-
-41
-00:02:45,560 --> 00:02:48,360
-z czytnikiem oraz tańsze
-pakiety z limitem.
-
 42
-00:02:48,400 --> 00:02:53,640
+00:02:40,360 --> 00:02:46,040
+Plusy: ebooki i audiobooki w jednym
+abonamencie, synchrobooki, 4 urządzenia,
+
+43
+00:02:46,080 --> 00:02:49,120
+w tym czytnik, oraz
+tańsze pakiety z limitem.
+
+44
+00:02:49,160 --> 00:02:54,560
 Minusy: bez umowy płacisz więcej niż
 w Audioteka Klub czy Empik Go Smart, część
 
-43
-00:02:53,680 --> 00:02:58,250
+45
+00:02:54,600 --> 00:02:59,250
 tytułów jest za dopłatą, a audiobooków
 nie posłuchasz na komputerze.
 
-44
-00:02:58,900 --> 00:03:04,327
+46
+00:02:59,820 --> 00:03:05,220
 Werdykt: Legimi ma sens, jeśli na zmianę
 czytasz i słuchasz albo masz czytnik.
 
-45
-00:03:04,367 --> 00:03:07,037
+47
+00:03:05,260 --> 00:03:08,166
 Jeśli tylko słuchasz,
-porównaj z Audioteka Klub:
+porównaj z Audioteką Klub:
 
-46
-00:03:07,077 --> 00:03:10,433
+48
+00:03:08,206 --> 00:03:11,540
 29,90 zł bez limitu godzin.
 
-47
-00:03:10,473 --> 00:03:13,790
+49
+00:03:11,580 --> 00:03:14,950
 A jeśli słuchasz mało,
 zacznij od pakietu z limitem.
 
-48
-00:03:14,520 --> 00:03:15,760
+50
+00:03:15,620 --> 00:03:16,860
 Chcesz to sprawdzić?
 
-49
-00:03:15,800 --> 00:03:21,170
+51
+00:03:16,900 --> 00:03:22,270
 Legimi daje 3 dni za darmo – raz na
 konto, raz na urządzenie i raz na kartę.
 
-50
-00:03:21,660 --> 00:03:27,260
+52
+00:03:22,760 --> 00:03:28,360
 Wejdź na legimi.pl, w cenniku wybierz
-pakiet i kliknij „Wypróbuj przez 3 dni za
+pakiet i kliknij „Wypróbuj przez 3 dni za
 
-51
-00:03:27,300 --> 00:03:32,233
+53
+00:03:28,400 --> 00:03:33,333
 darmo”. Załóż konto i podepnij kartę
 albo PayPal z płatnością cykliczną.
 
-52
-00:03:32,273 --> 00:03:34,230
+54
+00:03:33,373 --> 00:03:35,330
 Dziś nic nie płacisz.
 
-53
-00:03:34,720 --> 00:03:40,410
+55
+00:03:35,820 --> 00:03:41,510
 Potem pobierz aplikację Legimi na telefon,
 zaloguj się i dodaj książki na półkę.
 
-54
-00:03:40,460 --> 00:03:45,500
+56
+00:03:41,560 --> 00:03:46,600
 Uważaj na umowę. Jeśli wybierzesz umowę na
-12 miesięcy i nie zrezygnujesz w okresie
+12 miesięcy i nie zrezygnujesz w okresie
 
-55
-00:03:45,540 --> 00:03:49,660
+57
+00:03:46,640 --> 00:03:50,760
 próbnym, wiążesz się na rok,
 a wcześniejsze wypowiedzenie oznacza zwrot
 
-56
-00:03:49,700 --> 00:03:53,430
+58
+00:03:50,800 --> 00:03:54,530
 rabatu. Bez umowy
 zrezygnujesz w każdej chwili.
 
-57
-00:03:53,860 --> 00:03:59,620
+59
+00:03:54,960 --> 00:04:00,720
 Rezygnujesz na legimi.pl: Konto,
 Subskrypcja, przycisk „Zakończ”.
 
-58
-00:03:59,660 --> 00:04:03,479
+60
+00:04:00,760 --> 00:04:04,813
 Jeśli płacisz przez Apple
 – w ustawieniach Apple ID.
 
-59
-00:04:03,753 --> 00:04:05,020
-Zrób to przed końcem 3.
-
-60
-00:04:05,060 --> 00:04:10,000
-dnia i pamiętaj: rezygnacja w okresie
-próbnym kończy dostęp od razu.
-
 61
-00:04:10,040 --> 00:04:15,920
+00:04:04,853 --> 00:04:07,453
+Zrób to przed końcem 3. dnia i pamiętaj:
+
+62
+00:04:07,493 --> 00:04:11,100
+rezygnacja w okresie próbnym
+kończy dostęp od razu.
+
+63
+00:04:11,140 --> 00:04:17,020
 Zanim zapłacisz, porównaj na sonorbooks.pl
 ceny i okresy próbne Legimi, Audioteki,
 
-62
-00:04:15,960 --> 00:04:18,160
+64
+00:04:17,060 --> 00:04:19,260
 Empik Go i innych platform.
 
-63
-00:04:18,200 --> 00:04:21,010
+65
+00:04:19,300 --> 00:04:22,110
 Twoja następna historia
 już na ciebie czeka.
