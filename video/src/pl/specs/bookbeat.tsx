@@ -63,11 +63,12 @@ export const piece: PLPiece = {
           { at: 'Czytanie', label: 'E-booki też zużywają godziny', icon: 'book' }, { at: 'niewykorzystane', label: 'Niewykorzystane przepadają', tone: 'bad' },
           { at: 'Premium', label: 'Premium: +20 h za 17,99 zł', sub: 'stan na październik 2026', icon: 'coin' },
         ] },
-      { id: 'A08B', kind: 'rec', kicker: 'Konto rodzinne', title: 'Profile dla rodziny', rec: { clip: 'rodzina', start: 3.0, url: 'bookbeat.com/pl/familyaccount' },
+      { id: 'A08B', kind: 'rec', kicker: 'Konto rodzinne', title: 'Profile dla rodziny', rec: { clip: 'rodzina', start: 4.9, url: 'bookbeat.com/pl/familyaccount' },
         marks: [
-          { at: 'Kazdy', until: 'wszyscy', x: 278, y: 390, w: 414, h: 150 }, { at: 'wszyscy', until: 'dzieciecy', x: 278, y: 206, w: 414, h: 170 },
-          { at: 'dzieciecy', x: 278, y: 558, w: 414, h: 160 },
+          { at: 'Kazdy', until: 'wszyscy', x: 270, y: 402, w: 420, h: 140 }, { at: 'wszyscy', until: 'dzieciecy', x: 270, y: 206, w: 420, h: 170 },
+          { at: 'dzieciecy', x: 270, y: 572, w: 420, h: 140 },
         ],
+        zooms: [{ at: 'Kazdy', zoom: 1.5, x: 700, y: 470 }],
         tags: [
           { at: 'Kazdy', label: 'Każdy profil: te same godziny', icon: 'clock' }, { at: 'wszyscy', label: 'Wszyscy słuchają naraz', icon: 'family' },
           { at: 'dzieciecy', label: 'Profil dziecięcy: do 12 lat', icon: 'kid' }, { at: 'blokady', label: 'Bez blokady rodzicielskiej', tone: 'bad' },
@@ -101,12 +102,13 @@ export const piece: PLPiece = {
         ] },
       { id: 'B02', kind: 'steps', kicker: 'Rejestracja', title: 'Krok po kroku', rec: { clip: 'rejestracja', start: 0.3, url: 'bookbeat.com/pl/registration' },
         marks: [
-          { at: 'zakladasz', until: 'wybierasz', x: 700, y: 280, w: 510, h: 46 }, { at: 'wybierasz', until: 'dodajesz', x: 690, y: 408, w: 580, h: 90 },
-          { at: 'dodajesz', until: 'zgody', x: 690, y: 510, w: 580, h: 110 }, { at: 'zgody', x: 700, y: 826, w: 510, h: 142 },
+          { at: 'zakladasz', until: 'wybierasz', x: 700, y: 280, w: 510, h: 46 }, { at: 'wybierasz', until: 'dodajesz', x: 648, y: 410, w: 614, h: 84 },
+          { at: 'dodajesz', until: 'zgody', x: 648, y: 514, w: 614, h: 104 }, { at: 'zgody', x: 700, y: 826, w: 510, h: 142 },
         ],
+        zooms: [{ at: 'zakladasz', zoom: 1.6, x: 955, y: 400 }, { at: 'wybierasz', zoom: 1.6, x: 950, y: 500 }, { at: 'zgody', zoom: 1.6, x: 955, y: 740 }],
         steps: [
           { at: 'zakladasz', title: 'Załóż konto', sub: 'e-mail, Google lub Apple' },
-          { at: 'wybierasz', title: 'Wybierz pakiet', sub: 'zacznie się po okresie próbnym', rec: { clip: 'proba', start: 4.0 } },
+          { at: 'wybierasz', title: 'Wybierz pakiet', sub: 'zacznie się po okresie próbnym', rec: { clip: 'proba', start: 4.5 } },
           { at: 'dodajesz', title: 'Dodaj metodę płatności' },
           { at: 'zgody', title: 'Zgoda na marketing', sub: 'nie musisz jej zaznaczać', rec: { clip: 'rejestracja', start: 4.6, url: 'bookbeat.com/pl/registration' } },
         ], note: { at: 'Dzis', label: 'Dziś płacisz 0 zł', icon: 'coin' } },
@@ -118,8 +120,8 @@ export const piece: PLPiece = {
         { at: 'menu', title: 'Menu konta', sub: 'na bookbeat.com/pl' }, { at: 'Zarzadzaj', title: 'Zarządzaj subskrypcją' },
         { at: 'wszystkie', title: 'Przejdź wszystkie kroki' }, { at: 'potwierdzeniem', title: 'Poczekaj na e-mail z potwierdzeniem', sub: 'bez niego subskrypcja może nie być anulowana' },
       ], note: { at: 'Tylko', label: 'Nie w aplikacji ani w App Storze', icon: 'lock' } },
-      { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Koniec okresu próbnego', rec: { clip: 'proba', start: 8.0, holdAt: 14.0 },
-        marks: [{ at: 'pierwsza', x: 690, y: 740, w: 580, h: 90 }],
+      { id: 'B05', kind: 'rec', kicker: 'Drobny druk', title: 'Koniec okresu próbnego', rec: { clip: 'proba', start: 9.6, holdAt: 13.9 },
+        marks: [{ at: 'pierwsza', x: 648, y: 742, w: 614, h: 86 }], zooms: [{ at: 'przypomina', zoom: 1.6, x: 950, y: 640 }],
         tags: [
           { at: 'przypomina', label: 'Brak przypomnienia', sub: 'o końcu okresu próbnego', tone: 'bad' }, { at: 'pierwsza', label: 'Dzień 31: pierwsza płatność', icon: 'calendar' },
           { at: 'Rezygnacja', label: 'Rezygnacja w próbie', sub: '= koniec dostępu od razu', tone: 'bad' }, { at: 'ostatnim', label: 'Zrezygnuj ostatniego dnia', tone: 'good' },

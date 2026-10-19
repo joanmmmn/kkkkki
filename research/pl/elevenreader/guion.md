@@ -22,7 +22,7 @@ Toma: 04_er_blog_pl (de 0,0 s a 8,0 s: título «ElevenReader przeczyta każdy t
 ES: ElevenReader lee en voz alta tus archivos, artículos y páginas, y además tiene una biblioteca de audiolibros. Lo ha creado ElevenLabs, empresa de dos polacos fundada en 2022, y la versión polaca de la app funciona desde abril de 2025.
 
 ### A03 · Cennik  (≈ 20 s)
-VO (pl): Plan darmowy daje 10 godzin zamiany tekstu na mowę miesięcznie. Ultra na stronie to 11 dolarów miesięcznie albo 99 rocznie, z 3 dniami za darmo, a w polskim App Store – 39 zł miesięcznie albo 349 zł rocznie.
+VO (pl): Plan darmowy daje 10 godzin zamiany tekstu na mowę miesięcznie. Ultra na stronie to 11 dolarów miesięcznie albo 99 rocznie, z 3 dniami za darmo, a w polskim App Storze – 39 zł miesięcznie albo 349 zł rocznie.
 SAY: Plan darmowy daje dziesięć godzin zamiany tekstu na mowę miesięcznie. Ultra na stronie to jedenaście dolarów miesięcznie albo dziewięćdziesiąt dziewięć rocznie, z trzema dniami za darmo, a w polskim Ep Storze – trzydzieści dziewięć złotych miesięcznie albo trzysta czterdzieści dziewięć złotych rocznie.
 Pantalla: Tarjetas: Free 0 zł · 10 h / mies. | Ultra (strona) 11 USD / mies. · 99 USD / rok · 3 dni za darmo | Ultra (App Store PL) 39,00 zł / mies. · 349,00 zł / rok. Rótulo pequeño «Brak planu rodzinnego». Pie: «Ceny: stan na październik 2026».
 Toma: 02_er_pricing (de 0,0 s a 10,0 s: tarjetas Free y Ultra con el interruptor Monthly → Annual) y 03_er_appstore (de 4,0 s a 9,0 s: «Ultra Monthly 39,00 zł · Ultra Annual 349,00 zł»).
@@ -71,7 +71,7 @@ Toma: 01_er_home (de 4,0 s a 9,0 s: bajada hasta «Listen Online · Get iOS App 
 ES: Funciona en iPhone, iPad, Android y en el navegador, con sincronización, y hay extensión para Chrome. Falta Android Auto, y los usuarios se quejan.
 
 ### A10 · Opinie  (≈ 22 s)
-VO (pl): W Google Play ElevenReader ma 4,6 przy prawie 70 tys. opinii, a w polskim App Store 4,7 przy 704 ocenach. Chwalone są naturalne głosy i to, że przeczyta dowolny plik. Krytykowane: brak Androida Auto, gubienie miejsca po przerwie i nagłe żądania płatnego planu.
+VO (pl): W Google Play ElevenReader ma 4,6 przy prawie 70 tys. opinii, a w polskim App Storze 4,7 przy 704 ocenach. Chwalone są naturalne głosy i to, że przeczyta dowolny plik. Krytykowane: brak Androida Auto, gubienie miejsca po przerwie i nagłe żądania płatnego planu.
 SAY: W Gugl Plej Ilewen Rider ma cztery i sześć dziesiątych przy prawie siedemdziesięciu tysiącach opinii, a w polskim Ep Storze cztery i siedem dziesiątych przy siedmiuset czterech ocenach. Chwalone są naturalne głosy i to, że przeczyta dowolny plik. Krytykowane: brak Androida Auto, gubienie miejsca po przerwie i nagłe żądania płatnego planu.
 Pantalla: Google Play 4,6 ★ · 69,7 tys. opinii | App Store (PL) 4,7 ★ · 704 oceny. «Chwalą: naturalne głosy · dowolny plik» / «Krytykują: brak Android Auto · gubi miejsce po przerwie · darmowy plan nagle wymaga płatnego». Pie: «Stan na 19.10.2026».
 Toma: 13_er_gplay (de 0,0 s a 4,0 s: «4,6 ★ · 69,7 tys. opinii · 1 mln+») y 03_er_appstore (de 0,0 s a 4,0 s: «Oceny: 704 · 4,7»).
@@ -119,8 +119,8 @@ Toma: 11_er_pomoc_anuluj (de 0,0 s a 10,0 s: las tres rutas y «Anulowanie zapob
 ES: Te das de baja donde lo compraste: en la web, avatar › Detalles de la cuenta › Gestionar pagos; en el móvil, en las suscripciones de la App Store o de Google Play. No basta con desinstalar la app. Mantienes el acceso hasta el final del periodo pagado.
 
 ### B06 · Cierre  (≈ 14 s)
-VO (pl): Wolisz audiobooki z lektorem? W sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
-SAY: Wolisz audiobooki z lektorem? W sonorbooks kropka pe el porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
+VO (pl): Wolisz audiobooki z lektorem? Na sonorbooks.pl porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Audible – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
+SAY: Wolisz audiobooki z lektorem? Na sonorbooks kropka pe el porównasz inne opcje – Audiotekę, Empik Go, Legimi czy Odibl – i sprawdzisz, gdzie posłuchasz audiobooka i za ile. Twoja następna historia już na ciebie czeka.
 Pantalla: «sonorbooks.pl» con la ficha de «Lalka» (Zbigniew Zapasiewicz) y sus opciones; frase de marca «Twoja następna historia już na ciebie czeka.» Sin aviso de afiliado.
 Toma: 15_sonorbooks_lalka (de 0,0 s a 8,0 s: ficha de «Lalka» en sonorbooks.pl con Audioteka Klub, compra suelta, Legimi y Empik Go) y 16_sonorbooks_platformy (de 0,0 s a 6,0 s). Cierre de marca SonorBooks.
 ES: ¿Prefieres audiolibros con narrador? En sonorbooks.pl comparas otras opciones (Audioteka, Empik Go, Legimi o Audible) y ves dónde escuchar un audiolibro y a qué precio. Tu próxima historia ya te está esperando.

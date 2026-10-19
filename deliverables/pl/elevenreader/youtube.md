@@ -87,4 +87,5 @@ Porównanie platform z audiobookami po polsku: https://sonorbooks.pl
   3. **Derechos de consumidor:** la ficha de la App Store polaca indica que Eleven Labs Inc. no se ha identificado como comerciante (los derechos de consumidor de la UE no se aplicarían). No está en el vídeo; decide si lo quieres en la descripción.
   4. **Logotipo:** la plantilla usa el mismo archivo para el icono y la marca, así que he montado un logotipo apilado (icono oficial del sol encima del logotipo oficial «ElevenReader» de elevenreader.io), en negro y en blanco.
   5. **Demo de la app:** el gancho va con las webs oficiales. Si grabas la app leyendo un PDF propio de dominio público con una voz polaca, se puede poner en A01.
-  6. **Miniatura:** «CZY WARTO PŁACIĆ?», sello «10 h/mies. za darmo» (plan Free) y etiqueta «Ultra 39 ZŁ / MIES.» (App Store PL).
+  6. **Cambios sobre el guion del investigador:** el cierre dice «Na sonorbooks.pl» (no «W»), como pide el brief, y los subtítulos de A03/A10 dicen «w polskim App Storze» (la voz ya lo declinaba).
+  7. **Miniatura:** «CZY WARTO PŁACIĆ?», sello «10 h/mies. za darmo» (plan Free) y etiqueta «Ultra 39 ZŁ / MIES.» (App Store PL).
