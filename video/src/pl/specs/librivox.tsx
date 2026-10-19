@@ -36,9 +36,10 @@ export const piece: PLPiece = {
         { at: 'pobrac', label: 'Pobierz, zachowaj, udostępniaj', icon: 'download' }, { at: 'datki', label: 'Tylko dobrowolne datki', icon: 'heart' },
       ] },
       { id: 'A04', kind: 'rec', bump: 'Ile jest po polsku?', kicker: 'Katalog po polsku', title: 'Mały zakątek', rec: { clip: '03_polish_list', start: 0.3, url: 'librivox.org/search' },
-        cuts: [{ at: 'bo', rec: { clip: '03_polish_list', start: 8.3, url: 'librivox.org/search' } }, { at: 'Do', rec: { clip: '03_polish_list', start: 3.4, url: 'librivox.org/search' } },
+        cuts: [{ at: 'bo', rec: { clip: '03_polish_list', start: 8.5, url: 'librivox.org/search' } }, { at: 'Do', rec: { clip: '03_polish_list', start: 3.4, holdAt: 5.9, url: 'librivox.org/search' } },
           { at: 'Razem', rec: { clip: '03_polish_list', start: 12.4, url: 'librivox.org/search' } }],
         marks: [{ at: 'krotszych', until: 'Razem', x: 770, y: 676, w: 300, h: 36 }],
+        zooms: [{ at: 'polsku', zoom: 1.3, x: 1000, y: 540 }, { at: 'Razem', zoom: 1.6, x: 900, y: 850 }],
         tags: [
           { at: 'trzydziesci', label: '31 projektów', sub: '= 27 książek', icon: 'book' },
           { at: 'Lalka', label: 'Lalka i Faraon', sub: 'po 3 tomy', icon: 'list' },
@@ -54,7 +55,7 @@ export const piece: PLPiece = {
         { at: 'Sklepy', label: 'Sklepy cynamonowe', sub: 'Schulz · 4 godz.', icon: 'book' },
       ] },
       { id: 'A06', kind: 'rec', bump: 'Jak szukać po polsku', kicker: 'Wyszukiwanie', title: 'Polish w trzech kliknięciach', rec: { clip: '02_jezyki', start: 0.3 },
-        cuts: [{ at: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } }, { at: 'Solo', rec: { clip: '03_polish_list', start: 0.9, url: 'librivox.org/search' } }, { at: 'kilka', rec: { clip: '03_polish_list', start: 3.7, url: 'librivox.org/search' } }],
+        cuts: [{ at: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } }, { at: 'Solo', rec: { clip: '03_polish_list', start: 0.9, url: 'librivox.org/search' } }, { at: 'kilka', rec: { clip: '03_polish_list', start: 3.7, holdAt: 5.9, url: 'librivox.org/search' } }],
         marks: [
           { at: 'Browse', until: 'Language', x: 228, y: 410, w: 292, h: 48 }, { at: 'Language', until: 'Polish', x: 1316, y: 449, w: 366, h: 72 },
           { at: 'Polish', until: 'Przy', x: 662, y: 432, w: 340, h: 96 },

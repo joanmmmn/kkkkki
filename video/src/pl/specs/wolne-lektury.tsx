@@ -84,7 +84,7 @@ export const piece: PLPiece = {
       ], no: [
         { at: 'Szukasz', label: 'Szukasz nowości', sub: 'sprawdź kod z biblioteki albo abonament' },
       ], alts: { at: 'Audiotece', names: ['„Lalka” w Audiotece: czyta Zapasiewicz · 8 godz. 55 min · 19,99 zł'], label: 'Stan na październik 2026:' } },
-      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Bez konta', title: 'Słuchasz od razu', rec: { clip: 'portada', start: 1.3 }, steps: [
+      { id: 'B01', kind: 'steps', bump: 'Jak zacząć', kicker: 'Bez konta', title: 'Słuchasz od razu', rec: { clip: 'portada', start: 2.4 }, steps: [
         { at: 'Wejdz', title: 'Wejdź na wolnelektury.pl' }, { at: 'Audiobooki', title: 'Kliknij „Audiobooki”' },
         { at: 'wpisz', title: 'albo wyszukaj tytuł', rec: { clip: 'szukaj', start: 0.2 } },
         { at: 'plej', title: 'Naciśnij play', sub: 'bez logowania', rec: { clip: 'pt_player', start: 15.5 } },
