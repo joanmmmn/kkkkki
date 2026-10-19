@@ -57,7 +57,7 @@ export const piece: PLPiece = {
       { id: 'A06', kind: 'rec', bump: 'Jak szukać po polsku', kicker: 'Wyszukiwanie', title: 'Polish w trzech kliknięciach', rec: { clip: '02_jezyki', start: 0.3 },
         cuts: [{ at: 'Polish', rec: { clip: '02_jezyki', start: 8.3 } }, { at: 'Solo', rec: { clip: '03_polish_list', start: 0.9, url: 'librivox.org/search' } }, { at: 'kilka', rec: { clip: '03_polish_list', start: 3.7, holdAt: 5.9, url: 'librivox.org/search' } }],
         marks: [
-          { at: 'Browse', until: 'Language', x: 228, y: 410, w: 292, h: 48 }, { at: 'Language', until: 'Polish', x: 1316, y: 449, w: 366, h: 72 },
+          { at: 'Browse', until: 'potem', x: 228, y: 410, w: 292, h: 48 }, { at: 'potem', until: 'Language', x: 1316, y: 449, w: 366, h: 72 },
           { at: 'Polish', until: 'Przy', x: 662, y: 432, w: 340, h: 96 },
           { at: 'Solo', until: 'kilka', x: 770, y: 532, w: 200, h: 36 }, { at: 'Collaborative', x: 770, y: 676, w: 300, h: 36 },
         ],
