@@ -1,0 +1,208 @@
+{
+ "total_frames": 13717,
+ "seconds": 274.34,
+ "chapters": [
+  {
+   "t": 15.42,
+   "label": "Jak działają kody z biblioteki"
+  },
+  {
+   "t": 33.92,
+   "label": "Ile to kosztuje"
+  },
+  {
+   "t": 48.74,
+   "label": "Legimi"
+  },
+  {
+   "t": 65.52,
+   "label": "Empik Go"
+  },
+  {
+   "t": 83.02,
+   "label": "Audioteka Klub"
+  },
+  {
+   "t": 99.34,
+   "label": "Zasady bibliotek: Łódź i Wrocław"
+  },
+  {
+   "t": 118.32,
+   "label": "Gdańsk, Poznań i Warszawa"
+  },
+  {
+   "t": 138.36,
+   "label": "Trzy zasady wspólne"
+  },
+  {
+   "t": 152.82,
+   "label": "Aplikacje i oceny"
+  },
+  {
+   "t": 176.9,
+   "label": "Plusy i minusy"
+  },
+  {
+   "t": 190.88,
+   "label": "Werdykt: czy warto?"
+  },
+  {
+   "t": 204.48,
+   "label": "Jak odebrać kod krok po kroku"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "A01",
+   "kind": "hook",
+   "start": 0,
+   "dur": 785,
+   "lead": 15,
+   "bump": null
+  },
+  {
+   "id": "A02",
+   "kind": "steps",
+   "start": 785,
+   "dur": 911,
+   "lead": 26,
+   "bump": "Jak to działa?"
+  },
+  {
+   "id": "A03",
+   "kind": "stat",
+   "start": 1696,
+   "dur": 755,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A04",
+   "kind": "rec",
+   "start": 2451,
+   "dur": 825,
+   "lead": 26,
+   "bump": "Trzy serwisy"
+  },
+  {
+   "id": "A05",
+   "kind": "rec",
+   "start": 3276,
+   "dur": 875,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A06",
+   "kind": "features",
+   "start": 4151,
+   "dur": 830,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A07",
+   "kind": "rec",
+   "start": 4981,
+   "dur": 935,
+   "lead": 26,
+   "bump": "Każda biblioteka inaczej"
+  },
+  {
+   "id": "A08",
+   "kind": "rec",
+   "start": 5916,
+   "dur": 1002,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A08B",
+   "kind": "features",
+   "start": 6918,
+   "dur": 737,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A09",
+   "kind": "devices",
+   "start": 7655,
+   "dur": 567,
+   "lead": 26,
+   "bump": "Aplikacje"
+  },
+  {
+   "id": "A10",
+   "kind": "features",
+   "start": 8222,
+   "dur": 637,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "A11",
+   "kind": "proscons",
+   "start": 8859,
+   "dur": 699,
+   "lead": 26,
+   "bump": "Plusy i minusy"
+  },
+  {
+   "id": "A12",
+   "kind": "verdict",
+   "start": 9558,
+   "dur": 680,
+   "lead": 26,
+   "bump": "Werdykt"
+  },
+  {
+   "id": "B01",
+   "kind": "steps",
+   "start": 10238,
+   "dur": 475,
+   "lead": 26,
+   "bump": "Jak odebrać kod"
+  },
+  {
+   "id": "B02",
+   "kind": "rec",
+   "start": 10713,
+   "dur": 445,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B03",
+   "kind": "stat",
+   "start": 11158,
+   "dur": 482,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B04",
+   "kind": "steps",
+   "start": 11640,
+   "dur": 440,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B05",
+   "kind": "steps",
+   "start": 12080,
+   "dur": 617,
+   "lead": 7,
+   "bump": null
+  },
+  {
+   "id": "B06",
+   "kind": "outro",
+   "start": 12697,
+   "dur": 1020,
+   "lead": 7,
+   "bump": null
+  }
+ ]
+}
