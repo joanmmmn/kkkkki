@@ -157,7 +157,7 @@ const Rec: React.FC<P<RecScene>> = ({ c, s }) => {
         <div style={{ position: 'absolute', [right ? 'left' : 'right']: mobile ? 330 : 100, top: mobile ? '50%' : 210, transform: mobile ? `translateY(-50%) translateY(${(1 - devP) * 60}px)` : `translateY(${(1 - devP) * 60}px)`, opacity: devP }}>
           <Device c={c} rec={s.rec} cuts={s.cuts} width={devW} marks={s.marks} zooms={s.zooms} tilt={mobile ? (right ? 8 : -8) : 0} />
         </div>
-        <SceneHead c={c} kicker={s.kicker} title={s.title} style={{ position: 'absolute', [right ? 'left' : 'right']: mobile ? 130 : 100, top: mobile ? 90 : 70, ...(mobile ? { width: 600 } : {}) }} />
+        <SceneHead c={c} kicker={s.kicker} title={s.title} style={{ position: 'absolute', [right ? 'left' : 'right']: mobile ? 900 : 100, top: mobile ? 90 : 70, ...(mobile ? { width: 900 } : {}) }} />
         {s.tags && (
           <TagStack c={c} tags={s.tags} size={34} gap={18}
             style={{ position: 'absolute', [right ? 'left' : 'right']: mobile ? 900 : 1300, [right ? 'right' : 'left']: 60, top: mobile ? 330 : 300 }} />
