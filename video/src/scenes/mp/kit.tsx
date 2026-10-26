@@ -56,7 +56,7 @@ export const PlatLogo: React.FC<{ k: PKey; width: number; white?: boolean; style
     case 'nextory': return img('nx/img/nextory.svg', 51 / 200, white ? { filter: 'brightness(0) invert(1)' } : {});
     case 'bookbeat': return img(white ? 'bkb/img/bookbeat_white.svg' : 'bkb/img/bookbeat.svg', 143.2 / 920.2);
     case 'spotify': return img(white ? 'mp/img/spotify_white.svg' : 'mp/img/spotify_black.svg', 225.25 / 823.46);
-    case 'audiobooks': return img(white ? 'abc/img/audiobooks_logo_white@4x.png' : 'abc/img/audiobooks_logo@4x.png', 516 / 2120);
+    case 'audiobooks': return img(white ? 'abc/img/audiobooks_logo_white_mono@4x.png' : 'abc/img/audiobooks_logo@4x.png', 516 / 2120);
     case 'elevenreader': return img('er/img/elevenreader.png', 56 / 521, white ? { filter: 'brightness(0) invert(1)' } : {});
     case 'ebiblio': return img(white ? 'eb/img/ebiblio_logo_white.png' : 'eb/img/ebiblio_logo.png', 240 / 492);
     case 'librivox': return img('lv/img/librivox_logo.png', 162 / 562, white ? { filter: 'brightness(0) invert(1)' } : {});

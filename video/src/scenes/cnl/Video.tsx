@@ -226,7 +226,7 @@ export const CancelVideo: React.FC<{ v: PlatVideo }> = ({ v }) => {
             </SceneShell>
             {(!STEM || STEM === 'vo') && s.kind !== 'store' && hasVO(s.id) && (
               <Sequence from={s.lead - s.skip} layout="none" name={`vo:${s.id}`}>
-                <Audio src={voSrc(s.id)} volume={(f) => (s.skip > 0 ? interpolate(f, [s.skip - s.lead, s.skip - s.lead + 3], [0, 1], clamp) : 1)} />
+                <Audio src={voSrc(s.id)} volume={(f) => (s.skip > 0 ? interpolate(f, [0, 3], [0, 1], clamp) : 1)} />
               </Sequence>
             )}
           </Sequence>
