@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar iVoox Premium
 
-Duración: 0:40 (41,0 s, 2049 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelariVoox_1440p.mp4`.
+Duración: 41,0 s (2049 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelariVoox_1440p.mp4`.
 
 ## Título (66 caracteres)
 **Cómo Cancelar iVoox Premium (2026): en Cuatro Toques, Desde la App**

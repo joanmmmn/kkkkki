@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar Audible
 
-Duración: 1:01 (61,4 s, 3071 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudible_1440p.mp4`.
+Duración: 61,4 s (3071 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudible_1440p.mp4`.
 
 ## Título (82 caracteres)
 **Cómo Cancelar Audible (2026): Paso a Paso, Desde la Web, y Qué Pasa con tus Libros**

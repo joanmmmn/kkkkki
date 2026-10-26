@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar Podimo
 
-Duración: 0:56 (56,1 s, 2804 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarPodimo_1440p.mp4`.
+Duración: 56,1 s (2804 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarPodimo_1440p.mp4`.
 
 ## Título (68 caracteres)
 **Cómo Cancelar Podimo (2026): Paso a Paso, y Cuándo Pierdes el Acceso**

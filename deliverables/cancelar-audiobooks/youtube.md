@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar Audiobooks.com
 
-Duración: 0:51 (51,8 s, 2591 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudiobooks_1440p.mp4`.
+Duración: 51,8 s (2591 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudiobooks_1440p.mp4`.
 
 ## Título (86 caracteres)
 **Cómo Cancelar Audiobooks.com (2026): Paso a Paso, y Qué Pasa con el Libro de la Prueba**

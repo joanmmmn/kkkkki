@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar Nextory
 
-Duración: 0:57 (57,1 s, 2856 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarNextory_1440p.mp4`.
+Duración: 57,1 s (2856 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarNextory_1440p.mp4`.
 
 ## Título (61 caracteres)
 **Cómo Cancelar Nextory (2026): Paso a Paso, de la App a la Web**

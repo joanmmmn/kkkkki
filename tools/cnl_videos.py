@@ -147,7 +147,7 @@ def main():
         art = f'{WEB}/es/blog/{p["slug"]}/'
         md = [
             f'# YouTube · Cómo cancelar {p["name"]}', '',
-            f'Duración: {cnl_meta.ts(dur, False)} ({fmt(dur)} s, {total} fotogramas a 50 fps). Vídeo: `SonorBooks_Cancelar{v["comp"][3:]}_1440p.mp4`.', '',
+            f'Duración: {fmt(dur)} s ({total} fotogramas a 50 fps). Vídeo: `SonorBooks_Cancelar{v["comp"][3:]}_1440p.mp4`.', '',
             f'## Título ({len(TITULO[k])} caracteres)', f'**{TITULO[k]}**', '', f'Alternativa: {ALT[k]} ({len(ALT[k])})', '',
             f'## Descripción ({len(desc.encode())} de 5.000 bytes)', '```', desc, '```', '',
             f'## Etiquetas ({len(tags)}; {len(tt)} de 500 caracteres)', '```', tt, '```', '',
@@ -157,7 +157,7 @@ def main():
             '- «Incluye promoción pagada»: no (sin enlaces de afiliado).',
             '- Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.',
             f'- Subtítulos: `cancelar_{k}.es.srt` (Español, España). Miniatura: `miniatura.png`.',
-            f'- Pantalla final desde {cnl_meta.ts(ec, False)},{round(ec % 1 * 10) % 10} ({fmt(dur - ec)} s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de {p["name"]}, https://youtu.be/{RESENA[k]}) + suscribirse.',
+            f'- Pantalla final desde {int(ec // 60)}:{fmt(ec % 60).zfill(4)} ({fmt(dur - ec)} s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de {p["name"]}, https://youtu.be/{RESENA[k]}) + suscribirse.',
             f'- El artículo ({art}) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt {k}=<ID>`.',
         ]
         open(os.path.join(out, 'youtube.md'), 'w').write('\n'.join(md) + '\n')

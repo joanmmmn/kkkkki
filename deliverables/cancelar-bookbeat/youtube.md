@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar BookBeat
 
-Duración: 0:46 (46,5 s, 2326 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarBookBeat_1440p.mp4`.
+Duración: 46,5 s (2326 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarBookBeat_1440p.mp4`.
 
 ## Título (65 caracteres)
 **Cómo Cancelar BookBeat (2026): Paso a Paso, Aunque Esté en Inglés**

@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar Storytel
 
-Duración: 0:48 (48,9 s, 2446 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarStorytel_1440p.mp4`.
+Duración: 48,9 s (2446 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarStorytel_1440p.mp4`.
 
 ## Título (68 caracteres)
 **Cómo Cancelar Storytel (2026): Paso a Paso, con una Cancelación Real**

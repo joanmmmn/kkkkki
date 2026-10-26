@@ -1,6 +1,6 @@
 # YouTube · Cómo cancelar Spotify Premium
 
-Duración: 0:47 (47,7 s, 2386 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarSpotify_1440p.mp4`.
+Duración: 47,7 s (2386 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarSpotify_1440p.mp4`.
 
 ## Título (75 caracteres)
 **Cómo Cancelar Spotify Premium (2026): Paso a Paso, y Ojo con Duo y Familiar**
