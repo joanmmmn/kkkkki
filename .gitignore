@@ -40,3 +40,7 @@ web/audiobooks-com-resena/preview-movil/
 web/mejores-plataformas/dist/
 web/mejores-plataformas/preview/
 web/mejores-plataformas/preview-movil/
+
+# Guías «Cómo cancelar…»: salidas de build.py (se generan con web/cancelar/build.py)
+web/cancelar/dist/
+web/cancelar/preview/

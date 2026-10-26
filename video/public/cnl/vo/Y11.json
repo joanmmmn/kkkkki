@@ -1,0 +1,179 @@
+{
+ "id": "Y11",
+ "hash": "546a3e066eee",
+ "text": "Y si contrataste Audible con Amazon, también puedes cancelar desde tu cuenta de Amazon, en Pertenencia a programas y suscripciones. Todos los pasos, en el artículo de la descripción; y para comparar plataformas, SonorBooks.",
+ "duration": 14.4,
+ "words": [
+  {
+   "w": "Y",
+   "s": 0.0,
+   "e": 0.08
+  },
+  {
+   "w": "si",
+   "s": 0.16,
+   "e": 0.24
+  },
+  {
+   "w": "contrataste",
+   "s": 0.36,
+   "e": 0.88
+  },
+  {
+   "w": "Audible",
+   "s": 0.96,
+   "e": 1.36
+  },
+  {
+   "w": "con",
+   "s": 1.44,
+   "e": 1.52
+  },
+  {
+   "w": "Amazon,",
+   "s": 1.76,
+   "e": 2.24
+  },
+  {
+   "w": "también",
+   "s": 2.32,
+   "e": 2.64
+  },
+  {
+   "w": "puedes",
+   "s": 2.68,
+   "e": 2.96
+  },
+  {
+   "w": "cancelar",
+   "s": 3.12,
+   "e": 3.44
+  },
+  {
+   "w": "desde",
+   "s": 3.52,
+   "e": 3.76
+  },
+  {
+   "w": "tu",
+   "s": 3.84,
+   "e": 3.92
+  },
+  {
+   "w": "cuenta",
+   "s": 4.027,
+   "e": 4.24
+  },
+  {
+   "w": "de",
+   "s": 4.28,
+   "e": 4.32
+  },
+  {
+   "w": "Amazon,",
+   "s": 4.4,
+   "e": 5.16
+  },
+  {
+   "w": "en",
+   "s": 5.2,
+   "e": 5.44
+  },
+  {
+   "w": "Pertenencia",
+   "s": 5.48,
+   "e": 6.08
+  },
+  {
+   "w": "a",
+   "s": 6.12,
+   "e": 6.16
+  },
+  {
+   "w": "programas",
+   "s": 6.24,
+   "e": 6.72
+  },
+  {
+   "w": "y",
+   "s": 6.8,
+   "e": 6.84
+  },
+  {
+   "w": "suscripciones.",
+   "s": 6.88,
+   "e": 8.2
+  },
+  {
+   "w": "Todos",
+   "s": 8.24,
+   "e": 8.48
+  },
+  {
+   "w": "los",
+   "s": 8.56,
+   "e": 8.72
+  },
+  {
+   "w": "pasos,",
+   "s": 8.84,
+   "e": 9.32
+  },
+  {
+   "w": "en",
+   "s": 9.36,
+   "e": 9.44
+  },
+  {
+   "w": "el",
+   "s": 9.48,
+   "e": 9.52
+  },
+  {
+   "w": "artículo",
+   "s": 9.6,
+   "e": 10.08
+  },
+  {
+   "w": "de",
+   "s": 10.12,
+   "e": 10.16
+  },
+  {
+   "w": "la",
+   "s": 10.2,
+   "e": 10.24
+  },
+  {
+   "w": "descripción;",
+   "s": 10.32,
+   "e": 11.32
+  },
+  {
+   "w": "y",
+   "s": 11.36,
+   "e": 11.44
+  },
+  {
+   "w": "para",
+   "s": 11.52,
+   "e": 11.68
+  },
+  {
+   "w": "comparar",
+   "s": 11.76,
+   "e": 12.16
+  },
+  {
+   "w": "plataformas,",
+   "s": 12.2,
+   "e": 13.2
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 13.28,
+   "e": 14.4
+  }
+ ],
+ "speechEnd": 14.037
+}

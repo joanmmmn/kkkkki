@@ -14,6 +14,7 @@ import nxrIndex from '../../../public/nxr/rec/index.json';
 import bkbIndex from '../../../public/bkb/rec/index.json';
 import abcIndex from '../../../public/abc/rec/index.json';
 import spoIndex from '../../../public/spo/rec/index.json';
+import cnlIndex from '../../../public/cnl/rec/index.json';
 import { wf } from './timeline';
 
 export { APP_H, APP_RATIO, APP_W, BigTitle, Bumper, BUMP_IN, BUMP_LEN, BUMP_LOCK, Burst, Chip, CountUp, LinkBadge, MaskTitle, PH, PHONE_W, Sheen, textWidth } from '../nxr/kit';
@@ -25,7 +26,7 @@ export type SceneProps = { lead: number; dur: number; enter?: 'rise' | 'glide'; 
 
 // ——— Las once plataformas ———
 // Colores de cada marca (los mismos que en su reseña) y la carpeta de sus grabaciones.
-export type PKey = 'audible' | 'storytel' | 'podimo' | 'nextory' | 'bookbeat' | 'spotify' | 'audiobooks' | 'elevenreader' | 'ebiblio' | 'librivox' | 'elt';
+export type PKey = 'audible' | 'storytel' | 'podimo' | 'nextory' | 'bookbeat' | 'spotify' | 'audiobooks' | 'elevenreader' | 'ebiblio' | 'librivox' | 'elt' | 'ivoox';
 export const PLAT: Record<PKey, { name: string; c: string; deep: string; soft: string; dir?: string }> = {
   audible: { name: 'Audible', c: '#F7991C', deep: '#C96A00', soft: '#FFF1DC', dir: 'aud' },
   storytel: { name: 'Storytel', c: '#FF501C', deep: '#D63E0F', soft: '#FFEDE5', dir: 'str' },
@@ -38,8 +39,10 @@ export const PLAT: Record<PKey, { name: string; c: string; deep: string; soft: s
   ebiblio: { name: 'eBiblio', c: '#E95D0E', deep: '#C85A3C', soft: '#FBEDE4' },
   librivox: { name: 'LibriVox', c: '#8D5F1E', deep: '#5E3E12', soft: '#F6EFE2' },
   elt: { name: 'El Libro Total', c: '#1A8FE3', deep: '#0E1A2B', soft: '#E3F1FC' },
+  // iVoox (de su reseña, rama resena-ivoox): el naranja de su logotipo de 2025.
+  ivoox: { name: 'iVoox', c: '#F45F31', deep: '#CF4416', soft: '#FFEFE7' },
 };
-const INDEX: Record<string, Record<string, unknown>> = { aud: audIndex, str: strIndex, pdr: pdrIndex, nxr: nxrIndex, bkb: bkbIndex, abc: abcIndex, spo: spoIndex };
+const INDEX: Record<string, Record<string, unknown>> = { aud: audIndex, str: strIndex, pdr: pdrIndex, nxr: nxrIndex, bkb: bkbIndex, abc: abcIndex, spo: spoIndex, cnl: cnlIndex };
 
 // Logotipo de cada plataforma (el de su cabecera; los mismos archivos que sus reseñas). `white` para fondos oscuros.
 export const PlatLogo: React.FC<{ k: PKey; width: number; white?: boolean; style?: React.CSSProperties }> = ({ k, width, white = false, style }) => {
@@ -58,6 +61,7 @@ export const PlatLogo: React.FC<{ k: PKey; width: number; white?: boolean; style
     case 'ebiblio': return img(white ? 'eb/img/ebiblio_logo_white.png' : 'eb/img/ebiblio_logo.png', 240 / 492);
     case 'librivox': return img('lv/img/librivox_logo.png', 162 / 562, white ? { filter: 'brightness(0) invert(1)' } : {});
     case 'elt': return img(white ? 'elt/img/elt_logo.png' : 'elt/img/elt_logo_navy.png', 156 / 324, white ? {} : { mixBlendMode: 'multiply' });
+    case 'ivoox': return img(white ? 'ivx/img/ivoox_logo_white@4x.png' : 'ivx/img/ivoox_logo@4x.png', 250 / 985);
   }
 };
 
@@ -66,7 +70,7 @@ export const PlatTile: React.FC<{ k: PKey; size: number; style?: React.CSSProper
   const p = PLAT[k];
   const light = k === 'spotify' || k === 'bookbeat' || k === 'podimo';
   const bg = k === 'elevenreader' ? '#111' : k === 'elt' ? p.deep : k === 'librivox' ? '#FFFDF7' : k === 'ebiblio' ? '#FFFFFF' : k === 'spotify' ? '#121212' : p.c;
-  const logoW = size * ({ audible: 0.8, storytel: 0.8, podimo: 0.76, nextory: 0.74, bookbeat: 0.82, spotify: 0.78, audiobooks: 0.86, elevenreader: 0.84, ebiblio: 0.8, librivox: 0.82, elt: 0.74 } as Record<PKey, number>)[k];
+  const logoW = size * ({ audible: 0.8, storytel: 0.8, podimo: 0.76, nextory: 0.74, bookbeat: 0.82, spotify: 0.78, audiobooks: 0.86, elevenreader: 0.84, ebiblio: 0.8, librivox: 0.82, elt: 0.74, ivoox: 0.84 } as Record<PKey, number>)[k];
   const white = !(k === 'librivox' || k === 'ebiblio' || (light && k !== 'spotify'));
   return (
     <div style={{ width: size, height: size, borderRadius: size * 0.23, background: bg, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden',

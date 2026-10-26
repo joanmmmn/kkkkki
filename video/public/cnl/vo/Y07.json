@@ -1,0 +1,84 @@
+{
+ "id": "Y07",
+ "hash": "4ab8aabaf030",
+ "text": "¿Quieres cancelar Audiobooks.com? Antes de hacerlo, mira qué pasa con el libro de la prueba.",
+ "duration": 5.68,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "cancelar",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "Audiobooks.com?",
+   "s": 0.8,
+   "e": 2.32
+  },
+  {
+   "w": "Antes",
+   "s": 2.44,
+   "e": 2.64
+  },
+  {
+   "w": "de",
+   "s": 2.68,
+   "e": 2.72
+  },
+  {
+   "w": "hacerlo,",
+   "s": 2.76,
+   "e": 3.44
+  },
+  {
+   "w": "mira",
+   "s": 3.52,
+   "e": 3.68
+  },
+  {
+   "w": "qué",
+   "s": 3.76,
+   "e": 3.92
+  },
+  {
+   "w": "pasa",
+   "s": 4.0,
+   "e": 4.16
+  },
+  {
+   "w": "con",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "el",
+   "s": 4.4,
+   "e": 4.48
+  },
+  {
+   "w": "libro",
+   "s": 4.6,
+   "e": 4.8
+  },
+  {
+   "w": "de",
+   "s": 4.84,
+   "e": 4.88
+  },
+  {
+   "w": "la",
+   "s": 4.92,
+   "e": 4.96
+  },
+  {
+   "w": "prueba.",
+   "s": 5.04,
+   "e": 5.68
+  }
+ ],
+ "speechEnd": 5.478
+}

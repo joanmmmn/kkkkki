@@ -1,0 +1,65 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "X01",
+   "text": "¿Quieres darte de baja de una app de audiolibros y no encuentras el botón? Hemos cancelado de verdad ocho suscripciones, una a una. Aquí tienes dónde está el botón en cada una, las ofertas que te ponen para que te quedes… y qué pierdes al cancelar."
+  },
+  {
+   "id": "X02",
+   "text": "Antes de nada: si te suscribiste desde Google Play o el App Store, se cancela en la tienda. En Android: Google Play, tu perfil, Pagos y suscripciones. En el iPhone: Ajustes, tu nombre, Suscripciones. Y ojo: borrar la app no cancela nada."
+  },
+  {
+   "id": "X03",
+   "text": "Empezamos por Audible. Desde la app no se puede: la propia app te manda a su web. En audible.es, entra en tu cuenta, Detalles de la suscripción, y pulsa Cancelar suscripción. Antes te ofrecerá una pausa o un descuento: pulsa No, gracias, prefiero cancelar, y después Finalizar cancelación. Si pagabas, sigues escuchando hasta el final del mes; y los libros que compraste son tuyos para siempre."
+  },
+  {
+   "id": "X04",
+   "text": "Storytel. En la app: Perfil, la rueda de Configuración y Suscripción. Te pide iniciar sesión en su web, y allí: Suscripción, Cancelar y Confirmar cancelación. Ojo: si estás en la prueba gratis, se acaba al momento."
+  },
+  {
+   "id": "X05",
+   "text": "Spotify se cancela en su web. En tu cuenta, Cancelar suscripción; te enseña lo que cambia, pulsa Continuar y Sí, cancelar. Si eres el titular de un Duo o un Familiar, das de baja a todos. Pasas a Free cuando acaba el mes pagado, y si tenías Audiolibros+, también se cancela."
+  },
+  {
+   "id": "X06",
+   "text": "Podimo. En la app, Configuración y Gestionar suscripción: al pulsar Cancelar te dice que no se puede desde ahí, pero te lleva a su web con la sesión iniciada. Pulsa otra vez Cancelar suscripción y prepárate: una oferta de tres meses por un euro, una encuesta y un último ¿seguro? En la prueba, pierdes el Premium al momento y pasas al plan Gratis.",
+   "say": "Podímo. En la app, Configuración y Gestionar suscripción: al pulsar Cancelar te dice que no se puede desde ahí, pero te lleva a su web con la sesión iniciada. Pulsa otra vez Cancelar suscripción y prepárate: una oferta de tres meses por un euro, una encuesta y un último ¿seguro? En la prueba, pierdes el Premium al momento y pasas al plan Gratis."
+  },
+  {
+   "id": "X07",
+   "text": "Nextory. En la app, Editar cuenta y Cambiar: solo te dice que vayas a la web. Allí, en Mis páginas, Cancela tu suscripción. Primero, lo que te perderás; luego, otra oferta: quince días gratis y cinco horas. Sigue con Continuar con la cancelación, elige un motivo, marca Lo entiendo y confirma. En la prueba, el acceso se corta al momento."
+  },
+  {
+   "id": "X08",
+   "text": "BookBeat. En la app, Profile y Account Information: se abre su web, en inglés. En el menú, Manage subscription y Cancel free trial: te avisa de que la prueba se acaba en el acto. Luego, Continue cancellation, un motivo y Confirm cancellation. Y apúntate la fecha: BookBeat no avisa antes de cobrar."
+  },
+  {
+   "id": "X09",
+   "text": "Audiobooks.com, solo en la web: My Account y, abajo, Cancel Subscription. Te avisa de que perderás el libro de la prueba. Si solo quieres que no te cobren por sorpresa, Email Me Instead te manda un recordatorio antes. Si no, Continue to Cancel, un motivo y Confirm Cancel. Es inmediato."
+  },
+  {
+   "id": "X10",
+   "text": "Y la más fácil, iVoox: en la app, la rueda de Ajustes, Cancelar servicio premium, Cancelar suscripción y Cancelar Premium. Mantienes el acceso hasta treinta días después del último cobro."
+  },
+  {
+   "id": "X11",
+   "text": "En resumen: solo iVoox se cancela sin salir de la app. Storytel, Podimo, Nextory y BookBeat te mandan a su web; Audible, Spotify y Audiobooks.com, solo se cancelan en la web. Y si estás en la prueba gratis, en la mayoría pierdes el acceso al cancelar: hazlo un par de días antes de que acabe.",
+   "say": "En resumen: solo iVoox se cancela sin salir de la app. Storytel, Podímo, Nextory y BookBeat te mandan a su web; Audible, Spotify y Audiobooks.com, solo se cancelan en la web. Y si estás en la prueba gratis, en la mayoría pierdes el acceso al cancelar: hazlo un par de días antes de que acabe."
+  },
+  {
+   "id": "X12",
+   "text": "Tienes todos los pasos, con capturas, en el artículo de la descripción, y la reseña de cada plataforma, en el canal. Y si buscas otra, en SonorBooks comparas precios y pruebas gratis de todas."
+  }
+ ]
+}

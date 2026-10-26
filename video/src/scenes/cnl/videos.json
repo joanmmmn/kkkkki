@@ -1,0 +1,13 @@
+{
+ "_": "Un tutorial por plataforma (encargo de Joan, 26/10/2026): entrada propia (Y0n), el tramo de la plataforma (X0n, del guion común; `cut`: segundo de la locución desde el que se oye), la tarjeta de las tiendas sin voz (si aplica) y un cierre propio (Y1n). tools/cnl_meta.py y tools/cnl_music.py leen este archivo.",
+ "videos": [
+  { "k": "audible", "comp": "CNLAudible", "slug": "cancelar-audible", "name": "Audible", "hook": "Y01", "seg": "X03", "cut": 1.64, "close": "Y11", "store": true, "piece": ["parts", "d1_app", 104] },
+  { "k": "storytel", "comp": "CNLStorytel", "slug": "cancelar-storytel", "name": "Storytel", "hook": "Y02", "seg": "X04", "cut": 0, "close": "Y12", "store": true, "piece": ["parts", "d2_leer", 104] },
+  { "k": "spotify", "comp": "CNLSpotify", "slug": "cancelar-spotify-premium", "name": "Spotify Premium", "hook": "Y03", "seg": "X05", "cut": 0, "close": "Y13", "store": false, "piece": ["skg_parts", "h_voces", 96] },
+  { "k": "podimo", "comp": "CNLPodimo", "slug": "cancelar-podimo", "name": "Podimo", "hook": "Y04", "seg": "X06", "cut": 0, "close": "Y14", "store": true, "piece": ["parts", "c_precios", 104] },
+  { "k": "nextory", "comp": "CNLNextory", "slug": "cancelar-nextory", "name": "Nextory", "hook": "Y05", "seg": "X07", "cut": 0, "close": "Y15", "store": true, "piece": ["parts", "e1_funciones", 104] },
+  { "k": "bookbeat", "comp": "CNLBookBeat", "slug": "cancelar-bookbeat", "name": "BookBeat", "hook": "Y06", "seg": "X08", "cut": 0, "close": "Y16", "store": false, "piece": ["parts", "e2_dispositivos", 104] },
+  { "k": "audiobooks", "comp": "CNLAudiobooks", "slug": "cancelar-audiobooks-com", "name": "Audiobooks.com", "hook": "Y07", "seg": "X09", "cut": 0, "close": "Y17", "store": true, "piece": ["skg_parts", "d_mapa", 104] },
+  { "k": "ivoox", "comp": "CNLiVoox", "slug": "cancelar-ivoox-premium", "name": "iVoox Premium", "hook": "Y08", "seg": "X10", "cut": 2.88, "close": "Y18", "store": true, "piece": ["parts", "f1_pros", 104] }
+ ]
+}

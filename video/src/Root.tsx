@@ -37,12 +37,22 @@ import { ABC_TOTAL } from './scenes/abc/timeline';
 import { MejoresPlataformas } from './scenes/mp/Main';
 import { MP_TOTAL } from './scenes/mp/timeline';
 import { MPThumbA, MPThumbB } from './scenes/mp/Thumb';
+import { CancelarSuscripcion } from './scenes/cnl/Main';
+import { CNL_TOTAL } from './scenes/cnl/timeline';
+import { CNLThumbA, CNLThumbB, CNLThumbP } from './scenes/cnl/Thumb';
+import { CancelVideo } from './scenes/cnl/Video';
+import { totalOf, VIDEOS } from './scenes/cnl/videos';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="MPThumbA" component={MPThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="MPThumbB" component={MPThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="MPGuide" component={MejoresPlataformas} durationInFrames={MP_TOTAL} fps={FPS} width={W} height={H} />
+    <Composition id="CNLThumbA" component={CNLThumbA} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="CNLThumbB" component={CNLThumbB} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    {VIDEOS.map((v) => <Composition key={`t${v.comp}`} id={`${v.comp}Thumb`} component={CNLThumbP} defaultProps={{ k: v.k, name: v.name }} durationInFrames={1} fps={FPS} width={1280} height={720} />)}
+    {VIDEOS.map((v) => <Composition key={v.comp} id={v.comp} component={CancelVideo} defaultProps={{ v }} durationInFrames={totalOf(v)} fps={FPS} width={W} height={H} />)}
+    <Composition id="CNLGuide" component={CancelarSuscripcion} durationInFrames={CNL_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STReview" component={StorytelReview} durationInFrames={STR_TOTAL} fps={FPS} width={W} height={H} />
     <Composition id="STRThumb" component={STRThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="STRShort" component={StorytelReviewShort} durationInFrames={STR_SHORT_TOTAL} fps={FPS} width={1080} height={1920} />

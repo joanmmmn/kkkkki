@@ -1,0 +1,154 @@
+{
+ "id": "Y13",
+ "hash": "ecc947840412",
+ "text": "En Spotify Free conservas tus listas y tu música guardada. Todos los pasos, con capturas, en el artículo de la descripción. ¿Buscas otra app de audiolibros? Compáralas en SonorBooks.",
+ "duration": 12.48,
+ "words": [
+  {
+   "w": "En",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "Spotify",
+   "s": 0.24,
+   "e": 0.72
+  },
+  {
+   "w": "Free",
+   "s": 0.8,
+   "e": 1.12
+  },
+  {
+   "w": "conservas",
+   "s": 1.2,
+   "e": 1.76
+  },
+  {
+   "w": "tus",
+   "s": 1.8,
+   "e": 1.92
+  },
+  {
+   "w": "listas",
+   "s": 2.0,
+   "e": 2.48
+  },
+  {
+   "w": "y",
+   "s": 2.56,
+   "e": 2.64
+  },
+  {
+   "w": "tu",
+   "s": 2.72,
+   "e": 2.8
+  },
+  {
+   "w": "música",
+   "s": 2.88,
+   "e": 3.28
+  },
+  {
+   "w": "guardada.",
+   "s": 3.4,
+   "e": 4.24
+  },
+  {
+   "w": "Todos",
+   "s": 4.36,
+   "e": 4.48
+  },
+  {
+   "w": "los",
+   "s": 4.56,
+   "e": 4.64
+  },
+  {
+   "w": "pasos,",
+   "s": 4.72,
+   "e": 5.28
+  },
+  {
+   "w": "con",
+   "s": 5.36,
+   "e": 5.44
+  },
+  {
+   "w": "capturas,",
+   "s": 5.52,
+   "e": 6.32
+  },
+  {
+   "w": "en",
+   "s": 6.36,
+   "e": 6.4
+  },
+  {
+   "w": "el",
+   "s": 6.48,
+   "e": 6.56
+  },
+  {
+   "w": "artículo",
+   "s": 6.68,
+   "e": 7.04
+  },
+  {
+   "w": "de",
+   "s": 7.12,
+   "e": 7.16
+  },
+  {
+   "w": "la",
+   "s": 7.2,
+   "e": 7.24
+  },
+  {
+   "w": "descripción.",
+   "s": 7.28,
+   "e": 8.4
+  },
+  {
+   "w": "¿Buscas",
+   "s": 8.48,
+   "e": 8.88
+  },
+  {
+   "w": "otra",
+   "s": 8.96,
+   "e": 9.12
+  },
+  {
+   "w": "app",
+   "s": 9.2,
+   "e": 9.28
+  },
+  {
+   "w": "de",
+   "s": 9.36,
+   "e": 9.44
+  },
+  {
+   "w": "audiolibros?",
+   "s": 9.56,
+   "e": 10.4
+  },
+  {
+   "w": "Compáralas",
+   "s": 10.48,
+   "e": 11.12
+  },
+  {
+   "w": "en",
+   "s": 11.2,
+   "e": 11.36
+  },
+  {
+   "w": "SonorBooks.",
+   "s": 11.44,
+   "e": 12.48
+  }
+ ],
+ "speechEnd": 12.193
+}

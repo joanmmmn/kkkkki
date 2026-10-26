@@ -1,0 +1,80 @@
+{
+ "voice_id": "D7dkYvH17OKLgp4SLulf",
+ "model_id": "eleven_v4",
+ "language_code": "es",
+ "output_format": "mp3_44100_128",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.13
+ },
+ "scenes": [
+  {
+   "id": "Y01",
+   "text": "¿Quieres cancelar Audible? Te enseñamos, paso a paso, dónde está el botón… y qué pasa con tus libros."
+  },
+  {
+   "id": "Y02",
+   "text": "Cancelar Storytel lleva un minuto, si sabes dónde mirar. Lo hemos hecho de verdad, y así se hace."
+  },
+  {
+   "id": "Y03",
+   "text": "¿Quieres cancelar Spotify Premium? Ojo si compartes un plan Duo o Familiar. Así se hace, paso a paso."
+  },
+  {
+   "id": "Y04",
+   "text": "¿Te vas de Podimo? Antes de pulsar, mira cuándo pierdes el acceso: te lo enseñamos con una cancelación real.",
+   "say": "¿Te vas de Podímo? Antes de pulsar, mira cuándo pierdes el acceso: te lo enseñamos con una cancelación real."
+  },
+  {
+   "id": "Y05",
+   "text": "¿Quieres cancelar Nextory? Lo hemos hecho de verdad, de principio a fin, para que no te pierdas."
+  },
+  {
+   "id": "Y06",
+   "text": "Cancelar BookBeat es fácil, aunque todo está en inglés. Lo hemos hecho de verdad, pantalla a pantalla."
+  },
+  {
+   "id": "Y07",
+   "text": "¿Quieres cancelar Audiobooks.com? Antes de hacerlo, mira qué pasa con el libro de la prueba."
+  },
+  {
+   "id": "Y08",
+   "text": "Cancelar iVoox Premium es de lo más fácil: cuatro toques, sin salir de la app."
+  },
+  {
+   "id": "Y11",
+   "text": "Y si contrataste Audible con Amazon, también puedes cancelar desde tu cuenta de Amazon, en Pertenencia a programas y suscripciones. Todos los pasos, en el artículo de la descripción; y para comparar plataformas, SonorBooks."
+  },
+  {
+   "id": "Y12",
+   "text": "Si algún día vuelves, tu biblioteca y tu historial te estarán esperando. Cada paso, con capturas, está en el artículo de la descripción; y para comparar plataformas, SonorBooks."
+  },
+  {
+   "id": "Y13",
+   "text": "En Spotify Free conservas tus listas y tu música guardada. Todos los pasos, con capturas, en el artículo de la descripción. ¿Buscas otra app de audiolibros? Compáralas en SonorBooks."
+  },
+  {
+   "id": "Y14",
+   "text": "Con el plan Gratis puedes seguir escuchando sus pódcasts abiertos. Tienes cada pantalla en el artículo de la descripción, y todas las plataformas comparadas en SonorBooks."
+  },
+  {
+   "id": "Y15",
+   "text": "Tu biblioteca se queda guardada, por si vuelves. Las capturas de cada paso están en el artículo de la descripción; y si buscas otra plataforma, en SonorBooks las comparas."
+  },
+  {
+   "id": "Y16",
+   "text": "Tus libros y marcadores se guardan, por si vuelves. Tienes todas las pantallas en el artículo de la descripción, y otras plataformas comparadas en SonorBooks."
+  },
+  {
+   "id": "Y17",
+   "text": "Si reactivas la cuenta, te devuelven los libros que te quitaron. Todos los pasos, en el artículo de la descripción; y para comparar alternativas, SonorBooks."
+  },
+  {
+   "id": "Y18",
+   "text": "Si solo quieres dejar de apoyar un pódcast, eso va aparte, en Mis apoyos. Los pasos, con capturas, en el artículo de la descripción; y las alternativas, en SonorBooks."
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "pod_menu": {
+  "duration": 19.8,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 0.0,
+  "to": 19.8,
+  "covers": 1
+ },
+ "pod_config": {
+  "duration": 9.76,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 29.2,
+  "to": 38.95,
+  "covers": 1
+ },
+ "pod_memb": {
+  "duration": 45.0,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 39.0,
+  "to": 84.0,
+  "covers": 0
+ },
+ "pod_web": {
+  "duration": 140.0,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 84.0,
+  "to": 224.0,
+  "covers": 0
+ },
+ "ivx_home": {
+  "duration": 7.6,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 244.0,
+  "to": 251.6,
+  "covers": 0
+ },
+ "ivx_ajustes": {
+  "duration": 14.9,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 252.0,
+  "to": 266.9,
+  "covers": 2
+ },
+ "ivx_cancel": {
+  "duration": 49.0,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 267.0,
+  "to": 316.0,
+  "covers": 0
+ },
+ "bkb_profile": {
+  "duration": 8.4,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 346.0,
+  "to": 354.4,
+  "covers": 1
+ },
+ "bkb_load": {
+  "duration": 1.96,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 362.0,
+  "to": 363.95,
+  "covers": 0
+ },
+ "bkb_account": {
+  "duration": 9.0,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 366.0,
+  "to": 375.0,
+  "covers": 1
+ },
+ "bkb_menu": {
+  "duration": 9.8,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 416.0,
+  "to": 425.8,
+  "covers": 0
+ },
+ "bkb_manage": {
+  "duration": 26.2,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 425.8,
+  "to": 452.0,
+  "covers": 0
+ },
+ "bkb_cancel": {
+  "duration": 103.0,
+  "src": "2026-10-26 08-54-14.mp4",
+  "from": 452.0,
+  "to": 555.0,
+  "covers": 0
+ },
+ "str_app": {
+  "duration": 46.0,
+  "src": "2026-10-26 09-41-55.mp4",
+  "from": 0.0,
+  "to": 46.0,
+  "covers": 0
+ },
+ "str_web1": {
+  "duration": 6.5,
+  "src": "2026-10-26 09-41-55.mp4",
+  "from": 55.0,
+  "to": 61.5,
+  "covers": 1
+ },
+ "str_web2": {
+  "duration": 43.5,
+  "src": "2026-10-26 09-41-55.mp4",
+  "from": 63.0,
+  "to": 106.5,
+  "covers": 0
+ },
+ "nx_app": {
+  "duration": 33.4,
+  "src": "2026-10-26 10-11-25.mp4",
+  "from": 0.0,
+  "to": 33.4,
+  "covers": 0
+ },
+ "nx_sub": {
+  "duration": 13.2,
+  "src": "2026-10-26 10-11-25.mp4",
+  "from": 33.6,
+  "to": 46.8,
+  "covers": 1
+ },
+ "nx_sheet": {
+  "duration": 18.5,
+  "src": "2026-10-26 10-11-25.mp4",
+  "from": 48.0,
+  "to": 66.5,
+  "covers": 0
+ },
+ "nx_web": {
+  "duration": 96.0,
+  "src": "2026-10-26 10-11-25.mp4",
+  "from": 126.0,
+  "to": 222.0,
+  "covers": 0
+ },
+ "nx_end": {
+  "duration": 8.6,
+  "src": "2026-10-26 10-11-25.mp4",
+  "from": 782.5,
+  "to": 791.1,
+  "covers": 0
+ }
+}
