@@ -48,7 +48,7 @@ Reseña completa, con capturas y fuentes: https://sonorbooks.com/blog/everand
 Dónde te sale más barato cada audiolibro: https://sonorbooks.com
 
 Capítulos
-0:00 Del «Netflix de los libros» a un libro al mes
+0:00 Del "Netflix de los libros" a un libro al mes
 0:20 Qué es Everand y por qué se separó de Scribd
 0:35 Everand desbloqueos: se acabó el ilimitado
 1:04 Everand precio en España, México y EE. UU.
@@ -84,9 +84,9 @@ Everand prueba gratis: la letra pequeña
 - Pide tarjeta y se renueva sola.
 
 Everand cancelar suscripción: cómo darse de baja
-- Web: tu cuenta > Suscripción > Cancelar suscripción.
-- iPhone: Ajustes > tu nombre > Suscripciones > Everand (o Scribd).
-- Android: Google Play > Pagos y suscripciones > Suscripciones > Everand (o Scribd).
+- Web: tu cuenta → Suscripción → Cancelar suscripción.
+- iPhone: Ajustes → tu nombre → Suscripciones → Everand (o Scribd).
+- Android: Google Play → Pagos y suscripciones → Suscripciones → Everand (o Scribd).
 Ojo: si quieres cancelar Everand durante la prueba, pierdes el acceso al momento.
 
 Preguntas frecuentes
