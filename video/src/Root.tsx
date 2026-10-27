@@ -21,6 +21,8 @@ export const Root: React.FC = () => (
     <Composition id="EVDCover" component={EvdCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="EVDCover1080" component={EvdCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="EVDCoverOG" component={EvdCover} durationInFrames={1} fps={FPS} width={1200} height={630} />
+    <Composition id="EVDCoverB1080" component={EvdCover} defaultProps={{ design: 'estafa' as const }} durationInFrames={1} fps={FPS} width={1920} height={1080} />
+    <Composition id="EVDCoverC1080" component={EvdCover} defaultProps={{ design: 'precio' as const }} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="ELTShort2" component={ELTShort2} durationInFrames={Math.round(SHORT2_DUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Composition id="ELTReview2" component={ELTReview2} durationInFrames={TOTAL2} fps={FPS} width={W} height={H} />
     <Composition id="ELTReview" component={ELTReview} durationInFrames={TOTAL} fps={FPS} width={W} height={H} />

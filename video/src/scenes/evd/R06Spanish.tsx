@@ -5,8 +5,6 @@ import { Stage } from '../../components/Stage';
 import { Phase } from '../../components/Phase';
 import { Words } from '../../components/Kinetic';
 import { Grow } from '../../components/Grow';
-import { Highlight } from '../../components/Highlight';
-import { MicIcon } from '../../components/Icons';
 import { Sfx } from '../../components/Sfx';
 import { wordFrame } from '../../lib/vo';
 import { clamp, easeOut } from '../../lib/anim';
@@ -61,7 +59,6 @@ export const R06Spanish: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
   const head = spring({ frame: frame - fCuarenta + 6, fps, config: { damping: 18, stiffness: 140 } });
   const barFull = interpolate(frame, [pB + 8, pB + 30], [0, 1], { ...clamp, easing: easeOut });
   const barTiny = interpolate(frame, [fSeis, fSeis + 18], [0, 1], { ...clamp, easing: easeOut });
-  const lens = spring({ frame: frame - fSint + 4, fps, config: { damping: 16, stiffness: 140 } });
   return (
     <Stage tone="warm">
       {/* A · 41.000 audiolibros en español, grandes autores… todos con desbloqueo */}
@@ -137,26 +134,18 @@ export const R06Spanish: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
         </AbsoluteFill>
       </Phase>
 
-      {/* D · Voz sintética: mira el narrador antes de desbloquear */}
+      {/* D · Voz sintética: crédito real de una ficha de Everand → mira el narrador antes de desbloquear */}
       <Phase from={pD} to={dur}>
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 60, fontFamily: font.sans }}>
-          <Pop at={4}>
-            <div style={{ position: 'relative', width: 1300, boxSizing: 'border-box', background: '#fff', borderRadius: 36, boxShadow: shadow.card, border: `1px solid ${color.line}`, padding: '46px 60px', display: 'flex', gap: 50, alignItems: 'center' }}>
-              <div style={{ width: 200, height: 200, borderRadius: 24, background: 'linear-gradient(160deg, #3b2f2a, #12100f)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#e8dcc6', fontFamily: font.serif, fontSize: 34, textAlign: 'center', lineHeight: 1.1, flexShrink: 0 }}>El<br />Príncipe</div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-                <div style={{ fontSize: 26, color: color.muted, letterSpacing: 2 }}>AUDIOLIBRO · ESPAÑOL</div>
-                <div style={{ fontFamily: font.serif, fontSize: 64 }}>El Príncipe</div>
-                <div style={{ fontSize: 34, color: color.ink2 }}>Escrito por Nicolás Maquiavelo</div>
-                <div style={{ fontSize: 38, display: 'flex', alignItems: 'center', gap: 12, whiteSpace: 'nowrap' }}>
-                  <MicIcon size={40} /> Narrado por Martín Quirós <Highlight start={fSint - pD + 8} dur={12}><b>(voz sintética)</b></Highlight>
-                </div>
-              </div>
-            </div>
-          </Pop>
-          <div style={{ height: 80, opacity: lens, transform: `translateY(${(1 - lens) * 30}px)` }}>
-            <div style={{ fontSize: 56, fontWeight: 700 }}>Mira el <Highlight start={fNarr - pD + 4} dur={12}>narrador</Highlight> antes de desbloquear</div>
-          </div>
-          <div style={{ position: 'absolute', bottom: 46, fontSize: 24, color: color.muted, opacity: lens }}>Crédito tal como aparece en la ficha de Everand</div>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+          <ShotWindow src="evd/shots/synth.jpg" width={1560} url="es.everand.com"
+            camera={[
+              { f: 0, zoom: 2.4, x: 690, y: 640 },
+              { f: dur - pD, zoom: 2.7, x: 650, y: 640 },
+            ]}
+            marks={[
+              { from: fSint - pD - 6, to: fNarr - pD - 4, x: 652, y: 608, w: 100, h: 28, r: 8, label: 'Voz sintética' },
+              { from: fNarr - pD - 2, to: dur - pD, x: 456, y: 608, w: 298, h: 28, r: 8, label: 'Mira el narrador antes de desbloquear', labelBelow: true },
+            ]} />
         </AbsoluteFill>
       </Phase>
 
@@ -174,9 +163,9 @@ export const R06Spanish: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       <Sfx name="focus" at={fAbrev - 4} />
       <Sfx name="focus" at={fDos} volume={0.9} />
       <Sfx name="swipe" at={pD} />
-      <Sfx name="marker" at={fSint + 8} />
+      <Sfx name="focus" at={fSint - 6} />
       <Sfx name="ui_pop" at={fMira} />
-      <Sfx name="marker" at={fNarr + 4} volume={0.8} />
+      <Sfx name="tick_soft" at={fNarr - 2} />
     </Stage>
   );
 };
