@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Review",
+      "name": "Everand (antes Scribd): reseña completa",
+      "author": {"@type": "Organization", "name": "SonorBooks", "url": "https://sonorbooks.com"},
+      "datePublished": "2026-10-27",
+      "reviewRating": {"@type": "Rating", "ratingValue": "6.2", "bestRating": "10", "worstRating": "0"},
+      "itemReviewed": {"@type": "SoftwareApplication", "name": "Everand", "applicationCategory": "BookApplication", "operatingSystem": "Web, Android, iOS", "offers": {"@type": "Offer", "price": "14.99", "priceCurrency": "EUR", "description": "Plan Plus en España: 3 libros al mes"}}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "¿Everand es lo mismo que Scribd?", "acceptedAnswer": {"@type": "Answer", "text": "Es la misma empresa (Scribd Inc.), pero desde noviembre de 2023 son servicios distintos: Scribd para documentos y Everand para ebooks, audiolibros y podcasts. Desde noviembre de 2025, las altas nuevas pagan cada uno por separado."}},
+        {"@type": "Question", "name": "¿Everand es ilimitado?", "acceptedAnswer": {"@type": "Answer", "text": "No. Desde el 30 de octubre de 2024 funciona con desbloqueos: 1 libro al mes con Standard, 3 con Plus y 5 con Deluxe (solo EE. UU.). Sin desbloquear hay unos 20.000 títulos que van rotando."}},
+        {"@type": "Question", "name": "¿Cuánto cuesta Everand en España?", "acceptedAnswer": {"@type": "Answer", "text": "El plan Plus cuesta 14,99 € al mes (3 libros), según el App Store español. Everand no publica en su web el precio en euros del plan Standard."}},
+        {"@type": "Question", "name": "¿Everand es gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Tiene una prueba gratis: 30 días si te das de alta en la web y 7 si lo haces desde la app, con un solo libro. Pide tarjeta y se renueva sola."}},
+        {"@type": "Question", "name": "¿Cómo cancelo Everand?", "acceptedAnswer": {"@type": "Answer", "text": "Si te diste de alta en la web: Tu cuenta, Suscripción, Cancelar suscripción. Si fue desde el móvil, cancélalo en Apple o Google, donde puede aparecer como Scribd."}},
+        {"@type": "Question", "name": "¿Everand es seguro?", "acceptedAnswer": {"@type": "Answer", "text": "Es una empresa conocida, con más de 10 millones de descargas en Google Play. El 21 de septiembre de 2026 comunicó un incidente de seguridad: si tienes cuenta, cambia la contraseña."}},
+        {"@type": "Question", "name": "¿Everand tiene plan familiar?", "acceptedAnswer": {"@type": "Answer", "text": "No. No hay perfiles ni plan familiar, y sus condiciones prohíben compartir cuenta."}},
+        {"@type": "Question", "name": "¿Everand o Audible?", "acceptedAnswer": {"@type": "Answer", "text": "Si escuchas uno o dos libros al mes y quieres novedades, el Plus de Everand puede compensar. Si escuchas más, Audible ofrece escucha ilimitada de su catálogo por 9,99 € al mes y Storytel, por 8,99 €."}}
+      ]
+    }
+  ]
+}

@@ -14,10 +14,12 @@ import { CoverTest } from './scenes/elt2/CoverTest';
 import { EVDReview } from './scenes/evd/Main';
 import { TOTAL_EVD } from './scenes/evd/timeline';
 import { EvdCover } from './scenes/evd/Cover';
+import { EVDShort, EVD_SHORT_DUR } from './scenes/evd/ShortEvd';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="EVDReview" component={EVDReview} durationInFrames={TOTAL_EVD} fps={FPS} width={W} height={H} />
+    <Composition id="EVDShort" component={EVDShort} durationInFrames={Math.round(EVD_SHORT_DUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Composition id="EVDCover" component={EvdCover} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="EVDCover1080" component={EvdCover} durationInFrames={1} fps={FPS} width={1920} height={1080} />
     <Composition id="EVDCoverOG" component={EvdCover} durationInFrames={1} fps={FPS} width={1200} height={630} />

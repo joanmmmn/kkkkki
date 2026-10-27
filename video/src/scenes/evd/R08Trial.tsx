@@ -67,8 +67,8 @@ export const R08Trial: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
               { f: pC - pB + 10, zoom: 1.52, x: 960, y: 440 },
             ]}
             marks={[
-              { from: fUnico - pB - 4, to: fElijas - pB - 4, x: 498, y: 358, w: 241, h: 57, label: '1 libro en la prueba' },
-              { from: fElijas - pB - 2, to: fElijas2 - pB - 4, x: 840, y: 358, w: 240, h: 57, label: '1 libro en la prueba' },
+              { from: fUnico - pB - 4, to: fElijas - pB - 2, x: 498, y: 358, w: 241, h: 57, label: '1 libro en la prueba' },
+              { from: fElijas - pB - 2, to: fElijas2 - pB - 2, x: 840, y: 358, w: 240, h: 57, label: '1 libro en la prueba' },
               { from: fElijas2 - pB - 2, to: pC - pB + 6, x: 1181, y: 358, w: 241, h: 57, label: '1 libro en la prueba' },
             ]} />
         </AbsoluteFill>
@@ -102,9 +102,9 @@ export const R08Trial: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
               { f: dur - pD, zoom: 2.0, x: 1080, y: 805 },
             ]}
             marks={[
-              { from: 10, to: fApple - pD - 12, x: 790, y: 650, w: 712, h: 50, label: 'Alta en la web' },
-              { from: fApple - pD - 6, to: fGoogle - pD - 4, x: 790, y: 712, w: 712, h: 52, label: 'App Store' },
-              { from: fGoogle - pD - 2, to: fDonde - pD - 2, x: 790, y: 776, w: 650, h: 52, label: 'Google Play' },
+              { from: 10, to: fApple - pD - 6, x: 790, y: 650, w: 712, h: 50, label: 'Alta en la web' },
+              { from: fApple - pD - 6, to: fGoogle - pD - 2, x: 790, y: 712, w: 712, h: 52, label: 'App Store' },
+              { from: fGoogle - pD - 2, to: fDonde - pD + 2, x: 790, y: 776, w: 650, h: 52, label: 'Google Play' },
               { from: fDonde - pD + 2, to: dur - pD, x: 1003, y: 800, w: 134, h: 28, r: 8, label: 'Puede aparecer como «Scribd»' },
             ]} />
         </AbsoluteFill>

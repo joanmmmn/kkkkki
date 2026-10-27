@@ -140,8 +140,8 @@ export const R04Twist: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
               { f: pD - pC + 10, zoom: 1.42, x: 1270, y: 470 },
             ]}
             marks={[
-              { from: fStd - pC - 2, to: fPlus - pC - 4, x: 494, y: 418, w: 200, h: 46, label: '1 libro al mes' },
-              { from: fPlus - pC - 2, to: fDeluxe - pC - 4, x: 836, y: 418, w: 216, h: 46, label: '3 libros al mes' },
+              { from: fStd - pC - 2, to: fPlus - pC - 2, x: 494, y: 418, w: 200, h: 46, label: '1 libro al mes' },
+              { from: fPlus - pC - 2, to: fDeluxe - pC - 2, x: 836, y: 418, w: 216, h: 46, label: '3 libros al mes' },
               { from: fDeluxe - pC - 2, to: pD - pC + 6, x: 1178, y: 418, w: 216, h: 46, label: '5 libros al mes' },
             ]} />
         </AbsoluteFill>
@@ -158,7 +158,7 @@ export const R04Twist: React.FC<{ lead: number; dur: number }> = ({ lead, dur })
               { f: pE - pD + 10, zoom: 2.06, x: 1000, y: 332 },
             ]}
             marks={[
-              { from: 6, to: fMayoria - pD - 10, x: 788, y: 184, w: 612, h: 56, label: 'La pregunta' },
+              { from: 6, to: fMayoria - pD - 6, x: 788, y: 184, w: 612, h: 56, label: 'La pregunta' },
               { from: fMayoria - pD - 6, to: pE - pD + 6, x: 790, y: 334, w: 89, h: 34, r: 8, label: 'Respuesta oficial' },
             ]} />
         </AbsoluteFill>

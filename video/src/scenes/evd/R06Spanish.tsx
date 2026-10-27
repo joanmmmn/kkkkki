@@ -143,7 +143,7 @@ export const R06Spanish: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
               { f: dur - pD, zoom: 2.7, x: 650, y: 640 },
             ]}
             marks={[
-              { from: fSint - pD - 6, to: fNarr - pD - 4, x: 652, y: 608, w: 100, h: 28, r: 8, label: 'Voz sintética' },
+              { from: fSint - pD - 6, to: fNarr - pD - 2, x: 652, y: 608, w: 100, h: 28, r: 8, label: 'Voz sintética' },
               { from: fNarr - pD - 2, to: dur - pD, x: 456, y: 608, w: 298, h: 28, r: 8, label: 'Mira el narrador antes de desbloquear', labelBelow: true },
             ]} />
         </AbsoluteFill>
@@ -157,7 +157,7 @@ export const R06Spanish: React.FC<{ lead: number; dur: number }> = ({ lead, dur 
       {AUTHORS.map(([n], i) => <Sfx key={`l${n}`} name="tick" at={fTodos + i * 4} volume={0.9} />)}
       <Sfx name="hit_soft" at={fTodos + 4} volume={0.8} />
       <Sfx name="swipe" at={pB} />
-      <Sfx name="draw" at={pB + 8} />
+      <Sfx name="draw" at={pB + 8} volume={0.45} />
       <Sfx name="pop" at={fSeis} />
       <Sfx name="swipe" at={pC} />
       <Sfx name="focus" at={fAbrev - 4} />
