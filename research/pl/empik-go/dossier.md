@@ -182,4 +182,4 @@ Motivo: el reglamento de **Go Flex** del 21.10.2026 (https://media.empik.com/con
 - **A07**: el límite se explica para Go Flex (lo no usado pasa a los 6 periodos siguientes); toma `faq_limit` regrabada con la FAQ nueva.
 - **A12**: «wystarczy Go Standard» → «wystarczy Go Flex» (3 títulos = 24,99 zł).
 - **B03**: «w Go Standard – z jednym tytułem» → «W Go Flex sprawdź przed zakupem, ile tytułów obejmuje okres próbny»; toma `faq_tabela` regrabada (tabla con la columna Go Flex). A08 y B05 usan también estas tomas.
-- Sin regrabar (fuera del encargo): `plany` (A01) y `mobile` (B02) aún enseñan la tarjeta Go Standard de 30 días tal como estaba el 19.10; la voz de esas escenas no la nombra.
+- `plany` (A01) y `mobile` (B02) regrabadas también el 27.10 con la misma configuración: ya enseñan Go Max, Go Smart y Go Flex (la composición no cambió: marcas de B02 y `holdAt` de A01 sin tocar). La etiqueta «PROMOCJA» de la pestaña «Płatność jednorazowa» queda tapada por la cabecera en escritorio y, en móvil, solo asoma en los primeros 2,5 s de la toma, que B02 no usa (empieza en 4,7 s).

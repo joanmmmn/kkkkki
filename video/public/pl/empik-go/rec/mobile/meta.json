@@ -4,15 +4,15 @@
   932
  ],
  "dpr": 2,
- "frames": 520,
- "duration": 11.545,
- "offset": 0.043,
+ "frames": 422,
+ "duration": 11.584,
+ "offset": 0.028,
  "marks": {
-  "top": 0.424,
-  "scroll": 2.425,
-  "smart": 4.855,
-  "btn": 7.458,
-  "end": 11.544
+  "top": 0.401,
+  "scroll": 2.402,
+  "smart": 4.924,
+  "btn": 7.525,
+  "end": 11.583
  },
  "events": []
 }
