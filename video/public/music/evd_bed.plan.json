@@ -1,0 +1,191 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "instrumental background score for a premium tech and books review video",
+   "steady 100 BPM tempo throughout",
+   "warm felt piano, analog synth pads, plucked synths, muted electric guitar, tight modern percussion, round sub bass",
+   "polished, modern, confident, cinematic but minimal",
+   "mix leaves space for a spoken voice-over in the mid range"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "choir",
+   "spoken word",
+   "heavy EDM drop",
+   "distortion",
+   "lo-fi crackle",
+   "dubstep",
+   "trap hi-hat rolls"
+  ],
+  "sections": [
+   {
+    "section_name": "Hook",
+    "positive_local_styles": [
+     "intriguing opening with a soft pulse",
+     "punchy drums enter after four seconds",
+     "building curiosity",
+     "ends on a short stop"
+    ],
+    "negative_local_styles": [
+     "calm fade"
+    ],
+    "duration_ms": 13780,
+    "lines": []
+   },
+   {
+    "section_name": "Promise",
+    "positive_local_styles": [
+     "bright confident restart",
+     "clean plucked motif",
+     "light drums"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 6420,
+    "lines": []
+   },
+   {
+    "section_name": "What it is",
+    "positive_local_styles": [
+     "curious and informative",
+     "soft felt piano motif",
+     "light kick and shaker",
+     "gentle bass"
+    ],
+    "negative_local_styles": [
+     "aggressive"
+    ],
+    "duration_ms": 14960,
+    "lines": []
+   },
+   {
+    "section_name": "The twist",
+    "positive_local_styles": [
+     "suspenseful turn",
+     "minor key",
+     "tense pulsing synth bass",
+     "sparse ticking percussion",
+     "slowly building tension"
+    ],
+    "negative_local_styles": [
+     "happy",
+     "bright major"
+    ],
+    "duration_ms": 29500,
+    "lines": []
+   },
+   {
+    "section_name": "Price",
+    "positive_local_styles": [
+     "rhythmic and precise",
+     "plucky synth arpeggios",
+     "crisp hi-hats",
+     "data infographic feel"
+    ],
+    "negative_local_styles": [
+     "dramatic"
+    ],
+    "duration_ms": 17860,
+    "lines": []
+   },
+   {
+    "section_name": "Spanish catalog",
+    "positive_local_styles": [
+     "warm and rich",
+     "piano and pads",
+     "steady groove",
+     "a touch of Latin guitar color"
+    ],
+    "negative_local_styles": [
+     "tense"
+    ],
+    "duration_ms": 25020,
+    "lines": []
+   },
+   {
+    "section_name": "The app",
+    "positive_local_styles": [
+     "light, positive, modern",
+     "airy pads",
+     "soft claps"
+    ],
+    "negative_local_styles": [
+     "busy"
+    ],
+    "duration_ms": 13120,
+    "lines": []
+   },
+   {
+    "section_name": "Fine print",
+    "positive_local_styles": [
+     "cautious and serious",
+     "muted plucks",
+     "low drone",
+     "restrained drums"
+    ],
+    "negative_local_styles": [
+     "cheerful"
+    ],
+    "duration_ms": 17960,
+    "lines": []
+   },
+   {
+    "section_name": "Reviews",
+    "positive_local_styles": [
+     "neutral and reflective",
+     "sparse piano",
+     "subtle pulse"
+    ],
+    "negative_local_styles": [
+     "epic"
+    ],
+    "duration_ms": 18040,
+    "lines": []
+   },
+   {
+    "section_name": "Pros and cons",
+    "positive_local_styles": [
+     "balanced and clear",
+     "steady groove returns",
+     "light percussion"
+    ],
+    "negative_local_styles": [
+     "dark"
+    ],
+    "duration_ms": 13640,
+    "lines": []
+   },
+   {
+    "section_name": "Who it is for",
+    "positive_local_styles": [
+     "upbeat and helpful",
+     "bright plucked motif",
+     "fuller drums",
+     "momentum"
+    ],
+    "negative_local_styles": [
+     "sad"
+    ],
+    "duration_ms": 20880,
+    "lines": []
+   },
+   {
+    "section_name": "Verdict and outro",
+    "positive_local_styles": [
+     "confident resolution",
+     "warm full chords",
+     "final hit then gentle tail",
+     "ends cleanly"
+    ],
+    "negative_local_styles": [
+     "abrupt cut"
+    ],
+    "duration_ms": 19040,
+    "lines": []
+   }
+  ]
+ },
+ "model_id": "music_v1",
+ "respect_sections_durations": true
+}
