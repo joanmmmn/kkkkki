@@ -58,7 +58,7 @@ Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 • Rejestracja (Google, Apple albo e-mail): https://elevenreader.io/reader/sign-up
 • Audioteka Klub: https://klub.audioteka.com/
 
-Ceny i warunki: stan na październik 2026 (oceny w sklepach: 19.10.2026). Ceny ze strony elevenreader.io podajemy w dolarach, tak jak pokazuje je strona (ceny w USD; kwota przy płatności może się różnić); ceny w aplikacji – według polskiego App Store'a. Mogą się zmienić.
+Ceny i warunki: stan na październik 2026 (oceny w sklepach: 19.10.2026). Pod koniec października elevenreader.io pokazuje też promocję: pierwszy miesiąc Ultra za 1 USD (kod BOOKLOVER) – sprawdź, czy nadal obowiązuje. Ceny ze strony elevenreader.io podajemy w dolarach, tak jak pokazuje je strona (ceny w USD; kwota przy płatności może się różnić); ceny w aplikacji – według polskiego App Store'a. Mogą się zmienić.
 Film nie jest sponsorowany i nie zawiera linków afiliacyjnych. Głos Piotra Fronczewskiego w ElevenReader to licencjonowany głos AI z serii Iconic Voices. Opinie użytkowników to ich zdanie, nie nasze testy. Znaki towarowe należą do ich właścicieli. Muzyka skomponowana dla SonorBooks.
 
 #ElevenReader #audiobooki #AI
@@ -78,6 +78,7 @@ Porównanie platform z audiobookami po polsku: https://sonorbooks.com/pl/
 ---
 
 ## Para Joan (español)
+- **27/10:** elevenreader.io anuncia ahora «Your first month. Just $1.» (Ultra mensual, código BOOKLOVER, sin fecha de fin): solo se menciona en la descripción, con fecha; el vídeo no la nombra. El resto de condiciones sigue igual (11 USD/mes, 99 USD/año, 3 días gratis, App Store PL 39 zł / 349 zł).
 
 - **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - **Idioma:** polaco (título, descripción y subtítulos en polaco).
