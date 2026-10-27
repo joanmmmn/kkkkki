@@ -10,11 +10,14 @@ const req = require as unknown as { context: (p: string, deep: boolean, re: RegE
 // v1 (voz Mature, ids E..) y v2 (voz Energetic, ids V..).
 const ctx1 = req.context('../../public/elt/vo', false, /(E\d+[A-Z]?|S\d+)\.json$/);
 const ctx2 = req.context('../../public/elt/vo2', false, /V\d+\.json$/);
+// Everand (ids R..).
+const ctx3 = req.context('../../public/evd/vo', false, /R\d+\.json$/);
 export const VOS: Record<string, VO & { speechEnd?: number }> = {};
 for (const k of ctx1.keys()) { const v = ctx1(k); VOS[v.id] = v; }
 for (const k of ctx2.keys()) { const v = ctx2(k); VOS[v.id] = v; }
+for (const k of ctx3.keys()) { const v = ctx3(k); VOS[v.id] = v; }
 
-const dirOf = (id: string) => (id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
+const dirOf = (id: string) => (id.startsWith('R') ? 'evd/vo' : id.startsWith('V') ? 'elt/vo2' : 'elt/vo');
 export const voSrc = (id: string) => staticFile(`${dirOf(id)}/${id}.mp3`);
 export const voFrames = (id: string) => Math.ceil((VOS[id]?.duration ?? 3) * FPS);
 // Duración hasta el final real de la voz (sin el silencio final del archivo).
