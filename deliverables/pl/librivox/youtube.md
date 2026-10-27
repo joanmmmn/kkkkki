@@ -14,7 +14,7 @@ Alternatywy:
 Ponad 21 000 darmowych audiobooków z domeny publicznej, bez rejestracji i czytanych przez ludzi – także po polsku, jak „Lalka” Prusa.
 Gdzie jest haczyk? Sprawdziliśmy, ile jest polskich nagrań, jak ich słuchać i na co uważać przy prawach autorskich.
 
-🔎 Wolisz zawodowych lektorów? Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Wolisz zawodowych lektorów? Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Darmowe audiobooki: gdzie jest haczyk?
@@ -72,13 +72,14 @@ librivox, librivox po polsku, darmowe audiobooki, audiobooki za darmo, darmowe a
 ## Przypięty komentarz
 ```
 Słuchasz klasyki z LibriVox? Którą polską książkę chcesz usłyszeć jako następną? 👇
-Wolisz zawodowych lektorów? Audiotekę, Empik Go, Legimi i darmowe Wolne Lektury porównasz na https://sonorbooks.pl/platformy/
+Wolisz zawodowych lektorów? Audiotekę, Empik Go, Legimi i darmowe Wolne Lektury porównasz na https://sonorbooks.com/pl/platformy/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; LibriVox no tiene afiliado). «No, no es contenido creado para niños». Subtítulos: `librivox.pl.srt` (polaco; el responsable los rehace con la versión nueva de `pl_meta.py`).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
-- LibriVox **no está** en sonorbooks.pl/platformy: el cierre y el comentario fijado solo invitan a comparar las otras opciones (Audioteka, Empik Go, Legimi, Wolne Lektury). Nunca se dice que en SonorBooks se vea si un libro está en LibriVox.
+- LibriVox ya aparece en sonorbooks.com/pl/platformy/ (27/10, sin precio), pero el vídeo no lo dice: el cierre y el comentario fijado solo invitan a comparar las otras opciones (Audioteka, Empik Go, Legimi, Wolne Lektury). Nunca se dice que en SonorBooks se vea si un libro está en LibriVox.
 - En 0:37 suena **audio real** de LibriVox (4,5 s de *Lalka*, t. 1, cap. 1, leído por Piotr Nater: «Nagranie LibriVox. Wszystkie nagrania LibriVox należą do domeny publicznej»). Es dominio público, sin condiciones; aun así se acredita en pantalla y en la descripción.
 - A decidir / confirmar:
   - *Kubuś Puchatek*: la voz dice ahora «angielski oryginał „Kubusia Puchatka” będzie w Polsce w domenie publicznej dopiero od 1 stycznia 2027»; la descripción añade que la traducción de Irena Tuwim (m. 1987) está protegida hasta finales de 2057.

@@ -14,7 +14,7 @@ Alternatywy:
 Pełna „Lalka” Prusa, ponad 32 godziny, za 0 zł – bez konta, bez reklam i legalnie. Gdzie jest haczyk?
 Sprawdziliśmy Wolne Lektury: katalog, lektorów, pobieranie MP3, aplikację i drobny druk licencji.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Darmowe audiobooki: gdzie jest haczyk?
@@ -68,10 +68,11 @@ wolne lektury, wolne lektury audiobooki, wolne lektury recenzja, darmowe audiobo
 ## Przypięty komentarz
 ```
 Słuchasz lektur w Wolnych Lekturach czy wolisz inne wydania? Jaką klasykę polecasz na początek? 👇
-Gdzie dany audiobook kosztuje najmniej (Audioteka, Empik Go, Legimi…), sprawdzisz tutaj: https://sonorbooks.pl
+Gdzie dany audiobook kosztuje najmniej (Audioteka, Empik Go, Legimi…), sprawdzisz tutaj: https://sonorbooks.com/pl/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; Wolne Lektury es gratuito y no hay afiliación). «No, no es contenido creado para niños» (habla de lecturas escolares, pero se dirige a estudiantes, padres y adultos). Subtítulos: `wolne-lektury.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**

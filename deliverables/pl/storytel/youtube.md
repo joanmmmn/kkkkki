@@ -14,7 +14,7 @@ Alternatywy:
 Storytel w Polsce: cztery plany od 24,90 zł, Unlimited bez limitu godzin i własne słuchowiska Storytel Original. Czy warto płacić, skoro darmowej próby teraz nie ma?
 Sprawdziliśmy ceny, katalog, aplikację i regulamin: co jest dobre, co złe i jak zacząć najtaniej.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Storytel: czy warto?
@@ -74,10 +74,11 @@ storytel, storytel recenzja, storytel opinie, storytel cena, storytel cennik, st
 ## Przypięty komentarz
 ```
 Słuchasz w Storytel? Basic, Premium czy Unlimited – który plan wybierasz? 👇
-Ceny i okresy próbne Audioteki, Empik Go, Legimi i Audible porównasz tutaj: https://sonorbooks.pl/platformy/
+Ceny i okresy próbne Audioteki, Empik Go, Legimi i Audible porównasz tutaj: https://sonorbooks.com/pl/platformy/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; no hay afiliación con Storytel). «No, no es contenido creado para niños». Subtítulos: `storytel.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**
@@ -85,4 +86,4 @@ Ceny i okresy próbne Audioteki, Empik Go, Legimi i Audible porównasz tutaj: ht
   2. **No hay prueba gratis en la web.** La voz lo dice como dato de hoy («teraz»). La FAQ de la portada todavía dice que Storytel «często oferuje bezpłatne okresy próbne»: en la toma `faq` solo se ve la pregunta cerrada, no la respuesta.
   3. **Datos que no se mencionan a propósito:** la página de la oferta anual dice que se renueva a 39,90 zł/mes (hoy Unlimited cuesta 44,90 zł) y da como precio más bajo de 30 días 19,95 zł (la otra promo dice 39,90 zł): por eso la oferta anual se enseña con el bloque de la portada («33% zniżki na cały rok», 320 zł), no con su página de alta. Tampoco se menciona el «Family+» que anuncia la página de planes (no está a la venta).
   4. **Cancelación:** la voz sigue la ayuda de Storytel («Subskrypcja → Anuluj»), que tiene Cloudflare y no se ha grabado; la toma es la FAQ de la portada, que habla de «Ustawienia konta». El paso 2 de B04 en pantalla dice «Ustawienia konta › Subskrypcja» para que case con las dos fuentes.
-  5. **Storytel no está en sonorbooks.pl:** el cierre solo invita a comparar Audioteka, Empik Go, Legimi y Audible. Si se añade Storytel a sonorbooks.pl/platformy, el cierre podría decir que también está allí.
+  5. **Storytel ya aparece en sonorbooks.com/pl/platformy/** (27/10, sin precio). El cierre no lo menciona (invita a comparar Audioteka, Empik Go, Legimi y Audible), y sigue siendo correcto.

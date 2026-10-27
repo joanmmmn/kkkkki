@@ -14,7 +14,7 @@ Alternatywy:
 Od 15 października 2026 Spotify ma w Polsce audiobooki w cenie Premium: 12 godzin słuchania miesięcznie. Czy warto z nich korzystać?
 Sprawdziliśmy ceny, limity i drobny druk: co jest dobre, co słabe i jak zacząć.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Audiobooki w Spotify: czy warto?
@@ -72,12 +72,13 @@ spotify audiobooki, audiobooki spotify, spotify premium audiobooki, spotify audi
 ## Przypięty komentarz
 ```
 Słuchasz już audiobooków w Spotify? Wystarcza ci 12 godzin miesięcznie? 👇
-Ceny, limity i okresy próbne Audioteki, Empik Go, Legimi i Audible porównasz tutaj: https://sonorbooks.pl/platformy/
+Ceny, limity i okresy próbne Audioteki, Empik Go, Legimi i Audible porównasz tutaj: https://sonorbooks.com/pl/platformy/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (Spotify no está en sonorbooks.pl/platformy y no hay afiliado). «No, no es contenido creado para niños». Subtítulos: `spotify.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - Todo lo que se ve son webs públicas (spotify.com, support.spotify.com, tiendas, sonorbooks.pl): sin cuenta ni app. Si quieres tomas reales de la app (Wyszukaj → Audiobooki, ficha, reproductor, «Czas słuchania audiobooków»), las grabas con tu cuenta y se sustituyen en A06, A08 y B03 sin cambiar la voz.
 - «Ile godzin ci zostało» sigue la ruta de la ayuda oficial de Spotify (foto de perfil → ajustes → Konto → tu plan → Czas słuchania audiobooków).
-- Spotify todavía no está en sonorbooks.pl/platformy: el cierre solo invita a comparar las demás plataformas.
+- Spotify sigue sin estar en sonorbooks.com/pl/platformy (27/10): el cierre solo invita a comparar las demás plataformas.

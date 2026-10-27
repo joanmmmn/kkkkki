@@ -14,7 +14,7 @@ Alternatywy:
 Z kartą biblioteczną możesz przez miesiąc słuchać audiobooków w Legimi, Empik Go albo Audiotece za 0 zł. Gdzie jest haczyk?
 Kodów jest mało, każda biblioteka ma własne zasady, a w wielu kody kończą się na początku miesiąca. Pokażę, jak je zdobyć.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Darmowe audiobooki z biblioteki: gdzie jest haczyk?
@@ -69,10 +69,11 @@ darmowe audiobooki, audiobooki z biblioteki, kody biblioteczne, kod biblioteczny
 ## Przypięty komentarz
 ```
 Twoja biblioteka wydaje kody do Legimi, Empik Go albo Audioteki? Jak je odbierasz: w filii, mailem czy online? Napisz miasto 👇
-Kodu zabrakło? Ceny i okresy próbne serwisów porównasz na sonorbooks.pl: https://sonorbooks.pl/platformy/
+Kodu zabrakło? Ceny i okresy próbne serwisów porównasz na sonorbooks.pl: https://sonorbooks.com/pl/platformy/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl). «No, no es contenido creado para niños». Subtítulos: `kody-biblioteczne.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**
@@ -81,4 +82,4 @@ Kodu zabrakło? Ceny i okresy próbne serwisów porównasz na sonorbooks.pl: htt
   3. «Sin tarjeta de pago» solo se afirma para Empik Go (su FAQ lo dice); para Legimi y Audioteka no hay frase oficial equivalente.
   4. El título y la miniatura dicen «za 0 zł»: es cierto con tarjeta de biblioteca y si se consigue código; la descripción lo matiza.
   5. Miniatura: junto al logotipo (el trío oficial Legimi · Empik Go · Audioteka, porque los códigos no tienen marca propia) pone «PORADNIK», no «RECENZJA».
-  6. sonorbooks.pl/platformy/ (enlazada en el comentario fijado; la toma del cierre solo enseña la tarjeta «Kod z biblioteki» y no la de Empik Go) aún muestra la promoción caducada de Empik Go: conviene actualizarla antes de publicar.
+  6. **Resuelto (27/10):** /platformy/ ya no muestra la promoción caducada de Empik Go.

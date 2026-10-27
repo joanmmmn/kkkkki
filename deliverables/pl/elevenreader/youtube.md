@@ -41,7 +41,7 @@ Rozdziały
 3:37 Ultra: 3 dni za darmo na stronie
 3:49 Jak zrezygnować
 
-Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 Źródła (oficjalne):
 • Cennik ElevenReader: https://elevenreader.io/pricing
@@ -72,15 +72,16 @@ elevenreader, eleven reader, elevenreader recenzja, elevenreader opinie, elevenr
 ## Komentarz przypięty
 ```
 A ty – czym słuchasz swoich PDF-ów i e-booków? Wolisz głos AI czy audiobooki z lektorem? Napisz w komentarzu.
-Porównanie platform z audiobookami po polsku: https://sonorbooks.pl
+Porównanie platform z audiobookami po polsku: https://sonorbooks.com/pl/
 ```
 
 ---
 
 ## Para Joan (español)
 
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - **Idioma:** polaco (título, descripción y subtítulos en polaco).
-- **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; ElevenReader no está en sonorbooks.pl y no hay enlace de afiliado polaco).
+- **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; ElevenReader ya aparece en sonorbooks.com/pl/platformy/, sin precio, y no hay enlace de afiliado polaco).
 - **Contenido para niños:** No.
 - **Qué hay que decidir o comprobar:**
   1. **Escuchar A01 y B06.** A01 ahora empieza «Każdy tekst…» y se ha regenerado (antes salió «Kiotra» en vez de «Piotra»); conviene oír «Piotra Fronczewskiego». En B06 hay una pausa nueva antes de «Empik Go» («Audiotekę… Empik Go») para que no se pegue a la «ę».

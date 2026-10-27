@@ -25,7 +25,7 @@ W tym filmie: czym jest Audioteka i co dostajesz w Audioteka Klub, ile kosztują
 3:15 Jak wypróbować 14 dni za darmo
 3:50 Jak zrezygnować
 
-Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 Źródła (oficjalne):
 - Audioteka Klub – plany, ceny i FAQ: https://klub.audioteka.com/
@@ -51,12 +51,13 @@ Audioteka, Audioteka Klub, Audioteka recenzja, Audioteka opinie, Audioteka cena,
 ## Przypięty komentarz
 
 Słuchasz w Planie Optymalnym czy w Planie Smart? Napisz, czego teraz słuchasz w Audiotece 👇
-A zanim kupisz audiobook, sprawdź na https://sonorbooks.pl, czy jest w abonamencie Audioteka Klub i gdzie posłuchasz go najtaniej.
+A zanim kupisz audiobook, sprawdź na https://sonorbooks.com/pl/, czy jest w abonamencie Audioteka Klub i gdzie posłuchasz go najtaniej.
 
 ---
 
 ## Para Joan (es)
 
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - **Idioma del vídeo:** Polaco (título, descripción y subtítulos `audioteka.pl.srt` en polaco).
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; no hay enlaces de afiliado de Audioteka).
 - **Contenido para niños:** No.

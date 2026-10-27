@@ -14,7 +14,7 @@ Alternatywy:
 BookBeat to audiobooki i e-booki w pakietach godzin: od 22,99 zł za 20 godzin do 34,99 zł za 100 godzin miesięcznie. Czy warto, jeśli słuchasz po polsku?
 Sprawdziliśmy ceny, limity godzin, polski katalog i regulamin: co jest dobre, co złe i jak wypróbować BookBeat za darmo przez 30 dni.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 BookBeat: czy warto?
@@ -62,7 +62,7 @@ W filmie:
 
 📌 Ceny i warunki: stan na październik 2026. Mogą się zmienić – przed zakupem sprawdź je na bookbeat.com/pl. Okres próbny tylko dla nowych użytkowników. Liczby tytułów po polsku pochodzą z wyszukiwarki BookBeat (19.10.2026) i zmieniają się codziennie.
 
-Film nie jest sponsorowany, a linki w opisie nie są afiliacyjne. Strony internetowe pokazujemy w celach informacyjnych; znaki towarowe należą do ich właścicieli. Muzyka skomponowana dla SonorBooks.
+Film nie jest sponsorowany. SonorBooks współpracuje z BookBeat w ramach programu partnerskiego: jeśli założysz konto przez naszą stronę, możemy otrzymać prowizję. Linki w opisie prowadzą do naszej strony i do źródeł. Strony internetowe pokazujemy w celach informacyjnych; znaki towarowe należą do ich właścicieli. Muzyka skomponowana dla SonorBooks.
 
 #BookBeat #Audiobooki #Ebooki
 ```
@@ -75,15 +75,15 @@ bookbeat, bookbeat recenzja, bookbeat opinie, bookbeat cena, bookbeat polska, bo
 ## Przypięty komentarz
 ```
 Mieścisz się w 100 godzinach miesięcznie czy wolisz abonament bez limitu? 👇
-Ceny, limity i okresy próbne Audioteki, Empik Go, Legimi i innych porównasz tutaj: https://sonorbooks.pl/platformy/
+Ceny, limity i okresy próbne Audioteki, Empik Go, Legimi i innych porównasz tutaj: https://sonorbooks.com/pl/platformy/
 ```
 
 ## Para Joan (español)
-- Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; no hay afiliado de BookBeat). «No, no es contenido creado para niños». Subtítulos: `bookbeat.pl.srt` (polaco).
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
+- Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No**, según tu regla (los vídeos que solo enlazan a la web de SonorBooks no son promoción pagada). Pero desde el 25/10 la web tiene afiliación de BookBeat (MyLead) y lo pone la primera, así que la descripción lo dice en una línea de transparencia (cambiada el 27/10; el vídeo se hizo antes del acuerdo y no habla de él). «No, no es contenido creado para niños». Subtítulos: `bookbeat.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**
   1. **Prueba de 30 días**: la oferta vigente es de 30 días con 20 horas de escucha y lectura: lo dicen la cabecera de bookbeat.com/pl, /our-subscriptions y /registration, y el punto 8 del reglamento dice que mandan las condiciones que muestra la web al registrarse. La FAQ de la portada («Jak działa okres próbny?», «2 tygodnie») está desactualizada, y ninguna toma la enseña. **El día de publicar, vuelve a mirar https://www.bookbeat.com/pl/registration**: si ya no pone 30 días con 20 horas, hay que corregir A01, A11 y B01.
-  2. **BookBeat no está en sonorbooks.pl** (ni en /platformy/ ni en las fichas): el cierre solo invita a comparar Audioteka, Empik Go, Legimi y Audible. Si quieres que el vídeo lleve tráfico a una ficha de BookBeat, primero habría que añadirlo a la web.
+  2. **BookBeat ya está en sonorbooks.com/pl/** (desde el 25/10, la primera, en promoción). El cierre del vídeo (hecho el 19/10) solo invita a comparar Audioteka, Empik Go, Legimi y Audible, lo que sigue siendo cierto. Si quieres que diga que BookBeat también está en SonorBooks, hay que regenerar B06 (unos 200 caracteres de voz) y su toma.
   3. Las cifras del catálogo en polaco (18 000+ audiolibros, 12 000+ ebooks, menos del 2 % de los títulos, unas 40 «słuchowiska», 2500+ títulos con sincronización audio + ebook) salen del buscador público de BookBeat el 19/10/2026; cambian a diario y van redondeadas a la baja con «ponad».
   4. Google Play: el vídeo solo da la nota en Polonia (4,8); el número de opiniones de Google Play (44,1 mil) es mundial y no se enseña. App Store Polonia: 4,8 con 10 056 valoraciones.
-  5. Si llegas a un acuerdo de afiliado con BookBeat, hay que marcar «Incluye promoción pagada» y añadir el aviso en la descripción.

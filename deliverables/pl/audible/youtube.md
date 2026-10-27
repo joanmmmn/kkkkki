@@ -14,7 +14,7 @@ Alternatywy:
 Audible, serwis z audiobookami Amazona, działa w Polsce od lipca 2026: zapisujesz się przez Amazon.pl, a konto masz na audible.de w polskiej wersji. Czy warto płacić, jeśli słuchasz po polsku?
 Sprawdziliśmy plany, polski katalog i drobny druk: co jest dobre, co słabe i jak wypróbować Audible za darmo przez 30 dni.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Audible w Polsce: czy warto?
@@ -62,16 +62,17 @@ audible, audible recenzja, audible opinie, audible cena, audible polska, audible
 ## Przypięty komentarz
 ```
 Słuchasz po polsku czy po angielsku? Standard czy Premium? 👇
-Ceny, okresy próbne i warunki Audible, Audioteki, Empik Go i Legimi porównasz na sonorbooks.pl: https://sonorbooks.pl/
+Ceny, okresy próbne i warunki Audible, Audioteki, Empik Go i Legimi porównasz na sonorbooks.pl: https://sonorbooks.com/pl/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; Audible no tiene programa de afiliados para Polonia y el enlace de sonorbooks.pl a Audible no lleva afiliación). «No, no es contenido creado para niños». Subtítulos: `audible.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks). El cierre enseña las tarjetas de la portada de sonorbooks.pl (`@common/sb_home_cards`, con Audible junto a Audioteka, Empik Go y Legimi), no /platformy/: la tarjeta de Audible de /platformy/ lleva la frase sobre Prime (punto 3).
 - Colores del logotipo oficial (audible.de): naranja #F7991C y gris #212325; el icono de la plataforma es el logotipo invertido oficial (texto blanco y símbolo naranja sobre #212325).
 - **A decidir / comprobar antes de publicar:**
   1. Cifras de **julio** (≈ 3000 títulos en polaco y 54 zł por audiolibro suelto) son de prensa (Świat Czytników, 15/07/2026) y no se pudieron comprobar hoy: el listado filtrado y las fichas de Amazon.pl dan error a nuestro servidor. En voz van con «w lipcu» y en pantalla con fuente y fecha. Si al abrir Amazon.pl → Audiobooki Audible → Język: Polski ves otra cifra muy distinta, conviene actualizar A02/A05.
   2. El botón «Zobacz warunki w serwisie Audible» de sonorbooks.pl/platformy lleva a https://www.audible.de/pl_PL/, que desde nuestro servidor (EE. UU.) da 503; https://www.audible.de/?language=pl_PL sí funciona. Pruébalo desde Polonia/España.
-  3. La tarjeta de Audible en sonorbooks.pl/platformy/ dice «Abonament jest niezależny od Amazon Prime»: no hay fuente oficial polaca que lo confirme (el vídeo no habla de Prime). Por eso el comentario fijado enlaza a https://sonorbooks.pl/ (como el cierre) y no a /platformy/; si corriges o quitas esa frase de la tarjeta, se puede volver a enlazar /platformy/.
+  3. La tarjeta de Audible en sonorbooks.pl/platformy/ dice (sigue igual el 27/10) «Abonament jest niezależny od Amazon Prime»: no hay fuente oficial polaca que lo confirme (el vídeo no habla de Prime). Por eso el comentario fijado enlaza a https://sonorbooks.com/pl/ (como el cierre) y no a /platformy/; si corriges o quitas esa frase de la tarjeta, se puede volver a enlazar /platformy/.
   4. «En la App Store es más caro»: los planes que se compran dentro de la app (App Store polaca) cuestan entre 39,99 y 79,99 zł; el vídeo solo dice que son más caros, sin cifra.
   5. La toma de audible.de se grabó con `?language=pl_PL&ipRedirectOverride=true` (desde EE. UU. redirige a audible.com) y solo enseña la fila de títulos polacos: sin precios en euros ni textos en alemán.

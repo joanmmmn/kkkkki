@@ -14,7 +14,7 @@ Alternatywy:
 Empik Go to audiobooki, ebooki i podcasty w jednej aplikacji: ponad 240 000 tytułów i 130 własnych produkcji. Czy warto płacić?
 Sprawdziliśmy cennik, regulamin i opinie: plusy, minusy i jak wypróbować Empik Go 7 dni za darmo.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Empik Go: czy warto?
@@ -66,14 +66,15 @@ empik go, empik go recenzja, empik go opinie, empik go cena, empik go za darmo, 
 ## Przypięty komentarz
 ```
 Go Smart, Go Max czy Go Standard – który plan wybierasz? 👇
-Ceny i okresy próbne Empik Go, Audioteki, Legimi i innych platform porównasz tutaj: https://sonorbooks.pl
+Ceny i okresy próbne Empik Go, Audioteki, Legimi i innych platform porównasz tutaj: https://sonorbooks.com/pl/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl). «No, no es contenido creado para niños». Subtítulos: `empik-go.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**
-  1. **sonorbooks.pl sigue anunciando la promoción terminada**: el desplegable «Warunki» de la tarjeta de Empik Go en la portada, la tarjeta de https://sonorbooks.pl/platformy/ y las fichas de audiolibro dicen «Do 15.10.2026 nowi użytkownicy płacą 19,99 zł przez pierwsze 3 okresy rozliczeniowe». La promoción acabó el 15.10.2026 (10:00) y hoy Go Smart cuesta 39,99 zł desde el primer periodo. Como el vídeo manda a sonorbooks.pl, hay que quitar esa frase antes de publicar. La tarjeta visible de la portada («Go Smart · 7 dni za darmo · Potem 39,99 zł / 30 dni») está bien y es la que sale en el cierre; el comentario fijado enlaza a la portada.
+  1. **Resuelto (27/10):** la web (ya en sonorbooks.com/pl/) no muestra la promoción terminada de 19,99 zł; Go Smart sale a 39,99 zł / 30 dni.
   2. El mismo desplegable «Warunki» de la portada y las fichas dicen «7 dni za darmo w planach Go Smart i Go Max»; según la FAQ de Empik Go la prueba existe también en Go Standard (con límite de 1 título). El vídeo dice lo de la FAQ: conviene añadir Go Standard.
   3. Si tienes acuerdo de afiliado con Empik, hay que marcar «Incluye promoción pagada» y añadir el aviso en la descripción.
   4. En la web de Empik Go la pestaña «Płatność jednorazowa» conserva la etiqueta «PROMOCJA» de la promoción terminada. No sale en el vídeo: la toma de precios de escritorio empieza por debajo de las pestañas y la de móvil (paso 1 de la prueba) empieza ya en las tarjetas.

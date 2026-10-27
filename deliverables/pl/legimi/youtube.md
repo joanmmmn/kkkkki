@@ -41,7 +41,7 @@ W filmie:
 3:41 Uwaga na umowę na 12 miesięcy
 3:54 Jak zrezygnować
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 📚 Źródła (oficjalne):
 • Cennik Legimi: https://www.legimi.pl/cennik/
@@ -73,11 +73,12 @@ Wolisz czytać czy słuchać? 👇 A może na zmianę – i synchrobooki to coś
 
 ## Para Joan (español)
 
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - **Idioma del vídeo:** polaco.
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl; no hay enlace de afiliado de Legimi).
 - **Contenido para niños:** No.
 - **Por decidir / confirmar antes de publicar:**
   - El precio de 49,99 zł con contrato de 12 meses figura en Legimi como «PROMOCJA» (sin fecha de fin) y la web indica «Najniższa cena z 30 dni przed obniżką: 44,99 zł»: hay que volver a mirar https://www.legimi.pl/cennik/ el día de publicar. Si ha cambiado, hay que retocar A03 (voz y tarjeta), B04 y la descripción.
-  - Web de SonorBooks (no del vídeo, pero conviene arreglarlo): la ficha de Legimi en sonorbooks.pl/platformy sigue anunciando «pierwsze 3 miesiące o 50% taniej», que hoy no existe en ninguna página oficial de Legimi (el vídeo no la menciona ni la enseña); y en la portada de sonorbooks.pl, la que sale en el cierre (toma común `sb_home_cards`), el logotipo de Audible lleva el lema en español «una empresa de amazon».
+  - Web de SonorBooks (no del vídeo, pero conviene arreglarlo): la ficha de Legimi en sonorbooks.pl/platformy sigue anunciando (comprobado de nuevo el 27/10) «pierwsze 3 miesiące o 50% taniej», que hoy no existe en ninguna página oficial de Legimi (el vídeo no la menciona ni la enseña); y en la portada de sonorbooks.pl, la que sale en el cierre (toma común `sb_home_cards`), el logotipo de Audible lleva el lema en español «una empresa de amazon».
   - En la portada de Legimi hay una promo de lectores («CZYTNIK OD 1 ZŁ» + taza de regalo, «oferta limitowana»): no sale en el vídeo.
   - La baja (B05) va con animación: la ayuda de Legimi no se puede grabar desde el servidor.

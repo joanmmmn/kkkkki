@@ -14,7 +14,7 @@ Alternatywy:
 Kobo Plus działa w Polsce od końca maja 2026: e-booki i audiobooki bez limitu godzin, w aplikacji i na czytnikach Kobo. Czy warto, jeśli chcesz słuchać po polsku?
 Sprawdziliśmy ceny, polski katalog i drobny druk: co jest dobre, co słabe i jak wypróbować abonament za darmo.
 
-🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.pl
+🔎 Porównaj, gdzie posłuchasz audiobooka najtaniej: https://sonorbooks.com/pl/
 
 ⏱️ Rozdziały
 0:00 Kobo Plus: czy warto?
@@ -69,10 +69,11 @@ kobo plus, kobo plus recenzja, kobo plus opinie, kobo plus cena, kobo plus polsk
 ## Przypięty komentarz
 ```
 Masz czytnik Kobo? Słuchasz po polsku czy po angielsku? 👇
-Ceny, limity i okresy próbne Kobo Plus, Audioteki, Empik Go i Legimi porównasz tutaj: https://sonorbooks.pl/platformy/
+Ceny, limity i okresy próbne Kobo Plus, Audioteki, Empik Go i Legimi porównasz tutaj: https://sonorbooks.com/pl/platformy/
 ```
 
 ## Para Joan (español)
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; el enlace de sonorbooks.pl a Kobo va directo a kobo.com, sin afiliación visible). «No, no es contenido creado para niños». Subtítulos: `kobo.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
 - **A decidir / comprobar antes de publicar:**
