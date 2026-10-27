@@ -4,16 +4,16 @@
   1080
  ],
  "dpr": 1.5,
- "frames": 223,
- "duration": 20.455,
- "offset": 0.237,
+ "frames": 266,
+ "duration": 20.375,
+ "offset": 0.171,
  "marks": {
-  "start": 0.181,
-  "asmr": 3.8,
-  "zalegly": 9.396,
-  "cofnij": 13.301,
-  "dlugo": 17.046,
-  "end": 20.454
+  "start": 0.26,
+  "asmr": 3.703,
+  "zalegly": 9.297,
+  "cofnij": 13.232,
+  "dlugo": 17.003,
+  "end": 20.376
  },
  "events": []
 }

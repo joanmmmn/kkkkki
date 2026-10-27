@@ -123,3 +123,63 @@ Ficha de Empik Go en https://sonorbooks.pl/platformy/ («Sprawdzono: 28 wrześni
 - empik.com/go/katalog devuelve 200 pero su contenido se carga con JavaScript → no se usa.
 - Cookies: se guardan antes de grabar en https://www.empik.com/dostosuj-zgody?ukryj-modal-cookie=1 («Zapisz ustawienia», casillas desactivadas por defecto); probado en navegador.
 - Total `say` = 4.021 caracteres (≈ 4:19).
+
+## Actualización 27.10.2026
+
+Fuentes consultadas el **27.10.2026** con `curl -A "Mozilla/5.0"` y texto extraído con Python (quitando `<script>`, `<style>` y los
+comentarios HTML), más la página de precios renderizada en Chromium (pl-PL, 1920×1080 y móvil 430×932) para saber qué se ve de verdad.
+Motivo: el reglamento de **Go Flex** del 21.10.2026 (https://media.empik.com/content/go-newstyle/ego/20261021_Szczegolowe_zasady_sprzedazy_i_korzystania_z_Abonamentu_Flex.pdf, `Last-Modified: 21.10.2026`).
+
+### Qué se vende hoy por suscripción (pestaña «Abonamenty 30-dniowe» de https://www.empik.com/go)
+
+| Plan | Precio (30 días) | Títulos | Dispositivos a la vez | Prueba de 7 días | Fuente |
+|---|---|---|---|---|---|
+| **Go Max** | **49,99 zł** (2 disp.) · 59,99 zł (3) · **69,99 zł** (4) | sin límite | 2–4 + Kindle | sin límite | tarjeta y selector ⊕ de /go (probado); modal «Jak działa okres próbny?» |
+| **Go Smart** | **39,99 zł** | sin límite | **1** + Kindle | sin límite | tarjeta de /go; modal «Jak działa okres próbny?» |
+| **Go Flex** (nuevo) | **14,99 zł** (1 título) · 19,99 (2) · **24,99 (3)** · 29,99 (4) · 34,99 zł (5): 14,99 zł + 5 zł por cada título más | **1–5** según la variante elegida al comprar | **2** + Kindle | sí («Wypróbuj za darmo przez 7 dni*»); **límite durante la prueba: no consta** (ver abajo) | selector ⊖/⊕ de la tarjeta (probado: 14,99 → 34,99 zł); FAQ /go/faq «Ile kosztuje abonament Go Flex?» («1 książka: 14,99 zł… każda kolejna książka (od 2 do 5): dodatkowo 5 zł… pakiet 3 książek, zapłacisz 24,99 zł»); modal «Jak działa limit w Go Flex?» de /go |
+
+- **Go Standard ya no se vende por suscripción.** FAQ de https://www.empik.com/go: «Go Standard z limitem 3 tytułów na okres rozliczeniowy (**obecnie dostępny wyłącznie w płatnościach jednorazowych**), a Go Flex z wybraną przez Ciebie liczbą od 1 do 5 tytułów». En el HTML la tarjeta de Go Standard de 30 días está **dentro de un comentario** (`<!-- <li … id="goStandard30"> … -->`): por eso aparece (junto a Go Flex, con «PROMOCJA DLA NOWYCH KLIENTÓW») si se extrae el texto con curl sin quitar comentarios, pero **no se ve** en la página renderizada (escritorio ni móvil), que muestra solo Go Max, Go Smart y Go Flex. Las etiquetas «PROMOCJA DLA NOWYCH KLIENTÓW» y «za każdy z pierwszych 4 miesięcy*» de las tarjetas están ocultas (restos de la promoción que terminó el 15.10).
+- Go Standard sigue en «Płatność jednorazowa»: 90 días 74,90 zł · 180 días 149,90 zł · 360 días 299,90 zł (página renderizada). La FAQ de /go/faq aún lo lista en la tabla y en «Co dzieje się z niewykorzystanym limitem?» (180 días).
+- Pestaña «Abonamenty 360-dniowe»: Go Max 599,88 zł, Go Smart 479,88 zł y una tarjeta «Go Flex · 3 dowolne tytuły / 30 dni · 299,88 zł / 360 dni» (es la tarjeta de Go Standard renombrada: `id="goStandard360"`). No se usa en el vídeo.
+- «Płatność jednorazowa» muestra hoy «-45% na Go Smart 180 i 360 dni!» (131,94 zł y 263,94 zł). Promoción de pago único: no se usa.
+
+### Go Flex según su reglamento (PDF del 21.10.2026)
+
+- Variantes **Flex 1 a Flex 5** = 1 a 5 «Produkty» (audiolibros, ebooks y series de audio) por periodo; cada variante es un abono independiente con su límite y su precio (pt. 1–2). Un episodio cualquiera de una serie gasta 1 y desbloquea el resto (pt. 1).
+- No se cambia de variante dentro de un periodo pagado: hay que darse de baja y comprar la otra (pt. 3). (La FAQ dice «zmiana wybranego pakietu lub rezygnacja z usługi jest możliwa w dowolnym momencie»; el vídeo no entra en ello.)
+- **Pódcasts y ASMR sin límite** (pt. 4).
+- **Lo no usado se acumula**: «niewykorzystane… dodania mogą być wykorzystane przez Ciebie w kolejnych **sześciu okresach rozliczeniowych**, pod warunkiem, że będziesz nieprzerwanie abonentem **tego samego wariantu**»; cambiar de variante o de abono hace perder lo acumulado (pt. 5). FAQ: «możesz je gromadzić maksymalnie przez 6 kolejnych okresów rozliczeniowych, o ile abonament jest nieprzerwanie opłacany. Jeśli zrezygnujesz z Go Flex, zgromadzone, a niewykorzystane kredyty przepadną z końcem ostatniego opłaconego okresu». (En Go Standard la FAQ decía 180 días: 6 periodos de 30 días.)
+- Deshacer una elección: ≤ 10 % del título, sin enviarlo a Kindle ni descargarlo, y retirándolo de la biblioteca (pt. 6; FAQ «Pomyliłem się…»).
+- Prueba: «W Abonamencie Flex **może** obowiązywać okres próbny. Jego długość, zasady oraz ewentualne limity Produktów… będą każdorazowo przedstawione na stronie www.empik.com/go przed dokonaniem zakupu… W okresie próbnym będziesz miał nielimitowany dostęp do… podcasty oraz pozycje typu ASMR» (pt. 7).
+- El PDF no da precios ni dispositivos. Dispositivos: «Możesz korzystać z niego na 2 urządzeniach jednocześnie (czytnik Kindle liczony jest osobno)» (FAQ) y «2 urządzenia + 1 Kindle™ gratis poza limitem urządzeń» (tarjeta).
+- **Switch** sigue solo en Go Max y Go Smart: modal «Jak działa Funkcja Switch» («dostępna tylko w planach bez limitu (Go Max i Go Smart)»); el botón «Funkcja Switch» de la tarjeta Go Flex está oculto (`inert`, `opacity: 0`).
+
+### Prueba de 7 días: cuánto se puede usar en Go Flex
+
+- Tabla «Jakie są różnice między abonamentami Empik Go?» de https://www.empik.com/go/faq (ahora con 4 columnas), fila «Okres próbny»: Go Max «7 dni» · Go Smart «7 dni» · **Go Standard «7 dni (limit 1 pozycji)»** (la celda lleva `data-plan="Go Standard"`) · **Go Flex «7 dni»**, sin límite indicado.
+- Modal «Jak działa okres próbny?» de /go (renderizado hoy): solo Go Max y Go Smart («bez limitu») y Go Standard («1 wybrany tytuł»). **No dice nada de Go Flex.**
+- Conclusión: Go Flex tiene prueba de 7 días, pero **ninguna fuente pública dice cuántos títulos se pueden añadir durante ella**; el reglamento remite a lo que se muestre antes de comprar (no se ha abierto el carrito: es el flujo de compra). El vídeo no da cifra: «W Go Flex sprawdź przed zakupem, ile tytułów obejmuje okres próbny».
+
+### Lo demás de la voz y la pantalla (comprobado el 27.10.2026: sin cambios)
+
+| Dato del vídeo | Hoy | Fuente |
+|---|---|---|
+| Go Smart 39,99 zł / 30 días, 1 disp. + Kindle (A03, A11, A12, B04) | igual | tarjeta de /go renderizada |
+| Go Max 49,99 zł (2 disp.), 69,99 zł (4) (A03) | igual (3 disp.: 59,99 zł) | selector ⊕ de /go, probado |
+| Prueba 7 días, solo con tarjeta (A01, B01, B02) | igual: «Okres próbny (7 dni) obowiązuje tylko w przypadku płatności kartą» | FAQ de /go; «* Wymagane podpięcie karty płatniczej» |
+| Una sola prueba, sea cual sea el plan (B01) | igual (regulamin G.5) | regulamin, **idéntico byte a byte** al del 19.10 (`Last-Modified: 10.09.2026`) |
+| Cobro el 8.º día (B04) | igual: «w dniu następującym po ostatnim dniu okresu próbnego, rozpocznie się… okres rozliczeniowy… z obowiązkiem zapłaty» | modal «Jak działa okres próbny?»; regulamin G.3 |
+| Baja: Twoje konto → Abonamenty → «Anuluj abonament», o en la app («Konto»); activo hasta el fin del periodo pagado (B05) | igual (pregunta 19 de la FAQ, mismo texto) | /go/faq; regulamin C.3 y L.8 |
+| Periodo: 30 días web, 28 Android, 1 mes iOS (B02) | igual | /go/faq |
+| Switch en Go Max y Go Smart (A06) | igual | FAQ de /go y modal Switch |
+| Kindle: 10 ebooks nuevos por periodo (A09) | igual | FAQ de /go |
+| 240 000 títulos, 130 producciones propias (A02, A05) | igual | /go |
+| Audioteka Klub (Plan Optymalny) 29,90 zł/mes (A12) | igual | https://klub.audioteka.com/ |
+
+### Cambios hechos en el vídeo por esta actualización
+
+- **A03**: «Go Standard: 24,99 zł za 3 tytuły» → «Go Flex: od 1 do 5 tytułów, na 2 urządzeniach, od 14,99 zł» (tarjeta: 14,99 zł / 30 dni, «za 1 tytuł», «Kolejny tytuł: +5 zł»).
+- **A07**: el límite se explica para Go Flex (lo no usado pasa a los 6 periodos siguientes); toma `faq_limit` regrabada con la FAQ nueva.
+- **A12**: «wystarczy Go Standard» → «wystarczy Go Flex» (3 títulos = 24,99 zł).
+- **B03**: «w Go Standard – z jednym tytułem» → «W Go Flex sprawdź przed zakupem, ile tytułów obejmuje okres próbny»; toma `faq_tabela` regrabada (tabla con la columna Go Flex). A08 y B05 usan también estas tomas.
+- Sin regrabar (fuera del encargo): `plany` (A01) y `mobile` (B02) aún enseñan la tarjeta Go Standard de 30 días tal como estaba el 19.10; la voz de esas escenas no la nombra.

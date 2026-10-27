@@ -1,6 +1,6 @@
 {
- "total_frames": 13474,
- "seconds": 269.48,
+ "total_frames": 13524,
+ "seconds": 270.48,
  "chapters": [
   {
    "t": 13.64,
@@ -8,46 +8,46 @@
   },
   {
    "t": 28.76,
-   "label": "Cennik: Go Smart, Go Max i Go Standard"
+   "label": "Cennik: Go Smart, Go Max i Go Flex"
   },
   {
-   "t": 56.34,
+   "t": 57.06,
    "label": "Katalog i Empik Go Originals"
   },
   {
-   "t": 81.86,
+   "t": 82.58,
    "label": "Switch i odtwarzacz"
   },
   {
-   "t": 100.0,
-   "label": "Limit w Go Standard"
+   "t": 100.72,
+   "label": "Limit w Go Flex"
   },
   {
-   "t": 117.84,
+   "t": 116.54,
    "label": "Tryb dziecięcy"
   },
   {
-   "t": 129.14,
+   "t": 127.84,
    "label": "Urządzenia i czytniki"
   },
   {
-   "t": 147.66,
+   "t": 146.36,
    "label": "Opinie"
   },
   {
-   "t": 164.1,
+   "t": 162.8,
    "label": "Plusy i minusy"
   },
   {
-   "t": 182.42,
+   "t": 181.12,
    "label": "Werdykt: czy warto?"
   },
   {
-   "t": 199.58,
+   "t": 198.42,
    "label": "Jak wypróbować 7 dni za darmo"
   },
   {
-   "t": 232.54,
+   "t": 233.54,
    "label": "Pierwsza opłata i jak zrezygnować"
   }
  ],
@@ -72,14 +72,14 @@
    "id": "A03",
    "kind": "plans",
    "start": 1452,
-   "dur": 1379,
+   "dur": 1415,
    "lead": 26,
    "bump": "Cennik"
   },
   {
    "id": "A04",
    "kind": "rec",
-   "start": 2831,
+   "start": 2867,
    "dur": 555,
    "lead": 26,
    "bump": "Katalog i Originals"
@@ -87,7 +87,7 @@
   {
    "id": "A05",
    "kind": "rec",
-   "start": 3386,
+   "start": 3422,
    "dur": 721,
    "lead": 7,
    "bump": null
@@ -95,7 +95,7 @@
   {
    "id": "A06",
    "kind": "features",
-   "start": 4107,
+   "start": 4143,
    "dur": 893,
    "lead": 26,
    "bump": "Aplikacja"
@@ -103,15 +103,15 @@
   {
    "id": "A07",
    "kind": "rec",
-   "start": 5000,
-   "dur": 892,
+   "start": 5036,
+   "dur": 791,
    "lead": 7,
    "bump": null
   },
   {
    "id": "A08",
    "kind": "rec",
-   "start": 5892,
+   "start": 5827,
    "dur": 565,
    "lead": 7,
    "bump": null
@@ -119,7 +119,7 @@
   {
    "id": "A09",
    "kind": "devices",
-   "start": 6457,
+   "start": 6392,
    "dur": 940,
    "lead": 7,
    "bump": null
@@ -127,7 +127,7 @@
   {
    "id": "A10",
    "kind": "ratings",
-   "start": 7397,
+   "start": 7332,
    "dur": 822,
    "lead": 26,
    "bump": "Opinie"
@@ -135,7 +135,7 @@
   {
    "id": "A11",
    "kind": "proscons",
-   "start": 8219,
+   "start": 8154,
    "dur": 916,
    "lead": 26,
    "bump": "Plusy i minusy"
@@ -143,15 +143,15 @@
   {
    "id": "A12",
    "kind": "verdict",
-   "start": 9135,
-   "dur": 858,
+   "start": 9070,
+   "dur": 865,
    "lead": 26,
    "bump": "Werdykt"
   },
   {
    "id": "B01",
    "kind": "stat",
-   "start": 9993,
+   "start": 9935,
    "dur": 358,
    "lead": 26,
    "bump": "Jak wypróbować za darmo"
@@ -159,7 +159,7 @@
   {
    "id": "B02",
    "kind": "steps",
-   "start": 10351,
+   "start": 10293,
    "dur": 784,
    "lead": 7,
    "bump": null
@@ -167,15 +167,15 @@
   {
    "id": "B03",
    "kind": "rec",
-   "start": 11135,
-   "dur": 492,
+   "start": 11077,
+   "dur": 600,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11627,
+   "start": 11677,
    "dur": 449,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 12076,
+   "start": 12126,
    "dur": 525,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12601,
+   "start": 12651,
    "dur": 873,
    "lead": 7,
    "bump": null

@@ -1,8 +1,8 @@
 {
  "id": "A07",
- "hash": "7add83537fe9",
- "text": "W Go Standard limit zużywasz, dodając tytuł do biblioteki. Podcasty i ASMR są bez limitu, a cały serial audio liczy się jak jeden tytuł. Niewykorzystany limit przechodzi dalej, do 180 dni, a wybór cofniesz, jeśli nie przekroczysz 10 procent i nic nie pobierzesz.",
- "duration": 17.44,
+ "hash": "40ac6ab5f91a",
+ "text": "W Go Flex dodanie tytułu do biblioteki zużywa limit. Podcasty i ASMR są bez limitu, a serial audio to jeden tytuł. Niewykorzystane tytuły przechodzą dalej, do 6 okresów, a wybór cofniesz do 10 procent, jeśli nic nie pobierzesz.",
+ "duration": 15.36,
  "words": [
   {
    "w": "W",
@@ -12,233 +12,203 @@
   {
    "w": "Go",
    "s": 0.16,
-   "e": 0.24
+   "e": 0.32
   },
   {
-   "w": "Standard",
+   "w": "Fleks",
    "s": 0.4,
-   "e": 0.88
+   "e": 0.8
   },
   {
-   "w": "limit",
-   "s": 1.04,
-   "e": 1.36
+   "w": "dodanie",
+   "s": 0.88,
+   "e": 1.2
   },
   {
-   "w": "zużywasz,",
-   "s": 1.44,
-   "e": 2.0
-  },
-  {
-   "w": "dodając",
-   "s": 2.04,
-   "e": 2.48
-  },
-  {
-   "w": "tytuł",
-   "s": 2.56,
-   "e": 2.76
+   "w": "tytułu",
+   "s": 1.28,
+   "e": 1.6
   },
   {
    "w": "do",
-   "s": 2.8,
-   "e": 2.88
+   "s": 1.64,
+   "e": 1.68
   },
   {
-   "w": "biblioteki.",
-   "s": 2.96,
-   "e": 3.92
+   "w": "biblioteki",
+   "s": 1.76,
+   "e": 2.4
+  },
+  {
+   "w": "zużywa",
+   "s": 2.48,
+   "e": 2.8
+  },
+  {
+   "w": "limit.",
+   "s": 2.88,
+   "e": 3.6
   },
   {
    "w": "Podkasty",
-   "s": 4.0,
-   "e": 4.56
+   "s": 3.68,
+   "e": 4.24
   },
   {
    "w": "i",
-   "s": 4.64,
-   "e": 4.72
+   "s": 4.32,
+   "e": 4.4
   },
   {
    "w": "a",
-   "s": 4.8,
-   "e": 4.88
+   "s": 4.48,
+   "e": 4.52
   },
   {
    "w": "es",
-   "s": 4.96,
-   "e": 5.04
+   "s": 4.56,
+   "e": 4.72
   },
   {
    "w": "em",
-   "s": 5.12,
-   "e": 5.2
+   "s": 4.76,
+   "e": 4.8
   },
   {
    "w": "er",
-   "s": 5.28,
-   "e": 5.36
+   "s": 4.88,
+   "e": 5.04
   },
   {
    "w": "są",
-   "s": 5.44,
-   "e": 5.6
+   "s": 5.12,
+   "e": 5.28
   },
   {
    "w": "bez",
-   "s": 5.68,
-   "e": 5.84
+   "s": 5.36,
+   "e": 5.52
   },
   {
    "w": "limitu,",
-   "s": 6.0,
-   "e": 6.56
+   "s": 5.68,
+   "e": 6.24
   },
   {
    "w": "a",
-   "s": 6.64,
-   "e": 6.72
-  },
-  {
-   "w": "cały",
-   "s": 6.8,
-   "e": 7.04
+   "s": 6.28,
+   "e": 6.32
   },
   {
    "w": "serial",
-   "s": 7.2,
-   "e": 7.36
+   "s": 6.4,
+   "e": 6.72
   },
   {
    "w": "audio",
-   "s": 7.44,
-   "e": 7.84
+   "s": 6.8,
+   "e": 7.2
   },
   {
-   "w": "liczy",
-   "s": 7.92,
-   "e": 8.08
-  },
-  {
-   "w": "się",
-   "s": 8.16,
-   "e": 8.28
-  },
-  {
-   "w": "jak",
-   "s": 8.32,
-   "e": 8.48
+   "w": "to",
+   "s": 7.28,
+   "e": 7.36
   },
   {
    "w": "jeden",
-   "s": 8.52,
-   "e": 8.8
+   "s": 7.4,
+   "e": 7.68
   },
   {
    "w": "tytuł.",
-   "s": 8.88,
-   "e": 9.48
+   "s": 7.76,
+   "e": 8.347
   },
   {
-   "w": "Niewykorzystany",
-   "s": 9.52,
-   "e": 10.16
+   "w": "Niewykorzystane",
+   "s": 8.373,
+   "e": 9.04
   },
   {
-   "w": "limit",
-   "s": 10.32,
-   "e": 10.48
+   "w": "tytuły",
+   "s": 9.12,
+   "e": 9.36
   },
   {
-   "w": "przechodzi",
-   "s": 10.52,
-   "e": 10.88
+   "w": "przechodzą",
+   "s": 9.44,
+   "e": 9.84
   },
   {
    "w": "dalej,",
-   "s": 10.96,
-   "e": 11.32
+   "s": 9.92,
+   "e": 10.36
   },
   {
    "w": "do",
-   "s": 11.36,
-   "e": 11.52
+   "s": 10.4,
+   "e": 10.48
   },
   {
-   "w": "stu",
-   "s": 11.6,
-   "e": 11.76
+   "w": "sześciu",
+   "s": 10.56,
+   "e": 10.84
   },
   {
-   "w": "osiemdziesięciu",
-   "s": 11.84,
-   "e": 12.48
-  },
-  {
-   "w": "dni,",
-   "s": 12.76,
-   "e": 13.08
+   "w": "okresów,",
+   "s": 10.88,
+   "e": 11.72
   },
   {
    "w": "a",
-   "s": 13.12,
-   "e": 13.2
+   "s": 11.76,
+   "e": 11.84
   },
   {
    "w": "wybór",
-   "s": 13.28,
-   "e": 13.6
+   "s": 11.92,
+   "e": 12.32
   },
   {
-   "w": "cofniesz,",
-   "s": 13.68,
-   "e": 14.213
+   "w": "cofniesz",
+   "s": 12.4,
+   "e": 12.72
   },
   {
-   "w": "jeśli",
-   "s": 14.267,
-   "e": 14.4
-  },
-  {
-   "w": "nie",
-   "s": 14.48,
-   "e": 14.56
-  },
-  {
-   "w": "przekroczysz",
-   "s": 14.6,
-   "e": 15.04
+   "w": "do",
+   "s": 12.76,
+   "e": 12.8
   },
   {
    "w": "dziesięciu",
-   "s": 15.08,
-   "e": 15.48
+   "s": 12.88,
+   "e": 13.307
   },
   {
-   "w": "procent",
-   "s": 15.52,
-   "e": 15.92
+   "w": "procent,",
+   "s": 13.36,
+   "e": 13.8
   },
   {
-   "w": "i",
-   "s": 16.0,
-   "e": 16.08
+   "w": "jeśli",
+   "s": 13.84,
+   "e": 14.08
   },
   {
    "w": "nic",
-   "s": 16.2,
-   "e": 16.32
+   "s": 14.16,
+   "e": 14.32
   },
   {
    "w": "nie",
-   "s": 16.4,
-   "e": 16.48
+   "s": 14.4,
+   "e": 14.48
   },
   {
    "w": "pobierzesz.",
-   "s": 16.533,
-   "e": 17.44
+   "s": 14.533,
+   "e": 15.36
   }
  ],
- "speechEnd": 17.084
+ "speechEnd": 15.069
 }
