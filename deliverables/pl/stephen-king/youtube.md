@@ -28,9 +28,9 @@ Rozdziały:
 6:26 Trzy trasy
 
 Na sonorbooks.pl są już „Lśnienie” i „To” (oraz „Instytut”) – z lektorem, czasem trwania i informacją, gdzie posłuchać i za ile:
-https://sonorbooks.pl/audiobooki/?q=stephen+king
-„Lśnienie” (słuchowisko): https://sonorbooks.pl/audiobook/lsnienie/
-„To”: https://sonorbooks.pl/audiobook/to-stephen-king/
+https://sonorbooks.com/pl/audiobooki/?q=stephen+king
+„Lśnienie” (słuchowisko): https://sonorbooks.com/pl/audiobook/lsnienie/
+„To”: https://sonorbooks.com/pl/audiobook/to-stephen-king/
 
 Źródła:
 – Audioteka: strona autora i karty audiobooków Stephena Kinga (czas trwania, lektorzy, wydawcy, oceny): https://audioteka.com/pl/autor/stephen-king/
@@ -51,12 +51,13 @@ Stephen King, od czego zacząć Stephena Kinga, Stephen King od czego zacząć, 
 
 ## Przypięty komentarz
 
-A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której zaczniesz teraz? Napisz też, którego autora chcesz w następnym odcinku „Od czego i jak zacząć”. Na sonorbooks.pl są już „Lśnienie” i „To” (oraz „Instytut”) – z lektorem, czasem trwania i informacją, gdzie posłuchać i za ile: https://sonorbooks.pl/audiobooki/?q=stephen+king
+A Ty? Od której książki Kinga zaczynałeś albo zaczynałaś – i od której zaczniesz teraz? Napisz też, którego autora chcesz w następnym odcinku „Od czego i jak zacząć”. Na sonorbooks.pl są już „Lśnienie” i „To” (oraz „Instytut”) – z lektorem, czasem trwania i informacją, gdzie posłuchać i za ile: https://sonorbooks.com/pl/audiobooki/?q=stephen+king
 
 ---
 
 ## Para Joan (en español)
 
+- **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - **Idioma del vídeo:** polaco (también el de los subtítulos y los textos de YouTube).
 - **Incluye promoción pagada:** No (solo enlaza a sonorbooks.pl).
 - **¿Es para niños?** No.
