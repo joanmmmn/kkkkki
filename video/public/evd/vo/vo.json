@@ -1,0 +1,63 @@
+{
+  "voice_id": "D7dkYvH17OKLgp4SLulf",
+  "model_id": "eleven_v4",
+  "language_code": "es",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.3,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 1.13
+  },
+  "scenes": [
+    {
+      "id": "R01",
+      "text": "Durante años, a Scribd lo llamaron «el Netflix de los libros». Hoy se llama Everand… y con su plan más barato eliges un libro al mes. Sí: uno. ¿Qué ha pasado? ¿Y sigue mereciendo la pena?"
+    },
+    {
+      "id": "R02",
+      "text": "Lo hemos analizado a fondo, con todos los datos y las fuentes en nuestro blog: enlace en la descripción."
+    },
+    {
+      "id": "R03",
+      "text": "Everand nació en 2023, cuando Scribd se partió en dos: Scribd se quedó con los documentos, y Everand, con los ebooks, los audiolibros y los podcasts. Desde 2025, además, se pagan por separado."
+    },
+    {
+      "id": "R04",
+      "text": "En octubre de 2024 se acabó el ilimitado. Ahora funciona con desbloqueos: el plan Standard te da un libro al mes; el Plus, tres, y el Deluxe, cinco. ¿Qué libros necesitan desbloqueo? La respuesta oficial: «la mayoría». Sin desbloquear tienes unos veinte mil títulos que van rotando, de un millón y medio. Los desbloqueos se guardan hasta seis meses… pero si cancelas, pierdes los libros: es un alquiler, no una compra."
+    },
+    {
+      "id": "R05",
+      "text": "¿Cuánto cuesta? En España, el Plus sale a 14,99 euros al mes: unos cinco euros por libro. En México, el Standard, 149 pesos. Y en Estados Unidos, el plan más caro sale más caro por libro que el Plus, según su propia web."
+    },
+    {
+      "id": "R06",
+      "text": "¿Y en español? Calculamos unos cuarenta y un mil audiolibros, con Penguin Random House y Planeta: García Márquez, Vargas Llosa, Ruiz Zafón, Pérez-Reverte, Posteguillo… Pero todos piden desbloqueo. Sin límites hay solo unos seiscientos en español, como «Crimen y castigo»… abreviado en dos horas. Y algunos usan voz sintética: mira el narrador antes de desbloquear."
+    },
+    {
+      "id": "R07",
+      "text": "La app, eso sí, está muy cuidada: descargas, velocidad, temporizador, y funciona en la web, el móvil, CarPlay y Android Auto. Lo que no hay: perfiles ni plan familiar."
+    },
+    {
+      "id": "R08",
+      "text": "Ojo con la prueba gratis: treinta días si te das de alta en la web, pero solo siete en la app, y con un único libro, elijas el plan que elijas. Pide tarjeta y se renueva sola. Y si te suscribiste desde el móvil, se cancela en Apple o Google, donde puede aparecer como «Scribd»."
+    },
+    {
+      "id": "R09",
+      "text": "Las opiniones lo reflejan: en Google Play tiene un 4,4 en España, pero un 3,5 en Estados Unidos, donde las quejas casi se cuadruplicaron tras el cambio. Y en septiembre, Scribd avisó de un incidente de seguridad: si tienes cuenta, cambia la contraseña."
+    },
+    {
+      "id": "R10",
+      "text": "Lo mejor: un catálogo enorme en español, con novedades, y ebooks y audiolibros en la misma app. Lo peor: ya no es ilimitado, los libros no son tuyos y la prueba tiene letra pequeña."
+    },
+    {
+      "id": "R11",
+      "text": "¿Para quién es? Si escuchas uno o dos libros al mes y buscas novedades, el Plus puede compensar. Si escuchas más, Audible ofrece escucha ilimitada de su catálogo por 9,99 euros, y Storytel, por 8,99. Y para clásicos gratis, ya lo sabes: El Libro Total."
+    },
+    {
+      "id": "R12",
+      "text": "¿La trampa? Que ya no es ilimitado, aunque mucha gente lo siga creyendo. Nuestra nota: 6,2 sobre 10. Y para saber dónde te sale más barato cada audiolibro, búscalo en SonorBooks. Tu próxima historia te está esperando."
+    }
+  ]
+}
