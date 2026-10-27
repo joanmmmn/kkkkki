@@ -73,6 +73,7 @@ Ceny, limity i okresy próbne Kobo Plus, Audioteki, Empik Go i Legimi porównasz
 ```
 
 ## Para Joan (español)
+- **27/10:** precios comprobados de nuevo en kobo.com/pl (desde tu PC): sin cambios (Read + Listen 49,90 zł, Read 39,90 zł, Listen 39,90 zł, 14 días gratis).
 - **Actualización 27/10/2026 — dominio:** sonorbooks.pl redirige ahora (301) a sonorbooks.com/pl/, y cualquier ruta de sonorbooks.pl/… lleva a la portada. Por eso los enlaces de la descripción y del comentario fijado apuntan ya a https://sonorbooks.com/pl/… (comprobados: responden 200). La voz y la pantalla dicen «sonorbooks.pl», que sigue funcionando gracias a la redirección; si prefieres que digan «sonorbooks.com», hay que regenerar los cierres.
 - Canal SonorBooks Polska. Idioma: **polaco**. «Incluye promoción pagada»: **No** (solo enlaza a sonorbooks.pl; el enlace de sonorbooks.pl a Kobo va directo a kobo.com, sin afiliación visible). «No, no es contenido creado para niños». Subtítulos: `kobo.pl.srt` (polaco).
 - Pantalla final: los últimos 7,5 s (cierre de SonorBooks).
