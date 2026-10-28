@@ -5,7 +5,7 @@ Cada tramo de plataforma (X03–X10) se rehace sin volver a grabar entero: la ap
 del tramo) se empalma con el resto de la locución original, desde la frase indicada en REM. Sale X03S–X10S (.mp3 y .json con
 las palabras de las dos partes en un solo eje de tiempos), que el vídeo usa en lugar de X03–X10 (`vid()` en timeline.ts).
 
-Además, para dar ritmo, las pausas largas entre frases se acortan (como mucho MAX_GAP s) en todo el empalme.
+Además, para dar ritmo, los silencios largos (medidos en el audio, no en el alineamiento) se acortan a MAX_GAP s como mucho.
 
 Uso: python3 tools/cnl_splice.py [X03 ...]
 """
@@ -42,32 +42,51 @@ def fade(x, a, b):
     return x
 
 
-def tighten(audio, words, max_gap):
-    """Acorta los silencios entre palabras más largos que max_gap. Devuelve el audio y las palabras con los tiempos nuevos."""
-    out, ws, t0, shift = [], [], 0.0, 0.0
-    cuts = []
-    for i in range(len(words) - 1):
-        gap = words[i + 1]['s'] - words[i]['e']
-        if gap > max_gap + 0.02:
-            # Se quita el centro del silencio (se deja max_gap repartido a los dos lados).
-            a = words[i]['e'] + max_gap / 2
-            b = words[i + 1]['s'] - max_gap / 2
-            cuts.append((a, b))
-    pos = 0
-    removed = []
+def frames_db(audio, hop=0.01):
+    n = int(hop * SR)
+    m = len(audio) // n
+    e = audio[:m * n].reshape(m, n)
+    return 20 * np.log10(np.sqrt((e ** 2).mean(1)) + 1e-9)
+
+
+def tighten(audio, words, max_gap, floor=-50.0, hop=0.01):
+    """Acorta los silencios de verdad (medidos en el audio, por debajo de `floor` dBFS) más largos que max_gap.
+    No se fía de los tiempos de las palabras: el alineamiento a veces da por silencio lo que aún es voz («plan… Gratis»)."""
+    db = frames_db(audio, hop)
+    quiet = db < floor
+    runs, i = [], 0
+    while i < len(quiet):
+        if quiet[i]:
+            j = i
+            while j < len(quiet) and quiet[j]:
+                j += 1
+            runs.append((i * hop, j * hop))
+            i = j
+        else:
+            i += 1
+    end = len(audio) / SR
+    cuts = [(a + max_gap / 2, b - max_gap / 2) for a, b in runs if b - a > max_gap + 0.02 and a > 0.05 and b < end - 0.05]
+    out, pos = [], 0
     for a, b in cuts:
         ia, ib = int(a * SR), int(b * SR)
-        seg = audio[pos:ia].copy()
-        out.append(fade(seg, 0 if pos == 0 else 64, 64))
-        removed.append((a, b - a))
+        out.append(fade(audio[pos:ia].copy(), 64 if pos else 0, 64))
         pos = ib
     out.append(fade(audio[pos:].copy(), 64 if pos else 0, 0))
-    def remap(t):
-        d = sum(l for a, l in removed if a < t)
-        return t - d
-    for w in words:
-        ws.append({**w, 's': round(remap(w['s']), 3), 'e': round(remap(w['e']), 3)})
+    removed = [(a, b - a) for a, b in cuts]
+    remap = lambda t: t - sum(l for a, l in removed if a < t)
+    ws = [{**w, 's': round(remap(w['s']), 3), 'e': round(remap(w['e']), 3)} for w in words]
     return np.concatenate(out), ws, sum(l for _, l in removed)
+
+
+def onset_cut(audio, t, floor=-55.0, look=0.25, hop=0.01):
+    """Punto de corte antes de la palabra que empieza (según el alineamiento) en t: el último instante en silencio antes de que
+    suene (el alineamiento puede ir unas centésimas tarde y comerse la «p» de «Pulsa»)."""
+    db = frames_db(audio, hop)
+    k = int(t / hop)
+    for j in range(k, max(0, k - int(look / hop)), -1):
+        if db[j] < floor:
+            return j * hop
+    return max(0.0, t - 0.05)
 
 
 def splice(x):
@@ -75,12 +94,13 @@ def splice(x):
     o = json.load(open(os.path.join(VO, f'{x}.json')))
     ow = o['words']
     i = next(k for k in range(len(ow) - 1) if n(ow[k]['w']) == n(REM[x][0]) and n(ow[k + 1]['w']) == n(REM[x][1]))
-    cut = max(ow[i - 1]['e'] + 0.02, ow[i]['s'] - 0.05) if i else ow[i]['s'] - 0.05
+    full = decode(os.path.join(VO, f'{x}.mp3'))
+    cut = onset_cut(full, ow[i]['s'])
     a_end = a.get('speechEnd', a['duration'])
     A = decode(os.path.join(VO, f'{x}A.mp3'))[:int(a_end * SR)]
-    B = decode(os.path.join(VO, f'{x}.mp3'))[int(cut * SR):int(o.get('speechEnd', o['duration']) * SR) + int(0.05 * SR)]
+    B = full[int(cut * SR):int(o.get('speechEnd', o['duration']) * SR) + int(0.05 * SR)]
     A = fade(A, 0, int(0.012 * SR))
-    B = fade(B, int(0.008 * SR), int(0.03 * SR))
+    B = fade(B, int(0.003 * SR), int(0.03 * SR))
     gap = np.zeros(int(GAP * SR), np.float32)
     audio = np.concatenate([A, gap, B])
     off = a_end + GAP - cut

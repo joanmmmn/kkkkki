@@ -1,0 +1,94 @@
+{
+ "id": "Y21",
+ "hash": "32857b8b63af",
+ "text": "¿Y ahora qué escuchas? En SonorBooks tenemos las mejores pruebas gratis, algunas exclusivas. Enlace en la descripción.",
+ "duration": 8.32,
+ "words": [
+  {
+   "w": "¿Y",
+   "s": 0.0,
+   "e": 0.12
+  },
+  {
+   "w": "ahora",
+   "s": 0.16,
+   "e": 0.4
+  },
+  {
+   "w": "qué",
+   "s": 0.48,
+   "e": 0.56
+  },
+  {
+   "w": "escuchas?",
+   "s": 0.68,
+   "e": 1.6
+  },
+  {
+   "w": "En",
+   "s": 1.68,
+   "e": 1.76
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.84,
+   "e": 2.48
+  },
+  {
+   "w": "tenemos",
+   "s": 2.56,
+   "e": 2.96
+  },
+  {
+   "w": "las",
+   "s": 3.04,
+   "e": 3.12
+  },
+  {
+   "w": "mejores",
+   "s": 3.2,
+   "e": 3.68
+  },
+  {
+   "w": "pruebas",
+   "s": 3.72,
+   "e": 4.0
+  },
+  {
+   "w": "gratis,",
+   "s": 4.08,
+   "e": 4.76
+  },
+  {
+   "w": "algunas",
+   "s": 4.8,
+   "e": 5.28
+  },
+  {
+   "w": "exclusivas.",
+   "s": 5.4,
+   "e": 6.52
+  },
+  {
+   "w": "Enlace",
+   "s": 6.56,
+   "e": 6.96
+  },
+  {
+   "w": "en",
+   "s": 7.0,
+   "e": 7.04
+  },
+  {
+   "w": "la",
+   "s": 7.12,
+   "e": 7.2
+  },
+  {
+   "w": "descripción.",
+   "s": 7.28,
+   "e": 8.32
+  }
+ ],
+ "speechEnd": 7.988
+}

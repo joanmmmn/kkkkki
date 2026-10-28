@@ -1,0 +1,99 @@
+{
+ "id": "X09A",
+ "hash": "032ae36e9485",
+ "text": "Para cancelar la suscripción de Audiobooks.com, se hace solo en su web: My Account y, abajo, Cancel Subscription.",
+ "duration": 7.92,
+ "words": [
+  {
+   "w": "Para",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "cancelar",
+   "s": 0.24,
+   "e": 0.64
+  },
+  {
+   "w": "la",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "suscripción",
+   "s": 0.88,
+   "e": 1.44
+  },
+  {
+   "w": "de",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "Audiobooks.com,",
+   "s": 1.64,
+   "e": 3.04
+  },
+  {
+   "w": "se",
+   "s": 3.12,
+   "e": 3.2
+  },
+  {
+   "w": "hace",
+   "s": 3.24,
+   "e": 3.44
+  },
+  {
+   "w": "solo",
+   "s": 3.52,
+   "e": 3.68
+  },
+  {
+   "w": "en",
+   "s": 3.76,
+   "e": 3.92
+  },
+  {
+   "w": "su",
+   "s": 3.96,
+   "e": 4.0
+  },
+  {
+   "w": "web:",
+   "s": 4.08,
+   "e": 4.72
+  },
+  {
+   "w": "My",
+   "s": 4.8,
+   "e": 4.88
+  },
+  {
+   "w": "Account",
+   "s": 4.96,
+   "e": 5.44
+  },
+  {
+   "w": "y,",
+   "s": 5.68,
+   "e": 5.893
+  },
+  {
+   "w": "abajo,",
+   "s": 6.027,
+   "e": 6.24
+  },
+  {
+   "w": "Cancel",
+   "s": 6.56,
+   "e": 6.96
+  },
+  {
+   "w": "Subscription.",
+   "s": 7.04,
+   "e": 7.92
+  }
+ ],
+ "speechEnd": 7.817
+}

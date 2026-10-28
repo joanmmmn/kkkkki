@@ -1,0 +1,104 @@
+{
+ "id": "Y25",
+ "hash": "8a24d0b721de",
+ "text": "¿Buscas otra? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de ElevenReader Ultra. Enlace en la descripción.",
+ "duration": 8.32,
+ "words": [
+  {
+   "w": "¿Buscas",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "otra?",
+   "s": 0.48,
+   "e": 1.12
+  },
+  {
+   "w": "En",
+   "s": 1.2,
+   "e": 1.28
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.36,
+   "e": 1.92
+  },
+  {
+   "w": "tenemos",
+   "s": 2.0,
+   "e": 2.32
+  },
+  {
+   "w": "las",
+   "s": 2.4,
+   "e": 2.48
+  },
+  {
+   "w": "mejores",
+   "s": 2.56,
+   "e": 2.96
+  },
+  {
+   "w": "pruebas",
+   "s": 3.04,
+   "e": 3.36
+  },
+  {
+   "w": "gratis,",
+   "s": 3.44,
+   "e": 4.08
+  },
+  {
+   "w": "como",
+   "s": 4.16,
+   "e": 4.32
+  },
+  {
+   "w": "treinta",
+   "s": 4.4,
+   "e": 4.64
+  },
+  {
+   "w": "días",
+   "s": 4.72,
+   "e": 5.04
+  },
+  {
+   "w": "de",
+   "s": 5.12,
+   "e": 5.2
+  },
+  {
+   "w": "ElevenReader",
+   "s": 5.32,
+   "e": 5.92
+  },
+  {
+   "w": "Ultra.",
+   "s": 6.0,
+   "e": 6.64
+  },
+  {
+   "w": "Enlace",
+   "s": 6.76,
+   "e": 7.12
+  },
+  {
+   "w": "en",
+   "s": 7.16,
+   "e": 7.2
+  },
+  {
+   "w": "la",
+   "s": 7.28,
+   "e": 7.32
+  },
+  {
+   "w": "descripción.",
+   "s": 7.36,
+   "e": 8.32
+  }
+ ],
+ "speechEnd": 8.154
+}

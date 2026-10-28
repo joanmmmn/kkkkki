@@ -1,0 +1,139 @@
+{
+ "id": "Y24",
+ "hash": "50816a8b5db5",
+ "text": "¿Veinte horas te sabían a poco? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de Storytel, sin límite de horas. Enlace en la descripción.",
+ "duration": 9.92,
+ "words": [
+  {
+   "w": "¿Veinte",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "horas",
+   "s": 0.4,
+   "e": 0.64
+  },
+  {
+   "w": "te",
+   "s": 0.72,
+   "e": 0.8
+  },
+  {
+   "w": "sabían",
+   "s": 0.88,
+   "e": 1.2
+  },
+  {
+   "w": "a",
+   "s": 1.24,
+   "e": 1.28
+  },
+  {
+   "w": "poco?",
+   "s": 1.36,
+   "e": 2.0
+  },
+  {
+   "w": "En",
+   "s": 2.08,
+   "e": 2.16
+  },
+  {
+   "w": "SonorBooks",
+   "s": 2.24,
+   "e": 2.88
+  },
+  {
+   "w": "tenemos",
+   "s": 2.96,
+   "e": 3.28
+  },
+  {
+   "w": "las",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "mejores",
+   "s": 3.6,
+   "e": 4.08
+  },
+  {
+   "w": "pruebas",
+   "s": 4.12,
+   "e": 4.48
+  },
+  {
+   "w": "gratis,",
+   "s": 4.72,
+   "e": 5.2
+  },
+  {
+   "w": "como",
+   "s": 5.28,
+   "e": 5.44
+  },
+  {
+   "w": "treinta",
+   "s": 5.52,
+   "e": 5.76
+  },
+  {
+   "w": "días",
+   "s": 5.84,
+   "e": 6.08
+  },
+  {
+   "w": "de",
+   "s": 6.12,
+   "e": 6.16
+  },
+  {
+   "w": "Storytel,",
+   "s": 6.24,
+   "e": 6.88
+  },
+  {
+   "w": "sin",
+   "s": 6.96,
+   "e": 7.04
+  },
+  {
+   "w": "límite",
+   "s": 7.12,
+   "e": 7.52
+  },
+  {
+   "w": "de",
+   "s": 7.56,
+   "e": 7.6
+  },
+  {
+   "w": "horas.",
+   "s": 7.68,
+   "e": 8.32
+  },
+  {
+   "w": "Enlace",
+   "s": 8.44,
+   "e": 8.8
+  },
+  {
+   "w": "en",
+   "s": 8.84,
+   "e": 8.88
+  },
+  {
+   "w": "la",
+   "s": 8.96,
+   "e": 9.0
+  },
+  {
+   "w": "descripción.",
+   "s": 9.04,
+   "e": 9.92
+  }
+ ],
+ "speechEnd": 9.92
+}

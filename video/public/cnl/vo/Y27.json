@@ -1,0 +1,134 @@
+{
+ "id": "Y27",
+ "hash": "0565c4c661ae",
+ "text": "¿Buscas más audiolibros en español? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de Nextory, en vez de catorce. Enlace en la descripción.",
+ "duration": 10.72,
+ "words": [
+  {
+   "w": "¿Buscas",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "más",
+   "s": 0.48,
+   "e": 0.64
+  },
+  {
+   "w": "audiolibros",
+   "s": 0.76,
+   "e": 1.28
+  },
+  {
+   "w": "en",
+   "s": 1.32,
+   "e": 1.36
+  },
+  {
+   "w": "español?",
+   "s": 1.44,
+   "e": 2.36
+  },
+  {
+   "w": "En",
+   "s": 2.4,
+   "e": 2.56
+  },
+  {
+   "w": "SonorBooks",
+   "s": 2.64,
+   "e": 3.36
+  },
+  {
+   "w": "tenemos",
+   "s": 3.44,
+   "e": 3.76
+  },
+  {
+   "w": "las",
+   "s": 3.84,
+   "e": 3.92
+  },
+  {
+   "w": "mejores",
+   "s": 4.0,
+   "e": 4.48
+  },
+  {
+   "w": "pruebas",
+   "s": 4.52,
+   "e": 4.8
+  },
+  {
+   "w": "gratis,",
+   "s": 4.88,
+   "e": 5.56
+  },
+  {
+   "w": "como",
+   "s": 5.6,
+   "e": 5.84
+  },
+  {
+   "w": "treinta",
+   "s": 5.88,
+   "e": 6.16
+  },
+  {
+   "w": "días",
+   "s": 6.24,
+   "e": 6.48
+  },
+  {
+   "w": "de",
+   "s": 6.56,
+   "e": 6.64
+  },
+  {
+   "w": "Nextory,",
+   "s": 6.8,
+   "e": 7.413
+  },
+  {
+   "w": "en",
+   "s": 7.467,
+   "e": 7.52
+  },
+  {
+   "w": "vez",
+   "s": 7.6,
+   "e": 7.76
+  },
+  {
+   "w": "de",
+   "s": 7.8,
+   "e": 7.84
+  },
+  {
+   "w": "catorce.",
+   "s": 7.92,
+   "e": 8.92
+  },
+  {
+   "w": "Enlace",
+   "s": 8.96,
+   "e": 9.36
+  },
+  {
+   "w": "en",
+   "s": 9.44,
+   "e": 9.52
+  },
+  {
+   "w": "la",
+   "s": 9.56,
+   "e": 9.6
+  },
+  {
+   "w": "descripción.",
+   "s": 9.68,
+   "e": 10.72
+  }
+ ],
+ "speechEnd": 10.453
+}

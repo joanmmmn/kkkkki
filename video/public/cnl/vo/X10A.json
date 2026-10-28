@@ -1,0 +1,139 @@
+{
+ "id": "X10A",
+ "hash": "273530fc4a25",
+ "text": "Para cancelar la suscripción de iVoox Premium, no hace falta salir de la app: la rueda de Ajustes, Cancelar servicio premium, Cancelar suscripción y Cancelar Premium.",
+ "duration": 10.56,
+ "words": [
+  {
+   "w": "Para",
+   "s": 0.0,
+   "e": 0.14
+  },
+  {
+   "w": "cancelar",
+   "s": 0.16,
+   "e": 0.6
+  },
+  {
+   "w": "la",
+   "s": 0.64,
+   "e": 0.76
+  },
+  {
+   "w": "suscripción",
+   "s": 0.8,
+   "e": 1.44
+  },
+  {
+   "w": "de",
+   "s": 1.48,
+   "e": 1.52
+  },
+  {
+   "w": "iVoox",
+   "s": 1.6,
+   "e": 1.88
+  },
+  {
+   "w": "Premium,",
+   "s": 1.92,
+   "e": 2.56
+  },
+  {
+   "w": "no",
+   "s": 2.64,
+   "e": 2.72
+  },
+  {
+   "w": "hace",
+   "s": 2.773,
+   "e": 2.88
+  },
+  {
+   "w": "falta",
+   "s": 2.96,
+   "e": 3.2
+  },
+  {
+   "w": "salir",
+   "s": 3.28,
+   "e": 3.6
+  },
+  {
+   "w": "de",
+   "s": 3.64,
+   "e": 3.68
+  },
+  {
+   "w": "la",
+   "s": 3.72,
+   "e": 3.76
+  },
+  {
+   "w": "app:",
+   "s": 3.84,
+   "e": 4.48
+  },
+  {
+   "w": "la",
+   "s": 4.56,
+   "e": 4.64
+  },
+  {
+   "w": "rueda",
+   "s": 4.72,
+   "e": 4.96
+  },
+  {
+   "w": "de",
+   "s": 5.0,
+   "e": 5.04
+  },
+  {
+   "w": "Ajustes,",
+   "s": 5.08,
+   "e": 5.8
+  },
+  {
+   "w": "Cancelar",
+   "s": 5.92,
+   "e": 6.4
+  },
+  {
+   "w": "servicio",
+   "s": 6.52,
+   "e": 6.88
+  },
+  {
+   "w": "premium,",
+   "s": 6.96,
+   "e": 7.68
+  },
+  {
+   "w": "Cancelar",
+   "s": 7.92,
+   "e": 8.16
+  },
+  {
+   "w": "suscripción",
+   "s": 8.28,
+   "e": 8.96
+  },
+  {
+   "w": "y",
+   "s": 9.2,
+   "e": 9.28
+  },
+  {
+   "w": "Cancelar",
+   "s": 9.36,
+   "e": 9.84
+  },
+  {
+   "w": "Premium.",
+   "s": 9.92,
+   "e": 10.56
+  }
+ ],
+ "speechEnd": 10.56
+}

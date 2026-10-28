@@ -1,0 +1,99 @@
+{
+ "id": "Y26",
+ "hash": "a303e16dde94",
+ "text": "¿Prefieres una app en español? En SonorBooks tenemos las mejores pruebas gratis, algunas exclusivas. Enlace en la descripción.",
+ "duration": 8.48,
+ "words": [
+  {
+   "w": "¿Prefieres",
+   "s": 0.0,
+   "e": 0.56
+  },
+  {
+   "w": "una",
+   "s": 0.64,
+   "e": 0.72
+  },
+  {
+   "w": "app",
+   "s": 0.84,
+   "e": 0.96
+  },
+  {
+   "w": "en",
+   "s": 1.0,
+   "e": 1.04
+  },
+  {
+   "w": "español?",
+   "s": 1.12,
+   "e": 1.76
+  },
+  {
+   "w": "En",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "SonorBooks",
+   "s": 2.16,
+   "e": 2.8
+  },
+  {
+   "w": "tenemos",
+   "s": 2.88,
+   "e": 3.2
+  },
+  {
+   "w": "las",
+   "s": 3.28,
+   "e": 3.44
+  },
+  {
+   "w": "mejores",
+   "s": 3.52,
+   "e": 3.92
+  },
+  {
+   "w": "pruebas",
+   "s": 4.0,
+   "e": 4.32
+  },
+  {
+   "w": "gratis,",
+   "s": 4.4,
+   "e": 5.12
+  },
+  {
+   "w": "algunas",
+   "s": 5.24,
+   "e": 5.6
+  },
+  {
+   "w": "exclusivas.",
+   "s": 5.68,
+   "e": 6.64
+  },
+  {
+   "w": "Enlace",
+   "s": 6.8,
+   "e": 7.28
+  },
+  {
+   "w": "en",
+   "s": 7.32,
+   "e": 7.36
+  },
+  {
+   "w": "la",
+   "s": 7.4,
+   "e": 7.44
+  },
+  {
+   "w": "descripción.",
+   "s": 7.52,
+   "e": 8.48
+  }
+ ],
+ "speechEnd": 8.48
+}

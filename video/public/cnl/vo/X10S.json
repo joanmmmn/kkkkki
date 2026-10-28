@@ -1,0 +1,196 @@
+{
+ "id": "X10S",
+ "text": "Para cancelar la suscripción de iVoox Premium, no hace falta salir de la app: la rueda de Ajustes, Cancelar servicio premium, Cancelar suscripción y Cancelar Premium. Mantienes el acceso hasta treinta días después del último cobro.",
+ "duration": 14.41,
+ "speechEnd": 14.16,
+ "prefixEnd": 1.6,
+ "words": [
+  {
+   "w": "Para",
+   "s": 0.0,
+   "e": 0.14
+  },
+  {
+   "w": "cancelar",
+   "s": 0.16,
+   "e": 0.6
+  },
+  {
+   "w": "la",
+   "s": 0.64,
+   "e": 0.76
+  },
+  {
+   "w": "suscripción",
+   "s": 0.8,
+   "e": 1.44
+  },
+  {
+   "w": "de",
+   "s": 1.48,
+   "e": 1.52
+  },
+  {
+   "w": "iVoox",
+   "s": 1.6,
+   "e": 1.88
+  },
+  {
+   "w": "Premium,",
+   "s": 1.92,
+   "e": 2.56
+  },
+  {
+   "w": "no",
+   "s": 2.64,
+   "e": 2.72
+  },
+  {
+   "w": "hace",
+   "s": 2.773,
+   "e": 2.88
+  },
+  {
+   "w": "falta",
+   "s": 2.96,
+   "e": 3.2
+  },
+  {
+   "w": "salir",
+   "s": 3.28,
+   "e": 3.6
+  },
+  {
+   "w": "de",
+   "s": 3.64,
+   "e": 3.68
+  },
+  {
+   "w": "la",
+   "s": 3.72,
+   "e": 3.76
+  },
+  {
+   "w": "app:",
+   "s": 3.84,
+   "e": 4.38
+  },
+  {
+   "w": "la",
+   "s": 4.46,
+   "e": 4.54
+  },
+  {
+   "w": "rueda",
+   "s": 4.62,
+   "e": 4.86
+  },
+  {
+   "w": "de",
+   "s": 4.9,
+   "e": 4.94
+  },
+  {
+   "w": "Ajustes,",
+   "s": 4.98,
+   "e": 5.7
+  },
+  {
+   "w": "Cancelar",
+   "s": 5.82,
+   "e": 6.3
+  },
+  {
+   "w": "servicio",
+   "s": 6.42,
+   "e": 6.78
+  },
+  {
+   "w": "premium,",
+   "s": 6.86,
+   "e": 7.58
+  },
+  {
+   "w": "Cancelar",
+   "s": 7.82,
+   "e": 8.06
+  },
+  {
+   "w": "suscripción",
+   "s": 8.18,
+   "e": 8.86
+  },
+  {
+   "w": "y",
+   "s": 9.1,
+   "e": 9.18
+  },
+  {
+   "w": "Cancelar",
+   "s": 9.26,
+   "e": 9.74
+  },
+  {
+   "w": "Premium.",
+   "s": 9.82,
+   "e": 10.46
+  },
+  {
+   "w": "Mantienes",
+   "s": 10.72,
+   "e": 11.12
+  },
+  {
+   "w": "el",
+   "s": 11.16,
+   "e": 11.2
+  },
+  {
+   "w": "acceso",
+   "s": 11.28,
+   "e": 11.6
+  },
+  {
+   "w": "hasta",
+   "s": 11.68,
+   "e": 11.92
+  },
+  {
+   "w": "treinta",
+   "s": 12.0,
+   "e": 12.32
+  },
+  {
+   "w": "días",
+   "s": 12.4,
+   "e": 12.72
+  },
+  {
+   "w": "después",
+   "s": 12.84,
+   "e": 13.12
+  },
+  {
+   "w": "del",
+   "s": 13.2,
+   "e": 13.28
+  },
+  {
+   "w": "último",
+   "s": 13.32,
+   "e": 13.6
+  },
+  {
+   "w": "cobro.",
+   "s": 13.68,
+   "e": 14.16
+  }
+ ],
+ "from": {
+  "open": "X10A",
+  "rest": "X10",
+  "cut": 9.96,
+  "gap": 0.26,
+  "tightened": 0.14
+ }
+}

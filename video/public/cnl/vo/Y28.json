@@ -1,0 +1,109 @@
+{
+ "id": "Y28",
+ "hash": "a94becfbc5a6",
+ "text": "¿Quieres algo más que pódcasts? En SonorBooks tenemos las mejores pruebas gratis de audiolibros, algunas exclusivas. Enlace en la descripción.",
+ "duration": 9.04,
+ "words": [
+  {
+   "w": "¿Quieres",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "algo",
+   "s": 0.44,
+   "e": 0.56
+  },
+  {
+   "w": "más",
+   "s": 0.64,
+   "e": 0.8
+  },
+  {
+   "w": "que",
+   "s": 0.88,
+   "e": 0.96
+  },
+  {
+   "w": "pódcasts?",
+   "s": 1.04,
+   "e": 1.92
+  },
+  {
+   "w": "En",
+   "s": 2.0,
+   "e": 2.08
+  },
+  {
+   "w": "SonorBooks",
+   "s": 2.16,
+   "e": 2.88
+  },
+  {
+   "w": "tenemos",
+   "s": 2.96,
+   "e": 3.28
+  },
+  {
+   "w": "las",
+   "s": 3.36,
+   "e": 3.44
+  },
+  {
+   "w": "mejores",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "pruebas",
+   "s": 3.92,
+   "e": 4.24
+  },
+  {
+   "w": "gratis",
+   "s": 4.32,
+   "e": 4.64
+  },
+  {
+   "w": "de",
+   "s": 4.68,
+   "e": 4.72
+  },
+  {
+   "w": "audiolibros,",
+   "s": 4.84,
+   "e": 5.68
+  },
+  {
+   "w": "algunas",
+   "s": 5.8,
+   "e": 6.24
+  },
+  {
+   "w": "exclusivas.",
+   "s": 6.32,
+   "e": 7.44
+  },
+  {
+   "w": "Enlace",
+   "s": 7.52,
+   "e": 7.92
+  },
+  {
+   "w": "en",
+   "s": 7.96,
+   "e": 8.0
+  },
+  {
+   "w": "la",
+   "s": 8.04,
+   "e": 8.08
+  },
+  {
+   "w": "descripción.",
+   "s": 8.16,
+   "e": 9.04
+  }
+ ],
+ "speechEnd": 9.04
+}

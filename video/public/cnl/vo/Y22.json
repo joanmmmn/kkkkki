@@ -1,0 +1,119 @@
+{
+ "id": "Y22",
+ "hash": "7ff3e564c94c",
+ "text": "¿Buscas otra? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de Nextory, en vez de catorce. Enlace en la descripción.",
+ "duration": 8.96,
+ "words": [
+  {
+   "w": "¿Buscas",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "otra?",
+   "s": 0.48,
+   "e": 0.92
+  },
+  {
+   "w": "En",
+   "s": 1.12,
+   "e": 1.28
+  },
+  {
+   "w": "SonorBooks",
+   "s": 1.36,
+   "e": 1.92
+  },
+  {
+   "w": "tenemos",
+   "s": 2.0,
+   "e": 2.32
+  },
+  {
+   "w": "las",
+   "s": 2.4,
+   "e": 2.48
+  },
+  {
+   "w": "mejores",
+   "s": 2.64,
+   "e": 3.12
+  },
+  {
+   "w": "pruebas",
+   "s": 3.16,
+   "e": 3.44
+  },
+  {
+   "w": "gratis,",
+   "s": 3.52,
+   "e": 4.16
+  },
+  {
+   "w": "como",
+   "s": 4.24,
+   "e": 4.4
+  },
+  {
+   "w": "treinta",
+   "s": 4.48,
+   "e": 4.8
+  },
+  {
+   "w": "días",
+   "s": 4.88,
+   "e": 5.12
+  },
+  {
+   "w": "de",
+   "s": 5.2,
+   "e": 5.24
+  },
+  {
+   "w": "Nextory,",
+   "s": 5.28,
+   "e": 6.0
+  },
+  {
+   "w": "en",
+   "s": 6.08,
+   "e": 6.16
+  },
+  {
+   "w": "vez",
+   "s": 6.24,
+   "e": 6.32
+  },
+  {
+   "w": "de",
+   "s": 6.4,
+   "e": 6.44
+  },
+  {
+   "w": "catorce.",
+   "s": 6.48,
+   "e": 7.28
+  },
+  {
+   "w": "Enlace",
+   "s": 7.36,
+   "e": 7.76
+  },
+  {
+   "w": "en",
+   "s": 7.8,
+   "e": 7.84
+  },
+  {
+   "w": "la",
+   "s": 7.92,
+   "e": 7.96
+  },
+  {
+   "w": "descripción.",
+   "s": 8.0,
+   "e": 8.96
+  }
+ ],
+ "speechEnd": 8.782
+}
