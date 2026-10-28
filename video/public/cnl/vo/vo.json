@@ -60,6 +60,103 @@
   {
    "id": "X12",
    "text": "Tienes todos los pasos, con capturas, en el artículo de la descripción, y la reseña de cada plataforma, en el canal. Y si buscas otra, en SonorBooks comparas precios y pruebas gratis de todas."
+  },
+  {
+   "id": "X03A",
+   "text": "Para cancelar la suscripción de Audible, desde la app no se puede: la propia app te manda a su web.",
+   "prev": "",
+   "next": "En audible.es, entra en tu cuenta, Detalles de la suscripción, y pulsa Cancelar suscripción. Antes te ofrecerá una pausa o un descuento: pulsa No, gracias, prefiero cancelar, y después Finalizar cancelación. Si pagabas, sigues escuchando hasta el final del mes; y los libros que compraste son tuyos para siempre."
+  },
+  {
+   "id": "X04A",
+   "text": "Para cancelar la suscripción de Storytel, en la app ve a Perfil, la rueda de Configuración y Suscripción.",
+   "prev": "",
+   "next": "Te pide iniciar sesión en su web, y allí: Suscripción, Cancelar y Confirmar cancelación. Ojo: si estás en la prueba gratis, se acaba al momento."
+  },
+  {
+   "id": "X05A",
+   "text": "Para cancelar la suscripción de Spotify Premium, ve a su web.",
+   "prev": "",
+   "next": "En tu cuenta, Cancelar suscripción; te enseña lo que cambia, pulsa Continuar y Sí, cancelar. Si eres el titular de un Duo o un Familiar, das de baja a todos. Pasas a Free cuando acaba el mes pagado, y si tenías Audiolibros+, también se cancela."
+  },
+  {
+   "id": "X06A",
+   "text": "Para cancelar la suscripción de Podimo, en la app ve a Configuración y Gestionar suscripción. Al pulsar Cancelar, te dice que no se puede desde ahí, pero te lleva a su web con la sesión iniciada.",
+   "prev": "",
+   "next": "Pulsa otra vez Cancelar suscripción y prepárate: una oferta de tres meses por un euro, una encuesta y un último ¿seguro? En la prueba, pierdes el Premium al momento y pasas al plan Gratis.",
+   "say": "Para cancelar la suscripción de Podímo, en la app ve a Configuración y Gestionar suscripción. Al pulsar Cancelar, te dice que no se puede desde ahí, pero te lleva a su web con la sesión iniciada."
+  },
+  {
+   "id": "X07A",
+   "text": "Para cancelar la suscripción de Nextory, en la app ve a Editar cuenta y Cambiar: solo te dirá que vayas a la web.",
+   "prev": "",
+   "next": "Allí, en Mis páginas, Cancela tu suscripción. Primero, lo que te perderás; luego, otra oferta: quince días gratis y cinco horas. Sigue con Continuar con la cancelación, elige un motivo, marca Lo entiendo y confirma. En la prueba, el acceso se corta al momento."
+  },
+  {
+   "id": "X08A",
+   "text": "Para cancelar la suscripción de BookBeat, en la app ve a Profile y Account Information: se abre su web, en inglés.",
+   "prev": "",
+   "next": "En el menú, Manage subscription y Cancel free trial: te avisa de que la prueba se acaba en el acto. Luego, Continue cancellation, un motivo y Confirm cancellation. Y apúntate la fecha: BookBeat no avisa antes de cobrar."
+  },
+  {
+   "id": "X09A",
+   "text": "Para cancelar la suscripción de Audiobooks.com, se hace solo en su web: My Account y, abajo, Cancel Subscription.",
+   "prev": "",
+   "next": "Te avisa de que perderás el libro de la prueba. Si solo quieres que no te cobren por sorpresa, Email Me Instead te manda un recordatorio antes. Si no, Continue to Cancel, un motivo y Confirm Cancel. Es inmediato."
+  },
+  {
+   "id": "X10A",
+   "text": "Para cancelar la suscripción de iVoox Premium, no hace falta salir de la app: la rueda de Ajustes, Cancelar servicio premium, Cancelar suscripción y Cancelar Premium.",
+   "prev": "",
+   "next": "Mantienes el acceso hasta treinta días después del último cobro."
+  },
+  {
+   "id": "Y21",
+   "text": "¿Y ahora qué escuchas? En SonorBooks tenemos las mejores pruebas gratis, algunas exclusivas. Enlace en la descripción.",
+   "prev": "Si pagabas, sigues escuchando hasta el final del mes; y los libros que compraste son tuyos para siempre.",
+   "next": ""
+  },
+  {
+   "id": "Y22",
+   "text": "¿Buscas otra? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de Nextory, en vez de catorce. Enlace en la descripción.",
+   "prev": "Ojo: si estás en la prueba gratis, se acaba al momento.",
+   "next": ""
+  },
+  {
+   "id": "Y23",
+   "text": "¿Y tus audiolibros? En SonorBooks tenemos las mejores pruebas gratis, algunas exclusivas. Enlace en la descripción.",
+   "prev": "Pasas a Free cuando acaba el mes pagado, y si tenías Audiolibros+, también se cancela.",
+   "next": ""
+  },
+  {
+   "id": "Y24",
+   "text": "¿Veinte horas te sabían a poco? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de Storytel, sin límite de horas. Enlace en la descripción.",
+   "prev": "En la prueba, pierdes el Premium al momento y pasas al plan Gratis.",
+   "next": ""
+  },
+  {
+   "id": "Y25",
+   "text": "¿Buscas otra? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de ElevenReader Ultra. Enlace en la descripción.",
+   "prev": "En la prueba, el acceso se corta al momento.",
+   "next": ""
+  },
+  {
+   "id": "Y26",
+   "text": "¿Prefieres una app en español? En SonorBooks tenemos las mejores pruebas gratis, algunas exclusivas. Enlace en la descripción.",
+   "prev": "Y apúntate la fecha: BookBeat no avisa antes de cobrar.",
+   "next": ""
+  },
+  {
+   "id": "Y27",
+   "text": "¿Buscas más audiolibros en español? En SonorBooks tenemos las mejores pruebas gratis, como treinta días de Nextory, en vez de catorce. Enlace en la descripción.",
+   "prev": "Es inmediato.",
+   "next": ""
+  },
+  {
+   "id": "Y28",
+   "text": "¿Quieres algo más que pódcasts? En SonorBooks tenemos las mejores pruebas gratis de audiolibros, algunas exclusivas. Enlace en la descripción.",
+   "prev": "Mantienes el acceso hasta treinta días después del último cobro.",
+   "next": ""
   }
  ]
 }

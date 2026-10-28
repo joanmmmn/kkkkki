@@ -2,8 +2,8 @@
 """Música de los tutoriales «Cómo cancelar»: piezas ya compuestas para el canal (las de la reseña de Nextory y las de la guía de
 Stephen King, como en «Las mejores plataformas»), sin gastar créditos.
 
-Cada tutorial (video/src/scenes/cnl/videos.json) lleva su pieza (`piece`) desde la entrada hasta las tiendas y el final de
-«i_rutas» en el cierre, cruzadas como en las reseñas (la saliente se filtra y se apaga; la entrante sube en 0,6 s).
+Cada tutorial (video/src/scenes/cnl/videos.json) lleva su pieza (`piece`) desde el principio hasta las tiendas y el final de
+«i_rutas» en la promo de SonorBooks y la pantalla final (v2, 28/10/2026), cruzadas como en las reseñas (la saliente se filtra y se apaga; la entrante sube en 0,6 s).
 Uso: python3 tools/cnl_music.py [k ...]   → video/public/music/cnl_<k>.mp3
 """
 import json, os, subprocess, sys
@@ -18,14 +18,15 @@ V = cnl_meta.V
 
 
 def video_scenes(v):
-    """Las cuentas de video/src/scenes/cnl/videos.ts (scenesOf)."""
-    seg = {s['id']: s for s in cnl_meta.review_scenes()[0]}[v['seg']]
-    skip = seg['lead'] + cnl_meta.sec(v['cut']) if v['cut'] > 0 else 0
-    out = [{'kind': 'hook', 'id': v['hook'], 'lead': 25, 'dur': 25 + cnl_meta.speech_frames(v['hook']) + 17 + 14, 'skip': 0},
-           {'kind': 'seg', 'id': v['seg'], 'lead': seg['lead'], 'dur': seg['dur'] - skip, 'skip': skip}]
+    """Las cuentas de video/src/scenes/cnl/videos.ts (scenesOf, v2): tramo → tiendas (si aplica) → promo → pantalla final."""
+    T = json.load(open(os.path.join(V, 'src/scenes/cnl/videos.json')))['timing']
+    sec = cnl_meta.sec
+    lead, pl = sec(T['lead']), sec(T['promoLead'])
+    out = [{'kind': 'seg', 'id': v['seg'], 'lead': lead, 'dur': lead + cnl_meta.speech_frames(v['seg']) + sec(T['done']), 'skip': 0}]
     if v['store']:
-        out.append({'kind': 'store', 'id': 'T', 'lead': 0, 'dur': 320, 'skip': 0})
-    out.append({'kind': 'close', 'id': v['close'], 'lead': 20, 'dur': 20 + cnl_meta.speech_frames(v['close']) + 17 + 260, 'skip': 0})
+        out.append({'kind': 'store', 'id': 'T', 'lead': 0, 'dur': sec(T['store']), 'skip': 0})
+    out.append({'kind': 'promo', 'id': v['promo'], 'lead': pl, 'dur': pl + cnl_meta.speech_frames(v['promo']) + sec(T['promoTail']), 'skip': 0})
+    out.append({'kind': 'end', 'id': 'E', 'lead': 0, 'dur': sec(T['end']), 'skip': 0})
     a = 0
     for s in out:
         s['at'] = a
@@ -85,9 +86,10 @@ def main():
         if only and v['k'] not in only:
             continue
         scenes, total = video_scenes(v)
-        close = next(s for s in scenes if s['kind'] == 'close')
+        promo = next(s for s in scenes if s['kind'] == 'promo')
         folder, name, bpm = v['piece']
-        blocks = [(folder, name, 0, bpm, False), ('skg_parts', 'i_rutas', close['at'], 96, True)]
+        # La pieza de la plataforma hasta las tiendas; la promo y la pantalla final, con el final de «i_rutas» (más arriba de energía).
+        blocks = [(folder, name, 0, bpm, False), ('skg_parts', 'i_rutas', promo['at'], 96, True)]
         dst = os.path.join(OUT, f"cnl_{v['k']}.mp3")
         build(blocks, total, dst)
         print(f"{v['k']:11} {total / FPS:6.2f} s → {os.path.relpath(dst, cnl_meta.ROOT)}")

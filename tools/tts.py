@@ -60,8 +60,10 @@ def main():
             'model_id': cfg['model_id'],
             'voice_settings': {**cfg['voice_settings'], **sc.get('voice_settings', {})},
             'language_code': cfg.get('language_code', 'es'),
-            'previous_text': scenes[i - 1].get('say', scenes[i - 1]['text']) if i > 0 else None,
-            'next_text': scenes[i + 1].get('say', scenes[i + 1]['text']) if i + 1 < len(scenes) else None,
+            # `prev` / `next` (opcionales): el texto que suena antes y después, cuando no es el de la escena vecina en vo.json
+            # (p. ej. una apertura nueva que se empalma con el resto de una locución anterior). "" = nada.
+            'previous_text': (sc['prev'] or None) if 'prev' in sc else (scenes[i - 1].get('say', scenes[i - 1]['text']) if i > 0 else None),
+            'next_text': (sc['next'] or None) if 'next' in sc else (scenes[i + 1].get('say', scenes[i + 1]['text']) if i + 1 < len(scenes) else None),
         }
         # La caché solo depende del texto propio y los ajustes (no de las escenas vecinas) para no regenerar de más.
         h = hashlib.sha1(json.dumps([sc['text'], body['model_id'], body['voice_settings'], cfg['voice_id']] + ([spoken] if spoken != sc['text'] else []), sort_keys=True).encode()).hexdigest()[:12]

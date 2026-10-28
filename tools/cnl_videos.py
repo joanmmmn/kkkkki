@@ -6,7 +6,8 @@ Uso: python3 tools/cnl_videos.py [k ...]
 
 Las escenas repiten las cuentas de video/src/scenes/cnl/videos.ts (las de tools/cnl_music.py); los pasos y las fechas salen de
 las guías del blog (web/cancelar/data.py). Son vídeos de menos de un minuto: sin capítulos (YouTube pide tres de 10 s como mínimo)
-y sin enlaces de afiliado, así que no llevan «Incluye promoción pagada».
+y solo enlazan a la web de SonorBooks (la afiliación está en la web), así que no llevan «Incluye promoción pagada».
+v2 (28/10/2026): empiezan con «Para cancelar la suscripción de X…» y acaban con la promo de las pruebas gratis de SonorBooks.
 """
 import importlib.util, json, os, sys
 
@@ -21,6 +22,7 @@ data = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(data)
 
 WEB = 'https://sonorbooks.com'
+PROMO = f'{WEB}/es/plataformas/'
 # Las reseñas publicadas en el canal (tools/mp_youtube.py; la de iVoox, ri7JcUIrIak).
 RESENA = {'audible': 'nnRXlXi2rCk', 'storytel': 'nPBV7b4Vowc', 'spotify': '5dKjJSF9knU', 'podimo': 'dy4RVorr39o', 'nextory': 'x9dF1JRrej0',
           'bookbeat': 'GpNFV9wZ-BM', 'audiobooks': 'cif771omGrQ', 'ivoox': 'ri7JcUIrIak'}
@@ -78,15 +80,15 @@ def quick(p, key):
 
 
 def end_card(v, scenes):
-    """Desde cuándo está la pantalla final de SonorBooks (el cierre la abre 16 fotogramas antes de «SonorBooks»)."""
-    close = next(s for s in scenes if s['kind'] == 'close')
-    w = next(x for x in cnl_meta.vo(v['close'])['words'] if cnl_meta._n(x['w']).startswith('sonorbooks'))
-    return (close['at'] + close['lead'] + round(w['s'] * FPS) - 16) / FPS
+    """Desde cuándo está la pantalla final de SonorBooks (v2: la escena `end`, con la mitad de abajo libre)."""
+    end = next(s for s in scenes if s['kind'] == 'end')
+    return end['at'] / FPS
 
 
 def descripcion(k, p, store):
     art = f'{WEB}/es/blog/{p["slug"]}/'
-    L = [p['desc'], '', f'📖 Todos los pasos, con las capturas de cada pantalla: {art}', '']
+    L = [p['desc'], '', f'📖 Todos los pasos, con las capturas de cada pantalla: {art}',
+         f'🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): {PROMO}', '']
     L.append('✅ Los pasos')
     L.append(quick(p, 'Pasos'))
     # El resto de la respuesta rápida de la guía (el «ojo», la oferta, qué pierdes…), propia de cada plataforma.
@@ -107,7 +109,7 @@ def descripcion(k, p, store):
     else:
         L.append(f'📌 Cancelación real, hecha el {data.FECHA_TXT} en una cuenta nuestra. Las pantallas pueden cambiar; si ves otra, dínoslo en los comentarios.')
     L.append('')
-    L.append('Sin enlaces de afiliado. Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.')
+    L.append('En esta descripción no hay enlaces de afiliado; en SonorBooks, algunos sí lo son (se indica en la web). Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.')
     L.append('')
     L.append(f'#Cancelar{HASH[k]} #{HASH[k]} #Audiolibros')
     return '\n'.join(x for i, x in enumerate(L) if x or (i and L[i - 1]))
@@ -134,8 +136,7 @@ def main():
         scenes, total = video_scenes(v)
         out = os.path.join(ROOT, 'deliverables', f'cancelar-{k}')
         os.makedirs(out, exist_ok=True)
-        sub = [{'id': s['id'], 'at': s['at'], 'lead': s['lead'], 'skip': s['skip'], 'cut': v['cut'] if s['kind'] == 'seg' else 0}
-               for s in scenes if s['kind'] != 'store']
+        sub = [{'id': s['id'], 'at': s['at'], 'lead': s['lead'], 'skip': 0, 'cut': 0} for s in scenes if s['kind'] in ('seg', 'promo')]
         srt = cnl_meta.cues(sub)
         open(os.path.join(out, f'cancelar_{k}.es.srt'), 'w').write(srt)
         desc = descripcion(k, p, v['store'])
@@ -151,13 +152,13 @@ def main():
             f'## Título ({len(TITULO[k])} caracteres)', f'**{TITULO[k]}**', '', f'Alternativa: {ALT[k]} ({len(ALT[k])})', '',
             f'## Descripción ({len(desc.encode())} de 5.000 bytes)', '```', desc, '```', '',
             f'## Etiquetas ({len(tags)}; {len(tt)} de 500 caracteres)', '```', tt, '```', '',
-            '## Comentario fijado', '```', PREGUNTA[k], f'Todos los pasos, con capturas: {art}', '```', '',
+            '## Comentario fijado', '```', PREGUNTA[k], f'Todos los pasos, con capturas: {art}', f'🎁 Y si buscas otra, las mejores pruebas gratis (algunas exclusivas): {PROMO}', '```', '',
             '## Al subir',
             '- Canal SonorBooks España. Idioma Español (España). «No, no es contenido creado para niños». Contenido alterado: No. Categoría: Gente y blogs.',
-            '- «Incluye promoción pagada»: no (sin enlaces de afiliado).',
+            '- «Incluye promoción pagada»: no (solo enlaza a la web de SonorBooks; la afiliación está en la web y se indica allí).',
             '- Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.',
             f'- Subtítulos: `cancelar_{k}.es.srt` (Español, España). Miniatura: `miniatura.png`.',
-            f'- Pantalla final desde {int(ec // 60)}:{fmt(ec % 60).zfill(4)} ({fmt(dur - ec)} s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de {p["name"]}, https://youtu.be/{RESENA[k]}) + suscribirse.',
+            f'- Pantalla final desde {int(ec // 60)}:{fmt(ec % 60).zfill(4)} ({fmt(dur - ec)} s; la marca de SonorBooks y la web arriba, la mitad de abajo libre): vídeo (la reseña de {p["name"]}, https://youtu.be/{RESENA[k]}) + suscribirse.',
             f'- El artículo ({art}) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt {k}=<ID>`.',
         ]
         open(os.path.join(out, 'youtube.md'), 'w').write('\n'.join(md) + '\n')

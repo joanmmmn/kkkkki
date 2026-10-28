@@ -137,7 +137,7 @@ export const X05Spotify: React.FC<P> = (p) => {
 // X06 · Podimo: Configuración › Gestionar suscripción › Cancelar (la app lleva a la web con la sesión iniciada); oferta, encuesta y «¿seguro?».
 export const X06Podimo: React.FC<P> = (p) => {
   const w = (x: string, n = 0) => p.lead + wf('X06', x, n);
-  const fConf = w('Configuración'), fGest = w('Gestionar'), fPulsar = w('pulsar'), fCanc = w('Cancelar'), fDice = w('dice'), fPero = w('pero'), fPulsa = w('Pulsa');
+  const fConf = w('Configuración'), fGest = w('Gestionar'), fPulsar = w('pulsar'), fCanc = w('Cancelar'), fDice = w('dice'), fPero = w('pero'), fPulsa = w('Pulsa', 1); // la 2.ª: la 1.ª coincidencia de «pulsa» es «pulsar»
   const fCanc2 = w('Cancelar', 1), fOferta = w('oferta'), fEnc = w('encuesta'), fUlt = w('último'), fPrueba = w('prueba'), fPierdes = w('pierdes'), fPasas = w('pasas');
   const shots = [
     shot('pod_menu', 0, 3.0, 8.0, [[fConf - 60, fConf - 6, 548, 84, 66, 66, 33]]),

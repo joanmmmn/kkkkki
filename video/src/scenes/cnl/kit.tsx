@@ -42,6 +42,9 @@ export const StepList: React.FC<{ steps: Step[]; size?: number; width: number; g
         const doneP = done ? interpolate(frame, [steps[i + 1].at - 2, steps[i + 1].at + 10], [0, 1], { ...clamp, easing: easeInOut }) : 0;
         const nb = size * 1.18;
         const hp = spring({ frame: frame - s.at + 4, fps, config: { damping: 16, stiffness: 180 } });
+        // v2: el paso que nombra la voz entra con rebote y un destello amarillo que se apaga.
+        const pop = act ? spring({ frame: frame - s.at + 2, fps, config: { damping: 9, stiffness: 240, mass: 0.6 } }) : 1;
+        const glow = act ? interpolate(frame, [s.at - 2, s.at + 3, s.at + 22], [0, 1, 0], clamp) : 0;
         return (
           <React.Fragment key={i}>
             {header && (
@@ -52,8 +55,8 @@ export const StepList: React.FC<{ steps: Step[]; size?: number; width: number; g
               </div>
             )}
             <div style={{ display: 'flex', alignItems: 'center', gap: size * 0.42, alignSelf: 'flex-start', padding: `${size * 0.22}px ${size * 0.56}px ${size * 0.22}px ${size * 0.22}px`, borderRadius: 999,
-              background: act ? '#fff' : 'rgba(255,255,255,0)', boxShadow: act ? shadow.float : 'none', border: act ? `1px solid ${color.line}` : '1px solid transparent',
-              opacity: vis ? Math.min(1, p * 1.3) * (1 - 0.42 * doneP) : 0, transform: `translateX(${(1 - p) * -36}px) scale(${(0.9 + 0.1 * p) * (1 - 0.03 * doneP)})`, transformOrigin: 'left center' }}>
+              background: act ? '#fff' : 'rgba(255,255,255,0)', boxShadow: act ? `${shadow.float}, 0 0 0 ${(glow * 10).toFixed(1)}px rgba(255,202,5,${(0.45 * glow).toFixed(2)})` : 'none', border: act ? `1px solid ${color.line}` : '1px solid transparent',
+              opacity: vis ? Math.min(1, p * 1.3) * (1 - 0.42 * doneP) : 0, transform: `translateX(${(1 - p) * -36}px) scale(${(0.9 + 0.1 * p) * (1 - 0.03 * doneP) * (act ? 0.94 + 0.06 * pop + 0.05 * glow : 1)})`, transformOrigin: 'left center' }}>
               <div style={{ width: nb, height: nb, borderRadius: '50%', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
                 background: done ? color.ink : color.yellow, color: color.ink, fontFamily: font.sans, fontWeight: 700, fontSize: size * 0.62 }}>
                 {done ? <Check s={size * 0.66} c="#fff" /> : i + 1}
@@ -63,6 +66,29 @@ export const StepList: React.FC<{ steps: Step[]; size?: number; width: number; g
           </React.Fragment>
         );
       })}
+    </div>
+  );
+};
+
+// v2: barra de progreso («Paso 3 de 7»): se llena paso a paso, con el número que salta al cambiar.
+const Progress: React.FC<{ steps: Step[]; size: number; width: number; at: number }> = ({ steps, size, width, at }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const n = steps.length;
+  let cur = 0;
+  steps.forEach((s, i) => { if (frame >= s.at - 2) cur = i + 1; });
+  const last = cur > 0 ? steps[cur - 1].at - 2 : at;
+  const fill = (cur - 1 + interpolate(frame, [last, last + 10], [0, 1], { ...clamp, easing: easeOut })) / n;
+  const pop = spring({ frame: frame - last, fps, config: { damping: 10, stiffness: 260, mass: 0.6 } });
+  const show = interpolate(frame, [at, at + 10], [0, 1], clamp);
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: size * 0.5, marginTop: size * 0.5, width, opacity: show }}>
+      <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: size * 0.62, color: color.ink, whiteSpace: 'nowrap', transform: `scale(${cur ? 0.9 + 0.1 * pop : 1})`, transformOrigin: 'left center' }}>
+        {cur ? `Paso ${cur} de ${n}` : `${n} pasos`}
+      </div>
+      <div style={{ flex: 1, height: size * 0.24, borderRadius: 999, background: 'rgba(16,16,16,0.08)', overflow: 'hidden' }}>
+        <div style={{ width: `${Math.max(0, Math.min(1, fill)) * 100}%`, height: '100%', borderRadius: 999, background: color.yellow, boxShadow: '0 0 12px rgba(255,202,5,0.6)' }} />
+      </div>
     </div>
   );
 };
@@ -82,6 +108,7 @@ export const CancelPanel: React.FC<{ k: PKey; steps: Step[]; notes?: Note[]; lef
         <div style={{ fontFamily: font.sans, fontWeight: 700, fontSize: size * 0.68, letterSpacing: size * 0.11, textTransform: 'uppercase', color: color.muted }}>Cómo cancelar</div>
       </div>
       <MaskTitle text={PLAT[k].name} at={hAt + 4} size={titleSize} />
+      <Progress steps={steps} size={size} width={Math.min(width, 560)} at={hAt + 10} />
       <div style={{ marginTop: size * 0.8 }}>
         <StepList steps={steps} size={size} width={width} />
       </div>
@@ -96,7 +123,7 @@ export const CancelPanel: React.FC<{ k: PKey; steps: Step[]; notes?: Note[]; lef
 
 // Móvil con las tomas: cámara que se acerca a cada marca (más suave que en las reseñas), toques y su sonido.
 export const PhoneStage: React.FC<{ dur: number; shots: MShot[]; taps?: Tap[]; cx?: number; enter?: SceneProps['enter']; zoom?: number; from?: number; to?: number }> = ({
-  dur, shots, taps = [], cx = 560, enter = 'rise', zoom = 1.24, from = 0, to,
+  dur, shots, taps = [], cx = 560, enter = 'rise', zoom = 1.42, from = 0, to,
 }) => {
   const top = Math.round((1080 - PH.H) / 2);
   const end = to ?? dur;

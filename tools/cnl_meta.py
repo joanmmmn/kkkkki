@@ -21,11 +21,17 @@ def vo(id_):
     return json.load(open(p)) if os.path.exists(p) else None
 
 
+def vid(id_):
+    """La locución empalmada «Para cancelar la suscripción de X…» (tools/cnl_splice.py), si existe; si no, la original."""
+    return f'{id_}S' if vo(f'{id_}S') else id_
+
+
 def sec(s):
     return round(s * FPS)
 
 
 def speech_frames(id_):
+    id_ = vid(id_)
     v = vo(id_)
     if v:
         return math.ceil(v.get('speechEnd', v['duration']) * FPS)
@@ -74,6 +80,7 @@ def cifras(ws):
 
 
 def words(id_, numeros=False):
+    id_ = vid(id_)
     v = vo(id_)
     if v:
         return cifras(v['words']) if numeros else v['words']
