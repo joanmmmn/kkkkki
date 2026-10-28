@@ -1,6 +1,6 @@
 {
- "total_frames": 13524,
- "seconds": 270.48,
+ "total_frames": 13529,
+ "seconds": 270.58,
  "chapters": [
   {
    "t": 13.64,
@@ -47,7 +47,7 @@
    "label": "Jak wypróbować 7 dni za darmo"
   },
   {
-   "t": 233.54,
+   "t": 233.64,
    "label": "Pierwsza opłata i jak zrezygnować"
   }
  ],
@@ -160,14 +160,14 @@
    "id": "B02",
    "kind": "steps",
    "start": 10293,
-   "dur": 784,
+   "dur": 789,
    "lead": 7,
    "bump": null
   },
   {
    "id": "B03",
    "kind": "rec",
-   "start": 11077,
+   "start": 11082,
    "dur": 600,
    "lead": 7,
    "bump": null
@@ -175,7 +175,7 @@
   {
    "id": "B04",
    "kind": "stat",
-   "start": 11677,
+   "start": 11682,
    "dur": 449,
    "lead": 7,
    "bump": null
@@ -183,7 +183,7 @@
   {
    "id": "B05",
    "kind": "steps",
-   "start": 12126,
+   "start": 12131,
    "dur": 525,
    "lead": 7,
    "bump": null
@@ -191,7 +191,7 @@
   {
    "id": "B06",
    "kind": "outro",
-   "start": 12651,
+   "start": 12656,
    "dur": 873,
    "lead": 7,
    "bump": null

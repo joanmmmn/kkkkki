@@ -225,66 +225,66 @@ Chcesz wypróbować? Empik Go daje
 kartą i tylko raz.
 
 49
-00:03:26,000 --> 00:03:32,160
+00:03:26,000 --> 00:03:32,173
 Wejdź na empik.com/go, w abonamentach
 30-dniowych wybierz plan i kliknij
 
 50
-00:03:32,200 --> 00:03:34,400
+00:03:32,213 --> 00:03:34,360
 „Wypróbuj za darmo przez 7 dni”.
 
 51
-00:03:34,440 --> 00:03:37,800
+00:03:34,400 --> 00:03:37,880
 Zaloguj się albo załóż konto
 Empik i podepnij kartę.
 
 52
-00:03:37,840 --> 00:03:41,530
+00:03:37,920 --> 00:03:41,610
 Uwaga: w aplikacji okres
 i cena mogą być inne.
 
 53
-00:03:41,680 --> 00:03:45,760
+00:03:41,780 --> 00:03:45,860
 W Go Max i Go Smart przez
 7 dni korzystasz bez limitu.
 
 54
-00:03:45,800 --> 00:03:50,280
+00:03:45,900 --> 00:03:50,380
 W Go Flex sprawdź przed zakupem,
 ile tytułów obejmuje okres próbny.
 
 55
-00:03:50,320 --> 00:03:53,210
+00:03:50,420 --> 00:03:53,310
 Pobierz aplikację Empik Go i zaloguj się.
 
 56
-00:03:53,680 --> 00:03:58,484
+00:03:53,780 --> 00:03:58,584
 Jeśli nie zrezygnujesz, ósmego dnia
 zaczyna się płatny okres – w Go Smart to
 
 57
-00:03:58,524 --> 00:04:02,490
+00:03:58,624 --> 00:04:02,590
 39,99 zł za 30 dni.
 
 58
-00:04:02,660 --> 00:04:08,567
+00:04:02,760 --> 00:04:08,667
 Rezygnujesz na empik.com: Twoje konto,
 Abonamenty, „Anuluj abonament”, albo
 
 59
-00:04:08,607 --> 00:04:10,620
+00:04:08,707 --> 00:04:10,720
 w aplikacji, w zakładce Konto.
 
 60
-00:04:10,660 --> 00:04:13,120
+00:04:10,760 --> 00:04:13,220
 Zrób to najpóźniej siódmego dnia.
 
 61
-00:04:13,160 --> 00:04:18,800
+00:04:13,260 --> 00:04:18,900
 Na sonorbooks.pl porównasz ceny i okresy
 próbne Empik Go, Audioteki, Legimi
 
 62
-00:04:18,840 --> 00:04:23,170
+00:04:18,940 --> 00:04:23,270
 i innych platform. Twoja następna
 historia już na ciebie czeka.
