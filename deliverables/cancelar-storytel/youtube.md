@@ -1,17 +1,18 @@
 # YouTube · Cómo cancelar Storytel
 
-Duración: 48,9 s (2446 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarStorytel_1440p.mp4`.
+Duración: 37,1 s (1857 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarStorytel_1440p.mp4`.
 
 ## Título (68 caracteres)
 **Cómo Cancelar Storytel (2026): Paso a Paso, con una Cancelación Real**
 
 Alternativa: Cómo Darse de Baja de Storytel en 2026: la App te Manda a la Web (64)
 
-## Descripción (1520 de 5.000 bytes)
+## Descripción (1786 de 5.000 bytes)
 ```
 Cómo darte de baja de Storytel: la app te pide iniciar sesión en la web y allí son tres pasos. Capturas reales y qué pasa con la prueba gratis.
 
 📖 Todos los pasos, con las capturas de cada pantalla: https://sonorbooks.com/es/blog/cancelar-storytel/
+🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): https://sonorbooks.com/es/plataformas/
 
 ✅ Los pasos
 Perfil › Configuración › Suscripción › Tu plan actual › Iniciar sesión en nuestro sitio web › Suscripción › Cancelar › Confirmar cancelación.
@@ -25,7 +26,7 @@ Si te suscribiste desde la app con Google Play o Apple, se cancela en la tienda.
 
 📌 Cancelación real, hecha el 26 de octubre de 2026 en una cuenta nuestra. Las pantallas pueden cambiar; si ves otra, dínoslo en los comentarios.
 
-Sin enlaces de afiliado. Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
+En esta descripción no hay enlaces de afiliado; en SonorBooks, algunos sí lo son (se indica en la web). Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
 
 #CancelarStorytel #Storytel #Audiolibros
 ```
@@ -39,12 +40,13 @@ cancelar storytel, como cancelar storytel, dar de baja storytel, darse de baja d
 ```
 ¿Te ha salido la misma pantalla en la app? 👇
 Todos los pasos, con capturas: https://sonorbooks.com/es/blog/cancelar-storytel/
+🎁 Y si buscas otra, las mejores pruebas gratis (algunas exclusivas): https://sonorbooks.com/es/plataformas/
 ```
 
 ## Al subir
 - Canal SonorBooks España. Idioma Español (España). «No, no es contenido creado para niños». Contenido alterado: No. Categoría: Gente y blogs.
-- «Incluye promoción pagada»: no (sin enlaces de afiliado).
+- «Incluye promoción pagada»: no (solo enlaza a la web de SonorBooks; la afiliación está en la web y se indica allí).
 - Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.
 - Subtítulos: `cancelar_storytel.es.srt` (Español, España). Miniatura: `miniatura.png`.
-- Pantalla final desde 0:42,2 (6,7 s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de Storytel, https://youtu.be/nPBV7b4Vowc) + suscribirse.
+- Pantalla final desde 0:31,5 (5,6 s; la marca de SonorBooks y la web arriba, la mitad de abajo libre): vídeo (la reseña de Storytel, https://youtu.be/nPBV7b4Vowc) + suscribirse.
 - El artículo (https://sonorbooks.com/es/blog/cancelar-storytel/) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt storytel=<ID>`.

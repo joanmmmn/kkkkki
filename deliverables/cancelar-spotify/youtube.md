@@ -1,17 +1,18 @@
 # YouTube · Cómo cancelar Spotify Premium
 
-Duración: 47,7 s (2386 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarSpotify_1440p.mp4`.
+Duración: 36,0 s (1802 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarSpotify_1440p.mp4`.
 
 ## Título (75 caracteres)
 **Cómo Cancelar Spotify Premium (2026): Paso a Paso, y Ojo con Duo y Familiar**
 
 Alternativa: Cómo Cancelar Spotify Premium y Audiolibros+ en 2026, Paso a Paso (65)
 
-## Descripción (1338 de 5.000 bytes)
+## Descripción (1604 de 5.000 bytes)
 ```
 Cómo cancelar Spotify Premium en la web, en cuatro pasos. Qué pasa con los planes Duo y Familiar, con Audiolibros+ y cuándo pasas a Spotify Free.
 
 📖 Todos los pasos, con las capturas de cada pantalla: https://sonorbooks.com/es/blog/cancelar-spotify-premium/
+🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): https://sonorbooks.com/es/plataformas/
 
 ✅ Los pasos
 Tu cuenta › Cancelar suscripción › Continuar › «Sí, cancelar».
@@ -26,7 +27,7 @@ Si pagas Spotify a través de tu operadora u otro socio, se cancela con él (lo 
 
 📌 Cancelación real, hecha el 26 de octubre de 2026 en una cuenta nuestra. Las pantallas pueden cambiar; si ves otra, dínoslo en los comentarios.
 
-Sin enlaces de afiliado. Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
+En esta descripción no hay enlaces de afiliado; en SonorBooks, algunos sí lo son (se indica en la web). Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
 
 #CancelarSpotify #Spotify #Audiolibros
 ```
@@ -40,12 +41,13 @@ cancelar spotify premium, como cancelar spotify premium, dar de baja spotify pre
 ```
 ¿Estabas en un plan Duo o Familiar? 👇
 Todos los pasos, con capturas: https://sonorbooks.com/es/blog/cancelar-spotify-premium/
+🎁 Y si buscas otra, las mejores pruebas gratis (algunas exclusivas): https://sonorbooks.com/es/plataformas/
 ```
 
 ## Al subir
 - Canal SonorBooks España. Idioma Español (España). «No, no es contenido creado para niños». Contenido alterado: No. Categoría: Gente y blogs.
-- «Incluye promoción pagada»: no (sin enlaces de afiliado).
+- «Incluye promoción pagada»: no (solo enlaza a la web de SonorBooks; la afiliación está en la web y se indica allí).
 - Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.
 - Subtítulos: `cancelar_spotify.es.srt` (Español, España). Miniatura: `miniatura.png`.
-- Pantalla final desde 0:41,1 (6,6 s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de Spotify Premium, https://youtu.be/5dKjJSF9knU) + suscribirse.
+- Pantalla final desde 0:30,4 (5,6 s; la marca de SonorBooks y la web arriba, la mitad de abajo libre): vídeo (la reseña de Spotify Premium, https://youtu.be/5dKjJSF9knU) + suscribirse.
 - El artículo (https://sonorbooks.com/es/blog/cancelar-spotify-premium/) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt spotify=<ID>`.

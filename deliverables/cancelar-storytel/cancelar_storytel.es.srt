@@ -1,45 +1,39 @@
 1
-00:00:00,500 --> 00:00:04,460
-Cancelar Storytel lleva un minuto,
-si sabes dónde mirar.
+00:00:00,100 --> 00:00:04,430
+Para cancelar la suscripción de Storytel,
+en la app ve a Perfil,
 
 2
-00:00:04,500 --> 00:00:07,390
-Lo hemos hecho de verdad, y así se hace.
-
-3
-00:00:08,200 --> 00:00:09,360
-Storytel.
-
-4
-00:00:09,400 --> 00:00:14,000
-En la app: Perfil,
+00:00:04,470 --> 00:00:07,140
 la rueda de Configuración y Suscripción.
 
-5
-00:00:14,040 --> 00:00:17,840
+3
+00:00:07,180 --> 00:00:10,980
 Te pide iniciar sesión en su web,
 y allí: Suscripción,
 
-6
-00:00:17,880 --> 00:00:20,560
+4
+00:00:11,020 --> 00:00:13,650
 Cancelar y Confirmar cancelación.
 
-7
-00:00:20,600 --> 00:00:24,610
+5
+00:00:13,690 --> 00:00:17,700
 Ojo: si estás en la prueba gratis,
 se acaba al momento.
 
+6
+00:00:22,380 --> 00:00:23,460
+¿Buscas otra?
+
+7
+00:00:23,500 --> 00:00:26,580
+En SonorBooks tenemos
+las mejores pruebas gratis,
+
 8
-00:00:31,940 --> 00:00:36,380
-Si algún día vuelves, tu biblioteca
-y tu historial te estarán esperando.
+00:00:26,620 --> 00:00:29,700
+como 30 días de Nextory, en vez de 14.
 
 9
-00:00:36,420 --> 00:00:40,620
-Cada paso, con capturas,
-está en el artículo de la descripción;
-
-10
-00:00:40,660 --> 00:00:43,950
-y para comparar plataformas, SonorBooks.
+00:00:29,740 --> 00:00:31,590
+Enlace en la descripción.

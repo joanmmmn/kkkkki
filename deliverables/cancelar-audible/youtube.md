@@ -1,17 +1,18 @@
 # YouTube · Cómo cancelar Audible
 
-Duración: 61,4 s (3071 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudible_1440p.mp4`.
+Duración: 47,2 s (2358 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudible_1440p.mp4`.
 
 ## Título (82 caracteres)
 **Cómo Cancelar Audible (2026): Paso a Paso, Desde la Web, y Qué Pasa con tus Libros**
 
 Alternativa: Cómo Darse de Baja de Audible en 2026 (Desde la Web o Desde Amazon) (67)
 
-## Descripción (1699 de 5.000 bytes)
+## Descripción (1965 de 5.000 bytes)
 ```
 Cómo darte de baja de Audible: en la app no hay botón; se cancela en audible.es, en Detalles de la suscripción. Pasos, ofertas y qué pierdes.
 
 📖 Todos los pasos, con las capturas de cada pantalla: https://sonorbooks.com/es/blog/cancelar-audible/
+🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): https://sonorbooks.com/es/plataformas/
 
 ✅ Los pasos
 Tu cuenta › Detalles de la suscripción › Cancelar suscripción › «No, gracias, prefiero cancelar» › Finalizar cancelación.
@@ -26,7 +27,7 @@ Si pagas con Google Play, se cancela en Google Play (y ahí no se puede pausar).
 
 📌 Pantallas de nuestra cuenta (cancelada desde la reseña) y pasos de la ayuda oficial de Audible, comprobados el 26 de octubre de 2026. Las pantallas pueden cambiar; si ves otra, dínoslo en los comentarios.
 
-Sin enlaces de afiliado. Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
+En esta descripción no hay enlaces de afiliado; en SonorBooks, algunos sí lo son (se indica en la web). Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
 
 #CancelarAudible #Audible #Audiolibros
 ```
@@ -40,12 +41,13 @@ cancelar audible, como cancelar audible, dar de baja audible, darse de baja de a
 ```
 ¿Lo habías contratado con Amazon o en audible.es? 👇
 Todos los pasos, con capturas: https://sonorbooks.com/es/blog/cancelar-audible/
+🎁 Y si buscas otra, las mejores pruebas gratis (algunas exclusivas): https://sonorbooks.com/es/plataformas/
 ```
 
 ## Al subir
 - Canal SonorBooks España. Idioma Español (España). «No, no es contenido creado para niños». Contenido alterado: No. Categoría: Gente y blogs.
-- «Incluye promoción pagada»: no (sin enlaces de afiliado).
+- «Incluye promoción pagada»: no (solo enlaza a la web de SonorBooks; la afiliación está en la web y se indica allí).
 - Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.
 - Subtítulos: `cancelar_audible.es.srt` (Español, España). Miniatura: `miniatura.png`.
-- Pantalla final desde 0:54,8 (6,6 s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de Audible, https://youtu.be/nnRXlXi2rCk) + suscribirse.
+- Pantalla final desde 0:41,6 (5,6 s; la marca de SonorBooks y la web arriba, la mitad de abajo libre): vídeo (la reseña de Audible, https://youtu.be/nnRXlXi2rCk) + suscribirse.
 - El artículo (https://sonorbooks.com/es/blog/cancelar-audible/) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt audible=<ID>`.

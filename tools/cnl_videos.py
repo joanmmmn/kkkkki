@@ -23,6 +23,8 @@ spec.loader.exec_module(data)
 
 WEB = 'https://sonorbooks.com'
 PROMO = f'{WEB}/es/plataformas/'
+# Las pruebas con nuestro enlace que enseña sonorbooks.com/es/plataformas (28/10/2026); en cada vídeo, las de las otras plataformas.
+OFERTAS = [('nextory', 'Nextory, 30 días en vez de 14'), ('elevenreader', 'ElevenReader Ultra, 30 días'), ('storytel', 'Storytel, 30 días con nuestro enlace')]
 # Las reseñas publicadas en el canal (tools/mp_youtube.py; la de iVoox, ri7JcUIrIak).
 RESENA = {'audible': 'nnRXlXi2rCk', 'storytel': 'nPBV7b4Vowc', 'spotify': '5dKjJSF9knU', 'podimo': 'dy4RVorr39o', 'nextory': 'x9dF1JRrej0',
           'bookbeat': 'GpNFV9wZ-BM', 'audiobooks': 'cif771omGrQ', 'ivoox': 'ri7JcUIrIak'}
@@ -88,7 +90,7 @@ def end_card(v, scenes):
 def descripcion(k, p, store):
     art = f'{WEB}/es/blog/{p["slug"]}/'
     L = [p['desc'], '', f'📖 Todos los pasos, con las capturas de cada pantalla: {art}',
-         f'🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): {PROMO}', '']
+         f'🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas ({"; ".join([t for kk, t in OFERTAS if kk != k][:2])}): {PROMO}', '']
     L.append('✅ Los pasos')
     L.append(quick(p, 'Pasos'))
     # El resto de la respuesta rápida de la guía (el «ojo», la oferta, qué pierdes…), propia de cada plataforma.

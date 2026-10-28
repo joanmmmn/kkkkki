@@ -1,17 +1,18 @@
 # YouTube · Cómo cancelar BookBeat
 
-Duración: 46,5 s (2326 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarBookBeat_1440p.mp4`.
+Duración: 38,9 s (1947 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarBookBeat_1440p.mp4`.
 
 ## Título (65 caracteres)
 **Cómo Cancelar BookBeat (2026): Paso a Paso, Aunque Esté en Inglés**
 
 Alternativa: Cómo Cancelar la Prueba Gratis de BookBeat en 2026, Paso a Paso (63)
 
-## Descripción (1276 de 5.000 bytes)
+## Descripción (1542 de 5.000 bytes)
 ```
 Cómo cancelar BookBeat: desde la app se abre su web, ahora en inglés. Qué pulsar en cada pantalla, qué pasa con la prueba y por qué apuntar la fecha.
 
 📖 Todos los pasos, con las capturas de cada pantalla: https://sonorbooks.com/es/blog/cancelar-bookbeat/
+🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): https://sonorbooks.com/es/plataformas/
 
 ✅ Los pasos
 Profile › Account Information › MENU › Manage subscription › Cancel free trial › Continue cancellation › un motivo › Confirm cancellation.
@@ -26,7 +27,7 @@ BookBeat da de alta las suscripciones en su web, así que no se cancelan en Goog
 
 📌 Cancelación real, hecha el 26 de octubre de 2026 en una cuenta nuestra. Las pantallas pueden cambiar; si ves otra, dínoslo en los comentarios.
 
-Sin enlaces de afiliado. Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
+En esta descripción no hay enlaces de afiliado; en SonorBooks, algunos sí lo son (se indica en la web). Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
 
 #CancelarBookBeat #BookBeat #Audiolibros
 ```
@@ -40,12 +41,13 @@ cancelar bookbeat, como cancelar bookbeat, dar de baja bookbeat, darse de baja d
 ```
 ¿Te ha costado encontrarlo, con todo en inglés? 👇
 Todos los pasos, con capturas: https://sonorbooks.com/es/blog/cancelar-bookbeat/
+🎁 Y si buscas otra, las mejores pruebas gratis (algunas exclusivas): https://sonorbooks.com/es/plataformas/
 ```
 
 ## Al subir
 - Canal SonorBooks España. Idioma Español (España). «No, no es contenido creado para niños». Contenido alterado: No. Categoría: Gente y blogs.
-- «Incluye promoción pagada»: no (sin enlaces de afiliado).
+- «Incluye promoción pagada»: no (solo enlaza a la web de SonorBooks; la afiliación está en la web y se indica allí).
 - Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.
 - Subtítulos: `cancelar_bookbeat.es.srt` (Español, España). Miniatura: `miniatura.png`.
-- Pantalla final desde 0:39,9 (6,6 s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de BookBeat, https://youtu.be/GpNFV9wZ-BM) + suscribirse.
+- Pantalla final desde 0:33,3 (5,6 s; la marca de SonorBooks y la web arriba, la mitad de abajo libre): vídeo (la reseña de BookBeat, https://youtu.be/GpNFV9wZ-BM) + suscribirse.
 - El artículo (https://sonorbooks.com/es/blog/cancelar-bookbeat/) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt bookbeat=<ID>`.

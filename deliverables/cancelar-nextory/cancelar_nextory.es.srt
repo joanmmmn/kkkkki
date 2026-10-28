@@ -1,64 +1,54 @@
 1
-00:00:00,500 --> 00:00:02,380
-¿Quieres cancelar Nextory?
+00:00:00,100 --> 00:00:04,940
+Para cancelar la suscripción de Nextory,
+en la app ve a Editar cuenta
 
 2
-00:00:02,420 --> 00:00:05,260
-Lo hemos hecho de verdad,
-de principio a fin,
+00:00:04,980 --> 00:00:07,960
+y Cambiar: solo te dirá
+que vayas a la web.
 
 3
-00:00:05,300 --> 00:00:06,750
-para que no te pierdas.
-
-4
-00:00:07,480 --> 00:00:08,640
-Nextory.
-
-5
-00:00:08,680 --> 00:00:13,640
-En la app, Editar cuenta y Cambiar:
-solo te dice que vayas a la web.
-
-6
-00:00:13,680 --> 00:00:17,400
+00:00:08,000 --> 00:00:11,660
 Allí, en Mis páginas,
 Cancela tu suscripción.
 
-7
-00:00:17,440 --> 00:00:20,840
+4
+00:00:11,700 --> 00:00:15,080
 Primero, lo que te perderás;
 luego, otra oferta:
 
-8
-00:00:20,880 --> 00:00:23,480
+5
+00:00:15,120 --> 00:00:17,650
 15 días gratis y 5 horas.
 
-9
-00:00:23,520 --> 00:00:27,600
+6
+00:00:17,690 --> 00:00:21,770
 Sigue con Continuar con la cancelación,
 elige un motivo,
 
-10
-00:00:27,640 --> 00:00:30,400
+7
+00:00:21,810 --> 00:00:24,460
 marca Lo entiendo y confirma.
 
-11
-00:00:30,440 --> 00:00:33,810
+8
+00:00:24,500 --> 00:00:27,870
 En la prueba, el acceso
 se corta al momento.
 
+9
+00:00:32,180 --> 00:00:33,340
+¿Buscas otra?
+
+10
+00:00:33,380 --> 00:00:36,300
+En SonorBooks tenemos
+las mejores pruebas gratis,
+
+11
+00:00:36,340 --> 00:00:38,900
+como 30 días de ElevenReader Ultra.
+
 12
-00:00:40,780 --> 00:00:44,020
-Tu biblioteca se queda guardada,
-por si vuelves.
-
-13
-00:00:44,060 --> 00:00:47,700
-Las capturas de cada paso están
-en el artículo de la descripción;
-
-14
-00:00:47,740 --> 00:00:51,990
-y si buscas otra plataforma,
-en SonorBooks las comparas.
+00:00:38,940 --> 00:00:40,750
+Enlace en la descripción.

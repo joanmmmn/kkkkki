@@ -1,55 +1,54 @@
 1
-00:00:00,500 --> 00:00:02,900
-¿Quieres cancelar Audiobooks.com?
+00:00:00,100 --> 00:00:03,180
+Para cancelar la suscripción
+de Audiobooks.com,
 
 2
-00:00:02,940 --> 00:00:06,430
-Antes de hacerlo,
-mira qué pasa con el libro de la prueba.
+00:00:03,220 --> 00:00:06,500
+se hace solo en su web:
+My Account y, abajo,
 
 3
-00:00:07,040 --> 00:00:12,093
-Audiobooks.com,
-solo en la web: My Account y,
+00:00:06,540 --> 00:00:08,040
+Cancel Subscription.
 
 4
-00:00:12,133 --> 00:00:14,093
-abajo, Cancel Subscription.
-
-5
-00:00:14,133 --> 00:00:16,840
+00:00:08,080 --> 00:00:10,657
 Te avisa de que perderás
 el libro de la prueba.
 
-6
-00:00:16,880 --> 00:00:19,320
+5
+00:00:10,697 --> 00:00:13,097
 Si solo quieres que no
 te cobren por sorpresa,
 
-7
-00:00:19,360 --> 00:00:22,760
+6
+00:00:13,137 --> 00:00:16,497
 Email Me Instead te manda
 un recordatorio antes.
 
-8
-00:00:22,800 --> 00:00:27,800
+7
+00:00:16,537 --> 00:00:21,377
 Si no, Continue to Cancel,
 un motivo y Confirm Cancel.
 
-9
-00:00:27,840 --> 00:00:29,370
+8
+00:00:21,417 --> 00:00:22,947
 Es inmediato.
 
+9
+00:00:27,420 --> 00:00:29,780
+¿Buscas más audiolibros en español?
+
 10
-00:00:36,500 --> 00:00:40,340
-Si reactivas la cuenta,
-te devuelven los libros que te quitaron.
+00:00:29,820 --> 00:00:32,980
+En SonorBooks tenemos
+las mejores pruebas gratis,
 
 11
-00:00:40,380 --> 00:00:43,420
-Todos los pasos,
-en el artículo de la descripción;
+00:00:33,020 --> 00:00:36,340
+como 30 días de Nextory, en vez de 14.
 
 12
-00:00:43,460 --> 00:00:46,750
-y para comparar alternativas, SonorBooks.
+00:00:36,380 --> 00:00:38,390
+Enlace en la descripción.

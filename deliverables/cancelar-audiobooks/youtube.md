@@ -1,17 +1,18 @@
 # YouTube · Cómo cancelar Audiobooks.com
 
-Duración: 51,8 s (2591 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudiobooks_1440p.mp4`.
+Duración: 43,8 s (2192 fotogramas a 50 fps). Vídeo: `SonorBooks_CancelarAudiobooks_1440p.mp4`.
 
 ## Título (86 caracteres)
 **Cómo Cancelar Audiobooks.com (2026): Paso a Paso, y Qué Pasa con el Libro de la Prueba**
 
 Alternativa: Cómo Cancelar la Prueba Gratis de Audiobooks.com en 2026 (56)
 
-## Descripción (1501 de 5.000 bytes)
+## Descripción (1767 de 5.000 bytes)
 ```
 Cómo cancelar Audiobooks.com: solo en la web, en My Account. Qué pasa con el libro de la prueba, para qué sirve «Email Me Instead» y qué conservas.
 
 📖 Todos los pasos, con las capturas de cada pantalla: https://sonorbooks.com/es/blog/cancelar-audiobooks-com/
+🎁 ¿Buscas otra? Las mejores pruebas gratis de audiolibros, algunas exclusivas (Nextory, 30 días en vez de 14; ElevenReader Ultra, 30 días): https://sonorbooks.com/es/plataformas/
 
 ✅ Los pasos
 My Account › Cancel Subscription › Continue to Cancel › un motivo › Confirm Cancel.
@@ -26,7 +27,7 @@ Si pagas con Google Play: en la app, icono de silueta › engranaje (Settings) �
 
 📌 Cancelación real, hecha el 26 de octubre de 2026 en una cuenta nuestra. Las pantallas pueden cambiar; si ves otra, dínoslo en los comentarios.
 
-Sin enlaces de afiliado. Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
+En esta descripción no hay enlaces de afiliado; en SonorBooks, algunos sí lo son (se indica en la web). Las pantallas de cada app se muestran con fines informativos; las marcas son de sus dueños. Música original compuesta para SonorBooks.
 
 #CancelarAudiobooks #Audiobooks #Audiolibros
 ```
@@ -40,12 +41,13 @@ cancelar audiobooks.com, como cancelar audiobooks.com, dar de baja audiobooks.co
 ```
 ¿Preferiste el recordatorio por correo o cancelar del todo? 👇
 Todos los pasos, con capturas: https://sonorbooks.com/es/blog/cancelar-audiobooks-com/
+🎁 Y si buscas otra, las mejores pruebas gratis (algunas exclusivas): https://sonorbooks.com/es/plataformas/
 ```
 
 ## Al subir
 - Canal SonorBooks España. Idioma Español (España). «No, no es contenido creado para niños». Contenido alterado: No. Categoría: Gente y blogs.
-- «Incluye promoción pagada»: no (sin enlaces de afiliado).
+- «Incluye promoción pagada»: no (solo enlaza a la web de SonorBooks; la afiliación está en la web y se indica allí).
 - Sin capítulos: es un vídeo de un minuto y YouTube pide al menos tres capítulos de 10 s.
 - Subtítulos: `cancelar_audiobooks.es.srt` (Español, España). Miniatura: `miniatura.png`.
-- Pantalla final desde 0:45,1 (6,7 s; la marca de SonorBooks arriba y la mitad de abajo libre): vídeo (la reseña de Audiobooks.com, https://youtu.be/cif771omGrQ) + suscribirse.
+- Pantalla final desde 0:38,2 (5,6 s; la marca de SonorBooks y la web arriba, la mitad de abajo libre): vídeo (la reseña de Audiobooks.com, https://youtu.be/cif771omGrQ) + suscribirse.
 - El artículo (https://sonorbooks.com/es/blog/cancelar-audiobooks-com/) tiene que estar publicado antes; después, reconstruir las guías con `python3 web/cancelar/build.py --yt audiobooks=<ID>`.
